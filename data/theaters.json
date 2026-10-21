@@ -1,0 +1,18 @@
+[
+  { "id": "carre", "naam": "Koninklijk Theater Carré", "plaats": "Amsterdam", "land": "NL", "soort": "theater", "website": "https://carre.nl" },
+  { "id": "delamar", "naam": "DeLaMar Theater", "plaats": "Amsterdam", "land": "NL", "soort": "theater", "website": null },
+  { "id": "chasse", "naam": "Chassé Theater", "plaats": "Breda", "land": "NL", "soort": "theater", "website": null },
+  { "id": "nieuwe-luxor", "naam": "Nieuwe Luxor Theater", "plaats": "Rotterdam", "land": "NL", "soort": "theater", "website": "https://luxortheater.nl" },
+  { "id": "koninklijke-schouwburg", "naam": "Koninklijke Schouwburg", "plaats": "Den Haag", "land": "NL", "soort": "theater", "website": "https://www.hnt.nl" },
+  { "id": "schouwburg-middelburg", "naam": "Schouwburg Middelburg", "plaats": "Middelburg", "land": "NL", "soort": "theater", "website": null },
+  { "id": "kunstlinie", "naam": "Kunstlinie Almere", "plaats": "Almere", "land": "NL", "soort": "theater", "website": null },
+  { "id": "capitole-gent", "naam": "Capitole Gent", "plaats": "Gent", "land": "BE", "soort": "theater", "website": null },
+  { "id": "de-spil", "naam": "CC De Spil", "plaats": "Roeselare", "land": "BE", "soort": "cultuurcentrum", "website": null },
+  { "id": "concertgebouw-brugge", "naam": "Concertgebouw Brugge", "plaats": "Brugge", "land": "BE", "soort": "theater", "website": null },
+  { "id": "trixxo", "naam": "Trixxo Theater", "plaats": "Hasselt", "land": "BE", "soort": "theater", "website": null },
+  { "id": "stadsschouwburg-antwerpen", "naam": "Stadsschouwburg Antwerpen", "plaats": "Antwerpen", "land": "BE", "soort": "theater", "website": null },
+  { "id": "arenberg", "naam": "Arenberg", "plaats": "Antwerpen", "land": "BE", "soort": "theater", "website": "https://www.arenberg.be" },
+  { "id": "kursaal", "naam": "Kursaal Oostende", "plaats": "Oostende", "land": "BE", "soort": "theater", "website": null },
+  { "id": "koninklijk-circus", "naam": "Koninklijk Circus", "plaats": "Brussel", "land": "BE", "soort": "theater", "website": null },
+  { "id": "stadsschouwburg-mechelen", "naam": "Stadsschouwburg Mechelen", "plaats": "Mechelen", "land": "BE", "soort": "theater", "website": null }
+]
