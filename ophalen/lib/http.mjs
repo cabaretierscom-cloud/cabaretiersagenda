@@ -9,6 +9,12 @@ const MAX_REDIRECTS = 10;
 const cookies = new Map(); // host -> Map(name -> value)
 const robots = new Map(); // origin -> Promise<{ rules, delay }>
 const queues = new Map(); // host -> Promise (laatste verzoek)
+const extraPauze = new Map(); // host -> ms, voor sites die rustiger benaderd willen worden
+
+// Een bron kan een langere pauze voor een site instellen, bijv. stelPauzeIn("luxortheater.nl", 3000).
+export function stelPauzeIn(host, ms) {
+  extraPauze.set(host, ms);
+}
 
 function storeCookies(host, headers) {
   const list = headers.getSetCookie?.() || [];
@@ -96,13 +102,21 @@ export async function get(url, opts = {}) {
   if (!(await allowedByRobots(url))) throw new Error(`robots.txt staat ${url} niet toe`);
   const { host, origin } = new URL(url);
   const { delay } = await robotsFor(origin);
-  const pause = Math.max(PAUSE_MS, (delay || 0) * 1000);
+  const pause = Math.max(PAUSE_MS, (delay || 0) * 1000, extraPauze.get(host) || 0);
   const prev = queues.get(host) || Promise.resolve();
   const run = prev.then(() => new Promise((r) => setTimeout(r, pause))).then(async () => {
-    const { res, url: finalUrl } = await rawFetch(url, opts);
-    const text = await res.text();
-    if (!res.ok) throw new Error(`HTTP ${res.status} voor ${url}`);
-    return { text, url: finalUrl };
+    // Bij "te druk" (429/503) even wachten en opnieuw proberen, zoals de site vraagt.
+    for (let poging = 1; ; poging++) {
+      const { res, url: finalUrl } = await rawFetch(url, opts);
+      const text = await res.text();
+      if ((res.status === 429 || res.status === 503) && poging < 4) {
+        const wacht = Math.min(120, Number(res.headers.get("retry-after")) || 10 * poging) * 1000;
+        await new Promise((r) => setTimeout(r, wacht));
+        continue;
+      }
+      if (!res.ok) throw new Error(`HTTP ${res.status} voor ${url}`);
+      return { text, url: finalUrl };
+    }
   });
   queues.set(host, run.catch(() => {}));
   return run;

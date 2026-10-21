@@ -23,7 +23,9 @@ Cabaret- en comedyagenda voor Nederland en België. Statische site, gebouwd door
 - Een bron levert records `{ theater, artiesten: [namen], titel, genre, datum, tijd, status, soort, bron }`. `theater` is een id uit de `theaters` van de bron, of een object voor een nieuwe zaal.
 - Neem alleen cabaret en comedy op (`herkenGenre` in `ophalen/lib/normaliseer.mjs`). Bij twijfel liever weglaten.
 - `ophalen/samenvoegen.mjs` vervangt per bron de vorige vondsten vanaf de ophaaldatum en maakt artiesten, zalen en voorstellingen aan. Artiesten worden op `slug(naam)` en `ookBekendAls` herkend.
-- Bekend, nog niet gedaan: Luxor (Next.js, data in de pagina), DeLaMar, Walhalla, De Meervaart (Phoenix LiveView), PLT, Ticketmatic-zalen (Zaantheater, Zwolse Theaters, Harmonie, MartiniPlaza, Purmaryn, Tilburg, Utrecht). Chassé, Hanzehof, Stadsschouwburg Haarlem en Rijswijkse Schouwburg weigeren bots (403); Toomler heeft een kapot certificaat.
+- Krijgt een site het druk (503/429), dan wacht `get()` en probeert opnieuw. Zet voor zo'n site in de bron een langere pauze met `stelPauzeIn(host, ms)` (zie `luxor.mjs`).
+- Next.js-sites: `nextFlightText()` en `jsonObjectsWith()` in `ophalen/lib/html.mjs` halen de ingebakken gegevens uit de pagina (zie `luxor.mjs`).
+- Bekend, nog niet gedaan: Walhalla, De Meervaart (Phoenix LiveView), PLT, Ticketmatic-zalen (Zaantheater, Zwolse Theaters, Harmonie, MartiniPlaza, Purmaryn, Tilburg, Utrecht). Chassé, Hanzehof, Stadsschouwburg Haarlem en Rijswijkse Schouwburg weigeren bots (403); Toomler heeft een kapot certificaat.
 
 ## Controleren
 

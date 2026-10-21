@@ -1,0 +1,637 @@
+{
+  "bron": "delamar",
+  "naam": "DeLaMar",
+  "opgehaald": "2026-10-21",
+  "theaters": [
+    {
+      "id": "delamar",
+      "naam": "DeLaMar Theater",
+      "plaats": "Amsterdam",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://delamar.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Sara Kroos"
+      ],
+      "titel": "Prikkelarme Kermis",
+      "genre": "cabaret",
+      "datum": "2026-12-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/sara-kroos/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Sara Kroos"
+      ],
+      "titel": "Prikkelarme Kermis",
+      "genre": "cabaret",
+      "datum": "2026-12-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/sara-kroos/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/esther-van-der-voort/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/esther-van-der-voort/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2026-11-22",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/esther-van-der-voort/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Tis Hier Geen Hotel 3"
+      ],
+      "titel": "Hanneke Drenth en Dianne Liesker",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/tis-hier-geen-hotel-3/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Tis Hier Geen Hotel 3"
+      ],
+      "titel": "Hanneke Drenth en Dianne Liesker",
+      "genre": "cabaret",
+      "datum": "2027-04-25",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/tis-hier-geen-hotel-3/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rene-van-meurs/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rene-van-meurs/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rene-van-meurs/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rene-van-meurs/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Pepijn Schoneveld"
+      ],
+      "titel": "Welkom dat je luistert",
+      "genre": "cabaret",
+      "datum": "2026-10-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://delamar.nl/voorstellingen/pepijn-schoneveld/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-03-15",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/ronald-goedemondt/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-03-16",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/ronald-goedemondt/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-03-21",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/ronald-goedemondt/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Maartje en Kine"
+      ],
+      "titel": "De Bingo Show",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/maartje-en-kine/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [],
+      "titel": "We zijn toch familie",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/we-zijn-toch-familie/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [],
+      "titel": "We zijn toch familie",
+      "genre": "cabaret",
+      "datum": "2027-01-10",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/we-zijn-toch-familie/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De Grote Jubileumshow",
+      "genre": "cabaret",
+      "datum": "2027-05-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/jandino/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De Grote Jubileumshow",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/jandino/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/nienke-plas/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Iris Rulkens"
+      ],
+      "titel": "Van harte!",
+      "genre": "cabaret",
+      "datum": "2027-02-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://delamar.nl/voorstellingen/iris-rulkens/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Beperkt Houdbaar"
+      ],
+      "titel": "De nogal hyperbijzondere Amsterdamse Oudejaars-improvisatie-extravaganza 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/beperkt-houdbaar/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Anuar"
+      ],
+      "titel": "Ongeduldig Geduldig",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/anuar/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z’n scherpst",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rob-scheepers/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Finalistentournee 60ste editie",
+      "genre": "cabaret",
+      "datum": "2027-05-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/cameretten/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Karin Bloemen"
+      ],
+      "titel": "Renaissance 2.0",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/karin-bloemen/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-06-30",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rundfunk/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-07-01",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rundfunk/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-07-02",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rundfunk/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-07-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rundfunk/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-07-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rundfunk/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-07-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rundfunk/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-07-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rundfunk/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-07-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/rundfunk/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-06-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/thomas-van-luyn/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-06-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/thomas-van-luyn/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-06-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/thomas-van-luyn/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-06-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/thomas-van-luyn/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-06-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/thomas-van-luyn/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2026-12-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/freek-de-jonge/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2026-12-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/freek-de-jonge/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-05-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/freek-de-jonge/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-05-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/freek-de-jonge/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/freek-de-jonge/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Piet & Matties Live"
+      ],
+      "titel": "Comedyavond met Marco Lopes (Piet) als MC",
+      "genre": "cabaret",
+      "datum": "2026-11-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/piet-matties-live/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Derek Mitchell"
+      ],
+      "titel": "Double Dutch: Two",
+      "genre": "cabaret",
+      "datum": "2026-10-26",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/derek-mitchell/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Roel C. Verburg"
+      ],
+      "titel": "Slechtste Liedjes van de Straat",
+      "genre": "cabaret",
+      "datum": "2027-05-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
+    }
+  ]
+}

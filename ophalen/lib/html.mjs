@@ -42,3 +42,34 @@ export async function sitemapUrls(url, { filter = () => true, seen = new Set() }
   }
   return locs.filter(filter);
 }
+
+// Next.js (app router) zet de paginagegevens in stukjes: self.__next_f.push([1,"..."]).
+// Dit plakt ze aan elkaar tot één tekst.
+export function nextFlightText(html) {
+  return [...html.matchAll(/self\.__next_f\.push\(\[1,"((?:[^"\\]|\\.)*)"\]\)/g)]
+    .map((m) => { try { return JSON.parse(`"${m[1]}"`); } catch { return ""; } })
+    .join("");
+}
+
+// Alle JSON-objecten in een tekst die `marker` bevatten (bijv. '"__typename":"Production"'),
+// van de eerste { ervoor tot de bijbehorende }.
+export function jsonObjectsWith(text, marker) {
+  const out = [];
+  for (let from = 0; ; ) {
+    const i = text.indexOf(marker, from);
+    if (i < 0) return out;
+    from = i + marker.length;
+    const start = text.lastIndexOf("{", i);
+    let depth = 0, inStr = false, esc = false;
+    for (let k = start; k < text.length; k++) {
+      const c = text[k];
+      if (inStr) { if (esc) esc = false; else if (c === "\\") esc = true; else if (c === '"') inStr = false; continue; }
+      if (c === '"') inStr = true;
+      else if (c === "{") depth++;
+      else if (c === "}" && --depth === 0) {
+        try { out.push(JSON.parse(text.slice(start, k + 1))); } catch { /* geen geldig object */ }
+        break;
+      }
+    }
+  }
+}
