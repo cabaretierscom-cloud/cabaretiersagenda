@@ -1,0 +1,1466 @@
+{
+  "bron": "wilminktheater",
+  "naam": "Wilminktheater en Muziekcentrum Enschede",
+  "opgehaald": "2026-10-21",
+  "theaters": [
+    {
+      "id": "wilminktheater",
+      "naam": "Wilminktheater",
+      "plaats": "Enschede",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.wilminktheater.nl"
+    },
+    {
+      "id": "muziekcentrum-enschede",
+      "naam": "Muziekcentrum Enschede",
+      "plaats": "Enschede",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.wilminktheater.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Ayoub Kharkhach"
+      ],
+      "titel": "En verbied de vogels om te fluiten",
+      "genre": "stand-up",
+      "datum": "2026-10-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/en-verbied-de-vogels-om-te-fluiten-46td"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Comedytunes"
+      ],
+      "titel": "Comedy Night @ De Kleine Willem",
+      "genre": "stand-up",
+      "datum": "2026-10-29",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/comedy-night-de-kleine-willem-bcjj"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu - try out",
+      "genre": "stand-up",
+      "datum": "2026-10-30",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.wilminktheater.nl/nl/agenda/wagyu-try-out-1lvq"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Renske Kruitbosch"
+      ],
+      "titel": "Neem de tijd",
+      "genre": "cabaret",
+      "datum": "2026-10-31",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/neem-de-tijd-n835"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "De Baas",
+      "genre": "stand-up",
+      "datum": "2026-11-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/de-baas-zx6j"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Doğu Demirkol"
+      ],
+      "titel": "Doğu Demirkol Stand Up",
+      "genre": "stand-up",
+      "datum": "2026-11-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/dogu-demirkol-stand-up-9rpj"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Isabelle Kafando"
+      ],
+      "titel": "Rof Daaimund",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/rof-daaimund-57z9"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Marcel van Roosmalen"
+      ],
+      "titel": "Ik mag niet klagen",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/ik-mag-niet-klagen-57jm"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Najib & Roué"
+      ],
+      "titel": "Alles is Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-09",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/alles-is-comedy-fsjr"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Plien & Bianca"
+      ],
+      "titel": "Harrekidee! - Herneming",
+      "genre": "cabaret",
+      "datum": "2026-11-10",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/harrekidee-herneming-yw51"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad - Herneming",
+      "genre": "stand-up",
+      "datum": "2026-11-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/noodzakelijk-kwaad-herneming-n8y6"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "Striptease Van De Dood",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/striptease-van-de-dood-fs2x"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Boban Benjamin Braspenning"
+      ],
+      "titel": "Bruto",
+      "genre": "stand-up",
+      "datum": "2026-11-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/bruto-6tj7"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "Juk",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/juk-ywm5"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Huub Stapel"
+      ],
+      "titel": "Mannen komen van Mars, Vrouwen van Venus",
+      "genre": "stand-up",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/mannen-komen-van-mars-vrouwen-van-venus-7hxf"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Huub Stapel"
+      ],
+      "titel": "Mannen komen van Mars, Vrouwen van Venus",
+      "genre": "stand-up",
+      "datum": "2026-11-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/mannen-komen-van-mars-vrouwen-van-venus-7hxf"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Paul Haenen"
+      ],
+      "titel": "Margreet Dolman brengt Warmte en Dominee Gremdaat wijst de Weg",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/margreet-dolman-brengt-warmte-en-dominee-gremdaat-wijst-de-weg-rgxs"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2026-11-22",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/wisten-wij-veel-rgvp"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Comedytunes"
+      ],
+      "titel": "Comedy Night @ De Kleine Willem",
+      "genre": "stand-up",
+      "datum": "2026-11-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/comedy-night-de-kleine-willem-tj3p"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Kaaskop & Van Vleuten"
+      ],
+      "titel": "Breekbare Mensen",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/breekbare-mensen-bcrr"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/oudejaarsconference-2026-rggj"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "LEMMING - herneming",
+      "genre": "stand-up",
+      "datum": "2026-12-02",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/lemming-herneming-rghn"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Arie & Silvester"
+      ],
+      "titel": "Breken de tent af",
+      "genre": "stand-up",
+      "datum": "2026-12-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/breken-de-tent-af-cywv"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Margriet van der Linden"
+      ],
+      "titel": "Annie, are you ok?",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/annie-are-you-ok-7h36"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Tafkal"
+      ],
+      "titel": "Serieus grappig",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/serieus-grappig-n8ym"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "André Manuel, Jan Riesewijk, Bert Eeftink, Nathalie Baartman en Thijs Kemperink"
+      ],
+      "titel": "Twentse Eindejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-27",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "André Manuel, Jan Riesewijk, Bert Eeftink, Nathalie Baartman en Thijs Kemperink"
+      ],
+      "titel": "Twentse Eindejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-28",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "André Manuel, Jan Riesewijk, Bert Eeftink, Nathalie Baartman en Thijs Kemperink"
+      ],
+      "titel": "Twentse Eindejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "André Manuel, Jan Riesewijk, Bert Eeftink, Nathalie Baartman en Thijs Kemperink"
+      ],
+      "titel": "Twentse Eindejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-29",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "André Manuel, Jan Riesewijk, Bert Eeftink, Nathalie Baartman en Thijs Kemperink"
+      ],
+      "titel": "Twentse Eindejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "André Manuel, Jan Riesewijk, Bert Eeftink, Nathalie Baartman en Thijs Kemperink"
+      ],
+      "titel": "Twentse Eindejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-30",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "André Manuel, Jan Riesewijk, Bert Eeftink, Nathalie Baartman en Thijs Kemperink"
+      ],
+      "titel": "Twentse Eindejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "stand-up",
+      "datum": "2027-01-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/beperkt-houdbaar-8zxm"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "stand-up",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/trekvogel-mfsl"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Roel C. Verburg"
+      ],
+      "titel": "Slechtste Liedjes van de Straat",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/slechtste-liedjes-van-de-straat-n8hb"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Jörgen Raymann"
+      ],
+      "titel": "BIGI YARI: Welkom thuis, waar niemand op je zit te wachten",
+      "genre": "stand-up",
+      "datum": "2027-01-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/bigi-yari-welkom-thuis-waar-niemand-op-je-zit-te-wachten-q2p7"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Comedytunes"
+      ],
+      "titel": "Comedy Night @ De Kleine Willem",
+      "genre": "stand-up",
+      "datum": "2027-01-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/comedy-night-de-kleine-willem-lknp"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/als-ik-jou-was-46qb"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "stand-up",
+      "datum": "2027-02-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/niks-aan-het-handje-1lvy"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-02-09",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/ruim-5786"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Cabarestafette presenteert"
+      ],
+      "titel": "Nieuw Geluid!",
+      "genre": "stand-up",
+      "datum": "2027-02-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/nieuw-geluid-q2j5"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Elfie Tromp"
+      ],
+      "titel": "Aai Poesje Aai Poesje",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/aai-poesje-aai-poesje-1lzb"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Peter Heerschop"
+      ],
+      "titel": "Lieve Marianne - try out",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.wilminktheater.nl/nl/agenda/lieve-marianne-try-out-lkfw"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Soraya de Bakker"
+      ],
+      "titel": "Help, ik ga trouwen",
+      "genre": "stand-up",
+      "datum": "2027-02-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/help-ik-ga-trouwen-q2p2"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Comedytunes"
+      ],
+      "titel": "Comedy Night @ De Kleine Willem",
+      "genre": "stand-up",
+      "datum": "2027-02-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/comedy-night-de-kleine-willem-9rh7"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Tim Kroezen"
+      ],
+      "titel": "550",
+      "genre": "stand-up",
+      "datum": "2027-02-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/550-n8h9"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Nathalie Baartman"
+      ],
+      "titel": "De Bössels van Baartman II | Première",
+      "genre": "stand-up",
+      "datum": "2027-02-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://www.wilminktheater.nl/nl/agenda/de-bossels-van-baartman-ii-premiere-fszn"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "stand-up",
+      "datum": "2027-03-03",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/dinsdagmiddag-n8g6"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "stand-up",
+      "datum": "2027-03-04",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/dinsdagmiddag-n8g6"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Gavin Reijnders"
+      ],
+      "titel": "Jazzebelle",
+      "genre": "stand-up",
+      "datum": "2027-03-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/jazzebelle-q2wj"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Berit Companjen"
+      ],
+      "titel": "Zei ik dat hardop?",
+      "genre": "stand-up",
+      "datum": "2027-03-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/zei-ik-dat-hardop-lkxl"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "stand-up",
+      "datum": "2027-03-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/overprikkeld-lkvj"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "stand-up",
+      "datum": "2027-03-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/grip-57gf"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Ronald Snijders - Leven met humor"
+      ],
+      "titel": "Leven met humor",
+      "genre": "stand-up",
+      "datum": "2027-03-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/leven-met-humor-zxnz"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "André Manuel"
+      ],
+      "titel": "De Eenzame Ziel",
+      "genre": "stand-up",
+      "datum": "2027-03-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/de-eenzame-ziel-1lgc"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Piet van Eeghen"
+      ],
+      "titel": "De Lieve Vrede",
+      "genre": "stand-up",
+      "datum": "2027-03-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/de-lieve-vrede-lk94"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Jandino Asporaat"
+      ],
+      "titel": "De Grote Jubileumshow – Jandino 20 Jaar",
+      "genre": "cabaret",
+      "datum": "2027-03-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/de-grote-jubileumshow-jandino-20-jaar-hmq6"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "High Class Bitch - herneming",
+      "genre": "stand-up",
+      "datum": "2027-03-24",
+      "tijd": "19:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/high-class-bitch-herneming-q2jq"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "Had ik maar nooit zo aardig gedaan - Herneming",
+      "genre": "stand-up",
+      "datum": "2027-03-24",
+      "tijd": "21:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/had-ik-maar-nooit-zo-aardig-gedaan-herneming-tjhz"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Comedytunes"
+      ],
+      "titel": "Comedy Night @ De Kleine Willem",
+      "genre": "stand-up",
+      "datum": "2027-03-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/comedy-night-de-kleine-willem-46c9"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Nabil Aoulad Ayad"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "stand-up",
+      "datum": "2027-03-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/daar-is-hij-weer-1l47"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-03-31",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/gelukkig-heb-je-mij-nog-n8sv"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Joep van Deudekom & Rob Urgert"
+      ],
+      "titel": "De Verbinders",
+      "genre": "stand-up",
+      "datum": "2027-04-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/de-verbinders-57yx"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Kamagurka"
+      ],
+      "titel": "Op zekere dag",
+      "genre": "stand-up",
+      "datum": "2027-04-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/op-zekere-dag-9r8n"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Kofferbak Collectief"
+      ],
+      "titel": "Bannink Brecht en Bach",
+      "genre": "kleinkunst",
+      "datum": "2027-04-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/bannink-brecht-en-bach-q2z7"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Theo, Plien, Bianca, Ilse, Rop e.a."
+      ],
+      "titel": "Ratatatata!",
+      "genre": "stand-up",
+      "datum": "2027-04-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/ratatatata-hm5v"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Theo, Plien, Bianca, Ilse, Rop e.a."
+      ],
+      "titel": "Ratatatata!",
+      "genre": "stand-up",
+      "datum": "2027-04-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/ratatatata-hm5v"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Comedytunes"
+      ],
+      "titel": "Comedy Night @ De Kleine Willem",
+      "genre": "stand-up",
+      "datum": "2027-04-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/comedy-night-de-kleine-willem-ywzv"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Thijs Kemperink"
+      ],
+      "titel": "Tot het uiterste gedreven",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/tot-het-uiterste-gedreven-tj4w"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een snotje",
+      "genre": "stand-up",
+      "datum": "2027-04-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/god-is-een-snotje-jp6n"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "cabaret",
+      "datum": "2027-05-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/babel-xq7h"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Jeannine la Rose"
+      ],
+      "titel": "Meer?!",
+      "genre": "stand-up",
+      "datum": "2027-05-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/meer-cym6"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "stand-up",
+      "datum": "2027-05-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/wagyu-q2gq"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "stand-up",
+      "datum": "2027-05-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/wagyu-q2gq"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Is het leven al begonnen?",
+      "genre": "stand-up",
+      "datum": "2027-05-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/is-het-leven-al-begonnen-9rgr"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Theatertroep"
+      ],
+      "titel": "Vier crematies en een scheiding",
+      "genre": "stand-up",
+      "datum": "2027-05-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/vier-crematies-en-een-scheiding-572d"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "stand-up",
+      "datum": "2027-05-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/revue-revanche-lkbh"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "stand-up",
+      "datum": "2027-05-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/mama-is-boos-6t7t"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Kees van Amstel"
+      ],
+      "titel": "Mogen we eerder weg?",
+      "genre": "stand-up",
+      "datum": "2027-05-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/mogen-we-eerder-weg-hm9k"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "stand-up",
+      "datum": "2027-05-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/vanzelfsprekend-fsgs"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Eeftink & Neimeijer"
+      ],
+      "titel": "Niets Menselijks Is Ons Vreemd!",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/niets-menselijks-is-ons-vreemd-8zwp"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/wina-s-wereld-d128"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Viggo Waas, Eddie B. Wahr & Kees van der Vooren"
+      ],
+      "titel": "Eigenlijk",
+      "genre": "cabaret",
+      "datum": "2027-06-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/eigenlijk-bcss"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Jelka van Houten en Sanne Wallis de Vries"
+      ],
+      "titel": "Lift",
+      "genre": "stand-up",
+      "datum": "2027-06-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/lift-cy4p"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-06-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/tunnelvisie-tjzp"
+    }
+  ]
+}

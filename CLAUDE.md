@@ -16,6 +16,15 @@ Cabaret- en comedyagenda voor Nederland en België. Statische site, gebouwd door
 - Een speeldatum is uniek op voorstelling + theater + datum + tijd.
 - Bij tegenstrijdige bronnen: `status: "onzeker"` met een `opmerking`.
 
+## Ophalen
+
+- `ophalen/run.mjs` draait bronnen uit `ophalen/bronnen/` gelijktijdig; per host één verzoek tegelijk met pauze (`ophalen/lib/http.mjs`). Respecteer robots.txt en Crawl-delay; omzeil nooit een blokkade (403, captcha). Cookies volgen bij een doorverwijzing is gewoon browsergedrag en mag.
+- In deze cloudomgeving heeft Node de proxy nodig: `NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt NODE_USE_ENV_PROXY=1 npm run ophalen`. Op GitHub Actions is dat niet nodig.
+- Een bron levert records `{ theater, artiesten: [namen], titel, genre, datum, tijd, status, soort, bron }`. `theater` is een id uit de `theaters` van de bron, of een object voor een nieuwe zaal.
+- Neem alleen cabaret en comedy op (`herkenGenre` in `ophalen/lib/normaliseer.mjs`). Bij twijfel liever weglaten.
+- `ophalen/samenvoegen.mjs` vervangt per bron de vorige vondsten vanaf de ophaaldatum en maakt artiesten, zalen en voorstellingen aan. Artiesten worden op `slug(naam)` en `ookBekendAls` herkend.
+- Bekend, nog niet gedaan: Luxor (Next.js, data in de pagina), DeLaMar, Walhalla, De Meervaart (Phoenix LiveView), PLT, Ticketmatic-zalen (Zaantheater, Zwolse Theaters, Harmonie, MartiniPlaza, Purmaryn, Tilburg, Utrecht). Chassé, Hanzehof, Stadsschouwburg Haarlem en Rijswijkse Schouwburg weigeren bots (403); Toomler heeft een kapot certificaat.
+
 ## Controleren
 
 `npm run check` en `npm run build` moeten zonder fouten draaien voor een commit.

@@ -1,0 +1,719 @@
+{
+  "bron": "de-veste",
+  "naam": "Theater De Veste",
+  "opgehaald": "2026-10-21",
+  "theaters": [
+    {
+      "id": "theater-de-veste",
+      "naam": "Theater De Veste",
+      "plaats": "Delft",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.theaterdeveste.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2026-10-29",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Pieter Derks"
+      ],
+      "titel": "Ja, leuk",
+      "genre": "cabaret",
+      "datum": "2026-10-30",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/ja-leuk-rpnv"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim voor iedereen",
+      "genre": "cabaret",
+      "datum": "2026-11-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim voor iedereen",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi.",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/kintsugi-d2kg"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi.",
+      "genre": "cabaret",
+      "datum": "2026-11-07",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/kintsugi-d2kg"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/ruim-bs4y"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/ruim-bs4y"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Oudejaars 2026: Schaamteloos",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/oudejaars-2026-schaamteloos-fhtv"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Sara Kroos"
+      ],
+      "titel": "Prikkelarme Kermis",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/prikkelarme-kermis-dj5k"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Alina Sharipova (MC), Diederik Zuurmond, Stephen Bell, Finn Visser en Vincent Geers."
+      ],
+      "titel": "De Comedy Club",
+      "genre": "stand-up",
+      "datum": "2026-11-24",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-comedy-club-qh9g"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Plien en Bianca"
+      ],
+      "titel": "Harrekidee",
+      "genre": "cabaret",
+      "datum": "2026-11-30",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/harrekidee-68ky"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Plien en Bianca"
+      ],
+      "titel": "Harrekidee",
+      "genre": "cabaret",
+      "datum": "2026-12-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/harrekidee-68ky"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Khalid Alterch | ICE"
+      ],
+      "titel": "Live in het theater",
+      "genre": "cabaret",
+      "datum": "2026-12-05",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/live-in-het-theater-znp5"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Sjaak Bral"
+      ],
+      "titel": "Vaarwel 2026",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/vaarwel-2026-tz5d"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Rob Urgert & Joep van Deudekom"
+      ],
+      "titel": "De Grote Oudejaars Kwis 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-grote-oudejaars-kwis-2026-13q7"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Nieuwjaars Cabarestafette"
+      ],
+      "titel": "Nieuw Geluid!",
+      "genre": "cabaret",
+      "datum": "2027-01-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/nieuw-geluid-z5lx"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad",
+      "genre": "cabaret",
+      "datum": "2027-01-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/noodzakelijk-kwaad-qh5y"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/noodzakelijk-kwaad-qh5y"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Bert Visscher & Martin van Waardenberg"
+      ],
+      "titel": "The Sunshine Boys",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/the-sunshine-boys-lb2x"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Diverse comedians"
+      ],
+      "titel": "De Comedy Club",
+      "genre": "stand-up",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-comedy-club-4ngt"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/dekpunt-jx88"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/wagyu-y6s2"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/wagyu-y6s2"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/gelukkig-heb-je-mij-nog-13t8"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Van Vleuten & Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/alles-onder-controle-nl9r"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Van Vleuten & Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/alles-onder-controle-nl9r"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Van Vleuten & Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/alles-onder-controle-nl9r"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom Ongemak",
+      "genre": "cabaret",
+      "datum": "2027-02-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/welkom-ongemak-rpcg"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk eventueel de dag",
+      "genre": "cabaret",
+      "datum": "2027-02-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/pluk-eventueel-de-dag-qhnz"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Theo Maassen, Plien & Bianca, Ilse Warringa e.a."
+      ],
+      "titel": "Ratatatata!",
+      "genre": "cabaret",
+      "datum": "2027-02-24",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/ratatatata-9jbl"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Theo Maassen, Plien & Bianca, Ilse Warringa e.a."
+      ],
+      "titel": "Ratatatata!",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/ratatatata-9jbl"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/overprikkeld-bsxp"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Diverse comedians"
+      ],
+      "titel": "De Comedy Club",
+      "genre": "stand-up",
+      "datum": "2027-03-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-comedy-club-mrkw"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Nacht van het Cabaret"
+      ],
+      "titel": "Diverse cabaretiers",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/diverse-cabaretiers-sv8y"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "cabaret",
+      "datum": "2027-03-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/vanzelfsprekend-13cs"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Micky Overman"
+      ],
+      "titel": "Don't Threaten Me With A Good Time",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/don-t-threaten-me-with-a-good-time-5y92"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "LEBBIS"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-03-30",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/satan-is-moe-qhf4"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Pieter Jouke"
+      ],
+      "titel": "Uit Stilstand",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/uit-stilstand-8k7f"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Jelka van Houten & Sanne Wallis de Vries"
+      ],
+      "titel": "Lift",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/lift-tzqn"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/wisten-wij-veel-jx22"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-04-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/imperfect-nln8"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super normaal",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/super-normaal-h9ht"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super normaal",
+      "genre": "cabaret",
+      "datum": "2027-05-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/super-normaal-h9ht"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Diverse comedians"
+      ],
+      "titel": "De Comedy Club",
+      "genre": "stand-up",
+      "datum": "2027-05-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-comedy-club-rpr9"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Jawad Es Soufi"
+      ],
+      "titel": "Tnawies",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/tnawies-tztf"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Finalistentournee 60e editie",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/finalistentournee-60e-editie-mrmv"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-06-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/revue-revanche-1p7j"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "DE GROTE JUBILEUMSHOW – Jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-06-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-grote-jubileumshow-jandino-20-jaar-ngqs"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-06-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/ravot-fhtj"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Peter Heerschop"
+      ],
+      "titel": "Lieve Marianne",
+      "genre": "cabaret",
+      "datum": "2027-06-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/lieve-marianne-5lfy"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Is het leven al begonnen?",
+      "genre": "cabaret",
+      "datum": "2027-06-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/is-het-leven-al-begonnen-1p7k"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Veldhuis & Kemper"
+      ],
+      "titel": "Try-Outs",
+      "genre": "cabaret",
+      "datum": "2027-06-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterdeveste.nl/programma/try-outs-qzcp"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Kor Hoebe"
+      ],
+      "titel": "Korrelrelatie",
+      "genre": "cabaret",
+      "datum": "2027-06-19",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/korrelrelatie-9ynz"
+    }
+  ]
+}

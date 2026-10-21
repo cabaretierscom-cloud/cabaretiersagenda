@@ -1,0 +1,415 @@
+{
+  "bron": "nijmegen",
+  "naam": "Stadsschouwburg & De Vereeniging Nijmegen",
+  "opgehaald": "2026-10-21",
+  "theaters": [
+    {
+      "id": "stadsschouwburg-nijmegen",
+      "naam": "Stadsschouwburg Nijmegen",
+      "plaats": "Nijmegen",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.stadsschouwburgendevereeniging.nl"
+    },
+    {
+      "id": "de-vereeniging",
+      "naam": "Concertgebouw De Vereeniging",
+      "plaats": "Nijmegen",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.stadsschouwburgendevereeniging.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Sara Kroos"
+      ],
+      "titel": "Prikkelarme kermis",
+      "genre": "cabaret",
+      "datum": "2026-10-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/sara-kroos-ds8q"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Cabarestafette"
+      ],
+      "titel": "Nieuw geluid!",
+      "genre": "cabaret",
+      "datum": "2026-10-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/cabarestafette-8wpg"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Cabarestafette"
+      ],
+      "titel": "Nieuw geluid!",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/cabarestafette-8wpg"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi.",
+      "genre": "cabaret",
+      "datum": "2026-11-11",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/patrick-laureij-7p4w"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Pieter Derks"
+      ],
+      "titel": "Ja, leuk",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/pieter-derks-7p3k"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "Striptease Van De Dood",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/david-linszen-skw6"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Yentl & de Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/yentl-de-boer-5j23"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Yentl & de Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/yentl-de-boer-5j23"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/merijn-scholten-92fp"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/merijn-scholten-92fp"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "SCHAAMTELOOS 2027",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/dolf-jansen-flyv"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom Ongemak",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/wim-helsen-5jqh"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Beth & Flo"
+      ],
+      "titel": "Zoveel meer",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/beth-flo-qgld"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "De musical zonder billen (4+)"
+      ],
+      "titel": "Doldwaze familiemusical vol humor en fantasie",
+      "genre": "cabaret",
+      "datum": "2027-02-10",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/de-musical-zonder-billen-4-l6xs"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "voor iedereen",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/micha-wertheim-qg1v"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Cabaret & Classics"
+      ],
+      "titel": "Roza Herwig & Julius Backer",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/cabaret-classics-45xg"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/david-van-rosmalen-92sd"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Lisa Ostermann (reprise)"
+      ],
+      "titel": "De Baas",
+      "genre": "cabaret",
+      "datum": "2027-03-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/lisa-ostermann-reprise-z9pf"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/lebbis-8wwh"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "TIP van de Lindenberg: Grof Geschud"
+      ],
+      "titel": "VIEREN",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/tip-van-de-lindenberg-grof-geschud-thzh"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-04-21",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/van-vleuten-en-van-muiswinkel-r3zd"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Jawad es Soufi"
+      ],
+      "titel": "TNAWIES",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/jawad-es-soufi-xrr2"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/kasper-van-der-laan-nys3"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/kasper-van-der-laan-nys3"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-05-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/rayen-panday-z992"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-05-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/martijn-koning-144t"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Kooiapen",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/martijn-crins-qggf"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-06-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/thomas-van-luyn-5jjp"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-06-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/thomas-van-luyn-5jjp"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Lift"
+      ],
+      "titel": "komedie met Jelka van Houten & Sanne Wallis de Vries",
+      "genre": "cabaret",
+      "datum": "2027-06-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/lift-144m"
+    }
+  ]
+}

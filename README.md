@@ -37,6 +37,29 @@ Elk item heeft een vaste `id` van kleine letters en streepjes, zoals `claudia-de
 
 Speeldata in het verleden blijven in het bestand staan als archief, maar komen niet op de site.
 
+## Speellijsten ophalen
+
+De map `ophalen/` haalt de speellijsten rechtstreeks bij theaters en comedyclubs op.
+
+```sh
+npm run ophalen               # alle bronnen ophalen (duurt even: sites vragen pauzes)
+npm run ophalen -- carre spot-groningen   # alleen deze bronnen
+npm run samenvoegen           # vondsten samenvoegen in data/
+```
+
+- `ophalen/bronnen/` heeft één klein bestand per bron (meestal één theater).
+- `ophalen/platforms/` bevat scripts voor websiteplatforms die veel theaters delen, zoals Peppered en The Events Calendar. Een nieuwe zaal op zo'n platform toevoegen kost een paar regels.
+- De uitkomst per bron staat in `data/bronnen/<bron>.json`. Mislukt een bron, dan blijft de vorige uitkomst staan.
+- Bij het samenvoegen vervangt elke bron zijn eigen vorige vondsten, zodat afgelaste voorstellingen verdwijnen. Nieuwe artiesten, zalen en voorstellingen worden automatisch aangemaakt. Twijfelgevallen komen in `data/te-controleren.json`.
+- Het ophalen is beleefd: een herkenbare naam (CabaretiersBot), robots.txt wordt gevolgd, inclusief de gevraagde pauze tussen verzoeken.
+
+Op GitHub draait dit elke nacht automatisch (`.github/workflows/bijwerken.yml`). Je kunt het ook met de hand starten via het tabblad **Actions → Agenda bijwerken → Run workflow**.
+
+### Wat je zelf kunt aanvullen
+
+- **Land van een artiest:** nieuwe artiesten krijgen `"land": null`. Vul `"NL"` of `"BE"` in als je het weet.
+- **Andere schrijfwijze:** staat dezelfde artiest er twee keer in (bijvoorbeeld "Yentl & de Boer" en "Yentl en de Boer"), voeg dan bij de ene `"ookBekendAls": ["andere schrijfwijze"]` toe en verwijder de andere.
+
 ## Zelf draaien
 
 Je hebt [Node.js](https://nodejs.org) 20 of nieuwer nodig. Er zijn geen andere pakketten nodig.

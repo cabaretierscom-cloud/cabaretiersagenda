@@ -3,10 +3,14 @@
   "private": true,
   "description": "De cabaretagenda van Nederland en België",
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "node build.mjs",
     "preview": "node scripts/serve.mjs",
-    "check": "node scripts/check-data.mjs"
+    "check": "node scripts/check-data.mjs",
+    "ophalen": "node --no-warnings ophalen/run.mjs",
+    "samenvoegen": "node ophalen/samenvoegen.mjs"
   }
 }

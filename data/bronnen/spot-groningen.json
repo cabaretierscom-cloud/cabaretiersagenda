@@ -1,0 +1,1227 @@
+{
+  "bron": "spot-groningen",
+  "naam": "SPOT Groningen",
+  "opgehaald": "2026-10-21",
+  "theaters": [
+    {
+      "id": "de-oosterpoort",
+      "naam": "De Oosterpoort",
+      "plaats": "Groningen",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.spotgroningen.nl"
+    },
+    {
+      "id": "stadsschouwburg-groningen",
+      "naam": "Stadsschouwburg Groningen",
+      "plaats": "Groningen",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.spotgroningen.nl"
+    },
+    {
+      "id": "machinefabriek-groningen",
+      "naam": "Machinefabriek",
+      "plaats": "Groningen",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.spotgroningen.nl"
+    },
+    {
+      "id": "usva-groningen",
+      "naam": "Usva",
+      "plaats": "Groningen",
+      "land": "NL",
+      "soort": "theater",
+      "website": null
+    },
+    {
+      "id": "lutherse-kerk-groningen",
+      "naam": "Lutherse Kerk",
+      "plaats": "Groningen",
+      "land": "NL",
+      "soort": "overig",
+      "website": null
+    },
+    {
+      "id": "a-theater-groningen",
+      "naam": "A-Theater",
+      "plaats": "Groningen",
+      "land": "NL",
+      "soort": "theater",
+      "website": null
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "usva-groningen",
+      "artiesten": [
+        "Amsterdams Studenten Cabaret Festival"
+      ],
+      "titel": "Finalistentournee",
+      "genre": "cabaret",
+      "datum": "2026-10-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/amsterdams-studenten-cabaret-festival/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "De Baas",
+      "genre": "kleinkunst",
+      "datum": "2026-10-28",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/lisa-ostermann-5/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Plien & Bianca"
+      ],
+      "titel": "Harrekidee!",
+      "genre": "cabaret",
+      "datum": "2026-11-02",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/plien-bianca-8/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Plien & Bianca"
+      ],
+      "titel": "Harrekidee!",
+      "genre": "cabaret",
+      "datum": "2026-11-03",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/plien-bianca-9/"
+    },
+    {
+      "theater": "usva-groningen",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "stand-up",
+      "datum": "2026-11-04",
+      "tijd": "20:30",
+      "status": "geannuleerd",
+      "soort": "try-out",
+      "bron": "https://www.spotgroningen.nl/programma/marie-koet/"
+    },
+    {
+      "theater": "usva-groningen",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "stand-up",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "geannuleerd",
+      "soort": "try-out",
+      "bron": "https://www.spotgroningen.nl/programma/marie-koet-2/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Groninger Studenten Cabaret Festival"
+      ],
+      "titel": "Halve finale 40e GSCF",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/groninger-studenten-cabaret-festival-22/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Groninger Studenten Cabaret Festival"
+      ],
+      "titel": "Halve finale 40e GSCF",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/groninger-studenten-cabaret-festival-23/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Groninger Studenten Cabaret Festival"
+      ],
+      "titel": "Finale 40e GSCF",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/groninger-studenten-cabaret-festival-24/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Bert Visscher en het Noordpool Strijkkwartet"
+      ],
+      "titel": "Bert Visscher, 65 Dat Zou Je Niet Zeggen",
+      "genre": "cabaret",
+      "datum": "2026-11-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/bert-visscher-en-het-noordpool-strijkkwartet-2/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/claudia-de-breij-16/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Myrte Siebinga"
+      ],
+      "titel": "GELUKKIG MAAR",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:15",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/myrte-siebinga/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "cabaret",
+      "datum": "2026-11-26",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/claudia-de-breij-17/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "Striptease Van De Dood",
+      "genre": "stand-up",
+      "datum": "2026-11-30",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/david-linszen-2/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Jimmy Carr - Laughs funny"
+      ],
+      "titel": "Chambers Touring presents",
+      "genre": "stand-up",
+      "datum": "2026-12-02",
+      "tijd": "19:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/jimmy-carr-laughs-funny/"
+    },
+    {
+      "theater": "usva-groningen",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.spotgroningen.nl/programma/luuk-weggemans/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Jimmy Carr - Laughs funny"
+      ],
+      "titel": "Chambers Touring presents",
+      "genre": "stand-up",
+      "datum": "2026-12-02",
+      "tijd": "21:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/jimmy-carr-4/"
+    },
+    {
+      "theater": "usva-groningen",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.spotgroningen.nl/programma/luuk-weggemans-2/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Yentl & De Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "kleinkunst",
+      "datum": "2026-12-06",
+      "tijd": "14:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/yentl-de-boer-3/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Yentl & De Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "kleinkunst",
+      "datum": "2026-12-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/yentl-de-boer-4/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "De nogal hyperbijzondere Groningse Oudejaars-improvisatie-extravaganza 2026",
+      "genre": "cabaret",
+      "datum": "2026-12-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/andries-tunru-stefan-hendrikx-2/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Anne & Bas"
+      ],
+      "titel": "De Natte Dromen Revue",
+      "genre": "cabaret",
+      "datum": "2026-12-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/anne-bas/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Marlijn Weerdenburg"
+      ],
+      "titel": "Geworteld",
+      "genre": "kleinkunst",
+      "datum": "2026-12-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/marlijn-weerdenburg/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Jörgen Raymann"
+      ],
+      "titel": "BIG YARI: Welkom thuis, waar niemand op je zit te wachten",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/jorgen-raymann-3/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Kamagurka"
+      ],
+      "titel": "Op zekere dag",
+      "genre": "cabaret",
+      "datum": "2026-12-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/kamagurka-2/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Maarten Heijmans & Xander Vrienten"
+      ],
+      "titel": "Wachtend op de dood",
+      "genre": "kleinkunst",
+      "datum": "2026-12-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/maarten-heijmans-xander-vrienten/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "De oudejaarsconference 2026",
+      "genre": "cabaret",
+      "datum": "2026-12-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/guido-weijers-6/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos – Oudejaars 2026",
+      "genre": "stand-up",
+      "datum": "2026-12-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/dolf-jansen-16/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Yora Rienstra, Vera Marijt e.a."
+      ],
+      "titel": "Vrouwejaars 2026",
+      "genre": "cabaret",
+      "datum": "2026-12-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/yora-rienstra-vera-marijt-e-a-2/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Joosen en De Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2027-01-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/joosen-en-de-jager-2/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "André Manuel"
+      ],
+      "titel": "De Eenzame Ziel",
+      "genre": "cabaret",
+      "datum": "2027-01-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/andre-manuel-6/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom ongemak",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/wim-helsen-5/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Echt Gebeurd"
+      ],
+      "titel": "op Tour!",
+      "genre": "cabaret",
+      "datum": "2027-01-24",
+      "tijd": "14:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/paulien-cornelisse-micha-wertheim-2/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-01-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/david-van-rosmalen/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "stand-up",
+      "datum": "2027-01-31",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/rayen-panday-4/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-02-02",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/richard-groenendijk-5/"
+    },
+    {
+      "theater": "usva-groningen",
+      "artiesten": [
+        "Alex Ploeg"
+      ],
+      "titel": "Niks Persoonlijks",
+      "genre": "stand-up",
+      "datum": "2027-02-02",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.spotgroningen.nl/programma/alex-ploeg-8/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Cabarestafette presenteert:"
+      ],
+      "titel": "NIEUW GELUID!",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/cabarestafette-presenteert/"
+    },
+    {
+      "theater": "usva-groningen",
+      "artiesten": [
+        "Alex Ploeg"
+      ],
+      "titel": "Niks Persoonlijks",
+      "genre": "stand-up",
+      "datum": "2027-02-03",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.spotgroningen.nl/programma/alex-ploeg-9/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/remko-vrijdag-2/"
+    },
+    {
+      "theater": "usva-groningen",
+      "artiesten": [
+        "Alex Ploeg"
+      ],
+      "titel": "Niks Persoonlijks",
+      "genre": "stand-up",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.spotgroningen.nl/programma/alex-ploeg-10/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Ruud Smulders"
+      ],
+      "titel": "RÜDSICHTSLOS",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/ruud-smulders/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-02-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/nabil-3/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2027-02-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/de-broers-van-arkel/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Rob Kemps"
+      ],
+      "titel": "Laat me niet alleen",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/rob-kemps-3/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Saman Amini's Integratieplan #2"
+      ],
+      "titel": "Alles is Perspectief",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/saman-aminis-integratieplan2/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Gavin Reijnders"
+      ],
+      "titel": "Jazzebelle",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/gavin-reijnders-2/"
+    },
+    {
+      "theater": "usva-groningen",
+      "artiesten": [
+        "Teun van den Elzen"
+      ],
+      "titel": "Ze moesten eens weten",
+      "genre": "stand-up",
+      "datum": "2027-02-17",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.spotgroningen.nl/programma/teun-van-den-elzen-6/"
+    },
+    {
+      "theater": "usva-groningen",
+      "artiesten": [
+        "Teun van den Elzen"
+      ],
+      "titel": "Ze moesten eens weten",
+      "genre": "stand-up",
+      "datum": "2027-02-18",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.spotgroningen.nl/programma/teun-van-den-elzen-7/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "JUK",
+      "genre": "cabaret",
+      "datum": "2027-03-01",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/jeroens-clan-3/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "cabaret",
+      "datum": "2027-03-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/selma-visscher-2/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Flip Noorman"
+      ],
+      "titel": "Bonobo",
+      "genre": "kleinkunst",
+      "datum": "2027-03-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/flip-noorman-2/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Ronald Snijders"
+      ],
+      "titel": "Leven met humor",
+      "genre": "cabaret",
+      "datum": "2027-03-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/ronald-snijders-6/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim voor iedereen",
+      "genre": "cabaret",
+      "datum": "2027-03-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/micha-wertheim-15/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-03-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/daan-van-der-hoeven-2/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een snotje",
+      "genre": "cabaret",
+      "datum": "2027-03-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/kim-karssen-2/"
+    },
+    {
+      "theater": "usva-groningen",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€472.000",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/oscar-smit/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Maartje en Kine"
+      ],
+      "titel": "DE BINGO SHOW",
+      "genre": "kleinkunst",
+      "datum": "2027-03-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/maartje-en-kine-2/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-03-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/van-vleuten-en-van-muiswinkel/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/van-vleuten-en-van-muiswinkel-2/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Micky Overman"
+      ],
+      "titel": "Netherlands 2027",
+      "genre": "stand-up",
+      "datum": "2027-03-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/micky-overman-2/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Daniel Arends"
+      ],
+      "titel": "High Class Bitch",
+      "genre": "stand-up",
+      "datum": "2027-03-31",
+      "tijd": "19:00",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/daniel-arends-12/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Daniel Arends"
+      ],
+      "titel": "Had ik maar nooit zo aardig gedaan",
+      "genre": "stand-up",
+      "datum": "2027-03-31",
+      "tijd": "21:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/daniel-arends-18/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Daniel Arends"
+      ],
+      "titel": "High Class Bitch",
+      "genre": "stand-up",
+      "datum": "2027-04-01",
+      "tijd": "19:00",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/daniel-arends-19/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Daniel Arends"
+      ],
+      "titel": "Had ik maar nooit zo aardig gedaan",
+      "genre": "stand-up",
+      "datum": "2027-04-01",
+      "tijd": "21:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/daniel-arends-20/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "stand-up",
+      "datum": "2027-04-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/lebbis-9/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Christian van Eijkelenburg"
+      ],
+      "titel": "Smalltalk",
+      "genre": "cabaret",
+      "datum": "2027-04-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/christian-van-eijkelenburg-3/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/martijn-koning-8/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's wereld",
+      "genre": "cabaret",
+      "datum": "2027-04-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/wina-ricardo/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Yentl en de Boer"
+      ],
+      "titel": "De dagen",
+      "genre": "kleinkunst",
+      "datum": "2027-04-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/yentl-en-de-boer-6/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-04-30",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/freek-de-jonge-10/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-05-06",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/rundfunk-10/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/rundfunk-11/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-05-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/andries-tunru-4/"
+    },
+    {
+      "theater": "usva-groningen",
+      "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Kooiapen",
+      "genre": "cabaret",
+      "datum": "2027-05-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.spotgroningen.nl/programma/martijn-crins-2/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Ronald Snijders en Pieter Jouke"
+      ],
+      "titel": "Staat van Verwarring",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/ronald-snijders-en-pieter-jouke/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Klaas van Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/klaas-van-eerden/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Finalistentournee 60e editie",
+      "genre": "cabaret",
+      "datum": "2027-05-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/cameretten-2/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/kasper-van-der-laan-9/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/kasper-van-der-laan-10/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/thomas-van-luyn-5/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "kleinkunst",
+      "datum": "2027-05-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/valentina-toth-9/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Is het leven al begonnen?",
+      "genre": "cabaret",
+      "datum": "2027-06-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/fabian-franciscus-4/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "stand-up",
+      "datum": "2027-06-07",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/merijn-scholten-10/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "stand-up",
+      "datum": "2027-06-08",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/merijn-scholten-11/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "stand-up",
+      "datum": "2027-06-09",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.spotgroningen.nl/programma/merijn-scholten-12/"
+    },
+    {
+      "theater": "de-oosterpoort",
+      "artiesten": [
+        "Viggo Waas, Eddie B. Wahr & Kees van der Vooren"
+      ],
+      "titel": "Eigenlijk",
+      "genre": "cabaret",
+      "datum": "2027-06-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/viggo-waas-eddie-b-wahr-kees-van-der-vooren/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "kleinkunst",
+      "datum": "2027-09-15",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/van-der-laan-woe-9/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "kleinkunst",
+      "datum": "2027-09-16",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/van-der-laan-woe-8/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "kleinkunst",
+      "datum": "2027-09-17",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/van-der-laan-woe-7/"
+    }
+  ]
+}

@@ -1,15 +1,1838 @@
 [
-  { "id": "claudia-de-breij", "naam": "Claudia de Breij", "land": "NL", "kleur": "roze" },
-  { "id": "jochem-myjer", "naam": "Jochem Myjer", "land": "NL", "kleur": "geel" },
-  { "id": "pieter-derks", "naam": "Pieter Derks", "land": "NL", "kleur": "blauw" },
-  { "id": "patrick-laureij", "naam": "Patrick Laureij", "land": "NL", "kleur": "groen" },
-  { "id": "sara-kroos", "naam": "Sara Kroos", "land": "NL", "kleur": "oranje" },
-  { "id": "najib-amhali", "naam": "Najib Amhali", "land": "NL", "kleur": "paars" },
-  { "id": "roue-verveer", "naam": "Roué Verveer", "land": "NL", "kleur": "paars" },
-  { "id": "sanne-wallis-de-vries", "naam": "Sanne Wallis de Vries", "land": "NL", "kleur": "rood" },
-  { "id": "jelka-van-houten", "naam": "Jelka van Houten", "land": "NL", "kleur": "rood" },
-  { "id": "alex-agnew", "naam": "Alex Agnew", "land": "BE", "kleur": "zwart" },
-  { "id": "bert-gabriels", "naam": "Bert Gabriëls", "land": "BE", "kleur": "aqua" },
-  { "id": "arnout-van-den-bossche", "naam": "Arnout Van den Bossche", "land": "BE", "kleur": "limoen" },
-  { "id": "yannick-noben", "naam": "Yannick Noben", "land": "BE", "kleur": "lila" }
+  {
+    "id": "we-saw-that",
+    "naam": "“We Saw That!”",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "abdulllah-sbieh",
+    "naam": "Abdulllah Sbieh",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "abishek-kumar",
+    "naam": "Abishek Kumar",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "akf",
+    "naam": "Akf",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "alex-agnew",
+    "naam": "Alex Agnew",
+    "land": "BE",
+    "kleur": "zwart"
+  },
+  {
+    "id": "alex-ploeg",
+    "naam": "Alex Ploeg",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "alex-sijm",
+    "naam": "Alex Sijm",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "alina-sharipova",
+    "naam": "Alina Sharipova",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "alina-sharipova-mc-diederik-zuurmond-stephen-bell-finn-visser-en-vincent-geers",
+    "naam": "Alina Sharipova (MC), Diederik Zuurmond, Stephen Bell, Finn Visser en Vincent Geers.",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "amsterdam-kleinkunst-festival",
+    "naam": "Amsterdam Kleinkunst Festival",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "amsterdams-kleinkunst-festival",
+    "naam": "Amsterdams Kleinkunst Festival",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "amsterdams-studenten-cabaret-festival",
+    "naam": "Amsterdams Studenten Cabaret Festival",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "amsterdams-studenten-cabaretfestival",
+    "naam": "Amsterdams Studenten Cabaretfestival",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "andre-manuel",
+    "naam": "André Manuel",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "andre-manuel-jan-riesewijk-bert-eeftink-nathalie-baartman-en-thijs-kemperink",
+    "naam": "André Manuel, Jan Riesewijk, Bert Eeftink, Nathalie Baartman en Thijs Kemperink",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "andries-tunru",
+    "naam": "Andries Tunru",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "andries-tunru-en-stefan-hendrikx",
+    "naam": "Andries Tunru & Stefan Hendrikx",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "andy-marcelissen",
+    "naam": "Andy Marcelissen",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "anne-en-bas",
+    "naam": "Anne & Bas",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "annick-boer",
+    "naam": "Annick Boer",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "annie-m-g-schmidtprijs",
+    "naam": "Annie M.G. Schmidtprijs",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "anuar",
+    "naam": "Anuar",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "arie-en-silvester",
+    "naam": "Arie en Silvester",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "arjan-kleton",
+    "naam": "Arjan Kleton",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "armando-anto",
+    "naam": "Armando Anto",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "arnout-van-den-bossche",
+    "naam": "Arnout Van den Bossche",
+    "land": "BE",
+    "kleur": "limoen"
+  },
+  {
+    "id": "ashton-brothers",
+    "naam": "Ashton Brothers",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "ayoub",
+    "naam": "Ayoub",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "ayoub-kharkhach",
+    "naam": "Ayoub Kharkhach",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "barbara-sloesen-en-joost-hofman",
+    "naam": "Barbara Sloesen en Joost Hofman",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "bas-birker",
+    "naam": "Bas Birker",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "berit-companjen",
+    "naam": "Berit Companjen",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "bert-gabriels",
+    "naam": "Bert Gabriëls",
+    "land": "BE",
+    "kleur": "aqua"
+  },
+  {
+    "id": "bert-visscher-en-martin-van-waardenberg",
+    "naam": "Bert Visscher & Martin van Waardenberg",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "bert-visscher-en-het-noordpool-strijkkwartet",
+    "naam": "Bert Visscher en het Noordpool Strijkkwartet",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "beth-en-flo",
+    "naam": "Beth & Flo",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "bettina-holwerda",
+    "naam": "Bettina Holwerda",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "bianca-del-rio",
+    "naam": "Bianca Del Rio",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "bob-koomen",
+    "naam": "Bob Koomen",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "boban-benjamin-braspenning",
+    "naam": "Boban Benjamin Braspenning",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "boban-braspenning",
+    "naam": "Boban Braspenning",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "bolder-en-van-santen",
+    "naam": "Bolder & Van Santen",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "boys-won-t-be-boys",
+    "naam": "Boys Won't Be Boys",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "bro-s",
+    "naam": "Bro's",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "broers-van-arkel",
+    "naam": "Broers van Arkel",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "bugra-gedik",
+    "naam": "Buğra Gedik",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "cabarestafette",
+    "naam": "Cabarestafette",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "cabarestafette-presenteert",
+    "naam": "Cabarestafette presenteert:",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "cabaret-en-classics",
+    "naam": "Cabaret & Classics",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "cameretten",
+    "naam": "Cameretten",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "celine-janssen",
+    "naam": "Céline Janssen",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "chris-verlaan",
+    "naam": "Chris Verlaan",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "christel-de-laat",
+    "naam": "Christel de Laat",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "christian-van-eijkelenburg",
+    "naam": "Christian van Eijkelenburg",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "claudia-de-breij",
+    "naam": "Claudia de Breij",
+    "land": "NL",
+    "kleur": "roze"
+  },
+  {
+    "id": "collectief-jongste-kind",
+    "naam": "Collectief Jongste Kind",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "comedy-comedians-seizoen-26-27",
+    "naam": "Comedy Comedians - seizoen 26-27",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "comedy-vibe",
+    "naam": "Comedy Vibe",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "comedyavond-met-marco-lopes-piet-als-mc",
+    "naam": "Comedyavond met Marco Lopes (Piet) als MC",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "comedytunes",
+    "naam": "Comedytunes",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "daan-van-der-hoeven",
+    "naam": "Daan van der Hoeven",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "daniel-arends",
+    "naam": "Daniël Arends",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "daniel-yazbek",
+    "naam": "Daniel Yazbek",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "david-linszen",
+    "naam": "David Linszen",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "david-van-rosmalen",
+    "naam": "David van Rosmalen",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "de-broers-van-arkel",
+    "naam": "De Broers van Arkel",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "de-gestampte-meisjes",
+    "naam": "De Gestampte Meisjes",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "de-meiden-van-toen",
+    "naam": "DE MEIDEN van toen",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "de-musical-zonder-billen-4",
+    "naam": "De musical zonder billen (4+)",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "deng-boy",
+    "naam": "Deng Boy",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "diva-s-op-stal",
+    "naam": "Diva's op Stal",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "diverse-comedians",
+    "naam": "Diverse comedians",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "dmitry-romanov",
+    "naam": "Dmitry Romanov",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "dogu-demirkol",
+    "naam": "Doğu Demirkol",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "dolf-jansen",
+    "naam": "Dolf Jansen",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "echt-gebeurd",
+    "naam": "Echt Gebeurd",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "eeftink-en-neimeijer",
+    "naam": "Eeftink & Neimeijer",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "elfie-tromp",
+    "naam": "Elfie Tromp",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "elias-de-bruyne",
+    "naam": "Elias de Bruyne",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "eran-en-co",
+    "naam": "Eran&co",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "esther-van-der-voort",
+    "naam": "Esther van der Voort",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "esther-s-time-of-the-month",
+    "naam": "Esther’s Time of the Month",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "fabian-franciscus",
+    "naam": "Fabian Franciscus",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "familie-voor-beginners",
+    "naam": "Familie voor Beginners",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "fatu-late-night",
+    "naam": "Fatu Late Night",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "fay-lovsky",
+    "naam": "Fay Lovsky",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "fimme-bakker",
+    "naam": "Fimme Bakker",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "fitz-gessler",
+    "naam": "Fitz Gessler",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "flip-noorman",
+    "naam": "Flip Noorman",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "foil-arms-and-hog",
+    "naam": "Foil Arms and Hog",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "fred-van-leer",
+    "naam": "Fred van Leer",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "freek-de-jonge",
+    "naam": "Freek de Jonge",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "garik-oganisyan",
+    "naam": "Garik Oganisyan",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "gavin-reijnders",
+    "naam": "Gavin Reijnders",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "gerrie-smits",
+    "naam": "Gerrie Smits",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "gilian-de-vries",
+    "naam": "Gilian de Vries",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "girls-in-woods",
+    "naam": "Girls in Woods",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "girls-on-fire-3",
+    "naam": "Girls on Fire 3",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "glodi-lugungu",
+    "naam": "Glodi Lugungu",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "greg-shapiro",
+    "naam": "Greg Shapiro",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "grof-geschud",
+    "naam": "Grof Geschud",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "groninger-studenten-cabaret-festival",
+    "naam": "Groninger Studenten Cabaret Festival",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "guido-spek",
+    "naam": "Guido Spek",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "guido-weijers",
+    "naam": "Guido Weijers",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "hassan-el-fad",
+    "naam": "Hassan El Fad",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "hendrik-kegels-en-thomas-claessens",
+    "naam": "Hendrik Kegels & Thomas Claessens",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "henry-van-loon",
+    "naam": "Henry van Loon",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "hermes-ahmadi",
+    "naam": "Hermes Ahmadi",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "hokjesdenker",
+    "naam": "Hokjesdenker",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "huub-smit-en-gurkan-kucuksenturk",
+    "naam": "Huub Smit & Gurkan Küçüksentürk",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "huub-stapel",
+    "naam": "Huub Stapel",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "ice",
+    "naam": "Ice",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "iris-rulkens",
+    "naam": "Iris Rulkens",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "isabelle-kafando",
+    "naam": "Isabelle Kafando",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "jade-mintjens",
+    "naam": "Jade Mintjens",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "jan-beuving",
+    "naam": "Jan Beuving",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "jandino",
+    "naam": "Jandino",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "jandino-asporaat",
+    "naam": "Jandino Asporaat",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "janice-blok",
+    "naam": "Janice Blok",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "janneke-de-bijl",
+    "naam": "Janneke de Bijl",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "jasper-van-der-veen",
+    "naam": "Jasper van der Veen",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "jawad-es-soufi",
+    "naam": "Jawad Es Soufi",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "jay-francis",
+    "naam": "Jay Francis",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "jeannine-la-rose",
+    "naam": "Jeannine la Rose",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "jelka-van-houten",
+    "naam": "Jelka van Houten",
+    "land": "NL",
+    "kleur": "rood"
+  },
+  {
+    "id": "jelka-van-houten-en-sanne-wallis-de-vries",
+    "naam": "Jelka van Houten & Sanne Wallis de Vries",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "jeroens-clan",
+    "naam": "Jeroens Clan",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "jimmy-carr-laughs-funny",
+    "naam": "Jimmy Carr - Laughs funny",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "jochem-myjer",
+    "naam": "Jochem Myjer",
+    "land": "NL",
+    "kleur": "geel"
+  },
+  {
+    "id": "joep-van-deudekom-en-rob-urgert",
+    "naam": "Joep van Deudekom & Rob Urgert",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "joey-en-dave",
+    "naam": "Joey & Dave",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "johan-goossens",
+    "naam": "Johan Goossens",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "johnny-de-mol",
+    "naam": "Johnny de Mol",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "joosen-en-de-jager",
+    "naam": "Joosen en de Jager",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "joost-spijkers",
+    "naam": "Joost Spijkers",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "jorgen-rayman",
+    "naam": "Jörgen Rayman",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "jorgen-raymann",
+    "naam": "Jörgen Raymann",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "juliet",
+    "naam": "Juliet",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "kaaskop-en-van-vleuten",
+    "naam": "Kaaskop & Van Vleuten",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "kamagurka",
+    "naam": "Kamagurka",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "kasper-van-der-laan",
+    "naam": "Kasper van der Laan",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "keep-it-sample",
+    "naam": "Keep It Sample",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "kees-prins",
+    "naam": "Kees Prins",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "kees-van-amstel",
+    "naam": "Kees van Amstel",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "kevin-bridges",
+    "naam": "Kevin Bridges",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "khalid-alterch-ice",
+    "naam": "Khalid Alterch | ICE",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "kijk-je-kop",
+    "naam": "Kijk je Kop",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "kijk-je-kop-presents-roast-kingz",
+    "naam": "Kijk Je Kop presents Roast KingZ",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "kiki-schippers",
+    "naam": "Kiki Schippers",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "kim-karssen",
+    "naam": "Kim Karssen",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "kim-schuddeboom",
+    "naam": "Kim Schuddeboom",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "klaas-van-der-eerden",
+    "naam": "Klaas van der Eerden",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "klaas-van-eerden",
+    "naam": "Klaas van Eerden",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "kofferbak-collectief",
+    "naam": "Kofferbak Collectief",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "kommil-foo",
+    "naam": "Kommil Foo",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "kor-hoebe",
+    "naam": "Kor Hoebe",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "laus-steenbeke-ydwer-bosma-e-a",
+    "naam": "Laus Steenbeke/Ydwer Bosma e.a.",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "lebbis",
+    "naam": "Lebbis",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "leids-cabaret-festival",
+    "naam": "Leids Cabaret Festival",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "leids-cabaret-festival-on-tour",
+    "naam": "Leids Cabaret Festival on Tour",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "leo-en-marius-blokhuis",
+    "naam": "Leo en Marius Blokhuis",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "lift",
+    "naam": "Lift",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "lisa-osterman",
+    "naam": "Lisa Osterman",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "lisa-ostermann",
+    "naam": "Lisa Ostermann",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "lisa-ostermann-reprise",
+    "naam": "Lisa Ostermann (reprise)",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "live-in-rotterdam",
+    "naam": "Live in Rotterdam",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "louise-korthals",
+    "naam": "Louise Korthals",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "lovella-telesford",
+    "naam": "Lovella Telesford",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "lovella-telesfort",
+    "naam": "Lovella Telesfort",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "luuk-ransijn",
+    "naam": "Luuk Ransijn",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "luuk-weggemans",
+    "naam": "Luuk Weggemans",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "maarten-heijmans-en-xander-vrienten",
+    "naam": "Maarten Heijmans & Xander Vrienten",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "maartje-en-kine",
+    "naam": "Maartje en Kine",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "marcel-van-roosmalen",
+    "naam": "Marcel van Roosmalen",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "marco-lopes",
+    "naam": "Marco Lopes",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "margriet-van-der-linden",
+    "naam": "Margriet van der Linden",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "marie-koet",
+    "naam": "Marie Koet",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "marja-van-katendrecht",
+    "naam": "Marja van Katendrecht",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "marja-van-katendrecht-x-theater-zuidplein",
+    "naam": "Marja van Katendrecht X Theater Zuidplein",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "marjolijn-van-kooten",
+    "naam": "Marjolijn van Kooten",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "marlijn-weerdenburg",
+    "naam": "Marlijn Weerdenburg",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "marlon-kicken",
+    "naam": "Marlon Kicken",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "martijn-crins",
+    "naam": "Martijn Crins",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "martijn-koning",
+    "naam": "Martijn Koning",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "max-van-den-burg",
+    "naam": "Max van den Burg",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "mc-jeffrey-spalburg-en-dj-phantom",
+    "naam": "MC Jeffrey Spalburg & DJ Phantom",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "merijn-scholten",
+    "naam": "Merijn Scholten",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "micha-wertheim",
+    "naam": "Micha Wertheim",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "micky-overman",
+    "naam": "Micky Overman",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "mike-zanting-en-koen-van-der-molen-en-mees-markus",
+    "naam": "Mike Zanting & Koen van der Molen en Mees Markus",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "milene-van-der-smissen",
+    "naam": "Milène van der Smissen",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "mohammed-hussain",
+    "naam": "Mohammed Hussain",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "myrte-siebinga",
+    "naam": "Myrte Siebinga",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "myrthe-siebinga",
+    "naam": "Myrthe Siebinga",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "nabil",
+    "naam": "Nabil",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "nabil-aoulad-ayad",
+    "naam": "Nabil Aoulad Ayad",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "nacht-van-het-cabaret",
+    "naam": "Nacht van het Cabaret",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "nadine-froughi",
+    "naam": "Nadine Froughi",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "najib-en-roue",
+    "naam": "Najib & Roué",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "najib-amhali",
+    "naam": "Najib Amhali",
+    "land": "NL",
+    "kleur": "paars"
+  },
+  {
+    "id": "naomi-seine",
+    "naam": "Naomi Seine",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "nathalie-baartman",
+    "naam": "Nathalie Baartman",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "nesim-el-ahmadi",
+    "naam": "Nesim El Ahmadi",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "nienke-plas",
+    "naam": "Nienke Plas",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "nieuwjaars-cabarestafette",
+    "naam": "Nieuwjaars Cabarestafette",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "niki-jacobs",
+    "naam": "Niki Jacobs",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "nilgun-yerli",
+    "naam": "Nilgün Yerli",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "nour-hajjar-live-in-amsterdam",
+    "naam": "Nour Hajjar live in Amsterdam",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "onias-landveld",
+    "naam": "Onias Landveld",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "onias-landveld-jorgen-raymann-howard-komproe-e-a",
+    "naam": "Onias Landveld, Jörgen Raymann, Howard Komproe e.a.",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "open-mic",
+    "naam": "Open mic",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "oscar-smit",
+    "naam": "Oscar Smit",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "patrick-laureij",
+    "naam": "Patrick Laureij",
+    "land": "NL",
+    "kleur": "groen"
+  },
+  {
+    "id": "patrick-nederkoorn",
+    "naam": "Patrick Nederkoorn",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "paul-haenen",
+    "naam": "Paul Haenen",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "paul-haenen-en-dammie-van-geest",
+    "naam": "Paul Haenen & Dammie van Geest",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "pepijn-schoneveld",
+    "naam": "Pepijn Schoneveld",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "peter-heerschop",
+    "naam": "Peter Heerschop",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "peter-pannekoek",
+    "naam": "Peter Pannekoek",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "piet-van-eeghen",
+    "naam": "Piet van Eeghen",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "pieter-derks",
+    "naam": "Pieter Derks",
+    "land": "NL",
+    "kleur": "blauw"
+  },
+  {
+    "id": "pieter-jouke",
+    "naam": "Pieter Jouke",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "plien-en-bianca",
+    "naam": "Plien en Bianca",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "pretpakhuis",
+    "naam": "Pretpakhuis",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "rachid-larouz",
+    "naam": "Rachid Larouz",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "ramon-chatrer",
+    "naam": "Ramon Chatrer",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "raoul-heertje",
+    "naam": "Raoul Heertje",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "rayen-panday",
+    "naam": "Rayen Panday",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "rayen-panday-en-friends",
+    "naam": "Rayen Panday & Friends",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "reece-kidd",
+    "naam": "Reece Kidd",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "remko-vrijdag",
+    "naam": "Remko Vrijdag",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "remy-evers",
+    "naam": "Remy Evers",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "rene-oskam",
+    "naam": "René Oskam",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "rene-van-meurs",
+    "naam": "René van Meurs",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "renske-kruitbosch",
+    "naam": "Renske Kruitbosch",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "richard-groenendijk",
+    "naam": "Richard Groenendijk",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "ricky-koole",
+    "naam": "Ricky Koole",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "ricky-risolles",
+    "naam": "Ricky Risolles",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "rob-kamphues",
+    "naam": "Rob Kamphues",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "rob-kemps",
+    "naam": "Rob Kemps",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "rob-scheepers",
+    "naam": "Rob Scheepers",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "rob-urgert-en-joep-van-deudekom",
+    "naam": "Rob Urgert & Joep van Deudekom",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "robrecht-vanden-thoren",
+    "naam": "Robrecht Vanden Thoren",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "roel-en-jos-maalderink",
+    "naam": "Roel & Jos Maalderink",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "roel-c-verburg",
+    "naam": "Roel C. Verburg",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "rogier-bak",
+    "naam": "Rogier Bak",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "ronald-goedemondt",
+    "naam": "Ronald Goedemondt",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "ronald-snijders",
+    "naam": "Ronald Snijders",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "ronald-snijders-leven-met-humor",
+    "naam": "Ronald Snijders - Leven met humor",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "ronald-snijders-en-pieter-jouke",
+    "naam": "Ronald Snijders en Pieter Jouke",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "rosa-doornenbal",
+    "naam": "Rosa Doornenbal",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "roue-verveer",
+    "naam": "Roué Verveer",
+    "land": "NL",
+    "kleur": "paars"
+  },
+  {
+    "id": "rundfunk",
+    "naam": "Rundfunk",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "ruud-smulders",
+    "naam": "Ruud Smulders",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "said-el-hassnaoui",
+    "naam": "Said El Hassnaoui",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "saman-amini-s-integratieplan-2",
+    "naam": "Saman Amini's Integratieplan #2",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "samir-fighil",
+    "naam": "Samir Fighil",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "sanne-wallis-de-vries",
+    "naam": "Sanne Wallis de Vries",
+    "land": "NL",
+    "kleur": "rood"
+  },
+  {
+    "id": "sara-kroos",
+    "naam": "Sara Kroos",
+    "land": "NL",
+    "kleur": "oranje"
+  },
+  {
+    "id": "schater-cabaretfestival",
+    "naam": "SCHATER Cabaretfestival",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "sederginne",
+    "naam": "Sederginne",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "selma-visscher",
+    "naam": "Selma Visscher",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "sem-konijn",
+    "naam": "Sem Konijn",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "sezgin-gulec",
+    "naam": "Sezgin Güleç",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "silvesters-comedy-club",
+    "naam": "Silvesters Comedy Club",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "sjaak-bral",
+    "naam": "Sjaak Bral",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "soraya-de-bakker",
+    "naam": "Soraya de Bakker",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "spruijt-en-opperman",
+    "naam": "Spruijt & Opperman",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "stefan-de-kogel",
+    "naam": "Stefan de Kogel",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "stichting-altays",
+    "naam": "Stichting Altays",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "ta-joela",
+    "naam": "Ta Joela",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "tafkal",
+    "naam": "Tafkal",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "team-ricky-risolles",
+    "naam": "Team Ricky Risolles",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "teun-van-den-elzen",
+    "naam": "Teun van den Elzen",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "the-laughing-lizard-26-27",
+    "naam": "The Laughing Lizard - 26/27",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "theatertroep",
+    "naam": "Theatertroep",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "theo-maassen-ilse-warringa-plien-en-bianca-e-a",
+    "naam": "Theo Maassen, Ilse Warringa, Plien & Bianca e.a.",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "theo-maassen-plien-en-bianca-ilse-warringa-e-a",
+    "naam": "Theo Maassen, Plien & Bianca, Ilse Warringa e.a.",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "theo-plien-bianca-ilse-rop-e-a",
+    "naam": "Theo, Plien, Bianca, Ilse, Rop e.a.",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "thijs-kemperink",
+    "naam": "Thijs Kemperink",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "thijs-van-de-meeberg",
+    "naam": "Thijs van de Meeberg",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "thom-gerrits",
+    "naam": "Thom Gerrits",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "thomas-van-luyn",
+    "naam": "Thomas van Luyn",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "tim-hartog",
+    "naam": "Tim Hartog",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "tim-kroezen",
+    "naam": "Tim Kroezen",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "timzingt",
+    "naam": "TimZingt",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "tineke-schouten",
+    "naam": "Tineke Schouten",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "tip-van-de-lindenberg-grof-geschud",
+    "naam": "TIP van de Lindenberg: Grof Geschud",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "tis-hier-geen-hotel-3",
+    "naam": "Tis Hier Geen Hotel 3",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "tobi-kooiman",
+    "naam": "Tobi Kooiman",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "valentina-toth",
+    "naam": "Valentina Tóth",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "van-der-laan-en-woe",
+    "naam": "Van der Laan & Woe",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "van-vleuten-en-van-muiswinkel",
+    "naam": "Van Vleuten & Van Muiswinkel",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
+    "id": "veldhuis-en-kemper",
+    "naam": "Veldhuis & Kemper",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "viggo-en-eddie",
+    "naam": "Viggo & Eddie",
+    "land": null,
+    "kleur": "lila"
+  },
+  {
+    "id": "viggo-waas-eddie-b-wahr-en-kees-van-der-vooren",
+    "naam": "Viggo Waas, Eddie B. Wahr & Kees van der Vooren",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "vlamousse",
+    "naam": "Vlamousse",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "vuile-huichelaar",
+    "naam": "Vuile Huichelaar",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "we-zijn-toch-familie",
+    "naam": "We zijn toch familie",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "wim-helsen",
+    "naam": "Wim Helsen",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
+    "id": "wina-ricardo",
+    "naam": "Wina Ricardo",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "yannick-noben",
+    "naam": "Yannick Noben",
+    "land": "BE",
+    "kleur": "lila"
+  },
+  {
+    "id": "yentl-en-de-boer",
+    "naam": "Yentl en de Boer",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "yora-rienstra-e-a",
+    "naam": "Yora Rienstra e.a.",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "yora-rienstra-vera-marijt-e-a",
+    "naam": "Yora Rienstra, Vera Marijt e.a.",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "yunus-aktas",
+    "naam": "Yunus Aktaş",
+    "land": null,
+    "kleur": "blauw"
+  }
 ]

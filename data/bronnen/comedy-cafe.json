@@ -1,0 +1,1717 @@
+{
+  "bron": "comedy-cafe",
+  "naam": "Comedy Café Amsterdam",
+  "opgehaald": "2026-10-21",
+  "theaters": [
+    {
+      "id": "comedy-cafe-amsterdam",
+      "naam": "Comedy Café Amsterdam",
+      "plaats": "Amsterdam",
+      "land": "NL",
+      "soort": "comedyclub",
+      "website": "https://www.comedycafe.nl"
+    },
+    {
+      "id": "southend-comedy-club",
+      "naam": "Southend Comedy Club",
+      "plaats": "Amsterdam",
+      "land": "NL",
+      "soort": "comedyclub",
+      "website": "https://www.comedycafe.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "PowerPints @ Comedy Cafe",
+      "genre": "stand-up",
+      "datum": "2026-10-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/powerpints-comedy-cafe-3/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [
+        "Nadine Froughi"
+      ],
+      "titel": "Daydreamer",
+      "genre": "stand-up",
+      "datum": "2026-10-22",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/nadine-froughi-daydreamer-3/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-10-23",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-5-8/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "Abishek Kumar"
+      ],
+      "titel": "Abishek wants to Enjoy Life!",
+      "genre": "stand-up",
+      "datum": "2026-10-23",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/abishek-kumar-live-in-amsterdam/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-10-24",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-12/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Masters of Comedy bij Southend Comedy Club Amsterdam",
+      "genre": "stand-up",
+      "datum": "2026-10-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-bij-southend-comedy-club-amsterdam/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-10-24",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-5/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Roel C. Verburg",
+      "genre": "stand-up",
+      "datum": "2026-10-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/roel-c-verburg-2/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Hassan Phills",
+      "genre": "stand-up",
+      "datum": "2026-10-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/hassan-phills/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "ΤΟΣΟ ΟΣΟ | ΑΜΣΤΕΡΝΤΑΜ",
+      "genre": "stand-up",
+      "datum": "2026-10-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/%cf%84%ce%bf%cf%83%ce%bf-%ce%bf%cf%83%ce%bf-%ce%b1%ce%bc%cf%83%cf%84%ce%b5%cf%81%ce%bd%cf%84%ce%b1%ce%bc/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [
+        "Fitz Gessler"
+      ],
+      "titel": "KIWI COMEDIAN IN THE NETHERLANDS",
+      "genre": "stand-up",
+      "datum": "2026-10-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/fitz-gessler-kiwi-comedian-in-the-netherlands/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama probeert ook maar wat” Southend Comedy Club",
+      "genre": "stand-up",
+      "datum": "2026-10-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/esther-van-der-voort-mama-probeert-ook-maar-wat-southend-comedy-club-10/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Comedy Night in English",
+      "genre": "stand-up",
+      "datum": "2026-10-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/comedy-night-in-english-10/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "STANDUPOVKA | AMSTERDAM",
+      "genre": "stand-up",
+      "datum": "2026-10-30",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/standupovka-amsterdam/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Brad Upton Live",
+      "genre": "stand-up",
+      "datum": "2026-10-30",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/brad-upton-live-in-amsterdam-southend-comedy-club/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-10-30",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-5-9/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-10-31",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-13/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-10-31",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-7/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Especial la Risa: HALLOWEEN",
+      "genre": "stand-up",
+      "datum": "2026-11-01",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/especial-la-risa-halloween/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Özgür Turhan Yepyenisi” Stand Up",
+      "genre": "stand-up",
+      "datum": "2026-11-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/ozgur-turhan-yepyenisi-2/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-01-11-2026/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Eindshow Comedycursus UICF",
+      "genre": "stand-up",
+      "datum": "2026-11-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/eindshow-comedycursus-uicf/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Artur Chaparyan",
+      "genre": "stand-up",
+      "datum": "2026-11-03",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/artur-chaparyan/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Christopher Hall: PIZAZZ",
+      "genre": "stand-up",
+      "datum": "2026-11-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/christopher-hall-pizazz/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Comedy Night in English",
+      "genre": "stand-up",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/comedy-night-in-english-05-11-2026/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "Abdulllah Sbieh"
+      ],
+      "titel": "Proposal",
+      "genre": "stand-up",
+      "datum": "2026-11-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/abdulllah-sbieh-proposal/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-06",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-5-10/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-07",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-14/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Andrey Airapetov",
+      "genre": "stand-up",
+      "datum": "2026-11-07",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/andrey-airapetov/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-07",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-8/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Damian Skóra w programie “Pan Komentarz” + Polska Komentująca na żywo!",
+      "genre": "stand-up",
+      "datum": "2026-11-08",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/damian-skora-w-programie-pan-komentarz-polska-komentujaca-na-zywo/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Dan The Stranger",
+      "genre": "stand-up",
+      "datum": "2026-11-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/dan-the-stranger/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Roel C. Verburg [EXTRA SHOW]",
+      "genre": "stand-up",
+      "datum": "2026-11-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/roel-c-verburg-extra-show-2/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "PowerPints",
+      "genre": "stand-up",
+      "datum": "2026-11-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/powerpints-2/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Comedy Night in English",
+      "genre": "stand-up",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/comedy-night-in-english-12-11-2026/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "Nadine Froughi"
+      ],
+      "titel": "Daydreamer",
+      "genre": "stand-up",
+      "datum": "2026-11-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/nadine-froughi-daydreamer-4/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-13",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-5-11/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-14",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-15/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "ED MATSABERIDZE",
+      "genre": "stand-up",
+      "datum": "2026-11-14",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/ed-matsaberidze/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Masters of Comedy bij Southend Comedy Club Amsterdam",
+      "genre": "stand-up",
+      "datum": "2026-11-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-bij-southend-comedy-club-amsterdam-5/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-14",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-9/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [
+        "KEEP IT SAMPLE"
+      ],
+      "titel": "Throwback R&B and Hiphop Quiz",
+      "genre": "stand-up",
+      "datum": "2026-11-15",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/keep-it-sample-throwback-rb-and-hiphop-quiz/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "Mohammed Hussain"
+      ],
+      "titel": "Shaadi Shud I? – Live in Amsterdam!",
+      "genre": "stand-up",
+      "datum": "2026-11-15",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/mohammed-hussain-shaadi-shud-i-live-in-amsterdam/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Experiencia Dalia Gutmann: NO ME CALMO NADA",
+      "genre": "stand-up",
+      "datum": "2026-11-15",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/experiencia-dalia-gutmann-no-me-calmo-nada/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Roel C. Verburg",
+      "genre": "stand-up",
+      "datum": "2026-11-15",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/roel-c-verburg-solo-3-2/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [
+        "Dmitry Romanov"
+      ],
+      "titel": "Новые главы",
+      "genre": "stand-up",
+      "datum": "2026-11-17",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/dmitry-romanov-%d0%bd%d0%be%d0%b2%d1%8b%d0%b5-%d0%b3%d0%bb%d0%b0%d0%b2%d1%8b/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [
+        "Rogier Bak"
+      ],
+      "titel": "Back To The Future",
+      "genre": "stand-up",
+      "datum": "2026-11-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/rogier-bak-back-to-the-future/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-20",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-5-12/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-21",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-16/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Masters of Comedy bij Southend Comedy Club Amsterdam",
+      "genre": "stand-up",
+      "datum": "2026-11-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-bij-southend-comedy-club-amsterdam-6/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-21",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-10/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [
+        "Garik Oganisyan"
+      ],
+      "titel": "NO NEGATIVITY",
+      "genre": "stand-up",
+      "datum": "2026-11-22",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/zarina-and-madina-baibolova/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-22-11-2026/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Zarina and Madina Baibolova",
+      "genre": "stand-up",
+      "datum": "2026-11-24",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/zarina-and-madina-baibolova-2/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "Esther’s Time of the Month"
+      ],
+      "titel": "Live Comedy Podcast met gast",
+      "genre": "stand-up",
+      "datum": "2026-11-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/esthers-time-of-the-month-live-comedy-podcast-met-gast-2/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Open Mic (EN)",
+      "genre": "open-mic",
+      "datum": "2026-11-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/open-mic-en-25-11-2026/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Boosh Bashasha",
+      "genre": "stand-up",
+      "datum": "2026-11-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/boosh-bashasha/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "“We Saw That!”"
+      ],
+      "titel": "Gbemi Oladipo & Andrew Mensah",
+      "genre": "stand-up",
+      "datum": "2026-11-27",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/we-saw-that-gbemi-oladipo-andrew-mensah-sold-out/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-27",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-5-13/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-28",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-17/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "“We Saw That!”"
+      ],
+      "titel": "Gbemi Oladipo & Andrew Mensah",
+      "genre": "stand-up",
+      "datum": "2026-11-28",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/we-saw-that-gbemi-oladipo-andrew-mensah-extra-show-2/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-28",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-11/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama probeert ook maar wat” Southend Comedy Club Matinee show",
+      "genre": "stand-up",
+      "datum": "2026-11-29",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/esther-van-der-voort-mama-probeert-ook-maar-wat-southend-comedy-club-8/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Georgi Kyuchukov and Dimitar Donski Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/georgi-kyuchukov-and-dimitar-donski-stand-up/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Eindshow Comedycursus UICF",
+      "genre": "stand-up",
+      "datum": "2026-11-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/eindshow-comedycursus-uicf-2/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Eindshow Comedycursus UICF",
+      "genre": "stand-up",
+      "datum": "2026-12-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/eindshow-comedycursus-uicf-3/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Seda Yüz Stand Up",
+      "genre": "stand-up",
+      "datum": "2026-12-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/seda-yuz-stand-up/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "Rachid Larouz"
+      ],
+      "titel": "Wakker Worden Try Out",
+      "genre": "stand-up",
+      "datum": "2026-12-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedycafe.nl/agenda/rachid-larouz-wakker-worden-try-out-bij-southend-comedy-club-amsterdam/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-04",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-5-14/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-05",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-18/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-05",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-12/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "Nour Hajjar live in Amsterdam"
+      ],
+      "titel": "DAWA AHMAR",
+      "genre": "stand-up",
+      "datum": "2026-12-05",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/nour-hajjar-live-in-amsterdam-dawa-ahmar/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-5-15/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-19/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Masters of Comedy bij Southend Comedy Club Amsterdam",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-bij-southend-comedy-club-amsterdam-7/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-13/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Roel C. Verburg",
+      "genre": "stand-up",
+      "datum": "2026-12-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/roel-c-verburg-3/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Aidan Jones",
+      "genre": "stand-up",
+      "datum": "2026-12-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/aidan-jones/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "Esther’s Time of the Month"
+      ],
+      "titel": "Live Comedy Podcast met gast",
+      "genre": "stand-up",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/esthers-time-of-the-month-live-comedy-podcast-met-gast-3/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [
+        "Rogier Bak"
+      ],
+      "titel": "Back To The Future",
+      "genre": "stand-up",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/rogier-bak-back-to-the-future-2/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-18",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-5-16/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-20/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Masters of Comedy bij Southend Comedy Club Amsterdam",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-bij-southend-comedy-club-amsterdam-8/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-14/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-26",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-21/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-26",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-15/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-27",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-24/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-27",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-16/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-28",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-25/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-28",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-17/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-29",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-26/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-29",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-18/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-30",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-27/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-30",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-19/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-02",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-33/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-02",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-20/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-08",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-28/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-09",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-32/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-09",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-21/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-15",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-29/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-16",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-34/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-16",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-22/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-22",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-30/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-23",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-35/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-23",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-23/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Roel C. Verburg",
+      "genre": "stand-up",
+      "datum": "2027-01-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/roel-c-verburg-4/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-29",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-31/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-30",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-36/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-01-30",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-24/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Roel C. Verburg",
+      "genre": "stand-up",
+      "datum": "2027-02-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/roel-c-verburg-5/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-05",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-05-02-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-06-02-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-06-02-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-12",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-12-02-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-13",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-13-02-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-13",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-13-02-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-19",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-19-02-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-20",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-20-02-2027/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "Reece Kidd"
+      ],
+      "titel": "1 Irishman in Amsterdam",
+      "genre": "stand-up",
+      "datum": "2027-02-20",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/reece-kidd-1-irishman-in-amsterdam/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-20",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-20-02-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-26",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-26-02-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-27",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-27-02-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-27",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-27-02-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-03-05",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-05-03-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-03-06",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-06-03-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-03-06",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-06-03-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-03-12",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-12-03-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-03-13",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-13-03-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-03-13",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-13-03-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-03-19",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-19-03-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-03-20",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-20-03-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-03-20",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-20-03-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-03-26",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-26-03-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-03-27",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-27-03-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-03-27",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-27-03-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-02",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-02-04-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-03",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-03-04-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-03",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-03-04-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-09",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-09-04-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-10",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-10-04-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-10",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-10-04-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-16",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-16-04-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-17",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-17-04-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-17",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-17-04-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-23",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-23-04-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-24",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-24-04-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Masters of Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-24",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-27-04-2027/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Cocktails & Comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-30",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-30-04-2027/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [
+        "Armando Anto"
+      ],
+      "titel": "No Strings Attached",
+      "genre": "stand-up",
+      "datum": "2027-06-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/armando-anto-southend-comedy-club-amsterdam/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Yannis Pappas Live",
+      "genre": "stand-up",
+      "datum": "2027-06-26",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/yannis-pappas-at-southend-comedy-club-amsterdam/"
+    }
+  ]
+}

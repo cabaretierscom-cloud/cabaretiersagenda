@@ -1,0 +1,771 @@
+{
+  "bron": "carre",
+  "naam": "Koninklijk Theater Carré",
+  "opgehaald": "2026-10-21",
+  "theaters": [
+    {
+      "id": "carre",
+      "naam": "Koninklijk Theater Carré",
+      "plaats": "Amsterdam",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://carre.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Ashton Brothers"
+      ],
+      "titel": "Brothers",
+      "genre": "cabaret",
+      "datum": "2027-03-29",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/ashton-brothers"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Bianca Del Rio"
+      ],
+      "titel": "It Gets Bitter",
+      "genre": "stand-up",
+      "datum": "2027-04-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/bianca-del-rio-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "Oudejaars",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/claudia-de-breij-oudejaarsconference"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "Oudejaars",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-06",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/claudia-de-breij-oudejaarsconference"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "Oudejaars",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-06",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/claudia-de-breij-oudejaarsconference"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/dolf-jansen-schaamteloos"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Foil Arms and Hog"
+      ],
+      "titel": "Smithereens",
+      "genre": "stand-up",
+      "datum": "2027-05-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/foil-arms-and-hog-smithereens"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "Had ik maar nooit zo aardig gedaan",
+      "genre": "cabaret",
+      "datum": "2027-04-12",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/had-ik-maar-nooit-zo-aardig-gedaan"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "Had ik maar nooit zo aardig gedaan",
+      "genre": "cabaret",
+      "datum": "2027-04-13",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/had-ik-maar-nooit-zo-aardig-gedaan"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "High Class Bitch",
+      "genre": "cabaret",
+      "datum": "2027-04-12",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/high-class-bitch"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "High Class Bitch",
+      "genre": "cabaret",
+      "datum": "2027-04-13",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/high-class-bitch"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net Alsof",
+      "genre": "cabaret",
+      "datum": "2026-10-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net Alsof",
+      "genre": "cabaret",
+      "datum": "2026-10-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net Alsof",
+      "genre": "cabaret",
+      "datum": "2026-11-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net Alsof",
+      "genre": "cabaret",
+      "datum": "2026-11-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net Alsof",
+      "genre": "cabaret",
+      "datum": "2026-11-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net Alsof",
+      "genre": "cabaret",
+      "datum": "2026-11-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net Alsof",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net Alsof",
+      "genre": "cabaret",
+      "datum": "2026-11-22",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/kasper-van-der-laan-ruim"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/kasper-van-der-laan-ruim"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Kevin Bridges"
+      ],
+      "titel": "Here If You Need Me",
+      "genre": "stand-up",
+      "datum": "2027-01-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/kevin-bridges"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Kevin Bridges"
+      ],
+      "titel": "Here If You Need Me",
+      "genre": "stand-up",
+      "datum": "2027-01-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/kevin-bridges"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "De Baas",
+      "genre": "cabaret",
+      "datum": "2027-01-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/lisa-ostermann-de-baas"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "De Baas",
+      "genre": "cabaret",
+      "datum": "2027-01-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/lisa-ostermann-de-baas"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-05-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/merijn-scholten-lemming"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/merijn-scholten-lemming"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/merijn-scholten-lemming"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Micky Overman"
+      ],
+      "titel": "Micky Overman Tour 2027",
+      "genre": "stand-up",
+      "datum": "2027-03-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/micky-overman-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2026-11-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/patrick-laureij-kintsugi"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2026-11-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/patrick-laureij-kintsugi"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-09-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/peter-pannekoek-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-10-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/peter-pannekoek-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-10-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/peter-pannekoek-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-10-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/peter-pannekoek-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-10-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/peter-pannekoek-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-10-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/peter-pannekoek-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-10-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/peter-pannekoek-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-10-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/peter-pannekoek-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-10-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/peter-pannekoek-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-10-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/peter-pannekoek-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-10-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/peter-pannekoek-2027"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Pieter Derks"
+      ],
+      "titel": "Ja, leuk",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/pieter-derks-ja-leuk"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Pieter Derks"
+      ],
+      "titel": "Ja, leuk",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/pieter-derks-ja-leuk"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/rayen-panday"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/richard-groenendijk-gelukkig-heb-je-mij-nog"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-05-23",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/richard-groenendijk-gelukkig-heb-je-mij-nog"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-05-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/richard-groenendijk-gelukkig-heb-je-mij-nog"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Sara Kroos"
+      ],
+      "titel": "Prikkelarme kermis",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/sara-kroos-prikkelarme-kermis"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/van-der-laan-woe-dinsdagmiddag"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/van-der-laan-woe-dinsdagmiddag"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/van-der-laan-woe-dinsdagmiddag"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-03-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/van-der-laan-woe-dinsdagmiddag"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-03-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/van-der-laan-woe-dinsdagmiddag"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/van-der-laan-woe-dinsdagmiddag"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/van-der-laan-woe-dinsdagmiddag"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/van-der-laan-woe-dinsdagmiddag"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Yentl en de Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "cabaret",
+      "datum": "2027-01-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/yentl-en-de-boer-rekhalzen"
+    }
+  ]
+}

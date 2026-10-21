@@ -24,6 +24,7 @@ export const GENRES = {
   improvisatie: "Improvisatie",
   festival: "Festival",
   "muzikaal-cabaret": "Muzikaal cabaret",
+  kleinkunst: "Kleinkunst",
 };
 
 export const THEATERSOORTEN = ["theater", "cultuurcentrum", "comedyclub", "café", "festivalterrein", "overig"];
@@ -66,7 +67,7 @@ export function loadData(dir, { today }) {
   const V = byId(voorstellingen, "voorstellingen.json");
 
   for (const a of artiesten) {
-    if (!LANDEN[a.land]) errors.push(`artiest ${a.id}: onbekend land "${a.land}"`);
+    if (a.land != null && !LANDEN[a.land]) errors.push(`artiest ${a.id}: onbekend land "${a.land}"`);
     if (!KLEUREN[a.kleur]) errors.push(`artiest ${a.id}: onbekende kleur "${a.kleur}"`);
   }
   for (const t of theaters) {
@@ -75,7 +76,9 @@ export function loadData(dir, { today }) {
   }
   for (const v of voorstellingen) {
     if (!GENRES[v.genre]) errors.push(`voorstelling ${v.id}: onbekend genre "${v.genre}"`);
-    if (!v.artiesten?.length) errors.push(`voorstelling ${v.id}: geen artiesten`);
+    if (!Array.isArray(v.artiesten)) errors.push(`voorstelling ${v.id}: artiesten moet een lijst zijn`);
+    // Een clubavond of open mic zonder vaste artiest hoort bij één zaal.
+    if (!v.artiesten?.length && !T.has(v.theater)) errors.push(`voorstelling ${v.id}: geen artiesten en geen geldig theater`);
     for (const a of v.artiesten || []) if (!A.has(a)) errors.push(`voorstelling ${v.id}: onbekende artiest "${a}"`);
   }
 

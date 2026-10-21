@@ -1,0 +1,704 @@
+{
+  "bron": "zuidplein",
+  "naam": "Theater Zuidplein",
+  "opgehaald": "2026-10-21",
+  "theaters": [
+    {
+      "id": "theater-zuidplein",
+      "naam": "Theater Zuidplein",
+      "plaats": "Rotterdam",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.theaterzuidplein.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Kijk Je Kop presents Roast KingZ"
+      ],
+      "titel": "Roast KingZ",
+      "genre": "stand-up",
+      "datum": "2026-10-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/roast-kingz-j4sz"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Kijk Je Kop presents Roast KingZ"
+      ],
+      "titel": "Roast KingZ",
+      "genre": "stand-up",
+      "datum": "2027-02-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/roast-kingz-j4sz"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Lovella Telesford"
+      ],
+      "titel": "Wat een gezeik!",
+      "genre": "stand-up",
+      "datum": "2026-10-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/wat-een-gezeik-y323"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Open mic"
+      ],
+      "titel": "Confro Academy x Theater Zuidplein",
+      "genre": "open-mic",
+      "datum": "2026-10-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/confro-academy-x-theater-zuidplein-dc1c"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Marja's Spetterende Bingoshow",
+      "genre": "stand-up",
+      "datum": "2026-11-01",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-spetterende-bingoshow-4mg2"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Marja's Spetterende Bingoshow",
+      "genre": "stand-up",
+      "datum": "2027-04-04",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-spetterende-bingoshow-4mg2"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Marja's Spetterende Bingoshow",
+      "genre": "stand-up",
+      "datum": "2027-05-30",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-spetterende-bingoshow-4mg2"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Live in Rotterdam"
+      ],
+      "titel": "Doğu Demirkol Stand Up",
+      "genre": "stand-up",
+      "datum": "2026-11-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/dogu-demirkol-stand-up-6qf9"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Kijk je Kop"
+      ],
+      "titel": "Kijk je Kop",
+      "genre": "stand-up",
+      "datum": "2026-11-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/kijk-je-kop-1jqx"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Kijk je Kop"
+      ],
+      "titel": "Kijk je Kop",
+      "genre": "stand-up",
+      "datum": "2027-04-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/kijk-je-kop-1jqx"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "TimZingt"
+      ],
+      "titel": "Grijs -reprise-",
+      "genre": "stand-up",
+      "datum": "2026-11-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.theaterzuidplein.nl/agenda/grijs-reprise-7l6c"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Vuile Huichelaar"
+      ],
+      "titel": "Ik zit hier heel alleen kerstfeest te vieren 2",
+      "genre": "stand-up",
+      "datum": "2026-12-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/ik-zit-hier-heel-alleen-kerstfeest-te-vieren-2-rl2b"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Stichting Altays"
+      ],
+      "titel": "Musti Kusti – Stand up comedy",
+      "genre": "stand-up",
+      "datum": "2026-12-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/musti-kusti-stand-up-comedy-zmvs"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Comedyavond met Marco Lopes (Piet) als MC"
+      ],
+      "titel": "Piet en zijn Matties",
+      "genre": "stand-up",
+      "datum": "2026-12-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/piet-en-zijn-matties-7lns"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Nilgün Yerli"
+      ],
+      "titel": "Weet je het zeker? - première",
+      "genre": "stand-up",
+      "datum": "2026-12-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://www.theaterzuidplein.nl/agenda/weet-je-het-zeker-premiere-zvgq"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Yora Rienstra e.a."
+      ],
+      "titel": "Vrouwejaars 2026",
+      "genre": "stand-up",
+      "datum": "2026-12-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/vrouwejaars-2026-ypzm"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Fred van Leer"
+      ],
+      "titel": "Ik weet het eigenlijk niet",
+      "genre": "stand-up",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/ik-weet-het-eigenlijk-niet-shch"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De Grote Jubileumshow",
+      "genre": "stand-up",
+      "datum": "2026-12-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/de-grote-jubileumshow-51dz"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Ta Joela"
+      ],
+      "titel": "Je hebt geen idee - première",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://www.theaterzuidplein.nl/agenda/je-hebt-geen-idee-premiere-lpjq"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Marja van Katendrecht X Theater Zuidplein"
+      ],
+      "titel": "Marja's Very Merry Christmas",
+      "genre": "stand-up",
+      "datum": "2026-12-20",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-very-merry-christmas-1jt6"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Marja van Katendrecht X Theater Zuidplein"
+      ],
+      "titel": "Marja's Very Merry Christmas",
+      "genre": "stand-up",
+      "datum": "2026-12-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-very-merry-christmas-1jt6"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Marja van Katendrecht X Theater Zuidplein"
+      ],
+      "titel": "Marja's Very Merry Christmas",
+      "genre": "stand-up",
+      "datum": "2026-12-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-very-merry-christmas-1jt6"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Marja van Katendrecht X Theater Zuidplein"
+      ],
+      "titel": "Marja's Very Merry Christmas",
+      "genre": "stand-up",
+      "datum": "2026-12-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-very-merry-christmas-1jt6"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Nesim El Ahmadi"
+      ],
+      "titel": "Iedereen komt aan de beurt - try out",
+      "genre": "stand-up",
+      "datum": "2026-12-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterzuidplein.nl/agenda/iedereen-komt-aan-de-beurt-try-out-qss9"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "stand-up",
+      "datum": "2027-01-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/niks-aan-het-handje-9cbw"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Jasper van der Veen"
+      ],
+      "titel": "Op Scherp",
+      "genre": "stand-up",
+      "datum": "2027-01-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/op-scherp-m5v9"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Buğra Gedik"
+      ],
+      "titel": "Ğelukkig Ğeboren",
+      "genre": "stand-up",
+      "datum": "2027-01-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/gelukkig-geboren-1y73"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Myrthe Siebinga"
+      ],
+      "titel": "Gelukkig Maar",
+      "genre": "stand-up",
+      "datum": "2027-01-27",
+      "tijd": "20:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/gelukkig-maar-6fmk"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Anuar"
+      ],
+      "titel": "Ongeduldig Geduldig",
+      "genre": "stand-up",
+      "datum": "2027-02-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/ongeduldig-geduldig-tsq1"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Fimme Bakker"
+      ],
+      "titel": "Zwaargewicht",
+      "genre": "stand-up",
+      "datum": "2027-02-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/zwaargewicht-bqxb"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "stand-up",
+      "datum": "2027-02-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/appeltje-eitje-c2t7"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Glodi Lugungu"
+      ],
+      "titel": "In de Hemel ken ik jullie niet",
+      "genre": "stand-up",
+      "datum": "2027-02-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/in-de-hemel-ken-ik-jullie-niet-j424"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Samir Fighil"
+      ],
+      "titel": "Turbulentie",
+      "genre": "stand-up",
+      "datum": "2027-02-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/turbulentie-f8t3"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Deng Boy"
+      ],
+      "titel": "Double Trouble - try-out",
+      "genre": "stand-up",
+      "datum": "2027-02-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterzuidplein.nl/agenda/double-trouble-try-out-rl8x"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Heel Holland Hoopt",
+      "genre": "stand-up",
+      "datum": "2027-03-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/heel-holland-hoopt-hvpl"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "stand-up",
+      "datum": "2027-03-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/marko-maandag-ry1v"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Gavin Reijnders"
+      ],
+      "titel": "Jazzebelle",
+      "genre": "stand-up",
+      "datum": "2027-03-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/jazzebelle-5194"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "MC Jeffrey Spalburg & DJ Phantom"
+      ],
+      "titel": "Fatu 010",
+      "genre": "stand-up",
+      "datum": "2027-03-14",
+      "tijd": "15:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/fatu-010-bqm6"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Jawad Es Soufi"
+      ],
+      "titel": "Tnawies",
+      "genre": "stand-up",
+      "datum": "2027-03-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/tnawies-1jcb"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Jawad Es Soufi"
+      ],
+      "titel": "Tnawies",
+      "genre": "stand-up",
+      "datum": "2027-03-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/tnawies-1jcb"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [],
+      "titel": "'Nuff Said",
+      "genre": "stand-up",
+      "datum": "2027-04-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/nuff-said-c2qr"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Cameretten Finalistentournee 60e editie",
+      "genre": "stand-up",
+      "datum": "2027-04-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/cameretten-finalistentournee-60e-editie-dtdd"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Rachid Larouz"
+      ],
+      "titel": "Wakker Worden",
+      "genre": "stand-up",
+      "datum": "2027-04-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/wakker-worden-8g78"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Leids Cabaret Festival on Tour"
+      ],
+      "titel": "Finalistentour 2027",
+      "genre": "stand-up",
+      "datum": "2027-04-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/finalistentour-2027-c2c8"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Kim Schuddeboom"
+      ],
+      "titel": "Hardleers",
+      "genre": "stand-up",
+      "datum": "2027-04-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/hardleers-8h22"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "stand-up",
+      "datum": "2027-04-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/vanzelfsprekend-5rfp"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "stand-up",
+      "datum": "2027-04-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/vanzelfsprekend-5rfp"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Team Ricky Risolles"
+      ],
+      "titel": "Ricky Risolles 3 - Niet zo Indiscreet…",
+      "genre": "stand-up",
+      "datum": "2027-05-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/ricky-risolles-3-niet-zo-indiscreet-nrnh"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een snotje",
+      "genre": "stand-up",
+      "datum": "2027-05-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/god-is-een-snotje-zvzc"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Tobi Kooiman"
+      ],
+      "titel": "Best Of 4 - try-out",
+      "genre": "stand-up",
+      "datum": "2027-05-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterzuidplein.nl/agenda/best-of-4-try-out-q8qv"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "stand-up",
+      "datum": "2027-06-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/mensenmens-1j1d"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Tim Hartog"
+      ],
+      "titel": "In principe - try-out",
+      "genre": "stand-up",
+      "datum": "2027-06-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterzuidplein.nl/agenda/in-principe-try-out-4m4l"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Deng Boy"
+      ],
+      "titel": "Double Trouble",
+      "genre": "stand-up",
+      "datum": "2027-07-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/double-trouble-qscm"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+# Haalt elke nacht de speellijsten op, voegt ze samen en slaat de wijzigingen op.
+# Daarna bouwt de hosting (Netlify/Vercel) de site vanzelf opnieuw.
+name: Agenda bijwerken
+
+on:
+  schedule:
+    - cron: "17 3 * * *" # elke nacht om 03:17 UTC
+  workflow_dispatch: {} # handmatig starten via het tabblad Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agenda-bijwerken
+  cancel-in-progress: false
+
+jobs:
+  bijwerken:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Speellijsten ophalen
+        # Een bron die faalt, houdt zijn vorige uitkomst; de rest gaat gewoon door.
+        run: npm run ophalen || echo "::warning::Niet alle bronnen zijn gelukt, zie het logboek hierboven."
+
+      - name: Samenvoegen en controleren
+        run: |
+          npm run samenvoegen
+          npm run check
+          npm run build
+
+      - name: Wijzigingen opslaan
+        run: |
+          if git diff --quiet -- data; then
+            echo "Geen wijzigingen in de agenda."
+            exit 0
+          fi
+          git config user.name "cabaretiers-bot"
+          git config user.email "cabaretiers-bot@users.noreply.github.com"
+          git add data
+          git commit -m "Agenda bijgewerkt $(date -u +%Y-%m-%d)"
+          git push

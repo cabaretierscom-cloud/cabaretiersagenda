@@ -26,10 +26,12 @@ const ink = (kleur) => {
 export function createTemplates(db) {
   const { artiesten: A, theaters: T, voorstellingen: V } = db;
 
-  const artistNames = (vid) => V.get(vid).artiesten.map((a) => A.get(a).naam).join(" & ");
-  const leadInk = (vid) => A.get(V.get(vid).artiesten[0]).kleur;
+  // Voorstellingen zonder vaste artiest (clubavonden, open mics) tonen hun titel als naam.
+  const artistNames = (vid) => V.get(vid).artiesten.map((a) => A.get(a).naam).join(" & ") || V.get(vid).titel;
+  const leadInk = (vid) => A.get(V.get(vid).artiesten[0])?.kleur || "blauw";
   const artistLinks = (vid) =>
-    V.get(vid).artiesten.map((a) => `<a href="/artiesten/${a}/">${esc(A.get(a).naam)}</a>`).join(" &amp; ");
+    V.get(vid).artiesten.map((a) => `<a href="/artiesten/${a}/">${esc(A.get(a).naam)}</a>`).join(" &amp; ") || esc(V.get(vid).titel);
+  const posterHref = (vid, theaterId) => V.get(vid).artiesten.length ? `/artiesten/${V.get(vid).artiesten[0]}/` : `/theaters/${theaterId}/`;
 
   function layout({ title, description = SITE.description, path, section, body, jsonLd }) {
     const nav = [
@@ -105,7 +107,7 @@ ${body}
         <span class="swatch" style="${ink(leadInk(g.voorstelling))};background:var(--bg)" aria-hidden="true"></span>
         <div class="main-text">
           ${showArtist ? `<span class="artist">${artistLinks(g.voorstelling)}</span>` : ""}
-          <span class="show">${esc(v.titel)}${g.soort ? ` <span class="pill">${esc(g.soort)}</span>` : ""}</span>
+          <span class="show">${showArtist && !v.artiesten.length ? esc(t.naam) : esc(v.titel)}${g.soort ? ` <span class="pill">${esc(g.soort)}</span>` : ""}</span>
         </div>
       </div>
       <div class="venue">${showVenue ? `<a href="/theaters/${t.id}/">${esc(t.naam)}</a><span>${esc(t.plaats)}, ${LANDEN[t.land]}</span>` : `<span>${esc(GENRES[v.genre])}</span>`}</div>
@@ -155,14 +157,17 @@ ${body}
 
   function home() {
     const seen = new Set();
-    const posterGigs = db.upcoming.filter((g) => !seen.has(g.voorstelling) && seen.add(g.voorstelling)).slice(0, 10);
+    // Affiches voor voorstellingen met een artiest; clubavonden staan wel in de speellijst.
+    const posterGigs = db.upcoming
+      .filter((g) => V.get(g.voorstelling).artiesten.length && g.status !== "geannuleerd")
+      .filter((g) => !seen.has(g.voorstelling) && seen.add(g.voorstelling)).slice(0, 10);
     const spots = [["78%", "26%"], ["30%", "70%"], ["85%", "80%"], ["20%", "20%"], ["60%", "50%"]];
     const posters = posterGigs.map((g, i) => {
       const v = V.get(g.voorstelling), t = T.get(g.theater);
       const [sx, sy] = spots[i % spots.length];
       const tag = g.status === "uitverkocht" ? "Uitverkocht" : g.soort ? g.soort[0].toUpperCase() + g.soort.slice(1) : "";
       const thisYear = fmt.year(db.today);
-      return `<a class="poster${i === 0 ? " featured" : ""}" href="/artiesten/${v.artiesten[0]}/" style="${ink(leadInk(g.voorstelling))};--sx:${sx};--sy:${sy}" data-datum="${g.datum}">
+      return `<a class="poster${i === 0 ? " featured" : ""}" href="${posterHref(g.voorstelling, g.theater)}" style="${ink(leadInk(g.voorstelling))};--sx:${sx};--sy:${sy}" data-datum="${g.datum}">
         <span class="visually-hidden">${esc(artistNames(g.voorstelling))}, ${esc(v.titel)}, ${fmt.long(g.datum)} in ${esc(t.naam)}, ${esc(t.plaats)}</span>
         <div class="when" aria-hidden="true">
           <span class="weekday">${i === 0 ? "Eerstvolgende" : fmt.weekday(g.datum)}</span>

@@ -1,0 +1,43 @@
+{
+  "bron": "hnt",
+  "naam": "Het Nationale Theater",
+  "opgehaald": "2026-10-21",
+  "theaters": [
+    {
+      "id": "koninklijke-schouwburg",
+      "naam": "Koninklijke Schouwburg",
+      "plaats": "Den Haag",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.hnt.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "koninklijke-schouwburg",
+      "artiesten": [
+        "Saman Amini's Integratieplan #2"
+      ],
+      "titel": "Black Sheep Can Fly",
+      "genre": "cabaret",
+      "datum": "2026-10-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/saman-amini-s-integratieplan-2-9jj9"
+    },
+    {
+      "theater": "koninklijke-schouwburg",
+      "artiesten": [
+        "Hassan El Fad"
+      ],
+      "titel": "Met Marmoucha Orchestra & The Super Gnawa Girls",
+      "genre": "cabaret",
+      "datum": "2026-11-01",
+      "tijd": "16:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/hassan-el-fad-x817"
+    }
+  ]
+}

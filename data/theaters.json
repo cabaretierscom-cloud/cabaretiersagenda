@@ -1,18 +1,298 @@
 [
-  { "id": "carre", "naam": "Koninklijk Theater Carré", "plaats": "Amsterdam", "land": "NL", "soort": "theater", "website": "https://carre.nl" },
-  { "id": "delamar", "naam": "DeLaMar Theater", "plaats": "Amsterdam", "land": "NL", "soort": "theater", "website": null },
-  { "id": "chasse", "naam": "Chassé Theater", "plaats": "Breda", "land": "NL", "soort": "theater", "website": null },
-  { "id": "nieuwe-luxor", "naam": "Nieuwe Luxor Theater", "plaats": "Rotterdam", "land": "NL", "soort": "theater", "website": "https://luxortheater.nl" },
-  { "id": "koninklijke-schouwburg", "naam": "Koninklijke Schouwburg", "plaats": "Den Haag", "land": "NL", "soort": "theater", "website": "https://www.hnt.nl" },
-  { "id": "schouwburg-middelburg", "naam": "Schouwburg Middelburg", "plaats": "Middelburg", "land": "NL", "soort": "theater", "website": null },
-  { "id": "kunstlinie", "naam": "Kunstlinie Almere", "plaats": "Almere", "land": "NL", "soort": "theater", "website": null },
-  { "id": "capitole-gent", "naam": "Capitole Gent", "plaats": "Gent", "land": "BE", "soort": "theater", "website": null },
-  { "id": "de-spil", "naam": "CC De Spil", "plaats": "Roeselare", "land": "BE", "soort": "cultuurcentrum", "website": null },
-  { "id": "concertgebouw-brugge", "naam": "Concertgebouw Brugge", "plaats": "Brugge", "land": "BE", "soort": "theater", "website": null },
-  { "id": "trixxo", "naam": "Trixxo Theater", "plaats": "Hasselt", "land": "BE", "soort": "theater", "website": null },
-  { "id": "stadsschouwburg-antwerpen", "naam": "Stadsschouwburg Antwerpen", "plaats": "Antwerpen", "land": "BE", "soort": "theater", "website": null },
-  { "id": "arenberg", "naam": "Arenberg", "plaats": "Antwerpen", "land": "BE", "soort": "theater", "website": "https://www.arenberg.be" },
-  { "id": "kursaal", "naam": "Kursaal Oostende", "plaats": "Oostende", "land": "BE", "soort": "theater", "website": null },
-  { "id": "koninklijk-circus", "naam": "Koninklijk Circus", "plaats": "Brussel", "land": "BE", "soort": "theater", "website": null },
-  { "id": "stadsschouwburg-mechelen", "naam": "Stadsschouwburg Mechelen", "plaats": "Mechelen", "land": "BE", "soort": "theater", "website": null }
+  {
+    "id": "arenberg",
+    "naam": "Arenberg",
+    "plaats": "Antwerpen",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.arenberg.be"
+  },
+  {
+    "id": "stadsschouwburg-antwerpen",
+    "naam": "Stadsschouwburg Antwerpen",
+    "plaats": "Antwerpen",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "concertgebouw-brugge",
+    "naam": "Concertgebouw Brugge",
+    "plaats": "Brugge",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "koninklijk-circus",
+    "naam": "Koninklijk Circus",
+    "plaats": "Brussel",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "capitole-gent",
+    "naam": "Capitole Gent",
+    "plaats": "Gent",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "trixxo",
+    "naam": "Trixxo Theater",
+    "plaats": "Hasselt",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "stadsschouwburg-mechelen",
+    "naam": "Stadsschouwburg Mechelen",
+    "plaats": "Mechelen",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "kursaal",
+    "naam": "Kursaal Oostende",
+    "plaats": "Oostende",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "de-spil",
+    "naam": "CC De Spil",
+    "plaats": "Roeselare",
+    "land": "BE",
+    "soort": "cultuurcentrum",
+    "website": null
+  },
+  {
+    "id": "kunstlinie",
+    "naam": "Kunstlinie Almere",
+    "plaats": "Almere",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "comedy-cafe-amsterdam",
+    "naam": "Comedy Café Amsterdam",
+    "plaats": "Amsterdam",
+    "land": "NL",
+    "soort": "comedyclub",
+    "website": "https://www.comedycafe.nl"
+  },
+  {
+    "id": "kleine-komedie",
+    "naam": "De Kleine Komedie",
+    "plaats": "Amsterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.dekleinekomedie.nl"
+  },
+  {
+    "id": "delamar",
+    "naam": "DeLaMar Theater",
+    "plaats": "Amsterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "carre",
+    "naam": "Koninklijk Theater Carré",
+    "plaats": "Amsterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://carre.nl"
+  },
+  {
+    "id": "southend-comedy-club",
+    "naam": "Southend Comedy Club",
+    "plaats": "Amsterdam",
+    "land": "NL",
+    "soort": "comedyclub",
+    "website": "https://www.comedycafe.nl"
+  },
+  {
+    "id": "theater-bellevue",
+    "naam": "Theater Bellevue",
+    "plaats": "Amsterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.theaterbellevue.nl"
+  },
+  {
+    "id": "orpheus",
+    "naam": "Orpheus",
+    "plaats": "Apeldoorn",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.orpheus.nl"
+  },
+  {
+    "id": "chasse",
+    "naam": "Chassé Theater",
+    "plaats": "Breda",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "theater-de-veste",
+    "naam": "Theater De Veste",
+    "plaats": "Delft",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.theaterdeveste.nl"
+  },
+  {
+    "id": "koninklijke-schouwburg",
+    "naam": "Koninklijke Schouwburg",
+    "plaats": "Den Haag",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.hnt.nl"
+  },
+  {
+    "id": "parktheater-eindhoven",
+    "naam": "Parktheater Eindhoven",
+    "plaats": "Eindhoven",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.parktheater.nl"
+  },
+  {
+    "id": "de-kleine-willem-enschede",
+    "naam": "De Kleine Willem",
+    "plaats": "Enschede",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "muziekcentrum-enschede",
+    "naam": "Muziekcentrum Enschede",
+    "plaats": "Enschede",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.wilminktheater.nl"
+  },
+  {
+    "id": "wilminktheater",
+    "naam": "Wilminktheater",
+    "plaats": "Enschede",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.wilminktheater.nl"
+  },
+  {
+    "id": "a-theater-groningen",
+    "naam": "A-Theater",
+    "plaats": "Groningen",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "de-oosterpoort",
+    "naam": "De Oosterpoort",
+    "plaats": "Groningen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.spotgroningen.nl"
+  },
+  {
+    "id": "lutherse-kerk-groningen",
+    "naam": "Lutherse Kerk",
+    "plaats": "Groningen",
+    "land": "NL",
+    "soort": "overig",
+    "website": null
+  },
+  {
+    "id": "machinefabriek-groningen",
+    "naam": "Machinefabriek",
+    "plaats": "Groningen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.spotgroningen.nl"
+  },
+  {
+    "id": "stadsschouwburg-groningen",
+    "naam": "Stadsschouwburg Groningen",
+    "plaats": "Groningen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.spotgroningen.nl"
+  },
+  {
+    "id": "usva-groningen",
+    "naam": "Usva",
+    "plaats": "Groningen",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "ainsi-maastricht",
+    "naam": "AINSI",
+    "plaats": "Maastricht",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.theateraanhetvrijthof.nl"
+  },
+  {
+    "id": "theater-aan-het-vrijthof",
+    "naam": "Theater aan het Vrijthof",
+    "plaats": "Maastricht",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.theateraanhetvrijthof.nl"
+  },
+  {
+    "id": "schouwburg-middelburg",
+    "naam": "Schouwburg Middelburg",
+    "plaats": "Middelburg",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "de-vereeniging",
+    "naam": "Concertgebouw De Vereeniging",
+    "plaats": "Nijmegen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.stadsschouwburgendevereeniging.nl"
+  },
+  {
+    "id": "stadsschouwburg-nijmegen",
+    "naam": "Stadsschouwburg Nijmegen",
+    "plaats": "Nijmegen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.stadsschouwburgendevereeniging.nl"
+  },
+  {
+    "id": "nieuwe-luxor",
+    "naam": "Nieuwe Luxor Theater",
+    "plaats": "Rotterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://luxortheater.nl"
+  },
+  {
+    "id": "theater-zuidplein",
+    "naam": "Theater Zuidplein",
+    "plaats": "Rotterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.theaterzuidplein.nl"
+  }
 ]

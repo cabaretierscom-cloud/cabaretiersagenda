@@ -1,0 +1,545 @@
+{
+  "bron": "vrijthof",
+  "naam": "Theater aan het Vrijthof",
+  "opgehaald": "2026-10-21",
+  "theaters": [
+    {
+      "id": "theater-aan-het-vrijthof",
+      "naam": "Theater aan het Vrijthof",
+      "plaats": "Maastricht",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.theateraanhetvrijthof.nl"
+    },
+    {
+      "id": "ainsi-maastricht",
+      "naam": "AINSI",
+      "plaats": "Maastricht",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.theateraanhetvrijthof.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Ronald Snijders"
+      ],
+      "titel": "Leven met humor",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/leven-met-humor-ronald-snijders"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Ayoub"
+      ],
+      "titel": "En verbied de vogels om te fluiten",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/en-verbied-de-vogels-om-te-fluiten-ayoub"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/revue-revanche-valentina-toth"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Hokjesdenker"
+      ],
+      "titel": "We zien het wel even",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/we-zien-het-wel-even-hokjesdenker"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/grip-rayen-panday"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-04-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/alles-onder-controle-van-vleuten-en-van-muiswinkel"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/beperkt-houdbaar-andries-tunru-stefan-hendrikx"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/wagyu-rundfunk"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos (Oudejaars 2026)",
+      "genre": "cabaret",
+      "datum": "2026-12-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/schaamteloos-oudejaars-2026-dolf-jansen"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-06-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/daar-is-hij-weer-nabil"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Arjan Kleton"
+      ],
+      "titel": "Ongewenst",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/ongewenst-arjan-kleton"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Saïd El Hassnaoui"
+      ],
+      "titel": "Saïd lacht met liefde",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/said-lacht-met-liefde-said-el-hassnaoui"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000,-",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/472-000-oscar-smit"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De Grote Jubileumshow",
+      "genre": "cabaret",
+      "datum": "2027-06-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/de-grote-jubileumshow-jandino"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/winas-wereld-wina-ricardo"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Grof Geschud"
+      ],
+      "titel": "Vieren",
+      "genre": "cabaret",
+      "datum": "2027-06-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/vieren-grof-geschud"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/lach-maar-om-mij-luuk-weggemans"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Ricky Koole"
+      ],
+      "titel": "Rare Leeftijd",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/rare-leeftijd-ricky-koole"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Ta Joela"
+      ],
+      "titel": "Je hebt geen idee",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/je-hebt-geen-idee-ta-joela"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Bas Birker"
+      ],
+      "titel": "Twee Procent",
+      "genre": "cabaret",
+      "datum": "2027-04-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/twee-procent-bas-birker"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Lovella Telesford"
+      ],
+      "titel": "Wat een gezeik!",
+      "genre": "cabaret",
+      "datum": "2026-11-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/wat-een-gezeik-lovella-telesford"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Micky Overman"
+      ],
+      "titel": "Theatertour",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/theatertour-micky-overman"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Stefan de Kogel"
+      ],
+      "titel": "Sloopkogel",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/sloopkogel-stefan-de-kogel"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/peer-bob-koomen"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-05-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/kende-da-christel-de-laat"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Alex Ploeg"
+      ],
+      "titel": "Niks Persoonlijks",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/niks-persoonlijks-alex-ploeg"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Alex Ploeg"
+      ],
+      "titel": "Niks Persoonlijks",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/niks-persoonlijks-alex-ploeg"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/imperfect-klaas-van-der-eerden"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/satan-is-moe-lebbis"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/satan-is-moe-lebbis"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/overprikkeld-martijn-koning"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Nieuw programma",
+      "genre": "cabaret",
+      "datum": "2027-01-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/nieuw-programma-kasper-van-der-laan"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/lemming-merijn-scholten"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "DE MEIDEN van toen"
+      ],
+      "titel": "Naar de getver",
+      "genre": "cabaret",
+      "datum": "2027-03-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/naar-de-getver-de-meiden-van-toen"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/eindspel-marie-koet"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "cabaret",
+      "datum": "2027-04-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/babel-kommil-foo"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "cabaret",
+      "datum": "2026-12-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/oudejaarsconference-2026-guido-weijers"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Pepijn Schoneveld"
+      ],
+      "titel": "Welkom dat je luistert",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Alex Agnew"
+      ],
+      "titel": "No More Heroes",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/no-more-heroes-alex-agnew"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/als-ik-jou-was-david-van-rosmalen"
+    }
+  ]
+}
