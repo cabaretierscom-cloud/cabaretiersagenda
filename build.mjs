@@ -46,12 +46,14 @@ const write = (path, html) => {
 
 write("/", t.home());
 write("/agenda/", t.agendaIndex());
-for (const m of t.maanden) write(`/agenda/${m}/`, t.agendaMaand(m));
+for (const m of t.maanden) write(`/agenda/${t.maandId(m)}/`, t.agendaMaand(m));
 write("/plaatsen/", t.plaatsIndex());
 for (const p of t.plaatsen) write(`/plaatsen/${t.plaatsId(p)}/`, t.plaatsPagina(p));
 write("/artiesten/", t.artistIndex());
 // Alleen artiesten en zalen met aankomende voorstellingen krijgen een pagina.
 for (const a of db.artiesten.values()) if (db.gigsForArtist(a.id).length) write(`/artiesten/${a.id}/`, t.artistPage(a));
+// Elke voorstelling met een eigen titel: /artiesten/<artiest>/<voorstelling>/.
+for (const [vid, pad] of t.voorstellingPaden) write(pad, t.voorstellingPagina(vid));
 write("/theaters/", t.theaterIndex());
 for (const th of db.theaters.values()) if (db.gigsForTheater(th.id).length) write(`/theaters/${th.id}/`, t.theaterPage(th));
 write("/over/", t.about());

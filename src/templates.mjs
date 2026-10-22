@@ -2,6 +2,13 @@
 import { LANDEN, STATUSSEN, GENRES, KLEUREN } from "./data.mjs";
 import { fmt, esc, plural, isoWithOffset } from "./format.mjs";
 
+// Webadres-vriendelijke tekst: "Gelukkig heb je mij nog!" -> "gelukkig-heb-je-mij-nog".
+export const slugVan = (s) =>
+  String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, " en ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+// Maand in het webadres: "2026-10" -> "oktober-2026".
+export const maandId = (m) => `${fmt.monthYear(m + "-01").replace(" ", "-")}`;
+
 // Webadres-vriendelijke naam van een plaats: "Den Haag" -> "den-haag".
 export const plaatsId = (p) =>
   String(p).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -44,6 +51,23 @@ export function createTemplates(db) {
     const naam = v.artiesten.map((a) => A.get(a).naam).join(" & ");
     return v.artiesten.length && v.titel.toLowerCase() === naam.toLowerCase() ? null : v.titel;
   };
+  // Elke voorstelling met een eigen titel krijgt een pagina onder haar (eerste) artiest:
+  // /artiesten/richard-groenendijk/gelukkig-heb-je-mij-nog/.
+  const voorstellingPad = new Map();
+  {
+    const bezet = new Set();
+    const metData = new Set(db.upcoming.map((g) => g.voorstelling));
+    for (const v of [...V.values()].sort((x, y) => x.id.localeCompare(y.id))) {
+      if (!metData.has(v.id) || !v.artiesten.length || !echteTitel(v.id)) continue;
+      const basis = `/artiesten/${v.artiesten[0]}/${slugVan(v.titel) || "voorstelling"}`;
+      let pad = basis, n = 2;
+      while (bezet.has(pad)) pad = `${basis}-${n++}`;
+      bezet.add(pad);
+      voorstellingPad.set(v.id, pad + "/");
+    }
+  }
+  const showLink = (vid, tekst) => voorstellingPad.has(vid) ? `<a href="${voorstellingPad.get(vid)}">${tekst}</a>` : tekst;
+
 
   function layout({ title, description = SITE.description, path, section, body, jsonLd }) {
     const nav = [
@@ -123,7 +147,7 @@ ${body}
         <span class="swatch" style="${ink(leadInk(g.voorstelling))};background:var(--bg)" aria-hidden="true"></span>
         <div class="main-text">
           ${showArtist ? `<span class="artist">${artistLinks(g.voorstelling)}</span>` : ""}
-          <span class="show">${showArtist && !v.artiesten.length ? esc(t.naam) : esc(echteTitel(g.voorstelling) || (showArtist ? "" : v.titel))}${g.soort ? ` <span class="pill">${esc(g.soort)}</span>` : ""}</span>
+          <span class="show">${showArtist && !v.artiesten.length ? esc(t.naam) : (echteTitel(g.voorstelling) ? showLink(g.voorstelling, esc(echteTitel(g.voorstelling))) : esc(showArtist ? "" : v.titel))}${g.soort ? ` <span class="pill">${esc(g.soort)}</span>` : ""}</span>
         </div>
       </div>
       <div class="venue">${showVenue ? `<a href="/theaters/${t.id}/">${esc(t.naam)}</a><span><a href="/plaatsen/${plaatsId(t.plaats)}/">${esc(t.plaats)}</a>, ${LANDEN[t.land]}</span>` : `<span>${esc(GENRES[v.genre])}</span>`}</div>
@@ -158,7 +182,7 @@ ${body}
         address: { "@type": "PostalAddress", addressLocality: t.plaats, addressCountry: t.land },
       },
       performer: v.artiesten.map((a) => ({ "@type": "Person", name: A.get(a).naam })),
-      url: g.bron,
+      url: voorstellingPad.has(g.voorstelling) ? SITE.url + voorstellingPad.get(g.voorstelling) : g.bron,
     };
   }
   const eventsLd = (list) => ({ "@context": "https://schema.org", "@graph": list.slice(0, 100).map(eventLd) });
@@ -226,7 +250,7 @@ ${body}
   // Maandkeuze als rij knoppen; de huidige maand is gemarkeerd.
   function maandNav(huidig) {
     return `<nav class="month-nav" aria-label="Maanden">${maanden.map((m) =>
-      `<a href="/agenda/${m}/"${m === huidig ? ' aria-current="page"' : ""}><b>${kortMaand(m)}</b><span>${m.slice(0, 4)}</span></a>`).join("")}</nav>`;
+      `<a href="/agenda/${maandId(m)}/"${m === huidig ? ' aria-current="page"' : ""}><b>${kortMaand(m)}</b><span>${m.slice(0, 4)}</span></a>`).join("")}</nav>`;
   }
 
   // ---------- Pagina's ----------
@@ -319,7 +343,7 @@ ${body}
   <div class="block-head"><h2 id="maand-title">Kies een maand</h2><p>Per maand alle voorstellingen, met zoeken en filters.</p></div>
   <div class="month-tiles">${maanden.map((m) => {
     const n = perMaand(m).length;
-    return `<a href="/agenda/${m}/"><b>${fmt.monthShort(m + "-01")}</b><span>${m.slice(0, 4)}</span><em>${plural(n, "voorstelling", "voorstellingen")}</em></a>`;
+    return `<a href="/agenda/${maandId(m)}/"><b>${fmt.monthShort(m + "-01")}</b><span>${m.slice(0, 4)}</span><em>${plural(n, "voorstelling", "voorstellingen")}</em></a>`;
   }).join("")}</div>
 </section>
 
@@ -340,7 +364,7 @@ ${body}
       ${filters(komend)}
       <div id="gigs">${monthGroups(komend)}</div>
       ${leegBlok}
-      <p class="more"><a class="btn" href="/agenda/${maanden[0]}/">Verder in ${maandNaam(maanden[0])}</a></p>
+      <p class="more"><a class="btn" href="/agenda/${maandId(maanden[0])}/">Verder in ${maandNaam(maanden[0])}</a></p>
     </section>`;
     return layout({ title: "Agenda", description: "Alle aankomende cabaret- en comedyvoorstellingen in Nederland en België, per maand.", path: "/agenda/", section: "agenda", body, jsonLd: eventsLd(komend) });
   }
@@ -355,9 +379,9 @@ ${body}
       ${filters(list)}
       <div id="gigs">${monthGroups(list).replace(/<h3>[^<]*<\/h3>/, "")}</div>
       ${leegBlok}
-      <p class="pager">${vorige ? `<a class="btn ghost" href="/agenda/${vorige}/">${ICON.prev}${maandNaam(vorige)}</a>` : "<span></span>"}${volgende ? `<a class="btn ghost" href="/agenda/${volgende}/">${maandNaam(volgende)}${ICON.next}</a>` : ""}</p>
+      <p class="pager">${vorige ? `<a class="btn ghost" href="/agenda/${maandId(vorige)}/">${ICON.prev}${maandNaam(vorige)}</a>` : "<span></span>"}${volgende ? `<a class="btn ghost" href="/agenda/${maandId(volgende)}/">${maandNaam(volgende)}${ICON.next}</a>` : ""}</p>
     </section>`;
-    return layout({ title: `Cabaret en comedy in ${maandNaam(m)}`, description: `Alle ${list.length} cabaret- en comedyvoorstellingen in ${maandNaam(m)} in Nederland en België.`, path: `/agenda/${m}/`, section: "agenda", body, jsonLd: eventsLd(list) });
+    return layout({ title: `Cabaret en comedy in ${maandNaam(m)}`, description: `Alle ${list.length} cabaret- en comedyvoorstellingen in ${maandNaam(m)} in Nederland en België.`, path: `/agenda/${maandId(m)}/`, section: "agenda", body, jsonLd: eventsLd(list) });
   }
 
   function plaatsIndex() {
@@ -523,6 +547,7 @@ ${body}
   function artistPage(a) {
     const list = db.gigsForArtist(a.id);
     const titles = [...new Set(list.map((g) => echteTitel(g.voorstelling)).filter(Boolean))];
+    const showIds = [...new Set(list.map((g) => g.voorstelling).filter((vid) => echteTitel(vid)))];
     const partners = [...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].filter((x) => x !== a.id);
     const cityCount = new Set(list.map((g) => T.get(g.theater).plaats)).size;
     const summary = list.length
@@ -534,7 +559,7 @@ ${body}
         <p>${summary}</p>
       </div></div>
       <div class="wrap detail-body">
-        ${titles.length ? `<div class="shows-list">${titles.map((t) => `<span class="pill">${esc(t)}</span>`).join("")}</div>` : ""}
+        ${showIds.length ? `<div class="shows-list">${showIds.map((vid) => voorstellingPad.has(vid) ? `<a class="pill" href="${voorstellingPad.get(vid)}">${esc(V.get(vid).titel)}</a>` : `<span class="pill">${esc(V.get(vid).titel)}</span>`).join("")}</div>` : ""}
         ${list.length > 12 ? filters(list, { maand: true }) : ""}
         <div id="gigs">${monthGroups(list, { showArtist: false })}</div>
         ${list.length > 12 ? leegBlok : ""}
@@ -544,6 +569,54 @@ ${body}
       ? kort(`${a.naam} live: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(cityCount, "plaats", "plaatsen")}${titles.length ? `, met ${titles.slice(0, 2).join(" en ")}` : ""}. Eerstvolgende op ${fmt.full(list[0].datum)}. Bekijk alle speeldata.`)
       : `${a.naam} op Cabaretiers.com.`;
     return layout({ title: `${a.naam}: tournee en speeldata`, description: desc, path: `/artiesten/${a.id}/`, section: "artiesten", body, jsonLd: list.length ? eventsLd(list) : null });
+  }
+
+  function voorstellingTekst(vid, list) {
+    const v = V.get(vid);
+    const namen = artistNames(vid);
+    const steden = telPer(list, (g) => T.get(g.theater).plaats);
+    const zalen = telPer(list, (g) => g.theater);
+    const zinnen = [];
+    zinnen.push(`<p><em>${esc(v.titel)}</em> van ${artistLinks(vid)} staat ${keer(list.length)} op de agenda, ${periode(list)}. ` +
+      (zalen.length === 1
+        ? `${list.length === 1 ? "De voorstelling is" : "Alle voorstellingen zijn"} in ${theaterLink(zalen[0][0])} in ${plaatsLink(steden[0][0])}.`
+        : `De voorstelling is te zien in ${steden.length > 1 ? `${steden.length} plaatsen: ${opsomming(steden.slice(0, 10).map(([p]) => plaatsLink(p)))}${steden.length > 10 ? " en meer" : ""}` : plaatsLink(steden[0][0])}.`) +
+      ` Het genre is ${GENRE_TEKST[v.genre]}.</p>`);
+    const p2 = [];
+    const premiere = bijzonder(list, "première")[0];
+    if (premiere) p2.push(`De première is op ${fmt.long(premiere.datum)} in ${theaterLink(premiere.theater)}.`);
+    const tryouts = bijzonder(list, "try-out");
+    if (tryouts.length) p2.push(tryouts.length === 1 ? `Op ${fmt.full(tryouts[0].datum)} is er een try-out in ${theaterLink(tryouts[0].theater)}.` : `${tryouts.length} voorstellingen zijn try-outs.`);
+    const derniere = bijzonder(list, "dernière")[0];
+    if (derniere) p2.push(`De dernière is op ${fmt.long(derniere.datum)} in ${theaterLink(derniere.theater)}.`);
+    const tekst = (p2.join(" ") + uitverkochtZin(list)).trim();
+    if (tekst) zinnen.push(`<p>${tekst}</p>`);
+    const anderen = v.artiesten.flatMap((a) => db.gigsForArtist(a).map((g) => g.voorstelling))
+      .filter((x, i, arr) => x !== vid && voorstellingPad.has(x) && arr.indexOf(x) === i);
+    zinnen.push(`<p>${anderen.length ? `Ook op de speellijst van ${esc(namen)}: ${opsomming(anderen.slice(0, 4).map((x) => `<a href="${voorstellingPad.get(x)}">${esc(V.get(x).titel)}</a>`))}. ` : ""}${kaartenZin}</p>`);
+    return `<section class="seo-tekst prose" aria-labelledby="over-titel">
+        <h2 id="over-titel">${esc(v.titel)} van ${esc(namen)} zien</h2>
+        ${zinnen.join("\n        ")}
+      </section>`;
+  }
+
+  function voorstellingPagina(vid) {
+    const v = V.get(vid), a = A.get(v.artiesten[0]);
+    const list = up.filter((g) => g.voorstelling === vid);
+    const steden = new Set(list.map((g) => T.get(g.theater).plaats)).size;
+    const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap">
+        <a class="back" href="/artiesten/${a.id}/">${ICON.back}${esc(a.naam)}</a>
+        <h1>${esc(v.titel)}</h1>
+        <p>Voorstelling van ${artistLinks(vid)}. ${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.</p>
+      </div></div>
+      <div class="wrap detail-body">
+        ${list.length > 12 ? filters(list, { maand: true }) : ""}
+        <div id="gigs">${monthGroups(list, { showArtist: false })}</div>
+        ${list.length > 12 ? leegBlok : ""}
+        ${voorstellingTekst(vid, list)}
+      </div>`;
+    const desc = kort(`${v.titel} van ${artistNames(vid)}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden, "plaats", "plaatsen")}. Eerstvolgende op ${fmt.full(list[0].datum)}. Bekijk alle speeldata.`);
+    return layout({ title: `${v.titel} van ${artistNames(vid)}: speeldata`, description: desc, path: voorstellingPad.get(vid), section: "artiesten", body, jsonLd: eventsLd(list) });
   }
 
   function theaterIndex() {
@@ -614,6 +687,6 @@ ${body}
 
   return {
     home, agendaIndex, agendaMaand, plaatsIndex, plaatsPagina, artistIndex, artistPage, theaterIndex, theaterPage, about, notFound,
-    maanden, plaatsen, plaatsId,
+    voorstellingPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
   };
 }
