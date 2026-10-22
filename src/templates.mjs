@@ -22,6 +22,8 @@ const ICON = {
 
 // Beeldmerk: de C met de punt op een oranje vlak. Dezelfde punt staat op de i van het woordmerk.
 export const LOGO_SVG = `<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" rx="12" fill="#FF6A13"/><path d="M33.5 15.2A13 13 0 1 0 33.5 32.8" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/><circle cx="33.6" cy="24" r="4.6" fill="#000"/><circle cx="33.6" cy="24" r="1.7" fill="#FF6A13"/></svg>`;
+// Omgekeerd beeldmerk (witte C op zwart), voor op een oranje vlak zoals de footer.
+export const LOGO_OMGEKEERD_SVG = `<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" rx="12" fill="#000"/><path d="M33.5 15.2A13 13 0 1 0 33.5 32.8" fill="none" stroke="#FFF" stroke-width="7" stroke-linecap="round"/><circle cx="33.6" cy="24" r="4.6" fill="#FFF"/><circle cx="33.6" cy="24" r="1.7" fill="#000"/></svg>`;
 
 const ink = (kleur) => {
   const [v, fg] = KLEUREN[kleur];
@@ -86,10 +88,13 @@ ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(
 <main id="main">
 ${body}
 </main>
-<footer>
+<footer class="site-footer">
   <div class="wrap">
-    <p><strong>cabaretiers.com</strong>. De cabaretagenda van Nederland en België.</p>
-    <p>Speeldata verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
+    <a class="brand" href="/" aria-label="${SITE.name}, naar de voorpagina">
+      <span class="brand-mark" aria-hidden="true">${LOGO_OMGEKEERD_SVG}</span>
+      <span class="wordmark" aria-hidden="true">cabaret<span class="punt-i">ı</span>ers<span class="tld">.com</span></span>
+    </a>
+    <p>De cabaretagenda van Nederland en België. Speeldata verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
   </div>
 </footer>
 <script src="/agenda.js" defer></script>

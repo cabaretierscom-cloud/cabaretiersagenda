@@ -369,9 +369,13 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .shows-list .pill { font-size: var(--step-0); padding: 6px 14px; }
 
 /* ---------- Footer ---------- */
-footer { border-top: 2px solid var(--ink); margin-top: 48px; }
-footer .wrap { padding-block: 28px 40px; display: flex; gap: 24px; justify-content: space-between; flex-wrap: wrap; color: var(--ink-2); font-size: .95rem; }
-footer p { margin: 0; max-width: 60ch; }
+/* Footer: volledig oranje strook met het omgekeerde logo; ook in donkere modus zwart op oranje. */
+.site-footer { --ink: #000; --ink-2: #000; margin-top: 48px; background: var(--riso-orange); color: #000; }
+.site-footer .wrap { padding-block: 32px 40px; display: flex; gap: 16px 32px; align-items: center; justify-content: space-between; flex-wrap: wrap; font-size: .95rem; }
+.site-footer p { margin: 0; max-width: 62ch; }
+.site-footer .wordmark { color: #000; }
+.site-footer .wordmark .tld { color: #000; }
+.site-footer a:focus-visible { outline-color: #000; }
 
 @media (prefers-reduced-motion: no-preference) { .strip { scroll-behavior: smooth; } }
 @media (prefers-reduced-motion: reduce) { .poster, .poster::before { transition: none; } }
