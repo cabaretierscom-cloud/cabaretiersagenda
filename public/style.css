@@ -73,12 +73,19 @@
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --paper: #141318; --paper-2: #1E1D24; --ink: #F4F4F7; --ink-2: #B4B4C2; --rule: #34333D;
     --riso-black: #2A2833;
     --accent: #7C91FF; --on-accent: #000000; --focus: #9AABFF; --sold: #FF7A8C; --doubt: #F2C14E;
     color-scheme: dark;
   }
+}
+/* Een expliciete keuze voor donker (bijv. in een viewer) wint van de systeeminstelling. */
+:root[data-theme="dark"] {
+  --paper: #141318; --paper-2: #1E1D24; --ink: #F4F4F7; --ink-2: #B4B4C2; --rule: #34333D;
+  --riso-black: #2A2833;
+  --accent: #7C91FF; --on-accent: #000000; --focus: #9AABFF; --sold: #FF7A8C; --doubt: #F2C14E;
+  color-scheme: dark;
 }
 
 *, *::before, *::after { box-sizing: border-box; }

@@ -1,13 +1,26 @@
 // Bouwt de site naar dist/: `npm run build`.
 // Alleen speeldata vanaf vandaag komen op de site; oudere blijven in data/ als archief.
-import { mkdirSync, rmSync, writeFileSync, cpSync } from "node:fs";
+import { mkdirSync, rmSync, writeFileSync, cpSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadData } from "./src/data.mjs";
 import { createTemplates, SITE, LOGO_SVG } from "./src/templates.mjs";
 
 const root = dirname(fileURLToPath(import.meta.url));
-const out = join(root, "dist");
+// VOORBEELD=1 bouwt een versie met relatieve links naar dist-voorbeeld/, om de site zonder
+// eigen domein te bekijken (bijv. als artifact). De gewone build gaat naar dist/.
+const VOORBEELD = process.env.VOORBEELD === "1";
+const out = join(root, VOORBEELD ? "dist-voorbeeld" : "dist");
+
+// "/agenda/" vanaf /artiesten/x/ wordt "../../agenda/index.html".
+function relatief(html, pad) {
+  const diepte = pad.endsWith(".html") ? pad.split("/").length - 2 : pad.split("/").filter(Boolean).length;
+  const terug = "../".repeat(diepte);
+  return html.replace(/(href|src)="\/(?!\/)([^"#?]*)([#?][^"]*)?"/g, (_, attr, p, rest = "") => {
+    const doel = !p || p.endsWith("/") ? `${p}index.html` : p;
+    return `${attr}="${terug}${doel}${rest}"`;
+  });
+}
 // BUILD_DATE=2026-11-01 npm run build bouwt de site zoals die op die dag zou zijn.
 const today = process.env.BUILD_DATE || new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" });
 
@@ -27,7 +40,7 @@ const pages = [];
 const write = (path, html) => {
   const file = path.endsWith(".html") ? join(out, path) : join(out, path, "index.html");
   mkdirSync(dirname(file), { recursive: true });
-  writeFileSync(file, html);
+  writeFileSync(file, VOORBEELD ? relatief(html, path) : html);
   if (!path.endsWith(".html")) pages.push(path);
 };
 
@@ -45,6 +58,10 @@ write("/over/", t.about());
 write("/404.html", t.notFound());
 
 writeFileSync(join(out, "logo.svg"), LOGO_SVG);
+if (VOORBEELD) {
+  const css = join(out, "style.css");
+  writeFileSync(css, readFileSync(css, "utf8").replace(/url\("\/fonts\//g, 'url("fonts/'));
+}
 writeFileSync(join(out, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
   pages.map((p) => `  <url><loc>${SITE.url}${p}</loc><lastmod>${today}</lastmod></url>`).join("\n") +
