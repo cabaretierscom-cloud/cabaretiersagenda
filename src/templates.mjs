@@ -41,7 +41,6 @@ export function createTemplates(db) {
     const naam = v.artiesten.map((a) => A.get(a).naam).join(" & ");
     return v.artiesten.length && v.titel.toLowerCase() === naam.toLowerCase() ? null : v.titel;
   };
-  const posterHref = (vid, theaterId) => V.get(vid).artiesten.length ? `/artiesten/${V.get(vid).artiesten[0]}/` : `/theaters/${theaterId}/`;
 
   function layout({ title, description = SITE.description, path, section, body, jsonLd }) {
     const nav = [
@@ -232,30 +231,27 @@ ${body}
     return longestWord > 13 ? " xlong" : titel.length > 10 ? " long" : "";
   };
 
-  function posterWall() {
-    const seen = new Set();
-    // Affiches voor voorstellingen met een artiest; clubavonden staan wel in de speellijst.
-    const posterGigs = up
-      .filter((g) => V.get(g.voorstelling).artiesten.length && g.status !== "geannuleerd")
-      .filter((g) => !seen.has(g.voorstelling) && seen.add(g.voorstelling)).slice(0, 12);
+  // Affiche per artiest die het vaakst speelt, met de eerstvolgende speeldatum.
+  function posterWall(lijst) {
     const spots = [["78%", "26%"], ["30%", "70%"], ["85%", "80%"], ["20%", "20%"], ["60%", "50%"]];
     const thisYear = fmt.year(db.today);
-    return posterGigs.map((g, i) => {
+    return lijst.map(({ a, list }, i) => {
+      const g = list.find((x) => x.status !== "geannuleerd") || list[0];
       const v = V.get(g.voorstelling), t = T.get(g.theater);
       const [sx, sy] = spots[i % spots.length];
-      const tag = g.status === "uitverkocht" ? "Uitverkocht" : g.soort ? g.soort[0].toUpperCase() + g.soort.slice(1) : "";
-      return `<a class="poster${i === 0 ? " featured" : ""}" href="${posterHref(g.voorstelling, g.theater)}" style="${ink(leadInk(g.voorstelling))};--sx:${sx};--sy:${sy}" data-datum="${g.datum}">
-        <span class="visually-hidden">${esc(artistNames(g.voorstelling))}, ${esc(v.titel)}, ${fmt.long(g.datum)} in ${esc(t.naam)}, ${esc(t.plaats)}</span>
+      const aantal = plural(list.length, "speeldatum", "speeldata");
+      return `<a class="poster${i === 0 ? " featured" : ""}" href="/artiesten/${a.id}/" style="${ink(a.kleur)};--sx:${sx};--sy:${sy}">
+        <span class="visually-hidden">${esc(a.naam)}, ${aantal}, eerstvolgende ${fmt.long(g.datum)} in ${esc(t.naam)}, ${esc(t.plaats)}</span>
         <div class="when" aria-hidden="true">
-          <span class="weekday">${i === 0 ? "Eerstvolgende" : fmt.weekday(g.datum)}</span>
+          <span class="weekday">Vanaf</span>
           <span class="day">${fmt.day(g.datum)}</span>
           <span class="month">${fmt.monthShort(g.datum)}${fmt.year(g.datum) !== thisYear ? " " + fmt.year(g.datum) : ""}</span>
         </div>
-        <span class="vtitle${titleClass(v.titel)}" aria-hidden="true">${esc(v.titel)}</span>
+        <span class="vtitle${titleClass(a.naam)}" aria-hidden="true">${esc(a.naam)}</span>
         <div class="who" aria-hidden="true">
-          <strong>${esc(artistNames(g.voorstelling))}</strong>
+          <strong>${esc(echteTitel(g.voorstelling) || v.titel)}</strong>
           <span class="where">${esc(t.naam)}${t.naam.includes(t.plaats) ? "" : "<br>" + esc(t.plaats)}</span>
-          ${tag ? `<span class="tag">${esc(tag)}</span>` : ""}
+          <span class="tag">${aantal}</span>
         </div>
       </a>`;
     }).join("");
@@ -275,18 +271,18 @@ ${body}
   function home() {
     const eindeWeek = new Date(new Date(db.today + "T12:00:00").getTime() + 6 * 864e5).toISOString().slice(0, 10);
     const dezeWeek = up.filter((g) => g.datum <= eindeWeek);
-    const veelOpTournee = [...artiestenMetData].sort((x, y) => y.list.length - x.list.length || x.a.naam.localeCompare(y.a.naam, "nl")).slice(0, 8);
+    const veelOpTournee = [...artiestenMetData].sort((x, y) => y.list.length - x.list.length || x.a.naam.localeCompare(y.a.naam, "nl")).slice(0, 12);
     const grootstePlaatsen = [...plaatsen].sort((a, b) => perPlaats(b).length - perPlaats(a).length).slice(0, 12)
       .sort((a, b) => a.localeCompare(b, "nl"));
 
     const body = `
 <section class="wall" aria-labelledby="wall-title">
   <div class="wrap wall-head">
-    <h1 id="wall-title">Binnenkort op de planken</h1>
-    <p>Cabaret en comedy in Nederland en België, van open mic tot oudejaarsconference.</p>
+    <h1 id="wall-title">Veel op tournee</h1>
+    <p>De cabaretiers en comedians met de meeste speeldata. <a href="/artiesten/">Alle ${tellers.artiesten} artiesten</a></p>
   </div>
   <div class="strip-wrap">
-    <div class="strip" id="strip" tabindex="0" aria-label="Eerstvolgende voorstellingen">${posterWall()}</div>
+    <div class="strip" id="strip" tabindex="0" aria-label="Artiesten met de meeste speeldata">${posterWall(veelOpTournee)}</div>
     <div class="strip-nav" hidden>
       <button type="button" id="strip-prev" aria-label="Vorige voorstellingen">${ICON.prev}</button>
       <button type="button" id="strip-next" aria-label="Volgende voorstellingen">${ICON.next}</button>
@@ -325,11 +321,6 @@ ${body}
   <div class="block-head"><h2 id="plaats-title">Kies een plaats</h2><p><a href="/plaatsen/">Alle ${tellers.plaatsen} plaatsen</a></p></div>
   <div class="city-chips">${grootstePlaatsen.map((p) =>
     `<a href="/plaatsen/${plaatsId(p)}/">${esc(p)} <span>${perPlaats(p).length}</span></a>`).join("")}</div>
-</section>
-
-<section class="block wrap" aria-labelledby="tournee-title">
-  <div class="block-head"><h2 id="tournee-title">Veel op tournee</h2><p><a href="/artiesten/">Alle ${tellers.artiesten} artiesten</a></p></div>
-  <div class="artists">${artiestKaarten(veelOpTournee)}</div>
 </section>`;
     return layout({ path: "/", section: null, body, jsonLd: eventsLd(dezeWeek) });
   }
