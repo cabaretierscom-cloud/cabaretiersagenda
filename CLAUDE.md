@@ -34,4 +34,6 @@ Cabaret- en comedyagenda voor Nederland en België. Statische site, gebouwd door
 
 ## Vormgeving
 
+Logo: zie `ontwerp/logo/README.md` (oranje beeldmerk, punt op de i, roze .com).
+
 Affichestijl: kleurvlakken in risografie-inkten (tokens `--riso-*` in `public/style.css`), Big Shoulders Display voor koppen, Instrument Sans voor tekst. Kleur alleen in affiches, artiestkaarten en detailkoppen; de speellijst blijft zwart op wit. Elke artiest heeft een vaste `kleur` uit `KLEUREN` in `src/data.mjs`.

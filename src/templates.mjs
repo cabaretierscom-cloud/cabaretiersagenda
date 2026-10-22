@@ -20,7 +20,8 @@ const ICON = {
   next: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>',
 };
 
-export const LOGO_SVG = `<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" rx="12" fill="#FF4FA3"/><path d="M33.5 15.2A13 13 0 1 0 33.5 32.8" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/><circle cx="33.6" cy="24" r="4.6" fill="#000"/><circle cx="33.6" cy="24" r="1.7" fill="#FF4FA3"/></svg>`;
+// Beeldmerk: de C met de punt op een oranje vlak. Dezelfde punt staat op de i van het woordmerk.
+export const LOGO_SVG = `<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" rx="12" fill="#FF6A13"/><path d="M33.5 15.2A13 13 0 1 0 33.5 32.8" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/><circle cx="33.6" cy="24" r="4.6" fill="#000"/><circle cx="33.6" cy="24" r="1.7" fill="#FF6A13"/></svg>`;
 
 const ink = (kleur) => {
   const [v, fg] = KLEUREN[kleur];
@@ -65,7 +66,7 @@ export function createTemplates(db) {
 <meta property="og:type" content="website">
 <meta property="og:url" content="${SITE.url}${path}">
 <meta property="og:locale" content="nl_NL">
-<meta name="theme-color" content="#FF4FA3">
+<meta name="theme-color" content="#FF6A13">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
@@ -77,7 +78,7 @@ ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(
   <div class="wrap">
     <a class="brand" href="/" aria-label="${SITE.name}, naar de agenda">
       <span class="brand-mark" aria-hidden="true">${LOGO_SVG}</span>
-      <span class="wordmark">cabaretiers<span>.com</span></span>
+      <span class="wordmark">cabaret<span class="punt-i">ı</span>ers<span class="tld">.com</span></span>
     </a>
     <nav class="nav" aria-label="Hoofdmenu">${nav}</nav>
   </div>
