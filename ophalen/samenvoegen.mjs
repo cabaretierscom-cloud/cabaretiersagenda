@@ -22,6 +22,9 @@ const theaters = read("theaters.json");
 const voorstellingen = read("voorstellingen.json");
 let speeldata = read("speeldata.json");
 const controleren = [];
+// Bekende andere schrijfwijzen: "Ayoub" -> ["Ayoub Kharkhach"], "Najib & Roué" -> twee artiesten.
+const aliassen = existsSync(join(dataDir, "aliassen.json")) ? read("aliassen.json") : {};
+const aliasOpSleutel = new Map(Object.entries(aliassen).map(([k, v]) => [slug(k), v]));
 
 const bronFiles = existsSync(join(dataDir, "bronnen"))
   ? readdirSync(join(dataDir, "bronnen")).filter((f) => f.endsWith(".json")).sort()
@@ -58,6 +61,17 @@ function zorgVoorTheater(t) {
 function zorgVoorArtiest(naam) {
   const key = naamSleutel(naam);
   if (artiestOpNaam.has(key)) return artiestOpNaam.get(key).id;
+  // Eén letter verschil in een lange naam is een tikfout ("Lisa Osterman" / "Lisa Ostermann").
+  const compact = key.replace(/-/g, "");
+  if (compact.length >= 10) {
+    for (const [k, a] of artiestOpNaam) {
+      const kc = k.replace(/-/g, "");
+      if (Math.abs(kc.length - compact.length) <= 1 && afstand(kc, compact) <= 1) {
+        artiestOpNaam.set(key, a);
+        return a.id;
+      }
+    }
+  }
   const id = uniekId(key, artiestIds);
   // Het land van een artiest weten we niet uit een speellijst; dat vul je zelf aan.
   const nieuw = { id, naam, land: null, kleur: kleurVoor(id) };
@@ -102,6 +116,24 @@ function zorgVoorVoorstelling(r, artiestIdsVanRecord, theaterId) {
   return id;
 }
 
+// Artiestnamen uit bronnen opschonen:
+// "Lisa Ostermann (reprise)" -> "Lisa Ostermann", "Jimmy Carr - Laughs funny" -> "Jimmy Carr",
+// "Alex Ploeg, Pepijn Schoneveld en Christine de Boer" -> drie artiesten, en aliassen toepassen.
+function opgeschoondeArtiesten(namen) {
+  const uit = [];
+  for (const ruw of namen) {
+    let n = netteNaam(String(ruw).trim())
+      .replace(/\s*[(\[]\s*(reprise|try[ -]?out|premi[eè]re|derni[eè]re|herneming)\s*[)\]]\s*$/i, "")
+      .replace(/\s*:\s+.*$|\s+[-–|]\s+.*$/, "")
+      .replace(/,?\s+e\.?\s?a\.?$/i, "")
+      .trim();
+    if (!n) continue;
+    const delen = n.includes(",") ? n.split(/\s*,\s*|\s+(?:en|&)\s+(?=[^,]*$)/).map((x) => x.replace(/\s*\(mc\)\s*$/i, "").replace(/\s+e\.?\s?a\.?$/i, "").replace(/\.$/, "").trim()).filter(Boolean) : [n];
+    for (const d of delen) uit.push(...(aliasOpSleutel.get(slug(d)) || [d]));
+  }
+  return [...new Set(uit)];
+}
+
 // ---------- Samenvoegen per bron ----------
 
 const stats = [];
@@ -120,9 +152,18 @@ for (const f of bronFiles) {
     // Vangnet voor alle bronnen: geen titels of namen in KAPITALEN, geen losse punt aan het eind.
     const r = {
       ...bronRecord,
-      titel: netteHoofdletters(String(bronRecord.titel || "").replace(/\.$/, "").trim()),
-      artiesten: (bronRecord.artiesten || []).map((n) => netteNaam(String(n).trim())).filter(Boolean),
+      titel: netteHoofdletters(String(bronRecord.titel || "")
+        .replace(/\s*[(\[]\s*(reprise|try[ -]?out|premi[eè]re|derni[eè]re|herneming)\s*[)\]]\s*$/i, "")
+        .replace(/\s+[-–|]\s*(reprise|try[ -]?out|premi[eè]re|derni[eè]re|herneming)\s*$/i, "")
+        .replace(/\.$/, "").trim()) || bronRecord.titel,
+      soort: bronRecord.soort ?? (/\b(herneming|reprise)\b/i.test(bronRecord.titel || "") ? "reprise" : null),
+      artiesten: opgeschoondeArtiesten(bronRecord.artiesten || []),
     };
+    // Een rolverdeling als titel ("Paul de Leeuw, Annick Boer e.a.") betekent: de "artiest" is de titel.
+    if (r.artiesten.length === 1 && /(,.*,|\be\.a\.?$|\bea$)/i.test(r.titel)) {
+      r.titel = r.artiesten[0];
+      r.artiesten = [];
+    }
     const theater = typeof r.theater === "string" ? theaterOpId.get(r.theater) : zorgVoorTheater(r.theater);
     if (!theater) {
       controleren.push({ bron: bestand.bron, reden: `onbekend theater "${r.theater}"`, record: r });
@@ -157,7 +198,63 @@ for (const f of bronFiles) {
   stats.push(`${bestand.naam}: ${nieuw} speeldata (${vervangen} vorige vervangen${handmatigVervangen ? `, ${handmatigVervangen} handmatige vervangen` : ""})`);
 }
 
-// ---------- Opruimen en wegschrijven ----------
+// ---------- Opruimen ----------
+
+// 1. Bestaande artiesten samenvoegen: aliassen ("Ayoub" -> "Ayoub Kharkhach") en tikfouten
+//    (één letter verschil in een lange naam). Verwijzingen in voorstellingen gaan mee.
+const vervang = new Map(); // oud artiest-id -> [nieuwe ids]
+for (const a of [...artiesten]) {
+  const doel = aliasOpSleutel.get(slug(a.naam));
+  if (doel && !(doel.length === 1 && slug(doel[0]) === slug(a.naam))) vervang.set(a.id, doel.map((n) => zorgVoorArtiest(n)));
+}
+const opLengte = [...artiesten].sort((x, y) => y.naam.length - x.naam.length || x.id.localeCompare(y.id));
+for (let i = 0; i < opLengte.length; i++) {
+  const a = opLengte[i], ac = slug(a.naam).replace(/-/g, "");
+  if (ac.length < 10 || vervang.has(a.id)) continue;
+  for (let j = i + 1; j < opLengte.length; j++) {
+    const b = opLengte[j], bc = slug(b.naam).replace(/-/g, "");
+    if (vervang.has(b.id) || Math.abs(ac.length - bc.length) > 1 || afstand(ac, bc) > 1) continue;
+    vervang.set(b.id, [a.id]); // de langere schrijfwijze blijft ("Ostermann" boven "Osterman")
+  }
+}
+for (const v of voorstellingen) {
+  v.artiesten = [...new Set(v.artiesten.flatMap((id) => vervang.get(id) || [id]))];
+}
+
+// 2. Voorstellingen die nu dezelfde artiesten en (bijna) dezelfde titel hebben, worden één.
+const naarVoorstelling = new Map();
+for (let i = 0; i < voorstellingen.length; i++) {
+  const v = voorstellingen[i];
+  if (naarVoorstelling.has(v.id)) continue;
+  for (let j = i + 1; j < voorstellingen.length; j++) {
+    const w = voorstellingen[j];
+    if (naarVoorstelling.has(w.id) || !zelfdeSet(v.artiesten, w.artiesten)) continue;
+    if (!v.artiesten.length && v.theater !== w.theater) continue;
+    if (zelfdeTitel(v.titel, w.titel)) naarVoorstelling.set(w.id, v.id);
+  }
+}
+if (naarVoorstelling.size) {
+  const gezien = new Set();
+  speeldata = speeldata
+    .map((s) => (naarVoorstelling.has(s.voorstelling) ? { ...s, voorstelling: naarVoorstelling.get(s.voorstelling) } : s))
+    .filter((s) => {
+      const k = [s.voorstelling, s.theater, s.datum, s.tijd || ""].join("|");
+      if (gezien.has(k)) return false;
+      gezien.add(k);
+      return true;
+    });
+}
+
+// 3. Alles zonder speeldata weg. Artiesten met een handmatig ingevuld land of ookBekendAls blijven.
+const gebruikteVoorstellingen = new Set(speeldata.map((s) => s.voorstelling));
+const blijvendeVoorstellingen = voorstellingen.filter((v) => gebruikteVoorstellingen.has(v.id));
+const gebruikteArtiesten = new Set(blijvendeVoorstellingen.flatMap((v) => v.artiesten));
+const blijvendeArtiesten = artiesten.filter((a) => gebruikteArtiesten.has(a.id) || a.land || a.ookBekendAls?.length);
+const verwijderd = { voorstellingen: voorstellingen.length - blijvendeVoorstellingen.length, artiesten: artiesten.length - blijvendeArtiesten.length };
+voorstellingen.splice(0, voorstellingen.length, ...blijvendeVoorstellingen);
+artiesten.splice(0, artiesten.length, ...blijvendeArtiesten);
+
+// ---------- Wegschrijven ----------
 
 speeldata.sort((a, b) => a.datum.localeCompare(b.datum) || (a.tijd || "").localeCompare(b.tijd || "") || a.theater.localeCompare(b.theater) || a.voorstelling.localeCompare(b.voorstelling));
 const opNaam = (a, b) => a.naam.localeCompare(b.naam, "nl");
@@ -172,5 +269,8 @@ write("speeldata.json", speeldata);
 write("te-controleren.json", controleren);
 
 for (const s of stats) console.log(s);
+if (vervang.size || naarVoorstelling.size || verwijderd.artiesten || verwijderd.voorstellingen) {
+  console.log(`Opgeruimd: ${vervang.size} artiesten samengevoegd, ${naarVoorstelling.size} voorstellingen samengevoegd, ${verwijderd.artiesten} artiesten en ${verwijderd.voorstellingen} voorstellingen zonder speeldata verwijderd.`);
+}
 console.log(`Totaal: ${speeldata.length} speeldata, ${artiesten.length} artiesten, ${theaters.length} theaters, ${voorstellingen.length} voorstellingen.`);
 if (controleren.length) console.log(`${controleren.length} gevallen in data/te-controleren.json`);

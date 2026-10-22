@@ -1,0 +1,1118 @@
+{
+  "bron": "walhalla",
+  "naam": "Theater Walhalla",
+  "opgehaald": "2026-10-22",
+  "theaters": [
+    {
+      "id": "theater-walhalla",
+      "naam": "Theater Walhalla",
+      "plaats": "Rotterdam",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.theaterwalhalla.nl"
+    },
+    {
+      "id": "kleine-walhalla",
+      "naam": "Kleine Walhalla",
+      "plaats": "Rotterdam",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.theaterwalhalla.nl"
+    },
+    {
+      "id": "werkplaats-walhalla",
+      "naam": "Werkplaats Walhalla",
+      "plaats": "Rotterdam",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.theaterwalhalla.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Johan Goossens"
+      ],
+      "titel": "Het Volle Leven",
+      "genre": "cabaret",
+      "datum": "2026-10-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/johan-goossens-het-volle-leven/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Glodi Lugungu"
+      ],
+      "titel": "In De Hemel Ken Ik Jullie Niet",
+      "genre": "cabaret",
+      "datum": "2026-10-23",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/glodi-lugungu-in-de-hemel-ken-ik-jullie-niet-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2026-10-28",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-6/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "Striptease van de Dood",
+      "genre": "cabaret",
+      "datum": "2026-10-29",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/david-linszen-striptease-van-de-dood/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God Is Een Snotje",
+      "genre": "cabaret",
+      "datum": "2026-10-31",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/kim-karssen-god-is-een-snotje-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Guido Spek"
+      ],
+      "titel": "Voor Spek en Bonen",
+      "genre": "kleinkunst",
+      "datum": "2026-11-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/guido-spek-voor-spek-en-bonen/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [],
+      "titel": "De Vrouwejaars 2026",
+      "genre": "kleinkunst",
+      "datum": "2026-11-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/vrouwejaars-2026-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [],
+      "titel": "Cabaret Club Giggle",
+      "genre": "kleinkunst",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-2/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Remy Evers"
+      ],
+      "titel": "Graag Gedaan (leesvoorstelling)",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/remy-evers-graag-gedaan-leesvoorstelling/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/marie-koet-eindspel/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2026-11-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/marie-koet-eindspel-2/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Elfie Tromp"
+      ],
+      "titel": "Aai Poesje Aai Poesje",
+      "genre": "cabaret",
+      "datum": "2026-11-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/elfie-tromp-aai-poesje-aai-poesje-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Elfie Tromp"
+      ],
+      "titel": "Aai Poesje Aai Poesje",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/elfie-tromp-aai-poesje-aai-poesje-try-out-2/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Kim Schuddeboom"
+      ],
+      "titel": "Hardleers",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/kim-schuddeboom-hardleers-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Kim Schuddeboom"
+      ],
+      "titel": "Hardleers",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/kim-schuddeboom-hardleers-try-out-2/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Heel Holland Hoopt",
+      "genre": "cabaret",
+      "datum": "2026-11-15",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/marja-van-katendrecht-heel-holland-hoopt-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "60ste Editie Cameretten Festival"
+      ],
+      "titel": "try-outs halve finalisten",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/60ste-editie-cameretten-festival-try-outs-halve-finalisten/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "60ste Editie Cameretten Festival"
+      ],
+      "titel": "try-outs halve finalisten",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/60ste-editie-cameretten-festival-try-outs-halve-finalisten-2/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/peter-pannekoek-demonen-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/peter-pannekoek-demonen-try-out-2/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-8/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Andre Manuel"
+      ],
+      "titel": "De Eenzame Ziel",
+      "genre": "cabaret",
+      "datum": "2026-11-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/andre-manuel-de-eenzame-ziel-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2026-11-29",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-7/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [],
+      "titel": "Cabaret Club Giggle",
+      "genre": "kleinkunst",
+      "datum": "2027-01-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-3/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/ronald-goedemondt-mijn-lieve-achterdocht/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Roel C Verburg"
+      ],
+      "titel": "Slechtste Liedjes van de Straat",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/roel-c-verburg-slechtste-liedjes-van-de-straat/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Ricky Koole"
+      ],
+      "titel": "Rare Leeftijd",
+      "genre": "cabaret",
+      "datum": "2027-01-10",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/ricky-koole-rare-leeftijd/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Isabelle Kafando"
+      ],
+      "titel": "Rof daaimund",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/isabelle-kafando-rof-daaimund/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Peter Heerschop"
+      ],
+      "titel": "Lieve Marianne",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/peter-heerschop-lieve-marianne-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten Wij Veel",
+      "genre": "cabaret",
+      "datum": "2027-01-20",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/freek-de-jonge-wisten-wij-veel/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Kamagurka"
+      ],
+      "titel": "Op Zekere Dag",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/kamagurka-op-zekere-dag/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/klaas-van-der-eerden-imperfect-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Pepijn Schoneveld"
+      ],
+      "titel": "Welkom Dat Je Luistert",
+      "genre": "kleinkunst",
+      "datum": "2027-01-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/pepijn-schoneveld-welkom-dat-je-luistert/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "14:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-9/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg Maar U",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-broers-van-arkel-zeg-maar-u/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-10/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Andries Tunru en Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "cabaret",
+      "datum": "2027-01-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/andries-tunru-en-stefan-hendrikx-beperkt-houdbaar/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-01-31",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-13/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-20/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [],
+      "titel": "Cabaret Club Giggle",
+      "genre": "kleinkunst",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-8/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als Ik Jou Was",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/david-van-rosmalen-als-ik-jou-was/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-02-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-11/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Groninger Studenten Cabaret Festival"
+      ],
+      "titel": "Finalistentour",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/groninger-studenten-cabaret-festival-finalistentour/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk Eventueel De Dag",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/janneke-de-bijl-pluk-eventueel-de-dag/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sem Konijn"
+      ],
+      "titel": "Populisme de Musical",
+      "genre": "kleinkunst",
+      "datum": "2027-02-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sem-konijn-populisme-de-musical-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Niek & Guy"
+      ],
+      "titel": "Legatum",
+      "genre": "kleinkunst",
+      "datum": "2027-02-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/niek-guy-legatum/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Gavin Reijnders"
+      ],
+      "titel": "Jazzebelle",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/gavin-reijnders-jazzebelle/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Ramon Chatrer"
+      ],
+      "titel": "Volk",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/ramon-chatrer-volk/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Gestampte Meisjes"
+      ],
+      "titel": "Strot",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-gestampte-meisjes-strot/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Viggo Waas & Eddie B. Wahr & Kees van der Vooren"
+      ],
+      "titel": "Eigenlijk",
+      "genre": "cabaret",
+      "datum": "2027-02-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/viggo-waas-eddie-b-wahr-kees-van-der-vooren-eigenlijk-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "Juk",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/jeroens-clan-juk/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [],
+      "titel": "Alina Sharipova",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/alina-sharipova-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-19/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [],
+      "titel": "Cabaret Club Giggle",
+      "genre": "kleinkunst",
+      "datum": "2027-03-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-9/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Kooiapen",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/martijn-crins-kooiapen-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks Aan Het Handje",
+      "genre": "cabaret",
+      "datum": "2027-03-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/joosen-en-de-jager-niks-aan-het-handje/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Alex Ploeg"
+      ],
+      "titel": "Niks Persoonlijks",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/alex-ploeg-niks-persoonlijks-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Flip Noorman"
+      ],
+      "titel": "Bonobo",
+      "genre": "kleinkunst",
+      "datum": "2027-03-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/flip-noorman-bonobo/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-12/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [],
+      "titel": "Sezgin Guleç",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sezgin-gulec-nieuw-programma/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Sara Kroos"
+      ],
+      "titel": "Gelukskoekje (leesvoorstelling)",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sara-kroos-gelukskoekje-leesvoorstelling/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [],
+      "titel": "Sezgin Guleç",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sezgin-gulec-nieuw-programma-2/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Anuar"
+      ],
+      "titel": "Ongeduldig Geduldig",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/anuar-ongeduldig-geduldig-2/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [],
+      "titel": "Cabaret Club Giggle",
+      "genre": "kleinkunst",
+      "datum": "2027-04-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-10/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Teun Van Den Elzen"
+      ],
+      "titel": "Ze Moesten Eens Weten",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/teun-van-den-elzen-ze-moesten-eens-weten-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-04-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-18/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach Maar Om Mij",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/luuk-weggemans-lach-maar-om-mij/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Yunus Aktaş"
+      ],
+      "titel": "We ZIen Wel",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/yunus-aktas-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Bolder & Van Santen"
+      ],
+      "titel": "Looprat",
+      "genre": "cabaret",
+      "datum": "2027-04-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/bolder-van-santen-looprat-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-04-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-23/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [],
+      "titel": "Finalistentour Leids Cabaret Festival",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/finalistentour-leids-cabaret-festival/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Buğra Gedik"
+      ],
+      "titel": "Ğelukkig Ğeboren",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/bugra-gedik-gelukkig-geboren/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Kiki Schippers"
+      ],
+      "titel": "nieuw programma",
+      "genre": "kleinkunst",
+      "datum": "2027-04-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/kiki-schippers-nieuw-programma-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Kees van Amstel"
+      ],
+      "titel": "Mogen We Eerder Weg?",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/kees-van-amstel-mogen-we-eerder-weg/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-14/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Patrick Nederkoorn"
+      ],
+      "titel": "Nieuw programma",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/patrick-nederkoorn-nieuw-programma-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Is Het Leven Al Begonnen?",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/fabian-franciscus-is-het-leven-al-begonnen/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Heel Holland Hoopt",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/marja-van-katendrecht-heel-holland-hoopt-2/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Heel Holland Hoopt",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/marja-van-katendrecht-heel-holland-hoopt/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Margreet Dolman Brengt Warmte & Dominee Gremdaat Wijst De Weg"
+      ],
+      "titel": "Paul Haenen En Dammie Van Geest",
+      "genre": "kleinkunst",
+      "datum": "2027-05-09",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/margreet-dolman-brengt-warmte-dominee-gremdaat-wijst-de-weg-paul-haenen-en-dammie-van-geest/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Pieter Jouke & Ronald Snijders"
+      ],
+      "titel": "De Staat Van Verwarring",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/pieter-jouke-ronald-snijders-de-staat-van-verwarring/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-06-05",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-16/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-06-06",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-17/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Stefan Hendrikx"
+      ],
+      "titel": "In Perspectief",
+      "genre": "cabaret",
+      "datum": "2027-06-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/stefan-hendikx-in-perspectief/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Tunes"
+      ],
+      "titel": "Versnaperingen",
+      "genre": "cabaret",
+      "datum": "2027-06-12",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-15/"
+    }
+  ]
+}

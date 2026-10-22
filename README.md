@@ -58,7 +58,15 @@ Op GitHub draait dit elke nacht automatisch (`.github/workflows/bijwerken.yml`).
 ### Wat je zelf kunt aanvullen
 
 - **Land van een artiest:** nieuwe artiesten krijgen `"land": null`. Vul `"NL"` of `"BE"` in als je het weet.
-- **Andere schrijfwijze:** staat dezelfde artiest er twee keer in (bijvoorbeeld "Yentl & de Boer" en "Yentl en de Boer"), voeg dan bij de ene `"ookBekendAls": ["andere schrijfwijze"]` toe en verwijder de andere.
+- **Andere schrijfwijze:** staat dezelfde artiest er twee keer in, zet de schrijfwijze die weg moet dan in `data/aliassen.json`, met de goede naam erachter:
+
+  ```json
+  "Ayoub": ["Ayoub Kharkhach"],
+  "Najib & Roué": ["Najib Amhali", "Roué Verveer"]
+  ```
+
+  Bij de volgende keer samenvoegen worden de artiesten en hun voorstellingen samengevoegd. Een duo mag naar twee artiesten verwijzen. Tikfouten van één letter in een lange naam ("Lisa Osterman") en toevoegingen als "(reprise)" worden al vanzelf herkend.
+- **Opruimen:** artiesten en voorstellingen zonder enige speeldatum worden bij het samenvoegen verwijderd. Een artiest waarbij je zelf een land of `ookBekendAls` hebt ingevuld, blijft altijd staan.
 
 ## Zelf draaien
 

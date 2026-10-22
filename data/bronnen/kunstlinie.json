@@ -1,0 +1,849 @@
+{
+  "bron": "kunstlinie",
+  "naam": "Kunstlinie",
+  "opgehaald": "2026-10-22",
+  "theaters": [
+    {
+      "id": "kunstlinie",
+      "naam": "Kunstlinie Almere",
+      "plaats": "Almere",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://kunstlinie.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "Jandino",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/jandino-3/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Jay Francis",
+      "genre": "cabaret",
+      "datum": "2027-06-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/jay-francis-5/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Steven Brunswijk"
+      ],
+      "titel": "Steven Brunswijk",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Roué Verveer",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Deng Boy"
+      ],
+      "titel": "Deng Boy",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/deng-boy-5/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Cameretten",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/cameretten/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Klaas van der Eerden",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/klaas-van-der-eerden-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Team Ricky Risolles"
+      ],
+      "titel": "Team Ricky Risolles",
+      "genre": "cabaret",
+      "datum": "2027-03-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/team-ricky-risolles/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Jörgen Raymann"
+      ],
+      "titel": "Jörgen Raymann",
+      "genre": "cabaret",
+      "datum": "2027-02-28",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/jorgen-raymann/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Remko Vrijdag",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/remko-vrijdag-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Ta Joela"
+      ],
+      "titel": "Ta Joela",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/ta-joela/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Lebbis",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/lebbis-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Blauwe Vinkjes"
+      ],
+      "titel": "Blauwe Vinkjes",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/blauwe-vinkjes-3/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Boban Braspenning"
+      ],
+      "titel": "Boban Braspenning",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/boban-braspenning/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Bro’s"
+      ],
+      "titel": "Bro’s",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/bros/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Joep van Deudekom & Rob Urgert"
+      ],
+      "titel": "Joep van Deudekom & Rob Urgert",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/joep-van-deudekom-rob-urgert/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Rayen Panday & Friends"
+      ],
+      "titel": "Rayen Panday & Friends",
+      "genre": "cabaret",
+      "datum": "2026-12-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/rayen-panday-friends/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Marcel van Roosmalen"
+      ],
+      "titel": "Marcel van Roosmalen",
+      "genre": "cabaret",
+      "datum": "2026-10-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/marcel-van-roosmalen/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Joanne Telesford"
+      ],
+      "titel": "Joanne Telesford",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/joanne-telesford/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Dolf Jansen",
+      "genre": "cabaret",
+      "datum": "2026-10-23",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/dolf-jansen-3/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Selma Visscher",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/selma-visscher/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Piet en matties live"
+      ],
+      "titel": "Piet en matties live",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/piet-en-matties-live/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Blind Date"
+      ],
+      "titel": "Blind Date",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/blind-date-14/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Blind Date"
+      ],
+      "titel": "Blind Date",
+      "genre": "cabaret",
+      "datum": "2027-01-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/blind-date-17/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Tim Kroezen"
+      ],
+      "titel": "Tim Kroezen",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/tim-kroezen/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Tineke Schouten"
+      ],
+      "titel": "Tineke Schouten",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/tineke-schouten-4/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Rob Scheepers",
+      "genre": "cabaret",
+      "datum": "2027-02-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/rob-scheepers/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Peter Heerschop"
+      ],
+      "titel": "Peter Heerschop",
+      "genre": "cabaret",
+      "datum": "2027-03-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/peter-heerschop/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Martijn Koning",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/martijn-koning-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Rayen Panday",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/rayen-panday-3/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "Jeroens Clan",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/jeroens-clan/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Andries Tunru",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/andries-tunru/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Rundfunk",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/rundfunk-3/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Valentina Tóth",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/valentina-toth-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Marlon Kicken"
+      ],
+      "titel": "Marlon Kicken",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/marlon-kicken/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina Ricardo",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/wina-ricardo/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Zaal X Uitgemolken"
+      ],
+      "titel": "Zaal X Uitgemolken",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "19:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/zaal-x-uitgemolken-3/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Merijn Scholten",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/merijn-scholten-3/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "Lisa Ostermann",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/lisa-ostermann-4/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Ronald Goedemondt",
+      "genre": "cabaret",
+      "datum": "2027-04-11",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/ronald-goedemondt-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Piet van Eeghen"
+      ],
+      "titel": "Piet van Eeghen",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/piet-van-eeghen-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Max van den Burg"
+      ],
+      "titel": "Max van den Burg",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/max-van-den-burg-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Richard Groenendijk",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/richard-groenendijk/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "David Linszen",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/david-linszen-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Guido Weijers",
+      "genre": "cabaret",
+      "datum": "2026-10-31",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/guido-weijers-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Esther van der Voort",
+      "genre": "cabaret",
+      "datum": "2027-03-27",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/esther-van-der-voort-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Nhung Dam"
+      ],
+      "titel": "Nhung Dam",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/nhung-dam-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Zaal X Uitgemolken"
+      ],
+      "titel": "Zaal X Uitgemolken",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "19:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/zaal-x-uitgemolken-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Ice"
+      ],
+      "titel": "Ice",
+      "genre": "cabaret",
+      "datum": "2026-12-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/ice-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Henry van Loon"
+      ],
+      "titel": "Henry van Loon",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/henry-van-loon-3/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Swit Tori"
+      ],
+      "titel": "Swit Tori",
+      "genre": "stand-up",
+      "datum": "2026-11-08",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/swit-tori/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Peter Pannekoek",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/peter-pannekoek/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Glodi Lugungu"
+      ],
+      "titel": "Glodi Lugungu",
+      "genre": "cabaret",
+      "datum": "2027-05-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/glodi-lugungu/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Arie & Silvester"
+      ],
+      "titel": "Arie & Silvester",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/arie-silvester/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "David van Rosmalen",
+      "genre": "cabaret",
+      "datum": "2027-04-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/david-van-rosmalen/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Comedy Club Almere"
+      ],
+      "titel": "Comedy Club Almere",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/comedy-club-almere-15/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Comedy Club Almere"
+      ],
+      "titel": "Comedy Club Almere",
+      "genre": "cabaret",
+      "datum": "2026-11-07",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/comedy-club-almere-14/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Comedy Club Almere"
+      ],
+      "titel": "Comedy Club Almere",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/comedy-club-almere-16/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Nabil",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/nabil-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Pieter Derks"
+      ],
+      "titel": "Pieter Derks",
+      "genre": "cabaret",
+      "datum": "2026-10-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/pieter-derks/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "René van Meurs",
+      "genre": "cabaret",
+      "datum": "2026-10-30",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/rene-van-meurs-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Ruud Smulders"
+      ],
+      "titel": "Ruud Smulders",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/ruud-smulders-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Julika Marijn"
+      ],
+      "titel": "Julika Marijn",
+      "genre": "cabaret",
+      "datum": "2028-01-07",
+      "tijd": "20:30",
+      "status": "verplaatst",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/julika-marijn-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Jawad Es Soufi"
+      ],
+      "titel": "Jawad Es Soufi",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/jawad-es-soufi-4/"
+    }
+  ]
+}

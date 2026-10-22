@@ -35,7 +35,9 @@ async function rawFetch(url, opts = {}) {
     const headers = { "user-agent": USER_AGENT, "accept-language": "nl-NL,nl;q=0.9", ...(opts.headers || {}) };
     const c = cookieHeader(current.host);
     if (c) headers.cookie = c;
-    const res = await fetch(current, { headers, redirect: "manual", signal: AbortSignal.timeout(opts.timeout ?? 30000) });
+    // Een formulier (POST) alleen bij het eerste verzoek; na een doorverwijzing wordt het GET.
+    const body = i === 0 ? opts.body : undefined;
+    const res = await fetch(current, { method: body ? "POST" : "GET", body, headers, redirect: "manual", signal: AbortSignal.timeout(opts.timeout ?? 30000) });
     storeCookies(current.host, res.headers);
     if (res.status >= 300 && res.status < 400 && res.headers.get("location")) {
       await res.arrayBuffer().catch(() => {});
@@ -52,6 +54,7 @@ async function rawFetch(url, opts = {}) {
 function parseRobots(text) {
   const groups = [];
   let current = null, lastWasAgent = false;
+  let globaleVertraging = null; // Crawl-delay vóór de eerste User-agent geldt voor iedereen (bijv. Kunstlinie)
   for (const raw of text.split(/\r?\n/)) {
     const line = raw.replace(/#.*/, "").trim();
     const i = line.indexOf(":");
@@ -64,11 +67,15 @@ function parseRobots(text) {
       continue;
     }
     lastWasAgent = false;
-    if (!current) continue;
+    if (!current) {
+      if (key === "crawl-delay" && !isNaN(Number(val))) globaleVertraging = Number(val);
+      continue;
+    }
     if ((key === "allow" || key === "disallow") && val) current.rules.push({ allow: key === "allow", path: val });
     else if (key === "crawl-delay" && !isNaN(Number(val))) current.delay = Number(val);
   }
-  return groups.find((g) => g.agents.some((a) => a.includes("cabaretiers"))) || groups.find((g) => g.agents.includes("*")) || { rules: [], delay: null };
+  const groep = groups.find((g) => g.agents.some((a) => a.includes("cabaretiers"))) || groups.find((g) => g.agents.includes("*")) || { rules: [], delay: null };
+  return { ...groep, delay: groep.delay ?? globaleVertraging };
 }
 const patternToRegex = (p) =>
   new RegExp("^" + p.replace(/[.+?^{}()|[\]\\]/g, "\\$&").replace(/\*/g, ".*").replace(/\\\$$/, "$"));
@@ -124,6 +131,14 @@ export async function get(url, opts = {}) {
 
 export async function getText(url, opts) {
   return (await get(url, opts)).text;
+}
+
+// Een formulier versturen zoals de eigen pagina van de site dat doet (bijv. een agenda-filter).
+// Zelfde regels als get(): robots.txt, pauze per site, cookies.
+export async function postForm(url, velden, opts = {}) {
+  const body = new FormData();
+  for (const [k, v] of Object.entries(velden)) body.append(k, String(v));
+  return get(url, { ...opts, body });
 }
 
 export async function getJson(url, opts) {

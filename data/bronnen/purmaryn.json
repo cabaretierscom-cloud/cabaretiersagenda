@@ -1,0 +1,706 @@
+{
+  "bron": "purmaryn",
+  "naam": "Theater De Purmaryn",
+  "opgehaald": "2026-10-22",
+  "theaters": [
+    {
+      "id": "de-purmaryn",
+      "naam": "Theater De Purmaryn",
+      "plaats": "Purmerend",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://depurmaryn.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad (reprise)",
+      "genre": "cabaret",
+      "datum": "2026-12-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/rene-van-meurs/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/marie-koet/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Hokjesdenker"
+      ],
+      "titel": "We zien het wel even",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/hokjesdenker/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Aai Poesje, Aai Poesje"
+      ],
+      "titel": "Elfie Tromp doet cabaret",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/aai-poesje-aai-poesje/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Amsterdams Kleinkunst Festival"
+      ],
+      "titel": "Finalistentournee",
+      "genre": "kleinkunst",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/amsterdams-kleinkunst-festival/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Anne & Bas - De Natte Dromen Revue"
+      ],
+      "titel": "Dit keer is het hoogtepunt pas het begin!",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/anne-bas-de-natte-dromen-revue/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Anuar"
+      ],
+      "titel": "Ongeduldig Geduldig",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/anuar/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Arie & Silvester"
+      ],
+      "titel": "Breken de tent af!",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/arie-silvester/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Blauwe Vinkjes"
+      ],
+      "titel": "Poeha",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/blauwe-vinkjes/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/bob-koomen/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "De Cabaret Club"
+      ],
+      "titel": "Vier korte cabaretvoorstellingen",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/de-cabaret-club/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "De Grote Oudejaars Kwis 2026"
+      ],
+      "titel": "Rob Urgert & Joep van Deudekom",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/de-grote-oudejaars-kwis-2026/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/freek-de-jonge/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Gavin Reijnders"
+      ],
+      "titel": "Jazzebelle",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/gavin-reijnders/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Groenenberg & De Jong"
+      ],
+      "titel": "De Contributie",
+      "genre": "kleinkunst",
+      "datum": "2026-10-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/groenenberg-de-jong/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Isabelle Kafando"
+      ],
+      "titel": "Rof Daaimund",
+      "genre": "cabaret",
+      "datum": "2026-10-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/isabelle-kafando/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Janice Blok"
+      ],
+      "titel": "Had je kenne weten",
+      "genre": "cabaret",
+      "datum": "2026-12-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/janice-blok/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Jawad Es Soufi"
+      ],
+      "titel": "Tnawies",
+      "genre": "cabaret",
+      "datum": "2026-11-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/jawad-es-soufi/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Joost Spijkers - ZIEL & ZALIG"
+      ],
+      "titel": "Hoop en troost in bange tijden",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/joost-spijkers-ziel-zalig/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Kiki Schippers"
+      ],
+      "titel": "Praktische bezwaren",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/kiki-schippers/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/lebbis/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Louise Korthals"
+      ],
+      "titel": "Korthals in stukken",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/louise-korthals/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/martijn-koning/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Max van den Burg"
+      ],
+      "titel": "Maxikozi",
+      "genre": "cabaret",
+      "datum": "2026-10-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/max-van-den-burg/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Nathalie Baartman"
+      ],
+      "titel": "Deer",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/nathalie-baartman/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/nienke-plas/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000,-",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/oscar-smit/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag (try-out)",
+      "genre": "cabaret",
+      "datum": "2026-11-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/remko-vrijdag/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu (try-out)",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/rundfunk/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Ruud Smulders"
+      ],
+      "titel": "Rüdsichtslos",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/ruud-smulders/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Tis Hier Geen Hotel 3"
+      ],
+      "titel": "Hanneke Drenth en Dianne Liesker",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/tis-hier-geen-hotel-3/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Viggo Waas, Eddie B. Wahr & Kees van der Vooren"
+      ],
+      "titel": "Eigenlijk (try-out)",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/viggo-waas-eddie-b-wahr-kees-van-der-vooren/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Vrouwejaars 2026"
+      ],
+      "titel": "De blik op het jaar 2026 door de ogen van vrouwen!",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/vrouwejaars-2026/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/daan-van-der-hoeven/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "De Mooie Dingen"
+      ],
+      "titel": "Janke Dekker zingt kleinkunstklassiekers",
+      "genre": "kleinkunst",
+      "datum": "2027-03-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/de-mooie-dingen/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/esther-van-der-voort/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Remy Evers"
+      ],
+      "titel": "Graag Gedaan (try-out)",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/remy-evers/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/wina-ricardo/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Ricky Koole"
+      ],
+      "titel": "Rare Leeftijd (try-out)",
+      "genre": "cabaret",
+      "datum": "2026-11-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/ricky-koole-try-out/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De Grote Jubileumshow - Jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/jandino/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/jay-francis/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Kees Prins"
+      ],
+      "titel": "Yesterday",
+      "genre": "kleinkunst",
+      "datum": "2027-04-21",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/kees-prins/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Kees van Amstel"
+      ],
+      "titel": "Mogen we eerder weg?",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/kees-van-amstel/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Kim Schuddeboom"
+      ],
+      "titel": "Hardleers",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/kim-schuddeboom/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect (première)",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/klaas-van-der-eerden/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Kooiapen (try-out)",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/martijn-crins/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen (try-out)",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/peter-pannekoek/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip (reprise)",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/rayen-panday/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Ronald Snijders"
+      ],
+      "titel": "Leven met humor",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/ronald-snijders/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "cabaret",
+      "datum": "2027-04-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/roue-verveer/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Spruijt & Opperman"
+      ],
+      "titel": "Altijdloos",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/spruijt-opperman/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-04-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/thomas-van-luyn/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revance",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/valentina-toth/"
+    }
+  ]
+}

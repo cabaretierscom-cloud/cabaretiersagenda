@@ -25,7 +25,8 @@ Cabaret- en comedyagenda voor Nederland en België. Statische site, gebouwd door
 - `ophalen/samenvoegen.mjs` vervangt per bron de vorige vondsten vanaf de ophaaldatum en maakt artiesten, zalen en voorstellingen aan. Artiesten worden op `slug(naam)` en `ookBekendAls` herkend.
 - Krijgt een site het druk (503/429), dan wacht `get()` en probeert opnieuw. Zet voor zo'n site in de bron een langere pauze met `stelPauzeIn(host, ms)` (zie `luxor.mjs`).
 - Next.js-sites: `nextFlightText()` en `jsonObjectsWith()` in `ophalen/lib/html.mjs` halen de ingebakken gegevens uit de pagina (zie `luxor.mjs`).
-- Bekend, nog niet gedaan: Walhalla, De Meervaart (Phoenix LiveView), PLT, Ticketmatic-zalen (Zaantheater, Zwolse Theaters, Harmonie, MartiniPlaza, Purmaryn, Tilburg, Utrecht). Chassé, Hanzehof, Stadsschouwburg Haarlem en Rijswijkse Schouwburg weigeren bots (403); Toomler heeft een kapot certificaat.
+- Platforms: Peppered, The Events Calendar en Cre8ion (Utrecht, Tilburg) staan in `ophalen/platforms/`. `postForm()` in `lib/http.mjs` verstuurt een formulier zoals de site zelf doet (De Harmonie).
+- Bekend, nog niet gedaan: De Meervaart (Phoenix LiveView), PLT, Boom Chicago. MartiniPlaza en de Tilburgse voorstellingen met meerdere datums laden hun datums via /mvc/, wat robots.txt verbiedt; die blijven weg. Chassé, Hanzehof, Stadsschouwburg Haarlem, Rijswijkse Schouwburg en Agora Lelystad weigeren bots (403); Toomler heeft een kapot certificaat.
 
 ## Controleren
 

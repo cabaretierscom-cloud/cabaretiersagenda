@@ -240,6 +240,14 @@
     "website": null
   },
   {
+    "id": "de-harmonie",
+    "naam": "De Harmonie",
+    "plaats": "Leeuwarden",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://harmonie.nl"
+  },
+  {
     "id": "ainsi-maastricht",
     "naam": "AINSI",
     "plaats": "Maastricht",
@@ -280,6 +288,22 @@
     "website": "https://www.stadsschouwburgendevereeniging.nl"
   },
   {
+    "id": "de-purmaryn",
+    "naam": "Theater De Purmaryn",
+    "plaats": "Purmerend",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://depurmaryn.nl"
+  },
+  {
+    "id": "kleine-walhalla",
+    "naam": "Kleine Walhalla",
+    "plaats": "Rotterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.theaterwalhalla.nl"
+  },
+  {
     "id": "nieuwe-luxor",
     "naam": "Nieuwe Luxor Theater",
     "plaats": "Rotterdam",
@@ -296,11 +320,75 @@
     "website": "https://luxortheater.nl"
   },
   {
+    "id": "theater-walhalla",
+    "naam": "Theater Walhalla",
+    "plaats": "Rotterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.theaterwalhalla.nl"
+  },
+  {
     "id": "theater-zuidplein",
     "naam": "Theater Zuidplein",
     "plaats": "Rotterdam",
     "land": "NL",
     "soort": "theater",
     "website": "https://www.theaterzuidplein.nl"
+  },
+  {
+    "id": "werkplaats-walhalla",
+    "naam": "Werkplaats Walhalla",
+    "plaats": "Rotterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.theaterwalhalla.nl"
+  },
+  {
+    "id": "concertzaal-tilburg",
+    "naam": "Concertzaal Tilburg",
+    "plaats": "Tilburg",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.schouwburgconcertzaaltilburg.nl"
+  },
+  {
+    "id": "schouwburg-tilburg",
+    "naam": "Schouwburg Tilburg",
+    "plaats": "Tilburg",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.schouwburgconcertzaaltilburg.nl"
+  },
+  {
+    "id": "stadsschouwburg-utrecht",
+    "naam": "Stadsschouwburg Utrecht",
+    "plaats": "Utrecht",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://stadsschouwburg-utrecht.nl"
+  },
+  {
+    "id": "zaantheater",
+    "naam": "Zaantheater",
+    "plaats": "Zaandam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://zaantheater.nl"
+  },
+  {
+    "id": "odeon-zwolle",
+    "naam": "Odeon",
+    "plaats": "Zwolle",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.zwolsetheaters.nl"
+  },
+  {
+    "id": "theater-de-spiegel",
+    "naam": "Theater de Spiegel",
+    "plaats": "Zwolle",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.zwolsetheaters.nl"
   }
 ]

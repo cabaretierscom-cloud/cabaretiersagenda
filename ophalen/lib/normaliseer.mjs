@@ -48,9 +48,11 @@ const REGELS = [
   ["oudejaarsconference", /oudejaars|eindejaars/],
   ["open-mic", /open[ -]?mic/],
   ["improvisatie", /\bimpro(visatie|v)?\b/],
-  ["stand-up", /stand[ -]?up|comedy/],
+  ["stand-up", /stand[ -]?up/],
   ["kleinkunst", /kleinkunst/],
+  // "Cabaret & comedy" is cabaret; alleen "comedy" zonder cabaret is stand-up.
   ["cabaret", /cabaret|humor/],
+  ["stand-up", /comedy/],
 ];
 export function herkenGenre(...teksten) {
   const t = teksten.flat().filter(Boolean).join(" | ").toLowerCase();

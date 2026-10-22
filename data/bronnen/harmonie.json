@@ -1,0 +1,620 @@
+{
+  "bron": "harmonie",
+  "naam": "De Harmonie",
+  "opgehaald": "2026-10-22",
+  "theaters": [
+    {
+      "id": "de-harmonie",
+      "naam": "De Harmonie",
+      "plaats": "Leeuwarden",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://harmonie.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "de-harmonie",
+      "artiesten": [],
+      "titel": "Cabaret Café",
+      "genre": "cabaret",
+      "datum": "2026-10-23",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/cabaret-cafe/52961"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Yentl en De Boer"
+      ],
+      "titel": "Rekhalzen (reprise)",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": null,
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://harmonie.nl/agenda/yentl-en-de-boer/53128"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Sara Kroos"
+      ],
+      "titel": "Prikkelarme kermis",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/sara-kroos/53088"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Ayoub"
+      ],
+      "titel": "En verbied de vogels om te fluiten",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/ayoub/52950"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Eran Ben-Michaël"
+      ],
+      "titel": "Ai&ik",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/eran-ben-michael/52994"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Marjolijn van Kooten"
+      ],
+      "titel": "Aan mij zal het niet liggen",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/marjolijn-van-kooten/53045"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Guido Spek"
+      ],
+      "titel": "Voor Spek En Bonen",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/guido-spek/53007"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/daan-van-der-hoeven/52974"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Najib & Roué"
+      ],
+      "titel": "Alles is Comedy",
+      "genre": "cabaret",
+      "datum": "2026-12-01",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/najib-roue/52730"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [],
+      "titel": "Cabaret Café",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/cabaret-cafe/52962"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-15",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/guido-weijers/52655"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Jasper van der Veen"
+      ],
+      "titel": "Op scherp",
+      "genre": "cabaret",
+      "datum": "2026-12-18",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/jasper-van-der-veen/53024"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Vrouwejaars 2026"
+      ],
+      "titel": "De blik op 2026 door de ogen van vrouwen!",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/vrouwejaars-2026/53117"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Piet van Eeghen"
+      ],
+      "titel": "De Lieve Vrede",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/piet-van-eeghen/53074"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/richard-groenendijk/52720"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-01-19",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/kasper-van-der-laan/52737"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Beth & Flo"
+      ],
+      "titel": "Zoveel Meer",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/beth-flo/52955"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-30",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/jan-beuving/53022"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [],
+      "titel": "Cabaret Café",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/cabaret-cafe/52963"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom Ongemak",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/wim-helsen/53124"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/nabil/53058"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Annick Boer"
+      ],
+      "titel": "Vol Erin!",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/annick-boer/52947"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi. (reprise)",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": null,
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://harmonie.nl/agenda/patrick-laureij/52738"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/andries-tunru/52946"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-02-24",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/lebbis/53038"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Micky Overman"
+      ],
+      "titel": "Theatertour",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/micky-overman/53052"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z’n scherpst",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/rob-scheepers/53084"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/rayen-panday/53080"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/remko-vrijdag/53082"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Luuk Ransijn"
+      ],
+      "titel": "Uitkijk",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/luuk-ransijn/53040"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-03-20",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/luuk-weggemans/53041"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een snotje",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/kim-karssen/53033"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/kommil-foo/53035"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De Grote Jubileumshow",
+      "genre": "cabaret",
+      "datum": "2027-04-14",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/jandino/53023"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/van-vleuten-en-van-muiswinkel/53112"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [],
+      "titel": "Cabaret Café",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/cabaret-cafe/52964"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/merijn-scholten/52739"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-04-18",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/ronald-goedemondt/52741"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-04-21",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/freek-de-jonge/52999"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-05-09",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/valentina-toth/53111"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/de-broers-van-arkel/52977"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Leeuwarder Cabaret Festival"
+      ],
+      "titel": "Finale",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/leeuwarder-cabaret-festival/52937"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Kees van Amstel"
+      ],
+      "titel": "Mogen we eerder weg?",
+      "genre": "cabaret",
+      "datum": "2027-05-15",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/kees-van-amstel/53032"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/martijn-koning/53047"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/thomas-van-luyn/53105"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Ratatatata!"
+      ],
+      "titel": "Theo Maassen, Plien & Bianca e.a.",
+      "genre": "stand-up",
+      "datum": "2027-04-09",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/ratatatata/53079"
+    },
+    {
+      "theater": "de-harmonie",
+      "artiesten": [
+        "Ratatatata!"
+      ],
+      "titel": "Theo Maassen, Plien & Bianca e.a.",
+      "genre": "stand-up",
+      "datum": "2027-04-10",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/ratatatata/53079"
+    }
+  ]
+}

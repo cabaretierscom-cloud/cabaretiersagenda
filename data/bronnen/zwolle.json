@@ -1,0 +1,1039 @@
+{
+  "bron": "zwolle",
+  "naam": "Zwolse Theaters",
+  "opgehaald": "2026-10-22",
+  "theaters": [
+    {
+      "id": "theater-de-spiegel",
+      "naam": "Theater de Spiegel",
+      "plaats": "Zwolle",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.zwolsetheaters.nl"
+    },
+    {
+      "id": "odeon-zwolle",
+      "naam": "Odeon",
+      "plaats": "Zwolle",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.zwolsetheaters.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Jimmy Carr"
+      ],
+      "titel": "Laughs Funny",
+      "genre": "cabaret",
+      "datum": "2026-12-05",
+      "tijd": "19:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/jimmy-carr"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Jimmy Carr"
+      ],
+      "titel": "Laughs Funny",
+      "genre": "cabaret",
+      "datum": "2026-12-05",
+      "tijd": "21:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/jimmy-carr"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/richard-groenendijk"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Najib & Roué"
+      ],
+      "titel": "Alles is Comedy",
+      "genre": "cabaret",
+      "datum": "2026-10-27",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/najib-roue"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/ronald-goedemondt"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "High Class Bitch | reprise",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "19:00",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/daniel-arends-high-class-bitch"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "Had ik maar nooit zo aardig gedaan | reprise",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "21:30",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/daniel-arends-had-ik-maar-nooit-zo-aardig-gedaan"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Berit Companjen"
+      ],
+      "titel": "Zei ik dat hardop? | reprise",
+      "genre": "cabaret",
+      "datum": "2027-05-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/berit-companjen"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Tis hier geen hotel 3"
+      ],
+      "titel": "reprise",
+      "genre": "cabaret",
+      "datum": "2027-01-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/tis-hier-geen-hotel-3"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/kasper-van-der-laan"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/kasper-van-der-laan"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi. | reprise",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/patrick-laureij"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Roel & Jos Maalderink | Plakshot"
+      ],
+      "titel": "Verbroedering",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/roel-jos-maalderink"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/jan-beuving"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "60e editie Cameretten Festival"
+      ],
+      "titel": "De try-outs",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/cameretten"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "60e editie Cameretten Festival"
+      ],
+      "titel": "De try-outs",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/cameretten"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "Een Striptease Van De Dood | reprise",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/david-linszen"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Ricky Koole"
+      ],
+      "titel": "Rare Leeftijd | Theater Overdag",
+      "genre": "cabaret",
+      "datum": "2026-11-15",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/ricky-koole"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Kiki Schippers"
+      ],
+      "titel": "Praktische bezwaren",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/kiki-schippers"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel | try-out | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/selma-visscher"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2026-11-24",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/luuk-weggemans"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference 2026 | try-out",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-30",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/guido-weijers"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos - Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-08",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/dolf-jansen"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Vlamousse"
+      ],
+      "titel": "Het goede voorbeeld",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/vlamousse"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Rayen Panday & Friends"
+      ],
+      "titel": "Wonderful Christmastime",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/rayen-panday-friends"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/marie-koet"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Christian van Eijkelenburg"
+      ],
+      "titel": "Small Talk | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/christian-van-eijkelenburg"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Vrouwejaars 2026"
+      ],
+      "titel": "Katinka Polderman, Kiki Schippers e.v.a. | Theater Overdag",
+      "genre": "cabaret",
+      "datum": "2026-12-20",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/vrouwejaars"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "De Grote Oudejaars Kwis 2026"
+      ],
+      "titel": "Rob Urgert & Joep van Deudekom",
+      "genre": "cabaret",
+      "datum": "2026-12-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/de-grote-oudejaars-kwis-2026"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "JUK | Regie: Theo Maassen",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/jeroens-clan"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk eventueel de dag",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/janneke-de-bijl"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Jasper van der Veen"
+      ],
+      "titel": "Op Scherp | reprise",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/jasper-van-der-veen"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Beth & Flo"
+      ],
+      "titel": "Zoveel Meer | Theater Overdag",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/beth-flo"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Juliet"
+      ],
+      "titel": "Ik beloof je eeuwige twijfel | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2027-05-26",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/juliet"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Alex Ploeg"
+      ],
+      "titel": "Niks Persoonlijks | try-out | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/alex-ploeg"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Buğra Gedik"
+      ],
+      "titel": "Ğelukkig Ğeboren | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/bugra-gedik"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z'n scherpst",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/rob-scheepers"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/lebbis"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Pieter Jouke"
+      ],
+      "titel": "Uit Stilstand | reprise",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/pieter-jouke"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Remy Evers"
+      ],
+      "titel": "Graag gedaan | try-out",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/remy-evers"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/remko-vrijdag"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Thijs Kemperink"
+      ],
+      "titel": "Tot het uiterste gedreven",
+      "genre": "cabaret",
+      "datum": "2027-03-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/thijs-kemperink"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Patrick Nederkoorn"
+      ],
+      "titel": "try-out | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/patrick-nederkoorn"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Anuar"
+      ],
+      "titel": "Ongeduldig Geduldig | reprise",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/anuar"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip | reprise",
+      "genre": "cabaret",
+      "datum": "2027-03-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/rayen-panday"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-03-31",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/valentina-toth"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/joosen-en-de-jager"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-04-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/nabil"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Sezgin Gülec"
+      ],
+      "titel": "try-out | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/sezgin-guelec"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Sezgin Gülec"
+      ],
+      "titel": "try-out | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/sezgin-guelec"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/thomas-van-luyn"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/freek-de-jonge"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was | reprise",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/david-van-rosmalen"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/wina-ricardo"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow – jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-05-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/jandino"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/martijn-koning"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Thjum Arts"
+      ],
+      "titel": "Ja, ik wil | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/thjum-arts"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/daan-van-der-hoeven"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Iris Rulkens"
+      ],
+      "titel": "Van Harte!",
+      "genre": "cabaret",
+      "datum": "2027-05-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/iris-rulkens"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/nienke-plas"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Leids Cabaret Festival"
+      ],
+      "titel": "Finalistentour 2027",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/leids-cabaret-festival"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Yunus Aktas"
+      ],
+      "titel": "Try-outs | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/yunas-aktas"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Tineke Schouten"
+      ],
+      "titel": "Femme Vitaal",
+      "genre": "cabaret",
+      "datum": "2027-06-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/tineke-schouten"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Tineke Schouten"
+      ],
+      "titel": "Femme Vitaal",
+      "genre": "cabaret",
+      "datum": "2027-06-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/tineke-schouten"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Viggo Waas, Eddie B. Wahr & Kees van der Vooren"
+      ],
+      "titel": "Eigenlijk",
+      "genre": "cabaret",
+      "datum": "2027-06-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/eigenlijk-viggo-waas-ea"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Is het leven al begonnen?",
+      "genre": "cabaret",
+      "datum": "2027-06-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/fabian-franciscus"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-06-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/jay-francis"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "De Cabaret Club"
+      ],
+      "titel": "Vier korte cabaretvoorstellingen",
+      "genre": "cabaret",
+      "datum": "2027-06-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/de-cabaret-club"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "We zijn toch familie"
+      ],
+      "titel": "Paul de Leeuw, Annick Boer e.a",
+      "genre": "cabaret",
+      "datum": "2026-12-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/we-zijn-toch-familie"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-06-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/van-vleuten-en-van-muiswinkel"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Micky Overman"
+      ],
+      "titel": "Don't Threaten Me With A Good Time",
+      "genre": "cabaret",
+      "datum": "2027-02-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/micky-overman"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Chris Verlaan"
+      ],
+      "titel": "Ach, er komen geen kindjes van",
+      "genre": "cabaret",
+      "datum": "2026-10-30",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/chris-verlaan-zzuit-in-sio"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Burger Koekoek"
+      ],
+      "titel": "Met een Vloek en een Zucht",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/burger-koekoek-zzuit-in-sio"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Mylou Frencken"
+      ],
+      "titel": "Familie voor beginners",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/mylou-frencken-zzuit-in-sio"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Hokjesdenker"
+      ],
+      "titel": "We Zien Het Wel Even",
+      "genre": "cabaret",
+      "datum": "2027-01-06",
+      "tijd": "20:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/hokjesdenker"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen | try-out | Proefdraaien in de Paap",
+      "genre": "cabaret",
+      "datum": "2026-11-04",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/peter-pannekoek"
+    },
+    {
+      "theater": "theater-de-spiegel",
+      "artiesten": [
+        "Timzingt"
+      ],
+      "titel": "Grijs",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/timzingt"
+    },
+    {
+      "theater": "odeon-zwolle",
+      "artiesten": [
+        "Broeders van andere Moeders"
+      ],
+      "titel": "Comedy zonder script - Improvisatietheater",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/broeders-van-andere-moeders"
+    }
+  ]
+}

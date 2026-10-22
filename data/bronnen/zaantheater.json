@@ -1,0 +1,810 @@
+{
+  "bron": "zaantheater",
+  "naam": "Zaantheater",
+  "opgehaald": "2026-10-22",
+  "theaters": [
+    {
+      "id": "zaantheater",
+      "naam": "Zaantheater",
+      "plaats": "Zaandam",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://zaantheater.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-06-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/andries-tunru/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Ayoub Kharkhach"
+      ],
+      "titel": "En verbied de vogels om te fluiten",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ayoub-kharkhach/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Beth & Flo"
+      ],
+      "titel": "Zoveel meer",
+      "genre": "cabaret",
+      "datum": "2026-12-01",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/beth-flo/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/bob-koomen/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Boban Benjamin Braspenning"
+      ],
+      "titel": "Bruto",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/boban-benjamin-braspenning/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/daan-van-der-hoeven/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "De Cabaret Club"
+      ],
+      "titel": "Vier korte cabaretvoorstellingen",
+      "genre": "cabaret",
+      "datum": "2027-01-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/de-cabaret-club/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Deng Boy"
+      ],
+      "titel": "Double Trouble",
+      "genre": "cabaret",
+      "datum": "2027-06-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/deng-boy/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos: Oudejaars 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/dolf-jansen/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Eigenlijk"
+      ],
+      "titel": "Viggo Waas, Eddie B. Wahr & Kees van der Vooren",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/eigenlijk/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Elfie Tromp"
+      ],
+      "titel": "Aai Poesje Aai Poesje",
+      "genre": "cabaret",
+      "datum": "2027-02-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/elfie-tromp/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/esther-van-der-voort/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Is het leven al begonnen?",
+      "genre": "cabaret",
+      "datum": "2027-06-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/fabian-franciscus/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/freek-de-jonge/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Glodi Lugungu"
+      ],
+      "titel": "In de hemel ken ik jullie niet",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/glodi-lugungu/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-10-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/guido-weijers/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Ice"
+      ],
+      "titel": "Live in het theater",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ice/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De Grote Jubileumshow",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jandino/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk eventueel de dag",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/janneke-de-bijl/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-06-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jay-francis/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Jeannine La Rose"
+      ],
+      "titel": "Meer?!",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jeannine-la-rose/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Jochen Otten"
+      ],
+      "titel": "De kwaadste niet",
+      "genre": "cabaret",
+      "datum": "2026-10-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jochen-otten/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Jorgen Raymann"
+      ],
+      "titel": "Bigi Yari: Welkom thuis, waar niemand op je zit te wachten",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jorgen-raymann/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Karin Bloemen"
+      ],
+      "titel": "Renaissance 2.0",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/karin-bloemen/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2026-11-26",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een snotje",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kim-karssen/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/klaas-van-der-eerden/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/lebbis/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Lovella Telesford"
+      ],
+      "titel": "Wat een gezeik!",
+      "genre": "cabaret",
+      "datum": "2026-11-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/lovella-telesford/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Luuk Ransijn"
+      ],
+      "titel": "Uitkijk",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/luuk-ransijn/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/luuk-weggemans/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Marjolijn van Kooten"
+      ],
+      "titel": "Aan mij zal het niet liggen",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/marjolijn-van-kooten/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-05-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/martijn-koning/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-04-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/merijn-scholten/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim voor iedereen",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/micha-wertheim/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/nabil/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Najib Amhali & Roue Verveer"
+      ],
+      "titel": "Alles is comedy",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/najib-amhali-roue-verveer/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje eitje",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/nienke-plas/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2026-10-31",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/patrick-laureij/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Paul Haenen"
+      ],
+      "titel": "50 jaar Margreet Dolman",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/paul-haenen/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Pieter Jouke"
+      ],
+      "titel": "Uit stilstand",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pieter-jouke/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Plien & Bianca"
+      ],
+      "titel": "Harrekidee!",
+      "genre": "cabaret",
+      "datum": "2026-10-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/plien-bianca/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-04-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rayen-panday/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rayen-panday/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Rayen Panday & Friends"
+      ],
+      "titel": "Wonderful Christmastime",
+      "genre": "cabaret",
+      "datum": "2026-12-27",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rayen-panday-friends/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/remko-vrijdag/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Rene van Meurs"
+      ],
+      "titel": "Noodzakelijk Kwaad",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rene-van-meurs/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/richard-groenendijk/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Ricky Koole"
+      ],
+      "titel": "Rare leeftijd",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ricky-koole/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Ricky Risolles 3 – Niet zo Indiscreet…"
+      ],
+      "titel": "Geen zelfspot, geen toegang!",
+      "genre": "cabaret",
+      "datum": "2027-02-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ricky-risolles-3-niet-zo-indiscreet/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn lieve achterdocht",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ronald-goedemondt/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/roue-verveer/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Rundfunk: Wagyu"
+      ],
+      "titel": "Tom van Kalmthout & Yannick van de Velde",
+      "genre": "cabaret",
+      "datum": "2027-06-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rundfunk-wagyu/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Rundfunk: Wagyu"
+      ],
+      "titel": "Tom van Kalmthout & Yannick van de Velde",
+      "genre": "cabaret",
+      "datum": "2027-06-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rundfunk-wagyu/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Spruijt & Opperman"
+      ],
+      "titel": "Altijdloos",
+      "genre": "cabaret",
+      "datum": "2027-02-02",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/spruijt-opperman/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Thjum"
+      ],
+      "titel": "Hoe heeft het zover kunnen komen?",
+      "genre": "cabaret",
+      "datum": "2026-10-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/thjum/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Tim Kroezen"
+      ],
+      "titel": "550",
+      "genre": "cabaret",
+      "datum": "2026-12-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/tim-kroezen/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/van-der-laan-woe/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/wina-ricardo/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Stefan Pop"
+      ],
+      "titel": "Genoeg over mij",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/stefan-pop/"
+    }
+  ]
+}
