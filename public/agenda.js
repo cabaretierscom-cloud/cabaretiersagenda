@@ -29,6 +29,28 @@
     strip.addEventListener("scroll", sync, { passive: true });
     window.addEventListener("resize", sync);
     sync();
+
+    // Op een touchscreen is er geen muis: daar licht de affiche op waar je naartoe veegt.
+    const touch = matchMedia("(hover: none)");
+    let frame = 0;
+    const markeer = () => {
+      frame = 0;
+      const posters = [...strip.querySelectorAll(".poster:not([hidden])")];
+      strip.classList.toggle("vegen", touch.matches);
+      let actief = null;
+      if (touch.matches && posters.length) {
+        const links = strip.getBoundingClientRect().left;
+        const opEinde = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 4;
+        actief = opEinde ? posters[posters.length - 1]
+          : posters.reduce((a, p) => Math.abs(p.getBoundingClientRect().left - links) < Math.abs(a.getBoundingClientRect().left - links) ? p : a);
+      }
+      posters.forEach((p) => p.classList.toggle("actief", p === actief));
+    };
+    const plan = () => { if (!frame) frame = requestAnimationFrame(markeer); };
+    strip.addEventListener("scroll", plan, { passive: true });
+    window.addEventListener("resize", plan);
+    touch.addEventListener("change", plan);
+    markeer();
   }
 
   // ---------- Artiesten van A tot Z ----------

@@ -240,7 +240,7 @@ ${body}
       const v = V.get(g.voorstelling), t = T.get(g.theater);
       const [sx, sy] = spots[i % spots.length];
       const aantal = plural(list.length, "speeldatum", "speeldata");
-      return `<a class="poster${i === 0 ? " featured" : ""}" href="/artiesten/${a.id}/" style="${ink(a.kleur)};--sx:${sx};--sy:${sy}">
+      return `<a class="poster" href="/artiesten/${a.id}/" style="${ink(a.kleur)};--sx:${sx};--sy:${sy}">
         <span class="visually-hidden">${esc(a.naam)}, ${aantal}, eerstvolgende ${fmt.long(g.datum)} in ${esc(t.naam)}, ${esc(t.plaats)}</span>
         <div class="when" aria-hidden="true">
           <span class="weekday">Vanaf</span>

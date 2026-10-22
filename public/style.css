@@ -154,7 +154,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .strip-wrap { position: relative; }
 .strip {
   display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
-  scrollbar-width: none; padding-bottom: 18px;
+  scrollbar-width: none; padding-block: 14px 30px;
 }
 .strip::-webkit-scrollbar { display: none; }
 .strip:focus-visible { outline-offset: -3px; }
@@ -164,6 +164,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   scroll-snap-align: start; text-decoration: none; color: var(--fg); background-color: var(--bg);
   display: grid; grid-template-rows: auto 1fr auto; padding: 26px 26px 28px; overflow: hidden;
   isolation: isolate;
+  transition: transform .28s cubic-bezier(.2,.8,.2,1), border-radius .28s ease, box-shadow .28s ease;
 }
 /* Rasterpunten zoals een gezeefdrukte affiche */
 .poster::before {
@@ -172,8 +173,18 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   background-size: 7px 7px;
   -webkit-mask-image: radial-gradient(circle at var(--sx, 80%) var(--sy, 30%), #000 0, #000 22%, transparent 62%);
           mask-image: radial-gradient(circle at var(--sx, 80%) var(--sy, 30%), #000 0, #000 22%, transparent 62%);
+  transition: opacity .28s ease;
 }
-.poster.featured { width: 400px; border-radius: var(--radius-poster); z-index: 2; box-shadow: 0 18px 40px -18px rgba(0,0,0,.55); }
+/* Actieve affiche: met de muis erop (desktop) of de kaart waar je naartoe veegt (mobiel, via agenda.js).
+   Hij komt los van de wand: omhoog, ronde hoeken, schaduw en een voller raster. */
+.poster.actief { transform: translateY(-10px); border-radius: var(--radius-poster); z-index: 2; box-shadow: 0 22px 40px -18px rgba(0,0,0,.6); }
+.poster.actief::before { opacity: .38; }
+@media (hover: hover) and (pointer: fine) {
+  .poster:hover, .poster:focus-visible { transform: translateY(-10px); border-radius: var(--radius-poster); z-index: 2; box-shadow: 0 22px 40px -18px rgba(0,0,0,.6); }
+  .poster:hover::before, .poster:focus-visible::before { opacity: .38; }
+}
+/* Mobiel: de andere affiches zakken iets terug, zodat je tijdens het vegen ziet welke vooraan komt. */
+.strip.vegen .poster:not(.actief) { transform: scale(.93); }
 .poster .when { line-height: 1; }
 .poster .weekday { font-weight: 600; font-size: 1.05rem; }
 .poster .day {
@@ -188,10 +199,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   font-family: var(--font-display); font-weight: 900; font-size: 3.3rem; line-height: .9;
   letter-spacing: 0.01em; text-transform: uppercase; overflow: hidden;
 }
-.poster.featured .vtitle { font-size: 4rem; max-height: 330px; }
 .poster .vtitle.long { font-size: 2.35rem; line-height: .95; }
-.poster.featured .vtitle.long { font-size: 2.9rem; }
-.poster .vtitle.xlong, .poster.featured .vtitle.xlong { font-size: 1.85rem; line-height: 1; }
+.poster .vtitle.xlong { font-size: 1.85rem; line-height: 1; }
 .poster .who { align-self: end; max-width: calc(100% - 96px); }
 .poster .who strong { display: block; font-size: 1.3rem; line-height: 1.15; font-weight: 700; }
 .poster .who .where { display: block; font-size: .95rem; margin-top: 4px; }
@@ -199,7 +208,6 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   display: inline-block; margin-top: 10px; font-size: var(--step--1); font-weight: 600;
   padding: 3px 10px; border-radius: 999px; background: var(--fg); color: var(--bg);
 }
-.poster:hover .day, .poster:focus-visible .day { text-decoration: underline; text-decoration-thickness: 6px; text-underline-offset: 8px; }
 .strip-nav {
   position: absolute; right: max(12px, env(safe-area-inset-right, 0px)); top: 50%; translate: 0 -50%;
   display: flex; flex-direction: column; gap: 10px; z-index: 3;
@@ -213,7 +221,6 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .strip-nav svg { width: 22px; height: 22px; }
 @media (max-width: 600px) {
   .poster { width: 78vw; height: 470px; }
-  .poster.featured { width: 86vw; }
   .poster .day { font-size: 7.5rem; }
   .strip-nav { display: none; }
 }
@@ -361,6 +368,7 @@ footer .wrap { padding-block: 28px 40px; display: flex; gap: 24px; justify-conte
 footer p { margin: 0; max-width: 60ch; }
 
 @media (prefers-reduced-motion: no-preference) { .strip { scroll-behavior: smooth; } }
+@media (prefers-reduced-motion: reduce) { .poster, .poster::before { transition: none; } }
 
 /* ---------- Kerncijfers ---------- */
 .stats dl { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin: 28px 0 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
