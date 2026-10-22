@@ -22,7 +22,6 @@ export const SITE = {
 const ICON = {
   sold: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M6 18L18 6"/></svg>',
   doubt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17.5v.01"/></svg>',
-  back: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
   prev: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
   next: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>',
 };
@@ -110,7 +109,7 @@ ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title
   </div>
 </header>
 <main id="main">
-${body}
+${kruimelpadHtml(schema?.kruimels)}${body}
 </main>
 <footer class="site-footer">
   <div class="wrap">
@@ -228,10 +227,19 @@ ${body}
     itemListElement: items.map(([naam, pad], i) => ({ "@type": "ListItem", position: i + 1, name: naam, url: URL(pad) })),
   });
 
+  // Zichtbaar kruimelpad op dieper liggende pagina's (vanaf twee niveaus onder de voorpagina).
+  function kruimelpadHtml(kruimels = []) {
+    if (kruimels.length < 2) return "";
+    const pad = [["Home", "/"], ...kruimels];
+    return `<nav class="kruimelpad" aria-label="Kruimelpad"><ol class="wrap">${pad.map(([naam, p], i) =>
+      i === pad.length - 1 ? `<li aria-current="page">${esc(naam)}</li>` : `<li><a href="${p}">${esc(naam)}</a></li>`).join("")}</ol></nav>
+`;
+  }
+
   // schema = { type, kruimels: [[naam, pad], ...], over, hoofd, extra: [...] }
   function paginaLd({ title, description, path, type = "WebPage", kruimels = [], over, hoofd, extra = [] }) {
     const paginaUrl = URL(path);
-    const pad = [["Cabaretiers.com", "/"], ...kruimels];
+    const pad = [["Home", "/"], ...kruimels];
     return {
       "@context": "https://schema.org",
       "@graph": [
@@ -475,7 +483,6 @@ ${body}
     const list = perPlaats(p);
     const zalen = zalenMetData.filter((t) => t.plaats === p);
     const body = `<div class="detail-hero" style="--bg:var(--riso-yellow);--fg:#000"><div class="wrap">
-        <a class="back" href="/plaatsen/">${ICON.back}Alle plaatsen</a>
         <h1>${esc(p)}</h1>
         <p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${zalen.map((t) => `<a href="/theaters/${t.id}/">${esc(t.naam)}</a>`).join(", ").replace(/, ([^,]*)$/, " en $1")}.</p>
       </div></div>
@@ -625,7 +632,6 @@ ${body}
       ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(cityCount, "plaats", "plaatsen")}${partners.length ? `, samen met ${partners.map((p) => `<a href="/artiesten/${p}/">${esc(A.get(p).naam)}</a>`).join(" en ")}` : ""}.`
       : "Op dit moment staan er geen voorstellingen gepland.";
     const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap">
-        <a class="back" href="/artiesten/">${ICON.back}Alle artiesten</a>
         <h1>${esc(a.naam)}</h1>
         <p>${summary}</p>
       </div></div>
@@ -676,7 +682,6 @@ ${body}
     const list = up.filter((g) => g.voorstelling === vid);
     const steden = new Set(list.map((g) => T.get(g.theater).plaats)).size;
     const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap">
-        <a class="back" href="/artiesten/${a.id}/">${ICON.back}${esc(a.naam)}</a>
         <h1>${esc(v.titel)}</h1>
         <p>Voorstelling van ${artistLinks(vid)}. ${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.</p>
       </div></div>
@@ -718,7 +723,6 @@ ${body}
   function theaterPage(t) {
     const list = db.gigsForTheater(t.id);
     const body = `<div class="detail-hero" style="--bg:var(--riso-blue);--fg:#FFF"><div class="wrap">
-        <a class="back" href="/theaters/">${ICON.back}Alle theaters</a>
         <h1>${esc(t.naam)}</h1>
         <p><a href="/plaatsen/${plaatsId(t.plaats)}/">${esc(t.plaats)}</a>, ${LANDEN[t.land]}. ${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.` : "Op dit moment staan er geen voorstellingen gepland."}${t.website ? ` <a href="${esc(t.website)}" rel="noopener">Website van het theater</a>` : ""}</p>
       </div></div>
