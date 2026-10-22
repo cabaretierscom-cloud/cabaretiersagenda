@@ -68,7 +68,7 @@ export function createTemplates(db) {
   const showLink = (vid, tekst) => voorstellingPad.has(vid) ? `<a href="${voorstellingPad.get(vid)}">${tekst}</a>` : tekst;
 
 
-  function layout({ title, description = SITE.description, path, section, body, schema }) {
+  function layout({ title, description = SITE.description, path, section, body, schema, afbeelding }) {
     const nav = [
       ["agenda", "/agenda/", "Agenda"],
       ["artiesten", "/artiesten/", "Artiesten"],
@@ -89,7 +89,7 @@ export function createTemplates(db) {
 <link rel="canonical" href="${SITE.url}${path}">
 <meta property="og:title" content="${esc(title || SITE.name)}">
 <meta property="og:description" content="${esc(description)}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="website">${afbeelding ? `\n<meta property="og:image" content="${SITE.url}${esc(afbeelding)}">` : ""}
 <meta property="og:url" content="${SITE.url}${path}">
 <meta property="og:locale" content="nl_NL">
 <meta name="theme-color" content="#FF6A13">
@@ -185,8 +185,15 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   const artiestLd = (id) => {
     const a = A.get(id);
-    return { "@type": isGroep(a) ? "PerformingGroup" : "Person", "@id": URL(`/artiesten/${id}/#artiest`), name: a.naam, url: URL(`/artiesten/${id}/`) };
+    return {
+      "@type": isGroep(a) ? "PerformingGroup" : "Person", "@id": URL(`/artiesten/${id}/#artiest`), name: a.naam, url: URL(`/artiesten/${id}/`),
+      ...(a.foto ? { image: fotoLd(a) } : {}),
+    };
   };
+  const fotoLd = (a) => ({
+    "@type": "ImageObject", contentUrl: URL(a.foto.bestand), creditText: a.foto.maker,
+    ...(a.foto.licentieUrl ? { license: a.foto.licentieUrl } : {}), acquireLicensePage: a.foto.bron,
+  });
   const zaalLd = (id) => {
     const t = T.get(id);
     return {
@@ -212,6 +219,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       inLanguage: t.land === "BE" ? "nl-BE" : "nl-NL",
       location: zaalLd(g.theater),
+      ...((() => { const met = v.artiesten.map((x) => A.get(x)).find((x) => x.foto); return met ? { image: URL(met.foto.bestand) } : {}; })()),
       ...(v.artiesten.length ? { performer: v.artiesten.map(artiestLd) } : {}),
       offers: {
         "@type": "Offer", url: g.bron,
@@ -633,6 +641,12 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       </section>`;
   }
 
+  // Rechtenvrije foto (Wikimedia Commons) met verplichte naamsvermelding en licentie.
+  const fotoHtml = (a) => `<figure class="artiest-foto">
+          <img src="${esc(a.foto.bestand)}" alt="${esc(a.naam)}" loading="eager" decoding="async">
+          <figcaption>Foto: <a href="${esc(a.foto.bron)}" rel="noopener">${esc(a.foto.maker)}</a>${a.foto.licentieUrl ? `, <a href="${esc(a.foto.licentieUrl)}" rel="noopener license">${esc(a.foto.licentie)}</a>` : `, ${esc(a.foto.licentie)}`}</figcaption>
+        </figure>`;
+
   function artistPage(a) {
     const list = db.gigsForArtist(a.id);
     const titles = [...new Set(list.map((g) => echteTitel(g.voorstelling)).filter(Boolean))];
@@ -643,9 +657,12 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(cityCount, "plaats", "plaatsen")}${partners.length ? `, samen met ${partners.map((p) => `<a href="/artiesten/${p}/">${esc(A.get(p).naam)}</a>`).join(" en ")}` : ""}.`
       : "Op dit moment staan er geen voorstellingen gepland.";
     const festival = [...F.values()].find((f) => (f.artiesten || []).includes(a.id));
-    const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap">
-        <h1>${esc(a.naam)}</h1>
-        <p>${summary}${festival ? ` Onderdeel van <a href="/festivals/${festival.id}/">${esc(festival.naam)}</a>.` : ""}</p>
+    const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap${a.foto ? " hero-met-foto" : ""}">
+        <div class="hero-tekst">
+          <h1>${esc(a.naam)}</h1>
+          <p>${summary}${festival ? ` Onderdeel van <a href="/festivals/${festival.id}/">${esc(festival.naam)}</a>.` : ""}</p>
+        </div>
+        ${a.foto ? fotoHtml(a) : ""}
       </div></div>
       <div class="wrap detail-body">
         ${showIds.length ? `<div class="shows-list">${showIds.map((vid) => voorstellingPad.has(vid) ? `<a class="pill" href="${voorstellingPad.get(vid)}">${esc(V.get(vid).titel)}</a>` : `<span class="pill">${esc(V.get(vid).titel)}</span>`).join("")}</div>` : ""}
@@ -657,7 +674,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const desc = list.length
       ? kort(`${a.naam} live: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(cityCount, "plaats", "plaatsen")}${titles.length ? `, met ${titles.slice(0, 2).join(" en ")}` : ""}. Eerstvolgende op ${fmt.full(list[0].datum)}. Bekijk alle speeldata.`)
       : `${a.naam} op Cabaretiers.com.`;
-    return layout({ title: `${a.naam}: tournee en speeldata`, description: desc, path: `/artiesten/${a.id}/`, section: "artiesten", body, schema: { type: "ProfilePage", kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`]], hoofd: { "@id": artiestLd(a.id)["@id"] }, extra: [artiestLd(a.id), ...eventsLd(list)] } });
+    return layout({ title: `${a.naam}: tournee en speeldata`, description: desc, path: `/artiesten/${a.id}/`, section: "artiesten", body, afbeelding: a.foto?.bestand, schema: { type: "ProfilePage", kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`]], hoofd: { "@id": artiestLd(a.id)["@id"] }, extra: [artiestLd(a.id), ...eventsLd(list)] } });
   }
 
   function voorstellingTekst(vid, list) {

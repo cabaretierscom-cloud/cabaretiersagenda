@@ -115,7 +115,7 @@ export async function get(url, opts = {}) {
     // Bij "te druk" (429/503) even wachten en opnieuw proberen, zoals de site vraagt.
     for (let poging = 1; ; poging++) {
       const { res, url: finalUrl } = await rawFetch(url, opts);
-      const text = await res.text();
+      const text = opts.binary ? Buffer.from(await res.arrayBuffer()) : await res.text();
       if ((res.status === 429 || res.status === 503) && poging < 4) {
         const wacht = Math.min(120, Number(res.headers.get("retry-after")) || 10 * poging) * 1000;
         await new Promise((r) => setTimeout(r, wacht));
@@ -139,6 +139,11 @@ export async function postForm(url, velden, opts = {}) {
   const body = new FormData();
   for (const [k, v] of Object.entries(velden)) body.append(k, String(v));
   return get(url, { ...opts, body });
+}
+
+// Een bestand (bijv. een foto) ophalen als Buffer, met dezelfde regels als get().
+export async function getBestand(url, opts = {}) {
+  return (await get(url, { ...opts, binary: true })).text;
 }
 
 export async function getJson(url, opts) {

@@ -51,13 +51,29 @@
     "id": "alex-agnew",
     "naam": "Alex Agnew",
     "land": "BE",
-    "kleur": "zwart"
+    "kleur": "zwart",
+    "foto": {
+      "bestand": "/fotos/alex-agnew.jpg",
+      "maker": "Lieven Scheire",
+      "licentie": "Public domain",
+      "licentieUrl": null,
+      "bron": "https://commons.wikimedia.org/wiki/File:Alex_Agnew.JPG",
+      "wikidata": "Q1925185"
+    }
   },
   {
     "id": "alex-ploeg",
     "naam": "Alex Ploeg",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "foto": {
+      "bestand": "/fotos/alex-ploeg.jpg",
+      "maker": "Koenemans",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Alex-Ploeg-Groningen-2019.jpg",
+      "wikidata": "Q59534283"
+    }
   },
   {
     "id": "alex-sijm",
@@ -81,19 +97,36 @@
     "id": "amsterdams-studenten-cabaret-festival",
     "naam": "Amsterdams Studenten Cabaret Festival",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "foto": false
   },
   {
     "id": "andre-manuel",
     "naam": "André Manuel",
     "land": null,
-    "kleur": "roze"
+    "kleur": "roze",
+    "foto": {
+      "bestand": "/fotos/andre-manuel.jpg",
+      "maker": "Harold Brusse",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:ZC15_Andr%C3%A9_Manuel_(2).JPG",
+      "wikidata": "Q2796420"
+    }
   },
   {
     "id": "andries-tunru",
     "naam": "Andries Tunru",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "foto": {
+      "bestand": "/fotos/andries-tunru.jpg",
+      "maker": "Super Formosa Photography - www.superformosa.nl",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Portrait_of_Andries_Tunru.png",
+      "wikidata": "Q63419414"
+    }
   },
   {
     "id": "andries-tunru-en-stefan-hendrikx",
@@ -123,7 +156,8 @@
     "id": "annie-m-g-schmidtprijs",
     "naam": "Annie M.G. Schmidtprijs",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "foto": false
   },
   {
     "id": "anuar",
@@ -147,13 +181,29 @@
     "id": "aries-spears",
     "naam": "Aries Spears",
     "land": null,
-    "kleur": "roze"
+    "kleur": "roze",
+    "foto": {
+      "bestand": "/fotos/aries-spears.jpg",
+      "maker": "BOSS TALK 101",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Aries_Spears_2025.jpg",
+      "wikidata": "Q660241"
+    }
   },
   {
     "id": "arjan-kleton",
     "naam": "Arjan Kleton",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "foto": {
+      "bestand": "/fotos/arjan-kleton.jpg",
+      "maker": "Hélène Wiesenhaan",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Arjan_kleton-1678141304.jpg",
+      "wikidata": "Q105993754"
+    }
   },
   {
     "id": "armando-anto",
@@ -165,7 +215,15 @@
     "id": "arnout-van-den-bossche",
     "naam": "Arnout Van den Bossche",
     "land": "BE",
-    "kleur": "limoen"
+    "kleur": "limoen",
+    "foto": {
+      "bestand": "/fotos/arnout-van-den-bossche.jpg",
+      "maker": "5t9",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Arnout_Van_den_Bossche_-_Vlaamse_komiek.jpg",
+      "wikidata": "Q28521196"
+    }
   },
   {
     "id": "ashton-brothers",
@@ -189,7 +247,15 @@
     "id": "bas-birker",
     "naam": "Bas Birker",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "foto": {
+      "bestand": "/fotos/bas-birker.jpg",
+      "maker": "Dirk Annemans",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Bas_Birker_2022_klein.jpg",
+      "wikidata": "Q72925931"
+    }
   },
   {
     "id": "beperkt-houdbaar",
@@ -219,7 +285,15 @@
     "id": "bert-gabriels",
     "naam": "Bert Gabriëls",
     "land": "BE",
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "foto": {
+      "bestand": "/fotos/bert-gabriels.jpg",
+      "maker": "Paul Van Welden",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Bert-gabrils-1380514973.jpg",
+      "wikidata": "Q2141283"
+    }
   },
   {
     "id": "bert-visscher-en-martin-van-waardenberg",
@@ -261,7 +335,15 @@
     "id": "bianca-del-rio",
     "naam": "Bianca Del Rio",
     "land": null,
-    "kleur": "roze"
+    "kleur": "roze",
+    "foto": {
+      "bestand": "/fotos/bianca-del-rio.jpg",
+      "maker": "https://www.flickr.com/photos/dvsross/",
+      "licentie": "CC BY 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Bianca_del_Rio_at_Dragcon_2018_by_dvsross.jpg",
+      "wikidata": "Q16226036"
+    }
   },
   {
     "id": "blauwe-vinkjes",
@@ -285,7 +367,15 @@
     "id": "boban-benjamin-braspenning",
     "naam": "Boban Benjamin Braspenning",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "foto": {
+      "bestand": "/fotos/boban-benjamin-braspenning.jpg",
+      "maker": "NPO Start",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Boban_Benjamin_Braspenning_-_2022.jpg",
+      "wikidata": "Q130532625"
+    }
   },
   {
     "id": "boban-braspenning",
@@ -381,13 +471,29 @@
     "id": "christine-de-boer",
     "naam": "Christine de Boer",
     "land": null,
-    "kleur": "groen"
+    "kleur": "groen",
+    "foto": {
+      "bestand": "/fotos/christine-de-boer.jpg",
+      "maker": "Buma Cultuur",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Christine-de-boer-1429623442.png",
+      "wikidata": "Q19361377"
+    }
   },
   {
     "id": "claudia-de-breij",
     "naam": "Claudia de Breij",
     "land": "NL",
-    "kleur": "roze"
+    "kleur": "roze",
+    "foto": {
+      "bestand": "/fotos/claudia-de-breij.jpg",
+      "maker": "Dirk Annemans",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Claudia_de_Breij_door_Dirk_Annemans.jpg",
+      "wikidata": "Q435319"
+    }
   },
   {
     "id": "collectief-jongste-kind",
@@ -441,7 +547,15 @@
     "id": "daniel-arends",
     "naam": "Daniël Arends",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "foto": {
+      "bestand": "/fotos/daniel-arends.jpg",
+      "maker": "Franc Scholten",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Daniel_arends-1487886026.jpg",
+      "wikidata": "Q2858115"
+    }
   },
   {
     "id": "daniel-yazbek",
@@ -556,7 +670,15 @@
     "id": "dolf-jansen",
     "naam": "Dolf Jansen",
     "land": null,
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "foto": {
+      "bestand": "/fotos/dolf-jansen.jpg",
+      "maker": "Paulblank",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Dolf-jansen3.jpg",
+      "wikidata": "Q2416851"
+    }
   },
   {
     "id": "echt-gebeurd",
@@ -622,7 +744,15 @@
     "id": "esther-van-der-voort",
     "naam": "Esther van der Voort",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "foto": {
+      "bestand": "/fotos/esther-van-der-voort.jpg",
+      "maker": "Grappige",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Esther_van_der_Voort.png",
+      "wikidata": "Q136206698"
+    }
   },
   {
     "id": "esther-s-time-of-the-month",
@@ -700,7 +830,15 @@
     "id": "freek-de-jonge",
     "naam": "Freek de Jonge",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "foto": {
+      "bestand": "/fotos/freek-de-jonge.jpg",
+      "maker": "Stef Bilo",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Freek_de_Jonge_2010-01.jpg",
+      "wikidata": "Q983255"
+    }
   },
   {
     "id": "garik-oganisyan",
@@ -712,7 +850,15 @@
     "id": "gavin-reijnders",
     "naam": "Gavin Reijnders",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "foto": {
+      "bestand": "/fotos/gavin-reijnders.jpg",
+      "maker": "Niels806",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Gavin_Reijnders_Glittermoe_Poster.jpg",
+      "wikidata": "Q132156255"
+    }
   },
   {
     "id": "gerrie-smits",
@@ -748,7 +894,15 @@
     "id": "greg-shapiro",
     "naam": "Greg Shapiro",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "foto": {
+      "bestand": "/fotos/greg-shapiro.jpg",
+      "maker": "Maurits90",
+      "licentie": "CC0",
+      "licentieUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "bron": "https://commons.wikimedia.org/wiki/File:Greg_Shapiro.jpg",
+      "wikidata": "Q2802166"
+    }
   },
   {
     "id": "groenenberg-en-de-jong",
@@ -778,7 +932,8 @@
     "id": "guido-weijers",
     "naam": "Guido Weijers",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "foto": false
   },
   {
     "id": "hanneke-drenth-en-dianne-liesker",
@@ -790,7 +945,15 @@
     "id": "hassan-el-fad",
     "naam": "Hassan El Fad",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "foto": {
+      "bestand": "/fotos/hassan-el-fad.jpg",
+      "maker": "M.Rais",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Hassen_el_Fad_2.jpg",
+      "wikidata": "Q3128133"
+    }
   },
   {
     "id": "hendrik-kegels-en-thomas-claessens",
@@ -802,7 +965,15 @@
     "id": "henry-van-loon",
     "naam": "Henry van Loon",
     "land": null,
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "foto": {
+      "bestand": "/fotos/henry-van-loon.jpg",
+      "maker": "DWDD",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Henry_van_Loon_(2018).jpg",
+      "wikidata": "Q2381963"
+    }
   },
   {
     "id": "hermes-ahmadi",
@@ -874,7 +1045,15 @@
     "id": "jade-mintjens",
     "naam": "Jade Mintjens",
     "land": null,
-    "kleur": "limoen"
+    "kleur": "limoen",
+    "foto": {
+      "bestand": "/fotos/jade-mintjens.jpg",
+      "maker": "Dirk Annemans",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Jade_Mintjens_door_Dirk_Annemans_in_2023.jpg",
+      "wikidata": "Q52635894"
+    }
   },
   {
     "id": "jan-beuving",
@@ -892,7 +1071,15 @@
     "id": "jandino-asporaat",
     "naam": "Jandino Asporaat",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "foto": {
+      "bestand": "/fotos/jandino-asporaat.jpg",
+      "maker": "Roel1943",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Jandino_Jullian_Asporaat.JPG",
+      "wikidata": "Q2322572"
+    }
   },
   {
     "id": "janice-blok",
@@ -904,7 +1091,15 @@
     "id": "janneke-de-bijl",
     "naam": "Janneke de Bijl",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "foto": {
+      "bestand": "/fotos/janneke-de-bijl.jpg",
+      "maker": "Nederlandse Leeuw",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Janneke_de_Bijl.png",
+      "wikidata": "Q68725263"
+    }
   },
   {
     "id": "jasper-van-der-veen",
@@ -952,7 +1147,15 @@
     "id": "jimmy-carr",
     "naam": "Jimmy Carr",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "foto": {
+      "bestand": "/fotos/jimmy-carr.jpg",
+      "maker": "Albin Olsson",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Jimmy_Carr%2C_2015-04-13_2.jpg",
+      "wikidata": "Q964454"
+    }
   },
   {
     "id": "joanne-telesford",
@@ -964,7 +1167,15 @@
     "id": "jochem-myjer",
     "naam": "Jochem Myjer",
     "land": "NL",
-    "kleur": "geel"
+    "kleur": "geel",
+    "foto": {
+      "bestand": "/fotos/jochem-myjer.jpg",
+      "maker": "DWDD",
+      "licentie": "CC BY 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Jochem_Myjer_(2018).jpg",
+      "wikidata": "Q1691031"
+    }
   },
   {
     "id": "jochen-otten",
@@ -1006,13 +1217,29 @@
     "id": "joost-spijkers",
     "naam": "Joost Spijkers",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "foto": {
+      "bestand": "/fotos/joost-spijkers.jpg",
+      "maker": "Zoran Lešić",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Joost-spijkers-1397741726.jpg",
+      "wikidata": "Q2292843"
+    }
   },
   {
     "id": "jorgen-raymann",
     "naam": "Jörgen Raymann",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "foto": {
+      "bestand": "/fotos/jorgen-raymann.jpg",
+      "maker": "Targaryen",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:J%C3%B6rgen_Raymann_2.jpg",
+      "wikidata": "Q2555411"
+    }
   },
   {
     "id": "jules-keeris",
@@ -1030,7 +1257,15 @@
     "id": "julika-marijn",
     "naam": "Julika Marijn",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "foto": {
+      "bestand": "/fotos/julika-marijn.jpg",
+      "maker": "Kahawa Media",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Julika-marijn-1308956900.jpg",
+      "wikidata": "Q2667965"
+    }
   },
   {
     "id": "kaaskop-en-van-vleuten",
@@ -1042,13 +1277,29 @@
     "id": "kamagurka",
     "naam": "Kamagurka",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "foto": {
+      "bestand": "/fotos/kamagurka.jpg",
+      "maker": "Michiel Hendryckx",
+      "licentie": "Public domain",
+      "licentieUrl": null,
+      "bron": "https://commons.wikimedia.org/wiki/File:Kamabushok675.jpg",
+      "wikidata": "Q733050"
+    }
   },
   {
     "id": "karin-bloemen",
     "naam": "Karin Bloemen",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "foto": {
+      "bestand": "/fotos/karin-bloemen.jpg",
+      "maker": "Rob Becker",
+      "licentie": "CC BY 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Karin_Bloemen_tijdens_theatershow_Witte_Nar_in_2014%2C_Rob_Becker_(cropped).jpg",
+      "wikidata": "Q2410535"
+    }
   },
   {
     "id": "karin-dirkx",
@@ -1060,7 +1311,15 @@
     "id": "kasper-van-der-laan",
     "naam": "Kasper van der Laan",
     "land": null,
-    "kleur": "roze"
+    "kleur": "roze",
+    "foto": {
+      "bestand": "/fotos/kasper-van-der-laan.jpg",
+      "maker": "DWDD",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Kasper_van_der_Laan_(2018).jpg",
+      "wikidata": "Q13741935"
+    }
   },
   {
     "id": "keep-it-sample",
@@ -1090,7 +1349,15 @@
     "id": "kevin-bridges",
     "naam": "Kevin Bridges",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "foto": {
+      "bestand": "/fotos/kevin-bridges.jpg",
+      "maker": "Goodreg3",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Kevin_Bridges%2C_2015%2C_Glasgow.jpg",
+      "wikidata": "Q6395897"
+    }
   },
   {
     "id": "khalid-alterch",
@@ -1157,7 +1424,15 @@
     "naam": "Kommil Foo",
     "land": null,
     "kleur": "groen",
-    "vorm": "groep"
+    "vorm": "groep",
+    "foto": {
+      "bestand": "/fotos/kommil-foo.jpg",
+      "maker": "Dirk Annemans",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Kommil_Foo_in_2022.jpg",
+      "wikidata": "Q2057055"
+    }
   },
   {
     "id": "kor-hoebe",
@@ -1175,7 +1450,15 @@
     "id": "lebbis",
     "naam": "Lebbis",
     "land": null,
-    "kleur": "roze"
+    "kleur": "roze",
+    "foto": {
+      "bestand": "/fotos/lebbis.jpg",
+      "maker": "Jeroen Komen",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Sibbel.jpg",
+      "wikidata": "Q2345069"
+    }
   },
   {
     "id": "leeuwarder-cabaret-festival",
@@ -1205,7 +1488,15 @@
     "id": "leon-van-der-zanden",
     "naam": "Leon van der Zanden",
     "land": null,
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "foto": {
+      "bestand": "/fotos/leon-van-der-zanden.jpg",
+      "maker": "ka.nti.ne",
+      "licentie": "CC BY-SA 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Leon_van_der_Zanden.jpg",
+      "wikidata": "Q2650480"
+    }
   },
   {
     "id": "lex-van-wieren",
@@ -1241,7 +1532,15 @@
     "id": "louise-korthals",
     "naam": "Louise Korthals",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "foto": {
+      "bestand": "/fotos/louise-korthals.jpg",
+      "maker": "Cloudatlas2019",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Dutch_singer_Louise_Korthals.jpg",
+      "wikidata": "Q15878858"
+    }
   },
   {
     "id": "lovella-telesford",
@@ -1283,7 +1582,15 @@
     "id": "marco-lopes",
     "naam": "Marco Lopes",
     "land": null,
-    "kleur": "groen"
+    "kleur": "groen",
+    "foto": {
+      "bestand": "/fotos/marco-lopes.jpg",
+      "maker": "Jody van Seggelen",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Marco_lopes-1540575973.jpg",
+      "wikidata": "Q50303966"
+    }
   },
   {
     "id": "margreet-dolman-brengt-warmte-en-dominee-gremdaat-wijst-de-weg",
@@ -1325,13 +1632,29 @@
     "id": "marlijn-weerdenburg",
     "naam": "Marlijn Weerdenburg",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "foto": {
+      "bestand": "/fotos/marlijn-weerdenburg.jpg",
+      "maker": "Daniel Willemsen",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Marlijn-weerdenburg-1424703668.jpg",
+      "wikidata": "Q13816240"
+    }
   },
   {
     "id": "marlon-kicken",
     "naam": "Marlon Kicken",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "foto": {
+      "bestand": "/fotos/marlon-kicken.jpg",
+      "maker": "Martijn van den Baar",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Marlon_Kicken.jpg",
+      "wikidata": "Q131725933"
+    }
   },
   {
     "id": "martijn-crins",
@@ -1343,13 +1666,29 @@
     "id": "martijn-koning",
     "naam": "Martijn Koning",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "foto": {
+      "bestand": "/fotos/martijn-koning.jpg",
+      "maker": "A.H.Koning",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Martijn_koning-1500280908.JPG",
+      "wikidata": "Q3039809"
+    }
   },
   {
     "id": "max-van-den-burg",
     "naam": "Max van den Burg",
     "land": null,
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "foto": {
+      "bestand": "/fotos/max-van-den-burg.jpg",
+      "maker": "Paulien Zomer",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Max_van_den_burg-1523698157.jpeg",
+      "wikidata": "Q15879241"
+    }
   },
   {
     "id": "mc-jeffrey-spalburg-en-dj-phantom",
@@ -1361,19 +1700,43 @@
     "id": "merijn-scholten",
     "naam": "Merijn Scholten",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "foto": {
+      "bestand": "/fotos/merijn-scholten.jpg",
+      "maker": "Vera de Kok",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Merijn_Scholten.JPG",
+      "wikidata": "Q2785385"
+    }
   },
   {
     "id": "micha-wertheim",
     "naam": "Micha Wertheim",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "foto": {
+      "bestand": "/fotos/micha-wertheim.jpg",
+      "maker": "De Balie",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Micha_Wertheim_-_2021.jpg",
+      "wikidata": "Q2169734"
+    }
   },
   {
     "id": "micky-overman",
     "naam": "Micky Overman",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "foto": {
+      "bestand": "/fotos/micky-overman.jpg",
+      "maker": "Bryan Berlin",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Micky_Overman_at_the_2024_Edinburgh_Festival_Fringe_2_(cropped).jpg",
+      "wikidata": "Q135197195"
+    }
   },
   {
     "id": "mike-zanting-en-koen-van-der-molen-en-mees-markus",
@@ -1397,7 +1760,15 @@
     "id": "mylou-frencken",
     "naam": "Mylou Frencken",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "foto": {
+      "bestand": "/fotos/mylou-frencken.jpg",
+      "maker": "Govert de Roos",
+      "licentie": "CC BY-SA 2.5 nl",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/2.5/nl/deed.en",
+      "bron": "https://commons.wikimedia.org/wiki/File:MylouFrenken.jpeg",
+      "wikidata": "Q2684118"
+    }
   },
   {
     "id": "myrthe-siebinga",
@@ -1427,7 +1798,15 @@
     "id": "najib-amhali",
     "naam": "Najib Amhali",
     "land": "NL",
-    "kleur": "paars"
+    "kleur": "paars",
+    "foto": {
+      "bestand": "/fotos/najib-amhali.jpg",
+      "maker": "Ministerie van Buitenlandse Zaken",
+      "licentie": "CC BY-SA 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Najib_Amhali%2C_2023.jpg",
+      "wikidata": "Q956755"
+    }
   },
   {
     "id": "naomi-seine",
@@ -1451,7 +1830,15 @@
     "id": "nesim-el-ahmadi",
     "naam": "Nesim El Ahmadi",
     "land": null,
-    "kleur": "roze"
+    "kleur": "roze",
+    "foto": {
+      "bestand": "/fotos/nesim-el-ahmadi.jpg",
+      "maker": "Renredam",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Nesim_El_Ahmadi.jpg",
+      "wikidata": "Q56511022"
+    }
   },
   {
     "id": "nhung-dam",
@@ -1475,7 +1862,15 @@
     "id": "nienke-plas",
     "naam": "Nienke Plas",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "foto": {
+      "bestand": "/fotos/nienke-plas.jpg",
+      "maker": "& C",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:NienkePlas2019.jpg",
+      "wikidata": "Q51159899"
+    }
   },
   {
     "id": "nieuwjaars-cabarestafette",
@@ -1493,7 +1888,15 @@
     "id": "nilgun-yerli",
     "naam": "Nilgün Yerli",
     "land": null,
-    "kleur": "roze"
+    "kleur": "roze",
+    "foto": {
+      "bestand": "/fotos/nilgun-yerli.jpg",
+      "maker": "Roel1943",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Nilgun_Yerli.JPG",
+      "wikidata": "Q2524931"
+    }
   },
   {
     "id": "nour-hajjar-live-in-amsterdam",
@@ -1523,7 +1926,15 @@
     "id": "patrick-laureij",
     "naam": "Patrick Laureij",
     "land": "NL",
-    "kleur": "groen"
+    "kleur": "groen",
+    "foto": {
+      "bestand": "/fotos/patrick-laureij.jpg",
+      "maker": "DWDD",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Patrick_Laureij_(2017).jpg",
+      "wikidata": "Q2581911"
+    }
   },
   {
     "id": "patrick-nederkoorn",
@@ -1535,7 +1946,15 @@
     "id": "paul-haenen",
     "naam": "Paul Haenen",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "foto": {
+      "bestand": "/fotos/paul-haenen.jpg",
+      "maker": "Paul2",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Margreetdolman2013.jpg",
+      "wikidata": "Q1960272"
+    }
   },
   {
     "id": "paul-haenen-en-dammie-van-geest",
@@ -1547,19 +1966,43 @@
     "id": "pepijn-schoneveld",
     "naam": "Pepijn Schoneveld",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "foto": {
+      "bestand": "/fotos/pepijn-schoneveld.jpg",
+      "maker": "Casper Koster",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Pepijn_schoneveld-1537263876.jpg",
+      "wikidata": "Q20722903"
+    }
   },
   {
     "id": "peter-heerschop",
     "naam": "Peter Heerschop",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "foto": {
+      "bestand": "/fotos/peter-heerschop.jpg",
+      "maker": "Wouter Kiel",
+      "licentie": "CC BY 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Peter_Heerschop.jpg",
+      "wikidata": "Q4296134"
+    }
   },
   {
     "id": "peter-pannekoek",
     "naam": "Peter Pannekoek",
     "land": null,
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "foto": {
+      "bestand": "/fotos/peter-pannekoek.jpg",
+      "maker": "DWDD",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Peter_Pannekoek_(2017).jpg",
+      "wikidata": "Q2185402"
+    }
   },
   {
     "id": "piet-en-matties-live",
@@ -1583,7 +2026,15 @@
     "id": "pieter-jouke",
     "naam": "Pieter Jouke",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "foto": {
+      "bestand": "/fotos/pieter-jouke.jpg",
+      "maker": "Vera de Kok",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Pieter_Jouke_-_2025.jpg",
+      "wikidata": "Q2350598"
+    }
   },
   {
     "id": "pieter-jouke-en-ronald-snijders",
@@ -1595,7 +2046,15 @@
     "id": "pieter-verelst",
     "naam": "Pieter Verelst",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "foto": {
+      "bestand": "/fotos/pieter-verelst.jpg",
+      "maker": "Johannes Vande Voorde",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Pieter_verelst-1590519641.jpg",
+      "wikidata": "Q19587862"
+    }
   },
   {
     "id": "plien",
@@ -1631,13 +2090,29 @@
     "id": "raoul-heertje",
     "naam": "Raoul Heertje",
     "land": null,
-    "kleur": "limoen"
+    "kleur": "limoen",
+    "foto": {
+      "bestand": "/fotos/raoul-heertje.jpg",
+      "maker": "Nationaal Historisch Museum (Fred Ernst)",
+      "licentie": "CC BY-SA 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Raoul_Heertje.jpg",
+      "wikidata": "Q2101598"
+    }
   },
   {
     "id": "rayen-panday",
     "naam": "Rayen Panday",
     "land": null,
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "foto": {
+      "bestand": "/fotos/rayen-panday.jpg",
+      "maker": "Terry Pluijmert",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Rayen_panday-1559841148.jpeg",
+      "wikidata": "Q22075579"
+    }
   },
   {
     "id": "rayen-panday-en-friends",
@@ -1685,13 +2160,29 @@
     "id": "richard-groenendijk",
     "naam": "Richard Groenendijk",
     "land": null,
-    "kleur": "groen"
+    "kleur": "groen",
+    "foto": {
+      "bestand": "/fotos/richard-groenendijk.jpg",
+      "maker": "Dik Nicolai. De rechten op deze foto zijn eigendom van Richard Groenendijk Producties",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Richard_groenendijk-1465882038.jpg",
+      "wikidata": "Q2740756"
+    }
   },
   {
     "id": "ricky-koole",
     "naam": "Ricky Koole",
     "land": null,
-    "kleur": "roze"
+    "kleur": "roze",
+    "foto": {
+      "bestand": "/fotos/ricky-koole.jpg",
+      "maker": "Roel Wijnants",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Ricky_Koole_(2010).jpg",
+      "wikidata": "Q2383048"
+    }
   },
   {
     "id": "ricky-risolles",
@@ -1703,7 +2194,15 @@
     "id": "rob-kamphues",
     "naam": "Rob Kamphues",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "foto": {
+      "bestand": "/fotos/rob-kamphues.jpg",
+      "maker": "tup wanders from Groningen, The Netherlands",
+      "licentie": "CC BY 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Rob-Kamphues_-_crop.jpg",
+      "wikidata": "Q2576069"
+    }
   },
   {
     "id": "rob-kemps",
@@ -1739,7 +2238,15 @@
     "id": "roel-c-verburg",
     "naam": "Roel C. Verburg",
     "land": null,
-    "kleur": "groen"
+    "kleur": "groen",
+    "foto": {
+      "bestand": "/fotos/roel-c-verburg.jpg",
+      "maker": "Wilron Schonenberg / Roel C. Verburg",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Roel-c-verburg-de-naam-zegt-het-al-1323877055.jpg",
+      "wikidata": "Q2171809"
+    }
   },
   {
     "id": "rogier-bak",
@@ -1775,7 +2282,15 @@
     "id": "roue-verveer",
     "naam": "Roué Verveer",
     "land": "NL",
-    "kleur": "paars"
+    "kleur": "paars",
+    "foto": {
+      "bestand": "/fotos/roue-verveer.jpg",
+      "maker": "ATV-Networks Suriname",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Rou%C3%A9_Verveer_interview_(cropped).png",
+      "wikidata": "Q2437784"
+    }
   },
   {
     "id": "rundfunk",
@@ -1788,7 +2303,15 @@
     "id": "ruud-smulders",
     "naam": "Ruud Smulders",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "foto": {
+      "bestand": "/fotos/ruud-smulders.jpg",
+      "maker": "Thomas de Wit",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Ruud_smulders-1648318253.jpg",
+      "wikidata": "Q105279202"
+    }
   },
   {
     "id": "said-el-hassnaoui",
@@ -1812,13 +2335,29 @@
     "id": "sanne-wallis-de-vries",
     "naam": "Sanne Wallis de Vries",
     "land": "NL",
-    "kleur": "rood"
+    "kleur": "rood",
+    "foto": {
+      "bestand": "/fotos/sanne-wallis-de-vries.jpg",
+      "maker": "cultuurinactie",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:SanneWallisDeVriesAngelaMerkel2020.jpg",
+      "wikidata": "Q2171998"
+    }
   },
   {
     "id": "sara-kroos",
     "naam": "Sara Kroos",
     "land": "NL",
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "foto": {
+      "bestand": "/fotos/sara-kroos.jpg",
+      "maker": "Jos van Zetten from Amsterdam, the Netherlands",
+      "licentie": "CC BY 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Sara_Kroos.jpg",
+      "wikidata": "Q2863323"
+    }
   },
   {
     "id": "schater-cabaretfestival",
@@ -1830,7 +2369,15 @@
     "id": "sederginne",
     "naam": "Sederginne",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "foto": {
+      "bestand": "/fotos/sederginne.jpg",
+      "maker": "Ronn Boef",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Sederginne_performs_Send_in_the_clowns_(2024)_-_4.jpg",
+      "wikidata": "Q103958353"
+    }
   },
   {
     "id": "selma-visscher",
@@ -1860,7 +2407,15 @@
     "id": "sjaak-bral",
     "naam": "Sjaak Bral",
     "land": null,
-    "kleur": "groen"
+    "kleur": "groen",
+    "foto": {
+      "bestand": "/fotos/sjaak-bral.jpg",
+      "maker": "Foto Buro Brabant, Congres in Beeld",
+      "licentie": "CC BY 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:SjaakBral2012.jpg",
+      "wikidata": "Q2018131"
+    }
   },
   {
     "id": "soraya-de-bakker",
@@ -1878,7 +2433,15 @@
     "id": "stefan-de-kogel",
     "naam": "Stefan de Kogel",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "foto": {
+      "bestand": "/fotos/stefan-de-kogel.jpg",
+      "maker": "Xandra vellekoop",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Stefan_de_kogel-1507124715.jpg",
+      "wikidata": "Q1808139"
+    }
   },
   {
     "id": "stefan-hendrikx",
@@ -1902,7 +2465,15 @@
     "id": "steven-brunswijk",
     "naam": "Steven Brunswijk",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "foto": {
+      "bestand": "/fotos/steven-brunswijk.jpg",
+      "maker": "Steven Brunswijk",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Steven_brunswijk_-1513241147.jpg",
+      "wikidata": "Q43480294"
+    }
   },
   {
     "id": "stichting-altays",
@@ -1962,7 +2533,15 @@
     "id": "theo-maassen",
     "naam": "Theo Maassen",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "foto": {
+      "bestand": "/fotos/theo-maassen.jpg",
+      "maker": "Henck van Dijck",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Theo-maassen-1342437523.jpg",
+      "wikidata": "Q1989503"
+    }
   },
   {
     "id": "thijs-kemperink",
@@ -1992,7 +2571,15 @@
     "id": "thomas-van-luyn",
     "naam": "Thomas van Luyn",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "foto": {
+      "bestand": "/fotos/thomas-van-luyn.jpg",
+      "maker": "Jos van Zetten from Amsterdam, the Netherlands",
+      "licentie": "CC BY 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Thomas_van_Luyn.jpg",
+      "wikidata": "Q1851767"
+    }
   },
   {
     "id": "tilburgs-cabaret-festival-2027",
@@ -2022,7 +2609,15 @@
     "id": "tineke-schouten",
     "naam": "Tineke Schouten",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "foto": {
+      "bestand": "/fotos/tineke-schouten.jpg",
+      "maker": "Jorn Nijhuis",
+      "licentie": "CC BY 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:TinekeSchouten.jpg",
+      "wikidata": "Q2017189"
+    }
   },
   {
     "id": "tip-van-de-lindenberg",
@@ -2040,13 +2635,29 @@
     "id": "tobi-kooiman",
     "naam": "Tobi Kooiman",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "foto": {
+      "bestand": "/fotos/tobi-kooiman.jpg",
+      "maker": "Cameretten Festival",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:TobiKooiman2019.jpg",
+      "wikidata": "Q84571325"
+    }
   },
   {
     "id": "tolga-cevik",
     "naam": "Tolga Çevik",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "foto": {
+      "bestand": "/fotos/tolga-cevik.jpg",
+      "maker": "Wikimedia Commons",
+      "licentie": "CC BY-SA 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Tolga_%C3%87evik.jpg",
+      "wikidata": "Q936627"
+    }
   },
   {
     "id": "utrechts-international-comedy-festival",
@@ -2058,13 +2669,29 @@
     "id": "valentina-toth",
     "naam": "Valentina Tóth",
     "land": null,
-    "kleur": "groen"
+    "kleur": "groen",
+    "foto": {
+      "bestand": "/fotos/valentina-toth.jpg",
+      "maker": "Valentinatoth",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Valentina_Toth_(cropped).jpg",
+      "wikidata": "Q67356577"
+    }
   },
   {
     "id": "van-der-laan-en-woe",
     "naam": "Van der Laan & Woe",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "foto": {
+      "bestand": "/fotos/van-der-laan-en-woe.jpg",
+      "maker": "Partij van de Arbeid",
+      "licentie": "CC BY 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Geen_familie_duo.jpg",
+      "wikidata": "Q2616727"
+    }
   },
   {
     "id": "van-vleuten-en-van-muiswinkel",
@@ -2094,7 +2721,15 @@
     "id": "viggo-waas",
     "naam": "Viggo Waas",
     "land": null,
-    "kleur": "limoen"
+    "kleur": "limoen",
+    "foto": {
+      "bestand": "/fotos/viggo-waas.jpg",
+      "maker": "Wouter Kiel",
+      "licentie": "CC BY 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Viggo_Waas.jpg",
+      "wikidata": "Q2320892"
+    }
   },
   {
     "id": "viggo-waas-en-eddie-b-wahr-en-kees-van-der-vooren",
@@ -2136,7 +2771,15 @@
     "id": "wim-helsen",
     "naam": "Wim Helsen",
     "land": null,
-    "kleur": "roze"
+    "kleur": "roze",
+    "foto": {
+      "bestand": "/fotos/wim-helsen.jpg",
+      "maker": "Pepijn De Paepe",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Wim_Helsen.jpg",
+      "wikidata": "Q1946597"
+    }
   },
   {
     "id": "wina-ricardo",
@@ -2154,13 +2797,29 @@
     "id": "yentl-en-de-boer",
     "naam": "Yentl en de Boer",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "foto": {
+      "bestand": "/fotos/yentl-en-de-boer.jpg",
+      "maker": "Marloes Bosch Fotografie",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Yentl_en_de_Boer.jpg",
+      "wikidata": "Q17429607"
+    }
   },
   {
     "id": "yora-rienstra",
     "naam": "Yora Rienstra",
     "land": null,
-    "kleur": "groen"
+    "kleur": "groen",
+    "foto": {
+      "bestand": "/fotos/yora-rienstra.jpg",
+      "maker": "Olivier Schneider",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Yora_Rienstra.jpg",
+      "wikidata": "Q2410047"
+    }
   },
   {
     "id": "yunus-aktas",

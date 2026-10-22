@@ -81,6 +81,9 @@ export function loadData(dir, { today }) {
     if (a.land != null && !LANDEN[a.land]) errors.push(`artiest ${a.id}: onbekend land "${a.land}"`);
     if (!KLEUREN[a.kleur]) errors.push(`artiest ${a.id}: onbekende kleur "${a.kleur}"`);
     if (a.vorm != null && !VORMEN.includes(a.vorm)) errors.push(`artiest ${a.id}: onbekende vorm "${a.vorm}"`);
+    // Een foto mag alleen met naamsvermelding, licentie en bron.
+    if (a.foto && typeof a.foto === "object" && !(a.foto.bestand && a.foto.maker && a.foto.licentie && a.foto.bron)) errors.push(`artiest ${a.id}: foto zonder maker, licentie of bron`);
+    if (a.foto?.bestand && !existsSync(join(dir, "..", "public", a.foto.bestand))) errors.push(`artiest ${a.id}: fotobestand ${a.foto.bestand} ontbreekt`);
   }
   for (const t of theaters) {
     if (!LANDEN[t.land]) errors.push(`theater ${t.id}: onbekend land "${t.land}"`);

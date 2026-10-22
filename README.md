@@ -18,6 +18,10 @@ Elk item heeft een vaste `id` van kleine letters en streepjes, zoals `claudia-de
 
 Een artiest kan optioneel `"vorm": "groep"` of `"vorm": "persoon"` hebben. Dat bepaalt of zoekmachines de artiest als groep of als persoon zien. Zonder `vorm` raadt de site het aan de naam (bijvoorbeeld "&" of "en" betekent een duo).
 
+## Foto's van artiesten
+
+`npm run fotos` zoekt rechtenvrije foto's: via het Wikipedia-artikel van de artiest (alleen als dat over cabaret of comedy gaat) naar de hoofdafbeelding op Wikidata, en dan de licentie op Wikimedia Commons. Alleen CC0, publiek domein, CC BY en CC BY-SA worden gebruikt. De foto komt in `public/fotos/`, en het veld `foto` in `data/artiesten.json` bewaart maker, licentie en bron; die staan als naamsvermelding onder de foto. Bekijk nieuwe foto's altijd zelf: zet `"foto": false` bij een artiest als de foto niet klopt, dan zoekt het script er nooit meer een.
+
 ## Festivals
 
 Een festival heeft zelf geen speeldata. De site zoekt ze erbij: alle voorstellingen van de artiesten in `artiesten` (bijvoorbeeld de "artiest" Cameretten) en alle voorstellingen waarvan de titel een van de `titels` bevat. Elk festival krijgt een pagina op `/festivals/<id>/`. Een festival zonder aankomende speeldata staat onderaan het overzicht onder "Nog geen speeldata bekend".
