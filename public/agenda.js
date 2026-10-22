@@ -1,5 +1,5 @@
-// Filters op de speellijst en knoppen voor de affichewand.
-// De pagina werkt ook zonder dit script: dan staat de volledige lijst er.
+// Filters op speellijsten, het zoekveld op de artiestenpagina en de knoppen van de affichewand.
+// Alle pagina's werken ook zonder dit script: dan staat de volledige lijst er.
 (() => {
   const today = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" });
 
@@ -31,35 +31,53 @@
     sync();
   }
 
-  // ---------- Filters ----------
+  // ---------- Artiesten van A tot Z ----------
+  const zoekArtiest = document.getElementById("f-artiest");
+  if (zoekArtiest) {
+    const items = [...document.querySelectorAll("#az li[data-naam]")];
+    const leeg = document.getElementById("az-leeg");
+    const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+    zoekArtiest.addEventListener("input", () => {
+      const q = norm(zoekArtiest.value.trim());
+      let n = 0;
+      for (const li of items) {
+        const ok = !q || norm(li.dataset.naam).includes(q);
+        li.hidden = !ok;
+        if (ok) n++;
+      }
+      document.querySelectorAll(".az-group").forEach((g) => { g.hidden = !g.querySelector("li:not([hidden])"); });
+      leeg.hidden = n > 0;
+    });
+  }
+
+  // ---------- Filters op een speellijst ----------
   const form = document.getElementById("filters");
   if (!form) return;
   form.hidden = false;
 
   const rows = [...document.querySelectorAll("#gigs .gig")].filter((r) => !r.hidden);
-  const q = document.getElementById("f-q");
-  const maand = document.getElementById("f-maand");
-  const plaats = document.getElementById("f-plaats");
-  const genre = document.getElementById("f-genre");
+  const veld = (id) => document.getElementById(id);
+  const selects = { maand: veld("f-maand"), plaats: veld("f-plaats"), genre: veld("f-genre") };
+  const q = veld("f-q");
   const chips = [...form.querySelectorAll(".chip")];
-  const resultLine = document.getElementById("result-line");
-  const empty = document.getElementById("empty");
+  const resultLine = veld("result-line");
+  const empty = veld("empty");
 
   // Filterstand staat in de URL, zodat je een gefilterde lijst kunt delen.
   const params = new URLSearchParams(location.search);
-  const state = {
-    q: params.get("q") || "",
-    land: params.get("land") || "",
-    maand: params.get("maand") || "",
-    plaats: params.get("plaats") || "",
-    genre: params.get("genre") || "",
-  };
-  const setSelect = (el, v) => { el.value = v; if (el.value !== v) el.value = ""; return el.value; };
-  q.value = state.q;
-  state.maand = setSelect(maand, state.maand);
-  state.plaats = setSelect(plaats, state.plaats);
-  state.genre = setSelect(genre, state.genre);
-  if (!["", "NL", "BE"].includes(state.land)) state.land = "";
+  const state = { q: params.get("q") || "", land: params.get("land") || "", maand: "", plaats: "", genre: "" };
+  for (const [k, el] of Object.entries(selects)) {
+    if (!el) continue;
+    el.value = params.get(k) || "";
+    if (el.value !== (params.get(k) || "")) el.value = "";
+    state[k] = el.value;
+  }
+  if (!chips.length || !["", "NL", "BE"].includes(state.land)) state.land = "";
+  if (q) q.value = state.q;
+
+  const telling = (shown) => shown === rows.length
+    ? `${rows.length === 1 ? "1 voorstelling" : `Alle ${rows.length} voorstellingen`}`
+    : `${shown} van ${rows.length} voorstellingen`;
 
   function apply() {
     const needle = state.q.trim().toLowerCase();
@@ -76,32 +94,30 @@
     }
     syncGroups();
     chips.forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.land === state.land)));
-    resultLine.textContent = shown === rows.length
-      ? `Alle ${rows.length} voorstellingen`
-      : `${shown} van ${rows.length} voorstellingen`;
-    empty.hidden = shown > 0;
+    resultLine.textContent = telling(shown);
+    if (empty) empty.hidden = shown > 0;
 
     const p = new URLSearchParams();
     for (const [k, v] of Object.entries(state)) if (v.trim()) p.set(k, v.trim());
     const qs = p.toString();
-    history.replaceState(null, "", qs ? `?${qs}#agenda` : location.pathname);
+    history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
   }
 
   let timer;
-  q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { state.q = q.value; apply(); }, 150); });
-  maand.addEventListener("change", () => { state.maand = maand.value; apply(); });
-  plaats.addEventListener("change", () => { state.plaats = plaats.value; apply(); });
-  genre.addEventListener("change", () => { state.genre = genre.value; apply(); });
+  if (q) q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { state.q = q.value; apply(); }, 150); });
+  for (const [k, el] of Object.entries(selects)) if (el) el.addEventListener("change", () => { state[k] = el.value; apply(); });
   chips.forEach((c) => c.addEventListener("click", () => { state.land = c.dataset.land; apply(); }));
   form.addEventListener("submit", (e) => e.preventDefault());
-  document.getElementById("reset").addEventListener("click", () => {
+  const reset = veld("reset");
+  if (reset) reset.addEventListener("click", () => {
     Object.keys(state).forEach((k) => (state[k] = ""));
-    q.value = maand.value = plaats.value = genre.value = "";
+    if (q) q.value = "";
+    Object.values(selects).forEach((el) => { if (el) el.value = ""; });
     apply();
-    q.focus();
+    if (q) q.focus();
   });
 
   // Alleen de URL bijwerken als er al een filter in stond; anders de lijst laten zoals hij is.
   if (location.search) apply();
-  else resultLine.textContent = `Alle ${rows.length} voorstellingen`;
+  else resultLine.textContent = telling(rows.length);
 })();

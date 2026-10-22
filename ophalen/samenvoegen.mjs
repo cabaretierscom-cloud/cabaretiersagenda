@@ -100,6 +100,13 @@ function zelfdeTitel(x, y) {
 }
 
 function zorgVoorVoorstelling(r, artiestIdsVanRecord, theaterId) {
+  // Sommige zalen geven alleen de artiestnaam als titel ("Dolf Jansen"). Heeft de artiest precies
+  // één voorstelling met een echte titel, dan hoort deze avond daarbij.
+  const namen = artiestIdsVanRecord.map((a) => artiesten.find((x) => x.id === a).naam).join(" ");
+  if (artiestIdsVanRecord.length && slug(r.titel) === slug(namen)) {
+    const echte = voorstellingen.filter((v) => zelfdeSet(v.artiesten, artiestIdsVanRecord) && slug(v.titel) !== slug(namen));
+    if (echte.length === 1) return echte[0].id;
+  }
   const match = voorstellingen.find((v) => {
     if (!zelfdeSet(v.artiesten, artiestIdsVanRecord)) return false;
     if (!artiestIdsVanRecord.length && v.theater !== theaterId) return false;
