@@ -69,7 +69,7 @@ export function createTemplates(db) {
   const showLink = (vid, tekst) => voorstellingPad.has(vid) ? `<a href="${voorstellingPad.get(vid)}">${tekst}</a>` : tekst;
 
 
-  function layout({ title, description = SITE.description, path, section, body, jsonLd }) {
+  function layout({ title, description = SITE.description, path, section, body, schema }) {
     const nav = [
       ["agenda", "/agenda/", "Agenda"],
       ["artiesten", "/artiesten/", "Artiesten"],
@@ -96,7 +96,7 @@ export function createTemplates(db) {
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
-${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, "\\u003c")}</script>` : ""}
+${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title, description, path, ...schema })).replace(/</g, "\\u003c")}</script>` : ""}
 </head>
 <body>
 <a class="skip" href="#main">Naar de inhoud</a>
@@ -167,25 +167,96 @@ ${body}
     ).join("");
   }
 
+  // ---------- Gestructureerde gegevens (schema.org, JSON-LD) ----------
+  // Elke pagina krijgt één @graph: de organisatie, de website, de pagina zelf, het kruimelpad
+  // en wat er op de pagina staat (voorstellingen, artiest, zaal, lijsten).
+
+  const URL = (pad) => SITE.url + pad;
+  const ORG_ID = URL("/#organisatie"), SITE_ID = URL("/#website");
+  const EVENT_TYPE = {
+    cabaret: "TheaterEvent", "muzikaal-cabaret": "TheaterEvent", kleinkunst: "TheaterEvent",
+    oudejaarsconference: "TheaterEvent", theaterkomedie: "TheaterEvent",
+    "stand-up": "ComedyEvent", "open-mic": "ComedyEvent", improvisatie: "ComedyEvent", festival: "Festival",
+  };
+  const ZAAL_TYPE = { theater: "PerformingArtsTheater", comedyclub: "ComedyClub", café: "BarOrPub" };
+  // Duo's, gezelschappen en festivals zijn een PerformingGroup; met `vorm` in artiesten.json kan dat per artiest.
+  const isGroep = (a) => a.vorm ? a.vorm === "groep"
+    : / & | en |\b(festival|club|collectief|comedians|kwis|cabarestafette|brothers|theatertroep|stichting|agency|producties|theaterproducties)\b/i.test(` ${a.naam} `);
+
+  const artiestLd = (id) => {
+    const a = A.get(id);
+    return { "@type": isGroep(a) ? "PerformingGroup" : "Person", "@id": URL(`/artiesten/${id}/#artiest`), name: a.naam, url: URL(`/artiesten/${id}/`) };
+  };
+  const zaalLd = (id) => {
+    const t = T.get(id);
+    return {
+      "@type": ZAAL_TYPE[t.soort] || "EventVenue", "@id": URL(`/theaters/${id}/#zaal`), name: t.naam, url: URL(`/theaters/${id}/`),
+      ...(t.website ? { sameAs: t.website } : {}),
+      address: { "@type": "PostalAddress", addressLocality: t.plaats, addressCountry: t.land },
+    };
+  };
+  const plaatsLd = (p) => ({ "@type": "City", name: p, containedInPlace: { "@type": "Country", name: LANDEN[landVanPlaats(p)] } });
+  const eventId = (g) => URL(`${voorstellingPad.get(g.voorstelling) || `/theaters/${g.theater}/`}#${g.datum}${g.tijd ? "-" + g.tijd.replace(":", "") : ""}-${g.theater}`);
+
   function eventLd(g) {
     const v = V.get(g.voorstelling), t = T.get(g.theater);
     const status = { geannuleerd: "EventCancelled", verplaatst: "EventPostponed" }[g.status] || "EventScheduled";
+    const titel = echteTitel(g.voorstelling);
     return {
-      "@type": "Event",
-      name: `${artistNames(g.voorstelling)}: ${v.titel}`,
+      "@type": EVENT_TYPE[v.genre] || "Event",
+      "@id": eventId(g),
+      name: v.artiesten.length ? `${artistNames(g.voorstelling)}${titel ? `: ${titel}` : ""}` : v.titel,
+      description: `${GENRES[v.genre]}${v.artiesten.length ? ` van ${artistNames(g.voorstelling)}` : ""} in ${t.naam}, ${t.plaats}.`,
       startDate: isoWithOffset(g.datum, g.tijd),
       eventStatus: `https://schema.org/${status}`,
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      location: {
-        "@type": "Place",
-        name: t.naam,
-        address: { "@type": "PostalAddress", addressLocality: t.plaats, addressCountry: t.land },
+      inLanguage: t.land === "BE" ? "nl-BE" : "nl-NL",
+      location: zaalLd(g.theater),
+      ...(v.artiesten.length ? { performer: v.artiesten.map(artiestLd) } : {}),
+      offers: {
+        "@type": "Offer", url: g.bron,
+        ...(g.status === "uitverkocht" ? { availability: "https://schema.org/SoldOut" } : {}),
       },
-      performer: v.artiesten.map((a) => ({ "@type": "Person", name: A.get(a).naam })),
-      url: voorstellingPad.has(g.voorstelling) ? SITE.url + voorstellingPad.get(g.voorstelling) : g.bron,
+      url: voorstellingPad.has(g.voorstelling) ? URL(voorstellingPad.get(g.voorstelling)) : URL(`/theaters/${g.theater}/`),
     };
   }
-  const eventsLd = (list) => ({ "@context": "https://schema.org", "@graph": list.slice(0, 100).map(eventLd) });
+  // Google leest per pagina een beperkt aantal evenementen; de eerste 100 volstaan.
+  const eventsLd = (list) => list.slice(0, 100).map(eventLd);
+
+  const lijstLd = (items) => ({
+    "@type": "ItemList", numberOfItems: items.length,
+    itemListElement: items.map(([naam, pad], i) => ({ "@type": "ListItem", position: i + 1, name: naam, url: URL(pad) })),
+  });
+
+  // schema = { type, kruimels: [[naam, pad], ...], over, hoofd, extra: [...] }
+  function paginaLd({ title, description, path, type = "WebPage", kruimels = [], over, hoofd, extra = [] }) {
+    const paginaUrl = URL(path);
+    const pad = [["Cabaretiers.com", "/"], ...kruimels];
+    return {
+      "@context": "https://schema.org",
+      "@graph": [
+        { "@type": "Organization", "@id": ORG_ID, name: SITE.name, url: URL("/"), logo: { "@type": "ImageObject", url: URL("/logo.svg") } },
+        {
+          "@type": "WebSite", "@id": SITE_ID, name: SITE.name, url: URL("/"), inLanguage: "nl", description: SITE.description,
+          publisher: { "@id": ORG_ID },
+          potentialAction: { "@type": "SearchAction", target: { "@type": "EntryPoint", urlTemplate: URL("/agenda/?q={search_term_string}") }, "query-input": "required name=search_term_string" },
+        },
+        {
+          "@type": type, "@id": paginaUrl + "#pagina", url: paginaUrl, name: title || SITE.name, description, inLanguage: "nl",
+          isPartOf: { "@id": SITE_ID },
+          ...(pad.length > 1 ? { breadcrumb: { "@id": paginaUrl + "#kruimelpad" } } : {}),
+          ...(over ? { about: over } : {}),
+          ...(hoofd ? { mainEntity: hoofd } : {}),
+          dateModified: db.lastFetched || db.today,
+        },
+        ...(pad.length > 1 ? [{
+          "@type": "BreadcrumbList", "@id": paginaUrl + "#kruimelpad",
+          itemListElement: pad.map(([naam, p], i) => ({ "@type": "ListItem", position: i + 1, name: naam, item: URL(p) })),
+        }] : []),
+        ...extra,
+      ],
+    };
+  }
 
   // ---------- Overzichten van de gegevens ----------
 
@@ -352,7 +423,7 @@ ${body}
   <div class="city-chips">${grootstePlaatsen.map((p) =>
     `<a href="/plaatsen/${plaatsId(p)}/">${esc(p)} <span>${perPlaats(p).length}</span></a>`).join("")}</div>
 </section>`;
-    return layout({ path: "/", section: null, body, jsonLd: eventsLd(dezeWeek) });
+    return layout({ path: "/", section: null, body, schema: { extra: eventsLd(dezeWeek) } });
   }
 
   function agendaIndex() {
@@ -366,7 +437,7 @@ ${body}
       ${leegBlok}
       <p class="more"><a class="btn" href="/agenda/${maandId(maanden[0])}/">Verder in ${maandNaam(maanden[0])}</a></p>
     </section>`;
-    return layout({ title: "Agenda", description: "Alle aankomende cabaret- en comedyvoorstellingen in Nederland en België, per maand.", path: "/agenda/", section: "agenda", body, jsonLd: eventsLd(komend) });
+    return layout({ title: "Agenda", description: "Alle aankomende cabaret- en comedyvoorstellingen in Nederland en België, per maand.", path: "/agenda/", section: "agenda", body, schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"]], extra: eventsLd(komend) } });
   }
 
   function agendaMaand(m) {
@@ -381,7 +452,7 @@ ${body}
       ${leegBlok}
       <p class="pager">${vorige ? `<a class="btn ghost" href="/agenda/${maandId(vorige)}/">${ICON.prev}${maandNaam(vorige)}</a>` : "<span></span>"}${volgende ? `<a class="btn ghost" href="/agenda/${maandId(volgende)}/">${maandNaam(volgende)}${ICON.next}</a>` : ""}</p>
     </section>`;
-    return layout({ title: `Cabaret en comedy in ${maandNaam(m)}`, description: `Alle ${list.length} cabaret- en comedyvoorstellingen in ${maandNaam(m)} in Nederland en België.`, path: `/agenda/${maandId(m)}/`, section: "agenda", body, jsonLd: eventsLd(list) });
+    return layout({ title: `Cabaret en comedy in ${maandNaam(m)}`, description: `Alle ${list.length} cabaret- en comedyvoorstellingen in ${maandNaam(m)} in Nederland en België.`, path: `/agenda/${maandId(m)}/`, section: "agenda", body, schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], [maandNaam(m), `/agenda/${maandId(m)}/`]], extra: eventsLd(list) } });
   }
 
   function plaatsIndex() {
@@ -397,7 +468,7 @@ ${body}
       <div class="block-head"><h1 id="t">Plaatsen</h1><p>Waar is cabaret en comedy te zien?</p></div>
       <div class="venues">${kolommen}</div>
     </section>`;
-    return layout({ title: "Plaatsen", description: "Cabaret en comedy per plaats in Nederland en België.", path: "/plaatsen/", section: "plaatsen", body });
+    return layout({ title: "Plaatsen", description: "Cabaret en comedy per plaats in Nederland en België.", path: "/plaatsen/", section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"]], hoofd: lijstLd(plaatsen.map((p) => [p, `/plaatsen/${plaatsId(p)}/`])) } });
   }
 
   function plaatsPagina(p) {
@@ -413,7 +484,7 @@ ${body}
         <div id="gigs">${monthGroups(list)}</div>
         ${leegBlok}
       </div>`;
-    return layout({ title: `Cabaret en comedy in ${p}`, description: `Alle ${list.length} aankomende cabaret- en comedyvoorstellingen in ${p}: ${zalen.map((t) => t.naam).join(", ")}.`, path: `/plaatsen/${plaatsId(p)}/`, section: "plaatsen", body, jsonLd: eventsLd(list) });
+    return layout({ title: `Cabaret en comedy in ${p}`, description: `Alle ${list.length} aankomende cabaret- en comedyvoorstellingen in ${p}: ${zalen.map((t) => t.naam).join(", ")}.`, path: `/plaatsen/${plaatsId(p)}/`, section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"], [p, `/plaatsen/${plaatsId(p)}/`]], over: plaatsLd(p), extra: eventsLd(list) } });
   }
 
   function artistIndex() {
@@ -444,7 +515,7 @@ ${body}
       </section>`).join("")}</div>
       <p class="empty" id="az-leeg" hidden>Geen artiest gevonden met deze naam.</p>
     </section>`;
-    return layout({ title: "Artiesten", description: "Alle cabaretiers en comedians met aankomende voorstellingen in Nederland en België, van A tot Z.", path: "/artiesten/", section: "artiesten", body });
+    return layout({ title: "Artiesten", description: "Alle cabaretiers en comedians met aankomende voorstellingen in Nederland en België, van A tot Z.", path: "/artiesten/", section: "artiesten", body, schema: { type: "CollectionPage", kruimels: [["Artiesten", "/artiesten/"]], hoofd: lijstLd([...artiestenMetData].sort((x, y) => x.a.naam.localeCompare(y.a.naam, "nl")).map(({ a }) => [a.naam, `/artiesten/${a.id}/`])) } });
   }
 
   // ---------- Tekst onder artiest- en theaterpagina's ----------
@@ -568,7 +639,7 @@ ${body}
     const desc = list.length
       ? kort(`${a.naam} live: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(cityCount, "plaats", "plaatsen")}${titles.length ? `, met ${titles.slice(0, 2).join(" en ")}` : ""}. Eerstvolgende op ${fmt.full(list[0].datum)}. Bekijk alle speeldata.`)
       : `${a.naam} op Cabaretiers.com.`;
-    return layout({ title: `${a.naam}: tournee en speeldata`, description: desc, path: `/artiesten/${a.id}/`, section: "artiesten", body, jsonLd: list.length ? eventsLd(list) : null });
+    return layout({ title: `${a.naam}: tournee en speeldata`, description: desc, path: `/artiesten/${a.id}/`, section: "artiesten", body, schema: { type: "ProfilePage", kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`]], hoofd: { "@id": artiestLd(a.id)["@id"] }, extra: [artiestLd(a.id), ...eventsLd(list)] } });
   }
 
   function voorstellingTekst(vid, list) {
@@ -616,7 +687,16 @@ ${body}
         ${voorstellingTekst(vid, list)}
       </div>`;
     const desc = kort(`${v.titel} van ${artistNames(vid)}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden, "plaats", "plaatsen")}. Eerstvolgende op ${fmt.full(list[0].datum)}. Bekijk alle speeldata.`);
-    return layout({ title: `${v.titel} van ${artistNames(vid)}: speeldata`, description: desc, path: voorstellingPad.get(vid), section: "artiesten", body, jsonLd: eventsLd(list) });
+    return layout({ title: `${v.titel} van ${artistNames(vid)}: speeldata`, description: desc, path: voorstellingPad.get(vid), section: "artiesten", body, schema: {
+      kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`], [v.titel, voorstellingPad.get(vid)]],
+      hoofd: { "@id": URL(voorstellingPad.get(vid) + "#voorstelling") },
+      extra: [{
+        "@type": "EventSeries", "@id": URL(voorstellingPad.get(vid) + "#voorstelling"), name: v.titel, url: URL(voorstellingPad.get(vid)),
+        description: desc, performer: v.artiesten.map(artiestLd),
+        startDate: isoWithOffset(list[0].datum, list[0].tijd), endDate: isoWithOffset(list.at(-1).datum, list.at(-1).tijd),
+        subEvent: list.slice(0, 100).map((g) => ({ "@id": eventId(g) })),
+      }, ...eventsLd(list)],
+    } });
   }
 
   function theaterIndex() {
@@ -632,7 +712,7 @@ ${body}
       <div class="block-head"><h1 id="t">Theaters</h1><p>${tellers.zalen} zalen, comedyclubs en podia met aankomende voorstellingen.</p></div>
       <div class="venues">${kolommen}</div>
     </section>`;
-    return layout({ title: "Theaters", description: "Theaters, comedyclubs en podia in Nederland en België met cabaret en comedy.", path: "/theaters/", section: "theaters", body });
+    return layout({ title: "Theaters", description: "Theaters, comedyclubs en podia in Nederland en België met cabaret en comedy.", path: "/theaters/", section: "theaters", body, schema: { type: "CollectionPage", kruimels: [["Theaters", "/theaters/"]], hoofd: lijstLd([...zalenMetData].sort((x, y) => x.naam.localeCompare(y.naam, "nl")).map((t) => [t.naam, `/theaters/${t.id}/`])) } });
   }
 
   function theaterPage(t) {
@@ -651,7 +731,7 @@ ${body}
     const desc = list.length
       ? kort(`Cabaret en comedy in ${t.naam}${t.naam.includes(t.plaats) ? "" : ` in ${t.plaats}`}: ${plural(list.length, "voorstelling", "voorstellingen")}${list.length > 1 ? ` van ${fmt.full(list[0].datum)} tot ${fmt.full(list.at(-1).datum)}` : ` op ${fmt.full(list[0].datum)}`}. Bekijk het programma.`)
       : `Cabaret en comedy in ${t.naam} (${t.plaats}).`;
-    return layout({ title: `${t.naam}${t.naam.includes(t.plaats) ? "" : ` ${t.plaats}`}: cabaret en comedy`, description: desc, path: `/theaters/${t.id}/`, section: "theaters", body, jsonLd: list.length ? eventsLd(list) : null });
+    return layout({ title: `${t.naam}${t.naam.includes(t.plaats) ? "" : ` ${t.plaats}`}: cabaret en comedy`, description: desc, path: `/theaters/${t.id}/`, section: "theaters", body, schema: { kruimels: [["Theaters", "/theaters/"], [t.naam, `/theaters/${t.id}/`]], hoofd: { "@id": zaalLd(t.id)["@id"] }, extra: [{ ...zaalLd(t.id), containedInPlace: plaatsLd(t.plaats) }, ...eventsLd(list)] } });
   }
 
   function about() {
@@ -675,7 +755,7 @@ ${body}
       <h2 class="sub-head" id="bronnen">Waar de gegevens vandaan komen</h2>
       <ul class="sources">${bronnen.map((t) => `<li><a href="${esc(t.website)}" rel="noopener">${esc(t.naam)}</a> <span>${esc(t.plaats)}</span></li>`).join("")}</ul>
     </section>`;
-    return layout({ title: "Over de agenda", path: "/over/", section: "over", body });
+    return layout({ title: "Over de agenda", path: "/over/", section: "over", body, schema: { type: "AboutPage", kruimels: [["Over de agenda", "/over/"]], over: { "@id": ORG_ID } } });
   }
 
   function notFound() {

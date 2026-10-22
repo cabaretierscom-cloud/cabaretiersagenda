@@ -15,6 +15,12 @@ De agenda heeft geen aparte database. Alle gegevens staan als bestanden in de ma
 
 Elk item heeft een vaste `id` van kleine letters en streepjes, zoals `claudia-de-breij`. Andere bestanden verwijzen daarnaar. Die id wordt ook het webadres: `/artiesten/claudia-de-breij/`.
 
+Een artiest kan optioneel `"vorm": "groep"` of `"vorm": "persoon"` hebben. Dat bepaalt of zoekmachines de artiest als groep of als persoon zien. Zonder `vorm` raadt de site het aan de naam (bijvoorbeeld "&" of "en" betekent een duo).
+
+## Gestructureerde gegevens
+
+Elke pagina bevat schema.org-gegevens (JSON-LD) voor zoekmachines: de organisatie en website, een kruimelpad, en per paginasoort de inhoud: voorstellingen als `TheaterEvent`/`ComedyEvent` met zaal, artiest en kaartlink, artiesten als `Person`/`PerformingGroup`, zalen als `PerformingArtsTheater`/`ComedyClub`, voorstellingen als `EventSeries` en overzichten als `ItemList`. Dit wordt gemaakt in `paginaLd()` in `src/templates.mjs`.
+
 ### Een speeldatum
 
 ```json

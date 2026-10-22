@@ -27,6 +27,9 @@ export const GENRES = {
   kleinkunst: "Kleinkunst",
 };
 
+// Optioneel per artiest: solo ("persoon") of duo/groep ("groep"); zonder vorm raadt de site het aan de naam.
+export const VORMEN = ["persoon", "groep"];
+
 export const THEATERSOORTEN = ["theater", "cultuurcentrum", "comedyclub", "café", "festivalterrein", "overig"];
 
 // Inktkleuren; de waarde is de naam van de CSS-variabele en de tekstkleur erop.
@@ -69,6 +72,7 @@ export function loadData(dir, { today }) {
   for (const a of artiesten) {
     if (a.land != null && !LANDEN[a.land]) errors.push(`artiest ${a.id}: onbekend land "${a.land}"`);
     if (!KLEUREN[a.kleur]) errors.push(`artiest ${a.id}: onbekende kleur "${a.kleur}"`);
+    if (a.vorm != null && !VORMEN.includes(a.vorm)) errors.push(`artiest ${a.id}: onbekende vorm "${a.vorm}"`);
   }
   for (const t of theaters) {
     if (!LANDEN[t.land]) errors.push(`theater ${t.id}: onbekend land "${t.land}"`);
