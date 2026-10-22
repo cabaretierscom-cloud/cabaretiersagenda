@@ -74,6 +74,7 @@ export function createTemplates(db) {
       ["artiesten", "/artiesten/", "Artiesten"],
       ["plaatsen", "/plaatsen/", "Plaatsen"],
       ["theaters", "/theaters/", "Theaters"],
+      ["festivals", "/festivals/", "Festivals"],
       ["over", "/over/", "Over"],
     ].map(([key, href, label]) =>
       `<a href="${href}"${key === section ? ' aria-current="page"' : ""}>${label}</a>`).join("");
@@ -275,6 +276,10 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   const perPlaats = (p) => up.filter((g) => T.get(g.theater).plaats === p);
   const landVanPlaats = (p) => T.get(perPlaats(p)[0]?.theater)?.land || [...T.values()].find((t) => t.plaats === p)?.land;
   const artiestenMetData = [...A.values()].map((a) => ({ a, list: db.gigsForArtist(a.id) })).filter((x) => x.list.length);
+  const F = db.festivals;
+  const festivalsMetData = [...F.values()].map((f) => ({ f, list: db.gigsForFestival(f.id) })).filter((x) => x.list.length)
+    .sort((x, y) => x.list[0].datum.localeCompare(y.list[0].datum));
+  const festivalKleur = (f) => A.get((f.artiesten || [])[0])?.kleur || "geel";
   const zalenMetData = [...T.values()].filter((t) => db.gigsForTheater(t.id).length);
   const tellers = {
     speeldata: up.length,
@@ -430,6 +435,12 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   <div class="block-head"><h2 id="plaats-title">Kies een plaats</h2><p><a href="/plaatsen/">Alle ${tellers.plaatsen} plaatsen</a></p></div>
   <div class="city-chips">${grootstePlaatsen.map((p) =>
     `<a href="/plaatsen/${plaatsId(p)}/">${esc(p)} <span>${perPlaats(p).length}</span></a>`).join("")}</div>
+</section>
+
+<section class="block wrap" aria-labelledby="festival-title">
+  <div class="block-head"><h2 id="festival-title">Cabaretfestivals</h2><p><a href="/festivals/">Alle festivals</a></p></div>
+  <div class="city-chips">${festivalsMetData.map(({ f, list }) =>
+    `<a href="/festivals/${f.id}/">${esc(f.naam)} <span>${list.length}</span></a>`).join("")}</div>
 </section>`;
     return layout({ path: "/", section: null, body, schema: { extra: eventsLd(dezeWeek) } });
   }
@@ -631,9 +642,10 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const summary = list.length
       ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(cityCount, "plaats", "plaatsen")}${partners.length ? `, samen met ${partners.map((p) => `<a href="/artiesten/${p}/">${esc(A.get(p).naam)}</a>`).join(" en ")}` : ""}.`
       : "Op dit moment staan er geen voorstellingen gepland.";
+    const festival = [...F.values()].find((f) => (f.artiesten || []).includes(a.id));
     const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap">
         <h1>${esc(a.naam)}</h1>
-        <p>${summary}</p>
+        <p>${summary}${festival ? ` Onderdeel van <a href="/festivals/${festival.id}/">${esc(festival.naam)}</a>.` : ""}</p>
       </div></div>
       <div class="wrap detail-body">
         ${showIds.length ? `<div class="shows-list">${showIds.map((vid) => voorstellingPad.has(vid) ? `<a class="pill" href="${voorstellingPad.get(vid)}">${esc(V.get(vid).titel)}</a>` : `<span class="pill">${esc(V.get(vid).titel)}</span>`).join("")}</div>` : ""}
@@ -704,6 +716,77 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     } });
   }
 
+  // Kleinere kop op een kaart als het langste woord anders niet op één regel past.
+  const kopMaat = (naam) => {
+    const langste = Math.max(...naam.split(/\s+/).map((w) => w.length));
+    return langste > 13 ? ' class="xlang"' : langste > 9 ? ' class="lang"' : "";
+  };
+
+  function festivalIndex() {
+    const zonder = [...F.values()].filter((f) => !db.gigsForFestival(f.id).length).sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
+    const body = `<section class="block wrap" aria-labelledby="t">
+      <div class="block-head"><h1 id="t">Cabaretfestivals</h1><p>Concoursen en festivals in Nederland en België, met hun finales en finalistentournees.</p></div>
+      <div class="artists">${festivalsMetData.map(({ f, list }) => `<a class="artist-card" href="/festivals/${f.id}/" style="${ink(festivalKleur(f))}">
+          <h3${kopMaat(f.naam)}>${esc(f.naam)}</h3>
+          <p>${esc(f.plaats)}<br><span class="count">${plural(list.length, "speeldatum", "speeldata")}</span>, vanaf ${fmt.dayMonth(list[0].datum)}</p>
+        </a>`).join("")}</div>
+      ${zonder.length ? `<h2 class="sub-head">Nog geen speeldata bekend</h2>
+      <ul class="sources">${zonder.map((f) => `<li>${f.website ? `<a href="${esc(f.website)}" rel="noopener">${esc(f.naam)}</a>` : esc(f.naam)} <span>${esc(f.plaats)}</span></li>`).join("")}</ul>` : ""}
+    </section>`;
+    return layout({ title: "Cabaretfestivals", description: kort(`Alle cabaretfestivals in Nederland en België: ${festivalsMetData.map(({ f }) => f.naam).join(", ")}. Finales, halve finales en finalistentournees.`), path: "/festivals/", section: "festivals", body,
+      schema: { type: "CollectionPage", kruimels: [["Festivals", "/festivals/"]], hoofd: lijstLd([...F.values()].map((f) => [f.naam, `/festivals/${f.id}/`])) } });
+  }
+
+  function festivalTekst(f, list) {
+    if (!list.length) return "";
+    const steden = telPer(list, (g) => T.get(g.theater).plaats);
+    const onderdelen = [...new Set(list.map((g) => V.get(g.voorstelling).titel))];
+    const artiesten = [...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].filter((a) => !(f.artiesten || []).includes(a));
+    const zinnen = [];
+    zinnen.push(`<p>${esc(f.naam)} uit ${plaatsen.includes(f.plaats) ? plaatsLink(f.plaats) : esc(f.plaats)} staat ${keer(list.length)} op de agenda, ${periode(list)}. ` +
+      `Op het programma: ${opsomming(onderdelen.slice(0, 5).map((t) => `<em>${esc(t)}</em>`))}. ` +
+      (steden.length > 1 ? `De voorstellingen zijn te zien in ${steden.length} plaatsen: ${opsomming(steden.slice(0, 10).map(([p]) => plaatsLink(p)))}.` : `Alle voorstellingen zijn in ${plaatsLink(steden[0][0])}.`) + `</p>`);
+    const p2 = [];
+    if (artiesten.length) p2.push(`Op de speellijst staan ook ${opsomming(artiesten.slice(0, 6).map((a) => `<a href="/artiesten/${a}/">${esc(A.get(a).naam)}</a>`))}.`);
+    const tekst = (p2.join(" ") + uitverkochtZin(list)).trim();
+    if (tekst) zinnen.push(`<p>${tekst}</p>`);
+    zinnen.push(`<p>${f.website ? `Meer over het festival, de deelnemers en de jury lees je op <a href="${esc(f.website)}" rel="noopener">de website van ${esc(f.naam)}</a>. ` : ""}Bekijk ook <a href="/festivals/">alle cabaretfestivals</a>. ${kaartenZin}</p>`);
+    return `<section class="seo-tekst prose" aria-labelledby="over-titel">
+        <h2 id="over-titel">${esc(f.naam)} ${opsomming([...new Set(list.map((g) => String(fmt.year(g.datum))))])}</h2>
+        ${zinnen.join("\n        ")}
+      </section>`;
+  }
+
+  function festivalPagina(f) {
+    const list = db.gigsForFestival(f.id);
+    const steden = new Set(list.map((g) => T.get(g.theater).plaats)).size;
+    const body = `<div class="detail-hero" style="${ink(festivalKleur(f))}"><div class="wrap">
+        <h1>${esc(f.naam)}</h1>
+        <p>Cabaretfestival uit ${plaatsen.includes(f.plaats) ? `<a href="/plaatsen/${plaatsId(f.plaats)}/">${esc(f.plaats)}</a>` : esc(f.plaats)}. ${list.length ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.` : "Op dit moment staan er geen speeldata in de agenda."}${f.website ? ` <a href="${esc(f.website)}" rel="noopener">Website van het festival</a>` : ""}</p>
+      </div></div>
+      <div class="wrap detail-body">
+        ${list.length > 12 ? filters(list, { maand: true }) : ""}
+        <div id="gigs">${monthGroups(list)}</div>
+        ${list.length > 12 ? leegBlok : ""}
+        ${festivalTekst(f, list)}
+      </div>`;
+    const desc = list.length
+      ? kort(`${f.naam} (${f.plaats}): ${plural(list.length, "voorstelling", "voorstellingen")}, van finale tot finalistentournee. Eerstvolgende op ${fmt.full(list[0].datum)}. Bekijk alle speeldata.`)
+      : `${f.naam}, cabaretfestival uit ${f.plaats}.`;
+    const pad = `/festivals/${f.id}/`;
+    return layout({ title: `${f.naam}: finales en finalistentournee`, description: desc, path: pad, section: "festivals", body,
+      schema: {
+        kruimels: [["Festivals", "/festivals/"], [f.naam, pad]],
+        hoofd: { "@id": URL(pad + "#festival") },
+        extra: [{
+          "@type": "EventSeries", "@id": URL(pad + "#festival"), name: f.naam, url: URL(pad), description: desc,
+          ...(f.website ? { sameAs: f.website } : {}),
+          location: { "@type": "City", name: f.plaats },
+          ...(list.length ? { startDate: isoWithOffset(list[0].datum, list[0].tijd), endDate: isoWithOffset(list.at(-1).datum, list.at(-1).tijd), subEvent: list.slice(0, 100).map((g) => ({ "@id": eventId(g) })) } : {}),
+        }, ...eventsLd(list)],
+      } });
+  }
+
   function theaterIndex() {
     const kolommen = Object.keys(LANDEN).map((land) => {
       const steden = [...new Set(zalenMetData.filter((t) => t.land === land).map((t) => t.plaats))].sort((a, b) => a.localeCompare(b, "nl"));
@@ -771,6 +854,6 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   return {
     home, agendaIndex, agendaMaand, plaatsIndex, plaatsPagina, artistIndex, artistPage, theaterIndex, theaterPage, about, notFound,
-    voorstellingPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
+    voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
   };
 }

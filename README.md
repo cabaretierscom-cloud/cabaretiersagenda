@@ -12,10 +12,15 @@ De agenda heeft geen aparte database. Alle gegevens staan als bestanden in de ma
 | `data/theaters.json` | Theaters, comedyclubs, cafés en festivalterreinen |
 | `data/voorstellingen.json` | Voorstellingen (programma's) en wie erin speelt |
 | `data/speeldata.json` | Elke avond dat een voorstelling ergens speelt, met de bron |
+| `data/festivals.json` | Cabaretfestivals: naam, plaats, website, en welke artiesten (`artiesten`) of titels (`titels`) erbij horen |
 
 Elk item heeft een vaste `id` van kleine letters en streepjes, zoals `claudia-de-breij`. Andere bestanden verwijzen daarnaar. Die id wordt ook het webadres: `/artiesten/claudia-de-breij/`.
 
 Een artiest kan optioneel `"vorm": "groep"` of `"vorm": "persoon"` hebben. Dat bepaalt of zoekmachines de artiest als groep of als persoon zien. Zonder `vorm` raadt de site het aan de naam (bijvoorbeeld "&" of "en" betekent een duo).
+
+## Festivals
+
+Een festival heeft zelf geen speeldata. De site zoekt ze erbij: alle voorstellingen van de artiesten in `artiesten` (bijvoorbeeld de "artiest" Cameretten) en alle voorstellingen waarvan de titel een van de `titels` bevat. Elk festival krijgt een pagina op `/festivals/<id>/`. Een festival zonder aankomende speeldata staat onderaan het overzicht onder "Nog geen speeldata bekend".
 
 ## Gestructureerde gegevens
 

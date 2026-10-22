@@ -1,0 +1,92 @@
+[
+  {
+    "id": "cameretten",
+    "naam": "Cameretten",
+    "plaats": "Rotterdam",
+    "land": "NL",
+    "website": "https://cameretten.nl/",
+    "artiesten": ["cameretten", "60e-editie-cameretten-festival", "60ste-editie-cameretten-festival"],
+    "titels": ["cameretten"]
+  },
+  {
+    "id": "leids-cabaret-festival",
+    "naam": "Leids Cabaret Festival",
+    "plaats": "Leiden",
+    "land": "NL",
+    "website": "https://leidscabaretfestival.nl/",
+    "artiesten": ["leids-cabaret-festival", "leids-cabaret-festival-on-tour"],
+    "titels": ["leids cabaret festival"]
+  },
+  {
+    "id": "amsterdams-kleinkunst-festival",
+    "naam": "Amsterdams Kleinkunst Festival",
+    "plaats": "Amsterdam",
+    "land": "NL",
+    "website": "https://akf.nl/",
+    "artiesten": ["amsterdams-kleinkunst-festival"],
+    "titels": ["amsterdams kleinkunst festival"]
+  },
+  {
+    "id": "amsterdams-studenten-cabaret-festival",
+    "naam": "Amsterdams Studenten Cabaret Festival",
+    "plaats": "Amsterdam",
+    "land": "NL",
+    "website": "https://ascf.nl/",
+    "artiesten": ["amsterdams-studenten-cabaret-festival"],
+    "titels": ["amsterdams studenten cabaret festival"]
+  },
+  {
+    "id": "groninger-studenten-cabaret-festival",
+    "naam": "Groninger Studenten Cabaret Festival",
+    "plaats": "Groningen",
+    "land": "NL",
+    "website": "https://www.gscf.nl/",
+    "artiesten": ["groninger-studenten-cabaret-festival"],
+    "titels": ["groninger studenten cabaret festival", "gscf"]
+  },
+  {
+    "id": "leeuwarder-cabaret-festival",
+    "naam": "Leeuwarder Cabaret Festival",
+    "plaats": "Leeuwarden",
+    "land": "NL",
+    "website": "https://leeuwardercabaretfestival.nl/",
+    "artiesten": ["leeuwarder-cabaret-festival"],
+    "titels": ["leeuwarder cabaret festival"]
+  },
+  {
+    "id": "tilburgs-cabaret-festival",
+    "naam": "Tilburgs Cabaret Festival",
+    "plaats": "Tilburg",
+    "land": "NL",
+    "website": "https://www.schouwburgconcertzaaltilburg.nl/nl/tilburgscabaretfestival",
+    "artiesten": ["tilburgs-cabaret-festival-2027"],
+    "titels": ["tilburgs cabaret festival"]
+  },
+  {
+    "id": "schater-cabaretfestival",
+    "naam": "SCHATER Cabaretfestival",
+    "plaats": "Apeldoorn",
+    "land": "NL",
+    "website": null,
+    "artiesten": ["schater-cabaretfestival"],
+    "titels": ["schater"]
+  },
+  {
+    "id": "utrecht-international-comedy-festival",
+    "naam": "Utrecht International Comedy Festival",
+    "plaats": "Utrecht",
+    "land": "NL",
+    "website": "https://utrechtinternationalcomedyfestival.nl/",
+    "artiesten": ["utrechts-international-comedy-festival"],
+    "titels": ["international comedy festival"]
+  },
+  {
+    "id": "keistad-cabaret-festival",
+    "naam": "Keistad Cabaret Festival",
+    "plaats": "Amersfoort",
+    "land": "NL",
+    "website": "https://www.keistadcabaretfestival.nl/",
+    "artiesten": [],
+    "titels": ["keistad cabaret festival"]
+  }
+]

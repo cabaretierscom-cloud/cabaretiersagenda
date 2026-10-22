@@ -12,6 +12,11 @@
   });
   syncGroups();
 
+  // Op een smal scherm schuift het menu opzij; zet het huidige onderdeel in beeld.
+  const actief = document.querySelector(".nav [aria-current]");
+  const menu = actief?.parentElement;
+  if (menu && menu.scrollWidth > menu.clientWidth) menu.scrollLeft = actief.offsetLeft - (menu.clientWidth - actief.offsetWidth) / 2;
+
   // ---------- Affichewand ----------
   const strip = document.getElementById("strip");
   if (strip) {

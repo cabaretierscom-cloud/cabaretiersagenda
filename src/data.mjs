@@ -1,6 +1,6 @@
 // Leest de gegevens uit data/, controleert verwijzingen en bouwt de opzoektabellen
 // die de templates gebruiken.
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 
 export const LANDEN = { NL: "Nederland", BE: "België" };
@@ -54,6 +54,8 @@ export function loadData(dir, { today }) {
   const theaters = read(dir, "theaters.json");
   const voorstellingen = read(dir, "voorstellingen.json");
   const speeldata = read(dir, "speeldata.json");
+  // Festivals bundelen voorstellingen: via hun "artiest" (Cameretten) of een stuk van de titel.
+  const festivals = existsSync(join(dir, "festivals.json")) ? read(dir, "festivals.json") : [];
 
   const errors = [];
   const byId = (list, kind) => {
@@ -68,6 +70,12 @@ export function loadData(dir, { today }) {
   const A = byId(artiesten, "artiesten.json");
   const T = byId(theaters, "theaters.json");
   const V = byId(voorstellingen, "voorstellingen.json");
+  const F = byId(festivals, "festivals.json");
+  for (const f of festivals) {
+    if (!f.naam || !f.plaats) errors.push(`festival ${f.id}: naam en plaats zijn verplicht`);
+    if (!LANDEN[f.land]) errors.push(`festival ${f.id}: onbekend land "${f.land}"`);
+    for (const a of f.artiesten || []) if (!A.has(a)) errors.push(`festival ${f.id}: onbekende artiest "${a}"`);
+  }
 
   for (const a of artiesten) {
     if (a.land != null && !LANDEN[a.land]) errors.push(`artiest ${a.id}: onbekend land "${a.land}"`);
@@ -123,5 +131,14 @@ export function loadData(dir, { today }) {
     artiesten: A, theaters: T, voorstellingen: V, upcoming, lastFetched, today,
     gigsForArtist: (id) => upcoming.filter((g) => V.get(g.voorstelling).artiesten.includes(id)),
     gigsForTheater: (id) => upcoming.filter((g) => g.theater === id),
+    festivals: F,
+    gigsForFestival: (id) => {
+      const f = F.get(id);
+      const titels = (f.titels || []).map((t) => t.toLowerCase());
+      return upcoming.filter((g) => {
+        const v = V.get(g.voorstelling);
+        return v.artiesten.some((a) => (f.artiesten || []).includes(a)) || titels.some((t) => v.titel.toLowerCase().includes(t));
+      });
+    },
   };
 }
