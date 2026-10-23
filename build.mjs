@@ -21,6 +21,9 @@ function relatief(html, pad) {
     return `${attr}="${terug}${doel}${rest}"`;
   });
 }
+// In de voorbeeldversie zit elke artiestfoto in de pagina zelf, zodat er geen losse bestanden bij komen.
+const fotosInPagina = (html) => html.replace(/src="(\/fotos\/[^"]+\.jpg)"/g, (_, f) =>
+  `src="data:image/jpeg;base64,${readFileSync(join(root, "public", f)).toString("base64")}"`);
 // BUILD_DATE=2026-11-01 npm run build bouwt de site zoals die op die dag zou zijn.
 const today = process.env.BUILD_DATE || new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" });
 
@@ -40,7 +43,7 @@ const pages = [];
 const write = (path, html) => {
   const file = path.endsWith(".html") ? join(out, path) : join(out, path, "index.html");
   mkdirSync(dirname(file), { recursive: true });
-  writeFileSync(file, VOORBEELD ? relatief(html, path) : html);
+  writeFileSync(file, VOORBEELD ? relatief(fotosInPagina(html), path) : html);
   if (!path.endsWith(".html")) pages.push(path);
 };
 
