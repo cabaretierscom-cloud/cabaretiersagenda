@@ -18,6 +18,8 @@ Elk item heeft een vaste `id` van kleine letters en streepjes, zoals `claudia-de
 
 Een artiest kan optioneel `"vorm": "groep"` of `"vorm": "persoon"` hebben. Dat bepaalt of zoekmachines de artiest als groep of als persoon zien. Zonder `vorm` raadt de site het aan de naam (bijvoorbeeld "&" of "en" betekent een duo).
 
+Een solo-artiest kan `"geslacht": "man"` of `"geslacht": "vrouw"` hebben, altijd met `"geslachtBron"` (een link naar de bron). Dat bepaalt wie er op /alle-cabaretiers/mannen/ en /alle-cabaretiers/vrouwen/ staat. `npm run geslacht` zoekt het op in Wikidata voor artiesten met een Wikipedia-artikel over hun werk als cabaretier of comedian. Nooit raden op naam; vul het alleen met de hand in als er een bron voor is.
+
 ## Foto's van artiesten
 
 `npm run fotos` zoekt rechtenvrije foto's: via het Wikipedia-artikel van de artiest (alleen als dat over cabaret of comedy gaat) naar de hoofdafbeelding op Wikidata, en dan de licentie op Wikimedia Commons. Alleen CC0, publiek domein, CC BY en CC BY-SA worden gebruikt. De foto komt in `public/fotos/`, en het veld `foto` in `data/artiesten.json` bewaart maker, licentie en bron; die staan als naamsvermelding onder de foto. Bekijk nieuwe foto's altijd zelf: zet `"foto": false` bij een artiest als de foto niet klopt, dan zoekt het script er nooit meer een. Elke foto heeft een `alt`-tekst (wat er op de foto te zien is, in het Nederlands). Het script vult die met de beschrijving van Commons of met "Foto van <naam>"; verbeter die met de hand. `npm run fotos -- --aanvullen` haalt beschrijving, datum en afmetingen opnieuw op voor bestaande foto's.

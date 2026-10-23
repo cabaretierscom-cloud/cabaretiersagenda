@@ -29,6 +29,12 @@ export const GENRES = {
 
 // Optioneel per artiest: solo ("persoon") of duo/groep ("groep"); zonder vorm raadt de site het aan de naam.
 export const VORMEN = ["persoon", "groep"];
+// Duo's, gezelschappen en festivals zijn een groep; met `vorm` in artiesten.json kan dat per artiest.
+export const isGroep = (a) => a.vorm ? a.vorm === "groep"
+  : / & | en |\b(festival|club|collectief|comedians|kwis|cabarestafette|brothers|theatertroep|stichting|agency|producties|theaterproducties)\b/i.test(` ${a.naam} `);
+
+// Optioneel per solo-artiest, alleen met bron (Wikidata): voor de pagina's /alle-cabaretiers/mannen/ en /vrouwen/.
+export const GESLACHTEN = ["man", "vrouw"];
 
 export const THEATERSOORTEN = ["theater", "cultuurcentrum", "comedyclub", "café", "festivalterrein", "overig"];
 
@@ -81,6 +87,8 @@ export function loadData(dir, { today }) {
     if (a.land != null && !LANDEN[a.land]) errors.push(`artiest ${a.id}: onbekend land "${a.land}"`);
     if (!KLEUREN[a.kleur]) errors.push(`artiest ${a.id}: onbekende kleur "${a.kleur}"`);
     if (a.vorm != null && !VORMEN.includes(a.vorm)) errors.push(`artiest ${a.id}: onbekende vorm "${a.vorm}"`);
+    if (a.geslacht != null && !GESLACHTEN.includes(a.geslacht)) errors.push(`artiest ${a.id}: onbekend geslacht "${a.geslacht}"`);
+    if (a.geslacht != null && !a.geslachtBron) errors.push(`artiest ${a.id}: geslacht zonder geslachtBron`);
     // Een foto mag alleen met naamsvermelding, licentie en bron.
     if (a.foto && typeof a.foto === "object" && !(a.foto.bestand && a.foto.alt && a.foto.maker && a.foto.licentie && a.foto.bron)) errors.push(`artiest ${a.id}: foto zonder alt-tekst, maker, licentie of bron`);
     if (a.foto?.bestand && !existsSync(join(dir, "..", "public", a.foto.bestand))) errors.push(`artiest ${a.id}: fotobestand ${a.foto.bestand} ontbreekt`);

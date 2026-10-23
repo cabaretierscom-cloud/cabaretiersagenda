@@ -53,6 +53,10 @@ for (const m of t.maanden) write(`/agenda/${t.maandId(m)}/`, t.agendaMaand(m));
 write("/plaatsen/", t.plaatsIndex());
 for (const p of t.plaatsen) write(`/plaatsen/${t.plaatsId(p)}/`, t.plaatsPagina(p));
 write("/artiesten/", t.artistIndex());
+// SEO-pagina's over cabaretiers; niet in het menu, wel gelinkt vanuit artiesten, footer en artiestpagina's.
+write("/alle-cabaretiers/", t.cabaretiersPagina("alle"));
+write("/alle-cabaretiers/vrouwen/", t.cabaretiersPagina("vrouw"));
+write("/alle-cabaretiers/mannen/", t.cabaretiersPagina("man"));
 // Alleen artiesten en zalen met aankomende voorstellingen krijgen een pagina.
 for (const a of db.artiesten.values()) if (db.gigsForArtist(a.id).length) write(`/artiesten/${a.id}/`, t.artistPage(a));
 // Elke voorstelling met een eigen titel: /artiesten/<artiest>/<voorstelling>/.
