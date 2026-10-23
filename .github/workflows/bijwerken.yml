@@ -75,8 +75,13 @@ jobs:
           test="plaatsingstest-${GITHUB_RUN_ID}.txt"
           echo "$GITHUB_RUN_ID" > "$test"
           lftp -c "$verbind; put $test -o $DOEL/$test"
-          sleep 5
-          gevonden=$(curl -s "https://www.cabaretiers.com/$test?$RANDOM" || true)
+          # Tot een halve minuut wachten: soms is een nieuw bestand niet meteen zichtbaar.
+          gevonden=""
+          for poging in 1 2 3 4 5 6; do
+            sleep 5
+            gevonden=$(curl -s "https://www.cabaretiers.com/$test?$RANDOM" || true)
+            [ "$gevonden" = "$GITHUB_RUN_ID" ] && break
+          done
           lftp -c "$verbind; rm $DOEL/$test" || true
           if [ "$gevonden" != "$GITHUB_RUN_ID" ]; then
             echo "::error::$DOEL is niet de map van www.cabaretiers.com: het testbestand is daar niet te zien. Er is niets geplaatst."
