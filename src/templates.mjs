@@ -96,7 +96,7 @@ export function createTemplates(db) {
 <meta property="og:image:width" content="${foto.breedte}">
 <meta property="og:image:height" content="${foto.hoogte}">` : ""}` : `
 <meta property="og:image" content="${SITE.url}/deelafbeelding.png">
-<meta property="og:image:alt" content="Logo van Cabaretiers.com, de cabaretagenda">
+<meta property="og:image:alt" content="Logo van Cabaretiers.com, de theateragenda">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">`}
 <meta name="twitter:card" content="summary_large_image">
@@ -115,7 +115,7 @@ ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title
   <div class="wrap">
     <a class="brand" href="/" aria-label="${SITE.name}, naar de agenda">
       <span class="brand-mark" aria-hidden="true">${LOGO_SVG}</span>
-      <span class="logo-tekst"><span class="wordmark">cabaret<span class="punt-i">ı</span>ers<span class="tld">.com</span></span><span class="ondertitel">De cabaretagenda</span></span>
+      <span class="logo-tekst"><span class="wordmark">cabaret<span class="punt-i">ı</span>ers<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
     </a>
     <nav class="nav" aria-label="Hoofdmenu">${nav}</nav>
   </div>
@@ -127,7 +127,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   <div class="wrap">
     <a class="brand" href="/" aria-label="${SITE.name}, naar de voorpagina">
       <span class="brand-mark" aria-hidden="true">${LOGO_OMGEKEERD_SVG}</span>
-      <span class="logo-tekst" aria-hidden="true"><span class="wordmark">cabaret<span class="punt-i">ı</span>ers<span class="tld">.com</span></span><span class="ondertitel">De cabaretagenda</span></span>
+      <span class="logo-tekst" aria-hidden="true"><span class="wordmark">cabaret<span class="punt-i">ı</span>ers<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
     </a>
     <p>Cabaret en comedy in Nederland en België, verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
   </div>

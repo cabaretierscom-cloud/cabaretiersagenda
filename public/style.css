@@ -134,7 +134,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* De punt op de i is de punt uit het beeldmerk: een stip met een oranje kern. */
 .wordmark .punt-i { position: relative; display: inline-block; }
 .wordmark .punt-i::after {
-  content: ""; position: absolute; left: 50%; top: 0.02em; width: 0.24em; height: 0.24em; margin-left: -0.12em;
+  content: ""; position: absolute; left: 50%; top: -0.12em; width: 0.22em; height: 0.22em; margin-left: -0.11em;
   border-radius: 50%; background: radial-gradient(circle, var(--riso-orange) 0 36%, var(--ink) 38%);
 }
 .nav { display: flex; gap: 4px; margin-left: auto; }
