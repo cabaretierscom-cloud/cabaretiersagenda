@@ -1,7 +1,7 @@
 // HTML-templates. Elke functie geeft een string terug; build.mjs schrijft ze weg.
 import { LANDEN, STATUSSEN, GENRES, KLEUREN, isGroep } from "./data.mjs";
 import { fmt, esc, plural, isoWithOffset } from "./format.mjs";
-import { WOORDMERK_SVG } from "./woordmerk.mjs";
+import { WOORDMERK_SVG, C_PAD, C_KADER } from "./woordmerk.mjs";
 
 // Webadres-vriendelijke tekst: "Gelukkig heb je mij nog!" -> "gelukkig-heb-je-mij-nog".
 export const slugVan = (s) =>
@@ -27,10 +27,25 @@ const ICON = {
   next: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>',
 };
 
-// Beeldmerk: de C met de punt op een oranje vlak. Dezelfde punt staat op de i van het woordmerk.
-export const LOGO_SVG = `<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" rx="12" fill="#FF6A13"/><path d="M33.5 15.2A13 13 0 1 0 33.5 32.8" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/><circle cx="33.6" cy="24" r="4.6" fill="#000"/><circle cx="33.6" cy="24" r="1.7" fill="#FF6A13"/></svg>`;
-// Omgekeerd beeldmerk (witte C op zwart), voor op een oranje vlak zoals de footer.
-export const LOGO_OMGEKEERD_SVG = `<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" rx="12" fill="#000"/><path d="M33.5 15.2A13 13 0 1 0 33.5 32.8" fill="none" stroke="#FFF" stroke-width="7" stroke-linecap="round"/><circle cx="33.6" cy="24" r="4.6" fill="#FFF"/><circle cx="33.6" cy="24" r="1.7" fill="#000"/></svg>`;
+// Beeldmerk (logo-ontwerp 15): de kleine c uit het woordmerklettertype in vier inktkleuren, met schuine
+// grenzen zoals de G van Google: oranje boven, roze op de uithaal, groen onder, geel links.
+// LOGO_SVG staat op een zwart vlak (kop, tabbladicoontje, app-icoon); LOGO_OMGEKEERD_SVG is zonder vlak
+// en dient voor de zwarte footer.
+function beeldmerk({ vlak, id }) {
+  const [x0, y0, x1, y1] = C_KADER, h = vlak ? 27.8 : 34, s = h / (y1 - y0), w = (x1 - x0) * s;
+  const t = `translate(${(24 - ((x0 + x1) / 2) * s).toFixed(2)} ${(24 - ((y0 + y1) / 2) * s).toFixed(2)}) scale(${s.toFixed(5)})`;
+  // Taartpunten vanuit het midden; de hoeken gelden voor een rond gemaakte c (horizontaal geschaald).
+  const punt = (a, b) => {
+    const p = [[24, 24]];
+    for (let g = a; g < b; g += 5) p.push([24 + 100 * Math.cos(g * Math.PI / 180), 24 + 100 * Math.sin(g * Math.PI / 180)]);
+    p.push([24 + 100 * Math.cos(b * Math.PI / 180), 24 + 100 * Math.sin(b * Math.PI / 180)]);
+    return p.map((q) => q.map((v) => v.toFixed(1)).join(",")).join(" ");
+  };
+  const vlakken = [["#FF6A13", -140, 10], ["#FF4FA3", 10, 58], ["#00764E", 58, 140], ["#FFD23F", 140, 220]];
+  return `<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">${vlak ? `<rect width="48" height="48" rx="11.5" fill="${vlak}"/>` : ""}<defs><clipPath id="${id}"><path transform="${t}" d="${C_PAD}"/></clipPath></defs><g clip-path="url(#${id})"><g transform="translate(24 24) scale(${(w / h).toFixed(4)} 1) translate(-24 -24)">${vlakken.map(([k, a, b]) => `<polygon points="${punt(a, b)}" fill="${k}"/>`).join("")}</g></g></svg>`;
+}
+export const LOGO_SVG = beeldmerk({ vlak: "#000", id: "beeldmerk-c" });
+export const LOGO_OMGEKEERD_SVG = beeldmerk({ vlak: null, id: "beeldmerk-c-voet" });
 
 const ink = (kleur) => {
   const [v, fg] = KLEUREN[kleur];

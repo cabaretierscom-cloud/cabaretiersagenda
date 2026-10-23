@@ -46,7 +46,16 @@ vlakken = "".join(f'<path class="bk bk-{i + 1}" d="{d}"/>' for i, d in enumerate
 svg = (f'<svg class="woord" viewBox="0 -1660 {x} 1690" aria-hidden="true" focusable="false">{vlakken}'
        f'<path fill="currentColor" d="{" ".join(letters)}"/>'
        f'<circle fill="currentColor" cx="{punt_x}" cy="-1490" r="140"/><circle class="kern" cx="{punt_x}" cy="-1490" r="58"/></svg>')
+# De kleine c voor het beeldmerk (logo-ontwerp 15): lettervorm en kader in font-eenheden (y omhoog).
+from fontTools.pens.boundsPen import BoundsPen
+c_naam = cmap[ord("c")]
+bp = BoundsPen(gs); gs[c_naam].draw(bp)
+c_pad = pad(contouren(c_naam), 0).replace("M", "M").strip()
+
 with open(os.path.join(root, "src/woordmerk.mjs"), "w") as uit:
     uit.write("// Gemaakt door scripts/woordmerk.py; niet met de hand aanpassen.\n")
     uit.write(f"export const WOORDMERK_SVG = {json.dumps(svg, ensure_ascii=False)};\n")
+    uit.write(f"// Kleine c voor het beeldmerk; pad met y omlaag (zoals SVG), kader [x0, y0, x1, y1] ook met y omlaag.\n")
+    uit.write(f"export const C_PAD = {json.dumps(c_pad)};\n")
+    uit.write(f"export const C_KADER = {json.dumps([bp.bounds[0], -bp.bounds[3], bp.bounds[2], -bp.bounds[1]])};\n")
 print(f"src/woordmerk.mjs gemaakt ({len(binnen)} binnenruimtes, breedte {x}).")

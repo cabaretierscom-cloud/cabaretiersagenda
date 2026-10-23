@@ -1,28 +1,28 @@
 # Logo Cabaretiers.com
 
-Gekozen ontwerp (oktober 2026, ontwerp 11 op het logobord): de C met de punt op een oranje vlak, met dezelfde punt op de i van het woordmerk en gekleurde binnenruimtes in de a, b en e.
+Gekozen ontwerp (oktober 2026, ontwerp 15 op het logobord): de kleine c uit het woordmerklettertype in vier inktkleuren, met schuine kleurgrenzen zoals de G van Google, op een zwart vlak. De binnenruimtes van de a, b en e in het woordmerk hebben dezelfde kleuren.
 
 ## Onderdelen
 
-- **Beeldmerk** (`beeldmerk.svg`): zwarte C met een zwarte punt met oranje kern, op een oranje vlak met ronde hoeken. Gebruik voor app-icoon, tabbladicoontje en sociale media.
-- **Beeldmerk omgekeerd** (`beeldmerk-omgekeerd.svg`): witte C en punt op zwart, voor gebruik op een oranje achtergrond.
-- **Woordmerk**: `cabaretiers` in Big Shoulders Display Black (900), kleine letters. De punt op de i is de punt uit het beeldmerk: een stip in de tekstkleur met een oranje kern, 0,14 em groot, op dezelfde hoogte als de punt van een gewone i in dit lettertype en met witruimte boven de stok. De gesloten binnenruimtes zijn ingekleurd met riso-inkten, van links naar rechts: a roze, b geel, a lichtblauw, e limoen, e lila. Daarachter `.com` in roze, Big Shoulders Display Bold (700), ongeveer een derde van de hoogte.
-- **Ondertitel**: `DE THEATERAGENDA` onder het woordmerk, in Instrument Sans SemiBold (600), hoofdletters met ruime letterafstand (ongeveer 0,24 em), ongeveer een derde van de hoogte van `.com`, in de tekstkleur.
+- **Beeldmerk** (`beeldmerk.svg`): de kleine c van Big Shoulders Display Black op een zwart vlak met ronde hoeken. Oranje boven, roze op de onderste uithaal, groen onder, geel over de linkerkant; de grenzen lopen schuin vanuit het midden van de c. Gebruik voor kop, app-icoon, tabbladicoontje en sociale media.
+- **Beeldmerk zonder vlak** (`beeldmerk-omgekeerd.svg`): dezelfde c zonder zwart vlak, voor op een donkere achtergrond zoals de footer.
+- **Woordmerk**: `cabaretiers` in Big Shoulders Display Black (900), kleine letters. De punt op de i is een stip in de tekstkleur met een oranje kern, 0,14 em groot, op dezelfde hoogte als de punt van een gewone i in dit lettertype en met witruimte boven de stok. De gesloten binnenruimtes zijn ingekleurd, van links naar rechts: a oranje, b geel, a groen, e roze, e lila. Daarachter `.com` in donkerblauw, Big Shoulders Display Bold (700), ongeveer een derde van de hoogte.
+- **Ondertitel**: `DE THEATERAGENDA` onder het woordmerk, in Instrument Sans SemiBold (600), hoofdletters met ruime letterafstand (ongeveer 0,24 em), in de tekstkleur.
 - Het woordmerk staat rechts van het beeldmerk, verticaal gecentreerd.
 
 ## Kleuren
 
 | Naam | Kleur | Gebruik |
 |---|---|---|
-| Oranje (`--riso-orange`) | `#FF6A13` | vlak van het beeldmerk, kern van de punt |
-| Zwart | `#000000` | C, punt, woordmerk |
-| Roze (`--riso-pink`) | `#FF4FA3` | `.com`, binnenruimte eerste a |
-| Geel (`--riso-yellow`) | `#FFD23F` | binnenruimte b |
-| Lichtblauw (`--riso-aqua`) | `#5EC8E5` | binnenruimte tweede a |
-| Limoen (`--riso-lime`) | `#B8E04A` | binnenruimte eerste e |
-| Lila (`--riso-lilac`) | `#C9B6FF` | binnenruimte tweede e |
+| Oranje (`--riso-orange`) | `#FF6A13` | c boven, binnenruimte eerste a, kern van de punt |
+| Geel (`--riso-yellow`) | `#FFD23F` | c links, binnenruimte b |
+| Groen (`--riso-green`) | `#00764E` | c onder, binnenruimte tweede a |
+| Roze (`--riso-pink`) | `#FF4FA3` | uithaal van de c, binnenruimte eerste e |
+| Lila (`--riso-lilac`) | `#C9B6FF` | binnenruimte tweede e; `.com` op een donkere achtergrond |
+| Donkerblauw (`--riso-blue`) | `#2340E8` | `.com` |
+| Zwart | `#000000` | vlak van het beeldmerk, woordmerk, footer |
 
-Op een donkere achtergrond wordt het woordmerk wit, en de punt op de i wit met een oranje kern. Het beeldmerk blijft oranje, de binnenruimtes houden hun kleur. In de oranje footer is de kern van de punt wit.
+Op een donkere achtergrond (de zwarte footer, de donkere modus) wordt het woordmerk wit en `.com` lila, omdat donkerblauw op zwart slecht leesbaar is. Het beeldmerk staat daar zonder vlak.
 
 ## Afgeleide afbeeldingen
 
@@ -33,4 +33,4 @@ Na een wijziging aan het logo: `npm run logo` (vraagt Playwright) maakt beide op
 
 ## Op de site
 
-Het beeldmerk staat als `LOGO_SVG` in `src/templates.mjs` (en wordt `/logo.svg`, het tabbladicoontje). Het woordmerk is een SVG (`WOORDMERK_SVG` in `src/woordmerk.mjs`), gemaakt uit de echte lettervormen door `scripts/woordmerk.py`; de kleuren van de binnenruimtes en de kern van de punt staan bij `.woord` in `public/style.css`.
+Het beeldmerk wordt gemaakt door `beeldmerk()` in `src/templates.mjs` (`LOGO_SVG`, met de lettervorm `C_PAD` uit `src/woordmerk.mjs`) (en wordt `/logo.svg`, het tabbladicoontje). Het woordmerk is een SVG (`WOORDMERK_SVG` in `src/woordmerk.mjs`), gemaakt uit de echte lettervormen door `scripts/woordmerk.py`; de kleuren van de binnenruimtes en de kern van de punt staan bij `.woord` in `public/style.css`.

@@ -22,7 +22,7 @@ const page = await browser.newPage();
 await page.goto(url);
 await page.evaluate(([svg, woord]) => {
   document.getElementById("merk1").innerHTML = svg;
-  document.getElementById("icoon").innerHTML = svg.replace('rx="12"', 'rx="0"');
+  document.getElementById("icoon").innerHTML = svg.replace(/rx="[0-9.]+"/, 'rx="0"');
   document.getElementById("woord").outerHTML = woord;
 }, [LOGO_SVG, WOORDMERK_SVG]);
 await page.evaluate(() => document.fonts.ready);

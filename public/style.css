@@ -130,15 +130,18 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* Ondertitel onder het woordmerk, zoals in ontwerp/logo/README.md */
 .logo-tekst { display: flex; flex-direction: column; line-height: 1; }
 .ondertitel { font-family: var(--font-body); font-weight: 600; font-size: .62rem; letter-spacing: .24em; text-transform: uppercase; margin-top: 4px; padding-left: 1px; color: var(--ink); }
-.wordmark .tld { color: var(--riso-pink); font-weight: 700; font-size: 1.1rem; }
+.wordmark .tld { color: var(--riso-blue); font-weight: 700; font-size: 1.1rem; }
+/* Donkerblauw is op een donkere achtergrond slecht leesbaar; daar is .com lila. */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .wordmark .tld { color: var(--riso-lilac); } }
+:root[data-theme="dark"] .wordmark .tld { color: var(--riso-lilac); }
 /* Woordmerk (logo-ontwerp 11): de letters als SVG uit src/woordmerk.mjs. De binnenruimtes van a, b en e
    krijgen riso-kleuren; de punt op de i is de punt uit het beeldmerk. */
 .wordmark { display: flex; align-items: baseline; }
 .wordmark .woord { width: 4.546em; height: 0.845em; margin-bottom: -0.015em; flex-shrink: 0; }
-.woord .bk-1 { fill: var(--riso-pink); }
+.woord .bk-1 { fill: var(--riso-orange); }
 .woord .bk-2 { fill: var(--riso-yellow); }
-.woord .bk-3 { fill: var(--riso-aqua); }
-.woord .bk-4 { fill: var(--riso-lime); }
+.woord .bk-3 { fill: var(--riso-green); }
+.woord .bk-4 { fill: var(--riso-pink); }
 .woord .bk-5 { fill: var(--riso-lilac); }
 .woord .kern { fill: var(--riso-orange); }
 .nav { display: flex; gap: 4px; margin-left: auto; }
@@ -393,16 +396,17 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .shows-list .pill { font-size: var(--step-0); padding: 6px 14px; }
 
 /* ---------- Footer ---------- */
-/* Footer: volledig oranje strook met het omgekeerde logo; ook in donkere modus zwart op oranje. */
-.site-footer { --ink: #000; --ink-2: #000; margin-top: 48px; background: var(--riso-orange); color: #000; }
+/* Footer: zwarte strook met het beeldmerk zonder vlak en een wit woordmerk. */
+.site-footer { --ink: #fff; --ink-2: #fff; margin-top: 48px; background: #000; color: #fff; }
 .site-footer .wrap { padding-block: 32px 40px; display: flex; gap: 16px 32px; align-items: center; justify-content: space-between; flex-wrap: wrap; font-size: .95rem; }
 .site-footer p { margin: 0; max-width: 62ch; }
-.site-footer .wordmark, .site-footer .ondertitel { color: #000; }
-.site-footer .wordmark .tld { color: #000; }
-.site-footer .woord .kern { fill: #fff; }
-.site-footer a:focus-visible { outline-color: #000; }
+.site-footer .wordmark, .site-footer .ondertitel { color: #fff; }
+/* Donkerblauw is op zwart slecht leesbaar; in de footer is .com lila. */
+.site-footer .wordmark .tld { color: var(--riso-lilac); }
+.site-footer .woord .kern { fill: var(--riso-orange); }
+.site-footer a:focus-visible { outline-color: #fff; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 4px 20px; font-weight: 600; }
-.footer-links a { color: #000; }
+.footer-links a { color: #fff; }
 
 /* Verwijzingen naar verwante overzichten en veelgestelde vragen (o.a. /alle-cabaretiers/) */
 .zie-ook { margin: 16px 0 0; color: var(--ink-2); }
