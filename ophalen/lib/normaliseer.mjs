@@ -49,6 +49,8 @@ const REGELS = [
   ["open-mic", /open[ -]?mic/],
   ["improvisatie", /\bimpro(visatie|v)?\b/],
   ["stand-up", /stand[ -]?up/],
+  // Het label "Cabaret/Kleinkunst" (o.a. De Kampanje) is cabaret.
+  ["cabaret", /cabaret\s*[/&]\s*kleinkunst/],
   ["kleinkunst", /kleinkunst/],
   // "Cabaret & comedy" is cabaret; alleen "comedy" zonder cabaret is stand-up.
   ["cabaret", /cabaret|humor/],

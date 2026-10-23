@@ -1,0 +1,259 @@
+{
+  "bron": "musis",
+  "naam": "Musis & Stadstheater Arnhem",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "stadstheater-arnhem",
+      "naam": "Stadstheater Arnhem",
+      "plaats": "Arnhem",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.musisenstadstheater.nl"
+    },
+    {
+      "id": "musis-arnhem",
+      "naam": "Musis Arnhem",
+      "plaats": "Arnhem",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.musisenstadstheater.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Yentl en de Boer"
+      ],
+      "titel": "Liedjesshow: De dagen",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/yentl-en-de-boer/10256"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Comedy vibe"
+      ],
+      "titel": "Srefidensi vibe",
+      "genre": "cabaret",
+      "datum": "2026-12-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/comedy-vibe-srefidensi-vibe-2026/10235"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/rayen-panday-grip/10209"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk eventueel de dag",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/janneke-de-bijl-pluk-eventueel-de-dag/10192"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim voor iedereen",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/micha-wertheim-voor-iedereen/10177"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Wim Helsen (BE)"
+      ],
+      "titel": "Welkom ongemak",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/wim-helsen-be-welkom-ongemak/10176"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Huub Stapel"
+      ],
+      "titel": "Mannen komen van Mars, vrouwen van Venus – Het onvermijdelijke vervolg",
+      "genre": "cabaret",
+      "datum": "2026-11-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/huub-stapel-mannen-komen-van-mars-vrouwen-van-venus-het-onvermijdelijke-vervolg/10145"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een snotje",
+      "genre": "cabaret",
+      "datum": "2027-03-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/kim-karssen-god-is-snotje/10123"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-05-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/thomas-van-luyn-super-normaal/10111"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is boos",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/esther-van-der-voort-mama-is-boos/10107"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z’n scherpst",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/rob-scheepers-scheepers-op-z-n-scherpst/10104"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Micky Overman"
+      ],
+      "titel": "Don't Threaten Me With A Good Time",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/micky-overman-theatertour/10095"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2026-11-17",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/kasper-van-der-laan-nieuw-programma/10083"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Marcel van Roosmalen"
+      ],
+      "titel": "Ik mag niet klagen",
+      "genre": "cabaret",
+      "datum": "2026-11-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/marcel-van-roosmalen-ik-mag-niet-klagen/10082"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/merijn-scholten-lemming/10080"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "High Class Bitch",
+      "genre": "cabaret",
+      "datum": "2027-03-10",
+      "tijd": "19:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/daniel-arends-high-class-bitch/10079"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "Had ik maar nooit zo aardig gedaan",
+      "genre": "cabaret",
+      "datum": "2027-03-10",
+      "tijd": "21:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/daniel-arends-had-ik-maar-nooit-zo-aardig-gedaan/10078"
+    },
+    {
+      "theater": "musis-arnhem",
+      "artiesten": [
+        "Najib en Roué"
+      ],
+      "titel": "Alles is Comedy",
+      "genre": "cabaret",
+      "datum": "2026-12-15",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/najib-en-roue-alles-is-comedy/10061"
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "bron": "venray",
+  "naam": "Schouwburg Venray",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "schouwburg-venray",
+      "naam": "Schouwburg Venray",
+      "plaats": "Venray",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.schouwburgvenray.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-10-29",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14532/guido-weijers"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "De Cabaret Club, ‘Op z’n Brabants’"
+      ],
+      "titel": "Vier korte cabaretvoorstellingen",
+      "genre": "cabaret",
+      "datum": "2026-11-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14660/de-cabaret-club-op-z-n-brabants"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Roel C. Verburg"
+      ],
+      "titel": "Slechtste Liedjes van de Straat",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14693/roel-c-verburg"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Ronald Snijders"
+      ],
+      "titel": "Leven met humor",
+      "genre": "cabaret",
+      "datum": "2026-12-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14698/ronald-snijders"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow – jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14702/jandino"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Berit Companjen"
+      ],
+      "titel": "Zei ik dat hardop?",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/15066/berit-companjen"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Fimme Bakker"
+      ],
+      "titel": "Zwaargewicht",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14648/fimme-bakker"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000,-",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14651/oscar-smit"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Remy Evers"
+      ],
+      "titel": "Graag gedaan",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.schouwburgvenray.nl/programma/14653/remy-evers-try-out"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14661/andries-tunru"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Is het leven al begonnen?",
+      "genre": "cabaret",
+      "datum": "2027-03-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.schouwburgvenray.nl/programma/14662/fabian-franciscus-try-out"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-03-16",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14585/christel-de-laat"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14588/christel-de-laat"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14589/christel-de-laat"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Christian van Eijkelenburg"
+      ],
+      "titel": "Small Talk",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14675/christian-van-eijkelenburg"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14679/esther-van-der-voort"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Iris Rulkens"
+      ],
+      "titel": "Van Harte!",
+      "genre": "cabaret",
+      "datum": "2027-03-31",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14684/iris-rulkens"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Bolder & Van Santen"
+      ],
+      "titel": "Looprat",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.schouwburgvenray.nl/programma/14687/bolder-van-santen-try-out"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14692/luuk-weggemans"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Boban Braspenning"
+      ],
+      "titel": "Bruto",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14015/boban-braspenning"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Céline Janssen"
+      ],
+      "titel": "Opera op Reis",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14696/celine-janssen"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Niet Schieten!"
+      ],
+      "titel": "Het Hoogtepunt",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14733/niet-schieten"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Tis Hier Geen Hotel 3"
+      ],
+      "titel": "Hanneke Drenth en Dianne Liesker",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.schouwburgvenray.nl/programma/14731/tis-hier-geen-hotel-3"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-04-20",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14728/jay-francis"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Cameretten Finalistentournee",
+      "genre": "cabaret",
+      "datum": "2027-04-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14726/cameretten"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Steven Brunswijk"
+      ],
+      "titel": "Navigatie is stuk",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14721/steven-brunswijk"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14720/david-van-rosmalen"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Kim Schuddeboom"
+      ],
+      "titel": "Kim Schuddeboom speelt Hardleers",
+      "genre": "cabaret",
+      "datum": "2027-05-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14718/kim-schuddeboom"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Martijn Kardol"
+      ],
+      "titel": "Voor de vorm",
+      "genre": "cabaret",
+      "datum": "2027-05-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.schouwburgvenray.nl/programma/14716/martijn-kardol"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Spruijt en Opperman"
+      ],
+      "titel": "Altijdloos",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14714/spruijt-en-opperman"
+    }
+  ]
+}

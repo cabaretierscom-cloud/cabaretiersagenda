@@ -7,6 +7,7 @@
 import { get, getText } from "../lib/http.mjs";
 import { jsonLd, isEvent, stripTags } from "../lib/html.mjs";
 import { lokaleDatumTijd, herkenGenre, herkenSoort, schemaStatus, netteNaam, netteHoofdletters, slug } from "../lib/normaliseer.mjs";
+import { artiestOfTitel } from "../lib/artiesten.mjs";
 
 const MAANDEN = { jan: 1, feb: 2, mrt: 3, maa: 3, apr: 4, mei: 5, jun: 6, jul: 7, aug: 8, sep: 9, okt: 10, nov: 11, dec: 12 };
 const STATUS = { uitverkocht: "uitverkocht", wachtlijst: "uitverkocht", geannuleerd: "geannuleerd", afgelast: "geannuleerd", verplaatst: "verplaatst" };
@@ -52,6 +53,7 @@ const zonderSoort = (t) => netteHoofdletters(t.replace(/\s*[-–—|(]\s*(try[ -
  * @param {boolean} [o.meerdereZalen]
  * @param {boolean} [o.titelEerst]  de kaart toont eerst de titel en dan de artiest (bijv. Bellevue)
  * @param {number} [o.maxPaginas] veiligheidsgrens voor het bladeren
+ * @param {RegExp} [o.voorvoegsel] reeksnaam voor de artiest die weg moet ("kweek: " bij De Lawei)
  */
 export function peppered(o) {
   const standaard = o.theaters[0];
@@ -86,6 +88,7 @@ export function peppered(o) {
       const overslaan = Object.entries(o.locaties || {}).filter(([, v]) => v === false).map(([k]) => k.toLowerCase());
       const kandidaten = [...alle.values()]
         .filter((k) => !overslaan.some((n) => `${k.kop} ${k.ondertitel}`.toLowerCase().includes(n)))
+        .map((k) => o.voorvoegsel ? { ...k, kop: k.kop.replace(o.voorvoegsel, ""), ondertitel: k.ondertitel.replace(o.voorvoegsel, "") } : k)
         .map((k) => ({ ...k, genre: herkenGenre(k.genres, k.kop, k.ondertitel) }))
         .filter((k) => k.genre);
       log(`${alle.size} voorstellingen in de agenda, ${kandidaten.length} cabaret/comedy`);
@@ -99,8 +102,9 @@ export function peppered(o) {
         const titelRuw = k.ondertitel || "";
         const soortUitTitel = herkenSoort(titelRuw);
         const [artiestTekst, titelTekst] = o.titelEerst ? [k.ondertitel, k.kop] : [k.kop, k.ondertitel];
-        const artiest = k.ondertitel ? netteNaam(artiestTekst) : null;
-        const titel = zonderSoort(k.ondertitel ? titelTekst : k.kop);
+        // "Valentina Tóth (try-out)": de soort hoort niet bij de naam.
+        const artiestRuw = k.ondertitel ? netteNaam(artiestTekst.replace(/\s*\((try[ -]?out|premi[eè]re|derni[eè]re|reprise)\)\s*$/i, "").trim()) : null;
+        const { artiest, titel } = artiestOfTitel(artiestRuw, zonderSoort(k.ondertitel ? titelTekst : k.kop));
         for (const ev of jsonLd(html).filter(isEvent)) {
           const wanneer = lokaleDatumTijd(ev.startDate);
           if (!wanneer) continue;

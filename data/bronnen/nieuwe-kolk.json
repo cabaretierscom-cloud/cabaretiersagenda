@@ -1,0 +1,693 @@
+{
+  "bron": "nieuwe-kolk",
+  "naam": "De Nieuwe Kolk",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "de-nieuwe-kolk",
+      "naam": "De Nieuwe Kolk",
+      "plaats": "Assen",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://denieuwekolk.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Plien & Bianca"
+      ],
+      "titel": "Harrekidee!",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://denieuwekolk.nl/theater/agenda/plien-bianca"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Rob en Emiel"
+      ],
+      "titel": "Thinking Like Sherlock",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/rob-en-emiel"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos - Oudejaars 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/dolf-jansen"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Juliet"
+      ],
+      "titel": "Ik beloof je eeuwige twijfel",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/juliet"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Ricky Risolles 3 – Niet zo Indiscreet…"
+      ],
+      "titel": "Geen zelfspot, geen toegang!",
+      "genre": "cabaret",
+      "datum": "2027-04-25",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/ricky-risolles-3-niet-zo-indiscreet"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Tis Hier Geen Hotel 3"
+      ],
+      "titel": "Hanneke Drenth en Dianne Liesker",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/tis-hier-geen-hotel-3"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Groenenberg & De Jong"
+      ],
+      "titel": "De Contributie",
+      "genre": "kleinkunst",
+      "datum": "2027-01-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/groenenberg-de-jong"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/merijn-scholten"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-05-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/nabil"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "Striptease Van De Dood",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/david-linszen"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2027-03-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/patrick-laureij"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://denieuwekolk.nl/theater/agenda/claudia-de-breij"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://denieuwekolk.nl/theater/agenda/claudia-de-breij"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Najib & Roué"
+      ],
+      "titel": "Alles is Comedy",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/najib-roue"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Wouter Monden"
+      ],
+      "titel": "Met Blokjes",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/wouter-monden"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Mylou Frencken"
+      ],
+      "titel": "Familie voor Beginners",
+      "genre": "kleinkunst",
+      "datum": "2027-05-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/mylou-frencken"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Blauwe Vinkjes"
+      ],
+      "titel": "Feestavond voor Assense Mantelzorgers",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/feestavond-voor-assense-mantelzorgers"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-04-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/esther-van-der-voort"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Tobi Kooiman"
+      ],
+      "titel": "Best Of 4",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://denieuwekolk.nl/theater/agenda/tobi-kooiman"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Drenthe Plat"
+      ],
+      "titel": "A`j plat kunt proat`n",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/drenthe-plat"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Annick Boer"
+      ],
+      "titel": "Vol Erin!",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/annick-boer"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/remko-vrijdag"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Roel & Jos Maalderink"
+      ],
+      "titel": "Verbroedering",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/roel-jos-maalderink"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Fieke Opdam"
+      ],
+      "titel": "Non-Actief",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/fieke-opdam"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "DE GROTE JUBILEUMSHOW - Jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/jandino"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/kasper-van-der-laan"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/jay-francis"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Kooiapen",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://denieuwekolk.nl/theater/agenda/martijn-crins"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Fimme Bakker"
+      ],
+      "titel": "Zwaargewicht",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/fimme-bakker"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Joost Spijkers"
+      ],
+      "titel": "Ziel & zalig",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/joost-spijkers"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Remy Evers"
+      ],
+      "titel": "Graag gedaan",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/remy-evers"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Boban Braspenning"
+      ],
+      "titel": "Bruto",
+      "genre": "cabaret",
+      "datum": "2027-03-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/boban-braspenning"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim voor iedereen",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/micha-wertheim"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/de-broers-van-arkel"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Jasper van der Veen"
+      ],
+      "titel": "Op scherp",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/jasper-van-der-veen"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "De poes van usi loes"
+      ],
+      "titel": "Joshua Timisela",
+      "genre": "cabaret",
+      "datum": "2027-03-31",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/de-poes-van-usi-loes"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Tim Kroezen"
+      ],
+      "titel": "550",
+      "genre": "cabaret",
+      "datum": "2027-02-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/tim-kroezen"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Marcel van Roosmalen"
+      ],
+      "titel": "Ik mag niet klagen",
+      "genre": "cabaret",
+      "datum": "2026-11-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/marcel-van-roosmalen"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/richard-groenendijk"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "stand-up",
+      "datum": "2027-04-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/wina-ricardo"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Milène van der Smissen"
+      ],
+      "titel": "De Schnabbelkoningin",
+      "genre": "kleinkunst",
+      "datum": "2027-03-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/milene-van-der-smissen"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Rob Kamphues"
+      ],
+      "titel": "Eindelijk Volwassen",
+      "genre": "cabaret",
+      "datum": "2027-02-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/rob-kamphues"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/jan-beuving"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Firma Frictie"
+      ],
+      "titel": "I'll be your daddy",
+      "genre": "kleinkunst",
+      "datum": "2026-12-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/firma-frictie"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Sara Kroos"
+      ],
+      "titel": "Prikkelarme kermis",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://denieuwekolk.nl/theater/agenda/sara-kroos"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Berit Companjen"
+      ],
+      "titel": "Zei ik dat hardop?",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/berit-companjen"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://denieuwekolk.nl/theater/agenda/valentina-toth"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "EVENHUIS/REIJNDERS en Tatum Dagelet"
+      ],
+      "titel": "Familiegeheimen",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/evenhuis-reijnders"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-02-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/rayen-panday"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Ricky Koole"
+      ],
+      "titel": "Rare Leeftijd",
+      "genre": "cabaret",
+      "datum": "2026-11-08",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/ricky-koole"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/luuk-weggemans"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Max van den Burg"
+      ],
+      "titel": "Maxikozi",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/max-van-den-burg"
+    }
+  ]
+}

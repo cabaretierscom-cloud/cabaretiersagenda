@@ -1,0 +1,524 @@
+{
+  "bron": "maaspoort",
+  "naam": "Maaspoort",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "maaspoort",
+      "naam": "Maaspoort",
+      "plaats": "Venlo",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.maaspoort.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/gelukkig-heb-je-mij-nog-richard-groenendijk/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Najib & Roué"
+      ],
+      "titel": "Alles is Comedy",
+      "genre": "cabaret",
+      "datum": "2026-10-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/alles-is-comedy-najib-roue/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaars conference",
+      "genre": "oudejaarsconference",
+      "datum": "2026-10-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.maaspoort.nl/programma/oudejaarsconference-try-out-guido-weijers/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Jochen Otten"
+      ],
+      "titel": "de kwaadste niet",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/de-kwaadste-niet-jochen-otten/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.maaspoort.nl/programma/kintsugi-reprise-patrick-laureij/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2026-12-21",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/kende-da-christel-de-laat/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/lemming-merijn-scholten/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z'n scherpst",
+      "genre": "cabaret",
+      "datum": "2027-06-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/scheepers-op-zn-scherpst-rob-scheepers/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-06-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/jay-francis-jay-francis/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Leon's Comedy Club"
+      ],
+      "titel": "Leon van der Zanden e.a",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/leons-comedy-club-leon-van-der-zanden-e.a/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is boos",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/mama-is-boos-esther-van-der-voort/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/winas-wereld-wina-ricardo/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/daar-is-hij-weer-nabil/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Kees Prins"
+      ],
+      "titel": "Yesterday",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/kees-prins-kees-prins/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/andries-tunru-andries-tunru/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Ricky Risolles"
+      ],
+      "titel": "Niet zo indiscreet…",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/niet-zo-indiscreet-ricky-risolles/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-04-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/valentina-toth-valentina-toth/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-04-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/rayen-panday-rayen-panday/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Marlon Kicken"
+      ],
+      "titel": "Maestro!",
+      "genre": "cabaret",
+      "datum": "2027-03-31",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/marlon-kicken-marlon-kicken/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een snotje",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/kim-karssen-kim-karssen/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/wagyu-rundfunk/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Glodi Lugungu"
+      ],
+      "titel": "In de Hemel ken ik jullie niet",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/in-de-hemel-ken-ik-jullie-niet-glodi-lugungu/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Kooiapen",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.maaspoort.nl/programma/kooiapen-try-out-martijn-crins/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/mensenmens-daan-van-der-hoeven/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/2627-martijn-koning-martijn-koning/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Comedy Festival Limburg"
+      ],
+      "titel": "Halve Finale",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/halve-finale-comedy-festival-limburg/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "De Baas",
+      "genre": "cabaret",
+      "datum": "2027-02-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/de-baas-lisa-ostermann/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Cameretten Festival"
+      ],
+      "titel": "Finalistentournee",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/cameretten-festival-finalistentournee-1/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Jandino Asporaat"
+      ],
+      "titel": "De grote jubileumshow | jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/jandino-jandino-asporaat/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Myrte Siebinga"
+      ],
+      "titel": "Gelukkig Maar",
+      "genre": "cabaret",
+      "datum": "2027-01-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/gelukkig-maar-myrte-siebinga/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Lachen in GRENSWERK"
+      ],
+      "titel": "Nationaal Theaterweekend",
+      "genre": "cabaret",
+      "datum": "2027-01-31",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/lachen-in-grenswerk-nationaal-theaterweekend-1/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Andries & Stefan | Beperkt Houdbaar"
+      ],
+      "titel": "De nogal hyper-bijzondere Oudejaars-improvisatie-extravaganza",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/de-nogal-hyper-bijzondere-oudejaars-improvisatie-extravaganza-andries-stefan-beperkt-houdbaar/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/noodzakelijk-kwaad-rene-van-meurs/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Cabarestafette"
+      ],
+      "titel": "Cabarestafette 26-27",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/cabarestafette-cabarestafette-26-27/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/dekpunt-jan-beuving/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Plien & Bianca"
+      ],
+      "titel": "Harrekidee!",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.maaspoort.nl/programma/harrekidee-reprise-plien-bianca/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.maaspoort.nl/programma/selma-visscher-try-out-selma-visscher/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Tim Kroezen"
+      ],
+      "titel": "550",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/550-in-de-lift-tim-kroezen/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos - Oudejaars2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-10-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/schaamteloos-oudejaars2026-dolf-jansen/"
+    }
+  ]
+}

@@ -1,0 +1,667 @@
+{
+  "bron": "hof88",
+  "naam": "Hof88",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "hof88",
+      "naam": "Hof88",
+      "plaats": "Almelo",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.hof88.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan Is Moe",
+      "genre": "cabaret",
+      "datum": "2026-10-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/satan-is-moe-lebbis"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "André Manuel"
+      ],
+      "titel": "De Eenzame Ziel",
+      "genre": "cabaret",
+      "datum": "2026-11-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.hof88.nl/voorstellingen/de-eenzame-ziel-try-out-andre-manuel"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.hof88.nl/voorstellingen/revue-revanche-try-out-valentina-toth"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Naomi Antonius"
+      ],
+      "titel": "Geen woorden voor - over de illusie van inclusie",
+      "genre": "cabaret",
+      "datum": "2026-11-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/geen-woorden-voor-over-de-illusie-van-inclusie-naomi-antonius"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Berit Companjen"
+      ],
+      "titel": "Zei ik dat hardop?",
+      "genre": "cabaret",
+      "datum": "2026-11-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/zei-ik-dat-hardop-berit-compagnen"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.hof88.nl/voorstellingen/try-out-peter-pannekoek"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Anne & Bas"
+      ],
+      "titel": "De Natte Dromen Revue",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/de-natte-dromen-revue-anne-bas"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Max van den Burg"
+      ],
+      "titel": "Maxikosi",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/maxikosi-max-van-den-burg"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Roel en Jos Maalderink"
+      ],
+      "titel": "Verbroedering",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/verbroedering-roel-en-jos-maalderink"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Muiters (Thijs Kemperink & Erwin Nyhoff)"
+      ],
+      "titel": "vieren een Muiterse Kerst",
+      "genre": "cabaret",
+      "datum": "2026-11-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/vieren-een-muiterse-kerst-muiters-thijs-kemperink-erwin-nyhoff"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000,-",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.hof88.nl/voorstellingen/472.000-oscar-smit"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Diva's in de Kerststal"
+      ],
+      "titel": "Een komische Kerstrevue",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/een-komische-kerstrevue-divas-in-de-kerststal"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Pieter Jouke"
+      ],
+      "titel": "Uit Stilstand",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/uit-stilstand-pieter-jouke"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Kim Schuddeboom"
+      ],
+      "titel": "Hardleers",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/hardleers-kim-schuddeboom"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Rob Kamphues"
+      ],
+      "titel": "Eindelijk Volwassen",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/eindelijk-volwassen-rob-kamphues"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Joost Spijkers"
+      ],
+      "titel": "Ziel en Zalig",
+      "genre": "cabaret",
+      "datum": "2027-01-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/ziel-en-zalig-joost-spijkers"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Klub Karmijn"
+      ],
+      "titel": "Nee, jouw kop is kermis",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/nee-jouw-kop-is-kermis-klub-karmijn"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Ruud Smulders"
+      ],
+      "titel": "Rüdsichtslos",
+      "genre": "cabaret",
+      "datum": "2027-01-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/rudsichtslos-ruud-smulders"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.hof88.nl/voorstellingen/imperfect-try-out-klaas-van-der-eerden"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Zij en Aron Elstak"
+      ],
+      "titel": "Match!",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/match-zij-en-aron-elstak"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-02-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/lach-maar-om-mij-luuk-weggemans"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Eigenlijk"
+      ],
+      "titel": "Viggo Waas, Eddie B Wahr & Kees van der Vooren",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/eigenlijk-viggo-waas-eddie-b-wahr-kees-van-der-vooren"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Gewoon Aans"
+      ],
+      "titel": "Wat 'n gedoo!",
+      "genre": "cabaret",
+      "datum": "2027-02-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/wat-n-gedoo-gewoon-aans"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Roué Verveer & Peter van Ewijk"
+      ],
+      "titel": "Dubbelcabaret",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/dubbelcabaret-roue-verveer-peter-van-ewijk"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Diederick Ensink"
+      ],
+      "titel": "Iets te vieren?!",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/iets-te-vieren-diederick-ensink"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Twente Plat"
+      ],
+      "titel": "Lachen is gezond",
+      "genre": "cabaret",
+      "datum": "2027-03-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/lachen-is-gezond-twente-plat"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina’s Wereld",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/winas-wereld-wina-ricardo"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-03-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/als-ik-jou-was-david-van-rosmalen"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Amsterdams Kleinkunst Festival"
+      ],
+      "titel": "Halve Finalisten Tournee - deel 2",
+      "genre": "cabaret",
+      "datum": "2027-03-30",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/halve-finalisten-tournee-deel-2-amsterdams-kleinkunst-festival"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Chris Verlaan"
+      ],
+      "titel": "Ach, er komen geen kindjes van",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/ach-er-komen-geen-kindjes-van-chris-verlaan"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Luuk Ransijn"
+      ],
+      "titel": "Uitkijk",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/uitkijk-luuk-ransijn"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Maarten Westra Hoekzema"
+      ],
+      "titel": "Ik had eigenlijk nee moeten zeggen",
+      "genre": "cabaret",
+      "datum": "2027-03-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/ik-had-eigenlijk-nee-moeten-zeggen-maarten-westra-hoekzema"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Alex Ploeg"
+      ],
+      "titel": "Niks Persoonlijks",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.hof88.nl/voorstellingen/niks-persoonlijks-try-out-alex-ploeg"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Nathalie Baartman"
+      ],
+      "titel": "De Bössels van Baartman II",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/de-bossels-van-baartman-ii-nathalie-baartman"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Spruijt & Opperman"
+      ],
+      "titel": "Altijdloos",
+      "genre": "cabaret",
+      "datum": "2027-03-31",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/altijdloos-spruijt-opperman"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "Juk",
+      "genre": "cabaret",
+      "datum": "2027-04-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/juk-jeroens-clan"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "cabaret",
+      "datum": "2027-04-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/trekvogel-selma-visscher"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Esther Groenenberg & Nynke de Jong"
+      ],
+      "titel": "De Contributie",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/de-contributie-esther-groenenberg-nynke-de-jong"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Fieke Opdam"
+      ],
+      "titel": "Non-actief",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/non-actief-fieke-opdam"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Sezgin Güleç"
+      ],
+      "titel": "Sezgin Güleç",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.hof88.nl/voorstellingen/try-out-sezgin-gulec"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Anuar"
+      ],
+      "titel": "Ongeduldig geduldig",
+      "genre": "cabaret",
+      "datum": "2027-04-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/ongeduldig-geduldig-anuar"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Club Lam"
+      ],
+      "titel": "Dolle Mina",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/dolle-mina-club-lam"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Nesim el Ahmadi"
+      ],
+      "titel": "Iedereen komt aan de beurt",
+      "genre": "cabaret",
+      "datum": "2026-12-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/je-verzint-het-niet-nesim-el-ahmadi"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Dorine Wiersma"
+      ],
+      "titel": "Gaandeweg",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/gaandeweg-dorine-wiersma"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Christian van Eijkelenburg"
+      ],
+      "titel": "Small Talk",
+      "genre": "cabaret",
+      "datum": "2027-05-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/small-talk-christian-van-eijkelenburg"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Heel Holland Hoopt",
+      "genre": "cabaret",
+      "datum": "2027-05-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/heel-holland-hoopt-marja-van-katendrecht"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Martijn Kardol"
+      ],
+      "titel": "Voor de vorm",
+      "genre": "cabaret",
+      "datum": "2027-06-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.hof88.nl/voorstellingen/voor-de-vorm-try-out-martijn-kardol"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Joey en Dave"
+      ],
+      "titel": "Houden het luchtig…",
+      "genre": "cabaret",
+      "datum": "2027-06-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/houden-het-luchtig-joey-en-dave"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Arjan Kleton"
+      ],
+      "titel": "Ongewenst",
+      "genre": "cabaret",
+      "datum": "2027-06-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.hof88.nl/voorstellingen/ongewenst-try-out-arjan-kleton"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Burger Koekoek"
+      ],
+      "titel": "Met een vloek en een zucht",
+      "genre": "cabaret",
+      "datum": "2027-06-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.hof88.nl/voorstellingen/met-een-vloek-en-een-zucht-try-out-burger-koekoek"
+    }
+  ]
+}

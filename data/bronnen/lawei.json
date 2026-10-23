@@ -1,0 +1,745 @@
+{
+  "bron": "lawei",
+  "naam": "Schouwburg De Lawei",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "schouwburg-de-lawei",
+      "naam": "Schouwburg De Lawei",
+      "plaats": "Drachten",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.lawei.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2026-10-31",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/kweek-david-van-rosmalen-bb1l"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Kiki Schippers"
+      ],
+      "titel": "Praktische bezwaren",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/kiki-schippers-ccgx"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Kinderen van de Molukken"
+      ],
+      "titel": "Kelapa Muda",
+      "genre": "cabaret",
+      "datum": "2026-11-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/kinderen-van-de-molukken-ffjt"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Ronald Snijders"
+      ],
+      "titel": "Leven met humor",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/ronald-snijders-rrzs"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Plien & Bianca"
+      ],
+      "titel": "Harrekidee!",
+      "genre": "cabaret",
+      "datum": "2026-11-16",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.lawei.nl/agenda/plien-bianca-rrw6"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow – Jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2026-11-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/jandino-dd1j"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Chris Verlaan"
+      ],
+      "titel": "Ach, er komen geen kindjes van",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/chris-verlaan-jj4n"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Boban Braspenning"
+      ],
+      "titel": "Bruto",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/kweek-boban-braspenning-nnr6"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "De baas",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/lisa-ostermann-zzkh"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Ruud Smulders"
+      ],
+      "titel": "Rüdsichtslos",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/ruud-smulders-cclm"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Klub Karmijn"
+      ],
+      "titel": "Nee, jouw kop is kermis",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/kweek-klub-karmijn-ssvs"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Rob Urgert & Joep van Deudekom"
+      ],
+      "titel": "De grote oudejaars kwis 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/rob-urgert-joep-van-deudekom-88v5"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/guido-weijers-55qd"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt houdbaar",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/andries-tunru-stefan-hendrikx-rrwl"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Altijd aan",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/pieter-verelst-zzbw"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "40ste Groninger Studenten Cabaret Festival"
+      ],
+      "titel": "Finalistentour",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/kweek-40ste-groninger-studenten-cabaret-festival-tt49"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Roel C. Verburg"
+      ],
+      "titel": "Slechtste liedjes van de straat",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/roel-c-verburg-llpz"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Elfie Tromp"
+      ],
+      "titel": "Aai poesje aai poesje",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/elfie-tromp-11js"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/remko-vrijdag-ttym"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-02-02",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/christel-de-laat-rrl3"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/christel-de-laat-rrl3"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/christel-de-laat-rrl3"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/thijs-van-de-meeberg-11hl"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat maar",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/bettina-holwerda-qqls"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Bart"
+      ],
+      "titel": "Ontsteking",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/kweek-bart-jjpq"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-02-10",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/van-der-laan-woe-77kr"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2027-02-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/patrick-laureij-44m6"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk eventueel de dag",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/janneke-de-bijl-yyk1"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Remy Evers"
+      ],
+      "titel": "Graag gedaan",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.lawei.nl/agenda/remy-evers-rry4"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/nabil-ddts"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/joosen-en-de-jager-yywc"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "De broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/kweek-de-broers-van-arkel-99ss"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Hokjesdenker"
+      ],
+      "titel": "We zien het wel even",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:15",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/hokjesdenker-11p7"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Kees van Amstel"
+      ],
+      "titel": "Mogen we eerder weg?",
+      "genre": "cabaret",
+      "datum": "2027-03-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/kees-van-amstel-mm14"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.lawei.nl/agenda/klaas-van-der-eerden-11lf"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-03-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/marie-koet-mmny"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Julián Fontalvo"
+      ],
+      "titel": "The Imitator",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/julian-fontalvo-yyx8"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Van Vleuten & Van Muiswinkel"
+      ],
+      "titel": "Alles onder controle",
+      "genre": "cabaret",
+      "datum": "2027-04-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/van-vleuten-van-muiswinkel-557q"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "André Manuel"
+      ],
+      "titel": "De eenzame ziel",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/andre-manuel-bbq2"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Ricky Risolles 3"
+      ],
+      "titel": "Niet zo indiscreet…",
+      "genre": "cabaret",
+      "datum": "2027-04-18",
+      "tijd": "14:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/ricky-risolles-3-nn8d"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/jay-francis-ssk8"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/selma-visscher-557d"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Heel Holland hoopt",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/marja-van-katendrecht-ffz8"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000,-",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/kweek-oscar-smit-5589"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is boos",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/esther-van-der-voort-mm92"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-05-11",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/richard-groenendijk-jjz5"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Samir Fighil"
+      ],
+      "titel": "Turbulentie",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/samir-fighil-llbm"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Elias De Bruyne"
+      ],
+      "titel": "One night with Elias",
+      "genre": "cabaret",
+      "datum": "2027-05-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/elias-de-bruyne-llk3"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Iris Rulkens"
+      ],
+      "titel": "Van harte!",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/iris-rulkens-xxnz"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een snotje",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/kim-karssen-11lj"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje eitje",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/nienke-plas-rrh8"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/daan-van-der-hoeven-cc2w"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Maaike Dirkje Hop"
+      ],
+      "titel": "Erkenning, de musical",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.lawei.nl/agenda/kweek-maaike-dirkje-hop-55lt"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue revanche",
+      "genre": "cabaret",
+      "datum": "2027-06-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/valentina-toth-yypt"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-06-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/rundfunk-ll96"
+    },
+    {
+      "theater": "schouwburg-de-lawei",
+      "artiesten": [
+        "Eigenlijk"
+      ],
+      "titel": "Viggo Waas, Eddie B. Wahr en Kees van der Vooren",
+      "genre": "cabaret",
+      "datum": "2027-06-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/viggo-waas-eddie-b-wahr-en-kees-van-der-vooren-11w3"
+    }
+  ]
+}

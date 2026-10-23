@@ -1,0 +1,147 @@
+{
+  "bron": "ogterop",
+  "naam": "Schouwburg Ogterop",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "schouwburg-ogterop",
+      "naam": "Schouwburg Ogterop",
+      "plaats": "Meppel",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.schouwburgogterop.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "schouwburg-ogterop",
+      "artiesten": [
+        "Hokjesdenker"
+      ],
+      "titel": "We zien het wel even",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgogterop.nl/programma/hokjesdenker"
+    },
+    {
+      "theater": "schouwburg-ogterop",
+      "artiesten": [
+        "Martijn Kardol"
+      ],
+      "titel": "Voor de vorm",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.schouwburgogterop.nl/programma/martijn-kardol-voor-de-vorm-try-out"
+    },
+    {
+      "theater": "schouwburg-ogterop",
+      "artiesten": [
+        "Teun van den Elzen"
+      ],
+      "titel": "Ze moesten eens weten",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.schouwburgogterop.nl/programma/teun-van-den-elzen-ze-moesten-eens-weten-try-out"
+    },
+    {
+      "theater": "schouwburg-ogterop",
+      "artiesten": [
+        "Fieke Opdam"
+      ],
+      "titel": "Non-actief",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgogterop.nl/programma/fieke-opdam-non-actief"
+    },
+    {
+      "theater": "schouwburg-ogterop",
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "Juk",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgogterop.nl/programma/jeroens-clan-juk"
+    },
+    {
+      "theater": "schouwburg-ogterop",
+      "artiesten": [
+        "Grof Geschud"
+      ],
+      "titel": "Vieren",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgogterop.nl/programma/grof-geschud-vieren"
+    },
+    {
+      "theater": "schouwburg-ogterop",
+      "artiesten": [
+        "Joosen & de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.schouwburgogterop.nl/programma/joosen-de-jager-niks-aan-het-handje"
+    },
+    {
+      "theater": "schouwburg-ogterop",
+      "artiesten": [
+        "De Meiden van Toen"
+      ],
+      "titel": "Naar de Getver",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgogterop.nl/programma/de-meiden-van-toen-naar-de-getver"
+    },
+    {
+      "theater": "schouwburg-ogterop",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk eventueel de dag",
+      "genre": "cabaret",
+      "datum": "2026-11-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgogterop.nl/programma/janneke-de-bijl-pluk-eventueel-de-dag"
+    },
+    {
+      "theater": "schouwburg-ogterop",
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "cabaret",
+      "datum": "2026-10-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgogterop.nl/programma/andries-tunru-stefan-hendrikx-beperkt-houdbaar"
+    }
+  ]
+}

@@ -1,0 +1,795 @@
+{
+  "bron": "kampanje",
+  "naam": "Theater de Kampanje",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "theater-de-kampanje",
+      "naam": "Theater de Kampanje",
+      "plaats": "Den Helder",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.kampanje.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Bert Visscher met het Noordpool Strijkkwartet"
+      ],
+      "titel": "65 Dat Zou Je Niet Zeggen",
+      "genre": "cabaret",
+      "datum": "2026-10-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/bert-visscher-met-het-noordpool-strijkkwartet-d7hj"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Hè Fijn",
+      "genre": "cabaret",
+      "datum": "2026-10-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/martijn-crins-fjm1"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2026-10-31",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.kampanje.nl/voorstellingen/valentina-toth-try-out-rz9j"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Marjolijn van Kooten"
+      ],
+      "titel": "Aan mij zal het niet liggen",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/marjolijn-van-kooten-zb8v"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos - Oudejaars2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/dolf-jansen-yvf1"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/kasper-van-der-laan-5szb"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/de-broers-van-arkel-5skr"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Tis Hier Geen Hotel 3"
+      ],
+      "titel": "Met Hanneke Drenth en Dianne Liesker",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/tis-hier-geen-hotel-3-mtjl"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Peter van Ewijk"
+      ],
+      "titel": "Groeiramp",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/peter-van-ewijk-qyx2"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Hokjesdenker"
+      ],
+      "titel": "We zien het wel even",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/hokjesdenker-jknt"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "De Baas",
+      "genre": "cabaret",
+      "datum": "2026-12-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/bob-koomen-lm1v"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Amhali & Verveer"
+      ],
+      "titel": "Alles is Comedy",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/amhali-verveer-xcj4"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Amhali & Verveer"
+      ],
+      "titel": "Alles is Comedy",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/amhali-verveer-xcj4"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2026-12-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/wina-ricardo-1hdh"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Comedytunes"
+      ],
+      "titel": "Comedynight",
+      "genre": "cabaret",
+      "datum": "2026-12-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/comedytunes-zbsm"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Chris Verlaan"
+      ],
+      "titel": "Ach, er komen geen kindjes van",
+      "genre": "cabaret",
+      "datum": "2027-01-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/chris-verlaan-qyxl"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Ronald Snijders"
+      ],
+      "titel": "Leven met humor",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/ronald-snijders-5sv7"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Roel & Jos Maalderink"
+      ],
+      "titel": "Verbroedering",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Gavin Reijnders"
+      ],
+      "titel": "Jazzebelle",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/gavin-reijnders-h679"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.kampanje.nl/voorstellingen/rene-van-meurs-reprise-h6c6"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Nhung Dam"
+      ],
+      "titel": "Legende van de witte slang",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/nhung-dam-4dsf"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Ricky Koole"
+      ],
+      "titel": "Rare Leeftijd",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/ricky-koole-fjmz"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-01-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/daan-van-der-hoeven-qy6j"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Nationaal Theaterweekend 2027"
+      ],
+      "titel": "Blind Date - Cabaret",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/nationaal-theaterweekend-2027-614j"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk eventueel de dag",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/janneke-de-bijl-rz9m"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.kampanje.nl/voorstellingen/patrick-laureij-reprise-rzmr"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "High Class Bitch",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "19:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.kampanje.nl/voorstellingen/daniel-arends-reprise-qywr"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "Had ik maar nooit zo aardig gedaan",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "21:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.kampanje.nl/voorstellingen/daniel-arends-reprise-lmf3"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "High Class Bitch",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "19:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.kampanje.nl/voorstellingen/daniel-arends-reprise-zbc3"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "Had ik maar nooit zo aardig gedaan",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "21:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.kampanje.nl/voorstellingen/daniel-arends-reprise-5s4q"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [],
+      "titel": "Sederginne’s Feestelijke Cabaret B.I.N.G.O. Show (18+)",
+      "genre": "cabaret",
+      "datum": "2027-02-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/sederginne-s-feestelijke-cabaret-b-i-n-g-o-show-18-5sm8"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Tineke Schouten"
+      ],
+      "titel": "Femme Vitaal",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.kampanje.nl/voorstellingen/tineke-schouten-reprise-cgmm"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Max van den Burg"
+      ],
+      "titel": "Maxikozi",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/max-van-den-burg-lmrm"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Ricky Risolles 3"
+      ],
+      "titel": "Niet zo Indiscreet…",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/ricky-risolles-3-1h9z"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/david-van-rosmalen-d7ph"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Arie & Silvester"
+      ],
+      "titel": "Breken de tent af!",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/arie-silvester-n2p9"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Kees van Amstel"
+      ],
+      "titel": "Mogen we eerder weg?",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/kees-van-amstel-qy6g"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2027-03-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/joosen-en-de-jager-98kj"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/ronald-goedemondt-n24b"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/marie-koet-cgxx"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Huub Smit en Gürkan Küçüksentürk"
+      ],
+      "titel": "Zei je dat echt?",
+      "genre": "cabaret",
+      "datum": "2027-04-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/huub-smit-en-gurkan-kucuksenturk-83nd"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/richard-groenendijk-74x5"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/luuk-weggemans-br3z"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/esther-van-der-voort-zbrw"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Huisgenoten"
+      ],
+      "titel": "De nieuwe romantische comedy",
+      "genre": "stand-up",
+      "datum": "2027-04-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/huisgenoten-5spc"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000,-",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/oscar-smit-tl6x"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "DE GROTE JUBILEUMSHOW – Jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/jandino-qyv8"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "De Cabaret Club"
+      ],
+      "titel": "Vier korte cabaretvoorstellingen",
+      "genre": "cabaret",
+      "datum": "2027-04-30",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/de-cabaret-club-lmtw"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Kim Schuddeboom"
+      ],
+      "titel": "Hardleers",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/kim-schuddeboom-h685"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-05-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/merijn-scholten-n249"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/jay-francis-h61b"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Meester Mark"
+      ],
+      "titel": "Later word ik 7",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/meester-mark-1h57"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Roel C. Verburg"
+      ],
+      "titel": "Slechtste Liedjes van de Straat",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/roel-c-verburg-4d2q"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/martijn-koning-fjx4"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Jeannine la Rose"
+      ],
+      "titel": "Meer?!",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/jeannine-la-rose-cgbb"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Leids Cabaret Festival"
+      ],
+      "titel": "Finalistentour 2027",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/leids-cabaret-festival-613y"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-06-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/rundfunk-d74l"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "cabaret",
+      "datum": "2027-06-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/andries-tunru-stefan-hendrikx-rz5x"
+    }
+  ]
+}

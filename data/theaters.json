@@ -72,12 +72,52 @@
     "website": null
   },
   {
+    "id": "cc-de-schakel",
+    "naam": "CC De Schakel",
+    "plaats": "Waregem",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.ccdeschakel.be"
+  },
+  {
+    "id": "theater-aan-de-parade",
+    "naam": "Theater aan de Parade",
+    "plaats": "'s-Hertogenbosch",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.theateraandeparade.nl"
+  },
+  {
+    "id": "hof88",
+    "naam": "Hof88",
+    "plaats": "Almelo",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.hof88.nl"
+  },
+  {
     "id": "kunstlinie",
     "naam": "Kunstlinie Almere",
     "plaats": "Almere",
     "land": "NL",
     "soort": "theater",
     "website": null
+  },
+  {
+    "id": "parkvilla",
+    "naam": "Parkvilla",
+    "plaats": "Alphen aan den Rijn",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://parkvilla.nl"
+  },
+  {
+    "id": "schouwburg-amstelveen",
+    "naam": "Schouwburg Amstelveen",
+    "plaats": "Amstelveen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://schouwburgamstelveen.nl"
   },
   {
     "id": "comedy-cafe-amsterdam",
@@ -136,6 +176,30 @@
     "website": "https://www.orpheus.nl"
   },
   {
+    "id": "musis-arnhem",
+    "naam": "Musis Arnhem",
+    "plaats": "Arnhem",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.musisenstadstheater.nl"
+  },
+  {
+    "id": "stadstheater-arnhem",
+    "naam": "Stadstheater Arnhem",
+    "plaats": "Arnhem",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.musisenstadstheater.nl"
+  },
+  {
+    "id": "de-nieuwe-kolk",
+    "naam": "De Nieuwe Kolk",
+    "plaats": "Assen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://denieuwekolk.nl"
+  },
+  {
     "id": "chasse",
     "naam": "Chassé Theater",
     "plaats": "Breda",
@@ -158,6 +222,22 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.hnt.nl"
+  },
+  {
+    "id": "theater-de-kampanje",
+    "naam": "Theater de Kampanje",
+    "plaats": "Den Helder",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.kampanje.nl"
+  },
+  {
+    "id": "schouwburg-de-lawei",
+    "naam": "Schouwburg De Lawei",
+    "plaats": "Drachten",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.lawei.nl"
   },
   {
     "id": "parktheater-eindhoven",
@@ -240,6 +320,14 @@
     "website": null
   },
   {
+    "id": "cpunt",
+    "naam": "Cpunt",
+    "plaats": "Hoofddorp",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.cpunt.nl"
+  },
+  {
     "id": "de-harmonie",
     "naam": "De Harmonie",
     "plaats": "Leeuwarden",
@@ -262,6 +350,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.theateraanhetvrijthof.nl"
+  },
+  {
+    "id": "schouwburg-ogterop",
+    "naam": "Schouwburg Ogterop",
+    "plaats": "Meppel",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.schouwburgogterop.nl"
   },
   {
     "id": "schouwburg-middelburg",
@@ -344,6 +440,14 @@
     "website": "https://www.theaterwalhalla.nl"
   },
   {
+    "id": "theater-aan-de-schie",
+    "naam": "Theater aan de Schie",
+    "plaats": "Schiedam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://theateraandeschie.nl"
+  },
+  {
     "id": "concertzaal-tilburg",
     "naam": "Concertzaal Tilburg",
     "plaats": "Tilburg",
@@ -366,6 +470,30 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://stadsschouwburg-utrecht.nl"
+  },
+  {
+    "id": "theater-lampegiet",
+    "naam": "Theater Lampegiet",
+    "plaats": "Veghel",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.lampegiet.nl"
+  },
+  {
+    "id": "maaspoort",
+    "naam": "Maaspoort",
+    "plaats": "Venlo",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.maaspoort.nl"
+  },
+  {
+    "id": "schouwburg-venray",
+    "naam": "Schouwburg Venray",
+    "plaats": "Venray",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.schouwburgvenray.nl"
   },
   {
     "id": "zaantheater",

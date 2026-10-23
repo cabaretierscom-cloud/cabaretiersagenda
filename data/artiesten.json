@@ -286,6 +286,12 @@
     "kleur": "blauw"
   },
   {
+    "id": "avond-van-het-cabaret",
+    "naam": "Avond van het Cabaret",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
     "id": "ayoub-kharkhach",
     "naam": "Ayoub Kharkhach",
     "land": null,
@@ -366,6 +372,12 @@
     }
   },
   {
+    "id": "bert-visscher",
+    "naam": "Bert Visscher",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
     "id": "bert-visscher-en-martin-van-waardenberg",
     "naam": "Bert Visscher & Martin van Waardenberg",
     "land": null,
@@ -422,6 +434,12 @@
       "datum": "2018-05-12",
       "alt": "Bianca Del Rio op RuPaul's DragCon in 2018"
     }
+  },
+  {
+    "id": "bill-bailey",
+    "naam": "Bill Bailey",
+    "land": null,
+    "kleur": "paars"
   },
   {
     "id": "blauwe-vinkjes",
@@ -598,6 +616,12 @@
     }
   },
   {
+    "id": "club-lam",
+    "naam": "Club Lam",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
     "id": "collectief-jongste-kind",
     "naam": "Collectief Jongste Kind",
     "land": null,
@@ -610,10 +634,22 @@
     "kleur": "blauw"
   },
   {
+    "id": "comedy-club-haug",
+    "naam": "Comedy Club Haug",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
     "id": "comedy-comedians",
     "naam": "Comedy Comedians",
     "land": null,
     "kleur": "limoen"
+  },
+  {
+    "id": "comedy-festival-limburg",
+    "naam": "Comedy Festival Limburg",
+    "land": null,
+    "kleur": "oranje"
   },
   {
     "id": "comedy-vibe",
@@ -646,6 +682,12 @@
     "kleur": "groen"
   },
   {
+    "id": "dan-and-phil",
+    "naam": "Dan and Phil",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
     "id": "daniel-arends",
     "naam": "Daniël Arends",
     "land": null,
@@ -674,6 +716,12 @@
     "kleur": "geel"
   },
   {
+    "id": "davey-geernaert",
+    "naam": "Davey Geernaert",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
     "id": "david-linszen",
     "naam": "David Linszen",
     "land": null,
@@ -684,6 +732,12 @@
     "naam": "David van Rosmalen",
     "land": null,
     "kleur": "lila"
+  },
+  {
+    "id": "ddt-houdt-uitverkoop",
+    "naam": "DDT houdt uitverkoop",
+    "land": null,
+    "kleur": "geel"
   },
   {
     "id": "de-broers-van-arkel",
@@ -728,11 +782,23 @@
     "kleur": "oranje"
   },
   {
+    "id": "de-poes-van-usi-loes",
+    "naam": "De poes van usi loes",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
     "id": "de-tunes",
     "naam": "De Tunes",
     "land": null,
     "kleur": "rood",
     "vorm": "groep"
+  },
+  {
+    "id": "de-verleiders",
+    "naam": "De Verleiders",
+    "land": null,
+    "kleur": "limoen"
   },
   {
     "id": "deng-boy",
@@ -747,10 +813,22 @@
     "kleur": "aqua"
   },
   {
+    "id": "diederick-ensink",
+    "naam": "Diederick Ensink",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
     "id": "diederik-zuurmond",
     "naam": "Diederik Zuurmond",
     "land": null,
     "kleur": "geel"
+  },
+  {
+    "id": "diva-s-in-de-kerststal",
+    "naam": "Diva's in de Kerststal",
+    "land": null,
+    "kleur": "aqua"
   },
   {
     "id": "diva-s-op-stal",
@@ -777,6 +855,12 @@
     "kleur": "blauw"
   },
   {
+    "id": "dokter-bart",
+    "naam": "Dokter Bart",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
     "id": "dolf-jansen",
     "naam": "Dolf Jansen",
     "land": null,
@@ -797,6 +881,30 @@
       "datum": null,
       "alt": "Dolf Jansen tijdens de Uitmarkt van 2008"
     }
+  },
+  {
+    "id": "dorine-wiersma",
+    "naam": "Dorine Wiersma",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "double-dutch",
+    "naam": "Double Dutch",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "drenthe-plat",
+    "naam": "Drenthe Plat",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "dries-heyneman",
+    "naam": "Dries Heyneman",
+    "land": null,
+    "kleur": "blauw"
   },
   {
     "id": "echt-gebeurd",
@@ -835,6 +943,12 @@
     "kleur": "groen"
   },
   {
+    "id": "els-de-schepper",
+    "naam": "Els De Schepper",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
     "id": "emmy-krooshof",
     "naam": "Emmy Krooshof",
     "land": null,
@@ -853,10 +967,22 @@
     "kleur": "roze"
   },
   {
+    "id": "erhan-demirci",
+    "naam": "Erhan Demirci",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
     "id": "erik-boddeus",
     "naam": "Erik Boddeüs",
     "land": null,
     "kleur": "geel"
+  },
+  {
+    "id": "erwin-nyhoff",
+    "naam": "Erwin Nyhoff",
+    "land": null,
+    "kleur": "paars"
   },
   {
     "id": "esther-van-der-voort",
@@ -887,6 +1013,18 @@
     "kleur": "aqua"
   },
   {
+    "id": "evenhuis-reijnders-en-tatum-dagelet",
+    "naam": "EVENHUIS/REIJNDERS en Tatum Dagelet",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
+    "id": "expat-cafe",
+    "naam": "Expat Cafe",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
     "id": "fabian-franciscus",
     "naam": "Fabian Franciscus",
     "land": null,
@@ -897,6 +1035,12 @@
     "naam": "Familie voor Beginners",
     "land": null,
     "kleur": "geel"
+  },
+  {
+    "id": "familiegeheimen",
+    "naam": "Familiegeheimen",
+    "land": null,
+    "kleur": "blauw"
   },
   {
     "id": "fatu-late-night",
@@ -911,6 +1055,12 @@
     "kleur": "rood"
   },
   {
+    "id": "fieke-opdam",
+    "naam": "Fieke Opdam",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
     "id": "fimme-bakker",
     "naam": "Fimme Bakker",
     "land": null,
@@ -923,6 +1073,18 @@
     "kleur": "aqua"
   },
   {
+    "id": "firma-frictie",
+    "naam": "Firma Frictie",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "firma-weijland-jack-weijkamp",
+    "naam": "Firma Weijland / Jack Weijkamp",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
     "id": "fitz-gessler",
     "naam": "Fitz Gessler",
     "land": null,
@@ -933,6 +1095,12 @@
     "naam": "Flip Noorman",
     "land": null,
     "kleur": "geel"
+  },
+  {
+    "id": "floris-molenaar",
+    "naam": "Floris Molenaar",
+    "land": null,
+    "kleur": "oranje"
   },
   {
     "id": "flunknarf",
@@ -1005,6 +1173,12 @@
   {
     "id": "gerrie-smits",
     "naam": "Gerrie Smits",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
+    "id": "gewoon-aans",
+    "naam": "Gewoon Aans",
     "land": null,
     "kleur": "limoen"
   },
@@ -1086,10 +1260,28 @@
     "foto": false
   },
   {
+    "id": "gunter-lamoot",
+    "naam": "Gunter Lamoot",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "han-solo",
+    "naam": "Han Solo",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
     "id": "hanneke-drenth-en-dianne-liesker",
     "naam": "Hanneke Drenth & Dianne Liesker",
     "land": null,
     "kleur": "groen"
+  },
+  {
+    "id": "hans-cools",
+    "naam": "Hans Cools",
+    "land": null,
+    "kleur": "roze"
   },
   {
     "id": "hassan-el-fad",
@@ -1115,6 +1307,12 @@
     "naam": "Hendrik Kegels & Thomas Claessens",
     "land": null,
     "kleur": "aqua"
+  },
+  {
+    "id": "henk-rijckaert",
+    "naam": "Henk Rijckaert",
+    "land": null,
+    "kleur": "lila"
   },
   {
     "id": "henry-van-loon",
@@ -1161,6 +1359,12 @@
     "naam": "Howard Komproe",
     "land": null,
     "kleur": "roze"
+  },
+  {
+    "id": "huisgenoten",
+    "naam": "Huisgenoten",
+    "land": null,
+    "kleur": "oranje"
   },
   {
     "id": "huub-smit-en-gurkan-kucuksenturk",
@@ -1231,6 +1435,12 @@
     "naam": "Jan Beuving",
     "land": null,
     "kleur": "aqua"
+  },
+  {
+    "id": "jan-jaap-van-der-wal",
+    "naam": "Jan Jaap van der Wal",
+    "land": null,
+    "kleur": "roze"
   },
   {
     "id": "jan-riesewijk",
@@ -1325,6 +1535,12 @@
     "kleur": "paars"
   },
   {
+    "id": "jeroen-leenders",
+    "naam": "Jeroen Leenders",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
     "id": "jeroens-clan",
     "naam": "Jeroens Clan",
     "land": null,
@@ -1391,6 +1607,12 @@
     "naam": "Joep van Deudekom & Rob Urgert",
     "land": null,
     "kleur": "roze"
+  },
+  {
+    "id": "joep-vermolen",
+    "naam": "Joep Vermolen",
+    "land": null,
+    "kleur": "oranje"
   },
   {
     "id": "joey-en-dave",
@@ -1461,8 +1683,20 @@
     }
   },
   {
+    "id": "joshua-timisela",
+    "naam": "Joshua Timisela",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
     "id": "jules-keeris",
     "naam": "Jules Keeris",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
+    "id": "julian-fontalvo",
+    "naam": "Julián Fontalvo",
     "land": null,
     "kleur": "oranje"
   },
@@ -1521,6 +1755,12 @@
       "datum": "2004-07-23",
       "alt": "Kamagurka en Herr Seele (met hoed) in Bourgondië"
     }
+  },
+  {
+    "id": "kamal-kharmach",
+    "naam": "Kamal Kharmach",
+    "land": null,
+    "kleur": "lila"
   },
   {
     "id": "karin-bloemen",
@@ -1655,6 +1895,12 @@
     "kleur": "oranje"
   },
   {
+    "id": "kinderen-van-de-molukken",
+    "naam": "Kinderen van de Molukken",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
     "id": "klaas-van-der-eerden",
     "naam": "Klaas van der Eerden",
     "land": null,
@@ -1665,6 +1911,12 @@
     "naam": "Klaas van Eerden",
     "land": null,
     "kleur": "aqua"
+  },
+  {
+    "id": "klub-karmijn",
+    "naam": "Klub Karmijn",
+    "land": null,
+    "kleur": "roze"
   },
   {
     "id": "kobra-theaterproducties",
@@ -1704,6 +1956,12 @@
   {
     "id": "kor-hoebe",
     "naam": "Kor Hoebe",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
+    "id": "lachen-in-grenswerk",
+    "naam": "Lachen in GRENSWERK",
     "land": null,
     "kleur": "paars"
   },
@@ -1852,16 +2110,46 @@
     "kleur": "lila"
   },
   {
+    "id": "maaike-dirkje-hop",
+    "naam": "Maaike Dirkje Hop",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
     "id": "maarten-heijmans-en-xander-vrienten",
     "naam": "Maarten Heijmans & Xander Vrienten",
     "land": null,
     "kleur": "limoen"
   },
   {
+    "id": "maarten-westra-hoekzema",
+    "naam": "Maarten Westra Hoekzema",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
     "id": "maartje-en-kine",
     "naam": "Maartje en Kine",
     "land": null,
     "kleur": "paars"
+  },
+  {
+    "id": "maartje-mikx",
+    "naam": "Maartje Mikx",
+    "land": null,
+    "kleur": "geel"
+  },
+  {
+    "id": "maddie-venema",
+    "naam": "Maddie Venema",
+    "land": null,
+    "kleur": "rood"
+  },
+  {
+    "id": "marcel-hensema",
+    "naam": "Marcel Hensema",
+    "land": null,
+    "kleur": "aqua"
   },
   {
     "id": "marcel-van-roosmalen",
@@ -1978,6 +2266,12 @@
     "kleur": "oranje"
   },
   {
+    "id": "martijn-kardol",
+    "naam": "Martijn Kardol",
+    "land": null,
+    "kleur": "blauw"
+  },
+  {
     "id": "martijn-koning",
     "naam": "Martijn Koning",
     "land": null,
@@ -2026,6 +2320,12 @@
     "naam": "MC Jeffrey Spalburg & DJ Phantom",
     "land": null,
     "kleur": "paars"
+  },
+  {
+    "id": "meester-mark",
+    "naam": "Meester Mark",
+    "land": null,
+    "kleur": "oranje"
   },
   {
     "id": "merijn-scholten",
@@ -2112,6 +2412,12 @@
     "kleur": "lila"
   },
   {
+    "id": "mohsin-abbas",
+    "naam": "Mohsin Abbas",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
     "id": "mylou-frencken",
     "naam": "Mylou Frencken",
     "land": null,
@@ -2180,6 +2486,12 @@
     }
   },
   {
+    "id": "naomi-antonius",
+    "naam": "Naomi Antonius",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
     "id": "naomi-seine",
     "naam": "Naomi Seine",
     "land": null,
@@ -2190,6 +2502,12 @@
     "naam": "Nathalie Baartman",
     "land": null,
     "kleur": "limoen"
+  },
+  {
+    "id": "nationaal-theaterweekend-2027",
+    "naam": "Nationaal Theaterweekend 2027",
+    "land": null,
+    "kleur": "paars"
   },
   {
     "id": "nederlands-studentenkampioenschap-improvisatie-comedy",
@@ -2255,6 +2573,12 @@
       "datum": "2019-06-04",
       "alt": "Portret van Nienke Plas"
     }
+  },
+  {
+    "id": "niet-schieten",
+    "naam": "Niet Schieten!",
+    "land": null,
+    "kleur": "geel"
   },
   {
     "id": "nieuwjaars-cabarestafette",
@@ -2437,6 +2761,12 @@
     }
   },
   {
+    "id": "peter-van-ewijk",
+    "naam": "Peter van Ewijk",
+    "land": null,
+    "kleur": "roze"
+  },
+  {
     "id": "piet-en-matties-live",
     "naam": "Piet & Matties Live",
     "land": null,
@@ -2521,6 +2851,12 @@
     "naam": "Pretpakhuis",
     "land": null,
     "kleur": "groen"
+  },
+  {
+    "id": "preuteleute",
+    "naam": "Preuteleute",
+    "land": null,
+    "kleur": "paars"
   },
   {
     "id": "rachid-larouz",
@@ -2671,6 +3007,12 @@
     "kleur": "paars"
   },
   {
+    "id": "rob-en-emiel",
+    "naam": "Rob en Emiel",
+    "land": null,
+    "kleur": "paars"
+  },
+  {
     "id": "rob-kamphues",
     "naam": "Rob Kamphues",
     "land": null,
@@ -2773,6 +3115,12 @@
     "naam": "Rosa Doornenbal",
     "land": null,
     "kleur": "paars"
+  },
+  {
+    "id": "rosalie-custers",
+    "naam": "Rosalie Custers",
+    "land": null,
+    "kleur": "oranje"
   },
   {
     "id": "roue-verveer",
@@ -2928,6 +3276,12 @@
     "kleur": "roze"
   },
   {
+    "id": "seppe-toremans",
+    "naam": "Seppe Toremans",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
     "id": "sezgin-gulec",
     "naam": "Sezgin Güleç",
     "land": null,
@@ -2962,6 +3316,12 @@
     }
   },
   {
+    "id": "sophie-willemijntje",
+    "naam": "Sophie Willemijntje",
+    "land": null,
+    "kleur": "oranje"
+  },
+  {
     "id": "soraya-de-bakker",
     "naam": "Soraya de Bakker",
     "land": null,
@@ -2972,6 +3332,12 @@
     "naam": "Spruijt & Opperman",
     "land": null,
     "kleur": "lila"
+  },
+  {
+    "id": "stef-bos",
+    "naam": "Stef Bos",
+    "land": null,
+    "kleur": "oranje"
   },
   {
     "id": "stefan-de-kogel",
@@ -3008,6 +3374,12 @@
     "kleur": "limoen"
   },
   {
+    "id": "stel",
+    "naam": "Stel",
+    "land": null,
+    "kleur": "aqua"
+  },
+  {
     "id": "stephen-bell",
     "naam": "Stephen Bell",
     "land": null,
@@ -3034,6 +3406,12 @@
       "datum": null,
       "alt": "Selfie van Steven Brunswijk"
     }
+  },
+  {
+    "id": "steven-mahieu",
+    "naam": "Steven Mahieu",
+    "land": null,
+    "kleur": "rood"
   },
   {
     "id": "stichting-altays",
@@ -3257,6 +3635,12 @@
     }
   },
   {
+    "id": "twente-plat",
+    "naam": "Twente Plat",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
     "id": "utrechts-international-comedy-festival",
     "naam": "Utrechts International Comedy Festival",
     "land": null,
@@ -3383,10 +3767,22 @@
     "kleur": "paars"
   },
   {
+    "id": "wannes-cappelle",
+    "naam": "Wannes Cappelle",
+    "land": null,
+    "kleur": "limoen"
+  },
+  {
     "id": "we-zijn-toch-familie",
     "naam": "We zijn toch familie",
     "land": null,
     "kleur": "oranje"
+  },
+  {
+    "id": "william-boeva",
+    "naam": "William Boeva",
+    "land": null,
+    "kleur": "blauw"
   },
   {
     "id": "wim-helsen",
@@ -3415,6 +3811,18 @@
     "naam": "Wina Ricardo",
     "land": null,
     "kleur": "geel"
+  },
+  {
+    "id": "wouter-monden",
+    "naam": "Wouter Monden",
+    "land": null,
+    "kleur": "groen"
+  },
+  {
+    "id": "xander-de-rycke",
+    "naam": "Xander De Rycke",
+    "land": null,
+    "kleur": "roze"
   },
   {
     "id": "yannick-noben",
@@ -3483,5 +3891,11 @@
     "naam": "ZIJ & Aron Elstak",
     "land": null,
     "kleur": "limoen"
+  },
+  {
+    "id": "zoe-bizoe",
+    "naam": "Zoe Bizoe",
+    "land": null,
+    "kleur": "groen"
   }
 ]

@@ -1,0 +1,630 @@
+{
+  "bron": "beatvenues",
+  "naam": "Stadsschouwburg Antwerpen en Capitole Gent",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "stadsschouwburg-antwerpen",
+      "naam": "Stadsschouwburg Antwerpen",
+      "plaats": "Antwerpen",
+      "land": "BE",
+      "soort": "theater",
+      "website": "https://www.stadsschouwburg-antwerpen.be"
+    },
+    {
+      "id": "capitole-gent",
+      "naam": "Capitole Gent",
+      "plaats": "Gent",
+      "land": "BE",
+      "soort": "theater",
+      "website": "https://www.capitole-gent.be"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Erhan Demirci"
+      ],
+      "titel": "Made in cité",
+      "genre": "stand-up",
+      "datum": "2027-06-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/erhan-demirci-3770b860"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Alex Agnew"
+      ],
+      "titel": "No more heroes",
+      "genre": "stand-up",
+      "datum": "2027-03-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/alex-agnew-14a92a88"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Arnout Van den Bossche"
+      ],
+      "titel": "Coach",
+      "genre": "stand-up",
+      "datum": "2026-11-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/arnout-van-den-bossche-3bd17010"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Yannick Noben"
+      ],
+      "titel": "Eindejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2027-01-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/yannick-noben-419d4c34"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back To The Beginning",
+      "genre": "stand-up",
+      "datum": "2027-02-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/xander-de-rycke-46a78cca"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back To The Beginning",
+      "genre": "stand-up",
+      "datum": "2027-02-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/xander-de-rycke-46a78cca"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back To The Beginning",
+      "genre": "stand-up",
+      "datum": "2027-02-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/xander-de-rycke-46a78cca"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back To The Beginning",
+      "genre": "stand-up",
+      "datum": "2027-02-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/xander-de-rycke-46a78cca"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [],
+      "titel": "Morgan Jay",
+      "genre": "stand-up",
+      "datum": "2027-04-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/morgan-jay-cd39b5aa"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [],
+      "titel": "Morgan Jay",
+      "genre": "stand-up",
+      "datum": "2027-04-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/morgan-jay-cd39b5aa"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Bill Bailey"
+      ],
+      "titel": "Vaudevillean",
+      "genre": "stand-up",
+      "datum": "2027-04-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/bill-bailey-21ad401c"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Dan and Phil"
+      ],
+      "titel": "Hard Launch World Tour",
+      "genre": "stand-up",
+      "datum": "2027-01-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/dan-and-phil-32e15f80"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag ik even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/kamal-kharmach-8beb47fd"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag ik even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-12-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/kamal-kharmach-8beb47fd"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "William Boeva"
+      ],
+      "titel": "Drift",
+      "genre": "stand-up",
+      "datum": "2027-05-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/william-boeva-f48ecd3c"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Alex Agnew"
+      ],
+      "titel": "No more heroes",
+      "genre": "stand-up",
+      "datum": "2027-01-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/alex-agnew-14a92a88"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Alex Agnew"
+      ],
+      "titel": "No more heroes",
+      "genre": "stand-up",
+      "datum": "2027-03-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/alex-agnew-14a92a88"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Arnout Van den Bossche"
+      ],
+      "titel": "Coach",
+      "genre": "stand-up",
+      "datum": "2026-11-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/arnout-van-den-bossche-3bd17010"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Arnout Van den Bossche"
+      ],
+      "titel": "Coach",
+      "genre": "stand-up",
+      "datum": "2026-12-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/arnout-van-den-bossche-3bd17010"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Jan Jaap van der Wal"
+      ],
+      "titel": "Amor Fati - 10 jaar in Vlaanderen",
+      "genre": "stand-up",
+      "datum": "2027-03-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/jan-jaap-van-der-wal-5aea9c59"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Jan Jaap van der Wal"
+      ],
+      "titel": "Amor Fati - 10 jaar in Vlaanderen",
+      "genre": "stand-up",
+      "datum": "2027-03-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/jan-jaap-van-der-wal-5aea9c59"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Yannick Noben"
+      ],
+      "titel": "Eindejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/yannick-noben-419d4c34"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Han Solo"
+      ],
+      "titel": "Psycho Solo: Lof der Zotheid",
+      "genre": "stand-up",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/han-solo-2d48971c"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Han Solo"
+      ],
+      "titel": "Psycho Solo: Lof der Zotheid",
+      "genre": "stand-up",
+      "datum": "2027-02-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/han-solo-2d48971c"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Han Solo"
+      ],
+      "titel": "Psycho Solo: Lof der Zotheid",
+      "genre": "stand-up",
+      "datum": "2027-04-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/han-solo-2d48971c"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Mohsin Abbas"
+      ],
+      "titel": "Moh?!",
+      "genre": "stand-up",
+      "datum": "2027-03-31",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/mohsin-abbas-8f40fbb3"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back To The Beginning",
+      "genre": "stand-up",
+      "datum": "2027-01-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/xander-de-rycke-46a78cca"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back To The Beginning",
+      "genre": "stand-up",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/xander-de-rycke-46a78cca"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back To The Beginning",
+      "genre": "stand-up",
+      "datum": "2027-01-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/xander-de-rycke-46a78cca"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back To The Beginning",
+      "genre": "stand-up",
+      "datum": "2027-01-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/xander-de-rycke-46a78cca"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back To The Beginning",
+      "genre": "stand-up",
+      "datum": "2027-05-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/xander-de-rycke-46a78cca"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Hans Cools"
+      ],
+      "titel": "Zolang de voorraad strekt",
+      "genre": "stand-up",
+      "datum": "2026-12-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/hans-cools-49186d72"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Hans Cools"
+      ],
+      "titel": "Zolang de voorraad strekt",
+      "genre": "stand-up",
+      "datum": "2027-02-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/hans-cools-49186d72"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Wannes Cappelle"
+      ],
+      "titel": "Verstaanbaar",
+      "genre": "stand-up",
+      "datum": "2027-11-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/wannes-cappelle-7b747ebc"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Steven Mahieu"
+      ],
+      "titel": "Stabieler",
+      "genre": "stand-up",
+      "datum": "2026-11-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/steven-mahieu-15201294"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Steven Mahieu"
+      ],
+      "titel": "Stabieler",
+      "genre": "stand-up",
+      "datum": "2027-02-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/steven-mahieu-15201294"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Voor Normale Mensen",
+      "genre": "stand-up",
+      "datum": "2027-05-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/dries-heyneman-73ee57e6"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Voor Normale Mensen",
+      "genre": "stand-up",
+      "datum": "2027-05-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/dries-heyneman-73ee57e6"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag ik even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-12-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/kamal-kharmach-8beb47fd"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag ik even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-12-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/kamal-kharmach-8beb47fd"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag ik even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-12-20",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/kamal-kharmach-8beb47fd"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag ik even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-12-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/kamal-kharmach-8beb47fd"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Preuteleute"
+      ],
+      "titel": "V",
+      "genre": "stand-up",
+      "datum": "2027-04-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/preuteleute-956cb631"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Els De Schepper"
+      ],
+      "titel": "(B)engel",
+      "genre": "stand-up",
+      "datum": "2027-05-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/els-de-schepper-87e1a72b"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [],
+      "titel": "Comedy Marathon 2027",
+      "genre": "stand-up",
+      "datum": "2027-05-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/comedy-marathon-2027-22fdc3b0"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "High Class Bitch",
+      "genre": "stand-up",
+      "datum": "2027-04-08",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/daniel-arends-19d112d7"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "Had ik maar zo aardig gedaan",
+      "genre": "stand-up",
+      "datum": "2027-04-08",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/daniel-arends-cc7615b7"
+    }
+  ]
+}

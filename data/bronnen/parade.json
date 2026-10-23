@@ -1,0 +1,498 @@
+{
+  "bron": "parade",
+  "naam": "Theater aan de Parade",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "theater-aan-de-parade",
+      "naam": "Theater aan de Parade",
+      "plaats": "'s-Hertogenbosch",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.theateraandeparade.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Myrte Siebinga"
+      ],
+      "titel": "Gelukkig maar",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/myrte-siebinga-gelukkig-maar"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "De Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/guido-weijers-de-oudejaarsconference-2026"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-06-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/merijn-scholten-lemming"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-04-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/kasper-van-der-laan"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/richard-groenendijk-gelukkig-heb-je-mij-nog"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim Voor Iedereen",
+      "genre": "cabaret",
+      "datum": "2027-03-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/micha-wertheim-voor-iedereen-micha-wertheim"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.theateraandeparade.nl/nl/programma/patrick-laureij-kintsugi-reprise"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "cabaret",
+      "datum": "2027-04-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/kommil-foo-babel"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Blauwe Vinkjes"
+      ],
+      "titel": "Poeha",
+      "genre": "cabaret",
+      "datum": "2027-03-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/poeha-blauwe-vinkjes"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Anuar"
+      ],
+      "titel": "Ongeduldig Geduldig",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/anuar-ongeduldig-geduldig"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/nienke-plas-appeltje-eitje"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Iris Rulkens"
+      ],
+      "titel": "Van Harte!",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/iris-rulkens-van-harte"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/joosen-en-de-jager-niks-aan-het-handje"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Steven Brunswijk"
+      ],
+      "titel": "Navigatie is stuk",
+      "genre": "cabaret",
+      "datum": "2027-02-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/steven-brunswijk-navigatie-is-stuk"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "De nogal hyperbijzondere Bossche Oudejaars-improvisatie-extravaganza 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/andries-tunru-stefan-hendrik-de-nogal-hyperbijzondere-bossche-oudejaars-improvi"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Ricky Risolles 3"
+      ],
+      "titel": "Niet zo Indiscreet..",
+      "genre": "cabaret",
+      "datum": "2026-12-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/ricky-risolles-3-niet-zo-indiscreet"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Best Of",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/fabian-franciscus-best-of"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Kiki Schippers"
+      ],
+      "titel": "Praktische bezwaren",
+      "genre": "cabaret",
+      "datum": "2026-10-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/kiki-schippers-praktische-bezwaren"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow - jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-06-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/jandino-de-grote-jubileumshow-jandino-20-jaar"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Tineke Schouten"
+      ],
+      "titel": "Femme Vitaal",
+      "genre": "cabaret",
+      "datum": "2027-05-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/tineke-schouten-femme-vitaal-118280"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-05-02",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/super-normaal-thomas-van-luyn"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/daan-van-der-hoeven-mensenmens"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Jelka van Houten & Sanne Wallis de Vries"
+      ],
+      "titel": "Lift",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/lift-jelka-van-houten-sanne-wallis-de-vries"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Bert Visscher"
+      ],
+      "titel": "65, dat zou je toch niet zeggen",
+      "genre": "cabaret",
+      "datum": "2026-10-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/bert-visscher-65-dat-zou-je-toch-niet-zeggen"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Yentl en de Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "cabaret",
+      "datum": "2026-10-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/yentl-de-boer"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/ronald-goedemondt-mijn-lieve-achterdocht"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [],
+      "titel": "The Funniest Festival Ever!",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/the-funniest-festival-ever-202-denk-je-dat-je-grappig-bent"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Aren Scholte",
+        "Sophie Willemijntje"
+      ],
+      "titel": "Happen & Lachen",
+      "genre": "cabaret",
+      "datum": "2026-10-27",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/happen-lachen-122726"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Davey Geernaert",
+        "Floris Molenaar"
+      ],
+      "titel": "Happen & Lachen",
+      "genre": "cabaret",
+      "datum": "2026-11-24",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/happen-lachen-122727"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Ramon Chatrer",
+        "Rosalie Custers"
+      ],
+      "titel": "Happen & Lachen",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/happen-lachen-122728"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Maddie Venema",
+        "Lex van Wieren"
+      ],
+      "titel": "Happen & Lachen",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/happen-lachen-122729"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [],
+      "titel": "Happen & Lachen",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/happen-lachen-122730"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [],
+      "titel": "Happen & Lachen",
+      "genre": "cabaret",
+      "datum": "2027-04-20",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/happen-lachen-122731"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [],
+      "titel": "Happen & Lachen",
+      "genre": "cabaret",
+      "datum": "2027-06-02",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/happen-lachen-122732"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Saman Amini's Integratieplan #2: Alles is Perspectief"
+      ],
+      "titel": "Black Sheep Can Fly",
+      "genre": "cabaret",
+      "datum": "2026-10-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/saman-aminis-integratieplan--black-sheep-can-fly"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Karin Bloemen"
+      ],
+      "titel": "Renaissance 2.0",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/karin-bloemen-renaissance-20"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Onias Landveld",
+        "Jörgen Raymann",
+        "Steven Brunswijk",
+        "Howard Komproe",
+        "Joshua Timisela"
+      ],
+      "titel": "Papa Zonder Handleiding XL",
+      "genre": "cabaret",
+      "datum": "2027-06-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/papa-zonder-handleiding-xl-jorgen-rayman-emiel-van-der-logt-howard-komproe"
+    }
+  ]
+}

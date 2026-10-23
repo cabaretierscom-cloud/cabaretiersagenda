@@ -1,0 +1,434 @@
+{
+  "bron": "lampegiet",
+  "naam": "Theater Lampegiet",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "theater-lampegiet",
+      "naam": "Theater Lampegiet",
+      "plaats": "Veghel",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.lampegiet.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Jörgen Raymann"
+      ],
+      "titel": "BIGI YARI: Welkom thuis, waar niemand op je zit te wachten",
+      "genre": "cabaret",
+      "datum": "2026-10-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/jorgen-raymann-zmbl"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Tineke Schouten"
+      ],
+      "titel": "Femme Vitaal",
+      "genre": "cabaret",
+      "datum": "2026-11-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.lampegiet.nl/agenda/tineke-schouten-4xxp"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Tineke Schouten"
+      ],
+      "titel": "Femme Vitaal",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.lampegiet.nl/agenda/tineke-schouten-rlzq"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.lampegiet.nl/agenda/bob-koomen-6qq5"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [],
+      "titel": "Veenendaal Lacht - Talent Night",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/veenendaal-lacht-talent-night-dcct"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "De Verleiders"
+      ],
+      "titel": "Zoek dekking!",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.lampegiet.nl/agenda/de-verleiders-8hhh"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "De Verleiders"
+      ],
+      "titel": "Zoek dekking!",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.lampegiet.nl/agenda/de-verleiders-f88m"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/richard-groenendijk-1y2f"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [],
+      "titel": "Wie is het?",
+      "genre": "cabaret",
+      "datum": "2026-12-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/wie-is-het-rll5"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Arjan Kleton"
+      ],
+      "titel": "Lomp",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/arjan-kleton-1yyt"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [],
+      "titel": "Veenendaal Lacht - Comedy Night",
+      "genre": "cabaret",
+      "datum": "2027-01-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/veenendaal-lacht-comedy-night-8hzz"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow – jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/jandino-j3p6"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.lampegiet.nl/agenda/rundfunk-sz4d"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.lampegiet.nl/agenda/patrick-laureij-t2sj"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.lampegiet.nl/agenda/klaas-van-der-eerden-5r76"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/rayen-panday-1ylc"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Kees van Amstel"
+      ],
+      "titel": "Mogen we eerder weg?",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/kees-van-amstel-917n"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Kees van Amstel"
+      ],
+      "titel": "Mogen we eerder weg?",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/kees-van-amstel-917n"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2027-02-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/remko-vrijdag-hvx3"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Dokter Bart"
+      ],
+      "titel": "Ontsteking",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/dokter-bart-1yg1"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [],
+      "titel": "Veenendaal Lacht - Talent Night",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/veenendaal-lacht-talent-night-rlhl"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/jay-francis-qsyc"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-03-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/esther-van-der-voort-t2yz"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/andries-tunru-mnq7"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Saïd el Hassnaoui"
+      ],
+      "titel": "Saïd lacht met liefde",
+      "genre": "cabaret",
+      "datum": "2027-03-31",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/said-lacht-met-liefde-n72v"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Spruijt en Opperman"
+      ],
+      "titel": "Altijdloos",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/spruijt-en-opperman-ypk9"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Beth & Flo"
+      ],
+      "titel": "Zoveel Meer",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/beth-flo-8h33"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [],
+      "titel": "Veenendaal Lacht - Comedy Night",
+      "genre": "stand-up",
+      "datum": "2027-04-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/veenendaal-lacht-comedy-night-xfty"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Milène van der Smissen"
+      ],
+      "titel": "De Schnabbelkoningin",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/de-schnabbelkoningin-btr7"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/daan-van-der-hoeven-j3kd"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Kooiapen",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.lampegiet.nl/agenda/martijn-crins-f826"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [],
+      "titel": "Veenendaal Lacht - Talent Night",
+      "genre": "cabaret",
+      "datum": "2027-05-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/veenendaal-lacht-talent-night-rlhf"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Is het leven al begonnen?",
+      "genre": "cabaret",
+      "datum": "2027-06-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/fabian-franciscus-7g46"
+    }
+  ]
+}

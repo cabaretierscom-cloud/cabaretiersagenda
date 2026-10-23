@@ -1,0 +1,587 @@
+{
+  "bron": "schie",
+  "naam": "Theater aan de Schie",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "theater-aan-de-schie",
+      "naam": "Theater aan de Schie",
+      "plaats": "Schiedam",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://theateraandeschie.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Ayoub"
+      ],
+      "titel": "En verbied de vogels om te fluiten",
+      "genre": "cabaret",
+      "datum": "2026-11-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/ayoub-en-verbied-de-vogels-om-te-fluiten"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Anne & Bas"
+      ],
+      "titel": "De Natte Dromen Revue",
+      "genre": "cabaret",
+      "datum": "2027-01-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/anne-bas-de-natte-dromen-revue"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Max van den Burg"
+      ],
+      "titel": "Maxikozi",
+      "genre": "cabaret",
+      "datum": "2027-01-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/max-van-den-burg-maxikozi"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-05-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/merijn-scholten"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/luuk-weggemans-lach-maar-om-mij"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "kleinkunst",
+      "datum": "2027-03-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/kommil-foo-babel"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De Grote Jubileumshow - 20 Jaar Jandino",
+      "genre": "cabaret",
+      "datum": "2027-04-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/jandino-de-grote-jubileumshow-20-jaar-jandino"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Stef Bos"
+      ],
+      "titel": "2027",
+      "genre": "kleinkunst",
+      "datum": "2027-05-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/stef-bos-2027"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/de-broers-van-arkel-zeg-maar-u"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Ricky Risolles"
+      ],
+      "titel": "Niet Zo Indiscreet..",
+      "genre": "cabaret",
+      "datum": "2027-01-10",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/ricky-risolles-niet-zo-indiscreet"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [],
+      "titel": "Stand-up het jaar uit!",
+      "genre": "cabaret",
+      "datum": "2026-12-30",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/stand-up-het-jaar-uit-18467"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Arie & Silvester"
+      ],
+      "titel": "Breken de tent af!",
+      "genre": "cabaret",
+      "datum": "2027-04-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/arie-sylvester-breken-de-tent-af"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Amsterdams Kleinkunst Festival"
+      ],
+      "titel": "Finalistentournee",
+      "genre": "kleinkunst",
+      "datum": "2026-10-31",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/finalisten-tournee-amsterdams-kleinkunst-festival"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/david-van-rosmalen-als-ik-jou-was"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk eventueel de dag",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/janneke-de-bijl-pluk-eventueel-de-dag"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "De Mooie Dingen"
+      ],
+      "titel": "Janke Dekker",
+      "genre": "kleinkunst",
+      "datum": "2027-04-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/janke-dekker-de-mooie-dingen"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/valentina-toth-revue-revanche"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/remko-vrijdag-marko-maandag"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/martijn-koning-overprikkeld"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Yentl en de Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "cabaret",
+      "datum": "2026-12-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/yentl-de-boer-rekhalzen-2026"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2026-10-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://theateraandeschie.nl/voorstelling/nabil-daar-is-hij-weer"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/kasper-van-der-laan"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-06-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/klaas-van-der-eerden-imperfect"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/joosen-en-de-jager-niks-aan-het-handje"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Alex Ploeg"
+      ],
+      "titel": "Niks persoonlijks",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/alex-ploeg-niks-persoonlijks"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Finalistentournee",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/cameretten-finalistentournee"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "Juk",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/jeroens-clan-juk"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Hokjesdenker"
+      ],
+      "titel": "We zien het wel even",
+      "genre": "cabaret",
+      "datum": "2026-11-04",
+      "tijd": "20:15",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/hokjesdenker-we-zien-het-wel-even"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/lebbis-satan-is-moe"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk Kwaad",
+      "genre": "cabaret",
+      "datum": "2026-11-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/rene-van-meurs-noodzakelijk-kwaad-18331"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Huub Smit & Gürkan Küçüksentürk"
+      ],
+      "titel": "Zei je dat echt?",
+      "genre": "cabaret",
+      "datum": "2027-04-21",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/huub-smit-gurkan-kucuksenturk-zei-je-dat-echt"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-06-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/jay-francis"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos",
+      "genre": "cabaret",
+      "datum": "2026-12-13",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/dolf-jansen-schaamteloos"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/wina-ricardo-winas-wereld"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/gelukkig-heb-je-mij-nog"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/gelukkig-heb-je-mij-nog"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-05-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/rundfunk-wagyu"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Avond van het Cabaret"
+      ],
+      "titel": "2027",
+      "genre": "cabaret",
+      "datum": "2027-06-12",
+      "tijd": "20:15",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/avond-van-het-cabaret-2027"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Peter Heerschop"
+      ],
+      "titel": "Lieve Marianne",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/peter-heerschop-lieve-marianne"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Myrte Siebinga"
+      ],
+      "titel": "Gelukkig maar",
+      "genre": "cabaret",
+      "datum": "2027-01-30",
+      "tijd": "20:15",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/myrte-siebenga-gelukkig-maar"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Amhali & Verveer"
+      ],
+      "titel": "Alles is Comedy",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/alles-is-comedy"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Ruud Smulders"
+      ],
+      "titel": "Rüdsichtlos",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/ruud-smulders-rudsichtlos"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/demonen"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "André Manuel"
+      ],
+      "titel": "De Eenzame Ziel",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/andre-manuel-de-eenzame-ziel"
+    }
+  ]
+}

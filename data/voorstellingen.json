@@ -289,6 +289,15 @@
     "genre": "cabaret"
   },
   {
+    "id": "aren-scholte-sophie-willemijntje-happen-en-lachen",
+    "titel": "Happen & Lachen",
+    "artiesten": [
+      "aren-scholte",
+      "sophie-willemijntje"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "arie-en-silvester-arie-en-silvester",
     "titel": "Arie & Silvester",
     "artiesten": [
@@ -309,6 +318,14 @@
     "titel": "Comedian, imitator en acteur ARIES SPEARS keert terug naar Nederland",
     "artiesten": [
       "aries-spears"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "arjan-kleton-lomp",
+    "titel": "Lomp",
+    "artiesten": [
+      "arjan-kleton"
     ],
     "genre": "cabaret"
   },
@@ -348,6 +365,14 @@
     "titel": "Brothers",
     "artiesten": [
       "ashton-brothers"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "avond-van-het-cabaret-2027",
+    "titel": "2027",
+    "artiesten": [
+      "avond-van-het-cabaret"
     ],
     "genre": "cabaret"
   },
@@ -408,6 +433,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "bert-visscher-65-dat-zou-je-toch-niet-zeggen",
+    "titel": "65, dat zou je toch niet zeggen",
+    "artiesten": [
+      "bert-visscher"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "bert-visscher-en-het-noordpool-strijkkwartet-bert-visscher-65-dat-zou-je-niet-ze",
     "titel": "Bert Visscher, 65 Dat Zou Je Niet Zeggen",
     "artiesten": [
@@ -461,6 +494,22 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "theater-bellevue"
+  },
+  {
+    "id": "bill-bailey-vaudevillean",
+    "titel": "Vaudevillean",
+    "artiesten": [
+      "bill-bailey"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "blauwe-vinkjes-feestavond-voor-assense-mantelzorgers",
+    "titel": "Feestavond voor Assense Mantelzorgers",
+    "artiesten": [
+      "blauwe-vinkjes"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "blauwe-vinkjes-poeha",
@@ -573,6 +622,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "cabarestafette-cabarestafette-26-27",
+    "titel": "Cabarestafette 26-27",
+    "artiesten": [
+      "cabarestafette"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "cabarestafette-nieuw-geluid",
     "titel": "Nieuw geluid!",
     "artiesten": [
@@ -681,6 +738,14 @@
     "genre": "oudejaarsconference"
   },
   {
+    "id": "club-lam-dolle-mina",
+    "titel": "Dolle Mina",
+    "artiesten": [
+      "club-lam"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "cocktails-en-comedy-comedy-cafe-amsterdam",
     "titel": "Cocktails & Comedy",
     "artiesten": [],
@@ -711,12 +776,35 @@
     "theater": "theater-bellevue"
   },
   {
+    "id": "comedy-club-haug-the-stand-up-club",
+    "titel": "The Stand-Up Club",
+    "artiesten": [
+      "comedy-club-haug"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "comedy-comedians-onder-leiding-van-martijn-koning",
     "titel": "onder leiding van Martijn Koning",
     "artiesten": [
       "comedy-comedians"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "comedy-festival-limburg-halve-finale",
+    "titel": "Halve Finale",
+    "artiesten": [
+      "comedy-festival-limburg"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "comedy-marathon-2027-capitole-gent",
+    "titel": "Comedy Marathon 2027",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "capitole-gent"
   },
   {
     "id": "comedy-night-in-english-comedy-cafe-amsterdam",
@@ -734,6 +822,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "comedy-vibe-srefidensi-vibe",
+    "titel": "Srefidensi vibe",
+    "artiesten": [
+      "comedy-vibe"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "comedyavond-met-marco-lopes-piet-als-mc-piet-en-zijn-matties",
     "titel": "Piet en zijn Matties",
     "artiesten": [
@@ -744,6 +840,14 @@
   {
     "id": "comedytrain-on-tour-de-plek-waar-de-grootste-comedians-van-nederland-begonnen",
     "titel": "De plek waar de grootste comedians van Nederland begonnen",
+    "artiesten": [
+      "comedytrain-on-tour"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "comedytrain-on-tour-tour-2026",
+    "titel": "Tour 2026",
     "artiesten": [
       "comedytrain-on-tour"
     ],
@@ -781,6 +885,14 @@
     "theater": "comedy-cafe-amsterdam"
   },
   {
+    "id": "dan-and-phil-hard-launch-world-tour",
+    "titel": "Hard Launch World Tour",
+    "artiesten": [
+      "dan-and-phil"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "dan-the-stranger-comedy-cafe-amsterdam",
     "titel": "Dan The Stranger",
     "artiesten": [],
@@ -794,6 +906,14 @@
       "daniel-arends"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "daniel-arends-had-ik-maar-zo-aardig-gedaan",
+    "titel": "Had ik maar zo aardig gedaan",
+    "artiesten": [
+      "daniel-arends"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "daniel-arends-high-class-bitch",
@@ -812,6 +932,15 @@
     "genre": "cabaret"
   },
   {
+    "id": "davey-geernaert-floris-molenaar-happen-en-lachen",
+    "titel": "Happen & Lachen",
+    "artiesten": [
+      "davey-geernaert",
+      "floris-molenaar"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "david-linszen-striptease-van-de-dood",
     "titel": "Striptease Van De Dood",
     "artiesten": [
@@ -826,6 +955,14 @@
       "david-van-rosmalen"
     ],
     "genre": "kleinkunst"
+  },
+  {
+    "id": "ddt-houdt-uitverkoop-feat-jacques-vermeire",
+    "titel": "(feat. Jacques Vermeire)",
+    "artiesten": [
+      "ddt-houdt-uitverkoop"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "de-cabaret-club-parktheater-eindhoven",
@@ -891,10 +1028,26 @@
     "genre": "cabaret"
   },
   {
+    "id": "de-poes-van-usi-loes-joshua-timisela",
+    "titel": "Joshua Timisela",
+    "artiesten": [
+      "de-poes-van-usi-loes"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "de-tunes-versnaperingen",
     "titel": "Versnaperingen",
     "artiesten": [
       "de-tunes"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "de-verleiders-zoek-dekking",
+    "titel": "Zoek dekking!",
+    "artiesten": [
+      "de-verleiders"
     ],
     "genre": "cabaret"
   },
@@ -925,6 +1078,22 @@
     "titel": "Double Dutch: Two",
     "artiesten": [
       "derek-mitchell"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "diederick-ensink-iets-te-vieren",
+    "titel": "Iets Te Vieren",
+    "artiesten": [
+      "diederick-ensink"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "diva-s-in-de-kerststal-een-komische-kerstrevue",
+    "titel": "Een komische Kerstrevue",
+    "artiesten": [
+      "diva-s-in-de-kerststal"
     ],
     "genre": "cabaret"
   },
@@ -961,6 +1130,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "dokter-bart-ontsteking",
+    "titel": "Ontsteking",
+    "artiesten": [
+      "dokter-bart"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "dolf-jansen-dolf-jansen",
     "titel": "Dolf Jansen",
     "artiesten": [
@@ -991,6 +1168,38 @@
       "dolf-jansen"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "dorine-wiersma-gaandeweg",
+    "titel": "Gaandeweg",
+    "artiesten": [
+      "dorine-wiersma"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "double-dutch-patron-stage",
+    "titel": "Patron Stage",
+    "artiesten": [
+      "double-dutch"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "drenthe-plat-a-j-plat-kunt-proat-n",
+    "titel": "A`j plat kunt proat`n",
+    "artiesten": [
+      "drenthe-plat"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "dries-heyneman-voor-normale-mensen",
+    "titel": "Voor Normale Mensen",
+    "artiesten": [
+      "dries-heyneman"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "echt-gebeurd-op-tour",
@@ -1047,6 +1256,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "els-de-schepper-b-engel",
+    "titel": "(B)engel",
+    "artiesten": [
+      "els-de-schepper"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "emmy-krooshof-nick-van-keulen-erik-boddeus-de-interventie-de-grote-zomerfinale",
     "titel": "De Interventie - De Grote Zomerfinale",
     "artiesten": [
@@ -1071,6 +1288,14 @@
       "eran-en-co"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "erhan-demirci-made-in-cite",
+    "titel": "Made in cité",
+    "artiesten": [
+      "erhan-demirci"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "especial-la-risa-halloween-comedy-cafe-amsterdam",
@@ -1112,11 +1337,35 @@
     "genre": "stand-up"
   },
   {
+    "id": "evenhuis-reijnders-en-tatum-dagelet-familiegeheimen",
+    "titel": "Familiegeheimen",
+    "artiesten": [
+      "evenhuis-reijnders-en-tatum-dagelet"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "expat-cafe-person-of-colour",
+    "titel": "Person of Colour",
+    "artiesten": [
+      "expat-cafe"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "experiencia-dalia-gutmann-no-me-calmo-nada-comedy-cafe-amsterdam",
     "titel": "Experiencia Dalia Gutmann: NO ME CALMO NADA",
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedy-cafe-amsterdam"
+  },
+  {
+    "id": "fabian-franciscus-best-of",
+    "titel": "Best Of",
+    "artiesten": [
+      "fabian-franciscus"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "fabian-franciscus-is-het-leven-al-begonnen",
@@ -1133,6 +1382,14 @@
       "familie-voor-beginners"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "familiegeheimen-jennifer-evenhuis-renate-reijnders-en-margot-ros",
+    "titel": "Jennifer Evenhuis, Renate Reijnders en Margôt Ros",
+    "artiesten": [
+      "familiegeheimen"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "fatu-late-night-joel-gideon-rene-van-meurs-en-bugra-gedik",
@@ -1158,6 +1415,14 @@
     "theater": "theater-bellevue"
   },
   {
+    "id": "fieke-opdam-non-actief",
+    "titel": "Non-actief",
+    "artiesten": [
+      "fieke-opdam"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "fimme-bakker-zwaargewicht",
     "titel": "Zwaargewicht",
     "artiesten": [
@@ -1171,6 +1436,22 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "theater-walhalla"
+  },
+  {
+    "id": "firma-frictie-i-ll-be-your-daddy",
+    "titel": "I'll be your daddy",
+    "artiesten": [
+      "firma-frictie"
+    ],
+    "genre": "kleinkunst"
+  },
+  {
+    "id": "firma-weijland-jack-weijkamp-sta-op-komediant",
+    "titel": "Sta op komediant!",
+    "artiesten": [
+      "firma-weijland-jack-weijkamp"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "fitz-gessler-kiwi-comedian-in-the-netherlands",
@@ -1250,6 +1531,14 @@
       "gerrie-smits"
     ],
     "genre": "oudejaarsconference"
+  },
+  {
+    "id": "gewoon-aans-wat-n-gedoo",
+    "titel": "Wat 'n gedoo!",
+    "artiesten": [
+      "gewoon-aans"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "gilian-de-vries-wat-wil-ik",
@@ -1356,12 +1645,43 @@
     "genre": "oudejaarsconference"
   },
   {
+    "id": "gunter-lamoot-protpourri",
+    "titel": "Protpourri",
+    "artiesten": [
+      "gunter-lamoot"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "han-solo-psycho-solo-lof-der-zotheid",
+    "titel": "Psycho Solo: Lof der Zotheid",
+    "artiesten": [
+      "han-solo"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "hanneke-drenth-en-dianne-liesker-tis-hier-geen-hotel-3",
     "titel": "Tis hier geen hotel 3",
     "artiesten": [
       "hanneke-drenth-en-dianne-liesker"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "hans-cools-zolang-de-voorraad-strekt",
+    "titel": "Zolang de voorraad strekt",
+    "artiesten": [
+      "hans-cools"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "happen-en-lachen-theater-aan-de-parade",
+    "titel": "Happen & Lachen",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-aan-de-parade"
   },
   {
     "id": "hassan-el-fad-met-marmoucha-orchestra-en-the-super-gnawa-girls",
@@ -1385,6 +1705,14 @@
       "hendrik-kegels-en-thomas-claessens"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "henk-rijckaert-belachelijk",
+    "titel": "Belachelijk!",
+    "artiesten": [
+      "henk-rijckaert"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "henry-van-loon-keanu",
@@ -1417,6 +1745,21 @@
       "hokjesdenker"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "huisgenoten-de-nieuwe-romantische-comedy",
+    "titel": "De nieuwe romantische comedy",
+    "artiesten": [
+      "huisgenoten"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "humo-s-comedy-cup-finalistentour-cc-de-schakel",
+    "titel": "Humo's Comedy Cup Finalistentour",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "cc-de-schakel"
   },
   {
     "id": "huub-smit-en-gurkan-kucuksenturk-zei-je-dat-echt",
@@ -1499,6 +1842,22 @@
     "genre": "cabaret"
   },
   {
+    "id": "jan-jaap-van-der-wal-amor-fati-10-jaar-in-vlaanderen",
+    "titel": "Amor Fati - 10 jaar in Vlaanderen",
+    "artiesten": [
+      "jan-jaap-van-der-wal"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "jandino-asporaat-de-grote-jubileumshow-20-jaar-jandino",
+    "titel": "De Grote Jubileumshow - 20 Jaar Jandino",
+    "artiesten": [
+      "jandino-asporaat"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "jandino-asporaat-de-grote-jubileumshow-jandino-20-jaar",
     "titel": "De Grote Jubileumshow – Jandino 20 Jaar",
     "artiesten": [
@@ -1567,6 +1926,14 @@
     "titel": "Lift",
     "artiesten": [
       "jelka-van-houten-en-sanne-wallis-de-vries"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "jeroen-leenders-heiden",
+    "titel": "Heiden",
+    "artiesten": [
+      "jeroen-leenders"
     ],
     "genre": "cabaret"
   },
@@ -1641,6 +2008,14 @@
       "joep-van-deudekom-en-rob-urgert"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "joep-vermolen-so-this-was-nice-nou-was-leuk",
+    "titel": "So This Was Nice! / Nou was leuk!",
+    "artiesten": [
+      "joep-vermolen"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "joey-en-dave-houden-het-luchtig",
@@ -1723,6 +2098,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "julian-fontalvo-the-imitator",
+    "titel": "The Imitator",
+    "artiesten": [
+      "julian-fontalvo"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "juliet-ik-beloof-je-eeuwige-twijfel",
     "titel": "Ik beloof je eeuwige twijfel",
     "artiesten": [
@@ -1751,6 +2134,22 @@
     "titel": "Op zekere dag",
     "artiesten": [
       "kamagurka"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "kamal-kharmach-homo-economicus",
+    "titel": "Homo Economicus",
+    "artiesten": [
+      "kamal-kharmach"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "kamal-kharmach-mag-ik-even-2026",
+    "titel": "Mag ik even? 2026",
+    "artiesten": [
+      "kamal-kharmach"
     ],
     "genre": "stand-up"
   },
@@ -1890,6 +2289,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "kinderen-van-de-molukken-kelapa-muda",
+    "titel": "Kelapa Muda",
+    "artiesten": [
+      "kinderen-van-de-molukken"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "klaas-van-der-eerden-imperfect",
     "titel": "Imperfect",
     "artiesten": [
@@ -1904,6 +2311,21 @@
       "klaas-van-eerden"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "klub-karmijn-nee-jouw-kop-is-kermis",
+    "titel": "Nee, jouw kop is kermis",
+    "artiesten": [
+      "klub-karmijn"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "knock-out-comedy-crew-cpunt",
+    "titel": "Knock-Out Comedy Crew",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "cpunt"
   },
   {
     "id": "kobra-theaterproducties-baby-reindeer",
@@ -1942,6 +2364,14 @@
     "titel": "Korrelrelatie",
     "artiesten": [
       "kor-hoebe"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "lachen-in-grenswerk-nationaal-theaterweekend",
+    "titel": "Nationaal Theaterweekend",
+    "artiesten": [
+      "lachen-in-grenswerk"
     ],
     "genre": "cabaret"
   },
@@ -2000,6 +2430,13 @@
       "leo-en-marius-blokhuis"
     ],
     "genre": "kleinkunst"
+  },
+  {
+    "id": "leon-s-comedy-club-maaspoort",
+    "titel": "Leon's Comedy Club",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "maaspoort"
   },
   {
     "id": "leon-van-der-zanden-try-out-special",
@@ -2083,6 +2520,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "maaike-dirkje-hop-erkenning-de-musical",
+    "titel": "Erkenning, de musical",
+    "artiesten": [
+      "maaike-dirkje-hop"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "maarten-heijmans-en-xander-vrienten-wachtend-op-de-dood",
     "titel": "Wachtend op de dood",
     "artiesten": [
@@ -2091,12 +2536,45 @@
     "genre": "kleinkunst"
   },
   {
+    "id": "maarten-westra-hoekzema-ik-had-eigenlijk-nee-moeten-zeggen",
+    "titel": "Ik had eigenlijk nee moeten zeggen",
+    "artiesten": [
+      "maarten-westra-hoekzema"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "maartje-en-kine-de-bingo-show",
     "titel": "De bingo show",
     "artiesten": [
       "maartje-en-kine"
     ],
     "genre": "kleinkunst"
+  },
+  {
+    "id": "maartje-mikx-ze-vraagt-erom",
+    "titel": "Ze vraagt erom",
+    "artiesten": [
+      "maartje-mikx"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "maddie-venema-lex-van-wieren-happen-en-lachen",
+    "titel": "Happen & Lachen",
+    "artiesten": [
+      "maddie-venema",
+      "lex-van-wieren"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "marcel-hensema-eldorado",
+    "titel": "Eldorado",
+    "artiesten": [
+      "marcel-hensema"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "marcel-van-roosmalen-ik-mag-niet-klagen",
@@ -2187,10 +2665,26 @@
     "genre": "stand-up"
   },
   {
+    "id": "martijn-crins-he-fijn",
+    "titel": "Hè Fijn",
+    "artiesten": [
+      "martijn-crins"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "martijn-crins-kooiapen",
     "titel": "Kooiapen",
     "artiesten": [
       "martijn-crins"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "martijn-kardol-voor-de-vorm",
+    "titel": "Voor de vorm",
+    "artiesten": [
+      "martijn-kardol"
     ],
     "genre": "cabaret"
   },
@@ -2231,6 +2725,14 @@
       "mc-jeffrey-spalburg-en-dj-phantom"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "meester-mark-later-word-ik-7",
+    "titel": "Later word ik 7",
+    "artiesten": [
+      "meester-mark"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "merijn-scholten-lemming",
@@ -2305,6 +2807,21 @@
     "genre": "stand-up"
   },
   {
+    "id": "mohsin-abbas-moh",
+    "titel": "Moh?!",
+    "artiesten": [
+      "mohsin-abbas"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "morgan-jay-stadsschouwburg-antwerpen",
+    "titel": "Morgan Jay",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "stadsschouwburg-antwerpen"
+  },
+  {
     "id": "mylou-frencken-familie-voor-beginners",
     "titel": "Familie voor beginners",
     "artiesten": [
@@ -2353,6 +2870,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "naomi-antonius-geen-woorden-voor-over-de-illusie-van-inclusie",
+    "titel": "Geen woorden voor - over de illusie van inclusie",
+    "artiesten": [
+      "naomi-antonius"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "naomi-seine-maria",
     "titel": "Maria",
     "artiesten": [
@@ -2377,6 +2902,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "nationaal-theaterweekend-2027-blind-date-cabaret",
+    "titel": "Blind Date - Cabaret",
+    "artiesten": [
+      "nationaal-theaterweekend-2027"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "nederlands-studentenkampioenschap-improvisatie-comedy-finale-2026",
     "titel": "Finale 2026",
     "artiesten": [
@@ -2393,8 +2926,8 @@
     "genre": "stand-up"
   },
   {
-    "id": "nhung-dam-nhung-dam",
-    "titel": "Nhung Dam",
+    "id": "nhung-dam-legende-van-de-witte-slang",
+    "titel": "Legende van de witte slang",
     "artiesten": [
       "nhung-dam"
     ],
@@ -2413,6 +2946,14 @@
     "titel": "Appeltje eitje",
     "artiesten": [
       "nienke-plas"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "niet-schieten-het-hoogtepunt",
+    "titel": "Het Hoogtepunt",
+    "artiesten": [
+      "niet-schieten"
     ],
     "genre": "cabaret"
   },
@@ -2462,6 +3003,18 @@
       "onias-landveld",
       "jorgen-raymann",
       "howard-komproe"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "onias-landveld-jorgen-raymann-steven-brunswijk-howard-komproe-joshua-timisela-pa",
+    "titel": "Papa Zonder Handleiding XL",
+    "artiesten": [
+      "onias-landveld",
+      "jorgen-raymann",
+      "steven-brunswijk",
+      "howard-komproe",
+      "joshua-timisela"
     ],
     "genre": "cabaret"
   },
@@ -2583,6 +3136,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "peter-van-ewijk-groeiramp",
+    "titel": "Groeiramp",
+    "artiesten": [
+      "peter-van-ewijk"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "piet-en-matties-live-comedyavond-met-marco-lopes-piet-als-mc",
     "titel": "Comedyavond met Marco Lopes (Piet) als MC",
     "artiesten": [
@@ -2654,10 +3215,27 @@
     "genre": "stand-up"
   },
   {
+    "id": "preuteleute-v",
+    "titel": "V",
+    "artiesten": [
+      "preuteleute"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "rachid-larouz-wakker-worden",
     "titel": "Wakker Worden!",
     "artiesten": [
       "rachid-larouz"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "ramon-chatrer-rosalie-custers-happen-en-lachen",
+    "titel": "Happen & Lachen",
+    "artiesten": [
+      "ramon-chatrer",
+      "rosalie-custers"
     ],
     "genre": "cabaret"
   },
@@ -2781,6 +3359,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "rob-en-emiel-thinking-like-sherlock",
+    "titel": "Thinking Like Sherlock",
+    "artiesten": [
+      "rob-en-emiel"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "rob-kamphues-eindelijk-volwassen",
     "titel": "Eindelijk Volwassen",
     "artiesten": [
@@ -2879,6 +3465,23 @@
     "titel": "To Believe In Magic",
     "artiesten": [
       "rosa-doornenbal"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "rosalie-custers-vaas",
+    "titel": "Vaas",
+    "artiesten": [
+      "rosalie-custers"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "roue-verveer-peter-van-ewijk-dubbelcabaret",
+    "titel": "Dubbelcabaret",
+    "artiesten": [
+      "roue-verveer",
+      "peter-van-ewijk"
     ],
     "genre": "cabaret"
   },
@@ -2986,6 +3589,13 @@
     "theater": "comedy-cafe-amsterdam"
   },
   {
+    "id": "sederginne-s-feestelijke-cabaret-b-i-n-g-o-show-18-theater-de-kampanje",
+    "titel": "Sederginne’s Feestelijke Cabaret B.I.N.G.O. Show (18+)",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-de-kampanje"
+  },
+  {
     "id": "sederginne-sederginne-s-feestelijke-cabaret-b-i-n-g-o-show",
     "titel": "Sederginne’s Feestelijke Cabaret B.I.N.G.O. Show",
     "artiesten": [
@@ -3010,6 +3620,14 @@
     "genre": "kleinkunst"
   },
   {
+    "id": "seppe-toremans-storemans",
+    "titel": "Storemans",
+    "artiesten": [
+      "seppe-toremans"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "sezgin-gulec-kleine-walhalla",
     "titel": "Sezgin Guleç",
     "artiesten": [],
@@ -3019,6 +3637,14 @@
   {
     "id": "sezgin-gulec-nieuw-programma",
     "titel": "Nieuw Programma",
+    "artiesten": [
+      "sezgin-gulec"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "sezgin-gulec-sezgin-gulec",
+    "titel": "Sezgin Güleç",
     "artiesten": [
       "sezgin-gulec"
     ],
@@ -3072,11 +3698,26 @@
     "theater": "oude-luxor"
   },
   {
+    "id": "stand-up-het-jaar-uit-theater-aan-de-schie",
+    "titel": "Stand-up het jaar uit!",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-aan-de-schie"
+  },
+  {
     "id": "standupovka-amsterdam-comedy-cafe-amsterdam",
     "titel": "Standupovka | amsterdam",
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedy-cafe-amsterdam"
+  },
+  {
+    "id": "stef-bos-2027",
+    "titel": "2027",
+    "artiesten": [
+      "stef-bos"
+    ],
+    "genre": "kleinkunst"
   },
   {
     "id": "stefan-de-kogel-sloopkogel",
@@ -3103,12 +3744,36 @@
     "genre": "cabaret"
   },
   {
+    "id": "stel-the-show-goes-on",
+    "titel": "The Show Goes On",
+    "artiesten": [
+      "stel"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "steven-brunswijk-navigatie-is-stuk",
+    "titel": "Navigatie is stuk",
+    "artiesten": [
+      "steven-brunswijk"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "steven-brunswijk-steven-brunswijk",
     "titel": "Steven Brunswijk",
     "artiesten": [
       "steven-brunswijk"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "steven-mahieu-stabieler",
+    "titel": "Stabieler",
+    "artiesten": [
+      "steven-mahieu"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "stichting-altays-musti-kusti-stand-up-comedy",
@@ -3167,6 +3832,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "the-funniest-festival-ever-theater-aan-de-parade",
+    "titel": "The Funniest Festival Ever!",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-aan-de-parade"
+  },
+  {
     "id": "the-laughing-lizard-comedy-cafe",
     "titel": "Comedy Café",
     "artiesten": [
@@ -3214,6 +3886,15 @@
       "rop"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "thijs-kemperink-erwin-nyhoff-vieren-een-muiterse-kerst",
+    "titel": "vieren een Muiterse Kerst",
+    "artiesten": [
+      "thijs-kemperink",
+      "erwin-nyhoff"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "thijs-kemperink-tot-het-uiterste-gedreven",
@@ -3351,6 +4032,14 @@
     "theater": "theater-bellevue"
   },
   {
+    "id": "twente-plat-lachen-is-gezond",
+    "titel": "Lachen is gezond",
+    "artiesten": [
+      "twente-plat"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "utrechts-international-comedy-festival-freedom-is-no-joke-2027",
     "titel": "Freedom is No Joke 2027",
     "artiesten": [
@@ -3387,6 +4076,28 @@
     "titel": "Alles Onder Controle",
     "artiesten": [
       "van-vleuten-en-van-muiswinkel"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "veenendaal-lacht-comedy-night-theater-lampegiet",
+    "titel": "Veenendaal Lacht - Comedy Night",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-lampegiet"
+  },
+  {
+    "id": "veenendaal-lacht-talent-night-theater-lampegiet",
+    "titel": "Veenendaal Lacht - Talent Night",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-lampegiet"
+  },
+  {
+    "id": "veldhuis-en-kemper-nieuwe-voorstelling",
+    "titel": "Nieuwe voorstelling",
+    "artiesten": [
+      "veldhuis-en-kemper"
     ],
     "genre": "cabaret"
   },
@@ -3440,6 +4151,13 @@
     "theater": "comedy-cafe-amsterdam"
   },
   {
+    "id": "vrouwejaars-2026-cpunt",
+    "titel": "Vrouwejaars 2026",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "cpunt"
+  },
+  {
     "id": "vrouwejaars-2026-de-blik-op-2026-door-de-ogen-van-vrouwen",
     "titel": "De blik op 2026 door de ogen van vrouwen!",
     "artiesten": [
@@ -3479,6 +4197,21 @@
     "genre": "stand-up"
   },
   {
+    "id": "wannes-cappelle-verstaanbaar",
+    "titel": "Verstaanbaar",
+    "artiesten": [
+      "wannes-cappelle"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "wat-als-in-concert-cc-de-schakel",
+    "titel": "Wat Als in Concert",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "cc-de-schakel"
+  },
+  {
     "id": "we-saw-that-gbemi-oladipo-en-andrew-mensah",
     "titel": "Gbemi Oladipo & Andrew Mensah",
     "artiesten": [
@@ -3516,6 +4249,21 @@
     "theater": "theater-de-spiegel"
   },
   {
+    "id": "wie-is-het-theater-lampegiet",
+    "titel": "Wie is het?",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-lampegiet"
+  },
+  {
+    "id": "william-boeva-drift",
+    "titel": "Drift",
+    "artiesten": [
+      "william-boeva"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "wim-helsen-welkom-ongemak",
     "titel": "Welkom Ongemak",
     "artiesten": [
@@ -3528,6 +4276,29 @@
     "titel": "Wina's Wereld",
     "artiesten": [
       "wina-ricardo"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "wouter-deprez-en-tcha-limberger-cc-de-schakel",
+    "titel": "Wouter Deprez & Tcha Limberger",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "cc-de-schakel"
+  },
+  {
+    "id": "wouter-monden-met-blokjes",
+    "titel": "Met Blokjes",
+    "artiesten": [
+      "wouter-monden"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "xander-de-rycke-back-to-the-beginning",
+    "titel": "Back To The Beginning",
+    "artiesten": [
+      "xander-de-rycke"
     ],
     "genre": "stand-up"
   },
@@ -3623,6 +4394,14 @@
     "titel": "Match",
     "artiesten": [
       "zij-en-aron-elstak"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "zoe-bizoe-cabaresque",
+    "titel": "Cabaresque",
+    "artiesten": [
+      "zoe-bizoe"
     ],
     "genre": "cabaret"
   }

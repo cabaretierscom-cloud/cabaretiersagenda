@@ -1,0 +1,410 @@
+{
+  "bron": "schakel",
+  "naam": "CC De Schakel",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "cc-de-schakel",
+      "naam": "CC De Schakel",
+      "plaats": "Waregem",
+      "land": "BE",
+      "soort": "theater",
+      "website": "https://www.ccdeschakel.be"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Wannes Cappelle"
+      ],
+      "titel": "Verstaanbaar",
+      "genre": "cabaret",
+      "datum": "2026-11-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/wannes-cappelle-jzlk"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Wannes Cappelle"
+      ],
+      "titel": "Verstaanbaar",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/wannes-cappelle-jzlk"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Seppe Toremans"
+      ],
+      "titel": "Storemans",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/seppe-toremans-bn65"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Erhan Demirci"
+      ],
+      "titel": "Made in Cité",
+      "genre": "cabaret",
+      "datum": "2026-12-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/erhan-demirci-t7qs"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Humo's Comedy Cup Finalistentour"
+      ],
+      "titel": "Bregje Iding, Jeroen Dyck, Peter Kluppels en MC Jarno Boone",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/humo-s-comedy-cup-finalistentour-x9m1"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Wouter Deprez & Tcha Limberger",
+      "genre": "cabaret",
+      "datum": "2027-01-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/wouter-deprez-tcha-limberger-x5b7"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Wouter Deprez & Tcha Limberger",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/wouter-deprez-tcha-limberger-x5b7"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Wouter Deprez & Tcha Limberger",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:00",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/wouter-deprez-tcha-limberger-x5b7"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Yannick Noben"
+      ],
+      "titel": "Eindejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2027-01-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/yannick-noben-5t9g"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back to the Beginning",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/xander-de-rycke-x9pf"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back to the Beginning",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/xander-de-rycke-x9pf"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back to the Beginning",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/xander-de-rycke-x9pf"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Wat Als in Concert",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/wat-als-in-concert-r21x"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Wat Als in Concert",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/wat-als-in-concert-r21x"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Zoe Bizoe"
+      ],
+      "titel": "Cabaresque",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/zoe-bizoe-qrfm"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Gunter Lamoot"
+      ],
+      "titel": "Protpourri",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/gunter-lamoot-l4y1"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Henk Rijckaert"
+      ],
+      "titel": "Belachelijk!",
+      "genre": "cabaret",
+      "datum": "2027-03-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/henk-rijckaert-hpgj"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "William Boeva"
+      ],
+      "titel": "Drift",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/william-boeva-r21r"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Jeroen Leenders"
+      ],
+      "titel": "Heiden",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/jeroen-leenders-5cfz"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Homo Economicus",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/kamal-kharmach-bnbn"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Voor Normale Mensen",
+      "genre": "cabaret",
+      "datum": "2027-04-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/dries-heyneman-c8c2"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Voor Normale Mensen",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/dries-heyneman-c8c2"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Voor Normale Mensen",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/dries-heyneman-c8c2"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Mohsin Abbas"
+      ],
+      "titel": "Moh?!",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/mohsin-abbas-bfnt"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Rosalie Custers"
+      ],
+      "titel": "Vaas",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/rosalie-custers-jhjw"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Han Solo"
+      ],
+      "titel": "Psycho Solo: Lof der Zotheid",
+      "genre": "cabaret",
+      "datum": "2027-05-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/han-solo-slsv"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Han Solo"
+      ],
+      "titel": "Psycho Solo: Lof der Zotheid",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/han-solo-slsv"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Han Solo"
+      ],
+      "titel": "Psycho Solo: Lof der Zotheid",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/han-solo-slsv"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "DDT houdt uitverkoop"
+      ],
+      "titel": "(feat. Jacques Vermeire)",
+      "genre": "cabaret",
+      "datum": "2027-06-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/ddt-houdt-uitverkoop-ncn4"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "DDT houdt uitverkoop"
+      ],
+      "titel": "(feat. Jacques Vermeire)",
+      "genre": "cabaret",
+      "datum": "2027-06-05",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/ddt-houdt-uitverkoop-ncn4"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "DDT houdt uitverkoop"
+      ],
+      "titel": "(feat. Jacques Vermeire)",
+      "genre": "cabaret",
+      "datum": "2027-06-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/ddt-houdt-uitverkoop-ncn4"
+    }
+  ]
+}

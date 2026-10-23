@@ -1,0 +1,1426 @@
+{
+  "bron": "cpunt",
+  "naam": "Cpunt",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "cpunt",
+      "naam": "Cpunt",
+      "plaats": "Hoofddorp",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.cpunt.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Myrte Siebinga"
+      ],
+      "titel": "Gelukkig maar",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/myrte-siebinga"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Samir Fighil"
+      ],
+      "titel": "Turbulentie",
+      "genre": "cabaret",
+      "datum": "2027-03-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/samir-fighil"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Mylou Frencken"
+      ],
+      "titel": "Familie voor Beginners",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/mylou-frencken"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/ronald-goedemondt"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Fred van Leer"
+      ],
+      "titel": "Ik weet het eigenlijk niet",
+      "genre": "cabaret",
+      "datum": "2026-12-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/fred-van-leer"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/richard-groenendijk"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Greg Shapiro"
+      ],
+      "titel": "KING ME - 250 years of Donald Trump",
+      "genre": "cabaret",
+      "datum": "2026-10-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/greg-shapiro"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Diederick Ensink"
+      ],
+      "titel": "Iets Te Vieren",
+      "genre": "cabaret",
+      "datum": "2026-10-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/diederik-ensink"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "De Baas",
+      "genre": "cabaret",
+      "datum": "2026-10-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/lisa-ostermann"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Comedytrain On Tour"
+      ],
+      "titel": "Tour 2026",
+      "genre": "cabaret",
+      "datum": "2026-10-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/comedytrain-on-tour"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Juliet"
+      ],
+      "titel": "Ik beloofde je eeuwige twijfel",
+      "genre": "cabaret",
+      "datum": "2026-10-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/juliet"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Firma Weijland / Jack Weijkamp"
+      ],
+      "titel": "Sta op komediant!",
+      "genre": "cabaret",
+      "datum": "2026-10-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/firma-weijland-jack-weijkamp"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Roel & Jos Maalderink"
+      ],
+      "titel": "Verbroedering",
+      "genre": "cabaret",
+      "datum": "2026-10-31",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/roel-jos-maalderink"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2026-11-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/david-van-rosmalen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/rene-van-meurs"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Pieter Derks"
+      ],
+      "titel": "Ja, leuk",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/pieter-derks"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Tim Kroezen"
+      ],
+      "titel": "550",
+      "genre": "cabaret",
+      "datum": "2026-11-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/tim-kroezen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Anuar"
+      ],
+      "titel": "Ongeduldig Geduldig",
+      "genre": "cabaret",
+      "datum": "2026-11-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/anuar"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Blauwe Vinkjes"
+      ],
+      "titel": "Poeha",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/blauwe-vinkjes"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos - Oudejaars 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/dolf-jansen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "Striptease Van De Dood",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/david-linszen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Berit Companjen"
+      ],
+      "titel": "Zei ik dat hardop?",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/berit-companjen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Marcel Hensema"
+      ],
+      "titel": "Eldorado",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/marcel-hensema"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-broers-van-arkel"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Vrouwejaars 2026"
+      ],
+      "titel": "Yora Rienstra e.a",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/vrouwejaars-2026"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2026-11-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/bob-koomen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Chris Verlaan"
+      ],
+      "titel": "Ach, er komen geen kindjes van",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/chris-verlaan"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Rob Urgert & Joep van Deudekom"
+      ],
+      "titel": "De Grote Oudejaars Kwis 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-01",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/rob-urgert-joep-van-deudekom"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Marjolijn van Kooten"
+      ],
+      "titel": "Aan mij zal het niet liggen",
+      "genre": "cabaret",
+      "datum": "2026-12-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/marjolijn-van-kooten"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Rayen Panday & Friends"
+      ],
+      "titel": "Wonderful Christmastime",
+      "genre": "cabaret",
+      "datum": "2026-12-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/rayen-panday-friends"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Sjaak Bral"
+      ],
+      "titel": "Vaarwel 2026!",
+      "genre": "cabaret",
+      "datum": "2026-12-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/sjaak-bral"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Marlon Kicken"
+      ],
+      "titel": "Maestro",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/marlon-kicken"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Kiki Schippers"
+      ],
+      "titel": "De Grote Hoop - Oudejaarsconference",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/kiki-schippers"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/joosen-en-de-jager"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Max van den Burg - UitopdeDag"
+      ],
+      "titel": "Maxikozi",
+      "genre": "cabaret",
+      "datum": "2026-12-15",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/max-van-den-burg-uitopdedag"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/remko-vrijdag"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Nilgün Yerli"
+      ],
+      "titel": "Weet je het zeker?",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/nilgun-yerli"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2026-12-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/lebbis"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Stefan Hendrikx"
+      ],
+      "titel": "In Perspectief",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/stefan-hendrikx"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Joep Vermolen"
+      ],
+      "titel": "So This Was Nice! / Nou was leuk!",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/joep-vermolen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Christian van Eijkelenburg"
+      ],
+      "titel": "Small Talk",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/christian-van-eijkelenburg"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/valentina-toth"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/martijn-koning"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/luuk-weggemans"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Iris Rulkens"
+      ],
+      "titel": "Van Harte!",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/iris-rulkens"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Rob Kamphues"
+      ],
+      "titel": "Eindelijk Volwassen",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/rob-kamphues"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Elfie Tromp"
+      ],
+      "titel": "Aai Poesje Aai Poesje",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/elfie-tromp"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2027-01-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/nienke-plas"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/oscar-smit"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/rayen-panday"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/van-vleuten-en-van-muiswinkel"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/van-vleuten-en-van-muiswinkel"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Johan Goossens"
+      ],
+      "titel": "Het Volle Leven",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/johan-goossens"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Tis hier geen hotel 3"
+      ],
+      "titel": "Hanneke Drenth en Dianne Liesker",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/tis-hier-geen-hotel-3"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Kim Schuddeboom"
+      ],
+      "titel": "Hardleers",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/kim-schuddeboom"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/rundfunk"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Buğra Gedik"
+      ],
+      "titel": "Ğelukkig Ğeboren",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/bugra-gedik"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Luuk Ransijn - UitopdeDag"
+      ],
+      "titel": "Uitkijk",
+      "genre": "cabaret",
+      "datum": "2027-02-16",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/luuk-ransijn-uitopdedag"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Céline Janssen"
+      ],
+      "titel": "Opera op Reis",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/celine-janssen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Finalistentournee 60e editie",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/cameretten"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Joey & Dave"
+      ],
+      "titel": "Houden het luchtig..",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/joey-dave"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "cabaret",
+      "datum": "2027-02-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/selma-visscher"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z'n scherpst",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/rob-scheepers"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Lovella Telesford"
+      ],
+      "titel": "Wat een gezeik!",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/lovella-telesford"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Dorine Wiersma"
+      ],
+      "titel": "Gaandeweg",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/dorine-wiersma"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Ricky Risolles 3"
+      ],
+      "titel": "Niet zo Indiscreet..",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/ricky-risolles-3"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Roel C. Verburg"
+      ],
+      "titel": "Slechtste liedjes van de straat",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/roel-c-verburg"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Bolder & Van Santen"
+      ],
+      "titel": "Looprat",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/bolder-van-santen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Jandino Asporaat"
+      ],
+      "titel": "De grote jubileumshow – jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/jandino-asporaat"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Tim Hartog"
+      ],
+      "titel": "In principe",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/tim-hartog"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Amsterdam Kleinkunst Festival"
+      ],
+      "titel": "Halvefinalistentournee",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/amsterdam-kleinkunst-festival"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/andries-tunru"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Thom Gerrits"
+      ],
+      "titel": "Alleen Vanavond",
+      "genre": "cabaret",
+      "datum": "2027-03-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/thom-gerrits"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Ashton Brothers"
+      ],
+      "titel": "Brothers",
+      "genre": "cabaret",
+      "datum": "2027-03-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/ashton-brothers"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Kees Prins"
+      ],
+      "titel": "Yesterday",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/kees-prins"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Boban Braspenning"
+      ],
+      "titel": "Bruto",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/boban-braspenning"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/jay-francis"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/roue-verveer"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Familiegeheimen"
+      ],
+      "titel": "Jennifer Evenhuis, Renate Reijnders en Margôt Ros",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/familiegeheimen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Deng Boy"
+      ],
+      "titel": "Double Trouble",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/deng-boy"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Maartje Mikx"
+      ],
+      "titel": "Ze vraagt erom",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/maartje-mikx"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Teun van den Elzen"
+      ],
+      "titel": "Ze moesten eens weten",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/teun-van-den-elzen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/nabil-27"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Kees van Amstel"
+      ],
+      "titel": "Mogen we eerder weg?",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/kees-van-amstel"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Stel"
+      ],
+      "titel": "The Show Goes On",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/stel"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een snotje",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/kim-karssen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Martijn Kardol"
+      ],
+      "titel": "Voor de vorm",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/martijn-kardol"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/freek-de-jonge"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Kooiapen",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/martijn-crins"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Jeannine la Rose"
+      ],
+      "titel": "Meer?!",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/jeannine-la-rose"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Leids Cabaret Festival"
+      ],
+      "titel": "Finalistentour 2027",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/leids-cabaret-festival"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "De Theatertroep"
+      ],
+      "titel": "Vier crematies en een scheiding",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-theatertroep"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Veldhuis en Kemper"
+      ],
+      "titel": "Nieuwe voorstelling",
+      "genre": "cabaret",
+      "datum": "2027-05-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/veldhuis-en-kemper"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Is het leven al begonnen?",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/fabian-franciscus"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Knock-Out Comedy Crew",
+      "genre": "cabaret",
+      "datum": "2026-11-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/knock-out-comedy-crew-nov"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Knock-Out Comedy Crew",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/knock-out-comedy-crew-dec"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Knock-Out Comedy Crew",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/knock-out-comedy-crew-feb"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Knock-Out Comedy Crew",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/knock-out-comedy-crew-mrt"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Kor Hoebe"
+      ],
+      "titel": "Korrelatie",
+      "genre": "cabaret",
+      "datum": "2027-09-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/kor-hoebe"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Kor Hoebe"
+      ],
+      "titel": "Korrelatie",
+      "genre": "cabaret",
+      "datum": "2027-09-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/kor-hoebe"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-04-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/esther-van-der-voort"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-04-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/esther-van-der-voort"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Tobi Kooiman"
+      ],
+      "titel": "Best of 4",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/tobi-kooiman"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Tobi Kooiman"
+      ],
+      "titel": "Best of 4",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/tobi-kooiman"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Expat Cafe: Rashi Favier"
+      ],
+      "titel": "Person of Colour",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/expat-cafe-rashi-favier"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peter-pannekoek"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/marie-koet"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/marie-koet"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Eran&co"
+      ],
+      "titel": "Ai&ik",
+      "genre": "cabaret",
+      "datum": "2026-10-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/eranco"
+    }
+  ]
+}

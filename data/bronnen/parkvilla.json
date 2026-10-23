@@ -1,0 +1,95 @@
+{
+  "bron": "parkvilla",
+  "naam": "Parkvilla",
+  "opgehaald": "2026-10-23",
+  "theaters": [
+    {
+      "id": "parkvilla",
+      "naam": "Parkvilla",
+      "plaats": "Alphen aan den Rijn",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://parkvilla.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "parkvilla",
+      "artiesten": [
+        "Fimme Bakker"
+      ],
+      "titel": "Zwaargewicht",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://parkvilla.nl/theater/fimme-bakker-zwaargewicht-309"
+    },
+    {
+      "theater": "parkvilla",
+      "artiesten": [
+        "Elias De Bruyne"
+      ],
+      "titel": "One night with Elias",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://parkvilla.nl/theater/elias-de-bruyne-one-night-with-elias-try-out-312"
+    },
+    {
+      "theater": "parkvilla",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://parkvilla.nl/theater/de-broers-van-arkel-zeg-maar-u-315"
+    },
+    {
+      "theater": "parkvilla",
+      "artiesten": [
+        "Amsterdam Kleinkunst Festival"
+      ],
+      "titel": "Halvefinalistentournee",
+      "genre": "kleinkunst",
+      "datum": "2027-02-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://parkvilla.nl/theater/amsterdam-kleinkunst-festival-halvefinalistentournee-317"
+    },
+    {
+      "theater": "parkvilla",
+      "artiesten": [
+        "Ricky Koole"
+      ],
+      "titel": "Rare Leeftijd",
+      "genre": "cabaret",
+      "datum": "2027-01-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://parkvilla.nl/theater/ricky-koole-rare-leeftijd-318"
+    },
+    {
+      "theater": "parkvilla",
+      "artiesten": [
+        "Piet van Eeghen"
+      ],
+      "titel": "De Lieve Vrede",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://parkvilla.nl/theater/piet-van-eeghen-de-lieve-vrede-321"
+    }
+  ]
+}
