@@ -17,7 +17,7 @@ export const plaatsId = (p) =>
 export const SITE = {
   name: "Cabaretiers.com",
   url: "https://www.cabaretiers.com",
-  description: "De cabaretagenda van Nederland en België: alle aankomende cabaret- en comedyvoorstellingen, theaters en artiesten op één plek.",
+  description: "De theateragenda van Nederland en België: alle aankomende cabaret- en comedyvoorstellingen, theaters en artiesten op één plek.",
 };
 
 const ICON = {
@@ -80,7 +80,7 @@ export function createTemplates(db) {
       ["over", "/over/", "Over"],
     ].map(([key, href, label]) =>
       `<a href="${href}"${key === section ? ' aria-current="page"' : ""}>${label}</a>`).join("");
-    const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name}: de cabaretagenda van Nederland en België`;
+    const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name}: de theateragenda van Nederland en België`;
     return `<!doctype html>
 <html lang="nl">
 <head>

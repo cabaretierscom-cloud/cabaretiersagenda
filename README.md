@@ -1,6 +1,6 @@
 # Cabaretiers.com
 
-De cabaretagenda van Nederland en België: alle aankomende cabaret- en comedyvoorstellingen, theaters en artiesten op één plek. Van theatercabaret tot stand-up in comedyclubs en cafés, festivals en open mics.
+De theateragenda van Nederland en België: alle aankomende cabaret- en comedyvoorstellingen, theaters en artiesten op één plek. Van theatercabaret tot stand-up in comedyclubs en cafés, festivals en open mics.
 
 ## Hoe het werkt
 
