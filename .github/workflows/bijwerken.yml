@@ -1,11 +1,14 @@
-# Haalt elke nacht de speellijsten op, voegt ze samen en slaat de wijzigingen op.
-# Daarna bouwt de hosting (Netlify/Vercel) de site vanzelf opnieuw.
+# Elke nacht: speellijsten ophalen, samenvoegen, opslaan en de site op Cloud86 zetten.
+# Bij elke wijziging op main: alleen bouwen en de site op Cloud86 zetten.
+# Nodig in Settings > Secrets and variables > Actions: CLOUD86_HOST, CLOUD86_USER, CLOUD86_PASSWORD.
 name: Agenda bijwerken
 
 on:
   schedule:
     - cron: "17 3 * * *" # elke nacht om 03:17 UTC
   workflow_dispatch: {} # handmatig starten via het tabblad Actions
+  push:
+    branches: [main]
 
 permissions:
   contents: write
@@ -17,7 +20,7 @@ concurrency:
 jobs:
   bijwerken:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -26,16 +29,21 @@ jobs:
           node-version: 22
 
       - name: Speellijsten ophalen
+        if: github.event_name != 'push'
         # Een bron die faalt, houdt zijn vorige uitkomst; de rest gaat gewoon door.
         run: npm run ophalen || echo "::warning::Niet alle bronnen zijn gelukt, zie het logboek hierboven."
 
-      - name: Samenvoegen en controleren
+      - name: Samenvoegen
+        if: github.event_name != 'push'
+        run: npm run samenvoegen
+
+      - name: Controleren en bouwen
         run: |
-          npm run samenvoegen
           npm run check
           npm run build
 
       - name: Wijzigingen opslaan
+        if: github.event_name != 'push'
         run: |
           if git diff --quiet -- data; then
             echo "Geen wijzigingen in de agenda."
@@ -45,4 +53,26 @@ jobs:
           git config user.email "cabaretiers-bot@users.noreply.github.com"
           git add data
           git commit -m "Agenda bijgewerkt $(date -u +%Y-%m-%d)"
+          git pull --rebase origin main
           git push
+
+      - name: Site op Cloud86 zetten
+        env:
+          HOST: ${{ secrets.CLOUD86_HOST }}
+          GEBRUIKER: ${{ secrets.CLOUD86_USER }}
+          LFTP_PASSWORD: ${{ secrets.CLOUD86_PASSWORD }}
+        run: |
+          if [ -z "$HOST" ] || [ -z "$GEBRUIKER" ] || [ -z "$LFTP_PASSWORD" ]; then
+            echo "::warning::Geen Cloud86-gegevens ingesteld; de site is niet geplaatst."
+            exit 0
+          fi
+          sudo apt-get install -y -qq lftp > /dev/null
+          verbind="set sftp:auto-confirm yes; set net:max-retries 3; set net:timeout 30; open --env-password -u $GEBRUIKER sftp://$HOST"
+          # Eenmalig: staat er nog WordPress in httpdocs, verplaats dat dan naar wordpress-oud (niet weggooien).
+          if lftp -c "$verbind; cls httpdocs/wp-config.php" > /dev/null 2>&1; then
+            echo "WordPress gevonden in httpdocs; verplaatst naar wordpress-oud."
+            lftp -c "$verbind; mkdir -p wordpress-oud; mmv httpdocs/* wordpress-oud/"
+          fi
+          # dist/ naar httpdocs/. Wat niet meer in dist staat, verdwijnt; .well-known (voor het
+          # SSL-certificaat van Let's Encrypt) blijft staan.
+          lftp -c "$verbind; mirror --reverse --delete --parallel=8 --verbose=1 --exclude-glob .well-known/ dist/ httpdocs/"
