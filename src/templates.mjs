@@ -1,6 +1,7 @@
 // HTML-templates. Elke functie geeft een string terug; build.mjs schrijft ze weg.
 import { LANDEN, STATUSSEN, GENRES, KLEUREN } from "./data.mjs";
 import { fmt, esc, plural, isoWithOffset } from "./format.mjs";
+import { WOORDMERK_SVG } from "./woordmerk.mjs";
 
 // Webadres-vriendelijke tekst: "Gelukkig heb je mij nog!" -> "gelukkig-heb-je-mij-nog".
 export const slugVan = (s) =>
@@ -115,7 +116,7 @@ ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title
   <div class="wrap">
     <a class="brand" href="/" aria-label="${SITE.name}, naar de agenda">
       <span class="brand-mark" aria-hidden="true">${LOGO_SVG}</span>
-      <span class="logo-tekst"><span class="wordmark">cabaret<span class="punt-i">ı</span>ers<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
+      <span class="logo-tekst"><span class="wordmark">${WOORDMERK_SVG}<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
     </a>
     <nav class="nav" aria-label="Hoofdmenu">${nav}</nav>
   </div>
@@ -127,7 +128,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   <div class="wrap">
     <a class="brand" href="/" aria-label="${SITE.name}, naar de voorpagina">
       <span class="brand-mark" aria-hidden="true">${LOGO_OMGEKEERD_SVG}</span>
-      <span class="logo-tekst" aria-hidden="true"><span class="wordmark">cabaret<span class="punt-i">ı</span>ers<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
+      <span class="logo-tekst" aria-hidden="true"><span class="wordmark">${WOORDMERK_SVG}<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
     </a>
     <p>Cabaret en comedy in Nederland en België, verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
   </div>

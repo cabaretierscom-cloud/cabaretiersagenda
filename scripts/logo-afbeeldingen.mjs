@@ -6,6 +6,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createServer } from "node:http";
 import { LOGO_SVG } from "../src/templates.mjs";
+import { WOORDMERK_SVG } from "../src/woordmerk.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const { chromium } = await import(process.env.PLAYWRIGHT || "playwright");
@@ -19,10 +20,11 @@ const url = `http://localhost:${server.address().port}/`;
 const browser = await chromium.launch();
 const page = await browser.newPage();
 await page.goto(url);
-await page.evaluate((svg) => {
+await page.evaluate(([svg, woord]) => {
   document.getElementById("merk1").innerHTML = svg;
   document.getElementById("icoon").innerHTML = svg.replace('rx="12"', 'rx="0"');
-}, LOGO_SVG);
+  document.getElementById("woord").outerHTML = woord;
+}, [LOGO_SVG, WOORDMERK_SVG]);
 await page.evaluate(() => document.fonts.ready);
 await page.locator("#deel").screenshot({ path: join(root, "public/deelafbeelding.png") });
 await page.locator("#icoon").screenshot({ path: join(root, "public/apple-touch-icon.png") });

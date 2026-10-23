@@ -131,12 +131,16 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .logo-tekst { display: flex; flex-direction: column; line-height: 1; }
 .ondertitel { font-family: var(--font-body); font-weight: 600; font-size: .62rem; letter-spacing: .24em; text-transform: uppercase; margin-top: 4px; padding-left: 1px; color: var(--ink); }
 .wordmark .tld { color: var(--riso-pink); font-weight: 700; font-size: 1.1rem; }
-/* De punt op de i is de punt uit het beeldmerk: een stip met een oranje kern. */
-.wordmark .punt-i { position: relative; display: inline-block; }
-.wordmark .punt-i::after {
-  content: ""; position: absolute; left: 50%; top: 0.07em; width: 0.14em; height: 0.14em; margin-left: -0.07em;
-  border-radius: 50%; background: radial-gradient(circle, var(--riso-orange) 0 40%, var(--ink) 42%);
-}
+/* Woordmerk (logo-ontwerp 11): de letters als SVG uit src/woordmerk.mjs. De binnenruimtes van a, b en e
+   krijgen riso-kleuren; de punt op de i is de punt uit het beeldmerk. */
+.wordmark { display: flex; align-items: baseline; }
+.wordmark .woord { width: 4.546em; height: 0.845em; margin-bottom: -0.015em; flex-shrink: 0; }
+.woord .bk-1 { fill: var(--riso-pink); }
+.woord .bk-2 { fill: var(--riso-yellow); }
+.woord .bk-3 { fill: var(--riso-aqua); }
+.woord .bk-4 { fill: var(--riso-lime); }
+.woord .bk-5 { fill: var(--riso-lilac); }
+.woord .kern { fill: var(--riso-orange); }
 .nav { display: flex; gap: 4px; margin-left: auto; }
 .nav a { text-decoration: none; font-weight: 500; padding: 10px 12px; border-radius: 999px; white-space: nowrap; }
 .nav a:hover { background: var(--paper-2); }
@@ -395,6 +399,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .site-footer p { margin: 0; max-width: 62ch; }
 .site-footer .wordmark, .site-footer .ondertitel { color: #000; }
 .site-footer .wordmark .tld { color: #000; }
+.site-footer .woord .kern { fill: #fff; }
 .site-footer a:focus-visible { outline-color: #000; }
 
 @media (prefers-reduced-motion: no-preference) { .strip { scroll-behavior: smooth; } }
