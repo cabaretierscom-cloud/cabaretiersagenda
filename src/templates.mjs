@@ -129,7 +129,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       <span class="brand-mark" aria-hidden="true">${LOGO_OMGEKEERD_SVG}</span>
       <span class="logo-tekst" aria-hidden="true"><span class="wordmark">cabaret<span class="punt-i">ı</span>ers<span class="tld">.com</span></span><span class="ondertitel">De cabaretagenda</span></span>
     </a>
-    <p>De cabaretagenda van Nederland en België. Speeldata verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
+    <p>Cabaret en comedy in Nederland en België, verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
   </div>
 </footer>
 <script src="/agenda.js" defer></script>
