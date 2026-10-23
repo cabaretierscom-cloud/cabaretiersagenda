@@ -68,7 +68,8 @@ export function createTemplates(db) {
   const showLink = (vid, tekst) => voorstellingPad.has(vid) ? `<a href="${voorstellingPad.get(vid)}">${tekst}</a>` : tekst;
 
 
-  function layout({ title, description = SITE.description, path, section, body, schema, afbeelding }) {
+  function layout({ title, description = SITE.description, path, section, body, schema }) {
+    const foto = schema?.foto?.foto;
     const nav = [
       ["agenda", "/agenda/", "Agenda"],
       ["artiesten", "/artiesten/", "Artiesten"],
@@ -89,7 +90,12 @@ export function createTemplates(db) {
 <link rel="canonical" href="${SITE.url}${path}">
 <meta property="og:title" content="${esc(title || SITE.name)}">
 <meta property="og:description" content="${esc(description)}">
-<meta property="og:type" content="website">${afbeelding ? `\n<meta property="og:image" content="${SITE.url}${esc(afbeelding)}">` : ""}
+<meta property="og:type" content="website">${foto ? `
+<meta property="og:image" content="${SITE.url}${esc(foto.bestand)}">
+<meta property="og:image:alt" content="${esc(foto.alt)}">${foto.breedte ? `
+<meta property="og:image:width" content="${foto.breedte}">
+<meta property="og:image:height" content="${foto.hoogte}">` : ""}
+<meta name="twitter:card" content="summary_large_image">` : ""}
 <meta property="og:url" content="${SITE.url}${path}">
 <meta property="og:locale" content="nl_NL">
 <meta name="theme-color" content="#FF6A13">
@@ -187,13 +193,21 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const a = A.get(id);
     return {
       "@type": isGroep(a) ? "PerformingGroup" : "Person", "@id": URL(`/artiesten/${id}/#artiest`), name: a.naam, url: URL(`/artiesten/${id}/`),
-      ...(a.foto ? { image: fotoLd(a) } : {}),
+      ...(a.foto ? { image: URL(a.foto.bestand) } : {}),
     };
   };
   const fotoLd = (a) => ({
-    "@type": "ImageObject", contentUrl: URL(a.foto.bestand), creditText: a.foto.maker,
+    "@type": "ImageObject", "@id": URL(`/artiesten/${a.id}/#foto`),
+    url: URL(a.foto.bestand), contentUrl: URL(a.foto.bestand), encodingFormat: "image/jpeg",
+    name: a.foto.alt, caption: a.foto.alt, description: a.foto.alt, inLanguage: "nl",
+    ...(a.foto.breedte ? { width: a.foto.breedte, height: a.foto.hoogte } : {}),
+    ...(a.foto.datum ? { dateCreated: a.foto.datum } : {}),
+    creditText: a.foto.maker, copyrightNotice: `${a.foto.maker}, ${a.foto.licentie}`,
     ...(a.foto.licentieUrl ? { license: a.foto.licentieUrl } : {}), acquireLicensePage: a.foto.bron,
+    about: { "@id": URL(`/artiesten/${a.id}/#artiest`) },
   });
+  // Eerste artiest met een foto bij een voorstelling.
+  const fotoArtiest = (vid) => V.get(vid).artiesten.map((x) => A.get(x)).find((x) => x.foto);
   const zaalLd = (id) => {
     const t = T.get(id);
     return {
@@ -219,7 +233,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       inLanguage: t.land === "BE" ? "nl-BE" : "nl-NL",
       location: zaalLd(g.theater),
-      ...((() => { const met = v.artiesten.map((x) => A.get(x)).find((x) => x.foto); return met ? { image: URL(met.foto.bestand) } : {}; })()),
+      ...(fotoArtiest(g.voorstelling) ? { image: [URL(fotoArtiest(g.voorstelling).foto.bestand)] } : {}),
       ...(v.artiesten.length ? { performer: v.artiesten.map(artiestLd) } : {}),
       offers: {
         "@type": "Offer", url: g.bron,
@@ -246,7 +260,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   }
 
   // schema = { type, kruimels: [[naam, pad], ...], over, hoofd, extra: [...] }
-  function paginaLd({ title, description, path, type = "WebPage", kruimels = [], over, hoofd, extra = [] }) {
+  function paginaLd({ title, description, path, type = "WebPage", kruimels = [], over, hoofd, foto, extra = [] }) {
     const paginaUrl = URL(path);
     const pad = [["Home", "/"], ...kruimels];
     return {
@@ -264,12 +278,14 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
           ...(pad.length > 1 ? { breadcrumb: { "@id": paginaUrl + "#kruimelpad" } } : {}),
           ...(over ? { about: over } : {}),
           ...(hoofd ? { mainEntity: hoofd } : {}),
+          ...(foto ? { primaryImageOfPage: { "@id": fotoLd(foto)["@id"] }, image: { "@id": fotoLd(foto)["@id"] } } : {}),
           dateModified: db.lastFetched || db.today,
         },
         ...(pad.length > 1 ? [{
           "@type": "BreadcrumbList", "@id": paginaUrl + "#kruimelpad",
           itemListElement: pad.map(([naam, p], i) => ({ "@type": "ListItem", position: i + 1, name: naam, item: URL(p) })),
         }] : []),
+        ...(foto ? [fotoLd(foto)] : []),
         ...extra,
       ],
     };
@@ -643,7 +659,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   // Rechtenvrije foto (Wikimedia Commons) met verplichte naamsvermelding en licentie.
   const fotoHtml = (a) => `<figure class="artiest-foto">
-          <img src="${esc(a.foto.bestand)}" alt="${esc(a.naam)}" loading="eager" decoding="async">
+          <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
           <figcaption>Foto: <a href="${esc(a.foto.bron)}" rel="noopener">${esc(a.foto.maker)}</a>${a.foto.licentieUrl ? `, <a href="${esc(a.foto.licentieUrl)}" rel="noopener license">${esc(a.foto.licentie)}</a>` : `, ${esc(a.foto.licentie)}`}</figcaption>
         </figure>`;
 
@@ -674,7 +690,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const desc = list.length
       ? kort(`${a.naam} live: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(cityCount, "plaats", "plaatsen")}${titles.length ? `, met ${titles.slice(0, 2).join(" en ")}` : ""}. Eerstvolgende op ${fmt.full(list[0].datum)}. Bekijk alle speeldata.`)
       : `${a.naam} op Cabaretiers.com.`;
-    return layout({ title: `${a.naam}: tournee en speeldata`, description: desc, path: `/artiesten/${a.id}/`, section: "artiesten", body, afbeelding: a.foto?.bestand, schema: { type: "ProfilePage", kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`]], hoofd: { "@id": artiestLd(a.id)["@id"] }, extra: [artiestLd(a.id), ...eventsLd(list)] } });
+    return layout({ title: `${a.naam}: tournee en speeldata`, description: desc, path: `/artiesten/${a.id}/`, section: "artiesten", body, schema: { type: "ProfilePage", foto: a.foto ? a : null, kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`]], hoofd: { "@id": artiestLd(a.id)["@id"] }, extra: [artiestLd(a.id), ...eventsLd(list)] } });
   }
 
   function voorstellingTekst(vid, list) {
@@ -723,10 +739,12 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const desc = kort(`${v.titel} van ${artistNames(vid)}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden, "plaats", "plaatsen")}. Eerstvolgende op ${fmt.full(list[0].datum)}. Bekijk alle speeldata.`);
     return layout({ title: `${v.titel} van ${artistNames(vid)}: speeldata`, description: desc, path: voorstellingPad.get(vid), section: "artiesten", body, schema: {
       kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`], [v.titel, voorstellingPad.get(vid)]],
+      foto: fotoArtiest(vid) || null,
       hoofd: { "@id": URL(voorstellingPad.get(vid) + "#voorstelling") },
       extra: [{
         "@type": "EventSeries", "@id": URL(voorstellingPad.get(vid) + "#voorstelling"), name: v.titel, url: URL(voorstellingPad.get(vid)),
         description: desc, performer: v.artiesten.map(artiestLd),
+        ...(fotoArtiest(vid) ? { image: { "@id": URL(`/artiesten/${fotoArtiest(vid).id}/#foto`) } } : {}),
         startDate: isoWithOffset(list[0].datum, list[0].tijd), endDate: isoWithOffset(list.at(-1).datum, list.at(-1).tijd),
         subEvent: list.slice(0, 100).map((g) => ({ "@id": eventId(g) })),
       }, ...eventsLd(list)],

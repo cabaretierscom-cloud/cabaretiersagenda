@@ -17,6 +17,8 @@ const pad = join(root, "data", "artiesten.json");
 const artiesten = JSON.parse(readFileSync(pad, "utf8"));
 const opnieuw = process.argv.includes("--opnieuw");
 // --alleen=id1,id2 om een paar artiesten te proberen
+// --aanvullen: beschrijving, datum en maten toevoegen aan foto's die er al zijn
+const aanvullen = process.argv.includes("--aanvullen");
 const alleen = process.argv.find((x) => x.startsWith("--alleen="))?.slice(9).split(",");
 
 // Het artikel moet over cabaret of comedy gaan; anders is het misschien een naamgenoot.
@@ -25,12 +27,41 @@ const VRIJ = /^(CC0|Public domain|PD|CC BY(-SA)? \d(\.\d)?|CC BY(-SA)?)/i;
 // Wikimedia levert alleen vaste breedtes (o.a. 330, 500, 960).
 const BREEDTE = 500;
 
+// Breedte en hoogte uit de kop van een JPEG-bestand (voor width/height en de gestructureerde gegevens).
+export function jpegMaten(buf) {
+  for (let i = 2; i < buf.length - 9; ) {
+    if (buf[i] !== 0xff) { i++; continue; }
+    const marker = buf[i + 1], len = buf.readUInt16BE(i + 2);
+    if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) return { hoogte: buf.readUInt16BE(i + 5), breedte: buf.readUInt16BE(i + 7) };
+    i += 2 + len;
+  }
+  return {};
+}
+
+// Beschrijving en datum van de foto op de Commons-bestandspagina; liefst in het Nederlands.
+function fotoInfo(fp) {
+  const td = fp.match(/<td class="description">([\s\S]*?)<\/td>/)?.[1] || "";
+  const inTaal = (taal) => td.match(new RegExp(`<div class="description ${taal}"[\\s\\S]*?<\\/span>([\\s\\S]*?)<\\/div>`))?.[1];
+  const nl = inTaal("nl"), en = inTaal("en");
+  const tekst = (html) => decodeEntities(stripTags(html || "")).replace(/\s+/g, " ").trim().slice(0, 200);
+  const beschrijving = nl ? { tekst: tekst(nl), taal: "nl" } : en ? { tekst: tekst(en), taal: "en" } : td && !/<div class="description/.test(td) ? { tekst: tekst(td), taal: "?" } : null;
+  const datum = fp.match(/<time class="dtstart" datetime="(\d{4}-\d{2}-\d{2})/)?.[1] || null;
+  return { beschrijving: beschrijving?.tekst ? beschrijving : null, datum };
+}
+
 function commonsThumb(bestand) {
   const naam = bestand.replace(/ /g, "_");
   const md5 = createHash("md5").update(naam).digest("hex");
   const enc = encodeURIComponent(naam);
   const ext = /\.(tiff?|svg)$/i.test(naam) ? ".jpg" : "";
   return `https://upload.wikimedia.org/wikipedia/commons/thumb/${md5[0]}/${md5.slice(0, 2)}/${enc}/${BREEDTE}px-${enc}${ext}`;
+}
+
+// Alt-tekst: de Nederlandse beschrijving van Commons als die kort is en de artiest noemt,
+// anders "Foto van <naam>". Controleer en verbeter alt-teksten van nieuwe foto's met de hand.
+function altTekst(a, { beschrijving }) {
+  const t = beschrijving?.taal === "nl" ? beschrijving.tekst.replace(/\s*\.$/, "") : "";
+  return t && t.length <= 125 && t.toLowerCase().includes(a.naam.toLowerCase()) ? t : `Foto van ${a.naam}`;
 }
 
 async function zoekFoto(a) {
@@ -66,9 +97,21 @@ async function zoekFoto(a) {
     // 4. Foto downloaden (verkleind)
     const buf = await getBestand(commonsThumb(bestand));
     writeFileSync(join(root, "public", "fotos", `${a.id}.jpg`), buf);
-    return { foto: { bestand: `/fotos/${a.id}.jpg`, maker, licentie, licentieUrl, bron: filePagina, wikidata: q } };
+    const info = fotoInfo(fp);
+    return { foto: { bestand: `/fotos/${a.id}.jpg`, alt: altTekst(a, info), maker, licentie, licentieUrl, bron: filePagina, wikidata: q, ...jpegMaten(buf), ...info } };
   }
   return { reden: "geen passend Wikipedia-artikel" };
+}
+
+if (aanvullen) {
+  for (const a of artiesten) {
+    if (!a.foto?.bestand) continue;
+    const buf = readFileSync(join(root, "public", a.foto.bestand));
+    Object.assign(a.foto, jpegMaten(buf), fotoInfo(await getText(a.foto.bron)));
+    console.log(`${a.naam}: ${a.foto.beschrijving?.tekst || "(geen beschrijving)"}`);
+  }
+  writeFileSync(pad, JSON.stringify(artiesten, null, 2) + "\n");
+  process.exit(0);
 }
 
 let gevonden = 0;

@@ -20,7 +20,7 @@ Een artiest kan optioneel `"vorm": "groep"` of `"vorm": "persoon"` hebben. Dat b
 
 ## Foto's van artiesten
 
-`npm run fotos` zoekt rechtenvrije foto's: via het Wikipedia-artikel van de artiest (alleen als dat over cabaret of comedy gaat) naar de hoofdafbeelding op Wikidata, en dan de licentie op Wikimedia Commons. Alleen CC0, publiek domein, CC BY en CC BY-SA worden gebruikt. De foto komt in `public/fotos/`, en het veld `foto` in `data/artiesten.json` bewaart maker, licentie en bron; die staan als naamsvermelding onder de foto. Bekijk nieuwe foto's altijd zelf: zet `"foto": false` bij een artiest als de foto niet klopt, dan zoekt het script er nooit meer een.
+`npm run fotos` zoekt rechtenvrije foto's: via het Wikipedia-artikel van de artiest (alleen als dat over cabaret of comedy gaat) naar de hoofdafbeelding op Wikidata, en dan de licentie op Wikimedia Commons. Alleen CC0, publiek domein, CC BY en CC BY-SA worden gebruikt. De foto komt in `public/fotos/`, en het veld `foto` in `data/artiesten.json` bewaart maker, licentie en bron; die staan als naamsvermelding onder de foto. Bekijk nieuwe foto's altijd zelf: zet `"foto": false` bij een artiest als de foto niet klopt, dan zoekt het script er nooit meer een. Elke foto heeft een `alt`-tekst (wat er op de foto te zien is, in het Nederlands). Het script vult die met de beschrijving van Commons of met "Foto van <naam>"; verbeter die met de hand. `npm run fotos -- --aanvullen` haalt beschrijving, datum en afmetingen opnieuw op voor bestaande foto's.
 
 ## Festivals
 
