@@ -68,20 +68,32 @@ jobs:
           fi
           sudo apt-get install -y -qq lftp > /dev/null
           verbind="set sftp:auto-confirm yes; set net:max-retries 3; set net:timeout 30; open --env-password -u $GEBRUIKER sftp://$HOST"
-          echo "Mappen op de server:"; lftp -c "$verbind; cls -1 --sort=name" || true
-          echo "Inhoud van httpdocs:"; lftp -c "$verbind; cls -1 httpdocs/" | head -30 || true
-          # Veiligheidscontrole: eerst een testbestand neerzetten en kijken of www.cabaretiers.com het toont.
-          # Zo niet, dan is httpdocs niet de map van de website en wordt er niets geplaatst of gewist.
+          # Op dit hostingpakket heeft elk domein een eigen map; die van www.cabaretiers.com is cabaretiers.com/.
+          DOEL=cabaretiers.com
+          # 1. Veiligheidscontrole: testbestand neerzetten en kijken of www.cabaretiers.com het toont.
+          #    Zo niet, dan is $DOEL niet de map van de website en wordt er niets verplaatst, geplaatst of gewist.
           test="plaatsingstest-${GITHUB_RUN_ID}.txt"
           echo "$GITHUB_RUN_ID" > "$test"
-          lftp -c "$verbind; put $test -o httpdocs/$test"
+          lftp -c "$verbind; put $test -o $DOEL/$test"
           sleep 5
           gevonden=$(curl -s "https://www.cabaretiers.com/$test?$RANDOM" || true)
-          lftp -c "$verbind; rm httpdocs/$test" || true
+          lftp -c "$verbind; rm $DOEL/$test" || true
           if [ "$gevonden" != "$GITHUB_RUN_ID" ]; then
-            echo "::error::httpdocs is niet de map van www.cabaretiers.com: het testbestand is daar niet te zien. Er is niets geplaatst."
+            echo "::error::$DOEL is niet de map van www.cabaretiers.com: het testbestand is daar niet te zien. Er is niets geplaatst."
             exit 1
           fi
-          # dist/ naar httpdocs/. Wat niet meer in dist staat, verdwijnt; .well-known (voor het
-          # SSL-certificaat van Let's Encrypt) blijft staan.
-          lftp -c "$verbind; mirror --reverse --delete --parallel=8 --verbose=1 --exclude-glob .well-known/ dist/ httpdocs/"
+          # 2. Eenmalig: staat er WordPress, verplaats dan alles (ook mappen) naar wordpress-oud-cabaretiers.
+          #    .well-known (SSL-certificaat van Let's Encrypt) blijft staan.
+          if lftp -c "$verbind; cls $DOEL/wp-config.php" > /dev/null 2>&1; then
+            echo "WordPress gevonden in $DOEL; wordt verplaatst naar wordpress-oud-cabaretiers."
+            lftp -c "$verbind; mkdir -p wordpress-oud-cabaretiers"
+            lftp -c "$verbind; cls -1a $DOEL/" | sed "s#^$DOEL/##; s#/\$##" | grep -vxE '\.|\.\.|\.well-known|' | while read -r x; do
+              lftp -c "$verbind; mv \"$DOEL/$x\" \"wordpress-oud-cabaretiers/$x\""
+            done
+            if lftp -c "$verbind; cls $DOEL/wp-config.php" > /dev/null 2>&1; then
+              echo "::error::WordPress kon niet volledig worden verplaatst; er is niets geplaatst."
+              exit 1
+            fi
+          fi
+          # 3. dist/ naar $DOEL/. Wat niet meer in dist staat, verdwijnt; .well-known blijft staan.
+          lftp -c "$verbind; mirror --reverse --delete --parallel=8 --verbose=1 --exclude-glob .well-known/ dist/ $DOEL/"
