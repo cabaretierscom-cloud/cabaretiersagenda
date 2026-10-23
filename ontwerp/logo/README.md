@@ -7,6 +7,7 @@ Gekozen ontwerp (oktober 2026): de C met de punt op een oranje vlak, met dezelfd
 - **Beeldmerk** (`beeldmerk.svg`): zwarte C met een zwarte punt met oranje kern, op een oranje vlak met ronde hoeken. Gebruik voor app-icoon, tabbladicoontje en sociale media.
 - **Beeldmerk omgekeerd** (`beeldmerk-omgekeerd.svg`): witte C en punt op zwart, voor gebruik op een oranje achtergrond.
 - **Woordmerk**: `cabaretiers` in Big Shoulders Display Black (900), kleine letters. De punt op de i is de punt uit het beeldmerk: een stip in de tekstkleur met een oranje kern. Daarachter `.com` in roze, Big Shoulders Display Bold (700), ongeveer een derde van de hoogte.
+- **Ondertitel**: `DE CABARETAGENDA` onder het woordmerk, in Instrument Sans SemiBold (600), hoofdletters met ruime letterafstand (ongeveer 0,24 em), ongeveer een derde van de hoogte van `.com`, in de tekstkleur.
 - Het woordmerk staat rechts van het beeldmerk, verticaal gecentreerd.
 
 ## Kleuren

@@ -127,6 +127,9 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   font-family: var(--font-display); font-weight: 900; font-size: 1.85rem; line-height: 1;
   letter-spacing: -0.01em;
 }
+/* Ondertitel onder het woordmerk, zoals in ontwerp/logo/README.md */
+.logo-tekst { display: flex; flex-direction: column; line-height: 1; }
+.ondertitel { font-family: var(--font-body); font-weight: 600; font-size: .62rem; letter-spacing: .24em; text-transform: uppercase; margin-top: 4px; padding-left: 1px; color: var(--ink); }
 .wordmark .tld { color: var(--riso-pink); font-weight: 700; font-size: 1.1rem; }
 /* De punt op de i is de punt uit het beeldmerk: een stip met een oranje kern. */
 .wordmark .punt-i { position: relative; display: inline-block; }
@@ -390,7 +393,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .site-footer { --ink: #000; --ink-2: #000; margin-top: 48px; background: var(--riso-orange); color: #000; }
 .site-footer .wrap { padding-block: 32px 40px; display: flex; gap: 16px 32px; align-items: center; justify-content: space-between; flex-wrap: wrap; font-size: .95rem; }
 .site-footer p { margin: 0; max-width: 62ch; }
-.site-footer .wordmark { color: #000; }
+.site-footer .wordmark, .site-footer .ondertitel { color: #000; }
 .site-footer .wordmark .tld { color: #000; }
 .site-footer a:focus-visible { outline-color: #000; }
 
