@@ -68,10 +68,19 @@ jobs:
           fi
           sudo apt-get install -y -qq lftp > /dev/null
           verbind="set sftp:auto-confirm yes; set net:max-retries 3; set net:timeout 30; open --env-password -u $GEBRUIKER sftp://$HOST"
-          # Eenmalig: staat er nog WordPress in httpdocs, verplaats dat dan naar wordpress-oud (niet weggooien).
-          if lftp -c "$verbind; cls httpdocs/wp-config.php" > /dev/null 2>&1; then
-            echo "WordPress gevonden in httpdocs; verplaatst naar wordpress-oud."
-            lftp -c "$verbind; mkdir -p wordpress-oud; mmv httpdocs/* wordpress-oud/"
+          echo "Mappen op de server:"; lftp -c "$verbind; cls -1 --sort=name" || true
+          echo "Inhoud van httpdocs:"; lftp -c "$verbind; cls -1 httpdocs/" | head -30 || true
+          # Veiligheidscontrole: eerst een testbestand neerzetten en kijken of www.cabaretiers.com het toont.
+          # Zo niet, dan is httpdocs niet de map van de website en wordt er niets geplaatst of gewist.
+          test="plaatsingstest-${GITHUB_RUN_ID}.txt"
+          echo "$GITHUB_RUN_ID" > "$test"
+          lftp -c "$verbind; put $test -o httpdocs/$test"
+          sleep 5
+          gevonden=$(curl -s "https://www.cabaretiers.com/$test?$RANDOM" || true)
+          lftp -c "$verbind; rm httpdocs/$test" || true
+          if [ "$gevonden" != "$GITHUB_RUN_ID" ]; then
+            echo "::error::httpdocs is niet de map van www.cabaretiers.com: het testbestand is daar niet te zien. Er is niets geplaatst."
+            exit 1
           fi
           # dist/ naar httpdocs/. Wat niet meer in dist staat, verdwijnt; .well-known (voor het
           # SSL-certificaat van Let's Encrypt) blijft staan.
