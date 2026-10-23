@@ -29,6 +29,10 @@ Cabaret- en comedyagenda voor Nederland en België. Statische site, gebouwd door
 - Platforms: Peppered, The Events Calendar en Cre8ion (Utrecht, Tilburg) staan in `ophalen/platforms/`. Voor sites met JSON-LD-evenementen per voorstellingspagina is er `jsonld.mjs`: per site alleen sitemap, genrelabel en eventueel artiest/titel opgeven (zie `schie.mjs`, `hof88.mjs`). `lib/artiesten.mjs` herkent bekende artiesten om artiest en titel uit elkaar te halen. `postForm()` in `lib/http.mjs` verstuurt een formulier zoals de site zelf doet (De Harmonie).
 - Bekend, nog niet gedaan: De Meervaart (Phoenix LiveView), PLT, Boom Chicago. MartiniPlaza en de Tilburgse voorstellingen met meerdere datums laden hun datums via /mvc/, wat robots.txt verbiedt; die blijven weg. Chassé, Hanzehof, Stadsschouwburg Haarlem, Rijswijkse Schouwburg, Agora Lelystad en Deventer Schouwburg weigeren bots (403); Toomler heeft een kapot certificaat. Peppered-sites met Bunny Shield (cookie `bunny_shield_id_…` bij het eerste bezoek: De Maagd, Isala, Diligentia & Pepijn, De Kom) blokkeren na een paar verzoeken; die blijven weg. Flint en Theater De Vest laden hun datums met JavaScript uit een eigen API; nog niet gedaan. Zoetermeer verbiedt alles in robots.txt.
 
+## Publiceren
+
+- `.github/workflows/bijwerken.yml` zet de site elke nacht en bij elke push op `main` via SFTP op Cloud86 (Plesk), in de map `cabaretiers.com/` (niet `httpdocs/`: die hoort bij een ander domein op hetzelfde pakket). Eerst controleert hij met een testbestand of die map echt www.cabaretiers.com is. Geheimen: `CLOUD86_HOST`, `CLOUD86_USER`, `CLOUD86_PASSWORD`. `public/.htaccess` regelt 404, www en browsercache.
+
 ## Controleren
 
 `npm run check` en `npm run build` moeten zonder fouten draaien voor een commit.
