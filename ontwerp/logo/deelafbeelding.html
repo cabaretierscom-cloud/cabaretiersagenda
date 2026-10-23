@@ -1,0 +1,26 @@
+<!doctype html>
+<!-- Bron van public/deelafbeelding.png (1200x630) en public/apple-touch-icon.png (180x180); scripts/logo-afbeeldingen.mjs rendert ze. -->
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/style.css">
+<style>
+  body { margin: 0; background: transparent; }
+  .deel { width: 1200px; height: 630px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 48px; position: relative; overflow: hidden; }
+  .deel::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 56px; background: var(--riso-orange); }
+  .deel svg { width: 200px; height: 200px; }
+  .deel .wordmark { font-size: 168px; color: #000; }
+  .deel .wordmark .tld { font-size: 58px; }
+  .deel .ondertitel { font-size: 26px; margin-top: 18px; color: #000; padding-left: 4px; }
+  .icoon { width: 180px; height: 180px; }
+  .icoon svg { width: 180px; height: 180px; display: block; }
+</style>
+</head>
+<body>
+  <div class="deel" id="deel">
+    <span id="merk1"></span>
+    <span class="logo-tekst"><span class="wordmark">cabaret<span class="punt-i">ı</span>ers<span class="tld">.com</span></span><span class="ondertitel">De cabaretagenda</span></span>
+  </div>
+  <div class="icoon" id="icoon"></div>
+</body>
+</html>

@@ -20,6 +20,13 @@ Gekozen ontwerp (oktober 2026): de C met de punt op een oranje vlak, met dezelfd
 
 Op een donkere achtergrond wordt het woordmerk wit, en de punt op de i wit met een oranje kern. Het beeldmerk blijft oranje.
 
+## Afgeleide afbeeldingen
+
+- `public/deelafbeelding.png` (1200×630): het plaatje dat sociale media tonen bij pagina's zonder artiestfoto.
+- `public/apple-touch-icon.png` (180×180): het app-icoon voor telefoons, en het logo in de gegevens voor Google (Google leest geen SVG).
+
+Na een wijziging aan het logo: `npm run logo` (vraagt Playwright) maakt beide opnieuw uit `ontwerp/logo/deelafbeelding.html`.
+
 ## Op de site
 
 Het beeldmerk staat als `LOGO_SVG` in `src/templates.mjs` (en wordt `/logo.svg`, het tabbladicoontje). Het woordmerk is gewone tekst in de kop; de punt op de i komt uit `.wordmark .punt-i` in `public/style.css`.

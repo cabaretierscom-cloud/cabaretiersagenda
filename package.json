@@ -12,6 +12,7 @@
     "check": "node scripts/check-data.mjs",
     "ophalen": "node --no-warnings ophalen/run.mjs",
     "samenvoegen": "node ophalen/samenvoegen.mjs",
-    "fotos": "node --no-warnings ophalen/fotos.mjs"
+    "fotos": "node --no-warnings ophalen/fotos.mjs",
+    "logo": "node scripts/logo-afbeeldingen.mjs"
   }
 }

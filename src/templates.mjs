@@ -94,12 +94,17 @@ export function createTemplates(db) {
 <meta property="og:image" content="${SITE.url}${esc(foto.bestand)}">
 <meta property="og:image:alt" content="${esc(foto.alt)}">${foto.breedte ? `
 <meta property="og:image:width" content="${foto.breedte}">
-<meta property="og:image:height" content="${foto.hoogte}">` : ""}
-<meta name="twitter:card" content="summary_large_image">` : ""}
+<meta property="og:image:height" content="${foto.hoogte}">` : ""}` : `
+<meta property="og:image" content="${SITE.url}/deelafbeelding.png">
+<meta property="og:image:alt" content="Logo van Cabaretiers.com, de cabaretagenda">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">`}
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:url" content="${SITE.url}${path}">
 <meta property="og:locale" content="nl_NL">
 <meta name="theme-color" content="#FF6A13">
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css">
 ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title, description, path, ...schema })).replace(/</g, "\\u003c")}</script>` : ""}
@@ -266,7 +271,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return {
       "@context": "https://schema.org",
       "@graph": [
-        { "@type": "Organization", "@id": ORG_ID, name: SITE.name, url: URL("/"), logo: { "@type": "ImageObject", url: URL("/logo.svg") } },
+        { "@type": "Organization", "@id": ORG_ID, name: SITE.name, url: URL("/"), logo: { "@type": "ImageObject", url: URL("/apple-touch-icon.png"), width: 180, height: 180, caption: "Beeldmerk van Cabaretiers.com" }, image: URL("/deelafbeelding.png") },
         {
           "@type": "WebSite", "@id": SITE_ID, name: SITE.name, url: URL("/"), inLanguage: "nl", description: SITE.description,
           publisher: { "@id": ORG_ID },
