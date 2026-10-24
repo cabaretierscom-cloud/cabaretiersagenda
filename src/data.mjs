@@ -103,6 +103,11 @@ export function loadData(dir, { today }) {
     // Een clubavond of open mic zonder vaste artiest hoort bij één zaal.
     if (!v.artiesten?.length && !T.has(v.theater)) errors.push(`voorstelling ${v.id}: geen artiesten en geen geldig theater`);
     for (const a of v.artiesten || []) if (!A.has(a)) errors.push(`voorstelling ${v.id}: onbekende artiest "${a}"`);
+    // Recensies alleen met krant, citaat en de pagina waar ze staan; sterren 1 t/m 5 of leeg.
+    for (const r of v.recensies || []) {
+      if (!r.medium || !r.citaat || !/^https?:\/\//.test(r.bron || "")) errors.push(`voorstelling ${v.id}: recensie zonder krant, citaat of bron`);
+      if (r.sterren != null && !(Number.isInteger(r.sterren) && r.sterren >= 1 && r.sterren <= 5)) errors.push(`voorstelling ${v.id}: recensie met ongeldige sterren "${r.sterren}"`);
+    }
   }
 
   const seen = new Set();

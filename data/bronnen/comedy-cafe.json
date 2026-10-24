@@ -1,7 +1,7 @@
 {
   "bron": "comedy-cafe",
   "naam": "Comedy Café Amsterdam",
-  "opgehaald": "2026-10-21",
+  "opgehaald": "2026-10-24",
   "theaters": [
     {
       "id": "comedy-cafe-amsterdam",
@@ -21,54 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "comedy-cafe-amsterdam",
-      "artiesten": [],
-      "titel": "PowerPints @ Comedy Cafe",
-      "genre": "stand-up",
-      "datum": "2026-10-21",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/powerpints-comedy-cafe-3/"
-    },
-    {
-      "theater": "comedy-cafe-amsterdam",
-      "artiesten": [
-        "Nadine Froughi"
-      ],
-      "titel": "Daydreamer",
-      "genre": "stand-up",
-      "datum": "2026-10-22",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/nadine-froughi-daydreamer-3/"
-    },
-    {
-      "theater": "comedy-cafe-amsterdam",
-      "artiesten": [],
-      "titel": "Cocktails & Comedy",
-      "genre": "stand-up",
-      "datum": "2026-10-23",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-5-8/"
-    },
-    {
-      "theater": "southend-comedy-club",
-      "artiesten": [
-        "Abishek Kumar"
-      ],
-      "titel": "Abishek wants to Enjoy Life!",
-      "genre": "stand-up",
-      "datum": "2026-10-23",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/abishek-kumar-live-in-amsterdam/"
-    },
     {
       "theater": "comedy-cafe-amsterdam",
       "artiesten": [],
@@ -463,17 +415,6 @@
       "bron": "https://www.comedycafe.nl/agenda/ed-matsaberidze/"
     },
     {
-      "theater": "southend-comedy-club",
-      "artiesten": [],
-      "titel": "Masters of Comedy bij Southend Comedy Club Amsterdam",
-      "genre": "stand-up",
-      "datum": "2026-11-14",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-bij-southend-comedy-club-amsterdam-5/"
-    },
-    {
       "theater": "comedy-cafe-amsterdam",
       "artiesten": [],
       "titel": "Masters of Comedy",
@@ -483,6 +424,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-9/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Masters of Comedy bij Southend Comedy Club Amsterdam",
+      "genre": "stand-up",
+      "datum": "2026-11-14",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-bij-southend-comedy-club-amsterdam-5/"
     },
     {
       "theater": "comedy-cafe-amsterdam",
@@ -1704,6 +1656,19 @@
     },
     {
       "theater": "southend-comedy-club",
+      "artiesten": [
+        "Gillion Slory"
+      ],
+      "titel": "‘Kijk pap, een oempaloempa’",
+      "genre": "stand-up",
+      "datum": "2027-06-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/gillion-slory-kijk-pap-een-oempaloempa-2/"
+    },
+    {
+      "theater": "southend-comedy-club",
       "artiesten": [],
       "titel": "Yannis Pappas Live",
       "genre": "stand-up",
@@ -1713,5 +1678,6 @@
       "soort": null,
       "bron": "https://www.comedycafe.nl/agenda/yannis-pappas-at-southend-comedy-club-amsterdam/"
     }
-  ]
+  ],
+  "recensies": {}
 }

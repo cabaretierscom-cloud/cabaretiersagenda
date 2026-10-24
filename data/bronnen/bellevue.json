@@ -235,7 +235,7 @@
       "genre": "kleinkunst",
       "datum": "2026-11-12",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/tweede-voorronde-akf-zxgn"
     },
@@ -1851,5 +1851,14 @@
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/to-believe-in-magic-58ch"
     }
-  ]
+  ],
+  "recensies": {
+    "https://www.theaterbellevue.nl/agenda/best-of-4-fsng": [
+      {
+        "medium": "I Love Theater",
+        "sterren": 4,
+        "citaat": "Zijn vermogen om het publiek te laten lachen om de absurditeiten van het dagelijks leven maakt hem een opvallende verschijning in het cabaretlandschap. Een aanrader voor wie houdt van intelligente humor met een luchtige twist."
+      }
+    ]
+  }
 }

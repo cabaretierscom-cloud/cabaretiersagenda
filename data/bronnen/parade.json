@@ -276,19 +276,6 @@
     {
       "theater": "theater-aan-de-parade",
       "artiesten": [
-        "Thomas van Luyn"
-      ],
-      "titel": "Super Normaal",
-      "genre": "cabaret",
-      "datum": "2027-05-02",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraandeparade.nl/nl/programma/super-normaal-thomas-van-luyn"
-    },
-    {
-      "theater": "theater-aan-de-parade",
-      "artiesten": [
         "Daan van der Hoeven"
       ],
       "titel": "Mensenmens",
@@ -481,5 +468,6 @@
       "soort": null,
       "bron": "https://www.theateraandeparade.nl/nl/programma/papa-zonder-handleiding-xl-jorgen-rayman-emiel-van-der-logt-howard-komproe"
     }
-  ]
+  ],
+  "recensies": {}
 }

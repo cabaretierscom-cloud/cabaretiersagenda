@@ -1,6 +1,7 @@
 // Beleefd ophalen: herkenbare user-agent, robots.txt respecteren, één verzoek tegelijk
 // per site met een pauze ertussen, en cookies onthouden (sommige sites zetten eerst
 // een cookie en sturen je dan door).
+import { vindRecensies } from "./recensies.mjs";
 
 export const USER_AGENT = "Mozilla/5.0 (compatible; CabaretiersBot/0.1; +https://www.cabaretiers.com/over/)";
 const PAUSE_MS = Number(process.env.OPHALEN_PAUZE_MS ?? 700);
@@ -129,8 +130,15 @@ export async function get(url, opts = {}) {
   return run;
 }
 
+// Recensies op elke opgehaalde pagina, per adres. run.mjs zet ze bij de speeldata met dat adres als bron.
+const recensies = new Map();
+export const recensiesVan = (url) => recensies.get(url) || [];
+
 export async function getText(url, opts) {
-  return (await get(url, opts)).text;
+  const { text, url: eind } = await get(url, opts);
+  const gevonden = vindRecensies(text);
+  if (gevonden.length) for (const u of new Set([url, eind])) recensies.set(u, gevonden);
+  return text;
 }
 
 // Een formulier versturen zoals de eigen pagina van de site dat doet (bijv. een agenda-filter).

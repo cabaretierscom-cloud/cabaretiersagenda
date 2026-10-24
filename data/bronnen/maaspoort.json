@@ -520,5 +520,24 @@
       "soort": null,
       "bron": "https://www.maaspoort.nl/programma/schaamteloos-oudejaars2026-dolf-jansen/"
     }
-  ]
+  ],
+  "recensies": {
+    "https://www.maaspoort.nl/programma/lemming-merijn-scholten/": [
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Komiek Merijn Scholten heeft een hoop kritiek op de maatschappij, maar is vooral enorm grappig"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Hij creëert, grappig en ontroerend, een beter bij de tijd passend genre: sad hardcore."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Merijn Scholten brengt in Lemming een vaak hilarische ode aan kuddegedrag"
+      }
+    ]
+  }
 }

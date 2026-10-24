@@ -1007,21 +1007,43 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       </section>`;
   }
 
+  // Recensies van de voorstelling (uit de theaterpagina's): krant, sterren en citaat, met de pagina als bron.
+  function recensiesHtml(v, list) {
+    if (!v.recensies?.length) return "";
+    const zaal = (bron) => {
+      const g = list.find((x) => x.bron === bron);
+      return g ? T.get(g.theater).naam : new globalThis.URL(bron).hostname.replace(/^www\./, "");
+    };
+    const sterren = (n) => n ? `<p class="sterren" aria-label="${n} van 5 sterren">${"★".repeat(n)}<span aria-hidden="true">${"★".repeat(5 - n)}</span></p>` : "";
+    return `<section class="recensies" aria-labelledby="recensies-titel">
+        <h2 id="recensies-titel" class="sub-head">Recensies van ${esc(v.titel)}</h2>
+        <ul>${v.recensies.map((r) => `<li>
+          <figure>
+            ${sterren(r.sterren)}
+            <blockquote><p>${esc(r.citaat)}</p></blockquote>
+            <figcaption><cite>${esc(r.medium)}</cite>${r.sterren ? `, ${r.sterren} ${r.sterren === 1 ? "ster" : "sterren"}` : ""} <a href="${esc(r.bron)}" rel="noopener" target="_blank">via ${esc(zaal(r.bron))}</a></figcaption>
+          </figure>
+        </li>`).join("")}</ul>
+      </section>`;
+  }
+
   function voorstellingPagina(vid) {
     const v = V.get(vid), a = A.get(v.artiesten[0]);
     const list = up.filter((g) => g.voorstelling === vid);
     const steden = new Set(list.map((g) => T.get(g.theater).plaats)).size;
+    const beste = (v.recensies || []).find((r) => r.sterren);
     const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap">
         <h1>${esc(v.titel)}</h1>
         <p>Voorstelling van ${artistLinks(vid)}. ${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.</p>
       </div></div>
       <div class="wrap detail-body">
+        ${recensiesHtml(v, list)}
         ${list.length > 12 ? filters(list, { maand: true }) : ""}
         <div id="gigs">${monthGroups(list, { showArtist: false })}</div>
         ${list.length > 12 ? leegBlok : ""}
         ${voorstellingTekst(vid, list)}
       </div>`;
-    const desc = kort(`${v.titel} van ${artistNames(vid)}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden, "plaats", "plaatsen")}. Eerstvolgende op ${fmt.full(list[0].datum)}. Bekijk alle speeldata.`);
+    const desc = kort(`${v.titel} van ${artistNames(vid)}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden, "plaats", "plaatsen")}. Eerstvolgende op ${fmt.full(list[0].datum)}.${beste ? ` ${beste.medium}: ${plural(beste.sterren, "ster", "sterren")}.` : ""} Bekijk alle speeldata.`);
     return layout({ title: `${v.titel} van ${artistNames(vid)}: speeldata`, description: desc, path: voorstellingPad.get(vid), section: "artiesten", body, schema: {
       kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`], [v.titel, voorstellingPad.get(vid)]],
       foto: fotoArtiest(vid) || null,

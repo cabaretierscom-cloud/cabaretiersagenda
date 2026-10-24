@@ -295,7 +295,7 @@
       "genre": "cabaret",
       "datum": "2026-11-11",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/nienke-plas/"
     },
@@ -468,5 +468,140 @@
       "soort": null,
       "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/oudejaars-met-rikkert/"
     }
-  ]
+  ],
+  "recensies": {
+    "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/ayoub/": [
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Misschien wel het mooiste cabaretdebuut van het jaar"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Cabaretier Ayoub Kharkhach lost met zijn debuutvoorstelling de hoge verwachtingen volledig in."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Een spannende performer die met niemand in het huidige cabaretveld te vergelijken is."
+      }
+    ],
+    "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/christian-van-eijkelenburg/": [
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 4,
+        "citaat": "Modern, hip, absurdistisch en werkelijk ontzettend grappig"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Verrassend cabaret met talloze mooie animaties en filmbeelden"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een groot talent voor absurdisme"
+      }
+    ],
+    "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/klaas-van-der-eerden/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Blijven drijven is een gevarieerde en vakkundig in elkaar gezette cabaretvoorstelling"
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": null,
+        "citaat": "Blijven drijven is de perfecte comedyshow, ruim anderhalf uur ongedwongen lachen om fantastische verhalen"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Van der Eerden wil vermaken en dat doet hij. De amusementswaarde van Blijven drijven ligt hoog!"
+      }
+    ],
+    "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/micha-wertheim/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "Een van de beste cabaretvoorstellingen van dit seizoen."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Micha Wertheim voor iedereen zit vol schijnbewegingen en wendingen die, al dan niet in retrospectief, grappig, mooi of betekenisvol zijn."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Zoals altijd bij Wertheim loont het de moeite om bij de les te blijven, want er komen prachtige ideeën voorbij."
+      }
+    ],
+    "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/roel-jos-maalderink/": [
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "De broers leggen kraakhelder het probleem van politiek en media bloot"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Een grappige, erg mooie voorstelling"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De Plakshot-broers hebben ook in het theater een hoge gunfactor"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Vertrouwde mix van droge humor en maatschappijkritiek"
+      }
+    ],
+    "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/ronald-snijders/": [
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 5,
+        "citaat": "Werkelijk briljant"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Een van zijn beste voorstellingen"
+      }
+    ],
+    "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/selma-visscher/": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Selma durft heel klein te zijn op haar podium. Vooral in haar liedjes laat ze haar kwetsbare kantjes horen"
+      }
+    ],
+    "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/valentina-toth/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "Wildbloei is een unieke performance van het megatalent Valentina Tóth"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Een overweldigend debuut van cabaretier Valentina Tóth over “de hysterische vrouw”."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 5,
+        "citaat": "Valentina Tóth brengt een fantastische ode aan de hysterische vrouw."
+      }
+    ],
+    "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/veldhuis-kemper/": [
+      {
+        "medium": "Dagblad van het Noorden",
+        "sterren": 4,
+        "citaat": "Dit nieuwste programma is een knap uitgewerkte productie, boordevol sterke verhalen met dito grapvondsten (…) Elkaar loslaten? Daarvoor zijn die twee nog te goed."
+      }
+    ]
+  }
 }

@@ -5,6 +5,7 @@
 import { readdirSync, writeFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { recensiesVan } from "./lib/http.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const bronnenDir = join(root, "ophalen", "bronnen");
@@ -32,6 +33,8 @@ await Promise.all(files.map(async (f) => {
       opgehaald: vandaag,
       theaters: bron.theaters || [],
       speeldata: records,
+      // Recensies (krant, sterren, citaat) per voorstellingspagina, zie lib/recensies.mjs.
+      recensies: Object.fromEntries([...new Set(records.map((r) => r.bron))].map((u) => [u, recensiesVan(u)]).filter(([, r]) => r.length)),
     }, null, 2) + "\n");
     log(`${records.length} speeldata in ${Math.round((Date.now() - start) / 1000)} s`);
   } catch (e) {

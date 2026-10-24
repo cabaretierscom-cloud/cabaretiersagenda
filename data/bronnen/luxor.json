@@ -583,32 +583,6 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
-        "Rayen Panday"
-      ],
-      "titel": "Grip",
-      "genre": "cabaret",
-      "datum": "2027-03-18",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/rayen-panday-57954/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Rayen Panday"
-      ],
-      "titel": "Grip",
-      "genre": "cabaret",
-      "datum": "2027-03-19",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/rayen-panday-57954/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
         "Lebbis"
       ],
       "titel": "Satan is moe",
@@ -1569,6 +1543,45 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
+        "Yentl en de Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://luxortheater.nl/agenda/yentl-en-de-boer-48580/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/rayen-panday-57954/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/rayen-panday-57954/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
         "Rayen Panday & Friends"
       ],
       "titel": "Wonderful Christmastime",
@@ -1579,5 +1592,6 @@
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/rayen-panday-59668/"
     }
-  ]
+  ],
+  "recensies": {}
 }

@@ -778,7 +778,7 @@
       "genre": "cabaret",
       "datum": "2027-04-02",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/merijn-scholten-lemming-reprise/"
     },
@@ -1107,5 +1107,202 @@
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/van-der-laan-woe-dinsdagmiddag/"
     }
-  ]
+  ],
+  "recensies": {
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/kasper-van-der-laan-ruim-try-out/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "De troef van Kasper van der Laan is het samenvallen van zijn fysiek met zijn absurde vondsten"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Eigenheid is sowieso Van der Laans grote troef"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Na zijn briljante debuut is Kasper van der Laan onstuitbaar op weg een Hele Grote te worden."
+      }
+    ],
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ruud-smulders-rudsichtslos/": [
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Smulders verrast met uitermate gedurfd en intelligent cabaret."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Knap, hoe comedian Ruud Smulders steeds drie stappen verder is dan zijn publiek."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Smulders maakt indruk met slim en ambitieus programma"
+      },
+      {
+        "medium": "Scènes",
+        "sterren": 5,
+        "citaat": "Met RÜDSICHTSLOS sluipt Smulders naar de cabarettop"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Smulders heeft een vertelstijl waarin hij groot geacteerde comedy abrupt laat overgaan in verstilde, persoonlijke ontboezemingen"
+      }
+    ],
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/wim-helsen-welkom-ongemak-reprise/": [
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "De Vlaamse cabaretier toont zich weer eens een onvolprezen Ti Ta Tovenaar, de man die zonder dat je het doorhebt de tijd stilzet in het theater."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "Wim Helsen weet er een mooie, geestige en gevoelige theatermonoloog van te maken. Hij zet hierbij zijn hele gereedschapskist als theatermaker in: zijn eigenzinnige humor en zijn bijzondere mimiek."
+      }
+    ],
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/beleef-t-overdag-janneke-de-bijl-pluk-eventueel-de-dag/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Nu heeft ze de geperfectioneerde, krachtigste podiumversie van zichzelf in huis."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "De voorstelling is tot de nok toe gevuld met mooie zinnen, goede verhalen en geestige intermezzo's."
+      }
+    ],
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/louise-korthals-korthals-in-stukken/": [
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Korthals heeft een erg geslaagde en opwindende vorm gevonden om deze chaotische worsteling invoelbaar én zichtbaar te maken."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Louise Korthals koppelt eenzaam moederschap knap aan vrouwenrechten wereldwijd."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 3,
+        "citaat": "Hoge dosis energie, zelfspot, maatschappijkritische observaties en gevoel voor mooie cabaretliedjes."
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 4,
+        "citaat": "Alles klopt aan deze voorstelling: muzikaal, verbaal en visueel vormt het een compleet geheel."
+      }
+    ],
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/": [
+      {
+        "medium": "Dagblad van het Noorden",
+        "sterren": 4,
+        "citaat": "Een gedurfde show vol heisa, herrie en energie"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De sleutel voor deze cabaretvorm is beslist niet dat het drietal grofgebekt is, zoals recensies keer op keer beweren, maar dat Tuns, Kroon en De Poorter op intelligente manier spelen met ironie"
+      },
+      {
+        "medium": "De Telegraaf",
+        "sterren": null,
+        "citaat": "Jeroens Clan mag een sensatie worden genoemd"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Keihard cabaret van drie kwetsbare mannen"
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Het drietal valt op met scherpe en grappige dialogen"
+      }
+    ],
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jawad-es-soufi-tnawies/": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Jawad Es Soufi laat zijn divers publiek samen lachen om alle culturele verschillen"
+      }
+    ],
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/merijn-scholten-lemming-reprise/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "Een schitterend gemaakte, snelle en erg grappige voorstelling"
+      },
+      {
+        "medium": "De Telegraaf",
+        "sterren": 5,
+        "citaat": "Merijn Scholten houdt ons een spiegel voor"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De zaal ligt aan zijn voeten, vaak hikkend van het lachen"
+      }
+    ],
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ayoub-kharkhach-en-verbied-de-vogels-om-te-fluiten/": [
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Misschien wel het mooiste cabaretdebuut van het jaar"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Ayoub Kharkhach lost met zijn debuutvoorstelling de hoge verwachtingen volledig in"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Vakkundig en gevoelig."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Een spannende performer die met niemand in het huidige cabaretveld te vergelijken is."
+      }
+    ],
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ronald-goedemondt-mijn-lieve-achterdocht/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Mijn lieve achterdocht is naast ontzettend grappig, ook psychologisch interessant"
+      },
+      {
+        "medium": "Scènes",
+        "sterren": 5,
+        "citaat": "Goedemondt is een onweerstaanbare komiek"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Geen comedian in Nederland beheerst zijn stem beter dan Goedemondt"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Goedemondt is een meester in het vinden van humor in het alledaagse"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Ronald Goedemondt overdondert zijn publiek met een tornado aan superieur geacteerde onzin"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Goedemondt toont de tekortschietende mens, en laat zien hoe onweerstaanbaar grappig dat kan zijn"
+      }
+    ]
+  }
 }

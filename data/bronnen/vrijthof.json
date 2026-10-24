@@ -541,5 +541,31 @@
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/als-ik-jou-was-david-van-rosmalen"
     }
-  ]
+  ],
+  "recensies": {
+    "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/en-verbied-de-vogels-om-te-fluiten-ayoub": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Cabaretier Ayoub Kharkhach lost met zijn debuutvoorstelling de hoge verwachtingen volledig in."
+      }
+    ],
+    "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/lemming-merijn-scholten": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "De virtuoze komiek Merijn Scholten speelt in Lemming op de toppen van zijn kunnen."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Een flitsende voorstelling, vol leuk en expressief acteerwerk."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Cabaret met inhoud, dat scherp reflecteert op de wereld van nu, en weet daarbij steeds de juiste vorm te vinden; het woord, beeld of personage waarin veel besloten ligt."
+      }
+    ]
+  }
 }

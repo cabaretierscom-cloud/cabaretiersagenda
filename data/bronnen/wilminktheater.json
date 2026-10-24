@@ -110,7 +110,7 @@
       "genre": "stand-up",
       "datum": "2026-11-03",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/dogu-demirkol-stand-up-9rpj"
     },
@@ -1442,5 +1442,68 @@
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/tunnelvisie-tjzp"
     }
-  ]
+  ],
+  "recensies": {
+    "https://www.wilminktheater.nl/nl/agenda/ik-mag-niet-klagen-57jm": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "wo 22 apr 2026 Zelfbenoemd rebel Van Roosmalen koestert buitenstaandersrol in zijn cabaretdebuut"
+      }
+    ],
+    "https://www.wilminktheater.nl/nl/agenda/harrekidee-herneming-yw51": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "&ldquo;Een vrolijke estafette aan typetjes&rdquo;"
+      }
+    ],
+    "https://www.wilminktheater.nl/nl/agenda/als-ik-jou-was-46qb": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "&ldquo;David van Rosmalen speelde de Leidse Schouwburg plat met een intelligente mengeling van (woord)grappen, spoken word, pianoliedjes en nederhiphop.&rdquo;"
+      }
+    ],
+    "https://www.wilminktheater.nl/nl/agenda/zei-ik-dat-hardop-lkxl": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Companjen zeikt met venijnig plezier herhaaldelijk haar omgeving af, maar drijft vooral veel en graag de spot met zichzelf"
+      }
+    ],
+    "https://www.wilminktheater.nl/nl/agenda/grip-57gf": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "&lsquo;Karma; negentig minuten ambachtelijke en vermakelijke comedy.&rsquo;"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "&lsquo;Met oprechte emotie krijgt hij de zaal aan zijn voeten.&rsquo;"
+      }
+    ],
+    "https://www.wilminktheater.nl/nl/agenda/leven-met-humor-zxnz": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De artiest Snijders blijkt precies te weten wat hij doet (…) en levert een fijne, grappige, rijke, goed geconstrueerde voorstelling af."
+      }
+    ],
+    "https://www.wilminktheater.nl/nl/agenda/high-class-bitch-herneming-q2jq": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "In zijn wonderschone tweeluik scheidt Daniël Arends de authenticiteit van de bullshit"
+      }
+    ],
+    "https://www.wilminktheater.nl/nl/agenda/had-ik-maar-nooit-zo-aardig-gedaan-herneming-tjhz": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "In zijn wonderschone tweeluik scheidt Daniël Arends de authenticiteit van de bullshit"
+      }
+    ]
+  }
 }

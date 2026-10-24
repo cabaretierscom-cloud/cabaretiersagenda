@@ -633,5 +633,102 @@
       "soort": null,
       "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
     }
-  ]
+  ],
+  "recensies": {
+    "https://delamar.nl/voorstellingen/sara-kroos/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Sara Kroos laat je lachen én grijpt je naar de keel"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Sara Kroos kan als geen ander licht maken wat zwaar is"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Sara Kroos is terug op het cabaretpodium en beter dan ooit"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 3,
+        "citaat": "Kroos is een heel sterke en natuurlijke verteller"
+      }
+    ],
+    "https://delamar.nl/voorstellingen/rene-van-meurs/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Noodzakelijk Kwaad barst van de absurde conflicten die steeds grappiger escaleren"
+      },
+      {
+        "medium": "Dagblad van het Noorden",
+        "sterren": 4,
+        "citaat": "Sterk verhaal met een lawine aan grappen"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Briljante auto-psychologische thriller als cabaret"
+      }
+    ],
+    "https://delamar.nl/voorstellingen/ronald-goedemondt/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Naast ontzettend grappig ook psychologisch interessant"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Geen comedian in Nederland beheerst zijn stem beter dan Goedemondt"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Goedemondt is een meester in het vinden van humor in het alledaagse"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Ronald Goedemondt overdondert zijn publiek met een tornado aan superieur geacteerde onzin"
+      },
+      {
+        "medium": "Scènes",
+        "sterren": 5,
+        "citaat": "Goedemondt is een onweerstaanbare komiek"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Goedemondt toont de tekortschietende mens, en laat zien hoe onweerstaanbaar grappig dat kan zijn"
+      }
+    ],
+    "https://delamar.nl/voorstellingen/anuar/": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een zeer vrolijke avond"
+      }
+    ],
+    "https://delamar.nl/voorstellingen/roel-c-verburg/": [
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Roel C. Verburg is een fenomeen op zich"
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Een aaneenschakeling van slimme observaties, rake grappen en muzikale intermezzo's"
+      },
+      {
+        "medium": "Het Financieele Dagblad",
+        "sterren": null,
+        "citaat": "Hij grossiert in absurdistische liedjes vol taalacrobatiek"
+      }
+    ]
+  }
 }

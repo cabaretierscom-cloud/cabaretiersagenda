@@ -11,6 +11,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { slug, netteHoofdletters, netteNaam } from "./lib/normaliseer.mjs";
 import { KLEUREN, GENRES } from "../src/data.mjs";
+import { recensie } from "./lib/recensies.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dataDir = join(root, "data");
@@ -144,6 +145,12 @@ function opgeschoondeArtiesten(namen) {
 // ---------- Samenvoegen per bron ----------
 
 const stats = [];
+// Recensies per voorstelling uit alle bronnen: voorstelling-id -> Map(bron|medium -> recensie).
+const recensieKandidaten = new Map();
+// Citaten die een theater expliciet bij een andere voorstelling zet ("NRC over Team Solo"):
+// die weren we ook op pagina's die het niet zeggen.
+const citatenElders = new Set();
+const citaatSleutel = (c) => slug(c).slice(0, 40);
 for (const f of bronFiles) {
   const bestand = JSON.parse(readFileSync(join(dataDir, "bronnen", f), "utf8"));
   for (const t of bestand.theaters || []) zorgVoorTheater(t);
@@ -178,6 +185,14 @@ for (const f of bronFiles) {
     }
     const aIds = (r.artiesten || []).map((n) => zorgVoorArtiest(n));
     const vId = zorgVoorVoorstelling(r, aIds, theater.id);
+    for (const ruw of bestand.recensies?.[r.bron] || []) {
+      const rc = recensie(ruw.over ? `${ruw.medium} over ${ruw.over}` : ruw.medium, ruw.citaat, ruw.sterren);
+      if (!rc) continue;
+      if (rc.over && !zelfdeTitel(rc.over, r.titel)) { citatenElders.add(citaatSleutel(rc.citaat)); continue; }
+      delete rc.over;
+      if (!recensieKandidaten.has(vId)) recensieKandidaten.set(vId, new Map());
+      recensieKandidaten.get(vId).set(`${r.bron}|${rc.medium}`, { ...rc, bron: r.bron });
+    }
 
     // Handmatige invoer voor dezelfde avond, zaal en artiest maakt plaats.
     const v = voorstellingen.find((x) => x.id === vId);
@@ -250,6 +265,50 @@ if (naarVoorstelling.size) {
       gezien.add(k);
       return true;
     });
+}
+
+// 2b. Recensies bij de voorstelling. Per krant tellen de theaterpagina's: de sterren die de meeste
+//     pagina's noemen, winnen (een pagina met een citaat over een vorige voorstelling telt zo minder mee).
+//     Kranten die deze keer niet gevonden zijn, blijven staan.
+const recensiesPer = new Map();
+for (const [vId, kandidaten] of recensieKandidaten) {
+  const doel = naarVoorstelling.get(vId) || vId;
+  if (!recensiesPer.has(doel)) recensiesPer.set(doel, []);
+  recensiesPer.get(doel).push(...kandidaten.values());
+}
+const eersteDatum = new Map();
+for (const s of speeldata) if (!eersteDatum.has(s.voorstelling) || s.datum < eersteDatum.get(s.voorstelling)) eersteDatum.set(s.voorstelling, s.datum);
+// Nog te spelen try-outs of première: de voorstelling is nog niet besproken, dus recensies op de
+// theaterpagina gaan over een vorig programma (bijv. "Wildbloei" bij "Revue Revanche").
+const vandaag = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" });
+const nogNietBesproken = new Set(speeldata.filter((s) => s.datum >= vandaag && (s.soort === "try-out" || s.soort === "première")).map((s) => s.voorstelling));
+for (const v of voorstellingen) {
+  if (nogNietBesproken.has(v.id)) { delete v.recensies; continue; }
+  // Een voorstelling met een jaartal ("Oudejaarsconference 2026") die nog niet gespeeld is, kan nog
+  // geen recensies hebben: wat op de theaterpagina staat, gaat over een vorig jaar.
+  // Bestaande recensies zonder dat jaar in het citaat vallen ook af.
+  const jaar = v.titel.match(/\b(20\d\d)\b/)?.[1];
+  if (jaar && (eersteDatum.get(v.id) || "") > vandaag) { delete v.recensies; continue; }
+  const kandidaten = recensiesPer.get(v.id)
+    ?.filter((k) => !citatenElders.has(citaatSleutel(k.citaat)))
+    // Bij een titel met jaartal alleen citaten die dat jaar noemen; de rest gaat over een andere editie.
+    ?.filter((k) => !jaar || ((k.citaat.match(/\b20\d\d\b/g) || []).includes(jaar) && !(k.citaat.match(/\b20\d\d\b/g) || []).some((j) => j !== jaar)));
+  if (v.recensies) v.recensies = v.recensies.filter((r) => (!jaar || r.citaat.includes(jaar)) && !citatenElders.has(citaatSleutel(r.citaat)));
+  if (!kandidaten?.length) { if (v.recensies && !v.recensies.length) delete v.recensies; continue; }
+  const perMedium = new Map();
+  for (const k of kandidaten) perMedium.set(k.medium, [...(perMedium.get(k.medium) || []), k]);
+  const nieuw = [...perMedium].map(([medium, lijst]) => {
+    const perSterren = new Map();
+    for (const k of lijst) perSterren.set(k.sterren, [...(perSterren.get(k.sterren) || []), k]);
+    const [sterren, groep] = [...perSterren].sort((a, b) => b[1].length - a[1].length || (a[0] == null) - (b[0] == null))[0];
+    const citaten = new Map();
+    for (const k of groep) { const c = slug(k.citaat).slice(0, 60); citaten.set(c, [...(citaten.get(c) || []), k]); }
+    const k = [...citaten.values()].sort((a, b) => b.length - a.length)[0][0];
+    return { medium, sterren, citaat: k.citaat, bron: k.bron };
+  });
+  const media = new Set(nieuw.map((r) => r.medium));
+  v.recensies = [...nieuw, ...(v.recensies || []).filter((r) => !media.has(r.medium))]
+    .sort((a, b) => (b.sterren ?? 0) - (a.sterren ?? 0) || a.medium.localeCompare(b.medium, "nl"));
 }
 
 // 3. Alles zonder speeldata weg. Artiesten met een handmatig ingevuld land of ookBekendAls blijven.

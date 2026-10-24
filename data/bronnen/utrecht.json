@@ -1428,7 +1428,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/niet-zomaar-een-pubquiz-5-flunknarf",
       "datum": "2027-02-21",
       "tijd": "20:30",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1441,7 +1441,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/niet-zomaar-een-pubquiz-6-flunknarf",
       "datum": "2027-03-21",
       "tijd": "20:30",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1454,7 +1454,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/niet-zomaar-een-pubquiz-7-flunknarf",
       "datum": "2027-04-18",
       "tijd": "20:30",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1534,5 +1534,343 @@
       "tijd": "20:30",
       "status": "gepland"
     }
-  ]
+  ],
+  "recensies": {
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/kintsugi-patrick-laureij": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Terwijl hij wiebelig blijft in zijn zoektocht naar veiligheid en frictieloos contact, is zijn openhartige stand-up over dat onderwerp in Kintsugi mooi in balans."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Kintsugi is een grappenkanon dat ook tranen afschiet. In zijn beste voorstelling tot nu toe neemt Patrick Laureij zichzelf goudeerlijk onder de loep. Zijn driften, verslavingen en hunkering naar contact zijn geestig, maar verraden tegelijk een diepe kwetsbaarheid."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Met elke anekdote bouwt hij aan een kwetsbaar zelfportret, van een man die zijn gevoelens niet onder controle heeft, maar daar toch mee om weet te gaan. Dat culmineert in een trefzeker en hilarisch slotverhaal."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lemming-merijn-scholten": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "De virtuoze komiek Merijn Scholten speelt in ‘Lemming’ op de toppen van zijn kunnen."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/mijn-lieve-achterdocht-ronald-goedemondt": [
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Ronald Goedemondt overdondert zijn publiek met een tornado aan superieur geacteerde onzin."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Goedemondt is een meester in het vinden van humor in het alledaagse."
+      },
+      {
+        "medium": "Scènes",
+        "sterren": 5,
+        "citaat": "Goedemondt is een onweerstaanbare komiek."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/keanu-henry-van-loon": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Henry van Loon jaagt in ‘Keanu’ iets herkenbaars uit het dagelijks leven in de richting van het absurde."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Er lopen in Nederland nauwelijks getalenteerdere komieken rond dan Van Loon."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "Hun mooiste, indrukwekkendste voorstelling tot dusver."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een stroom van mooie, eigenzinnige liedjes met een volstrekt eigen karakter."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/bedankt-om-te-komen-jade-mintjens": [
+      {
+        "medium": "De Morgen",
+        "sterren": 4,
+        "citaat": "Originele verteller die niet bij de geijkte comedy-onderwerpen blijft hangen."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/prikkelarme-kermis-sara-kroos": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "In haar knap opgebouwde nieuwe cabaretvoorstelling laat Kroos zien hoe ze na vier jaar niet optreden wegens ziekte uit haar dal is gekropen. (…) Kroos laat je lachen én grijpt je naar de keel met haar kwetsbare verhaal. (…) De vele goede grappen en enkele sfeervolle liedjes zorgen voor heel erg mooi cabaret."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Sara Kroos kan als geen ander licht maken wat zwaar is. (…) Kroos kan waargebeurde verhalen bijzonder geloofwaardig uitbouwen tot vrolijk absurde proporties. (…) Ze staat sterk, ontspannen, smakelijk te vertellen. Ook haar liedjes, de rustmomenten waar we even geen humoristische zijpaden inslaan, zijn optimistisch en dankbaar van toon."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Sara Kroos is terug op het cabaretpodium en beter dan ooit. (…) Ze trakteert ons op een avond vol goede grappen, mooie observaties, lichtheid en optimisme. (…) Sara Kroos is weer op de plek waar ze hoort en op haar best is: haar cabaretpodium."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-goede-voorbeeld-vlamousse": [
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Vlamousse trekt weer talloze onweerstaanbaar creatieve scènes en sketches uit de kast. (…) In ‘Het goede voorbeeld’ heeft het duo echt een fijne balans gevonden. Waar Van As ontroerend en ernstig kan zijn, of schunnig, luid en expressief is, trekt Van Bakel aandacht door juist zo min mogelijk te doen."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Raakt precies de juiste snaar."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/striptease-van-de-dood-david-linszen": [
+      {
+        "medium": "Trouw",
+        "sterren": 5,
+        "citaat": "Hoge verwachtingen, die hij met zijn show triomfantelijk inlost. (...) Indrukwekkend, hoe zelfverzekerd Linszen in zijn avondvullende debuut komisch absurdisme weet te koppelen aan zijn realiteit."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Puntje-van-je-stoelcomedy met een zeldzame eigenheid: David Linszens debuut is echt heel goed. (…) Eens in de zoveel tijd meldt zich een comedytalent dat overrompelt met zeldzame eigenheid; het vermogen om als een eenzame gek met eenzamegekkengedachten de slappe lach in verdeelde golfjes door het publiek te laten rollen, en om 100 minuten lang nieuwsgierigheid te voeden naar het volgende fundamentele verzinsel."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut. In zijn cabaretdebuut schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/en-verbied-vogels-om-te-fluiten-ayoub": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Ayoub Kharkhach lost met zijn debuutvoorstelling de hoge verwachtingen volledig in."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Een spannende performer die met niemand in het huidige cabaretveld te vergelijken is."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Ayoub Kharkhach maakt indruk met een ontroerend en verbindend debuut."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/aan-mij-zal-het-niet-liggen-marjolijn-van-kooten": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een mooie, eerlijke voorstelling over leven met tekortkomingen. (…) Een lied, een opsomming van alle dingen die door haar handen gingen toen ze zijn huis moest opruimen, is een ontroerend hoogtepunt: ‘Dode dingen’ van Jos Brink in een nieuw jasje. Het lied heeft een prachtige tekst en is prachtig getoonzet, haar stem wordt ineens opgetild en voorzien van een sprankelende andere kleur."
+      },
+      {
+        "medium": "Dagblad van het Noorden",
+        "sterren": null,
+        "citaat": "Van Kooten etaleert geen glamour, evenmin pretenties. Ze verspreidt de kracht, de flair, de intonatie en de ambitie van een theaterpersoonlijkheid met doordacht relativeringsvermogen."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/op-scherp-jasper-van-der-veen": [
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Hij heeft een leuke fysieke stijl en het talent om met lichaam, mimiek en timing zijn woorden een onverwachte en komische wending te geven. (…) Je ziet dat er in Jasper van der Veen een goede cabaretier huist."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/zeg-maar-u-de-broers-van-arkel": [
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "De leuk acterende broers laten zien dat de beste grappen vaak zitten in ogenschijnlijk kleine dingen."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Een goed ingespeeld komisch duo (…) dat met hun toneelmatige, theatraal goed uitgedachte voorstelling kan rekenen op de hardste lachmomenten."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-nogal-hyperbijzondere-oudejaa-andries-tunru-stefan-hendrikx": [
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Het talent van Tunru en Hendrikx is onmiskenbaar."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Voor Hendrikx en Tunru bestaat er geen alledaagsheid. Ze kijken naar de wereld door een bril van soapseries, misdaadthrillers en musicals."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/welkom-ongemak-wim-helsen": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Wim Helsen weet er een mooie, geestige en gevoelige theatermonoloog van te maken. Hij zet hierbij zijn hele gereedschapskist als theatermaker in: zijn eigenzinnige humor en zijn bijzondere mimiek."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/dekpunt-jan-beuving": [
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Beter was Beuving nooit."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-baas-lisa-ostermann": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Met ‘De Baas’ bevestigt Ostermann haar status als een van de spannendste en getalenteerdste cabaretiers van het land."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 5,
+        "citaat": "Wat valt alles weer prachtig samen in de nieuwe voorstelling van Lisa Ostermann. (…) Ontzettend grappig."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/gelukkig-maar-myrte-siebinga": [
+      {
+        "medium": "Dagblad van het Noorden",
+        "sterren": 5,
+        "citaat": "Het komisch talent van Siebinga is fenomenaal."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/micha-wertheim-voor-iedereen-micha-wertheim": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "In het meesterlijke ‘Voor iedereen’ van Micha Wertheim heeft elke grap of anekdote een diepere betekenis. (…) De cabaretier is erin geslaagd om een gelaagd kunstwerk neer te zetten, waarin alle brandend actuele thema’s van dit moment een plek krijgen. (…) En de visuele component is schitterend."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Zoals altijd bij Wertheim loont het de moeite om bij de les te blijven, want er komen prachtige ideeën voorbij."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/altijd-aan-pieter-verelst": [
+      {
+        "medium": "De Standaard",
+        "sterren": 5,
+        "citaat": "Pieter maakt nu eenmaal cabaret als geen ander."
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 5,
+        "citaat": "Pieter Verelst bewijst opnieuw tot de strafste cabaretiers van Vlaanderen te behoren: een show die tegelijk bulderlach, chaos en ontroering serveert."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/korthals-in-stukken-louise-korthals": [
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Louise Korthals koppelt eenzaam moederschap knap aan vrouwenrechten wereldwijd."
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 4,
+        "citaat": "Met deze comeback bevestigt ze haar plek in de top van de Nederlandse kleinkunst."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/verbroedering-roel-en-jos-maalderink": [
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 4,
+        "citaat": "Verrassend, vernieuwend, puur en vooral ontzettend grappig."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/pluk-eventueel-de-dag-janneke-de-bijl": [
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "De voorstelling is tot de nok toe gevuld met mooie zinnen, goede verhalen en geestige intermezzo’s."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Nu heeft ze de geperfectioneerde, krachtigste podiumversie van zichzelf in huis."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Een stevig ritme, goede punchlines en een duidelijke structuur."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/bruto-boban-benjamin-braspenning": [
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Het lukt hem om aan zijn sterke debuut een minstens zo sterk vervolg toe te voegen. (…) In zijn sterke show fileert Boban Braspenning de superrijken, maar spaart hij ook zichzelf niet."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Razend knap verpakt Boban een persoonlijk verhaal in fiscale adviezen. (…) Een Annie M.G. Schmidtprijs-waardig liefdeslied."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/zoveel-meer-beth-flo": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Hun missie blijft ook in dit derde programma prijzenswaardig: ze tonen de reikwijdte van klassieke muziek."
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Zonder twijfel knap gemaakt en muzikaal ijzersterk."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/in-perspectief-stefan-hendrikx": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Hendrikx is een soepele acteur (…) en toont een scala aan grootse gezichtsuitdrukkingen."
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Vooral in zijn fysieke spel is hij op zijn best: precies, trefzeker en overtuigend."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/ravot-andries-tunru": [
+      {
+        "medium": "I Love Theater",
+        "sterren": 4,
+        "citaat": "Scherp, intelligent en bijzonder grappig (…) Hier staat een cabaretier die volledig vertrouwt op zijn vakmanschap."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Rasimprovisator Tunru schakelt snel, is zeer ad rem."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rudsichtslos-ruud-smulders": [
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Ruud Smulders’ sketch over ChatGPT is een van de beste van het jaar."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Ruud Smulders maakt indruk met een slim en ambitieus programma."
+      },
+      {
+        "medium": "Scènes",
+        "sterren": null,
+        "citaat": "Met Rüdsichtslos sluipt Smulders naar de cabarettop."
+      }
+    ]
+  }
 }

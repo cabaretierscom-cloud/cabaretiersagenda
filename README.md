@@ -24,6 +24,12 @@ Een solo-artiest kan `"geslacht": "man"` of `"geslacht": "vrouw"` hebben, altijd
 
 `npm run fotos` zoekt rechtenvrije foto's: via het Wikipedia-artikel van de artiest (alleen als dat over cabaret of comedy gaat) naar de hoofdafbeelding op Wikidata, en dan de licentie op Wikimedia Commons. Alleen CC0, publiek domein, CC BY en CC BY-SA worden gebruikt. De foto komt in `public/fotos/`, en het veld `foto` in `data/artiesten.json` bewaart maker, licentie en bron; die staan als naamsvermelding onder de foto. Bekijk nieuwe foto's altijd zelf: zet `"foto": false` bij een artiest als de foto niet klopt, dan zoekt het script er nooit meer een. Elke foto heeft een `alt`-tekst (wat er op de foto te zien is, in het Nederlands). Het script vult die met de beschrijving van Commons of met "Foto van <naam>"; verbeter die met de hand. `npm run fotos -- --aanvullen` haalt beschrijving, datum en afmetingen opnieuw op voor bestaande foto's.
 
+## Recensies
+
+Een voorstelling kan `recensies` hebben: per krant of tijdschrift het `medium`, de `sterren` (1 tot en met 5, of `null` als de krant geen sterren geeft), een `citaat` en de `bron`, de theaterpagina waar de recensie staat. Ze komen op de voorstellingspagina onder "Recensies van …".
+
+Het ophaalscript zoekt ze vanzelf op elke voorstellingspagina die het bezoekt (`ophalen/lib/recensies.mjs`). Noemen theaters verschillende sterren voor dezelfde krant, dan wint wat de meeste theaterpagina's zeggen. Een citaat "over" een vorige voorstelling wordt overgeslagen. Klopt een recensie niet, haal hem dan weg uit `data/voorstellingen.json`. Komt hij bij het volgende ophalen terug, meld het dan, zodat de herkenner aangepast kan worden.
+
 ## Festivals
 
 Een festival heeft zelf geen speeldata. De site zoekt ze erbij: alle voorstellingen van de artiesten in `artiesten` (bijvoorbeeld de "artiest" Cameretten) en alle voorstellingen waarvan de titel een van de `titels` bevat. Elk festival krijgt een pagina op `/festivals/<id>/`. Een festival zonder aankomende speeldata staat onderaan het overzicht onder "Nog geen speeldata bekend".

@@ -91,5 +91,19 @@
       "soort": null,
       "bron": "https://parkvilla.nl/theater/piet-van-eeghen-de-lieve-vrede-321"
     }
-  ]
+  ],
+  "recensies": {
+    "https://parkvilla.nl/theater/de-broers-van-arkel-zeg-maar-u-315": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "&ldquo;Een goed ingespeeld komisch duo […] dat met hun toneelmatige, theatraal goed uitgedachte voorstelling kan rekenen op de hardste lachmomenten.&rdquo;"
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "&ldquo;De leuk acterende broers laten zien dat de beste grappen vaak zitten in ogenschijnlijk kleine dingen.&rdquo;"
+      }
+    ]
+  }
 }

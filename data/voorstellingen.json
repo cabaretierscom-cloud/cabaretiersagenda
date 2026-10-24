@@ -133,12 +133,28 @@
     "genre": "stand-up"
   },
   {
+    "id": "amsterdams-kleinkunst-festival-halve-finale",
+    "titel": "Halve Finale",
+    "artiesten": [
+      "amsterdams-kleinkunst-festival"
+    ],
+    "genre": "kleinkunst"
+  },
+  {
     "id": "amsterdams-studenten-cabaret-festival-finalistentournee",
     "titel": "Finalistentournee",
     "artiesten": [
       "amsterdams-studenten-cabaret-festival"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "amsterdams-studenten-cabaret-festival-halve-finale",
+    "titel": "Halve finale",
+    "artiesten": [
+      "amsterdams-studenten-cabaret-festival"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "andre-manuel-de-eenzame-ziel",
@@ -173,7 +189,21 @@
     "artiesten": [
       "andries-tunru-en-stefan-hendrikx"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "I Love Theater",
+        "sterren": 5,
+        "citaat": "Pijnlijke kaken van het lachen!",
+        "bron": "https://www.kampanje.nl/voorstellingen/andries-tunru-stefan-hendrikx-rz5x"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Voor Hendrikx en Tunru bestaat er geen alledaagsheid. Ze kijken naar de wereld door een bril van soapseries, misdaadthrillers en musicals.",
+        "bron": "https://www.kampanje.nl/voorstellingen/andries-tunru-stefan-hendrikx-rz5x"
+      }
+    ]
   },
   {
     "id": "andries-tunru-en-stefan-hendrikx-de-nogal-hyperbijzondere-groningse-oudejaars-im",
@@ -205,7 +235,27 @@
     "artiesten": [
       "andries-tunru"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "I Love Theater",
+        "sterren": 4,
+        "citaat": "Scherp, intelligent en bijzonder grappig (…) Hier staat een cabaretier die volledig vertrouwt op zijn vakmanschap.",
+        "bron": "https://www.theaterdeveste.nl/programma/ravot-fhtj"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Tunru is een ras-entertainer",
+        "bron": "https://www.theaterdeveste.nl/programma/ravot-fhtj"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Rasimprovisator Tunru schakelt snel, is zeer ad rem.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/ravot-andries-tunru"
+      }
+    ]
   },
   {
     "id": "andy-marcelissen-ich-bin-andy-meister",
@@ -240,12 +290,28 @@
     "genre": "cabaret"
   },
   {
+    "id": "annie-m-g-schmidtprijs-uitreiking",
+    "titel": "Uitreiking",
+    "artiesten": [
+      "annie-m-g-schmidtprijs"
+    ],
+    "genre": "kleinkunst"
+  },
+  {
     "id": "anuar-ongeduldig-geduldig",
     "titel": "Ongeduldig Geduldig",
     "artiesten": [
       "anuar"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een zeer vrolijke avond",
+        "bron": "https://delamar.nl/voorstellingen/anuar/"
+      }
+    ]
   },
   {
     "id": "aren-scholte-lex-van-wieren-valt-er-nog-wat-te-lachen",
@@ -350,7 +416,33 @@
     "artiesten": [
       "ayoub-kharkhach"
     ],
-    "genre": "kleinkunst"
+    "genre": "kleinkunst",
+    "recensies": [
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Misschien wel het mooiste cabaretdebuut van het jaar",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/ayoub/"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Cabaretier Ayoub Kharkhach lost met zijn debuutvoorstelling de hoge verwachtingen volledig in.",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/ayoub/"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Een spannende performer die met niemand in het huidige cabaretveld te vergelijken is.",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/ayoub/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Vakkundig en gevoelig.",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ayoub-kharkhach-en-verbied-de-vogels-om-te-fluiten/"
+      }
+    ]
   },
   {
     "id": "barbara-sloesen-en-joost-hofman-ouder-worden",
@@ -390,7 +482,15 @@
     "artiesten": [
       "berit-companjen"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Companjen zeikt met venijnig plezier herhaaldelijk haar omgeving af, maar drijft vooral veel en graag de spot met zichzelf",
+        "bron": "https://www.wilminktheater.nl/nl/agenda/zei-ik-dat-hardop-lkxl"
+      }
+    ]
   },
   {
     "id": "bert-gabriels-live-vanuit-de-wetstraat",
@@ -438,7 +538,27 @@
     "artiesten": [
       "beth-en-flo"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Zonder twijfel knap gemaakt en muzikaal ijzersterk",
+        "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/beth-flo-qgld"
+      },
+      {
+        "medium": "Musicalnieuws",
+        "sterren": null,
+        "citaat": "De zaal ging betoverd naar buiten.",
+        "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/beth-flo/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Hun missie blijft ook in dit derde programma prijzenswaardig: ze tonen de reikwijdte van klassieke muziek.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/zoveel-meer-beth-flo"
+      }
+    ]
   },
   {
     "id": "bettina-holwerda-laat-maar",
@@ -517,7 +637,27 @@
     "artiesten": [
       "boban-benjamin-braspenning"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Het lukt hem om aan zijn sterke debuut een minstens zo sterk vervolg toe te voegen. (…) In zijn sterke show fileert Boban Braspenning de superrijken, maar spaart hij ook zichzelf niet.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/bruto-boban-benjamin-braspenning"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Braspenning heeft een aansprekende manier van vertellen, hij bespeelt de zaal vaardig en zijn nummers zijn geestig.",
+        "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/boban-benjamin-braspenning/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Razend knap verpakt Boban een persoonlijk verhaal in fiscale adviezen. (…) Een Annie M.G. Schmidtprijs-waardig liefdeslied.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/bruto-boban-benjamin-braspenning"
+      }
+    ]
   },
   {
     "id": "boban-braspenning-bruto",
@@ -525,7 +665,15 @@
     "artiesten": [
       "boban-braspenning"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Het lukt hem om aan zijn sterke debuut een minstens zo sterk vervolg toe te voegen",
+        "bron": "https://denieuwekolk.nl/theater/agenda/boban-braspenning"
+      }
+    ]
   },
   {
     "id": "bolder-en-van-santen-looprat",
@@ -687,7 +835,15 @@
     "artiesten": [
       "chris-verlaan"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Het eind van zijn slim geconstrueerde voorstelling is een ontroerende uppercut en een wake-up call ineen.",
+        "bron": "https://www.kampanje.nl/voorstellingen/chris-verlaan-qyxl"
+      }
+    ]
   },
   {
     "id": "christel-de-laat-kende-da",
@@ -703,7 +859,27 @@
     "artiesten": [
       "christian-van-eijkelenburg"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 4,
+        "citaat": "Modern, hip, absurdistisch en werkelijk ontzettend grappig",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/christian-van-eijkelenburg/"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Verrassend cabaret met talloze mooie animaties en filmbeelden",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/christian-van-eijkelenburg/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een groot talent voor absurdisme",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/christian-van-eijkelenburg/"
+      }
+    ]
   },
   {
     "id": "christopher-hall-pizazz-comedy-cafe-amsterdam",
@@ -765,6 +941,14 @@
       "comedy-club-haug"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "comedy-comedians-onder-leiding-van-martijn-koning",
+    "titel": "onder leiding van Martijn Koning",
+    "artiesten": [
+      "comedy-comedians"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "comedy-festival-limburg-halve-finale",
@@ -850,7 +1034,15 @@
     "artiesten": [
       "daan-van-der-hoeven"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Er zit precies genoeg bindmiddel tussen de verschillende verhalen, zonder dat Mensenmens geforceerd cabaretesk overkomt. Het is eerder een stand-upsymfonie, waarin ieder woord uit de losse pols lijkt te stromen en waarachtig aanvoelt. Van der Hoeven een talent noemen, zou een belediging zijn.",
+        "bron": "https://www.kampanje.nl/voorstellingen/daan-van-der-hoeven-qy6j"
+      }
+    ]
   },
   {
     "id": "damian-skora-w-programie-pan-komentarz-polska-komentujaca-na-zywo-comedy-cafe-amsterdam",
@@ -880,7 +1072,15 @@
     "artiesten": [
       "daniel-arends"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "In zijn wonderschone tweeluik scheidt Daniël Arends de authenticiteit van de bullshit",
+        "bron": "https://www.wilminktheater.nl/nl/agenda/had-ik-maar-nooit-zo-aardig-gedaan-herneming-tjhz"
+      }
+    ]
   },
   {
     "id": "daniel-arends-had-ik-maar-zo-aardig-gedaan",
@@ -896,7 +1096,15 @@
     "artiesten": [
       "daniel-arends"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "In zijn wonderschone tweeluik scheidt Daniël Arends de authenticiteit van de bullshit",
+        "bron": "https://www.wilminktheater.nl/nl/agenda/high-class-bitch-herneming-q2jq"
+      }
+    ]
   },
   {
     "id": "daniel-yazbek-i-ll-call-you-back",
@@ -921,7 +1129,27 @@
     "artiesten": [
       "david-linszen"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Trouw",
+        "sterren": 5,
+        "citaat": "Hoge verwachtingen, die hij met zijn show triomfantelijk inlost. (...) Indrukwekkend, hoe zelfverzekerd Linszen in zijn avondvullende debuut komisch absurdisme weet te koppelen aan zijn realiteit",
+        "bron": "https://denieuwekolk.nl/theater/agenda/david-linszen"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Puntje-van-je-stoelcomedy met een zeldzame eigenheid: David Linszens debuut is echt heel goed.",
+        "bron": "https://denieuwekolk.nl/theater/agenda/david-linszen"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut. In zijn cabaretdebuut schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal",
+        "bron": "https://denieuwekolk.nl/theater/agenda/david-linszen"
+      }
+    ]
   },
   {
     "id": "david-van-rosmalen-als-ik-jou-was",
@@ -1375,6 +1603,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "fatu-late-night-joel-gideon-rene-van-meurs-en-bugra-gedik",
+    "titel": "Joël Gideon, René Van Meurs & Buğra Gedik",
+    "artiesten": [
+      "fatu-late-night"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "fay-lovsky-hakken-in-het-zand",
     "titel": "Hakken In Het Zand",
     "artiesten": [
@@ -1474,7 +1710,15 @@
     "artiesten": [
       "freek-de-jonge"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Trouw",
+        "sterren": 5,
+        "citaat": "Freek is en blijft de meester, fenomenaal.",
+        "bron": "https://www.theaterdeveste.nl/programma/wisten-wij-veel-jx22"
+      }
+    ]
   },
   {
     "id": "garik-oganisyan-no-negativity",
@@ -1490,7 +1734,15 @@
     "artiesten": [
       "gavin-reijnders"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "De Telegraaf",
+        "sterren": null,
+        "citaat": "De conclusie is dat Reijnders ontwapenend en getalenteerd is",
+        "bron": "https://www.kampanje.nl/voorstellingen/gavin-reijnders-h679"
+      }
+    ]
   },
   {
     "id": "georgi-kyuchukov-and-dimitar-donski-stand-up-southend-comedy-club",
@@ -1520,6 +1772,14 @@
     "titel": "Wat wil ik",
     "artiesten": [
       "gilian-de-vries"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "gillion-slory-kijk-pap-een-oempaloempa",
+    "titel": "‘Kijk pap, een oempaloempa’",
+    "artiesten": [
+      "gillion-slory"
     ],
     "genre": "stand-up"
   },
@@ -1695,7 +1955,21 @@
     "artiesten": [
       "henry-van-loon"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Henry van Loon jaagt in ‘Keanu’ iets herkenbaars uit het dagelijks leven in de richting van het absurde.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/keanu-henry-van-loon"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Er lopen in Nederland nauwelijks getalenteerdere komieken rond dan Van Loon.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/keanu-henry-van-loon"
+      }
+    ]
   },
   {
     "id": "hermes-ahmadi-welkom",
@@ -1719,7 +1993,15 @@
     "artiesten": [
       "hokjesdenker"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Wie wil er nou drie uur lang naar Zomergasten kijken? Een half uur Hokjesdenker verzadigt meer.",
+        "bron": "https://www.kampanje.nl/voorstellingen/hokjesdenker-jknt"
+      }
+    ]
   },
   {
     "id": "huisgenoten-de-nieuwe-romantische-comedy",
@@ -1806,7 +2088,15 @@
     "artiesten": [
       "jade-mintjens"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "De Morgen",
+        "sterren": 4,
+        "citaat": "Originele verteller die niet bij de geijkte comedy-onderwerpen blijft hangen.",
+        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jade-mintjens-bedankt-om-te-komen"
+      }
+    ]
   },
   {
     "id": "jan-beuving-dekpunt",
@@ -1814,7 +2104,15 @@
     "artiesten": [
       "jan-beuving"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Beter was Beuving nooit.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/dekpunt-jan-beuving"
+      }
+    ]
   },
   {
     "id": "jan-jaap-van-der-wal-amor-fati-10-jaar-in-vlaanderen",
@@ -1862,7 +2160,33 @@
     "artiesten": [
       "janneke-de-bijl"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Nu heeft ze de geperfectioneerde, krachtigste podiumversie van zichzelf in huis",
+        "bron": "https://www.theaterdeveste.nl/programma/pluk-eventueel-de-dag-qhnz"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Een stevig ritme, goede punchlines en een duidelijke structuur.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/pluk-eventueel-de-dag-janneke-de-bijl"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "De voorstelling is tot de nok toe gevuld met mooie zinnen, goede verhalen en geestige intermezzo's.",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/beleef-t-overdag-janneke-de-bijl-pluk-eventueel-de-dag/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Op de liedjes van Janneke de Bijl zou Hans Dorrestijn waarschijnlijk stikjaloers zijn",
+        "bron": "https://www.kampanje.nl/voorstellingen/janneke-de-bijl-rz9m"
+      }
+    ]
   },
   {
     "id": "jasper-van-der-veen-op-scherp",
@@ -1870,7 +2194,15 @@
     "artiesten": [
       "jasper-van-der-veen"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Hij heeft een leuke fysieke stijl en het talent om met lichaam, mimiek en timing zijn woorden een onverwachte en komische wending te geven. (…) Je ziet dat er in Jasper van der Veen een goede cabaretier huist.",
+        "bron": "https://denieuwekolk.nl/theater/agenda/jasper-van-der-veen"
+      }
+    ]
   },
   {
     "id": "jawad-es-soufi-tnawies",
@@ -1878,7 +2210,15 @@
     "artiesten": [
       "jawad-es-soufi"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Jawad Es Soufi laat zijn divers publiek samen lachen om alle culturele verschillen",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jawad-es-soufi-tnawies/"
+      }
+    ]
   },
   {
     "id": "jay-francis-tunnelvisie",
@@ -1934,7 +2274,39 @@
     "artiesten": [
       "jeroens-clan"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Dagblad van het Noorden",
+        "sterren": 4,
+        "citaat": "Een gedurfde show vol heisa, herrie en energie",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/"
+      },
+      {
+        "medium": "De Telegraaf",
+        "sterren": null,
+        "citaat": "Jeroens Clan mag een sensatie worden genoemd",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Keihard cabaret van drie kwetsbare mannen",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/"
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Het drietal valt op met scherpe en grappige dialogen",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De sleutel voor deze cabaretvorm is beslist niet dat het drietal grofgebekt is, zoals recensies keer op keer beweren, maar dat Tuns, Kroon en De Poorter op intelligente manier spelen met ironie",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/"
+      }
+    ]
   },
   {
     "id": "jeroens-clan-juk-regie-theo-maassen",
@@ -2001,6 +2373,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "joep-van-deudekom-en-rob-urgert-joep-van-deudekom-en-rob-urgert",
+    "titel": "Joep van Deudekom & Rob Urgert",
+    "artiesten": [
+      "joep-van-deudekom-en-rob-urgert"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "joep-vermolen-so-this-was-nice-nou-was-leuk",
     "titel": "So This Was Nice! / Nou was leuk!",
     "artiesten": [
@@ -2063,6 +2443,22 @@
       "jorgen-raymann"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "jorgen-raymann-bigi-yari-welkom-thuis",
+    "titel": "Bigi Yari – Welkom thuis",
+    "artiesten": [
+      "jorgen-raymann"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "jorgen-raymann-jorgen-raymann",
+    "titel": "Jörgen Raymann",
+    "artiesten": [
+      "jorgen-raymann"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "jules-keeris-knegsel-zuid",
@@ -2340,7 +2736,15 @@
     "artiesten": [
       "kor-hoebe"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Kor Hoebe improviseert als de beste",
+        "bron": "https://www.theaterdeveste.nl/programma/korrelrelatie-9ynz"
+      }
+    ]
   },
   {
     "id": "lachen-in-grenswerk-nationaal-theaterweekend",
@@ -2371,7 +2775,15 @@
     "artiesten": [
       "lebbis"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Als het erop aankomt heeft Lebbis aan felheid en grapdichtheid absoluut niets ingeboet, en dat is een geruststellende gedachte voor de liefhebbers van het betere cabaret.",
+        "bron": "https://www.theaterdeveste.nl/programma/satan-is-moe-qhf4"
+      }
+    ]
   },
   {
     "id": "leeuwarder-cabaret-festival-finale",
@@ -2475,7 +2887,39 @@
     "artiesten": [
       "lisa-ostermann"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "Trouw",
+        "sterren": 5,
+        "citaat": "Wat valt alles weer prachtig samen in de nieuwe voorstelling van Lisa Ostermann",
+        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/de-baas-lisa-ostermann"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Met De baas bevestigt Ostermann haar status als een van de spannendste en getalenteerdste cabaretiers van het land.",
+        "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/lisa-ostermann-reprise-z9pf"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Lisa Ostermann heeft een nogal onweerstaanbaar soort energie.",
+        "bron": "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Met andere woorden: je wil direct haar volgende voorstelling zien.",
+        "bron": "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Opnieuw vindt Lisa Ostermann het perfecte snijvlak tussen humor en ontroering.",
+        "bron": "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc"
+      }
+    ]
   },
   {
     "id": "live-in-rotterdam-dogu-demirkol-stand-up",
@@ -2499,7 +2943,33 @@
     "artiesten": [
       "louise-korthals"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Korthals heeft een erg geslaagde en opwindende vorm gevonden om deze chaotische worsteling invoelbaar én zichtbaar te maken.",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/louise-korthals-korthals-in-stukken/"
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 4,
+        "citaat": "Alles klopt aan deze voorstelling: muzikaal, verbaal en visueel vormt het een compleet geheel.",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/louise-korthals-korthals-in-stukken/"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Louise Korthals koppelt eenzaam moederschap knap aan vrouwenrechten wereldwijd.",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/louise-korthals-korthals-in-stukken/"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 3,
+        "citaat": "Hoge dosis energie, zelfspot, maatschappijkritische observaties en gevoel voor mooie cabaretliedjes.",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/louise-korthals-korthals-in-stukken/"
+      }
+    ]
   },
   {
     "id": "lovella-telesford-wat-een-gezeik",
@@ -2555,7 +3025,33 @@
     "artiesten": [
       "maartje-en-kine"
     ],
-    "genre": "kleinkunst"
+    "genre": "kleinkunst",
+    "recensies": [
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 5,
+        "citaat": "Een slimme, muzikaal sterke en verrassend gelaagde voorstelling over toeval, keuzes en geluk. [..] Emotioneel, grappig en bovenal origineel. De meest eigenzinnige en muzikale cabaretiers van dit moment.",
+        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/maartje-kine-de-bingo-show"
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": 4,
+        "citaat": "Maartje & Kine bewijzen tot de top van de Nederlandse kleinkunst te behoren. [..] Kolderieke scenes vloeien organisch over in ontroerende momenten. Hun timing is feilloos.",
+        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/maartje-kine-de-bingo-show"
+      },
+      {
+        "medium": "Scènes",
+        "sterren": null,
+        "citaat": "Mooie melodieën, intelligente teksten en zalige stemmen. [..] Dit keer nog een flinke slag persoonlijker, beter, mooier en indrukwekkender.",
+        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/maartje-kine-de-bingo-show"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Met opvallend hoog aantal ontroerende liedjes twijfelen Maartje & Kine aan het hoopvolle idee dat mensen kunnen krijgen wat ze verdienen.",
+        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/maartje-kine-de-bingo-show"
+      }
+    ]
   },
   {
     "id": "maartje-mikx-ze-vraagt-erom",
@@ -2588,7 +3084,15 @@
     "artiesten": [
       "marcel-van-roosmalen"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "wo 22 apr 2026 Zelfbenoemd rebel Van Roosmalen koestert buitenstaandersrol in zijn cabaretdebuut",
+        "bron": "https://www.wilminktheater.nl/nl/agenda/ik-mag-niet-klagen-57jm"
+      }
+    ]
   },
   {
     "id": "marco-lopes-piet-en-matties",
@@ -2652,7 +3156,27 @@
     "artiesten": [
       "marjolijn-van-kooten"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Dagblad van het Noorden",
+        "sterren": null,
+        "citaat": "Van Kooten etaleert geen glamour, evenmin pretenties. Ze verspreidt de kracht, de flair, de intonatie en de ambitie van een theaterpersoonlijkheid met doordacht relativeringsvermogen.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/aan-mij-zal-het-niet-liggen-marjolijn-van-kooten"
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Aan mij zal het niet liggen is geen luchtig avondje cabaret, maar een eerlijk en scherpzinnig inkijkje in het hoofd van iemand die de wereld nét iets intenser ervaart. Je lacht, je slikt, je denkt – en je bent dankbaar dat ze dit alles hardop durft te delen.",
+        "bron": "https://www.kampanje.nl/voorstellingen/marjolijn-van-kooten-zb8v"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Wat is je meerwaarde in het leven en moet er op je grafsteen? Van Kooten heeft de antwoorden niet. Ze probeert te accepteren wie ze is, met al haar tekortkomingen, en heeft daar een mooie, eerlijke voorstelling over gemaakt.",
+        "bron": "https://www.kampanje.nl/voorstellingen/marjolijn-van-kooten-zb8v"
+      }
+    ]
   },
   {
     "id": "marlijn-weerdenburg-geworteld",
@@ -2676,7 +3200,21 @@
     "artiesten": [
       "martijn-crins"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Hè Fijn is een energiek en erg grappig spervuur aan situaties die Martijn Crins niet helemaal kan overzien...een groot, specifiek talent voor het loslaten van absurde fantasieën op de alledaagse gang.",
+        "bron": "https://www.kampanje.nl/voorstellingen/martijn-crins-fjm1"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een zeer geslaagd programma. Crins heeft de gave om een klein dingetje in het dagelijks leven tot ongekend absurde proporties op te blazen, terwijl het wezenlijk belang van die kleine dingetjes overeind blijft staan. Met Crins hebben we een potentieel grote comedian in huis.",
+        "bron": "https://www.kampanje.nl/voorstellingen/martijn-crins-fjm1"
+      }
+    ]
   },
   {
     "id": "martijn-crins-kooiapen",
@@ -2700,7 +3238,27 @@
     "artiesten": [
       "martijn-koning"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Koning toont zijn grote verteltalent",
+        "bron": "https://www.theaterdeveste.nl/programma/overprikkeld-bsxp"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Binnen het genre van de stand-up staat Koning aan de top.",
+        "bron": "https://www.theaterdeveste.nl/programma/overprikkeld-bsxp"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Koning is een meester in het vinden van humor in alledaagse situaties.",
+        "bron": "https://www.theaterdeveste.nl/programma/overprikkeld-bsxp"
+      }
+    ]
   },
   {
     "id": "masters-of-comedy-bij-southend-comedy-club-amsterdam-southend-comedy-club",
@@ -2722,7 +3280,27 @@
     "artiesten": [
       "max-van-den-burg"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "De Stentor",
+        "sterren": null,
+        "citaat": "Max schoffelt heerlijk in een politiek correcte wereld",
+        "bron": "https://www.kampanje.nl/voorstellingen/max-van-den-burg-lmrm"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Een belofte is opgestaan",
+        "bron": "https://www.kampanje.nl/voorstellingen/max-van-den-burg-lmrm"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een feest der herkenning in een unieke comedystijl",
+        "bron": "https://www.kampanje.nl/voorstellingen/max-van-den-burg-lmrm"
+      }
+    ]
   },
   {
     "id": "mc-jeffrey-spalburg-en-dj-phantom-fatu-010",
@@ -2746,7 +3324,39 @@
     "artiesten": [
       "merijn-scholten"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "De virtuoze komiek Merijn Scholten speelt in ‘Lemming’ op de toppen van zijn kunnen.",
+        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/merijn-scholten-lemming"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Hij creëert, grappig en ontroerend, een beter bij de tijd passend genre: sad hardcore.",
+        "bron": "https://www.maaspoort.nl/programma/lemming-merijn-scholten/"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Komiek Merijn Scholten heeft een hoop kritiek op de maatschappij, maar is vooral enorm grappig",
+        "bron": "https://www.maaspoort.nl/programma/lemming-merijn-scholten/"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Merijn Scholten brengt in Lemming een vaak hilarische ode aan kuddegedrag",
+        "bron": "https://www.maaspoort.nl/programma/lemming-merijn-scholten/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Merijn Scholten brengt een hilarische ode aan de lanterfantende kudde",
+        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/merijn-scholten-lemming"
+      }
+    ]
   },
   {
     "id": "micha-wertheim-micha-wertheim-voor-iedereen",
@@ -2754,7 +3364,45 @@
     "artiesten": [
       "micha-wertheim"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "De Standaard",
+        "sterren": 5,
+        "citaat": "Uiteindelijk wint de fantasie het van de mindfuck.",
+        "bron": "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "In het meesterlijke ‘Voor iedereen’ van Micha Wertheim heeft elke grap of anekdote een diepere betekenis.",
+        "bron": "https://www.musisenstadstheater.nl/nl/agenda/micha-wertheim-voor-iedereen/10177"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Wertheim is virtuoos in het leuk en scherp activeren van publiek.",
+        "bron": "https://www.musisenstadstheater.nl/nl/agenda/micha-wertheim-voor-iedereen/10177"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Zoals altijd bij Wertheim loont het de moeite om bij de les te blijven, want er komen prachtige ideeën voorbij.",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/micha-wertheim/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een voorstelling waarin de recensent samen met honderden anderen in de zaal, amechtig hijgend achter de verbeelding en fantasie van de maker aanholt.",
+        "bron": "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Wertheim is een fenomenale fantast.",
+        "bron": "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17"
+      }
+    ]
   },
   {
     "id": "micky-overman-don-t-threaten-me-with-a-good-time",
@@ -2841,7 +3489,15 @@
     "artiesten": [
       "myrthe-siebinga"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Dagblad van het Noorden",
+        "sterren": 5,
+        "citaat": "Het komisch talent van Siebinga is fenomenaal.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/gelukkig-maar-myrte-siebinga"
+      }
+    ]
   },
   {
     "id": "nabil-aoulad-ayad-daar-is-hij-weer",
@@ -3010,6 +3666,16 @@
     "theater": "theater-zuidplein"
   },
   {
+    "id": "onias-landveld-jorgen-raymann-howard-komproe-papa-zonder-handleiding-xl",
+    "titel": "Papa zonder handleiding XL",
+    "artiesten": [
+      "onias-landveld",
+      "jorgen-raymann",
+      "howard-komproe"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "onias-landveld-jorgen-raymann-steven-brunswijk-howard-komproe-joshua-timisela-pa",
     "titel": "Papa Zonder Handleiding XL",
     "artiesten": [
@@ -3065,7 +3731,27 @@
     "artiesten": [
       "patrick-laureij"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Terwijl hij wiebelig blijft in zijn zoektocht naar veiligheid en frictieloos contact, is zijn openhartige stand-up over dat onderwerp in Kintsugi mooi in balans.",
+        "bron": "https://denieuwekolk.nl/theater/agenda/patrick-laureij"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Met elke anekdote bouwt hij aan een kwetsbaar zelfportret, van een man die zijn gevoelens niet onder controle heeft, maar daar toch mee om weet te gaan. Dat culmineert in een trefzeker en hilarisch slotverhaal.",
+        "bron": "https://denieuwekolk.nl/theater/agenda/patrick-laureij"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Kintsugi is een grappenkanon dat ook tranen afschiet. In zijn beste voorstelling tot nu toe neemt Patrick Laureij zichzelf goudeerlijk onder de loep. Zijn driften, verslavingen en hunkering naar contact zijn geestig, maar verraden tegelijk een diepe kwetsbaarheid.",
+        "bron": "https://denieuwekolk.nl/theater/agenda/patrick-laureij"
+      }
+    ]
   },
   {
     "id": "patrick-nederkoorn-nieuw-programma",
@@ -3084,6 +3770,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "patrick-spicer-kleine-komedie",
+    "titel": "Patrick Spicer",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "kleine-komedie"
+  },
+  {
     "id": "paul-haenen-50-jaar-margreet-dolman",
     "titel": "50 jaar Margreet Dolman",
     "artiesten": [
@@ -3097,7 +3790,15 @@
     "artiesten": [
       "paul-haenen"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Friesch Dagblad",
+        "sterren": null,
+        "citaat": "Iedereen zou een Margreet Dolman als moeder, dochter, vriendin of (buur)vrouw moeten hebben! Kostelijk, liefdevol en wijs",
+        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/paul-haenen-margreet-dolman-brengt-warmte"
+      }
+    ]
   },
   {
     "id": "pepijn-schoneveld-welkom-dat-je-luistert",
@@ -3153,7 +3854,21 @@
     "artiesten": [
       "pieter-derks"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Derks brengt zijn politieke voorkeuren in scherpe oneliners, maar wordt sterker en grappiger wanneer hij persoonlijker wordt. Vooral zijn betoog over de aandachtseconomie valt op.",
+        "bron": "https://www.theaterdeveste.nl/programma/ja-leuk-rpnv"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Ja, leuk is opnieuw een goede voorstelling volgens het vertrouwde Pieter Derks-recept, persoonlijk en geëngageerd, vol originele geestigheid.",
+        "bron": "https://www.theaterdeveste.nl/programma/ja-leuk-rpnv"
+      }
+    ]
   },
   {
     "id": "pieter-jouke-en-ronald-snijders-de-staat-van-verwarring",
@@ -3169,7 +3884,21 @@
     "artiesten": [
       "pieter-jouke"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "...Jouke is uitgegroeid tot een alternatief voor Herman Finkers en Kees Torn, taalkunstenaars die momenteel niet op de podia te vinden zijn.’ ‘...zijn associaties zijn geestig en vindingrijk...",
+        "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pieter-jouke/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een indrukwekkend – inderdaad, ernstig – maar zeer geestig programma.",
+        "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pieter-jouke/"
+      }
+    ]
   },
   {
     "id": "pieter-verelst-altijd-aan",
@@ -3177,7 +3906,21 @@
     "artiesten": [
       "pieter-verelst"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "De Standaard",
+        "sterren": 5,
+        "citaat": "Pieter maakt nu eenmaal cabaret als geen ander.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/altijd-aan-pieter-verelst"
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 5,
+        "citaat": "Pieter Verelst bewijst opnieuw tot de strafste cabaretiers van Vlaanderen te behoren: een show die tegelijk bulderlach, chaos en ontroering serveert.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/altijd-aan-pieter-verelst"
+      }
+    ]
   },
   {
     "id": "plien-en-bianca-harrekidee",
@@ -3185,7 +3928,27 @@
     "artiesten": [
       "plien-en-bianca"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Je ziet er serieus vakmanschap vanaf",
+        "bron": "https://www.theaterdeveste.nl/programma/harrekidee-68ky"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "De beste voorstelling van Plien & Bianca in jaren.",
+        "bron": "https://www.theaterdeveste.nl/programma/harrekidee-68ky"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Prachtige variant van de ploeterende antiheld",
+        "bron": "https://www.theaterdeveste.nl/programma/harrekidee-68ky"
+      }
+    ]
   },
   {
     "id": "powerpints-comedy-cafe-comedy-cafe-amsterdam",
@@ -3264,7 +4027,27 @@
     "artiesten": [
       "rayen-panday"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Trouw",
+        "sterren": 3,
+        "citaat": "Rayen Panday is misschien wel de vriendelijkste cabaretier van Nederland.",
+        "bron": "https://www.musisenstadstheater.nl/nl/agenda/rayen-panday-grip/10209"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Met oprechte emotie krijgt hij de zaal aan zijn voeten.",
+        "bron": "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Karma; negentig minuten ambachtelijke en vermakelijke comedy.",
+        "bron": "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy"
+      }
+    ]
   },
   {
     "id": "reece-kidd-1-irishman-in-amsterdam",
@@ -3304,7 +4087,27 @@
     "artiesten": [
       "rene-van-meurs"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Dagblad van het Noorden",
+        "sterren": 4,
+        "citaat": "Sterk verhaal met een lawine aan grappen",
+        "bron": "https://delamar.nl/voorstellingen/rene-van-meurs/"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Noodzakelijk Kwaad barst van de absurde conflicten die steeds grappiger escaleren",
+        "bron": "https://delamar.nl/voorstellingen/rene-van-meurs/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Briljante auto-psychologische thriller als cabaret.",
+        "bron": "https://www.theaterdeveste.nl/programma/noodzakelijk-kwaad-qh5y"
+      }
+    ]
   },
   {
     "id": "renske-kruitbosch-neem-de-tijd",
@@ -3407,7 +4210,27 @@
     "artiesten": [
       "roel-c-verburg"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "Het Financieele Dagblad",
+        "sterren": null,
+        "citaat": "Hij grossiert in absurdistische liedjes vol taalacrobatiek",
+        "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Een aaneenschakeling van slimme observaties, rake grappen en muzikale intermezzo's",
+        "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Roel C. Verburg is een fenomeen op zich",
+        "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
+      }
+    ]
   },
   {
     "id": "roel-c-verburg-southend-comedy-club",
@@ -3422,7 +4245,39 @@
     "artiesten": [
       "roel-en-jos-maalderink"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Een grappige, erg mooie voorstelling",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/roel-jos-maalderink/"
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 4,
+        "citaat": "Verrassend, vernieuwend, puur en vooral ontzettend grappig.",
+        "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "De broers leggen kraakhelder het probleem van politiek en media bloot",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/roel-jos-maalderink/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De Plakshot-broers hebben ook in het theater een hoge gunfactor",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/roel-jos-maalderink/"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Vertrouwde mix van droge humor en maatschappijkritiek",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/roel-jos-maalderink/"
+      }
+    ]
   },
   {
     "id": "rogier-bak-back-to-the-future",
@@ -3438,7 +4293,45 @@
     "artiesten": [
       "ronald-goedemondt"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Scènes",
+        "sterren": 5,
+        "citaat": "Goedemondt is een onweerstaanbare komiek.",
+        "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Mijn lieve achterdocht is naast ontzettend grappig ook psychologisch interessant. (...) ‘Goedemondt uit zijn onvermogen in prachtig geformuleerde zinnen en levert uitmuntend fysiek spel.",
+        "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Geen comedian in Nederland beheerst zijn stem beter dan Goedemondt.",
+        "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Goedemondt is een meester in het vinden van humor in het alledaagse.",
+        "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Ronald Goedemondt overdondert zijn publiek met een tornado aan superieur geacteerde onzin.",
+        "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Goedemondt toont de tekortschietende mens, en laat zien hoe onweerstaanbaar grappig dat kan zijn.",
+        "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+      }
+    ]
   },
   {
     "id": "ronald-snijders-leven-met-humor",
@@ -3511,7 +4404,45 @@
     "artiesten": [
       "ruud-smulders"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Smulders verrast met uitermate gedurfd en intelligent cabaret.",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ruud-smulders-rudsichtslos/"
+      },
+      {
+        "medium": "Scènes",
+        "sterren": 5,
+        "citaat": "Met RÜDSICHTSLOS sluipt Smulders naar de cabarettop",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ruud-smulders-rudsichtslos/"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Knap, hoe comedian Ruud Smulders steeds drie stappen verder is dan zijn publiek.",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ruud-smulders-rudsichtslos/"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Smulders heeft een vertelstijl waarin hij groot geacteerde comedy abrupt laat overgaan in verstilde, persoonlijke ontboezemingen",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ruud-smulders-rudsichtslos/"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Ruud Smulders’ sketch over ChatGPT is een van de beste van het jaar.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rudsichtslos-ruud-smulders"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Smulders maakt indruk met slim en ambitieus programma",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ruud-smulders-rudsichtslos/"
+      }
+    ]
   },
   {
     "id": "said-el-hassnaoui-said-lacht-met-liefde",
@@ -3559,7 +4490,33 @@
     "artiesten": [
       "sara-kroos"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Kroos keert terug met een breekbare én krachtige voorstelling vol goede grappen en sfeervolle liedjes.",
+        "bron": "https://www.theaterdeveste.nl/programma/prikkelarme-kermis-dj5k"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Sara Kroos kan als geen ander licht maken wat zwaar is",
+        "bron": "https://delamar.nl/voorstellingen/sara-kroos/"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 3,
+        "citaat": "Kroos is een heel sterke en natuurlijke verteller",
+        "bron": "https://delamar.nl/voorstellingen/sara-kroos/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Sara Kroos is terug op het cabaretpodium en beter dan ooit",
+        "bron": "https://www.theaterdeveste.nl/programma/prikkelarme-kermis-dj5k"
+      }
+    ]
   },
   {
     "id": "schater-cabaretfestival-schater-cabaretfestival",
@@ -3721,7 +4678,21 @@
     "artiesten": [
       "stefan-hendrikx"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Vooral in zijn fysieke spel is hij op zijn best: precies, trefzeker en overtuigend.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/in-perspectief-stefan-hendrikx"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Hendrikx is een soepele acteur (…) en toont een scala aan grootse gezichtsuitdrukkingen.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/in-perspectief-stefan-hendrikx"
+      }
+    ]
   },
   {
     "id": "stefan-pop-genoeg-over-mij",
@@ -3729,7 +4700,21 @@
     "artiesten": [
       "stefan-pop"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Stefan Pop onderstreept het essentiële belang van comedy in onrustige tijden",
+        "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/stefan-pop/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Pop slaat indrukwekkend alarm over de dictatuur van online algoritmes",
+        "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/stefan-pop/"
+      }
+    ]
   },
   {
     "id": "stel-the-show-goes-on",
@@ -3953,7 +4938,27 @@
     "artiesten": [
       "tim-kroezen"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "Cabaret.nl",
+        "sterren": null,
+        "citaat": "Tims grappen zijn slim, origineel, leuk en doorspekt met zelfspot. Het is een zoektocht naar zijn identiteit, met humor als copingmechanisme",
+        "bron": "https://denieuwekolk.nl/theater/agenda/tim-kroezen"
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Een van Kroezens leuke talenten: snel hardop situaties overanalyseren. … blijkt een prima verteller, lekker beweeglijk en energiek en prettig intelligent.",
+        "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/tim-kroezen/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Met Tim Kroezen dient zich een nieuw natuurtalent aan",
+        "bron": "https://denieuwekolk.nl/theater/agenda/tim-kroezen"
+      }
+    ]
   },
   {
     "id": "timzingt-grijs-reprise",
@@ -4128,7 +5133,27 @@
     "artiesten": [
       "vlamousse"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 5,
+        "citaat": "Een moderne voorstelling, recht voor zijn raap, geen clichés, maar het rauwe verhaal",
+        "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/vlamousse"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Vlamousse trekt weer talloze onweerstaanbaar creatieve scènes en sketches uit de kast. (…) In ‘Het goede voorbeeld’ heeft het duo echt een fijne balans gevonden. Waar Van As ontroerend en ernstig kan zijn, of schunnig, luid en expressief is, trekt Van Bakel aandacht door juist zo min mogelijk te doen.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-goede-voorbeeld-vlamousse"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Raakt precies de juiste snaar.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-goede-voorbeeld-vlamousse"
+      }
+    ]
   },
   {
     "id": "voorstelling-comedy-cafe-amsterdam",
@@ -4174,6 +5199,13 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "theater-zuidplein"
+  },
+  {
+    "id": "vrouwejaars-kleine-komedie",
+    "titel": "Vrouwejaars",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "kleine-komedie"
   },
   {
     "id": "vrouwejaars-leidse-schouwburg",
@@ -4263,7 +5295,21 @@
     "artiesten": [
       "wim-helsen"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "De ultieme nar zijn en toch ontroeren: dat is meesterschap.",
+        "bron": "https://www.theaterdeveste.nl/programma/welkom-ongemak-rpcg"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Wim Helsen weet er een mooie, geestige en gevoelige theatermonoloog van te maken. Hij zet hierbij zijn hele gereedschapskist als theatermaker in: zijn eigenzinnige humor en zijn bijzondere mimiek.",
+        "bron": "https://www.musisenstadstheater.nl/nl/agenda/wim-helsen-be-welkom-ongemak/10176"
+      }
+    ]
   },
   {
     "id": "wina-ricardo-wina-s-wereld",
@@ -4325,7 +5371,39 @@
     "artiesten": [
       "yentl-en-de-boer"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "Hun mooiste, indrukwekkendste voorstelling tot dusver.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer"
+      },
+      {
+        "medium": "Scènes",
+        "sterren": 5,
+        "citaat": "Magisch duo op de kleinkunst-Olympus’ (…) barstensvol hoogtepunten",
+        "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/yentl-de-boer-5j23"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "… geweldige liedjesvoorstelling",
+        "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/yentl-de-boer-5j23"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "…op de toppen van hun kunnen",
+        "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/yentl-de-boer-5j23"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een stroom van mooie, eigenzinnige liedjes met een volstrekt eigen karakter.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer"
+      }
+    ]
   },
   {
     "id": "yora-rienstra-vera-marijt-vrouwejaars-2026",

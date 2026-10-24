@@ -22,7 +22,7 @@
       "genre": "cabaret",
       "datum": "2026-10-24",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/bert-visscher-met-het-noordpool-strijkkwartet-d7hj"
     },
@@ -48,7 +48,7 @@
       "genre": "cabaret",
       "datum": "2026-10-31",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.kampanje.nl/voorstellingen/valentina-toth-try-out-rz9j"
     },
@@ -269,7 +269,7 @@
       "genre": "cabaret",
       "datum": "2027-01-14",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2"
     },
@@ -475,7 +475,7 @@
       "genre": "cabaret",
       "datum": "2027-03-06",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/ricky-risolles-3-1h9z"
     },
@@ -553,7 +553,7 @@
       "genre": "cabaret",
       "datum": "2027-04-09",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/marie-koet-cgxx"
     },
@@ -644,7 +644,7 @@
       "genre": "cabaret",
       "datum": "2027-04-24",
       "tijd": "20:15",
-      "status": "geannuleerd",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/jandino-qyv8"
     },
@@ -791,5 +791,257 @@
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/andries-tunru-stefan-hendrikx-rz5x"
     }
-  ]
+  ],
+  "recensies": {
+    "https://www.kampanje.nl/voorstellingen/martijn-crins-fjm1": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "&lsquo;Hè Fijn is een energiek en erg grappig spervuur aan situaties die Martijn Crins niet helemaal kan overzien...een groot, specifiek talent voor het loslaten van absurde fantasieën op de alledaagse gang.&rsquo;"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een zeer geslaagd programma. Crins heeft de gave om een klein dingetje in het dagelijks leven tot ongekend absurde proporties op te blazen, terwijl het wezenlijk belang van die kleine dingetjes overeind blijft staan. Met Crins hebben we een potentieel grote comedian in huis."
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/valentina-toth-try-out-rz9j": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "&lsquo;Wildbloei&rsquo; is een unieke performance van het megatalent Valentina T&oacute;th&rsquo;"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "&lsquo;Valentina T&oacute;th heeft een perfect debuutprogramma afgeleverd, een frisse wind in kleinkunstland, een wervelwind.&rsquo;"
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "&lsquo;Een overweldigend debuut van cabaretier Valentina T&oacute;th over &lsquo;de hysterische vrouw&rsquo;"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "&lsquo;Karma; negentig minuten ambachtelijke en vermakelijke comedy.&rsquo;"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "&lsquo;Met oprechte emotie krijgt hij de zaal aan zijn voeten.&rsquo;"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "&lsquo;Rayen Panday is misschien wel de vriendelijkste cabaretier van Nederland.&rsquo;"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/marjolijn-van-kooten-zb8v": [
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "&lsquo;Aan mij zal het niet liggen is geen luchtig avondje cabaret, maar een eerlijk en scherpzinnig inkijkje in het hoofd van iemand die de wereld nét iets intenser ervaart. Je lacht, je slikt, je denkt – en je bent dankbaar dat ze dit alles hardop durft te delen.&rsquo;"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "&lsquo;Wat is je meerwaarde in het leven en moet er op je grafsteen? Van Kooten heeft de antwoorden niet. Ze probeert te accepteren wie ze is, met al haar tekortkomingen, en heeft daar een mooie, eerlijke voorstelling over gemaakt.&rsquo;"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/kasper-van-der-laan-5szb": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "De troef van Kasper van der Laan is het samenvallen van zijn fysiek met zijn absurde vondsten"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Na zijn briljante debuut is Kasper van der Laan onstuitbaar op weg een Hele Grote te worden."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Eigenheid is sowieso Van der Laans grote troef"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/de-broers-van-arkel-5skr": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Een goed ingespeeld komisch duo […] dat met hun toneelmatige, theatraal goed uitgedachte voorstelling kan rekenen op de hardste lachmomenten."
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "De leuk acterende broers laten zien dat de beste grappen vaak zitten in ogenschijnlijk kleine dingen."
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/hokjesdenker-jknt": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Wie wil er nou drie uur lang naar Zomergasten kijken? Een half uur Hokjesdenker verzadigt meer."
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc": [
+      {
+        "medium": "Trouw",
+        "sterren": 5,
+        "citaat": "Ontzettend grappig'."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Met andere woorden: je wil direct haar volgende voorstelling zien."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Lisa Ostermann heeft een nogal onweerstaanbaar soort energie."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Opnieuw vindt Lisa Ostermann het perfecte snijvlak tussen humor en ontroering."
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/chris-verlaan-qyxl": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "&ldquo;Het eind van zijn slim geconstrueerde voorstelling is een ontroerende uppercut en een wake-up call ineen.&rdquo;"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "&lsquo;Een grappige, erg mooie voorstelling&rsquo;"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "&lsquo;De Plakshot-broers hebben ook in het theater een hoge gunfactor&rsquo;"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "&lsquo;Vertrouwde mix van droge humor en maatschappijkritiek&rsquo;"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "&lsquo;De broers leggen kraakhelder het probleem van politiek en media bloot.&rsquo;"
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 4,
+        "citaat": "&lsquo;Verrassend, vernieuwend, puur en vooral ontzettend grappig. &rsquo;"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/gavin-reijnders-h679": [
+      {
+        "medium": "De Telegraaf",
+        "sterren": null,
+        "citaat": "De conclusie is dat Reijnders ontwapenend en getalenteerd is"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/rene-van-meurs-reprise-h6c6": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "&ldquo;Briljante auto-psychologische thriller als cabaret&rdquo;"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/daan-van-der-hoeven-qy6j": [
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Er zit precies genoeg bindmiddel tussen de verschillende verhalen, zonder dat Mensenmens geforceerd cabaretesk overkomt. Het is eerder een stand-upsymfonie, waarin ieder woord uit de losse pols lijkt te stromen en waarachtig aanvoelt. Van der Hoeven een talent noemen, zou een belediging zijn.&rdquo;"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/janneke-de-bijl-rz9m": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "&ldquo;Op de liedjes van Janneke de Bijl zou Hans Dorrestijn waarschijnlijk stikjaloers zijn&rdquo;"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/max-van-den-burg-lmrm": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een feest der herkenning in een unieke comedystijl"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Een belofte is opgestaan"
+      },
+      {
+        "medium": "De Stentor",
+        "sterren": null,
+        "citaat": "Max schoffelt heerlijk in een politiek correcte wereld"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/david-van-rosmalen-d7ph": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "David van Rosmalen speelde de Leidse Schouwburg plat met een intelligente mengeling van (woord)grappen, spoken word, pianoliedjes en nederhiphop."
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/ronald-goedemondt-n24b": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "&lsquo;Goedemondt uit zijn onvermogen in prachtig geformuleerde zinnen en levert uitmuntend fysiek spel.&rsquo;"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "&lsquo;Goedemondt is een meester in het vinden van humor in het alledaagse.&rsquo;"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "&lsquo;Ronald Goedemondt overdondert zijn publiek met een tornado aan superieur geacteerde onzin.&rsquo;"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/luuk-weggemans-br3z": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Weggemans lijkt overal grappen over te kunnen maken. Hij bespeelt de zaal, gaat in op de actualiteit van de avond en schakelt moeiteloos van een mooi gezongen lied naar een kwartier grappen, grollen en publieksinteractie."
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/oscar-smit-tl6x": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "&lsquo; Tussen de vele grappen door, weet Smit raak politiek commentaar te leveren.&rsquo;"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "&lsquo;De onbetwiste winnaar van Cameretten.&rsquo;"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/andries-tunru-stefan-hendrikx-rz5x": [
+      {
+        "medium": "I Love Theater",
+        "sterren": 5,
+        "citaat": "Pijnlijke kaken van het lachen!"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Voor Hendrikx en Tunru bestaat er geen alledaagsheid. Ze kijken naar de wereld door een bril van soapseries, misdaadthrillers en musicals."
+      }
+    ]
+  }
 }
