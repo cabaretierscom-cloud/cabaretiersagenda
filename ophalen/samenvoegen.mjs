@@ -12,6 +12,7 @@ import { fileURLToPath } from "node:url";
 import { slug, netteHoofdletters, netteNaam } from "./lib/normaliseer.mjs";
 import { KLEUREN, GENRES } from "../src/data.mjs";
 import { recensie } from "./lib/recensies.mjs";
+import { artiestOfTitel, isBekend } from "./lib/artiesten.mjs";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const dataDir = join(root, "data");
@@ -169,10 +170,21 @@ for (const f of bronFiles) {
       titel: netteHoofdletters(String(bronRecord.titel || "")
         .replace(/\s*[(\[]\s*(reprise|try[ -]?out|premi[eè]re|derni[eè]re|herneming)\s*[)\]]\s*$/i, "")
         .replace(/\s+[-–|]\s*(reprise|try[ -]?out|premi[eè]re|derni[eè]re|herneming)\s*$/i, "")
-        .replace(/\.$/, "").trim()) || bronRecord.titel,
+        .replace(/\.$/, "").replace(/^speelt\s+/i, "").trim()) || bronRecord.titel,
       soort: bronRecord.soort ?? (/\b(herneming|reprise)\b/i.test(bronRecord.titel || "") ? "reprise" : null),
       artiesten: opgeschoondeArtiesten(bronRecord.artiesten || []),
     };
+    // Nog eens kijken of artiest en titel omgedraaid zijn, nu met alle artiesten uit alle bronnen
+    // ("CabaRock De Liefde!" / "Jim de Groot & Sebas Wolfensberger").
+    if (bronRecord.artiesten?.length === 1) {
+      const { artiest, titel } = artiestOfTitel(bronRecord.artiesten[0], r.titel);
+      if (artiest !== bronRecord.artiesten[0]) { r.titel = titel; r.artiesten = opgeschoondeArtiesten([artiest]); }
+    }
+    // "Eigenlijk" / "Viggo Waas, Eddie B. Wahr & Kees van der Vooren": een namenlijst als titel en een
+    // onbekende "artiest" (of één los woord) zijn omgedraaid.
+    if (r.artiesten.length === 1 && (!isBekend(r.artiesten[0]) || !/\s/.test(r.artiesten[0])) && /^[^,]+(, [^,]+)+ (&|en) [^,]+$/.test(r.titel)) {
+      [r.titel, r.artiesten] = [r.artiesten[0], opgeschoondeArtiesten([r.titel])];
+    }
     // Een rolverdeling als titel ("Paul de Leeuw, Annick Boer e.a.") betekent: de "artiest" is de titel.
     if (r.artiesten.length === 1 && /(,.*,|\be\.a\.?$|\bea$)/i.test(r.titel)) {
       r.titel = r.artiesten[0];

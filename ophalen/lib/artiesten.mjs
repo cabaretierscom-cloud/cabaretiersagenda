@@ -3,8 +3,12 @@
 import { readFileSync } from "node:fs";
 import { slug } from "./normaliseer.mjs";
 
-const bekend = new Set(JSON.parse(readFileSync(new URL("../../data/artiesten.json", import.meta.url), "utf8"))
-  .flatMap((a) => [a.naam, ...(a.ookBekendAls || [])]).map(slug));
+// Ook de schrijfwijzen uit aliassen.json ("Najib & Roué") tellen als bekende artiest.
+const lees = (f) => JSON.parse(readFileSync(new URL(`../../data/${f}`, import.meta.url), "utf8"));
+const bekend = new Set([...lees("artiesten.json").flatMap((a) => [a.naam, ...(a.ookBekendAls || [])]), ...Object.keys(lees("aliassen.json"))].map(slug));
+
+// Artiesten die pas bij het samenvoegen bijkomen, ook herkennen.
+export const maakBekend = (naam) => bekend.add(slug(naam));
 
 export const isBekend = (naam) => Boolean(naam) && bekend.has(slug(naam));
 

@@ -104,6 +104,14 @@
     "website": null
   },
   {
+    "id": "castellum",
+    "naam": "Castellum",
+    "plaats": "Alphen aan den Rijn",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://castellum.nl"
+  },
+  {
     "id": "parkvilla",
     "naam": "Parkvilla",
     "plaats": "Alphen aan den Rijn",
@@ -232,12 +240,36 @@
     "website": "https://www.kampanje.nl"
   },
   {
+    "id": "amphion",
+    "naam": "Amphion",
+    "plaats": "Doetinchem",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.amphion.nl"
+  },
+  {
+    "id": "kunstmin",
+    "naam": "Kunstmin",
+    "plaats": "Dordrecht",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.kunstmin.nl"
+  },
+  {
     "id": "schouwburg-de-lawei",
     "naam": "Schouwburg De Lawei",
     "plaats": "Drachten",
     "land": "NL",
     "soort": "theater",
     "website": "https://www.lawei.nl"
+  },
+  {
+    "id": "cultura-ede",
+    "naam": "Cultura",
+    "plaats": "Ede",
+    "land": "NL",
+    "soort": "cultuurcentrum",
+    "website": "https://cultura-ede.nl"
   },
   {
     "id": "parktheater-eindhoven",
@@ -270,6 +302,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.wilminktheater.nl"
+  },
+  {
+    "id": "goudse-schouwburg",
+    "naam": "Goudse Schouwburg",
+    "plaats": "Gouda",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://goudseschouwburg.nl"
   },
   {
     "id": "a-theater-groningen",
@@ -320,12 +360,60 @@
     "website": null
   },
   {
+    "id": "theater-heerlen",
+    "naam": "Theater Heerlen",
+    "plaats": "Heerlen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.plt.nl"
+  },
+  {
+    "id": "theater-het-speelhuis",
+    "naam": "Theater Het Speelhuis",
+    "plaats": "Helmond",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://theaterspeelhuis.nl"
+  },
+  {
+    "id": "schouwburg-hengelo",
+    "naam": "Schouwburg Hengelo",
+    "plaats": "Hengelo",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.schouwburghengelo.nl"
+  },
+  {
     "id": "cpunt",
     "naam": "Cpunt",
     "plaats": "Hoofddorp",
     "land": "NL",
     "soort": "theater",
     "website": "https://www.cpunt.nl"
+  },
+  {
+    "id": "schouwburg-het-park",
+    "naam": "Schouwburg Het Park",
+    "plaats": "Hoorn",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://hetpark.nl"
+  },
+  {
+    "id": "theater-het-pakhuis",
+    "naam": "Theater Het Pakhuis",
+    "plaats": "Hoorn",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://hetpark.nl"
+  },
+  {
+    "id": "theater-kerkrade",
+    "naam": "Theater Kerkrade",
+    "plaats": "Kerkrade",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.plt.nl"
   },
   {
     "id": "de-harmonie",
@@ -464,6 +552,22 @@
     "website": "https://theateraandeschie.nl"
   },
   {
+    "id": "theater-sittard",
+    "naam": "Theater Sittard",
+    "plaats": "Sittard",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.plt.nl"
+  },
+  {
+    "id": "theater-de-stoep",
+    "naam": "Theater de Stoep",
+    "plaats": "Spijkenisse",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://theaterdestoep.nl"
+  },
+  {
     "id": "concertzaal-tilburg",
     "naam": "Concertzaal Tilburg",
     "plaats": "Tilburg",
@@ -510,6 +614,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.schouwburgvenray.nl"
+  },
+  {
+    "id": "stadsgehoorzaal-vlaardingen",
+    "naam": "Stadsgehoorzaal Vlaardingen",
+    "plaats": "Vlaardingen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://stadsgehoorzaal.nl"
   },
   {
     "id": "zaantheater",

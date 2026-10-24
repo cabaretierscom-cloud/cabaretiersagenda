@@ -1,0 +1,1640 @@
+{
+  "bron": "plt",
+  "naam": "PLT (Parkstad Limburg Theaters)",
+  "opgehaald": "2026-10-24",
+  "theaters": [
+    {
+      "id": "theater-heerlen",
+      "naam": "Theater Heerlen",
+      "plaats": "Heerlen",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.plt.nl"
+    },
+    {
+      "id": "theater-sittard",
+      "naam": "Theater Sittard",
+      "plaats": "Sittard",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.plt.nl"
+    },
+    {
+      "id": "theater-kerkrade",
+      "naam": "Theater Kerkrade",
+      "plaats": "Kerkrade",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.plt.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk eventueel de dag",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/janneke-de-bijl-pluk-eventueel-de-dag/27-11-2026-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Jimmy Carr"
+      ],
+      "titel": "Laughs Funny",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jimmy-carr-laughs-funny/12-12-2026-19-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Jimmy Carr"
+      ],
+      "titel": "Laughs Funny",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jimmy-carr-laughs-funny/12-12-2026-22-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconferentie",
+      "genre": "oudejaarsconference",
+      "datum": "2026-10-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/guido-weijers-oudejaarsconference/28-10-2026-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/guido-weijers-oudejaarsconference/09-11-2026-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/richard-groenendijk-gelukkig-heb-je-mij-nog/05-03-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/claudia-de-breij-oudejaarsconference-2026/28-12-2026-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "Oudejaarsconference 2026 - TV-opnames",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/claudia-de-breij-oudejaarsconference-2026/29-12-2026-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "Oudejaarsconference 2026 - TV-Opnames",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/claudia-de-breij-oudejaarsconference-2026/30-12-2026-20-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/merijn-scholten-lemming-reprise/12-11-2026-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-04-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/kasper-van-der-laan-ruim/06-04-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/rené-van-meurs-noodzakelijk-kwaad/06-11-2026-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/marie-koet-eindspel/01-04-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-01-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/christel-de-laat-kende-da/12-01-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/christel-de-laat-kende-da/13-01-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/christel-de-laat-kende-da/14-01-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/ronald-goedemondt-mijn-lieve-achterdocht-reprise/19-02-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/ronald-goedemondt-mijn-lieve-achterdocht-reprise/21-01-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Firma Lampo"
+      ],
+      "titel": "Doeve van Stonehenge",
+      "genre": "cabaret",
+      "datum": "2027-10-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/firma-lampo-doeve-van-stonehenge/23-10-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Hé Fijn",
+      "genre": "cabaret",
+      "datum": "2026-11-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/martijn-crins-hé-fijn-reprise/03-11-2026-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "De Limburgse BuutteCup"
+      ],
+      "titel": "Stichting Buutte Cultuur Limburg",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-limburgse-buuttecup/05-11-2026-20-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Cabarestafette"
+      ],
+      "titel": "Cabarestafette presenteert: NIEUW GELUID!",
+      "genre": "stand-up",
+      "datum": "2026-11-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/cabarestafette-cabarestafette-presenteert-nieuw-geluid/05-11-2026-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Arnout van den Bossche"
+      ],
+      "titel": "Coach",
+      "genre": "cabaret",
+      "datum": "2026-11-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/arnout-van-den-bossche-be-coach-reprise/08-11-2026-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een Snotje",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.plt.nl/programma/kim-karssen-god-is-een-snotje-try-out/12-11-2026-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [],
+      "titel": "Knock Out Comedy Crew",
+      "genre": "stand-up",
+      "datum": "2026-11-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/knock-out-comedy-crew-/13-11-2026-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [],
+      "titel": "Knock Out Comedy Crew",
+      "genre": "stand-up",
+      "datum": "2027-05-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/knock-out-comedy-crew-/12-05-2027-20-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Roel en Jos Maalderink"
+      ],
+      "titel": "Verbroedering",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/roel-en-jos-maalderink/19-11-2026-20-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow",
+      "genre": "cabaret",
+      "datum": "2026-11-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jandino-de-grote-jubileumshow/30-11-2026-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow",
+      "genre": "cabaret",
+      "datum": "2027-02-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jandino-de-grote-jubileumshow/16-02-2027-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [],
+      "titel": "Vrouwejaars 2026",
+      "genre": "stand-up",
+      "datum": "2026-12-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/vrouwejaars-2026-/03-12-2026-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/joosen-en-de-jager-niks-aan-het-handje/10-12-2026-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Berit Companjen"
+      ],
+      "titel": "Zei ik dat Hardop?",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/berit-companjen-zei-ik-dat-hardop/11-12-2026-20-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Clara Zoerbier / Jack Vinders"
+      ],
+      "titel": "Clara’s Krismes",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/clara-zoerbier-jack-vinders/17-12-2026-20-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Clara Zoerbier / Jack Vinders"
+      ],
+      "titel": "Clara’s Krismes",
+      "genre": "cabaret",
+      "datum": "2026-12-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/clara-zoerbier-jack-vinders/18-12-2026-20-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Clara Zoerbier / Jack Vinders"
+      ],
+      "titel": "Clara’s Krismes",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/clara-zoerbier-jack-vinders/19-12-2026-20-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Clara Zoerbier / Jack Vinders"
+      ],
+      "titel": "Clara’s Krismes",
+      "genre": "cabaret",
+      "datum": "2026-12-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/clara-zoerbier-jack-vinders/20-12-2026-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Luuk Ransijn"
+      ],
+      "titel": "Uitkijk",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/luuk-ransijn-uitkijk/17-12-2026-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Kamagurka"
+      ],
+      "titel": "Op zekere dag",
+      "genre": "cabaret",
+      "datum": "2026-12-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/kamagurka-op-zekere-dag/18-12-2026-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Comedy Festival Limburg"
+      ],
+      "titel": "Oudejaarsconference",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/comedy-festival-limburg-oudejaarsconference/19-12-2026-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [],
+      "titel": "Het Parkstad Limburg Sterreheim Buuttegala",
+      "genre": "cabaret",
+      "datum": "2027-01-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-parkstad-limburg-sterreheim-buuttegala/06-01-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Jörgen Raymann"
+      ],
+      "titel": "BIGI YARI - Welkom thuis, waar niemand op je zit te wachten",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/jorgen-raymann-big-yari-reprise/07-01-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "De Cabaret Club"
+      ],
+      "titel": "Vier korte cabaretvoorstellingen",
+      "genre": "stand-up",
+      "datum": "2027-01-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-cabaret-club/09-01-2027-20-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Medammecour on tour!"
+      ],
+      "titel": "jubileumfeest: 11 X Medammecour",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/medammecour-on-tour-2027/14-01-2027-20-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Medammecour on tour!"
+      ],
+      "titel": "jubileumfeest: 11 X Medammecour",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/medammecour-on-tour-2027/15-01-2027-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Medammecour on tour!"
+      ],
+      "titel": "jubileumfeest: 11 X Medammecour",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/medammecour-on-tour-2027/23-01-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Medammecour on tour!"
+      ],
+      "titel": "jubileumfeest: 11 X Medammecour",
+      "genre": "cabaret",
+      "datum": "2027-01-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/medammecour-on-tour-2027/26-01-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Medammecour on tour!"
+      ],
+      "titel": "jubileumfeest: 11 X Medammecour",
+      "genre": "cabaret",
+      "datum": "2027-01-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/medammecour-on-tour-2027/27-01-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Medammecour on tour!"
+      ],
+      "titel": "jubileumfeest: 11 X Medammecour",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/medammecour-on-tour-2027/28-01-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Medammecour on tour!"
+      ],
+      "titel": "jubileumfeest: 11 X Medammecour",
+      "genre": "cabaret",
+      "datum": "2027-01-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/medammecour-on-tour-2027/25-01-2027-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Buğra Gedik"
+      ],
+      "titel": "Ğelukkig Ğeboren",
+      "genre": "stand-up",
+      "datum": "2027-01-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/buğra-gedik-ğelukkig-ğeboren/15-01-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Alex Agnew"
+      ],
+      "titel": "No More Heroes",
+      "genre": "stand-up",
+      "datum": "2027-01-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/alex-agnew-be-no-more-heroes/16-01-2027-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [],
+      "titel": "Het Sittards KampsVanBaar Buuttegala",
+      "genre": "cabaret",
+      "datum": "2027-01-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-sittards-kampsvanbaar-buuttegala-/20-01-2027-20-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "De Baas",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/lisa-ostermann-de-baas/23-01-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Anne & Bas"
+      ],
+      "titel": "De Natte Dromen Revue",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/anne-bas-de-natte-dromen-revue/28-01-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Ta Joela"
+      ],
+      "titel": "Je hebt geen idee",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/ta-joela-je-hebt-geen-idee/29-01-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "De Moppenkoning"
+      ],
+      "titel": "Sven De Ridder, Fokke van der Meulen & een verrassende gast (BE)",
+      "genre": "cabaret",
+      "datum": "2027-01-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-moppenkoning/30-01-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/van-der-laan-woe-dinsdagmiddag/03-02-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/van-der-laan-woe-dinsdagmiddag/04-02-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/david-van-rosmalen-als-ik-jou-was/04-02-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/lebbis-satan-is-moe/11-02-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.plt.nl/programma/jay-francis-tunnelvisie/18-02-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.plt.nl/programma/jay-francis-tunnelvisie/19-02-2027-20-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jay-francis-tunnelvisie/14-05-2027-20-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-05-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jay-francis-tunnelvisie/15-05-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Joey & Dave"
+      ],
+      "titel": "Houden het luchtig..",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/joey-dave/18-02-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Ricky Risolles 3"
+      ],
+      "titel": "Niet zo indiscreet..",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/ricky-risolles-3/19-02-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Saïd El Hassnaoui"
+      ],
+      "titel": "Saïd lacht met liefde",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/saïd-el-hassnaoui/25-02-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2027-02-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/remko-vrijdag-marko-maandag/26-02-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Chris Verlaan"
+      ],
+      "titel": "Ach, er komen geen kindjes van",
+      "genre": "cabaret",
+      "datum": "2027-02-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/chris-verlaan/26-02-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [],
+      "titel": "Arie & Silvester breken de tent af!",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/arie-silvester-breken-de-tent-af--/27-02-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Thom Gerrits"
+      ],
+      "titel": "Alleen Vanavond",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/thom-gerrits-alleen-vanavond/04-03-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Teun van den Elzen"
+      ],
+      "titel": "Ze moesten eens weten",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.plt.nl/programma/teun-van-den-elzen/05-03-2027-20-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Tis Hier Geen Hotel 3"
+      ],
+      "titel": "Hanneke Drenth en Dianne Liesker",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/tis-hier-geen-hotel-3/06-03-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/wina-ricardo-winas-wereld/11-03-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/martijn-koning-overprikkeld/17-03-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Huub Smit & Gürkan Küçüksentürk"
+      ],
+      "titel": "Zei je dat echt?",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/huub-smit-gürkan-küçüksentürk-zei-je-dat-echt/18-03-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Comedy Festival Limburg"
+      ],
+      "titel": "De Finale",
+      "genre": "stand-up",
+      "datum": "2027-03-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/comedy-festival-limburg-de-finale-3/19-03-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/bob-koomen-peer/25-03-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z'n scherpst",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/rob-scheepers-scheepers-op-zn-scherpst-reprise/02-04-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z'n scherpst (reprise) - met tolk NGT",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/rob-scheepers-scheepers-op-zn-scherpst-reprise/03-04-2027-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Eigenlijk"
+      ],
+      "titel": "Viggo Waas, Eddie B. Wahr & Kees van der Vooren",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.plt.nl/programma/viggo-waas-eddie-b.-wahr-kees-van-der-vooren-eigenlijk-try-out/02-04-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Kees Prins"
+      ],
+      "titel": "Yesterday",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/kees-prins-yesterday/08-04-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Christian van Eijkelenburg"
+      ],
+      "titel": "Small Talk",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/christian-van-eijkelenburg-small-talk/08-04-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Spruijt & Opperman"
+      ],
+      "titel": "Altijdloos",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/spruijt-opperman-altijdloos/09-04-2027-20-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-04-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/esther-van-der-voort-mama-is-boos/10-04-2027-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Tineke Schouten"
+      ],
+      "titel": "Femme Vitaal",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/tineke-schouten-femme-vitaal-reprise/15-04-2027-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Tineke Schouten"
+      ],
+      "titel": "Femme Vitaal",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/tineke-schouten-femme-vitaal-reprise/16-04-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Roger Lataster & Raymond Clement"
+      ],
+      "titel": "Première (De graaf van Swalpenziële)",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://www.plt.nl/programma/roger-lataster-raymond-clement-/15-04-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Roger Lataster & Raymond Clement"
+      ],
+      "titel": "Première (De graaf van Swalpenziële)",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://www.plt.nl/programma/roger-lataster-raymond-clement-/16-04-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000,-",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/oscar-smit-472.000-/15-04-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Steven Brunswijk"
+      ],
+      "titel": "Navigatie is stuk",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/steven-brunswijk-navigatie-is-stuk-reprise/16-04-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Robrecht Vanden Thoren"
+      ],
+      "titel": "Ten minste houdbaar tot",
+      "genre": "cabaret",
+      "datum": "2027-04-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/robrecht-vanden-thoren-/20-04-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Cyrille Niël"
+      ],
+      "titel": "Luchtig Bekeeke",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.plt.nl/programma/cyrille-niel-luchtig-bekeeke/22-04-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Cyrille Niël"
+      ],
+      "titel": "Luchtig Bekeeke",
+      "genre": "cabaret",
+      "datum": "2027-04-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.plt.nl/programma/cyrille-niel-luchtig-bekeeke/30-04-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Cyrille Niël"
+      ],
+      "titel": "Luchtig Bekeeke",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/cyrille-niel-luchtig-bekeeke/13-05-2027-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Cyrille Niël"
+      ],
+      "titel": "Luchtig Bekeeke",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/cyrille-niel-luchtig-bekeeke/14-05-2027-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Kim Schuddeboom"
+      ],
+      "titel": "Hardleers",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/kim-schuddeboom-hardleers/22-04-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Yannick Noben"
+      ],
+      "titel": "Geef Acht + 2",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/yannick-noben-geef-acht/24-04-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-broers-van-arkel-zeg-maar-u/29-04-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Jawad Es Soufi"
+      ],
+      "titel": "Tnawies",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jawad-es-soufi-tnawies/29-04-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "stand-up",
+      "datum": "2027-04-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/nabil-daar-is-hij-weer/30-04-2027-20-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "stand-up",
+      "datum": "2027-05-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/roué-verveer-vanzelfsprekend/01-05-2027-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Thijs Kemperink"
+      ],
+      "titel": "Tot het uiterste gedreven",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/thijs-kemperink-/14-05-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/rundfunk-wagyu/20-05-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/luuk-weggemans-/21-05-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Stefan de Kogel"
+      ],
+      "titel": "Sloopkogel",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/stefan-de-kogel-sloopkogel/21-05-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Finalistentournee 60e editie",
+      "genre": "stand-up",
+      "datum": "2027-05-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/cameretten-finalistentournee-60e-editie/25-05-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Maartje Mikx"
+      ],
+      "titel": "Ze vraagt er om",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.plt.nl/programma/maartje-mikx-/27-05-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Johnny Trash"
+      ],
+      "titel": "Johnny Trash' tweede jeugd",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/johnny-trash-/27-05-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-06-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/klaas-van-der-eerden-imperfect/02-06-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Deng Boy"
+      ],
+      "titel": "Double Trouble",
+      "genre": "cabaret",
+      "datum": "2027-06-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/deng-boy-double-trouble/03-06-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-06-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/andries-tunru-ravot/10-06-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-06-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/van-vleuten-en-van-muiswinkel-alles-onder-controle/16-06-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Baas & Adriani"
+      ],
+      "titel": "De leukste cabaretvoorstelling 2027",
+      "genre": "cabaret",
+      "datum": "2027-06-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/baas-adriani-de-leukste-cabaretvoorstelling-2027/17-06-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Bro's"
+      ],
+      "titel": "Bromens",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/bros-bromens-/18-11-2026-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Ice"
+      ],
+      "titel": "Live in Theater",
+      "genre": "stand-up",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/ice-live-in-theater-reprise/20-11-2026-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Jeroen Leenders"
+      ],
+      "titel": "Heiden",
+      "genre": "stand-up",
+      "datum": "2027-05-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jeroen-leenders-heiden/13-05-2027-20-30"
+    }
+  ],
+  "recensies": {
+    "https://www.plt.nl/programma/janneke-de-bijl-pluk-eventueel-de-dag/27-11-2026-20-30": [
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Janneke vindt het leven objectief gezien een slecht concept. In feite zit je toch opgesloten in een lichaam dat op weg is naar de afgrond. Ze heeft dan ook een hoop suggesties ter verbetering. En omdat ze atheïst is, richt ze zich daarmee het liefst tot jullie. In Pluk eventueel de dag is ‘De Bijl’ flink op dreef met scherpe stand-up, persoonlijke ontboezemingen en herkenbare observaties. Ze benoemt datgene waarvan je niet eens wist dat je het dácht. Daarbij is ze nooit grof, maar wel nietsontziend. “Hartverscheurend en hilarisch tegelijk."
+      }
+    ],
+    "https://www.plt.nl/programma/claudia-de-breij-oudejaarsconference-2026/28-12-2026-20-00": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "5 van 5 sterren"
+      }
+    ],
+    "https://www.plt.nl/programma/claudia-de-breij-oudejaarsconference-2026/29-12-2026-20-00": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "5 van 5 sterren"
+      }
+    ],
+    "https://www.plt.nl/programma/claudia-de-breij-oudejaarsconference-2026/30-12-2026-20-00": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "5 van 5 sterren"
+      }
+    ],
+    "https://www.plt.nl/programma/rené-van-meurs-noodzakelijk-kwaad/06-11-2026-20-00": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "4 van 5 sterren"
+      },
+      {
+        "medium": "Dagblad van het Noorden",
+        "sterren": null,
+        "citaat": "4 van 5 sterren"
+      }
+    ],
+    "https://www.plt.nl/programma/ronald-goedemondt-mijn-lieve-achterdocht-reprise/19-02-2027-20-00": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "4 van 5 sterren"
+      },
+      {
+        "medium": "Scènes",
+        "sterren": null,
+        "citaat": "5 van 5 sterren"
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "4 van 5 sterren"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "4 van 5 sterren"
+      }
+    ],
+    "https://www.plt.nl/programma/ronald-goedemondt-mijn-lieve-achterdocht-reprise/21-01-2027-20-00": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "4 van 5 sterren"
+      },
+      {
+        "medium": "Scènes",
+        "sterren": null,
+        "citaat": "5 van 5 sterren"
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "4 van 5 sterren"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "4 van 5 sterren"
+      }
+    ],
+    "https://www.plt.nl/programma/martijn-crins-hé-fijn-reprise/03-11-2026-20-30": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "4 van 5 sterren"
+      },
+      {
+        "medium": "De Limburger",
+        "sterren": null,
+        "citaat": "4 van 5 sterren"
+      }
+    ]
+  }
+}

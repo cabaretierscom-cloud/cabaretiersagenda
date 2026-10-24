@@ -1,0 +1,427 @@
+{
+  "bron": "vlaardingen",
+  "naam": "Stadsgehoorzaal Vlaardingen",
+  "opgehaald": "2026-10-24",
+  "theaters": [
+    {
+      "id": "stadsgehoorzaal-vlaardingen",
+      "naam": "Stadsgehoorzaal Vlaardingen",
+      "plaats": "Vlaardingen",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://stadsgehoorzaal.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/jandino"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Teun van den Elzen"
+      ],
+      "titel": "Ze moesten eens weten",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://stadsgehoorzaal.nl/programma/teun-van-den-elzen-26-3-27"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Greg Shapiro"
+      ],
+      "titel": "KING ME | 250 years of Donald Trump",
+      "genre": "cabaret",
+      "datum": "2026-11-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/greg-shapiro"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "Juk",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/jeroens-clan"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Janice Blok"
+      ],
+      "titel": "Had je kenne weten",
+      "genre": "cabaret",
+      "datum": "2027-06-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/janice-blok"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "De Cabaret Club"
+      ],
+      "titel": "Vier korte cabaretvoorstellingen",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-cabaret-club"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/marie-koet"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-broers-van-arkel"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Is het leven al begonnen?",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/fabian-franciscus"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Berit Companjen"
+      ],
+      "titel": "Zei ik dat hardop?",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/berit-companjen"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/freek-de-jonge"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Ricky Koole"
+      ],
+      "titel": "Rare leeftijd",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/ricky-koole"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://stadsgehoorzaal.nl/programma/valentina-toth"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-03-09",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/richard-groenendijk"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-03-10",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/richard-groenendijk"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/wina-ricardo"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Jochen Otten"
+      ],
+      "titel": "De Kwaadste niet",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/jochen-otten"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Juliet"
+      ],
+      "titel": "Ik Beloof Je Eeuwige Twijfel",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/juliet"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Roel en Jos Maalderink"
+      ],
+      "titel": "Verbroedering",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/roel-en-jos-maalderink"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://stadsgehoorzaal.nl/programma/peter-pannekoek"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Ricky Risolles"
+      ],
+      "titel": "Niet Zo Indiscreet..",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/ricky-risolles"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/remko-vrijdag"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Bro's"
+      ],
+      "titel": "Bromens",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/bros"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/david-van-rosmalen"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Maddie Venema",
+        "Daan Fares"
+      ],
+      "titel": "Duoprogramma Podium Putman",
+      "genre": "cabaret",
+      "datum": "2026-10-25",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/duoprogramma-podium-putman-25-10-26"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Khalid Alterch"
+      ],
+      "titel": "Live in Theater",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/ice-15-1-27"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "DE MEIDEN van Toen"
+      ],
+      "titel": "Naar de getver",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-meiden-van-toen"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Anne & Bas"
+      ],
+      "titel": "De Natte Dromen Revue",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/anne-bas"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Anouscha Fajdiga",
+        "Fiep Mulderije"
+      ],
+      "titel": "Duoprogramma Podium Putman",
+      "genre": "kleinkunst",
+      "datum": "2027-06-06",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/duoprogramma-podium-putman-6-6-27"
+    }
+  ],
+  "recensies": {
+    "https://stadsgehoorzaal.nl/programma/jeroens-clan": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De sleutel voor deze cabaretvorm is beslist niet dat het drietal grofgebekt is, zoals recensies keer op keer beweren, maar dat Tuns, Kroon en De Poorter op intelligente manier spelen met ironie."
+      },
+      {
+        "medium": "De Telegraaf",
+        "sterren": null,
+        "citaat": "Jeroens Clan mag een sensatie worden genoemd."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Keihard cabaret van drie kwetsbare mannen."
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Het drietal valt op met scherpe en grappige dialogen."
+      }
+    ],
+    "https://stadsgehoorzaal.nl/programma/bros": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "In de pers + &minus; “Lekker abstract, absurd en brutaal."
+      }
+    ]
+  }
+}

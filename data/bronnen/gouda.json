@@ -1,0 +1,1041 @@
+{
+  "bron": "gouda",
+  "naam": "Goudse Schouwburg",
+  "opgehaald": "2026-10-24",
+  "theaters": [
+    {
+      "id": "goudse-schouwburg",
+      "naam": "Goudse Schouwburg",
+      "plaats": "Gouda",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://goudseschouwburg.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Yentl & de Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "cabaret",
+      "datum": "2026-10-28",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://goudseschouwburg.nl/agenda/yentl-de-boer-rekhalzen-reprise-10025673/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Iris Rulkens"
+      ],
+      "titel": "Van harte!",
+      "genre": "cabaret",
+      "datum": "2026-10-28",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://goudseschouwburg.nl/agenda/iris-rulkens-van-harte-try-out-10025588/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Ricky Koole"
+      ],
+      "titel": "Rare leeftijd",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/ricky-koole-rare-leeftijd-10025258/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "Striptease van de dood",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://goudseschouwburg.nl/agenda/david-linszen-striptease-van-de-dood-reprise-10025495/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-10",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/guido-weijers-oudejaarsconference-2026-10024567/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/dolf-jansen-schaamteloos-10025218/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Club",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-club-10025960/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "De nogal hyperbijzondere Goudse Oudejaars-improvisatie-extravaganza 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/andries-tunru-stefan-hendrikx-10025465/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Pieter Derks"
+      ],
+      "titel": "Ja, leuk",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://goudseschouwburg.nl/agenda/pieter-derks-ja-leuk-reprise-10025219/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2026-11-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://goudseschouwburg.nl/agenda/patrick-laureij-kintsugi-reprise-10025496/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://goudseschouwburg.nl/agenda/patrick-laureij-kintsugi-reprise-10025497/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2026-11-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/remko-vrijdag-marko-maandag-10025592/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Myrte Siebinga"
+      ],
+      "titel": "Gelukkig Maar",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/myrte-siebinga-gelukkig-maar-10009327/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Najib & Roué – Alles is comedy",
+      "genre": "cabaret",
+      "datum": "2026-12-08",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/najib-roue-alles-is-comedy-10025552/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Vrouwejaars"
+      ],
+      "titel": "Yora Rienstra e.a",
+      "genre": "cabaret",
+      "datum": "2026-12-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/vrouwejaars-10025681/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Sjaak Bral"
+      ],
+      "titel": "Vaarwel 2026",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/sjaak-bral-vaarwel-2026-10025261/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Rayen Panday & friends"
+      ],
+      "titel": "Wonderful Christmastime",
+      "genre": "cabaret",
+      "datum": "2026-12-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/rayen-panday-friends-wonderful-christmastime-10025538/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Joep van Deudekom & Rob Urgert"
+      ],
+      "titel": "De Grote Oudejaars Kwis 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/joep-van-deudekom-rob-urgert-10025222/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Night in Cinema Gouda",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-night-in-cinema-gouda-3/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Club",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-club-10025962/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/bob-koomen-peer-10025543/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/kasper-van-der-laan-ruim-10025501/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/kasper-van-der-laan-ruim-10025502/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/jandino-de-grote-jubileumshow-10025263/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "André Manuel"
+      ],
+      "titel": "De eenzame ziel",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/andre-manuel-de-eenzame-ziel-10025498/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-01-19",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/richard-groenendijk-gelukkig-heb-je-mij-nog-10025188/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-01-20",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/richard-groenendijk-gelukkig-heb-je-mij-nog-10025181/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom ongemak",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/wim-helsen-welkom-ongemak-10025508/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Night in Cinema Gouda",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-night-in-cinema-gouda-4/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2027-01-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/de-broers-van-arkel-zeg-maar-u-10025731/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Kamagurka"
+      ],
+      "titel": "Op zekere dag",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/kamagurka-op-zekere-dag-10025509/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/jan-beuving-dekpunt-10025530/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/joosen-en-de-jager-niks-aan-het-handje-10025264/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/freek-de-jonge-wisten-wij-veel-10025265/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/lebbis-satan-is-moe-10025510/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Max van den Burg"
+      ],
+      "titel": "Maxikozi",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/max-van-den-burg-maxikozi-10025488/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Night in Cinema Gouda",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-night-in-cinema-gouda-5/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "De Cabaret Club",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/de-cabaret-club-10025545/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/david-van-rosmalen-als-ik-jou-was-10025595/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Renske van Dijk"
+      ],
+      "titel": "Kankerwijf",
+      "genre": "cabaret",
+      "datum": "2027-02-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/renske-van-dijk-kankerwijf-10040028/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Club",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-club-10025963/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Luuk Ransijn"
+      ],
+      "titel": "Uitkijk",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/luuk-ransijn-uitkijk-10025489/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/valentina-toth-revue-revanche-10025674/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Leids Cabaret Festival",
+      "genre": "cabaret",
+      "datum": "2027-03-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/leids-cabaret-festival-10025511/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Leids Cabaret Festival",
+      "genre": "cabaret",
+      "datum": "2027-03-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/leids-cabaret-festival-10025512/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/van-der-laan-woe-dinsdagmiddag-10025242/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://goudseschouwburg.nl/agenda/marie-koet-eindspel-try-out-10025537/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Heel Holland hoopt",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/marja-van-katendrecht-heel-holland-hoopt-10025244/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Night in Cinema Gouda",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-night-in-cinema-gouda-6/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Christian van Eijkelenburg"
+      ],
+      "titel": "Small Talk",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/christian-van-eijkelenburg-small-talk-10025702/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-03-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/nabil-daar-is-hij-weer-10025546/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Club",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-club-10025964/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Ronald Snijders"
+      ],
+      "titel": "Leven met humor",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/ronald-snijders-leven-met-humor-10025684/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een snotje",
+      "genre": "cabaret",
+      "datum": "2027-04-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/kim-karssen-god-is-een-snotje-10025632/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Roel C. Verburg"
+      ],
+      "titel": "Slechtste liedjes van de straat",
+      "genre": "cabaret",
+      "datum": "2027-04-14",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/roel-c-verburg-slechtste-liedjes-van-de-straat-10025703/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Night in Cinema Gouda",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-night-in-cinema-gouda-7/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Zij & Aron Elstak"
+      ],
+      "titel": "Match",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/zij-aron-elstak-match-10025268/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/selma-visscher-trekvogel-10025269/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Spruijt & Opperman"
+      ],
+      "titel": "Altijdloos",
+      "genre": "cabaret",
+      "datum": "2027-04-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/spruijt-opperman-altijdloos-10025696/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Eigenlijk"
+      ],
+      "titel": "Viggo Waas, Eddie B. Wahr en Kees van der Vooren",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/viggo-waas-eddie-b-wahr-en-kees-van-der-vooren-10025248/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 427.000,-",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/oscar-smit-e-427-000-10025533/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-05-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/luuk-weggemans-lach-maar-om-mij-10025536/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/martijn-koning-overprikkeld-10025513/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Jeannine La Rose"
+      ],
+      "titel": "Meer?!",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/jeannine-la-rose-meer-10025615/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/thomas-van-luyn-super-normaal-10025603/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-05-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/thomas-van-luyn-super-normaal-10025604/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is boos",
+      "genre": "cabaret",
+      "datum": "2027-05-12",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/esther-van-der-voort-mama-is-boos-10030271/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/merijn-scholten-lemming-10025514/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Stefan de Kogel"
+      ],
+      "titel": "Sloopkogel",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/stefan-de-kogel-sloopkogel-10025493/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Kees van Amstel"
+      ],
+      "titel": "Mogen we eerder weg?",
+      "genre": "cabaret",
+      "datum": "2027-05-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/kees-van-amstel-mogen-we-eerder-weg-10025613/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Night in Cinema Gouda",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-night-in-cinema-gouda-8/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/rundfunk-wagyu-10025724/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Peter Heerschop"
+      ],
+      "titel": "Lieve Marianne",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/peter-heerschop-lieve-marianne-10025725/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Tobi Kooiman"
+      ],
+      "titel": "Best of 4",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://goudseschouwburg.nl/agenda/tobi-kooiman-best-of-4-try-out-10025704/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "cabaret",
+      "datum": "2027-05-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/roue-verveer-vanzelfsprekend-10025616/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Diederik van Vleuten en Erik van Muiswinkel"
+      ],
+      "titel": "Alles onder controle!",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/diederik-van-vleuten-en-erik-van-muiswinkel-10025515/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina’s wereld",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/wina-ricardo-winas-wereld-10025675/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Diederik van Vleuten en Erik van Muiswinkel"
+      ],
+      "titel": "Alles onder controle!",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/diederik-van-vleuten-en-erik-van-muiswinkel-10025516/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-06-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/jay-francis-tunnelvisie-10025617/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-06-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/klaas-van-der-eerden-imperfect-10025676/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Night in Cinema Gouda",
+      "genre": "cabaret",
+      "datum": "2027-06-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-night-in-cinema-gouda-9/"
+    }
+  ],
+  "recensies": {}
+}

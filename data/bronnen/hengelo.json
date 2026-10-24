@@ -1,0 +1,551 @@
+{
+  "bron": "hengelo",
+  "naam": "Schouwburg Hengelo",
+  "opgehaald": "2026-10-24",
+  "theaters": [
+    {
+      "id": "schouwburg-hengelo",
+      "naam": "Schouwburg Hengelo",
+      "plaats": "Hengelo",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.schouwburghengelo.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/oudejaarsconference-2026-guido-weijers"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom Ongemak",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/welkom-ongemak-wim-helsen"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/gelukkig-heb-je-mij-nog-richard-groenendijk"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2026-11-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.schouwburghengelo.nl/mama-is-boos-reprise-esther-van-der-voort"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "De Baas",
+      "genre": "cabaret",
+      "datum": "2026-12-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/de-baas-lisa-ostermann"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-04-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/kasper-van-der-laan-ruim"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/merijn-scholten-lemming"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-04-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/kende-da-christel-de-laat"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-04-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/kende-da-christel-de-laat-3"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-04-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/kende-da-christel-de-laat-2"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Van der Laan en Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/dinsdagmiddag-van-der-laan-en-woe"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-03-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/alles-onder-controle-van-vleuten-en-van-muiswinkel"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z'n scherpst",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/scheepers-op-zn-scherpst-rob-scheepers"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "De nogal hyperbijzondere Hengelose oudejaars-improvisatie-extravaganza 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/de-nogal-hyperbijzondere-hengelose-oudejaars-improvisatie-extravaganza-2026-andries-tunru-stefan-hendrikx"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-11-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/dekpunt-jan-beuving"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Jochen Otten"
+      ],
+      "titel": "De kwaadste niet",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/de-kwaadste-niet-jochen-otten"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Marlon Kicken"
+      ],
+      "titel": "Maestro",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/maestro-marlon-kicken"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/satan-is-moe-lebbis"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Roel en Jos Maalderink"
+      ],
+      "titel": "Verbroedering",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/verbroedering-roel-en-jos-maalderink"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos",
+      "genre": "cabaret",
+      "datum": "2027-01-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/schaamteloos-dolf-jansen"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk eventueel de dag",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/pluk-eventueel-de-dag-janneke-de-bijl"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "De Cabaret Club"
+      ],
+      "titel": "Vier korte cabaretvoorstellingen",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/vier-korte-cabaretvoorstellingen-de-cabaret-club"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/wisten-wij-veel-freek-de-jonge"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/grip-rayen-panday"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "André Manuel"
+      ],
+      "titel": "De Eenzame Ziel",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/de-eenzame-ziel-andré-manuel"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Iris Rulkens"
+      ],
+      "titel": "Van Harte!",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/van-harte-iris-rulkens"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/trekvogel-selma-visscher"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/peer-bob-koomen"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/wagyu-rundfunk"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Cameretten Festival"
+      ],
+      "titel": "Finalistentournee",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/finalistentournee-cameretten-festival"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/appeltje-eitje-nienke-plas"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/als-ik-jou-was-david-van-rosmalen"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Stefan Hendrikx"
+      ],
+      "titel": "In Perspectief",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/in-perspectief-stefan-hendrikx"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/lach-maar-om-mij-luuk-weggemans"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-04-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/winas-wereld--wina-ricardo"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/mensenmens-daan-van-der-hoeven"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Leids Cabaret Festival"
+      ],
+      "titel": "Finalistentour 2027",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/finalistentour-2027-leids-cabaret-festival"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow – jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-05-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/de-grote-jubileumshow-jandino"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-05-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/imperfect-klaas-van-der-eerden"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Kees van Amstel"
+      ],
+      "titel": "Mogen we eerder weg?",
+      "genre": "cabaret",
+      "datum": "2027-06-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/mogen-we-eerder-weg--kees-van-amstel"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-09-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.schouwburghengelo.nl/demonen-peter-pannekoek"
+    }
+  ],
+  "recensies": {}
+}

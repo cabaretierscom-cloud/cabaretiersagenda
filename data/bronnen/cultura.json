@@ -1,0 +1,330 @@
+{
+  "bron": "cultura",
+  "naam": "Cultura Ede",
+  "opgehaald": "2026-10-24",
+  "theaters": [
+    {
+      "id": "cultura-ede",
+      "naam": "Cultura",
+      "plaats": "Ede",
+      "land": "NL",
+      "soort": "cultuurcentrum",
+      "website": "https://cultura-ede.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim voor iedereen",
+      "genre": "cabaret",
+      "datum": "2026-10-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/micha-wertheim-224172/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cultura-ede.nl/agenda/marie-koet-265293/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Ricky Risolles"
+      ],
+      "titel": "Niet zo indiscreet",
+      "genre": "cabaret",
+      "datum": "2027-03-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/ricky-risolles-277524/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Joel Borelli"
+      ],
+      "titel": "Joie de vivre",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/joel-borelli-277534/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Teun van den Elzen"
+      ],
+      "titel": "Ze moesten eens weten",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cultura-ede.nl/agenda/teun-van-den-elzen-277614/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Finalisten Cameretten"
+      ],
+      "titel": "Cameretten Festival",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/finalisten-cameretten-277617/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Alex Ploeg"
+      ],
+      "titel": "Niks persoonlijks",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cultura-ede.nl/agenda/alex-ploeg-277621/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Martijn Kardol"
+      ],
+      "titel": "Voor de vorm",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cultura-ede.nl/agenda/martijn-kardol-277624/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Sara Kroos"
+      ],
+      "titel": "Gelukskoekje",
+      "genre": "cabaret",
+      "datum": "2027-05-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cultura-ede.nl/agenda/sara-kroos-277626/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Kor Hoebe"
+      ],
+      "titel": "Korrelatie",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cultura-ede.nl/agenda/kor-hoebe-277641/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Remy Evers"
+      ],
+      "titel": "Graag gedaan",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cultura-ede.nl/agenda/remy-evers-277643/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Louise Korthals"
+      ],
+      "titel": "Korthals in stukken",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/louise-korthals-277548/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/thijs-van-de-meeberg-277314/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Comedytunes"
+      ],
+      "titel": "Comedynight",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/comedytunes-276972/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Emily Salvia"
+      ],
+      "titel": "Voor ik 30 ben",
+      "genre": "cabaret",
+      "datum": "2027-01-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/emily-salvia-276977/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Hokjesdenker"
+      ],
+      "titel": "We Zien Het Wel Even",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:15",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/hokjesdenker-277101/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/jan-beuving-275855/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Hè fijn",
+      "genre": "cabaret",
+      "datum": "2026-10-30",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/martijn-crins-273652/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "De Cabaret Club"
+      ],
+      "titel": "Vier mini cabaretvoorstellingen op één avond!",
+      "genre": "cabaret",
+      "datum": "2026-11-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/de-cabaret-club-275857/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cultura-ede.nl/agenda/martijn-koning-276864/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/freek-de-jonge-276871/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/nabil-276872/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Valentina Toth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cultura-ede.nl/agenda/valentina-toth-276873/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cultura-ede.nl/agenda/nienke-plas-276874/"
+    }
+  ],
+  "recensies": {}
+}

@@ -1,0 +1,1043 @@
+{
+  "bron": "stoep",
+  "naam": "Theater de Stoep",
+  "opgehaald": "2026-10-24",
+  "theaters": [
+    {
+      "id": "theater-de-stoep",
+      "naam": "Theater de Stoep",
+      "plaats": "Spijkenisse",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://theaterdestoep.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Sara Kroos"
+      ],
+      "titel": "Prikkelarme Kermis",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://theaterdestoep.nl/voorstelling/sara-kroos-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Meester Mark"
+      ],
+      "titel": "Later word ik 7",
+      "genre": "cabaret",
+      "datum": "2026-11-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/meester-mark-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://theaterdestoep.nl/voorstelling/merijn-scholten-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2026-12-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/richard-groenendijk-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/richard-groenendijk-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/richard-groenendijk-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Buğra Gedik"
+      ],
+      "titel": "Ğelukkig Ğeboren",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/bugra-gedik-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/joosen-en-de-jager-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2027-01-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/joosen-en-de-jager-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/wina-ricardo-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Luuk Ransijn"
+      ],
+      "titel": "Uitkijk",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/luuk-ransijn-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Stefan de Kogel"
+      ],
+      "titel": "Sloopkogel",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/stefan-de-kogel-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-02-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/kasper-van-der-laan-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z'n scherpst",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/rob-scheepers-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z'n scherpst",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/rob-scheepers-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "De Meute"
+      ],
+      "titel": "We hebben het gezellig",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/de-meute-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/selma-visscher-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/de-broers-van-arkel-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-11-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/jan-beuving-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Imperfect",
+      "genre": "cabaret",
+      "datum": "2027-06-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/klaas-van-der-eerden-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Arie en Silvester"
+      ],
+      "titel": "Breken de tent af!",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/arie-en-silvester-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/david-van-rosmalen-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/nabil-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-03-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/christel-de-laat-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/christel-de-laat-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/christel-de-laat-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/marie-koet-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Ronald Snijders"
+      ],
+      "titel": "Leven met humor",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/ronald-snijders-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Raoul Heertje"
+      ],
+      "titel": "begrijpt steeds minder",
+      "genre": "cabaret",
+      "datum": "2026-10-31",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/raoul-heertje-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Kim Schuddeboom"
+      ],
+      "titel": "Hardleers",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/kim-schuddeboom-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/martijn-koning-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2026-10-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://theaterdestoep.nl/voorstelling/bob-koomen-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Christian van Eijkelenburg"
+      ],
+      "titel": "Small Talk",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://theaterdestoep.nl/voorstelling/christian-van-eijkelenburg-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Cameretten Finalistentour 60e editie",
+      "genre": "cabaret",
+      "datum": "2027-01-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/cameretten-finalistentournee-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/valentina-toth-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Spruijt en Opperman"
+      ],
+      "titel": "Altijdloos",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/spruijt-en-opperman-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Spruijt en Opperman"
+      ],
+      "titel": "Altijdloos",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/spruijt-en-opperman-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-06-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/andries-tunru-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Iris Rulkens"
+      ],
+      "titel": "Van Harte!",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/iris-rulkens-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Beperkt Houdbaar"
+      ],
+      "titel": "De nogal hyperbijzondere Spijkenissese Oudejaars-improvisatie-extravaganza 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/beperkt-houdbaar-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "speelt Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/luuk-weggemans-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "speelt Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-05-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/luuk-weggemans-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Sjaak Bral"
+      ],
+      "titel": "Vaarwel 2026!",
+      "genre": "cabaret",
+      "datum": "2026-12-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/sjaak-bral-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [],
+      "titel": "Griffioen De Stoep Cabaret Festival",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/griffioen-de-stoep-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [],
+      "titel": "Griffioen De Stoep Cabaret Festival",
+      "genre": "cabaret",
+      "datum": "2027-03-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/griffioen-de-stoep-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/nienke-plas-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Beth & Flo"
+      ],
+      "titel": "Zoveel Meer",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/beth-en-flo-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Beth & Flo"
+      ],
+      "titel": "Zoveel Meer",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/beth-en-flo-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Berit Companjen"
+      ],
+      "titel": "Zei ik dit hardop?",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/berit-companjen-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Eigenlijk"
+      ],
+      "titel": "Viggo Waas, Eddie B. Wahr & Kees van der Vooren",
+      "genre": "cabaret",
+      "datum": "2027-06-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/eigenlijk-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow - Jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/jandino-asporaat-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-06-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://theaterdestoep.nl/voorstelling/peter-pannekoek-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-06-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://theaterdestoep.nl/voorstelling/peter-pannekoek-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-06-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://theaterdestoep.nl/voorstelling/peter-pannekoek-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Groninger Studenten Cabaret Festival"
+      ],
+      "titel": "Finalistentour",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://theaterdestoep.nl/voorstelling/gscf-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Groninger Studenten Cabaret Festival"
+      ],
+      "titel": "Finalistentour",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://theaterdestoep.nl/voorstelling/gscf-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Fieke Opdam"
+      ],
+      "titel": "Non-Actief",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/fieke-opdam-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/roue-verveer-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "ZIJ & Aron Elstak"
+      ],
+      "titel": "Match",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/zij-en-aron-elstak-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Rob Kamphues"
+      ],
+      "titel": "Eindelijk Volwassen",
+      "genre": "cabaret",
+      "datum": "2027-01-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/rob-kamphues-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/rundfunk-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Leids Cabaret Festival"
+      ],
+      "titel": "Finalistentour 2027",
+      "genre": "cabaret",
+      "datum": "2027-04-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/finalistentour-lcf-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/remko-vrijdag-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "De Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/guido-weijers-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-04-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/jay-francis-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Heel Holland Hoopt",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/marja-van-katendrecht-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://theaterdestoep.nl/voorstelling/daan-van-der-hoeven-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Diederick Ensink"
+      ],
+      "titel": "Iets Te Vieren",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/diederick-ensink-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk Kwaad",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://theaterdestoep.nl/voorstelling/rene-van-meurs-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Kees van Amstel"
+      ],
+      "titel": "Mogen we eerder weg?",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/kees-van-amstel-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000,-",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/oscar-smit-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Pepijn Schoneveld"
+      ],
+      "titel": "Welkom dat je luistert",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/pepijn-schoneveld-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Stefan Hendrikx"
+      ],
+      "titel": "In Persperctief",
+      "genre": "cabaret",
+      "datum": "2027-06-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/stefan-hendrikx-2627"
+    }
+  ],
+  "recensies": {
+    "https://theaterdestoep.nl/voorstelling/merijn-scholten-2627": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "De virtuoze komiek Merijn Scholten speelt in ‘Lemming’ op de toppen van zijn kunnen."
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Een flitsende voorstelling, vol leuk en expressief acteerwerk."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Komiek Merijn Scholten heeft een hoop kritiek op de maatschappij, maar is vooral enorm grappig."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Merijn Scholten brengt een hilarische ode aan de lanterfantende kudde"
+      }
+    ],
+    "https://theaterdestoep.nl/voorstelling/de-meute-2627": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De scène waarin het viertal perfect synchroon in tekst en beweging is niet alleen supergrappig, maar ook technisch indrukwekkend."
+      }
+    ],
+    "https://theaterdestoep.nl/voorstelling/de-broers-van-arkel-2627": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Een goed ingespeeld komisch duo […] dat met hun toneelmatige, theatraal goed uitgedachte voorstelling kan rekenen op de hardste lachmomenten."
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "De leuk acterende broers laten zien dat de beste grappen vaak zitten in ogenschijnlijk kleine dingen."
+      }
+    ],
+    "https://theaterdestoep.nl/voorstelling/ronald-snijders-2627": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De artiest Snijders blijkt precies te weten wat hij doet (…) en levert een fijne, grappige, rijke, goed geconstrueerde voorstelling af."
+      }
+    ],
+    "https://theaterdestoep.nl/voorstelling/luuk-weggemans-2627": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Weggemans lijkt overal grappen over te kunnen maken. Hij bespeelt de zaal, gaat in op de actualiteit van de avond en schakelt moeiteloos van een mooi gezongen lied naar een kwartier grappen, grollen en publieksinteractie."
+      }
+    ],
+    "https://theaterdestoep.nl/voorstelling/marja-van-katendrecht-2627": [
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Ze weet precies hoe ze het publiek kan vermaken, maar weet je ook te raken met haar indringende verhalen. Ze weet je het ene moment te ontroeren en het volgende moment lig je krom van het lachen. Haar mimiek is echt van een ander niveau."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Praatjes, daar is ze heel erg goed in. In Aan boord bij Marja trekt ze enkele toeschouwers het podium op om te laten zien hóe goed precies. Het is knap hoe Van Katendrecht een ernstige ondertoon vasthoudt over eenzaamheid en escapisme."
+      }
+    ],
+    "https://theaterdestoep.nl/voorstelling/daan-van-der-hoeven-2627": [
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "wat een controle, wat een expressie - maar vooral: wat zet komiek Daan van der Hoeven een fijne voorstelling neer"
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Mensenmens is een warme, grappige en eerlijke voorstelling waarin Daan van der Hoeven laat zien dat hij niet alleen een sterke stand-up comedian is, maar ook een sterke verteller."
+      }
+    ]
+  }
+}

@@ -1,0 +1,850 @@
+{
+  "bron": "amphion",
+  "naam": "Amphion",
+  "opgehaald": "2026-10-24",
+  "theaters": [
+    {
+      "id": "amphion",
+      "naam": "Amphion",
+      "plaats": "Doetinchem",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.amphion.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Diederick Ensink"
+      ],
+      "titel": "Iets te vieren?",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.amphion.nl/theater/diederick-ensink-iets-te-vieren-try-out/22-01-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-02",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/guido-weijers-guido-weijers/02-12-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/nieuwe-voorstelling-richard-groenendijk/20-05-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/nieuwe-voorstelling-richard-groenendijk/21-05-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "De Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-12",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.amphion.nl/theater/de-oudejaarsconference-2026-try-out-claudia-de-breij/12-11-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "De Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-14",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.amphion.nl/theater/de-oudejaarsconference-2026-try-out-claudia-de-breij/14-11-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Claudia de Breij"
+      ],
+      "titel": "De Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-13",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.amphion.nl/theater/de-oudejaarsconference-2026-try-out-claudia-de-breij/13-11-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Alles is Comedy"
+      ],
+      "titel": "Najib & Roue",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/the-best-ies-najib-roue/18-11-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Alles is Comedy"
+      ],
+      "titel": "Najib & Roue",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/the-best-ies-najib-roue/19-11-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Myrte Siebinga"
+      ],
+      "titel": "Gelukkig maar",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": "20:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/myrte-siebinga-gelukkig-maar/11-12-2026-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-06-19",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/esther-van-der-voort-mama-is-boos/19-06-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/alles-onder-controle-van-vleuten-en-van-muiswinkel/03-03-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Thijs Kemperink"
+      ],
+      "titel": "Tot het uiterste gedreven",
+      "genre": "cabaret",
+      "datum": "2027-06-12",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/thijs-kemperink-tot-het-uiterste-gedreven/12-06-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-04-10",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/merijn-scholten-lemming/10-04-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Daniel Arends"
+      ],
+      "titel": "High Class Bitch",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "19:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/daniel-arends-high-class-bitch-1/25-03-2027-19-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da?!",
+      "genre": "cabaret",
+      "datum": "2027-02-14",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/kende-da-christel-de-laat/14-02-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da?!",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/kende-da-christel-de-laat/13-02-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da?!",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/kende-da-christel-de-laat/12-02-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/kasper-van-der-laan/13-05-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Daniel Arends"
+      ],
+      "titel": "Had ik maar nooit zo aardig gedaan",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "21:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/daniel-arends-had-ik-maar-nooit-zo-aardig-gedaan-1/25-03-2027-21-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-05-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/eindspel-marie-koet/06-05-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/mijn-lieve-achterdocht-ronald-goedemondt/21-11-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-06-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/wina-ricardo-winas-wereld/04-06-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Eigenlijk"
+      ],
+      "titel": "Viggo Waas, Eddie B. Wahr & Kees van der Vooren",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/viggo-waas-eddie-b-wahr-kees-van-der-vooren-eigenlijk/27-05-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Luuk Ransijn"
+      ],
+      "titel": "Uitkijk",
+      "genre": "cabaret",
+      "datum": "2027-05-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/luuk-ransijn-uitkijk/15-05-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2027-05-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/nienke-plas-appeltje-eitje/12-05-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/nabil-daar-is-hij-weer/08-05-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-05-06",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/jay-francis-tunnelvisie/06-05-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten Wij Veel",
+      "genre": "cabaret",
+      "datum": "2027-05-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/freek-de-jonge-wisten-wij-veel/05-05-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-04-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/andries-tunru-ravot/30-04-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Fieke Opdam"
+      ],
+      "titel": "Non-actief",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/fieke-opdam-non-actief/29-04-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Christian van Eijkelenburg"
+      ],
+      "titel": "Small Talk",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/christian-van-eijkelenburg-small-talk/15-04-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Heel Holland Hoopt",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/marja-van-katendrecht-heel-holland-hoopt/09-04-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Kim Schuddeboom"
+      ],
+      "titel": "Hardleers",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/kim-schuddeboom-hardleers/03-04-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "André Manuel"
+      ],
+      "titel": "De Eenzame Ziel",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/andre-manuel-de-eenzame-ziel/02-04-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Stefan Hendrikx"
+      ],
+      "titel": "In Perspectief",
+      "genre": "cabaret",
+      "datum": "2027-03-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/stefan-hendrikx-in-perspectief/27-03-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/rundfunk-wagyu/05-03-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Karin Bloemen"
+      ],
+      "titel": "Renaissance 2.0",
+      "genre": "cabaret",
+      "datum": "2027-02-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/karin-bloemen-renaissance-2.0/26-02-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Gavin Reijnders"
+      ],
+      "titel": "Jazzebelle",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/gavin-reijnders-jazzebelle/25-02-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/daan-van-der-hoeven-mensenmens/18-02-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Valentina Toth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.amphion.nl/theater/valentina-toth-revue-revanche-try-out/17-02-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom Ongemak",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/wim-helsen-welkom-ongemak/06-02-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/jan-beuving-dekpunt/04-02-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-01-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/martijn-koning-overprikkeld/20-01-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Klub Karmijn"
+      ],
+      "titel": "Nee, jouw kop is kermis",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/klub-karmijn-nee-jouw-kop-is-kermis/16-01-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/jandino-de-grote-jubileumshow/14-01-2027-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Wouter Monden"
+      ],
+      "titel": "Met Blokjes",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/wouter-monden-met-blokjes/07-01-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Frans Miggelbrink"
+      ],
+      "titel": "Hulde",
+      "genre": "cabaret",
+      "datum": "2026-12-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/frans-miggelbrink-hulde/30-12-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Frans Miggelbrink"
+      ],
+      "titel": "Hulde",
+      "genre": "cabaret",
+      "datum": "2026-12-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/frans-miggelbrink-hulde/29-12-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Frans Miggelbrink"
+      ],
+      "titel": "Hulde",
+      "genre": "cabaret",
+      "datum": "2026-12-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/frans-miggelbrink-hulde/28-12-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Frans Miggelbrink"
+      ],
+      "titel": "Hulde",
+      "genre": "cabaret",
+      "datum": "2026-12-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/frans-miggelbrink-hulde/27-12-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Oudejaars-improvisatie-extravaganza 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/beperkt-houdbaar-oudejaars-improvisatie-experivaganza-2026/17-12-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "Striptease Van De Dood",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/david-linszen-striptease-van-de-dood/27-11-2026-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Chris Verlaan"
+      ],
+      "titel": "Ach, er komen geen kindjes van",
+      "genre": "cabaret",
+      "datum": "2026-11-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/chris-verlaan-ach-er-komen-geen-kindjes-van/26-11-2026-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk eventueel de dag",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/janneke-de-bijl-pluk-eventueel-de-dag/20-11-2026-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Plien & Bianca"
+      ],
+      "titel": "Harrekidee!",
+      "genre": "cabaret",
+      "datum": "2026-11-17",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.amphion.nl/theater/plien-bianca-harrekidee-reprise/17-11-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Kiki Schippers"
+      ],
+      "titel": "Praktische Bezwaren",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/kiki-schippers-praktische-bezwaren/05-11-2026-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Isabelle Kafando"
+      ],
+      "titel": "Rof Daaimund",
+      "genre": "cabaret",
+      "datum": "2026-10-31",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/rof-daaimund-isabelle-kafando/31-10-2026-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z'n scherpst",
+      "genre": "cabaret",
+      "datum": "2026-10-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/rob-scheepers-scheepers-op-zn-scherpst/30-10-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Vrouwejaars 2026"
+      ],
+      "titel": "De blik op 2026 door de ogen van vrouwen",
+      "genre": "cabaret",
+      "datum": "2026-10-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.amphion.nl/theater/vrouwejaars-2026-de-blik-op-2026-door-de-ogen-van-vrouwen-try-out/28-10-2026-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Ayoub Kharkhach"
+      ],
+      "titel": "En verbied vogels om te fluiten",
+      "genre": "cabaret",
+      "datum": "2026-10-24",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/ayoub-kharkhach-en-verbied-vogels-om-te-fluiten/24-10-2026-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Ayoub Kharkhach"
+      ],
+      "titel": "En verbied vogels om te fluiten",
+      "genre": "cabaret",
+      "datum": "2026-10-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/ayoub-kharkhach-en-verbied-vogels-om-te-fluiten/30-10-2026-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Roel & Jos Maalderink"
+      ],
+      "titel": "Verbroedering",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/roel-jos-maalderink-verbroedering/23-01-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Twente Plat"
+      ],
+      "titel": "Twentse humor op z`n best",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/twente-plat-twentse-humor-op-zn-best-1/06-03-2027-20-30/"
+    }
+  ],
+  "recensies": {}
+}

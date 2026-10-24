@@ -1,0 +1,667 @@
+{
+  "bron": "castellum",
+  "naam": "Castellum",
+  "opgehaald": "2026-10-24",
+  "theaters": [
+    {
+      "id": "castellum",
+      "naam": "Castellum",
+      "plaats": "Alphen aan den Rijn",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://castellum.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/nienke-plas-appeltje-eitje"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Remy Evers"
+      ],
+      "titel": "Graag gedaan",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/remy-evers-graag-gedaan"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "De Bevers"
+      ],
+      "titel": "De Bevers zijn er bijna",
+      "genre": "stand-up",
+      "datum": "2027-05-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/de-bevers-de-bevers-zijn-er-bijna"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/richard-groenendijk-gelukkig-heb-je-mij-nog"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Johan Goossens"
+      ],
+      "titel": "Het Volle Leven",
+      "genre": "cabaret",
+      "datum": "2026-11-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/johan-goossens-het-volle-leven"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Jim de Groot & Sebas Wolfensberger"
+      ],
+      "titel": "CabaRock - De Liefde",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/jim-de-groot-sebas-wolfensberger-cabarock-de-liefde"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Chris Verlaan"
+      ],
+      "titel": "Ach, er komen geen kindjes van",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/chris-verlaan-ach-er-komen-geen-kindjes-van"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-03-31",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/rundfunk-wagyu"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "Juk",
+      "genre": "cabaret",
+      "datum": "2027-04-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/jeroens-clan-juk"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/remko-vrijdag-marko-maandag"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Sjaak Bral"
+      ],
+      "titel": "Vaarwel 2026",
+      "genre": "cabaret",
+      "datum": "2026-12-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/sjaak-bral-vaarwel-2026"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Iris Rulkens"
+      ],
+      "titel": "Van Harte!",
+      "genre": "cabaret",
+      "datum": "2027-04-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/iris-rulkens"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [],
+      "titel": "Comedy Club Down Under",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/comedy-club-down-under"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [],
+      "titel": "Comedy Club Down Under",
+      "genre": "cabaret",
+      "datum": "2026-12-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/comedy-club-down-under"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [],
+      "titel": "Comedy Club Down Under",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/comedy-club-down-under"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [],
+      "titel": "Comedy Club Down Under",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/comedy-club-down-under"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [],
+      "titel": "Comedy Club Down Under",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/comedy-club-down-under"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [],
+      "titel": "Comedy Club Down Under",
+      "genre": "cabaret",
+      "datum": "2027-04-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/comedy-club-down-under"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [],
+      "titel": "Comedy Club Down Under",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/comedy-club-down-under"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [],
+      "titel": "Comedy Club Down Under",
+      "genre": "cabaret",
+      "datum": "2027-06-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/comedy-club-down-under"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Maartje en Kine"
+      ],
+      "titel": "De bingo show",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/maartje-en-kine-de-bingo-show"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Thijs Kemperink"
+      ],
+      "titel": "Tot het uiterste gedreven",
+      "genre": "cabaret",
+      "datum": "2027-02-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/thijs-kemperink-tot-het-uiterste-gedreven"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Jandino 20 jaar"
+      ],
+      "titel": "De grote jubileumshow",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/jandino-asporaat-20-jaar-jubileumvoorstelling"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Max van den Burg"
+      ],
+      "titel": "Maxikozi",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/max-van-den-burg-maxikozi"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "René van Meurs"
+      ],
+      "titel": "Noodzakelijk Kwaad",
+      "genre": "cabaret",
+      "datum": "2027-02-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/rene-van-meurs-noodzakelijk-kwaad"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Elfie Tromp"
+      ],
+      "titel": "Aai Poesje Aai Poesje",
+      "genre": "cabaret",
+      "datum": "2026-12-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/elfie-tromp-aai-poesje"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Finalistentour 60e editie",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/cameretten-finalistentournee"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Team Ricky Risolles"
+      ],
+      "titel": "Ricky Risolles 3 - Niet zo Indiscreet..",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/ricky-risolles-niet-zo-indiscreet"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Joosen en de Jager"
+      ],
+      "titel": "Niks aan het handje",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/joosen-en-de-jager-niks-aan-het-handje"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Jörgen Raymann"
+      ],
+      "titel": "BIGI YARI: Welkom thuis, waar niemand op je zit te wachten",
+      "genre": "cabaret",
+      "datum": "2026-11-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/jorgen-raymann-bigi-yari"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/daan-van-der-hoeven-mensenmens"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "DE MEIDEN van toen"
+      ],
+      "titel": "Naar de getver",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/de-meiden-van-toen-naar-de-getver"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Ronald Snijders"
+      ],
+      "titel": "Leven met humor",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/ronald-snijders-leven-met-humor"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Roel C. Verburg"
+      ],
+      "titel": "Slechtste liedjes van de straat",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/roel-c-verburg-slechtste-liedjes-van-de-straat"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/selma-visscher-trekvogel"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Greg Shapiro"
+      ],
+      "titel": "KING ME - 250 years of Donald Trump",
+      "genre": "cabaret",
+      "datum": "2026-10-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/greg-shapiro-king-me-250-years-of-donald-trump"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Louise Korthals"
+      ],
+      "titel": "Korthals in stukken",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/louise-korthals-korthals-in-stukken"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/nabil-daar-is-hij-weer"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/freek-de-jonge-deel-4"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Berit Companjen"
+      ],
+      "titel": "Zei ik dat hardop?",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/berit-companjen-zei-ik-dat-hardop"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Berit Companjen"
+      ],
+      "titel": "Zei ik dat hardop?",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/berit-companjen-zei-ik-dat-hardop"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/jan-beuving-dekpunt"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Peter Heerschop"
+      ],
+      "titel": "Lieve Marianne",
+      "genre": "cabaret",
+      "datum": "2027-06-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/peter-heerschop-lieve-marianne"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/bob-koomen-peer"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Jochen Otten"
+      ],
+      "titel": "De kwaadste niet",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/jochen-otten-de-kwaadste-niet"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "De Meute"
+      ],
+      "titel": "We hebben het gezellig",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/de-meute-presenteert-we-hebben-het-gezellig"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/david-van-rosmalen-als-ik-jou-was"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2026-10-31",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/rayen-panday-grip"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Lovella Telesford"
+      ],
+      "titel": "Wat een gezeik!",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/lovella-telesford-wat-een-gezeik"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Boys Won't Be Boys"
+      ],
+      "titel": "Oudejaars met Rikkert",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/boys-wont-be-boys-oudejaars-met-rikkert"
+    }
+  ],
+  "recensies": {
+    "https://castellum.nl/theater/remy-evers-graag-gedaan": [
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Verrukkelijk theatraal en bewegelijk - wat een geweldigekomiek."
+      }
+    ],
+    "https://castellum.nl/theater/johan-goossens-het-volle-leven": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Goossens kijkt met een even ontroerende als grappige mildheid naar zijn eigen tekortkomingen."
+      }
+    ]
+  }
+}

@@ -1,0 +1,805 @@
+{
+  "bron": "hetpark",
+  "naam": "Schouwburg Het Park",
+  "opgehaald": "2026-10-24",
+  "theaters": [
+    {
+      "id": "schouwburg-het-park",
+      "naam": "Schouwburg Het Park",
+      "plaats": "Hoorn",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://hetpark.nl"
+    },
+    {
+      "id": "theater-het-pakhuis",
+      "naam": "Theater Het Pakhuis",
+      "plaats": "Hoorn",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://hetpark.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Best Of",
+      "genre": "cabaret",
+      "datum": "2026-10-24",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/fabian-franciscus-10352607/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Pieter Derks"
+      ],
+      "titel": "Ja, leuk",
+      "genre": "cabaret",
+      "datum": "2026-10-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://hetpark.nl/agenda/pieter-derks-10355722/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Kiki Schippers"
+      ],
+      "titel": "Praktische bezwaren",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/kiki-schippers-10352624/"
+    },
+    {
+      "theater": "theater-het-pakhuis",
+      "artiesten": [
+        "Rachid Larouz"
+      ],
+      "titel": "Wakker Worden",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/rachid-larouz-10361512/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Buitenboord Comedy Café",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/buitenboord-comedy-cafe-10384587/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/guido-weijers-10345756/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Amhali & Verveer"
+      ],
+      "titel": "Alles is Comedy",
+      "genre": "cabaret",
+      "datum": "2026-11-16",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/amhali-verveer-10349291/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Amhali & Verveer"
+      ],
+      "titel": "Alles is Comedy",
+      "genre": "cabaret",
+      "datum": "2026-11-17",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/amhali-verveer-10349292/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Yentl en de Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://hetpark.nl/agenda/yentl-en-de-boer-rekhalzen-reprise-10353113/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Finalistentournee Amsterdams Kleinkunst Festival",
+      "genre": "cabaret",
+      "datum": "2026-11-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/finalistentournee-amsterdams-kleinkunst-festival-10352973/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/remko-vrijdag-10352976/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos!",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/esther-van-der-voort-10368942/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Huub Stapel"
+      ],
+      "titel": "Mannen komen van Mars, Vrouwen van Venus",
+      "genre": "cabaret",
+      "datum": "2026-12-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/huub-stapel-10355781/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Rayen & Friends"
+      ],
+      "titel": "Wonderful Christmas time",
+      "genre": "cabaret",
+      "datum": "2026-12-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/rayen-friends-10355783/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Tis hier geen hotel 3",
+      "genre": "cabaret",
+      "datum": "2026-12-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://hetpark.nl/agenda/tis-hier-geen-hotel-3-reprise-10355785/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/daan-van-der-hoeven-10353033/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos - Eindejaars 2026",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/dolf-jansen-10355798/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2026-12-18",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/richard-groenendijk-10348361/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://hetpark.nl/agenda/patrick-laureij-10349360/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Gavin Reijnders"
+      ],
+      "titel": "Jazzebelle",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/gavin-reijnders-10353038/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom Ongemak",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/wim-helsen-10348439/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Tineke Schouten"
+      ],
+      "titel": "Femme Vitaal",
+      "genre": "cabaret",
+      "datum": "2027-01-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://hetpark.nl/agenda/tineke-schouten-10356027/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Ruud Smulders"
+      ],
+      "titel": "Rüdsichtslos",
+      "genre": "cabaret",
+      "datum": "2027-01-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/ruud-smulders-10353040/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Fimme Bakker"
+      ],
+      "titel": "Zwaargewicht",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/fimme-bakker-10356201/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-01-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/valentina-toth-10354244/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/lebbis-10354245/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/van-der-laan-woe-10297617/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Noord-Hollandse Comedy Show",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/noord-hollandse-comedy-show-humor-van-de-streek-voor-de-streek-10379766/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/kasper-van-der-laan-10349357/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/kasper-van-der-laan-10349358/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Derek Otte"
+      ],
+      "titel": "Landverrader",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/derek-otte-10354249/"
+    },
+    {
+      "theater": "theater-het-pakhuis",
+      "artiesten": [],
+      "titel": "Het Gilde",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/het-gilde-10361513/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Finalistentournee Cameretten 60 jaar",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/finalistentournee-cameretten-60-jaar-10354252/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/bob-koomen-10364803/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Hokjesdenker"
+      ],
+      "titel": "We zien het wel even",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/hokjesdenker-10355608/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Huub Smit & Gürkan Küçüksentürk"
+      ],
+      "titel": "Zei je dat echt?",
+      "genre": "cabaret",
+      "datum": "2027-03-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/huub-smit-gurkan-kucuksenturk-10355546/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Glodi Lugungu"
+      ],
+      "titel": "In de hemel ken ik jullie niet",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/glodi-lugungu-10355550/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Ronald Snijders"
+      ],
+      "titel": "Leven met humor",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/ronald-snijders-10355552/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "Juk",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/jeroens-clan-10355553/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-03-31",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/andries-tunru-10355559/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/freek-de-jonge-10356151/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/andries-tunru-10355560/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Daniel Arends"
+      ],
+      "titel": "Highclass Bitch",
+      "genre": "cabaret",
+      "datum": "2027-04-06",
+      "tijd": "19:00",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://hetpark.nl/agenda/daniel-arends-10350312/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Daniël Arends"
+      ],
+      "titel": "Had ik maar nooit zo aardig gedaan",
+      "genre": "cabaret",
+      "datum": "2027-04-06",
+      "tijd": "21:30",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://hetpark.nl/agenda/daniel-arends-10350475/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "André Manuel"
+      ],
+      "titel": "De eenzame ziel",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/andre-manuel-10355563/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Alex Ploeg"
+      ],
+      "titel": "Niks persoonlijks",
+      "genre": "cabaret",
+      "datum": "2027-04-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://hetpark.nl/agenda/alex-ploeg-try-out-10355565/"
+    },
+    {
+      "theater": "theater-het-pakhuis",
+      "artiesten": [],
+      "titel": "Hoorn Lacht",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/hoorn-lacht-10361514/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-04-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/jan-beuving-10352616/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Boban Braspenning"
+      ],
+      "titel": "Bruto",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/boban-braspenning-10355570/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/van-vleuten-en-van-muiswinkel-10355283/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/david-van-rosmalen-10355577/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Eigenlijk"
+      ],
+      "titel": "Viggo Waas, Eddie B. Wahr & Kees van der Vooren",
+      "genre": "cabaret",
+      "datum": "2027-05-02",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/viggo-waas-eddie-b-wahr-kees-van-der-vooren-10355578/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/selma-visscher-10355579/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2027-05-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/luuk-weggemans-10355582/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Leids Cabaret Festival"
+      ],
+      "titel": "Finalistentour 2027",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/leids-cabaret-festival-10355589/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Rob en Emiel"
+      ],
+      "titel": "Thinking like Sherlock",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/rob-en-emiel-10355591/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-05-26",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/esther-van-der-voort-10356187/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/bob-koomen-10355594/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2027-06-01",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/nienke-plas-10356190/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Jay Francis"
+      ],
+      "titel": "Tunnelvisie",
+      "genre": "cabaret",
+      "datum": "2027-06-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/jay-francis-10356191/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Jandino 20 jaar!"
+      ],
+      "titel": "De Grote Jubileumshow",
+      "genre": "cabaret",
+      "datum": "2027-06-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/jandino-20-jaar-10356193/"
+    }
+  ],
+  "recensies": {}
+}

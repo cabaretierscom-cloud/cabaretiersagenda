@@ -298,6 +298,15 @@
     "genre": "kleinkunst"
   },
   {
+    "id": "anouscha-fajdiga-fiep-mulderije-duoprogramma-podium-putman",
+    "titel": "Duoprogramma Podium Putman",
+    "artiesten": [
+      "anouscha-fajdiga",
+      "fiep-mulderije"
+    ],
+    "genre": "kleinkunst"
+  },
+  {
     "id": "anuar-ongeduldig-geduldig",
     "titel": "Ongeduldig Geduldig",
     "artiesten": [
@@ -346,6 +355,13 @@
       "arie-en-silvester"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "arie-en-silvester-breken-de-tent-af-theater-sittard",
+    "titel": "Arie & Silvester breken de tent af!",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-sittard"
   },
   {
     "id": "aries-spears-comedian-imitator-en-acteur-aries-spears-keert-terug-naar-nederland",
@@ -445,6 +461,14 @@
     ]
   },
   {
+    "id": "baas-en-adriani-de-leukste-cabaretvoorstelling-2027",
+    "titel": "De leukste cabaretvoorstelling 2027",
+    "artiesten": [
+      "baas-en-adriani"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "barbara-sloesen-en-joost-hofman-ouder-worden",
     "titel": "Ouder Worden",
     "artiesten": [
@@ -463,6 +487,14 @@
   {
     "id": "beperkt-houdbaar-de-nogal-hyperbijzondere-amsterdamse-oudejaars-improvisatie-ext",
     "titel": "De nogal hyperbijzondere Amsterdamse Oudejaars-improvisatie-extravaganza 2026",
+    "artiesten": [
+      "beperkt-houdbaar"
+    ],
+    "genre": "oudejaarsconference"
+  },
+  {
+    "id": "beperkt-houdbaar-de-nogal-hyperbijzondere-spijkenissese-oudejaars-improvisatie-e",
+    "titel": "De nogal hyperbijzondere Spijkenissese Oudejaars-improvisatie-extravaganza 2026",
     "artiesten": [
       "beperkt-houdbaar"
     ],
@@ -713,12 +745,31 @@
     "theater": "southend-comedy-club"
   },
   {
+    "id": "bregje-iding-jeroen-dyck-peter-kluppels-mc-jarno-boone-humo-s-comedy-cup-finalis",
+    "titel": "Humo's Comedy Cup Finalistentour",
+    "artiesten": [
+      "bregje-iding",
+      "jeroen-dyck",
+      "peter-kluppels",
+      "mc-jarno-boone"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "bro-s-bromens",
     "titel": "Bromens",
     "artiesten": [
       "bro-s"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "In de pers + &minus; “Lekker abstract, absurd en brutaal.",
+        "bron": "https://stadsgehoorzaal.nl/programma/bros"
+      }
+    ]
   },
   {
     "id": "broeders-van-andere-moeders-comedy-zonder-script-improvisatietheater",
@@ -743,6 +794,13 @@
       "bugra-gedik"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "buitenboord-comedy-cafe-schouwburg-het-park",
+    "titel": "Buitenboord Comedy Café",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "schouwburg-het-park"
   },
   {
     "id": "burger-koekoek-met-een-vloek-en-een-zucht",
@@ -806,8 +864,24 @@
     "genre": "cabaret"
   },
   {
+    "id": "cafe-komedie-stand-up-night",
+    "titel": "Stand-Up Night",
+    "artiesten": [
+      "cafe-komedie"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "cameretten-cameretten",
     "titel": "Cameretten",
+    "artiesten": [
+      "cameretten"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "cameretten-finalistentour-60e-editie",
+    "titel": "Finalistentour 60e editie",
     "artiesten": [
       "cameretten"
     ],
@@ -859,27 +933,7 @@
     "artiesten": [
       "christian-van-eijkelenburg"
     ],
-    "genre": "cabaret",
-    "recensies": [
-      {
-        "medium": "Theaterparadijs",
-        "sterren": 4,
-        "citaat": "Modern, hip, absurdistisch en werkelijk ontzettend grappig",
-        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/christian-van-eijkelenburg/"
-      },
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "Verrassend cabaret met talloze mooie animaties en filmbeelden",
-        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/christian-van-eijkelenburg/"
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Een groot talent voor absurdisme",
-        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/christian-van-eijkelenburg/"
-      }
-    ]
+    "genre": "cabaret"
   },
   {
     "id": "christopher-hall-pizazz-comedy-cafe-amsterdam",
@@ -887,6 +941,14 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedy-cafe-amsterdam"
+  },
+  {
+    "id": "clara-zoerbier-jack-vinders-clara-s-krismes",
+    "titel": "Clara’s Krismes",
+    "artiesten": [
+      "clara-zoerbier-jack-vinders"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "claudia-de-breij-oudejaarsconference-2026",
@@ -928,6 +990,20 @@
     "genre": "cabaret"
   },
   {
+    "id": "comedy-club-down-under-castellum",
+    "titel": "Comedy Club Down Under",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "castellum"
+  },
+  {
+    "id": "comedy-club-goudse-schouwburg",
+    "titel": "Comedy Club",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "goudse-schouwburg"
+  },
+  {
     "id": "comedy-club-haug-presents-theater-bellevue",
     "titel": "Comedy Club Haug Presents",
     "artiesten": [],
@@ -951,6 +1027,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "comedy-festival-limburg-de-finale",
+    "titel": "De Finale",
+    "artiesten": [
+      "comedy-festival-limburg"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "comedy-festival-limburg-halve-finale",
     "titel": "Halve Finale",
     "artiesten": [
@@ -959,11 +1043,26 @@
     "genre": "cabaret"
   },
   {
+    "id": "comedy-festival-limburg-oudejaarsconference",
+    "titel": "Oudejaarsconference",
+    "artiesten": [
+      "comedy-festival-limburg"
+    ],
+    "genre": "oudejaarsconference"
+  },
+  {
     "id": "comedy-marathon-2027-capitole-gent",
     "titel": "Comedy Marathon 2027",
     "artiesten": [],
     "genre": "stand-up",
     "theater": "capitole-gent"
+  },
+  {
+    "id": "comedy-night-in-cinema-gouda-goudse-schouwburg",
+    "titel": "Comedy Night in Cinema Gouda",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "goudse-schouwburg"
   },
   {
     "id": "comedy-night-in-english-comedy-cafe-amsterdam",
@@ -1029,6 +1128,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "cyrille-niel-luchtig-bekeeke",
+    "titel": "Luchtig Bekeeke",
+    "artiesten": [
+      "cyrille-niel"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "daan-van-der-hoeven-mensenmens",
     "titel": "Mensenmens",
     "artiesten": [
@@ -1041,6 +1148,12 @@
         "sterren": null,
         "citaat": "Er zit precies genoeg bindmiddel tussen de verschillende verhalen, zonder dat Mensenmens geforceerd cabaretesk overkomt. Het is eerder een stand-upsymfonie, waarin ieder woord uit de losse pols lijkt te stromen en waarachtig aanvoelt. Van der Hoeven een talent noemen, zou een belediging zijn.",
         "bron": "https://www.kampanje.nl/voorstellingen/daan-van-der-hoeven-qy6j"
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Mensenmens is een warme, grappige en eerlijke voorstelling waarin Daan van der Hoeven laat zien dat hij niet alleen een sterke stand-up comedian is, maar ook een sterke verteller.",
+        "bron": "https://theaterdestoep.nl/voorstelling/daan-van-der-hoeven-2627"
       }
     ]
   },
@@ -1168,6 +1281,21 @@
     "genre": "cabaret"
   },
   {
+    "id": "de-bevers-de-bevers-zijn-er-bijna",
+    "titel": "De Bevers zijn er bijna",
+    "artiesten": [
+      "de-bevers"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "de-cabaret-club-goudse-schouwburg",
+    "titel": "De Cabaret Club",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "goudse-schouwburg"
+  },
+  {
     "id": "de-cabaret-club-parktheater-eindhoven",
     "titel": "De Cabaret Club",
     "artiesten": [],
@@ -1181,6 +1309,21 @@
       "de-cabaret-club"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "de-cabaret-club-vier-mini-cabaretvoorstellingen-op-een-avond",
+    "titel": "Vier mini cabaretvoorstellingen op één avond!",
+    "artiesten": [
+      "de-cabaret-club"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "de-cabaretclub-theater-het-speelhuis",
+    "titel": "De Cabaretclub",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-het-speelhuis"
   },
   {
     "id": "de-gestampte-meisjes-strot",
@@ -1207,12 +1350,36 @@
     "genre": "cabaret"
   },
   {
+    "id": "de-limburgse-buuttecup-stichting-buutte-cultuur-limburg",
+    "titel": "Stichting Buutte Cultuur Limburg",
+    "artiesten": [
+      "de-limburgse-buuttecup"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "de-meiden-van-toen-naar-de-getver",
     "titel": "Naar de getver",
     "artiesten": [
       "de-meiden-van-toen"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "de-meute-we-hebben-het-gezellig",
+    "titel": "We hebben het gezellig",
+    "artiesten": [
+      "de-meute"
+    ],
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De scène waarin het viertal perfect synchroon in tekst en beweging is niet alleen supergrappig, maar ook technisch indrukwekkend.",
+        "bron": "https://theaterdestoep.nl/voorstelling/de-meute-2627"
+      }
+    ]
   },
   {
     "id": "de-mooie-dingen-janke-dekker-zingt-kleinkunstklassiekers",
@@ -1262,6 +1429,14 @@
     "theater": "theater-walhalla"
   },
   {
+    "id": "de-vrouwejaars-de-blik-op-2026-door-de-ogen-van-vrouwen",
+    "titel": "De blik op 2026 door de ogen van vrouwen!",
+    "artiesten": [
+      "de-vrouwejaars"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "deng-boy-double-trouble-try-out",
     "titel": "Double Trouble - try-out",
     "artiesten": [
@@ -1281,6 +1456,14 @@
     "titel": "Double Dutch: Two",
     "artiesten": [
       "derek-mitchell"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "derek-otte-landverrader",
+    "titel": "Landverrader",
+    "artiesten": [
+      "derek-otte"
     ],
     "genre": "cabaret"
   },
@@ -1428,14 +1611,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "eigenlijk-viggo-waas-eddie-b-wahr-en-kees-van-der-vooren",
-    "titel": "Viggo Waas, Eddie B. Wahr & Kees van der Vooren",
-    "artiesten": [
-      "eigenlijk"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "eindshow-comedycursus-uicf-comedy-cafe-amsterdam",
     "titel": "Eindshow Comedycursus UICF",
     "artiesten": [],
@@ -1465,6 +1640,14 @@
       "els-de-schepper"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "emily-salvia-voor-ik-30-ben",
+    "titel": "Voor ik 30 ben",
+    "artiesten": [
+      "emily-salvia"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "emmy-krooshof-nick-van-keulen-erik-boddeus-de-interventie-de-grote-zomerfinale",
@@ -1595,14 +1778,6 @@
     "genre": "stand-up"
   },
   {
-    "id": "familiegeheimen-jennifer-evenhuis-renate-reijnders-en-margot-ros",
-    "titel": "Jennifer Evenhuis, Renate Reijnders en Margôt Ros",
-    "artiesten": [
-      "familiegeheimen"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "fatu-late-night-joel-gideon-rene-van-meurs-en-bugra-gedik",
     "titel": "Joël Gideon, René Van Meurs & Buğra Gedik",
     "artiesten": [
@@ -1649,12 +1824,34 @@
     "theater": "theater-walhalla"
   },
   {
+    "id": "finalistentournee-amsterdams-kleinkunst-festival-schouwburg-het-park",
+    "titel": "Finalistentournee Amsterdams Kleinkunst Festival",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "schouwburg-het-park"
+  },
+  {
+    "id": "finalistentournee-cameretten-60-jaar-schouwburg-het-park",
+    "titel": "Finalistentournee Cameretten 60 jaar",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "schouwburg-het-park"
+  },
+  {
     "id": "firma-frictie-i-ll-be-your-daddy",
     "titel": "I'll be your daddy",
     "artiesten": [
       "firma-frictie"
     ],
     "genre": "kleinkunst"
+  },
+  {
+    "id": "firma-lampo-doeve-van-stonehenge",
+    "titel": "Doeve van Stonehenge",
+    "artiesten": [
+      "firma-lampo"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "firma-weijland-jack-weijkamp-sta-op-komediant",
@@ -1695,6 +1892,14 @@
       "foil-arms-and-hog"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "frans-miggelbrink-hulde",
+    "titel": "Hulde",
+    "artiesten": [
+      "frans-miggelbrink"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "fred-van-leer-ik-weet-het-eigenlijk-niet",
@@ -1816,6 +2021,13 @@
     "genre": "stand-up"
   },
   {
+    "id": "griffioen-de-stoep-cabaret-festival-theater-de-stoep",
+    "titel": "Griffioen De Stoep Cabaret Festival",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-de-stoep"
+  },
+  {
     "id": "groenenberg-en-de-jong-de-contributie",
     "titel": "De Contributie",
     "artiesten": [
@@ -1874,6 +2086,14 @@
   {
     "id": "guido-weijers-oudejaarsconference-2026",
     "titel": "Oudejaarsconference 2026",
+    "artiesten": [
+      "guido-weijers"
+    ],
+    "genre": "oudejaarsconference"
+  },
+  {
+    "id": "guido-weijers-oudejaarsconferentie",
+    "titel": "Oudejaarsconferentie",
     "artiesten": [
       "guido-weijers"
     ],
@@ -1980,12 +2200,33 @@
     "genre": "cabaret"
   },
   {
+    "id": "het-gilde-theater-het-pakhuis",
+    "titel": "Het Gilde",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-het-pakhuis"
+  },
+  {
     "id": "het-nut-de-orde-van-de-dag-15",
     "titel": "De Orde van de Dag #15",
     "artiesten": [
       "het-nut"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "het-parkstad-limburg-sterreheim-buuttegala-theater-heerlen",
+    "titel": "Het Parkstad Limburg Sterreheim Buuttegala",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-heerlen"
+  },
+  {
+    "id": "het-sittards-kampsvanbaar-buuttegala-theater-sittard",
+    "titel": "Het Sittards KampsVanBaar Buuttegala",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-sittard"
   },
   {
     "id": "hokjesdenker-we-zien-het-wel-even-geannuleerd",
@@ -2004,19 +2245,19 @@
     ]
   },
   {
+    "id": "hoorn-lacht-theater-het-pakhuis",
+    "titel": "Hoorn Lacht",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-het-pakhuis"
+  },
+  {
     "id": "huisgenoten-de-nieuwe-romantische-comedy",
     "titel": "De nieuwe romantische comedy",
     "artiesten": [
       "huisgenoten"
     ],
     "genre": "stand-up"
-  },
-  {
-    "id": "humo-s-comedy-cup-finalistentour-cc-de-schakel",
-    "titel": "Humo's Comedy Cup Finalistentour",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "cc-de-schakel"
   },
   {
     "id": "huub-smit-en-gurkan-kucuksenturk-zei-je-dat-echt",
@@ -2245,6 +2486,16 @@
     "genre": "cabaret"
   },
   {
+    "id": "jennifer-evenhuis-renate-reijnders-margot-ros-familiegeheimen",
+    "titel": "Familiegeheimen",
+    "artiesten": [
+      "jennifer-evenhuis",
+      "renate-reijnders",
+      "margot-ros"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "jeroen-leenders-de-jeroen-leenders-experience",
     "titel": "De Jeroen Leenders Experience",
     "artiesten": [
@@ -2317,6 +2568,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "jim-de-groot-en-sebas-wolfensberger-cabarock-de-liefde",
+    "titel": "CabaRock - De Liefde",
+    "artiesten": [
+      "jim-de-groot-en-sebas-wolfensberger"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "jimmy-carr-chambers-touring-presents",
     "titel": "Chambers Touring presents",
     "artiesten": [
@@ -2353,6 +2612,14 @@
     "titel": "De Kwaadste Niet",
     "artiesten": [
       "jochen-otten"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "joel-borelli-joie-de-vivre",
+    "titel": "Joie de vivre",
+    "artiesten": [
+      "joel-borelli"
     ],
     "genre": "cabaret"
   },
@@ -2402,7 +2669,15 @@
     "artiesten": [
       "johan-goossens"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Goossens kijkt met een even ontroerende als grappige mildheid naar zijn eigen tekortkomingen.",
+        "bron": "https://castellum.nl/theater/johan-goossens-het-volle-leven"
+      }
+    ]
   },
   {
     "id": "johnny-de-mol-goed-dat-jij-bestaat",
@@ -2411,6 +2686,14 @@
       "johnny-de-mol"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "johnny-trash-johnny-trash-tweede-jeugd",
+    "titel": "Johnny Trash' tweede jeugd",
+    "artiesten": [
+      "johnny-trash"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "joosen-en-de-jager-niks-aan-het-handje",
@@ -2597,6 +2880,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "khalid-alterch-live-in-theater",
+    "titel": "Live in Theater",
+    "artiesten": [
+      "khalid-alterch"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "kiem-theater-bellevue",
     "titel": "Kiem",
     "artiesten": [],
@@ -2697,6 +2988,20 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "cpunt"
+  },
+  {
+    "id": "knock-out-comedy-crew-theater-heerlen",
+    "titel": "Knock Out Comedy Crew",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "theater-heerlen"
+  },
+  {
+    "id": "knock-out-comedy-crew-theater-sittard",
+    "titel": "Knock Out Comedy Crew",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "theater-sittard"
   },
   {
     "id": "kobra-theaterproducties-baby-reindeer",
@@ -2808,6 +3113,13 @@
       "leids-cabaret-festival"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "leids-cabaret-festival-goudse-schouwburg",
+    "titel": "Leids Cabaret Festival",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "goudse-schouwburg"
   },
   {
     "id": "leids-cabaret-festival-halve-finale",
@@ -3062,6 +3374,15 @@
     "genre": "cabaret"
   },
   {
+    "id": "maddie-venema-daan-fares-duoprogramma-podium-putman",
+    "titel": "Duoprogramma Podium Putman",
+    "artiesten": [
+      "maddie-venema",
+      "daan-fares"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "maddie-venema-lex-van-wieren-happen-en-lachen",
     "titel": "Happen & Lachen",
     "artiesten": [
@@ -3203,6 +3524,12 @@
     "genre": "cabaret",
     "recensies": [
       {
+        "medium": "De Limburger",
+        "sterren": null,
+        "citaat": "4 van 5 sterren",
+        "bron": "https://www.plt.nl/programma/martijn-crins-hé-fijn-reprise/03-11-2026-20-30"
+      },
+      {
         "medium": "de Volkskrant",
         "sterren": null,
         "citaat": "Hè Fijn is een energiek en erg grappig spervuur aan situaties die Martijn Crins niet helemaal kan overzien...een groot, specifiek talent voor het loslaten van absurde fantasieën op de alledaagse gang.",
@@ -3238,27 +3565,7 @@
     "artiesten": [
       "martijn-koning"
     ],
-    "genre": "cabaret",
-    "recensies": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Koning toont zijn grote verteltalent",
-        "bron": "https://www.theaterdeveste.nl/programma/overprikkeld-bsxp"
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Binnen het genre van de stand-up staat Koning aan de top.",
-        "bron": "https://www.theaterdeveste.nl/programma/overprikkeld-bsxp"
-      },
-      {
-        "medium": "Trouw",
-        "sterren": null,
-        "citaat": "Koning is een meester in het vinden van humor in alledaagse situaties.",
-        "bron": "https://www.theaterdeveste.nl/programma/overprikkeld-bsxp"
-      }
-    ]
+    "genre": "cabaret"
   },
   {
     "id": "masters-of-comedy-bij-southend-comedy-club-amsterdam-southend-comedy-club",
@@ -3311,6 +3618,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "medammecour-on-tour-jubileumfeest-11-x-medammecour",
+    "titel": "jubileumfeest: 11 X Medammecour",
+    "artiesten": [
+      "medammecour-on-tour"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "meester-mark-later-word-ik-7",
     "titel": "Later word ik 7",
     "artiesten": [
@@ -3354,7 +3669,7 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Merijn Scholten brengt een hilarische ode aan de lanterfantende kudde",
-        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/merijn-scholten-lemming"
+        "bron": "https://theaterdestoep.nl/voorstelling/merijn-scholten-2627"
       }
     ]
   },
@@ -3531,6 +3846,13 @@
     "genre": "stand-up"
   },
   {
+    "id": "najib-en-roue-alles-is-comedy-goudse-schouwburg",
+    "titel": "Najib & Roué – Alles is comedy",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "goudse-schouwburg"
+  },
+  {
     "id": "naomi-antonius-geen-woorden-voor-over-de-illusie-van-inclusie",
     "titel": "Geen woorden voor - over de illusie van inclusie",
     "artiesten": [
@@ -3651,6 +3973,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "noord-hollandse-comedy-show-schouwburg-het-park",
+    "titel": "Noord-Hollandse Comedy Show",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "schouwburg-het-park"
+  },
+  {
     "id": "nour-hajjar-live-in-amsterdam-dawa-ahmar",
     "titel": "Dawa ahmar",
     "artiesten": [
@@ -3709,6 +4038,14 @@
     "artiesten": [],
     "genre": "open-mic",
     "theater": "comedy-cafe-amsterdam"
+  },
+  {
+    "id": "oscar-smit-427-000",
+    "titel": "€ 427.000,-",
+    "artiesten": [
+      "oscar-smit"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "oscar-smit-472-000",
@@ -4007,11 +4344,12 @@
     "genre": "cabaret"
   },
   {
-    "id": "ratatatata-de-harmonie",
-    "titel": "Ratatatata!",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "de-harmonie"
+    "id": "rayen-en-friends-wonderful-christmas-time",
+    "titel": "Wonderful Christmas time",
+    "artiesten": [
+      "rayen-en-friends"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "rayen-panday-en-friends-wonderful-christmastime",
@@ -4116,6 +4454,14 @@
       "renske-kruitbosch"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "renske-van-dijk-kankerwijf",
+    "titel": "Kankerwijf",
+    "artiesten": [
+      "renske-van-dijk"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "richard-groenendijk-gelukkig-heb-je-mij-nog",
@@ -4278,6 +4624,14 @@
         "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/roel-jos-maalderink/"
       }
     ]
+  },
+  {
+    "id": "roger-lataster-en-raymond-clement-premiere-de-graaf-van-swalpenziele",
+    "titel": "Première (De graaf van Swalpenziële)",
+    "artiesten": [
+      "roger-lataster-en-raymond-clement"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "rogier-bak-back-to-the-future",
@@ -4749,6 +5103,16 @@
     "genre": "stand-up"
   },
   {
+    "id": "sven-de-ridder-fokke-van-der-meulen-een-verrassende-gast-be-de-moppenkoning",
+    "titel": "De Moppenkoning",
+    "artiesten": [
+      "sven-de-ridder",
+      "fokke-van-der-meulen",
+      "een-verrassende-gast-be"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "swit-tori-swit-tori",
     "titel": "Swit Tori",
     "artiesten": [
@@ -4832,6 +5196,16 @@
     "artiesten": [
       "theo-maassen",
       "ilse-warringa",
+      "plien",
+      "bianca"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "theo-maassen-plien-bianca-ratatatata",
+    "titel": "Ratatatata!",
+    "artiesten": [
+      "theo-maassen",
       "plien",
       "bianca"
     ],
@@ -5001,6 +5375,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "tis-hier-geen-hotel-3-schouwburg-het-park",
+    "titel": "Tis hier geen hotel 3",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "schouwburg-het-park"
+  },
+  {
     "id": "tobi-kooiman-best-of-4",
     "titel": "Best of 4",
     "artiesten": [
@@ -5026,6 +5407,14 @@
   {
     "id": "twente-plat-lachen-is-gezond",
     "titel": "Lachen is gezond",
+    "artiesten": [
+      "twente-plat"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "twente-plat-twentse-humor-op-z-n-best",
+    "titel": "Twentse humor op z`n best",
     "artiesten": [
       "twente-plat"
     ],
@@ -5120,14 +5509,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "viggo-waas-en-eddie-b-wahr-en-kees-van-der-vooren-eigenlijk",
-    "titel": "Eigenlijk",
-    "artiesten": [
-      "viggo-waas-en-eddie-b-wahr-en-kees-van-der-vooren"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "vlamousse-het-goede-voorbeeld",
     "titel": "Het goede voorbeeld",
     "artiesten": [
@@ -5194,11 +5575,39 @@
     "genre": "cabaret"
   },
   {
+    "id": "vrouwejaars-2026-stadsschouwburg-groningen",
+    "titel": "Vrouwejaars 2026",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "stadsschouwburg-groningen"
+  },
+  {
+    "id": "vrouwejaars-2026-stadsschouwburg-utrecht",
+    "titel": "Vrouwejaars 2026",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "stadsschouwburg-utrecht"
+  },
+  {
+    "id": "vrouwejaars-2026-theater-sittard",
+    "titel": "Vrouwejaars 2026",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "theater-sittard"
+  },
+  {
     "id": "vrouwejaars-2026-theater-zuidplein",
     "titel": "Vrouwejaars 2026",
     "artiesten": [],
     "genre": "cabaret",
     "theater": "theater-zuidplein"
+  },
+  {
+    "id": "vrouwejaars-goudse-schouwburg",
+    "titel": "Vrouwejaars",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "goudse-schouwburg"
   },
   {
     "id": "vrouwejaars-kleine-komedie",
@@ -5351,6 +5760,14 @@
     "genre": "oudejaarsconference"
   },
   {
+    "id": "yannick-noben-geef-acht-2",
+    "titel": "Geef Acht + 2",
+    "artiesten": [
+      "yannick-noben"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "yannis-pappas-live-southend-comedy-club",
     "titel": "Yannis Pappas Live",
     "artiesten": [],
@@ -5404,15 +5821,6 @@
         "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer"
       }
     ]
-  },
-  {
-    "id": "yora-rienstra-vera-marijt-vrouwejaars-2026",
-    "titel": "Vrouwejaars 2026",
-    "artiesten": [
-      "yora-rienstra",
-      "vera-marijt"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "yunus-aktas-nieuw-programma",

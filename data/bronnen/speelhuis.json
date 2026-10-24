@@ -1,0 +1,408 @@
+{
+  "bron": "speelhuis",
+  "naam": "Theater Het Speelhuis",
+  "opgehaald": "2026-10-24",
+  "theaters": [
+    {
+      "id": "theater-het-speelhuis",
+      "naam": "Theater Het Speelhuis",
+      "plaats": "Helmond",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://theaterspeelhuis.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Gerrie Smits"
+      ],
+      "titel": "Oudejaarsconference 2026: KLEM",
+      "genre": "oudejaarsconference",
+      "datum": "2026-11-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/gerrie-smits-13166"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Jochen Otten"
+      ],
+      "titel": "De kwaadste niet",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/jochen-otten-13146"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2027-01-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/remko-vrijdag-13158"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Iris Rulkens"
+      ],
+      "titel": "Van Harte!",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/iris-rulkens-13168"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is boos",
+      "genre": "cabaret",
+      "datum": "2027-02-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/esther-van-der-voort-13170"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/nabil-13171"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "De Cabaretclub"
+      ],
+      "titel": "Op z'n Brabants",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/de-cabaretclub-13172"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Tineke Schouten"
+      ],
+      "titel": "Femme Vitaal",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/tineke-schouten-13208"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Tineke Schouten"
+      ],
+      "titel": "Femme Vitaal",
+      "genre": "cabaret",
+      "datum": "2026-11-15",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/tineke-schouten-13207"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Roel C. Verburg"
+      ],
+      "titel": "Slechtste liedjes van de straat",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/roel-c-verburg-13193"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Thijs Kemperink"
+      ],
+      "titel": "Tot het uiterste gedreven",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/thijs-kemperink-13194"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Huub Smit & Gurkan Küçüksentürk"
+      ],
+      "titel": "Zei je dat echt?",
+      "genre": "stand-up",
+      "datum": "2027-04-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/huub-smit-gurkan-kucuksentur-13204"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Max van den Burg"
+      ],
+      "titel": "Maxikozi",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/max-van-den-burg-13225"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Marie Koet"
+      ],
+      "titel": "Eindspel",
+      "genre": "cabaret",
+      "datum": "2027-10-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/marie-koet-13236"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2026-10-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://theaterspeelhuis.nl/programma/rayen-panday-13237"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Luuk Weggemans"
+      ],
+      "titel": "Lach maar om mij",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/luuk-weggemans-13238"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De Grote Jubileumshow",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/jandino-13264"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Freek de Jonge"
+      ],
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/freek-de-jonge-13265"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Jörgen Raymann"
+      ],
+      "titel": "BIG YARI: Welkom thuis, waar niemand op je zit te wachten",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/jorgen-raymann-13266"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Beth & Flo"
+      ],
+      "titel": "Zoveel meer",
+      "genre": "cabaret",
+      "datum": "2026-10-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/beth-flo-13272"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/andries-tunru-13273"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Fimme Bakker"
+      ],
+      "titel": "Zwaargewicht",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/fimme-bakker-13274"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Stefan Hendrikx"
+      ],
+      "titel": "In perspectief",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/stefan-hendrikx-13275"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Altijd Aan",
+      "genre": "cabaret",
+      "datum": "2026-11-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/pieter-verelst-13281"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "De Vrouwejaars"
+      ],
+      "titel": "De blik op 2026 door de ogen van vrouwen!",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/de-vrouwejaars-13282"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Ronald Snijders"
+      ],
+      "titel": "Leven met humor",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/ronald-snijders-13284"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Ramon Chatrer"
+      ],
+      "titel": "Volk",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/ramon-chatrer-13285"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Marjolijn van Kooten"
+      ],
+      "titel": "Aan mij zal het niet liggen",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/marjolijn-van-kooten-13286"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Lonne Gosling"
+      ],
+      "titel": "Morgen weer een dag",
+      "genre": "cabaret",
+      "datum": "2027-02-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/lonne-gosling-13337"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Lonne Gosling"
+      ],
+      "titel": "Morgen weer een dag",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/lonne-gosling-13336"
+    }
+  ],
+  "recensies": {}
+}

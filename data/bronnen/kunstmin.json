@@ -1,0 +1,694 @@
+{
+  "bron": "kunstmin",
+  "naam": "Kunstmin",
+  "opgehaald": "2026-10-24",
+  "theaters": [
+    {
+      "id": "kunstmin",
+      "naam": "Kunstmin",
+      "plaats": "Dordrecht",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://www.kunstmin.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/rundfunk-wagyu/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een snotje",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/kim-karssen-god-is-een-snotje/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Eigenlijk"
+      ],
+      "titel": "Viggo Waas, Eddie B. Wahr & Kees van der Vooren",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/viggo-waas-eddie-b-wahr-kees-van-der-vooren-eigenlijk/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "cabaret",
+      "datum": "2027-05-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/roue-verveer-vanzelfsprekend/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "cabaret",
+      "datum": "2027-05-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/roue-verveer-vanzelfsprekend/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/nienke-plas-appeltje-eitje/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Kim Schuddeboom"
+      ],
+      "titel": "Hardleers",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/kim-schuddeboom/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Iris Rulkens"
+      ],
+      "titel": "Van Harte!",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/iris-rulkens/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Jeannine La Rose"
+      ],
+      "titel": "Meer",
+      "genre": "cabaret",
+      "datum": "2027-04-30",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/jeannine-la-rose-meer/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Heel Holland Hoopt",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/marja-van-katendrecht-heel-holland-hoopt/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-04-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/merijn-scholten-lemming/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Andries Tunru"
+      ],
+      "titel": "Ravot",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/andries-tunru-ravot/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Arie & Silvester"
+      ],
+      "titel": "Breken de tent af!",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/arie-silvester-breken-de-tent-af/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Leids Cabaret Festival"
+      ],
+      "titel": "Finalistentour 2027",
+      "genre": "cabaret",
+      "datum": "2027-04-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/leids-cabaret-festival-finalistentour-2027/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "ZIJ & Aron Elstak"
+      ],
+      "titel": "Match",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/zij-aron-elstak-match/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles Onder Controle",
+      "genre": "cabaret",
+      "datum": "2027-04-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/van-vleuten-en-van-muiswinkel/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/de-broers-van-arkel-zeg-maar-u/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Daan van der Hoeven"
+      ],
+      "titel": "Mensenmens",
+      "genre": "cabaret",
+      "datum": "2027-04-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/daan-van-der-hoeven-mensenmens/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "Juk",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/jeroens-clan-juk/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-03-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/martijn-koning-overprikkeld/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/selma-visscher-trekvogel/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "André Manuel"
+      ],
+      "titel": "De Eenzame Ziel",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/andre-manuel-de-eenzame-ziel/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is boos",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/esther-van-der-voort-mama-is-boos/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/richard-groenendijk-gelukkig-heb-je-mij-nog/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Richard Groenendijk"
+      ],
+      "titel": "Gelukkig heb je mij nog",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/richard-groenendijk-gelukkig-heb-je-mij-nog/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "voor Iedereen",
+      "genre": "cabaret",
+      "datum": "2027-03-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.kunstmin.nl/voorstellingen/micha-wertheim-voor-iedereen-reprise/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Stefan Hendrikx"
+      ],
+      "titel": "In Perspectief",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/stefan-hendrikx-in-perspectief/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Janneke de Bijl"
+      ],
+      "titel": "Pluk eventueel de dag",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/janneke-de-bijl-pluk-eventueel-de-dag/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Elfie Tromp"
+      ],
+      "titel": "Aai Poesje Aai Poesje",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.kunstmin.nl/voorstellingen/elfie-tromp-aai-poesje-aai-poesje-tryout/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Elfie Tromp"
+      ],
+      "titel": "Aai Poesje Aai Poesje",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/elfie-tromp-aai-poesje-aai-poesje/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Ricky Risolles"
+      ],
+      "titel": "Ricky Risolles 3 - Niet zo Indiscreet…",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/ricky-risolles-ricky-risolles-3-niet-zo-indiscreet/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Maartje en Kine"
+      ],
+      "titel": "De Bingo Show",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/maartje-en-kine-de-bingo-show/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Ruud Smulders"
+      ],
+      "titel": "Rüdsichtslos",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/ruud-smulders-rudsichtslos/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Louise Korthals"
+      ],
+      "titel": "Korthals in stukken",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/louise-korthals-korthals-in-stukken/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "DE GROTE JUBILEUMSHOW - Jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/jandino-de-grote-jubileumshow-jandino-20-jaar/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/jan-beuving-dekpunt/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Remko Vrijdag"
+      ],
+      "titel": "Marko Maandag",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/remko-vrijdag-marko-maandag/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Isabelle Kafando"
+      ],
+      "titel": "Rof daaimund",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/rof-daaimund-isabelle-kafando/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-01-27",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/van-der-laan-woe-dinsdagmiddag/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn Lieve Achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/ronald-goedemondt-mijn-lieve-achterdocht/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Rene van Meurs"
+      ],
+      "titel": "Noodzakelijk kwaad",
+      "genre": "cabaret",
+      "datum": "2027-01-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.kunstmin.nl/voorstellingen/rene-van-meurs-noodzakelijk-kwaad-reprise/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Hanneke Drenth en Dianne Liesker"
+      ],
+      "titel": "Tis Hier Geen Hotel 3",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/hanneke-drenth-en-dianne-liesker-tis-hier-geen-hotel-3/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.kunstmin.nl/voorstellingen/peter-pannekoek-demonen-try-out/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "try-out",
+      "bron": "https://www.kunstmin.nl/voorstellingen/peter-pannekoek-demonen-try-out/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "De Baas",
+      "genre": "cabaret",
+      "datum": "2026-12-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/lisa-ostermann-de-baas/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/christel-de-laat-kende-da/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Christel de Laat"
+      ],
+      "titel": "Kende da!?",
+      "genre": "cabaret",
+      "datum": "2026-12-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/christel-de-laat-kende-da/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Blauwe Vinkjes"
+      ],
+      "titel": "Poeha",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/blauwe-vinkjes-poeha/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/kasper-van-der-laan-ruim/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Café Komedie"
+      ],
+      "titel": "Stand-Up Night",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/cafe-komedie-stand-up-club/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Hè Fijn",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/martijn-crins-he-fijn/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Johan Goossens"
+      ],
+      "titel": "Het Volle Leven",
+      "genre": "cabaret",
+      "datum": "2026-10-31",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/johan-goossens-het-volle-leven/"
+    }
+  ],
+  "recensies": {}
+}
