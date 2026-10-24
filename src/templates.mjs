@@ -893,6 +893,50 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       </section>`;
   }
 
+  // Veelgestelde vragen over één zaal; alleen vragen waar de agenda een antwoord op heeft.
+  function theaterVragen(t, list) {
+    if (!list.length) return [];
+    const naam = esc(t.naam);
+    const metArtiest = list.filter((g) => V.get(g.voorstelling).artiesten.length);
+    const artiestTel = telPer(metArtiest, (g) => V.get(g.voorstelling).artiesten[0]).filter(([id]) => !GEEN_CABARETIER.test(A.get(id).naam));
+    // "Jochem Myjer op 26 en 27 oktober, Rundfunk op 30 november en 1 december"
+    const datums = (d) => {
+      d = d.slice(0, 3);
+      const zelfdeMaand = d.every((x) => x.slice(0, 7) === d[0].slice(0, 7));
+      return zelfdeMaand && d.length > 1
+        ? `${opsomming(d.map((x) => String(Number(x.slice(8)))))} ${fmt.dayMonth(d[0]).replace(/^\d+\s*/, "")}`
+        : opsomming(d.map((x) => fmt.dayMonth(x)));
+    };
+    const perNaam = (gigs, max) => {
+      const m = new Map();
+      for (const g of gigs) { const n = esc(artistNames(g.voorstelling) || V.get(g.voorstelling).titel); m.set(n, [...(m.get(n) || []), g.datum]); }
+      return opsomming([...m].slice(0, max).map(([n, d]) => `${n} op ${datums(d)}`));
+    };
+    const link = (id) => `<a href="/artiesten/${id}/">${esc(A.get(id).naam)}</a>`;
+    const wat = (g) => `${esc(artistNames(g.voorstelling) || V.get(g.voorstelling).titel)}${echteTitel(g.voorstelling) ? ` met <em>${esc(echteTitel(g.voorstelling))}</em>` : ""}`;
+    const vragen = [];
+    if (artiestTel.length) vragen.push([`Welke cabaretiers spelen in ${t.naam}?`, artiestTel.length === 1
+      ? `Op het programma staat ${link(artiestTel[0][0])}.`
+      : `${artiestTel.length} artiesten, onder wie ${opsomming(artiestTel.slice(0, 8).map(([id]) => link(id)))}.`]);
+    const e = list[0];
+    vragen.push([`Wat is de eerstvolgende voorstelling in ${t.naam}?`, `${wat(e)}, op ${fmt.full(e.datum)}${e.tijd ? ` om ${e.tijd}` : ""}.${e.status === "uitverkocht" ? " Deze voorstelling is uitverkocht." : ""}`]);
+    const maand = list[0].datum.slice(0, 7), inMaand = list.filter((g) => g.datum.startsWith(maand));
+    if (inMaand.length > 1) vragen.push([`Wat is er in ${maandNaam(maand)} te zien in ${t.naam}?`, `${plural(inMaand.length, "voorstelling", "voorstellingen")}: ${perNaam(inMaand, 5)}${new Set(inMaand.map((g) => artistNames(g.voorstelling))).size > 5 ? " en meer" : ""}.`]);
+    const oud = list.filter((g) => V.get(g.voorstelling).genre === "oudejaarsconference");
+    const oudIds = [...new Set(oud.map((g) => V.get(g.voorstelling).artiesten[0]).filter(Boolean))];
+    if (oud.length) vragen.push([`Is er een oudejaarsconference in ${t.naam}?`, `Ja: ${opsomming(oudIds.slice(0, 5).map(link))} ${oudIds.length === 1 ? "speelt" : "spelen"} er een oudejaarsvoorstelling, de eerste op ${fmt.full(oud[0].datum)}.`]);
+    const tryouts = bijzonder(list, "try-out");
+    if (tryouts.length) vragen.push([`Zijn er try-outs in ${t.naam}?`, `${tryouts.length === 1 ? `Ja, één: van ${esc(artistNames(tryouts[0].voorstelling))} op ${fmt.full(tryouts[0].datum)}` : `Ja, ${tryouts.length}, onder meer van ${opsomming([...new Set(tryouts.map((g) => esc(artistNames(g.voorstelling))))].filter(Boolean).slice(0, 4))}`}. Bij een try-out is de voorstelling nog in ontwikkeling, en kaartjes zijn vaak goedkoper.`]);
+    const uit = list.filter((g) => g.status === "uitverkocht");
+    if (uit.length) vragen.push([`Welke voorstellingen in ${t.naam} zijn uitverkocht?`, `${uit.length} van de ${list.length}, onder meer ${perNaam(uit, 4)}. Soms komen er kaarten vrij via een wachtlijst bij het theater.`]);
+    const soort = ZAALSOORT[t.soort];
+    vragen.push([`Waar ligt ${t.naam}?`, `${naam} is ${soort ? `een ${soort} ` : ""}in ${plaatsLink(t.plaats)}, ${LANDEN[t.land]}.${t.website ? ` Het adres en de bereikbaarheid staan op <a href="${esc(t.website)}" rel="noopener">de website van ${naam}</a>.` : ""}`]);
+    vragen.push([`Hoe koop ik kaarten voor ${t.naam}?`, `Kaarten koop je bij ${naam} zelf. Klik bij een voorstelling op de knop <em>Tickets</em>: die opent de speellijst van het theater, waar je kaarten kunt bestellen.`]);
+    const buren = zalenMetData.filter((x) => x.plaats === t.plaats && x.id !== t.id);
+    if (buren.length) vragen.push([`Waar is er nog meer cabaret in ${t.plaats}?`, `Ook in ${opsomming(buren.slice(0, 5).map((x) => theaterLink(x.id)))}. Alle voorstellingen staan bij <a href="/plaatsen/${plaatsId(t.plaats)}/">cabaret en comedy in ${esc(t.plaats)}</a>.`]);
+    return vragen;
+  }
+
   // Rechtenvrije foto (Wikimedia Commons) met verplichte naamsvermelding en licentie.
   const fotoHtml = (a) => `<figure class="artiest-foto">
           <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
@@ -1087,11 +1131,12 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
         <div id="gigs">${monthGroups(list, { showVenue: false })}</div>
         ${list.length > 12 ? leegBlok : ""}
         ${theaterTekst(t, list)}
+        ${list.length ? faqHtml(theaterVragen(t, list), `Veelgestelde vragen over ${t.naam}`) : ""}
       </div>`;
     const desc = list.length
       ? kort(`Cabaret en comedy in ${t.naam}${t.naam.includes(t.plaats) ? "" : ` in ${t.plaats}`}: ${plural(list.length, "voorstelling", "voorstellingen")}${list.length > 1 ? ` van ${fmt.full(list[0].datum)} tot ${fmt.full(list.at(-1).datum)}` : ` op ${fmt.full(list[0].datum)}`}. Bekijk het programma.`)
       : `Cabaret en comedy in ${t.naam} (${t.plaats}).`;
-    return layout({ title: `${t.naam}${t.naam.includes(t.plaats) ? "" : ` ${t.plaats}`}: cabaret en comedy`, description: desc, path: `/theaters/${t.id}/`, section: "theaters", body, schema: { kruimels: [["Theaters", "/theaters/"], [t.naam, `/theaters/${t.id}/`]], hoofd: { "@id": zaalLd(t.id)["@id"] }, extra: [{ ...zaalLd(t.id), containedInPlace: plaatsLd(t.plaats) }, ...eventsLd(list)] } });
+    return layout({ title: `${t.naam}${t.naam.includes(t.plaats) ? "" : ` ${t.plaats}`}: cabaret en comedy`, description: desc, path: `/theaters/${t.id}/`, section: "theaters", body, schema: { kruimels: [["Theaters", "/theaters/"], [t.naam, `/theaters/${t.id}/`]], hoofd: { "@id": zaalLd(t.id)["@id"] }, extra: [{ ...zaalLd(t.id), containedInPlace: plaatsLd(t.plaats) }, ...eventsLd(list), ...(list.length ? [faqLd(theaterVragen(t, list), `/theaters/${t.id}/`)] : [])] } });
   }
 
   function about() {
