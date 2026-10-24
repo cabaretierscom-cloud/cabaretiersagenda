@@ -645,6 +645,15 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const belgen = items.filter(({ a, list }) => a.land === "BE" || list.every((g) => T.get(g.theater).land === "BE"));
     const andere = Object.entries(CABARETIER_PAGINAS).filter(([k]) => k !== soort).map(([, p]) => `<a href="${p.pad}">${esc(p.naam.toLowerCase())}</a>`);
     const zin = (x) => `${artiestLink(x.a)} (${keer(x.list.length)})`;
+    const standup = opTournee.filter(({ list }) => list.some((g) => V.get(g.voorstelling).genre === "stand-up"));
+    // Een naam met gewone woorden erin ("DDT houdt uitverkoop") is een titel, geen artiest.
+    const LOS = new Set(["van", "de", "den", "der", "het", "ten", "ter", "en", "&", "la", "le"]);
+    const lijktArtiest = (n) => n.split(/\s+/).every((w) => !/^\p{Ll}/u.test(w) || LOS.has(w));
+    const vlaams = opTournee.filter((x) => belgen.includes(x) && lijktArtiest(x.a.naam));
+    const mannen = cabaretiers.filter(CABARETIER_PAGINAS.man.filter).sort((x, y) => y.list.length - x.list.length);
+    const vrouwen = cabaretiers.filter(CABARETIER_PAGINAS.vrouw.filter).sort((x, y) => y.list.length - x.list.length);
+    const festivalLinks = festivalsMetData.slice(0, 4).map(({ f }) => `<a href="/festivals/${f.id}/">${esc(f.naam)}</a>`);
+    const namen = (lijst, n) => opsomming(lijst.slice(0, n).map(({ a }) => artiestLink(a)));
 
     const intro = {
       alle: `Op Cabaretiers.com vind je ${items.length} cabaretiers en comedians die de komende tijd in Nederland en België op het podium staan, samen goed voor ${plural(gigs.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}. Van grote namen in de schouwburg tot nieuw talent in een kleine zaal: per cabaretier zie je waar en wanneer je kunt gaan kijken.`,
@@ -652,10 +661,31 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       man: `${items.length} mannelijke cabaretiers en comedians staan de komende tijd op het podium, samen goed voor ${plural(gigs.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}. Hieronder vind je ze allemaal, met hun speeldata in Nederland en België.`,
     }[soort];
 
-    // Lopende tekst, uit de gegevens van de agenda.
+    // Lopende tekst, uit de gegevens van de agenda. De kopjes volgen de zoektermen uit Search Console
+    // (cabaretier, Nederlandse cabaretiers, bekende cabaretiers, comedian, komiek, conferencier, stand-up, Vlaamse comedians).
     const tekst = [];
-    tekst.push(`<h2>${soort === "alle" ? "Cabaretiers in Nederland en België" : `${esc(P.naam)} op tournee`}</h2>
-        <p>${soort === "alle" ? "Een cabaretier maakt een avondvullende voorstelling met humor, verhalen, liedjes en vaak een scherpe kijk op de maatschappij. " : ""}Het vaakst te zien de komende tijd: ${opsomming(top.slice(0, 5).map(zin))}. De meeste voorstellingen zijn in ${opsomming(steden.slice(0, 4).map(([p, n]) => `${plaatsLink(p)} (${n})`))}${zalen.length ? `, en ${theaterLink(zalen[0][0])} programmeert ${P.wie} het vaakst` : ""}.</p>`);
+    const plaatsZin = `De meeste voorstellingen zijn in ${opsomming(steden.slice(0, 4).map(([p, n]) => `${plaatsLink(p)} (${n})`))}${zalen.length ? `, en ${theaterLink(zalen[0][0])} programmeert ${P.wie} het vaakst` : ""}.`;
+    if (soort === "alle") {
+      tekst.push(`<h2>Nederlandse cabaretiers</h2>
+        <p>Een cabaretier maakt een avondvullende voorstelling met humor, verhalen, liedjes en vaak een scherpe kijk op de maatschappij. Nederland en Vlaanderen hebben een rijke cabarettraditie, en elk seizoen gaan er honderden cabaretiers op tournee langs schouwburgen, theaters en comedyclubs. Op deze pagina staan alle cabaretiers die nu met een voorstelling in de agenda staan: ${items.length} in totaal.</p>
+        <h2>Bekende cabaretiers van dit moment</h2>
+        <p>De bekendste cabaretiers zijn vaak ook de drukste: ${opsomming(top.slice(0, 5).map(zin))} staan de komende tijd het vaakst op het podium. ${plaatsZin}</p>`);
+      if (mannen.length && vrouwen.length) tekst.push(`<h2>Cabaretiers: mannen en vrouwen</h2>
+        <p>Zoek je een mannelijke cabaretier, of juist een cabaretière? Bij de <a href="/alle-cabaretiers/mannen/">mannelijke cabaretiers</a> vind je onder anderen ${namen(mannen, 4)}. Bij de <a href="/alle-cabaretiers/vrouwen/">vrouwelijke cabaretiers</a> staan onder anderen ${namen(vrouwen, 4)}.</p>`);
+      tekst.push(`<h2>Cabaretier, comedian, komiek of conferencier?</h2>
+        <p>Een cabaretier speelt een voorstelling met een verhaal of thema, vaak met liedjes en serieuze momenten tussen de grappen. Een comedian of stand-upcomedian staat met een microfoon op het podium en brengt vooral grappen en verhalen, los van een decor. Komiek is het algemene woord voor iemand die mensen aan het lachen maakt. Een conferencier is een ouder woord voor een cabaretier die een avond aan elkaar praat; je kent het nog van de oudejaarsconference. Veel Nederlandse comedians en komieken doen allebei: cabaret én stand-up.</p>`);
+      if (standup.length) tekst.push(`<h2>Stand-upcomedians in Nederland</h2>
+        <p>Liever stand-upcomedy? Comedians als ${namen(standup, 6)} staan de komende tijd op het podium, in theaters en comedyclubs. In de <a href="/agenda/">agenda</a> zie je alle comedyavonden per maand.</p>`);
+      if (vlaams.length) tekst.push(`<h2>Comedians in Vlaanderen en België</h2>
+        <p>Ook in Vlaanderen en de rest van België staan comedians en cabaretiers op het podium, van Vlaamse stand-up tot Nederlandse cabaretiers op tournee. In België spelen de komende tijd onder anderen ${namen(vlaams, 8)}.</p>`);
+      if (festivalLinks.length) tekst.push(`<h2>Nieuwe en jonge cabaretiers</h2>
+        <p>Jonge cabaretiers beginnen vaak op een cabaretfestival. Daar strijden nieuwe talenten om een prijs en een plek in het theater. Bekijk de finalisten van ${opsomming(festivalLinks)} bij de <a href="/festivals/">cabaretfestivals</a>.</p>`);
+    } else {
+      tekst.push(`<h2>Bekende ${esc(P.wie)}</h2>
+        <p>Het vaakst te zien de komende tijd: ${opsomming(top.slice(0, 5).map(zin))}. ${plaatsZin}</p>`);
+      if (standup.length) tekst.push(`<h2>${soort === "vrouw" ? "Vrouwelijke" : "Mannelijke"} stand-upcomedians</h2>
+        <p>Niet alleen cabaret: ook ${soort === "vrouw" ? "vrouwelijke" : "mannelijke"} comedians als ${namen(standup, 5)} staan op het podium met stand-upcomedy.</p>`);
+    }
     if (oudejaars.length) tekst.push(`<h2>Oudejaarsconference</h2>
         <p>Aan het eind van het jaar blikken cabaretiers traditioneel terug in een oudejaarsconference. Dit seizoen spelen ${enMeer(oudejaars.map(({ a }) => artiestLink(a)), 6)} een oudejaarsvoorstelling.</p>`);
     if (tryouts.length) tekst.push(`<h2>Try-outs: als eerste kijken</h2>
@@ -668,22 +698,28 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       ["Wat is het verschil tussen cabaret en stand-up comedy?", "Cabaret is een avondvullende voorstelling met een rode draad, vaak met liedjes en een decor. Stand-up comedy is losser: een comedian vertelt grappen en verhalen, meestal alleen met een microfoon. Veel artiesten doen allebei; op deze site vind je ze samen."],
       ["Welke cabaretiers staan nu het vaakst op het podium?", `De komende tijd zijn ${opsomming(top.slice(0, 5).map(zin))} het vaakst te zien.`],
       ...(oudejaars.length ? [["Welke cabaretiers spelen een oudejaarsconference?", `Dit seizoen spelen onder meer ${opsomming(oudejaars.slice(0, 6).map(({ a }) => artiestLink(a)))} een oudejaarsvoorstelling.`]] : []),
+      ["Welke cabaretiers zijn er in Nederland?", `Op dit moment staan ${items.length} cabaretiers en comedians met voorstellingen in de agenda, van ${artiestLink(opTournee[0].a)} tot nieuw talent. De lijst van A tot Z hierboven toont ze allemaal, met hun speeldata.`],
+      ["Hoe schrijf je cabaretier?", "Cabaretier, met één b en één r, van het Franse woord cabaret. Schrijfwijzen als cabaratier, caberatier of caberetier zijn niet juist. Een vrouwelijke cabaretier is een cabaretière."],
+      ["Wat is een conferencier?", "Een conferencier is een ouder woord voor een cabaretier die een avond aan elkaar praat, met grappen en commentaar op de actualiteit. Het woord leeft voort in de oudejaarsconference."],
       ["Wat is een try-out?", `Een try-out is een voorstelling van een nieuw programma vóór de première. De cabaretier test dan wat werkt, en kaartjes zijn vaak goedkoper. Er staan nu ${plural(tryouts.length, "try-out", "try-outs")} in de agenda.`],
       ["Waar kan ik cabaretiers zien?", `In ${plural(tellers.zalen, "zaal", "zalen")} in ${plural(tellers.plaatsen, "plaats", "plaatsen")} in Nederland en België, van grote schouwburgen tot comedyclubs. Kijk per <a href="/plaatsen/">plaats</a> of per <a href="/theaters/">theater</a>.`],
+      ["Staan oude of overleden cabaretiers ook op de lijst?", "Nee. Deze lijst toont cabaretiers die nu met een voorstelling in de agenda staan. Wie niet meer optreedt, staat er niet bij."],
       ["Hoe actueel is deze lijst?", "De speellijsten van de theaters worden elke nacht opnieuw opgehaald. Elke speeldatum linkt naar de bron. Wijzigingen zijn altijd voorbehouden: controleer de datum bij het theater voordat je kaartjes koopt."],
     ] : [
       [soort === "vrouw" ? "Wie zijn bekende vrouwelijke cabaretiers?" : "Wie zijn bekende mannelijke cabaretiers?", `De komende tijd staan ${opsomming(top.slice(0, 6).map(zin))} het vaakst op het podium.`],
       ...(soort === "vrouw" ? [["Hoe heet een vrouwelijke cabaretier?", "Een vrouwelijke cabaretier heet een cabaretière. In het dagelijks taalgebruik wordt ook gewoon cabaretier gezegd."]] : []),
       [soort === "vrouw" ? "Welke cabaretières staan binnenkort in het theater?" : "Welke mannelijke cabaretiers staan binnenkort in het theater?", `Binnenkort: ${opsomming(binnenkort.map((g) => `${artiestLink(A.get(V.get(g.voorstelling).artiesten.find((id) => items.some((x) => x.a.id === id))))} op ${fmt.dayMonth(g.datum)} in ${esc(T.get(g.theater).plaats)}`))}.`],
       ...(oudejaars.length ? [[soort === "vrouw" ? "Welke vrouwelijke cabaretiers spelen een oudejaarsconference?" : "Welke mannelijke cabaretiers spelen een oudejaarsconference?", `Dit seizoen onder meer ${opsomming(oudejaars.slice(0, 6).map(({ a }) => artiestLink(a)))}.`]] : []),
-      ...(belgen.length ? [[soort === "vrouw" ? "Staan er ook Belgische cabaretières op deze lijst?" : "Staan er ook Belgische cabaretiers op deze lijst?", `Ja, onder meer ${opsomming(belgen.slice(0, 5).map(({ a }) => artiestLink(a)))}.`]] : []),
+      ...(belgen.length ? [[soort === "vrouw" ? "Spelen er ook cabaretières in België?" : "Spelen er ook cabaretiers in België?", `Ja, in België spelen de komende tijd onder meer ${opsomming(belgen.filter(({ a }) => lijktArtiest(a.naam)).slice(0, 5).map(({ a }) => artiestLink(a)))}.`]] : []),
       [soort === "vrouw" ? "Staat een cabaretière er niet tussen?" : "Staat een cabaretier er niet tussen?", `Deze lijst is gebaseerd op openbare gegevens van Wikipedia en Wikidata. Wie daar (nog) niet in staat, vind je bij <a href="/alle-cabaretiers/">alle cabaretiers</a> of in het overzicht van <a href="/artiesten/">alle artiesten</a>.`],
     ];
 
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">${esc(P.naam)}</h1><p>${intro}</p></div>
-      <p class="zie-ook">Bekijk ook de ${andere.join(", de ")} of <a href="/artiesten/">alle artiesten</a>.</p>
-      <h2 class="sub-head">${soort === "alle" ? "Populaire cabaretiers op tournee" : `Populaire ${esc(P.wie)} op tournee`}</h2>
+      ${soort === "alle"
+        ? `<p class="knoppen"><a class="btn ghost" href="/alle-cabaretiers/mannen/">Mannelijke cabaretiers</a><a class="btn ghost" href="/alle-cabaretiers/vrouwen/">Vrouwelijke cabaretiers</a></p>`
+        : `<p class="zie-ook">Bekijk ook de ${andere.join(", de ")} of <a href="/artiesten/">alle artiesten</a>.</p>`}
+      <h2 class="sub-head">${soort === "alle" ? "Bekende cabaretiers op tournee" : `Bekende ${esc(P.wie)} op tournee`}</h2>
       <div class="artists">${artiestKaarten(top)}</div>
       <h2 class="sub-head">${esc(P.naam)} van A tot Z</h2>
       ${azLijst(items, { zoekLabel: soort === "vrouw" ? "Zoek een cabaretière" : "Zoek een cabaretier" })}
@@ -693,10 +729,10 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       ${faqHtml(vragen)}
     </section>`;
     const kruimels = soort === "alle" ? [["Alle cabaretiers", P.pad]] : [["Alle cabaretiers", "/alle-cabaretiers/"], [soort === "vrouw" ? "Vrouwen" : "Mannen", P.pad]];
-    const titel = { alle: "Alle cabaretiers van Nederland en België", vrouw: "Vrouwelijke cabaretiers (cabaretières)", man: "Mannelijke cabaretiers" }[soort];
-    const desc = { alle: `${items.length} cabaretiers en comedians op tournee in Nederland en België, van A tot Z, met hun speeldata. Plus: wat is een cabaretier, try-outs en oudejaarsconferences.`,
-      vrouw: `${items.length} vrouwelijke cabaretiers en comedians op tournee, waaronder ${opsomming(top.slice(0, 3).map(({ a }) => a.naam))}. Bekijk al hun speeldata in Nederland en België.`,
-      man: `${items.length} mannelijke cabaretiers en comedians op tournee, waaronder ${opsomming(top.slice(0, 3).map(({ a }) => a.naam))}. Bekijk al hun speeldata in Nederland en België.` }[soort];
+    const titel = { alle: "Alle cabaretiers van Nederland en België", vrouw: "Vrouwelijke cabaretiers: lijst van bekende cabaretières", man: "Mannelijke cabaretiers: bekende Nederlandse cabaretiers" }[soort];
+    const desc = { alle: `Alle ${items.length} Nederlandse en Vlaamse cabaretiers en comedians op tournee, van A tot Z: bekende cabaretiers, mannen en vrouwen, stand-up en oudejaars, met speeldata.`,
+      vrouw: `Lijst van ${items.length} vrouwelijke cabaretiers op tournee, zoals ${opsomming(top.slice(0, 3).map(({ a }) => a.naam))}. Met al hun speeldata.`,
+      man: `${items.length} mannelijke cabaretiers en comedians op tournee, zoals ${opsomming(top.slice(0, 3).map(({ a }) => a.naam))}. Met al hun speeldata.` }[soort];
     return layout({ title: titel, description: desc, path: P.pad, section: "artiesten", body, schema: { type: "CollectionPage", kruimels,
       hoofd: lijstLd([...items].sort((x, y) => x.a.naam.localeCompare(y.a.naam, "nl")).map(({ a }) => [a.naam, `/artiesten/${a.id}/`])),
       extra: [faqLd(vragen, P.pad)] } });
