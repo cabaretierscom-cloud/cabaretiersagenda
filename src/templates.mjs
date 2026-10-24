@@ -25,6 +25,8 @@ const ICON = {
   doubt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17.5v.01"/></svg>',
   prev: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
   next: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>',
+  // Pijl naar rechtsboven: de link gaat naar een andere website.
+  extern: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg>',
 };
 
 // Beeldmerk (logo-ontwerp 15): de kleine c uit het woordmerklettertype in vier inktkleuren, met schuine
@@ -162,6 +164,14 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   // ---------- Bouwstenen ----------
 
+  // Knop naar de speellijst van de zaal (de bron), waar je kaarten koopt. Opent in een nieuw tabblad.
+  // Uitverkocht of geannuleerd: geen "Tickets", maar een omlijnde knop "Meer info".
+  function ticketKnop(g) {
+    const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
+    const wie = artistNames(g.voorstelling) || V.get(g.voorstelling).titel;
+    return `<a class="btn tickets${kopen ? "" : " ghost"}" href="${esc(g.bron)}" target="_blank" rel="noopener nofollow">${kopen ? "Tickets" : "Meer info"}${ICON.extern}<span class="visually-hidden">: ${esc(wie)} op ${fmt.full(g.datum)} in ${esc(T.get(g.theater).naam)} (externe website, opent in een nieuw tabblad)</span></a>`;
+  }
+
   function statusLabel(g) {
     if (g.status === "uitverkocht") return `<span class="status sold">${ICON.sold}Uitverkocht</span>`;
     if (g.status === "onzeker")
@@ -184,7 +194,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
         </div>
       </div>
       <div class="venue">${showVenue ? `<a href="/theaters/${t.id}/">${esc(t.naam)}</a><span><a href="/plaatsen/${plaatsId(t.plaats)}/">${esc(t.plaats)}</a>, ${LANDEN[t.land]}</span>` : `<span>${esc(GENRES[v.genre])}</span>`}</div>
-      <div class="side">${statusLabel(g)}<a class="source" href="${esc(g.bron)}" rel="noopener nofollow">Bron<span class="visually-hidden">: speellijst van ${esc(artistNames(g.voorstelling))} op ${fmt.full(g.datum)}</span></a></div>
+      <div class="side">${statusLabel(g)}${ticketKnop(g)}</div>
     </article>`;
   }
 
@@ -715,7 +725,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     if (!u) return "";
     return u === list.length ? " Alle voorstellingen zijn uitverkocht." : ` ${u} van de ${list.length} voorstellingen ${u === 1 ? "is" : "zijn"} al uitverkocht.`;
   };
-  const kaartenZin = "Kaarten koop je bij de zaal zelf: via de link <em>Bron</em> bij elke datum kom je op de speellijst van het theater. Cabaretiers.com werkt de agenda elke nacht bij.";
+  const kaartenZin = "Kaarten koop je bij de zaal zelf: via de knop <em>Tickets</em> bij elke datum kom je op de speellijst van het theater. Cabaretiers.com werkt de agenda elke nacht bij.";
 
   function artiestTekst(a, list) {
     if (!list.length) return "";
@@ -994,7 +1004,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
         <div class="prose">
           <p>Cabaretiers.com verzamelt alle aankomende cabaret- en comedyvoorstellingen in Nederland en België: theatercabaret, stand-up in comedyclubs en cafés, festivals en open mics. Je ziet per avond wie waar speelt, en per artiest, plaats of zaal de volledige speellijst.</p>
           <p>Op dit moment staan er ${tellers.speeldata.toLocaleString("nl-NL")} voorstellingen in de agenda, van ${tellers.artiesten} artiesten in ${tellers.zalen} zalen.</p>
-          <p>Elke speeldatum heeft een bron. Klik op <em>Bron</em> om de datum bij het theater of de artiest te controleren voordat je kaarten koopt. Datums waarover bronnen elkaar tegenspreken, staan gemarkeerd als <em>datum onzeker</em>.</p>
+          <p>Elke speeldatum heeft een bron. De knop <em>Tickets</em> brengt je naar die bron, de speellijst van het theater of de artiest: daar koop je kaarten en controleer je de datum. Datums waarover bronnen elkaar tegenspreken, staan gemarkeerd als <em>datum onzeker</em>.</p>
           <h2 id="aanmelden">Zelf voorstellingen aanmelden</h2>
           <p>Speel je zelf, of programmeer je een zaal of comedyclub? Binnenkort kun je hier je voorstellingen aanmelden of je speellijst koppelen.</p>
         </div>
