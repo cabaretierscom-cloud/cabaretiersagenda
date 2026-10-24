@@ -615,9 +615,9 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     man: { pad: "/alle-cabaretiers/mannen/", naam: "Mannelijke cabaretiers", wie: "mannelijke cabaretiers", filter: ({ a }) => a.geslacht === "man" },
   };
 
-  function faqHtml(vragen) {
+  function faqHtml(vragen, titel = "Veelgestelde vragen") {
     return `<section class="faq" aria-labelledby="faq-titel">
-        <h2 id="faq-titel">Veelgestelde vragen</h2>
+        <h2 id="faq-titel">${esc(titel)}</h2>
         ${vragen.map(([v, a]) => `<details>
           <summary><h3>${esc(v)}</h3></summary>
           <p>${a}</p>
@@ -760,45 +760,105 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   const uitverkochtZin = (list) => {
     const u = list.filter((g) => g.status === "uitverkocht").length;
     if (!u) return "";
-    return u === list.length ? " Alle voorstellingen zijn uitverkocht." : ` ${u} van de ${list.length} voorstellingen ${u === 1 ? "is" : "zijn"} al uitverkocht.`;
+    return u === list.length ? (list.length === 1 ? " De voorstelling is uitverkocht." : " Alle voorstellingen zijn uitverkocht.") : ` ${u} van de ${list.length} voorstellingen ${u === 1 ? "is" : "zijn"} al uitverkocht.`;
   };
   const kaartenZin = "Kaarten koop je bij de zaal zelf: via de knop <em>Tickets</em> bij elke datum kom je op de speellijst van het theater. Cabaretiers.com werkt de agenda elke nacht bij.";
 
+  // Lopende tekst met tussenkoppen over de artiest, uit de agendagegevens.
   function artiestTekst(a, list) {
     if (!list.length) return "";
+    const naam = esc(a.naam);
     const titels = [...new Set(list.map((g) => echteTitel(g.voorstelling)).filter(Boolean))];
+    const showIds = [...new Set(list.map((g) => g.voorstelling).filter((vid) => echteTitel(vid)))];
     const genres = telPer(list, (g) => V.get(g.voorstelling).genre).map(([k]) => GENRE_TEKST[k]);
     const steden = telPer(list, (g) => T.get(g.theater).plaats);
     const zalen = telPer(list, (g) => g.theater);
     const jaren = [...new Set(list.map((g) => fmt.year(g.datum)))];
     const metTitels = titels.length === 1 ? ` met de voorstelling <em>${esc(titels[0])}</em>`
       : titels.length > 1 ? ` met de voorstellingen ${opsomming(titels.slice(0, 4).map((t) => `<em>${esc(t)}</em>`))}` : "";
-    const zinnen = [];
-    zinnen.push(`<p>${esc(a.naam)} staat de komende tijd ${keer(list.length)} op het podium${metTitels}, ${periode(list)}. ` +
-      (steden.length > 1
-        ? `De tournee komt langs ${steden.length} plaatsen: ${steden.length > 8
-          ? `${steden.slice(0, 8).map(([p]) => plaatsLink(p)).join(", ")} en nog ${plural(steden.length - 8, "andere plaats", "andere plaatsen")}`
-          : opsomming(steden.map(([p]) => plaatsLink(p)))}.`
-        : zalen.length === 1
-          ? `${list.length === 1 ? "De voorstelling is" : "Alle voorstellingen zijn"} in ${theaterLink(zalen[0][0])} in ${plaatsLink(steden[0][0])}.`
-          : `Te zien in ${plaatsLink(steden[0][0])}.`) +
-      ` Het genre is ${opsomming(genres.slice(0, 2))}.</p>`);
-    const p2 = [];
-    if (zalen.length > 1 && zalen[0][1] > 1) p2.push(`Het vaakst is ${esc(a.naam)} te zien in ${theaterLink(zalen[0][0])} in ${esc(T.get(zalen[0][0]).plaats)} (${keer(zalen[0][1])}).`);
-    const premiere = bijzonder(list, "première")[0];
-    if (premiere) p2.push(`De première is op ${fmt.long(premiere.datum)} in ${theaterLink(premiere.theater)}.`);
-    const tryouts = bijzonder(list, "try-out");
-    if (tryouts.length) p2.push(tryouts.length === 1 ? `Op ${fmt.full(tryouts[0].datum)} is er een try-out in ${theaterLink(tryouts[0].theater)}.` : `${tryouts.length} voorstellingen zijn try-outs.`);
-    const derniere = bijzonder(list, "dernière")[0];
-    if (derniere) p2.push(`De laatste voorstelling, de dernière, is op ${fmt.long(derniere.datum)} in ${theaterLink(derniere.theater)}.`);
-    if (list.some((g) => T.get(g.theater).land === "BE") && list.some((g) => T.get(g.theater).land === "NL")) p2.push("De tournee komt zowel in Nederland als in België langs.");
-    const tekst = (p2.join(" ") + uitverkochtZin(list)).trim();
-    if (tekst) zinnen.push(`<p>${tekst}</p>`);
-    zinnen.push(`<p>${kaartenZin}</p>`);
+    const delen = [];
+
+    delen.push(`<h2 id="over-titel">${naam} live zien in ${opsomming(jaren.map(String))}</h2>
+        <p>${naam} staat de komende tijd ${keer(list.length)} op het podium${metTitels}, ${periode(list)}${list.length > 1 ? `. De eerstvolgende voorstelling is op ${fmt.full(list[0].datum)}` : ""} in ${theaterLink(list[0].theater)} in ${plaatsLink(T.get(list[0].theater).plaats)}. Het genre is ${opsomming(genres.slice(0, 2))}.</p>`);
+
+    if (showIds.length) {
+      const over = [];
+      const premiere = bijzonder(list, "première")[0];
+      if (premiere) over.push(`De première is op ${fmt.long(premiere.datum)} in ${theaterLink(premiere.theater)}.`);
+      const tryouts = bijzonder(list, "try-out");
+      if (tryouts.length) over.push(tryouts.length === 1 ? `Op ${fmt.full(tryouts[0].datum)} is er een try-out in ${theaterLink(tryouts[0].theater)}.` : `${tryouts.length} voorstellingen zijn try-outs, waarbij de voorstelling nog in ontwikkeling is.`);
+      const derniere = bijzonder(list, "dernière")[0];
+      if (derniere) over.push(`De laatste voorstelling, de dernière, is op ${fmt.long(derniere.datum)} in ${theaterLink(derniere.theater)}.`);
+      const perShow = showIds.slice(0, 4).map((vid) => {
+        const n = list.filter((g) => g.voorstelling === vid).length;
+        const t = esc(V.get(vid).titel);
+        return `${voorstellingPad.has(vid) ? `<a href="${voorstellingPad.get(vid)}"><em>${t}</em></a>` : `<em>${t}</em>`}${list.length > 1 ? ` (${keer(n)})` : ""}`;
+      });
+      delen.push(`<h2>${showIds.length === 1 ? `De voorstelling van ${naam}` : `De voorstellingen van ${naam}`}</h2>
+        <p>${showIds.length === 1 ? `${naam} speelt de voorstelling ${perShow[0]}.` : `${naam} speelt ${opsomming(perShow)}.`} ${over.join(" ")}</p>`);
+    }
+
+    const waar = [];
+    if (steden.length > 1) waar.push(`De tournee komt langs ${plural(steden.length, "plaats", "plaatsen")}: ${steden.length > 8
+      ? `${steden.slice(0, 8).map(([p]) => plaatsLink(p)).join(", ")} en nog ${plural(steden.length - 8, "andere plaats", "andere plaatsen")}`
+      : opsomming(steden.map(([p]) => plaatsLink(p)))}.`);
+    else waar.push(`${list.length === 1 ? "De voorstelling is" : "Alle voorstellingen zijn"} in ${zalen.length === 1 ? `${theaterLink(zalen[0][0])} in ` : ""}${plaatsLink(steden[0][0])}.`);
+    if (zalen.length > 1 && zalen[0][1] > 1) waar.push(`Het vaakst is ${naam} te zien in ${theaterLink(zalen[0][0])} in ${esc(T.get(zalen[0][0]).plaats)} (${keer(zalen[0][1])}).`);
+    const be = list.some((g) => T.get(g.theater).land === "BE"), nl = list.some((g) => T.get(g.theater).land === "NL");
+    if (be && nl) waar.push("De tournee komt zowel in Nederland als in België langs.");
+    else if (be) waar.push("Alle voorstellingen zijn in België.");
+    delen.push(`<h2>Waar speelt ${naam}?</h2>
+        <p>${waar.join(" ")}</p>`);
+
+    // Wie in dezelfde zalen speelt: interne links naar verwante artiesten.
+    const mijnZalen = new Set(zalen.map(([id]) => id));
+    const partners = new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten));
+    const verwant = artiestenMetData.filter(({ a: b }) => !partners.has(b.id) && b.id !== a.id && !GEEN_CABARETIER.test(b.naam))
+      .map((x) => ({ ...x, n: new Set(x.list.filter((g) => mijnZalen.has(g.theater)).map((g) => g.theater)).size }))
+      .filter((x) => x.n > 0).sort((x, y) => y.n - x.n || y.list.length - x.list.length).slice(0, 5);
+
+    delen.push(`<h2>Kaarten voor ${naam}</h2>
+        <p>${kaartenZin}${uitverkochtZin(list)}</p>`);
+    if (verwant.length) delen.push(`<h2>Meer cabaret in dezelfde zalen</h2>
+        <p>In de theaters waar ${naam} speelt, staan ook ${opsomming(verwant.map(({ a: b }) => `<a href="/artiesten/${b.id}/">${esc(b.naam)}</a>`))} op het programma.</p>`);
+
     return `<section class="seo-tekst prose" aria-labelledby="over-titel">
-        <h2 id="over-titel">${esc(a.naam)} live zien in ${opsomming(jaren.map(String))}</h2>
-        ${zinnen.join("\n        ")}
+        ${delen.join("\n        ")}
       </section>`;
+  }
+
+  // Veelgestelde vragen over één artiest; alleen vragen waar de agenda een antwoord op heeft.
+  function artiestVragen(a, list) {
+    if (!list.length) return [];
+    const naam = esc(a.naam);
+    const titels = [...new Set(list.map((g) => echteTitel(g.voorstelling)).filter(Boolean))];
+    const steden = telPer(list, (g) => T.get(g.theater).plaats);
+    const eerste = list[0];
+    const vragen = [];
+    vragen.push([`Wanneer speelt ${a.naam}?`, list.length === 1
+      ? `${naam} speelt de komende tijd één keer: op ${fmt.full(eerste.datum)}${eerste.tijd ? ` om ${eerste.tijd}` : ""} in ${theaterLink(eerste.theater)} in ${esc(T.get(eerste.theater).plaats)}.`
+      : `${naam} speelt de komende tijd ${keer(list.length)}, ${periode(list)}. De eerstvolgende voorstelling is op ${fmt.full(eerste.datum)}${eerste.tijd ? ` om ${eerste.tijd}` : ""} in ${theaterLink(eerste.theater)} in ${esc(T.get(eerste.theater).plaats)}.`]);
+    vragen.push([`Waar treedt ${a.naam} op?`, steden.length > 1
+      ? `In ${plural(steden.length, "plaats", "plaatsen")}, onder meer ${opsomming(steden.slice(0, 6).map(([p]) => plaatsLink(p)))}.`
+      : `In ${new Set(list.map((g) => g.theater)).size === 1 ? `${theaterLink(eerste.theater)} in ` : ""}${plaatsLink(steden[0][0])}.`]);
+    if (titels.length) vragen.push([titels.length === 1 ? `Wat is de voorstelling van ${a.naam}?` : `Welke voorstellingen speelt ${a.naam}?`,
+      `${titels.length === 1 ? `De voorstelling heet <em>${esc(titels[0])}</em>.` : `${opsomming(titels.slice(0, 4).map((t) => `<em>${esc(t)}</em>`))}.`} Het genre is ${opsomming(telPer(list, (g) => V.get(g.voorstelling).genre).slice(0, 2).map(([k]) => GENRE_TEKST[k]))}.`]);
+    const be = list.filter((g) => T.get(g.theater).land === "BE");
+    if (be.length || a.land === "BE") vragen.push([`Speelt ${a.naam} ook in België?`, be.length
+      ? `Ja, ${keer(be.length)}: in ${opsomming([...new Set(be.map((g) => T.get(g.theater).plaats))].map(plaatsLink))}.`
+      : "Op dit moment staan er alleen voorstellingen in Nederland in de agenda."]);
+    const oud = list.filter((g) => V.get(g.voorstelling).genre === "oudejaarsconference");
+    if (oud.length) vragen.push([`Speelt ${a.naam} een oudejaarsconference?`, `Ja, ${naam} speelt dit seizoen een oudejaarsvoorstelling, ${keer(oud.length)}, de eerste op ${fmt.full(oud[0].datum)} in ${theaterLink(oud[0].theater)}.`]);
+    const tryouts = bijzonder(list, "try-out");
+    if (tryouts.length) vragen.push([`Zijn er try-outs van ${a.naam}?`, `Ja, ${keer(tryouts.length)}, de eerste op ${fmt.full(tryouts[0].datum)} in ${theaterLink(tryouts[0].theater)}. Bij een try-out is de voorstelling nog in ontwikkeling, en kaartjes zijn vaak goedkoper.`]);
+    const uit = list.filter((g) => g.status === "uitverkocht");
+    const vrij = list.filter((g) => g.status === "gepland");
+    vragen.push([`Is ${a.naam} uitverkocht?`, !uit.length
+      ? "Bij geen van de voorstellingen meldt het theater dat ze uitverkocht zijn. Kijk voor de beschikbaarheid bij de zaal."
+      : uit.length === list.length ? `Ja, ${list.length === 1 ? "de voorstelling is" : "alle voorstellingen in de agenda zijn"} uitverkocht. Soms komen er kaarten vrij via een wachtlijst bij het theater.`
+        : `${uit.length} van de ${list.length} voorstellingen ${uit.length === 1 ? "is" : "zijn"} uitverkocht.${vrij.length ? ` De eerstvolgende voorstelling zonder melding van uitverkocht is op ${fmt.full(vrij[0].datum)} in ${theaterLink(vrij[0].theater)}.` : ""}`]);
+    vragen.push([`Hoe koop ik kaarten voor ${a.naam}?`, "Kaarten koop je bij het theater zelf. Klik bij een speeldatum op de knop <em>Tickets</em>: die opent de speellijst van de zaal, waar je kaarten kunt bestellen."]);
+    return vragen;
   }
 
   const ZAALSOORT = { theater: "theater", cultuurcentrum: "cultuurcentrum", comedyclub: "comedyclub", café: "café", festivalterrein: "festivalterrein" };
@@ -862,12 +922,13 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
         <div id="gigs">${monthGroups(list, { showArtist: false })}</div>
         ${list.length > 12 ? leegBlok : ""}
         ${artiestTekst(a, list)}
+        ${list.length ? faqHtml(artiestVragen(a, list), `Veelgestelde vragen over ${a.naam}`) : ""}
         ${a.geslacht && !isGroep(a) ? `<p class="zie-ook">Bekijk ook andere <a href="/alle-cabaretiers/${a.geslacht === "vrouw" ? "vrouwen" : "mannen"}/">${a.geslacht === "vrouw" ? "vrouwelijke" : "mannelijke"} cabaretiers</a> of <a href="/alle-cabaretiers/">alle cabaretiers</a>.</p>` : ""}
       </div>`;
     const desc = list.length
       ? kort(`${a.naam} live: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(cityCount, "plaats", "plaatsen")}${titles.length ? `, met ${titles.slice(0, 2).join(" en ")}` : ""}. Eerstvolgende op ${fmt.full(list[0].datum)}. Bekijk alle speeldata.`)
       : `${a.naam} op Cabaretiers.com.`;
-    return layout({ title: `${a.naam}: tournee en speeldata`, description: desc, path: `/artiesten/${a.id}/`, section: "artiesten", body, schema: { type: "ProfilePage", foto: a.foto ? a : null, kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`]], hoofd: { "@id": artiestLd(a.id)["@id"] }, extra: [artiestLd(a.id), ...eventsLd(list)] } });
+    return layout({ title: `${a.naam}: tournee en speeldata`, description: desc, path: `/artiesten/${a.id}/`, section: "artiesten", body, schema: { type: "ProfilePage", foto: a.foto ? a : null, kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`]], hoofd: { "@id": artiestLd(a.id)["@id"] }, extra: [artiestLd(a.id), ...eventsLd(list), ...(list.length ? [faqLd(artiestVragen(a, list), `/artiesten/${a.id}/`)] : [])] } });
   }
 
   function voorstellingTekst(vid, list) {
