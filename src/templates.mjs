@@ -1027,6 +1027,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       </section>`;
   }
 
+  // Zonder zoekfilters: wie op deze pagina is, heeft de voorstelling al gevonden.
   function voorstellingPagina(vid) {
     const v = V.get(vid), a = A.get(v.artiesten[0]);
     const list = up.filter((g) => g.voorstelling === vid);
@@ -1038,9 +1039,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       </div></div>
       <div class="wrap detail-body">
         ${recensiesHtml(v, list)}
-        ${list.length > 12 ? filters(list, { maand: true }) : ""}
         <div id="gigs">${monthGroups(list, { showArtist: false })}</div>
-        ${list.length > 12 ? leegBlok : ""}
         ${voorstellingTekst(vid, list)}
       </div>`;
     const desc = kort(`${v.titel} van ${artistNames(vid)}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden, "plaats", "plaatsen")}. Eerstvolgende op ${fmt.full(list[0].datum)}.${beste ? ` ${beste.medium}: ${plural(beste.sterren, "ster", "sterren")}.` : ""} Bekijk alle speeldata.`);
