@@ -24,6 +24,7 @@ export const plaatsId = (p) =>
 export const SITE = {
   name: "Cabaretiers.com",
   url: "https://www.cabaretiers.com",
+  email: "hallo@cabaretiers.com",
   description: "De theateragenda van Nederland en België: alle aankomende cabaret- en comedyvoorstellingen, theaters en artiesten op één plek.",
 };
 
@@ -155,6 +156,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       <span class="logo-tekst" aria-hidden="true"><span class="wordmark">${WOORDMERK_SVG}<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
     </a>
     <p>Cabaret en comedy in Nederland en België, verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
+    <p class="contact">Contact: <a href="mailto:${SITE.email}">${SITE.email}</a></p>
   </div>
 </footer>
 <script src="/agenda.js?v=${VERSIE["agenda.js"]}" defer></script>
@@ -300,7 +302,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return {
       "@context": "https://schema.org",
       "@graph": [
-        { "@type": "Organization", "@id": ORG_ID, name: SITE.name, url: URL("/"), logo: { "@type": "ImageObject", url: URL("/apple-touch-icon.png"), width: 180, height: 180, caption: "Beeldmerk van Cabaretiers.com" }, image: URL("/deelafbeelding.png") },
+        { "@type": "Organization", "@id": ORG_ID, name: SITE.name, url: URL("/"), email: SITE.email,
+          contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: SITE.email, availableLanguage: ["nl"] }, logo: { "@type": "ImageObject", url: URL("/apple-touch-icon.png"), width: 180, height: 180, caption: "Beeldmerk van Cabaretiers.com" }, image: URL("/deelafbeelding.png") },
         {
           "@type": "WebSite", "@id": SITE_ID, name: SITE.name, url: URL("/"), inLanguage: "nl", description: SITE.description,
           publisher: { "@id": ORG_ID },
@@ -1149,7 +1152,9 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
           <p>Op dit moment staan er ${tellers.speeldata.toLocaleString("nl-NL")} voorstellingen in de agenda, van ${tellers.artiesten} artiesten in ${tellers.zalen} zalen.</p>
           <p>Elke speeldatum heeft een bron. De knop <em>Tickets</em> brengt je naar die bron, de speellijst van het theater of de artiest: daar koop je kaarten en controleer je de datum. Datums waarover bronnen elkaar tegenspreken, staan gemarkeerd als <em>datum onzeker</em>.</p>
           <h2 id="aanmelden">Zelf voorstellingen aanmelden</h2>
-          <p>Speel je zelf, of programmeer je een zaal of comedyclub? Binnenkort kun je hier je voorstellingen aanmelden of je speellijst koppelen.</p>
+          <p>Speel je zelf, of programmeer je een zaal of comedyclub? Mail je speellijst of de link naar je agenda naar <a href="mailto:${SITE.email}">${SITE.email}</a>, dan nemen we je voorstellingen op.</p>
+          <h2 id="contact">Contact</h2>
+          <p>Vragen, een fout gezien in de agenda, of een tip voor een zaal die nog ontbreekt? Mail naar <a href="mailto:${SITE.email}">${SITE.email}</a>.</p>
         </div>
         <ol class="steps">
           <li><div><b>Speellijsten ophalen</b><span>Elke nacht lezen we de agenda's van theaters en comedyclubs uit, en volgen we hun regels voor bezoek door programma's.</span></div></li>

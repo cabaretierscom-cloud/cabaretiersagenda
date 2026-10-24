@@ -402,6 +402,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .site-footer { --ink: #fff; --ink-2: #fff; margin-top: 48px; background: #000; color: #fff; }
 .site-footer .wrap { padding-block: 32px 40px; display: flex; gap: 16px 32px; align-items: center; justify-content: space-between; flex-wrap: wrap; font-size: .95rem; }
 .site-footer p { margin: 0; max-width: 62ch; }
+.site-footer .contact a { color: #fff; font-weight: 600; }
 .site-footer .wordmark, .site-footer .ondertitel { color: #fff; }
 /* Donkerblauw is op zwart slecht leesbaar; in de footer is .com lila. */
 .site-footer .wordmark .tld { color: var(--riso-lilac); }
