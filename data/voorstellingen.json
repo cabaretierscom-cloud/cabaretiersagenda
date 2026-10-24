@@ -55,14 +55,6 @@
     "genre": "kleinkunst"
   },
   {
-    "id": "alba-vivaldi-x-t-agency-disembarkation-begin",
-    "titel": "disembarkation ; begin",
-    "artiesten": [
-      "alba-vivaldi-x-t-agency"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "alex-agnew-no-more-heroes",
     "titel": "No More Heroes",
     "artiesten": [
@@ -141,28 +133,12 @@
     "genre": "stand-up"
   },
   {
-    "id": "amsterdams-kleinkunst-festival-halve-finale",
-    "titel": "Halve Finale",
-    "artiesten": [
-      "amsterdams-kleinkunst-festival"
-    ],
-    "genre": "kleinkunst"
-  },
-  {
     "id": "amsterdams-studenten-cabaret-festival-finalistentournee",
     "titel": "Finalistentournee",
     "artiesten": [
       "amsterdams-studenten-cabaret-festival"
     ],
     "genre": "cabaret"
-  },
-  {
-    "id": "amsterdams-studenten-cabaret-festival-halve-finale",
-    "titel": "Halve finale",
-    "artiesten": [
-      "amsterdams-studenten-cabaret-festival"
-    ],
-    "genre": "stand-up"
   },
   {
     "id": "andre-manuel-de-eenzame-ziel",
@@ -262,14 +238,6 @@
       "annick-boer"
     ],
     "genre": "cabaret"
-  },
-  {
-    "id": "annie-m-g-schmidtprijs-uitreiking",
-    "titel": "Uitreiking",
-    "artiesten": [
-      "annie-m-g-schmidtprijs"
-    ],
-    "genre": "kleinkunst"
   },
   {
     "id": "anuar-ongeduldig-geduldig",
@@ -502,6 +470,14 @@
       "bill-bailey"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "blauwe-vinkjes-blauwe-vinkjes",
+    "titel": "Blauwe Vinkjes",
+    "artiesten": [
+      "blauwe-vinkjes"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "blauwe-vinkjes-feestavond-voor-assense-mantelzorgers",
@@ -782,14 +758,6 @@
       "comedy-club-haug"
     ],
     "genre": "cabaret"
-  },
-  {
-    "id": "comedy-comedians-onder-leiding-van-martijn-koning",
-    "titel": "onder leiding van Martijn Koning",
-    "artiesten": [
-      "comedy-comedians"
-    ],
-    "genre": "stand-up"
   },
   {
     "id": "comedy-festival-limburg-halve-finale",
@@ -1390,14 +1358,6 @@
       "familiegeheimen"
     ],
     "genre": "cabaret"
-  },
-  {
-    "id": "fatu-late-night-joel-gideon-rene-van-meurs-en-bugra-gedik",
-    "titel": "Joël Gideon, René Van Meurs & Buğra Gedik",
-    "artiesten": [
-      "fatu-late-night"
-    ],
-    "genre": "stand-up"
   },
   {
     "id": "fay-lovsky-hakken-in-het-zand",
@@ -2072,14 +2032,6 @@
       "jorgen-raymann"
     ],
     "genre": "stand-up"
-  },
-  {
-    "id": "jorgen-raymann-bigi-yari-welkom-thuis",
-    "titel": "Bigi Yari – Welkom thuis",
-    "artiesten": [
-      "jorgen-raymann"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "jorgen-raymann-jorgen-raymann",
@@ -2854,12 +2806,11 @@
     "genre": "cabaret"
   },
   {
-    "id": "nacht-van-het-cabaret-diverse-cabaretiers",
-    "titel": "Diverse cabaretiers",
-    "artiesten": [
-      "nacht-van-het-cabaret"
-    ],
-    "genre": "cabaret"
+    "id": "nacht-van-het-cabaret-theater-de-veste",
+    "titel": "Nacht van het Cabaret",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-de-veste"
   },
   {
     "id": "nadine-froughi-daydreamer",
@@ -2997,16 +2948,6 @@
     "theater": "theater-zuidplein"
   },
   {
-    "id": "onias-landveld-jorgen-raymann-howard-komproe-papa-zonder-handleiding-xl",
-    "titel": "Papa zonder handleiding XL",
-    "artiesten": [
-      "onias-landveld",
-      "jorgen-raymann",
-      "howard-komproe"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "onias-landveld-jorgen-raymann-steven-brunswijk-howard-komproe-joshua-timisela-pa",
     "titel": "Papa Zonder Handleiding XL",
     "artiesten": [
@@ -3081,25 +3022,10 @@
     "genre": "cabaret"
   },
   {
-    "id": "patrick-spicer-kleine-komedie",
-    "titel": "Patrick Spicer",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "kleine-komedie"
-  },
-  {
     "id": "paul-haenen-50-jaar-margreet-dolman",
     "titel": "50 jaar Margreet Dolman",
     "artiesten": [
       "paul-haenen"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "paul-haenen-en-dammie-van-geest-margreet-dolman-brengt-warmte-en-dominee-gremdaa",
-    "titel": "Margreet Dolman brengt Warmte en Dominee Gremdaat wijst de Weg",
-    "artiesten": [
-      "paul-haenen-en-dammie-van-geest"
     ],
     "genre": "cabaret"
   },
@@ -3760,14 +3686,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "steven-brunswijk-steven-brunswijk",
-    "titel": "Steven Brunswijk",
-    "artiesten": [
-      "steven-brunswijk"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "steven-mahieu-stabieler",
     "titel": "Stabieler",
     "artiesten": [
@@ -4182,11 +4100,11 @@
     "genre": "cabaret"
   },
   {
-    "id": "vrouwejaars-kleine-komedie",
-    "titel": "Vrouwejaars",
+    "id": "vrouwejaars-2026-theater-zuidplein",
+    "titel": "Vrouwejaars 2026",
     "artiesten": [],
-    "genre": "stand-up",
-    "theater": "kleine-komedie"
+    "genre": "cabaret",
+    "theater": "theater-zuidplein"
   },
   {
     "id": "vuile-huichelaar-ik-zit-hier-heel-alleen-kerstfeest-te-vieren-2",
@@ -4341,14 +4259,6 @@
       "vera-marijt"
     ],
     "genre": "cabaret"
-  },
-  {
-    "id": "yora-rienstra-vrouwejaars-2026",
-    "titel": "Vrouwejaars 2026",
-    "artiesten": [
-      "yora-rienstra"
-    ],
-    "genre": "stand-up"
   },
   {
     "id": "yunus-aktas-nieuw-programma",

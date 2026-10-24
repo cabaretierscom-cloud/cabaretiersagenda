@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-10-21",
+  "opgehaald": "2026-10-24",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -13,96 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "KIEM",
-      "genre": "kleinkunst",
-      "datum": "2026-10-22",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "KIEM",
-      "genre": "kleinkunst",
-      "datum": "2026-11-26",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "KIEM",
-      "genre": "kleinkunst",
-      "datum": "2027-01-28",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "KIEM",
-      "genre": "kleinkunst",
-      "datum": "2027-02-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "KIEM",
-      "genre": "kleinkunst",
-      "datum": "2027-03-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "KIEM",
-      "genre": "kleinkunst",
-      "datum": "2027-04-22",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "KIEM",
-      "genre": "kleinkunst",
-      "datum": "2027-05-27",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Marja van Katendrecht"
-      ],
-      "titel": "Heel Holland Hoopt",
-      "genre": "cabaret",
-      "datum": "2026-10-23",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/heel-holland-hoopt-jpsg"
-    },
     {
       "theater": "theater-bellevue",
       "artiesten": [
@@ -249,7 +159,7 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [],
-      "titel": "FEMILICIOUS",
+      "titel": "Femilicious",
       "genre": "cabaret",
       "datum": "2026-11-06",
       "tijd": "20:00",
@@ -260,7 +170,7 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [],
-      "titel": "FEMILICIOUS",
+      "titel": "Femilicious",
       "genre": "cabaret",
       "datum": "2027-02-13",
       "tijd": "20:00",
@@ -271,7 +181,7 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [],
-      "titel": "FEMILICIOUS",
+      "titel": "Femilicious",
       "genre": "cabaret",
       "datum": "2027-05-29",
       "tijd": "20:00",
@@ -406,7 +316,7 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [],
-      "titel": "BIES",
+      "titel": "Bies",
       "genre": "cabaret",
       "datum": "2026-11-19",
       "tijd": "20:00",
@@ -417,7 +327,7 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [],
-      "titel": "BIES",
+      "titel": "Bies",
       "genre": "cabaret",
       "datum": "2026-12-17",
       "tijd": "20:00",
@@ -428,7 +338,7 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [],
-      "titel": "BIES",
+      "titel": "Bies",
       "genre": "cabaret",
       "datum": "2027-01-14",
       "tijd": "20:00",
@@ -439,7 +349,7 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [],
-      "titel": "BIES",
+      "titel": "Bies",
       "genre": "cabaret",
       "datum": "2027-02-11",
       "tijd": "20:00",
@@ -450,7 +360,7 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [],
-      "titel": "BIES",
+      "titel": "Bies",
       "genre": "cabaret",
       "datum": "2027-03-11",
       "tijd": "20:00",
@@ -461,7 +371,7 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [],
-      "titel": "BIES",
+      "titel": "Bies",
       "genre": "cabaret",
       "datum": "2027-04-08",
       "tijd": "20:00",
@@ -472,7 +382,7 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [],
-      "titel": "BIES",
+      "titel": "Bies",
       "genre": "cabaret",
       "datum": "2027-05-13",
       "tijd": "20:00",
@@ -511,13 +421,79 @@
       "artiesten": [
         "Joey & Dave"
       ],
-      "titel": "Houden het luchtig...",
+      "titel": "Houden het luchtig..",
       "genre": "cabaret",
       "datum": "2026-11-25",
       "tijd": "20:00",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/houden-het-luchtig-q2nk"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Kiem",
+      "genre": "kleinkunst",
+      "datum": "2026-11-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Kiem",
+      "genre": "kleinkunst",
+      "datum": "2027-01-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Kiem",
+      "genre": "kleinkunst",
+      "datum": "2027-02-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Kiem",
+      "genre": "kleinkunst",
+      "datum": "2027-03-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Kiem",
+      "genre": "kleinkunst",
+      "datum": "2027-04-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Kiem",
+      "genre": "kleinkunst",
+      "datum": "2027-05-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
     },
     {
       "theater": "theater-bellevue",
@@ -1696,7 +1672,7 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [
-        "AKF"
+        "Akf"
       ],
       "titel": "Club Shaffy",
       "genre": "kleinkunst",
@@ -1709,7 +1685,7 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [
-        "AKF"
+        "Akf"
       ],
       "titel": "Club Shaffy",
       "genre": "kleinkunst",
@@ -1867,7 +1843,7 @@
       "artiesten": [
         "Rosa Doornenbal"
       ],
-      "titel": "To Believe In Magic",
+      "titel": "To believe in magic",
       "genre": "cabaret",
       "datum": "2027-06-04",
       "tijd": "20:00",

@@ -1,7 +1,7 @@
 {
   "bron": "de-veste",
   "naam": "Theater De Veste",
-  "opgehaald": "2026-10-21",
+  "opgehaald": "2026-10-24",
   "theaters": [
     {
       "id": "theater-de-veste",
@@ -70,7 +70,7 @@
       "artiesten": [
         "Patrick Laureij"
       ],
-      "titel": "Kintsugi.",
+      "titel": "Kintsugi",
       "genre": "cabaret",
       "datum": "2026-11-06",
       "tijd": "20:15",
@@ -83,7 +83,7 @@
       "artiesten": [
         "Patrick Laureij"
       ],
-      "titel": "Kintsugi.",
+      "titel": "Kintsugi",
       "genre": "cabaret",
       "datum": "2026-11-07",
       "tijd": "20:15",
@@ -149,7 +149,7 @@
         "Alina Sharipova (MC), Diederik Zuurmond, Stephen Bell, Finn Visser en Vincent Geers."
       ],
       "titel": "De Comedy Club",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-24",
       "tijd": "20:30",
       "status": "uitverkocht",
@@ -226,7 +226,7 @@
       "artiesten": [
         "Nieuwjaars Cabarestafette"
       ],
-      "titel": "Nieuw Geluid!",
+      "titel": "Nieuw geluid!",
       "genre": "cabaret",
       "datum": "2027-01-02",
       "tijd": "20:15",
@@ -279,7 +279,7 @@
         "Diverse comedians"
       ],
       "titel": "De Comedy Club",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-14",
       "tijd": "20:30",
       "status": "gepland",
@@ -448,7 +448,7 @@
         "Diverse comedians"
       ],
       "titel": "De Comedy Club",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-09",
       "tijd": "20:30",
       "status": "gepland",
@@ -457,10 +457,8 @@
     },
     {
       "theater": "theater-de-veste",
-      "artiesten": [
-        "Nacht van het Cabaret"
-      ],
-      "titel": "Diverse cabaretiers",
+      "artiesten": [],
+      "titel": "Nacht van het Cabaret",
       "genre": "cabaret",
       "datum": "2027-03-13",
       "tijd": "21:00",
@@ -497,7 +495,7 @@
     {
       "theater": "theater-de-veste",
       "artiesten": [
-        "LEBBIS"
+        "Lebbis"
       ],
       "titel": "Satan is moe",
       "genre": "cabaret",
@@ -591,7 +589,7 @@
         "Diverse comedians"
       ],
       "titel": "De Comedy Club",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-19",
       "tijd": "20:15",
       "status": "gepland",

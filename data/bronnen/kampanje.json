@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-10-23",
+  "opgehaald": "2026-10-24",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -22,7 +22,7 @@
       "genre": "cabaret",
       "datum": "2026-10-24",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/bert-visscher-met-het-noordpool-strijkkwartet-d7hj"
     },
@@ -48,7 +48,7 @@
       "genre": "cabaret",
       "datum": "2026-10-31",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.kampanje.nl/voorstellingen/valentina-toth-try-out-rz9j"
     },
@@ -269,7 +269,7 @@
       "genre": "cabaret",
       "datum": "2027-01-14",
       "tijd": "20:30",
-      "status": "geannuleerd",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2"
     },
@@ -295,7 +295,7 @@
       "genre": "cabaret",
       "datum": "2027-01-21",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.kampanje.nl/voorstellingen/rene-van-meurs-reprise-h6c6"
     },
@@ -553,7 +553,7 @@
       "genre": "cabaret",
       "datum": "2027-04-09",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/marie-koet-cgxx"
     },
@@ -644,7 +644,7 @@
       "genre": "cabaret",
       "datum": "2027-04-24",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/jandino-qyv8"
     },

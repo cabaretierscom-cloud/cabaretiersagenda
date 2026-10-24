@@ -1,7 +1,7 @@
 {
   "bron": "orpheus",
   "naam": "Orpheus",
-  "opgehaald": "2026-10-21",
+  "opgehaald": "2026-10-24",
   "theaters": [
     {
       "id": "orpheus",
@@ -16,23 +16,10 @@
     {
       "theater": "orpheus",
       "artiesten": [
-        "Max van den Burg"
-      ],
-      "titel": "Maxikozi",
-      "genre": "stand-up",
-      "datum": "2026-10-23",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/max-van-den-burg-1gmq"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
         "Pieter Derks"
       ],
       "titel": "Ja, leuk",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-10-31",
       "tijd": "20:00",
       "status": "gepland",
@@ -45,7 +32,7 @@
         "Lisa Ostermann"
       ],
       "titel": "De Baas",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-10-31",
       "tijd": "20:00",
       "status": "gepland",
@@ -57,8 +44,8 @@
       "artiesten": [
         "Patrick Laureij"
       ],
-      "titel": "Kintsugi.",
-      "genre": "stand-up",
+      "titel": "Kintsugi",
+      "genre": "cabaret",
       "datum": "2026-11-04",
       "tijd": "20:00",
       "status": "gepland",
@@ -70,8 +57,8 @@
       "artiesten": [
         "Patrick Laureij"
       ],
-      "titel": "Kintsugi.",
-      "genre": "stand-up",
+      "titel": "Kintsugi",
+      "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:00",
       "status": "gepland",
@@ -84,7 +71,7 @@
         "Yentl en de Boer"
       ],
       "titel": "Rekhalzen",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-06",
       "tijd": "20:00",
       "status": "gepland",
@@ -97,7 +84,7 @@
         "Eran & Co"
       ],
       "titel": "AI & Ik",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-07",
       "tijd": "20:00",
       "status": "gepland",
@@ -110,7 +97,7 @@
         "Tafkal"
       ],
       "titel": "Serieus grappig",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-13",
       "tijd": "20:00",
       "status": "gepland",
@@ -123,7 +110,7 @@
         "Tafkal"
       ],
       "titel": "Serieus grappig",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-14",
       "tijd": "20:00",
       "status": "gepland",
@@ -136,7 +123,7 @@
         "Tafkal"
       ],
       "titel": "Serieus grappig",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-15",
       "tijd": "20:00",
       "status": "gepland",
@@ -149,7 +136,7 @@
         "Silvesters Comedy Club"
       ],
       "titel": "Comedy Night in Orpheus!",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-17",
       "tijd": "20:30",
       "status": "gepland",
@@ -162,7 +149,7 @@
         "Silvesters Comedy Club"
       ],
       "titel": "Comedy Night in Orpheus!",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-15",
       "tijd": "20:30",
       "status": "gepland",
@@ -175,7 +162,7 @@
         "Silvesters Comedy Club"
       ],
       "titel": "Comedy Night in Orpheus!",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-19",
       "tijd": "20:30",
       "status": "gepland",
@@ -188,7 +175,7 @@
         "Silvesters Comedy Club"
       ],
       "titel": "Comedy Night in Orpheus!",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-16",
       "tijd": "20:30",
       "status": "gepland",
@@ -201,7 +188,7 @@
         "Silvesters Comedy Club"
       ],
       "titel": "Comedy Night in Orpheus!",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-16",
       "tijd": "20:30",
       "status": "gepland",
@@ -214,7 +201,7 @@
         "Silvesters Comedy Club"
       ],
       "titel": "Comedy Night in Orpheus!",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-18",
       "tijd": "20:30",
       "status": "gepland",
@@ -240,7 +227,7 @@
         "Roel en Jos Maalderink"
       ],
       "titel": "Verbroedering",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-27",
       "tijd": "20:00",
       "status": "gepland",
@@ -252,8 +239,8 @@
       "artiesten": [
         "Merijn Scholten"
       ],
-      "titel": "LEMMING",
-      "genre": "stand-up",
+      "titel": "Lemming",
+      "genre": "cabaret",
       "datum": "2026-12-03",
       "tijd": "20:00",
       "status": "gepland",
@@ -265,8 +252,8 @@
       "artiesten": [
         "Merijn Scholten"
       ],
-      "titel": "LEMMING",
-      "genre": "stand-up",
+      "titel": "Lemming",
+      "genre": "cabaret",
       "datum": "2026-12-04",
       "tijd": "20:00",
       "status": "gepland",
@@ -279,7 +266,7 @@
         "Renske Kruitbosch"
       ],
       "titel": "Neem de tijd",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-04",
       "tijd": "20:00",
       "status": "gepland",
@@ -292,7 +279,7 @@
         "Lebbis"
       ],
       "titel": "Satan is moe",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-09",
       "tijd": "20:00",
       "status": "gepland",
@@ -305,7 +292,7 @@
         "Tis Hier Geen Hotel 3"
       ],
       "titel": "Hanneke Drenth en Dianne Liesker",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-12",
       "tijd": "20:00",
       "status": "gepland",
@@ -357,7 +344,7 @@
         "We zijn toch familie"
       ],
       "titel": "Musical Comedy met o.a. Paul de Leeuw en Annick Boer",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-17",
       "tijd": "20:00",
       "status": "gepland",
@@ -370,7 +357,7 @@
         "René van Meurs"
       ],
       "titel": "Noodzakelijk kwaad",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-08",
       "tijd": "20:00",
       "status": "gepland",
@@ -383,7 +370,7 @@
         "Rob Scheepers"
       ],
       "titel": "Scheepers op z'n scherpst",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-08",
       "tijd": "20:00",
       "status": "gepland",
@@ -396,7 +383,7 @@
         "Oscar Smit"
       ],
       "titel": "€ 472.000,-",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-13",
       "tijd": "20:00",
       "status": "gepland",
@@ -409,7 +396,7 @@
         "Ronald Goedemondt"
       ],
       "titel": "Mijn lieve achterdocht",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-17",
       "tijd": "20:00",
       "status": "gepland",
@@ -422,7 +409,7 @@
         "Ronald Goedemondt"
       ],
       "titel": "Mijn lieve achterdocht",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-25",
       "tijd": "20:00",
       "status": "gepland",
@@ -435,7 +422,7 @@
         "Tineke Schouten"
       ],
       "titel": "Femme Vitaal",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-21",
       "tijd": "20:00",
       "status": "gepland",
@@ -448,7 +435,7 @@
         "Janneke de Bijl"
       ],
       "titel": "Pluk eventueel de dag",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-22",
       "tijd": "20:00",
       "status": "gepland",
@@ -461,7 +448,7 @@
         "Freek de Jonge"
       ],
       "titel": "Wisten Wij Veel",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-29",
       "tijd": "20:00",
       "status": "gepland",
@@ -474,7 +461,7 @@
         "Gilian de Vries"
       ],
       "titel": "Wat wil ik",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-30",
       "tijd": "20:00",
       "status": "gepland",
@@ -487,7 +474,7 @@
         "Andries Tunru"
       ],
       "titel": "Ravot",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-03",
       "tijd": "20:00",
       "status": "gepland",
@@ -500,7 +487,7 @@
         "Grof Geschud"
       ],
       "titel": "Vieren",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-04",
       "tijd": "20:00",
       "status": "gepland",
@@ -513,7 +500,7 @@
         "Esther van der Voort"
       ],
       "titel": "Mama is Boos",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-19",
       "tijd": "20:00",
       "status": "gepland",
@@ -526,7 +513,7 @@
         "Milène van der Smissen"
       ],
       "titel": "De Schnabbelkoningin",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-20",
       "tijd": "20:00",
       "status": "gepland",
@@ -539,7 +526,7 @@
         "Familie voor Beginners"
       ],
       "titel": "Mylou Frencken & gitarist",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-23",
       "tijd": "15:00",
       "status": "gepland",
@@ -552,7 +539,7 @@
         "Christel de Laat"
       ],
       "titel": "Kende da!?",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-23",
       "tijd": "20:00",
       "status": "gepland",
@@ -565,7 +552,7 @@
         "Christel de Laat"
       ],
       "titel": "Kende da!?",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-24",
       "tijd": "20:00",
       "status": "gepland",
@@ -578,7 +565,7 @@
         "Christel de Laat"
       ],
       "titel": "Kende da!?",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-25",
       "tijd": "20:00",
       "status": "gepland",
@@ -591,7 +578,7 @@
         "Annick Boer"
       ],
       "titel": "Vol Erin",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-26",
       "tijd": "20:00",
       "status": "gepland",
@@ -604,7 +591,7 @@
         "Daan van der Hoeven"
       ],
       "titel": "Mensenmens",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-27",
       "tijd": "20:00",
       "status": "gepland",
@@ -617,7 +604,7 @@
         "André Manuel"
       ],
       "titel": "De Eenzame Ziel",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-03",
       "tijd": "20:00",
       "status": "gepland",
@@ -630,7 +617,7 @@
         "Van Vleuten en Van Muiswinkel"
       ],
       "titel": "Alles onder controle",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-06",
       "tijd": "20:00",
       "status": "gepland",
@@ -643,7 +630,7 @@
         "Wina Ricardo"
       ],
       "titel": "Wina's Wereld",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-19",
       "tijd": "20:00",
       "status": "gepland",
@@ -656,7 +643,7 @@
         "Jandino"
       ],
       "titel": "De grote jubileumshow - Jandino 20 jaar",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-20",
       "tijd": "20:00",
       "status": "gepland",
@@ -669,7 +656,7 @@
         "Bettina Holwerda"
       ],
       "titel": "Laat Maar",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-20",
       "tijd": "20:00",
       "status": "gepland",
@@ -682,7 +669,7 @@
         "Luuk Ransijn"
       ],
       "titel": "Uitkijk",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-26",
       "tijd": "20:00",
       "status": "gepland",
@@ -695,7 +682,7 @@
         "Richard Groenendijk"
       ],
       "titel": "Gelukkig heb je mij nog",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-02",
       "tijd": "20:00",
       "status": "gepland",
@@ -708,7 +695,7 @@
         "Rayen Panday"
       ],
       "titel": "Grip",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-16",
       "tijd": "20:00",
       "status": "gepland",
@@ -721,7 +708,7 @@
         "Nienke Plas"
       ],
       "titel": "Appeltje Eitje",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-23",
       "tijd": "20:00",
       "status": "gepland",
@@ -734,7 +721,7 @@
         "Marie Koet"
       ],
       "titel": "Eindspel",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-23",
       "tijd": "20:00",
       "status": "gepland",
@@ -747,7 +734,7 @@
         "SCHATER Cabaretfestival"
       ],
       "titel": "SCHATER Cabaretfestival",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-24",
       "tijd": "16:30",
       "status": "gepland",
@@ -760,7 +747,7 @@
         "Céline Janssen"
       ],
       "titel": "Opera op Reis",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-01",
       "tijd": "20:00",
       "status": "gepland",
@@ -773,7 +760,7 @@
         "Ricky Risolles"
       ],
       "titel": "Niet zo Indiscreet…",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-08",
       "tijd": "20:00",
       "status": "gepland",
@@ -786,7 +773,7 @@
         "Valentina Tóth"
       ],
       "titel": "Revue Revanche",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-12",
       "tijd": "20:00",
       "status": "gepland",
@@ -799,7 +786,7 @@
         "Patrick Nederkoorn"
       ],
       "titel": "Nieuw programma",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-15",
       "tijd": "20:00",
       "status": "gepland",
@@ -812,7 +799,7 @@
         "Kasper van der Laan"
       ],
       "titel": "Ruim",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-18",
       "tijd": "20:00",
       "status": "gepland",
@@ -825,7 +812,7 @@
         "Arie en Silvester"
       ],
       "titel": "Breken de tent af",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-19",
       "tijd": "20:00",
       "status": "gepland",
@@ -838,7 +825,7 @@
         "David van Rosmalen"
       ],
       "titel": "Als ik jou was",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-22",
       "tijd": "20:00",
       "status": "gepland",
@@ -851,7 +838,7 @@
         "Selma Visscher"
       ],
       "titel": "Trekvogel",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-28",
       "tijd": "20:00",
       "status": "gepland",
@@ -864,7 +851,7 @@
         "Fabian Franciscus"
       ],
       "titel": "Is het leven al begonnen?",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-06-01",
       "tijd": "20:00",
       "status": "gepland",
@@ -877,7 +864,7 @@
         "Jay Francis"
       ],
       "titel": "Tunnelvisie",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-06-04",
       "tijd": "20:00",
       "status": "gepland",
@@ -890,7 +877,7 @@
         "Thijs Kemperink"
       ],
       "titel": "Tot het uiterste gedreven",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-06-11",
       "tijd": "20:00",
       "status": "gepland",
@@ -903,7 +890,7 @@
         "Rundfunk"
       ],
       "titel": "Wagyu",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-06-25",
       "tijd": "20:00",
       "status": "gepland",
@@ -916,7 +903,7 @@
         "Tafkal"
       ],
       "titel": "Most Wanted",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-11-04",
       "tijd": "20:00",
       "status": "gepland",
@@ -929,7 +916,7 @@
         "Tafkal"
       ],
       "titel": "Most Wanted",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-11-05",
       "tijd": "20:00",
       "status": "gepland",
@@ -942,7 +929,7 @@
         "Tafkal"
       ],
       "titel": "Most Wanted",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-11-06",
       "tijd": "20:00",
       "status": "gepland",

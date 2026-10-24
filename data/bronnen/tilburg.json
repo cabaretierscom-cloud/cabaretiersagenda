@@ -1,7 +1,7 @@
 {
   "bron": "tilburg",
   "naam": "Schouwburg & Concertzaal Tilburg",
-  "opgehaald": "2026-10-22",
+  "opgehaald": "2026-10-24",
   "theaters": [
     {
       "id": "schouwburg-tilburg",
@@ -28,11 +28,11 @@
       ],
       "titel": "Bedankt om te komen",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jade-mintjens-bedankt-om-te-komen",
       "datum": "2026-11-27",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jade-mintjens-bedankt-om-te-komen"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -41,11 +41,11 @@
       ],
       "titel": "Gelukkig heb je mij nog",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/gelukkig-heb-je-mij-nog-richard-groenendijk",
       "datum": "2027-01-21",
       "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/gelukkig-heb-je-mij-nog-richard-groenendijk"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -54,11 +54,11 @@
       ],
       "titel": "Alles is Comedy",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/alles-is-comedy-najib-roue",
       "datum": "2026-12-11",
       "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/alles-is-comedy-najib-roue"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -67,11 +67,11 @@
       ],
       "titel": "Paul de Leeuw, Annick Boer, Martijn Kardol e.a",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/paul-de-leeuw-we-zijn-toch-familie",
       "datum": "2026-11-18",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/paul-de-leeuw-we-zijn-toch-familie"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -80,11 +80,11 @@
       ],
       "titel": "Ruim",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kasper-van-der-laan-ruim",
       "datum": "2027-03-11",
       "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kasper-van-der-laan-ruim"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -93,11 +93,11 @@
       ],
       "titel": "Kintsugi",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/patrick-laureij-kintsugi",
       "datum": "2027-02-13",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/patrick-laureij-kintsugi"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -106,11 +106,11 @@
       ],
       "titel": "Eindspel",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/marie-koet-eindspel",
       "datum": "2027-04-10",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/marie-koet-eindspel"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -119,11 +119,11 @@
       ],
       "titel": "Renaissance 2.0",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/karin-bloemen-renaissance-20",
       "datum": "2027-02-24",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/karin-bloemen-renaissance-20"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -132,24 +132,11 @@
       ],
       "titel": "Super Normaal",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/thomas-van-luyn-super-normaal",
       "datum": "2027-05-16",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/thomas-van-luyn-super-normaal"
-    },
-    {
-      "theater": "schouwburg-tilburg",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2026-10-23",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/valentina-toth-revue-revanche"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -158,11 +145,11 @@
       ],
       "titel": "Zei ik dat hardop?",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/berit-companjen-zei-ik-dat-hardop",
       "datum": "2026-10-29",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/berit-companjen-zei-ik-dat-hardop"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -171,11 +158,11 @@
       ],
       "titel": "Ai&ik",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/aiik-eranco",
       "datum": "2026-11-04",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/aiik-eranco"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -184,11 +171,11 @@
       ],
       "titel": "Margreet Dolman brengt Warmte en dominee Gremdaat wijst de Weg",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/paul-haenen-margreet-dolman-brengt-warmte",
       "datum": "2026-11-05",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/paul-haenen-margreet-dolman-brengt-warmte"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -197,11 +184,11 @@
       ],
       "titel": "De bingo show",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/maartje-kine-de-bingo-show",
       "datum": "2026-11-07",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/maartje-kine-de-bingo-show"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -210,11 +197,11 @@
       ],
       "titel": "Poeha",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/blauwe-vinkjes-poeha",
       "datum": "2026-11-14",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/blauwe-vinkjes-poeha"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -223,11 +210,11 @@
       ],
       "titel": "Schaamteloos - Oudejaars 2026",
       "genre": "oudejaarsconference",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/dolf-jansen-oudejaars-2026",
       "datum": "2026-11-26",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/dolf-jansen-oudejaars-2026"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -236,11 +223,11 @@
       ],
       "titel": "Welkom",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/hermes-ahmadi-welkom",
       "datum": "2026-11-26",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/hermes-ahmadi-welkom"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -249,11 +236,11 @@
       ],
       "titel": "Comedynight in de Studio",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/comedynight-comedytunes-18dec",
       "datum": "2026-12-18",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/comedynight-comedytunes-18dec"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -262,11 +249,11 @@
       ],
       "titel": "Gelukkig maar",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/myrte-siebinga-gelukkig-maar",
       "datum": "2027-01-28",
       "tijd": "20:30",
-      "status": "geannuleerd",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/myrte-siebinga-gelukkig-maar"
+      "status": "geannuleerd"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -275,11 +262,11 @@
       ],
       "titel": "Uitkijk",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/luuk-ransijn-uitkijk",
       "datum": "2027-02-25",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/luuk-ransijn-uitkijk"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -288,11 +275,11 @@
       ],
       "titel": "Als ik jou was",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/david-van-rosmalen-als-ik-jou-was",
       "datum": "2027-03-25",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/david-van-rosmalen-als-ik-jou-was"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -301,11 +288,11 @@
       ],
       "titel": "Comedynight in de Studio",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/comedynight-comedytunes-15apr",
       "datum": "2027-04-15",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/comedynight-comedytunes-15apr"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -314,11 +301,11 @@
       ],
       "titel": "Lach maar om mij",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/luuk-weggemans-lach-maar-om-mij",
       "datum": "2027-04-29",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/luuk-weggemans-lach-maar-om-mij"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -327,11 +314,11 @@
       ],
       "titel": "Finale",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-finale",
       "datum": "2027-06-04",
       "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-finale"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -340,11 +327,11 @@
       ],
       "titel": "Comedynight in de Studio",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/comedynight-comedytunes-10jun",
       "datum": "2027-06-10",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/comedynight-comedytunes-10jun"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -353,11 +340,11 @@
       ],
       "titel": "Lemming",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/merijn-scholten-lemming",
       "datum": "2027-04-14",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/merijn-scholten-lemming"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -366,11 +353,11 @@
       ],
       "titel": "Striptease van de dood",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/david-linszen-striptease-van-de-dood",
       "datum": "2026-11-20",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/david-linszen-striptease-van-de-dood"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -379,11 +366,11 @@
       ],
       "titel": "Leven met Humor",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/ronald-snijders-leven-met-humor",
       "datum": "2026-12-10",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/ronald-snijders-leven-met-humor"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -392,11 +379,11 @@
       ],
       "titel": "Trekvogel",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/selma-visscher-trekvogel",
       "datum": "2027-01-08",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/selma-visscher-trekvogel"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -405,11 +392,11 @@
       ],
       "titel": "Knegsel-Zuid",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jules-keeris-knegsel-zuid",
       "datum": "2027-01-13",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jules-keeris-knegsel-zuid"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -418,11 +405,11 @@
       ],
       "titel": "Op zekere dag",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kamagurka-op-zekere-dag",
       "datum": "2027-01-15",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kamagurka-op-zekere-dag"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -431,11 +418,11 @@
       ],
       "titel": "Satan is moe",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/lebbis-satan-is-moe",
       "datum": "2027-01-21",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/lebbis-satan-is-moe"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -444,11 +431,11 @@
       ],
       "titel": "Imperfect",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/klaas-van-den-eerden-imperfect",
       "datum": "2027-02-03",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/klaas-van-den-eerden-imperfect"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -457,11 +444,11 @@
       ],
       "titel": "Wina's Wereld",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/wina-ricardo-winas-wereld",
       "datum": "2027-02-18",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/wina-ricardo-winas-wereld"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -470,11 +457,11 @@
       ],
       "titel": "De Eenzame Ziel",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/andre-manuel-de-eenzame-ziel",
       "datum": "2027-03-05",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/andre-manuel-de-eenzame-ziel"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -483,11 +470,11 @@
       ],
       "titel": "Match",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/zij-aron-elstak-match",
       "datum": "2027-03-12",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/zij-aron-elstak-match"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -496,11 +483,11 @@
       ],
       "titel": "Niks aan het handje",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/joosen-en-de-jager-niks-aan-het-handje",
       "datum": "2027-03-31",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/joosen-en-de-jager-niks-aan-het-handje"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -509,11 +496,11 @@
       ],
       "titel": "Kooiapen",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/martijn-crins-kooiapen",
       "datum": "2027-04-23",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/martijn-crins-kooiapen"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -522,11 +509,11 @@
       ],
       "titel": "Finalistentour 2027",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/leids-cabaret-festival-finalistentour-2027",
       "datum": "2027-05-15",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/leids-cabaret-festival-finalistentour-2027"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -535,11 +522,11 @@
       ],
       "titel": "Zwaargewicht",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/fimme-bakker-zwaargewicht",
       "datum": "2027-05-21",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/fimme-bakker-zwaargewicht"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -548,11 +535,11 @@
       ],
       "titel": "De nogal hyperbijzondere Tilburgse Oudejaars-improvisatie-extravaganza 2026",
       "genre": "oudejaarsconference",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/andries-tunru-stefan-hendrikx-tilburgse-oudejaars",
       "datum": "2026-12-16",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/andries-tunru-stefan-hendrikx-tilburgse-oudejaars"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -561,11 +548,11 @@
       ],
       "titel": "Mensenmens",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/daan-van-der-hoeven-mensenmens",
       "datum": "2027-01-07",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/daan-van-der-hoeven-mensenmens"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -574,11 +561,11 @@
       ],
       "titel": "De Baas",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/de-baas-lisa-ostermann",
       "datum": "2027-01-30",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/de-baas-lisa-ostermann"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -587,11 +574,11 @@
       ],
       "titel": "No More Heroes",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/alex-agnew-no-more-heroes",
       "datum": "2027-02-03",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/alex-agnew-no-more-heroes"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -600,11 +587,11 @@
       ],
       "titel": "De grote jubileumshow – jandino 20 jaar",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jandino-de-grote-jubileumshow",
       "datum": "2027-02-20",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jandino-de-grote-jubileumshow"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -613,11 +600,11 @@
       ],
       "titel": "Niet zo Indiscreet…",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/ricky-risolles-3-niet-zo-indiscreet",
       "datum": "2027-02-28",
       "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/ricky-risolles-3-niet-zo-indiscreet"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -626,11 +613,11 @@
       ],
       "titel": "Babel",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kommil-foo-babel",
       "datum": "2027-03-19",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kommil-foo-babel"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -639,24 +626,11 @@
       ],
       "titel": "Breken de tent af!",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/arie-silvester-breken-de-tent-af",
       "datum": "2027-04-01",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/arie-silvester-breken-de-tent-af"
-    },
-    {
-      "theater": "schouwburg-tilburg",
-      "artiesten": [
-        "Henry van Loon"
-      ],
-      "titel": "Keanu",
-      "genre": "cabaret",
-      "datum": "2026-10-22",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/henry-van-loon-keanu"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -665,11 +639,11 @@
       ],
       "titel": "Daar is hij weer!",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/nabil-daar-is-hij-weer",
       "datum": "2027-04-24",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/nabil-daar-is-hij-weer"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -678,11 +652,11 @@
       ],
       "titel": "Alles Onder Controle",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/van-vleuten-en-van-muiswinkel-alles-onder-controle",
       "datum": "2027-06-12",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/van-vleuten-en-van-muiswinkel-alles-onder-controle"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -691,11 +665,11 @@
       ],
       "titel": "Morgen Weer Een Dag",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/lonne-gosling-morgen-weer-een-dag",
       "datum": "2027-02-13",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/lonne-gosling-morgen-weer-een-dag"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -704,11 +678,11 @@
       ],
       "titel": "Live in Theater",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/live-in-theater-ice",
       "datum": "2026-12-10",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/live-in-theater-ice"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -717,11 +691,11 @@
       ],
       "titel": "Try-out Special",
       "genre": "cabaret",
+      "soort": "try-out",
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/leon-van-der-zanden-try-out-special",
       "datum": "2027-06-17",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/leon-van-der-zanden-try-out-special"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -730,11 +704,11 @@
       ],
       "titel": "Halve finale 1",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-halve-finale-1",
       "datum": "2027-05-27",
       "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-halve-finale-1"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -743,11 +717,11 @@
       ],
       "titel": "Halve finale 2",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-halve-finale-2",
       "datum": "2027-05-28",
       "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-halve-finale-2"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -756,24 +730,11 @@
       ],
       "titel": "Wa wilde dèk zeg?",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/karin-dirkx-wa-wilde-dek-zeg",
       "datum": "2027-01-12",
       "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/karin-dirkx-wa-wilde-dek-zeg"
-    },
-    {
-      "theater": "concertzaal-tilburg",
-      "artiesten": [
-        "Alba Vivaldi x T*Agency"
-      ],
-      "titel": "disembarkation ; begin",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/disembarkation-begin"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -782,11 +743,11 @@
       ],
       "titel": "Bedankt om te komen",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jade-mintjens-bedankt-om-te-komen",
       "datum": "2026-11-27",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jade-mintjens-bedankt-om-te-komen"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -795,11 +756,11 @@
       ],
       "titel": "Gelukkig heb je mij nog",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/gelukkig-heb-je-mij-nog-richard-groenendijk",
       "datum": "2027-01-21",
       "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/gelukkig-heb-je-mij-nog-richard-groenendijk"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -808,11 +769,11 @@
       ],
       "titel": "Alles is Comedy",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/alles-is-comedy-najib-roue",
       "datum": "2026-12-11",
       "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/alles-is-comedy-najib-roue"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -821,11 +782,11 @@
       ],
       "titel": "Paul de Leeuw, Annick Boer, Martijn Kardol e.a",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/paul-de-leeuw-we-zijn-toch-familie",
       "datum": "2026-11-18",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/paul-de-leeuw-we-zijn-toch-familie"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -834,11 +795,11 @@
       ],
       "titel": "Ruim",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kasper-van-der-laan-ruim",
       "datum": "2027-03-11",
       "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kasper-van-der-laan-ruim"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -847,11 +808,11 @@
       ],
       "titel": "Kintsugi",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/patrick-laureij-kintsugi",
       "datum": "2027-02-13",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/patrick-laureij-kintsugi"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -860,11 +821,11 @@
       ],
       "titel": "Eindspel",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/marie-koet-eindspel",
       "datum": "2027-04-10",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/marie-koet-eindspel"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -873,11 +834,11 @@
       ],
       "titel": "Renaissance 2.0",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/karin-bloemen-renaissance-20",
       "datum": "2027-02-24",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/karin-bloemen-renaissance-20"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -886,24 +847,11 @@
       ],
       "titel": "Super Normaal",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/thomas-van-luyn-super-normaal",
       "datum": "2027-05-16",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/thomas-van-luyn-super-normaal"
-    },
-    {
-      "theater": "schouwburg-tilburg",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2026-10-23",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/valentina-toth-revue-revanche"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -912,11 +860,11 @@
       ],
       "titel": "Zei ik dat hardop?",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/berit-companjen-zei-ik-dat-hardop",
       "datum": "2026-10-29",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/berit-companjen-zei-ik-dat-hardop"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -925,11 +873,11 @@
       ],
       "titel": "Ai&ik",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/aiik-eranco",
       "datum": "2026-11-04",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/aiik-eranco"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -938,11 +886,11 @@
       ],
       "titel": "Margreet Dolman brengt Warmte en dominee Gremdaat wijst de Weg",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/paul-haenen-margreet-dolman-brengt-warmte",
       "datum": "2026-11-05",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/paul-haenen-margreet-dolman-brengt-warmte"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -951,11 +899,11 @@
       ],
       "titel": "De bingo show",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/maartje-kine-de-bingo-show",
       "datum": "2026-11-07",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/maartje-kine-de-bingo-show"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -964,11 +912,11 @@
       ],
       "titel": "Poeha",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/blauwe-vinkjes-poeha",
       "datum": "2026-11-14",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/blauwe-vinkjes-poeha"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -977,11 +925,11 @@
       ],
       "titel": "Schaamteloos - Oudejaars 2026",
       "genre": "oudejaarsconference",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/dolf-jansen-oudejaars-2026",
       "datum": "2026-11-26",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/dolf-jansen-oudejaars-2026"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -990,11 +938,11 @@
       ],
       "titel": "Welkom",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/hermes-ahmadi-welkom",
       "datum": "2026-11-26",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/hermes-ahmadi-welkom"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1003,11 +951,11 @@
       ],
       "titel": "Comedynight in de Studio",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/comedynight-comedytunes-18dec",
       "datum": "2026-12-18",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/comedynight-comedytunes-18dec"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1016,11 +964,11 @@
       ],
       "titel": "Gelukkig maar",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/myrte-siebinga-gelukkig-maar",
       "datum": "2027-01-28",
       "tijd": "20:30",
-      "status": "geannuleerd",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/myrte-siebinga-gelukkig-maar"
+      "status": "geannuleerd"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1029,11 +977,11 @@
       ],
       "titel": "Uitkijk",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/luuk-ransijn-uitkijk",
       "datum": "2027-02-25",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/luuk-ransijn-uitkijk"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1042,11 +990,11 @@
       ],
       "titel": "Als ik jou was",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/david-van-rosmalen-als-ik-jou-was",
       "datum": "2027-03-25",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/david-van-rosmalen-als-ik-jou-was"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1055,11 +1003,11 @@
       ],
       "titel": "Comedynight in de Studio",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/comedynight-comedytunes-15apr",
       "datum": "2027-04-15",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/comedynight-comedytunes-15apr"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1068,11 +1016,11 @@
       ],
       "titel": "Lach maar om mij",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/luuk-weggemans-lach-maar-om-mij",
       "datum": "2027-04-29",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/luuk-weggemans-lach-maar-om-mij"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1081,11 +1029,11 @@
       ],
       "titel": "Finale",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-finale",
       "datum": "2027-06-04",
       "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-finale"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1094,11 +1042,11 @@
       ],
       "titel": "Comedynight in de Studio",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/comedynight-comedytunes-10jun",
       "datum": "2027-06-10",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/comedynight-comedytunes-10jun"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1107,11 +1055,11 @@
       ],
       "titel": "Lemming",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/merijn-scholten-lemming",
       "datum": "2027-04-14",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/merijn-scholten-lemming"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1120,11 +1068,11 @@
       ],
       "titel": "Striptease van de dood",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/david-linszen-striptease-van-de-dood",
       "datum": "2026-11-20",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/david-linszen-striptease-van-de-dood"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1133,11 +1081,11 @@
       ],
       "titel": "Leven met Humor",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/ronald-snijders-leven-met-humor",
       "datum": "2026-12-10",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/ronald-snijders-leven-met-humor"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1146,11 +1094,11 @@
       ],
       "titel": "Trekvogel",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/selma-visscher-trekvogel",
       "datum": "2027-01-08",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/selma-visscher-trekvogel"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1159,11 +1107,11 @@
       ],
       "titel": "Knegsel-Zuid",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jules-keeris-knegsel-zuid",
       "datum": "2027-01-13",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jules-keeris-knegsel-zuid"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1172,11 +1120,11 @@
       ],
       "titel": "Op zekere dag",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kamagurka-op-zekere-dag",
       "datum": "2027-01-15",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kamagurka-op-zekere-dag"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1185,11 +1133,11 @@
       ],
       "titel": "Satan is moe",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/lebbis-satan-is-moe",
       "datum": "2027-01-21",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/lebbis-satan-is-moe"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1198,11 +1146,11 @@
       ],
       "titel": "Imperfect",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/klaas-van-den-eerden-imperfect",
       "datum": "2027-02-03",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/klaas-van-den-eerden-imperfect"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1211,11 +1159,11 @@
       ],
       "titel": "Wina's Wereld",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/wina-ricardo-winas-wereld",
       "datum": "2027-02-18",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/wina-ricardo-winas-wereld"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1224,11 +1172,11 @@
       ],
       "titel": "De Eenzame Ziel",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/andre-manuel-de-eenzame-ziel",
       "datum": "2027-03-05",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/andre-manuel-de-eenzame-ziel"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1237,11 +1185,11 @@
       ],
       "titel": "Match",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/zij-aron-elstak-match",
       "datum": "2027-03-12",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/zij-aron-elstak-match"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1250,11 +1198,11 @@
       ],
       "titel": "Niks aan het handje",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/joosen-en-de-jager-niks-aan-het-handje",
       "datum": "2027-03-31",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/joosen-en-de-jager-niks-aan-het-handje"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1263,11 +1211,11 @@
       ],
       "titel": "Kooiapen",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/martijn-crins-kooiapen",
       "datum": "2027-04-23",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/martijn-crins-kooiapen"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1276,11 +1224,11 @@
       ],
       "titel": "Finalistentour 2027",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/leids-cabaret-festival-finalistentour-2027",
       "datum": "2027-05-15",
       "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/leids-cabaret-festival-finalistentour-2027"
+      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1289,11 +1237,11 @@
       ],
       "titel": "Zwaargewicht",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/fimme-bakker-zwaargewicht",
       "datum": "2027-05-21",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/fimme-bakker-zwaargewicht"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1302,11 +1250,11 @@
       ],
       "titel": "De nogal hyperbijzondere Tilburgse Oudejaars-improvisatie-extravaganza 2026",
       "genre": "oudejaarsconference",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/andries-tunru-stefan-hendrikx-tilburgse-oudejaars",
       "datum": "2026-12-16",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/andries-tunru-stefan-hendrikx-tilburgse-oudejaars"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1315,11 +1263,11 @@
       ],
       "titel": "Mensenmens",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/daan-van-der-hoeven-mensenmens",
       "datum": "2027-01-07",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/daan-van-der-hoeven-mensenmens"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1328,11 +1276,11 @@
       ],
       "titel": "De Baas",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/de-baas-lisa-ostermann",
       "datum": "2027-01-30",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/de-baas-lisa-ostermann"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1341,11 +1289,11 @@
       ],
       "titel": "No More Heroes",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/alex-agnew-no-more-heroes",
       "datum": "2027-02-03",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/alex-agnew-no-more-heroes"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1354,11 +1302,11 @@
       ],
       "titel": "De grote jubileumshow – jandino 20 jaar",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jandino-de-grote-jubileumshow",
       "datum": "2027-02-20",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jandino-de-grote-jubileumshow"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1367,11 +1315,11 @@
       ],
       "titel": "Niet zo Indiscreet…",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/ricky-risolles-3-niet-zo-indiscreet",
       "datum": "2027-02-28",
       "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/ricky-risolles-3-niet-zo-indiscreet"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1380,11 +1328,11 @@
       ],
       "titel": "Babel",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kommil-foo-babel",
       "datum": "2027-03-19",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kommil-foo-babel"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1393,24 +1341,11 @@
       ],
       "titel": "Breken de tent af!",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/arie-silvester-breken-de-tent-af",
       "datum": "2027-04-01",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/arie-silvester-breken-de-tent-af"
-    },
-    {
-      "theater": "schouwburg-tilburg",
-      "artiesten": [
-        "Henry van Loon"
-      ],
-      "titel": "Keanu",
-      "genre": "cabaret",
-      "datum": "2026-10-22",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/henry-van-loon-keanu"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1419,11 +1354,11 @@
       ],
       "titel": "Daar is hij weer!",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/nabil-daar-is-hij-weer",
       "datum": "2027-04-24",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/nabil-daar-is-hij-weer"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1432,11 +1367,11 @@
       ],
       "titel": "Alles Onder Controle",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/van-vleuten-en-van-muiswinkel-alles-onder-controle",
       "datum": "2027-06-12",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/van-vleuten-en-van-muiswinkel-alles-onder-controle"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1445,11 +1380,11 @@
       ],
       "titel": "Morgen Weer Een Dag",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/lonne-gosling-morgen-weer-een-dag",
       "datum": "2027-02-13",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/lonne-gosling-morgen-weer-een-dag"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1458,11 +1393,11 @@
       ],
       "titel": "Live in Theater",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/live-in-theater-ice",
       "datum": "2026-12-10",
       "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/live-in-theater-ice"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1471,11 +1406,11 @@
       ],
       "titel": "Try-out Special",
       "genre": "cabaret",
+      "soort": "try-out",
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/leon-van-der-zanden-try-out-special",
       "datum": "2027-06-17",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/leon-van-der-zanden-try-out-special"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1484,11 +1419,11 @@
       ],
       "titel": "Halve finale 1",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-halve-finale-1",
       "datum": "2027-05-27",
       "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-halve-finale-1"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1497,11 +1432,11 @@
       ],
       "titel": "Halve finale 2",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-halve-finale-2",
       "datum": "2027-05-28",
       "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-halve-finale-2"
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1510,24 +1445,11 @@
       ],
       "titel": "Wa wilde dèk zeg?",
       "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/karin-dirkx-wa-wilde-dek-zeg",
       "datum": "2027-01-12",
       "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/karin-dirkx-wa-wilde-dek-zeg"
-    },
-    {
-      "theater": "concertzaal-tilburg",
-      "artiesten": [
-        "Alba Vivaldi x T*Agency"
-      ],
-      "titel": "disembarkation ; begin",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/disembarkation-begin"
+      "status": "uitverkocht"
     }
   ]
 }

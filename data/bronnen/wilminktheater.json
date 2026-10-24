@@ -1,7 +1,7 @@
 {
   "bron": "wilminktheater",
   "naam": "Wilminktheater en Muziekcentrum Enschede",
-  "opgehaald": "2026-10-21",
+  "opgehaald": "2026-10-24",
   "theaters": [
     {
       "id": "wilminktheater",
@@ -31,30 +31,10 @@
         "website": null
       },
       "artiesten": [
-        "Ayoub Kharkhach"
-      ],
-      "titel": "En verbied de vogels om te fluiten",
-      "genre": "stand-up",
-      "datum": "2026-10-23",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/en-verbied-de-vogels-om-te-fluiten-46td"
-    },
-    {
-      "theater": {
-        "id": "de-kleine-willem-enschede",
-        "naam": "De Kleine Willem",
-        "plaats": "Enschede",
-        "land": "NL",
-        "soort": "theater",
-        "website": null
-      },
-      "artiesten": [
         "Comedytunes"
       ],
       "titel": "Comedy Night @ De Kleine Willem",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-10-29",
       "tijd": "20:30",
       "status": "uitverkocht",
@@ -73,8 +53,8 @@
       "artiesten": [
         "Rundfunk"
       ],
-      "titel": "Wagyu - try out",
-      "genre": "stand-up",
+      "titel": "Wagyu",
+      "genre": "cabaret",
       "datum": "2026-10-30",
       "tijd": "20:30",
       "status": "uitverkocht",
@@ -107,7 +87,7 @@
         "Lisa Ostermann"
       ],
       "titel": "De Baas",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-03",
       "tijd": "20:00",
       "status": "gepland",
@@ -173,7 +153,7 @@
         "Najib & Roué"
       ],
       "titel": "Alles is Comedy",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-09",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -199,7 +179,7 @@
         "René van Meurs"
       ],
       "titel": "Noodzakelijk kwaad - Herneming",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:00",
       "status": "gepland",
@@ -239,7 +219,7 @@
         "Boban Benjamin Braspenning"
       ],
       "titel": "Bruto",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-18",
       "tijd": "20:30",
       "status": "gepland",
@@ -272,7 +252,7 @@
         "Huub Stapel"
       ],
       "titel": "Mannen komen van Mars, Vrouwen van Venus",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "20:00",
       "status": "gepland",
@@ -285,7 +265,7 @@
         "Huub Stapel"
       ],
       "titel": "Mannen komen van Mars, Vrouwen van Venus",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-21",
       "tijd": "20:00",
       "status": "gepland",
@@ -345,7 +325,7 @@
         "Comedytunes"
       ],
       "titel": "Comedy Night @ De Kleine Willem",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:30",
       "status": "gepland",
@@ -391,7 +371,7 @@
         "Merijn Scholten"
       ],
       "titel": "LEMMING - herneming",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-02",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -404,7 +384,7 @@
         "Arie & Silvester"
       ],
       "titel": "Breken de tent af",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-03",
       "tijd": "20:00",
       "status": "gepland",
@@ -548,7 +528,7 @@
         "Andries Tunru & Stefan Hendrikx"
       ],
       "titel": "Beperkt Houdbaar",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-16",
       "tijd": "20:30",
       "status": "gepland",
@@ -568,7 +548,7 @@
         "Selma Visscher"
       ],
       "titel": "Trekvogel",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-21",
       "tijd": "20:30",
       "status": "gepland",
@@ -608,7 +588,7 @@
         "Jörgen Raymann"
       ],
       "titel": "BIGI YARI: Welkom thuis, waar niemand op je zit te wachten",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-23",
       "tijd": "20:30",
       "status": "gepland",
@@ -628,7 +608,7 @@
         "Comedytunes"
       ],
       "titel": "Comedy Night @ De Kleine Willem",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-28",
       "tijd": "20:30",
       "status": "gepland",
@@ -668,7 +648,7 @@
         "Joosen en de Jager"
       ],
       "titel": "Niks aan het handje",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-05",
       "tijd": "20:30",
       "status": "gepland",
@@ -700,8 +680,8 @@
       "artiesten": [
         "Cabarestafette presenteert"
       ],
-      "titel": "Nieuw Geluid!",
-      "genre": "stand-up",
+      "titel": "Nieuw geluid!",
+      "genre": "cabaret",
       "datum": "2027-02-10",
       "tijd": "20:30",
       "status": "gepland",
@@ -740,7 +720,7 @@
       "artiesten": [
         "Peter Heerschop"
       ],
-      "titel": "Lieve Marianne - try out",
+      "titel": "Lieve Marianne",
       "genre": "cabaret",
       "datum": "2027-02-12",
       "tijd": "20:30",
@@ -761,7 +741,7 @@
         "Soraya de Bakker"
       ],
       "titel": "Help, ik ga trouwen",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-13",
       "tijd": "20:30",
       "status": "gepland",
@@ -781,7 +761,7 @@
         "Comedytunes"
       ],
       "titel": "Comedy Night @ De Kleine Willem",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-18",
       "tijd": "20:30",
       "status": "gepland",
@@ -801,7 +781,7 @@
         "Tim Kroezen"
       ],
       "titel": "550",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-26",
       "tijd": "20:30",
       "status": "gepland",
@@ -820,8 +800,8 @@
       "artiesten": [
         "Nathalie Baartman"
       ],
-      "titel": "De Bössels van Baartman II | Première",
-      "genre": "stand-up",
+      "titel": "De Bössels van Baartman II",
+      "genre": "cabaret",
       "datum": "2027-02-27",
       "tijd": "20:30",
       "status": "gepland",
@@ -834,7 +814,7 @@
         "Van der Laan & Woe"
       ],
       "titel": "Dinsdagmiddag",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-03",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -847,7 +827,7 @@
         "Van der Laan & Woe"
       ],
       "titel": "Dinsdagmiddag",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-04",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -867,7 +847,7 @@
         "Gavin Reijnders"
       ],
       "titel": "Jazzebelle",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-04",
       "tijd": "20:30",
       "status": "gepland",
@@ -887,7 +867,7 @@
         "Berit Companjen"
       ],
       "titel": "Zei ik dat hardop?",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-05",
       "tijd": "20:30",
       "status": "gepland",
@@ -907,7 +887,7 @@
         "Martijn Koning"
       ],
       "titel": "Overprikkeld",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-06",
       "tijd": "20:30",
       "status": "gepland",
@@ -920,7 +900,7 @@
         "Rayen Panday"
       ],
       "titel": "Grip",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-13",
       "tijd": "20:00",
       "status": "gepland",
@@ -940,7 +920,7 @@
         "Ronald Snijders - Leven met humor"
       ],
       "titel": "Leven met humor",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-13",
       "tijd": "20:30",
       "status": "gepland",
@@ -960,7 +940,7 @@
         "André Manuel"
       ],
       "titel": "De Eenzame Ziel",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-18",
       "tijd": "20:30",
       "status": "gepland",
@@ -980,7 +960,7 @@
         "Piet van Eeghen"
       ],
       "titel": "De Lieve Vrede",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-20",
       "tijd": "20:30",
       "status": "gepland",
@@ -992,7 +972,7 @@
       "artiesten": [
         "Jandino Asporaat"
       ],
-      "titel": "De Grote Jubileumshow – Jandino 20 Jaar",
+      "titel": "De grote jubileumshow – jandino 20 jaar",
       "genre": "cabaret",
       "datum": "2027-03-23",
       "tijd": "20:00",
@@ -1006,7 +986,7 @@
         "Daniël Arends"
       ],
       "titel": "High Class Bitch - herneming",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-24",
       "tijd": "19:00",
       "status": "uitverkocht",
@@ -1019,7 +999,7 @@
         "Daniël Arends"
       ],
       "titel": "Had ik maar nooit zo aardig gedaan - Herneming",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-24",
       "tijd": "21:30",
       "status": "uitverkocht",
@@ -1039,7 +1019,7 @@
         "Comedytunes"
       ],
       "titel": "Comedy Night @ De Kleine Willem",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-25",
       "tijd": "20:30",
       "status": "gepland",
@@ -1059,7 +1039,7 @@
         "Nabil Aoulad Ayad"
       ],
       "titel": "Daar is hij weer!",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-27",
       "tijd": "20:30",
       "status": "gepland",
@@ -1085,7 +1065,7 @@
         "Joep van Deudekom & Rob Urgert"
       ],
       "titel": "De Verbinders",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-01",
       "tijd": "20:00",
       "status": "gepland",
@@ -1105,7 +1085,7 @@
         "Kamagurka"
       ],
       "titel": "Op zekere dag",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-01",
       "tijd": "20:30",
       "status": "gepland",
@@ -1138,7 +1118,7 @@
         "Theo, Plien, Bianca, Ilse, Rop e.a."
       ],
       "titel": "Ratatatata!",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-14",
       "tijd": "20:00",
       "status": "gepland",
@@ -1151,7 +1131,7 @@
         "Theo, Plien, Bianca, Ilse, Rop e.a."
       ],
       "titel": "Ratatatata!",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-15",
       "tijd": "20:00",
       "status": "gepland",
@@ -1171,7 +1151,7 @@
         "Comedytunes"
       ],
       "titel": "Comedy Night @ De Kleine Willem",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-22",
       "tijd": "20:30",
       "status": "gepland",
@@ -1204,7 +1184,7 @@
         "Kim Karssen"
       ],
       "titel": "God is een snotje",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-30",
       "tijd": "20:30",
       "status": "gepland",
@@ -1237,7 +1217,7 @@
         "Jeannine la Rose"
       ],
       "titel": "Meer?!",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-12",
       "tijd": "20:30",
       "status": "gepland",
@@ -1250,7 +1230,7 @@
         "Rundfunk"
       ],
       "titel": "Wagyu",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-13",
       "tijd": "20:00",
       "status": "gepland",
@@ -1263,7 +1243,7 @@
         "Rundfunk"
       ],
       "titel": "Wagyu",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-14",
       "tijd": "20:00",
       "status": "gepland",
@@ -1283,7 +1263,7 @@
         "Fabian Franciscus"
       ],
       "titel": "Is het leven al begonnen?",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-13",
       "tijd": "20:30",
       "status": "gepland",
@@ -1323,7 +1303,7 @@
         "Valentina Tóth"
       ],
       "titel": "Revue Revanche",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-15",
       "tijd": "20:30",
       "status": "gepland",
@@ -1336,7 +1316,7 @@
         "Esther van der Voort"
       ],
       "titel": "Mama is Boos",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-20",
       "tijd": "20:00",
       "status": "gepland",
@@ -1356,7 +1336,7 @@
         "Kees van Amstel"
       ],
       "titel": "Mogen we eerder weg?",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-20",
       "tijd": "20:30",
       "status": "gepland",
@@ -1369,7 +1349,7 @@
         "Roué Verveer"
       ],
       "titel": "Vanzelfsprekend",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-22",
       "tijd": "20:00",
       "status": "gepland",
@@ -1426,9 +1406,9 @@
         "website": null
       },
       "artiesten": [
-        "Viggo Waas, Eddie B. Wahr & Kees van der Vooren"
+        "Eigenlijk"
       ],
-      "titel": "Eigenlijk",
+      "titel": "Viggo Waas, Eddie B. Wahr & Kees van der Vooren",
       "genre": "cabaret",
       "datum": "2027-06-03",
       "tijd": "20:30",

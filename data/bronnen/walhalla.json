@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-10-22",
+  "opgehaald": "2026-10-24",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -29,32 +29,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-walhalla",
-      "artiesten": [
-        "Johan Goossens"
-      ],
-      "titel": "Het Volle Leven",
-      "genre": "cabaret",
-      "datum": "2026-10-22",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/johan-goossens-het-volle-leven/"
-    },
-    {
-      "theater": "theater-walhalla",
-      "artiesten": [
-        "Glodi Lugungu"
-      ],
-      "titel": "In De Hemel Ken Ik Jullie Niet",
-      "genre": "cabaret",
-      "datum": "2026-10-23",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/glodi-lugungu-in-de-hemel-ken-ik-jullie-niet-try-out/"
-    },
     {
       "theater": "theater-walhalla",
       "artiesten": [
@@ -114,7 +88,7 @@
       "genre": "kleinkunst",
       "datum": "2026-11-04",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/vrouwejaars-2026-try-out/"
     },
@@ -138,7 +112,7 @@
       "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/remy-evers-graag-gedaan-leesvoorstelling/"
     },
@@ -216,7 +190,7 @@
       "genre": "cabaret",
       "datum": "2026-11-14",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/kim-schuddeboom-hardleers-try-out-2/"
     },
@@ -576,7 +550,7 @@
       "genre": "cabaret",
       "datum": "2027-02-11",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/groninger-studenten-cabaret-festival-finalistentour/"
     },
@@ -615,7 +589,7 @@
       "genre": "kleinkunst",
       "datum": "2027-02-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/niek-guy-legatum/"
     },
@@ -628,7 +602,7 @@
       "genre": "cabaret",
       "datum": "2027-02-18",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/gavin-reijnders-jazzebelle/"
     },
@@ -728,7 +702,7 @@
       "genre": "cabaret",
       "datum": "2027-03-04",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/martijn-crins-kooiapen-try-out/"
     },
@@ -780,7 +754,7 @@
       "genre": "cabaret",
       "datum": "2027-03-17",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-12/"
     },
@@ -839,7 +813,7 @@
       "genre": "kleinkunst",
       "datum": "2027-04-01",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-10/"
     },
@@ -967,7 +941,7 @@
       "genre": "cabaret",
       "datum": "2027-04-16",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/kees-van-amstel-mogen-we-eerder-weg/"
     },

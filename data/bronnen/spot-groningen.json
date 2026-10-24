@@ -1,7 +1,7 @@
 {
   "bron": "spot-groningen",
   "naam": "SPOT Groningen",
-  "opgehaald": "2026-10-21",
+  "opgehaald": "2026-10-24",
   "theaters": [
     {
       "id": "de-oosterpoort",
@@ -53,19 +53,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "usva-groningen",
-      "artiesten": [
-        "Amsterdams Studenten Cabaret Festival"
-      ],
-      "titel": "Finalistentournee",
-      "genre": "cabaret",
-      "datum": "2026-10-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.spotgroningen.nl/programma/amsterdams-studenten-cabaret-festival/"
-    },
     {
       "theater": "stadsschouwburg-groningen",
       "artiesten": [
@@ -179,7 +166,7 @@
       "genre": "cabaret",
       "datum": "2026-11-22",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/bert-visscher-en-het-noordpool-strijkkwartet-2/"
     },
@@ -309,7 +296,7 @@
       "genre": "kleinkunst",
       "datum": "2026-12-06",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/yentl-de-boer-4/"
     },

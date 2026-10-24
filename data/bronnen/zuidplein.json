@@ -1,7 +1,7 @@
 {
   "bron": "zuidplein",
   "naam": "Theater Zuidplein",
-  "opgehaald": "2026-10-21",
+  "opgehaald": "2026-10-24",
   "theaters": [
     {
       "id": "theater-zuidplein",
@@ -71,7 +71,7 @@
         "Marja van Katendrecht"
       ],
       "titel": "Marja's Spetterende Bingoshow",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-01",
       "tijd": "15:00",
       "status": "gepland",
@@ -84,7 +84,7 @@
         "Marja van Katendrecht"
       ],
       "titel": "Marja's Spetterende Bingoshow",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-04",
       "tijd": "15:00",
       "status": "gepland",
@@ -97,7 +97,7 @@
         "Marja van Katendrecht"
       ],
       "titel": "Marja's Spetterende Bingoshow",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-30",
       "tijd": "15:00",
       "status": "gepland",
@@ -123,7 +123,7 @@
         "Kijk je Kop"
       ],
       "titel": "Kijk je Kop",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-21",
       "tijd": "20:30",
       "status": "gepland",
@@ -136,7 +136,7 @@
         "Kijk je Kop"
       ],
       "titel": "Kijk je Kop",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-02",
       "tijd": "20:30",
       "status": "gepland",
@@ -149,7 +149,7 @@
         "TimZingt"
       ],
       "titel": "Grijs -reprise-",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:00",
       "status": "gepland",
@@ -162,7 +162,7 @@
         "Vuile Huichelaar"
       ],
       "titel": "Ik zit hier heel alleen kerstfeest te vieren 2",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-01",
       "tijd": "20:00",
       "status": "gepland",
@@ -188,7 +188,7 @@
         "Comedyavond met Marco Lopes (Piet) als MC"
       ],
       "titel": "Piet en zijn Matties",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-04",
       "tijd": "20:30",
       "status": "gepland",
@@ -200,8 +200,8 @@
       "artiesten": [
         "Nilgün Yerli"
       ],
-      "titel": "Weet je het zeker? - première",
-      "genre": "stand-up",
+      "titel": "Weet je het zeker?",
+      "genre": "cabaret",
       "datum": "2026-12-09",
       "tijd": "20:30",
       "status": "gepland",
@@ -211,10 +211,10 @@
     {
       "theater": "theater-zuidplein",
       "artiesten": [
-        "Yora Rienstra e.a."
+        "Vrouwejaars 2026"
       ],
-      "titel": "Vrouwejaars 2026",
-      "genre": "stand-up",
+      "titel": "Yora Rienstra e.a.",
+      "genre": "cabaret",
       "datum": "2026-12-13",
       "tijd": "20:00",
       "status": "gepland",
@@ -227,7 +227,7 @@
         "Fred van Leer"
       ],
       "titel": "Ik weet het eigenlijk niet",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-16",
       "tijd": "20:00",
       "status": "gepland",
@@ -239,7 +239,7 @@
       "artiesten": [
         "Jandino"
       ],
-      "titel": "De Grote Jubileumshow",
+      "titel": "De grote jubileumshow",
       "genre": "stand-up",
       "datum": "2026-12-18",
       "tijd": "20:00",
@@ -252,7 +252,7 @@
       "artiesten": [
         "Ta Joela"
       ],
-      "titel": "Je hebt geen idee - première",
+      "titel": "Je hebt geen idee",
       "genre": "stand-up",
       "datum": "2026-12-19",
       "tijd": "20:30",
@@ -266,7 +266,7 @@
         "Marja van Katendrecht X Theater Zuidplein"
       ],
       "titel": "Marja's Very Merry Christmas",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-20",
       "tijd": "15:00",
       "status": "gepland",
@@ -279,7 +279,7 @@
         "Marja van Katendrecht X Theater Zuidplein"
       ],
       "titel": "Marja's Very Merry Christmas",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-21",
       "tijd": "20:00",
       "status": "gepland",
@@ -292,7 +292,7 @@
         "Marja van Katendrecht X Theater Zuidplein"
       ],
       "titel": "Marja's Very Merry Christmas",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-22",
       "tijd": "20:00",
       "status": "gepland",
@@ -305,7 +305,7 @@
         "Marja van Katendrecht X Theater Zuidplein"
       ],
       "titel": "Marja's Very Merry Christmas",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2026-12-23",
       "tijd": "20:00",
       "status": "gepland",
@@ -317,7 +317,7 @@
       "artiesten": [
         "Nesim El Ahmadi"
       ],
-      "titel": "Iedereen komt aan de beurt - try out",
+      "titel": "Iedereen komt aan de beurt",
       "genre": "stand-up",
       "datum": "2026-12-20",
       "tijd": "20:15",
@@ -331,7 +331,7 @@
         "Joosen en de Jager"
       ],
       "titel": "Niks aan het handje",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-08",
       "tijd": "20:00",
       "status": "gepland",
@@ -344,7 +344,7 @@
         "Jasper van der Veen"
       ],
       "titel": "Op Scherp",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-16",
       "tijd": "20:30",
       "status": "gepland",
@@ -357,7 +357,7 @@
         "Buğra Gedik"
       ],
       "titel": "Ğelukkig Ğeboren",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-01-20",
       "tijd": "20:15",
       "status": "gepland",
@@ -369,8 +369,8 @@
       "artiesten": [
         "Myrthe Siebinga"
       ],
-      "titel": "Gelukkig Maar",
-      "genre": "stand-up",
+      "titel": "Gelukkig maar",
+      "genre": "cabaret",
       "datum": "2027-01-27",
       "tijd": "20:30",
       "status": "geannuleerd",
@@ -396,7 +396,7 @@
         "Fimme Bakker"
       ],
       "titel": "Zwaargewicht",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-03",
       "tijd": "20:30",
       "status": "gepland",
@@ -409,7 +409,7 @@
         "Nienke Plas"
       ],
       "titel": "Appeltje Eitje",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-05",
       "tijd": "20:00",
       "status": "gepland",
@@ -435,7 +435,7 @@
         "Samir Fighil"
       ],
       "titel": "Turbulentie",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-02-20",
       "tijd": "20:30",
       "status": "gepland",
@@ -447,7 +447,7 @@
       "artiesten": [
         "Deng Boy"
       ],
-      "titel": "Double Trouble - try-out",
+      "titel": "Double Trouble",
       "genre": "stand-up",
       "datum": "2027-02-24",
       "tijd": "20:15",
@@ -460,8 +460,8 @@
       "artiesten": [
         "Marja van Katendrecht"
       ],
-      "titel": "Heel Holland Hoopt",
-      "genre": "stand-up",
+      "titel": "Heel holland hoopt",
+      "genre": "cabaret",
       "datum": "2027-03-03",
       "tijd": "20:30",
       "status": "gepland",
@@ -474,7 +474,7 @@
         "Remko Vrijdag"
       ],
       "titel": "Marko Maandag",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-12",
       "tijd": "20:00",
       "status": "gepland",
@@ -487,7 +487,7 @@
         "Gavin Reijnders"
       ],
       "titel": "Jazzebelle",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-13",
       "tijd": "20:00",
       "status": "gepland",
@@ -513,7 +513,7 @@
         "Jawad Es Soufi"
       ],
       "titel": "Tnawies",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-19",
       "tijd": "20:00",
       "status": "gepland",
@@ -526,7 +526,7 @@
         "Jawad Es Soufi"
       ],
       "titel": "Tnawies",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-03-20",
       "tijd": "20:00",
       "status": "gepland",
@@ -550,7 +550,7 @@
         "Cameretten"
       ],
       "titel": "Cameretten Finalistentournee 60e editie",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-07",
       "tijd": "20:00",
       "status": "gepland",
@@ -563,7 +563,7 @@
         "Rachid Larouz"
       ],
       "titel": "Wakker Worden",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-16",
       "tijd": "20:00",
       "status": "gepland",
@@ -576,7 +576,7 @@
         "Leids Cabaret Festival on Tour"
       ],
       "titel": "Finalistentour 2027",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-21",
       "tijd": "20:30",
       "status": "gepland",
@@ -589,7 +589,7 @@
         "Kim Schuddeboom"
       ],
       "titel": "Hardleers",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-04-28",
       "tijd": "20:30",
       "status": "gepland",
@@ -628,7 +628,7 @@
         "Team Ricky Risolles"
       ],
       "titel": "Ricky Risolles 3 - Niet zo Indiscreet…",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-15",
       "tijd": "20:00",
       "status": "gepland",
@@ -641,7 +641,7 @@
         "Kim Karssen"
       ],
       "titel": "God is een snotje",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-05-19",
       "tijd": "20:30",
       "status": "gepland",
@@ -653,8 +653,8 @@
       "artiesten": [
         "Tobi Kooiman"
       ],
-      "titel": "Best Of 4 - try-out",
-      "genre": "stand-up",
+      "titel": "Best Of 4",
+      "genre": "cabaret",
       "datum": "2027-05-26",
       "tijd": "20:30",
       "status": "gepland",
@@ -667,7 +667,7 @@
         "Daan van der Hoeven"
       ],
       "titel": "Mensenmens",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-06-04",
       "tijd": "20:00",
       "status": "gepland",
@@ -679,7 +679,7 @@
       "artiesten": [
         "Tim Hartog"
       ],
-      "titel": "In principe - try-out",
+      "titel": "In principe",
       "genre": "stand-up",
       "datum": "2027-06-19",
       "tijd": "20:30",
@@ -693,7 +693,7 @@
         "Deng Boy"
       ],
       "titel": "Double Trouble",
-      "genre": "stand-up",
+      "genre": "cabaret",
       "datum": "2027-07-09",
       "tijd": "20:00",
       "status": "gepland",

@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-10-21",
+  "opgehaald": "2026-10-24",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -856,6 +856,32 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
+        "Ricky Risolles"
+      ],
+      "titel": "Niet zo Indiscreet",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ricky-risolles-59430/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Ricky Risolles"
+      ],
+      "titel": "Niet zo Indiscreet",
+      "genre": "cabaret",
+      "datum": "2027-11-07",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ricky-risolles-59430/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
         "Thomas van Luyn"
       ],
       "titel": "Super Normaal",
@@ -956,45 +982,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jay-francis-58919/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Rayen Panday & Friends"
-      ],
-      "titel": "Wonderful Christmastime",
-      "genre": "cabaret",
-      "datum": "2026-12-17",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/rayen-panday-59668/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2026-10-21",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://luxortheater.nl/agenda/merijn-scholten-55179/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2026-10-22",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://luxortheater.nl/agenda/merijn-scholten-55179/"
     },
     {
       "theater": "nieuwe-luxor",
@@ -1311,19 +1298,6 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
-        "Andries Tunru en Stefan Hendrikx"
-      ],
-      "titel": "De nogal hyperbijzondere Oudejaars-improvisatie-extravaganza 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-12-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/andries-tunru-en-stefan-hendrikx-58129/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
         "Rundfunk"
       ],
       "titel": "Wagyu",
@@ -1445,7 +1419,7 @@
       "genre": "cabaret",
       "datum": "2026-11-06",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/najib-roue-56186/"
     },
@@ -1578,6 +1552,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/micky-overman-58137/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Andries Tunru en Stefan Hendrikx"
+      ],
+      "titel": "De nogal hyperbijzondere Oudejaars-improvisatie-extravaganza 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/andries-tunru-en-stefan-hendrikx-58129/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Rayen Panday & Friends"
+      ],
+      "titel": "Wonderful Christmastime",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/rayen-panday-59668/"
     }
   ]
 }

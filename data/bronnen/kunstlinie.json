@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-10-22",
+  "opgehaald": "2026-10-24",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -42,32 +42,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Steven Brunswijk"
-      ],
-      "titel": "Steven Brunswijk",
-      "genre": "cabaret",
-      "datum": "2027-04-23",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Roué Verveer"
-      ],
-      "titel": "Roué Verveer",
-      "genre": "cabaret",
-      "datum": "2027-05-29",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Deng Boy"
       ],
       "titel": "Deng Boy",
@@ -94,6 +68,32 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Roué Verveer",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Steven Brunswijk"
+      ],
+      "titel": "Steven Brunswijk",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "Klaas van der Eerden"
       ],
       "titel": "Klaas van der Eerden",
@@ -107,19 +107,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Team Ricky Risolles"
-      ],
-      "titel": "Team Ricky Risolles",
-      "genre": "cabaret",
-      "datum": "2027-03-21",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/team-ricky-risolles/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Jörgen Raymann"
       ],
       "titel": "Jörgen Raymann",
@@ -129,6 +116,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/jorgen-raymann/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Team Ricky Risolles"
+      ],
+      "titel": "Team Ricky Risolles",
+      "genre": "cabaret",
+      "datum": "2027-03-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/team-ricky-risolles/"
     },
     {
       "theater": "kunstlinie",
@@ -198,19 +198,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Bro’s"
-      ],
-      "titel": "Bro’s",
-      "genre": "cabaret",
-      "datum": "2026-12-19",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/bros/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Joep van Deudekom & Rob Urgert"
       ],
       "titel": "Joep van Deudekom & Rob Urgert",
@@ -220,6 +207,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/joep-van-deudekom-rob-urgert/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Bro’s"
+      ],
+      "titel": "Bro’s",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/bros/"
     },
     {
       "theater": "kunstlinie",
@@ -259,19 +259,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/joanne-telesford/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Dolf Jansen"
-      ],
-      "titel": "Dolf Jansen",
-      "genre": "cabaret",
-      "datum": "2026-10-23",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/dolf-jansen-3/"
     },
     {
       "theater": "kunstlinie",
@@ -718,19 +705,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "David van Rosmalen"
-      ],
-      "titel": "David van Rosmalen",
-      "genre": "cabaret",
-      "datum": "2027-04-30",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/david-van-rosmalen/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Comedy Club Almere"
       ],
       "titel": "Comedy Club Almere",
@@ -844,6 +818,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/jawad-es-soufi-4/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "David van Rosmalen",
+      "genre": "cabaret",
+      "datum": "2027-04-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/david-van-rosmalen/"
     }
   ]
 }
