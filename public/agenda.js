@@ -1,4 +1,4 @@
-// Filters op speellijsten, het zoekveld op de artiestenpagina en de knoppen van de affichewand.
+// Filters op speellijsten, de zoekvelden op de artiesten- en plaatsenpagina en de knoppen van de affichewand.
 // Alle pagina's werken ook zonder dit script: dan staat de volledige lijst er.
 (() => {
   const today = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" });
@@ -73,6 +73,26 @@
         if (ok) n++;
       }
       document.querySelectorAll(".az-group").forEach((g) => { g.hidden = !g.querySelector("li:not([hidden])"); });
+      leeg.hidden = n > 0;
+    });
+  }
+
+  // ---------- Plaatsen: zoeken op plaats of zaal ----------
+  const zoekPlaats = document.getElementById("f-plaatsnaam");
+  if (zoekPlaats) {
+    const items = [...document.querySelectorAll("#plaatsenlijst li[data-zoek]")];
+    const leeg = document.getElementById("plaatsen-leeg");
+    const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+    zoekPlaats.addEventListener("input", () => {
+      const q = norm(zoekPlaats.value.trim());
+      let n = 0;
+      for (const li of items) {
+        const ok = !q || norm(li.dataset.zoek).includes(q);
+        li.hidden = !ok;
+        if (ok) n++;
+      }
+      // Een land zonder treffers verdwijnt helemaal.
+      document.querySelectorAll("#plaatsenlijst > div").forEach((d) => { d.hidden = !d.querySelector("li:not([hidden])"); });
       leeg.hidden = n > 0;
     });
   }

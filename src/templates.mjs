@@ -540,13 +540,21 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       const items = plaatsen.filter((p) => landVanPlaats(p) === land);
       if (!items.length) return "";
       return `<div><h2>${LANDEN[land]}</h2><ul class="venue-list">${items.map((p) => {
-        const zalen = zalenMetData.filter((t) => t.plaats === p).length;
-        return `<li><a href="/plaatsen/${plaatsId(p)}/"><span><span class="vn">${esc(p)}</span><span class="vc">${plural(zalen, "zaal", "zalen")}</span></span><span class="vk">${plural(perPlaats(p).length, "voorstelling", "voorstellingen")}</span></a></li>`;
+        const zalenHier = zalenMetData.filter((t) => t.plaats === p), zalen = zalenHier.length;
+        // Zoeken kan op de plaats én op de zalen ("Kattendans" vindt Bergeijk).
+        return `<li data-zoek="${esc([p, ...zalenHier.map((t) => t.naam)].join(" ").toLowerCase())}"><a href="/plaatsen/${plaatsId(p)}/"><span><span class="vn">${esc(p)}</span><span class="vc">${plural(zalen, "zaal", "zalen")}</span></span><span class="vk">${plural(perPlaats(p).length, "voorstelling", "voorstellingen")}</span></a></li>`;
       }).join("")}</ul></div>`;
     }).join("");
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Plaatsen</h1><p>Waar is cabaret en comedy te zien?</p></div>
-      <div class="venues">${kolommen}</div>
+      <div class="az-tools">
+        <div class="field search">
+          <label for="f-plaatsnaam">Zoek een plaats of zaal</label>
+          <input id="f-plaatsnaam" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Leiden of Kattendans">
+        </div>
+      </div>
+      <div class="venues" id="plaatsenlijst">${kolommen}</div>
+      <p class="empty" id="plaatsen-leeg" hidden>Geen plaats of zaal gevonden met deze naam.</p>
     </section>`;
     return layout({ title: "Plaatsen", description: "Cabaret en comedy per plaats in Nederland en België.", path: "/plaatsen/", section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"]], hoofd: lijstLd(plaatsen.map((p) => [p, `/plaatsen/${plaatsId(p)}/`])) } });
   }
