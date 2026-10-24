@@ -536,6 +536,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "boom-chicago-s-comedy-explosion-2-stadsgehoorzaal-leiden",
+    "titel": "Boom Chicago's Comedy Explosion #2",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "stadsgehoorzaal-leiden"
+  },
+  {
     "id": "boosh-bashasha-comedy-cafe-amsterdam",
     "titel": "Boosh Bashasha",
     "artiesten": [],
@@ -1313,6 +1320,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "evi-hanssen-bloedheet-en-tranen",
+    "titel": "Bloedheet & tranen",
+    "artiesten": [
+      "evi-hanssen"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "expat-cafe-person-of-colour",
     "titel": "Person of Colour",
     "artiesten": [
@@ -1890,6 +1905,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "jeroen-leenders-de-jeroen-leenders-experience",
+    "titel": "De Jeroen Leenders Experience",
+    "artiesten": [
+      "jeroen-leenders"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "jeroen-leenders-heiden",
     "titel": "Heiden",
     "artiesten": [
@@ -1962,6 +1985,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "joep-van-deudekom-en-rob-urgert-de-grote-oudejaars-kwis-2026",
+    "titel": "De Grote Oudejaars Kwis 2026",
+    "artiesten": [
+      "joep-van-deudekom-en-rob-urgert"
+    ],
+    "genre": "oudejaarsconference"
+  },
+  {
     "id": "joep-van-deudekom-en-rob-urgert-de-verbinders",
     "titel": "De Verbinders",
     "artiesten": [
@@ -2032,14 +2063,6 @@
       "jorgen-raymann"
     ],
     "genre": "stand-up"
-  },
-  {
-    "id": "jorgen-raymann-jorgen-raymann",
-    "titel": "Jörgen Raymann",
-    "artiesten": [
-      "jorgen-raymann"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "jules-keeris-knegsel-zuid",
@@ -2328,6 +2351,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "lachstof-5-stadsgehoorzaal-leiden",
+    "titel": "Lachstof #5",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "stadsgehoorzaal-leiden"
+  },
+  {
     "id": "laus-steenbeke-ydwer-bosma-mist",
     "titel": "Mist",
     "artiesten": [
@@ -2368,12 +2398,28 @@
     "genre": "cabaret"
   },
   {
+    "id": "leids-cabaret-festival-halve-finale",
+    "titel": "Halve finale",
+    "artiesten": [
+      "leids-cabaret-festival"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "leids-cabaret-festival-on-tour-finalistentour-2027",
     "titel": "Finalistentour 2027",
     "artiesten": [
       "leids-cabaret-festival-on-tour"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "leids-cabaret-festival-voorronde-ii",
+    "titel": "Voorronde II",
+    "artiesten": [
+      "leids-cabaret-festival"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "leo-en-marius-blokhuis-father-en-son",
@@ -2412,6 +2458,14 @@
     "titel": "komedie met Jelka van Houten & Sanne Wallis de Vries",
     "artiesten": [
       "lift"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "lisa-loeb-fopfeminisme",
+    "titel": "Fopfeminisme",
+    "artiesten": [
+      "lisa-loeb"
     ],
     "genre": "cabaret"
   },
@@ -2881,6 +2935,14 @@
     "titel": "Legende van de witte slang",
     "artiesten": [
       "nhung-dam"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "niek-barendsen-en-michiel-nooter-vrienden-van-dorothy-welkom-bij-de-gays",
+    "titel": "Vrienden van Dorothy (welkom bij de gays)",
+    "artiesten": [
+      "niek-barendsen-en-michiel-nooter"
     ],
     "genre": "cabaret"
   },
@@ -3765,6 +3827,13 @@
     "genre": "stand-up"
   },
   {
+    "id": "the-stand-up-club-8-stadsgehoorzaal-leiden",
+    "titel": "The Stand-up Club #8",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "stadsgehoorzaal-leiden"
+  },
+  {
     "id": "theatertroep-vier-crematies-en-een-scheiding",
     "titel": "Vier crematies en een scheiding",
     "artiesten": [
@@ -4105,6 +4174,13 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "theater-zuidplein"
+  },
+  {
+    "id": "vrouwejaars-leidse-schouwburg",
+    "titel": "Vrouwejaars",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "leidse-schouwburg"
   },
   {
     "id": "vuile-huichelaar-ik-zit-hier-heel-alleen-kerstfeest-te-vieren-2",
