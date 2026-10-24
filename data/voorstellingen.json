@@ -63,6 +63,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "alex-agnew-stand-up-set",
+    "titel": "Stand-Up set",
+    "artiesten": [
+      "alex-agnew"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "alex-ploeg-niks-persoonlijks",
     "titel": "Niks Persoonlijks",
     "artiesten": [
@@ -1296,6 +1304,14 @@
     "theater": "goudse-schouwburg"
   },
   {
+    "id": "de-cabaret-club-op-z-n-brabants",
+    "titel": "Op z’n Brabants",
+    "artiesten": [
+      "de-cabaret-club"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "de-cabaret-club-parktheater-eindhoven",
     "titel": "De Cabaret Club",
     "artiesten": [],
@@ -2084,12 +2100,36 @@
     "genre": "cabaret"
   },
   {
+    "id": "guido-weijers-guido-weijers",
+    "titel": "Guido Weijers",
+    "artiesten": [
+      "guido-weijers"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "guido-weijers-momentum",
+    "titel": "Momentum",
+    "artiesten": [
+      "guido-weijers"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "guido-weijers-oudejaarsconference-2026",
     "titel": "Oudejaarsconference 2026",
     "artiesten": [
       "guido-weijers"
     ],
     "genre": "oudejaarsconference"
+  },
+  {
+    "id": "guido-weijers-oudejaarsconference-xl",
+    "titel": "Oudejaarsconference XL",
+    "artiesten": [
+      "guido-weijers"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "guido-weijers-oudejaarsconferentie",
@@ -3075,20 +3115,20 @@
     "genre": "cabaret"
   },
   {
+    "id": "lebbis-climate-comedy-night",
+    "titel": "Climate Comedy Night",
+    "artiesten": [
+      "lebbis"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "lebbis-satan-is-moe",
     "titel": "Satan is moe",
     "artiesten": [
       "lebbis"
     ],
-    "genre": "cabaret",
-    "recensies": [
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Als het erop aankomt heeft Lebbis aan felheid en grapdichtheid absoluut niets ingeboet, en dat is een geruststellende gedachte voor de liefhebbers van het betere cabaret.",
-        "bron": "https://www.theaterdeveste.nl/programma/satan-is-moe-qhf4"
-      }
-    ]
+    "genre": "cabaret"
   },
   {
     "id": "leeuwarder-cabaret-festival-finale",
@@ -3464,6 +3504,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "marja-van-katendrecht-marja-s-very-merry-christmas",
+    "titel": "Marja's Very Merry Christmas",
+    "artiesten": [
+      "marja-van-katendrecht"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "marja-van-katendrecht-x-theater-zuidplein-marja-s-very-merry-christmas",
     "titel": "Marja's Very Merry Christmas",
     "artiesten": [
@@ -3498,6 +3546,14 @@
         "bron": "https://www.kampanje.nl/voorstellingen/marjolijn-van-kooten-zb8v"
       }
     ]
+  },
+  {
+    "id": "marjolijn-van-kooten-de-lizz",
+    "titel": "De LizZ",
+    "artiesten": [
+      "marjolijn-van-kooten"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "marlijn-weerdenburg-geworteld",
@@ -3879,6 +3935,14 @@
   {
     "id": "nathalie-baartman-deer",
     "titel": "Deer",
+    "artiesten": [
+      "nathalie-baartman"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "nathalie-baartman-winsum",
+    "titel": "Winsum",
     "artiesten": [
       "nathalie-baartman"
     ],
@@ -4556,27 +4620,23 @@
     "artiesten": [
       "roel-c-verburg"
     ],
-    "genre": "stand-up",
-    "recensies": [
-      {
-        "medium": "Het Financieele Dagblad",
-        "sterren": null,
-        "citaat": "Hij grossiert in absurdistische liedjes vol taalacrobatiek",
-        "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
-      },
-      {
-        "medium": "I Love Theater",
-        "sterren": null,
-        "citaat": "Een aaneenschakeling van slimme observaties, rake grappen en muzikale intermezzo's",
-        "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
-      },
-      {
-        "medium": "Trouw",
-        "sterren": null,
-        "citaat": "Roel C. Verburg is een fenomeen op zich",
-        "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
-      }
-    ]
+    "genre": "stand-up"
+  },
+  {
+    "id": "roel-c-verburg-solo-late-show",
+    "titel": "Solo (late show)",
+    "artiesten": [
+      "roel-c-verburg"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "roel-c-verburg-solo-matinee",
+    "titel": "Solo (matinee)",
+    "artiesten": [
+      "roel-c-verburg"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "roel-c-verburg-southend-comedy-club",
@@ -5243,6 +5303,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "thijs-kemperink-muiters-vieren-een-muiterse-kerst",
+    "titel": "Muiters vieren een muiterse Kerst",
+    "artiesten": [
+      "thijs-kemperink"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "thijs-kemperink-tot-het-uiterste-gedreven",
     "titel": "Tot het uiterste gedreven",
     "artiesten": [
@@ -5697,6 +5765,14 @@
       "william-boeva"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "wim-helsen-de-sitcom-van-met-de-hoe",
+    "titel": "DE SITCOM (van/met DE HOE)",
+    "artiesten": [
+      "wim-helsen"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "wim-helsen-welkom-ongemak",

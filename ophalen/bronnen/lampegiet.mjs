@@ -7,6 +7,6 @@ export default peppered({
   basis: "https://www.lampegiet.nl",
   agenda: "/agenda",
   theaters: [
-    { id: "theater-lampegiet", naam: "Theater Lampegiet", plaats: "Veghel", land: "NL", soort: "theater", website: "https://www.lampegiet.nl" },
+    { id: "theater-lampegiet", naam: "Theater Lampegiet", plaats: "Veenendaal", land: "NL", soort: "theater", website: "https://www.lampegiet.nl" },
   ],
 });

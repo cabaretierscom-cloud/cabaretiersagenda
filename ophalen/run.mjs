@@ -30,6 +30,7 @@ await Promise.all(files.map(async (f) => {
     writeFileSync(join(outDir, `${bron.id}.json`), JSON.stringify({
       bron: bron.id,
       naam: bron.naam,
+      ...(bron.soort ? { soort: bron.soort } : {}),
       opgehaald: vandaag,
       theaters: bron.theaters || [],
       speeldata: records,

@@ -1,7 +1,7 @@
 // Hulpjes om gegevens uit HTML te halen zonder externe pakketten.
 import { getText } from "./http.mjs";
 
-const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ", ndash: "–", mdash: "—", hellip: "…", eacute: "é", euml: "ë", iuml: "ï", ouml: "ö", uuml: "ü", egrave: "è", agrave: "à", ccedil: "ç" };
+const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ", ndash: "–", mdash: "—", hellip: "…", eacute: "é", euml: "ë", iuml: "ï", ouml: "ö", uuml: "ü", egrave: "è", agrave: "à", ccedil: "ç", oacute: "ó", aacute: "á", iacute: "í", uacute: "ú", acirc: "â", ecirc: "ê", ocirc: "ô", ldquo: "“", rdquo: "”", lsquo: "‘", rsquo: "’", bdquo: "„", middot: "·", bull: "•", raquo: "»", laquo: "«", rarr: "→", euro: "€" };
 export const decodeEntities = (s) =>
   String(s ?? "")
     .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))

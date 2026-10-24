@@ -28,8 +28,10 @@ const controleren = [];
 const aliassen = existsSync(join(dataDir, "aliassen.json")) ? read("aliassen.json") : {};
 const aliasOpSleutel = new Map(Object.entries(aliassen).map(([k, v]) => [slug(k), v]));
 
+// Speellijsten van artiesten komen als laatste: wat een theater zelf meldt, gaat voor.
+const isSpeellijst = (f) => JSON.parse(readFileSync(join(dataDir, "bronnen", f), "utf8")).soort === "speellijst";
 const bronFiles = existsSync(join(dataDir, "bronnen"))
-  ? readdirSync(join(dataDir, "bronnen")).filter((f) => f.endsWith(".json")).sort()
+  ? readdirSync(join(dataDir, "bronnen")).filter((f) => f.endsWith(".json")).sort().sort((a, b) => isSpeellijst(a) - isSpeellijst(b))
   : [];
 
 // ---------- Opzoeken en aanmaken ----------
@@ -58,6 +60,67 @@ function zorgVoorTheater(t) {
   theaters.push(nieuw);
   theaterOpId.set(nieuw.id, nieuw);
   return nieuw;
+}
+
+// Plaatsnamen uit speellijsten gelijktrekken: "DEN BOSCH" -> "'s-Hertogenbosch", "Alphen ad Rijn" -> ...
+const PLAATS_ALIAS = {
+  "den bosch": "'s-Hertogenbosch", "s-hertogenbosch": "'s-Hertogenbosch", "'s hertogenbosch": "'s-Hertogenbosch",
+  "alphen ad rijn": "Alphen aan den Rijn", "alphen a/d rijn": "Alphen aan den Rijn", "alphen": "Alphen aan den Rijn",
+  "capelle ad ijssel": "Capelle aan den IJssel", "capelle a/d ijssel": "Capelle aan den IJssel", "spijkernisse": "Spijkenisse",
+  "the hague": "Den Haag", "s-gravenhage": "Den Haag", "'s-gravenhage": "Den Haag", "amersfoot": "Amersfoort",
+  "doetichem": "Doetinchem", "gorichem": "Gorinchem", "berkel en roderijs": "Berkel en Rodenrijs", "h-i-ambacht": "Hendrik-Ido-Ambacht",
+  "capelle aan de ijssel": "Capelle aan den IJssel", "krimpen a/d ijssel": "Krimpen aan den IJssel", "laren nh": "Laren",
+  "noordwijk aan zee": "Noordwijk", "hengelo (o)": "Hengelo", "hengelo (ov)": "Hengelo", "den hoorn texel": "Texel", "oost-knollendam": "Oostknollendam", "h. i. ambacht": "Hendrik-Ido-Ambacht", "alphen nb": "Alphen (NB)",
+};
+// Namen van zalen die anders heten dan in onze database: "plaats|zaal" (als slug) -> theater-id.
+const ZAAL_ALIAS = {
+  "heerlen|parkstad-limburg-theaters": "theater-heerlen", "heerlen|plt": "theater-heerlen", "heerlen|theater-heerlen-plt": "theater-heerlen",
+  "middelburg|zeeland-theaters": "schouwburg-middelburg", "middelburg|stadsschouwburg": "schouwburg-middelburg",
+  "groningen|spot-groningen": "stadsschouwburg-groningen", "zwolle|zwolse-theaters": "theater-de-spiegel",
+};
+const KLEIN = new Set(["aan", "den", "de", "het", "op", "bij", "in", "ter", "ten", "a/d", "ad"]);
+function netPlaats(p) {
+  let t = String(p || "").replace(/\s*\((NL|BE?|[A-Z][a-z]+)\)\s*$/, "").replace(/\s+/g, " ").trim();
+  if (PLAATS_ALIAS[t.toLowerCase()]) return PLAATS_ALIAS[t.toLowerCase()];
+  // "VENLO" of "venlo" -> "Venlo"; "IJsselstein" blijft goed.
+  if (t === t.toUpperCase() || t === t.toLowerCase()) {
+    t = t.toLowerCase().split(" ").map((w, i) => (i && KLEIN.has(w) ? w : w.replace(/^ij/, "IJ").replace(/^(\p{L})/u, (c) => c.toUpperCase()).replace(/-(\p{L})/gu, (m, c) => `-${c.toUpperCase()}`))).join(" ");
+  }
+  return t;
+}
+const ZAAL_STOP = new Set(["theater", "theaters", "schouwburg", "stadsschouwburg", "stadstheater", "de", "het", "t", "zaal", "grote", "kleine",
+  "cultuurcentrum", "cultuurhuis", "centrum", "cc", "podium", "en", "concertzaal", "concertgebouw", "filmhuis", "van", "the"]);
+const kern = (naam, plaats) => slug(naam).split("-").filter((w) => w.length > 1 && !ZAAL_STOP.has(w) && !slug(plaats).split("-").includes(w));
+
+// Een zaal uit een speellijst: een bekend theater in dezelfde plaats met (bijna) dezelfde naam,
+// anders een nieuwe zaal.
+const compact = (s) => slug(s).replace(/-/g, "");
+function zoekTheater(t) {
+  const plaats = netPlaats(t.plaats);
+  const alias = ZAAL_ALIAS[`${slug(plaats)}|${slug(t.naam)}`];
+  if (alias && theaterOpId.has(alias)) return theaterOpId.get(alias);
+  const kandidaten = theaters.filter((x) => slug(x.plaats) === slug(plaats));
+  const k = kern(t.naam, plaats);
+  let beste = null, score = 0;
+  for (const x of kandidaten) {
+    const kx = kern(x.naam, x.plaats);
+    const s = kx.filter((w) => k.includes(w)).length / Math.max(1, Math.min(kx.length, k.length));
+    if (s > score) [beste, score] = [x, s];
+  }
+  if (beste && score >= 0.5) return beste;
+  // "Hof 88" / "Hof88", "Schaffelaartheater" / "Schaffelaar Theater", "Schaffelaertheater" (tikfout).
+  const kc = k.join("");
+  const opNaam = kandidaten.find((x) => { const xc = kern(x.naam, x.plaats).join(""); return kc.length >= 4 && xc.length >= 4 && (xc.includes(kc) || kc.includes(xc) || (Math.min(xc.length, kc.length) >= 8 && afstand(xc, kc) <= 1)); });
+  if (opNaam) return opNaam;
+  // "Stadsschouwburg" en er is één schouwburg in die plaats.
+  if (/schouwburg/i.test(t.naam)) { const sb = kandidaten.filter((x) => /schouwburg/i.test(x.naam)); if (sb.length === 1) return sb[0]; }
+  // "Schouwburg" of "Stadsschouwburg" zonder meer, en er is maar één zaal in die plaats.
+  if (!k.length && kandidaten.length === 1) return kandidaten[0];
+  const naam = t.naam.replace(/\s+/g, " ").trim();
+  const id = slug(`${naam} ${slug(naam).includes(slug(plaats)) ? "" : plaats}`);
+  // Wat de artiest over het land zegt, gaat voor (Deurne ligt in Nederland én in België).
+  const land = t.land || kandidaten[0]?.land || "NL";
+  return theaterOpId.get(id) || zorgVoorTheater({ id, naam, plaats, land, soort: "theater", website: null });
 }
 
 function zorgVoorArtiest(naam) {
@@ -108,6 +171,15 @@ function zorgVoorVoorstelling(r, artiestIdsVanRecord, theaterId) {
   if (artiestIdsVanRecord.length && slug(r.titel) === slug(namen)) {
     const echte = voorstellingen.filter((v) => zelfdeSet(v.artiesten, artiestIdsVanRecord) && slug(v.titel) !== slug(namen));
     if (echte.length === 1) return echte[0].id;
+    // Speellijst zonder titel: ook voorstellingen waarin de artiest met anderen staat (Najib Amhali in
+    // "Alles is comedy" met Roué Verveer). Bij meer: die met een speeldatum het dichtst bij deze avond.
+    if (r.zonderTitel && !echte.length) echte.push(...voorstellingen.filter((v) => artiestIdsVanRecord.every((a) => v.artiesten.includes(a)) && slug(v.titel) !== slug(namen)));
+    if (echte.length === 1) return echte[0].id;
+    if (echte.length > 1 && r.zonderTitel) {
+      const afstandTot = (v) => Math.min(...speeldata.filter((s) => s.voorstelling === v.id).map((s) => Math.abs(new Date(s.datum) - new Date(r.datum))), Infinity);
+      const dichtst = echte.map((v) => [v, afstandTot(v)]).sort((a, b) => a[1] - b[1])[0];
+      if (dichtst[1] < Infinity) return dichtst[0].id;
+    }
   }
   const match = voorstellingen.find((v) => {
     if (!zelfdeSet(v.artiesten, artiestIdsVanRecord)) return false;
@@ -154,7 +226,12 @@ const citatenElders = new Set();
 const citaatSleutel = (c) => slug(c).slice(0, 40);
 for (const f of bronFiles) {
   const bestand = JSON.parse(readFileSync(join(dataDir, "bronnen", f), "utf8"));
-  for (const t of bestand.theaters || []) zorgVoorTheater(t);
+  for (const t of bestand.theaters || []) {
+    // De bron weet waar haar eigen zaal staat: een verbeterde plaats of land neemt ze mee.
+    const bekend = theaterOpId.get(t.id);
+    if (bekend && t.plaats && (bekend.plaats !== t.plaats || bekend.land !== t.land)) Object.assign(bekend, { plaats: t.plaats, land: t.land || bekend.land });
+    zorgVoorTheater(t);
+  }
 
   // Vorige vondsten van deze bron vanaf de ophaaldatum vervangen; oudere blijven als archief.
   const voor = speeldata.length;
@@ -162,6 +239,13 @@ for (const f of bronFiles) {
   const vervangen = voor - speeldata.length;
 
   const sleutels = new Set(speeldata.map((s) => [s.voorstelling, s.theater, s.datum, s.tijd || ""].join("|")));
+  // Bij een speellijst: welke artiest al op welke datum in welke plaats staat (uit de theaterbronnen).
+  const alBekend = new Set();
+  if (bestand.soort === "speellijst") {
+    const vOpId = new Map(voorstellingen.map((v) => [v.id, v]));
+    for (const s of speeldata) for (const a of vOpId.get(s.voorstelling)?.artiesten || []) alBekend.add(`${a}|${slug(theaterOpId.get(s.theater)?.plaats)}|${s.datum}`);
+  }
+  let dubbel = 0;
   let nieuw = 0, handmatigVervangen = 0;
   for (const bronRecord of bestand.speeldata) {
     // Vangnet voor alle bronnen: geen titels of namen in KAPITALEN, geen losse punt aan het eind.
@@ -190,7 +274,13 @@ for (const f of bronFiles) {
       r.titel = r.artiesten[0];
       r.artiesten = [];
     }
-    const theater = typeof r.theater === "string" ? theaterOpId.get(r.theater) : zorgVoorTheater(r.theater);
+    if (r.theater?.zoeken) {
+      // Speellijst: dezelfde artiest op dezelfde dag in dezelfde plaats staat er al via het theater.
+      const ids = (r.artiesten || []).map((n) => zorgVoorArtiest(n));
+      if (ids.some((a) => alBekend.has(`${a}|${slug(netPlaats(r.theater.plaats))}|${r.datum}`))) { dubbel++; continue; }
+      if (!r.titel) { r.titel = r.artiesten.join(" & "); r.zonderTitel = true; }
+    }
+    const theater = typeof r.theater === "string" ? theaterOpId.get(r.theater) : r.theater?.zoeken ? zoekTheater(r.theater) : zorgVoorTheater(r.theater);
     if (!theater) {
       controleren.push({ bron: bestand.bron, reden: `onbekend theater "${r.theater}"`, record: r });
       continue;
@@ -229,7 +319,7 @@ for (const f of bronFiles) {
     nieuw++;
     if (!v.artiesten.length && !r.titel) controleren.push({ bron: bestand.bron, reden: "voorstelling zonder artiest en titel", record: r });
   }
-  stats.push(`${bestand.naam}: ${nieuw} speeldata (${vervangen} vorige vervangen${handmatigVervangen ? `, ${handmatigVervangen} handmatige vervangen` : ""})`);
+  stats.push(`${bestand.naam}: ${nieuw} speeldata (${vervangen} vorige vervangen${handmatigVervangen ? `, ${handmatigVervangen} handmatige vervangen` : ""}${dubbel ? `, ${dubbel} al bekend via het theater` : ""})`);
 }
 
 // ---------- Opruimen ----------
