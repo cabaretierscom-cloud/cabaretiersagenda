@@ -1,0 +1,14 @@
+{
+  "uitleg": "Adressen van de oude WordPress-site waar bezoekers op binnenkwamen. build.mjs maakt er doorverwijzingen (301) van in .htaccess: naar /artiesten/<naam>/ als die pagina er is, anders naar de homepage. Adressen die op de nieuwe site gewoon bestaan, hoeven hier niet in.",
+  "adressen": [
+    "/kasper-van-der-laan/",
+    "/peter-pannekoek/",
+    "/daniel-arends/",
+    "/jochem-myjer/",
+    "/stefano-keizers/",
+    "/bert-visscher/",
+    "/henry-van-loon/",
+    "/claudia-de-breij/",
+    "/pieter-derks/"
+  ]
+}

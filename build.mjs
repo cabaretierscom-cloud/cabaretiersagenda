@@ -77,6 +77,23 @@ writeFileSync(join(out, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
   pages.map((p) => `  <url><loc>${SITE.url}${p}</loc><lastmod>${today}</lastmod></url>`).join("\n") +
   `\n</urlset>\n`);
+// Doorverwijzingen (301) van de oude WordPress-adressen: /<naam>/ -> /artiesten/<naam>/ als die pagina
+// er is, anders naar de homepage (data/oude-adressen.json). Ook elke artiest met een pagina krijgt zo'n
+// kort adres, zolang dat geen bestaande pagina is. Elke nacht opnieuw, dus altijd naar een bestaande pagina.
+{
+  const bestaat = new Set(pages);
+  const oud = JSON.parse(readFileSync(join(root, "data", "oude-adressen.json"), "utf8")).adressen;
+  const doel = new Map();
+  for (const p of pages) {
+    const m = p.match(/^\/artiesten\/([^/]+)\/$/);
+    if (m && !bestaat.has(`/${m[1]}/`)) doel.set(`/${m[1]}/`, p);
+  }
+  for (const a of oud) if (!bestaat.has(a) && !doel.has(a)) doel.set(a, bestaat.has(`/artiesten${a}`) ? `/artiesten${a}` : "/");
+  const regels = [...doel].sort().map(([van, naar]) =>
+    `RedirectMatch 301 ^${van.replace(/\/$/, "").replace(/[.+?^$()[\]{}|\\]/g, "\\$&")}/?$ ${SITE.url}${naar}`);
+  const ht = join(out, ".htaccess");
+  writeFileSync(ht, readFileSync(ht, "utf8") + `\n# Oude adressen (gemaakt door build.mjs, niet met de hand aanpassen)\n<IfModule mod_alias.c>\n${regels.join("\n")}\n</IfModule>\n`);
+}
 writeFileSync(join(out, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE.url}/sitemap.xml\n`);
 
 console.log(`Gebouwd op ${today}: ${pages.length} pagina's, ${db.upcoming.length} aankomende speeldata.`);
