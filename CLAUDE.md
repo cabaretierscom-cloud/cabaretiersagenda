@@ -7,7 +7,7 @@ Cabaret- en comedyagenda voor Nederland en België. Statische site, gebouwd door
 - `data/*.json` is de database. Zie README.md voor de velden. `src/data.mjs` valideert alles; breid daar de toegestane waarden uit (genres, statussen, theatersoorten, kleuren) in plaats van ze elders te hardcoden.
 - `src/templates.mjs` maakt alle pagina's als strings. HTML-escaping altijd via `esc()`.
 - `public/` wordt ongewijzigd naar `dist/` gekopieerd (CSS, JS, fonts).
-- Webadressen: `/agenda/oktober-2026/` (`maandId`), `/plaatsen/<plaats>/`, `/theaters/<theater-id>/`, `/festivals/<festival-id>/` (`data/festivals.json`), `/alle-cabaretiers/` met `/mannen/` en `/vrouwen/` (SEO-pagina's met FAQ, niet in het menu; gelinkt vanuit footer, /artiesten/ en artiestpagina's; geslacht uit Wikidata via `npm run geslacht`), `/artiesten/<artiest-id>/` en per voorstelling met eigen titel `/artiesten/<artiest-id>/<titel-slug>/` (`voorstellingPad` in `src/templates.mjs`).
+- Webadressen: `/agenda/oktober-2026/` (`maandId`), `/plaatsen/<plaats>/`, `/theaters/<theater-id>/`, `/festivals/<festival-id>/` (`data/festivals.json`), `/alle-cabaretiers/` met `/mannen/` en `/vrouwen/` (SEO-pagina's met FAQ, niet in het menu; gelinkt vanuit /artiesten/ en artiestpagina's; geslacht uit Wikidata via `npm run geslacht`), `/artiesten/<artiest-id>/` en per voorstelling met eigen titel `/artiesten/<artiest-id>/<titel-slug>/` (`voorstellingPad` in `src/templates.mjs`).
 - `build.mjs` toont alleen speeldata vanaf vandaag (Europe/Amsterdam). `BUILD_DATE=JJJJ-MM-DD` overschrijft dat.
 - `public/agenda.js` filtert de server-gerenderde lijst; de pagina moet zonder JS volledig bruikbaar blijven.
 

@@ -147,12 +147,6 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       <span class="brand-mark" aria-hidden="true">${LOGO_OMGEKEERD_SVG}</span>
       <span class="logo-tekst" aria-hidden="true"><span class="wordmark">${WOORDMERK_SVG}<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
     </a>
-    <nav class="footer-links" aria-label="Meer op Cabaretiers.com">
-      <a href="/alle-cabaretiers/">Alle cabaretiers</a>
-      <a href="/alle-cabaretiers/vrouwen/">Vrouwelijke cabaretiers</a>
-      <a href="/alle-cabaretiers/mannen/">Mannelijke cabaretiers</a>
-      <a href="/festivals/">Cabaretfestivals</a>
-    </nav>
     <p>Cabaret en comedy in Nederland en België, verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
   </div>
 </footer>

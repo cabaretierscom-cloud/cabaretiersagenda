@@ -407,8 +407,6 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .site-footer .wordmark .tld { color: var(--riso-lilac); }
 .site-footer .woord .kern { fill: var(--riso-orange); }
 .site-footer a:focus-visible { outline-color: #fff; }
-.footer-links { display: flex; flex-wrap: wrap; gap: 4px 20px; font-weight: 600; }
-.footer-links a { color: #fff; }
 
 /* Verwijzingen naar verwante overzichten en veelgestelde vragen (o.a. /alle-cabaretiers/) */
 .zie-ook { margin: 16px 0 0; color: var(--ink-2); }
