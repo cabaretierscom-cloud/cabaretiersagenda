@@ -2,6 +2,13 @@
 import { LANDEN, STATUSSEN, GENRES, KLEUREN, isGroep } from "./data.mjs";
 import { fmt, esc, plural, isoWithOffset } from "./format.mjs";
 import { WOORDMERK_SVG, C_PAD, C_KADER } from "./woordmerk.mjs";
+import { readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
+
+// Versienummer per bestand (stukje van de inhoud-hash): verandert de opmaak of het script, dan
+// verandert het adres en halen browsers meteen de nieuwe versie op, ondanks de browsercache.
+const VERSIE = Object.fromEntries(["style.css", "agenda.js"].map((f) =>
+  [f, createHash("sha1").update(readFileSync(new URL(`../public/${f}`, import.meta.url))).digest("hex").slice(0, 8)]));
 
 // Webadres-vriendelijke tekst: "Gelukkig heb je mij nog!" -> "gelukkig-heb-je-mij-nog".
 export const slugVan = (s) =>
@@ -124,7 +131,7 @@ export function createTemplates(db) {
 <link rel="icon" href="/logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/style.css?v=${VERSIE["style.css"]}">
 ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title, description, path, ...schema })).replace(/</g, "\\u003c")}</script>` : ""}
 </head>
 <body>
@@ -150,7 +157,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     <p>Cabaret en comedy in Nederland en België, verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
   </div>
 </footer>
-<script src="/agenda.js" defer></script>
+<script src="/agenda.js?v=${VERSIE["agenda.js"]}" defer></script>
 </body>
 </html>
 `;
