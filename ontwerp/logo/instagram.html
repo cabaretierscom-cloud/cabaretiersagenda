@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- Bron van de Instagram-bestanden in ontwerp/logo/instagram/; scripts/instagram-afbeeldingen.mjs rendert ze. -->
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/style.css">
+<style>
+  body { margin: 0; background: transparent; }
+  .vlak { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+  .donker { background: #121212; }
+  .licht { background: #FFFFFF; }
+  /* Profielfoto: Instagram knipt een cirkel uit, dus het beeldmerk ruim binnen die cirkel. */
+  .profiel { width: 1080px; height: 1080px; }
+  .profiel svg { width: 640px; height: 640px; display: block; }
+  /* Vierkant met het volledige logo, voor posts en de link in bio. */
+  .vierkant { width: 1080px; height: 1080px; flex-direction: column; gap: 56px; }
+  .vierkant .merk svg { width: 300px; height: 300px; display: block; }
+  .vierkant .wordmark { font-size: 168px; }
+  .vierkant .wordmark .tld { font-size: 58px; }
+  .vierkant .ondertitel { font-size: 28px; margin-top: 18px; padding-left: 4px; }
+  .licht .wordmark, .licht .ondertitel { color: #121212; }
+  .donker .wordmark, .donker .ondertitel { color: #FFFFFF; }
+  .donker .wordmark .tld { color: var(--riso-lilac); }
+  /* Story: 1080x1920. */
+  .story { width: 1080px; height: 1920px; flex-direction: column; gap: 64px; }
+  .story .merk svg { width: 360px; height: 360px; display: block; }
+  .story .wordmark { font-size: 176px; }
+  .story .wordmark .tld { font-size: 60px; }
+  .story .ondertitel { font-size: 30px; margin-top: 20px; padding-left: 4px; }
+  .story .adres { position: absolute; bottom: 140px; font-family: var(--font-body, sans-serif); font-weight: 600; font-size: 40px; color: #FFFFFF; letter-spacing: .02em; }
+  .transparant { width: 1080px; height: 1080px; }
+  .transparant svg { width: 1080px; height: 1080px; display: block; }
+</style>
+</head>
+<body>
+  <div class="vlak donker profiel" id="profiel-donker"><span class="merk-zonder"></span></div>
+  <div class="vlak licht profiel" id="profiel-licht"><span class="merk-met"></span></div>
+  <div class="vlak licht vierkant" id="logo-licht"><span class="merk merk-met"></span><span class="logo-tekst"><span class="wordmark"><span class="woord"></span><span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span></div>
+  <div class="vlak donker vierkant" id="logo-donker"><span class="merk merk-zonder"></span><span class="logo-tekst"><span class="wordmark"><span class="woord"></span><span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span></div>
+  <div class="vlak donker story" id="story"><span class="merk merk-zonder"></span><span class="logo-tekst"><span class="wordmark"><span class="woord"></span><span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span><span class="adres">www.cabaretiers.com</span></div>
+  <div class="transparant" id="beeldmerk"><span class="merk-met"></span></div>
+</body>
+</html>
