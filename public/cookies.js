@@ -47,6 +47,6 @@
   const wijzig = document.querySelector("[data-cookies-wijzig]");
   if (wijzig && melding) {
     wijzig.hidden = false;
-    wijzig.addEventListener("click", () => { melding.hidden = false; melding.querySelector("button")?.focus(); });
+    wijzig.addEventListener("click", () => { melding.hidden = false; melding.querySelector("[data-keuze=ja]")?.focus(); });
   }
 })();
