@@ -49,6 +49,10 @@ const write = (path, html) => {
 
 write("/", t.home());
 write("/agenda/", t.agendaIndex());
+write("/vanavond/", t.dagPagina("vanavond"));
+write("/dit-weekend/", t.dagPagina("dit-weekend"));
+// Steden met genoeg aanbod (zie stadPaginas); verdwijnt een pagina, dan stuurt .htaccess door naar de plaats.
+for (const [p, soorten] of t.stadPaginas) for (const s of soorten) write(`/plaatsen/${t.plaatsId(p)}/${s}/`, t.dagPagina(s, p));
 for (const m of t.maanden) write(`/agenda/${t.maandId(m)}/`, t.agendaMaand(m));
 write("/plaatsen/", t.plaatsIndex());
 for (const p of t.plaatsen) write(`/plaatsen/${t.plaatsId(p)}/`, t.plaatsPagina(p));

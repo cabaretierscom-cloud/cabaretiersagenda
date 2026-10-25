@@ -10,6 +10,9 @@ ErrorDocument 404 /404.html
   RewriteEngine On
   RewriteCond %{HTTP_HOST} ^cabaretiers\.com$ [NC]
   RewriteRule ^ https://www.cabaretiers.com%{REQUEST_URI} [L,R=301]
+  # Vanavond/dit weekend per stad bestaat alleen bij genoeg aanbod; anders naar de plaatspagina.
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^plaatsen/([^/]+)/(vanavond|dit-weekend)/?$ https://www.cabaretiers.com/plaatsen/$1/ [L,R=301]
 </IfModule>
 
 # Lettertypes, afbeeldingen, CSS en JS mogen een tijd in de browser blijven;

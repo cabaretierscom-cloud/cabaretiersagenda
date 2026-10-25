@@ -566,3 +566,14 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .cookies button:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
 .knop-secundair { background: #fff; color: #121212; border: 2px solid #121212; }
 .knop-secundair[hidden] { display: none; }
+
+/* Vanavond en dit weekend */
+.month-group h3 small { font-family: var(--font-body); font-weight: 500; font-size: 1rem; margin-left: 8px; }
+.dag-intro { max-width: 68ch; margin: 0 0 12px; }
+.dag-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0 0 16px; font-weight: 600; }
+.dag-blok { border: 2px solid var(--ink); padding: 16px 20px; margin: 8px 0 24px; }
+.dag-blok h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--step-1); margin: 0 0 8px; }
+.dag-regel { margin: 0 0 6px; }
+.dag-regel .dag-label { font-weight: 700; }
+.dag-blok .dag-nav { margin: 12px 0 0; }
+.dag-blok-leeg { border-left: 4px solid var(--riso-yellow); padding: 8px 14px; margin: 8px 0 24px; }

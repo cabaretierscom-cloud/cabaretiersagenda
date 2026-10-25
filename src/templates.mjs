@@ -106,6 +106,7 @@ export function createTemplates(db) {
   function layout({ title, description = SITE.description, path, section, body, schema, noindex = false }) {
     const foto = schema?.foto?.foto;
     const nav = [
+      ["vanavond", "/vanavond/", "Vanavond"],
       ["agenda", "/agenda/", "Agenda"],
       ["artiesten", "/artiesten/", "Artiesten"],
       ["plaatsen", "/plaatsen/", "Plaatsen"],
@@ -509,7 +510,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 <section class="block wrap" id="agenda" aria-labelledby="week-title">
   <div class="block-head">
     <h2 id="week-title">Deze week</h2>
-    <p><a href="/agenda/">Bekijk de volledige agenda</a></p>
+    <p><a href="/vanavond/">Vanavond</a> · <a href="/dit-weekend/">Dit weekend</a> · <a href="/agenda/">De volledige agenda</a></p>
   </div>
   ${filters(dezeWeek, { plaats: true })}
   <div id="gigs">${monthGroups(dezeWeek)}</div>
@@ -591,6 +592,109 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return layout({ title: "Plaatsen", description: "Cabaret en comedy per plaats in Nederland en België.", path: "/plaatsen/", section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"]], hoofd: lijstLd(plaatsen.map((p) => [p, `/plaatsen/${plaatsId(p)}/`])) } });
   }
 
+  // ---------- Vanavond en dit weekend ----------
+  // De site wordt 's nachts gebouwd. "Vanavond" bevat daarom ook morgen: komt de nachtelijke build
+  // later, dan verbergt agenda.js de voorbije dag en noemt het morgen "Vanavond".
+  const dagPlus = (d, n) => new Date(new Date(d + "T12:00:00Z").getTime() + n * 864e5).toISOString().slice(0, 10);
+  const weekdag = (d) => new Date(d + "T12:00:00Z").getUTCDay(); // 0 = zondag
+  const hoofdletter = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+  // Dit weekend: vrijdag tot en met zondag; op vrijdag, zaterdag of zondag vanaf vandaag.
+  function weekendVan(d) {
+    const w = weekdag(d);
+    const start = w === 0 || w >= 5 ? d : dagPlus(d, 5 - w);
+    return { start, eind: dagPlus(start, (7 - weekdag(start)) % 7) };
+  }
+  const vandaagDag = db.today, morgenDag = dagPlus(db.today, 1);
+  const weekend = weekendVan(db.today);
+  const vanavondLijst = (lijst) => lijst.filter((g) => g.datum === vandaagDag || g.datum === morgenDag);
+  const weekendLijst = (lijst) => lijst.filter((g) => g.datum >= weekend.start && g.datum <= weekend.eind);
+  // Een stad krijgt een eigen pagina als er genoeg aanbod is (komende 4 weken):
+  // "vanavond" als er op minstens 25 van de 28 avonden iets is, "dit weekend" bij gemiddeld 5 per weekend.
+  const DAG_DREMPEL = { vanavond: 25, weekend: 5 };
+  const stadPaginas = (() => {
+    const eind = dagPlus(db.today, 27);
+    const uit = new Map();
+    for (const p of plaatsen) {
+      const komend = perPlaats(p).filter((g) => g.datum <= eind && g.status !== "geannuleerd");
+      const avonden = new Set(komend.map((g) => g.datum)).size;
+      // Vier hele weekenden (vrijdag t/m zondag); een half weekend dat al bezig is telt niet mee.
+      let w = weekendVan(db.today), weekenden = 0, inWeekend = 0;
+      if (weekdag(w.start) !== 5) w = weekendVan(dagPlus(w.eind, 1));
+      while (weekenden < 4) {
+        weekenden++;
+        inWeekend += komend.filter((g) => g.datum >= w.start && g.datum <= w.eind).length;
+        w = weekendVan(dagPlus(w.eind, 1));
+      }
+      const soorten = [];
+      if (avonden >= DAG_DREMPEL.vanavond) soorten.push("vanavond");
+      if (weekenden && inWeekend / weekenden >= DAG_DREMPEL.weekend) soorten.push("dit-weekend");
+      if (soorten.length) uit.set(p, soorten);
+    }
+    return uit;
+  })();
+  const dagPad = (soort, p) => p ? `/plaatsen/${plaatsId(p)}/${soort}/` : `/${soort}/`;
+
+  function dagGroepen(list, opts) {
+    const groepen = new Map();
+    for (const g of list) {
+      if (!groepen.has(g.datum)) groepen.set(g.datum, []);
+      groepen.get(g.datum).push(g);
+    }
+    const label = (d) => d === vandaagDag ? "Vanavond" : d === morgenDag ? "Morgen" : hoofdletter(fmt.weekday(d));
+    return [...groepen].map(([d, items]) =>
+      `<section class="month-group" data-dag="${d}"><h3><span class="dag-label" data-dag="${d}">${label(d)}</span> <small>${esc(fmt.long(d))}</small></h3>${items.map((g) => gigRow(g, opts)).join("")}</section>`
+    ).join("");
+  }
+
+  function dagPagina(soort, p = null) {
+    const avond = soort === "vanavond";
+    const bron = p ? perPlaats(p) : up;
+    const list = avond ? vanavondLijst(bron) : weekendLijst(bron);
+    const waar = p ? ` in ${p}` : "";
+    const wanneer = avond ? "vanavond" : "dit weekend";
+    const periode = avond ? fmt.long(vandaagDag) : `${fmt.weekday(weekend.start)} ${fmt.dayMonth(weekend.start)}${weekend.eind !== weekend.start ? ` tot en met ${fmt.weekday(weekend.eind)} ${fmt.dayMonth(weekend.eind)}` : ""}`;
+    const titel = `Cabaret en comedy ${wanneer}${waar}`;
+    const nVandaag = avond ? list.filter((g) => g.datum === vandaagDag).length : list.length;
+    const ander = avond ? "dit-weekend" : "vanavond";
+    const andereLink = !p || stadPaginas.get(p).includes(ander) ? `<a href="${dagPad(ander, p)}">${ander === "vanavond" ? "Vanavond" : "Dit weekend"}${waar}</a>` : "";
+    const steden = [...stadPaginas].filter(([q, s]) => s.includes(soort) && q !== p).map(([q]) => `<a href="${dagPad(soort, q)}">${esc(q)}</a>`);
+    const body = `<section class="block wrap" aria-labelledby="t">
+      <div class="block-head"><h1 id="t">${esc(hoofdletter(wanneer))}${esc(waar)}</h1><p>${esc(hoofdletter(periode))}${p ? "" : " in Nederland en België"}</p></div>
+      <p class="dag-intro">${avond
+        ? `Zin in een avond lachen? Hier staan alle cabaret- en comedyvoorstellingen van vandaag${waar}, met de tijd, de zaal en een link naar de kaartverkoop. Hieronder staat ook alvast morgen.`
+        : `Alle cabaret- en comedyvoorstellingen${waar} van vrijdag tot en met zondag, van theatercabaret tot stand-up in comedyclubs, met de tijd, de zaal en een link naar de kaartverkoop.`}
+        Kaarten koop je bij het theater; controleer daar ook of een voorstelling is uitverkocht.</p>
+      <nav class="dag-nav" aria-label="Meer">${[andereLink, p ? `<a href="/plaatsen/${plaatsId(p)}/">Alle voorstellingen in ${esc(p)}</a>` : `<a href="/agenda/">De hele agenda</a>`].filter(Boolean).join("")}</nav>
+      ${filters(list, p ? { plaats: false, land: false } : { plaats: true })}
+      <div id="gigs">${dagGroepen(list)}</div>
+      ${leegBlok}
+      <div class="empty" id="dag-leeg"${list.length ? " hidden" : ""}><p>${avond ? "Vanavond" : "Dit weekend"} staat er${waar} niets in de agenda. Bekijk <a href="${p ? `/plaatsen/${plaatsId(p)}/` : "/agenda/"}">de eerstvolgende voorstellingen</a>.</p></div>
+      ${steden.length ? `<h2 class="sub-head">${esc(hoofdletter(wanneer))} in andere steden</h2><p class="city-chips">${steden.join("")}</p>` : ""}
+    </section>`;
+    const desc = kort(`${titel}: ${plural(nVandaag, "voorstelling", "voorstellingen")} op ${periode}${list.length ? `, met ${opsomming([...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].slice(0, 3).map((a) => A.get(a).naam))}` : ""}. Met tijden, zalen en tickets.`);
+    const kruimels = p ? [["Plaatsen", "/plaatsen/"], [p, `/plaatsen/${plaatsId(p)}/`], [hoofdletter(wanneer), dagPad(soort, p)]] : [[hoofdletter(wanneer), dagPad(soort)]];
+    return layout({ title: titel, description: desc, path: dagPad(soort, p), section: avond && !p ? "vanavond" : "agenda", body, schema: { type: "CollectionPage", kruimels, ...(p ? { over: plaatsLd(p) } : {}), extra: eventsLd(list) } });
+  }
+
+  // Blok bovenaan een plaatspagina: wat er vanavond en dit weekend is, of de eerstvolgende voorstelling.
+  function dagBlok(p, list) {
+    const tot = weekend.eind < morgenDag ? morgenDag : weekend.eind;
+    const binnenkort = list.filter((g) => g.datum <= tot && g.status !== "geannuleerd");
+    const links = (stadPaginas.get(p) || []).map((s) => `<a href="${dagPad(s, p)}">${s === "vanavond" ? "Alles vanavond" : "Alles dit weekend"}</a>`).join("");
+    if (!binnenkort.length) {
+      const g = list.find((x) => x.status !== "geannuleerd");
+      return g ? `<p class="dag-blok-leeg"><b>Vanavond en dit weekend</b> staat er in ${esc(p)} niets in de agenda. Eerstvolgende: ${esc(fmt.long(g.datum))}, ${esc(V.get(g.voorstelling).artiesten.map((a) => A.get(a).naam).join(" en ") || V.get(g.voorstelling).titel)} in ${esc(T.get(g.theater).naam)}.</p>` : "";
+    }
+    return `<section class="dag-blok" aria-labelledby="dag-blok-t">
+        <h2 id="dag-blok-t">Vanavond en dit weekend in ${esc(p)}</h2>
+        ${binnenkort.slice(0, 6).map((g) => {
+          const v = V.get(g.voorstelling);
+          return `<p class="dag-regel" data-datum="${g.datum}"><span class="dag-label" data-dag="${g.datum}">${g.datum === vandaagDag ? "Vanavond" : g.datum === morgenDag ? "Morgen" : hoofdletter(fmt.weekday(g.datum))}</span>${g.tijd ? ` ${g.tijd}` : ""} · <b>${artistLinks(g.voorstelling) || esc(v.titel)}</b> in <a href="/theaters/${g.theater}/">${esc(T.get(g.theater).naam)}</a></p>`;
+        }).join("")}
+        ${binnenkort.length > 6 || links ? `<p class="dag-nav">${links}${binnenkort.length > 6 && !links ? `<span>en nog ${binnenkort.length - 6} meer hieronder</span>` : ""}</p>` : ""}
+      </section>`;
+  }
+
   function plaatsPagina(p) {
     const list = perPlaats(p);
     const zalen = zalenMetData.filter((t) => t.plaats === p);
@@ -599,6 +703,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
         <p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${zalen.map((t) => `<a href="/theaters/${t.id}/">${esc(t.naam)}</a>`).join(", ").replace(/, ([^,]*)$/, " en $1")}.</p>
       </div></div>
       <div class="wrap detail-body">
+        ${dagBlok(p, list)}
         ${filters(list, { plaats: false, land: false, maand: true })}
         <div id="gigs">${monthGroups(list)}</div>
         ${leegBlok}
@@ -1413,7 +1518,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   return {
     controlePagina,
-    home, agendaIndex, agendaMaand, plaatsIndex, plaatsPagina, artistIndex, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
+    home, agendaIndex, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
   };
 }
