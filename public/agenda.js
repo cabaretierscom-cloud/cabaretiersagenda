@@ -126,8 +126,11 @@
     ? `${rows.length === 1 ? "1 voorstelling" : `Alle ${rows.length} voorstellingen`}`
     : `${shown} van ${rows.length} voorstellingen`;
 
+  // Op een artiestpagina zoekt het veld alleen in plaats en zaal (data-waar), elders in alles (data-zoek).
+  const zoekVeld = q?.dataset.veld || "zoek";
+  const kaal = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   function apply() {
-    const needle = state.q.trim().toLowerCase();
+    const needle = kaal(state.q.trim());
     let shown = 0;
     for (const r of rows) {
       const ok =
@@ -135,7 +138,7 @@
         (!state.maand || r.dataset.datum.startsWith(state.maand)) &&
         (!state.plaats || r.dataset.plaats === state.plaats) &&
         (!state.genre || r.dataset.genre === state.genre) &&
-        (!needle || r.dataset.zoek.includes(needle));
+        (!needle || kaal(r.dataset[zoekVeld] || "").includes(needle));
       r.hidden = !ok;
       if (ok) shown++;
     }

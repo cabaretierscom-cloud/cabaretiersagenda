@@ -188,7 +188,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   function gigRow(g, { showArtist = true, showVenue = true } = {}) {
     const v = V.get(g.voorstelling), t = T.get(g.theater);
     const zoek = [v.titel, t.naam, t.plaats, ...v.artiesten.map((a) => A.get(a).naam)].join(" ").toLowerCase();
-    return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-land="${t.land}" data-plaats="${esc(t.plaats)}" data-genre="${v.genre}" data-zoek="${esc(zoek)}">
+    return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-land="${t.land}" data-plaats="${esc(t.plaats)}" data-genre="${v.genre}" data-zoek="${esc(zoek)}" data-waar="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}">
       <div class="date"><b>${fmt.day(g.datum)}</b><small>${fmt.weekdayShort(g.datum)}${g.tijd ? " " + g.tijd : ""}</small></div>
       <div class="main">
         <span class="swatch" style="${ink(leadInk(g.voorstelling))};background:var(--bg)" aria-hidden="true"></span>
@@ -359,15 +359,24 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   const kortMaand = (m) => fmt.monthShort(m + "-01");
 
   // Filterformulier voor een lijst met speeldata. Welke velden er zijn, hangt af van de pagina.
-  function filters(list, { plaats = true, land = true, maand = false } = {}) {
+  // "Utrecht of Carré": de plaats waar het vaakst gespeeld wordt en een zaal in een andere plaats.
+  function voorbeeldWaar(list) {
+    const steden = telPer(list, (g) => T.get(g.theater).plaats);
+    const zaal = list.map((g) => T.get(g.theater)).find((t) => t.plaats !== steden[0]?.[0]);
+    return zaal ? `${steden[0][0]} of ${zaal.naam}` : steden[0]?.[0] || "Utrecht";
+  }
+
+  // waar: alleen zoeken op plaats en zaal (artiestpagina: de artiest heb je dan al gevonden).
+  function filters(list, { plaats = true, land = true, maand = false, waar = false } = {}) {
     const cities = [...new Set(list.map((g) => T.get(g.theater).plaats))].sort((a, b) => a.localeCompare(b, "nl"));
     const months = [...new Set(list.map((g) => g.datum.slice(0, 7)))].sort();
     const genres = genresVan(list);
     const landen = [...new Set(list.map((g) => T.get(g.theater).land))];
     return `<form class="filters" id="filters" role="search" aria-label="Voorstellingen filteren" hidden>
     <div class="field search">
-      <label for="f-q">Zoek op artiest, voorstelling of zaal</label>
-      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Lebbis of oudejaars">
+      ${waar ? `<label for="f-q">Zoek op plaats of theater</label>
+      <input id="f-q" name="q" type="search" autocomplete="off" data-veld="waar" placeholder="Bijvoorbeeld: ${esc(voorbeeldWaar(list))}">` : `<label for="f-q">Zoek op artiest, voorstelling of zaal</label>
+      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Lebbis of oudejaars">`}
     </div>
     ${land && landen.length > 1 ? `<div class="field country">
       <span class="label" id="f-land-label">Land</span>
@@ -1069,7 +1078,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       </div></div>
       <div class="wrap detail-body">
         ${showIds.length ? `<div class="shows-list">${showIds.map((vid) => voorstellingPad.has(vid) ? `<a class="pill" href="${voorstellingPad.get(vid)}">${esc(V.get(vid).titel)}</a>` : `<span class="pill">${esc(V.get(vid).titel)}</span>`).join("")}</div>` : ""}
-        ${list.length > 12 ? filters(list, { maand: true }) : ""}
+        ${list.length > 12 ? filters(list, { maand: true, waar: true }) : ""}
         <div id="gigs">${monthGroups(list, { showArtist: false })}</div>
         ${list.length > 12 ? leegBlok : ""}
         ${artiestTekst(a, list)}
