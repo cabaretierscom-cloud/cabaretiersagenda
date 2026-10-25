@@ -205,7 +205,10 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   function gigRow(g, { showArtist = true, showVenue = true } = {}) {
     const v = V.get(g.voorstelling), t = T.get(g.theater);
     const zoek = [v.titel, t.naam, t.plaats, ...v.artiesten.map((a) => A.get(a).naam)].join(" ").toLowerCase();
-    return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-land="${t.land}" data-plaats="${esc(t.plaats)}" data-genre="${v.genre}" data-zoek="${esc(zoek)}" data-waar="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}">
+    // Voor de knop "Zet in je agenda" (public/agenda.js): wat, waar en hoe laat.
+    const inAgenda = ["geannuleerd", "verplaatst"].includes(g.status) ? ""
+      : ` data-wat="${esc(v.artiesten.length ? [artistNames(g.voorstelling), echteTitel(g.voorstelling)].filter(Boolean).join(": ") : v.titel)}" data-locatie="${esc(`${t.naam}, ${t.plaats}`)}"${g.tijd ? ` data-tijd="${g.tijd}"` : ""}`;
+    return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-land="${t.land}" data-plaats="${esc(t.plaats)}" data-genre="${v.genre}" data-zoek="${esc(zoek)}" data-waar="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}"${inAgenda}>
       <div class="date"><b>${fmt.day(g.datum)}</b><small>${fmt.weekdayShort(g.datum)}${g.tijd ? " " + g.tijd : ""}</small></div>
       <div class="main">
         <span class="swatch" style="${ink(leadInk(g.voorstelling))};background:var(--bg)" aria-hidden="true"></span>
@@ -215,7 +218,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
         </div>
       </div>
       <div class="venue">${showVenue ? `<a href="/theaters/${t.id}/">${esc(t.naam)}</a><span><a href="/plaatsen/${plaatsId(t.plaats)}/">${esc(t.plaats)}</a>, ${LANDEN[t.land]}</span>` : `<span>${esc(GENRES[v.genre])}</span>`}</div>
-      <div class="side">${statusLabel(g)}${ticketKnop(g)}</div>
+      <div class="side">${statusLabel(g)}<div class="knoppen">${ticketKnop(g)}</div></div>
     </article>`;
   }
 

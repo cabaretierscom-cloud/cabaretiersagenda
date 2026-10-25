@@ -580,3 +580,15 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .dag-snel { margin-top: 16px; }
 .dag-snel a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 2px solid var(--ink); border-radius: 999px; text-decoration: none; color: var(--ink); }
 .dag-snel a:hover { background: var(--ink); color: #fff; }
+
+/* Zet in je agenda: knop naast Tickets met een klein keuzemenu (public/agenda.js). */
+.gig .knoppen { position: relative; display: flex; gap: 8px; align-items: center; }
+.btn.in-agenda { min-height: 44px; width: 44px; padding: 0; justify-content: center; }
+.btn.in-agenda svg { width: 20px; height: 20px; }
+.btn.in-agenda:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.agenda-menu { position: absolute; z-index: 20; top: calc(100% + 6px); right: 0; min-width: 190px; display: flex; flex-direction: column; background: #fff; border: 2px solid var(--ink); border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, .15); overflow: hidden; text-align: left; }
+.agenda-menu[hidden] { display: none; }
+.agenda-menu a, .agenda-menu button { display: flex; align-items: center; min-height: 44px; padding: 0 16px; font: inherit; font-weight: 600; color: var(--ink); background: none; border: 0; text-decoration: none; cursor: pointer; text-align: left; }
+.agenda-menu a + button { border-top: 1px solid rgba(18, 18, 18, .15); }
+.agenda-menu a:hover, .agenda-menu button:hover, .agenda-menu a:focus-visible, .agenda-menu button:focus-visible { background: var(--riso-yellow); outline: none; }
+@media (max-width: 760px) { .agenda-menu { right: auto; left: 0; } }

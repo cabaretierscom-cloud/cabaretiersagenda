@@ -108,6 +108,100 @@
     });
   }
 
+  // ---------- Zet in je agenda ----------
+  // Knop naast Tickets bij elke voorstelling met data-wat (niet bij geannuleerd of verplaatst):
+  // Google Agenda als link, Apple en Outlook als .ics-bestand. Zonder tijd wordt het een hele dag;
+  // met tijd rekenen we twee uur.
+  const AGENDA_ICOON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg>';
+  const twee = (n) => String(n).padStart(2, "0");
+  // Lokale tijd in Amsterdam naar UTC (zomer- en wintertijd goed).
+  function naarUtc(datum, tijd) {
+    const [j, m, d] = datum.split("-").map(Number), [u, min] = tijd.split(":").map(Number);
+    const gok = Date.UTC(j, m - 1, d, u, min);
+    const delen = Object.fromEntries(new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Amsterdam", hourCycle: "h23", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit" })
+      .formatToParts(new Date(gok)).map((p) => [p.type, p.value]));
+    const alsAmsterdam = Date.UTC(+delen.year, +delen.month - 1, +delen.day, +delen.hour, +delen.minute);
+    return new Date(gok - (alsAmsterdam - gok));
+  }
+  const utcTekst = (d) => d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+  function agendaGegevens(rij) {
+    const { wat, locatie, datum, tijd } = rij.dataset;
+    const bron = rij.querySelector(".btn.tickets")?.href || location.href;
+    const tekst = `Tickets en informatie: ${bron}\nGevonden op Cabaretiers.com`;
+    if (tijd) {
+      const start = naarUtc(datum, tijd);
+      return { wat, locatie, bron, tekst, start: utcTekst(start), eind: utcTekst(new Date(start.getTime() + 2 * 36e5)), heleDag: false };
+    }
+    const volgende = new Date(Date.UTC(...datum.split("-").map((x, i) => Number(x) - (i === 1 ? 1 : 0))) + 864e5);
+    return { wat, locatie, bron, tekst, start: datum.replace(/-/g, ""), eind: `${volgende.getUTCFullYear()}${twee(volgende.getUTCMonth() + 1)}${twee(volgende.getUTCDate())}`, heleDag: true };
+  }
+  function googleLink(e) {
+    const p = new URLSearchParams({ action: "TEMPLATE", text: e.wat, dates: `${e.start}/${e.eind}`, details: e.tekst, location: e.locatie });
+    return `https://calendar.google.com/calendar/render?${p}`;
+  }
+  function icsBestand(e, rij) {
+    const veilig = (s) => s.replace(/\\/g, "\\\\").replace(/;/g, "\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+    const tijd = e.heleDag ? `DTSTART;VALUE=DATE:${e.start}\r\nDTEND;VALUE=DATE:${e.eind}` : `DTSTART:${e.start}\r\nDTEND:${e.eind}`;
+    const ics = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Cabaretiers.com//Agenda//NL", "CALSCALE:GREGORIAN", "BEGIN:VEVENT",
+      `UID:${rij.dataset.datum}-${Math.abs([...e.wat + e.locatie].reduce((h, c) => (h * 31 + c.charCodeAt(0)) | 0, 7))}@cabaretiers.com`,
+      `DTSTAMP:${utcTekst(new Date())}`, tijd, `SUMMARY:${veilig(e.wat)}`, `LOCATION:${veilig(e.locatie)}`, `DESCRIPTION:${veilig(e.tekst)}`, `URL:${e.bron}`,
+      "END:VEVENT", "END:VCALENDAR", ""].join("\r\n");
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar;charset=utf-8" }));
+    a.download = `${e.wat.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 60) || "voorstelling"}.ics`;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  }
+  let openMenu = null;
+  const sluitMenu = () => {
+    if (!openMenu) return;
+    openMenu.menu.hidden = true;
+    openMenu.knop.setAttribute("aria-expanded", "false");
+    openMenu = null;
+  };
+  document.querySelectorAll(".gig[data-wat] .knoppen").forEach((plek, i) => {
+    const rij = plek.closest(".gig");
+    const knop = document.createElement("button");
+    knop.type = "button";
+    knop.className = "btn ghost in-agenda";
+    knop.setAttribute("aria-expanded", "false");
+    knop.setAttribute("aria-controls", `agenda-menu-${i}`);
+    knop.setAttribute("aria-label", `Zet in je agenda: ${rij.dataset.wat}`);
+    knop.title = "Zet in je agenda";
+    knop.innerHTML = AGENDA_ICOON;
+    const menu = document.createElement("div");
+    menu.className = "agenda-menu";
+    menu.id = `agenda-menu-${i}`;
+    menu.hidden = true;
+    menu.innerHTML = '<a href="#" data-soort="google" target="_blank" rel="noopener">Google Agenda</a><button type="button" data-soort="ics">Apple of Outlook</button>';
+    plek.prepend(knop);
+    plek.append(menu);
+    knop.addEventListener("click", (ev) => {
+      ev.stopPropagation();
+      const was = openMenu?.menu === menu;
+      sluitMenu();
+      if (was) return;
+      menu.querySelector("[data-soort=google]").href = googleLink(agendaGegevens(rij));
+      menu.hidden = false;
+      knop.setAttribute("aria-expanded", "true");
+      openMenu = { menu, knop };
+      menu.querySelector("a").focus();
+    });
+    menu.addEventListener("click", (ev) => {
+      ev.stopPropagation();
+      if (ev.target.closest("[data-soort=ics]")) icsBestand(agendaGegevens(rij), rij);
+      if (ev.target.closest("[data-soort]")) sluitMenu();
+    });
+  });
+  document.addEventListener("click", sluitMenu);
+  document.addEventListener("keydown", (ev) => {
+    if (ev.key !== "Escape" || !openMenu) return;
+    const { knop } = openMenu;
+    sluitMenu();
+    knop.focus();
+  });
+
   // ---------- Filters op een speellijst ----------
   const form = document.getElementById("filters");
   if (!form) return;
