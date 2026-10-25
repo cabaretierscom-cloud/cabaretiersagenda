@@ -26,6 +26,13 @@ export const SITE = {
   url: "https://www.cabaretiers.com",
   email: "hallo@cabaretiers.com",
   description: "De theateragenda van Nederland en België: alle aankomende cabaret- en comedyvoorstellingen, theaters en artiesten op één plek.",
+  // Sociale media: icoon in de footer en sameAs in de gestructureerde gegevens van de organisatie.
+  social: [
+    { naam: "Instagram", url: "https://www.instagram.com/cabaretiers_com/", icoon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>' },
+    { naam: "Facebook", url: "https://www.facebook.com/profile.php?id=61595656450246", icoon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4V14h2.8v8z"/></svg>' },
+    { naam: "YouTube", url: "https://www.youtube.com/@cabaretiers", icoon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 7.2c.2-1.5 1.3-2.5 2.8-2.6C7.4 4.4 9.7 4.3 12 4.3s4.6.1 6.7.3c1.5.1 2.6 1.1 2.8 2.6.2 1.6.3 3.2.3 4.8s-.1 3.2-.3 4.8c-.2 1.5-1.3 2.5-2.8 2.6-2.1.2-4.4.3-6.7.3s-4.6-.1-6.7-.3c-1.5-.1-2.6-1.1-2.8-2.6-.2-1.6-.3-3.2-.3-4.8s.1-3.2.3-4.8zM10 8.8v6.4l5.5-3.2z"/></svg>' },
+    { naam: "TikTok", url: "https://www.tiktok.com/@cabaretiers.com", icoon: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.6 3c.3 2.3 1.7 3.9 4 4.1v3.3c-1.5.1-2.8-.4-4-1.2v6.2c0 3.6-2.6 6.1-6 6.1s-6.1-2.5-6.1-5.9c0-3.5 2.9-6 6.6-5.6v3.4c-1.7-.4-3.2.6-3.2 2.2 0 1.4 1.1 2.4 2.5 2.4 1.5 0 2.6-1 2.6-2.8V3z"/></svg>' },
+  ],
 };
 
 const ICON = {
@@ -157,7 +164,10 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       <span class="logo-tekst" aria-hidden="true"><span class="wordmark">${WOORDMERK_SVG}<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
     </a>
     <p>Cabaret en comedy in Nederland en België, verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
+    <div class="footer-contact">
     <p class="contact">Contact: <a href="mailto:${SITE.email}">${SITE.email}</a></p>
+    <ul class="social" aria-label="Volg ons">${SITE.social.map((s) => `<li><a href="${esc(s.url)}" rel="me noopener" target="_blank" aria-label="${esc(s.naam)} (opent in nieuw venster)" title="${esc(s.naam)}">${s.icoon}</a></li>`).join("")}</ul>
+    </div>
   </div>
 </footer>
 <script src="/agenda.js?v=${VERSIE["agenda.js"]}" defer></script>
@@ -303,7 +313,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return {
       "@context": "https://schema.org",
       "@graph": [
-        { "@type": "Organization", "@id": ORG_ID, name: SITE.name, url: URL("/"), email: SITE.email,
+        { "@type": "Organization", "@id": ORG_ID, name: SITE.name, url: URL("/"), email: SITE.email, sameAs: SITE.social.map((s) => s.url),
           contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: SITE.email, availableLanguage: ["nl"] }, logo: { "@type": "ImageObject", url: URL("/apple-touch-icon.png"), width: 180, height: 180, caption: "Beeldmerk van Cabaretiers.com" }, image: URL("/deelafbeelding.png") },
         {
           "@type": "WebSite", "@id": SITE_ID, name: SITE.name, url: URL("/"), inLanguage: "nl", description: SITE.description,

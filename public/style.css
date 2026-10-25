@@ -408,6 +408,11 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .site-footer .wordmark .tld { color: var(--riso-lilac); }
 .site-footer .woord .kern { fill: var(--riso-orange); }
 .site-footer a:focus-visible { outline-color: #fff; }
+.site-footer .footer-contact { display: flex; flex-direction: column; gap: 14px; }
+.site-footer .social { list-style: none; margin: 0; padding: 0; display: flex; gap: 8px; }
+.site-footer .social a { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: #fff; border: 2px solid rgba(255, 255, 255, .35); transition: background-color .15s, color .15s, border-color .15s; }
+.site-footer .social a:hover { background: #fff; color: #121212; border-color: #fff; }
+.site-footer .social svg { width: 22px; height: 22px; }
 
 /* Verwijzingen naar verwante overzichten en veelgestelde vragen (o.a. /alle-cabaretiers/) */
 .zie-ook { margin: 16px 0 0; color: var(--ink-2); }
