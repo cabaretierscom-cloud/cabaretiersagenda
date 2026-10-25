@@ -509,6 +509,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   </dl>
 </section>
 
+${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` : ""}
 <section class="block wrap" id="agenda" aria-labelledby="week-title">
   <div class="block-head">
     <h2 id="week-title">Deze week</h2>
@@ -547,6 +548,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       <div class="block-head"><h1 id="t">Agenda</h1><p>${plural(tellers.speeldata, "voorstelling", "voorstellingen")} in ${plural(tellers.zalen, "zaal", "zalen")}</p></div>
       ${maandNav(null)}
       <nav class="dag-nav dag-snel" aria-label="Snel kiezen"><a href="/vanavond/">Vanavond</a><a href="/dit-weekend/">Dit weekend</a></nav>
+      ${uitgelichtBlok("agenda")}
       <h2 class="sub-head">Eerstvolgende voorstellingen</h2>
       ${filters(komend)}
       <div id="gigs">${monthGroups(komend)}</div>
@@ -563,6 +565,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">${maandNaam(m)}</h1><p>${plural(list.length, "voorstelling", "voorstellingen")}</p></div>
       ${maandNav(m)}
+      ${uitgelichtBlok("agenda")}
       ${filters(list)}
       <div id="gigs">${monthGroups(list).replace(/<h3>[^<]*<\/h3>/, "")}</div>
       ${leegBlok}
@@ -593,6 +596,30 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       <p class="empty" id="plaatsen-leeg" hidden>Geen plaats of zaal gevonden met deze naam.</p>
     </section>`;
     return layout({ title: "Plaatsen", description: "Cabaret en comedy per plaats in Nederland en België.", path: "/plaatsen/", section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"]], hoofd: lijstLd(plaatsen.map((p) => [p, `/plaatsen/${plaatsId(p)}/`])) } });
+  }
+
+  // ---------- Uitgelicht (betaalde vermelding, data/uitgelicht.json) ----------
+  // Duidelijk gemarkeerd als betaald (Reclamecode); externe links met rel="sponsored".
+  // Een vermelding zonder aankomende voorstellingen wordt niet getoond.
+  const uitgelichtOnderwerp = (u) => {
+    if (u.theater) return { naam: T.get(u.theater).naam, pad: `/theaters/${u.theater}/`, list: db.gigsForTheater(u.theater), kleur: u.kleur || "geel" };
+    if (u.artiest) return { naam: A.get(u.artiest).naam, pad: `/artiesten/${u.artiest}/`, list: db.gigsForArtist(u.artiest), kleur: u.kleur || A.get(u.artiest).kleur };
+    return { naam: F.get(u.festival).naam, pad: `/festivals/${u.festival}/`, list: db.gigsForFestival(u.festival), kleur: u.kleur || "roze" };
+  };
+  function uitgelichtBlok(plek, plaats = null) {
+    const items = db.uitgelicht.filter((u) => u.plekken.includes(plek)).map((u) => ({ u, ...uitgelichtOnderwerp(u) }))
+      .map((x) => ({ ...x, list: plaats ? x.list.filter((g) => T.get(g.theater).plaats === plaats) : x.list }))
+      .filter((x) => x.list.length).slice(0, 2);
+    if (!items.length) return "";
+    return `<aside class="uitgelicht-rij" aria-label="Uitgelicht">${items.map(({ u, naam, pad, list, kleur }) => `
+      <div class="uitgelicht" style="${ink(kleur)}">
+        <p class="uitgelicht-label">Uitgelicht <span>· betaalde vermelding</span></p>
+        <h2><a href="${pad}">${esc(naam)}</a></h2>
+        ${u.tekst ? `<p class="uitgelicht-tekst">${esc(u.tekst)}</p>` : ""}
+        <ul>${list.slice(0, 3).map((g) => `<li><b>${esc(fmt.weekdayShort(g.datum))} ${esc(fmt.dayMonth(g.datum))}</b> ${u.theater ? esc(artistNames(g.voorstelling)) : `${esc(T.get(g.theater).naam)}, ${esc(T.get(g.theater).plaats)}`}</li>`).join("")}</ul>
+        <p class="uitgelicht-knoppen"><a class="btn" href="${pad}">Alle voorstellingen</a>${u.link ? `<a class="btn ghost" href="${esc(u.link)}" target="_blank" rel="sponsored noopener">Naar de website${ICON.extern}</a>` : ""}</p>
+      </div>`).join("")}
+    </aside>`;
   }
 
   // ---------- Vanavond en dit weekend ----------
@@ -668,6 +695,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
         : `Alle cabaret- en comedyvoorstellingen${waar} van vrijdag tot en met zondag, van theatercabaret tot stand-up in comedyclubs, met de tijd, de zaal en een link naar de kaartverkoop.`}
         Kaarten koop je bij het theater; controleer daar ook of een voorstelling is uitverkocht.</p>
       <nav class="dag-nav" aria-label="Meer">${[andereLink, p ? `<a href="/plaatsen/${plaatsId(p)}/">Alle voorstellingen in ${esc(p)}</a>` : `<a href="/agenda/">De hele agenda</a>`].filter(Boolean).join("")}</nav>
+      ${p ? uitgelichtBlok("plaats", p) : uitgelichtBlok("agenda")}
       ${filters(list, p ? { plaats: false, land: false } : { plaats: true })}
       <div id="gigs">${dagGroepen(list)}</div>
       ${leegBlok}
@@ -707,6 +735,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       </div></div>
       <div class="wrap detail-body">
         ${dagBlok(p, list)}
+        ${uitgelichtBlok("plaats", p)}
         ${filters(list, { plaats: false, land: false, maand: true })}
         <div id="gigs">${monthGroups(list)}</div>
         ${leegBlok}

@@ -13,6 +13,7 @@ De agenda heeft geen aparte database. Alle gegevens staan als bestanden in de ma
 | `data/voorstellingen.json` | Voorstellingen (programma's) en wie erin speelt |
 | `data/speeldata.json` | Elke avond dat een voorstelling ergens speelt, met de bron |
 | `data/festivals.json` | Cabaretfestivals: naam, plaats, website, en welke artiesten (`artiesten`) of titels (`titels`) erbij horen |
+| `data/uitgelicht.json` | Betaalde vermeldingen ("Uitgelicht") van een theater, artiest of festival, met begin- en einddatum |
 
 Elk item heeft een vaste `id` van kleine letters en streepjes, zoals `claudia-de-breij`. Andere bestanden verwijzen daarnaar. Die id wordt ook het webadres: `/artiesten/claudia-de-breij/`.
 
@@ -126,3 +127,29 @@ De site wordt op de dag van bouwen gefilterd op aankomende voorstellingen. Laat 
 ## Lettertypes
 
 Big Shoulders Display en Instrument Sans worden door de site zelf aangeboden (`public/fonts/`), niet via Google. Beide vallen onder de SIL Open Font License; de licenties staan ernaast.
+
+## Uitgelicht (betaalde vermeldingen)
+
+Een theater, artiest of festival kan betalen voor een opvallende plek. Zet daarvoor een regel in `data/uitgelicht.json`:
+
+```json
+[
+  {
+    "id": "comedy-cafe-november-2026",
+    "adverteerder": "Comedy Café Amsterdam",
+    "theater": "comedy-cafe-amsterdam",
+    "van": "2026-11-01",
+    "tot": "2026-11-30",
+    "plekken": ["home", "agenda", "plaats"],
+    "tekst": "Elke avond stand-up in het hart van Amsterdam.",
+    "link": "https://www.comedycafe.nl"
+  }
+]
+```
+
+- Kies precies één van `theater`, `artiest` of `festival` (de id uit het bijbehorende bestand).
+- `plekken`: `home` (voorpagina, boven "Deze week"), `agenda` (de agenda, de maandpagina's en Vanavond/Dit weekend) en `plaats` (de plaatspagina's waar het theater, de artiest of het festival speelt, en Vanavond/Dit weekend van die stad).
+- `van` en `tot` zijn de eerste en laatste dag; daarbuiten staat de vermelding vanzelf niet meer op de site. Oude regels mogen blijven staan als administratie.
+- `tekst` (hooguit 160 tekens), `link` (https) en `kleur` (een kleur uit `KLEUREN`) zijn niet verplicht. Zonder kleur: geel voor een theater, roze voor een festival en de vaste kleur van een artiest.
+- De vermelding toont de eerstvolgende drie voorstellingen en staat er alleen als die er zijn. Er staat altijd "Uitgelicht · betaalde vermelding" boven (verplicht volgens de Reclamecode), en de link naar de eigen site krijgt `rel="sponsored"` (regel van Google).
+- Per plek staan er hooguit twee tegelijk; de vroegst begonnen vermelding eerst.

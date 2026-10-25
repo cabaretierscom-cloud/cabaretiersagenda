@@ -39,6 +39,9 @@ export const GESLACHTEN = ["man", "vrouw"];
 export const THEATERSOORTEN = ["theater", "cultuurcentrum", "comedyclub", "café", "festivalterrein", "overig"];
 
 // Inktkleuren; de waarde is de naam van de CSS-variabele en de tekstkleur erop.
+// Betaalde vermeldingen (data/uitgelicht.json): waar ze kunnen staan.
+export const UITGELICHT_PLEKKEN = ["home", "agenda", "plaats"];
+
 export const KLEUREN = {
   roze: ["--riso-pink", "#121212"],
   geel: ["--riso-yellow", "#121212"],
@@ -62,6 +65,8 @@ export function loadData(dir, { today }) {
   const speeldata = read(dir, "speeldata.json");
   // Festivals bundelen voorstellingen: via hun "artiest" (Cameretten) of een stuk van de titel.
   const festivals = existsSync(join(dir, "festivals.json")) ? read(dir, "festivals.json") : [];
+  // Uitgelicht: betaalde vermeldingen van een theater, artiest of festival, van-tot (zie README).
+  const uitgelicht = existsSync(join(dir, "uitgelicht.json")) ? read(dir, "uitgelicht.json") : [];
 
   const errors = [];
   const byId = (list, kind) => {
@@ -81,6 +86,22 @@ export function loadData(dir, { today }) {
     if (!f.naam || !f.plaats) errors.push(`festival ${f.id}: naam en plaats zijn verplicht`);
     if (!LANDEN[f.land]) errors.push(`festival ${f.id}: onbekend land "${f.land}"`);
     for (const a of f.artiesten || []) if (!A.has(a)) errors.push(`festival ${f.id}: onbekende artiest "${a}"`);
+  }
+
+  const U = byId(uitgelicht, "uitgelicht.json");
+  for (const u of uitgelicht) {
+    const waar = `uitgelicht ${u.id}`;
+    const doelen = ["theater", "artiest", "festival"].filter((k) => u[k]);
+    if (doelen.length !== 1) errors.push(`${waar}: kies precies één van theater, artiest of festival`);
+    if (u.theater && !T.has(u.theater)) errors.push(`${waar}: onbekend theater "${u.theater}"`);
+    if (u.artiest && !A.has(u.artiest)) errors.push(`${waar}: onbekende artiest "${u.artiest}"`);
+    if (u.festival && !F.has(u.festival)) errors.push(`${waar}: onbekend festival "${u.festival}"`);
+    if (!u.adverteerder) errors.push(`${waar}: adverteerder is verplicht (wie betaalt)`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(u.van || "") || !/^\d{4}-\d{2}-\d{2}$/.test(u.tot || "") || u.tot < u.van) errors.push(`${waar}: van en tot moeten JJJJ-MM-DD zijn, tot niet vóór van`);
+    if (!Array.isArray(u.plekken) || !u.plekken.length || u.plekken.some((p) => !UITGELICHT_PLEKKEN.includes(p))) errors.push(`${waar}: plekken moet een lijst zijn uit ${UITGELICHT_PLEKKEN.join(", ")}`);
+    if (u.tekst != null && (typeof u.tekst !== "string" || u.tekst.length > 160)) errors.push(`${waar}: tekst is hooguit 160 tekens`);
+    if (u.link != null && !/^https:\/\//.test(u.link)) errors.push(`${waar}: link moet met https:// beginnen`);
+    if (u.kleur != null && !KLEUREN[u.kleur]) errors.push(`${waar}: onbekende kleur "${u.kleur}"`);
   }
 
   for (const a of artiesten) {
@@ -148,6 +169,8 @@ export function loadData(dir, { today }) {
     gigsForArtist: (id) => upcoming.filter((g) => V.get(g.voorstelling).artiesten.includes(id)),
     gigsForTheater: (id) => upcoming.filter((g) => g.theater === id),
     festivals: F,
+    // Alleen vermeldingen die vandaag lopen.
+    uitgelicht: [...U.values()].filter((u) => u.van <= today && today <= u.tot).sort((a, b) => a.van.localeCompare(b.van)),
     gigsForFestival: (id) => {
       const f = F.get(id);
       const titels = (f.titels || []).map((t) => t.toLowerCase());
