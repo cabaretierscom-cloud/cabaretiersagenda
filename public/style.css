@@ -577,3 +577,6 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .dag-regel .dag-label { font-weight: 700; }
 .dag-blok .dag-nav { margin: 12px 0 0; }
 .dag-blok-leeg { border-left: 4px solid var(--riso-yellow); padding: 8px 14px; margin: 8px 0 24px; }
+.dag-snel { margin-top: 16px; }
+.dag-snel a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 2px solid var(--ink); border-radius: 999px; text-decoration: none; color: var(--ink); }
+.dag-snel a:hover { background: var(--ink); color: #fff; }

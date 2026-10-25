@@ -106,7 +106,6 @@ export function createTemplates(db) {
   function layout({ title, description = SITE.description, path, section, body, schema, noindex = false }) {
     const foto = schema?.foto?.foto;
     const nav = [
-      ["vanavond", "/vanavond/", "Vanavond"],
       ["agenda", "/agenda/", "Agenda"],
       ["artiesten", "/artiesten/", "Artiesten"],
       ["plaatsen", "/plaatsen/", "Plaatsen"],
@@ -544,6 +543,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Agenda</h1><p>${plural(tellers.speeldata, "voorstelling", "voorstellingen")} in ${plural(tellers.zalen, "zaal", "zalen")}</p></div>
       ${maandNav(null)}
+      <nav class="dag-nav dag-snel" aria-label="Snel kiezen"><a href="/vanavond/">Vanavond</a><a href="/dit-weekend/">Dit weekend</a></nav>
       <h2 class="sub-head">Eerstvolgende voorstellingen</h2>
       ${filters(komend)}
       <div id="gigs">${monthGroups(komend)}</div>
@@ -673,7 +673,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     </section>`;
     const desc = kort(`${titel}: ${plural(nVandaag, "voorstelling", "voorstellingen")} op ${periode}${list.length ? `, met ${opsomming([...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].slice(0, 3).map((a) => A.get(a).naam))}` : ""}. Met tijden, zalen en tickets.`);
     const kruimels = p ? [["Plaatsen", "/plaatsen/"], [p, `/plaatsen/${plaatsId(p)}/`], [hoofdletter(wanneer), dagPad(soort, p)]] : [[hoofdletter(wanneer), dagPad(soort)]];
-    return layout({ title: titel, description: desc, path: dagPad(soort, p), section: avond && !p ? "vanavond" : "agenda", body, schema: { type: "CollectionPage", kruimels, ...(p ? { over: plaatsLd(p) } : {}), extra: eventsLd(list) } });
+    return layout({ title: titel, description: desc, path: dagPad(soort, p), section: "agenda", body, schema: { type: "CollectionPage", kruimels, ...(p ? { over: plaatsLd(p) } : {}), extra: eventsLd(list) } });
   }
 
   // Blok bovenaan een plaatspagina: wat er vanavond en dit weekend is, of de eerstvolgende voorstelling.
