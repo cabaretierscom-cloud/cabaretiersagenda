@@ -24,6 +24,10 @@ Een solo-artiest kan `"geslacht": "man"` of `"geslacht": "vrouw"` hebben, altijd
 
 `npm run fotos` zoekt rechtenvrije foto's: via het Wikipedia-artikel van de artiest (alleen als dat over cabaret of comedy gaat) naar de hoofdafbeelding op Wikidata, en dan de licentie op Wikimedia Commons. Alleen CC0, publiek domein, CC BY en CC BY-SA worden gebruikt. De foto komt in `public/fotos/`, en het veld `foto` in `data/artiesten.json` bewaart maker, licentie en bron; die staan als naamsvermelding onder de foto. Bekijk nieuwe foto's altijd zelf: zet `"foto": false` bij een artiest als de foto niet klopt, dan zoekt het script er nooit meer een. Elke foto heeft een `alt`-tekst (wat er op de foto te zien is, in het Nederlands). Het script vult die met de beschrijving van Commons of met "Foto van <naam>"; verbeter die met de hand. `npm run fotos -- --aanvullen` haalt beschrijving, datum en afmetingen opnieuw op voor bestaande foto's.
 
+## Controlepagina
+
+Op [www.cabaretiers.com/controle/](https://www.cabaretiers.com/controle/) zie je na elke nachtelijke run of alle bronnen gelukt zijn, wat er nieuw is (artiesten, zalen, voorstellingen) en welke zalen alleen uit speellijsten van artiesten komen. Bovenaan staan waarschuwingen als een bron mislukte, ineens veel minder opleverde, of als de nachtelijke run niet gedraaid heeft. De pagina staat niet in het menu en niet in zoekmachines.
+
 ## Zalen opschonen
 
 Zalen uit de speellijsten van artiesten koppelt het script zelf aan bekende theaters. Gaat dat mis, zet het dan recht in `data/zaal-aliassen.json`:

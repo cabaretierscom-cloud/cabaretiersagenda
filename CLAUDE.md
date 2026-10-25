@@ -37,6 +37,10 @@ Cabaret- en comedyagenda voor Nederland en België. Statische site, gebouwd door
 
 - `.github/workflows/bijwerken.yml` zet de site elke nacht en bij elke push op `main` via SFTP op Cloud86 (Plesk), in de map `cabaretiers.com/` (niet `httpdocs/`: die hoort bij een ander domein op hetzelfde pakket). Eerst controleert hij met een testbestand of die map echt www.cabaretiers.com is. Geheimen: `CLOUD86_HOST`, `CLOUD86_USER`, `CLOUD86_PASSWORD`. `public/.htaccess` regelt 404, www en browsercache; `build.mjs` voegt daar doorverwijzingen (301) aan toe van oude WordPress-adressen (`data/oude-adressen.json`) en van `/<artiest-id>/` naar `/artiesten/<artiest-id>/`.
 
+## Controlepagina
+
+`/controle/` (niet in menu, sitemap of zoekmachines; robots.txt `Disallow`) toont per bron of het ophalen lukte (`data/ophaal-log.json`, geschreven door `run.mjs`), wat er per dag nieuw is (`data/rapport.json`, geschreven door `samenvoegen.mjs`), waarschuwingen (mislukt, 0 speeldata, sterke daling, geen run) en de zalen die alleen uit speellijsten komen. De repository is openbaar, dus de pagina is verborgen, niet geheim.
+
 ## Controleren
 
 `npm run check` en `npm run build` moeten zonder fouten draaien voor een commit.

@@ -525,3 +525,26 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .recensies figcaption { font-size: var(--step--1); color: var(--ink-2); }
 .recensies cite { font-style: normal; font-weight: 700; color: var(--ink); }
 .recensies figcaption a { color: inherit; margin-left: 4px; }
+
+/* Controlepagina (/controle/): sober, zwart op wit. */
+.controle .let-op { border: 2px solid var(--ink); border-radius: 16px; padding: 16px 20px; margin: 0 0 24px; }
+.controle .let-op h2 { margin: 0 0 8px; font-family: var(--font-display); font-size: var(--step-1); }
+.controle .let-op ul { margin: 0; padding-left: 20px; }
+.controle .let-op li + li { margin-top: 6px; }
+.controle .alles-goed { font-weight: 600; margin: 0 0 24px; }
+.controle .tegels { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 8px; }
+.controle .tegels div { background: var(--paper-2); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; }
+.controle .tegels strong { font-family: var(--font-display); font-size: var(--step-2); line-height: 1; }
+.controle .tegels span { color: var(--ink-2); font-size: var(--step--1); }
+.controle .verschil { display: inline; font-family: var(--font-body); font-size: var(--step--1); color: var(--ink-2); }
+.controle .nieuw-kolommen { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+.controle .nieuw-kolommen h3 { margin: 0 0 8px; }
+.controle .nieuw-kolommen ul { margin: 0; padding-left: 18px; }
+.controle .tabel { overflow-x: auto; margin-bottom: 8px; }
+.controle table { width: 100%; border-collapse: collapse; font-size: var(--step--1); }
+.controle th, .controle td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.controle th { font-weight: 700; border-bottom: 2px solid var(--ink); white-space: nowrap; }
+.controle tr.fout td { font-weight: 700; }
+.controle tr.fout td:nth-child(2)::before, .controle tr.waarschuwing td:nth-child(2)::before { content: "⚠ "; }
+.controle .mis { color: var(--ink-2); }
+.controle code { font-size: .85em; color: var(--ink-2); }

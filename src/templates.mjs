@@ -94,7 +94,7 @@ export function createTemplates(db) {
   const showLink = (vid, tekst) => voorstellingPad.has(vid) ? `<a href="${voorstellingPad.get(vid)}">${tekst}</a>` : tekst;
 
 
-  function layout({ title, description = SITE.description, path, section, body, schema }) {
+  function layout({ title, description = SITE.description, path, section, body, schema, noindex = false }) {
     const foto = schema?.foto?.foto;
     const nav = [
       ["agenda", "/agenda/", "Agenda"],
@@ -113,7 +113,8 @@ export function createTemplates(db) {
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${esc(fullTitle)}</title>
 <meta name="description" content="${esc(description)}">
-<link rel="canonical" href="${SITE.url}${path}">
+<link rel="canonical" href="${SITE.url}${path}">${noindex ? `
+<meta name="robots" content="noindex, nofollow">` : ""}
 <meta property="og:title" content="${esc(title || SITE.name)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">${foto ? `
@@ -1204,7 +1205,71 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return layout({ title: "Pagina niet gevonden", path: "/404.html", section: null, body });
   }
 
+  // Controlepagina voor de beheerder (/controle/): hoe het ophalen ging en wat er nieuw is.
+  // Niet in het menu, niet in de sitemap en niet in zoekmachines.
+  function controlePagina({ rapport, log, alleenSpeellijst }) {
+    const vandaag = db.today;
+    const dagen = (d) => Math.round((new Date(vandaag) - new Date(d)) / 864e5);
+    const datumTekst = (d) => (d ? fmt.full(d) : "onbekend");
+    const bronnen = new Map((rapport.bronnen || []).map((b) => [b.bron, b]));
+    const regels = Object.entries(log || {}).map(([id, l]) => ({ id, ...l, samen: bronnen.get(id) }));
+    const waarschuwingen = [];
+    if (rapport.datum && dagen(rapport.datum) > 1) waarschuwingen.push(`Er is sinds ${datumTekst(rapport.datum)} niet meer samengevoegd. Draait de nachtelijke run nog? Kijk bij Actions op GitHub.`);
+    for (const r of regels) {
+      if (!r.gelukt) waarschuwingen.push(`<strong>${esc(r.naam)}</strong> is mislukt op ${datumTekst(r.datum)}: ${esc(r.fout || "onbekende fout")}. De vorige vondsten blijven staan.`);
+      else if (dagen(r.datum) > 2) waarschuwingen.push(`<strong>${esc(r.naam)}</strong> is sinds ${datumTekst(r.datum)} niet opgehaald.`);
+      else if (r.aantal === 0) waarschuwingen.push(`<strong>${esc(r.naam)}</strong> leverde geen enkele speeldatum op. Is de website veranderd?`);
+      else if (r.samen && r.samen.vorige >= 10 && r.samen.speeldata + (r.samen.dubbel || 0) < r.samen.vorige / 2) waarschuwingen.push(`<strong>${esc(r.naam)}</strong> leverde ${r.samen.speeldata} speeldata, de vorige keer ${r.samen.vorige}. Is de website veranderd?`);
+    }
+    if (rapport.controleren) waarschuwingen.push(`${plural(rapport.controleren, "geval staat", "gevallen staan")} in data/te-controleren.json.`);
+
+    const g = rapport.geschiedenis || [], gisteren = g.length > 1 ? g[g.length - 2] : null;
+    const verschil = (k) => { if (!gisteren) return ""; const d = rapport.totaal[k] - gisteren[k]; return d ? ` <span class="verschil">(${d > 0 ? "+" : ""}${d})</span>` : ""; };
+    const tegel = (k, label) => `<div><strong>${rapport.totaal?.[k] ?? "–"}</strong>${verschil(k)}<span>${label}</span></div>`;
+    const theaterLink = (id, naam) => (db.gigsForTheater(id).length ? `<a href="/theaters/${id}/">${esc(naam)}</a>` : esc(naam));
+    const artiestLink = (id, naam) => (db.gigsForArtist(id).length ? `<a href="/artiesten/${id}/">${esc(naam)}</a>` : esc(naam));
+    const site = (w) => (w ? `<a href="${esc(w)}" rel="noopener nofollow">${esc(w.replace(/^https?:\/\/(www\.)?/, ""))}</a>` : `<span class="mis">geen</span>`);
+    const nieuw = rapport.nieuw || {};
+    const volgorde = (r) => (!r.gelukt ? 0 : r.aantal === 0 ? 1 : 2);
+    const body = `<section class="block wrap controle" aria-labelledby="t">
+      <div class="block-head"><h1 id="t">Controle</h1><p>Hoe het ophalen ging en wat er nieuw is. Laatst samengevoegd: ${datumTekst(rapport.datum)}. Deze pagina staat niet in het menu en niet in zoekmachines.</p></div>
+      ${waarschuwingen.length ? `<div class="let-op"><h2>Let op</h2><ul>${waarschuwingen.map((w) => `<li>${w}</li>`).join("")}</ul></div>` : `<p class="alles-goed">Alles in orde: alle bronnen zijn gelukt.</p>`}
+      <div class="tegels">${tegel("komend", "komende speeldata")}${tegel("artiesten", "artiesten")}${tegel("zalen", "zalen")}${tegel("plaatsen", "plaatsen")}${tegel("voorstellingen", "voorstellingen")}</div>
+
+      <h2 class="sub-head">Nieuw op ${datumTekst(rapport.datum)}</h2>
+      <div class="nieuw-kolommen">
+        <div><h3>Artiesten (${(nieuw.artiesten || []).length})</h3>${(nieuw.artiesten || []).length ? `<ul>${nieuw.artiesten.map((a) => `<li>${artiestLink(a.id, a.naam)}</li>`).join("")}</ul>` : "<p>Geen.</p>"}</div>
+        <div><h3>Zalen (${(nieuw.zalen || []).length})</h3>${(nieuw.zalen || []).length ? `<ul>${nieuw.zalen.map((t) => `<li>${theaterLink(t.id, t.naam)}, ${esc(t.plaats)}${t.land === "BE" ? " (België)" : ""}</li>`).join("")}</ul>` : "<p>Geen.</p>"}</div>
+        <div><h3>Voorstellingen (${(nieuw.voorstellingen || []).length})</h3>${(nieuw.voorstellingen || []).length ? `<ul>${nieuw.voorstellingen.map((v) => `<li>${esc(v.titel)} <span class="mis">${esc(v.artiesten.map((a) => A.get(a)?.naam).filter(Boolean).join(", "))}</span></li>`).join("")}</ul>` : "<p>Geen.</p>"}</div>
+      </div>
+
+      <h2 class="sub-head">Bronnen</h2>
+      <div class="tabel"><table>
+        <thead><tr><th>Bron</th><th>Status</th><th>Opgehaald</th><th>Speeldata</th><th>Vorige keer</th><th>Duur</th></tr></thead>
+        <tbody>${regels.sort((a, b) => volgorde(a) - volgorde(b) || a.naam.localeCompare(b.naam, "nl")).map((r) => `<tr class="${!r.gelukt ? "fout" : r.aantal === 0 ? "waarschuwing" : ""}">
+          <td>${esc(r.naam)}</td><td>${r.gelukt ? "gelukt" : "mislukt"}</td><td>${r.datum ? fmt.dayMonth(r.datum) : "–"}</td>
+          <td>${r.samen ? r.samen.speeldata + (r.samen.dubbel ? ` <span class="mis">+${r.samen.dubbel} al bekend</span>` : "") : r.aantal ?? "–"}</td><td>${r.samen?.vorige ?? "–"}</td><td>${r.seconden != null ? `${Math.round(r.seconden / 60) ? `${Math.round(r.seconden / 60)} min` : `${r.seconden} s`}` : "–"}</td>
+        </tr>`).join("")}</tbody>
+      </table></div>
+
+      <h2 class="sub-head">Zalen die alleen uit speellijsten komen (${alleenSpeellijst.length})</h2>
+      <p>Deze zalen kent de agenda alleen van de speellijsten van artiesten. Loop ze af en toe na op dubbelen, een verkeerde plaats of een verkeerd land, en zet het recht in <code>data/zaal-aliassen.json</code> (zie README).</p>
+      <div class="tabel"><table>
+        <thead><tr><th>Plaats</th><th>Zaal</th><th>Land</th><th>Website</th><th>Komend</th></tr></thead>
+        <tbody>${alleenSpeellijst.map((t) => `<tr><td>${esc(t.plaats)}</td><td>${theaterLink(t.id, t.naam)}<br><code>${esc(t.id)}</code></td><td>${t.land}</td><td>${site(t.website)}</td><td>${db.gigsForTheater(t.id).length}</td></tr>`).join("")}</tbody>
+      </table></div>
+
+      <h2 class="sub-head">Verloop</h2>
+      <div class="tabel"><table>
+        <thead><tr><th>Datum</th><th>Komende speeldata</th><th>Artiesten</th><th>Zalen</th><th>Plaatsen</th></tr></thead>
+        <tbody>${[...g].reverse().slice(0, 30).map((x) => `<tr><td>${fmt.dayMonth(x.datum)}</td><td>${x.komend}</td><td>${x.artiesten}</td><td>${x.zalen}</td><td>${x.plaatsen}</td></tr>`).join("")}</tbody>
+      </table></div>
+    </section>`;
+    return layout({ title: "Controle", description: "Controle van de agenda.", path: "/controle/", body, noindex: true });
+  }
+
   return {
+    controlePagina,
     home, agendaIndex, agendaMaand, plaatsIndex, plaatsPagina, artistIndex, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
   };

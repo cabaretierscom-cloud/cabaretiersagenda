@@ -1,6 +1,6 @@
 // Bouwt de site naar dist/: `npm run build`.
 // Alleen speeldata vanaf vandaag komen op de site; oudere blijven in data/ als archief.
-import { mkdirSync, rmSync, writeFileSync, cpSync, readFileSync } from "node:fs";
+import { mkdirSync, rmSync, writeFileSync, cpSync, readFileSync, existsSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadData } from "./src/data.mjs";
@@ -67,6 +67,16 @@ write("/festivals/", t.festivalIndex());
 for (const f of db.festivals.values()) write(`/festivals/${f.id}/`, t.festivalPagina(f));
 write("/over/", t.about());
 write("/404.html", t.notFound());
+// Controlepagina (niet in het menu en niet in de sitemap): uit data/rapport.json en data/ophaal-log.json.
+{
+  const lees = (f) => (existsSync(join(root, "data", f)) ? JSON.parse(readFileSync(join(root, "data", f), "utf8")) : {});
+  const bronDir = join(root, "data", "bronnen");
+  const vanTheaterbron = new Set(readdirSync(bronDir).filter((f) => f.endsWith(".json")).flatMap((f) => (JSON.parse(readFileSync(join(bronDir, f), "utf8")).theaters || []).map((th) => th.id)));
+  const alleenSpeellijst = [...db.theaters.values()].filter((th) => !vanTheaterbron.has(th.id))
+    .sort((a, b) => a.plaats.localeCompare(b.plaats, "nl") || a.naam.localeCompare(b.naam, "nl"));
+  write("/controle/", t.controlePagina({ rapport: lees("rapport.json"), log: lees("ophaal-log.json"), alleenSpeellijst }));
+  pages.pop(); // niet in de sitemap
+}
 
 writeFileSync(join(out, "logo.svg"), LOGO_SVG);
 if (VOORBEELD) {
@@ -94,6 +104,6 @@ writeFileSync(join(out, "sitemap.xml"),
   const ht = join(out, ".htaccess");
   writeFileSync(ht, readFileSync(ht, "utf8") + `\n# Oude adressen (gemaakt door build.mjs, niet met de hand aanpassen)\n<IfModule mod_alias.c>\n${regels.join("\n")}\n</IfModule>\n`);
 }
-writeFileSync(join(out, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE.url}/sitemap.xml\n`);
+writeFileSync(join(out, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /controle/\nSitemap: ${SITE.url}/sitemap.xml\n`);
 
 console.log(`Gebouwd op ${today}: ${pages.length} pagina's, ${db.upcoming.length} aankomende speeldata.`);

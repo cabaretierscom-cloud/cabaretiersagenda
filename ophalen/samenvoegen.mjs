@@ -23,6 +23,8 @@ const artiesten = read("artiesten.json");
 const theaters = read("theaters.json");
 const voorstellingen = read("voorstellingen.json");
 let speeldata = read("speeldata.json");
+// Wat er al was, om op de controlepagina te tonen wat er nieuw is.
+const eerder = { artiesten: new Set(artiesten.map((a) => a.id)), theaters: new Set(theaters.map((t) => t.id)), voorstellingen: new Set(voorstellingen.map((v) => v.id)) };
 const controleren = [];
 // Bekende andere schrijfwijzen: "Ayoub" -> ["Ayoub Kharkhach"], "Najib & Roué" -> twee artiesten.
 const aliassen = existsSync(join(dataDir, "aliassen.json")) ? read("aliassen.json") : {};
@@ -227,7 +229,7 @@ function opgeschoondeArtiesten(namen) {
 
 // ---------- Samenvoegen per bron ----------
 
-const stats = [];
+const stats = [], bronStats = [];
 // Recensies per voorstelling uit alle bronnen: voorstelling-id -> Map(bron|medium -> recensie).
 const recensieKandidaten = new Map();
 // Citaten die een theater expliciet bij een andere voorstelling zet ("NRC over Team Solo"):
@@ -329,6 +331,7 @@ for (const f of bronFiles) {
     nieuw++;
     if (!v.artiesten.length && !r.titel) controleren.push({ bron: bestand.bron, reden: "voorstelling zonder artiest en titel", record: r });
   }
+  bronStats.push({ bron: bestand.bron, naam: bestand.naam, opgehaald: bestand.opgehaald, speeldata: nieuw, vorige: vervangen, dubbel });
   stats.push(`${bestand.naam}: ${nieuw} speeldata (${vervangen} vorige vervangen${handmatigVervangen ? `, ${handmatigVervangen} handmatige vervangen` : ""}${dubbel ? `, ${dubbel} al bekend via het theater` : ""})`);
 }
 
@@ -459,6 +462,26 @@ write("theaters.json", theaters);
 write("voorstellingen.json", voorstellingen);
 write("speeldata.json", speeldata);
 write("te-controleren.json", controleren);
+
+// ---------- Rapport voor de controlepagina (/controle/) ----------
+// Per dag: wat er nieuw is. Meer keren samenvoegen op één dag telt op.
+{
+  const vandaagNL = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" });
+  const vorig = existsSync(join(dataDir, "rapport.json")) ? read("rapport.json") : {};
+  const zelfdeDag = vorig.datum === vandaagNL;
+  const plus = (oud, nieuw) => [...new Map([...(zelfdeDag ? oud || [] : []), ...nieuw].map((x) => [x.id, x])).values()];
+  const nieuwe = {
+    artiesten: plus(vorig.nieuw?.artiesten, artiesten.filter((a) => !eerder.artiesten.has(a.id)).map((a) => ({ id: a.id, naam: a.naam }))),
+    zalen: plus(vorig.nieuw?.zalen, theaters.filter((t) => !eerder.theaters.has(t.id)).map((t) => ({ id: t.id, naam: t.naam, plaats: t.plaats, land: t.land, website: t.website || null }))),
+    voorstellingen: plus(vorig.nieuw?.voorstellingen, voorstellingen.filter((v) => !eerder.voorstellingen.has(v.id)).map((v) => ({ id: v.id, titel: v.titel, artiesten: v.artiesten }))),
+  };
+  // Blijven bestaan: zijn ze na het opruimen nog in de database?
+  const nog = { artiesten: new Set(artiesten.map((a) => a.id)), zalen: new Set(theaters.map((t) => t.id)), voorstellingen: new Set(voorstellingen.map((v) => v.id)) };
+  for (const k of Object.keys(nieuwe)) nieuwe[k] = nieuwe[k].filter((x) => nog[k].has(x.id));
+  const totaal = { speeldata: speeldata.length, komend: speeldata.filter((s) => s.datum >= vandaagNL).length, artiesten: artiesten.length, zalen: theaters.length, plaatsen: new Set(theaters.map((t) => t.plaats)).size, voorstellingen: voorstellingen.length };
+  const geschiedenis = [...(vorig.geschiedenis || []).filter((g) => g.datum !== vandaagNL), { datum: vandaagNL, ...totaal }].slice(-60);
+  write("rapport.json", { datum: vandaagNL, totaal, bronnen: bronStats, nieuw: nieuwe, controleren: controleren.length, geschiedenis });
+}
 
 for (const s of stats) console.log(s);
 if (vervang.size || naarVoorstelling.size || verwijderd.artiesten || verwijderd.voorstellingen) {
