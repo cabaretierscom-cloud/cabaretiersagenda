@@ -43,7 +43,7 @@ export function netteNaam(s) {
 }
 
 // Herkent ons genre uit trefwoorden (genre-labels van de bron, titel, omschrijving).
-// Geeft null als het geen cabaret of comedy is.
+// Geeft null als het geen cabaret, comedy of komisch theater is.
 const REGELS = [
   ["oudejaarsconference", /oudejaars|eindejaars/],
   ["open-mic", /open[ -]?mic/],
@@ -52,8 +52,12 @@ const REGELS = [
   // Het label "Cabaret/Kleinkunst" (o.a. De Kampanje) is cabaret.
   ["cabaret", /cabaret\s*[/&]\s*kleinkunst/],
   ["kleinkunst", /kleinkunst/],
-  // "Cabaret & comedy" is cabaret; alleen "comedy" zonder cabaret is stand-up.
+  // Toneel met humor ("Toneel | Komedie", "Toneel, humor") is theaterkomedie; gewoon toneel niet.
+  ["theaterkomedie", /toneel.*\b(humor|komedie|comedy|blijspel|klucht)|\b(humor|komedie|comedy|blijspel|klucht).*toneel/],
+  // "Cabaret & comedy" en "Cabaret & komedie" zijn cabaret; alleen "comedy" zonder cabaret is stand-up.
   ["cabaret", /cabaret|humor/],
+  // Komedie, blijspel en klucht. "De Kleine Komedie" is een zaalnaam, geen genre.
+  ["theaterkomedie", /(?<!kleine )komedie|blijspel|klucht/],
   ["stand-up", /comedy/],
 ];
 export function herkenGenre(...teksten) {
