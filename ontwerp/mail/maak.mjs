@@ -1,6 +1,5 @@
-// Maakt de promotiemails in ontwerp/mail/ (HTML met inline opmaak, werkt in Gmail, Outlook en Apple Mail)
+// Maakt de promotiemail in ontwerp/mail/ (HTML met inline opmaak, werkt in Gmail, Outlook en Apple Mail)
 // plus een platte-tekstversie. Gebruik: node ontwerp/mail/maak.mjs
-// Teksten tussen [vierkante haken] vul je per ontvanger in.
 import { writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -11,33 +10,19 @@ const INK = "#121212", ORANJE = "#FF6A13", ROZE = "#FF4FA3", GEEL = "#FFD23F", G
 const KOP = "'Arial Black', 'Helvetica Neue', Arial, sans-serif";
 const TEKST = "Arial, 'Helvetica Neue', Helvetica, sans-serif";
 
-const VERSIES = {
-  artiest: {
-    onderwerp: "Mogen we jouw voorstelling uitlichten op Cabaretiers.com?",
-    voorbeeld: "Deel je foto's, trailer en voorstellingstekst, dan zetten wij ze gratis op de site en onze kanalen.",
-    aanhef: "Hoi [naam],",
-    intro: [
-      "Ik ben [je naam] van <b>Cabaretiers.com</b>, de theateragenda voor cabaret en comedy in Nederland en België. Jouw voorstelling <b>[titel]</b> staat al bij ons in de agenda, met alle speeldata en een link naar de kaartverkoop van het theater.",
-      "We willen je voorstelling graag nog beter laten zien. Daarom een vraag: heb je promotiemateriaal dat wij mogen gebruiken op Cabaretiers.com en op onze sociale kanalen?",
-    ],
-    pagina: "https://www.cabaretiers.com/artiesten/[artiest-id]/",
-    paginaTekst: "Bekijk je pagina",
-    slot: "Stuur het gerust door naar je impresariaat als zij dit regelen.",
-    waarom: "jouw voorstelling in onze agenda staat",
-  },
-  impresariaat: {
-    onderwerp: "Promotiemateriaal van jullie artiesten op Cabaretiers.com",
-    voorbeeld: "Deel foto's, trailers en voorstellingsteksten, dan lichten wij jullie artiesten gratis uit op de site en onze kanalen.",
-    aanhef: "Beste [naam],",
-    intro: [
-      "Ik ben [je naam] van <b>Cabaretiers.com</b>, de theateragenda voor cabaret en comedy in Nederland en België. Jullie artiesten staan al bij ons in de agenda, onder wie <b>[artiest 1]</b>, <b>[artiest 2]</b> en <b>[artiest 3]</b>, met alle speeldata en een link naar de kaartverkoop van het theater.",
-      "We willen hun voorstellingen graag nog beter laten zien. Daarom een vraag: hebben jullie promotiemateriaal dat wij mogen gebruiken op Cabaretiers.com en op onze sociale kanalen?",
-    ],
-    pagina: "https://www.cabaretiers.com/artiesten/",
-    paginaTekst: "Bekijk de agenda",
-    slot: "Een map per artiest of een link naar jullie perspagina is voor ons perfect.",
-    waarom: "jullie artiesten in onze agenda staan",
-  },
+// Eén algemene mail voor artiesten en impresariaten, zonder velden om per ontvanger in te vullen.
+const MAIL = {
+  onderwerp: "Jouw voorstellingen extra in de spotlight op Cabaretiers.com",
+  voorbeeld: "Deel foto's, trailers en voorstellingsteksten, dan zetten wij ze gratis op de site en onze kanalen.",
+  aanhef: "Hallo,",
+  intro: [
+    "Wij zijn <b>Cabaretiers.com</b>, de theateragenda voor cabaret en comedy in Nederland en België. Op onze site staan de voorstellingen van honderden cabaretiers en comedians, met alle speeldata en een link naar de kaartverkoop van het theater.",
+    "We willen die voorstellingen graag nog beter laten zien. Daarom een vraag aan artiesten en impresariaten: heb je promotiemateriaal dat wij mogen gebruiken op Cabaretiers.com en op onze sociale kanalen?",
+  ],
+  pagina: "https://www.cabaretiers.com/artiesten/",
+  paginaTekst: "Bekijk de agenda",
+  slot: "Werk je voor meerdere artiesten? Een map per artiest of een link naar je perspagina is voor ons perfect.",
+  waarom: "je als artiest of impresariaat cabaret of comedy maakt",
 };
 
 const MATERIAAL = [
@@ -48,7 +33,7 @@ const MATERIAAL = [
 ];
 
 const WAT_WIJ_DOEN = [
-  "Je foto en tekst op de artiestpagina en de voorstellingspagina",
+  "Foto's en tekst op de artiestpagina en de voorstellingspagina",
   "Posts en stories op Instagram, Facebook en TikTok, met tag en vermelding van de fotograaf",
   "Aandacht rond premières, try-outs en extra voorstellingen",
   "Altijd met een link naar de kaartverkoop van het theater",
@@ -123,7 +108,7 @@ function html(v) {
 </td></tr>
 
 <tr><td style="padding:0 40px 36px;font-family:${TEKST};font-size:16px;line-height:1.6;color:${INK};">
-  <p style="margin:0;">Alvast bedankt!<br><br>Hartelijke groet,<br><b>[je naam]</b><br>Cabaretiers.com<br><a href="mailto:${SITE.email}" style="color:${INK};">${SITE.email}</a></p>
+  <p style="margin:0;">Alvast bedankt!<br><br>Hartelijke groet,<br><b>Het team van Cabaretiers.com</b><br><a href="mailto:${SITE.email}" style="color:${INK};">${SITE.email}</a></p>
 </td></tr>
 
 <tr><td style="background:${INK};padding:24px 40px;font-family:${TEKST};font-size:14px;line-height:1.6;color:#FFFFFF;">
@@ -150,14 +135,12 @@ function tekst(v) {
     "Dat is gratis: we verkopen geen kaarten en vragen niets terug. Je houdt zelf alle rechten; wij gebruiken het materiaal alleen om je voorstelling onder de aandacht te brengen en halen het weg als je dat vraagt.", "",
     `Delen gaat het makkelijkst door op deze mail te antwoorden met de bestanden of een link (WeTransfer, Dropbox, Google Drive of je perspagina). ${v.slot}`, "",
     `${v.paginaTekst}: ${v.pagina}`, "",
-    "Alvast bedankt!", "", "Hartelijke groet,", "[je naam]", "Cabaretiers.com", SITE.email, "",
+    "Alvast bedankt!", "", "Hartelijke groet,", "Het team van Cabaretiers.com", SITE.email, "",
     "--", `www.cabaretiers.com · ${SITE.social.map((s) => `${s.naam}: ${s.url}`).join(" · ")}`,
     'Liever geen mail meer van ons? Antwoord met "afmelden", dan halen we je adres meteen uit onze lijst.', "",
   ].join("\n");
 }
 
-for (const [naam, v] of Object.entries(VERSIES)) {
-  writeFileSync(join(dir, `mail-${naam}.html`), html(v));
-  writeFileSync(join(dir, `mail-${naam}.txt`), tekst(v));
-}
-console.log("Mails gemaakt in ontwerp/mail/.");
+writeFileSync(join(dir, "mail.html"), html(MAIL));
+writeFileSync(join(dir, "mail.txt"), tekst(MAIL));
+console.log("Mail gemaakt in ontwerp/mail/.");
