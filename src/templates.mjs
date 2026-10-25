@@ -173,7 +173,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   </div>
 </footer>${noindex ? "" : `
 <div class="cookies" id="cookies" role="region" aria-label="Cookiemelding" hidden>
-  <p>Mogen we met Google Analytics meten hoe de site wordt gebruikt? Dat helpt ons de agenda beter te maken en gebruikt cookies. <a href="/privacy/">Meer over privacy</a></p>
+  <p>Mogen we met cookies meten hoe de site wordt gebruikt? Dat helpt ons de agenda beter te maken. <a href="/privacy/">Privacyverklaring</a>.</p>
   <div class="cookies-knoppen"><button type="button" data-keuze="nee">Liever niet</button><button type="button" data-keuze="ja">Akkoord</button></div>
 </div>
 <script src="/cookies.js?v=${VERSIE["cookies.js"]}" data-ga="${SITE.analytics}" defer></script>`}
