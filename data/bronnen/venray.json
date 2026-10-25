@@ -1,7 +1,7 @@
 {
   "bron": "venray",
   "naam": "Schouwburg Venray",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "schouwburg-venray",
@@ -337,6 +337,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburgvenray.nl/programma/14726/cameretten"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Huisgenoten"
+      ],
+      "titel": "De nieuwe romantische comedy",
+      "genre": "theaterkomedie",
+      "datum": "2027-04-21",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14727/huisgenoten"
     },
     {
       "theater": "schouwburg-venray",

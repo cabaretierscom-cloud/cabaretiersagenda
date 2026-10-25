@@ -1,7 +1,7 @@
 {
   "bron": "nijmegen",
   "naam": "Stadsschouwburg & De Vereeniging Nijmegen",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "stadsschouwburg-nijmegen",
@@ -21,19 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "stadsschouwburg-nijmegen",
-      "artiesten": [
-        "Sara Kroos"
-      ],
-      "titel": "Prikkelarme kermis",
-      "genre": "cabaret",
-      "datum": "2026-10-24",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/sara-kroos-ds8q"
-    },
     {
       "theater": "stadsschouwburg-nijmegen",
       "artiesten": [
@@ -199,7 +186,7 @@
       "genre": "cabaret",
       "datum": "2027-02-10",
       "tijd": "14:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/de-musical-zonder-billen-4-l6xs"
     },
@@ -404,7 +391,7 @@
         "Lift"
       ],
       "titel": "komedie met Jelka van Houten & Sanne Wallis de Vries",
-      "genre": "cabaret",
+      "genre": "theaterkomedie",
       "datum": "2027-06-15",
       "tijd": "20:15",
       "status": "gepland",
@@ -413,13 +400,6 @@
     }
   ],
   "recensies": {
-    "https://www.stadsschouwburgendevereeniging.nl/programma/sara-kroos-ds8q": [
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Sara Kroos kan als geen ander licht maken wat zwaar is."
-      }
-    ],
     "https://www.stadsschouwburgendevereeniging.nl/programma/patrick-laureij-7p4w": [
       {
         "medium": "NRC",
@@ -436,14 +416,14 @@
       {
         "medium": "NRC",
         "sterren": 4,
-        "citaat": "In zijn cabaretdebuut &lsquo;Striptease Van De Dood&rsquo; schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal. Doeltreffend toont hij dat de realiteit leuker fantaseren een verdedigingsmechanisme is met voor- én nadelen."
+        "citaat": "In zijn cabaretdebuut ‘Striptease Van De Dood’ schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal. Doeltreffend toont hij dat de realiteit leuker fantaseren een verdedigingsmechanisme is met voor- én nadelen."
       }
     ],
     "https://www.stadsschouwburgendevereeniging.nl/programma/yentl-de-boer-5j23": [
       {
         "medium": "Scènes",
         "sterren": 5,
-        "citaat": "Magisch duo op de kleinkunst-Olympus&rsquo; (…) barstensvol hoogtepunten"
+        "citaat": "Magisch duo op de kleinkunst-Olympus’ (…) barstensvol hoogtepunten"
       },
       {
         "medium": "NRC",
@@ -453,7 +433,7 @@
       {
         "medium": "Trouw",
         "sterren": 4,
-        "citaat": "&lsquo;…op de toppen van hun kunnen"
+        "citaat": "…op de toppen van hun kunnen"
       }
     ],
     "https://www.stadsschouwburgendevereeniging.nl/programma/merijn-scholten-92fp": [
@@ -496,12 +476,12 @@
       {
         "medium": "NRC",
         "sterren": 4,
-        "citaat": "Bij Micha Wertheim is alles anders geworden: de werkelijkheid blijkt veel gekker dan theater &oacute;&oacute;it kan zijn."
+        "citaat": "Bij Micha Wertheim is alles anders geworden: de werkelijkheid blijkt veel gekker dan theater óóit kan zijn."
       },
       {
         "medium": "de Volkskrant",
         "sterren": 4,
-        "citaat": "Nergens anders&rsquo; van Micha Wertheim zit zo ingenieus in elkaar dat je alles wilt begrijpen."
+        "citaat": "Nergens anders’ van Micha Wertheim zit zo ingenieus in elkaar dat je alles wilt begrijpen."
       }
     ],
     "https://www.stadsschouwburgendevereeniging.nl/programma/lisa-ostermann-reprise-z9pf": [

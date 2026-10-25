@@ -1,7 +1,7 @@
 {
   "bron": "plt",
   "naam": "PLT (Parkstad Limburg Theaters)",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "theater-heerlen",
@@ -29,6 +29,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Jade Mintjens"
+      ],
+      "titel": "Bedankt om te komen",
+      "genre": "kleinkunst",
+      "datum": "2026-12-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jade-mintjens-be-bedankt-om-te-komen/03-12-2026-20-30"
+    },
     {
       "theater": "theater-heerlen",
       "artiesten": [
@@ -266,6 +279,32 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "kleinkunst",
+      "datum": "2027-04-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jan-beuving-dekpunt/28-04-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Ricky Koole"
+      ],
+      "titel": "Rare Leeftijd",
+      "genre": "kleinkunst",
+      "datum": "2026-10-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/ricky-koole-rare-leeftijd/30-10-2026-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
         "Firma Lampo"
       ],
       "titel": "Doeve van Stonehenge",
@@ -375,6 +414,32 @@
       "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.plt.nl/programma/roel-en-jos-maalderink/19-11-2026-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Jim de Groot en Sebas Wolfensberger"
+      ],
+      "titel": "CabaRock De Liefde!",
+      "genre": "kleinkunst",
+      "datum": "2026-11-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/cabarock-de-liefde/26-11-2026-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "kleinkunst",
+      "datum": "2026-11-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/kommil-foo-be-babel/28-11-2026-20-00"
     },
     {
       "theater": "theater-kerkrade",
@@ -557,6 +622,19 @@
     {
       "theater": "theater-sittard",
       "artiesten": [
+        "Juliet"
+      ],
+      "titel": "Ik beloof je eeuwige twijfel",
+      "genre": "kleinkunst",
+      "datum": "2027-05-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/juliet-ik-beloof-je-eeuwige-twijfel/13-05-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
         "De Cabaret Club"
       ],
       "titel": "Vier korte cabaretvoorstellingen",
@@ -659,6 +737,19 @@
       "bron": "https://www.plt.nl/programma/medammecour-on-tour-2027/25-01-2027-20-00"
     },
     {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Selma Visscher"
+      ],
+      "titel": "Trekvogel",
+      "genre": "kleinkunst",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/selma-visscher-trekvogel/14-01-2027-20-30"
+    },
+    {
       "theater": "theater-sittard",
       "artiesten": [
         "Buğra Gedik"
@@ -737,6 +828,19 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
+        "Silence of the Dogs"
+      ],
+      "titel": "Het Zuidelijk Toneel",
+      "genre": "theaterkomedie",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/silence-of-the-dogs-het-zuidelijk-toneel/29-01-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
         "De Moppenkoning"
       ],
       "titel": "Sven De Ridder, Fokke van der Meulen & een verrassende gast (BE)",
@@ -798,6 +902,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/lebbis-satan-is-moe/11-02-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Joost Spijkers"
+      ],
+      "titel": "Ziel & zalig",
+      "genre": "kleinkunst",
+      "datum": "2027-02-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/joost-spijkers-ziel-zalig/17-02-2027-20-30"
     },
     {
       "theater": "theater-sittard",
@@ -967,6 +1084,19 @@
       "bron": "https://www.plt.nl/programma/tis-hier-geen-hotel-3/06-03-2027-20-00"
     },
     {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Pretpakhuis"
+      ],
+      "titel": "Boeing Boeing",
+      "genre": "theaterkomedie",
+      "datum": "2027-03-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/boeing-boeing-pretpakhuis/06-03-2027-20-00"
+    },
+    {
       "theater": "theater-heerlen",
       "artiesten": [
         "Wina Ricardo"
@@ -978,6 +1108,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/wina-ricardo-winas-wereld/11-03-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Niki Jacobs"
+      ],
+      "titel": "Ja!",
+      "genre": "kleinkunst",
+      "datum": "2027-03-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/niki-jacobs-ja/11-03-2027-20-30"
     },
     {
       "theater": "theater-sittard",
@@ -1060,15 +1203,28 @@
     {
       "theater": "theater-sittard",
       "artiesten": [
-        "Eigenlijk"
+        "Viggo Waas, Eddie B. Wahr & Kees van der Vooren"
       ],
-      "titel": "Viggo Waas, Eddie B. Wahr & Kees van der Vooren",
+      "titel": "Eigenlijk",
       "genre": "cabaret",
       "datum": "2027-04-02",
       "tijd": "20:30",
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.plt.nl/programma/viggo-waas-eddie-b.-wahr-kees-van-der-vooren-eigenlijk-try-out/02-04-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "De Theatertroep"
+      ],
+      "titel": "Vier Crematies en een Scheiding",
+      "genre": "theaterkomedie",
+      "datum": "2027-04-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/vier-crematies-en-een-scheiding-de-theatertroep/07-04-2027-20-30"
     },
     {
       "theater": "theater-sittard",
@@ -1095,6 +1251,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/christian-van-eijkelenburg-small-talk/08-04-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "kleinkunst",
+      "datum": "2027-04-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/valentina-tóth-revue-revanche/09-04-2027-20-30"
     },
     {
       "theater": "theater-sittard",
@@ -1199,6 +1368,19 @@
       "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.plt.nl/programma/steven-brunswijk-navigatie-is-stuk-reprise/16-04-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Sem Konijn"
+      ],
+      "titel": "Populisme de Musical",
+      "genre": "kleinkunst",
+      "datum": "2027-04-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/sem-konijn-populisme-de-musical/17-04-2027-20-30"
     },
     {
       "theater": "theater-sittard",
@@ -1433,6 +1615,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/johnny-trash-/27-05-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [],
+      "titel": "Huisgenoten",
+      "genre": "theaterkomedie",
+      "datum": "2027-05-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/huisgenoten-/27-05-2027-20-30"
     },
     {
       "theater": "theater-heerlen",

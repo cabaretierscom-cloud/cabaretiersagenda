@@ -1,7 +1,7 @@
 {
   "bron": "hetpark",
   "naam": "Schouwburg Het Park",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "schouwburg-het-park",
@@ -21,19 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "schouwburg-het-park",
-      "artiesten": [
-        "Fabian Franciscus"
-      ],
-      "titel": "Best Of",
-      "genre": "cabaret",
-      "datum": "2026-10-24",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://hetpark.nl/agenda/fabian-franciscus-10352607/"
-    },
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
@@ -673,9 +660,9 @@
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
-        "Eigenlijk"
+        "Viggo Waas, Eddie B. Wahr & Kees van der Vooren"
       ],
-      "titel": "Viggo Waas, Eddie B. Wahr & Kees van der Vooren",
+      "titel": "Eigenlijk",
       "genre": "cabaret",
       "datum": "2027-05-02",
       "tijd": "14:00",

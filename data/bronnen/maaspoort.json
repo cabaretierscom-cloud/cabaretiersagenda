@@ -1,7 +1,7 @@
 {
   "bron": "maaspoort",
   "naam": "Maaspoort",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "maaspoort",
@@ -211,6 +211,19 @@
     {
       "theater": "maaspoort",
       "artiesten": [
+        "Ratatatata!​​​​​​​"
+      ],
+      "titel": "Met Theo Maassen, Plien & Bianca e.a",
+      "genre": "theaterkomedie",
+      "datum": "2027-04-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/ratatatata-met-theo-maassen-plien-bianca-e.a/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
         "Ricky Risolles"
       ],
       "titel": "Niet zo indiscreet…",
@@ -272,6 +285,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.maaspoort.nl/programma/kim-karssen-kim-karssen/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Het is hier geen Hotel 3"
+      ],
+      "titel": "Met Peggy Vrijens e.a",
+      "genre": "theaterkomedie",
+      "datum": "2027-03-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/het-is-hier-geen-hotel-3-met-peggy-vrijens-e.a/"
     },
     {
       "theater": "maaspoort",
@@ -419,6 +445,19 @@
     {
       "theater": "maaspoort",
       "artiesten": [
+        "Boeing Boeing"
+      ],
+      "titel": "Met regie van Jon van Eerd",
+      "genre": "theaterkomedie",
+      "datum": "2026-12-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/boeing-boeing-met-regie-van-jon-van-eerd/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
         "Andries & Stefan | Beperkt Houdbaar"
       ],
       "titel": "De nogal hyper-bijzondere Oudejaars-improvisatie-extravaganza",
@@ -506,19 +545,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.maaspoort.nl/programma/550-in-de-lift-tim-kroezen/"
-    },
-    {
-      "theater": "maaspoort",
-      "artiesten": [
-        "Dolf Jansen"
-      ],
-      "titel": "Schaamteloos - Oudejaars2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-10-24",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.maaspoort.nl/programma/schaamteloos-oudejaars2026-dolf-jansen/"
     }
   ],
   "recensies": {

@@ -1,7 +1,7 @@
 {
   "bron": "schie",
   "naam": "Theater aan de Schie",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "theater-aan-de-schie",
@@ -51,6 +51,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theateraandeschie.nl/voorstelling/max-van-den-burg-maxikozi"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Ratatatata!"
+      ],
+      "titel": "Bianca Krijgsman, Theo Maassen, Plien van Bennekom, Rop Verheijen, Ilse Warringa & Steyn de Leeuwe",
+      "genre": "theaterkomedie",
+      "datum": "2027-03-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/ratatatata"
     },
     {
       "theater": "theater-aan-de-schie",
@@ -348,6 +361,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theateraandeschie.nl/voorstelling/cameretten-finalistentournee"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Pretpakhuis"
+      ],
+      "titel": "Boeing Boeing",
+      "genre": "theaterkomedie",
+      "datum": "2027-01-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/boeing-boeing-pretpakhuis"
     },
     {
       "theater": "theater-aan-de-schie",

@@ -124,6 +124,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "aluin-moeder-aarde",
+    "titel": "Moeder Aarde",
+    "artiesten": [
+      "aluin"
+    ],
+    "genre": "theaterkomedie"
+  },
+  {
     "id": "amhali-verveer-alles-is-comedy",
     "titel": "Alles is comedy",
     "artiesten": [
@@ -560,9 +568,10 @@
     "id": "bert-visscher-en-martin-van-waardenberg-the-sunshine-boys",
     "titel": "The Sunshine Boys",
     "artiesten": [
-      "bert-visscher-en-martin-van-waardenberg"
+      "bert-visscher",
+      "martin-van-waardenberg"
     ],
-    "genre": "cabaret"
+    "genre": "theaterkomedie"
   },
   {
     "id": "best-of-stand-up-xl-club-haug-x-luxor",
@@ -710,8 +719,14 @@
       {
         "medium": "Trouw",
         "sterren": 4,
-        "citaat": "Het lukt hem om aan zijn sterke debuut een minstens zo sterk vervolg toe te voegen",
-        "bron": "https://denieuwekolk.nl/theater/agenda/boban-braspenning"
+        "citaat": "Het lukt hem om aan zijn sterke debuut een minstens zo sterk vervolg toe te voegen. (…) In zijn sterke show fileert Boban Braspenning de superrijken, maar spaart hij ook zichzelf niet.",
+        "bron": "https://kunstlinie.nl/programma/boban-braspenning/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Razend knap verpakt Boban een persoonlijk verhaal in fiscale adviezen. (…) Een Annie M.G. Schmidtprijs-waardig liefdeslied.",
+        "bron": "https://kunstlinie.nl/programma/boban-braspenning/"
       }
     ]
   },
@@ -1261,14 +1276,14 @@
       {
         "medium": "de Volkskrant",
         "sterren": 4,
-        "citaat": "Puntje-van-je-stoelcomedy met een zeldzame eigenheid: David Linszens debuut is echt heel goed.",
-        "bron": "https://denieuwekolk.nl/theater/agenda/david-linszen"
+        "citaat": "Puntje-van-je-stoelcomedy met een zeldzame eigenheid: David Linszens debuut is echt heel goed. […] Eens in de zoveel tijd meldt zich een comedytalent dat overrompelt met zeldzame eigenheid; het vermogen om als een eenzame gek met eenzamegekkengedachten de slappe lach in verdeelde golfjes door het publiek te laten rollen, en om 100 minuten lang nieuwsgierigheid te voeden naar het volgende fundamentele verzinsel.",
+        "bron": "https://kunstlinie.nl/programma/david-linszen-2/"
       },
       {
         "medium": "NRC",
         "sterren": 4,
-        "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut. In zijn cabaretdebuut schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal",
-        "bron": "https://denieuwekolk.nl/theater/agenda/david-linszen"
+        "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut. In zijn cabaretdebuut ‘Striptease Van De Dood’ schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal. Doeltreffend toont hij dat de realiteit leuker fantaseren een verdedigingsmechanisme is met voor- én nadelen.",
+        "bron": "https://kunstlinie.nl/programma/david-linszen-2/"
       }
     ]
   },
@@ -1435,7 +1450,7 @@
     "artiesten": [
       "de-verleiders"
     ],
-    "genre": "cabaret"
+    "genre": "theaterkomedie"
   },
   {
     "id": "de-vrouwejaars-2026-theater-walhalla",
@@ -1689,7 +1704,7 @@
     "artiesten": [
       "eran-en-co"
     ],
-    "genre": "cabaret"
+    "genre": "theaterkomedie"
   },
   {
     "id": "erhan-demirci-made-in-cite",
@@ -2161,7 +2176,21 @@
     "artiesten": [
       "hanneke-drenth-en-dianne-liesker"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "De Telegraaf",
+        "sterren": null,
+        "citaat": "Vol humor, met veel vaart en leuke vondsten. (…) Een aanrader.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/tis-hier-geen-hotel-3-hanneke-drenth-dianne-liesker"
+      },
+      {
+        "medium": "Meppeler Courant",
+        "sterren": null,
+        "citaat": "Cabareteske liefdesverklaring aan pubers.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/tis-hier-geen-hotel-3-hanneke-drenth-dianne-liesker"
+      }
+    ]
   },
   {
     "id": "hans-cools-zolang-de-voorraad-strekt",
@@ -2220,14 +2249,20 @@
       {
         "medium": "de Volkskrant",
         "sterren": 4,
-        "citaat": "Henry van Loon jaagt in ‘Keanu’ iets herkenbaars uit het dagelijks leven in de richting van het absurde.",
-        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/keanu-henry-van-loon"
+        "citaat": "Als er één nu de aangewezen komiek is om honderden mensen tegelijk de slappe lach te bezorgen, dan is het Henry van Loon.",
+        "bron": "https://kunstlinie.nl/programma/henry-van-loon-3/"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Van Loon toont zich meester in het opdienen van zijn breed uitwaaierende fantasieën met uitgestreken gezicht en mild-ironische toon.",
+        "bron": "https://kunstlinie.nl/programma/henry-van-loon-3/"
       },
       {
         "medium": "Het Parool",
         "sterren": null,
         "citaat": "Er lopen in Nederland nauwelijks getalenteerdere komieken rond dan Van Loon.",
-        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/keanu-henry-van-loon"
+        "bron": "https://kunstlinie.nl/programma/henry-van-loon-3/"
       }
     ]
   },
@@ -2269,20 +2304,20 @@
     "theater": "theater-sittard"
   },
   {
+    "id": "het-zuidelijk-toneel-silence-of-the-dogs",
+    "titel": "Silence of the Dogs",
+    "artiesten": [
+      "het-zuidelijk-toneel"
+    ],
+    "genre": "theaterkomedie"
+  },
+  {
     "id": "hokjesdenker-we-zien-het-wel-even-geannuleerd",
     "titel": "We zien het wel even - GEANNULEERD",
     "artiesten": [
       "hokjesdenker"
     ],
-    "genre": "cabaret",
-    "recensies": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Wie wil er nou drie uur lang naar Zomergasten kijken? Een half uur Hokjesdenker verzadigt meer.",
-        "bron": "https://www.kampanje.nl/voorstellingen/hokjesdenker-jknt"
-      }
-    ]
+    "genre": "cabaret"
   },
   {
     "id": "hoorn-lacht-theater-het-pakhuis",
@@ -2292,12 +2327,11 @@
     "theater": "theater-het-pakhuis"
   },
   {
-    "id": "huisgenoten-de-nieuwe-romantische-comedy",
-    "titel": "De nieuwe romantische comedy",
-    "artiesten": [
-      "huisgenoten"
-    ],
-    "genre": "stand-up"
+    "id": "huisgenoten-theater-de-kampanje",
+    "titel": "Huisgenoten",
+    "artiesten": [],
+    "genre": "theaterkomedie",
+    "theater": "theater-de-kampanje"
   },
   {
     "id": "huub-smit-en-gurkan-kucuksenturk-zei-je-dat-echt",
@@ -2497,7 +2531,7 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Jawad Es Soufi laat zijn divers publiek samen lachen om alle culturele verschillen",
-        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jawad-es-soufi-tnawies/"
+        "bron": "https://kunstlinie.nl/programma/jawad-es-soufi-4/"
       }
     ]
   },
@@ -2521,9 +2555,10 @@
     "id": "jelka-van-houten-en-sanne-wallis-de-vries-lift",
     "titel": "Lift",
     "artiesten": [
-      "jelka-van-houten-en-sanne-wallis-de-vries"
+      "jelka-van-houten",
+      "sanne-wallis-de-vries"
     ],
-    "genre": "cabaret"
+    "genre": "theaterkomedie"
   },
   {
     "id": "jennifer-evenhuis-renate-reijnders-margot-ros-familiegeheimen",
@@ -2574,27 +2609,9 @@
         "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/"
       },
       {
-        "medium": "De Telegraaf",
-        "sterren": null,
-        "citaat": "Jeroens Clan mag een sensatie worden genoemd",
-        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/"
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Keihard cabaret van drie kwetsbare mannen",
-        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/"
-      },
-      {
         "medium": "NRC",
         "sterren": null,
         "citaat": "Het drietal valt op met scherpe en grappige dialogen",
-        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/"
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "De sleutel voor deze cabaretvorm is beslist niet dat het drietal grofgebekt is, zoals recensies keer op keer beweren, maar dat Tuns, Kroon en De Poorter op intelligente manier spelen met ironie",
         "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/"
       }
     ]
@@ -3217,23 +3234,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "lift",
-    "titel": "LIFT",
-    "artiesten": [
-      "sanne-wallis-de-vries",
-      "jelka-van-houten"
-    ],
-    "genre": "theaterkomedie"
-  },
-  {
-    "id": "lift-komedie-met-jelka-van-houten-en-sanne-wallis-de-vries",
-    "titel": "komedie met Jelka van Houten & Sanne Wallis de Vries",
-    "artiesten": [
-      "lift"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "lisa-loeb-fopfeminisme",
     "titel": "Fopfeminisme",
     "artiesten": [
@@ -3250,6 +3250,12 @@
     "genre": "stand-up",
     "recensies": [
       {
+        "medium": "De Trouw",
+        "sterren": 5,
+        "citaat": "Wat valt alles weer prachtig samen in de nieuwe voorstelling van Lisa Ostermann. (…) Ontzettend grappig.",
+        "bron": "https://kunstlinie.nl/programma/lisa-ostermann-4/"
+      },
+      {
         "medium": "Trouw",
         "sterren": 5,
         "citaat": "Wat valt alles weer prachtig samen in de nieuwe voorstelling van Lisa Ostermann",
@@ -3258,8 +3264,8 @@
       {
         "medium": "de Volkskrant",
         "sterren": 4,
-        "citaat": "Met De baas bevestigt Ostermann haar status als een van de spannendste en getalenteerdste cabaretiers van het land.",
-        "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/lisa-ostermann-reprise-z9pf"
+        "citaat": "Met ‘De Baas’ bevestigt Ostermann haar status als een van de spannendste en getalenteerdste cabaretiers van het land.",
+        "bron": "https://kunstlinie.nl/programma/lisa-ostermann-4/"
       },
       {
         "medium": "NRC",
@@ -3270,8 +3276,8 @@
       {
         "medium": "Het Parool",
         "sterren": null,
-        "citaat": "Met andere woorden: je wil direct haar volgende voorstelling zien.",
-        "bron": "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc"
+        "citaat": "Na het blockbustercabaret van Lisa Ostermann loop je op wolkjes de zaal uit. (…) Grappig én muzikaal. Episch én intiem. Intelligent én ordinair. (…) Met andere woorden: je wilt direct haar volgende voorstelling zien.",
+        "bron": "https://kunstlinie.nl/programma/lisa-ostermann-4/"
       },
       {
         "medium": "Theaterkrant",
@@ -3596,8 +3602,8 @@
       {
         "medium": "de Volkskrant",
         "sterren": null,
-        "citaat": "Hè Fijn is een energiek en erg grappig spervuur aan situaties die Martijn Crins niet helemaal kan overzien...een groot, specifiek talent voor het loslaten van absurde fantasieën op de alledaagse gang.",
-        "bron": "https://www.kampanje.nl/voorstellingen/martijn-crins-fjm1"
+        "citaat": "4 van 5 sterren",
+        "bron": "https://www.plt.nl/programma/martijn-crins-hé-fijn-reprise/03-11-2026-20-30"
       },
       {
         "medium": "Theaterkrant",
@@ -3709,19 +3715,19 @@
         "medium": "de Volkskrant",
         "sterren": 5,
         "citaat": "De virtuoze komiek Merijn Scholten speelt in ‘Lemming’ op de toppen van zijn kunnen.",
-        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/merijn-scholten-lemming"
+        "bron": "https://kunstlinie.nl/programma/merijn-scholten-3/"
       },
       {
         "medium": "NRC",
         "sterren": 4,
-        "citaat": "Hij creëert, grappig en ontroerend, een beter bij de tijd passend genre: sad hardcore.",
-        "bron": "https://www.maaspoort.nl/programma/lemming-merijn-scholten/"
+        "citaat": "Een flitsende voorstelling, vol leuk en expressief acteerwerk.",
+        "bron": "https://kunstlinie.nl/programma/merijn-scholten-3/"
       },
       {
         "medium": "Trouw",
         "sterren": 4,
-        "citaat": "Komiek Merijn Scholten heeft een hoop kritiek op de maatschappij, maar is vooral enorm grappig",
-        "bron": "https://www.maaspoort.nl/programma/lemming-merijn-scholten/"
+        "citaat": "Komiek Merijn Scholten heeft een hoop kritiek op de maatschappij, maar is vooral enorm grappig.",
+        "bron": "https://kunstlinie.nl/programma/merijn-scholten-3/"
       },
       {
         "medium": "Het Parool",
@@ -3764,6 +3770,12 @@
         "bron": "https://www.musisenstadstheater.nl/nl/agenda/micha-wertheim-voor-iedereen/10177"
       },
       {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Wertheim slaagt er opnieuw glansrijk in om zijn publiek te boeien.",
+        "bron": "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17"
+      },
+      {
         "medium": "Het Parool",
         "sterren": null,
         "citaat": "Zoals altijd bij Wertheim loont het de moeite om bij de les te blijven, want er komen prachtige ideeën voorbij.",
@@ -3773,12 +3785,6 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Een voorstelling waarin de recensent samen met honderden anderen in de zaal, amechtig hijgend achter de verbeelding en fantasie van de maker aanholt.",
-        "bron": "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17"
-      },
-      {
-        "medium": "Trouw",
-        "sterren": null,
-        "citaat": "Wertheim is een fenomenale fantast.",
         "bron": "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17"
       }
     ]
@@ -4369,10 +4375,9 @@
   {
     "id": "pretpakhuis-boeing-boeing",
     "titel": "Boeing Boeing",
-    "artiesten": [
-      "pretpakhuis"
-    ],
-    "genre": "stand-up"
+    "artiesten": [],
+    "genre": "theaterkomedie",
+    "theater": "maaspoort"
   },
   {
     "id": "preuteleute-v",
@@ -4851,8 +4856,8 @@
       {
         "medium": "NRC",
         "sterren": 5,
-        "citaat": "Smulders verrast met uitermate gedurfd en intelligent cabaret.",
-        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ruud-smulders-rudsichtslos/"
+        "citaat": "Kijk anders naar die vijf sterren en ga het zelf zien.",
+        "bron": "https://kunstlinie.nl/programma/ruud-smulders-2/"
       },
       {
         "medium": "Scènes",
@@ -4864,7 +4869,7 @@
         "medium": "Trouw",
         "sterren": 4,
         "citaat": "Knap, hoe comedian Ruud Smulders steeds drie stappen verder is dan zijn publiek.",
-        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ruud-smulders-rudsichtslos/"
+        "bron": "https://kunstlinie.nl/programma/ruud-smulders-2/"
       },
       {
         "medium": "de Volkskrant",
@@ -4881,8 +4886,8 @@
       {
         "medium": "Theaterkrant",
         "sterren": null,
-        "citaat": "Smulders maakt indruk met slim en ambitieus programma",
-        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ruud-smulders-rudsichtslos/"
+        "citaat": "Smulders maakt indruk met slim en ambitieus programma.",
+        "bron": "https://kunstlinie.nl/programma/ruud-smulders-2/"
       }
     ]
   },
@@ -4943,8 +4948,8 @@
       {
         "medium": "Trouw",
         "sterren": 4,
-        "citaat": "Sara Kroos kan als geen ander licht maken wat zwaar is",
-        "bron": "https://delamar.nl/voorstellingen/sara-kroos/"
+        "citaat": "De voorstelling laat zware jaren zien, maar straalt veerkracht uit. Kroos vertelt ontspannen en sterk, met optimistische liedjes.",
+        "bron": "https://www.theaterdeveste.nl/programma/prikkelarme-kermis-dj5k"
       },
       {
         "medium": "NRC",
@@ -5271,12 +5276,20 @@
     "theater": "stadsgehoorzaal-leiden"
   },
   {
+    "id": "theatertroep-fuck-pakjesavond",
+    "titel": "Fuck pakjesavond",
+    "artiesten": [
+      "theatertroep"
+    ],
+    "genre": "theaterkomedie"
+  },
+  {
     "id": "theatertroep-vier-crematies-en-een-scheiding",
     "titel": "Vier crematies en een scheiding",
     "artiesten": [
       "theatertroep"
     ],
-    "genre": "stand-up"
+    "genre": "theaterkomedie"
   },
   {
     "id": "theo-maassen-ilse-warringa-plien-bianca-ratatatata",
@@ -5284,42 +5297,9 @@
     "artiesten": [
       "theo-maassen",
       "ilse-warringa",
-      "plien",
-      "bianca"
+      "plien-en-bianca"
     ],
-    "genre": "stand-up"
-  },
-  {
-    "id": "theo-maassen-plien-bianca-ratatatata",
-    "titel": "Ratatatata!",
-    "artiesten": [
-      "theo-maassen",
-      "plien",
-      "bianca"
-    ],
-    "genre": "stand-up"
-  },
-  {
-    "id": "theo-maassen-plien-en-bianca-ilse-warringa-ratatatata",
-    "titel": "Ratatatata!",
-    "artiesten": [
-      "theo-maassen",
-      "plien-en-bianca",
-      "ilse-warringa"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "theo-plien-bianca-ilse-rop-ratatatata",
-    "titel": "Ratatatata!",
-    "artiesten": [
-      "theo",
-      "plien",
-      "bianca",
-      "ilse",
-      "rop"
-    ],
-    "genre": "stand-up"
+    "genre": "theaterkomedie"
   },
   {
     "id": "thijs-kemperink-erwin-nyhoff-vieren-een-muiterse-kerst",
@@ -5420,13 +5400,13 @@
         "medium": "NRC",
         "sterren": null,
         "citaat": "Een van Kroezens leuke talenten: snel hardop situaties overanalyseren. … blijkt een prima verteller, lekker beweeglijk en energiek en prettig intelligent.",
-        "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/tim-kroezen/"
+        "bron": "https://kunstlinie.nl/programma/tim-kroezen/"
       },
       {
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Met Tim Kroezen dient zich een nieuw natuurtalent aan",
-        "bron": "https://denieuwekolk.nl/theater/agenda/tim-kroezen"
+        "bron": "https://kunstlinie.nl/programma/tim-kroezen/"
       }
     ]
   },
@@ -5469,13 +5449,6 @@
       "tis-hier-geen-hotel-3"
     ],
     "genre": "cabaret"
-  },
-  {
-    "id": "tis-hier-geen-hotel-3-schouwburg-het-park",
-    "titel": "Tis hier geen hotel 3",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "schouwburg-het-park"
   },
   {
     "id": "tobi-kooiman-best-of-4",

@@ -1,7 +1,7 @@
 {
   "bron": "parktheater",
   "naam": "Parktheater Eindhoven",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "parktheater-eindhoven",
@@ -126,7 +126,7 @@
       "genre": "cabaret",
       "datum": "2026-12-16",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
     },
@@ -227,7 +227,7 @@
         "Eran&co"
       ],
       "titel": "Ai&ik",
-      "genre": "cabaret",
+      "genre": "theaterkomedie",
       "datum": "2026-11-05",
       "tijd": "20:30",
       "status": "gepland",
@@ -1471,7 +1471,7 @@
         "Theo Maassen, Ilse Warringa, Plien & Bianca e.a."
       ],
       "titel": "Ratatatata!",
-      "genre": "cabaret",
+      "genre": "theaterkomedie",
       "datum": "2027-04-21",
       "tijd": "20:00",
       "status": "gepland",
@@ -1484,7 +1484,7 @@
         "Theo Maassen, Ilse Warringa, Plien & Bianca e.a."
       ],
       "titel": "Ratatatata!",
-      "genre": "cabaret",
+      "genre": "theaterkomedie",
       "datum": "2027-04-22",
       "tijd": "20:00",
       "status": "gepland",
@@ -1497,7 +1497,7 @@
         "Theo Maassen, Ilse Warringa, Plien & Bianca e.a."
       ],
       "titel": "Ratatatata!",
-      "genre": "cabaret",
+      "genre": "theaterkomedie",
       "datum": "2027-04-23",
       "tijd": "20:00",
       "status": "gepland",
@@ -1536,7 +1536,7 @@
         "Thijs van de Meeberg"
       ],
       "titel": "Baby Reindeer",
-      "genre": "cabaret",
+      "genre": "theaterkomedie",
       "datum": "2027-04-23",
       "tijd": "20:30",
       "status": "gepland",

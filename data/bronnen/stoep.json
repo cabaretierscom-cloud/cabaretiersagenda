@@ -1,7 +1,7 @@
 {
   "bron": "stoep",
   "naam": "Theater de Stoep",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "theater-de-stoep",
@@ -220,6 +220,28 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterdestoep.nl/voorstelling/de-meute-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [],
+      "titel": "Ratatatata!",
+      "genre": "theaterkomedie",
+      "datum": "2027-05-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/ratatatata-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [],
+      "titel": "Ratatatata!",
+      "genre": "theaterkomedie",
+      "datum": "2027-05-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/ratatatata-2627"
     },
     {
       "theater": "theater-de-stoep",
@@ -671,6 +693,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterdestoep.nl/voorstelling/jandino-asporaat-2627"
+    },
+    {
+      "theater": "theater-de-stoep",
+      "artiesten": [
+        "Najib & Roué"
+      ],
+      "titel": "Alles is Comedy",
+      "genre": "theaterkomedie",
+      "datum": "2026-12-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/najib-en-roue-2627"
     },
     {
       "theater": "theater-de-stoep",

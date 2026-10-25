@@ -1,7 +1,7 @@
 {
   "bron": "leiden",
   "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "leidse-schouwburg",
@@ -260,7 +260,7 @@
       "genre": "cabaret",
       "datum": "2027-05-11",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/kasper-van-der-laan-ruim-try-out/"
     },
@@ -778,7 +778,7 @@
       "genre": "cabaret",
       "datum": "2027-04-02",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/merijn-scholten-lemming-reprise/"
     },
@@ -1270,6 +1270,20 @@
         "medium": "Het Parool",
         "sterren": null,
         "citaat": "Een spannende performer die met niemand in het huidige cabaretveld te vergelijken is."
+      }
+    ],
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/kommil-foo-babel/": [
+      {
+        "medium": "De Standaard,",
+        "sterren": 5,
+        "citaat": "Theater op het hoogste niveau, in een volstrekt unieke stijl. Onweerstaanbaar grappig.",
+        "over": "vorige voorstelling"
+      },
+      {
+        "medium": "NRC,",
+        "sterren": 4,
+        "citaat": "Steengoede show. Kippenvel. Constant van hoog niveau. Subtiele humor, zelfbewuste bravoure, buitengewoon ontroerend.",
+        "over": "vorige voorstelling"
       }
     ],
     "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ronald-goedemondt-mijn-lieve-achterdocht/": [

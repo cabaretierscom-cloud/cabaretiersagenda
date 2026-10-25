@@ -1,7 +1,7 @@
 {
   "bron": "parade",
   "naam": "Theater aan de Parade",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "theater-aan-de-parade",
@@ -272,6 +272,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraandeparade.nl/nl/programma/tineke-schouten-femme-vitaal-118280"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Thomas van Luyn"
+      ],
+      "titel": "Super Normaal",
+      "genre": "cabaret",
+      "datum": "2027-05-02",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/super-normaal-thomas-van-luyn"
     },
     {
       "theater": "theater-aan-de-parade",

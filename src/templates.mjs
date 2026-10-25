@@ -1460,7 +1460,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div class="block-head"><h1 id="t">Over de agenda</h1></div>
       <div class="about">
         <div class="prose">
-          <p>Cabaretiers.com verzamelt alle aankomende cabaret- en comedyvoorstellingen in Nederland en België: theatercabaret, stand-up in comedyclubs en cafés, festivals en open mics. Je ziet per avond wie waar speelt, en per artiest, plaats of zaal de volledige speellijst.</p>
+          <p>Cabaretiers.com verzamelt alle aankomende cabaret- en comedyvoorstellingen in Nederland en België: theatercabaret, stand-up in comedyclubs en cafés, festivals, open mics en komisch toneel. Je ziet per avond wie waar speelt, en per artiest, plaats of zaal de volledige speellijst.</p>
           <p>Op dit moment staan er ${tellers.speeldata.toLocaleString("nl-NL")} voorstellingen in de agenda, van ${tellers.artiesten} artiesten in ${tellers.zalen} zalen.</p>
           <p>Elke speeldatum heeft een bron. De knop <em>Tickets</em> brengt je naar die bron, de speellijst van het theater of de artiest: daar koop je kaarten en controleer je de datum. Datums waarover bronnen elkaar tegenspreken, staan gemarkeerd als <em>datum onzeker</em>.</p>
           <h2 id="aanmelden">Zelf voorstellingen aanmelden</h2>

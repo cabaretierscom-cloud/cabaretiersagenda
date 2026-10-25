@@ -1,7 +1,7 @@
 {
   "bron": "purmaryn",
   "naam": "Theater De Purmaryn",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "de-purmaryn",
@@ -38,6 +38,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/marie-koet/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Jelka van Houten en Sanne Wallis de Vries"
+      ],
+      "titel": "LIFT (try-out) (met inleiding)",
+      "genre": "theaterkomedie",
+      "datum": "2026-12-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/jelka-van-houten-en-sanne-wallis/"
     },
     {
       "theater": "de-purmaryn",
@@ -146,6 +159,19 @@
     {
       "theater": "de-purmaryn",
       "artiesten": [
+        "Boeing Boeing"
+      ],
+      "titel": "met Loiza Lamers, Rian Gerritsen, Patrick Martens en Thomas Cammaert",
+      "genre": "theaterkomedie",
+      "datum": "2027-02-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/boeing-boeing/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
         "De Cabaret Club"
       ],
       "titel": "Vier korte cabaretvoorstellingen",
@@ -168,6 +194,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/de-grote-oudejaars-kwis-2026/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "De Verleiders"
+      ],
+      "titel": "Zoek Dekking - over pensioenen en verzekeringen (try-out)",
+      "genre": "theaterkomedie",
+      "datum": "2026-11-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/de-verleiders/"
     },
     {
       "theater": "de-purmaryn",
@@ -207,6 +246,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/groenenberg-de-jong/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Huub Stapel - Het onvermijdelijke vervolg"
+      ],
+      "titel": "Mannen komen van Mars, vrouwen van Venus",
+      "genre": "theaterkomedie",
+      "datum": "2026-11-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/huub-stapel-het-onvermijdelijke-vervolg/"
     },
     {
       "theater": "de-purmaryn",
@@ -688,6 +740,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/valentina-toth/"
+    },
+    {
+      "theater": "de-purmaryn",
+      "artiesten": [
+        "Vier crematies en een scheiding"
+      ],
+      "titel": "De Theatertroep",
+      "genre": "theaterkomedie",
+      "datum": "2027-03-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/vier-crematies-en-een-scheiding/"
     }
   ],
   "recensies": {}

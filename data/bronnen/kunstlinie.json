@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -233,19 +233,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/rayen-panday-friends/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Marcel van Roosmalen"
-      ],
-      "titel": "Marcel van Roosmalen",
-      "genre": "cabaret",
-      "datum": "2026-10-24",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/marcel-van-roosmalen/"
     },
     {
       "theater": "kunstlinie",
@@ -832,5 +819,188 @@
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/david-van-rosmalen/"
     }
-  ]
+  ],
+  "recensies": {
+    "https://kunstlinie.nl/programma/boban-braspenning/": [
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Het lukt hem om aan zijn sterke debuut een minstens zo sterk vervolg toe te voegen. (…) In zijn sterke show fileert Boban Braspenning de superrijken, maar spaart hij ook zichzelf niet."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Razend knap verpakt Boban een persoonlijk verhaal in fiscale adviezen. (…) Een Annie M.G. Schmidtprijs-waardig liefdeslied."
+      }
+    ],
+    "https://kunstlinie.nl/programma/tim-kroezen/": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Met Tim Kroezen dient zich een nieuw natuurtalent aan"
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Een van Kroezens leuke talenten: snel hardop situaties overanalyseren. … blijkt een prima verteller, lekker beweeglijk en energiek en prettig intelligent."
+      }
+    ],
+    "https://kunstlinie.nl/programma/andries-tunru/": [
+      {
+        "medium": "I Love Theater",
+        "sterren": 4,
+        "citaat": "Scherp, intelligent en bijzonder grappig… Hier staat een cabaretier die volledig vertrouwt op zijn vakmanschap"
+      }
+    ],
+    "https://kunstlinie.nl/programma/valentina-toth-2/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "Wildbloei’ is een unieke performance van het megatalent Valentina Tóth"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Valentina Tóth heeft een perfect debuutprogramma afgeleverd, een frisse wind in kleinkunstland, een wervelwind."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Een overweldigend debuut van cabaretier Valentina Tóth over ‘de hysterische vrouw’."
+      }
+    ],
+    "https://kunstlinie.nl/programma/merijn-scholten-3/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "De virtuoze komiek Merijn Scholten speelt in ‘Lemming’ op de toppen van zijn kunnen."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Een flitsende voorstelling, vol leuk en expressief acteerwerk."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Komiek Merijn Scholten heeft een hoop kritiek op de maatschappij, maar is vooral enorm grappig."
+      }
+    ],
+    "https://kunstlinie.nl/programma/lisa-ostermann-4/": [
+      {
+        "medium": "De Trouw",
+        "sterren": 5,
+        "citaat": "Wat valt alles weer prachtig samen in de nieuwe voorstelling van Lisa Ostermann. (…) Ontzettend grappig."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Na het blockbustercabaret van Lisa Ostermann loop je op wolkjes de zaal uit. (…) Grappig én muzikaal. Episch én intiem. Intelligent én ordinair. (…) Met andere woorden: je wilt direct haar volgende voorstelling zien."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Met ‘De Baas’ bevestigt Ostermann haar status als een van de spannendste en getalenteerdste cabaretiers van het land."
+      }
+    ],
+    "https://kunstlinie.nl/programma/ronald-goedemondt-2/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Mijn lieve achterdocht is naast ontzettend grappig ook psychologisch interessant."
+      },
+      {
+        "medium": "Scènes",
+        "sterren": 5,
+        "citaat": "Goedemondt is een onweerstaanbare komiek."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Geen comedian in Nederland beheerst zijn stem beter dan Goedemondt."
+      }
+    ],
+    "https://kunstlinie.nl/programma/david-linszen-2/": [
+      {
+        "medium": "Trouw",
+        "sterren": 5,
+        "citaat": "Voordat David Linszen het podium betreedt, is al duidelijk dat hij een andere smaak zal gaan toevoegen aan de comedy."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Puntje-van-je-stoelcomedy met een zeldzame eigenheid: David Linszens debuut is echt heel goed. […] Eens in de zoveel tijd meldt zich een comedytalent dat overrompelt met zeldzame eigenheid; het vermogen om als een eenzame gek met eenzamegekkengedachten de slappe lach in verdeelde golfjes door het publiek te laten rollen, en om 100 minuten lang nieuwsgierigheid te voeden naar het volgende fundamentele verzinsel."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut. In zijn cabaretdebuut ‘Striptease Van De Dood’ schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal. Doeltreffend toont hij dat de realiteit leuker fantaseren een verdedigingsmechanisme is met voor- én nadelen."
+      }
+    ],
+    "https://kunstlinie.nl/programma/henry-van-loon-3/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Als er één nu de aangewezen komiek is om honderden mensen tegelijk de slappe lach te bezorgen, dan is het Henry van Loon."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Van Loon toont zich meester in het opdienen van zijn breed uitwaaierende fantasieën met uitgestreken gezicht en mild-ironische toon."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Er lopen in Nederland nauwelijks getalenteerdere komieken rond dan Van Loon."
+      }
+    ],
+    "https://kunstlinie.nl/programma/rene-van-meurs-2/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Noodzakelijk Kwaad’ barst van de absurde conflicten die steeds grappiger escaleren."
+      },
+      {
+        "medium": "Dagblad van het Noorden",
+        "sterren": 4,
+        "citaat": "Sterk verhaal met een lawine aan grappen."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Briljante auto-psychologische thriller als cabaret"
+      }
+    ],
+    "https://kunstlinie.nl/programma/ruud-smulders-2/": [
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Kijk anders naar die vijf sterren en ga het zelf zien."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Smulders maakt indruk met slim en ambitieus programma."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Knap, hoe comedian Ruud Smulders steeds drie stappen verder is dan zijn publiek."
+      }
+    ],
+    "https://kunstlinie.nl/programma/jawad-es-soufi-4/": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Jawad Es Soufi laat zijn divers publiek samen lachen om alle culturele verschillen"
+      }
+    ],
+    "https://kunstlinie.nl/programma/david-van-rosmalen/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "David van Rosmalen speelde de Leidse Schouwburg plat met een intelligente mengeling van (woord)grappen, spoken word, pianoliedjes en nederhiphop."
+      }
+    ]
+  }
 }

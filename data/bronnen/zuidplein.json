@@ -1,7 +1,7 @@
 {
   "bron": "zuidplein",
   "naam": "Theater Zuidplein",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "theater-zuidplein",
@@ -13,32 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Kijk Je Kop presents Roast KingZ"
-      ],
-      "titel": "Roast KingZ",
-      "genre": "stand-up",
-      "datum": "2026-10-24",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/roast-kingz-j4sz"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Kijk Je Kop presents Roast KingZ"
-      ],
-      "titel": "Roast KingZ",
-      "genre": "stand-up",
-      "datum": "2027-02-05",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/roast-kingz-j4sz"
-    },
     {
       "theater": "theater-zuidplein",
       "artiesten": [
@@ -419,6 +393,19 @@
     {
       "theater": "theater-zuidplein",
       "artiesten": [
+        "Kijk Je Kop presents Roast KingZ"
+      ],
+      "titel": "Roast KingZ",
+      "genre": "stand-up",
+      "datum": "2027-02-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/roast-kingz-j4sz"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
         "Glodi Lugungu"
       ],
       "titel": "In de Hemel ken ik jullie niet",
@@ -706,7 +693,7 @@
       {
         "medium": "Theaterparadijs",
         "sterren": null,
-        "citaat": "&ldquo;absolute must-see&rdquo;"
+        "citaat": "absolute must-see"
       }
     ]
   }

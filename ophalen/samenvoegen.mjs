@@ -193,6 +193,18 @@ function zorgVoorVoorstelling(r, artiestIdsVanRecord, theaterId) {
       if (dichtst[1] < Infinity) return dichtst[0].id;
     }
   }
+  // Toneel: hetzelfde stuk is één voorstelling, ook als elke zaal andere spelers noemt
+  // (Ratatatata! met Theo Maassen bij de ene zaal, met Plien en Bianca bij de andere).
+  // Een zaal die het als cabaret labelt, hoort bij hetzelfde stuk als er spelers overlappen.
+  {
+    const overlap = (v) => !v.artiesten.length || !artiestIdsVanRecord.length || v.artiesten.some((a) => artiestIdsVanRecord.includes(a));
+    const stuk = voorstellingen.find((v) => (v.genre === "theaterkomedie" || r.genre === "theaterkomedie") && zelfdeTitel(v.titel, r.titel) && overlap(v));
+    if (stuk) {
+      stuk.artiesten = [...new Set([...stuk.artiesten, ...artiestIdsVanRecord])];
+      if (stuk.artiesten.length) delete stuk.theater;
+      return stuk.id;
+    }
+  }
   const match = voorstellingen.find((v) => {
     if (!zelfdeSet(v.artiesten, artiestIdsVanRecord)) return false;
     if (!artiestIdsVanRecord.length && v.theater !== theaterId) return false;
@@ -227,7 +239,59 @@ function opgeschoondeArtiesten(namen) {
   return [...new Set(uit)];
 }
 
+// Bekende artiesten die in een stuk tekst genoemd worden ("Met Theo Maassen, Plien & Bianca e.a.").
+// Wat na "regie" of "tekst" staat, telt niet: dat zijn makers, geen spelers.
+const kaalTekst = (s) => ` ${String(s).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/&/g, " en ").replace(/[^a-z0-9]+/g, " ").trim()} `;
+function bekendeNamenIn(tekst) {
+  const t = kaalTekst(String(tekst || "").split(/\b(regie|geregisseerd|tekst|bewerking|vertaling)\b/i)[0]);
+  return artiesten.filter((a) => [a.naam, ...(a.ookBekendAls || [])].some((n) => n.length >= 6 && /\s/.test(n) && t.includes(kaalTekst(n)))).map((a) => a.naam);
+}
+
+// Toneel en komedie: vaak staat de titel van het stuk op de plek van de artiest en de rolverdeling of
+// een omschrijving als titel ("Ratatatata!" / "Met Theo Maassen, Plien & Bianca e.a."). Dan wordt het
+// stuk de titel en spelen de bekende artiesten uit de rolverdeling mee. Een gezelschap als titel
+// ("Silence of the Dogs" / "Het Zuidelijk Toneel") is omgedraaid.
+// Een hele rolverdeling als artiesten ("Bianca Krijgsman, Theo Maassen, Rop Verheijen e.a.") wordt
+// teruggebracht tot de bekende artiesten erin; acteurs die we verder niet kennen krijgen geen pagina.
+function stukOpOrde(r, ruweArtiest) {
+  // Een "artiest" die via aliassen.json wegvalt ("Lift": []), is hier waarschijnlijk de titel van het stuk.
+  if (!r.artiesten.length && ruweArtiest && bekendeNamenIn(r.titel).length) r.artiesten = [ruweArtiest];
+  const plaatsen = (titel, artiesten) => { r.titel = netteHoofdletters(titel.replace(/[\u200b-\u200d\ufeff]/g, "").trim()); r.artiesten = artiesten; };
+  if (r.artiesten.length > 1) {
+    const bekend = [...new Set(r.artiesten.flatMap((n) => isBekend(n) ? [n] : bekendeNamenIn(n)))];
+    r.artiesten = bekend.length ? bekend : bekendeNamenIn(r.artiesten.join(", "));
+    r.titel = netteHoofdletters(r.titel);
+    return;
+  }
+  if (r.artiesten.length !== 1) return void (r.titel = netteHoofdletters(r.titel));
+  const [a] = r.artiesten;
+  // Bekende namen in de "titel" gaan voor: dan is de "artiest" het stuk ("Lift" / "Komedie met Jelka van Houten ...").
+  const inTitel = bekendeNamenIn(r.titel).filter((n) => slug(n) !== slug(a));
+  if (inTitel.length && !bekendeNamenIn(a).length) return plaatsen(a, inTitel);
+  // Een omschrijving of rolverdeling als titel ("De nieuwe romantische comedy", "Met regie van ...").
+  if (/^(met|regie|komedie|een|de nieuwe)\b|\bregie\b|,.*,|\be\.\s?a\.?$/i.test(r.titel)) return plaatsen(a, []);
+  if (isBekend(a)) return void (r.titel = netteHoofdletters(r.titel));
+  const inArtiest = bekendeNamenIn(a);
+  if (inArtiest.length) return plaatsen(r.titel, inArtiest);
+  if (/toneel|theater|gezelschap|producties/i.test(r.titel)) return plaatsen(a, [r.titel]);
+  r.titel = netteHoofdletters(r.titel);
+}
+
+// Oude voorstellingen met een omschrijving als titel ("komedie met Jelka van Houten ..."): weg als ze
+// alleen komende speeldata hebben; de bronnen leveren die zo meteen opnieuw, nu met de goede titel.
+{
+  const vandaagNu = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" });
+  const oud = new Set(speeldata.filter((sd) => sd.datum < vandaagNu).map((sd) => sd.voorstelling));
+  const weg = new Set(voorstellingen.filter((v) => /^(komedie|blijspel|klucht) met\b/i.test(v.titel) && !oud.has(v.id)).map((v) => v.id));
+  voorstellingen.splice(0, voorstellingen.length, ...voorstellingen.filter((v) => !weg.has(v.id)));
+  speeldata = speeldata.filter((sd) => !weg.has(sd.voorstelling));
+}
+
 // ---------- Samenvoegen per bron ----------
+
+// Hoe de zalen een voorstelling labelen; theaterkomedie alleen als de meeste zalen dat zeggen
+// (Ratatatata! wel, "Alles is comedy" van Najib & Roué niet, ook al noemt één zaal het toneel).
+const genreStemmen = new Map();
 
 const stats = [], bronStats = [];
 // Recensies per voorstelling uit alle bronnen: voorstelling-id -> Map(bron|medium -> recensie).
@@ -266,7 +330,7 @@ for (const f of bronFiles) {
       titel: netteHoofdletters(String(bronRecord.titel || "")
         .replace(/\s*[(\[]\s*(reprise|try[ -]?out|premi[eè]re|derni[eè]re|herneming)\s*[)\]]\s*$/i, "")
         .replace(/\s+[-–|]\s*(reprise|try[ -]?out|premi[eè]re|derni[eè]re|herneming)\s*$/i, "")
-        .replace(/\.$/, "").replace(/^speelt\s+/i, "").trim()) || bronRecord.titel,
+        .replace(/[\u200b-\u200d\ufeff]/g, "").replace(/\.$/, "").replace(/^speelt\s+/i, "").trim()) || bronRecord.titel,
       soort: bronRecord.soort ?? (/\b(herneming|reprise)\b/i.test(bronRecord.titel || "") ? "reprise" : null),
       artiesten: opgeschoondeArtiesten(bronRecord.artiesten || []),
     };
@@ -276,13 +340,15 @@ for (const f of bronFiles) {
       const { artiest, titel } = artiestOfTitel(bronRecord.artiesten[0], r.titel);
       if (artiest !== bronRecord.artiesten[0]) { r.titel = titel; r.artiesten = opgeschoondeArtiesten([artiest]); }
     }
+    // Toneel en komedie hebben hun eigen opruimregels (stukOpOrde); de regels hieronder zijn voor cabaret.
+    if (r.genre === "theaterkomedie" || /^(komedie|blijspel|klucht)\b/i.test(r.titel)) stukOpOrde(r, bronRecord.artiesten?.length === 1 ? bronRecord.artiesten[0] : null);
     // "Eigenlijk" / "Viggo Waas, Eddie B. Wahr & Kees van der Vooren": een namenlijst als titel en een
     // onbekende "artiest" (of één los woord) zijn omgedraaid.
-    if (r.artiesten.length === 1 && (!isBekend(r.artiesten[0]) || !/\s/.test(r.artiesten[0])) && /^[^,]+(, [^,]+)+ (&|en) [^,]+$/.test(r.titel)) {
+    else if (r.artiesten.length === 1 && (!isBekend(r.artiesten[0]) || !/\s/.test(r.artiesten[0])) && /^[^,]+(, [^,]+)+ (&|en) [^,]+$/.test(r.titel)) {
       [r.titel, r.artiesten] = [r.artiesten[0], opgeschoondeArtiesten([r.titel])];
     }
     // Een rolverdeling als titel ("Paul de Leeuw, Annick Boer e.a.") betekent: de "artiest" is de titel.
-    if (r.artiesten.length === 1 && /(,.*,|\be\.a\.?$|\bea$)/i.test(r.titel)) {
+    if (r.genre !== "theaterkomedie" && !/^(komedie|blijspel|klucht)\b/i.test(r.titel) && r.artiesten.length === 1 && /(,.*,|\be\.a\.?$|\bea$)/i.test(r.titel)) {
       r.titel = r.artiesten[0];
       r.artiesten = [];
     }
@@ -299,6 +365,8 @@ for (const f of bronFiles) {
     }
     const aIds = (r.artiesten || []).map((n) => zorgVoorArtiest(n));
     const vId = zorgVoorVoorstelling(r, aIds, theater.id);
+    if (!genreStemmen.has(vId)) genreStemmen.set(vId, {});
+    genreStemmen.get(vId)[r.genre] = (genreStemmen.get(vId)[r.genre] || 0) + 1;
     for (const ruw of bestand.recensies?.[r.bron] || []) {
       const rc = recensie(ruw.over ? `${ruw.medium} over ${ruw.over}` : ruw.medium, ruw.citaat, ruw.sterren);
       if (!rc) continue;
@@ -438,6 +506,49 @@ if (Object.keys(ZAAL_SAMEN).length) {
   for (const v of voorstellingen) if (v.theater) v.theater = doelTheater(theaterOpId.get(v.theater))?.id || v.theater;
   const weg = new Set(Object.keys(ZAAL_SAMEN).filter((id) => theaterOpId.has(ZAAL_SAMEN[id])));
   theaters.splice(0, theaters.length, ...theaters.filter((t) => !weg.has(t.id)));
+}
+
+// 2c-2. Toneel: hetzelfde stuk dat toch op twee plekken terechtkwam (andere zaallabels of spelers),
+// samenvoegen tot één voorstelling. Alleen als een van de twee theaterkomedie is en de spelers niet botsen.
+{
+  const opTitel = new Map();
+  for (const v of voorstellingen) {
+    const k = slug(v.titel);
+    if (!opTitel.has(k)) opTitel.set(k, []);
+    opTitel.get(k).push(v);
+  }
+  const komisch = (v) => v.genre === "theaterkomedie" || genreStemmen.get(v.id)?.theaterkomedie;
+  for (const groep of opTitel.values()) {
+    if (groep.length < 2 || !groep.some(komisch)) continue;
+    groep.sort((a, b) => b.artiesten.length - a.artiesten.length);
+    const [hoofd, ...rest] = groep;
+    for (const v of rest) {
+      if (v.artiesten.length && hoofd.artiesten.length && !v.artiesten.some((a) => hoofd.artiesten.includes(a))) continue;
+      hoofd.artiesten = [...new Set([...hoofd.artiesten, ...v.artiesten])];
+      for (const sd of speeldata) if (sd.voorstelling === v.id) sd.voorstelling = hoofd.id;
+      const st = genreStemmen.get(hoofd.id) || {};
+      for (const [g, n] of Object.entries(genreStemmen.get(v.id) || {})) st[g] = (st[g] || 0) + n;
+      genreStemmen.set(hoofd.id, st);
+    }
+    if (hoofd.artiesten.length) delete hoofd.theater;
+  }
+  const gezien = new Set();
+  speeldata = speeldata.filter((sd) => {
+    const k = [sd.voorstelling, sd.theater, sd.datum, sd.tijd || ""].join("|");
+    if (gezien.has(k)) return false;
+    gezien.add(k);
+    return true;
+  });
+}
+
+// 2d. Genre van stukken volgens de meeste zalen; een stuk zonder artiest hoort bij de zaal van zijn eerste speeldatum.
+for (const v of voorstellingen) {
+  const st = genreStemmen.get(v.id);
+  if (st && (st.theaterkomedie || v.genre === "theaterkomedie")) {
+    const [beste] = Object.entries(st).sort((a, b) => b[1] - a[1] || (a[0] === "theaterkomedie" ? -1 : 1));
+    if (beste[0] === "theaterkomedie" || v.genre === "theaterkomedie") v.genre = beste[0];
+  }
+  if (!v.artiesten.length && !theaterOpId.has(v.theater)) v.theater = speeldata.find((s) => s.voorstelling === v.id)?.theater;
 }
 
 // 3. Alles zonder speeldata weg. Artiesten met een handmatig ingevuld land of ookBekendAls blijven,

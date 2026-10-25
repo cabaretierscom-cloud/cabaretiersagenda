@@ -1,7 +1,7 @@
 {
   "bron": "de-veste",
   "naam": "Theater De Veste",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "theater-de-veste",
@@ -178,7 +178,7 @@
       "genre": "cabaret",
       "datum": "2026-12-01",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterdeveste.nl/programma/harrekidee-68ky"
     },
@@ -751,44 +751,44 @@
       {
         "medium": "NRC",
         "sterren": 4,
-        "citaat": "&ldquo;Derks brengt zijn politieke voorkeuren in scherpe oneliners, maar wordt sterker en grappiger wanneer hij persoonlijker wordt. Vooral zijn betoog over de aandachtseconomie valt op.&rdquo;"
+        "citaat": "Derks brengt zijn politieke voorkeuren in scherpe oneliners, maar wordt sterker en grappiger wanneer hij persoonlijker wordt. Vooral zijn betoog over de aandachtseconomie valt op."
       },
       {
         "medium": "de Volkskrant",
         "sterren": null,
-        "citaat": "&ldquo;Ja, leuk is opnieuw een goede voorstelling volgens het vertrouwde Pieter Derks-recept, persoonlijk en geëngageerd, vol originele geestigheid.&rdquo;"
+        "citaat": "Ja, leuk is opnieuw een goede voorstelling volgens het vertrouwde Pieter Derks-recept, persoonlijk en geëngageerd, vol originele geestigheid."
       }
     ],
     "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17": [
       {
         "medium": "NRC",
-        "sterren": null,
-        "citaat": "&ldquo;Eén lang en prikkelend pleidooi voor het belang van de kunsten (…) krachtig, omdat Wertheim zijn publiek de boodschap zelf laat ervaren.&rdquo; ★★★★"
+        "sterren": 4,
+        "citaat": "Eén lang en prikkelend pleidooi voor het belang van de kunsten (…) krachtig, omdat Wertheim zijn publiek de boodschap zelf laat ervaren."
       },
       {
         "medium": "Theaterkrant",
         "sterren": null,
-        "citaat": "&ldquo;Een voorstelling waarin de recensent samen met honderden anderen in de zaal, amechtig hijgend achter de verbeelding en fantasie van de maker aanholt.&rdquo;"
+        "citaat": "Een voorstelling waarin de recensent samen met honderden anderen in de zaal, amechtig hijgend achter de verbeelding en fantasie van de maker aanholt."
       },
       {
         "medium": "Het Parool",
         "sterren": null,
-        "citaat": "&ldquo;Wertheim snijdt zijn voorstelling als een meloen doormidden om hem vervolgens van binnenuit te beschouwen en aan de zaal te presenteren.&rdquo;"
+        "citaat": "Wertheim snijdt zijn voorstelling als een meloen doormidden om hem vervolgens van binnenuit te beschouwen en aan de zaal te presenteren."
       },
       {
         "medium": "Trouw",
-        "sterren": null,
-        "citaat": "&ldquo;Wertheim is een fenomenale fantast.&rdquo;"
+        "sterren": 4,
+        "citaat": "Wertheim slaagt er opnieuw glansrijk in om zijn publiek te boeien."
       },
       {
         "medium": "De Standaard",
-        "sterren": null,
-        "citaat": "&ldquo;Uiteindelijk wint de fantasie het van de mindfuck.&rdquo; ★★★★★"
+        "sterren": 5,
+        "citaat": "Uiteindelijk wint de fantasie het van de mindfuck."
       },
       {
         "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "&ldquo;Net als Ergens anders is de ultieme tegenhanger Niemand anders een vindingrijk theaterexperiment geworden. Het is zeer welkom in deze tussentijd, tot het moment dat we weer in een volle zaal kunnen plaatsnemen voor die broodnodige gezamenlijke ervaring.&rdquo; ★★★★"
+        "sterren": 4,
+        "citaat": "Net als Ergens anders is de ultieme tegenhanger Niemand anders een vindingrijk theaterexperiment geworden. Het is zeer welkom in deze tussentijd, tot het moment dat we weer in een volle zaal kunnen plaatsnemen voor die broodnodige gezamenlijke ervaring."
       }
     ],
     "https://www.theaterdeveste.nl/programma/ruim-bs4y": [
@@ -812,24 +812,24 @@
       {
         "medium": "Theaterkrant",
         "sterren": null,
-        "citaat": "&ldquo;Dolf Jansen geeft de zaal altijd het gevoel dat er iets unieks gebeurt&rdquo;"
+        "citaat": "Dolf Jansen geeft de zaal altijd het gevoel dat er iets unieks gebeurt"
       }
     ],
     "https://www.theaterdeveste.nl/programma/prikkelarme-kermis-dj5k": [
       {
         "medium": "Trouw",
         "sterren": 4,
-        "citaat": "&ldquo;De voorstelling laat zware jaren zien, maar straalt veerkracht uit. Kroos vertelt ontspannen en sterk, met optimistische liedjes.&rdquo;"
+        "citaat": "De voorstelling laat zware jaren zien, maar straalt veerkracht uit. Kroos vertelt ontspannen en sterk, met optimistische liedjes."
       },
       {
         "medium": "de Volkskrant",
         "sterren": 4,
-        "citaat": "&ldquo;Kroos keert terug met een breekbare én krachtige voorstelling vol goede grappen en sfeervolle liedjes.&rdquo;"
+        "citaat": "Kroos keert terug met een breekbare én krachtige voorstelling vol goede grappen en sfeervolle liedjes."
       },
       {
         "medium": "Theaterkrant",
         "sterren": null,
-        "citaat": "&ldquo;Sara Kroos is terug op het cabaretpodium en beter dan ooit&rdquo;"
+        "citaat": "Sara Kroos is terug op het cabaretpodium en beter dan ooit"
       }
     ],
     "https://www.theaterdeveste.nl/programma/harrekidee-68ky": [
@@ -840,13 +840,13 @@
       },
       {
         "medium": "Trouw",
-        "sterren": null,
-        "citaat": "&ldquo;Je ziet er serieus vakmanschap vanaf&rdquo; ★★★★"
+        "sterren": 4,
+        "citaat": "Je ziet er serieus vakmanschap vanaf"
       },
       {
         "medium": "Theaterkrant",
         "sterren": null,
-        "citaat": "&ldquo;Prachtige variant van de ploeterende antiheld&rdquo;"
+        "citaat": "Prachtige variant van de ploeterende antiheld"
       }
     ],
     "https://www.theaterdeveste.nl/programma/noodzakelijk-kwaad-qh5y": [
@@ -860,76 +860,76 @@
       {
         "medium": "de Volkskrant",
         "sterren": 4,
-        "citaat": "&ldquo;Een mooie, geestige en gevoelige theatermonoloog&rdquo;"
+        "citaat": "Een mooie, geestige en gevoelige theatermonoloog"
       },
       {
         "medium": "NRC",
         "sterren": 5,
-        "citaat": "&ldquo;De ultieme nar zijn en toch ontroeren: dat is meesterschap.&rdquo;"
+        "citaat": "De ultieme nar zijn en toch ontroeren: dat is meesterschap."
       }
     ],
     "https://www.theaterdeveste.nl/programma/pluk-eventueel-de-dag-qhnz": [
       {
         "medium": "de Volkskrant",
         "sterren": 4,
-        "citaat": "&ldquo;Nu heeft ze de geperfectioneerde, krachtigste podiumversie van zichzelf in huis&rdquo;"
+        "citaat": "Nu heeft ze de geperfectioneerde, krachtigste podiumversie van zichzelf in huis"
       }
     ],
     "https://www.theaterdeveste.nl/programma/overprikkeld-bsxp": [
       {
         "medium": "NRC",
         "sterren": 4,
-        "citaat": "&ldquo;Binnen het genre van de stand-up staat Koning aan de top.&rdquo;"
+        "citaat": "Binnen het genre van de stand-up staat Koning aan de top."
       },
       {
         "medium": "de Volkskrant",
         "sterren": 4,
-        "citaat": "&ldquo;Koning toont zijn grote verteltalent&rdquo;"
+        "citaat": "Koning toont zijn grote verteltalent"
       },
       {
         "medium": "Trouw",
         "sterren": null,
-        "citaat": "&ldquo;Koning is een meester in het vinden van humor in alledaagse situaties.&rdquo;"
+        "citaat": "Koning is een meester in het vinden van humor in alledaagse situaties."
       }
     ],
     "https://www.theaterdeveste.nl/programma/satan-is-moe-qhf4": [
       {
         "medium": "Theaterkrant",
         "sterren": null,
-        "citaat": "&ldquo;Als het erop aankomt heeft Lebbis aan felheid en grapdichtheid absoluut niets ingeboet, en dat is een geruststellende gedachte voor de liefhebbers van het betere cabaret.&rdquo;"
+        "citaat": "Als het erop aankomt heeft Lebbis aan felheid en grapdichtheid absoluut niets ingeboet, en dat is een geruststellende gedachte voor de liefhebbers van het betere cabaret."
       }
     ],
     "https://www.theaterdeveste.nl/programma/wisten-wij-veel-jx22": [
       {
         "medium": "Trouw",
         "sterren": 5,
-        "citaat": "&ldquo;Freek is en blijft de meester, fenomenaal.&rdquo;"
+        "citaat": "Freek is en blijft de meester, fenomenaal."
       }
     ],
     "https://www.theaterdeveste.nl/programma/imperfect-nln8": [
       {
         "medium": "Theaterkrant",
         "sterren": null,
-        "citaat": "&ldquo;Van der Eerden wil vermaken en dat doet hij. De amusementswaarde van &lsquo;Blijven drijven&rsquo; ligt hoog!&rdquo;"
+        "citaat": "Van der Eerden wil vermaken en dat doet hij. De amusementswaarde van ‘Blijven drijven’ ligt hoog!"
       }
     ],
     "https://www.theaterdeveste.nl/programma/ravot-fhtj": [
       {
         "medium": "I Love Theater",
         "sterren": 4,
-        "citaat": "&ldquo;Scherp, intelligent en bijzonder grappig (…) Hier staat een cabaretier die volledig vertrouwt op zijn vakmanschap.&rdquo;"
+        "citaat": "Scherp, intelligent en bijzonder grappig (…) Hier staat een cabaretier die volledig vertrouwt op zijn vakmanschap."
       },
       {
         "medium": "NRC",
         "sterren": 4,
-        "citaat": "&ldquo;Tunru is een ras-entertainer&rdquo;"
+        "citaat": "Tunru is een ras-entertainer"
       }
     ],
     "https://www.theaterdeveste.nl/programma/korrelrelatie-9ynz": [
       {
         "medium": "Het Parool",
         "sterren": null,
-        "citaat": "&ldquo;Kor Hoebe improviseert als de beste&rdquo;"
+        "citaat": "Kor Hoebe improviseert als de beste"
       }
     ]
   }

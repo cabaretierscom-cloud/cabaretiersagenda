@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -16,26 +16,13 @@
     {
       "theater": "kleine-komedie",
       "artiesten": [
-        "Ronald Snijders"
-      ],
-      "titel": "Leven met humor",
-      "genre": "cabaret",
-      "datum": "2026-10-24",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/ronald-snijders-hk3l"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
         "Claudia de Breij"
       ],
       "titel": "Oudejaarsconference 2026",
       "genre": "oudejaarsconference",
       "datum": "2026-10-28",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/claudia-de-breij-dtnn"
     },
@@ -126,7 +113,7 @@
       "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/kasper-van-der-laan-c27j"
     },
@@ -217,7 +204,7 @@
       "genre": "cabaret",
       "datum": "2026-11-13",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
     },
@@ -532,6 +519,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/lebbis-shlx"
+    },
+    {
+      "theater": "kleine-komedie",
+      "artiesten": [
+        "De Theatertroep"
+      ],
+      "titel": "Fuck pakjesavond",
+      "genre": "theaterkomedie",
+      "datum": "2026-12-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekleinekomedie.nl/agenda/de-theatertroep-1jsk"
     },
     {
       "theater": "kleine-komedie",
@@ -1041,6 +1041,19 @@
     {
       "theater": "kleine-komedie",
       "artiesten": [
+        "André Manuel"
+      ],
+      "titel": "De Eenzame Ziel",
+      "genre": "theaterkomedie",
+      "datum": "2027-02-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekleinekomedie.nl/agenda/andre-manuel-m59c"
+    },
+    {
+      "theater": "kleine-komedie",
+      "artiesten": [
         "Wina Ricardo"
       ],
       "titel": "Wina's Wereld",
@@ -1314,6 +1327,19 @@
     {
       "theater": "kleine-komedie",
       "artiesten": [
+        "Aluin"
+      ],
+      "titel": "Moeder Aarde",
+      "genre": "theaterkomedie",
+      "datum": "2027-03-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekleinekomedie.nl/agenda/aluin-q87n"
+    },
+    {
+      "theater": "kleine-komedie",
+      "artiesten": [
         "Valentina Tóth"
       ],
       "titel": "Revue Revanche",
@@ -1496,6 +1522,19 @@
     {
       "theater": "kleine-komedie",
       "artiesten": [
+        "De Theatertroep"
+      ],
+      "titel": "Vier Crematies en een Scheiding",
+      "genre": "theaterkomedie",
+      "datum": "2027-03-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekleinekomedie.nl/agenda/de-theatertroep-bqqc"
+    },
+    {
+      "theater": "kleine-komedie",
+      "artiesten": [
         "Louise Korthals"
       ],
       "titel": "In stukken",
@@ -1572,9 +1611,9 @@
     {
       "theater": "kleine-komedie",
       "artiesten": [
-        "Eigenlijk"
+        "Viggo Waas, Eddie B. Wahr & Kees van der Vooren"
       ],
-      "titel": "Viggo Waas, Eddie B. Wahr & Kees van der Vooren",
+      "titel": "Eigenlijk",
       "genre": "cabaret",
       "datum": "2027-04-04",
       "tijd": "16:00",
@@ -1984,6 +2023,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/fabian-franciscus-ts2l"
+    },
+    {
+      "theater": "kleine-komedie",
+      "artiesten": [
+        "Jelka van Houten & Sanne Wallis de Vries"
+      ],
+      "titel": "Lift",
+      "genre": "theaterkomedie",
+      "datum": "2027-06-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekleinekomedie.nl/agenda/jelka-van-houten-sanne-wallis-de-vries-c2jh"
+    },
+    {
+      "theater": "kleine-komedie",
+      "artiesten": [
+        "Jelka van Houten & Sanne Wallis de Vries"
+      ],
+      "titel": "Lift",
+      "genre": "theaterkomedie",
+      "datum": "2027-06-18",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekleinekomedie.nl/agenda/jelka-van-houten-sanne-wallis-de-vries-c2jh"
     },
     {
       "theater": "kleine-komedie",
