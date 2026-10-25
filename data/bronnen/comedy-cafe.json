@@ -1,7 +1,7 @@
 {
   "bron": "comedy-cafe",
   "naam": "Comedy Café Amsterdam",
-  "opgehaald": "2026-10-24",
+  "opgehaald": "2026-10-25",
   "theaters": [
     {
       "id": "comedy-cafe-amsterdam",
@@ -21,39 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "comedy-cafe-amsterdam",
-      "artiesten": [],
-      "titel": "Cocktails & Comedy",
-      "genre": "stand-up",
-      "datum": "2026-10-24",
-      "tijd": "18:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-12/"
-    },
-    {
-      "theater": "southend-comedy-club",
-      "artiesten": [],
-      "titel": "Masters of Comedy bij Southend Comedy Club Amsterdam",
-      "genre": "stand-up",
-      "datum": "2026-10-24",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-bij-southend-comedy-club-amsterdam/"
-    },
-    {
-      "theater": "comedy-cafe-amsterdam",
-      "artiesten": [],
-      "titel": "Masters of Comedy",
-      "genre": "stand-up",
-      "datum": "2026-10-24",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-5/"
-    },
     {
       "theater": "southend-comedy-club",
       "artiesten": [],
@@ -105,7 +72,7 @@
       "artiesten": [
         "Esther van der Voort"
       ],
-      "titel": "Mama probeert ook maar wat” Southend Comedy Club",
+      "titel": "Mama probeert ook maar wat",
       "genre": "stand-up",
       "datum": "2026-10-28",
       "tijd": "20:00",
@@ -193,7 +160,7 @@
     {
       "theater": "southend-comedy-club",
       "artiesten": [],
-      "titel": "Özgür Turhan Yepyenisi” Stand Up",
+      "titel": "Özgür Turhan Yepyenisi Stand Up",
       "genre": "stand-up",
       "datum": "2026-11-01",
       "tijd": "20:30",
@@ -428,7 +395,7 @@
     {
       "theater": "southend-comedy-club",
       "artiesten": [],
-      "titel": "Masters of Comedy bij Southend Comedy Club Amsterdam",
+      "titel": "Masters of Comedy",
       "genre": "stand-up",
       "datum": "2026-11-14",
       "tijd": "21:00",
@@ -535,7 +502,7 @@
     {
       "theater": "southend-comedy-club",
       "artiesten": [],
-      "titel": "Masters of Comedy bij Southend Comedy Club Amsterdam",
+      "titel": "Masters of Comedy",
       "genre": "stand-up",
       "datum": "2026-11-21",
       "tijd": "20:00",
@@ -688,7 +655,7 @@
       "artiesten": [
         "Esther van der Voort"
       ],
-      "titel": "Mama probeert ook maar wat” Southend Comedy Club Matinee show",
+      "titel": "Mama probeert ook maar wat",
       "genre": "stand-up",
       "datum": "2026-11-29",
       "tijd": "15:30",
@@ -824,7 +791,7 @@
     {
       "theater": "southend-comedy-club",
       "artiesten": [],
-      "titel": "Masters of Comedy bij Southend Comedy Club Amsterdam",
+      "titel": "Masters of Comedy",
       "genre": "stand-up",
       "datum": "2026-12-12",
       "tijd": "20:00",
@@ -916,7 +883,7 @@
     {
       "theater": "southend-comedy-club",
       "artiesten": [],
-      "titel": "Masters of Comedy bij Southend Comedy Club Amsterdam",
+      "titel": "Masters of Comedy",
       "genre": "stand-up",
       "datum": "2026-12-19",
       "tijd": "20:00",

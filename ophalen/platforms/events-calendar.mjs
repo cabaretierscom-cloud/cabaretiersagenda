@@ -55,12 +55,22 @@ export function eventsCalendar(o) {
         if (GEANNULEERD.test(titel)) { status = "geannuleerd"; titel = titel.replace(GEANNULEERD, "").trim(); }
         titel = titel.replace(/\s*[|@]\s*$/, "").trim();
 
+        // "Masters of Comedy bij Southend Comedy Club Amsterdam": de zaal hoort niet in de titel.
+        titel = titel.replace(/\s+bij\s+(southend|comedy caf[eé]).*$/i, "").trim();
         // "Nadine Froughi – Daydreamer": artiest en titel. Zonder streepje is het een clubavond.
-        const { artiest, titel: showTitel } = splitsNaam(titel, [" – ", " — ", " - "]);
+        let { artiest, titel: showTitel } = splitsNaam(titel, [" – ", " — ", " - "]);
+        // Zonder streepje, met de titel tussen aanhalingstekens: "Özgür Turhan “Yepyenisi” Stand Up".
+        // Alleen een korte naam met hoofdletters voor de titel telt als artiest ("Damian Skóra w programie" niet).
+        const los = !artiest && titel.match(/^([A-ZÀ-Ý][^\s“"]*(?:\s+(?:van|de|der|den|[A-ZÀ-Ý][^\s“"]*)){0,3})\s+[“"]([^”"]+)[”"]/);
+        if (los) [artiest, showTitel] = [los[1], los[2]];
+        // "“Mama probeert ook maar wat” Southend Comedy Club Matinee show": alleen het deel tussen
+        // de aanhalingstekens is de titel; daarachter staan zaal en soort avond.
+        const tussen = (artiest ? showTitel : titel).match(/^\s*[“"]([^”"]+)[”"]/);
         out.push({
           theater: zaal(e.venue),
           artiesten: artiest ? [artiest] : [],
-          titel: (artiest ? showTitel : titel).replace(/^["“”]|["“”]$/g, ""),
+          // Een los aanhalingsteken zonder tegenhanger ("Yepyenisi” Stand Up") weg.
+          titel: tussen ? tussen[1].trim() : (artiest ? showTitel : titel).replace(/^["“”]|["“”]$/g, "").replace(/^([^“"]*)”/, "$1").trim(),
           genre,
           ...wanneer,
           status,
