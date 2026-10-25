@@ -20,7 +20,7 @@ Gekozen ontwerp (oktober 2026, ontwerp 15 op het logobord): de kleine c uit het 
 | Roze (`--riso-pink`) | `#FF4FA3` | uithaal van de c, binnenruimte eerste e |
 | Lila (`--riso-lilac`) | `#C9B6FF` | binnenruimte tweede e; `.com` op een donkere achtergrond |
 | Donkerblauw (`--riso-blue`) | `#2340E8` | `.com` |
-| Zwart | `#000000` | vlak van het beeldmerk, woordmerk, footer |
+| Zwart | `#121212` | vlak van het beeldmerk, woordmerk, tekst, footer (een heel donker grijs in plaats van puur zwart) |
 
 Op een donkere achtergrond (de zwarte footer, de donkere modus) wordt het woordmerk wit en `.com` lila, omdat donkerblauw op zwart slecht leesbaar is. Het beeldmerk staat daar zonder vlak.
 

@@ -54,7 +54,7 @@ function beeldmerk({ vlak, id }) {
   const vlakken = [["#FF6A13", -140, 10], ["#FF4FA3", 10, 58], ["#00764E", 58, 140], ["#FFD23F", 140, 220]];
   return `<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">${vlak ? `<rect width="48" height="48" rx="11.5" fill="${vlak}"/>` : ""}<defs><clipPath id="${id}"><path transform="${t}" d="${C_PAD}"/></clipPath></defs><g clip-path="url(#${id})"><g transform="translate(24 24) scale(${(w / h).toFixed(4)} 1) translate(-24 -24)">${vlakken.map(([k, a, b]) => `<polygon points="${punt(a, b)}" fill="${k}"/>`).join("")}</g></g></svg>`;
 }
-export const LOGO_SVG = beeldmerk({ vlak: "#000", id: "beeldmerk-c" });
+export const LOGO_SVG = beeldmerk({ vlak: "#121212", id: "beeldmerk-c" });
 export const LOGO_OMGEKEERD_SVG = beeldmerk({ vlak: null, id: "beeldmerk-c-voet" });
 
 const ink = (kleur) => {
@@ -577,7 +577,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   function plaatsPagina(p) {
     const list = perPlaats(p);
     const zalen = zalenMetData.filter((t) => t.plaats === p);
-    const body = `<div class="detail-hero" style="--bg:var(--riso-yellow);--fg:#000"><div class="wrap">
+    const body = `<div class="detail-hero" style="--bg:var(--riso-yellow);--fg:#121212"><div class="wrap">
         <h1>Cabaret en comedy in ${esc(p)}</h1>
         <p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${zalen.map((t) => `<a href="/theaters/${t.id}/">${esc(t.naam)}</a>`).join(", ").replace(/, ([^,]*)$/, " en $1")}.</p>
       </div></div>

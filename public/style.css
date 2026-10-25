@@ -37,7 +37,7 @@
   /* Papier en inkt */
   --paper: #FFFFFF;
   --paper-2: #F3F3F6;
-  --ink: #000000;
+  --ink: #121212; /* zwart van de huisstijl: #121212 in plaats van puur zwart */
   --ink-2: #4A4A57;
   --rule: #D9D9E2;
   /* Risografie-inkten voor affiches */
@@ -48,7 +48,7 @@
   --riso-orange: #FF6A13;
   --riso-purple: #6A4FB0;
   --riso-red: #F23D2E;
-  --riso-black: #000000;
+  --riso-black: #121212;
   --riso-aqua: #5EC8E5;
   --riso-lime: #B8E04A;
   --riso-lilac: #C9B6FF;
@@ -76,7 +76,7 @@
   :root:not([data-theme="light"]) {
     --paper: #141318; --paper-2: #1E1D24; --ink: #F4F4F7; --ink-2: #B4B4C2; --rule: #34333D;
     --riso-black: #2A2833;
-    --accent: #7C91FF; --on-accent: #000000; --focus: #9AABFF; --sold: #FF7A8C; --doubt: #F2C14E;
+    --accent: #7C91FF; --on-accent: #121212; --focus: #9AABFF; --sold: #FF7A8C; --doubt: #F2C14E;
     color-scheme: dark;
   }
 }
@@ -84,7 +84,7 @@
 :root[data-theme="dark"] {
   --paper: #141318; --paper-2: #1E1D24; --ink: #F4F4F7; --ink-2: #B4B4C2; --rule: #34333D;
   --riso-black: #2A2833;
-  --accent: #7C91FF; --on-accent: #000000; --focus: #9AABFF; --sold: #FF7A8C; --doubt: #F2C14E;
+  --accent: #7C91FF; --on-accent: #121212; --focus: #9AABFF; --sold: #FF7A8C; --doubt: #F2C14E;
   color-scheme: dark;
 }
 
@@ -175,7 +175,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .strip::-webkit-scrollbar { display: none; }
 .strip:focus-visible { outline-offset: -3px; }
 .poster {
-  --bg: var(--riso-pink); --fg: #000;
+  --bg: var(--riso-pink); --fg: #121212;
   position: relative; flex: 0 0 auto; width: 300px; height: 520px;
   scroll-snap-align: start; text-decoration: none; color: var(--fg); background-color: var(--bg);
   display: grid; grid-template-rows: auto 1fr auto; padding: 26px 26px 28px; overflow: hidden;
@@ -230,7 +230,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 .strip-nav button {
   width: 52px; height: 52px; border-radius: 50%; border: 0; cursor: pointer;
-  background: #FFFFFF; color: #000; box-shadow: 0 4px 18px rgba(0,0,0,.25);
+  background: #FFFFFF; color: #121212; box-shadow: 0 4px 18px rgba(0,0,0,.25);
   display: grid; place-items: center;
 }
 .strip-nav button:disabled { opacity: .4; cursor: default; }
@@ -313,7 +313,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* ---------- Artiesten ---------- */
 .artists { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
 .artist-card {
-  --bg: var(--riso-pink); --fg: #000;
+  --bg: var(--riso-pink); --fg: #121212;
   position: relative; display: grid; grid-template-rows: 1fr auto; gap: 10px;
   min-height: 230px; padding: 20px; text-decoration: none; overflow: hidden; isolation: isolate;
   background: var(--bg); color: var(--fg); border-radius: 6px;
@@ -361,7 +361,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 
 /* ---------- Detail ---------- */
 .detail-hero {
-  --bg: var(--riso-pink); --fg: #000;
+  --bg: var(--riso-pink); --fg: #121212;
   background: var(--bg); color: var(--fg); position: relative; overflow: hidden; isolation: isolate;
 }
 .detail-hero::before {
@@ -399,7 +399,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 
 /* ---------- Footer ---------- */
 /* Footer: zwarte strook met het beeldmerk zonder vlak en een wit woordmerk. */
-.site-footer { --ink: #fff; --ink-2: #fff; margin-top: 48px; background: #000; color: #fff; }
+.site-footer { --ink: #fff; --ink-2: #fff; margin-top: 48px; background: #121212; color: #fff; }
 .site-footer .wrap { padding-block: 32px 40px; display: flex; gap: 16px 32px; align-items: center; justify-content: space-between; flex-wrap: wrap; font-size: .95rem; }
 .site-footer p { margin: 0; max-width: 62ch; }
 .site-footer .contact a { color: #fff; font-weight: 600; }

@@ -40,17 +40,17 @@ export const THEATERSOORTEN = ["theater", "cultuurcentrum", "comedyclub", "café
 
 // Inktkleuren; de waarde is de naam van de CSS-variabele en de tekstkleur erop.
 export const KLEUREN = {
-  roze: ["--riso-pink", "#000"],
-  geel: ["--riso-yellow", "#000"],
+  roze: ["--riso-pink", "#121212"],
+  geel: ["--riso-yellow", "#121212"],
   blauw: ["--riso-blue", "#FFF"],
   groen: ["--riso-green", "#FFF"],
-  oranje: ["--riso-orange", "#000"],
+  oranje: ["--riso-orange", "#121212"],
   paars: ["--riso-purple", "#FFF"],
-  rood: ["--riso-red", "#000"],
+  rood: ["--riso-red", "#121212"],
   zwart: ["--riso-black", "#FFF"],
-  aqua: ["--riso-aqua", "#000"],
-  limoen: ["--riso-lime", "#000"],
-  lila: ["--riso-lilac", "#000"],
+  aqua: ["--riso-aqua", "#121212"],
+  limoen: ["--riso-lime", "#121212"],
+  lila: ["--riso-lilac", "#121212"],
 };
 
 const read = (dir, name) => JSON.parse(readFileSync(join(dir, name), "utf8"));
