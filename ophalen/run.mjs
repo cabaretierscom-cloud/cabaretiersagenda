@@ -30,6 +30,10 @@ await Promise.all(files.map(async (f) => {
   const start = Date.now();
   try {
     const records = (await bron.ophalen({ log, vandaag })).filter((r) => r.datum >= vandaag);
+    // Niets gevonden terwijl er vorige keer nog veel kwam: waarschijnlijk was de site even kapot.
+    const vorigBestand = join(outDir, `${bron.id}.json`);
+    const vorig = !records.length && existsSync(vorigBestand) ? JSON.parse(readFileSync(vorigBestand, "utf8")).speeldata.filter((r) => r.datum >= vandaag).length : 0;
+    if (vorig >= 10) throw new Error(`0 speeldata, vorige keer ${vorig}; vorige uitkomst blijft staan`);
     writeFileSync(join(outDir, `${bron.id}.json`), JSON.stringify({
       bron: bron.id,
       naam: bron.naam,

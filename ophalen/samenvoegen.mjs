@@ -440,11 +440,13 @@ if (Object.keys(ZAAL_SAMEN).length) {
   theaters.splice(0, theaters.length, ...theaters.filter((t) => !weg.has(t.id)));
 }
 
-// 3. Alles zonder speeldata weg. Artiesten met een handmatig ingevuld land of ookBekendAls blijven.
+// 3. Alles zonder speeldata weg. Artiesten met een handmatig ingevuld land of ookBekendAls blijven,
+// net als artiesten die bij een festival horen (data/festivals.json).
+const festivalArtiesten = new Set((existsSync(join(dataDir, "festivals.json")) ? read("festivals.json") : []).flatMap((f) => f.artiesten || []));
 const gebruikteVoorstellingen = new Set(speeldata.map((s) => s.voorstelling));
 const blijvendeVoorstellingen = voorstellingen.filter((v) => gebruikteVoorstellingen.has(v.id));
 const gebruikteArtiesten = new Set(blijvendeVoorstellingen.flatMap((v) => v.artiesten));
-const blijvendeArtiesten = artiesten.filter((a) => gebruikteArtiesten.has(a.id) || a.land || a.ookBekendAls?.length);
+const blijvendeArtiesten = artiesten.filter((a) => gebruikteArtiesten.has(a.id) || festivalArtiesten.has(a.id) || a.land || a.ookBekendAls?.length);
 const verwijderd = { voorstellingen: voorstellingen.length - blijvendeVoorstellingen.length, artiesten: artiesten.length - blijvendeArtiesten.length };
 voorstellingen.splice(0, voorstellingen.length, ...blijvendeVoorstellingen);
 artiesten.splice(0, artiesten.length, ...blijvendeArtiesten);
