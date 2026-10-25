@@ -24,6 +24,16 @@ Een solo-artiest kan `"geslacht": "man"` of `"geslacht": "vrouw"` hebben, altijd
 
 `npm run fotos` zoekt rechtenvrije foto's: via het Wikipedia-artikel van de artiest (alleen als dat over cabaret of comedy gaat) naar de hoofdafbeelding op Wikidata, en dan de licentie op Wikimedia Commons. Alleen CC0, publiek domein, CC BY en CC BY-SA worden gebruikt. De foto komt in `public/fotos/`, en het veld `foto` in `data/artiesten.json` bewaart maker, licentie en bron; die staan als naamsvermelding onder de foto. Bekijk nieuwe foto's altijd zelf: zet `"foto": false` bij een artiest als de foto niet klopt, dan zoekt het script er nooit meer een. Elke foto heeft een `alt`-tekst (wat er op de foto te zien is, in het Nederlands). Het script vult die met de beschrijving van Commons of met "Foto van <naam>"; verbeter die met de hand. `npm run fotos -- --aanvullen` haalt beschrijving, datum en afmetingen opnieuw op voor bestaande foto's.
 
+## Zalen opschonen
+
+Zalen uit de speellijsten van artiesten koppelt het script zelf aan bekende theaters. Gaat dat mis, zet het dan recht in `data/zaal-aliassen.json`:
+
+- `zalen`: een zaalnaam uit een speellijst hoort bij een bestaand theater, bijv. `"heerlen|parkstad-limburg-theaters": "theater-heerlen"` (plaats en zaal in kleine letters met streepjes).
+- `samenvoegen`: twee zalen zijn dezelfde, bijv. `"dok-6-panningen": "dok6-panningen"`. De speeldata gaan mee en de dubbele zaal verdwijnt.
+- `verbeteren`: naam, plaats of land van een zaal met de hand aanpassen, bijv. `"cc-leopoldsburg": { "land": "BE" }`.
+
+Bij het volgende samenvoegen wordt het toegepast, en elke nacht opnieuw.
+
 ## Recensies
 
 Een voorstelling kan `recensies` hebben: per krant of tijdschrift het `medium`, de `sterren` (1 tot en met 5, of `null` als de krant geen sterren geeft), een `citaat` en de `bron`, de theaterpagina waar de recensie staat. Ze komen op de voorstellingspagina onder "Recensies van …".

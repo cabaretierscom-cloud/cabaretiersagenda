@@ -70,14 +70,16 @@ const PLAATS_ALIAS = {
   "the hague": "Den Haag", "s-gravenhage": "Den Haag", "'s-gravenhage": "Den Haag", "amersfoot": "Amersfoort",
   "doetichem": "Doetinchem", "gorichem": "Gorinchem", "berkel en roderijs": "Berkel en Rodenrijs", "h-i-ambacht": "Hendrik-Ido-Ambacht",
   "capelle aan de ijssel": "Capelle aan den IJssel", "krimpen a/d ijssel": "Krimpen aan den IJssel", "laren nh": "Laren",
-  "noordwijk aan zee": "Noordwijk", "hengelo (o)": "Hengelo", "hengelo (ov)": "Hengelo", "den hoorn texel": "Texel", "oost-knollendam": "Oostknollendam", "h. i. ambacht": "Hendrik-Ido-Ambacht", "alphen nb": "Alphen (NB)",
+  "noordwijk aan zee": "Noordwijk", "hengelo (o)": "Hengelo", "hengelo (ov)": "Hengelo", "den hoorn texel": "Texel", "oost-knollendam": "Oostknollendam", "h. i. ambacht": "Hendrik-Ido-Ambacht", "s'-heerenberg": "'s-Heerenberg", "alphen nb": "Alphen (NB)",
 };
-// Namen van zalen die anders heten dan in onze database: "plaats|zaal" (als slug) -> theater-id.
-const ZAAL_ALIAS = {
-  "heerlen|parkstad-limburg-theaters": "theater-heerlen", "heerlen|plt": "theater-heerlen", "heerlen|theater-heerlen-plt": "theater-heerlen",
-  "middelburg|zeeland-theaters": "schouwburg-middelburg", "middelburg|stadsschouwburg": "schouwburg-middelburg",
-  "groningen|spot-groningen": "stadsschouwburg-groningen", "zwolle|zwolse-theaters": "theater-de-spiegel",
-};
+// Opschoning van zalen (data/zaal-aliassen.json): zaalnamen uit speellijsten bij een bekend theater,
+// dubbele zalen samenvoegen en namen of plaatsen met de hand verbeteren.
+const zaalAliassen = existsSync(join(dataDir, "zaal-aliassen.json")) ? read("zaal-aliassen.json") : {};
+const ZAAL_ALIAS = zaalAliassen.zalen || {};
+const ZAAL_SAMEN = zaalAliassen.samenvoegen || {};
+for (const [id, nieuw] of Object.entries(zaalAliassen.verbeteren || {})) if (theaterOpId.has(id)) Object.assign(theaterOpId.get(id), nieuw);
+// Het theater dat overblijft als een zaal is samengevoegd.
+const doelTheater = (t) => (t && ZAAL_SAMEN[t.id] && theaterOpId.has(ZAAL_SAMEN[t.id]) ? theaterOpId.get(ZAAL_SAMEN[t.id]) : t);
 const KLEIN = new Set(["aan", "den", "de", "het", "op", "bij", "in", "ter", "ten", "a/d", "ad"]);
 function netPlaats(p) {
   let t = String(p || "").replace(/\s*\((NL|BE?|[A-Z][a-z]+)\)\s*$/, "").replace(/\s+/g, " ").trim();
@@ -95,7 +97,13 @@ const kern = (naam, plaats) => slug(naam).split("-").filter((w) => w.length > 1 
 // Een zaal uit een speellijst: een bekend theater in dezelfde plaats met (bijna) dezelfde naam,
 // anders een nieuwe zaal.
 const compact = (s) => slug(s).replace(/-/g, "");
+// Een gevonden zaal zonder website krijgt die uit de speellijst.
 function zoekTheater(t) {
+  const gevonden = zoekTheaterZelf(t);
+  if (gevonden && !gevonden.website && t.website) gevonden.website = t.website;
+  return gevonden;
+}
+function zoekTheaterZelf(t) {
   const plaats = netPlaats(t.plaats);
   const alias = ZAAL_ALIAS[`${slug(plaats)}|${slug(t.naam)}`];
   if (alias && theaterOpId.has(alias)) return theaterOpId.get(alias);
@@ -116,11 +124,13 @@ function zoekTheater(t) {
   if (/schouwburg/i.test(t.naam)) { const sb = kandidaten.filter((x) => /schouwburg/i.test(x.naam)); if (sb.length === 1) return sb[0]; }
   // "Schouwburg" of "Stadsschouwburg" zonder meer, en er is maar één zaal in die plaats.
   if (!k.length && kandidaten.length === 1) return kandidaten[0];
-  const naam = t.naam.replace(/\s+/g, " ").trim();
+  let naam = t.naam.replace(/\s+/g, " ").trim();
+  // "CC", "Stadsschouwburg" of "Cultuurhuis" zegt op de site weinig: dan de plaats erachter.
+  if (!k.length && !slug(naam).includes(slug(plaats))) naam = `${naam.replace(/^(cc|gc)$/i, (x) => x.toUpperCase())} ${plaats}`;
   const id = slug(`${naam} ${slug(naam).includes(slug(plaats)) ? "" : plaats}`);
   // Wat de artiest over het land zegt, gaat voor (Deurne ligt in Nederland én in België).
   const land = t.land || kandidaten[0]?.land || "NL";
-  return theaterOpId.get(id) || zorgVoorTheater({ id, naam, plaats, land, soort: "theater", website: null });
+  return theaterOpId.get(id) || zorgVoorTheater({ id, naam, plaats, land, soort: "theater", website: t.website || null });
 }
 
 function zorgVoorArtiest(naam) {
@@ -280,7 +290,7 @@ for (const f of bronFiles) {
       if (ids.some((a) => alBekend.has(`${a}|${slug(netPlaats(r.theater.plaats))}|${r.datum}`))) { dubbel++; continue; }
       if (!r.titel) { r.titel = r.artiesten.join(" & "); r.zonderTitel = true; }
     }
-    const theater = typeof r.theater === "string" ? theaterOpId.get(r.theater) : r.theater?.zoeken ? zoekTheater(r.theater) : zorgVoorTheater(r.theater);
+    const theater = doelTheater(typeof r.theater === "string" ? theaterOpId.get(r.theater) : r.theater?.zoeken ? zoekTheater(r.theater) : zorgVoorTheater(r.theater));
     if (!theater) {
       controleren.push({ bron: bestand.bron, reden: `onbekend theater "${r.theater}"`, record: r });
       continue;
@@ -411,6 +421,20 @@ for (const v of voorstellingen) {
   const media = new Set(nieuw.map((r) => r.medium));
   v.recensies = [...nieuw, ...(v.recensies || []).filter((r) => !media.has(r.medium))]
     .sort((a, b) => (b.sterren ?? 0) - (a.sterren ?? 0) || a.medium.localeCompare(b.medium, "nl"));
+}
+
+// 2c. Samengevoegde zalen: oude speeldata naar de zaal die blijft, de dubbele zaal weg.
+if (Object.keys(ZAAL_SAMEN).length) {
+  const gezien = new Set();
+  speeldata = speeldata.map((s) => ({ ...s, theater: doelTheater(theaterOpId.get(s.theater))?.id || s.theater })).filter((s) => {
+    const k = [s.voorstelling, s.theater, s.datum, s.tijd || ""].join("|");
+    if (gezien.has(k)) return false;
+    gezien.add(k);
+    return true;
+  });
+  for (const v of voorstellingen) if (v.theater) v.theater = doelTheater(theaterOpId.get(v.theater))?.id || v.theater;
+  const weg = new Set(Object.keys(ZAAL_SAMEN).filter((id) => theaterOpId.has(ZAAL_SAMEN[id])));
+  theaters.splice(0, theaters.length, ...theaters.filter((t) => !weg.has(t.id)));
 }
 
 // 3. Alles zonder speeldata weg. Artiesten met een handmatig ingevuld land of ookBekendAls blijven.

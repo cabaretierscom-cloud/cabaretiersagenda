@@ -1,0 +1,69 @@
+{
+  "_uitleg": "Opschoning van zalen. 'zalen': een zaalnaam uit een speellijst (plaats|zaal, als slug) hoort bij dit theater. 'samenvoegen': deze zaal is dezelfde als die andere; de speeldata gaan mee en de dubbele zaal verdwijnt. 'verbeteren': naam, plaats of land van een zaal met de hand rechtzetten.",
+  "zalen": {
+    "heerlen|parkstad-limburg-theaters": "theater-heerlen",
+    "heerlen|plt": "theater-heerlen",
+    "heerlen|theater-heerlen-plt": "theater-heerlen",
+    "middelburg|zeeland-theaters": "schouwburg-middelburg",
+    "middelburg|stadsschouwburg": "schouwburg-middelburg",
+    "groningen|spot-groningen": "stadsschouwburg-groningen",
+    "zwolle|zwolse-theaters": "theater-de-spiegel",
+    "sittard|toon-hermans-theater": "theater-sittard"
+  },
+  "samenvoegen": {
+    "casa-cadanza-lansingerland": "casa-cadanza-berkel-en-rodenrijs",
+    "theater-de-spiegel-algemeen": "theater-de-spiegel",
+    "dok-6-panningen": "dok6-panningen",
+    "cc-deurne": "cultuurcentrum-deurne",
+    "cc-martien-van-doorne-deurne": "cultuurcentrum-deurne",
+    "toon-hermans-theater-sittard": "theater-sittard",
+    "skkw-op-maarhuizen": "op-maarhuizen-winsum",
+    "cc-ha-hasselt": "cc-hasselt"
+  },
+  "verbeteren": {
+    "de-pinte-polderbos": {
+      "naam": "Polderbos",
+      "plaats": "De Pinte",
+      "land": "BE"
+    },
+    "dorpshuis-rilland-luctor-et-emergo": {
+      "naam": "Dorpshuis Luctor et Emergo",
+      "plaats": "Rilland"
+    },
+    "stichting-barontheater-opende": {
+      "naam": "Baron Theater"
+    },
+    "het-barghse-huus-s-heerenberg": {
+      "plaats": "'s-Heerenberg"
+    },
+    "cc-leopoldsburg": {
+      "land": "BE"
+    },
+    "cc-zoetegem-zottegem": {
+      "naam": "CC Zoetegem",
+      "land": "BE"
+    },
+    "cultuurhuis-bilzen-hoeselt": {
+      "naam": "Cultuurhuis Bilzen-Hoeselt"
+    },
+    "cc-maasmechelen": {
+      "naam": "CC Maasmechelen"
+    },
+    "cultuurhuis-merlebeke-melle": {
+      "naam": "Cultuurhuis Merlebeke",
+      "plaats": "Melle"
+    },
+    "cc-mortsel": {
+      "naam": "CC Mortsel"
+    },
+    "stadsschouwburg-sint-niklaas": {
+      "naam": "Stadsschouwburg Sint-Niklaas"
+    },
+    "cultuurcentrum-strombeek": {
+      "naam": "Cultuurcentrum Strombeek"
+    },
+    "stadstheater-zoetermeer": {
+      "naam": "Stadstheater Zoetermeer"
+    }
+  }
+}

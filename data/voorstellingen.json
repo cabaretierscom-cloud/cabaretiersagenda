@@ -3123,6 +3123,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "lebbis-lebbis",
+    "titel": "Lebbis",
+    "artiesten": [
+      "lebbis"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "lebbis-satan-is-moe",
     "titel": "Satan is moe",
     "artiesten": [
@@ -4753,7 +4761,27 @@
     "artiesten": [
       "ronald-snijders"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 5,
+        "citaat": "Werkelijk briljant",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/ronald-snijders/"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Een van zijn beste voorstellingen",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/ronald-snijders/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De artiest Snijders blijkt precies te weten wat hij doet (…) en levert een fijne, grappige, rijke, goed geconstrueerde voorstelling af.",
+        "bron": "https://theaterdestoep.nl/voorstelling/ronald-snijders-2627"
+      }
+    ]
   },
   {
     "id": "rosa-doornenbal-to-believe-in-magic",

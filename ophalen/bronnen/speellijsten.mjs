@@ -71,6 +71,24 @@ const ARTIESTEN = [
 const lijktPlaats = (p) => p && p.length <= 40 && p.split(/\s+/).length <= 5 && !/\d|[!?:()]/.test(p) && !/theater|schouwburg|comedy|club|caf[eé]|zaal|podium|\bplt\b/i.test(p);
 const lijktZaal = (z) => z && z.length <= 70 && z.split(/\s+/).length <= 9 && !/[!?]$/.test(z);
 
+// De site van de zaal uit de kaartlink van een rij: niet die van de artiest zelf, een kaartverkoper,
+// sociale media of een kaart.
+const GEEN_ZAAL = /facebook|instagram|youtube|twitter|x\.com|tiktok|google|maps|ticketmaster|eventim|ticketcounter|stager|eventbrite|tickettailor|ticketkantoor|paylogic|ticketscript|seetickets|yourticketprovider|weeztix|eventix|tixly|ticketmatic|avayo|comedyshows|captaincomedy|ticketshop|wix|linktr|spotify|apple/i;
+function zaalSite(links, artiestUrl, naam) {
+  const eigen = new URL(artiestUrl).hostname.replace(/^www\./, "");
+  // Ook een andere site van de artiest ("najib-roue.nl" bij Najib Amhali) is geen zaal.
+  const woorden = naam.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").split(/[^a-z]+/).filter((w) => w.length >= 4);
+  for (const l of links || []) {
+    try {
+      const u = new URL(l);
+      const host = u.hostname.replace(/^www\./, "");
+      if (!/^https?:$/.test(u.protocol) || host === eigen || GEEN_ZAAL.test(host) || /^tickets?\./.test(u.hostname) || woorden.some((w) => host.includes(w))) continue;
+      return `${u.protocol}//${u.hostname}`;
+    } catch { /* geen geldig adres */ }
+  }
+  return null;
+}
+
 export default {
   id: "speellijsten",
   naam: "Speellijsten van artiesten",
@@ -90,7 +108,7 @@ export default {
         const r = leesRij(rij, { ...a, naam: a.naam });
         if (!lijktPlaats(r.plaats) || !lijktZaal(r.zaal)) continue;
         out.push({
-          theater: { zoeken: true, naam: r.zaal, plaats: r.plaats, land: r.land },
+          theater: { zoeken: true, naam: r.zaal, plaats: r.plaats, land: r.land, website: zaalSite(rij.links, a.url, a.naam) },
           artiesten: [a.naam],
           titel: r.titel,
           genre: "cabaret",
