@@ -553,3 +553,16 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .controle tr.fout td:nth-child(2)::before, .controle tr.waarschuwing td:nth-child(2)::before { content: "⚠ "; }
 .controle .mis { color: var(--ink-2); }
 .controle code { font-size: .85em; color: var(--ink-2); }
+
+/* Cookiemelding: vast onderaan, beide knoppen even groot zodat weigeren net zo makkelijk is als akkoord geven. */
+.cookies { position: fixed; z-index: 100; left: 16px; right: 16px; bottom: max(16px, env(safe-area-inset-bottom)); margin-inline: auto; max-width: 720px; display: flex; gap: 12px 20px; align-items: center; flex-wrap: wrap; padding: 16px 20px; background: #121212; color: #fff; border-radius: 12px; box-shadow: 0 8px 30px rgba(0, 0, 0, .25); font-size: .95rem; line-height: 1.45; }
+.cookies[hidden] { display: none; }
+.cookies p { margin: 0; flex: 1 1 320px; }
+.cookies a { color: #fff; font-weight: 600; }
+.cookies-knoppen { display: flex; gap: 8px; }
+.cookies button, .knop-secundair { min-height: 44px; padding: 0 18px; border-radius: 999px; font: inherit; font-weight: 700; cursor: pointer; }
+.cookies [data-keuze="ja"] { background: var(--riso-orange); color: #121212; border: 2px solid var(--riso-orange); }
+.cookies [data-keuze="nee"] { background: transparent; color: #fff; border: 2px solid #fff; }
+.cookies button:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+.knop-secundair { background: #fff; color: #121212; border: 2px solid #121212; }
+.knop-secundair[hidden] { display: none; }

@@ -66,6 +66,7 @@ for (const th of db.theaters.values()) if (db.gigsForTheater(th.id).length) writ
 write("/festivals/", t.festivalIndex());
 for (const f of db.festivals.values()) write(`/festivals/${f.id}/`, t.festivalPagina(f));
 write("/over/", t.about());
+write("/privacy/", t.privacy());
 write("/404.html", t.notFound());
 // Controlepagina (niet in het menu en niet in de sitemap): uit data/rapport.json en data/ophaal-log.json.
 {

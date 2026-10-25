@@ -10,6 +10,7 @@ Cabaret- en comedyagenda voor Nederland en België. Statische site, gebouwd door
 - Webadressen: `/agenda/oktober-2026/` (`maandId`), `/plaatsen/<plaats>/`, `/theaters/<theater-id>/`, `/festivals/<festival-id>/` (`data/festivals.json`), `/alle-cabaretiers/` met `/mannen/` en `/vrouwen/` (SEO-pagina's met FAQ, niet in het menu; gelinkt vanuit /artiesten/ en artiestpagina's; geslacht uit Wikidata via `npm run geslacht`), `/artiesten/<artiest-id>/` en per voorstelling met eigen titel `/artiesten/<artiest-id>/<titel-slug>/` (`voorstellingPad` in `src/templates.mjs`).
 - `build.mjs` toont alleen speeldata vanaf vandaag (Europe/Amsterdam). `BUILD_DATE=JJJJ-MM-DD` overschrijft dat.
 - `public/agenda.js` filtert de server-gerenderde lijst; de pagina moet zonder JS volledig bruikbaar blijven.
+- Google Analytics (`SITE.analytics`) laadt `public/cookies.js` pas na "Akkoord" in de cookiemelding (niet op noindex-pagina's zoals /controle/). Uitleg voor bezoekers op /privacy/; pas die aan als er iets bij komt dat gegevens verwerkt.
 
 ## Gegevens
 

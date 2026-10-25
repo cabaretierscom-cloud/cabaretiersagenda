@@ -7,7 +7,7 @@ import { createHash } from "node:crypto";
 
 // Versienummer per bestand (stukje van de inhoud-hash): verandert de opmaak of het script, dan
 // verandert het adres en halen browsers meteen de nieuwe versie op, ondanks de browsercache.
-const VERSIE = Object.fromEntries(["style.css", "agenda.js"].map((f) =>
+const VERSIE = Object.fromEntries(["style.css", "agenda.js", "cookies.js"].map((f) =>
   [f, createHash("sha1").update(readFileSync(new URL(`../public/${f}`, import.meta.url))).digest("hex").slice(0, 8)]));
 
 // Webadres-vriendelijke tekst: "Gelukkig heb je mij nog!" -> "gelukkig-heb-je-mij-nog".
@@ -25,6 +25,8 @@ export const SITE = {
   name: "Cabaretiers.com",
   url: "https://www.cabaretiers.com",
   email: "hallo@cabaretiers.com",
+  // Google Analytics 4; laadt pas na toestemming via de cookiemelding (public/cookies.js).
+  analytics: "G-MWXCPP6KM0",
   description: "De theateragenda van Nederland en België: alle aankomende cabaret- en comedyvoorstellingen, theaters en artiesten op één plek.",
   // Sociale media: icoon in de footer en sameAs in de gestructureerde gegevens van de organisatie.
   social: [
@@ -165,11 +167,16 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     </a>
     <p>Cabaret en comedy in Nederland en België, verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
     <div class="footer-contact">
-    <p class="contact">Contact: <a href="mailto:${SITE.email}">${SITE.email}</a></p>
+    <p class="contact">Contact: <a href="mailto:${SITE.email}">${SITE.email}</a> · <a href="/privacy/">Privacy</a></p>
     <ul class="social" aria-label="Volg ons">${SITE.social.map((s) => `<li><a href="${esc(s.url)}" rel="me noopener" target="_blank" aria-label="${esc(s.naam)} (opent in nieuw venster)" title="${esc(s.naam)}">${s.icoon}</a></li>`).join("")}</ul>
     </div>
   </div>
-</footer>
+</footer>${noindex ? "" : `
+<div class="cookies" id="cookies" role="region" aria-label="Cookiemelding" hidden>
+  <p>Mogen we met Google Analytics meten hoe de site wordt gebruikt? Dat helpt ons de agenda beter te maken en gebruikt cookies. <a href="/privacy/">Meer over privacy</a></p>
+  <div class="cookies-knoppen"><button type="button" data-keuze="ja">Akkoord</button><button type="button" data-keuze="nee">Liever niet</button></div>
+</div>
+<script src="/cookies.js?v=${VERSIE["cookies.js"]}" data-ga="${SITE.analytics}" defer></script>`}
 <script src="/agenda.js?v=${VERSIE["agenda.js"]}" defer></script>
 </body>
 </html>
@@ -1286,6 +1293,28 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return layout({ title: `${t.naam}${t.naam.includes(t.plaats) ? "" : ` ${t.plaats}`}: cabaret en comedy`, description: desc, path: `/theaters/${t.id}/`, section: "theaters", body, schema: { kruimels: [["Theaters", "/theaters/"], [t.naam, `/theaters/${t.id}/`]], hoofd: { "@id": zaalLd(t.id)["@id"] }, extra: [{ ...zaalLd(t.id), containedInPlace: plaatsLd(t.plaats) }, ...eventsLd(list), ...(list.length ? [faqLd(theaterVragen(t, list), `/theaters/${t.id}/`)] : [])] } });
   }
 
+  function privacy() {
+    const body = `<section class="block wrap" aria-labelledby="t">
+      <div class="block-head"><h1 id="t">Privacy en cookies</h1></div>
+      <div class="prose">
+        <p>Cabaretiers.com is een agenda: je hoeft geen account te maken en we vragen je geen gegevens. Wat we wel doen, staat hieronder.</p>
+        <h2 id="analytics">Bezoekersstatistieken (Google Analytics)</h2>
+        <p>Alleen als je in de cookiemelding op <em>Akkoord</em> klikt, meten we met Google Analytics hoe de site wordt gebruikt: welke pagina's je bekijkt, via welke site of zoekterm je binnenkomt, het soort apparaat en browser, en ongeveer in welk land of welke plaats je bent. Google Analytics zet daarvoor cookies (<code>_ga</code>). Klik je op <em>Liever niet</em>, dan laden we Google Analytics niet en worden er geen cookies gezet.</p>
+        <p>We gebruiken deze cijfers alleen om de agenda te verbeteren en om te laten zien hoeveel mensen de site bezoeken, niet voor advertenties. Google bewaart de gegevens maximaal 14 maanden. Volgens Google slaat Google Analytics geen IP-adressen op. Google kan gegevens verwerken in de Verenigde Staten, onder het EU-VS-gegevensprivacykader.</p>
+        <p><button type="button" class="knop-secundair" data-cookies-wijzig hidden>Cookiekeuze wijzigen</button></p>
+        <h2 id="opslag">Wat er in je browser blijft staan</h2>
+        <p>Je keuze in de cookiemelding bewaren we in je eigen browser (<code>cabaretiers-cookies</code>), zodat we het niet elke keer opnieuw vragen. Dat gaat niet naar ons of naar anderen.</p>
+        <h2 id="links">Links naar theaters en sociale media</h2>
+        <p>Via <em>Tickets</em> ga je naar de site van het theater of de artiest, en via de iconen onderaan naar onze pagina's op Instagram, Facebook, YouTube en TikTok. Daar gelden hun eigen privacyregels.</p>
+        <h2 id="mail">Mail</h2>
+        <p>Mail je ons, dan gebruiken we je adres alleen om je te antwoorden.</p>
+        <h2 id="rechten">Vragen</h2>
+        <p>Vragen over privacy, of wil je weten welke gegevens we van je hebben? Mail naar <a href="mailto:${SITE.email}">${SITE.email}</a>. Ben je het niet eens met hoe we met je gegevens omgaan, dan kun je een klacht indienen bij de <a href="https://www.autoriteitpersoonsgegevens.nl/" rel="noopener">Autoriteit Persoonsgegevens</a>.</p>
+      </div>
+    </section>`;
+    return layout({ title: "Privacy en cookies", description: "Hoe Cabaretiers.com omgaat met bezoekersstatistieken, cookies en je gegevens.", path: "/privacy/", body, schema: { kruimels: [["Privacy en cookies", "/privacy/"]] } });
+  }
+
   function about() {
     const bronnen = zalenMetData.filter((t) => t.website).sort((a, b) => a.plaats.localeCompare(b.plaats, "nl") || a.naam.localeCompare(b.naam, "nl"));
     const body = `<section class="block wrap" aria-labelledby="t">
@@ -1384,7 +1413,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   return {
     controlePagina,
-    home, agendaIndex, agendaMaand, plaatsIndex, plaatsPagina, artistIndex, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, notFound,
+    home, agendaIndex, agendaMaand, plaatsIndex, plaatsPagina, artistIndex, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
   };
 }
