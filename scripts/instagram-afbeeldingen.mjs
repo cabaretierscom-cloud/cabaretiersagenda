@@ -1,6 +1,7 @@
 // Maakt logobestanden voor Instagram in ontwerp/logo/instagram/ (PNG, 1080 px breed):
 // profielfoto (donker en licht), het volledige logo in een vierkant (licht en donker),
-// een story-achtergrond (1080x1920) en het beeldmerk op een doorzichtige achtergrond.
+// een story-achtergrond (1080x1920), het beeldmerk op een doorzichtige achtergrond en de kop
+// voor e-mails (public/mail-kop.png, online op /mail-kop.png).
 // Gebruik: npm run build && node scripts/instagram-afbeeldingen.mjs  (Playwright moet beschikbaar zijn)
 import { readFileSync, mkdirSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -35,6 +36,7 @@ const bestanden = {
   "logo-donker": "logo-vierkant-donker.png",
   story: "story-achtergrond.png",
   beeldmerk: "beeldmerk-transparant.png",
+  mailkop: "../../../public/mail-kop.png",
 };
 for (const [id, naam] of Object.entries(bestanden)) {
   await page.locator(`#${id}`).screenshot({ path: join(uit, naam), omitBackground: id === "beeldmerk" });

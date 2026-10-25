@@ -28,6 +28,12 @@
   .story .wordmark .tld { font-size: 60px; }
   .story .ondertitel { font-size: 30px; margin-top: 20px; padding-left: 4px; }
   .story .adres { position: absolute; bottom: 140px; font-family: var(--font-body, sans-serif); font-weight: 600; font-size: 40px; color: #FFFFFF; letter-spacing: .02em; }
+  /* Kop voor e-mails (op 600 px breed getoond, dus 2x zo groot gemaakt). */
+  .mailkop { width: 1200px; height: 280px; gap: 4px; }
+  .mailkop .merk svg { width: 150px; height: 150px; display: block; }
+  .mailkop .wordmark { font-size: 120px; }
+  .mailkop .wordmark .tld { font-size: 42px; }
+  .mailkop .ondertitel { font-size: 22px; margin-top: 12px; padding-left: 3px; }
   .transparant { width: 1080px; height: 1080px; }
   .transparant svg { width: 1080px; height: 1080px; display: block; }
 </style>
@@ -38,6 +44,7 @@
   <div class="vlak licht vierkant" id="logo-licht"><span class="merk merk-met"></span><span class="logo-tekst"><span class="wordmark"><span class="woord"></span><span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span></div>
   <div class="vlak donker vierkant" id="logo-donker"><span class="merk merk-zonder"></span><span class="logo-tekst"><span class="wordmark"><span class="woord"></span><span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span></div>
   <div class="vlak donker story" id="story"><span class="merk merk-zonder"></span><span class="logo-tekst"><span class="wordmark"><span class="woord"></span><span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span><span class="adres">www.cabaretiers.com</span></div>
+  <div class="vlak donker mailkop" id="mailkop"><span class="merk merk-zonder"></span><span class="logo-tekst"><span class="wordmark"><span class="woord"></span><span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span></div>
   <div class="transparant" id="beeldmerk"><span class="merk-met"></span></div>
 </body>
 </html>
