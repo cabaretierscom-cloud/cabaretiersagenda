@@ -107,7 +107,9 @@ export function loadData(dir, { today }) {
   }
 
   // Promotiemateriaal: de foto vervangt een Wikimedia-foto, video's komen op de artiestpagina.
-  // Staat de artiest (nog) niet in de agenda, dan ligt het klaar voor later.
+  // Hoort de foto bij een voorstelling, dan staat hij ook op de voorstellingspagina; de artiest houdt
+  // de eerste promofoto. Staat de artiest (nog) niet in de agenda, dan ligt het klaar voor later.
+  const promoFoto = new Set();
   for (const p of promo) {
     const waar = `promo ${p.artiest}`;
     if (!p.van || !p.toestemming) errors.push(`${waar}: van wie en welke toestemming zijn verplicht`);
@@ -118,13 +120,15 @@ export function loadData(dir, { today }) {
     for (const r of p.recensies || []) if (!r.medium || !r.citaat || (r.sterren != null && !(Number.isInteger(r.sterren) && r.sterren >= 1 && r.sterren <= 5))) errors.push(`${waar}: recensie zonder krant of citaat, of met ongeldige sterren`);
     const a = artiesten.find((x) => x.naam === p.artiest);
     if (!a) continue;
-    if (p.foto) a.foto = { licentie: `met toestemming van ${p.van}`, ...p.foto };
+    const foto = p.foto && { licentie: `met toestemming van ${p.van}`, ...p.foto };
+    if (foto && !promoFoto.has(a.id)) { a.foto = foto; promoFoto.add(a.id); }
     if (p.videos?.length) a.videos = p.videos;
     // Tekst en persquotes horen bij de voorstelling met die titel; staat die er (nog) niet, dan later.
     const gewoon = (t) => String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
     // Dezelfde titel, of de titel met een toevoeging tussen haakjes ("Gelukskoekje (leesvoorstelling)").
     const v = p.voorstelling && voorstellingen.find((x) => x.artiesten?.includes(a.id) && (gewoon(x.titel) === gewoon(p.voorstelling) || x.titel.toLowerCase().startsWith(`${p.voorstelling.toLowerCase()} (`)));
     if (!v) continue;
+    if (foto) v.foto = foto;
     if (p.tekst?.length) v.promotekst = { alineas: p.tekst, van: p.van, bron: p.bron || p.foto?.bron || null };
     // Persquotes erbij, behalve als dezelfde krant hetzelfde citaat al via een theater heeft.
     const woorden = (t) => new Set(gewoon(t).split(" "));

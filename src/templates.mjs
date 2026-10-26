@@ -258,15 +258,17 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     };
   };
   // Foto van een artiest of een zaal (een zaal herken je aan de plaats).
+  // Foto van een artiest, zaal (heeft een plaats) of voorstelling (heeft een titel).
+  const fotoPad = (a) => a.titel ? voorstellingPad.get(a.id) : `${a.plaats ? "/theaters" : "/artiesten"}/${a.id}/`;
   const fotoLd = (a) => ({
-    "@type": "ImageObject", "@id": URL(`${a.plaats ? "/theaters" : "/artiesten"}/${a.id}/#foto`),
+    "@type": "ImageObject", "@id": URL(`${fotoPad(a)}#foto`),
     url: URL(a.foto.bestand), contentUrl: URL(a.foto.bestand), encodingFormat: "image/jpeg",
     name: a.foto.alt, caption: a.foto.alt, description: a.foto.alt, inLanguage: "nl",
     ...(a.foto.breedte ? { width: a.foto.breedte, height: a.foto.hoogte } : {}),
     ...(a.foto.datum ? { dateCreated: a.foto.datum } : {}),
     creditText: a.foto.maker, copyrightNotice: `${a.foto.maker}, ${a.foto.licentie}`,
     ...(a.foto.licentieUrl ? { license: a.foto.licentieUrl } : {}), acquireLicensePage: a.foto.bron,
-    about: { "@id": a.plaats ? URL(`/theaters/${a.id}/#zaal`) : URL(`/artiesten/${a.id}/#artiest`) },
+    about: { "@id": URL(fotoPad(a) + (a.titel ? "#voorstelling" : a.plaats ? "#zaal" : "#artiest")) },
   });
   // Eerste artiest met een foto bij een voorstelling.
   const fotoArtiest = (vid) => V.get(vid).artiesten.map((x) => A.get(x)).find((x) => x.foto);
@@ -296,8 +298,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       inLanguage: t.land === "BE" ? "nl-BE" : "nl-NL",
       location: zaalLd(g.theater),
-      // Afbeelding: de artiest, anders de zaal, anders de deelafbeelding van de site.
-      image: [URL(fotoArtiest(g.voorstelling)?.foto.bestand || t.foto?.bestand || "/deelafbeelding.png")],
+      // Afbeelding: de voorstelling, anders de artiest, anders de zaal, anders de deelafbeelding van de site.
+      image: [URL(v.foto?.bestand || fotoArtiest(g.voorstelling)?.foto.bestand || t.foto?.bestand || "/deelafbeelding.png")],
       ...(v.artiesten.length ? { performer: v.artiesten.map(artiestLd) } : {}),
       // De zaal programmeert de voorstelling en verkoopt de kaarten.
       organizer: { "@type": "Organization", name: t.naam, ...(t.website ? { url: t.website } : {}) },
@@ -1327,9 +1329,12 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const list = up.filter((g) => g.voorstelling === vid);
     const steden = new Set(list.map((g) => T.get(g.theater).plaats)).size;
     const beste = (v.recensies || []).find((r) => r.sterren);
-    const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap">
-        <h1>${esc(v.titel)}</h1>
-        <p>Voorstelling van ${artistLinks(vid)}. ${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.</p>
+    const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap${v.foto ? " hero-met-foto" : ""}">
+        <div class="hero-tekst">
+          <h1${Math.max(...v.titel.split(/\s+/).map((w) => w.length)) > 12 ? ' class="lang"' : ""}>${esc(v.titel)}</h1>
+          <p>Voorstelling van ${artistLinks(vid)}. ${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.</p>
+        </div>
+        ${v.foto ? fotoHtml(v) : ""}
       </div></div>
       <div class="wrap detail-body">
         ${promotekstHtml(v)}
@@ -1340,12 +1345,12 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const desc = kort(`${v.titel} van ${artistNames(vid)}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden, "plaats", "plaatsen")}. Eerstvolgende op ${fmt.full(list[0].datum)}.${beste ? ` ${beste.medium}: ${plural(beste.sterren, "ster", "sterren")}.` : ""} Bekijk alle speeldata.`);
     return layout({ title: `${v.titel} van ${artistNames(vid)}: speeldata`, description: desc, path: voorstellingPad.get(vid), section: "artiesten", body, schema: {
       kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`], [v.titel, voorstellingPad.get(vid)]],
-      foto: fotoArtiest(vid) || null,
+      foto: v.foto ? v : fotoArtiest(vid) || null,
       hoofd: { "@id": URL(voorstellingPad.get(vid) + "#voorstelling") },
       extra: [{
         "@type": "EventSeries", "@id": URL(voorstellingPad.get(vid) + "#voorstelling"), name: v.titel, url: URL(voorstellingPad.get(vid)),
         description: desc, performer: v.artiesten.map(artiestLd),
-        ...(fotoArtiest(vid) ? { image: { "@id": URL(`/artiesten/${fotoArtiest(vid).id}/#foto`) } } : {}),
+        ...(v.foto || fotoArtiest(vid) ? { image: { "@id": fotoLd(v.foto ? v : fotoArtiest(vid))["@id"] } } : {}),
         startDate: isoWithOffset(list[0].datum, list[0].tijd), endDate: isoWithOffset(list.at(-1).datum, list.at(-1).tijd),
         subEvent: list.slice(0, 100).map((g) => ({ "@id": eventId(g) })),
       }, ...eventsLd(list)],
