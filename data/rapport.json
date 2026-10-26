@@ -1,12 +1,12 @@
 {
   "datum": "2026-10-26",
   "totaal": {
-    "speeldata": 5309,
-    "komend": 5242,
-    "artiesten": 457,
-    "zalen": 441,
-    "plaatsen": 324,
-    "voorstellingen": 644
+    "speeldata": 5741,
+    "komend": 5674,
+    "artiesten": 460,
+    "zalen": 577,
+    "plaatsen": 423,
+    "voorstellingen": 655
   },
   "bronnen": [
     {
@@ -230,7 +230,7 @@
       "naam": "De Nieuwe Kolk",
       "opgehaald": "2026-10-26",
       "speeldata": 57,
-      "vorige": 56,
+      "vorige": 57,
       "dubbel": 0
     },
     {
@@ -254,7 +254,7 @@
       "naam": "Orpheus",
       "opgehaald": "2026-10-26",
       "speeldata": 58,
-      "vorige": 71,
+      "vorige": 58,
       "dubbel": 0
     },
     {
@@ -426,11 +426,19 @@
       "dubbel": 0
     },
     {
+      "bron": "5to9",
+      "naam": "Agenda van 5to9",
+      "opgehaald": "2026-10-26",
+      "speeldata": 432,
+      "vorige": 429,
+      "dubbel": 54
+    },
+    {
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-10-26",
       "speeldata": 1969,
-      "vorige": 1965,
+      "vorige": 1969,
       "dubbel": 1041
     }
   ],
@@ -459,6 +467,18 @@
       {
         "id": "wouter-deprez",
         "naam": "Wouter Deprez"
+      },
+      {
+        "id": "amelie-albrecht",
+        "naam": "Amelie Albrecht"
+      },
+      {
+        "id": "gili",
+        "naam": "Gili"
+      },
+      {
+        "id": "jasper-posson",
+        "naam": "Jasper Posson"
       }
     ],
     "zalen": [
@@ -804,6 +824,958 @@
         "plaats": "Zevenaar",
         "land": "NL",
         "website": "https://liemerskunstwerk.nl"
+      },
+      {
+        "id": "sint-corneliuskerk-aalbeke",
+        "naam": "Sint Corneliuskerk",
+        "plaats": "Aalbeke",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "arta-a-theater-aalter",
+        "naam": "ArtA'A Theater",
+        "plaats": "Aalter",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cultuur-centraal-aartselaar",
+        "naam": "Cultuur Centraal",
+        "plaats": "Aartselaar",
+        "land": "BE",
+        "website": "https://www.cc-aa.be"
+      },
+      {
+        "id": "oc-de-kwelle-alveringem",
+        "naam": "OC De Kwelle",
+        "plaats": "Alveringem",
+        "land": "BE",
+        "website": "https://www.alveringem.be"
+      },
+      {
+        "id": "wolf-antwerpen",
+        "naam": "Wolf",
+        "plaats": "Antwerpen",
+        "land": "BE",
+        "website": "https://www.lunatics.be"
+      },
+      {
+        "id": "t-molenhuis-anzegem",
+        "naam": "'t Molenhuis",
+        "plaats": "Anzegem",
+        "land": "BE",
+        "website": "https://herbergtmolenhuis.be"
+      },
+      {
+        "id": "theaterzaal-gemeentepunt-anzegem",
+        "naam": "Theaterzaal Gemeentepunt",
+        "plaats": "Anzegem",
+        "land": "BE",
+        "website": "https://www.anzegem.be"
+      },
+      {
+        "id": "gc-t-hofland-ardooie",
+        "naam": "GC 't Hofland",
+        "plaats": "Ardooie",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cultuurcentrum-asse",
+        "naam": "Cultuurcentrum Asse",
+        "plaats": "Asse",
+        "land": "BE",
+        "website": "https://www.ccasse.be"
+      },
+      {
+        "id": "gc-spikkerelle-avelgem",
+        "naam": "GC Spikkerelle",
+        "plaats": "Avelgem",
+        "land": "BE",
+        "website": "https://www.avelgem.be"
+      },
+      {
+        "id": "de-kruierie-balen",
+        "naam": "De Kruierie",
+        "plaats": "Balen",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cultuurhuis-stroming-berlare",
+        "naam": "Cultuurhuis Stroming",
+        "plaats": "Berlare",
+        "land": "BE",
+        "website": "https://beleefberlare.be"
+      },
+      {
+        "id": "de-kimpel-bilzen-hoeselt",
+        "naam": "De Kimpel",
+        "plaats": "Bilzen-Hoeselt",
+        "land": "BE",
+        "website": "https://www.cultuurhuisbilzenhoeselt.be"
+      },
+      {
+        "id": "gc-de-kroon-bocholt",
+        "naam": "GC De Kroon",
+        "plaats": "Bocholt",
+        "land": "BE",
+        "website": "https://dekroon.bocholt.be"
+      },
+      {
+        "id": "gc-t-blikveld-bonheiden",
+        "naam": "GC 't Blikveld",
+        "plaats": "Bonheiden",
+        "land": "BE",
+        "website": "https://www.blikveld.be"
+      },
+      {
+        "id": "oc-t-centrum-brecht",
+        "naam": "OC 't Centrum",
+        "plaats": "Brecht",
+        "land": "BE",
+        "website": "https://www.brecht.be"
+      },
+      {
+        "id": "mec-staf-versluys-bredene",
+        "naam": "MEC Staf Versluys",
+        "plaats": "Bredene",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "sjoeboe-pop-up-theater-bredene",
+        "naam": "Sjoeboe pop-up theater",
+        "plaats": "Bredene",
+        "land": "BE",
+        "website": "https://asfactory.be"
+      },
+      {
+        "id": "jeugdhuis-t-schuur-breendonk",
+        "naam": "Jeugdhuis 't Schuur",
+        "plaats": "Breendonk",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "biekorf-brugge",
+        "naam": "Biekorf",
+        "plaats": "Brugge",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "snuffel-comedy-club-brugge",
+        "naam": "Snuffel Comedy Club",
+        "plaats": "Brugge",
+        "land": "BE",
+        "website": "https://snuffel.be"
+      },
+      {
+        "id": "tto-brussel",
+        "naam": "TTO",
+        "plaats": "Brussel",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "gc-de-pit-buggenhout",
+        "naam": "GC De Pit",
+        "plaats": "Buggenhout",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "aan-zee-de-panne",
+        "naam": "Aan Zee",
+        "plaats": "De Panne",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "de-verloren-gernoare-de-panne",
+        "naam": "De Verloren Gernoare",
+        "plaats": "De Panne",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "ocp-de-pinte",
+        "naam": "OCP",
+        "plaats": "De Pinte",
+        "land": "BE",
+        "website": "https://www.depinteleeft.be"
+      },
+      {
+        "id": "d-iefte-deerlijk",
+        "naam": "D'Iefte",
+        "plaats": "Deerlijk",
+        "land": "BE",
+        "website": "https://www.deerlijk.be"
+      },
+      {
+        "id": "souplex-cafe-deinze",
+        "naam": "Souplex cafe",
+        "plaats": "Deinze",
+        "land": "BE",
+        "website": "https://www.deinze.be"
+      },
+      {
+        "id": "de-spot-denderhoutem",
+        "naam": "De Spot",
+        "plaats": "Denderhoutem",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-kruispunt-diksmuide",
+        "naam": "CC Kruispunt",
+        "plaats": "Diksmuide",
+        "land": "BE",
+        "website": "https://www.cckruispunt.be"
+      },
+      {
+        "id": "schouwburg-diksmuide",
+        "naam": "Schouwburg Diksmuide",
+        "plaats": "Diksmuide",
+        "land": "BE",
+        "website": "https://www.cckruispunt.be"
+      },
+      {
+        "id": "westrand-dilbeek",
+        "naam": "Westrand",
+        "plaats": "Dilbeek",
+        "land": "BE",
+        "website": "https://www.westrand.be"
+      },
+      {
+        "id": "oc-de-klakeye-dranouter",
+        "naam": "OC De Klakeye",
+        "plaats": "Dranouter",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "kasteel-hof-de-bist-ekeren",
+        "naam": "Kasteel Hof De Bist",
+        "plaats": "Ekeren",
+        "land": "BE",
+        "website": "https://hofdebist.antwerpen.be"
+      },
+      {
+        "id": "emotia-erpe-mere",
+        "naam": "Emotia",
+        "plaats": "Erpe-Mere",
+        "land": "BE",
+        "website": "https://www.emotia.be"
+      },
+      {
+        "id": "cultuurcentrum-evergem",
+        "naam": "Cultuurcentrum Evergem",
+        "plaats": "Evergem",
+        "land": "BE",
+        "website": "https://www.cultuurcentrumevergem.be"
+      },
+      {
+        "id": "baljuwhuis-galmaarden",
+        "naam": "Baljuwhuis",
+        "plaats": "Galmaarden",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "de-racing-gavere",
+        "naam": "De Racing",
+        "plaats": "Gavere",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "publika-gent",
+        "naam": "Publika",
+        "plaats": "Gent",
+        "land": "BE",
+        "website": "https://levelscomedyclub.be"
+      },
+      {
+        "id": "vooruit-gent",
+        "naam": "Vooruit",
+        "plaats": "Gent",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "arjaan-theater-geraardsbergen",
+        "naam": "Arjaan Theater",
+        "plaats": "Geraardsbergen",
+        "land": "BE",
+        "website": "https://www.ccdeabdij.be"
+      },
+      {
+        "id": "den-belgiek-geraardsbergen",
+        "naam": "Den Belgiek",
+        "plaats": "Geraardsbergen",
+        "land": "BE",
+        "website": "https://denbelgiek.be"
+      },
+      {
+        "id": "vc-zomerloos-gistel",
+        "naam": "VC Zomerloos",
+        "plaats": "Gistel",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-strombeek-grimbergen",
+        "naam": "CC Strombeek",
+        "plaats": "Grimbergen",
+        "land": "BE",
+        "website": "https://www.ccstrombeek.be"
+      },
+      {
+        "id": "kaffee-claude-haacht",
+        "naam": "Kaffee Claude",
+        "plaats": "Haacht",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "rotahoeve-hamme",
+        "naam": "Rotahoeve",
+        "plaats": "Hamme",
+        "land": "BE",
+        "website": "https://rotahoeve.be"
+      },
+      {
+        "id": "cc-het-spoor-harelbeke",
+        "naam": "CC Het Spoor",
+        "plaats": "Harelbeke",
+        "land": "BE",
+        "website": "https://www.cchetspoor.be"
+      },
+      {
+        "id": "trukendoos-harelbeke",
+        "naam": "Trukendoos",
+        "plaats": "Harelbeke",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "de-living-heist-op-den-berg",
+        "naam": "De Living",
+        "plaats": "Heist-op-den-Berg",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "de-markhallen-herk-de-stad",
+        "naam": "De Markhallen",
+        "plaats": "Herk-de-Stad",
+        "land": "BE",
+        "website": "https://www.herk-de-stad.be"
+      },
+      {
+        "id": "cc-de-steenoven-herzele",
+        "naam": "CC De Steenoven",
+        "plaats": "Herzele",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "the-pitch-heule",
+        "naam": "The Pitch",
+        "plaats": "Heule",
+        "land": "BE",
+        "website": "https://thepitch.be"
+      },
+      {
+        "id": "gravenhof-hoboken",
+        "naam": "Gravenhof",
+        "plaats": "Hoboken",
+        "land": "BE",
+        "website": "https://gravenhof.antwerpen.be"
+      },
+      {
+        "id": "joc-ieper",
+        "naam": "JOC Ieper",
+        "plaats": "Ieper",
+        "land": "BE",
+        "website": "https://www.hetperron.be"
+      },
+      {
+        "id": "stadsschouwburg-ieper",
+        "naam": "Stadsschouwburg Ieper",
+        "plaats": "Ieper",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "de-leest-izegem",
+        "naam": "De Leest",
+        "plaats": "Izegem",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "zaal-joc-izegem",
+        "naam": "Zaal JOC",
+        "plaats": "Izegem",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "vrijetijdscentrum-jabbeke",
+        "naam": "Vrijetijdscentrum",
+        "plaats": "Jabbeke",
+        "land": "BE",
+        "website": "https://www.forzavarsa.be"
+      },
+      {
+        "id": "de-krop-kampenhout",
+        "naam": "De Krop",
+        "plaats": "Kampenhout",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "sock-kaprijke",
+        "naam": "SOCK",
+        "plaats": "Kaprijke",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "de-brug-kluisbergen",
+        "naam": "De Brug",
+        "plaats": "Kluisbergen",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-de-balluchon-koekelare",
+        "naam": "CC De Balluchon",
+        "plaats": "Koekelare",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "de-beuk-kortemark",
+        "naam": "De Beuk",
+        "plaats": "Kortemark",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "oc-aalbeke-kortrijk",
+        "naam": "OC Aalbeke",
+        "plaats": "Kortrijk",
+        "land": "BE",
+        "website": "https://www.schouwburgkortrijk.be"
+      },
+      {
+        "id": "schouwburg-kortrijk",
+        "naam": "Schouwburg Kortrijk",
+        "plaats": "Kortrijk",
+        "land": "BE",
+        "website": "https://www.schouwburgkortrijk.be"
+      },
+      {
+        "id": "gc-de-lijsterbes-kraainem",
+        "naam": "GC De Lijsterbes",
+        "plaats": "Kraainem",
+        "land": "BE",
+        "website": "https://www.delijsterbes.be"
+      },
+      {
+        "id": "de-ververie-kuurne",
+        "naam": "De Ververie",
+        "plaats": "Kuurne",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "kubox-kuurne",
+        "naam": "Kubox",
+        "plaats": "Kuurne",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cultuurcentrum-lanaken",
+        "naam": "Cultuurcentrum Lanaken",
+        "plaats": "Lanaken",
+        "land": "BE",
+        "website": "https://www.cclanaken.be"
+      },
+      {
+        "id": "de-l-nk-ledegem",
+        "naam": "De L!nk",
+        "plaats": "Ledegem",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "de-zwerver-leffinge",
+        "naam": "De Zwerver",
+        "plaats": "Leffinge",
+        "land": "BE",
+        "website": "https://www.middelkerke.be"
+      },
+      {
+        "id": "oc-de-schouw-lichtervelde",
+        "naam": "OC De Schouw",
+        "plaats": "Lichtervelde",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "oc-de-lier-lierde",
+        "naam": "OC De Lier",
+        "plaats": "Lierde",
+        "land": "BE",
+        "website": "https://www.tlevenlacht.be"
+      },
+      {
+        "id": "jh-lodejo-lochristi",
+        "naam": "JH Lodejo",
+        "plaats": "Lochristi",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-adelberg-lommel",
+        "naam": "CC Adelberg",
+        "plaats": "Lommel",
+        "land": "BE",
+        "website": "https://www.ccdeadelberg.be"
+      },
+      {
+        "id": "cc-achterolmen-maaseik",
+        "naam": "CC Achterolmen",
+        "plaats": "Maaseik",
+        "land": "BE",
+        "website": "https://www.achterolmen.be"
+      },
+      {
+        "id": "den-hoogen-pad-maldegem",
+        "naam": "Den Hoogen Pad",
+        "plaats": "Maldegem",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "oc-marke",
+        "naam": "OC Marke",
+        "plaats": "Marke",
+        "land": "BE",
+        "website": "https://www.schouwburgkortrijk.be"
+      },
+      {
+        "id": "t-neerhof-meise",
+        "naam": "'t Neerhof",
+        "plaats": "Meise",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "feestzaal-astoria-menen",
+        "naam": "Feestzaal Astoria",
+        "plaats": "Menen",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "het-applauws-menen",
+        "naam": "Het Applauws",
+        "plaats": "Menen",
+        "land": "BE",
+        "website": "https://www.ccdesteiger.be"
+      },
+      {
+        "id": "schouwburg-noord-merksem",
+        "naam": "Schouwburg Noord",
+        "plaats": "Merksem",
+        "land": "BE",
+        "website": "https://www.schouwburgnoord.be"
+      },
+      {
+        "id": "de-branding-middelkerke",
+        "naam": "De Branding",
+        "plaats": "Middelkerke",
+        "land": "BE",
+        "website": "https://www.middelkerke.be"
+      },
+      {
+        "id": "gc-de-bunder-moorslede",
+        "naam": "GC De Bunder",
+        "plaats": "Moorslede",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "kaleidoscoop-mortsel",
+        "naam": "Kaleidoscoop",
+        "plaats": "Mortsel",
+        "land": "BE",
+        "website": "https://kaleidoscoop.be"
+      },
+      {
+        "id": "cc-nova-nazareth-de-pinte",
+        "naam": "CC Nova",
+        "plaats": "Nazareth-De Pinte",
+        "land": "BE",
+        "website": "https://popallure.be"
+      },
+      {
+        "id": "jh-jokot-niel",
+        "naam": "JH Jokot",
+        "plaats": "Niel",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "centrum-ysara-nieuwpoort",
+        "naam": "Centrum Ysara",
+        "plaats": "Nieuwpoort",
+        "land": "BE",
+        "website": "https://www.cultuurnieuwpoort.be"
+      },
+      {
+        "id": "city-nieuwpoort",
+        "naam": "City",
+        "plaats": "Nieuwpoort",
+        "land": "BE",
+        "website": "https://www.cultuurnieuwpoort.be"
+      },
+      {
+        "id": "vayamundo-oostende",
+        "naam": "Vayamundo",
+        "plaats": "Oostende",
+        "land": "BE",
+        "website": "https://www.uitinoostende.be"
+      },
+      {
+        "id": "gc-de-kluize-oosterzele",
+        "naam": "GC De Kluize",
+        "plaats": "Oosterzele",
+        "land": "BE",
+        "website": "https://gcdekluize.be"
+      },
+      {
+        "id": "de-valkaart-oostkamp",
+        "naam": "De Valkaart",
+        "plaats": "Oostkamp",
+        "land": "BE",
+        "website": "https://www.oostkamp.be"
+      },
+      {
+        "id": "de-vidange-oostkamp",
+        "naam": "De Vidange",
+        "plaats": "Oostkamp",
+        "land": "BE",
+        "website": "https://www.devidange.be"
+      },
+      {
+        "id": "oc-mandelroos-oostrozebeke",
+        "naam": "OC Mandelroos",
+        "plaats": "Oostrozebeke",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-de-woeker-oudenaarde",
+        "naam": "CC De Woeker",
+        "plaats": "Oudenaarde",
+        "land": "BE",
+        "website": "https://www.oudenaarde.be"
+      },
+      {
+        "id": "t-poorthuis-peer",
+        "naam": "'t Poorthuis",
+        "plaats": "Peer",
+        "land": "BE",
+        "website": "https://www.peer.be"
+      },
+      {
+        "id": "oc-concorde-pollinkhove",
+        "naam": "OC Concorde",
+        "plaats": "Pollinkhove",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-binder-puurs-sint-amands",
+        "naam": "CC Binder",
+        "plaats": "Puurs-Sint-Amands",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "studio-t-stalleke-reet",
+        "naam": "Studio 't Stalleke",
+        "plaats": "Reet",
+        "land": "BE",
+        "website": "https://www.studiotstalleke.be"
+      },
+      {
+        "id": "taf-roeselare",
+        "naam": "TAF",
+        "plaats": "Roeselare",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "ter-walle-roeselare",
+        "naam": "Ter Walle",
+        "plaats": "Roeselare",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "beythemkerke-roeselare-beitem",
+        "naam": "Beythemkerke",
+        "plaats": "Roeselare-Beitem",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "buurthuis-rollegem",
+        "naam": "Buurthuis Rollegem",
+        "plaats": "Rollegem",
+        "land": "BE",
+        "website": "https://www.luxfestival.be"
+      },
+      {
+        "id": "cc-de-ververij-ronse",
+        "naam": "CC De Ververij",
+        "plaats": "Ronse",
+        "land": "BE",
+        "website": "https://www.ronse.be"
+      },
+      {
+        "id": "ocar-rumbeke",
+        "naam": "Ocar",
+        "plaats": "Rumbeke",
+        "land": "BE",
+        "website": "https://www.ksvrumbeke.be"
+      },
+      {
+        "id": "de-gam-rumst",
+        "naam": "de Gam",
+        "plaats": "Rumst",
+        "land": "BE",
+        "website": "https://www.rumst.be"
+      },
+      {
+        "id": "gc-den-egger-scherpenheuvel-zichem",
+        "naam": "GC Den Egger",
+        "plaats": "Scherpenheuvel-Zichem",
+        "land": "BE",
+        "website": "https://www.scherpenheuvel-zichem.be"
+      },
+      {
+        "id": "werf-44-schilde",
+        "naam": "Werf 44",
+        "plaats": "Schilde",
+        "land": "BE",
+        "website": "https://www.werf44.be"
+      },
+      {
+        "id": "de-l-nk-sint-eloois-winkel",
+        "naam": "De L!nk",
+        "plaats": "Sint-Eloois-Winkel",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "oc-merselborre-sint-pieters-leeuw",
+        "naam": "OC Merselborre",
+        "plaats": "Sint-Pieters-Leeuw",
+        "land": "BE",
+        "website": "https://www.sint-pieters-leeuw.be"
+      },
+      {
+        "id": "cultuurhuis-stekene",
+        "naam": "Cultuurhuis Stekene",
+        "plaats": "Stekene",
+        "land": "BE",
+        "website": "https://www.cultuurhuisstekene.be"
+      },
+      {
+        "id": "roxy-temse",
+        "naam": "Roxy",
+        "plaats": "Temse",
+        "land": "BE",
+        "website": "https://www.cultuurcentrumtemse.be"
+      },
+      {
+        "id": "cc-de-warandepoort-tervuren",
+        "naam": "CC De Warandepoort",
+        "plaats": "Tervuren",
+        "land": "BE",
+        "website": "https://www.dewarandepoort.be"
+      },
+      {
+        "id": "gc-de-maere-tielt-winge",
+        "naam": "GC De Maere",
+        "plaats": "Tielt-Winge",
+        "land": "BE",
+        "website": "https://www.tielt-winge.be"
+      },
+      {
+        "id": "cc-de-brouckre-torhout",
+        "naam": "CC De Brouckre",
+        "plaats": "Torhout",
+        "land": "BE",
+        "website": "https://www.ccdebrouckere.be"
+      },
+      {
+        "id": "jh-t-kalf-veldegem",
+        "naam": "JH 't Kalf",
+        "plaats": "Veldegem",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "herberg-t-molenhuis-vichte",
+        "naam": "Herberg 't Molenhuis",
+        "plaats": "Vichte",
+        "land": "BE",
+        "website": "https://herbergtmolenhuis.be"
+      },
+      {
+        "id": "de-dreef-vorselaar",
+        "naam": "De Dreef",
+        "plaats": "Vorselaar",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "theaterzaal-de-meermin-waasmunster",
+        "naam": "Theaterzaal De Meermin",
+        "plaats": "Waasmunster",
+        "land": "BE",
+        "website": "https://www.waasmunster.be"
+      },
+      {
+        "id": "t-kapittel-wervik",
+        "naam": "'t Kapittel",
+        "plaats": "Wervik",
+        "land": "BE",
+        "website": "https://www.wervik.be"
+      },
+      {
+        "id": "gc-gilwe-wervik",
+        "naam": "GC Gilwe",
+        "plaats": "Wervik",
+        "land": "BE",
+        "website": "https://www.wervik.be"
+      },
+      {
+        "id": "cultuurcaf-de-barriere-wevelgem",
+        "naam": "Cultuurcaf De Barriere",
+        "plaats": "Wevelgem",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "de-levensboom-wevelgem",
+        "naam": "De Levensboom",
+        "plaats": "Wevelgem",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "gc-t-gasthuis-wijnegem",
+        "naam": "GC 't Gasthuis",
+        "plaats": "Wijnegem",
+        "land": "BE",
+        "website": "https://gasthuis.wijnegem.be"
+      },
+      {
+        "id": "cc-de-ster-willebroek",
+        "naam": "CC De Ster",
+        "plaats": "Willebroek",
+        "land": "BE",
+        "website": "https://www.willebroek.be"
+      },
+      {
+        "id": "cc-de-wissel-wingene",
+        "naam": "CC De Wissel",
+        "plaats": "Wingene",
+        "land": "BE",
+        "website": "https://www.wingene.be"
+      },
+      {
+        "id": "jh-de-mutse-wingene",
+        "naam": "JH De Mutse",
+        "plaats": "Wingene",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "gc-kadans-wuustwezel",
+        "naam": "GC Kadans",
+        "plaats": "Wuustwezel",
+        "land": "BE",
+        "website": "https://www.curieus-wuustwezel.be"
+      },
+      {
+        "id": "cc-de-factorij-zaventem",
+        "naam": "CC De Factorij",
+        "plaats": "Zaventem",
+        "land": "BE",
+        "website": "https://www.ccdefactorij.be"
+      },
+      {
+        "id": "gc-de-groene-meersen-zedelgem",
+        "naam": "GC De Groene Meersen",
+        "plaats": "Zedelgem",
+        "land": "BE",
+        "website": "https://inschrijvingen.zedelgem.be"
+      },
+      {
+        "id": "gc-de-wiek-zele",
+        "naam": "GC De Wiek",
+        "plaats": "Zele",
+        "land": "BE",
+        "website": "https://www.dewiek.be"
+      },
+      {
+        "id": "gc-de-melkerij-zemst",
+        "naam": "GC De Melkerij",
+        "plaats": "Zemst",
+        "land": "BE",
+        "website": "https://www.gcdemelkerij.be"
+      },
+      {
+        "id": "oc-de-leege-platse-zonnebeke",
+        "naam": "OC De Leege Platse",
+        "plaats": "Zonnebeke",
+        "land": "BE",
+        "website": "https://mijn.zonnebeke.net"
+      },
+      {
+        "id": "theatercentrum-zwevegem",
+        "naam": "Theatercentrum",
+        "plaats": "Zwevegem",
+        "land": "BE",
+        "website": "https://www.zwevegem.be"
+      },
+      {
+        "id": "t-verborgen-theater-boekelo",
+        "naam": "'t Verborgen Theater",
+        "plaats": "Boekelo",
+        "land": "NL",
+        "website": "https://www.deburenboekelo.nl"
+      },
+      {
+        "id": "theater-de-koornbeurs-franeker",
+        "naam": "Theater de Koornbeurs",
+        "plaats": "Franeker",
+        "land": "NL",
+        "website": "https://www.theaterdekoornbeurs.nl"
       }
     ],
     "voorstellingen": [
@@ -918,6 +1890,85 @@
         "artiesten": [
           "yunus-aktas"
         ]
+      },
+      {
+        "id": "amelie-albrecht-stand-up",
+        "titel": "Stand-up",
+        "artiesten": [
+          "amelie-albrecht"
+        ]
+      },
+      {
+        "id": "arnout-van-den-bossche-burn-out-voor-beginners-duoshow",
+        "titel": "Burn-out voor Beginners - duoshow",
+        "artiesten": [
+          "arnout-van-den-bossche"
+        ]
+      },
+      {
+        "id": "arnout-van-den-bossche-de-relatiefluisteraar",
+        "titel": "De Relatiefluisteraar",
+        "artiesten": [
+          "arnout-van-den-bossche"
+        ]
+      },
+      {
+        "id": "bas-birker-stand-up",
+        "titel": "Stand-up",
+        "artiesten": [
+          "bas-birker"
+        ]
+      },
+      {
+        "id": "bert-gabriels-stand-up",
+        "titel": "Stand-up",
+        "artiesten": [
+          "bert-gabriels"
+        ]
+      },
+      {
+        "id": "bregje-iding-jeroen-dyck-peter-kluppels-humo-s-comedy-cup-finalistentour",
+        "titel": "Humo's Comedy Cup Finalistentour",
+        "artiesten": [
+          "bregje-iding",
+          "jeroen-dyck",
+          "peter-kluppels"
+        ]
+      },
+      {
+        "id": "dries-heyneman-stand-up",
+        "titel": "Stand-up",
+        "artiesten": [
+          "dries-heyneman"
+        ]
+      },
+      {
+        "id": "gili-machtig",
+        "titel": "Machtig!",
+        "artiesten": [
+          "gili"
+        ]
+      },
+      {
+        "id": "gunter-lamoot-stand-up",
+        "titel": "Stand-up",
+        "artiesten": [
+          "gunter-lamoot"
+        ]
+      },
+      {
+        "id": "jasper-posson-eeuwige-jeugd",
+        "titel": "Eeuwige Jeugd",
+        "artiesten": [
+          "jasper-posson"
+        ]
+      },
+      {
+        "id": "seppe-toremans-stand-up",
+        "titel": "Stand-up",
+        "artiesten": [
+          "seppe-toremans"
+        ]
       }
     ]
   },
@@ -934,12 +1985,12 @@
     },
     {
       "datum": "2026-10-26",
-      "speeldata": 5309,
-      "komend": 5242,
-      "artiesten": 457,
-      "zalen": 441,
-      "plaatsen": 324,
-      "voorstellingen": 644
+      "speeldata": 5741,
+      "komend": 5674,
+      "artiesten": 460,
+      "zalen": 577,
+      "plaatsen": 423,
+      "voorstellingen": 655
     }
   ]
 }

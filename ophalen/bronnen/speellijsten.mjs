@@ -96,8 +96,8 @@ const lijktZaal = (z) => z && z.length <= 70 && z.split(/\s+/).length <= 9 && !/
 
 // De site van de zaal uit de kaartlink van een rij: niet die van de artiest zelf, een kaartverkoper,
 // sociale media of een kaart.
-const GEEN_ZAAL = /facebook|instagram|youtube|twitter|x\.com|tiktok|google|maps|ticketmaster|eventim|ticketcounter|stager|eventbrite|tickettailor|ticketkantoor|paylogic|ticketscript|seetickets|yourticketprovider|weeztix|eventix|tixly|ticketmatic|avayo|comedyshows|captaincomedy|ticketshop|fullhouse|wix|linktr|spotify|apple/i;
-function zaalSite(links, artiestUrl, naam) {
+const GEEN_ZAAL = /facebook|instagram|youtube|twitter|x\.com|tiktok|google|maps|ticketmaster|eventim|ticketcounter|stager|eventbrite|tickettailor|ticketkantoor|paylogic|ticketscript|seetickets|yourticketprovider|weeztix|eventix|tixly|ticketmatic|avayo|comedyshows|captaincomedy|ticketshop|fullhouse|uitinvlaanderen|uitbureau|your-tickets|tickoweb|weticket|ticket\.monster|ticketgang|utick|ordolio|stamhoofd|ticketsforme|wicket|wix|linktr|spotify|apple/i;
+export function zaalSite(links, artiestUrl, naam) {
   const eigen = new URL(artiestUrl).hostname.replace(/^www\./, "");
   // Ook een andere site van de artiest ("najib-roue.nl" bij Najib Amhali) is geen zaal.
   const woorden = naam.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").split(/[^a-z]+/).filter((w) => w.length >= 4);
@@ -105,7 +105,7 @@ function zaalSite(links, artiestUrl, naam) {
     try {
       const u = new URL(l);
       const host = u.hostname.replace(/^www\./, "");
-      if (!/^https?:$/.test(u.protocol) || host === eigen || GEEN_ZAAL.test(host) || /^tickets?\./.test(u.hostname) || woorden.some((w) => host.includes(w))) continue;
+      if (!/^https?:$/.test(u.protocol) || host === eigen || GEEN_ZAAL.test(host) || /^(tickets?|shop|webshop|reservaties|app|apps)\./.test(u.hostname) || woorden.some((w) => host.includes(w))) continue;
       return `${u.protocol}//${u.hostname}`;
     } catch { /* geen geldig adres */ }
   }

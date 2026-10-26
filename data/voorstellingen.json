@@ -132,6 +132,14 @@
     "genre": "theaterkomedie"
   },
   {
+    "id": "amelie-albrecht-stand-up",
+    "titel": "Stand-up",
+    "artiesten": [
+      "amelie-albrecht"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "amhali-verveer-alles-is-comedy",
     "titel": "Alles is comedy",
     "artiesten": [
@@ -412,8 +420,24 @@
     "genre": "stand-up"
   },
   {
+    "id": "arnout-van-den-bossche-burn-out-voor-beginners-duoshow",
+    "titel": "Burn-out voor Beginners - duoshow",
+    "artiesten": [
+      "arnout-van-den-bossche"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "arnout-van-den-bossche-coach",
     "titel": "Coach",
+    "artiesten": [
+      "arnout-van-den-bossche"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "arnout-van-den-bossche-de-relatiefluisteraar",
+    "titel": "De Relatiefluisteraar",
     "artiesten": [
       "arnout-van-den-bossche"
     ],
@@ -493,6 +517,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "bas-birker-stand-up",
+    "titel": "Stand-up",
+    "artiesten": [
+      "bas-birker"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "bas-birker-twee-procent",
     "titel": "Twee Procent",
     "artiesten": [
@@ -543,6 +575,14 @@
   {
     "id": "bert-gabriels-live-vanuit-de-wetstraat",
     "titel": "Live vanuit de Wetstraat",
+    "artiesten": [
+      "bert-gabriels"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "bert-gabriels-stand-up",
+    "titel": "Stand-up",
     "artiesten": [
       "bert-gabriels"
     ],
@@ -774,6 +814,16 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "southend-comedy-club"
+  },
+  {
+    "id": "bregje-iding-jeroen-dyck-peter-kluppels-humo-s-comedy-cup-finalistentour",
+    "titel": "Humo's Comedy Cup Finalistentour",
+    "artiesten": [
+      "bregje-iding",
+      "jeroen-dyck",
+      "peter-kluppels"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "bregje-iding-jeroen-dyck-peter-kluppels-mc-jarno-boone-humo-s-comedy-cup-finalis",
@@ -1635,6 +1685,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "dries-heyneman-stand-up",
+    "titel": "Stand-up",
+    "artiesten": [
+      "dries-heyneman"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "dries-heyneman-voor-normale-mensen",
     "titel": "Voor Normale Mensen",
     "artiesten": [
@@ -2020,6 +2078,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "gili-machtig",
+    "titel": "Machtig!",
+    "artiesten": [
+      "gili"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "gilian-de-vries-wat-wil-ik",
     "titel": "Wat wil ik",
     "artiesten": [
@@ -2185,6 +2251,14 @@
       "gunter-lamoot"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "gunter-lamoot-stand-up",
+    "titel": "Stand-up",
+    "artiesten": [
+      "gunter-lamoot"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "han-solo-psycho-solo-lof-der-zotheid",
@@ -2534,6 +2608,14 @@
         "bron": "https://www.kampanje.nl/voorstellingen/janneke-de-bijl-rz9m"
       }
     ]
+  },
+  {
+    "id": "jasper-posson-eeuwige-jeugd",
+    "titel": "Eeuwige Jeugd",
+    "artiesten": [
+      "jasper-posson"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "jasper-van-der-veen-op-scherp",
@@ -5106,6 +5188,14 @@
       "sem-konijn"
     ],
     "genre": "kleinkunst"
+  },
+  {
+    "id": "seppe-toremans-stand-up",
+    "titel": "Stand-up",
+    "artiesten": [
+      "seppe-toremans"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "seppe-toremans-storemans",

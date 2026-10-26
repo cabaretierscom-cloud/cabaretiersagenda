@@ -2,10 +2,12 @@
 import { getText } from "./http.mjs";
 
 const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ", ndash: "–", mdash: "—", hellip: "…", eacute: "é", euml: "ë", iuml: "ï", ouml: "ö", uuml: "ü", egrave: "è", agrave: "à", ccedil: "ç", oacute: "ó", aacute: "á", iacute: "í", uacute: "ú", acirc: "â", ecirc: "ê", ocirc: "ô", ldquo: "“", rdquo: "”", lsquo: "‘", rsquo: "’", bdquo: "„", middot: "·", bull: "•", raquo: "»", laquo: "«", rarr: "→", euro: "€" };
+// Een ongeldig tekennummer (bijv. &#xffffffff; op een kapotte pagina) laten we staan in plaats van te crashen.
+const teken = (n, m) => (Number.isInteger(n) && n >= 0 && n <= 0x10ffff ? String.fromCodePoint(n) : m);
 export const decodeEntities = (s) =>
   String(s ?? "")
-    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
-    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+    .replace(/&#x([0-9a-f]+);/gi, (m, h) => teken(parseInt(h, 16), m))
+    .replace(/&#(\d+);/g, (m, d) => teken(Number(d), m))
     .replace(/&([a-z]+);/gi, (m, n) => ENTITIES[n.toLowerCase()] ?? m);
 
 export const stripTags = (s) => decodeEntities(String(s ?? "").replace(/<[^>]*>/g, " ")).replace(/\s+/g, " ").trim();
