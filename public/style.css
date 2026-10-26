@@ -247,21 +247,16 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 .poster-sterren small { font-size: .78rem; font-weight: 600; letter-spacing: 0; }
 .poster-vlak { flex: 1; display: flex; min-height: 0; }
-.poster-info { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 18px 14px 22px 22px; }
+/* Datum bovenaan, aantal speeldata onderaan; titel, artiest en zaal daartussen, ook bij een titel van twee regels. */
+.poster-info { flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 20px 14px 22px 22px; }
 /* Afscheurstrook rechts, achter een verticale perforatie, zoals de controlestrook van een toegangskaartje. */
 .poster-stub {
-  position: relative; flex: 0 0 50px; display: flex; flex-direction: column; align-items: center; justify-content: space-between;
-  padding: 20px 0 18px; border-left: 2px dashed color-mix(in srgb, var(--fg) 45%, transparent);
+  position: relative; flex: 0 0 30px; border-left: 2px dashed color-mix(in srgb, var(--fg) 45%, transparent);
   transform-origin: 0 100%; transition: transform .35s cubic-bezier(.2,.8,.2,1);
 }
-.stub-tekst {
-  writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap;
-  font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; letter-spacing: .08em; text-transform: uppercase;
-}
-.stub-code { width: 26px; height: 72px; fill: currentColor; opacity: .85; }
-.poster-foto .when { display: flex; align-items: baseline; gap: 6px; }
-.poster-foto .weekday { font-size: .95rem; }
-.poster-foto .day { display: inline; font-size: 3.6rem; line-height: .8; margin: 0; }
+.poster-foto .wanneer { font-size: .85rem; font-weight: 600; line-height: 1.2; }
+.poster-foto .when { display: flex; align-items: baseline; gap: 6px; margin-top: 4px; }
+.poster-foto .day { display: inline; font-size: 3.4rem; line-height: .8; margin: 0; }
 .poster-foto .month { font-size: 1.6rem; }
 .poster-foto .ftitel {
   display: block; font-family: var(--font-display); font-weight: 900; text-transform: uppercase;
@@ -270,8 +265,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-foto .ftitel.long { font-size: 1.8rem; }
 .poster-foto .ftitel.xlong { font-size: 1.45rem; }
 .poster-foto .fartiest { display: block; font-weight: 700; font-size: 1.05rem; margin-top: 6px; }
-.poster-foto .where { display: block; font-size: .9rem; margin-top: 2px; }
-.poster-foto .tag { align-self: flex-start; }
+.poster-foto .where { display: block; font-size: .9rem; margin: 2px 0 12px; }
+.poster-foto .tag { align-self: flex-start; margin-top: auto; }
 @media (hover: hover) and (pointer: fine) {
   .poster-foto:hover .poster-beeld img, .poster-foto:focus-visible .poster-beeld img { transform: scale(1.04); }
   /* De strook scheurt een stukje los. */
@@ -291,10 +286,14 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 @media (max-width: 600px) {
   .poster { width: 78vw; height: 470px; }
   .poster .day { font-size: 7.5rem; }
-  .poster-foto { --naad: 52%; }
-  .poster-foto .day { font-size: 3.2rem; }
-  .poster-stub { flex-basis: 44px; padding-block: 16px 14px; }
-  .stub-code { height: 52px; }
+  .poster-foto { height: 500px; --naad: 50%; }
+  .poster-info { padding: 16px 10px 18px 18px; }
+  .poster-foto .day { font-size: 2.9rem; }
+  .poster-foto .month { font-size: 1.4rem; }
+  .poster-foto .ftitel { font-size: 1.75rem; margin-top: 8px; }
+  .poster-foto .ftitel.long { font-size: 1.6rem; }
+  .poster-foto .ftitel.xlong { font-size: 1.3rem; }
+  .poster-stub { flex-basis: 24px; }
   .strip-nav { display: none; }
 }
 
