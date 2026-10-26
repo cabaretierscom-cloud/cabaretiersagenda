@@ -71,6 +71,24 @@ const ink = (kleur) => {
   return `--bg:var(${v});--fg:${fg}`;
 };
 
+// Affiches in een rij nooit twee keer dezelfde kleur naast elkaar. Eerst de volgorde iets
+// verschuiven (de eerstvolgende met een andere kleur gaat voor); lukt dat niet, dan krijgt die
+// affiche een andere kleur dan zijn buren. Geeft [{ x, kleur }] terug.
+function afwisselend(items, kleurVan) {
+  const rest = [...items], uit = [];
+  while (rest.length) {
+    const vorige = uit.at(-1)?.kleur;
+    const i = Math.max(0, rest.findIndex((x) => kleurVan(x) !== vorige));
+    const [x] = rest.splice(i, 1);
+    uit.push({ x, kleur: kleurVan(x) });
+  }
+  uit.forEach((u, i) => {
+    const buren = [uit[i - 1]?.kleur, uit[i + 1]?.kleur];
+    if (buren[0] === u.kleur) u.kleur = Object.keys(KLEUREN).find((k) => !buren.includes(k));
+  });
+  return uit;
+}
+
 export function createTemplates(db) {
   const { artiesten: A, theaters: T, voorstellingen: V } = db;
 
@@ -457,12 +475,12 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   function posterWall(lijst) {
     const spots = [["78%", "26%"], ["30%", "70%"], ["85%", "80%"], ["20%", "20%"], ["60%", "50%"]];
     const thisYear = fmt.year(db.today);
-    return lijst.map(({ a, list }, i) => {
+    return afwisselend(lijst, ({ a }) => a.kleur).map(({ x: { a, list }, kleur }, i) => {
       const g = list.find((x) => x.status !== "geannuleerd") || list[0];
       const v = V.get(g.voorstelling), t = T.get(g.theater);
       const [sx, sy] = spots[i % spots.length];
       const aantal = plural(list.length, "speeldatum", "speeldata");
-      return `<a class="poster" href="/artiesten/${a.id}/" style="${ink(a.kleur)};--sx:${sx};--sy:${sy}">
+      return `<a class="poster" href="/artiesten/${a.id}/" style="${ink(kleur)};--sx:${sx};--sy:${sy}">
         <span class="visually-hidden">${esc(a.naam)}, ${aantal}, eerstvolgende ${fmt.long(g.datum)} in ${esc(t.naam)}, ${esc(t.plaats)}</span>
         <div class="when" aria-hidden="true">
           <span class="weekday">Vanaf</span>
@@ -493,18 +511,19 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   function nuInTheater() {
     const thisYear = fmt.year(db.today);
     const gezien = new Set();
-    return [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id))
+    const lijst = [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id))
       .map((v) => ({ v, list: up.filter((g) => g.voorstelling === v.id && g.status !== "geannuleerd") }))
       .filter(({ list }) => list.length)
       .sort((x, y) => x.list[0].datum.localeCompare(y.list[0].datum) || y.list.length - x.list.length)
       .filter(({ v }) => !gezien.has(v.artiesten[0]) && gezien.add(v.artiesten[0]))
-      .slice(0, 12)
-      .map(({ v, list }, i) => {
+      .slice(0, 12);
+    return afwisselend(lijst, ({ v }) => A.get(v.artiesten[0]).kleur)
+      .map(({ x: { v, list }, kleur }, i) => {
         const a = A.get(v.artiesten[0]), g = list[0], t = T.get(g.theater);
         const beste = [...(v.recensies || [])].filter((r) => r.sterren).sort((x, y) => y.sterren - x.sterren)[0];
         const aantal = plural(list.length, "speeldatum", "speeldata");
         const titel = echteTitel(v.id) || v.titel;
-        return `<a class="poster poster-foto" href="${voorstellingPad.get(v.id)}" style="${ink(a.kleur)}">
+        return `<a class="poster poster-foto" href="${voorstellingPad.get(v.id)}" style="${ink(kleur)}">
         <span class="visually-hidden">${esc(titel)} van ${esc(artistNames(v.id))}, ${aantal}, eerstvolgende ${fmt.long(g.datum)} in ${esc(t.naam)}, ${esc(t.plaats)}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
         <span class="poster-beeld" aria-hidden="true">
           <img src="${esc(v.foto.bestand)}" alt=""${uitsnede(v.foto, 1.2)} width="${v.foto.breedte || 800}" height="${v.foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
