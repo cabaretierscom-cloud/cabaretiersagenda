@@ -662,7 +662,15 @@
     "artiesten": [
       "blauwe-vinkjes"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Vers cabaretduo debuteert vaardig met herkenbare sketches over ons digitale leven",
+        "bron": "https://denieuwekolk.nl/theater/agenda/blauwe-vinkjes"
+      }
+    ]
   },
   {
     "id": "blind-date-blind-date",
@@ -1815,14 +1823,6 @@
       "fabian-franciscus"
     ],
     "genre": "cabaret"
-  },
-  {
-    "id": "familie-voor-beginners-mylou-frencken-en-gitarist",
-    "titel": "Mylou Frencken & gitarist",
-    "artiesten": [
-      "familie-voor-beginners"
-    ],
-    "genre": "stand-up"
   },
   {
     "id": "fatu-late-night-joel-gideon-rene-van-meurs-en-bugra-gedik",

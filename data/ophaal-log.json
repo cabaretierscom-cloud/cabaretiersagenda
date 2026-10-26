@@ -1,366 +1,375 @@
 {
   "amphion": {
     "naam": "Amphion",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 63,
-    "seconden": 290
+    "seconden": 299
   },
   "amstelveen": {
     "naam": "Schouwburg Amstelveen",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 35,
-    "seconden": 108
+    "seconden": 105
   },
   "beatvenues": {
     "naam": "Stadsschouwburg Antwerpen en Capitole Gent",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 47,
-    "seconden": 360
+    "seconden": 349
   },
   "bellevue": {
     "naam": "Theater Bellevue",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 145,
-    "seconden": 602
+    "seconden": 581
   },
   "carre": {
     "naam": "Koninklijk Theater Carré",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 58,
-    "seconden": 52
+    "seconden": 48
   },
   "castellum": {
     "naam": "Castellum",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 50,
-    "seconden": 165
+    "seconden": 157
   },
   "comedy-cafe": {
     "naam": "Comedy Café Amsterdam",
-    "datum": "2026-10-25",
-    "gelukt": true,
+    "datum": "2026-10-26",
+    "gelukt": false,
     "aantal": 144,
-    "seconden": 9
+    "seconden": 9,
+    "fout": "HTTP 403 voor https://www.comedycafe.nl/wp-json/tribe/events/v1/events?start_date=2026-10-26&per_page=50&page=1"
   },
   "cpunt": {
     "naam": "Cpunt",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 105,
-    "seconden": 376
+    "seconden": 381
   },
   "cultura": {
     "naam": "Cultura Ede",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 24,
-    "seconden": 186
+    "seconden": 194
   },
   "de-veste": {
     "naam": "Theater De Veste",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 54,
-    "seconden": 369
+    "seconden": 353
   },
   "delamar": {
     "naam": "DeLaMar",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 48,
-    "seconden": 105
+    "seconden": 97
   },
   "gouda": {
     "naam": "Goudse Schouwburg",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 81,
-    "seconden": 5
+    "seconden": 10
   },
   "harmonie": {
     "naam": "De Harmonie",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 46,
-    "seconden": 5
+    "seconden": 3
   },
   "hengelo": {
     "naam": "Schouwburg Hengelo",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 41,
-    "seconden": 804
+    "seconden": 813
   },
   "hetpark": {
     "naam": "Schouwburg Het Park",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 60,
-    "seconden": 4
+    "seconden": 9
   },
   "hnt": {
     "naam": "Het Nationale Theater",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 1,
-    "seconden": 18
+    "seconden": 23
   },
   "hof88": {
     "naam": "Hof88",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 49,
-    "seconden": 444
+    "seconden": 430
   },
   "kampanje": {
     "naam": "Theater de Kampanje",
-    "datum": "2026-10-25",
-    "gelukt": true,
+    "datum": "2026-10-26",
+    "gelukt": false,
     "aantal": 58,
-    "seconden": 441
+    "seconden": 46,
+    "fout": "The operation was aborted due to timeout"
   },
   "kleine-komedie": {
     "naam": "De Kleine Komedie",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 162,
-    "seconden": 618
+    "seconden": 598
   },
   "kunstlinie": {
     "naam": "Kunstlinie",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 62,
-    "seconden": 3404
+    "seconden": 3129
   },
   "kunstmin": {
     "naam": "Kunstmin",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 52,
-    "seconden": 4
+    "seconden": 3
   },
   "lampegiet": {
     "naam": "Theater Lampegiet",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 32,
-    "seconden": 242
+    "seconden": 238
   },
   "lawei": {
     "naam": "Schouwburg De Lawei",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 56,
-    "seconden": 572
+    "seconden": 560
   },
   "leiden": {
     "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 86,
-    "seconden": 723
+    "seconden": 719
   },
   "luxor": {
     "naam": "Luxor Theater",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 136,
-    "seconden": 1022
+    "seconden": 1013
   },
   "maaspoort": {
     "naam": "Maaspoort",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 41,
-    "seconden": 400
+    "seconden": 407
   },
   "musis": {
     "naam": "Musis & Stadstheater Arnhem",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 18,
-    "seconden": 1014
+    "seconden": 971
   },
   "nieuwe-kolk": {
     "naam": "De Nieuwe Kolk",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
-    "aantal": 56,
-    "seconden": 221
+    "aantal": 57,
+    "seconden": 212
   },
   "nijmegen": {
     "naam": "Stadsschouwburg & De Vereeniging Nijmegen",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 29,
-    "seconden": 263
+    "seconden": 259
   },
   "ogterop": {
     "naam": "Schouwburg Ogterop",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 9,
-    "seconden": 281
+    "seconden": 276
   },
   "orpheus": {
     "naam": "Orpheus",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
-    "aantal": 71,
-    "seconden": 487
+    "aantal": 58,
+    "seconden": 796
   },
   "parade": {
     "naam": "Theater aan de Parade",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 36,
-    "seconden": 347
+    "seconden": 333
   },
   "parktheater": {
     "naam": "Parktheater Eindhoven",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 153,
-    "seconden": 825
+    "seconden": 801
   },
   "parkvilla": {
     "naam": "Parkvilla",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 6,
-    "seconden": 40
+    "seconden": 43
   },
   "plt": {
     "naam": "PLT (Parkstad Limburg Theaters)",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 132,
-    "seconden": 1654
+    "seconden": 1597
   },
   "purmaryn": {
     "naam": "Theater De Purmaryn",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 57,
-    "seconden": 384
+    "seconden": 361
   },
   "schakel": {
     "naam": "CC De Schakel",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 31,
-    "seconden": 249
+    "seconden": 248
   },
   "schie": {
     "naam": "Theater aan de Schie",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 46,
-    "seconden": 190
+    "seconden": 179
   },
   "speelhuis": {
     "naam": "Theater Het Speelhuis",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 30,
-    "seconden": 197
+    "seconden": 186
   },
   "speellijsten": {
     "naam": "Speellijsten van artiesten",
     "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 3107,
-    "seconden": 22
+    "seconden": 26
   },
   "spot-groningen": {
     "naam": "SPOT Groningen",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 89,
-    "seconden": 5
+    "seconden": 2
   },
   "stoep": {
     "naam": "Theater de Stoep",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 76,
-    "seconden": 199
+    "seconden": 188
   },
   "tilburg": {
     "naam": "Schouwburg & Concertzaal Tilburg",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 110,
-    "seconden": 806
+    "seconden": 1078
   },
   "utrecht": {
     "naam": "Stadsschouwburg Utrecht",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 117,
-    "seconden": 469
+    "seconden": 472
   },
   "venray": {
     "naam": "Schouwburg Venray",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 31,
-    "seconden": 239
+    "seconden": 206
+  },
+  "verkadefabriek": {
+    "naam": "Verkadefabriek",
+    "datum": "2026-10-26",
+    "gelukt": true,
+    "aantal": 78,
+    "seconden": 618
   },
   "vlaardingen": {
     "naam": "Stadsgehoorzaal Vlaardingen",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
-    "aantal": 29,
-    "seconden": 201
+    "aantal": 28,
+    "seconden": 187
   },
   "vrijthof": {
     "naam": "Theater aan het Vrijthof",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 40,
-    "seconden": 142
+    "seconden": 141
   },
   "walhalla": {
     "naam": "Theater Walhalla",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 83,
-    "seconden": 91
+    "seconden": 72
   },
   "wilminktheater": {
     "naam": "Wilminktheater en Muziekcentrum Enschede",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 84,
-    "seconden": 617
+    "seconden": 592
   },
   "zaantheater": {
     "naam": "Zaantheater",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 60,
-    "seconden": 334
+    "seconden": 324
   },
   "zuidplein": {
     "naam": "Theater Zuidplein",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 52,
-    "seconden": 411
+    "seconden": 401
   },
   "zwolle": {
     "naam": "Zwolse Theaters",
-    "datum": "2026-10-25",
+    "datum": "2026-10-26",
     "gelukt": true,
     "aantal": 78,
-    "seconden": 560
+    "seconden": 497
   }
 }

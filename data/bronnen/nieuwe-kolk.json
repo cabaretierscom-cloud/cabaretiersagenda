@@ -1,7 +1,7 @@
 {
   "bron": "nieuwe-kolk",
   "naam": "De Nieuwe Kolk",
-  "opgehaald": "2026-10-25",
+  "opgehaald": "2026-10-26",
   "theaters": [
     {
       "id": "de-nieuwe-kolk",
@@ -90,6 +90,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://denieuwekolk.nl/theater/agenda/tis-hier-geen-hotel-3"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Blauwe Vinkjes"
+      ],
+      "titel": "Poeha",
+      "genre": "cabaret",
+      "datum": "2026-10-31",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/blauwe-vinkjes"
     },
     {
       "theater": "de-nieuwe-kolk",
@@ -748,6 +761,18 @@
         "medium": "Trouw",
         "sterren": 4,
         "citaat": "Typetjesparades, spraakverwarringen, dans, zang en klassieke slapstick: Plien & Bianca beheersen de goede oude revue als geen ander. Onbekommerd lachen."
+      }
+    ],
+    "https://denieuwekolk.nl/theater/agenda/blauwe-vinkjes": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Vers cabaretduo debuteert vaardig met herkenbare sketches over ons digitale leven"
+      },
+      {
+        "medium": "Scènes",
+        "sterren": null,
+        "citaat": "Kijken naar dit duo is vooral aantrekkelijk vanwege het hoge tempo, de innemende presentatie en het lef dat ze uitstralen"
       }
     ],
     "https://denieuwekolk.nl/theater/agenda/david-linszen": [

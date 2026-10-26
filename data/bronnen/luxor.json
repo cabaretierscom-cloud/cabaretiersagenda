@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-10-25",
+  "opgehaald": "2026-10-26",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -797,7 +797,7 @@
       "genre": "cabaret",
       "datum": "2027-01-02",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
     },
@@ -1536,7 +1536,7 @@
       "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/najib-roue-56186/"
     },

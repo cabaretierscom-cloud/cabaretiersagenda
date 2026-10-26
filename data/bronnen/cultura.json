@@ -1,7 +1,7 @@
 {
   "bron": "cultura",
   "naam": "Cultura Ede",
-  "opgehaald": "2026-10-25",
+  "opgehaald": "2026-10-26",
   "theaters": [
     {
       "id": "cultura-ede",
@@ -302,19 +302,6 @@
     {
       "theater": "cultura-ede",
       "artiesten": [
-        "Valentina Toth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2026-11-28",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://cultura-ede.nl/agenda/valentina-toth-276873/"
-    },
-    {
-      "theater": "cultura-ede",
-      "artiesten": [
         "Nienke Plas"
       ],
       "titel": "Appeltje Eitje",
@@ -324,6 +311,19 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://cultura-ede.nl/agenda/nienke-plas-276874/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Valentina Toth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cultura-ede.nl/agenda/valentina-toth-276873/"
     }
   ],
   "recensies": {}
