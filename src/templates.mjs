@@ -253,6 +253,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return {
       "@type": isGroep(a) ? "PerformingGroup" : "Person", "@id": URL(`/artiesten/${id}/#artiest`), name: a.naam, url: URL(`/artiesten/${id}/`),
       ...(a.foto ? { image: URL(a.foto.bestand) } : {}),
+      // De foto kwam via Wikidata: dat item is deze artiest.
+      ...(a.foto?.wikidata ? { sameAs: `https://www.wikidata.org/wiki/${a.foto.wikidata}` } : {}),
     };
   };
   // Foto van een artiest of een zaal (een zaal herken je aan de plaats).
@@ -272,7 +274,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const t = T.get(id);
     return {
       "@type": ZAAL_TYPE[t.soort] || "EventVenue", "@id": URL(`/theaters/${id}/#zaal`), name: t.naam, url: URL(`/theaters/${id}/`),
-      ...(t.website ? { sameAs: t.website } : {}),
+      ...((t.website || t.foto?.wikidata) ? { sameAs: [t.website, t.foto?.wikidata && `https://www.wikidata.org/wiki/${t.foto.wikidata}`].filter(Boolean) } : {}),
       ...(t.foto ? { image: URL(t.foto.bestand) } : {}),
       address: { "@type": "PostalAddress", addressLocality: t.plaats, addressCountry: t.land },
     };
@@ -294,8 +296,11 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       inLanguage: t.land === "BE" ? "nl-BE" : "nl-NL",
       location: zaalLd(g.theater),
-      ...(fotoArtiest(g.voorstelling) ? { image: [URL(fotoArtiest(g.voorstelling).foto.bestand)] } : {}),
+      // Afbeelding: de artiest, anders de zaal, anders de deelafbeelding van de site.
+      image: [URL(fotoArtiest(g.voorstelling)?.foto.bestand || t.foto?.bestand || "/deelafbeelding.png")],
       ...(v.artiesten.length ? { performer: v.artiesten.map(artiestLd) } : {}),
+      // De zaal programmeert de voorstelling en verkoopt de kaarten.
+      organizer: { "@type": "Organization", name: t.naam, ...(t.website ? { url: t.website } : {}) },
       offers: {
         "@type": "Offer", url: g.bron,
         ...(g.status === "uitverkocht" ? { availability: "https://schema.org/SoldOut" } : {}),
@@ -327,7 +332,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return {
       "@context": "https://schema.org",
       "@graph": [
-        { "@type": "Organization", "@id": ORG_ID, name: SITE.name, url: URL("/"), email: SITE.email, sameAs: SITE.social.map((s) => s.url),
+        { "@type": "Organization", "@id": ORG_ID, name: SITE.name, url: URL("/"), email: SITE.email, description: SITE.description, sameAs: SITE.social.map((s) => s.url),
+          areaServed: [{ "@type": "Country", name: "Nederland" }, { "@type": "Country", name: "België" }],
           contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: SITE.email, availableLanguage: ["nl"] }, logo: { "@type": "ImageObject", url: URL("/apple-touch-icon.png"), width: 180, height: 180, caption: "Beeldmerk van Cabaretiers.com" }, image: URL("/deelafbeelding.png") },
         {
           "@type": "WebSite", "@id": SITE_ID, name: SITE.name, url: URL("/"), inLanguage: "nl", description: SITE.description,
