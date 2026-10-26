@@ -506,6 +506,19 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return ` style="object-position:${plek(foto.focus[0], verhouding / beeld)}% ${plek(foto.focus[1], beeld / verhouding)}%"`;
   };
 
+  // Versiering voor de afscheurstrook van een kaartje: streepjes die per voorstelling anders zijn.
+  const streepjescode = (sleutel) => {
+    const h = createHash("sha1").update(sleutel).digest();
+    let y = 0, rects = "";
+    for (const b of h) {
+      if (y > 76) break;
+      const dik = 1 + (b % 3), wit = 1 + ((b >> 2) % 2);
+      rects += `<rect x="0" y="${y}" width="28" height="${dik}"/>`;
+      y += dik + wit;
+    }
+    return `<svg class="stub-code" viewBox="0 0 28 ${y}" preserveAspectRatio="none" aria-hidden="true">${rects}</svg>`;
+  };
+
   // "Nu in het theater": voorstellingen met een promobeeld (data/promo.json), eerstvolgende eerst,
   // hooguit één per artiest. Bovenin het beeld, daaronder het kleurvlak van de artiest.
   function nuInTheater() {
@@ -530,11 +543,17 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
           ${beste ? `<span class="poster-sterren">${"★".repeat(beste.sterren)}<small>${esc(beste.medium)}</small></span>` : ""}
         </span>
         <span class="poster-vlak" aria-hidden="true">
+          <span class="poster-info">
           <span class="when"><span class="weekday">Vanaf</span> <span class="day">${fmt.day(g.datum)}</span> <span class="month">${fmt.monthShort(g.datum)}${fmt.year(g.datum) !== thisYear ? " " + fmt.year(g.datum) : ""}</span></span>
           <strong class="ftitel${titleClass(titel)}">${esc(titel)}</strong>
           <span class="fartiest">${esc(artistNames(v.id))}</span>
           <span class="where">${esc(t.naam)}${t.naam.includes(t.plaats) ? "" : ", " + esc(t.plaats)}</span>
           <span class="tag">${aantal}</span>
+          </span>
+          <span class="poster-stub">
+            <span class="stub-tekst">Toegang</span>
+            ${streepjescode(v.id)}
+          </span>
         </span>
       </a>`;
       }).join("");
