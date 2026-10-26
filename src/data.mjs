@@ -122,7 +122,8 @@ export function loadData(dir, { today }) {
     if (p.videos?.length) a.videos = p.videos;
     // Tekst en persquotes horen bij de voorstelling met die titel; staat die er (nog) niet, dan later.
     const gewoon = (t) => String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
-    const v = p.voorstelling && voorstellingen.find((x) => x.artiesten?.includes(a.id) && gewoon(x.titel) === gewoon(p.voorstelling));
+    // Dezelfde titel, of de titel met een toevoeging tussen haakjes ("Gelukskoekje (leesvoorstelling)").
+    const v = p.voorstelling && voorstellingen.find((x) => x.artiesten?.includes(a.id) && (gewoon(x.titel) === gewoon(p.voorstelling) || x.titel.toLowerCase().startsWith(`${p.voorstelling.toLowerCase()} (`)));
     if (!v) continue;
     if (p.tekst?.length) v.promotekst = { alineas: p.tekst, van: p.van, bron: p.bron || p.foto?.bron || null };
     // Persquotes erbij, behalve als dezelfde krant hetzelfde citaat al via een theater heeft.
