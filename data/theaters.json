@@ -29,7 +29,23 @@
     "plaats": "Antwerpen",
     "land": "BE",
     "soort": "theater",
-    "website": "https://www.fakkeltheater.be"
+    "website": "https://www.fakkeltheater.be",
+    "foto": {
+      "bestand": "/fotos/theaters/fakkeltheater-antwerpen.jpg",
+      "alt": "Fakkeltheater in Antwerpen",
+      "maker": "Silver Dovelet",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Fakkelteater%2C_Antwerp.jpg",
+      "wikidata": "Q1952737",
+      "hoogte": 1280,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Fakkelteater",
+        "taal": "?"
+      },
+      "datum": "2026-07-17"
+    }
   },
   {
     "id": "stadsschouwburg-antwerpen",
@@ -37,7 +53,23 @@
     "plaats": "Antwerpen",
     "land": "BE",
     "soort": "theater",
-    "website": "https://www.stadsschouwburg-antwerpen.be"
+    "website": "https://www.stadsschouwburg-antwerpen.be",
+    "foto": {
+      "bestand": "/fotos/theaters/stadsschouwburg-antwerpen.jpg",
+      "alt": "Voorzijde van de Stadsschouwburg in Antwerpen",
+      "maker": "Evilnickname",
+      "licentie": "CC BY-SA 2.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Stadsschouwburg_Antwerpen.jpg",
+      "wikidata": "Q2031814",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Voorzijde van de Stadsschouwburg in Antwerpen.",
+        "taal": "nl"
+      },
+      "datum": "2010-09-17"
+    }
   },
   {
     "id": "toneelhuis-antwerpen",
@@ -165,7 +197,23 @@
     "plaats": "Brussel",
     "land": "BE",
     "soort": "theater",
-    "website": "http://https"
+    "website": "http://https",
+    "foto": {
+      "bestand": "/fotos/theaters/koninklijk-circus.jpg",
+      "alt": "Koninklijk Circus in Brussel",
+      "maker": "Mx. Granger",
+      "licentie": "CC0",
+      "licentieUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "bron": "https://commons.wikimedia.org/wiki/File:Cirque_Royal_in_June_2016.jpg",
+      "wikidata": "Q2870444",
+      "hoogte": 1280,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Cirque Royal , Brussels, Belgium.",
+        "taal": "?"
+      },
+      "datum": "2016-06-24"
+    }
   },
   {
     "id": "kvs-brussel",
@@ -173,7 +221,23 @@
     "plaats": "Brussel",
     "land": "BE",
     "soort": "theater",
-    "website": "http://kvs.be"
+    "website": "http://kvs.be",
+    "foto": {
+      "bestand": "/fotos/theaters/kvs-brussel.jpg",
+      "alt": "KVS in Brussel",
+      "maker": "Marek Śliwecki",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Brussels_-_Th%C3%A9%C3%A2tre_royal_flamand.jpg",
+      "wikidata": "Q1950513",
+      "hoogte": 1158,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Royal Flemish Theatre",
+        "taal": "en"
+      },
+      "datum": "2022-04-23"
+    }
   },
   {
     "id": "de-pinte-polderbos",
@@ -237,7 +301,23 @@
     "plaats": "Gent",
     "land": "BE",
     "soort": "theater",
-    "website": "https://www.capitole-gent.be"
+    "website": "https://www.capitole-gent.be",
+    "foto": {
+      "bestand": "/fotos/theaters/capitole-gent.jpg",
+      "alt": "Huizenrij met concertzaal 'Capitole' aan het Graaf van Vlaanderenplein (Zuid) in Gent",
+      "maker": "Demeester",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Gent_centrum_170_Zuid.JPG",
+      "wikidata": "Q2321526",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Huizenrij met concertzaal 'Capitole' aan het Graaf van Vlaanderenplein (Zuid) in Gent.",
+        "taal": "nl"
+      },
+      "datum": null
+    }
   },
   {
     "id": "compagnie-cecilia-gent",
@@ -253,7 +333,20 @@
     "plaats": "Gent",
     "land": "BE",
     "soort": "theater",
-    "website": "https://minard.be"
+    "website": "https://minard.be",
+    "foto": {
+      "bestand": "/fotos/theaters/minardschouwburg-gent.jpg",
+      "alt": "Minardschouwburg in Gent",
+      "maker": "EmDee",
+      "licentie": "CC BY 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Belgi%C3%AB_-_Gent_-_Minardschouwburg_-_01.jpg",
+      "wikidata": "Q2003846",
+      "hoogte": 1095,
+      "breedte": 960,
+      "beschrijving": null,
+      "datum": "2018-05-06"
+    }
   },
   {
     "id": "viernulvier-gent",
@@ -429,7 +522,23 @@
     "plaats": "Lier",
     "land": "BE",
     "soort": "theater",
-    "website": "https://www.lierscultuurcentrum.be"
+    "website": "https://www.lierscultuurcentrum.be",
+    "foto": {
+      "bestand": "/fotos/theaters/liers-cultuurcentrum.jpg",
+      "alt": "Liers Cultuurcentrum - CC De Mol",
+      "maker": "Bert76",
+      "licentie": "CC0",
+      "licentieUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "bron": "https://commons.wikimedia.org/wiki/File:De_Mol_ingang.jpg",
+      "wikidata": "Q33100182",
+      "hoogte": 640,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Liers Cultuurcentrum - CC De Mol.",
+        "taal": "nl"
+      },
+      "datum": "2021-01-27"
+    }
   },
   {
     "id": "cc-lokeren",
@@ -517,7 +626,23 @@
     "plaats": "Oostende",
     "land": "BE",
     "soort": "theater",
-    "website": null
+    "website": null,
+    "foto": {
+      "bestand": "/fotos/theaters/de-grote-post-oostende.jpg",
+      "alt": "Voormalig postgebouw Oostende, architect Gaston Eysselinck, (1946-1953)",
+      "maker": "Wasily",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Gaston_1.jpg",
+      "wikidata": "Q15880892",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Voormalig postgebouw Oostende, architect Gaston Eysselinck, (1946-1953)",
+        "taal": "nl"
+      },
+      "datum": "2001-01-13"
+    }
   },
   {
     "id": "kursaal",
@@ -525,7 +650,23 @@
     "plaats": "Oostende",
     "land": "BE",
     "soort": "theater",
-    "website": null
+    "website": null,
+    "foto": {
+      "bestand": "/fotos/theaters/kursaal.jpg",
+      "alt": "Kursaal Oostende in Oostende",
+      "maker": "Wasily at Dutch Wikipedia",
+      "licentie": "Public domain",
+      "licentieUrl": null,
+      "bron": "https://commons.wikimedia.org/wiki/File:Casino_Kursaal.jpg",
+      "wikidata": "Q2516946",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Gerestaureerd Casino Kursaal Oostende",
+        "taal": "?"
+      },
+      "datum": null
+    }
   },
   {
     "id": "den-ichter-oudsbergen",
@@ -677,7 +818,23 @@
     "plaats": "Turnhout",
     "land": "BE",
     "soort": "theater",
-    "website": "https://www.warande.be"
+    "website": "https://www.warande.be",
+    "foto": {
+      "bestand": "/fotos/theaters/de-warande-turnhout.jpg",
+      "alt": "De Warande in Turnhout",
+      "maker": "Vdb88",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Warande_Turnhout.jpg",
+      "wikidata": "Q2709163",
+      "hoogte": 631,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Original building of De Warande in Turnhout.",
+        "taal": "en"
+      },
+      "datum": "2011-06-25"
+    }
   },
   {
     "id": "cc-het-bolwerk-vilvoorde",
@@ -757,7 +914,23 @@
     "plaats": "'s-Hertogenbosch",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.theateraandeparade.nl"
+    "website": "https://www.theateraandeparade.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-aan-de-parade.jpg",
+      "alt": "Theater aan de Parade, 's-Hertogenbosch",
+      "maker": "LeeGer",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Theater_aan_de_Parade_02.jpg",
+      "wikidata": "Q3441189",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Theater aan de Parade, 's-Hertogenbosch",
+        "taal": "nl"
+      },
+      "datum": "2012-08-25"
+    }
   },
   {
     "id": "verkadefabriek-s-hertogenbosch",
@@ -789,7 +962,23 @@
     "plaats": "Alkmaar",
     "land": "NL",
     "soort": "theater",
-    "website": "https://theaterdevest.nl"
+    "website": "https://theaterdevest.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-de-vest-alkmaar.jpg",
+      "alt": "Theater De Vest in Alkmaar",
+      "maker": "Rene Cortin",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Alkmaar_klim_naar_de_hemel_06.jpg",
+      "wikidata": "Q106617082",
+      "hoogte": 639,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "De Grote Sint Laurens Kerk in Alkmaar - Via de trap (mei t/m oktober) kun je naar een balkon op 20 meter hoogte klimmen voor het eerste uitzicht over de stad.",
+        "taal": "nl"
+      },
+      "datum": "2018-07-03"
+    }
   },
   {
     "id": "hof88",
@@ -837,7 +1026,23 @@
     "plaats": "Alphen aan den Rijn",
     "land": "NL",
     "soort": "theater",
-    "website": "https://parkvilla.nl"
+    "website": "https://parkvilla.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/parkvilla.jpg",
+      "alt": "Parkvilla in Alphen aan den Rijn",
+      "maker": "Yhoitink",
+      "licentie": "CC BY-SA 3.0 nl",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+      "bron": "https://commons.wikimedia.org/wiki/File:Alphen_Wilhelminaschool.jpg",
+      "wikidata": "Q2444883",
+      "hoogte": 640,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Wilhelminaschool te Alphen aan den Rijn",
+        "taal": "nl"
+      },
+      "datum": null
+    }
   },
   {
     "id": "de-lieve-vrouw-amersfoort",
@@ -845,7 +1050,23 @@
     "plaats": "Amersfoort",
     "land": "NL",
     "soort": "theater",
-    "website": "https://lievevrouw.nl"
+    "website": "https://lievevrouw.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/de-lieve-vrouw-amersfoort.jpg",
+      "alt": "Gevel van Theater en Café De Lieve Vrouw, Lieve Vrouwekerkhof, Amersfoort",
+      "maker": "ElineH",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Caf%C3%A9_De_Lieve_Vrouw%2C_Lieve_Vrouwekerkhof%2C_Amersfoort_2011_voorgevel9.jpg",
+      "wikidata": "Q2760403",
+      "hoogte": 641,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Gevel van Theater en Café De Lieve Vrouw, Lieve Vrouwekerkhof, Amersfoort.",
+        "taal": "nl"
+      },
+      "datum": "2011-03-24"
+    }
   },
   {
     "id": "flint-amersfoort",
@@ -853,7 +1074,23 @@
     "plaats": "Amersfoort",
     "land": "NL",
     "soort": "theater",
-    "website": "https://flint.nl"
+    "website": "https://flint.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/flint-amersfoort.jpg",
+      "alt": "nl:De Flint",
+      "maker": "Silver Spoon",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:De_Flint_2_-_12_augustus_2009.JPG",
+      "wikidata": "Q2629740",
+      "hoogte": 640,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "nl:De Flint",
+        "taal": "nl"
+      },
+      "datum": "2010-06-21"
+    }
   },
   {
     "id": "icoontheater-amersfoort",
@@ -893,7 +1130,23 @@
     "plaats": "Amsterdam",
     "land": "NL",
     "soort": "theater",
-    "website": null
+    "website": null,
+    "foto": {
+      "bestand": "/fotos/theaters/afas-live-amsterdam.jpg",
+      "alt": "De voorgevel van AFAS Live, Amsterdam",
+      "maker": "AFASLive Amsterdam",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:AFAS_Live_voorgevel.jpg",
+      "wikidata": "Q619832",
+      "hoogte": 640,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "De voorgevel van AFAS Live, Amsterdam",
+        "taal": "nl"
+      },
+      "datum": "2017-01-01"
+    }
   },
   {
     "id": "comedy-cafe-amsterdam",
@@ -917,7 +1170,20 @@
     "plaats": "Amsterdam",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.dekleinekomedie.nl"
+    "website": "https://www.dekleinekomedie.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/kleine-komedie.jpg",
+      "alt": "De Kleine Komedie in Amsterdam",
+      "maker": "Wikimedia Commons",
+      "licentie": "Public domain",
+      "licentieUrl": null,
+      "bron": "https://commons.wikimedia.org/wiki/File:Klein-komedie.jpg",
+      "wikidata": "Q2520301",
+      "hoogte": 725,
+      "breedte": 960,
+      "beschrijving": null,
+      "datum": null
+    }
   },
   {
     "id": "delamar",
@@ -925,7 +1191,23 @@
     "plaats": "Amsterdam",
     "land": "NL",
     "soort": "theater",
-    "website": "https://delamar.nl"
+    "website": "https://delamar.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/delamar.jpg",
+      "alt": "DeLaMar Theater in Amsterdam",
+      "maker": "DeLaMar",
+      "licentie": "Public domain",
+      "licentieUrl": null,
+      "bron": "https://commons.wikimedia.org/wiki/File:DeLaMar.jpg",
+      "wikidata": "Q2200865",
+      "hoogte": 549,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Gevel DeLaMar",
+        "taal": "nl"
+      },
+      "datum": "2010-02-23"
+    }
   },
   {
     "id": "carre",
@@ -933,7 +1215,23 @@
     "plaats": "Amsterdam",
     "land": "NL",
     "soort": "theater",
-    "website": "https://carre.nl"
+    "website": "https://carre.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/carre.jpg",
+      "alt": "Koninklijk Theater Carré is een theater in Amsterdam gelegen aan de Amstel",
+      "maker": "S Sepp",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Theater_carre.jpg",
+      "wikidata": "Q1106490",
+      "hoogte": 683,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Koninklijk Theater Carré is een theater in Amsterdam gelegen aan de Amstel.",
+        "taal": "nl"
+      },
+      "datum": "2007-09-30"
+    }
   },
   {
     "id": "meervaart-amsterdam",
@@ -941,7 +1239,23 @@
     "plaats": "Amsterdam",
     "land": "NL",
     "soort": "theater",
-    "website": "https://meervaart.nl"
+    "website": "https://meervaart.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/meervaart-amsterdam.jpg",
+      "alt": "voorkant meervaart",
+      "maker": "Meervaart",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Meervaart_voorkant.jpg",
+      "wikidata": "Q2515336",
+      "hoogte": 693,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "voorkant meervaart",
+        "taal": "nl"
+      },
+      "datum": null
+    }
   },
   {
     "id": "podium-mozaiek-amsterdam",
@@ -949,7 +1263,23 @@
     "plaats": "Amsterdam",
     "land": "NL",
     "soort": "theater",
-    "website": "https://stadstheater.nl"
+    "website": "https://stadstheater.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/podium-mozaiek-amsterdam.jpg",
+      "alt": "Podium Mozaïek in Amsterdam",
+      "maker": "Rijksdienst voor het Cultureel Erfgoed",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Overzicht_van_de_west_en_zuidgevel_-_Amsterdam_-_20418906_-_RCE.jpg",
+      "wikidata": "Q115134496",
+      "hoogte": 640,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Pniëlkerk: Overzicht van de west en zuidgevel",
+        "taal": "nl"
+      },
+      "datum": null
+    }
   },
   {
     "id": "southend-comedy-club",
@@ -965,7 +1295,23 @@
     "plaats": "Amsterdam",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.theaterbellevue.nl"
+    "website": "https://www.theaterbellevue.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-bellevue.jpg",
+      "alt": "De ingang van theater Bellevue in Amsterdam, februari 2020",
+      "maker": "Ciell",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Theater_Bellevue_Amsterdam_-_voorgevel.jpg",
+      "wikidata": "Q14480493",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "De ingang van theater Bellevue in Amsterdam, februari 2020.",
+        "taal": "nl"
+      },
+      "datum": "2020-02-23"
+    }
   },
   {
     "id": "theater-de-richel-amsterdam",
@@ -973,7 +1319,23 @@
     "plaats": "Amsterdam",
     "land": "NL",
     "soort": "theater",
-    "website": "https://theaterderichel.nl"
+    "website": "https://theaterderichel.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-de-richel-amsterdam.jpg",
+      "alt": "Theater De Richel in Amsterdam",
+      "maker": "Vysotsky (Wikimedia) Attribution",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:2025TheaterDeRichel.jpg",
+      "wikidata": "Q136879512",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Theater De Richel, Nieuwezijds Voorburgwal 282, Amsterdam",
+        "taal": "en"
+      },
+      "datum": "2025-10-05"
+    }
   },
   {
     "id": "vu-griffioen-amsterdam",
@@ -1005,7 +1367,23 @@
     "plaats": "Apeldoorn",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.orpheus.nl"
+    "website": "https://www.orpheus.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/orpheus.jpg",
+      "alt": "schouwburg Orpheus, Apeldoorn",
+      "maker": "Erik Wannee",
+      "licentie": "CC0",
+      "licentieUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "bron": "https://commons.wikimedia.org/wiki/File:Schouwburg_Orpheus_Apeldoorn_3-2011.jpg",
+      "wikidata": "Q2613242",
+      "hoogte": 412,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "schouwburg Orpheus, Apeldoorn",
+        "taal": "nl"
+      },
+      "datum": "2011-03-13"
+    }
   },
   {
     "id": "musis-arnhem",
@@ -1021,7 +1399,23 @@
     "plaats": "Arnhem",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.posttheater.nl"
+    "website": "https://www.posttheater.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/posttheater-arnhem.jpg",
+      "alt": "Posttheater in Arnhem",
+      "maker": "Henk Monster",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:KAB_(Katholieke_Arbeiders_Beweging)_building_(1895%2C_neo-renaissance_style)_at_Klarendal%2C_now_Posttheater_-_panoramio.jpg",
+      "wikidata": "Q27861157",
+      "hoogte": 726,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "KAB (Katholieke Arbeiders Beweging) building (1895: neo-renaissance style) at Klarendal: now Posttheater",
+        "taal": "?"
+      },
+      "datum": null
+    }
   },
   {
     "id": "stadstheater-arnhem",
@@ -1045,7 +1439,23 @@
     "plaats": "Assen",
     "land": "NL",
     "soort": "theater",
-    "website": "https://denieuwekolk.nl"
+    "website": "https://denieuwekolk.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/de-nieuwe-kolk.jpg",
+      "alt": "De Nieuwe Kolk in Assen",
+      "maker": "Richard Broekhuijzen",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:DNK_Assen_2021.jpg",
+      "wikidata": "Q16070377",
+      "hoogte": 640,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "DNK in Assen in 2021",
+        "taal": "nl"
+      },
+      "datum": "2021-08-25"
+    }
   },
   {
     "id": "theater-de-speeldoos-baarn",
@@ -1085,7 +1495,23 @@
     "plaats": "Bemmel",
     "land": "NL",
     "soort": "theater",
-    "website": "https://theaterkerk.nl"
+    "website": "https://theaterkerk.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theaterkerk-bemmel.jpg",
+      "alt": "Theaterkerk in Bemmel",
+      "maker": "Lendskaip",
+      "licentie": "CC0",
+      "licentieUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "bron": "https://commons.wikimedia.org/wiki/File:Theaterkerk_Bemmel.jpg",
+      "wikidata": "Q26023914",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "A side view of the Bemmel Theaterchurch on a dark and rainy day in November.",
+        "taal": "en"
+      },
+      "datum": "2019-11-12"
+    }
   },
   {
     "id": "kattendans-bergeijk",
@@ -1245,7 +1671,23 @@
     "plaats": "Breda",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.chasse.nl"
+    "website": "https://www.chasse.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/chasse.jpg",
+      "alt": "Chassé Theater in Breda",
+      "maker": "G.Lanting",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:0954Chassetheater.jpg",
+      "wikidata": "Q2792743",
+      "hoogte": 768,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Zicht op een deel van de voorzijde van het Chasse theater, Claudius Prinsenlaan 8, 4811 DK Breda. Gelegen nabij het centrum van Breda",
+        "taal": "nl"
+      },
+      "datum": "2009-03-28"
+    }
   },
   {
     "id": "theater-streams-breede-beek",
@@ -1293,7 +1735,23 @@
     "plaats": "Capelle aan den IJssel",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.isalatheater.nl"
+    "website": "https://www.isalatheater.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/isala-theater-capelle-aan-den-ijssel.jpg",
+      "alt": "Isala Theater in Capelle aan den IJssel",
+      "maker": "Wroeter",
+      "licentie": "CC0",
+      "licentieUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "bron": "https://commons.wikimedia.org/wiki/File:Isala_Theater_2.jpg",
+      "wikidata": "Q15228839",
+      "hoogte": 432,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Isala Theater in Capelle aan den IJssel",
+        "taal": "nl"
+      },
+      "datum": "2024-01-22"
+    }
   },
   {
     "id": "theater-koningsduyn-castricum",
@@ -1309,7 +1767,23 @@
     "plaats": "Coevorden",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.theaterhofpoort.nl"
+    "website": "https://www.theaterhofpoort.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-hofpoort-coevorden.jpg",
+      "alt": "Theater Hofpoort in Coevorden",
+      "maker": "Oudehampsink",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Hof_van_Coevorden.jpg",
+      "wikidata": "Q2289966",
+      "hoogte": 637,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Het Hof van Coevorden is een Grand Café, raadszaal, Centrum voor de Kunsten, trouwzaal, balie voor gemeentediensten en theaterzaal.",
+        "taal": "nl"
+      },
+      "datum": "2011-07-08"
+    }
   },
   {
     "id": "schouwburg-cuijk",
@@ -1317,7 +1791,23 @@
     "plaats": "Cuijk",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.schouwburgcuijk.nl"
+    "website": "https://www.schouwburgcuijk.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/schouwburg-cuijk.jpg",
+      "alt": "De schouwburg van Cuijk",
+      "maker": "Hay Kranen",
+      "licentie": "CC BY 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Schouwburg_Cuijk_(Q127690032).jpg",
+      "wikidata": "Q127690032",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "De schouwburg van Cuijk",
+        "taal": "nl"
+      },
+      "datum": "2026-03-22"
+    }
   },
   {
     "id": "theater-de-fransche-school-culemborg",
@@ -1381,7 +1871,23 @@
     "plaats": "Den Haag",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.diligentia-pepijn.nl"
+    "website": "https://www.diligentia-pepijn.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/diligentia-den-haag.jpg",
+      "alt": "Diligentia in Den Haag",
+      "maker": "Joris",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Diligentia_-_Den_Haag.JPG",
+      "wikidata": "Q3064432",
+      "hoogte": 643,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Theater Diligentia, the Hague - the Netherlands",
+        "taal": "en"
+      },
+      "datum": "2009-05-21"
+    }
   },
   {
     "id": "het-nationale-theater-den-haag",
@@ -1397,7 +1903,23 @@
     "plaats": "Den Haag",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.hnt.nl"
+    "website": "https://www.hnt.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/koninklijke-schouwburg.jpg",
+      "alt": "Koninklijke Schouwburg in Den Haag",
+      "maker": "M.Minderhoud",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "bron": "https://commons.wikimedia.org/wiki/File:Koninklijke_Schouwburg_Den_Haag.jpg",
+      "wikidata": "Q2040000",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Koninklijke Schouwburg, Den Haag, 21 oktober 2005",
+        "taal": "?"
+      },
+      "datum": null
+    }
   },
   {
     "id": "pepijn-den-haag",
@@ -1413,7 +1935,23 @@
     "plaats": "Den Haag",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.hnt.nl"
+    "website": "https://www.hnt.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-aan-het-spui-den-haag.jpg",
+      "alt": "Theater aan het Spui in Den Haag",
+      "maker": "Joris",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Theater_aan_het_Spui.JPG",
+      "wikidata": "Q2121690",
+      "hoogte": 643,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Theater aan het Spui, the Hague - the Netherlands",
+        "taal": "en"
+      },
+      "datum": "2009-05-21"
+    }
   },
   {
     "id": "theater-dakota-den-haag",
@@ -1429,7 +1967,23 @@
     "plaats": "Den Helder",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.kampanje.nl"
+    "website": "https://www.kampanje.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-de-kampanje.jpg",
+      "alt": "Theater de Kampanje in Den Helder",
+      "maker": "Lars van der Heide",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Den_Helder_-_Oude_rijkswerf_Willemsoord_met_Reddingmuseum_en_schouwburg_De_Kampanje.jpg",
+      "wikidata": "Q66662187",
+      "hoogte": 540,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Den Helder - Former navy shipyard with Reddingmuseum and theater",
+        "taal": "en"
+      },
+      "datum": "2017-08-22"
+    }
   },
   {
     "id": "cultuurcentrum-deurne",
@@ -1485,7 +2039,23 @@
     "plaats": "Dordrecht",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.kunstmin.nl"
+    "website": "https://www.kunstmin.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/kunstmin.jpg",
+      "alt": "Schouwburg Kunstmin , Dordrecht. Voorzijde en gedeelte zijgevel",
+      "maker": "Michiel1972",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:RM522321_Dordrecht_-_Sint_Jorisweg_76_(schouwburg_foto_2).jpg",
+      "wikidata": "Q3497511",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Schouwburg Kunstmin , Dordrecht. Voorzijde en gedeelte zijgevel.",
+        "taal": "nl"
+      },
+      "datum": "2011-09-10"
+    }
   },
   {
     "id": "schouwburg-de-lawei",
@@ -1501,7 +2071,23 @@
     "plaats": "Dronten",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.meerpaal.nl"
+    "website": "https://www.meerpaal.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/de-meerpaal-dronten.jpg",
+      "alt": "De Meerpaal in Dronten",
+      "maker": "Mark Ahsmann",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Dronten_Meerpaal_facade.JPG",
+      "wikidata": "Q1180149",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Dronten Meerpaal facade.",
+        "taal": "en"
+      },
+      "datum": "2011-03-29"
+    }
   },
   {
     "id": "voorste-venne-drunen",
@@ -1549,7 +2135,23 @@
     "plaats": "Eindhoven",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.parktheater.nl"
+    "website": "https://www.parktheater.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/parktheater-eindhoven.jpg",
+      "alt": "Schouwburg Eindhoven, officiële benaming Parktheater",
+      "maker": "Lempkesfabriek",
+      "licentie": "Public domain",
+      "licentieUrl": null,
+      "bron": "https://commons.wikimedia.org/wiki/File:Schouwburg_Eindhoven.jpg",
+      "wikidata": "Q1943280",
+      "hoogte": 628,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Schouwburg Eindhoven, officiële benaming Parktheater.",
+        "taal": "nl"
+      },
+      "datum": "2008-06-06"
+    }
   },
   {
     "id": "theater-freedom-eindhoven",
@@ -1637,7 +2239,23 @@
     "plaats": "Etten-Leur",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.denobelaer.nl"
+    "website": "https://www.denobelaer.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/de-nobelaer-etten-leur.jpg",
+      "alt": "Zicht op een deel van de Nieuwe Nobelaer in Etten-Leur, 30 april 2006",
+      "maker": "M.Minderhoud",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "bron": "https://commons.wikimedia.org/wiki/File:Etten-leur_002.jpg",
+      "wikidata": "Q22910583",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Zicht op een deel van de Nieuwe Nobelaer in Etten-Leur, 30 april 2006",
+        "taal": "nl"
+      },
+      "datum": "2006-04-30"
+    }
   },
   {
     "id": "de-weeffabriek-geldrop",
@@ -1717,7 +2335,23 @@
     "plaats": "Gouda",
     "land": "NL",
     "soort": "theater",
-    "website": "https://goudseschouwburg.nl"
+    "website": "https://goudseschouwburg.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/goudse-schouwburg.jpg",
+      "alt": "Goudse Schouwburg",
+      "maker": "Agaath",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Goudse_Schouwburg_03.jpg",
+      "wikidata": "Q2918016",
+      "hoogte": 540,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Goudse Schouwburg",
+        "taal": "nl"
+      },
+      "datum": "2020-10-26"
+    }
   },
   {
     "id": "a-theater-groningen",
@@ -1733,7 +2367,23 @@
     "plaats": "Groningen",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.spotgroningen.nl"
+    "website": "https://www.spotgroningen.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/de-oosterpoort.jpg",
+      "alt": "Voorkant van De Oosterpoort in Groningen. Kunstwerk door Alexander Schabracq",
+      "maker": "ZanderZ",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:De_Oosterpoort_Groningen.jpg",
+      "wikidata": "Q2317981",
+      "hoogte": 640,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Voorkant van De Oosterpoort in Groningen. Kunstwerk door Alexander Schabracq",
+        "taal": "nl"
+      },
+      "datum": "2010-05-24"
+    }
   },
   {
     "id": "lutherse-kerk-groningen",
@@ -1757,7 +2407,23 @@
     "plaats": "Groningen",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.martiniplaza.nl"
+    "website": "https://www.martiniplaza.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/martiniplaza-groningen.jpg",
+      "alt": "Hoofdentree MartiniPlaza op 20 december 2010",
+      "maker": "Pepijnkoning",
+      "licentie": "CC BY 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Hoofdentree_MartiniPlaza_december_2010.jpg",
+      "wikidata": "Q2790073",
+      "hoogte": 640,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Hoofdentree MartiniPlaza op 20 december 2010",
+        "taal": "nl"
+      },
+      "datum": "2010-12-20"
+    }
   },
   {
     "id": "stadsschouwburg-groningen",
@@ -1765,7 +2431,23 @@
     "plaats": "Groningen",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.spotgroningen.nl"
+    "website": "https://www.spotgroningen.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/stadsschouwburg-groningen.jpg",
+      "alt": "Stadsschouwburg Groningen in Groningen",
+      "maker": "C messier",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Stadsschouwburg%2C_Groningen_1276.jpg",
+      "wikidata": "Q4356153",
+      "hoogte": 718,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "The city theatre (Stadsschouwburg) of Groningen.",
+        "taal": "en"
+      },
+      "datum": "2016-08-27"
+    }
   },
   {
     "id": "usva-groningen",
@@ -1797,7 +2479,20 @@
     "plaats": "Haarlem",
     "land": "NL",
     "soort": "theater",
-    "website": "https://stadsschouwburghaarlem.nl"
+    "website": "https://stadsschouwburghaarlem.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/stadsschouwburg-haarlem.jpg",
+      "alt": "Stadsschouwburg Haarlem in Haarlem",
+      "maker": "Aristonico",
+      "licentie": "CC BY-SA 3.0 nl",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+      "bron": "https://commons.wikimedia.org/wiki/File:Stadsschouwburg_Haarlem_front.jpg",
+      "wikidata": "Q2372875",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": null,
+      "datum": "2011-04-05"
+    }
   },
   {
     "id": "theater-de-liefde-haarlem",
@@ -1813,7 +2508,23 @@
     "plaats": "Haarlem",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.schuur.nl"
+    "website": "https://www.schuur.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/toneelschuur-haarlem.jpg",
+      "alt": "Toneelschuur in Haarlem",
+      "maker": "The original uploader was Guusbosman at English Wikipedia .",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "bron": "https://commons.wikimedia.org/wiki/File:Toneelschuur-Haarlem-Lange-Begijnestraat.jpg",
+      "wikidata": "Q2789799",
+      "hoogte": 1542,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "New building of the Toneelschuur, theater in Haarlem. . Picture taken by Guus Bosman on Sunday September 5th 2004.",
+        "taal": "?"
+      },
+      "datum": null
+    }
   },
   {
     "id": "cultureel-centrum-concordia-haastrecht",
@@ -1909,7 +2620,23 @@
     "plaats": "Heerenveen",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.posthuistheater.nl"
+    "website": "https://www.posthuistheater.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/posthuis-theater-heerenveen.jpg",
+      "alt": "Het Posthuistheater te Heerenveen",
+      "maker": "Johan Bakker",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:007467_Heerenveen_Posthuistheater.jpg",
+      "wikidata": "Q2161608",
+      "hoogte": 671,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Het Posthuistheater te Heerenveen.",
+        "taal": "nl"
+      },
+      "datum": "2016-05-07"
+    }
   },
   {
     "id": "cool-kunst-en-cultuur-heerhugowaard",
@@ -1925,7 +2652,23 @@
     "plaats": "Heerlen",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.plt.nl"
+    "website": "https://www.plt.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-heerlen.jpg",
+      "alt": "Theater Heerlen in Heerlen",
+      "maker": "Fnorp",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "bron": "https://commons.wikimedia.org/wiki/File:Heerlen26.JPG",
+      "wikidata": "Q2047732",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Zelf gemaakt, GNU",
+        "taal": "?"
+      },
+      "datum": null
+    }
   },
   {
     "id": "de-pas-heesch",
@@ -1965,7 +2708,8 @@
     "plaats": "Helmond",
     "land": "NL",
     "soort": "theater",
-    "website": "https://theaterspeelhuis.nl"
+    "website": "https://theaterspeelhuis.nl",
+    "foto": false
   },
   {
     "id": "cascade-hendrik-ido-ambacht",
@@ -1981,7 +2725,23 @@
     "plaats": "Hengelo",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.schouwburghengelo.nl"
+    "website": "https://www.schouwburghengelo.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/schouwburg-hengelo.jpg",
+      "alt": "Rabotheater Hengelo",
+      "maker": "Rickerlolo",
+      "licentie": "CC BY-SA 3.0 nl",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+      "bron": "https://commons.wikimedia.org/wiki/File:Rabotheater.jpg",
+      "wikidata": "Q15392162",
+      "hoogte": 602,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Rabotheater Hengelo",
+        "taal": "nl"
+      },
+      "datum": "2013-12-07"
+    }
   },
   {
     "id": "kulturele-raad-hillegom",
@@ -2045,7 +2805,23 @@
     "plaats": "Hoogeveen",
     "land": "NL",
     "soort": "theater",
-    "website": "https://detamboer.nl"
+    "website": "https://detamboer.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/de-tamboer-hoogeveen.jpg",
+      "alt": "De Tamboer in Hoogeveen",
+      "maker": "eaprins",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Tamboer_exterieur.jpg",
+      "wikidata": "Q26401326",
+      "hoogte": 736,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Exterior Cultural Center 'De Tamboer', Hoogeveen (The Netherlands), with new theater and entrance",
+        "taal": "en"
+      },
+      "datum": "2013-08-28"
+    }
   },
   {
     "id": "kielzog-theater-hoogezand",
@@ -2069,7 +2845,23 @@
     "plaats": "Hoorn",
     "land": "NL",
     "soort": "theater",
-    "website": "https://hetpark.nl"
+    "website": "https://hetpark.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/schouwburg-het-park.jpg",
+      "alt": "Schouwburg Het Park in Hoorn",
+      "maker": "M.Minderhoud",
+      "licentie": "Public domain",
+      "licentieUrl": null,
+      "bron": "https://commons.wikimedia.org/wiki/File:Hoorn_Schouwburg_Het_Park_017.jpg",
+      "wikidata": "Q2179955",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Hoorn, dec 2006",
+        "taal": "?"
+      },
+      "datum": null
+    }
   },
   {
     "id": "theater-het-pakhuis",
@@ -2141,7 +2933,23 @@
     "plaats": "Kampen",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.stadsgehoorzaalkampen.nl"
+    "website": "https://www.stadsgehoorzaalkampen.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/stadsgehoorzaal-kampen.jpg",
+      "alt": "Stadsgehoorzaal Kampen in Kampen",
+      "maker": "Michiel1972",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Stadsgehoorzaal_Kampen.jpg",
+      "wikidata": "Q2514937",
+      "hoogte": 1280,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Stadsgehoorzaal Kampen",
+        "taal": "en"
+      },
+      "datum": null
+    }
   },
   {
     "id": "theater-kerkrade",
@@ -2149,7 +2957,23 @@
     "plaats": "Kerkrade",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.plt.nl"
+    "website": "https://www.plt.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-kerkrade.jpg",
+      "alt": "Grote zaal, Parkstad Limburg Theaters locatie Kerkrade",
+      "maker": "Parkstad Limburg Theaters",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Grote_zaal_Kerkrade.jpg",
+      "wikidata": "Q2803318",
+      "hoogte": 640,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Grote zaal, Parkstad Limburg Theaters locatie Kerkrade",
+        "taal": "nl"
+      },
+      "datum": "2020-01-16"
+    }
   },
   {
     "id": "de-tuyter-krimpen-aan-den-ijssel",
@@ -2173,7 +2997,23 @@
     "plaats": "Laren",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.singerlaren.nl"
+    "website": "https://www.singerlaren.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/singer-laren.jpg",
+      "alt": "Singer Laren in Laren",
+      "maker": "M.Minderhoud",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "bron": "https://commons.wikimedia.org/wiki/File:Singer_museum_laren.jpg",
+      "wikidata": "Q431431",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Singer museum and sculpture De Zwanen in Laren, June 2006",
+        "taal": "?"
+      },
+      "datum": null
+    }
   },
   {
     "id": "go-leerdam",
@@ -2189,7 +3029,23 @@
     "plaats": "Leeuwarden",
     "land": "NL",
     "soort": "theater",
-    "website": "https://harmonie.nl"
+    "website": "https://harmonie.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/de-harmonie.jpg",
+      "alt": "De Harmonie in Leeuwarden",
+      "maker": "Ieneach fan 'e Esk",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Stedsskouboarch_De_Harmony%2C_Ljouwert.jpg",
+      "wikidata": "Q1932964",
+      "hoogte": 546,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Main entrance of Stadsschouwburg De Harmonie (Frisian: Stedsskouboarch De Harmony), a theater in Leeuwarden/Ljouwert, Friesland, the Netherlands.",
+        "taal": "en"
+      },
+      "datum": "2018-07-15"
+    }
   },
   {
     "id": "comedy-club-de-burcht-leiden",
@@ -2213,7 +3069,23 @@
     "plaats": "Leiden",
     "land": "NL",
     "soort": "theater",
-    "website": "https://leidseschouwburg-stadsgehoorzaal.nl"
+    "website": "https://leidseschouwburg-stadsgehoorzaal.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/leidse-schouwburg.jpg",
+      "alt": "Leidse Schouwburg in Leiden",
+      "maker": "Michiel1972",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Leidse_Schouwburg_(voorzijde).jpg",
+      "wikidata": "Q3275812",
+      "hoogte": 1280,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Leidse Schouwburg Leiden",
+        "taal": "?"
+      },
+      "datum": null
+    }
   },
   {
     "id": "stadsgehoorzaal-leiden",
@@ -2221,7 +3093,23 @@
     "plaats": "Leiden",
     "land": "NL",
     "soort": "theater",
-    "website": "https://leidseschouwburg-stadsgehoorzaal.nl"
+    "website": "https://leidseschouwburg-stadsgehoorzaal.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/stadsgehoorzaal-leiden.jpg",
+      "alt": "Stadsgehoorzaal Leiden in Leiden",
+      "maker": "Goodness Shamrock",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Stadsgehoorzaal_Leiden.jpg",
+      "wikidata": "Q2058912",
+      "hoogte": 1287,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "The municipal concert hall (stadsgehoorzaal) of the city of Leiden (1890-1891) designed by D.E.C. Knuttel",
+        "taal": "?"
+      },
+      "datum": "2009-04-19"
+    }
   },
   {
     "id": "het-veur-theater-leidschendam",
@@ -2285,7 +3173,23 @@
     "plaats": "Lochem",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.schouwburglochem.nl"
+    "website": "https://www.schouwburglochem.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/schouwburg-lochem.jpg",
+      "alt": "Schouwburg Lochem in Lochem",
+      "maker": "Rijksdienst voor het Cultureel Erfgoed",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Exterieur_overzicht_voorzijde_van_het_theater_en_rechter_zijgevel_-_Lochem_-_20339719_-_RCE.jpg",
+      "wikidata": "Q42307484",
+      "hoogte": 985,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Schouwburg: Exterieur overzicht voorzijde van het theater en rechter zijgevel",
+        "taal": "nl"
+      },
+      "datum": "1999-04-27"
+    }
   },
   {
     "id": "de-smeltkroes-maarheeze",
@@ -2317,7 +3221,23 @@
     "plaats": "Maastricht",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.theateraanhetvrijthof.nl"
+    "website": "https://www.theateraanhetvrijthof.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-aan-het-vrijthof.jpg",
+      "alt": "Theater aan het Vrijthof in Maastricht",
+      "maker": "Berthold Werner",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Maastricht_Theater_Vrijthof_46_BW_2017-08-19_12-51-27.jpg",
+      "wikidata": "Q2233931",
+      "hoogte": 730,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Maastricht, Vrijthof 46, Theater",
+        "taal": "en"
+      },
+      "datum": "2017-08-19"
+    }
   },
   {
     "id": "theater-malden",
@@ -2349,7 +3269,23 @@
     "plaats": "Meppel",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.schouwburgogterop.nl"
+    "website": "https://www.schouwburgogterop.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/schouwburg-ogterop.jpg",
+      "alt": "Schouwburg Ogterop, Zuideinde, Meppel",
+      "maker": "Weefemwe",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Schouwburg_Ogterop%2C_Meppel.jpg",
+      "wikidata": "Q35102185",
+      "hoogte": 714,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Schouwburg Ogterop, Zuideinde, Meppel",
+        "taal": "nl"
+      },
+      "datum": "2010-10-16"
+    }
   },
   {
     "id": "schouwburg-middelburg",
@@ -2445,7 +3381,23 @@
     "plaats": "Nijmegen",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.lux-nijmegen.nl"
+    "website": "https://www.lux-nijmegen.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/lux-nijmegen.jpg",
+      "alt": "LUX Nijmegen, Poortgebouw",
+      "maker": "Prlux",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:LUX_Nijmegen.jpg",
+      "wikidata": "Q2557651",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "LUX Nijmegen, Poortgebouw",
+        "taal": "nl"
+      },
+      "datum": "2018-05-09"
+    }
   },
   {
     "id": "stadsschouwburg-nijmegen",
@@ -2453,7 +3405,23 @@
     "plaats": "Nijmegen",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.stadsschouwburgendevereeniging.nl"
+    "website": "https://www.stadsschouwburgendevereeniging.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/stadsschouwburg-nijmegen.jpg",
+      "alt": "Stadsschouwburg te Nijmegen. Rijksmonument sinds 2013",
+      "maker": "Johan Bakker",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:532210_stadsschouwburg_nijmegen.jpg",
+      "wikidata": "Q2433308",
+      "hoogte": 579,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Stadsschouwburg te Nijmegen. Rijksmonument sinds 2013.",
+        "taal": "nl"
+      },
+      "datum": "2017-08-07"
+    }
   },
   {
     "id": "zinin-theater-nijverdal",
@@ -2589,7 +3557,23 @@
     "plaats": "Oss",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.lievekamp.nl"
+    "website": "https://www.lievekamp.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-de-lievekamp-oss.jpg",
+      "alt": "Theater De Lievekamp aan de Raadhuislaan in Oss",
+      "maker": "RagingR2",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:De_Lievekamp_Oss.jpg",
+      "wikidata": "Q60646665",
+      "hoogte": 552,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Theater De Lievekamp aan de Raadhuislaan in Oss",
+        "taal": "nl"
+      },
+      "datum": null
+    }
   },
   {
     "id": "wijkcentrum-schadewijk-oss",
@@ -2693,7 +3677,23 @@
     "plaats": "Rijswijk",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.rijswijkseschouwburg.nl"
+    "website": "https://www.rijswijkseschouwburg.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/rijswijkse-schouwburg.jpg",
+      "alt": "Rijswijkse Schouwburg in Rijswijk",
+      "maker": "M.Minderhoud",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "bron": "https://commons.wikimedia.org/wiki/File:Rijswijkse_schouwburg_oktober2005.jpg",
+      "wikidata": "Q2456078",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Rijswijkse schouwburg (a theater), Rijswijk, 2 oktober 2005",
+        "taal": "?"
+      },
+      "datum": "2005-10-02"
+    }
   },
   {
     "id": "dorpshuis-rilland-luctor-et-emergo",
@@ -2733,7 +3733,23 @@
     "plaats": "Roermond",
     "land": "NL",
     "soort": "theater",
-    "website": "https://ecicultuurfabriek.nl"
+    "website": "https://ecicultuurfabriek.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/eci-cultuurfabriek-roermond.jpg",
+      "alt": "ECI Cultuurfabriek in Roermond",
+      "maker": "Rijksdienst voor het Cultureel Erfgoed",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Zicht_op_de_ECI_fabriek_over_de_Roer%2C_gezien_vanaf_de_nieuwbouw_-_Roermond_-_20535415_-_RCE.jpg",
+      "wikidata": "Q14626972",
+      "hoogte": 1403,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Voormalig Fabriek Electrochemische Industrie: Zicht op de ECI fabriek over de Roer, gezien vanaf de nieuwbouw",
+        "taal": "nl"
+      },
+      "datum": "2010-04-20"
+    }
   },
   {
     "id": "theater-de-oranjerie-roermond",
@@ -2821,7 +3837,8 @@
     "plaats": "Rotterdam",
     "land": "NL",
     "soort": "theater",
-    "website": "https://luxortheater.nl"
+    "website": "https://luxortheater.nl",
+    "foto": false
   },
   {
     "id": "oude-luxor",
@@ -2829,7 +3846,23 @@
     "plaats": "Rotterdam",
     "land": "NL",
     "soort": "theater",
-    "website": "https://luxortheater.nl"
+    "website": "https://luxortheater.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/oude-luxor.jpg",
+      "alt": "Oude Luxor Theater in Rotterdam",
+      "maker": "MatteoNL97",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Oude_Luxor_theater_Rotterdam_(2020).jpg",
+      "wikidata": "Q4672497",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Een van de twee nog overgebleven gebouwen van voor de Tweede Wereldoorlog. Het Oude Luxor Theater, hersteld in haar oude glorie na de grote verbouwing die plaatsvond in 2014, te vinden aan de Kruiskad",
+        "taal": "nl"
+      },
+      "datum": "2020-04-10"
+    }
   },
   {
     "id": "theater-rotterdam",
@@ -2845,7 +3878,8 @@
     "plaats": "Rotterdam",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.theaterwalhalla.nl"
+    "website": "https://www.theaterwalhalla.nl",
+    "foto": false
   },
   {
     "id": "theater-zuidplein",
@@ -2853,7 +3887,23 @@
     "plaats": "Rotterdam",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.theaterzuidplein.nl"
+    "website": "https://www.theaterzuidplein.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-zuidplein.jpg",
+      "alt": "Nieuwe pand Theater Zuidplein",
+      "maker": "TheaterZuidplein",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Nieuw_pand_TZ.jpg",
+      "wikidata": "Q14480520",
+      "hoogte": 548,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Nieuwe pand Theater Zuidplein",
+        "taal": "nl"
+      },
+      "datum": "2020-05-06"
+    }
   },
   {
     "id": "werkplaats-walhalla",
@@ -2885,7 +3935,23 @@
     "plaats": "Scheveningen",
     "land": "NL",
     "soort": "theater",
-    "website": null
+    "website": null,
+    "foto": {
+      "bestand": "/fotos/theaters/circustheater-scheveningen.jpg",
+      "alt": "Circustheater in Scheveningen",
+      "maker": "Brinkie",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Fortis_Circustheater_by_night.jpg",
+      "wikidata": "Q2851347",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Fortis Circustheater in Scheveningen by night; the musical \"Beaty and the Beast\" is on display.",
+        "taal": "en"
+      },
+      "datum": "2006-12-23"
+    }
   },
   {
     "id": "theater-aan-de-schie",
@@ -2893,7 +3959,23 @@
     "plaats": "Schiedam",
     "land": "NL",
     "soort": "theater",
-    "website": "https://theateraandeschie.nl"
+    "website": "https://theateraandeschie.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-aan-de-schie.jpg",
+      "alt": "Theater aan de Schie in Schiedam",
+      "maker": "Targaryen",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Theater_aan_de_Schie.jpg",
+      "wikidata": "Q2233973",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Theater aan de Schie in Schiedam",
+        "taal": "nl"
+      },
+      "datum": "2012-04-06"
+    }
   },
   {
     "id": "spectrum-podium-schijndel",
@@ -2949,7 +4031,8 @@
     "plaats": "Sneek",
     "land": "NL",
     "soort": "theater",
-    "website": "https://theatersneek.nl"
+    "website": "https://theatersneek.nl",
+    "foto": false
   },
   {
     "id": "theater-sneek-noorderkerkzaal",
@@ -3021,7 +4104,23 @@
     "plaats": "Stadskanaal",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.theatergeertteis.nl"
+    "website": "https://www.theatergeertteis.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/theater-geert-teis-stadskanaal.jpg",
+      "alt": "Theater Geert Teis in Stadskanaal",
+      "maker": "Gouwenaar",
+      "licentie": "Public domain",
+      "licentieUrl": null,
+      "bron": "https://commons.wikimedia.org/wiki/File:Theater_Geert_Teis_Stadskanaal.jpg",
+      "wikidata": "Q3444913",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Theater Geert Teis in Stadskanaal",
+        "taal": "nl"
+      },
+      "datum": "2008-11-25"
+    }
   },
   {
     "id": "rabo-theater-de-meenthe-steenwijk",
@@ -3061,7 +4160,23 @@
     "plaats": "Tiel",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.zinder.nl"
+    "website": "https://www.zinder.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/zinder-tiel.jpg",
+      "alt": "Cultuurcentrum Zinder",
+      "maker": "Kattiel",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Zinder_Tiel_03.jpg",
+      "wikidata": "Q42155135",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Cultuurcentrum Zinder",
+        "taal": "nl"
+      },
+      "datum": "2017-08-09"
+    }
   },
   {
     "id": "concertzaal-tilburg",
@@ -3109,7 +4224,23 @@
     "plaats": "Ulft",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.dru-industriepark.nl"
+    "website": "https://www.dru-industriepark.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/dru-industriepark-ulft.jpg",
+      "alt": "DRU Industriepark in Ulft",
+      "maker": "Ziko van Dijk",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:20180914_DRU_cultuurfabriek_06.jpg",
+      "wikidata": "Q1155466",
+      "hoogte": 640,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "DRU-Cultuurfabriek, Ulft (Oude IJsselstreek, Gelderland).",
+        "taal": "nl"
+      },
+      "datum": "2018-09-14"
+    }
   },
   {
     "id": "beatrix-theater-utrecht",
@@ -3117,7 +4248,23 @@
     "plaats": "Utrecht",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.stage-entertainment.nl"
+    "website": "https://www.stage-entertainment.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/beatrix-theater-utrecht.jpg",
+      "alt": "Beatrix Theater in Utrecht",
+      "maker": "User:Bvankuik",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "bron": "https://commons.wikimedia.org/wiki/File:Utrecht_jaarbeursplein_beatrixtheater.jpg",
+      "wikidata": "Q813291",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "The Jaarbeursplein square in Utrecht, The Netherlands. Visible are the Beatrix Theater and the Route 66 American-style diner. Not visible at the left is the entrance to the Utrecht central railway sta",
+        "taal": "?"
+      },
+      "datum": "2006-07-27"
+    }
   },
   {
     "id": "comedyhuis-utrecht",
@@ -3165,7 +4312,23 @@
     "plaats": "Utrecht",
     "land": "NL",
     "soort": "theater",
-    "website": "https://stadsschouwburg-utrecht.nl"
+    "website": "https://stadsschouwburg-utrecht.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/stadsschouwburg-utrecht.jpg",
+      "alt": "Stadsschouwburg Utrecht in Utrecht",
+      "maker": "Luctor IV",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "bron": "https://commons.wikimedia.org/wiki/File:StadsschUtrecht.JPG",
+      "wikidata": "Q2485688",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Stadsschouwburg (theatre), Utrecht",
+        "taal": "?"
+      },
+      "datum": "2006-10-23"
+    }
   },
   {
     "id": "theater-de-musketon-utrecht",
@@ -3253,7 +4416,23 @@
     "plaats": "Venlo",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.maaspoort.nl"
+    "website": "https://www.maaspoort.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/maaspoort.jpg",
+      "alt": "De nieuwe voorgevel van Theater de Maaspoort na de verbouwing in 2011",
+      "maker": "Ton Desar",
+      "licentie": "CC BY-SA 3.0 nl",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+      "bron": "https://commons.wikimedia.org/wiki/File:Voorgevel_Theater_de_Maaspoort.jpg",
+      "wikidata": "Q2711825",
+      "hoogte": 1440,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "De nieuwe voorgevel van Theater de Maaspoort na de verbouwing in 2011.",
+        "taal": "nl"
+      },
+      "datum": "2011-10-31"
+    }
   },
   {
     "id": "theater-de-garage-venlo",
@@ -3285,7 +4464,23 @@
     "plaats": "Vlaardingen",
     "land": "NL",
     "soort": "theater",
-    "website": "https://stadsgehoorzaal.nl"
+    "website": "https://stadsgehoorzaal.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/stadsgehoorzaal-vlaardingen.jpg",
+      "alt": "Stadsgehoorzaal Vlaardingen in Vlaardingen",
+      "maker": "I, Opuntia",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "bron": "https://commons.wikimedia.org/wiki/File:Stadsgehoorzaal_PICT3967.jpg",
+      "wikidata": "Q3945666",
+      "hoogte": 720,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Stadsgehoorzaal",
+        "taal": "?"
+      },
+      "datum": null
+    }
   },
   {
     "id": "theater-ludens-voorburg",
@@ -3357,7 +4552,23 @@
     "plaats": "Weesp",
     "land": "NL",
     "soort": "theater",
-    "website": "https://wesopa.nl"
+    "website": "https://wesopa.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/city-of-wesopa-weesp.jpg",
+      "alt": "City of Wesopa in Weesp",
+      "maker": "Michiel1972",
+      "licentie": "CC BY-SA 3.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:City_of_Wesopa.jpg",
+      "wikidata": "Q2430185",
+      "hoogte": 1195,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "City of Wesopa",
+        "taal": "en"
+      },
+      "datum": null
+    }
   },
   {
     "id": "het-plein-west-graftdijk",
@@ -3389,7 +4600,23 @@
     "plaats": "Winschoten",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.indeklinker.nl"
+    "website": "https://www.indeklinker.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/cultuurhuis-de-klinker-winschoten.jpg",
+      "alt": "Cultuurhuis De Klinker in Winschoten",
+      "maker": "Donald Trung",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:De_Klinker_culture_house%2C_Winschoten_(2017).jpg",
+      "wikidata": "Q2444077",
+      "hoogte": 540,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "The culture house 🏠 of the city of Winschoten.",
+        "taal": "en"
+      },
+      "datum": "2017-09-23"
+    }
   },
   {
     "id": "op-maarhuizen-winsum",
@@ -3517,7 +4744,23 @@
     "plaats": "Zwolle",
     "land": "NL",
     "soort": "theater",
-    "website": "https://www.zwolsetheaters.nl"
+    "website": "https://www.zwolsetheaters.nl",
+    "foto": {
+      "bestand": "/fotos/theaters/odeon-zwolle.jpg",
+      "alt": "Stadsschouwburg Odeon aan de Blijmarkt in Zwolle",
+      "maker": "Dqfn13",
+      "licentie": "CC BY-SA 4.0",
+      "licentieUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "bron": "https://commons.wikimedia.org/wiki/File:Blijmarkt_25%2C_Zwolle.jpg",
+      "wikidata": "Q3486537",
+      "hoogte": 640,
+      "breedte": 960,
+      "beschrijving": {
+        "tekst": "Stadsschouwburg Odeon aan de Blijmarkt in Zwolle.",
+        "taal": "nl"
+      },
+      "datum": "2016-08-19"
+    }
   },
   {
     "id": "theater-de-spiegel",
