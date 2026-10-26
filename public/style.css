@@ -202,24 +202,12 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* Mobiel: de andere affiches zakken iets terug, zodat je tijdens het vegen ziet welke vooraan komt. */
 .strip.vegen .poster:not(.actief) { transform: scale(.93); }
 .poster .when { line-height: 1; }
-.poster .weekday { font-weight: 600; font-size: 1.05rem; }
 .poster .day {
   display: block; font-family: var(--font-display); font-weight: 900;
   font-size: 9.5rem; line-height: .8; letter-spacing: -0.03em; margin-top: 8px;
   font-variant-numeric: tabular-nums;
 }
 .poster .month { font-family: var(--font-display); font-weight: 800; font-size: 2.2rem; line-height: 1; }
-.poster .vtitle {
-  position: absolute; right: 18px; bottom: 28px; max-height: 300px;
-  writing-mode: vertical-rl; transform: rotate(180deg);
-  font-family: var(--font-display); font-weight: 900; font-size: 3.3rem; line-height: .9;
-  letter-spacing: 0.01em; text-transform: uppercase; overflow: hidden;
-}
-.poster .vtitle.long { font-size: 2.35rem; line-height: .95; }
-.poster .vtitle.xlong { font-size: 1.85rem; line-height: 1; }
-.poster .who { align-self: end; max-width: calc(100% - 96px); }
-.poster .who strong { display: block; font-size: 1.3rem; line-height: 1.15; font-weight: 700; }
-.poster .who .where { display: block; font-size: .95rem; margin-top: 4px; }
 .poster .tag {
   display: inline-block; margin-top: 10px; font-size: var(--step--1); font-weight: 600;
   padding: 3px 10px; border-radius: 999px; background: var(--fg); color: var(--bg);
@@ -285,7 +273,6 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .strip-nav svg { width: 22px; height: 22px; }
 @media (max-width: 600px) {
   .poster { width: 78vw; height: 470px; }
-  .poster .day { font-size: 7.5rem; }
   .poster-foto { height: 500px; --naad: 50%; }
   .poster-info { padding: 16px 10px 18px 18px; }
   .poster-foto .day { font-size: 2.9rem; }

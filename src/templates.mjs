@@ -465,37 +465,11 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   // ---------- Pagina's ----------
 
-  // Lange titels kleiner zetten zodat ze verticaal op de affiche passen.
+  // Lange titels kleiner zetten zodat ze op de affiche passen.
   const titleClass = (titel) => {
     const longestWord = Math.max(...titel.split(/\s+/).map((w) => w.length));
     return longestWord > 13 ? " xlong" : titel.length > 10 ? " long" : "";
   };
-
-  // Affiche per artiest die het vaakst speelt, met de eerstvolgende speeldatum.
-  function posterWall(lijst) {
-    const spots = [["78%", "26%"], ["30%", "70%"], ["85%", "80%"], ["20%", "20%"], ["60%", "50%"]];
-    const thisYear = fmt.year(db.today);
-    return afwisselend(lijst, ({ a }) => a.kleur).map(({ x: { a, list }, kleur }, i) => {
-      const g = list.find((x) => x.status !== "geannuleerd") || list[0];
-      const v = V.get(g.voorstelling), t = T.get(g.theater);
-      const [sx, sy] = spots[i % spots.length];
-      const aantal = plural(list.length, "speeldatum", "speeldata");
-      return `<a class="poster" href="/artiesten/${a.id}/" style="${ink(kleur)};--sx:${sx};--sy:${sy}">
-        <span class="visually-hidden">${esc(a.naam)}, ${aantal}, eerstvolgende ${fmt.long(g.datum)} in ${esc(t.naam)}, ${esc(t.plaats)}</span>
-        <div class="when" aria-hidden="true">
-          <span class="weekday">Vanaf</span>
-          <span class="day">${fmt.day(g.datum)}</span>
-          <span class="month">${fmt.monthShort(g.datum)}${fmt.year(g.datum) !== thisYear ? " " + fmt.year(g.datum) : ""}</span>
-        </div>
-        <span class="vtitle${titleClass(a.naam)}" aria-hidden="true">${esc(a.naam)}</span>
-        <div class="who" aria-hidden="true">
-          <strong>${esc(echteTitel(g.voorstelling) || v.titel)}</strong>
-          <span class="where">${esc(t.naam)}${t.naam.includes(t.plaats) ? "" : "<br>" + esc(t.plaats)}</span>
-          <span class="tag">${aantal}</span>
-        </div>
-      </a>`;
-    }).join("");
-  }
 
   // Uitsnede rond het gezicht (focus in data/promo.json) voor een vlak met verhouding breedte/hoogte.
   // object-position in procenten: 0% legt de rand links/boven, 100% rechts/onder.
@@ -567,7 +541,6 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   function home() {
     const eindeWeek = new Date(new Date(db.today + "T12:00:00").getTime() + 6 * 864e5).toISOString().slice(0, 10);
     const dezeWeek = up.filter((g) => g.datum <= eindeWeek);
-    const veelOpTournee = [...artiestenMetData].sort((x, y) => y.list.length - x.list.length || x.a.naam.localeCompare(y.a.naam, "nl")).slice(0, 12);
     const grootstePlaatsen = [...plaatsen].sort((a, b) => perPlaats(b).length - perPlaats(a).length).slice(0, 12)
       .sort((a, b) => a.localeCompare(b, "nl"));
 
@@ -579,14 +552,7 @@ ${nu ? `<section class="wall" aria-labelledby="nu-title">
     <p>Voorstellingen die nu op tournee zijn, de eerstvolgende voorop. <a href="/agenda/">De volledige agenda</a></p>
   </div>
   ${strip("strip-nu", "Voorstellingen die nu in het theater staan", nu)}
-</section>` : ""}
-<section class="wall" aria-labelledby="wall-title">
-  <div class="wrap wall-head">
-    <${nu ? "h2" : "h1"} id="wall-title">Veel op tournee</${nu ? "h2" : "h1"}>
-    <p>De cabaretiers en comedians met de meeste speeldata. <a href="/artiesten/">Alle ${tellers.artiesten} artiesten</a></p>
-  </div>
-  ${strip("strip", "Artiesten met de meeste speeldata", posterWall(veelOpTournee))}
-</section>
+</section>` : `<h1 class="visually-hidden">Cabaretiers.com, de theateragenda</h1>`}
 
 <section class="wrap stats" aria-label="De agenda in cijfers">
   <dl>
