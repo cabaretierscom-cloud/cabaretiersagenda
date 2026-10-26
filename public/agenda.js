@@ -29,10 +29,9 @@
   if (menu && menu.scrollWidth > menu.clientWidth) menu.scrollLeft = actief.offsetLeft - (menu.clientWidth - actief.offsetWidth) / 2;
 
   // ---------- Affichewand ----------
-  const strip = document.getElementById("strip");
-  if (strip) {
+  for (const strip of document.querySelectorAll(".strip")) {
     const nav = strip.parentElement.querySelector(".strip-nav");
-    const prev = document.getElementById("strip-prev"), next = document.getElementById("strip-next");
+    const prev = nav.querySelector(".strip-prev"), next = nav.querySelector(".strip-next");
     const step = () => Math.max(300, strip.clientWidth * 0.8);
     prev.addEventListener("click", () => strip.scrollBy({ left: -step() }));
     next.addEventListener("click", () => strip.scrollBy({ left: step() }));

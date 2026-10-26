@@ -479,6 +479,48 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     }).join("");
   }
 
+  // "Nu in het theater": voorstellingen met een promobeeld (data/promo.json), eerstvolgende eerst,
+  // hooguit één per artiest. Bovenin het beeld, daaronder het kleurvlak van de artiest.
+  function nuInTheater() {
+    const thisYear = fmt.year(db.today);
+    const gezien = new Set();
+    return [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id))
+      .map((v) => ({ v, list: up.filter((g) => g.voorstelling === v.id && g.status !== "geannuleerd") }))
+      .filter(({ list }) => list.length)
+      .sort((x, y) => x.list[0].datum.localeCompare(y.list[0].datum) || y.list.length - x.list.length)
+      .filter(({ v }) => !gezien.has(v.artiesten[0]) && gezien.add(v.artiesten[0]))
+      .slice(0, 12)
+      .map(({ v, list }, i) => {
+        const a = A.get(v.artiesten[0]), g = list[0], t = T.get(g.theater);
+        const beste = [...(v.recensies || [])].filter((r) => r.sterren).sort((x, y) => y.sterren - x.sterren)[0];
+        const aantal = plural(list.length, "speeldatum", "speeldata");
+        const titel = echteTitel(v.id) || v.titel;
+        return `<a class="poster poster-foto" href="${voorstellingPad.get(v.id)}" style="${ink(a.kleur)}">
+        <span class="visually-hidden">${esc(titel)} van ${esc(artistNames(v.id))}, ${aantal}, eerstvolgende ${fmt.long(g.datum)} in ${esc(t.naam)}, ${esc(t.plaats)}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
+        <span class="poster-beeld" aria-hidden="true">
+          <img src="${esc(v.foto.bestand)}" alt="" width="${v.foto.breedte || 800}" height="${v.foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
+          ${beste ? `<span class="poster-sterren">${"★".repeat(beste.sterren)}<small>${esc(beste.medium)}</small></span>` : ""}
+        </span>
+        <span class="poster-vlak" aria-hidden="true">
+          <span class="when"><span class="weekday">Vanaf</span> <span class="day">${fmt.day(g.datum)}</span> <span class="month">${fmt.monthShort(g.datum)}${fmt.year(g.datum) !== thisYear ? " " + fmt.year(g.datum) : ""}</span></span>
+          <strong class="ftitel${titleClass(titel)}">${esc(titel)}</strong>
+          <span class="fartiest">${esc(artistNames(v.id))}</span>
+          <span class="where">${esc(t.naam)}${t.naam.includes(t.plaats) ? "" : ", " + esc(t.plaats)}</span>
+          <span class="tag">${aantal}</span>
+        </span>
+      </a>`;
+      }).join("");
+  }
+
+  // Zijwaarts scrollende rij affiches met knoppen (agenda.js).
+  const strip = (id, label, inhoud) => `<div class="strip-wrap">
+    <div class="strip" id="${id}" tabindex="0" aria-label="${esc(label)}">${inhoud}</div>
+    <div class="strip-nav" hidden>
+      <button type="button" class="strip-prev" aria-label="Vorige">${ICON.prev}</button>
+      <button type="button" class="strip-next" aria-label="Volgende">${ICON.next}</button>
+    </div>
+  </div>`;
+
   function artiestKaarten(lijst) {
     return lijst.map(({ a, list }) => {
       const titles = [...new Set(list.map((g) => echteTitel(g.voorstelling)).filter(Boolean))].slice(0, 2).join(", ");
@@ -497,19 +539,21 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const grootstePlaatsen = [...plaatsen].sort((a, b) => perPlaats(b).length - perPlaats(a).length).slice(0, 12)
       .sort((a, b) => a.localeCompare(b, "nl"));
 
+    const nu = nuInTheater();
     const body = `
+${nu ? `<section class="wall" aria-labelledby="nu-title">
+  <div class="wrap wall-head">
+    <h1 id="nu-title">Nu in het theater</h1>
+    <p>Voorstellingen die nu op tournee zijn, de eerstvolgende voorop. <a href="/agenda/">De volledige agenda</a></p>
+  </div>
+  ${strip("strip-nu", "Voorstellingen die nu in het theater staan", nu)}
+</section>` : ""}
 <section class="wall" aria-labelledby="wall-title">
   <div class="wrap wall-head">
-    <h1 id="wall-title">Veel op tournee</h1>
+    <${nu ? "h2" : "h1"} id="wall-title">Veel op tournee</${nu ? "h2" : "h1"}>
     <p>De cabaretiers en comedians met de meeste speeldata. <a href="/artiesten/">Alle ${tellers.artiesten} artiesten</a></p>
   </div>
-  <div class="strip-wrap">
-    <div class="strip" id="strip" tabindex="0" aria-label="Artiesten met de meeste speeldata">${posterWall(veelOpTournee)}</div>
-    <div class="strip-nav" hidden>
-      <button type="button" id="strip-prev" aria-label="Vorige voorstellingen">${ICON.prev}</button>
-      <button type="button" id="strip-next" aria-label="Volgende voorstellingen">${ICON.next}</button>
-    </div>
-  </div>
+  ${strip("strip", "Artiesten met de meeste speeldata", posterWall(veelOpTournee))}
 </section>
 
 <section class="wrap stats" aria-label="De agenda in cijfers">

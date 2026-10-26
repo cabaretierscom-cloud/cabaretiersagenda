@@ -165,7 +165,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* ---------- Affichewand ---------- */
 .wall { padding-block: 20px 8px; }
 .wall-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 16px; margin-bottom: 16px; }
-.wall-head h1 { font-family: var(--font-display); font-weight: 900; font-size: var(--step-4); line-height: .86; letter-spacing: -0.015em; }
+.wall-head :is(h1, h2) { font-family: var(--font-display); font-weight: 900; font-size: var(--step-4); line-height: .86; letter-spacing: -0.015em; }
 .wall-head p { color: var(--ink-2); max-width: 34ch; margin: 0; }
 .strip-wrap { position: relative; }
 .strip {
@@ -224,6 +224,39 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   display: inline-block; margin-top: 10px; font-size: var(--step--1); font-weight: 600;
   padding: 3px 10px; border-radius: 999px; background: var(--fg); color: var(--bg);
 }
+/* Affiche met promobeeld ("Nu in het theater"): bovenin de foto, daaronder het kleurvlak van de artiest,
+   op de naad twee inkepingen zoals bij een toegangskaartje. */
+.poster-foto { --naad: 50%; display: flex; flex-direction: column; padding: 0; }
+.poster-foto::before { top: var(--naad); }
+.poster-foto::after {
+  content: ""; position: absolute; left: 0; right: 0; top: var(--naad); height: 24px; translate: 0 -50%; z-index: 1; pointer-events: none;
+  background: radial-gradient(circle at 0 50%, var(--paper) 11px, transparent 11.5px), radial-gradient(circle at 100% 50%, var(--paper) 11px, transparent 11.5px);
+}
+.poster-beeld { position: relative; flex: 0 0 var(--naad); overflow: hidden; background: rgba(0,0,0,.15); }
+.poster-beeld img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.poster-sterren {
+  position: absolute; left: 16px; bottom: 18px; display: inline-flex; align-items: baseline; gap: 6px;
+  padding: 4px 10px 5px; border-radius: 999px; background: var(--bg); color: var(--fg);
+  font-size: 1.05rem; letter-spacing: .06em; line-height: 1;
+}
+.poster-sterren small { font-size: .78rem; font-weight: 600; letter-spacing: 0; }
+.poster-vlak { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; padding: 18px 22px 22px; min-height: 0; }
+.poster-foto .when { display: flex; align-items: baseline; gap: 6px; }
+.poster-foto .weekday { font-size: .95rem; }
+.poster-foto .day { display: inline; font-size: 3.6rem; line-height: .8; margin: 0; }
+.poster-foto .month { font-size: 1.6rem; }
+.poster-foto .ftitel {
+  display: block; font-family: var(--font-display); font-weight: 900; text-transform: uppercase;
+  font-size: 2.1rem; line-height: .92; letter-spacing: .005em; margin-top: 10px; overflow-wrap: anywhere;
+}
+.poster-foto .ftitel.long { font-size: 1.8rem; }
+.poster-foto .ftitel.xlong { font-size: 1.45rem; }
+.poster-foto .fartiest { display: block; font-weight: 700; font-size: 1.05rem; margin-top: 6px; }
+.poster-foto .where { display: block; font-size: .9rem; margin-top: 2px; }
+.poster-foto .tag { align-self: flex-start; }
+@media (hover: hover) and (pointer: fine) {
+  .poster-foto:hover .poster-beeld img, .poster-foto:focus-visible .poster-beeld img { transform: scale(1.04); }
+}
 .strip-nav {
   position: absolute; right: max(12px, env(safe-area-inset-right, 0px)); top: 50%; translate: 0 -50%;
   display: flex; flex-direction: column; gap: 10px; z-index: 3;
@@ -238,6 +271,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 @media (max-width: 600px) {
   .poster { width: 78vw; height: 470px; }
   .poster .day { font-size: 7.5rem; }
+  .poster-foto { --naad: 44%; }
+  .poster-foto .day { font-size: 3.2rem; }
   .strip-nav { display: none; }
 }
 
@@ -438,7 +473,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .faq details a { color: inherit; }
 
 @media (prefers-reduced-motion: no-preference) { .strip { scroll-behavior: smooth; } }
-@media (prefers-reduced-motion: reduce) { .poster, .poster::before { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .poster, .poster::before, .poster-beeld img { transition: none; } }
 
 /* ---------- Kerncijfers ---------- */
 .stats dl { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; margin: 28px 0 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
