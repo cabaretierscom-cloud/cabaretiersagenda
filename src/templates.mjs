@@ -558,7 +558,6 @@ ${nu ? `<section class="wall" aria-labelledby="nu-title">
   <dl>
     <div><dt>voorstellingen</dt><dd>${tellers.speeldata.toLocaleString("nl-NL")}</dd></div>
     <div><dt>artiesten</dt><dd>${tellers.artiesten}</dd></div>
-    <div><dt>zalen</dt><dd>${tellers.zalen}</dd></div>
     <div><dt>plaatsen</dt><dd>${tellers.plaatsen}</dd></div>
   </dl>
 </section>
