@@ -255,15 +255,16 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       ...(a.foto ? { image: URL(a.foto.bestand) } : {}),
     };
   };
+  // Foto van een artiest of een zaal (een zaal herken je aan de plaats).
   const fotoLd = (a) => ({
-    "@type": "ImageObject", "@id": URL(`/artiesten/${a.id}/#foto`),
+    "@type": "ImageObject", "@id": URL(`${a.plaats ? "/theaters" : "/artiesten"}/${a.id}/#foto`),
     url: URL(a.foto.bestand), contentUrl: URL(a.foto.bestand), encodingFormat: "image/jpeg",
     name: a.foto.alt, caption: a.foto.alt, description: a.foto.alt, inLanguage: "nl",
     ...(a.foto.breedte ? { width: a.foto.breedte, height: a.foto.hoogte } : {}),
     ...(a.foto.datum ? { dateCreated: a.foto.datum } : {}),
     creditText: a.foto.maker, copyrightNotice: `${a.foto.maker}, ${a.foto.licentie}`,
     ...(a.foto.licentieUrl ? { license: a.foto.licentieUrl } : {}), acquireLicensePage: a.foto.bron,
-    about: { "@id": URL(`/artiesten/${a.id}/#artiest`) },
+    about: { "@id": a.plaats ? URL(`/theaters/${a.id}/#zaal`) : URL(`/artiesten/${a.id}/#artiest`) },
   });
   // Eerste artiest met een foto bij een voorstelling.
   const fotoArtiest = (vid) => V.get(vid).artiesten.map((x) => A.get(x)).find((x) => x.foto);
@@ -272,6 +273,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return {
       "@type": ZAAL_TYPE[t.soort] || "EventVenue", "@id": URL(`/theaters/${id}/#zaal`), name: t.naam, url: URL(`/theaters/${id}/`),
       ...(t.website ? { sameAs: t.website } : {}),
+      ...(t.foto ? { image: URL(t.foto.bestand) } : {}),
       address: { "@type": "PostalAddress", addressLocality: t.plaats, addressCountry: t.land },
     };
   };
@@ -1210,7 +1212,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   }
 
   // Rechtenvrije foto (Wikimedia Commons) met verplichte naamsvermelding en licentie.
-  const fotoHtml = (a) => `<figure class="artiest-foto">
+  const fotoHtml = (a, klasse = "artiest-foto") => `<figure class="${klasse}">
           <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
           <figcaption>Foto: <a href="${esc(a.foto.bron)}" rel="noopener">${esc(a.foto.maker)}</a>${a.foto.licentieUrl ? `, <a href="${esc(a.foto.licentieUrl)}" rel="noopener license">${esc(a.foto.licentie)}</a>` : `, ${esc(a.foto.licentie)}`}</figcaption>
         </figure>`;
@@ -1415,9 +1417,12 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   function theaterPage(t) {
     const list = db.gigsForTheater(t.id);
-    const body = `<div class="detail-hero" style="--bg:var(--riso-blue);--fg:#FFF"><div class="wrap">
+    const body = `<div class="detail-hero" style="--bg:var(--riso-blue);--fg:#FFF"><div class="wrap${t.foto ? " hero-met-foto" : ""}">
+        <div>
         <h1>${esc(t.naam)}</h1>
         <p><a href="/plaatsen/${plaatsId(t.plaats)}/">${esc(t.plaats)}</a>, ${LANDEN[t.land]}. ${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.` : "Op dit moment staan er geen voorstellingen gepland."}${t.website ? ` <a href="${esc(t.website)}" rel="noopener">Website van het theater</a>` : ""}</p>
+        </div>
+        ${t.foto ? fotoHtml(t, "theater-foto") : ""}
       </div></div>
       <div class="wrap detail-body">
         ${list.length > 12 ? filters(list, { plaats: false, land: false, maand: true }) : ""}
@@ -1429,7 +1434,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const desc = list.length
       ? kort(`Cabaret en comedy in ${t.naam}${t.naam.includes(t.plaats) ? "" : ` in ${t.plaats}`}: ${plural(list.length, "voorstelling", "voorstellingen")}${list.length > 1 ? ` van ${fmt.full(list[0].datum)} tot ${fmt.full(list.at(-1).datum)}` : ` op ${fmt.full(list[0].datum)}`}. Bekijk het programma.`)
       : `Cabaret en comedy in ${t.naam} (${t.plaats}).`;
-    return layout({ title: `${t.naam}${t.naam.includes(t.plaats) ? "" : ` ${t.plaats}`}: cabaret en comedy`, description: desc, path: `/theaters/${t.id}/`, section: "theaters", body, schema: { kruimels: [["Theaters", "/theaters/"], [t.naam, `/theaters/${t.id}/`]], hoofd: { "@id": zaalLd(t.id)["@id"] }, extra: [{ ...zaalLd(t.id), containedInPlace: plaatsLd(t.plaats) }, ...eventsLd(list), ...(list.length ? [faqLd(theaterVragen(t, list), `/theaters/${t.id}/`)] : [])] } });
+    return layout({ title: `${t.naam}${t.naam.includes(t.plaats) ? "" : ` ${t.plaats}`}: cabaret en comedy`, description: desc, path: `/theaters/${t.id}/`, section: "theaters", body, schema: { foto: t.foto ? t : null, kruimels: [["Theaters", "/theaters/"], [t.naam, `/theaters/${t.id}/`]], hoofd: { "@id": zaalLd(t.id)["@id"] }, extra: [{ ...zaalLd(t.id), containedInPlace: plaatsLd(t.plaats) }, ...eventsLd(list), ...(list.length ? [faqLd(theaterVragen(t, list), `/theaters/${t.id}/`)] : [])] } });
   }
 
   function privacy() {
