@@ -13,8 +13,8 @@ const BASIS = "https://www.5to9.be";
 const MAANDEN = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, mei: 5, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, okt: 10, nov: 11, dec: 12 };
 // Geen cabaret of comedy: een chansonnier, een coverband, een toneelstuk en een muziekvoorstelling.
 const NIET = new Set(["Klaas", "Radio Guga", "Moeder Theresa", "Astrid Stockman"]);
-// Humo's Comedy Cup Finalistentour: de finalisten volgens de downloadpagina van 5to9.
-const GROEP = { HCC: { artiesten: ["Bregje Iding", "Jeroen Dyck", "Peter Kluppels"], titel: "Humo's Comedy Cup Finalistentour" } };
+// Humo's Comedy Cup Finalistentour: de finalisten en de MC volgens de promotekst van 5to9.
+const GROEP = { HCC: { artiesten: ["Bregje Iding", "Jeroen Dyck", "Peter Kluppels", "MC Jarno Boone"], titel: "Humo's Comedy Cup Finalistentour" } };
 const NAMEN = { "Bert Gabriels": "Bert Gabriëls" };
 const GENRE = { "Pieter Verelst": "cabaret", Gili: "cabaret" };
 const slugVan = (n) => n.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

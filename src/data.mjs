@@ -124,12 +124,12 @@ export function loadData(dir, { today }) {
     const gewoon = (t) => String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
     const v = p.voorstelling && voorstellingen.find((x) => x.artiesten?.includes(a.id) && gewoon(x.titel) === gewoon(p.voorstelling));
     if (!v) continue;
-    if (p.tekst?.length) v.promotekst = { alineas: p.tekst, van: p.van, bron: p.foto?.bron || null };
+    if (p.tekst?.length) v.promotekst = { alineas: p.tekst, van: p.van, bron: p.bron || p.foto?.bron || null };
     // Persquotes erbij, behalve als dezelfde krant hetzelfde citaat al via een theater heeft.
     const woorden = (t) => new Set(gewoon(t).split(" "));
     const overlap = (x, y) => { const a = woorden(x), b = woorden(y); return [...a].filter((w) => b.has(w)).length / Math.min(a.size, b.size); };
     const zelfde = (x, y) => gewoon(x.medium) === gewoon(y.medium) && overlap(x.citaat, y.citaat) > 0.6;
-    const nieuw = (p.recensies || []).map((r) => ({ ...r, bron: p.foto?.bron })).filter((r) => !(v.recensies || []).some((x) => zelfde(x, r)));
+    const nieuw = (p.recensies || []).map((r) => ({ ...r, bron: p.bron || p.foto?.bron })).filter((r) => !(v.recensies || []).some((x) => zelfde(x, r)));
     if (nieuw.length) v.recensies = [...(v.recensies || []), ...nieuw];
   }
 
