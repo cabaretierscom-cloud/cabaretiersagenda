@@ -629,3 +629,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .video-bron { position: absolute; top: 12px; right: 14px; font-size: .75rem; font-weight: 600; opacity: .8; }
 .video-noot { font-size: .85rem; color: var(--ink-2); margin: 10px 0 0; }
 @media (prefers-reduced-motion: reduce) { .video-play { transition: none; } }
+
+/* Promotekst op een voorstellingspagina */
+.promotekst { max-width: 68ch; margin-bottom: 8px; }
+.promotekst p { line-height: 1.6; }
+.promotekst-bron { font-size: .85rem; color: var(--ink-2); }

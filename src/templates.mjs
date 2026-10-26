@@ -1295,6 +1295,13 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   }
 
   // Recensies van de voorstelling (uit de theaterpagina's): krant, sterren en citaat, met de pagina als bron.
+  // Promotekst die een artiest of impresariaat ons gaf (data/promo.json), met vermelding.
+  const promotekstHtml = (v) => v.promotekst ? `<section class="promotekst" aria-labelledby="over-titel">
+        <h2 id="over-titel" class="sub-head">Over ${esc(v.titel)}</h2>
+        ${v.promotekst.alineas.map((t) => `<p>${esc(t)}</p>`).join("")}
+        <p class="promotekst-bron">Tekst: ${v.promotekst.bron ? `<a href="${esc(v.promotekst.bron)}" rel="noopener">${esc(v.promotekst.van)}</a>` : esc(v.promotekst.van)}</p>
+      </section>` : "";
+
   function recensiesHtml(v, list) {
     if (!v.recensies?.length) return "";
     const zaal = (bron) => {
@@ -1325,6 +1332,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <p>Voorstelling van ${artistLinks(vid)}. ${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.</p>
       </div></div>
       <div class="wrap detail-body">
+        ${promotekstHtml(v)}
         ${recensiesHtml(v, list)}
         <div id="gigs">${monthGroups(list, { showArtist: false })}</div>
         ${voorstellingTekst(vid, list)}

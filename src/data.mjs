@@ -114,10 +114,23 @@ export function loadData(dir, { today }) {
     if (p.foto && !(p.foto.bestand && p.foto.alt && p.foto.maker && p.foto.bron)) errors.push(`${waar}: foto zonder alt-tekst, maker of bron`);
     if (p.foto?.bestand && !existsSync(join(dir, "..", "public", p.foto.bestand))) errors.push(`${waar}: fotobestand ${p.foto.bestand} ontbreekt`);
     for (const v of p.videos || []) if (!/^[\w-]{11}$/.test(v.youtube || "") || !v.titel) errors.push(`${waar}: video zonder geldige YouTube-id of titel`);
+    if ((p.tekst || p.recensies) && !p.voorstelling) errors.push(`${waar}: tekst of recensies zonder voorstelling`);
+    for (const r of p.recensies || []) if (!r.medium || !r.citaat || (r.sterren != null && !(Number.isInteger(r.sterren) && r.sterren >= 1 && r.sterren <= 5))) errors.push(`${waar}: recensie zonder krant of citaat, of met ongeldige sterren`);
     const a = artiesten.find((x) => x.naam === p.artiest);
     if (!a) continue;
     if (p.foto) a.foto = { licentie: `met toestemming van ${p.van}`, ...p.foto };
     if (p.videos?.length) a.videos = p.videos;
+    // Tekst en persquotes horen bij de voorstelling met die titel; staat die er (nog) niet, dan later.
+    const gewoon = (t) => String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+    const v = p.voorstelling && voorstellingen.find((x) => x.artiesten?.includes(a.id) && gewoon(x.titel) === gewoon(p.voorstelling));
+    if (!v) continue;
+    if (p.tekst?.length) v.promotekst = { alineas: p.tekst, van: p.van, bron: p.foto?.bron || null };
+    // Persquotes erbij, behalve als dezelfde krant hetzelfde citaat al via een theater heeft.
+    const woorden = (t) => new Set(gewoon(t).split(" "));
+    const overlap = (x, y) => { const a = woorden(x), b = woorden(y); return [...a].filter((w) => b.has(w)).length / Math.min(a.size, b.size); };
+    const zelfde = (x, y) => gewoon(x.medium) === gewoon(y.medium) && overlap(x.citaat, y.citaat) > 0.6;
+    const nieuw = (p.recensies || []).map((r) => ({ ...r, bron: p.foto?.bron })).filter((r) => !(v.recensies || []).some((x) => zelfde(x, r)));
+    if (nieuw.length) v.recensies = [...(v.recensies || []), ...nieuw];
   }
 
   for (const a of artiesten) {
