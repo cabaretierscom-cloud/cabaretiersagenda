@@ -67,6 +67,8 @@ export function loadData(dir, { today }) {
   const festivals = existsSync(join(dir, "festivals.json")) ? read(dir, "festivals.json") : [];
   // Uitgelicht: betaalde vermeldingen van een theater, artiest of festival, van-tot (zie README).
   const uitgelicht = existsSync(join(dir, "uitgelicht.json")) ? read(dir, "uitgelicht.json") : [];
+  // Promotiemateriaal dat een artiest of impresariaat ons heeft gegeven (foto, video's), met toestemming.
+  const promo = existsSync(join(dir, "promo.json")) ? read(dir, "promo.json") : [];
 
   const errors = [];
   const byId = (list, kind) => {
@@ -102,6 +104,20 @@ export function loadData(dir, { today }) {
     if (u.tekst != null && (typeof u.tekst !== "string" || u.tekst.length > 160)) errors.push(`${waar}: tekst is hooguit 160 tekens`);
     if (u.link != null && !/^https:\/\//.test(u.link)) errors.push(`${waar}: link moet met https:// beginnen`);
     if (u.kleur != null && !KLEUREN[u.kleur]) errors.push(`${waar}: onbekende kleur "${u.kleur}"`);
+  }
+
+  // Promotiemateriaal: de foto vervangt een Wikimedia-foto, video's komen op de artiestpagina.
+  // Staat de artiest (nog) niet in de agenda, dan ligt het klaar voor later.
+  for (const p of promo) {
+    const waar = `promo ${p.artiest}`;
+    if (!p.van || !p.toestemming) errors.push(`${waar}: van wie en welke toestemming zijn verplicht`);
+    if (p.foto && !(p.foto.bestand && p.foto.alt && p.foto.maker && p.foto.bron)) errors.push(`${waar}: foto zonder alt-tekst, maker of bron`);
+    if (p.foto?.bestand && !existsSync(join(dir, "..", "public", p.foto.bestand))) errors.push(`${waar}: fotobestand ${p.foto.bestand} ontbreekt`);
+    for (const v of p.videos || []) if (!/^[\w-]{11}$/.test(v.youtube || "") || !v.titel) errors.push(`${waar}: video zonder geldige YouTube-id of titel`);
+    const a = artiesten.find((x) => x.naam === p.artiest);
+    if (!a) continue;
+    if (p.foto) a.foto = { licentie: `met toestemming van ${p.van}`, ...p.foto };
+    if (p.videos?.length) a.videos = p.videos;
   }
 
   for (const a of artiesten) {

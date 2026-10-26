@@ -108,6 +108,22 @@
     });
   }
 
+  // ---------- Video's ----------
+  // Pas bij een klik de YouTube-speler laden (youtube-nocookie.com); daarvoor gaat er niets naar YouTube.
+  document.querySelectorAll("a.video[data-youtube]").forEach((link) => {
+    link.addEventListener("click", (ev) => {
+      ev.preventDefault();
+      const iframe = document.createElement("iframe");
+      iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(link.dataset.youtube)}?autoplay=1&rel=0`;
+      iframe.title = link.querySelector(".video-titel")?.textContent || "Video";
+      iframe.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      iframe.allowFullscreen = true;
+      iframe.className = "video-speler";
+      link.replaceWith(iframe);
+      iframe.focus();
+    });
+  });
+
   // ---------- Zet in je agenda ----------
   // Knop naast Tickets bij elke voorstelling met data-wat (niet bij geannuleerd of verplaatst):
   // Google Agenda als link, Apple en Outlook als .ics-bestand. Zonder tijd wordt het een hele dag;

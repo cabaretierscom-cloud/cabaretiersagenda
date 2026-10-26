@@ -13,6 +13,7 @@ De agenda heeft geen aparte database. Alle gegevens staan als bestanden in de ma
 | `data/voorstellingen.json` | Voorstellingen (programma's) en wie erin speelt |
 | `data/speeldata.json` | Elke avond dat een voorstelling ergens speelt, met de bron |
 | `data/festivals.json` | Cabaretfestivals: naam, plaats, website, en welke artiesten (`artiesten`) of titels (`titels`) erbij horen |
+| `data/promo.json` | Promotiemateriaal dat artiesten of impresariaten ons gaven: foto (met fotograaf) en YouTube-video's, met van wie en welke toestemming |
 | `data/uitgelicht.json` | Betaalde vermeldingen ("Uitgelicht") van een theater, artiest of festival, met begin- en einddatum |
 
 Elk item heeft een vaste `id` van kleine letters en streepjes, zoals `claudia-de-breij`. Andere bestanden verwijzen daarnaar. Die id wordt ook het webadres: `/artiesten/claudia-de-breij/`.

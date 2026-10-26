@@ -1223,6 +1223,15 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
           <figcaption>Foto: <a href="${esc(a.foto.bron)}" rel="noopener">${esc(a.foto.maker)}</a>${a.foto.licentieUrl ? `, <a href="${esc(a.foto.licentieUrl)}" rel="noopener license">${esc(a.foto.licentie)}</a>` : `, ${esc(a.foto.licentie)}`}</figcaption>
         </figure>`;
 
+  // Video's van YouTube (promotiemateriaal, data/promo.json). Zonder klik niets van YouTube:
+  // agenda.js zet bij een klik de speler van youtube-nocookie.com neer; zonder JavaScript een gewone link.
+  const PLAY = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13l11-6.5z"/></svg>';
+  const videosHtml = (a) => `<section class="videos" aria-labelledby="videos-titel">
+        <h2 id="videos-titel">Video's van ${esc(a.naam)}</h2>
+        <ul style="${ink(a.kleur)}">${a.videos.map((v) => `<li><a class="video" href="https://www.youtube.com/watch?v=${esc(v.youtube)}" data-youtube="${esc(v.youtube)}" target="_blank" rel="noopener"><span class="video-play">${PLAY}</span><span class="video-titel">${esc(v.titel)}</span><span class="video-bron">YouTube</span></a></li>`).join("")}</ul>
+        <p class="video-noot">De video's komen van YouTube en laden pas als je erop klikt.</p>
+      </section>`;
+
   function artistPage(a) {
     const list = db.gigsForArtist(a.id);
     const titles = [...new Set(list.map((g) => echteTitel(g.voorstelling)).filter(Boolean))];
@@ -1245,6 +1254,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${list.length > 12 ? filters(list, { maand: true, waar: true }) : ""}
         <div id="gigs">${monthGroups(list, { showArtist: false })}</div>
         ${list.length > 12 ? leegBlok : ""}
+        ${a.videos?.length ? videosHtml(a) : ""}
         ${artiestTekst(a, list)}
         ${list.length ? faqHtml(artiestVragen(a, list), `Veelgestelde vragen over ${a.naam}`) : ""}
         ${a.geslacht && !isGroep(a) ? `<p class="zie-ook">Bekijk ook andere <a href="/alle-cabaretiers/${a.geslacht === "vrouw" ? "vrouwen" : "mannen"}/">${a.geslacht === "vrouw" ? "vrouwelijke" : "mannelijke"} cabaretiers</a> of <a href="/alle-cabaretiers/">alle cabaretiers</a>.</p>` : ""}
@@ -1454,6 +1464,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <p><button type="button" class="knop-secundair" data-cookies-wijzig hidden>Cookiekeuze wijzigen</button></p>
         <h2 id="opslag">Wat er in je browser blijft staan</h2>
         <p>Je keuze in de cookiemelding bewaren we in je eigen browser (<code>cabaretiers-cookies</code>), zodat we het niet elke keer opnieuw vragen. Dat gaat niet naar ons of naar anderen.</p>
+        <h2 id="video">Video's</h2>
+        <p>Op sommige artiestpagina's staan video's van YouTube. Die laden pas als je erop klikt; dan maakt je browser verbinding met YouTube (in de privacyvriendelijke modus zonder cookies vooraf) en gelden de privacyregels van Google.</p>
         <h2 id="links">Links naar theaters en sociale media</h2>
         <p>Via <em>Tickets</em> ga je naar de site van het theater of de artiest, en via de iconen onderaan naar onze pagina's op Instagram, Facebook, YouTube en TikTok. Daar gelden hun eigen privacyregels.</p>
         <h2 id="mail">Mail</h2>
