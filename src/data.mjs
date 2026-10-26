@@ -115,6 +115,8 @@ export function loadData(dir, { today }) {
     if (!p.van || !p.toestemming) errors.push(`${waar}: van wie en welke toestemming zijn verplicht`);
     if (p.foto && !(p.foto.bestand && p.foto.alt && p.foto.maker && p.foto.bron)) errors.push(`${waar}: foto zonder alt-tekst, maker of bron`);
     if (p.foto?.bestand && !existsSync(join(dir, "..", "public", p.foto.bestand))) errors.push(`${waar}: fotobestand ${p.foto.bestand} ontbreekt`);
+    // focus: [x, y] van het gezicht als deel van breedte en hoogte (0 t/m 1), voor de uitsnede.
+    if (p.foto?.focus != null && !(Array.isArray(p.foto.focus) && p.foto.focus.length === 2 && p.foto.focus.every((n) => typeof n === "number" && n >= 0 && n <= 1))) errors.push(`${waar}: focus moet [x, y] zijn met getallen van 0 t/m 1`);
     for (const v of p.videos || []) if (!/^[\w-]{11}$/.test(v.youtube || "") || !v.titel) errors.push(`${waar}: video zonder geldige YouTube-id of titel`);
     if ((p.tekst || p.recensies) && !p.voorstelling) errors.push(`${waar}: tekst of recensies zonder voorstelling`);
     for (const r of p.recensies || []) if (!r.medium || !r.citaat || (r.sterren != null && !(Number.isInteger(r.sterren) && r.sterren >= 1 && r.sterren <= 5))) errors.push(`${waar}: recensie zonder krant of citaat, of met ongeldige sterren`);

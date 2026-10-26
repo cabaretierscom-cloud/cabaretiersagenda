@@ -235,7 +235,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-beeld { position: relative; flex: 0 0 var(--naad); overflow: hidden; background: rgba(0,0,0,.15); }
 .poster-beeld img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; transition: transform .5s cubic-bezier(.2,.8,.2,1); }
 .poster-sterren {
-  position: absolute; left: 16px; bottom: 18px; display: inline-flex; align-items: baseline; gap: 6px;
+  position: absolute; left: 14px; top: 14px; display: inline-flex; align-items: baseline; gap: 6px;
   padding: 4px 10px 5px; border-radius: 999px; background: var(--bg); color: var(--fg);
   font-size: 1.05rem; letter-spacing: .06em; line-height: 1;
 }
@@ -271,7 +271,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 @media (max-width: 600px) {
   .poster { width: 78vw; height: 470px; }
   .poster .day { font-size: 7.5rem; }
-  .poster-foto { --naad: 44%; }
+  .poster-foto { --naad: 52%; }
   .poster-foto .day { font-size: 3.2rem; }
   .strip-nav { display: none; }
 }

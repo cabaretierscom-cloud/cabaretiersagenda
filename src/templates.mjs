@@ -479,6 +479,15 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     }).join("");
   }
 
+  // Uitsnede rond het gezicht (focus in data/promo.json) voor een vlak met verhouding breedte/hoogte.
+  // object-position in procenten: 0% legt de rand links/boven, 100% rechts/onder.
+  const uitsnede = (foto, verhouding) => {
+    if (!foto.focus || !foto.breedte) return "";
+    const plek = (f, zichtbaar) => zichtbaar >= 1 ? 50 : Math.round(Math.min(1, Math.max(0, (f - zichtbaar / 2) / (1 - zichtbaar))) * 100);
+    const beeld = foto.breedte / foto.hoogte;
+    return ` style="object-position:${plek(foto.focus[0], verhouding / beeld)}% ${plek(foto.focus[1], beeld / verhouding)}%"`;
+  };
+
   // "Nu in het theater": voorstellingen met een promobeeld (data/promo.json), eerstvolgende eerst,
   // hooguit één per artiest. Bovenin het beeld, daaronder het kleurvlak van de artiest.
   function nuInTheater() {
@@ -498,7 +507,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
         return `<a class="poster poster-foto" href="${voorstellingPad.get(v.id)}" style="${ink(a.kleur)}">
         <span class="visually-hidden">${esc(titel)} van ${esc(artistNames(v.id))}, ${aantal}, eerstvolgende ${fmt.long(g.datum)} in ${esc(t.naam)}, ${esc(t.plaats)}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
         <span class="poster-beeld" aria-hidden="true">
-          <img src="${esc(v.foto.bestand)}" alt="" width="${v.foto.breedte || 800}" height="${v.foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
+          <img src="${esc(v.foto.bestand)}" alt=""${uitsnede(v.foto, 1.2)} width="${v.foto.breedte || 800}" height="${v.foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
           ${beste ? `<span class="poster-sterren">${"★".repeat(beste.sterren)}<small>${esc(beste.medium)}</small></span>` : ""}
         </span>
         <span class="poster-vlak" aria-hidden="true">
@@ -1265,7 +1274,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   // Rechtenvrije foto (Wikimedia Commons) met verplichte naamsvermelding en licentie.
   const fotoHtml = (a, klasse = "artiest-foto") => `<figure class="${klasse}">
-          <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
+          <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${klasse === "artiest-foto" ? uitsnede(a.foto, 4 / 5) : ""}${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
           <figcaption>Foto: <a href="${esc(a.foto.bron)}" rel="noopener">${esc(a.foto.maker)}</a>${a.foto.licentieUrl ? `, <a href="${esc(a.foto.licentieUrl)}" rel="noopener license">${esc(a.foto.licentie)}</a>` : `, ${esc(a.foto.licentie)}`}</figcaption>
         </figure>`;
 
