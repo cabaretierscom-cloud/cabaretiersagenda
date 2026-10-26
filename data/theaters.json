@@ -37,7 +37,7 @@
     "plaats": "Antwerpen",
     "land": "BE",
     "soort": "theater",
-    "website": null
+    "website": "https://www.stadsschouwburg-antwerpen.be"
   },
   {
     "id": "toneelhuis-antwerpen",
@@ -48,12 +48,52 @@
     "website": "http://toneelhuis.be"
   },
   {
+    "id": "zuiderpershuis-antwerpen",
+    "naam": "Zuiderpershuis",
+    "plaats": "Antwerpen",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "krak-avelgem",
     "naam": "Krak",
     "plaats": "Avelgem",
     "land": "BE",
     "soort": "theater",
     "website": "https://comedy.krak.be"
+  },
+  {
+    "id": "gc-t-heil-beerse",
+    "naam": "GC 't Heilaar",
+    "plaats": "Beerse",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "cc-de-meent-beersel",
+    "naam": "CC de Meent",
+    "plaats": "Beersel",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.demeent.be"
+  },
+  {
+    "id": "corso-berchem",
+    "naam": "Corso",
+    "plaats": "Berchem",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.corso.be"
+  },
+  {
+    "id": "cc-ter-vesten-beveren",
+    "naam": "CC Ter Vesten",
+    "plaats": "Beveren",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.tervesten.be"
   },
   {
     "id": "cc-ter-vesten-beveren-waas",
@@ -72,12 +112,28 @@
     "website": null
   },
   {
+    "id": "kimpel-bilzen",
+    "naam": "Kimpel",
+    "plaats": "Bilzen",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.cultuurhuisbilzenhoeselt.be"
+  },
+  {
     "id": "cultuurhuis-bilzen-hoeselt",
     "naam": "Cultuurhuis Bilzen-Hoeselt",
     "plaats": "Bilzen-Hoeselt",
     "land": "BE",
     "soort": "theater",
     "website": "http://cultuurhuisbilzenhoeselt.be"
+  },
+  {
+    "id": "cc-de-steiger-boom",
+    "naam": "CC De Steiger",
+    "plaats": "Boom",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.desteigerboom.be"
   },
   {
     "id": "ter-dilft-bornem",
@@ -128,6 +184,14 @@
     "website": "https://www.depinteleeft.be"
   },
   {
+    "id": "leietheater-deinze",
+    "naam": "Leietheater",
+    "plaats": "Deinze",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.leietheater.be"
+  },
+  {
     "id": "pixel-on-stage-deurne",
     "naam": "Pixel on Stage",
     "plaats": "Deurne",
@@ -136,12 +200,28 @@
     "website": "https://www.depixel.be"
   },
   {
+    "id": "den-amer-diest",
+    "naam": "Den Amer",
+    "plaats": "Diest",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.ccdiest.be"
+  },
+  {
     "id": "herbakker-eeklo",
     "naam": "Herbakker",
     "plaats": "Eeklo",
     "land": "BE",
     "soort": "theater",
     "website": null
+  },
+  {
+    "id": "cc-de-werft-geel",
+    "naam": "CC De Werft",
+    "plaats": "Geel",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.dewerft.be"
   },
   {
     "id": "c-mine-genk",
@@ -157,7 +237,15 @@
     "plaats": "Gent",
     "land": "BE",
     "soort": "theater",
-    "website": null
+    "website": "https://www.capitole-gent.be"
+  },
+  {
+    "id": "compagnie-cecilia-gent",
+    "naam": "Compagnie Cecilia",
+    "plaats": "Gent",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://compagnie-cecilia.be"
   },
   {
     "id": "minardschouwburg-gent",
@@ -176,6 +264,14 @@
     "website": "http://viernulvier.gent"
   },
   {
+    "id": "cc-jan-tervaert-hamme",
+    "naam": "CC Jan Tervaert",
+    "plaats": "Hamme",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://beleef.hamme.be"
+  },
+  {
     "id": "cinema-walburg-hamont-achel",
     "naam": "Cinema Walburg",
     "plaats": "Hamont-Achel",
@@ -190,6 +286,14 @@
     "land": "BE",
     "soort": "theater",
     "website": null
+  },
+  {
+    "id": "cultuurcentrum-hasselt",
+    "naam": "Cultuurcentrum Hasselt",
+    "plaats": "Hasselt",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.ccha.be"
   },
   {
     "id": "trixxo",
@@ -208,9 +312,33 @@
     "website": "http://zwaneberg.be"
   },
   {
+    "id": "cc-t-schaliken-herentals",
+    "naam": "CC 't Schaliken",
+    "plaats": "Herentals",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.schaliken.be"
+  },
+  {
+    "id": "cc-muze-heusden-zolder",
+    "naam": "CC MUZE",
+    "plaats": "Heusden-Zolder",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.muze.be"
+  },
+  {
     "id": "cc-het-perron-ieper",
     "naam": "CC Het Perron",
     "plaats": "Ieper",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "lux-kapellen",
+    "naam": "Lux",
+    "plaats": "Kapellen",
     "land": "BE",
     "soort": "theater",
     "website": null
@@ -264,12 +392,28 @@
     "website": null
   },
   {
+    "id": "gc-de-volkskring-lede",
+    "naam": "GC De Volkskring",
+    "plaats": "Lede",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://gcdevolkskring.be"
+  },
+  {
     "id": "cc-leopoldsburg",
     "naam": "CC Leopoldsburg",
     "plaats": "Leopoldsburg",
     "land": "BE",
     "soort": "theater",
-    "website": null
+    "website": "https://www.ccleopoldsburg.be"
+  },
+  {
+    "id": "30cc-schouwburg-leuven",
+    "naam": "30CC Schouwburg",
+    "plaats": "Leuven",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.30cc.be"
   },
   {
     "id": "het-depot-leuven",
@@ -286,6 +430,14 @@
     "land": "BE",
     "soort": "theater",
     "website": "https://www.lierscultuurcentrum.be"
+  },
+  {
+    "id": "cc-lokeren",
+    "naam": "CC Lokeren",
+    "plaats": "Lokeren",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://cultuurcentrum.lokeren.be"
   },
   {
     "id": "cc-maasmechelen",
@@ -312,12 +464,20 @@
     "website": "http://cultuurhuis.merelbeke-melle.be"
   },
   {
+    "id": "cc-de-steiger-menen",
+    "naam": "CC De Steiger",
+    "plaats": "Menen",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.ccdesteiger.be"
+  },
+  {
     "id": "schouwburg-rex-mol",
     "naam": "Schouwburg Rex",
     "plaats": "Mol",
     "land": "BE",
     "soort": "theater",
-    "website": null
+    "website": "https://www.cultuurcentrummol.be"
   },
   {
     "id": "cc-mortsel",
@@ -326,6 +486,14 @@
     "land": "BE",
     "soort": "theater",
     "website": "http://mortsel.be"
+  },
+  {
+    "id": "mark-liebrecht-mortsel",
+    "naam": "Mark Liebrecht",
+    "plaats": "Mortsel",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.mortsel.be"
   },
   {
     "id": "santa-s-house-niel",
@@ -344,6 +512,14 @@
     "website": "https://shop.ticket.monster"
   },
   {
+    "id": "de-grote-post-oostende",
+    "naam": "De Grote Post",
+    "plaats": "Oostende",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "kursaal",
     "naam": "Kursaal Oostende",
     "plaats": "Oostende",
@@ -360,12 +536,28 @@
     "website": "https://www.oudsbergen.be"
   },
   {
+    "id": "cc-den-blank-overijse",
+    "naam": "CC Den Blank",
+    "plaats": "Overijse",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.overijse.be"
+  },
+  {
     "id": "cc-palethe-pelt",
     "naam": "CC Palethe",
     "plaats": "Pelt",
     "land": "BE",
     "soort": "theater",
     "website": "https://www.palethe.be"
+  },
+  {
+    "id": "cc-binder-puurs",
+    "naam": "CC Binder",
+    "plaats": "Puurs",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.uitinpuurssintamands.be"
   },
   {
     "id": "de-singer-rijkevorsel",
@@ -381,7 +573,7 @@
     "plaats": "Roeselare",
     "land": "BE",
     "soort": "cultuurcentrum",
-    "website": null
+    "website": "https://www.despil.be"
   },
   {
     "id": "koetshuis-roosdaal",
@@ -406,6 +598,14 @@
     "land": "BE",
     "soort": "theater",
     "website": "https://www.deboesdaalhoeve.be"
+  },
+  {
+    "id": "cc-de-fabriek-sint-lievens-houtem",
+    "naam": "CC De Fabriek",
+    "plaats": "Sint-Lievens-Houtem",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.sint-lievens-houtem.be"
   },
   {
     "id": "stadsschouwburg-sint-niklaas",
@@ -448,6 +648,14 @@
     "website": "https://www.ccdeploter.be"
   },
   {
+    "id": "cc-gildhof-tielt",
+    "naam": "CC Gildhof",
+    "plaats": "Tielt",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.gildhof.be"
+  },
+  {
     "id": "cc-de-kruisboog-tienen",
     "naam": "CC De Kruisboog",
     "plaats": "Tienen",
@@ -456,12 +664,36 @@
     "website": "https://www.dekruisboog.tienen.be"
   },
   {
+    "id": "cc-de-velinx-tongeren",
+    "naam": "CC De Velinx",
+    "plaats": "Tongeren",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "de-warande-turnhout",
     "naam": "De Warande",
     "plaats": "Turnhout",
     "land": "BE",
     "soort": "theater",
     "website": "https://www.warande.be"
+  },
+  {
+    "id": "cc-het-bolwerk-vilvoorde",
+    "naam": "CC Het Bolwerk",
+    "plaats": "Vilvoorde",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.hetbolwerk.be"
+  },
+  {
+    "id": "nerdland-festival-wachtebeke",
+    "naam": "Nerdland Festival",
+    "plaats": "Wachtebeke",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.nerdlandfestival.be"
   },
   {
     "id": "cc-de-schakel",
@@ -480,12 +712,28 @@
     "website": "https://store.ticket.monster"
   },
   {
+    "id": "gc-de-zandloper-wemmel",
+    "naam": "GC De Zandloper",
+    "plaats": "Wemmel",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.dezandloper.be"
+  },
+  {
     "id": "nova-wetteren",
     "naam": "Nova",
     "plaats": "Wetteren",
     "land": "BE",
     "soort": "theater",
     "website": "https://www.ccnovawetteren.be"
+  },
+  {
+    "id": "cc-guldenberg-wevelgem",
+    "naam": "CC Guldenberg",
+    "plaats": "Wevelgem",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
   },
   {
     "id": "cc-zoetegem-zottegem",
@@ -558,6 +806,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://kunstlinie.nl"
+  },
+  {
+    "id": "theater-glasbak-almere",
+    "naam": "Theater Glasbak",
+    "plaats": "Almere",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
   },
   {
     "id": "streektheater-den-heuvel-alphen-nb",
@@ -774,6 +1030,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.musisenstadstheater.nl"
+  },
+  {
+    "id": "theater-de-leeuw-arnhem",
+    "naam": "Theater De Leeuw",
+    "plaats": "Arnhem",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
   },
   {
     "id": "de-nieuwe-kolk",
@@ -1064,6 +1328,14 @@
     "website": "https://www.theaterdefranscheschool.nl"
   },
   {
+    "id": "theater-de-stoomfabriek-dalfsen",
+    "naam": "Theater de Stoomfabriek",
+    "plaats": "Dalfsen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.theaterdestoomfabriek.nl"
+  },
+  {
     "id": "de-gashouder-dedemsvaart",
     "naam": "De Gashouder",
     "plaats": "Dedemsvaart",
@@ -1078,6 +1350,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.stadscentrum-hetparochiehuis.nl"
+  },
+  {
+    "id": "hal015-podium-delft",
+    "naam": "HAL015 Podium",
+    "plaats": "Delft",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://hal015.nl"
   },
   {
     "id": "theater-de-veste",
@@ -1272,6 +1552,14 @@
     "website": "https://www.parktheater.nl"
   },
   {
+    "id": "theater-freedom-eindhoven",
+    "naam": "Theater Freedom",
+    "plaats": "Eindhoven",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "theater-de-kik-elst",
     "naam": "Theater de KiK",
     "plaats": "Elst",
@@ -1302,6 +1590,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://drom.nl"
+  },
+  {
+    "id": "concordia-enschede",
+    "naam": "Concordia",
+    "plaats": "Enschede",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.concordia.nl"
   },
   {
     "id": "de-kleine-willem-enschede",
@@ -1429,7 +1725,7 @@
     "plaats": "Groningen",
     "land": "NL",
     "soort": "theater",
-    "website": null
+    "website": "https://a-theater.nl"
   },
   {
     "id": "de-oosterpoort",
@@ -1477,7 +1773,7 @@
     "plaats": "Groningen",
     "land": "NL",
     "soort": "theater",
-    "website": null
+    "website": "https://www.usva.nl"
   },
   {
     "id": "theatercafe-groeselt-gronsveld",
@@ -1542,6 +1838,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.stadalspodium.nl"
+  },
+  {
+    "id": "green-theater-harderwijk",
+    "naam": "Green Theater",
+    "plaats": "Harderwijk",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://greenoffices.nl"
   },
   {
     "id": "het-garnizoen-harderwijk",
@@ -1648,6 +1952,14 @@
     "website": "https://theatertweehondjes.nl"
   },
   {
+    "id": "annatheater-helmond",
+    "naam": "Annatheater",
+    "plaats": "Helmond",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "theater-het-speelhuis",
     "naam": "Theater Het Speelhuis",
     "plaats": "Helmond",
@@ -1694,6 +2006,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.cultureelcentrumelckerlyc.nl"
+  },
+  {
+    "id": "theater-santeberg-hilversum",
+    "naam": "Theater Santeberg",
+    "plaats": "Hilversum",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
   },
   {
     "id": "kulturhus-holten",
@@ -1920,6 +2240,14 @@
     "website": "https://www.agora-lelystad.nl"
   },
   {
+    "id": "posa-theater-lelystad",
+    "naam": "Posa Theater",
+    "plaats": "Lelystad",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.theaterposa.nl"
+  },
+  {
     "id": "afas-theater-leusden",
     "naam": "AFAS Theater Leusden",
     "plaats": "Leusden",
@@ -1941,7 +2269,7 @@
     "plaats": "Lieshout",
     "land": "NL",
     "soort": "theater",
-    "website": null
+    "website": "https://www.onstejater.nl"
   },
   {
     "id": "theater-floralis-lisse",
@@ -2070,6 +2398,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.westlandtheater.nl"
+  },
+  {
+    "id": "demess-naarden",
+    "naam": "deMess",
+    "plaats": "Naarden",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://demess.nl"
   },
   {
     "id": "de-kom-nieuwegein",
@@ -2456,12 +2792,20 @@
     "website": "https://comedyclubhaug.com"
   },
   {
+    "id": "cultuurpodium-in-de-lugt-rotterdam",
+    "naam": "Cultuurpodium In De Lugt",
+    "plaats": "Rotterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.indelugt.nl"
+  },
+  {
     "id": "islemunda-rotterdam",
     "naam": "Islemunda",
     "plaats": "Rotterdam",
     "land": "NL",
     "soort": "theater",
-    "website": null
+    "website": "https://islemunda.nl"
   },
   {
     "id": "kleine-walhalla",
@@ -2576,6 +2920,14 @@
     "website": "https://www.oelbroeck.nl"
   },
   {
+    "id": "theater-pitboel-sittard",
+    "naam": "Theater Pitboel",
+    "plaats": "Sittard",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.pitboeltheater.nl"
+  },
+  {
     "id": "theater-sittard",
     "naam": "Theater Sittard",
     "plaats": "Sittard",
@@ -2606,6 +2958,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://ontdekpoort.nl"
+  },
+  {
+    "id": "artishock-soest",
+    "naam": "Artishock",
+    "plaats": "Soest",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.artishocksoest.nl"
   },
   {
     "id": "idea-soest",
@@ -2848,6 +3208,14 @@
     "website": "https://www.lampegiet.nl"
   },
   {
+    "id": "comedy-cafe-noordkade-veghel",
+    "naam": "Comedy Café Noordkade",
+    "plaats": "Veghel",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.blauwekei.nl"
+  },
+  {
     "id": "theater-de-blauwe-kei-veghel",
     "naam": "Theater De Blauwe Kei",
     "plaats": "Veghel",
@@ -2872,12 +3240,28 @@
     "website": null
   },
   {
+    "id": "grenswerk-venlo",
+    "naam": "Grenswerk",
+    "plaats": "Venlo",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.maaspoort.nl"
+  },
+  {
     "id": "maaspoort",
     "naam": "Maaspoort",
     "plaats": "Venlo",
     "land": "NL",
     "soort": "theater",
     "website": "https://www.maaspoort.nl"
+  },
+  {
+    "id": "theater-de-garage-venlo",
+    "naam": "Theater De Garage",
+    "plaats": "Venlo",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.theaterdegarage.nl"
   },
   {
     "id": "schouwburg-venray",
@@ -3090,6 +3474,14 @@
   {
     "id": "musiater-zevenaar",
     "naam": "Musiater",
+    "plaats": "Zevenaar",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://liemerskunstwerk.nl"
+  },
+  {
+    "id": "musiatheater-zevenaar",
+    "naam": "MusiaTheater",
     "plaats": "Zevenaar",
     "land": "NL",
     "soort": "theater",

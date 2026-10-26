@@ -5,6 +5,17 @@
 // die een theaterbron al heeft (zelfde artiest, plaats en datum).
 import { getText } from "../lib/http.mjs";
 import { speellijstRijen, leesRij } from "../lib/speellijst.mjs";
+import { netteNaam } from "../lib/normaliseer.mjs";
+
+// Met weekdagControle: staat er een weekdag in de rij die niet bij de datum past, dan is het jaartal
+// waarschijnlijk fout geraden (oude seizoenen zonder jaartal op de pagina) en slaan we de rij over.
+// Niet standaard: op veel sites staat de weekdag van de volgende rij aan het eind van de vorige.
+const WEEKDAGEN = ["zo", "ma", "di", "wo", "do", "vr", "za"];
+const WEEKDAG = /^(zondag|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zo|ma|di|wo|do|vr|za)\.?$/i;
+function weekdagKlopt(rij) {
+  const dag = WEEKDAGEN[new Date(`${rij.datum}T12:00:00Z`).getUTCDay()];
+  return rij.cellen.every((c) => !WEEKDAG.test(c.trim()) || c.trim().slice(0, 2).toLowerCase() === dag);
+}
 
 const PZ = ["plaats", "zaal"], ZP = ["zaal", "plaats"];
 const PZT = ["plaats", "zaal", "titel"], ZPT = ["zaal", "plaats", "titel"];
@@ -15,7 +26,9 @@ const ARTIESTEN = [
   { naam: "Alex Agnew", url: "https://alexagnew.be/tour-data/", volgorde: ["-", "titel", "plaats", "zaal"], land: "BE", alleen: /^Comedy\b/ },
   { naam: "Alex Ploeg", url: "https://www.alexploeg.nl/", volgorde: PZT },
   { naam: "Andries Tunru", url: "https://www.andriestunru.nl/", volgorde: PZ },
+  { naam: "Annick Boer", url: "https://www.annickboer.nl/", volgorde: PZ },
   { naam: "Berit Companjen", url: "https://beritcompanjen.nl/", volgorde: PZ },
+  { naam: "Bert Gabriëls", url: "https://www.bertgabriels.be/", volgorde: ZP, land: "BE" },
   { naam: "Blauwe Vinkjes", url: "https://blauwevinkjes.nl/agenda/", volgorde: PZ },
   { naam: "Bob Koomen", url: "https://bobkoomen.nl/", volgorde: PZ },
   { naam: "Boban Braspenning", url: "https://www.bobanbraspenning.nl/", volgorde: PZ },
@@ -30,7 +43,9 @@ const ARTIESTEN = [
   { naam: "Esther van der Voort", url: "https://esthervandervoort.com/", volgorde: ZP },
   { naam: "Glodi Lugungu", url: "https://www.glodilugungu.nl/", volgorde: PZ },
   { naam: "Guido Weijers", url: "https://www.guidoweijers.nl/speellijst", volgorde: PZT },
+  { naam: "Hans Teeuwen", url: "https://www.hansteeuwen.nl/", volgorde: ZP, weekdagControle: true },
   { naam: "Jade Mintjens", url: "https://jademintjens.be/speellijst/", volgorde: ZP, land: "BE" },
+  { naam: "Jan Jaap van der Wal", url: "https://www.janjaapvanderwal.nl/speellijst/", volgorde: PZT, belgisch: /vlaanderen/i },
   { naam: "Jandino Asporaat", url: "https://www.jandino.nl/speellijst/", volgorde: PZ },
   { naam: "Jay Francis", url: "https://jayfrancis.nl/agenda", volgorde: PZT },
   { naam: "Jeroens Clan", url: "https://www.jeroensclan.com/", volgorde: PZ },
@@ -39,17 +54,23 @@ const ARTIESTEN = [
   { naam: "Klaas van der Eerden", url: "https://www.klaasvandereerden.nl/", volgorde: PZT },
   { naam: "Kor Hoebe", url: "https://korhoebe.nl/", volgorde: ZP, ruis: PROVINCIE },
   { naam: "Lebbis", url: "https://www.bunkertheaterzaken.nl/artiesten/lebbis/", volgorde: TPZ },
+  { naam: "Leon van der Zanden", url: "https://www.leonvanderzanden.nl/speellijst/", volgorde: ZPT },
+  { naam: "Lieven Scheire", url: "https://www.lievenscheire.be/", volgorde: TPZ, land: "BE", overslaan: /kleine nerds|\(\d\+\)\s*$/i },
   { naam: "Lisa Ostermann", url: "https://lisaostermann.nl/", volgorde: PZT },
   { naam: "Lovella Telesford", url: "https://lovellatelesford.nl/", volgorde: ZPT },
   { naam: "Marja van Katendrecht", url: "https://marjavankatendrecht.nl/tickets/", volgorde: TZP },
   { naam: "Marjolijn van Kooten", url: "https://www.marjolijnvankooten.nl/speellijst/", volgorde: PZT },
   { naam: "Max van den Burg", url: "https://maxvandenburg.nl/", volgorde: PTZ },
   { naam: "Merijn Scholten", url: "https://merijnscholten.nl/", volgorde: PTZ },
+  { naam: "Micha Wertheim", url: "https://www.michawertheim.nl/agenda/", volgorde: TPZ, splits: /,\s+/, ruis: /^sold out/i, overslaan: /echt gebeurd|brievenbus/i },
+  { naam: "Mike Boddé", url: "https://www.mikebodde.nl/", volgorde: ZP },
   { naam: "Najib Amhali", url: "https://najibamhali.nl/speellijst/", volgorde: PZ },
   { naam: "Nathalie Baartman", url: "https://nathaliebaartman.nl/voorstellingen/", volgorde: ZPT },
   { naam: "Nienke Plas", url: "https://nienkeplas.com/theater-voorstellingen/", volgorde: PZ },
+  { naam: "Pepijn Schoneveld", url: "https://www.pepijnschoneveld.nl/speellijst/", volgorde: PZ },
   { naam: "Peter Pannekoek", url: "https://peterpannekoek.nl/", volgorde: PZT },
   { naam: "Plien en Bianca", url: "https://plienenbianca.nl/speellijsten/", volgorde: ZP },
+  { naam: "Rachid Larouz", url: "https://www.rachidlarouz.nl/", volgorde: ZP },
   { naam: "Remy Evers", url: "https://www.remyevers.nl/speellijst-2/", volgorde: PZ },
   { naam: "Richard Groenendijk", url: "https://richardgroenendijk.nl/", volgorde: PZ },
   { naam: "Ricky Koole", url: "https://rickykoole.nl/shows/", volgorde: ZP },
@@ -64,6 +85,8 @@ const ARTIESTEN = [
   { naam: "Van Vleuten & Van Muiswinkel", url: "https://www.bunkertheaterzaken.nl/artiesten/van-vleuten-van-muiswinkel/", volgorde: TPZ },
   { naam: "Wim Helsen", url: "https://wimhelsen.be/agenda/", volgorde: TZP, land: "BE" },
   { naam: "Wina Ricardo", url: "https://winaricardo.nl/", volgorde: PZT },
+  { naam: "Wouter Deprez", url: "https://www.wouterdeprez.be/", volgorde: PZ, land: "BE" },
+  { naam: "Wouter Monden", url: "https://www.woutermonden.nl/", volgorde: ["-", "zaal", "plaats"] },
   { naam: "Xander De Rycke", url: "https://www.xanderderycke.be/home/", volgorde: TPZ, land: "BE", overslaan: /^Stand-up\b/ },
 ];
 
@@ -73,7 +96,7 @@ const lijktZaal = (z) => z && z.length <= 70 && z.split(/\s+/).length <= 9 && !/
 
 // De site van de zaal uit de kaartlink van een rij: niet die van de artiest zelf, een kaartverkoper,
 // sociale media of een kaart.
-const GEEN_ZAAL = /facebook|instagram|youtube|twitter|x\.com|tiktok|google|maps|ticketmaster|eventim|ticketcounter|stager|eventbrite|tickettailor|ticketkantoor|paylogic|ticketscript|seetickets|yourticketprovider|weeztix|eventix|tixly|ticketmatic|avayo|comedyshows|captaincomedy|ticketshop|wix|linktr|spotify|apple/i;
+const GEEN_ZAAL = /facebook|instagram|youtube|twitter|x\.com|tiktok|google|maps|ticketmaster|eventim|ticketcounter|stager|eventbrite|tickettailor|ticketkantoor|paylogic|ticketscript|seetickets|yourticketprovider|weeztix|eventix|tixly|ticketmatic|avayo|comedyshows|captaincomedy|ticketshop|fullhouse|wix|linktr|spotify|apple/i;
 function zaalSite(links, artiestUrl, naam) {
   const eigen = new URL(artiestUrl).hostname.replace(/^www\./, "");
   // Ook een andere site van de artiest ("najib-roue.nl" bij Najib Amhali) is geen zaal.
@@ -102,11 +125,14 @@ export default {
       try { html = await getText(a.url); } catch (e) { log(`${a.naam}: overgeslagen (${e.message})`); return; }
       let n = 0;
       for (const rij of speellijstRijen(html, { vandaag })) {
-        if (rij.datum < vandaag) continue;
+        if (rij.datum < vandaag || (a.weekdagControle && !weekdagKlopt(rij))) continue;
         const tekst = rij.cellen.join(" ");
         if ((a.alleen && !a.alleen.test(tekst)) || (a.overslaan && a.overslaan.test(tekst)) || /besloten|privé|bedrijfsvoorstelling|personeelsfeest|feestavond voor|mantelzorg|niet openbaar/i.test(tekst)) continue;
         const r = leesRij(rij, { ...a, naam: a.naam });
-        if (!lijktPlaats(r.plaats) || !lijktZaal(r.zaal)) continue;
+        if (r.plaats) r.plaats = netteNaam(r.plaats);
+        if (a.belgisch?.test(tekst)) r.land = "BE";
+        // Alleen Nederland en België; geen tournees op de Antillen of in Suriname.
+        if (!lijktPlaats(r.plaats) || !lijktZaal(r.zaal) || /cura[cç]ao|aruba|bonaire|suriname|paramaribo|sint maarten/i.test(tekst)) continue;
         out.push({
           theater: { zoeken: true, naam: r.zaal, plaats: r.plaats, land: r.land, website: zaalSite(rij.links, a.url, a.naam) },
           artiesten: [a.naam],

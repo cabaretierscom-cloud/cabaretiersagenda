@@ -163,6 +163,9 @@ export function leesRij(rij, o = {}) {
   const delen = [];
   for (const c of rij.cellen) {
     for (let d of c.split(splits)) {
+      // Tijd tussen haakjes achter de zaal: "Schouwburg NTG (20u00)".
+      const th = d.match(/\s*\((\d{1,2})[u:.](\d{2})\)\s*/i);
+      if (th) { tijd ||= `${th[1].padStart(2, "0")}:${th[2]}`; d = d.replace(th[0], " "); }
       d = d.replace(/\s*\((try[ -]?out|tryout|premi[eè]re|reprise|uitverkocht)\)\s*/gi, " ").replace(/\s*\*+\s*$|\s*⇒\s*$|^in\s+|\s*\($|^\)\s*|\s+[-–—]$/g, "").replace(/\s+/g, " ").trim();
       const t = d.match(/^(?:aanvang\s*)?(\d{1,2})[:.](\d{2})\s*(uur)?$/i);
       if (t) { tijd ||= `${t[1].padStart(2, "0")}:${t[2]}`; continue; }

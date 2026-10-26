@@ -68,7 +68,7 @@ function zorgVoorTheater(t) {
 const PLAATS_ALIAS = {
   "den bosch": "'s-Hertogenbosch", "s-hertogenbosch": "'s-Hertogenbosch", "'s hertogenbosch": "'s-Hertogenbosch",
   "alphen ad rijn": "Alphen aan den Rijn", "alphen a/d rijn": "Alphen aan den Rijn", "alphen": "Alphen aan den Rijn",
-  "capelle ad ijssel": "Capelle aan den IJssel", "capelle a/d ijssel": "Capelle aan den IJssel", "spijkernisse": "Spijkenisse",
+  "capelle ad ijssel": "Capelle aan den IJssel", "capelle a/d ijssel": "Capelle aan den IJssel", "krimpen ad ijssel": "Krimpen aan den IJssel", "krimpen a/d ijssel": "Krimpen aan den IJssel", "spijkernisse": "Spijkenisse",
   "the hague": "Den Haag", "s-gravenhage": "Den Haag", "'s-gravenhage": "Den Haag", "amersfoot": "Amersfoort",
   "doetichem": "Doetinchem", "gorichem": "Gorinchem", "berkel en roderijs": "Berkel en Rodenrijs", "h-i-ambacht": "Hendrik-Ido-Ambacht",
   "capelle aan de ijssel": "Capelle aan den IJssel", "krimpen a/d ijssel": "Krimpen aan den IJssel", "laren nh": "Laren",

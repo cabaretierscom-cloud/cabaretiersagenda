@@ -1,12 +1,12 @@
 {
-  "datum": "2026-10-25",
+  "datum": "2026-10-26",
   "totaal": {
-    "speeldata": 5031,
-    "komend": 4970,
-    "artiesten": 452,
-    "zalen": 392,
-    "plaatsen": 296,
-    "voorstellingen": 629
+    "speeldata": 5317,
+    "komend": 5250,
+    "artiesten": 458,
+    "zalen": 441,
+    "plaatsen": 324,
+    "voorstellingen": 645
   },
   "bronnen": [
     {
@@ -362,6 +362,14 @@
       "dubbel": 0
     },
     {
+      "bron": "verkadefabriek",
+      "naam": "Verkadefabriek",
+      "opgehaald": "2026-10-26",
+      "speeldata": 70,
+      "vorige": 70,
+      "dubbel": 0
+    },
+    {
       "bron": "vlaardingen",
       "naam": "Stadsgehoorzaal Vlaardingen",
       "opgehaald": "2026-10-25",
@@ -420,53 +428,495 @@
     {
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
-      "opgehaald": "2026-10-25",
-      "speeldata": 1752,
-      "vorige": 1752,
-      "dubbel": 995
+      "opgehaald": "2026-10-26",
+      "speeldata": 1965,
+      "vorige": 1965,
+      "dubbel": 1045
     }
   ],
   "nieuw": {
     "artiesten": [
       {
-        "id": "aluin",
-        "naam": "Aluin"
+        "id": "cameretten-comedy-masterclass",
+        "naam": "Cameretten Comedy Masterclass"
       },
       {
-        "id": "het-zuidelijk-toneel",
-        "naam": "Het Zuidelijk Toneel"
+        "id": "club-haug",
+        "naam": "Club Haug"
       },
       {
-        "id": "martin-van-waardenberg",
-        "naam": "Martin van Waardenberg"
+        "id": "hidde-van-gestel",
+        "naam": "Hidde van Gestel"
+      },
+      {
+        "id": "lieven-scheire",
+        "naam": "Lieven Scheire"
+      },
+      {
+        "id": "mike-bodde",
+        "naam": "Mike Boddé"
+      },
+      {
+        "id": "wouter-deprez",
+        "naam": "Wouter Deprez"
       }
     ],
-    "zalen": [],
+    "zalen": [
+      {
+        "id": "zuiderpershuis-antwerpen",
+        "naam": "Zuiderpershuis",
+        "plaats": "Antwerpen",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "gc-t-heil-beerse",
+        "naam": "GC t Heil",
+        "plaats": "Beerse",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-de-meent-beersel",
+        "naam": "CC de Meent",
+        "plaats": "Beersel",
+        "land": "BE",
+        "website": "https://www.demeent.be"
+      },
+      {
+        "id": "corso-berchem",
+        "naam": "Corso",
+        "plaats": "Berchem",
+        "land": "BE",
+        "website": "https://www.corso.be"
+      },
+      {
+        "id": "cc-ter-vesten-beveren",
+        "naam": "CC Ter Vesten",
+        "plaats": "Beveren",
+        "land": "BE",
+        "website": "https://www.tervesten.be"
+      },
+      {
+        "id": "kimpel-bilzen",
+        "naam": "Kimpel",
+        "plaats": "Bilzen",
+        "land": "BE",
+        "website": "https://www.cultuurhuisbilzenhoeselt.be"
+      },
+      {
+        "id": "cc-de-steiger-boom",
+        "naam": "CC De Steiger",
+        "plaats": "Boom",
+        "land": "BE",
+        "website": "https://www.desteigerboom.be"
+      },
+      {
+        "id": "leietheater-deinze",
+        "naam": "Leietheater",
+        "plaats": "Deinze",
+        "land": "BE",
+        "website": "https://www.leietheater.be"
+      },
+      {
+        "id": "den-amer-diest",
+        "naam": "Den Amer",
+        "plaats": "Diest",
+        "land": "BE",
+        "website": "https://www.ccdiest.be"
+      },
+      {
+        "id": "cc-de-werft-geel",
+        "naam": "CC De Werft",
+        "plaats": "Geel",
+        "land": "BE",
+        "website": "https://www.dewerft.be"
+      },
+      {
+        "id": "compagnie-cecilia-gent",
+        "naam": "Compagnie Cecilia",
+        "plaats": "Gent",
+        "land": "BE",
+        "website": "https://compagnie-cecilia.be"
+      },
+      {
+        "id": "cc-jan-tervaert-hamme",
+        "naam": "CC Jan Tervaert",
+        "plaats": "Hamme",
+        "land": "BE",
+        "website": "https://beleef.hamme.be"
+      },
+      {
+        "id": "cultuurcentrum-hasselt",
+        "naam": "Cultuurcentrum Hasselt",
+        "plaats": "Hasselt",
+        "land": "BE",
+        "website": "https://www.ccha.be"
+      },
+      {
+        "id": "cc-t-schaliken-herentals",
+        "naam": "CC 't Schaliken",
+        "plaats": "Herentals",
+        "land": "BE",
+        "website": "https://www.schaliken.be"
+      },
+      {
+        "id": "cc-muze-heusden-zolder",
+        "naam": "CC MUZE",
+        "plaats": "Heusden-Zolder",
+        "land": "BE",
+        "website": "https://www.muze.be"
+      },
+      {
+        "id": "lux-kapellen",
+        "naam": "Lux",
+        "plaats": "Kapellen",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "gc-de-volkskring-lede",
+        "naam": "GC De Volkskring",
+        "plaats": "Lede",
+        "land": "BE",
+        "website": "https://gcdevolkskring.be"
+      },
+      {
+        "id": "30cc-schouwburg-leuven",
+        "naam": "30CC Schouwburg",
+        "plaats": "Leuven",
+        "land": "BE",
+        "website": "https://www.30cc.be"
+      },
+      {
+        "id": "cc-lokeren",
+        "naam": "CC Lokeren",
+        "plaats": "Lokeren",
+        "land": "BE",
+        "website": "https://cultuurcentrum.lokeren.be"
+      },
+      {
+        "id": "cc-de-steiger-menen",
+        "naam": "CC De Steiger",
+        "plaats": "Menen",
+        "land": "BE",
+        "website": "https://www.ccdesteiger.be"
+      },
+      {
+        "id": "mark-liebrecht-mortsel",
+        "naam": "Mark Liebrecht",
+        "plaats": "Mortsel",
+        "land": "BE",
+        "website": "https://www.mortsel.be"
+      },
+      {
+        "id": "de-grote-post-oostende",
+        "naam": "De Grote Post",
+        "plaats": "Oostende",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-den-blank-overijse",
+        "naam": "CC Den Blank",
+        "plaats": "Overijse",
+        "land": "BE",
+        "website": "https://www.overijse.be"
+      },
+      {
+        "id": "cc-binder-puurs",
+        "naam": "CC Binder",
+        "plaats": "Puurs",
+        "land": "BE",
+        "website": "https://www.uitinpuurssintamands.be"
+      },
+      {
+        "id": "cc-de-fabriek-sint-lievens-houtem",
+        "naam": "CC De Fabriek",
+        "plaats": "Sint-Lievens-Houtem",
+        "land": "BE",
+        "website": "https://www.sint-lievens-houtem.be"
+      },
+      {
+        "id": "cc-gildhof-tielt",
+        "naam": "CC Gildhof",
+        "plaats": "Tielt",
+        "land": "BE",
+        "website": "https://www.gildhof.be"
+      },
+      {
+        "id": "cc-de-velinx-tongeren",
+        "naam": "CC De Velinx",
+        "plaats": "Tongeren",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-het-bolwerk-vilvoorde",
+        "naam": "CC Het Bolwerk",
+        "plaats": "Vilvoorde",
+        "land": "BE",
+        "website": "https://www.hetbolwerk.be"
+      },
+      {
+        "id": "nerdland-festival-wachtebeke",
+        "naam": "Nerdland Festival",
+        "plaats": "Wachtebeke",
+        "land": "BE",
+        "website": "https://www.nerdlandfestival.be"
+      },
+      {
+        "id": "gc-de-zandloper-wemmel",
+        "naam": "GC De Zandloper",
+        "plaats": "Wemmel",
+        "land": "BE",
+        "website": "https://www.dezandloper.be"
+      },
+      {
+        "id": "cc-guldenberg-wevelgem",
+        "naam": "CC Guldenberg",
+        "plaats": "Wevelgem",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "theater-glasbak-almere",
+        "naam": "Theater Glasbak",
+        "plaats": "Almere",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "theater-de-leeuw-arnhem",
+        "naam": "Theater De Leeuw",
+        "plaats": "Arnhem",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "theater-de-stoomfabriek-dalfsen",
+        "naam": "Theater de Stoomfabriek",
+        "plaats": "Dalfsen",
+        "land": "NL",
+        "website": "https://www.theaterdestoomfabriek.nl"
+      },
+      {
+        "id": "hal015-podium-delft",
+        "naam": "HAL015 Podium",
+        "plaats": "Delft",
+        "land": "NL",
+        "website": "https://hal015.nl"
+      },
+      {
+        "id": "theater-freedom-eindhoven",
+        "naam": "Theater Freedom",
+        "plaats": "Eindhoven",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "concordia-enschede",
+        "naam": "Concordia",
+        "plaats": "Enschede",
+        "land": "NL",
+        "website": "https://www.concordia.nl"
+      },
+      {
+        "id": "green-theater-harderwijk",
+        "naam": "Green Theater",
+        "plaats": "Harderwijk",
+        "land": "NL",
+        "website": "https://greenoffices.nl"
+      },
+      {
+        "id": "annatheater-helmond",
+        "naam": "Annatheater",
+        "plaats": "Helmond",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "theater-santeberg-hilversum",
+        "naam": "Theater Santeberg",
+        "plaats": "Hilversum",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "posa-theater-lelystad",
+        "naam": "Posa Theater",
+        "plaats": "Lelystad",
+        "land": "NL",
+        "website": "https://www.theaterposa.nl"
+      },
+      {
+        "id": "demess-naarden",
+        "naam": "deMess",
+        "plaats": "Naarden",
+        "land": "NL",
+        "website": "https://demess.nl"
+      },
+      {
+        "id": "cultuurpodium-in-de-lugt-rotterdam",
+        "naam": "Cultuurpodium In De Lugt",
+        "plaats": "Rotterdam",
+        "land": "NL",
+        "website": "https://www.indelugt.nl"
+      },
+      {
+        "id": "theater-pitboel-sittard",
+        "naam": "Theater Pitboel",
+        "plaats": "Sittard",
+        "land": "NL",
+        "website": "https://www.pitboeltheater.nl"
+      },
+      {
+        "id": "artishock-soest",
+        "naam": "Artishock",
+        "plaats": "Soest",
+        "land": "NL",
+        "website": "https://www.artishocksoest.nl"
+      },
+      {
+        "id": "comedy-cafe-noordkade-veghel",
+        "naam": "Comedy Café Noordkade",
+        "plaats": "Veghel",
+        "land": "NL",
+        "website": "https://www.blauwekei.nl"
+      },
+      {
+        "id": "grenswerk-venlo",
+        "naam": "Grenswerk",
+        "plaats": "Venlo",
+        "land": "NL",
+        "website": "https://www.maaspoort.nl"
+      },
+      {
+        "id": "theater-de-garage-venlo",
+        "naam": "Theater De Garage",
+        "plaats": "Venlo",
+        "land": "NL",
+        "website": "https://www.theaterdegarage.nl"
+      },
+      {
+        "id": "musiatheater-zevenaar",
+        "naam": "MusiaTheater",
+        "plaats": "Zevenaar",
+        "land": "NL",
+        "website": "https://liemerskunstwerk.nl"
+      }
+    ],
     "voorstellingen": [
       {
-        "id": "aluin-moeder-aarde",
-        "titel": "Moeder Aarde",
+        "id": "cameretten-comedy-masterclass-met-janneke-de-bijl",
+        "titel": "met Janneke de Bijl",
         "artiesten": [
-          "aluin"
+          "cameretten-comedy-masterclass"
         ]
       },
       {
-        "id": "het-zuidelijk-toneel-silence-of-the-dogs",
-        "titel": "Silence of the Dogs",
+        "id": "club-haug-the-stand-up-club",
+        "titel": "The Stand-up Club",
         "artiesten": [
-          "het-zuidelijk-toneel"
+          "club-haug"
         ]
       },
       {
-        "id": "huisgenoten-theater-de-kampanje",
-        "titel": "Huisgenoten",
-        "artiesten": []
+        "id": "groninger-studenten-cabaret-festival-finalistentour-40ste-editie",
+        "titel": "Finalistentour 40ste editie",
+        "artiesten": [
+          "groninger-studenten-cabaret-festival"
+        ]
       },
       {
-        "id": "theatertroep-fuck-pakjesavond",
-        "titel": "Fuck pakjesavond",
+        "id": "hidde-van-gestel-cum-laude",
+        "titel": "Cum laude",
         "artiesten": [
-          "theatertroep"
+          "hidde-van-gestel"
+        ]
+      },
+      {
+        "id": "leon-van-der-zanden-comedytunes-comedynight-25-min",
+        "titel": "Comedytunes Comedynight (25 min)",
+        "artiesten": [
+          "leon-van-der-zanden"
+        ]
+      },
+      {
+        "id": "leon-van-der-zanden-lachen",
+        "titel": "Lachen",
+        "artiesten": [
+          "leon-van-der-zanden"
+        ]
+      },
+      {
+        "id": "leon-van-der-zanden-leon-s-comedy-club",
+        "titel": "Leon's Comedy Club",
+        "artiesten": [
+          "leon-van-der-zanden"
+        ]
+      },
+      {
+        "id": "lieven-scheire-nerdland-festival-2027",
+        "titel": "Nerdland Festival 2027",
+        "artiesten": [
+          "lieven-scheire"
+        ]
+      },
+      {
+        "id": "lieven-scheire-nerdland-podcast-live-16",
+        "titel": "Nerdland Podcast Live (16+)",
+        "artiesten": [
+          "lieven-scheire"
+        ]
+      },
+      {
+        "id": "lieven-scheire-robots-16",
+        "titel": "Robots (16+)",
+        "artiesten": [
+          "lieven-scheire"
+        ]
+      },
+      {
+        "id": "micha-wertheim-boekenborrel",
+        "titel": "boekenborrel",
+        "artiesten": [
+          "micha-wertheim"
+        ]
+      },
+      {
+        "id": "mike-bodde-mike-bodde",
+        "titel": "Mike Boddé",
+        "artiesten": [
+          "mike-bodde"
+        ]
+      },
+      {
+        "id": "veldhuis-en-kemper-nieuw-programma",
+        "titel": "Nieuw programma",
+        "artiesten": [
+          "veldhuis-en-kemper"
+        ]
+      },
+      {
+        "id": "vrouwejaars-2026-vrouwejaars-2026",
+        "titel": "Vrouwejaars 2026",
+        "artiesten": [
+          "vrouwejaars-2026"
+        ]
+      },
+      {
+        "id": "wouter-deprez-wouter-deprez",
+        "titel": "Wouter Deprez",
+        "artiesten": [
+          "wouter-deprez"
+        ]
+      },
+      {
+        "id": "yunus-aktas-yunus-aktas",
+        "titel": "Yunus Aktas -",
+        "artiesten": [
+          "yunus-aktas"
         ]
       }
     ]
@@ -481,6 +931,15 @@
       "zalen": 392,
       "plaatsen": 296,
       "voorstellingen": 629
+    },
+    {
+      "datum": "2026-10-26",
+      "speeldata": 5317,
+      "komend": 5250,
+      "artiesten": 458,
+      "zalen": 441,
+      "plaatsen": 324,
+      "voorstellingen": 645
     }
   ]
 }

@@ -37,7 +37,7 @@ export function netteHoofdletters(s) {
 }
 export function netteNaam(s) {
   if (!s || s !== s.toUpperCase() || !/[A-Z]/.test(s)) return s;
-  const klein = new Set(["van", "de", "der", "den", "het", "ten", "ter", "te", "en", "la", "le", "da", "di", "von"]);
+  const klein = new Set(["van", "de", "der", "den", "het", "ten", "ter", "te", "en", "la", "le", "da", "di", "von", "bij", "aan", "op", "in"]);
   return s.toLowerCase().split(/(\s+|-)/).map((w, i) =>
     i > 0 && klein.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1)).join("");
 }
