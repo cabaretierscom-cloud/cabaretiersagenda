@@ -863,12 +863,17 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   }
 
   function artistIndex() {
-    const veelOpTournee = [...artiestenMetData].sort((x, y) => y.list.length - x.list.length).slice(0, 8);
-    const body = `<section class="block wrap" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">Artiesten</h1><p>${tellers.artiesten} cabaretiers, comedians en gezelschappen met aankomende voorstellingen.</p></div>
-      <h2 class="sub-head">Veel op tournee</h2>
-      <div class="artists">${artiestKaarten(veelOpTournee)}</div>
-      <h2 class="sub-head">Van A tot Z</h2>
+    const nu = nuInTheater();
+    const body = `<div class="wrap block-head kop-artiesten"><h1 id="t">Artiesten</h1><p>${tellers.artiesten} cabaretiers, comedians en gezelschappen met aankomende voorstellingen.</p></div>
+    ${nu ? `<section class="wall wall-sub" aria-labelledby="nu-title">
+      <div class="wrap wall-head">
+        <h2 id="nu-title">Nu op tournee</h2>
+        <p>Voorstellingen die nu op tournee zijn, de eerstvolgende voorop.</p>
+      </div>
+      ${strip("strip-nu", "Voorstellingen die nu op tournee zijn", nu)}
+    </section>` : ""}
+    <section class="block wrap" aria-labelledby="az-titel">
+      <h2 class="sub-head" id="az-titel">Van A tot Z</h2>
       ${azLijst(artiestenMetData)}
       <p class="zie-ook">Bekijk ook: <a href="/alle-cabaretiers/">alle cabaretiers</a>, <a href="/alle-cabaretiers/vrouwen/">vrouwelijke cabaretiers</a> en <a href="/alle-cabaretiers/mannen/">mannelijke cabaretiers</a>.</p>
     </section>`;

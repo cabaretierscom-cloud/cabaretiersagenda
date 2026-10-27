@@ -294,6 +294,9 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* ---------- Secties ---------- */
 .block { padding-block: 56px 24px; scroll-margin-top: 80px; }
 .block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+.kop-artiesten { padding-top: 56px; margin-bottom: 0; }
+.wall-sub { padding-top: 24px; }
+.wall-sub .wall-head h2 { font-weight: 800; font-size: var(--step-2); line-height: 1.1; }
 .block-head h1, .block-head h2 { font-family: var(--font-display); font-weight: 900; font-size: var(--step-3); line-height: .95; }
 .block-head p { margin: 0; color: var(--ink-2); }
 
