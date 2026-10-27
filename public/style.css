@@ -321,7 +321,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   gap: 20px; align-items: center; padding-block: 16px; border-bottom: 1px solid var(--rule);
 }
 .gig.cancelled .artist, .gig.cancelled .show { text-decoration: line-through; }
-.gig .date { display: grid; line-height: 1; }
+.gig .date { display: grid; line-height: 1; align-self: stretch; align-content: center; border-right: 2px dashed var(--rule); padding-right: 12px; }
 .gig .date b { font-family: var(--font-display); font-weight: 900; font-size: 2.7rem; line-height: .9; font-variant-numeric: tabular-nums; }
 .gig .date small { font-size: var(--step--1); color: var(--ink-2); margin-top: 4px; }
 .gig .swatch { width: 14px; height: 14px; border-radius: 50%; display: inline-block; flex-shrink: 0; box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--ink) 30%, transparent); }
@@ -340,15 +340,42 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .status.sold { color: var(--sold); }
 .status.doubt { color: var(--doubt); }
 .status svg { width: 15px; height: 15px; }
-/* Ticketknop per speeldatum: de blauwe knop, iets compacter; het pijltje betekent: andere website. */
-.btn.tickets { min-height: 44px; padding: 0 16px; gap: 6px; font-size: var(--step--1); white-space: nowrap; }
+/* Ticketknop per speeldatum in de vorm van een toegangskaartje: inkepingen links en rechts, en het
+   pijltje (= andere website) op een afscheurstrook achter een perforatie. De vorm zit in ::before,
+   zodat de focusrand van de link zelf heel blijft. "Meer info" (uitverkocht e.d.) is een grijs kaartje. */
+.btn.tickets {
+  --kaart: var(--accent); --op-kaart: var(--on-accent);
+  position: relative; isolation: isolate; min-height: 44px; padding: 0 4px 0 18px; gap: 0;
+  border-radius: 8px; background: none; box-shadow: none; color: var(--op-kaart);
+  font-size: var(--step--1); white-space: nowrap; transition: transform .2s cubic-bezier(.2,.8,.2,1);
+}
+.btn.tickets::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 8px; background: var(--kaart);
+  -webkit-mask: radial-gradient(circle 6px at 0 50%, #0000 98%, #000) left / 51% 100% no-repeat, radial-gradient(circle 6px at 100% 50%, #0000 98%, #000) right / 51% 100% no-repeat;
+          mask: radial-gradient(circle 6px at 0 50%, #0000 98%, #000) left / 51% 100% no-repeat, radial-gradient(circle 6px at 100% 50%, #0000 98%, #000) right / 51% 100% no-repeat;
+}
+.btn.tickets.ghost { --kaart: var(--paper-2); --op-kaart: var(--ink); box-shadow: none; }
+.btn.tickets .ticket-tekst { padding-right: 12px; }
+.btn.tickets .ticket-strook {
+  align-self: stretch; display: grid; place-items: center; padding: 0 12px 0 10px; margin-block: 7px;
+  border-left: 2px dashed color-mix(in srgb, var(--op-kaart) 45%, transparent);
+}
 .btn.tickets svg { width: 16px; height: 16px; flex-shrink: 0; }
+.btn.tickets:hover { filter: none; }
+.btn.tickets:hover::before { filter: brightness(1.08); }
+@media (hover: hover) and (pointer: fine) { .btn.tickets:hover { transform: rotate(-2deg); } }
 .btn.tickets:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .btn.tickets { transition: none; } }
+/* Uitverkocht als stempel op het kaartje. */
+.status.stempel {
+  padding: 3px 8px 2px; border: 2px solid currentColor; border-radius: 4px; transform: rotate(-4deg);
+  font-family: var(--font-display); font-weight: 800; font-size: .95rem; letter-spacing: .06em; text-transform: uppercase; line-height: 1.1;
+}
 .empty { padding: 40px 24px; border: 2px dashed var(--rule); border-radius: 16px; margin-top: 24px; }
 .empty p { margin: 0 0 14px; font-size: var(--step-1); }
 @media (max-width: 760px) {
-  .gig { grid-template-columns: 64px minmax(0, 1fr); gap: 6px 14px; align-items: start; }
-  .gig .date { grid-row: span 3; }
+  .gig { grid-template-columns: 76px minmax(0, 1fr); gap: 6px 14px; align-items: start; }
+  .gig .date { grid-row: span 3; align-content: start; padding-right: 8px; white-space: nowrap; }
   .gig .date b { font-size: 2.3rem; }
   .gig .side { align-items: center; text-align: left; flex-direction: row; flex-wrap: wrap; gap: 12px; }
 }

@@ -210,11 +210,11 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   function ticketKnop(g) {
     const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
     const wie = artistNames(g.voorstelling) || V.get(g.voorstelling).titel;
-    return `<a class="btn tickets${kopen ? "" : " ghost"}" href="${esc(g.bron)}" target="_blank" rel="noopener nofollow">${kopen ? "Tickets" : "Meer info"}${ICON.extern}<span class="visually-hidden">: ${esc(wie)} op ${fmt.full(g.datum)} in ${esc(T.get(g.theater).naam)} (externe website, opent in een nieuw tabblad)</span></a>`;
+    return `<a class="btn tickets${kopen ? "" : " ghost"}" href="${esc(g.bron)}" target="_blank" rel="noopener nofollow"><span class="ticket-tekst">${kopen ? "Tickets" : "Meer info"}</span><span class="ticket-strook">${ICON.extern}</span><span class="visually-hidden">: ${esc(wie)} op ${fmt.full(g.datum)} in ${esc(T.get(g.theater).naam)} (externe website, opent in een nieuw tabblad)</span></a>`;
   }
 
   function statusLabel(g) {
-    if (g.status === "uitverkocht") return `<span class="status sold">${ICON.sold}Uitverkocht</span>`;
+    if (g.status === "uitverkocht") return `<span class="status sold stempel">Uitverkocht</span>`;
     if (g.status === "onzeker")
       return `<span class="status doubt"${g.opmerking ? ` title="${esc(g.opmerking)}"` : ""}>${ICON.doubt}Datum onzeker</span>`;
     if (g.status === "geannuleerd" || g.status === "verplaatst")
