@@ -228,7 +228,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     // Voor de knop "Zet in je agenda" (public/agenda.js): wat, waar en hoe laat.
     const inAgenda = ["geannuleerd", "verplaatst"].includes(g.status) ? ""
       : ` data-wat="${esc(v.artiesten.length ? [artistNames(g.voorstelling), echteTitel(g.voorstelling)].filter(Boolean).join(": ") : v.titel)}" data-locatie="${esc(`${t.naam}, ${t.plaats}`)}"${g.tijd ? ` data-tijd="${g.tijd}"` : ""}`;
-    return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-land="${t.land}" data-plaats="${esc(t.plaats)}" data-genre="${v.genre}" data-zoek="${esc(zoek)}" data-waar="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}"${inAgenda}>
+    return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-land="${t.land}" data-plaats="${esc(t.plaats)}" data-genre="${v.genre}" data-status="${g.status}" data-zoek="${esc(zoek)}" data-waar="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}"${inAgenda}>
       <div class="date"><b>${fmt.day(g.datum)}</b><small>${fmt.weekdayShort(g.datum)}${g.tijd ? " " + g.tijd : ""}</small></div>
       <div class="main">
         <span class="swatch" style="${ink(leadInk(g.voorstelling))};background:var(--bg)" aria-hidden="true"></span>
@@ -417,36 +417,28 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   }
 
   // waar: alleen zoeken op plaats en zaal (artiestpagina: de artiest heb je dan al gevonden).
-  function filters(list, { plaats = true, land = true, maand = false, waar = false } = {}) {
-    const cities = [...new Set(list.map((g) => T.get(g.theater).plaats))].sort((a, b) => a.localeCompare(b, "nl"));
+  // Zoeken en filteren boven een speellijst (public/agenda.js). Het zoekveld doorzoekt artiest,
+  // voorstelling, zaal en plaats; op een artiestpagina alleen zaal en plaats (waar).
+  function filters(list, { maand = false, waar = false } = {}) {
     const months = [...new Set(list.map((g) => g.datum.slice(0, 7)))].sort();
     const genres = genresVan(list);
-    const landen = [...new Set(list.map((g) => T.get(g.theater).land))];
+    const uitverkocht = list.some((g) => g.status === "uitverkocht");
     return `<form class="filters" id="filters" role="search" aria-label="Voorstellingen filteren" hidden>
     <div class="field search">
       ${waar ? `<label for="f-q">Zoek op plaats of theater</label>
-      <input id="f-q" name="q" type="search" autocomplete="off" data-veld="waar" placeholder="Bijvoorbeeld: ${esc(voorbeeldWaar(list))}">` : `<label for="f-q">Zoek op artiest, voorstelling of zaal</label>
-      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Lebbis of oudejaars">`}
+      <input id="f-q" name="q" type="search" autocomplete="off" data-veld="waar" placeholder="Bijvoorbeeld: ${esc(voorbeeldWaar(list))}">` : `<label for="f-q">Zoek op artiest, voorstelling, plaats of theater</label>
+      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Lebbis, Utrecht of Carré">`}
     </div>
-    ${land && landen.length > 1 ? `<div class="field country">
-      <span class="label" id="f-land-label">Land</span>
-      <div class="chips" role="group" aria-labelledby="f-land-label">
-        <button type="button" class="chip" data-land="" aria-pressed="true">Alles</button>
-        <button type="button" class="chip" data-land="NL" aria-pressed="false">Nederland</button>
-        <button type="button" class="chip" data-land="BE" aria-pressed="false">België</button>
-      </div>
-    </div>` : ""}
     ${maand && months.length > 1 ? `<div class="field">
       <label for="f-maand">Maand</label>
       <select id="f-maand" name="maand"><option value="">Alle maanden</option>${months.map((m) => `<option value="${m}">${maandNaam(m)}</option>`).join("")}</select>
     </div>` : ""}
-    ${plaats && cities.length > 1 ? `<div class="field">
-      <label for="f-plaats">Plaats</label>
-      <select id="f-plaats" name="plaats"><option value="">Alle plaatsen</option>${cities.map((c) => `<option value="${esc(c)}">${esc(c)}</option>`).join("")}</select>
-    </div>` : ""}
     ${genres.length > 1 ? `<div class="field">
-      <label for="f-genre">Soort</label>
-      <select id="f-genre" name="genre"><option value="">Alle soorten</option>${genres.map((g) => `<option value="${g}">${GENRES[g]}</option>`).join("")}</select>
+      <label for="f-genre">Genre</label>
+      <select id="f-genre" name="genre"><option value="">Alle genres</option>${genres.map((g) => `<option value="${g}">${GENRES[g]}</option>`).join("")}</select>
+    </div>` : ""}
+    ${uitverkocht ? `<div class="field toggle-veld">
+      <label class="toggle"><input type="checkbox" id="f-uitverkocht" name="uitverkocht" value="1"> Uitverkocht verbergen</label>
     </div>` : ""}
   </form>
   <p class="result-line" id="result-line" aria-live="polite"></p>`;
@@ -614,7 +606,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     <h2 id="week-title">Deze week</h2>
     <p><a href="/vanavond/">Vanavond</a> · <a href="/dit-weekend/">Dit weekend</a> · <a href="/agenda/">De volledige agenda</a></p>
   </div>
-  ${filters(dezeWeek, { plaats: true })}
+  ${filters(dezeWeek)}
   <div id="gigs">${monthGroups(dezeWeek)}</div>
   ${leegBlok}
 </section>
@@ -795,7 +787,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         Kaarten koop je bij het theater; controleer daar ook of een voorstelling is uitverkocht.</p>
       <nav class="dag-nav" aria-label="Meer">${[andereLink, p ? `<a href="/plaatsen/${plaatsId(p)}/">Alle voorstellingen in ${esc(p)}</a>` : `<a href="/agenda/">De hele agenda</a>`].filter(Boolean).join("")}</nav>
       ${p ? uitgelichtBlok("plaats", p) : uitgelichtBlok("agenda")}
-      ${filters(list, p ? { plaats: false, land: false } : { plaats: true })}
+      ${filters(list)}
       <div id="gigs">${dagGroepen(list)}</div>
       ${leegBlok}
       <div class="empty" id="dag-leeg"${list.length ? " hidden" : ""}><p>${avond ? "Vanavond" : "Dit weekend"} staat er${waar} niets in de agenda. Bekijk <a href="${p ? `/plaatsen/${plaatsId(p)}/` : "/agenda/"}">de eerstvolgende voorstellingen</a>.</p></div>
@@ -835,7 +827,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div class="wrap detail-body">
         ${dagBlok(p, list)}
         ${uitgelichtBlok("plaats", p)}
-        ${filters(list, { plaats: false, land: false, maand: true })}
+        ${filters(list, { maand: true })}
         <div id="gigs">${monthGroups(list)}</div>
         ${leegBlok}
         ${plaatsTekst(p, list)}
@@ -1580,7 +1572,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${t.foto ? fotoHtml(t, "theater-foto") : ""}
       </div></div>
       <div class="wrap detail-body">
-        ${list.length > 12 ? filters(list, { plaats: false, land: false, maand: true }) : ""}
+        ${list.length > 12 ? filters(list, { maand: true }) : ""}
         <div id="gigs">${monthGroups(list, { showVenue: false })}</div>
         ${list.length > 12 ? leegBlok : ""}
         ${theaterTekst(t, list)}

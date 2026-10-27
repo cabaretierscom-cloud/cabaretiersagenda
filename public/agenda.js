@@ -228,23 +228,23 @@
 
   const rows = [...document.querySelectorAll("#gigs .gig")].filter((r) => !r.hidden);
   const veld = (id) => document.getElementById(id);
-  const selects = { maand: veld("f-maand"), plaats: veld("f-plaats"), genre: veld("f-genre") };
+  const selects = { maand: veld("f-maand"), genre: veld("f-genre") };
   const q = veld("f-q");
-  const chips = [...form.querySelectorAll(".chip")];
+  const vinkUit = veld("f-uitverkocht");
   const resultLine = veld("result-line");
   const empty = veld("empty");
 
   // Filterstand staat in de URL, zodat je een gefilterde lijst kunt delen.
   const params = new URLSearchParams(location.search);
-  const state = { q: params.get("q") || "", land: params.get("land") || "", maand: "", plaats: "", genre: "" };
+  const state = { q: params.get("q") || "", maand: "", genre: "", uitverkocht: vinkUit && params.get("uitverkocht") === "1" ? "1" : "" };
   for (const [k, el] of Object.entries(selects)) {
     if (!el) continue;
     el.value = params.get(k) || "";
     if (el.value !== (params.get(k) || "")) el.value = "";
     state[k] = el.value;
   }
-  if (!chips.length || !["", "NL", "BE"].includes(state.land)) state.land = "";
   if (q) q.value = state.q;
+  if (vinkUit) vinkUit.checked = state.uitverkocht === "1";
 
   const telling = (shown) => shown === rows.length
     ? `${rows.length === 1 ? "1 voorstelling" : `Alle ${rows.length} voorstellingen`}`
@@ -258,16 +258,14 @@
     let shown = 0;
     for (const r of rows) {
       const ok =
-        (!state.land || r.dataset.land === state.land) &&
         (!state.maand || r.dataset.datum.startsWith(state.maand)) &&
-        (!state.plaats || r.dataset.plaats === state.plaats) &&
         (!state.genre || r.dataset.genre === state.genre) &&
+        (!state.uitverkocht || r.dataset.status !== "uitverkocht") &&
         (!needle || kaal(r.dataset[zoekVeld] || "").includes(needle));
       r.hidden = !ok;
       if (ok) shown++;
     }
     syncGroups();
-    chips.forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.land === state.land)));
     resultLine.textContent = telling(shown);
     if (empty) empty.hidden = shown > 0;
 
@@ -280,13 +278,14 @@
   let timer;
   if (q) q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { state.q = q.value; apply(); }, 150); });
   for (const [k, el] of Object.entries(selects)) if (el) el.addEventListener("change", () => { state[k] = el.value; apply(); });
-  chips.forEach((c) => c.addEventListener("click", () => { state.land = c.dataset.land; apply(); }));
+  if (vinkUit) vinkUit.addEventListener("change", () => { state.uitverkocht = vinkUit.checked ? "1" : ""; apply(); });
   form.addEventListener("submit", (e) => e.preventDefault());
   const reset = veld("reset");
   if (reset) reset.addEventListener("click", () => {
     Object.keys(state).forEach((k) => (state[k] = ""));
     if (q) q.value = "";
     Object.values(selects).forEach((el) => { if (el) el.value = ""; });
+    if (vinkUit) vinkUit.checked = false;
     apply();
     if (q) q.focus();
   });
