@@ -1519,14 +1519,21 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const kolommen = Object.keys(LANDEN).map((land) => {
       const steden = [...new Set(zalenMetData.filter((t) => t.land === land).map((t) => t.plaats))].sort((a, b) => a.localeCompare(b, "nl"));
       if (!steden.length) return "";
-      return `<div><h2>${LANDEN[land]}</h2>${steden.map((p) => `<h3 class="city-head"><a href="/plaatsen/${plaatsId(p)}/">${esc(p)}</a></h3><ul class="venue-list">${zalenMetData.filter((t) => t.plaats === p).sort((a, b) => a.naam.localeCompare(b.naam, "nl")).map((t) => {
+      return `<div><h2>${LANDEN[land]}</h2>${steden.map((p) => `<div class="stad"><h3 class="city-head"><a href="/plaatsen/${plaatsId(p)}/">${esc(p)}</a></h3><ul class="venue-list">${zalenMetData.filter((t) => t.plaats === p).sort((a, b) => a.naam.localeCompare(b.naam, "nl")).map((t) => {
         const n = db.gigsForTheater(t.id).length;
-        return `<li><a href="/theaters/${t.id}/"><span><span class="vn">${esc(t.naam)}</span>${t.soort !== "theater" ? `<span class="vc">${esc(t.soort)}</span>` : ""}</span><span class="vk">${plural(n, "voorstelling", "voorstellingen")}</span></a></li>`;
-      }).join("")}</ul>`).join("")}</div>`;
+        return `<li data-zoek="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}"><a href="/theaters/${t.id}/"><span><span class="vn">${esc(t.naam)}</span>${t.soort !== "theater" ? `<span class="vc">${esc(t.soort)}</span>` : ""}</span><span class="vk">${plural(n, "voorstelling", "voorstellingen")}</span></a></li>`;
+      }).join("")}</ul></div>`).join("")}</div>`;
     }).join("");
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Theaters</h1><p>${tellers.zalen} zalen, comedyclubs en podia met aankomende voorstellingen.</p></div>
-      <div class="venues">${kolommen}</div>
+      <div class="az-tools">
+        <div class="field search">
+          <label for="f-theater">Zoek een theater of plaats</label>
+          <input id="f-theater" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Carré of Utrecht">
+        </div>
+      </div>
+      <div class="venues" id="theaterlijst">${kolommen}</div>
+      <p class="empty" id="theaters-leeg" hidden>Geen theater of plaats gevonden met deze naam.</p>
     </section>`;
     return layout({ title: "Theaters", description: "Theaters, comedyclubs en podia in Nederland en België met cabaret en comedy.", path: "/theaters/", section: "theaters", body, schema: { type: "CollectionPage", kruimels: [["Theaters", "/theaters/"]], hoofd: lijstLd([...zalenMetData].sort((x, y) => x.naam.localeCompare(y.naam, "nl")).map((t) => [t.naam, `/theaters/${t.id}/`])) } });
   }

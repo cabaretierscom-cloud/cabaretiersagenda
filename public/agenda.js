@@ -87,25 +87,29 @@
     });
   }
 
-  // ---------- Plaatsen: zoeken op plaats of zaal ----------
-  const zoekPlaats = document.getElementById("f-plaatsnaam");
-  if (zoekPlaats) {
-    const items = [...document.querySelectorAll("#plaatsenlijst li[data-zoek]")];
-    const leeg = document.getElementById("plaatsen-leeg");
-    const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-    zoekPlaats.addEventListener("input", () => {
-      const q = norm(zoekPlaats.value.trim());
+  // ---------- Plaatsen en theaters: zoeken op plaats of zaal ----------
+  const zoekInLijst = (veld, lijst, leegId) => {
+    const zoek = document.getElementById(veld), box = document.getElementById(lijst);
+    if (!zoek || !box) return;
+    const items = [...box.querySelectorAll("li[data-zoek]")];
+    const leeg = document.getElementById(leegId);
+    const norm = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    zoek.addEventListener("input", () => {
+      const q = norm(zoek.value.trim());
       let n = 0;
       for (const li of items) {
         const ok = !q || norm(li.dataset.zoek).includes(q);
         li.hidden = !ok;
         if (ok) n++;
       }
-      // Een land zonder treffers verdwijnt helemaal.
-      document.querySelectorAll("#plaatsenlijst > div").forEach((d) => { d.hidden = !d.querySelector("li:not([hidden])"); });
+      // Een stad of land zonder treffers verdwijnt helemaal.
+      box.querySelectorAll(".stad").forEach((d) => { d.hidden = !d.querySelector("li:not([hidden])"); });
+      box.querySelectorAll(":scope > div").forEach((d) => { d.hidden = !d.querySelector("li:not([hidden])"); });
       leeg.hidden = n > 0;
     });
-  }
+  };
+  zoekInLijst("f-plaatsnaam", "plaatsenlijst", "plaatsen-leeg");
+  zoekInLijst("f-theater", "theaterlijst", "theaters-leeg");
 
   // ---------- Video's ----------
   // Pas bij een klik de YouTube-speler laden (youtube-nocookie.com); daarvoor gaat er niets naar YouTube.
