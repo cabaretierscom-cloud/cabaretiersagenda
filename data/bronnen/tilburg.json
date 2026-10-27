@@ -1,7 +1,7 @@
 {
   "bron": "tilburg",
   "naam": "Schouwburg & Concertzaal Tilburg",
-  "opgehaald": "2026-10-26",
+  "opgehaald": "2026-10-27",
   "theaters": [
     {
       "id": "schouwburg-tilburg",
@@ -739,6 +739,19 @@
     {
       "theater": "schouwburg-tilburg",
       "artiesten": [
+        "Jeroen Leenders"
+      ],
+      "titel": "Heiden",
+      "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jeroen-leenders-heiden",
+      "datum": "2027-03-18",
+      "tijd": "20:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
         "Jade Mintjens"
       ],
       "titel": "Bedankt om te komen",
@@ -1450,6 +1463,19 @@
       "datum": "2027-01-12",
       "tijd": "20:15",
       "status": "uitverkocht"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Jeroen Leenders"
+      ],
+      "titel": "Heiden",
+      "genre": "cabaret",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jeroen-leenders-heiden",
+      "datum": "2027-03-18",
+      "tijd": "20:30",
+      "status": "gepland"
     }
   ],
   "recensies": {

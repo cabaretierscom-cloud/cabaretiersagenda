@@ -1,7 +1,7 @@
 {
   "bron": "spot-groningen",
   "naam": "SPOT Groningen",
-  "opgehaald": "2026-10-26",
+  "opgehaald": "2026-10-27",
   "theaters": [
     {
       "id": "de-oosterpoort",
@@ -166,7 +166,7 @@
       "genre": "cabaret",
       "datum": "2026-11-22",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/bert-visscher-en-het-noordpool-strijkkwartet-2/"
     },
@@ -1105,6 +1105,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/valentina-toth-9/"
+    },
+    {
+      "theater": "stadsschouwburg-groningen",
+      "artiesten": [
+        "Paul Haenen"
+      ],
+      "titel": "50 jaar Margreet Dolman",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/paul-haenen/"
     },
     {
       "theater": "de-oosterpoort",

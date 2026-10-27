@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-10-25",
+  "opgehaald": "2026-10-27",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -22,7 +22,7 @@
       "genre": "cabaret",
       "datum": "2026-10-31",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "geannuleerd",
       "soort": "try-out",
       "bron": "https://www.kampanje.nl/voorstellingen/valentina-toth-try-out-rz9j"
     },
@@ -35,7 +35,7 @@
       "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy"
     },
@@ -243,7 +243,7 @@
       "genre": "cabaret",
       "datum": "2027-01-14",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2"
     },
@@ -269,7 +269,7 @@
       "genre": "cabaret",
       "datum": "2027-01-21",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.kampanje.nl/voorstellingen/rene-van-meurs-reprise-h6c6"
     },
@@ -469,6 +469,19 @@
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/david-van-rosmalen-d7ph"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
         "Arie & Silvester"
       ],
       "titel": "Breken de tent af!",
@@ -527,7 +540,7 @@
       "genre": "cabaret",
       "datum": "2027-04-09",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/marie-koet-cgxx"
     },
@@ -618,7 +631,7 @@
       "genre": "cabaret",
       "datum": "2027-04-24",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/jandino-qyv8"
     },
@@ -948,6 +961,13 @@
         "medium": "De Stentor",
         "sterren": null,
         "citaat": "Max schoffelt heerlijk in een politiek correcte wereld"
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/david-van-rosmalen-d7ph": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "David van Rosmalen speelde de Leidse Schouwburg plat met een intelligente mengeling van (woord)grappen, spoken word, pianoliedjes en nederhiphop."
       }
     ],
     "https://www.kampanje.nl/voorstellingen/ronald-goedemondt-n24b": [

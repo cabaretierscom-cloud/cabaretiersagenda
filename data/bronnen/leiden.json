@@ -1,7 +1,7 @@
 {
   "bron": "leiden",
   "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-  "opgehaald": "2026-10-26",
+  "opgehaald": "2026-10-27",
   "theaters": [
     {
       "id": "leidse-schouwburg",
@@ -581,22 +581,9 @@
       ],
       "titel": "Kintsugi",
       "genre": "cabaret",
-      "datum": "2026-10-26",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/patrick-laureij-kintsugi-reprise/"
-    },
-    {
-      "theater": "leidse-schouwburg",
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
       "datum": "2026-10-27",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "geannuleerd",
       "soort": "reprise",
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/patrick-laureij-kintsugi-reprise/"
     },

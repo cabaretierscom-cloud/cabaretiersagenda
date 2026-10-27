@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-10-26",
+  "opgehaald": "2026-10-27",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -797,7 +797,7 @@
       "genre": "cabaret",
       "datum": "2027-01-02",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
     },
@@ -836,7 +836,7 @@
       "genre": "cabaret",
       "datum": "2026-11-21",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/ricky-risolles-59430/"
     },

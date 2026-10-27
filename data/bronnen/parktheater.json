@@ -1,7 +1,7 @@
 {
   "bron": "parktheater",
   "naam": "Parktheater Eindhoven",
-  "opgehaald": "2026-10-26",
+  "opgehaald": "2026-10-27",
   "theaters": [
     {
       "id": "parktheater-eindhoven",
@@ -61,7 +61,7 @@
       "genre": "cabaret",
       "datum": "2026-10-29",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/hardleers-qwsw"
     },
@@ -100,7 +100,7 @@
       "genre": "cabaret",
       "datum": "2026-10-30",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
     },
@@ -606,19 +606,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/begrijpt-steeds-minder-54h4"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Jan Beuving"
-      ],
-      "titel": "Dekpunt",
-      "genre": "cabaret",
-      "datum": "2026-12-19",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/dekpunt-rx3m"
     },
     {
       "theater": "parktheater-eindhoven",
@@ -1956,6 +1943,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/scheepers-op-z-n-scherpst-fpt7"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-09-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/dekpunt-rx3m"
     },
     {
       "theater": "parktheater-eindhoven",

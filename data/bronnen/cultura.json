@@ -1,7 +1,7 @@
 {
   "bron": "cultura",
   "naam": "Cultura Ede",
-  "opgehaald": "2026-10-26",
+  "opgehaald": "2026-10-27",
   "theaters": [
     {
       "id": "cultura-ede",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "cultura-ede",
-      "artiesten": [
-        "Micha Wertheim"
-      ],
-      "titel": "Micha Wertheim voor iedereen",
-      "genre": "cabaret",
-      "datum": "2026-10-28",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://cultura-ede.nl/agenda/micha-wertheim-224172/"
-    },
     {
       "theater": "cultura-ede",
       "artiesten": [
@@ -324,6 +311,19 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://cultura-ede.nl/agenda/valentina-toth-276873/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim voor iedereen",
+      "genre": "cabaret",
+      "datum": "2026-10-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/micha-wertheim-224172/"
     }
   ],
   "recensies": {}

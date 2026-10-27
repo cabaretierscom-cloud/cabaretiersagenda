@@ -2,28 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-10-26",
+  "opgehaald": "2026-10-27",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "'t Kapittel",
-        "plaats": "Wervik",
-        "land": "BE",
-        "website": "https://www.wervik.be"
-      },
-      "artiesten": [
-        "Gili"
-      ],
-      "titel": "Machtig!",
-      "genre": "cabaret",
-      "datum": "2026-10-26",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.wervik.be/vrijetijdspunt/agenda/e/humor-op-maandag-gili/d324c382-eb6c-4bd2-bb6b-69319d861e3a"
-    },
     {
       "theater": "cc-de-kruisboog-tienen",
       "artiesten": [
@@ -2020,7 +2001,7 @@
       "genre": "stand-up",
       "datum": "2026-12-04",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://be.ticketgang.eu/orgFrameSaleNew.php?org=5636&event=179809#"
     },
@@ -2153,7 +2134,7 @@
       "genre": "stand-up",
       "datum": "2026-12-05",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://be.ticketgang.eu/orgFrameSaleNew.php?org=5636&event=179809#"
     },
@@ -8588,6 +8569,25 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.tervesten.be/dries-heyneman-voor-normale-mensen"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "OC De Schouw",
+        "plaats": "Lichtervelde",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Hans Cools"
+      ],
+      "titel": "Zolang de voorraad strekt",
+      "genre": "stand-up",
+      "datum": "2027-06-02",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedyshows.be/kalender/hans-cools/2027-06-02/"
     },
     {
       "theater": {
