@@ -243,6 +243,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-zaal .poster-beeld img { object-position: 50% 50%; }
 .poster-zaal .where { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .wall-zalen { padding-top: 40px; }
+/* Zit het gezicht bovenin, dan komen de sterren onderaan het beeld. */
+.poster-sterren.onder { top: auto; bottom: 18px; }
 .poster-sterren small { font-size: .78rem; font-weight: 600; letter-spacing: 0; }
 .poster-vlak { flex: 1; display: flex; min-height: 0; }
 /* Datum bovenaan, aantal speeldata onderaan; titel, artiest en zaal daartussen, ook bij een titel van twee regels. */

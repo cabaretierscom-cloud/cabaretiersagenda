@@ -471,6 +471,14 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const beeld = foto.breedte / foto.hoogte;
     return ` style="object-position:${plek(foto.focus[0], verhouding / beeld)}% ${plek(foto.focus[1], beeld / verhouding)}%"`;
   };
+  // Waar het gezicht na het bijsnijden staat, als deel van de hoogte van het vlak (0 = boven).
+  const gezichtHoogte = (foto, verhouding) => {
+    if (!foto.focus || !foto.breedte) return 0.5;
+    const zichtbaar = Math.min(1, (foto.breedte / foto.hoogte) / verhouding);
+    if (zichtbaar >= 1) return foto.focus[1];
+    const boven = Math.min(1, Math.max(0, (foto.focus[1] - zichtbaar / 2) / (1 - zichtbaar))) * (1 - zichtbaar);
+    return (foto.focus[1] - boven) / zichtbaar;
+  };
 
   // "Nu in het theater": voorstellingen met een promobeeld (data/promo.json), eerstvolgende eerst,
   // hooguit één per artiest. Bovenin het beeld, daaronder het kleurvlak van de artiest.
@@ -493,7 +501,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
         <span class="visually-hidden">${esc(titel)} van ${esc(artistNames(v.id))}, ${aantal}, eerstvolgende ${fmt.long(g.datum)} in ${esc(t.naam)}, ${esc(t.plaats)}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
         <span class="poster-beeld" aria-hidden="true">
           <img src="${esc(v.foto.bestand)}" alt=""${uitsnede(v.foto, 1.2)} width="${v.foto.breedte || 800}" height="${v.foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
-          ${beste ? `<span class="poster-sterren">${"★".repeat(beste.sterren)}<small>${esc(beste.medium)}</small></span>` : ""}
+          ${beste ? `<span class="poster-sterren${gezichtHoogte(v.foto, 1.2) < 0.5 ? " onder" : ""}">${"★".repeat(beste.sterren)}<small>${esc(beste.medium)}</small></span>` : ""}
         </span>
         <span class="poster-vlak" aria-hidden="true">
           <span class="poster-info">
