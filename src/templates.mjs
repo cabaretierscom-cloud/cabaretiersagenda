@@ -1515,7 +1515,34 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       } });
   }
 
+  // Tekst en vragen onder /theaters/, uit de cijfers van de agenda (werkt zich elke nacht bij).
+  function theatersOverzicht() {
+    const zalen = zalenMetData.map((t) => ({ t, n: db.gigsForTheater(t.id).length })).sort((a, b) => b.n - a.n || a.t.naam.localeCompare(b.t.naam, "nl"));
+    const metAantal = ({ t, n }) => `${theaterLink(t.id)} (${n})`;
+    // "Capitole Gent", maar "Arenberg in Antwerpen"
+    const metPlaats = (t) => `${theaterLink(t.id)}${t.naam.includes(t.plaats) ? "" : ` in ${esc(t.plaats)}`}`;
+    const nl = zalen.filter((x) => x.t.land === "NL"), be = zalen.filter((x) => x.t.land === "BE");
+    const clubs = zalen.filter((x) => x.t.soort === "comedyclub");
+    const steden = telPer(zalenMetData, (t) => t.plaats);
+    const tekst = [];
+    tekst.push(`<p>Cabaretiers.com volgt het programma van ${zalen.length} theaters, comedyclubs en podia: ${nl.length} in Nederland${be.length ? ` en ${be.length} in België` : ""}. Samen hebben ze ${tellers.speeldata.toLocaleString("nl-NL")} aankomende voorstellingen met cabaret, comedy en kleinkunst op de agenda.</p>`);
+    tekst.push(`<p>De meeste voorstellingen staan in ${opsomming(zalen.slice(0, 5).map(metAantal))}. Naast de grote schouwburgen speelt veel comedy zich af in kleinere zalen en comedyclubs${clubs.length ? `, zoals ${opsomming(clubs.slice(0, 4).map(({ t }) => theaterLink(t.id)))}` : ""}. Daar staan vaak try-outs en nieuw talent op het podium.</p>`);
+    tekst.push(`<p>Zoek hierboven op de naam van een theater of een plaats, of kies een stad: ${opsomming(steden.slice(0, 6).map(([p, n]) => `${plaatsLink(p)} (${plural(n, "zaal", "zalen")})`))}. Per theater zie je alle voorstellingen op datum, met een knop naar de kaartverkoop van de zaal zelf.</p>`);
+    const vragen = [];
+    vragen.push(["Welke theaters hebben de meeste cabaret en comedy?", `${opsomming(zalen.slice(0, 5).map(metAantal))}. Tussen haakjes staat het aantal aankomende voorstellingen.`]);
+    vragen.push(["In welke stad zijn de meeste zalen met cabaret?", `${opsomming(steden.slice(0, 3).map(([p, n]) => `${plaatsLink(p)} (${plural(n, "zaal", "zalen")})`))}. Op de pagina van een plaats staan alle voorstellingen in die stad bij elkaar.`]);
+    if (clubs.length) vragen.push(["Welke comedyclubs staan in de agenda?", clubs.length <= 6
+      ? `${opsomming(clubs.map(({ t }) => metPlaats(t)))}. Daarnaast staat er veel comedy in gewone theaters en cultuurcentra.`
+      : `${clubs.length} comedyclubs, onder meer ${opsomming(clubs.slice(0, 6).map(({ t }) => metPlaats(t)))}.`]);
+    if (be.length) vragen.push(["Staan er ook Belgische zalen in?", `Ja, ${be.length}. De meeste voorstellingen in België zijn in ${opsomming(be.slice(0, 5).map(({ t, n }) => `${metPlaats(t)} (${n})`))}.`]);
+    vragen.push(["Hoe koop ik kaarten?", "Kaarten koop je bij het theater zelf. Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van de zaal waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
+    vragen.push(["Hoe actueel is dit overzicht?", "De agenda wordt elke nacht bijgewerkt vanaf de websites van de theaters en de speellijsten van de artiesten. Voorstellingen die voorbij zijn, verdwijnen vanzelf."]);
+    vragen.push(["Mijn theater staat er niet bij. Hoe kom ik in de agenda?", `Stuur een mail naar <a href="mailto:${SITE.email}">${SITE.email}</a> met de naam van de zaal en de pagina met het programma. Een theater verschijnt hier zodra er cabaret of comedy op het programma staat.`]);
+    return { tekst, vragen };
+  }
+
   function theaterIndex() {
+    const overzicht = theatersOverzicht();
     const kolommen = Object.keys(LANDEN).map((land) => {
       const steden = [...new Set(zalenMetData.filter((t) => t.land === land).map((t) => t.plaats))].sort((a, b) => a.localeCompare(b, "nl"));
       if (!steden.length) return "";
@@ -1534,8 +1561,13 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </div>
       <div class="venues" id="theaterlijst">${kolommen}</div>
       <p class="empty" id="theaters-leeg" hidden>Geen theater of plaats gevonden met deze naam.</p>
+      <section class="seo-tekst prose" aria-labelledby="over-titel">
+        <h2 id="over-titel">Theaters met cabaret en comedy</h2>
+        ${overzicht.tekst.join("\n        ")}
+      </section>
+      ${faqHtml(overzicht.vragen, "Veelgestelde vragen over theaters")}
     </section>`;
-    return layout({ title: "Theaters", description: "Theaters, comedyclubs en podia in Nederland en België met cabaret en comedy.", path: "/theaters/", section: "theaters", body, schema: { type: "CollectionPage", kruimels: [["Theaters", "/theaters/"]], hoofd: lijstLd([...zalenMetData].sort((x, y) => x.naam.localeCompare(y.naam, "nl")).map((t) => [t.naam, `/theaters/${t.id}/`])) } });
+    return layout({ title: "Theaters", description: "Theaters, comedyclubs en podia in Nederland en België met cabaret en comedy.", path: "/theaters/", section: "theaters", body, schema: { type: "CollectionPage", kruimels: [["Theaters", "/theaters/"]], hoofd: lijstLd([...zalenMetData].sort((x, y) => x.naam.localeCompare(y.naam, "nl")).map((t) => [t.naam, `/theaters/${t.id}/`])), extra: [faqLd(overzicht.vragen, "/theaters/")] } });
   }
 
   function theaterPage(t) {
