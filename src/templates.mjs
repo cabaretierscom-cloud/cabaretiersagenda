@@ -868,7 +868,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     ${nu ? `<section class="wall wall-sub" aria-labelledby="nu-title">
       <div class="wrap wall-head">
         <h2 id="nu-title">Nu op tournee</h2>
-        <p>Voorstellingen die nu op tournee zijn, de eerstvolgende voorop.</p>
       </div>
       ${strip("strip-nu", "Voorstellingen die nu op tournee zijn", nu)}
     </section>` : ""}
