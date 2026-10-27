@@ -233,6 +233,14 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   padding: 4px 10px 5px; border-radius: 999px; background: var(--bg); color: var(--fg);
   font-size: 1.05rem; letter-spacing: .06em; line-height: 1;
 }
+/* Naamsvermelding van een vrije foto (Wikimedia) op het kaartje van een zaal. */
+.poster-credit {
+  position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 12px 8px; font-size: .68rem; line-height: 1.3; color: #FFF;
+  background: linear-gradient(transparent, rgba(0,0,0,.6)); overflow-wrap: anywhere;
+}
+.poster-zaal .poster-beeld img { object-position: 50% 50%; }
+.poster-zaal .where { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.wall-zalen { padding-top: 40px; }
 .poster-sterren small { font-size: .78rem; font-weight: 600; letter-spacing: 0; }
 .poster-vlak { flex: 1; display: flex; min-height: 0; }
 /* Datum bovenaan, aantal speeldata onderaan; titel, artiest en zaal daartussen, ook bij een titel van twee regels. */

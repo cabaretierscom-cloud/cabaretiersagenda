@@ -518,6 +518,43 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       }).join("");
   }
 
+  // Theaters met een foto, meeste voorstellingen eerst, als kaartjes met de zaalfoto. De zalen hebben
+  // geen eigen kleur: die volgt uit de id, en buren krijgen nooit dezelfde. Wikimedia-foto's vragen
+  // om naamsvermelding, dus maker en licentie staan klein op de foto.
+  function theaterKaartjes() {
+    const thisYear = fmt.year(db.today);
+    const kleuren = Object.keys(KLEUREN).filter((k) => k !== "zwart");
+    const kleurVan = (t) => kleuren[createHash("sha1").update(t.id).digest()[0] % kleuren.length];
+    const lijst = [...T.values()].filter((t) => t.foto?.bestand)
+      .map((t) => ({ t, list: db.gigsForTheater(t.id).filter((g) => g.status !== "geannuleerd") }))
+      .filter(({ list }) => list.length)
+      .sort((x, y) => y.list.length - x.list.length || x.t.naam.localeCompare(y.t.naam, "nl"))
+      .slice(0, 12);
+    return afwisselend(lijst, ({ t }) => kleurVan(t)).map(({ x: { t, list }, kleur }) => {
+      const g = list[0], v = V.get(g.voorstelling);
+      const wat = [v.artiesten.length ? artistNames(g.voorstelling) : "", echteTitel(g.voorstelling) || (v.artiesten.length ? "" : v.titel)].filter(Boolean).join(": ");
+      const aantal = plural(list.length, "voorstelling", "voorstellingen");
+      return `<a class="poster poster-foto poster-zaal" href="/theaters/${t.id}/" style="${ink(kleur)}">
+        <span class="visually-hidden">${esc(t.naam)} in ${esc(t.plaats)}, ${aantal}, eerstvolgende ${fmt.long(g.datum)}: ${esc(wat)}</span>
+        <span class="poster-beeld" aria-hidden="true">
+          <img src="${esc(t.foto.bestand)}" alt="" width="${t.foto.breedte || 960}" height="${t.foto.hoogte || 720}" loading="lazy" decoding="async">
+          <span class="poster-credit">Foto: ${esc(t.foto.maker)}, ${esc(t.foto.licentie)}</span>
+        </span>
+        <span class="poster-vlak" aria-hidden="true">
+          <span class="poster-info">
+          <span class="wanneer">Volgende voorstelling</span>
+          <span class="when"><span class="day">${fmt.day(g.datum)}</span> <span class="month">${fmt.monthShort(g.datum)}${fmt.year(g.datum) !== thisYear ? " " + fmt.year(g.datum) : ""}</span></span>
+          <strong class="ftitel${titleClass(t.naam)}">${esc(t.naam)}</strong>
+          <span class="fartiest">${esc(t.plaats)}</span>
+          <span class="where">${esc(wat)}</span>
+          <span class="tag">${aantal}</span>
+          </span>
+          <span class="poster-stub"></span>
+        </span>
+      </a>`;
+    }).join("");
+  }
+
   // Zijwaarts scrollende rij affiches met knoppen (agenda.js).
   const strip = (id, label, inhoud) => `<div class="strip-wrap">
     <div class="strip" id="${id}" tabindex="0" aria-label="${esc(label)}">${inhoud}</div>
@@ -545,6 +582,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       .sort((a, b) => a.localeCompare(b, "nl"));
 
     const nu = nuInTheater();
+    const zalen = theaterKaartjes();
     const body = `
 ${nu ? `<section class="wall" aria-labelledby="nu-title">
   <div class="wrap wall-head">
@@ -561,6 +599,14 @@ ${nu ? `<section class="wall" aria-labelledby="nu-title">
     <div><dt>plaatsen</dt><dd>${tellers.plaatsen}</dd></div>
   </dl>
 </section>
+${zalen ? `
+<section class="wall wall-zalen" aria-labelledby="zalen-title">
+  <div class="wrap wall-head">
+    <h2 id="zalen-title">Theaters</h2>
+    <p>De zalen met de meeste cabaret en comedy op de agenda. <a href="/theaters/">Alle theaters</a></p>
+  </div>
+  ${strip("strip-zalen", "Theaters met de meeste voorstellingen", zalen)}
+</section>` : ""}
 
 ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` : ""}
 <section class="block wrap" id="agenda" aria-labelledby="week-title">
