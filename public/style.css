@@ -240,7 +240,6 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* Afscheurstrook rechts, achter een verticale perforatie, zoals de controlestrook van een toegangskaartje. */
 .poster-stub {
   position: relative; flex: 0 0 30px; border-left: 2px dashed color-mix(in srgb, var(--fg) 45%, transparent);
-  transform-origin: 0 100%; transition: transform .35s cubic-bezier(.2,.8,.2,1);
 }
 .poster-foto .wanneer { font-size: .85rem; font-weight: 600; line-height: 1.2; }
 .poster-foto .when { display: flex; align-items: baseline; gap: 6px; margin-top: 4px; }
@@ -257,8 +256,6 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-foto .tag { align-self: flex-start; margin-top: auto; }
 @media (hover: hover) and (pointer: fine) {
   .poster-foto:hover .poster-beeld img, .poster-foto:focus-visible .poster-beeld img { transform: scale(1.04); }
-  /* De strook scheurt een stukje los. */
-  .poster-foto:hover .poster-stub, .poster-foto:focus-visible .poster-stub { transform: rotate(4deg) translate(3px, -2px); }
 }
 .strip-nav {
   position: absolute; right: max(12px, env(safe-area-inset-right, 0px)); top: 50%; translate: 0 -50%;
@@ -508,7 +505,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .faq details a { color: inherit; }
 
 @media (prefers-reduced-motion: no-preference) { .strip { scroll-behavior: smooth; } }
-@media (prefers-reduced-motion: reduce) { .poster, .poster::before, .poster-beeld img, .poster-stub { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .poster, .poster::before, .poster-beeld img { transition: none; } }
 
 /* ---------- Kerncijfers ---------- */
 .stats dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin: 28px 0 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
