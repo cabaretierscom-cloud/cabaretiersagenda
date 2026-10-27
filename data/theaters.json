@@ -2234,7 +2234,7 @@
     "plaats": "Amsterdam",
     "land": "NL",
     "soort": "theater",
-    "website": null
+    "website": "https://www.comedytrain.nl"
   },
   {
     "id": "kleine-komedie",
@@ -2708,6 +2708,14 @@
   {
     "id": "boog-bolsward",
     "naam": "Boog",
+    "plaats": "Bolsward",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://boog-bolsward.nl"
+  },
+  {
+    "id": "ons-gebouw-bolsward",
+    "naam": "Ons Gebouw",
     "plaats": "Bolsward",
     "land": "NL",
     "soort": "theater",
@@ -4885,7 +4893,7 @@
     "plaats": "Rotterdam",
     "land": "NL",
     "soort": "theater",
-    "website": null
+    "website": "https://www.ahoy.nl"
   },
   {
     "id": "art-studio-rotterdam",

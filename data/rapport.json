@@ -1,12 +1,12 @@
 {
   "datum": "2026-10-27",
   "totaal": {
-    "speeldata": 5693,
-    "komend": 5619,
+    "speeldata": 5925,
+    "komend": 5851,
     "artiesten": 462,
-    "zalen": 578,
+    "zalen": 579,
     "plaatsen": 424,
-    "voorstellingen": 655
+    "voorstellingen": 664
   },
   "bronnen": [
     {
@@ -102,7 +102,7 @@
       "naam": "Goudse Schouwburg",
       "opgehaald": "2026-10-27",
       "speeldata": 82,
-      "vorige": 81,
+      "vorige": 82,
       "dubbel": 0
     },
     {
@@ -150,7 +150,7 @@
       "naam": "Theater de Kampanje",
       "opgehaald": "2026-10-27",
       "speeldata": 59,
-      "vorige": 58,
+      "vorige": 59,
       "dubbel": 0
     },
     {
@@ -254,7 +254,7 @@
       "naam": "Orpheus",
       "opgehaald": "2026-10-27",
       "speeldata": 68,
-      "vorige": 58,
+      "vorige": 68,
       "dubbel": 0
     },
     {
@@ -326,7 +326,7 @@
       "naam": "SPOT Groningen",
       "opgehaald": "2026-10-27",
       "speeldata": 90,
-      "vorige": 89,
+      "vorige": 90,
       "dubbel": 0
     },
     {
@@ -342,7 +342,7 @@
       "naam": "Schouwburg & Concertzaal Tilburg",
       "opgehaald": "2026-10-27",
       "speeldata": 56,
-      "vorige": 55,
+      "vorige": 56,
       "dubbel": 0
     },
     {
@@ -430,15 +430,23 @@
       "naam": "Agenda van 5to9",
       "opgehaald": "2026-10-27",
       "speeldata": 432,
-      "vorige": 431,
+      "vorige": 432,
       "dubbel": 54
+    },
+    {
+      "bron": "bunker",
+      "naam": "Agenda van Bunker Theaterzaken",
+      "opgehaald": "2026-10-27",
+      "speeldata": 232,
+      "vorige": 0,
+      "dubbel": 541
     },
     {
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-10-27",
       "speeldata": 1905,
-      "vorige": 1968,
+      "vorige": 1905,
       "dubbel": 1000
     }
   ],
@@ -460,6 +468,13 @@
         "plaats": "Bennekom",
         "land": "NL",
         "website": null
+      },
+      {
+        "id": "ons-gebouw-bolsward",
+        "naam": "Ons Gebouw",
+        "plaats": "Bolsward",
+        "land": "NL",
+        "website": "https://boog-bolsward.nl"
       }
     ],
     "voorstellingen": [
@@ -476,6 +491,69 @@
         "artiesten": [
           "tommy-zonneveld",
           "sophie-willemijntje"
+        ]
+      },
+      {
+        "id": "echt-gebeurd-de-erfenis",
+        "titel": "De erfenis",
+        "artiesten": [
+          "echt-gebeurd"
+        ]
+      },
+      {
+        "id": "echt-gebeurd-de-nacht",
+        "titel": "De nacht",
+        "artiesten": [
+          "echt-gebeurd"
+        ]
+      },
+      {
+        "id": "echt-gebeurd-de-val",
+        "titel": "De val",
+        "artiesten": [
+          "echt-gebeurd"
+        ]
+      },
+      {
+        "id": "echt-gebeurd-de-waarheid",
+        "titel": "De waarheid",
+        "artiesten": [
+          "echt-gebeurd"
+        ]
+      },
+      {
+        "id": "echt-gebeurd-experiment",
+        "titel": "Experiment",
+        "artiesten": [
+          "echt-gebeurd"
+        ]
+      },
+      {
+        "id": "echt-gebeurd-groen",
+        "titel": "Groen",
+        "artiesten": [
+          "echt-gebeurd"
+        ]
+      },
+      {
+        "id": "echt-gebeurd-kapot",
+        "titel": "Kapot",
+        "artiesten": [
+          "echt-gebeurd"
+        ]
+      },
+      {
+        "id": "echt-gebeurd-seks",
+        "titel": "Seks",
+        "artiesten": [
+          "echt-gebeurd"
+        ]
+      },
+      {
+        "id": "martijn-koning-comedy-comedians",
+        "titel": "Comedy Comedians",
+        "artiesten": [
+          "martijn-koning"
         ]
       }
     ]
@@ -502,12 +580,12 @@
     },
     {
       "datum": "2026-10-27",
-      "speeldata": 5693,
-      "komend": 5619,
+      "speeldata": 5925,
+      "komend": 5851,
       "artiesten": 462,
-      "zalen": 578,
+      "zalen": 579,
       "plaatsen": 424,
-      "voorstellingen": 655
+      "voorstellingen": 664
     }
   ]
 }
