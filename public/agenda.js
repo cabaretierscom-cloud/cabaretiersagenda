@@ -233,6 +233,13 @@
     perWeek.toggleAttribute("data-ingeklapt", Boolean(volgende));
     document.getElementById("meer-weken").hidden = !volgende;
     if (volgende) weekKnop.textContent = `Volgende week: ${volgende.dataset.week} (${volgende.querySelectorAll(".gig").length})`;
+    // Telling onder het filter: hoeveel er nu te zien zijn van de hele maand.
+    const regel = document.getElementById("result-line");
+    if (regel && volgende) {
+      const alle = perWeek.querySelectorAll(".gig").length, zichtbaar = weken.slice(0, n).reduce((a, w) => a + w.querySelectorAll(".gig").length, 0);
+      regel.textContent = `${zichtbaar} van ${alle} voorstellingen (${n === 1 ? "eerste week" : `eerste ${n} weken`})`;
+    }
+    else if (regel && /\(eerste/.test(regel.textContent)) regel.textContent = `Alle ${perWeek.querySelectorAll(".gig").length} voorstellingen`;
     document.querySelectorAll(".week-nav a").forEach((a) => a.setAttribute("aria-current", String(weken.slice(0, n).some((w) => `#${w.id}` === a.getAttribute("href")))));
   };
   let weekenZichtbaar = 1;
@@ -320,5 +327,8 @@
 
   // Alleen de URL bijwerken als er al een filter in stond; anders de lijst laten zoals hij is.
   if (location.search) apply();
-  else resultLine.textContent = telling(rows.length);
+  else {
+    resultLine.textContent = telling(rows.length);
+    if (perWeek) toonWeken(weekenZichtbaar);
+  }
 })();
