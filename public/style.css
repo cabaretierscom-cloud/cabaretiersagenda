@@ -217,7 +217,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-foto { --naad: 50%; display: flex; flex-direction: column; padding: 0; border-radius: 18px; }
 /* Losse kaartjes met wat ruimte ertussen; de eerste begint op de lijn van de koppen. */
 .strip:has(.poster-foto) { --rand: max(16px, calc((100vw - var(--wrap)) / 2 + 16px)); gap: 14px; padding-inline: var(--rand); scroll-padding-inline: var(--rand); }
-.poster-foto::before { top: var(--naad); }
+.poster-foto::before { top: var(--naad); border-radius: 0 0 18px 18px; }
 .poster-foto::after {
   content: ""; position: absolute; left: 0; right: 0; top: var(--naad); height: 24px; translate: 0 -50%; z-index: 1; pointer-events: none;
   background:
@@ -228,7 +228,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   -webkit-mask-image: linear-gradient(90deg, #000 11px, transparent 11px, transparent 18px, #000 18px, #000 calc(100% - 18px), transparent calc(100% - 18px), transparent calc(100% - 11px), #000 calc(100% - 11px));
           mask-image: linear-gradient(90deg, #000 11px, transparent 11px, transparent 18px, #000 18px, #000 calc(100% - 18px), transparent calc(100% - 18px), transparent calc(100% - 11px), #000 calc(100% - 11px));
 }
-.poster-beeld { position: relative; flex: 0 0 var(--naad); overflow: hidden; background: rgba(0,0,0,.15); }
+.poster-beeld { position: relative; flex: 0 0 var(--naad); overflow: hidden; background: rgba(0,0,0,.15); border-radius: 18px 18px 0 0; }
 .poster-beeld img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; transition: transform .5s cubic-bezier(.2,.8,.2,1); }
 .poster-sterren {
   position: absolute; left: 14px; top: 14px; display: inline-flex; align-items: baseline; gap: 6px;
@@ -246,7 +246,16 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* Zit het gezicht bovenin, dan komen de sterren onderaan het beeld. */
 .poster-sterren.onder { top: auto; bottom: 18px; }
 .poster-sterren small { font-size: .78rem; font-weight: 600; letter-spacing: 0; }
-.poster-vlak { flex: 1; display: flex; min-height: 0; }
+.poster-vlak { flex: 1; display: flex; min-height: 0; border-radius: 0 0 18px 18px; transition: box-shadow .28s ease; }
+/* Schaduw bij aanwijzen alleen onder het kleurvlak, zodat er geen rand om de knipgaten komt.
+   Daarvoor mag de kaart niet meer bijsnijden (overflow); de foto en de stippen hebben eigen ronde hoeken. */
+.poster-foto { overflow: visible; }
+.poster-foto.actief { box-shadow: none; }
+.poster-foto.actief .poster-vlak { box-shadow: 0 22px 40px -18px rgba(0,0,0,.6); }
+@media (hover: hover) and (pointer: fine) {
+  .poster-foto:hover, .poster-foto:focus-visible { box-shadow: none; }
+  .poster-foto:hover .poster-vlak, .poster-foto:focus-visible .poster-vlak { box-shadow: 0 22px 40px -18px rgba(0,0,0,.6); }
+}
 /* Datum bovenaan, aantal speeldata onderaan; titel, artiest en zaal daartussen, ook bij een titel van twee regels. */
 .poster-info { flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 20px 14px 22px 22px; }
 /* Afscheurstrook rechts, achter een verticale perforatie, zoals de controlestrook van een toegangskaartje. */
