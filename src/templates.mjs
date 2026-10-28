@@ -465,18 +465,21 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   // Uitsnede rond het gezicht (focus in data/promo.json) voor een vlak met verhouding breedte/hoogte.
   // object-position in procenten: 0% legt de rand links/boven, 100% rechts/onder.
+  // Het gezicht komt op een derde van de bovenkant (zoals bij een portret), zodat er ook lichaam in
+  // beeld is; in de breedte komt het in het midden.
+  const GEZICHT_HOOGTE = 0.3;
+  const plek = (f, zichtbaar, doel) => zichtbaar >= 1 ? 0.5 : Math.min(1, Math.max(0, (f - doel * zichtbaar) / (1 - zichtbaar)));
   const uitsnede = (foto, verhouding) => {
     if (!foto.focus || !foto.breedte) return "";
-    const plek = (f, zichtbaar) => zichtbaar >= 1 ? 50 : Math.round(Math.min(1, Math.max(0, (f - zichtbaar / 2) / (1 - zichtbaar))) * 100);
     const beeld = foto.breedte / foto.hoogte;
-    return ` style="object-position:${plek(foto.focus[0], verhouding / beeld)}% ${plek(foto.focus[1], beeld / verhouding)}%"`;
+    return ` style="object-position:${Math.round(plek(foto.focus[0], verhouding / beeld, 0.5) * 100)}% ${Math.round(plek(foto.focus[1], beeld / verhouding, GEZICHT_HOOGTE) * 100)}%"`;
   };
   // Waar het gezicht na het bijsnijden staat, als deel van de hoogte van het vlak (0 = boven).
   const gezichtHoogte = (foto, verhouding) => {
     if (!foto.focus || !foto.breedte) return 0.5;
     const zichtbaar = Math.min(1, (foto.breedte / foto.hoogte) / verhouding);
     if (zichtbaar >= 1) return foto.focus[1];
-    const boven = Math.min(1, Math.max(0, (foto.focus[1] - zichtbaar / 2) / (1 - zichtbaar))) * (1 - zichtbaar);
+    const boven = plek(foto.focus[1], zichtbaar, GEZICHT_HOOGTE) * (1 - zichtbaar);
     return (foto.focus[1] - boven) / zichtbaar;
   };
 
