@@ -699,6 +699,17 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .knop-secundair[hidden] { display: none; }
 
 /* Vanavond en dit weekend */
+/* Maandpagina per week: weekkeuze bovenaan; agenda.js toont eerst één week (zie #gigs[data-ingeklapt]). */
+.week-nav { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin: 18px 0 0; padding-bottom: 2px; }
+.week-nav::-webkit-scrollbar { display: none; }
+.week-nav a { flex: 0 0 auto; display: grid; gap: 2px; padding: 8px 14px; border-radius: 12px; border: 1.5px solid var(--rule); text-decoration: none; color: var(--ink); font-size: var(--step--1); line-height: 1.2; }
+.week-nav a b { font-weight: 700; white-space: nowrap; }
+.week-nav a span { color: var(--ink-2); }
+.week-nav a[aria-current="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.week-nav a[aria-current="true"] span { color: inherit; opacity: .75; }
+.week-groep { scroll-margin-top: 80px; }
+#gigs[data-ingeklapt] .week-groep.later { display: none; }
+.meer-weken { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 0; }
 .month-group h3 small { font-family: var(--font-body); font-weight: 500; font-size: 1rem; margin-left: 8px; }
 .dag-intro { max-width: 68ch; margin: 0 0 12px; }
 .dag-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0 0 16px; font-weight: 600; }

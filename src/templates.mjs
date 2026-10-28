@@ -660,16 +660,63 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return layout({ title: "Agenda", description: "Alle aankomende cabaret- en comedyvoorstellingen in Nederland en België, per maand.", path: "/agenda/", section: "agenda", body, schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"]], extra: eventsLd(komend) } });
   }
 
+  // Een maand per week (maandag t/m zondag, binnen de maand), met een weekkeuze bovenaan. Zonder
+  // JavaScript staan alle weken onder elkaar; agenda.js toont eerst één week met een knop voor de volgende.
+  function weekGroepen(list, m) {
+    const laatste = new Date(Date.UTC(+m.slice(0, 4), +m.slice(5, 7), 0)).toISOString().slice(0, 10);
+    const weekVan = (iso) => {
+      const d = new Date(iso + "T12:00:00Z"), ma = new Date(d.getTime() - ((d.getUTCDay() + 6) % 7) * 864e5).toISOString().slice(0, 10);
+      return ma < m + "-01" ? m + "-01" : ma;
+    };
+    const zondag = (w) => new Date(new Date(w + "T12:00:00Z").getTime() + (6 - (new Date(w + "T12:00:00Z").getUTCDay() + 6) % 7) * 864e5).toISOString().slice(0, 10);
+    const dagen = (a, b) => Math.round((new Date(b) - new Date(a)) / 864e5) + 1;
+    // Een stukje week van één of twee dagen aan het begin of eind van de maand hoort bij de week ernaast.
+    let eersteEind = zondag(m + "-01");
+    const begin = (iso) => {
+      let w = weekVan(iso);
+      if (w === m + "-01" && dagen(w, eersteEind) <= 2) w = m + "-01";
+      return w;
+    };
+    const kaal = [];
+    for (const g of list) kaal.push([begin(g.datum), g]);
+    const sleutels = [...new Set(kaal.map(([w]) => w))];
+    const samen = new Map(sleutels.map((w) => [w, w]));
+    if (sleutels.length > 1 && dagen(sleutels[0], zondag(sleutels[0])) <= 2 && sleutels[0] === m + "-01") samen.set(sleutels[1], sleutels[0]);
+    const lw = sleutels.at(-1);
+    if (sleutels.length > 1 && dagen(lw, laatste) <= 2 && zondag(lw) > laatste) samen.set(lw, samen.get(sleutels.at(-2)));
+    const weken = new Map();
+    for (const [w0, g] of kaal) {
+      const w = samen.get(w0);
+      if (!weken.has(w)) weken.set(w, []);
+      weken.get(w).push(g);
+    }
+    const label = (w) => {
+      const items = weken.get(w), eindDatum = items.at(-1).datum;
+      let eind = zondag(w); if (eind > laatste) eind = laatste;
+      if (zondag(eindDatum) !== zondag(w) || eindDatum > eind) eind = zondag(eindDatum) > laatste ? laatste : zondag(eindDatum);
+      // De eerste week begint bij de eerste voorstelling (op de lopende maand is dat vandaag of later).
+      const start = w === [...weken.keys()][0] ? items[0].datum : w;
+      return eind === start ? fmt.dayMonth(start) : `${fmt.day(start)} – ${fmt.dayMonth(eind)}`;
+    };
+    const nav = `<nav class="week-nav" aria-label="Kies een week">${[...weken].map(([w, items]) => `<a href="#week-${w}"><b>${label(w)}</b><span>${items.length}</span></a>`).join("")}</nav>`;
+    const groepen = [...weken].map(([w, items]) =>
+      `<section class="month-group week-groep" id="week-${w}" data-week="${esc(label(w))}"><h3>${label(w)} <small>${plural(items.length, "voorstelling", "voorstellingen")}</small></h3>${items.map((g) => gigRow(g)).join("")}</section>`).join("");
+    return { nav, groepen };
+  }
+
   function agendaMaand(m) {
     const list = perMaand(m);
     const i = maanden.indexOf(m);
     const vorige = maanden[i - 1], volgende = maanden[i + 1];
+    const weken = weekGroepen(list, m);
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">${maandNaam(m)}</h1><p>${plural(list.length, "voorstelling", "voorstellingen")}</p></div>
       ${maandNav(m)}
       ${uitgelichtBlok("agenda")}
       ${filters(list)}
-      <div id="gigs">${monthGroups(list).replace(/<h3>[^<]*<\/h3>/, "")}</div>
+      ${weken.nav}
+      <div id="gigs" data-per-week>${weken.groepen}</div>
+      <p class="meer-weken" id="meer-weken" hidden><button type="button" class="btn" id="volgende-week"></button> <button type="button" class="btn ghost" id="hele-maand">Toon de hele maand</button></p>
       ${leegBlok}
       <p class="pager">${vorige ? `<a class="btn ghost" href="/agenda/${maandId(vorige)}/">${ICON.prev}${maandNaam(vorige)}</a>` : "<span></span>"}${volgende ? `<a class="btn ghost" href="/agenda/${maandId(volgende)}/">${maandNaam(volgende)}${ICON.next}</a>` : ""}</p>
     </section>`;

@@ -221,6 +221,33 @@
     knop.focus();
   });
 
+  // ---------- Maandpagina per week ----------
+  // Eerst één week, met een knop voor de volgende; zoeken of filteren toont alle weken.
+  const perWeek = document.querySelector("#gigs[data-per-week]");
+  const weekKnop = document.getElementById("volgende-week");
+  const toonWeken = (n) => {
+    if (!perWeek) return;
+    const weken = [...perWeek.querySelectorAll(".week-groep")];
+    weken.forEach((w, i) => w.classList.toggle("later", i >= n));
+    const volgende = weken[n];
+    perWeek.toggleAttribute("data-ingeklapt", Boolean(volgende));
+    document.getElementById("meer-weken").hidden = !volgende;
+    if (volgende) weekKnop.textContent = `Volgende week: ${volgende.dataset.week} (${volgende.querySelectorAll(".gig").length})`;
+    document.querySelectorAll(".week-nav a").forEach((a) => a.setAttribute("aria-current", String(weken.slice(0, n).some((w) => `#${w.id}` === a.getAttribute("href")))));
+  };
+  let weekenZichtbaar = 1;
+  if (perWeek && !location.search) {
+    toonWeken(1);
+    weekKnop.addEventListener("click", () => toonWeken(++weekenZichtbaar));
+    document.getElementById("hele-maand").addEventListener("click", () => toonWeken(Infinity));
+    // Een week kiezen toont de weken tot en met die week.
+    document.querySelectorAll(".week-nav a").forEach((a) => a.addEventListener("click", () => {
+      const weken = [...perWeek.querySelectorAll(".week-groep")];
+      const i = weken.findIndex((w) => `#${w.id}` === a.getAttribute("href"));
+      if (i >= weekenZichtbaar) toonWeken(weekenZichtbaar = i + 1);
+    }));
+  }
+
   // ---------- Filters op een speellijst ----------
   const form = document.getElementById("filters");
   if (!form) return;
@@ -265,6 +292,7 @@
       r.hidden = !ok;
       if (ok) shown++;
     }
+    if (perWeek && Object.values(state).some((v) => v)) toonWeken(Infinity);
     syncGroups();
     resultLine.textContent = telling(shown);
     if (empty) empty.hidden = shown > 0;
