@@ -217,9 +217,19 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-foto { --naad: 50%; display: flex; flex-direction: column; padding: 0; border-radius: 18px; }
 /* Losse kaartjes met wat ruimte ertussen; de eerste begint op de lijn van de koppen. */
 .strip:has(.poster-foto) { --rand: max(16px, calc((100vw - var(--wrap)) / 2 + 16px)); gap: 14px; padding-inline: var(--rand); scroll-padding-inline: var(--rand); }
-.poster-foto::before { top: var(--naad); border-radius: 0 0 18px 18px; }
-.poster-foto::after {
-  content: ""; position: absolute; left: 0; right: 0; top: var(--naad); height: 24px; translate: 0 -50%; z-index: 1; pointer-events: none;
+/* De stippen en de scheurlijn horen bij het kleurvlak: dat groeit mee als de tekst langer is (de foto wordt
+   dan iets lager), en de knipgaten blijven op de naad. */
+.poster-foto::before { display: none; }
+.poster-vlak::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; opacity: .22; border-radius: 0 0 18px 18px;
+  background-image: radial-gradient(currentColor 1.1px, transparent 1.6px); background-size: 7px 7px;
+  -webkit-mask-image: radial-gradient(circle at 80% 30%, #000 0, #000 22%, transparent 62%);
+          mask-image: radial-gradient(circle at 80% 30%, #000 0, #000 22%, transparent 62%);
+  transition: opacity .28s ease;
+}
+.poster-foto.actief .poster-vlak::before { opacity: .38; }
+.poster-vlak::after {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 24px; translate: 0 -50%; z-index: 1; pointer-events: none;
   background:
     radial-gradient(circle at 0 50%, var(--paper) 11px, transparent 11.5px),
     radial-gradient(circle at 100% 50%, var(--paper) 11px, transparent 11.5px),
@@ -228,7 +238,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   -webkit-mask-image: linear-gradient(90deg, #000 11px, transparent 11px, transparent 18px, #000 18px, #000 calc(100% - 18px), transparent calc(100% - 18px), transparent calc(100% - 11px), #000 calc(100% - 11px));
           mask-image: linear-gradient(90deg, #000 11px, transparent 11px, transparent 18px, #000 18px, #000 calc(100% - 18px), transparent calc(100% - 18px), transparent calc(100% - 11px), #000 calc(100% - 11px));
 }
-.poster-beeld { position: relative; flex: 0 0 var(--naad); overflow: hidden; background: rgba(0,0,0,.15); border-radius: 18px 18px 0 0; }
+.poster-beeld { position: relative; flex: 1 1 0; min-height: 38%; overflow: hidden; background: rgba(0,0,0,.15); border-radius: 18px 18px 0 0; }
 .poster-beeld img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; transition: transform .5s cubic-bezier(.2,.8,.2,1); }
 .poster-sterren {
   position: absolute; left: 14px; top: 14px; display: inline-flex; align-items: baseline; gap: 6px;
@@ -246,7 +256,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* Zit het gezicht bovenin, dan komen de sterren onderaan het beeld. */
 .poster-sterren.onder { top: auto; bottom: 18px; }
 .poster-sterren small { font-size: .78rem; font-weight: 600; letter-spacing: 0; }
-.poster-vlak { flex: 1; display: flex; min-height: 0; border-radius: 0 0 18px 18px; transition: box-shadow .28s ease; }
+.poster-vlak { position: relative; isolation: isolate; flex: 0 0 auto; min-height: calc(100% - var(--naad)); display: flex; border-radius: 0 0 18px 18px; transition: box-shadow .28s ease; }
 /* Schaduw bij aanwijzen alleen onder het kleurvlak, zodat er geen rand om de knipgaten komt.
    Daarvoor mag de kaart niet meer bijsnijden (overflow); de foto en de stippen hebben eigen ronde hoeken. */
 .poster-foto { overflow: visible; }
@@ -255,6 +265,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 @media (hover: hover) and (pointer: fine) {
   .poster-foto:hover, .poster-foto:focus-visible { box-shadow: none; }
   .poster-foto:hover .poster-vlak, .poster-foto:focus-visible .poster-vlak { box-shadow: 0 22px 40px -18px rgba(0,0,0,.6); }
+  .poster-foto:hover .poster-vlak::before, .poster-foto:focus-visible .poster-vlak::before { opacity: .38; }
 }
 /* Datum bovenaan, aantal speeldata onderaan; titel, artiest en zaal daartussen, ook bij een titel van twee regels. */
 .poster-info { flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 20px 14px 22px 22px; }
@@ -272,8 +283,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 .poster-foto .ftitel.long { font-size: 1.8rem; }
 .poster-foto .ftitel.xlong { font-size: 1.45rem; }
-.poster-foto .fartiest { display: block; font-weight: 700; font-size: 1.05rem; margin-top: 6px; }
-.poster-foto .where { display: block; font-size: .9rem; margin: 2px 0 12px; }
+.poster-foto .fartiest { display: block; font-weight: 700; font-size: 1.05rem; line-height: 1.2; margin-top: 6px; text-wrap: balance; }
+.poster-foto .where { display: block; font-size: .9rem; line-height: 1.35; margin: 4px 0 12px; }
 .poster-foto .tag { align-self: flex-start; margin-top: auto; }
 @media (hover: hover) and (pointer: fine) {
   .poster-foto:hover .poster-beeld img, .poster-foto:focus-visible .poster-beeld img { transform: scale(1.04); }
