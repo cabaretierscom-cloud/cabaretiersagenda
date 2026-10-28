@@ -27,4 +27,10 @@ ErrorDocument 404 /404.html
   ExpiresByType text/javascript "access plus 1 day"
   ExpiresByType application/javascript "access plus 1 day"
   ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 1 day"
+</IfModule>
+
+# Het gegevensbestand van /agenda/ (alle voorstellingen) ingepakt versturen.
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE application/json text/html text/css text/javascript application/javascript image/svg+xml
 </IfModule>

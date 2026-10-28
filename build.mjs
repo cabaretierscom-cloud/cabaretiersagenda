@@ -49,6 +49,7 @@ const write = (path, html) => {
 
 write("/", t.home());
 write("/agenda/", t.agendaIndex());
+writeFileSync(join(out, "agenda", "alles.json"), JSON.stringify(t.agendaData()));
 write("/vanavond/", t.dagPagina("vanavond"));
 write("/dit-weekend/", t.dagPagina("dit-weekend"));
 // Steden met genoeg aanbod (zie stadPaginas); verdwijnt een pagina, dan stuurt .htaccess door naar de plaats.

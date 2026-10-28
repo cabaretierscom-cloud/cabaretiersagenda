@@ -644,20 +644,45 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return layout({ path: "/", section: null, body, schema: { extra: eventsLd(dezeWeek) } });
   }
 
+  // Week van een datum: maandag als begin (ISO-datum).
+  const maandagVan = (iso) => { const d = new Date(iso + "T12:00:00Z"); return new Date(d.getTime() - ((d.getUTCDay() + 6) % 7) * 864e5).toISOString().slice(0, 10); };
+  const weekLabel = (van, tot) => van === tot ? fmt.dayMonth(van) : van.slice(0, 7) === tot.slice(0, 7) ? `${fmt.day(van)} – ${fmt.dayMonth(tot)}` : `${fmt.dayMonth(van)} – ${fmt.dayMonth(tot)}`;
+
+  // Alle komende voorstellingen in een compact bestand (/agenda/alles.json) voor /agenda/: agenda.js laadt
+  // daaruit week voor week bij en zoekt erin. Artiesten, zalen en voorstellingen staan er één keer in;
+  // de rijen verwijzen ernaar met een volgnummer. Kleuren, iconen en namen zijn al klaar voor de pagina.
+  function agendaData() {
+    const ai = new Map(), zi = new Map(), vi = new Map(), a = [], z = [], v = [];
+    const nr = (map, lijst, id, maak) => { if (!map.has(id)) { map.set(id, lijst.length); lijst.push(maak()); } return map.get(id); };
+    const rijen = up.map((g) => {
+      const vs = V.get(g.voorstelling), t = T.get(g.theater);
+      const vn = nr(vi, v, g.voorstelling, () => [
+        vs.artiesten.map((id) => nr(ai, a, id, () => [id, A.get(id).naam])),
+        vs.titel, echteTitel(g.voorstelling) || "", voorstellingPad.get(g.voorstelling) || "", vs.genre, ink(leadInk(g.voorstelling)),
+      ]);
+      const zn = nr(zi, z, g.theater, () => [t.id, t.naam, t.plaats, plaatsId(t.plaats), LANDEN[t.land]]);
+      return [g.datum, g.tijd || "", vn, zn, g.status, g.soort || "", g.bron, g.opmerking || ""];
+    });
+    return { iconen: { extern: ICON.extern, doubt: ICON.doubt, sold: ICON.sold }, statussen: STATUSSEN, a, z, v, r: rijen };
+  }
+
   function agendaIndex() {
-    const komend = up.slice(0, 100);
+    // Eerst de lopende week (vandaag t/m zondag; zijn dat maar één of twee dagen, dan tot en met de zondag erna).
+    let tot = new Date(new Date(maandagVan(db.today) + "T12:00:00Z").getTime() + 6 * 864e5).toISOString().slice(0, 10);
+    if ((new Date(tot) - new Date(db.today)) / 864e5 < 2) tot = new Date(new Date(tot + "T12:00:00Z").getTime() + 7 * 864e5).toISOString().slice(0, 10);
+    const eerste = up.filter((g) => g.datum <= tot);
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Agenda</h1><p>${plural(tellers.speeldata, "voorstelling", "voorstellingen")} in ${plural(tellers.zalen, "zaal", "zalen")}</p></div>
       ${maandNav(null)}
       <nav class="dag-nav dag-snel" aria-label="Snel kiezen"><a href="/vanavond/">Vanavond</a><a href="/dit-weekend/">Dit weekend</a></nav>
       ${uitgelichtBlok("agenda")}
-      <h2 class="sub-head">Eerstvolgende voorstellingen</h2>
-      ${filters(komend)}
-      <div id="gigs">${monthGroups(komend)}</div>
+      ${filters(up)}
+      <div id="gigs" data-alles="/agenda/alles.json?v=${tellers.speeldata}-${db.today}" data-tot="${tot}" data-totaal="${up.length}"><section class="month-group week-groep"><h3>${weekLabel(eerste[0]?.datum || db.today, tot)} <small>${plural(eerste.length, "voorstelling", "voorstellingen")}</small></h3>${eerste.map((g) => gigRow(g)).join("")}</section></div>
       ${leegBlok}
-      <p class="more"><a class="btn" href="/agenda/${maandId(maanden[0])}/">Verder in ${maandNaam(maanden[0])}</a></p>
+      <p class="meer-weken" id="laad-meer" hidden><button type="button" class="btn" id="laad-week">Laad de volgende week</button></p>
+      <p class="more" id="naar-maand"><a class="btn" href="/agenda/${maandId(maanden[0])}/">Verder in ${maandNaam(maanden[0])}</a></p>
     </section>`;
-    return layout({ title: "Agenda", description: "Alle aankomende cabaret- en comedyvoorstellingen in Nederland en België, per maand.", path: "/agenda/", section: "agenda", body, schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"]], extra: eventsLd(komend) } });
+    return layout({ title: "Agenda", description: "Alle aankomende cabaret- en comedyvoorstellingen in Nederland en België, week voor week, met zoeken op artiest, voorstelling, plaats of theater.", path: "/agenda/", section: "agenda", body, schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"]], extra: eventsLd(eerste) } });
   }
 
   // Een maand per week (maandag t/m zondag, binnen de maand), met een weekkeuze bovenaan. Zonder
@@ -1768,7 +1793,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   return {
     controlePagina,
-    home, agendaIndex, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
+    home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
   };
 }
