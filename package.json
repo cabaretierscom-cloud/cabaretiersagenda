@@ -15,6 +15,7 @@
     "fotos": "node --no-warnings ophalen/fotos.mjs",
     "theaterfotos": "node --no-warnings ophalen/theaterfotos.mjs",
     "logo": "node scripts/logo-afbeeldingen.mjs",
+    "social": "node scripts/social-videos.mjs",
     "geslacht": "node --no-warnings ophalen/geslacht.mjs"
   }
 }
