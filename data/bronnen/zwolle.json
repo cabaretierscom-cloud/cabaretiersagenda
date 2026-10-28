@@ -1,7 +1,7 @@
 {
   "bron": "zwolle",
   "naam": "Zwolse Theaters",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-28",
   "theaters": [
     {
       "id": "theater-de-spiegel",
@@ -59,19 +59,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/richard-groenendijk"
-    },
-    {
-      "theater": "theater-de-spiegel",
-      "artiesten": [
-        "Najib & Roué"
-      ],
-      "titel": "Alles is Comedy",
-      "genre": "cabaret",
-      "datum": "2026-10-27",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/najib-roue"
     },
     {
       "theater": "theater-de-spiegel",
@@ -316,7 +303,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-08",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/dolf-jansen"
     },

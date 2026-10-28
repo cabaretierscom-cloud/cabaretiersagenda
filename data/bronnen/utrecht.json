@@ -1,7 +1,7 @@
 {
   "bron": "utrecht",
   "naam": "Stadsschouwburg Utrecht",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-28",
   "theaters": [
     {
       "id": "stadsschouwburg-utrecht",
@@ -24,7 +24,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/gelukkig-heb-je-mij-nog-richard-groenendijk",
       "datum": "2027-02-24",
       "tijd": "20:00",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -167,7 +167,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/mijn-lieve-achterdocht-ronald-goedemondt",
       "datum": "2027-02-06",
       "tijd": "20:00",
-      "status": "geannuleerd"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1025,7 +1025,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/femme-vitaal-tineke-schouten",
       "datum": "2027-05-07",
       "tijd": "20:00",
-      "status": "uitverkocht"
+      "status": "geannuleerd"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1220,7 +1220,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lachen-met-volle-mond-2-berit-companjen-en-het-comedy-talent-van-het-momen",
       "datum": "2026-11-23",
       "tijd": "19:00",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1376,7 +1376,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-orde-van-de-dag-14-het-nut",
       "datum": "2026-11-09",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1973,6 +1973,18 @@
         "sterren": 4,
         "citaat": "Zijn grote talent voor het neerzetten van typetjes gebruikt hij geregeld om het publiek een spiegel voor te houden.",
         "over": "‘Harira’"
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-lieve-vrede-piet-van-eeghen": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 3,
+        "citaat": "Met Piet van Eeghen is er eindelijk weer een ambachtelijk liedjesmaker actief binnen het cabaret, bewijst hij in ‘De lieve vrede’...verrassende insteek...met veel zelfspot...grappig."
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 3,
+        "citaat": "Met De Lieve Vrede, zijn tweede cabaretvoorstelling, bouwt Piet van Eeghen voort op het succes van zijn liedkunst...in die afwisseling tussen humor en emotie laat Van Eeghen zien wat hij muzikaal in huis heeft."
       }
     ],
     "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/zoveel-meer-beth-flo": [

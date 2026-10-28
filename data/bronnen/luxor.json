@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-28",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -1278,7 +1278,7 @@
       "genre": "cabaret",
       "datum": "2026-11-27",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
     },
@@ -1591,19 +1591,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/tolga-cevik-60961/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Jochen Otten"
-      ],
-      "titel": "De Kwaadste Niet",
-      "genre": "cabaret",
-      "datum": "2026-10-27",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/jochen-otten-57587/"
     },
     {
       "theater": "oude-luxor",

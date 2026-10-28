@@ -1,7 +1,7 @@
 {
   "bron": "vrijthof",
   "naam": "Theater aan het Vrijthof",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-28",
   "theaters": [
     {
       "id": "theater-aan-het-vrijthof",
@@ -21,6 +21,110 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/winas-wereld-wina-ricardo"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Pepijn Schoneveld"
+      ],
+      "titel": "Welkom dat je luistert",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Lovella Telesford"
+      ],
+      "titel": "Wat een gezeik!",
+      "genre": "cabaret",
+      "datum": "2026-11-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/wat-een-gezeik-lovella-telesford"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Micky Overman"
+      ],
+      "titel": "Theatertour",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/theatertour-micky-overman"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "cabaret",
+      "datum": "2027-04-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/babel-kommil-foo"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Arjan Kleton"
+      ],
+      "titel": "Ongewenst",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/ongewenst-arjan-kleton"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Stefan de Kogel"
+      ],
+      "titel": "Sloopkogel",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/sloopkogel-stefan-de-kogel"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Hokjesdenker"
+      ],
+      "titel": "We zien het wel even",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/we-zien-het-wel-even-hokjesdenker"
+    },
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
@@ -59,19 +163,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/revue-revanche-valentina-toth"
-    },
-    {
-      "theater": "ainsi-maastricht",
-      "artiesten": [
-        "Hokjesdenker"
-      ],
-      "titel": "We zien het wel even",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/we-zien-het-wel-even-hokjesdenker"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -154,19 +245,6 @@
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
-        "Arjan Kleton"
-      ],
-      "titel": "Ongewenst",
-      "genre": "cabaret",
-      "datum": "2027-05-28",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/ongewenst-arjan-kleton"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
         "Saïd El Hassnaoui"
       ],
       "titel": "Saïd lacht met liefde",
@@ -202,19 +280,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/de-grote-jubileumshow-jandino"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Wina Ricardo"
-      ],
-      "titel": "Wina's Wereld",
-      "genre": "cabaret",
-      "datum": "2027-04-03",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/winas-wereld-wina-ricardo"
     },
     {
       "theater": "ainsi-maastricht",
@@ -284,45 +349,6 @@
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
-        "Lovella Telesford"
-      ],
-      "titel": "Wat een gezeik!",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/wat-een-gezeik-lovella-telesford"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Micky Overman"
-      ],
-      "titel": "Theatertour",
-      "genre": "cabaret",
-      "datum": "2027-02-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/theatertour-micky-overman"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Stefan de Kogel"
-      ],
-      "titel": "Sloopkogel",
-      "genre": "cabaret",
-      "datum": "2027-04-29",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/sloopkogel-stefan-de-kogel"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
         "Bob Koomen"
       ],
       "titel": "Peer",
@@ -388,6 +414,19 @@
     {
       "theater": "ainsi-maastricht",
       "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/overprikkeld-martijn-koning"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
         "Lebbis"
       ],
       "titel": "Satan is moe",
@@ -410,19 +449,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/satan-is-moe-lebbis"
-    },
-    {
-      "theater": "ainsi-maastricht",
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2027-05-01",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/overprikkeld-martijn-koning"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -479,19 +505,6 @@
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
-        "Kommil Foo"
-      ],
-      "titel": "Babel",
-      "genre": "cabaret",
-      "datum": "2027-04-30",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/babel-kommil-foo"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
         "Guido Weijers"
       ],
       "titel": "Oudejaarsconference 2026",
@@ -501,19 +514,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/oudejaarsconference-2026-guido-weijers"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Pepijn Schoneveld"
-      ],
-      "titel": "Welkom dat je luistert",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld"
     },
     {
       "theater": "theater-aan-het-vrijthof",

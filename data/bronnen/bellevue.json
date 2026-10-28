@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-28",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Gavin Reijnders"
-      ],
-      "titel": "Jazzebelle",
-      "genre": "cabaret",
-      "datum": "2026-10-27",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/jazzebelle-yw2z"
-    },
     {
       "theater": "theater-bellevue",
       "artiesten": [
@@ -399,7 +386,7 @@
       "genre": "cabaret",
       "datum": "2026-11-21",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/in-de-hemel-ken-ik-jullie-niet-lkjn"
     },
@@ -1418,7 +1405,7 @@
       "genre": "cabaret",
       "datum": "2027-03-23",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/korrelatie-tjtr"
     },
