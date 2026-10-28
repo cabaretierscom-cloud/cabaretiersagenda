@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 import { SITE } from "../../src/templates.mjs";
 
 const dir = dirname(fileURLToPath(import.meta.url));
-const INK = "#121212", ORANJE = "#FF6A13", ROZE = "#FF4FA3", GEEL = "#FFD23F", GROEN = "#00764E", LILA = "#C9B6FF";
+const INK = "#121212", ORANJE = "#FF6A13", ROZE = "#FF4FA3", GEEL = "#FFD23F", GROEN = "#B8E04A", LILA = "#C9B6FF";
 const KOP = "'Arial Black', 'Helvetica Neue', Arial, sans-serif";
 const TEKST = "Arial, 'Helvetica Neue', Helvetica, sans-serif";
 

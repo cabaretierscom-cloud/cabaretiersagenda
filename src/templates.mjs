@@ -60,7 +60,7 @@ function beeldmerk({ vlak, id }) {
     p.push([24 + 100 * Math.cos(b * Math.PI / 180), 24 + 100 * Math.sin(b * Math.PI / 180)]);
     return p.map((q) => q.map((v) => v.toFixed(1)).join(",")).join(" ");
   };
-  const vlakken = [["#FF6A13", -140, 10], ["#FF4FA3", 10, 58], ["#00764E", 58, 140], ["#FFD23F", 140, 220]];
+  const vlakken = [["#FF6A13", -140, 10], ["#FF4FA3", 10, 58], ["#B8E04A", 58, 140], ["#FFD23F", 140, 220]];
   return `<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">${vlak ? `<rect width="48" height="48" rx="11.5" fill="${vlak}"/>` : ""}<defs><clipPath id="${id}"><path transform="${t}" d="${C_PAD}"/></clipPath></defs><g clip-path="url(#${id})"><g transform="translate(24 24) scale(${(w / h).toFixed(4)} 1) translate(-24 -24)">${vlakken.map(([k, a, b]) => `<polygon points="${punt(a, b)}" fill="${k}"/>`).join("")}</g></g></svg>`;
 }
 export const LOGO_SVG = beeldmerk({ vlak: "#121212", id: "beeldmerk-c" });

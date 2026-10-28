@@ -135,15 +135,24 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .wordmark .tld { color: var(--riso-lilac); } }
 :root[data-theme="dark"] .wordmark .tld { color: var(--riso-lilac); }
 /* Woordmerk (logo-ontwerp 11): de letters als SVG uit src/woordmerk.mjs. De binnenruimtes van a, b en e
-   krijgen riso-kleuren; de punt op de i is de punt uit het beeldmerk. */
+   krijgen riso-kleuren: op licht de kleuren waar zwarte tekst op past, op donker (witte letters) de kleuren
+   waar witte tekst op past. De punt op de i is de punt uit het beeldmerk. */
 .wordmark { display: flex; align-items: baseline; }
 .wordmark .woord { width: 4.546em; height: 0.845em; margin-bottom: -0.015em; flex-shrink: 0; }
 .woord .bk-1 { fill: var(--riso-orange); }
 .woord .bk-2 { fill: var(--riso-yellow); }
-.woord .bk-3 { fill: var(--riso-green); }
+.woord .bk-3 { fill: var(--riso-lime); }
 .woord .bk-4 { fill: var(--riso-pink); }
-.woord .bk-5 { fill: var(--riso-lilac); }
+.woord .bk-5 { fill: var(--riso-aqua); }
 .woord .kern { fill: var(--riso-orange); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .woord .bk-1, :root:not([data-theme="light"]) .woord .bk-4 { fill: var(--riso-purple); }
+  :root:not([data-theme="light"]) .woord .bk-2, :root:not([data-theme="light"]) .woord .bk-5 { fill: var(--riso-green); }
+  :root:not([data-theme="light"]) .woord .bk-3, :root:not([data-theme="light"]) .woord .kern { fill: var(--riso-blue); }
+}
+:root[data-theme="dark"] .woord .bk-1, :root[data-theme="dark"] .woord .bk-4 { fill: var(--riso-purple); }
+:root[data-theme="dark"] .woord .bk-2, :root[data-theme="dark"] .woord .bk-5 { fill: var(--riso-green); }
+:root[data-theme="dark"] .woord .bk-3, :root[data-theme="dark"] .woord .kern { fill: var(--riso-blue); }
 .nav { display: flex; gap: 4px; margin-left: auto; }
 .nav a { text-decoration: none; font-weight: 500; padding: 10px 12px; border-radius: 999px; white-space: nowrap; }
 .nav a:hover { background: var(--paper-2); }
@@ -526,7 +535,9 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .site-footer .wordmark, .site-footer .ondertitel { color: #fff; }
 /* Donkerblauw is op zwart slecht leesbaar; in de footer is .com lila. */
 .site-footer .wordmark .tld { color: var(--riso-lilac); }
-.site-footer .woord .kern { fill: var(--riso-orange); }
+.site-footer .woord .bk-1, .site-footer .woord .bk-4 { fill: var(--riso-purple); }
+.site-footer .woord .bk-2, .site-footer .woord .bk-5 { fill: var(--riso-green); }
+.site-footer .woord .bk-3, .site-footer .woord .kern { fill: var(--riso-blue); }
 .site-footer a:focus-visible { outline-color: #fff; }
 .site-footer .footer-contact { display: flex; flex-direction: column; gap: 14px; }
 .site-footer .social { list-style: none; margin: 0; padding: 0; display: flex; gap: 8px; }
