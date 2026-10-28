@@ -285,7 +285,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     ...(a.foto.breedte ? { width: a.foto.breedte, height: a.foto.hoogte } : {}),
     ...(a.foto.datum ? { dateCreated: a.foto.datum } : {}),
     creditText: a.foto.maker, copyrightNotice: `${a.foto.maker}, ${a.foto.licentie}`,
-    ...(a.foto.licentieUrl ? { license: a.foto.licentieUrl } : {}), acquireLicensePage: a.foto.bron,
+    ...(a.foto.licentieUrl ? { license: a.foto.licentieUrl } : {}), ...(a.foto.promo ? {} : { acquireLicensePage: a.foto.bron }),
     about: { "@id": URL(fotoPad(a) + (a.titel ? "#voorstelling" : a.plaats ? "#zaal" : "#artiest")) },
   });
   // Eerste artiest met een foto bij een voorstelling.
@@ -1316,7 +1316,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   // Rechtenvrije foto (Wikimedia Commons) met verplichte naamsvermelding en licentie.
   const fotoHtml = (a, klasse = "artiest-foto") => `<figure class="${klasse}">
           <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${klasse === "artiest-foto" ? uitsnede(a.foto, 4 / 5) : ""}${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
-          <figcaption>Foto: <a href="${esc(a.foto.bron)}" rel="noopener">${esc(a.foto.maker)}</a>${a.foto.licentieUrl ? `, <a href="${esc(a.foto.licentieUrl)}" rel="noopener license">${esc(a.foto.licentie)}</a>` : `, ${esc(a.foto.licentie)}`}</figcaption>
+          <figcaption>Foto: ${a.foto.promo ? esc(a.foto.maker) : `<a href="${esc(a.foto.bron)}" rel="noopener">${esc(a.foto.maker)}</a>`}${a.foto.licentieUrl ? `, <a href="${esc(a.foto.licentieUrl)}" rel="noopener license">${esc(a.foto.licentie)}</a>` : `, ${esc(a.foto.licentie)}`}</figcaption>
         </figure>`;
 
   // Video's van YouTube (promotiemateriaal, data/promo.json). Zonder klik niets van YouTube:
@@ -1395,7 +1395,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   const promotekstHtml = (v) => v.promotekst ? `<section class="promotekst" aria-labelledby="over-titel">
         <h2 id="over-titel" class="sub-head">Over ${esc(v.titel)}</h2>
         ${v.promotekst.alineas.map((t) => `<p>${esc(t)}</p>`).join("")}
-        <p class="promotekst-bron">Tekst: ${v.promotekst.bron ? `<a href="${esc(v.promotekst.bron)}" rel="noopener">${esc(v.promotekst.van)}</a>` : esc(v.promotekst.van)}</p>
+        <p class="promotekst-bron">Tekst: ${esc(v.promotekst.van)}</p>
       </section>` : "";
 
   function recensiesHtml(v, list) {
@@ -1411,7 +1411,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
           <figure>
             ${sterren(r.sterren)}
             <blockquote><p>${esc(r.citaat)}</p></blockquote>
-            <figcaption><cite>${esc(r.medium)}</cite>${r.sterren ? `, ${r.sterren} ${r.sterren === 1 ? "ster" : "sterren"}` : ""} <a href="${esc(r.bron)}" rel="noopener" target="_blank">via ${esc(zaal(r.bron))}</a></figcaption>
+            <figcaption><cite>${esc(r.medium)}</cite>${r.sterren ? `, ${r.sterren} ${r.sterren === 1 ? "ster" : "sterren"}` : ""}${r.via ? `, via ${esc(r.via)}` : ` <a href="${esc(r.bron)}" rel="noopener" target="_blank">via ${esc(zaal(r.bron))}</a>`}</figcaption>
           </figure>
         </li>`).join("")}</ul>
       </section>`;
