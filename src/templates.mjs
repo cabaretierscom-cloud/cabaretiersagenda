@@ -648,7 +648,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   const maandagVan = (iso) => { const d = new Date(iso + "T12:00:00Z"); return new Date(d.getTime() - ((d.getUTCDay() + 6) % 7) * 864e5).toISOString().slice(0, 10); };
   const weekLabel = (van, tot) => van === tot ? fmt.dayMonth(van) : van.slice(0, 7) === tot.slice(0, 7) ? `${fmt.day(van)} – ${fmt.dayMonth(tot)}` : `${fmt.dayMonth(van)} – ${fmt.dayMonth(tot)}`;
 
-  // Alle komende voorstellingen in een compact bestand (/agenda/alles.json) voor /agenda/: agenda.js laadt
+  // Alle komende voorstellingen in een compact bestand (/agenda/alles.js, inhoud JSON) voor /agenda/: agenda.js laadt
   // daaruit week voor week bij en zoekt erin. Artiesten, zalen en voorstellingen staan er één keer in;
   // de rijen verwijzen ernaar met een volgnummer. Kleuren, iconen en namen zijn al klaar voor de pagina.
   function agendaData() {
@@ -677,7 +677,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <nav class="dag-nav dag-snel" aria-label="Snel kiezen"><a href="/vanavond/">Vanavond</a><a href="/dit-weekend/">Dit weekend</a></nav>
       ${uitgelichtBlok("agenda")}
       ${filters(up)}
-      <div id="gigs" data-alles="/agenda/alles.json?v=${tellers.speeldata}-${db.today}" data-tot="${tot}" data-totaal="${up.length}"><section class="month-group week-groep"><h3>${weekLabel(eerste[0]?.datum || db.today, tot)} <small>${plural(eerste.length, "voorstelling", "voorstellingen")}</small></h3>${eerste.map((g) => gigRow(g)).join("")}</section></div>
+      <div id="gigs" data-alles="/agenda/alles.js?v=${tellers.speeldata}-${db.today}" data-tot="${tot}" data-totaal="${up.length}"><section class="month-group week-groep"><h3>${weekLabel(eerste[0]?.datum || db.today, tot)} <small>${plural(eerste.length, "voorstelling", "voorstellingen")}</small></h3>${eerste.map((g) => gigRow(g)).join("")}</section></div>
       ${leegBlok}
       <p class="meer-weken" id="laad-meer" hidden><button type="button" class="btn" id="laad-week">Laad de volgende week</button></p>
       <p class="more" id="naar-maand"><a class="btn" href="/agenda/${maandId(maanden[0])}/">Verder in ${maandNaam(maanden[0])}</a></p>

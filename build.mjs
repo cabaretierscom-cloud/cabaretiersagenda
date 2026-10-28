@@ -49,7 +49,8 @@ const write = (path, html) => {
 
 write("/", t.home());
 write("/agenda/", t.agendaIndex());
-writeFileSync(join(out, "agenda", "alles.json"), JSON.stringify(t.agendaData()));
+// .js in plaats van .json: de server verstuurt javascript ingepakt (brotli), JSON niet. De inhoud is JSON.
+writeFileSync(join(out, "agenda", "alles.js"), JSON.stringify(t.agendaData()));
 write("/vanavond/", t.dagPagina("vanavond"));
 write("/dit-weekend/", t.dagPagina("dit-weekend"));
 // Steden met genoeg aanbod (zie stadPaginas); verdwijnt een pagina, dan stuurt .htaccess door naar de plaats.

@@ -260,7 +260,7 @@
   }
 
   // ---------- /agenda/: alle voorstellingen, week voor week ----------
-  // De pagina bevat de eerste week. De rest staat in /agenda/alles.json; "Laad de volgende week" voegt
+  // De pagina bevat de eerste week. De rest staat in /agenda/alles.js (JSON); "Laad de volgende week" voegt
   // telkens een week toe, en zoeken of filteren gebeurt in alle voorstellingen. De rijen hebben dezelfde
   // opmaak als gigRow() in src/templates.mjs.
   const alles = document.querySelector("#gigs[data-alles]");
