@@ -144,7 +144,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .woord .bk-3 { fill: var(--riso-lime); }
 .woord .bk-4 { fill: var(--riso-pink); }
 .woord .bk-5 { fill: var(--riso-aqua); }
-.woord .kern { fill: var(--riso-orange); }
+.woord .kern { fill: var(--riso-red); }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .woord .bk-1, :root:not([data-theme="light"]) .woord .bk-4 { fill: var(--riso-purple); }
   :root:not([data-theme="light"]) .woord .bk-2, :root:not([data-theme="light"]) .woord .bk-5 { fill: var(--riso-green); }

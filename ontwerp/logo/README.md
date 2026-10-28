@@ -6,7 +6,7 @@ Gekozen ontwerp (oktober 2026, ontwerp 15 op het logobord): de kleine c uit het 
 
 - **Beeldmerk** (`beeldmerk.svg`): de kleine c van Big Shoulders Display Black op een zwart vlak met ronde hoeken. Oranje boven, roze op de onderste uithaal, limoen onder, geel over de linkerkant; de grenzen lopen schuin vanuit het midden van de c. Gebruik voor kop, app-icoon, tabbladicoontje en sociale media.
 - **Beeldmerk zonder vlak** (`beeldmerk-omgekeerd.svg`): dezelfde c zonder zwart vlak, voor op een donkere achtergrond zoals de footer.
-- **Woordmerk**: `cabaretiers` in Big Shoulders Display Black (900), kleine letters. De punt op de i is een stip in de tekstkleur met een oranje kern, 0,14 em groot, op dezelfde hoogte als de punt van een gewone i in dit lettertype en met witruimte boven de stok. De gesloten binnenruimtes zijn ingekleurd met kleuren die goed contrasteren met de letters. Op licht (zwarte letters), van links naar rechts: a oranje, b geel, a limoen, e roze, e aqua, met een oranje kern in de punt. Op donker (witte letters): a paars, b groen, a blauw, e paars, e groen, met een blauwe kern in de punt. Daarachter `.com` in donkerblauw, Big Shoulders Display Bold (700), ongeveer een derde van de hoogte.
+- **Woordmerk**: `cabaretiers` in Big Shoulders Display Black (900), kleine letters. De punt op de i is een stip in de tekstkleur met een gekleurde kern (rood op licht, blauw op donker), 0,14 em groot, op dezelfde hoogte als de punt van een gewone i in dit lettertype en met witruimte boven de stok. De gesloten binnenruimtes zijn ingekleurd met kleuren die goed contrasteren met de letters. Op licht (zwarte letters), van links naar rechts: a oranje, b geel, a limoen, e roze, e aqua, met een rode kern in de punt. Op donker (witte letters): a paars, b groen, a blauw, e paars, e groen, met een blauwe kern in de punt. Daarachter `.com` in donkerblauw, Big Shoulders Display Bold (700), ongeveer een derde van de hoogte.
 - **Ondertitel**: `DE THEATERAGENDA` onder het woordmerk, in Instrument Sans SemiBold (600), hoofdletters met ruime letterafstand (ongeveer 0,24 em), in de tekstkleur.
 - Het woordmerk staat rechts van het beeldmerk, verticaal gecentreerd.
 
@@ -14,7 +14,8 @@ Gekozen ontwerp (oktober 2026, ontwerp 15 op het logobord): de kleine c uit het 
 
 | Naam | Kleur | Gebruik |
 |---|---|---|
-| Oranje (`--riso-orange`) | `#FF6A13` | c boven, binnenruimte eerste a en kern van de punt (licht) |
+| Oranje (`--riso-orange`) | `#FF6A13` | c boven, binnenruimte eerste a (licht) |
+| Rood (`--riso-red`) | `#F23D2E` | kern van de punt op de i (licht) |
 | Geel (`--riso-yellow`) | `#FFD23F` | c links, binnenruimte b (licht) |
 | Limoen (`--riso-lime`) | `#B8E04A` | c onder, binnenruimte tweede a (licht) |
 | Aqua (`--riso-aqua`) | `#5EC8E5` | binnenruimte tweede e (licht) |
