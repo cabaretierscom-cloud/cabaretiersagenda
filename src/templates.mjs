@@ -988,7 +988,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </div>
       ${strip("strip-nu", "Voorstellingen die nu op tournee zijn", nu)}
     </section>` : ""}
-    <section class="block wrap" aria-labelledby="az-titel">
+    <section class="block wrap az-blok" aria-labelledby="az-titel">
       <h2 class="sub-head" id="az-titel">Van A tot Z</h2>
       ${azLijst(artiestenMetData)}
       <p class="zie-ook">Bekijk ook: <a href="/alle-cabaretiers/">alle cabaretiers</a>, <a href="/alle-cabaretiers/vrouwen/">vrouwelijke cabaretiers</a> en <a href="/alle-cabaretiers/mannen/">mannelijke cabaretiers</a>.</p>
