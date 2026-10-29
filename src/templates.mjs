@@ -534,7 +534,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // Video's voor sociale media (scripts/social-videos.mjs): alle voorstellingen met een promobeeld,
   // per impresariaat (van in data/promo.json), in groepjes van hooguit perVideo affiches. De groepjes
   // zijn even groot (12 wordt 4+4+4, niet 5+5+2). Dezelfde foto van dezelfde artiest (één show onder
-  // twee titels) komt er één keer in. Op de affiche staan ook persquotes, als die er zijn.
+  // twee titels) komt er één keer in. Op de affiche staat ook een persquote, als die er is.
   function socialVideos(perVideo = 5) {
     const perBureau = new Map(), gezien = new Set();
     for (const x of metPromobeeld()) {
@@ -566,23 +566,13 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return videos;
   }
 
-  // Persquotes voor op de affiche: hooguit twee van verschillende kranten, kort genoeg om te lezen,
-  // de meeste sterren eerst.
-  const besteCitaten = (v) => {
-    const uit = [];
-    for (const r of [...(v.recensies || [])].filter((r) => r.citaat && r.citaat.length <= 160)
-      .sort((x, y) => (y.sterren || 0) - (x.sterren || 0) || x.citaat.length - y.citaat.length)) {
-      if (uit.some((u) => u.medium === r.medium)) continue;
-      if (uit.length && uit[0].citaat.length + r.citaat.length > 200) continue;
-      uit.push(r);
-      if (uit.length === 2) break;
-    }
-    return uit;
-  };
+  // Persquote voor op de affiche (alleen in de video's): kort genoeg om te lezen, de meeste sterren eerst.
+  const besteCitaat = (v) => [...(v.recensies || [])].filter((r) => r.citaat && r.citaat.length <= 160)
+    .sort((x, y) => (y.sterren || 0) - (x.sterren || 0) || x.citaat.length - y.citaat.length)[0];
 
   function affiche({ v, list }, kleur, i, { citaat = false } = {}) {
     const beste = [...(v.recensies || [])].filter((r) => r.sterren).sort((x, y) => y.sterren - x.sterren)[0];
-    const quotes = citaat ? besteCitaten(v) : [];
+    const quote = citaat && besteCitaat(v);
     const aantal = plural(list.length, "speeldatum", "speeldata");
     const titel = echteTitel(v.id) || v.titel;
     return `<a class="poster poster-foto" href="${voorstellingPad.get(v.id)}" style="${ink(kleur)}">
@@ -594,8 +584,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     <span class="poster-vlak" aria-hidden="true">
       <span class="poster-info">
       <strong class="ftitel${titleClass(titel)}">${esc(titel)}</strong>
-      <span class="fartiest">${esc(artistNames(v.id))}</span>${quotes.map((q) => `
-      <span class="poster-citaat">“${esc(q.citaat)}”<small>${q.sterren && q !== beste ? `${"★".repeat(q.sterren)} ` : ""}${esc(q.medium)}</small></span>`).join("")}
+      <span class="fartiest">${esc(artistNames(v.id))}</span>${quote ? `
+      <span class="poster-citaat">“${esc(quote.citaat)}”<small>${quote.sterren && quote !== beste ? `${"★".repeat(quote.sterren)} ` : ""}${esc(quote.medium)}</small></span>` : ""}
       <span class="tag">${aantal}</span>
       </span>
       <span class="poster-stub"></span>
