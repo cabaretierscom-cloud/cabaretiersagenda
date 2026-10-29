@@ -609,11 +609,19 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 ${nu ? `<section class="wall" aria-labelledby="nu-title">
   <div class="wrap wall-head">
     <h1 id="nu-title">Nu in het theater</h1>
-    <p>Voorstellingen die nu op tournee zijn, de eerstvolgende voorop. <a href="/agenda/">De volledige agenda</a></p>
+    <p><span class="uitleg">Voorstellingen die nu op tournee zijn, de eerstvolgende voorop. </span><a href="/agenda/">De volledige agenda</a></p>
   </div>
   ${strip("strip-nu", "Voorstellingen die nu in het theater staan", nu)}
 </section>` : `<h1 class="visually-hidden">Cabaretiers.com, de theateragenda</h1>`}
 
+${zalen ? `
+<section class="wall wall-zalen" aria-labelledby="zalen-title">
+  <div class="wrap wall-head">
+    <h2 id="zalen-title">Theaters</h2>
+    <p><span class="uitleg">De zalen met de meeste cabaret en comedy op de agenda. </span><a href="/theaters/">Alle theaters</a></p>
+  </div>
+  ${strip("strip-zalen", "Theaters met de meeste voorstellingen", zalen)}
+</section>` : ""}
 <section class="wrap stats" aria-label="De agenda in cijfers">
   <dl>
     <div><dt>voorstellingen</dt><dd>${tellers.speeldata.toLocaleString("nl-NL")}</dd></div>
@@ -621,14 +629,6 @@ ${nu ? `<section class="wall" aria-labelledby="nu-title">
     <div><dt>plaatsen</dt><dd>${tellers.plaatsen}</dd></div>
   </dl>
 </section>
-${zalen ? `
-<section class="wall wall-zalen" aria-labelledby="zalen-title">
-  <div class="wrap wall-head">
-    <h2 id="zalen-title">Theaters</h2>
-    <p>De zalen met de meeste cabaret en comedy op de agenda. <a href="/theaters/">Alle theaters</a></p>
-  </div>
-  ${strip("strip-zalen", "Theaters met de meeste voorstellingen", zalen)}
-</section>` : ""}
 
 ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` : ""}
 <section class="block wrap" id="agenda" aria-labelledby="week-title">

@@ -172,14 +172,14 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .btn.ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink); }
 
 /* ---------- Affichewand ---------- */
-.wall { padding-block: 20px 8px; }
-.wall-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 16px; margin-bottom: 16px; }
+.wall { padding-block: 16px 0; }
+.wall-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 6px 16px; margin-bottom: 8px; }
 .wall-head :is(h1, h2) { font-family: var(--font-display); font-weight: 900; font-size: var(--step-3); line-height: .95; letter-spacing: -0.015em; }
 .wall-head p { color: var(--ink-2); max-width: 34ch; margin: 0; }
 .strip-wrap { position: relative; }
 .strip {
   display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
-  scrollbar-width: none; padding-block: 14px 30px;
+  scrollbar-width: none; padding-block: 12px 22px;
 }
 .strip::-webkit-scrollbar { display: none; }
 .strip:focus-visible { outline-offset: -3px; }
@@ -223,7 +223,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 /* Affiche met promobeeld ("Nu in het theater"): bovenin de foto, daaronder het kleurvlak van de artiest,
    op de naad twee inkepingen zoals bij een toegangskaartje. */
-.poster-foto { --naad: 50%; display: flex; flex-direction: column; padding: 0; border-radius: 18px; }
+/* Compact formaat, zodat onder de eerste rij het begin van de volgende in beeld komt. */
+.poster-foto { --naad: 50%; width: 240px; height: 390px; display: flex; flex-direction: column; padding: 0; border-radius: 18px; }
 /* Losse kaartjes met wat ruimte ertussen; de eerste begint op de lijn van de koppen. */
 .strip:has(.poster-foto) { --rand: max(16px, calc((100vw - var(--wrap)) / 2 + 16px)); gap: 14px; padding-inline: var(--rand); scroll-padding-inline: var(--rand); }
 /* De stippen en de scheurlijn horen bij het kleurvlak: dat groeit mee als de tekst langer is (de foto wordt
@@ -261,7 +262,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 .poster-zaal .poster-beeld img { object-position: 50% 50%; }
 .poster-zaal .where { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.wall-zalen { padding-top: 40px; }
+.wall-zalen { padding-top: 8px; }
 /* Zit het gezicht bovenin, dan komen de sterren onderaan het beeld. */
 .poster-sterren.onder { top: auto; bottom: 18px; }
 .poster-sterren small { font-size: .78rem; font-weight: 600; letter-spacing: 0; }
@@ -277,23 +278,24 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   .poster-foto:hover .poster-vlak::before, .poster-foto:focus-visible .poster-vlak::before { opacity: .38; }
 }
 /* Datum bovenaan, aantal speeldata onderaan; titel, artiest en zaal daartussen, ook bij een titel van twee regels. */
-.poster-info { flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 20px 14px 22px 22px; }
+.poster-info { flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 16px 10px 16px 18px; }
 /* Afscheurstrook rechts, achter een verticale perforatie, zoals de controlestrook van een toegangskaartje. */
 .poster-stub {
-  position: relative; flex: 0 0 30px; border-left: 2px dashed color-mix(in srgb, var(--fg) 45%, transparent);
+  position: relative; flex: 0 0 26px; border-left: 2px dashed color-mix(in srgb, var(--fg) 45%, transparent);
 }
-.poster-foto .wanneer { font-size: .85rem; font-weight: 600; line-height: 1.2; }
+.poster-foto .wanneer { font-size: .78rem; font-weight: 600; line-height: 1.2; }
 .poster-foto .when { display: flex; align-items: baseline; gap: 6px; margin-top: 4px; }
-.poster-foto .day { display: inline; font-size: 3.4rem; line-height: .8; margin: 0; }
-.poster-foto .month { font-size: 1.6rem; }
+.poster-foto .day { display: inline; font-size: 2.8rem; line-height: .8; margin: 0; }
+.poster-foto .month { font-size: 1.35rem; }
 .poster-foto .ftitel {
   display: block; font-family: var(--font-display); font-weight: 900; text-transform: uppercase;
-  font-size: 2.1rem; line-height: .92; letter-spacing: .005em; margin-top: 10px; overflow-wrap: anywhere;
+  font-size: 1.75rem; line-height: .92; letter-spacing: .005em; margin-top: 8px; overflow-wrap: anywhere;
 }
-.poster-foto .ftitel.long { font-size: 1.8rem; }
-.poster-foto .ftitel.xlong { font-size: 1.45rem; }
-.poster-foto .fartiest { display: block; font-weight: 700; font-size: 1.05rem; line-height: 1.2; margin-top: 6px; text-wrap: balance; }
-.poster-foto .where { display: block; font-size: .9rem; line-height: 1.35; margin: 4px 0 12px; }
+.poster-foto .ftitel.long { font-size: 1.5rem; }
+.poster-foto .ftitel.xlong { font-size: 1.25rem; }
+.poster-foto .fartiest { display: block; font-weight: 700; font-size: .95rem; line-height: 1.2; margin-top: 6px; text-wrap: balance; }
+.poster-foto .where { display: block; font-size: .82rem; line-height: 1.35; margin: 4px 0 10px; }
+.poster-foto .tag { font-size: .78rem; padding: 2px 9px; }
 .poster-foto .tag { align-self: flex-start; margin-top: auto; }
 @media (hover: hover) and (pointer: fine) {
   .poster-foto:hover .poster-beeld img, .poster-foto:focus-visible .poster-beeld img { transform: scale(1.04); }
@@ -311,14 +313,23 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .strip-nav svg { width: 22px; height: 22px; }
 @media (max-width: 600px) {
   .poster { width: 78vw; height: 470px; }
-  .poster-foto { height: 500px; --naad: 50%; }
-  .poster-info { padding: 16px 10px 18px 18px; }
-  .poster-foto .day { font-size: 2.9rem; }
-  .poster-foto .month { font-size: 1.4rem; }
-  .poster-foto .ftitel { font-size: 1.75rem; margin-top: 8px; }
-  .poster-foto .ftitel.long { font-size: 1.6rem; }
-  .poster-foto .ftitel.xlong { font-size: 1.3rem; }
-  .poster-stub { flex-basis: 24px; }
+  .poster-foto { width: min(62vw, 250px); height: 340px; --naad: 50%; }
+  .poster-info { padding: 12px 8px 12px 14px; }
+  .poster-foto .wanneer { font-size: .72rem; }
+  .poster-foto .day { font-size: 2.3rem; }
+  .poster-foto .month { font-size: 1.15rem; }
+  .poster-foto .ftitel { font-size: 1.4rem; margin-top: 6px; }
+  .poster-foto .ftitel.long { font-size: 1.25rem; }
+  .poster-foto .ftitel.xlong { font-size: 1.05rem; }
+  .poster-foto .fartiest { font-size: .85rem; margin-top: 4px; }
+  .poster-foto .where { font-size: .76rem; margin-bottom: 8px; }
+  .poster-sterren { font-size: .9rem; left: 10px; top: 10px; }
+  .poster-stub { flex-basis: 20px; }
+  .wall { padding-top: 12px; }
+  .wall-head .uitleg { display: none; }
+  .wall-head { flex-wrap: nowrap; align-items: baseline; }
+  .wall-head :is(h1, h2) { font-size: clamp(1.6rem, 8.4vw, 2.1rem); white-space: nowrap; }
+  .wall-head p { white-space: nowrap; font-size: .85rem; }
   .strip-nav { display: none; }
 }
 
