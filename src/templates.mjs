@@ -551,9 +551,10 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // Theaters met een foto, meeste voorstellingen eerst, als kaartjes met de zaalfoto. De zalen hebben
   // geen eigen kleur: die volgt uit de id, en buren krijgen nooit dezelfde. Maker en licentie van de
   // foto staan op de theaterpagina (waar het kaartje naartoe linkt) en als tooltip op de foto.
+  const zaalKleuren = Object.keys(KLEUREN).filter((k) => k !== "zwart");
+  const zaalKleur = (t) => zaalKleuren[createHash("sha1").update(t.id).digest()[0] % zaalKleuren.length];
   function theaterKaartjes() {
-    const kleuren = Object.keys(KLEUREN).filter((k) => k !== "zwart");
-    const kleurVan = (t) => kleuren[createHash("sha1").update(t.id).digest()[0] % kleuren.length];
+    const kleurVan = zaalKleur;
     const lijst = [...T.values()].filter((t) => t.foto?.bestand)
       .map((t) => ({ t, list: db.gigsForTheater(t.id).filter((g) => g.status !== "geannuleerd") }))
       .filter(({ list }) => list.length)
@@ -1729,13 +1730,24 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     vragen.push(["Wat is het verschil tussen stand-up en cabaret?", "Bij stand-up vertelt een comedian grappen en verhalen, vaak zonder decor of vaste verhaallijn. Cabaret is meestal een avondvullende voorstelling rond een thema, vaak met liedjes. In comedyclubs staat vooral stand-up, in theaters vooral cabaret, maar veel artiesten doen allebei."]);
     vragen.push(["Hoe koop ik kaarten voor een comedyclub?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van de club, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten. Comedyclubs zijn klein, dus populaire avonden zijn snel uitverkocht."]);
     vragen.push(["Mijn comedyclub staat er niet bij. Hoe kom ik in de agenda?", `Stuur een mail naar <a href="mailto:${SITE.email}">${SITE.email}</a> met de naam van de club en de pagina met het programma.`]);
+    // Zoals /festivals/: per land een kop met gekleurde kaarten (de kleur volgt uit de zaal, buren nooit gelijk).
+    const zonder = [...T.values()].filter((t) => t.soort === "comedyclub" && !ids.has(t.id)).sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
+    const kaarten = Object.keys(LANDEN).map((land) => {
+      const hier = clubs.filter(({ t }) => t.land === land);
+      return hier.length ? `<h2 class="sub-head festival-kop">${esc(LANDEN[land])}</h2>
+      <div class="artists festival-kaarten">${afwisselend(hier, ({ t }) => zaalKleur(t), { schuiven: false }).map(({ x: { t, n }, kleur }) => {
+        const eerste = db.gigsForTheater(t.id)[0];
+        return `<a class="artist-card" href="/theaters/${t.id}/" style="${ink(kleur)}">
+          <h3${kopMaat(t.naam)}>${esc(t.naam)}</h3>
+          <p>${esc(t.plaats)}<br><span class="count">${plural(n, "voorstelling", "voorstellingen")}</span>, vanaf ${fmt.dayMonth(eerste.datum)}</p>
+        </a>`;
+      }).join("")}</div>` : "";
+    }).join("\n      ");
     const body = `<section class="block wrap" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">Comedy Clubs</h1><p>${plural(clubs.length, "comedyclub", "comedyclubs")} met ${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.</p></div>
-      ${clubs.length ? `<nav class="month-nav stad-nav" aria-label="Comedy Clubs">${clubs.map(({ t, n }) =>
-        `<a href="/theaters/${t.id}/"><b>${esc(t.naam)}</b><span>${esc(t.plaats)} · ${plural(n, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>` : ""}
-      ${list.length > 12 ? filters(list, { maand: true }) : ""}
-      <div id="gigs">${list.length ? monthGroups(list) : `<p class="empty">Op dit moment staan er geen voorstellingen in comedyclubs gepland.</p>`}</div>
-      ${list.length > 12 ? leegBlok : ""}
+      <div class="block-head"><h1 id="t">Comedy Clubs</h1><p>Comedyclubs en comedycafés in Nederland en België, met hun stand-up en open mics.</p></div>
+      ${kaarten || `<p class="empty">Op dit moment staan er geen voorstellingen in comedyclubs gepland.</p>`}
+      ${zonder.length ? `<h2 class="sub-head">Nog geen speeldata bekend</h2>
+      <ul class="sources">${zonder.map((t) => `<li>${t.website ? `<a href="${esc(t.website)}" rel="noopener">${esc(t.naam)}</a>` : esc(t.naam)} <span>${esc(t.plaats)}</span></li>`).join("")}</ul>` : ""}
       <section class="seo-tekst prose" aria-labelledby="over-titel">
         <h2 id="over-titel">Stand-up en comedy in comedyclubs</h2>
         ${tekst.join("\n        ")}
@@ -1743,7 +1755,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${faqHtml(vragen, "Veelgestelde vragen over comedyclubs")}
     </section>`;
     const desc = kort(`Alle comedyclubs in Nederland en België met hun programma: ${plural(list.length, "voorstelling", "voorstellingen")} in ${opsomming(clubs.slice(0, 3).map(({ t }) => t.naam))}${clubs.length > 3 ? " en meer" : ""}.`);
-    return layout({ title: "Comedy Clubs: stand-up en comedy", description: desc, path: "/comedy-clubs/", section: "comedyclubs", body, schema: { type: "CollectionPage", kruimels: [["Comedy Clubs", "/comedy-clubs/"]], hoofd: lijstLd(clubs.map(({ t }) => [t.naam, `/theaters/${t.id}/`])), extra: [...eventsLd(list), faqLd(vragen, "/comedy-clubs/")] } });
+    return layout({ title: "Comedy Clubs: stand-up en comedy", description: desc, path: "/comedy-clubs/", section: "comedyclubs", body, schema: { type: "CollectionPage", kruimels: [["Comedy Clubs", "/comedy-clubs/"]], hoofd: lijstLd(clubs.map(({ t }) => [t.naam, `/theaters/${t.id}/`])), extra: [faqLd(vragen, "/comedy-clubs/")] } });
   }
 
   function theaterIndex() {
