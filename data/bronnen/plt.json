@@ -1,7 +1,7 @@
 {
   "bron": "plt",
   "naam": "PLT (Parkstad Limburg Theaters)",
-  "opgehaald": "2026-10-28",
+  "opgehaald": "2026-10-29",
   "theaters": [
     {
       "id": "theater-heerlen",
@@ -80,19 +80,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/jimmy-carr-laughs-funny/12-12-2026-22-00"
-    },
-    {
-      "theater": "theater-sittard",
-      "artiesten": [
-        "Guido Weijers"
-      ],
-      "titel": "Oudejaarsconferentie",
-      "genre": "oudejaarsconference",
-      "datum": "2026-10-28",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.plt.nl/programma/guido-weijers-oudejaarsconference/28-10-2026-20-00"
     },
     {
       "theater": "theater-heerlen",
@@ -1730,6 +1717,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/jeroen-leenders-heiden/13-05-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "DE SITCOMEBACK | NTF Heerlen"
+      ],
+      "titel": "De hoe",
+      "genre": "theaterkomedie",
+      "datum": "2027-01-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-sitcomeback---de-hoe-nederlands-theater-festival-heerlen-de-sitcomeback---de-hoe/22-01-2027-20-30"
     }
   ],
   "recensies": {

@@ -1,7 +1,7 @@
 {
   "bron": "hetpark",
   "naam": "Schouwburg Het Park",
-  "opgehaald": "2026-10-28",
+  "opgehaald": "2026-10-29",
   "theaters": [
     {
       "id": "schouwburg-het-park",
@@ -106,7 +106,7 @@
       "genre": "cabaret",
       "datum": "2026-11-17",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/amhali-verveer-10349292/"
     },
@@ -119,7 +119,7 @@
       "genre": "cabaret",
       "datum": "2026-11-19",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://hetpark.nl/agenda/yentl-en-de-boer-rekhalzen-reprise-10353113/"
     },

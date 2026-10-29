@@ -1,7 +1,7 @@
 {
   "bron": "amphion",
   "naam": "Amphion",
-  "opgehaald": "2026-10-28",
+  "opgehaald": "2026-10-29",
   "theaters": [
     {
       "id": "amphion",
@@ -74,7 +74,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-11-12",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.amphion.nl/theater/de-oudejaarsconference-2026-try-out-claudia-de-breij/12-11-2026-20-00/"
     },
@@ -87,7 +87,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-11-14",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.amphion.nl/theater/de-oudejaarsconference-2026-try-out-claudia-de-breij/14-11-2026-20-00/"
     },
@@ -100,7 +100,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-11-13",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.amphion.nl/theater/de-oudejaarsconference-2026-try-out-claudia-de-breij/13-11-2026-20-00/"
     },
@@ -779,19 +779,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.amphion.nl/theater/rob-scheepers-scheepers-op-zn-scherpst/30-10-2026-20-00/"
-    },
-    {
-      "theater": "amphion",
-      "artiesten": [
-        "Vrouwejaars 2026"
-      ],
-      "titel": "De blik op 2026 door de ogen van vrouwen",
-      "genre": "cabaret",
-      "datum": "2026-10-28",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.amphion.nl/theater/vrouwejaars-2026-de-blik-op-2026-door-de-ogen-van-vrouwen-try-out/28-10-2026-20-30/"
     },
     {
       "theater": "amphion",

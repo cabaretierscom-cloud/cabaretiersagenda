@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-10-28",
+  "opgehaald": "2026-10-29",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -778,26 +778,13 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2027-05-22",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/valentina-toth-57516/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
         "Esther van der Voort"
       ],
       "titel": "Mama is boos",
       "genre": "cabaret",
       "datum": "2027-01-02",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
     },
@@ -1278,7 +1265,7 @@
       "genre": "cabaret",
       "datum": "2026-11-27",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
     },
@@ -1424,17 +1411,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jandino-58405/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [],
-      "titel": "Srefidensi Comedyshow 2026",
-      "genre": "cabaret",
-      "datum": "2026-11-29",
-      "tijd": "14:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/srefidensi-comedyshow-58404/"
     },
     {
       "theater": "oude-luxor",
@@ -1773,6 +1749,30 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/rayen-panday-59668/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/valentina-toth-57516/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [],
+      "titel": "Srefidensi Comedyshow 2026",
+      "genre": "cabaret",
+      "datum": "2026-11-29",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/srefidensi-comedyshow-58404/"
     }
   ],
   "recensies": {}

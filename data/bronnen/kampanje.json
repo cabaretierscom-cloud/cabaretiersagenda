@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-10-28",
+  "opgehaald": "2026-10-29",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -22,7 +22,7 @@
       "genre": "cabaret",
       "datum": "2026-10-31",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.kampanje.nl/voorstellingen/valentina-toth-try-out-rz9j"
     },
@@ -35,7 +35,7 @@
       "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy"
     },
@@ -243,7 +243,7 @@
       "genre": "cabaret",
       "datum": "2027-01-14",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2"
     },
@@ -631,7 +631,7 @@
       "genre": "cabaret",
       "datum": "2027-04-24",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/jandino-qyv8"
     },
