@@ -146,7 +146,7 @@ export function createTemplates(db) {
       ["artiesten", "/artiesten/", "Artiesten"],
       ["plaatsen", "/plaatsen/", "Plaatsen"],
       ["theaters", "/theaters/", "Theaters"],
-      ["comedyclubs", "/comedy-clubs/", "Comedyclubs"],
+      ["comedyclubs", "/comedy-clubs/", "Comedy Clubs"],
       ["festivals", "/festivals/", "Festivals"],
       ["over", "/over/", "Over"],
     ].map(([key, href, label]) =>
@@ -1700,8 +1700,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     vragen.push(["Hoe koop ik kaarten voor een comedyclub?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van de club, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten. Comedyclubs zijn klein, dus populaire avonden zijn snel uitverkocht."]);
     vragen.push(["Mijn comedyclub staat er niet bij. Hoe kom ik in de agenda?", `Stuur een mail naar <a href="mailto:${SITE.email}">${SITE.email}</a> met de naam van de club en de pagina met het programma.`]);
     const body = `<section class="block wrap" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">Comedyclubs</h1><p>${plural(clubs.length, "comedyclub", "comedyclubs")} met ${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.</p></div>
-      ${clubs.length ? `<nav class="month-nav stad-nav" aria-label="Comedyclubs">${clubs.map(({ t, n }) =>
+      <div class="block-head"><h1 id="t">Comedy Clubs</h1><p>${plural(clubs.length, "comedyclub", "comedyclubs")} met ${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.</p></div>
+      ${clubs.length ? `<nav class="month-nav stad-nav" aria-label="Comedy Clubs">${clubs.map(({ t, n }) =>
         `<a href="/theaters/${t.id}/"><b>${esc(t.naam)}</b><span>${esc(t.plaats)} · ${plural(n, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>` : ""}
       ${list.length > 12 ? filters(list, { maand: true }) : ""}
       <div id="gigs">${list.length ? monthGroups(list) : `<p class="empty">Op dit moment staan er geen voorstellingen in comedyclubs gepland.</p>`}</div>
@@ -1713,7 +1713,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${faqHtml(vragen, "Veelgestelde vragen over comedyclubs")}
     </section>`;
     const desc = kort(`Alle comedyclubs in Nederland en België met hun programma: ${plural(list.length, "voorstelling", "voorstellingen")} in ${opsomming(clubs.slice(0, 3).map(({ t }) => t.naam))}${clubs.length > 3 ? " en meer" : ""}.`);
-    return layout({ title: "Comedyclubs: stand-up en comedy", description: desc, path: "/comedy-clubs/", section: "comedyclubs", body, schema: { type: "CollectionPage", kruimels: [["Comedyclubs", "/comedy-clubs/"]], hoofd: lijstLd(clubs.map(({ t }) => [t.naam, `/theaters/${t.id}/`])), extra: [...eventsLd(list), faqLd(vragen, "/comedy-clubs/")] } });
+    return layout({ title: "Comedy Clubs: stand-up en comedy", description: desc, path: "/comedy-clubs/", section: "comedyclubs", body, schema: { type: "CollectionPage", kruimels: [["Comedy Clubs", "/comedy-clubs/"]], hoofd: lijstLd(clubs.map(({ t }) => [t.naam, `/theaters/${t.id}/`])), extra: [...eventsLd(list), faqLd(vragen, "/comedy-clubs/")] } });
   }
 
   function theaterIndex() {
