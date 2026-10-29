@@ -157,7 +157,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .nav a { text-decoration: none; font-weight: 500; padding: 10px 12px; border-radius: 999px; white-space: nowrap; }
 .nav a:hover { background: var(--paper-2); }
 .nav a[aria-current="page"] { background: var(--ink); color: var(--paper); }
-@media (max-width: 760px) {
+/* Menu onder het logo zodra de zeven knoppen er niet meer naast passen. */
+@media (max-width: 960px) {
   .site-header .wrap { flex-wrap: wrap; gap: 4px 16px; padding-block: 10px; }
   .nav { margin-left: -12px; width: calc(100% + 12px); overflow-x: auto; scrollbar-width: none; }
 }

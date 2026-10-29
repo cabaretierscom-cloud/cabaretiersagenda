@@ -68,6 +68,7 @@ for (const a of db.artiesten.values()) if (db.gigsForArtist(a.id).length) write(
 // Elke voorstelling met een eigen titel: /artiesten/<artiest>/<voorstelling>/.
 for (const [vid, pad] of t.voorstellingPaden) write(pad, t.voorstellingPagina(vid));
 write("/theaters/", t.theaterIndex());
+write("/comedy-clubs/", t.comedyclubsPagina());
 for (const th of db.theaters.values()) if (db.gigsForTheater(th.id).length) write(`/theaters/${th.id}/`, t.theaterPage(th));
 write("/festivals/", t.festivalIndex());
 for (const f of db.festivals.values()) write(`/festivals/${f.id}/`, t.festivalPagina(f));

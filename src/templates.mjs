@@ -146,6 +146,7 @@ export function createTemplates(db) {
       ["artiesten", "/artiesten/", "Artiesten"],
       ["plaatsen", "/plaatsen/", "Plaatsen"],
       ["theaters", "/theaters/", "Theaters"],
+      ["comedyclubs", "/comedy-clubs/", "Comedyclubs"],
       ["festivals", "/festivals/", "Festivals"],
       ["over", "/over/", "Over"],
     ].map(([key, href, label]) =>
@@ -1675,6 +1676,46 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return { tekst, vragen };
   }
 
+  // /comedy-clubs/: alle comedyclubs met hun aankomende voorstellingen, en uitleg met veelgestelde vragen.
+  function comedyclubsPagina() {
+    const clubs = zalenMetData.filter((t) => t.soort === "comedyclub").map((t) => ({ t, n: db.gigsForTheater(t.id).length }))
+      .sort((a, b) => b.n - a.n || a.t.naam.localeCompare(b.t.naam, "nl"));
+    const ids = new Set(clubs.map(({ t }) => t.id));
+    const list = up.filter((g) => ids.has(g.theater));
+    const steden = telPer(clubs.map(({ t }) => t), (t) => t.plaats);
+    const genres = telPer(list, (g) => V.get(g.voorstelling).genre);
+    const artiesten = telPer(list.flatMap((g) => V.get(g.voorstelling).artiesten), (id) => id).slice(0, 5).map(([id]) => artiestLink(A.get(id)));
+    const metPlaats = (t) => `${theaterLink(t.id)}${t.naam.includes(t.plaats) ? "" : ` in ${esc(t.plaats)}`}`;
+    const be = clubs.filter(({ t }) => t.land === "BE");
+    const tekst = [];
+    tekst.push(`<p>Een comedyclub is een kleine zaal of een café waar comedians vlak voor het publiek staan, vaak met een drankje erbij. Op een avond spelen meestal meerdere comedians kort na elkaar, met een presentator (MC) die de avond aan elkaar praat. Cabaretiers.com volgt ${plural(clubs.length, "comedyclub", "comedyclubs")} met samen ${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.</p>`);
+    if (clubs.length) tekst.push(`<p>De meeste avonden zijn in ${opsomming(clubs.slice(0, 4).map(({ t, n }) => `${metPlaats(t)} (${n})`))}. ${genres.length ? `Het aanbod bestaat vooral uit ${opsomming(genres.slice(0, 3).map(([g, n]) => `${GENRES[g].toLowerCase()} (${n})`))}.` : ""} In comedyclubs proberen comedians ook nieuw materiaal uit en staat nieuw talent naast bekende namen.${artiesten.length ? ` Op het programma staan onder meer ${opsomming(artiesten)}.` : ""}</p>`);
+    tekst.push(`<p>Veel stand-up is ook te zien in gewone theaters: kijk daarvoor in de <a href="/agenda/?genre=stand-up">agenda bij stand-up</a> of zoek een zaal op <a href="/theaters/">Theaters</a>.</p>`);
+    const vragen = [];
+    vragen.push(["Wat is een comedyclub?", "Een zaal, café of kelder die vooral stand-upcomedy programmeert. Je zit dicht op het podium, en op een avond zie je vaak meerdere comedians, met een presentator die de avond aan elkaar praat. Een voorstelling in een comedyclub is meestal korter en losser dan een avondvullende cabaretvoorstelling in het theater."]);
+    if (clubs.length) vragen.push(["Welke comedyclubs staan in de agenda?", `${opsomming(clubs.map(({ t }) => metPlaats(t)))}.`]);
+    if (steden.length) vragen.push(["In welke stad zijn de meeste comedyclubs?", `${opsomming(steden.slice(0, 3).map(([p, n]) => `${plaatsLink(p)} (${plural(n, "club", "clubs")})`))}.`]);
+    if (be.length) vragen.push(["Zijn er ook comedyclubs in België?", `Ja: ${opsomming(be.map(({ t }) => metPlaats(t)))}.`]);
+    vragen.push(["Wat is het verschil tussen stand-up en cabaret?", "Bij stand-up vertelt een comedian grappen en verhalen, vaak zonder decor of vaste verhaallijn. Cabaret is meestal een avondvullende voorstelling rond een thema, vaak met liedjes. In comedyclubs staat vooral stand-up, in theaters vooral cabaret, maar veel artiesten doen allebei."]);
+    vragen.push(["Hoe koop ik kaarten voor een comedyclub?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van de club, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten. Comedyclubs zijn klein, dus populaire avonden zijn snel uitverkocht."]);
+    vragen.push(["Mijn comedyclub staat er niet bij. Hoe kom ik in de agenda?", `Stuur een mail naar <a href="mailto:${SITE.email}">${SITE.email}</a> met de naam van de club en de pagina met het programma.`]);
+    const body = `<section class="block wrap" aria-labelledby="t">
+      <div class="block-head"><h1 id="t">Comedyclubs</h1><p>${plural(clubs.length, "comedyclub", "comedyclubs")} met ${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.</p></div>
+      ${clubs.length ? `<nav class="month-nav stad-nav" aria-label="Comedyclubs">${clubs.map(({ t, n }) =>
+        `<a href="/theaters/${t.id}/"><b>${esc(t.naam)}</b><span>${esc(t.plaats)} · ${plural(n, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>` : ""}
+      ${list.length > 12 ? filters(list, { maand: true }) : ""}
+      <div id="gigs">${list.length ? monthGroups(list) : `<p class="empty">Op dit moment staan er geen voorstellingen in comedyclubs gepland.</p>`}</div>
+      ${list.length > 12 ? leegBlok : ""}
+      <section class="seo-tekst prose" aria-labelledby="over-titel">
+        <h2 id="over-titel">Stand-up en comedy in comedyclubs</h2>
+        ${tekst.join("\n        ")}
+      </section>
+      ${faqHtml(vragen, "Veelgestelde vragen over comedyclubs")}
+    </section>`;
+    const desc = kort(`Alle comedyclubs in Nederland en België met hun programma: ${plural(list.length, "voorstelling", "voorstellingen")} in ${opsomming(clubs.slice(0, 3).map(({ t }) => t.naam))}${clubs.length > 3 ? " en meer" : ""}.`);
+    return layout({ title: "Comedyclubs: stand-up en comedy", description: desc, path: "/comedy-clubs/", section: "comedyclubs", body, schema: { type: "CollectionPage", kruimels: [["Comedyclubs", "/comedy-clubs/"]], hoofd: lijstLd(clubs.map(({ t }) => [t.naam, `/theaters/${t.id}/`])), extra: [...eventsLd(list), faqLd(vragen, "/comedy-clubs/")] } });
+  }
+
   function theaterIndex() {
     const overzicht = theatersOverzicht();
     const kolommen = Object.keys(LANDEN).map((land) => {
@@ -1850,7 +1891,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   return {
     controlePagina,
-    home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
+    home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
   };
 }

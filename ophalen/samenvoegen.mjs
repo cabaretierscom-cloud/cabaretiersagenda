@@ -31,6 +31,7 @@ const aliassen = existsSync(join(dataDir, "aliassen.json")) ? read("aliassen.jso
 const aliasOpSleutel = new Map(Object.entries(aliassen).map(([k, v]) => [slug(k), v]));
 
 // Speellijsten van artiesten komen als laatste: wat een theater zelf meldt, gaat voor.
+const COMEDYCLUB = /\bcomedy[ -]?(club|caf[eé]|huis|train)\b/i;
 const isSpeellijst = (f) => JSON.parse(readFileSync(join(dataDir, "bronnen", f), "utf8")).soort === "speellijst";
 const bronFiles = existsSync(join(dataDir, "bronnen"))
   ? readdirSync(join(dataDir, "bronnen")).filter((f) => f.endsWith(".json")).sort().sort((a, b) => isSpeellijst(a) - isSpeellijst(b))
@@ -58,7 +59,9 @@ function uniekId(basis, bezet) {
 
 function zorgVoorTheater(t) {
   if (theaterOpId.has(t.id)) return theaterOpId.get(t.id);
-  const nieuw = { id: t.id, naam: t.naam, plaats: t.plaats, land: t.land, soort: t.soort || "theater", website: t.website ?? null };
+  // "Comedy Club Haug", "Comedy Café Noordkade", "Comedyhuis": een comedyclub, tenzij de bron iets anders zegt.
+  const soort = t.soort && t.soort !== "theater" ? t.soort : COMEDYCLUB.test(t.naam) ? "comedyclub" : t.soort || "theater";
+  const nieuw = { id: t.id, naam: t.naam, plaats: t.plaats, land: t.land, soort, website: t.website ?? null };
   theaters.push(nieuw);
   theaterOpId.set(nieuw.id, nieuw);
   return nieuw;
