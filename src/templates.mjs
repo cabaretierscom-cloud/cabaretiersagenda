@@ -711,7 +711,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   }
 
   // Een maand per week (maandag t/m zondag, binnen de maand), met een weekkeuze bovenaan. Zonder
-  // JavaScript staan alle weken onder elkaar; agenda.js toont eerst één week met een knop voor de volgende.
+  // JavaScript staan alle weken onder elkaar; agenda.js toont eerst één week met een knop voor de rest.
   function weekGroepen(list, m) {
     const laatste = new Date(Date.UTC(+m.slice(0, 4), +m.slice(5, 7), 0)).toISOString().slice(0, 10);
     const weekVan = (iso) => {
@@ -766,7 +766,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${filters(list)}
       ${weken.nav}
       <div id="gigs" data-per-week>${weken.groepen}</div>
-      <p class="meer-weken" id="meer-weken" hidden><button type="button" class="btn" id="volgende-week"></button> <button type="button" class="btn ghost" id="hele-maand">Toon de hele maand</button></p>
+      <p class="meer-weken" id="meer-weken" hidden><button type="button" class="btn" id="volgende-week"></button></p>
       ${leegBlok}
       <p class="pager">${vorige ? `<a class="btn ghost" href="/agenda/${maandId(vorige)}/">${ICON.prev}${maandNaam(vorige)}</a>` : "<span></span>"}${volgende ? `<a class="btn ghost" href="/agenda/${maandId(volgende)}/">${maandNaam(volgende)}${ICON.next}</a>` : ""}</p>
     </section>`;

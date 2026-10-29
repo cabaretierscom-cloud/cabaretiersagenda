@@ -226,7 +226,7 @@
   });
 
   // ---------- Maandpagina per week ----------
-  // Eerst één week, met een knop voor de volgende; zoeken of filteren toont alle weken.
+  // Eerst één week, met één knop voor de rest van de maand; zoeken of filteren toont alle weken.
   const perWeek = document.querySelector("#gigs[data-per-week]");
   const weekKnop = document.getElementById("volgende-week");
   const toonWeken = (n) => {
@@ -236,7 +236,7 @@
     const volgende = weken[n];
     perWeek.toggleAttribute("data-ingeklapt", Boolean(volgende));
     document.getElementById("meer-weken").hidden = !volgende;
-    if (volgende) weekKnop.textContent = `Volgende week: ${volgende.dataset.week} (${volgende.querySelectorAll(".gig").length})`;
+    if (volgende) weekKnop.textContent = `Toon alle volgende voorstellingen (${weken.slice(n).reduce((a, w) => a + w.querySelectorAll(".gig").length, 0)})`;
     // Telling onder het filter: hoeveel er nu te zien zijn van de hele maand.
     const regel = document.getElementById("result-line");
     if (regel && volgende) {
@@ -249,8 +249,7 @@
   let weekenZichtbaar = 1;
   if (perWeek && !location.search) {
     toonWeken(1);
-    weekKnop.addEventListener("click", () => toonWeken(++weekenZichtbaar));
-    document.getElementById("hele-maand").addEventListener("click", () => toonWeken(Infinity));
+    weekKnop.addEventListener("click", () => toonWeken(weekenZichtbaar = Infinity));
     // Een week kiezen toont de weken tot en met die week.
     document.querySelectorAll(".week-nav a").forEach((a) => a.addEventListener("click", () => {
       const weken = [...perWeek.querySelectorAll(".week-groep")];
