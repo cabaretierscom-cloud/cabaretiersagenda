@@ -910,7 +910,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const list = perPlaats(p);
     const zalen = zalenMetData.filter((t) => t.plaats === p);
     const body = `<div class="detail-hero" style="--bg:var(--riso-yellow);--fg:#121212"><div class="wrap">
-        <h1>Cabaret en comedy in ${esc(p)}</h1>
+        <h1 class="plaats-kop">Cabaret en theater in ${esc(p)}</h1>
         <p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${zalen.map((t) => `<a href="/theaters/${t.id}/">${esc(t.naam)}</a>`).join(", ").replace(/, ([^,]*)$/, " en $1")}.</p>
       </div></div>
       <div class="wrap detail-body">

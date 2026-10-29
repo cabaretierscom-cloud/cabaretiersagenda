@@ -505,6 +505,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 /* Titel met een heel lang woord ("(leesvoorstelling)"): kleiner, zodat het woord heel blijft. */
 .detail-hero h1.lang { font-size: clamp(2.4rem, 7vw, 5.5rem); }
+/* Plaatspagina: lange kop ("Cabaret en theater in ..."), iets kleiner dan een artiestnaam. */
+.detail-hero h1.plaats-kop { font-size: clamp(2.6rem, 8vw, 5.75rem); }
 .detail-hero p { font-size: var(--step-1); margin: 14px 0 0; max-width: 52ch; }
 /* Artiestfoto in de kop: rechts op een breed scherm, eronder op een telefoon. */
 .hero-met-foto { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 40px; align-items: end; }
