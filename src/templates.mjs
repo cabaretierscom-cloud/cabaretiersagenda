@@ -121,6 +121,24 @@ export function createTemplates(db) {
   const showLink = (vid, tekst) => voorstellingPad.has(vid) ? `<a href="${voorstellingPad.get(vid)}">${tekst}</a>` : tekst;
 
 
+  // Vaste links onderaan elke pagina; een artiest of theater zonder aankomende voorstellingen valt weg.
+  let footerHtml = null;
+  const footerLinks = () => footerHtml ??= maakFooterLinks();
+  const maakFooterLinks = () => {
+  const FOOTER_LINKS = [
+    ["Artiesten", "/artiesten/", "Alle artiesten", ["esther-van-der-voort", "roel-c-verburg", "richard-groenendijk", "theo-maassen", "plien-en-bianca"]
+      .filter((id) => A.has(id) && db.gigsForArtist(id).length).map((id) => [A.get(id).naam, `/artiesten/${id}/`])],
+    ["Theaters", "/theaters/", "Alle theaters", ["kleine-komedie", "comedy-cafe-amsterdam", "stadsschouwburg-groningen", "parktheater-eindhoven", "stadsschouwburg-utrecht"]
+      .filter((id) => T.has(id) && db.gigsForTheater(id).length).map((id) => [T.get(id).naam, `/theaters/${id}/`])],
+    ["Plaatsen", "/plaatsen/", "Alle plaatsen", ["Rotterdam", "Amsterdam", "Eindhoven", "Den Haag", "Utrecht"]
+      .filter((p) => up.some((g) => T.get(g.theater).plaats === p)).map((p) => [p, `/plaatsen/${plaatsId(p)}/`])],
+  ];
+  return `<nav class="footer-links" aria-label="Snel naar">${FOOTER_LINKS.map(([kop, pad, alle, links]) => `<div>
+      <h2>${kop}</h2>
+      <ul>${links.map(([naam, url]) => `<li><a href="${url}">${esc(naam)}</a></li>`).join("")}<li><a href="${pad}">${alle}</a></li></ul>
+    </div>`).join("")}</nav>`;
+  };
+
   function layout({ title, description = SITE.description, path, section, body, schema, noindex = false }) {
     const foto = schema?.foto?.foto;
     const nav = [
@@ -180,6 +198,7 @@ ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title
 ${kruimelpadHtml(schema?.kruimels)}${body}
 </main>
 <footer class="site-footer">
+  <div class="wrap footer-boven">${footerLinks()}</div>
   <div class="wrap">
     <a class="brand" href="/" aria-label="${SITE.name}, naar de voorpagina">
       <span class="brand-mark" aria-hidden="true">${LOGO_OMGEKEERD_SVG}</span>
