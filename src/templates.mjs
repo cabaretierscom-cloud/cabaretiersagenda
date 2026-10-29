@@ -513,7 +513,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       .filter(({ list }) => list.length)
       .sort((x, y) => y.list.length - x.list.length || x.list[0].datum.localeCompare(y.list[0].datum))
       .filter(({ v }) => !gezien.has(v.artiesten[0]) && gezien.add(v.artiesten[0]))
-      .slice(0, 12);
+      .slice(0, 20);
     return afwisselend(lijst, ({ v }) => A.get(v.artiesten[0]).kleur, { schuiven: false })
       .map(({ x: { v, list }, kleur }, i) => {
         const beste = [...(v.recensies || [])].filter((r) => r.sterren).sort((x, y) => y.sterren - x.sterren)[0];
@@ -547,7 +547,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       .map((t) => ({ t, list: db.gigsForTheater(t.id).filter((g) => g.status !== "geannuleerd") }))
       .filter(({ list }) => list.length)
       .sort((x, y) => y.list.length - x.list.length || x.t.naam.localeCompare(y.t.naam, "nl"))
-      .slice(0, 12);
+      .slice(0, 20);
     return afwisselend(lijst, ({ t }) => kleurVan(t), { schuiven: false }).map(({ x: { t, list }, kleur }) => {
       const g = list[0], v = V.get(g.voorstelling);
       const wat = [v.artiesten.length ? artistNames(g.voorstelling) : "", echteTitel(g.voorstelling) || (v.artiesten.length ? "" : v.titel)].filter(Boolean).join(": ");
