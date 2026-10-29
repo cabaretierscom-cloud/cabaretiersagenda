@@ -471,6 +471,12 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   </div>`;
 
   // Maandkeuze als rij knoppen; de huidige maand is gemarkeerd.
+  // Zijwaartse rij met de plaatsen met de meeste voorstellingen (/plaatsen/ en de homepage).
+  function plaatsNav() {
+    return `<nav class="month-nav stad-nav" aria-label="Plaatsen met de meeste voorstellingen">${[...plaatsen].sort((x, y) => perPlaats(y).length - perPlaats(x).length || x.localeCompare(y, "nl")).slice(0, 15).map((p) =>
+      `<a href="/plaatsen/${plaatsId(p)}/"><b>${esc(p)}</b><span>${plural(perPlaats(p).length, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>`;
+  }
+
   function maandNav(huidig) {
     return `<nav class="month-nav" aria-label="Maanden">${maanden.map((m) =>
       `<a href="/agenda/${maandId(m)}/"${m === huidig ? ' aria-current="page"' : ""}><b>${kortMaand(m)}</b><span>${m.slice(0, 4)}</span></a>`).join("")}</nav>`;
@@ -591,8 +597,6 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   }
 
   function home() {
-    const grootstePlaatsen = [...plaatsen].sort((a, b) => perPlaats(b).length - perPlaats(a).length).slice(0, 12)
-      .sort((a, b) => a.localeCompare(b, "nl"));
 
     const nu = nuInTheater();
     const zalen = theaterKaartjes();
@@ -623,18 +627,14 @@ ${zalen ? `
 </section>` : ""}
 
 ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` : ""}
-<section class="block wrap" aria-labelledby="maand-title">
-  <div class="block-head"><h2 id="maand-title">Kies een maand</h2><p>Per maand alle voorstellingen, met zoeken en filters.</p></div>
-  <div class="month-tiles">${maanden.map((m) => {
-    const n = perMaand(m).length;
-    return `<a href="/agenda/${maandId(m)}/"><b>${fmt.monthShort(m + "-01")}</b><span>${m.slice(0, 4)}</span><em>${plural(n, "voorstelling", "voorstellingen")}</em></a>`;
-  }).join("")}</div>
+<section class="block wrap kies-blok" aria-labelledby="maand-title">
+  <div class="block-head"><h2 id="maand-title">Kies een maand</h2><p><a href="/agenda/">De volledige agenda</a></p></div>
+  ${maandNav(null)}
 </section>
 
-<section class="block wrap" aria-labelledby="plaats-title">
-  <div class="block-head"><h2 id="plaats-title">Kies een plaats</h2><p><a href="/plaatsen/">Alle ${tellers.plaatsen} plaatsen</a></p></div>
-  <div class="city-chips">${grootstePlaatsen.map((p) =>
-    `<a href="/plaatsen/${plaatsId(p)}/">${esc(p)} <span>${perPlaats(p).length}</span></a>`).join("")}</div>
+<section class="block wrap kies-blok" aria-labelledby="plaats-title">
+  <div class="block-head"><h2 id="plaats-title">Kies een plaats</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
+  ${plaatsNav()}
 </section>
 
 <section class="block wrap" aria-labelledby="festival-title">
@@ -767,8 +767,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     }).join("");
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Plaatsen</h1><p>Waar is cabaret en comedy te zien?</p></div>
-      <nav class="month-nav stad-nav" aria-label="Plaatsen met de meeste voorstellingen">${[...plaatsen].sort((x, y) => perPlaats(y).length - perPlaats(x).length || x.localeCompare(y, "nl")).slice(0, 15).map((p) =>
-        `<a href="/plaatsen/${plaatsId(p)}/"><b>${esc(p)}</b><span>${plural(perPlaats(p).length, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>
+      ${plaatsNav()}
       <div class="az-tools">
         <div class="field search">
           <label for="f-plaatsnaam">Zoek een plaats of zaal</label>

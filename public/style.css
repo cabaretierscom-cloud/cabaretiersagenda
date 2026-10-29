@@ -592,15 +592,10 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 
 /* ---------- Maanden en plaatsen ---------- */
-.month-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
-.month-tiles a {
-  display: grid; padding: 14px 16px; border-radius: 12px; text-decoration: none;
-  background: var(--paper-2); border: 1.5px solid transparent;
-}
-.month-tiles a:hover { border-color: var(--ink); }
-.month-tiles b { font-family: var(--font-display); font-weight: 900; font-size: 2.4rem; line-height: .9; text-transform: lowercase; }
-.month-tiles span { color: var(--ink-2); font-size: var(--step--1); font-weight: 600; }
-.month-tiles em { font-style: normal; margin-top: 10px; font-size: .95rem; }
+/* Homepage: maanden en plaatsen als zijwaartse rij, met weinig ruimte ertussen. */
+.kies-blok { padding-block: 44px 0; }
+.kies-blok .block-head { margin-bottom: 12px; }
+.kies-blok .month-nav { margin-bottom: 0; }
 
 .month-nav { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 20px; scrollbar-width: thin; }
 .month-nav a {
