@@ -326,6 +326,9 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   .wall-head { flex-wrap: nowrap; align-items: baseline; }
   .wall-head :is(h1, h2) { font-size: clamp(1.6rem, 8.4vw, 2.1rem); white-space: nowrap; }
   .wall-head p { white-space: nowrap; font-size: .85rem; }
+  /* Langere koppen (Voorstellingen per maand): de link mag eronder. */
+  .kies-blok .wall-head { flex-wrap: wrap; }
+  .kies-blok .wall-head h2 { white-space: normal; }
   .strip-nav { display: none; }
 }
 
@@ -594,7 +597,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* ---------- Maanden en plaatsen ---------- */
 /* Homepage: maanden en plaatsen als zijwaartse rij, met weinig ruimte ertussen. */
 .kies-blok { padding-block: 44px 0; }
-.kies-blok .block-head { margin-bottom: 12px; }
+.kies-blok .wall-head { margin-bottom: 12px; }
 .kies-blok .month-nav { margin-bottom: 0; }
 
 .month-nav { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 20px; scrollbar-width: thin; }

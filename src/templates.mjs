@@ -628,17 +628,17 @@ ${zalen ? `
 
 ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` : ""}
 <section class="block wrap kies-blok" aria-labelledby="maand-title">
-  <div class="block-head"><h2 id="maand-title">Kies een maand</h2><p><a href="/agenda/">De volledige agenda</a></p></div>
+  <div class="wall-head"><h2 id="maand-title">Voorstellingen per maand</h2><p><a href="/agenda/">De volledige agenda</a></p></div>
   ${maandNav(null)}
 </section>
 
 <section class="block wrap kies-blok" aria-labelledby="plaats-title">
-  <div class="block-head"><h2 id="plaats-title">Kies een plaats</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
+  <div class="wall-head"><h2 id="plaats-title">Zoek in de buurt</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
   ${plaatsNav()}
 </section>
 
-<section class="block wrap" aria-labelledby="festival-title">
-  <div class="block-head"><h2 id="festival-title">Cabaretfestivals</h2><p><a href="/festivals/">Alle festivals</a></p></div>
+<section class="block wrap kies-blok" aria-labelledby="festival-title">
+  <div class="wall-head"><h2 id="festival-title">Cabaretfestivals</h2><p><a href="/festivals/">Alle festivals</a></p></div>
   <div class="city-chips">${festivalsMetData.map(({ f, list }) =>
     `<a href="/festivals/${f.id}/">${esc(f.naam)} <span>${list.length}</span></a>`).join("")}</div>
 </section>
