@@ -591,8 +591,6 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   }
 
   function home() {
-    const eindeWeek = new Date(new Date(db.today + "T12:00:00").getTime() + 6 * 864e5).toISOString().slice(0, 10);
-    const dezeWeek = up.filter((g) => g.datum <= eindeWeek);
     const grootstePlaatsen = [...plaatsen].sort((a, b) => perPlaats(b).length - perPlaats(a).length).slice(0, 12)
       .sort((a, b) => a.localeCompare(b, "nl"));
 
@@ -625,16 +623,6 @@ ${zalen ? `
 </section>` : ""}
 
 ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` : ""}
-<section class="block wrap" id="agenda" aria-labelledby="week-title">
-  <div class="block-head">
-    <h2 id="week-title">Deze week</h2>
-    <p><a href="/vanavond/">Vanavond</a> · <a href="/dit-weekend/">Dit weekend</a> · <a href="/agenda/">De volledige agenda</a></p>
-  </div>
-  ${filters(dezeWeek)}
-  <div id="gigs">${monthGroups(dezeWeek)}</div>
-  ${leegBlok}
-</section>
-
 <section class="block wrap" aria-labelledby="maand-title">
   <div class="block-head"><h2 id="maand-title">Kies een maand</h2><p>Per maand alle voorstellingen, met zoeken en filters.</p></div>
   <div class="month-tiles">${maanden.map((m) => {
@@ -654,7 +642,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   <div class="city-chips">${festivalsMetData.map(({ f, list }) =>
     `<a href="/festivals/${f.id}/">${esc(f.naam)} <span>${list.length}</span></a>`).join("")}</div>
 </section>`;
-    return layout({ path: "/", section: null, body, schema: { extra: eventsLd(dezeWeek) } });
+    return layout({ path: "/", section: null, body });
   }
 
   // Week van een datum: maandag als begin (ISO-datum).
