@@ -72,19 +72,20 @@ const ink = (kleur) => {
 };
 
 // Affiches in een rij nooit twee keer dezelfde kleur naast elkaar. Eerst de volgorde iets
-// verschuiven (de eerstvolgende met een andere kleur gaat voor); lukt dat niet, dan krijgt die
-// affiche een andere kleur dan zijn buren. Geeft [{ x, kleur }] terug.
-function afwisselend(items, kleurVan) {
+// verschuiven (de eerstvolgende met een andere kleur gaat voor); lukt dat niet, of moet de volgorde
+// vast blijven (schuiven: false), dan krijgt die affiche een andere kleur dan zijn buren.
+// Geeft [{ x, kleur }] terug.
+function afwisselend(items, kleurVan, { schuiven = true } = {}) {
   const rest = [...items], uit = [];
   while (rest.length) {
     const vorige = uit.at(-1)?.kleur;
-    const i = Math.max(0, rest.findIndex((x) => kleurVan(x) !== vorige));
+    const i = schuiven ? Math.max(0, rest.findIndex((x) => kleurVan(x) !== vorige)) : 0;
     const [x] = rest.splice(i, 1);
     uit.push({ x, kleur: kleurVan(x) });
   }
   uit.forEach((u, i) => {
     const buren = [uit[i - 1]?.kleur, uit[i + 1]?.kleur];
-    if (buren[0] === u.kleur) u.kleur = Object.keys(KLEUREN).find((k) => !buren.includes(k));
+    if (buren[0] === u.kleur) u.kleur = Object.keys(KLEUREN).find((k) => k !== "zwart" && !buren.includes(k));
   });
   return uit;
 }
@@ -503,36 +504,31 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return (foto.focus[1] - boven) / zichtbaar;
   };
 
-  // "Nu in het theater": voorstellingen met een promobeeld (data/promo.json), eerstvolgende eerst,
+  // "Nu in het theater": voorstellingen met een promobeeld (data/promo.json), meeste speeldata eerst,
   // hooguit één per artiest. Bovenin het beeld, daaronder het kleurvlak van de artiest.
   function nuInTheater() {
-    const thisYear = fmt.year(db.today);
     const gezien = new Set();
     const lijst = [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id))
       .map((v) => ({ v, list: up.filter((g) => g.voorstelling === v.id && g.status !== "geannuleerd") }))
       .filter(({ list }) => list.length)
-      .sort((x, y) => x.list[0].datum.localeCompare(y.list[0].datum) || y.list.length - x.list.length)
+      .sort((x, y) => y.list.length - x.list.length || x.list[0].datum.localeCompare(y.list[0].datum))
       .filter(({ v }) => !gezien.has(v.artiesten[0]) && gezien.add(v.artiesten[0]))
       .slice(0, 12);
-    return afwisselend(lijst, ({ v }) => A.get(v.artiesten[0]).kleur)
+    return afwisselend(lijst, ({ v }) => A.get(v.artiesten[0]).kleur, { schuiven: false })
       .map(({ x: { v, list }, kleur }, i) => {
-        const a = A.get(v.artiesten[0]), g = list[0], t = T.get(g.theater);
         const beste = [...(v.recensies || [])].filter((r) => r.sterren).sort((x, y) => y.sterren - x.sterren)[0];
         const aantal = plural(list.length, "speeldatum", "speeldata");
         const titel = echteTitel(v.id) || v.titel;
         return `<a class="poster poster-foto" href="${voorstellingPad.get(v.id)}" style="${ink(kleur)}">
-        <span class="visually-hidden">${esc(titel)} van ${esc(artistNames(v.id))}, ${aantal}, eerstvolgende ${fmt.long(g.datum)} in ${esc(t.naam)}, ${esc(t.plaats)}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
+        <span class="visually-hidden">${esc(titel)} van ${esc(artistNames(v.id))}, ${aantal}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
         <span class="poster-beeld" aria-hidden="true">
           <img src="${esc(v.foto.bestand)}" alt=""${uitsnede(v.foto, 1.2)} width="${v.foto.breedte || 800}" height="${v.foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
           ${beste ? `<span class="poster-sterren${gezichtHoogte(v.foto, 1.2) < 0.5 ? " onder" : ""}">${"★".repeat(beste.sterren)}<small>${esc(beste.medium)}</small></span>` : ""}
         </span>
         <span class="poster-vlak" aria-hidden="true">
           <span class="poster-info">
-          <span class="wanneer">Volgende voorstelling</span>
-          <span class="when"><span class="day">${fmt.day(g.datum)}</span> <span class="month">${fmt.monthShort(g.datum)}${fmt.year(g.datum) !== thisYear ? " " + fmt.year(g.datum) : ""}</span></span>
           <strong class="ftitel${titleClass(titel)}">${esc(titel)}</strong>
           <span class="fartiest">${esc(artistNames(v.id))}</span>
-          <span class="where">${esc(t.naam)}${t.naam.includes(t.plaats) ? "" : ", " + esc(t.plaats)}</span>
           <span class="tag">${aantal}</span>
           </span>
           <span class="poster-stub"></span>
@@ -545,7 +541,6 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // geen eigen kleur: die volgt uit de id, en buren krijgen nooit dezelfde. Wikimedia-foto's vragen
   // om naamsvermelding, dus maker en licentie staan klein op de foto.
   function theaterKaartjes() {
-    const thisYear = fmt.year(db.today);
     const kleuren = Object.keys(KLEUREN).filter((k) => k !== "zwart");
     const kleurVan = (t) => kleuren[createHash("sha1").update(t.id).digest()[0] % kleuren.length];
     const lijst = [...T.values()].filter((t) => t.foto?.bestand)
@@ -553,23 +548,21 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       .filter(({ list }) => list.length)
       .sort((x, y) => y.list.length - x.list.length || x.t.naam.localeCompare(y.t.naam, "nl"))
       .slice(0, 12);
-    return afwisselend(lijst, ({ t }) => kleurVan(t)).map(({ x: { t, list }, kleur }) => {
+    return afwisselend(lijst, ({ t }) => kleurVan(t), { schuiven: false }).map(({ x: { t, list }, kleur }) => {
       const g = list[0], v = V.get(g.voorstelling);
       const wat = [v.artiesten.length ? artistNames(g.voorstelling) : "", echteTitel(g.voorstelling) || (v.artiesten.length ? "" : v.titel)].filter(Boolean).join(": ");
       const aantal = plural(list.length, "voorstelling", "voorstellingen");
       return `<a class="poster poster-foto poster-zaal" href="/theaters/${t.id}/" style="${ink(kleur)}">
-        <span class="visually-hidden">${esc(t.naam)} in ${esc(t.plaats)}, ${aantal}, eerstvolgende ${fmt.long(g.datum)}: ${esc(wat)}</span>
+        <span class="visually-hidden">${esc(t.naam)} in ${esc(t.plaats)}, ${aantal}, volgende: ${esc(wat)}</span>
         <span class="poster-beeld" aria-hidden="true">
           <img src="${esc(t.foto.bestand)}" alt="" width="${t.foto.breedte || 960}" height="${t.foto.hoogte || 720}" loading="lazy" decoding="async">
           <span class="poster-credit">Foto: ${esc(t.foto.maker)}, ${esc(t.foto.licentie)}</span>
         </span>
         <span class="poster-vlak" aria-hidden="true">
           <span class="poster-info">
-          <span class="wanneer">Volgende voorstelling</span>
-          <span class="when"><span class="day">${fmt.day(g.datum)}</span> <span class="month">${fmt.monthShort(g.datum)}${fmt.year(g.datum) !== thisYear ? " " + fmt.year(g.datum) : ""}</span></span>
           <strong class="ftitel${titleClass(t.naam)}">${esc(t.naam)}</strong>
           <span class="fartiest">${esc(t.plaats)}</span>
-          <span class="where">${esc(wat)}</span>
+          <span class="where"><span class="wanneer">Volgende</span>${esc(wat)}</span>
           <span class="tag">${aantal}</span>
           </span>
           <span class="poster-stub"></span>
@@ -610,7 +603,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 ${nu ? `<section class="wall" aria-labelledby="nu-title">
   <div class="wrap wall-head">
     <h1 id="nu-title">Nu in het theater</h1>
-    <p><span class="uitleg">Voorstellingen die nu op tournee zijn, de eerstvolgende voorop. </span><a href="/agenda/">De volledige agenda</a></p>
+    <p><span class="uitleg">Voorstellingen die nu op tournee zijn, met de meeste speeldata voorop. </span><a href="/agenda/">De volledige agenda</a></p>
   </div>
   ${strip("strip-nu", "Voorstellingen die nu in het theater staan", nu)}
 </section>` : `<h1 class="visually-hidden">Cabaretiers.com, de theateragenda</h1>`}

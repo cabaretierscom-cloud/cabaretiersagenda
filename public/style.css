@@ -262,7 +262,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   background: linear-gradient(transparent, rgba(0,0,0,.6)); overflow-wrap: anywhere;
 }
 .poster-zaal .poster-beeld img { object-position: 50% 50%; }
-.poster-zaal .where { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.poster-zaal .where { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
 .wall-zalen { padding-top: 8px; }
 /* Zit het gezicht bovenin, dan komen de sterren onderaan het beeld. */
 .poster-sterren.onder { top: auto; bottom: 18px; }
@@ -290,12 +290,13 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-foto .month { font-size: 1.35rem; }
 .poster-foto .ftitel {
   display: block; font-family: var(--font-display); font-weight: 900; text-transform: uppercase;
-  font-size: 1.75rem; line-height: .92; letter-spacing: .005em; margin-top: 8px; overflow-wrap: anywhere;
+  font-size: 2.6rem; line-height: .9; letter-spacing: .005em; margin-top: 2px; overflow-wrap: anywhere;
 }
-.poster-foto .ftitel.long { font-size: 1.5rem; }
-.poster-foto .ftitel.xlong { font-size: 1.25rem; }
-.poster-foto .fartiest { display: block; font-weight: 700; font-size: .95rem; line-height: 1.2; margin-top: 6px; text-wrap: balance; }
-.poster-foto .where { display: block; font-size: .82rem; line-height: 1.35; margin: 4px 0 10px; }
+.poster-foto .ftitel.long { font-size: 2.1rem; }
+.poster-foto .ftitel.xlong { font-size: 1.4rem; }
+.poster-foto .fartiest { display: block; font-weight: 700; font-size: 1.15rem; line-height: 1.2; margin-top: 6px; text-wrap: balance; }
+.poster-foto .where { display: block; font-size: .85rem; line-height: 1.35; margin: 8px 0 10px; }
+.poster-foto .where .wanneer { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; opacity: .8; }
 .poster-foto .tag { font-size: .78rem; padding: 2px 9px; }
 .poster-foto .tag { align-self: flex-start; margin-top: auto; }
 @media (hover: hover) and (pointer: fine) {
@@ -319,10 +320,10 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   .poster-foto .wanneer { font-size: .72rem; }
   .poster-foto .day { font-size: 2.3rem; }
   .poster-foto .month { font-size: 1.15rem; }
-  .poster-foto .ftitel { font-size: 1.4rem; margin-top: 6px; }
-  .poster-foto .ftitel.long { font-size: 1.25rem; }
-  .poster-foto .ftitel.xlong { font-size: 1.05rem; }
-  .poster-foto .fartiest { font-size: .85rem; margin-top: 4px; }
+  .poster-foto .ftitel { font-size: 2.1rem; margin-top: 0; }
+  .poster-foto .ftitel.long { font-size: 1.75rem; }
+  .poster-foto .ftitel.xlong { font-size: 1.2rem; }
+  .poster-foto .fartiest { font-size: 1rem; margin-top: 4px; }
   .poster-foto .where { font-size: .76rem; margin-bottom: 8px; }
   .poster-sterren { font-size: .9rem; left: 10px; top: 10px; }
   .poster-stub { flex-basis: 20px; }
