@@ -923,8 +923,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${list.length ? faqHtml(plaatsVragen(p, list), `Veelgestelde vragen over cabaret in ${p}`) : ""}
       </div>`;
     const artiestenHier = [...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].map((a) => A.get(a).naam);
-    const desc = kort(`Cabaret en comedy in ${p}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(zalen.length, "zaal", "zalen")}${artiestenHier.length ? `, met ${artiestenHier.slice(0, 3).join(", ")}${artiestenHier.length > 3 ? " en meer" : ""}` : ""}. Eerstvolgende op ${fmt.full(list[0].datum)}.`);
-    return layout({ title: `Cabaret en comedy in ${p}`, description: desc, path: `/plaatsen/${plaatsId(p)}/`, section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"], [p, `/plaatsen/${plaatsId(p)}/`]], over: plaatsLd(p), extra: [...eventsLd(list), ...(list.length ? [faqLd(plaatsVragen(p, list), `/plaatsen/${plaatsId(p)}/`)] : [])] } });
+    const desc = kort(`Cabaret en theater in ${p}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(zalen.length, "zaal", "zalen")}${artiestenHier.length ? `, met ${artiestenHier.slice(0, 3).join(", ")}${artiestenHier.length > 3 ? " en meer" : ""}` : ""}. Eerstvolgende op ${fmt.full(list[0].datum)}.`);
+    return layout({ title: `Cabaret en theater in ${p}`, description: desc, path: `/plaatsen/${plaatsId(p)}/`, section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"], [p, `/plaatsen/${plaatsId(p)}/`]], over: plaatsLd(p), extra: [...eventsLd(list), ...(list.length ? [faqLd(plaatsVragen(p, list), `/plaatsen/${plaatsId(p)}/`)] : [])] } });
   }
 
   // Zoekveld, letters en de lijst van A tot Z (public/agenda.js filtert op #f-artiest en #az).
