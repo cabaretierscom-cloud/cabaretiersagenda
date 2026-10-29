@@ -602,7 +602,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 ${nu ? `<section class="wall" aria-labelledby="nu-title">
   <div class="wrap wall-head">
     <h1 id="nu-title">Nu in het theater</h1>
-    <p><span class="uitleg">Voorstellingen die nu op tournee zijn. </span><a href="/agenda/">De volledige agenda</a></p>
+    <p><a href="/agenda/">De volledige agenda</a></p>
   </div>
   ${strip("strip-nu", "Voorstellingen die nu in het theater staan", nu)}
 </section>` : `<h1 class="visually-hidden">Cabaretiers.com, de theateragenda</h1>`}
@@ -611,7 +611,7 @@ ${zalen ? `
 <section class="wall wall-zalen" aria-labelledby="zalen-title">
   <div class="wrap wall-head">
     <h2 id="zalen-title">Theaters</h2>
-    <p><span class="uitleg">De zalen met de meeste cabaret en comedy op de agenda. </span><a href="/theaters/">Alle theaters</a></p>
+    <p><a href="/theaters/">Alle theaters</a></p>
   </div>
   ${strip("strip-zalen", "Theaters met de meeste voorstellingen", zalen)}
 </section>` : ""}

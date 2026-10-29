@@ -323,7 +323,6 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   .poster-sterren { font-size: .9rem; left: 10px; top: 10px; }
   .poster-stub { flex-basis: 20px; }
   .wall { padding-top: 12px; }
-  .wall-head .uitleg { display: none; }
   .wall-head { flex-wrap: nowrap; align-items: baseline; }
   .wall-head :is(h1, h2) { font-size: clamp(1.6rem, 8.4vw, 2.1rem); white-space: nowrap; }
   .wall-head p { white-space: nowrap; font-size: .85rem; }
