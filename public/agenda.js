@@ -50,7 +50,7 @@
     let frame = 0;
     const markeer = () => {
       frame = 0;
-      const posters = [...strip.querySelectorAll(".poster:not([hidden])")];
+      const posters = [...strip.querySelectorAll(".poster:not([hidden]), .artist-card")];
       strip.classList.toggle("vegen", touch.matches);
       let actief = null;
       if (touch.matches && posters.length) {

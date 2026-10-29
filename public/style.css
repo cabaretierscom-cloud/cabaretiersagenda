@@ -211,6 +211,18 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 /* Mobiel: de andere affiches zakken iets terug, zodat je tijdens het vegen ziet welke vooraan komt. */
 .strip.vegen .poster:not(.actief) { transform: scale(.93); }
+/* Festival- en clubkaarten (homepage, /festivals/, /comedy-clubs/): geen onderstreping, maar net als de
+   affiches iets omhoog met een schaduw bij aanwijzen; op mobiel licht de kaart op waar je naartoe veegt. */
+:is(.strip, .festival-kaarten) .artist-card { transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease; }
+:is(.strip, .festival-kaarten) .artist-card::before { transition: opacity .28s ease; }
+:is(.strip, .festival-kaarten) .artist-card:hover h3 { text-decoration: none; }
+.artist-card.actief { transform: translateY(-10px); z-index: 2; box-shadow: 0 22px 40px -18px rgba(0,0,0,.6); }
+.artist-card.actief::before { opacity: .38; }
+@media (hover: hover) and (pointer: fine) {
+  :is(.strip, .festival-kaarten) .artist-card:is(:hover, :focus-visible) { transform: translateY(-10px); z-index: 2; box-shadow: 0 22px 40px -18px rgba(0,0,0,.6); }
+  :is(.strip, .festival-kaarten) .artist-card:is(:hover, :focus-visible)::before { opacity: .38; }
+}
+.strip.vegen .artist-card:not(.actief) { transform: scale(.93); }
 .poster .when { line-height: 1; }
 .poster .day {
   display: block; font-family: var(--font-display); font-weight: 900;
