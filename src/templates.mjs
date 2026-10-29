@@ -1,5 +1,5 @@
 // HTML-templates. Elke functie geeft een string terug; build.mjs schrijft ze weg.
-import { LANDEN, STATUSSEN, GENRES, KLEUREN, isGroep } from "./data.mjs";
+import { LANDEN, STATUSSEN, GENRES, KLEUREN, FESTIVALSOORTEN, isGroep } from "./data.mjs";
 import { fmt, esc, plural, isoWithOffset } from "./format.mjs";
 import { WOORDMERK_SVG, C_PAD, C_KADER } from "./woordmerk.mjs";
 import { readFileSync } from "node:fs";
@@ -1550,10 +1550,14 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const zonder = [...F.values()].filter((f) => !db.gigsForFestival(f.id).length).sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Cabaretfestivals</h1><p>Concoursen en festivals in Nederland en België, met hun finales en finalistentournees.</p></div>
-      <div class="artists">${festivalsMetData.map(({ f, list }) => `<a class="artist-card" href="/festivals/${f.id}/" style="${ink(festivalKleur(f))}">
+      ${Object.entries(FESTIVALSOORTEN).map(([soort, kop]) => {
+        const hier = festivalsMetData.filter(({ f }) => f.soort === soort);
+        return hier.length ? `<h2 class="sub-head festival-kop">${esc(kop)}</h2>
+      <div class="artists festival-kaarten">${hier.map(({ f, list }) => `<a class="artist-card" href="/festivals/${f.id}/" style="${ink(festivalKleur(f))}">
           <h3${kopMaat(f.naam)}>${esc(f.naam)}</h3>
           <p>${esc(f.plaats)}<br><span class="count">${plural(list.length, "speeldatum", "speeldata")}</span>, vanaf ${fmt.dayMonth(list[0].datum)}</p>
-        </a>`).join("")}</div>
+        </a>`).join("")}</div>` : "";
+      }).join("\n      ")}
       ${zonder.length ? `<h2 class="sub-head">Nog geen speeldata bekend</h2>
       <ul class="sources">${zonder.map((f) => `<li>${f.website ? `<a href="${esc(f.website)}" rel="noopener">${esc(f.naam)}</a>` : esc(f.naam)} <span>${esc(f.plaats)}</span></li>`).join("")}</ul>` : ""}
     </section>`;

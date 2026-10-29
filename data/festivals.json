@@ -4,6 +4,7 @@
     "naam": "Cameretten",
     "plaats": "Rotterdam",
     "land": "NL",
+    "soort": "landelijk",
     "website": "https://cameretten.nl/",
     "artiesten": ["cameretten", "60e-editie-cameretten-festival", "60ste-editie-cameretten-festival"],
     "titels": ["cameretten"]
@@ -13,6 +14,7 @@
     "naam": "Leids Cabaret Festival",
     "plaats": "Leiden",
     "land": "NL",
+    "soort": "landelijk",
     "website": "https://leidscabaretfestival.nl/",
     "artiesten": ["leids-cabaret-festival", "leids-cabaret-festival-on-tour"],
     "titels": ["leids cabaret festival"]
@@ -22,6 +24,7 @@
     "naam": "Amsterdams Kleinkunst Festival",
     "plaats": "Amsterdam",
     "land": "NL",
+    "soort": "landelijk",
     "website": "https://akf.nl/",
     "artiesten": ["amsterdams-kleinkunst-festival"],
     "titels": ["amsterdams kleinkunst festival"]
@@ -31,6 +34,7 @@
     "naam": "Amsterdams Studenten Cabaret Festival",
     "plaats": "Amsterdam",
     "land": "NL",
+    "soort": "studenten",
     "website": "https://ascf.nl/",
     "artiesten": ["amsterdams-studenten-cabaret-festival"],
     "titels": ["amsterdams studenten cabaret festival"]
@@ -40,6 +44,7 @@
     "naam": "Groninger Studenten Cabaret Festival",
     "plaats": "Groningen",
     "land": "NL",
+    "soort": "studenten",
     "website": "https://www.gscf.nl/",
     "artiesten": ["groninger-studenten-cabaret-festival"],
     "titels": ["groninger studenten cabaret festival", "gscf"]
@@ -49,6 +54,7 @@
     "naam": "Leeuwarder Cabaret Festival",
     "plaats": "Leeuwarden",
     "land": "NL",
+    "soort": "regionaal",
     "website": "https://leeuwardercabaretfestival.nl/",
     "artiesten": ["leeuwarder-cabaret-festival"],
     "titels": ["leeuwarder cabaret festival"]
@@ -58,6 +64,7 @@
     "naam": "Tilburgs Cabaret Festival",
     "plaats": "Tilburg",
     "land": "NL",
+    "soort": "regionaal",
     "website": "https://www.schouwburgconcertzaaltilburg.nl/nl/tilburgscabaretfestival",
     "artiesten": ["tilburgs-cabaret-festival-2027"],
     "titels": ["tilburgs cabaret festival"]
@@ -67,6 +74,7 @@
     "naam": "SCHATER Cabaretfestival",
     "plaats": "Apeldoorn",
     "land": "NL",
+    "soort": "regionaal",
     "website": null,
     "artiesten": ["schater-cabaretfestival"],
     "titels": ["schater"]
@@ -76,6 +84,7 @@
     "naam": "Utrecht International Comedy Festival",
     "plaats": "Utrecht",
     "land": "NL",
+    "soort": "regionaal",
     "website": "https://utrechtinternationalcomedyfestival.nl/",
     "artiesten": ["utrechts-international-comedy-festival"],
     "titels": ["international comedy festival"]
@@ -85,6 +94,7 @@
     "naam": "Keistad Cabaret Festival",
     "plaats": "Amersfoort",
     "land": "NL",
+    "soort": "regionaal",
     "website": "https://www.keistadcabaretfestival.nl/",
     "artiesten": [],
     "titels": ["keistad cabaret festival"]
