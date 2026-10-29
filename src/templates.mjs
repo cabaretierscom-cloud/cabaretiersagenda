@@ -538,8 +538,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   }
 
   // Theaters met een foto, meeste voorstellingen eerst, als kaartjes met de zaalfoto. De zalen hebben
-  // geen eigen kleur: die volgt uit de id, en buren krijgen nooit dezelfde. Wikimedia-foto's vragen
-  // om naamsvermelding, dus maker en licentie staan klein op de foto.
+  // geen eigen kleur: die volgt uit de id, en buren krijgen nooit dezelfde. Maker en licentie van de
+  // foto staan op de theaterpagina (waar het kaartje naartoe linkt) en als tooltip op de foto.
   function theaterKaartjes() {
     const kleuren = Object.keys(KLEUREN).filter((k) => k !== "zwart");
     const kleurVan = (t) => kleuren[createHash("sha1").update(t.id).digest()[0] % kleuren.length];
@@ -554,9 +554,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       const aantal = plural(list.length, "voorstelling", "voorstellingen");
       return `<a class="poster poster-foto poster-zaal" href="/theaters/${t.id}/" style="${ink(kleur)}">
         <span class="visually-hidden">${esc(t.naam)} in ${esc(t.plaats)}, ${aantal}, volgende: ${esc(wat)}</span>
-        <span class="poster-beeld" aria-hidden="true">
+        <span class="poster-beeld" aria-hidden="true" title="Foto: ${esc(t.foto.maker)}, ${esc(t.foto.licentie)}">
           <img src="${esc(t.foto.bestand)}" alt="" width="${t.foto.breedte || 960}" height="${t.foto.hoogte || 720}" loading="lazy" decoding="async">
-          <span class="poster-credit">Foto: ${esc(t.foto.maker)}, ${esc(t.foto.licentie)}</span>
         </span>
         <span class="poster-vlak" aria-hidden="true">
           <span class="poster-info">
