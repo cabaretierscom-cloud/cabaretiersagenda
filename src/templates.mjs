@@ -671,6 +671,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     let tot = new Date(new Date(maandagVan(db.today) + "T12:00:00Z").getTime() + 6 * 864e5).toISOString().slice(0, 10);
     if ((new Date(tot) - new Date(db.today)) / 864e5 < 2) tot = new Date(new Date(tot + "T12:00:00Z").getTime() + 7 * 864e5).toISOString().slice(0, 10);
     const eerste = up.filter((g) => g.datum <= tot);
+    const overzicht = agendaOverzicht();
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Agenda</h1><p>${plural(tellers.speeldata, "voorstelling", "voorstellingen")} in ${plural(tellers.zalen, "zaal", "zalen")}</p></div>
       ${maandNav(null)}
@@ -681,8 +682,13 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${leegBlok}
       <p class="meer-weken" id="laad-meer" hidden><button type="button" class="btn" id="laad-week">Toon alle volgende voorstellingen</button></p>
       <p class="more" id="naar-maand"><a class="btn" href="/agenda/${maandId(maanden[0])}/">Verder in ${maandNaam(maanden[0])}</a></p>
+      <section class="seo-tekst prose" aria-labelledby="over-titel">
+        <h2 id="over-titel">Cabaret- en theatervoorstellingen</h2>
+        ${overzicht.tekst.join("\n        ")}
+      </section>
+      ${faqHtml(overzicht.vragen, "Veelgestelde vragen over de agenda")}
     </section>`;
-    return layout({ title: "Agenda", description: "Alle aankomende cabaret- en comedyvoorstellingen in Nederland en België, week voor week, met zoeken op artiest, voorstelling, plaats of theater.", path: "/agenda/", section: "agenda", body, schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"]], extra: eventsLd(eerste) } });
+    return layout({ title: "Agenda", description: "Alle aankomende cabaret- en comedyvoorstellingen in Nederland en België, week voor week, met zoeken op artiest, voorstelling, plaats of theater.", path: "/agenda/", section: "agenda", body, schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"]], extra: [...eventsLd(eerste), faqLd(overzicht.vragen, "/agenda/")] } });
   }
 
   // Een maand per week (maandag t/m zondag, binnen de maand), met een weekkeuze bovenaan. Zonder
@@ -1617,6 +1623,34 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     vragen.push(["Hoe koop ik kaarten?", "Kaarten koop je bij het theater zelf. Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van de zaal waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
     vragen.push(["Hoe actueel is dit overzicht?", "De agenda wordt elke nacht bijgewerkt vanaf de websites van de theaters en de speellijsten van de artiesten. Voorstellingen die voorbij zijn, verdwijnen vanzelf."]);
     vragen.push(["Mijn theater staat er niet bij. Hoe kom ik in de agenda?", `Stuur een mail naar <a href="mailto:${SITE.email}">${SITE.email}</a> met de naam van de zaal en de pagina met het programma. Een theater verschijnt hier zodra er cabaret of comedy op het programma staat.`]);
+    return { tekst, vragen };
+  }
+
+  // Tekst en veelgestelde vragen onder /agenda/, met de cijfers van de build.
+  function agendaOverzicht() {
+    const genres = telPer(up, (g) => V.get(g.voorstelling).genre);
+    const genreTekst = (n) => opsomming(genres.slice(0, n).map(([g, k]) => `${GENRES[g].toLowerCase()} (${k.toLocaleString("nl-NL")})`));
+    const artiesten = telPer(up.flatMap((g) => V.get(g.voorstelling).artiesten), (id) => id).slice(0, 5).map(([id, n]) => `${artiestLink(A.get(id))} (${n})`);
+    const steden = telPer(up, (g) => T.get(g.theater).plaats).slice(0, 6);
+    const perMaand = telPer(up, (g) => g.datum.slice(0, 7));
+    const soort = (s) => up.filter((g) => g.soort === s).length;
+    const be = up.filter((g) => T.get(g.theater).land === "BE").length;
+    const uitverkocht = up.filter((g) => g.status === "uitverkocht").length;
+    const maandLink = (m) => `<a href="/agenda/${maandId(m)}/">${maandNaam(m)}</a>`;
+    const tekst = [];
+    tekst.push(`<p>Op Cabaretiers.com vind je alle aankomende cabaret- en theatervoorstellingen met humor in Nederland en België op één plek: ${tellers.speeldata.toLocaleString("nl-NL")} voorstellingen van ${tellers.artiesten} artiesten in ${tellers.zalen} theaters, comedyclubs en podia${be ? `, waarvan ${be.toLocaleString("nl-NL")} in België` : ""}. Van de grote zaal van de schouwburg tot een klein vlakkevloertheater en een avond stand-up in de comedyclub.</p>`);
+    tekst.push(`<p>Het aanbod is breed: ${genreTekst(5)}. Bij theaterkomedie gaat het om komedies, blijspellen en kluchten; gewoon toneel en musicals staan niet in deze agenda. De artiesten die nu het vaakst spelen, zijn ${opsomming(artiesten)}.</p>`);
+    tekst.push(`<p>Bovenaan begin je met de voorstellingen van deze week; met één knop zie je alle volgende. Zoek op artiest, voorstelling, plaats of theater, kies een genre of verberg uitverkochte voorstellingen. Liever per maand bladeren? Kies ${opsomming(maanden.slice(0, 3).map(maandLink))}, of kijk wat er <a href="/vanavond/">vanavond</a> en <a href="/dit-weekend/">dit weekend</a> te zien is. De meeste voorstellingen zijn in ${opsomming(steden.map(([p, n]) => `${plaatsLink(p)} (${n})`))}.</p>`);
+    const vragen = [];
+    vragen.push(["Welke cabaretvoorstellingen zijn er vanavond?", `Op <a href="/vanavond/">Vanavond</a> staan alle voorstellingen van vandaag en morgen, en op <a href="/dit-weekend/">Dit weekend</a> die van vrijdag tot en met zondag. In deze agenda staat bovenaan de lopende week.`]);
+    vragen.push(["Wat is het verschil tussen cabaret, stand-up en theaterkomedie?", "Cabaret is een avondvullende voorstelling van een of meer artiesten, met grappen, verhalen en vaak liedjes, meestal rond een thema. Stand-up is comedy waarin een comedian los van een verhaallijn grappen vertelt, vaak met meerdere comedians op een avond. Theaterkomedie is toneel met humor: komedies, blijspellen en kluchten met een vaste rolverdeling."]);
+    vragen.push(["Wat is een try-out?", `Een try-out is een voorstelling die nog in ontwikkeling is: de artiest speelt het nieuwe programma voor publiek voordat de première is. Kaarten zijn vaak goedkoper en je ziet een programma als een van de eersten. In de agenda staan nu ${soort("try-out")} try-outs${soort("première") ? ` en ${soort("première")} premières` : ""}; je herkent ze aan het label bij de voorstelling.`]);
+    vragen.push(["Welke cabaretiers spelen het vaakst?", `${opsomming(artiesten)}. Tussen haakjes staat het aantal aankomende voorstellingen. Op <a href="/artiesten/">Artiesten</a> staan alle cabaretiers en comedians.`]);
+    vragen.push(["In welke maand zijn de meeste voorstellingen?", `In ${maandLink(perMaand[0][0])}, met ${perMaand[0][1].toLocaleString("nl-NL")} voorstellingen. Het theaterseizoen loopt van september tot en met mei; in de zomer spelen artiesten minder, behalve op festivals.`]);
+    vragen.push(["Hoe vind ik een voorstelling bij mij in de buurt?", `Typ de naam van je plaats of theater in het zoekveld, of kies een plaats op <a href="/plaatsen/">Plaatsen</a>. Daar staan alle voorstellingen in die stad bij elkaar.`]);
+    if (uitverkocht) vragen.push(["Wat als een voorstelling uitverkocht is?", `Dan staat er een stempel <em>Uitverkocht</em> bij (nu bij ${uitverkocht.toLocaleString("nl-NL")} voorstellingen). Vink <em>Uitverkocht verbergen</em> aan om alleen voorstellingen te zien waarvoor nog kaarten zijn. Vaak speelt dezelfde voorstelling ook in een andere zaal in de buurt.`]);
+    vragen.push(["Hoe koop ik kaarten?", "Kaarten koop je bij het theater zelf. Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van de zaal waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
+    vragen.push(["Hoe actueel is de agenda?", "De agenda wordt elke nacht bijgewerkt vanaf de websites van de theaters en de speellijsten van de artiesten. Voorstellingen die voorbij zijn, verdwijnen vanzelf. Kijk voor de zekerheid altijd even op de site van het theater."]);
     return { tekst, vragen };
   }
 
