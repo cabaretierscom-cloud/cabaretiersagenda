@@ -259,9 +259,9 @@
     }));
   }
 
-  // ---------- /agenda/: alle voorstellingen, week voor week ----------
-  // De pagina bevat de eerste week. De rest staat in /agenda/alles.js (JSON); "Laad de volgende week" voegt
-  // telkens een week toe, en zoeken of filteren gebeurt in alle voorstellingen. De rijen hebben dezelfde
+  // ---------- /agenda/: alle voorstellingen, eerst een week, dan de rest ----------
+  // De pagina bevat de eerste week. De rest staat in /agenda/alles.js (JSON); "Toon alle volgende voorstellingen" voegt
+  // in één keer de rest toe, en zoeken of filteren gebeurt in alle voorstellingen. De rijen hebben dezelfde
   // opmaak als gigRow() in src/templates.mjs.
   const alles = document.querySelector("#gigs[data-alles]");
   if (alles) {
@@ -327,22 +327,33 @@
       return [...m.values()];
     };
     const weekHtml = (rijen) => `<section class="month-group week-groep"><h3>${label(rijen[0].datum, rijen.at(-1).datum > zondag(rijen[0].datum) ? rijen.at(-1).datum : zondag(rijen[0].datum))} <small>${aantal(rijen.length)}</small></h3>${rijen.map(rijHtml).join("")}</section>`;
-    const toonVolgende = () => {
-      const w = weken[getoond++];
-      if (!w) return;
+    const toonWeek = (w) => {
       const plek = document.createElement("div");
       plek.innerHTML = weekHtml(w);
       const sectie = plek.firstElementChild;
       alles.append(sectie);
       agendaKnoppen(sectie);
-      werkKnopBij();
     };
-    const werkKnopBij = () => {
-      const volgende = weken[getoond];
-      laadMeer.hidden = !volgende;
-      if (volgende) laadKnop.textContent = `Laad de volgende week: ${label(volgende[0].datum, zondag(volgende[0].datum))} (${volgende.length})`;
+    // Alle volgende weken in één keer, maar in porties van een paar weken per keer, zodat de pagina
+    // niet vastloopt; een nieuwe zoekopdracht (ronde) stopt het lopende werk.
+    let ronde = 0;
+    const toonRest = () => {
+      const mijn = ++ronde;
+      laadMeer.hidden = true;
+      const stap = () => {
+        if (mijn !== ronde) return;
+        for (let i = 0; i < 4 && getoond < weken.length; i++) toonWeek(weken[getoond++]);
+        werkKnopBij(true);
+        if (getoond < weken.length) setTimeout(stap, 0);
+      };
+      stap();
+    };
+    const werkKnopBij = (bezig = false) => {
+      const rest = weken.slice(getoond).reduce((n, w) => n + w.length, 0);
+      laadMeer.hidden = bezig || !rest;
+      if (rest) laadKnop.textContent = `Toon alle volgende voorstellingen (${rest})`;
       const zichtbaar = weken.slice(0, getoond).reduce((n, w) => n + w.length, 0);
-      regel.textContent = gefilterd() ? `${aantal(lijst.length)} gevonden${volgende ? `, ${zichtbaar} getoond` : ""}` : `${zichtbaar} van ${aantal(+alles.dataset.totaal)}`;
+      regel.textContent = gefilterd() ? `${aantal(lijst.length)} gevonden${rest ? `, ${zichtbaar} getoond` : ""}` : `${zichtbaar} van ${aantal(+alles.dataset.totaal)}`;
       if (leeg) leeg.hidden = !gefilterd() || lijst.length > 0;
       if (naarMaand) naarMaand.hidden = gefilterd();
     };
@@ -355,18 +366,18 @@
       await haal();
       const naald = kaal(stand.q.trim());
       lijst = data.rijen.filter((g) => g.datum >= today && (!naald || g.zoek.includes(naald)) && (!stand.genre || g.genre === stand.genre) && (!stand.uitverkocht || g.status !== "uitverkocht"));
-      weken = perWeek(lijst); getoond = 0;
+      weken = perWeek(lijst); getoond = 0; ronde++;
       alles.innerHTML = "";
-      toonVolgende();
-      if (!weken.length) werkKnopBij();
+      if (weken.length) toonWeek(weken[getoond++]);
+      werkKnopBij();
     }
 
-    // Zonder filter: de eerste week staat al in de pagina; de knop laadt vanaf de week erna.
+    // Zonder filter: de eerste week staat al in de pagina; de knop toont alles vanaf de week erna.
     const begin = () => {
       const eersteWeek = document.querySelectorAll("#gigs .gig").length;
       lijst = []; weken = [{ length: eersteWeek, server: true }]; getoond = 1;
       laadMeer.hidden = false;
-      laadKnop.textContent = "Laad de volgende week";
+      laadKnop.textContent = "Toon alle volgende voorstellingen";
       regel.textContent = `${eersteWeek} van ${aantal(+alles.dataset.totaal)}`;
     };
     laadKnop.addEventListener("click", async () => {
@@ -379,7 +390,7 @@
         getoond = 1;
         laadKnop.disabled = false;
       }
-      toonVolgende();
+      toonRest();
     });
     let timer;
     if (q) {
