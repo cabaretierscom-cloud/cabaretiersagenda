@@ -661,6 +661,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .seo-tekst { margin-top: 48px; padding-top: 24px; border-top: 2px solid var(--ink); }
 .seo-tekst h2 { margin-top: 0; }
 .seo-tekst p { color: var(--ink-2); }
+/* Homepage: "Over Cabaretiers.com" direct onder de festivals. */
+.seo-tekst.over-blok { margin-top: -16px; }
 .seo-tekst a { color: inherit; }
 
 /* Recensies op de voorstellingspagina: zwart op wit, sterren in inkt, lege sterren licht. */

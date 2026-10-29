@@ -641,6 +641,15 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   <div class="block-head"><h2 id="festival-title">Cabaretfestivals</h2><p><a href="/festivals/">Alle festivals</a></p></div>
   <div class="city-chips">${festivalsMetData.map(({ f, list }) =>
     `<a href="/festivals/${f.id}/">${esc(f.naam)} <span>${list.length}</span></a>`).join("")}</div>
+</section>
+
+<section class="block wrap" aria-labelledby="over-titel">
+  <div class="seo-tekst prose over-blok">
+    <h2 id="over-titel">Over Cabaretiers.com</h2>
+    <p>Cabaretiers.com is de theateragenda voor cabaret en comedy in Nederland en België. Elke nacht verzamelen we de speellijsten van theaters, comedyclubs en artiesten, zodat je op één plek ziet wie waar speelt: van avondvullend cabaret in de schouwburg tot stand-up in een comedyclub, festivals, open mics en komisch toneel.</p>
+    <p>Nu staan er ${tellers.speeldata.toLocaleString("nl-NL")} voorstellingen in de agenda, van ${tellers.artiesten} artiesten in ${tellers.zalen} theaters. Bij elke voorstelling brengt de knop <em>Tickets</em> je naar de site van het theater of de artiest, waar je kaarten koopt. Cabaretiers.com verkoopt zelf geen kaarten.</p>
+    <p>Speel je zelf, of programmeer je een zaal? Mail je speellijst naar <a href="mailto:${SITE.email}">${SITE.email}</a>. <a href="/over/">Meer over de agenda</a></p>
+  </div>
 </section>`;
     return layout({ path: "/", section: null, body });
   }
