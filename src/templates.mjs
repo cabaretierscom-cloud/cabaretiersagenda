@@ -607,6 +607,14 @@ ${nu ? `<section class="wall" aria-labelledby="nu-title">
   ${strip("strip-nu", "Voorstellingen die nu in het theater staan", nu)}
 </section>` : `<h1 class="visually-hidden">Cabaretiers.com, de theateragenda</h1>`}
 
+<section class="wrap stats" aria-label="De agenda in cijfers">
+  <dl>
+    <div><dt>voorstellingen</dt><dd>${tellers.speeldata.toLocaleString("nl-NL")}</dd></div>
+    <div><dt>theaters</dt><dd>${tellers.zalen}</dd></div>
+    <div><dt>artiesten</dt><dd>${tellers.artiesten}</dd></div>
+  </dl>
+</section>
+
 ${zalen ? `
 <section class="wall wall-zalen" aria-labelledby="zalen-title">
   <div class="wrap wall-head">
@@ -615,13 +623,6 @@ ${zalen ? `
   </div>
   ${strip("strip-zalen", "Theaters met de meeste voorstellingen", zalen)}
 </section>` : ""}
-<section class="wrap stats" aria-label="De agenda in cijfers">
-  <dl>
-    <div><dt>voorstellingen</dt><dd>${tellers.speeldata.toLocaleString("nl-NL")}</dd></div>
-    <div><dt>artiesten</dt><dd>${tellers.artiesten}</dd></div>
-    <div><dt>plaatsen</dt><dd>${tellers.plaatsen}</dd></div>
-  </dl>
-</section>
 
 ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` : ""}
 <section class="block wrap" id="agenda" aria-labelledby="week-title">

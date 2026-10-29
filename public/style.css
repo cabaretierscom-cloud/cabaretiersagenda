@@ -258,7 +258,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 .poster-zaal .poster-beeld img { object-position: 50% 50%; }
 .poster-zaal .where { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
-.wall-zalen { padding-top: 8px; }
+.wall-zalen { padding-top: 20px; }
 /* Zit het gezicht bovenin, dan komen de sterren onderaan het beeld. */
 .poster-sterren.onder { top: auto; bottom: 18px; }
 .poster-sterren small { font-size: .78rem; font-weight: 600; letter-spacing: 0; }
@@ -582,13 +582,12 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 
 /* ---------- Kerncijfers ---------- */
 .stats dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin: 28px 0 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
-.stats dl > div { padding: 14px 16px 16px 0; display: flex; flex-direction: column-reverse; gap: 2px; }
-.stats dl > div + div { padding-left: 16px; border-left: 1px solid var(--rule); }
+.stats dl > div { padding: 14px 16px 16px; display: flex; flex-direction: column-reverse; align-items: center; text-align: center; gap: 2px; }
+.stats dl > div + div { border-left: 1px solid var(--rule); }
 .stats dd { margin: 0; font-family: var(--font-display); font-weight: 900; font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: .9; font-variant-numeric: tabular-nums; }
 .stats dt { color: var(--ink-2); font-weight: 500; }
 @media (max-width: 600px) {
-  .stats dl > div { padding-right: 10px; }
-  .stats dl > div + div { padding-left: 12px; }
+  .stats dl > div, .stats dl > div + div { padding-inline: 8px; }
   .stats dd { font-size: 2rem; }
 }
 
