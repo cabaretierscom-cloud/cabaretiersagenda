@@ -131,6 +131,11 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .logo-tekst { display: flex; flex-direction: column; line-height: 1; }
 .ondertitel { font-family: var(--font-body); font-weight: 600; font-size: .62rem; letter-spacing: .24em; text-transform: uppercase; margin-top: 4px; padding-left: 1px; color: var(--ink); }
 .wordmark .tld { color: var(--riso-blue); font-weight: 700; font-size: 1.1rem; }
+/* Elke letter van .com een eigen kleur: op wit donkere inkten, op zwart (donkere modus en footer) lichte. */
+.wordmark .tld { --tld-punt: #2340E8; --tld-c: #6A4FB0; --tld-o: #00764E; --tld-m: #2340E8; }
+.tld-punt { color: var(--tld-punt); } .tld-c { color: var(--tld-c); } .tld-o { color: var(--tld-o); } .tld-m { color: var(--tld-m); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .wordmark .tld { --tld-punt: #5EC8E5; --tld-c: #C9B6FF; --tld-o: #FFD23F; --tld-m: #FF6A13; } }
+:root[data-theme="dark"] .wordmark .tld, .site-footer .wordmark .tld { --tld-punt: #5EC8E5; --tld-c: #C9B6FF; --tld-o: #FFD23F; --tld-m: #FF6A13; }
 /* Donkerblauw is op een donkere achtergrond slecht leesbaar; daar is .com lila. */
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .wordmark .tld { color: var(--riso-lilac); } }
 :root[data-theme="dark"] .wordmark .tld { color: var(--riso-lilac); }

@@ -190,7 +190,7 @@ ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title
   <div class="wrap">
     <a class="brand" href="/" aria-label="${SITE.name}, naar de agenda">
       <span class="brand-mark" aria-hidden="true">${LOGO_SVG}</span>
-      <span class="logo-tekst"><span class="wordmark">${WOORDMERK_SVG}<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
+      <span class="logo-tekst"><span class="wordmark">${WOORDMERK_SVG}<span class="tld"><span class="tld-punt">.</span><span class="tld-c">c</span><span class="tld-o">o</span><span class="tld-m">m</span></span></span><span class="ondertitel">De theateragenda</span></span>
     </a>
     <nav class="nav" aria-label="Hoofdmenu">${nav}</nav>
   </div>
@@ -203,7 +203,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   <div class="wrap">
     <a class="brand" href="/" aria-label="${SITE.name}, naar de voorpagina">
       <span class="brand-mark" aria-hidden="true">${LOGO_OMGEKEERD_SVG}</span>
-      <span class="logo-tekst" aria-hidden="true"><span class="wordmark">${WOORDMERK_SVG}<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
+      <span class="logo-tekst" aria-hidden="true"><span class="wordmark">${WOORDMERK_SVG}<span class="tld"><span class="tld-punt">.</span><span class="tld-c">c</span><span class="tld-o">o</span><span class="tld-m">m</span></span></span><span class="ondertitel">De theateragenda</span></span>
     </a>
     <p>Cabaret en comedy in Nederland en België, verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
     <div class="footer-contact">
