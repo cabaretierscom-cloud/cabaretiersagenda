@@ -606,6 +606,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
     const nu = nuInTheater();
     const zalen = theaterKaartjes();
+    const clubs = comedyclubs();
     const body = `
 ${nu ? `<section class="wall" aria-labelledby="nu-title">
   <div class="wrap wall-head">
@@ -631,6 +632,22 @@ ${zalen ? `
   </div>
   ${strip("strip-zalen", "Theaters met de meeste voorstellingen", zalen)}
 </section>` : ""}
+${clubs.length ? `
+<section class="wall wall-zalen" aria-labelledby="clubs-title">
+  <div class="wrap wall-head">
+    <h2 id="clubs-title">Comedy Clubs</h2>
+    <p><a href="/comedy-clubs/">Alle comedyclubs</a></p>
+  </div>
+  ${strip("strip-clubs", "Comedyclubs met de meeste voorstellingen", kaartenRij(clubs, ({ t }) => zaalKleur(t), clubKaart))}
+</section>` : ""}
+${festivalsMetData.length ? `
+<section class="wall wall-zalen" aria-labelledby="festivals-title">
+  <div class="wrap wall-head">
+    <h2 id="festivals-title">Festivals</h2>
+    <p><a href="/festivals/">Alle festivals</a></p>
+  </div>
+  ${strip("strip-festivals", "Cabaretfestivals, de eerstvolgende voorop", kaartenRij(festivalsMetData, ({ f }) => festivalKleur(f), festivalKaart))}
+</section>` : ""}
 
 ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` : ""}
 <section class="block wrap kies-blok" aria-labelledby="maand-title">
@@ -641,12 +658,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 <section class="block wrap kies-blok" aria-labelledby="plaats-title">
   <div class="wall-head"><h2 id="plaats-title">Zoek in de buurt</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
   ${plaatsNav()}
-</section>
-
-<section class="block wrap kies-blok" aria-labelledby="festival-title">
-  <div class="wall-head"><h2 id="festival-title">Cabaretfestivals</h2><p><a href="/festivals/">Alle festivals</a></p></div>
-  <div class="city-chips">${festivalsMetData.map(({ f, list }) =>
-    `<a href="/festivals/${f.id}/">${esc(f.naam)} <span>${list.length}</span></a>`).join("")}</div>
 </section>
 
 <section class="block wrap" aria-labelledby="over-titel">
@@ -1552,6 +1563,19 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return langste > 13 ? ' class="xlang"' : langste > 9 ? ' class="lang"' : "";
   };
 
+  // Gekleurde kaarten voor festivals en comedyclubs (op /festivals/, /comedy-clubs/ en de homepage).
+  const festivalKaart = ({ f, list }, kleur) => `<a class="artist-card" href="/festivals/${f.id}/" style="${ink(kleur)}">
+          <h3${kopMaat(f.naam)}>${esc(f.naam)}</h3>
+          <p>${esc(f.plaats)}<br><span class="count">${plural(list.length, "speeldatum", "speeldata")}</span>, vanaf ${fmt.dayMonth(list[0].datum)}</p>
+        </a>`;
+  const clubKaart = ({ t, n }, kleur) => `<a class="artist-card" href="/theaters/${t.id}/" style="${ink(kleur)}">
+          <h3${kopMaat(t.naam)}>${esc(t.naam)}</h3>
+          <p>${esc(t.plaats)}<br><span class="count">${plural(n, "voorstelling", "voorstellingen")}</span>, vanaf ${fmt.dayMonth(db.gigsForTheater(t.id)[0].datum)}</p>
+        </a>`;
+  const comedyclubs = () => zalenMetData.filter((t) => t.soort === "comedyclub").map((t) => ({ t, n: db.gigsForTheater(t.id).length }))
+    .sort((a, b) => b.n - a.n || a.t.naam.localeCompare(b.t.naam, "nl"));
+  const kaartenRij = (items, kleurVan, kaart) => afwisselend(items, kleurVan, { schuiven: false }).map(({ x, kleur }) => kaart(x, kleur)).join("");
+
   // Tekst en veelgestelde vragen onder /festivals/, met de festivals en datums uit de agenda.
   function festivalsOverzicht() {
     const link = (f) => `<a href="/festivals/${f.id}/">${esc(f.naam)}</a>`;
@@ -1586,10 +1610,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${Object.entries(FESTIVALSOORTEN).map(([soort, kop]) => {
         const hier = festivalsMetData.filter(({ f }) => f.soort === soort);
         return hier.length ? `<h2 class="sub-head festival-kop">${esc(kop)}</h2>
-      <div class="artists festival-kaarten">${hier.map(({ f, list }) => `<a class="artist-card" href="/festivals/${f.id}/" style="${ink(festivalKleur(f))}">
-          <h3${kopMaat(f.naam)}>${esc(f.naam)}</h3>
-          <p>${esc(f.plaats)}<br><span class="count">${plural(list.length, "speeldatum", "speeldata")}</span>, vanaf ${fmt.dayMonth(list[0].datum)}</p>
-        </a>`).join("")}</div>` : "";
+      <div class="artists festival-kaarten">${kaartenRij(hier, ({ f }) => festivalKleur(f), festivalKaart)}</div>` : "";
       }).join("\n      ")}
       ${zonder.length ? `<h2 class="sub-head">Nog geen speeldata bekend</h2>
       <ul class="sources">${zonder.map((f) => `<li>${f.website ? `<a href="${esc(f.website)}" rel="noopener">${esc(f.naam)}</a>` : esc(f.naam)} <span>${esc(f.plaats)}</span></li>`).join("")}</ul>` : ""}
@@ -1709,8 +1730,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   // /comedy-clubs/: alle comedyclubs met hun aankomende voorstellingen, en uitleg met veelgestelde vragen.
   function comedyclubsPagina() {
-    const clubs = zalenMetData.filter((t) => t.soort === "comedyclub").map((t) => ({ t, n: db.gigsForTheater(t.id).length }))
-      .sort((a, b) => b.n - a.n || a.t.naam.localeCompare(b.t.naam, "nl"));
+    const clubs = comedyclubs();
     const ids = new Set(clubs.map(({ t }) => t.id));
     const list = up.filter((g) => ids.has(g.theater));
     const steden = telPer(clubs.map(({ t }) => t), (t) => t.plaats);
@@ -1735,13 +1755,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const kaarten = Object.keys(LANDEN).map((land) => {
       const hier = clubs.filter(({ t }) => t.land === land);
       return hier.length ? `<h2 class="sub-head festival-kop">${esc(LANDEN[land])}</h2>
-      <div class="artists festival-kaarten">${afwisselend(hier, ({ t }) => zaalKleur(t), { schuiven: false }).map(({ x: { t, n }, kleur }) => {
-        const eerste = db.gigsForTheater(t.id)[0];
-        return `<a class="artist-card" href="/theaters/${t.id}/" style="${ink(kleur)}">
-          <h3${kopMaat(t.naam)}>${esc(t.naam)}</h3>
-          <p>${esc(t.plaats)}<br><span class="count">${plural(n, "voorstelling", "voorstellingen")}</span>, vanaf ${fmt.dayMonth(eerste.datum)}</p>
-        </a>`;
-      }).join("")}</div>` : "";
+      <div class="artists festival-kaarten">${kaartenRij(hier, ({ t }) => zaalKleur(t), clubKaart)}</div>` : "";
     }).join("\n      ");
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Comedy Clubs</h1><p>Comedyclubs en comedycafés in Nederland en België, met hun stand-up en open mics.</p></div>
