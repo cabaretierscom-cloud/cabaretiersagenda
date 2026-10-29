@@ -1064,6 +1064,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     if (soort === "alle") {
       tekst.push(`<h2>Nederlandse cabaretiers</h2>
         <p>Een cabaretier maakt een avondvullende voorstelling met humor, verhalen, liedjes en vaak een scherpe kijk op de maatschappij. Nederland en Vlaanderen hebben een rijke cabarettraditie, en elk seizoen gaan er honderden cabaretiers op tournee langs schouwburgen, theaters en comedyclubs. Op deze pagina staan alle cabaretiers die nu met een voorstelling in de agenda staan: ${items.length} in totaal.</p>
+        <h2>De grote drie van het Nederlandse cabaret</h2>
+        <p>Wie het over de geschiedenis van het Nederlandse cabaret heeft, noemt vaak de grote drie: Wim Kan, Toon Hermans en Wim Sonneveld. In de jaren vijftig en zestig legden zij de basis voor het cabaret zoals we het nu kennen. Wim Kan (1911–1983) maakte met Corry Vonk het ABC-cabaret en maakte de oudejaarsconference tot een jaarlijkse traditie. Toon Hermans (1916–2000) bracht de onemanshow naar het theater, met grappen, gedichten en liedjes. Wim Sonneveld (1917–1974) werd geliefd om typetjes als Frater Venantius en Nikkelen Nelis en om zijn lied <em>Het dorp</em>. De cabaretiers die nu op tournee zijn, bouwen voort op wat zij begonnen.</p>
         <h2>Bekende cabaretiers van dit moment</h2>
         <p>De bekendste cabaretiers zijn vaak ook de drukste: ${opsomming(top.slice(0, 5).map(zin))} staan de komende tijd het vaakst op het podium. ${plaatsZin}</p>`);
       if (mannen.length && vrouwen.length) tekst.push(`<h2>Cabaretiers: mannen en vrouwen</h2>
