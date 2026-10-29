@@ -1546,7 +1546,34 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return langste > 13 ? ' class="xlang"' : langste > 9 ? ' class="lang"' : "";
   };
 
+  // Tekst en veelgestelde vragen onder /festivals/, met de festivals en datums uit de agenda.
+  function festivalsOverzicht() {
+    const link = (f) => `<a href="/festivals/${f.id}/">${esc(f.naam)}</a>`;
+    const metPlaats = ({ f }) => `${link(f)} (${esc(f.plaats)})`;
+    const per = (soort) => festivalsMetData.filter(({ f }) => f.soort === soort);
+    const totaal = festivalsMetData.reduce((n, { list }) => n + list.length, 0);
+    const steden = telPer(festivalsMetData.flatMap(({ list }) => list), (g) => T.get(g.theater).plaats);
+    const tekst = [];
+    tekst.push(`<p>Cabaretfestivals zijn de plek waar nieuw cabaret- en comedytalent wordt ontdekt. Bij de meeste festivals spelen jonge makers in voorrondes, halve finales en een finale voor een jury en voor publiek. Wie wint, krijgt vaak een prijs, begeleiding of speelbeurten in het theater. Cabaretiers.com volgt ${plural(festivalsMetData.length, "festival", "festivals")} met samen ${plural(totaal, "aankomende speeldatum", "aankomende speeldata")}.</p>`);
+    const delen = Object.keys(FESTIVALSOORTEN).map((soort) => [soort, per(soort)]).filter(([, hier]) => hier.length);
+    const zin = { landelijk: (h) => `De grote nationale festivals zijn ${opsomming(h.map(metPlaats))}`, studenten: (h) => `bij de studentenfestivals ${h.length === 1 ? "staat" : "staan"} ${opsomming(h.map(metPlaats))} op het programma`, regionaal: (h) => `daarnaast zijn er kleinere en regionale festivals, zoals ${opsomming(h.map(metPlaats))}` };
+    if (delen.length) tekst.push(`<p>${delen.map(([soort, hier]) => zin[soort](hier)).join("; ")}.</p>`);
+    tekst.push(`<p>Per festival zie je alle speeldata: de voorrondes, de finale en, als die er is, de tournee met de finalisten langs theaters in het hele land. ${steden.length ? `De meeste festivalavonden zijn in ${opsomming(steden.slice(0, 4).map(([p, n]) => `${plaatsLink(p)} (${n})`))}.` : ""} Alle andere voorstellingen staan in de <a href="/agenda/">agenda</a>.</p>`);
+    const vragen = [];
+    vragen.push(["Wat is een cabaretfestival?", "Een festival of concours voor (meestal jonge) cabaretiers en comedians. De deelnemers spelen een kort programma in voorrondes en finales, en een jury kiest een winnaar; vaak is er ook een publieksprijs. Voor veel artiesten is een festival de eerste stap naar een eigen theatervoorstelling."]);
+    if (festivalsMetData.length) vragen.push(["Welke cabaretfestivals zijn er in Nederland en België?", `${delen.map(([soort, hier]) => `${FESTIVALSOORTEN[soort]}: ${opsomming(hier.map(({ f }) => link(f)))}`).join(". ")}.`]);
+    const eerst = festivalsMetData[0];
+    if (eerst) { const g = eerst.list[0], t = T.get(g.theater); vragen.push(["Wanneer is het volgende cabaretfestival?", `De eerstvolgende festivalavond is van ${link(eerst.f)}, op ${fmt.full(g.datum)}${g.tijd ? ` om ${g.tijd}` : ""} in ${theaterLink(t.id)}${t.naam.includes(t.plaats) ? "" : ` in ${esc(t.plaats)}`}.`]); }
+    vragen.push(["Wat is een finalistentournee?", "Na de finale trekken de finalisten van sommige festivals samen langs theaters in het hele land. Op zo'n avond zie je meerdere nieuwe cabaretiers achter elkaar, elk met een deel van hun festivalprogramma. De speeldata staan op de pagina van het festival."]);
+    if (per("studenten").length) vragen.push(["Wat is een studentencabaretfestival?", `Een festival dat door studenten wordt georganiseerd, waar vooral studenten en jonge makers aan meedoen, zoals ${opsomming(per("studenten").map(({ f }) => link(f)))}. Het is vaak een eerste podium voor wie net begint.`]);
+    vragen.push(["Hoe kan ik meedoen aan een cabaretfestival?", "Elk festival heeft een eigen inschrijving, meestal een paar maanden voor de voorrondes. Kijk op de website van het festival; die staat op de festivalpagina hier."]);
+    vragen.push(["Hoe koop ik kaarten voor een festival?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van het theater of het festival, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
+    vragen.push(["Mijn festival staat er niet bij. Hoe kom ik in de agenda?", `Stuur een mail naar <a href="mailto:${SITE.email}">${SITE.email}</a> met de naam van het festival en de pagina met de speeldata.`]);
+    return { tekst, vragen };
+  }
+
   function festivalIndex() {
+    const overzicht = festivalsOverzicht();
     const zonder = [...F.values()].filter((f) => !db.gigsForFestival(f.id).length).sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Cabaretfestivals</h1><p>Concoursen en festivals in Nederland en België, met hun finales en finalistentournees.</p></div>
@@ -1560,9 +1587,14 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       }).join("\n      ")}
       ${zonder.length ? `<h2 class="sub-head">Nog geen speeldata bekend</h2>
       <ul class="sources">${zonder.map((f) => `<li>${f.website ? `<a href="${esc(f.website)}" rel="noopener">${esc(f.naam)}</a>` : esc(f.naam)} <span>${esc(f.plaats)}</span></li>`).join("")}</ul>` : ""}
+      <section class="seo-tekst prose" aria-labelledby="over-titel">
+        <h2 id="over-titel">Cabaretfestivals in Nederland en België</h2>
+        ${overzicht.tekst.join("\n        ")}
+      </section>
+      ${faqHtml(overzicht.vragen, "Veelgestelde vragen over cabaretfestivals")}
     </section>`;
     return layout({ title: "Cabaretfestivals", description: kort(`Alle cabaretfestivals in Nederland en België: ${festivalsMetData.map(({ f }) => f.naam).join(", ")}. Finales, halve finales en finalistentournees.`), path: "/festivals/", section: "festivals", body,
-      schema: { type: "CollectionPage", kruimels: [["Festivals", "/festivals/"]], hoofd: lijstLd([...F.values()].map((f) => [f.naam, `/festivals/${f.id}/`])) } });
+      schema: { type: "CollectionPage", kruimels: [["Festivals", "/festivals/"]], hoofd: lijstLd([...F.values()].map((f) => [f.naam, `/festivals/${f.id}/`])), extra: [faqLd(overzicht.vragen, "/festivals/")] } });
   }
 
   function festivalTekst(f, list) {
