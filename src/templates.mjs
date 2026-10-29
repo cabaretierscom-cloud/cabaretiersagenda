@@ -92,12 +92,17 @@ function afwisselend(items, kleurVan, { schuiven = true } = {}) {
 
 export function createTemplates(db) {
   const { artiesten: A, theaters: T, voorstellingen: V } = db;
+  // Festivalnamen staan ook als "artiest" in de gegevens (om voorstellingen aan het festival te koppelen,
+  // zie festivals.json). Die krijgen geen artiestpagina: links gaan naar de festivalpagina.
+  const festivalVan = new Map([...db.festivals.values()].flatMap((f) => (f.artiesten || []).map((a) => [a, f.id])));
+  const isFestival = (id) => festivalVan.has(id);
+  const artiestPad = (id) => (isFestival(id) ? `/festivals/${festivalVan.get(id)}/` : `/artiesten/${id}/`);
 
   // Voorstellingen zonder vaste artiest (clubavonden, open mics) tonen hun titel als naam.
   const artistNames = (vid) => V.get(vid).artiesten.map((a) => A.get(a).naam).join(" & ") || V.get(vid).titel;
   const leadInk = (vid) => A.get(V.get(vid).artiesten[0])?.kleur || "blauw";
   const artistLinks = (vid) =>
-    V.get(vid).artiesten.map((a) => `<a href="/artiesten/${a}/">${esc(A.get(a).naam)}</a>`).join(" &amp; ") || esc(V.get(vid).titel);
+    V.get(vid).artiesten.map((a) => `<a href="${artiestPad(a)}">${esc(A.get(a).naam)}</a>`).join(" &amp; ") || esc(V.get(vid).titel);
   // Titel die alleen de artiestnaam herhaalt ("Dolf Jansen" van "Dolf Jansen") is geen echte titel.
   const echteTitel = (vid) => {
     const v = V.get(vid);
@@ -105,13 +110,13 @@ export function createTemplates(db) {
     return v.artiesten.length && v.titel.toLowerCase() === naam.toLowerCase() ? null : v.titel;
   };
   // Elke voorstelling met een eigen titel krijgt een pagina onder haar (eerste) artiest:
-  // /artiesten/richard-groenendijk/gelukkig-heb-je-mij-nog/.
+  // /artiesten/richard-groenendijk/gelukkig-heb-je-mij-nog/. Niet voor festivals: die hebben hun eigen pagina.
   const voorstellingPad = new Map();
   {
     const bezet = new Set();
     const metData = new Set(db.upcoming.map((g) => g.voorstelling));
     for (const v of [...V.values()].sort((x, y) => x.id.localeCompare(y.id))) {
-      if (!metData.has(v.id) || !v.artiesten.length || !echteTitel(v.id)) continue;
+      if (!metData.has(v.id) || !v.artiesten.length || !echteTitel(v.id) || isFestival(v.artiesten[0])) continue;
       const basis = `/artiesten/${v.artiesten[0]}/${slugVan(v.titel) || "voorstelling"}`;
       let pad = basis, n = 2;
       while (bezet.has(pad)) pad = `${basis}-${n++}`;
@@ -290,7 +295,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   const artiestLd = (id) => {
     const a = A.get(id);
     return {
-      "@type": isGroep(a) ? "PerformingGroup" : "Person", "@id": URL(`/artiesten/${id}/#artiest`), name: a.naam, url: URL(`/artiesten/${id}/`),
+      "@type": isGroep(a) ? "PerformingGroup" : "Person", "@id": URL(`${artiestPad(id)}#artiest`), name: a.naam, url: URL(artiestPad(id)),
       ...(a.foto ? { image: URL(a.foto.bestand) } : {}),
       // De foto kwam via Wikidata: dat item is deze artiest.
       ...(a.foto?.wikidata ? { sameAs: `https://www.wikidata.org/wiki/${a.foto.wikidata}` } : {}),
@@ -413,7 +418,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     if (!landPerPlaats.has(p)) landPerPlaats.set(p, T.get(perPlaats(p)[0]?.theater)?.land || [...T.values()].find((t) => t.plaats === p)?.land);
     return landPerPlaats.get(p);
   };
-  const artiestenMetData = [...A.values()].map((a) => ({ a, list: db.gigsForArtist(a.id) })).filter((x) => x.list.length);
+  const artiestenMetData = [...A.values()].filter((a) => !isFestival(a.id)).map((a) => ({ a, list: db.gigsForArtist(a.id) })).filter((x) => x.list.length);
   const F = db.festivals;
   const festivalsMetData = [...F.values()].map((f) => ({ f, list: db.gigsForFestival(f.id) })).filter((x) => x.list.length)
     .sort((x, y) => x.list[0].datum.localeCompare(y.list[0].datum));
@@ -589,7 +594,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return lijst.map(({ a, list }) => {
       const titles = [...new Set(list.map((g) => echteTitel(g.voorstelling)).filter(Boolean))].slice(0, 2).join(", ");
       const langsteWoord = Math.max(...a.naam.split(/\s+/).map((w) => w.length));
-      return `<a class="artist-card" href="/artiesten/${a.id}/" style="${ink(a.kleur)}">
+      return `<a class="artist-card" href="${artiestPad(a.id)}" style="${ink(a.kleur)}">
           <h3${langsteWoord > 10 ? ' class="lang"' : ""}>${esc(a.naam)}</h3>
           <p>${titles ? `${esc(titles)}<br>` : ""}<span class="count">${plural(list.length, "speeldatum", "speeldata")}</span>, vanaf ${fmt.dayMonth(list[0].datum)}</p>
         </a>`;
@@ -667,7 +672,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const rijen = up.map((g) => {
       const vs = V.get(g.voorstelling), t = T.get(g.theater);
       const vn = nr(vi, v, g.voorstelling, () => [
-        vs.artiesten.map((id) => nr(ai, a, id, () => [id, A.get(id).naam])),
+        vs.artiesten.map((id) => nr(ai, a, id, () => [artiestPad(id), A.get(id).naam])),
         vs.titel, echteTitel(g.voorstelling) || "", voorstellingPad.get(g.voorstelling) || "", vs.genre, ink(leadInk(g.voorstelling)),
       ]);
       const zn = nr(zi, z, g.theater, () => [t.id, t.naam, t.plaats, plaatsId(t.plaats), LANDEN[t.land]]);
@@ -794,7 +799,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   // Een vermelding zonder aankomende voorstellingen wordt niet getoond.
   const uitgelichtOnderwerp = (u) => {
     if (u.theater) return { naam: T.get(u.theater).naam, pad: `/theaters/${u.theater}/`, list: db.gigsForTheater(u.theater), kleur: u.kleur || "geel" };
-    if (u.artiest) return { naam: A.get(u.artiest).naam, pad: `/artiesten/${u.artiest}/`, list: db.gigsForArtist(u.artiest), kleur: u.kleur || A.get(u.artiest).kleur };
+    if (u.artiest) return { naam: A.get(u.artiest).naam, pad: artiestPad(u.artiest), list: db.gigsForArtist(u.artiest), kleur: u.kleur || A.get(u.artiest).kleur };
     return { naam: F.get(u.festival).naam, pad: `/festivals/${u.festival}/`, list: db.gigsForFestival(u.festival), kleur: u.kleur || "roze" };
   };
   function uitgelichtBlok(plek, plaats = null) {
@@ -957,7 +962,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </div>
       <div class="az" id="az">${[...groepen].map(([l, items]) => `<section class="az-group" id="letter-${l === "#" ? "0" : l}">
         <h3>${l}</h3>
-        <ul>${items.map(({ a, list }) => `<li data-naam="${esc(a.naam.toLowerCase())}"><a href="/artiesten/${a.id}/"><span class="swatch" style="${ink(a.kleur)};background:var(--bg)" aria-hidden="true"></span><span class="an">${esc(a.naam)}</span><span class="ad">vanaf ${fmt.dayMonth(list[0].datum)}</span><span class="ac">${plural(list.length, "datum", "data")}</span></a></li>`).join("")}</ul>
+        <ul>${items.map(({ a, list }) => `<li data-naam="${esc(a.naam.toLowerCase())}"><a href="${artiestPad(a.id)}"><span class="swatch" style="${ink(a.kleur)};background:var(--bg)" aria-hidden="true"></span><span class="an">${esc(a.naam)}</span><span class="ad">vanaf ${fmt.dayMonth(list[0].datum)}</span><span class="ac">${plural(list.length, "datum", "data")}</span></a></li>`).join("")}</ul>
       </section>`).join("")}</div>
       <p class="empty" id="az-leeg" hidden>Geen artiest gevonden met deze naam.</p>`;
   }
@@ -987,7 +992,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   const GEEN_CABARETIER = /\b(festival|club|kwis|cabarestafette|agency|producties|stichting|comedians|finalisten|finalistentour|tournee|open mic|night|marathon|theaterweekend|bingo|lacht|show|revue|vibe)\b/i;
   const cabaretiers = artiestenMetData.filter(({ a }) => !GEEN_CABARETIER.test(a.naam));
   const kaal = (html) => html.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/\s+/g, " ").trim();
-  const artiestLink = (a) => `<a href="/artiesten/${a.id}/">${esc(a.naam)}</a>`;
+  const artiestLink = (a) => `<a href="${artiestPad(a.id)}">${esc(a.naam)}</a>`;
   const CABARETIER_PAGINAS = {
     alle: { pad: "/alle-cabaretiers/", naam: "Alle cabaretiers", wie: "cabaretiers", filter: () => true },
     vrouw: { pad: "/alle-cabaretiers/vrouwen/", naam: "Vrouwelijke cabaretiers", wie: "vrouwelijke cabaretiers", filter: ({ a }) => a.geslacht === "vrouw" },
@@ -1199,7 +1204,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     delen.push(`<h2>Kaarten voor ${naam}</h2>
         <p>${kaartenZin}${uitverkochtZin(list)}</p>`);
     if (verwant.length) delen.push(`<h2>Meer cabaret in dezelfde zalen</h2>
-        <p>In de theaters waar ${naam} speelt, staan ook ${opsomming(verwant.map(({ a: b }) => `<a href="/artiesten/${b.id}/">${esc(b.naam)}</a>`))} op het programma.</p>`);
+        <p>In de theaters waar ${naam} speelt, staan ook ${opsomming(verwant.map(({ a: b }) => `<a href="${artiestPad(b.id)}">${esc(b.naam)}</a>`))} op het programma.</p>`);
 
     return `<section class="seo-tekst prose" aria-labelledby="over-titel">
         ${delen.join("\n        ")}
@@ -1253,7 +1258,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       `${genres.length > 1 ? `: ${opsomming(genres.slice(0, 4).map(([k, n]) => `${n} keer ${GENRE_TEKST[k]}`))}.` : `, allemaal ${GENRE_TEKST[genres[0][0]]}.`}</p>`);
     const p2 = [];
     if (artiestTel.length) {
-      const top = artiestTel.slice(0, 6).map(([id]) => `<a href="/artiesten/${id}/">${esc(A.get(id).naam)}</a>`);
+      const top = artiestTel.slice(0, 6).map(([id]) => `<a href="${artiestPad(id)}">${esc(A.get(id).naam)}</a>`);
       p2.push(artiestTel.length === 1 ? `Op het podium staat ${top[0]}.` : `Er spelen ${artiestTel.length} artiesten, onder wie ${opsomming(top)}.`);
       if (artiestTel.length > 1 && artiestTel[0][1] > 1 && artiestTel[0][1] > artiestTel[1][1]) p2.push(`${esc(A.get(artiestTel[0][0]).naam)} staat er het vaakst (${keer(artiestTel[0][1])}).`);
     }
@@ -1292,7 +1297,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const naam = esc(t.naam);
     const metArtiest = list.filter((g) => V.get(g.voorstelling).artiesten.length);
     const artiestTel = telPer(metArtiest, (g) => V.get(g.voorstelling).artiesten[0]).filter(([id]) => !GEEN_CABARETIER.test(A.get(id).naam));
-    const link = (id) => `<a href="/artiesten/${id}/">${esc(A.get(id).naam)}</a>`;
+    const link = (id) => `<a href="${artiestPad(id)}">${esc(A.get(id).naam)}</a>`;
     const wat = (g) => `${esc(artistNames(g.voorstelling) || V.get(g.voorstelling).titel)}${echteTitel(g.voorstelling) ? ` met <em>${esc(echteTitel(g.voorstelling))}</em>` : ""}`;
     const vragen = [];
     if (artiestTel.length) vragen.push([`Welke cabaretiers spelen in ${t.naam}?`, artiestTel.length === 1
@@ -1331,7 +1336,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <p>In ${naam} ${list.length === 1 ? "staat één cabaret- of comedyvoorstelling" : `staan ${list.length} cabaret- en comedyvoorstellingen`} op de agenda, ${periode(list)}, ${zalen.length === 1 ? `in ${theaterLink(zalen[0][0])}` : `verdeeld over ${zalen.length} zalen`}.` +
       ` ${genres.length > 1 ? `Het aanbod: ${opsomming(genres.slice(0, 4).map(([k, n]) => `${n} keer ${GENRE_TEKST[k]}`))}.` : `Alles is ${GENRE_TEKST[genres[0][0]]}.`}</p>`);
     if (artiestTel.length) {
-      const top = artiestTel.slice(0, 8).map(([id, n]) => `<a href="/artiesten/${id}/">${esc(A.get(id).naam)}</a>${n > 1 ? ` (${keer(n)})` : ""}`);
+      const top = artiestTel.slice(0, 8).map(([id, n]) => `<a href="${artiestPad(id)}">${esc(A.get(id).naam)}</a>${n > 1 ? ` (${keer(n)})` : ""}`);
       delen.push(`<h2>Welke cabaretiers spelen in ${naam}?</h2>
         <p>${artiestTel.length === 1 ? `Op het programma staat ${top[0]}.` : `${artiestTel.length} artiesten spelen de komende tijd in ${naam}, onder wie ${opsomming(top)}.`}` +
         `${maanden.length > 1 && maanden[0][1] > 1 ? ` De drukste maand is ${fmt.monthYear(maanden[0][0] + "-01")}, met ${maanden[0][1]} voorstellingen.` : ""}${uitverkochtZin(list)}</p>`);
@@ -1376,7 +1381,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const zalen = telPer(list, (g) => g.theater);
     const artiestTel = telPer(list.filter((g) => V.get(g.voorstelling).artiesten.length), (g) => V.get(g.voorstelling).artiesten[0])
       .filter(([id]) => !GEEN_CABARETIER.test(A.get(id).naam));
-    const link = (id) => `<a href="/artiesten/${id}/">${esc(A.get(id).naam)}</a>`;
+    const link = (id) => `<a href="${artiestPad(id)}">${esc(A.get(id).naam)}</a>`;
     const wat = (g) => `${esc(artistNames(g.voorstelling) || V.get(g.voorstelling).titel)}${echteTitel(g.voorstelling) ? ` met <em>${esc(echteTitel(g.voorstelling))}</em>` : ""}`;
     const vragen = [];
     vragen.push([`Waar kun je cabaret zien in ${p}?`, zalen.length === 1
@@ -1424,7 +1429,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const partners = [...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].filter((x) => x !== a.id);
     const cityCount = new Set(list.map((g) => T.get(g.theater).plaats)).size;
     const summary = list.length
-      ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(cityCount, "plaats", "plaatsen")}${partners.length ? `, samen met ${partners.map((p) => `<a href="/artiesten/${p}/">${esc(A.get(p).naam)}</a>`).join(" en ")}` : ""}.`
+      ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(cityCount, "plaats", "plaatsen")}${partners.length ? `, samen met ${partners.map((p) => `<a href="${artiestPad(p)}">${esc(A.get(p).naam)}</a>`).join(" en ")}` : ""}.`
       : "Op dit moment staan er geen voorstellingen gepland.";
     const festival = [...F.values()].find((f) => (f.artiesten || []).includes(a.id));
     const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap${a.foto ? " hero-met-foto" : ""}">
@@ -1607,7 +1612,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       `Op het programma: ${opsomming(onderdelen.slice(0, 5).map((t) => `<em>${esc(t)}</em>`))}. ` +
       (steden.length > 1 ? `De voorstellingen zijn te zien in ${steden.length} plaatsen: ${opsomming(steden.slice(0, 10).map(([p]) => plaatsLink(p)))}.` : `Alle voorstellingen zijn in ${plaatsLink(steden[0][0])}.`) + `</p>`);
     const p2 = [];
-    if (artiesten.length) p2.push(`Op de speellijst staan ook ${opsomming(artiesten.slice(0, 6).map((a) => `<a href="/artiesten/${a}/">${esc(A.get(a).naam)}</a>`))}.`);
+    if (artiesten.length) p2.push(`Op de speellijst staan ook ${opsomming(artiesten.slice(0, 6).map((a) => `<a href="${artiestPad(a)}">${esc(A.get(a).naam)}</a>`))}.`);
     const tekst = (p2.join(" ") + uitverkochtZin(list)).trim();
     if (tekst) zinnen.push(`<p>${tekst}</p>`);
     zinnen.push(`<p>${f.website ? `Meer over het festival, de deelnemers en de jury lees je op <a href="${esc(f.website)}" rel="noopener">de website van ${esc(f.naam)}</a>. ` : ""}Bekijk ook <a href="/festivals/">alle cabaretfestivals</a>. ${kaartenZin}</p>`);
@@ -1873,7 +1878,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const verschil = (k) => { if (!gisteren) return ""; const d = rapport.totaal[k] - gisteren[k]; return d ? ` <span class="verschil">(${d > 0 ? "+" : ""}${d})</span>` : ""; };
     const tegel = (k, label) => `<div><strong>${rapport.totaal?.[k] ?? "–"}</strong>${verschil(k)}<span>${label}</span></div>`;
     const theaterLink = (id, naam) => (db.gigsForTheater(id).length ? `<a href="/theaters/${id}/">${esc(naam)}</a>` : esc(naam));
-    const artiestLink = (id, naam) => (db.gigsForArtist(id).length ? `<a href="/artiesten/${id}/">${esc(naam)}</a>` : esc(naam));
+    const artiestLink = (id, naam) => (db.gigsForArtist(id).length ? `<a href="${artiestPad(id)}">${esc(naam)}</a>` : esc(naam));
     const site = (w) => (w ? `<a href="${esc(w)}" rel="noopener nofollow">${esc(w.replace(/^https?:\/\/(www\.)?/, ""))}</a>` : `<span class="mis">geen</span>`);
     const nieuw = rapport.nieuw || {};
     const volgorde = (r) => (!r.gelukt ? 0 : r.aantal === 0 ? 1 : 2);
@@ -1916,7 +1921,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   return {
     controlePagina,
-    home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
+    home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
   };
 }

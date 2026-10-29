@@ -293,7 +293,9 @@
     function rijHtml(g) {
       const [ais, titel, echte, pad, , kleur] = g.v, [zid, znaam, plaats, pid, land] = g.z;
       const namen = ais.map((i) => data.a[i][1]).join(" & ");
-      const artiesten = ais.map((i) => `<a href="/artiesten/${data.a[i][0]}/">${esc(data.a[i][1])}</a>`).join(" &amp; ") || esc(titel);
+      // data.a[i][0] is het adres van de artiest (of het festival); een oud bestand heeft nog de id.
+      const adres = (x) => (x.startsWith("/") ? x : `/artiesten/${x}/`);
+      const artiesten = ais.map((i) => `<a href="${adres(data.a[i][0])}">${esc(data.a[i][1])}</a>`).join(" &amp; ") || esc(titel);
       const show = !ais.length ? esc(znaam) : echte ? (pad ? `<a href="${pad}">${esc(echte)}</a>` : esc(echte)) : "";
       const wat = ais.length ? [namen, echte].filter(Boolean).join(": ") : titel;
       const inAgenda = ["geannuleerd", "verplaatst"].includes(g.status) ? "" : ` data-wat="${esc(wat)}" data-locatie="${esc(`${znaam}, ${plaats}`)}"${g.tijd ? ` data-tijd="${g.tijd}"` : ""}`;
