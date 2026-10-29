@@ -606,7 +606,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .month-nav a:hover { border-color: var(--ink); }
 .month-nav a[aria-current="page"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .month-nav a[aria-current="page"] span { color: inherit; }
-/* Zelfde rij op /plaatsen/, met plaatsnamen in plaats van maanden. */
+/* Zelfde rij op /plaatsen/ en /theaters/, met namen in plaats van maanden. */
 .stad-nav a b { text-transform: none; white-space: nowrap; }
 .stad-nav a span { white-space: nowrap; }
 
