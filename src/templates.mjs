@@ -785,6 +785,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     }).join("");
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Plaatsen</h1><p>Waar is cabaret en comedy te zien?</p></div>
+      <nav class="month-nav stad-nav" aria-label="Plaatsen met de meeste voorstellingen">${[...plaatsen].sort((x, y) => perPlaats(y).length - perPlaats(x).length || x.localeCompare(y, "nl")).slice(0, 15).map((p) =>
+        `<a href="/plaatsen/${plaatsId(p)}/"><b>${esc(p)}</b><span>${plural(perPlaats(p).length, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>
       <div class="az-tools">
         <div class="field search">
           <label for="f-plaatsnaam">Zoek een plaats of zaal</label>
