@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-29",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Claudia de Breij"
-      ],
-      "titel": "Oudejaarsconference 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-10-28",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/claudia-de-breij-dtnn"
-    },
     {
       "theater": "kleine-komedie",
       "artiesten": [
@@ -48,7 +35,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-10-30",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/claudia-de-breij-dtnn"
     },
@@ -243,7 +230,7 @@
       "genre": "cabaret",
       "datum": "2026-11-17",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/henry-van-loon-c28y"
     },
@@ -373,7 +360,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },
@@ -957,7 +944,7 @@
       "datum": "2027-01-21",
       "tijd": "20:15",
       "status": "gepland",
-      "soort": null,
+      "soort": "première",
       "bron": "https://www.dekleinekomedie.nl/agenda/jan-beuving-q816"
     },
     {
@@ -970,7 +957,7 @@
       "datum": "2027-01-22",
       "tijd": "20:15",
       "status": "gepland",
-      "soort": null,
+      "soort": "première",
       "bron": "https://www.dekleinekomedie.nl/agenda/jan-beuving-q816"
     },
     {
@@ -983,7 +970,7 @@
       "datum": "2027-01-23",
       "tijd": "20:15",
       "status": "gepland",
-      "soort": null,
+      "soort": "première",
       "bron": "https://www.dekleinekomedie.nl/agenda/jan-beuving-q816"
     },
     {

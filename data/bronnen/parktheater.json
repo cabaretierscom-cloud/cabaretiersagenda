@@ -1,7 +1,7 @@
 {
   "bron": "parktheater",
   "naam": "Parktheater Eindhoven",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-29",
   "theaters": [
     {
       "id": "parktheater-eindhoven",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "cabaret",
-      "datum": "2026-10-28",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/bedankt-om-te-komen-rxvd"
-    },
     {
       "theater": "parktheater-eindhoven",
       "artiesten": [
@@ -243,7 +230,7 @@
       "genre": "cabaret",
       "datum": "2026-11-06",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/graag-gedaan-qw7h"
     },
@@ -889,7 +876,7 @@
       "genre": "cabaret",
       "datum": "2027-02-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/niks-persoonlijks-ry-out-76hy"
     },

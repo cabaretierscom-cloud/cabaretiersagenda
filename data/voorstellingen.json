@@ -1492,6 +1492,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "de-sitcomeback-de-hoe",
+    "titel": "De hoe",
+    "artiesten": [
+      "de-sitcomeback"
+    ],
+    "genre": "theaterkomedie"
+  },
+  {
     "id": "de-tunes-versnaperingen",
     "titel": "Versnaperingen",
     "artiesten": [
@@ -2578,15 +2586,7 @@
     "artiesten": [
       "jan-beuving"
     ],
-    "genre": "cabaret",
-    "recensies": [
-      {
-        "medium": "NRC",
-        "sterren": null,
-        "citaat": "Beter was Beuving nooit.",
-        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/dekpunt-jan-beuving"
-      }
-    ]
+    "genre": "cabaret"
   },
   {
     "id": "jan-jaap-van-der-wal-amor-fati-10-jaar-in-vlaanderen",
@@ -3853,6 +3853,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "martijn-koning-martijn-koning",
+    "titel": "Martijn Koning",
+    "artiesten": [
+      "martijn-koning"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "martijn-koning-overprikkeld",
     "titel": "Overprikkeld",
     "artiesten": [
@@ -4500,7 +4508,27 @@
     "artiesten": [
       "piet-van-eeghen"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 3,
+        "citaat": "Met Piet van Eeghen is er eindelijk weer een ambachtelijk liedjesmaker actief binnen het cabaret, bewijst hij in ‘De lieve vrede’...verrassende insteek...met veel zelfspot...grappig.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-lieve-vrede-piet-van-eeghen"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Piet van Eeghen maakt van eenzaamheid en ongemak opnieuw een mooie voorstelling…even grappig als ontroerend…[over de liedjes:] Ambachtelijk gemaakt, mooi en geraffineerd van taal en van muziek.",
+        "bron": "https://kunstlinie.nl/programma/piet-van-eeghen-2/"
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": null,
+        "citaat": "Met De Lieve Vrede, zijn tweede cabaretvoorstelling, bouwt Piet van Eeghen voort op het succes van zijn liedkunst…in die afwisseling tussen humor en emotie laat Van Eeghen zien wat hij muzikaal in huis heeft.",
+        "bron": "https://kunstlinie.nl/programma/piet-van-eeghen-2/"
+      }
+    ]
   },
   {
     "id": "pieter-derks-ja-leuk",

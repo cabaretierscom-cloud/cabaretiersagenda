@@ -1,7 +1,7 @@
 {
   "bron": "verkadefabriek",
   "naam": "Verkadefabriek",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-29",
   "theaters": [
     {
       "id": "verkadefabriek-s-hertogenbosch",
@@ -133,39 +133,13 @@
     {
       "theater": "verkadefabriek-s-hertogenbosch",
       "artiesten": [
-        "Dolf Jansen – Schaamteloos"
-      ],
-      "titel": "Oudejaars 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-10-28",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/dolf-jansen-oudejaars-2026-162246"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2026-10-28",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.verkadefabriek.nl/agenda/valentina-toth-revue-revanche-try-out-162247"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
         "Valentina Tóth"
       ],
       "titel": "Revue Revanche",
       "genre": "cabaret",
       "datum": "2026-10-29",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.verkadefabriek.nl/agenda/valentina-toth-revue-revanche-try-out-162247"
     },

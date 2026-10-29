@@ -1,6 +1,6 @@
 // Maakt staande video's (1080x1920, 30 beelden per seconde, zonder geluid) voor TikTok, YouTube Shorts en
 // Instagram Reels: de affiches van "Nu in het theater", per impresariaat, hooguit 5 per video. Ze komen
-// in ontwerp/social/<datum>/, met teksten.md (bijschrift met namen, fotografen en afzender per video).
+// in ontwerp/social/<datum>/, met teksten.md (een bijschrift per video).
 // Gebruik: node scripts/social-videos.mjs  (Playwright en ffmpeg moeten beschikbaar zijn)
 // BUILD_DATE=JJJJ-MM-DD kiest de dag, zoals bij de build. Muziek kies je zelf in de app.
 import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
@@ -23,7 +23,7 @@ const db = loadData(join(root, "data"), { today });
 const videos = createTemplates(db).socialVideos(5);
 
 // Tijden in seconden: opening, per affiche (waarvan het verschuiven), slot.
-const FPS = 30, INTRO = 1.2, PER = 3, SCHUIF = 0.6, SLOT = 2.6;
+const FPS = 30, INTRO = 1.2, PER = 3, SCHUIF = 0.8, SLOT = 2.6;
 
 const server = createServer((req, res) => {
   const pad = req.url === "/" ? join(root, "ontwerp/social/video.html") : join(root, "public", decodeURIComponent(req.url));
@@ -33,8 +33,8 @@ const server = createServer((req, res) => {
 rmSync(uit, { recursive: true, force: true });
 mkdirSync(uit, { recursive: true });
 const browser = await chromium.launch();
-// De affiches hebben hun gewone maten (in CSS-pixels); op 2x komen ze scherp in 1080x1920.
-const page = await browser.newPage({ viewport: { width: 540, height: 960 }, deviceScaleFactor: 2 });
+// 720x1280 CSS-pixels op 1,5x is 1080x1920; zo breed gelden de mobiele CSS-regels van de site niet.
+const page = await browser.newPage({ viewport: { width: 720, height: 1280 }, deviceScaleFactor: 1.5 });
 await page.goto(`http://localhost:${server.address().port}/`);
 
 const teksten = [`# Video's ${today}`, "", "Bijschriften om bij het plaatsen te gebruiken. Muziek kies je zelf in de app.", ""];
@@ -57,10 +57,8 @@ for (const video of videos) {
   ffmpeg.stdin.end();
   await klaar;
 
-  const fotos = [...new Set(video.affiches.map((a) => a.maker))].join(", ");
   teksten.push(`## ${naam}`, "",
-    `Nu in het theater: ${video.affiches.map((a) => `${a.artiest} met ${a.titel}`).join(", ")}. Alle speeldata op cabaretiers.com.`, "",
-    `Foto's: ${fotos}. Met dank aan ${video.van}.`, "");
+    `Nu in het theater: ${video.affiches.map((a) => `${a.artiest} met ${a.titel}`).join(", ")}. Alle speeldata op cabaretiers.com.`, "");
   console.log(`${naam}: ${video.affiches.length} affiches, ${duur.toFixed(1)} s`);
 }
 writeFileSync(join(uit, "teksten.md"), teksten.join("\n"));

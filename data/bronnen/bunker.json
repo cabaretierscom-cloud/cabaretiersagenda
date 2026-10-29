@@ -2,7 +2,7 @@
   "bron": "bunker",
   "naam": "Agenda van Bunker Theaterzaken",
   "soort": "speellijst",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-29",
   "theaters": [],
   "speeldata": [
     {
@@ -1034,25 +1034,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Stadsschouwburg Groningen",
-        "plaats": "Groningen",
-        "land": "NL",
-        "website": "https://www.spotgroningen.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-10-28",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.spotgroningen.nl/programma/lisa-ostermann-5/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Posthuis Theater",
         "plaats": "Heerenveen",
         "land": "NL",
@@ -1065,7 +1046,7 @@
       "genre": "cabaret",
       "datum": "2026-10-29",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.posthuistheater.nl/agenda/lisa-ostermann-7yrz"
     },
@@ -1521,7 +1502,7 @@
       "genre": "cabaret",
       "datum": "2027-01-18",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://carre.nl/voorstelling/lisa-ostermann-de-baas"
     },
@@ -1540,7 +1521,7 @@
       "genre": "cabaret",
       "datum": "2027-01-19",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://carre.nl/voorstelling/lisa-ostermann-de-baas"
     },
@@ -1692,7 +1673,7 @@
       "genre": "cabaret",
       "datum": "2027-02-10",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.diligentia-pepijn.nl/agenda/lisa-ostermann-yw2z"
     },
@@ -1711,7 +1692,7 @@
       "genre": "cabaret",
       "datum": "2027-02-11",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.diligentia-pepijn.nl/agenda/lisa-ostermann-yw2z"
     },
@@ -1942,25 +1923,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/lisa-ostermann-z9pf"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Leidse Schouwburg",
-        "plaats": "Leiden",
-        "land": "NL",
-        "website": "https://leidseschouwburg-stadsgehoorzaal.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-10-27",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/patrick-laureij-kintsugi-reprise/"
     },
     {
       "theater": {
@@ -2930,25 +2892,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.ahoy.nl/agenda/show/patrick-laureij-kintsugi-2027"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Bussel",
-        "plaats": "Oosterhout",
-        "land": "NL",
-        "website": "https://www.theaterdebussel.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-10-27",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.theaterdebussel.nl/programma/kasper-van-der-laan-ty7s"
     },
     {
       "theater": {
@@ -4416,25 +4359,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Chassé Theater",
-        "plaats": "Breda",
-        "land": "NL",
-        "website": "https://www.chasse.nl"
-      },
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2026-10-28",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.chasse.nl/nl/programma/lemming-cppg"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Schouwburg Middelburg",
         "plaats": "Middelburg",
         "land": "NL",
@@ -5112,7 +5036,7 @@
       "genre": "cabaret",
       "datum": "2027-04-30",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.diligentia-pepijn.nl/agenda/merijn-scholten-xt5r"
     },
@@ -5131,7 +5055,7 @@
       "genre": "cabaret",
       "datum": "2027-05-01",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.diligentia-pepijn.nl/agenda/merijn-scholten-xt5r"
     },
@@ -5226,7 +5150,7 @@
       "genre": "cabaret",
       "datum": "2027-05-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.musisenstadstheater.nl/nl/agenda/merijn-scholten-lemming/10080"
     },
@@ -5378,7 +5302,7 @@
       "genre": "cabaret",
       "datum": "2027-06-01",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.junushoff.nl/programma/merijn-scholten-cz8r"
     },
@@ -6195,7 +6119,7 @@
       "genre": "cabaret",
       "datum": "2027-01-07",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://kattendans.nl/voorstelling/wim-helsen/"
     },
@@ -6692,25 +6616,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/wim-helsen-zvks"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Cultura",
-        "plaats": "Ede",
-        "land": "NL",
-        "website": "https://cultura-ede.nl"
-      },
-      "artiesten": [
-        "Micha Wertheim"
-      ],
-      "titel": "Micha Wertheim Voor Iedereen",
-      "genre": "cabaret",
-      "datum": "2026-10-28",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://cultura-ede.nl/agenda/micha-wertheim-224172/"
     },
     {
       "theater": {
@@ -7608,25 +7513,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Het Klooster",
-        "plaats": "Woerden",
-        "land": "NL",
-        "website": "https://www.kloosterwoerden.nl"
-      },
-      "artiesten": [
-        "Van Vleuten & Van Muiswinkel"
-      ],
-      "titel": "Alles Onder Controle",
-      "genre": "cabaret",
-      "datum": "2026-10-28",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.kloosterwoerden.nl/voorstelling/van-vleuten-en-van-muiswinkel-try-out/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Podium Hoge Woerd",
         "plaats": "Utrecht",
         "land": "NL",
@@ -7658,7 +7544,7 @@
       "genre": "cabaret",
       "datum": "2026-11-10",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.mimik.nl/agenda/van-vleuten-en-van-muiswinkel-10-11"
     },
@@ -7677,7 +7563,7 @@
       "genre": "cabaret",
       "datum": "2026-11-11",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.mimik.nl/agenda/van-vleuten-en-van-muiswinkel-11-11"
     },
@@ -8786,25 +8672,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Lindenberg Cultuurhuis",
-        "plaats": "Nijmegen",
-        "land": "NL",
-        "website": "https://www.delindenberg.com"
-      },
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2026-10-28",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.delindenberg.com/agenda/martijn-koning-overprikkeld-try-out"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "City of Wesopa",
         "plaats": "Weesp",
         "land": "NL",
@@ -9083,7 +8950,7 @@
       "genre": "cabaret",
       "datum": "2026-12-02",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.kennemertheater.nl/programma/martijn-koning-fst4"
     },
@@ -10242,7 +10109,7 @@
       "genre": "cabaret",
       "datum": "2027-02-05",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://theaterderichel.nl/evenementen/sezgin-gulec-try-outs/"
     },
@@ -14289,7 +14156,7 @@
       "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.posthuistheater.nl/agenda/cabarestafette-presenteert-nieuw-geluid-x5mc"
     },
@@ -14693,5 +14560,72 @@
       "bron": "https://www.coolkunstencultuur.nl/theater/agenda/seizoen-2026-2027/cabarestafette/"
     }
   ],
-  "recensies": {}
+  "recensies": {
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/kintsugi-patrick-laureij": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Terwijl hij wiebelig blijft in zijn zoektocht naar veiligheid en frictieloos contact, is zijn openhartige stand-up over dat onderwerp in Kintsugi mooi in balans."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Kintsugi is een grappenkanon dat ook tranen afschiet. In zijn beste voorstelling tot nu toe neemt Patrick Laureij zichzelf goudeerlijk onder de loep. Zijn driften, verslavingen en hunkering naar contact zijn geestig, maar verraden tegelijk een diepe kwetsbaarheid."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Met elke anekdote bouwt hij aan een kwetsbaar zelfportret, van een man die zijn gevoelens niet onder controle heeft, maar daar toch mee om weet te gaan. Dat culmineert in een trefzeker en hilarisch slotverhaal."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/ruim-kasper-van-der-laan": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "De troef van Kasper van der Laan is het samenvallen van zijn fysiek met zijn absurde vondsten.",
+        "over": "Kasper van der Laan"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Na zijn briljante debuut is Kasper van der Laan onstuitbaar op weg een Hele Grote te worden.",
+        "over": "Kasper van der Laan"
+      },
+      {
+        "medium": "AD",
+        "sterren": 5,
+        "citaat": "Kasper van der Laan is een natuurtalent.",
+        "over": "Kasper van der Laan"
+      }
+    ],
+    "https://theaterdestoep.nl/voorstelling/merijn-scholten-2627": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "De virtuoze komiek Merijn Scholten speelt in ‘Lemming’ op de toppen van zijn kunnen."
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Een flitsende voorstelling, vol leuk en expressief acteerwerk."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Komiek Merijn Scholten heeft een hoop kritiek op de maatschappij, maar is vooral enorm grappig."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Merijn Scholten brengt een hilarische ode aan de lanterfantende kudde"
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lemming-merijn-scholten": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "De virtuoze komiek Merijn Scholten speelt in ‘Lemming’ op de toppen van zijn kunnen."
+      }
+    ]
+  }
 }

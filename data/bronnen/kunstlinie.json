@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-29",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -68,19 +68,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Steven Brunswijk"
-      ],
-      "titel": "Steven Brunswijk",
-      "genre": "cabaret",
-      "datum": "2027-04-23",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Roué Verveer"
       ],
       "titel": "Roué Verveer",
@@ -90,6 +77,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Steven Brunswijk"
+      ],
+      "titel": "Steven Brunswijk",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
     },
     {
       "theater": "kunstlinie",
@@ -107,19 +107,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Jörgen Raymann"
-      ],
-      "titel": "Jörgen Raymann",
-      "genre": "cabaret",
-      "datum": "2027-02-28",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/jorgen-raymann/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Team Ricky Risolles"
       ],
       "titel": "Team Ricky Risolles",
@@ -129,6 +116,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/team-ricky-risolles/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Jörgen Raymann"
+      ],
+      "titel": "Jörgen Raymann",
+      "genre": "cabaret",
+      "datum": "2027-02-28",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/jorgen-raymann/"
     },
     {
       "theater": "kunstlinie",
@@ -198,19 +198,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Joep van Deudekom & Rob Urgert"
-      ],
-      "titel": "Joep van Deudekom & Rob Urgert",
-      "genre": "cabaret",
-      "datum": "2026-12-19",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/joep-van-deudekom-rob-urgert/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Bro’s"
       ],
       "titel": "Bro’s",
@@ -224,15 +211,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Rayen Panday & Friends"
+        "Joep van Deudekom & Rob Urgert"
       ],
-      "titel": "Rayen Panday & Friends",
+      "titel": "Joep van Deudekom & Rob Urgert",
       "genre": "cabaret",
-      "datum": "2026-12-15",
+      "datum": "2026-12-19",
       "tijd": "20:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/rayen-panday-friends/"
+      "bron": "https://kunstlinie.nl/programma/joep-van-deudekom-rob-urgert/"
     },
     {
       "theater": "kunstlinie",
@@ -419,19 +406,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Valentina Tóth",
-      "genre": "cabaret",
-      "datum": "2027-04-24",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/valentina-toth-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Marlon Kicken"
       ],
       "titel": "Marlon Kicken",
@@ -506,19 +480,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/ronald-goedemondt-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Piet van Eeghen"
-      ],
-      "titel": "Piet van Eeghen",
-      "genre": "cabaret",
-      "datum": "2027-02-27",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/piet-van-eeghen-2/"
     },
     {
       "theater": "kunstlinie",
@@ -744,19 +705,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Pieter Derks"
-      ],
-      "titel": "Pieter Derks",
-      "genre": "cabaret",
-      "datum": "2026-10-28",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/pieter-derks/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "René van Meurs"
       ],
       "titel": "René van Meurs",
@@ -818,6 +766,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/david-van-rosmalen/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Rayen Panday & Friends"
+      ],
+      "titel": "Rayen Panday & Friends",
+      "genre": "cabaret",
+      "datum": "2026-12-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/rayen-panday-friends/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Valentina Tóth",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/valentina-toth-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Piet van Eeghen"
+      ],
+      "titel": "Piet van Eeghen",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/piet-van-eeghen-2/"
     }
   ],
   "recensies": {
@@ -850,23 +837,6 @@
         "medium": "I Love Theater",
         "sterren": 4,
         "citaat": "Scherp, intelligent en bijzonder grappig… Hier staat een cabaretier die volledig vertrouwt op zijn vakmanschap"
-      }
-    ],
-    "https://kunstlinie.nl/programma/valentina-toth-2/": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 5,
-        "citaat": "Wildbloei’ is een unieke performance van het megatalent Valentina Tóth"
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Valentina Tóth heeft een perfect debuutprogramma afgeleverd, een frisse wind in kleinkunstland, een wervelwind."
-      },
-      {
-        "medium": "NRC",
-        "sterren": 5,
-        "citaat": "Een overweldigend debuut van cabaretier Valentina Tóth over ‘de hysterische vrouw’."
       }
     ],
     "https://kunstlinie.nl/programma/merijn-scholten-3/": [
@@ -1000,6 +970,40 @@
         "medium": "de Volkskrant",
         "sterren": null,
         "citaat": "David van Rosmalen speelde de Leidse Schouwburg plat met een intelligente mengeling van (woord)grappen, spoken word, pianoliedjes en nederhiphop."
+      }
+    ],
+    "https://kunstlinie.nl/programma/valentina-toth-2/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "Wildbloei’ is een unieke performance van het megatalent Valentina Tóth"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Valentina Tóth heeft een perfect debuutprogramma afgeleverd, een frisse wind in kleinkunstland, een wervelwind."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Een overweldigend debuut van cabaretier Valentina Tóth over ‘de hysterische vrouw’."
+      }
+    ],
+    "https://kunstlinie.nl/programma/piet-van-eeghen-2/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Met Piet van Eeghen is er eindelijk weer een ambachtelijk liedjesmaker actief binnen het cabaret, bewijst hij in ‘De lieve vrede’…verrassende insteek…met veel zelfspot…grappig."
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": null,
+        "citaat": "Met De Lieve Vrede, zijn tweede cabaretvoorstelling, bouwt Piet van Eeghen voort op het succes van zijn liedkunst…in die afwisseling tussen humor en emotie laat Van Eeghen zien wat hij muzikaal in huis heeft."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Piet van Eeghen maakt van eenzaamheid en ongemak opnieuw een mooie voorstelling…even grappig als ontroerend…[over de liedjes:] Ambachtelijk gemaakt, mooi en geraffineerd van taal en van muziek."
       }
     ]
   }

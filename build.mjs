@@ -49,6 +49,8 @@ const write = (path, html) => {
 
 write("/", t.home());
 write("/agenda/", t.agendaIndex());
+// .js in plaats van .json: de server verstuurt javascript ingepakt (brotli), JSON niet. De inhoud is JSON.
+writeFileSync(join(out, "agenda", "alles.js"), JSON.stringify(t.agendaData()));
 write("/vanavond/", t.dagPagina("vanavond"));
 write("/dit-weekend/", t.dagPagina("dit-weekend"));
 // Steden met genoeg aanbod (zie stadPaginas); verdwijnt een pagina, dan stuurt .htaccess door naar de plaats.
@@ -62,10 +64,12 @@ write("/alle-cabaretiers/", t.cabaretiersPagina("alle"));
 write("/alle-cabaretiers/vrouwen/", t.cabaretiersPagina("vrouw"));
 write("/alle-cabaretiers/mannen/", t.cabaretiersPagina("man"));
 // Alleen artiesten en zalen met aankomende voorstellingen krijgen een pagina.
-for (const a of db.artiesten.values()) if (db.gigsForArtist(a.id).length) write(`/artiesten/${a.id}/`, t.artistPage(a));
+// Festivalnamen in artiesten.json (zie festivals.json) niet: die staan onder /festivals/ (doorverwijzing hieronder).
+for (const a of db.artiesten.values()) if (!t.festivalVan.has(a.id) && db.gigsForArtist(a.id).length) write(`/artiesten/${a.id}/`, t.artistPage(a));
 // Elke voorstelling met een eigen titel: /artiesten/<artiest>/<voorstelling>/.
 for (const [vid, pad] of t.voorstellingPaden) write(pad, t.voorstellingPagina(vid));
 write("/theaters/", t.theaterIndex());
+write("/comedy-clubs/", t.comedyclubsPagina());
 for (const th of db.theaters.values()) if (db.gigsForTheater(th.id).length) write(`/theaters/${th.id}/`, t.theaterPage(th));
 write("/festivals/", t.festivalIndex());
 for (const f of db.festivals.values()) write(`/festivals/${f.id}/`, t.festivalPagina(f));
@@ -103,9 +107,13 @@ writeFileSync(join(out, "sitemap.xml"),
     const m = p.match(/^\/artiesten\/([^/]+)\/$/);
     if (m && !bestaat.has(`/${m[1]}/`)) doel.set(`/${m[1]}/`, p);
   }
+  // Een festival dat als artiest in de gegevens staat: het korte adres gaat naar de festivalpagina.
+  for (const [id, f] of t.festivalVan) if (!bestaat.has(`/${id}/`)) doel.set(`/${id}/`, `/festivals/${f}/`);
   for (const a of oud) if (!bestaat.has(a) && !doel.has(a)) doel.set(a, bestaat.has(`/artiesten${a}`) ? `/artiesten${a}` : "/");
   const regels = [...doel].sort().map(([van, naar]) =>
     `RedirectMatch 301 ^${van.replace(/\/$/, "").replace(/[.+?^$()[\]{}|\\]/g, "\\$&")}/?$ ${SITE.url}${naar}`);
+  // /artiesten/<festival>/ en alles daaronder (oude voorstellingspagina's) -> /festivals/<festival>/.
+  for (const [id, f] of [...t.festivalVan].sort()) regels.push(`RedirectMatch 301 ^/artiesten/${id.replace(/[.+?^$()[\]{}|\\]/g, "\\$&")}(/.*)?$ ${SITE.url}/festivals/${f}/`);
   const ht = join(out, ".htaccess");
   writeFileSync(ht, readFileSync(ht, "utf8") + `\n# Oude adressen (gemaakt door build.mjs, niet met de hand aanpassen)\n<IfModule mod_alias.c>\n${regels.join("\n")}\n</IfModule>\n`);
 }

@@ -36,6 +36,12 @@ export const isGroep = (a) => a.vorm ? a.vorm === "groep"
 // Optioneel per solo-artiest, alleen met bron (Wikidata): voor de pagina's /alle-cabaretiers/mannen/ en /vrouwen/.
 export const GESLACHTEN = ["man", "vrouw"];
 
+// Indeling van /festivals/ (veld `soort` in festivals.json), in deze volgorde.
+export const FESTIVALSOORTEN = {
+  landelijk: "Grote nationale cabaretfestivals",
+  studenten: "Studentencabaretfestivals",
+  regionaal: "Kleinschalige en regionale festivals",
+};
 export const THEATERSOORTEN = ["theater", "cultuurcentrum", "comedyclub", "café", "festivalterrein", "overig"];
 
 // Inktkleuren; de waarde is de naam van de CSS-variabele en de tekstkleur erop.
@@ -87,6 +93,7 @@ export function loadData(dir, { today }) {
   for (const f of festivals) {
     if (!f.naam || !f.plaats) errors.push(`festival ${f.id}: naam en plaats zijn verplicht`);
     if (!LANDEN[f.land]) errors.push(`festival ${f.id}: onbekend land "${f.land}"`);
+    if (!FESTIVALSOORTEN[f.soort]) errors.push(`festival ${f.id}: onbekende soort "${f.soort}" (kies uit ${Object.keys(FESTIVALSOORTEN).join(", ")})`);
     for (const a of f.artiesten || []) if (!A.has(a)) errors.push(`festival ${f.id}: onbekende artiest "${a}"`);
   }
 

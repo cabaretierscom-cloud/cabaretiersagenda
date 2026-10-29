@@ -1,7 +1,7 @@
 {
   "bron": "leiden",
   "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-29",
   "theaters": [
     {
       "id": "leidse-schouwburg",
@@ -226,17 +226,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-comedy-lachstof-2-2/"
-    },
-    {
-      "theater": "stadsgehoorzaal-leiden",
-      "artiesten": [],
-      "titel": "Lachstof #1",
-      "genre": "cabaret",
-      "datum": "2026-10-28",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-comedy-lachstof-1-2/"
     },
     {
       "theater": "stadsgehoorzaal-leiden",
@@ -581,9 +570,9 @@
       ],
       "titel": "Kintsugi",
       "genre": "cabaret",
-      "datum": "2026-10-27",
+      "datum": "2026-11-02",
       "tijd": "20:15",
-      "status": "geannuleerd",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/patrick-laureij-kintsugi-reprise/"
     },

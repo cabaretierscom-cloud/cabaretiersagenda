@@ -2,82 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-29",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": "cc-de-kruisboog-tienen",
-      "artiesten": [
-        "Bregje Iding",
-        "Jeroen Dyck",
-        "Peter Kluppels",
-        "MC Jarno Boone"
-      ],
-      "titel": "Humo's Comedy Cup Finalistentour",
-      "genre": "stand-up",
-      "datum": "2026-10-28",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://dekruisboog.tienen.be/finalistentour-humos-comedy-cup-bregje-idig-jeroen-dyck-peter-kluppels-en-mc-jarno-boone"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Pand P",
-        "plaats": "Eindhoven",
-        "land": "NL",
-        "website": "https://www.parktheater.nl"
-      },
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "stand-up",
-      "datum": "2026-10-28",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.parktheater.nl/programma/bedankt-om-te-komen-rxvd?gad_source=1&gad_campaignid=23842513906&gbraid=0AAAAAD3uCwo1JP1zztk_bRZd_S8K8kR0H"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Sint Corneliuskerk",
-        "plaats": "Aalbeke",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Dries Heyneman"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-10-28",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.uitinvlaanderen.be/agenda/e/cultuur-in-de-kerk-dries-heyneman-try-out/8ee72656-f918-4d20-900c-39b2f1766fa4"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Leest",
-        "plaats": "Izegem",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Hans Cools"
-      ],
-      "titel": "Zolang de voorraad strekt",
-      "genre": "stand-up",
-      "datum": "2026-10-28",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/hans-cools/2026-10-28/"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -4598,6 +4525,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/arnout-van-den-bosche/2027-02-11/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC Den Hoogen Pad",
+        "plaats": "Maldegem",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Hans Cools"
+      ],
+      "titel": "Zolang de voorraad strekt",
+      "genre": "stand-up",
+      "datum": "2027-02-11",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedyshows.be/kalender/hans-cools/2027-02-11/"
     },
     {
       "theater": {

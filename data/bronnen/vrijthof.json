@@ -1,7 +1,7 @@
 {
   "bron": "vrijthof",
   "naam": "Theater aan het Vrijthof",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-29",
   "theaters": [
     {
       "id": "theater-aan-het-vrijthof",
@@ -21,6 +21,45 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Pepijn Schoneveld"
+      ],
+      "titel": "Welkom dat je luistert",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Hokjesdenker"
+      ],
+      "titel": "We zien het wel even",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/we-zien-het-wel-even-hokjesdenker"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Lovella Telesford"
+      ],
+      "titel": "Wat een gezeik!",
+      "genre": "cabaret",
+      "datum": "2026-11-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/wat-een-gezeik-lovella-telesford"
+    },
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
@@ -59,19 +98,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/revue-revanche-valentina-toth"
-    },
-    {
-      "theater": "ainsi-maastricht",
-      "artiesten": [
-        "Hokjesdenker"
-      ],
-      "titel": "We zien het wel even",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/we-zien-het-wel-even-hokjesdenker"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -284,19 +310,6 @@
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
-        "Lovella Telesford"
-      ],
-      "titel": "Wat een gezeik!",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/wat-een-gezeik-lovella-telesford"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
         "Micky Overman"
       ],
       "titel": "Theatertour",
@@ -501,19 +514,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/oudejaarsconference-2026-guido-weijers"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Pepijn Schoneveld"
-      ],
-      "titel": "Welkom dat je luistert",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld"
     },
     {
       "theater": "theater-aan-het-vrijthof",

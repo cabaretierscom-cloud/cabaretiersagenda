@@ -1,7 +1,7 @@
 {
   "bron": "speelhuis",
   "naam": "Theater Het Speelhuis",
-  "opgehaald": "2026-10-27",
+  "opgehaald": "2026-10-29",
   "theaters": [
     {
       "id": "theater-het-speelhuis",
@@ -194,19 +194,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterspeelhuis.nl/programma/marie-koet-13236"
-    },
-    {
-      "theater": "theater-het-speelhuis",
-      "artiesten": [
-        "Rayen Panday"
-      ],
-      "titel": "Grip",
-      "genre": "cabaret",
-      "datum": "2026-10-28",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://theaterspeelhuis.nl/programma/rayen-panday-13237"
     },
     {
       "theater": "theater-het-speelhuis",

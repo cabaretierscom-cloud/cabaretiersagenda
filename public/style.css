@@ -135,20 +135,30 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .wordmark .tld { color: var(--riso-lilac); } }
 :root[data-theme="dark"] .wordmark .tld { color: var(--riso-lilac); }
 /* Woordmerk (logo-ontwerp 11): de letters als SVG uit src/woordmerk.mjs. De binnenruimtes van a, b en e
-   krijgen riso-kleuren; de punt op de i is de punt uit het beeldmerk. */
+   krijgen riso-kleuren: op licht de kleuren waar zwarte tekst op past, op donker (witte letters) de kleuren
+   waar witte tekst op past. De punt op de i is de punt uit het beeldmerk. */
 .wordmark { display: flex; align-items: baseline; }
 .wordmark .woord { width: 4.546em; height: 0.845em; margin-bottom: -0.015em; flex-shrink: 0; }
 .woord .bk-1 { fill: var(--riso-orange); }
 .woord .bk-2 { fill: var(--riso-yellow); }
-.woord .bk-3 { fill: var(--riso-green); }
+.woord .bk-3 { fill: var(--riso-lime); }
 .woord .bk-4 { fill: var(--riso-pink); }
-.woord .bk-5 { fill: var(--riso-lilac); }
-.woord .kern { fill: var(--riso-orange); }
+.woord .bk-5 { fill: var(--riso-aqua); }
+.woord .kern { fill: var(--riso-red); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .woord .bk-1, :root:not([data-theme="light"]) .woord .bk-4 { fill: var(--riso-purple); }
+  :root:not([data-theme="light"]) .woord .bk-2, :root:not([data-theme="light"]) .woord .bk-5 { fill: var(--riso-green); }
+  :root:not([data-theme="light"]) .woord .bk-3, :root:not([data-theme="light"]) .woord .kern { fill: var(--riso-blue); }
+}
+:root[data-theme="dark"] .woord .bk-1, :root[data-theme="dark"] .woord .bk-4 { fill: var(--riso-purple); }
+:root[data-theme="dark"] .woord .bk-2, :root[data-theme="dark"] .woord .bk-5 { fill: var(--riso-green); }
+:root[data-theme="dark"] .woord .bk-3, :root[data-theme="dark"] .woord .kern { fill: var(--riso-blue); }
 .nav { display: flex; gap: 4px; margin-left: auto; }
 .nav a { text-decoration: none; font-weight: 500; padding: 10px 12px; border-radius: 999px; white-space: nowrap; }
 .nav a:hover { background: var(--paper-2); }
 .nav a[aria-current="page"] { background: var(--ink); color: var(--paper); }
-@media (max-width: 760px) {
+/* Menu onder het logo zodra de zeven knoppen er niet meer naast passen. */
+@media (max-width: 960px) {
   .site-header .wrap { flex-wrap: wrap; gap: 4px 16px; padding-block: 10px; }
   .nav { margin-left: -12px; width: calc(100% + 12px); overflow-x: auto; scrollbar-width: none; }
 }
@@ -163,14 +173,14 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .btn.ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink); }
 
 /* ---------- Affichewand ---------- */
-.wall { padding-block: 20px 8px; }
-.wall-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 16px; margin-bottom: 16px; }
+.wall { padding-block: 16px 0; }
+.wall-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 6px 16px; margin-bottom: 8px; }
 .wall-head :is(h1, h2) { font-family: var(--font-display); font-weight: 900; font-size: var(--step-3); line-height: .95; letter-spacing: -0.015em; }
 .wall-head p { color: var(--ink-2); max-width: 34ch; margin: 0; }
 .strip-wrap { position: relative; }
 .strip {
   display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
-  scrollbar-width: none; padding-block: 14px 30px;
+  scrollbar-width: none; padding-block: 12px 22px;
 }
 .strip::-webkit-scrollbar { display: none; }
 .strip:focus-visible { outline-offset: -3px; }
@@ -214,7 +224,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 /* Affiche met promobeeld ("Nu in het theater"): bovenin de foto, daaronder het kleurvlak van de artiest,
    op de naad twee inkepingen zoals bij een toegangskaartje. */
-.poster-foto { --naad: 50%; display: flex; flex-direction: column; padding: 0; border-radius: 18px; }
+/* Compact formaat, zodat onder de eerste rij het begin van de volgende in beeld komt. */
+.poster-foto { --naad: 50%; width: 240px; height: 390px; display: flex; flex-direction: column; padding: 0; border-radius: 18px; }
 /* Losse kaartjes met wat ruimte ertussen; de eerste begint op de lijn van de koppen. */
 .strip:has(.poster-foto) { --rand: max(16px, calc((100vw - var(--wrap)) / 2 + 16px)); gap: 14px; padding-inline: var(--rand); scroll-padding-inline: var(--rand); }
 /* De stippen en de scheurlijn horen bij het kleurvlak: dat groeit mee als de tekst langer is (de foto wordt
@@ -245,14 +256,9 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   padding: 4px 10px 5px; border-radius: 999px; background: var(--bg); color: var(--fg);
   font-size: 1.05rem; letter-spacing: .06em; line-height: 1;
 }
-/* Naamsvermelding van een vrije foto (Wikimedia) op het kaartje van een zaal. */
-.poster-credit {
-  position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 12px 8px; font-size: .68rem; line-height: 1.3; color: #FFF;
-  background: linear-gradient(transparent, rgba(0,0,0,.6)); overflow-wrap: anywhere;
-}
 .poster-zaal .poster-beeld img { object-position: 50% 50%; }
-.poster-zaal .where { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.wall-zalen { padding-top: 40px; }
+.poster-zaal .where { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+.wall-zalen { padding-top: 20px; }
 /* Zit het gezicht bovenin, dan komen de sterren onderaan het beeld. */
 .poster-sterren.onder { top: auto; bottom: 18px; }
 .poster-sterren small { font-size: .78rem; font-weight: 600; letter-spacing: 0; }
@@ -268,23 +274,25 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   .poster-foto:hover .poster-vlak::before, .poster-foto:focus-visible .poster-vlak::before { opacity: .38; }
 }
 /* Datum bovenaan, aantal speeldata onderaan; titel, artiest en zaal daartussen, ook bij een titel van twee regels. */
-.poster-info { flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 20px 14px 22px 22px; }
+.poster-info { flex: 1; min-width: 0; display: flex; flex-direction: column; padding: 16px 10px 16px 18px; }
 /* Afscheurstrook rechts, achter een verticale perforatie, zoals de controlestrook van een toegangskaartje. */
 .poster-stub {
-  position: relative; flex: 0 0 30px; border-left: 2px dashed color-mix(in srgb, var(--fg) 45%, transparent);
+  position: relative; flex: 0 0 26px; border-left: 2px dashed color-mix(in srgb, var(--fg) 45%, transparent);
 }
-.poster-foto .wanneer { font-size: .85rem; font-weight: 600; line-height: 1.2; }
+.poster-foto .wanneer { font-size: .78rem; font-weight: 600; line-height: 1.2; }
 .poster-foto .when { display: flex; align-items: baseline; gap: 6px; margin-top: 4px; }
-.poster-foto .day { display: inline; font-size: 3.4rem; line-height: .8; margin: 0; }
-.poster-foto .month { font-size: 1.6rem; }
+.poster-foto .day { display: inline; font-size: 2.8rem; line-height: .8; margin: 0; }
+.poster-foto .month { font-size: 1.35rem; }
 .poster-foto .ftitel {
   display: block; font-family: var(--font-display); font-weight: 900; text-transform: uppercase;
-  font-size: 2.1rem; line-height: .92; letter-spacing: .005em; margin-top: 10px; overflow-wrap: anywhere;
+  font-size: 2.6rem; line-height: .9; letter-spacing: .005em; margin-top: 2px; overflow-wrap: anywhere;
 }
-.poster-foto .ftitel.long { font-size: 1.8rem; }
-.poster-foto .ftitel.xlong { font-size: 1.45rem; }
-.poster-foto .fartiest { display: block; font-weight: 700; font-size: 1.05rem; line-height: 1.2; margin-top: 6px; text-wrap: balance; }
-.poster-foto .where { display: block; font-size: .9rem; line-height: 1.35; margin: 4px 0 12px; }
+.poster-foto .ftitel.long { font-size: 2.1rem; }
+.poster-foto .ftitel.xlong { font-size: 1.4rem; }
+.poster-foto .fartiest { display: block; font-weight: 700; font-size: 1.15rem; line-height: 1.2; margin-top: 6px; text-wrap: balance; }
+.poster-foto .where { display: block; font-size: .85rem; line-height: 1.35; margin: 8px 0 10px; }
+.poster-foto .where .wanneer { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; opacity: .8; }
+.poster-foto .tag { font-size: .78rem; padding: 2px 9px; }
 .poster-foto .tag { align-self: flex-start; margin-top: auto; }
 @media (hover: hover) and (pointer: fine) {
   .poster-foto:hover .poster-beeld img, .poster-foto:focus-visible .poster-beeld img { transform: scale(1.04); }
@@ -302,14 +310,25 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .strip-nav svg { width: 22px; height: 22px; }
 @media (max-width: 600px) {
   .poster { width: 78vw; height: 470px; }
-  .poster-foto { height: 500px; --naad: 50%; }
-  .poster-info { padding: 16px 10px 18px 18px; }
-  .poster-foto .day { font-size: 2.9rem; }
-  .poster-foto .month { font-size: 1.4rem; }
-  .poster-foto .ftitel { font-size: 1.75rem; margin-top: 8px; }
-  .poster-foto .ftitel.long { font-size: 1.6rem; }
-  .poster-foto .ftitel.xlong { font-size: 1.3rem; }
-  .poster-stub { flex-basis: 24px; }
+  .poster-foto { width: min(62vw, 250px); height: 340px; --naad: 50%; }
+  .poster-info { padding: 12px 8px 12px 14px; }
+  .poster-foto .wanneer { font-size: .72rem; }
+  .poster-foto .day { font-size: 2.3rem; }
+  .poster-foto .month { font-size: 1.15rem; }
+  .poster-foto .ftitel { font-size: 2.1rem; margin-top: 0; }
+  .poster-foto .ftitel.long { font-size: 1.75rem; }
+  .poster-foto .ftitel.xlong { font-size: 1.2rem; }
+  .poster-foto .fartiest { font-size: 1rem; margin-top: 4px; }
+  .poster-foto .where { font-size: .76rem; margin-bottom: 8px; }
+  .poster-sterren { font-size: .9rem; left: 10px; top: 10px; }
+  .poster-stub { flex-basis: 20px; }
+  .wall { padding-top: 12px; }
+  .wall-head { flex-wrap: nowrap; align-items: baseline; }
+  .wall-head :is(h1, h2) { font-size: clamp(1.6rem, 8.4vw, 2.1rem); white-space: nowrap; }
+  .wall-head p { white-space: nowrap; font-size: .85rem; }
+  /* Langere koppen (Voorstellingen per maand): de link mag eronder. */
+  .kies-blok .wall-head { flex-wrap: wrap; }
+  .kies-blok .wall-head h2 { white-space: normal; }
   .strip-nav { display: none; }
 }
 
@@ -441,6 +460,17 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .artist-card p { margin: 0; font-size: .95rem; line-height: 1.35; }
 .artist-card .count { font-weight: 700; }
 .artist-card:hover h3 { text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 5px; }
+/* /festivals/: per soort een kop; op een telefoon twee kaarten naast elkaar. */
+.festival-kop { line-height: 1.05; }
+.festival-kop:first-of-type { margin-top: 8px; }
+@media (max-width: 600px) {
+  .festival-kaarten { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .festival-kaarten .artist-card { min-height: 170px; padding: 14px; }
+  .festival-kaarten .artist-card h3 { font-size: 1.5rem; }
+  .festival-kaarten .artist-card h3.lang { font-size: 1.25rem; }
+  .festival-kaarten .artist-card h3.xlang { font-size: 1.05rem; }
+  .festival-kaarten .artist-card p { font-size: .82rem; }
+}
 
 /* ---------- Theaters ---------- */
 .venues { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; }
@@ -496,6 +526,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 /* Titel met een heel lang woord ("(leesvoorstelling)"): kleiner, zodat het woord heel blijft. */
 .detail-hero h1.lang { font-size: clamp(2.4rem, 7vw, 5.5rem); }
+/* Plaatspagina: lange kop ("Cabaret en theater in ..."), iets kleiner dan een artiestnaam. */
+.detail-hero h1.plaats-kop { font-size: clamp(2.6rem, 8vw, 5.75rem); }
 .detail-hero p { font-size: var(--step-1); margin: 14px 0 0; max-width: 52ch; }
 /* Artiestfoto in de kop: rechts op een breed scherm, eronder op een telefoon. */
 .hero-met-foto { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 40px; align-items: end; }
@@ -526,9 +558,19 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .site-footer .wordmark, .site-footer .ondertitel { color: #fff; }
 /* Donkerblauw is op zwart slecht leesbaar; in de footer is .com lila. */
 .site-footer .wordmark .tld { color: var(--riso-lilac); }
-.site-footer .woord .kern { fill: var(--riso-orange); }
+.site-footer .woord .bk-1, .site-footer .woord .bk-4 { fill: var(--riso-purple); }
+.site-footer .woord .bk-2, .site-footer .woord .bk-5 { fill: var(--riso-green); }
+.site-footer .woord .bk-3, .site-footer .woord .kern { fill: var(--riso-blue); }
 .site-footer a:focus-visible { outline-color: #fff; }
 .site-footer .footer-contact { display: flex; flex-direction: column; gap: 14px; }
+/* Linkkolommen bovenaan de footer (zoals Artiesten, Theaters, Plaatsen). */
+.site-footer .footer-boven { display: block; padding-block: 40px 0; }
+.footer-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 28px 24px; padding-bottom: 32px; border-bottom: 1px solid rgba(255, 255, 255, .2); }
+.footer-links h2 { font-family: var(--font-display); font-weight: 800; font-size: 1.35rem; text-transform: uppercase; letter-spacing: .01em; margin: 0 0 10px; }
+.footer-links ul { list-style: none; margin: 0; padding: 0; }
+.footer-links a { display: inline-flex; align-items: center; min-height: 32px; color: #fff; text-decoration: none; opacity: .85; }
+.footer-links a:hover { opacity: 1; text-decoration: underline; }
+.footer-links li:last-child a { font-weight: 600; opacity: 1; }
 .site-footer .social { list-style: none; margin: 0; padding: 0; display: flex; gap: 8px; }
 .site-footer .social a { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: #fff; border: 2px solid rgba(255, 255, 255, .35); transition: background-color .15s, color .15s, border-color .15s; }
 .site-footer .social a:hover { background: #fff; color: #121212; border-color: #fff; }
@@ -554,26 +596,20 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 
 /* ---------- Kerncijfers ---------- */
 .stats dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin: 28px 0 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
-.stats dl > div { padding: 14px 16px 16px 0; display: flex; flex-direction: column-reverse; gap: 2px; }
-.stats dl > div + div { padding-left: 16px; border-left: 1px solid var(--rule); }
+.stats dl > div { padding: 14px 16px 16px; display: flex; flex-direction: column-reverse; align-items: center; text-align: center; gap: 2px; }
+.stats dl > div + div { border-left: 1px solid var(--rule); }
 .stats dd { margin: 0; font-family: var(--font-display); font-weight: 900; font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: .9; font-variant-numeric: tabular-nums; }
 .stats dt { color: var(--ink-2); font-weight: 500; }
 @media (max-width: 600px) {
-  .stats dl > div { padding-right: 10px; }
-  .stats dl > div + div { padding-left: 12px; }
+  .stats dl > div, .stats dl > div + div { padding-inline: 8px; }
   .stats dd { font-size: 2rem; }
 }
 
 /* ---------- Maanden en plaatsen ---------- */
-.month-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
-.month-tiles a {
-  display: grid; padding: 14px 16px; border-radius: 12px; text-decoration: none;
-  background: var(--paper-2); border: 1.5px solid transparent;
-}
-.month-tiles a:hover { border-color: var(--ink); }
-.month-tiles b { font-family: var(--font-display); font-weight: 900; font-size: 2.4rem; line-height: .9; text-transform: lowercase; }
-.month-tiles span { color: var(--ink-2); font-size: var(--step--1); font-weight: 600; }
-.month-tiles em { font-style: normal; margin-top: 10px; font-size: .95rem; }
+/* Homepage: maanden en plaatsen als zijwaartse rij, met weinig ruimte ertussen. */
+.kies-blok { padding-block: 44px 0; }
+.kies-blok .wall-head { margin-bottom: 12px; }
+.kies-blok .month-nav { margin-bottom: 0; }
 
 .month-nav { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 20px; scrollbar-width: thin; }
 .month-nav a {
@@ -585,6 +621,9 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .month-nav a:hover { border-color: var(--ink); }
 .month-nav a[aria-current="page"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .month-nav a[aria-current="page"] span { color: inherit; }
+/* Zelfde rij op /plaatsen/ en /theaters/, met namen in plaats van maanden. */
+.stad-nav a b { text-transform: none; white-space: nowrap; }
+.stad-nav a span { white-space: nowrap; }
 
 .city-chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .city-chips a {
@@ -636,6 +675,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .seo-tekst { margin-top: 48px; padding-top: 24px; border-top: 2px solid var(--ink); }
 .seo-tekst h2 { margin-top: 0; }
 .seo-tekst p { color: var(--ink-2); }
+/* Homepage: "Over Cabaretiers.com" direct onder de festivals. */
+.seo-tekst.over-blok { margin-top: -16px; }
 .seo-tekst a { color: inherit; }
 
 /* Recensies op de voorstellingspagina: zwart op wit, sterren in inkt, lege sterren licht. */
@@ -688,6 +729,17 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .knop-secundair[hidden] { display: none; }
 
 /* Vanavond en dit weekend */
+/* Maandpagina per week: weekkeuze bovenaan; agenda.js toont eerst één week (zie #gigs[data-ingeklapt]). */
+.week-nav { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin: 18px 0 0; padding-bottom: 2px; }
+.week-nav::-webkit-scrollbar { display: none; }
+.week-nav a { flex: 0 0 auto; display: grid; gap: 2px; padding: 8px 14px; border-radius: 12px; border: 1.5px solid var(--rule); text-decoration: none; color: var(--ink); font-size: var(--step--1); line-height: 1.2; }
+.week-nav a b { font-weight: 700; white-space: nowrap; }
+.week-nav a span { color: var(--ink-2); }
+.week-nav a[aria-current="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.week-nav a[aria-current="true"] span { color: inherit; opacity: .75; }
+.week-groep { scroll-margin-top: 80px; }
+#gigs[data-ingeklapt] .week-groep.later { display: none; }
+.meer-weken { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 0; }
 .month-group h3 small { font-family: var(--font-body); font-weight: 500; font-size: 1rem; margin-left: 8px; }
 .dag-intro { max-width: 68ch; margin: 0 0 12px; }
 .dag-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0 0 16px; font-weight: 600; }
