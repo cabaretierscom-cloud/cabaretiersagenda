@@ -517,9 +517,10 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   // "Nu in het theater": voorstellingen met een promobeeld (data/promo.json), meeste speeldata eerst,
   // hooguit één per artiest. Bovenin het beeld, daaronder het kleurvlak van de artiest.
-  function nuInTheater() {
+  // Met `artiest` (id -> ja/nee) alleen voorstellingen van die artiesten (zoals de mannen of vrouwen).
+  function nuInTheater(artiest = () => true) {
     const gezien = new Set();
-    const lijst = [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id))
+    const lijst = [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id) && artiest(v.artiesten[0]))
       .map((v) => ({ v, list: up.filter((g) => g.voorstelling === v.id && g.status !== "geannuleerd") }))
       .filter(({ list }) => list.length)
       .sort((x, y) => y.list.length - x.list.length || x.list[0].datum.localeCompare(y.list[0].datum))
@@ -1112,14 +1113,26 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       [soort === "vrouw" ? "Staat een cabaretière er niet tussen?" : "Staat een cabaretier er niet tussen?", `Deze lijst is gebaseerd op openbare gegevens van Wikipedia en Wikidata. Wie daar (nog) niet in staat, vind je bij <a href="/alle-cabaretiers/">alle cabaretiers</a> of in het overzicht van <a href="/artiesten/">alle artiesten</a>.`],
     ];
 
+    // Affiches met promobeeld van deze cabaretiers, net als op de homepage; zijn die er niet, dan kaarten.
+    const ids = new Set(items.map(({ a }) => a.id));
+    const affiches = nuInTheater((id) => ids.has(id));
+    const kopTournee = soort === "alle" ? "Bekende cabaretiers op tournee" : `Bekende ${esc(P.wie)} op tournee`;
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">${esc(P.naam)}</h1><p>${intro}</p></div>
       ${soort === "alle"
         ? `<p class="knoppen"><a class="btn ghost" href="/alle-cabaretiers/mannen/">Mannelijke cabaretiers</a><a class="btn ghost" href="/alle-cabaretiers/vrouwen/">Vrouwelijke cabaretiers</a></p>`
         : `<p class="zie-ook">Bekijk ook de ${andere.join(", de ")} of <a href="/artiesten/">alle artiesten</a>.</p>`}
-      <h2 class="sub-head">${soort === "alle" ? "Bekende cabaretiers op tournee" : `Bekende ${esc(P.wie)} op tournee`}</h2>
-      <div class="artists">${artiestKaarten(top)}</div>
-      <h2 class="sub-head">${esc(P.naam)} van A tot Z</h2>
+      ${affiches ? "" : `<h2 class="sub-head">${kopTournee}</h2>
+      <div class="artists">${artiestKaarten(top)}</div>`}
+    </section>
+    ${affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
+      <div class="wrap wall-head">
+        <h2 id="nu-title">${kopTournee}</h2>
+      </div>
+      ${strip("strip-nu", kopTournee, affiches)}
+    </section>` : ""}
+    <section class="block wrap az-blok" aria-labelledby="az-titel">
+      <h2 class="sub-head" id="az-titel">${esc(P.naam)} van A tot Z</h2>
       ${azLijst(items, { zoekLabel: soort === "vrouw" ? "Zoek een cabaretière" : "Zoek een cabaretier" })}
       <div class="seo-tekst prose">
         ${tekst.join("\n        ")}
