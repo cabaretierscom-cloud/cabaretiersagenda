@@ -138,6 +138,7 @@ export function createTemplates(db) {
       .filter((id) => T.has(id) && db.gigsForTheater(id).length).map((id) => [T.get(id).naam, `/theaters/${id}/`])],
     ["Plaatsen", "/plaatsen/", "Alle plaatsen", ["Rotterdam", "Amsterdam", "Eindhoven", "Den Haag", "Utrecht"]
       .filter((p) => up.some((g) => T.get(g.theater).plaats === p)).map((p) => [p, `/plaatsen/${plaatsId(p)}/`])],
+    ["Genres", "/genres/", "Alle genres", GENRE_PAGINAS.slice(0, 5).map((g) => [GENRE_INFO[g].kop, `/genres/${g}/`])],
   ];
   return `<nav class="footer-links" aria-label="Snel naar">${FOOTER_LINKS.map(([kop, pad, alle, links]) => `<div>
       <h2>${kop}</h2>
@@ -489,6 +490,10 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   // ---------- Pagina's ----------
 
+  // Heel lange woorden op affiches en kaarten mogen alleen op een logische plek afbreken
+  // ("Oudejaars-conference"), niet midden in het woord.
+  const afbreken = (s) => esc(s).replace(/(oudejaars|eindejaars)(conference)/gi, "$1&shy;$2");
+
   // Lange titels kleiner zetten zodat ze op de affiche passen.
   const titleClass = (titel) => {
     const longestWord = Math.max(...titel.split(/\s+/).map((w) => w.length));
@@ -518,9 +523,9 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // "Nu in het theater": voorstellingen met een promobeeld (data/promo.json), meeste speeldata eerst,
   // hooguit één per artiest. Bovenin het beeld, daaronder het kleurvlak van de artiest.
   // Met `artiest` (id -> ja/nee) alleen voorstellingen van die artiesten (zoals de mannen of vrouwen).
-  function nuInTheater(artiest = () => true) {
+  function nuInTheater(artiest = () => true, voorstelling = () => true) {
     const gezien = new Set();
-    const lijst = [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id) && artiest(v.artiesten[0]))
+    const lijst = [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id) && artiest(v.artiesten[0]) && voorstelling(v))
       .map((v) => ({ v, list: up.filter((g) => g.voorstelling === v.id && g.status !== "geannuleerd") }))
       .filter(({ list }) => list.length)
       .sort((x, y) => y.list.length - x.list.length || x.list[0].datum.localeCompare(y.list[0].datum))
@@ -539,7 +544,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
         </span>
         <span class="poster-vlak" aria-hidden="true">
           <span class="poster-info">
-          <strong class="ftitel${titleClass(titel)}">${esc(titel)}</strong>
+          <strong class="ftitel${titleClass(titel)}">${afbreken(titel)}</strong>
           <span class="fartiest">${esc(artistNames(v.id))}</span>
           <span class="tag">${aantal}</span>
           </span>
@@ -1615,6 +1620,156 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return { tekst, vragen };
   }
 
+  // ---------- Genres: /genres/ en /genres/<genre>/ ----------
+  // Per genre een vaste uitleg en eigen vragen; de cijfers, namen en plaatsen komen uit de agenda.
+  const oudejaarsJaar = (() => {
+    const eerste = up.find((g) => V.get(g.voorstelling).genre === "oudejaarsconference");
+    const d = eerste?.datum || db.today;
+    return Number(d.slice(0, 4)) - (Number(d.slice(5, 7)) < 7 ? 1 : 0);
+  })();
+  const GENRE_INFO = {
+    cabaret: {
+      kop: "Cabaret", meervoud: "cabaretvoorstellingen", wie: "cabaretiers", kleur: "roze",
+      titel: "Cabaret: agenda en voorstellingen",
+      uitleg: "Cabaret is een avondvullende theatervoorstelling met humor, verhalen en vaak liedjes, meestal rond een thema en met een persoonlijke of maatschappelijke kijk op de wereld. Nederland en Vlaanderen hebben een lange cabarettraditie, van de grote drie (Wim Kan, Toon Hermans en Wim Sonneveld) tot de cabaretiers die nu door het land toeren.",
+      vragen: [
+        ["Wat is cabaret?", "Een theatervoorstelling waarin een cabaretier (of een groep) met humor, verhalen en vaak liedjes een avond vult, meestal rond een thema. Tussen de grappen door is er ook ruimte voor serieuze momenten."],
+        ["Wat is het verschil tussen cabaret en stand-up comedy?", "Cabaret heeft meestal een rode draad, liedjes en soms een decor. Stand-up comedy is losser: een comedian vertelt grappen en verhalen met alleen een microfoon. Veel artiesten doen allebei. Bekijk ook <a href=\"/genres/stand-up/\">stand-up comedy</a>."],
+      ],
+    },
+    "stand-up": {
+      kop: "Stand-up comedy", meervoud: "stand-upvoorstellingen", wie: "comedians", kleur: "blauw",
+      titel: "Stand-up comedy: agenda en voorstellingen",
+      uitleg: "Bij stand-up comedy staat een comedian met een microfoon op het podium en vertelt grappen en verhalen, zonder decor of vaste verhaallijn. Je ziet stand-up in theaters, maar vooral in comedyclubs, waar op één avond vaak meerdere comedians na elkaar spelen.",
+      vragen: [
+        ["Wat is stand-up comedy?", "Een comedian vertelt grappen en verhalen rechtstreeks aan het publiek, meestal alleen met een microfoon. Een avond kan een solovoorstelling zijn of een line-up met meerdere comedians en een presentator."],
+        ["Waar kan ik stand-up comedy zien?", "In theaters en vooral in comedyclubs. Op <a href=\"/comedy-clubs/\">Comedy Clubs</a> staan alle clubs met hun programma."],
+        ["Is er ook stand-up comedy in het Engels?", "Ja. Veel comedyclubs hebben vaste Engelstalige avonden, en internationale comedians spelen regelmatig in Nederland en België."],
+      ],
+    },
+    oudejaarsconference: {
+      kop: `Oudejaarsconference ${oudejaarsJaar}`, meervoud: "oudejaarsvoorstellingen", wie: "cabaretiers", kleur: "rood",
+      titel: `Oudejaarsconference ${oudejaarsJaar}: alle voorstellingen in het theater`,
+      uitleg: "Een oudejaarsconference is een voorstelling waarin een cabaretier terugblikt op het afgelopen jaar, met grappen over de actualiteit, de politiek en het nieuws. Wim Kan maakte er een jaarlijkse traditie van. Op oudejaarsavond is er traditioneel een oudejaarsconference op televisie, maar in november en december spelen veel cabaretiers hun oudejaarsvoorstelling ook in het theater.",
+      vragen: [
+        ["Wat is een oudejaarsconference?", "Een cabaretvoorstelling aan het eind van het jaar waarin de cabaretier terugkijkt op het nieuws en de actualiteit van dat jaar."],
+        ["Wanneer zijn de oudejaarsvoorstellingen in het theater?", "Vooral in november en december, in de weken voor oudejaarsavond. Omdat de voorstelling over het afgelopen jaar gaat, wordt hij vaak tot op het laatste moment bijgewerkt."],
+      ],
+    },
+    kleinkunst: {
+      kop: "Kleinkunst", meervoud: "kleinkunstvoorstellingen", wie: "artiesten", kleur: "geel",
+      titel: "Kleinkunst: agenda en voorstellingen",
+      uitleg: "Kleinkunst is verwant aan cabaret, maar het lied staat centraal: Nederlandstalige liedjes, chansons en teksten, vaak met humor en soms met een serieuze ondertoon. De voorstellingen spelen meestal in kleinere zalen, dicht op het publiek.",
+      vragen: [
+        ["Wat is kleinkunst?", "Theater waarin liedjes en teksten centraal staan, vaak Nederlandstalig, met humor en emotie. Het ligt dicht bij cabaret; veel artiesten doen allebei."],
+        ["Wat is het verschil tussen kleinkunst en cabaret?", "Bij kleinkunst draait het vooral om het lied, bij cabaret om de grap en het verhaal. De grens is vaag: veel voorstellingen zijn een mengvorm."],
+      ],
+    },
+    theaterkomedie: {
+      kop: "Theaterkomedie", meervoud: "komedies", wie: "artiesten", kleur: "oranje",
+      titel: "Theaterkomedie: komedies, blijspellen en kluchten",
+      uitleg: "Onder theaterkomedie vallen komedies, blijspellen en kluchten: toneel met humor, met een verhaal en een vaste rolverdeling. Gewoon toneel en musicals staan niet in deze agenda; voorstellingen waarin de humor de hoofdrol speelt wel.",
+      vragen: [
+        ["Wat is het verschil tussen een komedie, een blijspel en een klucht?", "Een komedie is toneel met humor; een blijspel is een luchtige komedie met een goede afloop; een klucht draait om verwikkelingen, misverstanden en slapstick."],
+        ["Staan musicals en toneel ook in de agenda?", "Nee, alleen voorstellingen waarin humor de hoofdrol speelt: cabaret, comedy en komisch theater."],
+      ],
+    },
+    "open-mic": {
+      kop: "Open mic", meervoud: "open mics", wie: "comedians", kleur: "limoen",
+      titel: "Open mic comedy: agenda",
+      uitleg: "Op een open mic proberen nieuwe en ervaren comedians kort materiaal uit, vaak een paar minuten per persoon. Het is de plek waar nieuwe grappen ontstaan en waar beginnende comedians hun eerste stappen zetten. De sfeer is los en de toegang is vaak goedkoop of gratis.",
+      vragen: [
+        ["Wat is een open mic?", "Een avond waarop comedians kort nieuw materiaal testen voor publiek. Je ziet beginners naast ervaren comedians die nieuwe grappen uitproberen."],
+        ["Kan ik zelf meedoen aan een open mic?", "Meestal wel. De meeste clubs werken met aanmelden vooraf; kijk op de site van de club voor de regels."],
+      ],
+    },
+    improvisatie: {
+      kop: "Improvisatietheater", meervoud: "improvisatievoorstellingen", wie: "spelers", kleur: "paars",
+      titel: "Improvisatietheater: agenda en voorstellingen",
+      uitleg: "Bij improvisatietheater (impro) bestaat er geen script: de spelers maken scènes, personages en soms liedjes ter plekke, vaak op basis van suggesties uit het publiek. Geen voorstelling is daardoor hetzelfde.",
+      vragen: [
+        ["Wat is improvisatietheater?", "Theater zonder script: de spelers verzinnen alles ter plekke, vaak met suggesties uit de zaal."],
+      ],
+    },
+  };
+  const genreLijst = (g) => up.filter((x) => V.get(x.voorstelling).genre === g);
+  const GENRE_PAGINAS = Object.keys(GENRE_INFO).filter((g) => GENRES[g] && genreLijst(g).length);
+  const genreLink = (g) => `<a href="/genres/${g}/">${esc(GENRE_INFO[g].kop)}</a>`;
+
+  function genrePagina(g) {
+    const info = GENRE_INFO[g], list = genreLijst(g), pad = `/genres/${g}/`;
+    const artiesten = telPer(list.flatMap((x) => V.get(x.voorstelling).artiesten).filter((id) => !isFestival(id)), (id) => id).slice(0, 6);
+    const steden = telPer(list, (x) => T.get(x.theater).plaats);
+    const zalen = new Set(list.map((x) => x.theater)).size;
+    const perMaand = telPer(list, (x) => x.datum.slice(0, 7)).sort((a, b) => a[0].localeCompare(b[0]));
+    const drukste = [...perMaand].sort((a, b) => b[1] - a[1])[0];
+    const tryouts = list.filter((x) => x.soort === "try-out").length;
+    const anders = GENRE_PAGINAS.filter((x) => x !== g);
+    // "Oudejaarsconference 2026" -> "oudejaarsconference"
+    const onderwerp = info.kop.replace(/ \d{4}$/, "").toLowerCase();
+    const naamMet = ([id, n]) => `${artiestLink(A.get(id))} (${n})`;
+    const tekst = [`<p>${info.uitleg}</p>`];
+    tekst.push(`<p>De komende tijd staan er ${list.length.toLocaleString("nl-NL")} ${info.meervoud} in de agenda, in ${plural(zalen, "zaal", "zalen")} in ${plural(steden.length, "plaats", "plaatsen")}.${artiesten.length ? ` Het vaakst te zien zijn ${opsomming(artiesten.map(naamMet))}.` : ""} De meeste voorstellingen zijn in ${opsomming(steden.slice(0, 5).map(([p, n]) => `${plaatsLink(p)} (${n})`))}.</p>`);
+    tekst.push(`<p>Wil je alles zien? In de <a href="/agenda/?genre=${g}">agenda</a> staan alle ${esc(info.meervoud)}, met zoeken op artiest, plaats of theater. Of kijk bij de andere genres: ${opsomming(anders.map(genreLink))}.</p>`);
+    const vragen = [...info.vragen];
+    if (artiesten.length) vragen.push([`Welke ${info.wie} spelen het vaakst?`, `De komende tijd ${opsomming(artiesten.slice(0, 5).map(naamMet))}. Tussen haakjes staat het aantal voorstellingen.`]);
+    vragen.push([`Waar zie ik ${onderwerp} bij mij in de buurt?`, `De meeste voorstellingen zijn in ${opsomming(steden.slice(0, 6).map(([p]) => plaatsLink(p)))}. Op <a href="/plaatsen/">Plaatsen</a> vind je alles per plaats, en in de <a href="/agenda/?genre=${g}">agenda</a> kun je zoeken op je eigen woonplaats.`]);
+    if (drukste && perMaand.length > 1) vragen.push(["In welke maand zijn de meeste voorstellingen?", `In ${maandNaam(drukste[0])}, met ${plural(drukste[1], "voorstelling", "voorstellingen")}.`]);
+    if (tryouts) vragen.push(["Zijn er ook try-outs?", `Ja, er staan ${plural(tryouts, "try-out", "try-outs")} in de agenda: voorstellingen van een nieuw programma vóór de première, vaak met goedkopere kaarten.`]);
+    vragen.push(["Hoe koop ik kaarten?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van het theater of de club, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
+    // Affiches van voorstellingen in dit genre; de lijst toont de eerstvolgende avonden (alles staat in de agenda).
+    const affiches = nuInTheater(() => true, (v) => v.genre === g);
+    const MAX = 150, eerste = list.slice(0, MAX);
+    const body = `<section class="block wrap" aria-labelledby="t">
+      <div class="block-head"><h1 id="t">${esc(info.kop)}</h1><p>${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}</p></div>
+    </section>
+    ${affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
+      <div class="wrap wall-head"><h2 id="nu-title">Nu in het theater</h2></div>
+      ${strip("strip-nu", `${info.kop}: nu in het theater`, affiches)}
+    </section>` : ""}
+    <section class="block wrap az-blok" aria-labelledby="lijst-titel">
+      <h2 class="sub-head" id="lijst-titel">${list.length > MAX ? "Eerstvolgende voorstellingen" : "Alle voorstellingen"}</h2>
+      ${list.length > 12 && list.length <= MAX ? filters(list, { maand: true }) : ""}
+      <div id="gigs">${monthGroups(eerste)}</div>
+      ${list.length > 12 && list.length <= MAX ? leegBlok : ""}
+      ${list.length > MAX ? `<p class="more"><a class="btn" href="/agenda/?genre=${g}">Alle ${list.length.toLocaleString("nl-NL")} ${esc(info.meervoud)} in de agenda</a></p>` : ""}
+      <section class="seo-tekst prose" aria-labelledby="over-titel">
+        <h2 id="over-titel">Over ${esc(onderwerp)}</h2>
+        ${tekst.join("\n        ")}
+      </section>
+      ${faqHtml(vragen, `Veelgestelde vragen over ${onderwerp}`)}
+    </section>`;
+    const desc = kort(`${info.kop}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")} in Nederland en België${artiesten.length ? `, met ${artiesten.slice(0, 3).map(([id]) => A.get(id).naam).join(", ")}` : ""}. Bekijk de agenda en koop kaarten bij het theater.`);
+    return layout({ title: info.titel, description: desc, path: pad, section: null, body,
+      schema: { type: "CollectionPage", kruimels: [["Genres", "/genres/"], [info.kop, pad]], extra: [...eventsLd(eerste), faqLd(vragen, pad)] } });
+  }
+
+  function genreIndex() {
+    const kaart = (g) => {
+      const list = genreLijst(g);
+      return `<a class="artist-card" href="/genres/${g}/" style="${ink(GENRE_INFO[g].kleur)}">
+          <h3${kopMaat(GENRE_INFO[g].kop)}>${afbreken(GENRE_INFO[g].kop)}</h3>
+          <p><span class="count">${plural(list.length, "voorstelling", "voorstellingen")}</span>, vanaf ${fmt.dayMonth(list[0].datum)}</p>
+        </a>`;
+    };
+    const vragen = [
+      ["Welke genres staan in de agenda?", `${opsomming(GENRE_PAGINAS.map(genreLink))}. Per genre zie je alle voorstellingen, met uitleg en veelgestelde vragen.`],
+      ["Staan musicals en toneel ook in de agenda?", "Nee. Cabaretiers.com is een agenda voor cabaret, comedy en komisch theater. Toneel staat er alleen in als humor de hoofdrol speelt (theaterkomedie)."],
+      ["Hoe zoek ik op genre in de agenda?", "Kies in de <a href=\"/agenda/\">agenda</a> een genre in het zoekveld, of open hierboven een genre."],
+    ];
+    const body = `<section class="block wrap" aria-labelledby="t">
+      <div class="block-head"><h1 id="t">Genres</h1><p>Cabaret, stand-up comedy en komisch theater: kies wat je wilt zien.</p></div>
+      <div class="artists festival-kaarten">${GENRE_PAGINAS.map(kaart).join("")}</div>
+      <section class="seo-tekst prose" aria-labelledby="over-titel">
+        <h2 id="over-titel">Cabaret, comedy en komisch theater</h2>
+        <p>In deze agenda staat alles waar je om kunt lachen: avondvullend <a href="/genres/cabaret/">cabaret</a> in de schouwburg, ${GENRE_PAGINAS.includes("stand-up") ? `${genreLink("stand-up")} in comedyclubs en theaters` : "stand-up"}, en elk jaar de ${GENRE_PAGINAS.includes("oudejaarsconference") ? genreLink("oudejaarsconference") : "oudejaarsconference"}. Daarnaast vind je ${opsomming(GENRE_PAGINAS.filter((g) => !["cabaret", "stand-up", "oudejaarsconference"].includes(g)).map(genreLink))}.</p>
+      </section>
+      ${faqHtml(vragen, "Veelgestelde vragen over genres")}
+    </section>`;
+    return layout({ title: "Genres: cabaret, stand-up comedy en meer", description: kort(`Cabaret, stand-up comedy, oudejaarsconference, kleinkunst en komisch theater: per genre alle voorstellingen in Nederland en België.`), path: "/genres/", section: null, body,
+      schema: { type: "CollectionPage", kruimels: [["Genres", "/genres/"]], hoofd: lijstLd(GENRE_PAGINAS.map((g) => [GENRE_INFO[g].kop, `/genres/${g}/`])), extra: [faqLd(vragen, "/genres/")] } });
+  }
+
   function festivalIndex() {
     const overzicht = festivalsOverzicht();
     const zonder = [...F.values()].filter((f) => !db.gigsForFestival(f.id).length).sort((a, b) => a.naam.localeCompare(b.naam, "nl"));
@@ -1960,7 +2115,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   return {
     controlePagina,
-    home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
+    home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, genrePagina, genreIndex, GENRE_PAGINAS, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
   };
 }
