@@ -1,0 +1,1609 @@
+{
+  "bron": "haug",
+  "naam": "Comedy Club Haug",
+  "opgehaald": "2026-10-30",
+  "theaters": [
+    {
+      "id": "comedy-club-haug-rotterdam",
+      "naam": "Comedy Club Haug",
+      "plaats": "Rotterdam",
+      "land": "NL",
+      "soort": "comedyclub",
+      "website": "https://comedyclubhaug.com"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "alsdatmaargoedgaat",
+      "genre": "stand-up",
+      "datum": "2027-01-17",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/alsdatmaargoedgaat-111713066"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Nasser Al-Rayess"
+      ],
+      "titel": "Nasser Al-Rayess",
+      "genre": "stand-up",
+      "datum": "2027-01-21",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/nasser-al-rayess-111698991"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Michael Shafar"
+      ],
+      "titel": "Michael Shafar",
+      "genre": "stand-up",
+      "datum": "2027-03-06",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/michael-shafar-111713401"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Andrew Ryan"
+      ],
+      "titel": "Andrew Ryan",
+      "genre": "stand-up",
+      "datum": "2027-04-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/andrew-ryan-111711938"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "The Grapevyne 'Old School' Comedy Night!",
+      "genre": "stand-up",
+      "datum": "2027-04-19",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/the-grapevyne-old-school-comedy-night-111695662"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Ed Night",
+      "genre": "stand-up",
+      "datum": "2027-04-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/ed-night-remains-111713382"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Club Haug regulars try-out",
+      "genre": "stand-up",
+      "datum": "2026-12-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://comedyclubhaug.com/shows/club-haug-regulars-try-out-111713347"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Club Haug regulars try-out",
+      "genre": "stand-up",
+      "datum": "2026-12-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://comedyclubhaug.com/shows/club-haug-regulars-try-out-111713346"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "English Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-12-30",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/english-open-mic-111713345"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "English Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-12-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/english-open-mic-111713344"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "English Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-12-16",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/english-open-mic-111713343"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "English Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-12-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/english-open-mic-111713342"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "English Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-12-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/english-open-mic-111713341"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-12-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111713339"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-12-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111713340"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111713338"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-12-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111713337"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-12-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111713336"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Vincent Geers",
+        "Victor Luis van Es"
+      ],
+      "titel": "Vincent Geers & Victor Luis van Es",
+      "genre": "stand-up",
+      "datum": "2026-11-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/victor-luis-van-es-vincent-geers-extra-show-13-november"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Grace Mulvey"
+      ],
+      "titel": "Grace Mulvey",
+      "genre": "stand-up",
+      "datum": "2027-04-08",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/grace-mulvey-111713062"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Raoul Heertje",
+        "Davine Perik"
+      ],
+      "titel": "Raoul Heertje & Davine Perik",
+      "genre": "stand-up",
+      "datum": "2026-11-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/raoul-heertje-davine-perik-111704210"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Li Jin Hao"
+      ],
+      "titel": "Li Jin Hao",
+      "genre": "stand-up",
+      "datum": "2027-03-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/li-jin-hao-111711824"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Big Fat Gong Show",
+      "genre": "stand-up",
+      "datum": "2026-11-21",
+      "tijd": "19:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/big-fat-gong-show-111711773"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Dolf Jansen",
+      "genre": "stand-up",
+      "datum": "2027-06-06",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/dolf-jansen-111711342"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Özgür Turhan"
+      ],
+      "titel": "Özgür Turhan",
+      "genre": "stand-up",
+      "datum": "2026-10-30",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/ozgur-turhan-111693676"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Berk Karan"
+      ],
+      "titel": "Berk Karan",
+      "genre": "stand-up",
+      "datum": "2026-12-04",
+      "tijd": "18:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/berk-karan-111710756"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up! in English",
+      "genre": "stand-up",
+      "datum": "2026-11-21",
+      "tijd": "21:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-in-english-111708903"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-21",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-2100-111708901"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up! in English",
+      "genre": "stand-up",
+      "datum": "2026-11-20",
+      "tijd": "21:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-in-english-111708902"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-20",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-2100-111708900"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-19",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-2100-111708899"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-11-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111710964"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-11-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111710963"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-11-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111710962"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up!",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-111710915"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up!",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-111710913"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up!",
+      "genre": "stand-up",
+      "datum": "2026-12-05",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-111710912"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up! in English",
+      "genre": "stand-up",
+      "datum": "2026-12-18",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-in-english-111710911"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up! in English",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-in-english-111710910"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up! in English",
+      "genre": "stand-up",
+      "datum": "2026-12-04",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-in-english-111710909"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up Early Show",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111710908"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up Early Show",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111710907"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up Early Show",
+      "genre": "stand-up",
+      "datum": "2026-12-05",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111710905"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up Early Show",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111710906"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111710903"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-12-18",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111710902"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-12-05",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111710899"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111710901"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111710900"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-12-04",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111710898"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-12-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111710895"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-12-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111710894"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Glenn Wool"
+      ],
+      "titel": "Glenn Wool",
+      "genre": "stand-up",
+      "datum": "2026-11-20",
+      "tijd": "19:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/glenn-wool-111708360"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Sourmouth",
+      "genre": "stand-up",
+      "datum": "2026-11-15",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/sourmouth-111709953"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-12-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111709931"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Elouise Eftos"
+      ],
+      "titel": "Elouise Eftos",
+      "genre": "stand-up",
+      "datum": "2026-11-19",
+      "tijd": "21:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/elouise-eftos-111708359"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Sam Eley"
+      ],
+      "titel": "Sam Eley",
+      "genre": "stand-up",
+      "datum": "2026-11-20",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/sam-eley-111708357"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Sara Pascoe"
+      ],
+      "titel": "Sara Pascoe",
+      "genre": "stand-up",
+      "datum": "2026-12-03",
+      "tijd": "18:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/sara-pascoe-111709019"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Earl Okin"
+      ],
+      "titel": "Earl Okin",
+      "genre": "stand-up",
+      "datum": "2027-01-09",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/earl-okin-111708950"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Patrick Spicer"
+      ],
+      "titel": "Patrick Spicer",
+      "genre": "stand-up",
+      "datum": "2027-03-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/patrick-spicer-111693684"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Stefan Pop"
+      ],
+      "titel": "Stefan Pop",
+      "genre": "stand-up",
+      "datum": "2026-11-19",
+      "tijd": "18:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/stefan-pop-111703177"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Dan Pulzello"
+      ],
+      "titel": "Dan Pulzello",
+      "genre": "stand-up",
+      "datum": "2026-11-20",
+      "tijd": "18:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/dan-pulzello-111692418"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Rogier Bak",
+        "Diederik Zuurmond"
+      ],
+      "titel": "Rogier Bak & Diederik Zuurmond",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/rogier-bak-diederik-zuurmond-111696843"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Josh Thomas"
+      ],
+      "titel": "Josh Thomas",
+      "genre": "stand-up",
+      "datum": "2026-12-18",
+      "tijd": "19:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/josh-thomas-111707256"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Uurtje Finn",
+      "genre": "stand-up",
+      "datum": "2026-12-17",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/uurtje-finn-111703397"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Uurtje Finn",
+      "genre": "stand-up",
+      "datum": "2026-12-04",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/uurtje-finn-111703396"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Seda Yüz"
+      ],
+      "titel": "Seda Yüz",
+      "genre": "stand-up",
+      "datum": "2026-12-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/seda-yuz-111703283"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Mark Waumans"
+      ],
+      "titel": "Mark Waumans",
+      "genre": "stand-up",
+      "datum": "2027-01-09",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/mark-waumans-111706069"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Haug Talks live",
+      "genre": "stand-up",
+      "datum": "2027-01-24",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/haug-talks-live-111702605"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Club Haug regulars try-out",
+      "genre": "stand-up",
+      "datum": "2026-11-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://comedyclubhaug.com/shows/club-haug-regulars-try-out-111703649"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Club Haug regulars try-out",
+      "genre": "stand-up",
+      "datum": "2026-11-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://comedyclubhaug.com/shows/club-haug-regulars-try-out-111703647"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Pernille Haaland"
+      ],
+      "titel": "Pernille Haaland",
+      "genre": "stand-up",
+      "datum": "2026-11-01",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/pernille-haaland-111684426"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Queer",
+      "genre": "stand-up",
+      "datum": "2027-06-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-queer-111696132"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Queer",
+      "genre": "stand-up",
+      "datum": "2027-03-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-queer-111696128"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Queer",
+      "genre": "stand-up",
+      "datum": "2026-12-17",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-queer-111696127"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up!",
+      "genre": "stand-up",
+      "datum": "2026-11-28",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-111701052"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up!",
+      "genre": "stand-up",
+      "datum": "2026-11-14",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-111701050"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up!",
+      "genre": "stand-up",
+      "datum": "2026-11-07",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-111701049"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up! in English",
+      "genre": "stand-up",
+      "datum": "2026-11-27",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-in-english-111701048"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up! in English",
+      "genre": "stand-up",
+      "datum": "2026-11-13",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-in-english-111701046"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up! in English",
+      "genre": "stand-up",
+      "datum": "2026-11-06",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-in-english-111701045"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701042"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701044"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701041"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up Early Show",
+      "genre": "stand-up",
+      "datum": "2026-11-28",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111701040"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up Early Show",
+      "genre": "stand-up",
+      "datum": "2026-11-27",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111701039"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up Early Show",
+      "genre": "stand-up",
+      "datum": "2026-11-14",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111701036"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up Early Show",
+      "genre": "stand-up",
+      "datum": "2026-11-13",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111701035"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up Early Show",
+      "genre": "stand-up",
+      "datum": "2026-11-07",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111701034"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up Early Show",
+      "genre": "stand-up",
+      "datum": "2026-11-06",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111701033"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-27",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701031"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-28",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701032"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-14",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701028"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-13",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701027"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-07",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701026"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-11-06",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701025"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Nabil Abdulrashid"
+      ],
+      "titel": "Nabil Abdulrashid",
+      "genre": "stand-up",
+      "datum": "2026-11-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/nabil-abdulrashid-111693679"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up Early Show",
+      "genre": "stand-up",
+      "datum": "2026-10-31",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111698770"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Sjoerd Janssen"
+      ],
+      "titel": "Sjoerd Janssen",
+      "genre": "stand-up",
+      "datum": "2027-01-20",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/sjoerd-janssen-111698188"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Rogier Bak",
+        "Diederik Zuurmond"
+      ],
+      "titel": "Rogier Bak & Diederik Zuurmond",
+      "genre": "stand-up",
+      "datum": "2026-11-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/rogier-bak-diederik-zuurmond-111696834"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Rogier Bak",
+        "Diederik Zuurmond"
+      ],
+      "titel": "Rogier Bak & Diederik Zuurmond",
+      "genre": "stand-up",
+      "datum": "2026-10-31",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/rogier-bak-diederik-zuurmond-111696826"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Pat Moore"
+      ],
+      "titel": "Pat Moore",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/pat-moore-111693682"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Nira Tal"
+      ],
+      "titel": "Nira Tal",
+      "genre": "stand-up",
+      "datum": "2026-11-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/nira-tal-111669569"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Roel C Verburg"
+      ],
+      "titel": "Roel C Verburg",
+      "genre": "stand-up",
+      "datum": "2027-01-17",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/roel-c-verburg-111695528"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Eric van Sauers",
+        "Sezgin Güleç"
+      ],
+      "titel": "Eric van Sauers & Sezgin Güleç",
+      "genre": "stand-up",
+      "datum": "2026-11-14",
+      "tijd": "17:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/eric-van-sauers-sezgin-gulec-111693621"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Thomas Green"
+      ],
+      "titel": "Thomas Green",
+      "genre": "stand-up",
+      "datum": "2027-01-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/thomas-green-111692189"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Eric van Sauers",
+        "Sezgin Güleç"
+      ],
+      "titel": "Eric van Sauers & Sezgin Güleç",
+      "genre": "stand-up",
+      "datum": "2026-11-15",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/eric-van-sauers-sezgin-gulec-111693651"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up!",
+      "genre": "stand-up",
+      "datum": "2026-10-31",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-111688154"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Chuckle-Up! in English",
+      "genre": "stand-up",
+      "datum": "2026-10-30",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/chuckle-up-in-english-111688149"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-10-31",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111688144"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-10-30",
+      "tijd": "21:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111688143"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Roel C Verburg"
+      ],
+      "titel": "Roel C Verburg",
+      "genre": "stand-up",
+      "datum": "2026-11-11",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/roel-c-verburg-111686180"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Tobi Kooiman",
+        "Alina Sharipova"
+      ],
+      "titel": "Tobi Kooiman & Alina Sharipova",
+      "genre": "stand-up",
+      "datum": "2026-11-07",
+      "tijd": "16:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/tobi-kooiman-alina-sharipova-111680023"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Sophie Duker"
+      ],
+      "titel": "Sophie Duker",
+      "genre": "stand-up",
+      "datum": "2027-03-11",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/sophie-duker-111680009"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Pandji Pragiwaksono Wongsoyudo"
+      ],
+      "titel": "Pandji Pragiwaksono Wongsoyudo",
+      "genre": "stand-up",
+      "datum": "2027-01-24",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/pandji-pragiwaksono-wongsoyudo-111679581"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Charlie Mac"
+      ],
+      "titel": "Charlie Mac",
+      "genre": "stand-up",
+      "datum": "2027-09-24",
+      "tijd": "18:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/charlie-mac-111666873"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Pernille Haaland"
+      ],
+      "titel": "Pernille Haaland",
+      "genre": "stand-up",
+      "datum": "2026-11-06",
+      "tijd": "19:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/pernille-haaland-111664714"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Aidan Jones"
+      ],
+      "titel": "Aidan Jones",
+      "genre": "stand-up",
+      "datum": "2026-12-10",
+      "tijd": "19:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/aidan-jones-111663950"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Tobi Kooiman",
+        "Alina Sharipova"
+      ],
+      "titel": "Tobi Kooiman & Alina Sharipova",
+      "genre": "stand-up",
+      "datum": "2026-11-07",
+      "tijd": "19:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/tobi-kooiman-alina-sharipova-111640411"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Vincent Geers",
+        "Victor Luis van Es"
+      ],
+      "titel": "Vincent Geers & Victor Luis van Es",
+      "genre": "stand-up",
+      "datum": "2026-11-13",
+      "tijd": "19:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/vincent-geers-victor-luis-van-es-111637230"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Alina Sharipova",
+        "Tim Kroezen"
+      ],
+      "titel": "Alina Sharipova & Tim Kroezen",
+      "genre": "stand-up",
+      "datum": "2026-11-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/alina-sharipova-tim-kroezen-111653813"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Tim Hartog",
+        "Alina Sharipova"
+      ],
+      "titel": "Tim Hartog & Alina Sharipova",
+      "genre": "stand-up",
+      "datum": "2027-01-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/tim-hartog-alina-sharipova-111653518"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Alina Sharipova",
+        "Jorn van Dam"
+      ],
+      "titel": "Alina Sharipova & Jorn van Dam",
+      "genre": "stand-up",
+      "datum": "2026-11-27",
+      "tijd": "19:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/alina-sharipova-jorn-van-dam-111648328"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Tim Hartog",
+        "Vincent Geers"
+      ],
+      "titel": "Tim Hartog & Vincent Geers",
+      "genre": "stand-up",
+      "datum": "2026-12-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/tim-hartog-vincent-geers-111653514"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Tim Hartog",
+        "Berit Companjen"
+      ],
+      "titel": "Tim Hartog & Berit Companjen",
+      "genre": "stand-up",
+      "datum": "2026-11-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/tim-hartog-berit-companjen-111653513"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Ali Siddiq"
+      ],
+      "titel": "Ali Siddiq",
+      "genre": "stand-up",
+      "datum": "2026-11-04",
+      "tijd": "17:45",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/ali-siddiq-111638787"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Josh Thomas"
+      ],
+      "titel": "Josh Thomas",
+      "genre": "stand-up",
+      "datum": "2026-11-21",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/josh-thomas-111637440"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Ric Diez"
+      ],
+      "titel": "Ric Diez",
+      "genre": "stand-up",
+      "datum": "2026-11-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/ric-diez-111620188"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Sofie Hagen"
+      ],
+      "titel": "Sofie Hagen",
+      "genre": "stand-up",
+      "datum": "2027-02-12",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/sofie-hagen-111624033"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Ali Siddiq"
+      ],
+      "titel": "Ali Siddiq",
+      "genre": "stand-up",
+      "datum": "2026-11-04",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/ali-siddiq-111620182"
+    }
+  ],
+  "recensies": {
+    "https://comedyclubhaug.com/shows/stefan-pop-111703177": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "★★★★☆ “Een fascinerende en opvallend persoonlijke invalshoek"
+      }
+    ],
+    "https://comedyclubhaug.com/shows/roel-c-verburg-111695528": [
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Roel C. Verburg is een fenomeen op zich."
+      },
+      {
+        "medium": "Het Financieele Dagblad",
+        "sterren": null,
+        "citaat": "Hij grossiert in absurdistische liedjes vol taalacrobatiek."
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Een aaneenschakeling van slimme observaties, rake grappen en muzikale intermezzo’s"
+      }
+    ],
+    "https://comedyclubhaug.com/shows/roel-c-verburg-111686180": [
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Roel C. Verburg is een fenomeen op zich."
+      },
+      {
+        "medium": "Het Financieele Dagblad",
+        "sterren": null,
+        "citaat": "Hij grossiert in absurdistische liedjes vol taalacrobatiek."
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Een aaneenschakeling van slimme observaties, rake grappen en muzikale intermezzo’s"
+      }
+    ]
+  }
+}

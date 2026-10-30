@@ -1,14 +1,22 @@
 {
-  "datum": "2026-10-29",
+  "datum": "2026-10-30",
   "totaal": {
-    "speeldata": 5996,
-    "komend": 5874,
-    "artiesten": 463,
-    "zalen": 579,
+    "speeldata": 6604,
+    "komend": 6436,
+    "artiesten": 506,
+    "zalen": 584,
     "plaatsen": 424,
-    "voorstellingen": 666
+    "voorstellingen": 798
   },
   "bronnen": [
+    {
+      "bron": "amai",
+      "naam": "Amai Comedy Club",
+      "opgehaald": "2026-10-30",
+      "speeldata": 18,
+      "vorige": 0,
+      "dubbel": 0
+    },
     {
       "bron": "amphion",
       "naam": "Amphion",
@@ -22,7 +30,7 @@
       "naam": "Schouwburg Amstelveen",
       "opgehaald": "2026-10-29",
       "speeldata": 36,
-      "vorige": 35,
+      "vorige": 36,
       "dubbel": 0
     },
     {
@@ -63,6 +71,22 @@
       "opgehaald": "2026-10-25",
       "speeldata": 144,
       "vorige": 144,
+      "dubbel": 0
+    },
+    {
+      "bron": "comedyhuis",
+      "naam": "Comedyhuis Utrecht",
+      "opgehaald": "2026-10-30",
+      "speeldata": 312,
+      "vorige": 0,
+      "dubbel": 0
+    },
+    {
+      "bron": "comedytrain",
+      "naam": "Comedytrain",
+      "opgehaald": "2026-10-30",
+      "speeldata": 152,
+      "vorige": 0,
       "dubbel": 0
     },
     {
@@ -111,6 +135,14 @@
       "opgehaald": "2026-10-29",
       "speeldata": 46,
       "vorige": 46,
+      "dubbel": 0
+    },
+    {
+      "bron": "haug",
+      "naam": "Comedy Club Haug",
+      "opgehaald": "2026-10-30",
+      "speeldata": 130,
+      "vorige": 0,
       "dubbel": 0
     },
     {
@@ -286,7 +318,7 @@
       "naam": "PLT (Parkstad Limburg Theaters)",
       "opgehaald": "2026-10-29",
       "speeldata": 131,
-      "vorige": 130,
+      "vorige": 131,
       "dubbel": 0
     },
     {
@@ -294,7 +326,7 @@
       "naam": "Theater De Purmaryn",
       "opgehaald": "2026-10-29",
       "speeldata": 57,
-      "vorige": 55,
+      "vorige": 57,
       "dubbel": 0
     },
     {
@@ -406,7 +438,7 @@
       "naam": "Zaantheater",
       "opgehaald": "2026-10-29",
       "speeldata": 60,
-      "vorige": 58,
+      "vorige": 60,
       "dubbel": 0
     },
     {
@@ -430,7 +462,7 @@
       "naam": "Agenda van 5to9",
       "opgehaald": "2026-10-29",
       "speeldata": 430,
-      "vorige": 429,
+      "vorige": 430,
       "dubbel": 53
     },
     {
@@ -445,26 +477,1021 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-10-29",
-      "speeldata": 1957,
-      "vorige": 1939,
-      "dubbel": 1029
+      "speeldata": 1953,
+      "vorige": 1957,
+      "dubbel": 1033
     }
   ],
   "nieuw": {
     "artiesten": [
       {
-        "id": "de-sitcomeback",
-        "naam": "DE SITCOMEBACK"
+        "id": "aidan-jones",
+        "naam": "Aidan Jones"
+      },
+      {
+        "id": "ali-siddiq",
+        "naam": "Ali Siddiq"
+      },
+      {
+        "id": "andrew-ryan",
+        "naam": "Andrew Ryan"
+      },
+      {
+        "id": "berk-karan",
+        "naam": "Berk Karan"
+      },
+      {
+        "id": "charlie-mac",
+        "naam": "Charlie Mac"
+      },
+      {
+        "id": "dan-pulzello",
+        "naam": "Dan Pulzello"
+      },
+      {
+        "id": "davine-perik",
+        "naam": "Davine Perik"
+      },
+      {
+        "id": "de-interventie",
+        "naam": "De Interventie"
+      },
+      {
+        "id": "earl-okin",
+        "naam": "Earl Okin"
+      },
+      {
+        "id": "ed-night",
+        "naam": "Ed Night"
+      },
+      {
+        "id": "elouise-eftos",
+        "naam": "Elouise Eftos"
+      },
+      {
+        "id": "emiel-van-der-logt",
+        "naam": "Emiel van der Logt"
+      },
+      {
+        "id": "emilio-guzman",
+        "naam": "Emilio Guzman"
+      },
+      {
+        "id": "eric-van-sauers",
+        "naam": "Eric van Sauers"
+      },
+      {
+        "id": "fee-oomes",
+        "naam": "Fee Oomes"
+      },
+      {
+        "id": "glenn-wool",
+        "naam": "Glenn Wool"
+      },
+      {
+        "id": "grace-mulvey",
+        "naam": "Grace Mulvey"
+      },
+      {
+        "id": "jorn-van-dam",
+        "naam": "Jorn van Dam"
+      },
+      {
+        "id": "josh-thomas",
+        "naam": "Josh Thomas"
+      },
+      {
+        "id": "li-jin-hao",
+        "naam": "Li Jin Hao"
+      },
+      {
+        "id": "mark-waumans",
+        "naam": "Mark Waumans"
+      },
+      {
+        "id": "meeuw-roovers",
+        "naam": "Meeuw Roovers"
+      },
+      {
+        "id": "michael-shafar",
+        "naam": "Michael Shafar"
+      },
+      {
+        "id": "nabil-abdulrashid",
+        "naam": "Nabil Abdulrashid"
+      },
+      {
+        "id": "nasser-al-rayess",
+        "naam": "Nasser Al-Rayess"
+      },
+      {
+        "id": "nira-tal",
+        "naam": "Nira Tal"
+      },
+      {
+        "id": "ozgur-turhan",
+        "naam": "Özgür Turhan"
+      },
+      {
+        "id": "pandji-pragiwaksono-wongsoyudo",
+        "naam": "Pandji Pragiwaksono Wongsoyudo"
+      },
+      {
+        "id": "pat-moore",
+        "naam": "Pat Moore"
+      },
+      {
+        "id": "patrick-spicer",
+        "naam": "Patrick Spicer"
+      },
+      {
+        "id": "pernille-haaland",
+        "naam": "Pernille Haaland"
+      },
+      {
+        "id": "ric-diez",
+        "naam": "Ric Diez"
+      },
+      {
+        "id": "sam-eley",
+        "naam": "Sam Eley"
+      },
+      {
+        "id": "sara-pascoe",
+        "naam": "Sara Pascoe"
+      },
+      {
+        "id": "seda-yuz",
+        "naam": "Seda Yüz"
+      },
+      {
+        "id": "sjoerd-janssen",
+        "naam": "Sjoerd Janssen"
+      },
+      {
+        "id": "sofie-hagen",
+        "naam": "Sofie Hagen"
+      },
+      {
+        "id": "sophie-duker",
+        "naam": "Sophie Duker"
+      },
+      {
+        "id": "teun-de-vries",
+        "naam": "Teun de Vries"
+      },
+      {
+        "id": "thomas-green",
+        "naam": "Thomas Green"
+      },
+      {
+        "id": "tim-fransen",
+        "naam": "Tim Fransen"
+      },
+      {
+        "id": "victor-luis-van-es",
+        "naam": "Victor Luis van Es"
+      },
+      {
+        "id": "wilko-terwijn",
+        "naam": "Wilko Terwijn"
       }
     ],
-    "zalen": [],
+    "zalen": [
+      {
+        "id": "amai-comedy-club-gent",
+        "naam": "Amai Comedy Club",
+        "plaats": "Gent",
+        "land": "BE",
+        "website": "https://www.amaicomedyclub.com"
+      },
+      {
+        "id": "de-kargadoor-utrecht",
+        "naam": "De Kargadoor",
+        "plaats": "Utrecht",
+        "land": "NL",
+        "website": "https://www.kargadoor.nl"
+      },
+      {
+        "id": "kartoffel-utrecht",
+        "naam": "Kartoffel",
+        "plaats": "Utrecht",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "moira-utrecht",
+        "naam": "Moira",
+        "plaats": "Utrecht",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "venster-utrecht",
+        "naam": "Venster",
+        "plaats": "Utrecht",
+        "land": "NL",
+        "website": null
+      }
+    ],
     "voorstellingen": [
       {
-        "id": "de-sitcomeback-de-hoe",
-        "titel": "De hoe",
+        "id": "aidan-jones-aidan-jones",
+        "titel": "Aidan Jones",
         "artiesten": [
-          "de-sitcomeback"
+          "aidan-jones"
         ]
+      },
+      {
+        "id": "alex-ploeg-emilio-guzman-dubbel",
+        "titel": "Dubbel",
+        "artiesten": [
+          "alex-ploeg",
+          "emilio-guzman"
+        ]
+      },
+      {
+        "id": "alex-ploeg-tim-fransen-dubbel",
+        "titel": "Dubbel",
+        "artiesten": [
+          "alex-ploeg",
+          "tim-fransen"
+        ]
+      },
+      {
+        "id": "ali-siddiq-ali-siddiq",
+        "titel": "Ali Siddiq",
+        "artiesten": [
+          "ali-siddiq"
+        ]
+      },
+      {
+        "id": "alina-sharipova-jorn-van-dam-alina-sharipova-en-jorn-van-dam",
+        "titel": "Alina Sharipova & Jorn van Dam",
+        "artiesten": [
+          "alina-sharipova",
+          "jorn-van-dam"
+        ]
+      },
+      {
+        "id": "alina-sharipova-tim-kroezen-alina-sharipova-en-tim-kroezen",
+        "titel": "Alina Sharipova & Tim Kroezen",
+        "artiesten": [
+          "alina-sharipova",
+          "tim-kroezen"
+        ]
+      },
+      {
+        "id": "all-english-comedy-night-de-kargadoor-utrecht",
+        "titel": "All English Comedy Night",
+        "artiesten": []
+      },
+      {
+        "id": "alsdatmaargoedgaat-comedy-club-haug-rotterdam",
+        "titel": "alsdatmaargoedgaat",
+        "artiesten": []
+      },
+      {
+        "id": "amai-improcomedy-legends-amai-comedy-club-gent",
+        "titel": "Amai Improcomedy Legends",
+        "artiesten": []
+      },
+      {
+        "id": "andrew-ryan-andrew-ryan",
+        "titel": "Andrew Ryan",
+        "artiesten": [
+          "andrew-ryan"
+        ]
+      },
+      {
+        "id": "anuar-staat-ie-aan",
+        "titel": "Staat ie Aan?",
+        "artiesten": [
+          "anuar"
+        ]
+      },
+      {
+        "id": "arabic-showcase-with-standout-comedyhuis-utrecht",
+        "titel": "Arabic Showcase with StandOut",
+        "artiesten": []
+      },
+      {
+        "id": "berk-karan-berk-karan",
+        "titel": "Berk Karan",
+        "artiesten": [
+          "berk-karan"
+        ]
+      },
+      {
+        "id": "best-of-queer-comedy-club-haug-rotterdam",
+        "titel": "Best of Queer",
+        "artiesten": []
+      },
+      {
+        "id": "best-of-stand-up-comedy-club-haug-rotterdam",
+        "titel": "Best of Stand-Up",
+        "artiesten": []
+      },
+      {
+        "id": "big-fat-gong-show-comedy-club-haug-rotterdam",
+        "titel": "Big Fat Gong Show",
+        "artiesten": []
+      },
+      {
+        "id": "brightclub-nerdland-amai-edition-amai-comedy-club-gent",
+        "titel": "Brightclub Nerdland - Amai Edition",
+        "artiesten": []
+      },
+      {
+        "id": "bugra-gedik-vincent-geers-dubbel",
+        "titel": "Dubbel",
+        "artiesten": [
+          "bugra-gedik",
+          "vincent-geers"
+        ]
+      },
+      {
+        "id": "charlie-mac-charlie-mac",
+        "titel": "Charlie Mac",
+        "artiesten": [
+          "charlie-mac"
+        ]
+      },
+      {
+        "id": "chuckle-up-in-english-comedy-club-haug-rotterdam",
+        "titel": "Chuckle-Up! in English",
+        "artiesten": []
+      },
+      {
+        "id": "club-haug-regulars-try-out-comedy-club-haug-rotterdam",
+        "titel": "Club Haug regulars try-out",
+        "artiesten": []
+      },
+      {
+        "id": "comedy-cloud-hertz-tivoli-vredenburg-utrecht",
+        "titel": "Comedy Cloud",
+        "artiesten": []
+      },
+      {
+        "id": "comedy-dubbel-rene-van-meurs-en-isabelle-dieperink-comedyhuis-utrecht",
+        "titel": "Comedy dubbel: René van Meurs en Isabelle Dieperink",
+        "artiesten": []
+      },
+      {
+        "id": "comedy-en-diner-the-writers-room-venster-utrecht",
+        "titel": "Comedy & Diner The Writers Room",
+        "artiesten": []
+      },
+      {
+        "id": "comedy-explosie-amai-comedy-club-gent",
+        "titel": "Comedy Explosie",
+        "artiesten": []
+      },
+      {
+        "id": "comedy-open-mic-amai-comedy-club-gent",
+        "titel": "Comedy Open Mic",
+        "artiesten": []
+      },
+      {
+        "id": "comedy-showcase-amai-comedy-club-gent",
+        "titel": "Comedy Showcase",
+        "artiesten": []
+      },
+      {
+        "id": "comedy-talent-award-finale-2027-hertz-tivoli-vredenburg-utrecht",
+        "titel": "Comedy Talent Award – Finale 2027",
+        "artiesten": []
+      },
+      {
+        "id": "comedy-talent-award-kwartfinale-1-comedyhuis-utrecht",
+        "titel": "Comedy Talent Award – Kwartfinale 1",
+        "artiesten": []
+      },
+      {
+        "id": "comedy-talent-award-try-out-finalisten-1-comedyhuis-utrecht",
+        "titel": "Comedy Talent Award – Try-out finalisten 1",
+        "artiesten": []
+      },
+      {
+        "id": "comedy-talent-award-try-out-halvefinalisten-1-comedyhuis-utrecht",
+        "titel": "Comedy Talent Award – Try-out halvefinalisten 1",
+        "artiesten": []
+      },
+      {
+        "id": "comedy-talent-award-try-out-kwartfinalisten-de-kargadoor-utrecht",
+        "titel": "Comedy Talent Award – try-out kwartfinalisten",
+        "artiesten": []
+      },
+      {
+        "id": "comedy-talent-award-voorronde-7-comedyhuis-utrecht",
+        "titel": "Comedy Talent Award - Voorronde 7",
+        "artiesten": []
+      },
+      {
+        "id": "comedyhuis-pakt-uit-middagshow-comedyhuis-utrecht",
+        "titel": "Comedyhuis pakt uit – middagshow",
+        "artiesten": []
+      },
+      {
+        "id": "comedyshow-aan-de-slinger-theater-aan-de-slinger-houten",
+        "titel": "Comedyshow Aan de Slinger",
+        "artiesten": []
+      },
+      {
+        "id": "comedytalenten-vandestreek-de-kargadoor-utrecht",
+        "titel": "Comedytalenten Vandestreek",
+        "artiesten": []
+      },
+      {
+        "id": "comedytrain-comedy-op-zolder-comedytrain-nieuwe-toomler-amsterdam",
+        "titel": "Comedytrain Comedy op zolder",
+        "artiesten": []
+      },
+      {
+        "id": "comedytrain-line-up-comedytrain-nieuwe-toomler-amsterdam",
+        "titel": "Comedytrain Line-up",
+        "artiesten": []
+      },
+      {
+        "id": "comedytrain-matinee-comedytrain-nieuwe-toomler-amsterdam",
+        "titel": "Comedytrain Matinee",
+        "artiesten": []
+      },
+      {
+        "id": "comedytrain-op-zolder-comedytrain-nieuwe-toomler-amsterdam",
+        "titel": "Comedytrain op Zolder",
+        "artiesten": []
+      },
+      {
+        "id": "comedytrain-open-podium-comedytrain-nieuwe-toomler-amsterdam",
+        "titel": "Comedytrain Open Podium",
+        "artiesten": []
+      },
+      {
+        "id": "comedytrain-try-out-comedytrain-nieuwe-toomler-amsterdam",
+        "titel": "Comedytrain Try-Out",
+        "artiesten": []
+      },
+      {
+        "id": "dan-pulzello-dan-pulzello",
+        "titel": "Dan Pulzello",
+        "artiesten": [
+          "dan-pulzello"
+        ]
+      },
+      {
+        "id": "de-interventie-de-interventie",
+        "titel": "De Interventie",
+        "artiesten": [
+          "de-interventie"
+        ]
+      },
+      {
+        "id": "de-jongejaars-comedyhuis-utrecht",
+        "titel": "De Jongejaars",
+        "artiesten": []
+      },
+      {
+        "id": "de-nieuwe-lichting-met-mc-kasper-van-der-laan-comedytrain-nieuwe-toomler-amsterdam",
+        "titel": "De Nieuwe Lichting met MC Kasper van der Laan",
+        "artiesten": []
+      },
+      {
+        "id": "donderdagavondshow-comedyhuis-utrecht",
+        "titel": "Donderdagavondshow",
+        "artiesten": []
+      },
+      {
+        "id": "dubieuze-avond-feestdageneditie-comedyhuis-utrecht",
+        "titel": "Dubieuze Avond – feestdageneditie",
+        "artiesten": []
+      },
+      {
+        "id": "dutch-courage-rachel-morton-young-comedyhuis-utrecht",
+        "titel": "Dutch Courage – Rachel Morton-Young",
+        "artiesten": []
+      },
+      {
+        "id": "earl-okin-earl-okin",
+        "titel": "Earl Okin",
+        "artiesten": [
+          "earl-okin"
+        ]
+      },
+      {
+        "id": "ed-night-comedy-club-haug-rotterdam",
+        "titel": "Ed Night",
+        "artiesten": []
+      },
+      {
+        "id": "ed-night-ed-night",
+        "titel": "Ed Night",
+        "artiesten": [
+          "ed-night"
+        ]
+      },
+      {
+        "id": "elouise-eftos-elouise-eftos",
+        "titel": "Elouise Eftos",
+        "artiesten": [
+          "elouise-eftos"
+        ]
+      },
+      {
+        "id": "english-comedy-course-final-show-comedyhuis-utrecht",
+        "titel": "English Comedy Course Final Show",
+        "artiesten": []
+      },
+      {
+        "id": "english-open-mic-comedy-club-haug-rotterdam",
+        "titel": "English Open Mic",
+        "artiesten": []
+      },
+      {
+        "id": "english-talent-pool-comedyhuis-utrecht",
+        "titel": "English Talent Pool",
+        "artiesten": []
+      },
+      {
+        "id": "english-talent-pool-de-kargadoor-utrecht",
+        "titel": "English Talent Pool",
+        "artiesten": []
+      },
+      {
+        "id": "eric-van-sauers-sezgin-gulec-dubbel",
+        "titel": "Dubbel",
+        "artiesten": [
+          "eric-van-sauers",
+          "sezgin-gulec"
+        ]
+      },
+      {
+        "id": "eric-van-sauers-sezgin-gulec-eric-van-sauers-en-sezgin-gulec",
+        "titel": "Eric van Sauers & Sezgin Güleç",
+        "artiesten": [
+          "eric-van-sauers",
+          "sezgin-gulec"
+        ]
+      },
+      {
+        "id": "freedom-is-no-joke-comedyhuis-utrecht",
+        "titel": "Freedom is no joke",
+        "artiesten": []
+      },
+      {
+        "id": "freedom-is-no-joke-de-kargadoor-utrecht",
+        "titel": "Freedom is no joke",
+        "artiesten": []
+      },
+      {
+        "id": "glenn-wool-glenn-wool",
+        "titel": "Glenn Wool",
+        "artiesten": [
+          "glenn-wool"
+        ]
+      },
+      {
+        "id": "gluhwein-en-comedy-comedyhuis-utrecht",
+        "titel": "Glühwein & Comedy",
+        "artiesten": []
+      },
+      {
+        "id": "grace-mulvey-grace-mulvey",
+        "titel": "Grace Mulvey",
+        "artiesten": [
+          "grace-mulvey"
+        ]
+      },
+      {
+        "id": "haug-talks-live-comedy-club-haug-rotterdam",
+        "titel": "Haug Talks live",
+        "artiesten": []
+      },
+      {
+        "id": "impro-tastisch-amai-comedy-club-gent",
+        "titel": "Impro-tastisch",
+        "artiesten": []
+      },
+      {
+        "id": "international-comedy-showcase-kartoffel-utrecht",
+        "titel": "International Comedy Showcase",
+        "artiesten": []
+      },
+      {
+        "id": "jeroen-leenders-experience-unieke-live-comedy-show",
+        "titel": "Experience - Unieke Live Comedy Show",
+        "artiesten": [
+          "jeroen-leenders"
+        ]
+      },
+      {
+        "id": "josh-thomas-josh-thomas",
+        "titel": "Josh Thomas",
+        "artiesten": [
+          "josh-thomas"
+        ]
+      },
+      {
+        "id": "karan-karthik-en-friends-amai-comedy-club-gent",
+        "titel": "Karan Karthik & friends",
+        "artiesten": []
+      },
+      {
+        "id": "kees-van-amstel-emiel-van-der-logt-kees-van-amstel-en-emiel-van-der-logt",
+        "titel": "Kees van Amstel & Emiel van der Logt",
+        "artiesten": [
+          "kees-van-amstel",
+          "emiel-van-der-logt"
+        ]
+      },
+      {
+        "id": "late-night-improv-meeuw-en-tim-comedyhuis-utrecht",
+        "titel": "Late Night improv – Meeuw & Tim",
+        "artiesten": []
+      },
+      {
+        "id": "li-jin-hao-li-jin-hao",
+        "titel": "Li Jin Hao",
+        "artiesten": [
+          "li-jin-hao"
+        ]
+      },
+      {
+        "id": "lubach-and-friends-comedyhuis-utrecht",
+        "titel": "LUBACH and friends",
+        "artiesten": []
+      },
+      {
+        "id": "mark-waumans-mark-waumans",
+        "titel": "Mark Waumans",
+        "artiesten": [
+          "mark-waumans"
+        ]
+      },
+      {
+        "id": "meeuw-roovers-hidde-van-gestel-meeuw-roovers-en-hidde-van-gestel",
+        "titel": "Meeuw Roovers & Hidde van Gestel",
+        "artiesten": [
+          "meeuw-roovers",
+          "hidde-van-gestel"
+        ]
+      },
+      {
+        "id": "michael-shafar-michael-shafar",
+        "titel": "Michael Shafar",
+        "artiesten": [
+          "michael-shafar"
+        ]
+      },
+      {
+        "id": "nabil-abdulrashid-nabil-abdulrashid",
+        "titel": "Nabil Abdulrashid",
+        "artiesten": [
+          "nabil-abdulrashid"
+        ]
+      },
+      {
+        "id": "nasser-al-rayess-nasser-al-rayess",
+        "titel": "Nasser Al-Rayess",
+        "artiesten": [
+          "nasser-al-rayess"
+        ]
+      },
+      {
+        "id": "nira-tal-nira-tal",
+        "titel": "Nira Tal",
+        "artiesten": [
+          "nira-tal"
+        ]
+      },
+      {
+        "id": "nl-talentenpoule-comedyhuis-utrecht",
+        "titel": "NL Talentenpoule",
+        "artiesten": []
+      },
+      {
+        "id": "nl-talentenpoule-de-kargadoor-utrecht",
+        "titel": "NL Talentenpoule",
+        "artiesten": []
+      },
+      {
+        "id": "noches-del-3er-mundo-amai-comedy-club-gent",
+        "titel": "Noches del 3er mundo",
+        "artiesten": []
+      },
+      {
+        "id": "oneliner-extravaganza-oudejaars-editie-2026-in-oneliners-comedyhuis-utrecht",
+        "titel": "Oneliner Extravaganza, oudejaars editie: 2026 In Oneliners",
+        "artiesten": []
+      },
+      {
+        "id": "open-mic-comedyhuis-regulars-comedyhuis-utrecht",
+        "titel": "Open Mic Comedyhuis Regulars",
+        "artiesten": []
+      },
+      {
+        "id": "ozgur-turhan-ozgur-turhan",
+        "titel": "Özgür Turhan",
+        "artiesten": [
+          "ozgur-turhan"
+        ]
+      },
+      {
+        "id": "pandji-pragiwaksono-wongsoyudo-pandji-pragiwaksono-wongsoyudo",
+        "titel": "Pandji Pragiwaksono Wongsoyudo",
+        "artiesten": [
+          "pandji-pragiwaksono-wongsoyudo"
+        ]
+      },
+      {
+        "id": "pat-moore-pat-moore",
+        "titel": "Pat Moore",
+        "artiesten": [
+          "pat-moore"
+        ]
+      },
+      {
+        "id": "patrick-spicer-patrick-spicer",
+        "titel": "Patrick Spicer",
+        "artiesten": [
+          "patrick-spicer"
+        ]
+      },
+      {
+        "id": "pernille-haaland-pernille-haaland",
+        "titel": "Pernille Haaland",
+        "artiesten": [
+          "pernille-haaland"
+        ]
+      },
+      {
+        "id": "peter-pannekoek-fee-oomes-dubbel",
+        "titel": "Dubbel",
+        "artiesten": [
+          "peter-pannekoek",
+          "fee-oomes"
+        ]
+      },
+      {
+        "id": "peter-pannekoek-teun-de-vries-dubbel",
+        "titel": "Dubbel",
+        "artiesten": [
+          "peter-pannekoek",
+          "teun-de-vries"
+        ]
+      },
+      {
+        "id": "pitch-your-friend-comedy-en-dating-amai-comedy-club-gent",
+        "titel": "Pitch Your Friend - comedy & dating",
+        "artiesten": []
+      },
+      {
+        "id": "powerpoint-karaoke-amai-comedy-club-gent",
+        "titel": "Powerpoint Karaoke",
+        "artiesten": []
+      },
+      {
+        "id": "raoul-heertje-davine-perik-raoul-heertje-en-davine-perik",
+        "titel": "Raoul Heertje & Davine Perik",
+        "artiesten": [
+          "raoul-heertje",
+          "davine-perik"
+        ]
+      },
+      {
+        "id": "reguliere-line-upshow-feestdagenprogrammering-comedyhuis-utrecht",
+        "titel": "Reguliere line-upshow – feestdagenprogrammering",
+        "artiesten": []
+      },
+      {
+        "id": "ric-diez-is-happy-sad-amai-comedy-club-gent",
+        "titel": "Ric Diez is happy/sad",
+        "artiesten": []
+      },
+      {
+        "id": "ric-diez-ric-diez",
+        "titel": "Ric Diez",
+        "artiesten": [
+          "ric-diez"
+        ]
+      },
+      {
+        "id": "rising-stars-ghent-amai-comedy-club-gent",
+        "titel": "Rising Stars Ghent",
+        "artiesten": []
+      },
+      {
+        "id": "robert-derksen-op-zoek-naar-mij-de-kargadoor-utrecht",
+        "titel": "Robert Derksen - Op Zoek Naar Mij",
+        "artiesten": []
+      },
+      {
+        "id": "roel-c-verburg-roel-c-verburg",
+        "titel": "Roel C. Verburg",
+        "artiesten": [
+          "roel-c-verburg"
+        ]
+      },
+      {
+        "id": "rogier-bak-diederik-zuurmond-rogier-bak-en-diederik-zuurmond",
+        "titel": "Rogier Bak & Diederik Zuurmond",
+        "artiesten": [
+          "rogier-bak",
+          "diederik-zuurmond"
+        ]
+      },
+      {
+        "id": "sam-eley-sam-eley",
+        "titel": "Sam Eley",
+        "artiesten": [
+          "sam-eley"
+        ]
+      },
+      {
+        "id": "sara-pascoe-sara-pascoe",
+        "titel": "Sara Pascoe",
+        "artiesten": [
+          "sara-pascoe"
+        ]
+      },
+      {
+        "id": "seda-yuz-seda-yuz",
+        "titel": "Seda Yüz",
+        "artiesten": [
+          "seda-yuz"
+        ]
+      },
+      {
+        "id": "siegfried-en-ralph-oftewel-howard-komproe-en-murth-mossel-comedytrain-nieuwe-toomler-amsterdam",
+        "titel": "Siegfried & Ralph (oftewel Howard Komproe & Murth Mossel)",
+        "artiesten": []
+      },
+      {
+        "id": "sjoerd-janssen-sjoerd-janssen",
+        "titel": "Sjoerd Janssen",
+        "artiesten": [
+          "sjoerd-janssen"
+        ]
+      },
+      {
+        "id": "sofie-hagen-sofie-hagen",
+        "titel": "Sofie Hagen",
+        "artiesten": [
+          "sofie-hagen"
+        ]
+      },
+      {
+        "id": "sophie-duker-sophie-duker",
+        "titel": "Sophie Duker",
+        "artiesten": [
+          "sophie-duker"
+        ]
+      },
+      {
+        "id": "sourmouth-comedy-club-haug-rotterdam",
+        "titel": "Sourmouth",
+        "artiesten": []
+      },
+      {
+        "id": "spoor-bijster-comedytrain-nieuwe-toomler-amsterdam",
+        "titel": "Spoor Bijster",
+        "artiesten": []
+      },
+      {
+        "id": "teun-de-vries-tim-fransen-dubbel",
+        "titel": "Dubbel",
+        "artiesten": [
+          "teun-de-vries",
+          "tim-fransen"
+        ]
+      },
+      {
+        "id": "the-american-apology-tour-amai-comedy-club-gent",
+        "titel": "The American Apology Tour",
+        "artiesten": []
+      },
+      {
+        "id": "the-grapevyne-old-school-comedy-night-comedy-club-haug-rotterdam",
+        "titel": "The Grapevyne 'Old School' Comedy Night!",
+        "artiesten": []
+      },
+      {
+        "id": "theo-maassen-tim-fransen-dubbel",
+        "titel": "Dubbel",
+        "artiesten": [
+          "theo-maassen",
+          "tim-fransen"
+        ]
+      },
+      {
+        "id": "thomas-green-thomas-green",
+        "titel": "Thomas Green",
+        "artiesten": [
+          "thomas-green"
+        ]
+      },
+      {
+        "id": "tim-hartog-alina-sharipova-tim-hartog-en-alina-sharipova",
+        "titel": "Tim Hartog & Alina Sharipova",
+        "artiesten": [
+          "tim-hartog",
+          "alina-sharipova"
+        ]
+      },
+      {
+        "id": "tim-hartog-berit-companjen-tim-hartog-en-berit-companjen",
+        "titel": "Tim Hartog & Berit Companjen",
+        "artiesten": [
+          "tim-hartog",
+          "berit-companjen"
+        ]
+      },
+      {
+        "id": "tim-hartog-vincent-geers-tim-hartog-en-vincent-geers",
+        "titel": "Tim Hartog & Vincent Geers",
+        "artiesten": [
+          "tim-hartog",
+          "vincent-geers"
+        ]
+      },
+      {
+        "id": "tobi-kooiman-alina-sharipova-tobi-kooiman-en-alina-sharipova",
+        "titel": "Tobi Kooiman & Alina Sharipova",
+        "artiesten": [
+          "tobi-kooiman",
+          "alina-sharipova"
+        ]
+      },
+      {
+        "id": "toonmoment-comedyschrijfreeks-amai-comedy-club-gent",
+        "titel": "Toonmoment Comedyschrijfreeks",
+        "artiesten": []
+      },
+      {
+        "id": "try-out-comedy-talent-award-kwart-finalisten-comedyhuis-utrecht",
+        "titel": "Try Out Comedy Talent Award Kwart Finalisten",
+        "artiesten": []
+      },
+      {
+        "id": "uurtje-finn-comedy-club-haug-rotterdam",
+        "titel": "Uurtje Finn",
+        "artiesten": []
+      },
+      {
+        "id": "vijf-het-leven-benefiet-ter-ere-van-marc-van-gestel-comedyhuis-utrecht",
+        "titel": "Vijf het leven – benefiet ter ere van Marc van Gestel",
+        "artiesten": []
+      },
+      {
+        "id": "vincent-geers-victor-luis-van-es-vincent-geers-en-victor-luis-van-es",
+        "titel": "Vincent Geers & Victor Luis van Es",
+        "artiesten": [
+          "vincent-geers",
+          "victor-luis-van-es"
+        ]
+      },
+      {
+        "id": "vrijdagavondshow-uicf-editie-comedyhuis-utrecht",
+        "titel": "Vrijdagavondshow – UICF-editie",
+        "artiesten": []
+      },
+      {
+        "id": "vroege-vrijdagavondshow-comedyhuis-utrecht",
+        "titel": "Vroege vrijdagavondshow",
+        "artiesten": []
+      },
+      {
+        "id": "vroege-zaterdagavondshow-comedyhuis-utrecht",
+        "titel": "Vroege zaterdagavondshow",
+        "artiesten": []
+      },
+      {
+        "id": "wilko-terwijn-jorgen-raymann-wilko-terwijn-en-jorgen-raymann",
+        "titel": "Wilko Terwijn & Jörgen Raymann",
+        "artiesten": [
+          "wilko-terwijn",
+          "jorgen-raymann"
+        ]
+      },
+      {
+        "id": "woensdagavondshow-feestdageneditie-comedyhuis-utrecht",
+        "titel": "Woensdagavondshow – feestdageneditie",
+        "artiesten": []
+      },
+      {
+        "id": "writers-room-open-mic-comedyhuis-utrecht",
+        "titel": "Writers Room Open Mic",
+        "artiesten": []
+      },
+      {
+        "id": "zaterdagavondshow-kersteditie-comedyhuis-utrecht",
+        "titel": "Zaterdagavondshow – Kersteditie",
+        "artiesten": []
+      },
+      {
+        "id": "zondagmiddagshow-feestdageneditie-comedyhuis-utrecht",
+        "titel": "Zondagmiddagshow – feestdageneditie",
+        "artiesten": []
       }
     ]
   },
@@ -514,6 +1541,15 @@
       "zalen": 579,
       "plaatsen": 424,
       "voorstellingen": 666
+    },
+    {
+      "datum": "2026-10-30",
+      "speeldata": 6604,
+      "komend": 6436,
+      "artiesten": 506,
+      "zalen": 584,
+      "plaatsen": 424,
+      "voorstellingen": 798
     }
   ]
 }

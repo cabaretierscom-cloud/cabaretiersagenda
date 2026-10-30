@@ -600,6 +600,14 @@
     "website": null
   },
   {
+    "id": "amai-comedy-club-gent",
+    "naam": "Amai Comedy Club",
+    "plaats": "Gent",
+    "land": "BE",
+    "soort": "comedyclub",
+    "website": "https://www.amaicomedyclub.com"
+  },
+  {
     "id": "capitole-gent",
     "naam": "Capitole Gent",
     "plaats": "Gent",
@@ -2230,7 +2238,7 @@
   },
   {
     "id": "comedytrain-nieuwe-toomler-amsterdam",
-    "naam": "Comedytrain (nieuwe Toomler)",
+    "naam": "Comedytrain",
     "plaats": "Amsterdam",
     "land": "NL",
     "soort": "comedyclub",
@@ -5379,6 +5387,14 @@
     "website": "https://comedyhuis.nl"
   },
   {
+    "id": "de-kargadoor-utrecht",
+    "naam": "De Kargadoor",
+    "plaats": "Utrecht",
+    "land": "NL",
+    "soort": "café",
+    "website": "https://www.kargadoor.nl"
+  },
+  {
     "id": "hertz-tivoli-vredenburg-utrecht",
     "naam": "Hertz (Tivoli Vredenburg)",
     "plaats": "Utrecht",
@@ -5395,12 +5411,28 @@
     "website": "https://www.werftheater.nl"
   },
   {
+    "id": "kartoffel-utrecht",
+    "naam": "Kartoffel",
+    "plaats": "Utrecht",
+    "land": "NL",
+    "soort": "café",
+    "website": null
+  },
+  {
     "id": "knock-out-comedy-club-utrecht",
     "naam": "Knock Out Comedy Club",
     "plaats": "Utrecht",
     "land": "NL",
     "soort": "comedyclub",
     "website": "https://secure.tix4all.nl"
+  },
+  {
+    "id": "moira-utrecht",
+    "naam": "Moira",
+    "plaats": "Utrecht",
+    "land": "NL",
+    "soort": "café",
+    "website": null
   },
   {
     "id": "podium-hoge-woerd-utrecht",
@@ -5441,6 +5473,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.theaterdemusketon.nl"
+  },
+  {
+    "id": "venster-utrecht",
+    "naam": "Venster",
+    "plaats": "Utrecht",
+    "land": "NL",
+    "soort": "cultuurcentrum",
+    "website": null
   },
   {
     "id": "hofnar-valkenswaard",

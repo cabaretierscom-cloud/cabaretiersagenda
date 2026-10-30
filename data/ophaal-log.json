@@ -6,6 +6,13 @@
     "aantal": 485,
     "seconden": 14
   },
+  "amai": {
+    "naam": "Amai Comedy Club",
+    "datum": "2026-10-30",
+    "gelukt": true,
+    "aantal": 18,
+    "seconden": 2
+  },
   "amphion": {
     "naam": "Amphion",
     "datum": "2026-10-29",
@@ -63,6 +70,20 @@
     "seconden": 11,
     "fout": "HTTP 403 voor https://www.comedycafe.nl/wp-json/tribe/events/v1/events?start_date=2026-10-29&per_page=50&page=1"
   },
+  "comedyhuis": {
+    "naam": "Comedyhuis Utrecht",
+    "datum": "2026-10-30",
+    "gelukt": true,
+    "aantal": 312,
+    "seconden": 2
+  },
+  "comedytrain": {
+    "naam": "Comedytrain",
+    "datum": "2026-10-30",
+    "gelukt": true,
+    "aantal": 152,
+    "seconden": 382
+  },
   "cpunt": {
     "naam": "Cpunt",
     "datum": "2026-10-29",
@@ -105,6 +126,13 @@
     "gelukt": true,
     "aantal": 46,
     "seconden": 3
+  },
+  "haug": {
+    "naam": "Comedy Club Haug",
+    "datum": "2026-10-30",
+    "gelukt": true,
+    "aantal": 130,
+    "seconden": 118
   },
   "hengelo": {
     "naam": "Schouwburg Hengelo",

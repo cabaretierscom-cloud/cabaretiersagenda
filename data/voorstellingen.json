@@ -40,6 +40,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "aidan-jones-aidan-jones",
+    "titel": "Aidan Jones",
+    "artiesten": [
+      "aidan-jones"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "aidan-jones-comedy-cafe-amsterdam",
     "titel": "Aidan Jones",
     "artiesten": [],
@@ -71,6 +79,15 @@
     "genre": "cabaret"
   },
   {
+    "id": "alex-ploeg-emilio-guzman-dubbel",
+    "titel": "Dubbel",
+    "artiesten": [
+      "alex-ploeg",
+      "emilio-guzman"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "alex-ploeg-niks-persoonlijks",
     "titel": "Niks Persoonlijks",
     "artiesten": [
@@ -89,10 +106,27 @@
     "genre": "cabaret"
   },
   {
+    "id": "alex-ploeg-tim-fransen-dubbel",
+    "titel": "Dubbel",
+    "artiesten": [
+      "alex-ploeg",
+      "tim-fransen"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "alex-sijm-ooghoogte",
     "titel": "Ooghoogte",
     "artiesten": [
       "alex-sijm"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "ali-siddiq-ali-siddiq",
+    "titel": "Ali Siddiq",
+    "artiesten": [
+      "ali-siddiq"
     ],
     "genre": "stand-up"
   },
@@ -105,6 +139,15 @@
       "stephen-bell",
       "finn-visser",
       "vincent-geers"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "alina-sharipova-jorn-van-dam-alina-sharipova-en-jorn-van-dam",
+    "titel": "Alina Sharipova & Jorn van Dam",
+    "artiesten": [
+      "alina-sharipova",
+      "jorn-van-dam"
     ],
     "genre": "stand-up"
   },
@@ -124,12 +167,42 @@
     "genre": "cabaret"
   },
   {
+    "id": "alina-sharipova-tim-kroezen-alina-sharipova-en-tim-kroezen",
+    "titel": "Alina Sharipova & Tim Kroezen",
+    "artiesten": [
+      "alina-sharipova",
+      "tim-kroezen"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "all-english-comedy-night-de-kargadoor-utrecht",
+    "titel": "All English Comedy Night",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "de-kargadoor-utrecht"
+  },
+  {
+    "id": "alsdatmaargoedgaat-comedy-club-haug-rotterdam",
+    "titel": "alsdatmaargoedgaat",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-club-haug-rotterdam"
+  },
+  {
     "id": "aluin-moeder-aarde",
     "titel": "Moeder Aarde",
     "artiesten": [
       "aluin"
     ],
     "genre": "theaterkomedie"
+  },
+  {
+    "id": "amai-improcomedy-legends-amai-comedy-club-gent",
+    "titel": "Amai Improcomedy Legends",
+    "artiesten": [],
+    "genre": "improvisatie",
+    "theater": "amai-comedy-club-gent"
   },
   {
     "id": "amelie-albrecht-stand-up",
@@ -199,6 +272,14 @@
       "thijs-kemperink"
     ],
     "genre": "oudejaarsconference"
+  },
+  {
+    "id": "andrew-ryan-andrew-ryan",
+    "titel": "Andrew Ryan",
+    "artiesten": [
+      "andrew-ryan"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "andrey-airapetov-southend-comedy-club",
@@ -345,6 +426,21 @@
         "bron": "https://delamar.nl/voorstellingen/anuar/"
       }
     ]
+  },
+  {
+    "id": "anuar-staat-ie-aan",
+    "titel": "Staat ie Aan?",
+    "artiesten": [
+      "anuar"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "arabic-showcase-with-standout-comedyhuis-utrecht",
+    "titel": "Arabic Showcase with StandOut",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "aren-scholte-lex-van-wieren-valt-er-nog-wat-te-lachen",
@@ -564,6 +660,14 @@
     ]
   },
   {
+    "id": "berk-karan-berk-karan",
+    "titel": "Berk Karan",
+    "artiesten": [
+      "berk-karan"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "bert-gabriels-live-vanuit-de-wetstraat",
     "titel": "Live vanuit de Wetstraat",
     "artiesten": [
@@ -603,6 +707,20 @@
       "martin-van-waardenberg"
     ],
     "genre": "theaterkomedie"
+  },
+  {
+    "id": "best-of-queer-comedy-club-haug-rotterdam",
+    "titel": "Best of Queer",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-club-haug-rotterdam"
+  },
+  {
+    "id": "best-of-stand-up-comedy-club-haug-rotterdam",
+    "titel": "Best of Stand-Up",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-club-haug-rotterdam"
   },
   {
     "id": "best-of-stand-up-xl-club-haug-x-luxor",
@@ -662,6 +780,13 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "theater-bellevue"
+  },
+  {
+    "id": "big-fat-gong-show-comedy-club-haug-rotterdam",
+    "titel": "Big Fat Gong Show",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-club-haug-rotterdam"
   },
   {
     "id": "bill-bailey-vaudevillean",
@@ -818,6 +943,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "brightclub-nerdland-amai-edition-amai-comedy-club-gent",
+    "titel": "Brightclub Nerdland - Amai Edition",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
     "id": "bro-s-bromens",
     "titel": "Bromens",
     "artiesten": [
@@ -856,6 +988,15 @@
       "bugra-gedik"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "bugra-gedik-vincent-geers-dubbel",
+    "titel": "Dubbel",
+    "artiesten": [
+      "bugra-gedik",
+      "vincent-geers"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "buitenboord-comedy-cafe-schouwburg-het-park",
@@ -974,6 +1115,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "charlie-mac-charlie-mac",
+    "titel": "Charlie Mac",
+    "artiesten": [
+      "charlie-mac"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "chris-verlaan-ach-er-komen-geen-kindjes-van",
     "titel": "Ach, er komen geen kindjes van",
     "artiesten": [
@@ -1013,6 +1162,13 @@
     "theater": "comedy-cafe-amsterdam"
   },
   {
+    "id": "chuckle-up-in-english-comedy-club-haug-rotterdam",
+    "titel": "Chuckle-Up! in English",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-club-haug-rotterdam"
+  },
+  {
     "id": "clara-zoerbier-jack-vinders-clara-s-krismes",
     "titel": "Clara’s Krismes",
     "artiesten": [
@@ -1027,6 +1183,13 @@
       "claudia-de-breij"
     ],
     "genre": "oudejaarsconference"
+  },
+  {
+    "id": "club-haug-regulars-try-out-comedy-club-haug-rotterdam",
+    "titel": "Club Haug regulars try-out",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-club-haug-rotterdam"
   },
   {
     "id": "club-haug-the-stand-up-club",
@@ -1058,6 +1221,13 @@
       "collectief-jongste-kind"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "comedy-cloud-hertz-tivoli-vredenburg-utrecht",
+    "titel": "Comedy Cloud",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "hertz-tivoli-vredenburg-utrecht"
   },
   {
     "id": "comedy-club-almere-comedy-club-almere",
@@ -1105,6 +1275,27 @@
     "genre": "stand-up"
   },
   {
+    "id": "comedy-dubbel-rene-van-meurs-en-isabelle-dieperink-comedyhuis-utrecht",
+    "titel": "Comedy dubbel: René van Meurs en Isabelle Dieperink",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "comedy-en-diner-the-writers-room-venster-utrecht",
+    "titel": "Comedy & Diner The Writers Room",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "venster-utrecht"
+  },
+  {
+    "id": "comedy-explosie-amai-comedy-club-gent",
+    "titel": "Comedy Explosie",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
     "id": "comedy-festival-limburg-de-finale",
     "titel": "De Finale",
     "artiesten": [
@@ -1150,6 +1341,62 @@
     "theater": "comedy-cafe-amsterdam"
   },
   {
+    "id": "comedy-open-mic-amai-comedy-club-gent",
+    "titel": "Comedy Open Mic",
+    "artiesten": [],
+    "genre": "open-mic",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
+    "id": "comedy-showcase-amai-comedy-club-gent",
+    "titel": "Comedy Showcase",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
+    "id": "comedy-talent-award-finale-2027-hertz-tivoli-vredenburg-utrecht",
+    "titel": "Comedy Talent Award – Finale 2027",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "hertz-tivoli-vredenburg-utrecht"
+  },
+  {
+    "id": "comedy-talent-award-kwartfinale-1-comedyhuis-utrecht",
+    "titel": "Comedy Talent Award – Kwartfinale 1",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "comedy-talent-award-try-out-finalisten-1-comedyhuis-utrecht",
+    "titel": "Comedy Talent Award – Try-out finalisten 1",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "comedy-talent-award-try-out-halvefinalisten-1-comedyhuis-utrecht",
+    "titel": "Comedy Talent Award – Try-out halvefinalisten 1",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "comedy-talent-award-try-out-kwartfinalisten-de-kargadoor-utrecht",
+    "titel": "Comedy Talent Award – try-out kwartfinalisten",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "de-kargadoor-utrecht"
+  },
+  {
+    "id": "comedy-talent-award-voorronde-7-comedyhuis-utrecht",
+    "titel": "Comedy Talent Award - Voorronde 7",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
     "id": "comedy-vibe-srefidensi-dey",
     "titel": "Srefidensi dey",
     "artiesten": [
@@ -1174,6 +1421,48 @@
     "genre": "stand-up"
   },
   {
+    "id": "comedyhuis-pakt-uit-middagshow-comedyhuis-utrecht",
+    "titel": "Comedyhuis pakt uit – middagshow",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "comedyshow-aan-de-slinger-theater-aan-de-slinger-houten",
+    "titel": "Comedyshow Aan de Slinger",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "theater-aan-de-slinger-houten"
+  },
+  {
+    "id": "comedytalenten-vandestreek-de-kargadoor-utrecht",
+    "titel": "Comedytalenten Vandestreek",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "de-kargadoor-utrecht"
+  },
+  {
+    "id": "comedytrain-comedy-op-zolder-comedytrain-nieuwe-toomler-amsterdam",
+    "titel": "Comedytrain Comedy op zolder",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedytrain-nieuwe-toomler-amsterdam"
+  },
+  {
+    "id": "comedytrain-line-up-comedytrain-nieuwe-toomler-amsterdam",
+    "titel": "Comedytrain Line-up",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedytrain-nieuwe-toomler-amsterdam"
+  },
+  {
+    "id": "comedytrain-matinee-comedytrain-nieuwe-toomler-amsterdam",
+    "titel": "Comedytrain Matinee",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedytrain-nieuwe-toomler-amsterdam"
+  },
+  {
     "id": "comedytrain-on-tour-de-plek-waar-de-grootste-comedians-van-nederland-begonnen",
     "titel": "De plek waar de grootste comedians van Nederland begonnen",
     "artiesten": [
@@ -1188,6 +1477,27 @@
       "comedytrain-on-tour"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "comedytrain-op-zolder-comedytrain-nieuwe-toomler-amsterdam",
+    "titel": "Comedytrain op Zolder",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedytrain-nieuwe-toomler-amsterdam"
+  },
+  {
+    "id": "comedytrain-open-podium-comedytrain-nieuwe-toomler-amsterdam",
+    "titel": "Comedytrain Open Podium",
+    "artiesten": [],
+    "genre": "open-mic",
+    "theater": "comedytrain-nieuwe-toomler-amsterdam"
+  },
+  {
+    "id": "comedytrain-try-out-comedytrain-nieuwe-toomler-amsterdam",
+    "titel": "Comedytrain Try-Out",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedytrain-nieuwe-toomler-amsterdam"
   },
   {
     "id": "comedytunes-comedy-night-de-kleine-willem",
@@ -1247,6 +1557,14 @@
     "titel": "Hard Launch World Tour",
     "artiesten": [
       "dan-and-phil"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "dan-pulzello-dan-pulzello",
+    "titel": "Dan Pulzello",
+    "artiesten": [
+      "dan-pulzello"
     ],
     "genre": "stand-up"
   },
@@ -1436,6 +1754,21 @@
     "genre": "cabaret"
   },
   {
+    "id": "de-interventie-de-interventie",
+    "titel": "De Interventie",
+    "artiesten": [
+      "de-interventie"
+    ],
+    "genre": "improvisatie"
+  },
+  {
+    "id": "de-jongejaars-comedyhuis-utrecht",
+    "titel": "De Jongejaars",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
     "id": "de-limburgse-buuttecup-stichting-buutte-cultuur-limburg",
     "titel": "Stichting Buutte Cultuur Limburg",
     "artiesten": [
@@ -1482,6 +1815,13 @@
       "de-musical-zonder-billen-4"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "de-nieuwe-lichting-met-mc-kasper-van-der-laan-comedytrain-nieuwe-toomler-amsterdam",
+    "titel": "De Nieuwe Lichting met MC Kasper van der Laan",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedytrain-nieuwe-toomler-amsterdam"
   },
   {
     "id": "de-poes-van-usi-loes-joshua-timisela",
@@ -1650,6 +1990,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "donderdagavondshow-comedyhuis-utrecht",
+    "titel": "Donderdagavondshow",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
     "id": "dorine-wiersma-gaandeweg",
     "titel": "Gaandeweg",
     "artiesten": [
@@ -1686,6 +2033,28 @@
     "titel": "Voor Normale Mensen",
     "artiesten": [
       "dries-heyneman"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "dubieuze-avond-feestdageneditie-comedyhuis-utrecht",
+    "titel": "Dubieuze Avond – feestdageneditie",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "dutch-courage-rachel-morton-young-comedyhuis-utrecht",
+    "titel": "Dutch Courage – Rachel Morton-Young",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "earl-okin-earl-okin",
+    "titel": "Earl Okin",
+    "artiesten": [
+      "earl-okin"
     ],
     "genre": "stand-up"
   },
@@ -1769,6 +2138,21 @@
     "theater": "southend-comedy-club"
   },
   {
+    "id": "ed-night-comedy-club-haug-rotterdam",
+    "titel": "Ed Night",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-club-haug-rotterdam"
+  },
+  {
+    "id": "ed-night-ed-night",
+    "titel": "Ed Night",
+    "artiesten": [
+      "ed-night"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "eeftink-en-neimeijer-niets-menselijks-is-ons-vreemd",
     "titel": "Niets Menselijks Is Ons Vreemd!",
     "artiesten": [
@@ -1800,6 +2184,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "elouise-eftos-elouise-eftos",
+    "titel": "Elouise Eftos",
+    "artiesten": [
+      "elouise-eftos"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "els-de-schepper-b-engel",
     "titel": "(B)engel",
     "artiesten": [
@@ -1826,6 +2218,34 @@
     "genre": "cabaret"
   },
   {
+    "id": "english-comedy-course-final-show-comedyhuis-utrecht",
+    "titel": "English Comedy Course Final Show",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "english-open-mic-comedy-club-haug-rotterdam",
+    "titel": "English Open Mic",
+    "artiesten": [],
+    "genre": "open-mic",
+    "theater": "comedy-club-haug-rotterdam"
+  },
+  {
+    "id": "english-talent-pool-comedyhuis-utrecht",
+    "titel": "English Talent Pool",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "english-talent-pool-de-kargadoor-utrecht",
+    "titel": "English Talent Pool",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "de-kargadoor-utrecht"
+  },
+  {
     "id": "eran-ben-michael-ai-en-ik",
     "titel": "Ai&ik",
     "artiesten": [
@@ -1846,6 +2266,24 @@
     "titel": "Made in cité",
     "artiesten": [
       "erhan-demirci"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "eric-van-sauers-sezgin-gulec-dubbel",
+    "titel": "Dubbel",
+    "artiesten": [
+      "eric-van-sauers",
+      "sezgin-gulec"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "eric-van-sauers-sezgin-gulec-eric-van-sauers-en-sezgin-gulec",
+    "titel": "Eric van Sauers & Sezgin Güleç",
+    "artiesten": [
+      "eric-van-sauers",
+      "sezgin-gulec"
     ],
     "genre": "stand-up"
   },
@@ -2076,6 +2514,20 @@
     "genre": "stand-up"
   },
   {
+    "id": "freedom-is-no-joke-comedyhuis-utrecht",
+    "titel": "Freedom is no joke",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "freedom-is-no-joke-de-kargadoor-utrecht",
+    "titel": "Freedom is no joke",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "de-kargadoor-utrecht"
+  },
+  {
     "id": "freek-de-jonge-wisten-wij-veel",
     "titel": "Wisten wij veel",
     "artiesten": [
@@ -2179,12 +2631,35 @@
     "genre": "cabaret"
   },
   {
+    "id": "glenn-wool-glenn-wool",
+    "titel": "Glenn Wool",
+    "artiesten": [
+      "glenn-wool"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "glodi-lugungu-in-de-hemel-ken-ik-jullie-niet",
     "titel": "In de Hemel ken ik jullie niet",
     "artiesten": [
       "glodi-lugungu"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "gluhwein-en-comedy-comedyhuis-utrecht",
+    "titel": "Glühwein & Comedy",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "grace-mulvey-grace-mulvey",
+    "titel": "Grace Mulvey",
+    "artiesten": [
+      "grace-mulvey"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "greg-shapiro-king-me-250-years-of-donald-trump",
@@ -2382,6 +2857,13 @@
     "theater": "comedy-cafe-amsterdam"
   },
   {
+    "id": "haug-talks-live-comedy-club-haug-rotterdam",
+    "titel": "Haug Talks live",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-club-haug-rotterdam"
+  },
+  {
     "id": "hendrik-kegels-en-thomas-claessens-a-comedy-of-errors",
     "titel": "A Comedy of Errors",
     "artiesten": [
@@ -2547,6 +3029,20 @@
       "ice"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "impro-tastisch-amai-comedy-club-gent",
+    "titel": "Impro-tastisch",
+    "artiesten": [],
+    "genre": "improvisatie",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
+    "id": "international-comedy-showcase-kartoffel-utrecht",
+    "titel": "International Comedy Showcase",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "kartoffel-utrecht"
   },
   {
     "id": "iris-rulkens-van-harte",
@@ -2744,6 +3240,14 @@
       "jeroen-leenders"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "jeroen-leenders-experience-unieke-live-comedy-show",
+    "titel": "Experience - Unieke Live Comedy Show",
+    "artiesten": [
+      "jeroen-leenders"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "jeroen-leenders-heiden",
@@ -2968,6 +3472,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "josh-thomas-josh-thomas",
+    "titel": "Josh Thomas",
+    "artiesten": [
+      "josh-thomas"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "jules-keeris-knegsel-zuid",
     "titel": "Knegsel-Zuid",
     "artiesten": [
@@ -3032,6 +3544,13 @@
     "genre": "stand-up"
   },
   {
+    "id": "karan-karthik-en-friends-amai-comedy-club-gent",
+    "titel": "Karan Karthik & friends",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
     "id": "karin-bloemen-renaissance-2-0",
     "titel": "Renaissance 2.0",
     "artiesten": [
@@ -3076,6 +3595,15 @@
     "titel": "Yesterday",
     "artiesten": [
       "kees-prins"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "kees-van-amstel-emiel-van-der-logt-kees-van-amstel-en-emiel-van-der-logt",
+    "titel": "Kees van Amstel & Emiel van der Logt",
+    "artiesten": [
+      "kees-van-amstel",
+      "emiel-van-der-logt"
     ],
     "genre": "stand-up"
   },
@@ -3291,6 +3819,13 @@
     "theater": "stadsgehoorzaal-leiden"
   },
   {
+    "id": "late-night-improv-meeuw-en-tim-comedyhuis-utrecht",
+    "titel": "Late Night improv – Meeuw & Tim",
+    "artiesten": [],
+    "genre": "improvisatie",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
     "id": "laus-steenbeke-ydwer-bosma-mist",
     "titel": "Mist",
     "artiesten": [
@@ -3423,6 +3958,14 @@
       "leon-van-der-zanden"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "li-jin-hao-li-jin-hao",
+    "titel": "Li Jin Hao",
+    "artiesten": [
+      "li-jin-hao"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "lieven-scheire-nerdland-festival-2027",
@@ -3559,6 +4102,13 @@
       "lovella-telesford"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "lubach-and-friends-comedyhuis-utrecht",
+    "titel": "LUBACH and friends",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "luuk-ransijn-uitkijk",
@@ -3785,6 +4335,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "mark-waumans-mark-waumans",
+    "titel": "Mark Waumans",
+    "artiesten": [
+      "mark-waumans"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "marlijn-weerdenburg-geworteld",
     "titel": "Geworteld",
     "artiesten": [
@@ -3935,6 +4493,15 @@
     "genre": "cabaret"
   },
   {
+    "id": "meeuw-roovers-hidde-van-gestel-meeuw-roovers-en-hidde-van-gestel",
+    "titel": "Meeuw Roovers & Hidde van Gestel",
+    "artiesten": [
+      "meeuw-roovers",
+      "hidde-van-gestel"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "merijn-scholten-lemming",
     "titel": "Lemming",
     "artiesten": [
@@ -4027,6 +4594,14 @@
         "bron": "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17"
       }
     ]
+  },
+  {
+    "id": "michael-shafar-michael-shafar",
+    "titel": "Michael Shafar",
+    "artiesten": [
+      "michael-shafar"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "micky-overman-don-t-threaten-me-with-a-good-time",
@@ -4132,6 +4707,14 @@
     ]
   },
   {
+    "id": "nabil-abdulrashid-nabil-abdulrashid",
+    "titel": "Nabil Abdulrashid",
+    "artiesten": [
+      "nabil-abdulrashid"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "nabil-aoulad-ayad-daar-is-hij-weer",
     "titel": "Daar is hij weer!",
     "artiesten": [
@@ -4184,6 +4767,14 @@
       "naomi-seine"
     ],
     "genre": "kleinkunst"
+  },
+  {
+    "id": "nasser-al-rayess-nasser-al-rayess",
+    "titel": "Nasser Al-Rayess",
+    "artiesten": [
+      "nasser-al-rayess"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "nathalie-baartman-de-bossels-van-baartman-ii",
@@ -4298,6 +4889,35 @@
     "genre": "cabaret"
   },
   {
+    "id": "nira-tal-nira-tal",
+    "titel": "Nira Tal",
+    "artiesten": [
+      "nira-tal"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "nl-talentenpoule-comedyhuis-utrecht",
+    "titel": "NL Talentenpoule",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "nl-talentenpoule-de-kargadoor-utrecht",
+    "titel": "NL Talentenpoule",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "de-kargadoor-utrecht"
+  },
+  {
+    "id": "noches-del-3er-mundo-amai-comedy-club-gent",
+    "titel": "Noches del 3er mundo",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
     "id": "noord-hollandse-comedy-show-schouwburg-het-park",
     "titel": "Noord-Hollandse Comedy Show",
     "artiesten": [],
@@ -4318,6 +4938,13 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "theater-zuidplein"
+  },
+  {
+    "id": "oneliner-extravaganza-oudejaars-editie-2026-in-oneliners-comedyhuis-utrecht",
+    "titel": "Oneliner Extravaganza, oudejaars editie: 2026 In Oneliners",
+    "artiesten": [],
+    "genre": "oudejaarsconference",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "onias-landveld-jorgen-raymann-howard-komproe-papa-zonder-handleiding-xl",
@@ -4348,6 +4975,13 @@
       "onias-landveld"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "open-mic-comedyhuis-regulars-comedyhuis-utrecht",
+    "titel": "Open Mic Comedyhuis Regulars",
+    "artiesten": [],
+    "genre": "open-mic",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "open-mic-confro-academy-x-theater-zuidplein",
@@ -4381,11 +5015,35 @@
     "genre": "cabaret"
   },
   {
+    "id": "ozgur-turhan-ozgur-turhan",
+    "titel": "Özgür Turhan",
+    "artiesten": [
+      "ozgur-turhan"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "ozgur-turhan-yepyenisi-stand-up-southend-comedy-club",
     "titel": "Özgür Turhan Yepyenisi” Stand Up",
     "artiesten": [],
     "genre": "stand-up",
     "theater": "southend-comedy-club"
+  },
+  {
+    "id": "pandji-pragiwaksono-wongsoyudo-pandji-pragiwaksono-wongsoyudo",
+    "titel": "Pandji Pragiwaksono Wongsoyudo",
+    "artiesten": [
+      "pandji-pragiwaksono-wongsoyudo"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "pat-moore-pat-moore",
+    "titel": "Pat Moore",
+    "artiesten": [
+      "pat-moore"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "patrick-laureij-kintsugi",
@@ -4439,6 +5097,14 @@
     "theater": "kleine-komedie"
   },
   {
+    "id": "patrick-spicer-patrick-spicer",
+    "titel": "Patrick Spicer",
+    "artiesten": [
+      "patrick-spicer"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "paul-haenen-50-jaar-margreet-dolman",
     "titel": "50 jaar Margreet Dolman",
     "artiesten": [
@@ -4471,6 +5137,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "pernille-haaland-pernille-haaland",
+    "titel": "Pernille Haaland",
+    "artiesten": [
+      "pernille-haaland"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "peter-heerschop-lieve-marianne",
     "titel": "Lieve Marianne",
     "artiesten": [
@@ -4485,6 +5159,24 @@
       "peter-pannekoek"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "peter-pannekoek-fee-oomes-dubbel",
+    "titel": "Dubbel",
+    "artiesten": [
+      "peter-pannekoek",
+      "fee-oomes"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "peter-pannekoek-teun-de-vries-dubbel",
+    "titel": "Dubbel",
+    "artiesten": [
+      "peter-pannekoek",
+      "teun-de-vries"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "peter-van-ewijk-groeiramp",
@@ -4605,6 +5297,13 @@
     ]
   },
   {
+    "id": "pitch-your-friend-comedy-en-dating-amai-comedy-club-gent",
+    "titel": "Pitch Your Friend - comedy & dating",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
     "id": "plien-en-bianca-harrekidee",
     "titel": "Harrekidee",
     "artiesten": [
@@ -4638,6 +5337,13 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedy-cafe-amsterdam"
+  },
+  {
+    "id": "powerpoint-karaoke-amai-comedy-club-gent",
+    "titel": "Powerpoint Karaoke",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
   },
   {
     "id": "pretpakhuis-boeing-boeing",
@@ -4686,6 +5392,15 @@
       "raoul-heertje"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "raoul-heertje-davine-perik-raoul-heertje-en-davine-perik",
+    "titel": "Raoul Heertje & Davine Perik",
+    "artiesten": [
+      "raoul-heertje",
+      "davine-perik"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "rayen-en-friends-wonderful-christmas-time",
@@ -4738,6 +5453,13 @@
       "reece-kidd"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "reguliere-line-upshow-feestdagenprogrammering-comedyhuis-utrecht",
+    "titel": "Reguliere line-upshow – feestdagenprogrammering",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "remko-vrijdag-marko-maandag",
@@ -4808,6 +5530,21 @@
     "genre": "cabaret"
   },
   {
+    "id": "ric-diez-is-happy-sad-amai-comedy-club-gent",
+    "titel": "Ric Diez is happy/sad",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
+    "id": "ric-diez-ric-diez",
+    "titel": "Ric Diez",
+    "artiesten": [
+      "ric-diez"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "richard-groenendijk-gelukkig-heb-je-mij-nog",
     "titel": "Gelukkig heb je mij nog",
     "artiesten": [
@@ -4838,6 +5575,13 @@
       "ricky-risolles"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "rising-stars-ghent-amai-comedy-club-gent",
+    "titel": "Rising Stars Ghent",
+    "artiesten": [],
+    "genre": "open-mic",
+    "theater": "amai-comedy-club-gent"
   },
   {
     "id": "rob-en-emiel-thinking-like-sherlock",
@@ -4880,6 +5624,13 @@
     "genre": "oudejaarsconference"
   },
   {
+    "id": "robert-derksen-op-zoek-naar-mij-de-kargadoor-utrecht",
+    "titel": "Robert Derksen - Op Zoek Naar Mij",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "de-kargadoor-utrecht"
+  },
+  {
     "id": "robrecht-vanden-thoren-ten-minste-houdbaar-tot",
     "titel": "Ten Minste Houdbaar Tot",
     "artiesten": [
@@ -4895,20 +5646,40 @@
     "theater": "comedy-cafe-amsterdam"
   },
   {
+    "id": "roel-c-verburg-roel-c-verburg",
+    "titel": "Roel C. Verburg",
+    "artiesten": [
+      "roel-c-verburg"
+    ],
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "Het Financieele Dagblad",
+        "sterren": null,
+        "citaat": "Hij grossiert in absurdistische liedjes vol taalacrobatiek.",
+        "bron": "https://comedyclubhaug.com/shows/roel-c-verburg-111695528"
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Een aaneenschakeling van slimme observaties, rake grappen en muzikale intermezzo’s",
+        "bron": "https://comedyclubhaug.com/shows/roel-c-verburg-111695528"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Roel C. Verburg is een fenomeen op zich.",
+        "bron": "https://comedyclubhaug.com/shows/roel-c-verburg-111695528"
+      }
+    ]
+  },
+  {
     "id": "roel-c-verburg-slechtste-liedjes-van-de-straat",
     "titel": "Slechtste liedjes van de straat",
     "artiesten": [
       "roel-c-verburg"
     ],
     "genre": "stand-up"
-  },
-  {
-    "id": "roel-c-verburg-solo-late-show",
-    "titel": "Solo (late show)",
-    "artiesten": [
-      "roel-c-verburg"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "roel-c-verburg-solo-matinee",
@@ -4978,6 +5749,15 @@
     "titel": "Back To The Future",
     "artiesten": [
       "rogier-bak"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "rogier-bak-diederik-zuurmond-rogier-bak-en-diederik-zuurmond",
+    "titel": "Rogier Bak & Diederik Zuurmond",
+    "artiesten": [
+      "rogier-bak",
+      "diederik-zuurmond"
     ],
     "genre": "stand-up"
   },
@@ -5167,6 +5947,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "sam-eley-sam-eley",
+    "titel": "Sam Eley",
+    "artiesten": [
+      "sam-eley"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "saman-amini-s-integratieplan-2-alles-is-perspectief",
     "titel": "Alles is Perspectief",
     "artiesten": [
@@ -5233,10 +6021,26 @@
     ]
   },
   {
+    "id": "sara-pascoe-sara-pascoe",
+    "titel": "Sara Pascoe",
+    "artiesten": [
+      "sara-pascoe"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "schater-cabaretfestival-schater-cabaretfestival",
     "titel": "SCHATER Cabaretfestival",
     "artiesten": [
       "schater-cabaretfestival"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "seda-yuz-seda-yuz",
+    "titel": "Seda Yüz",
+    "artiesten": [
+      "seda-yuz"
     ],
     "genre": "stand-up"
   },
@@ -5326,6 +6130,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "siegfried-en-ralph-oftewel-howard-komproe-en-murth-mossel-comedytrain-nieuwe-toomler-amsterdam",
+    "titel": "Siegfried & Ralph (oftewel Howard Komproe & Murth Mossel)",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedytrain-nieuwe-toomler-amsterdam"
+  },
+  {
     "id": "silvesters-comedy-club-comedy-night-in-orpheus",
     "titel": "Comedy Night in Orpheus!",
     "artiesten": [
@@ -5342,12 +6153,50 @@
     "genre": "cabaret"
   },
   {
+    "id": "sjoerd-janssen-sjoerd-janssen",
+    "titel": "Sjoerd Janssen",
+    "artiesten": [
+      "sjoerd-janssen"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "sofie-hagen-sofie-hagen",
+    "titel": "Sofie Hagen",
+    "artiesten": [
+      "sofie-hagen"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "sophie-duker-sophie-duker",
+    "titel": "Sophie Duker",
+    "artiesten": [
+      "sophie-duker"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "soraya-de-bakker-help-ik-ga-trouwen",
     "titel": "Help, ik ga trouwen",
     "artiesten": [
       "soraya-de-bakker"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "sourmouth-comedy-club-haug-rotterdam",
+    "titel": "Sourmouth",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-club-haug-rotterdam"
+  },
+  {
+    "id": "spoor-bijster-comedytrain-nieuwe-toomler-amsterdam",
+    "titel": "Spoor Bijster",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedytrain-nieuwe-toomler-amsterdam"
   },
   {
     "id": "spruijt-en-opperman-altijdloos",
@@ -5426,9 +6275,9 @@
     "recensies": [
       {
         "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Stefan Pop onderstreept het essentiële belang van comedy in onrustige tijden",
-        "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/stefan-pop/"
+        "sterren": null,
+        "citaat": "De show ‘Genoeg over mij’ van Stefan Pop onderstreept het essentiële belang van comedy in onrustige tijden.",
+        "bron": "https://www.comedytrain.nl/shows/solo-show-stefan-pop-genoeg-over-mij-2026-11-22/"
       },
       {
         "medium": "Theaterkrant",
@@ -5521,6 +6370,15 @@
     "genre": "stand-up"
   },
   {
+    "id": "teun-de-vries-tim-fransen-dubbel",
+    "titel": "Dubbel",
+    "artiesten": [
+      "teun-de-vries",
+      "tim-fransen"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "teun-van-den-elzen-ze-moesten-eens-weten",
     "titel": "Ze moesten eens weten",
     "artiesten": [
@@ -5529,11 +6387,25 @@
     "genre": "cabaret"
   },
   {
+    "id": "the-american-apology-tour-amai-comedy-club-gent",
+    "titel": "The American Apology Tour",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
     "id": "the-funniest-festival-ever-theater-aan-de-parade",
     "titel": "The Funniest Festival Ever!",
     "artiesten": [],
     "genre": "cabaret",
     "theater": "theater-aan-de-parade"
+  },
+  {
+    "id": "the-grapevyne-old-school-comedy-night-comedy-club-haug-rotterdam",
+    "titel": "The Grapevyne 'Old School' Comedy Night!",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-club-haug-rotterdam"
   },
   {
     "id": "the-laughing-lizard-comedy-cafe",
@@ -5575,6 +6447,15 @@
       "plien-en-bianca"
     ],
     "genre": "theaterkomedie"
+  },
+  {
+    "id": "theo-maassen-tim-fransen-dubbel",
+    "titel": "Dubbel",
+    "artiesten": [
+      "theo-maassen",
+      "tim-fransen"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "thijs-kemperink-erwin-nyhoff-vieren-een-muiterse-kerst",
@@ -5634,6 +6515,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "thomas-green-thomas-green",
+    "titel": "Thomas Green",
+    "artiesten": [
+      "thomas-green"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "thomas-van-luyn-super-normaal",
     "titel": "Super normaal",
     "artiesten": [
@@ -5650,10 +6539,37 @@
     "genre": "cabaret"
   },
   {
+    "id": "tim-hartog-alina-sharipova-tim-hartog-en-alina-sharipova",
+    "titel": "Tim Hartog & Alina Sharipova",
+    "artiesten": [
+      "tim-hartog",
+      "alina-sharipova"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "tim-hartog-berit-companjen-tim-hartog-en-berit-companjen",
+    "titel": "Tim Hartog & Berit Companjen",
+    "artiesten": [
+      "tim-hartog",
+      "berit-companjen"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "tim-hartog-in-principe-try-out",
     "titel": "In principe - try-out",
     "artiesten": [
       "tim-hartog"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "tim-hartog-vincent-geers-tim-hartog-en-vincent-geers",
+    "titel": "Tim Hartog & Vincent Geers",
+    "artiesten": [
+      "tim-hartog",
+      "vincent-geers"
     ],
     "genre": "stand-up"
   },
@@ -5726,6 +6642,15 @@
     "genre": "cabaret"
   },
   {
+    "id": "tobi-kooiman-alina-sharipova-tobi-kooiman-en-alina-sharipova",
+    "titel": "Tobi Kooiman & Alina Sharipova",
+    "artiesten": [
+      "tobi-kooiman",
+      "alina-sharipova"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "tobi-kooiman-best-of-4",
     "titel": "Best of 4",
     "artiesten": [
@@ -5749,6 +6674,20 @@
       "sophie-willemijntje"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "toonmoment-comedyschrijfreeks-amai-comedy-club-gent",
+    "titel": "Toonmoment Comedyschrijfreeks",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
+    "id": "try-out-comedy-talent-award-kwart-finalisten-comedyhuis-utrecht",
+    "titel": "Try Out Comedy Talent Award Kwart Finalisten",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "tweede-voorronde-akf-theater-bellevue",
@@ -5788,6 +6727,13 @@
       "utrechts-international-comedy-festival"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "uurtje-finn-comedy-club-haug-rotterdam",
+    "titel": "Uurtje Finn",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-club-haug-rotterdam"
   },
   {
     "id": "valentina-toth-revue-revanche",
@@ -5870,6 +6816,22 @@
     "genre": "cabaret"
   },
   {
+    "id": "vijf-het-leven-benefiet-ter-ere-van-marc-van-gestel-comedyhuis-utrecht",
+    "titel": "Vijf het leven – benefiet ter ere van Marc van Gestel",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "vincent-geers-victor-luis-van-es-vincent-geers-en-victor-luis-van-es",
+    "titel": "Vincent Geers & Victor Luis van Es",
+    "artiesten": [
+      "vincent-geers",
+      "victor-luis-van-es"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "vlamousse-het-goede-voorbeeld",
     "titel": "Het goede voorbeeld",
     "artiesten": [
@@ -5903,6 +6865,27 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedy-cafe-amsterdam"
+  },
+  {
+    "id": "vrijdagavondshow-uicf-editie-comedyhuis-utrecht",
+    "titel": "Vrijdagavondshow – UICF-editie",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "vroege-vrijdagavondshow-comedyhuis-utrecht",
+    "titel": "Vroege vrijdagavondshow",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "vroege-zaterdagavondshow-comedyhuis-utrecht",
+    "titel": "Vroege zaterdagavondshow",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "vrouwejaars-2026-cpunt",
@@ -6060,6 +7043,15 @@
     "theater": "theater-lampegiet"
   },
   {
+    "id": "wilko-terwijn-jorgen-raymann-wilko-terwijn-en-jorgen-raymann",
+    "titel": "Wilko Terwijn & Jörgen Raymann",
+    "artiesten": [
+      "wilko-terwijn",
+      "jorgen-raymann"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "william-boeva-drift",
     "titel": "Drift",
     "artiesten": [
@@ -6106,6 +7098,13 @@
     "genre": "stand-up"
   },
   {
+    "id": "woensdagavondshow-feestdageneditie-comedyhuis-utrecht",
+    "titel": "Woensdagavondshow – feestdageneditie",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
     "id": "wouter-deprez-en-tcha-limberger-cc-de-schakel",
     "titel": "Wouter Deprez & Tcha Limberger",
     "artiesten": [],
@@ -6127,6 +7126,13 @@
       "wouter-monden"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "writers-room-open-mic-comedyhuis-utrecht",
+    "titel": "Writers Room Open Mic",
+    "artiesten": [],
+    "genre": "open-mic",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "xander-de-rycke-back-to-the-beginning",
@@ -6255,6 +7261,13 @@
     "theater": "comedy-cafe-amsterdam"
   },
   {
+    "id": "zaterdagavondshow-kersteditie-comedyhuis-utrecht",
+    "titel": "Zaterdagavondshow – Kersteditie",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
     "id": "zij-en-aron-elstak-match",
     "titel": "Match",
     "artiesten": [
@@ -6269,5 +7282,12 @@
       "zoe-bizoe"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "zondagmiddagshow-feestdageneditie-comedyhuis-utrecht",
+    "titel": "Zondagmiddagshow – feestdageneditie",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
   }
 ]
