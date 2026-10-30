@@ -1119,9 +1119,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const kopTournee = soort === "alle" ? "Bekende cabaretiers op tournee" : `Bekende ${esc(P.wie)} op tournee`;
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">${esc(P.naam)}</h1><p>${intro}</p></div>
-      ${soort === "alle"
-        ? `<p class="knoppen"><a class="btn ghost" href="/alle-cabaretiers/mannen/">Mannelijke cabaretiers</a><a class="btn ghost" href="/alle-cabaretiers/vrouwen/">Vrouwelijke cabaretiers</a></p>`
-        : `<p class="zie-ook">Bekijk ook de ${andere.join(", de ")} of <a href="/artiesten/">alle artiesten</a>.</p>`}
+      ${soort === "alle" ? "" : `<p class="zie-ook">Bekijk ook de ${andere.join(", de ")} of <a href="/artiesten/">alle artiesten</a>.</p>`}
       ${affiches ? "" : `<h2 class="sub-head">${kopTournee}</h2>
       <div class="artists">${artiestKaarten(top)}</div>`}
     </section>
