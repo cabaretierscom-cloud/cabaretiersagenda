@@ -517,35 +517,80 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   // "Nu in het theater": voorstellingen met een promobeeld (data/promo.json), meeste speeldata eerst,
   // hooguit één per artiest. Bovenin het beeld, daaronder het kleurvlak van de artiest.
+  const metPromobeeld = () => [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id))
+    .map((v) => ({ v, list: up.filter((g) => g.voorstelling === v.id && g.status !== "geannuleerd") }))
+    .filter(({ list }) => list.length)
+    .sort((x, y) => y.list.length - x.list.length || x.list[0].datum.localeCompare(y.list[0].datum));
+
   function nuInTheater() {
     const gezien = new Set();
-    const lijst = [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id))
-      .map((v) => ({ v, list: up.filter((g) => g.voorstelling === v.id && g.status !== "geannuleerd") }))
-      .filter(({ list }) => list.length)
-      .sort((x, y) => y.list.length - x.list.length || x.list[0].datum.localeCompare(y.list[0].datum))
+    const lijst = metPromobeeld()
       .filter(({ v }) => !gezien.has(v.artiesten[0]) && gezien.add(v.artiesten[0]))
       .slice(0, 20);
     return afwisselend(lijst, ({ v }) => A.get(v.artiesten[0]).kleur, { schuiven: false })
-      .map(({ x: { v, list }, kleur }, i) => {
-        const beste = [...(v.recensies || [])].filter((r) => r.sterren).sort((x, y) => y.sterren - x.sterren)[0];
-        const aantal = plural(list.length, "speeldatum", "speeldata");
-        const titel = echteTitel(v.id) || v.titel;
-        return `<a class="poster poster-foto" href="${voorstellingPad.get(v.id)}" style="${ink(kleur)}">
-        <span class="visually-hidden">${esc(titel)} van ${esc(artistNames(v.id))}, ${aantal}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
-        <span class="poster-beeld" aria-hidden="true">
-          <img src="${esc(v.foto.bestand)}" alt=""${uitsnede(v.foto, 1.2)} width="${v.foto.breedte || 800}" height="${v.foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
-          ${beste ? `<span class="poster-sterren${gezichtHoogte(v.foto, 1.2) < 0.5 ? " onder" : ""}">${"★".repeat(beste.sterren)}<small>${esc(beste.medium)}</small></span>` : ""}
-        </span>
-        <span class="poster-vlak" aria-hidden="true">
-          <span class="poster-info">
-          <strong class="ftitel${titleClass(titel)}">${esc(titel)}</strong>
-          <span class="fartiest">${esc(artistNames(v.id))}</span>
-          <span class="tag">${aantal}</span>
-          </span>
-          <span class="poster-stub"></span>
-        </span>
-      </a>`;
-      }).join("");
+      .map(({ x, kleur }, i) => affiche(x, kleur, i)).join("");
+  }
+
+  // Video's voor sociale media (scripts/social-videos.mjs): alle voorstellingen met een promobeeld,
+  // per impresariaat (van in data/promo.json), in groepjes van hooguit perVideo affiches. De groepjes
+  // zijn even groot (12 wordt 4+4+4, niet 5+5+2). Dezelfde foto van dezelfde artiest (één show onder
+  // twee titels) komt er één keer in. Op de affiche staat ook een persquote, als die er is.
+  function socialVideos(perVideo = 5) {
+    const perBureau = new Map(), gezien = new Set();
+    for (const x of metPromobeeld()) {
+      const sleutel = `${x.v.artiesten[0]} ${x.v.foto.bestand}`;
+      if (gezien.has(sleutel)) continue;
+      gezien.add(sleutel);
+      const van = x.v.foto.van || "overig";
+      if (!perBureau.has(van)) perBureau.set(van, []);
+      perBureau.get(van).push(x);
+    }
+    const videos = [];
+    for (const [van, lijst] of [...perBureau].sort((a, b) => a[0].localeCompare(b[0], "nl"))) {
+      const aantal = Math.ceil(lijst.length / perVideo);
+      for (let n = 0, i = 0; n < aantal; n++) {
+        const tot = Math.round(((n + 1) * lijst.length) / aantal);
+        const stuk = afwisselend(lijst.slice(i, tot), ({ v }) => A.get(v.artiesten[0]).kleur);
+        i = tot;
+        videos.push({
+          van,
+          affiches: stuk.map(({ x, kleur }) => ({
+            html: affiche(x, kleur, 0, { citaat: true }),
+            titel: echteTitel(x.v.id) || x.v.titel,
+            artiest: artistNames(x.v.id),
+            maker: x.v.foto.maker,
+          })),
+        });
+      }
+    }
+    return videos;
+  }
+
+  // Persquote voor op de affiche (alleen in de video's): kort genoeg om te lezen, de meeste sterren eerst.
+  const besteCitaat = (v) => [...(v.recensies || [])].filter((r) => r.citaat && r.citaat.length <= 160)
+    .sort((x, y) => (y.sterren || 0) - (x.sterren || 0) || x.citaat.length - y.citaat.length)[0];
+
+  function affiche({ v, list }, kleur, i, { citaat = false } = {}) {
+    const beste = [...(v.recensies || [])].filter((r) => r.sterren).sort((x, y) => y.sterren - x.sterren)[0];
+    const quote = citaat && besteCitaat(v);
+    const aantal = plural(list.length, "speeldatum", "speeldata");
+    const titel = echteTitel(v.id) || v.titel;
+    return `<a class="poster poster-foto" href="${voorstellingPad.get(v.id)}" style="${ink(kleur)}">
+    <span class="visually-hidden">${esc(titel)} van ${esc(artistNames(v.id))}, ${aantal}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
+    <span class="poster-beeld" aria-hidden="true">
+      <img src="${esc(v.foto.bestand)}" alt=""${uitsnede(v.foto, 1.2)} width="${v.foto.breedte || 800}" height="${v.foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
+      ${beste ? `<span class="poster-sterren${gezichtHoogte(v.foto, 1.2) < 0.5 ? " onder" : ""}">${"★".repeat(beste.sterren)}<small>${esc(beste.medium)}</small></span>` : ""}
+    </span>
+    <span class="poster-vlak" aria-hidden="true">
+      <span class="poster-info">
+      <strong class="ftitel${titleClass(titel)}">${esc(titel)}</strong>
+      <span class="fartiest">${esc(artistNames(v.id))}</span>${quote ? `
+      <span class="poster-citaat">“${esc(quote.citaat)}”<small>${quote.sterren && quote !== beste ? `${"★".repeat(quote.sterren)} ` : ""}${esc(quote.medium)}</small></span>` : ""}
+      <span class="tag">${aantal}</span>
+      </span>
+      <span class="poster-stub"></span>
+    </span>
+  </a>`;
   }
 
   // Theaters met een foto, meeste voorstellingen eerst, als kaartjes met de zaalfoto. De zalen hebben
@@ -1950,6 +1995,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   return {
     controlePagina,
     home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
-    voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
+    voorstellingPagina, festivalIndex, festivalPagina, socialVideos, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
   };
 }

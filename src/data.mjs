@@ -130,7 +130,7 @@ export function loadData(dir, { today }) {
     const a = artiesten.find((x) => x.naam === p.artiest);
     if (!a) continue;
     // promo: aangeleverd materiaal; de site toont de naam van maker en afzender, maar niet de downloadlink.
-    const foto = p.foto && { licentie: `met toestemming van ${p.van}`, ...p.foto, promo: true };
+    const foto = p.foto && { licentie: `met toestemming van ${p.van}`, ...p.foto, promo: true, van: p.van };
     if (foto && !promoFoto.has(a.id)) { a.foto = foto; promoFoto.add(a.id); }
     if (p.videos?.length) a.videos = p.videos;
     // Tekst en persquotes horen bij de voorstelling met die titel; staat die er (nog) niet, dan later.
