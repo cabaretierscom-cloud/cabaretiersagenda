@@ -751,7 +751,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .cookies a { color: #fff; font-weight: 600; }
 .cookies-knoppen { display: flex; gap: 8px; }
 .cookies button, .knop-secundair { min-height: 44px; padding: 0 18px; border-radius: 999px; font: inherit; font-weight: 700; cursor: pointer; }
-.cookies [data-keuze="ja"] { background: var(--riso-orange); color: #121212; border: 2px solid var(--riso-orange); }
+.cookies [data-keuze="ja"] { background: var(--riso-green); color: #fff; border: 2px solid var(--riso-green); }
 .cookies [data-keuze="nee"] { background: transparent; color: #fff; border: 2px solid #fff; }
 .cookies button:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
 .knop-secundair { background: var(--paper); color: var(--ink); border: 2px solid var(--ink); }
