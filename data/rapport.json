@@ -1,12 +1,12 @@
 {
   "datum": "2026-10-30",
   "totaal": {
-    "speeldata": 6601,
-    "komend": 6433,
-    "artiesten": 507,
+    "speeldata": 6603,
+    "komend": 6435,
+    "artiesten": 509,
     "zalen": 584,
     "plaatsen": 424,
-    "voorstellingen": 798
+    "voorstellingen": 802
   },
   "bronnen": [
     {
@@ -29,7 +29,7 @@
       "bron": "amstelveen",
       "naam": "Schouwburg Amstelveen",
       "opgehaald": "2026-10-30",
-      "speeldata": 35,
+      "speeldata": 34,
       "vorige": 35,
       "dubbel": 0
     },
@@ -45,7 +45,7 @@
       "bron": "bellevue",
       "naam": "Theater Bellevue",
       "opgehaald": "2026-10-30",
-      "speeldata": 142,
+      "speeldata": 141,
       "vorige": 142,
       "dubbel": 0
     },
@@ -68,9 +68,9 @@
     {
       "bron": "comedy-cafe",
       "naam": "Comedy Café Amsterdam",
-      "opgehaald": "2026-10-25",
-      "speeldata": 144,
-      "vorige": 144,
+      "opgehaald": "2026-10-30",
+      "speeldata": 146,
+      "vorige": 138,
       "dubbel": 0
     },
     {
@@ -93,14 +93,14 @@
       "bron": "cpunt",
       "naam": "Cpunt",
       "opgehaald": "2026-10-30",
-      "speeldata": 103,
+      "speeldata": 102,
       "vorige": 103,
       "dubbel": 0
     },
     {
       "bron": "cultura",
       "naam": "Cultura Ede",
-      "opgehaald": "2026-10-29",
+      "opgehaald": "2026-10-30",
       "speeldata": 23,
       "vorige": 23,
       "dubbel": 0
@@ -109,7 +109,7 @@
       "bron": "de-veste",
       "naam": "Theater De Veste",
       "opgehaald": "2026-10-30",
-      "speeldata": 53,
+      "speeldata": 52,
       "vorige": 53,
       "dubbel": 0
     },
@@ -141,7 +141,7 @@
       "bron": "haug",
       "naam": "Comedy Club Haug",
       "opgehaald": "2026-10-30",
-      "speeldata": 130,
+      "speeldata": 129,
       "vorige": 130,
       "dubbel": 0
     },
@@ -197,7 +197,7 @@
       "bron": "kunstlinie",
       "naam": "Kunstlinie",
       "opgehaald": "2026-10-30",
-      "speeldata": 60,
+      "speeldata": 59,
       "vorige": 60,
       "dubbel": 0
     },
@@ -293,7 +293,7 @@
       "bron": "parade",
       "naam": "Theater aan de Parade",
       "opgehaald": "2026-10-30",
-      "speeldata": 33,
+      "speeldata": 32,
       "vorige": 33,
       "dubbel": 0
     },
@@ -349,7 +349,7 @@
       "bron": "speelhuis",
       "naam": "Theater Het Speelhuis",
       "opgehaald": "2026-10-30",
-      "speeldata": 29,
+      "speeldata": 28,
       "vorige": 29,
       "dubbel": 0
     },
@@ -381,16 +381,16 @@
       "bron": "utrecht",
       "naam": "Stadsschouwburg Utrecht",
       "opgehaald": "2026-10-30",
-      "speeldata": 116,
+      "speeldata": 114,
       "vorige": 116,
       "dubbel": 0
     },
     {
       "bron": "venray",
       "naam": "Schouwburg Venray",
-      "opgehaald": "2026-10-29",
-      "speeldata": 31,
-      "vorige": 31,
+      "opgehaald": "2026-10-30",
+      "speeldata": 30,
+      "vorige": 30,
       "dubbel": 0
     },
     {
@@ -413,23 +413,23 @@
       "bron": "vrijthof",
       "naam": "Theater aan het Vrijthof",
       "opgehaald": "2026-10-30",
-      "speeldata": 42,
+      "speeldata": 41,
       "vorige": 42,
       "dubbel": 0
     },
     {
       "bron": "walhalla",
       "naam": "Theater Walhalla",
-      "opgehaald": "2026-10-29",
-      "speeldata": 82,
-      "vorige": 82,
+      "opgehaald": "2026-10-30",
+      "speeldata": 81,
+      "vorige": 81,
       "dubbel": 0
     },
     {
       "bron": "wilminktheater",
       "naam": "Wilminktheater en Muziekcentrum Enschede",
       "opgehaald": "2026-10-30",
-      "speeldata": 83,
+      "speeldata": 82,
       "vorige": 83,
       "dubbel": 0
     },
@@ -453,7 +453,7 @@
       "bron": "zwolle",
       "naam": "Zwolse Theaters",
       "opgehaald": "2026-10-30",
-      "speeldata": 77,
+      "speeldata": 76,
       "vorige": 77,
       "dubbel": 0
     },
@@ -477,7 +477,7 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-10-30",
-      "speeldata": 1925,
+      "speeldata": 1932,
       "vorige": 1925,
       "dubbel": 1024
     }
@@ -659,6 +659,18 @@
       {
         "id": "veldeke-theater",
         "naam": "Veldeke Theater"
+      },
+      {
+        "id": "dam-qui-rit-comedy-club",
+        "naam": "Dam Qui Rit Comedy Club"
+      },
+      {
+        "id": "het-comedy-talent-van-het-moment",
+        "naam": "het Comedy Talent van het moment"
+      },
+      {
+        "id": "matt-en-tamas",
+        "naam": "Matt & Tamas"
       }
     ],
     "zalen": [
@@ -1491,16 +1503,58 @@
         "artiesten": []
       },
       {
-        "id": "knock-out-comedy-crew-theater-aan-het-vrijthof",
-        "titel": "- Knock Out Comedy Crew",
-        "artiesten": []
-      },
-      {
         "id": "veldeke-theater-aajdjaorscabberet-eve-oonder-us",
         "titel": "Aajdjaorscabberèt: Eve oonder us",
         "artiesten": [
           "veldeke-theater"
         ]
+      },
+      {
+        "id": "berit-companjen-fimme-bakker-bob-koomen-lachen-met-volle-mond-3",
+        "titel": "Lachen met Volle Mond #3",
+        "artiesten": [
+          "berit-companjen",
+          "fimme-bakker",
+          "bob-koomen"
+        ]
+      },
+      {
+        "id": "berit-companjen-teun-van-den-elzen-het-comedy-talent-van-het-moment-lachen-met-v",
+        "titel": "Lachen met Volle Mond #2",
+        "artiesten": [
+          "berit-companjen",
+          "teun-van-den-elzen",
+          "het-comedy-talent-van-het-moment"
+        ]
+      },
+      {
+        "id": "dam-qui-rit-comedy-club-french-night",
+        "titel": "French night",
+        "artiesten": [
+          "dam-qui-rit-comedy-club"
+        ]
+      },
+      {
+        "id": "manpreet-singh-comedy-cafe-amsterdam",
+        "titel": "Manpreet Singh",
+        "artiesten": []
+      },
+      {
+        "id": "matt-en-tamas-laughs-in-motion",
+        "titel": "Laughs in motion",
+        "artiesten": [
+          "matt-en-tamas"
+        ]
+      },
+      {
+        "id": "pradeep-kumar-southend-comedy-club",
+        "titel": "Pradeep Kumar",
+        "artiesten": []
+      },
+      {
+        "id": "sasha-dolgopolov-southend-comedy-club",
+        "titel": "Sasha Dolgopolov",
+        "artiesten": []
       }
     ]
   },
@@ -1553,12 +1607,12 @@
     },
     {
       "datum": "2026-10-30",
-      "speeldata": 6601,
-      "komend": 6433,
-      "artiesten": 507,
+      "speeldata": 6603,
+      "komend": 6435,
+      "artiesten": 509,
       "zalen": 584,
       "plaatsen": 424,
-      "voorstellingen": 798
+      "voorstellingen": 802
     }
   ]
 }

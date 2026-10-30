@@ -1,7 +1,7 @@
 {
   "bron": "cultura",
   "naam": "Cultura Ede",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-10-30",
   "theaters": [
     {
       "id": "cultura-ede",
@@ -25,45 +25,6 @@
       "status": "geannuleerd",
       "soort": null,
       "bron": "https://cultura-ede.nl/agenda/hokjesdenker-277101/"
-    },
-    {
-      "theater": "cultura-ede",
-      "artiesten": [
-        "Martijn Crins"
-      ],
-      "titel": "Hè fijn",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://cultura-ede.nl/agenda/martijn-crins-273652/"
-    },
-    {
-      "theater": "cultura-ede",
-      "artiesten": [
-        "Jan Beuving"
-      ],
-      "titel": "Dekpunt",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://cultura-ede.nl/agenda/jan-beuving-275855/"
-    },
-    {
-      "theater": "cultura-ede",
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2026-11-20",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://cultura-ede.nl/agenda/martijn-koning-276864/"
     },
     {
       "theater": "cultura-ede",
@@ -315,6 +276,32 @@
     {
       "theater": "cultura-ede",
       "artiesten": [
+        "Martijn Crins"
+      ],
+      "titel": "Hè fijn",
+      "genre": "cabaret",
+      "datum": "2026-10-30",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/martijn-crins-273652/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/jan-beuving-275855/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
         "De Cabaret Club"
       ],
       "titel": "Vier mini cabaretvoorstellingen op één avond!",
@@ -324,6 +311,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://cultura-ede.nl/agenda/de-cabaret-club-275857/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cultura-ede.nl/agenda/martijn-koning-276864/"
     }
   ],
   "recensies": {}

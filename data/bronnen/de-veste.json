@@ -16,19 +16,6 @@
     {
       "theater": "theater-de-veste",
       "artiesten": [
-        "Pieter Derks"
-      ],
-      "titel": "Ja, leuk",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterdeveste.nl/programma/ja-leuk-rpnv"
-    },
-    {
-      "theater": "theater-de-veste",
-      "artiesten": [
         "Micha Wertheim"
       ],
       "titel": "Micha Wertheim voor iedereen",
@@ -136,7 +123,7 @@
         "Alina Sharipova (MC), Diederik Zuurmond, Stephen Bell, Finn Visser en Vincent Geers."
       ],
       "titel": "De Comedy Club",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-11-24",
       "tijd": "20:30",
       "status": "uitverkocht",
@@ -266,7 +253,7 @@
         "Diverse comedians"
       ],
       "titel": "De Comedy Club",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-01-14",
       "tijd": "20:30",
       "status": "gepland",
@@ -435,7 +422,7 @@
         "Diverse comedians"
       ],
       "titel": "De Comedy Club",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-03-09",
       "tijd": "20:30",
       "status": "gepland",
@@ -576,7 +563,7 @@
         "Diverse comedians"
       ],
       "titel": "De Comedy Club",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-05-19",
       "tijd": "20:15",
       "status": "gepland",
@@ -702,18 +689,6 @@
     }
   ],
   "recensies": {
-    "https://www.theaterdeveste.nl/programma/ja-leuk-rpnv": [
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Derks brengt zijn politieke voorkeuren in scherpe oneliners, maar wordt sterker en grappiger wanneer hij persoonlijker wordt. Vooral zijn betoog over de aandachtseconomie valt op."
-      },
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "Ja, leuk is opnieuw een goede voorstelling volgens het vertrouwde Pieter Derks-recept, persoonlijk en geëngageerd, vol originele geestigheid."
-      }
-    ],
     "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17": [
       {
         "medium": "NRC",

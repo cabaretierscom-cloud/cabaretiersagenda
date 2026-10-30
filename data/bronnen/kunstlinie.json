@@ -594,7 +594,7 @@
       "genre": "cabaret",
       "datum": "2026-11-14",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/henry-van-loon-3/"
     },
@@ -701,19 +701,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/nabil-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "René van Meurs"
-      ],
-      "titel": "René van Meurs",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/rene-van-meurs-2/"
     },
     {
       "theater": "kunstlinie",
@@ -922,23 +909,6 @@
         "medium": "Het Parool",
         "sterren": null,
         "citaat": "Er lopen in Nederland nauwelijks getalenteerdere komieken rond dan Van Loon."
-      }
-    ],
-    "https://kunstlinie.nl/programma/rene-van-meurs-2/": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Noodzakelijk Kwaad’ barst van de absurde conflicten die steeds grappiger escaleren."
-      },
-      {
-        "medium": "Dagblad van het Noorden",
-        "sterren": 4,
-        "citaat": "Sterk verhaal met een lawine aan grappen."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Briljante auto-psychologische thriller als cabaret"
       }
     ],
     "https://kunstlinie.nl/programma/ruud-smulders-2/": [

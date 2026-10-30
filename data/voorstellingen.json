@@ -68,7 +68,7 @@
     "artiesten": [
       "alex-agnew"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "alex-agnew-stand-up-set",
@@ -140,7 +140,7 @@
       "finn-visser",
       "vincent-geers"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "alina-sharipova-jorn-van-dam-alina-sharipova-en-jorn-van-dam",
@@ -640,6 +640,26 @@
     "titel": "Lachen met Volle Mond #2",
     "artiesten": [
       "berit-companjen-en-het-comedy-talent-van-het-moment"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "berit-companjen-fimme-bakker-bob-koomen-lachen-met-volle-mond-3",
+    "titel": "Lachen met Volle Mond #3",
+    "artiesten": [
+      "berit-companjen",
+      "fimme-bakker",
+      "bob-koomen"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "berit-companjen-teun-van-den-elzen-het-comedy-talent-van-het-moment-lachen-met-v",
+    "titel": "Lachen met Volle Mond #2",
+    "artiesten": [
+      "berit-companjen",
+      "teun-van-den-elzen",
+      "het-comedy-talent-van-het-moment"
     ],
     "genre": "cabaret"
   },
@@ -1546,11 +1566,12 @@
     ]
   },
   {
-    "id": "damian-skora-w-programie-pan-komentarz-polska-komentujaca-na-zywo-comedy-cafe-amsterdam",
-    "titel": "Damian Skóra w programie “Pan Komentarz” + Polska Komentująca na żywo!",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "comedy-cafe-amsterdam"
+    "id": "dam-qui-rit-comedy-club-french-night",
+    "titel": "French night",
+    "artiesten": [
+      "dam-qui-rit-comedy-club"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "dan-and-phil-hard-launch-world-tour",
@@ -1931,7 +1952,7 @@
     "artiesten": [
       "diverse-comedians"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "dmitry-romanov",
@@ -2454,14 +2475,6 @@
     "titel": "Doeve van Stonehenge",
     "artiesten": [
       "firma-lampo"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "firma-weijland-jack-weijkamp-sta-op-komediant",
-    "titel": "Sta op komediant!",
-    "artiesten": [
-      "firma-weijland-jack-weijkamp"
     ],
     "genre": "cabaret"
   },
@@ -3028,7 +3041,7 @@
     "artiesten": [
       "ice"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "impro-tastisch-amai-comedy-club-gent",
@@ -3255,7 +3268,7 @@
     "artiesten": [
       "jeroen-leenders"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "jeroens-clan-jeroens-clan",
@@ -3365,7 +3378,7 @@
     "artiesten": [
       "joep-van-deudekom-en-rob-urgert"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "joep-van-deudekom-en-rob-urgert-joep-van-deudekom-en-rob-urgert",
@@ -3740,13 +3753,6 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "cpunt"
-  },
-  {
-    "id": "knock-out-comedy-crew-theater-aan-het-vrijthof",
-    "titel": "- Knock Out Comedy Crew",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "theater-aan-het-vrijthof"
   },
   {
     "id": "knock-out-comedy-crew-theater-heerlen",
@@ -4218,6 +4224,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "manpreet-singh-comedy-cafe-amsterdam",
+    "titel": "Manpreet Singh",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-cafe-amsterdam"
+  },
+  {
     "id": "marcel-hensema-eldorado",
     "titel": "Eldorado",
     "artiesten": [
@@ -4446,6 +4459,14 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedy-cafe-amsterdam"
+  },
+  {
+    "id": "matt-en-tamas-laughs-in-motion",
+    "titel": "Laughs in motion",
+    "artiesten": [
+      "matt-en-tamas"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "max-van-den-burg-maxikozi",
@@ -5353,6 +5374,13 @@
     "theater": "amai-comedy-club-gent"
   },
   {
+    "id": "pradeep-kumar-southend-comedy-club",
+    "titel": "Pradeep Kumar",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "southend-comedy-club"
+  },
+  {
     "id": "pretpakhuis-boeing-boeing",
     "titel": "Boeing Boeing",
     "artiesten": [],
@@ -6000,6 +6028,13 @@
     "genre": "stand-up"
   },
   {
+    "id": "sasha-dolgopolov-southend-comedy-club",
+    "titel": "Sasha Dolgopolov",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "southend-comedy-club"
+  },
+  {
     "id": "schater-cabaretfestival-schater-cabaretfestival",
     "titel": "SCHATER Cabaretfestival",
     "artiesten": [
@@ -6153,7 +6188,7 @@
     "artiesten": [
       "soraya-de-bakker"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "sourmouth-comedy-club-haug-rotterdam",

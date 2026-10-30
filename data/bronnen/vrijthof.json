@@ -22,6 +22,58 @@
   ],
   "speeldata": [
     {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/revue-revanche-valentina-toth"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Lovella Telesford"
+      ],
+      "titel": "Wat een gezeik!",
+      "genre": "cabaret",
+      "datum": "2026-11-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/wat-een-gezeik-lovella-telesford"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/peer-bob-koomen"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Saïd El Hassnaoui"
+      ],
+      "titel": "Saïd lacht met liefde",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/said-lacht-met-liefde-said-el-hassnaoui"
+    },
+    {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
         "Wina Ricardo"
@@ -46,19 +98,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Lovella Telesford"
-      ],
-      "titel": "Wat een gezeik!",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/wat-een-gezeik-lovella-telesford"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -152,19 +191,6 @@
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/en-verbied-de-vogels-om-te-fluiten-ayoub"
     },
     {
-      "theater": "ainsi-maastricht",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2027-02-20",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/revue-revanche-valentina-toth"
-    },
-    {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
         "Rayen Panday"
@@ -241,19 +267,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/daar-is-hij-weer-nabil"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Saïd El Hassnaoui"
-      ],
-      "titel": "Saïd lacht met liefde",
-      "genre": "cabaret",
-      "datum": "2027-03-24",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/said-lacht-met-liefde-said-el-hassnaoui"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -345,19 +358,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/twee-procent-bas-birker"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Bob Koomen"
-      ],
-      "titel": "Peer",
-      "genre": "cabaret",
-      "datum": "2027-05-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/peer-bob-koomen"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -543,24 +543,13 @@
     },
     {
       "theater": "theater-aan-het-vrijthof",
-      "artiesten": [],
-      "titel": "- Knock Out Comedy Crew",
-      "genre": "cabaret",
-      "datum": "2027-03-09",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/knock-out-comedy-crew"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
       "artiesten": [
         "Veldeke Theater"
       ],
       "titel": "Aajdjaorscabberèt: Eve oonder us",
       "genre": "cabaret",
-      "datum": "2026-12-30",
-      "tijd": "14:00",
+      "datum": "2026-12-29",
+      "tijd": "20:30",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/aajdjaorscabberet-eve-oonder-us-veldeke-theater"
