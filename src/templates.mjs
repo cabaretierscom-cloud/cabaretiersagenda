@@ -654,6 +654,14 @@ ${festivalsMetData.length ? `
   </div>
   ${strip("strip-festivals", "Cabaretfestivals, de eerstvolgende voorop", kaartenRij(festivalsMetData, ({ f }) => festivalKleur(f), festivalKaart))}
 </section>` : ""}
+${GENRE_PAGINAS.length ? `
+<section class="wall wall-zalen" aria-labelledby="genres-title">
+  <div class="wrap wall-head">
+    <h2 id="genres-title">Genres</h2>
+    <p><a href="/genres/">Alle genres</a></p>
+  </div>
+  ${strip("strip-genres", "Genres", kaartenRij(GENRE_PAGINAS, (g) => GENRE_INFO[g].kleur, genreKaart))}
+</section>` : ""}
 
 ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` : ""}
 <section class="block wrap kies-blok" aria-labelledby="maand-title">
@@ -1744,14 +1752,17 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       schema: { type: "CollectionPage", kruimels: [["Genres", "/genres/"], [info.kop, pad]], extra: [...eventsLd(eerste), faqLd(vragen, pad)] } });
   }
 
-  function genreIndex() {
-    const kaart = (g) => {
-      const list = genreLijst(g);
-      return `<a class="artist-card" href="/genres/${g}/" style="${ink(GENRE_INFO[g].kleur)}">
+  // Gekleurde kaart van een genre (/genres/ en de homepage).
+  const genreKaart = (g, kleur) => {
+    const list = genreLijst(g);
+    return `<a class="artist-card" href="/genres/${g}/" style="${ink(kleur)}">
           <h3${kopMaat(GENRE_INFO[g].kop)}>${afbreken(GENRE_INFO[g].kop)}</h3>
           <p><span class="count">${plural(list.length, "voorstelling", "voorstellingen")}</span>, vanaf ${fmt.dayMonth(list[0].datum)}</p>
         </a>`;
-    };
+  };
+
+  function genreIndex() {
+    const kaart = (g) => genreKaart(g, GENRE_INFO[g].kleur);
     const vragen = [
       ["Welke genres staan in de agenda?", `${opsomming(GENRE_PAGINAS.map(genreLink))}. Per genre zie je alle voorstellingen, met uitleg en veelgestelde vragen.`],
       ["Staan musicals en toneel ook in de agenda?", "Nee. Cabaretiers.com is een agenda voor cabaret, comedy en komisch theater. Toneel staat er alleen in als humor de hoofdrol speelt (theaterkomedie)."],
