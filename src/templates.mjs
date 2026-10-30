@@ -157,7 +157,7 @@ export function createTemplates(db) {
       ["over", "/over/", "Over"],
     ].map(([key, href, label]) =>
       `<a href="${href}"${key === section ? ' aria-current="page"' : ""}>${label}</a>`).join("");
-    const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} | Theateragenda van Nederland en België`;
+    const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} | Agenda voor cabaret, stand-up comedy en theater`;
     return `<!doctype html>
 <html lang="nl">
 <head>
