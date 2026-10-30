@@ -5,7 +5,7 @@
   "theaters": [
     {
       "id": "comedytrain-nieuwe-toomler-amsterdam",
-      "naam": "Comedytrain (nieuwe Toomler)",
+      "naam": "Comedytrain",
       "plaats": "Amsterdam",
       "land": "NL",
       "soort": "comedyclub",
@@ -13,6 +13,17 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up Matinee",
+      "genre": "stand-up",
+      "datum": "2026-11-08",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-11-08/"
+    },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [],
@@ -1595,17 +1606,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-14/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Matinee",
-      "genre": "stand-up",
-      "datum": "2026-11-08",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-matinee-2026-11-08/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",

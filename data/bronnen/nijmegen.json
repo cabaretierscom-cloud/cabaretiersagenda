@@ -1,7 +1,7 @@
 {
   "bron": "nijmegen",
   "naam": "Stadsschouwburg & De Vereeniging Nijmegen",
-  "opgehaald": "2026-10-28",
+  "opgehaald": "2026-10-30",
   "theaters": [
     {
       "id": "stadsschouwburg-nijmegen",
@@ -21,32 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "stadsschouwburg-nijmegen",
-      "artiesten": [
-        "Cabarestafette"
-      ],
-      "titel": "Nieuw geluid!",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/cabarestafette-8wpg"
-    },
-    {
-      "theater": "stadsschouwburg-nijmegen",
-      "artiesten": [
-        "Cabarestafette"
-      ],
-      "titel": "Nieuw geluid!",
-      "genre": "cabaret",
-      "datum": "2027-05-20",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/cabarestafette-8wpg"
-    },
     {
       "theater": "stadsschouwburg-nijmegen",
       "artiesten": [
@@ -332,6 +306,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/rayen-panday-z992"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Cabarestafette"
+      ],
+      "titel": "Nieuw geluid!",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/cabarestafette-8wpg"
     },
     {
       "theater": "stadsschouwburg-nijmegen",

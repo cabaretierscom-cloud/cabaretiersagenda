@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-10-30",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -22,7 +22,7 @@
       "genre": "cabaret",
       "datum": "2026-10-31",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.kampanje.nl/voorstellingen/valentina-toth-try-out-rz9j"
     },
@@ -243,7 +243,7 @@
       "genre": "cabaret",
       "datum": "2027-01-14",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2"
     },
@@ -540,7 +540,7 @@
       "genre": "cabaret",
       "datum": "2027-04-09",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/marie-koet-cgxx"
     },
@@ -889,6 +889,13 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Het eind van zijn slim geconstrueerde voorstelling is een ontroerende uppercut en een wake-up call ineen."
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/ronald-snijders-5sv7": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De geest van Snijders is als een vulkaan waar constant krankzinnigheid uit borrelt."
       }
     ],
     "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2": [

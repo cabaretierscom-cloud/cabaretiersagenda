@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-10-30",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -1512,7 +1512,7 @@
       "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/najib-roue-56186/"
     },
@@ -1593,19 +1593,6 @@
       "status": "gepland",
       "soort": "reprise",
       "bron": "https://luxortheater.nl/agenda/plien-bianca-57558/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Tis hier geen hotel 3"
-      ],
-      "titel": "Hanneke Drenth en Dianne Liesker",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://luxortheater.nl/agenda/tis-hier-geen-hotel-3-58282/"
     },
     {
       "theater": "oude-luxor",
@@ -1762,6 +1749,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/valentina-toth-57516/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Tis hier geen hotel 3"
+      ],
+      "titel": "Hanneke Drenth en Dianne Liesker",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://luxortheater.nl/agenda/tis-hier-geen-hotel-3-58282/"
     },
     {
       "theater": "oude-luxor",

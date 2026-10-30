@@ -582,8 +582,8 @@
       {
         "medium": "Theaterkrant",
         "sterren": null,
-        "citaat": "Vakkundig en gevoelig.",
-        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ayoub-kharkhach-en-verbied-de-vogels-om-te-fluiten/"
+        "citaat": "Ayoub Kharkhach maakt indruk met een ontroerend en verbindend debuut.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/en-verbied-vogels-om-te-fluiten-ayoub"
       }
     ]
   },
@@ -3742,6 +3742,13 @@
     "theater": "cpunt"
   },
   {
+    "id": "knock-out-comedy-crew-theater-aan-het-vrijthof",
+    "titel": "- Knock Out Comedy Crew",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-aan-het-vrijthof"
+  },
+  {
     "id": "knock-out-comedy-crew-theater-heerlen",
     "titel": "Knock Out Comedy Crew",
     "artiesten": [],
@@ -5682,14 +5689,6 @@
     "genre": "stand-up"
   },
   {
-    "id": "roel-c-verburg-solo-matinee",
-    "titel": "Solo (matinee)",
-    "artiesten": [
-      "roel-c-verburg"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "roel-c-verburg-southend-comedy-club",
     "titel": "Roel C. Verburg",
     "artiesten": [],
@@ -5772,38 +5771,38 @@
       {
         "medium": "Scènes",
         "sterren": 5,
-        "citaat": "Goedemondt is een onweerstaanbare komiek.",
-        "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+        "citaat": "Goedemondt is een onweerstaanbare komiek",
+        "bron": "https://delamar.nl/voorstellingen/ronald-goedemondt/"
       },
       {
         "medium": "de Volkskrant",
         "sterren": 4,
-        "citaat": "Mijn lieve achterdocht is naast ontzettend grappig ook psychologisch interessant. (...) ‘Goedemondt uit zijn onvermogen in prachtig geformuleerde zinnen en levert uitmuntend fysiek spel.",
-        "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+        "citaat": "Mijn lieve achterdocht is naast ontzettend grappig ook psychologisch interessant.",
+        "bron": "https://kunstlinie.nl/programma/ronald-goedemondt-2/"
       },
       {
         "medium": "NRC",
         "sterren": 4,
-        "citaat": "Geen comedian in Nederland beheerst zijn stem beter dan Goedemondt.",
-        "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+        "citaat": "Geen comedian in Nederland beheerst zijn stem beter dan Goedemondt",
+        "bron": "https://delamar.nl/voorstellingen/ronald-goedemondt/"
       },
       {
         "medium": "Trouw",
         "sterren": 4,
-        "citaat": "Goedemondt is een meester in het vinden van humor in het alledaagse.",
-        "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+        "citaat": "Goedemondt is een meester in het vinden van humor in het alledaagse",
+        "bron": "https://delamar.nl/voorstellingen/ronald-goedemondt/"
       },
       {
         "medium": "Het Parool",
         "sterren": null,
-        "citaat": "Ronald Goedemondt overdondert zijn publiek met een tornado aan superieur geacteerde onzin.",
-        "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+        "citaat": "Ronald Goedemondt overdondert zijn publiek met een tornado aan superieur geacteerde onzin",
+        "bron": "https://delamar.nl/voorstellingen/ronald-goedemondt/"
       },
       {
         "medium": "Theaterkrant",
         "sterren": null,
-        "citaat": "Goedemondt toont de tekortschietende mens, en laat zien hoe onweerstaanbaar grappig dat kan zijn.",
-        "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
+        "citaat": "Goedemondt toont de tekortschietende mens, en laat zien hoe onweerstaanbaar grappig dat kan zijn",
+        "bron": "https://delamar.nl/voorstellingen/ronald-goedemondt/"
       }
     ]
   },
@@ -6772,6 +6771,14 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "theater-lampegiet"
+  },
+  {
+    "id": "veldeke-theater-aajdjaorscabberet-eve-oonder-us",
+    "titel": "Aajdjaorscabberèt: Eve oonder us",
+    "artiesten": [
+      "veldeke-theater"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "veldhuis-en-kemper-nieuw-programma",

@@ -1,7 +1,7 @@
 {
   "bron": "wilminktheater",
   "naam": "Wilminktheater en Muziekcentrum Enschede",
-  "opgehaald": "2026-10-28",
+  "opgehaald": "2026-10-30",
   "theaters": [
     {
       "id": "wilminktheater",
@@ -21,26 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": {
-        "id": "de-kleine-willem-enschede",
-        "naam": "De Kleine Willem",
-        "plaats": "Enschede",
-        "land": "NL",
-        "soort": "theater",
-        "website": null
-      },
-      "artiesten": [
-        "Comedytunes"
-      ],
-      "titel": "Comedy Night @ De Kleine Willem",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/comedy-night-de-kleine-willem-bcjj"
-    },
     {
       "theater": {
         "id": "de-kleine-willem-enschede",

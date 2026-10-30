@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-10-30",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Claudia de Breij"
-      ],
-      "titel": "Oudejaarsconference 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-10-29",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/claudia-de-breij-dtnn"
-    },
     {
       "theater": "kleine-komedie",
       "artiesten": [
@@ -165,7 +152,7 @@
       "genre": "cabaret",
       "datum": "2026-11-11",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
     },
@@ -282,7 +269,7 @@
       "genre": "cabaret",
       "datum": "2026-11-21",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/henry-van-loon-c28y"
     },

@@ -1,7 +1,7 @@
 {
   "bron": "de-veste",
   "naam": "Theater De Veste",
-  "opgehaald": "2026-10-28",
+  "opgehaald": "2026-10-30",
   "theaters": [
     {
       "id": "theater-de-veste",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-de-veste",
-      "artiesten": [
-        "Ronald Goedemondt"
-      ],
-      "titel": "Mijn Lieve Achterdocht",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq"
-    },
     {
       "theater": "theater-de-veste",
       "artiesten": [
@@ -715,38 +702,6 @@
     }
   ],
   "recensies": {
-    "https://www.theaterdeveste.nl/programma/mijn-lieve-achterdocht-jxqq": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Mijn lieve achterdocht is naast ontzettend grappig ook psychologisch interessant. (...) ‘Goedemondt uit zijn onvermogen in prachtig geformuleerde zinnen en levert uitmuntend fysiek spel."
-      },
-      {
-        "medium": "Scènes",
-        "sterren": 5,
-        "citaat": "Goedemondt is een onweerstaanbare komiek."
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Geen comedian in Nederland beheerst zijn stem beter dan Goedemondt."
-      },
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Goedemondt is een meester in het vinden van humor in het alledaagse."
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Ronald Goedemondt overdondert zijn publiek met een tornado aan superieur geacteerde onzin."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Goedemondt toont de tekortschietende mens, en laat zien hoe onweerstaanbaar grappig dat kan zijn."
-      }
-    ],
     "https://www.theaterdeveste.nl/programma/ja-leuk-rpnv": [
       {
         "medium": "NRC",

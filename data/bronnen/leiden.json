@@ -1,7 +1,7 @@
 {
   "bron": "leiden",
   "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-10-30",
   "theaters": [
     {
       "id": "leidse-schouwburg",
@@ -579,6 +579,19 @@
     {
       "theater": "leidse-schouwburg",
       "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2026-11-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/patrick-laureij-kintsugi-reprise/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
         "Evi Hanssen"
       ],
       "titel": "Bloedheet & tranen",
@@ -757,19 +770,6 @@
       "status": "gepland",
       "soort": "reprise",
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/merijn-scholten-lemming-reprise/"
-    },
-    {
-      "theater": "leidse-schouwburg",
-      "artiesten": [
-        "Ayoub Kharkhach"
-      ],
-      "titel": "En verbied de vogels om te fluiten",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ayoub-kharkhach-en-verbied-de-vogels-om-te-fluiten/"
     },
     {
       "theater": "leidse-schouwburg",
@@ -1224,28 +1224,6 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "De zaal ligt aan zijn voeten, vaak hikkend van het lachen"
-      }
-    ],
-    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ayoub-kharkhach-en-verbied-de-vogels-om-te-fluiten/": [
-      {
-        "medium": "NRC",
-        "sterren": 5,
-        "citaat": "Misschien wel het mooiste cabaretdebuut van het jaar"
-      },
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Ayoub Kharkhach lost met zijn debuutvoorstelling de hoge verwachtingen volledig in"
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Vakkundig en gevoelig."
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Een spannende performer die met niemand in het huidige cabaretveld te vergelijken is."
       }
     ],
     "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/kommil-foo-babel/": [

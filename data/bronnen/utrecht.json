@@ -1,7 +1,7 @@
 {
   "bron": "utrecht",
   "naam": "Stadsschouwburg Utrecht",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-10-30",
   "theaters": [
     {
       "id": "stadsschouwburg-utrecht",
@@ -24,7 +24,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/gelukkig-heb-je-mij-nog-richard-groenendijk",
       "datum": "2027-02-24",
       "tijd": "20:00",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -204,22 +204,9 @@
       "genre": "cabaret",
       "soort": "reprise",
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/keanu-henry-van-loon",
-      "datum": "2026-10-29",
-      "tijd": "20:00",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Henry van Loon"
-      ],
-      "titel": "Keanu",
-      "genre": "cabaret",
-      "soort": "reprise",
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/keanu-henry-van-loon",
       "datum": "2026-10-30",
       "tijd": "20:00",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -271,7 +258,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/king-me-250-years-of-donald-trum-greg-shapiro",
       "datum": "2026-11-06",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -401,7 +388,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/zeg-maar-u-de-broers-van-arkel",
       "datum": "2026-12-19",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1220,7 +1207,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lachen-met-volle-mond-2-berit-companjen-en-het-comedy-talent-van-het-momen",
       "datum": "2026-11-23",
       "tijd": "19:00",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",

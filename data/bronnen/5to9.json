@@ -2,101 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-10-30",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Westland Theater De Naald",
-        "plaats": "Naaldwijk",
-        "land": "NL",
-        "website": "https://www.westlandtheater.nl"
-      },
-      "artiesten": [
-        "Pieter Verelst"
-      ],
-      "titel": "Altijd Aan",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.westlandtheater.nl/programma/pieter-verelst-xc4m"
-    },
-    {
-      "theater": "oc-marke",
-      "artiesten": [
-        "Bregje Iding",
-        "Jeroen Dyck",
-        "Peter Kluppels",
-        "MC Jarno Boone"
-      ],
-      "titel": "Humo's Comedy Cup Finalistentour",
-      "genre": "stand-up",
-      "datum": "2026-10-29",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgkortrijk.be/nl/programma/humo-s-comedy-cup-finalistentour-12kc"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Pand P",
-        "plaats": "Eindhoven",
-        "land": "NL",
-        "website": "https://www.parktheater.nl"
-      },
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "stand-up",
-      "datum": "2026-10-29",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.parktheater.nl/programma/bedankt-om-te-komen-rxvd?gad_source=1&gad_campaignid=23842513906&gbraid=0AAAAAD3uCwo1JP1zztk_bRZd_S8K8kR0H"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "'t Neerhof",
-        "plaats": "Meise",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Bert Gabriëls"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-10-29",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.facebook.com/events/slozenstraat-76-1861-wolvertem-belgium/neerhof-sessions-comedy-bert-gabriels-karim-shatla/1051932181041454/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Kasteel Hof De Bist",
-        "plaats": "Ekeren",
-        "land": "BE",
-        "website": "https://hofdebist.antwerpen.be"
-      },
-      "artiesten": [
-        "Gili"
-      ],
-      "titel": "Machtig!",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://hofdebist.antwerpen.be/machtig-or-try-out"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -863,7 +771,7 @@
       "genre": "cabaret",
       "datum": "2026-11-13",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.forzavarsa.be/comedy-night-pieter-verelst-13-11-2026"
     },
@@ -5840,6 +5748,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Theater De Oranjerie",
+        "plaats": "Roermond",
+        "land": "NL",
+        "website": "https://www.theaterroermond.nl"
+      },
+      "artiesten": [
+        "Arnout Van den Bossche"
+      ],
+      "titel": "De Relatiefluisteraar",
+      "genre": "stand-up",
+      "datum": "2027-03-17",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterroermond.nl/agenda/arnout-van-den-bossche-2"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "CC Zoetegem",
         "plaats": "Zottegem",
         "land": "BE",
@@ -7166,6 +7093,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://beleefberlare.be/gunter-lamoot"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Markant Theater Maashorst",
+        "plaats": "Uden",
+        "land": "NL",
+        "website": "https://www.markantmaashorst.nl"
+      },
+      "artiesten": [
+        "Arnout Van den Bossche"
+      ],
+      "titel": "De Relatiefluisteraar",
+      "genre": "stand-up",
+      "datum": "2027-04-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.markantmaashorst.nl/nl/agenda/arnout-van-den-bossche-y37h"
     },
     {
       "theater": {

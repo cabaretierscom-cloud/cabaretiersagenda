@@ -1,7 +1,7 @@
 {
   "bron": "hetpark",
   "naam": "Schouwburg Het Park",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-10-30",
   "theaters": [
     {
       "id": "schouwburg-het-park",
@@ -21,19 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "schouwburg-het-park",
-      "artiesten": [
-        "Pieter Derks"
-      ],
-      "titel": "Ja, leuk",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://hetpark.nl/agenda/pieter-derks-10355722/"
-    },
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
@@ -106,7 +93,7 @@
       "genre": "cabaret",
       "datum": "2026-11-17",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/amhali-verveer-10349292/"
     },
