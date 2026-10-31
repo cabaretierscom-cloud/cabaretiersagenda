@@ -237,7 +237,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* Affiche met promobeeld ("Nu in het theater"): bovenin de foto, daaronder het kleurvlak van de artiest,
    op de naad twee inkepingen zoals bij een toegangskaartje. */
 /* Compact formaat, zodat onder de eerste rij het begin van de volgende in beeld komt. */
-.poster-foto { --naad: 50%; width: 240px; height: 390px; display: flex; flex-direction: column; padding: 0; border-radius: 18px; }
+.poster-foto { --naad: 50%; width: 264px; height: 430px; display: flex; flex-direction: column; padding: 0; border-radius: 18px; }
 /* Losse kaartjes met wat ruimte ertussen; de eerste begint op de lijn van de koppen. */
 .strip:has(.artist-card),
 .strip:has(.poster-foto) { --rand: max(16px, calc((100vw - var(--wrap)) / 2 + 16px)); gap: 14px; padding-inline: var(--rand); scroll-padding-inline: var(--rand); }
@@ -323,7 +323,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .strip-nav svg { width: 22px; height: 22px; }
 @media (max-width: 600px) {
   .poster { width: 78vw; height: 470px; }
-  .poster-foto { width: min(62vw, 250px); height: 340px; --naad: 50%; }
+  .poster-foto { width: min(68vw, 272px); height: 372px; --naad: 50%; }
   .poster-info { padding: 12px 8px 12px 14px; }
   .poster-foto .wanneer { font-size: .72rem; }
   .poster-foto .day { font-size: 2.3rem; }
