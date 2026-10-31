@@ -523,19 +523,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Guido Weijers"
-      ],
-      "titel": "Guido Weijers",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/guido-weijers-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Esther van der Voort"
       ],
       "titel": "Esther van der Voort",
@@ -649,19 +636,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/arie-silvester/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Comedy Club Almere"
-      ],
-      "titel": "Comedy Club Almere",
-      "genre": "cabaret",
-      "datum": "2026-12-12",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/comedy-club-almere-15/"
     },
     {
       "theater": "kunstlinie",
@@ -792,6 +766,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/piet-van-eeghen-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Comedy Club Almere"
+      ],
+      "titel": "Comedy Club Almere",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/comedy-club-almere-15/"
     }
   ],
   "recensies": {
