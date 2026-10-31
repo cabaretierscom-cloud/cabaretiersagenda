@@ -1,11 +1,11 @@
 {
   "datum": "2026-10-31",
   "totaal": {
-    "speeldata": 6603,
-    "komend": 6384,
+    "speeldata": 6739,
+    "komend": 6518,
     "artiesten": 509,
-    "zalen": 584,
-    "plaatsen": 424,
+    "zalen": 592,
+    "plaatsen": 431,
     "voorstellingen": 802
   },
   "bronnen": [
@@ -30,7 +30,7 @@
       "naam": "Schouwburg Amstelveen",
       "opgehaald": "2026-10-30",
       "speeldata": 34,
-      "vorige": 35,
+      "vorige": 34,
       "dubbel": 0
     },
     {
@@ -46,7 +46,7 @@
       "naam": "Theater Bellevue",
       "opgehaald": "2026-10-30",
       "speeldata": 141,
-      "vorige": 142,
+      "vorige": 141,
       "dubbel": 0
     },
     {
@@ -70,7 +70,7 @@
       "naam": "Comedy Café Amsterdam",
       "opgehaald": "2026-10-30",
       "speeldata": 146,
-      "vorige": 138,
+      "vorige": 146,
       "dubbel": 0
     },
     {
@@ -94,7 +94,7 @@
       "naam": "Cpunt",
       "opgehaald": "2026-10-30",
       "speeldata": 102,
-      "vorige": 103,
+      "vorige": 102,
       "dubbel": 0
     },
     {
@@ -110,7 +110,7 @@
       "naam": "Theater De Veste",
       "opgehaald": "2026-10-30",
       "speeldata": 52,
-      "vorige": 53,
+      "vorige": 52,
       "dubbel": 0
     },
     {
@@ -142,7 +142,7 @@
       "naam": "Comedy Club Haug",
       "opgehaald": "2026-10-30",
       "speeldata": 129,
-      "vorige": 130,
+      "vorige": 129,
       "dubbel": 0
     },
     {
@@ -198,7 +198,7 @@
       "naam": "Kunstlinie",
       "opgehaald": "2026-10-30",
       "speeldata": 59,
-      "vorige": 60,
+      "vorige": 59,
       "dubbel": 0
     },
     {
@@ -294,7 +294,7 @@
       "naam": "Theater aan de Parade",
       "opgehaald": "2026-10-30",
       "speeldata": 32,
-      "vorige": 33,
+      "vorige": 32,
       "dubbel": 0
     },
     {
@@ -350,7 +350,7 @@
       "naam": "Theater Het Speelhuis",
       "opgehaald": "2026-10-30",
       "speeldata": 28,
-      "vorige": 29,
+      "vorige": 28,
       "dubbel": 0
     },
     {
@@ -382,7 +382,7 @@
       "naam": "Stadsschouwburg Utrecht",
       "opgehaald": "2026-10-30",
       "speeldata": 114,
-      "vorige": 116,
+      "vorige": 114,
       "dubbel": 0
     },
     {
@@ -414,7 +414,7 @@
       "naam": "Theater aan het Vrijthof",
       "opgehaald": "2026-10-30",
       "speeldata": 41,
-      "vorige": 42,
+      "vorige": 41,
       "dubbel": 0
     },
     {
@@ -430,7 +430,7 @@
       "naam": "Wilminktheater en Muziekcentrum Enschede",
       "opgehaald": "2026-10-30",
       "speeldata": 82,
-      "vorige": 83,
+      "vorige": 82,
       "dubbel": 0
     },
     {
@@ -454,7 +454,7 @@
       "naam": "Zwolse Theaters",
       "opgehaald": "2026-10-30",
       "speeldata": 76,
-      "vorige": 77,
+      "vorige": 76,
       "dubbel": 0
     },
     {
@@ -469,17 +469,25 @@
       "bron": "bunker",
       "naam": "Agenda van Bunker Theaterzaken",
       "opgehaald": "2026-10-30",
-      "speeldata": 231,
-      "vorige": 231,
-      "dubbel": 528
+      "speeldata": 233,
+      "vorige": 233,
+      "dubbel": 526
+    },
+    {
+      "bron": "kobra",
+      "naam": "Speellijsten van Kobra Theaterproducties (import)",
+      "opgehaald": "2026-10-31",
+      "speeldata": 135,
+      "vorige": 135,
+      "dubbel": 84
     },
     {
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-10-30",
-      "speeldata": 1932,
-      "vorige": 1925,
-      "dubbel": 1024
+      "speeldata": 1931,
+      "vorige": 1932,
+      "dubbel": 1025
     }
   ],
   "nieuw": {
@@ -497,7 +505,64 @@
         "naam": "Matt & Tamas"
       }
     ],
-    "zalen": [],
+    "zalen": [
+      {
+        "id": "den-heuvel-alphen-aan-den-rijn",
+        "naam": "Den Heuvel",
+        "plaats": "Alphen aan den Rijn",
+        "land": "NL",
+        "website": "https://www.denheuvel.org"
+      },
+      {
+        "id": "theater-t-web-bleiswijk",
+        "naam": "Theater ´t Web",
+        "plaats": "Bleiswijk",
+        "land": "NL",
+        "website": "https://www.theatertweb.nl"
+      },
+      {
+        "id": "de-toegift-klif-12-try-out-den-hoorn",
+        "naam": "De Toegift @ Klif 12 try-out",
+        "plaats": "Den Hoorn",
+        "land": "NL",
+        "website": "https://www.klif12.nl"
+      },
+      {
+        "id": "kasteel-dussen-try-out",
+        "naam": "Kasteel Dussen try-out",
+        "plaats": "Dussen",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "theater-podium-heino",
+        "naam": "Theater Podium Heino",
+        "plaats": "Heino",
+        "land": "NL",
+        "website": "https://www.podiumheino.nl"
+      },
+      {
+        "id": "theater-onder-de-linden-middenbeemster",
+        "naam": "Theater Onder de Linden",
+        "plaats": "Middenbeemster",
+        "land": "NL",
+        "website": "https://www.onderdelindenbeemster.nl"
+      },
+      {
+        "id": "het-kwartier-stolwijk",
+        "naam": "Het Kwartier",
+        "plaats": "Stolwijk",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "filmtheater-voorschoten",
+        "naam": "Filmtheater Voorschoten",
+        "plaats": "Voorschoten",
+        "land": "NL",
+        "website": "https://filmtheatervoorschoten.nl"
+      }
+    ],
     "voorstellingen": [
       {
         "id": "berit-companjen-fimme-bakker-bob-koomen-lachen-met-volle-mond-3",
@@ -606,11 +671,11 @@
     },
     {
       "datum": "2026-10-31",
-      "speeldata": 6603,
-      "komend": 6384,
+      "speeldata": 6739,
+      "komend": 6518,
       "artiesten": 509,
-      "zalen": 584,
-      "plaatsen": 424,
+      "zalen": 592,
+      "plaatsen": 431,
       "voorstellingen": 802
     }
   ]
