@@ -4,7 +4,7 @@ import { mkdirSync, rmSync, writeFileSync, cpSync, readFileSync, existsSync, rea
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { loadData } from "./src/data.mjs";
-import { createTemplates, SITE, LOGO_SVG } from "./src/templates.mjs";
+import { createTemplates, SITE, LOGO_SVG, slugVan } from "./src/templates.mjs";
 
 const root = dirname(fileURLToPath(import.meta.url));
 // VOORBEELD=1 bouwt een versie met relatieve links naar dist-voorbeeld/, om de site zonder
@@ -114,6 +114,14 @@ writeFileSync(join(out, "sitemap.xml"),
   for (const a of oud) if (!bestaat.has(a) && !doel.has(a)) doel.set(a, bestaat.has(`/artiesten${a}`) ? `/artiesten${a}` : "/");
   const regels = [...doel].sort().map(([van, naar]) =>
     `RedirectMatch 301 ^${van.replace(/\/$/, "").replace(/[.+?^$()[\]{}|\\]/g, "\\$&")}/?$ ${SITE.url}${naar}`);
+  // Samengevoegde artiesten (data/aliassen.json met één doel, bv. "Rayen & Friends" -> "Rayen Panday & Friends"):
+  // de oude artiestpagina en alles daaronder gaan naar de artiestpagina van het doel.
+  for (const [naam, doelen] of Object.entries(JSON.parse(readFileSync(join(root, "data", "aliassen.json"), "utf8")))) {
+    const van = slugVan(naam), naar = doelen.length === 1 && `/artiesten/${slugVan(doelen[0])}/`;
+    if (!naar || !van || bestaat.has(`/artiesten/${van}/`) || !bestaat.has(naar)) continue;
+    const regel = `RedirectMatch 301 ^/artiesten/${van.replace(/[.+?^$()[\]{}|\\]/g, "\\$&")}(/.*)?$ ${SITE.url}${naar}`;
+    if (!regels.includes(regel)) regels.push(regel);
+  }
   // /artiesten/<festival>/ en alles daaronder (oude voorstellingspagina's) -> /festivals/<festival>/.
   for (const [id, f] of [...t.festivalVan].sort()) regels.push(`RedirectMatch 301 ^/artiesten/${id.replace(/[.+?^$()[\]{}|\\]/g, "\\$&")}(/.*)?$ ${SITE.url}/festivals/${f}/`);
   const ht = join(out, ".htaccess");

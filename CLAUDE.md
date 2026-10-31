@@ -47,7 +47,7 @@ Cabaret- en comedyagenda voor Nederland en België. Statische site, gebouwd door
 
 ## Publiceren
 
-- `.github/workflows/bijwerken.yml` zet de site elke nacht en bij elke push op `main` via SFTP op Cloud86 (Plesk), in de map `cabaretiers.com/` (niet `httpdocs/`: die hoort bij een ander domein op hetzelfde pakket). Eerst controleert hij met een testbestand of die map echt www.cabaretiers.com is. Geheimen: `CLOUD86_HOST`, `CLOUD86_USER`, `CLOUD86_PASSWORD`. `public/.htaccess` regelt 404, www en browsercache; `build.mjs` voegt daar doorverwijzingen (301) aan toe van oude WordPress-adressen (`data/oude-adressen.json`) en van `/<artiest-id>/` naar `/artiesten/<artiest-id>/`.
+- `.github/workflows/bijwerken.yml` zet de site elke nacht en bij elke push op `main` via SFTP op Cloud86 (Plesk), in de map `cabaretiers.com/` (niet `httpdocs/`: die hoort bij een ander domein op hetzelfde pakket). Eerst controleert hij met een testbestand of die map echt www.cabaretiers.com is. Geheimen: `CLOUD86_HOST`, `CLOUD86_USER`, `CLOUD86_PASSWORD`. `public/.htaccess` regelt 404, www en browsercache; `build.mjs` voegt daar doorverwijzingen (301) aan toe van oude WordPress-adressen (`data/oude-adressen.json`) van `/<artiest-id>/` naar `/artiesten/<artiest-id>/`, en van samengevoegde artiesten (`data/aliassen.json` met één doel) naar de artiestpagina van het doel.
 
 ## Controlepagina
 
