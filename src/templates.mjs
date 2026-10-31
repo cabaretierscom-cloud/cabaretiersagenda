@@ -865,7 +865,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <h2><a href="${pad}">${esc(naam)}</a></h2>
         ${u.tekst ? `<p class="uitgelicht-tekst">${esc(u.tekst)}</p>` : ""}
         <ul>${list.slice(0, 3).map((g) => `<li><b>${esc(fmt.weekdayShort(g.datum))} ${esc(fmt.dayMonth(g.datum))}</b> ${u.theater ? esc(artistNames(g.voorstelling)) : `${esc(T.get(g.theater).naam)}, ${esc(T.get(g.theater).plaats)}`}</li>`).join("")}</ul>
-        <p class="uitgelicht-knoppen"><a class="btn" href="${pad}">Alle voorstellingen</a>${u.link ? `<a class="btn ghost" href="${esc(u.link)}" target="_blank" rel="sponsored noopener">Naar de website${ICON.extern}</a>` : ""}</p>
+        <p class="uitgelicht-knoppen"><a class="btn" href="${pad}">Alle voorstellingen</a>${u.link ? `<a class="btn ghost" href="${esc(metUtm(u.link))}" target="_blank" rel="sponsored noopener">Naar de website${ICON.extern}</a>` : ""}</p>
       </div>`).join("")}
     </aside>`;
   }
@@ -1379,7 +1379,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const uit = list.filter((g) => g.status === "uitverkocht");
     if (uit.length) vragen.push([`Welke voorstellingen in ${t.naam} zijn uitverkocht?`, `${uit.length} van de ${list.length}, onder meer ${perNaam(uit, 4)}. Soms komen er kaarten vrij via een wachtlijst bij het theater.`]);
     const soort = ZAALSOORT[t.soort];
-    vragen.push([`Waar ligt ${t.naam}?`, `${naam} is ${soort ? `een ${soort} ` : ""}in ${plaatsLink(t.plaats)}, ${LANDEN[t.land]}.${t.website ? ` Het adres en de bereikbaarheid staan op <a href="${esc(t.website)}" rel="noopener">de website van ${naam}</a>.` : ""}`]);
+    vragen.push([`Waar ligt ${t.naam}?`, `${naam} is ${soort ? `een ${soort} ` : ""}in ${plaatsLink(t.plaats)}, ${LANDEN[t.land]}.${t.website ? ` Het adres en de bereikbaarheid staan op <a href="${esc(metUtm(t.website))}" rel="noopener">de website van ${naam}</a>.` : ""}`]);
     vragen.push([`Hoe koop ik kaarten voor ${t.naam}?`, `Kaarten koop je bij ${naam} zelf. Klik bij een voorstelling op de knop <em>Tickets</em>: die opent de speellijst van het theater, waar je kaarten kunt bestellen.`]);
     const buren = zalenMetData.filter((x) => x.plaats === t.plaats && x.id !== t.id);
     if (buren.length) vragen.push([`Waar is er nog meer cabaret in ${t.plaats}?`, `Ook in ${opsomming(buren.slice(0, 5).map((x) => theaterLink(x.id)))}. Alle voorstellingen staan bij <a href="/plaatsen/${plaatsId(t.plaats)}/">cabaret en comedy in ${esc(t.plaats)}</a>.`]);
@@ -1407,7 +1407,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     }
     if (zalen.length > 1) {
       delen.push(`<h2>Theaters en zalen in ${naam}</h2>
-        <ul>${zalen.map(([id, n]) => { const t = T.get(id), eerste = list.find((g) => g.theater === id); return `<li>${theaterLink(id)}: ${plural(n, "voorstelling", "voorstellingen")}, de eerste op ${fmt.dayMonth(eerste.datum)}${t.website ? ` (<a href="${esc(t.website)}" rel="noopener">website</a>)` : ""}</li>`; }).join("")}</ul>`);
+        <ul>${zalen.map(([id, n]) => { const t = T.get(id), eerste = list.find((g) => g.theater === id); return `<li>${theaterLink(id)}: ${plural(n, "voorstelling", "voorstellingen")}, de eerste op ${fmt.dayMonth(eerste.datum)}${t.website ? ` (<a href="${esc(metUtm(t.website))}" rel="noopener">website</a>)` : ""}</li>`; }).join("")}</ul>`);
     }
     const bijz = [];
     const tryouts = bijzonder(list, "try-out"), premieres = bijzonder(list, "première");
@@ -1569,7 +1569,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
           <figure>
             ${sterren(r.sterren)}
             <blockquote><p>${esc(r.citaat)}</p></blockquote>
-            <figcaption><cite>${esc(r.medium)}</cite>${r.sterren ? `, ${r.sterren} ${r.sterren === 1 ? "ster" : "sterren"}` : ""}${r.via ? `, via ${esc(r.via)}` : ` <a href="${esc(r.bron)}" rel="noopener" target="_blank">via ${esc(zaal(r.bron))}</a>`}</figcaption>
+            <figcaption><cite>${esc(r.medium)}</cite>${r.sterren ? `, ${r.sterren} ${r.sterren === 1 ? "ster" : "sterren"}` : ""}${r.via ? `, via ${esc(r.via)}` : ` <a href="${esc(metUtm(r.bron))}" rel="noopener" target="_blank">via ${esc(zaal(r.bron))}</a>`}</figcaption>
           </figure>
         </li>`).join("")}</ul>
       </section>`;
@@ -1818,7 +1818,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div class="artists festival-kaarten">${kaartenRij(hier, ({ f }) => festivalKleur(f), festivalKaart)}</div>` : "";
       }).join("\n      ")}
       ${zonder.length ? `<h2 class="sub-head">Nog geen speeldata bekend</h2>
-      <ul class="sources">${zonder.map((f) => `<li>${f.website ? `<a href="${esc(f.website)}" rel="noopener">${esc(f.naam)}</a>` : esc(f.naam)} <span>${esc(f.plaats)}</span></li>`).join("")}</ul>` : ""}
+      <ul class="sources">${zonder.map((f) => `<li>${f.website ? `<a href="${esc(metUtm(f.website))}" rel="noopener">${esc(f.naam)}</a>` : esc(f.naam)} <span>${esc(f.plaats)}</span></li>`).join("")}</ul>` : ""}
       <section class="seo-tekst prose" aria-labelledby="over-titel">
         <h2 id="over-titel">Cabaretfestivals in Nederland en België</h2>
         ${overzicht.tekst.join("\n        ")}
@@ -1842,7 +1842,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     if (artiesten.length) p2.push(`Op de speellijst staan ook ${opsomming(artiesten.slice(0, 6).map((a) => `<a href="${artiestPad(a)}">${esc(A.get(a).naam)}</a>`))}.`);
     const tekst = (p2.join(" ") + uitverkochtZin(list)).trim();
     if (tekst) zinnen.push(`<p>${tekst}</p>`);
-    zinnen.push(`<p>${f.website ? `Meer over het festival, de deelnemers en de jury lees je op <a href="${esc(f.website)}" rel="noopener">de website van ${esc(f.naam)}</a>. ` : ""}Bekijk ook <a href="/festivals/">alle cabaretfestivals</a>. ${kaartenZin}</p>`);
+    zinnen.push(`<p>${f.website ? `Meer over het festival, de deelnemers en de jury lees je op <a href="${esc(metUtm(f.website))}" rel="noopener">de website van ${esc(f.naam)}</a>. ` : ""}Bekijk ook <a href="/festivals/">alle cabaretfestivals</a>. ${kaartenZin}</p>`);
     return `<section class="seo-tekst prose" aria-labelledby="over-titel">
         <h2 id="over-titel">${esc(f.naam)} ${opsomming([...new Set(list.map((g) => String(fmt.year(g.datum))))])}</h2>
         ${zinnen.join("\n        ")}
@@ -1854,7 +1854,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const steden = new Set(list.map((g) => T.get(g.theater).plaats)).size;
     const body = `<div class="detail-hero" style="${ink(festivalKleur(f))}"><div class="wrap">
         <h1>${esc(f.naam)}</h1>
-        <p>Cabaretfestival uit ${plaatsen.includes(f.plaats) ? `<a href="/plaatsen/${plaatsId(f.plaats)}/">${esc(f.plaats)}</a>` : esc(f.plaats)}. ${list.length ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.` : "Op dit moment staan er geen speeldata in de agenda."}${f.website ? ` <a href="${esc(f.website)}" rel="noopener">Website van het festival</a>` : ""}</p>
+        <p>Cabaretfestival uit ${plaatsen.includes(f.plaats) ? `<a href="/plaatsen/${plaatsId(f.plaats)}/">${esc(f.plaats)}</a>` : esc(f.plaats)}. ${list.length ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.` : "Op dit moment staan er geen speeldata in de agenda."}${f.website ? ` <a href="${esc(metUtm(f.website))}" rel="noopener">Website van het festival</a>` : ""}</p>
       </div></div>
       <div class="wrap detail-body">
         ${list.length > 12 ? filters(list, { maand: true }) : ""}
@@ -1966,7 +1966,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div class="block-head"><h1 id="t">Comedy Clubs</h1><p>Comedyclubs en comedycafés in Nederland en België, met hun stand-up en open mics.</p></div>
       ${kaarten || `<p class="empty">Op dit moment staan er geen voorstellingen in comedyclubs gepland.</p>`}
       ${zonder.length ? `<h2 class="sub-head">Nog geen speeldata bekend</h2>
-      <ul class="sources">${zonder.map((t) => `<li>${t.website ? `<a href="${esc(t.website)}" rel="noopener">${esc(t.naam)}</a>` : esc(t.naam)} <span>${esc(t.plaats)}</span></li>`).join("")}</ul>` : ""}
+      <ul class="sources">${zonder.map((t) => `<li>${t.website ? `<a href="${esc(metUtm(t.website))}" rel="noopener">${esc(t.naam)}</a>` : esc(t.naam)} <span>${esc(t.plaats)}</span></li>`).join("")}</ul>` : ""}
       <section class="seo-tekst prose" aria-labelledby="over-titel">
         <h2 id="over-titel">Stand-up en comedy in comedyclubs</h2>
         ${tekst.join("\n        ")}
@@ -2013,7 +2013,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const body = `<div class="detail-hero" style="--bg:var(--riso-blue);--fg:#FFF"><div class="wrap${t.foto ? " hero-met-foto" : ""}">
         <div>
         <h1>${esc(t.naam)}</h1>
-        <p><a href="/plaatsen/${plaatsId(t.plaats)}/">${esc(t.plaats)}</a>, ${LANDEN[t.land]}. ${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.` : "Op dit moment staan er geen voorstellingen gepland."}${t.website ? ` <a href="${esc(t.website)}" rel="noopener">Website van het theater</a>` : ""}</p>
+        <p><a href="/plaatsen/${plaatsId(t.plaats)}/">${esc(t.plaats)}</a>, ${LANDEN[t.land]}. ${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.` : "Op dit moment staan er geen voorstellingen gepland."}${t.website ? ` <a href="${esc(metUtm(t.website))}" rel="noopener">Website van het theater</a>` : ""}</p>
         </div>
         ${t.foto ? fotoHtml(t, "theater-foto") : ""}
       </div></div>
@@ -2075,7 +2075,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         </ol>
       </div>
       <h2 class="sub-head" id="bronnen">Waar de gegevens vandaan komen</h2>
-      <ul class="sources">${bronnen.map((t) => `<li><a href="${esc(t.website)}" rel="noopener">${esc(t.naam)}</a> <span>${esc(t.plaats)}</span></li>`).join("")}</ul>
+      <ul class="sources">${bronnen.map((t) => `<li><a href="${esc(metUtm(t.website))}" rel="noopener">${esc(t.naam)}</a> <span>${esc(t.plaats)}</span></li>`).join("")}</ul>
     </section>`;
     return layout({ title: "Over de agenda", path: "/over/", section: "over", body, schema: { type: "AboutPage", kruimels: [["Over de agenda", "/over/"]], over: { "@id": ORG_ID } } });
   }
