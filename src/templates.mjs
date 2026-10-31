@@ -138,7 +138,6 @@ export function createTemplates(db) {
   }
   const showLink = (vid, tekst) => voorstellingPad.has(vid) ? `<a href="${voorstellingPad.get(vid)}">${tekst}</a>` : tekst;
 
-
   // Vaste links onderaan elke pagina; een artiest of theater zonder aankomende voorstellingen valt weg.
   let footerHtml = null;
   const footerLinks = () => footerHtml ??= maakFooterLinks();
@@ -656,6 +655,15 @@ ${zalen ? `
   </div>
   ${strip("strip-zalen", "Theaters met de meeste voorstellingen", zalen)}
 </section>` : ""}
+<section class="block wrap kies-blok" aria-labelledby="maand-title">
+  <div class="wall-head"><h2 id="maand-title">Voorstellingen per maand</h2><p><a href="/agenda/">De volledige agenda</a></p></div>
+  ${maandNav(null)}
+</section>
+
+<section class="block wrap kies-blok" aria-labelledby="plaats-title">
+  <div class="wall-head"><h2 id="plaats-title">Zoek in de buurt</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
+  ${plaatsNav()}
+</section>
 ${clubs.length ? `
 <section class="wall wall-zalen" aria-labelledby="clubs-title">
   <div class="wrap wall-head">
@@ -682,15 +690,6 @@ ${GENRE_PAGINAS.length ? `
 </section>` : ""}
 
 ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` : ""}
-<section class="block wrap kies-blok" aria-labelledby="maand-title">
-  <div class="wall-head"><h2 id="maand-title">Voorstellingen per maand</h2><p><a href="/agenda/">De volledige agenda</a></p></div>
-  ${maandNav(null)}
-</section>
-
-<section class="block wrap kies-blok" aria-labelledby="plaats-title">
-  <div class="wall-head"><h2 id="plaats-title">Zoek in de buurt</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
-  ${plaatsNav()}
-</section>
 
 <section class="block wrap" aria-labelledby="over-titel">
   <div class="seo-tekst prose over-blok">

@@ -639,6 +639,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .kies-blok { padding-block: 44px 0; }
 .kies-blok .wall-head { margin-bottom: 12px; }
 .kies-blok .month-nav { margin-bottom: 0; }
+.kies-blok + .wall-zalen { padding-top: 36px; }
 
 .month-nav { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 20px; scrollbar-width: thin; }
 .month-nav a {
