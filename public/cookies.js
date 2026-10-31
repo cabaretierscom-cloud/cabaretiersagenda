@@ -17,6 +17,20 @@
     s.async = true;
     s.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`;
     document.head.appendChild(s);
+    // Klikmeting: welke Tickets-knop (theater, artiest, voorstelling) iemand gebruikt, voor de
+    // rapportage aan theaters en artiesten. De gegevens staan als data-* op de knop.
+    document.addEventListener("click", (e) => {
+      const a = e.target.closest?.("a.tickets");
+      if (!a || !window.gtag) return;
+      const d = a.dataset;
+      let domein = "";
+      try { domein = new URL(a.href).hostname; } catch { /* ongeldige link */ }
+      window.gtag("event", "ticket_klik", {
+        theater: d.theater, plaats: d.plaats, artiest: d.artiest || d.voorstelling, voorstelling: d.voorstelling,
+        genre: d.genre, speeldatum: d.speeldatum, knop: a.classList.contains("ghost") ? "meer info" : "tickets",
+        pagina_type: location.pathname.split("/")[1] || "home", link_domain: domein,
+      });
+    }, true);
   }
 
   // Na "Liever niet" de cookies van Analytics weghalen (voor wie eerder akkoord gaf).

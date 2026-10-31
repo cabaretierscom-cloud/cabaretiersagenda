@@ -90,6 +90,18 @@ function afwisselend(items, kleurVan, { schuiven = true } = {}) {
   return uit;
 }
 
+// Een link naar een theater of artiest met een herkenbaar label, zodat zij in hun eigen statistieken
+// zien dat de bezoeker via Cabaretiers.com komt. Een link die al utm-labels heeft, blijft zoals hij is.
+export function metUtm(url) {
+  try {
+    const u = new URL(url);
+    if (!/^https?:$/.test(u.protocol) || u.searchParams.has("utm_source")) return url;
+    u.searchParams.set("utm_source", "cabaretiers.com");
+    u.searchParams.set("utm_medium", "referral");
+    return u.toString();
+  } catch { return url; }
+}
+
 export function createTemplates(db) {
   const { artiesten: A, theaters: T, voorstellingen: V } = db;
   // Festivalnamen staan ook als "artiest" in de gegevens (om voorstellingen aan het festival te koppelen,
@@ -234,10 +246,16 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   // Knop naar de speellijst van de zaal (de bron), waar je kaarten koopt. Opent in een nieuw tabblad.
   // Uitverkocht of geannuleerd: geen "Tickets", maar een omlijnde knop "Meer info".
+  // De link krijgt utm_source/utm_medium (het theater ziet dan dat de bezoeker van ons komt) en de
+  // knop de gegevens voor de klikmeting in Google Analytics (cookies.js, alleen na "Akkoord").
+  const ticketData = (g) => {
+    const v = V.get(g.voorstelling), t = T.get(g.theater);
+    return ` data-theater="${esc(t.naam)}" data-plaats="${esc(t.plaats)}" data-artiest="${esc(v.artiesten.map((a) => A.get(a).naam).join(" & "))}" data-voorstelling="${esc(v.titel)}" data-genre="${esc(v.genre)}" data-speeldatum="${g.datum}"`;
+  };
   function ticketKnop(g) {
     const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
     const wie = artistNames(g.voorstelling) || V.get(g.voorstelling).titel;
-    return `<a class="btn tickets${kopen ? "" : " ghost"}" href="${esc(g.bron)}" target="_blank" rel="noopener nofollow"><span class="ticket-tekst">${kopen ? "Tickets" : "Meer info"}</span><span class="ticket-strook">${ICON.extern}</span><span class="visually-hidden">: ${esc(wie)} op ${fmt.full(g.datum)} in ${esc(T.get(g.theater).naam)} (externe website, opent in een nieuw tabblad)</span></a>`;
+    return `<a class="btn tickets${kopen ? "" : " ghost"}" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow"${ticketData(g)}><span class="ticket-tekst">${kopen ? "Tickets" : "Meer info"}</span><span class="ticket-strook">${ICON.extern}</span><span class="visually-hidden">: ${esc(wie)} op ${fmt.full(g.datum)} in ${esc(T.get(g.theater).naam)} (externe website, opent in een nieuw tabblad)</span></a>`;
   }
 
   function statusLabel(g) {
@@ -702,7 +720,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         vs.titel, echteTitel(g.voorstelling) || "", voorstellingPad.get(g.voorstelling) || "", vs.genre, ink(leadInk(g.voorstelling)),
       ]);
       const zn = nr(zi, z, g.theater, () => [t.id, t.naam, t.plaats, plaatsId(t.plaats), LANDEN[t.land]]);
-      return [g.datum, g.tijd || "", vn, zn, g.status, g.soort || "", g.bron, g.opmerking || ""];
+      return [g.datum, g.tijd || "", vn, zn, g.status, g.soort || "", metUtm(g.bron), g.opmerking || ""];
     });
     return { iconen: { extern: ICON.extern, doubt: ICON.doubt, sold: ICON.sold }, statussen: STATUSSEN, a, z, v, r: rijen };
   }
@@ -2010,7 +2028,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div class="prose">
         <p>Cabaretiers.com is een agenda: je hoeft geen account te maken en we vragen je geen gegevens. Wat we wel doen, staat hieronder.</p>
         <h2 id="analytics">Bezoekersstatistieken (Google Analytics)</h2>
-        <p>Alleen als je in de cookiemelding op <em>Akkoord</em> klikt, meten we met Google Analytics hoe de site wordt gebruikt: welke pagina's je bekijkt, via welke site of zoekterm je binnenkomt, het soort apparaat en browser, en ongeveer in welk land of welke plaats je bent. Google Analytics zet daarvoor cookies (<code>_ga</code>). Klik je op <em>Liever niet</em>, dan laden we Google Analytics niet en worden er geen cookies gezet.</p>
+        <p>Alleen als je in de cookiemelding op <em>Akkoord</em> klikt, meten we met Google Analytics hoe de site wordt gebruikt: welke pagina's je bekijkt, via welke site of zoekterm je binnenkomt, het soort apparaat en browser, en ongeveer in welk land of welke plaats je bent. We tellen ook op welke knop <em>Tickets</em> of <em>Meer info</em> je klikt (bij welk theater, welke artiest en welke voorstelling), zodat we theaters en artiesten kunnen laten zien hoeveel bezoekers we naar hun kaartverkoop sturen. Google Analytics zet daarvoor cookies (<code>_ga</code>). Klik je op <em>Liever niet</em>, dan laden we Google Analytics niet en worden er geen cookies gezet.</p>
         <p>We gebruiken deze cijfers alleen om de agenda te verbeteren en om te laten zien hoeveel mensen de site bezoeken, niet voor advertenties. Google bewaart de gegevens maximaal 14 maanden. Volgens Google slaat Google Analytics geen IP-adressen op. Google kan gegevens verwerken in de Verenigde Staten, onder het EU-VS-gegevensprivacykader.</p>
         <p><button type="button" class="knop-secundair" data-cookies-wijzig hidden>Cookiekeuze wijzigen</button></p>
         <h2 id="opslag">Wat er in je browser blijft staan</h2>
@@ -2018,7 +2036,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <h2 id="video">Video's</h2>
         <p>Op sommige artiestpagina's staan video's van YouTube. Die laden pas als je erop klikt; dan maakt je browser verbinding met YouTube (in de privacyvriendelijke modus zonder cookies vooraf) en gelden de privacyregels van Google.</p>
         <h2 id="links">Links naar theaters en sociale media</h2>
-        <p>Via <em>Tickets</em> ga je naar de site van het theater of de artiest, en via de iconen onderaan naar onze pagina's op Instagram, Facebook, YouTube en TikTok. Daar gelden hun eigen privacyregels.</p>
+        <p>Via <em>Tickets</em> ga je naar de site van het theater of de artiest, en via de iconen onderaan naar onze pagina's op Instagram, Facebook, YouTube en TikTok. Daar gelden hun eigen privacyregels. Aan de link naar het theater voegen we een label toe (<code>utm_source=cabaretiers.com</code>), zodat het theater in zijn eigen statistieken ziet dat je via Cabaretiers.com komt. Daarmee geven wij geen gegevens over jou door.</p>
         <h2 id="mail">Mail</h2>
         <p>Mail je ons, dan gebruiken we je adres alleen om je te antwoorden.</p>
         <h2 id="rechten">Vragen</h2>
