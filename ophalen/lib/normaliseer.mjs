@@ -54,8 +54,12 @@ const REGELS = [
   ["kleinkunst", /kleinkunst/],
   // Toneel met humor ("Toneel | Komedie", "Toneel, humor") is theaterkomedie; gewoon toneel niet.
   ["theaterkomedie", /toneel.*\b(humor|komedie|comedy|blijspel|klucht)|\b(humor|komedie|comedy|blijspel|klucht).*toneel/],
-  // "Cabaret & comedy" en "Cabaret & komedie" zijn cabaret; alleen "comedy" zonder cabaret is stand-up.
-  ["cabaret", /cabaret|humor/],
+  // Een vaag label dat cabaret en comedy niet uit elkaar houdt ("Cabaret & comedy", "Humor") geeft
+  // "comedy": wel humor, maar geen keuze tussen cabaret en stand-up. Zo'n stem telt bij het genre van de
+  // voorstelling niet mee (samenvoegen.mjs, stap 2d); een nieuwe voorstelling wordt dan eerst cabaret.
+  ["comedy", /cabaret.*\b(comedy|humor)\b|\b(comedy|humor)\b.*cabaret|\bhumor\b/],
+  // "Cabaret & komedie" is cabaret; alleen "comedy" zonder cabaret is stand-up.
+  ["cabaret", /cabaret/],
   // Komedie, blijspel en klucht. "De Kleine Komedie" is een zaalnaam, geen genre.
   ["theaterkomedie", /(?<!kleine )komedie|blijspel|klucht/],
   ["stand-up", /comedy/],

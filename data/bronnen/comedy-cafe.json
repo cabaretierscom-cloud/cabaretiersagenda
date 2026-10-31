@@ -1,7 +1,7 @@
 {
   "bron": "comedy-cafe",
   "naam": "Comedy Café Amsterdam",
-  "opgehaald": "2026-10-25",
+  "opgehaald": "2026-10-30",
   "theaters": [
     {
       "id": "comedy-cafe-amsterdam",
@@ -21,76 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "southend-comedy-club",
-      "artiesten": [],
-      "titel": "Roel C. Verburg",
-      "genre": "stand-up",
-      "datum": "2026-10-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/roel-c-verburg-2/"
-    },
-    {
-      "theater": "comedy-cafe-amsterdam",
-      "artiesten": [],
-      "titel": "Hassan Phills",
-      "genre": "stand-up",
-      "datum": "2026-10-25",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/hassan-phills/"
-    },
-    {
-      "theater": "comedy-cafe-amsterdam",
-      "artiesten": [],
-      "titel": "ΤΟΣΟ ΟΣΟ | ΑΜΣΤΕΡΝΤΑΜ",
-      "genre": "stand-up",
-      "datum": "2026-10-27",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/%cf%84%ce%bf%cf%83%ce%bf-%ce%bf%cf%83%ce%bf-%ce%b1%ce%bc%cf%83%cf%84%ce%b5%cf%81%ce%bd%cf%84%ce%b1%ce%bc/"
-    },
-    {
-      "theater": "comedy-cafe-amsterdam",
-      "artiesten": [
-        "Fitz Gessler"
-      ],
-      "titel": "KIWI COMEDIAN IN THE NETHERLANDS",
-      "genre": "stand-up",
-      "datum": "2026-10-28",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/fitz-gessler-kiwi-comedian-in-the-netherlands/"
-    },
-    {
-      "theater": "southend-comedy-club",
-      "artiesten": [
-        "Esther van der Voort"
-      ],
-      "titel": "Mama probeert ook maar wat",
-      "genre": "stand-up",
-      "datum": "2026-10-28",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/esther-van-der-voort-mama-probeert-ook-maar-wat-southend-comedy-club-10/"
-    },
-    {
-      "theater": "comedy-cafe-amsterdam",
-      "artiesten": [],
-      "titel": "Comedy Night in English",
-      "genre": "stand-up",
-      "datum": "2026-10-29",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/comedy-night-in-english-10/"
-    },
     {
       "theater": "comedy-cafe-amsterdam",
       "artiesten": [],
@@ -134,6 +64,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedycafe.nl/agenda/cocktails-comedy-13/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Pradeep Kumar",
+      "genre": "stand-up",
+      "datum": "2026-10-31",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/pradeep-kumar/"
     },
     {
       "theater": "comedy-cafe-amsterdam",
@@ -283,17 +224,6 @@
     {
       "theater": "comedy-cafe-amsterdam",
       "artiesten": [],
-      "titel": "Damian Skóra w programie “Pan Komentarz” + Polska Komentująca na żywo!",
-      "genre": "stand-up",
-      "datum": "2026-11-08",
-      "tijd": "17:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/damian-skora-w-programie-pan-komentarz-polska-komentujaca-na-zywo/"
-    },
-    {
-      "theater": "comedy-cafe-amsterdam",
-      "artiesten": [],
       "titel": "Dan The Stranger",
       "genre": "stand-up",
       "datum": "2026-11-08",
@@ -316,13 +246,13 @@
     {
       "theater": "comedy-cafe-amsterdam",
       "artiesten": [],
-      "titel": "PowerPints",
-      "genre": "stand-up",
+      "titel": "Open Mic (EN)",
+      "genre": "open-mic",
       "datum": "2026-11-11",
       "tijd": "20:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.comedycafe.nl/agenda/powerpints-2/"
+      "bron": "https://www.comedycafe.nl/agenda/open-mic-en-2/"
     },
     {
       "theater": "comedy-cafe-amsterdam",
@@ -476,6 +406,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedycafe.nl/agenda/rogier-bak-back-to-the-future/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [
+        "Dam Qui Rit Comedy Club"
+      ],
+      "titel": "French night",
+      "genre": "stand-up",
+      "datum": "2026-11-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/dam-qui-rit-comedy-club-french-night-4/"
     },
     {
       "theater": "comedy-cafe-amsterdam",
@@ -664,6 +607,17 @@
       "bron": "https://www.comedycafe.nl/agenda/esther-van-der-voort-mama-probeert-ook-maar-wat-southend-comedy-club-8/"
     },
     {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [],
+      "titel": "Manpreet Singh",
+      "genre": "stand-up",
+      "datum": "2026-11-29",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/manpreet-singh/"
+    },
+    {
       "theater": "southend-comedy-club",
       "artiesten": [],
       "titel": "Georgi Kyuchukov and Dimitar Donski Stand-Up",
@@ -765,6 +719,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedycafe.nl/agenda/nour-hajjar-live-in-amsterdam-dawa-ahmar/"
+    },
+    {
+      "theater": "comedy-cafe-amsterdam",
+      "artiesten": [
+        "Matt & Tamas"
+      ],
+      "titel": "Laughs in motion",
+      "genre": "stand-up",
+      "datum": "2026-12-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/matt-tamas-laughs-in-motion/"
     },
     {
       "theater": "comedy-cafe-amsterdam",
@@ -1179,6 +1146,19 @@
     },
     {
       "theater": "southend-comedy-club",
+      "artiesten": [
+        "KEEP IT SAMPLE"
+      ],
+      "titel": "Throwback R&B and Hiphop Quiz",
+      "genre": "stand-up",
+      "datum": "2027-01-31",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/keep-it-sample-throwback-rb-and-hiphop-quiz-2/"
+    },
+    {
+      "theater": "southend-comedy-club",
       "artiesten": [],
       "titel": "Roel C. Verburg",
       "genre": "stand-up",
@@ -1187,6 +1167,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedycafe.nl/agenda/roel-c-verburg-5/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Sasha Dolgopolov",
+      "genre": "stand-up",
+      "datum": "2027-02-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/sasha-dolgopolov/"
     },
     {
       "theater": "comedy-cafe-amsterdam",
@@ -1367,6 +1358,17 @@
       "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-06-03-2027/"
     },
     {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Roel C. Verburg",
+      "genre": "stand-up",
+      "datum": "2027-03-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/roel-c-verburg-7/"
+    },
+    {
       "theater": "comedy-cafe-amsterdam",
       "artiesten": [],
       "titel": "Cocktails & Comedy",
@@ -1466,6 +1468,17 @@
       "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-27-03-2027/"
     },
     {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Roel C. Verburg",
+      "genre": "stand-up",
+      "datum": "2027-03-31",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/roel-c-verburg-6/"
+    },
+    {
       "theater": "comedy-cafe-amsterdam",
       "artiesten": [],
       "titel": "Cocktails & Comedy",
@@ -1530,6 +1543,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedycafe.nl/agenda/masters-of-comedy-10-04-2027/"
+    },
+    {
+      "theater": "southend-comedy-club",
+      "artiesten": [],
+      "titel": "Roel C. Verburg",
+      "genre": "stand-up",
+      "datum": "2027-04-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedycafe.nl/agenda/roel-c-verburg-8/"
     },
     {
       "theater": "comedy-cafe-amsterdam",

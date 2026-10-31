@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-10-30",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -29,19 +29,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-walhalla",
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease van de Dood",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/david-linszen-striptease-van-de-dood/"
-    },
     {
       "theater": "theater-walhalla",
       "artiesten": [
@@ -99,7 +86,7 @@
       "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/remy-evers-graag-gedaan-leesvoorstelling/"
     },
@@ -461,7 +448,7 @@
       "genre": "cabaret",
       "datum": "2027-01-30",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/andries-tunru-en-stefan-hendrikx-beperkt-houdbaar/"
     },
@@ -524,7 +511,7 @@
       "genre": "cabaret",
       "datum": "2027-02-10",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-11/"
     },
@@ -537,7 +524,7 @@
       "genre": "cabaret",
       "datum": "2027-02-11",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/groninger-studenten-cabaret-festival-finalistentour/"
     },
@@ -589,7 +576,7 @@
       "genre": "cabaret",
       "datum": "2027-02-18",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/gavin-reijnders-jazzebelle/"
     },
@@ -676,7 +663,7 @@
       "genre": "kleinkunst",
       "datum": "2027-03-04",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-9/"
     },
@@ -702,7 +689,7 @@
       "genre": "cabaret",
       "datum": "2027-03-10",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/joosen-en-de-jager-niks-aan-het-handje/"
     },

@@ -292,9 +292,15 @@ function stukOpOrde(r, ruweArtiest) {
 
 // ---------- Samenvoegen per bron ----------
 
-// Hoe de zalen een voorstelling labelen; theaterkomedie alleen als de meeste zalen dat zeggen
-// (Ratatatata! wel, "Alles is comedy" van Najib & Roué niet, ook al noemt één zaal het toneel).
+// Hoe de zalen een voorstelling labelen: voorstelling-id -> { genre: Set(theater-ids) }. Elke zaal telt
+// één keer, hoe vaak de voorstelling daar ook speelt; het genre dat de meeste zalen noemen, wint (stap 2d).
+// Speellijsten tellen niet mee: die noemen geen genre (altijd "cabaret").
 const genreStemmen = new Map();
+const stem = (vId, genre, theaterId) => {
+  if (!genreStemmen.has(vId)) genreStemmen.set(vId, {});
+  const st = genreStemmen.get(vId);
+  (st[genre] ||= new Set()).add(theaterId);
+};
 
 const stats = [], bronStats = [];
 // Recensies per voorstelling uit alle bronnen: voorstelling-id -> Map(bron|medium -> recensie).
@@ -368,8 +374,7 @@ for (const f of bronFiles) {
     }
     const aIds = (r.artiesten || []).map((n) => zorgVoorArtiest(n));
     const vId = zorgVoorVoorstelling(r, aIds, theater.id);
-    if (!genreStemmen.has(vId)) genreStemmen.set(vId, {});
-    genreStemmen.get(vId)[r.genre] = (genreStemmen.get(vId)[r.genre] || 0) + 1;
+    if (bestand.soort !== "speellijst" && GENRES[r.genre]) stem(vId, r.genre, theater.id);
     for (const ruw of bestand.recensies?.[r.bron] || []) {
       const rc = recensie(ruw.over ? `${ruw.medium} over ${ruw.over}` : ruw.medium, ruw.citaat, ruw.sterren);
       if (!rc) continue;
@@ -529,9 +534,7 @@ if (Object.keys(ZAAL_SAMEN).length) {
       if (v.artiesten.length && hoofd.artiesten.length && !v.artiesten.some((a) => hoofd.artiesten.includes(a))) continue;
       hoofd.artiesten = [...new Set([...hoofd.artiesten, ...v.artiesten])];
       for (const sd of speeldata) if (sd.voorstelling === v.id) sd.voorstelling = hoofd.id;
-      const st = genreStemmen.get(hoofd.id) || {};
-      for (const [g, n] of Object.entries(genreStemmen.get(v.id) || {})) st[g] = (st[g] || 0) + n;
-      genreStemmen.set(hoofd.id, st);
+      for (const [g, zalen] of Object.entries(genreStemmen.get(v.id) || {})) for (const t of zalen) stem(hoofd.id, g, t);
     }
     if (hoofd.artiesten.length) delete hoofd.theater;
   }
@@ -544,12 +547,16 @@ if (Object.keys(ZAAL_SAMEN).length) {
   });
 }
 
-// 2d. Genre van stukken volgens de meeste zalen; een stuk zonder artiest hoort bij de zaal van zijn eerste speeldatum.
+// 2d. Genre volgens de meeste zalen (zie genreStemmen). Bij een gelijke stand blijft het huidige genre,
+// anders gaat theaterkomedie voor. Zonder stemmen (alleen via speellijsten) blijft het genre zoals het was.
+// Een stuk zonder artiest hoort bij de zaal van zijn eerste speeldatum.
+let genreGewijzigd = 0;
 for (const v of voorstellingen) {
   const st = genreStemmen.get(v.id);
-  if (st && (st.theaterkomedie || v.genre === "theaterkomedie")) {
-    const [beste] = Object.entries(st).sort((a, b) => b[1] - a[1] || (a[0] === "theaterkomedie" ? -1 : 1));
-    if (beste[0] === "theaterkomedie" || v.genre === "theaterkomedie") v.genre = beste[0];
+  if (st && Object.keys(st).length) {
+    const voorkeur = (g) => (g === v.genre ? 2 : g === "theaterkomedie" ? 1 : 0);
+    const [beste] = Object.entries(st).map(([g, zalen]) => [g, zalen.size]).sort((a, b) => b[1] - a[1] || voorkeur(b[0]) - voorkeur(a[0]) || a[0].localeCompare(b[0]));
+    if (beste[0] !== v.genre) { v.genre = beste[0]; genreGewijzigd++; }
   }
   if (!v.artiesten.length && !theaterOpId.has(v.theater)) v.theater = speeldata.find((s) => s.voorstelling === v.id)?.theater;
 }
@@ -601,6 +608,7 @@ write("te-controleren.json", controleren);
 
 for (const s of stats) console.log(s);
 if (vervang.size || naarVoorstelling.size || verwijderd.artiesten || verwijderd.voorstellingen) {
+  console.log(`Genre volgens de meeste zalen: ${genreGewijzigd} voorstellingen aangepast.`);
   console.log(`Opgeruimd: ${vervang.size} artiesten samengevoegd, ${naarVoorstelling.size} voorstellingen samengevoegd, ${verwijderd.artiesten} artiesten en ${verwijderd.voorstellingen} voorstellingen zonder speeldata verwijderd.`);
 }
 console.log(`Totaal: ${speeldata.length} speeldata, ${artiesten.length} artiesten, ${theaters.length} theaters, ${voorstellingen.length} voorstellingen.`);

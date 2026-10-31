@@ -603,7 +603,7 @@
       "genre": "stand-up",
       "datum": "2026-11-10",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.facebook.com/events/2195910408025138/"
     },
@@ -999,7 +999,7 @@
       "genre": "stand-up",
       "datum": "2026-11-17",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.luxfestival.be/lux-comedy"
     },
@@ -1519,7 +1519,7 @@
       "genre": "stand-up",
       "datum": "2026-12-01",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.studiotstalleke.be/swaree-akoestiek"
     },
@@ -4570,6 +4570,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "GC De Bunder",
+        "plaats": "Moorslede",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Hans Cools"
+      ],
+      "titel": "Zolang de voorraad strekt",
+      "genre": "stand-up",
+      "datum": "2027-02-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedyshows.be/kalender/hans-cools/2027-02-13/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "Theatercentrum",
         "plaats": "Zwevegem",
         "land": "BE",
@@ -4589,7 +4608,7 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "GC Den bunder",
+        "naam": "GC De Bunder",
         "plaats": "Moorslede",
         "land": "BE",
         "website": null
@@ -9128,5 +9147,13 @@
       "bron": "https://www.comedyshows.be/kalender/hans-cools/2027-10-14/"
     }
   ],
-  "recensies": {}
+  "recensies": {
+    "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jade-mintjens-bedankt-om-te-komen": [
+      {
+        "medium": "De Morgen",
+        "sterren": 4,
+        "citaat": "Originele verteller die niet bij de geijkte comedy-onderwerpen blijft hangen."
+      }
+    ]
+  }
 }
