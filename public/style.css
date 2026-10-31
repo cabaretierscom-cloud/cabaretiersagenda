@@ -267,14 +267,14 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-sterren {
   position: absolute; left: 14px; top: 14px; display: inline-flex; align-items: baseline; gap: 6px;
   padding: 4px 10px 5px; border-radius: 999px; background: var(--bg); color: var(--fg);
-  font-size: 1.05rem; letter-spacing: .06em; line-height: 1;
+  font-size: 1.12rem; letter-spacing: .06em; line-height: 1;
 }
 .poster-zaal .poster-beeld img { object-position: 50% 50%; }
 .poster-zaal .where { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
 .wall-zalen { padding-top: 20px; }
 /* Zit het gezicht bovenin, dan komen de sterren onderaan het beeld. */
 .poster-sterren.onder { top: auto; bottom: 18px; }
-.poster-sterren small { font-size: .78rem; font-weight: 600; letter-spacing: 0; }
+.poster-sterren small { font-size: .85rem; font-weight: 600; letter-spacing: 0; }
 .poster-vlak { position: relative; isolation: isolate; flex: 0 0 auto; min-height: calc(100% - var(--naad)); display: flex; border-radius: 0 0 18px 18px; transition: box-shadow .28s ease; }
 /* Schaduw bij aanwijzen alleen onder het kleurvlak, zodat er geen rand om de knipgaten komt.
    Daarvoor mag de kaart niet meer bijsnijden (overflow); de foto en de stippen hebben eigen ronde hoeken. */
@@ -302,10 +302,10 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 }
 .poster-foto .ftitel.long { font-size: 1.9rem; }
 .poster-foto .ftitel.xlong { font-size: 1.3rem; }
-.poster-foto .fartiest { display: block; font-weight: 700; font-size: 1.05rem; line-height: 1.2; margin-top: 6px; text-wrap: balance; }
-.poster-foto .where { display: block; font-size: .85rem; line-height: 1.35; margin: 8px 0 10px; }
-.poster-foto .where .wanneer { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; opacity: .8; }
-.poster-foto .tag { font-size: .78rem; padding: 2px 9px; }
+.poster-foto .fartiest { display: block; font-weight: 700; font-size: 1.15rem; line-height: 1.2; margin-top: 6px; text-wrap: balance; }
+.poster-foto .where { display: block; font-size: .95rem; line-height: 1.35; margin: 8px 0 10px; }
+.poster-foto .where .wanneer { display: block; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; opacity: .8; }
+.poster-foto .tag { font-size: .85rem; padding: 2px 9px; }
 .poster-foto .tag { align-self: flex-start; margin-top: auto; }
 @media (hover: hover) and (pointer: fine) {
   .poster-foto:hover .poster-beeld img, .poster-foto:focus-visible .poster-beeld img { transform: scale(1.04); }
@@ -331,9 +331,10 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   .poster-foto .ftitel { font-size: 1.95rem; margin-top: 0; }
   .poster-foto .ftitel.long { font-size: 1.6rem; }
   .poster-foto .ftitel.xlong { font-size: 1.1rem; }
-  .poster-foto .fartiest { font-size: .95rem; margin-top: 4px; }
-  .poster-foto .where { font-size: .76rem; margin-bottom: 8px; }
-  .poster-sterren { font-size: .9rem; left: 10px; top: 10px; }
+  .poster-foto .fartiest { font-size: 1.05rem; margin-top: 4px; }
+  .poster-foto .where { font-size: .86rem; margin-bottom: 8px; }
+  .poster-sterren { font-size: .98rem; left: 10px; top: 10px; }
+  .poster-foto .tag { font-size: .8rem; }
   .poster-stub { flex-basis: 20px; }
   .wall { padding-top: 12px; }
   .wall-head { flex-wrap: nowrap; align-items: baseline; }
@@ -482,12 +483,13 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .strip .artist-card h3 { font-size: 2.05rem; }
 .strip .artist-card h3.lang { font-size: 1.65rem; }
 .strip .artist-card h3.xlang { font-size: 1.3rem; }
+.strip .artist-card p { font-size: 1.02rem; }
 @media (max-width: 600px) {
   .strip .artist-card { flex-basis: 165px; min-height: 175px; padding: 14px; }
   .strip .artist-card h3 { font-size: 1.5rem; }
   .strip .artist-card h3.lang { font-size: 1.25rem; }
   .strip .artist-card h3.xlang { font-size: 1.05rem; }
-  .strip .artist-card p { font-size: .82rem; }
+  .strip .artist-card p { font-size: .9rem; }
 }
 /* /festivals/: per soort een kop; op een telefoon twee kaarten naast elkaar. */
 .festival-kop { line-height: 1.05; }
