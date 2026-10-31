@@ -1,7 +1,7 @@
 {
   "bron": "nijmegen",
   "naam": "Stadsschouwburg & De Vereeniging Nijmegen",
-  "opgehaald": "2026-10-30",
+  "opgehaald": "2026-10-31",
   "theaters": [
     {
       "id": "stadsschouwburg-nijmegen",
@@ -46,19 +46,6 @@
       "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/pieter-derks-7p3k"
-    },
-    {
-      "theater": "stadsschouwburg-nijmegen",
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-12-03",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/david-linszen-skw6"
     },
     {
       "theater": "stadsschouwburg-nijmegen",
@@ -392,18 +379,6 @@
         "medium": "NRC",
         "sterren": 4,
         "citaat": "Zo bouwt hij met elke anekdote aan een kwetsbaar zelfportret, van een man die zijn gevoelens niet onder controle heeft, maar daar toch mee om weet te gaan. [...] Wat een mooi, onverwacht ontroerend slot."
-      }
-    ],
-    "https://www.stadsschouwburgendevereeniging.nl/programma/david-linszen-skw6": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Puntje-van-je-stoelcomedy met een zeldzame eigenheid: David Linszens debuut is echt heel goed."
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "In zijn cabaretdebuut ‘Striptease Van De Dood’ schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal. Doeltreffend toont hij dat de realiteit leuker fantaseren een verdedigingsmechanisme is met voor- én nadelen."
       }
     ],
     "https://www.stadsschouwburgendevereeniging.nl/programma/yentl-de-boer-5j23": [

@@ -1,7 +1,7 @@
 {
   "bron": "amai",
   "naam": "Amai Comedy Club",
-  "opgehaald": "2026-10-30",
+  "opgehaald": "2026-10-31",
   "theaters": [
     {
       "id": "amai-comedy-club-gent",
@@ -13,28 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "amai-comedy-club-gent",
-      "artiesten": [],
-      "titel": "Comedy Showcase",
-      "genre": "stand-up",
-      "datum": "2026-10-30",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.amaicomedyclub.com/event-details/comedy-showcase-nl-2026-10-30-20-30"
-    },
-    {
-      "theater": "amai-comedy-club-gent",
-      "artiesten": [],
-      "titel": "Comedy Open Mic",
-      "genre": "open-mic",
-      "datum": "2026-10-30",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.amaicomedyclub.com/event-details/comedy-open-mic-nl-2026-10-30-20-30"
-    },
     {
       "theater": "amai-comedy-club-gent",
       "artiesten": [],
@@ -210,6 +188,28 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.amaicomedyclub.com/event-details/brightclub-nerdland-amai-edition"
+    },
+    {
+      "theater": "amai-comedy-club-gent",
+      "artiesten": [],
+      "titel": "Palaver Live",
+      "genre": "stand-up",
+      "datum": "2026-11-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amaicomedyclub.com/event-details/palaver-live-2026-11-27-20-00"
+    },
+    {
+      "theater": "amai-comedy-club-gent",
+      "artiesten": [],
+      "titel": "Cabaret Carrousel",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amaicomedyclub.com/event-details/cabaret-carrousel-nl-2026-11-27-20-30"
     }
   ],
   "recensies": {}

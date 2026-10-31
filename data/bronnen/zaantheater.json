@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-10-30",
+  "opgehaald": "2026-10-31",
   "theaters": [
     {
       "id": "zaantheater",
@@ -23,7 +23,7 @@
       "datum": "2027-06-17",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/andries-tunru/"
     },
     {
@@ -36,7 +36,7 @@
       "datum": "2026-12-19",
       "tijd": "20:30",
       "status": "uitverkocht",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ayoub-kharkhach/"
     },
     {
@@ -49,7 +49,7 @@
       "datum": "2026-12-01",
       "tijd": "14:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/beth-flo/"
     },
     {
@@ -62,7 +62,7 @@
       "datum": "2027-02-17",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/blauwe-vinkjes/"
     },
     {
@@ -75,7 +75,7 @@
       "datum": "2027-02-06",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/bob-koomen/"
     },
     {
@@ -88,7 +88,7 @@
       "datum": "2026-11-28",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/boban-benjamin-braspenning/"
     },
     {
@@ -101,7 +101,7 @@
       "datum": "2027-03-25",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/daan-van-der-hoeven/"
     },
     {
@@ -114,7 +114,7 @@
       "datum": "2027-01-02",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/de-cabaret-club/"
     },
     {
@@ -127,7 +127,7 @@
       "datum": "2027-06-18",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/deng-boy/"
     },
     {
@@ -140,7 +140,7 @@
       "datum": "2026-12-17",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/dolf-jansen/"
     },
     {
@@ -153,7 +153,7 @@
       "datum": "2027-05-28",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/eigenlijk/"
     },
     {
@@ -179,7 +179,7 @@
       "datum": "2027-01-13",
       "tijd": "20:00",
       "status": "uitverkocht",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/esther-van-der-voort/"
     },
     {
@@ -192,7 +192,7 @@
       "datum": "2027-06-10",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/fabian-franciscus/"
     },
     {
@@ -205,7 +205,7 @@
       "datum": "2027-04-08",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/freek-de-jonge/"
     },
     {
@@ -218,7 +218,7 @@
       "datum": "2027-03-05",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/glodi-lugungu/"
     },
     {
@@ -237,19 +237,6 @@
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Jandino"
-      ],
-      "titel": "De Grote Jubileumshow",
-      "genre": "cabaret",
-      "datum": "2027-02-13",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jandino/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
         "Janneke de Bijl"
       ],
       "titel": "Pluk eventueel de dag",
@@ -257,7 +244,7 @@
       "datum": "2026-11-06",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/janneke-de-bijl/"
     },
     {
@@ -283,7 +270,7 @@
       "datum": "2027-04-29",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jeannine-la-rose/"
     },
     {
@@ -296,7 +283,7 @@
       "datum": "2027-02-03",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jorgen-raymann/"
     },
     {
@@ -335,7 +322,7 @@
       "datum": "2026-11-27",
       "tijd": "20:00",
       "status": "uitverkocht",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/"
     },
     {
@@ -348,7 +335,7 @@
       "datum": "2027-04-16",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kim-karssen/"
     },
     {
@@ -361,7 +348,7 @@
       "datum": "2027-05-08",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/klaas-van-der-eerden/"
     },
     {
@@ -374,7 +361,7 @@
       "datum": "2027-02-20",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/lebbis/"
     },
     {
@@ -387,7 +374,7 @@
       "datum": "2026-11-07",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/lovella-telesford/"
     },
     {
@@ -400,7 +387,7 @@
       "datum": "2027-01-08",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/luuk-ransijn/"
     },
     {
@@ -413,7 +400,7 @@
       "datum": "2027-05-14",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/luuk-weggemans/"
     },
     {
@@ -426,7 +413,7 @@
       "datum": "2026-11-14",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/marjolijn-van-kooten/"
     },
     {
@@ -439,7 +426,7 @@
       "datum": "2027-05-19",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/martijn-koning/"
     },
     {
@@ -465,7 +452,7 @@
       "datum": "2027-03-05",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/micha-wertheim/"
     },
     {
@@ -478,7 +465,7 @@
       "datum": "2027-03-12",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/nabil/"
     },
     {
@@ -491,7 +478,7 @@
       "datum": "2026-11-25",
       "tijd": "20:00",
       "status": "uitverkocht",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/najib-amhali-roue-verveer/"
     },
     {
@@ -504,7 +491,7 @@
       "datum": "2027-02-17",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/nienke-plas/"
     },
     {
@@ -530,7 +517,7 @@
       "datum": "2026-11-27",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/paul-haenen/"
     },
     {
@@ -543,7 +530,7 @@
       "datum": "2027-04-03",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pieter-jouke/"
     },
     {
@@ -569,7 +556,7 @@
       "datum": "2027-05-01",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rayen-panday/"
     },
     {
@@ -582,7 +569,7 @@
       "datum": "2026-12-27",
       "tijd": "15:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rayen-panday-friends/"
     },
     {
@@ -595,7 +582,7 @@
       "datum": "2027-01-21",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/remko-vrijdag/"
     },
     {
@@ -621,7 +608,7 @@
       "datum": "2027-05-13",
       "tijd": "20:00",
       "status": "uitverkocht",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/richard-groenendijk/"
     },
     {
@@ -634,7 +621,7 @@
       "datum": "2027-01-09",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ricky-koole/"
     },
     {
@@ -647,7 +634,7 @@
       "datum": "2027-02-21",
       "tijd": "15:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ricky-risolles-3-niet-zo-indiscreet/"
     },
     {
@@ -660,7 +647,7 @@
       "datum": "2026-11-05",
       "tijd": "20:00",
       "status": "uitverkocht",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ronald-goedemondt/"
     },
     {
@@ -673,7 +660,7 @@
       "datum": "2027-05-21",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/roue-verveer/"
     },
     {
@@ -699,7 +686,7 @@
       "datum": "2027-06-03",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rundfunk-wagyu/"
     },
     {
@@ -712,21 +699,8 @@
       "datum": "2027-02-02",
       "tijd": "14:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/spruijt-opperman/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Thjum"
-      ],
-      "titel": "Hoe heeft het zover kunnen komen?",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/thjum/"
     },
     {
       "theater": "zaantheater",
@@ -738,7 +712,7 @@
       "datum": "2026-12-04",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/tim-kroezen/"
     },
     {
@@ -764,7 +738,7 @@
       "datum": "2027-05-27",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/wina-ricardo/"
     },
     {
@@ -777,7 +751,7 @@
       "datum": "2026-11-13",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
+      "soort": "reprise",
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/stefan-pop/"
     }
   ],

@@ -2,7 +2,7 @@
   "bron": "bunker",
   "naam": "Agenda van Bunker Theaterzaken",
   "soort": "speellijst",
-  "opgehaald": "2026-10-30",
+  "opgehaald": "2026-10-31",
   "theaters": [],
   "speeldata": [
     {
@@ -2877,25 +2877,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Theater Diligentia",
-        "plaats": "Den Haag",
-        "land": "NL",
-        "website": "https://www.diligentia-pepijn.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.diligentia-pepijn.nl/agenda/kasper-van-der-laan-zxzq"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "De Kleine Komedie",
         "plaats": "Amsterdam",
         "land": "NL",
@@ -5400,25 +5381,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lemming-merijn-scholten"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "HOFtheater",
-        "plaats": "Raalte",
-        "land": "NL",
-        "website": "https://www.hoftheater.nl"
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.hoftheater.nl/programma/striptease-van-de-dood-wie-kent-david-linszen-30-okt-2015"
     },
     {
       "theater": {
@@ -8596,25 +8558,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "City of Wesopa",
-        "plaats": "Weesp",
-        "land": "NL",
-        "website": "https://secure.ticketunie.com"
-      },
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://secure.ticketunie.com/Widgets/408/357/TicketShop/265185/?p=1&parentPage=https%3A%2F%2Fwesopa.nl%2Fprogramma%2F&s=textsearch:overprikkeld&theme=Wesopa&syncID=cdb4105b-7553-e0ec-c318-28811aecf96a&lang=nl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "BREStheater",
         "plaats": "Brielle",
         "land": "NL",
@@ -10648,25 +10591,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Theater De Luifel",
-        "plaats": "Heemstede",
-        "land": "NL",
-        "website": "https://podiaheemstede.nl"
-      },
-      "artiesten": [
-        "Lebbis"
-      ],
-      "titel": "Satan is moe",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://podiaheemstede.nl/programma/a1c0cda6-c79d-4a01-920f-ec1e8277a0da?highlight=lebbis"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "TivoliVredenburg",
         "plaats": "Utrecht",
         "land": "NL",
@@ -12544,25 +12468,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/leids-cabaret-festival-finalistentour-2027/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater De Omval",
-        "plaats": "Diemen",
-        "land": "NL",
-        "website": "https://www.theaterdeomval.nl"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.theaterdeomval.nl/voorstellingen/de-eenzame-ziel-hkn6"
     },
     {
       "theater": {
@@ -14463,28 +14368,6 @@
         "sterren": 5,
         "citaat": "Kasper van der Laan is een natuurtalent.",
         "over": "Kasper van der Laan"
-      }
-    ],
-    "https://theaterdestoep.nl/voorstelling/merijn-scholten-2627": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "De virtuoze komiek Merijn Scholten speelt in ‘Lemming’ op de toppen van zijn kunnen."
-      },
-      {
-        "medium": "NRC",
-        "sterren": null,
-        "citaat": "Een flitsende voorstelling, vol leuk en expressief acteerwerk."
-      },
-      {
-        "medium": "Trouw",
-        "sterren": null,
-        "citaat": "Komiek Merijn Scholten heeft een hoop kritiek op de maatschappij, maar is vooral enorm grappig."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Merijn Scholten brengt een hilarische ode aan de lanterfantende kudde"
       }
     ],
     "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lemming-merijn-scholten": [

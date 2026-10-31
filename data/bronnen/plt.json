@@ -1,7 +1,7 @@
 {
   "bron": "plt",
   "naam": "PLT (Parkstad Limburg Theaters)",
-  "opgehaald": "2026-10-30",
+  "opgehaald": "2026-10-31",
   "theaters": [
     {
       "id": "theater-heerlen",
@@ -275,19 +275,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/jan-beuving-dekpunt/28-04-2027-20-30"
-    },
-    {
-      "theater": "theater-sittard",
-      "artiesten": [
-        "Ricky Koole"
-      ],
-      "titel": "Rare Leeftijd",
-      "genre": "kleinkunst",
-      "datum": "2026-10-30",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.plt.nl/programma/ricky-koole-rare-leeftijd/30-10-2026-20-30"
     },
     {
       "theater": "theater-heerlen",

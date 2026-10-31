@@ -1,7 +1,7 @@
 {
   "bron": "zuidplein",
   "naam": "Theater Zuidplein",
-  "opgehaald": "2026-10-30",
+  "opgehaald": "2026-10-31",
   "theaters": [
     {
       "id": "theater-zuidplein",
@@ -13,58 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Open mic"
-      ],
-      "titel": "Confro Academy x Theater Zuidplein",
-      "genre": "open-mic",
-      "datum": "2026-10-30",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/confro-academy-x-theater-zuidplein-dc1c"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Marja van Katendrecht"
-      ],
-      "titel": "Marja's Spetterende Bingoshow",
-      "genre": "cabaret",
-      "datum": "2026-11-01",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-spetterende-bingoshow-4mg2"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Marja van Katendrecht"
-      ],
-      "titel": "Marja's Spetterende Bingoshow",
-      "genre": "cabaret",
-      "datum": "2027-04-04",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-spetterende-bingoshow-4mg2"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Marja van Katendrecht"
-      ],
-      "titel": "Marja's Spetterende Bingoshow",
-      "genre": "cabaret",
-      "datum": "2027-05-30",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-spetterende-bingoshow-4mg2"
-    },
     {
       "theater": "theater-zuidplein",
       "artiesten": [
@@ -84,7 +32,7 @@
         "Kijk je Kop"
       ],
       "titel": "Kijk je Kop",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-11-21",
       "tijd": "20:30",
       "status": "gepland",
@@ -97,7 +45,7 @@
         "Kijk je Kop"
       ],
       "titel": "Kijk je Kop",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-04-02",
       "tijd": "20:30",
       "status": "gepland",
@@ -110,7 +58,7 @@
         "TimZingt"
       ],
       "titel": "Grijs -reprise-",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-11-28",
       "tijd": "20:00",
       "status": "gepland",
@@ -123,7 +71,7 @@
         "Vuile Huichelaar"
       ],
       "titel": "Ik zit hier heel alleen kerstfeest te vieren 2",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-01",
       "tijd": "20:00",
       "status": "gepland",
@@ -149,7 +97,7 @@
         "Comedyavond met Marco Lopes (Piet) als MC"
       ],
       "titel": "Piet en zijn Matties",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-04",
       "tijd": "20:30",
       "status": "gepland",
@@ -162,7 +110,7 @@
         "Nilgün Yerli"
       ],
       "titel": "Weet je het zeker?",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-09",
       "tijd": "20:30",
       "status": "gepland",
@@ -175,7 +123,7 @@
         "Vrouwejaars 2026"
       ],
       "titel": "Yora Rienstra e.a.",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-13",
       "tijd": "20:00",
       "status": "gepland",
@@ -188,7 +136,7 @@
         "Fred van Leer"
       ],
       "titel": "Ik weet het eigenlijk niet",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-16",
       "tijd": "20:00",
       "status": "gepland",
@@ -227,7 +175,7 @@
         "Marja van Katendrecht X Theater Zuidplein"
       ],
       "titel": "Marja's Very Merry Christmas",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-20",
       "tijd": "15:00",
       "status": "gepland",
@@ -240,7 +188,7 @@
         "Marja van Katendrecht X Theater Zuidplein"
       ],
       "titel": "Marja's Very Merry Christmas",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-21",
       "tijd": "20:00",
       "status": "gepland",
@@ -253,7 +201,7 @@
         "Marja van Katendrecht X Theater Zuidplein"
       ],
       "titel": "Marja's Very Merry Christmas",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-22",
       "tijd": "20:00",
       "status": "gepland",
@@ -266,7 +214,7 @@
         "Marja van Katendrecht X Theater Zuidplein"
       ],
       "titel": "Marja's Very Merry Christmas",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-23",
       "tijd": "20:00",
       "status": "gepland",
@@ -292,7 +240,7 @@
         "Joosen en de Jager"
       ],
       "titel": "Niks aan het handje",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-01-08",
       "tijd": "20:00",
       "status": "gepland",
@@ -305,7 +253,7 @@
         "Jasper van der Veen"
       ],
       "titel": "Op Scherp",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-01-16",
       "tijd": "20:30",
       "status": "gepland",
@@ -318,7 +266,7 @@
         "Buğra Gedik"
       ],
       "titel": "Ğelukkig Ğeboren",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-01-20",
       "tijd": "20:15",
       "status": "gepland",
@@ -331,7 +279,7 @@
         "Myrthe Siebinga"
       ],
       "titel": "Gelukkig maar",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-01-27",
       "tijd": "20:30",
       "status": "geannuleerd",
@@ -357,7 +305,7 @@
         "Fimme Bakker"
       ],
       "titel": "Zwaargewicht",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-02-03",
       "tijd": "20:30",
       "status": "gepland",
@@ -370,7 +318,7 @@
         "Nienke Plas"
       ],
       "titel": "Appeltje Eitje",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-02-05",
       "tijd": "20:00",
       "status": "gepland",
@@ -409,7 +357,7 @@
         "Samir Fighil"
       ],
       "titel": "Turbulentie",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-02-20",
       "tijd": "20:30",
       "status": "gepland",
@@ -435,7 +383,7 @@
         "Marja van Katendrecht"
       ],
       "titel": "Heel holland hoopt",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-03-03",
       "tijd": "20:30",
       "status": "gepland",
@@ -448,7 +396,7 @@
         "Remko Vrijdag"
       ],
       "titel": "Marko Maandag",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-03-12",
       "tijd": "20:00",
       "status": "gepland",
@@ -461,7 +409,7 @@
         "Gavin Reijnders"
       ],
       "titel": "Jazzebelle",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-03-13",
       "tijd": "20:00",
       "status": "gepland",
@@ -487,7 +435,7 @@
         "Jawad Es Soufi"
       ],
       "titel": "Tnawies",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-03-19",
       "tijd": "20:00",
       "status": "gepland",
@@ -500,7 +448,7 @@
         "Jawad Es Soufi"
       ],
       "titel": "Tnawies",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-03-20",
       "tijd": "20:00",
       "status": "gepland",
@@ -524,7 +472,7 @@
         "Cameretten"
       ],
       "titel": "Cameretten Finalistentournee 60e editie",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-04-07",
       "tijd": "20:00",
       "status": "gepland",
@@ -534,41 +482,15 @@
     {
       "theater": "theater-zuidplein",
       "artiesten": [
-        "Rachid Larouz"
-      ],
-      "titel": "Wakker Worden",
-      "genre": "cabaret",
-      "datum": "2027-04-16",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/wakker-worden-8g78"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
         "Leids Cabaret Festival on Tour"
       ],
       "titel": "Finalistentour 2027",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-04-21",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterzuidplein.nl/agenda/finalistentour-2027-c2c8"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Kim Schuddeboom"
-      ],
-      "titel": "Hardleers",
-      "genre": "cabaret",
-      "datum": "2027-04-28",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/hardleers-8h22"
     },
     {
       "theater": "theater-zuidplein",
@@ -602,7 +524,7 @@
         "Team Ricky Risolles"
       ],
       "titel": "Ricky Risolles 3 - Niet zo Indiscreet…",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-05-15",
       "tijd": "20:00",
       "status": "gepland",
@@ -615,7 +537,7 @@
         "Kim Karssen"
       ],
       "titel": "God is een snotje",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-05-19",
       "tijd": "20:30",
       "status": "gepland",
@@ -628,7 +550,7 @@
         "Tobi Kooiman"
       ],
       "titel": "Best Of 4",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-05-26",
       "tijd": "20:30",
       "status": "gepland",
@@ -641,7 +563,7 @@
         "Daan van der Hoeven"
       ],
       "titel": "Mensenmens",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-06-04",
       "tijd": "20:00",
       "status": "gepland",
@@ -667,7 +589,7 @@
         "Deng Boy"
       ],
       "titel": "Double Trouble",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-07-09",
       "tijd": "20:00",
       "status": "gepland",

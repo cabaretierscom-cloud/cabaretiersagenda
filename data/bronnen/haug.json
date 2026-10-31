@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-10-30",
+  "opgehaald": "2026-10-31",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -294,19 +294,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/dolf-jansen-111711342"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Özgür Turhan"
-      ],
-      "titel": "Özgür Turhan",
-      "genre": "stand-up",
-      "datum": "2026-10-30",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/ozgur-turhan-111693676"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1101,6 +1088,17 @@
       "artiesten": [],
       "titel": "Best of Stand-Up",
       "genre": "stand-up",
+      "datum": "2026-11-07",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701026"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
       "datum": "2026-11-06",
       "tijd": "21:00",
       "status": "gepland",
@@ -1266,17 +1264,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
-      "titel": "Chuckle-Up! in English",
-      "genre": "stand-up",
-      "datum": "2026-10-30",
-      "tijd": "21:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/chuckle-up-in-english-111688149"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
       "titel": "Best of Stand-Up",
       "genre": "stand-up",
       "datum": "2026-10-31",
@@ -1284,17 +1271,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111688144"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
-      "titel": "Best of Stand-Up",
-      "genre": "stand-up",
-      "datum": "2026-10-30",
-      "tijd": "21:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111688143"
     },
     {
       "theater": "comedy-club-haug-rotterdam",

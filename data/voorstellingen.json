@@ -1072,6 +1072,13 @@
     "theater": "de-harmonie"
   },
   {
+    "id": "cabaret-carrousel-amai-comedy-club-gent",
+    "titel": "Cabaret Carrousel",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
     "id": "cabaret-club-giggle-theater-walhalla",
     "titel": "Cabaret Club Giggle",
     "artiesten": [],
@@ -1711,14 +1718,6 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "goudse-schouwburg"
-  },
-  {
-    "id": "de-cabaret-club-op-z-n-brabants",
-    "titel": "Op z’n Brabants",
-    "artiesten": [
-      "de-cabaret-club"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "de-cabaret-club-parktheater-eindhoven",
@@ -4042,7 +4041,7 @@
         "medium": "NRC",
         "sterren": 4,
         "citaat": "Lisa Ostermann heeft een nogal onweerstaanbaar soort energie.",
-        "bron": "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc"
+        "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/lisa-ostermann-reprise-z9pf"
       },
       {
         "medium": "Het Parool",
@@ -4054,7 +4053,7 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Opnieuw vindt Lisa Ostermann het perfecte snijvlak tussen humor en ontroering.",
-        "bron": "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc"
+        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/de-baas-lisa-ostermann"
       }
     ]
   },
@@ -5056,6 +5055,13 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "southend-comedy-club"
+  },
+  {
+    "id": "palaver-live-amai-comedy-club-gent",
+    "titel": "Palaver Live",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
   },
   {
     "id": "pandji-pragiwaksono-wongsoyudo-pandji-pragiwaksono-wongsoyudo",
@@ -6769,7 +6775,7 @@
     "id": "veenendaal-lacht-comedy-night-theater-lampegiet",
     "titel": "Veenendaal Lacht - Comedy Night",
     "artiesten": [],
-    "genre": "cabaret",
+    "genre": "stand-up",
     "theater": "theater-lampegiet"
   },
   {

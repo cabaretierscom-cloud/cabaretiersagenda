@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-10-30",
+  "opgehaald": "2026-10-31",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -22,7 +22,7 @@
       "genre": "cabaret",
       "datum": "2026-10-31",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.kampanje.nl/voorstellingen/valentina-toth-try-out-rz9j"
     },
@@ -35,7 +35,7 @@
       "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy"
     },
@@ -129,19 +129,6 @@
       "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/hokjesdenker-jknt"
-    },
-    {
-      "theater": "theater-de-kampanje",
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-12-04",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc"
     },
     {
       "theater": "theater-de-kampanje",
@@ -243,7 +230,7 @@
       "genre": "cabaret",
       "datum": "2027-01-14",
       "tijd": "20:30",
-      "status": "geannuleerd",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2"
     },
@@ -540,7 +527,7 @@
       "genre": "cabaret",
       "datum": "2027-04-09",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/marie-koet-cgxx"
     },
@@ -860,28 +847,6 @@
         "medium": "de Volkskrant",
         "sterren": 4,
         "citaat": "Wie wil er nou drie uur lang naar Zomergasten kijken? Een half uur Hokjesdenker verzadigt meer."
-      }
-    ],
-    "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc": [
-      {
-        "medium": "Trouw",
-        "sterren": 5,
-        "citaat": "Ontzettend grappig'."
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Met andere woorden: je wil direct haar volgende voorstelling zien."
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Lisa Ostermann heeft een nogal onweerstaanbaar soort energie."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Opnieuw vindt Lisa Ostermann het perfecte snijvlak tussen humor en ontroering."
       }
     ],
     "https://www.kampanje.nl/voorstellingen/chris-verlaan-qyxl": [
