@@ -322,6 +322,11 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // Foto van een artiest of een zaal (een zaal herken je aan de plaats).
   // Foto van een artiest, zaal (heeft een plaats) of voorstelling (heeft een titel).
   const fotoPad = (a) => a.titel ? voorstellingPad.get(a.id) : `${a.plaats ? "/theaters" : "/artiesten"}/${a.id}/`;
+  // Licentie van een vrije foto als webadres; publiek domein heeft geen eigen licentiepagina op Commons.
+  const licentieUrl = (f) => f.licentieUrl || (/^public domain$/i.test(f.licentie || "") ? "https://creativecommons.org/publicdomain/mark/1.0/" : null);
+  // Een kaartverkoopsite is niet de eigen website van een zaal (komt soms uit een kaartlink in een speellijst).
+  const KAARTSITE = /(^|\.)(inboxifier\.eu|ticket\.monster|activetickets\.com|tix4all\.nl|ticketcrew\.nl|mijnetickets\.shop|eventix\.io|stager\.co|weeztix\.com|ticketmaster\.\w+|eventbrite\.\w+|ticketpoint\.nl|ticketkantoor\.nl)$/i;
+  const eigenSite = (url) => { try { return url && !KAARTSITE.test(new globalThis.URL(url).hostname) ? url : null; } catch { return null; } };
   const fotoLd = (a) => ({
     "@type": "ImageObject", "@id": URL(`${fotoPad(a)}#foto`),
     url: URL(a.foto.bestand), contentUrl: URL(a.foto.bestand), encodingFormat: "image/jpeg",
@@ -329,7 +334,9 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     ...(a.foto.breedte ? { width: a.foto.breedte, height: a.foto.hoogte } : {}),
     ...(a.foto.datum ? { dateCreated: a.foto.datum } : {}),
     creditText: a.foto.maker, copyrightNotice: `${a.foto.maker}, ${a.foto.licentie}`,
-    ...(a.foto.licentieUrl ? { license: a.foto.licentieUrl } : {}), ...(a.foto.promo ? {} : { acquireLicensePage: a.foto.bron }),
+    // Maker: een persoon, tenzij het een bureau of "Wikimedia Commons" is (geen naam van de fotograaf).
+    creator: { "@type": /wikimedia|buro|bureau|studio|b\.?v\.?$|&/i.test(a.foto.maker) ? "Organization" : "Person", name: a.foto.maker },
+    ...(licentieUrl(a.foto) ? { license: licentieUrl(a.foto) } : {}), ...(a.foto.promo ? {} : { acquireLicensePage: a.foto.bron }),
     about: { "@id": URL(fotoPad(a) + (a.titel ? "#voorstelling" : a.plaats ? "#zaal" : "#artiest")) },
   });
   // Eerste artiest met een foto bij een voorstelling.
@@ -338,7 +345,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const t = T.get(id);
     return {
       "@type": ZAAL_TYPE[t.soort] || "EventVenue", "@id": URL(`/theaters/${id}/#zaal`), name: t.naam, url: URL(`/theaters/${id}/`),
-      ...((t.website || t.foto?.wikidata) ? { sameAs: [t.website, t.foto?.wikidata && `https://www.wikidata.org/wiki/${t.foto.wikidata}`].filter(Boolean) } : {}),
+      ...((eigenSite(t.website) || t.foto?.wikidata) ? { sameAs: [eigenSite(t.website), t.foto?.wikidata && `https://www.wikidata.org/wiki/${t.foto.wikidata}`].filter(Boolean) } : {}),
       ...(t.foto ? { image: URL(t.foto.bestand) } : {}),
       address: { "@type": "PostalAddress", addressLocality: t.plaats, addressCountry: t.land },
     };
@@ -364,10 +371,12 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       image: [URL(v.foto?.bestand || fotoArtiest(g.voorstelling)?.foto.bestand || t.foto?.bestand || "/deelafbeelding.png")],
       ...(v.artiesten.length ? { performer: v.artiesten.map(artiestLd) } : {}),
       // De zaal programmeert de voorstelling en verkoopt de kaarten.
-      organizer: { "@type": "Organization", name: t.naam, ...(t.website ? { url: t.website } : {}) },
+      organizer: { "@type": "Organization", name: t.naam, ...(eigenSite(t.website) ? { url: eigenSite(t.website) } : {}) },
+      // Kaartverkoop bij de zaal: uitverkocht, of te koop zolang de voorstelling gewoon doorgaat (dan staat er
+      // een knop "Tickets"). Prijzen kennen we niet, die laten we weg.
       offers: {
-        "@type": "Offer", url: g.bron,
-        ...(g.status === "uitverkocht" ? { availability: "https://schema.org/SoldOut" } : {}),
+        "@type": "Offer", url: metUtm(g.bron),
+        ...(g.status === "uitverkocht" ? { availability: "https://schema.org/SoldOut" } : ["gepland", "onzeker"].includes(g.status) ? { availability: "https://schema.org/InStock" } : {}),
       },
       url: voorstellingPad.has(g.voorstelling) ? URL(voorstellingPad.get(g.voorstelling)) : URL(`/theaters/${g.theater}/`),
     };
@@ -699,7 +708,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     <p>Speel je zelf, of programmeer je een zaal? Mail je speellijst naar <a href="mailto:${SITE.email}">${SITE.email}</a>. <a href="/over/">Meer over de agenda</a></p>
   </div>
 </section>`;
-    return layout({ path: "/", section: null, body });
+    return layout({ path: "/", section: null, body, schema: { hoofd: { "@id": ORG_ID } } });
   }
 
   // Week van een datum: maandag als begin (ISO-datum).
