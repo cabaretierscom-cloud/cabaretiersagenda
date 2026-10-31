@@ -605,7 +605,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
           <span class="poster-info">
           <strong class="ftitel${titleClass(t.naam)}">${esc(t.naam)}</strong>
           <span class="fartiest">${esc(t.plaats)}</span>
-          <span class="where"><span class="wanneer">Volgende</span>${esc(wat)}</span>
+          <span class="where"><span class="wanneer">Volgende voorstelling</span>${esc(wat)}</span>
           <span class="tag">${aantal}</span>
           </span>
           <span class="poster-stub"></span>
