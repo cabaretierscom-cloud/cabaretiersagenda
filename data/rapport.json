@@ -1,12 +1,12 @@
 {
-  "datum": "2026-10-31",
+  "datum": "2026-11-01",
   "totaal": {
-    "speeldata": 6698,
-    "komend": 6477,
-    "artiesten": 508,
-    "zalen": 592,
-    "plaatsen": 431,
-    "voorstellingen": 801
+    "speeldata": 7089,
+    "komend": 6817,
+    "artiesten": 517,
+    "zalen": 642,
+    "plaatsen": 461,
+    "voorstellingen": 812
   },
   "bronnen": [
     {
@@ -94,7 +94,7 @@
       "naam": "Cpunt",
       "opgehaald": "2026-10-31",
       "speeldata": 101,
-      "vorige": 102,
+      "vorige": 101,
       "dubbel": 0
     },
     {
@@ -198,7 +198,7 @@
       "naam": "Kunstlinie",
       "opgehaald": "2026-10-31",
       "speeldata": 58,
-      "vorige": 59,
+      "vorige": 58,
       "dubbel": 0
     },
     {
@@ -222,7 +222,7 @@
       "naam": "Schouwburg De Lawei",
       "opgehaald": "2026-10-31",
       "speeldata": 55,
-      "vorige": 56,
+      "vorige": 55,
       "dubbel": 0
     },
     {
@@ -270,7 +270,7 @@
       "naam": "Stadsschouwburg & De Vereeniging Nijmegen",
       "opgehaald": "2026-10-31",
       "speeldata": 28,
-      "vorige": 27,
+      "vorige": 28,
       "dubbel": 0
     },
     {
@@ -286,7 +286,7 @@
       "naam": "Orpheus",
       "opgehaald": "2026-10-31",
       "speeldata": 66,
-      "vorige": 68,
+      "vorige": 66,
       "dubbel": 0
     },
     {
@@ -382,7 +382,7 @@
       "naam": "Stadsschouwburg Utrecht",
       "opgehaald": "2026-10-31",
       "speeldata": 113,
-      "vorige": 114,
+      "vorige": 113,
       "dubbel": 0
     },
     {
@@ -430,7 +430,7 @@
       "naam": "Wilminktheater en Muziekcentrum Enschede",
       "opgehaald": "2026-10-31",
       "speeldata": 77,
-      "vorige": 82,
+      "vorige": 77,
       "dubbel": 0
     },
     {
@@ -438,7 +438,7 @@
       "naam": "Zaantheater",
       "opgehaald": "2026-10-31",
       "speeldata": 58,
-      "vorige": 57,
+      "vorige": 58,
       "dubbel": 0
     },
     {
@@ -446,7 +446,7 @@
       "naam": "Theater Zuidplein",
       "opgehaald": "2026-10-31",
       "speeldata": 47,
-      "vorige": 45,
+      "vorige": 47,
       "dubbel": 0
     },
     {
@@ -469,9 +469,9 @@
       "bron": "bunker",
       "naam": "Agenda van Bunker Theaterzaken",
       "opgehaald": "2026-10-31",
-      "speeldata": 232,
-      "vorige": 231,
-      "dubbel": 522
+      "speeldata": 260,
+      "vorige": 260,
+      "dubbel": 494
     },
     {
       "bron": "kobra",
@@ -484,142 +484,480 @@
     {
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
-      "opgehaald": "2026-10-31",
-      "speeldata": 1880,
-      "vorige": 1910,
-      "dubbel": 996
+      "opgehaald": "2026-11-01",
+      "speeldata": 2230,
+      "vorige": 2230,
+      "dubbel": 1051
     }
   ],
   "nieuw": {
     "artiesten": [
       {
-        "id": "dam-qui-rit-comedy-club",
-        "naam": "Dam Qui Rit Comedy Club"
+        "id": "de-mugge-van-brugge",
+        "naam": "De Mugge van Brugge"
       },
       {
-        "id": "het-comedy-talent-van-het-moment",
-        "naam": "het Comedy Talent van het moment"
+        "id": "die-verdammte-spielerei",
+        "naam": "Die Verdammte Spielerei"
       },
       {
-        "id": "matt-en-tamas",
-        "naam": "Matt & Tamas"
+        "id": "helligen-hendrik",
+        "naam": "Helligen Hendrik"
+      },
+      {
+        "id": "hetty-helsmoortel",
+        "naam": "Hetty Helsmoortel"
+      },
+      {
+        "id": "jacques-vermeire",
+        "naam": "Jacques Vermeire"
+      },
+      {
+        "id": "janneke-jager",
+        "naam": "Janneke Jager"
+      },
+      {
+        "id": "nele-bauwens",
+        "naam": "Nele Bauwens"
+      },
+      {
+        "id": "roel-maalderink",
+        "naam": "Roel Maalderink"
+      },
+      {
+        "id": "warre-verlinden",
+        "naam": "Warre Verlinden"
       }
     ],
     "zalen": [
       {
-        "id": "den-heuvel-alphen-aan-den-rijn",
-        "naam": "Den Heuvel",
-        "plaats": "Alphen aan den Rijn",
-        "land": "NL",
-        "website": "https://www.denheuvel.org"
+        "id": "stadsfeestzaal-aarschot",
+        "naam": "Stadsfeestzaal",
+        "plaats": "Aarschot",
+        "land": "BE",
+        "website": null
       },
       {
-        "id": "theater-t-web-bleiswijk",
-        "naam": "Theater ´t Web",
-        "plaats": "Bleiswijk",
-        "land": "NL",
-        "website": "https://www.theatertweb.nl"
+        "id": "cc-de-meent-alsemberg",
+        "naam": "CC De Meent",
+        "plaats": "Alsemberg",
+        "land": "BE",
+        "website": null
       },
       {
-        "id": "de-toegift-klif-12-try-out-den-hoorn",
-        "naam": "De Toegift @ Klif 12 try-out",
-        "plaats": "Den Hoorn",
-        "land": "NL",
-        "website": "https://www.klif12.nl"
+        "id": "lotto-arena-antwerpen",
+        "naam": "Lotto Arena",
+        "plaats": "Antwerpen",
+        "land": "BE",
+        "website": "https://www.lotto-arena.be"
       },
       {
-        "id": "kasteel-dussen-try-out",
-        "naam": "Kasteel Dussen try-out",
-        "plaats": "Dussen",
+        "id": "oc-de-kleine-beer-beernem",
+        "naam": "OC De Kleine Beer",
+        "plaats": "Beernem",
+        "land": "BE",
+        "website": "https://www.beernem.be"
+      },
+      {
+        "id": "casino-beringen",
+        "naam": "Casino",
+        "plaats": "Beringen",
+        "land": "BE",
+        "website": "https://www.ccberingen.be"
+      },
+      {
+        "id": "cc-blankenberge",
+        "naam": "CC Blankenberge",
+        "plaats": "Blankenberge",
+        "land": "BE",
+        "website": "https://www.blankenberge.be"
+      },
+      {
+        "id": "kusttheater-colisee-blankenberge",
+        "naam": "Kusttheater Colisée",
+        "plaats": "Blankenberge",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "panishof-borgloon",
+        "naam": "Panishof",
+        "plaats": "Borgloon",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "magdalenazaal-brugge",
+        "naam": "Magdalenazaal",
+        "plaats": "Brugge",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "stadsschouwburg-brugge",
+        "naam": "Stadsschouwburg Brugge",
+        "plaats": "Brugge",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "pc-witgoor-dessel",
+        "naam": "PC Witgoor",
+        "plaats": "Dessel",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "gc-de-plak-diepenbeek",
+        "naam": "GC De Plak",
+        "plaats": "Diepenbeek",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "groenzaal-gent",
+        "naam": "Groenzaal",
+        "plaats": "Gent",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "t-vondel-halle",
+        "naam": "’t Vondel",
+        "plaats": "Halle",
+        "land": "BE",
+        "website": "https://www.vondel.be"
+      },
+      {
+        "id": "gc-de-wildeman-herent",
+        "naam": "GC De Wildeman",
+        "plaats": "Herent",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "foxy-herentals",
+        "naam": "Foxy Herentals",
+        "plaats": "Herentals",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "oc-kasterlee",
+        "naam": "OC Kasterlee",
+        "plaats": "Kasterlee",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "aula-pieter-de-somer-leuven",
+        "naam": "Aula Pieter de Somer",
+        "plaats": "Leuven",
+        "land": "BE",
+        "website": "https://steun.kuleuven.be"
+      },
+      {
+        "id": "theater-bobbejaanland-lichtaart",
+        "naam": "Theater Bobbejaanland",
+        "plaats": "Lichtaart",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-de-mol-lier",
+        "naam": "CC De Mol",
+        "plaats": "Lier",
+        "land": "BE",
+        "website": "https://www.snik.sint-niklaas.be"
+      },
+      {
+        "id": "aed-studios-lint",
+        "naam": "AED Studios",
+        "plaats": "Lint",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cultuurzaal-uyttenhove-lochristi",
+        "naam": "Cultuurzaal Uyttenhove",
+        "plaats": "Lochristi",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cultuurhuis-merelbeke",
+        "naam": "Cultuurhuis Merelbeke",
+        "plaats": "Merelbeke",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "gildenzaal-nijlen",
+        "naam": "Gildenzaal",
+        "plaats": "Nijlen",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "qubus-oudenaarde",
+        "naam": "Qubus",
+        "plaats": "Oudenaarde",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "coc-ronse",
+        "naam": "COC",
+        "plaats": "Ronse",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "de-rostune-sijsele",
+        "naam": "De Rostune",
+        "plaats": "Sijsele",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "middelkerke-silt",
+        "naam": "Middelkerke",
+        "plaats": "Silt",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "t-centrum-sint-lenaarts",
+        "naam": "’t Centrum Sint-Lenaarts",
+        "plaats": "Sint-Lenaarts",
+        "land": "BE",
+        "website": "https://www.brecht.be"
+      },
+      {
+        "id": "cultuurhuis-tessenderlo-ham",
+        "naam": "Cultuurhuis Tessenderlo-Ham",
+        "plaats": "Tessenderlo-Ham",
+        "land": "BE",
+        "website": "https://www.tessenderlo-ham.be"
+      },
+      {
+        "id": "oc-velm",
+        "naam": "OC",
+        "plaats": "Velm",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "casino-modern-waterschei",
+        "naam": "Casino Modern",
+        "plaats": "Waterschei",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "zoerla-westerlo",
+        "naam": "Zoerla",
+        "plaats": "Westerlo",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "schouwburg-de-kern-wilrijk",
+        "naam": "Schouwburg De Kern",
+        "plaats": "Wilrijk",
+        "land": "BE",
+        "website": "https://www.schouwburgdekern.be"
+      },
+      {
+        "id": "de-populier-zandhoven",
+        "naam": "De Populier",
+        "plaats": "Zandhoven",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "vc-de-schelde-zandvliet",
+        "naam": "VC De Schelde",
+        "plaats": "Zandvliet",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "den-dijk-zonhoven",
+        "naam": "Den Dijk",
+        "plaats": "Zonhoven",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "podium-victorie-alkmaar",
+        "naam": "Podium Victorie",
+        "plaats": "Alkmaar",
         "land": "NL",
         "website": null
       },
       {
-        "id": "theater-podium-heino",
-        "naam": "Theater Podium Heino",
-        "plaats": "Heino",
+        "id": "mascini-amsterdam",
+        "naam": "Mascini",
+        "plaats": "Amsterdam",
         "land": "NL",
-        "website": "https://www.podiumheino.nl"
+        "website": "https://www.theatermascini.nl"
       },
       {
-        "id": "theater-onder-de-linden-middenbeemster",
-        "naam": "Theater Onder de Linden",
-        "plaats": "Middenbeemster",
+        "id": "groene-zwaan-de-rijp",
+        "naam": "Groene Zwaan",
+        "plaats": "De Rijp",
         "land": "NL",
-        "website": "https://www.onderdelindenbeemster.nl"
+        "website": "https://degroenezwaan.nl"
       },
       {
-        "id": "het-kwartier-stolwijk",
-        "naam": "Het Kwartier",
-        "plaats": "Stolwijk",
+        "id": "de-pluk-geldermalsen",
+        "naam": "De Pluk",
+        "plaats": "Geldermalsen",
         "land": "NL",
         "website": null
       },
       {
-        "id": "filmtheater-voorschoten",
-        "naam": "Filmtheater Voorschoten",
-        "plaats": "Voorschoten",
+        "id": "de-zwaan-gouda",
+        "naam": "De Zwaan",
+        "plaats": "Gouda",
         "land": "NL",
-        "website": "https://filmtheatervoorschoten.nl"
+        "website": "https://www.kleintheaterzwaan.nl"
+      },
+      {
+        "id": "simplon-groningen",
+        "naam": "Simplon",
+        "plaats": "Groningen",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "amalia-oegstgeest",
+        "naam": "Amalia",
+        "plaats": "Oegstgeest",
+        "land": "NL",
+        "website": "https://www.theaterhuisamalia.nl"
+      },
+      {
+        "id": "fidei-et-arti-oudenbosch",
+        "naam": "Fidei et Arti",
+        "plaats": "Oudenbosch",
+        "land": "NL",
+        "website": "https://fideietarti.nl"
+      },
+      {
+        "id": "schiller-theater-utrecht",
+        "naam": "Schiller Theater",
+        "plaats": "Utrecht",
+        "land": "NL",
+        "website": "https://www.schillertheater.nl"
+      },
+      {
+        "id": "cultuurhuys-de-kroon-waddinxveen",
+        "naam": "Cultuurhuys de Kroon",
+        "plaats": "Waddinxveen",
+        "land": "NL",
+        "website": "https://www.cultuurhuysdekroon.nl"
+      },
+      {
+        "id": "de-blauwe-schuit-winsum",
+        "naam": "De Blauwe Schuit",
+        "plaats": "Winsum",
+        "land": "NL",
+        "website": "https://www.deblauweschuit-winsum.nl"
+      },
+      {
+        "id": "theater-de-schuur-zevenbergen",
+        "naam": "Theater de Schuur",
+        "plaats": "Zevenbergen",
+        "land": "NL",
+        "website": "https://theaterdeschuur.nl"
+      },
+      {
+        "id": "de-zwolse-theaters-zwolle",
+        "naam": "De Zwolse Theaters",
+        "plaats": "Zwolle",
+        "land": "NL",
+        "website": "https://www.zwolsetheaters.nl"
       }
     ],
     "voorstellingen": [
       {
-        "id": "berit-companjen-fimme-bakker-bob-koomen-lachen-met-volle-mond-3",
-        "titel": "Lachen met Volle Mond #3",
+        "id": "de-cabaret-club-op-z-n-brabants",
+        "titel": "Op z’n Brabants",
         "artiesten": [
-          "berit-companjen",
-          "fimme-bakker",
-          "bob-koomen"
+          "de-cabaret-club"
         ]
       },
       {
-        "id": "berit-companjen-teun-van-den-elzen-het-comedy-talent-van-het-moment-lachen-met-v",
-        "titel": "Lachen met Volle Mond #2",
+        "id": "de-mugge-van-brugge-de-mugge-van-brugge",
+        "titel": "De Mugge van Brugge",
         "artiesten": [
-          "berit-companjen",
-          "teun-van-den-elzen",
-          "het-comedy-talent-van-het-moment"
+          "de-mugge-van-brugge"
         ]
       },
       {
-        "id": "dam-qui-rit-comedy-club-french-night",
-        "titel": "French night",
+        "id": "die-verdammte-spielerei-porselijm",
+        "titel": "Porselijm",
         "artiesten": [
-          "dam-qui-rit-comedy-club"
+          "die-verdammte-spielerei"
         ]
       },
       {
-        "id": "manpreet-singh-comedy-cafe-amsterdam",
-        "titel": "Manpreet Singh",
-        "artiesten": []
-      },
-      {
-        "id": "matt-en-tamas-laughs-in-motion",
-        "titel": "Laughs in motion",
+        "id": "helligen-hendrik-helligen-hendrik",
+        "titel": "Helligen Hendrik",
         "artiesten": [
-          "matt-en-tamas"
+          "helligen-hendrik"
         ]
       },
       {
-        "id": "pradeep-kumar-southend-comedy-club",
-        "titel": "Pradeep Kumar",
-        "artiesten": []
+        "id": "hetty-helsmoortel-missie-2026",
+        "titel": "Missie 2026",
+        "artiesten": [
+          "hetty-helsmoortel"
+        ]
       },
       {
-        "id": "sasha-dolgopolov-southend-comedy-club",
-        "titel": "Sasha Dolgopolov",
-        "artiesten": []
+        "id": "jacques-vermeire-jacques-vermeire",
+        "titel": "Jacques Vermeire",
+        "artiesten": [
+          "jacques-vermeire"
+        ]
       },
       {
-        "id": "cabaret-carrousel-amai-comedy-club-gent",
-        "titel": "Cabaret Carrousel",
-        "artiesten": []
+        "id": "janneke-jager-jaagt",
+        "titel": "Jaagt",
+        "artiesten": [
+          "janneke-jager"
+        ]
       },
       {
-        "id": "palaver-live-amai-comedy-club-gent",
-        "titel": "Palaver Live",
-        "artiesten": []
+        "id": "mohsin-abbas-moh-experience",
+        "titel": "Moh?! Experience",
+        "artiesten": [
+          "mohsin-abbas"
+        ]
+      },
+      {
+        "id": "nele-bauwens-nele-bauwens",
+        "titel": "Nele Bauwens",
+        "artiesten": [
+          "nele-bauwens"
+        ]
+      },
+      {
+        "id": "roel-maalderink-verbroedering",
+        "titel": "Verbroedering",
+        "artiesten": [
+          "roel-maalderink"
+        ]
+      },
+      {
+        "id": "warre-verlinden-zeker-onzeker",
+        "titel": "Zeker Onzeker",
+        "artiesten": [
+          "warre-verlinden"
+        ]
       }
     ]
   },
@@ -687,6 +1025,15 @@
       "zalen": 592,
       "plaatsen": 431,
       "voorstellingen": 801
+    },
+    {
+      "datum": "2026-11-01",
+      "speeldata": 7089,
+      "komend": 6817,
+      "artiesten": 517,
+      "zalen": 642,
+      "plaatsen": 461,
+      "voorstellingen": 812
     }
   ]
 }

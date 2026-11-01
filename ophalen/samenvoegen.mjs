@@ -105,7 +105,7 @@ const compact = (s) => slug(s).replace(/-/g, "");
 // Een gevonden zaal zonder website krijgt die uit de speellijst.
 function zoekTheater(t) {
   const gevonden = zoekTheaterZelf(t);
-  if (gevonden && !gevonden.website && t.website) gevonden.website = t.website;
+  if (gevonden && !gevonden.website && gevonden.website !== false && t.website) gevonden.website = t.website;
   return gevonden;
 }
 function zoekTheaterZelf(t) {

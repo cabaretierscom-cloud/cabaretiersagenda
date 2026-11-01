@@ -167,7 +167,7 @@ export function leesRij(rij, o = {}) {
       const th = d.match(/\s*\((\d{1,2})[u:.](\d{2})\)\s*/i);
       if (th) { tijd ||= `${th[1].padStart(2, "0")}:${th[2]}`; d = d.replace(th[0], " "); }
       d = d.replace(/\s*\((try[ -]?out|tryout|premi[eè]re|reprise|uitverkocht)\)\s*/gi, " ").replace(/\s*\*+\s*$|\s*⇒\s*$|^in\s+|\s*\($|^\)\s*|\s+[-–—]$/g, "").replace(/\s+/g, " ").trim();
-      const t = d.match(/^(?:aanvang\s*)?(\d{1,2})[:.](\d{2})\s*(uur)?$/i);
+      const t = d.match(/^(?:aanvang\s*)?(\d{1,2})[:.u](\d{2})\s*(uur)?$/i);
       if (t) { tijd ||= `${t[1].padStart(2, "0")}:${t[2]}`; continue; }
       const l = LAND(d);
       if (l) { land = l; d = d.replace(/\s*\((NL|BE?|België|Belgie)\)|🇧🇪|^B - /gi, "").trim(); if (/^(B|BE|NL|België|Nederland)?$/i.test(d)) continue; }
@@ -179,6 +179,6 @@ export function leesRij(rij, o = {}) {
   const reeks = o.vanAchter ? [...delen].reverse() : delen;
   (o.volgorde || ["plaats", "zaal"]).forEach((veld, i) => { if (veld !== "-" && reeks[i] && !velden[veld]) velden[veld] = reeks[i]; });
   // Staat de zaal op de plek van de plaats ("Comedy Club Haug" / "Rotterdam"), dan omdraaien.
-  if (velden.plaats && velden.zaal && ZAALWOORD.test(velden.plaats) && !ZAALWOORD.test(velden.zaal)) [velden.plaats, velden.zaal] = [velden.zaal, velden.plaats];
+  if (!o.vast && velden.plaats && velden.zaal && ZAALWOORD.test(velden.plaats) && !ZAALWOORD.test(velden.zaal)) [velden.plaats, velden.zaal] = [velden.zaal, velden.plaats];
   return { datum: rij.datum, tijd, ...velden, land, status, soort, link: rij.links.find((l) => /^https?:/.test(l)) || null, delen };
 }

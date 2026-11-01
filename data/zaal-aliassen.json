@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Opschoning van zalen. 'zalen': een zaalnaam uit een speellijst (plaats|zaal, als slug) hoort bij dit theater. 'samenvoegen': deze zaal is dezelfde als die andere; de speeldata gaan mee en de dubbele zaal verdwijnt. 'verbeteren': naam, plaats of land van een zaal met de hand rechtzetten.",
+  "_uitleg": "Opschoning van zalen. 'zalen': een zaalnaam uit een speellijst (plaats|zaal, als slug) hoort bij dit theater. 'samenvoegen': deze zaal is dezelfde als die andere; de speeldata gaan mee en de dubbele zaal verdwijnt. 'verbeteren': naam, plaats of land van een zaal met de hand rechtzetten (\"website\": false = nooit een website uit een speellijst overnemen).",
   "zalen": {
     "heerlen|parkstad-limburg-theaters": "theater-heerlen",
     "heerlen|plt": "theater-heerlen",
@@ -25,7 +25,16 @@
     "parkstad-limburg-theaters-theater-heerlen": "theater-heerlen",
     "cultuurcentrum-martien-van-doorne-deurne": "cultuurcentrum-deurne",
     "stichting-kulturele-kommissie-winsum": "op-maarhuizen-winsum",
-    "podia-heemstede-amsterdam": "podia-heemstede"
+    "podia-heemstede-amsterdam": "podia-heemstede",
+    "cc-t-aambeeld-aartselaar": "cultuur-centraal-aartselaar",
+    "cc-stroming-evergem": "cultuurcentrum-evergem",
+    "ccha-hasselt": "cultuurcentrum-hasselt",
+    "de-velinx-tongeren-borgloon": "cc-de-velinx-tongeren",
+    "cc-wevelgem": "cc-guldenberg-wevelgem",
+    "de-meent-alsemberg-beersel": "cc-de-meent-alsemberg",
+    "mark-liebrecht-schouwburg-morstel": "mark-liebrecht-mortsel",
+    "parktheater-eindhoven-bekijk-detail": "parktheater-eindhoven",
+    "el-teatro-ijmuiden": "el-theatro-spaarndam"
   },
   "verbeteren": {
     "de-pinte-polderbos": {
@@ -86,6 +95,19 @@
     },
     "kasteel-dussen-try-out": {
       "naam": "Kasteel Dussen"
+    },
+    "middelkerke-silt": {
+      "naam": "Silt",
+      "plaats": "Middelkerke"
+    },
+    "cc-de-meent-alsemberg": {
+      "website": "https://www.demeent.be"
+    },
+    "cc-de-mol-lier": {
+      "website": false
+    },
+    "aula-pieter-de-somer-leuven": {
+      "website": false
     }
   }
 }
