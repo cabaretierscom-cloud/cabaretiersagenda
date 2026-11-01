@@ -105,6 +105,15 @@ Op GitHub draait dit elke nacht automatisch (`.github/workflows/bijwerken.yml`).
   ```
 
   Bij de volgende keer samenvoegen worden de artiesten en hun voorstellingen samengevoegd. Een duo mag naar twee artiesten verwijzen. Tikfouten van één letter in een lange naam ("Lisa Osterman") en toevoegingen als "(reprise)" worden al vanzelf herkend.
+- **Andere schrijfwijze van een titel:** staat dezelfde voorstelling er twee keer in omdat theaters de titel anders schrijven, zet de titel die weg moet dan per artiest in `data/titel-aliassen.json`, met de goede titel erachter:
+
+  ```json
+  "Jandino Asporaat": {
+    "Jubileumvoorstelling": "De Grote Jubileumshow - 20 Jaar Jandino"
+  }
+  ```
+
+  Bij de volgende keer samenvoegen worden het één voorstelling, en het oude adres van de voorstellingspagina verwijst door naar het nieuwe.
 - **Opruimen:** artiesten en voorstellingen zonder enige speeldatum worden bij het samenvoegen verwijderd. Een artiest waarbij je zelf een land of `ookBekendAls` hebt ingevuld, blijft altijd staan.
 
 ## Zelf draaien

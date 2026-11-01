@@ -122,6 +122,15 @@ writeFileSync(join(out, "sitemap.xml"),
     const regel = `RedirectMatch 301 ^/artiesten/${van.replace(/[.+?^$()[\]{}|\\]/g, "\\$&")}(/.*)?$ ${SITE.url}${naar}`;
     if (!regels.includes(regel)) regels.push(regel);
   }
+  // Samengevoegde titels (data/titel-aliassen.json): de oude voorstellingspagina gaat naar de nieuwe.
+  for (const [naam, titels] of Object.entries(JSON.parse(readFileSync(join(root, "data", "titel-aliassen.json"), "utf8")))) {
+    const a = slugVan(naam);
+    for (const [oud, nieuw] of Object.entries(titels)) {
+      const van = `/artiesten/${a}/${slugVan(oud)}/`, naar = `/artiesten/${a}/${slugVan(nieuw)}/`;
+      if (van === naar || bestaat.has(van)) continue;
+      regels.push(`RedirectMatch 301 ^${van.replace(/\/$/, "").replace(/[.+?^$()[\]{}|\\]/g, "\\$&")}/?$ ${SITE.url}${bestaat.has(naar) ? naar : `/artiesten/${a}/`}`);
+    }
+  }
   // /artiesten/<festival>/ en alles daaronder (oude voorstellingspagina's) -> /festivals/<festival>/.
   for (const [id, f] of [...t.festivalVan].sort()) regels.push(`RedirectMatch 301 ^/artiesten/${id.replace(/[.+?^$()[\]{}|\\]/g, "\\$&")}(/.*)?$ ${SITE.url}/festivals/${f}/`);
   const ht = join(out, ".htaccess");
