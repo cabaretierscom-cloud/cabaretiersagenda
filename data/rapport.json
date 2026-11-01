@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-01",
   "totaal": {
-    "speeldata": 7089,
-    "komend": 6817,
-    "artiesten": 517,
-    "zalen": 643,
-    "plaatsen": 461,
-    "voorstellingen": 811
+    "speeldata": 7162,
+    "komend": 6890,
+    "artiesten": 516,
+    "zalen": 644,
+    "plaatsen": 462,
+    "voorstellingen": 810
   },
   "bronnen": [
     {
@@ -476,10 +476,10 @@
     {
       "bron": "kobra",
       "naam": "Speellijsten van Kobra Theaterproducties (import)",
-      "opgehaald": "2026-10-31",
-      "speeldata": 151,
-      "vorige": 151,
-      "dubbel": 68
+      "opgehaald": "2026-11-01",
+      "speeldata": 222,
+      "vorige": 223,
+      "dubbel": 72
     },
     {
       "bron": "speellijsten",
@@ -890,6 +890,13 @@
         "plaats": "Best",
         "land": "NL",
         "website": "https://tejaterke.nl"
+      },
+      {
+        "id": "stadstheater-de-bond-oldenzaal",
+        "naam": "Stadstheater De Bond",
+        "plaats": "Oldenzaal",
+        "land": "NL",
+        "website": "https://www.stadstheaterdebond.nl"
       }
     ],
     "voorstellingen": [
@@ -1074,12 +1081,12 @@
     },
     {
       "datum": "2026-11-01",
-      "speeldata": 7089,
-      "komend": 6817,
-      "artiesten": 517,
-      "zalen": 643,
-      "plaatsen": 461,
-      "voorstellingen": 811
+      "speeldata": 7162,
+      "komend": 6890,
+      "artiesten": 516,
+      "zalen": 644,
+      "plaatsen": 462,
+      "voorstellingen": 810
     }
   ]
 }

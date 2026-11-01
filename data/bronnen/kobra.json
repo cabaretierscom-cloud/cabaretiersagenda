@@ -2,9 +2,1472 @@
   "bron": "kobra",
   "naam": "Speellijsten van Kobra Theaterproducties (import)",
   "soort": "speellijst",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-01",
   "theaters": [],
   "speeldata": [
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Ogterop",
+        "plaats": "Meppel",
+        "land": "NL",
+        "website": "https://www.schouwburgogterop.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-11-06",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgogterop.nl/programma/baby-reindeer/06-11-2026-20-15"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "ECI Cultuurfabriek",
+        "plaats": "Roermond",
+        "land": "NL",
+        "website": "https://www.ecicultuurfabriek.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-11-07",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://ecicultuurfabriek.nl/voorstelling/baby-reindeer/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Fransche School",
+        "plaats": "Culemborg",
+        "land": "NL",
+        "website": "https://www.theaterdefranscheschool.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-11-08",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdefranscheschool.nl/programma-th/?TwwAction=TicketshopSearch&amp;TwwSearchFilter=theater"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg & Congrescentrum het Park",
+        "plaats": "Hoorn",
+        "land": "NL",
+        "website": "https://www.hetpark.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-11-11",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/baby-reindeer-10352622/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stad als Podium",
+        "plaats": "Harderwijk",
+        "land": "NL",
+        "website": "https://www.theaterharderwijk.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-11-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadalspodium.nl/productie/baby-reindeer/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Rijswijkse Schouwburg",
+        "plaats": "Rijswijk",
+        "land": "NL",
+        "website": "https://www.rijswijkseschouwburg.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-11-18",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.rijswijkseschouwburg.nl/voorstelling/baby-reindeer"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Singer Theater",
+        "plaats": "Laren",
+        "land": "NL",
+        "website": "https://www.singerlaren.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.singerlaren.nl/nl/agenda/baby-reindeer-9q3g"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Beun",
+        "plaats": "Heiloo",
+        "land": "NL",
+        "website": "https://www.vriendenvandebeun.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://debeunheiloo.nl/thijs-van-de-meeberg-baby-reindeer/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg de Kampanje",
+        "plaats": "Den Helder",
+        "land": "NL",
+        "website": "https://www.kampanje.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/baby-reindeer-1h54"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "DE KOM, stadstheater en kunstencentrum",
+        "plaats": "Nieuwegein",
+        "land": "NL",
+        "website": "https://www.dekom.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekom.nl/agenda/baby-reindeer-qgg9"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg De Kring",
+        "plaats": "Roosendaal",
+        "land": "NL",
+        "website": "https://www.dekringroosendaal.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-11-26",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekringroosendaal.nl/agenda/baby-reindeer-q8h1"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "VU Griffioen",
+        "plaats": "Amsterdam",
+        "land": "NL",
+        "website": "https://www.griffioen.vu.nl/"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://griffioen.vu.nl/voorstellingen/baby-reindeer-kobra-theaterproducties/27-11-2026-20-00"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Het Speelhuis",
+        "plaats": "Helmond",
+        "land": "NL",
+        "website": "https://www.theaterspeelhuis.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-12-01",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/thijs-van-de-meeberg-13283"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Lievekamp",
+        "plaats": "Oss",
+        "land": "NL",
+        "website": "https://www.lievekamp.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lievekamp.nl/programma/sensationele-solo-naar-de-netflixhit-baby-reindeer-02-dec-20-15/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsschouwburg De Harmonie",
+        "plaats": "Leeuwarden",
+        "land": "NL",
+        "website": "https://www.harmonie.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/baby-reindeer/52951"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Purmaryn",
+        "plaats": "Purmerend",
+        "land": "NL",
+        "website": "https://www.depurmaryn.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/baby-reindeer/?eventId=1549931777-1759220220"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Muze",
+        "plaats": "Noordwijk",
+        "land": "NL",
+        "website": "https://www.demuzenoordwijk.nl "
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://demuze.nl/programma/baby-reindeer-naar-de-netflixhit-van-richard-gadd/?speeldata=2026-12-12-20-15"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Zaantheater",
+        "plaats": "Zaandam",
+        "land": "NL",
+        "website": "https://www.zaantheater.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-01-15",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/baby-reindeer/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Ab-Art / Theater Piet Mondriaan",
+        "plaats": "Abcoude",
+        "land": "NL",
+        "website": "https://www.theaterpietmondriaan.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterpietmondriaan.nl/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater 't Voorhuys",
+        "plaats": "Emmeloord",
+        "land": "NL",
+        "website": "https://www.theater-voorhuys.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-01-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theater-voorhuys.nl/nl/agenda/baby-reindeer"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Schuur Haarlem",
+        "plaats": "Haarlem",
+        "land": "NL",
+        "website": "https://www.schuur.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-01-20",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schuur.nl/theater/baby-reindeer"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Zeeland Theaters (Schouwburg Middelburg, Scheldetheater, Theater de Mythe)",
+        "plaats": "Goes",
+        "land": "NL",
+        "website": "https://www.theaterverkoopzeeland.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zeelandtheaters.nl/programma/thijs-van-de-meeberg-baby-reindeer/21-01-2027-20-00"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Nobelaer",
+        "plaats": "Etten-Leur",
+        "land": "NL",
+        "website": "https://www.denobelaer.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.denobelaer.nl/agenda/baby-reindeer-13625"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Zwolse Theaters (Theater de Spiegel, Schouwburg Odeon)",
+        "plaats": "Zwolle",
+        "land": "NL",
+        "website": "https://www.zwolsetheaters.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-01-27",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/baby-reindeer"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadstheater Zoetermeer",
+        "plaats": "Zoetermeer",
+        "land": "NL",
+        "website": "https://www.stadstheater.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadstheater.nl/voorstelling/baby-reindeer/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Agnietenhof",
+        "plaats": "Tiel",
+        "land": "NL",
+        "website": "https://www.agnietenhof.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.agnietenhof.nl/agenda/baby-reindeer-4ff3"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Parkstad Limburg Theaters (Theater Heerlen)",
+        "plaats": "Heerlen",
+        "land": "NL",
+        "website": "https://www.plt.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-02-02",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/baby-reindeer-/02-02-2027-20-30"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg De Lawei",
+        "plaats": "Drachten",
+        "land": "NL",
+        "website": "https://www.lawei.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/thijs-van-de-meeberg-11hl"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Blauwe Kei",
+        "plaats": "Veghel",
+        "land": "NL",
+        "website": "https://www.blauwekei.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.blauwekei.nl/agenda/baby-reindeer-6tzy"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Koningshof",
+        "plaats": "Maassluis",
+        "land": "NL",
+        "website": "https://www.theaterkoningshof.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterkoningshof.nl/agenda/baby-reindeer-q7p2"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Cpunt",
+        "plaats": "Hoofddorp",
+        "land": "NL",
+        "website": "https://www.cpunt.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/baby-reindeer"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stichting Agora",
+        "plaats": "Lelystad",
+        "land": "NL",
+        "website": "https://www.agora-lelystad.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-02-24",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.agora-lelystad.nl/agenda/baby-reindeer-h3cq"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Munttheater",
+        "plaats": "Weert",
+        "land": "NL",
+        "website": "https://www.munttheater.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.munttheater.nl/agenda/baby-reindeer?_gl=1*qpzcfi*_up*MQ..*_ga*MjAwODU1NjIxMi4xNzg0MTk3NTQw*_ga_HFWCVW0RSZ*czE3ODQxOTc1NDAkbzEkZzEkdDE3ODQxOTc1NDIkajU4JGwwJGgw"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Maaspoort",
+        "plaats": "Venlo",
+        "land": "NL",
+        "website": "https://www.maaspoort.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-02-26",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/baby-reindeer-thijs-van-de-meeberg/26-02-2027-20-15/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Cultura",
+        "plaats": "Ede",
+        "land": "NL",
+        "website": "https://www.cultura-ede.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/thijs-van-de-meeberg-277314/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater aan het Vrijthof",
+        "plaats": "Maastricht",
+        "land": "NL",
+        "website": "https://www.theateraanhetvrijthof.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/toneel-theater/baby-reindeer"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Dok6 Theater",
+        "plaats": "Panningen",
+        "land": "NL",
+        "website": "https://www.dok6.eu"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-03-05",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://dok6.eu/theater/productie/baby-reindeer/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Schalm",
+        "plaats": "Veldhoven",
+        "land": "NL",
+        "website": "https://www.deschalm.com"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-03-10",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.deschalm.com/nl/programma/baby-reindeer-n745"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Spant",
+        "plaats": "Bussum",
+        "land": "NL",
+        "website": "https://www.spant.org"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spant.org/voorstellingen/baby-reindeer"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Vest",
+        "plaats": "Alkmaar",
+        "land": "NL",
+        "website": "https://www.theaterdevest.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdevest.nl/tickets/seizoen-26-27/thijs-van-de-meeberg-baby-reindeer/?showId=3826447617-1766485619"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsschouwburg Utrecht",
+        "plaats": "Utrecht",
+        "land": "NL",
+        "website": "https://www.ssbu.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/baby-reindeer-kobra-theaterproducties-thijs-van-de-meeberg?q-page=baby"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Rabo Theater De Meenthe",
+        "plaats": "Steenwijk",
+        "land": "NL",
+        "website": "https://www.demeenthe.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.demeenthe.nl/theater/voorstellingen/baby-reindeer-sensationele-solo-naar-de-netflixhit/19-03-2027-20-15/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Leidse Schouwburg - Stadsgehoorzaal",
+        "plaats": "Leiden",
+        "land": "NL",
+        "website": "https://www.leidseschouwburg-stadsgehoorzaal.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-03-20",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/baby-reindeer/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Maagd",
+        "plaats": "Bergen op Zoom",
+        "land": "NL",
+        "website": "https://www.demaagd.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.demaagd.nl/agenda/baby-reindeer-xfqj"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Hanzehof & Buitensociëteit",
+        "plaats": "Zutphen",
+        "land": "NL",
+        "website": "https://www.hanzehof.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hanzehof.nl/nl/voorstelling/baby-reindeer/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Gasthoes",
+        "plaats": "Horst",
+        "land": "NL",
+        "website": "https://www.gasthoes.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-03-27",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.gasthoes.nl/programma/baby-reindeer"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Spot Groningen",
+        "plaats": "Groningen",
+        "land": "NL",
+        "website": "https://www.spotgroningen.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-03-30",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/baby-reindeer/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Amstelveen",
+        "plaats": "Amstelveen",
+        "land": "NL",
+        "website": "https://www.schouwburgamstelveen.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delanding.nl/agenda/seizoen-2026-2027/baby-reindeer/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Parkgebouw Rijssen",
+        "plaats": "Rijssen",
+        "land": "NL",
+        "website": "https://www.parkgebouw.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parkgebouw.nl/evenementen/april2027/104870/baby-reindeer.html"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Tamboer",
+        "plaats": "Hoogeveen",
+        "land": "NL",
+        "website": "https://www.detamboer.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://detamboer.nl/programma/baby-reindeer-naar-de-netflixhit-van-richard-gadd-2027"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Stoep",
+        "plaats": "Spijkenisse",
+        "land": "NL",
+        "website": "https://www.theaterdestoep.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-07",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/baby-reindeer-2627"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadstheater De Bond",
+        "plaats": "Oldenzaal",
+        "land": "NL",
+        "website": "https://www.stadstheaterdebond.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadstheaterdebond.nl/theater/baby-reindeer-thijs-van-de-meeberg/08-04-2027-20-15"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Koornbeurs",
+        "plaats": "Franeker",
+        "land": "NL",
+        "website": "https://www.theaterdekoornbeurs.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdekoornbeurs.nl/voorstelling/10047652/baby-reindeer/10362841"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Kunstmin",
+        "plaats": "Dordrecht",
+        "land": "NL",
+        "website": "https://www.kunstmin.nl "
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-10",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/thijs-van-de-meeberg-baby-reindeer/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Posthuis Theater",
+        "plaats": "Heerenveen",
+        "land": "NL",
+        "website": "https://www.posthuistheater.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-14",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.posthuistheater.nl/agenda/baby-reindeer-7l2p"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Venray",
+        "plaats": "Venray",
+        "land": "NL",
+        "website": "https://www.schouwburgvenray.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14734/baby-reindeer"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Musis & Stadstheater Arnhem",
+        "plaats": "Arnhem",
+        "land": "NL",
+        "website": "https://www.stadstheater-arnhem.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/thijs-van-de-meeberg-baby-reindeer/10110"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "WestlandTheater De Naald",
+        "plaats": "Naaldwijk",
+        "land": "NL",
+        "website": "https://www.westlandtheater.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-21",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westlandtheater.nl/programma/baby-reindeer-1h6t"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater aan de Slinger",
+        "plaats": "Houten",
+        "land": "NL",
+        "website": "https://www.theateraandeslinger.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.aandeslinger.nl/programma/baby-reindeer"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Parktheater Eindhoven",
+        "plaats": "Eindhoven",
+        "land": "NL",
+        "website": "https://www.parktheater.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/baby-reindeer-8b37"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Wilminktheater",
+        "plaats": "Enschede",
+        "land": "NL",
+        "website": "https://www.wilminktheater.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-24",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/baby-reindeer-tj43"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Leest",
+        "plaats": "Waalwijk",
+        "land": "NL",
+        "website": "https://www.deleest.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-28",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.deleest.nl/programma/thijs-van-de-meeberg-z6w1"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Deventer Schouwburg",
+        "plaats": "Deventer",
+        "land": "NL",
+        "website": "https://www.deventerschouwburg.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://deventerschouwburg.nl/programma/baby-reindeer"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Isala Theater",
+        "plaats": "Capelle aan den Ijssel",
+        "land": "NL",
+        "website": "https://www.isalatheater.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-04-30",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.isalatheater.nl/agenda/baby-reindeer-zvyn"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theaters Diligentia en Pepijn",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "website": "https://www.diligentia-pepijn.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.diligentia-pepijn.nl/agenda/baby-reindeer-1g2p"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Junushoff",
+        "plaats": "Wageningen",
+        "land": "NL",
+        "website": "https://www.junushoff.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-05-12",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.junushoff.nl/programma/baby-reindeer-r3ym"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater het Kruispunt",
+        "plaats": "Barendrecht",
+        "land": "NL",
+        "website": "https://www.theaterhetkruispunt.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterhetkruispunt.nl/agenda/thijs-van-de-meeberg-hp81"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Bussel",
+        "plaats": "Oosterhout",
+        "land": "NL",
+        "website": "https://www.theaterdebussel.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-05-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdebussel.nl/programma/baby-reindeer-ns2v"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Goudse Schouwburg",
+        "plaats": "Gouda",
+        "land": "NL",
+        "website": "https://www.goudseschouwburg.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/baby-reindeer-thijs-van-de-meeberg-10025726/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsgehoorzaal Vlaardingen",
+        "plaats": "Vlaardingen",
+        "land": "NL",
+        "website": "https://www.stadsgehoorzaal.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/baby-reindeer"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Kennemer Theater",
+        "plaats": "Beverwijk",
+        "land": "NL",
+        "website": "https://www.kennemertheater.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kennemertheater.nl/programma/baby-reindeer-szsp"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "'t Mozaïek",
+        "plaats": "Wijchen",
+        "land": "NL",
+        "website": "https://www.theatermozaiek.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.mozaiekwijchen.nl/voorstelling-seizoen-2627-baby-reindeer/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "ATLAS Theater",
+        "plaats": "Emmen",
+        "land": "NL",
+        "website": "https://www.atlastheater.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.atlastheater.nl/voorstellingen/sentationele-solo-naar-de-netflixhit-baby-reindeer-29-mei/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Markant Theater Maashorst",
+        "plaats": "Uden",
+        "land": "NL",
+        "website": "https://www.markantmaashorst.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-06-02",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.markantmaashorst.nl/nl/agenda/baby-reindeer-zvrx"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Hof 88",
+        "plaats": "Almelo",
+        "land": "NL",
+        "website": "https://www.hof88.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-06-03",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/baby-reindeer-baby-reindeer/03-06-2027-20-15"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsschouwburg De Harmonie",
+        "plaats": "Leeuwarden",
+        "land": "NL",
+        "website": "https://www.harmonie.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-06-04",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/baby-reindeer/52951"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Verkadefabriek dernière",
+        "plaats": "s-Hertogenbosch",
+        "land": "NL",
+        "website": "https://www.verkadefabriek.nl"
+      },
+      "artiesten": [
+        "Thijs van de Meeberg"
+      ],
+      "titel": "Baby Reindeer",
+      "genre": "cabaret",
+      "datum": "2027-06-05",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/thijs-van-de-meeberg-baby-reindeer-162062"
+    },
     {
       "theater": {
         "zoeken": true,
@@ -2900,25 +4363,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Het Diekhuus",
-        "plaats": "Middelharnis",
-        "land": "NL",
-        "website": "https://www.hetdiekhuus.nl"
-      },
-      "artiesten": [
-        "Ramon Chatrer"
-      ],
-      "titel": "Volk",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.hetdiekhuus.nl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Theater Bellevue",
         "plaats": "Amsterdam",
         "land": "NL",
@@ -3124,25 +4568,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterpodiumheino.nl/ramonchatrer"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Koornbeurs",
-        "plaats": "Franeker",
-        "land": "NL",
-        "website": "https://www.theaterdekoornbeurs.nl"
-      },
-      "artiesten": [
-        "Ronald Snijders"
-      ],
-      "titel": "Leven met humor",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterdekoornbeurs.nl/voorstelling/10047586/leven-met-humor/10362775"
     },
     {
       "theater": {

@@ -230,7 +230,8 @@ function zorgVoorVoorstelling(r, artiestIdsVanRecord, theaterId) {
 function opgeschoondeArtiesten(namen) {
   const uit = [];
   for (const ruw of namen) {
-    let n = netteNaam(String(ruw).trim())
+    // "Kobra theaterproducties | Thijs van de Meeberg": de producent ervoor valt weg, de artiest blijft.
+    let n = netteNaam(String(ruw).trim().replace(/^[^|]*\b(theater)?producties?\s*\|\s*(?=\S)/i, ""))
       .replace(/\s*[(\[]\s*(reprise|try[ -]?out|premi[eè]re|derni[eè]re|herneming)\s*[)\]]\s*$/i, "")
       .replace(/\s*:\s+.*$|\s+[-–|]\s+.*$/, "")
       .replace(/,?\s+e\.?\s?a\.?$/i, "")
