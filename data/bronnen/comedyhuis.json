@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-01",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,45 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Vroege zaterdagavondshow",
-      "genre": "stand-up",
-      "datum": "2026-10-31",
-      "tijd": "18:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/vroege-zaterdagavondshow-31-oktober-2026/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kargadoor",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://www.kargadoor.nl"
-      },
-      "artiesten": [],
-      "titel": "All English Comedy Night",
-      "genre": "stand-up",
-      "datum": "2026-10-31",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/all-english-comedy-night-utrecht-31-october-2026/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Zaterdagavondshow",
-      "genre": "stand-up",
-      "datum": "2026-10-31",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/zaterdagavondshow-31-oktober/"
-    },
     {
       "theater": {
         "zoeken": true,

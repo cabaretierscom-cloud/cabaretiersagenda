@@ -237,7 +237,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* Affiche met promobeeld ("Nu in het theater"): bovenin de foto, daaronder het kleurvlak van de artiest,
    op de naad twee inkepingen zoals bij een toegangskaartje. */
 /* Compact formaat, zodat onder de eerste rij het begin van de volgende in beeld komt. */
-.poster-foto { --naad: 50%; width: 240px; height: 390px; display: flex; flex-direction: column; padding: 0; border-radius: 18px; }
+.poster-foto { --naad: 50%; width: 240px; height: 430px; display: flex; flex-direction: column; padding: 0; border-radius: 18px; }
 /* Losse kaartjes met wat ruimte ertussen; de eerste begint op de lijn van de koppen. */
 .strip:has(.artist-card),
 .strip:has(.poster-foto) { --rand: max(16px, calc((100vw - var(--wrap)) / 2 + 16px)); gap: 14px; padding-inline: var(--rand); scroll-padding-inline: var(--rand); }
@@ -267,14 +267,14 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-sterren {
   position: absolute; left: 14px; top: 14px; display: inline-flex; align-items: baseline; gap: 6px;
   padding: 4px 10px 5px; border-radius: 999px; background: var(--bg); color: var(--fg);
-  font-size: 1.05rem; letter-spacing: .06em; line-height: 1;
+  font-size: 1.12rem; letter-spacing: .06em; line-height: 1;
 }
 .poster-zaal .poster-beeld img { object-position: 50% 50%; }
 .poster-zaal .where { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
 .wall-zalen { padding-top: 20px; }
 /* Zit het gezicht bovenin, dan komen de sterren onderaan het beeld. */
 .poster-sterren.onder { top: auto; bottom: 18px; }
-.poster-sterren small { font-size: .78rem; font-weight: 600; letter-spacing: 0; }
+.poster-sterren small { font-size: .85rem; font-weight: 600; letter-spacing: 0; }
 .poster-vlak { position: relative; isolation: isolate; flex: 0 0 auto; min-height: calc(100% - var(--naad)); display: flex; border-radius: 0 0 18px 18px; transition: box-shadow .28s ease; }
 /* Schaduw bij aanwijzen alleen onder het kleurvlak, zodat er geen rand om de knipgaten komt.
    Daarvoor mag de kaart niet meer bijsnijden (overflow); de foto en de stippen hebben eigen ronde hoeken. */
@@ -298,14 +298,14 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-foto .month { font-size: 1.35rem; }
 .poster-foto .ftitel {
   display: block; font-family: var(--font-display); font-weight: 900; text-transform: uppercase;
-  font-size: 2.6rem; line-height: .9; letter-spacing: .005em; margin-top: 2px; overflow-wrap: anywhere;
+  font-size: 2.4rem; line-height: .9; letter-spacing: .005em; margin-top: 2px; overflow-wrap: anywhere;
 }
-.poster-foto .ftitel.long { font-size: 2.1rem; }
-.poster-foto .ftitel.xlong { font-size: 1.4rem; }
+.poster-foto .ftitel.long { font-size: 1.9rem; }
+.poster-foto .ftitel.xlong { font-size: 1.3rem; }
 .poster-foto .fartiest { display: block; font-weight: 700; font-size: 1.15rem; line-height: 1.2; margin-top: 6px; text-wrap: balance; }
-.poster-foto .where { display: block; font-size: .85rem; line-height: 1.35; margin: 8px 0 10px; }
-.poster-foto .where .wanneer { display: block; font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; opacity: .8; }
-.poster-foto .tag { font-size: .78rem; padding: 2px 9px; }
+.poster-foto .where { display: block; font-size: .95rem; line-height: 1.35; margin: 8px 0 10px; }
+.poster-foto .where .wanneer { display: block; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; opacity: .8; }
+.poster-foto .tag { font-size: .85rem; padding: 2px 9px; }
 .poster-foto .tag { align-self: flex-start; margin-top: auto; }
 @media (hover: hover) and (pointer: fine) {
   .poster-foto:hover .poster-beeld img, .poster-foto:focus-visible .poster-beeld img { transform: scale(1.04); }
@@ -323,17 +323,18 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .strip-nav svg { width: 22px; height: 22px; }
 @media (max-width: 600px) {
   .poster { width: 78vw; height: 470px; }
-  .poster-foto { width: min(62vw, 250px); height: 340px; --naad: 50%; }
+  .poster-foto { width: min(60vw, 240px); height: 372px; --naad: 50%; }
   .poster-info { padding: 12px 8px 12px 14px; }
   .poster-foto .wanneer { font-size: .72rem; }
   .poster-foto .day { font-size: 2.3rem; }
   .poster-foto .month { font-size: 1.15rem; }
-  .poster-foto .ftitel { font-size: 2.1rem; margin-top: 0; }
-  .poster-foto .ftitel.long { font-size: 1.75rem; }
-  .poster-foto .ftitel.xlong { font-size: 1.2rem; }
-  .poster-foto .fartiest { font-size: 1rem; margin-top: 4px; }
-  .poster-foto .where { font-size: .76rem; margin-bottom: 8px; }
-  .poster-sterren { font-size: .9rem; left: 10px; top: 10px; }
+  .poster-foto .ftitel { font-size: 1.95rem; margin-top: 0; }
+  .poster-foto .ftitel.long { font-size: 1.6rem; }
+  .poster-foto .ftitel.xlong { font-size: 1.1rem; }
+  .poster-foto .fartiest { font-size: 1.05rem; margin-top: 4px; }
+  .poster-foto .where { font-size: .86rem; margin-bottom: 8px; }
+  .poster-sterren { font-size: .98rem; left: 10px; top: 10px; }
+  .poster-foto .tag { font-size: .8rem; }
   .poster-stub { flex-basis: 20px; }
   .wall { padding-top: 12px; }
   .wall-head { flex-wrap: nowrap; align-items: baseline; }
@@ -348,8 +349,10 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* ---------- Secties ---------- */
 .block { padding-block: 56px 24px; scroll-margin-top: 80px; }
 .block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
-.kop-artiesten { padding-top: 32px; margin-bottom: 0; }
-.kop-artiesten h1 { font-size: 2.2rem; }
+.kop-artiesten { padding-top: 16px; margin-bottom: 0; }
+/* Paginakoppen (menu, /alle-cabaretiers/): even groot en even hoog als "Nu in het theater" op de homepage. */
+main > .block:first-child { padding-top: 16px; }
+main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* /artiesten/: "Van A tot Z" direct onder de rij Nu op tournee. */
 .az-blok { padding-top: 8px; }
 .az-blok > .sub-head:first-child { margin-top: 0; }
@@ -357,6 +360,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .wall-sub .wall-head h2 { font-weight: 800; font-size: var(--step-2); line-height: 1.1; }
 .block-head h1, .block-head h2 { font-family: var(--font-display); font-weight: 900; font-size: var(--step-3); line-height: .95; }
 .block-head p { margin: 0; color: var(--ink-2); }
+@media (max-width: 600px) { .block-head h1 { font-size: clamp(1.6rem, 8.4vw, 2.1rem); } }
 
 /* ---------- Filters ---------- */
 .filters {
@@ -482,12 +486,13 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .strip .artist-card h3 { font-size: 2.05rem; }
 .strip .artist-card h3.lang { font-size: 1.65rem; }
 .strip .artist-card h3.xlang { font-size: 1.3rem; }
+.strip .artist-card p { font-size: 1.02rem; }
 @media (max-width: 600px) {
   .strip .artist-card { flex-basis: 165px; min-height: 175px; padding: 14px; }
   .strip .artist-card h3 { font-size: 1.5rem; }
   .strip .artist-card h3.lang { font-size: 1.25rem; }
   .strip .artist-card h3.xlang { font-size: 1.05rem; }
-  .strip .artist-card p { font-size: .82rem; }
+  .strip .artist-card p { font-size: .9rem; }
 }
 /* /festivals/: per soort een kop; op een telefoon twee kaarten naast elkaar. */
 .festival-kop { line-height: 1.05; }
@@ -814,7 +819,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 /* Video's op artiestpagina's: kaart in de kleur van de artiest, speler pas na een klik. */
 .videos { margin-top: 40px; }
 .videos h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--step-2); margin: 0 0 16px; }
-.videos ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 16px; }
+.videos ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 560px), 1fr)); gap: 24px; }
 .video, .video-speler { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: var(--radius-poster); }
 .video { position: relative; background: var(--bg); color: var(--fg); text-decoration: none; padding: 16px; overflow: hidden; }
 .video:hover .video-play, .video:focus-visible .video-play { transform: scale(1.08); }
