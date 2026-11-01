@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-01",
   "totaal": {
-    "speeldata": 7089,
-    "komend": 6817,
-    "artiesten": 517,
+    "speeldata": 6002,
+    "komend": 5730,
+    "artiesten": 512,
     "zalen": 642,
     "plaatsen": 461,
-    "voorstellingen": 812
+    "voorstellingen": 801
   },
   "bronnen": [
     {
@@ -20,9 +20,9 @@
     {
       "bron": "amphion",
       "naam": "Amphion",
-      "opgehaald": "2026-10-31",
-      "speeldata": 60,
-      "vorige": 60,
+      "opgehaald": "2026-11-01",
+      "speeldata": 59,
+      "vorige": 59,
       "dubbel": 0
     },
     {
@@ -52,7 +52,7 @@
     {
       "bron": "carre",
       "naam": "Koninklijk Theater Carré",
-      "opgehaald": "2026-10-31",
+      "opgehaald": "2026-11-01",
       "speeldata": 56,
       "vorige": 56,
       "dubbel": 0
@@ -76,17 +76,17 @@
     {
       "bron": "comedyhuis",
       "naam": "Comedyhuis Utrecht",
-      "opgehaald": "2026-10-31",
-      "speeldata": 308,
-      "vorige": 308,
+      "opgehaald": "2026-11-01",
+      "speeldata": 305,
+      "vorige": 305,
       "dubbel": 0
     },
     {
       "bron": "comedytrain",
       "naam": "Comedytrain",
-      "opgehaald": "2026-10-31",
-      "speeldata": 149,
-      "vorige": 149,
+      "opgehaald": "2026-11-01",
+      "speeldata": 145,
+      "vorige": 145,
       "dubbel": 0
     },
     {
@@ -116,7 +116,7 @@
     {
       "bron": "delamar",
       "naam": "DeLaMar",
-      "opgehaald": "2026-10-31",
+      "opgehaald": "2026-11-01",
       "speeldata": 47,
       "vorige": 47,
       "dubbel": 0
@@ -132,7 +132,7 @@
     {
       "bron": "harmonie",
       "naam": "De Harmonie",
-      "opgehaald": "2026-10-31",
+      "opgehaald": "2026-11-01",
       "speeldata": 46,
       "vorige": 46,
       "dubbel": 0
@@ -204,9 +204,9 @@
     {
       "bron": "kunstmin",
       "naam": "Kunstmin",
-      "opgehaald": "2026-10-31",
-      "speeldata": 51,
-      "vorige": 51,
+      "opgehaald": "2026-11-01",
+      "speeldata": 50,
+      "vorige": 50,
       "dubbel": 0
     },
     {
@@ -228,15 +228,15 @@
     {
       "bron": "leiden",
       "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-      "opgehaald": "2026-10-31",
-      "speeldata": 84,
-      "vorige": 84,
+      "opgehaald": "2026-11-01",
+      "speeldata": 83,
+      "vorige": 83,
       "dubbel": 0
     },
     {
       "bron": "luxor",
       "naam": "Luxor Theater",
-      "opgehaald": "2026-10-31",
+      "opgehaald": "2026-11-01",
       "speeldata": 135,
       "vorige": 135,
       "dubbel": 0
@@ -252,7 +252,7 @@
     {
       "bron": "musis",
       "naam": "Musis & Stadstheater Arnhem",
-      "opgehaald": "2026-10-31",
+      "opgehaald": "2026-11-01",
       "speeldata": 18,
       "vorige": 18,
       "dubbel": 0
@@ -292,7 +292,7 @@
     {
       "bron": "parade",
       "naam": "Theater aan de Parade",
-      "opgehaald": "2026-10-31",
+      "opgehaald": "2026-11-01",
       "speeldata": 32,
       "vorige": 32,
       "dubbel": 0
@@ -316,7 +316,7 @@
     {
       "bron": "plt",
       "naam": "PLT (Parkstad Limburg Theaters)",
-      "opgehaald": "2026-10-31",
+      "opgehaald": "2026-11-01",
       "speeldata": 130,
       "vorige": 130,
       "dubbel": 0
@@ -324,7 +324,7 @@
     {
       "bron": "purmaryn",
       "naam": "Theater De Purmaryn",
-      "opgehaald": "2026-10-31",
+      "opgehaald": "2026-11-01",
       "speeldata": 55,
       "vorige": 55,
       "dubbel": 0
@@ -356,7 +356,7 @@
     {
       "bron": "spot-groningen",
       "naam": "SPOT Groningen",
-      "opgehaald": "2026-10-31",
+      "opgehaald": "2026-11-01",
       "speeldata": 89,
       "vorige": 89,
       "dubbel": 0
@@ -404,7 +404,7 @@
     {
       "bron": "vlaardingen",
       "naam": "Stadsgehoorzaal Vlaardingen",
-      "opgehaald": "2026-10-31",
+      "opgehaald": "2026-11-01",
       "speeldata": 28,
       "vorige": 28,
       "dubbel": 0
@@ -436,9 +436,9 @@
     {
       "bron": "zaantheater",
       "naam": "Zaantheater",
-      "opgehaald": "2026-10-31",
-      "speeldata": 58,
-      "vorige": 58,
+      "opgehaald": "2026-11-01",
+      "speeldata": 57,
+      "vorige": 57,
       "dubbel": 0
     },
     {
@@ -452,7 +452,7 @@
     {
       "bron": "zwolle",
       "naam": "Zwolse Theaters",
-      "opgehaald": "2026-10-31",
+      "opgehaald": "2026-11-01",
       "speeldata": 76,
       "vorige": 76,
       "dubbel": 0
@@ -460,18 +460,18 @@
     {
       "bron": "5to9",
       "naam": "Agenda van 5to9",
-      "opgehaald": "2026-10-31",
-      "speeldata": 424,
-      "vorige": 424,
+      "opgehaald": "2026-11-01",
+      "speeldata": 421,
+      "vorige": 421,
       "dubbel": 51
     },
     {
       "bron": "bunker",
       "naam": "Agenda van Bunker Theaterzaken",
-      "opgehaald": "2026-10-31",
-      "speeldata": 260,
-      "vorige": 260,
-      "dubbel": 494
+      "opgehaald": "2026-11-01",
+      "speeldata": 254,
+      "vorige": 254,
+      "dubbel": 493
     },
     {
       "bron": "kobra",
@@ -485,9 +485,9 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-01",
-      "speeldata": 2230,
+      "speeldata": 1143,
       "vorige": 2230,
-      "dubbel": 1051
+      "dubbel": 554
     }
   ],
   "nieuw": {
@@ -511,22 +511,6 @@
       {
         "id": "jacques-vermeire",
         "naam": "Jacques Vermeire"
-      },
-      {
-        "id": "janneke-jager",
-        "naam": "Janneke Jager"
-      },
-      {
-        "id": "nele-bauwens",
-        "naam": "Nele Bauwens"
-      },
-      {
-        "id": "roel-maalderink",
-        "naam": "Roel Maalderink"
-      },
-      {
-        "id": "warre-verlinden",
-        "naam": "Warre Verlinden"
       }
     ],
     "zalen": [
@@ -923,41 +907,6 @@
         "artiesten": [
           "jacques-vermeire"
         ]
-      },
-      {
-        "id": "janneke-jager-jaagt",
-        "titel": "Jaagt",
-        "artiesten": [
-          "janneke-jager"
-        ]
-      },
-      {
-        "id": "mohsin-abbas-moh-experience",
-        "titel": "Moh?! Experience",
-        "artiesten": [
-          "mohsin-abbas"
-        ]
-      },
-      {
-        "id": "nele-bauwens-nele-bauwens",
-        "titel": "Nele Bauwens",
-        "artiesten": [
-          "nele-bauwens"
-        ]
-      },
-      {
-        "id": "roel-maalderink-verbroedering",
-        "titel": "Verbroedering",
-        "artiesten": [
-          "roel-maalderink"
-        ]
-      },
-      {
-        "id": "warre-verlinden-zeker-onzeker",
-        "titel": "Zeker Onzeker",
-        "artiesten": [
-          "warre-verlinden"
-        ]
       }
     ]
   },
@@ -1028,12 +977,12 @@
     },
     {
       "datum": "2026-11-01",
-      "speeldata": 7089,
-      "komend": 6817,
-      "artiesten": 517,
+      "speeldata": 6002,
+      "komend": 5730,
+      "artiesten": 512,
       "zalen": 642,
       "plaatsen": 461,
-      "voorstellingen": 812
+      "voorstellingen": 801
     }
   ]
 }

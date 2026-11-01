@@ -3202,14 +3202,6 @@
     ]
   },
   {
-    "id": "janneke-jager-jaagt",
-    "titel": "Jaagt",
-    "artiesten": [
-      "janneke-jager"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "jasper-posson-eeuwige-jeugd",
     "titel": "Eeuwige Jeugd",
     "artiesten": [
@@ -4385,14 +4377,6 @@
     ]
   },
   {
-    "id": "marjolijn-van-kooten-de-lizz",
-    "titel": "De LizZ",
-    "artiesten": [
-      "marjolijn-van-kooten"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "mark-waumans-mark-waumans",
     "titel": "Mark Waumans",
     "artiesten": [
@@ -4608,14 +4592,6 @@
     ]
   },
   {
-    "id": "micha-wertheim-boekenborrel",
-    "titel": "boekenborrel",
-    "artiesten": [
-      "micha-wertheim"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "micha-wertheim-micha-wertheim-voor-iedereen",
     "titel": "Micha Wertheim voor iedereen",
     "artiesten": [
@@ -4742,14 +4718,6 @@
     "genre": "stand-up"
   },
   {
-    "id": "mohsin-abbas-moh-experience",
-    "titel": "Moh?! Experience",
-    "artiesten": [
-      "mohsin-abbas"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "morgan-jay-stadsschouwburg-antwerpen",
     "titel": "Morgan Jay",
     "artiesten": [],
@@ -4867,14 +4835,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "nathalie-baartman-winsum",
-    "titel": "Winsum",
-    "artiesten": [
-      "nathalie-baartman"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "nationaal-theaterweekend-2027-blind-date-cabaret",
     "titel": "Blind Date - Cabaret",
     "artiesten": [
@@ -4887,14 +4847,6 @@
     "titel": "Finale 2026",
     "artiesten": [
       "nederlands-studentenkampioenschap-improvisatie-comedy"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "nele-bauwens-nele-bauwens",
-    "titel": "Nele Bauwens",
-    "artiesten": [
-      "nele-bauwens"
     ],
     "genre": "cabaret"
   },
@@ -5747,7 +5699,27 @@
     "artiesten": [
       "roel-c-verburg"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Het Financieele Dagblad",
+        "sterren": null,
+        "citaat": "Hij grossiert in absurdistische liedjes vol taalacrobatiek",
+        "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Een aaneenschakeling van slimme observaties, rake grappen en muzikale intermezzo's",
+        "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Roel C. Verburg is een fenomeen op zich",
+        "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
+      }
+    ]
   },
   {
     "id": "roel-c-verburg-southend-comedy-club",
@@ -5795,14 +5767,6 @@
         "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/roel-jos-maalderink/"
       }
     ]
-  },
-  {
-    "id": "roel-maalderink-verbroedering",
-    "titel": "Verbroedering",
-    "artiesten": [
-      "roel-maalderink"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "roger-lataster-en-raymond-clement-premiere-de-graaf-van-swalpenziele",
@@ -6542,14 +6506,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "thijs-kemperink-muiters-vieren-een-muiterse-kerst",
-    "titel": "Muiters vieren een muiterse Kerst",
-    "artiesten": [
-      "thijs-kemperink"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "thijs-kemperink-tot-het-uiterste-gedreven",
     "titel": "Tot het uiterste gedreven",
     "artiesten": [
@@ -7075,14 +7031,6 @@
     "genre": "stand-up"
   },
   {
-    "id": "warre-verlinden-zeker-onzeker",
-    "titel": "Zeker Onzeker",
-    "artiesten": [
-      "warre-verlinden"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "wat-als-in-concert-cc-de-schakel",
     "titel": "Wat Als in Concert",
     "artiesten": [],
@@ -7151,14 +7099,6 @@
     "genre": "stand-up"
   },
   {
-    "id": "wim-helsen-de-sitcom-van-met-de-hoe",
-    "titel": "DE SITCOM (van/met DE HOE)",
-    "artiesten": [
-      "wim-helsen"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "wim-helsen-welkom-ongemak",
     "titel": "Welkom Ongemak",
     "artiesten": [
@@ -7201,14 +7141,6 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "cc-de-schakel"
-  },
-  {
-    "id": "wouter-deprez-wouter-deprez",
-    "titel": "Wouter Deprez",
-    "artiesten": [
-      "wouter-deprez"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "wouter-monden-met-blokjes",
