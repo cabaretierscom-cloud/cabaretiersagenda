@@ -1,7 +1,7 @@
 {
   "name": "cabaretiersagenda",
   "private": true,
-  "description": "De theateragenda van Nederland en Belgi\u00eb",
+  "description": "De theateragenda van Nederland en België",
   "type": "module",
   "engines": {
     "node": ">=20"
@@ -15,6 +15,7 @@
     "fotos": "node --no-warnings ophalen/fotos.mjs",
     "theaterfotos": "node --no-warnings ophalen/theaterfotos.mjs",
     "logo": "node scripts/logo-afbeeldingen.mjs",
-    "geslacht": "node --no-warnings ophalen/geslacht.mjs"
+    "geslacht": "node --no-warnings ophalen/geslacht.mjs",
+    "ga": "node scripts/ga.mjs"
   }
 }

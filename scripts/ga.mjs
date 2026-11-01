@@ -1,0 +1,90 @@
+// Cijfers uit Google Analytics 4 (alleen lezen), voor rapportages aan theaters en artiesten.
+// De sleutel van het serviceaccount "claude-lezer" staat NIET in de repository maar als
+// omgevingsvariabele GA_SERVICE_ACCOUNT_B64 (het JSON-bestand in base64) in de instellingen
+// van de cloudomgeving. Het serviceaccount heeft in GA de rol Kijker.
+//
+// Gebruik:
+//   node scripts/ga.mjs overzicht [--dagen 28]   bezoekers, sessies en paginaweergaven per dag
+//   node scripts/ga.mjs paginas   [--dagen 28]   meest bekeken pagina's
+//   node scripts/ga.mjs bronnen   [--dagen 28]   waar bezoekers vandaan komen
+//   node scripts/ga.mjs tickets   [--dagen 28]   klikken op Tickets-knoppen per theater, artiest en voorstelling
+//   ... --json                                   ruwe uitvoer als JSON
+// In de cloudomgeving: NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt NODE_USE_ENV_PROXY=1 node scripts/ga.mjs ...
+import { createSign } from "node:crypto";
+
+const PROPERTY = process.env.GA_PROPERTY || "560720061"; // www.cabaretiers.com (niet geheim)
+
+function sleutel() {
+  const b64 = process.env.GA_SERVICE_ACCOUNT_B64;
+  const ruw = b64 ? Buffer.from(b64.trim(), "base64").toString("utf8") : process.env.GA_SERVICE_ACCOUNT_JSON;
+  if (!ruw) throw new Error("Geen sleutel: zet GA_SERVICE_ACCOUNT_B64 in de omgevingsinstellingen en start een nieuwe sessie.");
+  const s = JSON.parse(ruw);
+  if (!s.client_email || !s.private_key) throw new Error("De sleutel mist client_email of private_key.");
+  return s;
+}
+
+const b64url = (x) => Buffer.from(typeof x === "string" ? x : JSON.stringify(x)).toString("base64url");
+
+async function toegangstoken(s) {
+  const nu = Math.floor(Date.now() / 1000);
+  const kop = b64url({ alg: "RS256", typ: "JWT" });
+  const inhoud = b64url({ iss: s.client_email, scope: "https://www.googleapis.com/auth/analytics.readonly", aud: s.token_uri || "https://oauth2.googleapis.com/token", iat: nu, exp: nu + 3600 });
+  const handtekening = createSign("RSA-SHA256").update(`${kop}.${inhoud}`).sign(s.private_key, "base64url");
+  const res = await fetch(s.token_uri || "https://oauth2.googleapis.com/token", {
+    method: "POST",
+    headers: { "content-type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({ grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer", assertion: `${kop}.${inhoud}.${handtekening}` }),
+  });
+  const j = await res.json();
+  if (!res.ok) throw new Error(`Inloggen bij Google mislukt: ${j.error_description || j.error || res.status}`);
+  return j.access_token;
+}
+
+async function rapport(token, verzoek) {
+  const res = await fetch(`https://analyticsdata.googleapis.com/v1beta/properties/${PROPERTY}:runReport`, {
+    method: "POST",
+    headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
+    body: JSON.stringify(verzoek),
+  });
+  const j = await res.json();
+  if (!res.ok) throw new Error(`Google Analytics: ${j.error?.message || res.status}`);
+  return j;
+}
+
+const args = process.argv.slice(2);
+const soort = args.find((a) => !a.startsWith("--")) || "overzicht";
+const dagen = Number(args[args.indexOf("--dagen") + 1]) || 28;
+const alsJson = args.includes("--json");
+const periode = [{ startDate: `${dagen}daysAgo`, endDate: "today" }];
+const tickets = { filter: { fieldName: "eventName", stringFilter: { value: "ticket_klik" } } };
+
+const VERZOEKEN = {
+  overzicht: { dimensions: [{ name: "date" }], metrics: [{ name: "activeUsers" }, { name: "sessions" }, { name: "screenPageViews" }], orderBys: [{ dimension: { dimensionName: "date" } }] },
+  paginas: { dimensions: [{ name: "pagePath" }], metrics: [{ name: "screenPageViews" }, { name: "activeUsers" }], orderBys: [{ metric: { metricName: "screenPageViews" }, desc: true }], limit: 50 },
+  bronnen: { dimensions: [{ name: "sessionSourceMedium" }], metrics: [{ name: "sessions" }, { name: "activeUsers" }], orderBys: [{ metric: { metricName: "sessions" }, desc: true }], limit: 30 },
+  // Eigen dimensies uit het event ticket_klik (in GA geregistreerd als aangepaste dimensies op eventniveau).
+  tickets: { dimensions: [{ name: "customEvent:theater" }, { name: "customEvent:artiest" }, { name: "customEvent:voorstelling" }], metrics: [{ name: "eventCount" }], dimensionFilter: tickets, orderBys: [{ metric: { metricName: "eventCount" }, desc: true }], limit: 100 },
+};
+// Zijn de eigen dimensies (nog) niet geregistreerd, dan alleen het totaal per pagina.
+const TICKETS_EENVOUDIG = { dimensions: [{ name: "pagePath" }], metrics: [{ name: "eventCount" }], dimensionFilter: tickets, orderBys: [{ metric: { metricName: "eventCount" }, desc: true }], limit: 100 };
+
+if (!VERZOEKEN[soort]) { console.error(`Onbekend rapport "${soort}". Kies uit: ${Object.keys(VERZOEKEN).join(", ")}.`); process.exit(1); }
+
+try {
+  const token = await toegangstoken(sleutel());
+  let r;
+  try { r = await rapport(token, { ...VERZOEKEN[soort], dateRanges: periode }); } catch (e) {
+    if (soort !== "tickets") throw e;
+    console.error(`Eigen dimensies niet beschikbaar (${e.message}); totaal per pagina in plaats daarvan.`);
+    r = await rapport(token, { ...TICKETS_EENVOUDIG, dateRanges: periode });
+  }
+  if (alsJson) { console.log(JSON.stringify(r, null, 2)); process.exit(0); }
+  const kop = [...(r.dimensionHeaders || []).map((h) => h.name.replace("customEvent:", "")), ...(r.metricHeaders || []).map((h) => h.name)];
+  const rijen = (r.rows || []).map((row) => [...(row.dimensionValues || []).map((v) => v.value), ...(row.metricValues || []).map((v) => v.value)]);
+  console.log(`Rapport "${soort}", laatste ${dagen} dagen, property ${PROPERTY}: ${rijen.length} rijen`);
+  console.log(kop.join("\t"));
+  for (const rij of rijen) console.log(rij.join("\t"));
+} catch (e) {
+  console.error(e.message);
+  process.exit(1);
+}
