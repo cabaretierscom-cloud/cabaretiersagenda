@@ -3,6 +3,7 @@
 // (zie lib/speellijst.mjs). Bron van zo'n speeldatum is de speellijst van de artiest.
 // samenvoegen.mjs koppelt de zaal aan een bekend theater in dezelfde plaats, en slaat een avond over
 // die een theaterbron al heeft (zelfde artiest, plaats en datum).
+import { readFileSync } from "node:fs";
 import { getText } from "../lib/http.mjs";
 import { speellijstRijen, leesRij } from "../lib/speellijst.mjs";
 import { netteNaam } from "../lib/normaliseer.mjs";
@@ -142,11 +143,20 @@ export default {
     const out = [];
     // Niet alle sites tegelijk: met tientallen verbindingen tegelijk gaf de server van GitHub
     // "fetch failed" bij de helft van de sites. Acht tegelijk is genoeg.
+    let vorige = [];
+    try { vorige = JSON.parse(readFileSync(new URL("../../data/bronnen/speellijsten.json", import.meta.url), "utf8")).speeldata || []; } catch { /* nog geen vorig bestand */ }
     const rij = [...ARTIESTEN];
     const werker = async () => { for (let a; (a = rij.shift());) await artiest(a); };
     const artiest = async (a) => {
       let html;
-      try { html = await getText(a.url); if (a.scheiding) html = html.replace(a.scheiding, "<br>"); } catch (e) { log(`${a.naam}: overgeslagen (${e.message})`); return; }
+      try { html = await getText(a.url); if (a.scheiding) html = html.replace(a.scheiding, "<br>"); } catch (e) {
+        // Site niet bereikbaar: de vorige speeldata van deze artiest (vanaf vandaag) blijven staan,
+        // anders verdwijnen ze tot de volgende nacht uit de agenda.
+        const oud = vorige.filter((r) => r.artiesten[0] === a.naam && r.datum >= vandaag);
+        out.push(...oud);
+        log(`${a.naam}: niet bereikbaar (${e.message}), ${oud.length} vorige speeldata bewaard`);
+        return;
+      }
       let n = 0;
       for (const rij of speellijstRijen(html, { vandaag })) {
         if (rij.datum < vandaag || (a.weekdagControle && !weekdagKlopt(rij))) continue;
