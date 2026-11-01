@@ -140,7 +140,11 @@ export default {
 
   async ophalen({ log, vandaag }) {
     const out = [];
-    await Promise.all(ARTIESTEN.map(async (a) => {
+    // Niet alle sites tegelijk: met tientallen verbindingen tegelijk gaf de server van GitHub
+    // "fetch failed" bij de helft van de sites. Acht tegelijk is genoeg.
+    const rij = [...ARTIESTEN];
+    const werker = async () => { for (let a; (a = rij.shift());) await artiest(a); };
+    const artiest = async (a) => {
       let html;
       try { html = await getText(a.url); if (a.scheiding) html = html.replace(a.scheiding, "<br>"); } catch (e) { log(`${a.naam}: overgeslagen (${e.message})`); return; }
       let n = 0;
@@ -168,7 +172,8 @@ export default {
         n++;
       }
       log(`${a.naam}: ${n} speeldata`);
-    }));
+    };
+    await Promise.all(Array.from({ length: 8 }, werker));
     return out;
   },
 };

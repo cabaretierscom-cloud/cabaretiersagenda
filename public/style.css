@@ -819,7 +819,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* Video's op artiestpagina's: kaart in de kleur van de artiest, speler pas na een klik. */
 .videos { margin-top: 40px; }
 .videos h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--step-2); margin: 0 0 16px; }
-.videos ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 16px; }
+.videos ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 560px), 1fr)); gap: 24px; }
 .video, .video-speler { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: var(--radius-poster); }
 .video { position: relative; background: var(--bg); color: var(--fg); text-decoration: none; padding: 16px; overflow: hidden; }
 .video:hover .video-play, .video:focus-visible .video-play { transform: scale(1.08); }

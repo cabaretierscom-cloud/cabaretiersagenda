@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-01",
   "totaal": {
-    "speeldata": 6002,
-    "komend": 5730,
-    "artiesten": 512,
-    "zalen": 642,
+    "speeldata": 7089,
+    "komend": 6817,
+    "artiesten": 517,
+    "zalen": 643,
     "plaatsen": 461,
-    "voorstellingen": 801
+    "voorstellingen": 811
   },
   "bronnen": [
     {
@@ -101,7 +101,7 @@
       "bron": "cultura",
       "naam": "Cultura Ede",
       "opgehaald": "2026-10-31",
-      "speeldata": 22,
+      "speeldata": 23,
       "vorige": 22,
       "dubbel": 0
     },
@@ -317,7 +317,7 @@
       "bron": "plt",
       "naam": "PLT (Parkstad Limburg Theaters)",
       "opgehaald": "2026-11-01",
-      "speeldata": 130,
+      "speeldata": 131,
       "vorige": 130,
       "dubbel": 0
     },
@@ -397,7 +397,7 @@
       "bron": "verkadefabriek",
       "naam": "Verkadefabriek",
       "opgehaald": "2026-10-31",
-      "speeldata": 68,
+      "speeldata": 69,
       "vorige": 68,
       "dubbel": 0
     },
@@ -461,33 +461,33 @@
       "bron": "5to9",
       "naam": "Agenda van 5to9",
       "opgehaald": "2026-11-01",
-      "speeldata": 421,
+      "speeldata": 425,
       "vorige": 421,
-      "dubbel": 51
+      "dubbel": 47
     },
     {
       "bron": "bunker",
       "naam": "Agenda van Bunker Theaterzaken",
       "opgehaald": "2026-11-01",
-      "speeldata": 254,
+      "speeldata": 296,
       "vorige": 254,
-      "dubbel": 493
+      "dubbel": 451
     },
     {
       "bron": "kobra",
       "naam": "Speellijsten van Kobra Theaterproducties (import)",
       "opgehaald": "2026-10-31",
-      "speeldata": 135,
+      "speeldata": 151,
       "vorige": 135,
-      "dubbel": 84
+      "dubbel": 68
     },
     {
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-01",
-      "speeldata": 1143,
-      "vorige": 2230,
-      "dubbel": 554
+      "speeldata": 2165,
+      "vorige": 1143,
+      "dubbel": 1116
     }
   ],
   "nieuw": {
@@ -511,6 +511,26 @@
       {
         "id": "jacques-vermeire",
         "naam": "Jacques Vermeire"
+      },
+      {
+        "id": "janneke-jager",
+        "naam": "Janneke Jager"
+      },
+      {
+        "id": "nele-bauwens",
+        "naam": "Nele Bauwens"
+      },
+      {
+        "id": "roel-maalderink",
+        "naam": "Roel Maalderink"
+      },
+      {
+        "id": "warre-verlinden",
+        "naam": "Warre Verlinden"
+      },
+      {
+        "id": "wouter-deprez",
+        "naam": "Wouter Deprez"
       }
     ],
     "zalen": [
@@ -863,6 +883,13 @@
         "plaats": "Zwolle",
         "land": "NL",
         "website": "https://www.zwolsetheaters.nl"
+      },
+      {
+        "id": "t-tejaterke-best",
+        "naam": "'t Tejaterke",
+        "plaats": "Best",
+        "land": "NL",
+        "website": "https://tejaterke.nl"
       }
     ],
     "voorstellingen": [
@@ -906,6 +933,76 @@
         "titel": "Jacques Vermeire",
         "artiesten": [
           "jacques-vermeire"
+        ]
+      },
+      {
+        "id": "janneke-jager-jaagt",
+        "titel": "Jaagt",
+        "artiesten": [
+          "janneke-jager"
+        ]
+      },
+      {
+        "id": "micha-wertheim-boekenborrel",
+        "titel": "boekenborrel",
+        "artiesten": [
+          "micha-wertheim"
+        ]
+      },
+      {
+        "id": "mohsin-abbas-moh-experience",
+        "titel": "Moh?! Experience",
+        "artiesten": [
+          "mohsin-abbas"
+        ]
+      },
+      {
+        "id": "nathalie-baartman-winsum",
+        "titel": "Winsum",
+        "artiesten": [
+          "nathalie-baartman"
+        ]
+      },
+      {
+        "id": "nele-bauwens-nele-bauwens",
+        "titel": "Nele Bauwens",
+        "artiesten": [
+          "nele-bauwens"
+        ]
+      },
+      {
+        "id": "roel-maalderink-verbroedering",
+        "titel": "Verbroedering",
+        "artiesten": [
+          "roel-maalderink"
+        ]
+      },
+      {
+        "id": "thijs-kemperink-muiters-vieren-een-muiterse-kerst",
+        "titel": "Muiters vieren een muiterse Kerst",
+        "artiesten": [
+          "thijs-kemperink"
+        ]
+      },
+      {
+        "id": "warre-verlinden-zeker-onzeker",
+        "titel": "Zeker Onzeker",
+        "artiesten": [
+          "warre-verlinden"
+        ]
+      },
+      {
+        "id": "wim-helsen-de-sitcom-van-met-de-hoe",
+        "titel": "DE SITCOM (van/met DE HOE)",
+        "artiesten": [
+          "wim-helsen"
+        ]
+      },
+      {
+        "id": "wouter-deprez-wouter-deprez",
+        "titel": "Wouter Deprez",
+        "artiesten": [
+          "wouter-deprez"
         ]
       }
     ]
@@ -977,12 +1074,12 @@
     },
     {
       "datum": "2026-11-01",
-      "speeldata": 6002,
-      "komend": 5730,
-      "artiesten": 512,
-      "zalen": 642,
+      "speeldata": 7089,
+      "komend": 6817,
+      "artiesten": 517,
+      "zalen": 643,
       "plaatsen": 461,
-      "voorstellingen": 801
+      "voorstellingen": 811
     }
   ]
 }

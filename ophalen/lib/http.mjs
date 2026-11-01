@@ -115,7 +115,16 @@ export async function get(url, opts = {}) {
   const run = prev.then(() => new Promise((r) => setTimeout(r, pause))).then(async () => {
     // Bij "te druk" (429/503) even wachten en opnieuw proberen, zoals de site vraagt.
     for (let poging = 1; ; poging++) {
-      const { res, url: finalUrl } = await rawFetch(url, opts);
+      // Een verbinding die wegvalt ("fetch failed") nog twee keer proberen, met een pauze ertussen.
+      let antwoord;
+      try { antwoord = await rawFetch(url, opts); } catch (e) {
+        if (poging < 3 && /fetch failed|ECONNRESET|ETIMEDOUT|EAI_AGAIN|socket/i.test(`${e.message} ${e.cause?.code || ""}`)) {
+          await new Promise((r) => setTimeout(r, 5000 * poging));
+          continue;
+        }
+        throw e;
+      }
+      const { res, url: finalUrl } = antwoord;
       const text = opts.binary ? Buffer.from(await res.arrayBuffer()) : await res.text();
       if ((res.status === 429 || res.status === 503) && poging < 4) {
         const wacht = Math.min(120, Number(res.headers.get("retry-after")) || 10 * poging) * 1000;
