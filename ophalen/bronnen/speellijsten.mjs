@@ -11,6 +11,7 @@ import { netteNaam } from "../lib/normaliseer.mjs";
 // Met vast: plaats en zaal nooit omdraaien ("De Rijp" lijkt op een zaalnaam). Met nederlands: rij is in
 // Nederland bij een Belgische artiest.
 // Met scheiding: teken tussen datum, plaats en titel op één regel ("5.11.2026 ✦ Aalst, CC De Werf").
+// Met jaarUitMaandkop: zie jaarErbij() hieronder.
 // Met titel: de titel van de voorstelling, als de site er statussen of "Try-out" in zet.
 // Met weekdagControle: staat er een weekdag in de rij die niet bij de datum past, dan is het jaartal
 // waarschijnlijk fout geraden (oude seizoenen zonder jaartal op de pagina) en slaan we de rij over.
@@ -20,6 +21,17 @@ const WEEKDAG = /^(zondag|maandag|dinsdag|woensdag|donderdag|vrijdag|zaterdag|zo
 function weekdagKlopt(rij) {
   const dag = WEEKDAGEN[new Date(`${rij.datum}T12:00:00Z`).getUTCDay()];
   return rij.cellen.every((c) => !WEEKDAG.test(c.trim()) || c.trim().slice(0, 2).toLowerCase() === dag);
+}
+
+// Met jaarUitMaandkop: de rijen hebben alleen dag en maand ("05-11"); het jaar staat in de kop erboven
+// ("november 2026"). Zet dat jaar achter elke datum tot de volgende kop.
+const MAANDNAMEN = "januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december";
+function jaarErbij(html) {
+  let jaar = null;
+  return html.replace(new RegExp(`(?:${MAANDNAMEN})(?:\\s|&nbsp;)+(20\\d\\d)|>(\\s*)(\\d{1,2})-(\\d{1,2})(\\s*)<`, "gi"), (m, j, voor, d, mnd, na) => {
+    if (j) { jaar = j; return m; }
+    return jaar ? `>${voor}${d}-${mnd}-${jaar}${na}<` : m;
+  });
 }
 
 const PZ = ["plaats", "zaal"], ZP = ["zaal", "plaats"];
@@ -91,6 +103,7 @@ const ARTIESTEN = [
   { naam: "Plien en Bianca", url: "https://plienenbianca.nl/speellijsten/", volgorde: ZP },
   { naam: "Rachid Larouz", url: "https://www.rachidlarouz.nl/", volgorde: ZP },
   { naam: "Remy Evers", url: "https://www.remyevers.nl/speellijst-2/", volgorde: PZ },
+  { naam: "René van Meurs", url: "https://www.renevanmeurs.nl/", volgorde: PZ, titel: "Noodzakelijk kwaad", jaarUitMaandkop: true },
   { naam: "Richard Groenendijk", url: "https://richardgroenendijk.nl/", volgorde: PZ },
   { naam: "Ricky Koole", url: "https://rickykoole.nl/shows/", volgorde: ZP },
   { naam: "Rob Scheepers", url: "https://www.robscheepers.com/speellijst", volgorde: ZPT },
@@ -150,7 +163,7 @@ export default {
     const werker = async () => { for (let a; (a = rij.shift());) await artiest(a); };
     const artiest = async (a) => {
       let html;
-      try { html = await getText(a.url); if (a.scheiding) html = html.replace(a.scheiding, "<br>"); } catch (e) {
+      try { html = await getText(a.url); if (a.scheiding) html = html.replace(a.scheiding, "<br>"); if (a.jaarUitMaandkop) html = jaarErbij(html); } catch (e) {
         // Site niet bereikbaar: de vorige speeldata van deze artiest (vanaf vandaag) blijven staan,
         // anders verdwijnen ze tot de volgende nacht uit de agenda.
         const oud = vorige.filter((r) => r.artiesten[0] === a.naam && r.datum >= vandaag);
