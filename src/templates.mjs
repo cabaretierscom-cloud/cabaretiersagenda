@@ -2114,7 +2114,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const nieuw = rapport.nieuw || {};
     const volgorde = (r) => (!r.gelukt ? 0 : r.aantal === 0 ? 1 : 2);
     const body = `<section class="block wrap controle" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">Controle</h1><p>Hoe het ophalen ging en wat er nieuw is. Laatst samengevoegd: ${datumTekst(rapport.datum)}. Deze pagina staat niet in het menu en niet in zoekmachines.</p></div>
+      <div class="block-head"><h1 id="t">Controle</h1><p>Hoe het ophalen ging en wat er nieuw is. Laatst samengevoegd: ${datumTekst(rapport.datum)}. Deze pagina staat niet in het menu en niet in zoekmachines. Bezoekcijfers staan op het <a href="/dashboard/">dashboard</a>.</p></div>
       ${waarschuwingen.length ? `<div class="let-op"><h2>Let op</h2><ul>${waarschuwingen.map((w) => `<li>${w}</li>`).join("")}</ul></div>` : `<p class="alles-goed">Alles in orde: alle bronnen zijn gelukt.</p>`}
       <div class="tegels">${tegel("komend", "komende speeldata")}${tegel("artiesten", "artiesten")}${tegel("zalen", "zalen")}${tegel("plaatsen", "plaatsen")}${tegel("voorstellingen", "voorstellingen")}</div>
 
@@ -2155,7 +2155,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   function dashboardPagina(ga) {
     const getal = (n) => Number(n || 0).toLocaleString("nl-NL");
     const procent = (x) => `${Math.round(x * 100)}%`;
-    const kop = `<div class="block-head"><h1 id="t">Dashboard</h1><p>Bezoek en Tickets-klikken uit Google Analytics. Deze pagina staat niet in het menu en niet in zoekmachines.</p></div>`;
+    const kop = `<div class="block-head"><h1 id="t">Dashboard</h1><p>Bezoek en Tickets-klikken uit Google Analytics. Deze pagina staat niet in het menu en niet in zoekmachines. Hoe het ophalen van de agenda ging, staat op de <a href="/controle/">controlepagina</a>.</p></div>`;
     if (!ga?.overzicht?.length) {
       const body = `<section class="block wrap dashboard" aria-labelledby="t">${kop}
         <p class="let-op">Nog geen cijfers. Zet het geheim <code>GA_SERVICE_ACCOUNT_B64</code> bij GitHub (Settings &gt; Secrets and variables &gt; Actions); de volgende run haalt ze dan op.</p></section>`;
