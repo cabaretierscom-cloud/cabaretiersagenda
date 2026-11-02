@@ -2150,8 +2150,111 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return layout({ title: "Controle", description: "Controle van de agenda.", path: "/controle/", body, noindex: true });
   }
 
+  // Dashboard voor de beheerder (/dashboard/): cijfers uit Google Analytics (data/ga-dashboard.json,
+  // geschreven door `npm run ga -- dashboard`). Net als /controle/ niet in menu, sitemap of zoekmachines.
+  function dashboardPagina(ga) {
+    const getal = (n) => Number(n || 0).toLocaleString("nl-NL");
+    const procent = (x) => `${Math.round(x * 100)}%`;
+    const kop = `<div class="block-head"><h1 id="t">Dashboard</h1><p>Bezoek en Tickets-klikken uit Google Analytics. Deze pagina staat niet in het menu en niet in zoekmachines.</p></div>`;
+    if (!ga?.overzicht?.length) {
+      const body = `<section class="block wrap dashboard" aria-labelledby="t">${kop}
+        <p class="let-op">Nog geen cijfers. Zet het geheim <code>GA_SERVICE_ACCOUNT_B64</code> bij GitHub (Settings &gt; Secrets and variables &gt; Actions); de volgende run haalt ze dan op.</p></section>`;
+      return layout({ title: "Dashboard", description: "Bezoekcijfers van de agenda.", path: "/dashboard/", body, noindex: true });
+    }
+    const dagen = ga.overzicht;
+    const som = (rijen, k) => rijen.reduce((s, r) => s + Number(r[k] || 0), 0);
+    const bezoeken = som(dagen, "sessions"), weergaven = som(dagen, "screenPageViews");
+    const klikken = som(ga.tickets || [], "eventCount");
+    const google = som((ga.bronnen || []).filter((b) => b.sessionSourceMedium === "google / organic"), "sessions");
+    const alleBronnen = som(ga.bronnen || [], "sessions");
+    const piek = dagen.reduce((a, b) => (b.activeUsers > a.activeUsers ? b : a), dagen[0]);
+    const eerste = dagen[0], laatste = dagen[dagen.length - 1];
+    const dagNaam = (iso) => `${fmt.weekday(iso)} ${fmt.dayMonth(iso)}`;
+
+    // Bezoekers per dag als staven (gewone HTML, werkt zonder JavaScript).
+    const maxDag = Math.max(...dagen.map((d) => d.activeUsers), 1);
+    const perDag = `<div class="ga-dagen" role="img" aria-label="Bezoekers per dag">${dagen.map((d) => `<div class="ga-dag" title="${esc(dagNaam(d.date))}: ${getal(d.activeUsers)} bezoekers, ${getal(d.sessions)} bezoeken, ${getal(d.screenPageViews)} paginaweergaven">
+        <span class="ga-dag-getal">${getal(d.activeUsers)}</span>
+        <span class="ga-dag-staaf" style="height:${((100 * d.activeUsers) / maxDag).toFixed(1)}%"></span>
+        <span class="ga-dag-label">${esc(fmt.weekdayShort(d.date))}<br>${esc(fmt.day(d.date))} ${esc(fmt.monthShort(d.date))}</span>
+      </div>`).join("")}</div>`;
+
+    const staven = (rijen, kleur) => {
+      const max = Math.max(...rijen.map((r) => r.waarde), 1);
+      return `<ul class="ga-staven">${rijen.map((r) => `<li title="${esc(r.tip || "")}"><span class="ga-staaf-kop"><span>${r.label}</span><b>${getal(r.waarde)}</b></span>
+        <span class="ga-staaf"><span style="width:${((100 * r.waarde) / max).toFixed(1)}%;background:var(${kleur})"></span></span></li>`).join("")}</ul>`;
+    };
+    const BRONNAAM = {
+      "google / organic": "Google zoeken", "(direct) / (none)": "Direct (adres of bladwijzer)", "(not set)": "Onbekend",
+      "chatgpt.com / ai-assistant": "ChatGPT", "gemini.google.com / ai-assistant": "Gemini", "bing / organic": "Bing",
+      "ecosia.org / organic": "Ecosia", "search.google.com / referral": "Google Search Console",
+      "startgoogle.startpagina.nl / referral": "Startpagina", "duckduckgo / organic": "DuckDuckGo",
+    };
+    const bronnen = staven((ga.bronnen || []).map((b) => ({
+      label: esc(BRONNAAM[b.sessionSourceMedium] || b.sessionSourceMedium), waarde: b.sessions,
+      tip: `${b.sessionSourceMedium}: ${getal(b.activeUsers)} bezoekers`,
+    })), "--riso-green");
+
+    // Artiesten en zalen op naam terugvinden, zodat de namen naar hun pagina linken.
+    const opNaam = (kaart) => new Map([...kaart.values()].map((x) => [x.naam.toLowerCase(), x.id]));
+    const artiestId = opNaam(A), theaterId = opNaam(T);
+    const artiestLink = (naam) => {
+      const id = artiestId.get(String(naam).toLowerCase());
+      return id && db.gigsForArtist(id).length ? `<a href="${artiestPad(id)}">${esc(naam)}</a>` : esc(naam);
+    };
+    const theaterLink = (naam) => {
+      const id = theaterId.get(String(naam).toLowerCase());
+      return id && db.gigsForTheater(id).length ? `<a href="/theaters/${id}/">${esc(naam)}</a>` : esc(naam);
+    };
+    const leeg = (x) => !x || x === "(not set)";
+    const perArtiest = new Map();
+    for (const r of ga.tickets || []) {
+      if (leeg(r.artiest)) continue;
+      const p = perArtiest.get(r.artiest) || { klikken: 0, zalen: new Set() };
+      p.klikken += r.eventCount; p.zalen.add(r.theater); perArtiest.set(r.artiest, p);
+    }
+    const artiesten = staven([...perArtiest].sort((a, b) => b[1].klikken - a[1].klikken || a[0].localeCompare(b[0], "nl")).slice(0, 10)
+      .map(([naam, p]) => ({ label: artiestLink(naam), waarde: p.klikken, tip: p.zalen.size === 1 ? "in 1 zaal" : `verspreid over ${p.zalen.size} zalen` })), "--riso-pink");
+
+    const maxPagina = Math.max(...(ga.paginas || []).map((p) => p.screenPageViews), 1);
+    const paginas = (ga.paginas || []).map((p) => `<tr><td class="ga-pad"><a href="${esc(p.pagePath)}">${esc(p.pagePath)}</a></td>
+      <td class="ga-num"><span class="ga-celbalk" style="width:${((3.5 * p.screenPageViews) / maxPagina).toFixed(2)}rem"></span>${getal(p.screenPageViews)}</td><td class="ga-num ga-smal-weg">${getal(p.activeUsers)}</td></tr>`).join("");
+    const tickets = (ga.tickets || []).map((r) => `<tr><td>${leeg(r.artiest) ? `<span class="mis">Niet vastgelegd</span>` : artiestLink(r.artiest)}</td>
+      <td>${leeg(r.voorstelling) ? "" : esc(r.voorstelling)}</td><td class="ga-smal-weg">${leeg(r.theater) ? "" : theaterLink(r.theater)}</td><td class="ga-num">${getal(r.eventCount)}</td></tr>`).join("");
+    const opgehaald = new Date(ga.opgehaald).toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
+
+    const body = `<section class="block wrap dashboard" aria-labelledby="t">
+      ${kop}
+      <p class="ga-kern">Van <b>${getal(eerste.activeUsers)}</b> bezoekers op ${esc(fmt.dayMonth(eerste.date))} naar <b>${getal(piek.activeUsers)}</b> op ${esc(dagNaam(piek.date))}. <b>${procent(alleBronnen ? google / alleBronnen : 0)}</b> van de bezoeken komt via Google.</p>
+      <p class="ga-noot">${esc(fmt.dayMonth(eerste.date))} tot en met ${esc(fmt.dayMonth(laatste.date))} (${plural(dagen.length, "dag", "dagen")}${dagen.length < ga.dagen ? `; Google Analytics meet pas sinds ${esc(fmt.dayMonth(eerste.date))}` : ""}). Bijgewerkt op ${esc(opgehaald)}. Bezoekers telt Google per dag: wie op twee dagen komt, telt twee keer mee.</p>
+
+      <div class="ga-tegels">
+        <div class="ga-tegel" style="--bg:var(--riso-orange)"><h2>Tickets-klikken</h2><strong>${getal(klikken)}</strong><p>Keer doorgeklikt naar een theater om kaartjes te kopen.</p></div>
+        <div class="ga-tegel" style="--bg:var(--riso-pink)"><h2>Bezoeken</h2><strong>${getal(bezoeken)}</strong><p>Sessies op de site, alle dagen samen.</p></div>
+        <div class="ga-tegel" style="--bg:var(--riso-yellow)"><h2>Paginaweergaven</h2><strong>${getal(weergaven)}</strong><p>Gemiddeld ${(bezoeken ? weergaven / bezoeken : 0).toLocaleString("nl-NL", { maximumFractionDigits: 1 })} pagina's per bezoek.</p></div>
+        <div class="ga-tegel" style="--bg:var(--riso-aqua)"><h2>Via Google</h2><strong>${procent(alleBronnen ? google / alleBronnen : 0)}</strong><p>Van alle bezoeken komt binnen via zoeken in Google.</p></div>
+      </div>
+
+      <h2 class="sub-head">Bezoekers per dag</h2>
+      ${perDag}
+
+      <div class="ga-twee">
+        <div><h2 class="sub-head">Waar bezoekers vandaan komen</h2><p class="ga-noot">Bezoeken per bron.</p>${bronnen}</div>
+        <div><h2 class="sub-head">Tickets-klikken per artiest</h2><p class="ga-noot">De tien artiesten met de meeste klikken, alle zalen samen.</p>${perArtiest.size ? artiesten : "<p>Nog geen klikken.</p>"}</div>
+      </div>
+
+      <div class="ga-twee">
+        <div><h2 class="sub-head">Meest bekeken pagina's</h2>
+          <div class="tabel ga-tabel"><table><thead><tr><th>Pagina</th><th class="ga-num">Weergaven</th><th class="ga-num ga-smal-weg">Bezoekers</th></tr></thead><tbody>${paginas}</tbody></table></div></div>
+        <div><h2 class="sub-head">Tickets-klikken per voorstelling</h2>
+          <div class="tabel ga-tabel"><table><thead><tr><th>Artiest</th><th>Voorstelling</th><th class="ga-smal-weg">Theater</th><th class="ga-num">Klikken</th></tr></thead><tbody>${tickets}</tbody></table></div></div>
+      </div>
+    </section>`;
+    return layout({ title: "Dashboard", description: "Bezoekcijfers van de agenda.", path: "/dashboard/", body, noindex: true });
+  }
+
   return {
-    controlePagina,
+    controlePagina, dashboardPagina,
     home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, genrePagina, genreIndex, GENRE_PAGINAS, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
   };
