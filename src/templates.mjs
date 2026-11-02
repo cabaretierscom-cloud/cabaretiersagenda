@@ -2229,25 +2229,24 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <p class="ga-noot">${esc(fmt.dayMonth(eerste.date))} tot en met ${esc(fmt.dayMonth(laatste.date))} (${plural(dagen.length, "dag", "dagen")}${dagen.length < ga.dagen ? `; Google Analytics meet pas sinds ${esc(fmt.dayMonth(eerste.date))}` : ""}). Bijgewerkt op ${esc(opgehaald)}. Bezoekers telt Google per dag: wie op twee dagen komt, telt twee keer mee.</p>
 
       <div class="ga-tegels">
-        <div class="ga-tegel" style="--bg:var(--riso-orange)"><h2>Tickets-klikken</h2><strong>${getal(klikken)}</strong><p>Keer doorgeklikt naar een theater om kaartjes te kopen.</p></div>
-        <div class="ga-tegel" style="--bg:var(--riso-pink)"><h2>Bezoeken</h2><strong>${getal(bezoeken)}</strong><p>Sessies op de site, alle dagen samen.</p></div>
+        <div class="ga-tegel" style="--bg:var(--riso-orange)"><h2>Bezoeken</h2><strong>${getal(bezoeken)}</strong><p>Sessies op de site, alle dagen samen.</p></div>
         <div class="ga-tegel" style="--bg:var(--riso-yellow)"><h2>Paginaweergaven</h2><strong>${getal(weergaven)}</strong><p>Gemiddeld ${(bezoeken ? weergaven / bezoeken : 0).toLocaleString("nl-NL", { maximumFractionDigits: 1 })} pagina's per bezoek.</p></div>
-        <div class="ga-tegel" style="--bg:var(--riso-aqua)"><h2>Via Google</h2><strong>${procent(alleBronnen ? google / alleBronnen : 0)}</strong><p>Van alle bezoeken komt binnen via zoeken in Google.</p></div>
+        <div class="ga-tegel" style="--bg:var(--riso-lime)"><h2>Tickets-klikken</h2><strong>${getal(klikken)}</strong><p>Keer doorgeklikt naar een theater om kaartjes te kopen.</p></div>
       </div>
 
-      <h2 class="sub-head">Bezoekers per dag</h2>
-      ${perDag}
+      <section class="ga-kaart"><h2 class="sub-head">Bezoekers per dag</h2>
+      ${perDag}</section>
 
       <div class="ga-twee">
-        <div><h2 class="sub-head">Waar bezoekers vandaan komen</h2><p class="ga-noot">Bezoeken per bron.</p>${bronnen}</div>
-        <div><h2 class="sub-head">Tickets-klikken per artiest</h2><p class="ga-noot">De tien artiesten met de meeste klikken, alle zalen samen.</p>${perArtiest.size ? artiesten : "<p>Nog geen klikken.</p>"}</div>
+        <section class="ga-kaart"><h2 class="sub-head">Waar bezoekers vandaan komen</h2><p class="ga-noot">Bezoeken per bron.</p>${bronnen}</section>
+        <section class="ga-kaart"><h2 class="sub-head">Tickets-klikken per artiest</h2><p class="ga-noot">De tien artiesten met de meeste klikken, alle zalen samen.</p>${perArtiest.size ? artiesten : "<p>Nog geen klikken.</p>"}</section>
       </div>
 
       <div class="ga-twee">
-        <div><h2 class="sub-head">Meest bekeken pagina's</h2>
-          <div class="tabel ga-tabel"><table><thead><tr><th>Pagina</th><th class="ga-num">Weergaven</th><th class="ga-num ga-smal-weg">Bezoekers</th></tr></thead><tbody>${paginas}</tbody></table></div></div>
-        <div><h2 class="sub-head">Tickets-klikken per voorstelling</h2>
-          <div class="tabel ga-tabel"><table><thead><tr><th>Artiest</th><th>Voorstelling</th><th class="ga-smal-weg">Theater</th><th class="ga-num">Klikken</th></tr></thead><tbody>${tickets}</tbody></table></div></div>
+        <section class="ga-kaart"><h2 class="sub-head">Meest bekeken pagina's</h2>
+          <div class="tabel ga-tabel"><table><thead><tr><th>Pagina</th><th class="ga-num">Weergaven</th><th class="ga-num ga-smal-weg">Bezoekers</th></tr></thead><tbody>${paginas}</tbody></table></div></section>
+        <section class="ga-kaart"><h2 class="sub-head">Tickets-klikken per voorstelling</h2>
+          <div class="tabel ga-tabel"><table><thead><tr><th>Artiest</th><th>Voorstelling</th><th class="ga-smal-weg">Theater</th><th class="ga-num">Klikken</th></tr></thead><tbody>${tickets}</tbody></table></div></section>
       </div>
     </section>`;
     return layout({ title: "Dashboard", description: "Bezoekcijfers van de agenda.", path: "/dashboard/", body, noindex: true });
