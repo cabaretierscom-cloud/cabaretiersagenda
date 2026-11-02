@@ -2150,25 +2150,30 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return layout({ title: "Controle", description: "Controle van de agenda.", path: "/controle/", body, noindex: true });
   }
 
-  // Dashboard voor de beheerder (/dashboard/): cijfers uit Google Analytics (data/ga-dashboard.json,
-  // geschreven door `npm run ga -- dashboard`). Net als /controle/ niet in menu, sitemap of zoekmachines.
-  function dashboardPagina(ga) {
+  // Bezoekerscijfers voor de beheerder (/dashboard/ en per maand /dashboard/<maand-jaar>/): cijfers uit Google
+  // Analytics (data/ga-dashboard.json, geschreven door `npm run ga -- dashboard`). Net als /controle/ niet in menu,
+  // sitemap of zoekmachines. `data` is het hele bestand, `periodeId` de gekozen periode ("" = laatste 28 dagen).
+  const dashboardPad = (id) => (id ? `/dashboard/${id}/` : "/dashboard/");
+  function dashboardPagina(data, periodeId = "") {
     const getal = (n) => Number(n || 0).toLocaleString("nl-NL");
-    const procent = (x) => `${Math.round(x * 100)}%`;
-    const kop = `<div class="block-head"><h1 id="t">Dashboard</h1><p>Bezoek en Tickets-klikken uit Google Analytics. Deze pagina staat niet in het menu en niet in zoekmachines.</p></div>`;
+    const perioden = data?.perioden || [];
+    const ga = perioden.find((p) => p.id === periodeId);
+    const pad = dashboardPad(periodeId);
+    // Keuzelijst van perioden: een uitklapmenu met gewone links, werkt ook zonder JavaScript.
+    const keuze = perioden.length ? `<details class="ga-keuze">
+        <summary>${esc(ga?.naam || "Kies een periode")}</summary>
+        <ul>${perioden.map((p) => `<li><a href="${dashboardPad(p.id)}"${p.id === periodeId ? ' aria-current="page"' : ""}>${esc(p.naam)}</a></li>`).join("")}</ul>
+      </details>` : "";
+    const kop = `<div class="block-head"><h1 id="t">Bezoekerscijfers</h1>${keuze}</div>`;
     if (!ga?.overzicht?.length) {
       const body = `<section class="block wrap dashboard" aria-labelledby="t">${kop}
-        <p class="let-op">Nog geen cijfers. Zet het geheim <code>GA_SERVICE_ACCOUNT_B64</code> bij GitHub (Settings &gt; Secrets and variables &gt; Actions); de volgende run haalt ze dan op.</p></section>`;
-      return layout({ title: "Dashboard", description: "Bezoekcijfers van de agenda.", path: "/dashboard/", body, noindex: true });
+        <p class="let-op">${perioden.length ? "Nog geen cijfers voor deze periode." : `Nog geen cijfers. Zet het geheim <code>GA_SERVICE_ACCOUNT_B64</code> bij GitHub (Settings &gt; Secrets and variables &gt; Actions); de volgende run haalt ze dan op.`}</p></section>`;
+      return layout({ title: "Bezoekerscijfers", description: "Bezoekcijfers van de agenda.", path: pad, body, noindex: true });
     }
     const dagen = ga.overzicht;
     const som = (rijen, k) => rijen.reduce((s, r) => s + Number(r[k] || 0), 0);
     const bezoeken = som(dagen, "sessions"), weergaven = som(dagen, "screenPageViews");
     const klikken = som(ga.tickets || [], "eventCount");
-    const google = som((ga.bronnen || []).filter((b) => b.sessionSourceMedium === "google / organic"), "sessions");
-    const alleBronnen = som(ga.bronnen || [], "sessions");
-    const piek = dagen.reduce((a, b) => (b.activeUsers > a.activeUsers ? b : a), dagen[0]);
-    const eerste = dagen[0], laatste = dagen[dagen.length - 1];
     const dagNaam = (iso) => `${fmt.weekday(iso)} ${fmt.dayMonth(iso)}`;
 
     // Bezoeken (staven) en paginaweergaven (lijn) per dag, gewone HTML met een SVG-lijn: werkt zonder JavaScript.
@@ -2219,12 +2224,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const plaatsNaam = new Map([...T.values()].map((th) => [plaatsId(th.plaats), th.plaats]));
     const metPagina = new Set(plaatsen);
     const plaatsTabel = tabel("Plaats", perId(ga.plaatsen).map(([id, w]) => ({ naam: link(`/plaatsen/${id}/`, plaatsNaam.get(id) || id, metPagina.has(plaatsNaam.get(id))), weergaven: w })));
-    const opgehaald = new Date(ga.opgehaald).toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
 
     const body = `<section class="block wrap dashboard" aria-labelledby="t">
       ${kop}
-      <p class="ga-kern">Van <b>${getal(eerste.activeUsers)}</b> bezoekers op ${esc(fmt.dayMonth(eerste.date))} naar <b>${getal(piek.activeUsers)}</b> op ${esc(dagNaam(piek.date))}. <b>${procent(alleBronnen ? google / alleBronnen : 0)}</b> van de bezoeken komt via Google.</p>
-      <p class="ga-noot">${esc(fmt.dayMonth(eerste.date))} tot en met ${esc(fmt.dayMonth(laatste.date))} (${plural(dagen.length, "dag", "dagen")}${dagen.length < ga.dagen ? `; Google Analytics meet pas sinds ${esc(fmt.dayMonth(eerste.date))}` : ""}). Bijgewerkt op ${esc(opgehaald)}. Bezoekers telt Google per dag: wie op twee dagen komt, telt twee keer mee.</p>
 
       <div class="ga-tegels">
         <div class="ga-tegel" style="--bg:var(--riso-orange)"><h2>Bezoeken</h2><strong>${getal(bezoeken)}</strong><p>Sessies op de site, alle dagen samen.</p></div>
@@ -2245,11 +2247,11 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <section class="ga-kaart"><h2 class="sub-head">Meest bekeken plaatsen</h2><p class="ga-noot">Plaatspagina met vanavond en dit weekend samen.</p>${plaatsTabel}</section>
       </div>
     </section>`;
-    return layout({ title: "Dashboard", description: "Bezoekcijfers van de agenda.", path: "/dashboard/", body, noindex: true });
+    return layout({ title: `Bezoekerscijfers ${ga.naam.toLowerCase()}`, description: "Bezoekcijfers van de agenda.", path: pad, body, noindex: true });
   }
 
   return {
-    controlePagina, dashboardPagina,
+    controlePagina, dashboardPagina, dashboardPad,
     home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, genrePagina, genreIndex, GENRE_PAGINAS, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
   };

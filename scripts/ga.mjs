@@ -8,7 +8,7 @@
 //   node scripts/ga.mjs paginas   [--dagen 28]   meest bekeken pagina's
 //   node scripts/ga.mjs bronnen   [--dagen 28]   waar bezoekers vandaan komen
 //   node scripts/ga.mjs tickets   [--dagen 28]   klikken op Tickets-knoppen per theater, artiest en voorstelling
-//   node scripts/ga.mjs dashboard [--dagen 28]   alle rapporten (t/m gisteren) naar data/ga-dashboard.json voor /dashboard/
+//   node scripts/ga.mjs dashboard [--dagen 28]   alle rapporten (laatste 28 dagen en per maand, t/m gisteren) naar data/ga-dashboard.json voor /dashboard/
 //   ... --json                                   ruwe uitvoer als JSON
 // data/ga-dashboard.json staat in .gitignore: de repository is openbaar. GitHub Actions haalt het elke run
 // opnieuw op als het geheim GA_SERVICE_ACCOUNT_B64 daar is ingesteld.
@@ -82,33 +82,54 @@ function alsRijen(r) {
   ]));
 }
 
+// Alle rapporten voor het dashboard over één periode.
+async function dashboardPeriode(token, bereik) {
+  const uit = {};
+  for (const naam of Object.keys(VERZOEKEN)) {
+    let r;
+    try { r = await rapport(token, { ...VERZOEKEN[naam], dateRanges: bereik }); } catch (e) {
+      if (naam !== "tickets") throw e;
+      r = { rows: [] };
+    }
+    uit[naam] = alsRijen(r);
+  }
+  // Weergaven per theater-, artiest- en plaatspagina (met alles eronder); de dashboardpagina telt ze per id op.
+  for (const [naam, begin] of [["theaters", "/theaters/"], ["artiesten", "/artiesten/"], ["plaatsen", "/plaatsen/"]]) {
+    const r = await rapport(token, {
+      dimensions: [{ name: "pagePath" }], metrics: [{ name: "screenPageViews" }], dateRanges: bereik,
+      dimensionFilter: { filter: { fieldName: "pagePath", stringFilter: { matchType: "BEGINS_WITH", value: begin } } },
+      orderBys: [{ metric: { metricName: "screenPageViews" }, desc: true }], limit: 1000,
+    });
+    uit[naam] = alsRijen(r);
+  }
+  uit.overzicht = uit.overzicht.map((d) => ({ ...d, date: d.date.replace(/^(\d{4})(\d\d)(\d\d)$/, "$1-$2-$3") }));
+  return uit;
+}
+
+// Eerste maand in de keuzelijst van het dashboard.
+const EERSTE_MAAND = "2026-11";
+
 if (soort === "dashboard") {
-  // Hele dagen: tot en met gisteren, zodat een nachtelijke run geen halve dag toont.
-  const bereik = [{ startDate: `${dagen}daysAgo`, endDate: "yesterday" }];
+  // Hele dagen: tot en met gisteren (Europe/Amsterdam), zodat een nachtelijke run geen halve dag toont.
+  const vandaag = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" });
+  const gisteren = new Date(Date.parse(vandaag + "T12:00:00Z") - 864e5).toISOString().slice(0, 10);
   try {
     const token = await toegangstoken(sleutel());
-    const uit = { opgehaald: new Date().toISOString(), dagen, property: PROPERTY };
-    for (const naam of Object.keys(VERZOEKEN)) {
-      let r;
-      try { r = await rapport(token, { ...VERZOEKEN[naam], dateRanges: bereik }); } catch (e) {
-        if (naam !== "tickets") throw e;
-        r = { rows: [] };
-      }
-      uit[naam] = alsRijen(r);
+    const uit = { opgehaald: new Date().toISOString(), dagen, property: PROPERTY, perioden: [] };
+    uit.perioden.push({ id: "", naam: `Laatste ${dagen} dagen`, ...(await dashboardPeriode(token, [{ startDate: `${dagen}daysAgo`, endDate: "yesterday" }])) });
+    // Per maand, vanaf EERSTE_MAAND tot en met de maand van gisteren; nieuwste eerst in de keuzelijst.
+    const maanden = [];
+    for (let [j, m] = EERSTE_MAAND.split("-").map(Number); `${j}-${String(m).padStart(2, "0")}-01` <= gisteren; m === 12 ? (j++, m = 1) : m++) {
+      const van = `${j}-${String(m).padStart(2, "0")}-01`;
+      const einde = new Date(Date.UTC(j, m, 0)).toISOString().slice(0, 10);
+      const tot = einde < gisteren ? einde : gisteren;
+      const maand = new Date(Date.UTC(j, m - 1, 15)).toLocaleString("nl-NL", { month: "long", timeZone: "UTC" });
+      maanden.push({ id: `${maand}-${j}`, naam: `${maand[0].toUpperCase()}${maand.slice(1)} ${j}`, van, tot, ...(await dashboardPeriode(token, [{ startDate: van, endDate: tot }])) });
     }
-    // Weergaven per theater-, artiest- en plaatspagina (met alles eronder); build.mjs telt ze per id op.
-    for (const [naam, begin] of [["theaters", "/theaters/"], ["artiesten", "/artiesten/"], ["plaatsen", "/plaatsen/"]]) {
-      const r = await rapport(token, {
-        dimensions: [{ name: "pagePath" }], metrics: [{ name: "screenPageViews" }], dateRanges: bereik,
-        dimensionFilter: { filter: { fieldName: "pagePath", stringFilter: { matchType: "BEGINS_WITH", value: begin } } },
-        orderBys: [{ metric: { metricName: "screenPageViews" }, desc: true }], limit: 1000,
-      });
-      uit[naam] = alsRijen(r);
-    }
-    uit.overzicht = uit.overzicht.map((d) => ({ ...d, date: d.date.replace(/^(\d{4})(\d\d)(\d\d)$/, "$1-$2-$3") }));
+    uit.perioden.push(...maanden.reverse());
     const doel = new URL("../data/ga-dashboard.json", import.meta.url);
     writeFileSync(doel, JSON.stringify(uit, null, 1) + "\n");
-    console.log(`Dashboardcijfers geschreven: ${uit.overzicht.length} dagen, ${uit.paginas.length} pagina's, ${uit.tickets.length} rijen Tickets-klikken.`);
+    console.log(`Dashboardcijfers geschreven: ${uit.perioden.map((p) => `${p.naam} (${p.overzicht.length} dagen)`).join(", ")}.`);
   } catch (e) {
     console.error(e.message);
     process.exit(1);

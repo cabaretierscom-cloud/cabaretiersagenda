@@ -751,9 +751,18 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .controle code { font-size: .85em; color: var(--ink-2); }
 
 /* Dashboard (/dashboard/): affichevlakken voor de hoofdcijfers, verder zwart op wit zoals /controle/. */
-.dashboard .ga-kern { font-size: var(--step-1); line-height: 1.45; max-width: 62ch; margin: 0 0 8px; text-wrap: pretty; }
 .dashboard .ga-noot { color: var(--ink-2); font-size: var(--step--1); margin: 0 0 16px; max-width: 75ch; }
 .dashboard .let-op { border: 2px solid var(--ink); border-radius: 16px; padding: 16px 20px; }
+.dashboard .ga-keuze { position: relative; }
+.dashboard .ga-keuze summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 18px; border: 2px solid var(--ink); border-radius: 999px; font-weight: 700; background: var(--paper); }
+.dashboard .ga-keuze summary::-webkit-details-marker { display: none; }
+.dashboard .ga-keuze summary::after { content: "▾"; font-size: 1.1em; line-height: 1; transition: transform .15s ease; }
+.dashboard .ga-keuze[open] summary::after { transform: rotate(180deg); }
+.dashboard .ga-keuze ul { position: absolute; right: 0; top: calc(100% + 6px); z-index: 5; list-style: none; margin: 0; padding: 6px; min-width: 100%; background: var(--paper); border: 2px solid var(--ink); border-radius: 16px; box-shadow: 0 12px 30px -12px rgba(0, 0, 0, .35); }
+.dashboard .ga-keuze a { display: block; padding: 8px 12px; border-radius: 10px; color: var(--ink); text-decoration: none; white-space: nowrap; }
+.dashboard .ga-keuze a:hover, .dashboard .ga-keuze a:focus-visible { background: var(--paper-2); }
+.dashboard .ga-keuze a[aria-current="page"] { font-weight: 700; }
+@media (max-width: 560px) { .dashboard .ga-keuze ul { left: 0; right: auto; } }
 .dashboard .ga-tegels { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 12px; margin: 24px 0 24px; }
 .dashboard .ga-tegel { background: var(--bg); color: #121212; padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 6px; min-height: 160px; border-radius: 16px; position: relative; overflow: hidden; isolation: isolate; }
 /* Rasterpunten zoals op de affiches en artiestkaarten */
