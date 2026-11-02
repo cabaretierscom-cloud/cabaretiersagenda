@@ -333,9 +333,10 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     name: a.foto.alt, caption: a.foto.alt, description: a.foto.alt, inLanguage: "nl",
     ...(a.foto.breedte ? { width: a.foto.breedte, height: a.foto.hoogte } : {}),
     ...(a.foto.datum ? { dateCreated: a.foto.datum } : {}),
-    creditText: a.foto.maker, copyrightNotice: `${a.foto.maker}, ${a.foto.licentie}`,
     // Maker: een persoon, tenzij het een bureau of "Wikimedia Commons" is (geen naam van de fotograaf).
-    creator: { "@type": /wikimedia|buro|bureau|studio|b\.?v\.?$|&/i.test(a.foto.maker) ? "Organization" : "Person", name: a.foto.maker },
+    // Een promofoto zonder bekende fotograaf heeft geen maker.
+    ...(a.foto.maker ? { creditText: a.foto.maker, copyrightNotice: `${a.foto.maker}, ${a.foto.licentie}`,
+      creator: { "@type": /wikimedia|buro|bureau|studio|b\.?v\.?$|&/i.test(a.foto.maker) ? "Organization" : "Person", name: a.foto.maker } } : {}),
     ...(licentieUrl(a.foto) ? { license: licentieUrl(a.foto) } : {}), ...(a.foto.promo ? {} : { acquireLicensePage: a.foto.bron }),
     about: { "@id": URL(fotoPad(a) + (a.titel ? "#voorstelling" : a.plaats ? "#zaal" : "#artiest")) },
   });
@@ -1474,7 +1475,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   // Rechtenvrije foto (Wikimedia Commons) met verplichte naamsvermelding en licentie; bij promomateriaal alleen de fotograaf.
   const fotoHtml = (a, klasse = "artiest-foto") => `<figure class="${klasse}">
           <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${klasse === "artiest-foto" ? uitsnede(a.foto, 4 / 5) : ""}${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
-          <figcaption>Foto: ${a.foto.promo ? esc(a.foto.maker) : `<a href="${esc(a.foto.bron)}" rel="noopener">${esc(a.foto.maker)}</a>`}${a.foto.promo ? "" : a.foto.licentieUrl ? `, <a href="${esc(a.foto.licentieUrl)}" rel="noopener license">${esc(a.foto.licentie)}</a>` : `, ${esc(a.foto.licentie)}`}</figcaption>
+          ${a.foto.promo && !a.foto.maker ? "" : `<figcaption>Foto: ${a.foto.promo ? esc(a.foto.maker) : `<a href="${esc(a.foto.bron)}" rel="noopener">${esc(a.foto.maker)}</a>`}${a.foto.promo ? "" : a.foto.licentieUrl ? `, <a href="${esc(a.foto.licentieUrl)}" rel="noopener license">${esc(a.foto.licentie)}</a>` : `, ${esc(a.foto.licentie)}`}</figcaption>`}
         </figure>`;
 
   // Video's van YouTube (promotiemateriaal, data/promo.json). Zonder klik niets van YouTube:
