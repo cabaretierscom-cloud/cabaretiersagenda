@@ -2191,48 +2191,34 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <div class="ga-assen">${dagen.map((d) => `<span>${esc(fmt.weekdayShort(d.date))}<br>${esc(fmt.day(d.date))} ${esc(fmt.monthShort(d.date))}</span>`).join("")}</div>
       </div></div>`;
 
-    const staven = (rijen, kleur) => {
-      const max = Math.max(...rijen.map((r) => r.waarde), 1);
-      return `<ul class="ga-staven">${rijen.map((r) => `<li title="${esc(r.tip || "")}"><span class="ga-staaf-kop"><span>${r.label}</span><b>${getal(r.waarde)}</b></span>
-        <span class="ga-staaf"><span style="width:${((100 * r.waarde) / max).toFixed(1)}%;background:var(${kleur})"></span></span></li>`).join("")}</ul>`;
+    // Tabel met een balkje bij de weergaven; rijen: { naam (HTML), sub (tekst), weergaven, bezoekers? }.
+    const tabel = (kop, rijen, metBezoekers) => {
+      const max = Math.max(...rijen.map((r) => r.weergaven), 1);
+      return `<div class="tabel ga-tabel"><table><thead><tr><th>${kop}</th><th class="ga-num">Weergaven</th>${metBezoekers ? `<th class="ga-num ga-smal-weg">Bezoekers</th>` : ""}</tr></thead><tbody>${rijen.map((r) => `<tr><td class="ga-pad">${r.naam}${r.sub ? ` <span class="mis">${esc(r.sub)}</span>` : ""}</td>
+        <td class="ga-num"><span class="ga-celbalk" style="width:${((3.5 * r.weergaven) / max).toFixed(2)}rem"></span>${getal(r.weergaven)}</td>${metBezoekers ? `<td class="ga-num ga-smal-weg">${getal(r.bezoekers)}</td>` : ""}</tr>`).join("") || `<tr><td colspan="3" class="mis">Nog geen weergaven.</td></tr>`}</tbody></table></div>`;
     };
-    const BRONNAAM = {
-      "google / organic": "Google zoeken", "(direct) / (none)": "Direct (adres of bladwijzer)", "(not set)": "Onbekend",
-      "chatgpt.com / ai-assistant": "ChatGPT", "gemini.google.com / ai-assistant": "Gemini", "bing / organic": "Bing",
-      "ecosia.org / organic": "Ecosia", "search.google.com / referral": "Google Search Console",
-      "startgoogle.startpagina.nl / referral": "Startpagina", "duckduckgo / organic": "DuckDuckGo",
+    const paginas = tabel("Pagina", (ga.paginas || []).map((p) => ({ naam: `<a href="${esc(p.pagePath)}">${esc(p.pagePath)}</a>`, weergaven: p.screenPageViews, bezoekers: p.activeUsers })), true);
+    // Weergaven per id opgeteld: /artiesten/<id>/ telt ook de voorstellingspagina's eronder mee, /plaatsen/<id>/ ook vanavond en dit weekend.
+    const perId = (rijen) => {
+      const m = new Map();
+      for (const r of rijen || []) {
+        const id = r.pagePath.split("/")[2];
+        if (id) m.set(id, (m.get(id) || 0) + r.screenPageViews);
+      }
+      return [...m].sort((x, y) => y[1] - x[1]).slice(0, 50);
     };
-    const bronnen = staven((ga.bronnen || []).map((b) => ({
-      label: esc(BRONNAAM[b.sessionSourceMedium] || b.sessionSourceMedium), waarde: b.sessions,
-      tip: `${b.sessionSourceMedium}: ${getal(b.activeUsers)} bezoekers`,
-    })), "--riso-green");
-
-    // Artiesten en zalen op naam terugvinden, zodat de namen naar hun pagina linken.
-    const opNaam = (kaart) => new Map([...kaart.values()].map((x) => [x.naam.toLowerCase(), x.id]));
-    const artiestId = opNaam(A), theaterId = opNaam(T);
-    const artiestLink = (naam) => {
-      const id = artiestId.get(String(naam).toLowerCase());
-      return id && db.gigsForArtist(id).length ? `<a href="${artiestPad(id)}">${esc(naam)}</a>` : esc(naam);
-    };
-    const theaterLink = (naam) => {
-      const id = theaterId.get(String(naam).toLowerCase());
-      return id && db.gigsForTheater(id).length ? `<a href="/theaters/${id}/">${esc(naam)}</a>` : esc(naam);
-    };
-    const leeg = (x) => !x || x === "(not set)";
-    const perArtiest = new Map();
-    for (const r of ga.tickets || []) {
-      if (leeg(r.artiest)) continue;
-      const p = perArtiest.get(r.artiest) || { klikken: 0, zalen: new Set() };
-      p.klikken += r.eventCount; p.zalen.add(r.theater); perArtiest.set(r.artiest, p);
-    }
-    const artiesten = staven([...perArtiest].sort((a, b) => b[1].klikken - a[1].klikken || a[0].localeCompare(b[0], "nl")).slice(0, 10)
-      .map(([naam, p]) => ({ label: artiestLink(naam), waarde: p.klikken, tip: p.zalen.size === 1 ? "in 1 zaal" : `verspreid over ${p.zalen.size} zalen` })), "--riso-pink");
-
-    const maxPagina = Math.max(...(ga.paginas || []).map((p) => p.screenPageViews), 1);
-    const paginas = (ga.paginas || []).map((p) => `<tr><td class="ga-pad"><a href="${esc(p.pagePath)}">${esc(p.pagePath)}</a></td>
-      <td class="ga-num"><span class="ga-celbalk" style="width:${((3.5 * p.screenPageViews) / maxPagina).toFixed(2)}rem"></span>${getal(p.screenPageViews)}</td><td class="ga-num ga-smal-weg">${getal(p.activeUsers)}</td></tr>`).join("");
-    const tickets = (ga.tickets || []).map((r) => `<tr><td>${leeg(r.artiest) ? `<span class="mis">Niet vastgelegd</span>` : artiestLink(r.artiest)}</td>
-      <td>${leeg(r.voorstelling) ? "" : esc(r.voorstelling)}</td><td class="ga-smal-weg">${leeg(r.theater) ? "" : theaterLink(r.theater)}</td><td class="ga-num">${getal(r.eventCount)}</td></tr>`).join("");
+    const link = (pad, naam, bestaat) => (bestaat ? `<a href="${esc(pad)}">${esc(naam)}</a>` : esc(naam));
+    const theaters = tabel("Theater", perId(ga.theaters).map(([id, w]) => {
+      const th = T.get(id);
+      return { naam: link(`/theaters/${id}/`, th?.naam || id, th && db.gigsForTheater(id).length), sub: th?.plaats, weergaven: w };
+    }));
+    const artiesten = tabel("Artiest", perId(ga.artiesten).map(([id, w]) => {
+      const a = A.get(id);
+      return { naam: link(artiestPad(id), a?.naam || id, a && db.gigsForArtist(id).length), weergaven: w };
+    }));
+    const plaatsNaam = new Map([...T.values()].map((th) => [plaatsId(th.plaats), th.plaats]));
+    const metPagina = new Set(plaatsen);
+    const plaatsTabel = tabel("Plaats", perId(ga.plaatsen).map(([id, w]) => ({ naam: link(`/plaatsen/${id}/`, plaatsNaam.get(id) || id, metPagina.has(plaatsNaam.get(id))), weergaven: w })));
     const opgehaald = new Date(ga.opgehaald).toLocaleString("nl-NL", { timeZone: "Europe/Amsterdam", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" });
 
     const body = `<section class="block wrap dashboard" aria-labelledby="t">
@@ -2250,15 +2236,13 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${perDag}</section>
 
       <div class="ga-twee">
-        <section class="ga-kaart"><h2 class="sub-head">Waar bezoekers vandaan komen</h2><p class="ga-noot">Bezoeken per bron.</p>${bronnen}</section>
-        <section class="ga-kaart"><h2 class="sub-head">Tickets-klikken per artiest</h2><p class="ga-noot">De tien artiesten met de meeste klikken, alle zalen samen.</p>${perArtiest.size ? artiesten : "<p>Nog geen klikken.</p>"}</section>
+        <section class="ga-kaart"><h2 class="sub-head">Meest bekeken pagina's</h2><p class="ga-noot">De 50 pagina's met de meeste weergaven.</p>${paginas}</section>
+        <section class="ga-kaart"><h2 class="sub-head">Meest bekeken theaters</h2><p class="ga-noot">Weergaven van de theaterpagina's.</p>${theaters}</section>
       </div>
 
       <div class="ga-twee">
-        <section class="ga-kaart"><h2 class="sub-head">Meest bekeken pagina's</h2>
-          <div class="tabel ga-tabel"><table><thead><tr><th>Pagina</th><th class="ga-num">Weergaven</th><th class="ga-num ga-smal-weg">Bezoekers</th></tr></thead><tbody>${paginas}</tbody></table></div></section>
-        <section class="ga-kaart"><h2 class="sub-head">Tickets-klikken per voorstelling</h2>
-          <div class="tabel ga-tabel"><table><thead><tr><th>Artiest</th><th>Voorstelling</th><th class="ga-smal-weg">Theater</th><th class="ga-num">Klikken</th></tr></thead><tbody>${tickets}</tbody></table></div></section>
+        <section class="ga-kaart"><h2 class="sub-head">Meest bekeken artiesten</h2><p class="ga-noot">Artiestpagina en voorstellingspagina's samen.</p>${artiesten}</section>
+        <section class="ga-kaart"><h2 class="sub-head">Meest bekeken plaatsen</h2><p class="ga-noot">Plaatspagina met vanavond en dit weekend samen.</p>${plaatsTabel}</section>
       </div>
     </section>`;
     return layout({ title: "Dashboard", description: "Bezoekcijfers van de agenda.", path: "/dashboard/", body, noindex: true });

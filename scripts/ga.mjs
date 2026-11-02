@@ -96,6 +96,15 @@ if (soort === "dashboard") {
       }
       uit[naam] = alsRijen(r);
     }
+    // Weergaven per theater-, artiest- en plaatspagina (met alles eronder); build.mjs telt ze per id op.
+    for (const [naam, begin] of [["theaters", "/theaters/"], ["artiesten", "/artiesten/"], ["plaatsen", "/plaatsen/"]]) {
+      const r = await rapport(token, {
+        dimensions: [{ name: "pagePath" }], metrics: [{ name: "screenPageViews" }], dateRanges: bereik,
+        dimensionFilter: { filter: { fieldName: "pagePath", stringFilter: { matchType: "BEGINS_WITH", value: begin } } },
+        orderBys: [{ metric: { metricName: "screenPageViews" }, desc: true }], limit: 1000,
+      });
+      uit[naam] = alsRijen(r);
+    }
     uit.overzicht = uit.overzicht.map((d) => ({ ...d, date: d.date.replace(/^(\d{4})(\d\d)(\d\d)$/, "$1-$2-$3") }));
     const doel = new URL("../data/ga-dashboard.json", import.meta.url);
     writeFileSync(doel, JSON.stringify(uit, null, 1) + "\n");

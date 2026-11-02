@@ -784,12 +784,6 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .dashboard .ga-assen span { flex: 1 1 0; text-align: center; font-size: .75rem; line-height: 1.25; color: var(--ink-2); white-space: nowrap; }
 .dashboard .ga-twee { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 0 24px; }
 @media (max-width: 560px) { .dashboard .ga-kaart { padding: 16px; } }
-.dashboard .ga-staven { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-.dashboard .ga-staaf-kop { display: flex; justify-content: space-between; gap: 12px; font-size: .9rem; line-height: 1.3; }
-.dashboard .ga-staaf-kop > span { min-width: 0; overflow-wrap: anywhere; }
-.dashboard .ga-staaf-kop b { font-variant-numeric: tabular-nums; white-space: nowrap; }
-.dashboard .ga-staaf { display: block; height: 10px; margin-top: 3px; }
-.dashboard .ga-staaf span { display: block; height: 100%; min-width: 2px; border-radius: 2px; }
 .dashboard .ga-tabel { max-height: 30rem; overflow: auto; }
 .dashboard table { width: 100%; border-collapse: collapse; font-size: var(--step--1); font-variant-numeric: tabular-nums; }
 .dashboard th, .dashboard td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
