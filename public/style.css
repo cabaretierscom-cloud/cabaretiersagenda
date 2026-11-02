@@ -755,7 +755,14 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .dashboard .ga-noot { color: var(--ink-2); font-size: var(--step--1); margin: 0 0 16px; max-width: 75ch; }
 .dashboard .let-op { border: 2px solid var(--ink); border-radius: 16px; padding: 16px 20px; }
 .dashboard .ga-tegels { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 12px; margin: 24px 0 24px; }
-.dashboard .ga-tegel { background: var(--bg); color: #121212; padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 6px; min-height: 160px; }
+.dashboard .ga-tegel { background: var(--bg); color: #121212; padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 6px; min-height: 160px; border-radius: 16px; position: relative; overflow: hidden; isolation: isolate; }
+/* Rasterpunten zoals op de affiches en artiestkaarten */
+.dashboard .ga-tegel::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; opacity: .24;
+  background-image: radial-gradient(currentColor 1.1px, transparent 1.6px); background-size: 7px 7px;
+  -webkit-mask-image: radial-gradient(circle at 85% 25%, #000 0, #000 22%, transparent 65%);
+          mask-image: radial-gradient(circle at 85% 25%, #000 0, #000 22%, transparent 65%);
+}
 .dashboard .ga-tegel h2 { margin: 0; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
 .dashboard .ga-tegel strong { font-family: var(--font-display); font-weight: 900; font-size: clamp(3rem, 6vw, 4.2rem); line-height: .9; font-variant-numeric: tabular-nums; }
 .dashboard .ga-tegel p { margin: 0; font-size: .875rem; line-height: 1.35; }
