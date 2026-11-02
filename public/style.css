@@ -766,14 +766,22 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .dashboard .ga-tegel h2 { margin: 0; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
 .dashboard .ga-tegel strong { font-family: var(--font-display); font-weight: 900; font-size: clamp(3rem, 6vw, 4.2rem); line-height: .9; font-variant-numeric: tabular-nums; }
 .dashboard .ga-tegel p { margin: 0; font-size: .875rem; line-height: 1.35; }
-.dashboard .ga-dagen { display: flex; align-items: stretch; gap: 8px; height: 260px; padding-bottom: 4px; border-bottom: 2px solid var(--ink); overflow-x: auto; }
-.dashboard .ga-dag { flex: 1 1 0; min-width: 34px; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 4px; position: relative; padding-bottom: 40px; }
-.dashboard .ga-dag-getal { font-weight: 700; font-size: var(--step--1); font-variant-numeric: tabular-nums; }
-.dashboard .ga-dag-staaf { width: 100%; max-width: 64px; background: var(--accent); border-radius: 2px 2px 0 0; }
-.dashboard .ga-dag-label { position: absolute; bottom: 0; text-align: center; font-size: .75rem; line-height: 1.25; color: var(--ink-2); white-space: nowrap; }
-.dashboard .ga-dag:hover .ga-dag-staaf { filter: brightness(.85); }
 .dashboard .ga-kaart { border: 2px solid var(--ink); border-radius: 16px; padding: 20px 24px 24px; min-width: 0; margin-bottom: 24px; }
 .dashboard .ga-kaart > .sub-head { margin-top: 0; }
+.dashboard .ga-legenda { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; font-size: var(--step--1); color: var(--ink-2); margin: -4px 0 12px; }
+.dashboard .ga-leg-balk { width: 12px; height: 12px; border-radius: 2px; background: var(--accent); }
+.dashboard .ga-leg-lijn { width: 22px; height: 3px; border-radius: 2px; background: var(--riso-pink); margin-left: 12px; }
+.dashboard .ga-combi { overflow-x: auto; padding-top: 24px; }
+.dashboard .ga-plot { position: relative; height: 260px; display: flex; align-items: flex-end; }
+.dashboard .ga-kolom { flex: 1 1 0; height: 100%; display: flex; align-items: flex-end; justify-content: center; padding-inline: 6px; }
+.dashboard .ga-balk { width: 100%; max-width: 64px; background: var(--accent); border-radius: 2px 2px 0 0; display: flex; justify-content: center; padding-top: 6px; color: var(--on-accent); font-weight: 700; font-size: var(--step--1); font-variant-numeric: tabular-nums; line-height: 1; }
+.dashboard .ga-kolom:hover .ga-balk { filter: brightness(.88); }
+.dashboard .ga-lijn { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.dashboard .ga-lijn polyline { stroke: var(--riso-pink); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+.dashboard .ga-punt { position: absolute; width: 10px; height: 10px; margin: 0 0 -5px -5px; border-radius: 50%; background: var(--paper); border: 3px solid var(--riso-pink); pointer-events: none; }
+.dashboard .ga-punt-getal { position: absolute; transform: translate(-50%, -10px); font-weight: 700; font-size: var(--step--1); font-variant-numeric: tabular-nums; line-height: 1; color: var(--ink); background: var(--paper); padding: 1px 3px; border-radius: 3px; pointer-events: none; white-space: nowrap; }
+.dashboard .ga-assen { display: flex; border-top: 2px solid var(--ink); padding-top: 6px; }
+.dashboard .ga-assen span { flex: 1 1 0; text-align: center; font-size: .75rem; line-height: 1.25; color: var(--ink-2); white-space: nowrap; }
 .dashboard .ga-twee { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 0 24px; }
 @media (max-width: 560px) { .dashboard .ga-kaart { padding: 16px; } }
 .dashboard .ga-staven { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
