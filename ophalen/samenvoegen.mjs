@@ -350,6 +350,12 @@ for (const f of bronFiles) {
       const { artiest, titel } = artiestOfTitel(bronRecord.artiesten[0], r.titel);
       if (artiest !== bronRecord.artiesten[0]) { r.titel = titel; r.artiesten = opgeschoondeArtiesten([artiest]); }
     }
+    // Geen artiest, maar de namen vooraan in de titel ("Najib & Roué – Alles is comedy", Goudse Schouwburg):
+    // is het deel vóór het streepje een bekende artiest of een alias, dan is dat de artiest.
+    if (!r.artiesten.length && bronRecord.genre !== "theaterkomedie") {
+      const m = r.titel.match(/^(.+?)\s+[–—-]\s+(.+)$/);
+      if (m && (aliasOpSleutel.has(slug(m[1])) || isBekend(m[1]))) { r.artiesten = opgeschoondeArtiesten([m[1]]); r.titel = m[2]; }
+    }
     // Toneel en komedie hebben hun eigen opruimregels (stukOpOrde); de regels hieronder zijn voor cabaret.
     if (r.genre === "theaterkomedie" || /^(komedie|blijspel|klucht)\b/i.test(r.titel)) stukOpOrde(r, bronRecord.artiesten?.length === 1 ? bronRecord.artiesten[0] : null);
     // "Eigenlijk" / "Viggo Waas, Eddie B. Wahr & Kees van der Vooren": een namenlijst als titel en een
