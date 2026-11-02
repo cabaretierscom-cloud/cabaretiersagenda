@@ -2171,13 +2171,25 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const eerste = dagen[0], laatste = dagen[dagen.length - 1];
     const dagNaam = (iso) => `${fmt.weekday(iso)} ${fmt.dayMonth(iso)}`;
 
-    // Bezoekers per dag als staven (gewone HTML, werkt zonder JavaScript).
-    const maxDag = Math.max(...dagen.map((d) => d.activeUsers), 1);
-    const perDag = `<div class="ga-dagen" role="img" aria-label="Bezoekers per dag">${dagen.map((d) => `<div class="ga-dag" title="${esc(dagNaam(d.date))}: ${getal(d.activeUsers)} bezoekers, ${getal(d.sessions)} bezoeken, ${getal(d.screenPageViews)} paginaweergaven">
-        <span class="ga-dag-getal">${getal(d.activeUsers)}</span>
-        <span class="ga-dag-staaf" style="height:${((100 * d.activeUsers) / maxDag).toFixed(1)}%"></span>
-        <span class="ga-dag-label">${esc(fmt.weekdayShort(d.date))}<br>${esc(fmt.day(d.date))} ${esc(fmt.monthShort(d.date))}</span>
-      </div>`).join("")}</div>`;
+    // Bezoeken (staven) en paginaweergaven (lijn) per dag, gewone HTML met een SVG-lijn: werkt zonder JavaScript.
+    // Elk heeft een eigen schaal en een eigen strook, zodat ze elkaar niet raken (de getallen staan erbij):
+    // de staven in de onderste helft, de lijn in de strook daarboven (55% tot 92% van de hoogte).
+    const n = dagen.length;
+    const maxBezoek = Math.max(...dagen.map((d) => d.sessions), 1);
+    const maxWeergave = Math.max(...dagen.map((d) => d.screenPageViews), 1);
+    const hBalk = (d) => (46 * d.sessions) / maxBezoek;
+    const hLijn = (d) => 55 + (37 * d.screenPageViews) / maxWeergave;
+    const xMidden = (i) => ((i + 0.5) * 100) / n;
+    const punten = dagen.map((d, i) => `${(i + 0.5).toFixed(2)},${(100 - hLijn(d)).toFixed(2)}`).join(" ");
+    const perDag = `<div class="ga-legenda"><span class="ga-leg-balk"></span>Bezoeken <span class="ga-leg-lijn"></span>Paginaweergaven</div>
+      <div class="ga-combi"><div class="ga-combi-binnen" style="min-width:${n * 40}px">
+        <div class="ga-plot" role="img" aria-label="Bezoeken en paginaweergaven per dag">
+          ${dagen.map((d) => `<div class="ga-kolom" title="${esc(dagNaam(d.date))}: ${getal(d.sessions)} bezoeken, ${getal(d.screenPageViews)} paginaweergaven, ${getal(d.activeUsers)} bezoekers"><span class="ga-balk" style="height:${hBalk(d).toFixed(1)}%"><span>${getal(d.sessions)}</span></span></div>`).join("")}
+          <svg class="ga-lijn" viewBox="0 0 ${n} 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="${punten}" fill="none" vector-effect="non-scaling-stroke"/></svg>
+          ${dagen.map((d, i) => `<span class="ga-punt" style="left:${xMidden(i).toFixed(2)}%;bottom:${hLijn(d).toFixed(2)}%"></span><span class="ga-punt-getal" style="left:${xMidden(i).toFixed(2)}%;bottom:${hLijn(d).toFixed(2)}%">${getal(d.screenPageViews)}</span>`).join("")}
+        </div>
+        <div class="ga-assen">${dagen.map((d) => `<span>${esc(fmt.weekdayShort(d.date))}<br>${esc(fmt.day(d.date))} ${esc(fmt.monthShort(d.date))}</span>`).join("")}</div>
+      </div></div>`;
 
     const staven = (rijen, kleur) => {
       const max = Math.max(...rijen.map((r) => r.waarde), 1);
@@ -2234,7 +2246,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <div class="ga-tegel" style="--bg:var(--riso-lime)"><h2>Tickets-klikken</h2><strong>${getal(klikken)}</strong><p>Keer doorgeklikt naar een theater om kaartjes te kopen.</p></div>
       </div>
 
-      <section class="ga-kaart"><h2 class="sub-head">Bezoekers per dag</h2>
+      <section class="ga-kaart"><h2 class="sub-head">Bezoeken en paginaweergaven per dag</h2>
       ${perDag}</section>
 
       <div class="ga-twee">
