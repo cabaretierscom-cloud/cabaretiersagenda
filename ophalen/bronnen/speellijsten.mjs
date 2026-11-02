@@ -94,6 +94,7 @@ const ARTIESTEN = [
   { naam: "Mike Boddé", url: "https://www.mikebodde.nl/", volgorde: ZP },
   { naam: "Mohsin Abbas", url: "https://www.mohsinabbas.be/speellijst", volgorde: TZP, land: "BE" },
   { naam: "Najib Amhali", url: "https://najibamhali.nl/speellijst/", volgorde: PZ },
+  { naam: "Nabil Aoulad Ayad", url: "https://www.nabil.eu/speellijst", volgorde: PZ, titel: "Daar is hij weer!", belgisch: /Antwerpen/, scheiding: /\b\d{1,2}-\d{1,2}-20\d\d\s+\d{1,2}:\d{2}\b/g },
   { naam: "Nathalie Baartman", url: "https://nathaliebaartman.nl/voorstellingen/", volgorde: ZPT },
   { naam: "Nele Bauwens", url: "https://www.nelebauwens.be/", volgorde: PZ, land: "BE", splits: /\s+[-–—/|]\s+|,\s*/, ruis: /^(speeldata|google agenda|ical|outlook|[a-z]{3}|\d{1,2}|\d{1,2}:\d{2} [ap]\.m\.|evenement bekijken.*)$/i },
   { naam: "Nienke Plas", url: "https://nienkeplas.com/theater-voorstellingen/", volgorde: PZ },
@@ -113,7 +114,7 @@ const ARTIESTEN = [
   { naam: "Ruud Smulders", url: "https://ruudsmulders.nl/speellijst/", volgorde: PZ },
   { naam: "Sara Kroos", url: "https://www.sarakroos.nl/", volgorde: TZP },
   { naam: "Spruijt & Opperman", url: "https://spruijtenopperman.nl/speellijst/", volgorde: PZ },
-  { naam: "Stefan Hendrikx", url: "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/", volgorde: ZP, titel: "In Perspectief", ruis: /^class=/ },
+  { naam: "Stefan Hendrikx", url: "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/", volgorde: ZP, titel: "In Perspectief" },
   { naam: "Thijs Kemperink", url: "https://thijskemperink.nl/speellijst/", volgorde: TZP },
   { naam: "Valentina Tóth", url: "https://valentinatoth.nl/agenda/", volgorde: TZP },
   { naam: "Van Vleuten & Van Muiswinkel", url: "https://www.bunkertheaterzaken.nl/artiesten/van-vleuten-van-muiswinkel/", volgorde: TPZ },
@@ -121,12 +122,12 @@ const ARTIESTEN = [
   { naam: "Wim Helsen", url: "https://wimhelsen.be/agenda/", volgorde: TZP, land: "BE" },
   { naam: "Wina Ricardo", url: "https://winaricardo.nl/", volgorde: PZT },
   { naam: "Wouter Deprez", url: "https://www.wouterdeprez.be/", volgorde: PZ, land: "BE" },
-  { naam: "Wouter Monden", url: "https://www.woutermonden.nl/", volgorde: ["-", "zaal", "plaats"] },
+  { naam: "Wouter Monden", url: "https://www.woutermonden.nl/", volgorde: ZP },
   { naam: "Xander De Rycke", url: "https://www.xanderderycke.be/home/", volgorde: TPZ, land: "BE", overslaan: /^Stand-up\b/ },
 ];
 
 // Een plaats is kort en zonder cijfers; een zaal is geen hele zin.
-const lijktPlaats = (p) => p && p.length <= 40 && p.split(/\s+/).length <= 5 && !/\d|[!?:()]/.test(p) && !/theater|schouwburg|comedy|club|caf[eé]|zaal|podium|\bplt\b/i.test(p);
+const lijktPlaats = (p) => p && p.length <= 40 && p.split(/\s+/).length <= 5 && !/\d|[!?:()]/.test(p) && !/theater|schouwburg|comedy|club|caf[eé]|\bzaal\b|podium|\bplt\b/i.test(p);
 const lijktZaal = (z) => z && z.length <= 70 && z.split(/\s+/).length <= 9 && !/[!?]$/.test(z);
 
 // De site van de zaal uit de kaartlink van een rij: niet die van de artiest zelf, een kaartverkoper,

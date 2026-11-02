@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-02",
   "totaal": {
-    "speeldata": 7181,
-    "komend": 6893,
+    "speeldata": 7259,
+    "komend": 6971,
     "artiesten": 516,
-    "zalen": 647,
+    "zalen": 648,
     "plaatsen": 465,
-    "voorstellingen": 809
+    "voorstellingen": 810
   },
   "bronnen": [
     {
@@ -485,9 +485,9 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-02",
-      "speeldata": 2177,
-      "vorige": 2179,
-      "dubbel": 1157
+      "speeldata": 2255,
+      "vorige": 2177,
+      "dubbel": 1184
     }
   ],
   "nieuw": {
@@ -518,6 +518,13 @@
         "plaats": "Uithoorn",
         "land": "NL",
         "website": "https://www.scau.nl"
+      },
+      {
+        "id": "phil-haarlem",
+        "naam": "PHIL",
+        "plaats": "Haarlem",
+        "land": "NL",
+        "website": "https://philhaarlem.nl"
       }
     ],
     "voorstellingen": [
@@ -531,6 +538,13 @@
         "titel": "De nationale avond van de woordgrap",
         "artiesten": [
           "woordgrapf"
+        ]
+      },
+      {
+        "id": "de-cabaret-club-op-z-n-brabants",
+        "titel": "Op z’n Brabants",
+        "artiesten": [
+          "de-cabaret-club"
         ]
       }
     ]
@@ -611,12 +625,12 @@
     },
     {
       "datum": "2026-11-02",
-      "speeldata": 7181,
-      "komend": 6893,
+      "speeldata": 7259,
+      "komend": 6971,
       "artiesten": 516,
-      "zalen": 647,
+      "zalen": 648,
       "plaatsen": 465,
-      "voorstellingen": 809
+      "voorstellingen": 810
     }
   ]
 }

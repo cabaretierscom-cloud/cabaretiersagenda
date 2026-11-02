@@ -138,6 +138,10 @@ const RUIS = [
   /^[\s()|•·,–—>»→*-]*$/,
   /^\(.*\)$/,
   /^[a-z0-9.-]+\.(nl|be|com)$/i,
+  // Een status met uitleg ("Geannuleerd om technische redenen"): de status is al uit de rij gehaald.
+  /^(geannuleerd|afgelast|gaat niet door|vervalt)\b/i,
+  // Een stukje HTML dat als tekst doorkomt (class="event …">), bijv. bij een '>' in een attribuut.
+  /^[a-z-]+=["']/i,
   /^€|^\d+([.,]\d+)?$/,
 ];
 // "Van Vleuten en Van Muiswinkel" is "Van Vleuten & Van Muiswinkel".
