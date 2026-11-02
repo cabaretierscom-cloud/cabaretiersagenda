@@ -5378,6 +5378,17 @@
     "herkomst": "5to9"
   },
   {
+    "voorstelling": "jacques-vermeire-jacques-vermeire",
+    "theater": "de-passant-zoutleeuw",
+    "datum": "2026-11-07",
+    "tijd": null,
+    "status": "uitverkocht",
+    "soort": null,
+    "bron": "https://www.jacquesvermeire.be/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "thijs-van-de-meeberg-baby-reindeer",
     "theater": "eci-cultuurfabriek-roermond",
     "datum": "2026-11-07",
@@ -5818,17 +5829,6 @@
     "herkomst": "speelhuis"
   },
   {
-    "voorstelling": "mike-bodde-mike-bodde",
-    "theater": "calypso-theater-wijk-bij-duurstede",
-    "datum": "2026-11-07",
-    "tijd": "20:30",
-    "status": "gepland",
-    "soort": null,
-    "bron": "https://www.mikebodde.nl/",
-    "opgehaald": "2026-11-02",
-    "herkomst": "speellijsten"
-  },
-  {
     "voorstelling": "vroege-zaterdagavondshow-comedyhuis-utrecht",
     "theater": "comedyhuis-utrecht",
     "datum": "2026-11-07",
@@ -5943,7 +5943,7 @@
     "theater": "theater-de-kik-elst",
     "datum": "2026-11-07",
     "tijd": "20:30",
-    "status": "gepland",
+    "status": "uitverkocht",
     "soort": null,
     "bron": "https://valentinatoth.nl/agenda/",
     "opgehaald": "2026-11-02",
@@ -7523,6 +7523,17 @@
     "herkomst": "speellijsten"
   },
   {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "theater-de-leest-waalwijk",
+    "datum": "2026-11-12",
+    "tijd": "20:30",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "kim-karssen-god-is-een-snotje",
     "theater": "theater-heerlen",
     "datum": "2026-11-12",
@@ -8139,6 +8150,17 @@
     "herkomst": "de-veste"
   },
   {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "theater-vianen",
+    "datum": "2026-11-13",
+    "tijd": "20:15",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "wina-ricardo-wina-s-wereld",
     "theater": "verkadefabriek-s-hertogenbosch",
     "datum": "2026-11-13",
@@ -8159,17 +8181,6 @@
     "bron": "https://www.amaicomedyclub.com/event-details/the-american-apology-tour-eng",
     "opgehaald": "2026-11-02",
     "herkomst": "amai"
-  },
-  {
-    "voorstelling": "mike-bodde-mike-bodde",
-    "theater": "amphion",
-    "datum": "2026-11-13",
-    "tijd": "20:30",
-    "status": "gepland",
-    "soort": null,
-    "bron": "https://www.mikebodde.nl/",
-    "opgehaald": "2026-11-02",
-    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "david-linszen-striptease-van-de-dood",
@@ -9008,13 +9019,13 @@
     "herkomst": "zwolle"
   },
   {
-    "voorstelling": "mike-bodde-mike-bodde",
-    "theater": "schouwburg-het-park",
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "pepijn-den-haag",
     "datum": "2026-11-14",
     "tijd": "20:30",
     "status": "gepland",
     "soort": null,
-    "bron": "https://www.mikebodde.nl/",
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
     "opgehaald": "2026-11-02",
     "herkomst": "speellijsten"
   },
@@ -9226,17 +9237,6 @@
     "bron": "https://theaterspeelhuis.nl/programma/tineke-schouten-13207",
     "opgehaald": "2026-11-02",
     "herkomst": "speelhuis"
-  },
-  {
-    "voorstelling": "mike-bodde-mike-bodde",
-    "theater": "theater-ludens-voorburg",
-    "datum": "2026-11-15",
-    "tijd": "15:00",
-    "status": "gepland",
-    "soort": null,
-    "bron": "https://www.mikebodde.nl/",
-    "opgehaald": "2026-11-02",
-    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "marja-van-katendrecht-heel-holland-hoopt",
@@ -10266,7 +10266,7 @@
     "theater": "stadstheater-zoetermeer",
     "datum": "2026-11-19",
     "tijd": null,
-    "status": "gepland",
+    "status": "uitverkocht",
     "soort": null,
     "bron": "https://beritcompanjen.nl/",
     "opgehaald": "2026-11-02",
@@ -10579,17 +10579,6 @@
     "bron": "https://www.kampanje.nl/voorstellingen/kasper-van-der-laan-5szb",
     "opgehaald": "2026-10-31",
     "herkomst": "kampanje"
-  },
-  {
-    "voorstelling": "mike-bodde-mike-bodde",
-    "theater": "theater-de-muze-noordwijk",
-    "datum": "2026-11-19",
-    "tijd": "20:15",
-    "status": "gepland",
-    "soort": null,
-    "bron": "https://www.mikebodde.nl/",
-    "opgehaald": "2026-11-02",
-    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "richard-groenendijk-gelukkig-heb-je-mij-nog",
@@ -11303,17 +11292,6 @@
     "status": "uitverkocht",
     "soort": null,
     "bron": "https://richardgroenendijk.nl/",
-    "opgehaald": "2026-11-02",
-    "herkomst": "speellijsten"
-  },
-  {
-    "voorstelling": "mike-bodde-mike-bodde",
-    "theater": "theater-stroud-putten",
-    "datum": "2026-11-20",
-    "tijd": "20:15",
-    "status": "gepland",
-    "soort": null,
-    "bron": "https://www.mikebodde.nl/",
     "opgehaald": "2026-11-02",
     "herkomst": "speellijsten"
   },
@@ -13694,17 +13672,6 @@
     "herkomst": "comedyhuis"
   },
   {
-    "voorstelling": "mike-bodde-mike-bodde",
-    "theater": "mimik-deventer",
-    "datum": "2026-11-26",
-    "tijd": "20:30",
-    "status": "gepland",
-    "soort": null,
-    "bron": "https://www.mikebodde.nl/",
-    "opgehaald": "2026-11-02",
-    "herkomst": "speellijsten"
-  },
-  {
     "voorstelling": "amsterdams-studenten-cabaret-festival-finalistentournee",
     "theater": "parktheater-eindhoven",
     "datum": "2026-11-26",
@@ -14957,17 +14924,6 @@
     "bron": "https://cultura-ede.nl/agenda/valentina-toth-276873/",
     "opgehaald": "2026-11-02",
     "herkomst": "cultura"
-  },
-  {
-    "voorstelling": "mike-bodde-mike-bodde",
-    "theater": "cultureel-centrum-concordia-haastrecht",
-    "datum": "2026-11-28",
-    "tijd": "20:15",
-    "status": "gepland",
-    "soort": null,
-    "bron": "https://www.mikebodde.nl/",
-    "opgehaald": "2026-11-02",
-    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "max-van-den-burg-maxikozi",
@@ -17576,17 +17532,6 @@
     "herkomst": "speellijsten"
   },
   {
-    "voorstelling": "mike-bodde-mike-bodde",
-    "theater": "de-boerderij-huizen",
-    "datum": "2026-12-04",
-    "tijd": "20:15",
-    "status": "gepland",
-    "soort": null,
-    "bron": "https://www.mikebodde.nl/",
-    "opgehaald": "2026-11-02",
-    "herkomst": "speellijsten"
-  },
-  {
     "voorstelling": "david-linszen-striptease-van-de-dood",
     "theater": "flint-amersfoort",
     "datum": "2026-12-04",
@@ -19726,17 +19671,6 @@
     "bron": "https://www.cpunt.nl/agenda/marlon-kicken",
     "opgehaald": "2026-11-02",
     "herkomst": "cpunt"
-  },
-  {
-    "voorstelling": "mike-bodde-mike-bodde",
-    "theater": "de-tamboer-hoogeveen",
-    "datum": "2026-12-10",
-    "tijd": "20:00",
-    "status": "gepland",
-    "soort": null,
-    "bron": "https://www.mikebodde.nl/",
-    "opgehaald": "2026-11-02",
-    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "merijn-scholten-lemming",
@@ -29886,6 +29820,17 @@
     "bron": "https://goudseschouwburg.nl/agenda/kasper-van-der-laan-ruim-10025502/",
     "opgehaald": "2026-11-02",
     "herkomst": "gouda"
+  },
+  {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "het-lichtruim-bilthoven",
+    "datum": "2027-01-15",
+    "tijd": "20:00",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "patrick-laureij-kintsugi",
@@ -40600,17 +40545,6 @@
     "herkomst": "kobra"
   },
   {
-    "voorstelling": "berit-companjen-zei-ik-dat-hardop",
-    "theater": "dorpshuis-nigtevecht",
-    "datum": "2027-02-13",
-    "tijd": null,
-    "status": "gepland",
-    "soort": null,
-    "bron": "https://beritcompanjen.nl/",
-    "opgehaald": "2026-11-02",
-    "herkomst": "speellijsten"
-  },
-  {
     "voorstelling": "hans-cools-zolang-de-voorraad-strekt",
     "theater": "gc-de-bunder-moorslede",
     "datum": "2027-02-13",
@@ -41544,6 +41478,17 @@
     "bron": "https://www.parktheater.nl/programma/welkom-thuis-waar-niemand-op-je-zit-te-wachten-1mll",
     "opgehaald": "2026-11-02",
     "herkomst": "parktheater"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "pepijn-den-haag",
+    "datum": "2027-02-16",
+    "tijd": "20:30",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "david-van-rosmalen-als-ik-jou-was",
@@ -44043,6 +43988,17 @@
     "herkomst": "comedytrain"
   },
   {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "de-schutse-uithoorn",
+    "datum": "2027-02-21",
+    "tijd": "14:30",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "gewoon-aans-wat-n-gedoo",
     "theater": "hof88",
     "datum": "2027-02-21",
@@ -46188,6 +46144,17 @@
     "herkomst": "stoep"
   },
   {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "theater-onder-de-linden-middenbeemster",
+    "datum": "2027-02-27",
+    "tijd": "20:30",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "masters-of-comedy-comedy-cafe-amsterdam",
     "theater": "comedy-cafe-amsterdam",
     "datum": "2027-02-27",
@@ -46395,6 +46362,17 @@
     "bron": "https://luxortheater.nl/agenda/micha-wertheim-55242/",
     "opgehaald": "2026-11-02",
     "herkomst": "luxor"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "theater-de-richel-amsterdam",
+    "datum": "2027-03-02",
+    "tijd": "20:00",
+    "status": "gepland",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "roue-verveer-vanzelfsprekend",
@@ -46637,6 +46615,17 @@
     "bron": "https://www.theaterbellevue.nl/agenda/ze-moesten-eens-weten-d1bx",
     "opgehaald": "2026-10-31",
     "herkomst": "bellevue"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "theater-de-richel-amsterdam",
+    "datum": "2027-03-03",
+    "tijd": "20:00",
+    "status": "gepland",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "dokter-bart-ontsteking",
@@ -47793,6 +47782,17 @@
     "herkomst": "vrijthof"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "boog-bolsward",
+    "datum": "2027-03-05",
+    "tijd": "20:30",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "all-english-comedy-night-de-kargadoor-utrecht",
     "theater": "de-kargadoor-utrecht",
     "datum": "2027-03-05",
@@ -47899,6 +47899,17 @@
     "status": "gepland",
     "soort": null,
     "bron": "https://marjavankatendrecht.nl/tickets/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "theater-de-schalm-veldhoven",
+    "datum": "2027-03-05",
+    "tijd": "20:30",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
     "opgehaald": "2026-11-02",
     "herkomst": "speellijsten"
   },
@@ -49674,6 +49685,17 @@
     "herkomst": "parktheater"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "pepijn-den-haag",
+    "datum": "2027-03-11",
+    "tijd": "20:30",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "andre-manuel-de-eenzame-ziel",
     "theater": "stadsschouwburg-utrecht",
     "datum": "2027-03-11",
@@ -50297,6 +50319,17 @@
     "status": "uitverkocht",
     "soort": null,
     "bron": "https://richardgroenendijk.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "theater-vianen",
+    "datum": "2027-03-12",
+    "tijd": "20:25",
+    "status": "gepland",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
     "opgehaald": "2026-11-02",
     "herkomst": "speellijsten"
   },
@@ -50992,6 +51025,17 @@
     "bron": "https://goudseschouwburg.nl/agenda/marie-koet-eindspel-try-out-10025537/",
     "opgehaald": "2026-11-02",
     "herkomst": "gouda"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "het-veur-theater-leidschendam",
+    "datum": "2027-03-13",
+    "tijd": "20:30",
+    "status": "gepland",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "maaike-dirkje-hop-erkenning-de-musical",
@@ -52094,6 +52138,17 @@
     "herkomst": "bellevue"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "cultureel-centrum-nesterle-nistelrode",
+    "datum": "2027-03-18",
+    "tijd": "20:15",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "peter-pannekoek-demonen",
     "theater": "de-voorveghter-hardenberg",
     "datum": "2027-03-18",
@@ -52191,6 +52246,17 @@
     "bron": "https://theaterspeelhuis.nl/programma/thijs-kemperink-13194",
     "opgehaald": "2026-11-02",
     "herkomst": "speelhuis"
+  },
+  {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "theater-warenar-wassenaar",
+    "datum": "2027-03-18",
+    "tijd": "20:15",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "martijn-koning-overprikkeld",
@@ -52750,6 +52816,17 @@
     "status": "uitverkocht",
     "soort": "try-out",
     "bron": "https://peterpannekoek.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "theater-hofpoort-coevorden",
+    "datum": "2027-03-19",
+    "tijd": "20:15",
+    "status": "gepland",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
     "opgehaald": "2026-11-02",
     "herkomst": "speellijsten"
   },
@@ -54294,6 +54371,17 @@
     "herkomst": "stoep"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "theater-twee-hondjes-hellevoetsluis",
+    "datum": "2027-03-24",
+    "tijd": "20:15",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "patrick-spicer-patrick-spicer",
     "theater": "comedy-club-haug-rotterdam",
     "datum": "2027-03-24",
@@ -54668,6 +54756,17 @@
     "herkomst": "cpunt"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "het-postkantoor-bovenkarspel",
+    "datum": "2027-03-25",
+    "tijd": "20:00",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "ronald-goedemondt-mijn-lieve-achterdocht",
     "theater": "orpheus",
     "datum": "2027-03-25",
@@ -54875,6 +54974,17 @@
     "bron": "https://www.wilminktheater.nl/nl/agenda/comedy-night-de-kleine-willem-46c9",
     "opgehaald": "2026-11-02",
     "herkomst": "wilminktheater"
+  },
+  {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "de-kom-nieuwegein",
+    "datum": "2027-03-25",
+    "tijd": "20:30",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "tobi-kooiman-best-of-4",
@@ -55139,6 +55249,17 @@
     "bron": "https://www.ccdeschakel.be/voorstellingen/kamal-kharmach-bnbn",
     "opgehaald": "2026-11-02",
     "herkomst": "schakel"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "cc-elckerlyc-hilvarenbeek",
+    "datum": "2027-03-26",
+    "tijd": "20:00",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "amsterdam-kleinkunst-festival-finalistentournee",
@@ -55447,6 +55568,17 @@
     "bron": "https://theaterdestoep.nl/voorstelling/ronald-snijders-2627",
     "opgehaald": "2026-11-02",
     "herkomst": "stoep"
+  },
+  {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "theater-t-pand-gorinchem",
+    "datum": "2027-03-26",
+    "tijd": "20:30",
+    "status": "uitverkocht",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "cocktails-en-comedy-comedy-cafe-amsterdam",
@@ -56890,6 +57022,17 @@
     "herkomst": "castellum"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "d-n-bogerd-druten",
+    "datum": "2027-04-01",
+    "tijd": "20:30",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "kamagurka-op-zekere-dag",
     "theater": "de-kleine-willem-enschede",
     "datum": "2027-04-01",
@@ -57427,6 +57570,17 @@
     "bron": "https://stadsgehoorzaal.nl/programma/ricky-risolles",
     "opgehaald": "2026-11-02",
     "herkomst": "vlaardingen"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "t-onderdak-sassenheim",
+    "datum": "2027-04-02",
+    "tijd": "20:15",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "roue-verveer-vanzelfsprekend",
@@ -58793,6 +58947,17 @@
     "herkomst": "parktheater"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "posttheater-arnhem",
+    "datum": "2027-04-07",
+    "tijd": "20:30",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "wina-ricardo-wina-s-wereld",
     "theater": "theater-de-leest-waalwijk",
     "datum": "2027-04-07",
@@ -59197,6 +59362,17 @@
     "bron": "https://www.lawei.nl/agenda/julian-fontalvo-yyx8",
     "opgehaald": "2026-11-02",
     "herkomst": "lawei"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "theater-de-speeldoos-baarn",
+    "datum": "2027-04-08",
+    "tijd": "20:15",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "yunus-aktas-we-zien-wel",
@@ -59679,6 +59855,17 @@
     "status": "gepland",
     "soort": null,
     "bron": "https://roueverveer.nl/speellijst/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "theater-t-mozaiek-wijchen",
+    "datum": "2027-04-09",
+    "tijd": "20:15",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
     "opgehaald": "2026-11-02",
     "herkomst": "speellijsten"
   },
@@ -60849,6 +61036,17 @@
     "herkomst": "schie"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "theater-de-muze-noordwijk",
+    "datum": "2027-04-14",
+    "tijd": "20:15",
+    "status": "gepland",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "jay-francis-tunnelvisie",
     "theater": "theater-de-stoep",
     "datum": "2027-04-14",
@@ -61265,6 +61463,17 @@
     "bron": "https://www.wilminktheater.nl/nl/agenda/ratatatata-hm5v",
     "opgehaald": "2026-11-02",
     "herkomst": "wilminktheater"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "cascade-hendrik-ido-ambacht",
+    "datum": "2027-04-15",
+    "tijd": "20:15",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "ed-night-comedy-club-haug-rotterdam",
@@ -63962,6 +64171,17 @@
     "herkomst": "stoep"
   },
   {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "theater-de-verwachting-ritthem",
+    "datum": "2027-04-22",
+    "tijd": "20:15",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "milene-van-der-smissen-de-schnabbelkoningin",
     "theater": "theater-lampegiet",
     "datum": "2027-04-22",
@@ -63971,6 +64191,17 @@
     "bron": "https://www.lampegiet.nl/agenda/de-schnabbelkoningin-btr7",
     "opgehaald": "2026-11-02",
     "herkomst": "lampegiet"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "theater-piet-mondriaan-abcoude",
+    "datum": "2027-04-22",
+    "tijd": "20:15",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "teun-van-den-elzen-ze-moesten-eens-weten",
@@ -64490,6 +64721,17 @@
     "herkomst": "leiden"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "sint-lucas-zaal-boxtel",
+    "datum": "2027-04-23",
+    "tijd": "20:15",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "kasper-van-der-laan-ruim",
     "theater": "theater-aan-de-schie",
     "datum": "2027-04-23",
@@ -64554,6 +64796,17 @@
     "bron": "https://comedyhuis.nl/shows/comedyhuis-vrijdagavondshow-23-april-2027/",
     "opgehaald": "2026-11-02",
     "herkomst": "comedyhuis"
+  },
+  {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "de-cirkel-heemskerk",
+    "datum": "2027-04-23",
+    "tijd": "20:30",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "all-english-comedy-night-de-kargadoor-utrecht",
@@ -67515,6 +67768,17 @@
     "herkomst": "stoep"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "c-c-gilze-en-rijen",
+    "datum": "2027-05-07",
+    "tijd": "20:30",
+    "status": "gepland",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "berit-companjen-zei-ik-dat-hardop",
     "theater": "castellum",
     "datum": "2027-05-07",
@@ -67977,6 +68241,17 @@
     "herkomst": "verkadefabriek"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "cultuurcentrum-van-beresteyn-veendam",
+    "datum": "2027-05-08",
+    "tijd": "20:25",
+    "status": "gepland",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "nabil-aoulad-ayad-daar-is-hij-weer",
     "theater": "amphion",
     "datum": "2027-05-08",
@@ -68349,6 +68624,17 @@
     "bron": "https://www.theaterbellevue.nl/agenda/club-shaffy-575z",
     "opgehaald": "2026-10-31",
     "herkomst": "bellevue"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "vu-griffioen-amsterdam",
+    "datum": "2027-05-11",
+    "tijd": "20:00",
+    "status": "gepland",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "kees-van-amstel-mogen-we-eerder-weg",
@@ -69616,6 +69902,17 @@
     "herkomst": "bunker"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "hoftheater-raalte",
+    "datum": "2027-05-14",
+    "tijd": "20:15",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "maaike-dirkje-hop-erkenning-de-musical",
     "theater": "idea-soest",
     "datum": "2027-05-14",
@@ -70463,6 +70760,17 @@
     "herkomst": "bellevue"
   },
   {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "singer-laren",
+    "datum": "2027-05-18",
+    "tijd": "20:15",
+    "status": "gepland",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "cameretten-finalistentournee",
     "theater": "stadsschouwburg-groningen",
     "datum": "2027-05-18",
@@ -70604,6 +70912,17 @@
     "bron": "https://www.theaterbellevue.nl/agenda/nieuw-programma-lklq",
     "opgehaald": "2026-10-31",
     "herkomst": "bellevue"
+  },
+  {
+    "voorstelling": "kor-hoebe-korrelatie",
+    "theater": "theater-de-ruchte-someren",
+    "datum": "2027-05-19",
+    "tijd": "20:00",
+    "status": "uitverkocht",
+    "soort": "try-out",
+    "bron": "https://korhoebe.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "martijn-koning-overprikkeld",
@@ -71552,6 +71871,17 @@
     "herkomst": "vrijthof"
   },
   {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "theater-de-bussel-oosterhout",
+    "datum": "2027-05-21",
+    "tijd": "20:30",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
     "voorstelling": "roel-c-verburg-slechtste-liedjes-van-de-straat",
     "theater": "theater-de-kampanje",
     "datum": "2027-05-21",
@@ -71834,6 +72164,17 @@
     "status": "gepland",
     "soort": null,
     "bron": "https://www.klaasvandereerden.nl/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
+  },
+  {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "hofnar-valkenswaard",
+    "datum": "2027-05-22",
+    "tijd": "20:15",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
     "opgehaald": "2026-11-02",
     "herkomst": "speellijsten"
   },
@@ -76632,6 +76973,17 @@
     "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/leids-cabaret-festival-finalistentour-2027/",
     "opgehaald": "2026-11-02",
     "herkomst": "leiden"
+  },
+  {
+    "voorstelling": "stefan-hendrikx-in-perspectief",
+    "theater": "schouwburg-de-kring-roosendaal",
+    "datum": "2027-06-17",
+    "tijd": "20:15",
+    "status": "gepland",
+    "soort": null,
+    "bron": "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/",
+    "opgehaald": "2026-11-02",
+    "herkomst": "speellijsten"
   },
   {
     "voorstelling": "fabian-franciscus-is-het-leven-al-begonnen",

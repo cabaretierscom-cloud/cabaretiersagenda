@@ -100,6 +100,7 @@ const ARTIESTEN = [
   { naam: "Ruud Smulders", url: "https://ruudsmulders.nl/speellijst/", volgorde: PZ },
   { naam: "Sara Kroos", url: "https://www.sarakroos.nl/", volgorde: TZP },
   { naam: "Spruijt & Opperman", url: "https://spruijtenopperman.nl/speellijst/", volgorde: PZ },
+  { naam: "Stefan Hendrikx", url: "https://theaterbureaufris.nl/artiesten/stefan-hendrikx/", volgorde: ZP, titel: "In Perspectief", ruis: /^class=/ },
   { naam: "Thijs Kemperink", url: "https://thijskemperink.nl/speellijst/", volgorde: TZP },
   { naam: "Valentina Tóth", url: "https://valentinatoth.nl/agenda/", volgorde: TZP },
   { naam: "Van Vleuten & Van Muiswinkel", url: "https://www.bunkertheaterzaken.nl/artiesten/van-vleuten-van-muiswinkel/", volgorde: TPZ },

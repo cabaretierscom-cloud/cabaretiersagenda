@@ -1,11 +1,11 @@
 {
   "datum": "2026-11-02",
   "totaal": {
-    "speeldata": 7140,
-    "komend": 6852,
+    "speeldata": 7172,
+    "komend": 6884,
     "artiesten": 516,
-    "zalen": 645,
-    "plaatsen": 463,
+    "zalen": 647,
+    "plaatsen": 465,
     "voorstellingen": 811
   },
   "bronnen": [
@@ -14,7 +14,7 @@
       "naam": "Amai Comedy Club",
       "opgehaald": "2026-11-02",
       "speeldata": 18,
-      "vorige": 17,
+      "vorige": 18,
       "dubbel": 0
     },
     {
@@ -94,7 +94,7 @@
       "naam": "Cpunt",
       "opgehaald": "2026-11-02",
       "speeldata": 102,
-      "vorige": 101,
+      "vorige": 102,
       "dubbel": 0
     },
     {
@@ -102,7 +102,7 @@
       "naam": "Cultura Ede",
       "opgehaald": "2026-11-02",
       "speeldata": 24,
-      "vorige": 23,
+      "vorige": 24,
       "dubbel": 0
     },
     {
@@ -422,7 +422,7 @@
       "naam": "Theater Walhalla",
       "opgehaald": "2026-11-02",
       "speeldata": 78,
-      "vorige": 80,
+      "vorige": 78,
       "dubbel": 0
     },
     {
@@ -430,7 +430,7 @@
       "naam": "Wilminktheater en Muziekcentrum Enschede",
       "opgehaald": "2026-11-02",
       "speeldata": 79,
-      "vorige": 77,
+      "vorige": 79,
       "dubbel": 0
     },
     {
@@ -462,7 +462,7 @@
       "naam": "Agenda van 5to9",
       "opgehaald": "2026-11-02",
       "speeldata": 426,
-      "vorige": 425,
+      "vorige": 426,
       "dubbel": 47
     },
     {
@@ -485,9 +485,9 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-02",
-      "speeldata": 2136,
-      "vorige": 2162,
-      "dubbel": 1117
+      "speeldata": 2168,
+      "vorige": 2136,
+      "dubbel": 1137
     }
   ],
   "nieuw": {
@@ -504,6 +504,20 @@
         "plaats": "Ichtegem",
         "land": "BE",
         "website": "https://ichtegemfeest.be"
+      },
+      {
+        "id": "de-passant-zoutleeuw",
+        "naam": "De Passant",
+        "plaats": "Zoutleeuw",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "de-schutse-uithoorn",
+        "naam": "De Schutse",
+        "plaats": "Uithoorn",
+        "land": "NL",
+        "website": "https://www.scau.nl"
       }
     ],
     "voorstellingen": [
@@ -597,11 +611,11 @@
     },
     {
       "datum": "2026-11-02",
-      "speeldata": 7140,
-      "komend": 6852,
+      "speeldata": 7172,
+      "komend": 6884,
       "artiesten": 516,
-      "zalen": 645,
-      "plaatsen": 463,
+      "zalen": 647,
+      "plaatsen": 465,
       "voorstellingen": 811
     }
   ]
