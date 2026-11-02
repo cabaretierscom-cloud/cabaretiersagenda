@@ -89,6 +89,14 @@ write("/404.html", t.notFound());
   pages.pop(); // niet in de sitemap
 }
 
+// Dashboard met cijfers uit Google Analytics (zoals /controle/: niet in menu, sitemap of zoekmachines).
+// data/ga-dashboard.json staat niet in de repository (openbaar); `npm run ga -- dashboard` maakt het.
+{
+  const f = join(root, "data", "ga-dashboard.json");
+  write("/dashboard/", t.dashboardPagina(existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : null));
+  pages.pop(); // niet in de sitemap
+}
+
 writeFileSync(join(out, "logo.svg"), LOGO_SVG);
 if (VOORBEELD) {
   const css = join(out, "style.css");
@@ -119,6 +127,6 @@ writeFileSync(join(out, "sitemap.xml"),
   const ht = join(out, ".htaccess");
   writeFileSync(ht, readFileSync(ht, "utf8") + `\n# Oude adressen (gemaakt door build.mjs, niet met de hand aanpassen)\n<IfModule mod_alias.c>\n${regels.join("\n")}\n</IfModule>\n`);
 }
-writeFileSync(join(out, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /controle/\nSitemap: ${SITE.url}/sitemap.xml\n`);
+writeFileSync(join(out, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /controle/\nDisallow: /dashboard/\nSitemap: ${SITE.url}/sitemap.xml\n`);
 
 console.log(`Gebouwd op ${today}: ${pages.length} pagina's, ${db.upcoming.length} aankomende speeldata.`);

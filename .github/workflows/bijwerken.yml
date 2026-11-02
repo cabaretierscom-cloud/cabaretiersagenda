@@ -1,6 +1,7 @@
 # Elke nacht: speellijsten ophalen, samenvoegen, opslaan en de site op Cloud86 zetten.
 # Bij elke wijziging op main: alleen bouwen en de site op Cloud86 zetten.
 # Nodig in Settings > Secrets and variables > Actions: CLOUD86_HOST, CLOUD86_USER, CLOUD86_PASSWORD.
+# Voor /dashboard/ ook GA_SERVICE_ACCOUNT_B64 (de sleutel van het serviceaccount claude-lezer, in base64).
 name: Agenda bijwerken
 
 on:
@@ -36,6 +37,18 @@ jobs:
       - name: Samenvoegen
         if: github.event_name != 'push'
         run: npm run samenvoegen
+
+      - name: Cijfers voor het dashboard ophalen
+        # Ook bij een push, anders verdwijnen de cijfers van /dashboard/ bij het plaatsen.
+        # Het bestand gaat niet in de repository (openbaar), alleen naar de site.
+        env:
+          GA_SERVICE_ACCOUNT_B64: ${{ secrets.GA_SERVICE_ACCOUNT_B64 }}
+        run: |
+          if [ -z "$GA_SERVICE_ACCOUNT_B64" ]; then
+            echo "::warning::Geen GA_SERVICE_ACCOUNT_B64 ingesteld; /dashboard/ toont geen cijfers."
+            exit 0
+          fi
+          npm run ga -- dashboard || echo "::warning::Google Analytics-cijfers ophalen mislukt; /dashboard/ toont geen cijfers."
 
       - name: Controleren en bouwen
         run: |

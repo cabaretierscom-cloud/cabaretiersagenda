@@ -8,9 +8,13 @@
 //   node scripts/ga.mjs paginas   [--dagen 28]   meest bekeken pagina's
 //   node scripts/ga.mjs bronnen   [--dagen 28]   waar bezoekers vandaan komen
 //   node scripts/ga.mjs tickets   [--dagen 28]   klikken op Tickets-knoppen per theater, artiest en voorstelling
+//   node scripts/ga.mjs dashboard [--dagen 28]   alle rapporten (t/m gisteren) naar data/ga-dashboard.json voor /dashboard/
 //   ... --json                                   ruwe uitvoer als JSON
+// data/ga-dashboard.json staat in .gitignore: de repository is openbaar. GitHub Actions haalt het elke run
+// opnieuw op als het geheim GA_SERVICE_ACCOUNT_B64 daar is ingesteld.
 // In de cloudomgeving: NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt NODE_USE_ENV_PROXY=1 node scripts/ga.mjs ...
 import { createSign } from "node:crypto";
+import { writeFileSync } from "node:fs";
 
 const PROPERTY = process.env.GA_PROPERTY || "560720061"; // www.cabaretiers.com (niet geheim)
 
@@ -67,6 +71,41 @@ const VERZOEKEN = {
 };
 // Zijn de eigen dimensies (nog) niet geregistreerd, dan alleen het totaal per pagina.
 const TICKETS_EENVOUDIG = { dimensions: [{ name: "pagePath" }], metrics: [{ name: "eventCount" }], dimensionFilter: tickets, orderBys: [{ metric: { metricName: "eventCount" }, desc: true }], limit: 100 };
+
+// Rijen als objecten met eenvoudige namen (customEvent:theater -> theater), getallen als getal.
+function alsRijen(r) {
+  const dims = (r.dimensionHeaders || []).map((h) => h.name.replace("customEvent:", ""));
+  const mets = (r.metricHeaders || []).map((h) => h.name);
+  return (r.rows || []).map((row) => Object.fromEntries([
+    ...(row.dimensionValues || []).map((v, i) => [dims[i], v.value]),
+    ...(row.metricValues || []).map((v, i) => [mets[i], Number(v.value)]),
+  ]));
+}
+
+if (soort === "dashboard") {
+  // Hele dagen: tot en met gisteren, zodat een nachtelijke run geen halve dag toont.
+  const bereik = [{ startDate: `${dagen}daysAgo`, endDate: "yesterday" }];
+  try {
+    const token = await toegangstoken(sleutel());
+    const uit = { opgehaald: new Date().toISOString(), dagen, property: PROPERTY };
+    for (const naam of Object.keys(VERZOEKEN)) {
+      let r;
+      try { r = await rapport(token, { ...VERZOEKEN[naam], dateRanges: bereik }); } catch (e) {
+        if (naam !== "tickets") throw e;
+        r = { rows: [] };
+      }
+      uit[naam] = alsRijen(r);
+    }
+    uit.overzicht = uit.overzicht.map((d) => ({ ...d, date: d.date.replace(/^(\d{4})(\d\d)(\d\d)$/, "$1-$2-$3") }));
+    const doel = new URL("../data/ga-dashboard.json", import.meta.url);
+    writeFileSync(doel, JSON.stringify(uit, null, 1) + "\n");
+    console.log(`Dashboardcijfers geschreven: ${uit.overzicht.length} dagen, ${uit.paginas.length} pagina's, ${uit.tickets.length} rijen Tickets-klikken.`);
+  } catch (e) {
+    console.error(e.message);
+    process.exit(1);
+  }
+  process.exit(0);
+}
 
 if (!VERZOEKEN[soort]) { console.error(`Onbekend rapport "${soort}". Kies uit: ${Object.keys(VERZOEKEN).join(", ")}.`); process.exit(1); }
 
