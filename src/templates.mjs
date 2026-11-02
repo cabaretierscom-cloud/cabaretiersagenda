@@ -2155,7 +2155,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   function dashboardPagina(ga) {
     const getal = (n) => Number(n || 0).toLocaleString("nl-NL");
     const procent = (x) => `${Math.round(x * 100)}%`;
-    const kop = `<div class="block-head"><h1 id="t">Dashboard</h1><p>Bezoek en Tickets-klikken uit Google Analytics. Deze pagina staat niet in het menu en niet in zoekmachines. Hoe het ophalen van de agenda ging, staat op de <a href="/controle/">controlepagina</a>.</p></div>`;
+    const kop = `<div class="block-head"><h1 id="t">Dashboard</h1><p>Bezoek en Tickets-klikken uit Google Analytics. Deze pagina staat niet in het menu en niet in zoekmachines.</p></div>`;
     if (!ga?.overzicht?.length) {
       const body = `<section class="block wrap dashboard" aria-labelledby="t">${kop}
         <p class="let-op">Nog geen cijfers. Zet het geheim <code>GA_SERVICE_ACCOUNT_B64</code> bij GitHub (Settings &gt; Secrets and variables &gt; Actions); de volgende run haalt ze dan op.</p></section>`;
