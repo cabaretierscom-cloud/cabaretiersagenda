@@ -92,9 +92,13 @@ write("/404.html", t.notFound());
 // Dashboard met cijfers uit Google Analytics (zoals /controle/: niet in menu, sitemap of zoekmachines).
 // data/ga-dashboard.json staat niet in de repository (openbaar); `npm run ga -- dashboard` maakt het.
 {
+  // Eén pagina per periode: /dashboard/ (laatste 28 dagen) en /dashboard/<maand-jaar>/.
   const f = join(root, "data", "ga-dashboard.json");
-  write("/dashboard/", t.dashboardPagina(existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : null));
-  pages.pop(); // niet in de sitemap
+  const ga = existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : null;
+  for (const id of ga?.perioden?.length ? ga.perioden.map((p) => p.id) : [""]) {
+    write(t.dashboardPad(id), t.dashboardPagina(ga, id));
+    pages.pop(); // niet in de sitemap
+  }
 }
 
 writeFileSync(join(out, "logo.svg"), LOGO_SVG);
