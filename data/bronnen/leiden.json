@@ -1,7 +1,7 @@
 {
   "bron": "leiden",
   "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-  "opgehaald": "2026-11-01",
+  "opgehaald": "2026-11-02",
   "theaters": [
     {
       "id": "leidse-schouwburg",
@@ -663,7 +663,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-12",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/dolf-jansen-schaamteloos-oudejaars-2026/"
     },
@@ -715,7 +715,7 @@
       "genre": "cabaret",
       "datum": "2026-11-17",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/merijn-scholten-lemming-reprise/"
     },
@@ -1008,19 +1008,6 @@
     {
       "theater": "leidse-schouwburg",
       "artiesten": [
-        "Ronald Goedemondt"
-      ],
-      "titel": "Mijn Lieve Achterdocht",
-      "genre": "cabaret",
-      "datum": "2026-11-01",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ronald-goedemondt-mijn-lieve-achterdocht/"
-    },
-    {
-      "theater": "leidse-schouwburg",
-      "artiesten": [
         "Richard Groenendijk"
       ],
       "titel": "Gelukkig heb je mij nog",
@@ -1225,38 +1212,6 @@
         "sterren": 4,
         "citaat": "Steengoede show. Kippenvel. Constant van hoog niveau. Subtiele humor, zelfbewuste bravoure, buitengewoon ontroerend.",
         "over": "vorige voorstelling"
-      }
-    ],
-    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/ronald-goedemondt-mijn-lieve-achterdocht/": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Mijn lieve achterdocht is naast ontzettend grappig, ook psychologisch interessant"
-      },
-      {
-        "medium": "Scènes",
-        "sterren": 5,
-        "citaat": "Goedemondt is een onweerstaanbare komiek"
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Geen comedian in Nederland beheerst zijn stem beter dan Goedemondt"
-      },
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Goedemondt is een meester in het vinden van humor in het alledaagse"
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Ronald Goedemondt overdondert zijn publiek met een tornado aan superieur geacteerde onzin"
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Goedemondt toont de tekortschietende mens, en laat zien hoe onweerstaanbaar grappig dat kan zijn"
       }
     ]
   }

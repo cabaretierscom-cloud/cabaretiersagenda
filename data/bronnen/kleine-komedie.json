@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-02",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -13,32 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Claudia de Breij"
-      ],
-      "titel": "Oudejaarsconference 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-10-31",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/claudia-de-breij-dtnn"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Greg Shapiro"
-      ],
-      "titel": "King Me - 250 years of Donald Trump",
-      "genre": "stand-up",
-      "datum": "2026-11-01",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/greg-shapiro-f7cf"
-    },
     {
       "theater": "kleine-komedie",
       "artiesten": [
@@ -87,7 +61,7 @@
       "genre": "cabaret",
       "datum": "2026-11-06",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/kasper-van-der-laan-c27j"
     },
@@ -152,7 +126,7 @@
       "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
     },
@@ -217,7 +191,7 @@
       "genre": "cabaret",
       "datum": "2026-11-18",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/henry-van-loon-c28y"
     },
@@ -334,7 +308,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },

@@ -1,7 +1,7 @@
 {
   "bron": "spot-groningen",
   "naam": "SPOT Groningen",
-  "opgehaald": "2026-11-01",
+  "opgehaald": "2026-11-02",
   "theaters": [
     {
       "id": "de-oosterpoort",
@@ -231,7 +231,7 @@
       "genre": "cabaret",
       "datum": "2026-12-02",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.spotgroningen.nl/programma/luuk-weggemans/"
     },
@@ -283,7 +283,7 @@
       "genre": "kleinkunst",
       "datum": "2026-12-06",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/yentl-de-boer-4/"
     },
@@ -1141,7 +1141,7 @@
       "genre": "stand-up",
       "datum": "2027-06-08",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.spotgroningen.nl/programma/merijn-scholten-11/"
     },

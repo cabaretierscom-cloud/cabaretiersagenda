@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-02",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -29,19 +29,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-walhalla",
-      "artiesten": [
-        "Kim Karssen"
-      ],
-      "titel": "God Is Een Snotje",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/kim-karssen-god-is-een-snotje-try-out/"
-    },
     {
       "theater": "theater-walhalla",
       "artiesten": [
@@ -91,32 +78,6 @@
       "bron": "https://www.theaterwalhalla.nl/voorstelling/remy-evers-graag-gedaan-leesvoorstelling/"
     },
     {
-      "theater": "kleine-walhalla",
-      "artiesten": [
-        "Marie Koet"
-      ],
-      "titel": "Eindspel",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/marie-koet-eindspel/"
-    },
-    {
-      "theater": "kleine-walhalla",
-      "artiesten": [
-        "Marie Koet"
-      ],
-      "titel": "Eindspel",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/marie-koet-eindspel-2/"
-    },
-    {
       "theater": "theater-walhalla",
       "artiesten": [
         "Elfie Tromp"
@@ -138,7 +99,7 @@
       "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "première",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/elfie-tromp-aai-poesje-aai-poesje-try-out-2/"
     },
@@ -279,7 +240,7 @@
       "genre": "kleinkunst",
       "datum": "2027-01-07",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-3/"
     },
@@ -331,7 +292,7 @@
       "genre": "cabaret",
       "datum": "2027-01-14",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/isabelle-kafando-rof-daaimund/"
     },
@@ -550,7 +511,7 @@
       "genre": "kleinkunst",
       "datum": "2027-02-12",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sem-konijn-populisme-de-musical-try-out/"
     },
@@ -602,7 +563,7 @@
       "genre": "cabaret",
       "datum": "2027-02-19",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-gestampte-meisjes-strot/"
     },
@@ -639,7 +600,7 @@
       "genre": "cabaret",
       "datum": "2027-02-25",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/alina-sharipova-try-out/"
     },
@@ -715,7 +676,7 @@
       "genre": "kleinkunst",
       "datum": "2027-03-13",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/flip-noorman-bonobo/"
     },
@@ -852,7 +813,7 @@
       "genre": "cabaret",
       "datum": "2027-04-10",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/bolder-van-santen-looprat-try-out/"
     },
@@ -915,7 +876,7 @@
       "genre": "cabaret",
       "datum": "2027-04-16",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/kees-van-amstel-mogen-we-eerder-weg/"
     },
@@ -1032,7 +993,7 @@
       "genre": "cabaret",
       "datum": "2027-06-06",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-17/"
     },

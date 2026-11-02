@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-01",
+  "opgehaald": "2026-11-02",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,64 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Kartoffel",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": null
-      },
-      "artiesten": [],
-      "titel": "International Comedy Showcase",
-      "genre": "stand-up",
-      "datum": "2026-11-01",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/international-comedy-showcase-1-november-2026/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kargadoor",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://www.kargadoor.nl"
-      },
-      "artiesten": [],
-      "titel": "Robert Derksen - Op Zoek Naar Mij",
-      "genre": "comedy",
-      "datum": "2026-11-01",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/robert-derksen-op-zoek-naar-mij-1-november-2026/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Vijf het leven – benefiet ter ere van Marc van Gestel",
-      "genre": "stand-up",
-      "datum": "2026-11-01",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/vijf-het-leven-benefiet-ter-ere-van-marc-van-gestel/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [
-        "Rogier Bak"
-      ],
-      "titel": "Bak To The Future",
-      "genre": "stand-up",
-      "datum": "2026-11-01",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/bak-to-the-future-rogier-bak-utrecht/"
-    },
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
@@ -139,7 +81,7 @@
       "genre": "stand-up",
       "datum": "2026-11-06",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/vrijdagavondshow-6-november/"
     },

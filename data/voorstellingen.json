@@ -3793,6 +3793,13 @@
     "theater": "cpunt"
   },
   {
+    "id": "knock-out-comedy-crew-theater-aan-het-vrijthof",
+    "titel": "- Knock Out Comedy Crew",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-aan-het-vrijthof"
+  },
+  {
     "id": "knock-out-comedy-crew-theater-heerlen",
     "titel": "Knock Out Comedy Crew",
     "artiesten": [],
@@ -5830,8 +5837,8 @@
       {
         "medium": "de Volkskrant",
         "sterren": 4,
-        "citaat": "Mijn lieve achterdocht is naast ontzettend grappig ook psychologisch interessant.",
-        "bron": "https://kunstlinie.nl/programma/ronald-goedemondt-2/"
+        "citaat": "Naast ontzettend grappig ook psychologisch interessant",
+        "bron": "https://delamar.nl/voorstellingen/ronald-goedemondt/"
       },
       {
         "medium": "NRC",
@@ -6833,14 +6840,6 @@
     "theater": "theater-lampegiet"
   },
   {
-    "id": "veldeke-theater-aajdjaorscabberet-eve-oonder-us",
-    "titel": "Aajdjaorscabberèt: Eve oonder us",
-    "artiesten": [
-      "veldeke-theater"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "veldhuis-en-kemper-nieuw-programma",
     "titel": "Nieuw programma",
     "artiesten": [
@@ -7178,6 +7177,14 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "woordgrapf-de-nationale-avond-van-de-woordgrap",
+    "titel": "De nationale avond van de woordgrap",
+    "artiesten": [
+      "woordgrapf"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "wouter-deprez-en-tcha-limberger-cc-de-schakel",

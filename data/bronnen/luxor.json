@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-01",
+  "opgehaald": "2026-11-02",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -1057,7 +1057,7 @@
       "genre": "cabaret",
       "datum": "2026-11-15",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
     },
@@ -1122,7 +1122,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-19",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/claudia-de-breij-56039/"
     },
@@ -1525,7 +1525,7 @@
       "genre": "cabaret",
       "datum": "2026-11-06",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/najib-roue-56186/"
     },

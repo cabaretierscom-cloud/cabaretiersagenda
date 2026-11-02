@@ -1,7 +1,7 @@
 {
   "bron": "cultura",
   "naam": "Cultura Ede",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-02",
   "theaters": [
     {
       "id": "cultura-ede",
@@ -276,19 +276,6 @@
     {
       "theater": "cultura-ede",
       "artiesten": [
-        "Jan Beuving"
-      ],
-      "titel": "Dekpunt",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://cultura-ede.nl/agenda/jan-beuving-275855/"
-    },
-    {
-      "theater": "cultura-ede",
-      "artiesten": [
         "De Cabaret Club"
       ],
       "titel": "Vier mini cabaretvoorstellingen op één avond!",
@@ -311,6 +298,32 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://cultura-ede.nl/agenda/martijn-koning-276864/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Woordgrapf"
+      ],
+      "titel": "De Nationale Avond van de Woordgrap",
+      "genre": "cabaret",
+      "datum": "2027-10-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/woordgrapf-300451/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-11-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/jan-beuving-275855/"
     }
   ],
   "recensies": {}

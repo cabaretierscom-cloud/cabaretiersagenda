@@ -1,7 +1,7 @@
 {
   "bron": "kunstmin",
   "naam": "Kunstmin",
-  "opgehaald": "2026-11-01",
+  "opgehaald": "2026-11-02",
   "theaters": [
     {
       "id": "kunstmin",
@@ -445,19 +445,6 @@
     {
       "theater": "kunstmin",
       "artiesten": [
-        "Jandino"
-      ],
-      "titel": "DE GROTE JUBILEUMSHOW - Jandino 20 jaar",
-      "genre": "cabaret",
-      "datum": "2027-02-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kunstmin.nl/voorstellingen/jandino-de-grote-jubileumshow-jandino-20-jaar/"
-    },
-    {
-      "theater": "kunstmin",
-      "artiesten": [
         "Jan Beuving"
       ],
       "titel": "Dekpunt",
@@ -467,6 +454,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/jan-beuving-dekpunt/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "DE GROTE JUBILEUMSHOW - Jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/jandino-de-grote-jubileumshow-jandino-20-jaar/"
     },
     {
       "theater": "kunstmin",
