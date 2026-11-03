@@ -210,6 +210,11 @@ ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title
       <span class="brand-mark" aria-hidden="true">${LOGO_SVG}</span>
       <span class="logo-tekst"><span class="wordmark">${WOORDMERK_SVG}<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
     </a>
+    <form class="kop-zoek" action="/agenda/" method="get" role="search">
+      <label class="visually-hidden" for="kop-q">Zoeken in de agenda</label>
+      <input id="kop-q" name="q" type="search" autocomplete="off" enterkeyhint="search" placeholder="Zoek op plaats, theater, artiest of voorstelling">
+      <button type="submit" aria-label="Zoeken"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg></button>
+    </form>
     <nav class="nav" aria-label="Hoofdmenu">${nav}</nav>
   </div>
 </header>
