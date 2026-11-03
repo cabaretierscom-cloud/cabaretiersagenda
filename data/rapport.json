@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-03",
   "totaal": {
-    "speeldata": 7383,
-    "komend": 7087,
+    "speeldata": 7731,
+    "komend": 7435,
     "artiesten": 521,
-    "zalen": 654,
-    "plaatsen": 470,
-    "voorstellingen": 817
+    "zalen": 686,
+    "plaatsen": 485,
+    "voorstellingen": 818
   },
   "bronnen": [
     {
@@ -493,9 +493,9 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-03",
-      "speeldata": 2123,
-      "vorige": 2123,
-      "dubbel": 1285
+      "speeldata": 2471,
+      "vorige": 2471,
+      "dubbel": 1395
     }
   ],
   "nieuw": {
@@ -563,6 +563,230 @@
         "plaats": "Workum",
         "land": "NL",
         "website": "https://nutworkum.nl"
+      },
+      {
+        "id": "cultuurhuis-brasschaat",
+        "naam": "Cultuurhuis Brasschaat",
+        "plaats": "Brasschaat",
+        "land": "BE",
+        "website": "https://www.brasschaat.be"
+      },
+      {
+        "id": "zaal-rex-essen",
+        "naam": "Zaal Rex",
+        "plaats": "Essen",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "gc-gilwe-geluwe",
+        "naam": "GC Gilwe",
+        "plaats": "Geluwe",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-casino-houthalen-helchteren",
+        "naam": "CC Casino",
+        "plaats": "Houthalen Helchteren",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "azijnfabriek-s-hertogenbosch",
+        "naam": "Azijnfabriek",
+        "plaats": "'s-Hertogenbosch",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "parkvilla-alphen-aan-de-rijn",
+        "naam": "Parkvilla",
+        "plaats": "Alphen aan de Rijn",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "podium-zuidhaege-assen",
+        "naam": "Podium Zuidhaege",
+        "plaats": "Assen",
+        "land": "NL",
+        "website": "https://podiumzuidhaege.nl"
+      },
+      {
+        "id": "de-avenue-breda",
+        "naam": "De Avenue",
+        "plaats": "Breda",
+        "land": "NL",
+        "website": "https://de-avenue.nl"
+      },
+      {
+        "id": "amare-den-haag",
+        "naam": "Amare",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "website": "https://www.amare.nl"
+      },
+      {
+        "id": "de-oude-school-dordrecht",
+        "naam": "De Oude School",
+        "plaats": "Dordrecht",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "muziekgebouw-frits-philips-eindhoven",
+        "naam": "Muziekgebouw Frits Philips",
+        "plaats": "Eindhoven",
+        "land": "NL",
+        "website": "https://mge.nl"
+      },
+      {
+        "id": "natlab-eindhoven",
+        "naam": "NATLAB",
+        "plaats": "Eindhoven",
+        "land": "NL",
+        "website": "https://www.natlab.nl"
+      },
+      {
+        "id": "vrijhof-enschede",
+        "naam": "Vrijhof",
+        "plaats": "Enschede",
+        "land": "NL",
+        "website": "https://www.utwente.nl"
+      },
+      {
+        "id": "de-theaterbakkerij-gouda",
+        "naam": "De Theaterbakkerij",
+        "plaats": "Gouda",
+        "land": "NL",
+        "website": "https://www.theaterbakkerij.nl"
+      },
+      {
+        "id": "podium-onder-de-toren-grootschermer",
+        "naam": "PODIUM ONDER DE TOREN",
+        "plaats": "Grootschermer",
+        "land": "NL",
+        "website": "https://www.podiumonderdetoren.nl"
+      },
+      {
+        "id": "cultuurkoepel-heiloo",
+        "naam": "Cultuurkoepel",
+        "plaats": "Heiloo",
+        "land": "NL",
+        "website": "https://www.cultuurkoepelheiloo.nl"
+      },
+      {
+        "id": "de-bombardon-heythuysen",
+        "naam": "De Bombardon",
+        "plaats": "Heythuysen",
+        "land": "NL",
+        "website": "https://www.debombardon.com"
+      },
+      {
+        "id": "theater-kleintje-kunst-hilversum",
+        "naam": "Theater Kleintje Kunst",
+        "plaats": "Hilversum",
+        "land": "NL",
+        "website": "https://www.theaterkleintjekunst.nl"
+      },
+      {
+        "id": "theater-kaleidoskoop-nieuwkoop",
+        "naam": "Theater Kaleidoskoop",
+        "plaats": "Nieuwkoop",
+        "land": "NL",
+        "website": "https://www.theater-kaleidoskoop.nl"
+      },
+      {
+        "id": "numansdorpshuis",
+        "naam": "Numansdorpshuis",
+        "plaats": "Numansdorp",
+        "land": "NL",
+        "website": "https://www.numansdorpshuis.nl"
+      },
+      {
+        "id": "dorpshuis-renesse",
+        "naam": "Dorpshuis Renesse",
+        "plaats": "Renesse",
+        "land": "NL",
+        "website": "https://theatersaanzee.com"
+      },
+      {
+        "id": "splotsz-roelofarendsveen",
+        "naam": "SplotsZ",
+        "plaats": "Roelofarendsveen",
+        "land": "NL",
+        "website": "https://splotsz.nl"
+      },
+      {
+        "id": "de-doelen-rotterdam",
+        "naam": "De Doelen",
+        "plaats": "Rotterdam",
+        "land": "NL",
+        "website": "https://www.dedoelen.nl"
+      },
+      {
+        "id": "het-dommelhuis-son-en-breugel",
+        "naam": "Het Dommelhuis",
+        "plaats": "Son en Breugel",
+        "land": "NL",
+        "website": "https://www.vestzaktheaterson.nl"
+      },
+      {
+        "id": "dorpskerk-spankeren",
+        "naam": "Dorpskerk",
+        "plaats": "Spankeren",
+        "land": "NL",
+        "website": "https://rhederart.nl"
+      },
+      {
+        "id": "theater-rhederart-spankeren",
+        "naam": "Theater RhederArt",
+        "plaats": "Spankeren",
+        "land": "NL",
+        "website": "https://rhederart.nl"
+      },
+      {
+        "id": "west-end-theater-terschelling",
+        "naam": "West-End Theater",
+        "plaats": "Terschelling",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "theaterkerk-wadway",
+        "naam": "Theaterkerk Wadway",
+        "plaats": "Wadway",
+        "land": "NL",
+        "website": "https://theaterkerkwadway.nl"
+      },
+      {
+        "id": "de-schalm-westwoud",
+        "naam": "De Schalm",
+        "plaats": "Westwoud",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "cultureel-centrum-zuidhorn",
+        "naam": "Cultureel Centrum Zuidhorn",
+        "plaats": "Zuidhorn",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "buitensocieteit-zutphen",
+        "naam": "Buitensocieteit Zutphen",
+        "plaats": "Zutphen",
+        "land": "NL",
+        "website": "https://hanzehof.nl"
+      },
+      {
+        "id": "podium-boxtel",
+        "naam": "Podium Boxtel",
+        "plaats": "Boxtel",
+        "land": "NL",
+        "website": "https://www.podiumboxtel.nl"
       }
     ],
     "voorstellingen": [
@@ -629,6 +853,13 @@
         "id": "wild-horse-nine-verkadefabriek-s-hertogenbosch",
         "titel": "Wild Horse Nine",
         "artiesten": []
+      },
+      {
+        "id": "yannick-noben-eindejaars-2026",
+        "titel": "Eindejaars 2026",
+        "artiesten": [
+          "yannick-noben"
+        ]
       }
     ]
   },
@@ -717,12 +948,12 @@
     },
     {
       "datum": "2026-11-03",
-      "speeldata": 7383,
-      "komend": 7087,
+      "speeldata": 7731,
+      "komend": 7435,
       "artiesten": 521,
-      "zalen": 654,
-      "plaatsen": 470,
-      "voorstellingen": 817
+      "zalen": 686,
+      "plaatsen": 485,
+      "voorstellingen": 818
     }
   ]
 }
