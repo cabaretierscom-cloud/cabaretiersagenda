@@ -355,6 +355,9 @@ main > .block:first-child { padding-top: 16px; }
 main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* /artiesten/: "Van A tot Z" direct onder de rij Nu op tournee. */
 .az-blok { padding-top: 8px; }
+.binnenkort-blok { padding-top: 8px; padding-bottom: 0; }
+.binnenkort-intro { margin: -4px 0 8px; color: var(--ink-2); }
+.binnenkort-blok .meer-link { margin: 12px 0 0; font-weight: 600; }
 .az-blok > .sub-head:first-child { margin-top: 0; }
 .wall-sub { padding-top: 24px; }
 .wall-sub .wall-head h2 { font-weight: 800; font-size: var(--step-2); line-height: 1.1; }
