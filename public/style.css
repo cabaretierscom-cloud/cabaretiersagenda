@@ -157,27 +157,10 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .nav a { text-decoration: none; font-weight: 500; padding: 10px 12px; border-radius: 999px; white-space: nowrap; }
 .nav a:hover { background: var(--paper-2); }
 .nav a[aria-current="page"] { background: var(--ink); color: var(--paper); }
-/* Zoekbalk in de kop: een eigen rij onder logo en menu (naast het menu past de hele tekst niet); stuurt
-   naar /agenda/?q=… en werkt dus ook zonder JavaScript. */
-.site-header .wrap { flex-wrap: wrap; row-gap: 6px; padding-block: 10px 12px; }
-.kop-zoek { position: relative; order: 3; flex: 1 1 100%; min-width: 0; }
-.kop-zoek input {
-  width: 100%; height: 40px; padding: 0 44px 0 16px; border: 1px solid var(--rule); border-radius: 999px;
-  background: var(--paper-2); color: var(--ink); font: 500 .92rem/1 var(--font-body);
-}
-.kop-zoek input::placeholder { color: var(--ink-2); opacity: 1; }
-.kop-zoek input:focus { outline: none; border-color: var(--ink); background: var(--paper); box-shadow: 0 0 0 3px var(--focus); }
-.kop-zoek input::-webkit-search-cancel-button { display: none; }
-.kop-zoek button {
-  position: absolute; right: 4px; top: 4px; width: 32px; height: 32px; border: 0; border-radius: 50%;
-  display: grid; place-items: center; cursor: pointer; background: var(--ink); color: var(--paper);
-}
-.kop-zoek button:hover { filter: brightness(1.15); }
-@media (max-width: 600px) { .kop-zoek input { font-size: .84rem; padding-left: 14px; } }
 /* Menu onder het logo zodra de zeven knoppen er niet meer naast passen. */
 @media (max-width: 960px) {
   .site-header .wrap { flex-wrap: wrap; gap: 4px 16px; padding-block: 10px; }
-  .site-header .nav { margin-left: -12px; width: calc(100% + 12px); overflow-x: auto; scrollbar-width: none; }
+  .nav { margin-left: -12px; width: calc(100% + 12px); overflow-x: auto; scrollbar-width: none; }
 }
 
 .btn {
