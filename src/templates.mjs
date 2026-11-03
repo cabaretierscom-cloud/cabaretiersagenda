@@ -666,7 +666,7 @@ ${zalen ? `
   ${strip("strip-zalen", "Theaters met de meeste voorstellingen", zalen)}
 </section>` : ""}
 <section class="block wrap kies-blok" aria-labelledby="maand-title">
-  <div class="wall-head"><h2 id="maand-title">Voorstellingen per maand</h2><p><a href="/agenda/">De volledige agenda</a></p></div>
+  <div class="wall-head"><h2 id="maand-title">Voorstellingen per maand</h2></div>
   ${maandNav(null)}
 </section>
 
