@@ -310,6 +310,9 @@ const recensieKandidaten = new Map();
 // die weren we ook op pagina's die het niet zeggen.
 const citatenElders = new Set();
 const citaatSleutel = (c) => slug(c).slice(0, 40);
+// Bron-ids van de speellijstbestanden, en welke bestanden in deze run al verwerkt zijn.
+const speellijstBronnen = new Set(bronFiles.filter(isSpeellijst).map((f) => JSON.parse(readFileSync(join(dataDir, "bronnen", f), "utf8")).bron));
+const verwerkt = new Set();
 for (const f of bronFiles) {
   const bestand = JSON.parse(readFileSync(join(dataDir, "bronnen", f), "utf8"));
   for (const t of bestand.theaters || []) {
@@ -324,12 +327,15 @@ for (const f of bronFiles) {
   speeldata = speeldata.filter((s) => s.herkomst !== bestand.bron || s.datum < bestand.opgehaald);
   const vervangen = voor - speeldata.length;
 
-  const sleutels = new Set(speeldata.map((s) => [s.voorstelling, s.theater, s.datum, s.tijd || ""].join("|")));
+  // Ook hier niet de oude vondsten van een speellijst die later in deze run nog komt.
+  const sleutels = new Set(speeldata.filter((s) => !speellijstBronnen.has(s.herkomst) || verwerkt.has(s.herkomst) || s.herkomst === bestand.bron).map((s) => [s.voorstelling, s.theater, s.datum, s.tijd || ""].join("|")));
   // Bij een speellijst: welke artiest al op welke datum in welke plaats staat (uit de theaterbronnen).
   const alBekend = new Set();
   if (bestand.soort === "speellijst") {
     const vOpId = new Map(voorstellingen.map((v) => [v.id, v]));
-    for (const s of speeldata) for (const a of vOpId.get(s.voorstelling)?.artiesten || []) alBekend.add(`${a}|${slug(theaterOpId.get(s.theater)?.plaats)}|${s.datum}`);
+    // Niet de oude vondsten van een speellijst die later in deze run nog komt: die vervalt dan misschien
+    // (bijv. een artiest die van speellijsten.json naar fris.json is verhuisd).
+    for (const s of speeldata) if (!speellijstBronnen.has(s.herkomst) || verwerkt.has(s.herkomst)) for (const a of vOpId.get(s.voorstelling)?.artiesten || []) alBekend.add(`${a}|${slug(theaterOpId.get(s.theater)?.plaats)}|${s.datum}`);
   }
   let dubbel = 0;
   let nieuw = 0, handmatigVervangen = 0;
@@ -415,6 +421,7 @@ for (const f of bronFiles) {
     if (!v.artiesten.length && !r.titel) controleren.push({ bron: bestand.bron, reden: "voorstelling zonder artiest en titel", record: r });
   }
   bronStats.push({ bron: bestand.bron, naam: bestand.naam, opgehaald: bestand.opgehaald, speeldata: nieuw, vorige: vervangen, dubbel });
+  verwerkt.add(bestand.bron);
   stats.push(`${bestand.naam}: ${nieuw} speeldata (${vervangen} vorige vervangen${handmatigVervangen ? `, ${handmatigVervangen} handmatige vervangen` : ""}${dubbel ? `, ${dubbel} al bekend via het theater` : ""})`);
 }
 

@@ -1,11 +1,11 @@
 {
   "datum": "2026-11-03",
   "totaal": {
-    "speeldata": 7281,
-    "komend": 6985,
+    "speeldata": 7383,
+    "komend": 7087,
     "artiesten": 521,
-    "zalen": 649,
-    "plaatsen": 466,
+    "zalen": 654,
+    "plaatsen": 470,
     "voorstellingen": 817
   },
   "bronnen": [
@@ -86,7 +86,7 @@
       "naam": "Comedytrain",
       "opgehaald": "2026-11-03",
       "speeldata": 140,
-      "vorige": 143,
+      "vorige": 140,
       "dubbel": 0
     },
     {
@@ -118,7 +118,7 @@
       "naam": "DeLaMar",
       "opgehaald": "2026-11-03",
       "speeldata": 49,
-      "vorige": 47,
+      "vorige": 49,
       "dubbel": 0
     },
     {
@@ -142,7 +142,7 @@
       "naam": "Comedy Club Haug",
       "opgehaald": "2026-11-03",
       "speeldata": 127,
-      "vorige": 122,
+      "vorige": 127,
       "dubbel": 0
     },
     {
@@ -181,8 +181,8 @@
       "bron": "kampanje",
       "naam": "Theater de Kampanje",
       "opgehaald": "2026-11-03",
-      "speeldata": 57,
-      "vorige": 57,
+      "speeldata": 58,
+      "vorige": 58,
       "dubbel": 0
     },
     {
@@ -285,8 +285,8 @@
       "bron": "orpheus",
       "naam": "Orpheus",
       "opgehaald": "2026-11-02",
-      "speeldata": 66,
-      "vorige": 66,
+      "speeldata": 69,
+      "vorige": 69,
       "dubbel": 0
     },
     {
@@ -294,7 +294,7 @@
       "naam": "Theater aan de Parade",
       "opgehaald": "2026-11-03",
       "speeldata": 33,
-      "vorige": 32,
+      "vorige": 33,
       "dubbel": 0
     },
     {
@@ -397,8 +397,8 @@
       "bron": "verkadefabriek",
       "naam": "Verkadefabriek",
       "opgehaald": "2026-11-03",
-      "speeldata": 81,
-      "vorige": 69,
+      "speeldata": 87,
+      "vorige": 87,
       "dubbel": 0
     },
     {
@@ -429,8 +429,8 @@
       "bron": "wilminktheater",
       "naam": "Wilminktheater en Muziekcentrum Enschede",
       "opgehaald": "2026-11-03",
-      "speeldata": 79,
-      "vorige": 79,
+      "speeldata": 80,
+      "vorige": 80,
       "dubbel": 0
     },
     {
@@ -445,8 +445,8 @@
       "bron": "zuidplein",
       "naam": "Theater Zuidplein",
       "opgehaald": "2026-11-03",
-      "speeldata": 48,
-      "vorige": 47,
+      "speeldata": 50,
+      "vorige": 50,
       "dubbel": 0
     },
     {
@@ -461,17 +461,25 @@
       "bron": "5to9",
       "naam": "Agenda van 5to9",
       "opgehaald": "2026-11-03",
-      "speeldata": 426,
-      "vorige": 426,
-      "dubbel": 47
+      "speeldata": 444,
+      "vorige": 444,
+      "dubbel": 29
     },
     {
       "bron": "bunker",
       "naam": "Agenda van Bunker Theaterzaken",
       "opgehaald": "2026-11-03",
-      "speeldata": 296,
-      "vorige": 296,
-      "dubbel": 450
+      "speeldata": 385,
+      "vorige": 385,
+      "dubbel": 361
+    },
+    {
+      "bron": "fris",
+      "naam": "Agenda van Theaterbureau Fr!S",
+      "opgehaald": "2026-11-03",
+      "speeldata": 118,
+      "vorige": 118,
+      "dubbel": 66
     },
     {
       "bron": "kobra",
@@ -485,9 +493,9 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-03",
-      "speeldata": 2259,
-      "vorige": 2255,
-      "dubbel": 1183
+      "speeldata": 2123,
+      "vorige": 2123,
+      "dubbel": 1285
     }
   ],
   "nieuw": {
@@ -520,6 +528,41 @@
         "plaats": "Zevenhuizen",
         "land": "NL",
         "website": "https://www.dorpshuis.nl"
+      },
+      {
+        "id": "cinema-gouda",
+        "naam": "Cinema Gouda",
+        "plaats": "Gouda",
+        "land": "NL",
+        "website": "https://www.cinemagouda.nl"
+      },
+      {
+        "id": "het-behouden-huis-oudkarspel",
+        "naam": "Het Behouden Huis",
+        "plaats": "Oudkarspel",
+        "land": "NL",
+        "website": "https://www.behoudenhuisoudkarspel.nl"
+      },
+      {
+        "id": "techcampus-de-school-roelofarendsveen",
+        "naam": "TechCampus De School",
+        "plaats": "Roelofarendsveen",
+        "land": "NL",
+        "website": "https://www.wijpresenteert.nl"
+      },
+      {
+        "id": "brouwerij-fortuna-vlieland",
+        "naam": "Brouwerij Fortuna",
+        "plaats": "Vlieland",
+        "land": "NL",
+        "website": "https://podiumvlieland.nl"
+      },
+      {
+        "id": "kultuerhus-klameare-workum",
+        "naam": "Kultuerhús Klameare",
+        "plaats": "Workum",
+        "land": "NL",
+        "website": "https://nutworkum.nl"
       }
     ],
     "voorstellingen": [
@@ -674,11 +717,11 @@
     },
     {
       "datum": "2026-11-03",
-      "speeldata": 7281,
-      "komend": 6985,
+      "speeldata": 7383,
+      "komend": 7087,
       "artiesten": 521,
-      "zalen": 649,
-      "plaatsen": 466,
+      "zalen": 654,
+      "plaatsen": 470,
       "voorstellingen": 817
     }
   ]

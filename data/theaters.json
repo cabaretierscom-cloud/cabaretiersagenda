@@ -2354,7 +2354,7 @@
     "plaats": "Alkmaar",
     "land": "NL",
     "soort": "theater",
-    "website": null
+    "website": "https://www.podiumvictorie.nl"
   },
   {
     "id": "theater-de-vest-alkmaar",
@@ -3826,6 +3826,14 @@
     "website": "https://skans.nl"
   },
   {
+    "id": "cinema-gouda",
+    "naam": "Cinema Gouda",
+    "plaats": "Gouda",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.cinemagouda.nl"
+  },
+  {
     "id": "de-zwaan-gouda",
     "naam": "De Zwaan",
     "plaats": "Gouda",
@@ -5144,6 +5152,14 @@
     "website": "https://fideietarti.nl"
   },
   {
+    "id": "het-behouden-huis-oudkarspel",
+    "naam": "Het Behouden Huis",
+    "plaats": "Oudkarspel",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.behoudenhuisoudkarspel.nl"
+  },
+  {
     "id": "dok6-panningen",
     "naam": "Dok6",
     "plaats": "Panningen",
@@ -5286,6 +5302,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://theaterroden.nl"
+  },
+  {
+    "id": "techcampus-de-school-roelofarendsveen",
+    "naam": "TechCampus De School",
+    "plaats": "Roelofarendsveen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.wijpresenteert.nl"
   },
   {
     "id": "eci-cultuurfabriek-roermond",
@@ -6099,6 +6123,14 @@
     }
   },
   {
+    "id": "brouwerij-fortuna-vlieland",
+    "naam": "Brouwerij Fortuna",
+    "plaats": "Vlieland",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://podiumvlieland.nl"
+  },
+  {
     "id": "theater-ludens-voorburg",
     "naam": "Theater Ludens",
     "plaats": "Voorburg",
@@ -6289,6 +6321,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.kloosterwoerden.nl"
+  },
+  {
+    "id": "kultuerhus-klameare-workum",
+    "naam": "Kultuerhús Klameare",
+    "plaats": "Workum",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://nutworkum.nl"
   },
   {
     "id": "theater-de-kaasfabriek-wormer",
