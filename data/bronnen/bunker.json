@@ -2,7 +2,7 @@
   "bron": "bunker",
   "naam": "Agenda van Bunker Theaterzaken",
   "soort": "speellijst",
-  "opgehaald": "2026-11-02",
+  "opgehaald": "2026-11-03",
   "theaters": [],
   "speeldata": [
     {
@@ -1996,7 +1996,7 @@
       "genre": "cabaret",
       "datum": "2026-11-14",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.agora-lelystad.nl/agenda/patrick-laureij-8jmd"
     },
@@ -2053,7 +2053,7 @@
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "19:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekringroosendaal.nl/agenda/kintsugi-bq82"
     },
@@ -2113,25 +2113,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/patrick-laureij-kintsugi-reprise-10025497/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Kennemer Theater",
-        "plaats": "Beverwijk",
-        "land": "NL",
-        "website": "https://www.kennemertheater.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.kennemertheater.nl/programma/patrick-laureij-5rbs"
     },
     {
       "theater": {
@@ -2759,6 +2740,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theatergeertteis.nl/voorstellingen/patrick-laureij"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Kennemer Theater",
+        "plaats": "Beverwijk",
+        "land": "NL",
+        "website": "https://www.kennemertheater.nl"
+      },
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2027-03-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kennemertheater.nl/programma/patrick-laureij-5rbs"
     },
     {
       "theater": {
@@ -6430,25 +6430,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Theater de Veste",
-        "plaats": "Delft",
-        "land": "NL",
-        "website": "https://www.theaterdeveste.nl"
-      },
-      "artiesten": [
-        "Micha Wertheim"
-      ],
-      "titel": "Micha Wertheim Voor Iedereen",
-      "genre": "cabaret",
-      "datum": "2026-11-02",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Theater de Landing",
         "plaats": "Amstelveen",
         "land": "NL",
@@ -6594,7 +6575,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },
@@ -6689,7 +6670,7 @@
       "genre": "cabaret",
       "datum": "2027-01-12",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },

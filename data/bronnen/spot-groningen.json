@@ -1,7 +1,7 @@
 {
   "bron": "spot-groningen",
   "naam": "SPOT Groningen",
-  "opgehaald": "2026-11-02",
+  "opgehaald": "2026-11-03",
   "theaters": [
     {
       "id": "de-oosterpoort",
@@ -53,19 +53,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "stadsschouwburg-groningen",
-      "artiesten": [
-        "Plien & Bianca"
-      ],
-      "titel": "Harrekidee!",
-      "genre": "cabaret",
-      "datum": "2026-11-02",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "reprise",
-      "bron": "https://www.spotgroningen.nl/programma/plien-bianca-8/"
-    },
     {
       "theater": "stadsschouwburg-groningen",
       "artiesten": [
@@ -140,7 +127,7 @@
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/groninger-studenten-cabaret-festival-24/"
     },
@@ -283,7 +270,7 @@
       "genre": "kleinkunst",
       "datum": "2026-12-06",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/yentl-de-boer-4/"
     },
@@ -1141,7 +1128,7 @@
       "genre": "stand-up",
       "datum": "2027-06-08",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.spotgroningen.nl/programma/merijn-scholten-11/"
     },

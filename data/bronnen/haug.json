@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-11-02",
+  "opgehaald": "2026-11-03",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -13,6 +13,71 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Pinar Fidan"
+      ],
+      "titel": "Pinar Fidan",
+      "genre": "stand-up",
+      "datum": "2027-02-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/pinar-fidan-111714396"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Alina Sharipova",
+        "Jacob Adriani"
+      ],
+      "titel": "Alina Sharipova & Jacob Adriani",
+      "genre": "stand-up",
+      "datum": "2027-02-27",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/alina-sharipova-jacob-adriani-111715970"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Alina Sharipova",
+        "Bugra Gedik"
+      ],
+      "titel": "Alina Sharipova & Bugra Gedik",
+      "genre": "stand-up",
+      "datum": "2027-04-16",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/alina-sharipova-bugra-gedik-111715900"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Milo Edwards"
+      ],
+      "titel": "Milo Edwards",
+      "genre": "stand-up",
+      "datum": "2027-01-29",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/milo-edwards-111712251"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Rogier Bak, Diederik Zuurmond & Georges Degoumois",
+      "genre": "stand-up",
+      "datum": "2026-11-19",
+      "tijd": "19:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/rogier-bak-diederik-zuurmond-georges-degoumois-111716159"
+    },
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],

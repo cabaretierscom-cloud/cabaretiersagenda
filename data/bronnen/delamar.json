@@ -1,7 +1,7 @@
 {
   "bron": "delamar",
   "naam": "DeLaMar",
-  "opgehaald": "2026-11-02",
+  "opgehaald": "2026-11-03",
   "theaters": [
     {
       "id": "delamar",
@@ -619,6 +619,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-06-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/david-van-rosmalen/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-06-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/david-van-rosmalen/"
     }
   ],
   "recensies": {

@@ -1,7 +1,7 @@
 {
   "bron": "vrijthof",
   "naam": "Theater aan het Vrijthof",
-  "opgehaald": "2026-11-02",
+  "opgehaald": "2026-11-03",
   "theaters": [
     {
       "id": "theater-aan-het-vrijthof",
@@ -414,6 +414,19 @@
     {
       "theater": "ainsi-maastricht",
       "artiesten": [
+        "Martijn Koning"
+      ],
+      "titel": "Overprikkeld",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/overprikkeld-martijn-koning"
+    },
+    {
+      "theater": "ainsi-maastricht",
+      "artiesten": [
         "Lebbis"
       ],
       "titel": "Satan is moe",
@@ -436,19 +449,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/satan-is-moe-lebbis"
-    },
-    {
-      "theater": "ainsi-maastricht",
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2027-05-01",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/overprikkeld-martijn-koning"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -543,17 +543,31 @@
     },
     {
       "theater": "theater-aan-het-vrijthof",
-      "artiesten": [],
-      "titel": "- Knock Out Comedy Crew",
+      "artiesten": [
+        "Veldeke Theater"
+      ],
+      "titel": "Aajdjaorscabberèt: Eve oonder us",
       "genre": "cabaret",
-      "datum": "2027-03-09",
+      "datum": "2026-12-27",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/knock-out-comedy-crew"
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/aajdjaorscabberet-eve-oonder-us-veldeke-theater"
     }
   ],
   "recensies": {
+    "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Pepijn Schoneveld lijkt in ‘Welkom dat je luistert’ zijn ideale stijl als cabaretier te hebben gevonden."
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": 4,
+        "citaat": "Schoneveld neemt de zaal op een innemende manier mee, is gevat in zijn interactie met het publiek en weet een heldere lijn door de avond te trekken."
+      }
+    ],
     "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/en-verbied-de-vogels-om-te-fluiten-ayoub": [
       {
         "medium": "de Volkskrant",

@@ -131,6 +131,15 @@
     "genre": "stand-up"
   },
   {
+    "id": "alina-sharipova-bugra-gedik-alina-sharipova-en-bugra-gedik",
+    "titel": "Alina Sharipova & Bugra Gedik",
+    "artiesten": [
+      "alina-sharipova",
+      "bugra-gedik"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "alina-sharipova-diederik-zuurmond-stephen-bell-finn-visser-vincent-geers-de-come",
     "titel": "De Comedy Club",
     "artiesten": [
@@ -139,6 +148,15 @@
       "stephen-bell",
       "finn-visser",
       "vincent-geers"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "alina-sharipova-jacob-adriani-alina-sharipova-en-jacob-adriani",
+    "titel": "Alina Sharipova & Jacob Adriani",
+    "artiesten": [
+      "alina-sharipova",
+      "jacob-adriani"
     ],
     "genre": "stand-up"
   },
@@ -1474,13 +1492,6 @@
     "theater": "comedytrain-nieuwe-toomler-amsterdam"
   },
   {
-    "id": "comedytrain-matinee-comedytrain-nieuwe-toomler-amsterdam",
-    "titel": "Comedytrain Matinee",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "comedytrain-nieuwe-toomler-amsterdam"
-  },
-  {
     "id": "comedytrain-on-tour-de-plek-waar-de-grootste-comedians-van-nederland-begonnen",
     "titel": "De plek waar de grootste comedians van Nederland begonnen",
     "artiesten": [
@@ -2094,6 +2105,13 @@
     "genre": "stand-up"
   },
   {
+    "id": "echt-gebeurd-comedytrain-nieuwe-toomler-amsterdam",
+    "titel": "Echt Gebeurd",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedytrain-nieuwe-toomler-amsterdam"
+  },
+  {
     "id": "echt-gebeurd-de-erfenis",
     "titel": "De erfenis",
     "artiesten": [
@@ -2593,6 +2611,13 @@
         "bron": "https://www.kampanje.nl/voorstellingen/gavin-reijnders-h679"
       }
     ]
+  },
+  {
+    "id": "gent-en-espanol-2-comedia-stand-up-en-tu-idioma-amai-comedy-club-gent",
+    "titel": "Gent en Español #2 - Comedia stand-up en tu idioma",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
   },
   {
     "id": "georgi-kyuchukov-and-dimitar-donski-stand-up-southend-comedy-club",
@@ -3595,6 +3620,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "kan-wim-koningstheateracademie",
+    "titel": "Koningstheateracademie",
+    "artiesten": [
+      "kan-wim"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "karan-karthik-en-friends-amai-comedy-club-gent",
     "titel": "Karan Karthik & friends",
     "artiesten": [],
@@ -3791,13 +3824,6 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "cpunt"
-  },
-  {
-    "id": "knock-out-comedy-crew-theater-aan-het-vrijthof",
-    "titel": "- Knock Out Comedy Crew",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "theater-aan-het-vrijthof"
   },
   {
     "id": "knock-out-comedy-crew-theater-heerlen",
@@ -4079,7 +4105,7 @@
         "medium": "NRC",
         "sterren": 4,
         "citaat": "Lisa Ostermann heeft een nogal onweerstaanbaar soort energie.",
-        "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/lisa-ostermann-reprise-z9pf"
+        "bron": "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc"
       },
       {
         "medium": "Het Parool",
@@ -4091,7 +4117,7 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Opnieuw vindt Lisa Ostermann het perfecte snijvlak tussen humor en ontroering.",
-        "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/de-baas-lisa-ostermann"
+        "bron": "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc"
       }
     ]
   },
@@ -4717,6 +4743,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "milo-edwards-milo-edwards",
+    "titel": "Milo Edwards",
+    "artiesten": [
+      "milo-edwards"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "mohammed-hussain-shaadi-shud-i-live-in-amsterdam",
     "titel": "Shaadi Shud I? – Live in Amsterdam!",
     "artiesten": [
@@ -5207,7 +5241,21 @@
     "artiesten": [
       "pepijn-schoneveld"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Pepijn Schoneveld lijkt in ‘Welkom dat je luistert’ zijn ideale stijl als cabaretier te hebben gevonden.",
+        "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld"
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": 4,
+        "citaat": "Schoneveld neemt de zaal op een innemende manier mee, is gevat in zijn interactie met het publiek en weet een heldere lijn door de avond te trekken.",
+        "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld"
+      }
+    ]
   },
   {
     "id": "pernille-haaland-pernille-haaland",
@@ -5370,11 +5418,12 @@
     ]
   },
   {
-    "id": "pitch-your-friend-comedy-en-dating-amai-comedy-club-gent",
-    "titel": "Pitch Your Friend - comedy & dating",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "amai-comedy-club-gent"
+    "id": "pinar-fidan-pinar-fidan",
+    "titel": "Pinar Fidan",
+    "artiesten": [
+      "pinar-fidan"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "plien-en-bianca-harrekidee",
@@ -5803,6 +5852,13 @@
       "rogier-bak"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "rogier-bak-diederik-zuurmond-en-georges-degoumois-comedy-club-haug-rotterdam",
+    "titel": "Rogier Bak, Diederik Zuurmond & Georges Degoumois",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedy-club-haug-rotterdam"
   },
   {
     "id": "rogier-bak-diederik-zuurmond-rogier-bak-en-diederik-zuurmond",
@@ -6833,6 +6889,14 @@
     "theater": "theater-lampegiet"
   },
   {
+    "id": "veldeke-theater-aajdjaorscabberet-eve-oonder-us",
+    "titel": "Aajdjaorscabberèt: Eve oonder us",
+    "artiesten": [
+      "veldeke-theater"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "veldhuis-en-kemper-nieuw-programma",
     "titel": "Nieuw programma",
     "artiesten": [
@@ -7108,6 +7172,13 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "theater-lampegiet"
+  },
+  {
+    "id": "wild-horse-nine-verkadefabriek-s-hertogenbosch",
+    "titel": "Wild Horse Nine",
+    "artiesten": [],
+    "genre": "theaterkomedie",
+    "theater": "verkadefabriek-s-hertogenbosch"
   },
   {
     "id": "wilko-terwijn-jorgen-raymann-wilko-terwijn-en-jorgen-raymann",

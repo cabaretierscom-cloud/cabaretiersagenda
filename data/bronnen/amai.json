@@ -1,7 +1,7 @@
 {
   "bron": "amai",
   "naam": "Amai Comedy Club",
-  "opgehaald": "2026-11-02",
+  "opgehaald": "2026-11-03",
   "theaters": [
     {
       "id": "amai-comedy-club-gent",
@@ -56,17 +56,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.amaicomedyclub.com/event-details/comedy-open-mic-eng-2"
-    },
-    {
-      "theater": "amai-comedy-club-gent",
-      "artiesten": [],
-      "titel": "Pitch Your Friend - comedy & dating",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.amaicomedyclub.com/event-details/pitch-your-friend-comedy-dating-2026-11-07-20-00"
     },
     {
       "theater": "amai-comedy-club-gent",
@@ -210,6 +199,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.amaicomedyclub.com/event-details/amai-improcomedy-legends-eng-10"
+    },
+    {
+      "theater": "amai-comedy-club-gent",
+      "artiesten": [],
+      "titel": "Gent en Español #2 - Comedia stand-up en tu idioma",
+      "genre": "stand-up",
+      "datum": "2026-12-03",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amaicomedyclub.com/event-details/gent-en-espanol-2-comedia-stand-up-en-tu-idioma-2"
     }
   ],
   "recensies": {}

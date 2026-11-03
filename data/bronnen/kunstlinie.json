@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-02",
+  "opgehaald": "2026-11-03",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -42,15 +42,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Deng Boy"
+        "Roué Verveer"
       ],
-      "titel": "Deng Boy",
+      "titel": "Roué Verveer",
       "genre": "cabaret",
-      "datum": "2027-05-28",
+      "datum": "2027-05-29",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/deng-boy-5/"
+      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
     },
     {
       "theater": "kunstlinie",
@@ -68,15 +68,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Roué Verveer"
+        "Deng Boy"
       ],
-      "titel": "Roué Verveer",
+      "titel": "Deng Boy",
       "genre": "cabaret",
-      "datum": "2027-05-29",
+      "datum": "2027-05-28",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
+      "bron": "https://kunstlinie.nl/programma/deng-boy-5/"
     },
     {
       "theater": "kunstlinie",
@@ -107,19 +107,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Team Ricky Risolles"
-      ],
-      "titel": "Team Ricky Risolles",
-      "genre": "cabaret",
-      "datum": "2027-03-21",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/team-ricky-risolles/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Jörgen Raymann"
       ],
       "titel": "Jörgen Raymann",
@@ -129,6 +116,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/jorgen-raymann/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Team Ricky Risolles"
+      ],
+      "titel": "Team Ricky Risolles",
+      "genre": "cabaret",
+      "datum": "2027-03-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/team-ricky-risolles/"
     },
     {
       "theater": "kunstlinie",
@@ -198,19 +198,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Bro’s"
-      ],
-      "titel": "Bro’s",
-      "genre": "cabaret",
-      "datum": "2026-12-19",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/bros/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Joep van Deudekom & Rob Urgert"
       ],
       "titel": "Joep van Deudekom & Rob Urgert",
@@ -220,6 +207,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/joep-van-deudekom-rob-urgert/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Bro’s"
+      ],
+      "titel": "Bro’s",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/bros/"
     },
     {
       "theater": "kunstlinie",

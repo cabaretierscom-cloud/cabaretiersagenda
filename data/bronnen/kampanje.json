@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-03",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -16,26 +16,13 @@
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.kampanje.nl/voorstellingen/valentina-toth-try-out-rz9j"
-    },
-    {
-      "theater": "theater-de-kampanje",
-      "artiesten": [
         "Rayen Panday"
       ],
       "titel": "Grip",
       "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy"
     },
@@ -129,6 +116,19 @@
       "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/hokjesdenker-jknt"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Lisa Ostermann"
+      ],
+      "titel": "De Baas",
+      "genre": "cabaret",
+      "datum": "2026-12-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc"
     },
     {
       "theater": "theater-de-kampanje",
@@ -230,7 +230,7 @@
       "genre": "cabaret",
       "datum": "2027-01-14",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2"
     },
@@ -256,7 +256,7 @@
       "genre": "cabaret",
       "datum": "2027-01-21",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.kampanje.nl/voorstellingen/rene-van-meurs-reprise-h6c6"
     },
@@ -527,7 +527,7 @@
       "genre": "cabaret",
       "datum": "2027-04-09",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/marie-koet-cgxx"
     },
@@ -618,7 +618,7 @@
       "genre": "cabaret",
       "datum": "2027-04-24",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/jandino-qyv8"
     },
@@ -767,23 +767,6 @@
     }
   ],
   "recensies": {
-    "https://www.kampanje.nl/voorstellingen/valentina-toth-try-out-rz9j": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "Wildbloei’ is een unieke performance van het megatalent Valentina Tóth"
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Valentina Tóth heeft een perfect debuutprogramma afgeleverd, een frisse wind in kleinkunstland, een wervelwind."
-      },
-      {
-        "medium": "NRC",
-        "sterren": null,
-        "citaat": "Een overweldigend debuut van cabaretier Valentina Tóth over ‘de hysterische vrouw"
-      }
-    ],
     "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy": [
       {
         "medium": "Theaterkrant",
@@ -847,6 +830,28 @@
         "medium": "de Volkskrant",
         "sterren": 4,
         "citaat": "Wie wil er nou drie uur lang naar Zomergasten kijken? Een half uur Hokjesdenker verzadigt meer."
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/lisa-ostermann-yvnc": [
+      {
+        "medium": "Trouw",
+        "sterren": 5,
+        "citaat": "Ontzettend grappig'."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Met andere woorden: je wil direct haar volgende voorstelling zien."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Lisa Ostermann heeft een nogal onweerstaanbaar soort energie."
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Opnieuw vindt Lisa Ostermann het perfecte snijvlak tussen humor en ontroering."
       }
     ],
     "https://www.kampanje.nl/voorstellingen/chris-verlaan-qyxl": [
