@@ -999,6 +999,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${filters(list, { maand: true })}
         <div id="gigs">${monthGroups(list)}</div>
         ${leegBlok}
+        ${list.some((g) => V.get(g.voorstelling).genre === "cabaret") && GENRE_PAGINAS.includes("cabaret") ? `<p class="meer-link"><a href="/genres/cabaret/${plaatsId(p)}/">Alleen cabaret in ${esc(p)}</a></p>` : ""}
         ${plaatsTekst(p, list)}
         ${list.length ? faqHtml(plaatsVragen(p, list), `Veelgestelde vragen over cabaret in ${p}`) : ""}
       </div>`;
@@ -1791,6 +1792,13 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div id="gigs">${monthGroups(eerste)}</div>
       ${list.length > 12 && list.length <= MAX ? leegBlok : ""}
       ${list.length > MAX ? `<p class="more"><a class="btn" href="/agenda/?genre=${g}">Alle ${list.length.toLocaleString("nl-NL")} ${esc(info.meervoud)} in de agenda</a></p>` : ""}
+      ${genrePlaatsen(g).length ? `<section class="genre-plaatsen" aria-labelledby="gp-titel">
+        <h2 class="sub-head" id="gp-titel">${esc(info.kop)} per plaats</h2>
+        <p class="genre-plaats-top">${genrePlaatsen(g).slice(0, 24).map(([p, n]) => `<a href="${genrePlaatsPad(g, p)}">${esc(p)} <span>${n}</span></a>`).join("")}</p>
+        <details class="genre-plaats-alles"><summary>Alle ${genrePlaatsen(g).length} plaatsen</summary>
+        ${Object.keys(LANDEN).map((land) => { const hier = genrePlaatsen(g).filter(([p]) => landVanPlaats(p) === land).sort((a, b) => a[0].localeCompare(b[0], "nl")); return hier.length ? `<h3>${LANDEN[land]}</h3><ul class="genre-plaats-lijst">${hier.map(([p, n]) => `<li><a href="${genrePlaatsPad(g, p)}">${esc(p)}</a> <span>${n}</span></li>`).join("")}</ul>` : ""; }).join("")}
+        </details>
+      </section>` : ""}
       <section class="seo-tekst prose" aria-labelledby="over-titel">
         <h2 id="over-titel">Over ${esc(onderwerp)}</h2>
         ${tekst.join("\n        ")}
@@ -1800,6 +1808,60 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const desc = kort(`${info.kop}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")} in Nederland en België${artiesten.length ? `, met ${artiesten.slice(0, 3).map(([id]) => A.get(id).naam).join(", ")}` : ""}. Bekijk de agenda en koop kaarten bij het theater.`);
     return layout({ title: info.titel, description: desc, path: pad, section: null, body,
       schema: { type: "CollectionPage", kruimels: [["Genres", "/genres/"], [info.kop, pad]], extra: [...eventsLd(eerste), faqLd(vragen, pad)] } });
+  }
+
+  // Landingspagina's per genre en plaats, zoals /genres/cabaret/amsterdam/ (alleen de genres in GENRE_PER_PLAATS).
+  const GENRE_PER_PLAATS = ["cabaret"];
+  const genrePlaatsPad = (g, p) => `/genres/${g}/${plaatsId(p)}/`;
+  const genrePlaatsen = (g) => GENRE_PER_PLAATS.includes(g) ? telPer(genreLijst(g), (x) => T.get(x.theater).plaats) : [];
+  const genrePlaatsPaginas = GENRE_PER_PLAATS.filter((g) => GENRE_PAGINAS.includes(g)).flatMap((g) => genrePlaatsen(g).map(([p]) => [g, p]));
+
+  function genrePlaatsPagina(g, p) {
+    const info = GENRE_INFO[g], pad = genrePlaatsPad(g, p), naam = esc(p);
+    const list = genreLijst(g).filter((x) => T.get(x.theater).plaats === p);
+    const alles = perPlaats(p);
+    const zalen = telPer(list, (x) => x.theater);
+    const artiestTel = telPer(list.filter((x) => V.get(x.voorstelling).artiesten.length), (x) => V.get(x.voorstelling).artiesten[0])
+      .filter(([id]) => !isFestival(id) && !GEEN_CABARETIER.test(A.get(id).naam));
+    const maanden = telPer(list, (x) => x.datum.slice(0, 7));
+    const tryouts = bijzonder(list, "try-out"), premieres = bijzonder(list, "première");
+    const eerste = list.find((x) => x.status !== "geannuleerd") || list[0];
+    const onderwerp = info.kop.toLowerCase();
+    // De grootste andere plaatsen met dit genre in hetzelfde land, om door te klikken.
+    const andere = genrePlaatsen(g).filter(([x]) => x !== p && landVanPlaats(x) === landVanPlaats(p)).slice(0, 6);
+    const top = artiestTel.slice(0, 8).map(([id, n]) => `<a href="${artiestPad(id)}">${esc(A.get(id).naam)}</a>${n > 1 ? ` (${keer(n)})` : ""}`);
+    const tekst = [`<p>In ${naam} ${list.length === 1 ? `staat één ${onderwerp}voorstelling` : `staan ${list.length} ${info.meervoud}`} op de agenda, ${periode(list)}, ${zalen.length === 1 ? `in ${theaterLink(zalen[0][0])}` : `in ${plural(zalen.length, "zaal", "zalen")}: ${opsomming(zalen.slice(0, 6).map(([id, n]) => `${theaterLink(id)} (${n})`))}`}.${uitverkochtZin(list)}</p>`];
+    if (top.length) tekst.push(`<p>${artiestTel.length === 1 ? `Op het programma staat ${top[0]}.` : `${artiestTel.length} ${info.wie} spelen de komende tijd in ${naam}, onder wie ${opsomming(top)}.`}${maanden.length > 1 && maanden[0][1] > 1 ? ` De drukste maand is ${fmt.monthYear(maanden[0][0] + "-01")}, met ${maanden[0][1]} voorstellingen.` : ""}</p>`);
+    tekst.push(`<p>${info.uitleg}</p>`);
+    tekst.push(`<p>Ook zin in iets anders? Op <a href="${plaatsPad(p)}">cabaret en theater in ${naam}</a> staan alle ${plural(alles.length, "voorstelling", "voorstellingen")}, ook comedy en komisch theater. Alle ${esc(info.meervoud)} in Nederland en België vind je bij ${genreLink(g)}.${andere.length ? ` ${info.kop} in andere plaatsen: ${opsomming(andere.map(([x]) => `<a href="${genrePlaatsPad(g, x)}">${esc(x)}</a>`))}.` : ""}</p>`);
+    const vragen = [];
+    vragen.push([`Waar is ${onderwerp} in ${p}?`, zalen.length === 1 ? `De komende tijd in ${theaterLink(zalen[0][0])}.` : `De komende tijd in ${opsomming(zalen.slice(0, 6).map(([id, n]) => `${theaterLink(id)} (${plural(n, "voorstelling", "voorstellingen")})`))}.`]);
+    if (eerste) vragen.push([`Wanneer is de volgende ${onderwerp}voorstelling in ${p}?`, `Op ${esc(fmt.full(eerste.datum))}${eerste.tijd ? ` om ${eerste.tijd}` : ""}: ${esc(artistNames(eerste.voorstelling) || V.get(eerste.voorstelling).titel)} in ${theaterLink(eerste.theater)}.`]);
+    if (top.length) vragen.push([`Welke ${info.wie} spelen in ${p}?`, `${opsomming(top.slice(0, 6))}. Tussen haakjes staat hoe vaak, als dat meer dan één keer is.`]);
+    if (tryouts.length || premieres.length) vragen.push([`Zijn er try-outs of premières in ${p}?`, `Ja: ${opsomming([premieres.length && plural(premieres.length, "première", "premières"), tryouts.length && plural(tryouts.length, "try-out", "try-outs")].filter(Boolean))}. Bij een try-out is de voorstelling nog in ontwikkeling en zijn kaarten vaak goedkoper.`]);
+    vragen.push(["Hoe koop ik kaarten?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van het theater, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
+    const affiches = nuInTheater(() => true, (v) => v.genre === g && list.some((x) => x.voorstelling === v.id));
+    const body = `<div class="detail-hero" style="${ink(info.kleur)}"><div class="wrap">
+        <h1 class="plaats-kop">${esc(info.kop)} in ${naam}</h1>
+        <p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}.</p>
+      </div></div>
+      ${affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
+      <div class="wrap wall-head"><h2 id="nu-title">Nu in het theater</h2></div>
+      ${strip("strip-nu", `${info.kop} in ${p}: nu in het theater`, affiches)}
+    </section>` : ""}
+      <div class="wrap detail-body">
+        ${list.length > 12 ? filters(list, { maand: true }) : ""}
+        <div id="gigs">${monthGroups(list)}</div>
+        ${list.length > 12 ? leegBlok : ""}
+        <section class="seo-tekst prose" aria-labelledby="over-titel">
+          <h2 id="over-titel">${esc(info.kop)} in ${naam}</h2>
+          ${tekst.join("\n          ")}
+        </section>
+        ${faqHtml(vragen, `Veelgestelde vragen over ${onderwerp} in ${p}`)}
+      </div>`;
+    const desc = kort(`${info.kop} in ${p}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}${artiestTel.length ? `, met ${artiestTel.slice(0, 3).map(([id]) => A.get(id).naam).join(", ")}${artiestTel.length > 3 ? " en meer" : ""}` : ""}. Eerstvolgende op ${fmt.full(list[0].datum)}. Kaarten koop je bij het theater.`);
+    return layout({ title: `${info.kop} in ${p}: agenda en kaarten`, description: desc, path: pad, section: null, body,
+      schema: { type: "CollectionPage", kruimels: [["Genres", "/genres/"], [info.kop, `/genres/${g}/`], [p, pad]], extra: [...eventsLd(list), faqLd(vragen, pad)] } });
   }
 
   // Gekleurde kaart van een genre (/genres/ en de homepage).
@@ -2278,6 +2340,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   return {
     controlePagina, dashboardPagina, dashboardPad,
     home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, genrePagina, genreIndex, GENRE_PAGINAS, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
-    voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, plaatsPad, maandId, voorstellingPaden: voorstellingPad,
+    voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, plaatsPad, maandId, genrePlaatsPaginas, genrePlaatsPagina, genrePlaatsPad, voorstellingPaden: voorstellingPad,
   };
 }

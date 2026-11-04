@@ -911,3 +911,17 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .promotekst { max-width: 68ch; margin-bottom: 8px; }
 .promotekst p { line-height: 1.6; }
 .promotekst-bron { font-size: .85rem; color: var(--ink-2); }
+
+/* Genre per plaats (/genres/cabaret/): alle plaatsen als korte lijst in kolommen. */
+.genre-plaatsen { margin: 32px 0 8px; }
+.genre-plaats-lijst { list-style: none; margin: 0; padding: 0; columns: 4 160px; column-gap: 24px; }
+.genre-plaats-lijst li { break-inside: avoid; padding: 4px 0; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 8px; }
+.genre-plaats-lijst a { color: var(--ink); font-weight: 600; text-decoration: none; }
+.genre-plaats-lijst a:hover { text-decoration: underline; }
+.genre-plaats-lijst span { color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.genre-plaats-top { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+.genre-plaats-top a { display: inline-flex; gap: 6px; align-items: baseline; padding: 8px 14px; border: 2px solid var(--ink); border-radius: 999px; color: var(--ink); font-weight: 700; text-decoration: none; }
+.genre-plaats-top a:hover { background: var(--ink); color: var(--paper); }
+.genre-plaats-top span { font-weight: 500; opacity: .7; font-variant-numeric: tabular-nums; }
+.genre-plaats-alles summary { cursor: pointer; font-weight: 700; padding: 8px 0; }
+.genre-plaats-alles h3 { margin: 16px 0 6px; }
