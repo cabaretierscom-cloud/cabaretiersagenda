@@ -835,17 +835,33 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .month-group h3 small { font-family: var(--font-body); font-weight: 500; font-size: 1rem; margin-left: 8px; }
 .dag-intro { max-width: 68ch; margin: 0 0 12px; }
 .dag-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0 0 16px; font-weight: 600; }
-.dag-blok { border: 2px solid var(--ink); padding: 16px 20px; margin: 8px 0 24px; }
-.dag-blok h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--step-1); margin: 0 0 8px; }
-.dag-regel { margin: 0 0 6px; }
-.dag-regel .dag-label { font-weight: 700; }
-.dag-regel .dag-datum { font-weight: 700; }
-/* Tickets als dikgedrukte blauwe tekstlink met een uitlinkicoon (geen knop). */
-.dag-regel .dag-tickets { display: inline-flex; align-items: center; gap: 3px; margin-left: 6px; font-weight: 700; color: var(--riso-blue); text-decoration: none; white-space: nowrap; }
-.dag-regel .dag-tickets svg { width: 14px; height: 14px; }
-.dag-regel .dag-tickets:hover { text-decoration: underline; }
-.dag-regel .dag-tickets.ghost { color: var(--ink-2); }
+.dag-blok { margin: 8px 0 28px; }
+.dag-blok h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--step-1); margin: 0 0 12px; }
 .dag-blok .dag-nav { margin: 12px 0 0; }
+/* Kaartjes in de kleur van de artiest (zoals de affiches); te veel voor de breedte: opzij schuiven. */
+.dag-kaarten { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 2px 2px 6px; }
+.dag-kaarten::-webkit-scrollbar { display: none; }
+.dag-kaart {
+  position: relative; isolation: isolate; flex: 1 0 180px; max-width: 240px; min-height: 196px; scroll-snap-align: start;
+  display: flex; flex-direction: column; gap: 4px; padding: 14px 16px 16px; border-radius: 16px; background: var(--bg); color: var(--fg);
+}
+.dag-kaart::after { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none;
+  background-image: radial-gradient(color-mix(in srgb, var(--fg) 12%, transparent) 1px, transparent 1.2px); background-size: 7px 7px; }
+.dag-kaart a { color: inherit; }
+.dk-dag { font-weight: 800; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+.dk-datum { font-family: var(--font-display); font-weight: 900; font-size: 2rem; line-height: .9; }
+.dk-waar { font-weight: 600; font-size: .88rem; }
+.dk-waar a { text-decoration: none; } .dk-waar a:hover { text-decoration: underline; }
+.dk-wie { margin: auto 0 0; padding-top: 10px; font-family: var(--font-display); font-weight: 900; font-size: 1.3rem; line-height: 1; text-transform: uppercase; }
+.dk-wie a { text-decoration: none; } .dk-wie a:hover { text-decoration: underline; }
+.dag-kaart .dk-knop {
+  align-self: flex-start; margin-top: 8px; display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px;
+  background: var(--fg); color: var(--bg); font-weight: 700; font-size: .85rem; text-decoration: none; white-space: nowrap;
+}
+.dag-kaart .dk-knop svg { width: 14px; height: 14px; }
+.dag-kaart .dk-knop.ghost { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 2px var(--fg); }
+.dag-kaart .dk-knop:hover { filter: brightness(1.12); }
+@media (max-width: 600px) { .dag-kaart { flex-basis: 62%; } }
 .dag-blok-leeg { border-left: 4px solid var(--riso-yellow); padding: 8px 14px; margin: 8px 0 24px; }
 
 /* Zet in je agenda: knop naast Tickets met een klein keuzemenu (public/agenda.js). */

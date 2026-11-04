@@ -964,15 +964,22 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       const g = list.find((x) => x.status !== "geannuleerd");
       return g ? `<p class="dag-blok-leeg"><b>Vanavond en dit weekend</b> staat er in ${esc(p)} niets in de agenda. Eerstvolgende: ${esc(fmt.long(g.datum))}, ${esc(V.get(g.voorstelling).artiesten.map((a) => A.get(a).naam).join(" en ") || V.get(g.voorstelling).titel)} in ${esc(T.get(g.theater).naam)}.</p>` : "";
     }
+    // Kaartjes in de kleur van de artiest, zoals de affiches; op een telefoon schuift de rij opzij.
     return `<section class="dag-blok" aria-labelledby="dag-blok-t">
         <h2 id="dag-blok-t">Vanavond en dit weekend in ${esc(p)}</h2>
-        ${binnenkort.slice(0, 6).map((g) => {
+        <div class="dag-kaarten">${binnenkort.slice(0, 6).map((g) => {
           const v = V.get(g.voorstelling);
-          // Tekstlink naar de kaartverkoop (geen knop); class "tickets" en ticketData() voor de klikmeting.
           const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
-          const kaart = `<a class="tickets dag-tickets${kopen ? "" : " ghost"}" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow"${ticketData(g)}>${kopen ? "Tickets" : "Uitverkocht"}${ICON.extern}<span class="visually-hidden"> (externe website, opent in een nieuw tabblad)</span></a>`;
-          return `<p class="dag-regel" data-datum="${g.datum}"><span class="dag-label" data-dag="${g.datum}">${g.datum === vandaagDag ? "Vanavond" : g.datum === morgenDag ? "Morgen" : hoofdletter(fmt.weekday(g.datum))}</span> <span class="dag-datum">${fmt.dayMonth(g.datum)}</span>${g.tijd ? ` ${g.tijd}` : ""} · <b>${artistLinks(g.voorstelling) || esc(v.titel)}</b> in <a href="/theaters/${g.theater}/">${esc(T.get(g.theater).naam)}</a> ${kaart}</p>`;
-        }).join("")}
+          // Tekst "Tickets" met class "tickets" en ticketData() voor de klikmeting (public/cookies.js).
+          const knop = `<a class="tickets dag-tickets dk-knop${kopen ? "" : " ghost"}" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow"${ticketData(g)}>${kopen ? "Tickets" : "Uitverkocht"}${ICON.extern}<span class="visually-hidden"> (externe website, opent in een nieuw tabblad)</span></a>`;
+          return `<article class="dag-kaart" data-datum="${g.datum}" style="${ink(leadInk(g.voorstelling))}">
+            <span class="dk-dag dag-label" data-dag="${g.datum}">${g.datum === vandaagDag ? "Vanavond" : g.datum === morgenDag ? "Morgen" : hoofdletter(fmt.weekday(g.datum))}</span>
+            <span class="dk-datum">${fmt.day(g.datum)} ${fmt.monthShort(g.datum)}</span>
+            <span class="dk-waar">${g.tijd ? `${g.tijd} · ` : ""}<a href="/theaters/${g.theater}/">${esc(T.get(g.theater).naam)}</a></span>
+            <h3 class="dk-wie">${artistLinks(g.voorstelling) || esc(v.titel)}</h3>
+            ${knop}
+          </article>`;
+        }).join("")}</div>
         ${binnenkort.length > 6 || links ? `<p class="dag-nav">${links}${binnenkort.length > 6 && !links ? `<span>en nog ${binnenkort.length - 6} meer hieronder</span>` : ""}</p>` : ""}
       </section>`;
   }

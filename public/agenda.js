@@ -15,7 +15,7 @@
   // Vanavond/dit weekend: de pagina is 's nachts gemaakt. Dagen die voorbij zijn verbergen en
   // "Vanavond"/"Morgen" opnieuw bepalen, voor het geval de nachtelijke update later is.
   const morgen = new Date(Date.now() + 864e5).toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" });
-  document.querySelectorAll(".dag-regel[data-datum]").forEach((el) => { if (el.dataset.datum < today) el.hidden = true; });
+  document.querySelectorAll(".dag-kaart[data-datum]").forEach((el) => { if (el.dataset.datum < today) el.hidden = true; });
   document.querySelectorAll(".dag-label[data-dag]").forEach((el) => {
     if (el.dataset.dag === today) el.textContent = "Vanavond";
     else if (el.dataset.dag === morgen) el.textContent = "Morgen";
