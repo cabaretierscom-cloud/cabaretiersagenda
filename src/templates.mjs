@@ -968,7 +968,10 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <h2 id="dag-blok-t">Vanavond en dit weekend in ${esc(p)}</h2>
         ${binnenkort.slice(0, 6).map((g) => {
           const v = V.get(g.voorstelling);
-          return `<p class="dag-regel" data-datum="${g.datum}"><span class="dag-label" data-dag="${g.datum}">${g.datum === vandaagDag ? "Vanavond" : g.datum === morgenDag ? "Morgen" : hoofdletter(fmt.weekday(g.datum))}</span>${g.tijd ? ` ${g.tijd}` : ""} · <b>${artistLinks(g.voorstelling) || esc(v.titel)}</b> in <a href="/theaters/${g.theater}/">${esc(T.get(g.theater).naam)}</a></p>`;
+          // Tekstlink naar de kaartverkoop (geen knop); class "tickets" en ticketData() voor de klikmeting.
+          const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
+          const kaart = `<a class="tickets dag-tickets${kopen ? "" : " ghost"}" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow"${ticketData(g)}>${kopen ? "Tickets" : "Uitverkocht"}${ICON.extern}<span class="visually-hidden"> (externe website, opent in een nieuw tabblad)</span></a>`;
+          return `<p class="dag-regel" data-datum="${g.datum}"><span class="dag-label" data-dag="${g.datum}">${g.datum === vandaagDag ? "Vanavond" : g.datum === morgenDag ? "Morgen" : hoofdletter(fmt.weekday(g.datum))}</span> <span class="dag-datum">${fmt.dayMonth(g.datum)}</span>${g.tijd ? ` ${g.tijd}` : ""} · <b>${artistLinks(g.voorstelling) || esc(v.titel)}</b> in <a href="/theaters/${g.theater}/">${esc(T.get(g.theater).naam)}</a> ${kaart}</p>`;
         }).join("")}
         ${binnenkort.length > 6 || links ? `<p class="dag-nav">${links}${binnenkort.length > 6 && !links ? `<span>en nog ${binnenkort.length - 6} meer hieronder</span>` : ""}</p>` : ""}
       </section>`;
@@ -979,7 +982,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const zalen = zalenMetData.filter((t) => t.plaats === p);
     const body = `<div class="detail-hero" style="--bg:var(--riso-yellow);--fg:#121212"><div class="wrap">
         <h1 class="plaats-kop">Cabaret en theater in ${esc(p)}</h1>
-        <p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${zalen.map((t) => `<a href="/theaters/${t.id}/">${esc(t.naam)}</a>`).join(", ").replace(/, ([^,]*)$/, " en $1")}.</p>
       </div></div>
       <div class="wrap detail-body">
         ${dagBlok(p, list)}

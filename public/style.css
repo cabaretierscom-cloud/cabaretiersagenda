@@ -839,6 +839,12 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .dag-blok h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--step-1); margin: 0 0 8px; }
 .dag-regel { margin: 0 0 6px; }
 .dag-regel .dag-label { font-weight: 700; }
+.dag-regel .dag-datum { font-weight: 700; }
+/* Tickets als dikgedrukte blauwe tekstlink met een uitlinkicoon (geen knop). */
+.dag-regel .dag-tickets { display: inline-flex; align-items: center; gap: 3px; margin-left: 6px; font-weight: 700; color: var(--riso-blue); text-decoration: none; white-space: nowrap; }
+.dag-regel .dag-tickets svg { width: 14px; height: 14px; }
+.dag-regel .dag-tickets:hover { text-decoration: underline; }
+.dag-regel .dag-tickets.ghost { color: var(--ink-2); }
 .dag-blok .dag-nav { margin: 12px 0 0; }
 .dag-blok-leeg { border-left: 4px solid var(--riso-yellow); padding: 8px 14px; margin: 8px 0 24px; }
 
