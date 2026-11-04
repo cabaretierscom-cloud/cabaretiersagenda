@@ -770,7 +770,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </section>
       ${faqHtml(overzicht.vragen, "Veelgestelde vragen over de agenda")}
     </section>`;
-    return layout({ title: "Agenda", description: "Alle aankomende cabaret- en comedyvoorstellingen in Nederland en België, week voor week, met zoeken op artiest, voorstelling, plaats of theater.", path: "/agenda/", section: "agenda", body, schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"]], extra: [...eventsLd(eerste), faqLd(overzicht.vragen, "/agenda/")] } });
+    return layout({ title: "Cabaret- en comedyagenda Nederland en België", description: kort(`Alle ${tellers.speeldata.toLocaleString("nl-NL")} aankomende cabaret- en comedyvoorstellingen in Nederland en België, week voor week. Zoek op artiest, plaats of theater.`), path: "/agenda/", section: "agenda", body, schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"]], extra: [...eventsLd(eerste), faqLd(overzicht.vragen, "/agenda/")] } });
   }
 
   // Een maand per week (maandag t/m zondag, binnen de maand), met een weekkeuze bovenaan. Zonder
@@ -858,7 +858,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div class="venues" id="plaatsenlijst">${kolommen}</div>
       <p class="empty" id="plaatsen-leeg" hidden>Geen plaats of zaal gevonden met deze naam.</p>
     </section>`;
-    return layout({ title: "Plaatsen", description: "Cabaret en comedy per plaats in Nederland en België.", path: "/plaatsen/", section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"]], hoofd: lijstLd(plaatsen.map((p) => [p, plaatsPad(p)])) } });
+    return layout({ title: "Theater per plaats in Nederland en België", description: kort(`Cabaret, comedy en komisch theater in ${plaatsen.length} plaatsen in Nederland en België. Kies je plaats en zie wat er in de theaters bij jou in de buurt speelt.`), path: "/plaatsen/", section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"]], hoofd: lijstLd(plaatsen.map((p) => [p, plaatsPad(p)])) } });
   }
 
   // ---------- Uitgelicht (betaalde vermelding, data/uitgelicht.json) ----------
@@ -1058,7 +1058,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${azLijst(artiestenMetData)}
       <p class="zie-ook">Bekijk ook: <a href="/alle-cabaretiers/">alle cabaretiers</a>, <a href="/alle-cabaretiers/vrouwen/">vrouwelijke cabaretiers</a> en <a href="/alle-cabaretiers/mannen/">mannelijke cabaretiers</a>.</p>
     </section>`;
-    return layout({ title: "Artiesten", description: "Alle cabaretiers en comedians met aankomende voorstellingen in Nederland en België, van A tot Z.", path: "/artiesten/", section: "artiesten", body, schema: { type: "CollectionPage", kruimels: [["Artiesten", "/artiesten/"]], hoofd: lijstLd([...artiestenMetData].sort((x, y) => x.a.naam.localeCompare(y.a.naam, "nl")).map(({ a }) => [a.naam, `/artiesten/${a.id}/`])) } });
+    return layout({ title: "Artiesten op tournee: cabaret en comedy", description: kort(`${plural(artiestenMetData.length, "artiest", "artiesten")} met aankomende voorstellingen in Nederland en België, van A tot Z: cabaretiers, comedians en groepen, met hun speeldata en kaarten.`), path: "/artiesten/", section: "artiesten", body, schema: { type: "CollectionPage", kruimels: [["Artiesten", "/artiesten/"]], hoofd: lijstLd([...artiestenMetData].sort((x, y) => x.a.naam.localeCompare(y.a.naam, "nl")).map(({ a }) => [a.naam, `/artiesten/${a.id}/`])) } });
   }
 
   // ---------- Tekst onder artiest- en theaterpagina's ----------
@@ -2144,7 +2144,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </section>
       ${faqHtml(overzicht.vragen, "Veelgestelde vragen over theaters")}
     </section>`;
-    return layout({ title: "Theaters", description: "Theaters, comedyclubs en podia in Nederland en België met cabaret en comedy.", path: "/theaters/", section: "theaters", body, schema: { type: "CollectionPage", kruimels: [["Theaters", "/theaters/"]], hoofd: lijstLd([...zalenMetData].sort((x, y) => x.naam.localeCompare(y.naam, "nl")).map((t) => [t.naam, `/theaters/${t.id}/`])), extra: [faqLd(overzicht.vragen, "/theaters/")] } });
+    return layout({ title: "Theaters en zalen met cabaret en comedy", description: kort(`${plural(zalenMetData.length, "theater", "theaters")}, comedyclubs en podia in Nederland en België met cabaret en comedy op het programma, per plaats, met hun aankomende voorstellingen.`), path: "/theaters/", section: "theaters", body, schema: { type: "CollectionPage", kruimels: [["Theaters", "/theaters/"]], hoofd: lijstLd([...zalenMetData].sort((x, y) => x.naam.localeCompare(y.naam, "nl")).map((t) => [t.naam, `/theaters/${t.id}/`])), extra: [faqLd(overzicht.vragen, "/theaters/")] } });
   }
 
   function theaterPage(t) {
