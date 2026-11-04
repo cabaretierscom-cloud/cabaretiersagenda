@@ -371,6 +371,9 @@
       lijst = data.rijen.filter((g) => g.datum >= today && (!naald || g.zoek.includes(naald)) && (!stand.genre || g.genre === stand.genre) && (!stand.uitverkocht || g.status !== "uitverkocht"));
       weken = perWeek(lijst); getoond = 0; ronde++;
       alles.innerHTML = "";
+      // Met een zoekopdracht of filter meteen alle resultaten (in porties, zie toonRest); zonder filter
+      // alleen de eerste week met de knop voor de rest, anders bouwt de pagina duizenden rijen.
+      if (gefilterd()) { toonRest(); if (!weken.length) werkKnopBij(); return; }
       if (weken.length) toonWeek(weken[getoond++]);
       werkKnopBij();
     }
