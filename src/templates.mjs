@@ -518,6 +518,12 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       `<a href="${plaatsPad(p)}"><b>${esc(p)}</b><span>${plural(perPlaats(p).length, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>`;
   }
 
+  // Zijwaartse rij met de genres, meeste voorstellingen eerst (homepage), in dezelfde stijl als plaatsNav().
+  function genreNav() {
+    return `<nav class="month-nav stad-nav" aria-label="Genres">${[...GENRE_PAGINAS].sort((x, y) => genreLijst(y).length - genreLijst(x).length).map((g) =>
+      `<a href="/agenda/${g}/"><b>${esc(GENRE_INFO[g].kop)}</b><span>${plural(genreLijst(g).length, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>`;
+  }
+
   function maandNav(huidig) {
     return `<nav class="month-nav" aria-label="Maanden">${maanden.map((m) =>
       `<a href="/agenda/${maandId(m)}/"${m === huidig ? ' aria-current="page"' : ""}><b>${kortMaand(m)}</b><span>${m.slice(0, 4)}</span></a>`).join("")}</nav>`;
@@ -699,12 +705,9 @@ ${festivalsMetData.length ? `
   ${strip("strip-festivals", "Cabaretfestivals, de eerstvolgende voorop", kaartenRij(festivalsMetData, ({ f }) => festivalKleur(f), festivalKaart))}
 </section>` : ""}
 ${GENRE_PAGINAS.length ? `
-<section class="wall wall-zalen" aria-labelledby="genres-title">
-  <div class="wrap wall-head">
-    <h2 id="genres-title">Genres</h2>
-    <p><a href="/agenda/">De hele agenda</a></p>
-  </div>
-  ${strip("strip-genres", "Genres", kaartenRij(GENRE_PAGINAS, (g) => GENRE_INFO[g].kleur, genreKaart))}
+<section class="block wrap kies-blok" aria-labelledby="genres-title">
+  <div class="wall-head"><h2 id="genres-title">Genres</h2></div>
+  ${genreNav()}
 </section>` : ""}
 
 ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` : ""}
@@ -1878,14 +1881,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], [info.kop, `/agenda/${g}/`], [p, pad]], extra: [...eventsLd(list), faqLd(vragen, pad)] } });
   }
 
-  // Gekleurde kaart van een genre (homepage).
-  const genreKaart = (g, kleur) => {
-    const list = genreLijst(g);
-    return `<a class="artist-card" href="/agenda/${g}/" style="${ink(kleur)}">
-          <h3${kopMaat(GENRE_INFO[g].kop)}>${afbreken(GENRE_INFO[g].kop)}</h3>
-          <p><span class="count">${plural(list.length, "voorstelling", "voorstellingen")}</span>, vanaf ${fmt.dayMonth(list[0].datum)}</p>
-        </a>`;
-  };
 
 
 
