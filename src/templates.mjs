@@ -308,7 +308,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   const ORG_ID = URL("/#organisatie"), SITE_ID = URL("/#website");
   const EVENT_TYPE = {
     cabaret: "TheaterEvent", "muzikaal-cabaret": "TheaterEvent", kleinkunst: "TheaterEvent",
-    oudejaarsconference: "TheaterEvent", theaterkomedie: "TheaterEvent",
+    oudejaarsconference: "TheaterEvent", komedie: "TheaterEvent",
     "stand-up": "ComedyEvent", "open-mic": "ComedyEvent", improvisatie: "ComedyEvent", festival: "Festival",
   };
   const ZAAL_TYPE = { theater: "PerformingArtsTheater", comedyclub: "ComedyClub", café: "BarOrPub" };
@@ -1222,7 +1222,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   const GENRE_TEKST = {
     cabaret: "cabaret", "stand-up": "stand-up comedy", oudejaarsconference: "oudejaarsconference",
-    theaterkomedie: "theaterkomedie", "open-mic": "open mics", improvisatie: "improvisatietheater",
+    komedie: "komedie", "open-mic": "open mics", improvisatie: "improvisatietheater",
     festival: "festivals", "muzikaal-cabaret": "muzikaal cabaret", kleinkunst: "kleinkunst",
   };
   const kort = (s, max = 158) => s.length <= max ? s : s.slice(0, s.lastIndexOf(" ", max - 1)) + "…";
@@ -1737,10 +1737,10 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ["Wat is het verschil tussen kleinkunst en cabaret?", "Bij kleinkunst draait het vooral om het lied, bij cabaret om de grap en het verhaal. De grens is vaag: veel voorstellingen zijn een mengvorm."],
       ],
     },
-    theaterkomedie: {
-      kop: "Theaterkomedie", meervoud: "komedies", wie: "artiesten", kleur: "oranje",
-      titel: "Theaterkomedie: komedies, blijspellen en kluchten",
-      uitleg: "Onder theaterkomedie vallen komedies, blijspellen en kluchten: toneel met humor, met een verhaal en een vaste rolverdeling. Gewoon toneel en musicals staan niet in deze agenda; voorstellingen waarin de humor de hoofdrol speelt wel.",
+    komedie: {
+      kop: "Komedie", meervoud: "komedies", wie: "artiesten", kleur: "oranje",
+      titel: "Komedie: komedies, blijspellen en kluchten",
+      uitleg: "Onder komedie vallen komedies, blijspellen en kluchten: toneel met humor, met een verhaal en een vaste rolverdeling. Gewoon toneel en musicals staan niet in deze agenda; voorstellingen waarin de humor de hoofdrol speelt wel.",
       vragen: [
         ["Wat is het verschil tussen een komedie, een blijspel en een klucht?", "Een komedie is toneel met humor; een blijspel is een luchtige komedie met een goede afloop; een klucht draait om verwikkelingen, misverstanden en slapstick."],
         ["Staan musicals en toneel ook in de agenda?", "Nee, alleen voorstellingen waarin humor de hoofdrol speelt: cabaret, comedy en komisch theater."],
@@ -1999,11 +1999,11 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const maandLink = (m) => `<a href="/agenda/${maandId(m)}/">${maandNaam(m)}</a>`;
     const tekst = [];
     tekst.push(`<p>Op Cabaretiers.com vind je alle aankomende cabaret- en theatervoorstellingen met humor in Nederland en België op één plek: ${tellers.speeldata.toLocaleString("nl-NL")} voorstellingen van ${tellers.artiesten} artiesten in ${tellers.zalen} theaters, comedyclubs en podia${be ? `, waarvan ${be.toLocaleString("nl-NL")} in België` : ""}. Van de grote zaal van de schouwburg tot een klein vlakkevloertheater en een avond stand-up in de comedyclub.</p>`);
-    tekst.push(`<p>Het aanbod is breed: ${genreTekst(5)}. Bij theaterkomedie gaat het om komedies, blijspellen en kluchten; gewoon toneel en musicals staan niet in deze agenda. De artiesten die nu het vaakst spelen, zijn ${opsomming(artiesten)}.</p>`);
+    tekst.push(`<p>Het aanbod is breed: ${genreTekst(5)}. Bij komedie gaat het om komedies, blijspellen en kluchten; gewoon toneel en musicals staan niet in deze agenda. De artiesten die nu het vaakst spelen, zijn ${opsomming(artiesten)}.</p>`);
     tekst.push(`<p>Bovenaan begin je met de voorstellingen van deze week; met één knop zie je alle volgende. Zoek op artiest, voorstelling, plaats of theater, kies een genre of verberg uitverkochte voorstellingen. Liever per maand bladeren? Kies ${opsomming(maanden.slice(0, 3).map(maandLink))}, of kijk wat er <a href="/vanavond/">vanavond</a> en <a href="/dit-weekend/">dit weekend</a> te zien is. De meeste voorstellingen zijn in ${opsomming(steden.map(([p, n]) => `${plaatsLink(p)} (${n})`))}.</p>`);
     const vragen = [];
     vragen.push(["Welke cabaretvoorstellingen zijn er vanavond?", `Op <a href="/vanavond/">Vanavond</a> staan alle voorstellingen van vandaag en morgen, en op <a href="/dit-weekend/">Dit weekend</a> die van vrijdag tot en met zondag. In deze agenda staat bovenaan de lopende week.`]);
-    vragen.push(["Wat is het verschil tussen cabaret, stand-up en theaterkomedie?", "Cabaret is een avondvullende voorstelling van een of meer artiesten, met grappen, verhalen en vaak liedjes, meestal rond een thema. Stand-up is comedy waarin een comedian los van een verhaallijn grappen vertelt, vaak met meerdere comedians op een avond. Theaterkomedie is toneel met humor: komedies, blijspellen en kluchten met een vaste rolverdeling."]);
+    vragen.push(["Wat is het verschil tussen cabaret, stand-up en komedie?", "Cabaret is een avondvullende voorstelling van een of meer artiesten, met grappen, verhalen en vaak liedjes, meestal rond een thema. Stand-up is comedy waarin een comedian los van een verhaallijn grappen vertelt, vaak met meerdere comedians op een avond. Komedie is toneel met humor: komedies, blijspellen en kluchten met een vaste rolverdeling."]);
     vragen.push(["Wat is een try-out?", `Een try-out is een voorstelling die nog in ontwikkeling is: de artiest speelt het nieuwe programma voor publiek voordat de première is. Kaarten zijn vaak goedkoper en je ziet een programma als een van de eersten. In de agenda staan nu ${soort("try-out")} try-outs${soort("première") ? ` en ${soort("première")} premières` : ""}; je herkent ze aan het label bij de voorstelling.`]);
     vragen.push(["Welke cabaretiers spelen het vaakst?", `${opsomming(artiesten)}. Tussen haakjes staat het aantal aankomende voorstellingen. Op <a href="/artiesten/">Artiesten</a> staan alle cabaretiers en comedians.`]);
     vragen.push(["In welke maand zijn de meeste voorstellingen?", `In ${maandLink(perMaand[0][0])}, met ${perMaand[0][1].toLocaleString("nl-NL")} voorstellingen. Het theaterseizoen loopt van september tot en met mei; in de zomer spelen artiesten minder, behalve op festivals.`]);

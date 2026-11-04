@@ -261,7 +261,8 @@
   // ---------- Genrekeuze (#f-genre) ----------
   // Een uitklapvak met vinkjes: meerdere genres tegelijk, in het adres als ?genre=cabaret,stand-up.
   // In de balk staan de gekozen genres en het aantal voorstellingen dat erbij hoort.
-  const leesGenres = (t) => (t || "").split(",").map((x) => x.trim()).filter(Boolean);
+  // Oude links met ?genre=theaterkomedie (zo heette komedie tot november 2026) werken ook.
+  const leesGenres = (t) => (t || "").split(",").map((x) => x.trim().replace(/^theaterkomedie$/, "komedie")).filter(Boolean);
   const adres = (p) => p.toString().replace(/%2C/g, ",");
   function genreKeuze(bijWijziging) {
     const el = document.getElementById("f-genre");

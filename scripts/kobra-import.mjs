@@ -14,7 +14,7 @@ const MAANDEN = { januari: 1, februari: 2, maart: 3, april: 4, mei: 5, juni: 6, 
 // Alleen cabaret, comedy en komedie; per productie het genre en eventueel de spelers.
 const PRODUCTIES = {
   "baby-reindeer": { genre: "cabaret", artiesten: ["Thijs van de Meeberg"], titel: "Baby Reindeer" },
-  "lift": { genre: "theaterkomedie", artiesten: ["Jelka van Houten", "Sanne Wallis de Vries"], titel: "Lift" },
+  "lift": { genre: "komedie", artiesten: ["Jelka van Houten", "Sanne Wallis de Vries"], titel: "Lift" },
   "louise-korthals-korthals-in-stukken-26-27": { genre: "cabaret", titel: "In stukken" },
   "marjolijn-van-kooten-aan-mij-zal-het-niet-liggen": { genre: "cabaret" },
   "patrick-nederkoorn-nieuw-programma": { genre: "cabaret" },

@@ -201,7 +201,7 @@ function zorgVoorVoorstelling(r, artiestIdsVanRecord, theaterId) {
   // Een zaal die het als cabaret labelt, hoort bij hetzelfde stuk als er spelers overlappen.
   {
     const overlap = (v) => !v.artiesten.length || !artiestIdsVanRecord.length || v.artiesten.some((a) => artiestIdsVanRecord.includes(a));
-    const stuk = voorstellingen.find((v) => (v.genre === "theaterkomedie" || r.genre === "theaterkomedie") && zelfdeTitel(v.titel, r.titel) && overlap(v));
+    const stuk = voorstellingen.find((v) => (v.genre === "komedie" || r.genre === "komedie") && zelfdeTitel(v.titel, r.titel) && overlap(v));
     if (stuk) {
       stuk.artiesten = [...new Set([...stuk.artiesten, ...artiestIdsVanRecord])];
       if (stuk.artiesten.length) delete stuk.theater;
@@ -358,19 +358,19 @@ for (const f of bronFiles) {
     }
     // Geen artiest, maar de namen vooraan in de titel ("Najib & Roué – Alles is comedy", Goudse Schouwburg):
     // is het deel vóór het streepje een bekende artiest of een alias, dan is dat de artiest.
-    if (!r.artiesten.length && bronRecord.genre !== "theaterkomedie") {
+    if (!r.artiesten.length && bronRecord.genre !== "komedie") {
       const m = r.titel.match(/^(.+?)\s+[–—-]\s+(.+)$/);
       if (m && (aliasOpSleutel.has(slug(m[1])) || isBekend(m[1]))) { r.artiesten = opgeschoondeArtiesten([m[1]]); r.titel = m[2]; }
     }
     // Toneel en komedie hebben hun eigen opruimregels (stukOpOrde); de regels hieronder zijn voor cabaret.
-    if (r.genre === "theaterkomedie" || /^(komedie|blijspel|klucht)\b/i.test(r.titel)) stukOpOrde(r, bronRecord.artiesten?.length === 1 ? bronRecord.artiesten[0] : null);
+    if (r.genre === "komedie" || /^(komedie|blijspel|klucht)\b/i.test(r.titel)) stukOpOrde(r, bronRecord.artiesten?.length === 1 ? bronRecord.artiesten[0] : null);
     // "Eigenlijk" / "Viggo Waas, Eddie B. Wahr & Kees van der Vooren": een namenlijst als titel en een
     // onbekende "artiest" (of één los woord) zijn omgedraaid.
     else if (r.artiesten.length === 1 && (!isBekend(r.artiesten[0]) || !/\s/.test(r.artiesten[0])) && /^[^,]+(, [^,]+)+ (&|en) [^,]+$/.test(r.titel)) {
       [r.titel, r.artiesten] = [r.artiesten[0], opgeschoondeArtiesten([r.titel])];
     }
     // Een rolverdeling als titel ("Paul de Leeuw, Annick Boer e.a.") betekent: de "artiest" is de titel.
-    if (r.genre !== "theaterkomedie" && !/^(komedie|blijspel|klucht)\b/i.test(r.titel) && r.artiesten.length === 1 && /(,.*,|\be\.a\.?$|\bea$)/i.test(r.titel)) {
+    if (r.genre !== "komedie" && !/^(komedie|blijspel|klucht)\b/i.test(r.titel) && r.artiesten.length === 1 && /(,.*,|\be\.a\.?$|\bea$)/i.test(r.titel)) {
       r.titel = r.artiesten[0];
       r.artiesten = [];
     }
@@ -531,7 +531,7 @@ if (Object.keys(ZAAL_SAMEN).length) {
 }
 
 // 2c-2. Toneel: hetzelfde stuk dat toch op twee plekken terechtkwam (andere zaallabels of spelers),
-// samenvoegen tot één voorstelling. Alleen als een van de twee theaterkomedie is en de spelers niet botsen.
+// samenvoegen tot één voorstelling. Alleen als een van de twee komedie is en de spelers niet botsen.
 {
   const opTitel = new Map();
   for (const v of voorstellingen) {
@@ -539,7 +539,7 @@ if (Object.keys(ZAAL_SAMEN).length) {
     if (!opTitel.has(k)) opTitel.set(k, []);
     opTitel.get(k).push(v);
   }
-  const komisch = (v) => v.genre === "theaterkomedie" || genreStemmen.get(v.id)?.theaterkomedie;
+  const komisch = (v) => v.genre === "komedie" || genreStemmen.get(v.id)?.komedie;
   for (const groep of opTitel.values()) {
     if (groep.length < 2 || !groep.some(komisch)) continue;
     groep.sort((a, b) => b.artiesten.length - a.artiesten.length);
@@ -562,13 +562,13 @@ if (Object.keys(ZAAL_SAMEN).length) {
 }
 
 // 2d. Genre volgens de meeste zalen (zie genreStemmen); genres die ook vaak genoemd worden, gaan naar ookGenres. Bij een gelijke stand blijft het huidige genre,
-// anders gaat theaterkomedie voor. Zonder stemmen (alleen via speellijsten) blijft het genre zoals het was.
+// anders gaat komedie voor. Zonder stemmen (alleen via speellijsten) blijft het genre zoals het was.
 // Een stuk zonder artiest hoort bij de zaal van zijn eerste speeldatum.
 let genreGewijzigd = 0;
 for (const v of voorstellingen) {
   const st = genreStemmen.get(v.id);
   if (st && Object.keys(st).length) {
-    const voorkeur = (g) => (g === v.genre ? 2 : g === "theaterkomedie" ? 1 : 0);
+    const voorkeur = (g) => (g === v.genre ? 2 : g === "komedie" ? 1 : 0);
     const [beste] = Object.entries(st).map(([g, zalen]) => [g, zalen.size]).sort((a, b) => b[1] - a[1] || voorkeur(b[0]) - voorkeur(a[0]) || a[0].localeCompare(b[0]));
     if (beste[0] !== v.genre) { v.genre = beste[0]; genreGewijzigd++; }
     // Ook genres: wat minstens een vijfde van de zalen noemt (en minstens twee zalen, behalve bij vier zalen of minder), komt erbij

@@ -52,8 +52,8 @@ const REGELS = [
   // Het label "Cabaret/Kleinkunst" (o.a. De Kampanje) is cabaret.
   ["cabaret", /cabaret\s*[/&]\s*kleinkunst/],
   ["kleinkunst", /kleinkunst/],
-  // Toneel met humor ("Toneel | Komedie", "Toneel, humor") is theaterkomedie; gewoon toneel niet.
-  ["theaterkomedie", /toneel.*\b(humor|komedie|comedy|blijspel|klucht)|\b(humor|komedie|comedy|blijspel|klucht).*toneel/],
+  // Toneel met humor ("Toneel | Komedie", "Toneel, humor") is komedie; gewoon toneel niet.
+  ["komedie", /toneel.*\b(humor|komedie|comedy|blijspel|klucht)|\b(humor|komedie|comedy|blijspel|klucht).*toneel/],
   // Een vaag label dat cabaret en comedy niet uit elkaar houdt ("Cabaret & comedy", "Humor") geeft
   // "comedy": wel humor, maar geen keuze tussen cabaret en stand-up. Zo'n stem telt bij het genre van de
   // voorstelling niet mee (samenvoegen.mjs, stap 2d); een nieuwe voorstelling wordt dan eerst cabaret.
@@ -61,7 +61,7 @@ const REGELS = [
   // "Cabaret & komedie" is cabaret; alleen "comedy" zonder cabaret is stand-up.
   ["cabaret", /cabaret/],
   // Komedie, blijspel en klucht. "De Kleine Komedie" is een zaalnaam, geen genre.
-  ["theaterkomedie", /(?<!kleine )komedie|blijspel|klucht/],
+  ["komedie", /(?<!kleine )komedie|blijspel|klucht/],
   ["stand-up", /comedy/],
 ];
 export function herkenGenre(...teksten) {

@@ -19,7 +19,7 @@ export const GENRES = {
   cabaret: "Cabaret",
   "stand-up": "Stand-up",
   oudejaarsconference: "Oudejaarsconference",
-  theaterkomedie: "Theaterkomedie",
+  komedie: "Komedie",
   "open-mic": "Open mic",
   improvisatie: "Improvisatie",
   festival: "Festival",
