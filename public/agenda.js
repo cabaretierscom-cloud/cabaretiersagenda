@@ -309,7 +309,7 @@
       return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-genre="${g.genre}" data-status="${g.status}"${inAgenda}>
       <div class="date"><b>${d(g.datum).getDate()}</b><small>${fKort.format(d(g.datum)).replace(".", "")}${g.tijd ? " " + g.tijd : ""}</small></div>
       <div class="main"><span class="swatch" style="${kleur};background:var(--bg)" aria-hidden="true"></span><div class="main-text"><span class="artist">${artiesten}</span><span class="show">${show}${g.soort ? ` <span class="pill">${esc(g.soort)}</span>` : ""}</span></div></div>
-      <div class="venue"><a href="/theaters/${zid}/">${esc(znaam)}</a><span><a href="/plaatsen/${pid}/">${esc(plaats)}</a>, ${esc(land)}</span></div>
+      <div class="venue"><a href="/theaters/${zid}/">${esc(znaam)}</a><span><a href="/theaters-in-${pid}/">${esc(plaats)}</a>, ${esc(land)}</span></div>
       <div class="side">${status}<div class="knoppen">${ticket}</div></div>
     </article>`;
     }

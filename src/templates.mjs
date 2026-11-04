@@ -20,6 +20,8 @@ export const maandId = (m) => `${fmt.monthYear(m + "-01").replace(" ", "-")}`;
 // Webadres-vriendelijke naam van een plaats: "Den Haag" -> "den-haag".
 export const plaatsId = (p) =>
   String(p).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+// Webadres van een plaatspagina: "Den Haag" -> "/theaters-in-den-haag/" (vroeger /plaatsen/den-haag/; .htaccess stuurt door).
+export const plaatsPad = (p) => `/theaters-in-${plaatsId(p)}/`;
 
 export const SITE = {
   name: "Cabaretiers.com",
@@ -148,7 +150,7 @@ export function createTemplates(db) {
     ["Theaters", "/theaters/", "Alle theaters", ["kleine-komedie", "comedy-cafe-amsterdam", "stadsschouwburg-groningen", "parktheater-eindhoven", "stadsschouwburg-utrecht"]
       .filter((id) => T.has(id) && db.gigsForTheater(id).length).map((id) => [T.get(id).naam, `/theaters/${id}/`])],
     ["Plaatsen", "/plaatsen/", "Alle plaatsen", ["Rotterdam", "Amsterdam", "Eindhoven", "Den Haag", "Utrecht"]
-      .filter((p) => up.some((g) => T.get(g.theater).plaats === p)).map((p) => [p, `/plaatsen/${plaatsId(p)}/`])],
+      .filter((p) => up.some((g) => T.get(g.theater).plaats === p)).map((p) => [p, plaatsPad(p)])],
     ["Genres", "/genres/", "Alle genres", GENRE_PAGINAS.slice(0, 5).map((g) => [GENRE_INFO[g].kop, `/genres/${g}/`])],
   ];
   return `<nav class="footer-links" aria-label="Snel naar">${FOOTER_LINKS.map(([kop, pad, alle, links]) => `<div>
@@ -281,7 +283,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
           <span class="show">${showArtist && !v.artiesten.length ? esc(t.naam) : (echteTitel(g.voorstelling) ? showLink(g.voorstelling, esc(echteTitel(g.voorstelling))) : esc(showArtist ? "" : v.titel))}${g.soort ? ` <span class="pill">${esc(g.soort)}</span>` : ""}</span>
         </div>
       </div>
-      <div class="venue">${showVenue ? `<a href="/theaters/${t.id}/">${esc(t.naam)}</a><span><a href="/plaatsen/${plaatsId(t.plaats)}/">${esc(t.plaats)}</a>, ${LANDEN[t.land]}</span>` : `<span>${esc(GENRES[v.genre])}</span>`}</div>
+      <div class="venue">${showVenue ? `<a href="/theaters/${t.id}/">${esc(t.naam)}</a><span><a href="${plaatsPad(t.plaats)}">${esc(t.plaats)}</a>, ${LANDEN[t.land]}</span>` : `<span>${esc(GENRES[v.genre])}</span>`}</div>
       <div class="side">${statusLabel(g)}<div class="knoppen">${ticketKnop(g)}</div></div>
     </article>`;
   }
@@ -507,7 +509,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // Zijwaartse rij met de plaatsen met de meeste voorstellingen (/plaatsen/ en de homepage).
   function plaatsNav() {
     return `<nav class="month-nav stad-nav" aria-label="Plaatsen met de meeste voorstellingen">${[...plaatsen].sort((x, y) => perPlaats(y).length - perPlaats(x).length || x.localeCompare(y, "nl")).slice(0, 15).map((p) =>
-      `<a href="/plaatsen/${plaatsId(p)}/"><b>${esc(p)}</b><span>${plural(perPlaats(p).length, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>`;
+      `<a href="${plaatsPad(p)}"><b>${esc(p)}</b><span>${plural(perPlaats(p).length, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>`;
   }
 
   function maandNav(huidig) {
@@ -828,7 +830,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       return `<div><h2>${LANDEN[land]}</h2><ul class="venue-list">${items.map((p) => {
         const zalenHier = zalenMetData.filter((t) => t.plaats === p), zalen = zalenHier.length;
         // Zoeken kan op de plaats én op de zalen ("Kattendans" vindt Bergeijk).
-        return `<li data-zoek="${esc([p, ...zalenHier.map((t) => t.naam)].join(" ").toLowerCase())}"><a href="/plaatsen/${plaatsId(p)}/"><span><span class="vn">${esc(p)}</span><span class="vc">${plural(zalen, "zaal", "zalen")}</span></span><span class="vk">${plural(perPlaats(p).length, "voorstelling", "voorstellingen")}</span></a></li>`;
+        return `<li data-zoek="${esc([p, ...zalenHier.map((t) => t.naam)].join(" ").toLowerCase())}"><a href="${plaatsPad(p)}"><span><span class="vn">${esc(p)}</span><span class="vc">${plural(zalen, "zaal", "zalen")}</span></span><span class="vk">${plural(perPlaats(p).length, "voorstelling", "voorstellingen")}</span></a></li>`;
       }).join("")}</ul></div>`;
     }).join("");
     const body = `<section class="block wrap" aria-labelledby="t">
@@ -843,7 +845,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div class="venues" id="plaatsenlijst">${kolommen}</div>
       <p class="empty" id="plaatsen-leeg" hidden>Geen plaats of zaal gevonden met deze naam.</p>
     </section>`;
-    return layout({ title: "Plaatsen", description: "Cabaret en comedy per plaats in Nederland en België.", path: "/plaatsen/", section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"]], hoofd: lijstLd(plaatsen.map((p) => [p, `/plaatsen/${plaatsId(p)}/`])) } });
+    return layout({ title: "Plaatsen", description: "Cabaret en comedy per plaats in Nederland en België.", path: "/plaatsen/", section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"]], hoofd: lijstLd(plaatsen.map((p) => [p, plaatsPad(p)])) } });
   }
 
   // ---------- Uitgelicht (betaalde vermelding, data/uitgelicht.json) ----------
@@ -910,7 +912,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     }
     return uit;
   })();
-  const dagPad = (soort, p) => p ? `/plaatsen/${plaatsId(p)}/${soort}/` : `/${soort}/`;
+  const dagPad = (soort, p) => p ? `${plaatsPad(p)}${soort}/` : `/${soort}/`;
 
   function dagGroepen(list, opts) {
     const groepen = new Map();
@@ -942,16 +944,16 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ? `Zin in een avond lachen? Hier staan alle cabaret- en comedyvoorstellingen van vandaag${waar}, met de tijd, de zaal en een link naar de kaartverkoop. Hieronder staat ook alvast morgen.`
         : `Alle cabaret- en comedyvoorstellingen${waar} van vrijdag tot en met zondag, van theatercabaret tot stand-up in comedyclubs, met de tijd, de zaal en een link naar de kaartverkoop.`}
         Kaarten koop je bij het theater; controleer daar ook of een voorstelling is uitverkocht.</p>
-      <nav class="dag-nav" aria-label="Meer">${[andereLink, p ? `<a href="/plaatsen/${plaatsId(p)}/">Alle voorstellingen in ${esc(p)}</a>` : `<a href="/agenda/">De hele agenda</a>`].filter(Boolean).join("")}</nav>
+      <nav class="dag-nav" aria-label="Meer">${[andereLink, p ? `<a href="${plaatsPad(p)}">Alle voorstellingen in ${esc(p)}</a>` : `<a href="/agenda/">De hele agenda</a>`].filter(Boolean).join("")}</nav>
       ${p ? uitgelichtBlok("plaats", p) : uitgelichtBlok("agenda")}
       ${filters(list)}
       <div id="gigs">${dagGroepen(list)}</div>
       ${leegBlok}
-      <div class="empty" id="dag-leeg"${list.length ? " hidden" : ""}><p>${avond ? "Vanavond" : "Dit weekend"} staat er${waar} niets in de agenda. Bekijk <a href="${p ? `/plaatsen/${plaatsId(p)}/` : "/agenda/"}">de eerstvolgende voorstellingen</a>.</p></div>
+      <div class="empty" id="dag-leeg"${list.length ? " hidden" : ""}><p>${avond ? "Vanavond" : "Dit weekend"} staat er${waar} niets in de agenda. Bekijk <a href="${p ? plaatsPad(p) : "/agenda/"}">de eerstvolgende voorstellingen</a>.</p></div>
       ${steden.length ? `<h2 class="sub-head">${esc(hoofdletter(wanneer))} in andere steden</h2><p class="city-chips">${steden.join("")}</p>` : ""}
     </section>`;
     const desc = kort(`${titel}: ${plural(nVandaag, "voorstelling", "voorstellingen")} op ${periode}${list.length ? `, met ${opsomming([...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].slice(0, 3).map((a) => A.get(a).naam))}` : ""}. Met tijden, zalen en tickets.`);
-    const kruimels = p ? [["Plaatsen", "/plaatsen/"], [p, `/plaatsen/${plaatsId(p)}/`], [hoofdletter(wanneer), dagPad(soort, p)]] : [[hoofdletter(wanneer), dagPad(soort)]];
+    const kruimels = p ? [["Plaatsen", "/plaatsen/"], [p, plaatsPad(p)], [hoofdletter(wanneer), dagPad(soort, p)]] : [[hoofdletter(wanneer), dagPad(soort)]];
     return layout({ title: titel, description: desc, path: dagPad(soort, p), section: "agenda", body, schema: { type: "CollectionPage", kruimels, ...(p ? { over: plaatsLd(p) } : {}), extra: eventsLd(list) } });
   }
 
@@ -1002,7 +1004,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </div>`;
     const artiestenHier = [...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].map((a) => A.get(a).naam);
     const desc = kort(`Cabaret en theater in ${p}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(zalen.length, "zaal", "zalen")}${artiestenHier.length ? `, met ${artiestenHier.slice(0, 3).join(", ")}${artiestenHier.length > 3 ? " en meer" : ""}` : ""}. Eerstvolgende op ${fmt.full(list[0].datum)}.`);
-    return layout({ title: `Cabaret en theater in ${p}`, description: desc, path: `/plaatsen/${plaatsId(p)}/`, section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"], [p, `/plaatsen/${plaatsId(p)}/`]], over: plaatsLd(p), extra: [...eventsLd(list), ...(list.length ? [faqLd(plaatsVragen(p, list), `/plaatsen/${plaatsId(p)}/`)] : [])] } });
+    return layout({ title: `Cabaret en theater in ${p}`, description: desc, path: plaatsPad(p), section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"], [p, plaatsPad(p)]], over: plaatsLd(p), extra: [...eventsLd(list), ...(list.length ? [faqLd(plaatsVragen(p, list), plaatsPad(p))] : [])] } });
   }
 
   // Zoekveld, letters en de lijst van A tot Z (public/agenda.js filtert op #f-artiest en #az).
@@ -1225,7 +1227,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     ? `op ${fmt.long(list[0].datum)}`
     : `van ${fmt.full(list[0].datum)} tot en met ${fmt.full(list.at(-1).datum)}`;
   const theaterLink = (id) => `<a href="/theaters/${id}/">${esc(T.get(id).naam)}</a>`;
-  const plaatsLink = (p) => `<a href="/plaatsen/${plaatsId(p)}/">${esc(p)}</a>`;
+  const plaatsLink = (p) => `<a href="${plaatsPad(p)}">${esc(p)}</a>`;
   const bijzonder = (list, soort) => list.filter((g) => g.soort === soort && g.status !== "geannuleerd");
   const uitverkochtZin = (list) => {
     const u = list.filter((g) => g.status === "uitverkocht").length;
@@ -1355,8 +1357,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     if (tekst) zinnen.push(`<p>${tekst}</p>`);
     const buren = zalenMetData.filter((x) => x.plaats === t.plaats && x.id !== t.id);
     zinnen.push(`<p>${buren.length
-      ? `Meer cabaret en comedy in ${esc(t.plaats)} vind je bij ${opsomming(buren.slice(0, 5).map((x) => theaterLink(x.id)))}, of bekijk <a href="/plaatsen/${plaatsId(t.plaats)}/">alle voorstellingen in ${esc(t.plaats)}</a>.`
-      : `Bekijk ook <a href="/plaatsen/${plaatsId(t.plaats)}/">alle voorstellingen in ${esc(t.plaats)}</a> of de <a href="/agenda/">volledige agenda</a>.`} ${kaartenZin}</p>`);
+      ? `Meer cabaret en comedy in ${esc(t.plaats)} vind je bij ${opsomming(buren.slice(0, 5).map((x) => theaterLink(x.id)))}, of bekijk <a href="${plaatsPad(t.plaats)}">alle voorstellingen in ${esc(t.plaats)}</a>.`
+      : `Bekijk ook <a href="${plaatsPad(t.plaats)}">alle voorstellingen in ${esc(t.plaats)}</a> of de <a href="/agenda/">volledige agenda</a>.`} ${kaartenZin}</p>`);
     return `<section class="seo-tekst prose" aria-labelledby="over-titel">
         <h2 id="over-titel">Cabaret en comedy in ${esc(t.naam)}</h2>
         ${zinnen.join("\n        ")}
@@ -1404,7 +1406,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     vragen.push([`Waar ligt ${t.naam}?`, `${naam} is ${soort ? `een ${soort} ` : ""}in ${plaatsLink(t.plaats)}, ${LANDEN[t.land]}.${t.website ? ` Het adres en de bereikbaarheid staan op <a href="${esc(metUtm(t.website))}" rel="noopener">de website van ${naam}</a>.` : ""}`]);
     vragen.push([`Hoe koop ik kaarten voor ${t.naam}?`, `Kaarten koop je bij ${naam} zelf. Klik bij een voorstelling op de knop <em>Tickets</em>: die opent de speellijst van het theater, waar je kaarten kunt bestellen.`]);
     const buren = zalenMetData.filter((x) => x.plaats === t.plaats && x.id !== t.id);
-    if (buren.length) vragen.push([`Waar is er nog meer cabaret in ${t.plaats}?`, `Ook in ${opsomming(buren.slice(0, 5).map((x) => theaterLink(x.id)))}. Alle voorstellingen staan bij <a href="/plaatsen/${plaatsId(t.plaats)}/">cabaret en comedy in ${esc(t.plaats)}</a>.`]);
+    if (buren.length) vragen.push([`Waar is er nog meer cabaret in ${t.plaats}?`, `Ook in ${opsomming(buren.slice(0, 5).map((x) => theaterLink(x.id)))}. Alle voorstellingen staan bij <a href="${plaatsPad(t.plaats)}">cabaret en comedy in ${esc(t.plaats)}</a>.`]);
     return vragen;
   }
 
@@ -1876,7 +1878,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const steden = new Set(list.map((g) => T.get(g.theater).plaats)).size;
     const body = `<div class="detail-hero" style="${ink(festivalKleur(f))}"><div class="wrap">
         <h1>${esc(f.naam)}</h1>
-        <p>Cabaretfestival uit ${plaatsen.includes(f.plaats) ? `<a href="/plaatsen/${plaatsId(f.plaats)}/">${esc(f.plaats)}</a>` : esc(f.plaats)}. ${list.length ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.` : "Op dit moment staan er geen speeldata in de agenda."}${f.website ? ` <a href="${esc(metUtm(f.website))}" rel="noopener">Website van het festival</a>` : ""}</p>
+        <p>Cabaretfestival uit ${plaatsen.includes(f.plaats) ? `<a href="${plaatsPad(f.plaats)}">${esc(f.plaats)}</a>` : esc(f.plaats)}. ${list.length ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.` : "Op dit moment staan er geen speeldata in de agenda."}${f.website ? ` <a href="${esc(metUtm(f.website))}" rel="noopener">Website van het festival</a>` : ""}</p>
       </div></div>
       <div class="wrap detail-body">
         ${list.length > 12 ? filters(list, { maand: true }) : ""}
@@ -2004,7 +2006,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const kolommen = Object.keys(LANDEN).map((land) => {
       const steden = [...new Set(zalenMetData.filter((t) => t.land === land).map((t) => t.plaats))].sort((a, b) => a.localeCompare(b, "nl"));
       if (!steden.length) return "";
-      return `<div><h2>${LANDEN[land]}</h2>${steden.map((p) => `<div class="stad"><h3 class="city-head"><a href="/plaatsen/${plaatsId(p)}/">${esc(p)}</a></h3><ul class="venue-list">${zalenMetData.filter((t) => t.plaats === p).sort((a, b) => a.naam.localeCompare(b.naam, "nl")).map((t) => {
+      return `<div><h2>${LANDEN[land]}</h2>${steden.map((p) => `<div class="stad"><h3 class="city-head"><a href="${plaatsPad(p)}">${esc(p)}</a></h3><ul class="venue-list">${zalenMetData.filter((t) => t.plaats === p).sort((a, b) => a.naam.localeCompare(b.naam, "nl")).map((t) => {
         const n = db.gigsForTheater(t.id).length;
         return `<li data-zoek="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}"><a href="/theaters/${t.id}/"><span><span class="vn">${esc(t.naam)}</span>${t.soort !== "theater" ? `<span class="vc">${esc(t.soort)}</span>` : ""}</span><span class="vk">${plural(n, "voorstelling", "voorstellingen")}</span></a></li>`;
       }).join("")}</ul></div>`).join("")}</div>`;
@@ -2035,7 +2037,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const body = `<div class="detail-hero" style="--bg:var(--riso-blue);--fg:#FFF"><div class="wrap${t.foto ? " hero-met-foto" : ""}">
         <div>
         <h1>${esc(t.naam)}</h1>
-        <p><a href="/plaatsen/${plaatsId(t.plaats)}/">${esc(t.plaats)}</a>, ${LANDEN[t.land]}. ${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.` : "Op dit moment staan er geen voorstellingen gepland."}${t.website ? ` <a href="${esc(metUtm(t.website))}" rel="noopener">Website van het theater</a>` : ""}</p>
+        <p><a href="${plaatsPad(t.plaats)}">${esc(t.plaats)}</a>, ${LANDEN[t.land]}. ${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.` : "Op dit moment staan er geen voorstellingen gepland."}${t.website ? ` <a href="${esc(metUtm(t.website))}" rel="noopener">Website van het theater</a>` : ""}</p>
         </div>
         ${t.foto ? fotoHtml(t, "theater-foto") : ""}
       </div></div>
@@ -2225,7 +2227,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <td class="ga-num"><span class="ga-celbalk" style="width:${((3.5 * r.weergaven) / max).toFixed(2)}rem"></span>${getal(r.weergaven)}</td>${metBezoekers ? `<td class="ga-num ga-smal-weg">${getal(r.bezoekers)}</td>` : ""}</tr>`).join("") || `<tr><td colspan="3" class="mis">Nog geen weergaven.</td></tr>`}</tbody></table></div>`;
     };
     const paginas = tabel("Pagina", (ga.paginas || []).map((p) => ({ naam: `<a href="${esc(p.pagePath)}">${esc(p.pagePath)}</a>`, weergaven: p.screenPageViews, bezoekers: p.activeUsers })), true);
-    // Weergaven per id opgeteld: /artiesten/<id>/ telt ook de voorstellingspagina's eronder mee, /plaatsen/<id>/ ook vanavond en dit weekend.
+    // Weergaven per id opgeteld: /artiesten/<id>/ telt ook de voorstellingspagina's eronder mee, /theaters-in-<plaats>/ (en het oude /plaatsen/<plaats>/) ook vanavond en dit weekend.
     const perId = (rijen) => {
       const m = new Map();
       for (const r of rijen || []) {
@@ -2245,7 +2247,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     }));
     const plaatsNaam = new Map([...T.values()].map((th) => [plaatsId(th.plaats), th.plaats]));
     const metPagina = new Set(plaatsen);
-    const plaatsTabel = tabel("Plaats", perId(ga.plaatsen).map(([id, w]) => ({ naam: link(`/plaatsen/${id}/`, plaatsNaam.get(id) || id, metPagina.has(plaatsNaam.get(id))), weergaven: w })));
+    const plaatsRijen = (ga.plaatsen || []).map((r) => ({ ...r, pagePath: r.pagePath.replace(/^\/theaters-in-([^/]+)/, "/plaatsen/$1") }));
+    const plaatsTabel = tabel("Plaats", perId(plaatsRijen).map(([id, w]) => ({ naam: link(`/theaters-in-${id}/`, plaatsNaam.get(id) || id, metPagina.has(plaatsNaam.get(id))), weergaven: w })));
 
     const body = `<section class="block wrap dashboard" aria-labelledby="t">
       ${kop}
@@ -2275,6 +2278,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   return {
     controlePagina, dashboardPagina, dashboardPad,
     home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, genrePagina, genreIndex, GENRE_PAGINAS, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
-    voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, maandId, voorstellingPaden: voorstellingPad,
+    voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, plaatsPad, maandId, voorstellingPaden: voorstellingPad,
   };
 }

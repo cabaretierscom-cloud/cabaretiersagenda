@@ -28,7 +28,7 @@
       window.gtag("event", "ticket_klik", {
         theater: d.theater, plaats: d.plaats, artiest: d.artiest || d.voorstelling, voorstelling: d.voorstelling,
         genre: d.genre, speeldatum: d.speeldatum, knop: a.classList.contains("ghost") ? "meer info" : "tickets",
-        pagina_type: location.pathname.split("/")[1] || "home", link_domain: domein,
+        pagina_type: (location.pathname.split("/")[1] || "home").replace(/^theaters-in-.*/, "plaatsen"), link_domain: domein,
       });
     }, true);
   }

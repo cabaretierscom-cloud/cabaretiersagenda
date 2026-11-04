@@ -102,6 +102,12 @@ async function dashboardPeriode(token, bereik) {
     });
     uit[naam] = alsRijen(r);
   }
+  // Plaatspagina's heten sinds november 2026 /theaters-in-<plaats>/; de oude /plaatsen/<plaats>/ tellen ook mee.
+  uit.plaatsen.push(...alsRijen(await rapport(token, {
+    dimensions: [{ name: "pagePath" }], metrics: [{ name: "screenPageViews" }], dateRanges: bereik,
+    dimensionFilter: { filter: { fieldName: "pagePath", stringFilter: { matchType: "BEGINS_WITH", value: "/theaters-in-" } } },
+    orderBys: [{ metric: { metricName: "screenPageViews" }, desc: true }], limit: 1000,
+  })));
   uit.overzicht = uit.overzicht.map((d) => ({ ...d, date: d.date.replace(/^(\d{4})(\d\d)(\d\d)$/, "$1-$2-$3") }));
   return uit;
 }
