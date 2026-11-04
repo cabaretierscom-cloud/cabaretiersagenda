@@ -343,12 +343,13 @@
 
     // Stand van de filters (ook in het webadres, zodat je een zoekopdracht kunt delen).
     const params = new URLSearchParams(location.search);
-    const stand = { q: params.get("q") || "", genre: params.get("genre") || "", uitverkocht: params.get("uitverkocht") === "1" ? "1" : "" };
+    // soort (zoals try-out) heeft geen eigen veld: alleen via het adres, vanaf /agenda/try-outs/.
+    const stand = { q: params.get("q") || "", genre: params.get("genre") || "", uitverkocht: params.get("uitverkocht") === "1" ? "1" : "", soort: params.get("soort") || "" };
     if (q) q.value = stand.q;
     const genre = genreKeuze((w) => { stand.genre = w.join(","); pasToe(); });
     stand.genre = genre ? genre.zet(leesGenres(stand.genre)).join(",") : "";
     if (vinkUit) vinkUit.checked = stand.uitverkocht === "1";
-    const gefilterd = () => Boolean(stand.q.trim() || stand.genre || stand.uitverkocht);
+    const gefilterd = () => Boolean(stand.q.trim() || stand.genre || stand.uitverkocht || stand.soort);
 
     let lijst = [], weken = [], getoond = 0;
     // Groepeer per week (maandag t/m zondag); de eerste week begint bij de eerste voorstelling.
@@ -398,7 +399,7 @@
       const naald = kaal(stand.q.trim()), kies = new Set(leesGenres(stand.genre));
       const inGenre = (g) => !kies.size || g.genres.some((x) => kies.has(x));
       if (genre) genre.aantal(kies.size ? data.rijen.filter((g) => g.datum >= today && inGenre(g)).length : genre.totaal);
-      lijst = data.rijen.filter((g) => g.datum >= today && (!naald || g.zoek.includes(naald)) && inGenre(g) && (!stand.uitverkocht || g.status !== "uitverkocht"));
+      lijst = data.rijen.filter((g) => g.datum >= today && (!naald || g.zoek.includes(naald)) && inGenre(g) && (!stand.soort || g.soort === stand.soort) && (!stand.uitverkocht || g.status !== "uitverkocht"));
       weken = perWeek(lijst); getoond = 0; ronde++;
       alles.innerHTML = "";
       // Met een zoekopdracht of filter meteen alle resultaten (in porties, zie toonRest); zonder filter
@@ -436,7 +437,7 @@
     if (vinkUit) vinkUit.addEventListener("change", () => { stand.uitverkocht = vinkUit.checked ? "1" : ""; pasToe(); });
     form?.addEventListener("submit", (e) => e.preventDefault());
     document.getElementById("reset")?.addEventListener("click", () => {
-      stand.q = stand.genre = stand.uitverkocht = "";
+      stand.q = stand.genre = stand.uitverkocht = stand.soort = "";
       if (q) q.value = ""; if (genre) genre.zet([]); if (vinkUit) vinkUit.checked = false;
       pasToe();
     });
