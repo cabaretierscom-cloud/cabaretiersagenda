@@ -561,7 +561,7 @@ if (Object.keys(ZAAL_SAMEN).length) {
   });
 }
 
-// 2d. Genre volgens de meeste zalen (zie genreStemmen). Bij een gelijke stand blijft het huidige genre,
+// 2d. Genre volgens de meeste zalen (zie genreStemmen); genres die ook vaak genoemd worden, gaan naar ookGenres. Bij een gelijke stand blijft het huidige genre,
 // anders gaat theaterkomedie voor. Zonder stemmen (alleen via speellijsten) blijft het genre zoals het was.
 // Een stuk zonder artiest hoort bij de zaal van zijn eerste speeldatum.
 let genreGewijzigd = 0;
@@ -571,6 +571,11 @@ for (const v of voorstellingen) {
     const voorkeur = (g) => (g === v.genre ? 2 : g === "theaterkomedie" ? 1 : 0);
     const [beste] = Object.entries(st).map(([g, zalen]) => [g, zalen.size]).sort((a, b) => b[1] - a[1] || voorkeur(b[0]) - voorkeur(a[0]) || a[0].localeCompare(b[0]));
     if (beste[0] !== v.genre) { v.genre = beste[0]; genreGewijzigd++; }
+    // Ook genres: wat minstens een vijfde van de zalen noemt (en minstens twee zalen, behalve bij vier zalen of minder), komt erbij
+    // ("cabaret" met ook "stand-up"). Zonder stemmen blijven de ookGenres zoals ze waren.
+    const totaal = new Set(Object.values(st).flatMap((z) => [...z])).size;
+    const ook = Object.entries(st).filter(([g, zalen]) => g !== v.genre && zalen.size >= totaal / 5 && (zalen.size >= 2 || totaal <= 4)).map(([g]) => g).sort();
+    if (ook.length) v.ookGenres = ook; else delete v.ookGenres;
   }
   if (!v.artiesten.length && !theaterOpId.has(v.theater)) v.theater = speeldata.find((s) => s.voorstelling === v.id)?.theater;
 }

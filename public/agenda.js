@@ -258,6 +258,32 @@
     }));
   }
 
+  // ---------- Genrekeuze (#f-genre) ----------
+  // Een uitklapvak met vinkjes: meerdere genres tegelijk, in het adres als ?genre=cabaret,stand-up.
+  // In de balk staan de gekozen genres en het aantal voorstellingen dat erbij hoort.
+  const leesGenres = (t) => (t || "").split(",").map((x) => x.trim()).filter(Boolean);
+  const adres = (p) => p.toString().replace(/%2C/g, ",");
+  function genreKeuze(bijWijziging) {
+    const el = document.getElementById("f-genre");
+    if (!el) return null;
+    const vakjes = [...el.querySelectorAll('input[type="checkbox"]')];
+    const tekst = el.querySelector(".keuze-tekst"), teller = el.querySelector("summary .keuze-n");
+    const waarde = () => vakjes.filter((v) => v.checked).map((v) => v.value);
+    const label = () => {
+      const gekozen = vakjes.filter((v) => v.checked);
+      tekst.textContent = gekozen.length ? gekozen.map((v) => v.nextElementSibling.textContent).join(", ") : "Alle genres";
+      el.classList.toggle("gekozen", gekozen.length > 0);
+    };
+    vakjes.forEach((v) => v.addEventListener("change", () => { label(); bijWijziging(waarde()); }));
+    document.addEventListener("click", (e) => { if (el.open && !el.contains(e.target)) el.open = false; });
+    el.addEventListener("keydown", (e) => { if (e.key === "Escape" && el.open) { el.open = false; el.querySelector("summary").focus(); } });
+    return {
+      zet(lijst) { const s = new Set(lijst); vakjes.forEach((v) => (v.checked = s.has(v.value))); label(); return waarde(); },
+      aantal(n) { teller.textContent = n.toLocaleString("nl-NL"); },
+      totaal: +el.dataset.totaal,
+    };
+  }
+
   // ---------- /agenda/: alle voorstellingen, eerst een week, dan de rest ----------
   // De pagina bevat de eerste week. De rest staat in /agenda/alles.js (JSON); "Toon alle volgende voorstellingen" voegt
   // in één keer de rest toe, en zoeken of filteren gebeurt in alle voorstellingen. De rijen hebben dezelfde
@@ -266,7 +292,7 @@
   if (alles) {
     const form = document.getElementById("filters");
     if (form) form.hidden = false;
-    const q = document.getElementById("f-q"), genre = document.getElementById("f-genre"), vinkUit = document.getElementById("f-uitverkocht");
+    const q = document.getElementById("f-q"), vinkUit = document.getElementById("f-uitverkocht");
     const regel = document.getElementById("result-line"), leeg = document.getElementById("empty");
     const laadMeer = document.getElementById("laad-meer"), laadKnop = document.getElementById("laad-week"), naarMaand = document.getElementById("naar-maand");
     const kaal = (t) => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -285,7 +311,7 @@
       data.rijen = j.r.map(([datum, tijd, vn, zn, status, soort, bron, opmerking]) => {
         const v = j.v[vn], z = j.z[zn];
         const namen = v[0].map((i) => j.a[i][1]);
-        return { datum, tijd, v, z, status, soort, bron, opmerking, genre: v[4], zoek: kaal([v[1], z[1], z[2], ...namen].join(" ")) };
+        return { datum, tijd, v, z, status, soort, bron, opmerking, genre: v[4], genres: [v[4], ...(v[6] || [])], zoek: kaal([v[1], z[1], z[2], ...namen].join(" ")) };
       });
       return data;
     }));
@@ -306,7 +332,7 @@
       // Zelfde gegevens voor de klikmeting als ticketData() in src/templates.mjs.
       const meet = ` data-theater="${esc(znaam)}" data-plaats="${esc(plaats)}" data-artiest="${esc(namen)}" data-voorstelling="${esc(titel)}" data-genre="${esc(g.genre)}" data-speeldatum="${g.datum}"`;
       const ticket = `<a class="btn tickets${kopen ? "" : " ghost"}" href="${esc(g.bron)}" target="_blank" rel="noopener nofollow"${meet}><span class="ticket-tekst">${kopen ? "Tickets" : "Meer info"}</span><span class="ticket-strook">${data.iconen.extern}</span><span class="visually-hidden">: ${esc(namen || titel)} op ${fVol.format(d(g.datum))} in ${esc(znaam)} (externe website, opent in een nieuw tabblad)</span></a>`;
-      return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-genre="${g.genre}" data-status="${g.status}"${inAgenda}>
+      return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-genre="${g.genres.join(" ")}" data-status="${g.status}"${inAgenda}>
       <div class="date"><b>${d(g.datum).getDate()}</b><small>${fKort.format(d(g.datum)).replace(".", "")}${g.tijd ? " " + g.tijd : ""}</small></div>
       <div class="main"><span class="swatch" style="${kleur};background:var(--bg)" aria-hidden="true"></span><div class="main-text"><span class="artist">${artiesten}</span><span class="show">${show}${g.soort ? ` <span class="pill">${esc(g.soort)}</span>` : ""}</span></div></div>
       <div class="venue"><a href="/theaters/${zid}/">${esc(znaam)}</a><span><a href="/theaters-in-${pid}/">${esc(plaats)}</a>, ${esc(land)}</span></div>
@@ -318,7 +344,8 @@
     const params = new URLSearchParams(location.search);
     const stand = { q: params.get("q") || "", genre: params.get("genre") || "", uitverkocht: params.get("uitverkocht") === "1" ? "1" : "" };
     if (q) q.value = stand.q;
-    if (genre) { genre.value = stand.genre; if (genre.value !== stand.genre) stand.genre = genre.value = ""; }
+    const genre = genreKeuze((w) => { stand.genre = w.join(","); pasToe(); });
+    stand.genre = genre ? genre.zet(leesGenres(stand.genre)).join(",") : "";
     if (vinkUit) vinkUit.checked = stand.uitverkocht === "1";
     const gefilterd = () => Boolean(stand.q.trim() || stand.genre || stand.uitverkocht);
 
@@ -364,11 +391,13 @@
     async function pasToe() {
       const p = new URLSearchParams();
       for (const [k, v] of Object.entries(stand)) if (v.trim()) p.set(k, v.trim());
-      history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
-      if (!gefilterd() && !data) return;
+      history.replaceState(null, "", p.toString() ? `?${adres(p)}` : location.pathname);
+      if (!gefilterd() && !data) { if (genre) genre.aantal(genre.totaal); return; }
       await haal();
-      const naald = kaal(stand.q.trim());
-      lijst = data.rijen.filter((g) => g.datum >= today && (!naald || g.zoek.includes(naald)) && (!stand.genre || g.genre === stand.genre) && (!stand.uitverkocht || g.status !== "uitverkocht"));
+      const naald = kaal(stand.q.trim()), kies = new Set(leesGenres(stand.genre));
+      const inGenre = (g) => !kies.size || g.genres.some((x) => kies.has(x));
+      if (genre) genre.aantal(kies.size ? data.rijen.filter((g) => g.datum >= today && inGenre(g)).length : genre.totaal);
+      lijst = data.rijen.filter((g) => g.datum >= today && (!naald || g.zoek.includes(naald)) && inGenre(g) && (!stand.uitverkocht || g.status !== "uitverkocht"));
       weken = perWeek(lijst); getoond = 0; ronde++;
       alles.innerHTML = "";
       // Met een zoekopdracht of filter meteen alle resultaten (in porties, zie toonRest); zonder filter
@@ -403,12 +432,11 @@
       q.addEventListener("focus", haal, { once: true });
       q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { stand.q = q.value; pasToe(); }, 200); });
     }
-    if (genre) genre.addEventListener("change", () => { stand.genre = genre.value; pasToe(); });
     if (vinkUit) vinkUit.addEventListener("change", () => { stand.uitverkocht = vinkUit.checked ? "1" : ""; pasToe(); });
     form?.addEventListener("submit", (e) => e.preventDefault());
     document.getElementById("reset")?.addEventListener("click", () => {
       stand.q = stand.genre = stand.uitverkocht = "";
-      if (q) q.value = ""; if (genre) genre.value = ""; if (vinkUit) vinkUit.checked = false;
+      if (q) q.value = ""; if (genre) genre.zet([]); if (vinkUit) vinkUit.checked = false;
       pasToe();
     });
     if (gefilterd()) pasToe(); else begin();
@@ -422,7 +450,7 @@
 
   const rows = [...document.querySelectorAll("#gigs .gig")].filter((r) => !r.hidden);
   const veld = (id) => document.getElementById(id);
-  const selects = { maand: veld("f-maand"), genre: veld("f-genre") };
+  const selects = { maand: veld("f-maand") };
   const q = veld("f-q");
   const vinkUit = veld("f-uitverkocht");
   const resultLine = veld("result-line");
@@ -439,6 +467,8 @@
   }
   if (q) q.value = state.q;
   if (vinkUit) vinkUit.checked = state.uitverkocht === "1";
+  const genre = genreKeuze((w) => { state.genre = w.join(","); apply(); });
+  if (genre) state.genre = genre.zet(leesGenres(params.get("genre"))).join(",");
 
   const telling = (shown) => shown === rows.length
     ? `${rows.length === 1 ? "1 voorstelling" : `Alle ${rows.length} voorstellingen`}`
@@ -448,12 +478,14 @@
   const zoekVeld = q?.dataset.veld || "zoek";
   const kaal = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   function apply() {
-    const needle = kaal(state.q.trim());
+    const needle = kaal(state.q.trim()), kies = new Set(leesGenres(state.genre));
+    const inGenre = (r) => !kies.size || (r.dataset.genre || "").split(" ").some((x) => kies.has(x));
+    if (genre) genre.aantal(kies.size ? rows.filter(inGenre).length : rows.length);
     let shown = 0;
     for (const r of rows) {
       const ok =
         (!state.maand || r.dataset.datum.startsWith(state.maand)) &&
-        (!state.genre || r.dataset.genre === state.genre) &&
+        inGenre(r) &&
         (!state.uitverkocht || r.dataset.status !== "uitverkocht") &&
         (!needle || kaal(r.dataset[zoekVeld] || "").includes(needle));
       r.hidden = !ok;
@@ -466,7 +498,7 @@
 
     const p = new URLSearchParams();
     for (const [k, v] of Object.entries(state)) if (v.trim()) p.set(k, v.trim());
-    const qs = p.toString();
+    const qs = adres(p);
     history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
   }
 
@@ -480,6 +512,7 @@
     Object.keys(state).forEach((k) => (state[k] = ""));
     if (q) q.value = "";
     Object.values(selects).forEach((el) => { if (el) el.value = ""; });
+    if (genre) genre.zet([]);
     if (vinkUit) vinkUit.checked = false;
     apply();
     if (q) q.focus();

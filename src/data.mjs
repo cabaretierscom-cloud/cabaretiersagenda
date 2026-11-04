@@ -167,6 +167,8 @@ export function loadData(dir, { today }) {
   }
   for (const v of voorstellingen) {
     if (!GENRES[v.genre]) errors.push(`voorstelling ${v.id}: onbekend genre "${v.genre}"`);
+    // Extra genres naast het hoofdgenre (een cabaretvoorstelling die ook stand-up is).
+    if (v.ookGenres !== undefined && (!Array.isArray(v.ookGenres) || v.ookGenres.some((g) => !GENRES[g] || g === v.genre))) errors.push(`voorstelling ${v.id}: ookGenres moet een lijst bekende genres zijn, zonder het hoofdgenre`);
     if (!Array.isArray(v.artiesten)) errors.push(`voorstelling ${v.id}: artiesten moet een lijst zijn`);
     // Een clubavond of open mic zonder vaste artiest hoort bij één zaal.
     if (!v.artiesten?.length && !T.has(v.theater)) errors.push(`voorstelling ${v.id}: geen artiesten en geen geldig theater`);
