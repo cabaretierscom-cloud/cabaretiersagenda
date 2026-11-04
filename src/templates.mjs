@@ -496,7 +496,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       <span class="label" id="f-genre-label">Genre</span>
       <details class="keuze" id="f-genre" data-totaal="${list.length}">
         <summary aria-describedby="f-genre-label"><span class="keuze-tekst">Alle genres</span><span class="keuze-n">${list.length.toLocaleString("nl-NL")}</span></summary>
-        <div class="keuze-lijst" role="group" aria-labelledby="f-genre-label">${genres.map((g) => { const n = list.filter((x) => heeftGenre(x, g)).length; return `<label><input type="checkbox" name="genre" value="${g}" data-n="${n}"><span>${GENRES[g]}</span><span class="keuze-n">${n.toLocaleString("nl-NL")}</span></label>`; }).join("")}</div>
+        <div class="keuze-lijst" role="group" aria-labelledby="f-genre-label">${genres.map((g) => [g, list.filter((x) => heeftGenre(x, g)).length]).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([g, n]) => { return `<label><input type="checkbox" name="genre" value="${g}" data-n="${n}"><span>${GENRES[g]}</span><span class="keuze-n">${n.toLocaleString("nl-NL")}</span></label>`; }).join("")}</div>
       </details>
     </div>` : ""}
     ${uitverkocht ? `<div class="field toggle-veld">
