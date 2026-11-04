@@ -1,7 +1,7 @@
 {
   "bron": "kunstmin",
   "naam": "Kunstmin",
-  "opgehaald": "2026-11-03",
+  "opgehaald": "2026-11-04",
   "theaters": [
     {
       "id": "kunstmin",
@@ -13,6 +13,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Woordgrapf"
+      ],
+      "titel": "de Nationale avond van de Woordgrap",
+      "genre": "cabaret",
+      "datum": "2027-10-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/woordgrapf-de-nationale-avond-van-de-woordgrap/"
+    },
     {
       "theater": "kunstmin",
       "artiesten": [
@@ -445,19 +458,6 @@
     {
       "theater": "kunstmin",
       "artiesten": [
-        "Jan Beuving"
-      ],
-      "titel": "Dekpunt",
-      "genre": "cabaret",
-      "datum": "2027-02-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kunstmin.nl/voorstellingen/jan-beuving-dekpunt/"
-    },
-    {
-      "theater": "kunstmin",
-      "artiesten": [
         "Jandino"
       ],
       "titel": "DE GROTE JUBILEUMSHOW - Jandino 20 jaar",
@@ -467,6 +467,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/jandino-de-grote-jubileumshow-jandino-20-jaar/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/jan-beuving-dekpunt/"
     },
     {
       "theater": "kunstmin",

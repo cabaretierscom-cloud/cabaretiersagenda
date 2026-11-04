@@ -1,7 +1,7 @@
 {
   "bron": "cultura",
   "naam": "Cultura Ede",
-  "opgehaald": "2026-11-03",
+  "opgehaald": "2026-11-04",
   "theaters": [
     {
       "id": "cultura-ede",
@@ -324,6 +324,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://cultura-ede.nl/agenda/jan-beuving-275855/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Nat. Theaterweekend"
+      ],
+      "titel": "Op Scherp",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/nationaal-theaterweekend-277008/"
     }
   ],
   "recensies": {}

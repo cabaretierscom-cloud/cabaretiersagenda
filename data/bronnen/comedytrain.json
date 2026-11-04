@@ -1,7 +1,7 @@
 {
   "bron": "comedytrain",
   "naam": "Comedytrain",
-  "opgehaald": "2026-11-03",
+  "opgehaald": "2026-11-04",
   "theaters": [
     {
       "id": "comedytrain-nieuwe-toomler-amsterdam",
@@ -15,6 +15,19 @@
   "speeldata": [
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Ivo Graham"
+      ],
+      "titel": "Ivo Graham",
+      "genre": "stand-up",
+      "datum": "2027-04-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-presents-ivo-graham-2027-04-25/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [],
       "titel": "Comedytrain Comedy op Zolder",
       "genre": "stand-up",
@@ -23,20 +36,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-11-06/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [
-        "Peter Pannekoek",
-        "Fee Oomes"
-      ],
-      "titel": "Dubbel",
-      "genre": "stand-up",
-      "datum": "2026-11-03",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/dubbel-peter-pannekoek-fee-oomes-2026-11-03/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",

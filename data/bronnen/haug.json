@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-11-03",
+  "opgehaald": "2026-11-04",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -13,6 +13,32 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Josh Thomas"
+      ],
+      "titel": "Josh Thomas",
+      "genre": "stand-up",
+      "datum": "2026-12-18",
+      "tijd": "19:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/josh-thomas-111707256"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Anu Vaidyanathan"
+      ],
+      "titel": "Anu Vaidyanathan",
+      "genre": "stand-up",
+      "datum": "2027-01-30",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/anu-vaidyanathan-111713424"
+    },
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [
@@ -798,19 +824,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/rogier-bak-diederik-zuurmond-111696843"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Josh Thomas"
-      ],
-      "titel": "Josh Thomas",
-      "genre": "stand-up",
-      "datum": "2026-12-18",
-      "tijd": "19:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/josh-thomas-111707256"
     },
     {
       "theater": "comedy-club-haug-rotterdam",

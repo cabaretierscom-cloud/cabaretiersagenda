@@ -1,7 +1,7 @@
 {
   "bron": "hetpark",
   "naam": "Schouwburg Het Park",
-  "opgehaald": "2026-11-03",
+  "opgehaald": "2026-11-04",
   "theaters": [
     {
       "id": "schouwburg-het-park",
@@ -773,6 +773,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/jandino-20-jaar-10356193/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Woordgrapf"
+      ],
+      "titel": "De Nationale avond van de Woordgrapf",
+      "genre": "cabaret",
+      "datum": "2027-09-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/woordgrapf-de-nationale-avond-van-de-woordgrapf-10388060/"
     }
   ],
   "recensies": {}

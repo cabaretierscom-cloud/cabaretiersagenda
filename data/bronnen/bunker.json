@@ -2,7 +2,7 @@
   "bron": "bunker",
   "naam": "Agenda van Bunker Theaterzaken",
   "soort": "speellijst",
-  "opgehaald": "2026-11-03",
+  "opgehaald": "2026-11-04",
   "theaters": [],
   "speeldata": [
     {
@@ -1034,25 +1034,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Wilminktheater",
-        "plaats": "Enschede",
-        "land": "NL",
-        "website": "https://www.wilminktheater.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-11-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/de-baas-zx6j"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "De Kleine Komedie",
         "plaats": "Amsterdam",
         "land": "NL",
@@ -1198,7 +1179,7 @@
       "genre": "cabaret",
       "datum": "2026-11-24",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.rijswijkseschouwburg.nl/voorstelling/lisa-ostermann-de-baas"
     },
@@ -1635,7 +1616,7 @@
       "genre": "cabaret",
       "datum": "2027-02-10",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.diligentia-pepijn.nl/agenda/lisa-ostermann-yw2z"
     },
@@ -1730,7 +1711,7 @@
       "genre": "cabaret",
       "datum": "2027-02-19",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekom.nl/agenda/de-baas-92lf"
     },
@@ -1863,7 +1844,7 @@
       "genre": "cabaret",
       "datum": "2027-03-12",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://stadsschouwburghaarlem.nl/agenda/lisa-ostermann-de-baas-2027"
     },
@@ -2835,25 +2816,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.ahoy.nl/agenda/show/patrick-laureij-kintsugi-2027"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Komedie",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.dekleinekomedie.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-03",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/kasper-van-der-laan-c27j"
     },
     {
       "theater": {
@@ -5537,6 +5499,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Stadstheater Zoetermeer",
+        "plaats": "Zoetermeer",
+        "land": "NL",
+        "website": "https://www.stadstheater.nl"
+      },
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "Striptease Van De Dood",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadstheater.nl"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "Stadsschouwburg Nijmegen en Concertgebouw De Vereeniging",
         "plaats": "Nijmegen",
         "land": "NL",
@@ -7449,7 +7430,7 @@
       "genre": "cabaret",
       "datum": "2027-01-13",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.posthuistheater.nl/agenda/van-vleuten-van-muiswinkel-12c4"
     },
@@ -10318,7 +10299,7 @@
       "genre": "cabaret",
       "datum": "2027-04-30",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.verkadefabriek.nl/agenda/sezgin-gulec-try-out-162297"
     },
@@ -10454,25 +10435,6 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.posttheater.nl/activiteit/11953/2027-05-21/sezgin-gulec"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "TivoliVredenburg",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://www.tivolivredenburg.nl"
-      },
-      "artiesten": [
-        "Lebbis"
-      ],
-      "titel": "Climate Comedy Night",
-      "genre": "cabaret",
-      "datum": "2026-11-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.TivoliVredenburg.nl"
     },
     {
       "theater": {
@@ -13738,7 +13700,7 @@
       "genre": "cabaret",
       "datum": "2026-11-04",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://stadsschouwburghaarlem.nl/agenda/cabarestafette-2026"
     },

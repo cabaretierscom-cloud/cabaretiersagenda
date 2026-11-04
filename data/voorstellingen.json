@@ -430,6 +430,14 @@
     "genre": "kleinkunst"
   },
   {
+    "id": "anu-vaidyanathan-anu-vaidyanathan",
+    "titel": "Anu Vaidyanathan",
+    "artiesten": [
+      "anu-vaidyanathan"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "anuar-ongeduldig-geduldig",
     "titel": "Ongeduldig Geduldig",
     "artiesten": [
@@ -1457,6 +1465,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "comedyhub-theater-kerkrade",
+    "titel": "ComedyHuB",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "theater-kerkrade"
+  },
+  {
     "id": "comedyhuis-pakt-uit-middagshow-comedyhuis-utrecht",
     "titel": "Comedyhuis pakt uit – middagshow",
     "artiesten": [],
@@ -1760,6 +1775,13 @@
     "theater": "theater-het-speelhuis"
   },
   {
+    "id": "de-dubieuze-avond-comedyhuis-utrecht",
+    "titel": "De Dubieuze Avond",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
     "id": "de-gestampte-meisjes-strot",
     "titel": "Strot",
     "artiesten": [
@@ -1876,6 +1898,13 @@
       "de-sitcomeback"
     ],
     "genre": "theaterkomedie"
+  },
+  {
+    "id": "de-staat-van-verwarring-comedyhuis-utrecht",
+    "titel": "De Staat van Verwarring",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "de-tunes-versnaperingen",
@@ -3121,6 +3150,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "ivo-graham-ivo-graham",
+    "titel": "Ivo Graham",
+    "artiesten": [
+      "ivo-graham"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "jacques-vermeire-jacques-vermeire",
     "titel": "Jacques Vermeire",
     "artiesten": [
@@ -3826,6 +3863,13 @@
     "theater": "cpunt"
   },
   {
+    "id": "knock-out-comedy-crew-theater-aan-het-vrijthof",
+    "titel": "- Knock Out Comedy Crew",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "theater-aan-het-vrijthof"
+  },
+  {
     "id": "knock-out-comedy-crew-theater-heerlen",
     "titel": "Knock Out Comedy Crew",
     "artiesten": [],
@@ -3880,10 +3924,10 @@
     ]
   },
   {
-    "id": "lachen-in-grenswerk-nationaal-theaterweekend",
+    "id": "lachen-in-backstage-nationaal-theaterweekend",
     "titel": "Nationaal Theaterweekend",
     "artiesten": [
-      "lachen-in-grenswerk"
+      "lachen-in-backstage"
     ],
     "genre": "cabaret"
   },
@@ -3893,6 +3937,13 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "stadsgehoorzaal-leiden"
+  },
+  {
+    "id": "late-night-comedy-extravaganza-comedyhuis-utrecht",
+    "titel": "Late Night Comedy Extravaganza",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "late-night-improv-meeuw-en-tim-comedyhuis-utrecht",
@@ -4869,6 +4920,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "nat-theaterweekend-op-scherp",
+    "titel": "Op Scherp",
+    "artiesten": [
+      "nat-theaterweekend"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "nathalie-baartman-de-bossels-van-baartman-ii",
     "titel": "De Bössels van Baartman II",
     "artiesten": [
@@ -4909,6 +4968,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "nederlandse-vakdag-comedy-comedyhuis-utrecht",
+    "titel": "Nederlandse Vakdag Comedy",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
     "id": "nele-bauwens-nele-bauwens",
     "titel": "Nele Bauwens",
     "artiesten": [
@@ -4923,6 +4989,14 @@
       "nesim-el-ahmadi"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "nesim-el-ahmadi-je-verzint-het-niet",
+    "titel": "Je verzint het niet",
+    "artiesten": [
+      "nesim-el-ahmadi"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "nhung-dam-legende-van-de-witte-slang",
@@ -5254,6 +5328,12 @@
         "sterren": 4,
         "citaat": "Schoneveld neemt de zaal op een innemende manier mee, is gevat in zijn interactie met het publiek en weet een heldere lijn door de avond te trekken.",
         "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Door situaties beeldend of licht ironisch te beschrijven, maakt hij ze komisch, tragisch of allebei tegelijk.\" en \"Leren alleen te zijn dus, een lange weg waarover Schoneveld smakelijk weet te vertellen.",
+        "bron": "https://theaterdestoep.nl/voorstelling/pepijn-schoneveld-2627"
       }
     ]
   },
@@ -5306,6 +5386,20 @@
       "peter-van-ewijk"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "peter-zonder-wolf-mark-van-vliet-5-comedyhuis-utrecht",
+    "titel": "Peter zonder Wolf – Mark van Vliet (5+)",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "phil-nichol-aren-t-we-lucky-comedyhuis-utrecht",
+    "titel": "Phil Nichol: Aren’t We Lucky",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "piet-en-matties-live-comedyavond-met-marco-lopes-piet-als-mc",
@@ -5488,6 +5582,13 @@
       "preuteleute"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "quickfire-comedy-battle-comedyhuis-utrecht",
+    "titel": "Quickfire Comedy Battle",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "rachid-larouz-wakker-worden",
@@ -5914,6 +6015,13 @@
         "bron": "https://delamar.nl/voorstellingen/ronald-goedemondt/"
       }
     ]
+  },
+  {
+    "id": "ronald-smink-en-daan-van-der-hoeven-comedyhuis-utrecht",
+    "titel": "Ronald Smink & Daan van der Hoeven",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "comedyhuis-utrecht"
   },
   {
     "id": "ronald-snijders-leven-met-humor",

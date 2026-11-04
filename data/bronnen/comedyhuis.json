@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-03",
+  "opgehaald": "2026-11-04",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -2511,6 +2511,39 @@
       "bron": "https://comedyhuis.nl/shows/all-english-comedy-night-utrecht-26-february-2027/"
     },
     {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Late Night Comedy Extravaganza",
+      "genre": "stand-up",
+      "datum": "2027-02-26",
+      "tijd": "23:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/late-night-comedy-extravaganza/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Peter zonder Wolf – Mark van Vliet (5+)",
+      "genre": "stand-up",
+      "datum": "2027-02-27",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/peter-zonder-wolf-mark-van-vliet-5/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Nederlandse Vakdag Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-27",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/nederlandse-vakdag-comedy/"
+    },
+    {
       "theater": {
         "zoeken": true,
         "naam": "De Kargadoor",
@@ -2526,6 +2559,28 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/all-english-comedy-night-utrecht-27-february-2027/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "De Dubieuze Avond",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/de-dubieuze-avond/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Late Night Comedy Extravaganza",
+      "genre": "stand-up",
+      "datum": "2027-02-27",
+      "tijd": "23:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/late-night-comedy-extravaganza-2/"
     },
     {
       "theater": {
@@ -2564,6 +2619,28 @@
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
+      "titel": "De Staat van Verwarring",
+      "genre": "stand-up",
+      "datum": "2027-03-01",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/de-staat-van-verwarring/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Quickfire Comedy Battle",
+      "genre": "stand-up",
+      "datum": "2027-03-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/quickfire-comedy-battle/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
       "titel": "Arabic Showcase with StandOut",
       "genre": "stand-up",
       "datum": "2027-03-03",
@@ -2571,6 +2648,30 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/arabic-showcase-with-standout-3-maart-2027/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Phil Nichol: Aren’t We Lucky",
+      "genre": "stand-up",
+      "datum": "2027-03-04",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/phil-nichol-arent-we-lucky/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [
+        "Woordgrapf"
+      ],
+      "titel": "De Nationale Avond van de Woordgrap",
+      "genre": "improvisatie",
+      "datum": "2027-03-04",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/woordgrapf-de-nationale-avond-van-de-woordgrap/"
     },
     {
       "theater": {
@@ -2590,6 +2691,17 @@
       "bron": "https://comedyhuis.nl/shows/all-english-comedy-night-utrecht-5-march-2027/"
     },
     {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Late Night Comedy Extravaganza",
+      "genre": "stand-up",
+      "datum": "2027-03-05",
+      "tijd": "23:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/late-night-comedy-extravaganza-3/"
+    },
+    {
       "theater": {
         "zoeken": true,
         "naam": "De Kargadoor",
@@ -2607,6 +2719,17 @@
       "bron": "https://comedyhuis.nl/shows/all-english-comedy-night-utrecht-6-march-2027/"
     },
     {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Late Night Comedy Extravaganza",
+      "genre": "stand-up",
+      "datum": "2027-03-06",
+      "tijd": "23:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/late-night-comedy-extravaganza-4/"
+    },
+    {
       "theater": {
         "zoeken": true,
         "naam": "Kartoffel",
@@ -2622,6 +2745,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/international-comedy-showcase-7-march-2027/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Ronald Smink & Daan van der Hoeven",
+      "genre": "stand-up",
+      "datum": "2027-03-07",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/ronald-smink-daan-van-der-hoeven/"
     },
     {
       "theater": {

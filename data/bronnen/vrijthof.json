@@ -1,7 +1,7 @@
 {
   "bron": "vrijthof",
   "naam": "Theater aan het Vrijthof",
-  "opgehaald": "2026-11-03",
+  "opgehaald": "2026-11-04",
   "theaters": [
     {
       "id": "theater-aan-het-vrijthof",
@@ -543,12 +543,34 @@
     },
     {
       "theater": "theater-aan-het-vrijthof",
+      "artiesten": [],
+      "titel": "- Knock Out Comedy Crew",
+      "genre": "cabaret",
+      "datum": "2027-03-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/knock-out-comedy-crew"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [],
+      "titel": "- Knock Out Comedy Crew",
+      "genre": "cabaret",
+      "datum": "2027-04-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/knock-out-comedy-crew"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
       "artiesten": [
         "Veldeke Theater"
       ],
       "titel": "Aajdjaorscabberèt: Eve oonder us",
       "genre": "cabaret",
-      "datum": "2026-12-27",
+      "datum": "2026-12-29",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,

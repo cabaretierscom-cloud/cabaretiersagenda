@@ -1,7 +1,7 @@
 {
   "bron": "wilminktheater",
   "naam": "Wilminktheater en Muziekcentrum Enschede",
-  "opgehaald": "2026-11-03",
+  "opgehaald": "2026-11-04",
   "theaters": [
     {
       "id": "wilminktheater",
@@ -21,39 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "wilminktheater",
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "comedy",
-      "datum": "2026-11-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/de-baas-zx6j"
-    },
-    {
-      "theater": {
-        "id": "de-kleine-willem-enschede",
-        "naam": "De Kleine Willem",
-        "plaats": "Enschede",
-        "land": "NL",
-        "soort": "theater",
-        "website": null
-      },
-      "artiesten": [
-        "Doğu Demirkol"
-      ],
-      "titel": "Doğu Demirkol Stand Up",
-      "genre": "stand-up",
-      "datum": "2026-11-03",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/dogu-demirkol-stand-up-9rpj"
-    },
     {
       "theater": "wilminktheater",
       "artiesten": [

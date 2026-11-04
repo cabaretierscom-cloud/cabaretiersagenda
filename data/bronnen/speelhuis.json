@@ -1,7 +1,7 @@
 {
   "bron": "speelhuis",
   "naam": "Theater Het Speelhuis",
-  "opgehaald": "2026-11-03",
+  "opgehaald": "2026-11-04",
   "theaters": [
     {
       "id": "theater-het-speelhuis",
@@ -181,19 +181,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterspeelhuis.nl/programma/max-van-den-burg-13225"
-    },
-    {
-      "theater": "theater-het-speelhuis",
-      "artiesten": [
-        "Marie Koet"
-      ],
-      "titel": "Eindspel",
-      "genre": "cabaret",
-      "datum": "2027-10-15",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterspeelhuis.nl/programma/marie-koet-13236"
     },
     {
       "theater": "theater-het-speelhuis",
