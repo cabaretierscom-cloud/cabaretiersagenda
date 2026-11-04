@@ -982,6 +982,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const zalen = zalenMetData.filter((t) => t.plaats === p);
     const body = `<div class="detail-hero" style="--bg:var(--riso-yellow);--fg:#121212"><div class="wrap">
         <h1 class="plaats-kop">Cabaret en theater in ${esc(p)}</h1>
+        <p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}.</p>
       </div></div>
       <div class="wrap detail-body">
         ${dagBlok(p, list)}
