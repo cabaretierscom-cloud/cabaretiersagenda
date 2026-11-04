@@ -18,6 +18,9 @@ ErrorDocument 404 /404.html
   RewriteRule ^(genres|agenda)/theaterkomedie(/.*)?$ https://www.cabaretiers.com/agenda/komedie$2 [L,R=301]
   RewriteRule ^genres/?$ https://www.cabaretiers.com/agenda/ [L,R=301]
   RewriteRule ^genres/(.+)$ https://www.cabaretiers.com/agenda/$1 [L,R=301]
+  # Cabaret per plaats bestaat alleen vanaf drie voorstellingen (GENRE_PLAATS_DREMPEL); anders naar de plaatspagina.
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^agenda/cabaret/([^/]+)/?$ https://www.cabaretiers.com/theaters-in-$1/ [L,R=301]
   # Vanavond/dit weekend per stad bestaat alleen bij genoeg aanbod; anders naar de plaatspagina.
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^theaters-in-([^/]+)/(vanavond|dit-weekend)/?$ https://www.cabaretiers.com/theaters-in-$1/ [L,R=301]

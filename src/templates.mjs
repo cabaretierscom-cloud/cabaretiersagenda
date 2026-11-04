@@ -1012,7 +1012,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${filters(list, { maand: true })}
         <div id="gigs">${monthGroups(list)}</div>
         ${leegBlok}
-        ${list.some((g) => heeftGenre(g, "cabaret")) && GENRE_PAGINAS.includes("cabaret") ? `<p class="meer-link"><a href="/agenda/cabaret/${plaatsId(p)}/">Alleen cabaret in ${esc(p)}</a></p>` : ""}
+        ${heeftGenrePlaats("cabaret", p) ? `<p class="meer-link"><a href="/agenda/cabaret/${plaatsId(p)}/">Alleen cabaret in ${esc(p)}</a></p>` : ""}
         ${plaatsTekst(p, list)}
         ${list.length ? faqHtml(plaatsVragen(p, list), `Veelgestelde vragen over theater in ${p}`) : ""}
       </div>`;
@@ -1439,7 +1439,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     delen.push(`<h2 id="over-titel">Theater in ${naam}</h2>
         <p>In ${naam} ${list.length === 1 ? "staat één theatervoorstelling" : `staan ${list.length} theatervoorstellingen`} op de agenda, ${periode(list)}, ${zalen.length === 1 ? `in ${theaterLink(zalen[0][0])}` : `in ${zalen.length} theaters en zalen`}.` +
       ` ${genres.length > 1 ? `Op het programma: ${opsomming(genres.slice(0, 4).map(([k, n]) => `${n} keer ${GENRE_TEKST[k]}`))}.` : `Alles is ${GENRE_TEKST[genres[0][0]]}.`}` +
-      `${cabaret && GENRE_PAGINAS.includes("cabaret") ? ` Zoek je alleen cabaret? Kijk bij <a href="/agenda/cabaret/${plaatsId(p)}/">cabaret in ${naam}</a>.` : ""}</p>`);
+      `${heeftGenrePlaats("cabaret", p) ? ` Zoek je alleen cabaret? Kijk bij <a href="/agenda/cabaret/${plaatsId(p)}/">cabaret in ${naam}</a>.` : ""}</p>`);
     delen.push(`<h2>${zalen.length === 1 ? `Het theater in ${naam}` : `Theaters en zalen in ${naam}`}</h2>
         <ul>${zalen.map(([id, n]) => { const t = T.get(id), eerste = list.find((g) => g.theater === id); return `<li>${theaterLink(id)}${SOORT[t.soort] ? ` (${SOORT[t.soort]})` : ""}: ${plural(n, "voorstelling", "voorstellingen")}, de eerste op ${fmt.dayMonth(eerste.datum)}${t.website ? ` (<a href="${esc(metUtm(t.website))}" rel="noopener">website</a>)` : ""}</li>`; }).join("")}</ul>`);
     if (artiestTel.length) {
@@ -1498,7 +1498,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const maand = list[0].datum.slice(0, 7), inMaand = list.filter((g) => g.datum.startsWith(maand));
     if (inMaand.length > 1) vragen.push([`Wat is er in ${maandNaam(maand)} te zien in ${p}?`, `${plural(inMaand.length, "voorstelling", "voorstellingen")}: ${perNaam(inMaand, 5)}${new Set(inMaand.map((g) => artistNames(g.voorstelling))).size > 5 ? " en meer" : ""}.`]);
     const cab = list.filter((g) => heeftGenre(g, "cabaret"));
-    if (cab.length && GENRE_PAGINAS.includes("cabaret")) vragen.push([`Is er cabaret in ${p}?`, `Ja, ${plural(cab.length, "cabaretvoorstelling", "cabaretvoorstellingen")}. Alle cabaret op een rij staat op <a href="/agenda/cabaret/${plaatsId(p)}/">cabaret in ${naam}</a>.`]);
+    if (heeftGenrePlaats("cabaret", p)) vragen.push([`Is er cabaret in ${p}?`, `Ja, ${plural(cab.length, "cabaretvoorstelling", "cabaretvoorstellingen")}. Alle cabaret op een rij staat op <a href="/agenda/cabaret/${plaatsId(p)}/">cabaret in ${naam}</a>.`]);
     const standup = list.filter((g) => heeftGenre(g, "stand-up"));
     if (standup.length) vragen.push([`Is er stand-up comedy in ${p}?`, `Ja, ${plural(standup.length, "voorstelling", "voorstellingen")}, onder meer ${perNaam(standup, 3)}.`]);
     const oud = list.filter((g) => V.get(g.voorstelling).genre === "oudejaarsconference");
@@ -1830,7 +1830,11 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   // Landingspagina's per genre en plaats, zoals /agenda/cabaret/amsterdam/ (alleen de genres in GENRE_PER_PLAATS).
   const GENRE_PER_PLAATS = ["cabaret"];
   const genrePlaatsPad = (g, p) => `/agenda/${g}/${plaatsId(p)}/`;
-  const genrePlaatsen = (g) => GENRE_PER_PLAATS.includes(g) ? telPer(genreLijst(g), (x) => T.get(x.theater).plaats) : [];
+  // Alleen plaatsen met minstens GENRE_PLAATS_DREMPEL voorstellingen krijgen een pagina (anders te dun voor Google);
+  // een verdwenen pagina stuurt public/.htaccess met een 301 door naar de plaatspagina.
+  const GENRE_PLAATS_DREMPEL = 3;
+  const genrePlaatsen = (g) => GENRE_PER_PLAATS.includes(g) ? telPer(genreLijst(g), (x) => T.get(x.theater).plaats).filter(([, n]) => n >= GENRE_PLAATS_DREMPEL) : [];
+  const heeftGenrePlaats = (g, p) => GENRE_PAGINAS.includes(g) && genrePlaatsen(g).some(([x]) => x === p);
   const genrePlaatsPaginas = GENRE_PER_PLAATS.filter((g) => GENRE_PAGINAS.includes(g)).flatMap((g) => genrePlaatsen(g).map(([p]) => [g, p]));
 
   function genrePlaatsPagina(g, p) {
