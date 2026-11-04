@@ -1623,6 +1623,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <div class="hero-tekst">
           <h1${Math.max(...v.titel.split(/\s+/).map((w) => w.length)) > 12 ? ' class="lang"' : ""}>${esc(v.titel)}</h1>
           <p>Voorstelling van ${artistLinks(vid)}. ${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.</p>
+          <ul class="hero-genres" aria-label="Genres">${genresVanV(v).map((g) => `<li>${GENRE_PAGINAS.includes(g) ? `<a href="/agenda/${g}/">${esc(GENRES[g])}</a>` : `<span>${esc(GENRES[g])}</span>`}</li>`).join("")}</ul>
         </div>
         ${v.foto ? fotoHtml(v) : ""}
       </div></div>

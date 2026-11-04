@@ -951,3 +951,11 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .genre-plaats-top span { font-weight: 500; opacity: .7; font-variant-numeric: tabular-nums; }
 .genre-plaats-alles summary { cursor: pointer; font-weight: 700; padding: 8px 0; }
 .genre-plaats-alles h3 { margin: 16px 0 6px; }
+
+/* Genres in de kop van een voorstellingspagina, als knopjes in de kleur van de kop (links naar /agenda/<genre>/). */
+.hero-genres { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; padding: 0; }
+.hero-genres a, .hero-genres span {
+  display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 999px;
+  border: 2px solid currentColor; color: inherit; font: 700 var(--step--1) var(--font-body); text-decoration: none;
+}
+.hero-genres a:hover, .hero-genres a:focus-visible { background: var(--fg); color: var(--bg); border-color: var(--fg); }
