@@ -346,6 +346,9 @@
     // soort (zoals try-out) heeft geen eigen veld: alleen via het adres, vanaf /agenda/try-outs/.
     const stand = { q: params.get("q") || "", genre: params.get("genre") || "", uitverkocht: params.get("uitverkocht") === "1" ? "1" : "", soort: params.get("soort") || "" };
     if (q) q.value = stand.q;
+    // Op een genrepagina of /agenda/try-outs/ zoekt het script alleen binnen dat genre of die soort.
+    const vastGenre = alles.dataset.vastGenre, vastSoort = alles.dataset.vastSoort;
+    const inVast = (g) => (!vastGenre || g.genres.includes(vastGenre)) && (!vastSoort || (g.soort === vastSoort && g.status !== "geannuleerd"));
     const genre = genreKeuze((w) => { stand.genre = w.join(","); pasToe(); });
     stand.genre = genre ? genre.zet(leesGenres(stand.genre)).join(",") : "";
     if (vinkUit) vinkUit.checked = stand.uitverkocht === "1";
@@ -398,9 +401,12 @@
       await haal();
       const naald = kaal(stand.q.trim()), kies = new Set(leesGenres(stand.genre));
       const inGenre = (g) => !kies.size || g.genres.some((x) => kies.has(x));
-      if (genre) genre.aantal(kies.size ? data.rijen.filter((g) => g.datum >= today && inGenre(g)).length : genre.totaal);
-      lijst = data.rijen.filter((g) => g.datum >= today && (!naald || g.zoek.includes(naald)) && inGenre(g) && (!stand.soort || g.soort === stand.soort) && (!stand.uitverkocht || g.status !== "uitverkocht"));
-      weken = perWeek(lijst); getoond = 0; ronde++;
+      if (genre) genre.aantal(kies.size ? data.rijen.filter((g) => g.datum >= today && inVast(g) && inGenre(g)).length : genre.totaal);
+      lijst = data.rijen.filter((g) => g.datum >= today && inVast(g) && (!naald || g.zoek.includes(naald)) && inGenre(g) && (!stand.soort || g.soort === stand.soort) && (!stand.uitverkocht || g.status !== "uitverkocht"));
+      // Zonder filter: eerst wat de pagina zelf al toonde (tot data-tot), daarna per week.
+      const tot = alles.dataset.tot;
+      weken = gefilterd() ? perWeek(lijst) : [lijst.filter((g) => g.datum <= tot), ...perWeek(lijst.filter((g) => g.datum > tot))].filter((w) => w.length);
+      getoond = 0; ronde++;
       alles.innerHTML = "";
       // Met een zoekopdracht of filter meteen alle resultaten (in porties, zie toonRest); zonder filter
       // alleen de eerste week met de knop voor de rest, anders bouwt de pagina duizenden rijen.
@@ -421,7 +427,7 @@
       if (weken[0]?.server) {
         laadKnop.disabled = true;
         await haal();
-        lijst = data.rijen.filter((g) => g.datum >= today);
+        lijst = data.rijen.filter((g) => g.datum >= today && inVast(g));
         const tot = alles.dataset.tot;
         weken = [{ length: lijst.filter((g) => g.datum <= tot).length }, ...perWeek(lijst.filter((g) => g.datum > tot))];
         getoond = 1;

@@ -478,7 +478,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // waar: alleen zoeken op plaats en zaal (artiestpagina: de artiest heb je dan al gevonden).
   // Zoeken en filteren boven een speellijst (public/agenda.js). Het zoekveld doorzoekt artiest,
   // voorstelling, zaal en plaats; op een artiestpagina alleen zaal en plaats (waar).
-  function filters(list, { maand = false, waar = false } = {}) {
+  function filters(list, { maand = false, waar = false, genre = true } = {}) {
     const months = [...new Set(list.map((g) => g.datum.slice(0, 7)))].sort();
     const genres = genresVan(list);
     const uitverkocht = list.some((g) => g.status === "uitverkocht");
@@ -492,7 +492,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       <label for="f-maand">Maand</label>
       <select id="f-maand" name="maand"><option value="">Alle maanden</option>${months.map((m) => `<option value="${m}">${maandNaam(m)}</option>`).join("")}</select>
     </div>` : ""}
-    ${genres.length > 1 ? `<div class="field">
+    ${genre && genres.length > 1 ? `<div class="field">
       <span class="label" id="f-genre-label">Genre</span>
       <details class="keuze" id="f-genre" data-totaal="${list.length}">
         <summary aria-describedby="f-genre-label"><span class="keuze-tekst">Alle genres</span><span class="keuze-n">${list.length.toLocaleString("nl-NL")}</span></summary>
@@ -504,6 +504,18 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     </div>` : ""}
   </form>
   <p class="result-line" id="result-line" aria-live="polite"></p>`;
+  }
+
+  // Lange lijst (genre, try-outs) met zoeken in álle voorstellingen, zoals /agenda/: de pagina toont de eerste
+  // MAX (aangevuld tot het eind van die dag), agenda.js laadt de rest uit /agenda/alles.js en houdt zich aan
+  // het vaste genre of de vaste soort (data-vast-genre, data-vast-soort).
+  function zoekbareLijst(list, { max = 150, genre = null, soort = null } = {}) {
+    const grens = list[Math.min(max, list.length) - 1].datum;
+    const eerste = list.filter((g) => g.datum <= grens);
+    return { eerste, html: `${filters(list, { genre: !genre })}
+      <div id="gigs" data-alles="/agenda/alles.js?v=${tellers.speeldata}-${db.today}" data-tot="${grens}" data-totaal="${list.length}"${genre ? ` data-vast-genre="${genre}"` : ""}${soort ? ` data-vast-soort="${soort}"` : ""}>${monthGroups(eerste)}</div>
+      ${leegBlok}
+      <p class="meer-weken" id="laad-meer"><button type="button" class="btn" id="laad-week">Toon alle ${list.length.toLocaleString("nl-NL")} voorstellingen</button></p>` };
   }
 
   const leegBlok = `<div class="empty" id="empty" hidden>
@@ -1795,7 +1807,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     vragen.push(["Hoe koop ik kaarten?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van het theater of de club, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
     // Affiches van voorstellingen in dit genre; de lijst toont de eerstvolgende avonden (alles staat in de agenda).
     const affiches = nuInTheater(() => true, (v) => genresVanV(v).includes(g));
-    const MAX = 150, eerste = list.slice(0, MAX);
+    const MAX = 150, groot = list.length > MAX ? zoekbareLijst(list, { max: MAX, genre: g }) : null;
+    const eerste = groot ? groot.eerste : list;
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">${esc(info.kop)}</h1><p>${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}</p></div>
     </section>
@@ -1805,10 +1818,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     </section>` : ""}
     <section class="block wrap az-blok" aria-labelledby="lijst-titel">
       <h2 class="sub-head" id="lijst-titel">${list.length > MAX ? "Eerstvolgende voorstellingen" : "Alle voorstellingen"}</h2>
-      ${list.length > 12 && list.length <= MAX ? filters(list, { maand: true }) : ""}
-      <div id="gigs">${monthGroups(eerste)}</div>
-      ${list.length > 12 && list.length <= MAX ? leegBlok : ""}
-      ${list.length > MAX ? `<p class="more"><a class="btn" href="/agenda/?genre=${g}">Alle ${list.length.toLocaleString("nl-NL")} ${esc(info.meervoud)} in de agenda</a></p>` : ""}
+      ${groot ? groot.html : `${list.length > 12 ? filters(list, { maand: true }) : ""}
+      <div id="gigs">${monthGroups(list)}</div>
+      ${list.length > 12 ? leegBlok : ""}`}
       ${genrePlaatsen(g).length ? `<section class="genre-plaatsen" aria-labelledby="gp-titel">
         <h2 class="sub-head" id="gp-titel">${esc(info.kop)} per plaats</h2>
         <p class="genre-plaats-top">${genrePlaatsen(g).slice(0, 24).map(([p, n]) => `<a href="${genrePlaatsPad(g, p)}">${esc(p)} <span>${n}</span></a>`).join("")}</p>
@@ -1860,7 +1872,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     if (premieres.length) vragen.push(["Wanneer is de première na de try-outs?", `Dat verschilt per voorstelling. Bijvoorbeeld: ${opsomming(premieres.slice(0, 3).map((g) => `${wat(g)} op ${fmt.full(g.datum)} in ${theaterLink(g.theater)}`))}.`]);
     vragen.push(["Hoe koop ik kaarten voor een try-out?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van het theater, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
     const affiches = nuInTheater(() => true, (v) => list.some((x) => x.voorstelling === v.id));
-    const MAX = 150, eerste = list.slice(0, MAX);
+    const MAX = 150, groot = list.length > MAX ? zoekbareLijst(list, { max: MAX, soort: "try-out" }) : null;
+    const eerste = groot ? groot.eerste : list;
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Try-outs</h1><p>${plural(list.length, "try-out", "try-outs")} in ${plural(steden.length, "plaats", "plaatsen")}: nieuwe programma's vóór de première</p></div>
     </section>
@@ -1870,10 +1883,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     </section>` : ""}
     <section class="block wrap az-blok" aria-labelledby="lijst-titel">
       <h2 class="sub-head" id="lijst-titel">${list.length > MAX ? "Eerstvolgende try-outs" : "Alle try-outs"}</h2>
-      ${list.length > 12 ? filters(eerste, { maand: true }) : ""}
-      <div id="gigs">${monthGroups(eerste)}</div>
-      ${list.length > 12 ? leegBlok : ""}
-      ${list.length > MAX ? `<p class="more"><a class="btn" href="/agenda/?soort=try-out">Alle ${list.length.toLocaleString("nl-NL")} try-outs in de agenda</a></p>` : ""}
+      ${groot ? groot.html : `${list.length > 12 ? filters(list, { maand: true }) : ""}
+      <div id="gigs">${monthGroups(list)}</div>
+      ${list.length > 12 ? leegBlok : ""}`}
       <section class="seo-tekst prose" aria-labelledby="over-titel">
         <h2 id="over-titel">Over try-outs</h2>
         ${tekst.join("\n        ")}
