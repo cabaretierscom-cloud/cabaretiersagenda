@@ -151,7 +151,7 @@ export function createTemplates(db) {
       .filter((id) => T.has(id) && db.gigsForTheater(id).length).map((id) => [T.get(id).naam, `/theaters/${id}/`])],
     ["Plaatsen", "/plaatsen/", "Alle plaatsen", ["Rotterdam", "Amsterdam", "Eindhoven", "Den Haag", "Utrecht"]
       .filter((p) => up.some((g) => T.get(g.theater).plaats === p)).map((p) => [p, plaatsPad(p)])],
-    ["Genres", "/genres/", "Alle genres", GENRE_PAGINAS.slice(0, 5).map((g) => [GENRE_INFO[g].kop, `/genres/${g}/`])],
+    ["Genres", "/agenda/", "De hele agenda", GENRE_PAGINAS.slice(0, 5).map((g) => [GENRE_INFO[g].kop, `/agenda/${g}/`])],
   ];
   return `<nav class="footer-links" aria-label="Snel naar">${FOOTER_LINKS.map(([kop, pad, alle, links]) => `<div>
       <h2>${kop}</h2>
@@ -696,7 +696,7 @@ ${GENRE_PAGINAS.length ? `
 <section class="wall wall-zalen" aria-labelledby="genres-title">
   <div class="wrap wall-head">
     <h2 id="genres-title">Genres</h2>
-    <p><a href="/genres/">Alle genres</a></p>
+    <p><a href="/agenda/">De hele agenda</a></p>
   </div>
   ${strip("strip-genres", "Genres", kaartenRij(GENRE_PAGINAS, (g) => GENRE_INFO[g].kleur, genreKaart))}
 </section>` : ""}
@@ -751,6 +751,10 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${leegBlok}
       <p class="meer-weken" id="laad-meer" hidden><button type="button" class="btn" id="laad-week">Toon alle volgende voorstellingen</button></p>
       <p class="more" id="naar-maand"><a class="btn" href="/agenda/${maandId(maanden[0])}/">Verder in ${maandNaam(maanden[0])}</a></p>
+      ${GENRE_PAGINAS.length ? `<section class="genre-plaatsen" aria-labelledby="genre-titel">
+        <h2 class="sub-head" id="genre-titel">Per genre</h2>
+        <p class="genre-plaats-top">${GENRE_PAGINAS.map((g) => `<a href="/agenda/${g}/">${esc(GENRE_INFO[g].kop)} <span>${genreLijst(g).length}</span></a>`).join("")}</p>
+      </section>` : ""}
       <section class="seo-tekst prose" aria-labelledby="over-titel">
         <h2 id="over-titel">Cabaret- en theatervoorstellingen</h2>
         ${overzicht.tekst.join("\n        ")}
@@ -999,7 +1003,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${filters(list, { maand: true })}
         <div id="gigs">${monthGroups(list)}</div>
         ${leegBlok}
-        ${list.some((g) => V.get(g.voorstelling).genre === "cabaret") && GENRE_PAGINAS.includes("cabaret") ? `<p class="meer-link"><a href="/genres/cabaret/${plaatsId(p)}/">Alleen cabaret in ${esc(p)}</a></p>` : ""}
+        ${list.some((g) => V.get(g.voorstelling).genre === "cabaret") && GENRE_PAGINAS.includes("cabaret") ? `<p class="meer-link"><a href="/agenda/cabaret/${plaatsId(p)}/">Alleen cabaret in ${esc(p)}</a></p>` : ""}
         ${plaatsTekst(p, list)}
         ${list.length ? faqHtml(plaatsVragen(p, list), `Veelgestelde vragen over cabaret in ${p}`) : ""}
       </div>`;
@@ -1679,7 +1683,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return { tekst, vragen };
   }
 
-  // ---------- Genres: /genres/ en /genres/<genre>/ ----------
+  // ---------- Genres: /agenda/<genre>/ (tot november 2026 /genres/<genre>/; .htaccess stuurt door) ----------
   // Per genre een vaste uitleg en eigen vragen; de cijfers, namen en plaatsen komen uit de agenda.
   const oudejaarsJaar = (() => {
     const eerste = up.find((g) => V.get(g.voorstelling).genre === "oudejaarsconference");
@@ -1693,7 +1697,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       uitleg: "Cabaret is een avondvullende theatervoorstelling met humor, verhalen en vaak liedjes, meestal rond een thema en met een persoonlijke of maatschappelijke kijk op de wereld. Nederland en Vlaanderen hebben een lange cabarettraditie, van de grote drie (Wim Kan, Toon Hermans en Wim Sonneveld) tot de cabaretiers die nu door het land toeren.",
       vragen: [
         ["Wat is cabaret?", "Een theatervoorstelling waarin een cabaretier (of een groep) met humor, verhalen en vaak liedjes een avond vult, meestal rond een thema. Tussen de grappen door is er ook ruimte voor serieuze momenten."],
-        ["Wat is het verschil tussen cabaret en stand-up comedy?", "Cabaret heeft meestal een rode draad, liedjes en soms een decor. Stand-up comedy is losser: een comedian vertelt grappen en verhalen met alleen een microfoon. Veel artiesten doen allebei. Bekijk ook <a href=\"/genres/stand-up/\">stand-up comedy</a>."],
+        ["Wat is het verschil tussen cabaret en stand-up comedy?", "Cabaret heeft meestal een rode draad, liedjes en soms een decor. Stand-up comedy is losser: een comedian vertelt grappen en verhalen met alleen een microfoon. Veel artiesten doen allebei. Bekijk ook <a href=\"/agenda/stand-up/\">stand-up comedy</a>."],
       ],
     },
     "stand-up": {
@@ -1753,10 +1757,10 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   };
   const genreLijst = (g) => up.filter((x) => V.get(x.voorstelling).genre === g);
   const GENRE_PAGINAS = Object.keys(GENRE_INFO).filter((g) => GENRES[g] && genreLijst(g).length);
-  const genreLink = (g) => `<a href="/genres/${g}/">${esc(GENRE_INFO[g].kop)}</a>`;
+  const genreLink = (g) => `<a href="/agenda/${g}/">${esc(GENRE_INFO[g].kop)}</a>`;
 
   function genrePagina(g) {
-    const info = GENRE_INFO[g], list = genreLijst(g), pad = `/genres/${g}/`;
+    const info = GENRE_INFO[g], list = genreLijst(g), pad = `/agenda/${g}/`;
     const artiesten = telPer(list.flatMap((x) => V.get(x.voorstelling).artiesten).filter((id) => !isFestival(id)), (id) => id).slice(0, 6);
     const steden = telPer(list, (x) => T.get(x.theater).plaats);
     const zalen = new Set(list.map((x) => x.theater)).size;
@@ -1806,13 +1810,13 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${faqHtml(vragen, `Veelgestelde vragen over ${onderwerp}`)}
     </section>`;
     const desc = kort(`${info.kop}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")} in Nederland en België${artiesten.length ? `, met ${artiesten.slice(0, 3).map(([id]) => A.get(id).naam).join(", ")}` : ""}. Bekijk de agenda en koop kaarten bij het theater.`);
-    return layout({ title: info.titel, description: desc, path: pad, section: null, body,
-      schema: { type: "CollectionPage", kruimels: [["Genres", "/genres/"], [info.kop, pad]], extra: [...eventsLd(eerste), faqLd(vragen, pad)] } });
+    return layout({ title: info.titel, description: desc, path: pad, section: "agenda", body,
+      schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], [info.kop, pad]], extra: [...eventsLd(eerste), faqLd(vragen, pad)] } });
   }
 
-  // Landingspagina's per genre en plaats, zoals /genres/cabaret/amsterdam/ (alleen de genres in GENRE_PER_PLAATS).
+  // Landingspagina's per genre en plaats, zoals /agenda/cabaret/amsterdam/ (alleen de genres in GENRE_PER_PLAATS).
   const GENRE_PER_PLAATS = ["cabaret"];
-  const genrePlaatsPad = (g, p) => `/genres/${g}/${plaatsId(p)}/`;
+  const genrePlaatsPad = (g, p) => `/agenda/${g}/${plaatsId(p)}/`;
   const genrePlaatsen = (g) => GENRE_PER_PLAATS.includes(g) ? telPer(genreLijst(g), (x) => T.get(x.theater).plaats) : [];
   const genrePlaatsPaginas = GENRE_PER_PLAATS.filter((g) => GENRE_PAGINAS.includes(g)).flatMap((g) => genrePlaatsen(g).map(([p]) => [g, p]));
 
@@ -1860,38 +1864,20 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${faqHtml(vragen, `Veelgestelde vragen over ${onderwerp} in ${p}`)}
       </div>`;
     const desc = kort(`${info.kop} in ${p}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}${artiestTel.length ? `, met ${artiestTel.slice(0, 3).map(([id]) => A.get(id).naam).join(", ")}${artiestTel.length > 3 ? " en meer" : ""}` : ""}. Eerstvolgende op ${fmt.full(list[0].datum)}. Kaarten koop je bij het theater.`);
-    return layout({ title: `${info.kop} in ${p}: agenda en kaarten`, description: desc, path: pad, section: null, body,
-      schema: { type: "CollectionPage", kruimels: [["Genres", "/genres/"], [info.kop, `/genres/${g}/`], [p, pad]], extra: [...eventsLd(list), faqLd(vragen, pad)] } });
+    return layout({ title: `${info.kop} in ${p}: agenda en kaarten`, description: desc, path: pad, section: "agenda", body,
+      schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], [info.kop, `/agenda/${g}/`], [p, pad]], extra: [...eventsLd(list), faqLd(vragen, pad)] } });
   }
 
-  // Gekleurde kaart van een genre (/genres/ en de homepage).
+  // Gekleurde kaart van een genre (homepage).
   const genreKaart = (g, kleur) => {
     const list = genreLijst(g);
-    return `<a class="artist-card" href="/genres/${g}/" style="${ink(kleur)}">
+    return `<a class="artist-card" href="/agenda/${g}/" style="${ink(kleur)}">
           <h3${kopMaat(GENRE_INFO[g].kop)}>${afbreken(GENRE_INFO[g].kop)}</h3>
           <p><span class="count">${plural(list.length, "voorstelling", "voorstellingen")}</span>, vanaf ${fmt.dayMonth(list[0].datum)}</p>
         </a>`;
   };
 
-  function genreIndex() {
-    const kaart = (g) => genreKaart(g, GENRE_INFO[g].kleur);
-    const vragen = [
-      ["Welke genres staan in de agenda?", `${opsomming(GENRE_PAGINAS.map(genreLink))}. Per genre zie je alle voorstellingen, met uitleg en veelgestelde vragen.`],
-      ["Staan musicals en toneel ook in de agenda?", "Nee. Cabaretiers.com is een agenda voor cabaret, comedy en komisch theater. Toneel staat er alleen in als humor de hoofdrol speelt (theaterkomedie)."],
-      ["Hoe zoek ik op genre in de agenda?", "Kies in de <a href=\"/agenda/\">agenda</a> een genre in het zoekveld, of open hierboven een genre."],
-    ];
-    const body = `<section class="block wrap" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">Genres</h1><p>Cabaret, stand-up comedy en komisch theater: kies wat je wilt zien.</p></div>
-      <div class="artists festival-kaarten">${GENRE_PAGINAS.map(kaart).join("")}</div>
-      <section class="seo-tekst prose" aria-labelledby="over-titel">
-        <h2 id="over-titel">Cabaret, comedy en komisch theater</h2>
-        <p>In deze agenda staat alles waar je om kunt lachen: avondvullend <a href="/genres/cabaret/">cabaret</a> in de schouwburg, ${GENRE_PAGINAS.includes("stand-up") ? `${genreLink("stand-up")} in comedyclubs en theaters` : "stand-up"}, en elk jaar de ${GENRE_PAGINAS.includes("oudejaarsconference") ? genreLink("oudejaarsconference") : "oudejaarsconference"}. Daarnaast vind je ${opsomming(GENRE_PAGINAS.filter((g) => !["cabaret", "stand-up", "oudejaarsconference"].includes(g)).map(genreLink))}.</p>
-      </section>
-      ${faqHtml(vragen, "Veelgestelde vragen over genres")}
-    </section>`;
-    return layout({ title: "Genres: cabaret, stand-up comedy en meer", description: kort(`Cabaret, stand-up comedy, oudejaarsconference, kleinkunst en komisch theater: per genre alle voorstellingen in Nederland en België.`), path: "/genres/", section: null, body,
-      schema: { type: "CollectionPage", kruimels: [["Genres", "/genres/"]], hoofd: lijstLd(GENRE_PAGINAS.map((g) => [GENRE_INFO[g].kop, `/genres/${g}/`])), extra: [faqLd(vragen, "/genres/")] } });
-  }
+
 
   function festivalIndex() {
     const overzicht = festivalsOverzicht();
@@ -2339,7 +2325,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   return {
     controlePagina, dashboardPagina, dashboardPad,
-    home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, genrePagina, genreIndex, GENRE_PAGINAS, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
+    home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, genrePagina, GENRE_PAGINAS, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, plaatsPad, maandId, genrePlaatsPaginas, genrePlaatsPagina, genrePlaatsPad, voorstellingPaden: voorstellingPad,
   };
 }

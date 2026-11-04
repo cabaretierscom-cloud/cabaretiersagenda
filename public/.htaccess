@@ -13,6 +13,9 @@ ErrorDocument 404 /404.html
   # Plaatspagina's heetten tot november 2026 /plaatsen/<plaats>/; het overzicht /plaatsen/ blijft.
   RewriteRule ^plaatsen/([^/]+)/?$ https://www.cabaretiers.com/theaters-in-$1/ [L,R=301]
   RewriteRule ^plaatsen/([^/]+)/(vanavond|dit-weekend)/?$ https://www.cabaretiers.com/theaters-in-$1/$2/ [L,R=301]
+  # Genres stonden tot november 2026 onder /genres/; nu onder /agenda/ (ook /genres/ zelf).
+  RewriteRule ^genres/?$ https://www.cabaretiers.com/agenda/ [L,R=301]
+  RewriteRule ^genres/(.+)$ https://www.cabaretiers.com/agenda/$1 [L,R=301]
   # Vanavond/dit weekend per stad bestaat alleen bij genoeg aanbod; anders naar de plaatspagina.
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^theaters-in-([^/]+)/(vanavond|dit-weekend)/?$ https://www.cabaretiers.com/theaters-in-$1/ [L,R=301]
