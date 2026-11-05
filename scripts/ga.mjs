@@ -10,7 +10,10 @@
 //   node scripts/ga.mjs tickets   [--dagen 28]   klikken op Tickets-knoppen per theater, artiest en voorstelling
 //   node scripts/ga.mjs google    [--dagen 28]   Google zoekresultaten (Search Console): vertoningen, klikken, positie per pagina
 //   node scripts/ga.mjs dashboard [--dagen 28]   alle rapporten (laatste 28 dagen en per maand, t/m gisteren) naar data/ga-dashboard.json voor /dashboard/
+//   node scripts/ga.mjs zoektermen [--dagen 28] [--pagina /pad/]  zoektermen in Google (Search Console API), met vertoningen,
+//                                                klikken, doorklikratio en positie; met --pagina alleen voor die pagina
 //   ... --json                                   ruwe uitvoer als JSON
+// Voor zoektermen heeft het serviceaccount in Search Console de rol "Beperkt" en staat de Search Console API aan.
 // data/ga-dashboard.json staat in .gitignore: de repository is openbaar. GitHub Actions haalt het elke run
 // opnieuw op als het geheim GA_SERVICE_ACCOUNT_B64 daar is ingesteld.
 // In de cloudomgeving: NODE_EXTRA_CA_CERTS=/root/.ccr/ca-bundle.crt NODE_USE_ENV_PROXY=1 node scripts/ga.mjs ...
@@ -30,10 +33,10 @@ function sleutel() {
 
 const b64url = (x) => Buffer.from(typeof x === "string" ? x : JSON.stringify(x)).toString("base64url");
 
-async function toegangstoken(s) {
+async function toegangstoken(s, scope = "https://www.googleapis.com/auth/analytics.readonly") {
   const nu = Math.floor(Date.now() / 1000);
   const kop = b64url({ alg: "RS256", typ: "JWT" });
-  const inhoud = b64url({ iss: s.client_email, scope: "https://www.googleapis.com/auth/analytics.readonly", aud: s.token_uri || "https://oauth2.googleapis.com/token", iat: nu, exp: nu + 3600 });
+  const inhoud = b64url({ iss: s.client_email, scope, aud: s.token_uri || "https://oauth2.googleapis.com/token", iat: nu, exp: nu + 3600 });
   const handtekening = createSign("RSA-SHA256").update(`${kop}.${inhoud}`).sign(s.private_key, "base64url");
   const res = await fetch(s.token_uri || "https://oauth2.googleapis.com/token", {
     method: "POST",
@@ -140,6 +143,34 @@ if (soort === "dashboard") {
     const doel = new URL("../data/ga-dashboard.json", import.meta.url);
     writeFileSync(doel, JSON.stringify(uit, null, 1) + "\n");
     console.log(`Dashboardcijfers geschreven: ${uit.perioden.map((p) => `${p.naam} (${p.overzicht.length} dagen)`).join(", ")}.`);
+  } catch (e) {
+    console.error(e.message);
+    process.exit(1);
+  }
+  process.exit(0);
+}
+
+// Zoektermen komen niet via GA maar rechtstreeks uit Search Console (de cijfers lopen twee à drie dagen achter).
+if (soort === "zoektermen") {
+  const SITE_GSC = process.env.GSC_SITE || "https://www.cabaretiers.com/";
+  const dag = (n) => new Date(Date.now() - n * 864e5).toISOString().slice(0, 10);
+  const pagina = args.includes("--pagina") ? args[args.indexOf("--pagina") + 1] : null;
+  try {
+    const token = await toegangstoken(sleutel(), "https://www.googleapis.com/auth/webmasters.readonly");
+    const res = await fetch(`https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(SITE_GSC)}/searchAnalytics/query`, {
+      method: "POST", headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
+      body: JSON.stringify({
+        startDate: dag(dagen + 2), endDate: dag(2), dimensions: ["query"], rowLimit: 500,
+        ...(pagina ? { dimensionFilterGroups: [{ filters: [{ dimension: "page", operator: "contains", expression: pagina }] }] } : {}),
+      }),
+    });
+    const j = await res.json();
+    if (!res.ok) throw new Error(`Search Console: ${j.error?.message || res.status}`);
+    if (alsJson) { console.log(JSON.stringify(j, null, 2)); process.exit(0); }
+    const rijen = j.rows || [];
+    console.log(`Zoektermen, laatste ${dagen} dagen (t/m ${dag(2)})${pagina ? `, pagina ${pagina}` : ""}: ${rijen.length} termen`);
+    console.log(["zoekterm", "vertoningen", "klikken", "ctr", "positie"].join("\t"));
+    for (const x of rijen) console.log([x.keys[0], x.impressions, x.clicks, `${(x.ctr * 100).toFixed(1)}%`, x.position.toFixed(1)].join("\t"));
   } catch (e) {
     console.error(e.message);
     process.exit(1);
