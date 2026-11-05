@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-11-04",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -29,17 +29,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-walhalla",
-      "artiesten": [],
-      "titel": "De Vrouwejaars 2026",
-      "genre": "kleinkunst",
-      "datum": "2026-11-04",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/vrouwejaars-2026-try-out/"
-    },
     {
       "theater": "theater-walhalla",
       "artiesten": [],
@@ -344,7 +333,7 @@
       "genre": "kleinkunst",
       "datum": "2027-01-28",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/pepijn-schoneveld-welkom-dat-je-luistert/"
     },
@@ -396,7 +385,7 @@
       "genre": "cabaret",
       "datum": "2027-01-30",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/andries-tunru-en-stefan-hendrikx-beperkt-houdbaar/"
     },
@@ -563,7 +552,7 @@
       "genre": "cabaret",
       "datum": "2027-02-24",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/viggo-waas-eddie-b-wahr-kees-van-der-vooren-eigenlijk-try-out/"
     },
@@ -600,7 +589,7 @@
       "genre": "cabaret",
       "datum": "2027-03-03",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-19/"
     },
@@ -637,7 +626,7 @@
       "genre": "cabaret",
       "datum": "2027-03-10",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/joosen-en-de-jager-niks-aan-het-handje/"
     },
@@ -813,7 +802,7 @@
       "genre": "cabaret",
       "datum": "2027-04-14",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-23/"
     },
@@ -824,7 +813,7 @@
       "genre": "cabaret",
       "datum": "2027-04-15",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/finalistentour-leids-cabaret-festival/"
     },
@@ -889,7 +878,7 @@
       "genre": "cabaret",
       "datum": "2027-04-22",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/patrick-nederkoorn-nieuw-programma-try-out/"
     },
@@ -902,7 +891,7 @@
       "genre": "cabaret",
       "datum": "2027-04-22",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/fabian-franciscus-is-het-leven-al-begonnen/"
     },
@@ -993,7 +982,7 @@
       "genre": "cabaret",
       "datum": "2027-06-10",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/stefan-hendikx-in-perspectief/"
     },

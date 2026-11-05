@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-11-04",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "zaantheater",
@@ -224,19 +224,6 @@
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Ice"
-      ],
-      "titel": "Live in het theater",
-      "genre": "cabaret",
-      "datum": "2027-01-14",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ice/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
         "Jandino"
       ],
       "titel": "De Grote Jubileumshow",
@@ -386,7 +373,7 @@
       "genre": "cabaret",
       "datum": "2026-11-07",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/lovella-telesford/"
     },

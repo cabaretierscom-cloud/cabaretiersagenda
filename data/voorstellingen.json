@@ -599,14 +599,14 @@
       {
         "medium": "de Volkskrant",
         "sterren": 4,
-        "citaat": "Cabaretier Ayoub Kharkhach lost met zijn debuutvoorstelling de hoge verwachtingen volledig in.",
-        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/ayoub/"
+        "citaat": "Ayoub Kharkhach lost met zijn debuutvoorstelling de hoge verwachtingen volledig in.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/en-verbied-vogels-om-te-fluiten-ayoub"
       },
       {
         "medium": "Het Parool",
         "sterren": null,
         "citaat": "Een spannende performer die met niemand in het huidige cabaretveld te vergelijken is.",
-        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/ayoub/"
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/en-verbied-vogels-om-te-fluiten-ayoub"
       },
       {
         "medium": "Theaterkrant",
@@ -3149,14 +3149,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "ice-live-in-het-theater",
-    "titel": "Live in het theater",
-    "artiesten": [
-      "ice"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "ice-live-in-theater",
     "titel": "Live in Theater",
     "artiesten": [
@@ -3927,13 +3919,6 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "cpunt"
-  },
-  {
-    "id": "knock-out-comedy-crew-theater-aan-het-vrijthof",
-    "titel": "- Knock Out Comedy Crew",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "theater-aan-het-vrijthof"
   },
   {
     "id": "knock-out-comedy-crew-theater-heerlen",
@@ -5997,8 +5982,8 @@
       {
         "medium": "Theaterparadijs",
         "sterren": 4,
-        "citaat": "Verrassend, vernieuwend, puur en vooral ontzettend grappig.",
-        "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2"
+        "citaat": "Verrassend, vernieuwend, puur en vooral ontzettend grappig",
+        "bron": "https://denieuwekolk.nl/theater/agenda/roel-jos-maalderink"
       },
       {
         "medium": "Het Parool",
@@ -6695,6 +6680,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "testing-testevent-31",
+    "titel": "Testevent 31",
+    "artiesten": [
+      "testing"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "teun-de-vries-tim-fransen-dubbel",
     "titel": "Dubbel",
     "artiesten": [
@@ -7014,6 +7007,14 @@
     "theater": "amai-comedy-club-gent"
   },
   {
+    "id": "trevor-wallace-trevor-wallace",
+    "titel": "Trevor Wallace",
+    "artiesten": [
+      "trevor-wallace"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "try-out-comedy-talent-award-kwart-finalisten-comedyhuis-utrecht",
     "titel": "Try Out Comedy Talent Award Kwart Finalisten",
     "artiesten": [],
@@ -7103,14 +7104,6 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "theater-lampegiet"
-  },
-  {
-    "id": "veldeke-theater-aajdjaorscabberet-eve-oonder-us",
-    "titel": "Aajdjaorscabberèt: Eve oonder us",
-    "artiesten": [
-      "veldeke-theater"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "veldhuis-en-kemper-nieuw-programma",
@@ -7404,6 +7397,14 @@
       "jorgen-raymann"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "wilko-terwijn-oudejaars-2026",
+    "titel": "Oudejaars 2026",
+    "artiesten": [
+      "wilko-terwijn"
+    ],
+    "genre": "oudejaarsconference"
   },
   {
     "id": "william-boeva-drift",

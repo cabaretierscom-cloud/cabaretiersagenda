@@ -2,123 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-11-04",
+  "opgehaald": "2026-11-05",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Verkadefabriek",
-        "plaats": "'s-Hertogenbosch",
-        "land": "NL",
-        "website": "https://www.verkadefabriek.nl"
-      },
-      "artiesten": [
-        "Pieter Verelst"
-      ],
-      "titel": "Altijd Aan",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/pieter-verelst-altijd-aan-reprise-162249"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Snuffel Comedy Club",
-        "plaats": "Brugge",
-        "land": "BE",
-        "website": "https://snuffel.be"
-      },
-      "artiesten": [
-        "Gunter Lamoot"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-04",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://snuffel.be/events/gunter-lamoot-tim-loobuyck/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Publika",
-        "plaats": "Gent",
-        "land": "BE",
-        "website": "https://levelscomedyclub.be"
-      },
-      "artiesten": [
-        "Amelie Albrecht"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-04",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://levelscomedyclub.be/event/amelie-albrecht/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater De Leest",
-        "plaats": "Waalwijk",
-        "land": "NL",
-        "website": "https://www.deleest.nl"
-      },
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "stand-up",
-      "datum": "2026-11-04",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.deleest.nl/programma/jade-mintjens-d1gy"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Leest",
-        "plaats": "Izegem",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Hans Cools"
-      ],
-      "titel": "Zolang de voorraad strekt",
-      "genre": "stand-up",
-      "datum": "2026-11-04",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/hans-cools/2026-11-04/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Wolf",
-        "plaats": "Antwerpen",
-        "land": "BE",
-        "website": "https://www.lunatics.be"
-      },
-      "artiesten": [
-        "Seppe Toremans"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-05",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.lunatics.be/events/impro-seppe-toremans-antwerpen-wolf-05-22-2026"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -2327,6 +2213,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.your-tickets.be/events/DriesHeyneman"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC Gildhof",
+        "plaats": "Tielt",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Seppe Toremans"
+      ],
+      "titel": "Stand-up",
+      "genre": "stand-up",
+      "datum": "2026-12-17",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://tickets.gildhof.be/nl/buyingflow/tickets/45136/91769/"
     },
     {
       "theater": {
@@ -8085,6 +7990,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "De Leest",
+        "plaats": "Izegem",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Hans Cools"
+      ],
+      "titel": "Zolang de voorraad strekt",
+      "genre": "stand-up",
+      "datum": "2027-05-21",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedyshows.be/kalender/hans-cools/2027-05-21/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "CC Kruispunt",
         "plaats": "Diksmuide",
         "land": "BE",
@@ -8993,6 +8917,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/dries-heyneman/2027-06-25/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Leest",
+        "plaats": "Izegem",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Voor Normale Mensen",
+      "genre": "stand-up",
+      "datum": "2027-10-08",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedyshows.be/kalender/dries-heyneman/2027-10-08/"
     },
     {
       "theater": {

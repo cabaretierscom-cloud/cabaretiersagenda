@@ -1,7 +1,7 @@
 {
   "bron": "verkadefabriek",
   "naam": "Verkadefabriek",
-  "opgehaald": "2026-11-04",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "verkadefabriek-s-hertogenbosch",
@@ -133,19 +133,6 @@
     {
       "theater": "verkadefabriek-s-hertogenbosch",
       "artiesten": [
-        "Pieter Verelst"
-      ],
-      "titel": "Altijd aan",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.verkadefabriek.nl/agenda/pieter-verelst-altijd-aan-reprise-162249"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
         "Luuk Ransijn"
       ],
       "titel": "Uitkijk",
@@ -191,7 +178,7 @@
       "genre": "cabaret",
       "datum": "2026-11-14",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.verkadefabriek.nl/agenda/oscar-smit-472000-try-out-162253"
     },
@@ -269,7 +256,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-29",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.verkadefabriek.nl/agenda/kiki-schippers-oudejaarsconferance-try-out-162259"
     },
@@ -987,28 +974,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/cameretten-comedy-masterclass-166573"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
-      "datum": "2026-11-05",
-      "tijd": "11:10",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
-      "datum": "2026-11-05",
-      "tijd": "11:10",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
     },
     {
       "theater": "verkadefabriek-s-hertogenbosch",

@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-04",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -42,6 +42,32 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "Deng Boy"
+      ],
+      "titel": "Deng Boy",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/deng-boy-5/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Steven Brunswijk"
+      ],
+      "titel": "Steven Brunswijk",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "Roué Verveer"
       ],
       "titel": "Roué Verveer",
@@ -68,28 +94,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Steven Brunswijk"
+        "Klaas van der Eerden"
       ],
-      "titel": "Steven Brunswijk",
+      "titel": "Klaas van der Eerden",
       "genre": "cabaret",
-      "datum": "2027-04-23",
-      "tijd": "20:30",
+      "datum": "2027-04-02",
+      "tijd": "20:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Deng Boy"
-      ],
-      "titel": "Deng Boy",
-      "genre": "cabaret",
-      "datum": "2027-05-28",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/deng-boy-5/"
+      "bron": "https://kunstlinie.nl/programma/klaas-van-der-eerden-2/"
     },
     {
       "theater": "kunstlinie",
@@ -103,19 +116,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/team-ricky-risolles/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Klaas van der Eerden"
-      ],
-      "titel": "Klaas van der Eerden",
-      "genre": "cabaret",
-      "datum": "2027-04-02",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/klaas-van-der-eerden-2/"
     },
     {
       "theater": "kunstlinie",

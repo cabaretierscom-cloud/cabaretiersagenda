@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-04",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,17 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Open Mic Comedyhuis Regulars",
-      "genre": "open-mic",
-      "datum": "2026-11-04",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/open-mic-comedyhuis-regulars-4-november-2026/"
-    },
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
@@ -109,7 +98,7 @@
       "genre": "stand-up",
       "datum": "2026-11-07",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/zaterdagavondshow-7-november/"
     },
@@ -1265,6 +1254,19 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://comedyhuis.nl/shows/kwart-finale-tryout-22-december/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [
+        "Wilko Terwijn"
+      ],
+      "titel": "Oudejaars 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-22",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/wilko-terwijn-oudejaars-2026/"
     },
     {
       "theater": "comedyhuis-utrecht",

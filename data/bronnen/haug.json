@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-11-04",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -13,6 +13,32 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Trevor Wallace"
+      ],
+      "titel": "Trevor Wallace",
+      "genre": "stand-up",
+      "datum": "2026-11-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/trevor-wallace-111717152"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Nadine Froughi"
+      ],
+      "titel": "Nadine Froughi",
+      "genre": "stand-up",
+      "datum": "2026-12-17",
+      "tijd": "18:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/nadine-froughi-111717143"
+    },
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [
@@ -475,17 +501,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111710963"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
-      "titel": "Open Mic",
-      "genre": "open-mic",
-      "datum": "2026-11-04",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111710962"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1483,19 +1498,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [
-        "Ali Siddiq"
-      ],
-      "titel": "Ali Siddiq",
-      "genre": "stand-up",
-      "datum": "2026-11-04",
-      "tijd": "17:45",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/ali-siddiq-111638787"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
         "Josh Thomas"
       ],
       "titel": "Josh Thomas",
@@ -1531,19 +1533,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/sofie-hagen-111624033"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Ali Siddiq"
-      ],
-      "titel": "Ali Siddiq",
-      "genre": "stand-up",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/ali-siddiq-111620182"
     }
   ],
   "recensies": {

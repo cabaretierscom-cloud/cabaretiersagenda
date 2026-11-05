@@ -1,7 +1,7 @@
 {
   "bron": "utrecht",
   "naam": "Stadsschouwburg Utrecht",
-  "opgehaald": "2026-11-04",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "stadsschouwburg-utrecht",
@@ -204,19 +204,6 @@
       "genre": "cabaret",
       "soort": "reprise",
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Yentl en de Boer"
-      ],
-      "titel": "Rekhalzen",
-      "genre": "cabaret",
-      "soort": "reprise",
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer",
       "datum": "2026-11-05",
       "tijd": "20:00",
       "status": "uitverkocht"
@@ -271,7 +258,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-goede-voorbeeld-vlamousse",
       "datum": "2026-11-14",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
