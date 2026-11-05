@@ -973,11 +973,12 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     // Kaartjes in de kleur van de artiest, zoals de affiches: alles van vanavond tot en met zondag, in een
     // affichewand (strip) die opzij schuift; de actieve kaart komt naar voren (agenda.js, zoals de affiches).
     // Het hele kaartje is de link naar de kaartverkoop (class "tickets" en ticketData() voor de klikmeting).
-    const kaartjes = binnenkort.map((g) => {
+    // Nooit twee kaartjes van dezelfde kleur naast elkaar: de volgorde (op datum) blijft, de kleur schuift.
+    const kaartjes = afwisselend(binnenkort, (g) => leadInk(g.voorstelling), { schuiven: false }).map(({ x: g, kleur }) => {
       const v = V.get(g.voorstelling);
       const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
       const wie = artistNames(g.voorstelling) || v.titel;
-      return `<a class="dag-kaart tickets dag-tickets${kopen ? "" : " ghost"}" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow" data-datum="${g.datum}" style="${ink(leadInk(g.voorstelling))}"${ticketData(g)}>
+      return `<a class="dag-kaart tickets dag-tickets${kopen ? "" : " ghost"}" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow" data-datum="${g.datum}" style="${ink(kleur)}"${ticketData(g)}>
             <span class="dk-dag dag-label" data-dag="${g.datum}">${g.datum === vandaagDag ? "Vanavond" : g.datum === morgenDag ? "Morgen" : hoofdletter(fmt.weekday(g.datum))}</span>
             <span class="dk-datum">${fmt.day(g.datum)} ${fmt.monthShort(g.datum)}</span>
             <span class="dk-waar">${g.tijd ? `${g.tijd} · ` : ""}${esc(T.get(g.theater).naam)}</span>
