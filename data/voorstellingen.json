@@ -40,19 +40,12 @@
     "genre": "stand-up"
   },
   {
-    "id": "aidan-jones-aidan-jones",
-    "titel": "Aidan Jones",
+    "id": "aidan-jones",
+    "titel": "",
     "artiesten": [
       "aidan-jones"
     ],
     "genre": "stand-up"
-  },
-  {
-    "id": "aidan-jones-comedy-cafe-amsterdam",
-    "titel": "Aidan Jones",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "comedy-cafe-amsterdam"
   },
   {
     "id": "akf-club-shaffy",
@@ -134,6 +127,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "alina-sharipova",
+    "titel": "",
+    "artiesten": [
+      "alina-sharipova"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "alina-sharipova-bugra-gedik-alina-sharipova-en-bugra-gedik",
     "titel": "Alina Sharipova & Bugra Gedik",
     "artiesten": [
@@ -171,13 +172,6 @@
       "jorn-van-dam"
     ],
     "genre": "stand-up"
-  },
-  {
-    "id": "alina-sharipova-kleine-walhalla",
-    "titel": "Alina Sharipova",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "kleine-walhalla"
   },
   {
     "id": "alina-sharipova-nieuw-programma",
@@ -1079,25 +1073,7 @@
     "artiesten": [
       "cabarestafette"
     ],
-    "genre": "cabaret",
-    "ookGenres": [
-      "stand-up"
-    ]
-  },
-  {
-    "id": "cabarestafette-parktheater-eindhoven",
-    "titel": "Cabarestafette",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "parktheater-eindhoven"
-  },
-  {
-    "id": "cabarestafette-presenteert-nieuw-geluid",
-    "titel": "Nieuw geluid!",
-    "artiesten": [
-      "cabarestafette-presenteert"
-    ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "cabaret-cafe-de-harmonie",
@@ -1655,14 +1631,6 @@
     ]
   },
   {
-    "id": "daniel-arends-had-ik-maar-zo-aardig-gedaan",
-    "titel": "Had ik maar zo aardig gedaan",
-    "artiesten": [
-      "daniel-arends"
-    ],
-    "genre": "stand-up"
-  },
-  {
     "id": "daniel-arends-high-class-bitch",
     "titel": "High Class Bitch",
     "artiesten": [
@@ -1751,11 +1719,12 @@
     "genre": "stand-up"
   },
   {
-    "id": "de-cabaret-club-goudse-schouwburg",
-    "titel": "De Cabaret Club",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "goudse-schouwburg"
+    "id": "de-cabaret-club",
+    "titel": "",
+    "artiesten": [
+      "de-cabaret-club"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "de-cabaret-club-op-z-n-brabants",
@@ -1764,13 +1733,6 @@
       "de-cabaret-club"
     ],
     "genre": "cabaret"
-  },
-  {
-    "id": "de-cabaret-club-parktheater-eindhoven",
-    "titel": "De Cabaret Club",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "parktheater-eindhoven"
   },
   {
     "id": "de-cabaret-club-vier-korte-cabaretvoorstellingen",
@@ -2164,13 +2126,6 @@
     "genre": "stand-up"
   },
   {
-    "id": "echt-gebeurd-comedytrain-nieuwe-toomler-amsterdam",
-    "titel": "Echt Gebeurd",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "comedytrain-nieuwe-toomler-amsterdam"
-  },
-  {
     "id": "echt-gebeurd-de-erfenis",
     "titel": "De erfenis",
     "artiesten": [
@@ -2250,11 +2205,12 @@
     "theater": "southend-comedy-club"
   },
   {
-    "id": "ed-night-comedy-club-haug-rotterdam",
-    "titel": "Ed Night",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "comedy-club-haug-rotterdam"
+    "id": "ed-night",
+    "titel": "",
+    "artiesten": [
+      "ed-night"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "ed-night-ed-night",
@@ -3740,14 +3696,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "kasper-van-der-laan-nieuw-programma",
-    "titel": "Nieuw programma",
-    "artiesten": [
-      "kasper-van-der-laan"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "kasper-van-der-laan-ruim",
     "titel": "Ruim",
     "artiesten": [
@@ -4023,14 +3971,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "lebbis-lebbis",
-    "titel": "Lebbis",
-    "artiesten": [
-      "lebbis"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "lebbis-satan-is-moe",
     "titel": "Satan is moe",
     "artiesten": [
@@ -4053,21 +3993,6 @@
       "leids-cabaret-festival"
     ],
     "genre": "cabaret"
-  },
-  {
-    "id": "leids-cabaret-festival-finalistentournee",
-    "titel": "Finalistentournee",
-    "artiesten": [
-      "leids-cabaret-festival"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "leids-cabaret-festival-goudse-schouwburg",
-    "titel": "Leids Cabaret Festival",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "goudse-schouwburg"
   },
   {
     "id": "leids-cabaret-festival-halve-finale",
@@ -4597,14 +4522,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "martijn-koning-martijn-koning",
-    "titel": "Martijn Koning",
-    "artiesten": [
-      "martijn-koning"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "martijn-koning-overprikkeld",
     "titel": "Overprikkeld",
     "artiesten": [
@@ -5108,14 +5025,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "nieuwjaars-cabarestafette-nieuw-geluid",
-    "titel": "Nieuw Geluid!",
-    "artiesten": [
-      "nieuwjaars-cabarestafette"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "niki-jacobs-ja",
     "titel": "Ja!",
     "artiesten": [
@@ -5218,6 +5127,14 @@
       "onias-landveld"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "open-mic",
+    "titel": "",
+    "artiesten": [
+      "open-mic"
+    ],
+    "genre": "open-mic"
   },
   {
     "id": "open-mic-comedyhuis-regulars-comedyhuis-utrecht",
@@ -5340,11 +5257,12 @@
     "genre": "cabaret"
   },
   {
-    "id": "patrick-spicer-kleine-komedie",
-    "titel": "Patrick Spicer",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "kleine-komedie"
+    "id": "patrick-spicer",
+    "titel": "",
+    "artiesten": [
+      "patrick-spicer"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "patrick-spicer-patrick-spicer",
@@ -5944,11 +5862,40 @@
     "genre": "cabaret"
   },
   {
-    "id": "roel-c-verburg-comedy-cafe-amsterdam",
+    "id": "roel-c-verburg",
+    "titel": "",
+    "artiesten": [
+      "roel-c-verburg"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "roel-c-verburg-roel-c-verburg",
     "titel": "Roel C. Verburg",
-    "artiesten": [],
+    "artiesten": [
+      "roel-c-verburg"
+    ],
     "genre": "stand-up",
-    "theater": "comedy-cafe-amsterdam"
+    "recensies": [
+      {
+        "medium": "Het Financieele Dagblad",
+        "sterren": null,
+        "citaat": "Hij grossiert in absurdistische liedjes vol taalacrobatiek.",
+        "bron": "https://comedyclubhaug.com/shows/roel-c-verburg-111695528"
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Een aaneenschakeling van slimme observaties, rake grappen en muzikale intermezzo’s",
+        "bron": "https://comedyclubhaug.com/shows/roel-c-verburg-111695528"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Roel C. Verburg is een fenomeen op zich.",
+        "bron": "https://comedyclubhaug.com/shows/roel-c-verburg-111695528"
+      }
+    ]
   },
   {
     "id": "roel-c-verburg-slechtste-liedjes-van-de-straat",
@@ -6403,31 +6350,8 @@
     "genre": "cabaret"
   },
   {
-    "id": "sezgin-gulec-kleine-walhalla",
-    "titel": "Sezgin Guleç",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "kleine-walhalla"
-  },
-  {
     "id": "sezgin-gulec-nieuw-programma",
     "titel": "Nieuw Programma",
-    "artiesten": [
-      "sezgin-gulec"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "sezgin-gulec-sezgin-gulec",
-    "titel": "Sezgin Güleç",
-    "artiesten": [
-      "sezgin-gulec"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "sezgin-gulec-try-out-proefdraaien-in-de-paap",
-    "titel": "try-out | Proefdraaien in de Paap",
     "artiesten": [
       "sezgin-gulec"
     ],
@@ -6950,6 +6874,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "tis-hier-geen-hotel-3",
+    "titel": "",
+    "artiesten": [
+      "tis-hier-geen-hotel-3"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "tis-hier-geen-hotel-3-hanneke-drenth-en-dianne-liesker",
     "titel": "Hanneke Drenth en Dianne Liesker",
     "artiesten": [
@@ -7194,9 +7126,11 @@
   {
     "id": "voorstelling-comedy-cafe-amsterdam",
     "titel": "ΤΟΣΟ ΟΣΟ | ΑΜΣΤΕΡΝΤΑΜ",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "comedy-cafe-amsterdam"
+    "artiesten": [
+      "jelka-van-houten",
+      "sanne-wallis-de-vries"
+    ],
+    "genre": "komedie"
   },
   {
     "id": "vrijdagavondshow-uicf-editie-comedyhuis-utrecht",
@@ -7218,6 +7152,14 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "vrouwejaars-2026",
+    "titel": "",
+    "artiesten": [
+      "vrouwejaars-2026"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "vrouwejaars-2026-cpunt",
@@ -7263,13 +7205,6 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "stadsschouwburg-utrecht"
-  },
-  {
-    "id": "vrouwejaars-2026-theater-sittard",
-    "titel": "Vrouwejaars 2026",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "theater-sittard"
   },
   {
     "id": "vrouwejaars-2026-theater-zuidplein",
@@ -7347,11 +7282,12 @@
     "genre": "stand-up"
   },
   {
-    "id": "we-zijn-toch-familie-delamar",
-    "titel": "We zijn toch familie",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "delamar"
+    "id": "we-zijn-toch-familie",
+    "titel": "",
+    "artiesten": [
+      "we-zijn-toch-familie"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "we-zijn-toch-familie-musical-comedy-met-o-a-paul-de-leeuw-en-annick-boer",

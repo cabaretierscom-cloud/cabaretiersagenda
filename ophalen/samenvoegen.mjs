@@ -28,6 +28,9 @@ const eerder = { artiesten: new Set(artiesten.map((a) => a.id)), theaters: new S
 const controleren = [];
 // Bekende andere schrijfwijzen: "Ayoub" -> ["Ayoub Kharkhach"], "Najib & Roué" -> twee artiesten.
 const aliassen = existsSync(join(dataDir, "aliassen.json")) ? read("aliassen.json") : {};
+// Verbeteringen van impresariaten en artiesten (data/voorstelling-correcties.json): titels die een zaal anders
+// noemt ("Nieuw geluid!" is "Cabarestafette 26-27") en tournees die in hun geheel een reprise zijn.
+const correcties = existsSync(join(dataDir, "voorstelling-correcties.json")) ? read("voorstelling-correcties.json") : {};
 const aliasOpSleutel = new Map(Object.entries(aliassen).map(([k, v]) => [slug(k), v]));
 
 // Speellijsten van artiesten komen als laatste: wat een theater zelf meldt, gaat voor.
@@ -303,6 +306,30 @@ const stem = (vId, genre, theaterId) => {
   (st[genre] ||= new Set()).add(theaterId);
 };
 
+// Leidende speellijst: avonden van dezelfde artiest(en), op dezelfde dag en in dezelfde plaats, uit een
+// theaterbron met een andere titel krijgen de titel van de speellijst. Heeft de speellijst die dag meer
+// voorstellingen van de artiest (twee in Gent), dan de titel die het meest op die van de zaal lijkt.
+const woorden = (t) => new Set(slug(t).split("-").filter((w) => w.length > 2));
+function herschik(r, ids, bestand, bronRecord) {
+  const plaats = slug(netPlaats(r.theater.plaats));
+  const zelfdeDag = bestand.speeldata.filter((x) => x.datum === r.datum && slug(netPlaats(x.theater?.plaats || "")) === plaats && x.titel && (x.artiesten || []).every((n) => ids.includes(zorgVoorArtiest(n))));
+  for (const s of speeldata) {
+    if (s.datum !== r.datum || speellijstBronnen.has(s.herkomst) || slug(theaterOpId.get(s.theater)?.plaats) !== plaats) continue;
+    const v = voorstellingen.find((x) => x.id === s.voorstelling);
+    if (!v || !zelfdeSet(v.artiesten, ids)) continue;
+    // Try-out of première volgens de speellijst, als de zaal niets noemt.
+    const eigen = zelfdeDag.find((x) => zelfdeTitel(x.titel, v.titel)) || (zelfdeDag.length === 1 ? zelfdeDag[0] : null);
+    if (eigen === bronRecord && bronRecord.soort && !s.soort) { s.soort = bronRecord.soort; soortOvergenomen++; }
+    if (zelfdeDag.some((x) => zelfdeTitel(x.titel, v.titel))) continue;
+    const score = (x) => [...woorden(x.titel)].filter((w) => woorden(v.titel).has(w)).length;
+    const beste = [...zelfdeDag].sort((a, b) => score(b) - score(a))[0];
+    if (beste !== bronRecord) continue;
+    s.voorstelling = zorgVoorVoorstelling(r, ids, s.theater);
+    herschikt++;
+  }
+}
+let herschikt = 0, soortOvergenomen = 0;
+
 const stats = [], bronStats = [];
 // Recensies per voorstelling uit alle bronnen: voorstelling-id -> Map(bron|medium -> recensie).
 const recensieKandidaten = new Map();
@@ -362,6 +389,12 @@ for (const f of bronFiles) {
       const m = r.titel.match(/^(.+?)\s+[–—-]\s+(.+)$/);
       if (m && (aliasOpSleutel.has(slug(m[1])) || isBekend(m[1]))) { r.artiesten = opgeschoondeArtiesten([m[1]]); r.titel = m[2]; }
     }
+    // Geen artiest en de titel is precies een bekende artiest of alias ("Cabarestafette", Parktheater).
+    if (!r.artiesten.length && r.titel && (aliasOpSleutel.has(slug(r.titel)) || isBekend(r.titel))) { r.artiesten = opgeschoondeArtiesten([r.titel]); r.titel = ""; r.zonderTitel = true; }
+    for (const c of correcties.titels || []) {
+      if (!r.artiesten.some((n) => slug(n) === slug(c.artiest))) continue;
+      if (!r.titel || c.van.some((t) => slug(t) === slug(r.titel))) { r.titel = c.naar; delete r.zonderTitel; }
+    }
     // Toneel en komedie hebben hun eigen opruimregels (stukOpOrde); de regels hieronder zijn voor cabaret.
     if (r.genre === "komedie" || /^(komedie|blijspel|klucht)\b/i.test(r.titel)) stukOpOrde(r, bronRecord.artiesten?.length === 1 ? bronRecord.artiesten[0] : null);
     // "Eigenlijk" / "Viggo Waas, Eddie B. Wahr & Kees van der Vooren": een namenlijst als titel en een
@@ -377,7 +410,12 @@ for (const f of bronFiles) {
     if (r.theater?.zoeken) {
       // Speellijst: dezelfde artiest op dezelfde dag in dezelfde plaats staat er al via het theater.
       const ids = (r.artiesten || []).map((n) => zorgVoorArtiest(n));
-      if (ids.some((a) => alBekend.has(`${a}|${slug(netPlaats(r.theater.plaats))}|${r.datum}`))) { dubbel++; continue; }
+      if (ids.some((a) => alBekend.has(`${a}|${slug(netPlaats(r.theater.plaats))}|${r.datum}`))) {
+        // Een leidende speellijst (impresariaat, bijv. Bunker) weet de juiste titel: de avond die een zaal
+        // onder een andere titel heeft, gaat naar de voorstelling met de titel van de speellijst.
+        if (bestand.leidend && r.titel) herschik(r, ids, bestand, bronRecord);
+        dubbel++; continue;
+      }
       if (!r.titel) { r.titel = r.artiesten.join(" & "); r.zonderTitel = true; }
     }
     const theater = doelTheater(typeof r.theater === "string" ? theaterOpId.get(r.theater) : r.theater?.zoeken ? zoekTheater(r.theater) : zorgVoorTheater(r.theater));
@@ -579,6 +617,16 @@ for (const v of voorstellingen) {
   }
   if (!v.artiesten.length && !theaterOpId.has(v.theater)) v.theater = speeldata.find((s) => s.voorstelling === v.id)?.theater;
 }
+
+// 2e. Tournees die in hun geheel een reprise zijn (voorstelling-correcties.json): elke avond zonder soort is een reprise.
+let reprises = 0;
+for (const c of correcties.reprise || []) {
+  const aId = artiesten.find((a) => slug(a.naam) === slug(c.artiest))?.id;
+  for (const v of voorstellingen.filter((x) => aId && x.artiesten.includes(aId) && zelfdeTitel(x.titel, c.titel))) {
+    for (const s of speeldata) if (s.voorstelling === v.id && !s.soort) { s.soort = "reprise"; reprises++; }
+  }
+}
+if (herschikt || reprises || soortOvergenomen) console.log(`Verbeteringen: ${herschikt} avonden naar de titel van een leidende speellijst, ${soortOvergenomen} keer try-out/première uit die speellijst, ${reprises} avonden als reprise.`);
 
 // 3. Alles zonder speeldata weg. Artiesten met een handmatig ingevuld land of ookBekendAls blijven,
 // net als artiesten die bij een festival horen (data/festivals.json).

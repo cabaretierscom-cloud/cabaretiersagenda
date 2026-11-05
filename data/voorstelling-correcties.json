@@ -1,0 +1,52 @@
+{
+  "_uitleg": "Verbeteringen van impresariaten en artiesten. titels: avonden van deze artiest met een van deze titels (of zonder titel) krijgen de titel 'naar'. reprise: elke avond van deze voorstelling zonder soort is een reprise. Verwerkt in ophalen/samenvoegen.mjs.",
+  "titels": [
+    {
+      "artiest": "Cabarestafette",
+      "van": [
+        "Nieuw geluid!",
+        "Cabarestafette",
+        "Cabarestafette 26-27"
+      ],
+      "naar": "Cabarestafette 26-27",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    }
+  ],
+  "reprise": [
+    {
+      "artiest": "Daniël Arends",
+      "titel": "Had ik maar nooit zo aardig gedaan",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "Daniël Arends",
+      "titel": "High Class Bitch",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "David Linszen",
+      "titel": "Striptease Van De Dood",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "Lisa Ostermann",
+      "titel": "De Baas",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "Merijn Scholten",
+      "titel": "Lemming",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "Micha Wertheim",
+      "titel": "Micha Wertheim voor iedereen",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "Patrick Laureij",
+      "titel": "Kintsugi",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    }
+  ]
+}
