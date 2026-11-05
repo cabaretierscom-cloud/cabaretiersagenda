@@ -4,6 +4,7 @@
 DirectoryIndex index.html
 Options -Indexes
 ErrorDocument 404 /404.html
+AddType application/manifest+json .webmanifest
 
 # cabaretiers.com zonder www -> https://www.cabaretiers.com
 <IfModule mod_rewrite.c>

@@ -196,10 +196,11 @@ export function createTemplates(db) {
 <meta property="og:url" content="${SITE.url}${path}">
 <meta property="og:locale" content="nl_NL">
 <meta name="theme-color" content="#FF6A13">
-<link rel="icon" href="/favicon.ico" sizes="48x48">
-<link rel="icon" href="/logo.svg" type="image/svg+xml">
-<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico?v=2" sizes="48x48">
+<link rel="icon" href="/logo.svg?v=2" type="image/svg+xml">
+<link rel="icon" href="/icon-192.png?v=2" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/fonts/big-shoulders-display-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css?v=${VERSIE["style.css"]}">
 ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title, description, path, ...schema })).replace(/</g, "\\u003c")}</script>` : ""}

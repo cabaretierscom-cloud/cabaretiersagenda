@@ -62,6 +62,6 @@ Cabaret- en comedyagenda voor Nederland en België. Statische site, gebouwd door
 
 ## Vormgeving
 
-Logo: zie `ontwerp/logo/README.md` (oranje beeldmerk, punt op de i, roze .com).
+Logo: zie `ontwerp/logo/README.md` (oranje beeldmerk, punt op de i, roze .com). Favicons (`favicon.ico`, `icon-192/512.png`, `logo.svg`) maakt `scripts/favicons.mjs` uit het beeldmerk; de links in de kop hebben `?v=2` (ophogen bij een nieuw icoon, zodat Google en browsers het opnieuw ophalen), plus `public/site.webmanifest`.
 
 Affichestijl: kleurvlakken in risografie-inkten (tokens `--riso-*` in `public/style.css`), Big Shoulders Display voor koppen, Instrument Sans voor tekst. Kleur alleen in affiches, artiestkaarten en detailkoppen; de speellijst blijft zwart op wit. Elke artiest heeft een vaste `kleur` uit `KLEUREN` in `src/data.mjs`.
