@@ -8,6 +8,7 @@
 //   node scripts/ga.mjs paginas   [--dagen 28]   meest bekeken pagina's
 //   node scripts/ga.mjs bronnen   [--dagen 28]   waar bezoekers vandaan komen
 //   node scripts/ga.mjs tickets   [--dagen 28]   klikken op Tickets-knoppen per theater, artiest en voorstelling
+//   node scripts/ga.mjs google    [--dagen 28]   Google zoekresultaten (Search Console): vertoningen, klikken, positie per pagina
 //   node scripts/ga.mjs dashboard [--dagen 28]   alle rapporten (laatste 28 dagen en per maand, t/m gisteren) naar data/ga-dashboard.json voor /dashboard/
 //   ... --json                                   ruwe uitvoer als JSON
 // data/ga-dashboard.json staat in .gitignore: de repository is openbaar. GitHub Actions haalt het elke run
@@ -66,6 +67,9 @@ const VERZOEKEN = {
   overzicht: { dimensions: [{ name: "date" }], metrics: [{ name: "activeUsers" }, { name: "sessions" }, { name: "screenPageViews" }], orderBys: [{ dimension: { dimensionName: "date" } }] },
   paginas: { dimensions: [{ name: "pagePath" }], metrics: [{ name: "screenPageViews" }, { name: "activeUsers" }], orderBys: [{ metric: { metricName: "screenPageViews" }, desc: true }], limit: 50 },
   bronnen: { dimensions: [{ name: "sessionSourceMedium" }], metrics: [{ name: "sessions" }, { name: "activeUsers" }], orderBys: [{ metric: { metricName: "sessions" }, desc: true }], limit: 30 },
+  // Google zoekresultaten (Search Console, gekoppeld aan GA): vertoningen, klikken en gemiddelde positie per landingspagina.
+  // Zoektermen zelf geeft de GA-koppeling niet door; die staan alleen in Search Console.
+  google: { dimensions: [{ name: "landingPagePlusQueryString" }], metrics: [{ name: "organicGoogleSearchImpressions" }, { name: "organicGoogleSearchClicks" }, { name: "organicGoogleSearchClickThroughRate" }, { name: "organicGoogleSearchAveragePosition" }], orderBys: [{ metric: { metricName: "organicGoogleSearchImpressions" }, desc: true }], limit: 100 },
   // Eigen dimensies uit het event ticket_klik (in GA geregistreerd als aangepaste dimensies op eventniveau).
   tickets: { dimensions: [{ name: "customEvent:theater" }, { name: "customEvent:artiest" }, { name: "customEvent:voorstelling" }], metrics: [{ name: "eventCount" }], dimensionFilter: tickets, orderBys: [{ metric: { metricName: "eventCount" }, desc: true }], limit: 100 },
 };
@@ -88,7 +92,7 @@ async function dashboardPeriode(token, bereik) {
   for (const naam of Object.keys(VERZOEKEN)) {
     let r;
     try { r = await rapport(token, { ...VERZOEKEN[naam], dateRanges: bereik }); } catch (e) {
-      if (naam !== "tickets") throw e;
+      if (naam !== "tickets" && naam !== "google") throw e;
       r = { rows: [] };
     }
     uit[naam] = alsRijen(r);
