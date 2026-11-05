@@ -913,30 +913,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   const weekend = weekendVan(db.today);
   const vanavondLijst = (lijst) => lijst.filter((g) => g.datum === vandaagDag || g.datum === morgenDag);
   const weekendLijst = (lijst) => lijst.filter((g) => g.datum >= weekend.start && g.datum <= weekend.eind);
-  // Een stad krijgt een eigen pagina als er genoeg aanbod is (komende 4 weken):
-  // "vanavond" als er op minstens 25 van de 28 avonden iets is, "dit weekend" bij gemiddeld 5 per weekend.
-  const DAG_DREMPEL = { vanavond: 25, weekend: 5 };
-  const stadPaginas = (() => {
-    const eind = dagPlus(db.today, 27);
-    const uit = new Map();
-    for (const p of plaatsen) {
-      const komend = perPlaats(p).filter((g) => g.datum <= eind && g.status !== "geannuleerd");
-      const avonden = new Set(komend.map((g) => g.datum)).size;
-      // Vier hele weekenden (vrijdag t/m zondag); een half weekend dat al bezig is telt niet mee.
-      let w = weekendVan(db.today), weekenden = 0, inWeekend = 0;
-      if (weekdag(w.start) !== 5) w = weekendVan(dagPlus(w.eind, 1));
-      while (weekenden < 4) {
-        weekenden++;
-        inWeekend += komend.filter((g) => g.datum >= w.start && g.datum <= w.eind).length;
-        w = weekendVan(dagPlus(w.eind, 1));
-      }
-      const soorten = [];
-      if (avonden >= DAG_DREMPEL.vanavond) soorten.push("vanavond");
-      if (weekenden && inWeekend / weekenden >= DAG_DREMPEL.weekend) soorten.push("dit-weekend");
-      if (soorten.length) uit.set(p, soorten);
-    }
-    return uit;
-  })();
+  // Vanavond en dit weekend per stad bestaan niet meer (november 2026): dat was dubbel met het blok
+  // "Vanavond en dit weekend" op de plaatspagina. public/.htaccess stuurt die adressen met een 301 door.
+  const stadPaginas = new Map();
   const dagPad = (soort, p) => p ? `${plaatsPad(p)}${soort}/` : `/${soort}/`;
 
   function dagGroepen(list, opts) {
@@ -962,7 +941,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const nVandaag = avond ? list.filter((g) => g.datum === vandaagDag).length : list.length;
     const ander = avond ? "dit-weekend" : "vanavond";
     const andereLink = !p || stadPaginas.get(p).includes(ander) ? `<a href="${dagPad(ander, p)}">${ander === "vanavond" ? "Vanavond" : "Dit weekend"}${waar}</a>` : "";
-    const steden = [...stadPaginas].filter(([q, s]) => s.includes(soort) && q !== p).map(([q]) => `<a href="${dagPad(soort, q)}">${esc(q)}</a>`);
+    // Plaatsen met de meeste voorstellingen in deze periode, met een link naar hun plaatspagina.
+    const steden = p ? [] : telPer(list.filter((g) => !avond || g.datum === vandaagDag), (g) => T.get(g.theater).plaats).slice(0, 15).map(([q, n]) => `<a href="${plaatsPad(q)}">${esc(q)} (${n})</a>`);
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">${esc(hoofdletter(wanneer))}${esc(waar)}</h1><p>${esc(hoofdletter(periode))}${p ? "" : " in Nederland en België"}</p></div>
       <p class="dag-intro">${avond
@@ -975,7 +955,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div id="gigs">${dagGroepen(list)}</div>
       ${leegBlok}
       <div class="empty" id="dag-leeg"${list.length ? " hidden" : ""}><p>${avond ? "Vanavond" : "Dit weekend"} staat er${waar} niets in de agenda. Bekijk <a href="${p ? plaatsPad(p) : "/agenda/"}">de eerstvolgende voorstellingen</a>.</p></div>
-      ${steden.length ? `<h2 class="sub-head">${esc(hoofdletter(wanneer))} in andere steden</h2><p class="city-chips">${steden.join("")}</p>` : ""}
+      ${steden.length ? `<h2 class="sub-head">${esc(hoofdletter(wanneer))} per plaats</h2><p class="city-chips">${steden.join("")}</p>` : ""}
     </section>`;
     const desc = kort(`${titel}: ${plural(nVandaag, "voorstelling", "voorstellingen")} op ${periode}${list.length ? `, met ${opsomming([...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].slice(0, 3).map((a) => A.get(a).naam))}` : ""}. Met tijden, zalen en tickets.`);
     const kruimels = p ? [["Plaatsen", "/plaatsen/"], [p, plaatsPad(p)], [hoofdletter(wanneer), dagPad(soort, p)]] : [[hoofdletter(wanneer), dagPad(soort)]];
