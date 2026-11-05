@@ -966,28 +966,29 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   function dagBlok(p, list) {
     const tot = weekend.eind < morgenDag ? morgenDag : weekend.eind;
     const binnenkort = list.filter((g) => g.datum <= tot && g.status !== "geannuleerd");
-    const links = (stadPaginas.get(p) || []).map((s) => `<a href="${dagPad(s, p)}">${s === "vanavond" ? "Alles vanavond" : "Alles dit weekend"}</a>`).join("");
     if (!binnenkort.length) {
       const g = list.find((x) => x.status !== "geannuleerd");
-      return g ? `<p class="dag-blok-leeg"><b>Vanavond en dit weekend</b> staat er in ${esc(p)} niets in de agenda. Eerstvolgende: ${esc(fmt.long(g.datum))}, ${esc(V.get(g.voorstelling).artiesten.map((a) => A.get(a).naam).join(" en ") || V.get(g.voorstelling).titel)} in ${esc(T.get(g.theater).naam)}.</p>` : "";
+      return g ? `<p class="dag-blok-leeg"><b>Deze week en dit weekend</b> staat er in ${esc(p)} niets in de agenda. Eerstvolgende: ${esc(fmt.long(g.datum))}, ${esc(V.get(g.voorstelling).artiesten.map((a) => A.get(a).naam).join(" en ") || V.get(g.voorstelling).titel)} in ${esc(T.get(g.theater).naam)}.</p>` : "";
     }
-    // Kaartjes in de kleur van de artiest, zoals de affiches; op een telefoon schuift de rij opzij.
-    return `<section class="dag-blok" aria-labelledby="dag-blok-t">
-        <h2 id="dag-blok-t">Vanavond en dit weekend in ${esc(p)}</h2>
-        <div class="dag-kaarten">${binnenkort.slice(0, 6).map((g) => {
-          const v = V.get(g.voorstelling);
-          const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
-          // Tekst "Tickets" met class "tickets" en ticketData() voor de klikmeting (public/cookies.js).
-          const knop = `<a class="tickets dag-tickets dk-knop${kopen ? "" : " ghost"}" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow"${ticketData(g)}>${kopen ? "Tickets" : "Uitverkocht"}${ICON.extern}<span class="visually-hidden"> (externe website, opent in een nieuw tabblad)</span></a>`;
-          return `<article class="dag-kaart" data-datum="${g.datum}" style="${ink(leadInk(g.voorstelling))}">
+    // Kaartjes in de kleur van de artiest, zoals de affiches: alles van vanavond tot en met zondag, in een
+    // affichewand (strip) die opzij schuift; de actieve kaart komt naar voren (agenda.js, zoals de affiches).
+    // Het hele kaartje is de link naar de kaartverkoop (class "tickets" en ticketData() voor de klikmeting).
+    const kaartjes = binnenkort.map((g) => {
+      const v = V.get(g.voorstelling);
+      const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
+      const wie = artistNames(g.voorstelling) || v.titel;
+      return `<a class="dag-kaart tickets dag-tickets${kopen ? "" : " ghost"}" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow" data-datum="${g.datum}" style="${ink(leadInk(g.voorstelling))}"${ticketData(g)}>
             <span class="dk-dag dag-label" data-dag="${g.datum}">${g.datum === vandaagDag ? "Vanavond" : g.datum === morgenDag ? "Morgen" : hoofdletter(fmt.weekday(g.datum))}</span>
             <span class="dk-datum">${fmt.day(g.datum)} ${fmt.monthShort(g.datum)}</span>
-            <span class="dk-waar">${g.tijd ? `${g.tijd} · ` : ""}<a href="/theaters/${g.theater}/">${esc(T.get(g.theater).naam)}</a></span>
-            <h3 class="dk-wie">${artistLinks(g.voorstelling) || esc(v.titel)}</h3>
-            ${knop}
-          </article>`;
-        }).join("")}</div>
-        ${binnenkort.length > 6 || links ? `<p class="dag-nav">${links}${binnenkort.length > 6 && !links ? `<span>en nog ${binnenkort.length - 6} meer hieronder</span>` : ""}</p>` : ""}
+            <span class="dk-waar">${g.tijd ? `${g.tijd} · ` : ""}${esc(T.get(g.theater).naam)}</span>
+            <span class="dk-wie">${esc(wie)}</span>
+            <span class="dk-knop${kopen ? "" : " ghost"}">${kopen ? "Tickets" : g.status === "uitverkocht" ? "Uitverkocht" : esc(STATUSSEN[g.status])}${ICON.extern}</span>
+            <span class="visually-hidden">: ${esc(wie)} op ${esc(fmt.full(g.datum))} in ${esc(T.get(g.theater).naam)} (externe website, opent in een nieuw tabblad)</span>
+          </a>`;
+    }).join("");
+    return `<section class="dag-blok" aria-labelledby="dag-blok-t">
+        <h2 id="dag-blok-t">Vanavond, deze week en dit weekend in ${esc(p)}</h2>
+        ${strip("strip-dag", `Vanavond, deze week en dit weekend in ${p}`, kaartjes).replace('class="strip"', 'class="strip dag-kaarten"')}
       </section>`;
   }
 
