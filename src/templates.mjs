@@ -1014,10 +1014,10 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   function plaatsPagina(p) {
     const list = perPlaats(p);
     const zalen = zalenMetData.filter((t) => t.plaats === p);
-    const body = `<div class="detail-hero" style="--bg:var(--riso-yellow);--fg:#121212"><div class="wrap">
-        <h1 class="plaats-kop">Theater in ${esc(p)}</h1>
-        <p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}.</p>
-      </div></div>
+    // Kop zoals op de homepage en /agenda/: grote zwarte letters op wit, geen kleurvlak.
+    const body = `<section class="block wrap kop-plaats" aria-labelledby="t">
+      <div class="block-head"><h1 id="t">Theater in ${esc(p)}</h1><p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}</p></div>
+    </section>
       <div class="wrap detail-body">
         ${dagBlok(p, list)}
         ${uitgelichtBlok("plaats", p)}
@@ -1932,10 +1932,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     if (tryouts.length || premieres.length) vragen.push([`Zijn er try-outs of premières in ${p}?`, `Ja: ${opsomming([premieres.length && plural(premieres.length, "première", "premières"), tryouts.length && plural(tryouts.length, "try-out", "try-outs")].filter(Boolean))}. Bij een try-out is de voorstelling nog in ontwikkeling en zijn kaarten vaak goedkoper.`]);
     vragen.push(["Hoe koop ik kaarten?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van het theater, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
     const affiches = nuInTheater(() => true, (v) => genresVanV(v).includes(g) && list.some((x) => x.voorstelling === v.id));
-    const body = `<div class="detail-hero" style="${ink(info.kleur)}"><div class="wrap">
-        <h1 class="plaats-kop">${esc(info.kop)} in ${naam}</h1>
-        <p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}.</p>
-      </div></div>
+    const body = `<section class="block wrap kop-plaats" aria-labelledby="t">
+      <div class="block-head"><h1 id="t">${esc(info.kop)} in ${naam}</h1><p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}</p></div>
+    </section>
       ${affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
       <div class="wrap wall-head"><h2 id="nu-title">Nu in het theater</h2></div>
       ${strip("strip-nu", `${info.kop} in ${p}: nu in het theater`, affiches)}
