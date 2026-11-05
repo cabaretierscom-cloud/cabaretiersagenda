@@ -1531,6 +1531,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(cityCount, "plaats", "plaatsen")}${partners.length ? `, samen met ${partners.map((p) => `<a href="${artiestPad(p)}">${esc(A.get(p).naam)}</a>`).join(" en ")}` : ""}.`
       : "Op dit moment staan er geen voorstellingen gepland.";
     const festival = [...F.values()].find((f) => (f.artiesten || []).includes(a.id));
+    // "Speellijst 2026-2027": zo zoeken mensen ("theo maassen speellijst 2027", Search Console november 2026).
+    const jaren = list.length ? [...new Set([list[0].datum.slice(0, 4), list.at(-1).datum.slice(0, 4)])].join("-") : "";
     const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap${a.foto ? " hero-met-foto" : ""}">
         <div class="hero-tekst">
           <h1>${esc(a.naam)}</h1>
@@ -1539,6 +1541,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${a.foto ? fotoHtml(a) : ""}
       </div></div>
       <div class="wrap detail-body">
+        ${list.length ? `<h2 class="sub-head speellijst-kop">Speellijst ${jaren}</h2>` : ""}
         ${showIds.length ? `<div class="shows-list">${showIds.map((vid) => voorstellingPad.has(vid) ? `<a class="pill" href="${voorstellingPad.get(vid)}">${esc(V.get(vid).titel)}</a>` : `<span class="pill">${esc(V.get(vid).titel)}</span>`).join("")}</div>` : ""}
         ${list.length > 12 ? filters(list, { maand: true, waar: true }) : ""}
         <div id="gigs">${monthGroups(list, { showArtist: false })}</div>
@@ -1549,9 +1552,11 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${a.geslacht && !isGroep(a) ? `<p class="zie-ook">Bekijk ook andere <a href="/alle-cabaretiers/${a.geslacht === "vrouw" ? "vrouwen" : "mannen"}/">${a.geslacht === "vrouw" ? "vrouwelijke" : "mannelijke"} cabaretiers</a> of <a href="/alle-cabaretiers/">alle cabaretiers</a>.</p>` : ""}
       </div>`;
     const desc = list.length
-      ? kort(`${a.naam} live: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(cityCount, "plaats", "plaatsen")}${titles.length ? `, met ${titles.slice(0, 2).join(" en ")}` : ""}. Eerstvolgende op ${fmt.full(list[0].datum)}. Bekijk alle speeldata.`)
+      ? kort(`Speellijst ${jaren} van ${a.naam}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(cityCount, "plaats", "plaatsen")}${titles.length ? `, met ${titles[0]}` : ""}. Eerstvolgende op ${fmt.dayMonth(list[0].datum)}. Kaarten via het theater.`)
       : `${a.naam} op Cabaretiers.com.`;
-    return layout({ title: `${a.naam}: tournee en speeldata`, description: desc, path: `/artiesten/${a.id}/`, section: "artiesten", body, schema: { type: "ProfilePage", foto: a.foto ? a : null, kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`]], hoofd: { "@id": artiestLd(a.id)["@id"] }, extra: [artiestLd(a.id), ...eventsLd(list), ...(list.length ? [faqLd(artiestVragen(a, list), `/artiesten/${a.id}/`)] : [])] } });
+    // Titel kort genoeg voor Google (met " | Cabaretiers.com" erachter): bij een lange naam zonder het tweede deel.
+    const titel = !list.length ? a.naam : `${a.naam} speellijst ${jaren}: tournee en kaarten`.length <= 47 ? `${a.naam} speellijst ${jaren}: tournee en kaarten` : `${a.naam} speellijst ${jaren}`;
+    return layout({ title: titel, description: desc, path: `/artiesten/${a.id}/`, section: "artiesten", body, schema: { type: "ProfilePage", foto: a.foto ? a : null, kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`]], hoofd: { "@id": artiestLd(a.id)["@id"] }, extra: [artiestLd(a.id), ...eventsLd(list), ...(list.length ? [faqLd(artiestVragen(a, list), `/artiesten/${a.id}/`)] : [])] } });
   }
 
   function voorstellingTekst(vid, list) {
