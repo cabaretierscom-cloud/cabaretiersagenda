@@ -153,6 +153,7 @@ export function loadData(dir, { today }) {
     if (a.land != null && !LANDEN[a.land]) errors.push(`artiest ${a.id}: onbekend land "${a.land}"`);
     if (!KLEUREN[a.kleur]) errors.push(`artiest ${a.id}: onbekende kleur "${a.kleur}"`);
     if (a.vorm != null && !VORMEN.includes(a.vorm)) errors.push(`artiest ${a.id}: onbekende vorm "${a.vorm}"`);
+    for (const g of a.ookIn || []) if (!A.has(g) || g === a.id) errors.push(`artiest ${a.id}: ookIn "${g}" is geen andere bekende artiest`);
     if (a.geslacht != null && !GESLACHTEN.includes(a.geslacht)) errors.push(`artiest ${a.id}: onbekend geslacht "${a.geslacht}"`);
     if (a.geslacht != null && !a.geslachtBron) errors.push(`artiest ${a.id}: geslacht zonder geslachtBron`);
     // Een foto mag alleen met naamsvermelding, licentie en bron.
@@ -215,7 +216,9 @@ export function loadData(dir, { today }) {
 
   return {
     artiesten: A, theaters: T, voorstellingen: V, upcoming, lastFetched, today,
-    gigsForArtist: (id) => upcoming.filter((g) => V.get(g.voorstelling).artiesten.includes(id)),
+    // ookIn: de artiest speelt ook in een duo of groep (Roel Maalderink in Roel & Jos Maalderink); die avonden
+    // staan dan ook op zijn of haar eigen pagina.
+    gigsForArtist: (id) => { const ids = [id, ...(A.get(id)?.ookIn || [])]; return upcoming.filter((g) => V.get(g.voorstelling).artiesten.some((a) => ids.includes(a))); },
     gigsForTheater: (id) => upcoming.filter((g) => g.theater === id),
     festivals: F,
     // Alleen vermeldingen die vandaag lopen.

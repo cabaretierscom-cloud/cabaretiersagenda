@@ -1577,7 +1577,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const list = db.gigsForArtist(a.id);
     const titles = [...new Set(list.map((g) => echteTitel(g.voorstelling)).filter(Boolean))];
     const showIds = [...new Set(list.map((g) => g.voorstelling).filter((vid) => echteTitel(vid)))];
-    const partners = [...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].filter((x) => x !== a.id);
+    const partners = [...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].filter((x) => x !== a.id && !(a.ookIn || []).includes(x));
     const cityCount = new Set(list.map((g) => T.get(g.theater).plaats)).size;
     const summary = list.length
       ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(cityCount, "plaats", "plaatsen")}${partners.length ? `, samen met ${partners.map((p) => `<a href="${artiestPad(p)}">${esc(A.get(p).naam)}</a>`).join(" en ")}` : ""}.`
@@ -1588,7 +1588,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap${a.foto ? " hero-met-foto" : ""}">
         <div class="hero-tekst">
           <h1>${esc(a.naam)}</h1>
-          <p>${summary}${festival ? ` Onderdeel van <a href="/festivals/${festival.id}/">${esc(festival.naam)}</a>.` : ""}</p>
+          <p>${summary}${(a.ookIn || []).filter((x) => A.has(x)).length ? ` Ook te zien als ${opsomming(a.ookIn.filter((x) => A.has(x)).map((x) => `<a href="${artiestPad(x)}">${esc(A.get(x).naam)}</a>`))}.` : ""}${festival ? ` Onderdeel van <a href="/festivals/${festival.id}/">${esc(festival.naam)}</a>.` : ""}</p>
         </div>
         ${a.foto ? fotoHtml(a) : ""}
       </div></div>

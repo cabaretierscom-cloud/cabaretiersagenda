@@ -14,8 +14,6 @@ AddType application/manifest+json .webmanifest
   # Plaatspagina's heetten tot november 2026 /plaatsen/<plaats>/; het overzicht /plaatsen/ blijft.
   RewriteRule ^plaatsen/([^/]+)/?$ https://www.cabaretiers.com/theaters-in-$1/ [L,R=301]
   RewriteRule ^plaatsen/([^/]+)/(vanavond|dit-weekend)/?$ https://www.cabaretiers.com/theaters-in-$1/ [L,R=301]
-  # Roel Maalderink staat sinds november 2026 als Roel & Jos Maalderink in de agenda (Verbroedering is van hen samen).
-  RewriteRule ^artiesten/roel-maalderink(/.*)?$ https://www.cabaretiers.com/artiesten/roel-en-jos-maalderink$1 [L,R=301]
   # Genres stonden tot november 2026 onder /genres/; nu onder /agenda/ (ook /genres/ zelf).
   # Het genre theaterkomedie heet sinds november 2026 komedie.
   RewriteRule ^(genres|agenda)/theaterkomedie(/.*)?$ https://www.cabaretiers.com/agenda/komedie$2 [L,R=301]

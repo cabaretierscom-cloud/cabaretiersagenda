@@ -122,8 +122,8 @@ const ARTIESTEN = [
   { naam: "Ricky Koole", url: "https://rickykoole.nl/shows/", volgorde: ZP },
   { naam: "Rob Scheepers", url: "https://www.robscheepers.com/speellijst", volgorde: ZPT },
   { naam: "Roel C. Verburg", url: "https://roelcverburg.nl/tourdata/", volgorde: TZP },
-  // Verbroedering is een voorstelling van Roel én Jos Maalderink (eigenaar, november 2026).
-  { naam: "Roel & Jos Maalderink", url: "https://www.roelmaalderink.nl/", volgorde: ZPT },
+  // Verbroedering is een voorstelling van Roel én Jos Maalderink; solovoorstellingen blijven van Roel (eigenaar, november 2026).
+  { naam: "Roel Maalderink", url: "https://www.roelmaalderink.nl/", volgorde: ZPT, artiestPerTitel: [[/verbroedering/i, "Roel & Jos Maalderink"]] },
   { naam: "Roué Verveer", url: "https://roueverveer.nl/speellijst/", volgorde: ZP },
   { naam: "Ruud Smulders", url: "https://ruudsmulders.nl/speellijst/", volgorde: PZ },
   { naam: "Sara Kroos", url: "https://www.sarakroos.nl/", volgorde: TZP },
@@ -203,7 +203,8 @@ export default {
         if (!lijktPlaats(r.plaats) || !lijktZaal(r.zaal) || /cura[cç]ao|aruba|bonaire|suriname|paramaribo|sint maarten/i.test(tekst)) continue;
         out.push({
           theater: { zoeken: true, naam: r.zaal, plaats: r.plaats, land: r.land, website: zaalSite(rij.links, a.url, a.naam) },
-          artiesten: [a.naam],
+          // artiestPerTitel: een voorstelling op de site van de artiest die van een duo of groep is ([regex, naam]).
+          artiesten: [a.artiestPerTitel?.find(([re]) => re.test(a.titel || r.titel || ""))?.[1] || a.naam],
           titel: a.titel || r.titel,
           genre: "cabaret",
           datum: r.datum,
