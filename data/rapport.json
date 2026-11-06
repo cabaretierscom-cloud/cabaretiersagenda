@@ -1,12 +1,12 @@
 {
-  "datum": "2026-11-05",
+  "datum": "2026-11-06",
   "totaal": {
-    "speeldata": 7756,
-    "komend": 7399,
-    "artiesten": 525,
+    "speeldata": 7743,
+    "komend": 7318,
+    "artiesten": 522,
     "zalen": 687,
     "plaatsen": 485,
-    "voorstellingen": 832
+    "voorstellingen": 815
   },
   "bronnen": [
     {
@@ -78,7 +78,7 @@
       "naam": "Comedyhuis Utrecht",
       "opgehaald": "2026-11-05",
       "speeldata": 312,
-      "vorige": 311,
+      "vorige": 312,
       "dubbel": 0
     },
     {
@@ -86,7 +86,7 @@
       "naam": "Comedytrain",
       "opgehaald": "2026-11-05",
       "speeldata": 140,
-      "vorige": 139,
+      "vorige": 140,
       "dubbel": 0
     },
     {
@@ -94,7 +94,7 @@
       "naam": "Cpunt",
       "opgehaald": "2026-11-05",
       "speeldata": 102,
-      "vorige": 101,
+      "vorige": 102,
       "dubbel": 0
     },
     {
@@ -126,7 +126,7 @@
       "naam": "Goudse Schouwburg",
       "opgehaald": "2026-11-05",
       "speeldata": 81,
-      "vorige": 80,
+      "vorige": 81,
       "dubbel": 0
     },
     {
@@ -142,7 +142,7 @@
       "naam": "Comedy Club Haug",
       "opgehaald": "2026-11-05",
       "speeldata": 127,
-      "vorige": 125,
+      "vorige": 127,
       "dubbel": 0
     },
     {
@@ -182,7 +182,7 @@
       "naam": "Theater de Kampanje",
       "opgehaald": "2026-11-05",
       "speeldata": 57,
-      "vorige": 58,
+      "vorige": 57,
       "dubbel": 0
     },
     {
@@ -398,7 +398,7 @@
       "naam": "Verkadefabriek",
       "opgehaald": "2026-11-05",
       "speeldata": 85,
-      "vorige": 86,
+      "vorige": 85,
       "dubbel": 0
     },
     {
@@ -414,7 +414,7 @@
       "naam": "Theater aan het Vrijthof",
       "opgehaald": "2026-11-05",
       "speeldata": 39,
-      "vorige": 42,
+      "vorige": 39,
       "dubbel": 0
     },
     {
@@ -430,7 +430,7 @@
       "naam": "Wilminktheater en Muziekcentrum Enschede",
       "opgehaald": "2026-11-05",
       "speeldata": 79,
-      "vorige": 78,
+      "vorige": 79,
       "dubbel": 0
     },
     {
@@ -438,7 +438,7 @@
       "naam": "Zaantheater",
       "opgehaald": "2026-11-05",
       "speeldata": 56,
-      "vorige": 57,
+      "vorige": 56,
       "dubbel": 0
     },
     {
@@ -462,16 +462,16 @@
       "naam": "Agenda van 5to9",
       "opgehaald": "2026-11-05",
       "speeldata": 442,
-      "vorige": 440,
+      "vorige": 441,
       "dubbel": 28
     },
     {
       "bron": "bunker",
       "naam": "Agenda van Bunker Theaterzaken",
       "opgehaald": "2026-11-05",
-      "speeldata": 381,
-      "vorige": 381,
-      "dubbel": 357
+      "speeldata": 372,
+      "vorige": 372,
+      "dubbel": 366
     },
     {
       "bron": "fris",
@@ -493,51 +493,20 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-05",
-      "speeldata": 2458,
-      "vorige": 2456,
-      "dubbel": 1381
+      "speeldata": 2457,
+      "vorige": 2455,
+      "dubbel": 1382
     }
   ],
   "nieuw": {
-    "artiesten": [
-      {
-        "id": "testing",
-        "naam": "Testing"
-      },
-      {
-        "id": "trevor-wallace",
-        "naam": "Trevor Wallace"
-      }
-    ],
-    "zalen": [
-      {
-        "id": "plopsa-theater-de-panne",
-        "naam": "Plopsa Theater",
-        "plaats": "De Panne",
-        "land": "BE",
-        "website": null
-      }
-    ],
+    "artiesten": [],
+    "zalen": [],
     "voorstellingen": [
       {
-        "id": "testing-testevent-31",
-        "titel": "Testevent 31",
+        "id": "alina-sharipova-alina-sharipova",
+        "titel": "Alina Sharipova -",
         "artiesten": [
-          "testing"
-        ]
-      },
-      {
-        "id": "trevor-wallace-trevor-wallace",
-        "titel": "Trevor Wallace",
-        "artiesten": [
-          "trevor-wallace"
-        ]
-      },
-      {
-        "id": "wilko-terwijn-oudejaars-2026",
-        "titel": "Oudejaars 2026",
-        "artiesten": [
-          "wilko-terwijn"
+          "alina-sharipova"
         ]
       }
     ]
@@ -651,6 +620,15 @@
       "zalen": 687,
       "plaatsen": 485,
       "voorstellingen": 832
+    },
+    {
+      "datum": "2026-11-06",
+      "speeldata": 7743,
+      "komend": 7318,
+      "artiesten": 522,
+      "zalen": 687,
+      "plaatsen": 485,
+      "voorstellingen": 815
     }
   ]
 }

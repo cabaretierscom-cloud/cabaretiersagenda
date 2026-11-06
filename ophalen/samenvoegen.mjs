@@ -486,6 +486,16 @@ for (const v of voorstellingen) {
   v.artiesten = [...new Set(v.artiesten.flatMap((id) => vervang.get(id) || [id]))];
 }
 
+// 1b. Andere schrijfwijzen van een titel (data/titel-aliassen.json, per artiest): "Jubileumvoorstelling"
+//     -> "De Grote Jubileumshow - 20 Jaar Jandino". Zo worden ze in stap 2 één voorstelling.
+const titelAliassen = existsSync(join(dataDir, "titel-aliassen.json")) ? read("titel-aliassen.json") : {};
+for (const [naam, titels] of Object.entries(titelAliassen)) {
+  const a = artiestOpNaam.get(naamSleutel(naam));
+  if (!a) continue;
+  const doel = new Map(Object.entries(titels).map(([van, naar]) => [slug(van), naar]));
+  for (const v of voorstellingen) if (v.artiesten.includes(a.id) && doel.has(slug(v.titel))) v.titel = doel.get(slug(v.titel));
+}
+
 // 2. Voorstellingen die nu dezelfde artiesten en (bijna) dezelfde titel hebben, worden één.
 const naarVoorstelling = new Map();
 for (let i = 0; i < voorstellingen.length; i++) {
@@ -508,6 +518,13 @@ if (naarVoorstelling.size) {
       gezien.add(k);
       return true;
     });
+}
+
+// 2a. Een avond uit een speellijst die het theater zelf ook meldt (zelfde voorstelling, zaal en datum;
+//     bv. pas na het samenvoegen van artiesten of titels gelijk), valt weg: het theater heeft de tijd en kaartlink.
+{
+  const viaTheater = new Set(speeldata.filter((s) => !speellijstBronnen.has(s.herkomst)).map((s) => [s.voorstelling, s.theater, s.datum].join("|")));
+  speeldata = speeldata.filter((s) => !(speellijstBronnen.has(s.herkomst) && !s.tijd && viaTheater.has([s.voorstelling, s.theater, s.datum].join("|"))));
 }
 
 // 2b. Recensies bij de voorstelling. Per krant tellen de theaterpagina's: de sterren die de meeste

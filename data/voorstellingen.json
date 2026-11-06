@@ -135,6 +135,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "alina-sharipova-alina-sharipova",
+    "titel": "Alina Sharipova -",
+    "artiesten": [
+      "alina-sharipova"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "alina-sharipova-bugra-gedik-alina-sharipova-en-bugra-gedik",
     "titel": "Alina Sharipova & Bugra Gedik",
     "artiesten": [
@@ -2213,14 +2221,6 @@
     "genre": "stand-up"
   },
   {
-    "id": "ed-night-ed-night",
-    "titel": "Ed Night",
-    "artiesten": [
-      "ed-night"
-    ],
-    "genre": "stand-up"
-  },
-  {
     "id": "eeftink-en-neimeijer-niets-menselijks-is-ons-vreemd",
     "titel": "Niets Menselijks Is Ons Vreemd!",
     "artiesten": [
@@ -3193,22 +3193,6 @@
   {
     "id": "jandino-asporaat-de-grote-jubileumshow-20-jaar-jandino",
     "titel": "De Grote Jubileumshow - 20 Jaar Jandino",
-    "artiesten": [
-      "jandino-asporaat"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "jandino-asporaat-de-grote-jubileumshow-jandino-20-jaar",
-    "titel": "De Grote Jubileumshow – Jandino 20 Jaar",
-    "artiesten": [
-      "jandino-asporaat"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "jandino-asporaat-jubileumvoorstelling",
-    "titel": "Jubileumvoorstelling",
     "artiesten": [
       "jandino-asporaat"
     ],
@@ -5159,14 +5143,6 @@
     "theater": "comedy-cafe-amsterdam"
   },
   {
-    "id": "oscar-smit-427-000",
-    "titel": "€ 427.000,-",
-    "artiesten": [
-      "oscar-smit"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "oscar-smit-472-000",
     "titel": "€ 472.000,-",
     "artiesten": [
@@ -5259,14 +5235,6 @@
   {
     "id": "patrick-spicer",
     "titel": "",
-    "artiesten": [
-      "patrick-spicer"
-    ],
-    "genre": "stand-up"
-  },
-  {
-    "id": "patrick-spicer-patrick-spicer",
-    "titel": "Patrick Spicer",
     "artiesten": [
       "patrick-spicer"
     ],
@@ -5624,14 +5592,6 @@
       "davine-perik"
     ],
     "genre": "stand-up"
-  },
-  {
-    "id": "rayen-en-friends-wonderful-christmas-time",
-    "titel": "Wonderful Christmas time",
-    "artiesten": [
-      "rayen-en-friends"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "rayen-panday-en-friends-wonderful-christmastime",
