@@ -940,6 +940,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   const weekend = weekendVan(db.today);
   const vanavondLijst = (lijst) => lijst.filter((g) => g.datum === vandaagDag || g.datum === morgenDag);
   const weekendLijst = (lijst) => lijst.filter((g) => g.datum >= weekend.start && g.datum <= weekend.eind);
+  // Teksten over vanavond en dit weekend (plaatspagina's): de build draait elke nacht, dus "vanavond" is de builddag.
+  const weekendPeriode = () => `${fmt.weekday(weekend.start)} ${fmt.dayMonth(weekend.start)}${weekend.eind !== weekend.start ? ` tot en met ${fmt.weekday(weekend.eind)} ${fmt.dayMonth(weekend.eind)}` : ""}`;
+  const avondZin = (gigs, max, metDag) => opsomming(gigs.slice(0, max).map((g) => `${esc(artistNames(g.voorstelling) || V.get(g.voorstelling).titel)}${echteTitel(g.voorstelling) ? ` met <em>${esc(echteTitel(g.voorstelling))}</em>` : ""} ${metDag ? `op ${fmt.weekday(g.datum)} ` : ""}${g.tijd ? `om ${g.tijd} ` : ""}in ${theaterLink(g.theater)}`)) + (gigs.length > max ? ` en nog ${gigs.length - max} meer` : "");
   // Vanavond en dit weekend per stad bestaan niet meer (november 2026): dat was dubbel met het blok
   // "Vanavond en dit weekend" op de plaatspagina. public/.htaccess stuurt die adressen met een 301 door.
   const stadPaginas = new Map();
@@ -995,7 +998,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const binnenkort = list.filter((g) => g.datum <= tot && g.status !== "geannuleerd");
     if (!binnenkort.length) {
       const g = list.find((x) => x.status !== "geannuleerd");
-      return g ? `<p class="dag-blok-leeg"><b>Deze week en dit weekend</b> staat er in ${esc(p)} niets in de agenda. Eerstvolgende: ${esc(fmt.long(g.datum))}, ${esc(V.get(g.voorstelling).artiesten.map((a) => A.get(a).naam).join(" en ") || V.get(g.voorstelling).titel)} in ${esc(T.get(g.theater).naam)}.</p>` : "";
+      return g ? `<p class="dag-blok-leeg"><b>Deze week</b> staat er in ${esc(p)} niets in de agenda. Eerstvolgende: ${esc(fmt.long(g.datum))}, ${esc(V.get(g.voorstelling).artiesten.map((a) => A.get(a).naam).join(" en ") || V.get(g.voorstelling).titel)} in ${esc(T.get(g.theater).naam)}.</p>` : "";
     }
     // Kaartjes in de kleur van de artiest, zoals de affiches: alles van vanavond tot en met zondag, in een
     // affichewand (strip) die opzij schuift; de actieve kaart komt naar voren (agenda.js, zoals de affiches).
@@ -1015,8 +1018,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
           </a>`;
     }).join("");
     return `<section class="dag-blok" aria-labelledby="dag-blok-t">
-        <h2 id="dag-blok-t">Vanavond, deze week en dit weekend in ${esc(p)}</h2>
-        ${strip("strip-dag", `Vanavond, deze week en dit weekend in ${p}`, kaartjes).replace('class="strip"', 'class="strip dag-kaarten"')}
+        <h2 id="dag-blok-t">Deze week in ${esc(p)}</h2>
+        ${strip("strip-dag", `Deze week in ${p}`, kaartjes).replace('class="strip"', 'class="strip dag-kaarten"')}
       </section>`;
   }
 
@@ -1476,6 +1479,15 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <p>${artiestTel.length === 1 ? `Op het programma staat ${top[0]}.` : `${artiestTel.length} artiesten treden de komende tijd op in ${naam}, onder wie ${opsomming(top)}.`}` +
         `${maanden.length > 1 && maanden[0][1] > 1 ? ` De drukste maand in het theater is ${fmt.monthYear(maanden[0][0] + "-01")}, met ${maanden[0][1]} voorstellingen.` : ""}${uitverkochtZin(list)}</p>`);
     }
+    // Vanavond en dit weekend (zoektermen als "theater Eindhoven vanavond", "cabaret dit weekend").
+    {
+      const open = list.filter((g) => g.status !== "geannuleerd");
+      const vanavond = open.filter((g) => g.datum === vandaagDag), dw = weekendLijst(open);
+      delen.push(`<h2>Vanavond en dit weekend in ${naam}</h2>
+        <p>${vanavond.length ? `Vanavond (${esc(fmt.long(vandaagDag))}) ${vanavond.length === 1 ? "staat er één voorstelling" : `staan er ${vanavond.length} voorstellingen`} op het programma: ${avondZin(vanavond, 4)}.` : `Vanavond staat er in ${naam} niets in de agenda.`}` +
+        ` ${dw.length ? `Dit weekend, ${esc(weekendPeriode())}, ${dw.length === 1 ? "is er één voorstelling" : `zijn er ${dw.length} voorstellingen`}: ${avondZin(dw, 5, true)}.` : `Dit weekend staat er in ${naam} niets in de agenda.`}` +
+        ` Bekijk ook wat er <a href="/vanavond/">vanavond</a> en <a href="/dit-weekend/">dit weekend</a> in heel Nederland en België te zien is.</p>`);
+    }
     const bijz = [];
     const tryouts = bijzonder(list, "try-out"), premieres = bijzonder(list, "première");
     if (premieres.length) bijz.push(`${premieres.length === 1 ? "Er is een première" : `Er zijn ${premieres.length} premières`}: ${opsomming(premieres.slice(0, 3).map((g) => `${esc(artistNames(g.voorstelling))} op ${fmt.dayMonth(g.datum)} in ${theaterLink(g.theater)}`))}.`);
@@ -1523,6 +1535,12 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       : `${artiestTel.length} artiesten, onder wie ${opsomming(artiestTel.slice(0, 8).map(([id]) => link(id)))}.`]);
     const e = list[0];
     vragen.push([`Wat is de eerstvolgende theatervoorstelling in ${p}?`, `${wat(e)}, op ${fmt.full(e.datum)}${e.tijd ? ` om ${e.tijd}` : ""} in ${theaterLink(e.theater)}.${e.status === "uitverkocht" ? " Deze voorstelling is uitverkocht." : ""}`]);
+    {
+      const open = list.filter((g) => g.status !== "geannuleerd");
+      const vanavond = open.filter((g) => g.datum === vandaagDag), dw = weekendLijst(open);
+      vragen.push([`Wat is er vanavond te doen in ${p}?`, vanavond.length ? `Vanavond (${esc(fmt.long(vandaagDag))}): ${avondZin(vanavond, 5)}.` : `Vanavond staat er in ${naam} niets in de agenda. De eerstvolgende voorstelling is op ${esc(fmt.full(e.datum))}: ${wat(e)} in ${theaterLink(e.theater)}.`]);
+      vragen.push([`Wat is er dit weekend te zien in ${p}?`, dw.length ? `Dit weekend (${esc(weekendPeriode())}): ${avondZin(dw, 6, true)}.` : `Dit weekend staat er in ${naam} niets in de agenda. Bekijk wat er <a href="/dit-weekend/">dit weekend</a> elders te zien is.`]);
+    }
     const maand = list[0].datum.slice(0, 7), inMaand = list.filter((g) => g.datum.startsWith(maand));
     if (inMaand.length > 1) vragen.push([`Wat is er in ${maandNaam(maand)} te zien in ${p}?`, `${plural(inMaand.length, "voorstelling", "voorstellingen")}: ${perNaam(inMaand, 5)}${new Set(inMaand.map((g) => artistNames(g.voorstelling))).size > 5 ? " en meer" : ""}.`]);
     const cab = list.filter((g) => heeftGenre(g, "cabaret"));
