@@ -122,7 +122,8 @@ const ARTIESTEN = [
   { naam: "Ricky Koole", url: "https://rickykoole.nl/shows/", volgorde: ZP },
   { naam: "Rob Scheepers", url: "https://www.robscheepers.com/speellijst", volgorde: ZPT },
   { naam: "Roel C. Verburg", url: "https://roelcverburg.nl/tourdata/", volgorde: TZP },
-  { naam: "Roel Maalderink", url: "https://www.roelmaalderink.nl/", volgorde: ZPT },
+  // Verbroedering is een voorstelling van Roel én Jos Maalderink (eigenaar, november 2026).
+  { naam: "Roel & Jos Maalderink", url: "https://www.roelmaalderink.nl/", volgorde: ZPT },
   { naam: "Roué Verveer", url: "https://roueverveer.nl/speellijst/", volgorde: ZP },
   { naam: "Ruud Smulders", url: "https://ruudsmulders.nl/speellijst/", volgorde: PZ },
   { naam: "Sara Kroos", url: "https://www.sarakroos.nl/", volgorde: TZP },
