@@ -104,7 +104,7 @@ export function metUtm(url) {
   } catch { return url; }
 }
 
-export function createTemplates(db) {
+export function createTemplates(db, { ga = null } = {}) {
   const { artiesten: A, theaters: T, voorstellingen: V } = db;
   // Festivalnamen staan ook als "artiest" in de gegevens (om voorstellingen aan het festival te koppelen,
   // zie festivals.json). Die krijgen geen artiestpagina: links gaan naar de festivalpagina.
@@ -577,12 +577,21 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // "Nu in het theater": voorstellingen met een promobeeld (data/promo.json), meeste speeldata eerst,
   // hooguit één per artiest. Bovenin het beeld, daaronder het kleurvlak van de artiest.
   // Met `artiest` (id -> ja/nee) alleen voorstellingen van die artiesten (zoals de mannen of vrouwen).
+  // Paginaweergaven per artiest in de laatste 28 dagen (artiestpagina en voorstellingspagina's samen, zoals
+  // op /dashboard/). "Nu in het theater" zet de meest bekeken artiesten vooraan; elke build werkt dat bij.
+  const weergavenArtiest = new Map();
+  for (const r of ga?.perioden?.[0]?.artiesten || []) {
+    const id = String(r.pagePath || "").split("/")[2];
+    if (id) weergavenArtiest.set(id, (weergavenArtiest.get(id) || 0) + (Number(r.screenPageViews) || 0));
+  }
+  const weergaven = (v) => Math.max(0, ...v.artiesten.map((a) => weergavenArtiest.get(a) || 0));
+
   function nuInTheater(artiest = () => true, voorstelling = () => true) {
     const gezien = new Set();
     const lijst = [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id) && artiest(v.artiesten[0]) && voorstelling(v))
       .map((v) => ({ v, list: up.filter((g) => g.voorstelling === v.id && g.status !== "geannuleerd") }))
       .filter(({ list }) => list.length)
-      .sort((x, y) => y.list.length - x.list.length || x.list[0].datum.localeCompare(y.list[0].datum))
+      .sort((x, y) => weergaven(y.v) - weergaven(x.v) || y.list.length - x.list.length || x.list[0].datum.localeCompare(y.list[0].datum))
       .filter(({ v }) => !gezien.has(v.artiesten[0]) && gezien.add(v.artiesten[0]))
       .slice(0, 20);
     return afwisselend(lijst, ({ v }) => A.get(v.artiesten[0]).kleur, { schuiven: false })

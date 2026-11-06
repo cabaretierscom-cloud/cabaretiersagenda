@@ -34,7 +34,11 @@ try {
   console.error(err.message);
   process.exit(1);
 }
-const t = createTemplates(db);
+// Bezoekerscijfers (data/ga-dashboard.json, niet in de repository): voor /dashboard/ en de volgorde van
+// "Nu in het theater" (meest bekeken artiesten eerst). Zonder bestand: de gewone volgorde.
+const gaBestand = join(root, "data", "ga-dashboard.json");
+const ga = existsSync(gaBestand) ? JSON.parse(readFileSync(gaBestand, "utf8")) : null;
+const t = createTemplates(db, { ga });
 
 rmSync(out, { recursive: true, force: true });
 cpSync(join(root, "public"), out, { recursive: true });
@@ -92,8 +96,6 @@ write("/404.html", t.notFound());
 // data/ga-dashboard.json staat niet in de repository (openbaar); `npm run ga -- dashboard` maakt het.
 {
   // Eén pagina per periode: /dashboard/ (laatste 28 dagen) en /dashboard/<maand-jaar>/.
-  const f = join(root, "data", "ga-dashboard.json");
-  const ga = existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : null;
   for (const id of ga?.perioden?.length ? ga.perioden.map((p) => p.id) : [""]) {
     write(t.dashboardPad(id), t.dashboardPagina(ga, id));
     pages.pop(); // niet in de sitemap
