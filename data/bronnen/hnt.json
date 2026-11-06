@@ -1,7 +1,7 @@
 {
   "bron": "hnt",
   "naam": "Het Nationale Theater",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "koninklijke-schouwburg",
@@ -12,20 +12,6 @@
       "website": "https://www.hnt.nl"
     }
   ],
-  "speeldata": [
-    {
-      "theater": "koninklijke-schouwburg",
-      "artiesten": [
-        "Hassan El Fad"
-      ],
-      "titel": "Met Marmoucha Orchestra & The Super Gnawa Girls",
-      "genre": "cabaret",
-      "datum": "2026-11-01",
-      "tijd": "16:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.hnt.nl/nl/voorstellingen/hassan-el-fad-x817"
-    }
-  ],
+  "speeldata": [],
   "recensies": {}
 }

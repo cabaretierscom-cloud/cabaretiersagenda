@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-01",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -797,7 +797,7 @@
       "genre": "cabaret",
       "datum": "2027-01-03",
       "tijd": "15:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
     },
@@ -810,7 +810,7 @@
       "genre": "cabaret",
       "datum": "2027-01-03",
       "tijd": "19:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
     },
@@ -885,7 +885,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-01-20",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -898,7 +898,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-01-21",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -911,7 +911,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-01-22",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -924,7 +924,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-10",
       "tijd": "20:00",
       "status": "gepland",
@@ -937,7 +937,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-11",
       "tijd": "20:00",
       "status": "gepland",
@@ -950,7 +950,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-12",
       "tijd": "20:00",
       "status": "gepland",
@@ -963,7 +963,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-13",
       "tijd": "20:00",
       "status": "gepland",
@@ -976,7 +976,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-14",
       "tijd": "20:00",
       "status": "gepland",
@@ -1265,7 +1265,7 @@
       "genre": "cabaret",
       "datum": "2026-11-27",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
     },
@@ -1444,7 +1444,7 @@
         "Ratatatata!"
       ],
       "titel": "Lachen, schieten, brullen",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-03-31",
       "tijd": "20:00",
       "status": "gepland",
@@ -1457,7 +1457,7 @@
         "Ratatatata!"
       ],
       "titel": "Lachen, schieten, brullen",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-04-01",
       "tijd": "20:00",
       "status": "gepland",
@@ -1470,7 +1470,7 @@
         "Ratatatata!"
       ],
       "titel": "Lachen, schieten, brullen",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-04-02",
       "tijd": "20:00",
       "status": "gepland",
@@ -1483,7 +1483,7 @@
         "Ratatatata!"
       ],
       "titel": "Lachen, schieten, brullen",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-04-03",
       "tijd": "20:00",
       "status": "gepland",
@@ -1512,7 +1512,7 @@
       "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/najib-roue-56186/"
     },
@@ -1613,7 +1613,7 @@
         "LIFT"
       ],
       "titel": "Jelka van Houten en Sanne Wallis de Vries",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-03-03",
       "tijd": "20:00",
       "status": "gepland",
@@ -1626,7 +1626,7 @@
         "Huisgenoten"
       ],
       "titel": "De nieuwe romantische comedy",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-03-20",
       "tijd": "20:00",
       "status": "gepland",
@@ -1639,7 +1639,7 @@
         "De Verleiders"
       ],
       "titel": "Zoek Dekking! – over pensioenen en verzekeringen",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-03-31",
       "tijd": "20:00",
       "status": "gepland",

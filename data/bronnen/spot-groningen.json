@@ -1,7 +1,7 @@
 {
   "bron": "spot-groningen",
   "naam": "SPOT Groningen",
-  "opgehaald": "2026-11-01",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "de-oosterpoort",
@@ -54,45 +54,6 @@
   ],
   "speeldata": [
     {
-      "theater": "stadsschouwburg-groningen",
-      "artiesten": [
-        "Plien & Bianca"
-      ],
-      "titel": "Harrekidee!",
-      "genre": "cabaret",
-      "datum": "2026-11-02",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "reprise",
-      "bron": "https://www.spotgroningen.nl/programma/plien-bianca-8/"
-    },
-    {
-      "theater": "stadsschouwburg-groningen",
-      "artiesten": [
-        "Plien & Bianca"
-      ],
-      "titel": "Harrekidee!",
-      "genre": "cabaret",
-      "datum": "2026-11-03",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "reprise",
-      "bron": "https://www.spotgroningen.nl/programma/plien-bianca-9/"
-    },
-    {
-      "theater": "usva-groningen",
-      "artiesten": [
-        "Marie Koet"
-      ],
-      "titel": "Eindspel",
-      "genre": "stand-up",
-      "datum": "2026-11-04",
-      "tijd": "20:30",
-      "status": "geannuleerd",
-      "soort": "try-out",
-      "bron": "https://www.spotgroningen.nl/programma/marie-koet/"
-    },
-    {
       "theater": "usva-groningen",
       "artiesten": [
         "Marie Koet"
@@ -140,7 +101,7 @@
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/groninger-studenten-cabaret-festival-24/"
     },
@@ -231,7 +192,7 @@
       "genre": "cabaret",
       "datum": "2026-12-02",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.spotgroningen.nl/programma/luuk-weggemans/"
     },

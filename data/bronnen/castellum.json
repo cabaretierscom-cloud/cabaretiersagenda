@@ -1,7 +1,7 @@
 {
   "bron": "castellum",
   "naam": "Castellum",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "castellum",
@@ -370,7 +370,7 @@
       "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://castellum.nl/theater/joosen-en-de-jager-niks-aan-het-handje"
     },
@@ -474,7 +474,7 @@
       "genre": "cabaret",
       "datum": "2027-01-07",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://castellum.nl/theater/nabil-daar-is-hij-weer"
     },
@@ -594,19 +594,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://castellum.nl/theater/david-van-rosmalen-als-ik-jou-was"
-    },
-    {
-      "theater": "castellum",
-      "artiesten": [
-        "Rayen Panday"
-      ],
-      "titel": "Grip",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://castellum.nl/theater/rayen-panday-grip"
     },
     {
       "theater": "castellum",

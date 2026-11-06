@@ -1,7 +1,7 @@
 {
   "bron": "gouda",
   "naam": "Goudse Schouwburg",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "goudse-schouwburg",
@@ -22,7 +22,7 @@
       "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/ricky-koole-rare-leeftijd-10025258/"
     },
@@ -177,6 +177,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/vrouwejaars-10025681/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Bro’s"
+      ],
+      "titel": "Bromens",
+      "genre": "cabaret",
+      "datum": "2026-12-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/bros-bromens-10025221/"
     },
     {
       "theater": "goudse-schouwburg",

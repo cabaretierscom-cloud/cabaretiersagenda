@@ -1,7 +1,7 @@
 {
   "bron": "hetpark",
   "naam": "Schouwburg Het Park",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "schouwburg-het-park",
@@ -67,7 +67,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-11-15",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/guido-weijers-10345756/"
     },
@@ -106,7 +106,7 @@
       "genre": "cabaret",
       "datum": "2026-11-19",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://hetpark.nl/agenda/yentl-en-de-boer-rekhalzen-reprise-10353113/"
     },
@@ -219,7 +219,7 @@
       "genre": "cabaret",
       "datum": "2026-12-18",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/richard-groenendijk-10348361/"
     },
@@ -773,6 +773,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/jandino-20-jaar-10356193/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Woordgrapf"
+      ],
+      "titel": "De Nationale avond van de Woordgrapf",
+      "genre": "cabaret",
+      "datum": "2027-09-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/woordgrapf-de-nationale-avond-van-de-woordgrapf-10388060/"
     }
   ],
   "recensies": {}

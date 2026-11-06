@@ -1,7 +1,7 @@
 {
   "bron": "zuidplein",
   "naam": "Theater Zuidplein",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "theater-zuidplein",
@@ -13,58 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Marja van Katendrecht"
-      ],
-      "titel": "Marja's Spetterende Bingoshow",
-      "genre": "comedy",
-      "datum": "2026-11-01",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-spetterende-bingoshow-4mg2"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Marja van Katendrecht"
-      ],
-      "titel": "Marja's Spetterende Bingoshow",
-      "genre": "comedy",
-      "datum": "2027-04-04",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-spetterende-bingoshow-4mg2"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Marja van Katendrecht"
-      ],
-      "titel": "Marja's Spetterende Bingoshow",
-      "genre": "comedy",
-      "datum": "2027-05-30",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-spetterende-bingoshow-4mg2"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Live in Rotterdam"
-      ],
-      "titel": "Doğu Demirkol Stand Up",
-      "genre": "stand-up",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/dogu-demirkol-stand-up-6qf9"
-    },
     {
       "theater": "theater-zuidplein",
       "artiesten": [
@@ -508,6 +456,32 @@
     {
       "theater": "theater-zuidplein",
       "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Marja's Spetterende Bingoshow",
+      "genre": "comedy",
+      "datum": "2027-04-04",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-spetterende-bingoshow-4mg2"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Marja van Katendrecht"
+      ],
+      "titel": "Marja's Spetterende Bingoshow",
+      "genre": "comedy",
+      "datum": "2027-05-30",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/marja-s-spetterende-bingoshow-4mg2"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
         "Cameretten"
       ],
       "titel": "Cameretten Finalistentournee 60e editie",
@@ -582,6 +556,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterzuidplein.nl/agenda/vanzelfsprekend-5rfp"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Groninger Studenten Cabaret Festival"
+      ],
+      "titel": "Finalistentour - 40e editie",
+      "genre": "stand-up",
+      "datum": "2027-05-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/finalistentour-40e-editie-1j14"
     },
     {
       "theater": "theater-zuidplein",

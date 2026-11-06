@@ -1,7 +1,7 @@
 {
   "bron": "amstelveen",
   "naam": "Schouwburg Amstelveen",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "schouwburg-amstelveen",
@@ -25,19 +25,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/andries-tunru/"
-    },
-    {
-      "theater": "schouwburg-amstelveen",
-      "artiesten": [
-        "Ayoub"
-      ],
-      "titel": "En verbied vogels om te fluiten",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/ayoub/"
     },
     {
       "theater": "schouwburg-amstelveen",
@@ -282,7 +269,7 @@
       "genre": "cabaret",
       "datum": "2026-11-05",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/nabil/"
     },
@@ -457,23 +444,6 @@
     }
   ],
   "recensies": {
-    "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/ayoub/": [
-      {
-        "medium": "NRC",
-        "sterren": 5,
-        "citaat": "Misschien wel het mooiste cabaretdebuut van het jaar"
-      },
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Cabaretier Ayoub Kharkhach lost met zijn debuutvoorstelling de hoge verwachtingen volledig in."
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Een spannende performer die met niemand in het huidige cabaretveld te vergelijken is."
-      }
-    ],
     "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/christian-van-eijkelenburg/": [
       {
         "medium": "Theaterparadijs",

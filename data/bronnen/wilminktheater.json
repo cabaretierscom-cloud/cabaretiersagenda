@@ -1,7 +1,7 @@
 {
   "bron": "wilminktheater",
   "naam": "Wilminktheater en Muziekcentrum Enschede",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "wilminktheater",
@@ -21,46 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": {
-        "id": "de-kleine-willem-enschede",
-        "naam": "De Kleine Willem",
-        "plaats": "Enschede",
-        "land": "NL",
-        "soort": "theater",
-        "website": null
-      },
-      "artiesten": [
-        "Doğu Demirkol"
-      ],
-      "titel": "Doğu Demirkol Stand Up",
-      "genre": "stand-up",
-      "datum": "2026-11-03",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/dogu-demirkol-stand-up-9rpj"
-    },
-    {
-      "theater": {
-        "id": "de-kleine-willem-enschede",
-        "naam": "De Kleine Willem",
-        "plaats": "Enschede",
-        "land": "NL",
-        "soort": "theater",
-        "website": null
-      },
-      "artiesten": [
-        "Isabelle Kafando"
-      ],
-      "titel": "Rof Daaimund",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/rof-daaimund-57z9"
-    },
     {
       "theater": "wilminktheater",
       "artiesten": [
@@ -174,6 +134,52 @@
       "bron": "https://www.wilminktheater.nl/nl/agenda/juk-ywm5"
     },
     {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Huub Stapel"
+      ],
+      "titel": "Mannen komen van Mars, Vrouwen van Venus",
+      "genre": "comedy",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/mannen-komen-van-mars-vrouwen-van-venus-7hxf"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Huub Stapel"
+      ],
+      "titel": "Mannen komen van Mars, Vrouwen van Venus",
+      "genre": "comedy",
+      "datum": "2026-11-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/mannen-komen-van-mars-vrouwen-van-venus-7hxf"
+    },
+    {
+      "theater": {
+        "id": "de-kleine-willem-enschede",
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Paul Haenen"
+      ],
+      "titel": "Margreet Dolman brengt Warmte en Dominee Gremdaat wijst de Weg",
+      "genre": "cabaret",
+      "datum": "2026-11-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/margreet-dolman-brengt-warmte-en-dominee-gremdaat-wijst-de-weg-rgxs"
+    },
+    {
       "theater": {
         "id": "de-kleine-willem-enschede",
         "naam": "De Kleine Willem",
@@ -209,7 +215,7 @@
       "genre": "comedy",
       "datum": "2026-11-26",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/comedy-night-de-kleine-willem-tj3p"
     },
@@ -1164,7 +1170,7 @@
         "Theatertroep"
       ],
       "titel": "Vier crematies en een scheiding",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-14",
       "tijd": "20:30",
       "status": "gepland",
@@ -1199,6 +1205,19 @@
       "titel": "Mama is Boos",
       "genre": "comedy",
       "datum": "2027-05-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/mama-is-boos-6t7t"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "comedy",
+      "datum": "2027-05-27",
       "tijd": "20:00",
       "status": "gepland",
       "soort": null,
@@ -1303,7 +1322,7 @@
         "Jelka van Houten en Sanne Wallis de Vries"
       ],
       "titel": "Lift",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-06-10",
       "tijd": "20:00",
       "status": "gepland",

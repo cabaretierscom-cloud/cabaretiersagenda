@@ -28,12 +28,14 @@ const eerder = { artiesten: new Set(artiesten.map((a) => a.id)), theaters: new S
 const controleren = [];
 // Bekende andere schrijfwijzen: "Ayoub" -> ["Ayoub Kharkhach"], "Najib & Roué" -> twee artiesten.
 const aliassen = existsSync(join(dataDir, "aliassen.json")) ? read("aliassen.json") : {};
+// Verbeteringen van impresariaten en artiesten (data/voorstelling-correcties.json): titels die een zaal anders
+// noemt ("Nieuw geluid!" is "Cabarestafette 26-27") en tournees die in hun geheel een reprise zijn.
+const correcties = existsSync(join(dataDir, "voorstelling-correcties.json")) ? read("voorstelling-correcties.json") : {};
 const aliasOpSleutel = new Map(Object.entries(aliassen).map(([k, v]) => [slug(k), v]));
 
 // Speellijsten van artiesten komen als laatste: wat een theater zelf meldt, gaat voor.
 const COMEDYCLUB = /\bcomedy[ -]?(club|caf[eé]|huis|train)\b/i;
 const isSpeellijst = (f) => JSON.parse(readFileSync(join(dataDir, "bronnen", f), "utf8")).soort === "speellijst";
-const speellijstBronnen = new Set(); // herkomst van speeldata uit speellijsten (artiesten, impresariaten)
 const bronFiles = existsSync(join(dataDir, "bronnen"))
   ? readdirSync(join(dataDir, "bronnen")).filter((f) => f.endsWith(".json")).sort().sort((a, b) => isSpeellijst(a) - isSpeellijst(b))
   : [];
@@ -202,7 +204,7 @@ function zorgVoorVoorstelling(r, artiestIdsVanRecord, theaterId) {
   // Een zaal die het als cabaret labelt, hoort bij hetzelfde stuk als er spelers overlappen.
   {
     const overlap = (v) => !v.artiesten.length || !artiestIdsVanRecord.length || v.artiesten.some((a) => artiestIdsVanRecord.includes(a));
-    const stuk = voorstellingen.find((v) => (v.genre === "theaterkomedie" || r.genre === "theaterkomedie") && zelfdeTitel(v.titel, r.titel) && overlap(v));
+    const stuk = voorstellingen.find((v) => (v.genre === "komedie" || r.genre === "komedie") && zelfdeTitel(v.titel, r.titel) && overlap(v));
     if (stuk) {
       stuk.artiesten = [...new Set([...stuk.artiesten, ...artiestIdsVanRecord])];
       if (stuk.artiesten.length) delete stuk.theater;
@@ -231,7 +233,8 @@ function zorgVoorVoorstelling(r, artiestIdsVanRecord, theaterId) {
 function opgeschoondeArtiesten(namen) {
   const uit = [];
   for (const ruw of namen) {
-    let n = netteNaam(String(ruw).trim())
+    // "Kobra theaterproducties | Thijs van de Meeberg": de producent ervoor valt weg, de artiest blijft.
+    let n = netteNaam(String(ruw).trim().replace(/^[^|]*\b(theater)?producties?\s*\|\s*(?=\S)/i, ""))
       .replace(/\s*[(\[]\s*(reprise|try[ -]?out|premi[eè]re|derni[eè]re|herneming)\s*[)\]]\s*$/i, "")
       .replace(/\s*:\s+.*$|\s+[-–|]\s+.*$/, "")
       .replace(/,?\s+e\.?\s?a\.?$/i, "")
@@ -303,6 +306,30 @@ const stem = (vId, genre, theaterId) => {
   (st[genre] ||= new Set()).add(theaterId);
 };
 
+// Leidende speellijst: avonden van dezelfde artiest(en), op dezelfde dag en in dezelfde plaats, uit een
+// theaterbron met een andere titel krijgen de titel van de speellijst. Heeft de speellijst die dag meer
+// voorstellingen van de artiest (twee in Gent), dan de titel die het meest op die van de zaal lijkt.
+const woorden = (t) => new Set(slug(t).split("-").filter((w) => w.length > 2));
+function herschik(r, ids, bestand, bronRecord) {
+  const plaats = slug(netPlaats(r.theater.plaats));
+  const zelfdeDag = bestand.speeldata.filter((x) => x.datum === r.datum && slug(netPlaats(x.theater?.plaats || "")) === plaats && x.titel && (x.artiesten || []).every((n) => ids.includes(zorgVoorArtiest(n))));
+  for (const s of speeldata) {
+    if (s.datum !== r.datum || speellijstBronnen.has(s.herkomst) || slug(theaterOpId.get(s.theater)?.plaats) !== plaats) continue;
+    const v = voorstellingen.find((x) => x.id === s.voorstelling);
+    if (!v || !zelfdeSet(v.artiesten, ids)) continue;
+    // Try-out of première volgens de speellijst, als de zaal niets noemt.
+    const eigen = zelfdeDag.find((x) => zelfdeTitel(x.titel, v.titel)) || (zelfdeDag.length === 1 ? zelfdeDag[0] : null);
+    if (eigen === bronRecord && bronRecord.soort && !s.soort) { s.soort = bronRecord.soort; soortOvergenomen++; }
+    if (zelfdeDag.some((x) => zelfdeTitel(x.titel, v.titel))) continue;
+    const score = (x) => [...woorden(x.titel)].filter((w) => woorden(v.titel).has(w)).length;
+    const beste = [...zelfdeDag].sort((a, b) => score(b) - score(a))[0];
+    if (beste !== bronRecord) continue;
+    s.voorstelling = zorgVoorVoorstelling(r, ids, s.theater);
+    herschikt++;
+  }
+}
+let herschikt = 0, soortOvergenomen = 0;
+
 const stats = [], bronStats = [];
 // Recensies per voorstelling uit alle bronnen: voorstelling-id -> Map(bron|medium -> recensie).
 const recensieKandidaten = new Map();
@@ -310,6 +337,9 @@ const recensieKandidaten = new Map();
 // die weren we ook op pagina's die het niet zeggen.
 const citatenElders = new Set();
 const citaatSleutel = (c) => slug(c).slice(0, 40);
+// Bron-ids van de speellijstbestanden, en welke bestanden in deze run al verwerkt zijn.
+const speellijstBronnen = new Set(bronFiles.filter(isSpeellijst).map((f) => JSON.parse(readFileSync(join(dataDir, "bronnen", f), "utf8")).bron));
+const verwerkt = new Set();
 for (const f of bronFiles) {
   const bestand = JSON.parse(readFileSync(join(dataDir, "bronnen", f), "utf8"));
   for (const t of bestand.theaters || []) {
@@ -319,18 +349,20 @@ for (const f of bronFiles) {
     zorgVoorTheater(t);
   }
 
-  if (bestand.soort === "speellijst") speellijstBronnen.add(bestand.bron);
   // Vorige vondsten van deze bron vanaf de ophaaldatum vervangen; oudere blijven als archief.
   const voor = speeldata.length;
   speeldata = speeldata.filter((s) => s.herkomst !== bestand.bron || s.datum < bestand.opgehaald);
   const vervangen = voor - speeldata.length;
 
-  const sleutels = new Set(speeldata.map((s) => [s.voorstelling, s.theater, s.datum, s.tijd || ""].join("|")));
+  // Ook hier niet de oude vondsten van een speellijst die later in deze run nog komt.
+  const sleutels = new Set(speeldata.filter((s) => !speellijstBronnen.has(s.herkomst) || verwerkt.has(s.herkomst) || s.herkomst === bestand.bron).map((s) => [s.voorstelling, s.theater, s.datum, s.tijd || ""].join("|")));
   // Bij een speellijst: welke artiest al op welke datum in welke plaats staat (uit de theaterbronnen).
   const alBekend = new Set();
   if (bestand.soort === "speellijst") {
     const vOpId = new Map(voorstellingen.map((v) => [v.id, v]));
-    for (const s of speeldata) for (const a of vOpId.get(s.voorstelling)?.artiesten || []) alBekend.add(`${a}|${slug(theaterOpId.get(s.theater)?.plaats)}|${s.datum}`);
+    // Niet de oude vondsten van een speellijst die later in deze run nog komt: die vervalt dan misschien
+    // (bijv. een artiest die van speellijsten.json naar fris.json is verhuisd).
+    for (const s of speeldata) if (!speellijstBronnen.has(s.herkomst) || verwerkt.has(s.herkomst)) for (const a of vOpId.get(s.voorstelling)?.artiesten || []) alBekend.add(`${a}|${slug(theaterOpId.get(s.theater)?.plaats)}|${s.datum}`);
   }
   let dubbel = 0;
   let nieuw = 0, handmatigVervangen = 0;
@@ -351,22 +383,39 @@ for (const f of bronFiles) {
       const { artiest, titel } = artiestOfTitel(bronRecord.artiesten[0], r.titel);
       if (artiest !== bronRecord.artiesten[0]) { r.titel = titel; r.artiesten = opgeschoondeArtiesten([artiest]); }
     }
+    // Geen artiest, maar de namen vooraan in de titel ("Najib & Roué – Alles is comedy", Goudse Schouwburg):
+    // is het deel vóór het streepje een bekende artiest of een alias, dan is dat de artiest.
+    if (!r.artiesten.length && bronRecord.genre !== "komedie") {
+      const m = r.titel.match(/^(.+?)\s+[–—-]\s+(.+)$/);
+      if (m && (aliasOpSleutel.has(slug(m[1])) || isBekend(m[1]))) { r.artiesten = opgeschoondeArtiesten([m[1]]); r.titel = m[2]; }
+    }
+    // Geen artiest en de titel is precies een bekende artiest of alias ("Cabarestafette", Parktheater).
+    if (!r.artiesten.length && r.titel && (aliasOpSleutel.has(slug(r.titel)) || isBekend(r.titel))) { r.artiesten = opgeschoondeArtiesten([r.titel]); r.titel = ""; r.zonderTitel = true; }
+    for (const c of correcties.titels || []) {
+      if (!r.artiesten.some((n) => slug(n) === slug(c.artiest))) continue;
+      if (!r.titel || c.van.some((t) => slug(t) === slug(r.titel))) { r.titel = c.naar; delete r.zonderTitel; }
+    }
     // Toneel en komedie hebben hun eigen opruimregels (stukOpOrde); de regels hieronder zijn voor cabaret.
-    if (r.genre === "theaterkomedie" || /^(komedie|blijspel|klucht)\b/i.test(r.titel)) stukOpOrde(r, bronRecord.artiesten?.length === 1 ? bronRecord.artiesten[0] : null);
+    if (r.genre === "komedie" || /^(komedie|blijspel|klucht)\b/i.test(r.titel)) stukOpOrde(r, bronRecord.artiesten?.length === 1 ? bronRecord.artiesten[0] : null);
     // "Eigenlijk" / "Viggo Waas, Eddie B. Wahr & Kees van der Vooren": een namenlijst als titel en een
     // onbekende "artiest" (of één los woord) zijn omgedraaid.
     else if (r.artiesten.length === 1 && (!isBekend(r.artiesten[0]) || !/\s/.test(r.artiesten[0])) && /^[^,]+(, [^,]+)+ (&|en) [^,]+$/.test(r.titel)) {
       [r.titel, r.artiesten] = [r.artiesten[0], opgeschoondeArtiesten([r.titel])];
     }
     // Een rolverdeling als titel ("Paul de Leeuw, Annick Boer e.a.") betekent: de "artiest" is de titel.
-    if (r.genre !== "theaterkomedie" && !/^(komedie|blijspel|klucht)\b/i.test(r.titel) && r.artiesten.length === 1 && /(,.*,|\be\.a\.?$|\bea$)/i.test(r.titel)) {
+    if (r.genre !== "komedie" && !/^(komedie|blijspel|klucht)\b/i.test(r.titel) && r.artiesten.length === 1 && /(,.*,|\be\.a\.?$|\bea$)/i.test(r.titel)) {
       r.titel = r.artiesten[0];
       r.artiesten = [];
     }
     if (r.theater?.zoeken) {
       // Speellijst: dezelfde artiest op dezelfde dag in dezelfde plaats staat er al via het theater.
       const ids = (r.artiesten || []).map((n) => zorgVoorArtiest(n));
-      if (ids.some((a) => alBekend.has(`${a}|${slug(netPlaats(r.theater.plaats))}|${r.datum}`))) { dubbel++; continue; }
+      if (ids.some((a) => alBekend.has(`${a}|${slug(netPlaats(r.theater.plaats))}|${r.datum}`))) {
+        // Een leidende speellijst (impresariaat, bijv. Bunker) weet de juiste titel: de avond die een zaal
+        // onder een andere titel heeft, gaat naar de voorstelling met de titel van de speellijst.
+        if (bestand.leidend && r.titel) herschik(r, ids, bestand, bronRecord);
+        dubbel++; continue;
+      }
       if (!r.titel) { r.titel = r.artiesten.join(" & "); r.zonderTitel = true; }
     }
     const theater = doelTheater(typeof r.theater === "string" ? theaterOpId.get(r.theater) : r.theater?.zoeken ? zoekTheater(r.theater) : zorgVoorTheater(r.theater));
@@ -410,6 +459,7 @@ for (const f of bronFiles) {
     if (!v.artiesten.length && !r.titel) controleren.push({ bron: bestand.bron, reden: "voorstelling zonder artiest en titel", record: r });
   }
   bronStats.push({ bron: bestand.bron, naam: bestand.naam, opgehaald: bestand.opgehaald, speeldata: nieuw, vorige: vervangen, dubbel });
+  verwerkt.add(bestand.bron);
   stats.push(`${bestand.naam}: ${nieuw} speeldata (${vervangen} vorige vervangen${handmatigVervangen ? `, ${handmatigVervangen} handmatige vervangen` : ""}${dubbel ? `, ${dubbel} al bekend via het theater` : ""})`);
 }
 
@@ -536,7 +586,7 @@ if (Object.keys(ZAAL_SAMEN).length) {
 }
 
 // 2c-2. Toneel: hetzelfde stuk dat toch op twee plekken terechtkwam (andere zaallabels of spelers),
-// samenvoegen tot één voorstelling. Alleen als een van de twee theaterkomedie is en de spelers niet botsen.
+// samenvoegen tot één voorstelling. Alleen als een van de twee komedie is en de spelers niet botsen.
 {
   const opTitel = new Map();
   for (const v of voorstellingen) {
@@ -544,7 +594,7 @@ if (Object.keys(ZAAL_SAMEN).length) {
     if (!opTitel.has(k)) opTitel.set(k, []);
     opTitel.get(k).push(v);
   }
-  const komisch = (v) => v.genre === "theaterkomedie" || genreStemmen.get(v.id)?.theaterkomedie;
+  const komisch = (v) => v.genre === "komedie" || genreStemmen.get(v.id)?.komedie;
   for (const groep of opTitel.values()) {
     if (groep.length < 2 || !groep.some(komisch)) continue;
     groep.sort((a, b) => b.artiesten.length - a.artiesten.length);
@@ -566,19 +616,34 @@ if (Object.keys(ZAAL_SAMEN).length) {
   });
 }
 
-// 2d. Genre volgens de meeste zalen (zie genreStemmen). Bij een gelijke stand blijft het huidige genre,
-// anders gaat theaterkomedie voor. Zonder stemmen (alleen via speellijsten) blijft het genre zoals het was.
+// 2d. Genre volgens de meeste zalen (zie genreStemmen); genres die ook vaak genoemd worden, gaan naar ookGenres. Bij een gelijke stand blijft het huidige genre,
+// anders gaat komedie voor. Zonder stemmen (alleen via speellijsten) blijft het genre zoals het was.
 // Een stuk zonder artiest hoort bij de zaal van zijn eerste speeldatum.
 let genreGewijzigd = 0;
 for (const v of voorstellingen) {
   const st = genreStemmen.get(v.id);
   if (st && Object.keys(st).length) {
-    const voorkeur = (g) => (g === v.genre ? 2 : g === "theaterkomedie" ? 1 : 0);
+    const voorkeur = (g) => (g === v.genre ? 2 : g === "komedie" ? 1 : 0);
     const [beste] = Object.entries(st).map(([g, zalen]) => [g, zalen.size]).sort((a, b) => b[1] - a[1] || voorkeur(b[0]) - voorkeur(a[0]) || a[0].localeCompare(b[0]));
     if (beste[0] !== v.genre) { v.genre = beste[0]; genreGewijzigd++; }
+    // Ook genres: wat minstens een vijfde van de zalen noemt (en minstens twee zalen, behalve bij vier zalen of minder), komt erbij
+    // ("cabaret" met ook "stand-up"). Zonder stemmen blijven de ookGenres zoals ze waren.
+    const totaal = new Set(Object.values(st).flatMap((z) => [...z])).size;
+    const ook = Object.entries(st).filter(([g, zalen]) => g !== v.genre && zalen.size >= totaal / 5 && (zalen.size >= 2 || totaal <= 4)).map(([g]) => g).sort();
+    if (ook.length) v.ookGenres = ook; else delete v.ookGenres;
   }
   if (!v.artiesten.length && !theaterOpId.has(v.theater)) v.theater = speeldata.find((s) => s.voorstelling === v.id)?.theater;
 }
+
+// 2e. Tournees die in hun geheel een reprise zijn (voorstelling-correcties.json): elke avond zonder soort is een reprise.
+let reprises = 0;
+for (const c of correcties.reprise || []) {
+  const aId = artiesten.find((a) => slug(a.naam) === slug(c.artiest))?.id;
+  for (const v of voorstellingen.filter((x) => aId && x.artiesten.includes(aId) && zelfdeTitel(x.titel, c.titel))) {
+    for (const s of speeldata) if (s.voorstelling === v.id && !s.soort) { s.soort = "reprise"; reprises++; }
+  }
+}
+if (herschikt || reprises || soortOvergenomen) console.log(`Verbeteringen: ${herschikt} avonden naar de titel van een leidende speellijst, ${soortOvergenomen} keer try-out/première uit die speellijst, ${reprises} avonden als reprise.`);
 
 // 3. Alles zonder speeldata weg. Artiesten met een handmatig ingevuld land of ookBekendAls blijven,
 // net als artiesten die bij een festival horen (data/festivals.json).

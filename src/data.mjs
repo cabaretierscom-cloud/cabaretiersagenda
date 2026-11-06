@@ -19,7 +19,7 @@ export const GENRES = {
   cabaret: "Cabaret",
   "stand-up": "Stand-up",
   oudejaarsconference: "Oudejaarsconference",
-  theaterkomedie: "Theaterkomedie",
+  komedie: "Komedie",
   "open-mic": "Open mic",
   improvisatie: "Improvisatie",
   festival: "Festival",
@@ -120,7 +120,8 @@ export function loadData(dir, { today }) {
   for (const p of promo) {
     const waar = `promo ${p.artiest}`;
     if (!p.van || !p.toestemming) errors.push(`${waar}: van wie en welke toestemming zijn verplicht`);
-    if (p.foto && !(p.foto.bestand && p.foto.alt && p.foto.maker && p.foto.bron)) errors.push(`${waar}: foto zonder alt-tekst, maker of bron`);
+    // Promofoto: de fotograaf als die bekend is; zonder vermelding mag ook (dan staat er niets onder).
+    if (p.foto && !(p.foto.bestand && p.foto.alt && p.foto.bron)) errors.push(`${waar}: foto zonder alt-tekst of bron`);
     if (p.foto?.bestand && !existsSync(join(dir, "..", "public", p.foto.bestand))) errors.push(`${waar}: fotobestand ${p.foto.bestand} ontbreekt`);
     // focus: [x, y] van het gezicht als deel van breedte en hoogte (0 t/m 1), voor de uitsnede.
     if (p.foto?.focus != null && !(Array.isArray(p.foto.focus) && p.foto.focus.length === 2 && p.foto.focus.every((n) => typeof n === "number" && n >= 0 && n <= 1))) errors.push(`${waar}: focus moet [x, y] zijn met getallen van 0 t/m 1`);
@@ -155,7 +156,7 @@ export function loadData(dir, { today }) {
     if (a.geslacht != null && !GESLACHTEN.includes(a.geslacht)) errors.push(`artiest ${a.id}: onbekend geslacht "${a.geslacht}"`);
     if (a.geslacht != null && !a.geslachtBron) errors.push(`artiest ${a.id}: geslacht zonder geslachtBron`);
     // Een foto mag alleen met naamsvermelding, licentie en bron.
-    if (a.foto && typeof a.foto === "object" && !(a.foto.bestand && a.foto.alt && a.foto.maker && a.foto.licentie && a.foto.bron)) errors.push(`artiest ${a.id}: foto zonder alt-tekst, maker, licentie of bron`);
+    if (a.foto && typeof a.foto === "object" && !(a.foto.bestand && a.foto.alt && (a.foto.maker || a.foto.promo) && a.foto.licentie && a.foto.bron)) errors.push(`artiest ${a.id}: foto zonder alt-tekst, maker, licentie of bron`);
     if (a.foto?.bestand && !existsSync(join(dir, "..", "public", a.foto.bestand))) errors.push(`artiest ${a.id}: fotobestand ${a.foto.bestand} ontbreekt`);
   }
   for (const t of theaters) {
@@ -166,6 +167,8 @@ export function loadData(dir, { today }) {
   }
   for (const v of voorstellingen) {
     if (!GENRES[v.genre]) errors.push(`voorstelling ${v.id}: onbekend genre "${v.genre}"`);
+    // Extra genres naast het hoofdgenre (een cabaretvoorstelling die ook stand-up is).
+    if (v.ookGenres !== undefined && (!Array.isArray(v.ookGenres) || v.ookGenres.some((g) => !GENRES[g] || g === v.genre))) errors.push(`voorstelling ${v.id}: ookGenres moet een lijst bekende genres zijn, zonder het hoofdgenre`);
     if (!Array.isArray(v.artiesten)) errors.push(`voorstelling ${v.id}: artiesten moet een lijst zijn`);
     // Een clubavond of open mic zonder vaste artiest hoort bij één zaal.
     if (!v.artiesten?.length && !T.has(v.theater)) errors.push(`voorstelling ${v.id}: geen artiesten en geen geldig theater`);

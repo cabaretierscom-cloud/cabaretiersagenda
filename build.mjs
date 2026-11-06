@@ -53,11 +53,9 @@ write("/agenda/", t.agendaIndex());
 writeFileSync(join(out, "agenda", "alles.js"), JSON.stringify(t.agendaData()));
 write("/vanavond/", t.dagPagina("vanavond"));
 write("/dit-weekend/", t.dagPagina("dit-weekend"));
-// Steden met genoeg aanbod (zie stadPaginas); verdwijnt een pagina, dan stuurt .htaccess door naar de plaats.
-for (const [p, soorten] of t.stadPaginas) for (const s of soorten) write(`/plaatsen/${t.plaatsId(p)}/${s}/`, t.dagPagina(s, p));
 for (const m of t.maanden) write(`/agenda/${t.maandId(m)}/`, t.agendaMaand(m));
 write("/plaatsen/", t.plaatsIndex());
-for (const p of t.plaatsen) write(`/plaatsen/${t.plaatsId(p)}/`, t.plaatsPagina(p));
+for (const p of t.plaatsen) write(t.plaatsPad(p), t.plaatsPagina(p));
 write("/artiesten/", t.artistIndex());
 // SEO-pagina's over cabaretiers; niet in het menu, wel gelinkt vanuit artiesten, footer en artiestpagina's.
 write("/alle-cabaretiers/", t.cabaretiersPagina("alle"));
@@ -71,8 +69,9 @@ for (const [vid, pad] of t.voorstellingPaden) write(pad, t.voorstellingPagina(vi
 write("/theaters/", t.theaterIndex());
 write("/comedy-clubs/", t.comedyclubsPagina());
 for (const th of db.theaters.values()) if (db.gigsForTheater(th.id).length) write(`/theaters/${th.id}/`, t.theaterPage(th));
-write("/genres/", t.genreIndex());
-for (const g of t.GENRE_PAGINAS) write(`/genres/${g}/`, t.genrePagina(g));
+for (const g of t.GENRE_PAGINAS) write(`/agenda/${g}/`, t.genrePagina(g));
+if (t.tryoutLijst.length) write("/agenda/try-outs/", t.tryoutPagina());
+for (const [g, p] of t.genrePlaatsPaginas) write(t.genrePlaatsPad(g, p), t.genrePlaatsPagina(g, p));
 write("/festivals/", t.festivalIndex());
 for (const f of db.festivals.values()) write(`/festivals/${f.id}/`, t.festivalPagina(f));
 write("/over/", t.about());
@@ -87,6 +86,18 @@ write("/404.html", t.notFound());
     .sort((a, b) => a.plaats.localeCompare(b.plaats, "nl") || a.naam.localeCompare(b.naam, "nl"));
   write("/controle/", t.controlePagina({ rapport: lees("rapport.json"), log: lees("ophaal-log.json"), alleenSpeellijst }));
   pages.pop(); // niet in de sitemap
+}
+
+// Dashboard met cijfers uit Google Analytics (zoals /controle/: niet in menu, sitemap of zoekmachines).
+// data/ga-dashboard.json staat niet in de repository (openbaar); `npm run ga -- dashboard` maakt het.
+{
+  // Eén pagina per periode: /dashboard/ (laatste 28 dagen) en /dashboard/<maand-jaar>/.
+  const f = join(root, "data", "ga-dashboard.json");
+  const ga = existsSync(f) ? JSON.parse(readFileSync(f, "utf8")) : null;
+  for (const id of ga?.perioden?.length ? ga.perioden.map((p) => p.id) : [""]) {
+    write(t.dashboardPad(id), t.dashboardPagina(ga, id));
+    pages.pop(); // niet in de sitemap
+  }
 }
 
 writeFileSync(join(out, "logo.svg"), LOGO_SVG);
@@ -136,6 +147,6 @@ writeFileSync(join(out, "sitemap.xml"),
   const ht = join(out, ".htaccess");
   writeFileSync(ht, readFileSync(ht, "utf8") + `\n# Oude adressen (gemaakt door build.mjs, niet met de hand aanpassen)\n<IfModule mod_alias.c>\n${regels.join("\n")}\n</IfModule>\n`);
 }
-writeFileSync(join(out, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /controle/\nSitemap: ${SITE.url}/sitemap.xml\n`);
+writeFileSync(join(out, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /controle/\nDisallow: /dashboard/\nSitemap: ${SITE.url}/sitemap.xml\n`);
 
 console.log(`Gebouwd op ${today}: ${pages.length} pagina's, ${db.upcoming.length} aankomende speeldata.`);

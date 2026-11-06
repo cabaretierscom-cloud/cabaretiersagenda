@@ -1,7 +1,7 @@
 {
   "bron": "zwolle",
   "naam": "Zwolse Theaters",
-  "opgehaald": "2026-11-01",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "theater-de-spiegel",
@@ -238,7 +238,7 @@
       "genre": "cabaret",
       "datum": "2026-11-15",
       "tijd": "14:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/ricky-koole"
     },
@@ -303,7 +303,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-08",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/dolf-jansen"
     },
@@ -969,19 +969,6 @@
       "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/hokjesdenker"
-    },
-    {
-      "theater": "odeon-zwolle",
-      "artiesten": [
-        "Peter Pannekoek"
-      ],
-      "titel": "Demonen | try-out | Proefdraaien in de Paap",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/peter-pannekoek"
     },
     {
       "theater": "theater-de-spiegel",

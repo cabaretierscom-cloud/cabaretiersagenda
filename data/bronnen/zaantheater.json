@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-11-01",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "zaantheater",
@@ -220,19 +220,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/glodi-lugungu/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Ice"
-      ],
-      "titel": "Live in het theater",
-      "genre": "cabaret",
-      "datum": "2027-01-14",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ice/"
     },
     {
       "theater": "zaantheater",

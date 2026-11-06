@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -13,58 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Selma Visscher"
-      ],
-      "titel": "Trekvogel",
-      "genre": "cabaret",
-      "datum": "2026-11-01",
-      "tijd": "15:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/trekvogel-1ltl"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Selma Visscher"
-      ],
-      "titel": "Trekvogel",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/trekvogel-1ltl"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Elfie Tromp"
-      ],
-      "titel": "Aai Poesje Aai Poesje",
-      "genre": "cabaret",
-      "datum": "2026-11-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/aai-poesje-aai-poesje-n89s"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Elfie Tromp"
-      ],
-      "titel": "Aai Poesje Aai Poesje",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/aai-poesje-aai-poesje-n89s"
-    },
     {
       "theater": "theater-bellevue",
       "artiesten": [
@@ -133,7 +81,7 @@
       "genre": "cabaret",
       "datum": "2026-11-07",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/imperfect-n89j"
     },
@@ -347,7 +295,7 @@
       "genre": "cabaret",
       "datum": "2026-11-21",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/in-de-hemel-ken-ik-jullie-niet-lkjn"
     },
@@ -810,7 +758,7 @@
       "genre": "cabaret",
       "datum": "2027-01-17",
       "tijd": "15:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/lieve-marianne-s484"
     },

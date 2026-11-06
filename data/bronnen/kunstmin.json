@@ -1,7 +1,7 @@
 {
   "bron": "kunstmin",
   "naam": "Kunstmin",
-  "opgehaald": "2026-11-01",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "kunstmin",
@@ -13,6 +13,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Woordgrapf"
+      ],
+      "titel": "de Nationale avond van de Woordgrap",
+      "genre": "cabaret",
+      "datum": "2027-10-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/woordgrapf-de-nationale-avond-van-de-woordgrap/"
+    },
     {
       "theater": "kunstmin",
       "artiesten": [
@@ -399,7 +412,7 @@
       "genre": "cabaret",
       "datum": "2027-02-20",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/ricky-risolles-ricky-risolles-3-niet-zo-indiscreet/"
     },

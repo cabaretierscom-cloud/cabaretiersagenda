@@ -355,6 +355,9 @@ main > .block:first-child { padding-top: 16px; }
 main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* /artiesten/: "Van A tot Z" direct onder de rij Nu op tournee. */
 .az-blok { padding-top: 8px; }
+.binnenkort-blok { padding-top: 8px; padding-bottom: 0; }
+.binnenkort-intro { margin: -4px 0 8px; color: var(--ink-2); }
+.binnenkort-blok .meer-link { margin: 12px 0 0; font-weight: 600; }
 .az-blok > .sub-head:first-child { margin-top: 0; }
 .wall-sub { padding-top: 24px; }
 .wall-sub .wall-head h2 { font-weight: 800; font-size: var(--step-2); line-height: 1.1; }
@@ -386,6 +389,32 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   font: 500 var(--step-0) var(--font-body);
 }
 .field input:focus-visible, .field select:focus-visible { outline-offset: 0; border-color: var(--focus); }
+/* Genrekeuze: een uitklapvak met vinkjes (meerdere genres tegelijk) en het aantal voorstellingen. */
+.keuze { position: relative; min-width: 220px; }
+.keuze summary {
+  list-style: none; display: flex; align-items: center; gap: 10px; min-height: 46px; padding: 0 40px 0 14px; border-radius: 10px; cursor: pointer;
+  border: 1.5px solid var(--rule); background: var(--paper); color: var(--ink); font: 500 var(--step-0) var(--font-body); position: relative;
+}
+.keuze summary::-webkit-details-marker { display: none; }
+.keuze summary::after { content: ""; position: absolute; right: 16px; top: 50%; width: 8px; height: 8px; border: solid var(--ink); border-width: 0 2px 2px 0; transform: translateY(-70%) rotate(45deg); }
+.keuze[open] summary::after { transform: translateY(-20%) rotate(-135deg); }
+.keuze summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.keuze.gekozen summary { border-color: var(--ink); }
+.keuze-tekst { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.keuze-n { flex: none; font-size: var(--step--1); font-weight: 600; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.keuze summary .keuze-n { background: var(--ink); color: var(--paper); border-radius: 999px; padding: 2px 9px; }
+.keuze-lijst {
+  position: absolute; z-index: 20; top: calc(100% + 6px); left: 0; min-width: 100%; width: max-content; max-width: min(320px, 90vw);
+  background: var(--paper); border: 1.5px solid var(--ink); border-radius: 12px; padding: 6px; box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+}
+.field .keuze-lijst label {
+  display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 10px; border-radius: 8px; cursor: pointer;
+  color: var(--ink); font: 500 var(--step-0) var(--font-body);
+}
+.field .keuze-lijst label:hover { background: var(--wash, rgba(0, 0, 0, .05)); }
+.field .keuze-lijst input { flex: none; width: 20px; height: 20px; min-height: 0; margin: 0; padding: 0; border: 0; accent-color: var(--ink); }
+.keuze-lijst label span:first-of-type { flex: 1; }
+@media (max-width: 560px) { .keuze { min-width: 0; } .keuze-lijst { max-width: none; width: 100%; } }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
 .chip {
   min-height: 46px; padding: 0 16px; border-radius: 999px; cursor: pointer;
@@ -561,7 +590,6 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* Titel met een heel lang woord ("(leesvoorstelling)"): kleiner, zodat het woord heel blijft. */
 .detail-hero h1.lang { font-size: clamp(2.4rem, 7vw, 5.5rem); }
 /* Plaatspagina: lange kop ("Cabaret en theater in ..."), iets kleiner dan een artiestnaam. */
-.detail-hero h1.plaats-kop { font-size: clamp(2.6rem, 8vw, 5.75rem); }
 .detail-hero p { font-size: var(--step-1); margin: 14px 0 0; max-width: 52ch; }
 /* Artiestfoto in de kop: rechts op een breed scherm, eronder op een telefoon. */
 .hero-met-foto { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 40px; align-items: end; }
@@ -580,6 +608,11 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   .theater-foto { width: 100%; order: -1; }
 }
 .detail-body { padding-block: 24px 48px; }
+/* Kop zonder kleurvlak (plaats- en cabaret per plaats-pagina's): de inhoud volgt direct onder de kop. */
+.kop-plaats { padding-bottom: 0; }
+.kop-plaats > .block-head { margin-bottom: 0; }
+.kop-plaats + .detail-body { padding-top: 16px; }
+.kop-plaats + .wall-sub { margin-top: 24px; }
 .shows-list { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
 .shows-list .pill { font-size: var(--step-0); padding: 6px 14px; }
 
@@ -750,6 +783,60 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .controle .mis { color: var(--ink-2); }
 .controle code { font-size: .85em; color: var(--ink-2); }
 
+/* Dashboard (/dashboard/): affichevlakken voor de hoofdcijfers, verder zwart op wit zoals /controle/. */
+.dashboard .ga-noot { color: var(--ink-2); font-size: var(--step--1); margin: 0 0 16px; max-width: 75ch; }
+.dashboard .let-op { border: 2px solid var(--ink); border-radius: 16px; padding: 16px 20px; }
+.dashboard .ga-keuze { position: relative; }
+.dashboard .ga-keuze summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 18px; border: 2px solid var(--ink); border-radius: 999px; font-weight: 700; background: var(--paper); }
+.dashboard .ga-keuze summary::-webkit-details-marker { display: none; }
+.dashboard .ga-keuze summary::after { content: "▾"; font-size: 1.1em; line-height: 1; transition: transform .15s ease; }
+.dashboard .ga-keuze[open] summary::after { transform: rotate(180deg); }
+.dashboard .ga-keuze ul { position: absolute; right: 0; top: calc(100% + 6px); z-index: 5; list-style: none; margin: 0; padding: 6px; min-width: 100%; background: var(--paper); border: 2px solid var(--ink); border-radius: 16px; box-shadow: 0 12px 30px -12px rgba(0, 0, 0, .35); }
+.dashboard .ga-keuze a { display: block; padding: 8px 12px; border-radius: 10px; color: var(--ink); text-decoration: none; white-space: nowrap; }
+.dashboard .ga-keuze a:hover, .dashboard .ga-keuze a:focus-visible { background: var(--paper-2); }
+.dashboard .ga-keuze a[aria-current="page"] { font-weight: 700; }
+@media (max-width: 560px) { .dashboard .ga-keuze ul { left: 0; right: auto; } }
+.dashboard .ga-tegels { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 12px; margin: 24px 0 24px; }
+.dashboard .ga-tegel { background: var(--bg); color: #121212; padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 6px; min-height: 160px; border-radius: 16px; position: relative; overflow: hidden; isolation: isolate; }
+/* Rasterpunten zoals op de affiches en artiestkaarten */
+.dashboard .ga-tegel::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; opacity: .24;
+  background-image: radial-gradient(currentColor 1.1px, transparent 1.6px); background-size: 7px 7px;
+  -webkit-mask-image: radial-gradient(circle at 85% 25%, #000 0, #000 22%, transparent 65%);
+          mask-image: radial-gradient(circle at 85% 25%, #000 0, #000 22%, transparent 65%);
+}
+.dashboard .ga-tegel h2 { margin: 0; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.dashboard .ga-tegel strong { font-family: var(--font-display); font-weight: 900; font-size: clamp(3rem, 6vw, 4.2rem); line-height: .9; font-variant-numeric: tabular-nums; }
+.dashboard .ga-tegel p { margin: 0; font-size: .875rem; line-height: 1.35; }
+.dashboard .ga-kaart { border: 2px solid var(--ink); border-radius: 16px; padding: 20px 24px 24px; min-width: 0; margin-bottom: 24px; }
+.dashboard .ga-kaart > .sub-head { margin-top: 0; }
+.dashboard .ga-legenda { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; font-size: var(--step--1); color: var(--ink-2); margin: -4px 0 12px; }
+.dashboard .ga-leg-balk { width: 12px; height: 12px; border-radius: 2px; background: var(--accent); }
+.dashboard .ga-leg-lijn { width: 22px; height: 3px; border-radius: 2px; background: var(--riso-pink); margin-left: 12px; }
+.dashboard .ga-combi { overflow-x: auto; padding-top: 24px; }
+.dashboard .ga-plot { position: relative; height: 260px; display: flex; align-items: flex-end; }
+.dashboard .ga-kolom { flex: 1 1 0; height: 100%; display: flex; align-items: flex-end; justify-content: center; padding-inline: 6px; }
+.dashboard .ga-balk { width: 100%; max-width: 64px; background: var(--accent); border-radius: 2px 2px 0 0; display: flex; justify-content: center; padding-top: 6px; color: var(--on-accent); font-weight: 700; font-size: var(--step--1); font-variant-numeric: tabular-nums; line-height: 1; }
+.dashboard .ga-kolom:hover .ga-balk { filter: brightness(.88); }
+.dashboard .ga-lijn { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
+.dashboard .ga-lijn polyline { stroke: var(--riso-pink); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+.dashboard .ga-punt { position: absolute; width: 10px; height: 10px; margin: 0 0 -5px -5px; border-radius: 50%; background: var(--paper); border: 3px solid var(--riso-pink); pointer-events: none; }
+.dashboard .ga-punt-getal { position: absolute; transform: translate(-50%, -10px); font-weight: 700; font-size: var(--step--1); font-variant-numeric: tabular-nums; line-height: 1; color: var(--ink); background: var(--paper); padding: 1px 3px; border-radius: 3px; pointer-events: none; white-space: nowrap; }
+.dashboard .ga-assen { display: flex; border-top: 2px solid var(--ink); padding-top: 6px; }
+.dashboard .ga-assen span { flex: 1 1 0; text-align: center; font-size: .75rem; line-height: 1.25; color: var(--ink-2); white-space: nowrap; }
+.dashboard .ga-twee { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 0 24px; }
+@media (max-width: 560px) { .dashboard .ga-kaart { padding: 16px; } }
+.dashboard .ga-tabel { max-height: 30rem; overflow: auto; }
+.dashboard table { width: 100%; border-collapse: collapse; font-size: var(--step--1); font-variant-numeric: tabular-nums; }
+.dashboard th, .dashboard td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.dashboard th { font-weight: 700; border-bottom: 2px solid var(--ink); white-space: nowrap; position: sticky; top: 0; background: var(--paper); }
+.dashboard .ga-tabel { margin-bottom: 0; }
+.dashboard .ga-num { text-align: right; white-space: nowrap; }
+.dashboard .ga-pad { overflow-wrap: anywhere; }
+.dashboard .ga-celbalk { display: inline-block; height: 8px; margin-right: 6px; border-radius: 2px; background: var(--accent); opacity: .5; vertical-align: middle; }
+.dashboard .mis { color: var(--ink-2); font-style: italic; }
+@media (max-width: 560px) { .dashboard .ga-smal-weg { display: none; } }
+
 /* Cookiemelding: vast onderaan, beide knoppen even groot zodat weigeren net zo makkelijk is als akkoord geven. */
 .cookies { position: fixed; z-index: 100; left: 16px; right: 16px; bottom: max(16px, env(safe-area-inset-bottom)); margin-inline: auto; max-width: 720px; display: flex; gap: 12px 20px; align-items: center; flex-wrap: wrap; padding: 16px 20px; background: #121212; color: #fff; border: 1px solid var(--rule); border-radius: 12px; box-shadow: 0 8px 30px rgba(0, 0, 0, .25); font-size: .95rem; line-height: 1.45; }
 .cookies[hidden] { display: none; }
@@ -778,15 +865,42 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .month-group h3 small { font-family: var(--font-body); font-weight: 500; font-size: 1rem; margin-left: 8px; }
 .dag-intro { max-width: 68ch; margin: 0 0 12px; }
 .dag-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0 0 16px; font-weight: 600; }
-.dag-blok { border: 2px solid var(--ink); padding: 16px 20px; margin: 8px 0 24px; }
-.dag-blok h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--step-1); margin: 0 0 8px; }
-.dag-regel { margin: 0 0 6px; }
-.dag-regel .dag-label { font-weight: 700; }
+.dag-blok { margin: 8px 0 28px; }
+.dag-blok h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--step-1); margin: 0 0 12px; }
 .dag-blok .dag-nav { margin: 12px 0 0; }
+/* Kaartjes in de kleur van de artiest (zoals de affiches), in een affichewand (.strip) die opzij schuift.
+   Het hele kaartje is een link naar de kaartverkoop; met de muis erop (of tijdens het vegen op mobiel,
+   via agenda.js) komt het naar voren met een schaduw, net als de affiches. */
+.strip.dag-kaarten { gap: 12px; padding: 14px 2px 24px; }
+.dag-kaart {
+  position: relative; isolation: isolate; flex: 0 0 210px; min-height: 200px; scroll-snap-align: start;
+  display: flex; flex-direction: column; gap: 4px; padding: 14px 16px 16px; border-radius: 16px; background: var(--bg); color: var(--fg);
+  text-decoration: none; transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease;
+}
+.dag-kaart::after { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none; opacity: .22; transition: opacity .28s ease;
+  background-image: radial-gradient(currentColor 1.1px, transparent 1.6px); background-size: 7px 7px;
+  /* Zoals op de affiches: het raster vervaagt vanuit één hoek naar de rest van het kaartje. */
+  -webkit-mask-image: radial-gradient(circle at var(--sx, 80%) var(--sy, 30%), #000 0, #000 22%, transparent 62%);
+          mask-image: radial-gradient(circle at var(--sx, 80%) var(--sy, 30%), #000 0, #000 22%, transparent 62%); }
+.dag-kaart.actief { transform: translateY(-8px); z-index: 2; box-shadow: 0 22px 40px -18px rgba(0,0,0,.6); }
+.dag-kaart.actief::after { opacity: .38; }
+@media (hover: hover) and (pointer: fine) {
+  .dag-kaart:is(:hover, :focus-visible) { transform: translateY(-8px); z-index: 2; box-shadow: 0 22px 40px -18px rgba(0,0,0,.6); }
+  .dag-kaart:is(:hover, :focus-visible)::after { opacity: .38; }
+}
+.strip.vegen .dag-kaart:not(.actief) { transform: scale(.94); }
+.dk-dag { font-weight: 800; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
+.dk-datum { font-family: var(--font-display); font-weight: 900; font-size: 2rem; line-height: .9; }
+.dk-waar { font-weight: 600; font-size: .88rem; }
+.dk-wie { margin: auto 0 0; padding-top: 10px; font-family: var(--font-display); font-weight: 900; font-size: 1.3rem; line-height: 1; text-transform: uppercase; }
+.dag-kaart .dk-knop {
+  align-self: flex-start; margin-top: 8px; display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 999px;
+  background: var(--fg); color: var(--bg); font-weight: 700; font-size: .85rem; white-space: nowrap;
+}
+.dag-kaart .dk-knop svg { width: 14px; height: 14px; }
+.dag-kaart .dk-knop.ghost { background: transparent; color: var(--fg); box-shadow: inset 0 0 0 2px var(--fg); }
+@media (max-width: 600px) { .dag-kaart { flex-basis: 62%; } }
 .dag-blok-leeg { border-left: 4px solid var(--riso-yellow); padding: 8px 14px; margin: 8px 0 24px; }
-.dag-snel { margin-top: 16px; }
-.dag-snel a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 2px solid var(--ink); border-radius: 999px; text-decoration: none; color: var(--ink); }
-.dag-snel a:hover { background: var(--ink); color: #fff; }
 
 /* Zet in je agenda: knop naast Tickets met een klein keuzemenu (public/agenda.js). */
 .gig .knoppen { position: relative; display: flex; gap: 8px; align-items: center; }
@@ -835,3 +949,25 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .promotekst { max-width: 68ch; margin-bottom: 8px; }
 .promotekst p { line-height: 1.6; }
 .promotekst-bron { font-size: .85rem; color: var(--ink-2); }
+
+/* Genre per plaats (/genres/cabaret/): alle plaatsen als korte lijst in kolommen. */
+.genre-plaatsen { margin: 32px 0 8px; }
+.genre-plaats-lijst { list-style: none; margin: 0; padding: 0; columns: 4 160px; column-gap: 24px; }
+.genre-plaats-lijst li { break-inside: avoid; padding: 4px 0; border-bottom: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 8px; }
+.genre-plaats-lijst a { color: var(--ink); font-weight: 600; text-decoration: none; }
+.genre-plaats-lijst a:hover { text-decoration: underline; }
+.genre-plaats-lijst span { color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.genre-plaats-top { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+.genre-plaats-top a { display: inline-flex; gap: 6px; align-items: baseline; padding: 8px 14px; border: 2px solid var(--ink); border-radius: 999px; color: var(--ink); font-weight: 700; text-decoration: none; }
+.genre-plaats-top a:hover { background: var(--ink); color: var(--paper); }
+.genre-plaats-top span { font-weight: 500; opacity: .7; font-variant-numeric: tabular-nums; }
+.genre-plaats-alles summary { cursor: pointer; font-weight: 700; padding: 8px 0; }
+.genre-plaats-alles h3 { margin: 16px 0 6px; }
+
+/* Genres in de kop van een voorstellingspagina, als knopjes in de kleur van de kop (links naar /agenda/<genre>/). */
+.hero-genres { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; padding: 0; }
+.hero-genres a, .hero-genres span {
+  display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 999px;
+  border: 2px solid currentColor; color: inherit; font: 700 var(--step--1) var(--font-body); text-decoration: none;
+}
+.hero-genres a:hover, .hero-genres a:focus-visible { background: var(--fg); color: var(--bg); border-color: var(--fg); }

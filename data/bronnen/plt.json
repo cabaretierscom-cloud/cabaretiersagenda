@@ -1,7 +1,7 @@
 {
   "bron": "plt",
   "naam": "PLT (Parkstad Limburg Theaters)",
-  "opgehaald": "2026-11-01",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "theater-heerlen",
@@ -292,19 +292,6 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
-        "Martijn Crins"
-      ],
-      "titel": "Hé Fijn",
-      "genre": "cabaret",
-      "datum": "2026-11-03",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.plt.nl/programma/martijn-crins-hé-fijn-reprise/03-11-2026-20-30"
-    },
-    {
-      "theater": "theater-heerlen",
-      "artiesten": [
         "De Limburgse BuutteCup"
       ],
       "titel": "Stichting Buutte Cultuur Limburg",
@@ -386,7 +373,7 @@
       "datum": "2026-11-19",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://www.plt.nl/programma/roel-en-jos-maalderink/19-11-2026-20-00"
     },
     {
@@ -805,7 +792,7 @@
         "Het Zuidelijk Toneel"
       ],
       "titel": "Silence of the Dogs",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-01-29",
       "tijd": "20:30",
       "status": "gepland",
@@ -1063,7 +1050,7 @@
         "Pretpakhuis"
       ],
       "titel": "Boeing Boeing",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-03-06",
       "tijd": "20:00",
       "status": "gepland",
@@ -1193,7 +1180,7 @@
         "De Theatertroep"
       ],
       "titel": "Vier Crematies en een Scheiding",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-04-07",
       "tijd": "20:30",
       "status": "gepland",
@@ -1594,7 +1581,7 @@
       "theater": "theater-heerlen",
       "artiesten": [],
       "titel": "Huisgenoten",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-27",
       "tijd": "20:30",
       "status": "gepland",
@@ -1711,12 +1698,23 @@
         "DE SITCOMEBACK | NTF Heerlen"
       ],
       "titel": "De hoe",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-01-22",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/de-sitcomeback---de-hoe-nederlands-theater-festival-heerlen-de-sitcomeback---de-hoe/22-01-2027-20-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [],
+      "titel": "ComedyHuB",
+      "genre": "stand-up",
+      "datum": "2026-12-17",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/comedy-hub-/17-12-2026-19-30"
     }
   ],
   "recensies": {
@@ -1800,18 +1798,6 @@
       },
       {
         "medium": "Trouw",
-        "sterren": null,
-        "citaat": "4 van 5 sterren"
-      }
-    ],
-    "https://www.plt.nl/programma/martijn-crins-hé-fijn-reprise/03-11-2026-20-30": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "4 van 5 sterren"
-      },
-      {
-        "medium": "De Limburger",
         "sterren": null,
         "citaat": "4 van 5 sterren"
       }

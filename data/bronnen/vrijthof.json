@@ -1,7 +1,7 @@
 {
   "bron": "vrijthof",
   "naam": "Theater aan het Vrijthof",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "theater-aan-het-vrijthof",
@@ -33,19 +33,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/revue-revanche-valentina-toth"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Lovella Telesford"
-      ],
-      "titel": "Wat een gezeik!",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/wat-een-gezeik-lovella-telesford"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -540,22 +527,21 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/als-ik-jou-was-david-van-rosmalen"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Veldeke Theater"
-      ],
-      "titel": "Aajdjaorscabberèt: Eve oonder us",
-      "genre": "cabaret",
-      "datum": "2026-12-29",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/aajdjaorscabberet-eve-oonder-us-veldeke-theater"
     }
   ],
   "recensies": {
+    "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Pepijn Schoneveld lijkt in ‘Welkom dat je luistert’ zijn ideale stijl als cabaretier te hebben gevonden."
+      },
+      {
+        "medium": "I Love Theater",
+        "sterren": 4,
+        "citaat": "Schoneveld neemt de zaal op een innemende manier mee, is gevat in zijn interactie met het publiek en weet een heldere lijn door de avond te trekken."
+      }
+    ],
     "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/en-verbied-de-vogels-om-te-fluiten-ayoub": [
       {
         "medium": "de Volkskrant",

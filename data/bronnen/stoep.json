@@ -1,7 +1,7 @@
 {
   "bron": "stoep",
   "naam": "Theater de Stoep",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "theater-de-stoep",
@@ -225,7 +225,7 @@
       "theater": "theater-de-stoep",
       "artiesten": [],
       "titel": "Ratatatata!",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-11",
       "tijd": "20:15",
       "status": "gepland",
@@ -236,7 +236,7 @@
       "theater": "theater-de-stoep",
       "artiesten": [],
       "titel": "Ratatatata!",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-12",
       "tijd": "20:15",
       "status": "gepland",
@@ -398,19 +398,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterdestoep.nl/voorstelling/ronald-snijders-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
-        "Raoul Heertje"
-      ],
-      "titel": "begrijpt steeds minder",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterdestoep.nl/voorstelling/raoul-heertje-2627"
     },
     {
       "theater": "theater-de-stoep",
@@ -687,7 +674,7 @@
         "Najib & Roué"
       ],
       "titel": "Alles is Comedy",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2026-12-02",
       "tijd": "20:15",
       "status": "gepland",
@@ -1071,6 +1058,18 @@
         "medium": "Theaterparadijs",
         "sterren": null,
         "citaat": "Hij combineert muzikaal vakmanschap met humor, ontroering en een aanstekelijk enthousiasme. Het resultaat is een voorstelling die je niet alleen laat lachen, maar je ook raakt en nog lang bijblijft."
+      }
+    ],
+    "https://theaterdestoep.nl/voorstelling/pepijn-schoneveld-2627": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Pepijn Schoneveld lijkt in ‘Welkom dat je luistert’ zijn ideale stijl als cabaretier te hebben gevonden"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Door situaties beeldend of licht ironisch te beschrijven, maakt hij ze komisch, tragisch of allebei tegelijk.\" en \"Leren alleen te zijn dus, een lange weg waarover Schoneveld smakelijk weet te vertellen."
       }
     ]
   }

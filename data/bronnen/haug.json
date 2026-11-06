@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -13,6 +13,123 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Trevor Wallace"
+      ],
+      "titel": "Trevor Wallace",
+      "genre": "stand-up",
+      "datum": "2026-11-15",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/trevor-wallace-111717152"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Nadine Froughi"
+      ],
+      "titel": "Nadine Froughi",
+      "genre": "stand-up",
+      "datum": "2026-12-17",
+      "tijd": "18:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/nadine-froughi-111717143"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Josh Thomas"
+      ],
+      "titel": "Josh Thomas",
+      "genre": "stand-up",
+      "datum": "2026-12-18",
+      "tijd": "19:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/josh-thomas-111707256"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Anu Vaidyanathan"
+      ],
+      "titel": "Anu Vaidyanathan",
+      "genre": "stand-up",
+      "datum": "2027-01-30",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/anu-vaidyanathan-111713424"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Pinar Fidan"
+      ],
+      "titel": "Pinar Fidan",
+      "genre": "stand-up",
+      "datum": "2027-02-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/pinar-fidan-111714396"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Alina Sharipova",
+        "Jacob Adriani"
+      ],
+      "titel": "Alina Sharipova & Jacob Adriani",
+      "genre": "stand-up",
+      "datum": "2027-02-27",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/alina-sharipova-jacob-adriani-111715970"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Alina Sharipova",
+        "Bugra Gedik"
+      ],
+      "titel": "Alina Sharipova & Bugra Gedik",
+      "genre": "stand-up",
+      "datum": "2027-04-16",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/alina-sharipova-bugra-gedik-111715900"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Milo Edwards"
+      ],
+      "titel": "Milo Edwards",
+      "genre": "stand-up",
+      "datum": "2027-01-29",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/milo-edwards-111712251"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Rogier Bak, Diederik Zuurmond & Georges Degoumois",
+      "genre": "stand-up",
+      "datum": "2026-11-19",
+      "tijd": "19:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/rogier-bak-diederik-zuurmond-georges-degoumois-111716159"
+    },
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
@@ -388,17 +505,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
-      "titel": "Open Mic",
-      "genre": "open-mic",
-      "datum": "2026-11-04",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111710962"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
       "titel": "Chuckle-Up!",
       "genre": "stand-up",
       "datum": "2026-12-19",
@@ -736,19 +842,6 @@
     },
     {
       "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Josh Thomas"
-      ],
-      "titel": "Josh Thomas",
-      "genre": "stand-up",
-      "datum": "2026-12-18",
-      "tijd": "19:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/josh-thomas-111707256"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
       "titel": "Uurtje Finn",
       "genre": "stand-up",
@@ -827,19 +920,6 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://comedyclubhaug.com/shows/club-haug-regulars-try-out-111703647"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Pernille Haaland"
-      ],
-      "titel": "Pernille Haaland",
-      "genre": "stand-up",
-      "datum": "2026-11-01",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/pernille-haaland-111684426"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1120,17 +1200,6 @@
     },
     {
       "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
-      "titel": "Best of Stand-Up Early Show",
-      "genre": "stand-up",
-      "datum": "2026-10-31",
-      "tijd": "18:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111698770"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
       "artiesten": [
         "Sjoerd Janssen"
       ],
@@ -1155,20 +1224,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/rogier-bak-diederik-zuurmond-111696834"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Rogier Bak",
-        "Diederik Zuurmond"
-      ],
-      "titel": "Rogier Bak & Diederik Zuurmond",
-      "genre": "stand-up",
-      "datum": "2026-10-31",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/rogier-bak-diederik-zuurmond-111696826"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1249,28 +1304,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/eric-van-sauers-sezgin-gulec-111693651"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
-      "titel": "Chuckle-Up!",
-      "genre": "stand-up",
-      "datum": "2026-10-31",
-      "tijd": "21:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/chuckle-up-111688154"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
-      "titel": "Best of Stand-Up",
-      "genre": "stand-up",
-      "datum": "2026-10-31",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111688144"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1465,19 +1498,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [
-        "Ali Siddiq"
-      ],
-      "titel": "Ali Siddiq",
-      "genre": "stand-up",
-      "datum": "2026-11-04",
-      "tijd": "17:45",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/ali-siddiq-111638787"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
         "Josh Thomas"
       ],
       "titel": "Josh Thomas",
@@ -1513,19 +1533,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/sofie-hagen-111624033"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Ali Siddiq"
-      ],
-      "titel": "Ali Siddiq",
-      "genre": "stand-up",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/ali-siddiq-111620182"
     }
   ],
   "recensies": {

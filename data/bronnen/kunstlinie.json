@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-10-31",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -55,15 +55,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Cameretten"
+        "Steven Brunswijk"
       ],
-      "titel": "Cameretten",
+      "titel": "Steven Brunswijk",
       "genre": "cabaret",
-      "datum": "2027-05-21",
+      "datum": "2027-04-23",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/cameretten/"
+      "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
     },
     {
       "theater": "kunstlinie",
@@ -81,15 +81,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Steven Brunswijk"
+        "Cameretten"
       ],
-      "titel": "Steven Brunswijk",
+      "titel": "Cameretten",
       "genre": "cabaret",
-      "datum": "2027-04-23",
+      "datum": "2027-05-21",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
+      "bron": "https://kunstlinie.nl/programma/cameretten/"
     },
     {
       "theater": "kunstlinie",
@@ -198,19 +198,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Bro’s"
-      ],
-      "titel": "Bro’s",
-      "genre": "cabaret",
-      "datum": "2026-12-19",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/bros/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Joep van Deudekom & Rob Urgert"
       ],
       "titel": "Joep van Deudekom & Rob Urgert",
@@ -220,6 +207,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/joep-van-deudekom-rob-urgert/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Bro’s"
+      ],
+      "titel": "Bro’s",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/bros/"
     },
     {
       "theater": "kunstlinie",
@@ -698,7 +698,7 @@
       "genre": "cabaret",
       "datum": "2028-01-07",
       "tijd": "20:30",
-      "status": "verplaatst",
+      "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/julika-marijn-2/"
     },

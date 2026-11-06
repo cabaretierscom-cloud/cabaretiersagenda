@@ -1,7 +1,7 @@
 {
   "bron": "parade",
   "naam": "Theater aan de Parade",
-  "opgehaald": "2026-11-01",
+  "opgehaald": "2026-11-05",
   "theaters": [
     {
       "id": "theater-aan-de-parade",
@@ -397,6 +397,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraandeparade.nl/nl/programma/happen-lachen-122732"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Kan Wim? - Oudejaars van de KTA studenten"
+      ],
+      "titel": "Koningstheateracademie",
+      "genre": "cabaret",
+      "datum": "2026-12-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/kan-wim-oudejaars-van-de-kta-studenten"
     },
     {
       "theater": "theater-aan-de-parade",
