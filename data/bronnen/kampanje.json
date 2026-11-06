@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-11-05",
+  "opgehaald": "2026-11-06",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-de-kampanje",
-      "artiesten": [
-        "Rayen Panday"
-      ],
-      "titel": "Grip",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy"
-    },
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
@@ -224,6 +211,19 @@
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
+        "Roel & Jos Maalderink"
+      ],
+      "titel": "Verbroedering",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-74q7"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
         "Gavin Reijnders"
       ],
       "titel": "Jazzebelle",
@@ -243,7 +243,7 @@
       "genre": "cabaret",
       "datum": "2027-01-21",
       "tijd": "20:15",
-      "status": "geannuleerd",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.kampanje.nl/voorstellingen/rene-van-meurs-reprise-h6c6"
     },
@@ -514,7 +514,7 @@
       "genre": "cabaret",
       "datum": "2027-04-09",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/marie-koet-cgxx"
     },
@@ -605,7 +605,7 @@
       "genre": "cabaret",
       "datum": "2027-04-24",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/jandino-qyv8"
     },
@@ -754,23 +754,6 @@
     }
   ],
   "recensies": {
-    "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy": [
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Karma; negentig minuten ambachtelijke en vermakelijke comedy."
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Met oprechte emotie krijgt hij de zaal aan zijn voeten."
-      },
-      {
-        "medium": "Trouw",
-        "sterren": null,
-        "citaat": "Rayen Panday is misschien wel de vriendelijkste cabaretier van Nederland."
-      }
-    ],
     "https://www.kampanje.nl/voorstellingen/marjolijn-van-kooten-zb8v": [
       {
         "medium": "I Love Theater",
@@ -853,6 +836,33 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "De geest van Snijders is als een vulkaan waar constant krankzinnigheid uit borrelt."
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-74q7": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Een grappige, erg mooie voorstelling"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De Plakshot-broers hebben ook in het theater een hoge gunfactor"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Vertrouwde mix van droge humor en maatschappijkritiek"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "De broers leggen kraakhelder het probleem van politiek en media bloot."
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 4,
+        "citaat": "Verrassend, vernieuwend, puur en vooral ontzettend grappig."
       }
     ],
     "https://www.kampanje.nl/voorstellingen/gavin-reijnders-h679": [

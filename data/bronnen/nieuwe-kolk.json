@@ -1,7 +1,7 @@
 {
   "bron": "nieuwe-kolk",
   "naam": "De Nieuwe Kolk",
-  "opgehaald": "2026-11-05",
+  "opgehaald": "2026-11-06",
   "theaters": [
     {
       "id": "de-nieuwe-kolk",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "de-nieuwe-kolk",
-      "artiesten": [
-        "Plien & Bianca"
-      ],
-      "titel": "Harrekidee!",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://denieuwekolk.nl/theater/agenda/plien-bianca"
-    },
     {
       "theater": "de-nieuwe-kolk",
       "artiesten": [
@@ -730,13 +717,6 @@
     }
   ],
   "recensies": {
-    "https://denieuwekolk.nl/theater/agenda/plien-bianca": [
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Typetjesparades, spraakverwarringen, dans, zang en klassieke slapstick: Plien & Bianca beheersen de goede oude revue als geen ander. Onbekommerd lachen."
-      }
-    ],
     "https://denieuwekolk.nl/theater/agenda/david-linszen": [
       {
         "medium": "Trouw",

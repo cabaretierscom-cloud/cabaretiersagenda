@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-11-05",
+  "opgehaald": "2026-11-06",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -20,22 +20,9 @@
       ],
       "titel": "Ruim",
       "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/kasper-van-der-laan-c27j"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
       "datum": "2026-11-06",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/kasper-van-der-laan-c27j"
     },

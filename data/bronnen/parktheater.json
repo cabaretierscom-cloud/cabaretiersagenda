@@ -1,7 +1,7 @@
 {
   "bron": "parktheater",
   "naam": "Parktheater Eindhoven",
-  "opgehaald": "2026-11-05",
+  "opgehaald": "2026-11-06",
   "theaters": [
     {
       "id": "parktheater-eindhoven",
@@ -13,32 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Greg Shapiro"
-      ],
-      "titel": "King me",
-      "genre": "comedy",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/king-me-54cj"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Eran&co"
-      ],
-      "titel": "Ai&ik",
-      "genre": "komedie",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/ai-ik-bgqv"
-    },
     {
       "theater": "parktheater-eindhoven",
       "artiesten": [

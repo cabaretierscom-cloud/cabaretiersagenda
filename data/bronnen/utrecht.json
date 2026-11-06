@@ -1,7 +1,7 @@
 {
   "bron": "utrecht",
   "naam": "Stadsschouwburg Utrecht",
-  "opgehaald": "2026-11-05",
+  "opgehaald": "2026-11-06",
   "theaters": [
     {
       "id": "stadsschouwburg-utrecht",
@@ -198,19 +198,6 @@
     {
       "theater": "stadsschouwburg-utrecht",
       "artiesten": [
-        "Yentl en de Boer"
-      ],
-      "titel": "Rekhalzen",
-      "genre": "cabaret",
-      "soort": "reprise",
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
         "Greg Shapiro"
       ],
       "titel": "KING ME - 250 Years of Donald Trump",
@@ -258,7 +245,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-goede-voorbeeld-vlamousse",
       "datum": "2026-11-14",
       "tijd": "20:30",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -297,7 +284,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/aan-mij-zal-het-niet-liggen-marjolijn-van-kooten",
       "datum": "2026-11-25",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1548,18 +1535,6 @@
         "over": "'We doen wat we kunnen'"
       }
     ],
-    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 5,
-        "citaat": "Hun mooiste, indrukwekkendste voorstelling tot dusver."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Een stroom van mooie, eigenzinnige liedjes met een volstrekt eigen karakter."
-      }
-    ],
     "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/king-me-250-years-of-donald-trum-greg-shapiro": [
       {
         "medium": "Theaterkrant",
@@ -1848,6 +1823,23 @@
         "medium": "Trouw",
         "sterren": 4,
         "citaat": "Een stevig ritme, goede punchlines en een duidelijke structuur."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/baby-reindeer-kobra-theaterproducties-thijs-van-de-meeberg": [
+      {
+        "medium": "De Telegraaf",
+        "sterren": 4,
+        "citaat": "Regisseur Hanneke Braam maakt de dreiging knap invoelbaar."
+      },
+      {
+        "medium": "Scènes",
+        "sterren": null,
+        "citaat": "Baby Reindeer is een fascinerend verhaal dat moeiteloos blijft boeien."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 3,
+        "citaat": "Van de Meeberg weet je 80 minuten te onderhouden als aanstekelijke verteller."
       }
     ],
     "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/472000--oscar-smit": [

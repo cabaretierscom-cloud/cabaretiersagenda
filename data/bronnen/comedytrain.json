@@ -1,7 +1,7 @@
 {
   "bron": "comedytrain",
   "naam": "Comedytrain",
-  "opgehaald": "2026-11-05",
+  "opgehaald": "2026-11-06",
   "theaters": [
     {
       "id": "comedytrain-nieuwe-toomler-amsterdam",
@@ -13,6 +13,518 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-16/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up Matinee",
+      "genre": "stand-up",
+      "datum": "2026-12-06",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-12-06/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2026-12-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-09/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Theo Maassen",
+        "Tim Fransen"
+      ],
+      "titel": "Dubbel",
+      "genre": "stand-up",
+      "datum": "2026-11-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/dubbel-theo-maassen-tim-fransen-2026-11-30/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up Matinee",
+      "genre": "stand-up",
+      "datum": "2026-12-13",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-12-13/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Theo Maassen",
+        "Tim Fransen"
+      ],
+      "titel": "Dubbel",
+      "genre": "stand-up",
+      "datum": "2026-11-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/dubbel-theo-maassen-tim-fransen-2026-11-08/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Alex Ploeg",
+        "Emilio Guzman"
+      ],
+      "titel": "Dubbel",
+      "genre": "stand-up",
+      "datum": "2026-12-13",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/dubbel-alex-ploeg-emilio-guzman-2026-12-13/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Comedy op zolder",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-12-12-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2026-12-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-23/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up Matinee",
+      "genre": "stand-up",
+      "datum": "2026-12-20",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-12-20/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Comedy op zolder",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-12-11/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Spoor Bijster",
+      "genre": "stand-up",
+      "datum": "2026-11-07",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/spoor-bijster-2026-11-07/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Open Podium",
+      "genre": "open-mic",
+      "datum": "2026-12-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-open-podium-2026-12-17/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2026-12-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-02/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Siegfried & Ralph (oftewel Howard Komproe & Murth Mossel)",
+      "genre": "stand-up",
+      "datum": "2026-12-13",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/siegfried-ralph-oftewel-howard-komproe-murth-mossel-2026-12-13/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Teun de Vries",
+        "Tim Fransen"
+      ],
+      "titel": "Dubbel",
+      "genre": "stand-up",
+      "datum": "2026-12-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/dubbel-teun-de-vries-tim-fransen-2026-12-13/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Comedy op zolder",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-12-19-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "De Nieuwe Lichting met MC Kasper van der Laan",
+      "genre": "stand-up",
+      "datum": "2026-11-29",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/de-nieuwe-lichting-met-mc-kasper-van-der-laan-2026-11-29/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Open Podium",
+      "genre": "open-mic",
+      "datum": "2026-12-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-open-podium-2026-12-10/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-19-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Spoor Bijster",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/spoor-bijster-2026-12-11/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Comedy op zolder",
+      "genre": "stand-up",
+      "datum": "2026-12-05",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-12-05-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Stefan Pop"
+      ],
+      "titel": "Genoeg over mij",
+      "genre": "stand-up",
+      "datum": "2026-11-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/solo-show-stefan-pop-genoeg-over-mij-2026-11-22/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Alex Ploeg",
+        "Tim Fransen"
+      ],
+      "titel": "Dubbel",
+      "genre": "stand-up",
+      "datum": "2026-12-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/dubbel-alex-ploeg-tim-fransen-2026-12-09/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Comedy op zolder",
+      "genre": "stand-up",
+      "datum": "2026-12-18",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-12-18/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-19/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Comedy op zolder",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-12-19/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-24/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-12-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-18",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-18-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-17/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-12/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-11-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-18",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-18/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-11/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-03/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-04",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-04-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-15",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-15-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-08",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-08/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-10/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-21/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Comedy op zolder",
+      "genre": "stand-up",
+      "datum": "2026-12-04",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-12-04/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-05",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-05-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-08",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-08-3/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-28/"
+    },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [],
@@ -45,19 +557,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-09/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [
-        "Ivo Graham"
-      ],
-      "titel": "Ivo Graham",
-      "genre": "stand-up",
-      "datum": "2027-04-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-presents-ivo-graham-2027-04-25/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
@@ -106,6 +605,17 @@
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2026-12-04",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-04/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
       "titel": "Comedytrain Line-up Matinee",
       "genre": "stand-up",
       "datum": "2027-01-17",
@@ -128,17 +638,6 @@
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [],
-      "titel": "Open Podium",
-      "genre": "open-mic",
-      "datum": "2027-01-26",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-26/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
       "titel": "Comedytrain Line-up",
       "genre": "stand-up",
       "datum": "2027-01-29",
@@ -146,50 +645,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-29/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-24",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-24/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up Matinee",
-      "genre": "stand-up",
-      "datum": "2026-12-20",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-12-20/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-19",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-19-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain op Zolder",
-      "genre": "stand-up",
-      "datum": "2026-12-19",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-op-zolder-2026-12-19-2/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
@@ -207,231 +662,11 @@
       "artiesten": [],
       "titel": "Comedytrain Line-up",
       "genre": "stand-up",
-      "datum": "2026-12-19",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-19/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain op Zolder",
-      "genre": "stand-up",
-      "datum": "2026-12-19",
-      "tijd": "18:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-op-zolder-2026-12-19/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-18",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-18-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain op Zolder",
-      "genre": "stand-up",
-      "datum": "2026-12-18",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-op-zolder-2026-12-18/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-18",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-18/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-17",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-17/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up Matinee",
-      "genre": "stand-up",
-      "datum": "2026-12-13",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-12-13/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-12",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-12/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
       "datum": "2027-01-14",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-14/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain op Zolder",
-      "genre": "stand-up",
-      "datum": "2026-12-12",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-op-zolder-2026-12-12-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-12",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-12-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-11",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-11-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-11",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-11/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain op Zolder",
-      "genre": "stand-up",
-      "datum": "2026-12-11",
-      "tijd": "18:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-op-zolder-2026-12-11/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-10",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-10/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up Matinee",
-      "genre": "stand-up",
-      "datum": "2026-12-06",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-12-06/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-05",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-05-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Comedy op zolder",
-      "genre": "stand-up",
-      "datum": "2026-12-05",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-12-05/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-05",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-05/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-12-04",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-04-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Comedy op zolder",
-      "genre": "stand-up",
-      "datum": "2026-12-04",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-12-04/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
@@ -449,22 +684,170 @@
       "artiesten": [],
       "titel": "Comedytrain Line-up",
       "genre": "stand-up",
-      "datum": "2026-12-04",
+      "datum": "2026-12-05",
       "tijd": "19:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-04/"
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-05/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Open Podium",
+      "genre": "open-mic",
+      "datum": "2027-01-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-05/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [],
       "titel": "Comedytrain Line-up",
       "genre": "stand-up",
-      "datum": "2026-12-03",
+      "datum": "2027-01-08",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-08-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-07",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-03/"
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-07/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-09",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-09-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-02",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-02-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up Matinee",
+      "genre": "stand-up",
+      "datum": "2027-01-31",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-31/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-02",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-02/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up Matinee",
+      "genre": "stand-up",
+      "datum": "2027-01-24",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-24/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-16",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-16-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-22",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-22-2/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Dave Felida",
+        "René van Meurs"
+      ],
+      "titel": "Dubbel",
+      "genre": "stand-up",
+      "datum": "2027-03-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/dubbel-dave-felida-rene-van-meurs-2027-03-23/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Open Podium",
+      "genre": "open-mic",
+      "datum": "2027-01-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-19/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Ivo Graham"
+      ],
+      "titel": "Ivo Graham",
+      "genre": "stand-up",
+      "datum": "2027-04-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-presents-ivo-graham-2027-04-25/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Open Podium",
+      "genre": "open-mic",
+      "datum": "2027-01-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-26/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
@@ -476,17 +859,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-11-29/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "De Nieuwe Lichting met MC Kasper van der Laan",
-      "genre": "stand-up",
-      "datum": "2026-11-29",
-      "tijd": "15:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/de-nieuwe-lichting-met-mc-kasper-van-der-laan-2026-11-29/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
@@ -798,17 +1170,6 @@
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-11-05/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [
         "Buğra Gedik",
         "Vincent Geers"
@@ -824,73 +1185,6 @@
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [
-        "Teun de Vries",
-        "Tim Fransen"
-      ],
-      "titel": "Dubbel",
-      "genre": "stand-up",
-      "datum": "2026-12-13",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/dubbel-teun-de-vries-tim-fransen-2026-12-13/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [
-        "Alex Ploeg",
-        "Tim Fransen"
-      ],
-      "titel": "Dubbel",
-      "genre": "stand-up",
-      "datum": "2026-12-09",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/dubbel-alex-ploeg-tim-fransen-2026-12-09/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [
-        "Alex Ploeg",
-        "Emilio Guzman"
-      ],
-      "titel": "Dubbel",
-      "genre": "stand-up",
-      "datum": "2026-12-13",
-      "tijd": "19:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/dubbel-alex-ploeg-emilio-guzman-2026-12-13/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Siegfried & Ralph (oftewel Howard Komproe & Murth Mossel)",
-      "genre": "stand-up",
-      "datum": "2026-12-13",
-      "tijd": "15:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/siegfried-ralph-oftewel-howard-komproe-murth-mossel-2026-12-13/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [
-        "Theo Maassen",
-        "Tim Fransen"
-      ],
-      "titel": "Dubbel",
-      "genre": "stand-up",
-      "datum": "2026-11-30",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/dubbel-theo-maassen-tim-fransen-2026-11-30/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [
         "Eric van Sauers",
         "Sezgin Güleç"
       ],
@@ -901,33 +1195,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/dubbel-eric-van-sauers-sezgin-gulec-2026-11-22/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [
-        "Theo Maassen",
-        "Tim Fransen"
-      ],
-      "titel": "Dubbel",
-      "genre": "stand-up",
-      "datum": "2026-11-08",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/dubbel-theo-maassen-tim-fransen-2026-11-08/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [
-        "Stefan Pop"
-      ],
-      "titel": "Genoeg over mij",
-      "genre": "stand-up",
-      "datum": "2026-11-22",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/solo-show-stefan-pop-genoeg-over-mij-2026-11-22/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
@@ -958,39 +1225,6 @@
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2026-12-23",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-23/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Open Podium",
-      "genre": "open-mic",
-      "datum": "2026-12-17",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-open-podium-2026-12-17/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2026-12-16",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-16/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
       "titel": "Echt Gebeurd",
       "genre": "stand-up",
       "datum": "2026-11-15",
@@ -998,83 +1232,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/echt-gebeurd-2026-11-15/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Spoor Bijster",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/spoor-bijster-2026-11-07/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Spoor Bijster",
-      "genre": "stand-up",
-      "datum": "2026-12-11",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/spoor-bijster-2026-12-11/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up Matinee",
-      "genre": "stand-up",
-      "datum": "2027-01-31",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-31/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up Matinee",
-      "genre": "stand-up",
-      "datum": "2027-01-24",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-24/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Open Podium",
-      "genre": "open-mic",
-      "datum": "2026-12-10",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-open-podium-2026-12-10/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2026-12-09",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-09/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2026-12-02",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-02/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
@@ -1152,17 +1309,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/open-podium-2026-11-12/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Open Podium",
-      "genre": "open-mic",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/open-podium-2026-11-05/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
@@ -1422,61 +1568,6 @@
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-08",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-08-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-07",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-07/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-09",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-09-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-02",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-02-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-02",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-02/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
       "titel": "Comedytrain Try-Out",
       "genre": "stand-up",
       "datum": "2027-01-06",
@@ -1488,50 +1579,6 @@
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-16",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-16-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-22",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-22-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-15",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-15-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-08",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-08/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
       "titel": "Comedytrain Try-Out",
       "genre": "stand-up",
       "datum": "2027-01-13",
@@ -1539,39 +1586,6 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2027-01-13/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-21/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-08",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-op-zolder-2027-01-08/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-28",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-28/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",

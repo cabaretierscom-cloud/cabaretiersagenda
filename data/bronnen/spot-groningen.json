@@ -1,7 +1,7 @@
 {
   "bron": "spot-groningen",
   "naam": "SPOT Groningen",
-  "opgehaald": "2026-11-05",
+  "opgehaald": "2026-11-06",
   "theaters": [
     {
       "id": "de-oosterpoort",
@@ -54,19 +54,6 @@
   ],
   "speeldata": [
     {
-      "theater": "usva-groningen",
-      "artiesten": [
-        "Marie Koet"
-      ],
-      "titel": "Eindspel",
-      "genre": "stand-up",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "geannuleerd",
-      "soort": "try-out",
-      "bron": "https://www.spotgroningen.nl/programma/marie-koet-2/"
-    },
-    {
       "theater": "stadsschouwburg-groningen",
       "artiesten": [
         "Groninger Studenten Cabaret Festival"
@@ -101,7 +88,7 @@
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/groninger-studenten-cabaret-festival-24/"
     },
@@ -231,7 +218,7 @@
       "genre": "kleinkunst",
       "datum": "2026-12-06",
       "tijd": "14:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/yentl-de-boer-3/"
     },
@@ -426,7 +413,7 @@
       "genre": "cabaret",
       "datum": "2027-01-27",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/david-van-rosmalen/"
     },

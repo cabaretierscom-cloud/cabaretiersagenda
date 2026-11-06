@@ -1,7 +1,7 @@
 {
   "bron": "plt",
   "naam": "PLT (Parkstad Limburg Theaters)",
-  "opgehaald": "2026-11-05",
+  "opgehaald": "2026-11-06",
   "theaters": [
     {
       "id": "theater-heerlen",
@@ -288,32 +288,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/firma-lampo-doeve-van-stonehenge/23-10-2027-20-30"
-    },
-    {
-      "theater": "theater-heerlen",
-      "artiesten": [
-        "De Limburgse BuutteCup"
-      ],
-      "titel": "Stichting Buutte Cultuur Limburg",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.plt.nl/programma/de-limburgse-buuttecup/05-11-2026-20-00"
-    },
-    {
-      "theater": "theater-kerkrade",
-      "artiesten": [
-        "Cabarestafette"
-      ],
-      "titel": "Cabarestafette presenteert: NIEUW GELUID!",
-      "genre": "stand-up",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.plt.nl/programma/cabarestafette-cabarestafette-presenteert-nieuw-geluid/05-11-2026-20-00"
     },
     {
       "theater": "theater-sittard",

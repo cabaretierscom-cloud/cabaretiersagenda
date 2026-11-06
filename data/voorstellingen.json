@@ -135,6 +135,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "alina-sharipova-alina-sharipova",
+    "titel": "Alina Sharipova -",
+    "artiesten": [
+      "alina-sharipova"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "alina-sharipova-bugra-gedik-alina-sharipova-en-bugra-gedik",
     "titel": "Alina Sharipova & Bugra Gedik",
     "artiesten": [
@@ -242,9 +250,9 @@
     "artiesten": [
       "amsterdams-kleinkunst-festival"
     ],
-    "genre": "kleinkunst",
+    "genre": "cabaret",
     "ookGenres": [
-      "cabaret"
+      "kleinkunst"
     ]
   },
   {
@@ -1517,13 +1525,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "comedytrain-op-zolder-comedytrain-nieuwe-toomler-amsterdam",
-    "titel": "Comedytrain op Zolder",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "comedytrain-nieuwe-toomler-amsterdam"
-  },
-  {
     "id": "comedytrain-open-podium-comedytrain-nieuwe-toomler-amsterdam",
     "titel": "Comedytrain Open Podium",
     "artiesten": [],
@@ -1656,6 +1657,15 @@
       "daniel-yazbek"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "dave-felida-rene-van-meurs-dubbel",
+    "titel": "Dubbel",
+    "artiesten": [
+      "dave-felida",
+      "rene-van-meurs"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "davey-geernaert-floris-molenaar-happen-en-lachen",
@@ -2213,14 +2223,6 @@
     "genre": "stand-up"
   },
   {
-    "id": "ed-night-ed-night",
-    "titel": "Ed Night",
-    "artiesten": [
-      "ed-night"
-    ],
-    "genre": "stand-up"
-  },
-  {
     "id": "eeftink-en-neimeijer-niets-menselijks-is-ons-vreemd",
     "titel": "Niets Menselijks Is Ons Vreemd!",
     "artiesten": [
@@ -2327,10 +2329,7 @@
     "artiesten": [
       "eran-en-co"
     ],
-    "genre": "komedie",
-    "ookGenres": [
-      "cabaret"
-    ]
+    "genre": "cabaret"
   },
   {
     "id": "erhan-demirci-made-in-cite",
@@ -3083,10 +3082,7 @@
     "artiesten": [
       "huub-stapel"
     ],
-    "genre": "cabaret",
-    "ookGenres": [
-      "komedie"
-    ]
+    "genre": "cabaret"
   },
   {
     "id": "ice-ice",
@@ -3099,6 +3095,14 @@
   {
     "id": "ice-khalid-alterch",
     "titel": "Khalid Alterch",
+    "artiesten": [
+      "ice"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "ice-live-in-het-theater",
+    "titel": "Live in het theater",
     "artiesten": [
       "ice"
     ],
@@ -3915,15 +3919,7 @@
     "artiesten": [
       "kor-hoebe"
     ],
-    "genre": "cabaret",
-    "recensies": [
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Kor Hoebe improviseert als de beste",
-        "bron": "https://www.theaterdeveste.nl/programma/korrelrelatie-9ynz"
-      }
-    ]
+    "genre": "cabaret"
   },
   {
     "id": "lachen-in-backstage-nationaal-theaterweekend",
@@ -5190,6 +5186,14 @@
     "theater": "southend-comedy-club"
   },
   {
+    "id": "p-nar-fidan-p-nar-fidan",
+    "titel": "Pınar Fidan",
+    "artiesten": [
+      "p-nar-fidan"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "palaver-live-amai-comedy-club-gent",
     "titel": "Palaver Live",
     "artiesten": [],
@@ -5265,14 +5269,6 @@
     "genre": "stand-up"
   },
   {
-    "id": "patrick-spicer-patrick-spicer",
-    "titel": "Patrick Spicer",
-    "artiesten": [
-      "patrick-spicer"
-    ],
-    "genre": "stand-up"
-  },
-  {
     "id": "paul-haenen-50-jaar-margreet-dolman",
     "titel": "50 jaar Margreet Dolman",
     "artiesten": [
@@ -5305,16 +5301,16 @@
     "genre": "cabaret",
     "recensies": [
       {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Pepijn Schoneveld lijkt in ‘Welkom dat je luistert’ zijn ideale stijl als cabaretier te hebben gevonden.",
-        "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld"
-      },
-      {
         "medium": "I Love Theater",
         "sterren": 4,
         "citaat": "Schoneveld neemt de zaal op een innemende manier mee, is gevat in zijn interactie met het publiek en weet een heldere lijn door de avond te trekken.",
         "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/welkom-dat-je-luistert-pepijn-schoneveld"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Pepijn Schoneveld lijkt in ‘Welkom dat je luistert’ zijn ideale stijl als cabaretier te hebben gevonden",
+        "bron": "https://theaterdestoep.nl/voorstelling/pepijn-schoneveld-2627"
       },
       {
         "medium": "Theaterkrant",
@@ -5502,14 +5498,6 @@
     ]
   },
   {
-    "id": "pinar-fidan-pinar-fidan",
-    "titel": "Pinar Fidan",
-    "artiesten": [
-      "pinar-fidan"
-    ],
-    "genre": "stand-up"
-  },
-  {
     "id": "plien-en-bianca-harrekidee",
     "titel": "Harrekidee",
     "artiesten": [
@@ -5659,13 +5647,13 @@
         "medium": "Het Parool",
         "sterren": null,
         "citaat": "Met oprechte emotie krijgt hij de zaal aan zijn voeten.",
-        "bron": "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy"
+        "bron": "https://www.musisenstadstheater.nl/nl/agenda/rayen-panday-grip/10209"
       },
       {
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Karma; negentig minuten ambachtelijke en vermakelijke comedy.",
-        "bron": "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy"
+        "bron": "https://www.musisenstadstheater.nl/nl/agenda/rayen-panday-grip/10209"
       }
     ]
   },
@@ -5929,8 +5917,8 @@
       {
         "medium": "Theaterparadijs",
         "sterren": 4,
-        "citaat": "Verrassend, vernieuwend, puur en vooral ontzettend grappig",
-        "bron": "https://denieuwekolk.nl/theater/agenda/roel-jos-maalderink"
+        "citaat": "Verrassend, vernieuwend, puur en vooral ontzettend grappig.",
+        "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-74q7"
       },
       {
         "medium": "Het Parool",
@@ -6733,6 +6721,26 @@
     "genre": "cabaret",
     "ookGenres": [
       "komedie"
+    ],
+    "recensies": [
+      {
+        "medium": "De Telegraaf",
+        "sterren": 4,
+        "citaat": "Regisseur Hanneke Braam maakt de dreiging knap invoelbaar.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/baby-reindeer-kobra-theaterproducties-thijs-van-de-meeberg"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 3,
+        "citaat": "Van de Meeberg weet je 80 minuten te onderhouden als aanstekelijke verteller.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/baby-reindeer-kobra-theaterproducties-thijs-van-de-meeberg"
+      },
+      {
+        "medium": "Scènes",
+        "sterren": null,
+        "citaat": "Baby Reindeer is een fascinerend verhaal dat moeiteloos blijft boeien.",
+        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/baby-reindeer-kobra-theaterproducties-thijs-van-de-meeberg"
+      }
     ]
   },
   {

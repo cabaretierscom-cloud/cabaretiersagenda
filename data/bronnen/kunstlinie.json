@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-05",
+  "opgehaald": "2026-11-06",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -42,6 +42,32 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Cameretten",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/cameretten/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Roué Verveer",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "Deng Boy"
       ],
       "titel": "Deng Boy",
@@ -64,32 +90,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Roué Verveer"
-      ],
-      "titel": "Roué Verveer",
-      "genre": "cabaret",
-      "datum": "2027-05-29",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Cameretten"
-      ],
-      "titel": "Cameretten",
-      "genre": "cabaret",
-      "datum": "2027-05-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/cameretten/"
     },
     {
       "theater": "kunstlinie",

@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-11-05",
+  "opgehaald": "2026-11-06",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -31,30 +31,6 @@
   "speeldata": [
     {
       "theater": "theater-walhalla",
-      "artiesten": [],
-      "titel": "Cabaret Club Giggle",
-      "genre": "kleinkunst",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-2/"
-    },
-    {
-      "theater": "kleine-walhalla",
-      "artiesten": [
-        "Remy Evers"
-      ],
-      "titel": "Graag Gedaan (leesvoorstelling)",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/remy-evers-graag-gedaan-leesvoorstelling/"
-    },
-    {
-      "theater": "theater-walhalla",
       "artiesten": [
         "Elfie Tromp"
       ],
@@ -75,7 +51,7 @@
       "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "première",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/elfie-tromp-aai-poesje-aai-poesje-try-out-2/"
     },
@@ -216,7 +192,7 @@
       "genre": "kleinkunst",
       "datum": "2027-01-07",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-3/"
     },
@@ -422,7 +398,7 @@
       "genre": "kleinkunst",
       "datum": "2027-02-04",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-8/"
     },
@@ -448,7 +424,7 @@
       "genre": "cabaret",
       "datum": "2027-02-10",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-11/"
     },
@@ -552,7 +528,7 @@
       "genre": "cabaret",
       "datum": "2027-02-24",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/viggo-waas-eddie-b-wahr-kees-van-der-vooren-eigenlijk-try-out/"
     },
@@ -626,7 +602,7 @@
       "genre": "cabaret",
       "datum": "2027-03-10",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/joosen-en-de-jager-niks-aan-het-handje/"
     },
@@ -713,7 +689,7 @@
       "genre": "cabaret",
       "datum": "2027-03-24",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/anuar-ongeduldig-geduldig-2/"
     },
@@ -763,7 +739,7 @@
       "genre": "cabaret",
       "datum": "2027-04-08",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/luuk-weggemans-lach-maar-om-mij/"
     },
@@ -813,7 +789,7 @@
       "genre": "cabaret",
       "datum": "2027-04-15",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/finalistentour-leids-cabaret-festival/"
     },
@@ -891,7 +867,7 @@
       "genre": "cabaret",
       "datum": "2027-04-22",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/fabian-franciscus-is-het-leven-al-begonnen/"
     },

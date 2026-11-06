@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-11-05",
+  "opgehaald": "2026-11-06",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -13,32 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Elfie Tromp"
-      ],
-      "titel": "Aai Poesje Aai Poesje",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/aai-poesje-aai-poesje-n89s"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Hendrik Kegels & Thomas Claessens"
-      ],
-      "titel": "A Comedy of Errors",
-      "genre": "stand-up",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/a-comedy-of-errors-nsqy"
-    },
     {
       "theater": "theater-bellevue",
       "artiesten": [],
@@ -203,7 +177,7 @@
       "genre": "cabaret",
       "datum": "2026-11-19",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
     },
