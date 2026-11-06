@@ -323,7 +323,14 @@
       // data.a[i][0] is het adres van de artiest (of het festival); een oud bestand heeft nog de id.
       const adres = (x) => (x.startsWith("/") ? x : `/artiesten/${x}/`);
       const artiesten = ais.map((i) => `<a href="${adres(data.a[i][0])}">${esc(data.a[i][1])}</a>`).join(" &amp; ") || esc(titel);
-      const show = !ais.length ? esc(znaam) : echte ? (pad ? `<a href="${pad}">${esc(echte)}</a>` : esc(echte)) : "";
+      // Zelfde opmaak als gigRow()/rijLabels() in src/templates.mjs: titel tussen aanhalingstekens, dan de labels.
+      const titelHtml = ais.length && echte ? `<span class="titel">${pad ? `<a href="${pad}">${esc(echte)}</a>` : esc(echte)}</span>` : "";
+      const comedyavond = !ais.length && g.genres.some((x) => x === "stand-up" || x === "open-mic");
+      const labels = [
+        g.soort && g.soort !== vastSoort ? `<span class="label-soort">${esc(g.soort)}</span>` : "",
+        comedyavond ? `<span class="label-genre">Comedyavond</span>` : "",
+        ...g.genres.filter((x) => x !== vastGenre).map((x) => `<span class="label-genre">${esc(data.genres?.[x] || x)}</span>`),
+      ].join("");
       const wat = ais.length ? [namen, echte].filter(Boolean).join(": ") : titel;
       const inAgenda = ["geannuleerd", "verplaatst"].includes(g.status) ? "" : ` data-wat="${esc(wat)}" data-locatie="${esc(`${znaam}, ${plaats}`)}"${g.tijd ? ` data-tijd="${g.tijd}"` : ""}`;
       const status = g.status === "uitverkocht" ? '<span class="status sold stempel">Uitverkocht</span>'
@@ -335,8 +342,8 @@
       const ticket = `<a class="btn tickets${kopen ? "" : " ghost"}" href="${esc(g.bron)}" target="_blank" rel="noopener nofollow"${meet}><span class="ticket-tekst">${kopen ? "Tickets" : "Meer info"}</span><span class="ticket-strook">${data.iconen.extern}</span><span class="visually-hidden">: ${esc(namen || titel)} op ${fVol.format(d(g.datum))} in ${esc(znaam)} (externe website, opent in een nieuw tabblad)</span></a>`;
       return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-genre="${g.genres.join(" ")}" data-status="${g.status}"${inAgenda}>
       <div class="date"><b>${d(g.datum).getDate()}</b><small>${fKort.format(d(g.datum)).replace(".", "")}${g.tijd ? " " + g.tijd : ""}</small></div>
-      <div class="main"><span class="swatch" style="${kleur};background:var(--bg)" aria-hidden="true"></span><div class="main-text"><span class="artist">${artiesten}</span><span class="show">${show}${g.soort ? ` <span class="pill">${esc(g.soort)}</span>` : ""}</span></div></div>
-      <div class="venue"><a href="/theaters/${zid}/">${esc(znaam)}</a><span><a href="/theaters-in-${pid}/">${esc(plaats)}</a>, ${esc(land)}</span></div>
+      <div class="main"><span class="swatch" style="${kleur};background:var(--bg)" aria-hidden="true"></span><div class="main-text"><span class="artist">${artiesten}</span><span class="show">${titelHtml}${labels}</span></div></div>
+      <div class="venue"><a href="/theaters/${zid}/">${data.iconen.pin || ""}<span class="visually-hidden">Theater: </span>${esc(znaam)}</a><span><a href="/theaters-in-${pid}/">${esc(plaats)}</a>, ${esc(land)}</span></div>
       <div class="side">${status}<div class="knoppen">${ticket}</div></div>
     </article>`;
     }

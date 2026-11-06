@@ -40,6 +40,7 @@ export const SITE = {
 };
 
 const ICON = {
+  pin: '<svg class="ic-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>',
   sold: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M6 18L18 6"/></svg>',
   doubt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17.5v.01"/></svg>',
   prev: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>',
@@ -269,22 +270,37 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return "";
   }
 
-  function gigRow(g, { showArtist = true, showVenue = true } = {}) {
+  // Labels onder de naam: try-out/première/reprise (omlijnd), "Comedyavond" bij stand-up of een open mic zonder
+  // vaste artiest, en de genres (grijs vlak). Op een genrepagina valt dat genre weg, op /agenda/try-outs/ de try-out.
+  // Dezelfde opmaak maakt public/agenda.js voor de rijen die later laden (rijHtml): pas ze samen aan.
+  function rijLabels(g, { verbergGenre = null, verbergSoort = null } = {}) {
+    const v = V.get(g.voorstelling), genres = genresVanV(v);
+    const comedyavond = !v.artiesten.length && genres.some((x) => x === "stand-up" || x === "open-mic");
+    return [
+      g.soort && g.soort !== verbergSoort ? `<span class="label-soort">${esc(g.soort)}</span>` : "",
+      comedyavond ? `<span class="label-genre">Comedyavond</span>` : "",
+      ...genres.filter((x) => x !== verbergGenre).map((x) => `<span class="label-genre">${esc(GENRES[x])}</span>`),
+    ].join("");
+  }
+
+  function gigRow(g, { showArtist = true, showVenue = true, verbergGenre = null, verbergSoort = null } = {}) {
     const v = V.get(g.voorstelling), t = T.get(g.theater);
     const zoek = [v.titel, t.naam, t.plaats, ...v.artiesten.map((a) => A.get(a).naam)].join(" ").toLowerCase();
     // Voor de knop "Zet in je agenda" (public/agenda.js): wat, waar en hoe laat.
     const inAgenda = ["geannuleerd", "verplaatst"].includes(g.status) ? ""
       : ` data-wat="${esc(v.artiesten.length ? [artistNames(g.voorstelling), echteTitel(g.voorstelling)].filter(Boolean).join(": ") : v.titel)}" data-locatie="${esc(`${t.naam}, ${t.plaats}`)}"${g.tijd ? ` data-tijd="${g.tijd}"` : ""}`;
+    // De titel van de voorstelling cursief tussen aanhalingstekens; zonder vaste artiest staat de titel al bovenaan.
+    const titel = showArtist ? (v.artiesten.length && echteTitel(g.voorstelling) ? showLink(g.voorstelling, esc(echteTitel(g.voorstelling))) : "") : esc(v.titel);
     return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-land="${t.land}" data-plaats="${esc(t.plaats)}" data-genre="${genresVanV(v).join(" ")}" data-status="${g.status}" data-zoek="${esc(zoek)}" data-waar="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}"${inAgenda}>
       <div class="date"><b>${fmt.day(g.datum)}</b><small>${fmt.weekdayShort(g.datum)}${g.tijd ? " " + g.tijd : ""}</small></div>
       <div class="main">
         <span class="swatch" style="${ink(leadInk(g.voorstelling))};background:var(--bg)" aria-hidden="true"></span>
         <div class="main-text">
           ${showArtist ? `<span class="artist">${artistLinks(g.voorstelling)}</span>` : ""}
-          <span class="show">${showArtist && !v.artiesten.length ? esc(t.naam) : (echteTitel(g.voorstelling) ? showLink(g.voorstelling, esc(echteTitel(g.voorstelling))) : esc(showArtist ? "" : v.titel))}${g.soort ? ` <span class="pill">${esc(g.soort)}</span>` : ""}</span>
+          <span class="show">${titel ? `<span class="titel">${titel}</span>` : ""}${rijLabels(g, { verbergGenre, verbergSoort })}</span>
         </div>
       </div>
-      <div class="venue">${showVenue ? `<a href="/theaters/${t.id}/">${esc(t.naam)}</a><span><a href="${plaatsPad(t.plaats)}">${esc(t.plaats)}</a>, ${LANDEN[t.land]}</span>` : `<span>${esc(GENRES[v.genre])}</span>`}</div>
+      <div class="venue">${showVenue ? `<a href="/theaters/${t.id}/">${ICON.pin}<span class="visually-hidden">Theater: </span>${esc(t.naam)}</a><span><a href="${plaatsPad(t.plaats)}">${esc(t.plaats)}</a>, ${LANDEN[t.land]}</span>` : ""}</div>
       <div class="side">${statusLabel(g)}<div class="knoppen">${ticketKnop(g)}</div></div>
     </article>`;
   }
@@ -511,10 +527,11 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // MAX (aangevuld tot het eind van die dag), agenda.js laadt de rest uit /agenda/alles.js en houdt zich aan
   // het vaste genre of de vaste soort (data-vast-genre, data-vast-soort).
   function zoekbareLijst(list, { max = 150, genre = null, soort = null } = {}) {
+    const rijOpts = { verbergGenre: genre, verbergSoort: soort };
     const grens = list[Math.min(max, list.length) - 1].datum;
     const eerste = list.filter((g) => g.datum <= grens);
     return { eerste, html: `${filters(list, { genre: !genre })}
-      <div id="gigs" data-alles="/agenda/alles.js?v=${tellers.speeldata}-${db.today}" data-tot="${grens}" data-totaal="${list.length}"${genre ? ` data-vast-genre="${genre}"` : ""}${soort ? ` data-vast-soort="${soort}"` : ""}>${monthGroups(eerste)}</div>
+      <div id="gigs" data-alles="/agenda/alles.js?v=${tellers.speeldata}-${db.today}" data-tot="${grens}" data-totaal="${list.length}"${genre ? ` data-vast-genre="${genre}"` : ""}${soort ? ` data-vast-soort="${soort}"` : ""}>${monthGroups(eerste, rijOpts)}</div>
       ${leegBlok}
       <p class="meer-weken" id="laad-meer"><button type="button" class="btn" id="laad-week">Toon alle ${list.length.toLocaleString("nl-NL")} voorstellingen</button></p>` };
   }
@@ -764,7 +781,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       const zn = nr(zi, z, g.theater, () => [t.id, t.naam, t.plaats, plaatsId(t.plaats), LANDEN[t.land]]);
       return [g.datum, g.tijd || "", vn, zn, g.status, g.soort || "", metUtm(g.bron), g.opmerking || ""];
     });
-    return { iconen: { extern: ICON.extern, doubt: ICON.doubt, sold: ICON.sold }, statussen: STATUSSEN, a, z, v, r: rijen };
+    return { iconen: { extern: ICON.extern, doubt: ICON.doubt, sold: ICON.sold, pin: ICON.pin }, statussen: STATUSSEN, genres: GENRES, a, z, v, r: rijen };
   }
 
   function agendaIndex() {
@@ -1823,7 +1840,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     <section class="block wrap az-blok" aria-labelledby="lijst-titel">
       <h2 class="sub-head" id="lijst-titel">${list.length > MAX ? "Eerstvolgende voorstellingen" : "Alle voorstellingen"}</h2>
       ${groot ? groot.html : `${list.length > 12 ? filters(list, { maand: true }) : ""}
-      <div id="gigs">${monthGroups(list)}</div>
+      <div id="gigs">${monthGroups(list, { verbergGenre: g })}</div>
       ${list.length > 12 ? leegBlok : ""}`}
       ${genrePlaatsen(g).length ? `<section class="genre-plaatsen" aria-labelledby="gp-titel">
         <h2 class="sub-head" id="gp-titel">${esc(info.kop)} per plaats</h2>
@@ -1888,7 +1905,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     <section class="block wrap az-blok" aria-labelledby="lijst-titel">
       <h2 class="sub-head" id="lijst-titel">${list.length > MAX ? "Eerstvolgende try-outs" : "Alle try-outs"}</h2>
       ${groot ? groot.html : `${list.length > 12 ? filters(list, { maand: true }) : ""}
-      <div id="gigs">${monthGroups(list)}</div>
+      <div id="gigs">${monthGroups(list, { verbergSoort: "try-out" })}</div>
       ${list.length > 12 ? leegBlok : ""}`}
       <section class="seo-tekst prose" aria-labelledby="over-titel">
         <h2 id="over-titel">Over try-outs</h2>
@@ -1945,7 +1962,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     </section>` : ""}
       <div class="wrap detail-body">
         ${list.length > 12 ? filters(list, { maand: true }) : ""}
-        <div id="gigs">${monthGroups(list)}</div>
+        <div id="gigs">${monthGroups(list, { verbergGenre: g })}</div>
         ${list.length > 12 ? leegBlok : ""}
         <section class="seo-tekst prose" aria-labelledby="over-titel">
           <h2 id="over-titel">${esc(info.kop)} in ${naam}</h2>

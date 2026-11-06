@@ -441,7 +441,19 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .gig .main a, .gig .venue a { text-decoration: none; }
 .gig .main a:hover, .gig .venue a:hover { text-decoration: underline; }
 .gig .artist { font-weight: 700; font-size: var(--step-1); line-height: 1.2; }
-.gig .show { display: block; color: var(--ink-2); }
+.gig .show { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 3px; color: var(--ink-2); }
+.gig .show:empty { display: none; }
+/* Voorstelling cursief tussen aanhalingstekens; daarachter de labels: soort (omlijnd) en genre (grijs vlak). */
+.gig .show .titel { font-style: italic; }
+.gig .show .titel::before { content: "\201C"; } .gig .show .titel::after { content: "\201D"; }
+.label-genre, .label-soort { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 999px; font: 800 .72rem/1.3 var(--font-body); letter-spacing: .06em; text-transform: uppercase; font-style: normal; }
+/* Contrast: --ink-2 op --paper-2 is ruim 7:1 (licht en donker). */
+.label-genre { background: var(--paper-2); color: var(--ink-2); }
+.label-soort { border: 1.5px solid var(--ink); color: var(--ink); padding: 1px 7px; }
+/* Theater met een speldje ervoor; de plaats eronder lijnt uit met de naam. */
+.gig .venue > a { display: inline-flex; align-items: center; gap: 7px; }
+.gig .venue .ic-pin { width: 16px; height: 16px; flex: none; color: var(--ink-2); }
+.gig .venue > span { padding-left: 23px; }
 .gig .venue { min-width: 0; }
 .gig .venue a { font-weight: 600; }
 .gig .venue span { display: block; color: var(--ink-2); font-size: .95rem; }
