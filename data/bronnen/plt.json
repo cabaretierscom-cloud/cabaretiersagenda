@@ -1,7 +1,7 @@
 {
   "bron": "plt",
   "naam": "PLT (Parkstad Limburg Theaters)",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-07",
   "theaters": [
     {
       "id": "theater-heerlen",
@@ -171,19 +171,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/kasper-van-der-laan-ruim/06-04-2027-20-00"
-    },
-    {
-      "theater": "theater-heerlen",
-      "artiesten": [
-        "René van Meurs"
-      ],
-      "titel": "Noodzakelijk kwaad",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.plt.nl/programma/rené-van-meurs-noodzakelijk-kwaad/06-11-2026-20-00"
     },
     {
       "theater": "theater-heerlen",
@@ -1718,18 +1705,6 @@
         "medium": "de Volkskrant",
         "sterren": null,
         "citaat": "5 van 5 sterren"
-      }
-    ],
-    "https://www.plt.nl/programma/rené-van-meurs-noodzakelijk-kwaad/06-11-2026-20-00": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "4 van 5 sterren"
-      },
-      {
-        "medium": "Dagblad van het Noorden",
-        "sterren": null,
-        "citaat": "4 van 5 sterren"
       }
     ],
     "https://www.plt.nl/programma/ronald-goedemondt-mijn-lieve-achterdocht-reprise/19-02-2027-20-00": [

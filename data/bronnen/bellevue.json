@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-07",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -13,39 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Femilicious",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/femilicious-q2fv"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Femilicious",
-      "genre": "cabaret",
-      "datum": "2027-02-13",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/femilicious-q2fv"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Femilicious",
-      "genre": "cabaret",
-      "datum": "2027-05-29",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/femilicious-q2fv"
-    },
     {
       "theater": "theater-bellevue",
       "artiesten": [
@@ -177,7 +144,7 @@
       "genre": "cabaret",
       "datum": "2026-11-19",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
     },
@@ -256,7 +223,7 @@
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/in-de-hemel-ken-ik-jullie-niet-lkjn"
     },
@@ -992,6 +959,28 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/aan-mij-zal-het-niet-liggen-1lcx"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Femilicious",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/femilicious-q2fv"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Femilicious",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/femilicious-q2fv"
     },
     {
       "theater": "theater-bellevue",

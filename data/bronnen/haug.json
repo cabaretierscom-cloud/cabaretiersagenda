@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-07",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -48,7 +48,7 @@
       "genre": "stand-up",
       "datum": "2026-12-18",
       "tijd": "19:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/josh-thomas-111707256"
     },
@@ -347,19 +347,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/victor-luis-van-es-vincent-geers-extra-show-13-november"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Grace Mulvey"
-      ],
-      "titel": "Grace Mulvey",
-      "genre": "stand-up",
-      "datum": "2027-04-08",
-      "tijd": "19:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/grace-mulvey-111713062"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1012,17 +999,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
-      "titel": "Chuckle-Up! in English",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": "21:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/chuckle-up-in-english-111701045"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
       "titel": "Best of Stand-Up",
       "genre": "stand-up",
       "datum": "2026-11-12",
@@ -1100,17 +1076,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
-      "titel": "Best of Stand-Up Early Show",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": "18:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111701033"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
       "titel": "Best of Stand-Up",
       "genre": "stand-up",
       "datum": "2026-11-27",
@@ -1159,20 +1124,9 @@
       "genre": "stand-up",
       "datum": "2026-11-07",
       "tijd": "21:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701026"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
-      "titel": "Best of Stand-Up",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": "21:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701025"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1359,19 +1313,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/charlie-mac-111666873"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Pernille Haaland"
-      ],
-      "titel": "Pernille Haaland",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": "19:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/pernille-haaland-111664714"
     },
     {
       "theater": "comedy-club-haug-rotterdam",

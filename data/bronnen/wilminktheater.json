@@ -1,7 +1,7 @@
 {
   "bron": "wilminktheater",
   "naam": "Wilminktheater en Muziekcentrum Enschede",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-07",
   "theaters": [
     {
       "id": "wilminktheater",
@@ -21,19 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "wilminktheater",
-      "artiesten": [
-        "Marcel van Roosmalen"
-      ],
-      "titel": "Ik mag niet klagen",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/ik-mag-niet-klagen-57jm"
-    },
     {
       "theater": "wilminktheater",
       "artiesten": [
@@ -1344,13 +1331,6 @@
     }
   ],
   "recensies": {
-    "https://www.wilminktheater.nl/nl/agenda/ik-mag-niet-klagen-57jm": [
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "wo 22 apr 2026 Zelfbenoemd rebel Van Roosmalen koestert buitenstaandersrol in zijn cabaretdebuut"
-      }
-    ],
     "https://www.wilminktheater.nl/nl/agenda/harrekidee-herneming-yw51": [
       {
         "medium": "Theaterkrant",

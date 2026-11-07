@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-07",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,45 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Vroege vrijdagavondshow",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": "18:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/vroege-vrijdagavondshow-6-november-2026/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kargadoor",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://www.kargadoor.nl"
-      },
-      "artiesten": [],
-      "titel": "All English Comedy Night",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/all-english-comedy-night-utrecht-6-november-2026/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Vrijdagavondshow",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/vrijdagavondshow-6-november/"
-    },
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],

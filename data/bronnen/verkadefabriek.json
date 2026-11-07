@@ -1,7 +1,7 @@
 {
   "bron": "verkadefabriek",
   "naam": "Verkadefabriek",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-07",
   "theaters": [
     {
       "id": "verkadefabriek-s-hertogenbosch",
@@ -120,19 +120,6 @@
     {
       "theater": "verkadefabriek-s-hertogenbosch",
       "artiesten": [
-        "Luuk Ransijn"
-      ],
-      "titel": "Uitkijk",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.verkadefabriek.nl/agenda/luuk-ransijn-uitkijk-try-out-162250"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
         "Wina Ricardo"
       ],
       "titel": "Wina’s Wereld",
@@ -165,7 +152,7 @@
       "genre": "cabaret",
       "datum": "2026-11-14",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.verkadefabriek.nl/agenda/oscar-smit-472000-try-out-162253"
     },
@@ -967,20 +954,9 @@
       "artiesten": [],
       "titel": "Wild Horse Nine",
       "genre": "komedie",
-      "datum": "2026-11-06",
-      "tijd": "21:20",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
       "datum": "2026-11-07",
       "tijd": "15:50",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
     },
@@ -991,7 +967,7 @@
       "genre": "komedie",
       "datum": "2026-11-07",
       "tijd": "20:50",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
     },
@@ -1002,7 +978,7 @@
       "genre": "komedie",
       "datum": "2026-11-08",
       "tijd": "14:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
     },
@@ -1035,7 +1011,7 @@
       "genre": "komedie",
       "datum": "2026-11-09",
       "tijd": "16:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
     },

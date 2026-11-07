@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-07",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -43,7 +43,7 @@
       "genre": "cabaret",
       "datum": "2026-12-11",
       "tijd": "22:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jimmy-carr-46038/"
     },
@@ -1257,84 +1257,6 @@
       "bron": "https://luxortheater.nl/agenda/daniel-arends-55999/"
     },
     {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Jochem Myjer"
-      ],
-      "titel": "Net alsof",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Jochem Myjer"
-      ],
-      "titel": "Net alsof",
-      "genre": "cabaret",
-      "datum": "2026-11-28",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Jochem Myjer"
-      ],
-      "titel": "Net alsof",
-      "genre": "cabaret",
-      "datum": "2026-12-06",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Jochem Myjer"
-      ],
-      "titel": "Net alsof",
-      "genre": "cabaret",
-      "datum": "2026-12-07",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Jochem Myjer"
-      ],
-      "titel": "Net alsof",
-      "genre": "cabaret",
-      "datum": "2026-12-12",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Jochem Myjer"
-      ],
-      "titel": "Net alsof",
-      "genre": "cabaret",
-      "datum": "2026-12-13",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
-    },
-    {
       "theater": "oude-luxor",
       "artiesten": [
         "Van Vleuten en Van Muiswinkel"
@@ -1502,19 +1424,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/aries-spears-61086/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Najib & Roué"
-      ],
-      "titel": "Alles is Comedy",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/najib-roue-56186/"
     },
     {
       "theater": "oude-luxor",
@@ -1760,6 +1669,84 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/srefidensi-comedyshow-58404/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net alsof",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net alsof",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net alsof",
+      "genre": "cabaret",
+      "datum": "2026-12-06",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net alsof",
+      "genre": "cabaret",
+      "datum": "2026-12-07",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net alsof",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Jochem Myjer"
+      ],
+      "titel": "Net alsof",
+      "genre": "cabaret",
+      "datum": "2026-12-13",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
     }
   ],
   "recensies": {}

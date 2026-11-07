@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-07",
   "theaters": [
     {
       "id": "zaantheater",
@@ -246,19 +246,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jandino/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Janneke de Bijl"
-      ],
-      "titel": "Pluk eventueel de dag",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/janneke-de-bijl/"
     },
     {
       "theater": "zaantheater",
@@ -787,28 +774,6 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Razend knap verpakt Boban een persoonlijk verhaal in fiscale adviezen."
-      }
-    ],
-    "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/janneke-de-bijl/": [
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "De voorstelling is tot de nok toe gevuld met mooie zinnen, goede verhalen en geestige intermezzo’s."
-      },
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Nu heeft ze de geperfectioneerde, krachtigste podiumversie van zichzelf in huis."
-      },
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Een stevig ritme […] goede punchlines en een duidelijke structuur."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Op de liedjes van Janneke de Bijl zou Hans Dorrestijn waarschijnlijk stikjaloers zijn."
       }
     ],
     "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/": [

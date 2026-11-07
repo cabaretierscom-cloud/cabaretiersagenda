@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-07",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -51,7 +51,7 @@
       "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "première",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/elfie-tromp-aai-poesje-aai-poesje-try-out-2/"
     },
@@ -168,7 +168,7 @@
       "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/andre-manuel-de-eenzame-ziel-try-out/"
     },
@@ -192,7 +192,7 @@
       "genre": "kleinkunst",
       "datum": "2027-01-07",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-3/"
     },
@@ -398,7 +398,7 @@
       "genre": "kleinkunst",
       "datum": "2027-02-04",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-8/"
     },
@@ -476,7 +476,7 @@
       "genre": "kleinkunst",
       "datum": "2027-02-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/niek-guy-legatum/"
     },

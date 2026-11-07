@@ -1745,6 +1745,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "de-cabaret-club-veghel",
+    "titel": "Veghel",
+    "artiesten": [
+      "de-cabaret-club"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "de-cabaret-club-vier-korte-cabaretvoorstellingen",
     "titel": "Vier korte cabaretvoorstellingen",
     "artiesten": [
@@ -2726,14 +2734,6 @@
     "theater": "comedyhuis-utrecht"
   },
   {
-    "id": "grace-mulvey-grace-mulvey",
-    "titel": "Grace Mulvey",
-    "artiesten": [
-      "grace-mulvey"
-    ],
-    "genre": "stand-up"
-  },
-  {
     "id": "greg-shapiro-king-me-250-years-of-donald-trump",
     "titel": "King Me - 250 years of Donald Trump",
     "artiesten": [
@@ -2773,7 +2773,10 @@
     "artiesten": [
       "groninger-studenten-cabaret-festival"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "ookGenres": [
+      "stand-up"
+    ]
   },
   {
     "id": "groninger-studenten-cabaret-festival-finalistentournee-40e-editie",

@@ -1,7 +1,7 @@
 {
   "bron": "comedytrain",
   "naam": "Comedytrain",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-07",
   "theaters": [
     {
       "id": "comedytrain-nieuwe-toomler-amsterdam",
@@ -13,6 +13,64 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Theo Maassen",
+        "Tim Fransen"
+      ],
+      "titel": "Dubbel",
+      "genre": "stand-up",
+      "datum": "2026-11-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/dubbel-theo-maassen-tim-fransen-2026-11-08/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2026-12-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-23/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up Matinee",
+      "genre": "stand-up",
+      "datum": "2026-12-20",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-12-20/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Echt Gebeurd",
+      "genre": "stand-up",
+      "datum": "2026-11-15",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/echt-gebeurd-2026-11-15/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2026-12-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-02/"
+    },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [],
@@ -74,20 +132,6 @@
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [
-        "Theo Maassen",
-        "Tim Fransen"
-      ],
-      "titel": "Dubbel",
-      "genre": "stand-up",
-      "datum": "2026-11-08",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/dubbel-theo-maassen-tim-fransen-2026-11-08/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [
         "Alex Ploeg",
         "Emilio Guzman"
       ],
@@ -109,28 +153,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-12-12-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2026-12-23",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-23/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up Matinee",
-      "genre": "stand-up",
-      "datum": "2026-12-20",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-12-20/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
@@ -164,17 +186,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-open-podium-2026-12-17/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2026-12-02",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-02/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
@@ -1137,39 +1148,6 @@
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-11-06-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Comedy op Zolder",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-11-06/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-11-06/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [
         "Buğra Gedik",
         "Vincent Geers"
@@ -1221,17 +1199,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-presents-sophie-duker-2027-03-12/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Echt Gebeurd",
-      "genre": "stand-up",
-      "datum": "2026-11-15",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/echt-gebeurd-2026-11-15/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",

@@ -1,7 +1,7 @@
 {
   "bron": "kunstmin",
   "naam": "Kunstmin",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-07",
   "theaters": [
     {
       "id": "kunstmin",
@@ -458,19 +458,6 @@
     {
       "theater": "kunstmin",
       "artiesten": [
-        "Jandino"
-      ],
-      "titel": "DE GROTE JUBILEUMSHOW - Jandino 20 jaar",
-      "genre": "cabaret",
-      "datum": "2027-02-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kunstmin.nl/voorstellingen/jandino-de-grote-jubileumshow-jandino-20-jaar/"
-    },
-    {
-      "theater": "kunstmin",
-      "artiesten": [
         "Jan Beuving"
       ],
       "titel": "Dekpunt",
@@ -480,6 +467,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/jan-beuving-dekpunt/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "DE GROTE JUBILEUMSHOW - Jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/jandino-de-grote-jubileumshow-jandino-20-jaar/"
     },
     {
       "theater": "kunstmin",
@@ -662,19 +662,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/cafe-komedie-stand-up-club/"
-    },
-    {
-      "theater": "kunstmin",
-      "artiesten": [
-        "Martijn Crins"
-      ],
-      "titel": "Hè Fijn",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kunstmin.nl/voorstellingen/martijn-crins-he-fijn/"
     }
   ],
   "recensies": {}
