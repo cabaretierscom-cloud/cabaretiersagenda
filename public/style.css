@@ -983,3 +983,20 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   border: 2px solid currentColor; color: inherit; font: 700 var(--step--1) var(--font-body); text-decoration: none;
 }
 .hero-genres a:hover, .hero-genres a:focus-visible { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+
+/* Dashboard: kaart met bezoekers per plaats */
+.dashboard .ga-landkaart { display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto; }
+.dashboard .ga-provincies path { stroke: var(--paper); stroke-width: 2; stroke-linejoin: round; }
+.dashboard .ga-provincies .ga-nl { fill: #E4E4EB; }
+.dashboard .ga-provincies .ga-be { fill: #D6D6DF; }
+.dashboard .ga-stip { fill: var(--riso-orange); fill-opacity: .72; stroke: var(--ink); stroke-width: 1.5; }
+.dashboard .ga-stip:hover { fill-opacity: 1; }
+.dashboard .ga-labels text { font: 700 24px/1 var(--font-body); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 6px; stroke-linejoin: round; }
+.dashboard .ga-labels tspan { font-weight: 400; fill: var(--ink-2); }
+.dashboard .ga-landen { display: flex; flex-wrap: wrap; gap: 6px 18px; list-style: none; padding: 0; margin: 12px 0 0; font-size: var(--step--1); }
+.dashboard .ga-plaatslijst { margin-top: 12px; font-size: var(--step--1); }
+.dashboard .ga-plaatslijst summary { cursor: pointer; font-weight: 700; }
+.dashboard .ga-plaatslijst ol { columns: 2; column-gap: 24px; margin: 10px 0 0; padding-left: 2.2em; }
+.dashboard .ga-plaatslijst .ga-num { float: right; }
+.dashboard .ga-bron { margin: 12px 0 0; font-size: .75rem; color: var(--ink-2); }
+.dashboard .ga-provincies .ga-meer { fill: var(--paper); stroke: none; }

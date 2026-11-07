@@ -115,6 +115,11 @@ async function dashboardPeriode(token, bereik) {
     dimensionFilter: { filter: { fieldName: "pagePath", stringFilter: { matchType: "BEGINS_WITH", value: "/theaters-in-" } } },
     orderBys: [{ metric: { metricName: "screenPageViews" }, desc: true }], limit: 1000,
   })));
+  // Bezoekers per plaats (volgens Google Analytics, op basis van het internetadres) voor de kaart op het dashboard.
+  uit.steden = alsRijen(await rapport(token, {
+    dimensions: [{ name: "country" }, { name: "region" }, { name: "city" }], metrics: [{ name: "activeUsers" }, { name: "sessions" }], dateRanges: bereik,
+    orderBys: [{ metric: { metricName: "activeUsers" }, desc: true }], limit: 2000,
+  }));
   uit.overzicht = uit.overzicht.map((d) => ({ ...d, date: d.date.replace(/^(\d{4})(\d\d)(\d\d)$/, "$1-$2-$3") }));
   return uit;
 }

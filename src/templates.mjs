@@ -3,6 +3,7 @@ import { LANDEN, STATUSSEN, GENRES, KLEUREN, FESTIVALSOORTEN, isGroep } from "./
 import { fmt, esc, plural, isoWithOffset } from "./format.mjs";
 import { WOORDMERK_SVG, C_PAD, C_KADER } from "./woordmerk.mjs";
 import { readFileSync } from "node:fs";
+import { KAART, PROVINCIES, MEREN } from "./kaart.mjs";
 import { createHash } from "node:crypto";
 
 // Versienummer per bestand (stukje van de inhoud-hash): verandert de opmaak of het script, dan
@@ -2342,6 +2343,82 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   // Bezoekerscijfers voor de beheerder (/dashboard/ en per maand /dashboard/<maand-jaar>/): cijfers uit Google
   // Analytics (data/ga-dashboard.json, geschreven door `npm run ga -- dashboard`). Net als /controle/ niet in menu,
   // sitemap of zoekmachines. `data` is het hele bestand, `periodeId` de gekozen periode ("" = laatste 28 dagen).
+  // Kaart van Nederland en België met een stip per plaats, zo groot als het aantal bezoekers (Google Analytics,
+  // dimensies country/region/city). Coördinaten uit data/plaatsen-geo.json (GeoNames), provincies uit src/kaart.mjs
+  // (Natural Earth); beide maakt scripts/kaart.mjs. Gewone SVG met een tooltip per stip: werkt zonder JavaScript.
+  let plaatsenGeo;
+  const GA_REGIO = {
+    Netherlands: { land: "NL", regio: { Drenthe: "01", Friesland: "02", Gelderland: "03", Groningen: "04", Limburg: "05", "North Brabant": "06", "North Holland": "07", Utrecht: "09", Zeeland: "10", "South Holland": "11", Overijssel: "15", Flevoland: "16" } },
+    Belgium: { land: "BE", regio: { Brussels: "BRU", Flanders: "VLG", Wallonia: "WAL" } },
+  };
+  function bezoekersKaart(steden, getal) {
+    if (!plaatsenGeo) {
+      const p = JSON.parse(readFileSync(new globalThis.URL("../data/plaatsen-geo.json", import.meta.url), "utf8")).plaatsen;
+      const perLand = new Map(); // land|naam -> eerste treffer, als de provincie niet klopt of ontbreekt
+      for (const [k, v] of Object.entries(p)) { const [land, , naam] = k.split("|"); if (!perLand.has(`${land}|${naam}`)) perLand.set(`${land}|${naam}`, v); }
+      plaatsenGeo = { p, perLand };
+    }
+    const zoek = (r) => {
+      const g = GA_REGIO[r.country];
+      if (!g || !r.city || r.city === "(not set)") return null;
+      const naam = r.city.toLowerCase();
+      return plaatsenGeo.p[`${g.land}|${g.regio[r.region]}|${naam}`] || plaatsenGeo.perLand.get(`${g.land}|${naam}`) || null;
+    };
+    const totaal = { NL: 0, BE: 0, elders: 0, onbekend: 0 };
+    const punten = new Map();
+    for (const r of steden) {
+      const land = GA_REGIO[r.country]?.land;
+      const n = Number(r.activeUsers || 0);
+      if (!land) { totaal[r.country === "(not set)" ? "onbekend" : "elders"] += n; continue; }
+      totaal[land] += n;
+      const c = zoek(r);
+      if (!c) { totaal.onbekend += n; continue; }
+      const k = `${land}|${r.city}`;
+      const oud = punten.get(k) || { naam: r.city, land, c, bezoekers: 0, bezoeken: 0 };
+      oud.bezoekers += n; oud.bezoeken += Number(r.sessions || 0);
+      punten.set(k, oud);
+    }
+    // Plaatsnamen zoals Google ze in het Engels geeft, in het Nederlands.
+    const NL_NAAM = { "The Hague": "Den Haag", Antwerp: "Antwerpen", Ghent: "Gent", Brussels: "Brussel", Bruges: "Brugge", Liege: "Luik", Louvain: "Leuven", Ostend: "Oostende", Mechelen: "Mechelen", Namur: "Namen", Mons: "Bergen", Courtrai: "Kortrijk", Hasselt: "Hasselt", Tournai: "Doornik" };
+    const lijst = [...punten.values()].sort((a, b) => b.bezoekers - a.bezoekers);
+    if (!lijst.length) return `<p class="mis">Nog geen plaatsen bekend.</p>`;
+    const max = lijst[0].bezoekers;
+    const straal = (n) => Math.max(4, 46 * Math.sqrt(n / max));
+    const xy = ([lat, lon]) => [(lon - KAART.lon0) * KAART.k * KAART.schaal, (KAART.lat1 - lat) * KAART.schaal];
+    const naamVan = (p) => NL_NAAM[p.naam] || p.naam;
+    const stippen = [...lijst].reverse().map((p) => {
+      const [x, y] = xy(p.c);
+      return `<circle class="ga-stip" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${straal(p.bezoekers).toFixed(1)}"><title>${esc(naamVan(p))}: ${getal(p.bezoekers)} bezoekers, ${getal(p.bezoeken)} bezoeken</title></circle>`;
+    }).join("");
+    // Namen bij de grootste plaatsen: rechts van de stip, anders links, en niet over een andere naam of een grotere stip.
+    const grote = lijst.slice(0, 30).map((p) => { const [x, y] = xy(p.c); return { x, y, r: straal(p.bezoekers), p }; });
+    const bezet = [];
+    const raakt = (v, eigen) => bezet.some((o) => v.x0 < o.x1 && v.x1 > o.x0 && v.y0 < o.y1 && v.y1 > o.y0)
+      || grote.some((g) => g.p !== eigen && g.p.bezoekers > eigen.bezoekers && g.r > 8 && (Math.max(v.x0, Math.min(g.x, v.x1)) - g.x) ** 2 + (Math.max(v.y0, Math.min(g.y, v.y1)) - g.y) ** 2 < g.r ** 2);
+    const labels = [];
+    for (const { x, y, r, p } of grote.slice(0, 14)) {
+      const tekst = `${naamVan(p)} ${getal(p.bezoekers)}`;
+      const b = 13 * tekst.length + 10, h = 30;
+      const keuzes = [
+        { x0: x + r + 6, x1: x + r + 6 + b, kant: "start" },
+        { x0: x - r - 6 - b, x1: x - r - 6, kant: "end" },
+      ].map((v) => ({ ...v, y0: y - h / 2, y1: y + h / 2 })).filter((v) => v.x0 > 0 && v.x1 < KAART.breedte);
+      const vak = keuzes.find((v) => !raakt(v, p));
+      if (!vak) continue;
+      bezet.push(vak);
+      labels.push(`<text x="${(vak.kant === "start" ? vak.x0 + 4 : vak.x1 - 4).toFixed(1)}" y="${(y + 9).toFixed(1)}" text-anchor="${vak.kant}">${esc(naamVan(p))} <tspan>${getal(p.bezoekers)}</tspan></text>`);
+    }
+    const svg = `<svg class="ga-landkaart" viewBox="0 0 ${KAART.breedte} ${KAART.hoogte}" role="img" aria-label="Kaart van Nederland en België met de bezoekers per plaats">
+      <g class="ga-provincies">${PROVINCIES.map((p) => `<path class="ga-${p.land.toLowerCase()}" d="${p.d}"><title>${esc(p.naam)}</title></path>`).join("")}${MEREN.map((m) => `<path class="ga-meer" d="${m.d}"/>`).join("")}</g>
+      <g>${stippen}</g><g class="ga-labels" aria-hidden="true">${labels.join("")}</g></svg>`;
+    const deel = (n) => `${getal(n)} (${Math.round((100 * n) / (totaal.NL + totaal.BE + totaal.elders + totaal.onbekend || 1))}%)`;
+    return `<p class="ga-noot">Bezoekers per plaats, volgens Google Analytics. Hoe groter de stip, hoe meer bezoekers. De plaats komt uit het internetadres en is soms die van de internetaanbieder. Ga met de muis op een stip staan voor de cijfers, of open de lijst onder de kaart.</p>
+      ${svg}
+      <ul class="ga-landen"><li><strong>Nederland</strong> ${deel(totaal.NL)}</li><li><strong>België</strong> ${deel(totaal.BE)}</li><li><strong>Elders</strong> ${deel(totaal.elders)}</li><li><strong>Plaats onbekend</strong> ${deel(totaal.onbekend)}</li></ul>
+      <details class="ga-plaatslijst"><summary>Alle ${lijst.length} plaatsen als lijst</summary><ol>${lijst.map((p) => `<li>${esc(naamVan(p))}${p.land === "BE" ? ' <span class="mis">(België)</span>' : ""} <span class="ga-num">${getal(p.bezoekers)}</span></li>`).join("")}</ol></details>
+      <p class="ga-bron">Kaart: Natural Earth. Plaatsen: GeoNames (CC BY 4.0).</p>`;
+  }
+
   const dashboardPad = (id) => (id ? `/dashboard/${id}/` : "/dashboard/");
   function dashboardPagina(data, periodeId = "") {
     const getal = (n) => Number(n || 0).toLocaleString("nl-NL");
@@ -2410,10 +2487,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       const a = A.get(id);
       return { naam: link(artiestPad(id), a?.naam || id, a && db.gigsForArtist(id).length), weergaven: w };
     }));
-    const plaatsNaam = new Map([...T.values()].map((th) => [plaatsId(th.plaats), th.plaats]));
-    const metPagina = new Set(plaatsen);
-    const plaatsRijen = (ga.plaatsen || []).map((r) => ({ ...r, pagePath: r.pagePath.replace(/^\/theaters-in-([^/]+)/, "/plaatsen/$1") }));
-    const plaatsTabel = tabel("Plaats", perId(plaatsRijen).map(([id, w]) => ({ naam: link(`/theaters-in-${id}/`, plaatsNaam.get(id) || id, metPagina.has(plaatsNaam.get(id))), weergaven: w })));
+    const kaart = bezoekersKaart(ga.steden || [], getal);
 
     const body = `<section class="block wrap dashboard" aria-labelledby="t">
       ${kop}
@@ -2434,7 +2508,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
       <div class="ga-twee">
         <section class="ga-kaart"><h2 class="sub-head">Meest bekeken artiesten</h2><p class="ga-noot">Artiestpagina en voorstellingspagina's samen.</p>${artiesten}</section>
-        <section class="ga-kaart"><h2 class="sub-head">Meest bekeken plaatsen</h2><p class="ga-noot">Plaatspagina met vanavond en dit weekend samen.</p>${plaatsTabel}</section>
+        <section class="ga-kaart"><h2 class="sub-head">Waar komen de bezoekers vandaan?</h2>${kaart}</section>
       </div>
     </section>`;
     return layout({ title: `Bezoekerscijfers ${ga.naam.toLowerCase()}`, description: "Bezoekcijfers van de agenda.", path: pad, body, noindex: true });
