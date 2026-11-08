@@ -1,5 +1,5 @@
 // HTML-templates. Elke functie geeft een string terug; build.mjs schrijft ze weg.
-import { LANDEN, STATUSSEN, GENRES, KLEUREN, FESTIVALSOORTEN, isGroep } from "./data.mjs";
+import { LANDEN, STATUSSEN, GENRES, KLEUREN, FESTIVALSOORTEN, isGroep, genreLabel } from "./data.mjs";
 import { fmt, esc, plural, isoWithOffset } from "./format.mjs";
 import { WOORDMERK_SVG, C_PAD, C_KADER } from "./woordmerk.mjs";
 import { readFileSync } from "node:fs";
@@ -280,7 +280,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return [
       g.soort && g.soort !== verbergSoort ? `<span class="label-soort">${esc(g.soort)}</span>` : "",
       comedyavond ? `<span class="label-genre">Comedyavond</span>` : "",
-      ...genres.filter((x) => x !== verbergGenre).map((x) => `<span class="label-genre">${esc(GENRES[x])}</span>`),
+      ...genres.filter((x) => x !== verbergGenre).map((x) => `<span class="label-genre">${esc(genreLabel(x))}</span>`),
     ].join("");
   }
 
@@ -782,7 +782,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       const zn = nr(zi, z, g.theater, () => [t.id, t.naam, t.plaats, plaatsId(t.plaats), LANDEN[t.land]]);
       return [g.datum, g.tijd || "", vn, zn, g.status, g.soort || "", metUtm(g.bron), g.opmerking || ""];
     });
-    return { iconen: { extern: ICON.extern, doubt: ICON.doubt, sold: ICON.sold, pin: ICON.pin }, statussen: STATUSSEN, genres: GENRES, a, z, v, r: rijen };
+    return { iconen: { extern: ICON.extern, doubt: ICON.doubt, sold: ICON.sold, pin: ICON.pin }, statussen: STATUSSEN, genres: Object.fromEntries(Object.keys(GENRES).map((g) => [g, genreLabel(g)])), a, z, v, r: rijen }; // labels bij één voorstelling
   }
 
   function agendaIndex() {
@@ -1683,7 +1683,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <div class="hero-tekst">
           <h1${Math.max(...v.titel.split(/\s+/).map((w) => w.length)) > 12 ? ' class="lang"' : ""}>${esc(v.titel)}</h1>
           <p>Voorstelling van ${artistLinks(vid)}. ${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.</p>
-          <ul class="hero-genres" aria-label="Genres">${genresVanV(v).map((g) => `<li>${GENRE_PAGINAS.includes(g) ? `<a href="/agenda/${g}/">${esc(GENRES[g])}</a>` : `<span>${esc(GENRES[g])}</span>`}</li>`).join("")}</ul>
+          <ul class="hero-genres" aria-label="Genres">${genresVanV(v).map((g) => `<li>${GENRE_PAGINAS.includes(g) ? `<a href="/agenda/${g}/">${esc(genreLabel(g))}</a>` : `<span>${esc(genreLabel(g))}</span>`}</li>`).join("")}</ul>
         </div>
         ${v.foto ? fotoHtml(v) : ""}
       </div></div>

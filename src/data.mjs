@@ -27,6 +27,10 @@ export const GENRES = {
   kleinkunst: "Kleinkunst",
   kindervoorstellingen: "Kindervoorstellingen",
 };
+// Naam van het genre bij één voorstelling (labels in de agenda, knopjes op de voorstellingspagina),
+// als die anders is dan de genrenaam: "Kindervoorstelling" in plaats van "Kindervoorstellingen".
+export const GENRE_ENKELVOUD = { kindervoorstellingen: "Kindervoorstelling" };
+export const genreLabel = (g) => GENRE_ENKELVOUD[g] || GENRES[g];
 
 // Optioneel per artiest: solo ("persoon") of duo/groep ("groep"); zonder vorm raadt de site het aan de naam.
 export const VORMEN = ["persoon", "groep"];
