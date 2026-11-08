@@ -262,6 +262,10 @@
   // Een uitklapvak met vinkjes: meerdere genres tegelijk, in het adres als ?genre=cabaret,stand-up.
   // In de balk staan de gekozen genres en het aantal voorstellingen dat erbij hoort.
   // Oude links met ?genre=theaterkomedie (zo heette komedie tot november 2026) werken ook.
+  // Kindervoorstellingen staan standaard uit (sinds november 2026): zonder vinkje zie je alles behalve
+  // voorstellingen met kindervoorstellingen als hoofdgenre. Wie het vinkje zet, ziet ze wel. Op pagina's met
+  // alleen kindervoorstellingen (de genrepagina, een kindergezelschap) zet de server data-kinder op 0.
+  const KIND = "kindervoorstellingen";
   const leesGenres = (t) => (t || "").split(",").map((x) => x.trim().replace(/^theaterkomedie$/, "komedie")).filter(Boolean);
   const adres = (p) => p.toString().replace(/%2C/g, ",");
   function genreKeuze(bijWijziging) {
@@ -270,9 +274,10 @@
     const vakjes = [...el.querySelectorAll('input[type="checkbox"]')];
     const tekst = el.querySelector(".keuze-tekst"), teller = el.querySelector("summary .keuze-n");
     const waarde = () => vakjes.filter((v) => v.checked).map((v) => v.value);
+    const kinder = +el.dataset.kinder || 0;
     const label = () => {
       const gekozen = vakjes.filter((v) => v.checked);
-      tekst.textContent = gekozen.length ? gekozen.map((v) => v.nextElementSibling.textContent).join(", ") : "Alle genres";
+      tekst.textContent = gekozen.length ? gekozen.map((v) => v.nextElementSibling.textContent).join(", ") : kinder ? "Alles behalve kindervoorstellingen" : "Alle genres";
       el.classList.toggle("gekozen", gekozen.length > 0);
     };
     vakjes.forEach((v) => v.addEventListener("change", () => { label(); bijWijziging(waarde()); }));
@@ -281,7 +286,10 @@
     return {
       zet(lijst) { const s = new Set(lijst); vakjes.forEach((v) => (v.checked = s.has(v.value))); label(); return waarde(); },
       aantal(n) { teller.textContent = n.toLocaleString("nl-NL"); },
-      totaal: +el.dataset.totaal,
+      totaal: +el.dataset.totaal - kinder,
+      // Zonder vinkjes: hoort deze voorstelling erbij? (genres: hoofdgenre eerst)
+      standaard: (genres) => !kinder || genres[0] !== KIND,
+      kinder,
     };
   }
 
@@ -395,7 +403,7 @@
       laadMeer.hidden = bezig || !rest;
       if (rest) laadKnop.textContent = `Toon alle volgende voorstellingen (${rest})`;
       const zichtbaar = weken.slice(0, getoond).reduce((n, w) => n + w.length, 0);
-      regel.textContent = gefilterd() ? `${aantal(lijst.length)} gevonden${rest ? `, ${zichtbaar} getoond` : ""}` : `${zichtbaar} van ${aantal(+alles.dataset.totaal)}`;
+      regel.textContent = gefilterd() ? `${aantal(lijst.length)} gevonden${rest ? `, ${zichtbaar} getoond` : ""}` : `${zichtbaar} van ${aantal(+alles.dataset.totaal - (genre?.kinder || 0))}`;
       if (leeg) leeg.hidden = !gefilterd() || lijst.length > 0;
       if (naarMaand) naarMaand.hidden = gefilterd();
     };
@@ -407,7 +415,7 @@
       if (!gefilterd() && !data) { if (genre) genre.aantal(genre.totaal); return; }
       await haal();
       const naald = kaal(stand.q.trim()), kies = new Set(leesGenres(stand.genre));
-      const inGenre = (g) => !kies.size || g.genres.some((x) => kies.has(x));
+      const inGenre = (g) => (kies.size ? g.genres.some((x) => kies.has(x)) : !genre || genre.standaard(g.genres));
       if (genre) genre.aantal(kies.size ? data.rijen.filter((g) => g.datum >= today && inVast(g) && inGenre(g)).length : genre.totaal);
       lijst = data.rijen.filter((g) => g.datum >= today && inVast(g) && (!naald || g.zoek.includes(naald)) && inGenre(g) && (!stand.soort || g.soort === stand.soort) && (!stand.uitverkocht || g.status !== "uitverkocht"));
       // Zonder filter: eerst wat de pagina zelf al toonde (tot data-tot), daarna per week.
@@ -424,17 +432,23 @@
 
     // Zonder filter: de eerste week staat al in de pagina; de knop toont alles vanaf de week erna.
     const begin = () => {
-      const eersteWeek = document.querySelectorAll("#gigs .gig").length;
+      // Kindervoorstellingen in de eerste week (uit de pagina zelf) verbergen, tenzij aangevinkt.
+      if (genre?.kinder) {
+        for (const r of document.querySelectorAll("#gigs .gig")) if (!genre.standaard((r.dataset.genre || "").split(" "))) r.hidden = true;
+        for (const groep of document.querySelectorAll("#gigs .month-group")) groep.hidden = !groep.querySelector(".gig:not([hidden])");
+      }
+      const eersteWeek = document.querySelectorAll("#gigs .gig:not([hidden])").length;
+      if (genre) genre.aantal(genre.totaal);
       lijst = []; weken = [{ length: eersteWeek, server: true }]; getoond = 1;
       laadMeer.hidden = false;
       laadKnop.textContent = "Toon alle volgende voorstellingen";
-      regel.textContent = `${eersteWeek} van ${aantal(+alles.dataset.totaal)}`;
+      regel.textContent = `${eersteWeek} van ${aantal(+alles.dataset.totaal - (genre?.kinder || 0))}`;
     };
     laadKnop.addEventListener("click", async () => {
       if (weken[0]?.server) {
         laadKnop.disabled = true;
         await haal();
-        lijst = data.rijen.filter((g) => g.datum >= today && inVast(g));
+        lijst = data.rijen.filter((g) => g.datum >= today && inVast(g) && (!genre || genre.standaard(g.genres)));
         const tot = alles.dataset.tot;
         weken = [{ length: lijst.filter((g) => g.datum <= tot).length }, ...perWeek(lijst.filter((g) => g.datum > tot))];
         getoond = 1;
@@ -494,8 +508,8 @@
   const kaal = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   function apply() {
     const needle = kaal(state.q.trim()), kies = new Set(leesGenres(state.genre));
-    const inGenre = (r) => !kies.size || (r.dataset.genre || "").split(" ").some((x) => kies.has(x));
-    if (genre) genre.aantal(kies.size ? rows.filter(inGenre).length : rows.length);
+    const inGenre = (r) => (kies.size ? (r.dataset.genre || "").split(" ").some((x) => kies.has(x)) : !genre || genre.standaard((r.dataset.genre || "").split(" ")));
+    if (genre) genre.aantal(rows.filter(inGenre).length);
     let shown = 0;
     for (const r of rows) {
       const ok =
@@ -534,7 +548,7 @@
   });
 
   // Alleen de URL bijwerken als er al een filter in stond; anders de lijst laten zoals hij is.
-  if (location.search) apply();
+  if (location.search || genre?.kinder) apply(); // ook zonder adresfilter: kindervoorstellingen standaard uit
   else {
     resultLine.textContent = telling(rows.length);
     if (perWeek) toonWeken(weekenZichtbaar);
