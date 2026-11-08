@@ -15,6 +15,8 @@ AddType application/manifest+json .webmanifest
   RewriteRule ^plaatsen/([^/]+)/?$ https://www.cabaretiers.com/theaters-in-$1/ [L,R=301]
   RewriteRule ^plaatsen/([^/]+)/(vanavond|dit-weekend)/?$ https://www.cabaretiers.com/theaters-in-$1/ [L,R=301]
   # Genres stonden tot november 2026 onder /genres/; nu onder /agenda/ (ook /genres/ zelf).
+  # Kor Hoebe: de voorstelling heet Korrelatie, niet Korrelrelatie (november 2026).
+  RewriteRule ^artiesten/kor-hoebe/korrelrelatie/?$ https://www.cabaretiers.com/artiesten/kor-hoebe/korrelatie/ [L,R=301]
   # Het genre theaterkomedie heet sinds november 2026 komedie.
   RewriteRule ^(genres|agenda)/theaterkomedie(/.*)?$ https://www.cabaretiers.com/agenda/komedie$2 [L,R=301]
   RewriteRule ^genres/?$ https://www.cabaretiers.com/agenda/ [L,R=301]
