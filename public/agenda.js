@@ -277,7 +277,8 @@
     const kinder = +el.dataset.kinder || 0;
     const label = () => {
       const gekozen = vakjes.filter((v) => v.checked);
-      tekst.textContent = gekozen.length ? gekozen.map((v) => v.nextElementSibling.textContent).join(", ") : kinder ? "Alles behalve kindervoorstellingen" : "Alle genres";
+      tekst.textContent = gekozen.length ? gekozen.map((v) => v.nextElementSibling.firstChild.textContent).join(", ") : kinder ? "Zonder kindervoorstellingen" : "Alle genres";
+      el.classList.toggle("kind-uit", Boolean(kinder) && !gekozen.length);
       el.classList.toggle("gekozen", gekozen.length > 0);
     };
     vakjes.forEach((v) => v.addEventListener("change", () => { label(); bijWijziging(waarde()); }));

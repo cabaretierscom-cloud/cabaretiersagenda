@@ -497,6 +497,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // Zoeken en filteren boven een speellijst (public/agenda.js). Het zoekveld doorzoekt artiest,
   // voorstelling, zaal en plaats; op een artiestpagina alleen zaal en plaats (waar).
   function filters(list, { maand = false, waar = false, genre = true } = {}) {
+    // Kindervoorstellingen (hoofdgenre) die standaard uit staan; 0 als de lijst alleen kindervoorstellingen heeft.
+    const kinder = list.some((x) => !heeftGenre(x, "kindervoorstellingen")) ? list.filter((x) => V.get(x.voorstelling).genre === "kindervoorstellingen").length : 0;
     const months = [...new Set(list.map((g) => g.datum.slice(0, 7)))].sort();
     const genres = genresVan(list);
     const uitverkocht = list.some((g) => g.status === "uitverkocht");
@@ -512,9 +514,13 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     </div>` : ""}
     ${genre && genres.length > 1 ? `<div class="field">
       <span class="label" id="f-genre-label">Genre</span>
-      <details class="keuze" id="f-genre" data-totaal="${list.length}" data-kinder="${list.some((x) => !heeftGenre(x, "kindervoorstellingen")) ? list.filter((x) => V.get(x.voorstelling).genre === "kindervoorstellingen").length : 0}">
+      <details class="keuze" id="f-genre" data-totaal="${list.length}" data-kinder="${kinder}">
         <summary aria-describedby="f-genre-label"><span class="keuze-tekst">Alle genres</span><span class="keuze-n">${list.length.toLocaleString("nl-NL")}</span></summary>
-        <div class="keuze-lijst" role="group" aria-labelledby="f-genre-label">${genres.map((g) => [g, list.filter((x) => heeftGenre(x, g)).length]).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([g, n]) => { return `<label><input type="checkbox" name="genre" value="${g}" data-n="${n}"><span>${GENRES[g]}</span><span class="keuze-n">${n.toLocaleString("nl-NL")}</span></label>`; }).join("")}</div>
+        <div class="keuze-lijst" role="group" aria-labelledby="f-genre-label">${genres.map((g) => [g, list.filter((x) => heeftGenre(x, g)).length]).sort((a, b) => (kinder && (a[0] === "kindervoorstellingen") - (b[0] === "kindervoorstellingen")) || b[1] - a[1] || a[0].localeCompare(b[0])).map(([g, n]) => {
+          // Kindervoorstellingen staan standaard uit (agenda.js): onderaan, apart, met "standaard uit" erbij.
+          const kind = kinder && g === "kindervoorstellingen";
+          return `<label${kind ? ' class="keuze-kind"' : ""}><input type="checkbox" name="genre" value="${g}" data-n="${n}"><span>${GENRES[g]}${kind ? '<small class="keuze-uit">Staat uit, vink aan om te tonen</small>' : ""}</span><span class="keuze-n">${n.toLocaleString("nl-NL")}</span></label>`;
+        }).join("")}</div>
       </details>
     </div>` : ""}
     ${uitverkocht ? `<div class="field toggle-veld">
