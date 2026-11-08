@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -544,6 +544,32 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
+        "Titus en Fien"
+      ],
+      "titel": "Vooruit, nog één keertje dan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-03",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/titus-en-fien-48330/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Titus en Fien"
+      ],
+      "titel": "Vooruit, nog één keertje dan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-03",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/titus-en-fien-48330/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
         "Guido Weijers"
       ],
       "titel": "Oudejaarsconference 2026",
@@ -592,6 +618,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/lebbis-56518/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Efteling vertelt…Baron 1898"
+      ],
+      "titel": "Een spannende musical voor de hele familie",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-29",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/efteling-vertelt-baron-1898-57456/"
     },
     {
       "theater": "oude-luxor",
@@ -869,6 +908,32 @@
     {
       "theater": "nieuwe-luxor",
       "artiesten": [
+        "Juf Roos (2+)"
+      ],
+      "titel": "Gaat op vakantie",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/juf-roos-57529/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Juf Roos (2+)"
+      ],
+      "titel": "Gaat op vakantie",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/juf-roos-57529/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
         "Rob Scheepers"
       ],
       "titel": "Scheepers op z'n scherpst",
@@ -997,6 +1062,58 @@
       "bron": "https://luxortheater.nl/agenda/freek-de-jonge-57836/"
     },
     {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Ernst & Bobbie (3+)"
+      ],
+      "titel": "hebben geen idee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ernst-bobbie-57502/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Ernst & Bobbie (3+)"
+      ],
+      "titel": "hebben geen idee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ernst-bobbie-57502/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "GRRR… ik ben een boze dino! (4+)"
+      ],
+      "titel": "Een muzikaal feest voor de allerkleinsten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-24",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ikbeneenbozedino-57511/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "GRRR… ik ben een boze dino! (4+)"
+      ],
+      "titel": "Een muzikaal feest voor de allerkleinsten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-24",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ikbeneenbozedino-57511/"
+    },
+    {
       "theater": "nieuwe-luxor",
       "artiesten": [
         "Tineke Schouten"
@@ -1047,6 +1164,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jay-francis-58919/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Prentenboekjesfestival met De Gruffalo en Over een kleine mol…"
+      ],
+      "titel": "Vanaf2 Festivals",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-16",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-60120/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Prentenboekjesfestival met De Gruffalo en Over een kleine mol…"
+      ],
+      "titel": "Vanaf2 Festivals",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-16",
+      "tijd": "11:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-60120/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Prentenboekjesfestival met De Gruffalo en Over een kleine mol…"
+      ],
+      "titel": "Vanaf2 Festivals",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-16",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-60120/"
     },
     {
       "theater": "nieuwe-luxor",
@@ -1324,6 +1480,19 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
+        "Space Academy"
+      ],
+      "titel": "Missie Maan (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/andre-kuipers-57525/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
         "Jandino"
       ],
       "titel": "Jubileumvoorstelling",
@@ -1333,6 +1502,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jandino-58405/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Aladdin"
+      ],
+      "titel": "De Van Hoorne Sprookjesmusical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-02",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/aladdin-58808/"
     },
     {
       "theater": "oude-luxor",
@@ -1428,6 +1610,19 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
+        "Woezel & Pip (2+)"
+      ],
+      "titel": "Feest in de Tovertuin",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/woezel-pip-2-58156/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
         "Roel C. Verburg"
       ],
       "titel": "Slechtste Liedjes van de Straat",
@@ -1502,6 +1697,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/ruud-smulders-57791/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Mus & Kapitein Kwaadbaard (8+)"
+      ],
+      "titel": "Gebaseerd op het boek van Kevin Hassing",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/mus-kapitein-kwaadbaard-8-58025/"
     },
     {
       "theater": "oude-luxor",
@@ -1584,6 +1792,84 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
+        "Juf Braaksel de musical (6+)"
+      ],
+      "titel": "Een swingend en spannend avontuur voor het hele gezin",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/juf-braaksel-de-musical-6-58805/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-10",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/k3-60594/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-10",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/k3-60594/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-10",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/k3-60594/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-11",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/k3-60594/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-11",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/k3-60594/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
         "Yentl en de Boer"
       ],
       "titel": "Rekhalzen",
@@ -1636,6 +1922,19 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
+        "De Kleine Prins (8+)"
+      ],
+      "titel": "Met René van Kooten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-23",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-kleine-prins-8-59433/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
         "Valentina Tóth"
       ],
       "titel": "Revue Revanche",
@@ -1661,6 +1960,45 @@
     },
     {
       "theater": "oude-luxor",
+      "artiesten": [
+        "De Proefkeuken Theatershow (8+)"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd e.a.",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-proefkeuken-2-57719/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "De Proefkeuken Theatershow (8+)"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd e.a.",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-21",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-proefkeuken-2-57719/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "De Proefkeuken Theatershow (8+)"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd e.a.",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-proefkeuken-2-57719/"
+    },
+    {
+      "theater": "oude-luxor",
       "artiesten": [],
       "titel": "Srefidensi Comedyshow 2026",
       "genre": "cabaret",
@@ -1669,6 +2007,84 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/srefidensi-comedyshow-58404/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "101 Dalmatiërs"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-25",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "101 Dalmatiërs"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "101 Dalmatiërs"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-27",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "101 Dalmatiërs"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-27",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "101 Dalmatiërs"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "12:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "101 Dalmatiërs"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
     },
     {
       "theater": "nieuwe-luxor",

@@ -1,7 +1,7 @@
 {
   "bron": "nijmegen",
   "naam": "Stadsschouwburg & De Vereeniging Nijmegen",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "stadsschouwburg-nijmegen",
@@ -33,6 +33,58 @@
       "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/patrick-laureij-7p4w"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Het huis dat stopte met staan (8+)"
+      ],
+      "titel": "Het verhaal van een vlucht",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "19:00",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/het-huis-dat-stopte-met-staan-8-yxm6"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Umi (0,5 - 1,5 jaar)"
+      ],
+      "titel": "Wonderland Collectief & Makiko Ito",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "10:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/umi-0-5-1-5-jaar-5jrg"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Umi (0,5 - 1,5 jaar)"
+      ],
+      "titel": "Wonderland Collectief & Makiko Ito",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "11:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/umi-0-5-1-5-jaar-5jrg"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Umi (0,5 - 1,5 jaar)"
+      ],
+      "titel": "Wonderland Collectief & Makiko Ito",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "13:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/umi-0-5-1-5-jaar-5jrg"
     },
     {
       "theater": "stadsschouwburg-nijmegen",
@@ -115,6 +167,45 @@
     {
       "theater": "stadsschouwburg-nijmegen",
       "artiesten": [
+        "Klassiek voor kleintjes (1,5 tot 2,5 jaar)"
+      ],
+      "titel": "Kerstconcert voor je dreumes!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "09:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/klassiek-voor-kleintjes-1-5-tot-2-5-jaar-14p6"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Klassiek voor kleintjes (0 tot 1,5 jaar)"
+      ],
+      "titel": "Kerstconcert voor baby's!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "10:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/klassiek-voor-kleintjes-0-tot-1-5-jaar-skm9"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Klassiek voor kleintjes (2,5 tot 6 jaar)"
+      ],
+      "titel": "Kerstconcert voor je peuter of kleuter!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "11:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/klassiek-voor-kleintjes-2-5-tot-6-jaar-nygk"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
         "Dolf Jansen"
       ],
       "titel": "Schaamteloos 2027",
@@ -141,6 +232,45 @@
     {
       "theater": "stadsschouwburg-nijmegen",
       "artiesten": [
+        "Tuimelaar (6- 18 maanden)"
+      ],
+      "titel": "Frisse Oren",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/tuimelaar-6-18-maanden-fl2f"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Tuimelaar (6- 18 maanden)"
+      ],
+      "titel": "Frisse Oren",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "11:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/tuimelaar-6-18-maanden-fl2f"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Tuimelaar (6- 18 maanden)"
+      ],
+      "titel": "Frisse Oren",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/tuimelaar-6-18-maanden-fl2f"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
         "Beth & Flo"
       ],
       "titel": "Zoveel meer",
@@ -157,7 +287,7 @@
         "De musical zonder billen (4+)"
       ],
       "titel": "Doldwaze familiemusical vol humor en fantasie",
-      "genre": "comedy",
+      "genre": "kindervoorstellingen",
       "datum": "2027-02-10",
       "tijd": "14:30",
       "status": "uitverkocht",
@@ -205,6 +335,30 @@
     },
     {
       "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [],
+      "titel": "Peter zonder Wolf (5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/peter-zonder-wolf-5-b81f"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Familiecarrousel | 4+ / 6+ / 8+"
+      ],
+      "titel": "Mini-festival rond een gestrande circusfamilie",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/familiecarrousel-4-6-8-dsst"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
       "artiesten": [
         "Lisa Ostermann"
       ],
@@ -215,6 +369,19 @@
       "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/lisa-ostermann-reprise-z9pf"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "André Kuipers & Kamerata Zuid"
+      ],
+      "titel": "Een muzikale ruimtereis",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-20",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/andre-kuipers-kamerata-zuid-nylw"
     },
     {
       "theater": "stadsschouwburg-nijmegen",
@@ -245,6 +412,45 @@
     {
       "theater": "stadsschouwburg-nijmegen",
       "artiesten": [
+        "Romeo & Julia (6+)"
+      ],
+      "titel": "Orkest Phion & Oorkaan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/romeo-julia-6-thys"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Fa Sol La Ti Doos (4+)"
+      ],
+      "titel": "Ontdek een magische muzikale uitvinding!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/fa-sol-la-ti-doos-4-czlj"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Terwijl we sliepen (8+)"
+      ],
+      "titel": "Judith Nab",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-20",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/terwijl-we-sliepen-8-7ppv"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
         "Van Vleuten en Van Muiswinkel"
       ],
       "titel": "Alles Onder Controle",
@@ -271,6 +477,32 @@
     {
       "theater": "stadsschouwburg-nijmegen",
       "artiesten": [
+        "Kleuren moeten ook slapen (6+)"
+      ],
+      "titel": "Janne Schra & De Vogels",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-28",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/kleuren-moeten-ook-slapen-6-skkb"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Bon dia in de jungle (4+)"
+      ],
+      "titel": "Izaline Calister & Thijs Borsten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-02",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/bon-dia-in-de-jungle-4-r335"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
         "Kasper van der Laan"
       ],
       "titel": "Ruim",
@@ -293,6 +525,19 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/kasper-van-der-laan-nys3"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Djumabala (2+)"
+      ],
+      "titel": "Oorkaan & Vernon Chatlein",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-09",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/djumabala-2-thyj"
     },
     {
       "theater": "stadsschouwburg-nijmegen",
@@ -384,6 +629,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/lift-144m"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "GRRR… ik ben een boze dino! (4+)"
+      ],
+      "titel": "Een muzikaal feest voor de allerkleinsten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/grrr-ik-ben-een-boze-dino-4-hd94"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "GRRR… ik ben een boze dino! (4+)"
+      ],
+      "titel": "Een muzikaal feest voor de allerkleinsten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/grrr-ik-ben-een-boze-dino-4-hd94"
     }
   ],
   "recensies": {

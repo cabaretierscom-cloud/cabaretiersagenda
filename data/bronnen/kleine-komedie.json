@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/kasper-van-der-laan-c27j"
-    },
     {
       "theater": "kleine-komedie",
       "artiesten": [
@@ -503,7 +490,7 @@
       "genre": "kleinkunst",
       "datum": "2027-02-02",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "première",
       "bron": "https://www.dekleinekomedie.nl/agenda/david-van-rosmalen-f71k"
     },
@@ -1102,6 +1089,19 @@
       "status": "gepland",
       "soort": "première",
       "bron": "https://www.dekleinekomedie.nl/agenda/luuk-weggemans-nr1w"
+    },
+    {
+      "theater": "kleine-komedie",
+      "artiesten": [
+        "Janne Schra & De Vogels"
+      ],
+      "titel": "Kleuren moeten ook slapen (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-22",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://www.dekleinekomedie.nl/agenda/janne-schra-de-vogels-ryj9"
     },
     {
       "theater": "kleine-komedie",

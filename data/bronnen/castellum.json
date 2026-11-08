@@ -1,7 +1,7 @@
 {
   "bron": "castellum",
   "naam": "Castellum",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "castellum",
@@ -25,6 +25,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://castellum.nl/theater/nienke-plas-appeltje-eitje"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Sally"
+      ],
+      "titel": "Danslab 3",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-20",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/sally-danslab-3"
     },
     {
       "theater": "castellum",
@@ -61,9 +74,20 @@
       "genre": "cabaret",
       "datum": "2027-01-13",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://castellum.nl/theater/richard-groenendijk-gelukkig-heb-je-mij-nog"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [],
+      "titel": "De Nóg Grotere Slijmmusical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/bazar-media-nog-grotere-slijmmusical"
     },
     {
       "theater": "castellum",
@@ -77,6 +101,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://castellum.nl/theater/johan-goossens-het-volle-leven"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Theater Terra"
+      ],
+      "titel": "Kikker is Kikker, de musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-30",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/theater-terra-kikker-is-kikker-de-musical"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Juf Braaksel"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/rep-entertainment-juf-braaksel-de-musical"
     },
     {
       "theater": "castellum",
@@ -116,6 +166,19 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://castellum.nl/theater/rundfunk-wagyu"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Meneer Monster"
+      ],
+      "titel": "De Waanzinnige Boomhut van 78 Verdiepingen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/meneer-monster-waanzinnige-boomhut-van-78-verdiepingen"
     },
     {
       "theater": "castellum",
@@ -325,6 +388,19 @@
     {
       "theater": "castellum",
       "artiesten": [
+        "Wirwar"
+      ],
+      "titel": "Weg Ermee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/wirwar-weg-ermee"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
         "Elfie Tromp"
       ],
       "titel": "Aai Poesje Aai Poesje",
@@ -334,6 +410,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://castellum.nl/theater/elfie-tromp-aai-poesje"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Buurman en Buurman"
+      ],
+      "titel": "bouwen een feestje",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/buurman-en-buurman-bouwen-een-feestje-50-jaar"
     },
     {
       "theater": "castellum",
@@ -377,15 +466,54 @@
     {
       "theater": "castellum",
       "artiesten": [
-        "Jörgen Raymann"
+        "De Fantasie Compagnie"
       ],
-      "titel": "BIGI YARI: Welkom thuis, waar niemand op je zit te wachten",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:15",
+      "titel": "De Grote Sinterklaasshow",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "16:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://castellum.nl/theater/jorgen-raymann-bigi-yari"
+      "bron": "https://castellum.nl/theater/de-grote-sinterklaasshow"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "De Fantasie Compagnie"
+      ],
+      "titel": "De Grote Sinterklaasshow",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/de-grote-sinterklaasshow"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "De Fantasie Compagnie"
+      ],
+      "titel": "De Grote Sinterklaasshow",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/de-grote-sinterklaasshow"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Introdans"
+      ],
+      "titel": "Swan Lake",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-29",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/introdans-swan-lake"
     },
     {
       "theater": "castellum",
@@ -429,6 +557,19 @@
     {
       "theater": "castellum",
       "artiesten": [
+        "Sterke Verhalen"
+      ],
+      "titel": "Mus & kapitein Kwaadbaard en De 5 Slangen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/sterke-verhalen-mus-en-kapitein-kwaadbaard"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
         "Roel C. Verburg"
       ],
       "titel": "Slechtste liedjes van de straat",
@@ -442,6 +583,32 @@
     {
       "theater": "castellum",
       "artiesten": [
+        "Ernst en Bobbie"
+      ],
+      "titel": "hebben geen idee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-29",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/ernst-bobbie-en-de-rest-hebben-geen-idee"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Ernst en Bobbie"
+      ],
+      "titel": "hebben geen idee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-29",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/ernst-bobbie-en-de-rest-hebben-geen-idee"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
         "Selma Visscher"
       ],
       "titel": "Trekvogel",
@@ -451,6 +618,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://castellum.nl/theater/selma-visscher-trekvogel"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Vos en Haas"
+      ],
+      "titel": "...met vrienden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/vos-en-haas-de-geheimzinnige-brief"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Kim van Zeben Theaterproducties"
+      ],
+      "titel": "Beuk!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-28",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/kim-van-zeben-beuk"
     },
     {
       "theater": "castellum",
@@ -559,6 +752,19 @@
     {
       "theater": "castellum",
       "artiesten": [
+        "Oliver en het avontuur van de straatkinderen"
+      ],
+      "titel": "Nationaal Jeugd Musical Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/nationaal-jeugd-musical-theater-oliver-en-het-avontuur-van-de-straatkinderen"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
         "Jochen Otten"
       ],
       "titel": "De kwaadste niet",
@@ -591,9 +797,35 @@
       "genre": "cabaret",
       "datum": "2027-03-04",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://castellum.nl/theater/david-van-rosmalen-als-ik-jou-was"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Efteling vertelt.."
+      ],
+      "titel": "Baron 1898",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/efteling-vertelt-baron-1898"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Efteling vertelt.."
+      ],
+      "titel": "Baron 1898",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/efteling-vertelt-baron-1898"
     },
     {
       "theater": "castellum",
@@ -607,6 +839,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://castellum.nl/theater/lovella-telesford-wat-een-gezeik"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Woezel en Pip"
+      ],
+      "titel": "Feest in de Tovertuin",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/woezel-en-pip-feest-in-de-tovertuin"
     },
     {
       "theater": "castellum",
@@ -635,6 +880,13 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Goossens kijkt met een even ontroerende als grappige mildheid naar zijn eigen tekortkomingen."
+      }
+    ],
+    "https://castellum.nl/theater/introdans-swan-lake": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Na de succesvolle tournee die volgde, brengt Introdans het wereldberoemde ballet van Celis nu terug op de planken. Het is een groots opgezet en meeslepend spektakel waarin het volledige Introdans-ensemble schittert in een indrukwekkend decor, gedragen door de majestueuze en ontroerende muziek van Tsjaikovski. De danstaal is krachtig en expressief, rijk aan poëzie, groteske humor en verbeeldingskracht. “Deze vrije versie van ‘Het Zwanenmeer’ zit vol vrolijke verrassingen."
       }
     ]
   }

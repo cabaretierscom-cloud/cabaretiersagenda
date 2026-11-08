@@ -1,7 +1,7 @@
 {
   "bron": "hengelo",
   "naam": "Schouwburg Hengelo",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "schouwburg-hengelo",
@@ -13,6 +13,32 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Titus & Fien De Revue"
+      ],
+      "titel": "Vooruit, nog één keertje dan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-10",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/vooruit-nog-één-keertje-dan-titus-fien-de-revue"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "De Mega Sint Show: Chaos in de Cadeaufabriek"
+      ],
+      "titel": "Sinterklaas, Party Piet Pablo, Love Piet e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/de-mega-sint-show-chaos-in-de-cadeaufabriek-sinterklaas-party-piet-pablo-love-piet-e.a."
+    },
     {
       "theater": "schouwburg-hengelo",
       "artiesten": [
@@ -172,6 +198,19 @@
     {
       "theater": "schouwburg-hengelo",
       "artiesten": [
+        "Beuk (4+)"
+      ],
+      "titel": "Kim van Zeben en Rogier in 't Hout",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-08",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.schouwburghengelo.nl/beuk-4-reprise-kim-van-zeben-en-rogier-in-t-hout"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
         "Rob Scheepers"
       ],
       "titel": "Scheepers op z'n scherpst",
@@ -198,6 +237,19 @@
     {
       "theater": "schouwburg-hengelo",
       "artiesten": [
+        "Quinn & Aaron"
+      ],
+      "titel": "Shorts (De Theatershow)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/shorts-de-theatershow-quinn-aaron"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
         "Jan Beuving"
       ],
       "titel": "Dekpunt",
@@ -207,6 +259,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburghengelo.nl/dekpunt-jan-beuving"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Samar en de bange koning (8+)"
+      ],
+      "titel": "George Tobal Producties & De Krakeling",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-27",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/samar-en-de-bange-koning-8--george-tobal-producties-de-krakeling"
     },
     {
       "theater": "schouwburg-hengelo",
@@ -250,6 +315,19 @@
     {
       "theater": "schouwburg-hengelo",
       "artiesten": [
+        "Alice in Wonderland (8+)"
+      ],
+      "titel": "De Toneelmakerij & Dox",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/alice-in-wonderland-8--de-toneelmakerij-dox"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
         "Roel en Jos Maalderink"
       ],
       "titel": "Verbroedering",
@@ -259,6 +337,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburghengelo.nl/verbroedering-roel-en-jos-maalderink"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Aladdin De Musical (4+)"
+      ],
+      "titel": "Van Hoorne Studios",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-26",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/aladdin-de-musical-4--van-hoorne-studios"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Nu is het nog rustig (8+)"
+      ],
+      "titel": "Theater Artemis, Het Zuidelijk Toneel en Het Paleis",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-02",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/nu-is-het-nog-rustig-8--theater-artemis-het-zuidelijk-toneel-en-het-paleis"
     },
     {
       "theater": "schouwburg-hengelo",
@@ -289,6 +393,19 @@
     {
       "theater": "schouwburg-hengelo",
       "artiesten": [
+        "Mata Hari Returns (14+)"
+      ],
+      "titel": "De Tafel van Vijf Muziektheater",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-20",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/mata-hari-returns-14--de-tafel-van-vijf-muziektheater"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
         "De Cabaret Club"
       ],
       "titel": "Vier korte cabaretvoorstellingen",
@@ -298,6 +415,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburghengelo.nl/vier-korte-cabaretvoorstellingen-de-cabaret-club"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "De Kleine Zeemeermin De Musical"
+      ],
+      "titel": "MediaDome",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/de-kleine-zeemeermin-de-musical-mediadome"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Double You"
+      ],
+      "titel": "Be Flat",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/double-you-be-flat"
     },
     {
       "theater": "schouwburg-hengelo",
@@ -341,6 +484,19 @@
     {
       "theater": "schouwburg-hengelo",
       "artiesten": [
+        "Ernst en Bobbie"
+      ],
+      "titel": "hebben geen idee (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/hebben-geen-idee-3--ernst-en-bobbie"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
         "Iris Rulkens"
       ],
       "titel": "Van Harte!",
@@ -350,6 +506,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburghengelo.nl/van-harte-iris-rulkens"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "De Proefkeuken en de WC van tijd (8+)"
+      ],
+      "titel": "Pieter Hulst en Willem Voogd",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-19",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/de-proefkeuken-en-de-wc-van-tijd-8--pieter-hulst-en-willem-voogd"
     },
     {
       "theater": "schouwburg-hengelo",
@@ -367,6 +536,19 @@
     {
       "theater": "schouwburg-hengelo",
       "artiesten": [
+        "Familiecarrousel (4+/6+/8+)"
+      ],
+      "titel": "Theater Sonnevanck",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/familiecarrousel-theater-sonnevanck"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
         "Bob Koomen"
       ],
       "titel": "Peer",
@@ -376,6 +558,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburghengelo.nl/peer-bob-koomen"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Heb je mijn zusje gezien? (2,5+)"
+      ],
+      "titel": "Hoge Fronten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/heb-je-mijn-zusje-gezien-2-5--hoge-fronten"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Pippi en de Piraten (6+)"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/pippi-en-de-piraten-6--theater-terra"
     },
     {
       "theater": "schouwburg-hengelo",
@@ -432,6 +640,19 @@
     {
       "theater": "schouwburg-hengelo",
       "artiesten": [
+        "Juf Braaksel De Musical (6+)"
+      ],
+      "titel": "REP Entertainment",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/juf-braaksel-de-musical-6--rep-entertainment"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
         "Stefan Hendrikx"
       ],
       "titel": "In Perspectief",
@@ -441,6 +662,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburghengelo.nl/in-perspectief-stefan-hendrikx"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Prins Panter (8+)"
+      ],
+      "titel": "Theater Sonnevanck | DIEHELEDING",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-27",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/prins-panter-8--theater-sonnevanck-dieheleding"
     },
     {
       "theater": "schouwburg-hengelo",
@@ -458,6 +692,45 @@
     {
       "theater": "schouwburg-hengelo",
       "artiesten": [
+        "De Voorleeskampioen (4+)"
+      ],
+      "titel": "Jansen & De Boer",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/de-voorleeskampioen-4--jansen-de-boer"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Drop de Beat (14+)"
+      ],
+      "titel": "Theater Sonnevanck en Theater Oostpool",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-07",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/drop-de-beat-theater-sonnevanck-en-theater-oostpool"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Meiden & Prinsen (8+)"
+      ],
+      "titel": "Het Filiaal",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-10",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/meiden-prinsen-8--het-filiaal"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
         "Wina Ricardo"
       ],
       "titel": "Wina's Wereld",
@@ -471,6 +744,45 @@
     {
       "theater": "schouwburg-hengelo",
       "artiesten": [
+        "nijntje op de fiets (2+)"
+      ],
+      "titel": "Klein Amsterdam Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/nijntje-op-de-fiets-2--klein-amsterdam-producties"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Anansi de Spin en de Gulzige Tijger (3+)"
+      ],
+      "titel": "Vanaf2 Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/anansi-de-spin-en-de-gulzige-tijger-3--vanaf2-producties"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "nijntje op de fiets (2+)"
+      ],
+      "titel": "Klein Amsterdam Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/nijntje-op-de-fiets-2--klein-amsterdam-producties-2"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
         "Daan van der Hoeven"
       ],
       "titel": "Mensenmens",
@@ -480,6 +792,84 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburghengelo.nl/mensenmens-daan-van-der-hoeven"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "De Waanzinnige Boomhut van 78 verdiepingen (6+)"
+      ],
+      "titel": "Meneer Monster",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/de-waanzinnige-boomhut-van-78-verdiepingen-6--meneer-monster"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "De Grote Dino Show"
+      ],
+      "titel": "MediaDome",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/de-grote-dino-show-mediadome"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Weg Ermee (5 t/m 12 jaar)"
+      ],
+      "titel": "WIRWAR Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/weg-ermee-5-t-m-12-jaar-wirwar-producties"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "JoepTube (8+)"
+      ],
+      "titel": "de zAAk A",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-01",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/joeptube-8--de-zaak-a"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Kikker is Kikker (3+)"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-02",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/kikker-is-kikker-3--theater-terra"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Alleen maar lieve jongens (8+)"
+      ],
+      "titel": "HNTjong",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-08",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/alleen-maar-lieve-jongens-8--hntjong"
     },
     {
       "theater": "schouwburg-hengelo",
@@ -523,6 +913,19 @@
     {
       "theater": "schouwburg-hengelo",
       "artiesten": [
+        "Mus & Kapitein Kwaadbaard (8+)"
+      ],
+      "titel": "Sterke Verhalen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/mus-kapitein-kwaadbaard-8--sterke-verhalen"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
         "Kees van Amstel"
       ],
       "titel": "Mogen we eerder weg?",
@@ -536,6 +939,19 @@
     {
       "theater": "schouwburg-hengelo",
       "artiesten": [
+        "Een Vreemde Dag"
+      ],
+      "titel": "Theatergroep De Jonge Honden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-20",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.schouwburghengelo.nl/een-vreemde-dag-een-reprise-theatergroep-de-jonge-honden"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
         "Peter Pannekoek"
       ],
       "titel": "Demonen",
@@ -545,6 +961,19 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.schouwburghengelo.nl/demonen-peter-pannekoek"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "Robin Hood (4+)"
+      ],
+      "titel": "Het Kleine Theater & Garage TDI",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-29",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/robin-hood-4--het-kleine-theater-garage-tdi-3"
     }
   ],
   "recensies": {}

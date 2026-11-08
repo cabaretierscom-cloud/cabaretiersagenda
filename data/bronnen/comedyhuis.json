@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,45 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Vroege zaterdagavondshow",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "18:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/vroege-zaterdagavondshow-7-november-2026/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kargadoor",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://www.kargadoor.nl"
-      },
-      "artiesten": [],
-      "titel": "All English Comedy Night",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/all-english-comedy-night-utrecht-7-november-2026/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Zaterdagavondshow",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/zaterdagavondshow-7-november/"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -855,7 +816,7 @@
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
-      "titel": "Late Night improv – Meeuw & Tim",
+      "titel": "Late Night: COMEDIANS IN PANIEK",
       "genre": "improvisatie",
       "datum": "2026-12-11",
       "tijd": "23:15",
@@ -2631,7 +2592,7 @@
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
       "titel": "Peter zonder Wolf – Mark van Vliet (5+)",
-      "genre": "stand-up",
+      "genre": "kindervoorstellingen",
       "datum": "2027-02-27",
       "tijd": "11:00",
       "status": "gepland",

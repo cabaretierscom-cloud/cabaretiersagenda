@@ -1,7 +1,7 @@
 {
   "bron": "delamar",
   "naam": "DeLaMar",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "delamar",
@@ -61,7 +61,7 @@
       "genre": "cabaret",
       "datum": "2026-11-21",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://delamar.nl/voorstellingen/esther-van-der-voort/"
     },
@@ -211,6 +211,32 @@
     {
       "theater": "delamar",
       "artiesten": [
+        "Efteling vertelt… Baron 1898 (6+)"
+      ],
+      "titel": "Een spannende musical voor de hele familie",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-30",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/efteling-vertelt-baron-1898/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Efteling vertelt… Baron 1898 (6+)"
+      ],
+      "titel": "Een spannende musical voor de hele familie",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-30",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/efteling-vertelt-baron-1898/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
         "Maartje en Kine"
       ],
       "titel": "De Bingo Show",
@@ -220,6 +246,117 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://delamar.nl/voorstellingen/maartje-en-kine/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Mus & kapitein Kwaadbaard en De 5 Slangen (8+)"
+      ],
+      "titel": "Gebaseerd op het boek van Kevin Hassing",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/mus-kapitein-kwaadbaard-en-de-5-slangen/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Mus & kapitein Kwaadbaard en De 5 Slangen (8+)"
+      ],
+      "titel": "Gebaseerd op het boek van Kevin Hassing",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/mus-kapitein-kwaadbaard-en-de-5-slangen/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Woezel & Pip, de Musical (2+)"
+      ],
+      "titel": "Feest in de Tovertuin",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/woezel-pip-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Woezel & Pip, de Musical (2+)"
+      ],
+      "titel": "Feest in de Tovertuin",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/woezel-pip-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Buurman & Buurman (4+)"
+      ],
+      "titel": "Buurman & Buurman bouwen een feestje",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-27",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/buurman-buurman/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Buurman & Buurman (4+)"
+      ],
+      "titel": "Buurman & Buurman bouwen een feestje",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-27",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/buurman-buurman/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [],
+      "titel": "De Kleine Prins (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-02",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/de-kleine-prins/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [],
+      "titel": "De Kleine Prins (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-02",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/de-kleine-prins/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [],
+      "titel": "De Kleine Prins (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/de-kleine-prins/"
     },
     {
       "theater": "delamar",
@@ -242,6 +379,58 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://delamar.nl/voorstellingen/we-zijn-toch-familie/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "De musical zonder billen (4+)"
+      ],
+      "titel": "Jaski & Groenteman",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-16",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/de-musical-zonder-billen/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "De musical zonder billen (4+)"
+      ],
+      "titel": "Jaski & Groenteman",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-16",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/de-musical-zonder-billen/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Juf Braaksel de Musical (6+)"
+      ],
+      "titel": "Een swingend en spannend avontuur voor het hele gezin",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/juf-braaksel-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Juf Braaksel de Musical (6+)"
+      ],
+      "titel": "Een swingend en spannend avontuur voor het hele gezin",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/juf-braaksel-de-musical/"
     },
     {
       "theater": "delamar",
@@ -271,6 +460,39 @@
     },
     {
       "theater": "delamar",
+      "artiesten": [],
+      "titel": "GRRR… ik ben een boze dino! (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/grrr-ik-ben-een-boze-dino/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [],
+      "titel": "GRRR… ik ben een boze dino! (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/grrr-ik-ben-een-boze-dino/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [],
+      "titel": "GRRR… ik ben een boze dino! (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://delamar.nl/voorstellingen/grrr-ik-ben-een-boze-dino/"
+    },
+    {
+      "theater": "delamar",
       "artiesten": [
         "Nienke Plas"
       ],
@@ -285,6 +507,45 @@
     {
       "theater": "delamar",
       "artiesten": [
+        "Space Academy (8+)"
+      ],
+      "titel": "Missie Maan",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/space-academy/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Space Academy (8+)"
+      ],
+      "titel": "Missie Maan",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/space-academy/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "De Circusbroers (4+)"
+      ],
+      "titel": "Een knotsgekke circusshow",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/de-circusbroers/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
         "Iris Rulkens"
       ],
       "titel": "Van harte!",
@@ -294,6 +555,32 @@
       "status": "gepland",
       "soort": "première",
       "bron": "https://delamar.nl/voorstellingen/iris-rulkens/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "De Waanzinnige Boomhut van 78 verdiepingen (6+)"
+      ],
+      "titel": "Meneer Monster",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/de-waanzinnige-boomhut-van-78-verdiepingen/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "De Waanzinnige Boomhut van 78 verdiepingen (6+)"
+      ],
+      "titel": "Meneer Monster",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/de-waanzinnige-boomhut-van-78-verdiepingen/"
     },
     {
       "theater": "delamar",
@@ -359,6 +646,162 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://delamar.nl/voorstellingen/karin-bloemen/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "101 Dalmatiërs, de Musical"
+      ],
+      "titel": "101 schattige puppy’s en 1 levensgevaarlijke diva!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-06",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/101-dalmatiers-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "101 Dalmatiërs, de Musical"
+      ],
+      "titel": "101 schattige puppy’s en 1 levensgevaarlijke diva!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-06",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/101-dalmatiers-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "101 Dalmatiërs, de Musical"
+      ],
+      "titel": "101 schattige puppy’s en 1 levensgevaarlijke diva!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-07",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/101-dalmatiers-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "101 Dalmatiërs, de Musical"
+      ],
+      "titel": "101 schattige puppy’s en 1 levensgevaarlijke diva!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-08",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/101-dalmatiers-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "101 Dalmatiërs, de Musical"
+      ],
+      "titel": "101 schattige puppy’s en 1 levensgevaarlijke diva!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-08",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/101-dalmatiers-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "101 Dalmatiërs, de Musical"
+      ],
+      "titel": "101 schattige puppy’s en 1 levensgevaarlijke diva!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-09",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/101-dalmatiers-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "101 Dalmatiërs, de Musical"
+      ],
+      "titel": "101 schattige puppy’s en 1 levensgevaarlijke diva!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-14",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/101-dalmatiers-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "101 Dalmatiërs, de Musical"
+      ],
+      "titel": "101 schattige puppy’s en 1 levensgevaarlijke diva!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-15",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/101-dalmatiers-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "101 Dalmatiërs, de Musical"
+      ],
+      "titel": "101 schattige puppy’s en 1 levensgevaarlijke diva!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-15",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/101-dalmatiers-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "101 Dalmatiërs, de Musical"
+      ],
+      "titel": "101 schattige puppy’s en 1 levensgevaarlijke diva!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-16",
+      "tijd": "12:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/101-dalmatiers-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "101 Dalmatiërs, de Musical"
+      ],
+      "titel": "101 schattige puppy’s en 1 levensgevaarlijke diva!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-16",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/101-dalmatiers-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "101 Dalmatiërs, de Musical"
+      ],
+      "titel": "101 schattige puppy’s en 1 levensgevaarlijke diva!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-17",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/101-dalmatiers-de-musical/"
     },
     {
       "theater": "delamar",
@@ -467,6 +910,32 @@
     {
       "theater": "delamar",
       "artiesten": [
+        "Kikker is kikker (3+)"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-17",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/kikker-is-kikker/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Meiden & Prinsen (8+)"
+      ],
+      "titel": "Omdat het leven geen sprookje is",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/meiden-prinsen/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
         "Thomas van Luyn"
       ],
       "titel": "Super Normaal",
@@ -528,6 +997,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://delamar.nl/voorstellingen/thomas-van-luyn/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Aladdin de Musical (4+)"
+      ],
+      "titel": "Van Hoorne Studios",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-26",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/aladdin-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Aladdin de Musical (4+)"
+      ],
+      "titel": "Van Hoorne Studios",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-27",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/aladdin-de-musical/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Aladdin de Musical (4+)"
+      ],
+      "titel": "Van Hoorne Studios",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-27",
+      "tijd": "16:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/aladdin-de-musical/"
     },
     {
       "theater": "delamar",
@@ -717,6 +1225,65 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Goedemondt toont de tekortschietende mens, en laat zien hoe onweerstaanbaar grappig dat kan zijn"
+      }
+    ],
+    "https://delamar.nl/voorstellingen/mus-kapitein-kwaadbaard-en-de-5-slangen/": [
+      {
+        "medium": "Musicalsites",
+        "sterren": 5,
+        "citaat": "Een magische ervaring"
+      },
+      {
+        "medium": "Kidsweek",
+        "sterren": 5,
+        "citaat": "Mus is stoer én kwetsbaar, precies zoals in het boek"
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 4,
+        "citaat": "Kwalitatief hoogwaardig, toegankelijk en fantasierijk jeugdtheater"
+      },
+      {
+        "medium": "Musicalworld",
+        "sterren": 4,
+        "citaat": "Theater zoals het moet zijn. Boeiend, origineel, een beetje prikkelend en bijzonder mooi"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een avontuurlijke familiemusical, leuk voor zowel fans als hen die het verhaal nog zullen ontdekken"
+      }
+    ],
+    "https://delamar.nl/voorstellingen/de-kleine-prins/": [
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 5,
+        "citaat": "Iedere zin is een staaltje van taalkundige creativiteit"
+      },
+      {
+        "medium": "Musicalsites",
+        "sterren": 4,
+        "citaat": "Een adembenemend mooie bewerking"
+      },
+      {
+        "medium": "AD",
+        "sterren": 4,
+        "citaat": "Sterke vocalen van de ‘roos’ Gina Bentvelsen"
+      },
+      {
+        "medium": "Musicalworld",
+        "sterren": 4,
+        "citaat": "Een paar vocale kunststukjes zijn kersen op de taart van deze interessante vertelling"
+      },
+      {
+        "medium": "Musicaljournaal",
+        "sterren": 4,
+        "citaat": "Een muzikaal sterke voorstelling"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Fantasievolle projecties maken van De Kleine Prins een klein feestje"
       }
     ],
     "https://delamar.nl/voorstellingen/anuar/": [

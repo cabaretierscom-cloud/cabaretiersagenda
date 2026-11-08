@@ -2349,6 +2349,14 @@
     "website": null
   },
   {
+    "id": "mainstage-brabanthallen-s-hertogenbosch",
+    "naam": "Mainstage Brabanthallen",
+    "plaats": "'s-Hertogenbosch",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "theater-aan-de-parade",
     "naam": "Theater aan de Parade",
     "plaats": "'s-Hertogenbosch",
@@ -3810,12 +3818,28 @@
     "website": "https://www.concordia.nl"
   },
   {
+    "id": "de-grote-kerk-enschede",
+    "naam": "De Grote Kerk",
+    "plaats": "Enschede",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "de-kleine-willem-enschede",
     "naam": "De Kleine Willem",
     "plaats": "Enschede",
     "land": "NL",
     "soort": "theater",
     "website": "https://www.wilminktheater.nl"
+  },
+  {
+    "id": "externe-locatie-enschede",
+    "naam": "Externe locatie",
+    "plaats": "Enschede",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
   },
   {
     "id": "muziekcentrum-enschede",
@@ -5205,7 +5229,7 @@
     "plaats": "Nuenen",
     "land": "NL",
     "soort": "theater",
-    "website": null
+    "website": "https://onsklooster.nl"
   },
   {
     "id": "numansdorpshuis",
@@ -5792,6 +5816,14 @@
       },
       "datum": "2012-04-06"
     }
+  },
+  {
+    "id": "wennekerpand-schiedam",
+    "naam": "Wennekerpand",
+    "plaats": "Schiedam",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
   },
   {
     "id": "spectrum-podium-schijndel",

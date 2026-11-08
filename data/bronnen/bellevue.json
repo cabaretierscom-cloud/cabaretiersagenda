@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Klaas van der Eerden"
-      ],
-      "titel": "Imperfect",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/imperfect-n89j"
-    },
     {
       "theater": "theater-bellevue",
       "artiesten": [
@@ -341,7 +328,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/hardleers-9rb3"
     },

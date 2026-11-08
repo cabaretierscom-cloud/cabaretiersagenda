@@ -1,7 +1,7 @@
 {
   "bron": "venray",
   "naam": "Schouwburg Venray",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "schouwburg-venray",
@@ -13,6 +13,45 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "De Mega Sint Show 2026"
+      ],
+      "titel": "Met o.a. Party Piet Pablo, Love Piet en Sinterklaas",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-26",
+      "tijd": "14:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14523/de-mega-sint-show-2026"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "De Mega Sint Show 2026"
+      ],
+      "titel": "Met o.a. Party Piet Pablo, Love Piet en Sinterklaas",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-26",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14524/de-mega-sint-show-2026"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "De Mega Sint Show 2026"
+      ],
+      "titel": "Met o.a. Party Piet Pablo, Love Piet en Sinterklaas",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-26",
+      "tijd": "19:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/15096/de-mega-sint-show-2026"
+    },
     {
       "theater": "schouwburg-venray",
       "artiesten": [
@@ -51,6 +90,58 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburgvenray.nl/programma/14702/jandino"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "De kleine ijsbeer"
+      ],
+      "titel": "Theater Stof",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14705/de-kleine-ijsbeer"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Wijsneuzen"
+      ],
+      "titel": "Gestrand op Mars",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14706/wijsneuzen"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Het Kado als het ware"
+      ],
+      "titel": "Theater Als Het Ware",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-29",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.schouwburgvenray.nl/programma/14707/het-kado-als-het-ware"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Jul & Julia"
+      ],
+      "titel": "Chaos in het pretpark!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14626/jul-julia"
     },
     {
       "theater": "schouwburg-venray",
@@ -120,6 +211,19 @@
     {
       "theater": "schouwburg-venray",
       "artiesten": [
+        "Creators Live!"
+      ],
+      "titel": "@ Schouwburg Venray",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/15056/creators-live"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
         "Fabian Franciscus"
       ],
       "titel": "Is het leven al begonnen?",
@@ -129,6 +233,19 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.schouwburgvenray.nl/programma/14662/fabian-franciscus-try-out"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "De Betoverde Klas"
+      ],
+      "titel": "Huub Cooijmans",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14672/de-betoverde-klas"
     },
     {
       "theater": "schouwburg-venray",
@@ -324,6 +441,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburgvenray.nl/programma/14727/huisgenoten"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Lady en de Vage Hond"
+      ],
+      "titel": "Het Kleine Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/14722/lady-en-de-vage-hond"
     },
     {
       "theater": "schouwburg-venray",

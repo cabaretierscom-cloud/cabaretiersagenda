@@ -1,7 +1,7 @@
 {
   "bron": "schie",
   "naam": "Theater aan de Schie",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "theater-aan-de-schie",
@@ -41,6 +41,17 @@
     },
     {
       "theater": "theater-aan-de-schie",
+      "artiesten": [],
+      "titel": "Pippi en de Piraten ( 6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/pippi-en-de-piraten-6"
+    },
+    {
+      "theater": "theater-aan-de-schie",
       "artiesten": [
         "Max van den Burg"
       ],
@@ -77,6 +88,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theateraandeschie.nl/voorstelling/merijn-scholten"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Woezel & Pip"
+      ],
+      "titel": "Feest in de Tovertuin",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/feest-in-de-tovertuin-woezel-pip"
     },
     {
       "theater": "theater-aan-de-schie",
@@ -158,6 +182,45 @@
     },
     {
       "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "The Illusionists"
+      ],
+      "titel": "met Hans Klok",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-28",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/the-illusionists-met-hans-klok"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "The Illusionists"
+      ],
+      "titel": "met Hans Klok",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-29",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/the-illusionists-met-hans-klok"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "De Kleine Prins (8+)"
+      ],
+      "titel": "Familiemusical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-16",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/de-kleine-prins-dg-theater"
+    },
+    {
+      "theater": "theater-aan-de-schie",
       "artiesten": [],
       "titel": "Stand-up het jaar uit!",
       "genre": "cabaret",
@@ -209,6 +272,19 @@
     {
       "theater": "theater-aan-de-schie",
       "artiesten": [
+        "De Proefkeuken en de WC van Tijd (8+)"
+      ],
+      "titel": "Met Willem Voogd en Pieter Hulst",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/de-proefkeuken-en-de-wc-van-tijd"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
         "De Mooie Dingen"
       ],
       "titel": "Janke Dekker",
@@ -218,6 +294,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theateraandeschie.nl/voorstelling/janke-dekker-de-mooie-dingen"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [],
+      "titel": "EN NOU GAAN WE EVEN HELEMAAL UIT ONZE PLAAT (een topshow) (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-13",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/huisje-boompje-beestje"
     },
     {
       "theater": "theater-aan-de-schie",
@@ -270,6 +357,58 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theateraandeschie.nl/voorstelling/yentl-de-boer-rekhalzen-2026"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Prentenboekjesfestival"
+      ],
+      "titel": "Over een kleine mol",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-19",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/over-een-kleine-mol-prentenboekjesfestival"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Prentenboekjesfestival"
+      ],
+      "titel": "Over een kleine mol",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-19",
+      "tijd": "11:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/over-een-kleine-mol-prentenboekjesfestival"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Maya Show"
+      ],
+      "titel": "Studio 100 - Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/maya-show-studio-100-samen-picknicken"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Maya Show"
+      ],
+      "titel": "Studio 100 - Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/maya-show-studio-100-samen-picknicken"
     },
     {
       "theater": "theater-aan-de-schie",
@@ -352,6 +491,19 @@
     {
       "theater": "theater-aan-de-schie",
       "artiesten": [
+        "Kikker is Kikker"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/kikker-is-kikker-theater-terra"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
         "Jeroens Clan"
       ],
       "titel": "Juk",
@@ -413,6 +565,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theateraandeschie.nl/voorstelling/jay-francis"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Buurman & Buurman"
+      ],
+      "titel": "Bouwen een feestje",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/buurman-buurman-bouwen-een-feestje"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Buurman & Buurman"
+      ],
+      "titel": "Bouwen een feestje",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/buurman-buurman-bouwen-een-feestje"
     },
     {
       "theater": "theater-aan-de-schie",
@@ -521,6 +699,32 @@
     {
       "theater": "theater-aan-de-schie",
       "artiesten": [
+        "Het Geheim van Sinterklaas"
+      ],
+      "titel": "Fien & Teun",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-02",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/fien-teun-het-geheim-van-sinterklaas-18324"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Het Geheim van Sinterklaas"
+      ],
+      "titel": "Fien & Teun",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-02",
+      "tijd": "16:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/fien-teun-het-geheim-van-sinterklaas-18324"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
         "Amhali & Verveer"
       ],
       "titel": "Alles is Comedy",
@@ -530,6 +734,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theateraandeschie.nl/voorstelling/alles-is-comedy"
+    },
+    {
+      "theater": "theater-aan-de-schie",
+      "artiesten": [
+        "Prentenboekjesfestival"
+      ],
+      "titel": "De Gruffalo",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-19",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theateraandeschie.nl/voorstelling/de-gruffalo-prentenboekjesfestival"
     },
     {
       "theater": "theater-aan-de-schie",

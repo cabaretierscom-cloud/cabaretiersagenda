@@ -1,7 +1,7 @@
 {
   "bron": "cultura",
   "naam": "Cultura Ede",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "cultura-ede",
@@ -25,6 +25,32 @@
       "status": "geannuleerd",
       "soort": null,
       "bron": "https://cultura-ede.nl/agenda/hokjesdenker-277101/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "OP NAAR PAKJESAVOND (2-7 jaar) | BIJGEBOEKT!"
+      ],
+      "titel": "Wegens succes extra voorstelling bijgeboekt!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-18",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": "extra voorstelling",
+      "bron": "https://cultura-ede.nl/agenda/op-naar-pakjesavond-2-7-jaar-bijgeboekt-277678/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "OP NAAR PAKJESAVOND (2-7 jaar)"
+      ],
+      "titel": "Pim en Pom Theaterproducties",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-18",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/op-naar-pakjesavond-2-7-jaar-277677/"
     },
     {
       "theater": "cultura-ede",
@@ -94,6 +120,32 @@
     {
       "theater": "cultura-ede",
       "artiesten": [
+        "DE MUSICAL ZONDER BILLEN (4-8 jaar)"
+      ],
+      "titel": "Jaski & Groenteman",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-30",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/de-musical-zonder-billen-4-8-jaar-276883/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "DE MUSICAL ZONDER BILLEN (4-8 jaar)"
+      ],
+      "titel": "Jaski & Groenteman",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-30",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/de-musical-zonder-billen-4-8-jaar-276882/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
         "Comedytunes"
       ],
       "titel": "Comedynight",
@@ -120,6 +172,19 @@
     {
       "theater": "cultura-ede",
       "artiesten": [
+        "TENT (6+ jaar)"
+      ],
+      "titel": "De Horde",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/tent-6-jaar-277114/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
         "Thijs van de Meeberg"
       ],
       "titel": "Baby Reindeer",
@@ -133,6 +198,19 @@
     {
       "theater": "cultura-ede",
       "artiesten": [
+        "LADY EN DE VAGE HOND (4-10 jaar)"
+      ],
+      "titel": "Het Kleine Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/lady-en-de-vage-hond-4-10-jaar-277317/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
         "Marie Koet"
       ],
       "titel": "Eindspel",
@@ -142,6 +220,32 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://cultura-ede.nl/agenda/marie-koet-265293/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "DE DINO SHOW (2-6 jaar)"
+      ],
+      "titel": "A. Ventura Silent Disco Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/de-dino-show-2-6-jaar-277334/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "WEG ERMEE (5-12 jaar)"
+      ],
+      "titel": "Wirwar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-17",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/weg-ermee-5-12-jaar-277507/"
     },
     {
       "theater": "cultura-ede",
@@ -211,6 +315,19 @@
     {
       "theater": "cultura-ede",
       "artiesten": [
+        "SCHOKGOLF (6+ jaar)"
+      ],
+      "titel": "Black Pencil",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/schokgolf-6-jaar-277620/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
         "Alex Ploeg"
       ],
       "titel": "Niks persoonlijks",
@@ -220,6 +337,19 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://cultura-ede.nl/agenda/alex-ploeg-277621/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "HEB JE MIJN ZUSJE GEZIEN (2-6 jaar)"
+      ],
+      "titel": "Hoge Fronten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-01",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/heb-je-mijn-zusje-gezien-2-6-jaar-277622/"
     },
     {
       "theater": "cultura-ede",
@@ -324,6 +454,58 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://cultura-ede.nl/agenda/nationaal-theaterweekend-277008/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Nat. Theaterweekend"
+      ],
+      "titel": "The100hands",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/nat-theaterweekend-waar-je-uitkomt-als-je-weggaat-5-jaar-301027/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Nat. Theaterweekend"
+      ],
+      "titel": "The100hands",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/nat-theaterweekend-waar-je-uitkomt-als-je-weggaat-5-jaar-277010/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "KLEINE IJSBEER (2-7 jaar) | BIJGEBOEKT!"
+      ],
+      "titel": "Theater Stof",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/kleine-ijsbeer-2-7-jaar-bijgeboekt-301266/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "KLEINE IJSBEER (2-7 jaar)"
+      ],
+      "titel": "Theater Stof",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/kleine-ijsbeer-2-7-jaar-276880/"
     }
   ],
   "recensies": {}

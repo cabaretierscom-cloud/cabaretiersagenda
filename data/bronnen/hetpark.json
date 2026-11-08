@@ -1,7 +1,7 @@
 {
   "bron": "hetpark",
   "naam": "Schouwburg Het Park",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "schouwburg-het-park",
@@ -21,6 +21,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Kado (2+)"
+      ],
+      "titel": "Theatershow",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-08",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/kado-2-10344030/"
+    },
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
@@ -112,6 +125,19 @@
     },
     {
       "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Meneer Monster (6+)"
+      ],
+      "titel": "De waanzinnige boomhut van 78 verdiepingen",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/meneer-monster-6-10355767/"
+    },
+    {
+      "theater": "schouwburg-het-park",
       "artiesten": [],
       "titel": "Finalistentournee Amsterdams Kleinkunst Festival",
       "genre": "cabaret",
@@ -120,6 +146,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/finalistentournee-amsterdams-kleinkunst-festival-10352973/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Controle"
+      ],
+      "titel": "155/Maas (12+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-25",
+      "tijd": "19:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/controle-10352974/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Peppa Pig Live (2+)"
+      ],
+      "titel": "Samen op Stap!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/peppa-pig-live-2-10355775/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Space Academy Live Met André Kuipers (8+)"
+      ],
+      "titel": "Missie maan",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/space-academy-live-met-andre-kuipers-8-10355777/"
     },
     {
       "theater": "schouwburg-het-park",
@@ -199,6 +264,41 @@
     },
     {
       "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Klassiek voor Kleintjes: Dreumesconcert (1,5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "09:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/klassiek-voor-kleintjes-dreumesconcert-15-10359372/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Klassiek voor Kleintjes: Babyconcert (6 maanden+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "10:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/klassiek-voor-kleintjes-babyconcert-6-maanden-10359478/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Klassiek voor Kleintjes"
+      ],
+      "titel": "Peuters/kleutersconcert (2,5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "11:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/klassiek-voor-kleintjes-peuters-kleutersconcert-25-10363091/"
+    },
+    {
+      "theater": "schouwburg-het-park",
       "artiesten": [
         "Dolf Jansen"
       ],
@@ -226,6 +326,58 @@
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
+        "Juf Braaksel (6+)"
+      ],
+      "titel": "Een swingend en spannend avontuur voor het hele gezin",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-27",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/juf-braaksel-6-10355823/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Juf Braaksel (6+)"
+      ],
+      "titel": "Een swingend en spannend avontuur voor het hele gezin",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-27",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/juf-braaksel-6-10355826/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Pip & Pelle – Wintershow (4+)"
+      ],
+      "titel": "Dé winterkomedie voor de hele familie!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/pip-pelle-wintershow-4-10353035/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Pip & Pelle Wintershow (4+)"
+      ],
+      "titel": "Dé winterkomedie voor de hele familie!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/pip-pelle-wintershow-4-10353036/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
         "Patrick Laureij"
       ],
       "titel": "Kintsugi",
@@ -235,6 +387,19 @@
       "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://hetpark.nl/agenda/patrick-laureij-10349360/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "De Proefkeuken en de WC van tijd (8+)"
+      ],
+      "titel": "Pieter Hulst & Willem Voogd",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-09",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/de-proefkeuken-en-de-wc-van-tijd-8-10356019/"
     },
     {
       "theater": "schouwburg-het-park",
@@ -304,6 +469,19 @@
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
+        "De Wind en Wij (3+)"
+      ],
+      "titel": "TG. Winterberg",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-23",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/de-wind-en-wij-3-10356202/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
         "Valentina Tóth"
       ],
       "titel": "Revue Revanche",
@@ -354,6 +532,32 @@
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
+        "Maya Show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/maya-show-1-10356040/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Maya Show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/maya-show-1-10356042/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
         "Kasper van der Laan"
       ],
       "titel": "Ruim",
@@ -380,6 +584,32 @@
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
+        "Mus en Kapitein Kwaadbaard (8+)"
+      ],
+      "titel": "en De 5 Slangen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/mus-en-kapitein-kwaadbaard-8-10355284/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Mus en Kapitein Kwaadbaard (8+)"
+      ],
+      "titel": "en De 5 Slangen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/mus-en-kapitein-kwaadbaard-8-10355285/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
         "Derek Otte"
       ],
       "titel": "Landverrader",
@@ -400,6 +630,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/het-gilde-10361513/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Tent (6+)"
+      ],
+      "titel": "De Horde",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/tent-6-10354250/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Kikker is Kikker (3+)"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-25",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/kikker-is-kikker-3-10356141/"
     },
     {
       "theater": "schouwburg-het-park",
@@ -437,6 +693,19 @@
       "status": "geannuleerd",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/hokjesdenker-10355608/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Weg Ermee! (5+)"
+      ],
+      "titel": "Wirwar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-06",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/weg-ermee-5-10355377/"
     },
     {
       "theater": "schouwburg-het-park",
@@ -493,6 +762,58 @@
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
+        "De Koka Kola Rivier (9+)"
+      ],
+      "titel": "De Toneelmakerij",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-27",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/de-koka-kola-rivier-9-10355554/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Nijntje op de fiets (2+)"
+      ],
+      "titel": "Peuterkleuterfestival",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-28",
+      "tijd": "10:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/nijntje-op-de-fiets-2-10355557/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Anansi de Spin en de Gulzige Tijger (3+)"
+      ],
+      "titel": "Prentenboekjesfestival",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-28",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/anansi-de-spin-en-de-gulzige-tijger-3-10356148/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Nijntje op de fiets (2+)"
+      ],
+      "titel": "Peuterkleuterfestival",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-28",
+      "tijd": "11:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/nijntje-op-de-fiets-2-10355558/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
         "Andries Tunru"
       ],
       "titel": "Ravot",
@@ -532,6 +853,19 @@
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
+        "Prins Panter (8+)"
+      ],
+      "titel": "Theater Sonnevanck | DIEHELEDING",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-02",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/prins-panter-8-10355561/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
         "Daniel Arends"
       ],
       "titel": "Highclass Bitch",
@@ -554,6 +888,19 @@
       "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://hetpark.nl/agenda/daniel-arends-10350475/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Nationaal Jeugd Musical Theater (8+)"
+      ],
+      "titel": "Oliver en het avontuur van de straatkinderen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-09",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/nationaal-jeugd-musical-theater-8-10356155/"
     },
     {
       "theater": "schouwburg-het-park",
@@ -591,6 +938,28 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/hoorn-lacht-10361514/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Aladdin (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/aladdin-4-10356157/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Aladdin (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/aladdin-4-10356158/"
     },
     {
       "theater": "schouwburg-het-park",
@@ -634,6 +1003,19 @@
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
+        "Het Houten Huis (9+)"
+      ],
+      "titel": "Grondtonen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/het-houten-huis-9-10355576/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
         "David van Rosmalen"
       ],
       "titel": "Als ik jou was",
@@ -643,6 +1025,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/david-van-rosmalen-10355577/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Bing is jarig (1+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-02",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/bing-is-jarig-1-10356165/"
     },
     {
       "theater": "schouwburg-het-park",
@@ -656,6 +1049,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/viggo-waas-eddie-b-wahr-kees-van-der-vooren-10355578/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Bing is jarig (1+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-02",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/bing-is-jarig-1-10356166/"
     },
     {
       "theater": "schouwburg-het-park",
@@ -711,6 +1115,28 @@
     },
     {
       "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Ernst en Bobbie hebben geen idee (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/ernst-en-bobbie-hebben-geen-idee-3-10356185/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Ernst en Bobbie hebben geen idee (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/ernst-en-bobbie-hebben-geen-idee-3-10356186/"
+    },
+    {
+      "theater": "schouwburg-het-park",
       "artiesten": [
         "Esther van der Voort"
       ],
@@ -734,6 +1160,19 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/bob-koomen-10355594/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "De nog grotere slijm musical (6+)"
+      ],
+      "titel": "Slijm is terug! Groter, spectaculairder en met nog meer slijm!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-30",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/de-nog-grotere-slijm-musical-6-10356189/"
     },
     {
       "theater": "schouwburg-het-park",
@@ -773,6 +1212,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/jandino-20-jaar-10356193/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Titus & Fien – De Revue (4+)"
+      ],
+      "titel": "Vooruit, nog één keertje dan!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-19",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/titus-fien-de-revue-4-10293099/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Titus & Fien – De Revue (4+)"
+      ],
+      "titel": "Vooruit, nog één keertje dan!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-19",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/titus-fien-de-revue-4-10293101/"
     },
     {
       "theater": "schouwburg-het-park",

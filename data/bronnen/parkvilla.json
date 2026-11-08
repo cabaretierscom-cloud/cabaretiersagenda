@@ -1,7 +1,7 @@
 {
   "bron": "parkvilla",
   "naam": "Parkvilla",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "parkvilla",
@@ -13,6 +13,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "parkvilla",
+      "artiesten": [
+        "Dirk Scheele"
+      ],
+      "titel": "Dikkie Dik & : Zing, spring, miauw! 2+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-16",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://parkvilla.nl/theater/dikkie-dik-dirk-scheele-zing-spring-miauw-2-306"
+    },
     {
       "theater": "parkvilla",
       "artiesten": [
@@ -38,6 +51,19 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://parkvilla.nl/theater/elias-de-bruyne-one-night-with-elias-try-out-312"
+    },
+    {
+      "theater": "parkvilla",
+      "artiesten": [
+        "Klein Amsterdam Producties"
+      ],
+      "titel": "Sam & Julia op avontuur 3+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://parkvilla.nl/theater/klein-amsterdam-producties-sam-julia-op-avontuur-3-313"
     },
     {
       "theater": "parkvilla",
@@ -90,6 +116,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://parkvilla.nl/theater/piet-van-eeghen-de-lieve-vrede-321"
+    },
+    {
+      "theater": "parkvilla",
+      "artiesten": [
+        "Dirk Scheele"
+      ],
+      "titel": "Dikkie Dik & : Zing, spring, miauw! 2+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-16",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://parkvilla.nl/theater/dikkie-dik-dirk-scheele-zing-spring-miauw-2-342"
     }
   ],
   "recensies": {

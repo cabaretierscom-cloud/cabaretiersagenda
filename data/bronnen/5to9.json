@@ -2,196 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-08",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Blauwe Kei",
-        "plaats": "Veghel",
-        "land": "NL",
-        "website": "https://www.blauwekei.nl"
-      },
-      "artiesten": [
-        "Pieter Verelst"
-      ],
-      "titel": "Altijd Aan",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.blauwekei.nl/agenda/pieter-verelst-57vc"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Leest",
-        "plaats": "Izegem",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Steven Mahieu"
-      ],
-      "titel": "STABIELER",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/steven-mahieu/2026-11-06/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "JH De Mutse",
-        "plaats": "Wingene",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Bert Gabriëls"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://reservaties.wingene.be/Tickets/Ticketdetail/tabid/118/Default.aspx?ActivityID=1VDBcrge3Mw%3d"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "MFA De Kei",
-        "plaats": "Reusel",
-        "land": "NL",
-        "website": "https://www.tschouw.nl"
-      },
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "stand-up",
-      "datum": "2026-11-06",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.tschouw.nl/voorstelling/jade-mintjens/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Het Speelhuis",
-        "plaats": "Helmond",
-        "land": "NL",
-        "website": "https://theaterspeelhuis.nl"
-      },
-      "artiesten": [
-        "Pieter Verelst"
-      ],
-      "titel": "Altijd Aan",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterspeelhuis.nl/programma/pieter-verelst-13281"
-    },
-    {
-      "theater": "cc-adelberg-lommel",
-      "artiesten": [
-        "Bregje Iding",
-        "Jeroen Dyck",
-        "Peter Kluppels",
-        "MC Jarno Boone"
-      ],
-      "titel": "Humo's Comedy Cup Finalistentour",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.ccdeadelberg.be/programma/bregje-iding-peter-kluppels-jeroen-dyck-mc-jarno-boone-yhfy"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "GC De Bunder",
-        "plaats": "Moorslede",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Hans Cools"
-      ],
-      "titel": "Zolang de voorraad strekt",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/hans-cools/2026-11-07/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kruierie",
-        "plaats": "Balen",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Bert Gabriëls"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedycafe2026.tickoweb.be/selection"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "GC De Bunder",
-        "plaats": "Moorslede",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Hans Cools"
-      ],
-      "titel": "Zolang de voorraad strekt",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/hans-cools/2026-11-07/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Vayamundo",
-        "plaats": "Oostende",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Gili"
-      ],
-      "titel": "Machtig!",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": null,
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://comedy-oostende.weticket.io/gili"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -1215,7 +1028,7 @@
       "genre": "stand-up",
       "datum": "2026-12-01",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://gasthuis.wijnegem.be/programma/voorstellingen/dries-heyneman/?lid=887"
     },
@@ -1868,7 +1681,7 @@
       "genre": "stand-up",
       "datum": "2026-12-11",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.alveringem.be/dries-heyneman-voor-normale-mensen-try-out"
     },
@@ -3062,7 +2875,7 @@
       "genre": "stand-up",
       "datum": "2027-01-19",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.deinze.be/activiteiten/detail/1493/comedy-night-dries-heyneman-dagmar-verfaille-mc-laurien-vereecken"
     },
@@ -6254,7 +6067,7 @@
       "genre": "stand-up",
       "datum": "2027-04-03",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://popallure.be/event/dries-heyneman-try-out-voor-normale-mensen/"
     },
@@ -6767,7 +6580,7 @@
       "genre": "stand-up",
       "datum": "2027-04-17",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.wevelgem.be/ccwevelgem/podium?cdbid=b2c07fe4-e4d8-4a63-b671-42b7254069ae&utm_source=www.wevelgem.be&utm_medium=referral&utm_campaign=widgets"
     },
@@ -7928,7 +7741,7 @@
       "tijd": null,
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.terdilft.be/activiteiten/voor-normale-mensen"
+      "bron": "https://www.terdilft.be/activiteiten/detail/1221/voor-normale-mensen"
     },
     {
       "theater": {
@@ -8919,5 +8732,13 @@
       "bron": "https://www.comedyshows.be/kalender/hans-cools/2027-10-14/"
     }
   ],
-  "recensies": {}
+  "recensies": {
+    "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jade-mintjens-bedankt-om-te-komen": [
+      {
+        "medium": "De Morgen",
+        "sterren": 4,
+        "citaat": "Originele verteller die niet bij de geijkte comedy-onderwerpen blijft hangen."
+      }
+    ]
+  }
 }

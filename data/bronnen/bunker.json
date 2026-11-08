@@ -3,7 +3,7 @@
   "naam": "Agenda van Bunker Theaterzaken",
   "soort": "speellijst",
   "leidend": true,
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [],
   "speeldata": [
     {
@@ -1871,25 +1871,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Theater de Veste",
-        "plaats": "Delft",
-        "land": "NL",
-        "website": "https://www.theaterdeveste.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterdeveste.nl/programma/kintsugi-d2kg"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Stadsschouwburg Nijmegen en Concertgebouw De Vereeniging",
         "plaats": "Nijmegen",
         "land": "NL",
@@ -2760,25 +2741,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.ahoy.nl/agenda/show/patrick-laureij-kintsugi-2027"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Komedie",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.dekleinekomedie.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/kasper-van-der-laan-c27j"
     },
     {
       "theater": {
@@ -6275,25 +6237,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/wim-helsen-zvks"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Landing",
-        "plaats": "Amstelveen",
-        "land": "NL",
-        "website": "https://schouwburgamstelveen.nl"
-      },
-      "artiesten": [
-        "Micha Wertheim"
-      ],
-      "titel": "Micha Wertheim Voor Iedereen",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/micha-wertheim/"
     },
     {
       "theater": {
@@ -10212,25 +10155,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Posttheater",
-        "plaats": "Arnhem",
-        "land": "NL",
-        "website": "https://www.posttheater.nl"
-      },
-      "artiesten": [
-        "Lebbis"
-      ],
-      "titel": "Satan is moe",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.posttheater.nl/activiteit/11858/2026-11-07/lebbis"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Theater de Beun",
         "plaats": "Heiloo",
         "land": "NL",
@@ -12036,25 +11960,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Theater Hof 88",
-        "plaats": "Almelo",
-        "land": "NL",
-        "website": "https://www.hof88.nl"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.hof88.nl/voorstellingen/de-eenzame-ziel-try-out-andre-manuel/07-11-2026-20-15"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "’t Verborgen Theater",
         "plaats": "Boekelo",
         "land": "NL",
@@ -13847,6 +13752,23 @@
         "medium": "de Volkskrant",
         "sterren": 5,
         "citaat": "De virtuoze komiek Merijn Scholten speelt in ‘Lemming’ op de toppen van zijn kunnen."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/striptease-van-de-dood-david-linszen": [
+      {
+        "medium": "Trouw",
+        "sterren": 5,
+        "citaat": "Hoge verwachtingen, die hij met zijn show triomfantelijk inlost. (...) Indrukwekkend, hoe zelfverzekerd Linszen in zijn avondvullende debuut komisch absurdisme weet te koppelen aan zijn realiteit."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Puntje-van-je-stoelcomedy met een zeldzame eigenheid: David Linszens debuut is echt heel goed. (…) Eens in de zoveel tijd meldt zich een comedytalent dat overrompelt met zeldzame eigenheid; het vermogen om als een eenzame gek met eenzamegekkengedachten de slappe lach in verdeelde golfjes door het publiek te laten rollen, en om 100 minuten lang nieuwsgierigheid te voeden naar het volgende fundamentele verzinsel."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut. In zijn cabaretdebuut schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal."
       }
     ]
   }

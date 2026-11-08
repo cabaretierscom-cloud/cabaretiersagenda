@@ -1,7 +1,7 @@
 {
   "bron": "plt",
   "naam": "PLT (Parkstad Limburg Theaters)",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "theater-heerlen",
@@ -58,6 +58,32 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
+        "Titus & Fien - Vooruit, nog een keertje dan! (4+)"
+      ],
+      "titel": "Van Hoorne Studios",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-27",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/titus-fien-vooruit-nog-een-keertje-dan-4-van-hoorne-studios/27-06-2027-13-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Titus & Fien - Vooruit, nog een keertje dan! (4+)"
+      ],
+      "titel": "Van Hoorne Studios",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-27",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/titus-fien-vooruit-nog-een-keertje-dan-4-van-hoorne-studios/27-06-2027-16-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
         "Jimmy Carr"
       ],
       "titel": "Laughs Funny",
@@ -93,6 +119,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/guido-weijers-oudejaarsconference/09-11-2026-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "KADO on TOUR"
+      ],
+      "titel": "Missie Make-Over!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-25",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/kado-de-club-van-sinterklaas/25-11-2026-14-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "KADO on TOUR"
+      ],
+      "titel": "Missie Make-Over!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-25",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/kado-de-club-van-sinterklaas/25-11-2026-16-30"
     },
     {
       "theater": "theater-heerlen",
@@ -227,6 +279,396 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/17-04-2027-19-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "19:12",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/17-04-2027-19-12"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "19:24",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/17-04-2027-19-24"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "19:36",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/17-04-2027-19-36"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "19:48",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/17-04-2027-19-48"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "20:12",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/17-04-2027-20-12"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "20:24",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/17-04-2027-20-24"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "20:36",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/17-04-2027-20-36"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "20:48",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/17-04-2027-20-48"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/17-04-2027-21-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-10-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "10:12",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-10-12"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "10:24",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-10-24"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "10:36",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-10-36"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "10:48",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-10-48"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "11:12",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-11-12"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "11:24",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-11-24"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "11:36",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-11-36"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "11:48",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-11-48"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "12:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-12-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-13-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "13:42",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-13-42"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "13:54",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-13-54"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "14:06",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-14-06"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "14:18",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-14-18"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "14:42",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-14-42"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "14:54",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-14-54"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "15:06",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-15-06"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "15:18",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-15-18"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het meisje dat de wereld schreef (8+)"
+      ],
+      "titel": "Cézanne Tegelberg & Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-meisje-dat-de-wereld-schreef-cézanne-tegelberg-company/18-04-2027-15-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
         "Ronald Goedemondt"
       ],
       "titel": "Mijn Lieve Achterdocht",
@@ -249,6 +691,123 @@
       "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.plt.nl/programma/ronald-goedemondt-mijn-lieve-achterdocht-reprise/21-01-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "OM en OM en OM (1,5+)"
+      ],
+      "titel": "Het Laagland",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/om-en-om-en-om-het-laagland/15-11-2026-10-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "OM en OM en OM (1,5+)"
+      ],
+      "titel": "Het Laagland",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/om-en-om-en-om-het-laagland/15-11-2026-11-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "OM en OM en OM (1,5+)"
+      ],
+      "titel": "Het Laagland (video-opnames)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-20",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/om-en-om-en-om-het-laagland/20-11-2026-11-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "OM en OM en OM (1,5+)"
+      ],
+      "titel": "Het Laagland",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-19",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/om-en-om-en-om-het-laagland/19-03-2027-11-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "OM en OM en OM (1,5+)"
+      ],
+      "titel": "Het Laagland",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/om-en-om-en-om-het-laagland/11-04-2027-11-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Stuntelman (4+)"
+      ],
+      "titel": "Het Laagland",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-08",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/stuntelman-het-laagland/08-11-2026-15-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Stuntelman (4+)"
+      ],
+      "titel": "Het Laagland",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/stuntelman-het-laagland/28-11-2026-15-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Peppa Pig Live (2+)"
+      ],
+      "titel": "Samen op Stap!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/peppa-pig-live-samen-op-stap-reprise/22-12-2026-13-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Peppa Pig Live (2+)"
+      ],
+      "titel": "Samen op Stap!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/peppa-pig-live-samen-op-stap-reprise/22-12-2026-16-00"
     },
     {
       "theater": "theater-heerlen",
@@ -279,6 +838,32 @@
     {
       "theater": "theater-sittard",
       "artiesten": [
+        "Neus! (2+)"
+      ],
+      "titel": "Krulmuziek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-08",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/neus-krulmuziek/08-11-2026-11-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Peter Pan – in het klein (5+)"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-08",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/peter-pan-in-het-klein-theater-terra/08-11-2026-15-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
         "Arnout van den Bossche"
       ],
       "titel": "Coach",
@@ -292,6 +877,19 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
+        "Familieconcert Rhythmix"
+      ],
+      "titel": "Philzuid & Percossa",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-12",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/rhythmix-philzuid/12-11-2026-19-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
         "Kim Karssen"
       ],
       "titel": "God is een Snotje",
@@ -301,6 +899,19 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.plt.nl/programma/kim-karssen-god-is-een-snotje-try-out/12-11-2026-20-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Hans & Grietje op de vlucht! (8+)"
+      ],
+      "titel": "Opera Rebels Collective & Opera2Day",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-13",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/hans-grietje-op-de-vlucht/13-11-2026-19-00"
     },
     {
       "theater": "theater-sittard",
@@ -325,6 +936,71 @@
       "bron": "https://www.plt.nl/programma/knock-out-comedy-crew-/12-05-2027-20-30"
     },
     {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Milky Way (8+)"
+      ],
+      "titel": "Studio Vavoom",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/milky-way-studio-vavoom/15-11-2026-15-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Een vis kan niet vallen"
+      ],
+      "titel": "Stichting Nyxland",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-17",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/een-vis-kan-niet-vallen-stichting-nyxland/17-11-2026-19-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Een vis kan niet vallen"
+      ],
+      "titel": "Stichting Nyxland",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-16",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/een-vis-kan-niet-vallen-stichting-nyxland-2/16-02-2027-19-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Fien & Teun - Het Geheim van Sinterklaas (2+)"
+      ],
+      "titel": "Van Hoorne Studios",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-18",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/fien-teun-het-geheim-van-sinterklaas-reprise/18-11-2026-14-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "De Kleine PEEP Show (14+)"
+      ],
+      "titel": "Het Laagland & Toneelgroep Maastricht",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-19",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-kleine-peep-show/19-11-2026-19-30"
+    },
+    {
       "theater": "theater-kerkrade",
       "artiesten": [
         "Roel en Jos Maalderink"
@@ -336,6 +1012,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/roel-en-jos-maalderink/19-11-2026-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Geheimen van Parkstad (8+)"
+      ],
+      "titel": "Opa, lees nog eens voor..",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/geheimen-van-parkstad/21-11-2026-19-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Geheimen van Parkstad (8+)"
+      ],
+      "titel": "Opa, lees nog eens voor..",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/geheimen-van-parkstad/22-11-2026-14-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Missie Maan (8+)"
+      ],
+      "titel": "Space Academy",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/space-academy-missie-maan/22-11-2026-13-30"
     },
     {
       "theater": "theater-heerlen",
@@ -390,6 +1105,32 @@
       "bron": "https://www.plt.nl/programma/jandino-de-grote-jubileumshow/16-02-2027-20-00"
     },
     {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Time Machine (12+)"
+      ],
+      "titel": "HNTjong & Theater Utrecht",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-01",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/time-machine-hntjong/01-12-2026-19-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Time Machine (12+)"
+      ],
+      "titel": "HNTjong & Theater Utrecht",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-02",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/time-machine-hntjong/02-12-2026-19-30"
+    },
+    {
       "theater": "theater-sittard",
       "artiesten": [],
       "titel": "Vrouwejaars 2026",
@@ -425,6 +1166,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/berit-companjen-zei-ik-dat-hardop/11-12-2026-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het Koffertje (4+)"
+      ],
+      "titel": "De Horde",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-koffertje-de-horde/13-12-2026-14-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het Koffertje (4+)"
+      ],
+      "titel": "De Horde",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-koffertje-de-horde/13-12-2026-16-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Contra (12+)"
+      ],
+      "titel": "Wabi Sabi Theater i.s.m. Het Houten Huis & HIIIT",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-15",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/contra-wabi-sabi-theater/15-12-2026-19-30"
     },
     {
       "theater": "theater-kerkrade",
@@ -505,6 +1285,32 @@
       "bron": "https://www.plt.nl/programma/kamagurka-op-zekere-dag/18-12-2026-20-30"
     },
     {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Wildebras"
+      ],
+      "titel": "Overleven In De Jungle (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/wildebras-overleven-in-de-jungle/19-12-2026-14-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het KADO als het ware (6+)"
+      ],
+      "titel": "Theater als het ware",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-kado-theater-als-het-ware/19-12-2026-19-00"
+    },
+    {
       "theater": "theater-heerlen",
       "artiesten": [
         "Comedy Festival Limburg"
@@ -516,6 +1322,119 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/comedy-festival-limburg-oudejaarsconference/19-12-2026-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Vilt (2+)"
+      ],
+      "titel": "Plan-d | Andreas Denk",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/vilt-plan-d-andreas-denk/20-12-2026-11-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "De Waanzinnige Boomhut van 78 verdiepingen (6+)"
+      ],
+      "titel": "Meneer Monster - met tolk NGT",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-waanzinnige-boomhut-van-78-verdiepingen-meneer-monster/21-12-2026-15-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "De musical zonder billen (4+)"
+      ],
+      "titel": "Jaski & Groenteman",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-musical-zonder-billen/23-12-2026-14-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [],
+      "titel": "Simsala Saartje en de oliebollen met poedersuiker (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-27",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/simsala-saartje-en-de-oliebollen-met-poedersuiker/27-12-2026-13-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [],
+      "titel": "Simsala Saartje en de oliebollen met poedersuiker (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-27",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/simsala-saartje-en-de-oliebollen-met-poedersuiker/27-12-2026-15-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "De Notenkraker (8+)"
+      ],
+      "titel": "Staatsopera van Stara Zagora (BG)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-28",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-notenkraker-staatsopera-van-stara-zagora/28-12-2026-19-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Fien & Teun - Het Wonderlijke Winterfeest (2+)"
+      ],
+      "titel": "Van Hoorne Studios",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-30",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.plt.nl/programma/fien-teun-het-wonderlijke-winterfeest-reprise/30-12-2026-13-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Samar en de bange koning (8+)"
+      ],
+      "titel": "George Tobal & De Krakeling",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-30",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/samar-en-de-bange-koning-george-tobal-de-krakeling/30-12-2026-15-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Pim & Pom – Kunst op pootjes! (2+)"
+      ],
+      "titel": "Pim & Pom Theaterproducties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/pim-pom-kunst-op-pootjes/03-01-2027-11-00"
     },
     {
       "theater": "theater-heerlen",
@@ -566,6 +1485,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/de-cabaret-club/09-01-2027-20-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "De dinozoekers - Triceratops (5+)"
+      ],
+      "titel": "Achref Adhadhi & Desiree van Haaren",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/dinozoekers-triceratops/10-01-2027-15-00"
     },
     {
       "theater": "theater-kerkrade",
@@ -698,6 +1630,19 @@
       "bron": "https://www.plt.nl/programma/alex-agnew-be-no-more-heroes/16-01-2027-20-00"
     },
     {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Pinokkio (7+)"
+      ],
+      "titel": "Holland Opera, New European Ensemble & Cat Smits Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/pinokkio-holland-opera/17-01-2027-15-00"
+    },
+    {
       "theater": "theater-sittard",
       "artiesten": [],
       "titel": "Het Sittards KampsVanBaar Buuttegala",
@@ -722,6 +1667,45 @@
       "bron": "https://www.plt.nl/programma/lisa-ostermann-de-baas/23-01-2027-20-00"
     },
     {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Katiuscia Principato leest voor uit Kom maar, kipjes! (2+)"
+      ],
+      "titel": "Nationale Voorleesdagen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/katiuscia-principato-leest-voor--nationale-voorleesdagen/24-01-2027-11-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Lady en de Vage Hond (4+)"
+      ],
+      "titel": "Het Kleine Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/lady-en-de-vage-hond-het-kleine-theater/24-01-2027-15-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Mata Hari Returns - De dansende spion (14+)"
+      ],
+      "titel": "Tafel van Vijf Muziektheater",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-27",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/mata-hari-returns/27-01-2027-19-30"
+    },
+    {
       "theater": "theater-heerlen",
       "artiesten": [
         "Anne & Bas"
@@ -733,6 +1717,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/anne-bas-de-natte-dromen-revue/28-01-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "De Proefkeuken en de WC van tijd (8+)"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd e.a. - met blindentolk",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-29",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-proefkeuken-en-de-wc-van-tijd/29-01-2027-19-00"
     },
     {
       "theater": "theater-sittard",
@@ -763,6 +1760,19 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
+        "BRRRothers (6+)"
+      ],
+      "titel": "Danstheater AYA",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/brrrothers-danstheater-aya/30-01-2027-19-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
         "De Moppenkoning"
       ],
       "titel": "Sven De Ridder, Fokke van der Meulen & een verrassende gast (BE)",
@@ -772,6 +1782,58 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/de-moppenkoning/30-01-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Tuimelaar (6-18 mnd)"
+      ],
+      "titel": "Frisse Oren",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/tuimelaar-frisse-oren/31-01-2027-10-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Tuimelaar (6-18 mnd)"
+      ],
+      "titel": "Frisse Oren",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/tuimelaar-frisse-oren/31-01-2027-11-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Quinn & Aaron"
+      ],
+      "titel": "Shorts (de theatershow) (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/quinn-aaron-shorts-de-theatershow/31-01-2027-14-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Swan Lake (6+)"
+      ],
+      "titel": "Introdans",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-03",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/swan-lake-introdans/03-02-2027-19-30"
     },
     {
       "theater": "theater-heerlen",
@@ -917,6 +1979,84 @@
       "bron": "https://www.plt.nl/programma/ricky-risolles-3/19-02-2027-20-00"
     },
     {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "OM en OM en OM (1,5+)"
+      ],
+      "titel": "Het Laagland- PLUUSJ",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/om-en-om-en-om-pluusj/21-02-2027-11-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Heb je mijn zusje gezien? (2+)"
+      ],
+      "titel": "Hoge Fronten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/heb-je-mijn-zusje-gezien/21-02-2027-13-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Heb je mijn zusje gezien? (2+)"
+      ],
+      "titel": "Hoge Fronten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/heb-je-mijn-zusje-gezien/21-02-2027-15-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Vrij Lief (10+)"
+      ],
+      "titel": "Opera Compact",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/vrij-lief/21-02-2027-14-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Vrij Lief (10+)"
+      ],
+      "titel": "Opera Compact",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/vrij-lief/21-02-2027-16-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Het Kleurenmonster (3+)"
+      ],
+      "titel": "Theater Stof",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-24",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/het-kleurenmonster/24-02-2027-15-00"
+    },
+    {
       "theater": "theater-heerlen",
       "artiesten": [
         "Saïd El Hassnaoui"
@@ -967,6 +2107,58 @@
       "bron": "https://www.plt.nl/programma/arie-silvester-breken-de-tent-af--/27-02-2027-20-00"
     },
     {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Woezel & Pip - Feest in de Tovertuin (2+)"
+      ],
+      "titel": "Van Hoorne Studios",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/woezel-pip-feest-in-de-tovertuin/28-02-2027-13-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Familiecarrousel (4+)"
+      ],
+      "titel": "Theater Sonnevanck",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/familiecarrousel-theater-sonnevanck/28-02-2027-13-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Familiecarrousel (6+)"
+      ],
+      "titel": "Theater Sonnevanck",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "14:40",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/familiecarrousel-theater-sonnevanck/28-02-2027-14-40"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Familiecarrousel (8+)"
+      ],
+      "titel": "Theater Sonnevanck",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "15:50",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/familiecarrousel-theater-sonnevanck/28-02-2027-15-50"
+    },
+    {
       "theater": "theater-heerlen",
       "artiesten": [
         "Thom Gerrits"
@@ -993,6 +2185,19 @@
       "bron": "https://www.plt.nl/programma/teun-van-den-elzen/05-03-2027-20-30"
     },
     {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Behoorlijk Boos (5+)"
+      ],
+      "titel": "Oortwolk",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-06",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/behoorlijk-boos-oortwolk/06-03-2027-19-00"
+    },
+    {
       "theater": "theater-kerkrade",
       "artiesten": [
         "Tis Hier Geen Hotel 3"
@@ -1017,6 +2222,84 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/boeing-boeing-pretpakhuis/06-03-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Balballoona (3+)"
+      ],
+      "titel": "Neverlike",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/balballoona-neverlike/07-03-2027-13-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Balballoona (3+)"
+      ],
+      "titel": "Neverlike",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "15:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/balballoona-neverlike/07-03-2027-15-15"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Bout! (6+)"
+      ],
+      "titel": "Plan-d | Andreas Denk (NL/DE)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/bout-plan-d-andreas-denk/07-03-2027-13-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Coppelia (AL)"
+      ],
+      "titel": "Filmhuis de Spiegel",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/coppelia-filmhuis-de-spiegel/07-03-2027-14-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Stiltestorm (8+)"
+      ],
+      "titel": "Philzuid, Het Laagland & SALLY Dansgezelschap Maastricht",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/stiltestorm-philzuid-laagland-sally/07-03-2027-15-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Meiden en Prinsen (8+)"
+      ],
+      "titel": "Het Filiaal Theatermakers - met tolk NGT",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-10",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.plt.nl/programma/meiden-en-prinsen-/10-03-2027-15-00"
     },
     {
       "theater": "theater-heerlen",
@@ -1086,6 +2369,45 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
+        "De Dinoshow (2+)"
+      ],
+      "titel": "A.vontura Silent Disco Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-dinoshow-/21-03-2027-11-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "De Bende van de Witte Roos (8+)"
+      ],
+      "titel": "Het Ministerie van Onverrichter zake & Garage TDI",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-bende-van-de-witte-roos-/21-03-2027-15-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Compagnie par Terre / Anne Nguyen (FR)"
+      ],
+      "titel": "Witch Hunting",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/compagnie-par-terre-anne-nguyen-witch-hunting/21-03-2027-16-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
         "Bob Koomen"
       ],
       "titel": "Peer",
@@ -1134,6 +2456,58 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.plt.nl/programma/viggo-waas-eddie-b.-wahr-kees-van-der-vooren-eigenlijk-try-out/02-04-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Gewoontedieren (7+)"
+      ],
+      "titel": "Percossa",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-03",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/gewoontedieren-/03-04-2027-15-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Houtje (3+)"
+      ],
+      "titel": "Het Ministerie van Onverrichter Zake",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/houtje-het-ministerie-van-onverrichter-zake/04-04-2027-11-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Bodemvriend (8+)"
+      ],
+      "titel": "Boven Water Muziektheater",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/bodemvriend-boven-water-muziektheater/04-04-2027-15-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Donnie wil de hoofdrol (4+)"
+      ],
+      "titel": "Donnie Stories",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/donnie-wil-de-hoofdrol-donnie-stories/04-04-2027-15-00"
     },
     {
       "theater": "theater-sittard",
@@ -1212,6 +2586,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/esther-van-der-voort-mama-is-boos/10-04-2027-20-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Maya Show: Samen Picknicken (1+)"
+      ],
+      "titel": "Studio 100",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/maya-show-studio-100/11-04-2027-13-30"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Maya Show: Samen Picknicken (1+)"
+      ],
+      "titel": "Studio 100",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/maya-show-studio-100/11-04-2027-16-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Wijsneuzen"
+      ],
+      "titel": "Gestrand op Mars (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/wijsneuzen-gestrand-op-mars-8/11-04-2027-15-00"
     },
     {
       "theater": "theater-sittard",
@@ -1320,6 +2733,19 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
+        "Danslab 3 (12+)"
+      ],
+      "titel": "SALLY Dansgezelschap Maastricht i.s.m. Via Zuid",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-22",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/danslab-3-/22-04-2027-19-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
         "Cyrille Niël"
       ],
       "titel": "Luchtig Bekeeke",
@@ -1396,6 +2822,58 @@
       "bron": "https://www.plt.nl/programma/yannick-noben-geef-acht/24-04-2027-20-00"
     },
     {
+      "theater": "theater-kerkrade",
+      "artiesten": [
+        "Floortje in d'r deretuin (1,5+)"
+      ],
+      "titel": "Goud Verteltheater",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/floortje-in-dr-deretuin-/25-04-2027-11-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Wauw (2+)"
+      ],
+      "titel": "Bonte Hond",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/wauw-bonte-hond/25-04-2027-11-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Mus & Kapitein Kwaadbaard en De 5 Slangen (8+)"
+      ],
+      "titel": "Sterke Verhalen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/mus-kapitein-kwaadbaard-en-de-5-slangen/25-04-2027-13-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Mus & Kapitein Kwaadbaard en De 5 Slangen (8+)"
+      ],
+      "titel": "Sterke Verhalen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/mus-kapitein-kwaadbaard-en-de-5-slangen/25-04-2027-16-00"
+    },
+    {
       "theater": "theater-heerlen",
       "artiesten": [
         "De Broers van Arkel"
@@ -1446,6 +2924,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/roué-verveer-vanzelfsprekend/01-05-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Stampvoeten op tafel (2+)"
+      ],
+      "titel": "Knars",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-09",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/stampvoeten-op-tafel-knars/09-05-2027-11-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "GRRR… ik ben een boze dino! (4+)"
+      ],
+      "titel": "Lil Ones",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-09",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/grrr-ik-ben-een-boze-dino-lil-ones/09-05-2027-13-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "GRRR… ik ben een boze dino! (4+)"
+      ],
+      "titel": "Lil Ones",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-09",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/grrr-ik-ben-een-boze-dino-lil-ones/09-05-2027-15-30"
     },
     {
       "theater": "theater-sittard",
@@ -1500,6 +3017,41 @@
       "bron": "https://www.plt.nl/programma/stefan-de-kogel-sloopkogel/21-05-2027-20-30"
     },
     {
+      "theater": "theater-kerkrade",
+      "artiesten": [],
+      "titel": "Juf Roos gaat op vakantie (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/juf-roos-gaat-op-vakantie/23-05-2027-14-00"
+    },
+    {
+      "theater": "theater-kerkrade",
+      "artiesten": [],
+      "titel": "Juf Roos gaat op vakantie (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/juf-roos-gaat-op-vakantie/23-05-2027-16-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Weg Ermee (5-12)"
+      ],
+      "titel": "Wirwar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/weg-ermee-wirwar/23-05-2027-15-00"
+    },
+    {
       "theater": "theater-heerlen",
       "artiesten": [
         "Cameretten"
@@ -1552,6 +3104,19 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
+        "Halve Verhalen (6+)"
+      ],
+      "titel": "de Stilte & TOEAC",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-30",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/halve-verhalen/30-05-2027-15-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
         "Klaas van der Eerden"
       ],
       "titel": "Imperfect",
@@ -1576,6 +3141,58 @@
       "bron": "https://www.plt.nl/programma/deng-boy-double-trouble/03-06-2027-20-30"
     },
     {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "De Gruffalo (3+)"
+      ],
+      "titel": "Meneer Monster",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-06",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-gruffalo-meneer-monster/06-06-2027-13-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Over een kleine mol... (2+)"
+      ],
+      "titel": "Meneer Monster",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-06",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/over-een-kleine-mol/06-06-2027-15-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Over een kleine mol... (2+)"
+      ],
+      "titel": "Meneer Monster",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-06",
+      "tijd": "16:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/over-een-kleine-mol/06-06-2027-16-15"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "JoepTube (8+)"
+      ],
+      "titel": "de zAAk A",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-06",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/joeptube-de-zaak-a/06-06-2027-15-00"
+    },
+    {
       "theater": "theater-heerlen",
       "artiesten": [
         "Andries Tunru"
@@ -1587,6 +3204,80 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/andries-tunru-ravot/10-06-2027-20-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Jong Laagland"
+      ],
+      "titel": "Hoogwaterdag (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-12",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jong-laagland-hoogwaterdag-/12-06-2027-19-00"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [
+        "Jong Laagland"
+      ],
+      "titel": "Hoogwaterdag (12+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jong-laagland-hoogwaterdag--2/12-06-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Kiekeboe! (1+)"
+      ],
+      "titel": "Theater Stof",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/kiekeboe-theater-stof/13-06-2027-10-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Kiekeboe! (1+)"
+      ],
+      "titel": "Theater Stof",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "12:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/kiekeboe-theater-stof/13-06-2027-12-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [],
+      "titel": "Efteling vertelt… Baron 1898 (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/efteling-vertelt-baron-1898/13-06-2027-13-30"
+    },
+    {
+      "theater": "theater-sittard",
+      "artiesten": [],
+      "titel": "Efteling vertelt… Baron 1898 (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/efteling-vertelt-baron-1898/13-06-2027-16-00"
     },
     {
       "theater": "theater-heerlen",
@@ -1613,6 +3304,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/baas-adriani-de-leukste-cabaretvoorstelling-2027/17-06-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Stilte (1+)"
+      ],
+      "titel": "Club Wauw",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-27",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/stilte-club-wauw/27-06-2027-10-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "Stilte (1+)"
+      ],
+      "titel": "Club Wauw",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-27",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/stilte-club-wauw/27-06-2027-11-30"
     },
     {
       "theater": "theater-sittard",
@@ -1652,6 +3369,84 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/jeroen-leenders-heiden/13-05-2027-20-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "K3 Show: Superhelden (3+)"
+      ],
+      "titel": "Studio 100",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-19",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/k3-show-superhelden/19-06-2027-10-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "K3 Show: Superhelden (3+)"
+      ],
+      "titel": "Studio 100",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-19",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/k3-show-superhelden/19-06-2027-13-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "K3 Show: Superhelden (3+)"
+      ],
+      "titel": "Studio 100",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-19",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/k3-show-superhelden/19-06-2027-16-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "K3 Show: Superhelden (3+)"
+      ],
+      "titel": "Studio 100",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/k3-show-superhelden/20-06-2027-10-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "K3 Show: Superhelden (3+)"
+      ],
+      "titel": "Studio 100",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/k3-show-superhelden/20-06-2027-13-30"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [
+        "K3 Show: Superhelden (3+)"
+      ],
+      "titel": "Studio 100",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/k3-show-superhelden/20-06-2027-16-30"
     },
     {
       "theater": "theater-heerlen",
@@ -1749,6 +3544,20 @@
         "medium": "Trouw",
         "sterren": null,
         "citaat": "4 van 5 sterren"
+      }
+    ],
+    "https://www.plt.nl/programma/stilte-club-wauw/27-06-2027-10-00": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "van 5 sterren Joost Ramaer"
+      }
+    ],
+    "https://www.plt.nl/programma/stilte-club-wauw/27-06-2027-11-30": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "van 5 sterren Joost Ramaer"
       }
     ]
   }

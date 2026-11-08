@@ -1,7 +1,7 @@
 {
   "bron": "de-veste",
   "naam": "Theater De Veste",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "theater-de-veste",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-de-veste",
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterdeveste.nl/programma/kintsugi-d2kg"
-    },
     {
       "theater": "theater-de-veste",
       "artiesten": [
@@ -81,6 +68,19 @@
     {
       "theater": "theater-de-veste",
       "artiesten": [
+        "Theater Artemis, Het Zuidelijk Toneel & hetpaleis"
+      ],
+      "titel": "Nu is het nog rustig (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/nu-is-het-nog-rustig-8-lbsm"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
         "Alina Sharipova (MC), Diederik Zuurmond, Stephen Bell, Finn Visser en Vincent Geers."
       ],
       "titel": "De Comedy Club",
@@ -90,6 +90,32 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterdeveste.nl/programma/de-comedy-club-qh9g"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Apennoten"
+      ],
+      "titel": "Een kist vol Sintliedjes (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/een-kist-vol-sintliedjes-3-fgd4"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Apennoten"
+      ],
+      "titel": "Een kist vol Sintliedjes (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/een-kist-vol-sintliedjes-3-fgd4"
     },
     {
       "theater": "theater-de-veste",
@@ -146,6 +172,32 @@
     {
       "theater": "theater-de-veste",
       "artiesten": [
+        "Theater Stof"
+      ],
+      "titel": "De kleine ijsbeer (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "10:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-kleine-ijsbeer-2-jx77"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Theater Stof"
+      ],
+      "titel": "De kleine ijsbeer (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "11:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-kleine-ijsbeer-2-jx77"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
         "Rob Urgert & Joep van Deudekom"
       ],
       "titel": "De Grote Oudejaars Kwis 2026",
@@ -155,6 +207,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterdeveste.nl/programma/de-grote-oudejaars-kwis-2026-13q7"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Maas theater en dans & Acteursgroep WUNDERBAUM"
+      ],
+      "titel": "EN NOU GAAN WE EVEN HELEMAAL UIT ONZE PLAAT (een topshow) (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/en-nou-gaan-we-even-helemaal-uit-onze-plaat-een-topshow-6-nld1"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Theater Terra"
+      ],
+      "titel": "Pippi en de piraten (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-27",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/pippi-en-de-piraten-6-fg97"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "André Kuipers Space Academy"
+      ],
+      "titel": "Missie Maan: Astronauten gezocht (familie 8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-29",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/missie-maan-astronauten-gezocht-familie-8-rptl"
     },
     {
       "theater": "theater-de-veste",
@@ -211,6 +302,32 @@
     {
       "theater": "theater-de-veste",
       "artiesten": [
+        "Mime Wave"
+      ],
+      "titel": "Mijn kleuren (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/mijn-kleuren-2-qh5h"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Mime Wave"
+      ],
+      "titel": "Mijn kleuren (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/mijn-kleuren-2-qh5h"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
         "Diverse comedians"
       ],
       "titel": "De Comedy Club",
@@ -220,6 +337,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterdeveste.nl/programma/de-comedy-club-4ngt"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Buurman & Buurman"
+      ],
+      "titel": "Buurman & Buurman bouwen een feestje (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/buurman-buurman-bouwen-een-feestje-4-d2x4"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Buurman & Buurman"
+      ],
+      "titel": "Buurman & Buurman bouwen een feestje (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/buurman-buurman-bouwen-een-feestje-4-d2x4"
     },
     {
       "theater": "theater-de-veste",
@@ -315,6 +458,32 @@
     {
       "theater": "theater-de-veste",
       "artiesten": [
+        "Het Laagland"
+      ],
+      "titel": "OM en OM en OM (1,5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "10:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/om-en-om-en-om-1-5-fg58"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Het Laagland"
+      ],
+      "titel": "OM en OM en OM (1,5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "11:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/om-en-om-en-om-1-5-fg58"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
         "Wim Helsen"
       ],
       "titel": "Welkom Ongemak",
@@ -324,6 +493,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterdeveste.nl/programma/welkom-ongemak-rpcg"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Het Nationale Ballet | Junior Company"
+      ],
+      "titel": "Ballet Vibes",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-20",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/ballet-vibes-lbj6"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Theater Terra"
+      ],
+      "titel": "Kikker is Kikker (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/kikker-is-kikker-3-13t3"
     },
     {
       "theater": "theater-de-veste",
@@ -367,6 +562,32 @@
     {
       "theater": "theater-de-veste",
       "artiesten": [
+        "Mees Kees"
+      ],
+      "titel": "De Husselrace (7+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-27",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-husselrace-7-4nhc"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Mees Kees"
+      ],
+      "titel": "De Husselrace (7+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-27",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-husselrace-7-4nhc"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
         "Martijn Koning"
       ],
       "titel": "Overprikkeld",
@@ -376,6 +597,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterdeveste.nl/programma/overprikkeld-bsxp"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Simone de Jong Company"
+      ],
+      "titel": "Kluizelaar (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/kluizelaar-2-c4q5"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Simone de Jong Company"
+      ],
+      "titel": "Kluizelaar (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/kluizelaar-2-c4q5"
     },
     {
       "theater": "theater-de-veste",
@@ -430,6 +677,19 @@
     {
       "theater": "theater-de-veste",
       "artiesten": [
+        "Het Filiaal Theatermakers"
+      ],
+      "titel": "Meiden & Prinsen (7+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/meiden-prinsen-7-fgns"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
         "Micky Overman"
       ],
       "titel": "Don't Threaten Me With A Good Time",
@@ -452,6 +712,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterdeveste.nl/programma/satan-is-moe-qhf4"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Theater Sonnevanck & DIEHELEDING"
+      ],
+      "titel": "Prins Panter (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-03",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/prins-panter-8-4nz1"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Achref Adhadhi"
+      ],
+      "titel": "Wonder (2,5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/wonder-2-5-fgnw"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Achref Adhadhi"
+      ],
+      "titel": "Wonder (2,5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/wonder-2-5-fgnw"
     },
     {
       "theater": "theater-de-veste",
@@ -495,6 +794,19 @@
     {
       "theater": "theater-de-veste",
       "artiesten": [
+        "Jaski & Groenteman"
+      ],
+      "titel": "De Musical Zonder Billen (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-musical-zonder-billen-3-5y5r"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
         "Klaas van der Eerden"
       ],
       "titel": "Imperfect",
@@ -504,6 +816,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterdeveste.nl/programma/imperfect-nln8"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Meneer Monster"
+      ],
+      "titel": "De waanzinnige boomhut van 78 verdiepingen (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-02",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-waanzinnige-boomhut-van-78-verdiepingen-6-rprz"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Het Ministerie van Onverrichter Zake"
+      ],
+      "titel": "Houtje (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-09",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/houtje-3-lbld"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Het Ministerie van Onverrichter Zake"
+      ],
+      "titel": "Houtje (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-09",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/houtje-3-lbld"
     },
     {
       "theater": "theater-de-veste",
@@ -586,6 +937,45 @@
     {
       "theater": "theater-de-veste",
       "artiesten": [
+        "Klein Amsterdam Producties"
+      ],
+      "titel": "nijntje op de fiets (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-06",
+      "tijd": "10:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/nijntje-op-de-fiets-2-ngq7"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Klein Amsterdam Producties"
+      ],
+      "titel": "nijntje op de fiets (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-06",
+      "tijd": "11:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/nijntje-op-de-fiets-2-ngq7"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "Plankton"
+      ],
+      "titel": "De mens, het duurde maar heel even (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-06",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-mens-het-duurde-maar-heel-even-8-5lf7"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
         "Jandino"
       ],
       "titel": "DE GROTE JUBILEUMSHOW – Jandino 20 jaar",
@@ -621,6 +1011,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterdeveste.nl/programma/lieve-marianne-5lfy"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "BazarMedia"
+      ],
+      "titel": "De Nog Grotere Slijmmusical (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-nog-grotere-slijmmusical-6-qzcz"
+    },
+    {
+      "theater": "theater-de-veste",
+      "artiesten": [
+        "BazarMedia"
+      ],
+      "titel": "De Nog Grotere Slijmmusical (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/de-nog-grotere-slijmmusical-6-qzcz"
     },
     {
       "theater": "theater-de-veste",
@@ -704,6 +1120,23 @@
         "citaat": "Sara Kroos is terug op het cabaretpodium en beter dan ooit"
       }
     ],
+    "https://www.theaterdeveste.nl/programma/nu-is-het-nog-rustig-8-lbsm": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": 4,
+        "citaat": "Jetse Batelaan laat zien dat kinderlogica het scherpste theaterwapen van allemaal is."
+      },
+      {
+        "medium": "De Standaard",
+        "sterren": null,
+        "citaat": "Jetse Batelaan frustreert weer met plezier"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Voor wie wél de tijd durft te nemen voor woekerend ongemak en pijnlijke stiltes, is er nog volop hoop."
+      }
+    ],
     "https://www.theaterdeveste.nl/programma/harrekidee-68ky": [
       {
         "medium": "Het Parool",
@@ -726,6 +1159,13 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Briljante auto-psychologische thriller als cabaret."
+      }
+    ],
+    "https://www.theaterdeveste.nl/programma/mijn-kleuren-2-qh5h": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Voor alle kinderoogjes in de zaal moet het haast magisch zijn hoe de animatiewereld en de echte wereld met elkaar versmelten."
       }
     ],
     "https://www.theaterdeveste.nl/programma/welkom-ongemak-rpcg": [
@@ -762,6 +1202,13 @@
         "medium": "Trouw",
         "sterren": null,
         "citaat": "Koning is een meester in het vinden van humor in alledaagse situaties."
+      }
+    ],
+    "https://www.theaterdeveste.nl/programma/kluizelaar-2-c4q5": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een minimum aan woorden, een maximum aan expressie. De prachtige soundscape en subtiele belichting maken ‘Kluizelaar’ tot een heerlijk theatraal kleinood voor alle leeftijden."
       }
     ],
     "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17": [
@@ -815,6 +1262,13 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Van der Eerden wil vermaken en dat doet hij. De amusementswaarde van ‘Blijven drijven’ ligt hoog!"
+      }
+    ],
+    "https://www.theaterdeveste.nl/programma/houtje-3-lbld": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Zo tonen ze zich meesters in het blootleggen én aanwakkeren van de creativiteit, speelsheid en verbeeldingskracht van de allerjongsten. Niets dan abstractie, een hele hoop fantasie, en een klein Houtje hebben ze ervoor nodig."
       }
     ],
     "https://www.theaterdeveste.nl/programma/ravot-fhtj": [

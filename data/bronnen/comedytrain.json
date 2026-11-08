@@ -1,7 +1,7 @@
 {
   "bron": "comedytrain",
   "naam": "Comedytrain",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "comedytrain-nieuwe-toomler-amsterdam",
@@ -13,6 +13,20 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Tijmen van Barneveld",
+        "Stephen Bell"
+      ],
+      "titel": "Dubbel",
+      "genre": "stand-up",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/dubbel-tijmen-van-barneveld-en-stephen-bell-2027-02-11/"
+    },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [
@@ -164,17 +178,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-12-11/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Spoor Bijster",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/spoor-bijster-2026-11-07/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
@@ -1123,28 +1126,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-11-08/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-11-07-2/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-11-07/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",

@@ -1,7 +1,7 @@
 {
   "bron": "leiden",
   "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "leidse-schouwburg",
@@ -105,6 +105,97 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-comedy-en-boom-chicagos-comedy-explosion-3/"
+    },
+    {
+      "theater": "stadsgehoorzaal-leiden",
+      "artiesten": [
+        "Caat Peutercafé"
+      ],
+      "titel": "De Wondertuin | Theaterstof",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-16",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-peutercafe-de-wondertuin-theaterstof/"
+    },
+    {
+      "theater": "stadsgehoorzaal-leiden",
+      "artiesten": [
+        "Caat Peutercafé"
+      ],
+      "titel": "De dinoshow | A.vontura Silent Disco Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-12",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-peutercafe-de-dinoshow-a-vontura-silent-disco-theater/"
+    },
+    {
+      "theater": "stadsgehoorzaal-leiden",
+      "artiesten": [
+        "Caat Peutercafé"
+      ],
+      "titel": "Glijbaan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-peutercafe-glijbaan/"
+    },
+    {
+      "theater": "stadsgehoorzaal-leiden",
+      "artiesten": [
+        "Caat Peutercafé"
+      ],
+      "titel": "Kluizelaar | Simone de Jong Company",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-13",
+      "tijd": "10:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-peutercafe-kluizelaar-simone-de-jong-company/"
+    },
+    {
+      "theater": "stadsgehoorzaal-leiden",
+      "artiesten": [
+        "Caat Peutercafé"
+      ],
+      "titel": "Gewoon zoals je bent | Klein Amsterdam Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-29",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-peutercafe-gewoon-zoals-je-bent-klein-amsterdam-producties/"
+    },
+    {
+      "theater": "stadsgehoorzaal-leiden",
+      "artiesten": [
+        "Caat Peutercafé"
+      ],
+      "titel": "Ro(c)k | Mariska Simon",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-21",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-peutercafe-rock-mariska-simon/"
+    },
+    {
+      "theater": "stadsgehoorzaal-leiden",
+      "artiesten": [
+        "Caat Peutercafé"
+      ],
+      "titel": "Een warm winteravontuur met Pim & Pom",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-11",
+      "tijd": "10:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-peutercafe-een-warm-winteravontuur-met-pim-pom/"
     },
     {
       "theater": "stadsgehoorzaal-leiden",
@@ -321,6 +412,19 @@
     {
       "theater": "leidse-schouwburg",
       "artiesten": [
+        "Supermens gezocht (6+)"
+      ],
+      "titel": "Theater Sonnevanck",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/supermens-gezocht-6-theater-sonnevanck/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
         "Joep van Deudekom & Rob Urgert"
       ],
       "titel": "De Grote Oudejaars Kwis 2026",
@@ -438,19 +542,6 @@
     {
       "theater": "leidse-schouwburg",
       "artiesten": [
-        "Jandino"
-      ],
-      "titel": "De Grote Jubileumshow",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jandino-de-grote-jubileumshow/"
-    },
-    {
-      "theater": "leidse-schouwburg",
-      "artiesten": [
         "Kor Hoebe"
       ],
       "titel": "Korrelatie",
@@ -477,6 +568,32 @@
     {
       "theater": "leidse-schouwburg",
       "artiesten": [
+        "De musical zonder billen (4+)"
+      ],
+      "titel": "Peuter Kleuter Pret",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-02",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/de-musical-zonder-billen-4-peuter-kleuter-pret-2/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
+        "De musical zonder billen (4+)"
+      ],
+      "titel": "Peuter Kleuter Pret",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-02",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/de-musical-zonder-billen-4-peuter-kleuter-pret-2/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
         "Janneke de Bijl"
       ],
       "titel": "Pluk eventueel de dag",
@@ -499,6 +616,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/david-van-rosmalen-als-ik-jou-was/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
+        "Alice in Wonderland (8+)"
+      ],
+      "titel": "Toneelmakerij & DOX",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/alice-in-wonderland-8-toneelmakerij-dox/"
     },
     {
       "theater": "leidse-schouwburg",
@@ -566,6 +696,19 @@
     {
       "theater": "leidse-schouwburg",
       "artiesten": [
+        "Alleen maar lieve jongens (8+)"
+      ],
+      "titel": "HNTjong",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-22",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/alleen-maar-lieve-jongens-8-hnt-jong/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
         "Evi Hanssen"
       ],
       "titel": "Bloedheet & tranen",
@@ -603,6 +746,32 @@
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/thomas-van-luyn-super-normaal/"
     },
     {
+      "theater": "stadsgehoorzaal-leiden",
+      "artiesten": [
+        "Dikkie Dik & Dirk Scheele (2+)"
+      ],
+      "titel": "Peuter Kleuter Pret",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-23",
+      "tijd": "14:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/dikkie-dik-dirk-scheele-2-peuter-kleuter-pret-2/"
+    },
+    {
+      "theater": "stadsgehoorzaal-leiden",
+      "artiesten": [
+        "Dikkie Dik & Dirk Scheele (2+)"
+      ],
+      "titel": "Peuter Kleuter Pret",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-23",
+      "tijd": "16:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/dikkie-dik-dirk-scheele-2-peuter-kleuter-pret-2/"
+    },
+    {
       "theater": "leidse-schouwburg",
       "artiesten": [
         "Marjolijn van Kooten"
@@ -627,6 +796,30 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/marja-van-katendrecht-heel-holland-hoopt/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
+        "Veel te eng voor kleuters (6+)"
+      ],
+      "titel": "Artemis en Theater Basel",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/veel-te-eng-voor-kleuters-6-artemis-en-theater-basel/"
+    },
+    {
+      "theater": "stadsgehoorzaal-leiden",
+      "artiesten": [],
+      "titel": "Space Academy Live met André Kuipers",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/space-academy-live-met-andre-kuipers/"
     },
     {
       "theater": "leidse-schouwburg",
@@ -696,6 +889,32 @@
     {
       "theater": "leidse-schouwburg",
       "artiesten": [
+        "Kikker is Kikker (3+)"
+      ],
+      "titel": "Theater Terra | Peuter Kleuter Pret",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/kikker-is-kikker-3-theater-terra-peuter-kleuter-pret/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
+        "All before death is life (8+)"
+      ],
+      "titel": "Theater Artemis & Benjamin Verdonck",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/all-before-death-is-life-8-artemis-benjamin-verdonck/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
         "Merijn Scholten"
       ],
       "titel": "Lemming",
@@ -748,6 +967,32 @@
     {
       "theater": "leidse-schouwburg",
       "artiesten": [
+        "Buurman & Buurman"
+      ],
+      "titel": "Bouwen een feest (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-29",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/buurman-buurman-bouwen-een-feest-4-bouwen-een-feest/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
+        "Buurman & Buurman"
+      ],
+      "titel": "Bouwen een feest (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-29",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/buurman-buurman-bouwen-een-feest-4-bouwen-een-feest/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
         "Annick Boer"
       ],
       "titel": "Vol Erin!",
@@ -757,6 +1002,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/beleef-t-overdag-annick-boer-vol-erin/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
+        "Samar en de bange koning (8+)"
+      ],
+      "titel": "George Tobal & De Krakeling",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/samar-en-de-bange-koning-8-george-tobal-de-krakeling/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
+        "Oliver en het avontuur van de straatkinderen (8+)"
+      ],
+      "titel": "Nationaal Jeugd Musical Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-02",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/oliver-en-het-avontuur-van-de-straatkinderen-8-nationaal-jeugd-musical-theater/"
     },
     {
       "theater": "leidse-schouwburg",
@@ -917,6 +1188,19 @@
     {
       "theater": "leidse-schouwburg",
       "artiesten": [
+        "EN NOU GAAN WE EVEN HELEMAAL UIT ONZE PLAAT (een topshow) 6+"
+      ],
+      "titel": "Maas theater en dans, Wunderbaum",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/huisje-boompje-beestje-6-maas-theater-en-dans/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
         "Karin Bloemen"
       ],
       "titel": "Renaissance 2.0",
@@ -991,6 +1275,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/lisa-loeb-fopfeminisme/"
+    },
+    {
+      "theater": "stadsgehoorzaal-leiden",
+      "artiesten": [
+        "Hans & Grietje op de vlucht! (8+)"
+      ],
+      "titel": "Toonkunstorkest Leiden, De Leidse Koorschool e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/toonkunstorkest-leiden-opera-rebels-collective-i-s-m-opera2day-en-studio-youkali-en-de-leidse-koorschool-hans-grietje-op-de-vlucht/"
+    },
+    {
+      "theater": "stadsgehoorzaal-leiden",
+      "artiesten": [
+        "StuiterStokken (4+)"
+      ],
+      "titel": "Kleutersinfonietta | Peuter Kleuter Pret",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "11:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/kleutersinfonietta-stuiterstokken-4/"
+    },
+    {
+      "theater": "leidse-schouwburg",
+      "artiesten": [
+        "Atman! (8+)"
+      ],
+      "titel": "De Nationale Opera, Opera Zuid en Nederlandse Reisopera",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/de-nationale-opera-opera-zuid-en-nederlandse-reisopera-atman-8/"
     },
     {
       "theater": "leidse-schouwburg",
@@ -1090,6 +1413,18 @@
         "citaat": "Smulders heeft een vertelstijl waarin hij groot geacteerde comedy abrupt laat overgaan in verstilde, persoonlijke ontboezemingen"
       }
     ],
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/supermens-gezocht-6-theater-sonnevanck/": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Het stellen van grenzen in een wereld waarin iedereen met je aan de haal gaat en groepsdruk welig tiert"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Helder jeugdtheater over ingewikkelde thema's als altruïsme en eigenbelang"
+      }
+    ],
     "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/wim-helsen-welkom-ongemak-reprise/": [
       {
         "medium": "NRC",
@@ -1168,6 +1503,13 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Jawad Es Soufi laat zijn divers publiek samen lachen om alle culturele verschillen"
+      }
+    ],
+    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/all-before-death-is-life-8-artemis-benjamin-verdonck/": [
+      {
+        "medium": "“Hier schittert hij als droogkomisch acteur.”",
+        "sterren": null,
+        "citaat": "Hier schittert hij als droogkomisch acteur."
       }
     ],
     "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/merijn-scholten-lemming-reprise/": [

@@ -1,7 +1,7 @@
 {
   "bron": "orpheus",
   "naam": "Orpheus",
-  "opgehaald": "2026-11-06",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "orpheus",
@@ -16,28 +16,15 @@
     {
       "theater": "orpheus",
       "artiesten": [
-        "Yentl en de Boer"
+        "SUPERMENS gezocht"
       ],
-      "titel": "Rekhalzen",
-      "genre": "comedy",
-      "datum": "2026-11-06",
-      "tijd": "20:00",
+      "titel": "Theater Sonnevanck",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-08",
+      "tijd": "15:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/yentl-en-de-boer-1gxl"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Eran & Co"
-      ],
-      "titel": "AI & Ik",
-      "genre": "comedy",
-      "datum": "2026-11-07",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/eran-co-hxcb"
+      "bron": "https://www.orpheus.nl/voorstellingen/supermens-gezocht-4br5"
     },
     {
       "theater": "orpheus",
@@ -159,6 +146,19 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "Cadeautje!"
+      ],
+      "titel": "Peuterpret",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-18",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/cadeautje-58mc"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Girls on Fire 3"
       ],
       "titel": "De ultieme ladiesnight vol humor, herkenning en muziek!",
@@ -172,6 +172,32 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "Fien & Teun"
+      ],
+      "titel": "Het geheim van Sinterklaas",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/fien-teun-tyvv"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Fien & Teun"
+      ],
+      "titel": "Het geheim van Sinterklaas",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/fien-teun-tyvv"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Roel en Jos Maalderink"
       ],
       "titel": "Verbroedering",
@@ -181,6 +207,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.orpheus.nl/voorstellingen/roel-en-jos-maalderink-mqyh"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Het huis dat stopte met staan"
+      ],
+      "titel": "De Horde",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/het-huis-dat-stopte-met-staan-7zbq"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Kado"
+      ],
+      "titel": "Theatershow",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-02",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/kado-58g6"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Kado"
+      ],
+      "titel": "Theatershow",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-02",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/kado-58g6"
     },
     {
       "theater": "orpheus",
@@ -263,6 +328,19 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "Lejo Kerstshow"
+      ],
+      "titel": "Peuterpret",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-16",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/lejo-kerstshow-58ms"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Claudia de Breij"
       ],
       "titel": "Oudejaarsconference 2026",
@@ -298,6 +376,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.orpheus.nl/voorstellingen/we-zijn-toch-familie-xtj3"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Jul & Julia - chaos in het pretpark!"
+      ],
+      "titel": "Kinderpretpark Julianatoren",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/jul-julia-chaos-in-het-pretpark-4b7n"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Jul & Julia - chaos in het pretpark!"
+      ],
+      "titel": "Kinderpretpark Julianatoren",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-21",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/jul-julia-chaos-in-het-pretpark-4b7n"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Mus en Kapitein Kwaadbaard"
+      ],
+      "titel": "en De 5 Slangen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-02",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/mus-en-kapitein-kwaadbaard-qjbz"
     },
     {
       "theater": "orpheus",
@@ -367,6 +484,19 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "De Kleine IJsbeer"
+      ],
+      "titel": "Peuterpret",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-20",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/de-kleine-ijsbeer-f26p"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Tineke Schouten"
       ],
       "titel": "Femme Vitaal",
@@ -389,6 +519,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.orpheus.nl/voorstellingen/janneke-de-bijl-58wf"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "En Nou Gaan We Even Helemaal Uit Onze Plaat"
+      ],
+      "titel": "Maas Theater en Dans",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/en-nou-gaan-we-even-helemaal-uit-onze-plaat-nskt"
     },
     {
       "theater": "orpheus",
@@ -419,6 +562,32 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "Woezel & Pip"
+      ],
+      "titel": "Feest in de Tovertuin",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/woezel-pip-58wr"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Woezel & Pip"
+      ],
+      "titel": "Feest in de Tovertuin",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/woezel-pip-58wr"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Andries Tunru"
       ],
       "titel": "Ravot",
@@ -445,13 +614,52 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "De Proefkeuken en de WC van tijd"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-06",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/de-proefkeuken-en-de-wc-van-tijd-97p2"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "De musical zonder billen"
+      ],
+      "titel": "Jaski & Groenteman",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/de-musical-zonder-billen-rhdm"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "ssstOER?!"
+      ],
+      "titel": "Peuterpret",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-17",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/ssstoer-drk3"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Esther van der Voort"
       ],
       "titel": "Mama is Boos",
       "genre": "comedy",
       "datum": "2027-02-19",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.orpheus.nl/voorstellingen/esther-van-der-voort-b14z"
     },
@@ -523,6 +731,19 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "Juf Braaksel – De Musical"
+      ],
+      "titel": "Een swingend en spannend avontuur voor het hele gezin",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/juf-braaksel-de-musical-s3n8"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Annick Boer"
       ],
       "titel": "Vol Erin",
@@ -549,6 +770,19 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "Grondtonen"
+      ],
+      "titel": "Het Houten Huis",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/grondtonen-58kq"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "André Manuel"
       ],
       "titel": "De Eenzame Ziel",
@@ -571,6 +805,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.orpheus.nl/voorstellingen/van-vleuten-en-van-muiswinkel-rh9y"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Rhythm & Flow"
+      ],
+      "titel": "Ish",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/rhythm-flow-1gdz"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "De Nog Grotere Slijmmusical"
+      ],
+      "titel": "Slijm is terug!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/de-nog-grotere-slijmmusical-qjxg"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Van mij!"
+      ],
+      "titel": "Peuterpret",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-17",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/van-mij-mq4w"
     },
     {
       "theater": "orpheus",
@@ -627,6 +900,32 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "De waanzinnige boomhut van 78 Verdiepingen"
+      ],
+      "titel": "Meneer Monster",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-29",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/de-waanzinnige-boomhut-van-78-verdiepingen-ty6d"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Toetie"
+      ],
+      "titel": "Mark van Vliet",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-29",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/toetie-ty66"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Richard Groenendijk"
       ],
       "titel": "Gelukkig heb je mij nog",
@@ -640,6 +939,19 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "Zing, spring, miauw!"
+      ],
+      "titel": "Dikkie Dik & Dirk Scheele",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/zing-spring-miauw-ykcs"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Rayen Panday"
       ],
       "titel": "Grip",
@@ -649,6 +961,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.orpheus.nl/voorstellingen/rayen-panday-f2x7"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Harimau"
+      ],
+      "titel": "Peuterpret",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-21",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/harimau-s3cy"
     },
     {
       "theater": "orpheus",
@@ -688,6 +1013,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.orpheus.nl/voorstellingen/schater-cabaretfestival-58x1"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "GRRR... ik ben een boze dino!"
+      ],
+      "titel": "Lil Ones",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/grrr-ik-ben-een-boze-dino-1g94"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "GRRR... ik ben een boze dino!"
+      ],
+      "titel": "Lil Ones",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/grrr-ik-ben-een-boze-dino-1g94"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "De Betoverde Klas"
+      ],
+      "titel": "Huub Cooijmans",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-30",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/de-betoverde-klas-4bg7"
     },
     {
       "theater": "orpheus",
@@ -783,6 +1147,19 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "Firma Frictie"
+      ],
+      "titel": "Als ik een ruimte binnenloop, wil ik dat iedereen mij leuk vindt",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-26",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/als-ik-een-ruimte-binnenloop-wil-ik-dat-iedereen-mij-leuk-vindt-589g"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Selma Visscher"
       ],
       "titel": "Trekvogel",
@@ -792,6 +1169,28 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.orpheus.nl/voorstellingen/selma-visscher-xtwd"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [],
+      "titel": "Juf Roos gaat op vakantie",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-30",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/juf-roos-gaat-op-vakantie-s31l"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [],
+      "titel": "Juf Roos gaat op vakantie",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-30",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/juf-roos-gaat-op-vakantie-s31l"
     },
     {
       "theater": "orpheus",
@@ -835,6 +1234,71 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "Over een kleine mol die wil weten wie er op zijn kop gepoept heeft"
+      ],
+      "titel": "Onderdeel van het Prentenboekjesfestival",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-16",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-rhqz"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Over een kleine mol die wil weten wie er op zijn kop gepoept heeft"
+      ],
+      "titel": "Onderdeel van het Prentenboekjesfestival",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-16",
+      "tijd": "12:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-rhqz"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "De Gruffalo"
+      ],
+      "titel": "Onderdeel van het Prentenboekjesfestival",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-16",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/de-gruffalo-z6yd"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Titus & Fien De Revue"
+      ],
+      "titel": "Vooruit, nog één keertje dan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/titus-fien-de-revue-1g84"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Titus & Fien De Revue"
+      ],
+      "titel": "Vooruit, nog één keertje dan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/titus-fien-de-revue-1g84"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Rundfunk"
       ],
       "titel": "Wagyu",
@@ -844,6 +1308,71 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.orpheus.nl/voorstellingen/rundfunk-586j"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-17",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/k3-4bh8"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-17",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/k3-4bh8"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-17",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/k3-4bh8"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-18",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/k3-4bh8"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-18",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/k3-4bh8"
     },
     {
       "theater": "orpheus",

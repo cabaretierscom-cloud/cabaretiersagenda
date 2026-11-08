@@ -1,7 +1,7 @@
 {
   "bron": "tilburg",
   "naam": "Schouwburg & Concertzaal Tilburg",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "schouwburg-tilburg",
@@ -141,15 +141,132 @@
     {
       "theater": "schouwburg-tilburg",
       "artiesten": [
-        "Maartje & Kine"
+        "Kakek, Opa & Ik (7+)"
       ],
-      "titel": "De bingo show",
-      "genre": "comedy",
+      "titel": "Studio Figur & Dawn Collective",
+      "genre": "kindervoorstellingen",
       "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/maartje-kine-de-bingo-show",
-      "datum": "2026-11-07",
-      "tijd": "20:30",
-      "status": "uitverkocht"
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kakek-opa-ik-studio-figur-dawn-collective",
+      "datum": "2026-11-08",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Woest (4+)"
+      ],
+      "titel": "Sally",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/woest-sally",
+      "datum": "2026-11-22",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Beuk! (4+)"
+      ],
+      "titel": "Kim van Zeben & Rogier in ’t Hout",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/beuk-kim-van-zeben-rogier-in-t-hout",
+      "datum": "2026-12-06",
+      "tijd": "15:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Houtje (3+)"
+      ],
+      "titel": "Het Ministerie van Onverrichter Zake",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/houtje-het-ministerie",
+      "datum": "2026-12-20",
+      "tijd": "11:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Boef (4+)"
+      ],
+      "titel": "Grote Mensen",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/boef-grote-mensen",
+      "datum": "2027-01-24",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Waar je uitkomt als je weggaat (5+)"
+      ],
+      "titel": "The100Hands",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/waar-je-uitkomt-als-je-weggaat-the100hands",
+      "datum": "2027-02-28",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Pops of the Top (3+)"
+      ],
+      "titel": "Maas theater en dans",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/pops-of-the-top-maas-theater-en-dans",
+      "datum": "2027-03-21",
+      "tijd": "14:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Carnival of Life (4+)"
+      ],
+      "titel": "Canti Vaganti",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/carnival-of-life-canti-vaganti",
+      "datum": "2027-04-04",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Djumbala! (2+)"
+      ],
+      "titel": "Oorkaan & Podium Mozaïek",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/djumbala-oorkaan-podium-mozaiek",
+      "datum": "2027-04-18",
+      "tijd": "14:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "JoepTube (8+)"
+      ],
+      "titel": "de zAAk A",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/joeptube-de-zaak-a",
+      "datum": "2027-05-23",
+      "tijd": "15:30",
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -492,6 +609,45 @@
     {
       "theater": "schouwburg-tilburg",
       "artiesten": [
+        "Mijnmijnmijn (5+)"
+      ],
+      "titel": "coupedeboule",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/mijnmijnmijn-coupedeboule",
+      "datum": "2026-11-29",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Nog langer gelukkig (7+)"
+      ],
+      "titel": "Oortwolk",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/nog-langer-gelukkig-oortwolk",
+      "datum": "2027-03-14",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Het Geweldige Grote Mensen Stuk (8+)"
+      ],
+      "titel": "Cat Smits Company",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/het-geweldige-grote-mensen-stuk-cat-smits-company",
+      "datum": "2027-06-06",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
         "Andries Tunru & Stefan"
       ],
       "titel": "De nogal hyperbijzondere Tilburgse Oudejaars-improvisatie-extravaganza 2026",
@@ -620,6 +776,19 @@
       "status": "gepland"
     },
     {
+      "theater": "concertzaal-tilburg",
+      "artiesten": [
+        "Pinokkio (7+)"
+      ],
+      "titel": "Holland Opera, New European Ensemble & Cat Smits Company",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/pinokkio-holland-opera",
+      "datum": "2027-01-31",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
       "theater": "schouwburg-tilburg",
       "artiesten": [
         "Lonne Gosling"
@@ -630,6 +799,175 @@
       "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/lonne-gosling-morgen-weer-een-dag",
       "datum": "2027-02-13",
       "tijd": "20:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Zeg maar dag (4+)"
+      ],
+      "titel": "Maas theater en dans",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/zeg-maar-dag-maas-theater-en-dans",
+      "datum": "2027-03-07",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Nu is het nog rustig (8+)"
+      ],
+      "titel": "Theater Artemis, Het Zuidelijk Toneel & hetpaleis",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/nu-is-het-nog-rustig-theater-artemis-het-zuidelijk",
+      "datum": "2026-11-13",
+      "tijd": "19:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "De Proefkeuken en de WC van tijd (8+)"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd e.a",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/de-proefkeuken-pieter-hulst-willem-voogd",
+      "datum": "2026-11-22",
+      "tijd": "15:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Samar en de bange koning (8+)"
+      ],
+      "titel": "George Tobal Producties & Theater De Krakeling",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/samar-en-de-bange-koning-george-tobal",
+      "datum": "2026-12-06",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Pippi en de Piraten (6+)"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/pippi-en-de-piraten-theater-terra",
+      "datum": "2026-12-21",
+      "tijd": "15:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Alice in Wonderland (8+)"
+      ],
+      "titel": "De Toneelmakerij & DOX",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/alice-in-wonderland-de-toneelmakerij-dox",
+      "datum": "2027-01-02",
+      "tijd": "16:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "concertzaal-tilburg",
+      "artiesten": [
+        "Familie Mattheus (8+)"
+      ],
+      "titel": "Luthers Bach Ensemble",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/familie-mattheus-luthers-bach-ensemble",
+      "datum": "2027-02-28",
+      "tijd": "14:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Meiden & Prinsen (8+)"
+      ],
+      "titel": "Het Filiaal theatermakers & Nederlandse Bachvereniging",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/meiden-prinsen-het-filiaal-theatermakers",
+      "datum": "2027-04-11",
+      "tijd": "16:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Anansi de Spin en de gulzige Tijger (3+)"
+      ],
+      "titel": "Prentenboekjesfestival",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/prentenboekjesfestival-anansi-de-spin-en-de-gulzige-tijger",
+      "datum": "2027-05-09",
+      "tijd": "14:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Kikker is Kikker (3+)"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kikker-is-kikker-theater-terra",
+      "datum": "2027-05-23",
+      "tijd": "15:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "concertzaal-tilburg",
+      "artiesten": [
+        "Gewoontedieren (7+)"
+      ],
+      "titel": "Percossa",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/gewoontedieren-percossa",
+      "datum": "2027-03-29",
+      "tijd": "15:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "concertzaal-tilburg",
+      "artiesten": [
+        "Hans & Grietje op de vlucht! (8+)"
+      ],
+      "titel": "Opera Rebels Collective, Opera2Day & Studio Youkali",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/hans-grietje-op-de-vlucht-opera-rebels-collective",
+      "datum": "2026-12-22",
+      "tijd": "15:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "concertzaal-tilburg",
+      "artiesten": [
+        "Een Wereld Vol Muziek (6+)"
+      ],
+      "titel": "Strijkersensemble Waterviool e.a",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/een-wereld-vol-muziek-strijkersensemble-waterviool",
+      "datum": "2027-03-20",
+      "tijd": "14:30",
       "status": "gepland"
     },
     {
@@ -682,6 +1020,19 @@
       "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/tilburgs-cabaret-festival-2027-halve-finale-2",
       "datum": "2027-05-28",
       "tijd": "20:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Peuter- & kleuterconcert (2+)"
+      ],
+      "titel": "Krulmuziek | NEUS!",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/krulmuziek-neus-peuter-kleuterconcert",
+      "datum": "2027-04-11",
+      "tijd": "11:30",
       "status": "gepland"
     },
     {
@@ -830,15 +1181,132 @@
     {
       "theater": "schouwburg-tilburg",
       "artiesten": [
-        "Maartje & Kine"
+        "Kakek, Opa & Ik (7+)"
       ],
-      "titel": "De bingo show",
-      "genre": "comedy",
+      "titel": "Studio Figur & Dawn Collective",
+      "genre": "kindervoorstellingen",
       "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/maartje-kine-de-bingo-show",
-      "datum": "2026-11-07",
-      "tijd": "20:30",
-      "status": "uitverkocht"
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kakek-opa-ik-studio-figur-dawn-collective",
+      "datum": "2026-11-08",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Woest (4+)"
+      ],
+      "titel": "Sally",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/woest-sally",
+      "datum": "2026-11-22",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Beuk! (4+)"
+      ],
+      "titel": "Kim van Zeben & Rogier in ’t Hout",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/beuk-kim-van-zeben-rogier-in-t-hout",
+      "datum": "2026-12-06",
+      "tijd": "15:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Houtje (3+)"
+      ],
+      "titel": "Het Ministerie van Onverrichter Zake",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/houtje-het-ministerie",
+      "datum": "2026-12-20",
+      "tijd": "11:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Boef (4+)"
+      ],
+      "titel": "Grote Mensen",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/boef-grote-mensen",
+      "datum": "2027-01-24",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Waar je uitkomt als je weggaat (5+)"
+      ],
+      "titel": "The100Hands",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/waar-je-uitkomt-als-je-weggaat-the100hands",
+      "datum": "2027-02-28",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Pops of the Top (3+)"
+      ],
+      "titel": "Maas theater en dans",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/pops-of-the-top-maas-theater-en-dans",
+      "datum": "2027-03-21",
+      "tijd": "14:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Carnival of Life (4+)"
+      ],
+      "titel": "Canti Vaganti",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/carnival-of-life-canti-vaganti",
+      "datum": "2027-04-04",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Djumbala! (2+)"
+      ],
+      "titel": "Oorkaan & Podium Mozaïek",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/djumbala-oorkaan-podium-mozaiek",
+      "datum": "2027-04-18",
+      "tijd": "14:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "JoepTube (8+)"
+      ],
+      "titel": "de zAAk A",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/joeptube-de-zaak-a",
+      "datum": "2027-05-23",
+      "tijd": "15:30",
+      "status": "gepland"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1181,6 +1649,45 @@
     {
       "theater": "schouwburg-tilburg",
       "artiesten": [
+        "Mijnmijnmijn (5+)"
+      ],
+      "titel": "coupedeboule",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/mijnmijnmijn-coupedeboule",
+      "datum": "2026-11-29",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Nog langer gelukkig (7+)"
+      ],
+      "titel": "Oortwolk",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/nog-langer-gelukkig-oortwolk",
+      "datum": "2027-03-14",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Het Geweldige Grote Mensen Stuk (8+)"
+      ],
+      "titel": "Cat Smits Company",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/het-geweldige-grote-mensen-stuk-cat-smits-company",
+      "datum": "2027-06-06",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
         "Andries Tunru & Stefan"
       ],
       "titel": "De nogal hyperbijzondere Tilburgse Oudejaars-improvisatie-extravaganza 2026",
@@ -1309,6 +1816,19 @@
       "status": "gepland"
     },
     {
+      "theater": "concertzaal-tilburg",
+      "artiesten": [
+        "Pinokkio (7+)"
+      ],
+      "titel": "Holland Opera, New European Ensemble & Cat Smits Company",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/pinokkio-holland-opera",
+      "datum": "2027-01-31",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
       "theater": "schouwburg-tilburg",
       "artiesten": [
         "Lonne Gosling"
@@ -1319,6 +1839,175 @@
       "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/lonne-gosling-morgen-weer-een-dag",
       "datum": "2027-02-13",
       "tijd": "20:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Zeg maar dag (4+)"
+      ],
+      "titel": "Maas theater en dans",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/zeg-maar-dag-maas-theater-en-dans",
+      "datum": "2027-03-07",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Nu is het nog rustig (8+)"
+      ],
+      "titel": "Theater Artemis, Het Zuidelijk Toneel & hetpaleis",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/nu-is-het-nog-rustig-theater-artemis-het-zuidelijk",
+      "datum": "2026-11-13",
+      "tijd": "19:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "De Proefkeuken en de WC van tijd (8+)"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd e.a",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/de-proefkeuken-pieter-hulst-willem-voogd",
+      "datum": "2026-11-22",
+      "tijd": "15:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Samar en de bange koning (8+)"
+      ],
+      "titel": "George Tobal Producties & Theater De Krakeling",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/samar-en-de-bange-koning-george-tobal",
+      "datum": "2026-12-06",
+      "tijd": "15:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Pippi en de Piraten (6+)"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/pippi-en-de-piraten-theater-terra",
+      "datum": "2026-12-21",
+      "tijd": "15:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Alice in Wonderland (8+)"
+      ],
+      "titel": "De Toneelmakerij & DOX",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/alice-in-wonderland-de-toneelmakerij-dox",
+      "datum": "2027-01-02",
+      "tijd": "16:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "concertzaal-tilburg",
+      "artiesten": [
+        "Familie Mattheus (8+)"
+      ],
+      "titel": "Luthers Bach Ensemble",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/familie-mattheus-luthers-bach-ensemble",
+      "datum": "2027-02-28",
+      "tijd": "14:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Meiden & Prinsen (8+)"
+      ],
+      "titel": "Het Filiaal theatermakers & Nederlandse Bachvereniging",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/meiden-prinsen-het-filiaal-theatermakers",
+      "datum": "2027-04-11",
+      "tijd": "16:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Anansi de Spin en de gulzige Tijger (3+)"
+      ],
+      "titel": "Prentenboekjesfestival",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/prentenboekjesfestival-anansi-de-spin-en-de-gulzige-tijger",
+      "datum": "2027-05-09",
+      "tijd": "14:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
+        "Kikker is Kikker (3+)"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/kikker-is-kikker-theater-terra",
+      "datum": "2027-05-23",
+      "tijd": "15:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "concertzaal-tilburg",
+      "artiesten": [
+        "Gewoontedieren (7+)"
+      ],
+      "titel": "Percossa",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/gewoontedieren-percossa",
+      "datum": "2027-03-29",
+      "tijd": "15:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "concertzaal-tilburg",
+      "artiesten": [
+        "Hans & Grietje op de vlucht! (8+)"
+      ],
+      "titel": "Opera Rebels Collective, Opera2Day & Studio Youkali",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/hans-grietje-op-de-vlucht-opera-rebels-collective",
+      "datum": "2026-12-22",
+      "tijd": "15:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "concertzaal-tilburg",
+      "artiesten": [
+        "Een Wereld Vol Muziek (6+)"
+      ],
+      "titel": "Strijkersensemble Waterviool e.a",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/een-wereld-vol-muziek-strijkersensemble-waterviool",
+      "datum": "2027-03-20",
+      "tijd": "14:30",
       "status": "gepland"
     },
     {
@@ -1376,6 +2065,19 @@
     {
       "theater": "schouwburg-tilburg",
       "artiesten": [
+        "Peuter- & kleuterconcert (2+)"
+      ],
+      "titel": "Krulmuziek | NEUS!",
+      "genre": "kindervoorstellingen",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/krulmuziek-neus-peuter-kleuterconcert",
+      "datum": "2027-04-11",
+      "tijd": "11:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "schouwburg-tilburg",
+      "artiesten": [
         "Karin Dirkx"
       ],
       "titel": "Wa wilde dèk zeg?",
@@ -1408,26 +2110,31 @@
         "citaat": "Originele verteller die niet bij de geijkte comedy-onderwerpen blijft hangen."
       }
     ],
-    "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/maartje-kine-de-bingo-show": [
+    "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/beuk-kim-van-zeben-rogier-in-t-hout": [
+      {
+        "medium": "Dagblad van het Noorden",
+        "sterren": 5,
+        "citaat": "Meer dan geslaagde voorstelling voor jong en oud. (…) Doldwaze slapstick vermaakt en ontroerd."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Heerlijke, dolkomische slapstick, die de fantasie prikkelt."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "ogier in ’t Hout en Kim van Zeben hakken, schieten, zagen, vallen, vechten en zingen voortreffelijk."
+      },
       {
         "medium": "Theaterkrant",
         "sterren": null,
-        "citaat": "Met opvallend hoog aantal ontroerende liedjes twijfelen Maartje & Kine aan het hoopvolle idee dat mensen kunnen krijgen wat ze verdienen."
+        "citaat": "Spectaculaire achtervolgingen en pats, boem, knal!"
       },
       {
         "medium": "Scènes",
         "sterren": null,
-        "citaat": "Mooie melodieën, intelligente teksten en zalige stemmen. [..] Dit keer nog een flinke slag persoonlijker, beter, mooier en indrukwekkender."
-      },
-      {
-        "medium": "Theaterparadijs",
-        "sterren": 5,
-        "citaat": "Een slimme, muzikaal sterke en verrassend gelaagde voorstelling over toeval, keuzes en geluk. [..] Emotioneel, grappig en bovenal origineel. De meest eigenzinnige en muzikale cabaretiers van dit moment."
-      },
-      {
-        "medium": "I Love Theater",
-        "sterren": 4,
-        "citaat": "Maartje & Kine bewijzen tot de top van de Nederlandse kleinkunst te behoren. [..] Kolderieke scenes vloeien organisch over in ontroerende momenten. Hun timing is feilloos."
+        "citaat": "Al jaren is Van Zeben een geweldige actrice die eigenlijk alles kan en altijd grappig en goed is"
       }
     ],
     "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/merijn-scholten-lemming": [
@@ -1482,6 +2189,23 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Opnieuw vindt Lisa Ostermann het perfecte snijvlak tussen humor en ontroering."
+      }
+    ],
+    "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/nu-is-het-nog-rustig-theater-artemis-het-zuidelijk": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 3,
+        "citaat": "Regisseur Jetse Batelaan ensceneert de wereld op driedubbeltempo. Zijn acteurs stuiteren door hun kleine leventjes, hoppend van ontmoeting naar ontmoeting, van deceptie naar deceptie."
+      },
+      {
+        "medium": "De Standaard",
+        "sterren": 3,
+        "citaat": "Grote emoties gaan van 0 naar 100 in luttele seconden, om dan weer plaats te maken voor iets volstrekt banaals. Alsof je live door Tiktok swipet."
+      },
+      {
+        "medium": "Etcetera",
+        "sterren": null,
+        "citaat": "Een klassieke Batelaan met maatschappijkritiek en absurde humor."
       }
     ]
   }

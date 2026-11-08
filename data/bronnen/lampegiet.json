@@ -1,7 +1,7 @@
 {
   "bron": "lampegiet",
   "naam": "Theater Lampegiet",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "theater-lampegiet",
@@ -66,6 +66,19 @@
     {
       "theater": "theater-lampegiet",
       "artiesten": [
+        "Buurman en Buurman bouwen een feestje (4+)"
+      ],
+      "titel": "Polle Vrienden en Max Laros",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/buurman-en-buurman-bouwen-een-feestje-4-bttc"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
         "Richard Groenendijk"
       ],
       "titel": "Gelukkig heb je mij nog",
@@ -90,6 +103,19 @@
     {
       "theater": "theater-lampegiet",
       "artiesten": [
+        "De Kleine Prins (8+)"
+      ],
+      "titel": "DG Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-11",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/de-kleine-prins-8-qss9"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
         "Arjan Kleton"
       ],
       "titel": "Lomp",
@@ -102,6 +128,71 @@
     },
     {
       "theater": "theater-lampegiet",
+      "artiesten": [
+        "De waanzinnige boomhut van 78 verdiepingen (6+)"
+      ],
+      "titel": "Meneer Monster",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/de-waanzinnige-boomhut-van-78-verdiepingen-6-9119"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Franciscus – De Familiemusical"
+      ],
+      "titel": "Koemi",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/franciscus-de-familiemusical-qs75"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "De Kersthaas (4+)"
+      ],
+      "titel": "De Grote Haay",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-02",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/de-kersthaas-4-6qtn"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Gonnie en Gijsje samen op stap (2+)"
+      ],
+      "titel": "Klein Amsterdam Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "11:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/gonnie-en-gijsje-samen-op-stap-2-rlgy"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Gonnie en Gijsje samen op stap (2+)"
+      ],
+      "titel": "Klein Amsterdam Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/gonnie-en-gijsje-samen-op-stap-2-rlgy"
+    },
+    {
+      "theater": "theater-lampegiet",
       "artiesten": [],
       "titel": "Veenendaal Lacht - Comedy Night",
       "genre": "comedy",
@@ -110,6 +201,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.lampegiet.nl/agenda/veenendaal-lacht-comedy-night-8hzz"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Mees Kees de husselrace (7+)"
+      ],
+      "titel": "Hanneke Engels, Max Hameeteman e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/mees-kees-de-husselrace-7-cjyh"
     },
     {
       "theater": "theater-lampegiet",
@@ -140,6 +244,19 @@
     {
       "theater": "theater-lampegiet",
       "artiesten": [
+        "De Proefkeuken en de WC van tijd (8+)"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-23",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/de-proefkeuken-en-de-wc-van-tijd-8-n78w"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
         "Patrick Laureij"
       ],
       "titel": "Kintsugi",
@@ -149,6 +266,19 @@
       "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.lampegiet.nl/agenda/patrick-laureij-t2sj"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "De Tijdreiziger (6+)"
+      ],
+      "titel": "Nigel Otermans",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/de-tijdreiziger-6-zmxj"
     },
     {
       "theater": "theater-lampegiet",
@@ -175,6 +305,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.lampegiet.nl/agenda/rayen-panday-1ylc"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Klein, klein vogeltje (4+)"
+      ],
+      "titel": "LloydsCompany",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/klein-klein-vogeltje-4-qsjn"
     },
     {
       "theater": "theater-lampegiet",
@@ -218,6 +361,19 @@
     {
       "theater": "theater-lampegiet",
       "artiesten": [
+        "De Nog Grotere Slijmmusical (6+)"
+      ],
+      "titel": "Matheu Hinzen, Anique Dreamon e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-27",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/de-nog-grotere-slijmmusical-6-6qcf"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
         "Dokter Bart"
       ],
       "titel": "Ontsteking",
@@ -238,6 +394,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.lampegiet.nl/agenda/veenendaal-lacht-talent-night-rlhl"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Meiden & Prinsen (8+)"
+      ],
+      "titel": "Barend van Daal, Sacha Muller & Sophie Bakker",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-05",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/meiden-prinsen-8-try-out-dcr1"
     },
     {
       "theater": "theater-lampegiet",
@@ -264,6 +433,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.lampegiet.nl/agenda/esther-van-der-voort-t2yz"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Vos & Haas samen in het bos (3+)"
+      ],
+      "titel": "Kadee Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/vos-haas-samen-in-het-bos-3-4xdv"
     },
     {
       "theater": "theater-lampegiet",
@@ -307,6 +489,19 @@
     {
       "theater": "theater-lampegiet",
       "artiesten": [
+        "WEG ERMEE (5 t/m 12 jaar )"
+      ],
+      "titel": "WIRWAR Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-10",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/weg-ermee-5-t-m-12-jaar-7gzx"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
         "Beth & Flo"
       ],
       "titel": "Zoveel Meer",
@@ -340,6 +535,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.lampegiet.nl/agenda/de-schnabbelkoningin-btr7"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Efteling vertelt… Baron 1898 (6+)"
+      ],
+      "titel": "Efteling",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-28",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/efteling-vertelt-baron-1898-6-cjg4"
     },
     {
       "theater": "theater-lampegiet",

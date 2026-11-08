@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -29,6 +29,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Tussen Kunst en Kids"
+      ],
+      "titel": "7+",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-08",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/tussen-kunst-en-kids-7-3/"
+    },
     {
       "theater": "theater-walhalla",
       "artiesten": [
@@ -82,6 +95,32 @@
       "bron": "https://www.theaterwalhalla.nl/voorstelling/kim-schuddeboom-hardleers-try-out-2/"
     },
     {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "11:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-16/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "13:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-17/"
+    },
+    {
       "theater": "theater-walhalla",
       "artiesten": [
         "Marja van Katendrecht"
@@ -93,6 +132,19 @@
       "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/marja-van-katendrecht-heel-holland-hoopt-try-out/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-18/"
     },
     {
       "theater": "theater-walhalla",
@@ -134,6 +186,45 @@
       "bron": "https://www.theaterwalhalla.nl/voorstelling/peter-pannekoek-demonen-try-out/"
     },
     {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "11:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-10/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-11/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-12/"
+    },
+    {
       "theater": "theater-walhalla",
       "artiesten": [
         "Peter Pannekoek"
@@ -145,6 +236,45 @@
       "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/peter-pannekoek-demonen-try-out-2/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "11:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-13/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "13:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-14/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-15/"
     },
     {
       "theater": "theater-walhalla",
@@ -168,9 +298,74 @@
       "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/andre-manuel-de-eenzame-ziel-try-out/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "11:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-8/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "13:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-9/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-7/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "11:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-4/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-5/"
     },
     {
       "theater": "theater-walhalla",
@@ -184,6 +379,97 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-7/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-6/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-05",
+      "tijd": "11:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-05",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-2/"
+    },
+    {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Sinterklaas in Walhalla: Sint Salabim!"
+      ],
+      "titel": "2 t/m 6 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-05",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-3/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Klassiek Kerstconcert Voor Dreumesen"
+      ],
+      "titel": "Krulmuziek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-09",
+      "tijd": "09:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/klassiek-kerstconcert-voor-dreumesen-15-krulmuziek/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Klassiek Kerstconcert Voor Babies"
+      ],
+      "titel": "Krulmuziek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-09",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/klassiek-kerstconcert-voor-babies-05-krulmuziek/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Twinkel Twinkel Kleine Ster"
+      ],
+      "titel": "Krulmuziek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-09",
+      "tijd": "11:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/twinkel-twinkel-kleine-ster-2-t-m-6-jaar-krulmuziek/"
     },
     {
       "theater": "theater-walhalla",
@@ -234,6 +520,19 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/ricky-koole-rare-leeftijd/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Tussen Kunst en Kids"
+      ],
+      "titel": "7+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/tussen-kunst-en-kids-7-7/"
     },
     {
       "theater": "theater-walhalla",
@@ -299,6 +598,19 @@
       "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/klaas-van-der-eerden-imperfect-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Zingeling"
+      ],
+      "titel": "2 t/m 5 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/zingeling-2-t-m-5-jaar-3/"
     },
     {
       "theater": "theater-walhalla",
@@ -416,6 +728,17 @@
       "bron": "https://www.theaterwalhalla.nl/voorstelling/david-van-rosmalen-als-ik-jou-was/"
     },
     {
+      "theater": "werkplaats-walhalla",
+      "artiesten": [],
+      "titel": "Het Ministerie van Inwendige Zaken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-06",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/het-ministerie-van-inwendige-zaken/"
+    },
+    {
       "theater": "theater-walhalla",
       "artiesten": [
         "De Tunes"
@@ -476,9 +799,22 @@
       "genre": "kleinkunst",
       "datum": "2027-02-13",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/niek-guy-legatum/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Tussen Kunst en Kids"
+      ],
+      "titel": "7+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/tussen-kunst-en-kids-7-8/"
     },
     {
       "theater": "theater-walhalla",
@@ -522,6 +858,32 @@
     {
       "theater": "theater-walhalla",
       "artiesten": [
+        "Bliep Bliep"
+      ],
+      "titel": "Dender Cartoontheater",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/bliep-bliep-5-t-m-12-jaar-dender-cartoontheater/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Ridder Zonder Billen"
+      ],
+      "titel": "3 t/m 8 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-23",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-ridder-zonder-billen-3-t-m-8-jaar/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
         "Viggo Waas & Eddie B. Wahr & Kees van der Vooren"
       ],
       "titel": "Eigenlijk",
@@ -531,6 +893,19 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/viggo-waas-eddie-b-wahr-kees-van-der-vooren-eigenlijk-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Bon Dia In De Jungle"
+      ],
+      "titel": "Izaline Calister & Thijs Borsten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-25",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/bon-dia-in-de-jungle-4-t-m-8-jaar-izaline-calister-thijs-borsten/"
     },
     {
       "theater": "theater-walhalla",
@@ -555,6 +930,43 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/alina-sharipova-try-out/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [],
+      "titel": "Het Lievelingseten van… Isaï",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "18:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/het-lievelingseten-van-isai/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Murphy"
+      ],
+      "titel": "Groen & Van Lien",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/murphy-8-t-m-12-jaar-groen-van-lien/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Zingeling"
+      ],
+      "titel": "2 t/m 5 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "10:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/zingeling-2-t-m-5-jaar-6/"
     },
     {
       "theater": "theater-walhalla",
@@ -596,6 +1008,58 @@
     {
       "theater": "theater-walhalla",
       "artiesten": [
+        "Als Ik De Baas Was…"
+      ],
+      "titel": "Lab Lento",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/als-ik-de-baas-was-6-t-m-9-jaar/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Klassiek Voor Dreumesen"
+      ],
+      "titel": "Krulmuziek",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-10",
+      "tijd": "09:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/klassiek-voor-dreumesen-15-krulmuziek/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Klassiek Voor Baby’s"
+      ],
+      "titel": "Krulmuziek",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-10",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/klassiek-voor-babys-05-krulmuziek/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Klassiek Voor Peuters en Kleuters"
+      ],
+      "titel": "Krulmuziek",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-10",
+      "tijd": "11:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/klassiek-voor-peuters-en-kleuters-2-t-m-6-jaar-krulmuziek/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
         "Joosen en de Jager"
       ],
       "titel": "Niks Aan Het Handje",
@@ -622,6 +1086,19 @@
     {
       "theater": "theater-walhalla",
       "artiesten": [
+        "The Whizzkid of Oz"
+      ],
+      "titel": "7+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-12",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/the-whizzkid-of-oz-7/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
         "Flip Noorman"
       ],
       "titel": "Bonobo",
@@ -631,6 +1108,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/flip-noorman-bonobo/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Tussen Kunst en Kids"
+      ],
+      "titel": "7+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/tussen-kunst-en-kids-7-9/"
     },
     {
       "theater": "theater-walhalla",
@@ -681,6 +1171,19 @@
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sezgin-gulec-nieuw-programma-2/"
     },
     {
+      "theater": "kleine-walhalla",
+      "artiesten": [
+        "Hieperdepiep Opera"
+      ],
+      "titel": "4 t/m 7 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/hieperdepiep-opera-4-t-m-7-jaar/"
+    },
+    {
       "theater": "theater-walhalla",
       "artiesten": [
         "Anuar"
@@ -689,9 +1192,22 @@
       "genre": "cabaret",
       "datum": "2027-03-24",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/anuar-ongeduldig-geduldig-2/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Zingeling"
+      ],
+      "titel": "2 t/m 5 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-28",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/zingeling-2-t-m-5-jaar-7/"
     },
     {
       "theater": "theater-walhalla",
@@ -739,7 +1255,7 @@
       "genre": "cabaret",
       "datum": "2027-04-08",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/luuk-weggemans-lach-maar-om-mij/"
     },
@@ -755,6 +1271,19 @@
       "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/yunus-aktas-try-out/"
+    },
+    {
+      "theater": "werkplaats-walhalla",
+      "artiesten": [
+        "So Long Sweetwater"
+      ],
+      "titel": "8+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-09",
+      "tijd": "19:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/so-long-sweetwater-8/"
     },
     {
       "theater": "theater-walhalla",
@@ -846,6 +1375,19 @@
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-14/"
     },
     {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Tussen Kunst en Kids"
+      ],
+      "titel": "7+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/tussen-kunst-en-kids-7/"
+    },
+    {
       "theater": "kleine-walhalla",
       "artiesten": [
         "Patrick Nederkoorn"
@@ -900,6 +1442,43 @@
     {
       "theater": "theater-walhalla",
       "artiesten": [
+        "Dikkie Dik & Dirk Scheele"
+      ],
+      "titel": "Zing, Spring, Miauw! (2 t/m 7 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-29",
+      "tijd": "11:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/dikkie-dik-dirk-scheele-zing-spring-miauw-2-t-m-7-jaar/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [],
+      "titel": "Dirk Scheele Dikkie Dik",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-29",
+      "tijd": "13:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/dirk-scheele-dikkie-dik/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Zingeling"
+      ],
+      "titel": "2 t/m 5 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-02",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/zingeling-2-t-m-5-jaar-4/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
         "Margreet Dolman Brengt Warmte & Dominee Gremdaat Wijst De Weg"
       ],
       "titel": "Paul Haenen En Dammie Van Geest",
@@ -935,6 +1514,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-16/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "Zingeling"
+      ],
+      "titel": "2 t/m 5 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-06",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/zingeling-2-t-m-5-jaar-5/"
     },
     {
       "theater": "theater-walhalla",

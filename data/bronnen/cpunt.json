@@ -1,7 +1,7 @@
 {
   "bron": "cpunt",
   "naam": "Cpunt",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "cpunt",
@@ -13,6 +13,32 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Babybieb (voor kinderen tot 2 jaar)"
+      ],
+      "titel": "Elke tweede vrijdag van de maand",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-13",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/babybieb-voor-kinderen-tot-2-jaar"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Babybieb (voor kinderen tot 2 jaar)"
+      ],
+      "titel": "Elke tweede vrijdag van de maand",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-11",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/babybieb-voor-kinderen-tot-2-jaar"
+    },
     {
       "theater": "cpunt",
       "artiesten": [
@@ -55,6 +81,188 @@
     {
       "theater": "cpunt",
       "artiesten": [
+        "Chinees voorlezen (2+)"
+      ],
+      "titel": "中文绘本阅读日",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-12",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/chinees-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Chinees voorlezen (2+)"
+      ],
+      "titel": "中文绘本阅读日",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-09",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/chinees-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Chinees voorlezen (2+)"
+      ],
+      "titel": "中文绘本阅读日",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/chinees-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Turks voorlezen (2+)"
+      ],
+      "titel": "Türkçe Kitap Okuma Saati",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-05",
+      "tijd": "12:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/turks-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Turks voorlezen (2+)"
+      ],
+      "titel": "Türkçe Kitap Okuma Saati",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-02",
+      "tijd": "12:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/turks-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Turks voorlezen (2+)"
+      ],
+      "titel": "Türkçe Kitap Okuma Saati",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-06",
+      "tijd": "12:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/turks-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Spaans voorlezen (2+)"
+      ],
+      "titel": "Leer en Español",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/spaans-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Spaans voorlezen (2+)"
+      ],
+      "titel": "Leer en Español",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/spaans-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Spaans voorlezen (2+)"
+      ],
+      "titel": "Leer en Español",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-16",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/spaans-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Spaans voorlezen (2+)"
+      ],
+      "titel": "Leer en Español",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-20",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/spaans-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Roemeens voorlezen (2+)"
+      ],
+      "titel": "Lectură românească cu voce tare (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-12",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/roemeens-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Roemeens voorlezen (2+)"
+      ],
+      "titel": "Lectură românească cu voce tare (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/roemeens-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Roemeens voorlezen (2+)"
+      ],
+      "titel": "Lectură românească cu voce tare (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-09",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/roemeens-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Roemeens voorlezen (2+)"
+      ],
+      "titel": "Lectură românească cu voce tare (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-14",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/roemeens-voorlezen-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
         "Ronald Goedemondt"
       ],
       "titel": "Mijn Lieve Achterdocht",
@@ -93,16 +301,77 @@
     },
     {
       "theater": "cpunt",
-      "artiesten": [
-        "Tim Kroezen"
-      ],
-      "titel": "550",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:00",
+      "artiesten": [],
+      "titel": "Rollerskate Party for Kids",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-27",
+      "tijd": "14:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.cpunt.nl/agenda/tim-kroezen"
+      "bron": "https://www.cpunt.nl/agenda/rollerskate-party-for-kids-feb27"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Rollerskate Party for Kids",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-24",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/rollerskate-party-for-kids-apr27"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Voorlezen in het Tamil (2+)"
+      ],
+      "titel": "தமிழ் வாசிப்பு",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorlezen-in-het-tamil-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Voorlezen in het Tamil (2+)"
+      ],
+      "titel": "தமிழ் வாசிப்பு",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-02",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorlezen-in-het-tamil-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Voorlezen in het Tamil (2+)"
+      ],
+      "titel": "தமிழ் வாசிப்பு",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorlezen-in-het-tamil-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Voorlezen in het Tamil (2+)"
+      ],
+      "titel": "தமிழ் வாசிப்பு",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-27",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorlezen-in-het-tamil-2"
     },
     {
       "theater": "cpunt",
@@ -155,6 +424,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.cpunt.nl/agenda/david-linszen"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "De Kleine Prins (8+)"
+      ],
+      "titel": "DG Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-20",
+      "tijd": "19:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-kleine-prins-8"
     },
     {
       "theater": "cpunt",
@@ -1107,6 +1389,462 @@
     },
     {
       "theater": "cpunt",
+      "artiesten": [
+        "Krulmuziek - Dreumesconcert (1,5+)"
+      ],
+      "titel": "Klassiek voor kleintjes",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-29",
+      "tijd": "09:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/krulmuziek-dreumesconcert-15-kerst"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Krulmuziek - Babyconcert (0,5+)"
+      ],
+      "titel": "Klassiek voor kleintjes",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-29",
+      "tijd": "10:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/krulmuziek-babyconcert-05-kerst"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Krulmuziek - Peuter/Kleuterconcert (2,5+)"
+      ],
+      "titel": "Klassiek voor kleintjes",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-29",
+      "tijd": "11:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/krulmuziek-peuterkleuterconcert-25-kerst"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "PEUTERFESTIVAL - Beestenboel! 2+"
+      ],
+      "titel": "Muziekdocenten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-beestenboel-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "PEUTERFESTIVAL - Beestenboel! 2+"
+      ],
+      "titel": "Muziekdocenten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-beestenboel-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "PEUTERFESTIVAL - Beestenboel! 2+"
+      ],
+      "titel": "Muziekdocenten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-beestenboel-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "PEUTERFESTIVAL - Beestenboel! 2+"
+      ],
+      "titel": "Muziekdocenten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-beestenboel-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "PEUTERFESTIVAL - Beestenboel! 2+"
+      ],
+      "titel": "Muziekdocenten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-beestenboel-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "PEUTERFESTIVAL | Anansi de Spin en de Gulzige Tijger (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-anansi-de-spin-en-de-gulzige-tijg"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "PEUTERFESTIVAL | Anansi de Spin en de Gulzige Tijger (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "12:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-anansi-de-spin-en-de-gulzige-tijg"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "PEUTERFESTIVAL | nijntje op de fiets (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "10:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-nijntje-op-de-fiets-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "PEUTERFESTIVAL | nijntje op de fiets (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "12:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-nijntje-op-de-fiets-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "PEUTERFESTIVAL | Katton der water (3+)"
+      ],
+      "titel": "Bram van Beusekom",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "10:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-katton-der-water-3"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "PEUTERFESTIVAL | Katton der water (3+)"
+      ],
+      "titel": "Bram van Beusekom",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "11:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-katton-der-water-3"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "PEUTERFESTIVAL | Vos en Haas samen in het bos (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "12:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-vos-en-haas-samen-in-het-bos-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "PEUTERFESTIVAL | Vos en Haas samen in het bos (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/peuterfestival-vos-en-haas-samen-in-het-bos-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Mees Kees"
+      ],
+      "titel": "De Husselrace 7+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/mees-kees"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Mees Kees"
+      ],
+      "titel": "De Husselrace 7+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/mees-kees"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Woezel & Pip"
+      ],
+      "titel": "Feest in de Tovertuin (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-06",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/woezel-pip"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Woezel & Pip"
+      ],
+      "titel": "Feest in de Tovertuin (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-06",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/woezel-pip"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Aladdin de Musical (4+)"
+      ],
+      "titel": "Van Hoorne Studios",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-28",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/aladdin-de-musical-4"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Aladdin de Musical (4+)"
+      ],
+      "titel": "Van Hoorne Studios",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-28",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/aladdin-de-musical-4"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "De Nog Grotere Slijmmusical (6+)"
+      ],
+      "titel": "BazarMedia",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-15",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-nog-grotere-slijmmusical-6"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "De Nog Grotere Slijmmusical (6+)"
+      ],
+      "titel": "BazarMedia",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-15",
+      "tijd": "19:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-nog-grotere-slijmmusical-6"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "De ridder zonder billen (3+)"
+      ],
+      "titel": "Klein Amsterdam Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-17",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-ridder-zonder-billen-3"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "De ridder zonder billen (3+)"
+      ],
+      "titel": "Klein Amsterdam Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-17",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-ridder-zonder-billen-3"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Knoei (3+)"
+      ],
+      "titel": "Eva Mesman",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/knoei-3"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "De Proefkeuken en de WC van tijd"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "19:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-proefkeuken-en-de-wc-van-tijd"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Het Kado (6+)"
+      ],
+      "titel": "Als het ware",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/het-kado-6"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Kikker is Kikker (3+)"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/kikker-is-kikker-3"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "De Horde"
+      ],
+      "titel": "Tent (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-horde"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "De betoverde klas (4+)"
+      ],
+      "titel": "Huub Cooijmans",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-betoverde-klas-4"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Toetie (4+)"
+      ],
+      "titel": "Mark van Vliet",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/toetie-4"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Steven Kazàn"
+      ],
+      "titel": "Hoe dan! (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-20",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/steven-kazan"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Mijn Kleuren (2+)"
+      ],
+      "titel": "Mime Wave",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/mijn-kleuren-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Het zonnetje in huis (4+)"
+      ],
+      "titel": "Oortwolk",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/het-zonnetje-in-huis-4"
+    },
+    {
+      "theater": "cpunt",
       "artiesten": [],
       "titel": "Knock-Out Comedy Crew",
       "genre": "cabaret",
@@ -1148,6 +1886,65 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.cpunt.nl/agenda/knock-out-comedy-crew-mrt"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "De Grote Dino Show (2+)"
+      ],
+      "titel": "De Geheime Tijdmachine",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-grote-dino-show-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "De Grote Dino Show (2+)"
+      ],
+      "titel": "De Geheime Tijdmachine",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "13:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-grote-dino-show-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "De Kleine Zeemeermin de Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-kleine-zeemeermin-de-musical"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "De Kleine Zeemeermin de Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "13:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-kleine-zeemeermin-de-musical"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "De Kleine Zeemeermin de Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/de-kleine-zeemeermin-de-musical"
     },
     {
       "theater": "cpunt",
@@ -1229,6 +2026,148 @@
     },
     {
       "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Voorleesconcertje",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-19",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorleesconcertje"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Voorleesconcertje",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-21",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorleesconcertje"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Voorleesconcertje",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-17",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorleesconcertje"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Voorleesconcertje",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-17",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorleesconcertje"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Voorleesconcertje",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-20",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorleesconcertje"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Voorleesconcertje",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-16",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorleesconcertje"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Voorleesconcertje",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-18",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorleesconcertje"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Voorlezen in Russisch (2+)"
+      ],
+      "titel": "Чтение на русском языке",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorlezen-in-russisch-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Voorlezen in Russisch (2+)"
+      ],
+      "titel": "Чтение на русском языке",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-14",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorlezen-in-russisch-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Voorlezen in Russisch (2+)"
+      ],
+      "titel": "Чтение на русском языке",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-12",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorlezen-in-russisch-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Voorlezen in Russisch (2+)"
+      ],
+      "titel": "Чтение на русском языке",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-09",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorlezen-in-russisch-2"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Voorstelling Het Grootste Goochelgeheim (5+)"
+      ],
+      "titel": "door Lars van Tuijl: De Meester-Goochelaar - Kinderboekenweek Spot aan!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-09",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/voorstelling-het-grootste-goochelgeheim-5"
+    },
+    {
+      "theater": "cpunt",
       "artiesten": [
         "Expat Cafe: Rashi Favier"
       ],
@@ -1278,6 +2217,110 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.cpunt.nl/agenda/marie-koet"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Harry Potter Dag! (8+)"
+      ],
+      "titel": "Door de Biebclub",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-18",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/harry-potter-dag-8"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Kids Crea Café: Sinterklaas (4+)"
+      ],
+      "titel": "Maak je eigen unieke piet!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-25",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/kids-crea-cafe-sinterklaas-4"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Zet je schoentje in de bieb!"
+      ],
+      "titel": "Sinterklaas komt met cadeautjes",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-01",
+      "tijd": "09:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/zet-je-schoentje-in-de-bieb"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Zet je schoentje in de bieb!"
+      ],
+      "titel": "Sinterklaas komt met cadeautjes",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-25",
+      "tijd": "09:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/zet-je-schoentje-in-de-bieb"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Zet je schoentje in de bieb!"
+      ],
+      "titel": "Sinterklaas komt met cadeautjes",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-26",
+      "tijd": "09:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/zet-je-schoentje-in-de-bieb"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Zet je schoentje in de bieb!"
+      ],
+      "titel": "Sinterklaas komt met cadeautjes",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-27",
+      "tijd": "09:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/zet-je-schoentje-in-de-bieb"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Zet je schoentje in de bieb!"
+      ],
+      "titel": "Sinterklaas komt met cadeautjes",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "09:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/zet-je-schoentje-in-de-bieb"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Zet je schoentje in de bieb!"
+      ],
+      "titel": "Sinterklaas komt met cadeautjes",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-30",
+      "tijd": "09:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/zet-je-schoentje-in-de-bieb"
     },
     {
       "theater": "cpunt",

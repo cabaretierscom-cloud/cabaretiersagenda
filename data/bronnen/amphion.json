@@ -1,7 +1,7 @@
 {
   "bron": "amphion",
   "naam": "Amphion",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "amphion",
@@ -328,6 +328,32 @@
     {
       "theater": "amphion",
       "artiesten": [
+        "De Gruffalo"
+      ],
+      "titel": "Meneer Monster (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-26",
+      "tijd": "16:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/de-gruffalo-meneer-monster-3/26-05-2027-16-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "De Gruffalo"
+      ],
+      "titel": "Meneer Monster (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-26",
+      "tijd": "14:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/de-gruffalo-meneer-monster-3/26-05-2027-14-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
         "Luuk Ransijn"
       ],
       "titel": "Uitkijk",
@@ -419,6 +445,45 @@
     {
       "theater": "amphion",
       "artiesten": [
+        "Musical zonder Billen 4+"
+      ],
+      "titel": "Jaski & Groenteman (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-28",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/musical-zonder-billen-4-jaski-groenteman-4/28-04-2027-14-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Mime Wave"
+      ],
+      "titel": "Mijn Kleuren (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-28",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/mime-wave-mijn-kleuren-2/28-04-2027-11-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Mime Wave"
+      ],
+      "titel": "Mijn Kleuren (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-28",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/mime-wave-mijn-kleuren-2/28-04-2027-10-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
         "Christian van Eijkelenburg"
       ],
       "titel": "Small Talk",
@@ -471,6 +536,19 @@
     {
       "theater": "amphion",
       "artiesten": [
+        "Juf Braaksel De Musical"
+      ],
+      "titel": "naar het boek van Carry Slee (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-28",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/juf-braaksel-de-musical-naar-het-boek-van-carry-slee-6/28-03-2027-13-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
         "Stefan Hendrikx"
       ],
       "titel": "In Perspectief",
@@ -480,6 +558,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.amphion.nl/theater/stefan-hendrikx-in-perspectief/27-03-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Prins Panter"
+      ],
+      "titel": "Sonnevanck & Dieheleding (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-17",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/prins-panter-sonnevanck-dieheleding-8/17-03-2027-15-00/"
     },
     {
       "theater": "amphion",
@@ -545,6 +636,19 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.amphion.nl/theater/valentina-toth-revue-revanche-try-out/17-02-2027-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Steven Kazan"
+      ],
+      "titel": "Hoe Dan! (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/steven-kazan-hoe-dan-6/07-02-2027-15-00/"
     },
     {
       "theater": "amphion",
@@ -627,6 +731,19 @@
     {
       "theater": "amphion",
       "artiesten": [
+        "Mus & kapitein Kwaadbaard"
+      ],
+      "titel": "en De 5 Slangen (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/mus-kapitein-kwaadbaard-en-de-5-slangen-8/03-01-2027-13-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
         "Frans Miggelbrink"
       ],
       "titel": "Hulde",
@@ -679,6 +796,58 @@
     {
       "theater": "amphion",
       "artiesten": [
+        "Aladdin"
+      ],
+      "titel": "De Musical (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/aladdin-de-musical-6/20-12-2026-16-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Aladdin"
+      ],
+      "titel": "De Musical (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/aladdin-de-musical-6/20-12-2026-13-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "De Kersthaas"
+      ],
+      "titel": "De Grote Haay (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/de-kersthaas-de-grote-haay-4/19-12-2026-16-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "De Kersthaas"
+      ],
+      "titel": "De Grote Haay (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/de-kersthaas-de-grote-haay-4/19-12-2026-14-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
         "Andries Tunru & Stefan Hendrikx"
       ],
       "titel": "Oudejaars-improvisatie-extravaganza 2026",
@@ -688,6 +857,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.amphion.nl/theater/beperkt-houdbaar-oudejaars-improvisatie-experivaganza-2026/17-12-2026-20-00/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Alice in Wonderland"
+      ],
+      "titel": "De Toneelmakerij & DOX (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/alice-in-wonderland-de-toneelmakerij-dox-8/13-12-2026-16-00/"
     },
     {
       "theater": "amphion",
@@ -714,6 +896,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.amphion.nl/theater/chris-verlaan-ach-er-komen-geen-kindjes-van/26-11-2026-20-30/"
+    },
+    {
+      "theater": "amphion",
+      "artiesten": [
+        "Alle kinderen stinken"
+      ],
+      "titel": "Judith van den Berg & Patrick Duijtshoff (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-25",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/alle-kinderen-stinken-judith-van-den-berg-patrick-duijtshoff-6/25-11-2026-15-00/"
     },
     {
       "theater": "amphion",

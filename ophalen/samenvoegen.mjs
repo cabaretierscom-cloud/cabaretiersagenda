@@ -210,7 +210,8 @@ function zorgVoorVoorstelling(r, artiestIdsVanRecord, theaterId) {
   // Een zaal die het als cabaret labelt, hoort bij hetzelfde stuk als er spelers overlappen.
   {
     const overlap = (v) => !v.artiesten.length || !artiestIdsVanRecord.length || v.artiesten.some((a) => artiestIdsVanRecord.includes(a));
-    const stuk = voorstellingen.find((v) => (v.genre === "komedie" || r.genre === "komedie") && zelfdeTitel(v.titel, r.titel) && overlap(v));
+    const kind = r.genre === "kindervoorstellingen";
+    const stuk = voorstellingen.find((v) => (isStuk(v.genre) || isStuk(r.genre)) && (kind || v.genre === "kindervoorstellingen" ? v.genre === r.genre && kinderSleutel(v.titel) === kinderSleutel(r.titel) : zelfdeTitel(v.titel, r.titel)) && overlap(v));
     if (stuk) {
       stuk.artiesten = [...new Set([...stuk.artiesten, ...artiestIdsVanRecord])];
       if (stuk.artiesten.length) delete stuk.theater;
@@ -266,6 +267,44 @@ function bekendeNamenIn(tekst) {
 // ("Silence of the Dogs" / "Het Zuidelijk Toneel") is omgedraaid.
 // Een hele rolverdeling als artiesten ("Bianca Krijgsman, Theo Maassen, Rop Verheijen e.a.") wordt
 // teruggebracht tot de bekende artiesten erin; acteurs die we verder niet kennen krijgen geen pagina.
+// Kindervoorstellingen (sinds november 2026) gedragen zich als toneel: het stuk is de voorstelling, het
+// gezelschap of de cast de "artiest". Zie isStuk(); de leeftijd ("(6+)", "| 3+", "(2 t/m 5 jaar)") staat
+// bij de zaal en hoort niet in de titel of de naam.
+const isStuk = (genre) => genre === "komedie" || genre === "kindervoorstellingen";
+// Sleutel om hetzelfde kinderstuk bij verschillende zalen te herkennen: zonder "de musical" of "naar het
+// boek van ..." erachter ("Juf Braaksel: De Musical" = "Juf Braaksel De Musical naar het boek van Carry Slee").
+const kinderSleutel = (t) => slug(String(t || "").replace(/\s+naar (het|de|een)\b.*$/i, "").replace(/[\s:,–-]*\b(de|the)?\s*musical\s*$/i, "")).replace(/-/g, "");
+const zonderLeeftijd = (t) => String(t || "")
+  .replace(/\s*[(\[][^()\[\]]*\d[^()\[\]]*(\+|jaar|jr\b|maand)[^()\[\]]*[)\]]/gi, "")
+  .replace(/\s*[|–-]?\s*\b\d{1,2}([,.]\d)?\s*\+(\s*(en|&)\s*\d{1,2}\s*\+)*\s*$/i, "")
+  .replace(/\s*\|\s*(bijgeboekt|extra voorstelling|wegens succes[^|]*)!?\s*$/i, "")
+  .replace(/^\s*(van |voor kinderen (van|tot) )?\d+([,.]\d+)?\s*((t\/m|tot|-|–)\s*\d+([,.]\d+)?\s*)?(jaar|maanden)(\s*en ouder)?\s*$/i, "").replace(/\s*[|–-]\s*$/, "").trim();
+// Bij kindervoorstellingen is de voorstelling (het stuk) de hoofdzaak; zalen zetten de titel, het
+// gezelschap, de cast of een omschrijving wisselend in het artiest- en het titelveld. kinderOpOrde()
+// maakt daar één lijn van: titel = de voorstelling, artiest = het gezelschap of het merk (Woezel & Pip),
+// of geen artiest. Hetzelfde stuk bij verschillende zalen wordt daarna één voorstelling (stap 2c-2).
+const GEZELSCHAP = /\b(theater|theatre|producties|productions|company|compagnie|collectief|gezelschap|studios?|toneel\w*|dans|media|ensemble|tg\.|orkest|philharmonie|opera|hetpaleis|horde|laagland|sonnevanck|artemis|wunderbaum|filiaal|houten huis|meneer monster|van hoorne|klein amsterdam|lil ones|plan-d|kik productions|entertainment|events|stichting|mediadome)\b/i;
+const OMSCHRIJVING = { test: (t) => /^(de |een )?(musical|theatershow|voorstelling|familievoorstelling|kindervoorstelling|familiemusical|show|theaterconcert)$|^(gebaseerd|naar het|naar de|met |door |voor |over |een )|\bjaar\b/i.test(t) || /^\p{Ll}/u.test(t) };
+const isCast = (t) => !GEZELSCHAP.test(t) && (/,|\be\.?\s?v?\.?a\.?$/i.test(t) || /^\p{Lu}\S* \p{Lu}\S*( [\p{L}']+)*( en | & )\p{Lu}/u.test(t));
+function kinderOpOrde(r, ruw) {
+  const a = zonderLeeftijd(ruw || ""), t = zonderLeeftijd(r.titel);
+  let titel = t, maker = a;
+  if (!t || OMSCHRIJVING.test(t) && t.length < 25 && /musical|show|voorstelling/i.test(t)) [titel, maker] = [a, ""]; // "Aladdin" / "De Musical"
+  else if (!a) [titel, maker] = [t, ""];
+  else if (GEZELSCHAP.test(t) && !GEZELSCHAP.test(a)) [titel, maker] = [a, t];
+  else if (GEZELSCHAP.test(a) && !GEZELSCHAP.test(t)) [titel, maker] = [t, a];
+  else if (OMSCHRIJVING.test(a) || a.length > 45) [titel, maker] = [t, ""];
+  else if (slug(a).startsWith(slug(t))) [titel, maker] = [a, t]; // "Juf Roos gaat op vakantie" / "Juf Roos"
+  else if ((/^\p{Ll}/u.test(t) || /^(gaat|gaan|heeft|hebben|bouwen|bouwt|is|zijn|viert|vieren|maakt|maken|zoekt|zoeken|wil|willen)\b/i.test(t)) && t.length < 40) [titel, maker] = [`${a} ${t[0].toLowerCase()}${t.slice(1)}`, ""]; // "Buurman en Buurman" / "bouwen een feestje"
+  else if (OMSCHRIJVING.test(t) || t.length > 45 || isCast(t)) [titel, maker] = [a, ""];
+  r.titel = netteHoofdletters(titel);
+  // Een gezelschap blijft één naam ("Maas theater en dans & Acteursgroep Wunderbaum"), tenzij aliassen.json iets anders zegt.
+  r.artiesten = maker ? aliasOpSleutel.get(slug(maker)) || [netteNaam(maker)] : [];
+}
+
+// Geen voorstelling: voorleesuurtjes, workshops en dergelijke uit de jeugdagenda van een zaal.
+const GEEN_KINDERVOORSTELLING = /voorle[ez]|babybieb|workshop|cursus|knutsel|speurtocht|rondleiding|lezing|open dag|\bles(sen)?\b|kinderfeestje|vakantieweek|spelinstuif/i;
+
 function stukOpOrde(r, ruweArtiest) {
   // Een "artiest" die via aliassen.json wegvalt ("Lift": []), is hier waarschijnlijk de titel van het stuk.
   if (!r.artiesten.length && ruweArtiest && bekendeNamenIn(r.titel).length) r.artiesten = [ruweArtiest];
@@ -383,35 +422,43 @@ for (const f of bronFiles) {
       soort: bronRecord.soort ?? (/\b(herneming|reprise)\b/i.test(bronRecord.titel || "") ? "reprise" : null),
       artiesten: opgeschoondeArtiesten(bronRecord.artiesten || []),
     };
+    if (r.genre === "kindervoorstellingen") {
+      if (GEEN_KINDERVOORSTELLING.test(`${(bronRecord.artiesten || []).join(" ")} ${bronRecord.titel || ""}`)) continue;
+      kinderOpOrde(r, (bronRecord.artiesten || []).join(" & "));
+      if (!r.titel) continue;
+    }
     // Nog eens kijken of artiest en titel omgedraaid zijn, nu met alle artiesten uit alle bronnen
     // ("CabaRock De Liefde!" / "Jim de Groot & Sebas Wolfensberger").
-    if (bronRecord.artiesten?.length === 1) {
-      const { artiest, titel } = artiestOfTitel(bronRecord.artiesten[0], r.titel);
-      if (artiest !== bronRecord.artiesten[0]) { r.titel = titel; r.artiesten = opgeschoondeArtiesten([artiest]); }
+    const ruweArtiest = bronRecord.artiesten?.length === 1 ? (r.genre === "kindervoorstellingen" ? zonderLeeftijd(bronRecord.artiesten[0]) : bronRecord.artiesten[0]) : null;
+    if (ruweArtiest && r.genre !== "kindervoorstellingen") {
+      const { artiest, titel } = artiestOfTitel(ruweArtiest, r.titel);
+      if (artiest !== ruweArtiest) { r.titel = titel; r.artiesten = opgeschoondeArtiesten([artiest]); }
     }
     // Geen artiest, maar de namen vooraan in de titel ("Najib & Roué – Alles is comedy", Goudse Schouwburg):
     // is het deel vóór het streepje een bekende artiest of een alias, dan is dat de artiest.
-    if (!r.artiesten.length && bronRecord.genre !== "komedie") {
+    if (!r.artiesten.length && !isStuk(bronRecord.genre)) {
       const m = r.titel.match(/^(.+?)\s+[–—-]\s+(.+)$/);
       if (m && (aliasOpSleutel.has(slug(m[1])) || isBekend(m[1]))) { r.artiesten = opgeschoondeArtiesten([m[1]]); r.titel = m[2]; }
     }
     // Geen artiest en de titel is precies een bekende artiest of alias ("Cabarestafette", Parktheater).
-    if (!r.artiesten.length && r.titel && (aliasOpSleutel.has(slug(r.titel)) || isBekend(r.titel))) { r.artiesten = opgeschoondeArtiesten([r.titel]); r.titel = ""; r.zonderTitel = true; }
+    // Niet bij kindervoorstellingen: daar is de titel het stuk (kinderOpOrde).
+    if (r.genre !== "kindervoorstellingen" && !r.artiesten.length && r.titel && (aliasOpSleutel.has(slug(r.titel)) || isBekend(r.titel))) { r.artiesten = opgeschoondeArtiesten([r.titel]); r.titel = ""; r.zonderTitel = true; }
     // Toneel en komedie hebben hun eigen opruimregels (stukOpOrde); de regels hieronder zijn voor cabaret.
-    if (r.genre === "komedie" || /^(komedie|blijspel|klucht)\b/i.test(r.titel)) stukOpOrde(r, bronRecord.artiesten?.length === 1 ? bronRecord.artiesten[0] : null);
+    if (r.genre === "kindervoorstellingen") { /* al op orde (kinderOpOrde) */ }
+    else if (isStuk(r.genre) || /^(komedie|blijspel|klucht)\b/i.test(r.titel)) stukOpOrde(r, ruweArtiest);
     // "Eigenlijk" / "Viggo Waas, Eddie B. Wahr & Kees van der Vooren": een namenlijst als titel en een
     // onbekende "artiest" (of één los woord) zijn omgedraaid.
     else if (r.artiesten.length === 1 && (!isBekend(r.artiesten[0]) || !/\s/.test(r.artiesten[0])) && /^[^,]+(, [^,]+)+ (&|en) [^,]+$/.test(r.titel)) {
       [r.titel, r.artiesten] = [r.artiesten[0], opgeschoondeArtiesten([r.titel])];
     }
     // Een rolverdeling als titel ("Paul de Leeuw, Annick Boer e.a.") betekent: de "artiest" is de titel.
-    if (r.genre !== "komedie" && !/^(komedie|blijspel|klucht)\b/i.test(r.titel) && r.artiesten.length === 1 && /(,.*,|\be\.a\.?$|\bea$)/i.test(r.titel)) {
+    if (!isStuk(r.genre) && !/^(komedie|blijspel|klucht)\b/i.test(r.titel) && r.artiesten.length === 1 && /(,.*,|\be\.a\.?$|\bea$)/i.test(r.titel)) {
       r.titel = r.artiesten[0];
       r.artiesten = [];
     }
     // Staat die voorstelling elders als "artiest" in de agenda ("Vrouwejaars 2026", "We zijn toch familie"),
     // dan hoort deze avond daarbij in plaats van een losse voorstelling per zaal.
-    if (!r.artiesten.length && r.titel && (aliasOpSleutel.has(slug(r.titel)) || isBekend(r.titel))) { r.artiesten = opgeschoondeArtiesten([r.titel]); r.titel = ""; r.zonderTitel = true; }
+    if (r.genre !== "kindervoorstellingen" && !r.artiesten.length && r.titel && (aliasOpSleutel.has(slug(r.titel)) || isBekend(r.titel))) { r.artiesten = opgeschoondeArtiesten([r.titel]); r.titel = ""; r.zonderTitel = true; }
     // Verbeteringen (voorstelling-correcties.json): andere schrijfwijzen van een titel worden één voorstelling.
     // "naar": "" betekent: zonder titel (de naam is de voorstelling); "leeg": false laat avonden zonder titel met rust.
     for (const c of correcties.titels || []) {
@@ -587,11 +634,11 @@ if (Object.keys(ZAAL_SAMEN).length) {
 {
   const opTitel = new Map();
   for (const v of voorstellingen) {
-    const k = slug(v.titel);
+    const k = v.genre === "kindervoorstellingen" ? `kind:${kinderSleutel(v.titel)}` : slug(v.titel);
     if (!opTitel.has(k)) opTitel.set(k, []);
     opTitel.get(k).push(v);
   }
-  const komisch = (v) => v.genre === "komedie" || genreStemmen.get(v.id)?.komedie;
+  const komisch = (v) => isStuk(v.genre) || genreStemmen.get(v.id)?.komedie || genreStemmen.get(v.id)?.kindervoorstellingen;
   for (const groep of opTitel.values()) {
     if (groep.length < 2 || !groep.some(komisch)) continue;
     groep.sort((a, b) => b.artiesten.length - a.artiesten.length);

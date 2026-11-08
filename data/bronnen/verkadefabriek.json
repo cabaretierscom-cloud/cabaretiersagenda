@@ -1,7 +1,7 @@
 {
   "bron": "verkadefabriek",
   "naam": "Verkadefabriek",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "verkadefabriek-s-hertogenbosch",
@@ -555,7 +555,7 @@
       "genre": "cabaret",
       "datum": "2027-04-14",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.verkadefabriek.nl/agenda/david-van-rosmalen-als-ik-jou-was-reprise-162292"
     },
@@ -835,6 +835,214 @@
     {
       "theater": "verkadefabriek-s-hertogenbosch",
       "artiesten": [
+        "Grote Mensen"
+      ],
+      "titel": "Skeletje (5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-08",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/grote-mensen-skeletje-6-162871"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Het Filiaal"
+      ],
+      "titel": "De jongen die van de wereld hield (9+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/het-filiaal-de-jongen-die-van-de-wereld-hield-9-162873"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Studio Figur"
+      ],
+      "titel": "Kakek, Opa en ik (7+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-06",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/studio-figur-kakek-opa-en-ik-7-162874"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "De Horde"
+      ],
+      "titel": "Het huis dat stopte met staan (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/de-horde-het-huis-dat-stopte-met-staan-8-162875"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Als het Ware"
+      ],
+      "titel": "Het kado als het ware (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/als-het-ware-het-kado-als-het-ware-6-162876"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Bonte Hond"
+      ],
+      "titel": "Wie is Hier Nou Gek (10+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/bonte-hond-wie-is-hier-nou-gek-10-162878"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Theater Artemis en Theater Basel"
+      ],
+      "titel": "Veel te eng voor kleuters (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-13",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/theater-artemis-en-theater-basel-veel-te-eng-vo-162879"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Theater Artemis en Theater Basel"
+      ],
+      "titel": "Veel te eng voor kleuters (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/theater-artemis-en-theater-basel-veel-te-eng-vo-162879"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Dieheleding"
+      ],
+      "titel": "Prins Panter (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-29",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/dieheleding-prins-panter-8-162881"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "De Horde"
+      ],
+      "titel": "Tent (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.verkadefabriek.nl/agenda/de-horde-tent-6-reprise-162882"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Studio Vavoom/ Panama Pictures/ Verkadefabriek"
+      ],
+      "titel": "Lost&Found (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/studio-vavoom-panama-pictures-verkadefabriek-l-162883"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Maas Theater en Dans"
+      ],
+      "titel": "Pops of the top (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-06",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/maas-theater-en-dans-pops-of-the-top-3-do-6-162884"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Maas Theater en Dans"
+      ],
+      "titel": "Pops of the top (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-06",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/maas-theater-en-dans-pops-of-the-top-3-do-6-162884"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "De zAAk A"
+      ],
+      "titel": "JoepTube (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-09",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/de-zaak-a-joeptube-8-162886"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Garage TDI"
+      ],
+      "titel": "Van mij! (2,5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-30",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/garage-tdi-van-mij-25-162887"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Garage TDI"
+      ],
+      "titel": "Van mij! (2,5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-30",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/garage-tdi-van-mij-25-162887"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
         "Stefan Pop"
       ],
       "titel": "Genoeg over mij",
@@ -900,6 +1108,19 @@
     {
       "theater": "verkadefabriek-s-hertogenbosch",
       "artiesten": [
+        "HNTjong"
+      ],
+      "titel": "Dag Poes (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/hntjong-dag-poes-4-162872"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
         "Remy Evers"
       ],
       "titel": "Graag gedaan",
@@ -948,39 +1169,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/cameretten-comedy-masterclass-166573"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
-      "datum": "2026-11-07",
-      "tijd": "15:50",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
-      "datum": "2026-11-07",
-      "tijd": "20:50",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
-      "datum": "2026-11-08",
-      "tijd": "14:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
     },
     {
       "theater": "verkadefabriek-s-hertogenbosch",

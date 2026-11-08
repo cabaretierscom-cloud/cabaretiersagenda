@@ -1,7 +1,7 @@
 {
   "bron": "schakel",
   "naam": "CC De Schakel",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "cc-de-schakel",
@@ -13,6 +13,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Tal en Thee"
+      ],
+      "titel": "Rapsodie",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/tal-en-thee-c8f7"
+    },
     {
       "theater": "cc-de-schakel",
       "artiesten": [
@@ -38,6 +51,45 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.ccdeschakel.be/voorstellingen/wannes-cappelle-jzlk"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Percossa (NL)"
+      ],
+      "titel": "Bommetje!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/percossa-nl-65mm"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Theatercompagnie De Kroon"
+      ],
+      "titel": "Paniek in de Pietenfabriek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/theatercompagnie-de-kroon-mdw9"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Theatercompagnie De Kroon"
+      ],
+      "titel": "Paniek in de Pietenfabriek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/theatercompagnie-de-kroon-mdw9"
     },
     {
       "theater": "cc-de-schakel",
@@ -77,6 +129,52 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.ccdeschakel.be/voorstellingen/humo-s-comedy-cup-finalistentour-x9m1"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Dieren vieren kerst",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/dieren-vieren-kerst-m9dc"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Dolfje Weerwolfje",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/dolfje-weerwolfje-8llh"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Tegenwoordig heet iedereen sorry",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/tegenwoordig-heet-iedereen-sorry-jzhm"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Theater Terra"
+      ],
+      "titel": "Pippi en de Piraten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-15",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/theater-terra-jh84"
     },
     {
       "theater": "cc-de-schakel",
@@ -214,6 +312,71 @@
     {
       "theater": "cc-de-schakel",
       "artiesten": [
+        "Be Flat"
+      ],
+      "titel": "Living",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/be-flat-1sc9"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Be Flat"
+      ],
+      "titel": "Living",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/be-flat-1sc9"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Be Flat"
+      ],
+      "titel": "Living",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/be-flat-1sc9"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Frisse Oren"
+      ],
+      "titel": "Tuimelaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "09:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/frisse-oren-jh7z"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Frisse Oren"
+      ],
+      "titel": "Tuimelaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/frisse-oren-jh7z"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
         "Henk Rijckaert"
       ],
       "titel": "Belachelijk!",
@@ -236,6 +399,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.ccdeschakel.be/voorstellingen/william-boeva-r21r"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Laika"
+      ],
+      "titel": "De Laatste Boom",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-20",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/laika-yzsp"
     },
     {
       "theater": "cc-de-schakel",
@@ -301,6 +477,32 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.ccdeschakel.be/voorstellingen/dries-heyneman-c8c2"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "de Roovers"
+      ],
+      "titel": "Wat alleen wij weten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-16",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/de-roovers-7jch"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "BRONKS & Not Standing/Alexander Vantournhout"
+      ],
+      "titel": "Souvenirshop",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/bronks-not-standing-alexander-vantournhout-x9kt"
     },
     {
       "theater": "cc-de-schakel",
@@ -405,7 +607,41 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.ccdeschakel.be/voorstellingen/ddt-houdt-uitverkoop-ncn4"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Bronks & Bos+"
+      ],
+      "titel": "Bos",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/bronks-bos-dfxb"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Bronks & Bos+"
+      ],
+      "titel": "Bos",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/bronks-bos-dfxb"
     }
   ],
-  "recensies": {}
+  "recensies": {
+    "https://www.ccdeschakel.be/voorstellingen/bronks-not-standing-alexander-vantournhout-x9kt": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "... lekker raar."
+      }
+    ]
+  }
 }

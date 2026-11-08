@@ -1,7 +1,7 @@
 {
   "bron": "stoep",
   "naam": "Theater de Stoep",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "theater-de-stoep",
@@ -268,19 +268,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterdestoep.nl/voorstelling/de-broers-van-arkel-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
-        "Jan Beuving"
-      ],
-      "titel": "Dekpunt",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterdestoep.nl/voorstelling/jan-beuving-2627"
     },
     {
       "theater": "theater-de-stoep",

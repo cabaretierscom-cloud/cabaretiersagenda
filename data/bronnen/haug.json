@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -13,6 +13,17 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "English Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-11-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/english-open-mic-111714056"
+    },
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [
@@ -966,17 +977,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
-      "titel": "Chuckle-Up!",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "21:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/chuckle-up-111701049"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
       "titel": "Chuckle-Up! in English",
       "genre": "stand-up",
       "datum": "2026-11-27",
@@ -1065,17 +1065,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
-      "titel": "Best of Stand-Up Early Show",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "18:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-early-show-111701034"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
       "titel": "Best of Stand-Up",
       "genre": "stand-up",
       "datum": "2026-11-27",
@@ -1116,17 +1105,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701027"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
-      "titel": "Best of Stand-Up",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701026"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1264,20 +1242,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [
-        "Tobi Kooiman",
-        "Alina Sharipova"
-      ],
-      "titel": "Tobi Kooiman & Alina Sharipova",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "16:45",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/tobi-kooiman-alina-sharipova-111680023"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
         "Sophie Duker"
       ],
       "titel": "Sophie Duker",
@@ -1326,20 +1290,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/aidan-jones-111663950"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Tobi Kooiman",
-        "Alina Sharipova"
-      ],
-      "titel": "Tobi Kooiman & Alina Sharipova",
-      "genre": "stand-up",
-      "datum": "2026-11-07",
-      "tijd": "19:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/tobi-kooiman-alina-sharipova-111640411"
     },
     {
       "theater": "comedy-club-haug-rotterdam",

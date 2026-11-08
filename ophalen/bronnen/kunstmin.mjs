@@ -1,6 +1,6 @@
 // Kunstmin, Dordrecht. De WordPress-koppeling (/wp-json/wp/v2/show) geeft per voorstelling artiest
 // (acf.title), titel (acf.subtitle) en alle speeldata met kaartstatus (acf.events). We vragen alleen
-// de genres Cabaret (37) en Cabaret & Komedie (59) op.
+// de genres Cabaret (37), Cabaret & Komedie (59) en Jeugd & Familie (46) op.
 import { getJson } from "../lib/http.mjs";
 import { decodeEntities } from "../lib/html.mjs";
 import { herkenSoort, netteHoofdletters, netteNaam } from "../lib/normaliseer.mjs";
@@ -17,13 +17,16 @@ export default {
   ],
 
   async ophalen({ log, vandaag }) {
+    // Cabaret (37), Cabaret & Komedie (59) en sinds november 2026 Jeugd & Familie (46).
     const shows = [];
-    for (let p = 1; p <= 10; p++) {
-      const pagina = await getJson(`${BASIS}/wp-json/wp/v2/show?show-genre=37,59&per_page=100&page=${p}&_fields=link,acf`).catch(() => []);
-      shows.push(...pagina);
-      if (pagina.length < 100) break;
+    for (const [genres, genre] of [["37,59", null], ["46", "kindervoorstellingen"]]) {
+      for (let p = 1; p <= 10; p++) {
+        const pagina = await getJson(`${BASIS}/wp-json/wp/v2/show?show-genre=${genres}&per_page=100&page=${p}&_fields=link,acf`).catch(() => []);
+        shows.push(...pagina.map((x) => ({ ...x, genre })));
+        if (pagina.length < 100) break;
+      }
     }
-    log(`${shows.length} cabaretvoorstellingen`);
+    log(`${shows.length} voorstellingen (cabaret en jeugd & familie)`);
     const out = [];
     for (const s of shows) {
       const a = s.acf || {};
@@ -41,7 +44,7 @@ export default {
           theater: "kunstmin",
           artiesten: artiest ? [artiest] : [],
           titel,
-          genre: /oudejaars/i.test(titel) ? "oudejaarsconference" : "cabaret",
+          genre: s.genre || (/oudejaars/i.test(titel) ? "oudejaarsconference" : "cabaret"),
           datum: `${e.start_date.slice(0, 4)}-${e.start_date.slice(4, 6)}-${e.start_date.slice(6)}`,
           tijd: /^\d{2}:\d{2}/.test(e.start_time || "") ? e.start_time.slice(0, 5) : null,
           status: STATUS[e.status] || "gepland",

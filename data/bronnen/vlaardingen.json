@@ -1,7 +1,7 @@
 {
   "bron": "vlaardingen",
   "naam": "Stadsgehoorzaal Vlaardingen",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "stadsgehoorzaal-vlaardingen",
@@ -29,6 +29,32 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
+        "Mees Kees (7+)"
+      ],
+      "titel": "De husselrace",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/mees-kees"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Mees Kees (7+)"
+      ],
+      "titel": "De husselrace",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/mees-kees"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
         "Teun van den Elzen"
       ],
       "titel": "Ze moesten eens weten",
@@ -38,6 +64,58 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://stadsgehoorzaal.nl/programma/teun-van-den-elzen-26-3-27"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Umi (0+)"
+      ],
+      "titel": "Wonderland Collectief en Makiko Ito",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/umi"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Umi (0+)"
+      ],
+      "titel": "Wonderland Collectief en Makiko Ito",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/umi"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "De Circusbroers (4+)"
+      ],
+      "titel": "Met Berl Both en Huub Cooijmans",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-circusbroers"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "De Nog Grotere Slijmmusical 2 (6+)"
+      ],
+      "titel": "Slijm is terug! Groter, spectaculairder en met nog meer slijm!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-nog-grotere-slijmmusical"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -64,6 +142,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/janice-blok"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Peuter- en kleuterkerstconcert (2+)"
+      ],
+      "titel": "Krulmuziek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "11:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/peuter-en-kleuterkerstconcert"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Dreumeskerstconcert (1+)"
+      ],
+      "titel": "Krulmuziek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "09:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/dreumeskerstconcert"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -159,6 +263,32 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
+        "Ernst, Bobbie & de rest (3+)"
+      ],
+      "titel": "Hebben geen idee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/ernst-bobbie-de-rest"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Ernst, Bobbie & de rest (3+)"
+      ],
+      "titel": "Hebben geen idee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/ernst-bobbie-de-rest"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
         "Valentina Tóth"
       ],
       "titel": "Revue Revanche",
@@ -168,6 +298,19 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://stadsgehoorzaal.nl/programma/valentina-toth"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "De KinderPraatPaal Praatshow (4+)"
+      ],
+      "titel": "Door Camie Bonger",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-kinderpraatpaal-praatshow-feb"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -194,6 +337,71 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/richard-groenendijk"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "De Grote Dino Show"
+      ],
+      "titel": "De Geheime Tijdmachine",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "13:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-grote-dino-show"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "De Grote Dino Show"
+      ],
+      "titel": "De Geheime Tijdmachine",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-grote-dino-show"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Het Kleurenmonster (3+)"
+      ],
+      "titel": "Theater Stof",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/het-kleurenmonster"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Het Kleurenmonster (3+)"
+      ],
+      "titel": "Theater Stof",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/het-kleurenmonster"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Musical4daagse (6 t/m 12 jaar)"
+      ],
+      "titel": "Een unieke theaterervaring",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-22",
+      "tijd": "09:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/musical4daagse-feb"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -276,6 +484,19 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
+        "De Kleine Zeemeermin de musical"
+      ],
+      "titel": "Stichting Upon A Dream Creations",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-13",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-kleine-zeemeermin"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
         "Remko Vrijdag"
       ],
       "titel": "Marko Maandag",
@@ -285,6 +506,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/remko-vrijdag"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Babykerstconcert (0+)"
+      ],
+      "titel": "Krulmuziek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "10:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/babykerstconcert"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Maya Show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Maya Show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -302,6 +562,19 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
+        "Juf Braaksel - De Musical (6+)"
+      ],
+      "titel": "Een swingend en spannend avontuur voor het hele gezin",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/juf-braaksel-de-musical"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
         "David van Rosmalen"
       ],
       "titel": "Als ik jou was",
@@ -311,6 +584,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/david-van-rosmalen"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Titus & Fien De Revue (2+)"
+      ],
+      "titel": "Vooruit, nog één keertje dan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-20",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://stadsgehoorzaal.nl/programma/titus-fien"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Glijbaan (1,5+)"
+      ],
+      "titel": "Dt DaalRuit",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/glijbaan-1-5-21-2-27"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Sinterklaasshow Hippe Gasten (4+)"
+      ],
+      "titel": "Fan van Sinterklaas",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/hippe-gasten"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",

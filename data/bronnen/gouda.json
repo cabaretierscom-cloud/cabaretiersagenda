@@ -1,7 +1,7 @@
 {
   "bron": "gouda",
   "naam": "Goudse Schouwburg",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "goudse-schouwburg",
@@ -13,6 +13,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "MaxTak"
+      ],
+      "titel": "Pan (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-08",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/maxtak-pan-8-10025519/"
+    },
     {
       "theater": "goudse-schouwburg",
       "artiesten": [
@@ -75,6 +88,32 @@
       "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://goudseschouwburg.nl/agenda/pieter-derks-ja-leuk-reprise-10025219/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Woezel en Pip"
+      ],
+      "titel": "Feest in de Tovertuin (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/woezel-en-pip-feest-in-de-tovertuin-2-10025202/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Wildebras"
+      ],
+      "titel": "Overleven in de jungle",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/wildebras-overleven-in-de-jungle-10025622/"
     },
     {
       "theater": "goudse-schouwburg",
@@ -218,6 +257,80 @@
     {
       "theater": "goudse-schouwburg",
       "artiesten": [],
+      "titel": "Juf Roos gaat op vakantie (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/juf-roos-gaat-op-vakantie-2-10025223/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Juf Roos gaat op vakantie (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/juf-roos-gaat-op-vakantie-2-10025224/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "De musical zonder billen (4+)"
+      ],
+      "titel": "Jaski & Groenteman",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-28",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/de-musical-zonder-billen-4-10025648/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "De musical zonder billen (4+)"
+      ],
+      "titel": "Jaski en Groenteman",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-28",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://goudseschouwburg.nl/agenda/de-musical-zonder-billen-4-premiere-10040432/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "De nog grotere slijmmusical (6+)"
+      ],
+      "titel": "Matheu Hinzen, Anique Dreamon e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/de-nog-grotere-slijmmusical-6-10025483/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "De nog grotere slijmmusical (6+)"
+      ],
+      "titel": "Matheu Hinzen, Anique Dreamon e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/de-nog-grotere-slijmmusical-6-10025484/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
       "titel": "Comedy Club",
       "genre": "cabaret",
       "datum": "2027-01-07",
@@ -225,6 +338,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/comedy-club-10025962/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Pieter Hulst & Willem Voogd"
+      ],
+      "titel": "De proefkeuken en de wc van tijd (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-08",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/pieter-hulst-willem-voogd-de-proefkeuken-en-de-wc-van-tijd-8-10025593/"
     },
     {
       "theater": "goudse-schouwburg",
@@ -290,6 +416,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/andre-manuel-de-eenzame-ziel-10025498/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Als ik de baas was… (6+)"
+      ],
+      "titel": "Myrthe van der Vuurst de Vries",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "14:30",
+      "status": "uitverkocht",
+      "soort": "première",
+      "bron": "https://goudseschouwburg.nl/agenda/als-ik-de-baas-was-6-premiere-10025699/"
     },
     {
       "theater": "goudse-schouwburg",
@@ -366,6 +505,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/kamagurka-op-zekere-dag-10025509/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Meneer Monster"
+      ],
+      "titel": "De Waanzinnige Boomhut van 78 verdiepingen (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/meneer-monster-de-waanzinnige-boomhut-van-78-verdiepingen-6-10025464/"
     },
     {
       "theater": "goudse-schouwburg",
@@ -483,6 +635,19 @@
     {
       "theater": "goudse-schouwburg",
       "artiesten": [
+        "Theater Terra"
+      ],
+      "titel": "Kikker is Kikker (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-23",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/theater-terra-kikker-is-kikker-3-10025700/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
         "Renske van Dijk"
       ],
       "titel": "Kankerwijf",
@@ -492,6 +657,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/renske-van-dijk-kankerwijf-10040028/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Sonnevanck"
+      ],
+      "titel": "Familiecarrousel",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/sonnevanck-familiecarrousel-10025692/"
     },
     {
       "theater": "goudse-schouwburg",
@@ -529,6 +707,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/valentina-toth-revue-revanche-10025674/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Mus & Kapitein Kwaadbaard en de 5 slangen (8+)"
+      ],
+      "titel": "Gebaseerd op het boek van Kevin Hassing",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/mus-kapitein-kwaadbaard-en-de-5-slangen-8-10025239/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Mus & Kapitein Kwaadbaard en de 5 slangen (8+)"
+      ],
+      "titel": "Gebaseerd op het boek van Kevin Hassing",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/mus-kapitein-kwaadbaard-en-de-5-slangen-8-10025240/"
     },
     {
       "theater": "goudse-schouwburg",
@@ -580,6 +784,28 @@
     },
     {
       "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Bing is jarig (1+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/bing-is-jarig-1-10025237/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Bing is jarig (1+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/bing-is-jarig-1-10025238/"
+    },
+    {
+      "theater": "goudse-schouwburg",
       "artiesten": [
         "Marja van Katendrecht"
       ],
@@ -627,6 +853,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/nabil-daar-is-hij-weer-10025546/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Theater Artemis"
+      ],
+      "titel": "Veel te eng voor kleuters (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-27",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/theater-artemis-veel-te-eng-voor-kleuters-6-10025667/"
     },
     {
       "theater": "goudse-schouwburg",
@@ -718,6 +957,19 @@
     {
       "theater": "goudse-schouwburg",
       "artiesten": [
+        "WIRWAR Producties"
+      ],
+      "titel": "Weg ermee (5 t/m 12 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/wirwar-producties-weg-ermee-5-t-m-12-jaar-10025523/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
         "Spruijt & Opperman"
       ],
       "titel": "Altijdloos",
@@ -727,6 +979,58 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/spruijt-opperman-altijdloos-10025696/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Aladdin de musical (4+)"
+      ],
+      "titel": "Stijn Mac Gillavry, Natascha Molly e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-24",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/aladdin-de-musical-4-10025211/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Aladdin de musical (4+)"
+      ],
+      "titel": "Stijn Mac Gillavry, Natascha Molly e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/aladdin-de-musical-4-10025212/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Aladdin de musical (4+)"
+      ],
+      "titel": "Stijn Mac Gillavry, Natascha Molly e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/aladdin-de-musical-4-10025213/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Plankton"
+      ],
+      "titel": "De mens, het duurde maar heel even (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-28",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/plankton-de-mens-het-duurde-maar-heel-even-8-10025637/"
     },
     {
       "theater": "goudse-schouwburg",
@@ -873,6 +1177,45 @@
     },
     {
       "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Prentenboekjesfestival"
+      ],
+      "titel": "Over een kleine mol die…",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-19",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/prentenboekjesfestival-over-een-kleine-mol-die-10025967/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Prentenboekjesfestival"
+      ],
+      "titel": "Over een kleine mol die…",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-19",
+      "tijd": "12:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/prentenboekjesfestival-over-een-kleine-mol-die-10025968/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Prentenboekjesfestival"
+      ],
+      "titel": "De Gruffalo (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-19",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/prentenboekjesfestival-de-gruffalo-3-10025969/"
+    },
+    {
+      "theater": "goudse-schouwburg",
       "artiesten": [],
       "titel": "Comedy Night in Cinema Gouda",
       "genre": "cabaret",
@@ -998,6 +1341,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/klaas-van-der-eerden-imperfect-10025676/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Titus & Fien De Revue"
+      ],
+      "titel": "Vooruit, nog één keertje dan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-11",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/titus-fien-de-revue-vooruit-nog-een-keertje-dan-10016615/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Titus & Fien De Revue"
+      ],
+      "titel": "Vooruit, nog één keertje dan (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-12",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/titus-fien-de-revue-vooruit-nog-een-keertje-dan-4-10009633/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Titus & Fien De Revue"
+      ],
+      "titel": "Vooruit, nog één keertje dan (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-12",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/titus-fien-de-revue-vooruit-nog-een-keertje-dan-4-10009634/"
     },
     {
       "theater": "goudse-schouwburg",

@@ -1,7 +1,7 @@
 {
   "bron": "beatvenues",
   "naam": "Stadsschouwburg Antwerpen en Capitole Gent",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "stadsschouwburg-antwerpen",
@@ -72,6 +72,113 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/yannick-noben-419d4c34"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [],
+      "titel": "Cinderella, de musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-20",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/cinderella-69ae61de"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [],
+      "titel": "Cinderella, de musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/cinderella-69ae61de"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [],
+      "titel": "Cinderella, de musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-27",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/cinderella-69ae61de"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [],
+      "titel": "Cinderella, de musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-28",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/cinderella-69ae61de"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [],
+      "titel": "Cinderella, de musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-29",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/cinderella-69ae61de"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Evita"
+      ],
+      "titel": "50 years, the golden jubilee",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/evita-a44f2a72"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Evita"
+      ],
+      "titel": "50 years, the golden jubilee",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/evita-a44f2a72"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Evita"
+      ],
+      "titel": "50 years, the golden jubilee",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/evita-a44f2a72"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Evita"
+      ],
+      "titel": "50 years, the golden jubilee",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/evita-a44f2a72"
     },
     {
       "theater": "stadsschouwburg-antwerpen",
@@ -341,6 +448,39 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.capitole-gent.be/evenement/han-solo-2d48971c"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [],
+      "titel": "Cinderella, de musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-13",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/cinderella-69ae61de"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [],
+      "titel": "Cinderella, de musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-13",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/cinderella-69ae61de"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [],
+      "titel": "Cinderella, de musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/cinderella-69ae61de"
     },
     {
       "theater": "capitole-gent",

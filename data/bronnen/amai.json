@@ -1,7 +1,7 @@
 {
   "bron": "amai",
   "naam": "Amai Comedy Club",
-  "opgehaald": "2026-11-07",
+  "opgehaald": "2026-11-08",
   "theaters": [
     {
       "id": "amai-comedy-club-gent",
@@ -13,17 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "amai-comedy-club-gent",
-      "artiesten": [],
-      "titel": "Comedy Open Mic",
-      "genre": "open-mic",
-      "datum": "2026-11-07",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.amaicomedyclub.com/event-details/comedy-open-mic-eng-2"
-    },
     {
       "theater": "amai-comedy-club-gent",
       "artiesten": [],
@@ -188,6 +177,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.amaicomedyclub.com/event-details/comedy-open-mic-nl-2026-12-04-20-30"
+    },
+    {
+      "theater": "amai-comedy-club-gent",
+      "artiesten": [],
+      "titel": "Comedy Showcase",
+      "genre": "stand-up",
+      "datum": "2026-12-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amaicomedyclub.com/event-details/comedy-showcase-eng-2026-12-05-20-00"
     }
   ],
   "recensies": {}
