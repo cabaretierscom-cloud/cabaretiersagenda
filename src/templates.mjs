@@ -173,7 +173,8 @@ export function createTemplates(db, { ga = null } = {}) {
       ["over", "/over/", "Over"],
     ].map(([key, href, label]) =>
       `<a href="${href}"${key === section ? ' aria-current="page"' : ""}>${label}</a>`).join("");
-    const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name} | Agenda voor cabaret, stand-up comedy en theater`;
+    // Lange titels zonder " | Cabaretiers.com", zodat het belangrijke deel in Google zichtbaar blijft.
+    const fullTitle = title ? (`${title} | ${SITE.name}`.length > 62 ? title : `${title} | ${SITE.name}`) : `${SITE.name} | Agenda voor cabaret, stand-up comedy en theater`;
     return `<!doctype html>
 <html lang="nl">
 <head>
@@ -879,7 +880,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${leegBlok}
       <p class="pager">${vorige ? `<a class="btn ghost" href="/agenda/${maandId(vorige)}/">${ICON.prev}${maandNaam(vorige)}</a>` : "<span></span>"}${volgende ? `<a class="btn ghost" href="/agenda/${maandId(volgende)}/">${maandNaam(volgende)}${ICON.next}</a>` : ""}</p>
     </section>`;
-    return layout({ title: `Cabaret en comedy in ${maandNaam(m)}`, description: `Alle ${list.length} cabaret- en comedyvoorstellingen in ${maandNaam(m)} in Nederland en België.`, path: `/agenda/${maandId(m)}/`, section: "agenda", body, schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], [maandNaam(m), `/agenda/${maandId(m)}/`]], extra: eventsLd(list) } });
+    const maandNamen = telPer(list.filter((g) => V.get(g.voorstelling).artiesten.length), (g) => V.get(g.voorstelling).artiesten[0]).slice(0, 3).map(([id]) => A.get(id).naam);
+    return layout({ title: `Cabaret en comedy in ${maandNaam(m)}`, description: zinnen(`Alle ${list.length} cabaret- en comedyvoorstellingen in ${maandNaam(m)} in Nederland en België, week voor week.`, maandNamen.length ? `Met onder meer ${opsomming(maandNamen)}.` : "", "Met tijden, zalen en kaarten."), path: `/agenda/${maandId(m)}/`, section: "agenda", body, schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], [maandNaam(m), `/agenda/${maandId(m)}/`]], extra: eventsLd(list) } });
   }
 
   function plaatsIndex() {
@@ -1048,7 +1050,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${plaatsTekst(p, list)}
         ${list.length ? faqHtml(plaatsVragen(p, list), `Veelgestelde vragen over theater in ${p}`) : ""}
       </div>`;
-    const desc = kort(`Theater in ${p}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${zalen.length === 1 ? zalen[0].naam : `${zalen.length} theaters, zoals ${telPer(list, (g) => g.theater).slice(0, 2).map(([id]) => T.get(id).naam).join(" en ")}`}. Cabaret, comedy en komisch theater, vanaf ${fmt.dayMonth(list[0].datum)}.`);
+    const desc = kort(`Theater in ${p}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${zalen.length === 1 ? zalen[0].naam : `${zalen.length} theaters, zoals ${telPer(list, (g) => g.theater).slice(0, 2).map(([id]) => T.get(id).naam).join(" en ")}`}. Cabaret, comedy, komisch theater en kindervoorstellingen.`);
     return layout({ title: `Theater in ${p}: agenda en voorstellingen`, description: desc, path: plaatsPad(p), section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"], [p, plaatsPad(p)]], over: plaatsLd(p), extra: [...eventsLd(list), ...(list.length ? [faqLd(plaatsVragen(p, list), plaatsPad(p))] : [])] } });
   }
 
@@ -1254,10 +1256,11 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${faqHtml(vragen)}
     </section>`;
     const kruimels = soort === "alle" ? [["Alle cabaretiers", P.pad]] : [["Alle cabaretiers", "/alle-cabaretiers/"], [soort === "vrouw" ? "Vrouwen" : "Mannen", P.pad]];
-    const titel = { alle: "Alle cabaretiers van Nederland en België", vrouw: "Vrouwelijke cabaretiers: bekende cabaretières", man: "Mannelijke cabaretiers: bekende Nederlandse cabaretiers" }[soort];
-    const desc = { alle: `Alle ${items.length} Nederlandse en Vlaamse cabaretiers en comedians op tournee, van A tot Z: bekende cabaretiers, mannen en vrouwen, stand-up en oudejaars, met speeldata.`,
-      vrouw: `Lijst van ${items.length} vrouwelijke cabaretiers op tournee, zoals ${opsomming(top.slice(0, 3).map(({ a }) => a.naam))}. Met al hun speeldata.`,
-      man: `${items.length} mannelijke cabaretiers en comedians op tournee, zoals ${opsomming(top.slice(0, 3).map(({ a }) => a.naam))}. Met al hun speeldata.` }[soort];
+    const jaar = db.today.slice(0, 4);
+    const titel = { alle: `Cabaretiers: alle Nederlandse en Vlaamse cabaretiers (${jaar})`, vrouw: `Vrouwelijke cabaretiers: lijst van bekende cabaretières (${jaar})`, man: `Mannelijke cabaretiers: bekende Nederlandse cabaretiers (${jaar})` }[soort];
+    const desc = { alle: zinnen(`Lijst van ${items.length} cabaretiers en comedians, van A tot Z: bekende namen, mannen en vrouwen, met hun speellijst ${SEIZOEN}.`, "Met kaarten via het theater."),
+      vrouw: zinnen(`Welke vrouwelijke cabaretiers zijn er? Een lijst van ${items.length} Nederlandse en Vlaamse cabaretières, met hun speellijst.`, `Zoals ${opsomming(top.slice(0, 2).map(({ a }) => a.naam))}.`, "Met kaarten via het theater."),
+      man: zinnen(`Welke mannelijke cabaretiers zijn er? Een lijst van ${items.length} Nederlandse en Vlaamse cabaretiers en comedians, met hun speellijst.`, `Zoals ${opsomming(top.slice(0, 2).map(({ a }) => a.naam))}.`, "Met kaarten via het theater.") }[soort];
     return layout({ title: titel, description: desc, path: P.pad, section: "artiesten", body, schema: { type: "CollectionPage", kruimels,
       hoofd: lijstLd([...items].sort((x, y) => x.a.naam.localeCompare(y.a.naam, "nl")).map(({ a }) => [a.naam, `/artiesten/${a.id}/`])),
       extra: [faqLd(vragen, P.pad)] } });
@@ -1268,6 +1271,11 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     komedie: "komedie", "open-mic": "open mics", improvisatie: "improvisatietheater",
     festival: "festivals", "muzikaal-cabaret": "muzikaal cabaret", kleinkunst: "kleinkunst", kindervoorstellingen: "kindervoorstelling",
   };
+  // Theaterseizoen voor titels ("2026-2027"): vanaf augustus het nieuwe seizoen.
+  const SEIZOEN = (() => { const [j, m] = db.today.split("-").map(Number); return m >= 8 ? `${j}-${j + 1}` : `${j - 1}-${j}`; })();
+  // Meta-description van hele zinnen: de eerste altijd, de volgende alleen als het geheel onder de 155 tekens
+  // blijft (Google kapt langer af). Geen datum van de eerstvolgende voorstelling: Google werkt die niet snel bij.
+  const zinnen = (...delen) => delen.filter(Boolean).reduce((uit, z) => (!uit ? z : `${uit} ${z}`.length <= 155 ? `${uit} ${z}` : uit), "");
   const kort = (s, max = 158) => s.length <= max ? s : s.slice(0, s.lastIndexOf(" ", max - 1)) + "…";
   const opsomming = (items) => items.length < 2 ? items.join("") : `${items.slice(0, -1).join(", ")} en ${items.at(-1)}`;
   const telPer = (list, key) => {
@@ -1593,7 +1601,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const cityCount = new Set(list.map((g) => T.get(g.theater).plaats)).size;
     const summary = list.length
       ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(cityCount, "plaats", "plaatsen")}${partners.length ? `, samen met ${partners.map((p) => `<a href="${artiestPad(p)}">${esc(A.get(p).naam)}</a>`).join(" en ")}` : ""}.`
-      : "Op dit moment staan er geen voorstellingen gepland.";
+      : a.nietOpTournee ? `Op dit moment staan er geen voorstellingen van ${esc(a.naam)} in de agenda.` : "Op dit moment staan er geen voorstellingen gepland.";
     const festival = [...F.values()].find((f) => (f.artiesten || []).includes(a.id));
     // "Speellijst 2026-2027": zo zoeken mensen ("theo maassen speellijst 2027", Search Console november 2026).
     const jaren = list.length ? [...new Set([list[0].datum.slice(0, 4), list.at(-1).datum.slice(0, 4)])].join("-") : "";
@@ -1611,15 +1619,19 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <div id="gigs">${monthGroups(list, { showArtist: false })}</div>
         ${list.length > 12 ? leegBlok : ""}
         ${a.videos?.length ? videosHtml(a) : ""}
-        ${artiestTekst(a, list)}
+        ${a.nietOpTournee ? `<section class="seo-tekst prose" aria-labelledby="over-titel">
+          <h2 id="over-titel">Speelt ${esc(a.naam)} nog?</h2>
+          ${a.nietOpTournee.alineas.map((x) => `<p>${esc(x)}</p>`).join("")}
+          <p>Bronnen: ${opsomming(a.nietOpTournee.bronnen.map(([n, u]) => `<a href="${esc(u)}" rel="noopener">${esc(n)}</a>`))} (bekeken ${esc(fmt.long(a.nietOpTournee.gecontroleerd))}). Zodra er nieuwe speeldata zijn, staan ze hier. Tot die tijd: bekijk <a href="/alle-cabaretiers/">alle cabaretiers</a> die nu op tournee zijn.</p>
+        </section>` : artiestTekst(a, list)}
         ${list.length ? faqHtml(artiestVragen(a, list), `Veelgestelde vragen over ${a.naam}`) : ""}
         ${a.geslacht && !isGroep(a) ? `<p class="zie-ook">Bekijk ook andere <a href="/alle-cabaretiers/${a.geslacht === "vrouw" ? "vrouwen" : "mannen"}/">${a.geslacht === "vrouw" ? "vrouwelijke" : "mannelijke"} cabaretiers</a> of <a href="/alle-cabaretiers/">alle cabaretiers</a>.</p>` : ""}
       </div>`;
     const desc = list.length
-      ? kort(`Speellijst ${jaren} van ${a.naam}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(cityCount, "plaats", "plaatsen")}${titles.length ? `, met ${titles[0]}` : ""}. Eerstvolgende op ${fmt.dayMonth(list[0].datum)}. Kaarten via het theater.`)
-      : `${a.naam} op Cabaretiers.com.`;
+      ? zinnen(`${a.naam} speellijst: ${plural(list.length, "voorstelling", "voorstellingen")}${titles.length === 1 ? ` van ${titles[0]}` : ""} in ${plural(cityCount, "plaats", "plaatsen")}.`, `Alle data ${jaren.replace("-", " en ")} en kaarten via het theater.`, "Bekijk de hele speellijst.")
+      : a.nietOpTournee ? zinnen(`${a.naam} speellijst: staan er voorstellingen gepland? ${a.nietOpTournee.alineas[0].split(":")[0]}.`, "Lees hoe het zit en wat hij nu doet.") : `${a.naam} op Cabaretiers.com.`;
     // Titel kort genoeg voor Google (met " | Cabaretiers.com" erachter): bij een lange naam zonder het tweede deel.
-    const titel = !list.length ? a.naam : `${a.naam} speellijst ${jaren}: tournee en kaarten`.length <= 47 ? `${a.naam} speellijst ${jaren}: tournee en kaarten` : `${a.naam} speellijst ${jaren}`;
+    const titel = !list.length ? (a.nietOpTournee ? `${a.naam} speellijst en voorstellingen` : a.naam) : `${a.naam} speellijst ${jaren}: tournee en kaarten`.length <= 47 ? `${a.naam} speellijst ${jaren}: tournee en kaarten` : `${a.naam} speellijst ${jaren}`;
     return layout({ title: titel, description: desc, path: `/artiesten/${a.id}/`, section: "artiesten", body, schema: { type: "ProfilePage", foto: a.foto ? a : null, kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`]], hoofd: { "@id": artiestLd(a.id)["@id"] }, extra: [artiestLd(a.id), ...eventsLd(list), ...(list.length ? [faqLd(artiestVragen(a, list), `/artiesten/${a.id}/`)] : [])] } });
   }
 
@@ -1699,8 +1711,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <div id="gigs">${monthGroups(list, { showArtist: false })}</div>
         ${voorstellingTekst(vid, list)}
       </div>`;
-    const desc = kort(`${v.titel} van ${artistNames(vid)}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden, "plaats", "plaatsen")}. Eerstvolgende op ${fmt.full(list[0].datum)}.${beste ? ` ${beste.medium}: ${plural(beste.sterren, "ster", "sterren")}.` : ""} Bekijk alle speeldata.`);
-    return layout({ title: `${v.titel} van ${artistNames(vid)}: speeldata`, description: desc, path: voorstellingPad.get(vid), section: "artiesten", body, schema: {
+    const desc = zinnen(`${v.titel} van ${artistNames(vid)}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden, "plaats", "plaatsen")}.`, beste ? `${beste.medium}: ${plural(beste.sterren, "ster", "sterren")}.` : "", "Bekijk de speellijst en koop kaarten via het theater.");
+    return layout({ title: `${v.titel} van ${artistNames(vid)}: speellijst en kaarten`, description: desc, path: voorstellingPad.get(vid), section: "artiesten", body, schema: {
       kruimels: [["Artiesten", "/artiesten/"], [a.naam, `/artiesten/${a.id}/`], [v.titel, voorstellingPad.get(vid)]],
       foto: v.foto ? v : fotoArtiest(vid) || null,
       hoofd: { "@id": URL(voorstellingPad.get(vid) + "#voorstelling") },
@@ -1769,7 +1781,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   const GENRE_INFO = {
     cabaret: {
       kop: "Cabaret", meervoud: "cabaretvoorstellingen", wie: "cabaretiers", kleur: "roze",
-      titel: "Cabaret: agenda en voorstellingen",
+      titel: `Cabaret agenda ${SEIZOEN}: alle cabaretvoorstellingen`,
       uitleg: "Cabaret is een avondvullende theatervoorstelling met humor, verhalen en vaak liedjes, meestal rond een thema en met een persoonlijke of maatschappelijke kijk op de wereld. Nederland en Vlaanderen hebben een lange cabarettraditie, van de grote drie (Wim Kan, Toon Hermans en Wim Sonneveld) tot de cabaretiers die nu door het land toeren.",
       vragen: [
         ["Wat is cabaret?", "Een theatervoorstelling waarin een cabaretier (of een groep) met humor, verhalen en vaak liedjes een avond vult, meestal rond een thema. Tussen de grappen door is er ook ruimte voor serieuze momenten."],
@@ -1778,7 +1790,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     },
     "stand-up": {
       kop: "Stand-up comedy", meervoud: "stand-upvoorstellingen", wie: "comedians", kleur: "blauw",
-      titel: "Stand-up comedy: agenda en voorstellingen",
+      titel: `Stand-up comedy agenda ${SEIZOEN}: shows en comedyclubs`,
       uitleg: "Bij stand-up comedy staat een comedian met een microfoon op het podium en vertelt grappen en verhalen, zonder decor of vaste verhaallijn. Je ziet stand-up in theaters, maar vooral in comedyclubs, waar op één avond vaak meerdere comedians na elkaar spelen.",
       vragen: [
         ["Wat is stand-up comedy?", "Een comedian vertelt grappen en verhalen rechtstreeks aan het publiek, meestal alleen met een microfoon. Een avond kan een solovoorstelling zijn of een line-up met meerdere comedians en een presentator."],
@@ -1788,7 +1800,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     },
     oudejaarsconference: {
       kop: `Oudejaarsconference ${oudejaarsJaar}`, meervoud: "oudejaarsvoorstellingen", wie: "cabaretiers", kleur: "rood",
-      titel: `Oudejaarsconference ${oudejaarsJaar}: alle voorstellingen in het theater`,
+      titel: `Oudejaarsconference ${oudejaarsJaar}: wie doen het dit jaar?`,
+      // Beantwoordt "wie doet de oudejaarsconference 2026" (Search Console): de namen in de omschrijving.
+      desc: (list, steden, namen) => zinnen(`Wie doet de oudejaarsconference ${oudejaarsJaar}? In het theater onder meer ${opsomming(namen)}.`, `${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}.`),
       uitleg: "Een oudejaarsconference is een voorstelling waarin een cabaretier terugblikt op het afgelopen jaar, met grappen over de actualiteit, de politiek en het nieuws. Wim Kan maakte er een jaarlijkse traditie van. Op oudejaarsavond is er traditioneel een oudejaarsconference op televisie, maar in november en december spelen veel cabaretiers hun oudejaarsvoorstelling ook in het theater.",
       vragen: [
         ["Wat is een oudejaarsconference?", "Een cabaretvoorstelling aan het eind van het jaar waarin de cabaretier terugkijkt op het nieuws en de actualiteit van dat jaar."],
@@ -1797,7 +1811,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     },
     kleinkunst: {
       kop: "Kleinkunst", meervoud: "kleinkunstvoorstellingen", wie: "artiesten", kleur: "geel",
-      titel: "Kleinkunst: agenda en voorstellingen",
+      titel: `Kleinkunst agenda ${SEIZOEN}: voorstellingen en kaarten`,
       uitleg: "Kleinkunst is verwant aan cabaret, maar het lied staat centraal: Nederlandstalige liedjes, chansons en teksten, vaak met humor en soms met een serieuze ondertoon. De voorstellingen spelen meestal in kleinere zalen, dicht op het publiek.",
       vragen: [
         ["Wat is kleinkunst?", "Theater waarin liedjes en teksten centraal staan, vaak Nederlandstalig, met humor en emotie. Het ligt dicht bij cabaret; veel artiesten doen allebei."],
@@ -1806,7 +1820,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     },
     komedie: {
       kop: "Komedie", meervoud: "komedies", wie: "artiesten", kleur: "oranje",
-      titel: "Komedie: komedies, blijspellen en kluchten",
+      titel: `Komedie ${SEIZOEN}: komedies, blijspellen en kluchten`,
       uitleg: "Onder komedie vallen komedies, blijspellen en kluchten: toneel met humor, met een verhaal en een vaste rolverdeling. Gewoon toneel en musicals staan niet in deze agenda; voorstellingen waarin de humor de hoofdrol speelt wel.",
       vragen: [
         ["Wat is het verschil tussen een komedie, een blijspel en een klucht?", "Een komedie is toneel met humor; een blijspel is een luchtige komedie met een goede afloop; een klucht draait om verwikkelingen, misverstanden en slapstick."],
@@ -1815,7 +1829,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     },
     "open-mic": {
       kop: "Open mic", meervoud: "open mics", wie: "comedians", kleur: "limoen",
-      titel: "Open mic comedy: agenda",
+      titel: `Open mic comedy agenda ${SEIZOEN}`,
       uitleg: "Op een open mic proberen nieuwe en ervaren comedians kort materiaal uit, vaak een paar minuten per persoon. Het is de plek waar nieuwe grappen ontstaan en waar beginnende comedians hun eerste stappen zetten. De sfeer is los en de toegang is vaak goedkoop of gratis.",
       vragen: [
         ["Wat is een open mic?", "Een avond waarop comedians kort nieuw materiaal testen voor publiek. Je ziet beginners naast ervaren comedians die nieuwe grappen uitproberen."],
@@ -1827,7 +1841,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       kop: "Kindervoorstellingen", meervoud: "kinder- en familievoorstellingen", wie: "makers", kleur: "aqua",
       // Voor de pagina's per plaats (/agenda/kindervoorstellingen/<plaats>/).
       enkelvoud: "kindervoorstelling", waar: "Waar zijn kindervoorstellingen", plaatsTitel: (p) => `Kindervoorstellingen in ${p}: kinder- en familietheater`, anders: "cabaret en comedy voor volwassenen",
-      titel: "Kindervoorstellingen en familievoorstellingen: agenda",
+      titel: `Kindervoorstellingen en familievoorstellingen ${SEIZOEN}`,
+      desc: (list, steden) => zinnen(`Kinder- en familievoorstellingen ${SEIZOEN}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}.`, "Theater voor peuters, kleuters, de hele basisschool en het hele gezin.", "Kaarten koop je bij het theater."),
       uitleg: "Een kindervoorstelling is theater voor kinderen: van peutervoorstellingen van een half uur tot verhalen, poppenspel, muziek, humor en musicals voor de hele basisschool. Een familievoorstelling is gemaakt voor kinderen én volwassenen samen, zodat het hele gezin, opa en oma inbegrepen, er plezier aan heeft. Bij elke voorstelling geeft het theater een leeftijd op, zoals 4+ of 6+: de jongste leeftijd waarvoor de voorstelling geschikt is.",
       vragen: [
         ["Wat is het verschil tussen een kindervoorstelling en een familievoorstelling?", "Een kindervoorstelling is gemaakt voor kinderen, vaak voor een bepaalde leeftijd. Een familievoorstelling is bedoeld voor kinderen en volwassenen samen: de grappen en het verhaal werken voor jong en oud, zodat je er als gezin naartoe gaat."],
@@ -1838,7 +1853,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     },
     improvisatie: {
       kop: "Improvisatietheater", meervoud: "improvisatievoorstellingen", wie: "spelers", kleur: "paars",
-      titel: "Improvisatietheater: agenda en voorstellingen",
+      titel: `Improvisatietheater agenda ${SEIZOEN}: voorstellingen`,
       uitleg: "Bij improvisatietheater (impro) bestaat er geen script: de spelers maken scènes, personages en soms liedjes ter plekke, vaak op basis van suggesties uit het publiek. Geen voorstelling is daardoor hetzelfde.",
       vragen: [
         ["Wat is improvisatietheater?", "Theater zonder script: de spelers verzinnen alles ter plekke, vaak met suggesties uit de zaal."],
@@ -1899,7 +1914,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </section>
       ${faqHtml(vragen, `Veelgestelde vragen over ${onderwerp}`)}
     </section>`;
-    const desc = kort(`${info.kop}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")} in Nederland en België${artiesten.length ? `, met ${artiesten.slice(0, 3).map(([id]) => A.get(id).naam).join(", ")}` : ""}. Bekijk de agenda en koop kaarten bij het theater.`);
+    const namen = artiesten.slice(0, 3).map(([id]) => A.get(id).naam);
+    const desc = info.desc ? info.desc(list, steden, namen) : zinnen(`${info.kop} in ${SEIZOEN}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")} in Nederland en België.`, namen.length ? `Met onder meer ${opsomming(namen)}.` : "", "Kaarten koop je bij het theater.");
     return layout({ title: info.titel, description: desc, path: pad, section: "agenda", body,
       schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], [info.kop, pad]], extra: [...eventsLd(eerste), faqLd(vragen, pad)] } });
   }
@@ -1957,7 +1973,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </section>
       ${faqHtml(vragen, "Veelgestelde vragen over try-outs")}
     </section>`;
-    const desc = kort(`Try-outs: ${plural(list.length, "voorstelling", "voorstellingen")} van nieuwe cabaret- en comedyprogramma's vóór de première, in ${plural(steden.length, "plaats", "plaatsen")}${artiesten.length ? `, met ${artiesten.slice(0, 3).map(([id]) => A.get(id).naam).join(", ")}` : ""}. Vaak met goedkopere kaarten.`);
+    const desc = zinnen(`Try-outs ${SEIZOEN}: ${plural(list.length, "voorstelling", "voorstellingen")} van nieuwe cabaret- en comedyprogramma's vóór de première, in ${plural(steden.length, "plaats", "plaatsen")}.`, "Vaak met goedkopere kaarten.", artiesten.length ? `Met onder meer ${opsomming(artiesten.slice(0, 2).map(([id]) => A.get(id).naam))}.` : "");
     return layout({ title: "Try-outs: cabaret en comedy vóór de première", description: desc, path: pad, section: "agenda", body,
       schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], ["Try-outs", pad]], extra: [...eventsLd(eerste), faqLd(vragen, pad)] } });
   }
@@ -2023,7 +2039,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         </section>
         ${faqHtml(vragen, `Veelgestelde vragen over ${onderwerp} in ${p}`)}
       </div>`;
-    const desc = kort(`${info.kop} in ${p}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}${artiestTel.length ? `, met ${artiestTel.slice(0, 3).map(([id]) => A.get(id).naam).join(", ")}${artiestTel.length > 3 ? " en meer" : ""}` : ""}. Eerstvolgende op ${fmt.full(list[0].datum)}. Kaarten koop je bij het theater.`);
+    const desc = zinnen(`${info.kop} in ${p}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}.`, artiestTel.length ? `Met onder meer ${opsomming(artiestTel.slice(0, 3).map(([id]) => A.get(id).naam))}.` : "", "Kaarten koop je bij het theater.");
     return layout({ title: info.plaatsTitel ? info.plaatsTitel(p) : `${info.kop} in ${p}: agenda en kaarten`, description: desc, path: pad, section: "agenda", body,
       schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], [info.kop, `/agenda/${g}/`], [p, pad]], extra: [...eventsLd(list), faqLd(vragen, pad)] } });
   }
@@ -2087,7 +2103,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${festivalTekst(f, list)}
       </div>`;
     const desc = list.length
-      ? kort(`${f.naam} (${f.plaats}): ${plural(list.length, "voorstelling", "voorstellingen")}, van finale tot finalistentournee. Eerstvolgende op ${fmt.full(list[0].datum)}. Bekijk alle speeldata.`)
+      ? zinnen(`${f.naam} (${f.plaats}): ${plural(list.length, "voorstelling", "voorstellingen")}, van finale tot finalistentournee.`, "Bekijk alle speeldata en koop kaarten via het theater.")
       : `${f.naam}, cabaretfestival uit ${f.plaats}.`;
     const pad = `/festivals/${f.id}/`;
     return layout({ title: `${f.naam}: finales en finalistentournee`, description: desc, path: pad, section: "festivals", body,
@@ -2249,9 +2265,11 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${list.length ? faqHtml(theaterVragen(t, list), `Veelgestelde vragen over ${t.naam}`) : ""}
       </div>`;
     const desc = list.length
-      ? kort(`Cabaret en comedy in ${t.naam}${t.naam.includes(t.plaats) ? "" : ` in ${t.plaats}`}: ${plural(list.length, "voorstelling", "voorstellingen")}${list.length > 1 ? ` van ${fmt.full(list[0].datum)} tot ${fmt.full(list.at(-1).datum)}` : ` op ${fmt.full(list[0].datum)}`}. Bekijk het programma.`)
+      ? zinnen(`Wat speelt er in ${t.naam}${t.naam.includes(t.plaats) ? "" : ` in ${t.plaats}`}? ${plural(list.length, "voorstelling", "voorstellingen")} cabaret en comedy in seizoen ${SEIZOEN}.`, (() => { const n = [...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].slice(0, 3).map((x) => A.get(x).naam); return n.length ? `Met onder meer ${opsomming(n)}.` : ""; })(), "Met links naar de kaartverkoop.")
       : `Cabaret en comedy in ${t.naam} (${t.plaats}).`;
-    return layout({ title: `${t.naam}${t.naam.includes(t.plaats) ? "" : ` ${t.plaats}`}: cabaret en comedy`, description: desc, path: `/theaters/${t.id}/`, section: "theaters", body, schema: { foto: t.foto ? t : null, kruimels: [["Theaters", "/theaters/"], [t.naam, `/theaters/${t.id}/`]], hoofd: { "@id": zaalLd(t.id)["@id"] }, extra: [{ ...zaalLd(t.id), containedInPlace: plaatsLd(t.plaats) }, ...eventsLd(list), ...(list.length ? [faqLd(theaterVragen(t, list), `/theaters/${t.id}/`)] : [])] } });
+    // Titel: "<zaal> <plaats> programma 2026-2027", met de genres als het past.
+    const zaalTitel = `${t.naam}${t.naam.includes(t.plaats) ? "" : ` ${t.plaats}`} programma ${SEIZOEN}`;
+    return layout({ title: `${zaalTitel}: cabaret en comedy`.length <= 62 ? `${zaalTitel}: cabaret en comedy` : zaalTitel, description: desc, path: `/theaters/${t.id}/`, section: "theaters", body, schema: { foto: t.foto ? t : null, kruimels: [["Theaters", "/theaters/"], [t.naam, `/theaters/${t.id}/`]], hoofd: { "@id": zaalLd(t.id)["@id"] }, extra: [{ ...zaalLd(t.id), containedInPlace: plaatsLd(t.plaats) }, ...eventsLd(list), ...(list.length ? [faqLd(theaterVragen(t, list), `/theaters/${t.id}/`)] : [])] } });
   }
 
   function privacy() {

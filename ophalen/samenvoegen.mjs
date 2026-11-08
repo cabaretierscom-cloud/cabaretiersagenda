@@ -695,7 +695,7 @@ const festivalArtiesten = new Set((existsSync(join(dataDir, "festivals.json")) ?
 const gebruikteVoorstellingen = new Set(speeldata.map((s) => s.voorstelling));
 const blijvendeVoorstellingen = voorstellingen.filter((v) => gebruikteVoorstellingen.has(v.id));
 const gebruikteArtiesten = new Set(blijvendeVoorstellingen.flatMap((v) => v.artiesten));
-const blijvendeArtiesten = artiesten.filter((a) => gebruikteArtiesten.has(a.id) || festivalArtiesten.has(a.id) || a.land || a.ookBekendAls?.length || a.ookIn?.length);
+const blijvendeArtiesten = artiesten.filter((a) => gebruikteArtiesten.has(a.id) || festivalArtiesten.has(a.id) || a.land || a.ookBekendAls?.length || a.ookIn?.length || a.nietOpTournee);
 const verwijderd = { voorstellingen: voorstellingen.length - blijvendeVoorstellingen.length, artiesten: artiesten.length - blijvendeArtiesten.length };
 voorstellingen.splice(0, voorstellingen.length, ...blijvendeVoorstellingen);
 artiesten.splice(0, artiesten.length, ...blijvendeArtiesten);

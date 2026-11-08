@@ -67,7 +67,8 @@ write("/alle-cabaretiers/vrouwen/", t.cabaretiersPagina("vrouw"));
 write("/alle-cabaretiers/mannen/", t.cabaretiersPagina("man"));
 // Alleen artiesten en zalen met aankomende voorstellingen krijgen een pagina.
 // Festivalnamen in artiesten.json (zie festivals.json) niet: die staan onder /festivals/ (doorverwijzing hieronder).
-for (const a of db.artiesten.values()) if (!t.festivalVan.has(a.id) && db.gigsForArtist(a.id).length) write(`/artiesten/${a.id}/`, t.artistPage(a));
+// Ook een artiest zonder voorstellingen met nietOpTournee (uitleg met bronnen, zoals Stefano Keizers) krijgt een pagina.
+for (const a of db.artiesten.values()) if (!t.festivalVan.has(a.id) && (db.gigsForArtist(a.id).length || a.nietOpTournee)) write(`/artiesten/${a.id}/`, t.artistPage(a));
 // Elke voorstelling met een eigen titel: /artiesten/<artiest>/<voorstelling>/.
 for (const [vid, pad] of t.voorstellingPaden) write(pad, t.voorstellingPagina(vid));
 write("/theaters/", t.theaterIndex());

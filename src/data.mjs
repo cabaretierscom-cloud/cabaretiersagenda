@@ -161,6 +161,8 @@ export function loadData(dir, { today }) {
     for (const g of a.ookIn || []) if (!A.has(g) || g === a.id) errors.push(`artiest ${a.id}: ookIn "${g}" is geen andere bekende artiest`);
     if (a.geslacht != null && !GESLACHTEN.includes(a.geslacht)) errors.push(`artiest ${a.id}: onbekend geslacht "${a.geslacht}"`);
     if (a.geslacht != null && !a.geslachtBron) errors.push(`artiest ${a.id}: geslacht zonder geslachtBron`);
+    // Een artiest zonder tournee met een eigen pagina: tekst met bronnen (bijv. Stefano Keizers, gestopt onder die naam).
+    if (a.nietOpTournee && !(a.nietOpTournee.alineas?.length && a.nietOpTournee.bronnen?.length)) errors.push(`artiest ${a.id}: nietOpTournee zonder alineas of bronnen`);
     // Een foto mag alleen met naamsvermelding, licentie en bron.
     if (a.foto && typeof a.foto === "object" && !(a.foto.bestand && a.foto.alt && (a.foto.maker || a.foto.promo) && a.foto.licentie && a.foto.bron)) errors.push(`artiest ${a.id}: foto zonder alt-tekst, maker, licentie of bron`);
     if (a.foto?.bestand && !existsSync(join(dir, "..", "public", a.foto.bestand))) errors.push(`artiest ${a.id}: fotobestand ${a.foto.bestand} ontbreekt`);
