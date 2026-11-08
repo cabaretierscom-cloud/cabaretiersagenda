@@ -266,6 +266,8 @@
   // voorstellingen met kindervoorstellingen als hoofdgenre. Wie het vinkje zet, ziet ze wel. Op pagina's met
   // alleen kindervoorstellingen (de genrepagina, een kindergezelschap) zet de server data-kinder op 0.
   const KIND = "kindervoorstellingen";
+  // Zoveel voorstellingen per keer in een lijst; de knop "Toon meer voorstellingen" toont de volgende portie.
+  const PORTIE = 50;
   const leesGenres = (t) => (t || "").split(",").map((x) => x.trim().replace(/^theaterkomedie$/, "komedie")).filter(Boolean);
   const adres = (p) => p.toString().replace(/%2C/g, ",");
   function genreKeuze(bijWijziging) {
@@ -370,41 +372,39 @@
     if (vinkUit) vinkUit.checked = stand.uitverkocht === "1";
     const gefilterd = () => Boolean(stand.q.trim() || stand.genre || stand.uitverkocht || stand.soort);
 
-    let lijst = [], weken = [], getoond = 0;
-    // Groepeer per week (maandag t/m zondag); de eerste week begint bij de eerste voorstelling.
-    const perWeek = (rijen) => {
-      const m = new Map();
-      for (const g of rijen) { const w = maandag(g.datum); if (!m.has(w)) m.set(w, []); m.get(w).push(g); }
-      return [...m.values()];
+    // Per keer 50 voorstellingen (PORTIE), met een knop voor de volgende 50; ook bij zoeken en filteren.
+    // Zonder filter staan de eerste voorstellingen al in de pagina (zonder JavaScript is dat de lijst);
+    // de knop laadt dan alles uit /agenda/alles.js en toont de volgende 50.
+    let lijst = [], getoond = 0, uitPagina = true;
+    const telAlles = () => +alles.dataset.totaal - (genre?.kinder || 0);
+    // Rijen toevoegen tot en met nummer n, per week onder een kop (een week kan over twee porties lopen).
+    const toonTot = (n) => {
+      const doel = Math.min(n, lijst.length);
+      let sectie = alles.lastElementChild;
+      const nieuw = [];
+      for (; getoond < doel; getoond++) {
+        const g = lijst[getoond], w = maandag(g.datum);
+        if (!sectie || sectie.dataset.week !== w) {
+          const zelfdeWeek = lijst.filter((x) => maandag(x.datum) === w);
+          const eind = zelfdeWeek.at(-1).datum > zondag(w) ? zelfdeWeek.at(-1).datum : zondag(w);
+          const plek = document.createElement("div");
+          plek.innerHTML = `<section class="month-group week-groep" data-week="${w}"><h3>${label(zelfdeWeek[0].datum, eind)} <small>${aantal(zelfdeWeek.length)}</small></h3></section>`;
+          sectie = plek.firstElementChild;
+          alles.append(sectie);
+          nieuw.push(sectie);
+        }
+        sectie.insertAdjacentHTML("beforeend", rijHtml(g));
+      }
+      for (const x of new Set([...nieuw, sectie].filter(Boolean))) agendaKnoppen(x);
+      werkKnopBij();
     };
-    const weekHtml = (rijen) => `<section class="month-group week-groep"><h3>${label(rijen[0].datum, rijen.at(-1).datum > zondag(rijen[0].datum) ? rijen.at(-1).datum : zondag(rijen[0].datum))} <small>${aantal(rijen.length)}</small></h3>${rijen.map(rijHtml).join("")}</section>`;
-    const toonWeek = (w) => {
-      const plek = document.createElement("div");
-      plek.innerHTML = weekHtml(w);
-      const sectie = plek.firstElementChild;
-      alles.append(sectie);
-      agendaKnoppen(sectie);
-    };
-    // Alle volgende weken in één keer, maar in porties van een paar weken per keer, zodat de pagina
-    // niet vastloopt; een nieuwe zoekopdracht (ronde) stopt het lopende werk.
-    let ronde = 0;
-    const toonRest = () => {
-      const mijn = ++ronde;
-      laadMeer.hidden = true;
-      const stap = () => {
-        if (mijn !== ronde) return;
-        for (let i = 0; i < 4 && getoond < weken.length; i++) toonWeek(weken[getoond++]);
-        werkKnopBij(true);
-        if (getoond < weken.length) setTimeout(stap, 0);
-      };
-      stap();
-    };
-    const werkKnopBij = (bezig = false) => {
-      const rest = weken.slice(getoond).reduce((n, w) => n + w.length, 0);
-      laadMeer.hidden = bezig || !rest;
-      if (rest) laadKnop.textContent = `Toon alle volgende voorstellingen (${rest})`;
-      const zichtbaar = weken.slice(0, getoond).reduce((n, w) => n + w.length, 0);
-      regel.textContent = gefilterd() ? `${aantal(lijst.length)} gevonden${rest ? `, ${zichtbaar} getoond` : ""}` : `${zichtbaar} van ${aantal(+alles.dataset.totaal - (genre?.kinder || 0))}`;
+    const werkKnopBij = () => {
+      const totaal = uitPagina ? telAlles() : lijst.length;
+      const zichtbaar = uitPagina ? alles.querySelectorAll(".gig:not([hidden])").length : getoond;
+      const rest = totaal - zichtbaar;
+      laadMeer.hidden = rest <= 0;
+      if (rest > 0) laadKnop.textContent = `Toon meer voorstellingen (${Math.min(PORTIE, rest)} van ${rest})`;
+      regel.textContent = gefilterd() ? `${aantal(lijst.length)} gevonden${rest > 0 ? `, ${zichtbaar} getoond` : ""}` : `${zichtbaar} van ${aantal(totaal)}`;
       if (leeg) leeg.hidden = !gefilterd() || lijst.length > 0;
       if (naarMaand) naarMaand.hidden = gefilterd();
     };
@@ -413,49 +413,49 @@
       const p = new URLSearchParams();
       for (const [k, v] of Object.entries(stand)) if (v.trim()) p.set(k, v.trim());
       history.replaceState(null, "", p.toString() ? `?${adres(p)}` : location.pathname);
-      if (!gefilterd() && !data) { if (genre) genre.aantal(genre.totaal); return; }
+      if (!gefilterd() && uitPagina) { if (genre) genre.aantal(genre.totaal); return begin(); }
       await haal();
       const naald = kaal(stand.q.trim()), kies = new Set(leesGenres(stand.genre));
       const inGenre = (g) => (kies.size ? g.genres.some((x) => kies.has(x)) : !genre || genre.standaard(g.genres));
       if (genre) genre.aantal(kies.size ? data.rijen.filter((g) => g.datum >= today && inVast(g) && inGenre(g)).length : genre.totaal);
       lijst = data.rijen.filter((g) => g.datum >= today && inVast(g) && (!naald || g.zoek.includes(naald)) && inGenre(g) && (!stand.soort || g.soort === stand.soort) && (!stand.uitverkocht || g.status !== "uitverkocht"));
-      // Zonder filter: eerst wat de pagina zelf al toonde (tot data-tot), daarna per week.
-      const tot = alles.dataset.tot;
-      weken = gefilterd() ? perWeek(lijst) : [lijst.filter((g) => g.datum <= tot), ...perWeek(lijst.filter((g) => g.datum > tot))].filter((w) => w.length);
-      getoond = 0; ronde++;
+      uitPagina = false; getoond = 0;
       alles.innerHTML = "";
-      // Met een zoekopdracht of filter meteen alle resultaten (in porties, zie toonRest); zonder filter
-      // alleen de eerste week met de knop voor de rest, anders bouwt de pagina duizenden rijen.
-      if (gefilterd()) { toonRest(); if (!weken.length) werkKnopBij(); return; }
-      if (weken.length) toonWeek(weken[getoond++]);
-      werkKnopBij();
+      toonTot(PORTIE);
     }
 
-    // Zonder filter: de eerste week staat al in de pagina; de knop toont alles vanaf de week erna.
+    // Zonder filter: de voorstellingen uit de pagina zelf, de eerste 50 zichtbaar.
     const begin = () => {
-      // Kindervoorstellingen in de eerste week (uit de pagina zelf) verbergen, tenzij aangevinkt.
-      if (genre?.kinder) {
-        for (const r of document.querySelectorAll("#gigs .gig")) if (!genre.standaard((r.dataset.genre || "").split(" "))) r.hidden = true;
-        for (const groep of document.querySelectorAll("#gigs .month-group")) groep.hidden = !groep.querySelector(".gig:not([hidden])");
+      const rijen = [...alles.querySelectorAll(".gig")];
+      let n = 0;
+      for (const r of rijen) {
+        const mag = r.dataset.datum >= today && (!genre || genre.standaard((r.dataset.genre || "").split(" ")));
+        r.hidden = !mag || n >= PORTIE;
+        if (mag) n++;
       }
-      const eersteWeek = document.querySelectorAll("#gigs .gig:not([hidden])").length;
+      for (const groep of alles.querySelectorAll(".month-group")) groep.hidden = !groep.querySelector(".gig:not([hidden])");
       if (genre) genre.aantal(genre.totaal);
-      lijst = []; weken = [{ length: eersteWeek, server: true }]; getoond = 1;
-      laadMeer.hidden = false;
-      laadKnop.textContent = "Toon alle volgende voorstellingen";
-      regel.textContent = `${eersteWeek} van ${aantal(+alles.dataset.totaal - (genre?.kinder || 0))}`;
+      werkKnopBij();
     };
     laadKnop.addEventListener("click", async () => {
-      if (weken[0]?.server) {
-        laadKnop.disabled = true;
-        await haal();
-        lijst = data.rijen.filter((g) => g.datum >= today && inVast(g) && (!genre || genre.standaard(g.genres)));
-        const tot = alles.dataset.tot;
-        weken = [{ length: lijst.filter((g) => g.datum <= tot).length }, ...perWeek(lijst.filter((g) => g.datum > tot))];
-        getoond = 1;
-        laadKnop.disabled = false;
-      }
-      toonRest();
+      laadKnop.disabled = true;
+      if (uitPagina) {
+        // Nog verborgen rijen in de pagina? Eerst die; anders alles laden en verder vanaf daar.
+        const verborgen = [...alles.querySelectorAll(".gig[hidden]")].filter((r) => r.dataset.datum >= today && (!genre || genre.standaard((r.dataset.genre || "").split(" "))));
+        const zichtbaar = alles.querySelectorAll(".gig:not([hidden])").length;
+        if (verborgen.length >= PORTIE || (verborgen.length && zichtbaar + verborgen.length >= telAlles())) {
+          verborgen.slice(0, PORTIE).forEach((r) => (r.hidden = false));
+          for (const groep of alles.querySelectorAll(".month-group")) groep.hidden = !groep.querySelector(".gig:not([hidden])");
+          werkKnopBij();
+        } else {
+          await haal();
+          lijst = data.rijen.filter((g) => g.datum >= today && inVast(g) && (!genre || genre.standaard(g.genres)));
+          uitPagina = false; getoond = 0;
+          alles.innerHTML = "";
+          toonTot(zichtbaar + PORTIE);
+        }
+      } else toonTot(getoond + PORTIE);
+      laadKnop.disabled = false;
     });
     let timer;
     if (q) {
@@ -485,6 +485,15 @@
   const vinkUit = veld("f-uitverkocht");
   const resultLine = veld("result-line");
   const empty = veld("empty");
+  // Per keer 50 voorstellingen met een knop voor de volgende 50 (niet op maandpagina's: die tonen per week).
+  let limiet = PORTIE;
+  const gigs = document.getElementById("gigs");
+  const meer = document.createElement("p");
+  meer.className = "meer-weken";
+  meer.hidden = true;
+  meer.innerHTML = '<button type="button" class="btn">Toon meer voorstellingen</button>';
+  gigs?.after(meer);
+  meer.querySelector("button").addEventListener("click", () => { limiet += PORTIE; apply(); });
 
   // Filterstand staat in de URL, zodat je een gefilterde lijst kunt delen.
   const params = new URLSearchParams(location.search);
@@ -497,7 +506,7 @@
   }
   if (q) q.value = state.q;
   if (vinkUit) vinkUit.checked = state.uitverkocht === "1";
-  const genre = genreKeuze((w) => { state.genre = w.join(","); apply(); });
+  const genre = genreKeuze((w) => { state.genre = w.join(","); opnieuw(); });
   if (genre) state.genre = genre.zet(leesGenres(params.get("genre"))).join(",");
 
   const telling = (shown) => shown === rows.length
@@ -511,19 +520,22 @@
     const needle = kaal(state.q.trim()), kies = new Set(leesGenres(state.genre));
     const inGenre = (r) => (kies.size ? (r.dataset.genre || "").split(" ").some((x) => kies.has(x)) : !genre || genre.standaard((r.dataset.genre || "").split(" ")));
     if (genre) genre.aantal(rows.filter(inGenre).length);
-    let shown = 0;
+    let shown = 0, passend = 0;
+    const max = perWeek ? Infinity : limiet;
     for (const r of rows) {
       const ok =
         (!state.maand || r.dataset.datum.startsWith(state.maand)) &&
         inGenre(r) &&
         (!state.uitverkocht || r.dataset.status !== "uitverkocht") &&
         (!needle || kaal(r.dataset[zoekVeld] || "").includes(needle));
-      r.hidden = !ok;
-      if (ok) shown++;
+      r.hidden = !ok || passend >= max;
+      if (ok) { passend++; if (passend <= max) shown++; }
     }
+    meer.hidden = passend <= shown;
+    if (passend > shown) meer.querySelector("button").textContent = `Toon meer voorstellingen (${Math.min(PORTIE, passend - shown)} van ${passend - shown})`;
     if (perWeek && Object.values(state).some((v) => v)) toonWeken(Infinity);
     syncGroups();
-    resultLine.textContent = telling(shown);
+    resultLine.textContent = shown < passend ? `${shown} van ${passend} voorstellingen` : telling(shown);
     if (empty) empty.hidden = shown > 0;
 
     const p = new URLSearchParams();
@@ -532,10 +544,12 @@
     history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
   }
 
+  // Een nieuwe zoekopdracht of filter begint weer bij de eerste 50.
+  function opnieuw() { limiet = PORTIE; apply(); }
   let timer;
-  if (q) q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { state.q = q.value; apply(); }, 150); });
-  for (const [k, el] of Object.entries(selects)) if (el) el.addEventListener("change", () => { state[k] = el.value; apply(); });
-  if (vinkUit) vinkUit.addEventListener("change", () => { state.uitverkocht = vinkUit.checked ? "1" : ""; apply(); });
+  if (q) q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { state.q = q.value; opnieuw(); }, 150); });
+  for (const [k, el] of Object.entries(selects)) if (el) el.addEventListener("change", () => { state[k] = el.value; opnieuw(); });
+  if (vinkUit) vinkUit.addEventListener("change", () => { state.uitverkocht = vinkUit.checked ? "1" : ""; opnieuw(); });
   form.addEventListener("submit", (e) => e.preventDefault());
   const reset = veld("reset");
   if (reset) reset.addEventListener("click", () => {
@@ -544,12 +558,13 @@
     Object.values(selects).forEach((el) => { if (el) el.value = ""; });
     if (genre) genre.zet([]);
     if (vinkUit) vinkUit.checked = false;
-    apply();
+    opnieuw();
     if (q) q.focus();
   });
 
   // Alleen de URL bijwerken als er al een filter in stond; anders de lijst laten zoals hij is.
-  if (location.search || genre?.kinder) apply(); // ook zonder adresfilter: kindervoorstellingen standaard uit
+  // Ook zonder adresfilter: kindervoorstellingen standaard uit, en per keer 50 voorstellingen.
+  if (location.search || genre?.kinder || (!perWeek && rows.length > PORTIE)) apply();
   else {
     resultLine.textContent = telling(rows.length);
     if (perWeek) toonWeken(weekenZichtbaar);
