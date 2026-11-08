@@ -45,6 +45,10 @@ export function netteNaam(s) {
 // Herkent ons genre uit trefwoorden (genre-labels van de bron, titel, omschrijving).
 // Geeft null als het geen cabaret, comedy of komisch theater is.
 const REGELS = [
+  // Kinder- en familievoorstellingen (sinds november 2026): een label als "Jeugd", "Familie", "Kids",
+  // "Jeugd & familie", "Kindervoorstelling" of "Familietheater", of een leeftijd als label ("6+").
+  // "Familie" alleen als los label, niet als woord in een titel ("We zijn toch familie").
+  ["kindervoorstellingen", /(^|[|,&/]\s*)(jeugd|familie|kids|kinderen|kind|gezin|jong publiek)(\s*(?=[|,&/])|$)|\b(kinder|jeugd|familie|gezins)(voorstelling(en)?|theater|musical|show|programma|concert|opera|cabaret)\b|(^|\|\s*)([2-9]|1[0-2]) ?\+(\s*\||$)/],
   ["oudejaarsconference", /oudejaars|eindejaars/],
   ["open-mic", /open[ -]?mic/],
   ["improvisatie", /\bimpro(visatie|v)?\b/],

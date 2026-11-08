@@ -25,6 +25,7 @@ export const GENRES = {
   festival: "Festival",
   "muzikaal-cabaret": "Muzikaal cabaret",
   kleinkunst: "Kleinkunst",
+  kindervoorstellingen: "Kindervoorstellingen",
 };
 
 // Optioneel per artiest: solo ("persoon") of duo/groep ("groep"); zonder vorm raadt de site het aan de naam.

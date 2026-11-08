@@ -1093,7 +1093,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   // Clubavonden, festivals, kwissen en reeksen zijn geen cabaretier.
   const GEEN_CABARETIER = /\b(festival|club|kwis|cabarestafette|agency|producties|stichting|comedians|finalisten|finalistentour|tournee|open mic|night|marathon|theaterweekend|bingo|lacht|show|revue|vibe)\b/i;
-  const cabaretiers = artiestenMetData.filter(({ a }) => !GEEN_CABARETIER.test(a.naam));
+  // Wie alleen kindervoorstellingen speelt, is geen cabaretier: die staat niet op /alle-cabaretiers/.
+  const cabaretiers = artiestenMetData.filter(({ a, list }) => !GEEN_CABARETIER.test(a.naam) && list.some((g) => V.get(g.voorstelling).genre !== "kindervoorstellingen"));
   const kaal = (html) => html.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/\s+/g, " ").trim();
   const artiestLink = (a) => `<a href="${artiestPad(a.id)}">${esc(a.naam)}</a>`;
   const CABARETIER_PAGINAS = {
@@ -1810,6 +1811,18 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       vragen: [
         ["Wat is een open mic?", "Een avond waarop comedians kort nieuw materiaal testen voor publiek. Je ziet beginners naast ervaren comedians die nieuwe grappen uitproberen."],
         ["Kan ik zelf meedoen aan een open mic?", "Meestal wel. De meeste clubs werken met aanmelden vooraf; kijk op de site van de club voor de regels."],
+      ],
+    },
+    // Sinds november 2026; de tekst richt zich op kindervoorstellingen én familievoorstellingen (zo zoeken ouders).
+    kindervoorstellingen: {
+      kop: "Kindervoorstellingen", meervoud: "kinder- en familievoorstellingen", wie: "makers", kleur: "aqua",
+      titel: "Kindervoorstellingen en familievoorstellingen: agenda",
+      uitleg: "Een kindervoorstelling is theater voor kinderen: van peutervoorstellingen van een half uur tot verhalen, poppenspel, muziek, humor en musicals voor de hele basisschool. Een familievoorstelling is gemaakt voor kinderen én volwassenen samen, zodat het hele gezin, opa en oma inbegrepen, er plezier aan heeft. Bij elke voorstelling geeft het theater een leeftijd op, zoals 4+ of 6+: de jongste leeftijd waarvoor de voorstelling geschikt is.",
+      vragen: [
+        ["Wat is het verschil tussen een kindervoorstelling en een familievoorstelling?", "Een kindervoorstelling is gemaakt voor kinderen, vaak voor een bepaalde leeftijd. Een familievoorstelling is bedoeld voor kinderen en volwassenen samen: de grappen en het verhaal werken voor jong en oud, zodat je er als gezin naartoe gaat."],
+        ["Voor welke leeftijd is een voorstelling geschikt?", "Theaters geven een leeftijd op, zoals 2+, 4+ of 8+. Dat is de jongste leeftijd waarvoor de voorstelling geschikt is. Klik bij een voorstelling op <em>Tickets</em> voor de leeftijd en de speelduur op de site van het theater."],
+        ["Hoe lang duurt een kindervoorstelling?", "Voorstellingen voor peuters en kleuters duren vaak 30 tot 45 minuten, voor oudere kinderen ongeveer een uur. Familievoorstellingen en musicals duren langer, vaak met een pauze."],
+        ["Wanneer zijn er de meeste kinder- en familievoorstellingen?", "Vooral in het weekend, op woensdagmiddag en in de schoolvakanties, zoals de herfstvakantie, de kerstvakantie en de voorjaarsvakantie. Veel voorstellingen beginnen 's middags."],
       ],
     },
     improvisatie: {
