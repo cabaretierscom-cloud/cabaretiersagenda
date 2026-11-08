@@ -995,13 +995,14 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   // Blok bovenaan een plaatspagina: wat er vanavond en dit weekend is, of de eerstvolgende voorstelling.
   function dagBlok(p, list) {
-    const tot = weekend.eind < morgenDag ? morgenDag : weekend.eind;
+    // De komende zeven dagen (vandaag plus zes), zodat het blok ook op zondag gevuld is.
+    const tot = dagPlus(vandaagDag, 6);
     const binnenkort = list.filter((g) => g.datum <= tot && g.status !== "geannuleerd");
     if (!binnenkort.length) {
       const g = list.find((x) => x.status !== "geannuleerd");
       return g ? `<p class="dag-blok-leeg"><b>Deze week</b> staat er in ${esc(p)} niets in de agenda. Eerstvolgende: ${esc(fmt.long(g.datum))}, ${esc(V.get(g.voorstelling).artiesten.map((a) => A.get(a).naam).join(" en ") || V.get(g.voorstelling).titel)} in ${esc(T.get(g.theater).naam)}.</p>` : "";
     }
-    // Kaartjes in de kleur van de artiest, zoals de affiches: alles van vanavond tot en met zondag, in een
+    // Kaartjes in de kleur van de artiest, zoals de affiches: alles van de komende zeven dagen, in een
     // affichewand (strip) die opzij schuift; de actieve kaart komt naar voren (agenda.js, zoals de affiches).
     // Het hele kaartje is de link naar de kaartverkoop (class "tickets" en ticketData() voor de klikmeting).
     // Nooit twee kaartjes van dezelfde kleur naast elkaar: de volgorde (op datum) blijft, de kleur schuift.
