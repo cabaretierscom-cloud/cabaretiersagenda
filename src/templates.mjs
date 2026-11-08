@@ -706,8 +706,8 @@ ${nu ? `<section class="wall" aria-labelledby="nu-title">
 <section class="wrap stats" aria-label="De agenda in cijfers">
   <dl>
     <div><dt>voorstellingen</dt><dd>${tellers.speeldata.toLocaleString("nl-NL")}</dd></div>
-    <div><dt>theaters</dt><dd>${tellers.zalen}</dd></div>
     <div><dt>artiesten</dt><dd>${tellers.artiesten}</dd></div>
+    <div><dt>theaters</dt><dd>${tellers.zalen}</dd></div>
   </dl>
 </section>
 
