@@ -32,6 +32,12 @@ const aliassen = existsSync(join(dataDir, "aliassen.json")) ? read("aliassen.jso
 // noemt ("Nieuw geluid!" is "Cabarestafette 26-27") en tournees die in hun geheel een reprise zijn.
 const correcties = existsSync(join(dataDir, "voorstelling-correcties.json")) ? read("voorstelling-correcties.json") : {};
 const aliasOpSleutel = new Map(Object.entries(aliassen).map(([k, v]) => [slug(k), v]));
+// Opgeslagen voorstellingen met een verbeterde titel krijgen die titel ook, anders trekt de oude titel
+// (die op de nieuwe lijkt) de avonden weer naar zich toe.
+for (const c of correcties.titels || []) {
+  if (!c.naar) continue;
+  for (const v of voorstellingen) if (v.artiesten.includes(slug(c.artiest)) && c.van.some((t) => slug(t) === slug(v.titel))) v.titel = c.naar;
+}
 
 // Speellijsten van artiesten komen als laatste: wat een theater zelf meldt, gaat voor.
 const COMEDYCLUB = /\bcomedy[ -]?(club|caf[eé]|huis|train)\b/i;
@@ -391,10 +397,6 @@ for (const f of bronFiles) {
     }
     // Geen artiest en de titel is precies een bekende artiest of alias ("Cabarestafette", Parktheater).
     if (!r.artiesten.length && r.titel && (aliasOpSleutel.has(slug(r.titel)) || isBekend(r.titel))) { r.artiesten = opgeschoondeArtiesten([r.titel]); r.titel = ""; r.zonderTitel = true; }
-    for (const c of correcties.titels || []) {
-      if (!r.artiesten.some((n) => slug(n) === slug(c.artiest))) continue;
-      if (!r.titel || c.van.some((t) => slug(t) === slug(r.titel))) { r.titel = c.naar; delete r.zonderTitel; }
-    }
     // Toneel en komedie hebben hun eigen opruimregels (stukOpOrde); de regels hieronder zijn voor cabaret.
     if (r.genre === "komedie" || /^(komedie|blijspel|klucht)\b/i.test(r.titel)) stukOpOrde(r, bronRecord.artiesten?.length === 1 ? bronRecord.artiesten[0] : null);
     // "Eigenlijk" / "Viggo Waas, Eddie B. Wahr & Kees van der Vooren": een namenlijst als titel en een
@@ -406,6 +408,18 @@ for (const f of bronFiles) {
     if (r.genre !== "komedie" && !/^(komedie|blijspel|klucht)\b/i.test(r.titel) && r.artiesten.length === 1 && /(,.*,|\be\.a\.?$|\bea$)/i.test(r.titel)) {
       r.titel = r.artiesten[0];
       r.artiesten = [];
+    }
+    // Staat die voorstelling elders als "artiest" in de agenda ("Vrouwejaars 2026", "We zijn toch familie"),
+    // dan hoort deze avond daarbij in plaats van een losse voorstelling per zaal.
+    if (!r.artiesten.length && r.titel && (aliasOpSleutel.has(slug(r.titel)) || isBekend(r.titel))) { r.artiesten = opgeschoondeArtiesten([r.titel]); r.titel = ""; r.zonderTitel = true; }
+    // Verbeteringen (voorstelling-correcties.json): andere schrijfwijzen van een titel worden één voorstelling.
+    // "naar": "" betekent: zonder titel (de naam is de voorstelling); "leeg": false laat avonden zonder titel met rust.
+    for (const c of correcties.titels || []) {
+      if (!r.artiesten.some((n) => slug(n) === slug(c.artiest))) continue;
+      if ((!r.titel && c.leeg !== false) || (r.titel && c.van.some((t) => slug(t) === slug(r.titel)))) {
+        r.titel = c.naar;
+        if (c.naar) delete r.zonderTitel; else r.zonderTitel = true;
+      }
     }
     if (r.theater?.zoeken) {
       // Speellijst: dezelfde artiest op dezelfde dag in dezelfde plaats staat er al via het theater.

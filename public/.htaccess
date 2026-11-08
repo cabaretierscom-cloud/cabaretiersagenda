@@ -15,6 +15,15 @@ AddType application/manifest+json .webmanifest
   RewriteRule ^plaatsen/([^/]+)/?$ https://www.cabaretiers.com/theaters-in-$1/ [L,R=301]
   RewriteRule ^plaatsen/([^/]+)/(vanavond|dit-weekend)/?$ https://www.cabaretiers.com/theaters-in-$1/ [L,R=301]
   # Genres stonden tot november 2026 onder /genres/; nu onder /agenda/ (ook /genres/ zelf).
+  # Dubbele artiesten samengevoegd (november 2026).
+  RewriteRule ^artiesten/beperkt-houdbaar(/.*)?$ https://www.cabaretiers.com/artiesten/andries-tunru-en-stefan-hendrikx/ [L,R=301]
+  RewriteRule ^artiesten/bert-visscher-en-het-noordpool-strijkkwartet(/.*)?$ https://www.cabaretiers.com/artiesten/bert-visscher/ [L,R=301]
+  RewriteRule ^artiesten/comedy-comedians(/.*)?$ https://www.cabaretiers.com/artiesten/martijn-koning/ [L,R=301]
+  RewriteRule ^artiesten/ddt-houdt-uitverkoop(/.*)?$ https://www.cabaretiers.com/artiesten/jacques-vermeire/ [L,R=301]
+  RewriteRule ^artiesten/de-vrouwejaars(/.*)?$ https://www.cabaretiers.com/artiesten/vrouwejaars-2026/ [L,R=301]
+  RewriteRule ^artiesten/klaas-van-eerden(/.*)?$ https://www.cabaretiers.com/artiesten/klaas-van-der-eerden/ [L,R=301]
+  RewriteRule ^artiesten/marja-van-katendrecht-x-theater-zuidplein(/.*)?$ https://www.cabaretiers.com/artiesten/marja-van-katendrecht/ [L,R=301]
+  RewriteRule ^artiesten/tis-hier-geen-hotel-3(/.*)?$ https://www.cabaretiers.com/artiesten/hanneke-drenth-en-dianne-liesker/ [L,R=301]
   # Kor Hoebe: de voorstelling heet Korrelatie, niet Korrelrelatie (november 2026).
   RewriteRule ^artiesten/kor-hoebe/korrelrelatie/?$ https://www.cabaretiers.com/artiesten/kor-hoebe/korrelatie/ [L,R=301]
   # Het genre theaterkomedie heet sinds november 2026 komedie.
