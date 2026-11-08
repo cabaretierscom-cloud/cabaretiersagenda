@@ -1125,7 +1125,10 @@
     "artiesten": [
       "blind-date"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "ookGenres": [
+      "kindervoorstellingen"
+    ]
   },
   {
     "id": "bob-koomen-peer",
@@ -1349,7 +1352,15 @@
     "artiesten": [
       "brrrothers"
     ],
-    "genre": "kindervoorstellingen"
+    "genre": "kindervoorstellingen",
+    "recensies": [
+      {
+        "medium": "Javier López Piñón, Theaterkrant",
+        "sterren": null,
+        "citaat": "Van meet af aan toont de choreograaf hoe hij met timing en verwachting kan spelen en slaagt hij erin het (jonge) publiek te enthousiasmeren.",
+        "bron": "https://kunstlinie.nl/programma/brrrothers-6/"
+      }
+    ]
   },
   {
     "id": "bugra-gedik-gelukkig-geboren",
@@ -1962,7 +1973,27 @@
     "artiesten": [
       "controle"
     ],
-    "genre": "kindervoorstellingen"
+    "genre": "kindervoorstellingen",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Hilarisch, ironisch, maar ook van een ontroerende schoonheid.",
+        "bron": "https://kunstlinie.nl/programma/controle-12/"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Een uitstalkast van theatrale inventiviteit en superieure slapstick.",
+        "bron": "https://kunstlinie.nl/programma/controle-12/"
+      },
+      {
+        "medium": "NRC",
+        "sterren": null,
+        "citaat": "Denk Jiskefet, denk Jackass, denk Maaskantje én denk breakdance.",
+        "bron": "https://kunstlinie.nl/programma/controle-12/"
+      }
+    ]
   },
   {
     "id": "coppelia-al-filmhuis-de-spiegel",
@@ -2311,6 +2342,14 @@
     ]
   },
   {
+    "id": "de-grote-almeerse-kerst-sing-a-long-de-grote-almeerse-kerst-sing-a-long",
+    "titel": "De Grote Almeerse Kerst Sing-A-Long",
+    "artiesten": [
+      "de-grote-almeerse-kerst-sing-a-long"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "de-grote-dino-show-de-geheime-tijdmachine",
     "titel": "De Geheime Tijdmachine",
     "artiesten": [
@@ -2413,6 +2452,14 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "de-koka-kola-rivier-de-koka-kola-rivier",
+    "titel": "De Koka Kola Rivier",
+    "artiesten": [
+      "de-koka-kola-rivier"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "de-limburgse-buuttecup-stichting-buutte-cultuur-limburg",
     "titel": "Stichting Buutte Cultuur Limburg",
     "artiesten": [
@@ -2473,6 +2520,14 @@
       "de-mugge-van-brugge"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "de-musical-zonder-billen-4-de-musical-zonder-billen",
+    "titel": "De musical zonder billen",
+    "artiesten": [
+      "de-musical-zonder-billen-4"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "de-musical-zonder-billen-4-doldwaze-familiemusical-vol-humor-en-fantasie",
@@ -2544,6 +2599,14 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "de-nog-grotere-slijmmusical-de-nog-grotere-slijmmusical",
+    "titel": "De Nog Grotere Slijmmusical",
+    "artiesten": [
+      "de-nog-grotere-slijmmusical"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "de-nog-grotere-slijmmusical-slijm-is-terug",
     "titel": "Slijm is terug!",
     "artiesten": [
@@ -2572,6 +2635,14 @@
     "titel": "De Proefkeuken en de WC van tijd",
     "artiesten": [
       "pieter-hulst-en-willem-voogd"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "de-proefkeuken-en-de-wc-van-tijd-de-proefkeuken-en-de-wc-van-tijd",
+    "titel": "De Proefkeuken en de WC van tijd",
+    "artiesten": [
+      "de-proefkeuken-en-de-wc-van-tijd"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -2686,6 +2757,14 @@
       "vrouwejaars-2026"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "de-waanzinnige-boomhut-van-78-verdiepingen-de-waanzinnige-boomhut-van-78-verdiep",
+    "titel": "De Waanzinnige Boomhut van 78 Verdiepingen",
+    "artiesten": [
+      "de-waanzinnige-boomhut-van-78-verdiepingen"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "de-wind-en-wij-tg-winterberg",
@@ -5149,6 +5228,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "juf-braaksel-de-musical-juf-braaksel-de-musical",
+    "titel": "Juf Braaksel – De Musical",
+    "artiesten": [
+      "juf-braaksel-de-musical"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "juf-braaksel-de-musical-naar-het-boek-van-carry-slee-amphion",
     "titel": "Juf Braaksel De Musical naar het boek van Carry Slee",
     "artiesten": [
@@ -5372,7 +5459,39 @@
     "artiesten": [
       "kevin-hassing"
     ],
-    "genre": "kindervoorstellingen"
+    "genre": "kindervoorstellingen",
+    "recensies": [
+      {
+        "medium": "Kidsweek",
+        "sterren": 5,
+        "citaat": "Mus is stoer én kwetsbaar, precies zoals in het boek",
+        "bron": "https://delamar.nl/voorstellingen/mus-kapitein-kwaadbaard-en-de-5-slangen/"
+      },
+      {
+        "medium": "Musicalsites",
+        "sterren": 5,
+        "citaat": "Een magische ervaring",
+        "bron": "https://delamar.nl/voorstellingen/mus-kapitein-kwaadbaard-en-de-5-slangen/"
+      },
+      {
+        "medium": "Musicalworld",
+        "sterren": 4,
+        "citaat": "Theater zoals het moet zijn. Boeiend, origineel, een beetje prikkelend en bijzonder mooi",
+        "bron": "https://delamar.nl/voorstellingen/mus-kapitein-kwaadbaard-en-de-5-slangen/"
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": 4,
+        "citaat": "Kwalitatief hoogwaardig, toegankelijk en fantasierijk jeugdtheater",
+        "bron": "https://delamar.nl/voorstellingen/mus-kapitein-kwaadbaard-en-de-5-slangen/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Een avontuurlijke familiemusical, leuk voor zowel fans als hen die het verhaal nog zullen ontdekken",
+        "bron": "https://delamar.nl/voorstellingen/mus-kapitein-kwaadbaard-en-de-5-slangen/"
+      }
+    ]
   },
   {
     "id": "khalid-alterch-live-in-het-theater",
@@ -5920,6 +6039,28 @@
       "leon-van-der-zanden"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "let-s-flow-let-s-flow",
+    "titel": "Let’s Flow",
+    "artiesten": [
+      "let-s-flow"
+    ],
+    "genre": "kindervoorstellingen",
+    "recensies": [
+      {
+        "medium": "Cultuurpers",
+        "sterren": null,
+        "citaat": "MaasTD doorbreekt een taboe, een ding uit het dagelijks leven van vrouwen dat omgeven wordt door eufemismen",
+        "bron": "https://kunstlinie.nl/programma/lets-flow-10/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Let’s flow is een zeer visuele voorstelling, waarin muzikale hoogstandjes worden afgewisseld met dynamische dans",
+        "bron": "https://kunstlinie.nl/programma/lets-flow-10/"
+      }
+    ]
   },
   {
     "id": "li-jin-hao-li-jin-hao",
@@ -6871,6 +7012,14 @@
     ]
   },
   {
+    "id": "missie-maan-astronauten-gezocht-missie-maan-astronauten-gezocht",
+    "titel": "Missie Maan: Astronauten Gezocht!",
+    "artiesten": [
+      "missie-maan-astronauten-gezocht"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "mohammed-hussain-shaadi-shud-i-live-in-amsterdam",
     "titel": "Shaadi Shud I? – Live in Amsterdam!",
     "artiesten": [
@@ -6989,6 +7138,14 @@
     "titel": "Sterke Verhalen",
     "artiesten": [
       "mus-en-kapitein-kwaadbaard"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "musical-de-kleine-prins-musical-de-kleine-prins",
+    "titel": "Musical De Kleine Prins",
+    "artiesten": [
+      "musical-de-kleine-prins"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -8021,6 +8178,28 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "pinokkio-pinokkio",
+    "titel": "Pinokkio",
+    "artiesten": [
+      "pinokkio"
+    ],
+    "genre": "kindervoorstellingen",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "…een antropomorfische fabel over de kracht van samenwerken en diversiteit. Ook deze moderne, doorgecomponeerde operabewerking is aanstekelijk en toegankelijk",
+        "bron": "https://kunstlinie.nl/programma/pinokkio-7/"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Met de familievoorstelling Reinaert de V. bewijst Holland Opera dat het bijna 800 jaar oude verhaal nog steeds actueel én grappig is",
+        "bron": "https://kunstlinie.nl/programma/pinokkio-7/"
+      }
+    ]
+  },
+  {
     "id": "pip-en-pelle-wintershow-de-winterkomedie-voor-de-hele-familie",
     "titel": "Dé winterkomedie voor de hele familie!",
     "artiesten": [
@@ -8849,6 +9028,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "samar-en-de-bange-koning-samar-en-de-bange-koning",
+    "titel": "Samar en de bange koning",
+    "artiesten": [
+      "samar-en-de-bange-koning"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "samir-fighil-turbulentie",
     "titel": "Turbulentie",
     "artiesten": [
@@ -9518,7 +9705,27 @@
     "artiesten": [
       "swan-lake"
     ],
-    "genre": "kindervoorstellingen"
+    "genre": "kindervoorstellingen",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Boksbewegingen en dierenmanieren: deze vrije versie van ‘Het Zwanenmeer’ zit vol vrolijke verrassingen.",
+        "bron": "https://kunstlinie.nl/programma/swan-lake-6-99-jaar/"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Deze Swan Lake is erg levendig. De kostuums zijn kleurrijk en feestelijk, de conventies van de klassieke ballettaal worden humoristisch ondermijnd en de bewegingen van de zwanen zijn intrigerend: eerder dierlijk grillig dan romantisch sierlijk.",
+        "bron": "https://kunstlinie.nl/programma/swan-lake-6-99-jaar/"
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": null,
+        "citaat": "De nieuwe moderne versie van Swan Lake bij Introdans oogt jeugdig en fris.",
+        "bron": "https://kunstlinie.nl/programma/swan-lake-6-99-jaar/"
+      }
+    ]
   },
   {
     "id": "swit-tori-swit-tori",
@@ -10280,6 +10487,14 @@
     "theater": "comedyhuis-utrecht"
   },
   {
+    "id": "try-out-wie-is-hier-nou-gek-try-out-wie-is-hier-nou-gek",
+    "titel": "Try-out: Wie is hier nou gek",
+    "artiesten": [
+      "try-out-wie-is-hier-nou-gek"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "tuimelaar-6-18-mnd-frisse-oren",
     "titel": "Frisse Oren",
     "artiesten": [
@@ -10727,7 +10942,27 @@
     "artiesten": [
       "wijsneuzen"
     ],
-    "genre": "kindervoorstellingen"
+    "genre": "kindervoorstellingen",
+    "recensies": [
+      {
+        "medium": "Best Social Awards",
+        "sterren": null,
+        "citaat": "Met hun korte, krachtige en informatieve YouTube Shorts brengen ze je heel wat kennis bij.",
+        "bron": "https://kunstlinie.nl/programma/wijsneuzen-8/"
+      },
+      {
+        "medium": "KRO NCRV",
+        "sterren": null,
+        "citaat": "Hun stijl van sketches, animaties en snelle montages sluit goed aan bij de doelgroep.",
+        "bron": "https://kunstlinie.nl/programma/wijsneuzen-8/"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": null,
+        "citaat": "Reuze vermakelijk en je steekt er nog wat van op ook.",
+        "bron": "https://kunstlinie.nl/programma/wijsneuzen-8/"
+      }
+    ]
   },
   {
     "id": "wild-horse-nine-verkadefabriek-s-hertogenbosch",
@@ -10741,6 +10976,14 @@
     "titel": "Overleven in de jungle",
     "artiesten": [
       "wildebras"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "wildebras-overleven-in-de-jungle-wildebras-overleven-in-de-jungle",
+    "titel": "Wildebras | Overleven In De Jungle",
+    "artiesten": [
+      "wildebras-overleven-in-de-jungle"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -11015,6 +11258,14 @@
         "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer"
       }
     ]
+  },
+  {
+    "id": "yeti-yeti",
+    "titel": "Yeti",
+    "artiesten": [
+      "yeti"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "yunus-aktas-nieuw-programma",
