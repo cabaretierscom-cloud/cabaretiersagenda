@@ -1,7 +1,7 @@
 {
   "bron": "amai",
   "naam": "Amai Comedy Club",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "amai-comedy-club-gent",
@@ -16,17 +16,6 @@
     {
       "theater": "amai-comedy-club-gent",
       "artiesten": [],
-      "titel": "Impro-tastisch",
-      "genre": "improvisatie",
-      "datum": "2026-11-08",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.amaicomedyclub.com/event-details/impro-tastisch-2026-11-08-15-00"
-    },
-    {
-      "theater": "amai-comedy-club-gent",
-      "artiesten": [],
       "titel": "Comedy Open Mic",
       "genre": "open-mic",
       "datum": "2026-11-12",
@@ -34,6 +23,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.amaicomedyclub.com/event-details/comedy-open-mic-nl-2026-11-12-20-30"
+    },
+    {
+      "theater": "amai-comedy-club-gent",
+      "artiesten": [],
+      "titel": "The American Apology Tour (ENG) - Early show",
+      "genre": "stand-up",
+      "datum": "2026-11-13",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amaicomedyclub.com/event-details/the-american-apology-tour-eng-early-show"
     },
     {
       "theater": "amai-comedy-club-gent",
@@ -52,7 +52,7 @@
       "titel": "The American Apology Tour",
       "genre": "stand-up",
       "datum": "2026-11-13",
-      "tijd": "20:30",
+      "tijd": "21:00",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.amaicomedyclub.com/event-details/the-american-apology-tour-eng"

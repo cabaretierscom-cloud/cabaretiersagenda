@@ -1,7 +1,7 @@
 {
   "bron": "delamar",
   "naam": "DeLaMar",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "delamar",
@@ -48,7 +48,7 @@
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://delamar.nl/voorstellingen/esther-van-der-voort/"
     },
@@ -611,6 +611,19 @@
     {
       "theater": "delamar",
       "artiesten": [
+        "Anuar"
+      ],
+      "titel": "Ongeduldig Geduldig",
+      "genre": "cabaret",
+      "datum": "2027-06-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/anuar/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
         "Rob Scheepers"
       ],
       "titel": "Scheepers op z’n scherpst",
@@ -1123,6 +1136,19 @@
       "titel": "Slechtste Liedjes van de Straat",
       "genre": "cabaret",
       "datum": "2027-05-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/roel-c-verburg/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Roel C. Verburg"
+      ],
+      "titel": "Slechtste Liedjes van de Straat",
+      "genre": "cabaret",
+      "datum": "2027-06-25",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,

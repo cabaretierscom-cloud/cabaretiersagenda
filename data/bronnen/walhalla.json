@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -29,19 +29,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-walhalla",
-      "artiesten": [
-        "Tussen Kunst en Kids"
-      ],
-      "titel": "7+",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-08",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/tussen-kunst-en-kids-7-3/"
-    },
     {
       "theater": "theater-walhalla",
       "artiesten": [
@@ -116,7 +103,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-15",
       "tijd": "13:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-17/"
     },
@@ -272,7 +259,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-22",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-15/"
     },
@@ -363,7 +350,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-29",
       "tijd": "13:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-5/"
     },
@@ -555,7 +542,7 @@
       "titel": "Lieve Marianne",
       "genre": "cabaret",
       "datum": "2027-01-16",
-      "tijd": "15:00",
+      "tijd": "20:30",
       "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/peter-heerschop-lieve-marianne-try-out/"
@@ -733,8 +720,8 @@
       "titel": "Het Ministerie van Inwendige Zaken",
       "genre": "kindervoorstellingen",
       "datum": "2027-02-06",
-      "tijd": "20:30",
-      "status": "uitverkocht",
+      "tijd": "19:30",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/het-ministerie-van-inwendige-zaken/"
     },
@@ -760,7 +747,7 @@
       "genre": "cabaret",
       "datum": "2027-02-11",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/groninger-studenten-cabaret-festival-finalistentour/"
     },
@@ -812,7 +799,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-02-14",
       "tijd": "15:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/tussen-kunst-en-kids-7-8/"
     },
@@ -825,7 +812,7 @@
       "genre": "cabaret",
       "datum": "2027-02-18",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/gavin-reijnders-jazzebelle/"
     },
@@ -903,7 +890,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-02-25",
       "tijd": "11:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/bon-dia-in-de-jungle-4-t-m-8-jaar-izaline-calister-thijs-borsten/"
     },
@@ -964,7 +951,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-02-28",
       "tijd": "10:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/zingeling-2-t-m-5-jaar-6/"
     },
@@ -988,7 +975,7 @@
       "genre": "kleinkunst",
       "datum": "2027-03-04",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-9/"
     },
@@ -1027,7 +1014,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-03-10",
       "tijd": "09:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/klassiek-voor-dreumesen-15-krulmuziek/"
     },
@@ -1281,7 +1268,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-04-09",
       "tijd": "19:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/so-long-sweetwater-8/"
     },
@@ -1318,7 +1305,7 @@
       "genre": "cabaret",
       "datum": "2027-04-15",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/finalistentour-leids-cabaret-festival/"
     },
@@ -1383,7 +1370,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-04-18",
       "tijd": "15:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/tussen-kunst-en-kids-7/"
     },
@@ -1409,7 +1396,7 @@
       "genre": "cabaret",
       "datum": "2027-04-22",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/fabian-franciscus-is-het-leven-al-begonnen/"
     },
@@ -1459,7 +1446,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-04-29",
       "tijd": "13:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/dirk-scheele-dikkie-dik/"
     },
@@ -1550,7 +1537,7 @@
       "genre": "cabaret",
       "datum": "2027-06-10",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/stefan-hendikx-in-perspectief/"
     },

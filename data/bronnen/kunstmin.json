@@ -1,7 +1,7 @@
 {
   "bron": "kunstmin",
   "naam": "Kunstmin",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "kunstmin",
@@ -820,9 +820,9 @@
     {
       "theater": "kunstmin",
       "artiesten": [
-        "Aladdin De Musical (4+)"
+        "Van Hoorne Studios"
       ],
-      "titel": "Van Hoorne Studios",
+      "titel": "Aladdin De Musical (4+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-01-17",
       "tijd": "13:30",
@@ -833,9 +833,9 @@
     {
       "theater": "kunstmin",
       "artiesten": [
-        "Aladdin De Musical (4+)"
+        "Van Hoorne Studios"
       ],
-      "titel": "Van Hoorne Studios",
+      "titel": "Aladdin De Musical (4+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-01-17",
       "tijd": "16:00",
@@ -968,19 +968,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/hntjong-dag-poes-4/"
-    },
-    {
-      "theater": "kunstmin",
-      "artiesten": [
-        "Pieter Hulst, Willem Voogd e.a."
-      ],
-      "titel": "De Proefkeuken en de WC van tijd (8+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-08",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kunstmin.nl/voorstellingen/pieter-hulst-willem-voogd-e-a-de-proefkeuken-en-de-wc-van-tijd/"
     }
   ],
   "recensies": {}

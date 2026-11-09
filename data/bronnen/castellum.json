@@ -1,7 +1,7 @@
 {
   "bron": "castellum",
   "naam": "Castellum",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "castellum",
@@ -80,7 +80,9 @@
     },
     {
       "theater": "castellum",
-      "artiesten": [],
+      "artiesten": [
+        "De Nóg Grotere Slijmmusical"
+      ],
       "titel": "De Nóg Grotere Slijmmusical",
       "genre": "kindervoorstellingen",
       "datum": "2027-04-11",
@@ -239,7 +241,7 @@
       "genre": "cabaret",
       "datum": "2026-11-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://castellum.nl/theater/comedy-club-down-under"
     },
@@ -752,9 +754,9 @@
     {
       "theater": "castellum",
       "artiesten": [
-        "Oliver en het avontuur van de straatkinderen"
+        "Nationaal Jeugd Musical Theater"
       ],
-      "titel": "Nationaal Jeugd Musical Theater",
+      "titel": "Oliver en het avontuur van de straatkinderen",
       "genre": "kindervoorstellingen",
       "datum": "2026-12-13",
       "tijd": "14:00",

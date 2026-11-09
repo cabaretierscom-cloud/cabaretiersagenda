@@ -2,28 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Toon Hermans Theater",
-        "plaats": "Sittard",
-        "land": "NL",
-        "website": "https://www.plt.nl"
-      },
-      "artiesten": [
-        "Arnout Van den Bossche"
-      ],
-      "titel": "Coach",
-      "genre": "stand-up",
-      "datum": "2026-11-08",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.plt.nl/programma/arnout-van-den-bossche-be-coach-reprise/08-11-2026-20-00"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -1250,7 +1231,7 @@
       "genre": "stand-up",
       "datum": "2026-12-04",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/arnout-van-den-bosche/2026-12-04/"
     },
@@ -8732,13 +8713,5 @@
       "bron": "https://www.comedyshows.be/kalender/hans-cools/2027-10-14/"
     }
   ],
-  "recensies": {
-    "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jade-mintjens-bedankt-om-te-komen": [
-      {
-        "medium": "De Morgen",
-        "sterren": 4,
-        "citaat": "Originele verteller die niet bij de geijkte comedy-onderwerpen blijft hangen."
-      }
-    ]
-  }
+  "recensies": {}
 }

@@ -1,7 +1,7 @@
 {
   "bron": "zuidplein",
   "naam": "Theater Zuidplein",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "theater-zuidplein",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Giorgio Costa"
-      ],
-      "titel": "Kapitein kool! (6+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-08",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/kapitein-kool-6-1y2k"
-    },
     {
       "theater": "theater-zuidplein",
       "artiesten": [
@@ -484,9 +471,9 @@
     {
       "theater": "theater-zuidplein",
       "artiesten": [
-        "De musical zonder billen (4+)"
+        "Jaski & Groenteman"
       ],
-      "titel": "Jaski & Groenteman",
+      "titel": "De musical zonder billen (4+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-01-24",
       "tijd": "14:00",

@@ -1,7 +1,7 @@
 {
   "bron": "cpunt",
   "naam": "Cpunt",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "cpunt",
@@ -428,9 +428,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "De Kleine Prins (8+)"
+        "DG Theater"
       ],
-      "titel": "DG Theater",
+      "titel": "De Kleine Prins (8+)",
       "genre": "kindervoorstellingen",
       "datum": "2026-11-20",
       "tijd": "19:15",
@@ -1390,9 +1390,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "Krulmuziek - Dreumesconcert (1,5+)"
+        "Klassiek voor kleintjes"
       ],
-      "titel": "Klassiek voor kleintjes",
+      "titel": "Krulmuziek - Dreumesconcert (1,5+)",
       "genre": "kindervoorstellingen",
       "datum": "2026-12-29",
       "tijd": "09:30",
@@ -1403,9 +1403,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "Krulmuziek - Babyconcert (0,5+)"
+        "Klassiek voor kleintjes"
       ],
-      "titel": "Klassiek voor kleintjes",
+      "titel": "Krulmuziek - Babyconcert (0,5+)",
       "genre": "kindervoorstellingen",
       "datum": "2026-12-29",
       "tijd": "10:15",
@@ -1416,9 +1416,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "Krulmuziek - Peuter/Kleuterconcert (2,5+)"
+        "Klassiek voor kleintjes"
       ],
-      "titel": "Klassiek voor kleintjes",
+      "titel": "Krulmuziek - Peuter/Kleuterconcert (2,5+)",
       "genre": "kindervoorstellingen",
       "datum": "2026-12-29",
       "tijd": "11:15",
@@ -1638,9 +1638,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "Aladdin de Musical (4+)"
+        "Van Hoorne Studios"
       ],
-      "titel": "Van Hoorne Studios",
+      "titel": "Aladdin de Musical (4+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-04-28",
       "tijd": "13:30",
@@ -1651,9 +1651,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "Aladdin de Musical (4+)"
+        "Van Hoorne Studios"
       ],
-      "titel": "Van Hoorne Studios",
+      "titel": "Aladdin de Musical (4+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-04-28",
       "tijd": "16:00",
@@ -1664,9 +1664,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "De Nog Grotere Slijmmusical (6+)"
+        "BazarMedia"
       ],
-      "titel": "BazarMedia",
+      "titel": "De Nog Grotere Slijmmusical (6+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-05-15",
       "tijd": "16:00",
@@ -1677,9 +1677,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "De Nog Grotere Slijmmusical (6+)"
+        "BazarMedia"
       ],
-      "titel": "BazarMedia",
+      "titel": "De Nog Grotere Slijmmusical (6+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-05-15",
       "tijd": "19:15",
@@ -1690,9 +1690,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "De ridder zonder billen (3+)"
+        "Klein Amsterdam Producties"
       ],
-      "titel": "Klein Amsterdam Producties",
+      "titel": "De ridder zonder billen (3+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-05-17",
       "tijd": "11:00",
@@ -1703,9 +1703,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "De ridder zonder billen (3+)"
+        "Klein Amsterdam Producties"
       ],
-      "titel": "Klein Amsterdam Producties",
+      "titel": "De ridder zonder billen (3+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-05-17",
       "tijd": "14:00",
@@ -1742,9 +1742,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "Het Kado (6+)"
+        "Als het ware"
       ],
-      "titel": "Als het ware",
+      "titel": "Het Kado (6+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-01-03",
       "tijd": "14:30",
@@ -1755,9 +1755,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "Kikker is Kikker (3+)"
+        "Theater Terra"
       ],
-      "titel": "Theater Terra",
+      "titel": "Kikker is Kikker (3+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-01-10",
       "tijd": "14:30",
@@ -1781,9 +1781,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "De betoverde klas (4+)"
+        "Huub Cooijmans"
       ],
-      "titel": "Huub Cooijmans",
+      "titel": "De betoverde klas (4+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-02-21",
       "tijd": "14:30",
@@ -1820,9 +1820,9 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "Mijn Kleuren (2+)"
+        "Mime Wave"
       ],
-      "titel": "Mime Wave",
+      "titel": "Mijn Kleuren (2+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-04-04",
       "tijd": "11:00",
@@ -2347,6 +2347,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.cpunt.nl/agenda/testing-eus31"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [],
+      "titel": "Sinterklaas Poppenkast met goochelaar Korvera (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-02",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/sinterklaas-poppenkast-met-goochelaar-korvera-3"
     }
   ],
   "recensies": {}

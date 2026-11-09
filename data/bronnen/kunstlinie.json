@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -42,19 +42,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Cameretten"
-      ],
-      "titel": "Cameretten",
-      "genre": "cabaret",
-      "datum": "2027-05-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/cameretten/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Roué Verveer"
       ],
       "titel": "Roué Verveer",
@@ -81,19 +68,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "De musical zonder billen (4+)"
-      ],
-      "titel": "De musical zonder billen (4+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-05-09",
-      "tijd": "14:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/de-musical-zonder-billen-4/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Steven Brunswijk"
       ],
       "titel": "Steven Brunswijk",
@@ -107,15 +81,28 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Klaas van der Eerden"
+        "De musical zonder billen (4+)"
       ],
-      "titel": "Klaas van der Eerden",
-      "genre": "cabaret",
-      "datum": "2027-04-02",
-      "tijd": "20:15",
+      "titel": "De musical zonder billen (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-09",
+      "tijd": "14:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/klaas-van-der-eerden-2/"
+      "bron": "https://kunstlinie.nl/programma/de-musical-zonder-billen-4/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Cameretten",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/cameretten/"
     },
     {
       "theater": "kunstlinie",
@@ -129,6 +116,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/team-ricky-risolles/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Klaas van der Eerden",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/klaas-van-der-eerden-2/"
     },
     {
       "theater": "kunstlinie",
@@ -224,15 +224,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "De Grote Almeerse Kerst Sing-A-Long"
+        "Bro’s"
       ],
-      "titel": "De Grote Almeerse Kerst Sing-A-Long",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-13",
-      "tijd": "15:30",
+      "titel": "Bro’s",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/de-grote-almeerse-kerst-sing-a-long/"
+      "bron": "https://kunstlinie.nl/programma/bros/"
     },
     {
       "theater": "kunstlinie",
@@ -250,6 +250,19 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "De Grote Almeerse Kerst Sing-A-Long"
+      ],
+      "titel": "De Grote Almeerse Kerst Sing-A-Long",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/de-grote-almeerse-kerst-sing-a-long/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "Samar en de bange koning (8+)"
       ],
       "titel": "Samar en de bange koning (8+)",
@@ -263,15 +276,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Bro’s"
+        "Joanne Telesford"
       ],
-      "titel": "Bro’s",
+      "titel": "Joanne Telesford",
       "genre": "cabaret",
-      "datum": "2026-12-19",
+      "datum": "2026-11-14",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/bros/"
+      "bron": "https://kunstlinie.nl/programma/joanne-telesford/"
     },
     {
       "theater": "kunstlinie",
@@ -285,19 +298,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/de-waanzinnige-boomhut-van-78-verdiepingen-6/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Joanne Telesford"
-      ],
-      "titel": "Joanne Telesford",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/joanne-telesford/"
     },
     {
       "theater": "kunstlinie",
@@ -549,19 +549,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Zaal X Uitgemolken"
-      ],
-      "titel": "Zaal X Uitgemolken",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "19:45",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/zaal-x-uitgemolken-3/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Merijn Scholten"
       ],
       "titel": "Merijn Scholten",
@@ -766,19 +753,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/anansi-de-spin-en-de-gulzige-tijger-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Swit Tori"
-      ],
-      "titel": "Swit Tori",
-      "genre": "stand-up",
-      "datum": "2026-11-08",
-      "tijd": "18:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/swit-tori/"
     },
     {
       "theater": "kunstlinie",
@@ -1030,19 +1004,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Let’s Flow (10+)"
-      ],
-      "titel": "Let’s Flow (10+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-08",
-      "tijd": "15:00",
-      "status": "geannuleerd",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/lets-flow-10/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "BRRRothers (6+)"
       ],
       "titel": "BRRRothers (6+)",
@@ -1056,19 +1017,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "De Nog Grotere Slijmmusical (6+)"
-      ],
-      "titel": "De Nog Grotere Slijmmusical (6+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-30",
-      "tijd": "13:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/de-nog-grotere-slijmmusical-6/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "WEG ERMEE (5 t/m 12 jaar)"
       ],
       "titel": "WEG ERMEE (5 t/m 12 jaar)",
@@ -1078,6 +1026,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/weg-ermee-5-t-m-12-jaar/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "De Nog Grotere Slijmmusical (6+)"
+      ],
+      "titel": "De Nog Grotere Slijmmusical (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-30",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/de-nog-grotere-slijmmusical-6/"
     }
   ],
   "recensies": {
@@ -1323,18 +1284,6 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Piet van Eeghen maakt van eenzaamheid en ongemak opnieuw een mooie voorstelling…even grappig als ontroerend…[over de liedjes:] Ambachtelijk gemaakt, mooi en geraffineerd van taal en van muziek."
-      }
-    ],
-    "https://kunstlinie.nl/programma/lets-flow-10/": [
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Let’s flow is een zeer visuele voorstelling, waarin muzikale hoogstandjes worden afgewisseld met dynamische dans"
-      },
-      {
-        "medium": "Cultuurpers",
-        "sterren": null,
-        "citaat": "MaasTD doorbreekt een taboe, een ding uit het dagelijks leven van vrouwen dat omgeven wordt door eufemismen"
       }
     ],
     "https://kunstlinie.nl/programma/brrrothers-6/": [

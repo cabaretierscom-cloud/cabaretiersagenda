@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -223,14 +223,16 @@
     },
     {
       "theater": "theater-de-kampanje",
-      "artiesten": [],
-      "titel": "De Nog Grotere Slijmmusical 6+",
+      "artiesten": [
+        "De Nog Grotere Slijmmusical"
+      ],
+      "titel": "Een compleet nieuw verhaal, nieuwe liedjes en een nieuw avontuur (6+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-01-02",
       "tijd": "16:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/de-nog-grotere-slijmmusical-6-fjvc"
+      "bron": "https://www.kampanje.nl/voorstellingen/de-nog-grotere-slijmmusical-fjvc"
     },
     {
       "theater": "theater-de-kampanje",

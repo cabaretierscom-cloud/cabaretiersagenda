@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,45 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Kartoffel",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": null
-      },
-      "artiesten": [],
-      "titel": "International Comedy Showcase",
-      "genre": "stand-up",
-      "datum": "2026-11-08",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/international-comedy-showcase-8-november-2026/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Writers Room Open Mic",
-      "genre": "open-mic",
-      "datum": "2026-11-08",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/writers-room-open-mic-8-november-2026/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "NL Talentenpoule",
-      "genre": "stand-up",
-      "datum": "2026-11-08",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/nl-talentenpoule-8-november-2026/"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -556,7 +517,7 @@
       "genre": "stand-up",
       "datum": "2026-11-29",
       "tijd": "16:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/roel-c-verburg-solo-29-november-2026-16-00/"
     },
@@ -569,7 +530,7 @@
       "genre": "stand-up",
       "datum": "2026-11-29",
       "tijd": "19:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/roel-c-verburg-solo/"
     },
@@ -817,7 +778,7 @@
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
       "titel": "Late Night: COMEDIANS IN PANIEK",
-      "genre": "improvisatie",
+      "genre": "stand-up",
       "datum": "2026-12-11",
       "tijd": "23:15",
       "status": "gepland",

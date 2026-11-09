@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Nabil"
-      ],
-      "titel": "Daar is hij weer!",
-      "genre": "cabaret",
-      "datum": "2026-11-08",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/nabil-ry2s"
-    },
     {
       "theater": "kleine-komedie",
       "artiesten": [
@@ -48,7 +35,7 @@
       "genre": "cabaret",
       "datum": "2026-11-11",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
     },
@@ -61,7 +48,7 @@
       "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
     },

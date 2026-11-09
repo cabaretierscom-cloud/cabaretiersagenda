@@ -1,7 +1,7 @@
 {
   "bron": "hnt",
   "naam": "Het Nationale Theater",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "koninklijke-schouwburg",
@@ -12,6 +12,73 @@
       "website": "https://www.hnt.nl"
     }
   ],
-  "speeldata": [],
-  "recensies": {}
+  "speeldata": [
+    {
+      "theater": {
+        "id": "theater-aan-het-spui-den-haag",
+        "naam": "Theater aan het Spui",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Het Filiaal Theatermakers"
+      ],
+      "titel": "Het lammetje dat een varken is (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/het-lammetje-dat-een-varken-is-4-fh7h"
+    },
+    {
+      "theater": {
+        "id": "theater-aan-het-spui-den-haag",
+        "naam": "Theater aan het Spui",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Maas theater en dans"
+      ],
+      "titel": "Let's Flow (10+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/let-s-flow-10-4fks"
+    },
+    {
+      "theater": "koninklijke-schouwburg",
+      "artiesten": [
+        "Alice in Wonderland (8+)"
+      ],
+      "titel": "De toneelmakerij | DOX",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/alice-in-wonderland-8-z5zd"
+    }
+  ],
+  "recensies": {
+    "https://www.hnt.nl/nl/voorstellingen/let-s-flow-10-4fks": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Let’s flow is een zeer visuele voorstelling, waarin muzikale hoogstandjes worden afgewisseld met dynamische dans"
+      },
+      {
+        "medium": "Cultuurpers",
+        "sterren": null,
+        "citaat": "Een door vijf performers uitgevoerde dans en spektakelshow"
+      }
+    ]
+  }
 }

@@ -1,7 +1,7 @@
 {
   "bron": "verkadefabriek",
   "naam": "Verkadefabriek",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "verkadefabriek-s-hertogenbosch",
@@ -835,26 +835,13 @@
     {
       "theater": "verkadefabriek-s-hertogenbosch",
       "artiesten": [
-        "Grote Mensen"
-      ],
-      "titel": "Skeletje (5+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-08",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/grote-mensen-skeletje-6-162871"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
         "Het Filiaal"
       ],
       "titel": "De jongen die van de wereld hield (9+)",
       "genre": "kindervoorstellingen",
       "datum": "2026-11-15",
       "tijd": "15:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/het-filiaal-de-jongen-die-van-de-wereld-hield-9-162873"
     },
@@ -1169,17 +1156,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/cameretten-comedy-masterclass-166573"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
-      "datum": "2026-11-08",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
     },
     {
       "theater": "verkadefabriek-s-hertogenbosch",

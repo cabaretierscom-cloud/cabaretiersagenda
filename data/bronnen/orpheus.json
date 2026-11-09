@@ -1,7 +1,7 @@
 {
   "bron": "orpheus",
   "naam": "Orpheus",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "orpheus",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "SUPERMENS gezocht"
-      ],
-      "titel": "Theater Sonnevanck",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-08",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/supermens-gezocht-4br5"
-    },
     {
       "theater": "orpheus",
       "artiesten": [
@@ -87,7 +74,7 @@
       "genre": "comedy",
       "datum": "2026-12-15",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.orpheus.nl/voorstellingen/silvesters-comedy-club-tyb9"
     },
@@ -523,9 +510,9 @@
     {
       "theater": "orpheus",
       "artiesten": [
-        "En Nou Gaan We Even Helemaal Uit Onze Plaat"
+        "Maas Theater en Dans"
       ],
-      "titel": "Maas Theater en Dans",
+      "titel": "En Nou Gaan We Even Helemaal Uit Onze Plaat",
       "genre": "kindervoorstellingen",
       "datum": "2027-01-24",
       "tijd": "15:30",
@@ -627,9 +614,9 @@
     {
       "theater": "orpheus",
       "artiesten": [
-        "De musical zonder billen"
+        "Jaski & Groenteman"
       ],
-      "titel": "Jaski & Groenteman",
+      "titel": "De musical zonder billen",
       "genre": "kindervoorstellingen",
       "datum": "2027-02-14",
       "tijd": "15:00",
@@ -770,9 +757,9 @@
     {
       "theater": "orpheus",
       "artiesten": [
-        "Grondtonen"
+        "Het Houten Huis"
       ],
-      "titel": "Het Houten Huis",
+      "titel": "Grondtonen",
       "genre": "kindervoorstellingen",
       "datum": "2027-02-28",
       "tijd": "16:00",
@@ -939,9 +926,9 @@
     {
       "theater": "orpheus",
       "artiesten": [
-        "Zing, spring, miauw!"
+        "Dikkie Dik & Dirk Scheele"
       ],
-      "titel": "Dikkie Dik & Dirk Scheele",
+      "titel": "Zing, spring, miauw!",
       "genre": "kindervoorstellingen",
       "datum": "2027-04-04",
       "tijd": "15:00",
@@ -1017,9 +1004,9 @@
     {
       "theater": "orpheus",
       "artiesten": [
-        "GRRR... ik ben een boze dino!"
+        "Lil Ones"
       ],
-      "titel": "Lil Ones",
+      "titel": "GRRR... ik ben een boze dino!",
       "genre": "kindervoorstellingen",
       "datum": "2027-04-25",
       "tijd": "13:30",
@@ -1030,9 +1017,9 @@
     {
       "theater": "orpheus",
       "artiesten": [
-        "GRRR... ik ben een boze dino!"
+        "Lil Ones"
       ],
-      "titel": "Lil Ones",
+      "titel": "GRRR... ik ben een boze dino!",
       "genre": "kindervoorstellingen",
       "datum": "2027-04-25",
       "tijd": "15:30",

@@ -1,7 +1,7 @@
 {
   "bron": "vlaardingen",
   "naam": "Stadsgehoorzaal Vlaardingen",
-  "opgehaald": "2026-11-08",
+  "opgehaald": "2026-11-09",
   "theaters": [
     {
       "id": "stadsgehoorzaal-vlaardingen",
@@ -68,9 +68,9 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Umi (0+)"
+        "Wonderland Collectief en Makiko Ito"
       ],
-      "titel": "Wonderland Collectief en Makiko Ito",
+      "titel": "Umi (0+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-05-23",
       "tijd": "10:00",
@@ -81,9 +81,9 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Umi (0+)"
+        "Wonderland Collectief en Makiko Ito"
       ],
-      "titel": "Wonderland Collectief en Makiko Ito",
+      "titel": "Umi (0+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-05-23",
       "tijd": "11:30",
@@ -146,9 +146,9 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Peuter- en kleuterkerstconcert (2+)"
+        "Krulmuziek"
       ],
-      "titel": "Krulmuziek",
+      "titel": "Peuter- en kleuterkerstconcert (2+)",
       "genre": "kindervoorstellingen",
       "datum": "2026-12-19",
       "tijd": "11:15",
@@ -159,9 +159,9 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Dreumeskerstconcert (1+)"
+        "Krulmuziek"
       ],
-      "titel": "Krulmuziek",
+      "titel": "Dreumeskerstconcert (1+)",
       "genre": "kindervoorstellingen",
       "datum": "2026-12-19",
       "tijd": "09:30",
@@ -259,6 +259,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/ricky-koole"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://stadsgehoorzaal.nl/programma/peter-pannekoek"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -367,9 +380,9 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Het Kleurenmonster (3+)"
+        "Theater Stof"
       ],
-      "titel": "Theater Stof",
+      "titel": "Het Kleurenmonster (3+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-04-11",
       "tijd": "11:00",
@@ -380,9 +393,9 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Het Kleurenmonster (3+)"
+        "Theater Stof"
       ],
-      "titel": "Theater Stof",
+      "titel": "Het Kleurenmonster (3+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-04-11",
       "tijd": "13:30",
@@ -458,19 +471,6 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Peter Pannekoek"
-      ],
-      "titel": "Demonen",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://stadsgehoorzaal.nl/programma/peter-pannekoek"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
         "Ricky Risolles"
       ],
       "titel": "Niet Zo Indiscreet..",
@@ -484,9 +484,9 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "De Kleine Zeemeermin de musical"
+        "Stichting Upon A Dream Creations"
       ],
-      "titel": "Stichting Upon A Dream Creations",
+      "titel": "De Kleine Zeemeermin de musical",
       "genre": "kindervoorstellingen",
       "datum": "2027-03-13",
       "tijd": "15:00",
@@ -510,9 +510,9 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Babykerstconcert (0+)"
+        "Krulmuziek"
       ],
-      "titel": "Krulmuziek",
+      "titel": "Babykerstconcert (0+)",
       "genre": "kindervoorstellingen",
       "datum": "2026-12-19",
       "tijd": "10:15",
