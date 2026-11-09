@@ -1,0 +1,213 @@
+{
+  "bron": "diest",
+  "naam": "CC Den Amer",
+  "opgehaald": "2026-11-09",
+  "theaters": [
+    {
+      "id": "den-amer-diest",
+      "naam": "Den Amer",
+      "plaats": "Diest",
+      "land": "BE",
+      "soort": "theater",
+      "website": "https://www.ccdiest.be"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Kukeleku! De Grote Boerderijshow"
+      ],
+      "titel": "Kapitein Winokio",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/kukeleku-de-grote-boerderijshow"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Jan Jaap van der Wal"
+      ],
+      "titel": "Amor Fati",
+      "genre": "comedy",
+      "datum": "2026-11-19",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/jan-jaap-van-der-wal"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Williams & Coppens"
+      ],
+      "titel": "Double Trouble",
+      "genre": "comedy",
+      "datum": "2026-12-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/williams-coppens"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "De Spiegel"
+      ],
+      "titel": "Battoe",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/battoe"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "De Spiegel"
+      ],
+      "titel": "Battoe",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/battoe"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Yannick Noben"
+      ],
+      "titel": "Eindejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2027-01-28",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/yannick-noben-1"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Altijd Aan",
+      "genre": "comedy",
+      "datum": "2027-02-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/pieter-verelst-2"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Steven Goegebeur"
+      ],
+      "titel": "Pechvogel",
+      "genre": "comedy",
+      "datum": "2027-03-04",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/steven-goegebeur-3"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Sprookjes enzo"
+      ],
+      "titel": "Sssst!!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "14:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/sssst"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Sprookjes enzo"
+      ],
+      "titel": "Sssst!!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "16:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/sssst"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/kommil-foo-2"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/kommil-foo-2"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Roosje Pertz"
+      ],
+      "titel": "Goedgezind & Flink",
+      "genre": "comedy",
+      "datum": "2027-04-22",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/roosje-pertz"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Herman van Veen"
+      ],
+      "titel": "Vandaag (Tournee Vlaanderen 2027)",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/herman-van-veen-2"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Grof Geschud"
+      ],
+      "titel": "Vieren",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/grof-geschud-1"
+    }
+  ],
+  "recensies": {}
+}

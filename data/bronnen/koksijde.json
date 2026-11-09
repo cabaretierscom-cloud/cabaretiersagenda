@@ -1,0 +1,179 @@
+{
+  "bron": "koksijde",
+  "naam": "CC Casino Koksijde",
+  "opgehaald": "2026-11-09",
+  "theaters": [
+    {
+      "id": "cc-casino-koksijde",
+      "naam": "CC Casino",
+      "plaats": "Koksijde",
+      "land": "BE",
+      "soort": "theater",
+      "website": "https://www.casinokoksijde.be"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-11-14",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/portie-gemengd-sketch"
+    },
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [
+        "Wannes Cappelle"
+      ],
+      "titel": "Verstaanbaar",
+      "genre": "comedy",
+      "datum": "2026-11-27",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/wannes-cappelle-verstaanbaar"
+    },
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [
+        "Han Solo"
+      ],
+      "titel": "Psycho Solo",
+      "genre": "comedy",
+      "datum": "2026-12-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/han-solo-psycho-solo"
+    },
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [
+        "Michael Van Peel"
+      ],
+      "titel": "Farce Majeure",
+      "genre": "comedy",
+      "datum": "2027-01-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/michael-van-peel-farce-majeure"
+    },
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Altijd Aan",
+      "genre": "comedy",
+      "datum": "2027-03-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/pieter-verelst-altijd-aan"
+    },
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom Ongemak",
+      "genre": "comedy",
+      "datum": "2027-04-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/wim-helsen-welkom-ongemak"
+    },
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Voor Normale Mensen",
+      "genre": "comedy",
+      "datum": "2027-04-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/dries-heyneman-voor-normale-mensen"
+    },
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "comedy",
+      "datum": "2027-05-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/kommil-foo-babel"
+    },
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [],
+      "titel": "Klein Drama Ik werd als eerste wakker (2,5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/klein-drama-ik-werd-als-eerste-wakker-25"
+    },
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [],
+      "titel": "Circumstances BEYOND (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/circumstances-beyond-8"
+    },
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [],
+      "titel": "DE MAAN aai (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-27",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/de-maan-aai-4"
+    },
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [
+        "FroeFroe"
+      ],
+      "titel": "Lampje (9+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-09",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/froefroe-lampje-9"
+    },
+    {
+      "theater": "cc-casino-koksijde",
+      "artiesten": [],
+      "titel": "Johnny MUS Hoppa! (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.casinokoksijde.be/johnny-mus-hoppa-4"
+    }
+  ],
+  "recensies": {}
+}

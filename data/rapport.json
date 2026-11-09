@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-09",
   "totaal": {
-    "speeldata": 9155,
-    "komend": 8543,
-    "artiesten": 937,
+    "speeldata": 9208,
+    "komend": 8596,
+    "artiesten": 947,
     "zalen": 697,
     "plaatsen": 487,
-    "voorstellingen": 1375
+    "voorstellingen": 1396
   },
   "bronnen": [
     {
@@ -138,6 +138,38 @@
       "dubbel": 0
     },
     {
+      "bron": "desteiger",
+      "naam": "CC De Steiger",
+      "opgehaald": "2026-11-09",
+      "speeldata": 15,
+      "vorige": 0,
+      "dubbel": 0
+    },
+    {
+      "bron": "diest",
+      "naam": "CC Den Amer",
+      "opgehaald": "2026-11-09",
+      "speeldata": 15,
+      "vorige": 0,
+      "dubbel": 0
+    },
+    {
+      "bron": "emotia",
+      "naam": "Emotia",
+      "opgehaald": "2026-11-09",
+      "speeldata": 17,
+      "vorige": 0,
+      "dubbel": 0
+    },
+    {
+      "bron": "gildhof",
+      "naam": "CC Gildhof",
+      "opgehaald": "2026-11-09",
+      "speeldata": 18,
+      "vorige": 0,
+      "dubbel": 0
+    },
+    {
       "bron": "gouda",
       "naam": "Goudse Schouwburg",
       "opgehaald": "2026-11-09",
@@ -207,6 +239,14 @@
       "opgehaald": "2026-11-09",
       "speeldata": 152,
       "vorige": 152,
+      "dubbel": 0
+    },
+    {
+      "bron": "koksijde",
+      "naam": "CC Casino Koksijde",
+      "opgehaald": "2026-11-09",
+      "speeldata": 13,
+      "vorige": 0,
       "dubbel": 0
     },
     {
@@ -517,9 +557,9 @@
       "bron": "5to9",
       "naam": "Agenda van 5to9",
       "opgehaald": "2026-11-09",
-      "speeldata": 399,
+      "speeldata": 384,
       "vorige": 399,
-      "dubbel": 59
+      "dubbel": 74
     },
     {
       "bron": "bunker",
@@ -549,9 +589,9 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-09",
-      "speeldata": 2346,
+      "speeldata": 2336,
       "vorige": 2346,
-      "dubbel": 1403
+      "dubbel": 1413
     }
   ],
   "nieuw": {
@@ -983,6 +1023,46 @@
       {
         "id": "boris-johannes",
         "naam": "Boris-Johannes"
+      },
+      {
+        "id": "andy-peelman",
+        "naam": "Andy Peelman"
+      },
+      {
+        "id": "christophe-deborsu-en-annick-de-wit",
+        "naam": "Christophe Deborsu en Annick De Wit"
+      },
+      {
+        "id": "en-morgen-was-het-feest",
+        "naam": "En morgen was het feest!"
+      },
+      {
+        "id": "froefroe",
+        "naam": "FroeFroe"
+      },
+      {
+        "id": "herman-van-veen",
+        "naam": "Herman van Veen"
+      },
+      {
+        "id": "hetpaleis-en-de-nwe-tijd-suzanne-grotenhuis",
+        "naam": "hetpaleis & De Nwe Tijd/Suzanne Grotenhuis"
+      },
+      {
+        "id": "roosje-pertz",
+        "naam": "Roosje Pertz"
+      },
+      {
+        "id": "today",
+        "naam": "Today"
+      },
+      {
+        "id": "villa-wenkelbrauw",
+        "naam": "Villa Wenkelbrauw"
+      },
+      {
+        "id": "williams-en-coppens",
+        "naam": "Williams & Coppens"
       }
     ],
     "zalen": [
@@ -2018,6 +2098,141 @@
         "artiesten": [
           "boris-johannes"
         ]
+      },
+      {
+        "id": "andy-peelman-gebaseerd-op-waargebeurde-feiten",
+        "titel": "Gebaseerd op waargebeurde feiten",
+        "artiesten": [
+          "andy-peelman"
+        ]
+      },
+      {
+        "id": "christophe-deborsu-en-annick-de-wit-dag-bonjour",
+        "titel": "Dag, Bonjour!",
+        "artiesten": [
+          "christophe-deborsu-en-annick-de-wit"
+        ]
+      },
+      {
+        "id": "circumstances-beyond-cc-casino-koksijde",
+        "titel": "Circumstances BEYOND",
+        "artiesten": []
+      },
+      {
+        "id": "de-maan-aai-cc-casino-koksijde",
+        "titel": "DE MAAN aai",
+        "artiesten": []
+      },
+      {
+        "id": "de-spiegel-zoo-i",
+        "titel": "Zoo(i)",
+        "artiesten": [
+          "de-spiegel"
+        ]
+      },
+      {
+        "id": "en-morgen-was-het-feest-anna-s-steen",
+        "titel": "Anna's Steen",
+        "artiesten": [
+          "en-morgen-was-het-feest"
+        ]
+      },
+      {
+        "id": "froefroe-lampje",
+        "titel": "Lampje",
+        "artiesten": [
+          "froefroe"
+        ]
+      },
+      {
+        "id": "herman-van-veen-vandaag-tournee-vlaanderen-2027",
+        "titel": "Vandaag (Tournee Vlaanderen 2027)",
+        "artiesten": [
+          "herman-van-veen"
+        ]
+      },
+      {
+        "id": "hetpaleis-en-de-nwe-tijd-suzanne-grotenhuis-liegen",
+        "titel": "Liegen",
+        "artiesten": [
+          "hetpaleis-en-de-nwe-tijd-suzanne-grotenhuis"
+        ]
+      },
+      {
+        "id": "johnny-mus-hoppa-cc-casino-koksijde",
+        "titel": "Johnny MUS Hoppa!",
+        "artiesten": []
+      },
+      {
+        "id": "klein-drama-ik-werd-als-eerste-wakker-cc-casino-koksijde",
+        "titel": "Klein Drama Ik werd als eerste wakker",
+        "artiesten": []
+      },
+      {
+        "id": "kleur-cc-gildhof-tielt",
+        "titel": "Kleur",
+        "artiesten": []
+      },
+      {
+        "id": "lejo-kerstshow-leo-petersen",
+        "titel": "Leo Petersen",
+        "artiesten": [
+          "lejo-kerstshow"
+        ]
+      },
+      {
+        "id": "roosje-pertz-goedgezind-en-flink",
+        "titel": "Goedgezind & Flink",
+        "artiesten": [
+          "roosje-pertz"
+        ]
+      },
+      {
+        "id": "sprookjes-enzo-sssst",
+        "titel": "Sssst!!",
+        "artiesten": [
+          "sprookjes-enzo"
+        ]
+      },
+      {
+        "id": "sprookjes-enzo-wit",
+        "titel": "Wit",
+        "artiesten": [
+          "sprookjes-enzo"
+        ]
+      },
+      {
+        "id": "stand-up-comedy-ten-voordele-van-de-warmste-week-cc-gildhof-tielt",
+        "titel": "Stand-up comedy ten voordele van de Warmste Week",
+        "artiesten": []
+      },
+      {
+        "id": "today-side-show",
+        "titel": "Side-Show",
+        "artiesten": [
+          "today"
+        ]
+      },
+      {
+        "id": "urbanus-non-stop",
+        "titel": "Non-Stop",
+        "artiesten": [
+          "urbanus"
+        ]
+      },
+      {
+        "id": "villa-wenkelbrauw-kopland",
+        "titel": "Kopland",
+        "artiesten": [
+          "villa-wenkelbrauw"
+        ]
+      },
+      {
+        "id": "williams-en-coppens-double-trouble",
+        "titel": "Double Trouble",
+        "artiesten": [
+          "williams-en-coppens"
+        ]
       }
     ]
   },
@@ -2160,12 +2375,12 @@
     },
     {
       "datum": "2026-11-09",
-      "speeldata": 9155,
-      "komend": 8543,
-      "artiesten": 937,
+      "speeldata": 9208,
+      "komend": 8596,
+      "artiesten": 947,
       "zalen": 697,
       "plaatsen": 487,
-      "voorstellingen": 1375
+      "voorstellingen": 1396
     }
   ]
 }
