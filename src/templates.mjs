@@ -282,9 +282,11 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       // Geen label voor een reprise of dernière (op verzoek van de eigenaar, november 2026); try-out, première en extra voorstelling wel.
       g.soort && !["reprise", "dernière"].includes(g.soort) && g.soort !== verbergSoort ? `<span class="label-soort">${esc(g.soort)}</span>` : "",
       comedyavond ? `<span class="label-genre">Comedyavond</span>` : "",
-      ...genres.filter((x) => x !== verbergGenre).map((x) => `<span class="label-genre">${esc(genreLabel(x))}</span>`),
+      ...genres.filter((x) => x !== verbergGenre && !(x === "oudejaarsconference" && OUDEJAARS_IN_NAAM.test(`${v.titel} ${artistNames(g.voorstelling)}`))).map((x) => `<span class="label-genre">${esc(genreLabel(x))}</span>`),
     ].join("");
   }
+  // Staat "oudejaars" of "eindejaars" al in de titel of naam, dan is het label Oudejaarsconference dubbel (ook in agenda.js).
+  const OUDEJAARS_IN_NAAM = /oudejaars|eindejaars/i;
 
   function gigRow(g, { showArtist = true, showVenue = true, verbergGenre = null, verbergSoort = null } = {}) {
     const v = V.get(g.voorstelling), t = T.get(g.theater);

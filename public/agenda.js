@@ -340,7 +340,8 @@
       const labels = [
         g.soort && !["reprise", "dernière"].includes(g.soort) && g.soort !== vastSoort ? `<span class="label-soort">${esc(g.soort)}</span>` : "",
         comedyavond ? `<span class="label-genre">Comedyavond</span>` : "",
-        ...g.genres.filter((x) => x !== vastGenre).map((x) => `<span class="label-genre">${esc(data.genres?.[x] || x)}</span>`),
+        // Geen label Oudejaarsconference als de titel of naam het al zegt (zoals rijLabels() in src/templates.mjs).
+        ...g.genres.filter((x) => x !== vastGenre && !(x === "oudejaarsconference" && /oudejaars|eindejaars/i.test(`${titel} ${echte || ""} ${namen}`))).map((x) => `<span class="label-genre">${esc(data.genres?.[x] || x)}</span>`),
       ].join("");
       const wat = ais.length ? [namen, echte].filter(Boolean).join(": ") : titel;
       const inAgenda = ["geannuleerd", "verplaatst"].includes(g.status) ? "" : ` data-wat="${esc(wat)}" data-locatie="${esc(`${znaam}, ${plaats}`)}"${g.tijd ? ` data-tijd="${g.tijd}"` : ""}`;
