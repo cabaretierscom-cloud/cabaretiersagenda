@@ -338,7 +338,7 @@
       const titelHtml = ais.length && echte ? `<span class="titel">${pad ? `<a href="${pad}">${esc(echte)}</a>` : esc(echte)}</span>` : "";
       const comedyavond = !ais.length && g.genres.some((x) => x === "stand-up" || x === "open-mic");
       const labels = [
-        g.soort && g.soort !== "reprise" && g.soort !== vastSoort ? `<span class="label-soort">${esc(g.soort)}</span>` : "",
+        g.soort && !["reprise", "dernière"].includes(g.soort) && g.soort !== vastSoort ? `<span class="label-soort">${esc(g.soort)}</span>` : "",
         comedyavond ? `<span class="label-genre">Comedyavond</span>` : "",
         ...g.genres.filter((x) => x !== vastGenre).map((x) => `<span class="label-genre">${esc(data.genres?.[x] || x)}</span>`),
       ].join("");

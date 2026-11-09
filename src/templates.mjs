@@ -279,8 +279,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const v = V.get(g.voorstelling), genres = genresVanV(v);
     const comedyavond = !v.artiesten.length && genres.some((x) => x === "stand-up" || x === "open-mic");
     return [
-      // Geen label voor een reprise (op verzoek van de eigenaar, november 2026); try-out en première wel.
-      g.soort && g.soort !== "reprise" && g.soort !== verbergSoort ? `<span class="label-soort">${esc(g.soort)}</span>` : "",
+      // Geen label voor een reprise of dernière (op verzoek van de eigenaar, november 2026); try-out, première en extra voorstelling wel.
+      g.soort && !["reprise", "dernière"].includes(g.soort) && g.soort !== verbergSoort ? `<span class="label-soort">${esc(g.soort)}</span>` : "",
       comedyavond ? `<span class="label-genre">Comedyavond</span>` : "",
       ...genres.filter((x) => x !== verbergGenre).map((x) => `<span class="label-genre">${esc(genreLabel(x))}</span>`),
     ].join("");
