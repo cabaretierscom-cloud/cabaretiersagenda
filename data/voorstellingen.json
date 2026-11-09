@@ -15,6 +15,14 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "4hoog-bries",
+    "titel": "Bries",
+    "artiesten": [
+      "4hoog"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "60e-editie-cameretten-festival-de-try-outs",
     "titel": "De try-outs",
     "artiesten": [
@@ -121,6 +129,14 @@
         "bron": "https://denieuwekolk.nl/theater/agenda/aladdin-de-musical"
       }
     ]
+  },
+  {
+    "id": "alex-agnew-en-andries-beckers-welcome-to-the-aa-off-the-record",
+    "titel": "Welcome To The AA: Off The Record",
+    "artiesten": [
+      "alex-agnew-en-andries-beckers"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "alex-agnew-no-more-heroes",
@@ -543,14 +559,6 @@
     "genre": "kindervoorstellingen"
   },
   {
-    "id": "angst-te-koop-weg-wegens-nieuwe-hobby-thomas-smith",
-    "titel": "Thomas Smith",
-    "artiesten": [
-      "angst-te-koop-weg-wegens-nieuwe-hobby"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "anne-en-bas-de-natte-dromen-revue",
     "titel": "De Natte Dromen Revue",
     "artiesten": [
@@ -590,6 +598,13 @@
       "fiep-mulderije"
     ],
     "genre": "kleinkunst"
+  },
+  {
+    "id": "antwerpen-lacht-arenberg",
+    "titel": "Antwerpen Lacht",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "arenberg"
   },
   {
     "id": "anu-vaidyanathan-anu-vaidyanathan",
@@ -636,6 +651,14 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "ariane-van-hasselt-i-feel-good",
+    "titel": "I Feel Good!",
+    "artiesten": [
+      "ariane-van-hasselt"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "arie-en-silvester-arie-en-silvester",
@@ -838,6 +861,14 @@
     "genre": "stand-up",
     "ookGenres": [
       "cabaret"
+    ],
+    "recensies": [
+      {
+        "medium": "De Morgen",
+        "sterren": 4,
+        "citaat": "In blijde verachting’ “In zijn slot onderstreept Birker andermaal dat hij zijn plaats aan de top van de Vlaamse en Nederlandse podiumhumor verdient.",
+        "bron": "https://www.arenberg.be/nl/programma/bas-birker/a0NP500000MyIa9MAF"
+      }
     ]
   },
   {
@@ -1295,6 +1326,14 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedy-cafe-amsterdam"
+  },
+  {
+    "id": "boris-johannes-voor-wat-komen-zal",
+    "titel": "Voor wat komen zal",
+    "artiesten": [
+      "boris-johannes"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "boys-won-t-be-boys-oudejaars-met-rikkert",
@@ -1975,6 +2014,20 @@
     "genre": "cabaret"
   },
   {
+    "id": "comedycafe-bregje-iding-robbe-boons-en-jeron-dewulf-cc-zoetegem-zottegem",
+    "titel": "Comedycafé: Bregje Iding, Robbe Boons en Jeron Dewulf",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "cc-zoetegem-zottegem"
+  },
+  {
+    "id": "comedycafe-nigel-williams-raf-coppens-en-ariane-van-hasselt-cc-zoetegem-zottegem",
+    "titel": "Comedycafé: Nigel Williams, Raf Coppens en Ariane Van Hasselt",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "cc-zoetegem-zottegem"
+  },
+  {
     "id": "comedyhub-theater-kerkrade",
     "titel": "ComedyHuB",
     "artiesten": [],
@@ -2256,6 +2309,14 @@
       "danstheater-aya"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "dara-invites-produced-by-standout-comedy-in-collaboration-with-14-dahk-14",
+    "titel": "Produced by StandOut Comedy In collaboration with 14 Dahk (14 ضحك)",
+    "artiesten": [
+      "dara-invites"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "dave-felida-rene-van-meurs-dubbel",
@@ -2902,6 +2963,14 @@
     ]
   },
   {
+    "id": "de-volksjury-de-millennium-case",
+    "titel": "De millennium case",
+    "artiesten": [
+      "de-volksjury"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "de-vrouwejaars-2026-theater-walhalla",
     "titel": "De Vrouwejaars 2026",
     "artiesten": [],
@@ -2923,6 +2992,14 @@
       "de-waanzinnige-boomhut-van-78-verdiepingen"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "de-willekeur-freestyle-comedy",
+    "titel": "Freestyle comedy",
+    "artiesten": [
+      "de-willekeur"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "de-wind-en-wij-tg-winterberg",
@@ -2947,6 +3024,14 @@
       "dear-t"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "dena-las-vegas",
+    "titel": "Las Vegas",
+    "artiesten": [
+      "dena"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "deng-boy-double-trouble-try-out",
@@ -3600,6 +3685,18 @@
     "theater": "comedy-cafe-amsterdam"
   },
   {
+    "id": "esther-manito-vk-jessica-care-moore-vs-swatkins-en-moorea-masa-vs-rogier-bak-nl",
+    "titel": "'nuff Said",
+    "artiesten": [
+      "esther-manito-vk",
+      "jessica-care-moore-vs",
+      "swatkins-en-moorea-masa-vs",
+      "rogier-bak-nl",
+      "alexander-peeters-be"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "esther-s-time-of-the-month-live-comedy-podcast-met-gast",
     "titel": "Live Comedy Podcast met gast",
     "artiesten": [
@@ -3683,7 +3780,10 @@
     "artiesten": [
       "fabian-franciscus"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "ookGenres": [
+      "stand-up"
+    ]
   },
   {
     "id": "fabian-franciscus-is-het-leven-al-begonnen",
@@ -3722,14 +3822,6 @@
     "artiesten": [],
     "genre": "kindervoorstellingen",
     "theater": "westrand-dilbeek"
-  },
-  {
-    "id": "farce-majeure-michael-van-peel",
-    "titel": "Michael Van Peel",
-    "artiesten": [
-      "farce-majeure"
-    ],
-    "genre": "stand-up"
   },
   {
     "id": "fatu-late-night-joel-gideon-rene-van-meurs-en-bugra-gedik",
@@ -3964,6 +4056,13 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "gala-van-de-gouden-jefkes-arenberg",
+    "titel": "Gala van de Gouden Jefkes",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "arenberg"
+  },
+  {
     "id": "garage-tdi-josette",
     "titel": "Josette",
     "artiesten": [
@@ -4070,6 +4169,14 @@
       "gerrie-smits"
     ],
     "genre": "oudejaarsconference"
+  },
+  {
+    "id": "get-up-stand-up-a-new-generation-of-stand-up-comedy",
+    "titel": "A New Generation of Stand Up Comedy",
+    "artiesten": [
+      "get-up-stand-up"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "gewoon-aans-wat-n-gedoo",
@@ -4185,6 +4292,14 @@
     "theater": "westrand-dilbeek"
   },
   {
+    "id": "gover-meit-larie",
+    "titel": "Larie",
+    "artiesten": [
+      "gover-meit"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "greg-shapiro-king-me-250-years-of-donald-trump",
     "titel": "King Me - 250 years of Donald Trump",
     "artiesten": [
@@ -4216,7 +4331,10 @@
     "artiesten": [
       "grof-geschud"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "ookGenres": [
+      "stand-up"
+    ]
   },
   {
     "id": "groninger-studenten-cabaret-festival-finalistentour-40e-editie",
@@ -5076,6 +5194,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "iwein-segers-het-beste-ooit",
+    "titel": "Het Beste Ooit",
+    "artiesten": [
+      "iwein-segers"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "jacques-vermeire-comedyshows-presenteert",
     "titel": "Comedyshows presenteert:",
     "artiesten": [
@@ -5108,6 +5234,22 @@
     ]
   },
   {
+    "id": "jahon-het-cadeautjesmysterie",
+    "titel": "Het cadeautjesmysterie",
+    "artiesten": [
+      "jahon"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "jam-shenanigans-splash",
+    "titel": "Splash",
+    "artiesten": [
+      "jam-shenanigans"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "jan-beuving-dekpunt",
     "titel": "Dekpunt",
     "artiesten": [
@@ -5122,6 +5264,22 @@
       "jan-jaap-van-der-wal"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "jan-linssen-sjiek-is-mich-dat",
+    "titel": "Sjiek is mich dat!",
+    "artiesten": [
+      "jan-linssen"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "jan-van-looveren-vanwaar-we-komen",
+    "titel": "Vanwaar we komen",
+    "artiesten": [
+      "jan-van-looveren"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "jandino-asporaat-de-grote-jubileumshow-20-jaar-jandino",
@@ -5203,7 +5361,15 @@
     "artiesten": [
       "jasper-posson"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "De Morgen",
+        "sterren": 4,
+        "citaat": "Jasper Posson bewijst met ‘Vastbenoemd’ dat hij terecht zijn job heeft opgezegd. Hij is klaar om de schouwburgen te bespelen met zijn goed geschreven grappen vol originele wendingen.",
+        "bron": "https://www.arenberg.be/nl/programma/jasper-posson/a0NP500000KPMzrMAH"
+      }
+    ]
   },
   {
     "id": "jasper-van-der-veen-op-scherp",
@@ -6306,6 +6472,28 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "kunstendag-voor-kinderen-2026-cc-zoetegem-zottegem",
+    "titel": "Kunstendag voor Kinderen 2026",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "cc-zoetegem-zottegem"
+  },
+  {
+    "id": "kunstendag-voor-kinderen-sprookjes-enzo-sssstt",
+    "titel": "Sprookjes enzo - Sssstt!",
+    "artiesten": [
+      "kunstendag-voor-kinderen"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "la-corneille-bleue-en-hilde-rogge-cc-zoetegem-zottegem",
+    "titel": "La Corneille bleue en Hilde Rogge",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "cc-zoetegem-zottegem"
+  },
+  {
     "id": "lachen-in-backstage-nationaal-theaterweekend",
     "titel": "Nationaal Theaterweekend",
     "artiesten": [
@@ -6420,14 +6608,6 @@
       "lejo-kerstshow"
     ],
     "genre": "kindervoorstellingen"
-  },
-  {
-    "id": "lelijke-rosse-roel-steeno",
-    "titel": "Roel Steeno",
-    "artiesten": [
-      "lelijke-rosse"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "leo-en-marius-blokhuis-father-en-son",
@@ -7409,6 +7589,22 @@
     "genre": "stand-up"
   },
   {
+    "id": "michael-van-peel-farce-majeure",
+    "titel": "Farce Majeure",
+    "artiesten": [
+      "michael-van-peel"
+    ],
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "De Morgen",
+        "sterren": null,
+        "citaat": "De beste actuacomedian van ons land",
+        "bron": "https://www.arenberg.be/nl/programma/michael-van-peel/a0NP500000FHpYgMAL"
+      }
+    ]
+  },
+  {
     "id": "micky-overman-don-t-threaten-me-with-a-good-time",
     "titel": "Don't Threaten Me With A Good Time",
     "artiesten": [
@@ -7465,6 +7661,14 @@
       "mike-zanting-en-koen-van-der-molen-en-mees-markus"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "milan-borms-gev-hooligan",
+    "titel": "(gev)Hooligan",
+    "artiesten": [
+      "milan-borms"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "milene-van-der-smissen-de-schnabbelkoningin",
@@ -8238,6 +8442,14 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "pascale-platel-mama",
+    "titel": "Mama",
+    "artiesten": [
+      "pascale-platel"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "pat-moore-pat-moore",
     "titel": "Pat Moore",
     "artiesten": [
@@ -8320,14 +8532,6 @@
         "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/paul-haenen-margreet-dolman-brengt-warmte"
       }
     ]
-  },
-  {
-    "id": "pechvogel-steven-goegebeur",
-    "titel": "Steven Goegebeur",
-    "artiesten": [
-      "pechvogel"
-    ],
-    "genre": "stand-up"
   },
   {
     "id": "pepijn-schoneveld-welkom-dat-je-luistert",
@@ -8812,6 +9016,14 @@
       "poppentheater"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "portie-gemengd-sketch",
+    "titel": "Sketch!",
+    "artiesten": [
+      "portie-gemengd"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "powerpints-comedy-cafe-comedy-cafe-amsterdam",
@@ -9473,6 +9685,22 @@
     "artiesten": [
       "rosalie-custers"
     ],
+    "genre": "stand-up",
+    "recensies": [
+      {
+        "medium": "De Standaard",
+        "sterren": null,
+        "citaat": "Een voorstelling vol bloemrijke taal, maar ook breekbaar als een scherf.",
+        "bron": "https://www.arenberg.be/nl/programma/rosalie-custers/a0NP500000OU4jrMAD"
+      }
+    ]
+  },
+  {
+    "id": "ross-noble-cranium-of-curiosities",
+    "titel": "Cranium of curiosities",
+    "artiesten": [
+      "ross-noble"
+    ],
     "genre": "stand-up"
   },
   {
@@ -9579,7 +9807,21 @@
     "artiesten": [
       "said-el-hassnaoui"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Saïd el Hassnaoui, een innemende zaalinpakker met pretogen",
+        "bron": "https://www.arenberg.be/nl/programma/said-el-hassnaoui/a0NP500000YaLYbMAN"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Je kunt hier echt mensen zien waarvan we nog veel gaan horen, zoals comedian Said El Hassnaoui",
+        "bron": "https://www.arenberg.be/nl/programma/said-el-hassnaoui/a0NP500000YaLYbMAN"
+      }
+    ]
   },
   {
     "id": "sally-danslab-3",
@@ -9752,6 +9994,21 @@
     ]
   },
   {
+    "id": "senne-en-lokko-2-arenberg",
+    "titel": "Senne & Lokko 2",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "arenberg"
+  },
+  {
+    "id": "senne-en-lokko-senne-en-lokko-2",
+    "titel": "Senne en Lokko 2",
+    "artiesten": [
+      "senne-en-lokko"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "senne-guns-senne-en-lokko-2",
     "titel": "Senne & lokko 2",
     "artiesten": [
@@ -9845,6 +10102,14 @@
       "silvesters-comedy-club"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "simon-godecharle-vonk",
+    "titel": "Vonk",
+    "artiesten": [
+      "simon-godecharle"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "simone-de-jong-company-kluizelaar",
@@ -10186,6 +10451,14 @@
       "steven-brunswijk"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "steven-goegebeur-pechvogel",
+    "titel": "Pechvogel",
+    "artiesten": [
+      "steven-goegebeur"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "steven-kazan-hoe-dan",
@@ -10981,6 +11254,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "thomas-smith-angst-te-koop-weg-wegens-nieuwe-hobby",
+    "titel": "Angst te koop (weg wegens nieuwe hobby)",
+    "artiesten": [
+      "thomas-smith"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "thomas-van-luyn-super-normaal",
     "titel": "Super normaal",
     "artiesten": [
@@ -11151,6 +11432,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "tom-cools-het-bewogen-jaar-2026",
+    "titel": "Het bewogen jaar 2026",
+    "artiesten": [
+      "tom-cools"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "tommy-zonneveld-sophie-willemijntje-happen-en-lachen",
     "titel": "Happen & Lachen",
     "artiesten": [
@@ -11188,6 +11477,13 @@
       "tout-petit-en-alfredo-zinola-productions-b-d"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "tova-leigh-arenberg",
+    "titel": "Tova Leigh",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "arenberg"
   },
   {
     "id": "trevor-wallace-trevor-wallace",
@@ -11400,14 +11696,6 @@
     ]
   },
   {
-    "id": "vanwaar-we-komen-jan-van-looveren",
-    "titel": "Jan Van Looveren",
-    "artiesten": [
-      "vanwaar-we-komen"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "veenendaal-lacht-comedy-night-theater-lampegiet",
     "titel": "Veenendaal Lacht - Comedy Night",
     "artiesten": [],
@@ -11598,7 +11886,7 @@
     "artiesten": [
       "warre-verlinden"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "wasda-westrand-dilbeek",
@@ -11660,14 +11948,6 @@
       "weg-ermee"
     ],
     "genre": "kindervoorstellingen"
-  },
-  {
-    "id": "welcome-to-the-aa-alex-agnew-en-andries-beckers",
-    "titel": "Alex Agnew & Andries Beckers",
-    "artiesten": [
-      "welcome-to-the-aa"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "wie-is-het-theater-lampegiet",
@@ -11885,15 +12165,8 @@
     "genre": "cabaret"
   },
   {
-    "id": "wouter-deprez-en-tcha-limberger-cc-de-schakel",
-    "titel": "Wouter Deprez & Tcha Limberger",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "cc-de-schakel"
-  },
-  {
-    "id": "wouter-deprez-en-tcha-limberger-wouter-deprez-en-tcha-limberger",
-    "titel": "Wouter Deprez & Tcha Limberger",
+    "id": "wouter-deprez-en-tcha-limberger",
+    "titel": "",
     "artiesten": [
       "wouter-deprez-en-tcha-limberger"
     ],

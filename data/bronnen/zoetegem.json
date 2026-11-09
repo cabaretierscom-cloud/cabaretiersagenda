@@ -1,0 +1,350 @@
+{
+  "bron": "zoetegem",
+  "naam": "CC Zoetegem",
+  "opgehaald": "2026-11-09",
+  "theaters": [
+    {
+      "id": "cc-zoetegem-zottegem",
+      "naam": "CC Zoetegem",
+      "plaats": "Zottegem",
+      "land": "BE",
+      "soort": "theater",
+      "website": "https://cczoetegem.be"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Grof Geschud"
+      ],
+      "titel": "Vieren",
+      "genre": "comedy",
+      "datum": "2026-11-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cczoetegem.be/programma/grof-geschud-vieren-tryout.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [],
+      "titel": "Kunstendag voor Kinderen 2026",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/kunstendag-voor-kinderen-2026.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Kunstendag voor Kinderen"
+      ],
+      "titel": "Sprookjes enzo - Sssstt!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/kunstendag-voor-kinderen-sprookjes-enzo-sssstt.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Kunstendag voor Kinderen"
+      ],
+      "titel": "Sprookjes enzo - Sssstt!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/kunstendag-voor-kinderen-sprookjes-enzo-sssstt-2.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-11-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/portie-gemengd-sketch.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Wannes Cappelle"
+      ],
+      "titel": "Verstaanbaar",
+      "genre": "comedy",
+      "datum": "2026-11-26",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/wannes-cappelle-verstaanbaar.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [],
+      "titel": "Comedycafé: Nigel Williams, Raf Coppens en Ariane Van Hasselt",
+      "genre": "comedy",
+      "datum": "2026-11-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/comedycafe-nigel-williams--raf-coppens-en-ariane-van-hasselt.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Jahon"
+      ],
+      "titel": "Het cadeautjesmysterie",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/jahon-het-cadeautjesmysterie.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Mohsin Abbas"
+      ],
+      "titel": "Moh?!",
+      "genre": "comedy",
+      "datum": "2026-12-03",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/mohsin-abbas-moh-2.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Gili"
+      ],
+      "titel": "Machtig!",
+      "genre": "comedy",
+      "datum": "2026-12-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/gili-machtig.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Altijd Aan",
+      "genre": "comedy",
+      "datum": "2026-12-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/pieter-verelst-altijd-aan.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "Juk",
+      "genre": "comedy",
+      "datum": "2027-01-16",
+      "tijd": "20:00",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/jeroens-clan-nederland-juk.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Robrecht Vanden Thoren"
+      ],
+      "titel": "Ten minste houdbaar tot",
+      "genre": "comedy",
+      "datum": "2027-01-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/robbrecht-vanden-thoren-ten-minste-houdbaar-tot.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "4Hoog"
+      ],
+      "titel": "Bries",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/4hoog-bries-.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Senne en Lokko"
+      ],
+      "titel": "Senne en Lokko 2",
+      "genre": "comedy",
+      "datum": "2027-01-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cczoetegem.be/programma/senne-en-lokko-senne-en-lokko-2-tryout.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Preuteleute"
+      ],
+      "titel": "V",
+      "genre": "comedy",
+      "datum": "2027-01-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://cczoetegem.be/programma/preuteleute-v-tryout.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "William Boeva"
+      ],
+      "titel": "Drift",
+      "genre": "comedy",
+      "datum": "2027-03-10",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/william-boeva-drift.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Pascale Platel"
+      ],
+      "titel": "Mama",
+      "genre": "comedy",
+      "datum": "2027-03-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/pascale-platel-mama.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Steven Mahieu"
+      ],
+      "titel": "Stabieler",
+      "genre": "comedy",
+      "datum": "2027-03-18",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/steven-mahieu-stabieler.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "La Corneille bleue en Hilde Rogge"
+      ],
+      "titel": "Kom, laten we gaan! (Viens, on se tire!) en De Dorstige Droom",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/la-corneille-bleue-en-hilde-rogge-kom--laten-we-gaan-viens--on-se-tire-en-de-dorstige-droom-.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "La Corneille bleue en Hilde Rogge"
+      ],
+      "titel": "Kom, laten we gaan! (Viens, on se tire!) en De Dorstige Droom",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/la-corneille-bleue-en-hilde-rogge-kom--laten-we-gaan-viens--on-se-tire-en-de-dorstige-droom.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Jam.Shenanigans"
+      ],
+      "titel": "Splash",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-09",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/jamshenanigans-splash.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [],
+      "titel": "Comedycafé: Bregje Iding, Robbe Boons en Jeron Dewulf",
+      "genre": "comedy",
+      "datum": "2027-04-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/comedycafe-bregje-iding--robbe-boons-en-jeron-dewulf.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "comedy",
+      "datum": "2027-04-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/kommil-foo-babel-2.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "comedy",
+      "datum": "2027-04-29",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/kommil-foo-babel.aspx"
+    },
+    {
+      "theater": "cc-zoetegem-zottegem",
+      "artiesten": [
+        "Roel C. Verburg"
+      ],
+      "titel": "Slechtste liedjes van de straat",
+      "genre": "comedy",
+      "datum": "2027-05-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cczoetegem.be/programma/roel-c-verburg-nederland-slechtste-liedjes-van-de-straat.aspx"
+    }
+  ],
+  "recensies": {}
+}

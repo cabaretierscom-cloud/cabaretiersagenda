@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-09",
   "totaal": {
-    "speeldata": 9103,
-    "komend": 8491,
-    "artiesten": 912,
+    "speeldata": 9155,
+    "komend": 8543,
+    "artiesten": 937,
     "zalen": 697,
     "plaatsen": 487,
-    "voorstellingen": 1347
+    "voorstellingen": 1375
   },
   "bronnen": [
     {
@@ -31,6 +31,14 @@
       "opgehaald": "2026-11-09",
       "speeldata": 47,
       "vorige": 47,
+      "dubbel": 0
+    },
+    {
+      "bron": "arenberg",
+      "naam": "Arenberg",
+      "opgehaald": "2026-11-09",
+      "speeldata": 42,
+      "vorige": 42,
       "dubbel": 0
     },
     {
@@ -126,7 +134,7 @@
       "naam": "CC De Spil",
       "opgehaald": "2026-11-09",
       "speeldata": 42,
-      "vorige": 0,
+      "vorige": 42,
       "dubbel": 0
     },
     {
@@ -206,7 +214,7 @@
       "naam": "Schouwburg Kortrijk",
       "opgehaald": "2026-11-09",
       "speeldata": 58,
-      "vorige": 0,
+      "vorige": 58,
       "dubbel": 0
     },
     {
@@ -270,7 +278,7 @@
       "naam": "Minardschouwburg",
       "opgehaald": "2026-11-09",
       "speeldata": 24,
-      "vorige": 0,
+      "vorige": 24,
       "dubbel": 0
     },
     {
@@ -454,7 +462,7 @@
       "naam": "De Warande",
       "opgehaald": "2026-11-09",
       "speeldata": 34,
-      "vorige": 0,
+      "vorige": 34,
       "dubbel": 0
     },
     {
@@ -462,7 +470,7 @@
       "naam": "Westrand",
       "opgehaald": "2026-11-09",
       "speeldata": 48,
-      "vorige": 0,
+      "vorige": 48,
       "dubbel": 0
     },
     {
@@ -479,6 +487,14 @@
       "opgehaald": "2026-11-09",
       "speeldata": 87,
       "vorige": 87,
+      "dubbel": 0
+    },
+    {
+      "bron": "zoetegem",
+      "naam": "CC Zoetegem",
+      "opgehaald": "2026-11-09",
+      "speeldata": 26,
+      "vorige": 26,
       "dubbel": 0
     },
     {
@@ -501,17 +517,17 @@
       "bron": "5to9",
       "naam": "Agenda van 5to9",
       "opgehaald": "2026-11-09",
-      "speeldata": 404,
-      "vorige": 432,
-      "dubbel": 54
+      "speeldata": 399,
+      "vorige": 399,
+      "dubbel": 59
     },
     {
       "bron": "bunker",
       "naam": "Agenda van Bunker Theaterzaken",
       "opgehaald": "2026-11-09",
-      "speeldata": 360,
-      "vorige": 360,
-      "dubbel": 359
+      "speeldata": 359,
+      "vorige": 359,
+      "dubbel": 360
     },
     {
       "bron": "fris",
@@ -533,9 +549,9 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-09",
-      "speeldata": 2355,
-      "vorige": 2370,
-      "dubbel": 1394
+      "speeldata": 2346,
+      "vorige": 2346,
+      "dubbel": 1403
     }
   ],
   "nieuw": {
@@ -559,10 +575,6 @@
       {
         "id": "angelina",
         "naam": "Angelina"
-      },
-      {
-        "id": "angst-te-koop-weg-wegens-nieuwe-hobby",
-        "naam": "Angst Te Koop (weg wegens nieuwe hobby)"
       },
       {
         "id": "between-us",
@@ -633,10 +645,6 @@
         "naam": "Edouard de Prez"
       },
       {
-        "id": "farce-majeure",
-        "naam": "Farce Majeure"
-      },
-      {
         "id": "frames",
         "naam": "Frames"
       },
@@ -701,10 +709,6 @@
         "naam": "Laros & de Jong beeldmakerij"
       },
       {
-        "id": "lelijke-rosse",
-        "naam": "Lelijke rosse!"
-      },
-      {
         "id": "livia-jouan-cie-studio-t",
         "naam": "Livia Jouan / Cie Studio T"
       },
@@ -743,10 +747,6 @@
       {
         "id": "papaya",
         "naam": "Papaya"
-      },
-      {
-        "id": "pechvogel",
-        "naam": "Pechvogel"
       },
       {
         "id": "perfesser-gents-peter-van-haelter",
@@ -849,16 +849,8 @@
         "naam": "Urbanus"
       },
       {
-        "id": "vanwaar-we-komen",
-        "naam": "Vanwaar We Komen"
-      },
-      {
         "id": "wat-ik-zeker-weet",
         "naam": "Wat Ik Zeker Weet"
-      },
-      {
-        "id": "welcome-to-the-aa",
-        "naam": "Welcome To The AA"
       },
       {
         "id": "woest-10-110",
@@ -867,6 +859,130 @@
       {
         "id": "wouter-deprez-en-tcha-limberger",
         "naam": "Wouter Deprez & Tcha Limberger"
+      },
+      {
+        "id": "4hoog",
+        "naam": "4Hoog"
+      },
+      {
+        "id": "alex-agnew-en-andries-beckers",
+        "naam": "Alex Agnew en Andries Beckers"
+      },
+      {
+        "id": "alexander-peeters-be",
+        "naam": "Alexander Peeters (BE)"
+      },
+      {
+        "id": "ariane-van-hasselt",
+        "naam": "Ariane van Hasselt"
+      },
+      {
+        "id": "dara-invites",
+        "naam": "Dara Invites"
+      },
+      {
+        "id": "de-volksjury",
+        "naam": "De Volksjury"
+      },
+      {
+        "id": "de-willekeur",
+        "naam": "De Willekeur"
+      },
+      {
+        "id": "dena",
+        "naam": "Dena"
+      },
+      {
+        "id": "esther-manito-vk",
+        "naam": "Esther Manito (VK)"
+      },
+      {
+        "id": "get-up-stand-up",
+        "naam": "Get Up Stand Up"
+      },
+      {
+        "id": "gover-meit",
+        "naam": "Gover Meit"
+      },
+      {
+        "id": "iwein-segers",
+        "naam": "Iwein Segers"
+      },
+      {
+        "id": "jahon",
+        "naam": "Jahon"
+      },
+      {
+        "id": "jam-shenanigans",
+        "naam": "Jam.Shenanigans"
+      },
+      {
+        "id": "jan-linssen",
+        "naam": "Jan Linssen"
+      },
+      {
+        "id": "jan-van-looveren",
+        "naam": "Jan Van Looveren"
+      },
+      {
+        "id": "jessica-care-moore-vs",
+        "naam": "Jessica Care Moore (VS)"
+      },
+      {
+        "id": "kunstendag-voor-kinderen",
+        "naam": "Kunstendag voor Kinderen"
+      },
+      {
+        "id": "michael-van-peel",
+        "naam": "Michael Van Peel"
+      },
+      {
+        "id": "milan-borms",
+        "naam": "Milan Borms"
+      },
+      {
+        "id": "pascale-platel",
+        "naam": "Pascale Platel"
+      },
+      {
+        "id": "portie-gemengd",
+        "naam": "Portie Gemengd"
+      },
+      {
+        "id": "rogier-bak-nl",
+        "naam": "Rogier Bak (NL)"
+      },
+      {
+        "id": "ross-noble",
+        "naam": "Ross Noble"
+      },
+      {
+        "id": "senne-en-lokko",
+        "naam": "Senne en Lokko"
+      },
+      {
+        "id": "simon-godecharle",
+        "naam": "Simon Godecharle"
+      },
+      {
+        "id": "steven-goegebeur",
+        "naam": "Steven Goegebeur"
+      },
+      {
+        "id": "swatkins-en-moorea-masa-vs",
+        "naam": "Swatkins & Moorea Masa (VS)"
+      },
+      {
+        "id": "thomas-smith",
+        "naam": "Thomas Smith"
+      },
+      {
+        "id": "tom-cools",
+        "naam": "Tom Cools"
+      },
+      {
+        "id": "boris-johannes",
+        "naam": "Boris-Johannes"
       }
     ],
     "zalen": [
@@ -1020,13 +1136,6 @@
         "titel": "Sibran Sampers",
         "artiesten": [
           "angelina"
-        ]
-      },
-      {
-        "id": "angst-te-koop-weg-wegens-nieuwe-hobby-thomas-smith",
-        "titel": "Thomas Smith",
-        "artiesten": [
-          "angst-te-koop-weg-wegens-nieuwe-hobby"
         ]
       },
       {
@@ -1191,13 +1300,6 @@
         "id": "familiedag-sint-westrand-dilbeek",
         "titel": "FamilieDag SINT",
         "artiesten": []
-      },
-      {
-        "id": "farce-majeure-michael-van-peel",
-        "titel": "Michael Van Peel",
-        "artiesten": [
-          "farce-majeure"
-        ]
       },
       {
         "id": "frames-alexander-vantournhout-not-standing",
@@ -1368,13 +1470,6 @@
         ]
       },
       {
-        "id": "lelijke-rosse-roel-steeno",
-        "titel": "Roel Steeno",
-        "artiesten": [
-          "lelijke-rosse"
-        ]
-      },
-      {
         "id": "livia-jouan-cie-studio-t-meneer-t-8-108",
         "titel": "Meneer T (8-108)",
         "artiesten": [
@@ -1470,13 +1565,6 @@
         "titel": "Priscilla Kellen",
         "artiesten": [
           "papaya"
-        ]
-      },
-      {
-        "id": "pechvogel-steven-goegebeur",
-        "titel": "Steven Goegebeur",
-        "artiesten": [
-          "pechvogel"
         ]
       },
       {
@@ -1673,13 +1761,6 @@
         ]
       },
       {
-        "id": "vanwaar-we-komen-jan-van-looveren",
-        "titel": "Jan Van Looveren",
-        "artiesten": [
-          "vanwaar-we-komen"
-        ]
-      },
-      {
         "id": "wasda-westrand-dilbeek",
         "titel": "Wasda",
         "artiesten": []
@@ -1692,13 +1773,6 @@
         ]
       },
       {
-        "id": "welcome-to-the-aa-alex-agnew-en-andries-beckers",
-        "titel": "Alex Agnew & Andries Beckers",
-        "artiesten": [
-          "welcome-to-the-aa"
-        ]
-      },
-      {
         "id": "woest-10-110-goele-denil",
         "titel": "Goele Denil",
         "artiesten": [
@@ -1706,10 +1780,243 @@
         ]
       },
       {
-        "id": "wouter-deprez-en-tcha-limberger-wouter-deprez-en-tcha-limberger",
-        "titel": "Wouter Deprez & Tcha Limberger",
+        "id": "4hoog-bries",
+        "titel": "Bries",
+        "artiesten": [
+          "4hoog"
+        ]
+      },
+      {
+        "id": "alex-agnew-en-andries-beckers-welcome-to-the-aa-off-the-record",
+        "titel": "Welcome To The AA: Off The Record",
+        "artiesten": [
+          "alex-agnew-en-andries-beckers"
+        ]
+      },
+      {
+        "id": "antwerpen-lacht-arenberg",
+        "titel": "Antwerpen Lacht",
+        "artiesten": []
+      },
+      {
+        "id": "ariane-van-hasselt-i-feel-good",
+        "titel": "I Feel Good!",
+        "artiesten": [
+          "ariane-van-hasselt"
+        ]
+      },
+      {
+        "id": "comedycafe-bregje-iding-robbe-boons-en-jeron-dewulf-cc-zoetegem-zottegem",
+        "titel": "Comedycafé: Bregje Iding, Robbe Boons en Jeron Dewulf",
+        "artiesten": []
+      },
+      {
+        "id": "comedycafe-nigel-williams-raf-coppens-en-ariane-van-hasselt-cc-zoetegem-zottegem",
+        "titel": "Comedycafé: Nigel Williams, Raf Coppens en Ariane Van Hasselt",
+        "artiesten": []
+      },
+      {
+        "id": "dara-invites-produced-by-standout-comedy-in-collaboration-with-14-dahk-14",
+        "titel": "Produced by StandOut Comedy In collaboration with 14 Dahk (14 ضحك)",
+        "artiesten": [
+          "dara-invites"
+        ]
+      },
+      {
+        "id": "de-volksjury-de-millennium-case",
+        "titel": "De millennium case",
+        "artiesten": [
+          "de-volksjury"
+        ]
+      },
+      {
+        "id": "de-willekeur-freestyle-comedy",
+        "titel": "Freestyle comedy",
+        "artiesten": [
+          "de-willekeur"
+        ]
+      },
+      {
+        "id": "dena-las-vegas",
+        "titel": "Las Vegas",
+        "artiesten": [
+          "dena"
+        ]
+      },
+      {
+        "id": "esther-manito-vk-jessica-care-moore-vs-swatkins-en-moorea-masa-vs-rogier-bak-nl",
+        "titel": "'nuff Said",
+        "artiesten": [
+          "esther-manito-vk",
+          "jessica-care-moore-vs",
+          "swatkins-en-moorea-masa-vs",
+          "rogier-bak-nl",
+          "alexander-peeters-be"
+        ]
+      },
+      {
+        "id": "gala-van-de-gouden-jefkes-arenberg",
+        "titel": "Gala van de Gouden Jefkes",
+        "artiesten": []
+      },
+      {
+        "id": "get-up-stand-up-a-new-generation-of-stand-up-comedy",
+        "titel": "A New Generation of Stand Up Comedy",
+        "artiesten": [
+          "get-up-stand-up"
+        ]
+      },
+      {
+        "id": "gover-meit-larie",
+        "titel": "Larie",
+        "artiesten": [
+          "gover-meit"
+        ]
+      },
+      {
+        "id": "iwein-segers-het-beste-ooit",
+        "titel": "Het Beste Ooit",
+        "artiesten": [
+          "iwein-segers"
+        ]
+      },
+      {
+        "id": "jahon-het-cadeautjesmysterie",
+        "titel": "Het cadeautjesmysterie",
+        "artiesten": [
+          "jahon"
+        ]
+      },
+      {
+        "id": "jam-shenanigans-splash",
+        "titel": "Splash",
+        "artiesten": [
+          "jam-shenanigans"
+        ]
+      },
+      {
+        "id": "jan-linssen-sjiek-is-mich-dat",
+        "titel": "Sjiek is mich dat!",
+        "artiesten": [
+          "jan-linssen"
+        ]
+      },
+      {
+        "id": "jan-van-looveren-vanwaar-we-komen",
+        "titel": "Vanwaar we komen",
+        "artiesten": [
+          "jan-van-looveren"
+        ]
+      },
+      {
+        "id": "kunstendag-voor-kinderen-2026-cc-zoetegem-zottegem",
+        "titel": "Kunstendag voor Kinderen 2026",
+        "artiesten": []
+      },
+      {
+        "id": "kunstendag-voor-kinderen-sprookjes-enzo-sssstt",
+        "titel": "Sprookjes enzo - Sssstt!",
+        "artiesten": [
+          "kunstendag-voor-kinderen"
+        ]
+      },
+      {
+        "id": "la-corneille-bleue-en-hilde-rogge-cc-zoetegem-zottegem",
+        "titel": "La Corneille bleue en Hilde Rogge",
+        "artiesten": []
+      },
+      {
+        "id": "michael-van-peel-farce-majeure",
+        "titel": "Farce Majeure",
+        "artiesten": [
+          "michael-van-peel"
+        ]
+      },
+      {
+        "id": "milan-borms-gev-hooligan",
+        "titel": "(gev)Hooligan",
+        "artiesten": [
+          "milan-borms"
+        ]
+      },
+      {
+        "id": "pascale-platel-mama",
+        "titel": "Mama",
+        "artiesten": [
+          "pascale-platel"
+        ]
+      },
+      {
+        "id": "portie-gemengd-sketch",
+        "titel": "Sketch!",
+        "artiesten": [
+          "portie-gemengd"
+        ]
+      },
+      {
+        "id": "ross-noble-cranium-of-curiosities",
+        "titel": "Cranium of curiosities",
+        "artiesten": [
+          "ross-noble"
+        ]
+      },
+      {
+        "id": "senne-en-lokko-2-arenberg",
+        "titel": "Senne & Lokko 2",
+        "artiesten": []
+      },
+      {
+        "id": "senne-en-lokko-senne-en-lokko-2",
+        "titel": "Senne en Lokko 2",
+        "artiesten": [
+          "senne-en-lokko"
+        ]
+      },
+      {
+        "id": "simon-godecharle-vonk",
+        "titel": "Vonk",
+        "artiesten": [
+          "simon-godecharle"
+        ]
+      },
+      {
+        "id": "steven-goegebeur-pechvogel",
+        "titel": "Pechvogel",
+        "artiesten": [
+          "steven-goegebeur"
+        ]
+      },
+      {
+        "id": "thomas-smith-angst-te-koop-weg-wegens-nieuwe-hobby",
+        "titel": "Angst te koop (weg wegens nieuwe hobby)",
+        "artiesten": [
+          "thomas-smith"
+        ]
+      },
+      {
+        "id": "tom-cools-het-bewogen-jaar-2026",
+        "titel": "Het bewogen jaar 2026",
+        "artiesten": [
+          "tom-cools"
+        ]
+      },
+      {
+        "id": "tova-leigh-arenberg",
+        "titel": "Tova Leigh",
+        "artiesten": []
+      },
+      {
+        "id": "wouter-deprez-en-tcha-limberger",
+        "titel": "",
         "artiesten": [
           "wouter-deprez-en-tcha-limberger"
+        ]
+      },
+      {
+        "id": "boris-johannes-voor-wat-komen-zal",
+        "titel": "Voor wat komen zal",
+        "artiesten": [
+          "boris-johannes"
         ]
       }
     ]
@@ -1853,12 +2160,12 @@
     },
     {
       "datum": "2026-11-09",
-      "speeldata": 9103,
-      "komend": 8491,
-      "artiesten": 912,
+      "speeldata": 9155,
+      "komend": 8543,
+      "artiesten": 937,
       "zalen": 697,
       "plaatsen": 487,
-      "voorstellingen": 1347
+      "voorstellingen": 1375
     }
   ]
 }

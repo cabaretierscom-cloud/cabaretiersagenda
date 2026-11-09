@@ -1,0 +1,633 @@
+{
+  "bron": "arenberg",
+  "naam": "Arenberg",
+  "opgehaald": "2026-11-09",
+  "theaters": [
+    {
+      "id": "arenberg",
+      "naam": "Arenberg",
+      "plaats": "Antwerpen",
+      "land": "BE",
+      "soort": "theater",
+      "website": "https://www.arenberg.be"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim voor iedereen",
+      "genre": "stand-up",
+      "datum": "2026-11-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/micha-wertheim/a0NP500000HRhP9MAL"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [],
+      "titel": "Antwerpen Lacht",
+      "genre": "stand-up",
+      "datum": "2026-11-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/antwerpen-lacht/a0NP5000006mJJSMA2"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Voor Wat Komen Zal"
+      ],
+      "titel": "Boris-Johannes",
+      "genre": "stand-up",
+      "datum": "2026-11-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/voor-wat-komen-zal/a0NP500000Sb4ffMAB"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Gover Meit"
+      ],
+      "titel": "Larie",
+      "genre": "stand-up",
+      "datum": "2026-11-25",
+      "tijd": "21:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/gover-meit/a0NP500000JyIC1MAN"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "William Boeva"
+      ],
+      "titel": "Drift",
+      "genre": "stand-up",
+      "datum": "2026-11-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/william-boeva/a0NP500000Exa2dMAB"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "De Willekeur"
+      ],
+      "titel": "Freestyle comedy",
+      "genre": "stand-up",
+      "datum": "2026-11-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/de-willekeur/a0NP500000LYyX8MAL"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Dara Invites: Wallah It’s Funny"
+      ],
+      "titel": "Produced by StandOut Comedy In collaboration with 14 Dahk (14 ضحك)",
+      "genre": "stand-up",
+      "datum": "2026-11-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/dara-invites-wallah-it-s-funny/a0NP500000W5yabMAB"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Grof Geschud"
+      ],
+      "titel": "Vieren",
+      "genre": "stand-up",
+      "datum": "2026-11-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/grof-geschud/a0NP500000EuwhBMAR"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Simon Godecharle"
+      ],
+      "titel": "Vonk",
+      "genre": "stand-up",
+      "datum": "2026-11-29",
+      "tijd": "18:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/simon-godecharle/a0NP500000MgoOkMAJ"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "'nuff Said - Words, Beats & Jokes"
+      ],
+      "titel": "Esther Manito (VK), Jessica Care Moore (VS), Swatkins & Moorea Masa (VS), Rogier Bak (NL) & Alexander Peeters (BE)",
+      "genre": "stand-up",
+      "datum": "2026-12-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/nuff-said-words-beats-jokes/a0NP500000WVWNlMAP"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Rob Scheepers"
+      ],
+      "titel": "Scheepers op z’n scherpst",
+      "genre": "stand-up",
+      "datum": "2026-12-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/rob-scheepers/a0NP500000L5hF4MAJ"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Els de Schepper"
+      ],
+      "titel": "(B)Engel",
+      "genre": "stand-up",
+      "datum": "2026-12-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/els-de-schepper/a0NP500000HOoptMAD"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Iwein Segers"
+      ],
+      "titel": "Het Beste Ooit",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/iwein-segers/a0NP500000JESZUMA5"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag ik even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/kamal-kharmach/a0NP5000008wDRhMAM"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Milan Borms"
+      ],
+      "titel": "(gev)Hooligan",
+      "genre": "stand-up",
+      "datum": "2026-12-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/milan-borms/a0NP500000HRTH4MAP"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Tom Cools"
+      ],
+      "titel": "Het bewogen jaar 2026",
+      "genre": "stand-up",
+      "datum": "2026-12-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/tom-cools/a0NP500000Y1VvpMAF"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Said El Hassnaoui"
+      ],
+      "titel": "Saïd lacht met liefde",
+      "genre": "stand-up",
+      "datum": "2026-12-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/said-el-hassnaoui/a0NP500000YaLYbMAN"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Fabian Franciscus"
+      ],
+      "titel": "Best Of",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/fabian-franciscus/a0NP500000LkoLxMAJ"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Farce majeure"
+      ],
+      "titel": "Michael van Peel",
+      "genre": "stand-up",
+      "datum": "2027-01-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/michael-van-peel/a0NP500000FHpYgMAL"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Isabelle Kafando"
+      ],
+      "titel": "Rof Daaimund",
+      "genre": "stand-up",
+      "datum": "2027-01-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/rof-daaimund/a0NP500000Hp5ggMAB"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [],
+      "titel": "Gala van de Gouden Jefkes",
+      "genre": "stand-up",
+      "datum": "2027-02-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/gala-van-de-gouden-jefkes/a0NP500000N3lS9MAJ"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Get Up Stand Up"
+      ],
+      "titel": "A New Generation of Stand Up Comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/get-up-stand-up/a0NP500000WpbHdMAJ"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Bas Birker"
+      ],
+      "titel": "Twee Procent",
+      "genre": "stand-up",
+      "datum": "2027-02-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/bas-birker/a0NP500000MyIa9MAF"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Dena"
+      ],
+      "titel": "Las Vegas",
+      "genre": "stand-up",
+      "datum": "2027-02-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/dena/a0NP500000TgWVpMAN"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Alex Agnew en Andries Beckers"
+      ],
+      "titel": "Welcome To The AA: Off The Record",
+      "genre": "stand-up",
+      "datum": "2027-03-24",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/alex-agnew-en-andries-beckers/a0NP500000GU7SfMAL"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Nabil Aoulad Ayad"
+      ],
+      "titel": "Daar is hij weer!",
+      "genre": "stand-up",
+      "datum": "2027-03-28",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/nabil-aoulad-ayad/a0NP500000HPg3xMAD"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Ariane van Hasselt"
+      ],
+      "titel": "I Feel Good!",
+      "genre": "stand-up",
+      "datum": "2027-04-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/ariane-van-hasselt/a0NP500000IyB34MAF"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Warre Verlinden"
+      ],
+      "titel": "Zeker Onzeker",
+      "genre": "stand-up",
+      "datum": "2027-04-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/warre-verlinden/a0NP500000IyFHxMAN"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Kim Karssen"
+      ],
+      "titel": "God is een snotje",
+      "genre": "stand-up",
+      "datum": "2027-04-10",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/kim-karssen/a0NP500000Ly0ttMAB"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Kamagurka"
+      ],
+      "titel": "Op zekere dag",
+      "genre": "stand-up",
+      "datum": "2027-04-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/kamagurka/a0NP500000N8u1NMAR"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Jasper Posson"
+      ],
+      "titel": "Eeuwige jeugd",
+      "genre": "stand-up",
+      "datum": "2027-04-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/jasper-posson/a0NP500000KPMzrMAH"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Jan Jaap van der Wal"
+      ],
+      "titel": "Amor Fati | 10 jaar in Vlaanderen",
+      "genre": "stand-up",
+      "datum": "2027-05-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/jan-jaap-van-der-wal/a0NP5000007sSeQMAU"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [],
+      "titel": "Tova Leigh",
+      "genre": "stand-up",
+      "datum": "2027-05-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/tova-leigh/a0NP500000ASjfZMAT"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom Ongemak",
+      "genre": "stand-up",
+      "datum": "2027-05-12",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/wim-helsen/a0NP500000FKykOMAT"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "stand-up",
+      "datum": "2027-05-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/kommil-foo/a0NP500000FHs1qMAD"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "De Volksjury"
+      ],
+      "titel": "De millennium case",
+      "genre": "stand-up",
+      "datum": "2027-05-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/de-volksjury/a0NP500000GU72rMAD"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Rosalie Custers"
+      ],
+      "titel": "Vaas",
+      "genre": "stand-up",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/rosalie-custers/a0NP500000OU4jrMAD"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [],
+      "titel": "Senne & Lokko 2",
+      "genre": "stand-up",
+      "datum": "2027-06-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/senne-lokko-2/a0NP500000GTh6uMAD"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Ross Noble"
+      ],
+      "titel": "Cranium of curiosities",
+      "genre": "stand-up",
+      "datum": "2027-10-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/ross-noble/a0NP500000RFgx8MAD"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "stand-up",
+      "datum": "2027-10-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/esther-van-der-voort/a0NP500000TEI1eMAH"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Alex Agnew"
+      ],
+      "titel": "No more heroes",
+      "genre": "stand-up",
+      "datum": "2027-11-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/alex-agnew/a0NP500000Shd9NMAR"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Jan Linssen"
+      ],
+      "titel": "Sjiek is mich dat!",
+      "genre": "stand-up",
+      "datum": "2027-11-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/jan-linssen/a0NP500000K0q6SMAR"
+    }
+  ],
+  "recensies": {
+    "https://www.arenberg.be/nl/programma/grof-geschud/a0NP500000EuwhBMAR": [
+      {
+        "medium": "De Standaard",
+        "sterren": null,
+        "citaat": "Hoogst getalenteerd cabaretduo” vijf sterren"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Dit zijn rechtstreekse erfgenamen van Kommil Foo” vier sterren"
+      }
+    ],
+    "https://www.arenberg.be/nl/programma/said-el-hassnaoui/a0NP500000YaLYbMAN": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Saïd el Hassnaoui, een innemende zaalinpakker met pretogen"
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Je kunt hier echt mensen zien waarvan we nog veel gaan horen, zoals comedian Said El Hassnaoui"
+      }
+    ],
+    "https://www.arenberg.be/nl/programma/michael-van-peel/a0NP500000FHpYgMAL": [
+      {
+        "medium": "De Morgen",
+        "sterren": null,
+        "citaat": "De beste actuacomedian van ons land"
+      }
+    ],
+    "https://www.arenberg.be/nl/programma/bas-birker/a0NP500000MyIa9MAF": [
+      {
+        "medium": "De Morgen",
+        "sterren": 4,
+        "citaat": "In blijde verachting’ “In zijn slot onderstreept Birker andermaal dat hij zijn plaats aan de top van de Vlaamse en Nederlandse podiumhumor verdient."
+      }
+    ],
+    "https://www.arenberg.be/nl/programma/kim-karssen/a0NP500000Ly0ttMAB": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Door de theaterredactie van de Volkskrant verkozen tot de beste voorstelling van het afgelopen seizoen."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "een prachtig en ingenieus decor dat gedurende de voorstelling een schat aan verrassingen in petto blijkt te hebben."
+      }
+    ],
+    "https://www.arenberg.be/nl/programma/jasper-posson/a0NP500000KPMzrMAH": [
+      {
+        "medium": "De Morgen",
+        "sterren": 4,
+        "citaat": "Jasper Posson bewijst met ‘Vastbenoemd’ dat hij terecht zijn job heeft opgezegd. Hij is klaar om de schouwburgen te bespelen met zijn goed geschreven grappen vol originele wendingen."
+      }
+    ],
+    "https://www.arenberg.be/nl/programma/kommil-foo/a0NP500000FHs1qMAD": [
+      {
+        "medium": "De Standaard",
+        "sterren": 5,
+        "citaat": "Theater op het hoogste niveau, in een volstrekt unieke stijl. Onweerstaanbaar grappig."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Steengoede show. Kippenvel. Constant van hoog niveau. Subtiele humor, zelfbewuste bravoure, buitengewoon ontroerend."
+      }
+    ],
+    "https://www.arenberg.be/nl/programma/rosalie-custers/a0NP500000OU4jrMAD": [
+      {
+        "medium": "De Standaard",
+        "sterren": null,
+        "citaat": "Een voorstelling vol bloemrijke taal, maar ook breekbaar als een scherf."
+      }
+    ]
+  }
+}
