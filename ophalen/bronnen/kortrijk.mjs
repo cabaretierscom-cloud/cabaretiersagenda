@@ -7,6 +7,8 @@ export default peppered({
   basis: "https://www.schouwburgkortrijk.be",
   agenda: "/programma",
   alleenGenres: true,
+  // PARCOURS is een dansfestival; Kortrijk zet die voorstellingen ook onder cabaret.
+  locaties: { "PARCOURS": false, "Naked Dancer": false },
   theaters: [
     { id: "schouwburg-kortrijk", naam: "Schouwburg Kortrijk", plaats: "Kortrijk", land: "BE", soort: "theater", website: "https://www.schouwburgkortrijk.be" },
   ],

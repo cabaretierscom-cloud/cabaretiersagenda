@@ -1,0 +1,809 @@
+{
+  "bron": "kortrijk",
+  "naam": "Schouwburg Kortrijk",
+  "opgehaald": "2026-11-09",
+  "theaters": [
+    {
+      "id": "schouwburg-kortrijk",
+      "naam": "Schouwburg Kortrijk",
+      "plaats": "Kortrijk",
+      "land": "BE",
+      "soort": "theater",
+      "website": "https://www.schouwburgkortrijk.be"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Paniek in de Pietenfabriek (3+)"
+      ],
+      "titel": "Theater De Kroon",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/paniek-in-de-pietenfabriek-3-5czr"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Paniek in de Pietenfabriek (3+)"
+      ],
+      "titel": "Theater De Kroon",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/paniek-in-de-pietenfabriek-3-5czr"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Voor Normale Mensen",
+      "genre": "comedy",
+      "datum": "2026-12-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/voor-normale-mensen-try-out-csvd"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Nu is het nog rustig (8+)"
+      ],
+      "titel": "hetpaleis, Theater Artemis & Het Zuidelijk Toneel/Jetse Batelaan",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-11",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/nu-is-het-nog-rustig-8-m91y"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Les Fêlures de Monsieur T. (8+)"
+      ],
+      "titel": "Studio T",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/les-felures-de-monsieur-t-8-rj3r"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag ik even? 2026",
+      "genre": "comedy",
+      "datum": "2026-12-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/mag-ik-even-2026-5cyq"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Vanwaar We Komen"
+      ],
+      "titel": "Jan Van Looveren",
+      "genre": "comedy",
+      "datum": "2027-01-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/vanwaar-we-komen-l3b3"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Antes de... (2+)"
+      ],
+      "titel": "Bronks & Compagnie Tea Tree",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/antes-de-2-4vnd"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Mohsin Abbas"
+      ],
+      "titel": "Moh?!",
+      "genre": "comedy",
+      "datum": "2027-01-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/moh-sgds"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Farce Majeure"
+      ],
+      "titel": "Michael Van Peel",
+      "genre": "comedy",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/farce-majeure-6n87"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Angst Te Koop (weg wegens nieuwe hobby)"
+      ],
+      "titel": "Thomas Smith",
+      "genre": "comedy",
+      "datum": "2027-01-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/angst-te-koop-weg-wegens-nieuwe-hobby-cs4v"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Welcome To The AA: Off The Record"
+      ],
+      "titel": "Alex Agnew & Andries Beckers",
+      "genre": "comedy",
+      "datum": "2027-01-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/welcome-to-the-aa-off-the-record-m9yp"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Lelijke rosse!"
+      ],
+      "titel": "Roel Steeno",
+      "genre": "comedy",
+      "datum": "2027-01-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/lelijke-rosse-x573"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Lelijke rosse!"
+      ],
+      "titel": "Roel Steeno",
+      "genre": "comedy",
+      "datum": "2027-04-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/lelijke-rosse-x573"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Bas Birker"
+      ],
+      "titel": "twee procent",
+      "genre": "comedy",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/twee-procent-sgvc"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Steven Mahieu"
+      ],
+      "titel": "Stabieler",
+      "genre": "comedy",
+      "datum": "2027-02-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/stabieler-q7g1"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Steven Mahieu"
+      ],
+      "titel": "Stabieler",
+      "genre": "comedy",
+      "datum": "2027-03-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/stabieler-q7g1"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Rust Roest"
+      ],
+      "titel": "Het Prethuis",
+      "genre": "comedy",
+      "datum": "2027-02-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/rust-roest-12vh"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Castl (8+)"
+      ],
+      "titel": "hetpaleis & Abattoir Fermé",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-06",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/castl-8-rjw8"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Solo! (4+)"
+      ],
+      "titel": "Thomas Van Caeneghem zonder Lander",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/solo-4-premiere-zknp"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Anders dromen we met de dromedarissen (10+)"
+      ],
+      "titel": "Jan Sobrie",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-08",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/anders-dromen-we-met-de-dromedarissen-10-premiere-5clt"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Room (10+)"
+      ],
+      "titel": "MOVEDBYMATTER / Kasper Vandenberghe",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-09",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/room-10-q7z7"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Früh Stück (3+)"
+      ],
+      "titel": "Helios Theater (De)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-10",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/fruh-stuck-3-l3dp"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Früh Stück (3+)"
+      ],
+      "titel": "Helios Theater (De)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-10",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/fruh-stuck-3-l3dp"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Les Petits Touts (4+)"
+      ],
+      "titel": "Cie Blabla Productions (Fr)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-11",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/les-petits-touts-4-12py"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Les Petits Touts (4+)"
+      ],
+      "titel": "Cie Blabla Productions (Fr)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-11",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/les-petits-touts-4-12py"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Between Us (8+)"
+      ],
+      "titel": "The Ruggeds (Nl)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-12",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/between-us-8-q7z2"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Arnout Van den Bossche"
+      ],
+      "titel": "De Relatiefluisteraar",
+      "genre": "comedy",
+      "datum": "2027-02-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/de-relatiefluisteraar-dqz4"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Arnout Van den Bossche"
+      ],
+      "titel": "De Relatiefluisteraar",
+      "genre": "comedy",
+      "datum": "2027-03-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/de-relatiefluisteraar-dqz4"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "comedy",
+      "datum": "2027-02-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/babel-hw56"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "comedy",
+      "datum": "2027-02-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/babel-hw56"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Seppe Toremans"
+      ],
+      "titel": "Storemans",
+      "genre": "comedy",
+      "datum": "2027-02-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/storemans-hwq9"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Wouter Deprez & Tcha Limberger"
+      ],
+      "titel": "Wouter Deprez & Tcha Limberger",
+      "genre": "comedy",
+      "datum": "2027-02-21",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/wouter-deprez-tcha-limberger-rjxx"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Wouter Deprez & Tcha Limberger"
+      ],
+      "titel": "Wouter Deprez & Tcha Limberger",
+      "genre": "comedy",
+      "datum": "2027-02-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/wouter-deprez-tcha-limberger-rjxx"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Zoe Bizoe"
+      ],
+      "titel": "Cabaresque",
+      "genre": "cabaret",
+      "datum": "2027-02-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/cabaresque-rjww"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Gili"
+      ],
+      "titel": "Machtig!",
+      "genre": "comedy",
+      "datum": "2027-02-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/machtig-rjmm"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Chromatique (2.5+)"
+      ],
+      "titel": "Louise Baduel",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/chromatique-2-5-dqjy"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "DDT houdt uitverkoop (feat. Jacques Vermeire)"
+      ],
+      "titel": "Ddt",
+      "genre": "comedy",
+      "datum": "2027-02-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/ddt-houdt-uitverkoop-feat-jacques-vermeire-t8k6"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back to the beginning",
+      "genre": "comedy",
+      "datum": "2027-03-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/back-to-the-beginning-sgkt"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Skram (6+)"
+      ],
+      "titel": "Kopergietery & Grensgeval",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/skram-6-8lvx"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back to the Beginning",
+      "genre": "comedy",
+      "datum": "2027-03-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/back-to-the-beginning-4v96"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Han Solo"
+      ],
+      "titel": "Psycho Solo: Lof der Zotheid",
+      "genre": "comedy",
+      "datum": "2027-03-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/psycho-solo-lof-der-zotheid-bflz"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Robrecht Vanden Thoren"
+      ],
+      "titel": "Ten Minste Houdbaar Tot",
+      "genre": "comedy",
+      "datum": "2027-03-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/ten-minste-houdbaar-tot-7ykf"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "De laatste boom (6+)"
+      ],
+      "titel": "Laika / Michai Geyzen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-19",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/de-laatste-boom-6-12pq"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom Ongemak",
+      "genre": "comedy",
+      "datum": "2027-03-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/welkom-ongemak-n1g9"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom Ongemak",
+      "genre": "comedy",
+      "datum": "2027-03-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/welkom-ongemak-n1g9"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Dubbel Troef – Een unieke blik achter de lach"
+      ],
+      "titel": "Yannick Noben en Maarten D’Haene",
+      "genre": "comedy",
+      "datum": "2027-03-19",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/dubbel-troef-een-unieke-blik-achter-de-lach-t8wx"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Maarten Westra Hoekzema"
+      ],
+      "titel": "Ik Had Eigenlijk NEE Moeten Zeggen",
+      "genre": "comedy",
+      "datum": "2027-03-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/ik-had-eigenlijk-nee-moeten-zeggen-frzt"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "DJ Loebas"
+      ],
+      "titel": "Piv Huvluv",
+      "genre": "comedy",
+      "datum": "2027-03-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/dj-loebas-rjks"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Preuteleute"
+      ],
+      "titel": "V",
+      "genre": "comedy",
+      "datum": "2027-03-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/v-8lb9"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Han Solo"
+      ],
+      "titel": "Psycho Solo",
+      "genre": "comedy",
+      "datum": "2027-04-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/psycho-solo-q7g8"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Jasper Posson"
+      ],
+      "titel": "Eeuwige Jeugd",
+      "genre": "comedy",
+      "datum": "2027-04-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/eeuwige-jeugd-4vq5"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Kabaresque VII"
+      ],
+      "titel": "The Cherry Dots Productions",
+      "genre": "cabaret",
+      "datum": "2027-04-18",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/kabaresque-vii-y4f2"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [],
+      "titel": "'Nuff Said",
+      "genre": "comedy",
+      "datum": "2027-04-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/nuff-said-frzg"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Voor Normale Mensen",
+      "genre": "comedy",
+      "datum": "2027-04-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/voor-normale-mensen-6n2s"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Nacht (8+)"
+      ],
+      "titel": "Mayo (Mats Vandroogenbroeck & Jonas Baeke /DE MAAN",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-23",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/nacht-8-8lm6"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Tal en Thee"
+      ],
+      "titel": "Rapsodie (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/rapsodie-3-t83x"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Altijd Aan",
+      "genre": "comedy",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/altijd-aan-fr4c"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Gili"
+      ],
+      "titel": "Machtig!",
+      "genre": "comedy",
+      "datum": "2027-06-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/machtig-dqhz"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Hans Cools"
+      ],
+      "titel": "Zolang de voorraad strekt",
+      "genre": "comedy",
+      "datum": "2027-06-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/zolang-de-voorraad-strekt-l364"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Hans Cools"
+      ],
+      "titel": "Zolang de voorraad strekt",
+      "genre": "comedy",
+      "datum": "2027-06-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/zolang-de-voorraad-strekt-l364"
+    }
+  ],
+  "recensies": {}
+}

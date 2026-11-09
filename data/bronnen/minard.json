@@ -1,0 +1,459 @@
+{
+  "bron": "minard",
+  "naam": "Minardschouwburg",
+  "opgehaald": "2026-11-09",
+  "theaters": [
+    {
+      "id": "minardschouwburg-gent",
+      "naam": "Minardschouwburg",
+      "plaats": "Gent",
+      "land": "BE",
+      "soort": "theater",
+      "website": "https://minard.be"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": {
+        "id": "theater-scala-gent",
+        "naam": "Theater Scala",
+        "plaats": "gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "STEFFIE DE BAERDEMAEKER"
+      ],
+      "titel": "IN MIJN HOOFD KLONK HET BETER",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/steffie-de-baerdemaeker-in-mijn-hoofd-klonk-het-beter/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "THEATERGROEP DE KALE"
+      ],
+      "titel": "SYMEN SONDER SOETICHEYT",
+      "genre": "komedie",
+      "datum": "2026-11-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/theater-groep-de-kale-symen-sonder-soeticheyt/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "PERFESSER GENTS PETER VAN HAELTER"
+      ],
+      "titel": "TOUR DE F̶R̶A̶N̶C̶E̶ GAND",
+      "genre": "comedy",
+      "datum": "2026-11-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/tour-de-gand/"
+    },
+    {
+      "theater": "minardschouwburg-gent",
+      "artiesten": [],
+      "titel": "COMPAGNIE VAN DE LEUTE",
+      "genre": "komedie",
+      "datum": "2026-12-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/compagnie-van-de-leute/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "BAS BIRKER"
+      ],
+      "titel": "TWEE PROCENT",
+      "genre": "stand-up",
+      "datum": "2027-01-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/bas-birker-twee-procent-2/"
+    },
+    {
+      "theater": "minardschouwburg-gent",
+      "artiesten": [
+        "LOGE10"
+      ],
+      "titel": "STEPPING OUT",
+      "genre": "komedie",
+      "datum": "2027-01-10",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/stepping-out/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "JOHANNES VERSCHAEVE"
+      ],
+      "titel": "JOHANNES IS ZIJN NAAM (DEMOCRAZY)",
+      "genre": "kleinkunst",
+      "datum": "2027-01-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/johannes-verschaeve-johannes-is-zijn-naam-democrazy/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "ZOE BIZOE"
+      ],
+      "titel": "CABARESQUE",
+      "genre": "comedy",
+      "datum": "2027-01-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/zoe-bizoe-cabaresque-2/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "EDOUARD DE PREZ"
+      ],
+      "titel": "9 JAAR PALAVER LIVE",
+      "genre": "stand-up",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/edouard-de-prez-9-jaar-palaver-live/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "PHILIPPE GEUBELS"
+      ],
+      "titel": "TABOE (TRY-OUT)",
+      "genre": "stand-up",
+      "datum": "2027-01-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://minard.be/voorstelling/philippe-geubels-taboe-try-out/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "GUNTER LAMOOT"
+      ],
+      "titel": "PROTPOURRI",
+      "genre": "stand-up",
+      "datum": "2027-01-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/gunter-lamoot-protpourri/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "ZOE BIZOE"
+      ],
+      "titel": "CABARESQUE",
+      "genre": "comedy",
+      "datum": "2027-01-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/zoe-bizoe-cabaresque-3/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "ROEL STEENO"
+      ],
+      "titel": "LELIJKE ROSSE!",
+      "genre": "stand-up",
+      "datum": "2027-01-31",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/roel-steeno/"
+    },
+    {
+      "theater": {
+        "id": "theater-scala-gent",
+        "naam": "Theater Scala",
+        "plaats": "gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "URBANUS"
+      ],
+      "titel": "STAND-UP",
+      "genre": "stand-up",
+      "datum": "2027-02-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/urbanus-stand-up/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "HET FARCETHEATER"
+      ],
+      "titel": "DE TANTE VAN CHARLIE",
+      "genre": "komedie",
+      "datum": "2027-02-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/het-farcetheater-de-tante-van-charlie/"
+    },
+    {
+      "theater": {
+        "id": "theater-scala-gent",
+        "naam": "Theater Scala",
+        "plaats": "gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "BRUTAAL JONG (LIEVE CORNELIS, STEVE DE SCHEPPER, WALTER JANSSENS)"
+      ],
+      "titel": "KONING VAN HIER",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/brutaal-jong-lieve-cornelis-steve-de-schepper-walter-janssens-koning-van-hier/"
+    },
+    {
+      "theater": "minardschouwburg-gent",
+      "artiesten": [
+        "SIEBER MARLY"
+      ],
+      "titel": "MAG IK JE PAPA ZIJN?",
+      "genre": "cabaret",
+      "datum": "2027-04-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/mag-ik-je-papa-zijn/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "JASPER POSSON"
+      ],
+      "titel": "EEUWIGE JEUGD",
+      "genre": "stand-up",
+      "datum": "2027-04-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/jasper-posson-eeuwige-jeugd-2/"
+    },
+    {
+      "theater": "minardschouwburg-gent",
+      "artiesten": [],
+      "titel": "GENTS STROPPENTHEATER",
+      "genre": "komedie",
+      "datum": "2027-04-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/gents-stroppentheater/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "SENNE GUNS"
+      ],
+      "titel": "SENNE & LOKKO 2",
+      "genre": "cabaret",
+      "datum": "2027-05-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/senne-guns-senne-lokko-2/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "JASPER POSSON"
+      ],
+      "titel": "EEUWIGE JEUGD",
+      "genre": "stand-up",
+      "datum": "2027-05-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/jasper-posson-eeuwige-jeugd-3/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "MARLIES VERSCHUEREN"
+      ],
+      "titel": "ZWAK GESLACHT",
+      "genre": "stand-up",
+      "datum": "2027-06-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/marlies-verschueren-zwak-geslacht/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "AN NELISSEN"
+      ],
+      "titel": "TOURNÉE JUBILÉE – DE FOMOMONOLOOG",
+      "genre": "stand-up",
+      "datum": "2027-06-06",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/an-nelissen-tournee-jubilee-de-fomomonoloog/"
+    },
+    {
+      "theater": "minardschouwburg-gent",
+      "artiesten": [
+        "WAT IK ZEKER WEET"
+      ],
+      "titel": "DEAN MEERT & MARIJN DEVALCK",
+      "genre": "comedy",
+      "datum": "2027-06-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/wat-ik-zeker-weet-dean-meert-en-marijn-devalck/"
+    }
+  ],
+  "recensies": {}
+}

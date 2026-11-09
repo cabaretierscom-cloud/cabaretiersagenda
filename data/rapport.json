@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-09",
   "totaal": {
-    "speeldata": 8940,
-    "komend": 8328,
-    "artiesten": 831,
-    "zalen": 695,
-    "plaatsen": 486,
-    "voorstellingen": 1240
+    "speeldata": 9103,
+    "komend": 8491,
+    "artiesten": 912,
+    "zalen": 697,
+    "plaatsen": 487,
+    "voorstellingen": 1347
   },
   "bronnen": [
     {
@@ -14,7 +14,7 @@
       "naam": "Amai Comedy Club",
       "opgehaald": "2026-11-09",
       "speeldata": 16,
-      "vorige": 15,
+      "vorige": 16,
       "dubbel": 0
     },
     {
@@ -94,7 +94,7 @@
       "naam": "Cpunt",
       "opgehaald": "2026-11-09",
       "speeldata": 153,
-      "vorige": 152,
+      "vorige": 153,
       "dubbel": 0
     },
     {
@@ -118,7 +118,15 @@
       "naam": "DeLaMar",
       "opgehaald": "2026-11-09",
       "speeldata": 91,
-      "vorige": 89,
+      "vorige": 91,
+      "dubbel": 0
+    },
+    {
+      "bron": "despil",
+      "naam": "CC De Spil",
+      "opgehaald": "2026-11-09",
+      "speeldata": 42,
+      "vorige": 0,
       "dubbel": 0
     },
     {
@@ -166,7 +174,7 @@
       "naam": "Het Nationale Theater",
       "opgehaald": "2026-11-09",
       "speeldata": 3,
-      "vorige": 0,
+      "vorige": 3,
       "dubbel": 0
     },
     {
@@ -191,6 +199,14 @@
       "opgehaald": "2026-11-09",
       "speeldata": 152,
       "vorige": 152,
+      "dubbel": 0
+    },
+    {
+      "bron": "kortrijk",
+      "naam": "Schouwburg Kortrijk",
+      "opgehaald": "2026-11-09",
+      "speeldata": 58,
+      "vorige": 0,
       "dubbel": 0
     },
     {
@@ -247,6 +263,14 @@
       "opgehaald": "2026-11-09",
       "speeldata": 53,
       "vorige": 53,
+      "dubbel": 0
+    },
+    {
+      "bron": "minard",
+      "naam": "Minardschouwburg",
+      "opgehaald": "2026-11-09",
+      "speeldata": 24,
+      "vorige": 0,
       "dubbel": 0
     },
     {
@@ -318,7 +342,7 @@
       "naam": "PLT (Parkstad Limburg Theaters)",
       "opgehaald": "2026-11-09",
       "speeldata": 261,
-      "vorige": 262,
+      "vorige": 261,
       "dubbel": 0
     },
     {
@@ -414,7 +438,7 @@
       "naam": "Theater aan het Vrijthof",
       "opgehaald": "2026-11-09",
       "speeldata": 38,
-      "vorige": 40,
+      "vorige": 38,
       "dubbel": 0
     },
     {
@@ -423,6 +447,22 @@
       "opgehaald": "2026-11-09",
       "speeldata": 119,
       "vorige": 119,
+      "dubbel": 0
+    },
+    {
+      "bron": "warande",
+      "naam": "De Warande",
+      "opgehaald": "2026-11-09",
+      "speeldata": 34,
+      "vorige": 0,
+      "dubbel": 0
+    },
+    {
+      "bron": "westrand",
+      "naam": "Westrand",
+      "opgehaald": "2026-11-09",
+      "speeldata": 48,
+      "vorige": 0,
       "dubbel": 0
     },
     {
@@ -461,9 +501,9 @@
       "bron": "5to9",
       "naam": "Agenda van 5to9",
       "opgehaald": "2026-11-09",
-      "speeldata": 432,
+      "speeldata": 404,
       "vorige": 432,
-      "dubbel": 26
+      "dubbel": 54
     },
     {
       "bron": "bunker",
@@ -493,9 +533,9 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-09",
-      "speeldata": 2370,
-      "vorige": 2372,
-      "dubbel": 1379
+      "speeldata": 2355,
+      "vorige": 2370,
+      "dubbel": 1394
     }
   ],
   "nieuw": {
@@ -503,9 +543,348 @@
       {
         "id": "de-toneelmakerij-dox",
         "naam": "De toneelmakerij | DOX"
+      },
+      {
+        "id": "in-t-westvlams",
+        "naam": "(in 't Westvlams)"
+      },
+      {
+        "id": "an-nelissen",
+        "naam": "An Nelissen"
+      },
+      {
+        "id": "anders-dromen-we-met-de-dromedarissen",
+        "naam": "Anders dromen we met de dromedarissen"
+      },
+      {
+        "id": "angelina",
+        "naam": "Angelina"
+      },
+      {
+        "id": "angst-te-koop-weg-wegens-nieuwe-hobby",
+        "naam": "Angst Te Koop (weg wegens nieuwe hobby)"
+      },
+      {
+        "id": "between-us",
+        "naam": "Between Us"
+      },
+      {
+        "id": "broder",
+        "naam": "Broder"
+      },
+      {
+        "id": "bronks-en-compagnie-tea-tree",
+        "naam": "Bronks & Compagnie Tea Tree"
+      },
+      {
+        "id": "chromatique",
+        "naam": "Chromatique"
+      },
+      {
+        "id": "claudette-6-106",
+        "naam": "Claudette (6-106)"
+      },
+      {
+        "id": "comedy-club-2",
+        "naam": "Comedy Club #2"
+      },
+      {
+        "id": "compagnie-barbarie-bronks-en-de-studio",
+        "naam": "compagnie barbarie / BRONKS & De Studio"
+      },
+      {
+        "id": "ddt-houdt-uitverkoop-feat-jacques-vermeire",
+        "naam": "DDT houdt uitverkoop (feat. Jacques Vermeire)"
+      },
+      {
+        "id": "de-canadeise-meur",
+        "naam": "De Canadeise meur"
+      },
+      {
+        "id": "de-frivole-framboos",
+        "naam": "De Frivole Framboos"
+      },
+      {
+        "id": "de-kombak",
+        "naam": "De Kombak"
+      },
+      {
+        "id": "de-laatste-boom",
+        "naam": "De laatste boom"
+      },
+      {
+        "id": "de-spiegel",
+        "naam": "De Spiegel"
+      },
+      {
+        "id": "de-super-elfkins",
+        "naam": "De Super-Elfkins"
+      },
+      {
+        "id": "dj-loebas",
+        "naam": "DJ Loebas"
+      },
+      {
+        "id": "dubbel-troef",
+        "naam": "Dubbel Troef"
+      },
+      {
+        "id": "edouard-de-prez",
+        "naam": "Edouard de Prez"
+      },
+      {
+        "id": "farce-majeure",
+        "naam": "Farce Majeure"
+      },
+      {
+        "id": "frames",
+        "naam": "Frames"
+      },
+      {
+        "id": "gen-z",
+        "naam": "Gen Z"
+      },
+      {
+        "id": "helios-theater-de",
+        "naam": "Helios Theater (De)"
+      },
+      {
+        "id": "het-farcetheater",
+        "naam": "Het Farcetheater"
+      },
+      {
+        "id": "hetpaleis-en-abattoir-ferme",
+        "naam": "hetpaleis & Abattoir Fermé"
+      },
+      {
+        "id": "hetpaleis-theater-artemis-en-het-zuidelijk-toneel-jetse-batelaan",
+        "naam": "hetpaleis, Theater Artemis & Het Zuidelijk Toneel/Jetse Batelaan"
+      },
+      {
+        "id": "hetpaleis-kim-karssen-en-hendrik-kegels",
+        "naam": "hetpaleis/Kim Karssen & Hendrik kegels"
+      },
+      {
+        "id": "hetpaleis-wolf-wolf",
+        "naam": "hetpaleis/WOLF WOLF"
+      },
+      {
+        "id": "in-eigen-nat",
+        "naam": "In eigen nat"
+      },
+      {
+        "id": "johannes-verschaeve",
+        "naam": "Johannes Verschaeve"
+      },
+      {
+        "id": "jupi",
+        "naam": "Jupi"
+      },
+      {
+        "id": "kabaresque-vii",
+        "naam": "Kabaresque VII"
+      },
+      {
+        "id": "karolien-verlinden-de-formatie-en-zonzo-compagnie",
+        "naam": "Karolien Verlinden/de Formatie & Zonzo Compagnie"
+      },
+      {
+        "id": "kukeleku-de-grote-boerderijshow",
+        "naam": "Kukeleku! De Grote Boerderijshow"
+      },
+      {
+        "id": "kunst-in-zicht",
+        "naam": "Kunst in Zicht"
+      },
+      {
+        "id": "laros-en-de-jong-beeldmakerij",
+        "naam": "Laros & de Jong beeldmakerij"
+      },
+      {
+        "id": "lelijke-rosse",
+        "naam": "Lelijke rosse!"
+      },
+      {
+        "id": "livia-jouan-cie-studio-t",
+        "naam": "Livia Jouan / Cie Studio T"
+      },
+      {
+        "id": "loge10",
+        "naam": "Loge10"
+      },
+      {
+        "id": "marlies-verschueren",
+        "naam": "Marlies Verschueren"
+      },
+      {
+        "id": "mary-anning",
+        "naam": "Mary Anning"
+      },
+      {
+        "id": "moortelvet-premiere",
+        "naam": "Moortelvet (Première)"
+      },
+      {
+        "id": "natalia-s",
+        "naam": "Natalia's"
+      },
+      {
+        "id": "neurodivergent-en-content",
+        "naam": "Neurodivergent en content"
+      },
+      {
+        "id": "ni-zievere",
+        "naam": "Ni Zievere"
+      },
+      {
+        "id": "non-stop",
+        "naam": "Non-Stop"
+      },
+      {
+        "id": "papaya",
+        "naam": "Papaya"
+      },
+      {
+        "id": "pechvogel",
+        "naam": "Pechvogel"
+      },
+      {
+        "id": "perfesser-gents-peter-van-haelter",
+        "naam": "Perfesser Gents Peter van Haelter"
+      },
+      {
+        "id": "philippe-geubels",
+        "naam": "Philippe Geubels"
+      },
+      {
+        "id": "propop",
+        "naam": "Propop"
+      },
+      {
+        "id": "quand-ca-lache",
+        "naam": "Quand ça lâche"
+      },
+      {
+        "id": "reuskleuter",
+        "naam": "REUSkleuter"
+      },
+      {
+        "id": "roel-steeno",
+        "naam": "Roel Steeno"
+      },
+      {
+        "id": "room",
+        "naam": "Room"
+      },
+      {
+        "id": "rust-roest",
+        "naam": "Rust Roest"
+      },
+      {
+        "id": "senne-guns",
+        "naam": "Senne Guns"
+      },
+      {
+        "id": "shaun-het-schaap-elke-dag-feest",
+        "naam": "Shaun het schaap: elke dag feest!"
+      },
+      {
+        "id": "sieber-marly",
+        "naam": "Sieber Marly"
+      },
+      {
+        "id": "sieber-marly-en-eva-de-roovere",
+        "naam": "Sieber Marly en Eva De Roovere"
+      },
+      {
+        "id": "skram",
+        "naam": "Skram"
+      },
+      {
+        "id": "solo",
+        "naam": "Solo!"
+      },
+      {
+        "id": "space-cadet",
+        "naam": "Space cadet"
+      },
+      {
+        "id": "speile",
+        "naam": "Speile"
+      },
+      {
+        "id": "sprookjes-enzo",
+        "naam": "Sprookjes enzo"
+      },
+      {
+        "id": "steffie-de-baerdemaeker",
+        "naam": "Steffie de Baerdemaeker"
+      },
+      {
+        "id": "terrible-tiran-8-108-geannuleerd",
+        "naam": "Terrible Tiran (8-108) GEANNULEERD"
+      },
+      {
+        "id": "theater-de-kroon",
+        "naam": "Theater De Kroon"
+      },
+      {
+        "id": "theater-froefroe",
+        "naam": "Theater FroeFroe"
+      },
+      {
+        "id": "theater-tieret-en-walrus",
+        "naam": "Theater Tieret & Walrus"
+      },
+      {
+        "id": "theatergroep-de-kale",
+        "naam": "Theatergroep de Kale"
+      },
+      {
+        "id": "tout-petit-en-alfredo-zinola-productions-b-d",
+        "naam": "tout petit & Alfredo Zinola Productions (B/D)"
+      },
+      {
+        "id": "urbanus",
+        "naam": "Urbanus"
+      },
+      {
+        "id": "vanwaar-we-komen",
+        "naam": "Vanwaar We Komen"
+      },
+      {
+        "id": "wat-ik-zeker-weet",
+        "naam": "Wat Ik Zeker Weet"
+      },
+      {
+        "id": "welcome-to-the-aa",
+        "naam": "Welcome To The AA"
+      },
+      {
+        "id": "woest-10-110",
+        "naam": "Woest (10-110)"
+      },
+      {
+        "id": "wouter-deprez-en-tcha-limberger",
+        "naam": "Wouter Deprez & Tcha Limberger"
       }
     ],
-    "zalen": [],
+    "zalen": [
+      {
+        "id": "theater-scala-gent",
+        "naam": "Theater Scala",
+        "plaats": "gent",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "website": "https://minard.be"
+      }
+    ],
     "voorstellingen": [
       {
         "id": "bonte-hond-wauw",
@@ -614,6 +993,724 @@
         "id": "sinterklaas-poppenkast-met-goochelaar-korvera-cpunt",
         "titel": "Sinterklaas Poppenkast met goochelaar Korvera",
         "artiesten": []
+      },
+      {
+        "id": "a-ventura-silent-disco-theater-de-grote-gameshow",
+        "titel": "De Grote Gameshow",
+        "artiesten": [
+          "a-ventura-silent-disco-theater"
+        ]
+      },
+      {
+        "id": "an-nelissen-tournee-jubilee-de-fomomonoloog",
+        "titel": "Tournée jubilée – de fomomonoloog",
+        "artiesten": [
+          "an-nelissen"
+        ]
+      },
+      {
+        "id": "anders-dromen-we-met-de-dromedarissen-jan-sobrie",
+        "titel": "Jan Sobrie",
+        "artiesten": [
+          "anders-dromen-we-met-de-dromedarissen"
+        ]
+      },
+      {
+        "id": "angelina-sibran-sampers",
+        "titel": "Sibran Sampers",
+        "artiesten": [
+          "angelina"
+        ]
+      },
+      {
+        "id": "angst-te-koop-weg-wegens-nieuwe-hobby-thomas-smith",
+        "titel": "Thomas Smith",
+        "artiesten": [
+          "angst-te-koop-weg-wegens-nieuwe-hobby"
+        ]
+      },
+      {
+        "id": "between-us-the-ruggeds-nl",
+        "titel": "The Ruggeds (Nl)",
+        "artiesten": [
+          "between-us"
+        ]
+      },
+      {
+        "id": "bonte-avonden-de-spil",
+        "titel": "Bonte Avonden",
+        "artiesten": []
+      },
+      {
+        "id": "broder-niels",
+        "titel": "Niels",
+        "artiesten": [
+          "broder"
+        ]
+      },
+      {
+        "id": "bronks-en-compagnie-tea-tree-antes-de",
+        "titel": "Antes de...",
+        "artiesten": [
+          "bronks-en-compagnie-tea-tree"
+        ]
+      },
+      {
+        "id": "chromatique-louise-baduel",
+        "titel": "Louise Baduel",
+        "artiesten": [
+          "chromatique"
+        ]
+      },
+      {
+        "id": "claudette-6-106-cie-balancetoi",
+        "titel": "Cie Balancetoi",
+        "artiesten": [
+          "claudette-6-106"
+        ]
+      },
+      {
+        "id": "comedy-club-2-met-joost-van-hyfte",
+        "titel": "met Joost Van Hyfte",
+        "artiesten": [
+          "comedy-club-2"
+        ]
+      },
+      {
+        "id": "comedy-club-2-met-kjen-descheemaecker",
+        "titel": "met Kjen Descheemaecker",
+        "artiesten": [
+          "comedy-club-2"
+        ]
+      },
+      {
+        "id": "comedy-club-2-met-raf-coppens-en-nigel-williams",
+        "titel": "met Raf Coppens en Nigel Williams",
+        "artiesten": [
+          "comedy-club-2"
+        ]
+      },
+      {
+        "id": "compagnie-barbarie-bronks-en-de-studio-wa-wilder-man",
+        "titel": "Wa Wilder Man",
+        "artiesten": [
+          "compagnie-barbarie-bronks-en-de-studio"
+        ]
+      },
+      {
+        "id": "compagnie-van-de-leute-minardschouwburg-gent",
+        "titel": "Compagnie van de leute",
+        "artiesten": []
+      },
+      {
+        "id": "ddt-houdt-uitverkoop-feat-jacques-vermeire-ddt",
+        "titel": "Ddt",
+        "artiesten": [
+          "ddt-houdt-uitverkoop-feat-jacques-vermeire"
+        ]
+      },
+      {
+        "id": "de-canadeise-meur-brussels-volkstejoeter",
+        "titel": "Brussels Volkstejoêter",
+        "artiesten": [
+          "de-canadeise-meur"
+        ]
+      },
+      {
+        "id": "de-feestfabriek-de-warande-turnhout",
+        "titel": "De feestfabriek",
+        "artiesten": []
+      },
+      {
+        "id": "de-frivole-framboos-finalementhee",
+        "titel": "Finalementhee",
+        "artiesten": [
+          "de-frivole-framboos"
+        ]
+      },
+      {
+        "id": "de-kombak-manmanman",
+        "titel": "Manmanman",
+        "artiesten": [
+          "de-kombak"
+        ]
+      },
+      {
+        "id": "de-laatste-boom-laika-michai-geyzen",
+        "titel": "Laika / Michai Geyzen",
+        "artiesten": [
+          "de-laatste-boom"
+        ]
+      },
+      {
+        "id": "de-plaats-die-ik-inneem-de-warande-turnhout",
+        "titel": "De plaats die ik inneem",
+        "artiesten": []
+      },
+      {
+        "id": "de-spiegel-battoe",
+        "titel": "Battoe",
+        "artiesten": [
+          "de-spiegel"
+        ]
+      },
+      {
+        "id": "de-super-elfkins-ute-von-munchow-pohl",
+        "titel": "Ute von Münchow-Pohl",
+        "artiesten": [
+          "de-super-elfkins"
+        ]
+      },
+      {
+        "id": "dj-loebas-piv-huvluv",
+        "titel": "Piv Huvluv",
+        "artiesten": [
+          "dj-loebas"
+        ]
+      },
+      {
+        "id": "dood-hoezo-dood-westrand-dilbeek",
+        "titel": "DOOD hoezo DOOD",
+        "artiesten": []
+      },
+      {
+        "id": "dubbel-troef-yannick-noben-en-maarten-d-haene",
+        "titel": "Yannick Noben en Maarten D’Haene",
+        "artiesten": [
+          "dubbel-troef"
+        ]
+      },
+      {
+        "id": "edouard-de-prez-9-jaar-palaver-live",
+        "titel": "9 jaar palaver live",
+        "artiesten": [
+          "edouard-de-prez"
+        ]
+      },
+      {
+        "id": "familiedag-sint-westrand-dilbeek",
+        "titel": "FamilieDag SINT",
+        "artiesten": []
+      },
+      {
+        "id": "farce-majeure-michael-van-peel",
+        "titel": "Michael Van Peel",
+        "artiesten": [
+          "farce-majeure"
+        ]
+      },
+      {
+        "id": "frames-alexander-vantournhout-not-standing",
+        "titel": "Alexander Vantournhout / Not Standing",
+        "artiesten": [
+          "frames"
+        ]
+      },
+      {
+        "id": "gen-z-han-solo-s-comedy-cafe",
+        "titel": "Han Solo's Comedy Café",
+        "artiesten": [
+          "gen-z"
+        ]
+      },
+      {
+        "id": "gents-stroppentheater-minardschouwburg-gent",
+        "titel": "Gents stroppentheater",
+        "artiesten": []
+      },
+      {
+        "id": "goat-droom-groots-westrand-dilbeek",
+        "titel": "GOAT: Droom Groots",
+        "artiesten": []
+      },
+      {
+        "id": "helios-theater-de-fruh-stuck",
+        "titel": "Früh Stück",
+        "artiesten": [
+          "helios-theater-de"
+        ]
+      },
+      {
+        "id": "het-farcetheater-de-tante-van-charlie",
+        "titel": "De tante van charlie",
+        "artiesten": [
+          "het-farcetheater"
+        ]
+      },
+      {
+        "id": "hetpaleis-en-abattoir-ferme-castl",
+        "titel": "Castl",
+        "artiesten": [
+          "hetpaleis-en-abattoir-ferme"
+        ]
+      },
+      {
+        "id": "hetpaleis-kim-karssen-en-hendrik-kegels-oh-oh-oh-dennenboom",
+        "titel": "Oh oh oh dennenboom",
+        "artiesten": [
+          "hetpaleis-kim-karssen-en-hendrik-kegels"
+        ]
+      },
+      {
+        "id": "hetpaleis-theater-artemis-en-het-zuidelijk-toneel-jetse-batelaan-nu-is-het-nog-r",
+        "titel": "Nu is het nog rustig",
+        "artiesten": [
+          "hetpaleis-theater-artemis-en-het-zuidelijk-toneel-jetse-batelaan"
+        ]
+      },
+      {
+        "id": "hetpaleis-wolf-wolf-eindeloos-verhaal-10-110",
+        "titel": "Eindeloos Verhaal (10-110)",
+        "artiesten": [
+          "hetpaleis-wolf-wolf"
+        ]
+      },
+      {
+        "id": "in-eigen-nat-blafwaf",
+        "titel": "Blafwaf",
+        "artiesten": [
+          "in-eigen-nat"
+        ]
+      },
+      {
+        "id": "in-t-westvlams-wouter-deprez-en-tcha-limberger",
+        "titel": "Wouter Deprez & Tcha Limberger",
+        "artiesten": [
+          "in-t-westvlams"
+        ]
+      },
+      {
+        "id": "jacques-vermeire-comedyshows-presenteert",
+        "titel": "Comedyshows presenteert:",
+        "artiesten": [
+          "jacques-vermeire"
+        ]
+      },
+      {
+        "id": "jacques-vermeire-ddt-jacques-vermeire",
+        "titel": "DDT (Jacques Vermeire)",
+        "artiesten": [
+          "jacques-vermeire"
+        ]
+      },
+      {
+        "id": "johannes-verschaeve-johannes-is-zijn-naam-democrazy",
+        "titel": "Johannes is zijn naam (democrazy)",
+        "artiesten": [
+          "johannes-verschaeve"
+        ]
+      },
+      {
+        "id": "jupi-deschonecompanie-en-il-gardellino",
+        "titel": "DESCHONECOMPANIE & Il Gardellino",
+        "artiesten": [
+          "jupi"
+        ]
+      },
+      {
+        "id": "kabaresque-vii-the-cherry-dots-productions",
+        "titel": "The Cherry Dots Productions",
+        "artiesten": [
+          "kabaresque-vii"
+        ]
+      },
+      {
+        "id": "karolien-verlinden-de-formatie-en-zonzo-compagnie-re-beat",
+        "titel": "Re:Beat",
+        "artiesten": [
+          "karolien-verlinden-de-formatie-en-zonzo-compagnie"
+        ]
+      },
+      {
+        "id": "kensuke-s-kingdom-westrand-dilbeek",
+        "titel": "Kensuke's kingdom",
+        "artiesten": []
+      },
+      {
+        "id": "kleuterkampje-muziekplezier-de-spil",
+        "titel": "Kleuterkampje: muziekplezier",
+        "artiesten": []
+      },
+      {
+        "id": "koning-van-hier-theater-scala-gent",
+        "titel": "Koning van hier",
+        "artiesten": []
+      },
+      {
+        "id": "kukeleku-de-grote-boerderijshow-kapitein-winokio",
+        "titel": "Kapitein Winokio",
+        "artiesten": [
+          "kukeleku-de-grote-boerderijshow"
+        ]
+      },
+      {
+        "id": "kunst-in-zicht-mish-mash-minnen-de-warande-turnhout",
+        "titel": "Kunst in Zicht mish mash Minnen",
+        "artiesten": []
+      },
+      {
+        "id": "kunst-in-zicht-plantartica",
+        "titel": "Plantartica",
+        "artiesten": [
+          "kunst-in-zicht"
+        ]
+      },
+      {
+        "id": "lampje-9-99-westrand-dilbeek",
+        "titel": "Lampje (9-99)",
+        "artiesten": []
+      },
+      {
+        "id": "laros-en-de-jong-beeldmakerij-mis-poes",
+        "titel": "Mis Poes",
+        "artiesten": [
+          "laros-en-de-jong-beeldmakerij"
+        ]
+      },
+      {
+        "id": "lelijke-rosse-roel-steeno",
+        "titel": "Roel Steeno",
+        "artiesten": [
+          "lelijke-rosse"
+        ]
+      },
+      {
+        "id": "livia-jouan-cie-studio-t-meneer-t-8-108",
+        "titel": "Meneer T (8-108)",
+        "artiesten": [
+          "livia-jouan-cie-studio-t"
+        ]
+      },
+      {
+        "id": "loge10-stepping-out",
+        "titel": "Stepping out",
+        "artiesten": [
+          "loge10"
+        ]
+      },
+      {
+        "id": "marlies-verschueren-zwak-geslacht",
+        "titel": "Zwak geslacht",
+        "artiesten": [
+          "marlies-verschueren"
+        ]
+      },
+      {
+        "id": "mary-anning-marcel-barelli",
+        "titel": "Marcel Barelli",
+        "artiesten": [
+          "mary-anning"
+        ]
+      },
+      {
+        "id": "moortelvet-premiere-dagmar-verfaillie",
+        "titel": "Dagmar Verfaillie",
+        "artiesten": [
+          "moortelvet-premiere"
+        ]
+      },
+      {
+        "id": "nacht-8-108-westrand-dilbeek",
+        "titel": "Nacht (8-108)",
+        "artiesten": []
+      },
+      {
+        "id": "nacht-schouwburg-kortrijk",
+        "titel": "Nacht",
+        "artiesten": []
+      },
+      {
+        "id": "natalia-s-han-solo-s-comedy-cafe",
+        "titel": "Han Solo's Comedy Café",
+        "artiesten": [
+          "natalia-s"
+        ]
+      },
+      {
+        "id": "nele-bauwens-en-de-zeven-schlagers",
+        "titel": "en de Zeven Schlagers",
+        "artiesten": [
+          "nele-bauwens"
+        ]
+      },
+      {
+        "id": "neurodivergent-en-content-han-solo-s-comedy-cafe",
+        "titel": "Han Solo's Comedy Café",
+        "artiesten": [
+          "neurodivergent-en-content"
+        ]
+      },
+      {
+        "id": "ni-zievere-speile-gery-la-boule",
+        "titel": "Géry La Boule",
+        "artiesten": [
+          "ni-zievere",
+          "speile"
+        ]
+      },
+      {
+        "id": "non-stop-urbanus",
+        "titel": "Urbanus",
+        "artiesten": [
+          "non-stop"
+        ]
+      },
+      {
+        "id": "nuff-said-de-warande-turnhout",
+        "titel": "'Nuff Said",
+        "artiesten": []
+      },
+      {
+        "id": "nuff-said-schouwburg-kortrijk",
+        "titel": "'Nuff Said",
+        "artiesten": []
+      },
+      {
+        "id": "papaya-priscilla-kellen",
+        "titel": "Priscilla Kellen",
+        "artiesten": [
+          "papaya"
+        ]
+      },
+      {
+        "id": "pechvogel-steven-goegebeur",
+        "titel": "Steven Goegebeur",
+        "artiesten": [
+          "pechvogel"
+        ]
+      },
+      {
+        "id": "perfesser-gents-peter-van-haelter-tour-de-france-gand",
+        "titel": "Tour de f̶r̶a̶n̶c̶e̶ gand",
+        "artiesten": [
+          "perfesser-gents-peter-van-haelter"
+        ]
+      },
+      {
+        "id": "philippe-geubels-taboe",
+        "titel": "Taboe",
+        "artiesten": [
+          "philippe-geubels"
+        ]
+      },
+      {
+        "id": "propop-de-taartendief",
+        "titel": "De Taartendief",
+        "artiesten": [
+          "propop"
+        ]
+      },
+      {
+        "id": "quand-ca-lache-cirque-emboite",
+        "titel": "Cirque Emboîté",
+        "artiesten": [
+          "quand-ca-lache"
+        ]
+      },
+      {
+        "id": "reuskleuter-4hoog-en-het-scheldeoffensief",
+        "titel": "4Hoog & Het Scheldeoffensief",
+        "artiesten": [
+          "reuskleuter"
+        ]
+      },
+      {
+        "id": "roel-steeno-lelijke-rosse",
+        "titel": "Lelijke rosse!",
+        "artiesten": [
+          "roel-steeno"
+        ]
+      },
+      {
+        "id": "room-movedbymatter-kasper-vandenberghe",
+        "titel": "MOVEDBYMATTER / Kasper Vandenberghe",
+        "artiesten": [
+          "room"
+        ]
+      },
+      {
+        "id": "rust-roest-het-prethuis",
+        "titel": "Het Prethuis",
+        "artiesten": [
+          "rust-roest"
+        ]
+      },
+      {
+        "id": "senne-guns-senne-en-lokko-2",
+        "titel": "Senne & lokko 2",
+        "artiesten": [
+          "senne-guns"
+        ]
+      },
+      {
+        "id": "shaun-het-schaap-elke-dag-feest-seamus-malone",
+        "titel": "Seamus Malone",
+        "artiesten": [
+          "shaun-het-schaap-elke-dag-feest"
+        ]
+      },
+      {
+        "id": "sieber-marly-en-eva-de-roovere-cabaretbomtoer",
+        "titel": "CabaretBomToer",
+        "artiesten": [
+          "sieber-marly-en-eva-de-roovere"
+        ]
+      },
+      {
+        "id": "sieber-marly-mag-ik-je-papa-zijn",
+        "titel": "Mag ik je papa zijn?",
+        "artiesten": [
+          "sieber-marly"
+        ]
+      },
+      {
+        "id": "skram-kopergietery-en-grensgeval",
+        "titel": "Kopergietery & Grensgeval",
+        "artiesten": [
+          "skram"
+        ]
+      },
+      {
+        "id": "solo-thomas-van-caeneghem-zonder-lander",
+        "titel": "Thomas Van Caeneghem zonder Lander",
+        "artiesten": [
+          "solo"
+        ]
+      },
+      {
+        "id": "space-academy-maaspoort",
+        "titel": "Space Academy",
+        "artiesten": []
+      },
+      {
+        "id": "space-cadet-eric-san-kid-koala",
+        "titel": "Eric San (Kid Koala)",
+        "artiesten": [
+          "space-cadet"
+        ]
+      },
+      {
+        "id": "sprookjes-enzo-zee",
+        "titel": "Zee",
+        "artiesten": [
+          "sprookjes-enzo"
+        ]
+      },
+      {
+        "id": "steffie-de-baerdemaeker-in-mijn-hoofd-klonk-het-beter",
+        "titel": "In mijn hoofd klonk het beter",
+        "artiesten": [
+          "steffie-de-baerdemaeker"
+        ]
+      },
+      {
+        "id": "stormopkomst-dagpas-de-warande-turnhout",
+        "titel": "Stormopkomst dagpas",
+        "artiesten": []
+      },
+      {
+        "id": "stuutjes-en-cinema-de-spil",
+        "titel": "Stuutjes en cinema",
+        "artiesten": []
+      },
+      {
+        "id": "terrible-tiran-8-108-geannuleerd-frieda",
+        "titel": "Frieda",
+        "artiesten": [
+          "terrible-tiran-8-108-geannuleerd"
+        ]
+      },
+      {
+        "id": "theater-de-kroon-paniek-in-de-pietenfabriek",
+        "titel": "Paniek in de Pietenfabriek",
+        "artiesten": [
+          "theater-de-kroon"
+        ]
+      },
+      {
+        "id": "theater-froefroe-trix",
+        "titel": "Trix",
+        "artiesten": [
+          "theater-froefroe"
+        ]
+      },
+      {
+        "id": "theater-tieret-en-walrus-meneer-beer-de-terugkeer",
+        "titel": "Meneer Beer, De terugkeer",
+        "artiesten": [
+          "theater-tieret-en-walrus"
+        ]
+      },
+      {
+        "id": "theatergroep-de-kale-symen-sonder-soeticheyt",
+        "titel": "Symen sonder soeticheyt",
+        "artiesten": [
+          "theatergroep-de-kale"
+        ]
+      },
+      {
+        "id": "tony-knollt-in-concert-de-spil",
+        "titel": "Tony knollt in concert",
+        "artiesten": []
+      },
+      {
+        "id": "tout-petit-en-alfredo-zinola-productions-b-d-franje",
+        "titel": "Franje",
+        "artiesten": [
+          "tout-petit-en-alfredo-zinola-productions-b-d"
+        ]
+      },
+      {
+        "id": "uit-het-donker-vii-de-warande-turnhout",
+        "titel": "Uit het donker vii",
+        "artiesten": []
+      },
+      {
+        "id": "urbanus-stand-up",
+        "titel": "Stand-up",
+        "artiesten": [
+          "urbanus"
+        ]
+      },
+      {
+        "id": "vanwaar-we-komen-jan-van-looveren",
+        "titel": "Jan Van Looveren",
+        "artiesten": [
+          "vanwaar-we-komen"
+        ]
+      },
+      {
+        "id": "wasda-westrand-dilbeek",
+        "titel": "Wasda",
+        "artiesten": []
+      },
+      {
+        "id": "wat-ik-zeker-weet-dean-meert-en-marijn-devalck",
+        "titel": "Dean meert & marijn devalck",
+        "artiesten": [
+          "wat-ik-zeker-weet"
+        ]
+      },
+      {
+        "id": "welcome-to-the-aa-alex-agnew-en-andries-beckers",
+        "titel": "Alex Agnew & Andries Beckers",
+        "artiesten": [
+          "welcome-to-the-aa"
+        ]
+      },
+      {
+        "id": "woest-10-110-goele-denil",
+        "titel": "Goele Denil",
+        "artiesten": [
+          "woest-10-110"
+        ]
+      },
+      {
+        "id": "wouter-deprez-en-tcha-limberger-wouter-deprez-en-tcha-limberger",
+        "titel": "Wouter Deprez & Tcha Limberger",
+        "artiesten": [
+          "wouter-deprez-en-tcha-limberger"
+        ]
       }
     ]
   },
@@ -756,12 +1853,12 @@
     },
     {
       "datum": "2026-11-09",
-      "speeldata": 8940,
-      "komend": 8328,
-      "artiesten": 831,
-      "zalen": 695,
-      "plaatsen": 486,
-      "voorstellingen": 1240
+      "speeldata": 9103,
+      "komend": 8491,
+      "artiesten": 912,
+      "zalen": 697,
+      "plaatsen": 487,
+      "voorstellingen": 1347
     }
   ]
 }

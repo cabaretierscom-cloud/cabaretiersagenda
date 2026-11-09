@@ -39,6 +39,14 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "a-ventura-silent-disco-theater-de-grote-gameshow",
+    "titel": "De Grote Gameshow",
+    "artiesten": [
+      "a-ventura-silent-disco-theater"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "aai-poesje-elfie-tromp-doet-cabaret",
     "titel": "Elfie Tromp doet cabaret",
     "artiesten": [
@@ -380,11 +388,27 @@
     ]
   },
   {
+    "id": "an-nelissen-tournee-jubilee-de-fomomonoloog",
+    "titel": "Tournée jubilée – de fomomonoloog",
+    "artiesten": [
+      "an-nelissen"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "anansi-de-spin-en-de-gulzige-tijger-onderdeel-van-het-peuterfestival-theater-de-kampanje",
     "titel": "Anansi de Spin en de Gulzige Tijger onderdeel van het Peuterfestival",
     "artiesten": [],
     "genre": "kindervoorstellingen",
     "theater": "theater-de-kampanje"
+  },
+  {
+    "id": "anders-dromen-we-met-de-dromedarissen-jan-sobrie",
+    "titel": "Jan Sobrie",
+    "artiesten": [
+      "anders-dromen-we-met-de-dromedarissen"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "andre-kuipers-en-kamerata-zuid-stadsschouwburg-nijmegen",
@@ -507,6 +531,22 @@
     "titel": "Ich bin Andy, Meister!",
     "artiesten": [
       "andy-marcelissen"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "angelina-sibran-sampers",
+    "titel": "Sibran Sampers",
+    "artiesten": [
+      "angelina"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "angst-te-koop-weg-wegens-nieuwe-hobby-thomas-smith",
+    "titel": "Thomas Smith",
+    "artiesten": [
+      "angst-te-koop-weg-wegens-nieuwe-hobby"
     ],
     "genre": "cabaret"
   },
@@ -795,7 +835,10 @@
     "artiesten": [
       "bas-birker"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up",
+    "ookGenres": [
+      "cabaret"
+    ]
   },
   {
     "id": "bassfest-junior-2026-theater-zuidplein",
@@ -965,6 +1008,14 @@
       "bettina-holwerda"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "between-us-the-ruggeds-nl",
+    "titel": "The Ruggeds (Nl)",
+    "artiesten": [
+      "between-us"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "beuk-kim-van-zeben-en-rogier-in-t-hout",
@@ -1193,6 +1244,13 @@
     "theater": "stadsschouwburg-nijmegen"
   },
   {
+    "id": "bonte-avonden-de-spil",
+    "titel": "Bonte Avonden",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "de-spil"
+  },
+  {
     "id": "bonte-hond-wauw",
     "titel": "Wauw",
     "artiesten": [
@@ -1288,6 +1346,14 @@
     ]
   },
   {
+    "id": "broder-niels",
+    "titel": "Niels",
+    "artiesten": [
+      "broder"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "broeders-van-andere-moeders-comedy-zonder-script-improvisatietheater",
     "titel": "Comedy zonder script - Improvisatietheater",
     "artiesten": [
@@ -1308,6 +1374,14 @@
     "titel": "Bos",
     "artiesten": [
       "bronks-en-bos"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "bronks-en-compagnie-tea-tree-antes-de",
+    "titel": "Antes de...",
+    "artiesten": [
+      "bronks-en-compagnie-tea-tree"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -1579,6 +1653,14 @@
     "theater": "comedy-cafe-amsterdam"
   },
   {
+    "id": "chromatique-louise-baduel",
+    "titel": "Louise Baduel",
+    "artiesten": [
+      "chromatique"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "chuckle-up-in-english-comedy-club-haug-rotterdam",
     "titel": "Chuckle-Up! in English",
     "artiesten": [],
@@ -1607,6 +1689,14 @@
       "clara-zoerbier-jack-vinders"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "claudette-6-106-cie-balancetoi",
+    "titel": "Cie Balancetoi",
+    "artiesten": [
+      "claudette-6-106"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "claudia-de-breij-oudejaarsconference-2026",
@@ -1676,6 +1766,30 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "hertz-tivoli-vredenburg-utrecht"
+  },
+  {
+    "id": "comedy-club-2-met-joost-van-hyfte",
+    "titel": "met Joost Van Hyfte",
+    "artiesten": [
+      "comedy-club-2"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "comedy-club-2-met-kjen-descheemaecker",
+    "titel": "met Kjen Descheemaecker",
+    "artiesten": [
+      "comedy-club-2"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "comedy-club-2-met-raf-coppens-en-nigel-williams",
+    "titel": "met Raf Coppens en Nigel Williams",
+    "artiesten": [
+      "comedy-club-2"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "comedy-club-almere-comedy-club-almere",
@@ -1949,12 +2063,27 @@
     "genre": "cabaret"
   },
   {
+    "id": "compagnie-barbarie-bronks-en-de-studio-wa-wilder-man",
+    "titel": "Wa Wilder Man",
+    "artiesten": [
+      "compagnie-barbarie-bronks-en-de-studio"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "compagnie-par-terre-anne-nguyen-fr-witch-hunting",
     "titel": "Witch Hunting",
     "artiesten": [
       "compagnie-par-terre-anne-nguyen-fr"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "compagnie-van-de-leute-minardschouwburg-gent",
+    "titel": "Compagnie van de leute",
+    "artiesten": [],
+    "genre": "komedie",
+    "theater": "minardschouwburg-gent"
   },
   {
     "id": "controle-155-maas",
@@ -2191,6 +2320,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "ddt-houdt-uitverkoop-feat-jacques-vermeire-ddt",
+    "titel": "Ddt",
+    "artiesten": [
+      "ddt-houdt-uitverkoop-feat-jacques-vermeire"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "de-bende-van-de-witte-roos-de-nieuwe-kolk",
     "titel": "De Bende Van De Witte Roos",
     "artiesten": [],
@@ -2245,6 +2382,14 @@
     "theater": "theater-het-speelhuis"
   },
   {
+    "id": "de-canadeise-meur-brussels-volkstejoeter",
+    "titel": "Brussels Volkstejoêter",
+    "artiesten": [
+      "de-canadeise-meur"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "de-circusbroers-delamar",
     "titel": "De Circusbroers",
     "artiesten": [],
@@ -2288,6 +2433,21 @@
       "de-fantasie-compagnie"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "de-feestfabriek-de-warande-turnhout",
+    "titel": "De feestfabriek",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "de-warande-turnhout"
+  },
+  {
+    "id": "de-frivole-framboos-finalementhee",
+    "titel": "Finalementhee",
+    "artiesten": [
+      "de-frivole-framboos"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "de-gele-duikmachine-the-beatles-voor-kinderen",
@@ -2427,6 +2587,22 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "de-kombak-manmanman",
+    "titel": "Manmanman",
+    "artiesten": [
+      "de-kombak"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "de-laatste-boom-laika-michai-geyzen",
+    "titel": "Laika / Michai Geyzen",
+    "artiesten": [
+      "de-laatste-boom"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "de-limburgse-buuttecup-stichting-buutte-cultuur-limburg",
     "titel": "Stichting Buutte Cultuur Limburg",
     "artiesten": [
@@ -2558,14 +2734,6 @@
     "genre": "kindervoorstellingen"
   },
   {
-    "id": "de-nog-grotere-slijmmusical-de-nog-grotere-slijmmusical",
-    "titel": "De Nog Grotere Slijmmusical",
-    "artiesten": [
-      "de-nog-grotere-slijmmusical"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
     "id": "de-nog-grotere-slijmmusical-slijm-is-terug",
     "titel": "Slijm is terug!",
     "artiesten": [
@@ -2580,6 +2748,13 @@
       "de-notenkraker"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "de-plaats-die-ik-inneem-de-warande-turnhout",
+    "titel": "De plaats die ik inneem",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "de-warande-turnhout"
   },
   {
     "id": "de-poes-van-usi-loes-joshua-timisela",
@@ -2629,6 +2804,14 @@
     "genre": "komedie"
   },
   {
+    "id": "de-spiegel-battoe",
+    "titel": "Battoe",
+    "artiesten": [
+      "de-spiegel"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "de-staat-van-verwarring-comedyhuis-utrecht",
     "titel": "De Staat van Verwarring",
     "artiesten": [],
@@ -2640,6 +2823,14 @@
     "titel": "Uit de Doeken",
     "artiesten": [
       "de-stilte"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "de-super-elfkins-ute-von-munchow-pohl",
+    "titel": "Ute von Münchow-Pohl",
+    "artiesten": [
+      "de-super-elfkins"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -2881,6 +3072,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "dj-loebas-piv-huvluv",
+    "titel": "Piv Huvluv",
+    "artiesten": [
+      "dj-loebas"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "djumabala-oorkaan-en-vernon-chatlein",
     "titel": "Oorkaan & Vernon Chatlein",
     "artiesten": [
@@ -2978,6 +3177,13 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "dood-hoezo-dood-westrand-dilbeek",
+    "titel": "DOOD hoezo DOOD",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "westrand-dilbeek"
+  },
+  {
     "id": "dorine-wiersma-gaandeweg",
     "titel": "Gaandeweg",
     "artiesten": [
@@ -3047,6 +3253,14 @@
       "drumdrumdrum"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "dubbel-troef-yannick-noben-en-maarten-d-haene",
+    "titel": "Yannick Noben en Maarten D’Haene",
+    "artiesten": [
+      "dubbel-troef"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "dubieuze-avond-feestdageneditie-comedyhuis-utrecht",
@@ -3172,6 +3386,14 @@
       "editie-54"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "edouard-de-prez-9-jaar-palaver-live",
+    "titel": "9 jaar palaver live",
+    "artiesten": [
+      "edouard-de-prez"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "eeftink-en-neimeijer-niets-menselijks-is-ons-vreemd",
@@ -3495,6 +3717,21 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "familiedag-sint-westrand-dilbeek",
+    "titel": "FamilieDag SINT",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "westrand-dilbeek"
+  },
+  {
+    "id": "farce-majeure-michael-van-peel",
+    "titel": "Michael Van Peel",
+    "artiesten": [
+      "farce-majeure"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "fatu-late-night-joel-gideon-rene-van-meurs-en-bugra-gedik",
     "titel": "Joël Gideon, René Van Meurs & Buğra Gedik",
     "artiesten": [
@@ -3649,6 +3886,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "frames-alexander-vantournhout-not-standing",
+    "titel": "Alexander Vantournhout / Not Standing",
+    "artiesten": [
+      "frames"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "franciscus-de-familiemusical-koemi",
     "titel": "Koemi",
     "artiesten": [
@@ -3766,11 +4011,26 @@
     "theater": "theater-heerlen"
   },
   {
+    "id": "gen-z-han-solo-s-comedy-cafe",
+    "titel": "Han Solo's Comedy Café",
+    "artiesten": [
+      "gen-z"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "gent-en-espanol-2-comedia-stand-up-en-tu-idioma-amai-comedy-club-gent",
     "titel": "Gent en Español #2 - Comedia stand-up en tu idioma",
     "artiesten": [],
     "genre": "stand-up",
     "theater": "amai-comedy-club-gent"
+  },
+  {
+    "id": "gents-stroppentheater-minardschouwburg-gent",
+    "titel": "Gents stroppentheater",
+    "artiesten": [],
+    "genre": "komedie",
+    "theater": "minardschouwburg-gent"
   },
   {
     "id": "george-tobal-producties-en-de-krakeling-samar-en-de-bange-koning",
@@ -3841,7 +4101,7 @@
     "artiesten": [
       "gili"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "gilian-de-vries-wat-wil-ik",
@@ -3916,6 +4176,13 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "goat-droom-groots-westrand-dilbeek",
+    "titel": "GOAT: Droom Groots",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "westrand-dilbeek"
   },
   {
     "id": "greg-shapiro-king-me-250-years-of-donald-trump",
@@ -4053,7 +4320,7 @@
     "artiesten": [
       "gunter-lamoot"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "gunter-lamoot-stand-up",
@@ -4169,6 +4436,14 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "helios-theater-de-fruh-stuck",
+    "titel": "Früh Stück",
+    "artiesten": [
+      "helios-theater-de"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "helligen-hendrik-helligen-hendrik",
     "titel": "Helligen Hendrik",
     "artiesten": [
@@ -4190,7 +4465,7 @@
     "artiesten": [
       "henk-rijckaert"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "henry-van-loon-keanu",
@@ -4227,6 +4502,14 @@
       "hermes-ahmadi"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "het-farcetheater-de-tante-van-charlie",
+    "titel": "De tante van charlie",
+    "artiesten": [
+      "het-farcetheater"
+    ],
+    "genre": "komedie"
   },
   {
     "id": "het-filiaal-de-jongen-die-van-de-wereld-hield",
@@ -4488,6 +4771,14 @@
     "genre": "komedie"
   },
   {
+    "id": "hetpaleis-en-abattoir-ferme-castl",
+    "titel": "Castl",
+    "artiesten": [
+      "hetpaleis-en-abattoir-ferme"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "hetpaleis-en-rocky-femke-heijens-en-marieke-dilles-hugs",
     "titel": "Hugs",
     "artiesten": [
@@ -4500,6 +4791,30 @@
     "titel": "Hugs",
     "artiesten": [
       "hetpaleis"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "hetpaleis-kim-karssen-en-hendrik-kegels-oh-oh-oh-dennenboom",
+    "titel": "Oh oh oh dennenboom",
+    "artiesten": [
+      "hetpaleis-kim-karssen-en-hendrik-kegels"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "hetpaleis-theater-artemis-en-het-zuidelijk-toneel-jetse-batelaan-nu-is-het-nog-r",
+    "titel": "Nu is het nog rustig",
+    "artiesten": [
+      "hetpaleis-theater-artemis-en-het-zuidelijk-toneel-jetse-batelaan"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "hetpaleis-wolf-wolf-eindeloos-verhaal-10-110",
+    "titel": "Eindeloos Verhaal (10-110)",
+    "artiesten": [
+      "hetpaleis-wolf-wolf"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -4698,6 +5013,22 @@
     "theater": "amai-comedy-club-gent"
   },
   {
+    "id": "in-eigen-nat-blafwaf",
+    "titel": "Blafwaf",
+    "artiesten": [
+      "in-eigen-nat"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "in-t-westvlams-wouter-deprez-en-tcha-limberger",
+    "titel": "Wouter Deprez & Tcha Limberger",
+    "artiesten": [
+      "in-t-westvlams"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "international-comedy-showcase-kartoffel-utrecht",
     "titel": "International Comedy Showcase",
     "artiesten": [],
@@ -4743,6 +5074,22 @@
       "ivo-graham"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "jacques-vermeire-comedyshows-presenteert",
+    "titel": "Comedyshows presenteert:",
+    "artiesten": [
+      "jacques-vermeire"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "jacques-vermeire-ddt-jacques-vermeire",
+    "titel": "DDT (Jacques Vermeire)",
+    "artiesten": [
+      "jacques-vermeire"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "jade-mintjens-bedankt-om-te-komen",
@@ -5126,6 +5473,14 @@
     ]
   },
   {
+    "id": "johannes-verschaeve-johannes-is-zijn-naam-democrazy",
+    "titel": "Johannes is zijn naam (democrazy)",
+    "artiesten": [
+      "johannes-verschaeve"
+    ],
+    "genre": "kleinkunst"
+  },
+  {
     "id": "johnny-de-mol-goed-dat-jij-bestaat",
     "titel": "Goed dat jij bestaat!",
     "artiesten": [
@@ -5281,6 +5636,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "jupi-deschonecompanie-en-il-gardellino",
+    "titel": "DESCHONECOMPANIE & Il Gardellino",
+    "artiesten": [
+      "jupi"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "k3-show-superhelden",
     "titel": "Superhelden",
     "artiesten": [
@@ -5301,6 +5664,14 @@
     "titel": "Breekbare Mensen",
     "artiesten": [
       "kaaskop-en-van-vleuten"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "kabaresque-vii-the-cherry-dots-productions",
+    "titel": "The Cherry Dots Productions",
+    "artiesten": [
+      "kabaresque-vii"
     ],
     "genre": "cabaret"
   },
@@ -5383,6 +5754,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "karolien-verlinden-de-formatie-en-zonzo-compagnie-re-beat",
+    "titel": "Re:Beat",
+    "artiesten": [
+      "karolien-verlinden-de-formatie-en-zonzo-compagnie"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "kasper-van-der-laan-ruim",
     "titel": "Ruim",
     "artiesten": [
@@ -5425,6 +5804,13 @@
       "kees-van-amstel"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "kensuke-s-kingdom-westrand-dilbeek",
+    "titel": "Kensuke's kingdom",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "westrand-dilbeek"
   },
   {
     "id": "kevin-bridges-here-if-you-need-me",
@@ -5763,6 +6149,13 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "kleuterkampje-muziekplezier-de-spil",
+    "titel": "Kleuterkampje: muziekplezier",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "de-spil"
+  },
+  {
     "id": "klub-karmijn-nee-jouw-kop-is-kermis",
     "titel": "Nee, jouw kop is kermis",
     "artiesten": [
@@ -5827,6 +6220,13 @@
     ]
   },
   {
+    "id": "koning-van-hier-theater-scala-gent",
+    "titel": "Koning van hier",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "theater-scala-gent"
+  },
+  {
     "id": "kor-hoebe-korrelatie",
     "titel": "Korrelatie",
     "artiesten": [
@@ -5883,6 +6283,29 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "kukeleku-de-grote-boerderijshow-kapitein-winokio",
+    "titel": "Kapitein Winokio",
+    "artiesten": [
+      "kukeleku-de-grote-boerderijshow"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "kunst-in-zicht-mish-mash-minnen-de-warande-turnhout",
+    "titel": "Kunst in Zicht mish mash Minnen",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "de-warande-turnhout"
+  },
+  {
+    "id": "kunst-in-zicht-plantartica",
+    "titel": "Plantartica",
+    "artiesten": [
+      "kunst-in-zicht"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "lachen-in-backstage-nationaal-theaterweekend",
     "titel": "Nationaal Theaterweekend",
     "artiesten": [
@@ -5902,6 +6325,21 @@
     "titel": "De Laatste Boom",
     "artiesten": [
       "laika"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "lampje-9-99-westrand-dilbeek",
+    "titel": "Lampje (9-99)",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "westrand-dilbeek"
+  },
+  {
+    "id": "laros-en-de-jong-beeldmakerij-mis-poes",
+    "titel": "Mis Poes",
+    "artiesten": [
+      "laros-en-de-jong-beeldmakerij"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -5982,6 +6420,14 @@
       "lejo-kerstshow"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "lelijke-rosse-roel-steeno",
+    "titel": "Roel Steeno",
+    "artiesten": [
+      "lelijke-rosse"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "leo-en-marius-blokhuis-father-en-son",
@@ -6168,6 +6614,22 @@
       "live-in-rotterdam"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "livia-jouan-cie-studio-t-meneer-t-8-108",
+    "titel": "Meneer T (8-108)",
+    "artiesten": [
+      "livia-jouan-cie-studio-t"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "loge10-stepping-out",
+    "titel": "Stepping out",
+    "artiesten": [
+      "loge10"
+    ],
+    "genre": "komedie"
   },
   {
     "id": "lonne-gosling-morgen-weer-een-dag",
@@ -6550,6 +7012,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "marlies-verschueren-zwak-geslacht",
+    "titel": "Zwak geslacht",
+    "artiesten": [
+      "marlies-verschueren"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "marlijn-weerdenburg-geworteld",
     "titel": "Geworteld",
     "artiesten": [
@@ -6624,6 +7094,14 @@
       "martijn-koning"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "mary-anning-marcel-barelli",
+    "titel": "Marcel Barelli",
+    "artiesten": [
+      "mary-anning"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "masters-of-comedy-bij-southend-comedy-club-amsterdam-southend-comedy-club",
@@ -7056,6 +7534,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "moortelvet-premiere-dagmar-verfaillie",
+    "titel": "Dagmar Verfaillie",
+    "artiesten": [
+      "moortelvet-premiere"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "morgan-jay-stadsschouwburg-antwerpen",
     "titel": "Morgan Jay",
     "artiesten": [],
@@ -7181,6 +7667,20 @@
     "genre": "cabaret"
   },
   {
+    "id": "nacht-8-108-westrand-dilbeek",
+    "titel": "Nacht (8-108)",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "westrand-dilbeek"
+  },
+  {
+    "id": "nacht-schouwburg-kortrijk",
+    "titel": "Nacht",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "schouwburg-kortrijk"
+  },
+  {
     "id": "nacht-van-het-cabaret-theater-de-veste",
     "titel": "Nacht van het Cabaret",
     "artiesten": [],
@@ -7234,6 +7734,14 @@
       "nat-theaterweekend"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "natalia-s-han-solo-s-comedy-cafe",
+    "titel": "Han Solo's Comedy Café",
+    "artiesten": [
+      "natalia-s"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "nathalie-baartman-de-bossels-van-baartman-ii",
@@ -7298,12 +7806,12 @@
     "theater": "comedyhuis-utrecht"
   },
   {
-    "id": "nele-bauwens-nele-bauwens",
-    "titel": "Nele Bauwens",
+    "id": "nele-bauwens-en-de-zeven-schlagers",
+    "titel": "en de Zeven Schlagers",
     "artiesten": [
       "nele-bauwens"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "nesim-el-ahmadi-iedereen-komt-aan-de-beurt-try-out",
@@ -7322,6 +7830,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "neurodivergent-en-content-han-solo-s-comedy-cafe",
+    "titel": "Han Solo's Comedy Café",
+    "artiesten": [
+      "neurodivergent-en-content"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "neus-krulmuziek",
     "titel": "Krulmuziek",
     "artiesten": [
@@ -7334,6 +7850,15 @@
     "titel": "Legende van de witte slang",
     "artiesten": [
       "nhung-dam"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "ni-zievere-speile-gery-la-boule",
+    "titel": "Géry La Boule",
+    "artiesten": [
+      "ni-zievere",
+      "speile"
     ],
     "genre": "cabaret"
   },
@@ -7447,6 +7972,14 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "non-stop-urbanus",
+    "titel": "Urbanus",
+    "artiesten": [
+      "non-stop"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "noord-hollandse-comedy-show-schouwburg-het-park",
     "titel": "Noord-Hollandse Comedy Show",
     "artiesten": [],
@@ -7475,6 +8008,20 @@
     "artiesten": [],
     "genre": "kindervoorstellingen",
     "theater": "theater-aan-de-parade"
+  },
+  {
+    "id": "nuff-said-de-warande-turnhout",
+    "titel": "'Nuff Said",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "de-warande-turnhout"
+  },
+  {
+    "id": "nuff-said-schouwburg-kortrijk",
+    "titel": "'Nuff Said",
+    "artiesten": [],
+    "genre": "cabaret",
+    "theater": "schouwburg-kortrijk"
   },
   {
     "id": "nuff-said-theater-zuidplein",
@@ -7683,6 +8230,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "papaya-priscilla-kellen",
+    "titel": "Priscilla Kellen",
+    "artiesten": [
+      "papaya"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "pat-moore-pat-moore",
     "titel": "Pat Moore",
     "artiesten": [
@@ -7767,6 +8322,14 @@
     ]
   },
   {
+    "id": "pechvogel-steven-goegebeur",
+    "titel": "Steven Goegebeur",
+    "artiesten": [
+      "pechvogel"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "pepijn-schoneveld-welkom-dat-je-luistert",
     "titel": "Welkom dat je luistert",
     "artiesten": [
@@ -7820,6 +8383,14 @@
       "percossa-nl"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "perfesser-gents-peter-van-haelter-tour-de-france-gand",
+    "titel": "Tour de f̶r̶a̶n̶c̶e̶ gand",
+    "artiesten": [
+      "perfesser-gents-peter-van-haelter"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "pernille-haaland-pernille-haaland",
@@ -7954,6 +8525,14 @@
     "theater": "comedyhuis-utrecht"
   },
   {
+    "id": "philippe-geubels-taboe",
+    "titel": "Taboe",
+    "artiesten": [
+      "philippe-geubels"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "philzuid-het-laagland-en-sally-dansgezelschap-maastricht-stiltestorm",
     "titel": "Stiltestorm",
     "artiesten": [
@@ -8084,6 +8663,9 @@
         "citaat": "Pieter Verelst bewijst opnieuw tot de strafste cabaretiers van Vlaanderen te behoren: een show die tegelijk bulderlach, chaos en ontroering serveert.",
         "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/altijd-aan-pieter-verelst"
       }
+    ],
+    "ookGenres": [
+      "stand-up"
     ]
   },
   {
@@ -8315,6 +8897,22 @@
     "genre": "stand-up"
   },
   {
+    "id": "propop-de-taartendief",
+    "titel": "De Taartendief",
+    "artiesten": [
+      "propop"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "quand-ca-lache-cirque-emboite",
+    "titel": "Cirque Emboîté",
+    "artiesten": [
+      "quand-ca-lache"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "quickfire-comedy-battle-comedyhuis-utrecht",
     "titel": "Quickfire Comedy Battle",
     "artiesten": [],
@@ -8506,6 +9104,14 @@
     "titel": "Jazz Orchestra of the Concertgebouw All-Stars",
     "artiesten": [
       "retteketet-zo-klinkt-de-trompet"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "reuskleuter-4hoog-en-het-scheldeoffensief",
+    "titel": "4Hoog & Het Scheldeoffensief",
+    "artiesten": [
+      "reuskleuter"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -8718,6 +9324,14 @@
     ]
   },
   {
+    "id": "roel-steeno-lelijke-rosse",
+    "titel": "Lelijke rosse!",
+    "artiesten": [
+      "roel-steeno"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "roger-lataster-en-raymond-clement-premiere-de-graaf-van-swalpenziele",
     "titel": "Première (De graaf van Swalpenziële)",
     "artiesten": [
@@ -8838,6 +9452,14 @@
     ]
   },
   {
+    "id": "room-movedbymatter-kasper-vandenberghe",
+    "titel": "MOVEDBYMATTER / Kasper Vandenberghe",
+    "artiesten": [
+      "room"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "rosa-doornenbal-to-believe-in-magic",
     "titel": "To Believe In Magic",
     "artiesten": [
@@ -8851,7 +9473,7 @@
     "artiesten": [
       "rosalie-custers"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "roue-verveer-peter-van-ewijk-dubbelcabaret",
@@ -8894,6 +9516,14 @@
     "titel": "Wagyu",
     "artiesten": [
       "rundfunk"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "rust-roest-het-prethuis",
+    "titel": "Het Prethuis",
+    "artiesten": [
+      "rust-roest"
     ],
     "genre": "cabaret"
   },
@@ -9122,6 +9752,14 @@
     ]
   },
   {
+    "id": "senne-guns-senne-en-lokko-2",
+    "titel": "Senne & lokko 2",
+    "artiesten": [
+      "senne-guns"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "seppe-toremans-stand-up",
     "titel": "Stand-up",
     "artiesten": [
@@ -9158,6 +9796,30 @@
     "titel": "Nieuw Programma",
     "artiesten": [
       "sezgin-gulec"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "shaun-het-schaap-elke-dag-feest-seamus-malone",
+    "titel": "Seamus Malone",
+    "artiesten": [
+      "shaun-het-schaap-elke-dag-feest"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "sieber-marly-en-eva-de-roovere-cabaretbomtoer",
+    "titel": "CabaretBomToer",
+    "artiesten": [
+      "sieber-marly-en-eva-de-roovere"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "sieber-marly-mag-ik-je-papa-zijn",
+    "titel": "Mag ik je papa zijn?",
+    "artiesten": [
+      "sieber-marly"
     ],
     "genre": "cabaret"
   },
@@ -9270,6 +9932,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "skram-kopergietery-en-grensgeval",
+    "titel": "Kopergietery & Grensgeval",
+    "artiesten": [
+      "skram"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "slodde-en-vos-slodde-en-vos-in-winter-wonderland",
     "titel": "SlodDe & VoS in Winter Wonderland",
     "artiesten": [
@@ -9291,6 +9961,14 @@
       "sofie-hagen"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "solo-thomas-van-caeneghem-zonder-lander",
+    "titel": "Thomas Van Caeneghem zonder Lander",
+    "artiesten": [
+      "solo"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "sonnevanck-en-dieheleding-prins-panter",
@@ -9348,10 +10026,25 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "space-academy-maaspoort",
+    "titel": "Space Academy",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "maaspoort"
+  },
+  {
     "id": "space-academy-missie-maan",
     "titel": "Missie Maan",
     "artiesten": [
       "space-academy"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "space-cadet-eric-san-kid-koala",
+    "titel": "Eric San (Kid Koala)",
+    "artiesten": [
+      "space-cadet"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -9361,6 +10054,14 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedytrain-nieuwe-toomler-amsterdam"
+  },
+  {
+    "id": "sprookjes-enzo-zee",
+    "titel": "Zee",
+    "artiesten": [
+      "sprookjes-enzo"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "spruijt-en-opperman-altijdloos",
@@ -9463,6 +10164,14 @@
     ]
   },
   {
+    "id": "steffie-de-baerdemaeker-in-mijn-hoofd-klonk-het-beter",
+    "titel": "In mijn hoofd klonk het beter",
+    "artiesten": [
+      "steffie-de-baerdemaeker"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "stel-the-show-goes-on",
     "titel": "The Show Goes On",
     "artiesten": [
@@ -9533,6 +10242,13 @@
       "stichting-upon-a-dream-creations"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "stormopkomst-dagpas-de-warande-turnhout",
+    "titel": "Stormopkomst dagpas",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "de-warande-turnhout"
   },
   {
     "id": "strijkersensemble-waterviool-e-a-concertzaal-tilburg",
@@ -9620,6 +10336,13 @@
       "stuiterstokken"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "stuutjes-en-cinema-de-spil",
+    "titel": "Stuutjes en cinema",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "de-spil"
   },
   {
     "id": "sven-de-ridder-fokke-van-der-meulen-een-verrassende-gast-be-de-moppenkoning",
@@ -9724,6 +10447,22 @@
     "artiesten": [],
     "genre": "kindervoorstellingen",
     "theater": "cc-de-schakel"
+  },
+  {
+    "id": "terrible-tiran-8-108-geannuleerd-frieda",
+    "titel": "Frieda",
+    "artiesten": [
+      "terrible-tiran-8-108-geannuleerd"
+    ],
+    "genre": "kindervoorstellingen",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Recensie X tot de zoveelste (8+) door Compagnie Frieda",
+        "bron": "https://www.westrand.be/programma/terrible-tiran-8-108-geannuleerd-mcyl"
+      }
+    ]
   },
   {
     "id": "terwijl-we-sliepen-judith-nab",
@@ -9931,6 +10670,22 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "theater-de-kroon-paniek-in-de-pietenfabriek",
+    "titel": "Paniek in de Pietenfabriek",
+    "artiesten": [
+      "theater-de-kroon"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "theater-froefroe-trix",
+    "titel": "Trix",
+    "artiesten": [
+      "theater-froefroe"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "theater-sonnevanck-dieheleding-prins-panter",
     "titel": "Prins Panter",
     "artiesten": [
@@ -10041,6 +10796,14 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "theater-tieret-en-walrus-meneer-beer-de-terugkeer",
+    "titel": "Meneer Beer, De terugkeer",
+    "artiesten": [
+      "theater-tieret-en-walrus"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "theatercompagnie-de-kroon-paniek-in-de-pietenfabriek",
     "titel": "Paniek in de Pietenfabriek",
     "artiesten": [
@@ -10062,6 +10825,14 @@
     "artiesten": [],
     "genre": "kindervoorstellingen",
     "theater": "schouwburg-hengelo"
+  },
+  {
+    "id": "theatergroep-de-kale-symen-sonder-soeticheyt",
+    "titel": "Symen sonder soeticheyt",
+    "artiesten": [
+      "theatergroep-de-kale"
+    ],
+    "genre": "komedie"
   },
   {
     "id": "theatergroep-knars-stampvoeten-op-tafel",
@@ -10397,11 +11168,26 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "tony-knollt-in-concert-de-spil",
+    "titel": "Tony knollt in concert",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "de-spil"
+  },
+  {
     "id": "toonmoment-comedyschrijfreeks-amai-comedy-club-gent",
     "titel": "Toonmoment Comedyschrijfreeks",
     "artiesten": [],
     "genre": "stand-up",
     "theater": "amai-comedy-club-gent"
+  },
+  {
+    "id": "tout-petit-en-alfredo-zinola-productions-b-d-franje",
+    "titel": "Franje",
+    "artiesten": [
+      "tout-petit-en-alfredo-zinola-productions-b-d"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "trevor-wallace-trevor-wallace",
@@ -10471,6 +11257,21 @@
       "twinkel-twinkel-kleine-ster"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "uit-het-donker-vii-de-warande-turnhout",
+    "titel": "Uit het donker vii",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "de-warande-turnhout"
+  },
+  {
+    "id": "urbanus-stand-up",
+    "titel": "Stand-up",
+    "artiesten": [
+      "urbanus"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "utrechts-international-comedy-festival-freedom-is-no-joke-2027",
@@ -10597,6 +11398,14 @@
         "bron": "https://www.theaterzuidplein.nl/agenda/anansi-de-spin-en-de-gulzige-tijger-4-nr5g"
       }
     ]
+  },
+  {
+    "id": "vanwaar-we-komen-jan-van-looveren",
+    "titel": "Jan Van Looveren",
+    "artiesten": [
+      "vanwaar-we-komen"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "veenendaal-lacht-comedy-night-theater-lampegiet",
@@ -10792,6 +11601,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "wasda-westrand-dilbeek",
+    "titel": "Wasda",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "westrand-dilbeek"
+  },
+  {
     "id": "wat-alleen-wij-weten-cc-de-schakel",
     "titel": "Wat alleen wij weten",
     "artiesten": [],
@@ -10804,6 +11620,14 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "cc-de-schakel"
+  },
+  {
+    "id": "wat-ik-zeker-weet-dean-meert-en-marijn-devalck",
+    "titel": "Dean meert & marijn devalck",
+    "artiesten": [
+      "wat-ik-zeker-weet"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "we-saw-that-gbemi-oladipo-en-andrew-mensah",
@@ -10836,6 +11660,14 @@
       "weg-ermee"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "welcome-to-the-aa-alex-agnew-en-andries-beckers",
+    "titel": "Alex Agnew & Andries Beckers",
+    "artiesten": [
+      "welcome-to-the-aa"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "wie-is-het-theater-lampegiet",
@@ -10989,6 +11821,14 @@
     "theater": "comedyhuis-utrecht"
   },
   {
+    "id": "woest-10-110-goele-denil",
+    "titel": "Goele Denil",
+    "artiesten": [
+      "woest-10-110"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "woest-sally",
     "titel": "Sally",
     "artiesten": [
@@ -11050,6 +11890,14 @@
     "artiesten": [],
     "genre": "cabaret",
     "theater": "cc-de-schakel"
+  },
+  {
+    "id": "wouter-deprez-en-tcha-limberger-wouter-deprez-en-tcha-limberger",
+    "titel": "Wouter Deprez & Tcha Limberger",
+    "artiesten": [
+      "wouter-deprez-en-tcha-limberger"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "wouter-deprez-wouter-deprez",

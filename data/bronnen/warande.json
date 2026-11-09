@@ -1,0 +1,483 @@
+{
+  "bron": "warande",
+  "naam": "De Warande",
+  "opgehaald": "2026-11-09",
+  "theaters": [
+    {
+      "id": "de-warande-turnhout",
+      "naam": "De Warande",
+      "plaats": "Turnhout",
+      "land": "BE",
+      "soort": "theater",
+      "website": "https://www.warande.be"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Kunst in Zicht"
+      ],
+      "titel": "mish mash Minnen (9+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/kunst-in-zicht-dc89"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Propop"
+      ],
+      "titel": "De Taartendief (2,5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/propop-65fb"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "De Frivole Framboos"
+      ],
+      "titel": "Finalementhee",
+      "genre": "stand-up",
+      "datum": "2026-11-20",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/de-frivole-framboos-df19"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag ik even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-11-21",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/kamal-kharmach-bnrd"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag ik even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-11-22",
+      "tijd": "16:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/kamal-kharmach-bnrd"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag ik even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-11-22",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/kamal-kharmach-bnrd"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Grof Geschud"
+      ],
+      "titel": "Vieren",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/grof-geschud-1s6r"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [],
+      "titel": "De feestfabriek (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/de-feestfabriek-6-n7bf"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Expeditie Expo"
+      ],
+      "titel": "Interactieve rondleiding voor gezinnen",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "13:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/expeditie-expo-q27t"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Expeditie Expo"
+      ],
+      "titel": "Interactieve rondleiding voor gezinnen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "14:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/expeditie-expo-q27t"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Expeditie Expo"
+      ],
+      "titel": "Interactieve rondleiding voor gezinnen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "14:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/expeditie-expo-q27t"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "hetpaleis/Kim Karssen & Hendrik kegels"
+      ],
+      "titel": "Oh oh oh dennenboom (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/hetpaleis-kim-karssen-hendrik-kegels-f16q"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Jan Jaap van der Wal"
+      ],
+      "titel": "Amor Fati - 10 jaar in Vlaanderen",
+      "genre": "stand-up",
+      "datum": "2027-01-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/jan-jaap-van-der-wal-q7ct"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [],
+      "titel": "Uit het donker vii",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-04",
+      "tijd": "17:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/uit-het-donker-vii-zmh4"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [],
+      "titel": "Uit het donker vii",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-05",
+      "tijd": "17:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/uit-het-donker-vii-zmh4"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [],
+      "titel": "Uit het donker vii",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-05",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/uit-het-donker-vii-zmh4"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [],
+      "titel": "Uit het donker vii",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-06",
+      "tijd": "17:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/uit-het-donker-vii-zmh4"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [],
+      "titel": "Uit het donker vii",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-06",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/uit-het-donker-vii-zmh4"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [],
+      "titel": "Uit het donker vii",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "17:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/uit-het-donker-vii-zmh4"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [],
+      "titel": "'Nuff Said",
+      "genre": "stand-up",
+      "datum": "2027-02-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/nuff-said-ntwf"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "bartvangyseghem / asinnerman"
+      ],
+      "titel": "De plaats die ik inneem (10+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-03",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/bartvangyseghem-asinnerman-sg52"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "William Boeva"
+      ],
+      "titel": "Drift",
+      "genre": "stand-up",
+      "datum": "2027-03-05",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/william-boeva-n1vf"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "William Boeva"
+      ],
+      "titel": "Drift",
+      "genre": "stand-up",
+      "datum": "2027-03-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/william-boeva-n1vf"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Karolien Verlinden/de Formatie & Zonzo Compagnie"
+      ],
+      "titel": "Re:Beat (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/karolien-verlinden-de-formatie-zonzo-compagnie-5cvn"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Karolien Verlinden/de Formatie & Zonzo Compagnie"
+      ],
+      "titel": "Re:Beat (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/karolien-verlinden-de-formatie-zonzo-compagnie-5cvn"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "De Spiegel"
+      ],
+      "titel": "Battoe (1+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "15:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/de-spiegel-4663"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "De Spiegel"
+      ],
+      "titel": "Battoe (1+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "16:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/de-spiegel-4663"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back to the Beginning",
+      "genre": "stand-up",
+      "datum": "2027-03-19",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/xander-de-rycke-fs2q"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Xander De Rycke"
+      ],
+      "titel": "Back to the Beginning",
+      "genre": "stand-up",
+      "datum": "2027-03-20",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/xander-de-rycke-fs2q"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Stormopkomst"
+      ],
+      "titel": "dagpas (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "12:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/stormopkomst-6t1b"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Laros & de Jong beeldmakerij"
+      ],
+      "titel": "Mis Poes (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/laros-de-jong-beeldmakerij-1j7r"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Laros & de Jong beeldmakerij"
+      ],
+      "titel": "Mis Poes (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/laros-de-jong-beeldmakerij-1j7r"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Altijd Aan",
+      "genre": "stand-up",
+      "datum": "2027-04-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/pieter-verelst-6ftb"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Kunst in Zicht"
+      ],
+      "titel": "Plantartica (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/kunst-in-zicht-5r5n"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Sprookjes enzo"
+      ],
+      "titel": "Zee (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/sprookjes-enzo-bq8d"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Broder"
+      ],
+      "titel": "Niels (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-02",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/broder-rg47"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Steven Mahieu"
+      ],
+      "titel": "Stabieler",
+      "genre": "stand-up",
+      "datum": "2027-05-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/steven-mahieu-y3nl"
+    }
+  ],
+  "recensies": {}
+}

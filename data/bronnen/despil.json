@@ -1,0 +1,558 @@
+{
+  "bron": "despil",
+  "naam": "CC De Spil",
+  "opgehaald": "2026-11-09",
+  "theaters": [
+    {
+      "id": "de-spil",
+      "naam": "CC De Spil",
+      "plaats": "Roeselare",
+      "land": "BE",
+      "soort": "cultuurcentrum",
+      "website": "https://www.despil.be"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag Ik Even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-11-14",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/mag-ik-even-2026-shg6"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag Ik Even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-11-15",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/mag-ik-even-2026-shg6"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "De Grote Gameshow"
+      ],
+      "titel": "A.vontura Silent Disco Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/de-grote-gameshow-1jl6"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Farce Majeure"
+      ],
+      "titel": "Michael Van Peel",
+      "genre": "stand-up",
+      "datum": "2026-11-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/farce-majeure-4m6k"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [],
+      "titel": "Tony knollt in concert",
+      "genre": "stand-up",
+      "datum": "2026-11-26",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/tony-knollt-in-concert-f7sr"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Stuutjes en cinema"
+      ],
+      "titel": "De Club van Sinterklaas: Paniek in het Pietendorp",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/stuutjes-en-cinema-rykw"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Bas Birker"
+      ],
+      "titel": "Twee Procent",
+      "genre": "stand-up",
+      "datum": "2026-12-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/twee-procent-7lgm"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Sieber Marly en Eva De Roovere"
+      ],
+      "titel": "CabaretBomToer",
+      "genre": "comedy",
+      "datum": "2026-12-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/sieber-marly-en-eva-de-roovere-nr8k"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "DJ Loebas"
+      ],
+      "titel": "Piv Huvluv",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/dj-loebas-j4k9"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "REUSkleuter"
+      ],
+      "titel": "4Hoog & Het Scheldeoffensief",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/reuskleuter-517k"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "in de kerstvakantie"
+      ],
+      "titel": "Kleuterkampje: muziekplezier",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-21",
+      "tijd": "09:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/in-de-kerstvakantie-7lmq"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Quand ça lâche"
+      ],
+      "titel": "Cirque Emboîté",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/quand-ca-lache-m5nr"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Neurodivergent en content"
+      ],
+      "titel": "Han Solo's Comedy Café",
+      "genre": "stand-up",
+      "datum": "2027-01-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/neurodivergent-en-content-j4wd"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Castl"
+      ],
+      "titel": "hetpaleis & Abattoir Fermé",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/castl-nr8m"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Gunter Lamoot"
+      ],
+      "titel": "Protpourri",
+      "genre": "stand-up",
+      "datum": "2027-02-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/protpourri-6ftf"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "(in 't Westvlams)"
+      ],
+      "titel": "Wouter Deprez & Tcha Limberger",
+      "genre": "stand-up",
+      "datum": "2027-02-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/in-t-westvlams-ryln"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Rosalie Custers"
+      ],
+      "titel": "Vaas",
+      "genre": "stand-up",
+      "datum": "2027-02-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/vaas-rygl"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Han Solo"
+      ],
+      "titel": "Psycho Solo",
+      "genre": "stand-up",
+      "datum": "2027-02-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/psycho-solo-hk5x"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Kukeleku! De Grote Boerderijshow"
+      ],
+      "titel": "Kapitein Winokio",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/kukeleku-de-grote-boerderijshow-f7s6"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Nele Bauwens"
+      ],
+      "titel": "en de Zeven Schlagers",
+      "genre": "stand-up",
+      "datum": "2027-03-09",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/en-de-zeven-schlagers-dt11"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Pechvogel"
+      ],
+      "titel": "Steven Goegebeur",
+      "genre": "stand-up",
+      "datum": "2027-03-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/pechvogel-8gz4"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Pechvogel"
+      ],
+      "titel": "Steven Goegebeur",
+      "genre": "stand-up",
+      "datum": "2027-03-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/pechvogel-8gz4"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Jupi"
+      ],
+      "titel": "DESCHONECOMPANIE & Il Gardellino",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/jupi-517b"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Gen Z"
+      ],
+      "titel": "Han Solo's Comedy Café",
+      "genre": "stand-up",
+      "datum": "2027-03-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/gen-z-4mfd"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Jan Jaap van der Wal"
+      ],
+      "titel": "Amor Fati - 10 jaar in Vlaanderen",
+      "genre": "stand-up",
+      "datum": "2027-03-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/amor-fati-10-jaar-in-vlaanderen-bqcr"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Henk Rijckaert"
+      ],
+      "titel": "Belachelijk!",
+      "genre": "stand-up",
+      "datum": "2027-03-31",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/belachelijk-zvmj"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Angelina"
+      ],
+      "titel": "Sibran Sampers",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/angelina-rygf"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Natalia's"
+      ],
+      "titel": "Han Solo's Comedy Café",
+      "genre": "stand-up",
+      "datum": "2027-04-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/natalia-s-f7hy"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "DDT houdt uitverkoop"
+      ],
+      "titel": "Comedyshows presenteert:",
+      "genre": "stand-up",
+      "datum": "2027-04-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/ddt-houdt-uitverkoop-1jpf"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "William Boeva"
+      ],
+      "titel": "Drift",
+      "genre": "stand-up",
+      "datum": "2027-04-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/drift-lpky"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Dubbel Troef"
+      ],
+      "titel": "Yannick Noben en Maarten D’Haene",
+      "genre": "stand-up",
+      "datum": "2027-05-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/dubbel-troef-1jl1"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Gili"
+      ],
+      "titel": "Machtig!",
+      "genre": "stand-up",
+      "datum": "2027-05-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/machtig-c2jh"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [],
+      "titel": "Bonte Avonden",
+      "genre": "stand-up",
+      "datum": "2027-05-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/bonte-avonden-7lz6"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [],
+      "titel": "Bonte Avonden",
+      "genre": "stand-up",
+      "datum": "2027-05-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/bonte-avonden-7lz6"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "stand-up",
+      "datum": "2027-06-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/babel-y3vn"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "stand-up",
+      "datum": "2027-06-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/babel-y3vn"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Moortelvet (Première) - in 't Roeselaars"
+      ],
+      "titel": "Dagmar Verfaillie",
+      "genre": "stand-up",
+      "datum": "2027-06-04",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "première",
+      "bron": "https://www.despil.be/agenda/moortelvet-premiere-in-t-roeselaars-c2hp"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Moortelvet (Première) - in 't Roeselaars"
+      ],
+      "titel": "Dagmar Verfaillie",
+      "genre": "stand-up",
+      "datum": "2027-06-05",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": "première",
+      "bron": "https://www.despil.be/agenda/moortelvet-premiere-in-t-roeselaars-c2hp"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Voor Normale Mensen",
+      "genre": "stand-up",
+      "datum": "2027-06-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/voor-normale-mensen-zvxy"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Hans Cools"
+      ],
+      "titel": "Zolang de voorraad strekt (herneming)",
+      "genre": "stand-up",
+      "datum": "2027-06-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/zolang-de-voorraad-strekt-herneming-lpp2"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Hans Cools"
+      ],
+      "titel": "Zolang de voorraad strekt (herneming)",
+      "genre": "stand-up",
+      "datum": "2027-06-18",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/zolang-de-voorraad-strekt-herneming-lpp2"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Steven Mahieu"
+      ],
+      "titel": "Stabieler (Herneming)",
+      "genre": "stand-up",
+      "datum": "2027-06-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/stabieler-herneming-ts2h"
+    }
+  ],
+  "recensies": {}
+}
