@@ -146,11 +146,25 @@ export function createTemplates(db, { ga = null } = {}) {
   let footerHtml = null;
   const footerLinks = () => footerHtml ??= maakFooterLinks();
   const maakFooterLinks = () => {
+  // Artiesten en theaters met de meeste vertoningen in Google (Search Console, uit data/ga-dashboard.json; elke
+  // build bijgewerkt). Een artiest telt met de voorstellingspagina's eronder en het oude adres /<artiest>/.
+  // Zonder cijfers, of als er te weinig zijn: de vaste lijst.
+  const zoekRijen = ga?.zoekPaginas || (ga?.perioden?.[0]?.google || []).map((r) => ({ pagina: r.landingPagePlusQueryString, vertoningen: r.organicGoogleSearchImpressions }));
+  const meesteVertoningen = (soort, vast) => {
+    const tel = new Map();
+    for (const r of zoekRijen) {
+      const d = String(r.pagina || "").split("?")[0].split("/").filter(Boolean);
+      const id = soort === "artiest" ? (d[0] === "artiesten" ? d[1] : d.length === 1 ? d[0] : null) : d[0] === "theaters" ? d[1] : null;
+      if (id) tel.set(id, (tel.get(id) || 0) + (r.vertoningen || 0));
+    }
+    const ok = soort === "artiest" ? (id) => A.has(id) && !festivalVan.has(id) && db.gigsForArtist(id).length : (id) => T.has(id) && db.gigsForTheater(id).length;
+    return [...new Set([...[...tel].sort((a, b) => b[1] - a[1]).map(([id]) => id), ...vast])].filter(ok).slice(0, 5);
+  };
   const FOOTER_LINKS = [
-    ["Artiesten", "/artiesten/", "Alle artiesten", ["esther-van-der-voort", "roel-c-verburg", "richard-groenendijk", "theo-maassen", "plien-en-bianca"]
-      .filter((id) => A.has(id) && db.gigsForArtist(id).length).map((id) => [A.get(id).naam, `/artiesten/${id}/`])],
-    ["Theaters", "/theaters/", "Alle theaters", ["kleine-komedie", "comedy-cafe-amsterdam", "stadsschouwburg-groningen", "parktheater-eindhoven", "stadsschouwburg-utrecht"]
-      .filter((id) => T.has(id) && db.gigsForTheater(id).length).map((id) => [T.get(id).naam, `/theaters/${id}/`])],
+    ["Artiesten", "/artiesten/", "Alle artiesten", meesteVertoningen("artiest", ["esther-van-der-voort", "roel-c-verburg", "richard-groenendijk", "theo-maassen", "plien-en-bianca"])
+      .map((id) => [A.get(id).naam, `/artiesten/${id}/`])],
+    ["Theaters", "/theaters/", "Alle theaters", meesteVertoningen("theater", ["kleine-komedie", "comedy-cafe-amsterdam", "stadsschouwburg-groningen", "parktheater-eindhoven", "stadsschouwburg-utrecht"])
+      .map((id) => [T.get(id).naam, `/theaters/${id}/`])],
     ["Plaatsen", "/plaatsen/", "Alle plaatsen", ["Rotterdam", "Amsterdam", "Eindhoven", "Den Haag", "Utrecht"]
       .filter((p) => up.some((g) => T.get(g.theater).plaats === p)).map((p) => [p, plaatsPad(p)])],
     ["Genres", "/agenda/", "De hele agenda", GENRE_PAGINAS.slice(0, 5).map((g) => [GENRE_INFO[g].kop, `/agenda/${g}/`])],

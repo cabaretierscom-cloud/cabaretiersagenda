@@ -145,6 +145,21 @@ if (soort === "dashboard") {
       maanden.push({ id: `${maand}-${j}`, naam: `${maand[0].toUpperCase()}${maand.slice(1)} ${j}`, van, tot, ...(await dashboardPeriode(token, [{ startDate: van, endDate: tot }])) });
     }
     uit.perioden.push(...maanden.reverse());
+    // Vertoningen in Google per pagina (Search Console, laatste dagen; loopt twee à drie dagen achter) voor de
+    // footerlinks: de artiesten en theaters met de meeste vertoningen. Mislukt dit, dan blijft de rest staan.
+    try {
+      const gsc = await toegangstoken(sleutel(), "https://www.googleapis.com/auth/webmasters.readonly");
+      const dag = (n) => new Date(Date.now() - n * 864e5).toISOString().slice(0, 10);
+      const res = await fetch(`https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(process.env.GSC_SITE || "https://www.cabaretiers.com/")}/searchAnalytics/query`, {
+        method: "POST", headers: { authorization: `Bearer ${gsc}`, "content-type": "application/json" },
+        body: JSON.stringify({ startDate: dag(dagen + 2), endDate: dag(2), dimensions: ["page"], rowLimit: 5000 }),
+      });
+      const j = await res.json();
+      if (!res.ok) throw new Error(j.error?.message || res.status);
+      uit.zoekPaginas = (j.rows || []).map((x) => ({ pagina: new URL(x.keys[0]).pathname, vertoningen: x.impressions, klikken: x.clicks }));
+    } catch (e) {
+      console.error(`Search Console per pagina mislukt: ${e.message}`);
+    }
     const doel = new URL("../data/ga-dashboard.json", import.meta.url);
     writeFileSync(doel, JSON.stringify(uit, null, 1) + "\n");
     console.log(`Dashboardcijfers geschreven: ${uit.perioden.map((p) => `${p.naam} (${p.overzicht.length} dagen)`).join(", ")}.`);
