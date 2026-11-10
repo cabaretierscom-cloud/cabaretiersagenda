@@ -1007,3 +1007,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .dashboard .ga-plaatslijst .ga-num { float: right; }
 .dashboard .ga-bron { margin: 12px 0 0; font-size: .75rem; color: var(--ink-2); }
 .dashboard .ga-provincies .ga-meer { fill: var(--paper); stroke: none; }
+
+/* Openingstukje onder de kop van een genrepagina (oudejaarsconference: wie doet het op tv). */
+.genre-intro { max-width: 70ch; margin-top: 8px; }
+.genre-intro p { margin: 0 0 10px; }

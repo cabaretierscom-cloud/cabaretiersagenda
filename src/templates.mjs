@@ -1781,6 +1781,65 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const d = eerste?.datum || db.today;
     return Number(d.slice(0, 4)) - (Number(d.slice(5, 7)) < 7 ? 1 : 0);
   })();
+  // ---------- Oudejaarsconference: opening en extra tekst (zoektermen uit Search Console, november 2026:
+  // "oudejaarsconference 2026", "wie doet de oudejaarsconference 2026", "twentse oudejaarsconference",
+  // "eindejaarsconference"). De tv-gegevens staan met bron in GENRE_INFO.oudejaarsconference.tv, de rest komt uit de agenda.
+  const REGIONAAL = /eindejaars|twentse|limburgse|brabantse|groningse|friese|zeeuwse|drentse|achterhoekse|vlaamse|westvlaamse/i;
+  const oudejaarsTheater = (list, artiest) => list.filter((g) => V.get(g.voorstelling).artiesten.includes(artiest));
+  const voorstellingLink = (vid) => voorstellingPad.has(vid) ? `<a href="${voorstellingPad.get(vid)}">${esc(V.get(vid).titel)}</a>` : `<em>${esc(V.get(vid).titel)}</em>`;
+  function oudejaarsIntro(list) {
+    const tv = GENRE_INFO.oudejaarsconference.tvNu();
+    if (!tv) return "";
+    const eigen = oudejaarsTheater(list, tv.artiest);
+    const plaatsen = [...new Set(eigen.map((g) => T.get(g.theater).plaats))];
+    const naam = A.has(tv.artiest) ? `<a href="${artiestPad(tv.artiest)}">${esc(tv.naam)}</a>` : esc(tv.naam);
+    return `<div class="genre-intro prose">
+        <p><strong>De oudejaarsconference ${oudejaarsJaar} op televisie is van ${naam}</strong>: op ${esc(tv.datum)} bij ${esc(tv.omroep)} op ${esc(tv.zender)}. Het is haar ${esc(tv.keer)} oudejaarsconference; de vorige was in ${esc(tv.vorige)} (<a href="${esc(tv.bron)}" rel="noopener">bron: ${esc(tv.omroep)}</a>).${eigen.length ? ` In de weken ervoor speelt ze haar ${voorstellingLink(eigen[0].voorstelling)} ook in het theater: ${plural(eigen.length, "voorstelling", "voorstellingen")} in ${plural(plaatsen.length, "plaats", "plaatsen")}.` : ""}</p>
+        <p>Naast de tv-conference spelen veel andere cabaretiers een eigen oudejaarsvoorstelling in het theater. Ze staan hieronder allemaal, met tijden, zalen en kaarten.</p>
+      </div>`;
+  }
+  function oudejaarsExtra(list) {
+    const tv = GENRE_INFO.oudejaarsconference.tvNu();
+    const uit = [];
+    const perArtiest = telPer(list.flatMap((g) => V.get(g.voorstelling).artiesten).filter((id) => !isFestival(id)), (id) => id);
+    const naamMet = ([id, n]) => `${artiestLink(A.get(id))} (${n})`;
+    // Wie
+    uit.push(`<h3>Wie doet de oudejaarsconference ${oudejaarsJaar}?</h3>
+        <p>${tv ? `Op televisie doet ${esc(tv.naam)} de oudejaarsconference ${oudejaarsJaar}, op ${esc(tv.datum)} bij ${esc(tv.omroep)} op ${esc(tv.zender)}. ` : ""}In het theater staan dit seizoen ${plural(perArtiest.length, "artiest of groep", "artiesten en groepen")} met een oudejaarsvoorstelling in de agenda${perArtiest.length ? `, onder wie ${opsomming(perArtiest.slice(0, 12).map(naamMet))}` : ""}. Tussen haakjes staat het aantal voorstellingen.</p>`);
+    // Wanneer en waar
+    const perMaand = telPer(list, (g) => g.datum.slice(0, 7)).sort((a, b) => a[0].localeCompare(b[0]));
+    const oudejaarsavond = list.filter((g) => g.datum.endsWith("-12-31") && g.status !== "geannuleerd");
+    const uitverkocht = list.filter((g) => g.status === "uitverkocht").length;
+    const steden = telPer(list, (g) => T.get(g.theater).plaats);
+    if (list.length) uit.push(`<h3>Oudejaarsconference in het theater: wanneer en waar?</h3>
+        <p>De oudejaarsvoorstellingen spelen ${periode(list)}${perMaand.length > 1 ? `: ${opsomming(perMaand.map(([m, n]) => `${n} in ${maandNaam(m)}`))}` : ""}. ${oudejaarsavond.length ? `Op oudejaarsavond zelf ${oudejaarsavond.length === 1 ? "is er één voorstelling" : `zijn er ${oudejaarsavond.length} voorstellingen`}: ${perNaam(oudejaarsavond, 6)}. ` : ""}De meeste voorstellingen zijn in ${opsomming(steden.slice(0, 6).map(([p, n]) => `${plaatsLink(p)} (${n})`))}.${uitverkocht ? ` Wacht niet te lang met kaarten: ${uitverkocht} van de ${list.length} voorstellingen zijn al uitverkocht.` : ""}</p>`);
+    // Eindejaarsconference en regionale conferences
+    const regionaal = [...new Set(list.filter((g) => REGIONAAL.test(V.get(g.voorstelling).titel)).map((g) => g.voorstelling))];
+    if (regionaal.length) uit.push(`<h3>Eindejaarsconference en regionale oudejaarsconferences</h3>
+        <p>Niet elke oudejaarsvoorstelling heet zo. Sommige heten eindejaarsconference, andere kijken terug op het jaar in hun eigen streek, in hun eigen dialect. Dit seizoen in de agenda: ${opsomming(regionaal.slice(0, 8).map((vid) => { const l = list.filter((g) => g.voorstelling === vid); const w = V.get(vid).artiesten.map((a) => A.get(a)?.naam).filter(Boolean); return `${voorstellingLink(vid)}${w.length ? ` van ${esc(opsomming(w))}` : ""} (${plural(l.length, "voorstelling", "voorstellingen")} in ${esc(opsomming([...new Set(l.map((g) => T.get(g.theater).plaats))].slice(0, 3)))})`; }))}.</p>`);
+    // Tv en theater
+    uit.push(`<h3>Oudejaarsconference op tv en in het theater</h3>
+        <p>De oudejaarsconference op televisie is een traditie die Wim Kan groot maakte: elk jaar blikt een cabaretier op oudejaarsavond terug op het jaar, en heel Nederland kijkt mee. Die tv-uitzending is meestal een registratie van een voorstelling die eerst in het theater speelt. Wie de conference live wil zien, kan dus vaak al in november en december een kaartje kopen. Omdat het nieuws tot het laatste moment doorgaat, verandert een oudejaarsvoorstelling vaak nog van avond tot avond.</p>`);
+    return uit;
+  }
+  function oudejaarsVragen(list) {
+    const tv = GENRE_INFO.oudejaarsconference.tvNu();
+    const vragen = [];
+    if (tv) {
+      vragen.push([`Wie doet de oudejaarsconference ${oudejaarsJaar}?`, `Op televisie ${esc(tv.naam)}: op ${esc(tv.datum)} bij ${esc(tv.omroep)} op ${esc(tv.zender)}, haar ${esc(tv.keer)} oudejaarsconference (de vorige was in ${esc(tv.vorige)}). In het theater spelen ook andere cabaretiers een oudejaarsvoorstelling; die staan allemaal op deze pagina.`]);
+      vragen.push([`Wanneer is de oudejaarsconference ${oudejaarsJaar} op tv?`, `Op ${esc(tv.datum)}, oudejaarsavond, bij ${esc(tv.omroep)} op ${esc(tv.zender)}.`]);
+      const eigen = oudejaarsTheater(list, tv.artiest);
+      if (eigen.length) vragen.push([`Kan ik de oudejaarsconference van ${esc(tv.naam)} in het theater zien?`, `Ja. ${esc(tv.naam)} speelt haar ${voorstellingLink(eigen[0].voorstelling)} ook in het theater: ${plural(eigen.length, "voorstelling", "voorstellingen")}, ${periode(eigen)}, onder meer in ${esc(opsomming([...new Set(eigen.map((g) => T.get(g.theater).plaats))].slice(0, 5)))}.${eigen.some((g) => g.status === "uitverkocht") ? ` Een deel is al uitverkocht.` : ""}`]);
+    }
+    const twents = list.filter((g) => /twent/i.test(V.get(g.voorstelling).titel));
+    if (twents.length) {
+      const v = V.get(twents[0].voorstelling), w = v.artiesten.map((a) => A.get(a)?.naam).filter(Boolean);
+      vragen.push(["Is er ook een Twentse oudejaarsconference?", `Ja: ${voorstellingLink(v.id)}${w.length ? `, met ${esc(opsomming(w))}` : ""}. ${plural(twents.length, "voorstelling", "voorstellingen")} in ${esc(opsomming([...new Set(twents.map((g) => T.get(g.theater).plaats))]))}, ${periode(twents)}.`]);
+    }
+    if (list.some((g) => /eindejaars/i.test(V.get(g.voorstelling).titel))) vragen.push(["Wat is een eindejaarsconference?", "Een andere naam voor een oudejaarsconference: een voorstelling waarin een cabaretier terugkijkt op het afgelopen jaar. De naam komt vooral voor in Twente en Vlaanderen."]);
+    return vragen;
+  }
+
   const GENRE_INFO = {
     cabaret: {
       kop: "Cabaret", meervoud: "cabaretvoorstellingen", wie: "cabaretiers", kleur: "roze",
@@ -1805,7 +1864,17 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       kop: `Oudejaarsconference ${oudejaarsJaar}`, meervoud: "oudejaarsvoorstellingen", wie: "cabaretiers", kleur: "rood",
       titel: `Oudejaarsconference ${oudejaarsJaar}: wie doen het dit jaar?`,
       // Beantwoordt "wie doet de oudejaarsconference 2026" (Search Console): de namen in de omschrijving.
-      desc: (list, steden, namen) => zinnen(`Wie doet de oudejaarsconference ${oudejaarsJaar}? In het theater onder meer ${opsomming(namen)}.`, `${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}.`),
+      // De landelijke tv-conference (NPO): met de hand bijhouden, met bron. Alleen getoond als `jaar` het oudejaarsjaar is.
+      tv: { jaar: 2026, artiest: "claudia-de-breij", naam: "Claudia de Breij", datum: "31 december", zender: "NPO 1", omroep: "BNNVARA", keer: "vierde", vorige: "2022",
+        bron: "https://pers.bnnvara.nl/claudia-de-breij-verzorgt-oudejaarsconference-2026/" },
+      desc: (list, steden, namen) => {
+        const tv = GENRE_INFO.oudejaarsconference.tvNu();
+        return zinnen(`Wie doet de oudejaarsconference ${oudejaarsJaar}?${tv ? ` Op tv ${tv.naam} (${tv.zender}, ${tv.datum}).` : ""}`, `In het theater ook ${namen.filter((n) => n !== tv?.naam)[0] || "andere cabaretiers"} en meer: ${plural(list.length, "voorstelling", "voorstellingen")}.`);
+      },
+      tvNu: () => { const t = GENRE_INFO.oudejaarsconference.tv; return t && String(t.jaar) === String(oudejaarsJaar) ? t : null; },
+      intro: (list) => oudejaarsIntro(list),
+      extra: (list) => oudejaarsExtra(list),
+      extraVragen: (list) => oudejaarsVragen(list),
       uitleg: "Een oudejaarsconference is een voorstelling waarin een cabaretier terugblikt op het afgelopen jaar, met grappen over de actualiteit, de politiek en het nieuws. Wim Kan maakte er een jaarlijkse traditie van. Op oudejaarsavond is er traditioneel een oudejaarsconference op televisie, maar in november en december spelen veel cabaretiers hun oudejaarsvoorstelling ook in het theater.",
       vragen: [
         ["Wat is een oudejaarsconference?", "Een cabaretvoorstelling aan het eind van het jaar waarin de cabaretier terugkijkt op het nieuws en de actualiteit van dat jaar."],
@@ -1882,7 +1951,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const tekst = [`<p>${info.uitleg}</p>`];
     tekst.push(`<p>De komende tijd staan er ${list.length.toLocaleString("nl-NL")} ${info.meervoud} in de agenda, in ${plural(zalen, "zaal", "zalen")} in ${plural(steden.length, "plaats", "plaatsen")}.${artiesten.length ? ` Het vaakst te zien zijn ${opsomming(artiesten.map(naamMet))}.` : ""} De meeste voorstellingen zijn in ${opsomming(steden.slice(0, 5).map(([p, n]) => `${plaatsLink(p)} (${n})`))}.</p>`);
     tekst.push(`<p>Wil je alles zien? In de <a href="/agenda/?genre=${g}">agenda</a> staan alle ${esc(info.meervoud)}, met zoeken op artiest, plaats of theater. Of kijk bij de andere genres: ${opsomming(anders.map(genreLink))}.</p>`);
-    const vragen = [...info.vragen];
+    const vragen = [...(info.extraVragen ? info.extraVragen(list) : []), ...info.vragen];
+    if (info.extra) tekst.push(...info.extra(list));
     if (artiesten.length) vragen.push([`Welke ${info.wie} spelen het vaakst?`, `De komende tijd ${opsomming(artiesten.slice(0, 5).map(naamMet))}. Tussen haakjes staat het aantal voorstellingen.`]);
     vragen.push([`Waar zie ik ${onderwerp} bij mij in de buurt?`, `De meeste voorstellingen zijn in ${opsomming(steden.slice(0, 6).map(([p]) => plaatsLink(p)))}. Op <a href="/plaatsen/">Plaatsen</a> vind je alles per plaats, en in de <a href="/agenda/?genre=${g}">agenda</a> kun je zoeken op je eigen woonplaats.`]);
     if (drukste && perMaand.length > 1) vragen.push(["In welke maand zijn de meeste voorstellingen?", `In ${maandNaam(drukste[0])}, met ${plural(drukste[1], "voorstelling", "voorstellingen")}.`]);
@@ -1894,6 +1964,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const eerste = groot ? groot.eerste : list;
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">${esc(info.kop)}</h1><p>${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}</p></div>
+      ${info.intro ? info.intro(list) : ""}
     </section>
     ${affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
       <div class="wrap wall-head"><h2 id="nu-title">Nu in het theater</h2></div>
