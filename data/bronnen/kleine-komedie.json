@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Jeroens Clan"
-      ],
-      "titel": "Juk",
-      "genre": "cabaret",
-      "datum": "2026-11-09",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/jeroens-clan-j436"
-    },
     {
       "theater": "kleine-komedie",
       "artiesten": [
@@ -113,7 +100,7 @@
       "genre": "cabaret",
       "datum": "2026-11-18",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/henry-van-loon-c28y"
     },
@@ -152,7 +139,7 @@
       "genre": "cabaret",
       "datum": "2026-11-21",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/henry-van-loon-c28y"
     },

@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -459,7 +459,7 @@
       "genre": "cabaret",
       "datum": "2026-11-11",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/christel-de-laat-56494/"
     },
@@ -472,7 +472,7 @@
       "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/christel-de-laat-56494/"
     },
@@ -485,7 +485,7 @@
       "genre": "cabaret",
       "datum": "2026-11-13",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/christel-de-laat-56494/"
     },
@@ -537,7 +537,7 @@
       "genre": "cabaret",
       "datum": "2027-01-15",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://luxortheater.nl/agenda/daan-van-der-hoeven-58104/"
     },
@@ -576,7 +576,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-28",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/guido-weijers-51204/"
     },
@@ -836,7 +836,7 @@
       "genre": "cabaret",
       "datum": "2027-01-03",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
     },
@@ -849,7 +849,7 @@
       "genre": "cabaret",
       "datum": "2027-01-03",
       "tijd": "19:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
     },
@@ -862,7 +862,7 @@
       "genre": "cabaret",
       "datum": "2026-11-21",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/ricky-risolles-59430/"
     },
@@ -953,7 +953,7 @@
       "genre": "komedie",
       "datum": "2027-01-20",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/the-sunshine-boys-56703/"
     },
@@ -1330,7 +1330,7 @@
       "genre": "cabaret",
       "datum": "2027-03-22",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/kasper-van-der-laan-56467/"
     },
@@ -1668,7 +1668,7 @@
       "genre": "cabaret",
       "datum": "2026-12-15",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://luxortheater.nl/agenda/plien-bianca-57558/"
     },
@@ -2095,7 +2095,7 @@
       "genre": "cabaret",
       "datum": "2026-11-27",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
     },

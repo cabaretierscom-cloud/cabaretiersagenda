@@ -1,7 +1,7 @@
 {
   "bron": "arenberg",
   "naam": "Arenberg",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "arenberg",
@@ -248,9 +248,9 @@
     {
       "theater": "arenberg",
       "artiesten": [
-        "Farce majeure"
+        "Michael van Peel"
       ],
-      "titel": "Michael van Peel",
+      "titel": "Farce majeure",
       "genre": "stand-up",
       "datum": "2027-01-07",
       "tijd": "20:15",
@@ -372,6 +372,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.arenberg.be/nl/programma/warre-verlinden/a0NP500000IyFHxMAN"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Dylan Moran"
+      ],
+      "titel": "Looking for trouble",
+      "genre": "stand-up",
+      "datum": "2027-04-04",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/dylan-moran/a0NP500000Xohd3MAB"
     },
     {
       "theater": "arenberg",

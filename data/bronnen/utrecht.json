@@ -1,7 +1,7 @@
 {
   "bron": "utrecht",
   "naam": "Stadsschouwburg Utrecht",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "stadsschouwburg-utrecht",
@@ -193,7 +193,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/we-zien-het-wel-even-hokjesdenker",
       "datum": "2027-03-14",
       "tijd": "20:30",
-      "status": "gepland"
+      "status": "geannuleerd"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -219,7 +219,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/prikkelarme-kermis-sara-kroos",
       "datum": "2026-11-12",
       "tijd": "20:00",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1134,7 +1134,7 @@
     {
       "theater": "stadsschouwburg-utrecht",
       "artiesten": [
-        "Berit Companjen, Teun van den Elzen en het Comedy Talent van het moment"
+        "Berit Companjen, Teun van den Elzen, Djoni de Vos en het Comedy Talent va"
       ],
       "titel": "Lachen met Volle Mond #2",
       "genre": "cabaret",
@@ -1284,19 +1284,6 @@
       "soort": null,
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-orde-van-de-dag-21-het-nut",
       "datum": "2027-06-21",
-      "tijd": "20:30",
-      "status": "gepland"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Het NUT"
-      ],
-      "titel": "De Orde van de Dag #14",
-      "genre": "cabaret",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-orde-van-de-dag-14-het-nut",
-      "datum": "2026-11-09",
       "tijd": "20:30",
       "status": "gepland"
     },

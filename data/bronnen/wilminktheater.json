@@ -1,7 +1,7 @@
 {
   "bron": "wilminktheater",
   "naam": "Wilminktheater en Muziekcentrum Enschede",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "wilminktheater",
@@ -24,26 +24,13 @@
     {
       "theater": "wilminktheater",
       "artiesten": [
-        "Najib & Roué"
-      ],
-      "titel": "Alles is Comedy",
-      "genre": "comedy",
-      "datum": "2026-11-09",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/alles-is-comedy-fsjr"
-    },
-    {
-      "theater": "wilminktheater",
-      "artiesten": [
         "Plien & Bianca"
       ],
       "titel": "Harrekidee! - Herneming",
       "genre": "cabaret",
       "datum": "2026-11-10",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/harrekidee-herneming-yw51"
     },
@@ -79,19 +66,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/striptease-van-de-dood-fs2x"
-    },
-    {
-      "theater": "wilminktheater",
-      "artiesten": [
-        "HNTJong & Theater Utrecht"
-      ],
-      "titel": "Time Machine",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-16",
-      "tijd": "19:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/time-machine-q2ky"
     },
     {
       "theater": "wilminktheater",

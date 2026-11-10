@@ -1,7 +1,7 @@
 {
   "bron": "vlaardingen",
   "naam": "Stadsgehoorzaal Vlaardingen",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "stadsgehoorzaal-vlaardingen",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Jandino"
-      ],
-      "titel": "De grote jubileumshow",
-      "genre": "cabaret",
-      "datum": "2026-12-03",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/jandino"
-    },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
@@ -68,41 +55,15 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Wonderland Collectief en Makiko Ito"
+        "Jeroens Clan"
       ],
-      "titel": "Umi (0+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-05-23",
-      "tijd": "10:00",
+      "titel": "Juk",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/umi"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Wonderland Collectief en Makiko Ito"
-      ],
-      "titel": "Umi (0+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-05-23",
-      "tijd": "11:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/umi"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "De Circusbroers (4+)"
-      ],
-      "titel": "Met Berl Both en Huub Cooijmans",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-01-31",
-      "tijd": "13:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/de-circusbroers"
+      "bron": "https://stadsgehoorzaal.nl/programma/jeroens-clan"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -120,15 +81,54 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Jeroens Clan"
+        "Maya Show (1+)"
       ],
-      "titel": "Juk",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:15",
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "13:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/jeroens-clan"
+      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Maya Show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "De Broers van Arkel"
+      ],
+      "titel": "Zeg maar u",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-broers-van-arkel"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Sinterklaasshow Hippe Gasten (4+)"
+      ],
+      "titel": "Fan van Sinterklaas",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/hippe-gasten"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -142,32 +142,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/janice-blok"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Krulmuziek"
-      ],
-      "titel": "Peuter- en kleuterkerstconcert (2+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-19",
-      "tijd": "11:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/peuter-en-kleuterkerstconcert"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Krulmuziek"
-      ],
-      "titel": "Dreumeskerstconcert (1+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-19",
-      "tijd": "09:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/dreumeskerstconcert"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -198,54 +172,41 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "De Broers van Arkel"
+        "Peter Pannekoek"
       ],
-      "titel": "Zeg maar u",
+      "titel": "Demonen",
       "genre": "cabaret",
-      "datum": "2027-02-13",
+      "datum": "2026-11-12",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/de-broers-van-arkel"
+      "soort": "try-out",
+      "bron": "https://stadsgehoorzaal.nl/programma/peter-pannekoek"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Fabian Franciscus"
+        "Krulmuziek"
       ],
-      "titel": "Is het leven al begonnen?",
-      "genre": "cabaret",
-      "datum": "2027-05-20",
-      "tijd": "20:30",
+      "titel": "Babykerstconcert (0+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "10:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/fabian-franciscus"
+      "bron": "https://stadsgehoorzaal.nl/programma/babykerstconcert"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Berit Companjen"
+        "Jandino"
       ],
-      "titel": "Zei ik dat hardop?",
+      "titel": "De grote jubileumshow",
       "genre": "cabaret",
-      "datum": "2027-05-08",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/berit-companjen"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Freek de Jonge"
-      ],
-      "titel": "Wisten wij veel",
-      "genre": "cabaret",
-      "datum": "2027-04-03",
+      "datum": "2026-12-03",
       "tijd": "20:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/freek-de-jonge"
+      "bron": "https://stadsgehoorzaal.nl/programma/jandino"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -263,41 +224,41 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Peter Pannekoek"
+        "Wonderland Collectief en Makiko Ito"
       ],
-      "titel": "Demonen",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:30",
+      "titel": "Umi (0+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "10:00",
       "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://stadsgehoorzaal.nl/programma/peter-pannekoek"
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/umi"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Ernst, Bobbie & de rest (3+)"
+        "Wonderland Collectief en Makiko Ito"
       ],
-      "titel": "Hebben geen idee",
+      "titel": "Umi (0+)",
       "genre": "kindervoorstellingen",
-      "datum": "2027-06-13",
-      "tijd": "14:00",
+      "datum": "2027-05-23",
+      "tijd": "11:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/ernst-bobbie-de-rest"
+      "bron": "https://stadsgehoorzaal.nl/programma/umi"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Ernst, Bobbie & de rest (3+)"
+        "Krulmuziek"
       ],
-      "titel": "Hebben geen idee",
+      "titel": "Peuter- en kleuterkerstconcert (2+)",
       "genre": "kindervoorstellingen",
-      "datum": "2027-06-13",
-      "tijd": "16:00",
+      "datum": "2026-12-19",
+      "tijd": "11:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/ernst-bobbie-de-rest"
+      "bron": "https://stadsgehoorzaal.nl/programma/peuter-en-kleuterkerstconcert"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -315,15 +276,15 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "De KinderPraatPaal Praatshow (4+)"
+        "Krulmuziek"
       ],
-      "titel": "Door Camie Bonger",
+      "titel": "Dreumeskerstconcert (1+)",
       "genre": "kindervoorstellingen",
-      "datum": "2027-02-26",
-      "tijd": "13:00",
+      "datum": "2026-12-19",
+      "tijd": "09:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/de-kinderpraatpaal-praatshow-feb"
+      "bron": "https://stadsgehoorzaal.nl/programma/dreumeskerstconcert"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -354,28 +315,28 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "De Grote Dino Show"
+        "Fabian Franciscus"
       ],
-      "titel": "De Geheime Tijdmachine",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-02-13",
-      "tijd": "13:15",
+      "titel": "Is het leven al begonnen?",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/de-grote-dino-show"
+      "bron": "https://stadsgehoorzaal.nl/programma/fabian-franciscus"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "De Grote Dino Show"
+        "Berit Companjen"
       ],
-      "titel": "De Geheime Tijdmachine",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-02-13",
-      "tijd": "16:30",
+      "titel": "Zei ik dat hardop?",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/de-grote-dino-show"
+      "bron": "https://stadsgehoorzaal.nl/programma/berit-companjen"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -406,28 +367,41 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Musical4daagse (6 t/m 12 jaar)"
+        "Freek de Jonge"
       ],
-      "titel": "Een unieke theaterervaring",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-02-22",
-      "tijd": "09:00",
+      "titel": "Wisten wij veel",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": "20:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/musical4daagse-feb"
+      "bron": "https://stadsgehoorzaal.nl/programma/freek-de-jonge"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Wina Ricardo"
+        "Ernst, Bobbie & de rest (3+)"
       ],
-      "titel": "Wina's Wereld",
-      "genre": "cabaret",
-      "datum": "2027-05-13",
-      "tijd": "20:30",
+      "titel": "Hebben geen idee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "14:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/wina-ricardo"
+      "bron": "https://stadsgehoorzaal.nl/programma/ernst-bobbie-de-rest"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Ernst, Bobbie & de rest (3+)"
+      ],
+      "titel": "Hebben geen idee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/ernst-bobbie-de-rest"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -441,6 +415,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/jochen-otten"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "De Grote Dino Show"
+      ],
+      "titel": "De Geheime Tijdmachine",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "13:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-grote-dino-show"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "De Grote Dino Show"
+      ],
+      "titel": "De Geheime Tijdmachine",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-grote-dino-show"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Musical4daagse (6 t/m 12 jaar)"
+      ],
+      "titel": "Een unieke theaterervaring",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-22",
+      "tijd": "09:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/musical4daagse-feb"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -471,6 +484,32 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
+        "De KinderPraatPaal Praatshow (4+)"
+      ],
+      "titel": "Door Camie Bonger",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-kinderpraatpaal-praatshow-feb"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/wina-ricardo"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
         "Ricky Risolles"
       ],
       "titel": "Niet Zo Indiscreet..",
@@ -480,6 +519,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/ricky-risolles"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "De Circusbroers (4+)"
+      ],
+      "titel": "Met Berl Both en Huub Cooijmans",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-circusbroers"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -506,45 +558,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/remko-vrijdag"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Krulmuziek"
-      ],
-      "titel": "Babykerstconcert (0+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-19",
-      "tijd": "10:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/babykerstconcert"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Maya Show (1+)"
-      ],
-      "titel": "Samen picknicken",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-01-17",
-      "tijd": "13:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Maya Show (1+)"
-      ],
-      "titel": "Samen picknicken",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-01-17",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -610,19 +623,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/glijbaan-1-5-21-2-27"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Sinterklaasshow Hippe Gasten (4+)"
-      ],
-      "titel": "Fan van Sinterklaas",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-21",
-      "tijd": "11:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/hippe-gasten"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",

@@ -921,12 +921,13 @@
     "genre": "cabaret"
   },
   {
-    "id": "berit-companjen-teun-van-den-elzen-het-comedy-talent-van-het-moment-lachen-met-v",
+    "id": "berit-companjen-teun-van-den-elzen-djoni-de-vos-het-comedy-talent-va-lachen-met",
     "titel": "Lachen met Volle Mond #2",
     "artiesten": [
       "berit-companjen",
       "teun-van-den-elzen",
-      "het-comedy-talent-van-het-moment"
+      "djoni-de-vos",
+      "het-comedy-talent-va"
     ],
     "genre": "cabaret"
   },
@@ -3157,6 +3158,13 @@
     "theater": "schouwburg-amstelveen"
   },
   {
+    "id": "dikkie-dik-krijgt-bezoek-cc-de-schakel",
+    "titel": "Dikkie Dik krijgt bezoek",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "cc-de-schakel"
+  },
+  {
     "id": "dirk-scheele-dikkie-dik-theater-walhalla",
     "titel": "Dirk Scheele Dikkie Dik",
     "artiesten": [],
@@ -3183,6 +3191,14 @@
     "titel": "Een Komische Kerstrevue",
     "artiesten": [
       "diva-s-op-stal"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "diverse-cabaretiers-nacht-van-het-cabaret",
+    "titel": "Nacht van het Cabaret",
+    "artiesten": [
+      "diverse-cabaretiers"
     ],
     "genre": "cabaret"
   },
@@ -3406,6 +3422,14 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedyhuis-utrecht"
+  },
+  {
+    "id": "dylan-moran-looking-for-trouble",
+    "titel": "Looking for trouble",
+    "artiesten": [
+      "dylan-moran"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "earl-okin-earl-okin",
@@ -5670,14 +5694,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "joeptube-de-zaak-a",
-    "titel": "De zAAk A",
-    "artiesten": [
-      "joeptube"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
     "id": "joeptube-de-zaak-a-de-harmonie",
     "titel": "JoepTube de zAAk A",
     "artiesten": [],
@@ -6182,6 +6198,16 @@
     "titel": "God is een snotje",
     "artiesten": [
       "kim-karssen"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "kim-karssen-oscar-smit-piet-van-eeghen-nieuw-geluid",
+    "titel": "Nieuw geluid!",
+    "artiesten": [
+      "kim-karssen",
+      "oscar-smit",
+      "piet-van-eeghen"
     ],
     "genre": "cabaret"
   },
@@ -7984,13 +8010,6 @@
     "theater": "schouwburg-kortrijk"
   },
   {
-    "id": "nacht-van-het-cabaret-theater-de-veste",
-    "titel": "Nacht van het Cabaret",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "theater-de-veste"
-  },
-  {
     "id": "nadine-froughi-daydreamer",
     "titel": "Daydreamer",
     "artiesten": [
@@ -8122,7 +8141,10 @@
     "artiesten": [
       "nesim-el-ahmadi"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "ookGenres": [
+      "cabaret"
+    ]
   },
   {
     "id": "nesim-el-ahmadi-je-verzint-het-niet",
@@ -9248,6 +9270,13 @@
     "ookGenres": [
       "stand-up"
     ]
+  },
+  {
+    "id": "racing-johnny-cc-de-schakel",
+    "titel": "Racing Johnny",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "cc-de-schakel"
   },
   {
     "id": "ramon-chatrer-rosalie-custers-happen-en-lachen",
@@ -10924,6 +10953,14 @@
     "theater": "amai-comedy-club-gent"
   },
   {
+    "id": "the-aristocrats-the-aristocrats",
+    "titel": "The Aristocrats",
+    "artiesten": [
+      "the-aristocrats"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "the-funniest-festival-ever-theater-aan-de-parade",
     "titel": "The Funniest Festival Ever!",
     "artiesten": [],
@@ -11856,6 +11893,14 @@
     "theater": "theater-lampegiet"
   },
   {
+    "id": "veldeke-theater-aajdjaorscabberet-eve-oonder-us",
+    "titel": "Aajdjaorscabberèt: Eve oonder us",
+    "artiesten": [
+      "veldeke-theater"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "veldhuis-en-kemper-nieuw-programma",
     "titel": "Nieuw programma",
     "artiesten": [
@@ -12457,6 +12502,13 @@
       "yeti"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "yugly-cc-de-schakel",
+    "titel": "Yugly",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "cc-de-schakel"
   },
   {
     "id": "yunus-aktas-nieuw-programma",

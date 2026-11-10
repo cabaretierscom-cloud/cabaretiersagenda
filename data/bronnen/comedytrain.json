@@ -1,7 +1,7 @@
 {
   "bron": "comedytrain",
   "naam": "Comedytrain",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "comedytrain-nieuwe-toomler-amsterdam",
@@ -15,6 +15,17 @@
   "speeldata": [
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [],
+      "titel": "Spoor Bijster",
+      "genre": "stand-up",
+      "datum": "2027-01-16",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/spoor-bijster-2027-01-16/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [
         "Tijmen van Barneveld",
         "Stephen Bell"
@@ -26,6 +37,33 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/dubbel-tijmen-van-barneveld-en-stephen-bell-2027-02-11/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Dave Felida",
+        "René van Meurs"
+      ],
+      "titel": "Dubbel",
+      "genre": "stand-up",
+      "datum": "2027-03-23",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/dubbel-dave-felida-rene-van-meurs-2027-03-23/"
+    },
+    {
+      "theater": "comedytrain-nieuwe-toomler-amsterdam",
+      "artiesten": [
+        "Mark Waumans"
+      ],
+      "titel": "Mark Waumans",
+      "genre": "stand-up",
+      "datum": "2027-01-23",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/solo-mark-waumans-2027-01-23/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
@@ -802,20 +840,6 @@
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [
-        "Dave Felida",
-        "René van Meurs"
-      ],
-      "titel": "Dubbel",
-      "genre": "stand-up",
-      "datum": "2027-03-23",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/dubbel-dave-felida-rene-van-meurs-2027-03-23/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
       "artiesten": [],
       "titel": "Open Podium",
       "genre": "open-mic",
@@ -1232,19 +1256,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/open-podium-2026-11-12/"
-    },
-    {
-      "theater": "comedytrain-nieuwe-toomler-amsterdam",
-      "artiesten": [
-        "Mark Waumans"
-      ],
-      "titel": "Mark Waumans",
-      "genre": "stand-up",
-      "datum": "2027-01-23",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/solo-mark-waumans-2027-01-23/"
     },
     {
       "theater": "comedytrain-nieuwe-toomler-amsterdam",

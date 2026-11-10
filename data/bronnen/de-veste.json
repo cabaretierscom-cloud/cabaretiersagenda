@@ -1,7 +1,7 @@
 {
   "bron": "de-veste",
   "naam": "Theater De Veste",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "theater-de-veste",
@@ -250,7 +250,7 @@
     {
       "theater": "theater-de-veste",
       "artiesten": [
-        "Nieuwjaars Cabarestafette"
+        "Kim Karssen, Oscar Smit & Piet van Eeghen"
       ],
       "titel": "Nieuw geluid!",
       "genre": "cabaret",
@@ -652,14 +652,16 @@
     },
     {
       "theater": "theater-de-veste",
-      "artiesten": [],
+      "artiesten": [
+        "Diverse cabaretiers"
+      ],
       "titel": "Nacht van het Cabaret",
       "genre": "cabaret",
       "datum": "2027-03-13",
       "tijd": "21:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.theaterdeveste.nl/programma/diverse-cabaretiers-sv8y"
+      "bron": "https://www.theaterdeveste.nl/programma/nacht-van-het-cabaret-sv8y"
     },
     {
       "theater": "theater-de-veste",

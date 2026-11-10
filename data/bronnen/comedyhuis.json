@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,34 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Venster",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": null
-      },
-      "artiesten": [],
-      "titel": "Comedy & Diner The Writers Room",
-      "genre": "stand-up",
-      "datum": "2026-11-09",
-      "tijd": "18:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/comedy-diner-the-writers-room-venster-utrecht-9-november/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Comedy Talent Award - Voorronde 8",
-      "genre": "stand-up",
-      "datum": "2026-11-09",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/comedy-talent-award-voorronde-8/"
-    },
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
@@ -731,7 +703,7 @@
       "genre": "stand-up",
       "datum": "2026-12-10",
       "tijd": "21:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/lubach-and-friends-10-december-2026/"
     },

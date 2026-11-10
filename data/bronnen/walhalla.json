@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -64,7 +64,7 @@
       "genre": "cabaret",
       "datum": "2026-11-13",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/kim-schuddeboom-hardleers-try-out/"
     },
@@ -129,7 +129,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-15",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-18/"
     },
@@ -246,7 +246,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-22",
       "tijd": "13:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-14/"
     },
@@ -454,7 +454,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-12-09",
       "tijd": "11:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/twinkel-twinkel-kleine-ster-2-t-m-6-jaar-krulmuziek/"
     },
@@ -1179,7 +1179,7 @@
       "genre": "cabaret",
       "datum": "2027-03-24",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/anuar-ongeduldig-geduldig-2/"
     },
@@ -1357,7 +1357,7 @@
       "genre": "cabaret",
       "datum": "2027-04-17",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-14/"
     },

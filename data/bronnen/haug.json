@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -13,6 +13,30 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "The Aristocrats"
+      ],
+      "titel": "The Aristocrats",
+      "genre": "stand-up",
+      "datum": "2026-11-21",
+      "tijd": "17:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/the-aristocrats-111719732"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Open Mic",
+      "genre": "open-mic",
+      "datum": "2026-11-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/open-mic-111719714"
+    },
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
@@ -911,17 +935,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
-      "titel": "Club Haug regulars try-out",
-      "genre": "stand-up",
-      "datum": "2026-11-09",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://comedyclubhaug.com/shows/club-haug-regulars-try-out-111703647"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
       "titel": "Best of Queer",
       "genre": "stand-up",
       "datum": "2027-06-17",
@@ -1301,7 +1314,7 @@
       "genre": "stand-up",
       "datum": "2026-11-13",
       "tijd": "19:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/vincent-geers-victor-luis-van-es-111637230"
     },

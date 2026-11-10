@@ -1,7 +1,7 @@
 {
   "bron": "westrand",
   "naam": "Westrand",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "westrand-dilbeek",
@@ -42,9 +42,9 @@
     {
       "theater": "westrand-dilbeek",
       "artiesten": [
-        "Wa Wilder Man (5+)"
+        "compagnie barbarie / BRONKS & De Studio"
       ],
-      "titel": "compagnie barbarie / BRONKS & De Studio",
+      "titel": "Wa Wilder Man (5+)",
       "genre": "kindervoorstellingen",
       "datum": "2026-11-21",
       "tijd": "17:00",
@@ -68,9 +68,9 @@
     {
       "theater": "westrand-dilbeek",
       "artiesten": [
-        "Eindeloos Verhaal (10-110)"
+        "hetpaleis/WOLF WOLF"
       ],
-      "titel": "hetpaleis/WOLF WOLF",
+      "titel": "Eindeloos Verhaal (10-110)",
       "genre": "kindervoorstellingen",
       "datum": "2026-11-28",
       "tijd": "19:30",
@@ -107,9 +107,9 @@
     {
       "theater": "westrand-dilbeek",
       "artiesten": [
-        "Meneer T (8-108)"
+        "Livia Jouan / Cie Studio T"
       ],
-      "titel": "Livia Jouan / Cie Studio T",
+      "titel": "Meneer T (8-108)",
       "genre": "kindervoorstellingen",
       "datum": "2026-12-18",
       "tijd": "19:30",
@@ -250,9 +250,9 @@
     {
       "theater": "westrand-dilbeek",
       "artiesten": [
-        "Meneer Beer, De terugkeer (5+)"
+        "Theater Tieret & Walrus"
       ],
-      "titel": "Theater Tieret & Walrus",
+      "titel": "Meneer Beer, De terugkeer (5+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-02-06",
       "tijd": "17:00",
@@ -315,9 +315,9 @@
     {
       "theater": "westrand-dilbeek",
       "artiesten": [
-        "Castl (8-108)"
+        "hetpaleis & Abattoir Fermé"
       ],
-      "titel": "hetpaleis & Abattoir Fermé",
+      "titel": "Castl (8-108)",
       "genre": "kindervoorstellingen",
       "datum": "2027-02-26",
       "tijd": "19:30",
@@ -328,9 +328,9 @@
     {
       "theater": "westrand-dilbeek",
       "artiesten": [
-        "Franje (4+)"
+        "tout petit & Alfredo Zinola Productions (B/D)"
       ],
-      "titel": "tout petit & Alfredo Zinola Productions (B/D)",
+      "titel": "Franje (4+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-03-07",
       "tijd": "11:00",
@@ -341,9 +341,9 @@
     {
       "theater": "westrand-dilbeek",
       "artiesten": [
-        "Franje (4+)"
+        "tout petit & Alfredo Zinola Productions (B/D)"
       ],
-      "titel": "tout petit & Alfredo Zinola Productions (B/D)",
+      "titel": "Franje (4+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-03-07",
       "tijd": "15:00",
@@ -523,6 +523,19 @@
     {
       "theater": "westrand-dilbeek",
       "artiesten": [
+        "Non-Stop"
+      ],
+      "titel": "Urbanus",
+      "genre": "comedy",
+      "datum": "2027-05-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/non-stop-qlbg"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
         "Hans Cools"
       ],
       "titel": "Zolang de voorraad strekt",
@@ -614,9 +627,9 @@
     {
       "theater": "westrand-dilbeek",
       "artiesten": [
-        "Trix (4+)"
+        "Theater FroeFroe"
       ],
-      "titel": "Theater FroeFroe",
+      "titel": "Trix (4+)",
       "genre": "kindervoorstellingen",
       "datum": "2027-05-30",
       "tijd": "15:00",

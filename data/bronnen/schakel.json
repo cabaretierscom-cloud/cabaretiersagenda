@@ -1,7 +1,7 @@
 {
   "bron": "schakel",
   "naam": "CC De Schakel",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "cc-de-schakel",
@@ -260,6 +260,39 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.ccdeschakel.be/voorstellingen/xander-de-rycke-x9pf"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Dikkie Dik krijgt bezoek",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-10",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/dikkie-dik-krijgt-bezoek-m991"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Yugly",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-10",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/yugly-t88g"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Racing Johnny",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-10",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/racing-johnny-jzzx"
     },
     {
       "theater": "cc-de-schakel",

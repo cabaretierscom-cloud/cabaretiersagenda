@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-10",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -42,19 +42,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Roué Verveer"
-      ],
-      "titel": "Roué Verveer",
-      "genre": "cabaret",
-      "datum": "2027-05-29",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Deng Boy"
       ],
       "titel": "Deng Boy",
@@ -64,6 +51,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/deng-boy-5/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Roué Verveer",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
     },
     {
       "theater": "kunstlinie",
@@ -224,6 +224,19 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "Samar en de bange koning (8+)"
+      ],
+      "titel": "Samar en de bange koning (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/samar-en-de-bange-koning-8/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "Bro’s"
       ],
       "titel": "Bro’s",
@@ -233,19 +246,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/bros/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Joep van Deudekom & Rob Urgert"
-      ],
-      "titel": "Joep van Deudekom & Rob Urgert",
-      "genre": "cabaret",
-      "datum": "2026-12-19",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/joep-van-deudekom-rob-urgert/"
     },
     {
       "theater": "kunstlinie",
@@ -263,28 +263,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Samar en de bange koning (8+)"
+        "Joep van Deudekom & Rob Urgert"
       ],
-      "titel": "Samar en de bange koning (8+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-20",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/samar-en-de-bange-koning-8/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Joanne Telesford"
-      ],
-      "titel": "Joanne Telesford",
+      "titel": "Joep van Deudekom & Rob Urgert",
       "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:30",
+      "datum": "2026-12-19",
+      "tijd": "20:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/joanne-telesford/"
+      "bron": "https://kunstlinie.nl/programma/joep-van-deudekom-rob-urgert/"
     },
     {
       "theater": "kunstlinie",
@@ -298,6 +285,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/de-waanzinnige-boomhut-van-78-verdiepingen-6/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Joanne Telesford"
+      ],
+      "titel": "Joanne Telesford",
+      "genre": "cabaret",
+      "datum": "2026-11-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/joanne-telesford/"
     },
     {
       "theater": "kunstlinie",
@@ -848,19 +848,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "De Proefkeuken en de WC van tijd (8+)"
-      ],
-      "titel": "De Proefkeuken en de WC van tijd (8+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-01-10",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/de-proefkeuken-en-de-wc-van-tijd-8/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Klein klein vogeltje (4+)"
       ],
       "titel": "Klein klein vogeltje (4+)",
@@ -896,19 +883,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/julika-marijn-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Juf Braaksel – De Musical (6+)"
-      ],
-      "titel": "Juf Braaksel – De Musical (6+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-03-07",
-      "tijd": "13:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/juf-braaksel-de-musical-6/"
     },
     {
       "theater": "kunstlinie",
@@ -1039,6 +1013,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/de-nog-grotere-slijmmusical-6/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "De Proefkeuken en de WC van tijd (8+)"
+      ],
+      "titel": "De Proefkeuken en de WC van tijd (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/de-proefkeuken-en-de-wc-van-tijd-8/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Juf Braaksel – De Musical (6+)"
+      ],
+      "titel": "Juf Braaksel – De Musical (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/juf-braaksel-de-musical-6/"
     }
   ],
   "recensies": {
