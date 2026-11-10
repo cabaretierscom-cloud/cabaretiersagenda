@@ -273,6 +273,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-zaal .where { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
 .wall-zalen { padding-top: 20px; }
 /* Zit het gezicht bovenin, dan komen de sterren onderaan het beeld. */
+/* De recensiesterren staan altijd onder in de foto (ook als het gezicht laag staat), bij alle affiches gelijk. */
 .poster-sterren.onder { top: auto; bottom: 18px; }
 .poster-sterren small { font-size: .85rem; font-weight: 600; letter-spacing: 0; }
 .poster-vlak { position: relative; isolation: isolate; flex: 0 0 auto; min-height: calc(100% - var(--naad)); display: flex; border-radius: 0 0 18px 18px; transition: box-shadow .28s ease; }
