@@ -150,12 +150,14 @@ export function createTemplates(db, { ga = null } = {}) {
   // build bijgewerkt). Een artiest telt met de voorstellingspagina's eronder en het oude adres /<artiest>/.
   // Zonder cijfers, of als er te weinig zijn: de vaste lijst.
   const zoekRijen = ga?.zoekPaginas || (ga?.perioden?.[0]?.google || []).map((r) => ({ pagina: r.landingPagePlusQueryString, vertoningen: r.organicGoogleSearchImpressions }));
+  const oudTheaterId = new Map([...T.values()].flatMap((t) => (t.oudeIds || []).map((o) => [o, t.id])));
   const meesteVertoningen = (soort, vast) => {
     const tel = new Map();
     for (const r of zoekRijen) {
       const d = String(r.pagina || "").split("?")[0].split("/").filter(Boolean);
       const id = soort === "artiest" ? (d[0] === "artiesten" ? d[1] : d.length === 1 ? d[0] : null) : d[0] === "theaters" ? d[1] : null;
-      if (id) tel.set(id, (tel.get(id) || 0) + (r.vertoningen || 0));
+      const nu = soort === "theater" && id ? oudTheaterId.get(id) || id : id;
+      if (nu) tel.set(nu, (tel.get(nu) || 0) + (r.vertoningen || 0));
     }
     const ok = soort === "artiest" ? (id) => A.has(id) && !festivalVan.has(id) && db.gigsForArtist(id).length : (id) => T.has(id) && db.gigsForTheater(id).length;
     return [...new Set([...[...tel].sort((a, b) => b[1] - a[1]).map(([id]) => id), ...vast])].filter(ok).slice(0, 5);
@@ -1425,6 +1427,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     if (premieres.length) p2.push(`${premieres.length === 1 ? "Première" : "Premières"}: ${opsomming(premieres.slice(0, 3).map((g) => `${esc(artistNames(g.voorstelling))} op ${fmt.dayMonth(g.datum)}`))}.`);
     const tekst = (p2.join(" ") + uitverkochtZin(list)).trim();
     if (tekst) zinnen.push(`<p>${tekst}</p>`);
+    // Vroegere naam (Comedytrain was Toomler), met bron.
+    if (t.voorheen) zinnen.push(...t.voorheen.alineas.map((a, i, alle) => `<p>${esc(a)}${i === alle.length - 1 ? ` <a href="${esc(t.voorheen.bron)}" rel="noopener">Bron</a>` : ""}</p>`));
     const buren = zalenMetData.filter((x) => x.plaats === t.plaats && x.id !== t.id);
     zinnen.push(`<p>${buren.length
       ? `Meer cabaret en comedy in ${esc(t.plaats)} vind je bij ${opsomming(buren.slice(0, 5).map((x) => theaterLink(x.id)))}, of bekijk <a href="${plaatsPad(t.plaats)}">alle voorstellingen in ${esc(t.plaats)}</a>.`
@@ -1458,6 +1462,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const link = (id) => `<a href="${artiestPad(id)}">${esc(A.get(id).naam)}</a>`;
     const wat = (g) => `${esc(artistNames(g.voorstelling) || V.get(g.voorstelling).titel)}${echteTitel(g.voorstelling) ? ` met <em>${esc(echteTitel(g.voorstelling))}</em>` : ""}`;
     const vragen = [];
+    if (t.voorheen) vragen.push([`Is ${t.naam} hetzelfde als ${t.voorheen.naam}?`, esc(t.voorheen.alineas.join(" "))]);
     if (artiestTel.length) vragen.push([`Welke cabaretiers spelen in ${t.naam}?`, artiestTel.length === 1
       ? `Op het programma staat ${link(artiestTel[0][0])}.`
       : `${artiestTel.length} artiesten, onder wie ${opsomming(artiestTel.slice(0, 8).map(([id]) => link(id)))}.`]);
@@ -2333,7 +2338,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const body = `<div class="detail-hero" style="--bg:var(--riso-blue);--fg:#FFF"><div class="wrap${t.foto ? " hero-met-foto" : ""}">
         <div>
         <h1>${esc(t.naam)}</h1>
-        <p><a href="${plaatsPad(t.plaats)}">${esc(t.plaats)}</a>, ${LANDEN[t.land]}. ${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.` : "Op dit moment staan er geen voorstellingen gepland."}${t.website ? ` <a href="${esc(metUtm(t.website))}" rel="noopener">Website van het theater</a>` : ""}</p>
+        <p>${t.voorheen ? `Voorheen ${esc(t.voorheen.naam)}. ` : ""}<a href="${plaatsPad(t.plaats)}">${esc(t.plaats)}</a>, ${LANDEN[t.land]}. ${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.` : "Op dit moment staan er geen voorstellingen gepland."}${t.website ? ` <a href="${esc(metUtm(t.website))}" rel="noopener">Website van het theater</a>` : ""}</p>
         </div>
         ${t.foto ? fotoHtml(t, "theater-foto") : ""}
       </div></div>
@@ -2347,9 +2352,10 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const desc = list.length
       ? zinnen(`Wat speelt er in ${t.naam}${t.naam.includes(t.plaats) ? "" : ` in ${t.plaats}`}? ${plural(list.length, "voorstelling", "voorstellingen")} cabaret en comedy in seizoen ${SEIZOEN}.`, (() => { const n = [...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].slice(0, 3).map((x) => A.get(x).naam); return n.length ? `Met onder meer ${opsomming(n)}.` : ""; })(), "Met links naar de kaartverkoop.")
       : `Cabaret en comedy in ${t.naam} (${t.plaats}).`;
+    const beschrijving = t.voorheen ? zinnen(`Wat speelt er in ${t.naam} (voorheen ${t.voorheen.naam}) in ${t.plaats}? ${plural(list.length, "voorstelling", "voorstellingen")} comedy en cabaret in seizoen ${SEIZOEN}.`, "Met links naar de kaartverkoop.") : desc;
     // Titel: "<zaal> <plaats> programma 2026-2027", met de genres als het past.
     const zaalTitel = `${t.naam}${t.naam.includes(t.plaats) ? "" : ` ${t.plaats}`} programma ${SEIZOEN}`;
-    return layout({ title: `${zaalTitel}: cabaret en comedy`.length <= 62 ? `${zaalTitel}: cabaret en comedy` : zaalTitel, description: desc, path: `/theaters/${t.id}/`, section: "theaters", body, schema: { foto: t.foto ? t : null, kruimels: [["Theaters", "/theaters/"], [t.naam, `/theaters/${t.id}/`]], hoofd: { "@id": zaalLd(t.id)["@id"] }, extra: [{ ...zaalLd(t.id), containedInPlace: plaatsLd(t.plaats) }, ...eventsLd(list), ...(list.length ? [faqLd(theaterVragen(t, list), `/theaters/${t.id}/`)] : [])] } });
+    return layout({ title: `${zaalTitel}: cabaret en comedy`.length <= 62 ? `${zaalTitel}: cabaret en comedy` : zaalTitel, description: beschrijving, path: `/theaters/${t.id}/`, section: "theaters", body, schema: { foto: t.foto ? t : null, kruimels: [["Theaters", "/theaters/"], [t.naam, `/theaters/${t.id}/`]], hoofd: { "@id": zaalLd(t.id)["@id"] }, extra: [{ ...zaalLd(t.id), containedInPlace: plaatsLd(t.plaats) }, ...eventsLd(list), ...(list.length ? [faqLd(theaterVragen(t, list), `/theaters/${t.id}/`)] : [])] } });
   }
 
   function privacy() {

@@ -2637,12 +2637,21 @@
     "website": "https://www.comedycafe.nl"
   },
   {
-    "id": "comedytrain-nieuwe-toomler-amsterdam",
+    "id": "comedytrain",
     "naam": "Comedytrain",
     "plaats": "Amsterdam",
     "land": "NL",
     "soort": "comedyclub",
-    "website": "https://www.comedytrain.nl"
+    "website": "https://www.comedytrain.nl",
+    "oudeIds": ["comedytrain-nieuwe-toomler-amsterdam"],
+    "voorheen": {
+      "naam": "Toomler",
+      "alineas": [
+        "Comedytrain was voorheen Toomler: zo heette het theatercafé van Comedytrain aan de Breitnerstraat 2 in Amsterdam, onder het Hilton. Toomler werd in 1995 opgericht als vaste plek waar Nederlandse stand-upcomedians ervaring konden opdoen en nieuw materiaal konden uitproberen; de zaal bood plaats aan zo'n 150 mensen.",
+        "De laatste voorstelling in Toomler was op 20 december 2025. Comedytrain zet de voorstellingen voort in de Westergasfabriek, onder de eigen naam Comedytrain; de naam Toomler wordt niet meer gebruikt."
+      ],
+      "bron": "https://nl.wikipedia.org/wiki/Toomler"
+    }
   },
   {
     "id": "kleine-komedie",

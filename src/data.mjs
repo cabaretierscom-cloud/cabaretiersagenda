@@ -172,6 +172,9 @@ export function loadData(dir, { today }) {
     if (!THEATERSOORTEN.includes(t.soort)) errors.push(`theater ${t.id}: onbekende soort "${t.soort}"`);
     if (t.foto && typeof t.foto === "object" && !(t.foto.bestand && t.foto.alt && t.foto.maker && t.foto.licentie && t.foto.bron)) errors.push(`theater ${t.id}: foto zonder alt-tekst, maker, licentie of bron`);
     if (t.foto?.bestand && !existsSync(join(dir, "..", "public", t.foto.bestand))) errors.push(`theater ${t.id}: fotobestand ${t.foto.bestand} ontbreekt`);
+    // Een vroegere naam (Comedytrain was Toomler): met uitleg en bron.
+    if (t.voorheen && !(t.voorheen.naam && t.voorheen.alineas?.length && /^https?:\/\//.test(t.voorheen.bron || ""))) errors.push(`theater ${t.id}: voorheen zonder naam, alineas of bron`);
+    if (t.oudeIds !== undefined && !(Array.isArray(t.oudeIds) && t.oudeIds.every((x) => typeof x === "string" && x !== t.id))) errors.push(`theater ${t.id}: oudeIds moet een lijst oude ids zijn`);
   }
   for (const v of voorstellingen) {
     if (!GENRES[v.genre]) errors.push(`voorstelling ${v.id}: onbekend genre "${v.genre}"`);

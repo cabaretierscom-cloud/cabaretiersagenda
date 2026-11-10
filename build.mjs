@@ -130,6 +130,8 @@ writeFileSync(join(out, "sitemap.xml"),
     `RedirectMatch 301 ^${van.replace(/\/$/, "").replace(/[.+?^$()[\]{}|\\]/g, "\\$&")}/?$ ${SITE.url}${naar}`);
   // /artiesten/<festival>/ en alles daaronder (oude voorstellingspagina's) -> /festivals/<festival>/.
   for (const [id, f] of [...t.festivalVan].sort()) regels.push(`RedirectMatch 301 ^/artiesten/${id.replace(/[.+?^$()[\]{}|\\]/g, "\\$&")}(/.*)?$ ${SITE.url}/festivals/${f}/`);
+  // Een theater met een nieuw id (comedytrain-nieuwe-toomler-amsterdam -> comedytrain): het oude adres gaat mee.
+  for (const th of db.theaters.values()) for (const o of th.oudeIds || []) regels.push(`RedirectMatch 301 ^/theaters/${o.replace(/[.+?^$()[\]{}|\\]/g, "\\$&")}/?$ ${SITE.url}/theaters/${th.id}/`);
   const ht = join(out, ".htaccess");
   writeFileSync(ht, readFileSync(ht, "utf8") + `\n# Oude adressen (gemaakt door build.mjs, niet met de hand aanpassen)\n<IfModule mod_alias.c>\n${regels.join("\n")}\n</IfModule>\n`);
 }

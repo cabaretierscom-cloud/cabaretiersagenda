@@ -6,7 +6,7 @@ import { sitemapUrls, stripTags } from "../lib/html.mjs";
 import { herkenGenre, herkenSoort } from "../lib/normaliseer.mjs";
 
 const MAANDEN = { januari: 1, februari: 2, maart: 3, april: 4, mei: 5, juni: 6, juli: 7, augustus: 8, september: 9, oktober: 10, november: 11, december: 12 };
-const CLUB = "comedytrain-nieuwe-toomler-amsterdam";
+const CLUB = "comedytrain";
 const tekst = (s) => stripTags(s || "").replace(/[“”"]/g, "").replace(/\s+/g, " ").trim();
 const namen = (s) => s.split(/\s+(?:&|en)\s+/).map((n) => n.trim()).filter(Boolean);
 
