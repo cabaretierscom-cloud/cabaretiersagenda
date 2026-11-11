@@ -1,5 +1,5 @@
 // HTML-templates. Elke functie geeft een string terug; build.mjs schrijft ze weg.
-import { LANDEN, STATUSSEN, GENRES, KLEUREN, FESTIVALSOORTEN, isGroep, genreLabel } from "./data.mjs";
+import { LANDEN, STATUSSEN, GENRES, KLEUREN, FESTIVALSOORTEN, isGroep, genreLabel, voorstellingSleutel } from "./data.mjs";
 import { fmt, esc, plural, isoWithOffset } from "./format.mjs";
 import { WOORDMERK_SVG, C_PAD, C_KADER } from "./woordmerk.mjs";
 import { readFileSync } from "node:fs";
@@ -707,6 +707,152 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     }).join("");
   }
 
+  // ---------- Net binnen (post-its) en nieuws ----------
+  // Post-its op de homepage en /nieuws/: premières en eerste try-outs van de komende drie weken, voorstellingen
+  // die net in de agenda kwamen (data/eerst-gezien.json) en nieuwsberichten (data/nieuws.json). Alles automatisch
+  // uit de agenda, behalve de berichten. Kindervoorstellingen niet (die staan in het filter ook standaard uit).
+  const nieuwsPad = (n) => `/nieuws/${n.id}/`;
+  const plusDagen = (d, n) => new Date(new Date(d + "T12:00:00Z").getTime() + n * 864e5).toISOString().slice(0, 10);
+  const geenKind = (g) => V.get(g.voorstelling).genre !== "kindervoorstellingen";
+  const metJaar = (d) => `${fmt.weekdayShort(d)} ${fmt.day(d)} ${fmt.monthShort(d)}${d.slice(0, 4) !== db.today.slice(0, 4) ? ` ${d.slice(0, 4)}` : ""}`;
+  // Per dag: hoeveel voorstellingen er voor het eerst in de agenda kwamen. Een dag met veel tegelijk is een nieuwe
+  // bron (een zaal of genre erbij), geen nieuwe aankondigingen: die telt niet mee voor de post-its.
+  const eerstOp = new Map(Object.entries(db.eerstGezien.voorstellingen || {}));
+  const nieuwOpDag = new Map();
+  for (const v of V.values()) {
+    const d = v.artiesten.length && eerstOp.get(voorstellingSleutel(v));
+    // Geen festivals, verzamelavonden ("Diverse cabaretiers") of kindervoorstellingen.
+    if (!d || d === db.eerstGezien.sinds || d > db.today || v.genre === "kindervoorstellingen" || v.artiesten.some((x) => festivalVan.has(x) || /^divers/i.test(A.get(x).naam))) continue;
+    nieuwOpDag.set(d, [...(nieuwOpDag.get(d) || []), v]);
+  }
+  const BULK = 40;
+  const eersteGig = (vid) => db.upcoming.find((g) => g.voorstelling === vid);
+
+  function netBinnenItems() {
+    const tot = plusDagen(db.today, 21);
+    const premieres = [], gezien = new Set();
+    for (const g of db.upcoming) {
+      if (g.datum > tot) break;
+      if (!geenKind(g) || gezien.has(g.voorstelling) || !V.get(g.voorstelling).artiesten.length) continue;
+      if (g.soort === "première") { premieres.push({ soort: "Première", g }); gezien.add(g.voorstelling); }
+      // Eerste try-out: er is geen eerdere try-out van deze voorstelling (ook niet in het archief).
+      else if (g.soort === "try-out" && !db.gigs.some((x) => x.voorstelling === g.voorstelling && x.soort === "try-out" && x.datum < g.datum)) { premieres.push({ soort: "Eerste try-out", g }); gezien.add(g.voorstelling); }
+    }
+    const nieuw = [...nieuwOpDag].filter(([d, l]) => d >= plusDagen(db.today, -10) && l.length <= BULK).sort((a, b) => b[0].localeCompare(a[0]))
+      .flatMap(([, l]) => l).filter((v) => v.artiesten.length <= 2).map((v) => ({ soort: "Nieuw in de agenda", g: eersteGig(v.id) })).filter((x) => x.g && !gezien.has(x.g.voorstelling));
+    // Waar nog kaarten voor zijn eerst; uitverkochte achteraan.
+    const kaarten = (x) => (["uitverkocht", "geannuleerd", "verplaatst"].includes(x.g.status) ? 1 : 0);
+    premieres.sort((a, b) => kaarten(a) - kaarten(b)); nieuw.sort((a, b) => kaarten(a) - kaarten(b));
+    const berichten = db.nieuws.filter((n) => n.datum >= plusDagen(db.today, -21)).map((n) => ({ soort: "Nieuws", n }));
+    // Afwisselen: premières en try-outs vooraan, met nieuwe voorstellingen en berichten ertussen.
+    const patroon = ["p", "p", "w", "p", "n", "p", "w", "p"], bak = { p: premieres, w: nieuw, n: berichten };
+    const uit = [];
+    for (const k of patroon) { const x = bak[k].shift() || bak.p.shift() || bak.w.shift() || bak.n.shift(); if (x) uit.push(x); }
+    return uit;
+  }
+
+  // Kleuren en varianten van de briefjes: nooit twee dezelfde kleuren naast elkaar.
+  const POSTIT_KLEUREN = ["var(--riso-yellow)", "var(--riso-pink)", "var(--riso-lime)", "var(--riso-aqua)", "#FFB067", "var(--riso-lilac)"];
+  const POSTIT_VARIANTEN = [
+    ["pin vouw-rechtsonder", -1.6, ""], ["tape krul", 1.2, "--t:4deg"], ["strook", 1.8, ""], ["tape-hoek vouw-linksonder", -1, ""],
+    ["tape-groen", 1.4, "--t:-5deg"], ["strook vouw-rechtsonder", -1.8, ""], ["pin vouw-linksboven", 1.6, "--pinx:70%"], ["tape krul", -1.2, "--t:-2deg"],
+  ];
+  function postit(x, i) {
+    let [klassen, r, extra] = POSTIT_VARIANTEN[i % POSTIT_VARIANTEN.length];
+    const kleur = x.n ? "#F3F3F6" : POSTIT_KLEUREN[i % POSTIT_KLEUREN.length];
+    if (x.n) {
+      return `<li><a class="pi bericht ${klassen}" href="${nieuwsPad(x.n)}" style="--c:${kleur};--r:${r}deg;${extra}"><span class="wat">Nieuws</span><b>${esc(x.n.titel)}</b><span class="voet"><span>${esc(fmt.dayMonth(x.n.datum))}</span><span>Lees meer →</span></span></a></li>`;
+    }
+    const g = x.g, v = V.get(g.voorstelling), t = T.get(g.theater);
+    const titel = echteTitel(g.voorstelling);
+    const a = A.get(v.artiesten[0]);
+    // Een promofoto (met toestemming) maakt er een fotobriefje van; de maker staat op de artiestpagina.
+    const foto = a?.foto?.promo && v.artiesten.length === 1 ? a.foto : null;
+    if (foto) klassen = "tape krul";
+    const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
+    const voet = `<span class="voet"><span>${esc(metJaar(g.datum))}${g.tijd ? ` · ${g.tijd}` : ""}</span>${kopen ? `<span>Tickets ${ICON.extern}</span>` : `<span class="uit">${esc(STATUSSEN[g.status] || g.status)}</span>`}</span>`;
+    const tekst = `${titel ? `<em>${esc(titel)}</em> in ` : "In "}${esc(t.naam)}${t.naam.includes(t.plaats) ? "" : `, ${esc(t.plaats)}`}`;
+    const label = `<span class="wat">${esc(x.soort)}</span>`;
+    const inhoud = foto
+      ? `<img src="${esc(foto.bestand)}" alt="" loading="lazy"${uitsnede(foto, 1.72)}${foto.maker ? ` title="Foto: ${esc(foto.maker)}"` : ""}><span class="tekst">${label}<b>${esc(artistNames(g.voorstelling))}</b>${voet}</span>`
+      : `${label}<b>${esc(artistNames(g.voorstelling))}</b><p>${tekst}</p>${voet}`;
+    return `<li><a class="pi ${klassen}${foto ? " foto" : ""} tickets" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow"${ticketData(g)} style="--c:${kleur};--r:${r}deg;${extra}">${inhoud}<span class="visually-hidden"> (${esc(x.soort)}: ${esc(artistNames(g.voorstelling))} op ${fmt.full(g.datum)} in ${esc(t.naam)}; externe website, opent in een nieuw tabblad)</span></a></li>`;
+  }
+  function netBinnenBlok({ kop = "h2", link = true } = {}) {
+    const items = netBinnenItems();
+    if (!items.length) return "";
+    return `<section class="block wrap net-binnen" aria-labelledby="net-binnen-titel">
+  <div class="wall-head"><${kop} id="net-binnen-titel">Net binnen</${kop}>${link ? `<p><a href="/nieuws/">Al het nieuws</a></p>` : ""}</div>
+  <ul class="memo">${items.map(postit).join("")}</ul>
+  <p class="memo-uitleg">Premières, eerste try-outs en voorstellingen die net in de agenda staan. Elke nacht bijgewerkt.</p>
+</section>`;
+  }
+
+  // Tijdlijn op /nieuws/: berichten, nieuwe voorstellingen per dag en premières van de afgelopen tijd, nieuwste eerst.
+  function tijdlijnItems() {
+    const van = plusDagen(db.today, -60);
+    const rijen = [];
+    for (const n of db.nieuws) if (n.datum >= van) rijen.push({ soort: "nieuws", datum: n.datum, titel: `<a href="${nieuwsPad(n)}">${esc(n.titel)}</a>`, tekst: esc(n.alineas[0]), link: [nieuwsPad(n), "Lees meer →"] });
+    for (const [d, l] of nieuwOpDag) {
+      if (d < van) continue;
+      const namen = l.map((v) => { const p = voorstellingPad.get(v.id) || artiestPad(v.artiesten[0]); return `<a href="${p}">${esc(artistNames(v.id))}</a>${echteTitel(v.id) ? ` (<em>${esc(echteTitel(v.id))}</em>)` : ""}`; });
+      rijen.push(l.length === 1
+        ? { soort: "nieuw", datum: d, titel: `${esc(artistNames(l[0].id))} staat in de agenda`, tekst: `Nieuw: ${namen[0]}.`, link: [voorstellingPad.get(l[0].id) || artiestPad(l[0].artiesten[0]), "Speellijst →"] }
+        : { soort: "nieuw", datum: d, titel: `${l.length} nieuwe voorstellingen in de agenda`, tekst: `${l.length > BULK ? "Er kwamen nieuwe theaters en speellijsten bij. " : ""}Onder meer ${opsomming(namen.slice(0, 6))}.`, link: null });
+    }
+    // Premières die net geweest zijn (uit het archief), één per voorstelling.
+    const gehad = new Set();
+    for (const g of db.gigs.filter((g) => g.soort === "première" && g.datum >= van && g.datum < db.today && geenKind(g) && V.get(g.voorstelling).artiesten.length).sort((a, b) => a.datum.localeCompare(b.datum))) {
+      if (gehad.has(g.voorstelling)) continue;
+      gehad.add(g.voorstelling);
+      const t = T.get(g.theater), titel = echteTitel(g.voorstelling);
+      const p = voorstellingPad.get(g.voorstelling) || artiestPad(V.get(g.voorstelling).artiesten[0]);
+      rijen.push({ soort: "premiere", datum: g.datum, titel: `${esc(artistNames(g.voorstelling))}${titel ? `: première van <em>${esc(titel)}</em>` : " in première"}`, tekst: `In ${esc(t.naam)}, ${esc(t.plaats)}.`, link: [p, "Speellijst →"] });
+    }
+    const volgorde = { nieuws: 0, premiere: 1, nieuw: 2 };
+    return rijen.sort((a, b) => b.datum.localeCompare(a.datum) || volgorde[a.soort] - volgorde[b.soort]);
+  }
+  const TIJDLIJN_LABEL = { nieuws: "Nieuws", nieuw: "Nieuw", premiere: "Première" };
+
+  function nieuwsPagina() {
+    const rijen = tijdlijnItems();
+    const filters = [["", "Alles"], ["nieuws", "Nieuws"], ["premiere", "Premières"], ["nieuw", "Nieuw in de agenda"]].filter(([k]) => !k || rijen.some((r) => r.soort === k));
+    const body = `<section class="block wrap kop-plaats"><h1>Nieuws</h1><p>Wat er net binnen is in de cabaret- en comedyagenda: premières, eerste try-outs, nieuwe voorstellingen en nieuws over artiesten en theaters.</p></section>
+${netBinnenBlok({ link: false })}
+<section class="block wrap tijdlijn" aria-labelledby="tijdlijn-titel" data-tijdlijn>
+  <div class="wall-head"><h2 id="tijdlijn-titel">Tijdlijn</h2></div>
+  <div class="tijdlijn-filters" role="group" aria-label="Filter de tijdlijn" hidden>${filters.map(([k, n], i) => `<button type="button" data-soort="${k}" aria-pressed="${i === 0}">${n}</button>`).join("")}</div>
+  <ol class="tijdlijn-lijst">${rijen.map((r) => `
+    <li data-soort="${r.soort}"><time class="d" datetime="${r.datum}"><b>${fmt.day(r.datum)}</b><small>${esc(fmt.monthShort(r.datum))}${r.datum.slice(0, 4) !== db.today.slice(0, 4) ? ` ${r.datum.slice(0, 4)}` : ""}</small></time><span class="tl-label tl-${r.soort}">${TIJDLIJN_LABEL[r.soort]}</span><div><h3>${r.titel}</h3><p>${r.tekst}</p></div>${r.link ? `<a class="tl-link" href="${r.link[0]}">${r.link[1]}</a>` : "<span></span>"}</li>`).join("")}
+  </ol>
+</section>`;
+    const desc = zinnen("Nieuws uit de cabaret- en comedyagenda: premières, eerste try-outs en nieuwe voorstellingen in Nederland en België.", "Elke dag bijgewerkt.");
+    return layout({ title: "Nieuws over cabaret en comedy: premières en try-outs", description: desc, path: "/nieuws/", section: "nieuws", body,
+      schema: { type: "CollectionPage", kruimels: [["Nieuws", "/nieuws/"]], hoofd: lijstLd(db.nieuws.map((n) => [n.titel, nieuwsPad(n)])) } });
+  }
+
+  function nieuwsBericht(n) {
+    const a = n.artiest && A.get(n.artiest), t = n.theater && T.get(n.theater);
+    const lijst = a ? db.gigsForArtist(a.id) : t ? db.gigsForTheater(t.id) : [];
+    const verder = [
+      ...(a && (lijst.length || a.nietOpTournee) ? [[`${a.naam}: speellijst en meer`, artiestPad(a.id)]] : []),
+      ...(t && lijst.length ? [[`Programma van ${t.naam}`, `/theaters/${t.id}/`]] : []),
+      ...(n.meer ? [n.meer] : []),
+    ];
+    const body = `<article class="block wrap nieuws-bericht">
+  <p class="nb-meta"><span class="tl-label tl-nieuws">Nieuws</span> <time datetime="${n.datum}">${esc(fmt.full(n.datum))}</time></p>
+  <h1>${esc(n.titel)}</h1>
+  <div class="prose">${n.alineas.map((p) => `<p>${esc(p)}</p>`).join("")}
+  <p class="nb-bron">Bron: ${n.bronnen.map(([naam, url]) => `<a href="${esc(url)}" rel="noopener">${esc(naam)}</a>`).join(", ")}</p>
+  ${verder.length ? `<ul class="nb-verder">${verder.map(([naam, p]) => `<li><a href="${esc(p)}">${esc(naam)} →</a></li>`).join("")}</ul>` : ""}
+  <p><a href="/nieuws/">← Al het nieuws</a></p></div>
+</article>`;
+    return layout({ title: n.titel, description: zinnen(...n.alineas.join(" ").split(/(?<=\.)\s+/)), path: nieuwsPad(n), section: "nieuws", body,
+      schema: { type: "WebPage", kruimels: [["Nieuws", "/nieuws/"], [n.titel, nieuwsPad(n)]], hoofd: { "@id": URL(nieuwsPad(n)) + "#bericht" },
+        extra: [{ "@type": "NewsArticle", "@id": URL(nieuwsPad(n)) + "#bericht", headline: n.titel, datePublished: n.datum, inLanguage: "nl", publisher: { "@id": ORG_ID }, author: { "@id": ORG_ID }, isBasedOn: n.bronnen.map(([, url]) => url),
+          ...(a ? { about: { "@type": "Person", name: a.naam, url: URL(artiestPad(a.id)) } } : t ? { about: { "@type": "Place", name: t.naam } } : {}) }] } });
+  }
+
   function home() {
 
     const nu = nuInTheater();
@@ -746,6 +892,7 @@ ${zalen ? `
   <div class="wall-head"><h2 id="plaats-title">Zoek in de buurt</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
   ${plaatsNav()}
 </section>
+${netBinnenBlok()}
 ${clubs.length ? `
 <section class="wall wall-zalen" aria-labelledby="clubs-title">
   <div class="wrap wall-head">
@@ -2653,7 +2800,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   }
 
   return {
-    controlePagina, dashboardPagina, dashboardPad,
+    controlePagina, dashboardPagina, dashboardPad, nieuwsPagina, nieuwsBericht,
     home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, genrePagina, GENRE_PAGINAS, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, plaatsPad, maandId, tryoutPagina, tryoutLijst, genrePlaatsPaginas, genrePlaatsPagina, genrePlaatsPad, voorstellingPaden: voorstellingPad,
   };

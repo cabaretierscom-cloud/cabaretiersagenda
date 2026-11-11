@@ -571,3 +571,18 @@
     if (perWeek) toonWeken(weekenZichtbaar);
   }
 })();
+
+// Tijdlijn op /nieuws/: filteren op soort (nieuws, premières, nieuw in de agenda). Zonder JavaScript staat alles er.
+(() => {
+  const blok = document.querySelector("[data-tijdlijn]");
+  if (!blok) return;
+  const knoppen = blok.querySelector(".tijdlijn-filters");
+  const rijen = [...blok.querySelectorAll(".tijdlijn-lijst li")];
+  knoppen.hidden = false;
+  knoppen.addEventListener("click", (e) => {
+    const k = e.target.closest("button");
+    if (!k) return;
+    for (const b of knoppen.querySelectorAll("button")) b.setAttribute("aria-pressed", String(b === k));
+    for (const r of rijen) r.hidden = !!k.dataset.soort && r.dataset.soort !== k.dataset.soort;
+  });
+})();

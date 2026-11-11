@@ -79,6 +79,9 @@ if (t.tryoutLijst.length) write("/agenda/try-outs/", t.tryoutPagina());
 for (const [g, p] of t.genrePlaatsPaginas) write(t.genrePlaatsPad(g, p), t.genrePlaatsPagina(g, p));
 write("/festivals/", t.festivalIndex());
 for (const f of db.festivals.values()) write(`/festivals/${f.id}/`, t.festivalPagina(f));
+// Nieuws: "Net binnen" (automatisch uit de agenda) en de tijdlijn, plus een pagina per bericht (data/nieuws.json).
+write("/nieuws/", t.nieuwsPagina());
+for (const n of db.nieuws) write(`/nieuws/${n.id}/`, t.nieuwsBericht(n));
 write("/over/", t.about());
 write("/privacy/", t.privacy());
 write("/404.html", t.notFound());

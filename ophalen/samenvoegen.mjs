@@ -10,7 +10,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { slug, netteHoofdletters, netteNaam } from "./lib/normaliseer.mjs";
-import { KLEUREN, GENRES } from "../src/data.mjs";
+import { KLEUREN, GENRES, voorstellingSleutel } from "../src/data.mjs";
 import { recensie } from "./lib/recensies.mjs";
 import { artiestOfTitel, isBekend } from "./lib/artiesten.mjs";
 
@@ -713,6 +713,17 @@ write("theaters.json", theaters);
 write("voorstellingen.json", voorstellingen);
 write("speeldata.json", speeldata);
 write("te-controleren.json", controleren);
+// Wanneer een voorstelling voor het eerst in de agenda kwam (voor "Nieuw in de agenda" op de homepage en /nieuws/).
+// Een sleutel van artiesten + titel, zodat een nieuwe id of een verbeterde schrijfwijze niet opnieuw als nieuw telt.
+{
+  const pad = join(dataDir, "eerst-gezien.json");
+  const eerst = existsSync(pad) ? JSON.parse(readFileSync(pad, "utf8")) : { sinds: vandaag, voorstellingen: {} };
+  let erbij = 0;
+  for (const v of voorstellingen) if (v.artiesten.length && !eerst.voorstellingen[voorstellingSleutel(v)]) { eerst.voorstellingen[voorstellingSleutel(v)] = vandaag; erbij++; }
+  eerst.voorstellingen = Object.fromEntries(Object.entries(eerst.voorstellingen).sort());
+  writeFileSync(pad, JSON.stringify(eerst, null, 1) + "\n");
+  if (erbij) console.log(`Eerst gezien: ${erbij} nieuwe voorstellingen.`);
+}
 
 // ---------- Rapport voor de controlepagina (/controle/) ----------
 // Per dag: wat er nieuw is. Meer keren samenvoegen op één dag telt op.
