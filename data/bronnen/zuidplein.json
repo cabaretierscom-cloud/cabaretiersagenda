@@ -1,7 +1,7 @@
 {
   "bron": "zuidplein",
   "naam": "Theater Zuidplein",
-  "opgehaald": "2026-11-10",
+  "opgehaald": "2026-11-11",
   "theaters": [
     {
       "id": "theater-zuidplein",
@@ -883,6 +883,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterzuidplein.nl/agenda/tnawies-1jcb"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Ida van Dril"
+      ],
+      "titel": "Whizzkid of Oz (7+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/whizzkid-of-oz-7-9cdk"
     },
     {
       "theater": "theater-zuidplein",

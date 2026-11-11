@@ -1,7 +1,7 @@
 {
   "bron": "stoep",
   "naam": "Theater de Stoep",
-  "opgehaald": "2026-11-10",
+  "opgehaald": "2026-11-11",
   "theaters": [
     {
       "id": "theater-de-stoep",
@@ -25,19 +25,6 @@
       "status": "gepland",
       "soort": "reprise",
       "bron": "https://theaterdestoep.nl/voorstelling/sara-kroos-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
-        "Meester Mark"
-      ],
-      "titel": "Later word ik 7",
-      "genre": "cabaret",
-      "datum": "2026-11-10",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterdestoep.nl/voorstelling/meester-mark-2627"
     },
     {
       "theater": "theater-de-stoep",

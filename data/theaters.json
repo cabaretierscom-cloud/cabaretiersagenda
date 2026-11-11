@@ -680,6 +680,14 @@
     "website": "https://www.emotia.be"
   },
   {
+    "id": "feestzaal-torengalm-erpe-mere",
+    "naam": "Feestzaal Torengalm",
+    "plaats": "Erpe-Mere",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://torengalm.eventgoose.com"
+  },
+  {
     "id": "zaal-rex-essen",
     "naam": "Zaal Rex",
     "plaats": "Essen",
@@ -1024,6 +1032,14 @@
     "id": "cc-casino-houthalen-helchteren",
     "naam": "CC Casino",
     "plaats": "Houthalen Helchteren",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "zaal-centrum-houtvenne",
+    "naam": "Zaal Centrum Houtvenne",
+    "plaats": "Houtvenne",
     "land": "BE",
     "soort": "theater",
     "website": null
@@ -2643,7 +2659,9 @@
     "land": "NL",
     "soort": "comedyclub",
     "website": "https://www.comedytrain.nl",
-    "oudeIds": ["comedytrain-nieuwe-toomler-amsterdam"],
+    "oudeIds": [
+      "comedytrain-nieuwe-toomler-amsterdam"
+    ],
     "voorheen": {
       "naam": "Toomler",
       "alineas": [
@@ -3337,6 +3355,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://geesterhage.nl"
+  },
+  {
+    "id": "breda-chasse",
+    "naam": "Breda",
+    "plaats": "Chassé",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.chasse.nl"
   },
   {
     "id": "theater-hofpoort-coevorden",

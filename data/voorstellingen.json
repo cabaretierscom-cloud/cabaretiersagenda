@@ -1345,6 +1345,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "borrelnootjez-mze3ze3",
+    "titel": "Mze3ze3",
+    "artiesten": [
+      "borrelnootjez"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "boys-won-t-be-boys-oudejaars-met-rikkert",
     "titel": "Oudejaars met Rikkert",
     "artiesten": [
@@ -2205,6 +2213,14 @@
       "creators-live"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "cultuur-tony-knollt-in-concert",
+    "titel": "Tony knollt in concert",
+    "artiesten": [
+      "cultuur"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "cyrille-niel-luchtig-bekeeke",
@@ -4431,6 +4447,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "grote-klokken-zeggen-bim-bam-krulmuziek",
+    "titel": "Krulmuziek",
+    "artiesten": [
+      "grote-klokken-zeggen-bim-bam"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "grote-mensen-boef",
     "titel": "Boef",
     "artiesten": [
@@ -5218,6 +5242,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "ida-van-dril-whizzkid-of-oz",
+    "titel": "Whizzkid of Oz",
+    "artiesten": [
+      "ida-van-dril"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "impro-tastisch-amai-comedy-club-gent",
     "titel": "Impro-tastisch",
     "artiesten": [],
@@ -5325,6 +5357,9 @@
         "citaat": "Originele verteller die niet bij de geijkte comedy-onderwerpen blijft hangen.",
         "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jade-mintjens-bedankt-om-te-komen"
       }
+    ],
+    "ookGenres": [
+      "kleinkunst"
     ]
   },
   {
@@ -5692,6 +5727,14 @@
       "joep-vermolen"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "joeptube-de-zaak-a",
+    "titel": "De zAAk A",
+    "artiesten": [
+      "joeptube"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "joeptube-de-zaak-a-de-harmonie",
@@ -8015,7 +8058,10 @@
     "artiesten": [
       "nadine-froughi"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "ookGenres": [
+      "cabaret"
+    ]
   },
   {
     "id": "naomi-antonius-geen-woorden-voor-over-de-illusie-van-inclusie",
@@ -8445,6 +8491,14 @@
     "artiesten": [],
     "genre": "open-mic",
     "theater": "comedy-cafe-amsterdam"
+  },
+  {
+    "id": "open-studio-bas-van-de-ven-dolfijn-met-benen",
+    "titel": "Bas van de Ven | Dolfijn met Benen",
+    "artiesten": [
+      "open-studio"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "opera-compact-vrij-lief",
@@ -11632,13 +11686,6 @@
     "genre": "kindervoorstellingen"
   },
   {
-    "id": "tony-knollt-in-concert-de-spil",
-    "titel": "Tony knollt in concert",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "de-spil"
-  },
-  {
     "id": "toonmoment-comedyschrijfreeks-amai-comedy-club-gent",
     "titel": "Toonmoment Comedyschrijfreeks",
     "artiesten": [],
@@ -11720,14 +11767,6 @@
       "twente-plat"
     ],
     "genre": "cabaret"
-  },
-  {
-    "id": "twinkel-twinkel-kleine-ster-krulmuziek",
-    "titel": "Krulmuziek",
-    "artiesten": [
-      "twinkel-twinkel-kleine-ster"
-    ],
-    "genre": "kindervoorstellingen"
   },
   {
     "id": "uit-het-donker-vii-de-warande-turnhout",
@@ -12011,14 +12050,6 @@
     "theater": "cpunt"
   },
   {
-    "id": "vos-en-haas-met-vrienden",
-    "titel": "...met vrienden",
-    "artiesten": [
-      "vos-en-haas"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
     "id": "vrijdagavondshow-uicf-editie-comedyhuis-utrecht",
     "titel": "Vrijdagavondshow – UICF-editie",
     "artiesten": [],
@@ -12042,6 +12073,14 @@
   {
     "id": "vrouwejaars-2026",
     "titel": "",
+    "artiesten": [
+      "vrouwejaars-2026"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "vrouwejaars-2026-met-o-v-b-yora-rienstra-kim-schuddeboom-en-marie-koet",
+    "titel": "Met o.v.b. Yora Rienstra, Kim Schuddeboom en Marie Koet",
     "artiesten": [
       "vrouwejaars-2026"
     ],
@@ -12283,6 +12322,13 @@
       "wina-ricardo"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "winterwonderfeest-doornroosje-in-de-bieb-cpunt",
+    "titel": "Winterwonderfeest: Doornroosje in de bieb!",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "cpunt"
   },
   {
     "id": "wirwar-producties-weg-ermee",

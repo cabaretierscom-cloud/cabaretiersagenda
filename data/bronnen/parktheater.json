@@ -1,7 +1,7 @@
 {
   "bron": "parktheater",
   "naam": "Parktheater Eindhoven",
-  "opgehaald": "2026-11-10",
+  "opgehaald": "2026-11-11",
   "theaters": [
     {
       "id": "parktheater-eindhoven",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Johan Goossens"
-      ],
-      "titel": "Het volle leven",
-      "genre": "comedy",
-      "datum": "2026-11-10",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/het-volle-leven-htwt"
-    },
     {
       "theater": "parktheater-eindhoven",
       "artiesten": [
@@ -294,7 +281,7 @@
       "titel": "Srefidensi dey",
       "genre": "comedy",
       "datum": "2026-11-25",
-      "tijd": "20:30",
+      "tijd": "20:00",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/srefidensi-dey-n3tc"
@@ -632,6 +619,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/pan-1m77"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "Bas van de Ven | Dolfijn met Benen"
+      ],
+      "titel": "Open Studio",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/open-studio-j59m"
     },
     {
       "theater": "parktheater-eindhoven",
@@ -2439,6 +2439,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/arie-silvester-breken-de-tent-af-ynmp"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "Borrelnootjez"
+      ],
+      "titel": "Mze3ze3",
+      "genre": "comedy",
+      "datum": "2027-05-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/mze3ze3-n343"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "Borrelnootjez"
+      ],
+      "titel": "Mze3ze3",
+      "genre": "comedy",
+      "datum": "2027-05-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/mze3ze3-n343"
     },
     {
       "theater": "parktheater-eindhoven",

@@ -1,7 +1,7 @@
 {
   "bron": "leiden",
   "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-  "opgehaald": "2026-11-10",
+  "opgehaald": "2026-11-11",
   "theaters": [
     {
       "id": "leidse-schouwburg",
@@ -154,7 +154,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-13",
       "tijd": "10:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-peutercafe-kluizelaar-simone-de-jong-company/"
     },
@@ -679,19 +679,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/louise-korthals-korthals-in-stukken/"
-    },
-    {
-      "theater": "leidse-schouwburg",
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-10",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/patrick-laureij-kintsugi-reprise/"
     },
     {
       "theater": "leidse-schouwburg",

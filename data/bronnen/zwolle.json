@@ -1,7 +1,7 @@
 {
   "bron": "zwolle",
   "naam": "Zwolse Theaters",
-  "opgehaald": "2026-11-10",
+  "opgehaald": "2026-11-11",
   "theaters": [
     {
       "id": "theater-de-spiegel",
@@ -212,7 +212,7 @@
       "genre": "cabaret",
       "datum": "2026-11-14",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/cameretten"
     },
@@ -992,7 +992,7 @@
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/broeders-van-andere-moeders"
     }

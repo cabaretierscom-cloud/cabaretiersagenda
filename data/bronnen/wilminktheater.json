@@ -1,7 +1,7 @@
 {
   "bron": "wilminktheater",
   "naam": "Wilminktheater en Muziekcentrum Enschede",
-  "opgehaald": "2026-11-10",
+  "opgehaald": "2026-11-11",
   "theaters": [
     {
       "id": "wilminktheater",
@@ -21,19 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "wilminktheater",
-      "artiesten": [
-        "Plien & Bianca"
-      ],
-      "titel": "Harrekidee! - Herneming",
-      "genre": "cabaret",
-      "datum": "2026-11-10",
-      "tijd": "20:00",
-      "status": "geannuleerd",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/harrekidee-herneming-yw51"
-    },
     {
       "theater": "wilminktheater",
       "artiesten": [
@@ -343,6 +330,19 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/serieus-grappig-n8ym"
+    },
+    {
+      "theater": "wilminktheater",
+      "artiesten": [
+        "Plien & Bianca"
+      ],
+      "titel": "Harrekidee! - Herneming",
+      "genre": "cabaret",
+      "datum": "2026-12-14",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/harrekidee-herneming-yw51"
     },
     {
       "theater": "wilminktheater",

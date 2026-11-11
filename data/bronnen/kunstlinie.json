@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-10",
+  "opgehaald": "2026-11-11",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -224,15 +224,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Samar en de bange koning (8+)"
+        "Joep van Deudekom & Rob Urgert"
       ],
-      "titel": "Samar en de bange koning (8+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-20",
-      "tijd": "15:00",
+      "titel": "Joep van Deudekom & Rob Urgert",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/samar-en-de-bange-koning-8/"
+      "bron": "https://kunstlinie.nl/programma/joep-van-deudekom-rob-urgert/"
     },
     {
       "theater": "kunstlinie",
@@ -250,6 +250,19 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "Samar en de bange koning (8+)"
+      ],
+      "titel": "Samar en de bange koning (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/samar-en-de-bange-koning-8/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "De Grote Almeerse Kerst Sing-A-Long"
       ],
       "titel": "De Grote Almeerse Kerst Sing-A-Long",
@@ -259,19 +272,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/de-grote-almeerse-kerst-sing-a-long/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Joep van Deudekom & Rob Urgert"
-      ],
-      "titel": "Joep van Deudekom & Rob Urgert",
-      "genre": "cabaret",
-      "datum": "2026-12-19",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/joep-van-deudekom-rob-urgert/"
     },
     {
       "theater": "kunstlinie",

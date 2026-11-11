@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-11-10",
+  "opgehaald": "2026-11-11",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Christian van Eijkelenburg"
-      ],
-      "titel": "Small Talk",
-      "genre": "cabaret",
-      "datum": "2026-11-10",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/small-talk-fs5l"
-    },
     {
       "theater": "theater-bellevue",
       "artiesten": [
@@ -46,7 +33,7 @@
       "genre": "kleinkunst",
       "datum": "2026-11-12",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/tweede-voorronde-akf-zxgn"
     },
@@ -650,6 +637,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/double-bill-ludwig-schaft-ywj4"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [
+        "Nadine Froughi"
+      ],
+      "titel": "Daydreamer",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/daydreamer-1g25"
     },
     {
       "theater": "theater-bellevue",

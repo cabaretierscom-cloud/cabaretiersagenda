@@ -2,101 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-11-10",
+  "opgehaald": "2026-11-11",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater aan het Vrijthof",
-        "plaats": "Maastricht",
-        "land": "NL",
-        "website": "https://www.theateraanhetvrijthof.nl"
-      },
-      "artiesten": [
-        "Pieter Verelst"
-      ],
-      "titel": "Altijd Aan",
-      "genre": "cabaret",
-      "datum": "2026-11-10",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/2026/11/altijd-aan-pieter-verelst"
-    },
-    {
-      "theater": "gc-den-egger-scherpenheuvel",
-      "artiesten": [
-        "Bregje Iding",
-        "Jeroen Dyck",
-        "Peter Kluppels",
-        "MC Jarno Boone"
-      ],
-      "titel": "Humo's Comedy Cup Finalistentour",
-      "genre": "stand-up",
-      "datum": "2026-11-10",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.denegger.be/bregje-iding-jeroen-dyck-peter-kluppels-mc-jarno-boone-finalistentour-humos-comedy-cup"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Vrijetijdscentrum",
-        "plaats": "Jabbeke",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Hans Cools"
-      ],
-      "titel": "Zolang de voorraad strekt",
-      "genre": "stand-up",
-      "datum": "2026-11-10",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/hans-cools/2026-11-10/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Cultuurcaf De Barriere",
-        "plaats": "Wevelgem",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Amelie Albrecht"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-10",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.facebook.com/events/2195910408025138/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Stadsschouwburg Utrecht",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://stadsschouwburg-utrecht.nl"
-      },
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "stand-up",
-      "datum": "2026-11-10",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/bedankt-om-te-komen-jade-mintjens?q-page=jade"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -4079,6 +3987,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Feestzaal Torengalm",
+        "plaats": "Erpe-Mere",
+        "land": "BE",
+        "website": "https://torengalm.eventgoose.com"
+      },
+      "artiesten": [
+        "Seppe Toremans"
+      ],
+      "titel": "Stand-up",
+      "genre": "stand-up",
+      "datum": "2027-02-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://torengalm.eventgoose.com/events/pagA8EZap8PMrlwn/info"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "Theatercentrum",
         "plaats": "Zwevegem",
         "land": "BE",
@@ -6796,6 +6723,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Zaal Centrum",
+        "plaats": "Houtvenne",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Amelie Albrecht"
+      ],
+      "titel": "Stand-up",
+      "genre": "stand-up",
+      "datum": "2027-04-23",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.uitinvlaanderen.be/agenda/e/comedy-night/78b2ffdf-b98a-416e-acc3-63a9bc36f004"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "de Gam",
         "plaats": "Rumst",
         "land": "BE",
@@ -7457,6 +7403,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.gildhof.be/voor-normale-mensen-dries-heyneman"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Capitole",
+        "plaats": "Gent",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Arnout Van den Bossche"
+      ],
+      "titel": "De Relatiefluisteraar",
+      "genre": "stand-up",
+      "datum": "2027-05-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedyshows.be/kalender/arnout-van-den-bosche/2027-05-13/"
     },
     {
       "theater": {

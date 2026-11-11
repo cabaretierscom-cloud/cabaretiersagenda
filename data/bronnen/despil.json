@@ -1,7 +1,7 @@
 {
   "bron": "despil",
   "naam": "CC De Spil",
-  "opgehaald": "2026-11-10",
+  "opgehaald": "2026-11-11",
   "theaters": [
     {
       "id": "de-spil",
@@ -67,14 +67,16 @@
     },
     {
       "theater": "de-spil",
-      "artiesten": [],
+      "artiesten": [
+        "cultuur"
+      ],
       "titel": "Tony knollt in concert",
       "genre": "stand-up",
       "datum": "2026-11-26",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.despil.be/agenda/tony-knollt-in-concert-f7sr"
+      "bron": "https://www.despil.be/agenda/cultuur-f7sr"
     },
     {
       "theater": "de-spil",
@@ -150,7 +152,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-12-21",
       "tijd": "09:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.despil.be/agenda/in-de-kerstvakantie-7lmq"
     },
@@ -536,7 +538,7 @@
       "genre": "stand-up",
       "datum": "2027-06-18",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.despil.be/agenda/zolang-de-voorraad-strekt-herneming-lpp2"
     },
