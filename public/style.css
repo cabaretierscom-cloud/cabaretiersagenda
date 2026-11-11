@@ -1110,6 +1110,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .nb-verder{list-style:none;padding:0;margin:18px 0;display:flex;flex-direction:column;gap:6px;font-weight:600}
 .nieuws-kop{padding-bottom:0}
 .nieuws-kop+.net-binnen{padding-top:28px}
-/* Op /nieuws/ zijn "Net binnen" en "Tijdlijn" tussenkoppen, net zo groot als op /festivals/ (.sub-head). */
+/* Tussenkoppen zo groot als op /festivals/ (.sub-head): op /nieuws/ "Net binnen" en "Tijdlijn", op de homepage
+   "Voorstellingen per maand", "Zoek in de buurt", "Comedy Clubs", "Festivals" en "Genres". */
 .kleine-kop .wall-head :is(h1, h2){font-weight:800;font-size:var(--step-2);line-height:1.1}
 .nieuws-kop+.net-binnen.kleine-kop{padding-top:12px}

@@ -889,18 +889,18 @@ ${zalen ? `
   </div>
   ${strip("strip-zalen", "Theaters met de meeste voorstellingen", zalen)}
 </section>` : ""}
-<section class="block wrap kies-blok" aria-labelledby="maand-title">
+<section class="block wrap kies-blok kleine-kop" aria-labelledby="maand-title">
   <div class="wall-head"><h2 id="maand-title">Voorstellingen per maand</h2></div>
   ${maandNav(null)}
 </section>
 
-<section class="block wrap kies-blok" aria-labelledby="plaats-title">
+<section class="block wrap kies-blok kleine-kop" aria-labelledby="plaats-title">
   <div class="wall-head"><h2 id="plaats-title">Zoek in de buurt</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
   ${plaatsNav()}
 </section>
 ${netBinnenBlok()}
 ${clubs.length ? `
-<section class="wall wall-zalen" aria-labelledby="clubs-title">
+<section class="wall wall-zalen kleine-kop" aria-labelledby="clubs-title">
   <div class="wrap wall-head">
     <h2 id="clubs-title">Comedy Clubs</h2>
     <p><a href="/comedy-clubs/">Alle comedyclubs</a></p>
@@ -908,7 +908,7 @@ ${clubs.length ? `
   ${strip("strip-clubs", "Comedyclubs met de meeste voorstellingen", kaartenRij(clubs, ({ t }) => zaalKleur(t), clubKaart))}
 </section>` : ""}
 ${festivalsMetData.length ? `
-<section class="wall wall-zalen" aria-labelledby="festivals-title">
+<section class="wall wall-zalen kleine-kop" aria-labelledby="festivals-title">
   <div class="wrap wall-head">
     <h2 id="festivals-title">Festivals</h2>
     <p><a href="/festivals/">Alle festivals</a></p>
@@ -916,7 +916,7 @@ ${festivalsMetData.length ? `
   ${strip("strip-festivals", "Cabaretfestivals, de eerstvolgende voorop", kaartenRij(festivalsMetData, ({ f }) => festivalKleur(f), festivalKaart))}
 </section>` : ""}
 ${GENRE_PAGINAS.length ? `
-<section class="block wrap kies-blok" aria-labelledby="genres-title">
+<section class="block wrap kies-blok kleine-kop" aria-labelledby="genres-title">
   <div class="wall-head"><h2 id="genres-title">Genres</h2></div>
   ${genreNav()}
 </section>` : ""}
