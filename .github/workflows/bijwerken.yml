@@ -79,17 +79,21 @@ jobs:
             echo "::warning::Geen Cloud86-gegevens ingesteld; de site is niet geplaatst."
             exit 0
           fi
-          # lftp installeren. security.ubuntu.com is soms lang onbereikbaar vanaf GitHub (november 2026: een middag lang).
-          # Lukt het gewone installeren niet, dan de versie uit de hoofdreeks van de Ubuntu-uitgave (lftp/<codenaam>):
-          # die staat op de spiegel van GitHub zelf en heeft security.ubuntu.com niet nodig.
-          reeks=$(. /etc/os-release && echo "$VERSION_CODENAME")
-          for poging in 1 2 3 4; do
-            sudo apt-get update -qq > /dev/null 2>&1 || true
-            if sudo apt-get install -y -qq lftp > /dev/null 2>&1 || sudo apt-get install -y -qq "lftp/$reeks" > /dev/null; then break; fi
-            if [ "$poging" = 4 ]; then echo "::error::lftp kon niet worden geïnstalleerd."; exit 1; fi
-            echo "lftp installeren mislukt (poging $poging); over even opnieuw."
-            sleep $((poging * 10))
-          done
+          # lftp installeren. security.ubuntu.com was een middag lang onbereikbaar vanaf GitHub (november 2026) en apt haalt
+          # lftp juist daar. Lukt het gewone installeren niet binnen twee minuten, dan het pakket zelf downloaden van de
+          # gewone Ubuntu-spiegels (die hebben dezelfde bestanden) en dat installeren.
+          if ! timeout 120 sudo apt-get install -y -qq lftp > /dev/null 2>&1; then
+            echo "lftp via apt mislukt; het pakket rechtstreeks van een Ubuntu-spiegel halen."
+            versie=$(apt-cache policy lftp | awk '/Candidate:/ {print $2}')
+            arch=$(dpkg --print-architecture)
+            # De foutmelding noemde een amd64v3-pakket; probeer die variant en de gewone.
+            for spiegel in http://azure.archive.ubuntu.com/ubuntu http://archive.ubuntu.com/ubuntu http://nl.archive.ubuntu.com/ubuntu; do
+              for a in "${arch}v3" "$arch"; do
+                if curl -fsSL --retry 2 --max-time 60 -o /tmp/lftp.deb "$spiegel/pool/main/l/lftp/lftp_${versie}_${a}.deb"; then break 2; fi
+              done
+            done
+            sudo dpkg -i /tmp/lftp.deb > /dev/null || { echo "::error::lftp kon niet worden geïnstalleerd."; exit 1; }
+          fi
           lftp --version | head -1
           verbind="set sftp:auto-confirm yes; set net:max-retries 3; set net:timeout 30; open --env-password -u $GEBRUIKER sftp://$HOST"
           # Op dit hostingpakket heeft elk domein een eigen map; die van www.cabaretiers.com is cabaretiers.com/.
