@@ -72,4 +72,6 @@ Cabaret- en comedyagenda voor Nederland en België. Statische site, gebouwd door
 
 Logo: zie `ontwerp/logo/README.md` (oranje beeldmerk, punt op de i, roze .com). Favicons (`favicon.ico`, `icon-192/512.png`, `logo.svg`) maakt `scripts/favicons.mjs` uit het beeldmerk; de links in de kop hebben `?v=2` (ophogen bij een nieuw icoon, zodat Google en browsers het opnieuw ophalen), plus `public/site.webmanifest`.
 
+Affichewanden (`.strip` met `artist-card` of `poster-foto`, zoals op de homepage) lopen door tot de rand van het scherm; op desktop zijn de kaarten buiten de lijn van de inhoud verborgen tot je met de muis over de rij gaat (twee vlakken in de achtergrondkleur op `.strip-wrap`, verzoek van de eigenaar november 2026).
+
 Affichestijl: kleurvlakken in risografie-inkten (tokens `--riso-*` in `public/style.css`), Big Shoulders Display voor koppen, Instrument Sans voor tekst. Kleur alleen in affiches, artiestkaarten en detailkoppen; de speellijst blijft zwart op wit. Elke artiest heeft een vaste `kleur` uit `KLEUREN` in `src/data.mjs`.

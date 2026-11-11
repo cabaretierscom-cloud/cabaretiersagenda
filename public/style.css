@@ -1114,3 +1114,20 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
    "Voorstellingen per maand", "Zoek in de buurt", "Comedy Clubs", "Festivals" en "Genres". */
 .kleine-kop .wall-head :is(h1, h2){font-weight:800;font-size:var(--step-2);line-height:1.1}
 .nieuws-kop+.net-binnen.kleine-kop{padding-top:12px}
+
+/* Desktop: de kaarten in een affichewand die buiten de lijn van de pagina vallen (links en rechts van de inhoud),
+   zijn verborgen tot je met de muis over de rij gaat; dan schuiven ze in beeld. Zoals een schap waar je pas
+   meer van ziet als je ernaar kijkt. Twee vlakken in de achtergrondkleur dekken de zijkanten af. */
+@media (hover: hover) and (pointer: fine) {
+  .strip-wrap:has(> .strip :is(.artist-card, .poster-foto)) { --rand: max(16px, calc((100vw - var(--wrap)) / 2 + 16px)); }
+  .strip-wrap:has(> .strip :is(.artist-card, .poster-foto))::before,
+  .strip-wrap:has(> .strip :is(.artist-card, .poster-foto))::after {
+    content: ""; position: absolute; top: 0; bottom: 0; width: calc(var(--rand) - 2px); z-index: 3; pointer-events: none;
+    background: var(--paper); transition: opacity .3s ease;
+  }
+  .strip-wrap:has(> .strip :is(.artist-card, .poster-foto))::before { left: 0; }
+  .strip-wrap:has(> .strip :is(.artist-card, .poster-foto))::after { right: 0; }
+  .strip-wrap:is(:hover, :focus-within)::before, .strip-wrap:is(:hover, :focus-within)::after { opacity: 0; }
+  .strip-wrap .strip-nav { z-index: 4; }
+}
+@media (prefers-reduced-motion: reduce) { .strip-wrap::before, .strip-wrap::after { transition: none; } }
