@@ -1108,3 +1108,5 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .nb-meta{display:flex;gap:10px;align-items:center;margin:0;color:var(--ink-2)}
 .nb-bron{font-size:.9rem;color:var(--ink-2)}
 .nb-verder{list-style:none;padding:0;margin:18px 0;display:flex;flex-direction:column;gap:6px;font-weight:600}
+.nieuws-kop{padding-bottom:0}
+.nieuws-kop+.net-binnen{padding-top:28px}

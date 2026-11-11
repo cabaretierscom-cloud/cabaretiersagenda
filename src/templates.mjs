@@ -823,7 +823,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   function nieuwsPagina() {
     const rijen = tijdlijnItems();
     const filters = [["", "Alles"], ["nieuws", "Nieuws"], ["premiere", "Premières"], ["nieuw", "Nieuw in de agenda"]].filter(([k]) => !k || rijen.some((r) => r.soort === k));
-    const body = `<section class="block wrap kop-plaats"><h1>Nieuws</h1><p>Wat er net binnen is in de cabaret- en comedyagenda: premières, eerste try-outs, nieuwe voorstellingen en nieuws over artiesten en theaters.</p></section>
+    const body = `<section class="block wrap nieuws-kop" aria-labelledby="t"><div class="block-head"><h1 id="t">Nieuws</h1><p>Nieuws vanuit de theaters of van de artiesten zelf. Premières, eerste try-outs en nieuwe voorstellingen.</p></div></section>
 ${netBinnenBlok({ link: false })}
 <section class="block wrap tijdlijn" aria-labelledby="tijdlijn-titel" data-tijdlijn>
   <div class="wall-head"><h2 id="tijdlijn-titel">Tijdlijn</h2></div>
