@@ -1131,3 +1131,4 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   .strip-wrap .strip-nav { z-index: 4; }
 }
 @media (prefers-reduced-motion: reduce) { .strip-wrap::before, .strip-wrap::after { transition: none; } }
+.site-footer .footer-paginas { margin-top: -8px; }

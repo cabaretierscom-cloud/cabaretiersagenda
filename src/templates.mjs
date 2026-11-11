@@ -186,7 +186,7 @@ export function createTemplates(db, { ga = null } = {}) {
       ["theaters", "/theaters/", "Theaters"],
       ["comedyclubs", "/comedy-clubs/", "Comedy Clubs"],
       ["festivals", "/festivals/", "Festivals"],
-      ["over", "/over/", "Over"],
+      ["nieuws", "/nieuws/", "Nieuws"],
     ].map(([key, href, label]) =>
       `<a href="${href}"${key === section ? ' aria-current="page"' : ""}>${label}</a>`).join("");
     // Lange titels zonder " | Cabaretiers.com", zodat het belangrijke deel in Google zichtbaar blijft.
@@ -247,7 +247,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     </a>
     <p>Cabaret en comedy in Nederland en België, verzameld uit openbare speellijsten${db.lastFetched ? `, laatst bijgewerkt op ${fmt.full(db.lastFetched)}` : ""}. Wijzigingen voorbehouden; controleer altijd bij het theater.</p>
     <div class="footer-contact">
-    <p class="contact">Contact: <a href="mailto:${SITE.email}">${SITE.email}</a> · <a href="/privacy/">Privacy</a></p>
+    <p class="contact">Contact: <a href="mailto:${SITE.email}">${SITE.email}</a></p>
+    <p class="contact footer-paginas"><a href="/over/">Over</a> · <a href="/privacy/">Privacy</a></p>
     <ul class="social" aria-label="Volg ons">${SITE.social.map((s) => `<li><a href="${esc(s.url)}" rel="me noopener" target="_blank" aria-label="${esc(s.naam)} (opent in nieuw venster)" title="${esc(s.naam)}">${s.icoon}</a></li>`).join("")}</ul>
     </div>
   </div>
