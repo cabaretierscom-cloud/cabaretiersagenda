@@ -79,7 +79,12 @@ jobs:
             echo "::warning::Geen Cloud86-gegevens ingesteld; de site is niet geplaatst."
             exit 0
           fi
-          sudo apt-get install -y -qq lftp > /dev/null
+          # lftp installeren; de Ubuntu-servers zijn soms even onbereikbaar, dus vers ophalen en een paar keer proberen.
+          for poging in 1 2 3 4; do
+            if sudo apt-get update -qq > /dev/null 2>&1 && sudo apt-get install -y -qq lftp > /dev/null; then break; fi
+            if [ "$poging" = 4 ]; then echo "::error::lftp kon niet worden geïnstalleerd."; exit 1; fi
+            sleep $((poging * 15))
+          done
           verbind="set sftp:auto-confirm yes; set net:max-retries 3; set net:timeout 30; open --env-password -u $GEBRUIKER sftp://$HOST"
           # Op dit hostingpakket heeft elk domein een eigen map; die van www.cabaretiers.com is cabaretiers.com/.
           DOEL=cabaretiers.com
