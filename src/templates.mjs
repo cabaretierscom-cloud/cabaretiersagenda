@@ -785,10 +785,10 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       : `${label}<b>${esc(artistNames(g.voorstelling))}</b><p>${tekst}</p>${voet}`;
     return `<li><a class="pi ${klassen}${foto ? " foto" : ""} tickets" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow"${ticketData(g)} style="--c:${kleur};--r:${r}deg;${extra}"><span class="vlak" aria-hidden="true"></span>${inhoud}<span class="visually-hidden"> (${esc(x.soort)}: ${esc(artistNames(g.voorstelling))} op ${fmt.full(g.datum)} in ${esc(t.naam)}; externe website, opent in een nieuw tabblad)</span></a></li>`;
   }
-  function netBinnenBlok({ kop = "h2", link = true } = {}) {
+  function netBinnenBlok({ kop = "h2", link = true, klein = false } = {}) {
     const items = netBinnenItems();
     if (!items.length) return "";
-    return `<section class="block wrap net-binnen" aria-labelledby="net-binnen-titel">
+    return `<section class="block wrap net-binnen${klein ? " kleine-kop" : ""}" aria-labelledby="net-binnen-titel">
   <div class="wall-head"><${kop} id="net-binnen-titel">Net binnen</${kop}>${link ? `<p><a href="/nieuws/">Alles in nieuws</a></p>` : ""}</div>
   <ul class="memo">${items.map(postit).join("")}</ul>
 </section>`;
@@ -824,8 +824,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const rijen = tijdlijnItems();
     const filters = [["", "Alles"], ["nieuws", "Nieuws"], ["premiere", "Premières"], ["nieuw", "Nieuw in de agenda"]].filter(([k]) => !k || rijen.some((r) => r.soort === k));
     const body = `<section class="block wrap nieuws-kop" aria-labelledby="t"><div class="block-head"><h1 id="t">Nieuws</h1><p>Nieuws vanuit de theaters of van de artiesten zelf. Premières, eerste try-outs en nieuwe voorstellingen.</p></div></section>
-${netBinnenBlok({ link: false })}
-<section class="block wrap tijdlijn" aria-labelledby="tijdlijn-titel" data-tijdlijn>
+${netBinnenBlok({ link: false, klein: true })}
+<section class="block wrap tijdlijn kleine-kop" aria-labelledby="tijdlijn-titel" data-tijdlijn>
   <div class="wall-head"><h2 id="tijdlijn-titel">Tijdlijn</h2></div>
   <div class="tijdlijn-filters" role="group" aria-label="Filter de tijdlijn" hidden>${filters.map(([k, n], i) => `<button type="button" data-soort="${k}" aria-pressed="${i === 0}">${n}</button>`).join("")}</div>
   <ol class="tijdlijn-lijst">${rijen.map((r) => `
