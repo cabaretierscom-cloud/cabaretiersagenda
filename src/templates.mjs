@@ -789,9 +789,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const items = netBinnenItems();
     if (!items.length) return "";
     return `<section class="block wrap net-binnen" aria-labelledby="net-binnen-titel">
-  <div class="wall-head"><${kop} id="net-binnen-titel">Net binnen</${kop}>${link ? `<p><a href="/nieuws/">Al het nieuws</a></p>` : ""}</div>
+  <div class="wall-head"><${kop} id="net-binnen-titel">Net binnen</${kop}>${link ? `<p><a href="/nieuws/">Alles in nieuws</a></p>` : ""}</div>
   <ul class="memo">${items.map(postit).join("")}</ul>
-  <p class="memo-uitleg">Premières, eerste try-outs en voorstellingen die net in de agenda staan. Elke nacht bijgewerkt.</p>
 </section>`;
   }
 
