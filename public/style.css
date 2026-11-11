@@ -1020,9 +1020,10 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   --vouw:28px; --knip:calc(var(--vouw) * .707);
   --donker:color-mix(in srgb, var(--c) 60%, #000); --midden:color-mix(in srgb, var(--c) 80%, #000); --licht:color-mix(in srgb, var(--c) 86%, #fff);
   background:var(--c);
-  filter:drop-shadow(0 1px 1px rgba(0,0,0,.10)) drop-shadow(0 10px 9px rgba(0,0,0,.22));
-  transform:rotate(var(--r,0deg));transition:transform .18s ease, filter .18s ease}
-.pi:hover,.pi:focus-visible{transform:rotate(0) translateY(-4px);filter:drop-shadow(0 1px 1px rgba(0,0,0,.10)) drop-shadow(0 16px 14px rgba(0,0,0,.26))}
+  /* Schaduw met box-shadow, niet met filter: een filter op een scheef briefje maakt de tekst wazig. */
+  box-shadow:0 1px 1px rgba(0,0,0,.08), 0 12px 14px -8px rgba(0,0,0,.32);
+  transform:rotate(var(--r,0deg));transition:transform .18s ease, box-shadow .18s ease}
+.pi:hover,.pi:focus-visible{transform:rotate(0) translateY(-4px);box-shadow:0 1px 1px rgba(0,0,0,.08), 0 18px 20px -8px rgba(0,0,0,.36)}
 
 /* ---- Vouwen: de hoek is weggevouwen (doorzichtig) en het flapje ligt op het briefje, donker in de vouw, licht naar de punt. ---- */
 .pi::after{content:none;position:absolute;width:var(--vouw);height:var(--vouw);filter:drop-shadow(0 0 2px rgba(0,0,0,.2))}
