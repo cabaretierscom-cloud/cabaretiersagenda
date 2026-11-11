@@ -1019,22 +1019,26 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .pi{position:relative;display:flex;flex-direction:column;gap:6px;aspect-ratio:1/1;padding:26px 18px 16px;color:#121212;text-decoration:none;
   --vouw:28px; --knip:calc(var(--vouw) * .707);
   --donker:color-mix(in srgb, var(--c) 60%, #000); --midden:color-mix(in srgb, var(--c) 80%, #000); --licht:color-mix(in srgb, var(--c) 86%, #fff);
-  background:var(--c);
-  /* Schaduw met box-shadow, niet met filter: een filter op een scheef briefje maakt de tekst wazig. */
-  box-shadow:0 1px 1px rgba(0,0,0,.08), 0 12px 14px -8px rgba(0,0,0,.32);
-  transform:rotate(var(--r,0deg));transition:transform .18s ease, box-shadow .18s ease}
-.pi:hover,.pi:focus-visible{transform:rotate(0) translateY(-4px);box-shadow:0 1px 1px rgba(0,0,0,.08), 0 18px 20px -8px rgba(0,0,0,.36)}
+  transform:rotate(var(--r,0deg));transition:transform .18s ease;isolation:isolate}
+/* Het gekleurde vlak is een aparte laag achter de tekst (.vlak). De schaduw is een filter op die laag, zodat hij de
+   weggevouwen hoek volgt; de tekst zelf heeft geen filter en blijft scherp (een filter op een scheef briefje met tekst
+   maakt die tekst wazig). */
+.pi>.vlak{position:absolute;inset:0;z-index:-1;background:var(--c);
+  filter:drop-shadow(0 1px 1px rgba(0,0,0,.10)) drop-shadow(0 10px 9px rgba(0,0,0,.22));transition:filter .18s ease}
+.pi:hover,.pi:focus-visible{transform:rotate(0) translateY(-4px)}
+.pi:hover>.vlak,.pi:focus-visible>.vlak{filter:drop-shadow(0 1px 1px rgba(0,0,0,.10)) drop-shadow(0 16px 14px rgba(0,0,0,.26))}
 
 /* ---- Vouwen: de hoek is weggevouwen (doorzichtig) en het flapje ligt op het briefje, donker in de vouw, licht naar de punt. ---- */
 .pi::after{content:none;position:absolute;width:var(--vouw);height:var(--vouw);filter:drop-shadow(0 0 2px rgba(0,0,0,.2))}
-.pi.vouw-rechtsonder{background:linear-gradient(315deg, transparent var(--knip), var(--c) calc(var(--knip) + .5px))}
+.pi.vouw-rechtsonder>.vlak{background:linear-gradient(315deg, transparent var(--knip), var(--c) calc(var(--knip) + .5px))}
 .pi.vouw-rechtsonder::after{content:"";right:0;bottom:0;background:linear-gradient(to top left, transparent 50%, var(--donker) 50%, var(--midden) 62%, var(--licht))}
-.pi.vouw-linksonder{background:linear-gradient(45deg, transparent var(--knip), var(--c) calc(var(--knip) + .5px))}
+.pi.vouw-linksonder>.vlak{background:linear-gradient(45deg, transparent var(--knip), var(--c) calc(var(--knip) + .5px))}
 .pi.vouw-linksonder::after{content:"";left:0;bottom:0;background:linear-gradient(to top right, transparent 50%, var(--donker) 50%, var(--midden) 62%, var(--licht))}
-.pi.vouw-linksboven{background:linear-gradient(135deg, transparent var(--knip), var(--c) calc(var(--knip) + .5px))}
+.pi.vouw-linksboven>.vlak{background:linear-gradient(135deg, transparent var(--knip), var(--c) calc(var(--knip) + .5px))}
 .pi.vouw-linksboven::after{content:"";left:0;top:0;background:linear-gradient(to bottom right, transparent 50%, var(--donker) 50%, var(--midden) 62%, var(--licht))}
 /* Opgekrulde hoek: groter flapje met een bolle (afgeronde) punt, donker in de vouw en licht op de bolling */
-.pi.krul{--vouw:40px;background:linear-gradient(315deg, transparent var(--knip), var(--c) calc(var(--knip) + .5px))}
+.pi.krul{--vouw:40px}
+.pi.krul>.vlak{background:linear-gradient(315deg, transparent var(--knip), var(--c) calc(var(--knip) + .5px))}
 .pi.krul::after{content:"";right:0;bottom:0;border-top-left-radius:85% 85%;
   background:linear-gradient(to top left, transparent 50%, var(--donker) 50%, var(--midden) 58%, var(--licht) 80%, color-mix(in srgb, var(--c) 70%, #fff));
   clip-path:polygon(0 0,100% 0,0 100%);filter:drop-shadow(-1px -1px 2px rgba(0,0,0,.18))}
@@ -1048,9 +1052,9 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .pi.tape-hoek::before{content:"";top:2px;right:-18px;width:70px;height:20px;transform:rotate(45deg);background:rgba(130,150,230,.7);box-shadow:0 1px 2px rgba(0,0,0,.15)}
 .pi.pin::before{content:"";top:-20px;left:var(--pinx,22px);width:46px;height:46px;background:url(/punaise.svg) center/contain no-repeat}
 /* Echte post-it: iets donkerder plakstrookje bovenaan, verder niets */
-.pi.strook{background-image:linear-gradient(180deg, rgba(0,0,0,.06) 0 16px, transparent 16px)}
-.pi.strook.vouw-rechtsonder{background:linear-gradient(180deg, rgba(0,0,0,.06) 0 16px, transparent 16px), linear-gradient(315deg, transparent var(--knip), var(--c) calc(var(--knip) + .5px))}
-.pi.strook.vouw-linksonder{background:linear-gradient(180deg, rgba(0,0,0,.06) 0 16px, transparent 16px), linear-gradient(45deg, transparent var(--knip), var(--c) calc(var(--knip) + .5px))}
+.pi.strook>.vlak{background-image:linear-gradient(180deg, rgba(0,0,0,.06) 0 16px, transparent 16px)}
+.pi.strook.vouw-rechtsonder>.vlak{background:linear-gradient(180deg, rgba(0,0,0,.06) 0 16px, transparent 16px), linear-gradient(315deg, transparent var(--knip), var(--c) calc(var(--knip) + .5px))}
+.pi.strook.vouw-linksonder>.vlak{background:linear-gradient(180deg, rgba(0,0,0,.06) 0 16px, transparent 16px), linear-gradient(45deg, transparent var(--knip), var(--c) calc(var(--knip) + .5px))}
 .pi .wat{font:700 .7rem/1 var(--font-body);letter-spacing:.1em;text-transform:uppercase}
 .pi b{font-family:var(--font-display);font-weight:900;font-size:1.9rem;line-height:.92;text-transform:uppercase;overflow-wrap:break-word;hyphens:auto}
 .pi.bericht b{font-size:1.5rem;line-height:.98}

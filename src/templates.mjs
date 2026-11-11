@@ -768,7 +768,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     let [klassen, r, extra] = POSTIT_VARIANTEN[i % POSTIT_VARIANTEN.length];
     const kleur = x.n ? "#F3F3F6" : POSTIT_KLEUREN[i % POSTIT_KLEUREN.length];
     if (x.n) {
-      return `<li><a class="pi bericht ${klassen}" href="${nieuwsPad(x.n)}" style="--c:${kleur};--r:${r}deg;${extra}"><span class="wat">Nieuws</span><b>${esc(x.n.titel)}</b><span class="voet"><span>${esc(fmt.dayMonth(x.n.datum))}</span><span>Lees meer →</span></span></a></li>`;
+      return `<li><a class="pi bericht ${klassen}" href="${nieuwsPad(x.n)}" style="--c:${kleur};--r:${r}deg;${extra}"><span class="vlak" aria-hidden="true"></span><span class="wat">Nieuws</span><b>${esc(x.n.titel)}</b><span class="voet"><span>${esc(fmt.dayMonth(x.n.datum))}</span><span>Lees meer →</span></span></a></li>`;
     }
     const g = x.g, v = V.get(g.voorstelling), t = T.get(g.theater);
     const titel = echteTitel(g.voorstelling);
@@ -783,7 +783,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const inhoud = foto
       ? `<img src="${esc(foto.bestand)}" alt="" loading="lazy"${uitsnede(foto, 1.72)}${foto.maker ? ` title="Foto: ${esc(foto.maker)}"` : ""}><span class="tekst">${label}<b>${esc(artistNames(g.voorstelling))}</b>${voet}</span>`
       : `${label}<b>${esc(artistNames(g.voorstelling))}</b><p>${tekst}</p>${voet}`;
-    return `<li><a class="pi ${klassen}${foto ? " foto" : ""} tickets" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow"${ticketData(g)} style="--c:${kleur};--r:${r}deg;${extra}">${inhoud}<span class="visually-hidden"> (${esc(x.soort)}: ${esc(artistNames(g.voorstelling))} op ${fmt.full(g.datum)} in ${esc(t.naam)}; externe website, opent in een nieuw tabblad)</span></a></li>`;
+    return `<li><a class="pi ${klassen}${foto ? " foto" : ""} tickets" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow"${ticketData(g)} style="--c:${kleur};--r:${r}deg;${extra}"><span class="vlak" aria-hidden="true"></span>${inhoud}<span class="visually-hidden"> (${esc(x.soort)}: ${esc(artistNames(g.voorstelling))} op ${fmt.full(g.datum)} in ${esc(t.naam)}; externe website, opent in een nieuw tabblad)</span></a></li>`;
   }
   function netBinnenBlok({ kop = "h2", link = true } = {}) {
     const items = netBinnenItems();
