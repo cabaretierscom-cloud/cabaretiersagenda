@@ -79,11 +79,14 @@ jobs:
             echo "::warning::Geen Cloud86-gegevens ingesteld; de site is niet geplaatst."
             exit 0
           fi
-          # lftp installeren; de Ubuntu-servers zijn soms even onbereikbaar, dus vers ophalen en een paar keer proberen.
+          # lftp installeren. security.ubuntu.com is soms lang onbereikbaar vanaf GitHub (november 2026: drie keer achter
+          # elkaar); na de eerste mislukte poging halen we die pakketten van de spiegel van Azure, die dezelfde heeft.
           for poging in 1 2 3 4; do
             if sudo apt-get update -qq > /dev/null 2>&1 && sudo apt-get install -y -qq lftp > /dev/null; then break; fi
             if [ "$poging" = 4 ]; then echo "::error::lftp kon niet worden geïnstalleerd."; exit 1; fi
-            sleep $((poging * 15))
+            echo "lftp installeren mislukt (poging $poging); verder via de Azure-spiegel."
+            sudo sed -i -E 's#https?://security\.ubuntu\.com/ubuntu#http://azure.archive.ubuntu.com/ubuntu#g' /etc/apt/sources.list /etc/apt/sources.list.d/* 2>/dev/null || true
+            sleep $((poging * 10))
           done
           verbind="set sftp:auto-confirm yes; set net:max-retries 3; set net:timeout 30; open --env-password -u $GEBRUIKER sftp://$HOST"
           # Op dit hostingpakket heeft elk domein een eigen map; die van www.cabaretiers.com is cabaretiers.com/.
