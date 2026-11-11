@@ -726,6 +726,12 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     nieuwOpDag.set(d, [...(nieuwOpDag.get(d) || []), v]);
   }
   const BULK = 40;
+  // Een dag met veel nieuwe voorstellingen tegelijk (alle genres samen) is een nieuwe bron, geen nieuwe aankondigingen.
+  const totaalOpDag = new Map();
+  for (const d of eerstOp.values()) totaalOpDag.set(d, (totaalOpDag.get(d) || 0) + 1);
+  const bulkDag = (d) => d === db.eerstGezien.sinds || (totaalOpDag.get(d) || 0) > BULK;
+  // Echt nieuw: voor het eerst gezien na de eerste vulling, op een gewone dag (niet bij een nieuwe bron).
+  const echtNieuw = (vid) => { const v = V.get(vid), d = eerstOp.get(voorstellingSleutel(v)); return !!d && !bulkDag(d); };
   const eersteGig = (vid) => db.upcoming.find((g) => g.voorstelling === vid);
 
   function netBinnenItems() {
@@ -735,10 +741,11 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       if (g.datum > tot) break;
       if (!geenKind(g) || gezien.has(g.voorstelling) || !V.get(g.voorstelling).artiesten.length) continue;
       if (g.soort === "première") { premieres.push({ soort: "Première", g }); gezien.add(g.voorstelling); }
-      // Eerste try-out: er is geen eerdere try-out van deze voorstelling (ook niet in het archief).
-      else if (g.soort === "try-out" && !db.gigs.some((x) => x.voorstelling === g.voorstelling && x.soort === "try-out" && x.datum < g.datum)) { premieres.push({ soort: "Eerste try-out", g }); gezien.add(g.voorstelling); }
+      // Eerste try-out: alleen bij een voorstelling die echt nieuw in de agenda kwam (niet bij de eerste vulling of een
+      // nieuwe bron: dan kunnen er al eerdere try-outs geweest zijn die we niet kennen) en zonder eerdere speeldatum.
+      else if (g.soort === "try-out" && echtNieuw(g.voorstelling) && !db.gigs.some((x) => x.voorstelling === g.voorstelling && x.datum < g.datum)) { premieres.push({ soort: "Eerste try-out", g }); gezien.add(g.voorstelling); }
     }
-    const nieuw = [...nieuwOpDag].filter(([d, l]) => d >= plusDagen(db.today, -10) && l.length <= BULK).sort((a, b) => b[0].localeCompare(a[0]))
+    const nieuw = [...nieuwOpDag].filter(([d]) => d >= plusDagen(db.today, -10) && !bulkDag(d)).sort((a, b) => b[0].localeCompare(a[0]))
       .flatMap(([, l]) => l).filter((v) => v.artiesten.length <= 2).map((v) => ({ soort: "Nieuw in de agenda", g: eersteGig(v.id) })).filter((x) => x.g && !gezien.has(x.g.voorstelling));
     // Waar nog kaarten voor zijn eerst; uitverkochte achteraan.
     const kaarten = (x) => (["uitverkocht", "geannuleerd", "verplaatst"].includes(x.g.status) ? 1 : 0);
@@ -798,7 +805,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       const namen = l.map((v) => { const p = voorstellingPad.get(v.id) || artiestPad(v.artiesten[0]); return `<a href="${p}">${esc(artistNames(v.id))}</a>${echteTitel(v.id) ? ` (<em>${esc(echteTitel(v.id))}</em>)` : ""}`; });
       rijen.push(l.length === 1
         ? { soort: "nieuw", datum: d, titel: `${esc(artistNames(l[0].id))} staat in de agenda`, tekst: `Nieuw: ${namen[0]}.`, link: [voorstellingPad.get(l[0].id) || artiestPad(l[0].artiesten[0]), "Speellijst →"] }
-        : { soort: "nieuw", datum: d, titel: `${l.length} nieuwe voorstellingen in de agenda`, tekst: `${l.length > BULK ? "Er kwamen nieuwe theaters en speellijsten bij. " : ""}Onder meer ${opsomming(namen.slice(0, 6))}.`, link: null });
+        : { soort: "nieuw", datum: d, titel: `${l.length} nieuwe voorstellingen in de agenda`, tekst: `${bulkDag(d) ? "Er kwamen nieuwe theaters en speellijsten bij. " : ""}Onder meer ${opsomming(namen.slice(0, 6))}.`, link: null });
     }
     // Premières die net geweest zijn (uit het archief), één per voorstelling.
     const gehad = new Set();
