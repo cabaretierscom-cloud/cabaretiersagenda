@@ -1073,6 +1073,8 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   .pi.bericht b{font-size:1.1rem}.pi.foto{padding:0}.pi.foto img{height:110px}.pi.foto .tekst{padding:10px 12px 12px}.pi.foto b{font-size:1.25rem}
 }
 @media (prefers-reduced-motion: reduce){.pi{transition:none}}
+/* Op de telefoon zes briefjes (drie rijen van twee), op grotere schermen acht. */
+@media (max-width:640px){.memo>li:nth-child(n+7){display:none}}
 .pi .voet svg{width:12px;height:12px;vertical-align:-1px}
 
 /* Tijdlijn op /nieuws/: datum groot, gekleurd label, één zin; filterknoppen alleen met JavaScript (agenda.js). */
