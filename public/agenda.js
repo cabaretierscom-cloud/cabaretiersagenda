@@ -361,7 +361,10 @@
     const params = new URLSearchParams(location.search);
     let km = [10, 25, 50].includes(+params.get("km")) ? +params.get("km") : 25;
     let punt = null, naam = "", data = null, lijst = [], getoond = 0;
-    const haal = () => data ? Promise.resolve(data) : fetch(buurt.dataset.alles).then((r) => r.json()).then((j) => (data = leesAlles(j)));
+    // Zit er een oude versie zonder coördinaten in de browser, dan het bestand opnieuw ophalen.
+    const haal = () => data ? Promise.resolve(data) : fetch(buurt.dataset.alles).then((r) => r.json())
+      .then((j) => (j.z.some((z) => z.length > 6) ? j : fetch(buurt.dataset.alles, { cache: "reload" }).then((r) => r.json())))
+      .then((j) => (data = leesAlles(j)));
     // Afstand hemelsbreed (haversine), in kilometers.
     const afstand = ([a, b], [c, d]) => {
       const r = Math.PI / 180, x = Math.sin(((c - a) * r) / 2) ** 2 + Math.cos(a * r) * Math.cos(c * r) * Math.sin(((d - b) * r) / 2) ** 2;

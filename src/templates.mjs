@@ -559,7 +559,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const grens = list[Math.min(max, list.length) - 1].datum;
     const eerste = list.filter((g) => g.datum <= grens);
     return { eerste, html: `${filters(list, { genre: !genre })}
-      <div id="gigs" data-alles="/agenda/alles.js?v=${tellers.speeldata}-${db.today}" data-tot="${grens}" data-totaal="${list.length}"${genre ? ` data-vast-genre="${genre}"` : ""}${soort ? ` data-vast-soort="${soort}"` : ""}>${monthGroups(eerste, rijOpts)}</div>
+      <div id="gigs" data-alles="/agenda/alles.js?v=${allesVersie()}" data-tot="${grens}" data-totaal="${list.length}"${genre ? ` data-vast-genre="${genre}"` : ""}${soort ? ` data-vast-soort="${soort}"` : ""}>${monthGroups(eerste, rijOpts)}</div>
       ${leegBlok}
       <p class="meer-weken" id="laad-meer"><button type="button" class="btn" id="laad-week">Toon alle ${list.length.toLocaleString("nl-NL")} voorstellingen</button></p>` };
   }
@@ -718,7 +718,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       .filter(([, c]) => c).sort((a, b) => a[0].localeCompare(b[0], "nl"));
     const body = `<section class="block wrap" aria-labelledby="t">
   <div class="block-head"><h1 id="t">Bij mij in de buurt</h1><p>Cabaret en comedy bij jou in de buurt: gebruik je locatie of kies een plaats.</p></div>
-  <div class="buurt" data-buurt data-alles="/agenda/alles.js?v=${tellers.speeldata}-${db.today}" hidden>
+  <div class="buurt" data-buurt data-alles="/agenda/alles.js?v=${allesVersie()}" hidden>
     <div class="buurt-kies">
       <button type="button" class="btn buurt-locatie">${ICON.pin}Gebruik mijn locatie</button>
       <span class="buurt-of">of</span>
@@ -987,6 +987,10 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   // Alle komende voorstellingen in een compact bestand (/agenda/alles.js, inhoud JSON) voor /agenda/: agenda.js laadt
   // daaruit alles na de eerste week en zoekt erin. Artiesten, zalen en voorstellingen staan er één keer in;
   // de rijen verwijzen ernaar met een volgnummer. Kleuren, iconen en namen zijn al klaar voor de pagina.
+  // Versie in het adres van /agenda/alles.js: een vingerafdruk van de inhoud. Zo haalt een browser het bestand opnieuw
+  // zodra er iets verandert (ook als het aantal voorstellingen gelijk blijft, zoals toen de coördinaten erbij kwamen).
+  let allesVersieCache;
+  const allesVersie = () => (allesVersieCache ??= createHash("sha1").update(JSON.stringify(agendaData())).digest("hex").slice(0, 10));
   function agendaData() {
     const ai = new Map(), zi = new Map(), vi = new Map(), a = [], z = [], v = [];
     const nr = (map, lijst, id, maak) => { if (!map.has(id)) { map.set(id, lijst.length); lijst.push(maak()); } return map.get(id); };
@@ -1014,7 +1018,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${maandNav(null)}
       ${uitgelichtBlok("agenda")}
       ${filters(up)}
-      <div id="gigs" data-alles="/agenda/alles.js?v=${tellers.speeldata}-${db.today}" data-tot="${tot}" data-totaal="${up.length}"><section class="month-group week-groep"><h3>${weekLabel(eerste[0]?.datum || db.today, tot)} <small>${plural(eerste.length, "voorstelling", "voorstellingen")}</small></h3>${eerste.map((g) => gigRow(g)).join("")}</section></div>
+      <div id="gigs" data-alles="/agenda/alles.js?v=${allesVersie()}" data-tot="${tot}" data-totaal="${up.length}"><section class="month-group week-groep"><h3>${weekLabel(eerste[0]?.datum || db.today, tot)} <small>${plural(eerste.length, "voorstelling", "voorstellingen")}</small></h3>${eerste.map((g) => gigRow(g)).join("")}</section></div>
       ${leegBlok}
       <p class="meer-weken" id="laad-meer" hidden><button type="button" class="btn" id="laad-week">Toon alle volgende voorstellingen</button></p>
       <p class="more" id="naar-maand"><a class="btn" href="/agenda/${maandId(maanden[0])}/">Verder in ${maandNaam(maanden[0])}</a></p>
