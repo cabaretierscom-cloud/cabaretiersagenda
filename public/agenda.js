@@ -296,39 +296,14 @@
     };
   }
 
-  // ---------- /agenda/: alle voorstellingen, eerst een week, dan de rest ----------
-  // De pagina bevat de eerste week. De rest staat in /agenda/alles.js (JSON); "Toon alle volgende voorstellingen" voegt
-  // in één keer de rest toe, en zoeken of filteren gebeurt in alle voorstellingen. De rijen hebben dezelfde
-  // opmaak als gigRow() in src/templates.mjs.
-  const alles = document.querySelector("#gigs[data-alles]");
-  if (alles) {
-    const form = document.getElementById("filters");
-    if (form) form.hidden = false;
-    const q = document.getElementById("f-q"), vinkUit = document.getElementById("f-uitverkocht");
-    const regel = document.getElementById("result-line"), leeg = document.getElementById("empty");
-    const laadMeer = document.getElementById("laad-meer"), laadKnop = document.getElementById("laad-week"), naarMaand = document.getElementById("naar-maand");
-    const kaal = (t) => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  // Een agendarij uit de gegevens van /agenda/alles.js; dezelfde opmaak als gigRow() in src/templates.mjs (pas ze samen
+  // aan). Gebruikt door /agenda/, de genrepagina's en /in-de-buurt/.
+  const rijVoor = (() => {
     const esc = (t) => String(t ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
     const nl = (o) => new Intl.DateTimeFormat("nl-NL", o);
-    const fDag = nl({ day: "numeric", month: "long" }), fVol = nl({ day: "numeric", month: "long", year: "numeric" }), fKort = nl({ weekday: "short" });
+    const fVol = nl({ day: "numeric", month: "long", year: "numeric" }), fKort = nl({ weekday: "short" });
     const d = (iso) => new Date(iso + "T12:00:00");
-    const maandag = (iso) => { const x = new Date(iso + "T12:00:00Z"); return new Date(x.getTime() - ((x.getUTCDay() + 6) % 7) * 864e5).toISOString().slice(0, 10); };
-    const zondag = (iso) => new Date(new Date(maandag(iso) + "T12:00:00Z").getTime() + 6 * 864e5).toISOString().slice(0, 10);
-    const label = (van, tot) => van === tot ? fDag.format(d(van)) : van.slice(0, 7) === tot.slice(0, 7) ? `${d(van).getDate()} – ${fDag.format(d(tot))}` : `${fDag.format(d(van))} – ${fDag.format(d(tot))}`;
-    const aantal = (n) => `${n} ${n === 1 ? "voorstelling" : "voorstellingen"}`;
-
-    let data = null, laden = null;
-    const haal = () => laden || (laden = fetch(alles.dataset.alles).then((r) => r.json()).then((j) => {
-      data = j;
-      data.rijen = j.r.map(([datum, tijd, vn, zn, status, soort, bron, opmerking]) => {
-        const v = j.v[vn], z = j.z[zn];
-        const namen = v[0].map((i) => j.a[i][1]);
-        return { datum, tijd, v, z, status, soort, bron, opmerking, genre: v[4], genres: [v[4], ...(v[6] || [])], zoek: kaal([v[1], z[1], z[2], ...namen].join(" ")) };
-      });
-      return data;
-    }));
-
-    function rijHtml(g) {
+    return function rijVoor(data, g, vastGenre, vastSoort) {
       const [ais, titel, echte, pad, , kleur] = g.v, [zid, znaam, plaats, pid, land] = g.z;
       const namen = ais.map((i) => data.a[i][1]).join(" & ");
       // data.a[i][0] is het adres van de artiest (of het festival); een oud bestand heeft nog de id.
@@ -358,7 +333,131 @@
       <div class="venue"><a href="/theaters/${zid}/">${data.iconen.pin || ""}<span class="visually-hidden">Theater: </span>${esc(znaam)}</a><span><a href="/theaters-in-${pid}/">${esc(plaats)}</a>, ${esc(land)}</span></div>
       <div class="side">${status}<div class="knoppen">${ticket}</div></div>
     </article>`;
+    };
+  })();
+  // De rijen van /agenda/alles.js leesbaar maken (artiesten, zaal, genres en een zoektekst per voorstelling).
+  const kaalTekst = (t) => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const leesAlles = (j) => {
+    j.rijen = j.r.map(([datum, tijd, vn, zn, status, soort, bron, opmerking]) => {
+      const v = j.v[vn], z = j.z[zn];
+      const namen = v[0].map((i) => j.a[i][1]);
+      return { datum, tijd, v, z, status, soort, bron, opmerking, genre: v[4], genres: [v[4], ...(v[6] || [])], zoek: kaalTekst([v[1], z[1], z[2], ...namen].join(" ")) };
+    });
+    return j;
+  };
+
+
+  // ---------- /in-de-buurt/: voorstellingen bij je in de buurt ----------
+  // Na een klik vraagt de browser om je locatie (of je kiest een plaats). De afstand tot de plaats van elke zaal
+  // (coördinaten in /agenda/alles.js) wordt hier uitgerekend; de locatie gaat nergens heen en wordt niet bewaard.
+  const buurt = document.querySelector("[data-buurt]");
+  if (buurt) {
+    buurt.hidden = false;
+    const coords = JSON.parse(document.getElementById("buurt-coordinaten")?.textContent || "{}");
+    const status = buurt.querySelector(".buurt-status"), lijstEl = buurt.querySelector(".buurt-lijst");
+    const meer = buurt.querySelector(".laad-meer"), meerKnop = buurt.querySelector(".buurt-meer");
+    const invoer = buurt.querySelector(".buurt-plaats input"), locKnop = buurt.querySelector(".buurt-locatie");
+    const uitverkocht = buurt.querySelector(".buurt-uitverkocht"), kinder = buurt.querySelector(".buurt-kinder");
+    const params = new URLSearchParams(location.search);
+    let km = [10, 25, 50].includes(+params.get("km")) ? +params.get("km") : 25;
+    let punt = null, naam = "", data = null, lijst = [], getoond = 0;
+    const haal = () => data ? Promise.resolve(data) : fetch(buurt.dataset.alles).then((r) => r.json()).then((j) => (data = leesAlles(j)));
+    // Afstand hemelsbreed (haversine), in kilometers.
+    const afstand = ([a, b], [c, d]) => {
+      const r = Math.PI / 180, x = Math.sin(((c - a) * r) / 2) ** 2 + Math.cos(a * r) * Math.cos(c * r) * Math.sin(((d - b) * r) / 2) ** 2;
+      return 12742 * Math.asin(Math.sqrt(x));
+    };
+    const nl = new Intl.DateTimeFormat("nl-NL", { weekday: "long", day: "numeric", month: "long" });
+    const zetKnoppen = () => buurt.querySelectorAll(".buurt-straal button").forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.km === km)));
+    const bewaarAdres = () => {
+      const p = new URLSearchParams();
+      if (naam && naam !== "jouw locatie") p.set("plaats", naam);
+      if (km !== 25) p.set("km", km);
+      history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
+    };
+    const toonTot = (n) => {
+      const doel = Math.min(n, lijst.length);
+      let html = "", vorige = getoond ? lijst[getoond - 1].g.datum : "";
+      for (; getoond < doel; getoond++) {
+        const { g, km: afst } = lijst[getoond];
+        if (g.datum !== vorige) { html += `<h3 class="buurt-dag">${nl.format(new Date(g.datum + "T12:00:00"))}</h3>`; vorige = g.datum; }
+        html += rijVoor(data, g).replace('<div class="venue">', `<div class="venue"><span class="buurt-afstand">${afst < 1 ? "< 1" : Math.round(afst)} km</span>`);
+      }
+      lijstEl.insertAdjacentHTML("beforeend", html);
+      agendaKnoppen(lijstEl);
+      const rest = lijst.length - getoond;
+      meer.hidden = rest <= 0;
+      if (rest > 0) meerKnop.textContent = `Toon meer voorstellingen (${Math.min(PORTIE, rest)} van ${rest})`;
+    };
+    async function zoek() {
+      if (!punt) return;
+      zetKnoppen(); bewaarAdres();
+      status.textContent = "Voorstellingen zoeken…";
+      await haal();
+      lijst = data.rijen
+        .filter((g) => g.datum >= today && g.z.length > 6 && g.status !== "geannuleerd")
+        .filter((g) => !uitverkocht.checked || g.status !== "uitverkocht")
+        .filter((g) => kinder.checked || g.genre !== "kindervoorstellingen")
+        .map((g) => ({ g, km: afstand(punt, [g.z[5], g.z[6]]) }))
+        .filter((x) => x.km <= km);
+      lijstEl.innerHTML = ""; getoond = 0;
+      const n = lijst.length;
+      status.textContent = n
+        ? `${n} ${n === 1 ? "voorstelling" : "voorstellingen"} binnen ${km} km van ${naam}.`
+        : `Geen voorstellingen binnen ${km} km van ${naam}.${km < 50 ? " Kies een grotere afstand." : ""}`;
+      toonTot(PORTIE);
     }
+    const kiesPlaats = (waarde) => {
+      const sleutel = Object.keys(coords).find((p) => p.toLowerCase() === waarde.trim().toLowerCase());
+      if (!sleutel) { if (waarde.trim()) status.textContent = `"${waarde.trim()}" kennen we niet. Kies een plaats uit de lijst.`; return; }
+      punt = coords[sleutel]; naam = sleutel; invoer.value = sleutel; zoek();
+    };
+    const vraagLocatie = () => {
+      if (!navigator.geolocation) { status.textContent = "Je browser kan je locatie niet delen. Kies een plaats."; return; }
+      status.textContent = "Je locatie opvragen…";
+      navigator.geolocation.getCurrentPosition(
+        (pos) => { punt = [pos.coords.latitude, pos.coords.longitude]; naam = "jouw locatie"; invoer.value = ""; zoek(); },
+        () => { status.textContent = "Je locatie is niet gedeeld. Kies een plaats, dan zoeken we vanaf daar."; invoer.focus(); },
+        { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
+    };
+    locKnop.addEventListener("click", vraagLocatie);
+    invoer.addEventListener("change", () => kiesPlaats(invoer.value));
+    invoer.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); kiesPlaats(invoer.value); } });
+    buurt.querySelector(".buurt-straal").addEventListener("click", (e) => { const b = e.target.closest("button[data-km]"); if (b) { km = +b.dataset.km; zetKnoppen(); zoek(); } });
+    uitverkocht.addEventListener("change", zoek);
+    kinder.addEventListener("change", zoek);
+    meerKnop.addEventListener("click", () => toonTot(getoond + PORTIE));
+    zetKnoppen();
+    // Vanaf de homepage (?locatie=1) meteen om de locatie vragen; met ?plaats= meteen vanaf die plaats zoeken.
+    if (params.get("plaats")) kiesPlaats(params.get("plaats"));
+    else if (params.get("locatie") === "1") { history.replaceState(null, "", location.pathname); vraagLocatie(); }
+  }
+
+  // ---------- /agenda/: alle voorstellingen, eerst een week, dan de rest ----------
+  // De pagina bevat de eerste week. De rest staat in /agenda/alles.js (JSON); "Toon alle volgende voorstellingen" voegt
+  // in één keer de rest toe, en zoeken of filteren gebeurt in alle voorstellingen. De rijen hebben dezelfde
+  // opmaak als gigRow() in src/templates.mjs.
+  const alles = document.querySelector("#gigs[data-alles]");
+  if (alles) {
+    const form = document.getElementById("filters");
+    if (form) form.hidden = false;
+    const q = document.getElementById("f-q"), vinkUit = document.getElementById("f-uitverkocht");
+    const regel = document.getElementById("result-line"), leeg = document.getElementById("empty");
+    const laadMeer = document.getElementById("laad-meer"), laadKnop = document.getElementById("laad-week"), naarMaand = document.getElementById("naar-maand");
+    const kaal = (t) => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const esc = (t) => String(t ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+    const nl = (o) => new Intl.DateTimeFormat("nl-NL", o);
+    const fDag = nl({ day: "numeric", month: "long" }), fVol = nl({ day: "numeric", month: "long", year: "numeric" }), fKort = nl({ weekday: "short" });
+    const d = (iso) => new Date(iso + "T12:00:00");
+    const maandag = (iso) => { const x = new Date(iso + "T12:00:00Z"); return new Date(x.getTime() - ((x.getUTCDay() + 6) % 7) * 864e5).toISOString().slice(0, 10); };
+    const zondag = (iso) => new Date(new Date(maandag(iso) + "T12:00:00Z").getTime() + 6 * 864e5).toISOString().slice(0, 10);
+    const label = (van, tot) => van === tot ? fDag.format(d(van)) : van.slice(0, 7) === tot.slice(0, 7) ? `${d(van).getDate()} – ${fDag.format(d(tot))}` : `${fDag.format(d(van))} – ${fDag.format(d(tot))}`;
+    const aantal = (n) => `${n} ${n === 1 ? "voorstelling" : "voorstellingen"}`;
+
+    let data = null, laden = null;
+    const haal = () => laden || (laden = fetch(alles.dataset.alles).then((r) => r.json()).then((j) => (data = leesAlles(j))));
+
+    const rijHtml = (g) => rijVoor(data, g, vastGenre, vastSoort);
 
     // Stand van de filters (ook in het webadres, zodat je een zoekopdracht kunt delen).
     const params = new URLSearchParams(location.search);

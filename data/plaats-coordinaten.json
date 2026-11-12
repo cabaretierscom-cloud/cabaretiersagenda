@@ -1,0 +1,20 @@
+{
+  "uitleg": "Plaatsnamen uit de agenda die niet letterlijk in data/plaatsen-geo.json (GeoNames) staan, met de GeoNames-plaats die je in plaats daarvan gebruikt (sleutel land|regio|naam zoals in dat bestand). Voor 'In de buurt' (/in-de-buurt/): de afstand gaat van plaats tot plaats. Een fusiegemeente krijgt de grootste kern, een zaalnaam op de plek van de plaats (Chassé, Blauwe Kei) de plaats van die zaal.",
+  "aliassen": {
+    "NL|Texel": "NL|07|den burg",
+    "NL|Terschelling": "NL|02|west-terschelling",
+    "NL|Gent": "BE|VLG|gent",
+    "NL|Alphen (NB)": "NL|06|alphen",
+    "NL|Chassé": "NL|06|breda",
+    "NL|Blauwe Kei": "NL|06|veghel",
+    "BE|Bilzen-Hoeselt": "BE|VLG|bilzen",
+    "BE|Tessenderlo-Ham": "BE|VLG|tessenderlo",
+    "BE|Lierde": "BE|VLG|sint-maria-lierde",
+    "BE|Oudsbergen": "BE|VLG|meeuwen",
+    "BE|Erpe-Mere": "BE|VLG|erpe",
+    "BE|Puurs-Sint-Amands": "BE|VLG|puurs",
+    "BE|Roeselare-Beitem": "BE|VLG|beitem",
+    "BE|Nazareth-De Pinte": "BE|VLG|nazareth",
+    "BE|Kluisbergen": "BE|VLG|ruien"
+  }
+}

@@ -708,6 +708,50 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     }).join("");
   }
 
+
+  // ---------- /in-de-buurt/: voorstellingen bij je in de buurt ----------
+  // agenda.js vraagt (na een klik) de locatie van de browser, of je kiest een plaats; dan rekent het in de browser de
+  // afstand uit tot de plaats van elke zaal (coördinaten in /agenda/alles.js) en toont de voorstellingen binnen de
+  // gekozen straal, op datum. De locatie gaat nergens heen. Zonder JavaScript: de lijst met plaatsen.
+  function inDeBuurtPagina() {
+    const plaatsLijst = [...new Map(up.map((g) => T.get(g.theater)).map((t) => [t.plaats, geoPlaats(t.plaats, t.land)])).entries()]
+      .filter(([, c]) => c).sort((a, b) => a[0].localeCompare(b[0], "nl"));
+    const body = `<section class="block wrap" aria-labelledby="t">
+  <div class="block-head"><h1 id="t">Bij mij in de buurt</h1><p>Cabaret en comedy bij jou in de buurt: gebruik je locatie of kies een plaats.</p></div>
+  <div class="buurt" data-buurt data-alles="/agenda/alles.js?v=${tellers.speeldata}-${db.today}" hidden>
+    <div class="buurt-kies">
+      <button type="button" class="btn buurt-locatie">${ICON.pin}Gebruik mijn locatie</button>
+      <span class="buurt-of">of</span>
+      <label class="buurt-plaats"><span class="visually-hidden">Kies een plaats</span><input type="search" list="buurt-plaatsen" placeholder="Kies een plaats, bijvoorbeeld Utrecht" autocomplete="off"></label>
+      <datalist id="buurt-plaatsen">${plaatsLijst.map(([p]) => `<option value="${esc(p)}">`).join("")}</datalist>
+    </div>
+    <div class="buurt-opties">
+      <div class="buurt-straal" role="group" aria-label="Afstand">${[10, 25, 50].map((km) => `<button type="button" data-km="${km}" aria-pressed="${km === 25}">${km} km</button>`).join("")}</div>
+      <label class="check"><input type="checkbox" class="buurt-uitverkocht"> Uitverkocht verbergen</label>
+      <label class="check"><input type="checkbox" class="buurt-kinder"> Kindervoorstellingen tonen</label>
+    </div>
+    <p class="buurt-status" role="status" aria-live="polite"></p>
+    <div class="buurt-lijst"></div>
+    <div class="laad-meer" hidden><button type="button" class="btn ghost buurt-meer">Toon meer voorstellingen</button></div>
+  </div>
+  <noscript><p>Voor zoeken op afstand is JavaScript nodig. Kies hieronder een plaats.</p></noscript>
+  <script type="application/json" id="buurt-coordinaten">${JSON.stringify(Object.fromEntries(plaatsLijst)).replace(/</g, "\\u003c")}</script>
+</section>
+<section class="block wrap kies-blok kleine-kop" aria-labelledby="plaatsen-titel">
+  <div class="wall-head"><h2 id="plaatsen-titel">Of kies een plaats</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
+  ${plaatsNav()}
+</section>
+<section class="block wrap" aria-labelledby="buurt-uitleg">
+  <div class="seo-tekst prose">
+    <h2 id="buurt-uitleg">Hoe werkt zoeken in de buurt?</h2>
+    <p>Klik op <em>Gebruik mijn locatie</em> en geef je browser toestemming. Je ziet dan alle cabaret- en comedyvoorstellingen binnen 10, 25 of 50 kilometer, op datum, met de afstand erbij. Je locatie blijft in je eigen browser: de afstand wordt op je eigen telefoon of computer uitgerekend en we slaan niets op.</p>
+    <p>Liever je locatie niet delen? Typ een plaats, dan rekenen we vanaf die plaats. De afstand is hemelsbreed, van plaats tot plaats.</p>
+  </div>
+</section>`;
+    return layout({ title: "Cabaret en comedy bij mij in de buurt", description: zinnen("Welke cabaret- en comedyvoorstellingen zijn er bij jou in de buurt? Gebruik je locatie of kies een plaats en zie alles binnen 10, 25 of 50 kilometer.", "Met kaarten via het theater."), path: "/in-de-buurt/", section: "plaatsen", body,
+      schema: { kruimels: [["Plaatsen", "/plaatsen/"], ["Bij mij in de buurt", "/in-de-buurt/"]] } });
+  }
+
   // ---------- Net binnen (post-its) en nieuws ----------
   // Post-its op de homepage en /nieuws/: premières en eerste try-outs van de komende drie weken, voorstellingen
   // die net in de agenda kwamen (data/eerst-gezien.json) en nieuwsberichten (data/nieuws.json). Alles automatisch
@@ -897,6 +941,7 @@ ${zalen ? `
 
 <section class="block wrap kies-blok kleine-kop" aria-labelledby="plaats-title">
   <div class="wall-head"><h2 id="plaats-title">Zoek in de buurt</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
+  <p class="buurt-knop-rij"><a class="btn buurt-knop" href="/in-de-buurt/?locatie=1">${ICON.pin}Bij mij in de buurt</a></p>
   ${plaatsNav()}
 </section>
 ${netBinnenBlok()}
@@ -951,7 +996,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         vs.artiesten.map((id) => nr(ai, a, id, () => [artiestPad(id), A.get(id).naam])),
         vs.titel, echteTitel(g.voorstelling) || "", voorstellingPad.get(g.voorstelling) || "", vs.genre, ink(leadInk(g.voorstelling)), vs.ookGenres || [],
       ]);
-      const zn = nr(zi, z, g.theater, () => [t.id, t.naam, t.plaats, plaatsId(t.plaats), LANDEN[t.land]]);
+      // Met de coördinaten van de plaats (voor /in-de-buurt/), of leeg als die onbekend zijn.
+      const zn = nr(zi, z, g.theater, () => [t.id, t.naam, t.plaats, plaatsId(t.plaats), LANDEN[t.land], ...(geoPlaats(t.plaats, t.land) || [])]);
       return [g.datum, g.tijd || "", vn, zn, g.status, g.soort || "", metUtm(g.bron), g.opmerking || ""];
     });
     return { iconen: { extern: ICON.extern, doubt: ICON.doubt, sold: ICON.sold, pin: ICON.pin }, statussen: STATUSSEN, genres: Object.fromEntries(Object.keys(GENRES).map((g) => [g, genreLabel(g)])), a, z, v, r: rijen }; // labels bij één voorstelling
@@ -2524,6 +2570,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <h2 id="opslag">Wat er in je browser blijft staan</h2>
         <p>Je keuze in de cookiemelding bewaren we in je eigen browser (<code>cabaretiers-cookies</code>), zodat we het niet elke keer opnieuw vragen. Dat gaat niet naar ons of naar anderen.</p>
         <h2 id="video">Video's</h2>
+        <p>Gebruik je <a href="/in-de-buurt/">Bij mij in de buurt</a> en geef je toestemming voor je locatie, dan rekent je eigen browser de afstand tot de theaters uit. Je locatie gaat niet naar ons of naar anderen en wordt niet bewaard.</p>
         <p>Op sommige artiestpagina's staan video's van YouTube. Die laden pas als je erop klikt; dan maakt je browser verbinding met YouTube (in de privacyvriendelijke modus zonder cookies vooraf) en gelden de privacyregels van Google.</p>
         <h2 id="links">Links naar theaters en sociale media</h2>
         <p>Via <em>Tickets</em> ga je naar de site van het theater of de artiest, en via de iconen onderaan naar onze pagina's op Instagram, Facebook, YouTube en TikTok. Daar gelden hun eigen privacyregels. Aan de link naar het theater voegen we een label toe (<code>utm_source=cabaretiers.com</code>), zodat het theater in zijn eigen statistieken ziet dat je via Cabaretiers.com komt. Daarmee geven wij geen gegevens over jou door.</p>
@@ -2639,17 +2686,35 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   // dimensies country/region/city). Coördinaten uit data/plaatsen-geo.json (GeoNames), provincies uit src/kaart.mjs
   // (Natural Earth); beide maakt scripts/kaart.mjs. Gewone SVG met een tooltip per stip: werkt zonder JavaScript.
   let plaatsenGeo;
-  const GA_REGIO = {
-    Netherlands: { land: "NL", regio: { Drenthe: "01", Friesland: "02", Gelderland: "03", Groningen: "04", Limburg: "05", "North Brabant": "06", "North Holland": "07", Utrecht: "09", Zeeland: "10", "South Holland": "11", Overijssel: "15", Flevoland: "16" } },
-    Belgium: { land: "BE", regio: { Brussels: "BRU", Flanders: "VLG", Wallonia: "WAL" } },
-  };
-  function bezoekersKaart(steden, getal) {
+  const laadGeo = () => {
     if (!plaatsenGeo) {
       const p = JSON.parse(readFileSync(new globalThis.URL("../data/plaatsen-geo.json", import.meta.url), "utf8")).plaatsen;
       const perLand = new Map(); // land|naam -> eerste treffer, als de provincie niet klopt of ontbreekt
       for (const [k, v] of Object.entries(p)) { const [land, , naam] = k.split("|"); if (!perLand.has(`${land}|${naam}`)) perLand.set(`${land}|${naam}`, v); }
       plaatsenGeo = { p, perLand };
     }
+    return plaatsenGeo;
+  };
+  // Coördinaten van een plaats uit de agenda (voor /in-de-buurt/): de naam zoals in GeoNames (zonder accenten, met of
+  // zonder streepjes), anders een verwijzing uit data/plaats-coordinaten.json. Onbekend: null.
+  let plaatsAlias;
+  const geoCache = new Map();
+  function geoPlaats(plaats, land) {
+    const sleutel = `${land}|${plaats}`;
+    if (geoCache.has(sleutel)) return geoCache.get(sleutel);
+    const { p, perLand } = laadGeo();
+    plaatsAlias ??= JSON.parse(readFileSync(new globalThis.URL("../data/plaats-coordinaten.json", import.meta.url), "utf8")).aliassen;
+    const n = String(plaats).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+    const c = (plaatsAlias[sleutel] && p[plaatsAlias[sleutel]]) || perLand.get(`${land}|${n}`) || perLand.get(`${land}|${n.replace(/-/g, " ")}`) || perLand.get(`${land}|${n.replace(/ /g, "-")}`) || null;
+    geoCache.set(sleutel, c);
+    return c;
+  }
+  const GA_REGIO = {
+    Netherlands: { land: "NL", regio: { Drenthe: "01", Friesland: "02", Gelderland: "03", Groningen: "04", Limburg: "05", "North Brabant": "06", "North Holland": "07", Utrecht: "09", Zeeland: "10", "South Holland": "11", Overijssel: "15", Flevoland: "16" } },
+    Belgium: { land: "BE", regio: { Brussels: "BRU", Flanders: "VLG", Wallonia: "WAL" } },
+  };
+  function bezoekersKaart(steden, getal) {
+    laadGeo();
     const zoek = (r) => {
       const g = GA_REGIO[r.country];
       if (!g || !r.city || r.city === "(not set)") return null;
@@ -2807,7 +2872,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   }
 
   return {
-    controlePagina, dashboardPagina, dashboardPad, nieuwsPagina, nieuwsBericht,
+    controlePagina, dashboardPagina, dashboardPad, nieuwsPagina, nieuwsBericht, inDeBuurtPagina,
     home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, genrePagina, GENRE_PAGINAS, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, plaatsPad, maandId, tryoutPagina, tryoutLijst, genrePlaatsPaginas, genrePlaatsPagina, genrePlaatsPad, voorstellingPaden: voorstellingPad,
   };

@@ -59,6 +59,8 @@ write("/vanavond/", t.dagPagina("vanavond"));
 write("/dit-weekend/", t.dagPagina("dit-weekend"));
 for (const m of t.maanden) write(`/agenda/${t.maandId(m)}/`, t.agendaMaand(m));
 write("/plaatsen/", t.plaatsIndex());
+// Bij mij in de buurt: zoeken op afstand (locatie of plaats), in de browser.
+write("/in-de-buurt/", t.inDeBuurtPagina());
 for (const p of t.plaatsen) write(t.plaatsPad(p), t.plaatsPagina(p));
 write("/artiesten/", t.artistIndex());
 // SEO-pagina's over cabaretiers; niet in het menu, wel gelinkt vanuit artiesten, footer en artiestpagina's.

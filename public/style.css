@@ -1132,3 +1132,21 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 }
 @media (prefers-reduced-motion: reduce) { .strip-wrap::before, .strip-wrap::after { transition: none; } }
 .site-footer .footer-paginas { margin-top: -8px; }
+
+/* Bij mij in de buurt (/in-de-buurt/ en de knop op de homepage). */
+.buurt-knop-rij { margin: 4px 0 14px; }
+.buurt-knop, .buurt-locatie { display: inline-flex; align-items: center; gap: 8px; }
+.buurt-knop svg, .buurt-locatie svg { width: 18px; height: 18px; }
+.buurt[hidden] { display: none; }
+.buurt-kies { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 8px 0 14px; }
+.buurt-of { color: var(--ink-2); }
+.buurt-plaats { flex: 1 1 260px; max-width: 420px; }
+.buurt-plaats input { width: 100%; font: inherit; padding: 12px 14px; border: 1px solid var(--rule); border-radius: 10px; background: var(--paper); color: var(--ink); }
+.buurt-opties { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin-bottom: 10px; }
+.buurt-straal { display: inline-flex; gap: 6px; }
+.buurt-straal button { font: 600 .9rem/1 var(--font-body); border: 2px solid var(--ink); border-radius: 999px; padding: 8px 14px; background: transparent; color: var(--ink); cursor: pointer; }
+.buurt-straal button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.buurt-status { margin: 6px 0 4px; color: var(--ink-2); min-height: 1.4em; }
+.buurt-dag { font-family: var(--font-display); font-weight: 800; font-size: var(--step-1); margin: 22px 0 4px; padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
+.buurt-dag::first-letter { text-transform: uppercase; }
+.buurt-afstand { display: inline-block; width: fit-content; align-self: flex-start; font: 700 .72rem/1 var(--font-body); background: var(--paper-2); color: var(--ink); border-radius: 999px; padding: 4px 8px; margin-bottom: 4px; }
