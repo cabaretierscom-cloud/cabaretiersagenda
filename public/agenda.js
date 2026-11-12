@@ -335,6 +335,13 @@
     </article>`;
     };
   })();
+  // Afstand hemelsbreed (haversine) in kilometers, tussen [lat, lon] en [lat, lon].
+  const afstandKm = ([a, b], [c, d]) => {
+    const r = Math.PI / 180, x = Math.sin(((c - a) * r) / 2) ** 2 + Math.cos(a * r) * Math.cos(c * r) * Math.sin(((d - b) * r) / 2) ** 2;
+    return 12742 * Math.asin(Math.sqrt(x));
+  };
+  // Een agendarij met de afstand erbij (zoals op /in-de-buurt/).
+  const metAfstand = (html, km) => html.replace('<div class="venue">', `<div class="venue"><span class="buurt-afstand">${km < 1 ? "< 1" : Math.round(km)} km</span>`);
   // De rijen van /agenda/alles.js leesbaar maken (artiesten, zaal, genres en een zoektekst per voorstelling).
   const kaalTekst = (t) => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   const leesAlles = (j) => {
@@ -365,11 +372,7 @@
     const haal = () => data ? Promise.resolve(data) : fetch(buurt.dataset.alles).then((r) => r.json())
       .then((j) => (j.z.some((z) => z.length > 6) ? j : fetch(buurt.dataset.alles, { cache: "reload" }).then((r) => r.json())))
       .then((j) => (data = leesAlles(j)));
-    // Afstand hemelsbreed (haversine), in kilometers.
-    const afstand = ([a, b], [c, d]) => {
-      const r = Math.PI / 180, x = Math.sin(((c - a) * r) / 2) ** 2 + Math.cos(a * r) * Math.cos(c * r) * Math.sin(((d - b) * r) / 2) ** 2;
-      return 12742 * Math.asin(Math.sqrt(x));
-    };
+    const afstand = afstandKm;
     const nl = new Intl.DateTimeFormat("nl-NL", { weekday: "long", day: "numeric", month: "long" });
     const zetKnoppen = () => buurt.querySelectorAll(".buurt-straal button").forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.km === km)));
     const bewaarAdres = () => {
@@ -384,7 +387,7 @@
       for (; getoond < doel; getoond++) {
         const { g, km: afst } = lijst[getoond];
         if (g.datum !== vorige) { html += `<h3 class="buurt-dag">${nl.format(new Date(g.datum + "T12:00:00"))}</h3>`; vorige = g.datum; }
-        html += rijVoor(data, g).replace('<div class="venue">', `<div class="venue"><span class="buurt-afstand">${afst < 1 ? "< 1" : Math.round(afst)} km</span>`);
+        html += metAfstand(rijVoor(data, g), afst);
       }
       lijstEl.insertAdjacentHTML("beforeend", html);
       agendaKnoppen(lijstEl);
@@ -458,9 +461,16 @@
     const aantal = (n) => `${n} ${n === 1 ? "voorstelling" : "voorstellingen"}`;
 
     let data = null, laden = null;
-    const haal = () => laden || (laden = fetch(alles.dataset.alles).then((r) => r.json()).then((j) => (data = leesAlles(j))));
+    const haal = () => laden || (laden = fetch(alles.dataset.alles).then((r) => r.json())
+      .then((j) => (j.z.some((z) => z.length > 6) ? j : fetch(alles.dataset.alles, { cache: "reload" }).then((r) => r.json())))
+      .then((j) => (data = leesAlles(j))));
 
-    const rijHtml = (g) => rijVoor(data, g, vastGenre, vastSoort);
+    // Afstand (alleen /agenda/): "Binnen 25 km van mij" vraagt de locatie van de browser; die blijft hier en gaat nergens heen.
+    const kmVeld = document.getElementById("f-km");
+    let punt = null;
+    const kmGekozen = () => (kmVeld && kmVeld.value && punt ? +kmVeld.value : 0);
+    const afstandVan = (g) => (g.z.length > 6 ? afstandKm(punt, [g.z[5], g.z[6]]) : Infinity);
+    const rijHtml = (g) => (kmGekozen() ? metAfstand(rijVoor(data, g, vastGenre, vastSoort), afstandVan(g)) : rijVoor(data, g, vastGenre, vastSoort));
 
     // Stand van de filters (ook in het webadres, zodat je een zoekopdracht kunt delen).
     const params = new URLSearchParams(location.search);
@@ -473,7 +483,7 @@
     const genre = genreKeuze((w) => { stand.genre = w.join(","); pasToe(); });
     stand.genre = genre ? genre.zet(leesGenres(stand.genre)).join(",") : "";
     if (vinkUit) vinkUit.checked = stand.uitverkocht === "1";
-    const gefilterd = () => Boolean(stand.q.trim() || stand.genre || stand.uitverkocht || stand.soort);
+    const gefilterd = () => Boolean(stand.q.trim() || stand.genre || stand.uitverkocht || stand.soort || kmGekozen());
 
     // Per keer 50 voorstellingen (PORTIE), met een knop voor de volgende 50; ook bij zoeken en filteren.
     // Zonder filter staan de eerste voorstellingen al in de pagina (zonder JavaScript is dat de lijst);
@@ -507,7 +517,7 @@
       const rest = totaal - zichtbaar;
       laadMeer.hidden = rest <= 0;
       if (rest > 0) laadKnop.textContent = `Toon meer voorstellingen (${Math.min(PORTIE, rest)} van ${rest})`;
-      regel.textContent = gefilterd() ? `${aantal(lijst.length)} gevonden${rest > 0 ? `, ${zichtbaar} getoond` : ""}` : `${zichtbaar} van ${aantal(totaal)}`;
+      regel.textContent = gefilterd() ? `${aantal(lijst.length)} gevonden${kmGekozen() ? ` binnen ${kmGekozen()} km van jouw locatie` : ""}${rest > 0 ? `, ${zichtbaar} getoond` : ""}` : `${zichtbaar} van ${aantal(totaal)}`;
       if (leeg) leeg.hidden = !gefilterd() || lijst.length > 0;
       if (naarMaand) naarMaand.hidden = gefilterd();
     };
@@ -521,7 +531,7 @@
       const naald = kaal(stand.q.trim()), kies = new Set(leesGenres(stand.genre));
       const inGenre = (g) => (kies.size ? g.genres.some((x) => kies.has(x)) : !genre || genre.standaard(g.genres));
       if (genre) genre.aantal(kies.size ? data.rijen.filter((g) => g.datum >= today && inVast(g) && inGenre(g)).length : genre.totaal);
-      lijst = data.rijen.filter((g) => g.datum >= today && inVast(g) && (!naald || g.zoek.includes(naald)) && inGenre(g) && (!stand.soort || g.soort === stand.soort) && (!stand.uitverkocht || g.status !== "uitverkocht"));
+      lijst = data.rijen.filter((g) => g.datum >= today && inVast(g) && (!naald || g.zoek.includes(naald)) && inGenre(g) && (!stand.soort || g.soort === stand.soort) && (!stand.uitverkocht || g.status !== "uitverkocht") && (!kmGekozen() || afstandVan(g) <= kmGekozen()));
       uitPagina = false; getoond = 0;
       alles.innerHTML = "";
       toonTot(PORTIE);
@@ -566,6 +576,16 @@
       q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { stand.q = q.value; pasToe(); }, 200); });
     }
     if (vinkUit) vinkUit.addEventListener("change", () => { stand.uitverkocht = vinkUit.checked ? "1" : ""; pasToe(); });
+    // Afstand kiezen: de eerste keer vraagt de browser om de locatie; lukt dat niet, dan terug naar "Overal".
+    if (kmVeld) kmVeld.addEventListener("change", () => {
+      if (!kmVeld.value || punt) return pasToe();
+      if (!navigator.geolocation) { kmVeld.value = ""; regel.textContent = "Je browser kan je locatie niet delen."; return; }
+      regel.textContent = "Je locatie opvragen…";
+      navigator.geolocation.getCurrentPosition(
+        (pos) => { punt = [pos.coords.latitude, pos.coords.longitude]; pasToe(); },
+        () => { kmVeld.value = ""; pasToe().then(() => { regel.textContent = "Je locatie is niet gedeeld; je ziet weer alle voorstellingen."; }); },
+        { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
+    });
     form?.addEventListener("submit", (e) => e.preventDefault());
     document.getElementById("reset")?.addEventListener("click", () => {
       stand.q = stand.genre = stand.uitverkocht = stand.soort = "";

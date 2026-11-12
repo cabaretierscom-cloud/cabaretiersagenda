@@ -517,7 +517,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // waar: alleen zoeken op plaats en zaal (artiestpagina: de artiest heb je dan al gevonden).
   // Zoeken en filteren boven een speellijst (public/agenda.js). Het zoekveld doorzoekt artiest,
   // voorstelling, zaal en plaats; op een artiestpagina alleen zaal en plaats (waar).
-  function filters(list, { maand = false, waar = false, genre = true } = {}) {
+  function filters(list, { maand = false, waar = false, genre = true, afstand = false } = {}) {
     // Kindervoorstellingen (hoofdgenre) die standaard uit staan; 0 als de lijst alleen kindervoorstellingen heeft.
     const kinder = list.some((x) => !heeftGenre(x, "kindervoorstellingen")) ? list.filter((x) => V.get(x.voorstelling).genre === "kindervoorstellingen").length : 0;
     const months = [...new Set(list.map((g) => g.datum.slice(0, 7)))].sort();
@@ -543,6 +543,10 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
           return `<label${kind ? ' class="keuze-kind"' : ""}><input type="checkbox" name="genre" value="${g}" data-n="${n}"><span>${GENRES[g]}${kind ? '<small class="keuze-uit">Staat uit, vink aan om te tonen</small>' : ""}</span><span class="keuze-n">${n.toLocaleString("nl-NL")}</span></label>`;
         }).join("")}</div>
       </details>
+    </div>` : ""}
+    ${afstand ? `<div class="field afstand-veld">
+      <label for="f-km">Afstand</label>
+      <select id="f-km" name="km"><option value="">Overal</option>${[10, 25, 50].map((km) => `<option value="${km}">Binnen ${km} km van mij</option>`).join("")}</select>
     </div>` : ""}
     ${uitverkocht ? `<div class="field toggle-veld">
       <label class="toggle"><input type="checkbox" id="f-uitverkocht" name="uitverkocht" value="1"> Uitverkocht verbergen</label>
@@ -1017,7 +1021,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div class="block-head"><h1 id="t">Agenda</h1><p>${plural(tellers.speeldata, "voorstelling", "voorstellingen")} in ${plural(tellers.zalen, "zaal", "zalen")}</p></div>
       ${maandNav(null)}
       ${uitgelichtBlok("agenda")}
-      ${filters(up)}
+      ${filters(up, { afstand: true })}
       <div id="gigs" data-alles="/agenda/alles.js?v=${allesVersie()}" data-tot="${tot}" data-totaal="${up.length}"><section class="month-group week-groep"><h3>${weekLabel(eerste[0]?.datum || db.today, tot)} <small>${plural(eerste.length, "voorstelling", "voorstellingen")}</small></h3>${eerste.map((g) => gigRow(g)).join("")}</section></div>
       ${leegBlok}
       <p class="meer-weken" id="laad-meer" hidden><button type="button" class="btn" id="laad-week">Toon alle volgende voorstellingen</button></p>
