@@ -1,7 +1,7 @@
 {
   "bron": "hnt",
   "naam": "Het Nationale Theater",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "koninklijke-schouwburg",
@@ -65,6 +65,26 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.hnt.nl/nl/voorstellingen/alice-in-wonderland-8-z5zd"
+    },
+    {
+      "theater": {
+        "id": "theater-aan-het-spui-den-haag",
+        "naam": "Theater aan het Spui",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "plan d-"
+      ],
+      "titel": "Bout! (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/bout-6-fhjp"
     }
   ],
   "recensies": {

@@ -1,7 +1,7 @@
 {
   "bron": "nijmegen",
   "naam": "Stadsschouwburg & De Vereeniging Nijmegen",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "stadsschouwburg-nijmegen",
@@ -21,19 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "stadsschouwburg-nijmegen",
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "reprise",
-      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/patrick-laureij-7p4w"
-    },
     {
       "theater": "stadsschouwburg-nijmegen",
       "artiesten": [
@@ -658,13 +645,6 @@
     }
   ],
   "recensies": {
-    "https://www.stadsschouwburgendevereeniging.nl/programma/patrick-laureij-7p4w": [
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Zo bouwt hij met elke anekdote aan een kwetsbaar zelfportret, van een man die zijn gevoelens niet onder controle heeft, maar daar toch mee om weet te gaan. [...] Wat een mooi, onverwacht ontroerend slot."
-      }
-    ],
     "https://www.stadsschouwburgendevereeniging.nl/programma/david-linszen-skw6": [
       {
         "medium": "de Volkskrant",

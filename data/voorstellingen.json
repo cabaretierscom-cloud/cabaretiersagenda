@@ -6801,6 +6801,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "leon-van-der-zanden-kwats",
+    "titel": "Kwats",
+    "artiesten": [
+      "leon-van-der-zanden"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "leon-van-der-zanden-lachen",
     "titel": "Lachen",
     "artiesten": [
@@ -10271,13 +10279,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "siegfried-en-ralph-oftewel-howard-komproe-en-murth-mossel-comedytrain",
-    "titel": "Siegfried & Ralph (oftewel Howard Komproe & Murth Mossel)",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "comedytrain"
-  },
-  {
     "id": "silas-neumann-en-joeso-peters-graven",
     "titel": "Graven",
     "artiesten": [
@@ -10543,11 +10544,12 @@
     "genre": "cabaret"
   },
   {
-    "id": "srefidensi-comedyshow-2026-oude-luxor",
-    "titel": "Srefidensi Comedyshow 2026",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "oude-luxor"
+    "id": "srefidensi-comedyshow-2026-geannuleerd",
+    "titel": "(geannuleerd)",
+    "artiesten": [
+      "srefidensi-comedyshow-2026"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "stampvoeten-op-tafel-knars",
@@ -11090,9 +11092,27 @@
     "genre": "kindervoorstellingen",
     "recensies": [
       {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "All before death is life is een wonderlijke jeugdvoorstelling, traag, melig, tergend, ontroerend.",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/all-before-death-is-life-8-artemis-benjamin-verdonck/"
+      },
+      {
         "medium": "“Hier schittert hij als droogkomisch acteur.”",
         "sterren": null,
         "citaat": "Hier schittert hij als droogkomisch acteur.",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/all-before-death-is-life-8-artemis-benjamin-verdonck/"
+      },
+      {
+        "medium": "Theaterkrant.nl",
+        "sterren": null,
+        "citaat": "Benjamin terug op de scène, en hoe!",
+        "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/all-before-death-is-life-8-artemis-benjamin-verdonck/"
+      },
+      {
+        "medium": "www.pzazz.theater",
+        "sterren": null,
+        "citaat": "…een briljante clownerie vol cliffhangers.",
         "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/all-before-death-is-life-8-artemis-benjamin-verdonck/"
       }
     ]
@@ -12329,6 +12349,14 @@
     "artiesten": [],
     "genre": "kindervoorstellingen",
     "theater": "cpunt"
+  },
+  {
+    "id": "wirrewar-efrem-stein",
+    "titel": "Efrem Stein",
+    "artiesten": [
+      "wirrewar"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "wirwar-producties-weg-ermee",

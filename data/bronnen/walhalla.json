@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -36,22 +36,9 @@
       ],
       "titel": "Aai Poesje Aai Poesje",
       "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/elfie-tromp-aai-poesje-aai-poesje-try-out/"
-    },
-    {
-      "theater": "theater-walhalla",
-      "artiesten": [
-        "Elfie Tromp"
-      ],
-      "titel": "Aai Poesje Aai Poesje",
-      "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "première",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/elfie-tromp-aai-poesje-aai-poesje-try-out-2/"
     },
@@ -77,7 +64,7 @@
       "genre": "cabaret",
       "datum": "2026-11-14",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/kim-schuddeboom-hardleers-try-out-2/"
     },
@@ -116,7 +103,7 @@
       "genre": "cabaret",
       "datum": "2026-11-15",
       "tijd": "15:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/marja-van-katendrecht-heel-holland-hoopt-try-out/"
     },
@@ -376,7 +363,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-29",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-6/"
     },
@@ -760,7 +747,7 @@
       "genre": "cabaret",
       "datum": "2027-02-11",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/janneke-de-bijl-pluk-eventueel-de-dag/"
     },
@@ -773,7 +760,7 @@
       "genre": "kleinkunst",
       "datum": "2027-02-12",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sem-konijn-populisme-de-musical-try-out/"
     },
@@ -825,7 +812,7 @@
       "genre": "cabaret",
       "datum": "2027-02-18",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/ramon-chatrer-volk/"
     },
@@ -838,7 +825,7 @@
       "genre": "cabaret",
       "datum": "2027-02-19",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-gestampte-meisjes-strot/"
     },
@@ -903,7 +890,7 @@
       "genre": "cabaret",
       "datum": "2027-02-25",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/jeroens-clan-juk/"
     },
@@ -914,7 +901,7 @@
       "genre": "cabaret",
       "datum": "2027-02-25",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/alina-sharipova-try-out/"
     },
@@ -988,7 +975,7 @@
       "genre": "cabaret",
       "datum": "2027-03-04",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/martijn-crins-kooiapen-try-out/"
     },
@@ -1079,7 +1066,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-03-12",
       "tijd": "19:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/the-whizzkid-of-oz-7/"
     },
@@ -1092,7 +1079,7 @@
       "genre": "kleinkunst",
       "datum": "2027-03-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/flip-noorman-bonobo/"
     },
@@ -1166,7 +1153,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-03-21",
       "tijd": "11:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/hieperdepiep-opera-4-t-m-7-jaar/"
     },
@@ -1192,7 +1179,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-03-28",
       "tijd": "10:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/zingeling-2-t-m-5-jaar-7/"
     },
@@ -1229,7 +1216,7 @@
       "genre": "cabaret",
       "datum": "2027-04-07",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-18/"
     },
@@ -1318,7 +1305,7 @@
       "genre": "kleinkunst",
       "datum": "2027-04-16",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/kiki-schippers-nieuw-programma-try-out/"
     },
@@ -1331,7 +1318,7 @@
       "genre": "cabaret",
       "datum": "2027-04-16",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/kees-van-amstel-mogen-we-eerder-weg/"
     },
@@ -1409,7 +1396,7 @@
       "genre": "cabaret",
       "datum": "2027-04-23",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/marja-van-katendrecht-heel-holland-hoopt/"
     },

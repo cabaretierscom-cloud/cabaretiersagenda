@@ -1,7 +1,7 @@
 {
   "bron": "vlaardingen",
   "naam": "Stadsgehoorzaal Vlaardingen",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "stadsgehoorzaal-vlaardingen",
@@ -38,6 +38,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/mees-kees"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Peter Pannekoek"
+      ],
+      "titel": "Demonen",
+      "genre": "cabaret",
+      "datum": "2026-11-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://stadsgehoorzaal.nl/programma/peter-pannekoek"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -168,19 +181,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/marie-koet"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Peter Pannekoek"
-      ],
-      "titel": "Demonen",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://stadsgehoorzaal.nl/programma/peter-pannekoek"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",

@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -15,25 +15,12 @@
   "speeldata": [
     {
       "theater": "theater-bellevue",
-      "artiesten": [
-        "Christian van Eijkelenburg"
-      ],
-      "titel": "Small Talk",
-      "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/small-talk-fs5l"
-    },
-    {
-      "theater": "theater-bellevue",
       "artiesten": [],
       "titel": "Tweede Voorronde AKF",
       "genre": "kleinkunst",
       "datum": "2026-11-12",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/tweede-voorronde-akf-zxgn"
     },

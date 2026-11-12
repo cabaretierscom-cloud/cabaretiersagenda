@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -457,22 +457,9 @@
       ],
       "titel": "Kende da!?",
       "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/christel-de-laat-56494/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Christel de Laat"
-      ],
-      "titel": "Kende da!?",
-      "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/christel-de-laat-56494/"
     },
@@ -485,7 +472,7 @@
       "genre": "cabaret",
       "datum": "2026-11-13",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/christel-de-laat-56494/"
     },
@@ -1330,7 +1317,7 @@
       "genre": "cabaret",
       "datum": "2027-03-22",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/kasper-van-der-laan-56467/"
     },
@@ -2142,12 +2129,14 @@
     },
     {
       "theater": "oude-luxor",
-      "artiesten": [],
-      "titel": "Srefidensi Comedyshow 2026",
+      "artiesten": [
+        "Srefidensi Comedyshow 2026"
+      ],
+      "titel": "(geannuleerd)",
       "genre": "cabaret",
       "datum": "2026-11-29",
       "tijd": "14:30",
-      "status": "gepland",
+      "status": "geannuleerd",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/srefidensi-comedyshow-58404/"
     },

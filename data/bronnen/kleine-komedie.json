@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -20,22 +20,9 @@
       ],
       "titel": "De Baas",
       "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
     },
@@ -87,7 +74,7 @@
       "genre": "cabaret",
       "datum": "2026-11-17",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/henry-van-loon-c28y"
     },
@@ -217,7 +204,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },
@@ -542,6 +529,19 @@
       "genre": "cabaret",
       "datum": "2026-12-18",
       "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekleinekomedie.nl/agenda/rayen-panday-friends-zvw8"
+    },
+    {
+      "theater": "kleine-komedie",
+      "artiesten": [
+        "Rayen Panday & Friends"
+      ],
+      "titel": "Wonderful Christmastime",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "15:00",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/rayen-panday-friends-zvw8"

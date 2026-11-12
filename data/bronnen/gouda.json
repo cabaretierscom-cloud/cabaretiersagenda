@@ -1,7 +1,7 @@
 {
   "bron": "gouda",
   "naam": "Goudse Schouwburg",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "goudse-schouwburg",
@@ -466,6 +466,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/de-broers-van-arkel-zeg-maar-u-10025731/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Wirrewar"
+      ],
+      "titel": "Efrem Stein",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/wirrewar-efrem-stein-10043475/"
     },
     {
       "theater": "goudse-schouwburg",

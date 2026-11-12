@@ -1,7 +1,7 @@
 {
   "bron": "utrecht",
   "naam": "Stadsschouwburg Utrecht",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "stadsschouwburg-utrecht",
@@ -219,7 +219,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-goede-voorbeeld-vlamousse",
       "datum": "2026-11-14",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -258,7 +258,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/aan-mij-zal-het-niet-liggen-marjolijn-van-kooten",
       "datum": "2026-11-25",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1415,6 +1415,19 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/finale-2026-nederlands-studentenkampioenschap-improvisatie-com",
       "datum": "2026-11-15",
       "tijd": "20:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "stadsschouwburg-utrecht",
+      "artiesten": [
+        "Borrelnootjez"
+      ],
+      "titel": "Mze3ze3",
+      "genre": "cabaret",
+      "soort": null,
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/mze3ze3-borrelnootjez",
+      "datum": "2027-04-11",
+      "tijd": "20:00",
       "status": "gepland"
     }
   ],

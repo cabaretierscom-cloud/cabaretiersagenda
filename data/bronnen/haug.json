@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -512,17 +512,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111710964"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
-      "titel": "Open Mic",
-      "genre": "open-mic",
-      "datum": "2026-11-11",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111710963"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1115,7 +1104,7 @@
       "genre": "stand-up",
       "datum": "2026-11-13",
       "tijd": "21:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701027"
     },
@@ -1175,19 +1164,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [
-        "Nira Tal"
-      ],
-      "titel": "Nira Tal",
-      "genre": "stand-up",
-      "datum": "2026-11-11",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/nira-tal-111669569"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
         "Roel C Verburg"
       ],
       "titel": "Roel C Verburg",
@@ -1238,19 +1214,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/eric-van-sauers-sezgin-gulec-111693651"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Roel C Verburg"
-      ],
-      "titel": "Roel C Verburg",
-      "genre": "stand-up",
-      "datum": "2026-11-11",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/roel-c-verburg-111686180"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1423,23 +1386,6 @@
       }
     ],
     "https://comedyclubhaug.com/shows/roel-c-verburg-111695528": [
-      {
-        "medium": "Trouw",
-        "sterren": null,
-        "citaat": "Roel C. Verburg is een fenomeen op zich."
-      },
-      {
-        "medium": "Het Financieele Dagblad",
-        "sterren": null,
-        "citaat": "Hij grossiert in absurdistische liedjes vol taalacrobatiek."
-      },
-      {
-        "medium": "I Love Theater",
-        "sterren": null,
-        "citaat": "Een aaneenschakeling van slimme observaties, rake grappen en muzikale intermezzo’s"
-      }
-    ],
-    "https://comedyclubhaug.com/shows/roel-c-verburg-111686180": [
       {
         "medium": "Trouw",
         "sterren": null,

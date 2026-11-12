@@ -1,7 +1,7 @@
 {
   "bron": "stoep",
   "naam": "Theater de Stoep",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "theater-de-stoep",
@@ -304,7 +304,7 @@
       "genre": "cabaret",
       "datum": "2027-01-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://theaterdestoep.nl/voorstelling/nabil-2627"
     },
@@ -784,19 +784,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterdestoep.nl/voorstelling/remko-vrijdag-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
-        "Guido Weijers"
-      ],
-      "titel": "De Oudejaarsconference 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-11-11",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterdestoep.nl/voorstelling/guido-weijers-2627"
     },
     {
       "theater": "theater-de-stoep",

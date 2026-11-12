@@ -1,7 +1,7 @@
 {
   "bron": "carre",
   "naam": "Koninklijk Theater Carré",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "carre",
@@ -202,6 +202,32 @@
       ],
       "titel": "Ruim",
       "genre": "cabaret",
+      "datum": "2027-05-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/kasper-van-der-laan-ruim"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/kasper-van-der-laan-ruim"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
       "datum": "2027-05-28",
       "tijd": "20:00",
       "status": "gepland",
@@ -311,6 +337,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://carre.nl/voorstelling/merijn-scholten-lemming"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Voor Iedereen",
+      "genre": "cabaret",
+      "datum": "2027-03-14",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/micha-wertheim-voor-iedereen"
     },
     {
       "theater": "carre",

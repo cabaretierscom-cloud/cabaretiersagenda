@@ -1,7 +1,7 @@
 {
   "bron": "westrand",
   "naam": "Westrand",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "westrand-dilbeek",
@@ -414,7 +414,20 @@
       "tijd": "20:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.westrand.be/programma/non-stop-njxc"
+      "bron": "https://www.westrand.be/programma/urbanus-qlbg"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Non-Stop"
+      ],
+      "titel": "Urbanus",
+      "genre": "comedy",
+      "datum": "2027-05-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/urbanus-qlbg"
     },
     {
       "theater": "westrand-dilbeek",
@@ -519,19 +532,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.westrand.be/programma/nacht-8-108-fywf"
-    },
-    {
-      "theater": "westrand-dilbeek",
-      "artiesten": [
-        "Non-Stop"
-      ],
-      "titel": "Urbanus",
-      "genre": "comedy",
-      "datum": "2027-05-02",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.westrand.be/programma/non-stop-qlbg"
     },
     {
       "theater": "westrand-dilbeek",

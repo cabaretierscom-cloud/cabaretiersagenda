@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -42,19 +42,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Deng Boy"
-      ],
-      "titel": "Deng Boy",
-      "genre": "cabaret",
-      "datum": "2027-05-28",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/deng-boy-5/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Roué Verveer"
       ],
       "titel": "Roué Verveer",
@@ -64,6 +51,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Cameretten",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/cameretten/"
     },
     {
       "theater": "kunstlinie",
@@ -94,28 +94,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Cameretten"
+        "Deng Boy"
       ],
-      "titel": "Cameretten",
+      "titel": "Deng Boy",
       "genre": "cabaret",
-      "datum": "2027-05-21",
+      "datum": "2027-05-28",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/cameretten/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Team Ricky Risolles"
-      ],
-      "titel": "Team Ricky Risolles",
-      "genre": "cabaret",
-      "datum": "2027-03-21",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/team-ricky-risolles/"
+      "bron": "https://kunstlinie.nl/programma/deng-boy-5/"
     },
     {
       "theater": "kunstlinie",
@@ -129,6 +116,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/klaas-van-der-eerden-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Team Ricky Risolles"
+      ],
+      "titel": "Team Ricky Risolles",
+      "genre": "cabaret",
+      "datum": "2027-03-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/team-ricky-risolles/"
     },
     {
       "theater": "kunstlinie",
@@ -224,19 +224,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Joep van Deudekom & Rob Urgert"
-      ],
-      "titel": "Joep van Deudekom & Rob Urgert",
-      "genre": "cabaret",
-      "datum": "2026-12-19",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/joep-van-deudekom-rob-urgert/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Bro’s"
       ],
       "titel": "Bro’s",
@@ -250,15 +237,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Samar en de bange koning (8+)"
+        "Joep van Deudekom & Rob Urgert"
       ],
-      "titel": "Samar en de bange koning (8+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-20",
-      "tijd": "15:00",
+      "titel": "Joep van Deudekom & Rob Urgert",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/samar-en-de-bange-koning-8/"
+      "bron": "https://kunstlinie.nl/programma/joep-van-deudekom-rob-urgert/"
     },
     {
       "theater": "kunstlinie",
@@ -438,7 +425,7 @@
       "genre": "cabaret",
       "datum": "2027-03-07",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/peter-heerschop/"
     },
@@ -1039,6 +1026,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/juf-braaksel-de-musical-6/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Samar en de bange koning (8+)"
+      ],
+      "titel": "Samar en de bange koning (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/samar-en-de-bange-koning-8/"
     }
   ],
   "recensies": {

@@ -1,7 +1,7 @@
 {
   "bron": "hetpark",
   "naam": "Schouwburg Het Park",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "schouwburg-het-park",
@@ -143,7 +143,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-25",
       "tijd": "19:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/controle-10352974/"
     },
@@ -859,7 +859,7 @@
       "genre": "cabaret",
       "datum": "2027-04-06",
       "tijd": "19:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://hetpark.nl/agenda/daniel-arends-10350312/"
     },
@@ -872,7 +872,7 @@
       "genre": "cabaret",
       "datum": "2027-04-06",
       "tijd": "21:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://hetpark.nl/agenda/daniel-arends-10350475/"
     },

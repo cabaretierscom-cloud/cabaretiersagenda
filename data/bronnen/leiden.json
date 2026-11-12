@@ -1,7 +1,7 @@
 {
   "bron": "leiden",
   "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [
     {
       "id": "leidse-schouwburg",
@@ -262,17 +262,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-comedy-the-stand-up-club-3/"
-    },
-    {
-      "theater": "stadsgehoorzaal-leiden",
-      "artiesten": [],
-      "titel": "The Stand-up Club #2",
-      "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-comedy-the-stand-up-club-2/"
     },
     {
       "theater": "stadsgehoorzaal-leiden",
@@ -1494,9 +1483,19 @@
     ],
     "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/all-before-death-is-life-8-artemis-benjamin-verdonck/": [
       {
-        "medium": "“Hier schittert hij als droogkomisch acteur.”",
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "All before death is life is een wonderlijke jeugdvoorstelling, traag, melig, tergend, ontroerend."
+      },
+      {
+        "medium": "Theaterkrant.nl",
         "sterren": null,
-        "citaat": "Hier schittert hij als droogkomisch acteur."
+        "citaat": "Benjamin terug op de scène, en hoe!"
+      },
+      {
+        "medium": "www.pzazz.theater",
+        "sterren": null,
+        "citaat": "…een briljante clownerie vol cliffhangers."
       }
     ],
     "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/merijn-scholten-lemming-reprise/": [

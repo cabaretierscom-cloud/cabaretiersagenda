@@ -3,7 +3,7 @@
   "naam": "Agenda van Bunker Theaterzaken",
   "soort": "speellijst",
   "leidend": true,
-  "opgehaald": "2026-11-11",
+  "opgehaald": "2026-11-12",
   "theaters": [],
   "speeldata": [
     {
@@ -1045,25 +1045,6 @@
       ],
       "titel": "De Baas",
       "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Komedie",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.dekleinekomedie.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
       "datum": "2026-11-12",
       "tijd": "20:15",
       "status": "uitverkocht",
@@ -1867,25 +1848,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/lisa-ostermann-z9pf"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Stadsschouwburg Nijmegen en Concertgebouw De Vereeniging",
-        "plaats": "Nijmegen",
-        "land": "NL",
-        "website": "https://www.stadsschouwburgendevereeniging.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/patrick-laureij-7p4w"
     },
     {
       "theater": {
@@ -4033,6 +3995,44 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/kasper-van-der-laan-10/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Koninklijk Theater Carré",
+        "plaats": "Amsterdam",
+        "land": "NL",
+        "website": "https://carre.nl"
+      },
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/kasper-van-der-laan-ruim"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Koninklijk Theater Carré",
+        "plaats": "Amsterdam",
+        "land": "NL",
+        "website": "https://carre.nl"
+      },
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/kasper-van-der-laan-ruim"
     },
     {
       "theater": {
@@ -6963,6 +6963,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Koninklijk Theater Carré",
+        "plaats": "Amsterdam",
+        "land": "NL",
+        "website": "https://carre.nl"
+      },
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim Voor Iedereen",
+      "genre": "cabaret",
+      "datum": "2027-03-14",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/micha-wertheim-voor-iedereen"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "Stadsschouwburg Groningen",
         "plaats": "Groningen",
         "land": "NL",
@@ -7054,25 +7073,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Mimik",
-        "plaats": "Deventer",
-        "land": "NL",
-        "website": "https://www.mimik.nl"
-      },
-      "artiesten": [
-        "Van Vleuten & Van Muiswinkel"
-      ],
-      "titel": "Alles Onder Controle",
-      "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.mimik.nl/agenda/van-vleuten-en-van-muiswinkel-11-11"
     },
     {
       "theater": {
@@ -8229,7 +8229,7 @@
       "genre": "cabaret",
       "datum": "2026-11-14",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://cabaret-nigtevecht.nl/martijn-koning/"
     },
