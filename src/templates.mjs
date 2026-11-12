@@ -546,7 +546,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     </div>` : ""}
     ${afstand ? `<div class="field afstand-veld">
       <label for="f-km">Afstand</label>
-      <select id="f-km" name="km"><option value="">Overal</option>${[10, 25, 50].map((km) => `<option value="${km}">Binnen ${km} km van mij</option>`).join("")}</select>
+      <span class="afstand-kies">${ICON.pin}<select id="f-km" name="km"><option value="">Overal</option>${[10, 25, 50].map((km) => `<option value="${km}">Binnen ${km} km van mij</option>`).join("")}</select></span>
     </div>` : ""}
     ${uitverkocht ? `<div class="field toggle-veld">
       <label class="toggle"><input type="checkbox" id="f-uitverkocht" name="uitverkocht" value="1"> Uitverkocht verbergen</label>
