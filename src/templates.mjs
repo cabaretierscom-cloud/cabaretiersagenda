@@ -790,7 +790,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const items = netBinnenItems();
     if (!items.length) return "";
     return `<section class="block wrap net-binnen${klein ? " kleine-kop" : ""}" aria-labelledby="net-binnen-titel">
-  <div class="wall-head"><${kop} id="net-binnen-titel">Net binnen</${kop}>${link ? `<p><a href="/nieuws/">Alles in nieuws</a></p>` : ""}</div>
+  <div class="wall-head"><${kop} id="net-binnen-titel">Dit speelt er</${kop}>${link ? `<p><a href="/nieuws/">Alles in nieuws</a></p>` : ""}</div>
   <ul class="memo">${items.map(postit).join("")}</ul>
 </section>`;
   }
