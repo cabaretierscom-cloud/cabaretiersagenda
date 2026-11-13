@@ -1158,4 +1158,8 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .afstand-kies { position: relative; display: block; }
 .afstand-kies svg { position: absolute; left: 13px; top: 50%; translate: 0 -50%; width: 18px; height: 18px; pointer-events: none; color: var(--ink); }
 .afstand-kies select { padding-left: 40px; }
+/* Afstand als uitklapvak zoals Genre (agenda.js maakt het van het select): speldje vooraan, rondjes in de lijst. */
+.keuze-afstand { min-width: 0; }
+.keuze-afstand summary svg { flex: none; width: 18px; height: 18px; margin-left: -1px; }
+.field .keuze-afstand .keuze-lijst label { white-space: nowrap; }
 @media (max-width: 560px) { .filters .afstand-veld { flex-basis: 100%; } }

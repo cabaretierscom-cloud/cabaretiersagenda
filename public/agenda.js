@@ -296,6 +296,34 @@
     };
   }
 
+  // Afstand als uitklapvak zoals Genre (.keuze): het <select id="f-km"> blijft de bron van de waarde (verborgen), de
+  // keuzerondjes zetten die en sturen een change; wordt de waarde in de code gezet (wissen, locatie geweigerd), dan
+  // volgt het vak vanzelf.
+  (function afstandKeuze() {
+    const sel = document.getElementById("f-km");
+    if (!sel) return;
+    const kies = sel.closest(".afstand-kies"), pin = kies.querySelector("svg")?.outerHTML || "";
+    const el = document.createElement("details");
+    el.className = "keuze keuze-afstand";
+    el.innerHTML = `<summary aria-describedby="f-km-label">${pin}<span class="keuze-tekst"></span></summary><div class="keuze-lijst" role="radiogroup" aria-labelledby="f-km-label">${[...sel.options].map((o) => `<label><input type="radio" name="km-keuze" value="${o.value}"><span>${o.textContent}</span></label>`).join("")}</div>`;
+    const label = sel.closest(".field").querySelector("label");
+    if (label) { label.id = "f-km-label"; label.removeAttribute("for"); }
+    kies.after(el);
+    kies.hidden = true;
+    const rondjes = [...el.querySelectorAll("input")], tekst = el.querySelector(".keuze-tekst");
+    const bij = () => {
+      for (const r of rondjes) r.checked = r.value === sel.value;
+      tekst.textContent = sel.options[sel.selectedIndex]?.textContent || "Overal";
+      el.classList.toggle("gekozen", Boolean(sel.value));
+    };
+    const echt = Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype, "value");
+    Object.defineProperty(sel, "value", { get: () => echt.get.call(sel), set: (v) => { echt.set.call(sel, v); bij(); } });
+    rondjes.forEach((r) => r.addEventListener("change", () => { sel.value = r.value; el.open = false; sel.dispatchEvent(new Event("change")); }));
+    document.addEventListener("click", (e) => { if (el.open && !el.contains(e.target)) el.open = false; });
+    el.addEventListener("keydown", (e) => { if (e.key === "Escape" && el.open) { el.open = false; el.querySelector("summary").focus(); } });
+    bij();
+  })();
+
   // Een agendarij uit de gegevens van /agenda/alles.js; dezelfde opmaak als gigRow() in src/templates.mjs (pas ze samen
   // aan). Gebruikt door /agenda/, de genrepagina's en /in-de-buurt/.
   const rijVoor = (() => {
