@@ -945,8 +945,8 @@ ${zalen ? `
 
 <section class="block wrap kies-blok kleine-kop" aria-labelledby="plaats-title">
   <div class="wall-head"><h2 id="plaats-title">Zoek in de buurt</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
-  <p class="buurt-knop-rij"><a class="btn buurt-knop" href="/in-de-buurt/?locatie=1">${ICON.pin}Bij mij in de buurt</a></p>
   ${plaatsNav()}
+  <p class="buurt-knop-rij"><a class="btn buurt-knop" href="/in-de-buurt/?locatie=1">${ICON.pin}Gebruik mijn locatie</a></p>
 </section>
 ${netBinnenBlok()}
 ${clubs.length ? `
