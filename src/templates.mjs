@@ -182,7 +182,6 @@ export function createTemplates(db, { ga = null } = {}) {
     const nav = [
       ["agenda", "/agenda/", "Agenda"],
       ["artiesten", "/artiesten/", "Artiesten"],
-      ["plaatsen", "/plaatsen/", "Plaatsen"],
       ["theaters", "/theaters/", "Theaters"],
       ["comedyclubs", "/comedy-clubs/", "Comedy Clubs"],
       ["festivals", "/festivals/", "Festivals"],
