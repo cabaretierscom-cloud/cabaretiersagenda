@@ -33,30 +33,48 @@ function sleutel() {
 
 const b64url = (x) => Buffer.from(typeof x === "string" ? x : JSON.stringify(x)).toString("base64url");
 
+// Google geeft soms een tijdelijke fout (502/503/429) met een HTML-pagina in plaats van JSON (13 november 2026 liep
+// daardoor het dashboard leeg), of blijft hangen. Dan wachten en opnieuw proberen: vijf pogingen, hooguit zo'n tien minuten. Lukt het niet, dan
+// blijft het vorige bestand staan (bijwerken.yml bewaart het in de cache van GitHub Actions).
+async function googleJson(url, opties, naam) {
+  const wachten = [10, 30, 60, 120];
+  for (let poging = 0; ; poging++) {
+    let res, j, fout;
+    try {
+      res = await fetch(url, { ...opties, signal: AbortSignal.timeout(75_000) });
+      const tekst = await res.text();
+      try { j = JSON.parse(tekst); } catch { fout = `geen JSON (HTTP ${res.status})`; }
+    } catch (e) { fout = e.message; }
+    const tijdelijk = fout || res.status >= 500 || res.status === 429;
+    if (!tijdelijk) {
+      if (!res.ok) throw new Error(`${naam}: ${j.error_description || j.error?.message || j.error || res.status}`);
+      return j;
+    }
+    if (poging >= wachten.length) throw new Error(`${naam}: ${fout || j?.error?.message || res.status}, na ${poging + 1} pogingen`);
+    console.error(`${naam}: ${fout || res.status}, opnieuw over ${wachten[poging]} s`);
+    await new Promise((r) => setTimeout(r, wachten[poging] * 1000));
+  }
+}
+
 async function toegangstoken(s, scope = "https://www.googleapis.com/auth/analytics.readonly") {
   const nu = Math.floor(Date.now() / 1000);
   const kop = b64url({ alg: "RS256", typ: "JWT" });
   const inhoud = b64url({ iss: s.client_email, scope, aud: s.token_uri || "https://oauth2.googleapis.com/token", iat: nu, exp: nu + 3600 });
   const handtekening = createSign("RSA-SHA256").update(`${kop}.${inhoud}`).sign(s.private_key, "base64url");
-  const res = await fetch(s.token_uri || "https://oauth2.googleapis.com/token", {
+  const j = await googleJson(s.token_uri || "https://oauth2.googleapis.com/token", {
     method: "POST",
     headers: { "content-type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams({ grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer", assertion: `${kop}.${inhoud}.${handtekening}` }),
-  });
-  const j = await res.json();
-  if (!res.ok) throw new Error(`Inloggen bij Google mislukt: ${j.error_description || j.error || res.status}`);
+  }, "Inloggen bij Google mislukt");
   return j.access_token;
 }
 
 async function rapport(token, verzoek) {
-  const res = await fetch(`https://analyticsdata.googleapis.com/v1beta/properties/${PROPERTY}:runReport`, {
+  return googleJson(`https://analyticsdata.googleapis.com/v1beta/properties/${PROPERTY}:runReport`, {
     method: "POST",
     headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
     body: JSON.stringify(verzoek),
-  });
-  const j = await res.json();
-  if (!res.ok) throw new Error(`Google Analytics: ${j.error?.message || res.status}`);
-  return j;
+  }, "Google Analytics");
 }
 
 const args = process.argv.slice(2);
@@ -150,12 +168,10 @@ if (soort === "dashboard") {
     try {
       const gsc = await toegangstoken(sleutel(), "https://www.googleapis.com/auth/webmasters.readonly");
       const dag = (n) => new Date(Date.now() - n * 864e5).toISOString().slice(0, 10);
-      const res = await fetch(`https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(process.env.GSC_SITE || "https://www.cabaretiers.com/")}/searchAnalytics/query`, {
+      const j = await googleJson(`https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(process.env.GSC_SITE || "https://www.cabaretiers.com/")}/searchAnalytics/query`, {
         method: "POST", headers: { authorization: `Bearer ${gsc}`, "content-type": "application/json" },
         body: JSON.stringify({ startDate: dag(dagen + 2), endDate: dag(2), dimensions: ["page"], rowLimit: 5000 }),
-      });
-      const j = await res.json();
-      if (!res.ok) throw new Error(j.error?.message || res.status);
+      }, "Search Console");
       uit.zoekPaginas = (j.rows || []).map((x) => ({ pagina: new URL(x.keys[0]).pathname, vertoningen: x.impressions, klikken: x.clicks }));
     } catch (e) {
       console.error(`Search Console per pagina mislukt: ${e.message}`);
@@ -177,15 +193,13 @@ if (soort === "zoektermen") {
   const pagina = args.includes("--pagina") ? args[args.indexOf("--pagina") + 1] : null;
   try {
     const token = await toegangstoken(sleutel(), "https://www.googleapis.com/auth/webmasters.readonly");
-    const res = await fetch(`https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(SITE_GSC)}/searchAnalytics/query`, {
+    const j = await googleJson(`https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(SITE_GSC)}/searchAnalytics/query`, {
       method: "POST", headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
       body: JSON.stringify({
         startDate: dag(dagen + 2), endDate: dag(2), dimensions: ["query"], rowLimit: 500,
         ...(pagina ? { dimensionFilterGroups: [{ filters: [{ dimension: "page", operator: "contains", expression: pagina }] }] } : {}),
       }),
-    });
-    const j = await res.json();
-    if (!res.ok) throw new Error(`Search Console: ${j.error?.message || res.status}`);
+    }, "Search Console");
     if (alsJson) { console.log(JSON.stringify(j, null, 2)); process.exit(0); }
     const rijen = j.rows || [];
     console.log(`Zoektermen, laatste ${dagen} dagen (t/m ${dag(2)})${pagina ? `, pagina ${pagina}` : ""}: ${rijen.length} termen`);

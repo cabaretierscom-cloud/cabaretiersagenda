@@ -38,9 +38,21 @@ jobs:
         if: github.event_name != 'push'
         run: npm run samenvoegen
 
+      # De cijfers van de vorige run (in de cache van GitHub Actions, niet in de openbare repository). Lukt ophalen
+      # niet (Google gaf in november 2026 een middag lang 502-fouten), dan toont /dashboard/ de vorige cijfers.
+      - name: Vorige dashboardcijfers terugzetten
+        id: vorige-cijfers
+        uses: actions/cache/restore@v4
+        with:
+          path: data/ga-dashboard.json
+          key: ga-dashboard-${{ github.run_id }}
+          restore-keys: ga-dashboard-
+
       - name: Cijfers voor het dashboard ophalen
-        # Ook bij een push, anders verdwijnen de cijfers van /dashboard/ bij het plaatsen.
+        # 's Nachts verse cijfers; bij een push de vorige uit de cache (alleen ophalen als die er niet is).
         # Het bestand gaat niet in de repository (openbaar), alleen naar de site.
+        id: cijfers
+        if: github.event_name != 'push' || steps.vorige-cijfers.outputs.cache-matched-key == ''
         env:
           GA_SERVICE_ACCOUNT_B64: ${{ secrets.GA_SERVICE_ACCOUNT_B64 }}
         run: |
@@ -48,7 +60,20 @@ jobs:
             echo "::warning::Geen GA_SERVICE_ACCOUNT_B64 ingesteld; /dashboard/ toont geen cijfers."
             exit 0
           fi
-          npm run ga -- dashboard || echo "::warning::Google Analytics-cijfers ophalen mislukt; /dashboard/ toont geen cijfers."
+          if npm run ga -- dashboard; then
+            echo "gelukt=ja" >> "$GITHUB_OUTPUT"
+          elif [ -f data/ga-dashboard.json ]; then
+            echo "::warning::Google Analytics-cijfers ophalen mislukt; /dashboard/ toont de cijfers van de vorige run."
+          else
+            echo "::warning::Google Analytics-cijfers ophalen mislukt; /dashboard/ toont geen cijfers."
+          fi
+
+      - name: Dashboardcijfers bewaren voor de volgende run
+        if: steps.cijfers.outputs.gelukt == 'ja'
+        uses: actions/cache/save@v4
+        with:
+          path: data/ga-dashboard.json
+          key: ga-dashboard-${{ github.run_id }}
 
       - name: Controleren en bouwen
         run: |
