@@ -545,7 +545,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     </div>` : ""}
     ${afstand ? `<div class="field afstand-veld">
       <label for="f-km">Afstand</label>
-      <span class="afstand-kies">${ICON.pin}<select id="f-km" name="km"><option value="">Overal</option>${[10, 25, 50].map((km) => `<option value="${km}">Binnen ${km} km van mij</option>`).join("")}</select></span>
+      <span class="afstand-kies">${ICON.pin}<select id="f-km" name="km" data-geo="/agenda/alles.js?v=${allesVersie()}"><option value="">Overal</option>${[10, 25, 50].map((km) => `<option value="${km}">Binnen ${km} km van mij</option>`).join("")}</select></span>
     </div>` : ""}
     ${uitverkocht ? `<div class="field toggle-veld">
       <label class="toggle"><input type="checkbox" id="f-uitverkocht" name="uitverkocht" value="1"> Uitverkocht verbergen</label>
@@ -561,7 +561,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const rijOpts = { verbergGenre: genre, verbergSoort: soort };
     const grens = list[Math.min(max, list.length) - 1].datum;
     const eerste = list.filter((g) => g.datum <= grens);
-    return { eerste, html: `${filters(list, { genre: !genre })}
+    return { eerste, html: `${filters(list, { genre: !genre, afstand: true })}
       <div id="gigs" data-alles="/agenda/alles.js?v=${allesVersie()}" data-tot="${grens}" data-totaal="${list.length}"${genre ? ` data-vast-genre="${genre}"` : ""}${soort ? ` data-vast-soort="${soort}"` : ""}>${monthGroups(eerste, rijOpts)}</div>
       ${leegBlok}
       <p class="meer-weken" id="laad-meer"><button type="button" class="btn" id="laad-week">Toon alle ${list.length.toLocaleString("nl-NL")} voorstellingen</button></p>` };
@@ -1091,7 +1091,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div class="block-head"><h1 id="t">${maandNaam(m)}</h1><p>${plural(list.length, "voorstelling", "voorstellingen")}</p></div>
       ${maandNav(m)}
       ${uitgelichtBlok("agenda")}
-      ${filters(list)}
+      ${filters(list, { afstand: true })}
       ${weken.nav}
       <div id="gigs" data-per-week>${weken.groepen}</div>
       <p class="meer-weken" id="meer-weken" hidden><button type="button" class="btn" id="volgende-week"></button></p>
@@ -1209,7 +1209,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         Kaarten koop je bij het theater; controleer daar ook of een voorstelling is uitverkocht.</p>
       <nav class="dag-nav" aria-label="Meer">${[andereLink, p ? `<a href="${plaatsPad(p)}">Alle voorstellingen in ${esc(p)}</a>` : `<a href="/agenda/">De hele agenda</a>`].filter(Boolean).join("")}</nav>
       ${p ? uitgelichtBlok("plaats", p) : uitgelichtBlok("agenda")}
-      ${filters(list)}
+      ${filters(list, { afstand: true })}
       <div id="gigs">${dagGroepen(list)}</div>
       ${leegBlok}
       <div class="empty" id="dag-leeg"${list.length ? " hidden" : ""}><p>${avond ? "Vanavond" : "Dit weekend"} staat er${waar} niets in de agenda. Bekijk <a href="${p ? plaatsPad(p) : "/agenda/"}">de eerstvolgende voorstellingen</a>.</p></div>
@@ -1837,7 +1837,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div class="wrap detail-body">
         ${list.length ? `<h2 class="sub-head speellijst-kop">Speellijst ${jaren}</h2>` : ""}
         ${showIds.length ? `<div class="shows-list">${showIds.map((vid) => voorstellingPad.has(vid) ? `<a class="pill" href="${voorstellingPad.get(vid)}">${esc(V.get(vid).titel)}</a>` : `<span class="pill">${esc(V.get(vid).titel)}</span>`).join("")}</div>` : ""}
-        ${list.length > 12 ? filters(list, { maand: true, waar: true }) : ""}
+        ${list.length > 12 ? filters(list, { maand: true, waar: true, afstand: new Set(list.map((g) => T.get(g.theater).plaats)).size > 1 }) : ""}
         <div id="gigs">${monthGroups(list, { showArtist: false })}</div>
         ${list.length > 12 ? leegBlok : ""}
         ${a.videos?.length ? videosHtml(a) : ""}
@@ -2191,7 +2191,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     </section>` : ""}
     <section class="block wrap az-blok" aria-labelledby="lijst-titel">
       <h2 class="sub-head" id="lijst-titel">${list.length > MAX ? "Eerstvolgende voorstellingen" : "Alle voorstellingen"}</h2>
-      ${groot ? groot.html : `${list.length > 12 ? filters(list, { maand: true }) : ""}
+      ${groot ? groot.html : `${list.length > 12 ? filters(list, { maand: true, afstand: true }) : ""}
       <div id="gigs">${monthGroups(list, { verbergGenre: g })}</div>
       ${list.length > 12 ? leegBlok : ""}`}
       ${genrePlaatsen(g).length ? `<section class="genre-plaatsen" aria-labelledby="gp-titel">
@@ -2257,7 +2257,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     </section>` : ""}
     <section class="block wrap az-blok" aria-labelledby="lijst-titel">
       <h2 class="sub-head" id="lijst-titel">${list.length > MAX ? "Eerstvolgende try-outs" : "Alle try-outs"}</h2>
-      ${groot ? groot.html : `${list.length > 12 ? filters(list, { maand: true }) : ""}
+      ${groot ? groot.html : `${list.length > 12 ? filters(list, { maand: true, afstand: true }) : ""}
       <div id="gigs">${monthGroups(list, { verbergSoort: "try-out" })}</div>
       ${list.length > 12 ? leegBlok : ""}`}
       <section class="seo-tekst prose" aria-labelledby="over-titel">
@@ -2390,7 +2390,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <p>Cabaretfestival uit ${plaatsen.includes(f.plaats) ? `<a href="${plaatsPad(f.plaats)}">${esc(f.plaats)}</a>` : esc(f.plaats)}. ${list.length ? `${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.` : "Op dit moment staan er geen speeldata in de agenda."}${f.website ? ` <a href="${esc(metUtm(f.website))}" rel="noopener">Website van het festival</a>` : ""}</p>
       </div></div>
       <div class="wrap detail-body">
-        ${list.length > 12 ? filters(list, { maand: true }) : ""}
+        ${list.length > 12 ? filters(list, { maand: true, afstand: new Set(list.map((g) => T.get(g.theater).plaats)).size > 1 }) : ""}
         <div id="gigs">${monthGroups(list)}</div>
         ${list.length > 12 ? leegBlok : ""}
         ${festivalTekst(f, list)}

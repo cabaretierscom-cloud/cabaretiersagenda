@@ -466,7 +466,7 @@
       .then((j) => (j.z.some((z) => z.length > 6) ? j : fetch(alles.dataset.alles, { cache: "reload" }).then((r) => r.json())))
       .then((j) => (data = leesAlles(j))));
 
-    // Afstand (alleen /agenda/): "Binnen 25 km van mij" vraagt de locatie van de browser; die blijft hier en gaat nergens heen.
+    // Afstand (/agenda/, genrepagina's en try-outs): "Binnen 25 km van mij" vraagt de locatie van de browser; die blijft hier en gaat nergens heen.
     const kmVeld = document.getElementById("f-km");
     let punt = null;
     const kmGekozen = () => (kmVeld && kmVeld.value && punt ? +kmVeld.value : 0);
@@ -590,7 +590,7 @@
     form?.addEventListener("submit", (e) => e.preventDefault());
     document.getElementById("reset")?.addEventListener("click", () => {
       stand.q = stand.genre = stand.uitverkocht = stand.soort = "";
-      if (q) q.value = ""; if (genre) genre.zet([]); if (vinkUit) vinkUit.checked = false;
+      if (q) q.value = ""; if (genre) genre.zet([]); if (vinkUit) vinkUit.checked = false; if (kmVeld) kmVeld.value = "";
       pasToe();
     });
     if (gefilterd()) pasToe(); else begin();
@@ -633,6 +633,25 @@
   const genre = genreKeuze((w) => { state.genre = w.join(","); opnieuw(); });
   if (genre) state.genre = genre.zet(leesGenres(params.get("genre"))).join(",");
 
+  // Afstand: "Binnen 25 km van mij" vraagt de locatie van de browser (die blijft hier en gaat nergens heen). De
+  // coördinaten per plaats komen uit /agenda/alles.js (data-geo); de rijen hebben data-land en data-plaats.
+  const kmVeld = veld("f-km");
+  let punt = null, geo = null;
+  const kmGekozen = () => (kmVeld && kmVeld.value && punt && geo ? +kmVeld.value : 0);
+  const afstandRij = (r) => { const c = geo.get(`${r.dataset.land}|${r.dataset.plaats}`); return c ? afstandKm(punt, c) : Infinity; };
+  const laadGeo = () => geo ? Promise.resolve() : fetch(kmVeld.dataset.geo).then((x) => x.json()).then((j) => {
+    geo = new Map();
+    const code = { Nederland: "NL", "België": "BE" };
+    for (const z of j.z) if (z.length > 6) geo.set(`${code[z[4]] || z[4]}|${z[2]}`, [z[5], z[6]]);
+  });
+  // De afstand naast het speldje zetten of weer weghalen.
+  const toonAfstand = (r, km) => {
+    r.querySelector(".buurt-afstand")?.remove();
+    if (!km) return;
+    const plek = [...r.querySelectorAll(".visually-hidden")].find((x) => x.textContent === "Theater: ");
+    plek?.insertAdjacentHTML("beforebegin", `<span class="buurt-afstand">${km < 1 ? "< 1" : Math.round(km)} km</span>`);
+  };
+
   const telling = (shown) => shown === rows.length
     ? `${rows.length === 1 ? "1 voorstelling" : `Alle ${rows.length} voorstellingen`}`
     : `${shown} van ${rows.length} voorstellingen`;
@@ -651,15 +670,18 @@
         (!state.maand || r.dataset.datum.startsWith(state.maand)) &&
         inGenre(r) &&
         (!state.uitverkocht || r.dataset.status !== "uitverkocht") &&
-        (!needle || kaal(r.dataset[zoekVeld] || "").includes(needle));
+        (!needle || kaal(r.dataset[zoekVeld] || "").includes(needle)) &&
+        (!kmGekozen() || afstandRij(r) <= kmGekozen());
+      toonAfstand(r, kmGekozen() && afstandRij(r));
       r.hidden = !ok || passend >= max;
       if (ok) { passend++; if (passend <= max) shown++; }
     }
     meer.hidden = passend <= shown;
     if (passend > shown) meer.querySelector("button").textContent = `Toon meer voorstellingen (${Math.min(PORTIE, passend - shown)} van ${passend - shown})`;
-    if (perWeek && Object.values(state).some((v) => v)) toonWeken(Infinity);
+    if (perWeek && (Object.values(state).some((v) => v) || kmGekozen())) toonWeken(Infinity);
     syncGroups();
     resultLine.textContent = shown < passend ? `${shown} van ${passend} voorstellingen` : telling(shown);
+    if (kmGekozen()) resultLine.textContent = `${passend} ${passend === 1 ? "voorstelling" : "voorstellingen"} binnen ${kmGekozen()} km van jouw locatie${shown < passend ? `, ${shown} getoond` : ""}`;
     if (empty) empty.hidden = shown > 0;
 
     const p = new URLSearchParams();
@@ -674,6 +696,16 @@
   if (q) q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { state.q = q.value; opnieuw(); }, 150); });
   for (const [k, el] of Object.entries(selects)) if (el) el.addEventListener("change", () => { state[k] = el.value; opnieuw(); });
   if (vinkUit) vinkUit.addEventListener("change", () => { state.uitverkocht = vinkUit.checked ? "1" : ""; opnieuw(); });
+  // Afstand kiezen: de eerste keer vraagt de browser om de locatie; lukt dat niet, dan terug naar "Overal".
+  if (kmVeld) kmVeld.addEventListener("change", () => {
+    if (!kmVeld.value || punt) return laadGeo().then(opnieuw);
+    if (!navigator.geolocation) { kmVeld.value = ""; resultLine.textContent = "Je browser kan je locatie niet delen."; return; }
+    resultLine.textContent = "Je locatie opvragen…";
+    navigator.geolocation.getCurrentPosition(
+      (pos) => { punt = [pos.coords.latitude, pos.coords.longitude]; laadGeo().then(opnieuw, () => { kmVeld.value = ""; opnieuw(); }); },
+      () => { kmVeld.value = ""; opnieuw(); resultLine.textContent = "Je locatie is niet gedeeld; je ziet weer alle voorstellingen."; },
+      { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
+  });
   form.addEventListener("submit", (e) => e.preventDefault());
   const reset = veld("reset");
   if (reset) reset.addEventListener("click", () => {
@@ -682,6 +714,7 @@
     Object.values(selects).forEach((el) => { if (el) el.value = ""; });
     if (genre) genre.zet([]);
     if (vinkUit) vinkUit.checked = false;
+    if (kmVeld) kmVeld.value = "";
     opnieuw();
     if (q) q.focus();
   });
