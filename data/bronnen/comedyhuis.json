@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-13",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,17 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Dutch Courage – Rachel Morton-Young",
-      "genre": "stand-up",
-      "datum": "2026-11-12",
-      "tijd": "19:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/dutch-courage-rachel-morton-young/"
-    },
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
@@ -1945,6 +1934,28 @@
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
+      "titel": "Kor Hoebe en Steff Balm",
+      "genre": "stand-up",
+      "datum": "2027-02-01",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/kor-hoebe-en-steff-balm/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Kor Hoebe en Steff Balm",
+      "genre": "stand-up",
+      "datum": "2027-02-02",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/kor-hoebe-en-steff-balm-2/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
       "titel": "Open Mic Comedyhuis Regulars",
       "genre": "open-mic",
       "datum": "2027-02-03",
@@ -2071,6 +2082,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/writers-room-open-mic-7-februari-2027/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Lachende mensen bijten niet — Jitske Kramer & Dolf Jansen",
+      "genre": "comedy",
+      "datum": "2027-02-07",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/lachende-mensen-bijten-niet-jitske-kramer-dolf-jansen/"
     },
     {
       "theater": {

@@ -1,7 +1,7 @@
 {
   "bron": "wilminktheater",
   "naam": "Wilminktheater en Muziekcentrum Enschede",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-13",
   "theaters": [
     {
       "id": "wilminktheater",
@@ -21,39 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "wilminktheater",
-      "artiesten": [
-        "René van Meurs"
-      ],
-      "titel": "Noodzakelijk kwaad - Herneming",
-      "genre": "comedy",
-      "datum": "2026-11-12",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/noodzakelijk-kwaad-herneming-n8y6"
-    },
-    {
-      "theater": {
-        "id": "de-kleine-willem-enschede",
-        "naam": "De Kleine Willem",
-        "plaats": "Enschede",
-        "land": "NL",
-        "soort": "theater",
-        "website": null
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/striptease-van-de-dood-fs2x"
-    },
     {
       "theater": "wilminktheater",
       "artiesten": [
@@ -343,6 +310,32 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/harrekidee-herneming-yw51"
+    },
+    {
+      "theater": "muziekcentrum-enschede",
+      "artiesten": [
+        "Ageeth de Haan en Wessel Coppes"
+      ],
+      "titel": "Falalalala (bij de kerstboom) 2+",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-21",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/falalalala-bij-de-kerstboom-2-bcpp"
+    },
+    {
+      "theater": "muziekcentrum-enschede",
+      "artiesten": [
+        "Ageeth de Haan en Wessel Coppes"
+      ],
+      "titel": "Falalalala (bij de kerstboom) 2+",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/falalalala-bij-de-kerstboom-2-bcpp"
     },
     {
       "theater": "wilminktheater",

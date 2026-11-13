@@ -1,7 +1,7 @@
 {
   "bron": "leiden",
   "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-13",
   "theaters": [
     {
       "id": "leidse-schouwburg",
@@ -826,19 +826,6 @@
     {
       "theater": "leidse-schouwburg",
       "artiesten": [
-        "Jeroens Clan"
-      ],
-      "titel": "Juk",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/"
-    },
-    {
-      "theater": "leidse-schouwburg",
-      "artiesten": [
         "Jawad Es Soufi"
       ],
       "titel": "Tnawies",
@@ -1445,33 +1432,6 @@
         "medium": "Theaterparadijs",
         "sterren": 4,
         "citaat": "Alles klopt aan deze voorstelling: muzikaal, verbaal en visueel vormt het een compleet geheel."
-      }
-    ],
-    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jeroens-clan-juk/": [
-      {
-        "medium": "Dagblad van het Noorden",
-        "sterren": 4,
-        "citaat": "Een gedurfde show vol heisa, herrie en energie"
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "De sleutel voor deze cabaretvorm is beslist niet dat het drietal grofgebekt is, zoals recensies keer op keer beweren, maar dat Tuns, Kroon en De Poorter op intelligente manier spelen met ironie"
-      },
-      {
-        "medium": "De Telegraaf",
-        "sterren": null,
-        "citaat": "Jeroens Clan mag een sensatie worden genoemd"
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Keihard cabaret van drie kwetsbare mannen"
-      },
-      {
-        "medium": "NRC",
-        "sterren": null,
-        "citaat": "Het drietal valt op met scherpe en grappige dialogen"
       }
     ],
     "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jawad-es-soufi-tnawies/": [

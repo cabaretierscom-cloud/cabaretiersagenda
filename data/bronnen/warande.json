@@ -1,7 +1,7 @@
 {
   "bron": "warande",
   "naam": "De Warande",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-13",
   "theaters": [
     {
       "id": "de-warande-turnhout",
@@ -16,6 +16,71 @@
     {
       "theater": "de-warande-turnhout",
       "artiesten": [
+        "Taal op zijn kop"
+      ],
+      "titel": "Bibliotheek Turnhout",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/taal-op-zijn-kop-7pq8"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Buiten de lijntjes"
+      ],
+      "titel": "Figurentheater Propop in de Bibliotheek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/buiten-de-lijntjes-xrw6"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Rommel mee"
+      ],
+      "titel": "Bazart in de Bibliotheek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/rommel-mee-14tr"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Valeria Secchi"
+      ],
+      "titel": "mean-meal",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/valeria-secchi-yxrl"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "You On Stage for kids"
+      ],
+      "titel": "Collectief Dichterbij in de bibliotheek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/you-on-stage-for-kids-skr2"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
         "Kunst in Zicht"
       ],
       "titel": "mish mash Minnen (9+)",
@@ -25,6 +90,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.warande.be/nl/programma/kunst-in-zicht-dc89"
+    },
+    {
+      "theater": "de-warande-turnhout",
+      "artiesten": [
+        "Papaya"
+      ],
+      "titel": "Mooov",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-15",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warande.be/nl/programma/papaya-jmcy"
     },
     {
       "theater": "de-warande-turnhout",

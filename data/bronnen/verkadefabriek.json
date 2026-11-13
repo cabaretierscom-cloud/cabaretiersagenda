@@ -1,7 +1,7 @@
 {
   "bron": "verkadefabriek",
   "naam": "Verkadefabriek",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-13",
   "theaters": [
     {
       "id": "verkadefabriek-s-hertogenbosch",
@@ -555,7 +555,7 @@
       "genre": "cabaret",
       "datum": "2027-04-14",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.verkadefabriek.nl/agenda/david-van-rosmalen-als-ik-jou-was-reprise-162292"
     },
@@ -841,7 +841,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-15",
       "tijd": "15:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/het-filiaal-de-jongen-die-van-de-wereld-hield-9-162873"
     },
@@ -1156,28 +1156,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/cameretten-comedy-masterclass-166573"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
-      "datum": "2026-11-12",
-      "tijd": "15:40",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
-      "datum": "2026-11-12",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
     },
     {
       "theater": "verkadefabriek-s-hertogenbosch",

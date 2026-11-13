@@ -1,7 +1,7 @@
 {
   "bron": "castellum",
   "naam": "Castellum",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-13",
   "theaters": [
     {
       "id": "castellum",
@@ -241,7 +241,7 @@
       "genre": "cabaret",
       "datum": "2026-11-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://castellum.nl/theater/comedy-club-down-under"
     },
@@ -451,19 +451,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://castellum.nl/theater/ricky-risolles-niet-zo-indiscreet"
-    },
-    {
-      "theater": "castellum",
-      "artiesten": [
-        "Joosen en de Jager"
-      ],
-      "titel": "Niks aan het handje",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://castellum.nl/theater/joosen-en-de-jager-niks-aan-het-handje"
     },
     {
       "theater": "castellum",

@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-13",
   "theaters": [
     {
       "id": "zaantheater",
@@ -59,7 +59,7 @@
       "genre": "cabaret",
       "datum": "2026-12-19",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ayoub-kharkhach/"
     },
@@ -553,7 +553,7 @@
       "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/"
     },
@@ -566,7 +566,7 @@
       "genre": "cabaret",
       "datum": "2026-11-27",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/"
     },
@@ -916,19 +916,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rayen-panday/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Rayen Panday & Friends"
-      ],
-      "titel": "Wonderful Christmastime",
-      "genre": "cabaret",
-      "datum": "2026-12-27",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rayen-panday-friends/"
     },
     {
       "theater": "zaantheater",

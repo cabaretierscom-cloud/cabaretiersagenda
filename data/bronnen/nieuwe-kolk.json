@@ -1,7 +1,7 @@
 {
   "bron": "nieuwe-kolk",
   "naam": "De Nieuwe Kolk",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-13",
   "theaters": [
     {
       "id": "de-nieuwe-kolk",
@@ -74,6 +74,19 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-22",
       "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/sinterklaas-de-magische-wensveer"
+    },
+    {
+      "theater": "de-nieuwe-kolk",
+      "artiesten": [
+        "Sinterklaas & de Magische Wensveer"
+      ],
+      "titel": "Strooigoed Theater (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "16:00",
       "status": "gepland",
       "soort": null,
       "bron": "https://denieuwekolk.nl/theater/agenda/sinterklaas-de-magische-wensveer"
@@ -818,19 +831,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://denieuwekolk.nl/theater/agenda/firma-frictie"
-    },
-    {
-      "theater": "de-nieuwe-kolk",
-      "artiesten": [
-        "Berit Companjen"
-      ],
-      "titel": "Zei ik dat hardop?",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://denieuwekolk.nl/theater/agenda/berit-companjen"
     },
     {
       "theater": "de-nieuwe-kolk",

@@ -1,7 +1,7 @@
 {
   "bron": "gouda",
   "naam": "Goudse Schouwburg",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-13",
   "theaters": [
     {
       "id": "goudse-schouwburg",
@@ -13,30 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "goudse-schouwburg",
-      "artiesten": [
-        "Dolf Jansen"
-      ],
-      "titel": "Schaamteloos",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://goudseschouwburg.nl/agenda/dolf-jansen-schaamteloos-10025218/"
-    },
-    {
-      "theater": "goudse-schouwburg",
-      "artiesten": [],
-      "titel": "Comedy Club",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://goudseschouwburg.nl/agenda/comedy-club-10025960/"
-    },
     {
       "theater": "goudse-schouwburg",
       "artiesten": [

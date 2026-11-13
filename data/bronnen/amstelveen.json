@@ -1,7 +1,7 @@
 {
   "bron": "amstelveen",
   "naam": "Schouwburg Amstelveen",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-13",
   "theaters": [
     {
       "id": "schouwburg-amstelveen",
@@ -191,7 +191,7 @@
       "genre": "cabaret",
       "datum": "2027-01-27",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/freek-de-jonge/"
     },
@@ -467,19 +467,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/ronald-snijders/"
-    },
-    {
-      "theater": "schouwburg-amstelveen",
-      "artiesten": [
-        "Rundfunk"
-      ],
-      "titel": "Wagyu",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/rundfunk/"
     },
     {
       "theater": "schouwburg-amstelveen",

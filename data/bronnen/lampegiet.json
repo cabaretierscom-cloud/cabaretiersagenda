@@ -1,7 +1,7 @@
 {
   "bron": "lampegiet",
   "naam": "Theater Lampegiet",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-13",
   "theaters": [
     {
       "id": "theater-lampegiet",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-lampegiet",
-      "artiesten": [
-        "Bob Koomen"
-      ],
-      "titel": "Peer",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.lampegiet.nl/agenda/bob-koomen-6qq5"
-    },
     {
       "theater": "theater-lampegiet",
       "artiesten": [],

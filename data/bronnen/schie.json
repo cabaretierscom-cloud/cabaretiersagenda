@@ -1,7 +1,7 @@
 {
   "bron": "schie",
   "naam": "Theater aan de Schie",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-13",
   "theaters": [
     {
       "id": "theater-aan-de-schie",
@@ -296,19 +296,6 @@
     {
       "theater": "theater-aan-de-schie",
       "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theateraandeschie.nl/voorstelling/valentina-toth-revue-revanche"
-    },
-    {
-      "theater": "theater-aan-de-schie",
-      "artiesten": [
         "Remko Vrijdag"
       ],
       "titel": "Marko Maandag",
@@ -458,7 +445,7 @@
       "genre": "cabaret",
       "datum": "2027-01-08",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://theateraandeschie.nl/voorstelling/cameretten-finalistentournee"
     },
