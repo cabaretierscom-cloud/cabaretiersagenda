@@ -190,7 +190,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   scroll-snap-align: start; text-decoration: none; color: var(--fg); background-color: var(--bg);
   display: grid; grid-template-rows: auto 1fr auto; padding: 26px 26px 28px; overflow: hidden;
   isolation: isolate;
-  transition: transform .28s cubic-bezier(.2,.8,.2,1), border-radius .28s ease, box-shadow .28s ease;
+  transition: transform .28s cubic-bezier(.2,.8,.2,1), border-radius .28s ease, box-shadow .28s ease, opacity .28s ease;
 }
 /* Rasterpunten zoals een gezeefdrukte affiche */
 .poster::before {
@@ -210,10 +210,10 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   .poster:hover::before, .poster:focus-visible::before { opacity: .38; }
 }
 /* Mobiel: de andere affiches zakken iets terug, zodat je tijdens het vegen ziet welke vooraan komt. */
-.strip.vegen .poster:not(.actief) { transform: scale(.93); }
+.strip.vegen .poster:not(.actief) { transform: translateY(8px); opacity: .82; }
 /* Festival- en clubkaarten (homepage, /festivals/, /comedy-clubs/): geen onderstreping, maar net als de
    affiches iets omhoog met een schaduw bij aanwijzen; op mobiel licht de kaart op waar je naartoe veegt. */
-:is(.strip, .festival-kaarten) .artist-card { transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease; }
+:is(.strip, .festival-kaarten) .artist-card { transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease, opacity .28s ease; }
 :is(.strip, .festival-kaarten) .artist-card::before { transition: opacity .28s ease; }
 :is(.strip, .festival-kaarten) .artist-card:hover h3 { text-decoration: none; }
 .artist-card.actief { transform: translateY(-10px); z-index: 2; box-shadow: 0 22px 40px -18px rgba(0,0,0,.6); }
@@ -222,7 +222,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   :is(.strip, .festival-kaarten) .artist-card:is(:hover, :focus-visible) { transform: translateY(-10px); z-index: 2; box-shadow: 0 22px 40px -18px rgba(0,0,0,.6); }
   :is(.strip, .festival-kaarten) .artist-card:is(:hover, :focus-visible)::before { opacity: .38; }
 }
-.strip.vegen .artist-card:not(.actief) { transform: scale(.93); }
+.strip.vegen .artist-card:not(.actief) { transform: translateY(8px); opacity: .82; }
 .poster .when { line-height: 1; }
 .poster .day {
   display: block; font-family: var(--font-display); font-weight: 900;
@@ -263,7 +263,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
           mask-image: linear-gradient(90deg, #000 11px, transparent 11px, transparent 18px, #000 18px, #000 calc(100% - 18px), transparent calc(100% - 18px), transparent calc(100% - 11px), #000 calc(100% - 11px));
 }
 .poster-beeld { position: relative; flex: 1 1 0; min-height: 38%; overflow: hidden; background: rgba(0,0,0,.15); border-radius: 18px 18px 0 0; }
-.poster-beeld img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+/* Geen zoom op de foto (en geen schaal op de kaarten tijdens het vegen): uitvergroten maakt de foto onscherp. */
+.poster-beeld img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
 .poster-sterren {
   position: absolute; left: 14px; top: 14px; display: inline-flex; align-items: baseline; gap: 6px;
   padding: 4px 10px 5px; border-radius: 999px; background: var(--bg); color: var(--fg);
@@ -309,7 +310,6 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-foto .tag { font-size: .85rem; padding: 2px 9px; }
 .poster-foto .tag { align-self: flex-start; margin-top: auto; }
 @media (hover: hover) and (pointer: fine) {
-  .poster-foto:hover .poster-beeld img, .poster-foto:focus-visible .poster-beeld img { transform: scale(1.04); }
 }
 .strip-nav {
   position: absolute; right: max(12px, env(safe-area-inset-right, 0px)); top: 50%; translate: 0 -50%;
@@ -895,7 +895,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .dag-kaart {
   position: relative; isolation: isolate; flex: 0 0 210px; min-height: 200px; scroll-snap-align: start;
   display: flex; flex-direction: column; gap: 4px; padding: 14px 16px 16px; border-radius: 16px; background: var(--bg); color: var(--fg);
-  text-decoration: none; transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease;
+  text-decoration: none; transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease, opacity .28s ease;
 }
 .dag-kaart::after { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none; opacity: .22; transition: opacity .28s ease;
   background-image: radial-gradient(currentColor 1.1px, transparent 1.6px); background-size: 7px 7px;
@@ -908,7 +908,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   .dag-kaart:is(:hover, :focus-visible) { transform: translateY(-8px); z-index: 2; box-shadow: 0 22px 40px -18px rgba(0,0,0,.6); }
   .dag-kaart:is(:hover, :focus-visible)::after { opacity: .38; }
 }
-.strip.vegen .dag-kaart:not(.actief) { transform: scale(.94); }
+.strip.vegen .dag-kaart:not(.actief) { transform: translateY(8px); opacity: .82; }
 .dk-dag { font-weight: 800; font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; }
 .dk-datum { font-family: var(--font-display); font-weight: 900; font-size: 2rem; line-height: .9; }
 .dk-waar { font-weight: 600; font-size: .88rem; }
