@@ -1,9 +1,9 @@
 {
   "datum": "2026-11-13",
   "totaal": {
-    "speeldata": 9267,
-    "komend": 8511,
-    "artiesten": 965,
+    "speeldata": 9272,
+    "komend": 8516,
+    "artiesten": 966,
     "zalen": 705,
     "plaatsen": 491,
     "voorstellingen": 1421
@@ -14,7 +14,7 @@
       "naam": "Amai Comedy Club",
       "opgehaald": "2026-11-13",
       "speeldata": 16,
-      "vorige": 15,
+      "vorige": 16,
       "dubbel": 0
     },
     {
@@ -86,7 +86,7 @@
       "naam": "Comedyhuis Utrecht",
       "opgehaald": "2026-11-13",
       "speeldata": 315,
-      "vorige": 312,
+      "vorige": 315,
       "dubbel": 0
     },
     {
@@ -238,7 +238,7 @@
       "naam": "De Kleine Komedie",
       "opgehaald": "2026-11-13",
       "speeldata": 151,
-      "vorige": 150,
+      "vorige": 151,
       "dubbel": 0
     },
     {
@@ -302,7 +302,7 @@
       "naam": "Luxor Theater",
       "opgehaald": "2026-11-13",
       "speeldata": 166,
-      "vorige": 163,
+      "vorige": 166,
       "dubbel": 0
     },
     {
@@ -334,7 +334,7 @@
       "naam": "De Nieuwe Kolk",
       "opgehaald": "2026-11-13",
       "speeldata": 72,
-      "vorige": 71,
+      "vorige": 72,
       "dubbel": 0
     },
     {
@@ -390,7 +390,7 @@
       "naam": "PLT (Parkstad Limburg Theaters)",
       "opgehaald": "2026-11-13",
       "speeldata": 259,
-      "vorige": 258,
+      "vorige": 259,
       "dubbel": 0
     },
     {
@@ -423,6 +423,14 @@
       "opgehaald": "2026-11-13",
       "speeldata": 60,
       "vorige": 60,
+      "dubbel": 0
+    },
+    {
+      "bron": "splotsz",
+      "naam": "SplotsZ",
+      "opgehaald": "2026-11-13",
+      "speeldata": 7,
+      "vorige": 7,
       "dubbel": 0
     },
     {
@@ -502,7 +510,7 @@
       "naam": "De Warande",
       "opgehaald": "2026-11-13",
       "speeldata": 40,
-      "vorige": 34,
+      "vorige": 40,
       "dubbel": 0
     },
     {
@@ -518,7 +526,7 @@
       "naam": "Wilminktheater en Muziekcentrum Enschede",
       "opgehaald": "2026-11-13",
       "speeldata": 115,
-      "vorige": 113,
+      "vorige": 115,
       "dubbel": 0
     },
     {
@@ -526,7 +534,7 @@
       "naam": "Zaantheater",
       "opgehaald": "2026-11-13",
       "speeldata": 86,
-      "vorige": 87,
+      "vorige": 86,
       "dubbel": 0
     },
     {
@@ -589,9 +597,9 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-13",
-      "speeldata": 2304,
-      "vorige": 2316,
-      "dubbel": 1371
+      "speeldata": 2302,
+      "vorige": 2302,
+      "dubbel": 1373
     }
   ],
   "nieuw": {
@@ -627,6 +635,10 @@
       {
         "id": "taal-op-zijn-kop",
         "naam": "Taal op zijn kop"
+      },
+      {
+        "id": "knock-out-comedy-crew",
+        "naam": "Knock Out Comedy Crew"
       }
     ],
     "zalen": [
@@ -728,6 +740,20 @@
         "id": "valeria-secchi-mean-meal-de-warande-turnhout",
         "titel": "Valeria Secchi mean-meal",
         "artiesten": []
+      },
+      {
+        "id": "de-interventie",
+        "titel": "",
+        "artiesten": [
+          "de-interventie"
+        ]
+      },
+      {
+        "id": "knock-out-comedy-crew",
+        "titel": "",
+        "artiesten": [
+          "knock-out-comedy-crew"
+        ]
       }
     ]
   },
@@ -906,9 +932,9 @@
     },
     {
       "datum": "2026-11-13",
-      "speeldata": 9267,
-      "komend": 8511,
-      "artiesten": 965,
+      "speeldata": 9272,
+      "komend": 8516,
+      "artiesten": 966,
       "zalen": 705,
       "plaatsen": 491,
       "voorstellingen": 1421

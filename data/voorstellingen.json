@@ -2666,6 +2666,14 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "de-interventie",
+    "titel": "",
+    "artiesten": [
+      "de-interventie"
+    ],
+    "genre": "improvisatie"
+  },
+  {
     "id": "de-interventie-de-interventie",
     "titel": "De Interventie",
     "artiesten": [
@@ -4528,7 +4536,7 @@
   },
   {
     "id": "guido-spek-voor-spek-en-bonen",
-    "titel": "Voor Spek En Bonen",
+    "titel": "Voor Spek en Bonen",
     "artiesten": [
       "guido-spek"
     ],
@@ -6538,25 +6546,22 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "knock-out-comedy-crew",
+    "titel": "",
+    "artiesten": [
+      "knock-out-comedy-crew"
+    ],
+    "genre": "stand-up",
+    "ookGenres": [
+      "cabaret"
+    ]
+  },
+  {
     "id": "knock-out-comedy-crew-cpunt",
     "titel": "Knock-Out Comedy Crew",
     "artiesten": [],
     "genre": "cabaret",
     "theater": "cpunt"
-  },
-  {
-    "id": "knock-out-comedy-crew-theater-heerlen",
-    "titel": "Knock Out Comedy Crew",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "theater-heerlen"
-  },
-  {
-    "id": "knock-out-comedy-crew-theater-sittard",
-    "titel": "Knock Out Comedy Crew",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "theater-sittard"
   },
   {
     "id": "knoei-eva-mesman",
@@ -11634,7 +11639,7 @@
   },
   {
     "id": "tim-hartog-in-principe-try-out",
-    "titel": "In principe - try-out",
+    "titel": "In principe",
     "artiesten": [
       "tim-hartog"
     ],

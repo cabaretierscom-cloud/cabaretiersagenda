@@ -246,6 +246,35 @@
       "naar": "Voor wat komen zal",
       "leeg": false,
       "bron": "Vlaamse zalen (november 2026): de zaal zette de titel op de plek van de artiest; de artiest staat in de titel"
+    },
+    {
+      "artiest": "Tim Hartog",
+      "van": [
+        "In principe - try-out",
+        "In principe (try-out)",
+        "In principe try-out"
+      ],
+      "naar": "In principe",
+      "leeg": false,
+      "bron": "https://splotsz.nl/evenement/dubbelcabaret/ (de voorstelling heet “In principe”; try-out is de fase, geen deel van de titel)"
+    },
+    {
+      "artiest": "De Interventie",
+      "van": [
+        "De Interventie",
+        "De Interventie show"
+      ],
+      "naar": "",
+      "bron": "https://splotsz.nl/evenement/de-interventie-show/ (De Interventie speelt geen voorstelling met een eigen titel; de groep is de voorstelling)"
+    },
+    {
+      "artiest": "Guido Spek",
+      "van": [
+        "Voor Spek En Bonen"
+      ],
+      "naar": "Voor Spek en Bonen",
+      "leeg": false,
+      "bron": "https://splotsz.nl/evenement/guido-spek/ (schrijfwijze van de titel)"
     }
   ],
   "reprise": [

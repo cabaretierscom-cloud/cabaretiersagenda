@@ -661,7 +661,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // geen eigen kleur: die volgt uit de id, en buren krijgen nooit dezelfde. Maker en licentie van de
   // foto staan op de theaterpagina (waar het kaartje naartoe linkt) en als tooltip op de foto.
   const zaalKleuren = Object.keys(KLEUREN).filter((k) => k !== "zwart");
-  const zaalKleur = (t) => zaalKleuren[createHash("sha1").update(t.id).digest()[0] % zaalKleuren.length];
+  const zaalKleur = (t) => t.kleur || zaalKleuren[createHash("sha1").update(t.id).digest()[0] % zaalKleuren.length];
   function theaterKaartjes() {
     const kleurVan = zaalKleur;
     const lijst = [...T.values()].filter((t) => t.foto?.bestand)
@@ -2544,7 +2544,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   function theaterPage(t) {
     const list = db.gigsForTheater(t.id);
-    const body = `<div class="detail-hero" style="--bg:var(--riso-blue);--fg:#FFF"><div class="wrap${t.foto ? " hero-met-foto" : ""}">
+    const body = `<div class="detail-hero" style="${t.kleur ? ink(t.kleur) : "--bg:var(--riso-blue);--fg:#FFF"}"><div class="wrap${t.foto ? " hero-met-foto" : ""}">
         <div>
         <h1>${esc(t.naam)}</h1>
         <p>${t.voorheen ? `Voorheen ${esc(t.voorheen.naam)}. ` : ""}<a href="${plaatsPad(t.plaats)}">${esc(t.plaats)}</a>, ${LANDEN[t.land]}. ${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.` : "Op dit moment staan er geen voorstellingen gepland."}${t.website ? ` <a href="${esc(metUtm(t.website))}" rel="noopener">Website van het theater</a>` : ""}</p>

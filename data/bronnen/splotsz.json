@@ -1,0 +1,109 @@
+{
+  "bron": "splotsz",
+  "naam": "SplotsZ",
+  "opgehaald": "2026-11-13",
+  "theaters": [
+    {
+      "id": "splotsz-roelofarendsveen",
+      "naam": "SplotsZ",
+      "plaats": "Roelofarendsveen",
+      "land": "NL",
+      "soort": "theater",
+      "website": "https://splotsz.nl"
+    }
+  ],
+  "speeldata": [
+    {
+      "theater": "splotsz-roelofarendsveen",
+      "artiesten": [
+        "Tim Hartog"
+      ],
+      "titel": "In principe",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://splotsz.nl/evenement/dubbelcabaret/"
+    },
+    {
+      "theater": "splotsz-roelofarendsveen",
+      "artiesten": [
+        "Guido Spek"
+      ],
+      "titel": "Voor Spek en Bonen",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://splotsz.nl/evenement/guido-spek/"
+    },
+    {
+      "theater": "splotsz-roelofarendsveen",
+      "artiesten": [
+        "Burger Koekoek"
+      ],
+      "titel": "Met een Vloek en een Zucht",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://splotsz.nl/evenement/burger-koekoek/"
+    },
+    {
+      "theater": "splotsz-roelofarendsveen",
+      "artiesten": [
+        "Knock Out Comedy Crew"
+      ],
+      "titel": "",
+      "genre": "stand-up",
+      "datum": "2027-05-21",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://splotsz.nl/evenement/knock-out-comedy-crew/"
+    },
+    {
+      "theater": "splotsz-roelofarendsveen",
+      "artiesten": [
+        "Maartje Mikx"
+      ],
+      "titel": "Ze vraagt erom",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://splotsz.nl/evenement/maartje-mikx/"
+    },
+    {
+      "theater": "splotsz-roelofarendsveen",
+      "artiesten": [
+        "Thom Gerrits"
+      ],
+      "titel": "Alleen Vanavond",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://splotsz.nl/evenement/thom-gerrits/"
+    },
+    {
+      "theater": "splotsz-roelofarendsveen",
+      "artiesten": [
+        "De Interventie"
+      ],
+      "titel": "",
+      "genre": "improvisatie",
+      "datum": "2027-01-15",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://splotsz.nl/evenement/de-interventie-show/"
+    }
+  ],
+  "recensies": {}
+}

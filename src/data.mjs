@@ -177,6 +177,7 @@ export function loadData(dir, { today }) {
   }
   for (const t of theaters) {
     if (!LANDEN[t.land]) errors.push(`theater ${t.id}: onbekend land "${t.land}"`);
+    if (t.kleur != null && !KLEUREN[t.kleur]) errors.push(`theater ${t.id}: onbekende kleur "${t.kleur}"`);
     if (!THEATERSOORTEN.includes(t.soort)) errors.push(`theater ${t.id}: onbekende soort "${t.soort}"`);
     if (t.foto && typeof t.foto === "object" && !(t.foto.bestand && t.foto.alt && t.foto.maker && t.foto.licentie && t.foto.bron)) errors.push(`theater ${t.id}: foto zonder alt-tekst, maker, licentie of bron`);
     if (t.foto?.bestand && !existsSync(join(dir, "..", "public", t.foto.bestand))) errors.push(`theater ${t.id}: fotobestand ${t.foto.bestand} ontbreekt`);
