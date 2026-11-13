@@ -1149,7 +1149,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .buurt-status { margin: 6px 0 4px; color: var(--ink-2); min-height: 1.4em; }
 .buurt-dag { font-family: var(--font-display); font-weight: 800; font-size: var(--step-1); margin: 22px 0 4px; padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
 .buurt-dag::first-letter { text-transform: uppercase; }
-.buurt-afstand { display: inline-block; width: fit-content; align-self: flex-start; font: 700 .72rem/1 var(--font-body); background: var(--paper-2); color: var(--ink); border-radius: 999px; padding: 4px 8px; margin-bottom: 4px; }
+.buurt-afstand { display: inline-block; font: 700 .72rem/1 var(--font-body); background: var(--paper-2); color: var(--ink); border-radius: 999px; padding: 4px 8px; margin: 0 6px 0 2px; vertical-align: 2px; white-space: nowrap; }
 /* Afstand op /agenda/: met het speldje van de locatie in het vak; op de telefoon even breed als de andere velden. */
 .filters .afstand-veld { flex: 0 1 240px; }
 .afstand-kies { position: relative; display: block; }

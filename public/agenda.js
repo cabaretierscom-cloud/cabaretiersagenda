@@ -341,7 +341,8 @@
     return 12742 * Math.asin(Math.sqrt(x));
   };
   // Een agendarij met de afstand erbij (zoals op /in-de-buurt/).
-  const metAfstand = (html, km) => html.replace('<div class="venue">', `<div class="venue"><span class="buurt-afstand">${km < 1 ? "< 1" : Math.round(km)} km</span>`);
+  // De afstand staat naast het speldje, op één regel met de naam van het theater (als dat past).
+  const metAfstand = (html, km) => html.replace('<span class="visually-hidden">Theater: </span>', `<span class="buurt-afstand">${km < 1 ? "< 1" : Math.round(km)} km</span><span class="visually-hidden">Theater: </span>`);
   // De rijen van /agenda/alles.js leesbaar maken (artiesten, zaal, genres en een zoektekst per voorstelling).
   const kaalTekst = (t) => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   const leesAlles = (j) => {
