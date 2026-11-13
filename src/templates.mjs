@@ -1116,6 +1116,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Plaatsen</h1><p>Waar is cabaret en comedy te zien?</p></div>
       ${plaatsNav()}
+      <p class="buurt-knop-rij"><a class="btn buurt-knop" href="/in-de-buurt/?locatie=1">${ICON.pin}Gebruik mijn locatie</a></p>
       <div class="az-tools">
         <div class="field search">
           <label for="f-plaatsnaam">Zoek een plaats of zaal</label>
