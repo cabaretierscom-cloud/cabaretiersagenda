@@ -38,6 +38,7 @@
   --paper: #FFFFFF;
   --paper-2: #F3F3F6;
   --ink: #121212; /* zwart van de huisstijl: #121212 in plaats van puur zwart */
+  --pijl: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1.4 1.4 6 6l4.6-4.6' fill='none' stroke='%23121212' stroke-width='2'/%3E%3C/svg%3E"); /* uitklappijltje van keuzelijsten, zoals bij Genre */
   --ink-2: #4A4A57;
   --rule: #D9D9E2;
   /* Risografie-inkten voor affiches */
@@ -74,7 +75,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #141318; --paper-2: #1E1D24; --ink: #F4F4F7; --ink-2: #B4B4C2; --rule: #34333D;
+    --paper: #141318; --paper-2: #1E1D24; --ink: #F4F4F7; --ink-2: #B4B4C2; --rule: #34333D; --pijl: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1.4 1.4 6 6l4.6-4.6' fill='none' stroke='%23F4F4F7' stroke-width='2'/%3E%3C/svg%3E");
     --riso-black: #2A2833;
     --accent: #7C91FF; --on-accent: #121212; --focus: #9AABFF; --sold: #FF7A8C; --doubt: #F2C14E;
     color-scheme: dark;
@@ -82,7 +83,7 @@
 }
 /* Een expliciete keuze voor donker (bijv. in een viewer) wint van de systeeminstelling. */
 :root[data-theme="dark"] {
-  --paper: #141318; --paper-2: #1E1D24; --ink: #F4F4F7; --ink-2: #B4B4C2; --rule: #34333D;
+  --paper: #141318; --paper-2: #1E1D24; --ink: #F4F4F7; --ink-2: #B4B4C2; --rule: #34333D; --pijl: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1.4 1.4 6 6l4.6-4.6' fill='none' stroke='%23F4F4F7' stroke-width='2'/%3E%3C/svg%3E");
   --riso-black: #2A2833;
   --accent: #7C91FF; --on-accent: #121212; --focus: #9AABFF; --sold: #FF7A8C; --doubt: #F2C14E;
   color-scheme: dark;
@@ -389,6 +390,8 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   border: 1.5px solid var(--rule); background: var(--paper); color: var(--ink);
   font: 500 var(--step-0) var(--font-body);
 }
+/* Keuzelijsten met hetzelfde pijltje als het genrevak (.keuze summary::after): even groot, 16px van de rand. */
+.field select { appearance: none; -webkit-appearance: none; padding-right: 40px; background: var(--paper) var(--pijl) no-repeat right 15px center / 12px 8px; cursor: pointer; }
 .field input:focus-visible, .field select:focus-visible { outline-offset: 0; border-color: var(--focus); }
 /* Genrekeuze: een uitklapvak met vinkjes (meerdere genres tegelijk) en het aantal voorstellingen. */
 .keuze { position: relative; min-width: 220px; }
