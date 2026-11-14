@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [
     {
       "id": "zaantheater",
@@ -59,7 +59,7 @@
       "genre": "cabaret",
       "datum": "2026-12-19",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ayoub-kharkhach/"
     },
@@ -874,7 +874,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-22",
       "tijd": "13:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pim-pom-2/"
     },
@@ -916,6 +916,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rayen-panday/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Rayen Panday & Friends"
+      ],
+      "titel": "Wonderful Christmastime",
+      "genre": "cabaret",
+      "datum": "2026-12-27",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rayen-panday-friends/"
     },
     {
       "theater": "zaantheater",
@@ -1111,19 +1124,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/wina-ricardo/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Stefan Pop"
-      ],
-      "titel": "Genoeg over mij",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/stefan-pop/"
     }
   ],
   "recensies": {
@@ -1253,18 +1253,6 @@
         "medium": "NRC",
         "sterren": null,
         "citaat": "Een van Kroezens leuke talenten: snel hardop situaties overanalyseren. … blijkt een prima verteller, lekker beweeglijk en energiek en prettig intelligent."
-      }
-    ],
-    "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/stefan-pop/": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Stefan Pop onderstreept het essentiële belang van comedy in onrustige tijden"
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Pop slaat indrukwekkend alarm over de dictatuur van online algoritmes"
       }
     ]
   }

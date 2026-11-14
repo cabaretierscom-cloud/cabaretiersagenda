@@ -2,28 +2,9 @@
   "bron": "fris",
   "naam": "Agenda van Theaterbureau Fr!S",
   "soort": "speellijst",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Vianen",
-        "plaats": "Vianen",
-        "land": "NL",
-        "website": "https://www.theatervianen.nl"
-      },
-      "artiesten": [
-        "Stefan Hendrikx"
-      ],
-      "titel": "In perspectief",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theatervianen.nl/tc-events/stefan-hendrikx-in-perspectief/"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -1015,10 +996,10 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Podium Victorie",
-        "plaats": "Alkmaar",
+        "naam": "Kasteel van Rhoon",
+        "plaats": "Rhoon",
         "land": "NL",
-        "website": "https://www.podiumvictorie.nl"
+        "website": "https://www.stichting-kasteelvanrhoon.nl"
       },
       "artiesten": [
         "Pieter Jouke"
@@ -1026,10 +1007,10 @@
       "titel": "Uit Stilstand",
       "genre": "cabaret",
       "datum": "2026-11-26",
-      "tijd": "20:30",
+      "tijd": "20:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.podiumvictorie.nl/programma/comedytunes-comedynight-26-nov/"
+      "bron": "https://www.stichting-kasteelvanrhoon.nl"
     },
     {
       "theater": {

@@ -1,7 +1,7 @@
 {
   "bron": "despil",
   "naam": "CC De Spil",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [
     {
       "id": "de-spil",
@@ -67,16 +67,14 @@
     },
     {
       "theater": "de-spil",
-      "artiesten": [
-        "cultuur"
-      ],
+      "artiesten": [],
       "titel": "Tony knollt in concert",
       "genre": "stand-up",
       "datum": "2026-11-26",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.despil.be/agenda/cultuur-f7sr"
+      "bron": "https://www.despil.be/agenda/tony-knollt-in-concert-f7sr"
     },
     {
       "theater": "de-spil",
@@ -473,7 +471,7 @@
       "genre": "stand-up",
       "datum": "2027-06-03",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.despil.be/agenda/babel-y3vn"
     },
@@ -499,7 +497,7 @@
       "genre": "stand-up",
       "datum": "2027-06-05",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "première",
       "bron": "https://www.despil.be/agenda/moortelvet-premiere-in-t-roeselaars-c2hp"
     },

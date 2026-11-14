@@ -1,7 +1,7 @@
 {
   "bron": "comedytrain",
   "naam": "Comedytrain",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [
     {
       "id": "comedytrain",
@@ -13,6 +13,17 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "15:30 uur | Siegfried & Ralph (oftewel Howard Komproe & Murth Mossel)",
+      "genre": "stand-up",
+      "datum": "2027-02-07",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/1530-uur-siegfried-ralph-oftewel-howard-komproe-murth-mossel-2027-02-07/"
+    },
     {
       "theater": "comedytrain",
       "artiesten": [],
@@ -1070,39 +1081,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-11-14-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-11-13",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-11-13/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Comedy op zolder",
-      "genre": "stand-up",
-      "datum": "2026-11-13",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-11-13/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-11-13",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-11-13-2/"
     },
     {
       "theater": "comedytrain",

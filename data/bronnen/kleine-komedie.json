@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -20,22 +20,9 @@
       ],
       "titel": "De Baas",
       "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
       "datum": "2026-11-14",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
     },
@@ -178,7 +165,7 @@
       "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },
@@ -191,7 +178,7 @@
       "genre": "cabaret",
       "datum": "2026-11-27",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },

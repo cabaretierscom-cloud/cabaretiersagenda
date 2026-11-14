@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-de-kampanje",
-      "artiesten": [
-        "Marjolijn van Kooten"
-      ],
-      "titel": "Aan mij zal het niet liggen",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/marjolijn-van-kooten-zb8v"
-    },
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
@@ -295,7 +282,7 @@
       "genre": "cabaret",
       "datum": "2027-01-21",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.kampanje.nl/voorstellingen/rene-van-meurs-reprise-h6c6"
     },
@@ -579,7 +566,7 @@
       "genre": "cabaret",
       "datum": "2027-03-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/david-van-rosmalen-d7ph"
     },
@@ -670,7 +657,7 @@
       "genre": "cabaret",
       "datum": "2027-04-09",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/marie-koet-cgxx"
     },
@@ -988,18 +975,6 @@
     }
   ],
   "recensies": {
-    "https://www.kampanje.nl/voorstellingen/marjolijn-van-kooten-zb8v": [
-      {
-        "medium": "I Love Theater",
-        "sterren": null,
-        "citaat": "Aan mij zal het niet liggen is geen luchtig avondje cabaret, maar een eerlijk en scherpzinnig inkijkje in het hoofd van iemand die de wereld nét iets intenser ervaart. Je lacht, je slikt, je denkt – en je bent dankbaar dat ze dit alles hardop durft te delen."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Wat is je meerwaarde in het leven en moet er op je grafsteen? Van Kooten heeft de antwoorden niet. Ze probeert te accepteren wie ze is, met al haar tekortkomingen, en heeft daar een mooie, eerlijke voorstelling over gemaakt."
-      }
-    ],
     "https://www.kampanje.nl/voorstellingen/kasper-van-der-laan-5szb": [
       {
         "medium": "de Volkskrant",

@@ -2,234 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-11-12",
+  "opgehaald": "2026-11-14",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": "mark-liebrecht-mortsel",
-      "artiesten": [
-        "Bregje Iding",
-        "Jeroen Dyck",
-        "Peter Kluppels",
-        "MC Jarno Boone"
-      ],
-      "titel": "Humo's Comedy Cup Finalistentour",
-      "genre": "stand-up",
-      "datum": "2026-11-12",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.mortsel.be/activiteiten/detail/7064/humos-comedy-cup-finalistentour"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "CC De Ververij",
-        "plaats": "Ronse",
-        "land": "BE",
-        "website": "https://www.ronse.be"
-      },
-      "artiesten": [
-        "Gunter Lamoot"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-12",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.ronse.be/nl/nieuws/gunter-lamoot-try-out"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "JOC Ieper",
-        "plaats": "Ieper",
-        "land": "BE",
-        "website": "https://www.hetperron.be"
-      },
-      "artiesten": [
-        "Dries Heyneman"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-12",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.hetperron.be/dries-heyneman-comedyjoc-2026"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Krop",
-        "plaats": "Kampenhout",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Bert Gabriëls"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-12",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://be.ticketgang.eu/orgFrameSaleNew.php?org=2701&cat=547#"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Lievekamp",
-        "plaats": "Oss",
-        "land": "NL",
-        "website": "https://www.lievekamp.nl"
-      },
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "stand-up",
-      "datum": "2026-11-12",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.lievekamp.nl/programma/bedankt-om-te-komen-jade-mintjens-12-nov-20-15/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "CC De Biekorf",
-        "plaats": "Lebbeke",
-        "land": "BE",
-        "website": "https://www.ccdebiekorf.be"
-      },
-      "artiesten": [
-        "Steven Mahieu"
-      ],
-      "titel": "STABIELER",
-      "genre": "stand-up",
-      "datum": "2026-11-12",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.ccdebiekorf.be/steven-mahieu"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Vrijetijdscentrum",
-        "plaats": "Jabbeke",
-        "land": "BE",
-        "website": "https://www.forzavarsa.be"
-      },
-      "artiesten": [
-        "Pieter Verelst"
-      ],
-      "titel": "Altijd Aan",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.forzavarsa.be/comedy-night-pieter-verelst-13-11-2026"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Baljuwhuis",
-        "plaats": "Galmaarden",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Gili"
-      ],
-      "titel": "Machtig!",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://tickets.pajottegem.be/nl/buyingflow/tickets/17998/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "CC De Steenoven",
-        "plaats": "Herzele",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Hans Cools"
-      ],
-      "titel": "Zolang de voorraad strekt",
-      "genre": "stand-up",
-      "datum": "2026-11-13",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/hans-cools/2026-11-13/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "OC De Klakeye",
-        "plaats": "Dranouter",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Dries Heyneman"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-13",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.facebook.com/events/oc-de-klakeye/comedy-avond-landelijke-gilde-nieuwkerke-wulvergem/2176622783272654/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Capitole",
-        "plaats": "Gent",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Steven Mahieu"
-      ],
-      "titel": "STABIELER",
-      "genre": "stand-up",
-      "datum": "2026-11-13",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/steven-mahieu/2026-11-13/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Ruchte",
-        "plaats": "Someren",
-        "land": "NL",
-        "website": "https://www.deruchte.nl"
-      },
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "stand-up",
-      "datum": "2026-11-13",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.deruchte.nl/voorstelling/jade-mintjens/"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -1006,7 +781,7 @@
       "genre": "stand-up",
       "datum": "2026-12-03",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/steven-mahieu/2026-12-03/"
     },
@@ -1351,6 +1126,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.despil.be/agenda/twee-procent-7lgm"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Onyx Boulder",
+        "plaats": "Brugge",
+        "land": "BE",
+        "website": "https://onyxboulder.com"
+      },
+      "artiesten": [
+        "Gunter Lamoot"
+      ],
+      "titel": "Protpourri",
+      "genre": "stand-up",
+      "datum": "2026-12-06",
+      "tijd": null,
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://onyxboulder.com/comedynight/"
     },
     {
       "theater": {
@@ -2460,7 +2254,7 @@
       "genre": "stand-up",
       "datum": "2027-01-13",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/hans-cools/2027-01-13/"
     },
@@ -2631,7 +2425,7 @@
       "genre": "stand-up",
       "datum": "2027-01-16",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/steven-mahieu/2027-01-16/"
     },
@@ -3341,6 +3135,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Het Theater",
+        "plaats": "Blaricum",
+        "land": "NL",
+        "website": "https://hettheater.nl"
+      },
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Altijd Aan",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hettheater.nl/voorstelling/pieter-verelst-29-01-2027-277704"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "CC De Beuk",
         "plaats": "Kortemark",
         "land": "BE",
@@ -3695,7 +3508,7 @@
       "genre": "cabaret",
       "datum": "2027-02-06",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.wevelgem.be/ccwevelgem/humor?cdbid=f2b3e6e0-9bc0-4871-8980-5098ee07ded0&utm_source=www.wevelgem.be&utm_medium=referral&utm_campaign=widgets"
     },
@@ -4975,6 +4788,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Club Kalmthout",
+        "plaats": "Kalmthout",
+        "land": "BE",
+        "website": "https://clubkalmthout.be"
+      },
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Altijd Aan",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://clubkalmthout.be/evenementen/pieter-verelst"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "OC 't Centrum",
         "plaats": "Brecht",
         "land": "BE",
@@ -6148,7 +5980,7 @@
       "tijd": null,
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.5to9.be/gunter-lamoot/"
+      "bron": "https://ticketshop.ticketmatic.com/kluisbergen/shop"
     },
     {
       "theater": {
@@ -7001,7 +6833,7 @@
       "genre": "stand-up",
       "datum": "2027-04-30",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.cultuurcentrumtemse.be/activiteiten/zolang-de-voorraad-strekt"
     },
@@ -7137,6 +6969,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/gili/2027-05-05/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Trixxo Theater",
+        "plaats": "Hasselt",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Arnout Van den Bossche"
+      ],
+      "titel": "De Relatiefluisteraar",
+      "genre": "stand-up",
+      "datum": "2027-05-05",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedyshows.be/kalender/arnout-van-den-bosche/2027-05-05/"
     },
     {
       "theater": {
@@ -7711,6 +7562,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "De Brug",
+        "plaats": "Kluisbergen",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Jasper Posson"
+      ],
+      "titel": "Eeuwige Jeugd",
+      "genre": "stand-up",
+      "datum": "2027-05-21",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://ticketshop.ticketmatic.com/kluisbergen/shop?l=nl"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "CC Kruispunt",
         "plaats": "Diksmuide",
         "land": "BE",
@@ -7764,6 +7634,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.tielt-winge.be/cultuurseizoen-2026-2027-gc-de-maere"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Nieuwe Melac",
+        "plaats": "Zwijnaarde",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Hans Cools"
+      ],
+      "titel": "Zolang de voorraad strekt",
+      "genre": "stand-up",
+      "datum": "2027-05-22",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://shop.stamhoofd.be/nieuwemelac"
     },
     {
       "theater": {
@@ -8182,6 +8071,25 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.oostkamp.be/activiteiten/detail/6885/dries-heyneman-voor-normale-mensen"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Brug",
+        "plaats": "Kluisbergen",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Altijd Aan",
+      "genre": "cabaret",
+      "datum": "2027-06-05",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://ticketshop.ticketmatic.com/kluisbergen/shop?l=nl"
     },
     {
       "theater": {

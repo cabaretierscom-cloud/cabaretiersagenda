@@ -1,7 +1,7 @@
 {
   "bron": "hengelo",
   "naam": "Schouwburg Hengelo",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [
     {
       "id": "schouwburg-hengelo",
@@ -935,6 +935,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburghengelo.nl/robin-hood-4--het-kleine-theater-garage-tdi-3"
+    },
+    {
+      "theater": "schouwburg-hengelo",
+      "artiesten": [
+        "De Mega Sint Show: Het Geheim van de Pakjeskluis"
+      ],
+      "titel": "Sinterklaas, Party Piet Pablo, Love Piet e.a",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-11-24",
+      "tijd": "14:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/de-mega-sint-show-het-geheim-van-de-pakjeskluis"
     }
   ],
   "recensies": {}

@@ -1,7 +1,7 @@
 {
   "bron": "wilminktheater",
   "naam": "Wilminktheater en Muziekcentrum Enschede",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [
     {
       "id": "wilminktheater",
@@ -493,6 +493,46 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/de-wind-en-wij-3-n8pn"
+    },
+    {
+      "theater": {
+        "id": "de-grote-kerk-enschede",
+        "naam": "De Grote Kerk",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Kleutersinfonietta | Peuter Kleuter Pret"
+      ],
+      "titel": "Stuiterstokken (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-16",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/stuiterstokken-4-tjbd"
+    },
+    {
+      "theater": {
+        "id": "de-grote-kerk-enschede",
+        "naam": "De Grote Kerk",
+        "plaats": "Enschede",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Kleutersinfonietta | Peuter Kleuter Pret"
+      ],
+      "titel": "Stuiterstokken (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-16",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/stuiterstokken-4-tjbd"
     },
     {
       "theater": {

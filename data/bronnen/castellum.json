@@ -1,7 +1,7 @@
 {
   "bron": "castellum",
   "naam": "Castellum",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [
     {
       "id": "castellum",
@@ -233,17 +233,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://castellum.nl/theater/iris-rulkens"
-    },
-    {
-      "theater": "castellum",
-      "artiesten": [],
-      "titel": "Comedy Club Down Under",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://castellum.nl/theater/comedy-club-down-under"
     },
     {
       "theater": "castellum",
@@ -607,6 +596,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://castellum.nl/theater/selma-visscher-trekvogel"
+    },
+    {
+      "theater": "castellum",
+      "artiesten": [
+        "Vos en Haas"
+      ],
+      "titel": "samen in het bos",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/vos-en-haas-in-bos"
     },
     {
       "theater": "castellum",

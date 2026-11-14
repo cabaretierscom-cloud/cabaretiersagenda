@@ -1,7 +1,7 @@
 {
   "bron": "arenberg",
   "naam": "Arenberg",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [
     {
       "id": "arenberg",
@@ -13,17 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "arenberg",
-      "artiesten": [],
-      "titel": "Antwerpen Lacht",
-      "genre": "stand-up",
-      "datum": "2026-11-13",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.arenberg.be/nl/programma/antwerpen-lacht/a0NP5000006mJJSMA2"
-    },
     {
       "theater": "arenberg",
       "artiesten": [
@@ -166,6 +155,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.arenberg.be/nl/programma/iwein-segers/a0NP500000JESZUMA5"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [],
+      "titel": "Antwerpen Lacht",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/antwerpen-lacht/a0NP5000006mJJSMA2"
     },
     {
       "theater": "arenberg",
@@ -424,6 +424,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.arenberg.be/nl/programma/jan-jaap-van-der-wal/a0NP5000007sSeQMAU"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Abdou"
+      ],
+      "titel": "RAAR MAAR WAAR (Try-Out)",
+      "genre": "stand-up",
+      "datum": "2027-05-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.arenberg.be/nl/programma/abdou/a0NP500000UJ5qjMAD"
     },
     {
       "theater": "arenberg",

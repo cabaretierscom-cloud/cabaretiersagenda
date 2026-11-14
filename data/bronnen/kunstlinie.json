@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -503,7 +503,7 @@
       "genre": "cabaret",
       "datum": "2027-04-16",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/rundfunk-3/"
     },
@@ -666,19 +666,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Zaal X Uitgemolken"
-      ],
-      "titel": "Zaal X Uitgemolken",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "19:45",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/zaal-x-uitgemolken-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Ice"
       ],
       "titel": "Ice",
@@ -688,19 +675,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/ice-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Controle (12+)"
-      ],
-      "titel": "Controle (12+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-13",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/controle-12/"
     },
     {
       "theater": "kunstlinie",
@@ -1168,23 +1142,6 @@
         "medium": "NRC",
         "sterren": 4,
         "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut. In zijn cabaretdebuut ‘Striptease Van De Dood’ schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal. Doeltreffend toont hij dat de realiteit leuker fantaseren een verdedigingsmechanisme is met voor- én nadelen."
-      }
-    ],
-    "https://kunstlinie.nl/programma/controle-12/": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "Hilarisch, ironisch, maar ook van een ontroerende schoonheid."
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Een uitstalkast van theatrale inventiviteit en superieure slapstick."
-      },
-      {
-        "medium": "NRC",
-        "sterren": null,
-        "citaat": "Denk Jiskefet, denk Jackass, denk Maaskantje én denk breakdance."
       }
     ],
     "https://kunstlinie.nl/programma/henry-van-loon-3/": [

@@ -1,7 +1,7 @@
 {
   "bron": "venray",
   "naam": "Schouwburg Venray",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [
     {
       "id": "schouwburg-venray",
@@ -519,6 +519,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburgvenray.nl/programma/14714/spruijt-en-opperman"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "De Mega Sint Show 2027"
+      ],
+      "titel": "Party Piet Pablo, Love Piet, Ron Boszhard e.v.a.",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-12-02",
+      "tijd": "14:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/15199/de-mega-sint-show-2027"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "De Mega Sint Show 2027"
+      ],
+      "titel": "Party Piet Pablo, Love Piet, Ron Boszhard e.v.a.",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-12-02",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgvenray.nl/programma/15200/de-mega-sint-show-2027"
     }
   ],
   "recensies": {}

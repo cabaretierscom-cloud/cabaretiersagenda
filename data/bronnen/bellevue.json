@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-11-13",
+  "opgehaald": "2026-11-14",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -18,20 +18,9 @@
       "artiesten": [],
       "titel": "Tweede Voorronde AKF",
       "genre": "kleinkunst",
-      "datum": "2026-11-13",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/tweede-voorronde-akf-zxgn"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Tweede Voorronde AKF",
-      "genre": "kleinkunst",
       "datum": "2026-11-14",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/tweede-voorronde-akf-zxgn"
     },
@@ -173,7 +162,7 @@
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/in-de-hemel-ken-ik-jullie-niet-lkjn"
     },
