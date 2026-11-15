@@ -852,7 +852,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .dashboard .ga-tabel { max-height: 30rem; overflow: auto; }
 .dashboard table { width: 100%; border-collapse: collapse; font-size: var(--step--1); font-variant-numeric: tabular-nums; }
 .dashboard th, .dashboard td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
-.dashboard th { font-weight: 700; border-bottom: 2px solid var(--ink); white-space: nowrap; position: sticky; top: 0; background: var(--paper); }
+.dashboard th { font-weight: 700; border-bottom: 2px solid var(--ink); white-space: nowrap; position: sticky; top: 0; z-index: 2; background: var(--paper); }
 .dashboard .ga-tabel { margin-bottom: 0; }
 .dashboard .ga-num { text-align: right; white-space: nowrap; }
 .dashboard .ga-pad { overflow-wrap: anywhere; }
