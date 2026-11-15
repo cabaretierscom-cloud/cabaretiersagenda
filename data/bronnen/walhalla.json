@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-11-14",
+  "opgehaald": "2026-11-15",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -30,19 +30,6 @@
   ],
   "speeldata": [
     {
-      "theater": "theater-walhalla",
-      "artiesten": [
-        "Kim Schuddeboom"
-      ],
-      "titel": "Hardleers",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/kim-schuddeboom-hardleers-try-out-2/"
-    },
-    {
       "theater": "kleine-walhalla",
       "artiesten": [
         "Sinterklaas in Walhalla: Sint Salabim!"
@@ -51,7 +38,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-15",
       "tijd": "11:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-16/"
     },
@@ -64,7 +51,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-15",
       "tijd": "13:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-17/"
     },
@@ -90,7 +77,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-15",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-18/"
     },
@@ -155,7 +142,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-21",
       "tijd": "13:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-11/"
     },
@@ -168,7 +155,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-21",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-12/"
     },
@@ -246,7 +233,7 @@
       "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/andre-manuel-de-eenzame-ziel-try-out/"
     },
@@ -259,7 +246,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-28",
       "tijd": "11:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-8/"
     },
@@ -363,7 +350,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-12-05",
       "tijd": "13:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-2/"
     },
@@ -376,7 +363,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-12-05",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-3/"
     },
@@ -747,7 +734,7 @@
       "genre": "kleinkunst",
       "datum": "2027-02-13",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/niek-guy-legatum/"
     },
@@ -812,7 +799,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-02-21",
       "tijd": "11:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/bliep-bliep-5-t-m-12-jaar-dender-cartoontheater/"
     },
@@ -899,7 +886,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-02-26",
       "tijd": "19:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/murphy-8-t-m-12-jaar-groen-van-lien/"
     },
@@ -962,7 +949,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-03-07",
       "tijd": "11:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/als-ik-de-baas-was-6-t-m-9-jaar/"
     },
@@ -1079,7 +1066,7 @@
       "genre": "cabaret",
       "datum": "2027-03-17",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-tunes-versnaperingen-12/"
     },
@@ -1203,7 +1190,7 @@
       "genre": "cabaret",
       "datum": "2027-04-08",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/luuk-weggemans-lach-maar-om-mij/"
     },
@@ -1318,7 +1305,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-04-18",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/tussen-kunst-en-kids-7/"
     },
@@ -1394,7 +1381,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-04-29",
       "tijd": "13:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/dirk-scheele-dikkie-dik/"
     },
@@ -1433,7 +1420,7 @@
       "genre": "cabaret",
       "datum": "2027-05-29",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/pieter-jouke-ronald-snijders-de-staat-van-verwarring/"
     },

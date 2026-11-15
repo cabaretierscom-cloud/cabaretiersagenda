@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-14",
+  "opgehaald": "2026-11-15",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,64 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Vroege zaterdagavondshow",
-      "genre": "stand-up",
-      "datum": "2026-11-14",
-      "tijd": "18:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/vroege-zaterdagavondshow-14-november-2026/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Moira",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": null
-      },
-      "artiesten": [
-        "De Interventie"
-      ],
-      "titel": "De Interventie",
-      "genre": "improvisatie",
-      "datum": "2026-11-14",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/de-interventie-improvisatie-comedy-utrecht-14-november/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kargadoor",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://www.kargadoor.nl"
-      },
-      "artiesten": [],
-      "titel": "All English Comedy Night",
-      "genre": "stand-up",
-      "datum": "2026-11-14",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/all-english-comedy-night-utrecht-14-november-2026/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Zaterdagavondshow",
-      "genre": "stand-up",
-      "datum": "2026-11-14",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/zaterdagavondshow-14-november/"
-    },
     {
       "theater": {
         "zoeken": true,

@@ -1,7 +1,7 @@
 {
   "bron": "utrecht",
   "naam": "Stadsschouwburg Utrecht",
-  "opgehaald": "2026-11-14",
+  "opgehaald": "2026-11-15",
   "theaters": [
     {
       "id": "stadsschouwburg-utrecht",
@@ -192,19 +192,6 @@
       "soort": null,
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/we-zien-het-wel-even-hokjesdenker",
       "datum": "2027-03-14",
-      "tijd": "20:30",
-      "status": "gepland"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Vlamousse"
-      ],
-      "titel": "Het goede voorbeeld",
-      "genre": "cabaret",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-goede-voorbeeld-vlamousse",
-      "datum": "2026-11-14",
       "tijd": "20:30",
       "status": "gepland"
     },
@@ -1116,7 +1103,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lachen-met-volle-mond-2-berit-companjen-teun-van-den-elzen-djoni-de-vos",
       "datum": "2026-11-23",
       "tijd": "19:00",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1494,18 +1481,6 @@
         "sterren": 4,
         "citaat": "Wie wil er nou drie uur lang naar Zomergasten kijken? Een half uur Hokjesdenker verzadigt meer.",
         "over": "'We doen wat we kunnen'"
-      }
-    ],
-    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-goede-voorbeeld-vlamousse": [
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Vlamousse trekt weer talloze onweerstaanbaar creatieve scènes en sketches uit de kast. (…) In ‘Het goede voorbeeld’ heeft het duo echt een fijne balans gevonden. Waar Van As ontroerend en ernstig kan zijn, of schunnig, luid en expressief is, trekt Van Bakel aandacht door juist zo min mogelijk te doen."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Raakt precies de juiste snaar."
       }
     ],
     "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/striptease-van-de-dood-david-linszen": [

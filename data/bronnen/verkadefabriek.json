@@ -1,7 +1,7 @@
 {
   "bron": "verkadefabriek",
   "naam": "Verkadefabriek",
-  "opgehaald": "2026-11-14",
+  "opgehaald": "2026-11-15",
   "theaters": [
     {
       "id": "verkadefabriek-s-hertogenbosch",
@@ -120,19 +120,6 @@
     {
       "theater": "verkadefabriek-s-hertogenbosch",
       "artiesten": [
-        "Oscar Smit"
-      ],
-      "titel": "€472.000,-",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.verkadefabriek.nl/agenda/oscar-smit-472000-try-out-162253"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
         "Vlamousse"
       ],
       "titel": "Het goede voorbeeld",
@@ -204,7 +191,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-29",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.verkadefabriek.nl/agenda/kiki-schippers-oudejaarsconferance-try-out-162259"
     },
@@ -815,7 +802,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-15",
       "tijd": "15:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/het-filiaal-de-jongen-die-van-de-wereld-hield-9-162873"
     },
@@ -1136,28 +1123,6 @@
       "artiesten": [],
       "titel": "Wild Horse Nine",
       "genre": "komedie",
-      "datum": "2026-11-14",
-      "tijd": "16:40",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
-      "datum": "2026-11-14",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
       "datum": "2026-11-15",
       "tijd": "14:20",
       "status": "gepland",
@@ -1204,7 +1169,7 @@
       "genre": "komedie",
       "datum": "2026-11-17",
       "tijd": "16:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
     },

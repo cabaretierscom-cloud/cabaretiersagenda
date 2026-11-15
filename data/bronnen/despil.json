@@ -1,7 +1,7 @@
 {
   "bron": "despil",
   "naam": "CC De Spil",
-  "opgehaald": "2026-11-14",
+  "opgehaald": "2026-11-15",
   "theaters": [
     {
       "id": "de-spil",
@@ -16,32 +16,6 @@
     {
       "theater": "de-spil",
       "artiesten": [
-        "Kamal Kharmach"
-      ],
-      "titel": "Mag Ik Even? 2026",
-      "genre": "stand-up",
-      "datum": "2026-11-14",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.despil.be/agenda/mag-ik-even-2026-shg6"
-    },
-    {
-      "theater": "de-spil",
-      "artiesten": [
-        "Kamal Kharmach"
-      ],
-      "titel": "Mag Ik Even? 2026",
-      "genre": "stand-up",
-      "datum": "2026-11-15",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.despil.be/agenda/mag-ik-even-2026-shg6"
-    },
-    {
-      "theater": "de-spil",
-      "artiesten": [
         "De Grote Gameshow"
       ],
       "titel": "A.vontura Silent Disco Theater",
@@ -51,6 +25,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.despil.be/agenda/de-grote-gameshow-1jl6"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag Ik Even? 2026",
+      "genre": "stand-up",
+      "datum": "2026-11-15",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/mag-ik-even-2026-shg6"
     },
     {
       "theater": "de-spil",
@@ -497,7 +484,7 @@
       "genre": "stand-up",
       "datum": "2027-06-05",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "première",
       "bron": "https://www.despil.be/agenda/moortelvet-premiere-in-t-roeselaars-c2hp"
     },
@@ -552,6 +539,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.despil.be/agenda/stabieler-herneming-ts2h"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Kamal Kharmach"
+      ],
+      "titel": "Mag ik even? 2027",
+      "genre": "stand-up",
+      "datum": "2027-12-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/mag-ik-even-2027-xn2w"
     }
   ],
   "recensies": {}

@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-14",
+  "opgehaald": "2026-11-15",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -272,19 +272,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/de-waanzinnige-boomhut-van-78-verdiepingen-6/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Joanne Telesford"
-      ],
-      "titel": "Joanne Telesford",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/joanne-telesford/"
     },
     {
       "theater": "kunstlinie",
@@ -688,19 +675,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/missie-maan-astronauten-gezocht-8/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Henry van Loon"
-      ],
-      "titel": "Henry van Loon",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/henry-van-loon-3/"
     },
     {
       "theater": "kunstlinie",
@@ -1142,23 +1116,6 @@
         "medium": "NRC",
         "sterren": 4,
         "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut. In zijn cabaretdebuut ‘Striptease Van De Dood’ schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal. Doeltreffend toont hij dat de realiteit leuker fantaseren een verdedigingsmechanisme is met voor- én nadelen."
-      }
-    ],
-    "https://kunstlinie.nl/programma/henry-van-loon-3/": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Als er één nu de aangewezen komiek is om honderden mensen tegelijk de slappe lach te bezorgen, dan is het Henry van Loon."
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Van Loon toont zich meester in het opdienen van zijn breed uitwaaierende fantasieën met uitgestreken gezicht en mild-ironische toon."
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Er lopen in Nederland nauwelijks getalenteerdere komieken rond dan Van Loon."
       }
     ],
     "https://kunstlinie.nl/programma/wijsneuzen-8/": [

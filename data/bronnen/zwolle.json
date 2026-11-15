@@ -1,7 +1,7 @@
 {
   "bron": "zwolle",
   "naam": "Zwolse Theaters",
-  "opgehaald": "2026-11-14",
+  "opgehaald": "2026-11-15",
   "theaters": [
     {
       "id": "theater-de-spiegel",
@@ -193,39 +193,13 @@
     {
       "theater": "odeon-zwolle",
       "artiesten": [
-        "60e editie Cameretten Festival"
-      ],
-      "titel": "De try-outs",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/cameretten"
-    },
-    {
-      "theater": "odeon-zwolle",
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Een Striptease Van De Dood | reprise",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/david-linszen"
-    },
-    {
-      "theater": "odeon-zwolle",
-      "artiesten": [
         "Ricky Koole"
       ],
       "titel": "Rare Leeftijd | Theater Overdag",
       "genre": "cabaret",
       "datum": "2026-11-15",
       "tijd": "14:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/ricky-koole"
     },
@@ -1053,23 +1027,6 @@
         "medium": "Trouw",
         "sterren": null,
         "citaat": "vertrouwde mix van droge humor en maatschappijkritiek"
-      }
-    ],
-    "https://www.zwolsetheaters.nl/programma/2026-2027/david-linszen": [
-      {
-        "medium": "Trouw",
-        "sterren": 5,
-        "citaat": "Indrukwekkend, hoe zelfverzekerd Linszen in zijn avondvullende debuut komisch absurdisme weet te koppelen aan zijn realiteit"
-      },
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "David Linszens debuut is echt heel goed"
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut"
       }
     ],
     "https://www.zwolsetheaters.nl/programma/2026-2027/vlamousse": [

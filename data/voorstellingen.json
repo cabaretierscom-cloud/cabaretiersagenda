@@ -841,6 +841,9 @@
         "citaat": "Ayoub Kharkhach maakt indruk met een ontroerend en verbindend debuut.",
         "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/en-verbied-vogels-om-te-fluiten-ayoub"
       }
+    ],
+    "ookGenres": [
+      "kleinkunst"
     ]
   },
   {
@@ -6706,13 +6709,6 @@
     "genre": "kindervoorstellingen"
   },
   {
-    "id": "kunstendag-voor-kinderen-2026-cc-zoetegem-zottegem",
-    "titel": "Kunstendag voor Kinderen 2026",
-    "artiesten": [],
-    "genre": "kindervoorstellingen",
-    "theater": "cc-zoetegem-zottegem"
-  },
-  {
     "id": "kunstendag-voor-kinderen-sprookjes-enzo-sssstt",
     "titel": "Sprookjes enzo - Sssstt!",
     "artiesten": [
@@ -8708,14 +8704,6 @@
   {
     "id": "papaya-mooov",
     "titel": "Mooov",
-    "artiesten": [
-      "papaya"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
-    "id": "papaya-priscilla-kellen",
-    "titel": "Priscilla Kellen",
     "artiesten": [
       "papaya"
     ],
@@ -10945,14 +10933,6 @@
     "genre": "kindervoorstellingen"
   },
   {
-    "id": "stuiterstokken-kleutersinfonietta-peuter-kleuter-pret",
-    "titel": "Kleutersinfonietta | Peuter Kleuter Pret",
-    "artiesten": [
-      "stuiterstokken"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
     "id": "stuutjes-en-cinema-de-spil",
     "titel": "Stuutjes en cinema",
     "artiesten": [],
@@ -12198,14 +12178,14 @@
       {
         "medium": "Trouw",
         "sterren": 4,
-        "citaat": "Vlamousse trekt weer talloze onweerstaanbaar creatieve scènes en sketches uit de kast. (…) In ‘Het goede voorbeeld’ heeft het duo echt een fijne balans gevonden. Waar Van As ontroerend en ernstig kan zijn, of schunnig, luid en expressief is, trekt Van Bakel aandacht door juist zo min mogelijk te doen.",
-        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-goede-voorbeeld-vlamousse"
+        "citaat": "Vlamousse trekt weer talloze onweerstaanbaar creatieve scènes en sketches uit de kast",
+        "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/vlamousse"
       },
       {
         "medium": "Theaterkrant",
         "sterren": null,
-        "citaat": "Raakt precies de juiste snaar.",
-        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-goede-voorbeeld-vlamousse"
+        "citaat": "Raakt precies de juiste snaar",
+        "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/vlamousse"
       }
     ]
   },

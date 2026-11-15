@@ -1,7 +1,7 @@
 {
   "bron": "hnt",
   "naam": "Het Nationale Theater",
-  "opgehaald": "2026-11-14",
+  "opgehaald": "2026-11-15",
   "theaters": [
     {
       "id": "koninklijke-schouwburg",
@@ -29,7 +29,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-15",
       "tijd": "14:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.hnt.nl/nl/voorstellingen/het-lammetje-dat-een-varken-is-4-fh7h"
     },
@@ -85,6 +85,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.hnt.nl/nl/voorstellingen/bout-6-fhjp"
+    },
+    {
+      "theater": "koninklijke-schouwburg",
+      "artiesten": [
+        "Cameretten Festival"
+      ],
+      "titel": "Grande Finale Cameretten",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/grande-finale-cameretten-tzfd"
     }
   ],
   "recensies": {
