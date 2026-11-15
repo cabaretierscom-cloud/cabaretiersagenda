@@ -2603,7 +2603,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <div class="prose over-intro">
         <p>Alle cabaret en comedy van Nederland en België, op één plek. Van de grootste zaal tot het kleinste podium, van de eerste try-out tot de laatste voorstelling van een tournee.</p>
         <p>Theaters, comedyclubs en artiesten hebben elk hun eigen agenda. Wij zetten ze naast elkaar, zodat je niet hoeft te zoeken: je ziet meteen wie er wanneer en waar speelt.</p>
-        <p>Ons doel: meer mensen naar het theater. Om te genieten van een avond lachen, om nieuwe makers te ontdekken en om die ervaring te delen, met wie je meeneemt en met wie je erover vertelt.</p>
       </div>
 
       <h2 class="sub-head" id="hoe">Hoe werkt de agenda</h2>
