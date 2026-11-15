@@ -2599,27 +2599,38 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   function about() {
     const bronnen = zalenMetData.filter((t) => t.website).sort((a, b) => a.plaats.localeCompare(b.plaats, "nl") || a.naam.localeCompare(b.naam, "nl"));
     const body = `<section class="block wrap" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">Over de agenda</h1></div>
+      <div class="block-head"><h1 id="t">Over Cabaretiers.com</h1></div>
+      <div class="prose over-intro">
+        <p>Cabaretiers.com brengt alle voorstellingen van cabaretiers en comedians in Nederland en België samen op één plek. Van de grote zaal tot het kleine theater, van theatercabaret tot stand-up in een comedyclub, van de eerste try-out tot de laatste voorstelling van een tournee.</p>
+        <p>Nu staan die voorstellingen verspreid over honderden websites van theaters, comedyclubs en artiesten. Wij zetten ze bij elkaar, zodat je in één keer ziet wie er wanneer en waar speelt.</p>
+        <p>Ons doel: meer mensen naar het theater. Om te genieten van een avond lachen, om nieuwe makers te ontdekken en om die ervaring te delen, met wie je meeneemt en met wie je erover vertelt.</p>
+      </div>
+
+      <h2 class="sub-head" id="hoe">Hoe werkt de agenda</h2>
       <div class="about">
         <div class="prose">
-          <p>Cabaretiers.com verzamelt alle aankomende cabaret- en comedyvoorstellingen in Nederland en België: theatercabaret, stand-up in comedyclubs en cafés, festivals, open mics en komisch toneel. Je ziet per avond wie waar speelt, en per artiest, plaats of zaal de volledige speellijst.</p>
+          <p>De agenda bevat theatercabaret, stand-up in comedyclubs en cafés, festivals, open mics, komisch toneel en kindervoorstellingen. Je ziet per avond wie waar speelt, en per artiest, plaats of zaal de volledige speellijst. Zoek op naam, filter op genre of kijk wat er bij jou in de buurt te zien is.</p>
           <p>Op dit moment staan er ${tellers.speeldata.toLocaleString("nl-NL")} voorstellingen in de agenda, van ${tellers.artiesten} artiesten in ${tellers.zalen} zalen.</p>
           <p>Elke speeldatum heeft een bron. De knop <em>Tickets</em> brengt je naar die bron, de speellijst van het theater of de artiest: daar koop je kaarten en controleer je de datum. Datums waarover bronnen elkaar tegenspreken, staan gemarkeerd als <em>datum onzeker</em>.</p>
-          <h2 id="aanmelden">Zelf voorstellingen aanmelden</h2>
-          <p>Speel je zelf, of programmeer je een zaal of comedyclub? Mail je speellijst of de link naar je agenda naar <a href="mailto:${SITE.email}">${SITE.email}</a>, dan nemen we je voorstellingen op.</p>
-          <h2 id="contact">Contact</h2>
-          <p>Vragen, een fout gezien in de agenda, of een tip voor een zaal die nog ontbreekt? Mail naar <a href="mailto:${SITE.email}">${SITE.email}</a>.</p>
         </div>
         <ol class="steps">
-          <li><div><b>Speellijsten ophalen</b><span>Elke nacht lezen we de agenda's van theaters en comedyclubs uit, en volgen we hun regels voor bezoek door programma's.</span></div></li>
+          <li><div><b>Speellijsten ophalen</b><span>Elke nacht lezen we de agenda's van theaters, comedyclubs en artiesten uit, en volgen we hun regels voor bezoek door programma's.</span></div></li>
           <li><div><b>Samenvoegen en controleren</b><span>Dezelfde artiest of voorstelling bij verschillende zalen wordt herkend. Verschillen worden gemarkeerd.</span></div></li>
           <li><div><b>Publiceren</b><span>Nieuwe data staan de volgende ochtend in de agenda, met een link naar de bron.</span></div></li>
         </ol>
       </div>
+
+      <div class="prose">
+        <h2 class="sub-head" id="aanmelden">Zelf voorstellingen aanmelden</h2>
+        <p>Speel je zelf, of programmeer je een zaal of comedyclub? Mail je speellijst of de link naar je agenda naar <a href="mailto:${SITE.email}">${SITE.email}</a>, dan nemen we je voorstellingen op. Persfoto's en voorstellingsteksten zijn ook welkom.</p>
+        <h2 class="sub-head" id="contact">Contact</h2>
+        <p>Vragen, een fout gezien in de agenda, of een tip voor een zaal die nog ontbreekt? Mail naar <a href="mailto:${SITE.email}">${SITE.email}</a>.</p>
+      </div>
+
       <h2 class="sub-head" id="bronnen">Waar de gegevens vandaan komen</h2>
       <ul class="sources">${bronnen.map((t) => `<li><a href="${esc(metUtm(t.website))}" rel="noopener">${esc(t.naam)}</a> <span>${esc(t.plaats)}</span></li>`).join("")}</ul>
     </section>`;
-    return layout({ title: "Over de agenda", path: "/over/", section: "over", body, schema: { type: "AboutPage", kruimels: [["Over de agenda", "/over/"]], over: { "@id": ORG_ID } } });
+    return layout({ title: "Over Cabaretiers.com", description: "Cabaretiers.com brengt alle voorstellingen van cabaretiers en comedians in Nederland en België samen op één plek, om meer mensen naar het theater te krijgen.", path: "/over/", section: "over", body, schema: { type: "AboutPage", kruimels: [["Over Cabaretiers.com", "/over/"]], over: { "@id": ORG_ID } } });
   }
 
   function notFound() {
