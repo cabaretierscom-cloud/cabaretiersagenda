@@ -585,8 +585,12 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       `<a href="/agenda/${g}/"><b>${esc(GENRE_INFO[g].kop)}</b><span>${plural(genreLijst(g).length, "voorstelling", "voorstellingen")}</span></a>`).join("")}${tryoutLijst.length ? `<a href="/agenda/try-outs/"><b>Try-outs</b><span>${plural(tryoutLijst.length, "voorstelling", "voorstellingen")}</span></a>` : ""}</nav>`;
   }
 
+  // In de maandenbalk alleen maanden met meer dan MAAND_DREMPEL voorstellingen (verzoek van de eigenaar, november
+  // 2026: een maand ver vooruit met één of twee data oogt leeg). De pagina's zelf bestaan wel, ook via vorige/volgende.
+  const MAAND_DREMPEL = 5;
+  const balkMaanden = maanden.filter((m) => perMaand(m).length > MAAND_DREMPEL);
   function maandNav(huidig) {
-    return `<nav class="month-nav" aria-label="Maanden">${maanden.map((m) =>
+    return `<nav class="month-nav" aria-label="Maanden">${maanden.filter((m) => balkMaanden.includes(m) || m === huidig).map((m) =>
       `<a href="/agenda/${maandId(m)}/"${m === huidig ? ' aria-current="page"' : ""}><b>${kortMaand(m)}</b><span>${m.slice(0, 4)}</span></a>`).join("")}</nav>`;
   }
 
