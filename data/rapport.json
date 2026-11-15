@@ -1,11 +1,11 @@
 {
   "datum": "2026-11-15",
   "totaal": {
-    "speeldata": 9277,
-    "komend": 8338,
+    "speeldata": 9297,
+    "komend": 8358,
     "artiesten": 966,
-    "zalen": 712,
-    "plaatsen": 494,
+    "zalen": 713,
+    "plaatsen": 495,
     "voorstellingen": 1425
   },
   "bronnen": [
@@ -14,7 +14,7 @@
       "naam": "Amai Comedy Club",
       "opgehaald": "2026-11-15",
       "speeldata": 16,
-      "vorige": 14,
+      "vorige": 16,
       "dubbel": 0
     },
     {
@@ -134,7 +134,7 @@
       "naam": "CC De Spil",
       "opgehaald": "2026-11-15",
       "speeldata": 42,
-      "vorige": 41,
+      "vorige": 42,
       "dubbel": 0
     },
     {
@@ -214,7 +214,7 @@
       "naam": "Het Nationale Theater",
       "opgehaald": "2026-11-15",
       "speeldata": 5,
-      "vorige": 4,
+      "vorige": 5,
       "dubbel": 0
     },
     {
@@ -494,7 +494,7 @@
       "naam": "Theater aan het Vrijthof",
       "opgehaald": "2026-11-15",
       "speeldata": 40,
-      "vorige": 39,
+      "vorige": 40,
       "dubbel": 0
     },
     {
@@ -518,7 +518,7 @@
       "naam": "Westrand",
       "opgehaald": "2026-11-15",
       "speeldata": 48,
-      "vorige": 49,
+      "vorige": 48,
       "dubbel": 0
     },
     {
@@ -534,7 +534,7 @@
       "naam": "Zaantheater",
       "opgehaald": "2026-11-15",
       "speeldata": 84,
-      "vorige": 85,
+      "vorige": 84,
       "dubbel": 0
     },
     {
@@ -542,7 +542,7 @@
       "naam": "CC Zoetegem",
       "opgehaald": "2026-11-15",
       "speeldata": 24,
-      "vorige": 25,
+      "vorige": 24,
       "dubbel": 0
     },
     {
@@ -568,6 +568,14 @@
       "speeldata": 374,
       "vorige": 374,
       "dubbel": 72
+    },
+    {
+      "bron": "anuar",
+      "naam": "Speellijst van Anuar",
+      "opgehaald": "2026-11-15",
+      "speeldata": 20,
+      "vorige": 0,
+      "dubbel": 9
     },
     {
       "bron": "bunker",
@@ -598,7 +606,7 @@
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-15",
       "speeldata": 2223,
-      "vorige": 2211,
+      "vorige": 2223,
       "dubbel": 1344
     }
   ],
@@ -611,6 +619,13 @@
         "plaats": "Eindhoven",
         "land": "NL",
         "website": "https://www.parktheater.nl"
+      },
+      {
+        "id": "dorpstheater-town-wijdewormer",
+        "naam": "Dorpstheater Town",
+        "plaats": "Wijdewormer",
+        "land": "NL",
+        "website": null
       }
     ],
     "voorstellingen": []
@@ -808,11 +823,11 @@
     },
     {
       "datum": "2026-11-15",
-      "speeldata": 9277,
-      "komend": 8338,
+      "speeldata": 9297,
+      "komend": 8358,
       "artiesten": 966,
-      "zalen": 712,
-      "plaatsen": 494,
+      "zalen": 713,
+      "plaatsen": 495,
       "voorstellingen": 1425
     }
   ]
