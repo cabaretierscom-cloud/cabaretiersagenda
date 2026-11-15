@@ -2780,9 +2780,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const deel = (n) => `${getal(n)} (${Math.round((100 * n) / (totaal.NL + totaal.BE + totaal.elders + totaal.onbekend || 1))}%)`;
     return `<p class="ga-noot">Bezoekers per plaats, volgens Google Analytics. Hoe groter de stip, hoe meer bezoekers. De plaats komt uit het internetadres en is soms die van de internetaanbieder. Ga met de muis op een stip staan voor de cijfers, of open de lijst onder de kaart.</p>
       ${svg}
-      <ul class="ga-landen"><li><strong>Nederland</strong> ${deel(totaal.NL)}</li><li><strong>België</strong> ${deel(totaal.BE)}</li><li><strong>Elders</strong> ${deel(totaal.elders)}</li><li><strong>Plaats onbekend</strong> ${deel(totaal.onbekend)}</li></ul>
-      <details class="ga-plaatslijst"><summary>Alle ${lijst.length} plaatsen als lijst</summary><ol>${lijst.map((p) => `<li>${esc(naamVan(p))}${p.land === "BE" ? ' <span class="mis">(België)</span>' : ""} <span class="ga-num">${getal(p.bezoekers)}</span></li>`).join("")}</ol></details>
-      <p class="ga-bron">Kaart: Natural Earth. Plaatsen: GeoNames (CC BY 4.0).</p>`;
+      <ul class="ga-landen"><li><strong>Nederland</strong> ${deel(totaal.NL)}</li><li><strong>België</strong> ${deel(totaal.BE)}</li><li><strong>Elders</strong> ${deel(totaal.elders)}</li><li><strong>Plaats onbekend</strong> ${deel(totaal.onbekend)}</li></ul>`;
   }
 
   const dashboardPad = (id) => (id ? `/dashboard/${id}/` : "/dashboard/");
