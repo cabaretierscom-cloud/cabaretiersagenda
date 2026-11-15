@@ -2610,7 +2610,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <div class="prose">
           <p>De agenda bevat theatercabaret, stand-up in comedyclubs en cafés, festivals, open mics, komisch toneel en kindervoorstellingen. Je ziet per avond wie waar speelt, en per artiest, plaats of zaal de volledige speellijst. Zoek op naam, filter op genre of kijk wat er bij jou in de buurt te zien is.</p>
           <p>Op dit moment staan er ${tellers.speeldata.toLocaleString("nl-NL")} voorstellingen in de agenda, van ${tellers.artiesten} artiesten in ${tellers.zalen} zalen.</p>
-          <p>Elke speeldatum heeft een bron. De knop <em>Tickets</em> brengt je naar die bron, de speellijst van het theater of de artiest: daar koop je kaarten en controleer je de datum. Datums waarover bronnen elkaar tegenspreken, staan gemarkeerd als <em>datum onzeker</em>.</p>
         </div>
         <ol class="steps">
           <li><div><b>Speellijsten ophalen</b><span>Elke nacht lezen we de agenda's van theaters, comedyclubs en artiesten uit, en volgen we hun regels voor bezoek door programma's.</span></div></li>
