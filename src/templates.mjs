@@ -2601,8 +2601,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Over Cabaretiers.com</h1></div>
       <div class="prose over-intro">
-        <p>Cabaretiers.com brengt alle voorstellingen van cabaretiers en comedians in Nederland en België samen op één plek. Van de grote zaal tot het kleine theater, van theatercabaret tot stand-up in een comedyclub, van de eerste try-out tot de laatste voorstelling van een tournee.</p>
-        <p>Nu staan die voorstellingen verspreid over honderden websites van theaters, comedyclubs en artiesten. Wij zetten ze bij elkaar, zodat je in één keer ziet wie er wanneer en waar speelt.</p>
+        <p>Alle cabaret en comedy van Nederland en België, op één plek. Van de grootste zaal tot het kleinste podium, van de eerste try-out tot de laatste voorstelling van een tournee.</p>
+        <p>Theaters, comedyclubs en artiesten hebben elk hun eigen agenda. Wij zetten ze naast elkaar, zodat je niet hoeft te zoeken: je ziet meteen wie er wanneer en waar speelt.</p>
         <p>Ons doel: meer mensen naar het theater. Om te genieten van een avond lachen, om nieuwe makers te ontdekken en om die ervaring te delen, met wie je meeneemt en met wie je erover vertelt.</p>
       </div>
 
