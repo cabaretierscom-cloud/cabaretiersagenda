@@ -2867,12 +2867,12 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
       <div class="ga-twee">
         <section class="ga-kaart"><h2 class="sub-head">Meest bekeken pagina's</h2><p class="ga-noot">De 50 pagina's met de meeste weergaven.</p>${paginas}</section>
-        <section class="ga-kaart"><h2 class="sub-head">Meest bekeken theaters</h2><p class="ga-noot">Weergaven van de theaterpagina's.</p>${theaters}</section>
+        <section class="ga-kaart"><h2 class="sub-head">Waar komen de bezoekers vandaan?</h2>${kaart}</section>
       </div>
 
       <div class="ga-twee">
         <section class="ga-kaart"><h2 class="sub-head">Meest bekeken artiesten</h2><p class="ga-noot">Artiestpagina en voorstellingspagina's samen.</p>${artiesten}</section>
-        <section class="ga-kaart"><h2 class="sub-head">Waar komen de bezoekers vandaan?</h2>${kaart}</section>
+        <section class="ga-kaart"><h2 class="sub-head">Meest bekeken theaters</h2><p class="ga-noot">Weergaven van de theaterpagina's.</p>${theaters}</section>
       </div>
     </section>`;
     return layout({ title: `Bezoekerscijfers ${ga.naam.toLowerCase()}`, description: "Bezoekcijfers van de agenda.", path: pad, body, noindex: true });
