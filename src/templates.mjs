@@ -1480,7 +1480,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     </section>`;
     const kruimels = soort === "alle" ? [["Alle cabaretiers", P.pad]] : [["Alle cabaretiers", "/alle-cabaretiers/"], [soort === "vrouw" ? "Vrouwen" : "Mannen", P.pad]];
     const jaar = db.today.slice(0, 4);
-    const titel = { alle: `Cabaretiers: alle Nederlandse en Vlaamse cabaretiers (${jaar})`, vrouw: `Vrouwelijke cabaretiers: lijst van bekende cabaretières (${jaar})`, man: `Mannelijke cabaretiers: bekende Nederlandse cabaretiers (${jaar})` }[soort];
+    const titel = { alle: `Cabaretiers in Nederland en België: wie speelt er nu? (${jaar})`, vrouw: `Vrouwelijke cabaretiers: lijst van bekende cabaretières (${jaar})`, man: `Mannelijke cabaretiers: bekende Nederlandse cabaretiers (${jaar})` }[soort];
     const desc = { alle: zinnen(`Lijst van ${items.length} cabaretiers en comedians, van A tot Z: bekende namen, mannen en vrouwen, met hun speellijst ${SEIZOEN}.`, "Met kaarten via het theater."),
       vrouw: zinnen(`Welke vrouwelijke cabaretiers zijn er? Een lijst van ${items.length} Nederlandse en Vlaamse cabaretières, met hun speellijst.`, `Zoals ${opsomming(top.slice(0, 2).map(({ a }) => a.naam))}.`, "Met kaarten via het theater."),
       man: zinnen(`Welke mannelijke cabaretiers zijn er? Een lijst van ${items.length} Nederlandse en Vlaamse cabaretiers en comedians, met hun speellijst.`, `Zoals ${opsomming(top.slice(0, 2).map(({ a }) => a.naam))}.`, "Met kaarten via het theater.") }[soort];
