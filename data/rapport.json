@@ -1,9 +1,9 @@
 {
   "datum": "2026-11-16",
   "totaal": {
-    "speeldata": 9322,
-    "komend": 8324,
-    "artiesten": 969,
+    "speeldata": 9324,
+    "komend": 8326,
+    "artiesten": 967,
     "zalen": 715,
     "plaatsen": 496,
     "voorstellingen": 1427
@@ -14,7 +14,7 @@
       "naam": "Amai Comedy Club",
       "opgehaald": "2026-11-16",
       "speeldata": 16,
-      "vorige": 15,
+      "vorige": 16,
       "dubbel": 0
     },
     {
@@ -46,7 +46,7 @@
       "naam": "Stadsschouwburg Antwerpen en Capitole Gent",
       "opgehaald": "2026-11-16",
       "speeldata": 53,
-      "vorige": 54,
+      "vorige": 53,
       "dubbel": 0
     },
     {
@@ -190,7 +190,7 @@
       "naam": "Comedy Club Haug",
       "opgehaald": "2026-11-16",
       "speeldata": 102,
-      "vorige": 101,
+      "vorige": 102,
       "dubbel": 0
     },
     {
@@ -214,7 +214,7 @@
       "naam": "Het Nationale Theater",
       "opgehaald": "2026-11-16",
       "speeldata": 5,
-      "vorige": 4,
+      "vorige": 5,
       "dubbel": 0
     },
     {
@@ -318,7 +318,7 @@
       "naam": "Minardschouwburg",
       "opgehaald": "2026-11-16",
       "speeldata": 24,
-      "vorige": 23,
+      "vorige": 24,
       "dubbel": 0
     },
     {
@@ -374,7 +374,7 @@
       "naam": "Parktheater Eindhoven",
       "opgehaald": "2026-11-16",
       "speeldata": 225,
-      "vorige": 223,
+      "vorige": 225,
       "dubbel": 0
     },
     {
@@ -534,7 +534,7 @@
       "naam": "Zaantheater",
       "opgehaald": "2026-11-16",
       "speeldata": 84,
-      "vorige": 83,
+      "vorige": 84,
       "dubbel": 0
     },
     {
@@ -586,6 +586,14 @@
       "dubbel": 350
     },
     {
+      "bron": "evaeikhout",
+      "naam": "Speellijst van Eva Eikhout",
+      "opgehaald": "2026-11-16",
+      "speeldata": 2,
+      "vorige": 2,
+      "dubbel": 1
+    },
+    {
       "bron": "fris",
       "naam": "Agenda van Theaterbureau Fr!S",
       "opgehaald": "2026-11-16",
@@ -606,23 +614,23 @@
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-16",
       "speeldata": 2240,
-      "vorige": 2221,
+      "vorige": 2240,
       "dubbel": 1354
     }
   ],
   "nieuw": {
     "artiesten": [
       {
-        "id": "het-leven-is-kort",
-        "naam": "Het leven is kort"
-      },
-      {
         "id": "julia-masli",
         "naam": "Julia Masli"
       },
       {
-        "id": "net-als-ik",
-        "naam": "net als ik!"
+        "id": "eva-eikhout",
+        "naam": "Eva Eikhout"
+      },
+      {
+        "id": "gery-la-boule",
+        "naam": "Géry La Boule"
       }
     ],
     "zalen": [
@@ -643,18 +651,24 @@
     ],
     "voorstellingen": [
       {
-        "id": "het-leven-is-kort-net-als-ik-eva-eikhout",
-        "titel": "Eva Eikhout",
-        "artiesten": [
-          "het-leven-is-kort",
-          "net-als-ik"
-        ]
-      },
-      {
         "id": "julia-masli-ha-ha-ha-ha-ha-ha-ha",
         "titel": "Ha ha ha ha ha ha ha",
         "artiesten": [
           "julia-masli"
+        ]
+      },
+      {
+        "id": "eva-eikhout-het-leven-is-kort-net-als-ik",
+        "titel": "Het leven is kort, net als ik",
+        "artiesten": [
+          "eva-eikhout"
+        ]
+      },
+      {
+        "id": "gery-la-boule-ni-zievere-speile",
+        "titel": "Ni zievere, speile",
+        "artiesten": [
+          "gery-la-boule"
         ]
       }
     ]
@@ -861,9 +875,9 @@
     },
     {
       "datum": "2026-11-16",
-      "speeldata": 9322,
-      "komend": 8324,
-      "artiesten": 969,
+      "speeldata": 9324,
+      "komend": 8326,
+      "artiesten": 967,
       "zalen": 715,
       "plaatsen": 496,
       "voorstellingen": 1427

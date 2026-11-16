@@ -24,6 +24,8 @@ AddType application/manifest+json .webmanifest
   RewriteRule ^artiesten/klaas-van-eerden(/.*)?$ https://www.cabaretiers.com/artiesten/klaas-van-der-eerden/ [L,R=301]
   RewriteRule ^artiesten/marja-van-katendrecht-x-theater-zuidplein(/.*)?$ https://www.cabaretiers.com/artiesten/marja-van-katendrecht/ [L,R=301]
   RewriteRule ^artiesten/tis-hier-geen-hotel-3(/.*)?$ https://www.cabaretiers.com/artiesten/hanneke-drenth-en-dianne-liesker/ [L,R=301]
+  RewriteRule ^artiesten/(het-leven-is-kort|net-als-ik)(/.*)?$ https://www.cabaretiers.com/artiesten/eva-eikhout/ [L,R=301]
+  RewriteRule ^artiesten/(ni-zievere|speile)(/.*)?$ https://www.cabaretiers.com/artiesten/gery-la-boule/ [L,R=301]
   # Kor Hoebe: de voorstelling heet Korrelatie, niet Korrelrelatie (november 2026).
   RewriteRule ^artiesten/kor-hoebe/korrelrelatie/?$ https://www.cabaretiers.com/artiesten/kor-hoebe/korrelatie/ [L,R=301]
   # Verwijderde nieuwsberichten (november 2026, oud nieuws): naar de pagina waar het nu staat.

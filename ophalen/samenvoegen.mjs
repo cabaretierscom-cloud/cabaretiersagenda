@@ -247,6 +247,10 @@ function opgeschoondeArtiesten(namen) {
       .replace(/,?\s+e\.?\s?a\.?$/i, "")
       .trim();
     if (!n) continue;
+    // Een alias voor de hele naam gaat voor het splitsen op komma's ("Het leven is kort, net als ik!" is een titel
+    // op de plek van de artiest: de alias maakt er Eva Eikhout van).
+    const heel = aliasOpSleutel.get(slug(n)) || aliasOpSleutel.get(slug(n.replace(/[!?.]+$/, "")));
+    if (heel) { uit.push(...heel); continue; }
     const delen = n.includes(",") ? n.split(/\s*,\s*|\s+(?:en|&)\s+(?=[^,]*$)/).map((x) => x.replace(/\s*\(mc\)\s*$/i, "").replace(/\s+e\.?\s?a\.?$/i, "").replace(/\.$/, "").trim()).filter(Boolean) : [n];
     for (const d of delen) uit.push(...(aliasOpSleutel.get(slug(d)) || [d]));
   }
