@@ -1,7 +1,7 @@
 {
   "bron": "hetpark",
   "naam": "Schouwburg Het Park",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "schouwburg-het-park",
@@ -24,26 +24,13 @@
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
-        "Guido Weijers"
-      ],
-      "titel": "Oudejaarsconference 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-11-15",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://hetpark.nl/agenda/guido-weijers-10345756/"
-    },
-    {
-      "theater": "schouwburg-het-park",
-      "artiesten": [
         "Amhali & Verveer"
       ],
       "titel": "Alles is Comedy",
       "genre": "cabaret",
       "datum": "2026-11-16",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/amhali-verveer-10349291/"
     },
@@ -56,7 +43,7 @@
       "genre": "cabaret",
       "datum": "2026-11-17",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/amhali-verveer-10349292/"
     },

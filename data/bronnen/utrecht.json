@@ -1,7 +1,7 @@
 {
   "bron": "utrecht",
   "naam": "Stadsschouwburg Utrecht",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "stadsschouwburg-utrecht",
@@ -232,7 +232,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/aan-mij-zal-het-niet-liggen-marjolijn-van-kooten",
       "datum": "2026-11-25",
       "tijd": "20:30",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -263,7 +263,7 @@
     {
       "theater": "stadsschouwburg-utrecht",
       "artiesten": [
-        "Yora Rienstra, Vera Marijt e.a."
+        "Yora Rienstra e.a."
       ],
       "titel": "Vrouwejaars 2026",
       "genre": "cabaret",
@@ -505,7 +505,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/altijd-aan-pieter-verelst",
       "datum": "2027-01-27",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -583,7 +583,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/verbroedering-roel-en-jos-maalderink",
       "datum": "2027-02-13",
       "tijd": "20:00",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1272,7 +1272,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/niet-zomaar-een-pubquiz-3-flunknarf",
       "datum": "2026-11-22",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1375,19 +1375,6 @@
       "soort": null,
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-interventie-de-grote-zomerfin-emmy-krooshof-nick-van-keulen-en-erik-boddeus",
       "datum": "2027-07-10",
-      "tijd": "20:30",
-      "status": "gepland"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Nederlands Studentenkampioenschap Improvisatie-comedy"
-      ],
-      "titel": "Finale 2026",
-      "genre": "cabaret",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/finale-2026-nederlands-studentenkampioenschap-improvisatie-com",
-      "datum": "2026-11-15",
       "tijd": "20:30",
       "status": "gepland"
     },

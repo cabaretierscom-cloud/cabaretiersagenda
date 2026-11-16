@@ -1,7 +1,7 @@
 {
   "bron": "amai",
   "naam": "Amai Comedy Club",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "amai-comedy-club-gent",
@@ -13,17 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "amai-comedy-club-gent",
-      "artiesten": [],
-      "titel": "Ric Diez is happy/sad",
-      "genre": "stand-up",
-      "datum": "2026-11-15",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.amaicomedyclub.com/event-details/ric-diez-is-happy-sad"
-    },
     {
       "theater": "amai-comedy-club-gent",
       "artiesten": [],
@@ -188,6 +177,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.amaicomedyclub.com/event-details/amai-improcomedy-legends-eng-11"
+    },
+    {
+      "theater": "amai-comedy-club-gent",
+      "artiesten": [],
+      "titel": "Impro-tastisch",
+      "genre": "improvisatie",
+      "datum": "2026-12-13",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amaicomedyclub.com/event-details/impro-tastisch-2026-12-13-15-00"
     }
   ],
   "recensies": {}

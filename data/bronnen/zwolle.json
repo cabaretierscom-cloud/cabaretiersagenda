@@ -1,7 +1,7 @@
 {
   "bron": "zwolle",
   "naam": "Zwolse Theaters",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "theater-de-spiegel",
@@ -189,19 +189,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/jan-beuving"
-    },
-    {
-      "theater": "odeon-zwolle",
-      "artiesten": [
-        "Ricky Koole"
-      ],
-      "titel": "Rare Leeftijd | Theater Overdag",
-      "genre": "cabaret",
-      "datum": "2026-11-15",
-      "tijd": "14:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/ricky-koole"
     },
     {
       "theater": "odeon-zwolle",
@@ -524,7 +511,7 @@
       "genre": "cabaret",
       "datum": "2027-03-12",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/patrick-nederkoorn"
     },

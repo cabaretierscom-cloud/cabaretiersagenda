@@ -1,7 +1,7 @@
 {
   "bron": "verkadefabriek",
   "naam": "Verkadefabriek",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "verkadefabriek-s-hertogenbosch",
@@ -165,7 +165,7 @@
       "genre": "cabaret",
       "datum": "2026-12-16",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/amsterdams-studenten-cabaret-festival-finalisten-162257"
     },
@@ -796,19 +796,6 @@
     {
       "theater": "verkadefabriek-s-hertogenbosch",
       "artiesten": [
-        "Het Filiaal"
-      ],
-      "titel": "De jongen die van de wereld hield (9+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-15",
-      "tijd": "15:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/het-filiaal-de-jongen-die-van-de-wereld-hield-9-162873"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
         "Studio Figur"
       ],
       "titel": "Kakek, Opa en ik (7+)",
@@ -1056,19 +1043,6 @@
     {
       "theater": "verkadefabriek-s-hertogenbosch",
       "artiesten": [
-        "HNTjong"
-      ],
-      "titel": "Dag Poes (4+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-15",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/hntjong-dag-poes-4-162872"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
         "Remy Evers"
       ],
       "titel": "Graag gedaan",
@@ -1117,28 +1091,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/cameretten-comedy-masterclass-166573"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
-      "datum": "2026-11-15",
-      "tijd": "14:20",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [],
-      "titel": "Wild Horse Nine",
-      "genre": "komedie",
-      "datum": "2026-11-15",
-      "tijd": "19:20",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
     },
     {
       "theater": "verkadefabriek-s-hertogenbosch",

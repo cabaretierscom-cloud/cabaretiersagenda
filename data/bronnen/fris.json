@@ -2,7 +2,7 @@
   "bron": "fris",
   "naam": "Agenda van Theaterbureau Fr!S",
   "soort": "speellijst",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [],
   "speeldata": [
     {
@@ -742,7 +742,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-29",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/kiki-schippers-oudejaarsconferance-try-out-162259"
     },
@@ -991,7 +991,7 @@
       "tijd": "20:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.stichting-kasteelvanrhoon.nl"
+      "bron": "https://www.stichting-kasteelvanrhoon.nl/agenda/programma/marie-koet"
     },
     {
       "theater": {
@@ -2478,253 +2478,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Schouwburg De Lawei",
-        "plaats": "Drachten",
-        "land": "NL",
-        "website": "https://www.lawei.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-01-07",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.lawei.nl/agenda/andries-tunru-stefan-hendrikx-rrwl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Willem",
-        "plaats": "Enschede",
-        "land": "NL",
-        "website": "https://www.wilminktheater.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-01-16",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/beperkt-houdbaar-8zxm"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Walhalla",
-        "plaats": "Rotterdam",
-        "land": "NL",
-        "website": "https://www.theaterwalhalla.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-01-30",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/andries-tunru-en-stefan-hendrikx-beperkt-houdbaar/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Stadstheater Zoetermeer",
-        "plaats": "Zoetermeer",
-        "land": "NL",
-        "website": "https://stadstheater.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-02-11",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadstheater.nl/voorstelling/andries-tunru-en-stefan-hendrikx/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Cultuurhuis De Klinker",
-        "plaats": "Winschoten",
-        "land": "NL",
-        "website": "https://www.indeklinker.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-02-12",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.indeklinker.nl/theater/andries-tunru-stefan-hendrikx-lkk2"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Lindenberg Cultuurhuis",
-        "plaats": "Nijmegen",
-        "land": "NL",
-        "website": "https://www.delindenberg.com"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-03-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.delindenberg.com/agenda/andries-tunru-stefan-hendrik-beperkt-houdbaar"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater De Musketon",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://www.theaterdemusketon.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-04-02",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterdemusketon.nl/andries-en-stefan/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Rijswijkse Schouwburg",
-        "plaats": "Rijswijk",
-        "land": "NL",
-        "website": "https://www.rijswijkseschouwburg.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-04-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.rijswijkseschouwburg.nl/voorstelling/andries-tunru-stefan-hendrikx"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Beun",
-        "plaats": "Heiloo",
-        "land": "NL",
-        "website": "https://debeunheiloo.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-04-09",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://debeunheiloo.nl/andries-tunru-en-stefan-hendrikx-beperkt-houdbaar-reprise/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Haventheater IJmuiden",
-        "plaats": "Ijmuiden",
-        "land": "NL",
-        "website": "https://haventheaterijmuiden.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-04-28",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://haventheaterijmuiden.nl/programma/beperkt-houdbaar-andries-tunru-stefan-hendrikx"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "AINSI",
-        "plaats": "Maastricht",
-        "land": "NL",
-        "website": "https://www.theateraanhetvrijthof.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-05-20",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/beperkt-houdbaar-andries-tunru-stefan-hendrikx"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater De Hofnar",
-        "plaats": "Valkenswaard",
-        "land": "NL",
-        "website": "https://www.hofnar.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-05-27",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.hofnar.nl/theater/cabaret/andries-tunru-stefan-hendrikx/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Schouwburg De Kampanje",
-        "plaats": "Den Helder",
-        "land": "NL",
-        "website": "https://www.kampanje.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "Beperkt Houdbaar",
-      "genre": "improvisatie",
-      "datum": "2027-06-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/andries-tunru-stefan-hendrikx-rz5x"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "De Goudse Schouwburg",
         "plaats": "Gouda",
         "land": "NL",
@@ -3120,6 +2873,253 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-nogal-hyperbijzondere-oudejaa-andries-tunru-stefan-hendrikx"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg De Lawei",
+        "plaats": "Drachten",
+        "land": "NL",
+        "website": "https://www.lawei.nl"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-01-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/andries-tunru-stefan-hendrikx-rrwl"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Kleine Willem",
+        "plaats": "Enschede",
+        "land": "NL",
+        "website": "https://www.wilminktheater.nl"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-01-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.wilminktheater.nl/nl/agenda/beperkt-houdbaar-8zxm"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Walhalla",
+        "plaats": "Rotterdam",
+        "land": "NL",
+        "website": "https://www.theaterwalhalla.nl"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-01-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/andries-tunru-en-stefan-hendrikx-beperkt-houdbaar/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadstheater Zoetermeer",
+        "plaats": "Zoetermeer",
+        "land": "NL",
+        "website": "https://stadstheater.nl"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-02-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadstheater.nl/voorstelling/andries-tunru-en-stefan-hendrikx/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Cultuurhuis De Klinker",
+        "plaats": "Winschoten",
+        "land": "NL",
+        "website": "https://www.indeklinker.nl"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-02-12",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.indeklinker.nl/theater/andries-tunru-stefan-hendrikx-lkk2"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Lindenberg Cultuurhuis",
+        "plaats": "Nijmegen",
+        "land": "NL",
+        "website": "https://www.delindenberg.com"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-03-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.delindenberg.com/agenda/andries-tunru-stefan-hendrik-beperkt-houdbaar"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Musketon",
+        "plaats": "Utrecht",
+        "land": "NL",
+        "website": "https://www.theaterdemusketon.nl"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-04-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdemusketon.nl/andries-en-stefan/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Rijswijkse Schouwburg",
+        "plaats": "Rijswijk",
+        "land": "NL",
+        "website": "https://www.rijswijkseschouwburg.nl"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-04-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.rijswijkseschouwburg.nl/voorstelling/andries-tunru-stefan-hendrikx"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Beun",
+        "plaats": "Heiloo",
+        "land": "NL",
+        "website": "https://debeunheiloo.nl"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-04-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://debeunheiloo.nl/andries-tunru-en-stefan-hendrikx-beperkt-houdbaar-reprise/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Haventheater IJmuiden",
+        "plaats": "Ijmuiden",
+        "land": "NL",
+        "website": "https://haventheaterijmuiden.nl"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-04-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://haventheaterijmuiden.nl/programma/beperkt-houdbaar-andries-tunru-stefan-hendrikx"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "AINSI",
+        "plaats": "Maastricht",
+        "land": "NL",
+        "website": "https://www.theateraanhetvrijthof.nl"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-05-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/beperkt-houdbaar-andries-tunru-stefan-hendrikx"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Hofnar",
+        "plaats": "Valkenswaard",
+        "land": "NL",
+        "website": "https://www.hofnar.nl"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-05-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hofnar.nl/theater/cabaret/andries-tunru-stefan-hendrikx/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg De Kampanje",
+        "plaats": "Den Helder",
+        "land": "NL",
+        "website": "https://www.kampanje.nl"
+      },
+      "artiesten": [
+        "Andries Tunru & Stefan Hendrikx"
+      ],
+      "titel": "Beperkt Houdbaar",
+      "genre": "improvisatie",
+      "datum": "2027-06-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/andries-tunru-stefan-hendrikx-rz5x"
     },
     {
       "theater": {

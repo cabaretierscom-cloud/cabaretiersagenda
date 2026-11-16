@@ -1,7 +1,7 @@
 {
   "bron": "diest",
   "naam": "CC Den Amer",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "den-amer-diest",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "den-amer-diest",
-      "artiesten": [
-        "Kukeleku! De Grote Boerderijshow"
-      ],
-      "titel": "Kapitein Winokio",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-15",
-      "tijd": "15:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.ccdiest.be/nl/event/kukeleku-de-grote-boerderijshow"
-    },
     {
       "theater": "den-amer-diest",
       "artiesten": [
@@ -100,7 +87,7 @@
       "genre": "comedy",
       "datum": "2027-02-18",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.ccdiest.be/nl/event/pieter-verelst-2"
     },

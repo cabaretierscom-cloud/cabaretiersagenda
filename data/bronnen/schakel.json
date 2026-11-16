@@ -1,7 +1,7 @@
 {
   "bron": "schakel",
   "naam": "CC De Schakel",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "cc-de-schakel",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "cc-de-schakel",
-      "artiesten": [
-        "Tal en Thee"
-      ],
-      "titel": "Rapsodie",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-15",
-      "tijd": "14:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.ccdeschakel.be/voorstellingen/tal-en-thee-c8f7"
-    },
     {
       "theater": "cc-de-schakel",
       "artiesten": [
@@ -74,7 +61,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-21",
       "tijd": "14:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.ccdeschakel.be/voorstellingen/theatercompagnie-de-kroon-mdw9"
     },

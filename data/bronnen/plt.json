@@ -1,7 +1,7 @@
 {
   "bron": "plt",
   "naam": "PLT (Parkstad Limburg Theaters)",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "theater-heerlen",
@@ -667,32 +667,6 @@
       "bron": "https://www.plt.nl/programma/ronald-goedemondt-mijn-lieve-achterdocht-reprise/21-01-2027-20-00"
     },
     {
-      "theater": "theater-heerlen",
-      "artiesten": [
-        "Het Laagland"
-      ],
-      "titel": "OM en OM en OM (1,5+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-15",
-      "tijd": "11:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.plt.nl/programma/om-en-om-en-om-het-laagland/15-11-2026-11-00"
-    },
-    {
-      "theater": "theater-heerlen",
-      "artiesten": [
-        "Het Laagland"
-      ],
-      "titel": "OM en OM en OM (1,5+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-15",
-      "tijd": "12:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.plt.nl/programma/om-en-om-en-om-het-laagland/15-11-2026-12-00"
-    },
-    {
       "theater": "theater-sittard",
       "artiesten": [
         "Het Laagland (video-opnames)"
@@ -806,19 +780,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/knock-out-comedy-crew-/12-05-2027-20-30"
-    },
-    {
-      "theater": "theater-sittard",
-      "artiesten": [
-        "Studio Vavoom"
-      ],
-      "titel": "Milky Way (8+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-15",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.plt.nl/programma/milky-way-studio-vavoom/15-11-2026-15-00"
     },
     {
       "theater": "theater-kerkrade",

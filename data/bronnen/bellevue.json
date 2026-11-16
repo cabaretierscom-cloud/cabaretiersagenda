@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -13,32 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Thom Gerrits"
-      ],
-      "titel": "Alleen Vanavond",
-      "genre": "cabaret",
-      "datum": "2026-11-15",
-      "tijd": "15:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/alleen-vanavond-57dg"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Thom Gerrits"
-      ],
-      "titel": "Alleen Vanavond",
-      "genre": "cabaret",
-      "datum": "2026-11-22",
-      "tijd": "15:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/alleen-vanavond-57dg"
-    },
     {
       "theater": "theater-bellevue",
       "artiesten": [
@@ -167,6 +141,19 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/in-de-hemel-ken-ik-jullie-niet-lkjn"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [
+        "Thom Gerrits"
+      ],
+      "titel": "Alleen Vanavond",
+      "genre": "cabaret",
+      "datum": "2026-11-22",
+      "tijd": "15:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/alleen-vanavond-57dg"
     },
     {
       "theater": "theater-bellevue",

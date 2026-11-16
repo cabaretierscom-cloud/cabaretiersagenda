@@ -1,7 +1,7 @@
 {
   "bron": "minard",
   "naam": "Minardschouwburg",
-  "opgehaald": "2026-11-09",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "minardschouwburg-gent",
@@ -13,26 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": {
-        "id": "theater-scala-gent",
-        "naam": "Theater Scala",
-        "plaats": "gent",
-        "land": "NL",
-        "soort": "comedyclub",
-        "website": null
-      },
-      "artiesten": [
-        "STEFFIE DE BAERDEMAEKER"
-      ],
-      "titel": "IN MIJN HOOFD KLONK HET BETER",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://minard.be/voorstelling/steffie-de-baerdemaeker-in-mijn-hoofd-klonk-het-beter/"
-    },
     {
       "theater": {
         "id": "minard-gent",
@@ -316,6 +296,26 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://minard.be/voorstelling/brutaal-jong-lieve-cornelis-steve-de-schepper-walter-janssens-koning-van-hier/"
+    },
+    {
+      "theater": {
+        "id": "minard-gent",
+        "naam": "Minard",
+        "plaats": "Gent",
+        "land": "NL",
+        "soort": "comedyclub",
+        "website": null
+      },
+      "artiesten": [
+        "JULIA MASLI"
+      ],
+      "titel": "HA HA HA HA HA HA HA",
+      "genre": "stand-up",
+      "datum": "2027-03-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://minard.be/voorstelling/julia-masli-ha-ha-ha-ha-ha-ha-ha/"
     },
     {
       "theater": "minardschouwburg-gent",

@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,23 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Kartoffel",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": null
-      },
-      "artiesten": [],
-      "titel": "International Comedy Showcase",
-      "genre": "stand-up",
-      "datum": "2026-11-15",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/international-comedy-showcase-15-november-2026/"
-    },
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],

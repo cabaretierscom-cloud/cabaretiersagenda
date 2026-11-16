@@ -3,7 +3,7 @@
   "naam": "Agenda van Bunker Theaterzaken",
   "soort": "speellijst",
   "leidend": true,
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [],
   "speeldata": [
     {
@@ -1978,7 +1978,7 @@
       "genre": "cabaret",
       "datum": "2026-12-08",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://theaterdevest.nl/tickets/seizoen-26-27/patrick-laureij-kintsugi-reprise/?showId=4562899457-1765195226"
     },
@@ -1997,7 +1997,7 @@
       "genre": "cabaret",
       "datum": "2026-12-09",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://theaterdevest.nl/tickets/seizoen-26-27/patrick-laureij-kintsugi-reprise/?showId=4576590849-1765195301"
     },
@@ -6013,25 +6013,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Comedytrain",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.comedytrain.nl"
-      },
-      "artiesten": [
-        "Echt Gebeurd"
-      ],
-      "titel": "De nacht",
-      "genre": "cabaret",
-      "datum": "2026-11-15",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "30CC Schouwburg",
         "plaats": "Leuven",
         "land": "BE",
@@ -6158,7 +6139,7 @@
       "genre": "cabaret",
       "datum": "2027-01-05",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://ecicultuurfabriek.nl/voorstelling/micha-wertheim/"
     },
@@ -6215,7 +6196,7 @@
       "genre": "cabaret",
       "datum": "2027-01-13",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },
@@ -6234,7 +6215,7 @@
       "genre": "cabaret",
       "datum": "2027-01-14",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },
@@ -6500,7 +6481,7 @@
       "genre": "cabaret",
       "datum": "2027-02-11",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://theaterdevest.nl/tickets/seizoen-26-27/micha-wertheim-micha-wertheim-voor-iedereen-reprise/?showId=4551634433-1765195137"
     },

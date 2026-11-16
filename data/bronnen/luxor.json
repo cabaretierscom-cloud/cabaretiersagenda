@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -420,7 +420,7 @@
       "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/pieter-derks-57549/"
     },
@@ -446,7 +446,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/pieter-derks-57549/"
     },
@@ -550,7 +550,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-29",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/guido-weijers-51204/"
     },
@@ -1164,19 +1164,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-60120/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Ronald Goedemondt"
-      ],
-      "titel": "Mijn lieve achterdocht",
-      "genre": "cabaret",
-      "datum": "2026-11-15",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
     },
     {
       "theater": "nieuwe-luxor",

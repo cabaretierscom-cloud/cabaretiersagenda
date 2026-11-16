@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -13,6 +13,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Rogier Bak"
+      ],
+      "titel": "Rogier Bak",
+      "genre": "stand-up",
+      "datum": "2027-01-30",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/rogier-bak-111721871"
+    },
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [
@@ -47,19 +60,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/english-open-mic-111714056"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Trevor Wallace"
-      ],
-      "titel": "Trevor Wallace",
-      "genre": "stand-up",
-      "datum": "2026-11-15",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/trevor-wallace-111717152"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -727,17 +727,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
-      "titel": "Sourmouth",
-      "genre": "stand-up",
-      "datum": "2026-11-15",
-      "tijd": "18:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/sourmouth-111709953"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
       "titel": "Best of Stand-Up",
       "genre": "stand-up",
       "datum": "2026-12-03",
@@ -1109,20 +1098,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/thomas-green-111692189"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Eric van Sauers",
-        "Sezgin Güleç"
-      ],
-      "titel": "Eric van Sauers & Sezgin Güleç",
-      "genre": "stand-up",
-      "datum": "2026-11-15",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/eric-van-sauers-sezgin-gulec-111693651"
     },
     {
       "theater": "comedy-club-haug-rotterdam",

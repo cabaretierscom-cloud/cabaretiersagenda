@@ -1,7 +1,7 @@
 {
   "bron": "parktheater",
   "naam": "Parktheater Eindhoven",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "parktheater-eindhoven",
@@ -13,58 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Hippe Gasten"
-      ],
-      "titel": "Fan van Sinterklaas",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-15",
-      "tijd": "14:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/fan-van-sinterklaas-dhqw"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Arno Huibers"
-      ],
-      "titel": "Clowns Kado",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-15",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/clowns-kado-619v"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Arno Huibers"
-      ],
-      "titel": "Clowns Kado",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-27",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/clowns-kado-619v"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Arno Huibers"
-      ],
-      "titel": "Clowns Kado",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-01-03",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/clowns-kado-619v"
-    },
     {
       "theater": "parktheater-eindhoven",
       "artiesten": [
@@ -191,7 +139,7 @@
       "genre": "comedy",
       "datum": "2027-04-23",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
     },
@@ -321,7 +269,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-29",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/kakek-opa-ik-j53l"
     },
@@ -840,6 +788,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/kerstwintercircus-2026-mj8q"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "Arno Huibers"
+      ],
+      "titel": "Clowns Kado",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-27",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/clowns-kado-619v"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "Arno Huibers"
+      ],
+      "titel": "Clowns Kado",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/clowns-kado-619v"
     },
     {
       "theater": "parktheater-eindhoven",
@@ -2931,6 +2905,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/dinsdagmiddag-dg4r"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "Party Piet Pablo, Love Piet, Ron Boszhard e.v.a."
+      ],
+      "titel": "De Mega Sintshow 2027",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-12-05",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/de-mega-sintshow-2027-lfns"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "Party Piet Pablo, Love Piet, Ron Boszhard e.v.a."
+      ],
+      "titel": "De Mega Sintshow 2027",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-12-05",
+      "tijd": "13:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/de-mega-sintshow-2027-lfns"
     }
   ],
   "recensies": {}

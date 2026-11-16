@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-11-15",
+  "opgehaald": "2026-11-16",
   "theaters": [
     {
       "id": "zaantheater",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Alle kinderen stinken (6+)"
-      ],
-      "titel": "Patrick Duijtshoff en Judith van den Berg",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-15",
-      "tijd": "14:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/alle-kinderen-stinken-6/"
-    },
     {
       "theater": "zaantheater",
       "artiesten": [],
@@ -101,6 +88,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/blauwe-vinkjes/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Bob Koomen"
+      ],
+      "titel": "Peer",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/bob-koomen/"
     },
     {
       "theater": "zaantheater",
