@@ -1,12 +1,12 @@
 {
-  "datum": "2026-11-16",
+  "datum": "2026-11-17",
   "totaal": {
-    "speeldata": 9324,
-    "komend": 8326,
-    "artiesten": 967,
+    "speeldata": 9323,
+    "komend": 8319,
+    "artiesten": 966,
     "zalen": 715,
     "plaatsen": 496,
-    "voorstellingen": 1427
+    "voorstellingen": 1426
   },
   "bronnen": [
     {
@@ -613,65 +613,15 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-16",
-      "speeldata": 2240,
+      "speeldata": 2239,
       "vorige": 2240,
-      "dubbel": 1354
+      "dubbel": 1355
     }
   ],
   "nieuw": {
-    "artiesten": [
-      {
-        "id": "julia-masli",
-        "naam": "Julia Masli"
-      },
-      {
-        "id": "eva-eikhout",
-        "naam": "Eva Eikhout"
-      },
-      {
-        "id": "gery-la-boule",
-        "naam": "Géry La Boule"
-      }
-    ],
-    "zalen": [
-      {
-        "id": "special-event-ruud-smulders-26-27-bedrijf",
-        "naam": "Special event Ruud Smulders (26/27)",
-        "plaats": "Bedrijf",
-        "land": "NL",
-        "website": null
-      },
-      {
-        "id": "vorstin-hilversum",
-        "naam": "Vorstin",
-        "plaats": "Hilversum",
-        "land": "NL",
-        "website": null
-      }
-    ],
-    "voorstellingen": [
-      {
-        "id": "julia-masli-ha-ha-ha-ha-ha-ha-ha",
-        "titel": "Ha ha ha ha ha ha ha",
-        "artiesten": [
-          "julia-masli"
-        ]
-      },
-      {
-        "id": "eva-eikhout-het-leven-is-kort-net-als-ik",
-        "titel": "Het leven is kort, net als ik",
-        "artiesten": [
-          "eva-eikhout"
-        ]
-      },
-      {
-        "id": "gery-la-boule-ni-zievere-speile",
-        "titel": "Ni zievere, speile",
-        "artiesten": [
-          "gery-la-boule"
-        ]
-      }
-    ]
+    "artiesten": [],
+    "zalen": [],
+    "voorstellingen": []
   },
   "controleren": 0,
   "geschiedenis": [
@@ -881,6 +831,15 @@
       "zalen": 715,
       "plaatsen": 496,
       "voorstellingen": 1427
+    },
+    {
+      "datum": "2026-11-17",
+      "speeldata": 9323,
+      "komend": 8319,
+      "artiesten": 966,
+      "zalen": 715,
+      "plaatsen": 496,
+      "voorstellingen": 1426
     }
   ]
 }
