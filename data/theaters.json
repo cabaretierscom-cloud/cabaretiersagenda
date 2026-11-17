@@ -72,6 +72,14 @@
     "website": "https://www.arenberg.be"
   },
   {
+    "id": "fakkelteater-rode-zaal-antwerpen",
+    "naam": "Fakkelteater (Rode Zaal)",
+    "plaats": "Antwerpen",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "fakkeltheater-antwerpen",
     "naam": "Fakkeltheater",
     "plaats": "Antwerpen",
@@ -525,7 +533,7 @@
     "plaats": "Buggenhout",
     "land": "BE",
     "soort": "theater",
-    "website": null
+    "website": "https://www.buggenhout.be"
   },
   {
     "id": "aan-zee-de-panne",
@@ -986,7 +994,7 @@
     "plaats": "Herent",
     "land": "BE",
     "soort": "theater",
-    "website": null
+    "website": "https://www.gcdewildeman.be"
   },
   {
     "id": "cc-t-schaliken-herentals",
@@ -1637,6 +1645,14 @@
     "website": "https://shop.ticket.monster"
   },
   {
+    "id": "de-parochiezaal-oelegem",
+    "naam": "De Parochiezaal",
+    "plaats": "Oelegem",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "de-grote-post-oostende",
     "naam": "De Grote Post",
     "plaats": "Oostende",
@@ -1781,6 +1797,14 @@
     "website": null
   },
   {
+    "id": "ghybe-poperinge",
+    "naam": "Ghybe",
+    "plaats": "Poperinge",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.poperinge.be"
+  },
+  {
     "id": "cc-binder-puurs",
     "naam": "CC Binder",
     "plaats": "Puurs",
@@ -1795,6 +1819,14 @@
     "land": "BE",
     "soort": "theater",
     "website": "https://www.uitinpuurssintamands.be"
+  },
+  {
+    "id": "gc-de-wouwer-ravels",
+    "naam": "GC De Wouwer",
+    "plaats": "Ravels",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.uitinravels.be"
   },
   {
     "id": "studio-t-stalleke-reet",
@@ -1875,6 +1907,14 @@
     "land": "BE",
     "soort": "theater",
     "website": null
+  },
+  {
+    "id": "gc-de-mena-rotselaar",
+    "naam": "GC de Mena",
+    "plaats": "Rotselaar",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.i-active.be"
   },
   {
     "id": "ocar-rumbeke",
@@ -1979,6 +2019,22 @@
     "land": "BE",
     "soort": "theater",
     "website": "https://www.debogaard.be"
+  },
+  {
+    "id": "cc-de-boogaard-sint-truiden",
+    "naam": "CC De Boogaard",
+    "plaats": "Sint-Truiden",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "spiegeltent-stabroek",
+    "naam": "Spiegeltent",
+    "plaats": "Stabroek",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.stabroek.be"
   },
   {
     "id": "cultuurhuis-stekene",
@@ -2515,6 +2571,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.hof88.nl"
+  },
+  {
+    "id": "theaterhotel-almelo",
+    "naam": "Theaterhotel Almelo",
+    "plaats": "Almelo",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://theaterhotel.ntk.nl"
   },
   {
     "id": "kunstlinie",
@@ -3058,7 +3122,7 @@
     "plaats": "Bathmen",
     "land": "NL",
     "soort": "theater",
-    "website": null
+    "website": "https://www.cultuurhuisbraakhekke.nl"
   },
   {
     "id": "special-event-ruud-smulders-26-27-bedrijf",
@@ -3827,6 +3891,14 @@
     "land": "NL",
     "soort": "cultuurcentrum",
     "website": "https://cultura-ede.nl"
+  },
+  {
+    "id": "de-reehorst-ede",
+    "naam": "De ReeHorst",
+    "plaats": "Ede",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.truetickets.nl"
   },
   {
     "id": "theater-t-spieker-eibergen",
@@ -4827,6 +4899,14 @@
     }
   },
   {
+    "id": "tripodia-katwijk",
+    "naam": "TriPodia",
+    "plaats": "Katwijk",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.truetickets.nl"
+  },
+  {
     "id": "theater-kerkrade",
     "naam": "Theater Kerkrade",
     "plaats": "Kerkrade",
@@ -5355,6 +5435,14 @@
     "website": "https://www.nesterle.nl"
   },
   {
+    "id": "de-mare-noord-deurningen",
+    "naam": "De Mare",
+    "plaats": "Noord-Deurningen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.demare-nd.nl"
+  },
+  {
     "id": "theater-de-muze-noordwijk",
     "naam": "Theater De Muze",
     "plaats": "Noordwijk",
@@ -5672,7 +5760,7 @@
     "plaats": "Rilland",
     "land": "NL",
     "soort": "theater",
-    "website": null
+    "website": "https://www.ntk.nl"
   },
   {
     "id": "podium-reimerswaal-rilland",
@@ -5746,6 +5834,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.theaterroermond.nl"
+  },
+  {
+    "id": "boerderij-kamps-rolde",
+    "naam": "Boerderij Kamps",
+    "plaats": "Rolde",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://boerderijkamps.nl"
   },
   {
     "id": "ekp-gebouw-roosendaal",

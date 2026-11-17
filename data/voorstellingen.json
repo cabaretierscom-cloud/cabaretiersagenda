@@ -6468,11 +6468,12 @@
     "genre": "kindervoorstellingen"
   },
   {
-    "id": "leon-s-comedy-club-maaspoort",
-    "titel": "Leon's Comedy Club",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "maaspoort"
+    "id": "leon-s-comedy-club",
+    "titel": "",
+    "artiesten": [
+      "leon-s-comedy-club"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "leon-s-comedy-club-nationaal-theaterweekend",
