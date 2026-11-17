@@ -691,10 +691,13 @@
     "geslachtBron": "https://www.wikidata.org/wiki/Q135488837"
   },
   {
-    "id": "boban-benjamin-braspenning",
-    "naam": "Boban Benjamin Braspenning",
+    "id": "boban-braspenning",
+    "naam": "Boban Braspenning",
     "land": null,
-    "kleur": "rood",
+    "kleur": "aqua",
+    "ookBekendAls": [
+      "Boban Benjamin Braspenning"
+    ],
     "foto": {
       "bestand": "/fotos/boban-benjamin-braspenning.jpg",
       "maker": "NPO Start",
@@ -713,12 +716,6 @@
     },
     "geslacht": "man",
     "geslachtBron": "https://www.wikidata.org/wiki/Q130532625"
-  },
-  {
-    "id": "boban-braspenning",
-    "naam": "Boban Braspenning",
-    "land": null,
-    "kleur": "aqua"
   },
   {
     "id": "bodemvriend",
