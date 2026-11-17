@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-17",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -498,7 +498,7 @@
       "genre": "cabaret",
       "datum": "2027-01-15",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://luxortheater.nl/agenda/daan-van-der-hoeven-58104/"
     },
@@ -1226,7 +1226,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-19",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/claudia-de-breij-56039/"
     },

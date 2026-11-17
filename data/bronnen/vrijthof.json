@@ -1,7 +1,7 @@
 {
   "bron": "vrijthof",
   "naam": "Theater aan het Vrijthof",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-17",
   "theaters": [
     {
       "id": "theater-aan-het-vrijthof",
@@ -21,6 +21,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000,-",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/472-000-oscar-smit"
+    },
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
@@ -111,19 +124,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/als-ik-jou-was-david-van-rosmalen"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Oscar Smit"
-      ],
-      "titel": "€ 472.000,-",
-      "genre": "cabaret",
-      "datum": "2027-01-14",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/472-000-oscar-smit"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -514,32 +514,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/en-verbied-de-vogels-om-te-fluiten-ayoub"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Veldeke Theater"
-      ],
-      "titel": "Aajdjaorscabberèt: Eve oonder us",
-      "genre": "cabaret",
-      "datum": "2026-12-29",
-      "tijd": "14:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/aajdjaorscabberet-eve-oonder-us-veldeke-theater"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Veldeke Theater"
-      ],
-      "titel": "Aajdjaorscabberèt: Eve oonder us",
-      "genre": "cabaret",
-      "datum": "2026-12-30",
-      "tijd": "14:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/aajdjaorscabberet-eve-oonder-us-veldeke-theater"
     }
   ],
   "recensies": {

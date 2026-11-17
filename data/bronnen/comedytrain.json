@@ -1,7 +1,7 @@
 {
   "bron": "comedytrain",
   "naam": "Comedytrain",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-17",
   "theaters": [
     {
       "id": "comedytrain",
@@ -13,6 +13,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedytrain",
+      "artiesten": [
+        "Ivo Graham"
+      ],
+      "titel": "Ivo Graham",
+      "genre": "stand-up",
+      "datum": "2027-04-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-presents-ivo-graham-2027-04-25/"
+    },
     {
       "theater": "comedytrain",
       "artiesten": [],
@@ -837,19 +850,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-19/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [
-        "Ivo Graham"
-      ],
-      "titel": "Ivo Graham",
-      "genre": "stand-up",
-      "datum": "2027-04-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-presents-ivo-graham-2027-04-25/"
     },
     {
       "theater": "comedytrain",

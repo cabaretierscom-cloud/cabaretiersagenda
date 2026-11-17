@@ -1,7 +1,7 @@
 {
   "bron": "lampegiet",
   "naam": "Theater Lampegiet",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-17",
   "theaters": [
     {
       "id": "theater-lampegiet",
@@ -240,6 +240,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.lampegiet.nl/agenda/de-proefkeuken-en-de-wc-van-tijd-8-n78w"
+    },
+    {
+      "theater": "theater-lampegiet",
+      "artiesten": [
+        "Maartje & Kine"
+      ],
+      "titel": "De Bingo Show",
+      "genre": "cabaret",
+      "datum": "2027-01-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lampegiet.nl/agenda/de-bingo-show-n78v"
     },
     {
       "theater": "theater-lampegiet",

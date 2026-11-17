@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-17",
   "theaters": [
     {
       "id": "zaantheater",
@@ -816,45 +816,6 @@
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Pieter Jouke"
-      ],
-      "titel": "Uit stilstand",
-      "genre": "cabaret",
-      "datum": "2027-04-03",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pieter-jouke/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Pim & Pom (2+)"
-      ],
-      "titel": "Op naar pakjesavond",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "11:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pim-pom-2/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Pim & Pom (2+)"
-      ],
-      "titel": "Op naar pakjesavond",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "13:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pim-pom-2/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
         "Pippi en de piraten (6+)"
       ],
       "titel": "Theater Terra",
@@ -1098,6 +1059,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/wina-ricardo/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "NTW: Meneer Monster"
+      ],
+      "titel": "De waanzinnige boomhut van 78 verdiepingen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ntw-meneer-monster/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "NTW: Meneer Monster"
+      ],
+      "titel": "De waanzinnige boomhut van 78 verdiepingen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ntw-meneer-monster/"
     }
   ],
   "recensies": {
@@ -1186,18 +1173,6 @@
         "medium": "Het Parool",
         "sterren": null,
         "citaat": "Zoals altijd bij Wertheim loont het de moeite om bij de les te blijven, want er komen prachtige ideeën voorbij."
-      }
-    ],
-    "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pieter-jouke/": [
-      {
-        "medium": "NRC",
-        "sterren": null,
-        "citaat": "...Jouke is uitgegroeid tot een alternatief voor Herman Finkers en Kees Torn, taalkunstenaars die momenteel niet op de podia te vinden zijn.’ ‘...zijn associaties zijn geestig en vindingrijk..."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Een indrukwekkend – inderdaad, ernstig – maar zeer geestig programma."
       }
     ],
     "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rene-van-meurs/": [

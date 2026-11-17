@@ -3,7 +3,7 @@
   "naam": "Agenda van Bunker Theaterzaken",
   "soort": "speellijst",
   "leidend": true,
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-17",
   "theaters": [],
   "speeldata": [
     {
@@ -4448,7 +4448,7 @@
       "genre": "cabaret",
       "datum": "2027-04-21",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/merijn-scholten/"
     },
@@ -5189,7 +5189,7 @@
       "genre": "cabaret",
       "datum": "2026-12-12",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://denieuwekolk.nl/theater/agenda/david-linszen"
     },
@@ -5322,7 +5322,7 @@
       "genre": "cabaret",
       "datum": "2027-01-15",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.diligentia-pepijn.nl/agenda/david-linszen-7h1y"
     },
@@ -9388,7 +9388,7 @@
       "genre": "cabaret",
       "datum": "2027-03-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://theaterludens.nl/voorstellingen/sezgin-gulec-nw-programma-try-out/"
     },
@@ -9958,7 +9958,7 @@
       "genre": "cabaret",
       "datum": "2026-12-11",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.schouwburghengelo.nl/satan-is-moe-lebbis/11-12-2026-20-00"
     },
@@ -10151,6 +10151,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/lebbis-2/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Beun",
+        "plaats": "Heiloo",
+        "land": "NL",
+        "website": "https://debeunheiloo.nl"
+      },
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://debeunheiloo.nl/lebbis-satan-is-moe-2/"
     },
     {
       "theater": {
@@ -12314,7 +12333,7 @@
       "genre": "cabaret",
       "datum": "2027-04-02",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.amphion.nl/theater/andre-manuel-de-eenzame-ziel/02-04-2027-20-30/"
     },
@@ -13269,23 +13288,6 @@
         "over": "Kasper van der Laan"
       }
     ],
-    "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/lemming-merijn-scholten": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 5,
-        "citaat": "De virtuoze komiek Merijn Scholten speelt in Lemming op de toppen van zijn kunnen."
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Een flitsende voorstelling, vol leuk en expressief acteerwerk."
-      },
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Cabaret met inhoud, dat scherp reflecteert op de wereld van nu, en weet daarbij steeds de juiste vorm te vinden; het woord, beeld of personage waarin veel besloten ligt."
-      }
-    ],
     "https://theaterdestoep.nl/voorstelling/merijn-scholten-2627": [
       {
         "medium": "de Volkskrant",
@@ -13313,23 +13315,6 @@
         "medium": "de Volkskrant",
         "sterren": 5,
         "citaat": "De virtuoze komiek Merijn Scholten speelt in ‘Lemming’ op de toppen van zijn kunnen."
-      }
-    ],
-    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/striptease-van-de-dood-david-linszen": [
-      {
-        "medium": "Trouw",
-        "sterren": 5,
-        "citaat": "Hoge verwachtingen, die hij met zijn show triomfantelijk inlost. (...) Indrukwekkend, hoe zelfverzekerd Linszen in zijn avondvullende debuut komisch absurdisme weet te koppelen aan zijn realiteit."
-      },
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Puntje-van-je-stoelcomedy met een zeldzame eigenheid: David Linszens debuut is echt heel goed. (…) Eens in de zoveel tijd meldt zich een comedytalent dat overrompelt met zeldzame eigenheid; het vermogen om als een eenzame gek met eenzamegekkengedachten de slappe lach in verdeelde golfjes door het publiek te laten rollen, en om 100 minuten lang nieuwsgierigheid te voeden naar het volgende fundamentele verzinsel."
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut. In zijn cabaretdebuut schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal."
       }
     ]
   }

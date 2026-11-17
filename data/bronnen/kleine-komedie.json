@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-17",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -20,22 +20,9 @@
       ],
       "titel": "Keanu",
       "genre": "cabaret",
-      "datum": "2026-11-16",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/henry-van-loon-c28y"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Henry van Loon"
-      ],
-      "titel": "Keanu",
-      "genre": "cabaret",
       "datum": "2026-11-17",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/henry-van-loon-c28y"
     },
@@ -48,7 +35,7 @@
       "genre": "cabaret",
       "datum": "2026-11-18",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/henry-van-loon-c28y"
     },
@@ -61,7 +48,7 @@
       "genre": "cabaret",
       "datum": "2026-11-19",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/henry-van-loon-c28y"
     },
@@ -87,7 +74,7 @@
       "genre": "cabaret",
       "datum": "2026-11-21",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/henry-van-loon-c28y"
     },
@@ -165,7 +152,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },
@@ -1024,498 +1011,6 @@
       "status": "gepland",
       "soort": "première",
       "bron": "https://www.dekleinekomedie.nl/agenda/luuk-weggemans-nr1w"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Janne Schra & De Vogels"
-      ],
-      "titel": "Kleuren moeten ook slapen (6+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-02-22",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/janne-schra-de-vogels-ryj9"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Wim Helsen"
-      ],
-      "titel": "Welkom ongemak",
-      "genre": "cabaret",
-      "datum": "2027-02-23",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/wim-helsen-zvks"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Wim Helsen"
-      ],
-      "titel": "Welkom ongemak",
-      "genre": "cabaret",
-      "datum": "2027-02-24",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/wim-helsen-zvks"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Wim Helsen"
-      ],
-      "titel": "Welkom ongemak",
-      "genre": "cabaret",
-      "datum": "2027-02-25",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/wim-helsen-zvks"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Wim Helsen"
-      ],
-      "titel": "Welkom ongemak",
-      "genre": "cabaret",
-      "datum": "2027-02-26",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/wim-helsen-zvks"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Wim Helsen"
-      ],
-      "titel": "Welkom ongemak",
-      "genre": "cabaret",
-      "datum": "2027-02-27",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/wim-helsen-zvks"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Kim Schuddeboom"
-      ],
-      "titel": "Hardleers",
-      "genre": "cabaret",
-      "datum": "2027-03-04",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/kim-schuddeboom-q87d"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Kim Schuddeboom"
-      ],
-      "titel": "Hardleers",
-      "genre": "cabaret",
-      "datum": "2027-03-05",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/kim-schuddeboom-q87d"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Kim Schuddeboom"
-      ],
-      "titel": "Hardleers",
-      "genre": "cabaret",
-      "datum": "2027-03-06",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/kim-schuddeboom-q87d"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Aluin"
-      ],
-      "titel": "Moeder Aarde",
-      "genre": "komedie",
-      "datum": "2027-03-09",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/aluin-q87n"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "kleinkunst",
-      "datum": "2027-03-10",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/valentina-toth-9ctd"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "kleinkunst",
-      "datum": "2027-03-11",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/valentina-toth-9ctd"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "kleinkunst",
-      "datum": "2027-03-12",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/valentina-toth-9ctd"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "kleinkunst",
-      "datum": "2027-03-13",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/valentina-toth-9ctd"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "kleinkunst",
-      "datum": "2027-06-09",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/valentina-toth-9ctd"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "kleinkunst",
-      "datum": "2027-06-10",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/valentina-toth-9ctd"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "kleinkunst",
-      "datum": "2027-06-11",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/valentina-toth-9ctd"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Nathalie Baartman"
-      ],
-      "titel": "De Bössels van Baartman II",
-      "genre": "cabaret",
-      "datum": "2027-03-14",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/nathalie-baartman-hkwh"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Janneke de Bijl"
-      ],
-      "titel": "Pluk eventueel de dag",
-      "genre": "cabaret",
-      "datum": "2027-03-15",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/janneke-de-bijl-4mmp"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Janneke de Bijl"
-      ],
-      "titel": "Pluk eventueel de dag",
-      "genre": "cabaret",
-      "datum": "2027-03-16",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/janneke-de-bijl-4mmp"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Gavin Reijnders"
-      ],
-      "titel": "Jazzebelle",
-      "genre": "cabaret",
-      "datum": "2027-03-17",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/gavin-reijnders-f77c"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Marie Koet"
-      ],
-      "titel": "Eindspel",
-      "genre": "cabaret",
-      "datum": "2027-03-18",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/marie-koet-6ff5"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Marie Koet"
-      ],
-      "titel": "Eindspel",
-      "genre": "cabaret",
-      "datum": "2027-03-19",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/marie-koet-6ff5"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Marie Koet"
-      ],
-      "titel": "Eindspel",
-      "genre": "cabaret",
-      "datum": "2027-03-20",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/marie-koet-6ff5"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "De Theatertroep"
-      ],
-      "titel": "Vier Crematies en een Scheiding",
-      "genre": "komedie",
-      "datum": "2027-03-25",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/de-theatertroep-bqqc"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Louise Korthals"
-      ],
-      "titel": "In stukken",
-      "genre": "cabaret",
-      "datum": "2027-03-26",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/louise-korthals-tssy"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Louise Korthals"
-      ],
-      "titel": "In stukken",
-      "genre": "cabaret",
-      "datum": "2027-03-27",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/louise-korthals-tssy"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [],
-      "titel": "Patrick Spicer",
-      "genre": "stand-up",
-      "datum": "2027-03-28",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/patrick-spicer-8gz4"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Amsterdams Kleinkunst Festival"
-      ],
-      "titel": "Halve Finale",
-      "genre": "kleinkunst",
-      "datum": "2027-04-01",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/amsterdams-kleinkunst-festival-tssg"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Amsterdams Kleinkunst Festival"
-      ],
-      "titel": "Halve Finale",
-      "genre": "kleinkunst",
-      "datum": "2027-04-02",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/amsterdams-kleinkunst-festival-tssg"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Amsterdams Kleinkunst Festival"
-      ],
-      "titel": "Finale",
-      "genre": "kleinkunst",
-      "datum": "2027-04-03",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/amsterdams-kleinkunst-festival-m551"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Viggo Waas, Eddie B. Wahr & Kees van der Vooren"
-      ],
-      "titel": "Eigenlijk",
-      "genre": "cabaret",
-      "datum": "2027-04-04",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/viggo-waas-eddie-b-wahr-kees-van-der-vooren-j44x"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Annie M.G. Schmidtprijs"
-      ],
-      "titel": "Uitreiking",
-      "genre": "kleinkunst",
-      "datum": "2027-04-11",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/annie-m-g-schmidtprijs-xnn2"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Thomas van Luyn"
-      ],
-      "titel": "Super Normaal",
-      "genre": "cabaret",
-      "datum": "2027-04-20",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/thomas-van-luyn-shhb"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Thomas van Luyn"
-      ],
-      "titel": "Super Normaal",
-      "genre": "cabaret",
-      "datum": "2027-04-21",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/thomas-van-luyn-shhb"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Thomas van Luyn"
-      ],
-      "titel": "Super Normaal",
-      "genre": "cabaret",
-      "datum": "2027-04-22",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/thomas-van-luyn-shhb"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Thomas van Luyn"
-      ],
-      "titel": "Super Normaal",
-      "genre": "cabaret",
-      "datum": "2027-04-23",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/thomas-van-luyn-shhb"
-    },
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Thomas van Luyn"
-      ],
-      "titel": "Super Normaal",
-      "genre": "cabaret",
-      "datum": "2027-04-24",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://www.dekleinekomedie.nl/agenda/thomas-van-luyn-shhb"
     },
     {
       "theater": "kleine-komedie",

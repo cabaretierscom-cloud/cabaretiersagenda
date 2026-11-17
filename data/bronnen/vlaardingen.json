@@ -1,7 +1,7 @@
 {
   "bron": "vlaardingen",
   "naam": "Stadsgehoorzaal Vlaardingen",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-17",
   "theaters": [
     {
       "id": "stadsgehoorzaal-vlaardingen",
@@ -81,19 +81,6 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Krulmuziek"
-      ],
-      "titel": "Babykerstconcert (0+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-19",
-      "tijd": "10:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/babykerstconcert"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
         "Jeroens Clan"
       ],
       "titel": "Juk",
@@ -103,6 +90,58 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/jeroens-clan"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Sinterklaasshow Hippe Gasten (4+)"
+      ],
+      "titel": "Fan van Sinterklaas",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/hippe-gasten"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Theater Stof"
+      ],
+      "titel": "Het Kleurenmonster (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/het-kleurenmonster"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Theater Stof"
+      ],
+      "titel": "Het Kleurenmonster (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/het-kleurenmonster"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Krulmuziek"
+      ],
+      "titel": "Babykerstconcert (0+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "10:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/babykerstconcert"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -155,45 +194,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/de-nog-grotere-slijmmusical"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Theater Stof"
-      ],
-      "titel": "Het Kleurenmonster (3+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-04-11",
-      "tijd": "11:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/het-kleurenmonster"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Theater Stof"
-      ],
-      "titel": "Het Kleurenmonster (3+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-04-11",
-      "tijd": "13:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/het-kleurenmonster"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Sinterklaasshow Hippe Gasten (4+)"
-      ],
-      "titel": "Fan van Sinterklaas",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-21",
-      "tijd": "11:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/hippe-gasten"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",

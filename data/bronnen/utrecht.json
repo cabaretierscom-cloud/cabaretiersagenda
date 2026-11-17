@@ -1,7 +1,7 @@
 {
   "bron": "utrecht",
   "naam": "Stadsschouwburg Utrecht",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-17",
   "theaters": [
     {
       "id": "stadsschouwburg-utrecht",
@@ -232,7 +232,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/aan-mij-zal-het-niet-liggen-marjolijn-van-kooten",
       "datum": "2026-11-25",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -268,7 +268,7 @@
       "titel": "Vrouwejaars 2026",
       "genre": "cabaret",
       "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/vrouwejaars-2026-yora-rienstra-vera-marijt-ea",
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/vrouwejaars-2026-yora-rienstra-ea",
       "datum": "2026-12-07",
       "tijd": "20:00",
       "status": "gepland"
@@ -284,7 +284,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/zeg-maar-u-de-broers-van-arkel",
       "datum": "2026-12-19",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1168,7 +1168,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-orde-van-de-dag-15-het-nut",
       "datum": "2026-12-14",
       "tijd": "20:30",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1350,7 +1350,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-hete-brij-live-alex-ploeg-pepijn-schoneveld-en-christine-de-boer",
       "datum": "2026-12-15",
       "tijd": "20:00",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1376,6 +1376,19 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-interventie-de-grote-zomerfin-emmy-krooshof-nick-van-keulen-en-erik-boddeus",
       "datum": "2027-07-10",
       "tijd": "20:30",
+      "status": "gepland"
+    },
+    {
+      "theater": "stadsschouwburg-utrecht",
+      "artiesten": [
+        "Nabil"
+      ],
+      "titel": "Daar is hij weer",
+      "genre": "cabaret",
+      "soort": null,
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/daar-is-hij-weer-nabil",
+      "datum": "2027-01-29",
+      "tijd": "20:00",
       "status": "gepland"
     },
     {

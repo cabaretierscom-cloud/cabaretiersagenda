@@ -1,7 +1,7 @@
 {
   "bron": "hetpark",
   "naam": "Schouwburg Het Park",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-17",
   "theaters": [
     {
       "id": "schouwburg-het-park",
@@ -28,22 +28,9 @@
       ],
       "titel": "Alles is Comedy",
       "genre": "cabaret",
-      "datum": "2026-11-16",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://hetpark.nl/agenda/amhali-verveer-10349291/"
-    },
-    {
-      "theater": "schouwburg-het-park",
-      "artiesten": [
-        "Amhali & Verveer"
-      ],
-      "titel": "Alles is Comedy",
-      "genre": "cabaret",
       "datum": "2026-11-17",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/amhali-verveer-10349292/"
     },
@@ -56,7 +43,7 @@
       "genre": "cabaret",
       "datum": "2026-11-19",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://hetpark.nl/agenda/yentl-en-de-boer-rekhalzen-reprise-10353113/"
     },
@@ -217,7 +204,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-12-13",
       "tijd": "10:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/klassiek-voor-kleintjes-babyconcert-6-maanden-10359478/"
     },

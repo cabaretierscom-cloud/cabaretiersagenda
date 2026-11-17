@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-17",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -55,19 +55,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Cameretten"
-      ],
-      "titel": "Cameretten",
-      "genre": "cabaret",
-      "datum": "2027-05-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/cameretten/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Steven Brunswijk"
       ],
       "titel": "Steven Brunswijk",
@@ -90,6 +77,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/de-musical-zonder-billen-4/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Cameretten",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/cameretten/"
     },
     {
       "theater": "kunstlinie",
@@ -224,19 +224,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Bro’s"
-      ],
-      "titel": "Bro’s",
-      "genre": "cabaret",
-      "datum": "2026-12-19",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/bros/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Joep van Deudekom & Rob Urgert"
       ],
       "titel": "Joep van Deudekom & Rob Urgert",
@@ -259,6 +246,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/de-grote-almeerse-kerst-sing-a-long/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Bro’s"
+      ],
+      "titel": "Bro’s",
+      "genre": "cabaret",
+      "datum": "2026-12-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/bros/"
     },
     {
       "theater": "kunstlinie",
@@ -298,45 +298,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/yeti-4/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Blind Date"
-      ],
-      "titel": "Blind Date",
-      "genre": "cabaret",
-      "datum": "2027-01-29",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/blind-date-14/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Blind Date (4+)"
-      ],
-      "titel": "Blind Date (4+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-01-30",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/blind-date-4-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Blind Date"
-      ],
-      "titel": "Blind Date",
-      "genre": "cabaret",
-      "datum": "2027-01-30",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/blind-date-17/"
     },
     {
       "theater": "kunstlinie",
@@ -532,19 +493,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/de-koka-kola-rivier-9/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Blind Date"
-      ],
-      "titel": "Blind Date",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-01-31",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/blind-date-16/"
     },
     {
       "theater": "kunstlinie",
@@ -887,6 +835,19 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "Blijf op de hoogte"
+      ],
+      "titel": "Blijf op de hoogte",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "19:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/skengbattles-x-6/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "Comedy Club Almere"
       ],
       "titel": "Comedy Club Almere",
@@ -909,19 +870,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/brrrothers-6/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "WEG ERMEE (5 t/m 12 jaar)"
-      ],
-      "titel": "WEG ERMEE (5 t/m 12 jaar)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-05-30",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/weg-ermee-5-t-m-12-jaar/"
     },
     {
       "theater": "kunstlinie",
@@ -974,6 +922,84 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/samar-en-de-bange-koning-8/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Aai Poesje, Aai Poesje"
+      ],
+      "titel": "Aai Poesje, Aai Poesje",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/blind-date-14/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Zeg Maar Dag (4+)"
+      ],
+      "titel": "Zeg maar dag (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/blind-date-4-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Cabarestafette presenteert: NIEUW GELUID!"
+      ],
+      "titel": "Cabarestafette presenteert: NIEUW GELUID!",
+      "genre": "cabaret",
+      "datum": "2027-01-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/blind-date-17/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Theater Terra – Pippi en de Piraten (6+)"
+      ],
+      "titel": "Theater Terra – Pippi en de Piraten (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/blind-date-16/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Broko Kiek"
+      ],
+      "titel": "Broko Kiek",
+      "genre": "cabaret",
+      "datum": "2026-12-20",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/broko-kiek-5/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "WEG ERMEE (5 t/m 12 jaar)"
+      ],
+      "titel": "WEG ERMEE (5 t/m 12 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-30",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/weg-ermee-5-t-m-12-jaar/"
     }
   ],
   "recensies": {

@@ -1,7 +1,7 @@
 {
   "bron": "maaspoort",
   "naam": "Maaspoort",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-17",
   "theaters": [
     {
       "id": "maaspoort",
@@ -38,6 +38,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.maaspoort.nl/programma/de-kwaadste-niet-jochen-otten/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "André het Astronautje"
+      ],
+      "titel": "Nationaal Theaterweekend",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/andre-het-astronautje-4-nationaal-theaterweekend/"
+    },
+    {
+      "theater": "maaspoort",
+      "artiesten": [
+        "Babyconcert | 0+"
+      ],
+      "titel": "Ensemble Theater Mönchengladbach",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-29",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/babyconcert-0-nationaal-theaterweekend/"
     },
     {
       "theater": "maaspoort",
@@ -510,7 +536,7 @@
     {
       "theater": "maaspoort",
       "artiesten": [
-        "Lachen in BACKSTAGE"
+        "Leon's Comedy Club"
       ],
       "titel": "Nationaal Theaterweekend",
       "genre": "cabaret",
