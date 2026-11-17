@@ -826,7 +826,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const titel = echteTitel(g.voorstelling);
     const a = A.get(v.artiesten[0]);
     // Een promofoto (met toestemming) maakt er een fotobriefje van; de maker staat op de artiestpagina.
-    const foto = a?.foto?.promo && v.artiesten.length === 1 ? a.foto : null;
+    // Een foto die niet bijgesneden mag worden (heel: true, zoals bij Buro Haug) niet op een briefje: dat snijdt altijd bij.
+    const foto = a?.foto?.promo && !a.foto.heel && v.artiesten.length === 1 ? a.foto : null;
     if (foto) klassen = "tape krul";
     const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
     const voet = `<span class="voet"><span>${esc(metJaar(g.datum))}${g.tijd ? ` · ${g.tijd}` : ""}</span>${kopen ? `<span>Tickets ${ICON.extern}</span>` : `<span class="uit">${esc(STATUSSEN[g.status] || g.status)}</span>`}</span>`;
@@ -1805,8 +1806,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   }
 
   // Rechtenvrije foto (Wikimedia Commons) met verplichte naamsvermelding en licentie; bij promomateriaal alleen de fotograaf.
+  // heel: true (promo.json) toont de foto in zijn eigen verhouding, zonder uitsnede (voorwaarde van de afzender).
   const fotoHtml = (a, klasse = "artiest-foto") => `<figure class="${klasse}">
-          <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${klasse === "artiest-foto" ? uitsnede(a.foto, 4 / 5) : ""}${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
+          <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${a.foto.heel ? ' class="heel"' : klasse === "artiest-foto" ? uitsnede(a.foto, 4 / 5) : ""}${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
           ${a.foto.promo && !a.foto.maker ? "" : `<figcaption>Foto: ${a.foto.promo ? esc(a.foto.maker) : `<a href="${esc(a.foto.bron)}" rel="noopener">${esc(a.foto.maker)}</a>`}${a.foto.promo ? "" : a.foto.licentieUrl ? `, <a href="${esc(a.foto.licentieUrl)}" rel="noopener license">${esc(a.foto.licentie)}</a>` : `, ${esc(a.foto.licentie)}`}</figcaption>`}
         </figure>`;
 
