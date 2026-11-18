@@ -1,7 +1,7 @@
 {
   "bron": "vlaardingen",
   "naam": "Stadsgehoorzaal Vlaardingen",
-  "opgehaald": "2026-11-17",
+  "opgehaald": "2026-11-18",
   "theaters": [
     {
       "id": "stadsgehoorzaal-vlaardingen",
@@ -55,19 +55,6 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Juliet"
-      ],
-      "titel": "Ik Beloof Je Eeuwige Twijfel",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/juliet"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
         "Bro's"
       ],
       "titel": "Bromens",
@@ -77,6 +64,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/bros"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Juliet"
+      ],
+      "titel": "Ik Beloof Je Eeuwige Twijfel",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/juliet"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -107,32 +107,6 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Theater Stof"
-      ],
-      "titel": "Het Kleurenmonster (3+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-04-11",
-      "tijd": "11:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/het-kleurenmonster"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Theater Stof"
-      ],
-      "titel": "Het Kleurenmonster (3+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-04-11",
-      "tijd": "13:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/het-kleurenmonster"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
         "Krulmuziek"
       ],
       "titel": "Babykerstconcert (0+)",
@@ -142,32 +116,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/babykerstconcert"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Maya Show (1+)"
-      ],
-      "titel": "Samen picknicken",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-01-17",
-      "tijd": "13:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Maya Show (1+)"
-      ],
-      "titel": "Samen picknicken",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-01-17",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -246,6 +194,58 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/marie-koet"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Theater Stof"
+      ],
+      "titel": "Het Kleurenmonster (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/het-kleurenmonster"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Theater Stof"
+      ],
+      "titel": "Het Kleurenmonster (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/het-kleurenmonster"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Maya Show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Maya Show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",

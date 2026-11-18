@@ -1,7 +1,7 @@
 {
   "bron": "parktheater",
   "naam": "Parktheater Eindhoven",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-18",
   "theaters": [
     {
       "id": "parktheater-eindhoven",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Jawad Es Soufi"
-      ],
-      "titel": "Tnawies",
-      "genre": "comedy",
-      "datum": "2026-11-17",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/tnawies-mj6p"
-    },
     {
       "theater": "parktheater-eindhoven",
       "artiesten": [
@@ -1221,6 +1208,32 @@
     {
       "theater": "parktheater-eindhoven",
       "artiesten": [
+        "Arno Huibers & Paul van der Heijden"
+      ],
+      "titel": "Verliefd op Truus",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/verliefd-op-truus-y5bm"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "Arno Huibers"
+      ],
+      "titel": "Tomaatje op je neus",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/tomaatje-op-je-neus-y643"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
         "Rob Kamphues"
       ],
       "titel": "Eindelijk Volwassen",
@@ -1314,13 +1327,13 @@
       "artiesten": [
         "Alex Ploeg"
       ],
-      "titel": "Niks Persoonlijks (ry-out)",
+      "titel": "Niks Persoonlijks",
       "genre": "comedy",
       "datum": "2027-02-13",
       "tijd": "20:30",
       "status": "uitverkocht",
       "soort": null,
-      "bron": "https://www.parktheater.nl/programma/niks-persoonlijks-ry-out-76hy"
+      "bron": "https://www.parktheater.nl/programma/niks-persoonlijks-76hy"
     },
     {
       "theater": "parktheater-eindhoven",

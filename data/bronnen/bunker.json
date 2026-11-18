@@ -3,7 +3,7 @@
   "naam": "Agenda van Bunker Theaterzaken",
   "soort": "speellijst",
   "leidend": true,
-  "opgehaald": "2026-11-17",
+  "opgehaald": "2026-11-18",
   "theaters": [],
   "speeldata": [
     {
@@ -1795,25 +1795,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Schouwburg Agnietenhof",
-        "plaats": "Tiel",
-        "land": "NL",
-        "website": "https://www.agnietenhof.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-17",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.agnietenhof.nl/agenda/patrick-laureij-tgkc"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Theater aan de Parade",
         "plaats": "'s-Hertogenbosch",
         "land": "NL",
@@ -2627,25 +2608,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.ahoy.nl/agenda/show/patrick-laureij-kintsugi-2027"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Musis & Stadstheater",
-        "plaats": "Arnhem",
-        "land": "NL",
-        "website": "https://www.musisenstadstheater.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-17",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.musisenstadstheater.nl/nl/agenda/kasper-van-der-laan-nieuw-programma/10083"
     },
     {
       "theater": {
@@ -3971,25 +3933,6 @@
       ],
       "titel": "Lemming",
       "genre": "cabaret",
-      "datum": "2026-11-17",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/merijn-scholten-lemming-reprise/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Leidse Schouwburg",
-        "plaats": "Leiden",
-        "land": "NL",
-        "website": "https://leidseschouwburg-stadsgehoorzaal.nl"
-      },
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
       "datum": "2026-11-18",
       "tijd": "20:15",
       "status": "uitverkocht",
@@ -4964,25 +4907,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lemming-merijn-scholten"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Stadsschouwburg Utrecht",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://stadsschouwburg-utrecht.nl"
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-11-17",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/striptease-van-de-dood-david-linszen"
     },
     {
       "theater": {
@@ -12637,7 +12561,7 @@
       "genre": "cabaret",
       "datum": "2027-02-10",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/op-zekere-dag-kamagurka"
     },

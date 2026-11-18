@@ -1,7 +1,7 @@
 {
   "bron": "westrand",
   "naam": "Westrand",
-  "opgehaald": "2026-11-17",
+  "opgehaald": "2026-11-18",
   "theaters": [
     {
       "id": "westrand-dilbeek",
@@ -38,6 +38,266 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.westrand.be/programma/wa-wilder-man-5-r46p"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "comedy",
+      "datum": "2026-11-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/kommil-foo-1zvs"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Eindeloos Verhaal (10-110)"
+      ],
+      "titel": "hetpaleis/WOLF WOLF",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-28",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/eindeloos-verhaal-10-110-d8zj"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "FamilieDag SINT (3+)"
+      ],
+      "titel": "met de Appelmoesband: Zie ginds komt de stoomboot",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-05",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/familiedag-sint-3-8pdm"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Die Verdammte Spielerei"
+      ],
+      "titel": "Porselijm",
+      "genre": "comedy",
+      "datum": "2026-12-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/die-verdammte-spielerei-fy32"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Meneer T (8-108)"
+      ],
+      "titel": "Livia Jouan / Cie Studio T",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-18",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/meneer-t-8-108-b7hy"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "De Super-Elfkins (6+)"
+      ],
+      "titel": "Ute von Münchow-Pohl",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/de-super-elfkins-6-tgvw"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Yannick Noben"
+      ],
+      "titel": "Eindejaarsconference 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/yannick-noben-hb7d"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Woest (10-110)"
+      ],
+      "titel": "Goele Denil",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-15",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/woest-10-110-chmv"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Shaun het schaap: elke dag feest! (3+)"
+      ],
+      "titel": "Seamus Malone",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/shaun-het-schaap-elke-dag-feest-3-tgvv"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Ni Zievere, Speile"
+      ],
+      "titel": "Géry La Boule",
+      "genre": "comedy",
+      "datum": "2027-01-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/gery-la-boule-tgww"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Terrible Tiran (8-108) GEANNULEERD"
+      ],
+      "titel": "Frieda",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-23",
+      "tijd": "17:00",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/terrible-tiran-8-108-geannuleerd-mcyl"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "DDT Houdt Uitverkoop"
+      ],
+      "titel": "DDT (Jacques Vermeire)",
+      "genre": "comedy",
+      "datum": "2027-01-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/ddt-houdt-uitverkoop-chwp"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "De Kombak"
+      ],
+      "titel": "Manmanman",
+      "genre": "comedy",
+      "datum": "2027-01-30",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/de-kombak-qlxy"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Comedy Club #3"
+      ],
+      "titel": "met Kjen Descheemaecker",
+      "genre": "comedy",
+      "datum": "2027-02-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/comedy-club-3-1zk9"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Steven Mahieu"
+      ],
+      "titel": "Stabieler",
+      "genre": "comedy",
+      "datum": "2027-02-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/stabieler-nj46"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Meneer Beer, De terugkeer (5+)"
+      ],
+      "titel": "Theater Tieret & Walrus",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-06",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/meneer-beer-de-terugkeer-5-jvnq"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "GOAT: Droom Groots (6+)"
+      ],
+      "titel": "Tyree Dillihay, Adam Rosette, Stephen Curry",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-10",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/goat-droom-groots-6-ymfc"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Wasda (2+)"
+      ],
+      "titel": "De Mannschaft & ONAF vzw",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/wasda-2-73bn"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "William Boeva"
+      ],
+      "titel": "Drift",
+      "genre": "comedy",
+      "datum": "2027-02-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/william-boeva-fy35"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "William Boeva"
+      ],
+      "titel": "Drift",
+      "genre": "comedy",
+      "datum": "2027-02-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/william-boeva-fy35"
     },
     {
       "theater": "westrand-dilbeek",
@@ -378,5 +638,13 @@
       "bron": "https://www.westrand.be/programma/ddt-houdt-uitverkoop-r49v"
     }
   ],
-  "recensies": {}
+  "recensies": {
+    "https://www.westrand.be/programma/terrible-tiran-8-108-geannuleerd-mcyl": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Recensie X tot de zoveelste (8+) door Compagnie Frieda"
+      }
+    ]
+  }
 }

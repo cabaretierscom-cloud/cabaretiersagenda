@@ -1,7 +1,7 @@
 {
   "bron": "parade",
   "naam": "Theater aan de Parade",
-  "opgehaald": "2026-11-17",
+  "opgehaald": "2026-11-18",
   "theaters": [
     {
       "id": "theater-aan-de-parade",
@@ -444,19 +444,6 @@
     },
     {
       "theater": "theater-aan-de-parade",
-      "artiesten": [
-        "Peutercafé"
-      ],
-      "titel": "Het Kleurfeest (2+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-18",
-      "tijd": "10:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraandeparade.nl/nl/programma/peutercafe-het-kleurfeest"
-    },
-    {
-      "theater": "theater-aan-de-parade",
       "artiesten": [],
       "titel": "The Funniest Festival Ever!",
       "genre": "cabaret",
@@ -529,6 +516,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraandeparade.nl/nl/programma/happen-lachen-122731"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [],
+      "titel": "Happen & Lachen",
+      "genre": "cabaret",
+      "datum": "2027-06-02",
+      "tijd": "18:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/happen-lachen-122732"
     },
     {
       "theater": "theater-aan-de-parade",

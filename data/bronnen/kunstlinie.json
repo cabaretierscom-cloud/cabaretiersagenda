@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-17",
+  "opgehaald": "2026-11-18",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -42,32 +42,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Roué Verveer"
-      ],
-      "titel": "Roué Verveer",
-      "genre": "cabaret",
-      "datum": "2027-05-29",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Steven Brunswijk"
-      ],
-      "titel": "Steven Brunswijk",
-      "genre": "cabaret",
-      "datum": "2027-04-23",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "De musical zonder billen (4+)"
       ],
       "titel": "De musical zonder billen (4+)",
@@ -103,6 +77,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/deng-boy-5/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Steven Brunswijk"
+      ],
+      "titel": "Steven Brunswijk",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Roué Verveer",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
     },
     {
       "theater": "kunstlinie",
@@ -237,19 +237,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "De Grote Almeerse Kerst Sing-A-Long"
-      ],
-      "titel": "De Grote Almeerse Kerst Sing-A-Long",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-13",
-      "tijd": "15:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/de-grote-almeerse-kerst-sing-a-long/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Bro’s"
       ],
       "titel": "Bro’s",
@@ -259,6 +246,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/bros/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "De Grote Almeerse Kerst Sing-A-Long"
+      ],
+      "titel": "De Grote Almeerse Kerst Sing-A-Long",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/de-grote-almeerse-kerst-sing-a-long/"
     },
     {
       "theater": "kunstlinie",
@@ -614,19 +614,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Anansi de Spin en de Gulzige Tijger (2+)"
-      ],
-      "titel": "Anansi de Spin en de Gulzige Tijger (2+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-02-26",
-      "tijd": "10:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/anansi-de-spin-en-de-gulzige-tijger-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Peter Pannekoek"
       ],
       "titel": "Peter Pannekoek",
@@ -861,19 +848,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "BRRRothers (6+)"
-      ],
-      "titel": "BRRRothers (6+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-02-07",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/brrrothers-6/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "De Nog Grotere Slijmmusical (6+)"
       ],
       "titel": "De Nog Grotere Slijmmusical (6+)",
@@ -991,6 +965,19 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "BRRRothers (6+)"
+      ],
+      "titel": "BRRRothers (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/brrrothers-6/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "WEG ERMEE (5 t/m 12 jaar)"
       ],
       "titel": "WEG ERMEE (5 t/m 12 jaar)",
@@ -1000,6 +987,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/weg-ermee-5-t-m-12-jaar/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Anansi de Spin en de Gulzige Tijger (2+)"
+      ],
+      "titel": "Anansi de Spin en de Gulzige Tijger (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/anansi-de-spin-en-de-gulzige-tijger-2/"
     }
   ],
   "recensies": {
@@ -1215,9 +1215,19 @@
     ],
     "https://kunstlinie.nl/programma/brrrothers-6/": [
       {
+        "medium": "Joost Groenebuur, Dans Magazine",
+        "sterren": null,
+        "citaat": "Van begin tot het eind houden de brrrothers met mime, dans, kung fu, slapstick en heel veel humor de aandacht van de kinderen vast."
+      },
+      {
         "medium": "Javier López Piñón, Theaterkrant",
         "sterren": null,
-        "citaat": "Van meet af aan toont de choreograaf hoe hij met timing en verwachting kan spelen en slaagt hij erin het (jonge) publiek te enthousiasmeren."
+        "citaat": "De koppeling broederliefde aan broedertwist als metaforen voor maatschappelijke ontwikkelingen in deze bellicose tijden verleent een interessante ondertoon aan deze aanvankelijk amusante dans/mime-voorstelling."
+      },
+      {
+        "medium": "Kinderreporter Jolie, Kidsproof",
+        "sterren": null,
+        "citaat": "Ze poseerden de hele tijd alsof ze héél sterk waren in die pakken, dat vond ik echt grappig!"
       }
     ]
   }

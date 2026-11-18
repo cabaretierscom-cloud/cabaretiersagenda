@@ -2,85 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-18",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Stadsschouwburg",
-        "plaats": "Antwerpen",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Arnout Van den Bossche"
-      ],
-      "titel": "Coach",
-      "genre": "stand-up",
-      "datum": "2026-11-17",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/arnout-van-den-bosche/2026-11-17/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "The Pitch",
-        "plaats": "Heule",
-        "land": "BE",
-        "website": "https://thepitch.be"
-      },
-      "artiesten": [
-        "Seppe Toremans"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-17",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://thepitch.be/comedy/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Buurthuis Rollegem",
-        "plaats": "Rollegem",
-        "land": "BE",
-        "website": "https://www.luxfestival.be"
-      },
-      "artiesten": [
-        "Amelie Albrecht"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-17",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.luxfestival.be/lux-comedy"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Verloren Gernoare",
-        "plaats": "De Panne",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Dries Heyneman"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-17",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.uitinvlaanderen.be/agenda/e/comedy-avond-in-de-verloren-gernoare/a8a0dbf1-24b7-480a-b712-75b8438b3ffb"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -1440,7 +1364,7 @@
       "genre": "stand-up",
       "datum": "2026-12-15",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/arnout-van-den-bosche/2026-12-15/"
     },
@@ -4477,7 +4401,7 @@
       "genre": "cabaret",
       "datum": "2027-03-04",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.30cc.be/nl/programma/item/altijd-aan-2026-2027"
     },

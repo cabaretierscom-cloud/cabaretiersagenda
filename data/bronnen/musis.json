@@ -1,7 +1,7 @@
 {
   "bron": "musis",
   "naam": "Musis & Stadstheater Arnhem",
-  "opgehaald": "2026-11-17",
+  "opgehaald": "2026-11-18",
   "theaters": [
     {
       "id": "stadstheater-arnhem",
@@ -167,19 +167,6 @@
     {
       "theater": "musis-arnhem",
       "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-17",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.musisenstadstheater.nl/nl/agenda/kasper-van-der-laan-nieuw-programma/10083"
-    },
-    {
-      "theater": "musis-arnhem",
-      "artiesten": [
         "Merijn Scholten"
       ],
       "titel": "Lemming",
@@ -225,7 +212,7 @@
       "genre": "cabaret",
       "datum": "2026-12-15",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.musisenstadstheater.nl/nl/agenda/najib-en-roue-alles-is-comedy/10061"
     }
@@ -297,26 +284,6 @@
         "medium": "de Volkskrant",
         "sterren": 4,
         "citaat": "Wim Helsen weet er een mooie, geestige en gevoelige theatermonoloog van te maken. Hij zet hierbij zijn hele gereedschapskist als theatermaker in: zijn eigenzinnige humor en zijn bijzondere mimiek."
-      }
-    ],
-    "https://www.musisenstadstheater.nl/nl/agenda/kasper-van-der-laan-nieuw-programma/10083": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "De troef van Kasper van der Laan is het samenvallen van zijn fysiek met zijn absurde vondsten",
-        "over": "Warm"
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Na zijn briljante debuut is Kasper van der Laan onstuitbaar op weg een Hele Grote te worden.",
-        "over": "Warm"
-      },
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Eigenheid is sowieso Van der Laans grote troef",
-        "over": "Warm"
       }
     ],
     "https://www.musisenstadstheater.nl/nl/agenda/merijn-scholten-lemming/10080": [

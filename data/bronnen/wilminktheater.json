@@ -1,7 +1,7 @@
 {
   "bron": "wilminktheater",
   "naam": "Wilminktheater en Muziekcentrum Enschede",
-  "opgehaald": "2026-11-16",
+  "opgehaald": "2026-11-18",
   "theaters": [
     {
       "id": "wilminktheater",
@@ -21,19 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "wilminktheater",
-      "artiesten": [
-        "HNTJong & Theater Utrecht"
-      ],
-      "titel": "Time Machine",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-17",
-      "tijd": "19:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/time-machine-q2ky"
-    },
     {
       "theater": {
         "id": "de-kleine-willem-enschede",
@@ -307,7 +294,7 @@
       "genre": "cabaret",
       "datum": "2026-12-14",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/harrekidee-herneming-yw51"
     },

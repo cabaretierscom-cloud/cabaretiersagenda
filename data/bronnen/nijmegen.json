@@ -1,7 +1,7 @@
 {
   "bron": "nijmegen",
   "naam": "Stadsschouwburg & De Vereeniging Nijmegen",
-  "opgehaald": "2026-11-17",
+  "opgehaald": "2026-11-18",
   "theaters": [
     {
       "id": "stadsschouwburg-nijmegen",
@@ -21,6 +21,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Het huis dat stopte met staan (8+)"
+      ],
+      "titel": "Het verhaal van een vlucht",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "19:00",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/het-huis-dat-stopte-met-staan-8-yxm6"
+    },
     {
       "theater": "stadsschouwburg-nijmegen",
       "artiesten": [
@@ -59,6 +72,266 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/umi-0-5-1-5-jaar-5jrg"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Pieter Derks"
+      ],
+      "titel": "Ja, leuk",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/pieter-derks-7p3k"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "Striptease Van De Dood",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/david-linszen-skw6"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Yentl & de Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/yentl-de-boer-5j23"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Yentl & de Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "cabaret",
+      "datum": "2026-12-11",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/yentl-de-boer-5j23"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/merijn-scholten-92fp"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:15",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/merijn-scholten-92fp"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Klassiek voor kleintjes (1,5 tot 2,5 jaar)"
+      ],
+      "titel": "Kerstconcert voor je dreumes!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "09:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/klassiek-voor-kleintjes-1-5-tot-2-5-jaar-14p6"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Klassiek voor kleintjes (0 tot 1,5 jaar)"
+      ],
+      "titel": "Kerstconcert voor baby's!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "10:15",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/klassiek-voor-kleintjes-0-tot-1-5-jaar-skm9"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Klassiek voor kleintjes (2,5 tot 6 jaar)"
+      ],
+      "titel": "Kerstconcert voor je peuter of kleuter!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "11:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/klassiek-voor-kleintjes-2-5-tot-6-jaar-nygk"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos 2027",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/dolf-jansen-flyv"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Wim Helsen"
+      ],
+      "titel": "Welkom Ongemak",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/wim-helsen-5jqh"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Frisse Oren"
+      ],
+      "titel": "Tuimelaar (6- 18 maanden)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/tuimelaar-6-18-maanden-fl2f"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Frisse Oren"
+      ],
+      "titel": "Tuimelaar (6- 18 maanden)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "11:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/tuimelaar-6-18-maanden-fl2f"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Frisse Oren"
+      ],
+      "titel": "Tuimelaar (6- 18 maanden)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-24",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/tuimelaar-6-18-maanden-fl2f"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Beth & Flo"
+      ],
+      "titel": "Zoveel meer",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/beth-flo-qgld"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "De musical zonder billen (4+)"
+      ],
+      "titel": "Doldwaze familiemusical vol humor en fantasie",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-10",
+      "tijd": "14:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/de-musical-zonder-billen-4-l6xs"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "voor iedereen",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/micha-wertheim-qg1v"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Voorleesontbijt Marc ter Horst (4+)"
+      ],
+      "titel": "Met zijn nieuwe boek Zeewee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/voorleesontbijt-marc-ter-horst-4-xrsl"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "Cabaret & Classics"
+      ],
+      "titel": "Roza Herwig & Julius Backer",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/cabaret-classics-45xg"
+    },
+    {
+      "theater": "stadsschouwburg-nijmegen",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/david-van-rosmalen-92sd"
     },
     {
       "theater": "stadsschouwburg-nijmegen",
@@ -385,6 +658,83 @@
     }
   ],
   "recensies": {
+    "https://www.stadsschouwburgendevereeniging.nl/programma/david-linszen-skw6": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Puntje-van-je-stoelcomedy met een zeldzame eigenheid: David Linszens debuut is echt heel goed."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "In zijn cabaretdebuut ‘Striptease Van De Dood’ schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal. Doeltreffend toont hij dat de realiteit leuker fantaseren een verdedigingsmechanisme is met voor- én nadelen."
+      }
+    ],
+    "https://www.stadsschouwburgendevereeniging.nl/programma/yentl-de-boer-5j23": [
+      {
+        "medium": "Scènes",
+        "sterren": 5,
+        "citaat": "Magisch duo op de kleinkunst-Olympus’ (…) barstensvol hoogtepunten"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "… geweldige liedjesvoorstelling"
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "…op de toppen van hun kunnen"
+      }
+    ],
+    "https://www.stadsschouwburgendevereeniging.nl/programma/merijn-scholten-92fp": [
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Komiek Merijn Scholten heeft een hoop kritiek op de maatschappij, maar is vooral enorm grappig"
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Hij creëert, grappig en ontroerend, een beter bij de tijd passend genre: sad hardcore."
+      },
+      {
+        "medium": "Het Parool",
+        "sterren": null,
+        "citaat": "Merijn Scholten brengt in Lemming een vaak hilarische ode aan kuddegedrag"
+      }
+    ],
+    "https://www.stadsschouwburgendevereeniging.nl/programma/wim-helsen-5jqh": [
+      {
+        "medium": "NRC",
+        "sterren": 5,
+        "citaat": "Wim Helsen flikt het opnieuw. De Vlaamse cabaretier toont zich weer eens een onvolprezen Ti Ta Tovenaar, de man die zonder dat je het doorhebt de tijd stilzet in het theater. En je meeneemt op een reis die je niet ziet aankomen. Tegelijk blijft Helsen een fascinerende podiumpersoonlijkheid, naar wie je met open mond kijkt als hij gul en onophoudelijk zijn fratsen over het publiek uitstort."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Wim Helsen weet er een mooie, geestige en gevoelige theatermonoloog van te maken. Hij zet hierbij zijn hele gereedschapskist als theatermaker in: zijn eigenzinnige humor en zijn bijzondere mimiek."
+      }
+    ],
+    "https://www.stadsschouwburgendevereeniging.nl/programma/beth-flo-qgld": [
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Zonder twijfel knap gemaakt en muzikaal ijzersterk"
+      }
+    ],
+    "https://www.stadsschouwburgendevereeniging.nl/programma/micha-wertheim-qg1v": [
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Bij Micha Wertheim is alles anders geworden: de werkelijkheid blijkt veel gekker dan theater óóit kan zijn."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "Nergens anders’ van Micha Wertheim zit zo ingenieus in elkaar dat je alles wilt begrijpen."
+      }
+    ],
     "https://www.stadsschouwburgendevereeniging.nl/programma/lisa-ostermann-reprise-z9pf": [
       {
         "medium": "de Volkskrant",

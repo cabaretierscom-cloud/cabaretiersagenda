@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-17",
+  "opgehaald": "2026-11-18",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -446,7 +446,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/pieter-derks-57549/"
     },
@@ -498,7 +498,7 @@
       "genre": "cabaret",
       "datum": "2027-01-15",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://luxortheater.nl/agenda/daan-van-der-hoeven-58104/"
     },
@@ -797,7 +797,7 @@
       "genre": "cabaret",
       "datum": "2027-01-03",
       "tijd": "15:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
     },
@@ -810,7 +810,7 @@
       "genre": "cabaret",
       "datum": "2027-01-03",
       "tijd": "19:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
     },

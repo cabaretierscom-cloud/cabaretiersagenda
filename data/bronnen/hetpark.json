@@ -1,7 +1,7 @@
 {
   "bron": "hetpark",
   "naam": "Schouwburg Het Park",
-  "opgehaald": "2026-11-17",
+  "opgehaald": "2026-11-18",
   "theaters": [
     {
       "id": "schouwburg-het-park",
@@ -21,19 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "schouwburg-het-park",
-      "artiesten": [
-        "Amhali & Verveer"
-      ],
-      "titel": "Alles is Comedy",
-      "genre": "cabaret",
-      "datum": "2026-11-17",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://hetpark.nl/agenda/amhali-verveer-10349292/"
-    },
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
@@ -80,7 +67,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-25",
       "tijd": "19:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/controle-10352974/"
     },
@@ -193,7 +180,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-12-13",
       "tijd": "09:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/klassiek-voor-kleintjes-dreumesconcert-15-10359372/"
     },
@@ -415,6 +402,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/valentina-toth-10354244/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Nationaal Theaterweekend 2027",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/wina-ricardo-10386093/"
     },
     {
       "theater": "schouwburg-het-park",
