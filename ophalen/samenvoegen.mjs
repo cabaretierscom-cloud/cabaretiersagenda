@@ -683,6 +683,21 @@ for (const v of voorstellingen) {
   if (!v.artiesten.length && !theaterOpId.has(v.theater)) v.theater = speeldata.find((s) => s.voorstelling === v.id)?.theater;
 }
 
+// 2d-2. Vaste genres (voorstelling-correcties.json, `genres`): een voorstelling die de zalen anders noemen dan
+// de artiest ("Vaarwel 2026" van Sjaak Bral is een oudejaarsconference, de zalen zeggen cabaret). Het genre van de
+// zalen blijft dan bij ookGenres.
+for (const c of correcties.genres || []) {
+  const aId = artiesten.find((a) => slug(a.naam) === slug(c.artiest))?.id;
+  for (const v of voorstellingen.filter((x) => aId && x.artiesten.includes(aId) && zelfdeTitel(x.titel, c.titel))) {
+    if (v.genre === c.genre) continue;
+    const ook = new Set([...(v.ookGenres || []), v.genre]);
+    ook.delete(c.genre);
+    v.genre = c.genre;
+    if (ook.size) v.ookGenres = [...ook].sort(); else delete v.ookGenres;
+    genreGewijzigd++;
+  }
+}
+
 // 2e. Tournees die in hun geheel een reprise zijn (voorstelling-correcties.json): elke avond zonder soort is een reprise.
 let reprises = 0;
 for (const c of correcties.reprise || []) {
