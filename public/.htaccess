@@ -30,6 +30,7 @@ AddType application/manifest+json .webmanifest
   RewriteRule ^artiesten/boban-benjamin-braspenning(/.*)?$ https://www.cabaretiers.com/artiesten/boban-braspenning$1 [L,R=301]
   RewriteRule ^artiesten/aai-poesje(/.*)?$ https://www.cabaretiers.com/artiesten/elfie-tromp/aai-poesje-aai-poesje/ [L,R=301]
   RewriteRule ^artiesten/(ni-zievere|speile)(/.*)?$ https://www.cabaretiers.com/artiesten/gery-la-boule/ [L,R=301]
+  RewriteRule ^artiesten/(rob-urgert-en-joep-van-deudekom|de-grote-oudejaars-kwis-2026)(/.*)?$ https://www.cabaretiers.com/artiesten/joep-van-deudekom-en-rob-urgert/de-grote-oudejaars-kwis-2026/ [L,R=301]
   # Kor Hoebe: de voorstelling heet Korrelatie, niet Korrelrelatie (november 2026).
   RewriteRule ^artiesten/kor-hoebe/korrelrelatie/?$ https://www.cabaretiers.com/artiesten/kor-hoebe/korrelatie/ [L,R=301]
   # Verwijderde nieuwsberichten (november 2026, oud nieuws): naar de pagina waar het nu staat.

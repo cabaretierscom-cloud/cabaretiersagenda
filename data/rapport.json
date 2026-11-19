@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-19",
   "totaal": {
-    "speeldata": 9265,
-    "komend": 8177,
-    "artiesten": 965,
+    "speeldata": 9278,
+    "komend": 8190,
+    "artiesten": 963,
     "zalen": 734,
     "plaatsen": 508,
-    "voorstellingen": 1411
+    "voorstellingen": 1407
   },
   "bronnen": [
     {
@@ -578,6 +578,14 @@
       "dubbel": 8
     },
     {
+      "bron": "bos",
+      "naam": "Bos Theaterproducties",
+      "opgehaald": "2026-11-19",
+      "speeldata": 13,
+      "vorige": 0,
+      "dubbel": 9
+    },
+    {
       "bron": "bunker",
       "naam": "Agenda van Bunker Theaterzaken",
       "opgehaald": "2026-11-19",
@@ -957,12 +965,12 @@
     },
     {
       "datum": "2026-11-19",
-      "speeldata": 9265,
-      "komend": 8177,
-      "artiesten": 965,
+      "speeldata": 9278,
+      "komend": 8190,
+      "artiesten": 963,
       "zalen": 734,
       "plaatsen": 508,
-      "voorstellingen": 1411
+      "voorstellingen": 1407
     }
   ]
 }

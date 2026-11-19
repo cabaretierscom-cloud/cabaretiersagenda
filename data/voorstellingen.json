@@ -2623,22 +2623,6 @@
     "genre": "kindervoorstellingen"
   },
   {
-    "id": "de-grote-oudejaars-kwis-2026-met-joep-van-deudekom-en-rob-urgert",
-    "titel": "Met Joep van Deudekom en Rob Urgert",
-    "artiesten": [
-      "de-grote-oudejaars-kwis-2026"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "de-grote-oudejaars-kwis-2026-rob-urgert-en-joep-van-deudekom",
-    "titel": "Rob Urgert & Joep van Deudekom",
-    "artiesten": [
-      "de-grote-oudejaars-kwis-2026"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "de-horde-het-huis-dat-stopte-met-staan",
     "titel": "Het huis dat stopte met staan",
     "artiesten": [
@@ -5724,7 +5708,10 @@
     "artiesten": [
       "joep-van-deudekom-en-rob-urgert"
     ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "cabaret"
+    ]
   },
   {
     "id": "joep-van-deudekom-en-rob-urgert-de-verbinders",
@@ -5733,14 +5720,6 @@
       "joep-van-deudekom-en-rob-urgert"
     ],
     "genre": "stand-up"
-  },
-  {
-    "id": "joep-van-deudekom-en-rob-urgert-joep-van-deudekom-en-rob-urgert",
-    "titel": "Joep van Deudekom & Rob Urgert",
-    "artiesten": [
-      "joep-van-deudekom-en-rob-urgert"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "joep-vermolen-so-this-was-nice-nou-was-leuk",
@@ -9540,14 +9519,6 @@
       "rob-scheepers"
     ],
     "genre": "cabaret"
-  },
-  {
-    "id": "rob-urgert-en-joep-van-deudekom-de-grote-oudejaars-kwis-2026",
-    "titel": "De Grote Oudejaars Kwis 2026",
-    "artiesten": [
-      "rob-urgert-en-joep-van-deudekom"
-    ],
-    "genre": "oudejaarsconference"
   },
   {
     "id": "robert-derksen-op-zoek-naar-mij-de-kargadoor-utrecht",

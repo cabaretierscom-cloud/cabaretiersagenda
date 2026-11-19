@@ -293,6 +293,17 @@
       "naar": "Aai Poesje Aai Poesje",
       "leeg": false,
       "bron": "https://elfietromp.nl/speellijst/ (de voorstelling heet Aai Poesje Aai Poesje; Theater De Purmaryn zette titel en artiest omgedraaid)"
+    },
+    {
+      "artiest": "Joep van Deudekom & Rob Urgert",
+      "van": [
+        "Met Joep van Deudekom en Rob Urgert",
+        "Rob Urgert & Joep van Deudekom",
+        "Joep van Deudekom & Rob Urgert",
+        "De Grote Oudejaarskwis 2026"
+      ],
+      "naar": "De Grote Oudejaars Kwis 2026",
+      "bron": "https://www.bostheaterproducties.nl/producties/de-grote-oudejaars-kwis-2026/ (zalen zetten de titel op de plek van de artiest of de namen als titel)"
     }
   ],
   "reprise": [
@@ -338,6 +349,12 @@
       "titel": "Vaarwel 2026",
       "genre": "oudejaarsconference",
       "bron": "Eigenaar van Cabaretiers.com (november 2026): Vaarwel 2026 is een oudejaarsconference"
+    },
+    {
+      "artiest": "Joep van Deudekom & Rob Urgert",
+      "titel": "De Grote Oudejaars Kwis 2026",
+      "genre": "oudejaarsconference",
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): De Grote Oudejaars Kwis is een oudejaarsconference"
     }
   ]
 }
