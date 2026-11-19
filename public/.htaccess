@@ -25,6 +25,8 @@ AddType application/manifest+json .webmanifest
   RewriteRule ^artiesten/marja-van-katendrecht-x-theater-zuidplein(/.*)?$ https://www.cabaretiers.com/artiesten/marja-van-katendrecht/ [L,R=301]
   RewriteRule ^artiesten/tis-hier-geen-hotel-3(/.*)?$ https://www.cabaretiers.com/artiesten/hanneke-drenth-en-dianne-liesker/ [L,R=301]
   RewriteRule ^artiesten/(het-leven-is-kort|net-als-ik)(/.*)?$ https://www.cabaretiers.com/artiesten/eva-eikhout/ [L,R=301]
+  # Stand-up heet in het adres stand-up-comedy (november 2026).
+  RewriteRule ^agenda/stand-up(/.*)?$ https://www.cabaretiers.com/agenda/stand-up-comedy$1 [L,R=301]
   RewriteRule ^artiesten/boban-benjamin-braspenning(/.*)?$ https://www.cabaretiers.com/artiesten/boban-braspenning$1 [L,R=301]
   RewriteRule ^artiesten/aai-poesje(/.*)?$ https://www.cabaretiers.com/artiesten/elfie-tromp/aai-poesje-aai-poesje/ [L,R=301]
   RewriteRule ^artiesten/(ni-zievere|speile)(/.*)?$ https://www.cabaretiers.com/artiesten/gery-la-boule/ [L,R=301]

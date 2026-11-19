@@ -169,7 +169,7 @@ export function createTemplates(db, { ga = null } = {}) {
       .map((id) => [T.get(id).naam, `/theaters/${id}/`])],
     ["Plaatsen", "/plaatsen/", "Alle plaatsen", ["Rotterdam", "Amsterdam", "Eindhoven", "Den Haag", "Utrecht"]
       .filter((p) => up.some((g) => T.get(g.theater).plaats === p)).map((p) => [p, plaatsPad(p)])],
-    ["Genres", "/agenda/", "De hele agenda", GENRE_PAGINAS.slice(0, 5).map((g) => [GENRE_INFO[g].kop, `/agenda/${g}/`])],
+    ["Genres", "/agenda/", "De hele agenda", GENRE_PAGINAS.slice(0, 5).map((g) => [GENRE_INFO[g].kop, genrePad(g)])],
   ];
   return `<nav class="footer-links" aria-label="Snel naar">${FOOTER_LINKS.map(([kop, pad, alle, links]) => `<div>
       <h2>${kop}</h2>
@@ -582,7 +582,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // Zijwaartse rij met de genres, meeste voorstellingen eerst (homepage), in dezelfde stijl als plaatsNav().
   function genreNav() {
     return `<nav class="month-nav stad-nav" aria-label="Genres">${[...GENRE_PAGINAS].sort((x, y) => genreLijst(y).length - genreLijst(x).length).map((g) =>
-      `<a href="/agenda/${g}/"><b>${esc(GENRE_INFO[g].kop)}</b><span>${plural(genreLijst(g).length, "voorstelling", "voorstellingen")}</span></a>`).join("")}${tryoutLijst.length ? `<a href="/agenda/try-outs/"><b>Try-outs</b><span>${plural(tryoutLijst.length, "voorstelling", "voorstellingen")}</span></a>` : ""}</nav>`;
+      `<a href="${genrePad(g)}"><b>${esc(GENRE_INFO[g].kop)}</b><span>${plural(genreLijst(g).length, "voorstelling", "voorstellingen")}</span></a>`).join("")}${tryoutLijst.length ? `<a href="/agenda/try-outs/"><b>Try-outs</b><span>${plural(tryoutLijst.length, "voorstelling", "voorstellingen")}</span></a>` : ""}</nav>`;
   }
 
   // In de maandenbalk alleen maanden met meer dan MAAND_DREMPEL voorstellingen (verzoek van de eigenaar, november
@@ -1032,7 +1032,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <p class="more" id="naar-maand"><a class="btn" href="/agenda/${maandId(maanden[0])}/">Verder in ${maandNaam(maanden[0])}</a></p>
       ${GENRE_PAGINAS.length ? `<section class="genre-plaatsen" aria-labelledby="genre-titel">
         <h2 class="sub-head" id="genre-titel">Per genre</h2>
-        <p class="genre-plaats-top">${GENRE_PAGINAS.map((g) => `<a href="/agenda/${g}/">${esc(GENRE_INFO[g].kop)} <span>${genreLijst(g).length}</span></a>`).join("")}${tryoutLijst.length ? `<a href="/agenda/try-outs/">Try-outs <span>${tryoutLijst.length}</span></a>` : ""}</p>
+        <p class="genre-plaats-top">${GENRE_PAGINAS.map((g) => `<a href="${genrePad(g)}">${esc(GENRE_INFO[g].kop)} <span>${genreLijst(g).length}</span></a>`).join("")}${tryoutLijst.length ? `<a href="/agenda/try-outs/">Try-outs <span>${tryoutLijst.length}</span></a>` : ""}</p>
       </section>` : ""}
       <section class="seo-tekst prose" aria-labelledby="over-titel">
         <h2 id="over-titel">Cabaret- en theatervoorstellingen</h2>
@@ -1512,6 +1512,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     ? `op ${fmt.long(list[0].datum)}`
     : `van ${fmt.full(list[0].datum)} tot en met ${fmt.full(list.at(-1).datum)}`;
   const theaterLink = (id) => `<a href="/theaters/${id}/">${esc(T.get(id).naam)}</a>`;
+  function genrePad(g) { return `/agenda/${GENRE_SLUG[g] || g}/`; }
   const plaatsLink = (p) => `<a href="${plaatsPad(p)}">${esc(p)}</a>`;
   const bijzonder = (list, soort) => list.filter((g) => g.soort === soort && g.status !== "geannuleerd");
   const uitverkochtZin = (list) => {
@@ -1929,7 +1930,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <div class="hero-tekst">
           <h1${Math.max(...v.titel.split(/\s+/).map((w) => w.length)) > 12 ? ' class="lang"' : ""}>${esc(v.titel)}</h1>
           <p>Voorstelling van ${artistLinks(vid)}. ${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.</p>
-          <ul class="hero-genres" aria-label="Genres">${genresVanV(v).map((g) => `<li>${GENRE_PAGINAS.includes(g) ? `<a href="/agenda/${g}/">${esc(genreLabel(g))}</a>` : `<span>${esc(genreLabel(g))}</span>`}</li>`).join("")}</ul>
+          <ul class="hero-genres" aria-label="Genres">${genresVanV(v).map((g) => `<li>${GENRE_PAGINAS.includes(g) ? `<a href="${genrePad(g)}">${esc(genreLabel(g))}</a>` : `<span>${esc(genreLabel(g))}</span>`}</li>`).join("")}</ul>
         </div>
         ${v.foto ? fotoHtml(v) : ""}
       </div></div>
@@ -2065,6 +2066,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return vragen;
   }
 
+  // Adres van een genrepagina. Stand-up heet in het adres stand-up-comedy (november 2026, zo zoeken mensen;
+  // /agenda/stand-up/ gaat met een 301 via public/.htaccess). De genre-sleutel zelf (filters, ?genre=) blijft stand-up.
+  const GENRE_SLUG = { "stand-up": "stand-up-comedy" };
   const GENRE_INFO = {
     cabaret: {
       kop: "Cabaret", meervoud: "cabaretvoorstellingen", wie: "cabaretiers", kleur: "roze",
@@ -2072,17 +2076,30 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       uitleg: "Cabaret is een avondvullende theatervoorstelling met humor, verhalen en vaak liedjes, meestal rond een thema en met een persoonlijke of maatschappelijke kijk op de wereld. Nederland en Vlaanderen hebben een lange cabarettraditie, van de grote drie (Wim Kan, Toon Hermans en Wim Sonneveld) tot de cabaretiers die nu door het land toeren.",
       vragen: [
         ["Wat is cabaret?", "Een theatervoorstelling waarin een cabaretier (of een groep) met humor, verhalen en vaak liedjes een avond vult, meestal rond een thema. Tussen de grappen door is er ook ruimte voor serieuze momenten."],
-        ["Wat is het verschil tussen cabaret en stand-up comedy?", "Cabaret heeft meestal een rode draad, liedjes en soms een decor. Stand-up comedy is losser: een comedian vertelt grappen en verhalen met alleen een microfoon. Veel artiesten doen allebei. Bekijk ook <a href=\"/agenda/stand-up/\">stand-up comedy</a>."],
+        ["Wat is het verschil tussen cabaret en stand-up comedy?", "Cabaret heeft meestal een rode draad, liedjes en soms een decor. Stand-up comedy is losser: een comedian vertelt grappen en verhalen met alleen een microfoon. Veel artiesten doen allebei. Bekijk ook <a href=\"/agenda/stand-up-comedy/\">stand-up comedy</a>."],
       ],
     },
     "stand-up": {
       kop: "Stand-up comedy", meervoud: "stand-upvoorstellingen", wie: "comedians", kleur: "blauw",
-      titel: `Stand-up comedy agenda ${SEIZOEN}: shows en comedyclubs`,
-      uitleg: "Bij stand-up comedy staat een comedian met een microfoon op het podium en vertelt grappen en verhalen, zonder decor of vaste verhaallijn. Je ziet stand-up in theaters, maar vooral in comedyclubs, waar op één avond vaak meerdere comedians na elkaar spelen.",
+      // Gericht op de zoekterm "comedy" (Search Console, november 2026): comedy vooraan in titel en omschrijving.
+      titel: `Comedy agenda ${SEIZOEN}: stand-up in Nederland en België`,
+      desc: (list, steden, namen) => zinnen(`Comedy in Nederland en België: ${plural(list.length, "stand-up comedyshow", "stand-up comedyshows")} in theaters en comedyclubs, seizoen ${SEIZOEN}.`, namen.length ? `Met onder meer ${opsomming(namen.slice(0, 3))}.` : ""),
+      uitleg: "Zin in comedy? Hier staat alle stand-up comedy in Nederland en België: solovoorstellingen van comedians in het theater en comedyavonden in comedyclubs, waar op één avond vaak meerdere comedians na elkaar spelen. Bij stand-up comedy staat een comedian met een microfoon op het podium en vertelt grappen en verhalen, zonder decor of vaste verhaallijn.",
+      extra: (list) => {
+        const clubs = telPer(list.filter((g) => T.get(g.theater).soort === "comedyclub"), (g) => g.theater).slice(0, 8);
+        const steden = telPer(list, (g) => T.get(g.theater).plaats).slice(0, 6);
+        const uit = [];
+        if (clubs.length) uit.push(`<p>De meeste comedy is te zien in comedyclubs als ${opsomming(clubs.map(([id, n]) => `${theaterLink(id)} (${n})`))}. Alle clubs staan op <a href="/comedy-clubs/">Comedy Clubs</a>.</p>`);
+        if (steden.length) uit.push(`<p>Comedy in de buurt: de meeste stand-up comedyshows zijn in ${opsomming(steden.map(([p, n]) => `${plaatsLink(p)} (${n})`))}. Kies hierboven <em>Afstand</em> om comedy binnen 10, 25 of 50 km te zien.</p>`);
+        return uit;
+      },
+      extraVragen: () => [
+        ["Wat is het verschil tussen comedy en cabaret?", "Stand-up comedy draait om grappen en verhalen, vaak los van elkaar en met veel interactie met het publiek. Cabaret is meestal één avondvullende voorstelling met een rode draad, liedjes en een decor. Veel artiesten doen allebei; <a href=\"/agenda/cabaret/\">cabaret</a> heeft een eigen pagina."],
+      ],
       vragen: [
         ["Wat is stand-up comedy?", "Een comedian vertelt grappen en verhalen rechtstreeks aan het publiek, meestal alleen met een microfoon. Een avond kan een solovoorstelling zijn of een line-up met meerdere comedians en een presentator."],
-        ["Waar kan ik stand-up comedy zien?", "In theaters en vooral in comedyclubs. Op <a href=\"/comedy-clubs/\">Comedy Clubs</a> staan alle clubs met hun programma."],
-        ["Is er ook stand-up comedy in het Engels?", "Ja. Veel comedyclubs hebben vaste Engelstalige avonden, en internationale comedians spelen regelmatig in Nederland en België."],
+        ["Waar kan ik comedy zien?", "In theaters en vooral in comedyclubs. Op <a href=\"/comedy-clubs/\">Comedy Clubs</a> staan alle clubs met hun programma."],
+        ["Is er ook comedy in het Engels?", "Ja. Veel comedyclubs hebben vaste Engelstalige avonden, en internationale comedians spelen regelmatig in Nederland en België."],
       ],
     },
     oudejaarsconference: {
@@ -2159,10 +2176,10 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   };
   const genreLijst = (g) => up.filter((x) => heeftGenre(x, g));
   const GENRE_PAGINAS = Object.keys(GENRE_INFO).filter((g) => GENRES[g] && genreLijst(g).length);
-  const genreLink = (g) => `<a href="/agenda/${g}/">${esc(GENRE_INFO[g].kop)}</a>`;
+  const genreLink = (g) => `<a href="${genrePad(g)}">${esc(GENRE_INFO[g].kop)}</a>`;
 
   function genrePagina(g) {
-    const info = GENRE_INFO[g], list = genreLijst(g), pad = `/agenda/${g}/`;
+    const info = GENRE_INFO[g], list = genreLijst(g), pad = genrePad(g);
     const artiesten = telPer(list.flatMap((x) => V.get(x.voorstelling).artiesten).filter((id) => !isFestival(id)), (id) => id).slice(0, 6);
     const steden = telPer(list, (x) => T.get(x.theater).plaats);
     const zalen = new Set(list.map((x) => x.theater)).size;
@@ -2239,7 +2256,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const tekst = [];
     tekst.push(`<p>Een try-out is een voorstelling van een nieuw programma vóór de première. De artiest speelt het programma dan voor publiek om te kijken wat werkt: grappen kunnen nog veranderen, scènes kunnen verdwijnen of erbij komen. Kaarten voor een try-out zijn vaak goedkoper dan voor de voorstelling na de première.</p>`);
     tekst.push(`<p>De komende tijd staan er ${list.length.toLocaleString("nl-NL")} try-outs in de agenda, ${periode(list)}, in ${plural(zalen.length, "zaal", "zalen")} in ${plural(steden.length, "plaats", "plaatsen")}.${artiesten.length ? ` De meeste try-outs spelen ${opsomming(artiesten.slice(0, 6).map(naamMet))}.` : ""} Ze zijn vooral in ${opsomming(steden.slice(0, 5).map(([p, n]) => `${plaatsLink(p)} (${n})`))}.${uit ? ` ${uit} try-outs zijn al uitverkocht.` : ""}</p>`);
-    if (genres.length > 1) tekst.push(`<p>Het gaat om ${opsomming(genres.slice(0, 4).map(([g, n]) => `${n} keer ${GENRE_PAGINAS.includes(g) ? `<a href="/agenda/${g}/">${esc(GENRE_TEKST[g])}</a>` : esc(GENRE_TEKST[g])}`))}.</p>`);
+    if (genres.length > 1) tekst.push(`<p>Het gaat om ${opsomming(genres.slice(0, 4).map(([g, n]) => `${n} keer ${GENRE_PAGINAS.includes(g) ? `<a href="${genrePad(g)}">${esc(GENRE_TEKST[g])}</a>` : esc(GENRE_TEKST[g])}`))}.</p>`);
     if (premieres.length) tekst.push(`<p>Na de try-outs volgt de première. In de agenda staan onder meer ${opsomming(premieres.slice(0, 4).map((g) => `${wat(g)} op ${fmt.dayMonth(g.datum)} in ${theaterLink(g.theater)}`))}.</p>`);
     const vragen = [
       ["Wat is een try-out?", "Een voorstelling van een nieuw programma vóór de première. Het programma is nog in ontwikkeling: de artiest test wat werkt en past de voorstelling daarna vaak nog aan."],
@@ -2279,7 +2296,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   // Landingspagina's per genre en plaats, zoals /agenda/cabaret/amsterdam/ (alleen de genres in GENRE_PER_PLAATS).
   const GENRE_PER_PLAATS = ["cabaret", "kindervoorstellingen"];
-  const genrePlaatsPad = (g, p) => `/agenda/${g}/${plaatsId(p)}/`;
+  const genrePlaatsPad = (g, p) => `${genrePad(g)}${plaatsId(p)}/`;
   // Alleen plaatsen met minstens GENRE_PLAATS_DREMPEL voorstellingen krijgen een pagina (anders te dun voor Google);
   // een verdwenen pagina stuurt public/.htaccess met een 301 door naar de plaatspagina.
   const GENRE_PLAATS_DREMPEL = 3;
@@ -2340,7 +2357,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </div>`;
     const desc = zinnen(`${info.kop} in ${p}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}.`, artiestTel.length ? `Met onder meer ${opsomming(artiestTel.slice(0, 3).map(([id]) => A.get(id).naam))}.` : "", "Kaarten koop je bij het theater.");
     return layout({ title: info.plaatsTitel ? info.plaatsTitel(p) : `${info.kop} in ${p}: agenda en kaarten`, description: desc, path: pad, section: "agenda", body,
-      schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], [info.kop, `/agenda/${g}/`], [p, pad]], extra: [...eventsLd(list), faqLd(vragen, pad)] } });
+      schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], [info.kop, genrePad(g)], [p, pad]], extra: [...eventsLd(list), faqLd(vragen, pad)] } });
   }
 
 
@@ -2894,7 +2911,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   }
 
   return {
-    controlePagina, dashboardPagina, dashboardPad, nieuwsPagina, nieuwsBericht, inDeBuurtPagina,
+    genrePad, controlePagina, dashboardPagina, dashboardPad, nieuwsPagina, nieuwsBericht, inDeBuurtPagina,
     home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, genrePagina, GENRE_PAGINAS, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, plaatsPad, maandId, tryoutPagina, tryoutLijst, genrePlaatsPaginas, genrePlaatsPagina, genrePlaatsPad, voorstellingPaden: voorstellingPad,
   };
