@@ -1,0 +1,802 @@
+{
+  "bron": "janbeuving",
+  "naam": "Speellijst van Jan Beuving",
+  "soort": "speellijst",
+  "opgehaald": "2026-11-19",
+  "theaters": [],
+  "speeldata": [
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Heerd",
+        "plaats": "Heerde",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-11-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.deheerdheerde.nl/theater?TwwAction=TicketShopActivityDetail&TwwActivityID=279459"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Agora",
+        "plaats": "Lelystad",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.agora-lelystad.nl/agenda/jan-beuving-rs6d"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Hengelo",
+        "plaats": "Hengelo",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-11-26",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/dekpunt-jan-beuving/26-11-2026-20-30"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Maaspoort",
+        "plaats": "Venlo",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/dekpunt-jan-beuving/28-11-2026-20-15/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg",
+        "plaats": "Haarlem",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-12-09",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsschouwburghaarlem.nl/agenda/jan-beuving-dekpunt"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Voorveghter",
+        "plaats": "Hardenberg",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-12-10",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.voorveghter.nl/programma/jan-beuving/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Meervaart",
+        "plaats": "Amsterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://meervaart.nl/agenda/jan-beuving"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Leest",
+        "plaats": "Waalwijk",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.deleest.nl/programma/jan-beuving-579h"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Diligentia",
+        "plaats": "Den Haag",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-06",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.diligentia-pepijn.nl/agenda/jan-beuving-ty11"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Verkadefabriek",
+        "plaats": "'s-Hertogenbosch",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/jan-beuving-dekpuntreprise-162260"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Flint",
+        "plaats": "Amersfoort",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://flint.nl/agenda/jan-beuving-hans-vroomans-dekpunt/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsschouwburg",
+        "plaats": "Utrecht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/dekpunt-jan-beuving?q-page=Beuving"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Posttheater",
+        "plaats": "Arnhem",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.posttheater.nl/activiteit/11897/2027-01-16/jan-beuving"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Kleine Komedie",
+        "plaats": "Amsterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekleinekomedie.nl/agenda/jan-beuving-q816"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Kleine Komedie",
+        "plaats": "Amsterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekleinekomedie.nl/agenda/jan-beuving-q816"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Kleine Komedie",
+        "plaats": "Amsterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekleinekomedie.nl/agenda/jan-beuving-q816"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Veste",
+        "plaats": "Delft",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-27",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdeveste.nl/programma/dekpunt-jx88"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schaffelaartheater",
+        "plaats": "Barneveld",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://schaffelaartheater.nl/agenda/jan-beuving/?eventId=12174"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Harmonie",
+        "plaats": "Leeuwarden",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-01-30",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/jan-beuving/53022"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Vest",
+        "plaats": "Alkmaar",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-03",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdevest.nl/tickets/seizoen-26-27/jan-beuving-dekpunt/?showId=5153776897-1765466121"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Amphion",
+        "plaats": "Doetinchem",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/jan-beuving-dekpunt/04-02-2027-20-30/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Het Kruispunt",
+        "plaats": "Barendrecht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterhetkruispunt.nl/agenda/jan-beuving-slfg"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Goudse Schouwburg",
+        "plaats": "Gouda",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-10",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/jan-beuving-dekpunt-10025530/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Energiehuis",
+        "plaats": "Dordrecht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/jan-beuving-dekpunt/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Junushoff",
+        "plaats": "Wageningen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.junushoff.nl/programma/jan-beuving-fl2w"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Nieuwe Kolk",
+        "plaats": "Assen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denieuwekolk.nl/theater/agenda/jan-beuving"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsgehoorzaal",
+        "plaats": "Kampen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsgehoorzaalkampen.nl/voorstellingen/jan-beuving/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Spant",
+        "plaats": "Bussum",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-20",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.spant.org/voorstellingen/jan-beuving"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Kring",
+        "plaats": "Roosendaal",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-24",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekringroosendaal.nl/agenda/dekpunt-xnrz"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Tamboer",
+        "plaats": "Hoogeveen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-25",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://detamboer.nl/programma/jan-beuving-dekpunt-2027"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Posthuistheater",
+        "plaats": "Heerenveen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.posthuistheater.nl/agenda/jan-beuving-xnd7"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Leidse Schouwburg",
+        "plaats": "Leiden",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jan-beuving-dekpunt/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Lochem",
+        "plaats": "Lochem",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburglochem.nl/voorstelling/jan-beuving-2026/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Castellum",
+        "plaats": "Alphen aan den Rijn",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://castellum.nl/theater/jan-beuving-dekpunt"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Speeldoos",
+        "plaats": "Baarn",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.speeldoosbaarn.nl/agenda/jan-beuving-ncnh"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadstheater",
+        "plaats": "Zoetermeer",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-04-07",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadstheater.nl/voorstelling/jan-beuving/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Warenar",
+        "plaats": "Wassenaar",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.warenar.nl/productie/jan-beuving/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Storm",
+        "plaats": "Winterswijk",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdestorm.nl/voorstelling/cabaret/jan-beuving/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Het Park",
+        "plaats": "Hoorn",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-04-21",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/jan-beuving-10352616/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Beun",
+        "plaats": "Heiloo",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://debeunheiloo.nl/jan-beuving-dekpunt/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Heerlen",
+        "plaats": "Heerlen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-04-28",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/jan-beuving-dekpunt/28-04-2027-20-30"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Odeon",
+        "plaats": "Zwolle",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/jan-beuving"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Luifel",
+        "plaats": "Heemstede",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-05-01",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://tickets.podiaheemstede.nl/nl-NL/Show/Details/Jan-Beuving-Dekpunt-1-mei-45389"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Parktheater",
+        "plaats": "Eindhoven",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-09-22",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/dekpunt-rx3m"
+    }
+  ],
+  "recensies": {}
+}

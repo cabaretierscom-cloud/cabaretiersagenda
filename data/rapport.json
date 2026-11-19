@@ -1,8 +1,8 @@
 {
   "datum": "2026-11-19",
   "totaal": {
-    "speeldata": 9239,
-    "komend": 8151,
+    "speeldata": 9265,
+    "komend": 8177,
     "artiesten": 965,
     "zalen": 734,
     "plaatsen": 508,
@@ -602,6 +602,14 @@
       "dubbel": 62
     },
     {
+      "bron": "janbeuving",
+      "naam": "Speellijst van Jan Beuving",
+      "opgehaald": "2026-11-19",
+      "speeldata": 26,
+      "vorige": 0,
+      "dubbel": 18
+    },
+    {
       "bron": "kobra",
       "naam": "Speellijsten van Kobra Theaterproducties (import)",
       "opgehaald": "2026-11-01",
@@ -614,7 +622,7 @@
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-19",
       "speeldata": 2423,
-      "vorige": 2422,
+      "vorige": 2423,
       "dubbel": 1326
     }
   ],
@@ -949,8 +957,8 @@
     },
     {
       "datum": "2026-11-19",
-      "speeldata": 9239,
-      "komend": 8151,
+      "speeldata": 9265,
+      "komend": 8177,
       "artiesten": 965,
       "zalen": 734,
       "plaatsen": 508,
