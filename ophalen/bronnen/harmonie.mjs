@@ -1,14 +1,14 @@
 // De Harmonie, Leeuwarden.
 // De agendapagina laadt haar voorstellingen met een formulierverzoek naar /api/agenda
 // (met het CSRF-token uit de pagina en de sessiecookie), gefilterd op genre.
-// Dat doen we hier precies zo, voor de genres Cabaret en Comedy.
+// Dat doen we hier precies zo, voor de genres Cabaret, Comedy en Jeugd & Familie.
 // Per avond: titel, ondertitel, genre, label (bijv. Uitverkocht) en datum; geen tijd.
 import { getText, postForm } from "../lib/http.mjs";
 import { decodeEntities, stripTags } from "../lib/html.mjs";
 import { herkenGenre, herkenSoort, netteHoofdletters, netteNaam } from "../lib/normaliseer.mjs";
 
 const BASIS = "https://harmonie.nl";
-const GENRES = { 43: "cabaret", 67: "stand-up" };
+const GENRES = { 43: "cabaret", 67: "stand-up", 38: "kindervoorstellingen" }; // 38: Jeugd & Familie (sinds november 2026)
 
 function status(label) {
   const t = String(label || "").toLowerCase();

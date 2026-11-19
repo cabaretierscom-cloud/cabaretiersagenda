@@ -1,7 +1,7 @@
 {
   "bron": "parade",
   "naam": "Theater aan de Parade",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "theater-aan-de-parade",
@@ -94,15 +94,80 @@
     {
       "theater": "theater-aan-de-parade",
       "artiesten": [
-        "Patrick Laureij"
+        "Introdans"
       ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:00",
+      "titel": "Swan Lake (van 6-106 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "19:00",
       "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.theateraandeparade.nl/nl/programma/patrick-laureij-kintsugi-reprise"
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/swan-lake-introdans"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "BazarMedia"
+      ],
+      "titel": "De Nog Grotere Slijmmusical (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-01",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/de-nog-grotere-slijmmusical-6"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Meneer Monster"
+      ],
+      "titel": "De Waanzinnige Boomhut van 78 Verdiepingen (6 - 12 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/de-waanzinnige-boomhut-van-78-meneer-monster"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Het Houten Huis"
+      ],
+      "titel": "Grondtonen (9+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-29",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/grondtonen-het-houten-huis"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Theater Terra"
+      ],
+      "titel": "Kikker is Kikker (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/kikker-is-kikker-terra"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Maas Theater en Dans & Acteursgroep Wunderbaum"
+      ],
+      "titel": "En nou gaan we even helemaal uit onze plaat (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/en-nou-gaan-we-even-helemaal-uit-onze-plaat-6"
     },
     {
       "theater": "theater-aan-de-parade",
@@ -237,19 +302,6 @@
     {
       "theater": "theater-aan-de-parade",
       "artiesten": [
-        "Kiki Schippers"
-      ],
-      "titel": "Praktische bezwaren",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraandeparade.nl/nl/programma/kiki-schippers-praktische-bezwaren"
-    },
-    {
-      "theater": "theater-aan-de-parade",
-      "artiesten": [
         "Jandino"
       ],
       "titel": "De grote jubileumshow - jandino 20 jaar",
@@ -315,6 +367,32 @@
     {
       "theater": "theater-aan-de-parade",
       "artiesten": [
+        "SlodDe & VoS"
+      ],
+      "titel": "SlodDe & VoS in Winter Wonderland (3 – 8 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/slodde-en-vos-in-winterwonderl-slodde-en-vos"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Prentenboekjesfestival"
+      ],
+      "titel": "Anansi de spin en de gulzige tijger (3 - 7 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-03",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/anansi-de-spin-en-de-gulzige-t-vanaf-twee-producties"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
         "Ronald Goedemondt"
       ],
       "titel": "Mijn Lieve Achterdocht",
@@ -324,6 +402,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraandeparade.nl/nl/programma/ronald-goedemondt-mijn-lieve-achterdocht"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Percossa"
+      ],
+      "titel": "Gewoontedieren (7 - 10 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/gewoontedieren-percossa"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "155 & Maas Theater en Dans"
+      ],
+      "titel": "Controle (12+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-29",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/155-maas-controle"
     },
     {
       "theater": "theater-aan-de-parade",
@@ -414,15 +518,15 @@
     {
       "theater": "theater-aan-de-parade",
       "artiesten": [
-        "Saman Amini's Integratieplan #2: Alles is Perspectief"
+        "Kan Wim? - Oudejaars van de KTA studenten"
       ],
-      "titel": "Black Sheep Can Fly",
+      "titel": "Koningstheateracademie",
       "genre": "cabaret",
-      "datum": "2026-10-30",
+      "datum": "2026-12-18",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.theateraandeparade.nl/nl/programma/saman-aminis-integratieplan--black-sheep-can-fly"
+      "bron": "https://www.theateraandeparade.nl/nl/programma/kan-wim-oudejaars-van-de-kta-studenten"
     },
     {
       "theater": "theater-aan-de-parade",
@@ -453,6 +557,84 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraandeparade.nl/nl/programma/papa-zonder-handleiding-xl-jorgen-rayman-emiel-van-der-logt-howard-komproe"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "November Music: Sound Explorers (6+) - Modelo62"
+      ],
+      "titel": "Voor de kids!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/november-music-soundexplorers-modelo62"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "November Music Kids"
+      ],
+      "titel": "Kom spelen, ontdekken en knutselen",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/november-music-kids"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Theaterlab: Efteling vertelt…Baron 1898 (6-12 jaar)"
+      ],
+      "titel": "Alleen voor kinderen. Ouders zijn deze keer even vrij",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/theaterlab-efteling-verteltbaron-1898"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Theaterlab: EN NOU GAAN WE EVEN HELEMAAL UIT ONZE PLAAT (6-12 jaar)"
+      ],
+      "titel": "Alleen voor kinderen. Ouders zijn deze keer even vrij",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/theaterlab-en-nou-gaan-we-even-helemaal-uit-onze-plaat"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Een unieke ervaring in Theater aan de Parade!"
+      ],
+      "titel": "Musical4daagse: Kerstvakantie (6-12 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-27",
+      "tijd": "09:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/musical4daagse-kerstvakantie"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "Een unieke ervaring in Theater aan de Parade!"
+      ],
+      "titel": "Musical4daagse: Zomervakantie (6-12 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-28",
+      "tijd": "09:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/musical4daagse-zomervakantie"
     }
   ],
   "recensies": {}

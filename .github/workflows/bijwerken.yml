@@ -1,6 +1,7 @@
 # Elke nacht: speellijsten ophalen, samenvoegen, opslaan en de site op Cloud86 zetten.
 # Bij elke wijziging op main: alleen bouwen en de site op Cloud86 zetten.
 # Nodig in Settings > Secrets and variables > Actions: CLOUD86_HOST, CLOUD86_USER, CLOUD86_PASSWORD.
+# Voor /dashboard/ ook GA_SERVICE_ACCOUNT_B64 (de sleutel van het serviceaccount claude-lezer, in base64).
 name: Agenda bijwerken
 
 on:
@@ -37,6 +38,43 @@ jobs:
         if: github.event_name != 'push'
         run: npm run samenvoegen
 
+      # De cijfers van de vorige run (in de cache van GitHub Actions, niet in de openbare repository). Lukt ophalen
+      # niet (Google gaf in november 2026 een middag lang 502-fouten), dan toont /dashboard/ de vorige cijfers.
+      - name: Vorige dashboardcijfers terugzetten
+        id: vorige-cijfers
+        uses: actions/cache/restore@v4
+        with:
+          path: data/ga-dashboard.json
+          key: ga-dashboard-${{ github.run_id }}
+          restore-keys: ga-dashboard-
+
+      - name: Cijfers voor het dashboard ophalen
+        # 's Nachts verse cijfers; bij een push de vorige uit de cache (alleen ophalen als die er niet is).
+        # Het bestand gaat niet in de repository (openbaar), alleen naar de site.
+        id: cijfers
+        if: github.event_name != 'push' || steps.vorige-cijfers.outputs.cache-matched-key == ''
+        env:
+          GA_SERVICE_ACCOUNT_B64: ${{ secrets.GA_SERVICE_ACCOUNT_B64 }}
+        run: |
+          if [ -z "$GA_SERVICE_ACCOUNT_B64" ]; then
+            echo "::warning::Geen GA_SERVICE_ACCOUNT_B64 ingesteld; /dashboard/ toont geen cijfers."
+            exit 0
+          fi
+          if npm run ga -- dashboard; then
+            echo "gelukt=ja" >> "$GITHUB_OUTPUT"
+          elif [ -f data/ga-dashboard.json ]; then
+            echo "::warning::Google Analytics-cijfers ophalen mislukt; /dashboard/ toont de cijfers van de vorige run."
+          else
+            echo "::warning::Google Analytics-cijfers ophalen mislukt; /dashboard/ toont geen cijfers."
+          fi
+
+      - name: Dashboardcijfers bewaren voor de volgende run
+        if: steps.cijfers.outputs.gelukt == 'ja'
+        uses: actions/cache/save@v4
+        with:
+          path: data/ga-dashboard.json
+          key: ga-dashboard-${{ github.run_id }}
+
       - name: Controleren en bouwen
         run: |
           npm run check
@@ -66,7 +104,16 @@ jobs:
             echo "::warning::Geen Cloud86-gegevens ingesteld; de site is niet geplaatst."
             exit 0
           fi
-          sudo apt-get install -y -qq lftp > /dev/null
+          # lftp installeren. security.ubuntu.com, waar apt lftp haalt, was in november 2026 een middag lang onbereikbaar
+          # vanaf GitHub. Lukt het niet binnen twee minuten, dan plaatst scripts/sftp-plaatsen.py de site (Python met
+          # paramiko van PyPI; dezelfde controle vooraf, alleen gewijzigde bestanden, oude bestanden weg).
+          if ! timeout 120 sudo apt-get install -y -qq lftp > /dev/null 2>&1; then
+            echo "lftp niet te installeren; de site gaat via scripts/sftp-plaatsen.py."
+            python3 -m pip install --quiet paramiko
+            python3 scripts/sftp-plaatsen.py
+            exit $?
+          fi
+          lftp --version | head -1
           verbind="set sftp:auto-confirm yes; set net:max-retries 3; set net:timeout 30; open --env-password -u $GEBRUIKER sftp://$HOST"
           # Op dit hostingpakket heeft elk domein een eigen map; die van www.cabaretiers.com is cabaretiers.com/.
           DOEL=cabaretiers.com

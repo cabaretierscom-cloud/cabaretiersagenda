@@ -15,7 +15,7 @@
   // Vanavond/dit weekend: de pagina is 's nachts gemaakt. Dagen die voorbij zijn verbergen en
   // "Vanavond"/"Morgen" opnieuw bepalen, voor het geval de nachtelijke update later is.
   const morgen = new Date(Date.now() + 864e5).toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" });
-  document.querySelectorAll(".dag-regel[data-datum]").forEach((el) => { if (el.dataset.datum < today) el.hidden = true; });
+  document.querySelectorAll(".dag-kaart[data-datum]").forEach((el) => { if (el.dataset.datum < today) el.hidden = true; });
   document.querySelectorAll(".dag-label[data-dag]").forEach((el) => {
     if (el.dataset.dag === today) el.textContent = "Vanavond";
     else if (el.dataset.dag === morgen) el.textContent = "Morgen";
@@ -50,7 +50,7 @@
     let frame = 0;
     const markeer = () => {
       frame = 0;
-      const posters = [...strip.querySelectorAll(".poster:not([hidden])")];
+      const posters = [...strip.querySelectorAll(".poster:not([hidden]), .artist-card, .dag-kaart:not([hidden])")];
       strip.classList.toggle("vegen", touch.matches);
       let actief = null;
       if (touch.matches && posters.length) {
@@ -258,6 +258,216 @@
     }));
   }
 
+  // ---------- Genrekeuze (#f-genre) ----------
+  // Een uitklapvak met vinkjes: meerdere genres tegelijk, in het adres als ?genre=cabaret,stand-up.
+  // In de balk staan de gekozen genres en het aantal voorstellingen dat erbij hoort.
+  // Oude links met ?genre=theaterkomedie (zo heette komedie tot november 2026) werken ook.
+  // Kindervoorstellingen staan standaard uit (sinds november 2026): zonder vinkje zie je alles behalve
+  // voorstellingen met kindervoorstellingen als hoofdgenre. Wie het vinkje zet, ziet ze wel. Op pagina's met
+  // alleen kindervoorstellingen (de genrepagina, een kindergezelschap) zet de server data-kinder op 0.
+  const KIND = "kindervoorstellingen";
+  // Zoveel voorstellingen per keer in een lijst; de knop "Toon meer voorstellingen" toont de volgende portie.
+  const PORTIE = 50;
+  const leesGenres = (t) => (t || "").split(",").map((x) => x.trim().replace(/^theaterkomedie$/, "komedie")).filter(Boolean);
+  const adres = (p) => p.toString().replace(/%2C/g, ",");
+  function genreKeuze(bijWijziging) {
+    const el = document.getElementById("f-genre");
+    if (!el) return null;
+    const vakjes = [...el.querySelectorAll('input[type="checkbox"]')];
+    const tekst = el.querySelector(".keuze-tekst"), teller = el.querySelector("summary .keuze-n");
+    const waarde = () => vakjes.filter((v) => v.checked).map((v) => v.value);
+    const kinder = +el.dataset.kinder || 0;
+    const label = () => {
+      const gekozen = vakjes.filter((v) => v.checked);
+      tekst.textContent = gekozen.length ? gekozen.map((v) => v.nextElementSibling.firstChild.textContent).join(", ") : "Alle genres";
+      el.classList.toggle("kind-uit", Boolean(kinder) && !gekozen.length);
+      el.classList.toggle("gekozen", gekozen.length > 0);
+    };
+    vakjes.forEach((v) => v.addEventListener("change", () => { label(); bijWijziging(waarde()); }));
+    document.addEventListener("click", (e) => { if (el.open && !el.contains(e.target)) el.open = false; });
+    el.addEventListener("keydown", (e) => { if (e.key === "Escape" && el.open) { el.open = false; el.querySelector("summary").focus(); } });
+    return {
+      zet(lijst) { const s = new Set(lijst); vakjes.forEach((v) => (v.checked = s.has(v.value))); label(); return waarde(); },
+      aantal(n) { teller.textContent = n.toLocaleString("nl-NL"); },
+      totaal: +el.dataset.totaal - kinder,
+      // Zonder vinkjes: hoort deze voorstelling erbij? (genres: hoofdgenre eerst)
+      standaard: (genres) => !kinder || genres[0] !== KIND,
+      kinder,
+    };
+  }
+
+  // Afstand als uitklapvak zoals Genre (.keuze): het <select id="f-km"> blijft de bron van de waarde (verborgen), de
+  // keuzerondjes zetten die en sturen een change; wordt de waarde in de code gezet (wissen, locatie geweigerd), dan
+  // volgt het vak vanzelf.
+  (function afstandKeuze() {
+    const sel = document.getElementById("f-km");
+    if (!sel) return;
+    const kies = sel.closest(".afstand-kies"), pin = kies.querySelector("svg")?.outerHTML || "";
+    const el = document.createElement("details");
+    el.className = "keuze keuze-afstand";
+    el.innerHTML = `<summary aria-describedby="f-km-label">${pin}<span class="keuze-tekst"></span></summary><div class="keuze-lijst" role="radiogroup" aria-labelledby="f-km-label">${[...sel.options].map((o) => `<label><input type="radio" name="km-keuze" value="${o.value}"><span>${o.textContent}</span></label>`).join("")}</div>`;
+    const label = sel.closest(".field").querySelector("label");
+    if (label) { label.id = "f-km-label"; label.removeAttribute("for"); }
+    kies.after(el);
+    kies.hidden = true;
+    const rondjes = [...el.querySelectorAll("input")], tekst = el.querySelector(".keuze-tekst");
+    const bij = () => {
+      for (const r of rondjes) r.checked = r.value === sel.value;
+      tekst.textContent = sel.options[sel.selectedIndex]?.textContent || "Overal";
+      el.classList.toggle("gekozen", Boolean(sel.value));
+    };
+    const echt = Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype, "value");
+    Object.defineProperty(sel, "value", { get: () => echt.get.call(sel), set: (v) => { echt.set.call(sel, v); bij(); } });
+    rondjes.forEach((r) => r.addEventListener("change", () => { sel.value = r.value; el.open = false; sel.dispatchEvent(new Event("change")); }));
+    document.addEventListener("click", (e) => { if (el.open && !el.contains(e.target)) el.open = false; });
+    el.addEventListener("keydown", (e) => { if (e.key === "Escape" && el.open) { el.open = false; el.querySelector("summary").focus(); } });
+    bij();
+  })();
+
+  // Een agendarij uit de gegevens van /agenda/alles.js; dezelfde opmaak als gigRow() in src/templates.mjs (pas ze samen
+  // aan). Gebruikt door /agenda/, de genrepagina's en /in-de-buurt/.
+  const rijVoor = (() => {
+    const esc = (t) => String(t ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+    const nl = (o) => new Intl.DateTimeFormat("nl-NL", o);
+    const fVol = nl({ day: "numeric", month: "long", year: "numeric" }), fKort = nl({ weekday: "short" });
+    const d = (iso) => new Date(iso + "T12:00:00");
+    return function rijVoor(data, g, vastGenre, vastSoort) {
+      const [ais, titel, echte, pad, , kleur] = g.v, [zid, znaam, plaats, pid, land] = g.z;
+      const namen = ais.map((i) => data.a[i][1]).join(" & ");
+      // data.a[i][0] is het adres van de artiest (of het festival); een oud bestand heeft nog de id.
+      const adres = (x) => (x.startsWith("/") ? x : `/artiesten/${x}/`);
+      const artiesten = ais.map((i) => `<a href="${adres(data.a[i][0])}">${esc(data.a[i][1])}</a>`).join(" &amp; ") || esc(titel);
+      // Zelfde opmaak als gigRow()/rijLabels() in src/templates.mjs: titel tussen aanhalingstekens, dan de labels.
+      const titelHtml = ais.length && echte ? `<span class="titel">${pad ? `<a href="${pad}">${esc(echte)}</a>` : esc(echte)}</span>` : "";
+      const comedyavond = !ais.length && g.genres.some((x) => x === "stand-up" || x === "open-mic");
+      const labels = [
+        g.soort && !["reprise", "dernière"].includes(g.soort) && g.soort !== vastSoort ? `<span class="label-soort">${esc(g.soort)}</span>` : "",
+        comedyavond ? `<span class="label-genre">Comedyavond</span>` : "",
+        // Geen label Oudejaarsconference als de titel of naam het al zegt (zoals rijLabels() in src/templates.mjs).
+        ...g.genres.filter((x) => x !== vastGenre && !(x === "oudejaarsconference" && /oudejaars|eindejaars/i.test(`${titel} ${echte || ""} ${namen}`))).map((x) => `<span class="label-genre">${esc(data.genres?.[x] || x)}</span>`),
+      ].join("");
+      const wat = ais.length ? [namen, echte].filter(Boolean).join(": ") : titel;
+      const inAgenda = ["geannuleerd", "verplaatst"].includes(g.status) ? "" : ` data-wat="${esc(wat)}" data-locatie="${esc(`${znaam}, ${plaats}`)}"${g.tijd ? ` data-tijd="${g.tijd}"` : ""}`;
+      const status = g.status === "uitverkocht" ? '<span class="status sold stempel">Uitverkocht</span>'
+        : g.status === "onzeker" ? `<span class="status doubt"${g.opmerking ? ` title="${esc(g.opmerking)}"` : ""}>${data.iconen.doubt}Datum onzeker</span>`
+        : ["geannuleerd", "verplaatst"].includes(g.status) ? `<span class="status sold">${data.iconen.sold}${esc(data.statussen[g.status])}</span>` : "";
+      const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
+      // Zelfde gegevens voor de klikmeting als ticketData() in src/templates.mjs.
+      const meet = ` data-theater="${esc(znaam)}" data-plaats="${esc(plaats)}" data-artiest="${esc(namen)}" data-voorstelling="${esc(titel)}" data-genre="${esc(g.genre)}" data-speeldatum="${g.datum}"`;
+      const ticket = `<a class="btn tickets${kopen ? "" : " ghost"}" href="${esc(g.bron)}" target="_blank" rel="noopener nofollow"${meet}><span class="ticket-tekst">${kopen ? "Tickets" : "Meer info"}</span><span class="ticket-strook">${data.iconen.extern}</span><span class="visually-hidden">: ${esc(namen || titel)} op ${fVol.format(d(g.datum))} in ${esc(znaam)} (externe website, opent in een nieuw tabblad)</span></a>`;
+      return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-genre="${g.genres.join(" ")}" data-status="${g.status}"${inAgenda}>
+      <div class="date"><b>${d(g.datum).getDate()}</b><small>${fKort.format(d(g.datum)).replace(".", "")}${g.tijd ? " " + g.tijd : ""}</small></div>
+      <div class="main"><span class="swatch" style="${kleur};background:var(--bg)" aria-hidden="true"></span><div class="main-text"><span class="artist">${artiesten}</span><span class="show">${titelHtml}${labels}</span></div></div>
+      <div class="venue"><a href="/theaters/${zid}/">${data.iconen.pin || ""}<span class="visually-hidden">Theater: </span>${esc(znaam)}</a><span><a href="/theaters-in-${pid}/">${esc(plaats)}</a>, ${esc(land)}</span></div>
+      <div class="side">${status}<div class="knoppen">${ticket}</div></div>
+    </article>`;
+    };
+  })();
+  // Afstand hemelsbreed (haversine) in kilometers, tussen [lat, lon] en [lat, lon].
+  const afstandKm = ([a, b], [c, d]) => {
+    const r = Math.PI / 180, x = Math.sin(((c - a) * r) / 2) ** 2 + Math.cos(a * r) * Math.cos(c * r) * Math.sin(((d - b) * r) / 2) ** 2;
+    return 12742 * Math.asin(Math.sqrt(x));
+  };
+  // Een agendarij met de afstand erbij (zoals op /in-de-buurt/).
+  // De afstand staat naast het speldje, op één regel met de naam van het theater (als dat past).
+  const metAfstand = (html, km) => html.replace('<span class="visually-hidden">Theater: </span>', `<span class="buurt-afstand">${km < 1 ? "< 1" : Math.round(km)} km</span><span class="visually-hidden">Theater: </span>`);
+  // De rijen van /agenda/alles.js leesbaar maken (artiesten, zaal, genres en een zoektekst per voorstelling).
+  const kaalTekst = (t) => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const leesAlles = (j) => {
+    j.rijen = j.r.map(([datum, tijd, vn, zn, status, soort, bron, opmerking]) => {
+      const v = j.v[vn], z = j.z[zn];
+      const namen = v[0].map((i) => j.a[i][1]);
+      return { datum, tijd, v, z, status, soort, bron, opmerking, genre: v[4], genres: [v[4], ...(v[6] || [])], zoek: kaalTekst([v[1], z[1], z[2], ...namen].join(" ")) };
+    });
+    return j;
+  };
+
+
+  // ---------- /in-de-buurt/: voorstellingen bij je in de buurt ----------
+  // Na een klik vraagt de browser om je locatie (of je kiest een plaats). De afstand tot de plaats van elke zaal
+  // (coördinaten in /agenda/alles.js) wordt hier uitgerekend; de locatie gaat nergens heen en wordt niet bewaard.
+  const buurt = document.querySelector("[data-buurt]");
+  if (buurt) {
+    buurt.hidden = false;
+    const coords = JSON.parse(document.getElementById("buurt-coordinaten")?.textContent || "{}");
+    const status = buurt.querySelector(".buurt-status"), lijstEl = buurt.querySelector(".buurt-lijst");
+    const meer = buurt.querySelector(".laad-meer"), meerKnop = buurt.querySelector(".buurt-meer");
+    const invoer = buurt.querySelector(".buurt-plaats input"), locKnop = buurt.querySelector(".buurt-locatie");
+    const uitverkocht = buurt.querySelector(".buurt-uitverkocht"), kinder = buurt.querySelector(".buurt-kinder");
+    const params = new URLSearchParams(location.search);
+    let km = [10, 25, 50].includes(+params.get("km")) ? +params.get("km") : 25;
+    let punt = null, naam = "", data = null, lijst = [], getoond = 0;
+    // Zit er een oude versie zonder coördinaten in de browser, dan het bestand opnieuw ophalen.
+    const haal = () => data ? Promise.resolve(data) : fetch(buurt.dataset.alles).then((r) => r.json())
+      .then((j) => (j.z.some((z) => z.length > 6) ? j : fetch(buurt.dataset.alles, { cache: "reload" }).then((r) => r.json())))
+      .then((j) => (data = leesAlles(j)));
+    const afstand = afstandKm;
+    const nl = new Intl.DateTimeFormat("nl-NL", { weekday: "long", day: "numeric", month: "long" });
+    const zetKnoppen = () => buurt.querySelectorAll(".buurt-straal button").forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.km === km)));
+    const bewaarAdres = () => {
+      const p = new URLSearchParams();
+      if (naam && naam !== "jouw locatie") p.set("plaats", naam);
+      if (km !== 25) p.set("km", km);
+      history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
+    };
+    const toonTot = (n) => {
+      const doel = Math.min(n, lijst.length);
+      let html = "", vorige = getoond ? lijst[getoond - 1].g.datum : "";
+      for (; getoond < doel; getoond++) {
+        const { g, km: afst } = lijst[getoond];
+        if (g.datum !== vorige) { html += `<h3 class="buurt-dag">${nl.format(new Date(g.datum + "T12:00:00"))}</h3>`; vorige = g.datum; }
+        html += metAfstand(rijVoor(data, g), afst);
+      }
+      lijstEl.insertAdjacentHTML("beforeend", html);
+      agendaKnoppen(lijstEl);
+      const rest = lijst.length - getoond;
+      meer.hidden = rest <= 0;
+      if (rest > 0) meerKnop.textContent = `Toon meer voorstellingen (${Math.min(PORTIE, rest)} van ${rest})`;
+    };
+    async function zoek() {
+      if (!punt) return;
+      zetKnoppen(); bewaarAdres();
+      status.textContent = "Voorstellingen zoeken…";
+      await haal();
+      lijst = data.rijen
+        .filter((g) => g.datum >= today && g.z.length > 6 && g.status !== "geannuleerd")
+        .filter((g) => !uitverkocht.checked || g.status !== "uitverkocht")
+        .filter((g) => kinder.checked || g.genre !== "kindervoorstellingen")
+        .map((g) => ({ g, km: afstand(punt, [g.z[5], g.z[6]]) }))
+        .filter((x) => x.km <= km);
+      lijstEl.innerHTML = ""; getoond = 0;
+      const n = lijst.length;
+      status.textContent = n
+        ? `${n} ${n === 1 ? "voorstelling" : "voorstellingen"} binnen ${km} km van ${naam}.`
+        : `Geen voorstellingen binnen ${km} km van ${naam}.${km < 50 ? " Kies een grotere afstand." : ""}`;
+      toonTot(PORTIE);
+    }
+    const kiesPlaats = (waarde) => {
+      const sleutel = Object.keys(coords).find((p) => p.toLowerCase() === waarde.trim().toLowerCase());
+      if (!sleutel) { if (waarde.trim()) status.textContent = `"${waarde.trim()}" kennen we niet. Kies een plaats uit de lijst.`; return; }
+      punt = coords[sleutel]; naam = sleutel; invoer.value = sleutel; zoek();
+    };
+    const vraagLocatie = () => {
+      if (!navigator.geolocation) { status.textContent = "Je browser kan je locatie niet delen. Kies een plaats."; return; }
+      status.textContent = "Je locatie opvragen…";
+      navigator.geolocation.getCurrentPosition(
+        (pos) => { punt = [pos.coords.latitude, pos.coords.longitude]; naam = "jouw locatie"; invoer.value = ""; zoek(); },
+        () => { status.textContent = "Je locatie is niet gedeeld. Kies een plaats, dan zoeken we vanaf daar."; invoer.focus(); },
+        { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
+    };
+    locKnop.addEventListener("click", vraagLocatie);
+    invoer.addEventListener("change", () => kiesPlaats(invoer.value));
+    invoer.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); kiesPlaats(invoer.value); } });
+    buurt.querySelector(".buurt-straal").addEventListener("click", (e) => { const b = e.target.closest("button[data-km]"); if (b) { km = +b.dataset.km; zetKnoppen(); zoek(); } });
+    uitverkocht.addEventListener("change", zoek);
+    kinder.addEventListener("change", zoek);
+    meerKnop.addEventListener("click", () => toonTot(getoond + PORTIE));
+    zetKnoppen();
+    // Vanaf de homepage (?locatie=1) meteen om de locatie vragen; met ?plaats= meteen vanaf die plaats zoeken.
+    if (params.get("plaats")) kiesPlaats(params.get("plaats"));
+    else if (params.get("locatie") === "1") { history.replaceState(null, "", location.pathname); vraagLocatie(); }
+  }
+
   // ---------- /agenda/: alle voorstellingen, eerst een week, dan de rest ----------
   // De pagina bevat de eerste week. De rest staat in /agenda/alles.js (JSON); "Toon alle volgende voorstellingen" voegt
   // in één keer de rest toe, en zoeken of filteren gebeurt in alle voorstellingen. De rijen hebben dezelfde
@@ -266,7 +476,7 @@
   if (alles) {
     const form = document.getElementById("filters");
     if (form) form.hidden = false;
-    const q = document.getElementById("f-q"), genre = document.getElementById("f-genre"), vinkUit = document.getElementById("f-uitverkocht");
+    const q = document.getElementById("f-q"), vinkUit = document.getElementById("f-uitverkocht");
     const regel = document.getElementById("result-line"), leeg = document.getElementById("empty");
     const laadMeer = document.getElementById("laad-meer"), laadKnop = document.getElementById("laad-week"), naarMaand = document.getElementById("naar-maand");
     const kaal = (t) => String(t).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -280,81 +490,63 @@
     const aantal = (n) => `${n} ${n === 1 ? "voorstelling" : "voorstellingen"}`;
 
     let data = null, laden = null;
-    const haal = () => laden || (laden = fetch(alles.dataset.alles).then((r) => r.json()).then((j) => {
-      data = j;
-      data.rijen = j.r.map(([datum, tijd, vn, zn, status, soort, bron, opmerking]) => {
-        const v = j.v[vn], z = j.z[zn];
-        const namen = v[0].map((i) => j.a[i][1]);
-        return { datum, tijd, v, z, status, soort, bron, opmerking, genre: v[4], zoek: kaal([v[1], z[1], z[2], ...namen].join(" ")) };
-      });
-      return data;
-    }));
+    const haal = () => laden || (laden = fetch(alles.dataset.alles).then((r) => r.json())
+      .then((j) => (j.z.some((z) => z.length > 6) ? j : fetch(alles.dataset.alles, { cache: "reload" }).then((r) => r.json())))
+      .then((j) => (data = leesAlles(j))));
 
-    function rijHtml(g) {
-      const [ais, titel, echte, pad, , kleur] = g.v, [zid, znaam, plaats, pid, land] = g.z;
-      const namen = ais.map((i) => data.a[i][1]).join(" & ");
-      // data.a[i][0] is het adres van de artiest (of het festival); een oud bestand heeft nog de id.
-      const adres = (x) => (x.startsWith("/") ? x : `/artiesten/${x}/`);
-      const artiesten = ais.map((i) => `<a href="${adres(data.a[i][0])}">${esc(data.a[i][1])}</a>`).join(" &amp; ") || esc(titel);
-      const show = !ais.length ? esc(znaam) : echte ? (pad ? `<a href="${pad}">${esc(echte)}</a>` : esc(echte)) : "";
-      const wat = ais.length ? [namen, echte].filter(Boolean).join(": ") : titel;
-      const inAgenda = ["geannuleerd", "verplaatst"].includes(g.status) ? "" : ` data-wat="${esc(wat)}" data-locatie="${esc(`${znaam}, ${plaats}`)}"${g.tijd ? ` data-tijd="${g.tijd}"` : ""}`;
-      const status = g.status === "uitverkocht" ? '<span class="status sold stempel">Uitverkocht</span>'
-        : g.status === "onzeker" ? `<span class="status doubt"${g.opmerking ? ` title="${esc(g.opmerking)}"` : ""}>${data.iconen.doubt}Datum onzeker</span>`
-        : ["geannuleerd", "verplaatst"].includes(g.status) ? `<span class="status sold">${data.iconen.sold}${esc(data.statussen[g.status])}</span>` : "";
-      const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
-      const ticket = `<a class="btn tickets${kopen ? "" : " ghost"}" href="${esc(g.bron)}" target="_blank" rel="noopener nofollow"><span class="ticket-tekst">${kopen ? "Tickets" : "Meer info"}</span><span class="ticket-strook">${data.iconen.extern}</span><span class="visually-hidden">: ${esc(namen || titel)} op ${fVol.format(d(g.datum))} in ${esc(znaam)} (externe website, opent in een nieuw tabblad)</span></a>`;
-      return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-genre="${g.genre}" data-status="${g.status}"${inAgenda}>
-      <div class="date"><b>${d(g.datum).getDate()}</b><small>${fKort.format(d(g.datum)).replace(".", "")}${g.tijd ? " " + g.tijd : ""}</small></div>
-      <div class="main"><span class="swatch" style="${kleur};background:var(--bg)" aria-hidden="true"></span><div class="main-text"><span class="artist">${artiesten}</span><span class="show">${show}${g.soort ? ` <span class="pill">${esc(g.soort)}</span>` : ""}</span></div></div>
-      <div class="venue"><a href="/theaters/${zid}/">${esc(znaam)}</a><span><a href="/plaatsen/${pid}/">${esc(plaats)}</a>, ${esc(land)}</span></div>
-      <div class="side">${status}<div class="knoppen">${ticket}</div></div>
-    </article>`;
-    }
+    // Afstand (/agenda/, genrepagina's en try-outs): "Binnen 25 km van mij" vraagt de locatie van de browser; die blijft hier en gaat nergens heen.
+    const kmVeld = document.getElementById("f-km");
+    let punt = null;
+    const kmGekozen = () => (kmVeld && kmVeld.value && punt ? +kmVeld.value : 0);
+    const afstandVan = (g) => (g.z.length > 6 ? afstandKm(punt, [g.z[5], g.z[6]]) : Infinity);
+    const rijHtml = (g) => (kmGekozen() ? metAfstand(rijVoor(data, g, vastGenre, vastSoort), afstandVan(g)) : rijVoor(data, g, vastGenre, vastSoort));
 
     // Stand van de filters (ook in het webadres, zodat je een zoekopdracht kunt delen).
     const params = new URLSearchParams(location.search);
-    const stand = { q: params.get("q") || "", genre: params.get("genre") || "", uitverkocht: params.get("uitverkocht") === "1" ? "1" : "" };
+    // soort (zoals try-out) heeft geen eigen veld: alleen via het adres, vanaf /agenda/try-outs/.
+    const stand = { q: params.get("q") || "", genre: params.get("genre") || "", uitverkocht: params.get("uitverkocht") === "1" ? "1" : "", soort: params.get("soort") || "" };
     if (q) q.value = stand.q;
-    if (genre) { genre.value = stand.genre; if (genre.value !== stand.genre) stand.genre = genre.value = ""; }
+    // Op een genrepagina of /agenda/try-outs/ zoekt het script alleen binnen dat genre of die soort.
+    const vastGenre = alles.dataset.vastGenre, vastSoort = alles.dataset.vastSoort;
+    const inVast = (g) => (!vastGenre || g.genres.includes(vastGenre)) && (!vastSoort || (g.soort === vastSoort && g.status !== "geannuleerd"));
+    const genre = genreKeuze((w) => { stand.genre = w.join(","); pasToe(); });
+    stand.genre = genre ? genre.zet(leesGenres(stand.genre)).join(",") : "";
     if (vinkUit) vinkUit.checked = stand.uitverkocht === "1";
-    const gefilterd = () => Boolean(stand.q.trim() || stand.genre || stand.uitverkocht);
+    const gefilterd = () => Boolean(stand.q.trim() || stand.genre || stand.uitverkocht || stand.soort || kmGekozen());
 
-    let lijst = [], weken = [], getoond = 0;
-    // Groepeer per week (maandag t/m zondag); de eerste week begint bij de eerste voorstelling.
-    const perWeek = (rijen) => {
-      const m = new Map();
-      for (const g of rijen) { const w = maandag(g.datum); if (!m.has(w)) m.set(w, []); m.get(w).push(g); }
-      return [...m.values()];
+    // Per keer 50 voorstellingen (PORTIE), met een knop voor de volgende 50; ook bij zoeken en filteren.
+    // Zonder filter staan de eerste voorstellingen al in de pagina (zonder JavaScript is dat de lijst);
+    // de knop laadt dan alles uit /agenda/alles.js en toont de volgende 50.
+    let lijst = [], getoond = 0, uitPagina = true;
+    const telAlles = () => +alles.dataset.totaal - (genre?.kinder || 0);
+    // Rijen toevoegen tot en met nummer n, per week onder een kop (een week kan over twee porties lopen).
+    const toonTot = (n) => {
+      const doel = Math.min(n, lijst.length);
+      let sectie = alles.lastElementChild;
+      const nieuw = [];
+      for (; getoond < doel; getoond++) {
+        const g = lijst[getoond], w = maandag(g.datum);
+        if (!sectie || sectie.dataset.week !== w) {
+          const zelfdeWeek = lijst.filter((x) => maandag(x.datum) === w);
+          const eind = zelfdeWeek.at(-1).datum > zondag(w) ? zelfdeWeek.at(-1).datum : zondag(w);
+          const plek = document.createElement("div");
+          plek.innerHTML = `<section class="month-group week-groep" data-week="${w}"><h3>${label(zelfdeWeek[0].datum, eind)} <small>${aantal(zelfdeWeek.length)}</small></h3></section>`;
+          sectie = plek.firstElementChild;
+          alles.append(sectie);
+          nieuw.push(sectie);
+        }
+        sectie.insertAdjacentHTML("beforeend", rijHtml(g));
+      }
+      for (const x of new Set([...nieuw, sectie].filter(Boolean))) agendaKnoppen(x);
+      werkKnopBij();
     };
-    const weekHtml = (rijen) => `<section class="month-group week-groep"><h3>${label(rijen[0].datum, rijen.at(-1).datum > zondag(rijen[0].datum) ? rijen.at(-1).datum : zondag(rijen[0].datum))} <small>${aantal(rijen.length)}</small></h3>${rijen.map(rijHtml).join("")}</section>`;
-    const toonWeek = (w) => {
-      const plek = document.createElement("div");
-      plek.innerHTML = weekHtml(w);
-      const sectie = plek.firstElementChild;
-      alles.append(sectie);
-      agendaKnoppen(sectie);
-    };
-    // Alle volgende weken in één keer, maar in porties van een paar weken per keer, zodat de pagina
-    // niet vastloopt; een nieuwe zoekopdracht (ronde) stopt het lopende werk.
-    let ronde = 0;
-    const toonRest = () => {
-      const mijn = ++ronde;
-      laadMeer.hidden = true;
-      const stap = () => {
-        if (mijn !== ronde) return;
-        for (let i = 0; i < 4 && getoond < weken.length; i++) toonWeek(weken[getoond++]);
-        werkKnopBij(true);
-        if (getoond < weken.length) setTimeout(stap, 0);
-      };
-      stap();
-    };
-    const werkKnopBij = (bezig = false) => {
-      const rest = weken.slice(getoond).reduce((n, w) => n + w.length, 0);
-      laadMeer.hidden = bezig || !rest;
-      if (rest) laadKnop.textContent = `Toon alle volgende voorstellingen (${rest})`;
-      const zichtbaar = weken.slice(0, getoond).reduce((n, w) => n + w.length, 0);
-      regel.textContent = gefilterd() ? `${aantal(lijst.length)} gevonden${rest ? `, ${zichtbaar} getoond` : ""}` : `${zichtbaar} van ${aantal(+alles.dataset.totaal)}`;
+    const werkKnopBij = () => {
+      const totaal = uitPagina ? telAlles() : lijst.length;
+      const zichtbaar = uitPagina ? alles.querySelectorAll(".gig:not([hidden])").length : getoond;
+      const rest = totaal - zichtbaar;
+      laadMeer.hidden = rest <= 0;
+      if (rest > 0) laadKnop.textContent = `Toon meer voorstellingen (${Math.min(PORTIE, rest)} van ${rest})`;
+      regel.textContent = gefilterd() ? `${aantal(lijst.length)} gevonden${kmGekozen() ? ` binnen ${kmGekozen()} km van jouw locatie` : ""}${rest > 0 ? `, ${zichtbaar} getoond` : ""}` : `${zichtbaar} van ${aantal(totaal)}`;
       if (leeg) leeg.hidden = !gefilterd() || lijst.length > 0;
       if (naarMaand) naarMaand.hidden = gefilterd();
     };
@@ -362,48 +554,71 @@
     async function pasToe() {
       const p = new URLSearchParams();
       for (const [k, v] of Object.entries(stand)) if (v.trim()) p.set(k, v.trim());
-      history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
-      if (!gefilterd() && !data) return;
+      history.replaceState(null, "", p.toString() ? `?${adres(p)}` : location.pathname);
+      if (!gefilterd() && uitPagina) { if (genre) genre.aantal(genre.totaal); return begin(); }
       await haal();
-      const naald = kaal(stand.q.trim());
-      lijst = data.rijen.filter((g) => g.datum >= today && (!naald || g.zoek.includes(naald)) && (!stand.genre || g.genre === stand.genre) && (!stand.uitverkocht || g.status !== "uitverkocht"));
-      weken = perWeek(lijst); getoond = 0; ronde++;
+      const naald = kaal(stand.q.trim()), kies = new Set(leesGenres(stand.genre));
+      const inGenre = (g) => (kies.size ? g.genres.some((x) => kies.has(x)) : !genre || genre.standaard(g.genres));
+      if (genre) genre.aantal(kies.size ? data.rijen.filter((g) => g.datum >= today && inVast(g) && inGenre(g)).length : genre.totaal);
+      lijst = data.rijen.filter((g) => g.datum >= today && inVast(g) && (!naald || g.zoek.includes(naald)) && inGenre(g) && (!stand.soort || g.soort === stand.soort) && (!stand.uitverkocht || g.status !== "uitverkocht") && (!kmGekozen() || afstandVan(g) <= kmGekozen()));
+      uitPagina = false; getoond = 0;
       alles.innerHTML = "";
-      if (weken.length) toonWeek(weken[getoond++]);
-      werkKnopBij();
+      toonTot(PORTIE);
     }
 
-    // Zonder filter: de eerste week staat al in de pagina; de knop toont alles vanaf de week erna.
+    // Zonder filter: de voorstellingen uit de pagina zelf, de eerste 50 zichtbaar.
     const begin = () => {
-      const eersteWeek = document.querySelectorAll("#gigs .gig").length;
-      lijst = []; weken = [{ length: eersteWeek, server: true }]; getoond = 1;
-      laadMeer.hidden = false;
-      laadKnop.textContent = "Toon alle volgende voorstellingen";
-      regel.textContent = `${eersteWeek} van ${aantal(+alles.dataset.totaal)}`;
+      const rijen = [...alles.querySelectorAll(".gig")];
+      let n = 0;
+      for (const r of rijen) {
+        const mag = r.dataset.datum >= today && (!genre || genre.standaard((r.dataset.genre || "").split(" ")));
+        r.hidden = !mag || n >= PORTIE;
+        if (mag) n++;
+      }
+      for (const groep of alles.querySelectorAll(".month-group")) groep.hidden = !groep.querySelector(".gig:not([hidden])");
+      if (genre) genre.aantal(genre.totaal);
+      werkKnopBij();
     };
     laadKnop.addEventListener("click", async () => {
-      if (weken[0]?.server) {
-        laadKnop.disabled = true;
-        await haal();
-        lijst = data.rijen.filter((g) => g.datum >= today);
-        const tot = alles.dataset.tot;
-        weken = [{ length: lijst.filter((g) => g.datum <= tot).length }, ...perWeek(lijst.filter((g) => g.datum > tot))];
-        getoond = 1;
-        laadKnop.disabled = false;
-      }
-      toonRest();
+      laadKnop.disabled = true;
+      if (uitPagina) {
+        // Nog verborgen rijen in de pagina? Eerst die; anders alles laden en verder vanaf daar.
+        const verborgen = [...alles.querySelectorAll(".gig[hidden]")].filter((r) => r.dataset.datum >= today && (!genre || genre.standaard((r.dataset.genre || "").split(" "))));
+        const zichtbaar = alles.querySelectorAll(".gig:not([hidden])").length;
+        if (verborgen.length >= PORTIE || (verborgen.length && zichtbaar + verborgen.length >= telAlles())) {
+          verborgen.slice(0, PORTIE).forEach((r) => (r.hidden = false));
+          for (const groep of alles.querySelectorAll(".month-group")) groep.hidden = !groep.querySelector(".gig:not([hidden])");
+          werkKnopBij();
+        } else {
+          await haal();
+          lijst = data.rijen.filter((g) => g.datum >= today && inVast(g) && (!genre || genre.standaard(g.genres)));
+          uitPagina = false; getoond = 0;
+          alles.innerHTML = "";
+          toonTot(zichtbaar + PORTIE);
+        }
+      } else toonTot(getoond + PORTIE);
+      laadKnop.disabled = false;
     });
     let timer;
     if (q) {
       q.addEventListener("focus", haal, { once: true });
       q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { stand.q = q.value; pasToe(); }, 200); });
     }
-    if (genre) genre.addEventListener("change", () => { stand.genre = genre.value; pasToe(); });
     if (vinkUit) vinkUit.addEventListener("change", () => { stand.uitverkocht = vinkUit.checked ? "1" : ""; pasToe(); });
+    // Afstand kiezen: de eerste keer vraagt de browser om de locatie; lukt dat niet, dan terug naar "Overal".
+    if (kmVeld) kmVeld.addEventListener("change", () => {
+      if (!kmVeld.value || punt) return pasToe();
+      if (!navigator.geolocation) { kmVeld.value = ""; regel.textContent = "Je browser kan je locatie niet delen."; return; }
+      regel.textContent = "Je locatie opvragen…";
+      navigator.geolocation.getCurrentPosition(
+        (pos) => { punt = [pos.coords.latitude, pos.coords.longitude]; pasToe(); },
+        () => { kmVeld.value = ""; pasToe().then(() => { regel.textContent = "Je locatie is niet gedeeld; je ziet weer alle voorstellingen."; }); },
+        { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
+    });
     form?.addEventListener("submit", (e) => e.preventDefault());
     document.getElementById("reset")?.addEventListener("click", () => {
-      stand.q = stand.genre = stand.uitverkocht = "";
-      if (q) q.value = ""; if (genre) genre.value = ""; if (vinkUit) vinkUit.checked = false;
+      stand.q = stand.genre = stand.uitverkocht = stand.soort = "";
+      if (q) q.value = ""; if (genre) genre.zet([]); if (vinkUit) vinkUit.checked = false; if (kmVeld) kmVeld.value = "";
       pasToe();
     });
     if (gefilterd()) pasToe(); else begin();
@@ -417,11 +632,20 @@
 
   const rows = [...document.querySelectorAll("#gigs .gig")].filter((r) => !r.hidden);
   const veld = (id) => document.getElementById(id);
-  const selects = { maand: veld("f-maand"), genre: veld("f-genre") };
+  const selects = { maand: veld("f-maand") };
   const q = veld("f-q");
   const vinkUit = veld("f-uitverkocht");
   const resultLine = veld("result-line");
   const empty = veld("empty");
+  // Per keer 50 voorstellingen met een knop voor de volgende 50 (niet op maandpagina's: die tonen per week).
+  let limiet = PORTIE;
+  const gigs = document.getElementById("gigs");
+  const meer = document.createElement("p");
+  meer.className = "meer-weken";
+  meer.hidden = true;
+  meer.innerHTML = '<button type="button" class="btn">Toon meer voorstellingen</button>';
+  gigs?.after(meer);
+  meer.querySelector("button").addEventListener("click", () => { limiet += PORTIE; apply(); });
 
   // Filterstand staat in de URL, zodat je een gefilterde lijst kunt delen.
   const params = new URLSearchParams(location.search);
@@ -434,6 +658,27 @@
   }
   if (q) q.value = state.q;
   if (vinkUit) vinkUit.checked = state.uitverkocht === "1";
+  const genre = genreKeuze((w) => { state.genre = w.join(","); opnieuw(); });
+  if (genre) state.genre = genre.zet(leesGenres(params.get("genre"))).join(",");
+
+  // Afstand: "Binnen 25 km van mij" vraagt de locatie van de browser (die blijft hier en gaat nergens heen). De
+  // coördinaten per plaats komen uit /agenda/alles.js (data-geo); de rijen hebben data-land en data-plaats.
+  const kmVeld = veld("f-km");
+  let punt = null, geo = null;
+  const kmGekozen = () => (kmVeld && kmVeld.value && punt && geo ? +kmVeld.value : 0);
+  const afstandRij = (r) => { const c = geo.get(`${r.dataset.land}|${r.dataset.plaats}`); return c ? afstandKm(punt, c) : Infinity; };
+  const laadGeo = () => geo ? Promise.resolve() : fetch(kmVeld.dataset.geo).then((x) => x.json()).then((j) => {
+    geo = new Map();
+    const code = { Nederland: "NL", "België": "BE" };
+    for (const z of j.z) if (z.length > 6) geo.set(`${code[z[4]] || z[4]}|${z[2]}`, [z[5], z[6]]);
+  });
+  // De afstand naast het speldje zetten of weer weghalen.
+  const toonAfstand = (r, km) => {
+    r.querySelector(".buurt-afstand")?.remove();
+    if (!km) return;
+    const plek = [...r.querySelectorAll(".visually-hidden")].find((x) => x.textContent === "Theater: ");
+    plek?.insertAdjacentHTML("beforebegin", `<span class="buurt-afstand">${km < 1 ? "< 1" : Math.round(km)} km</span>`);
+  };
 
   const telling = (shown) => shown === rows.length
     ? `${rows.length === 1 ? "1 voorstelling" : `Alle ${rows.length} voorstellingen`}`
@@ -443,47 +688,85 @@
   const zoekVeld = q?.dataset.veld || "zoek";
   const kaal = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   function apply() {
-    const needle = kaal(state.q.trim());
-    let shown = 0;
+    const needle = kaal(state.q.trim()), kies = new Set(leesGenres(state.genre));
+    const inGenre = (r) => (kies.size ? (r.dataset.genre || "").split(" ").some((x) => kies.has(x)) : !genre || genre.standaard((r.dataset.genre || "").split(" ")));
+    if (genre) genre.aantal(rows.filter(inGenre).length);
+    let shown = 0, passend = 0;
+    const max = perWeek ? Infinity : limiet;
     for (const r of rows) {
       const ok =
         (!state.maand || r.dataset.datum.startsWith(state.maand)) &&
-        (!state.genre || r.dataset.genre === state.genre) &&
+        inGenre(r) &&
         (!state.uitverkocht || r.dataset.status !== "uitverkocht") &&
-        (!needle || kaal(r.dataset[zoekVeld] || "").includes(needle));
-      r.hidden = !ok;
-      if (ok) shown++;
+        (!needle || kaal(r.dataset[zoekVeld] || "").includes(needle)) &&
+        (!kmGekozen() || afstandRij(r) <= kmGekozen());
+      toonAfstand(r, kmGekozen() && afstandRij(r));
+      r.hidden = !ok || passend >= max;
+      if (ok) { passend++; if (passend <= max) shown++; }
     }
-    if (perWeek && Object.values(state).some((v) => v)) toonWeken(Infinity);
+    meer.hidden = passend <= shown;
+    if (passend > shown) meer.querySelector("button").textContent = `Toon meer voorstellingen (${Math.min(PORTIE, passend - shown)} van ${passend - shown})`;
+    if (perWeek && (Object.values(state).some((v) => v) || kmGekozen())) toonWeken(Infinity);
     syncGroups();
-    resultLine.textContent = telling(shown);
+    resultLine.textContent = shown < passend ? `${shown} van ${passend} voorstellingen` : telling(shown);
+    if (kmGekozen()) resultLine.textContent = `${passend} ${passend === 1 ? "voorstelling" : "voorstellingen"} binnen ${kmGekozen()} km van jouw locatie${shown < passend ? `, ${shown} getoond` : ""}`;
     if (empty) empty.hidden = shown > 0;
 
     const p = new URLSearchParams();
     for (const [k, v] of Object.entries(state)) if (v.trim()) p.set(k, v.trim());
-    const qs = p.toString();
+    const qs = adres(p);
     history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
   }
 
+  // Een nieuwe zoekopdracht of filter begint weer bij de eerste 50.
+  function opnieuw() { limiet = PORTIE; apply(); }
   let timer;
-  if (q) q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { state.q = q.value; apply(); }, 150); });
-  for (const [k, el] of Object.entries(selects)) if (el) el.addEventListener("change", () => { state[k] = el.value; apply(); });
-  if (vinkUit) vinkUit.addEventListener("change", () => { state.uitverkocht = vinkUit.checked ? "1" : ""; apply(); });
+  if (q) q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { state.q = q.value; opnieuw(); }, 150); });
+  for (const [k, el] of Object.entries(selects)) if (el) el.addEventListener("change", () => { state[k] = el.value; opnieuw(); });
+  if (vinkUit) vinkUit.addEventListener("change", () => { state.uitverkocht = vinkUit.checked ? "1" : ""; opnieuw(); });
+  // Afstand kiezen: de eerste keer vraagt de browser om de locatie; lukt dat niet, dan terug naar "Overal".
+  if (kmVeld) kmVeld.addEventListener("change", () => {
+    if (!kmVeld.value || punt) return laadGeo().then(opnieuw);
+    if (!navigator.geolocation) { kmVeld.value = ""; resultLine.textContent = "Je browser kan je locatie niet delen."; return; }
+    resultLine.textContent = "Je locatie opvragen…";
+    navigator.geolocation.getCurrentPosition(
+      (pos) => { punt = [pos.coords.latitude, pos.coords.longitude]; laadGeo().then(opnieuw, () => { kmVeld.value = ""; opnieuw(); }); },
+      () => { kmVeld.value = ""; opnieuw(); resultLine.textContent = "Je locatie is niet gedeeld; je ziet weer alle voorstellingen."; },
+      { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
+  });
   form.addEventListener("submit", (e) => e.preventDefault());
   const reset = veld("reset");
   if (reset) reset.addEventListener("click", () => {
     Object.keys(state).forEach((k) => (state[k] = ""));
     if (q) q.value = "";
     Object.values(selects).forEach((el) => { if (el) el.value = ""; });
+    if (genre) genre.zet([]);
     if (vinkUit) vinkUit.checked = false;
-    apply();
+    if (kmVeld) kmVeld.value = "";
+    opnieuw();
     if (q) q.focus();
   });
 
   // Alleen de URL bijwerken als er al een filter in stond; anders de lijst laten zoals hij is.
-  if (location.search) apply();
+  // Ook zonder adresfilter: kindervoorstellingen standaard uit, en per keer 50 voorstellingen.
+  if (location.search || genre?.kinder || (!perWeek && rows.length > PORTIE)) apply();
   else {
     resultLine.textContent = telling(rows.length);
     if (perWeek) toonWeken(weekenZichtbaar);
   }
+})();
+
+// Tijdlijn op /nieuws/: filteren op soort (nieuws, premières, nieuw in de agenda). Zonder JavaScript staat alles er.
+(() => {
+  const blok = document.querySelector("[data-tijdlijn]");
+  if (!blok) return;
+  const knoppen = blok.querySelector(".tijdlijn-filters");
+  const rijen = [...blok.querySelectorAll(".tijdlijn-lijst li")];
+  knoppen.hidden = false;
+  knoppen.addEventListener("click", (e) => {
+    const k = e.target.closest("button");
+    if (!k) return;
+    for (const b of knoppen.querySelectorAll("button")) b.setAttribute("aria-pressed", String(b === k));
+    for (const r of rijen) r.hidden = !!k.dataset.soort && r.dataset.soort !== k.dataset.soort;
+  });
 })();

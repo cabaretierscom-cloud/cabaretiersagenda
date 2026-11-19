@@ -1,0 +1,94 @@
+<!doctype html>
+<!-- Dia's voor carrouselposts van scripts/social-carrousels.mjs, op 1,5x opgenomen:
+     Instagram 720x900 (1080x1350), TikTok 720x1280 (1080x1920), YouTube 720x720 (1080x1080).
+     toon(dia, formaat) zet één dia in beeld: de voorkant, één affiche of het slot. -->
+<html lang="nl" data-theme="light">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/social/affiche.css">
+<style>
+  body { position: relative; }
+  body.instagram { width: 720px; height: 900px; }
+  body.tiktok { width: 720px; height: 1280px; }
+  body.youtube { width: 720px; height: 720px; }
+  .logo { display: inline-flex; align-items: center; gap: 10px; }
+  .logo svg:not(.woord) { width: 40px; height: 40px; display: block; }
+  .logo .wordmark { font-size: 2rem; }
+  .logo .wordmark .tld { font-size: 1.15rem; }
+  .kop { position: absolute; text-align: center; }
+  .kop h1 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: 3rem; line-height: .9; letter-spacing: .005em; margin-top: 6px; }
+  .rij { position: absolute; inset: 0; }
+  .rij .poster { position: absolute; margin-left: -150px; transform-origin: 50% 0; }
+  .veeg { display: inline-flex; align-items: center; gap: 10px; padding: 10px 22px 11px; border-radius: 999px; background: var(--riso-orange); color: #121212; font-weight: 700; font-size: 1.25rem; }
+  .veeg svg { width: 22px; height: 22px; }
+
+  /* Instagram (4:5): niets ligt over het beeld, dus de affiche mag bijna alles vullen. */
+  .instagram .kop { left: 0; right: 0; top: 26px; }
+  /* TikTok (9:16): vrij van de tabbladen boven, de knoppenrij rechts en naam en bijschrift onder, zoals de video's. */
+  .tiktok .kop { left: 0; right: 50px; top: 96px; }
+  /* YouTube (1:1): links het logo en de kop, rechts de affiche. */
+  .youtube .kop { left: 36px; width: 290px; top: 40px; bottom: 40px; text-align: left; display: flex; flex-direction: column; }
+  .youtube .kop h1 { font-size: 4.2rem; margin-top: 26px; }
+  .youtube .kop .site { margin-top: auto; font-family: var(--font-display); font-weight: 800; text-transform: uppercase; font-size: 1.9rem; line-height: 1; }
+  .site span { color: var(--riso-orange); }
+
+  /* Voorkant: drie affiches als een waaier, met een knop om te vegen. */
+  .voor .kop h1 { font-size: 4.6rem; margin-top: 18px; }
+  .voor .veeg-plek { position: absolute; left: 0; text-align: center; }
+  .instagram.voor .veeg-plek { right: 0; bottom: 34px; }
+  .tiktok.voor .veeg-plek { right: 50px; top: 924px; }
+</style>
+</head>
+<body>
+<script>
+  const $ = (s) => document.querySelector(s);
+  const PIJL = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  const kopHtml = (formaat, merk, woord) => `<div class="kop">
+    <span class="logo"><span class="merk">${merk}</span><span class="wordmark">${woord}<span class="tld">.com</span></span></span>
+    <h1>Nu in het theater</h1>
+    ${formaat === "youtube" ? `<p class="site">Alle speeldata op<br><span>cabaretiers.com</span></p>` : ""}
+  </div>`;
+
+  // Waar de affiche (300x540) staat en hoe groot: midden x, bovenkant y, schaal.
+  const PLEK = {
+    instagram: { x: 360, y: 92, schaal: 1.42 },
+    tiktok: { x: 335, y: 206, schaal: 1.45 },
+    youtube: { x: 530, y: 36, schaal: 1.2 },
+  };
+  const zet = (el, x, y, schaal, draai = 0) => {
+    el.style.left = `${x}px`;
+    el.style.top = `${y}px`;
+    el.style.transform = `rotate(${draai}deg) scale(${schaal})`;
+  };
+
+  window.toon = (dia, formaat, merk, woord) => {
+    document.body.className = `${formaat} ${dia.soort}`;
+    if (dia.soort === "slot") {
+      document.body.innerHTML = `<div class="slot">
+        <span class="merk">${merk}</span>
+        <span class="logo-tekst"><span class="wordmark">${woord}<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
+        <p class="oproep">Alle speeldata op<br><span>cabaretiers.com</span></p>
+      </div>`;
+      if (formaat === "tiktok") $(".slot").style.padding = "96px 90px 290px 40px";
+      return;
+    }
+    document.body.innerHTML = `${kopHtml(formaat, merk, woord)}<div class="rij">${dia.affiches.join("")}</div>`;
+    const posters = [...document.querySelectorAll(".rij .poster")];
+    if (dia.soort === "affiche") {
+      const p = PLEK[formaat];
+      zet(posters[0], p.x, p.y, p.schaal);
+      // Op Instagram alleen het logo boven de affiche; de kop staat op de voorkant.
+      if (formaat === "instagram") $(".kop h1").style.display = "none";
+      return;
+    }
+    // Voorkant: hooguit drie affiches als een waaier onder de kop.
+    const midden = formaat === "tiktok" ? 335 : 360, boven = formaat === "tiktok" ? 318 : 196, schaal = formaat === "tiktok" ? 1.05 : 1;
+    const waaier = posters.length === 1 ? [[0, 0, 0]] : posters.length === 2 ? [[-80, 10, -6], [80, 10, 6]] : [[-165, 40, -8], [165, 40, 8], [0, 0, 0]];
+    const volgorde = posters.length >= 3 ? [1, 2, 0] : posters.map((_, i) => i);
+    volgorde.forEach((n, i) => { const [dx, dy, draai] = waaier[i]; zet(posters[n], midden + dx, boven + dy, schaal, draai); posters[n].style.zIndex = String(i); });
+    document.body.insertAdjacentHTML("beforeend", `<div class="veeg-plek"><span class="veeg">Swipe ${PIJL}</span></div>`);
+  };
+</script>
+</body>
+</html>

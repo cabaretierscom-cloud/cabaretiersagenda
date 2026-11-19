@@ -40,6 +40,9 @@ export default {
   id: "bunker",
   naam: "Agenda van Bunker Theaterzaken",
   soort: "speellijst",
+  // Leidend: Bunker weet de juiste titels; een zaal die dezelfde avond anders noemt, krijgt de titel van Bunker
+  // (verzoek van Bunker, november 2026; zie herschik() in samenvoegen.mjs).
+  leidend: true,
   theaters: [],
 
   async ophalen({ log, vandaag }) {

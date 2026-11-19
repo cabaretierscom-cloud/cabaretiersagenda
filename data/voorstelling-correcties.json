@@ -1,0 +1,335 @@
+{
+  "_uitleg": "Verbeteringen van impresariaten en artiesten. titels: avonden van deze artiest met een van deze titels (of zonder titel) krijgen de titel 'naar'. reprise: elke avond van deze voorstelling zonder soort is een reprise. Verwerkt in ophalen/samenvoegen.mjs.",
+  "titels": [
+    {
+      "artiest": "Cabarestafette",
+      "van": [
+        "Nieuw geluid!",
+        "Cabarestafette",
+        "Cabarestafette 26-27"
+      ],
+      "naar": "Cabarestafette 26-27",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "Kor Hoebe",
+      "van": [
+        "Korrelrelatie"
+      ],
+      "naar": "Korrelatie",
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): de voorstelling heet alleen Korrelatie"
+    },
+    {
+      "artiest": "Andries Tunru & Stefan Hendrikx",
+      "van": [
+        "De nogal hyperbijzondere Groningse Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Amsterdamse Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Spijkenissese Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Hengelose oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Bossche Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Goudse Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Tilburgse Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyper-bijzondere Oudejaars-improvisatie-extravaganza",
+        "De nogal hyperbijzondere oudejaars-improvisatie-extravaganza"
+      ],
+      "naar": "De nogal hyperbijzondere Oudejaars-improvisatie-extravaganza 2026",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "Jandino Asporaat",
+      "van": [
+        "De Grote Jubileumshow – Jandino 20 Jaar"
+      ],
+      "naar": "De Grote Jubileumshow - 20 Jaar Jandino",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "Jeroens Clan",
+      "van": [
+        "JUK | Regie: Theo Maassen",
+        "Juk"
+      ],
+      "naar": "JUK",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen; schrijfwijze JUK zoals Jeroens Clan die zelf gebruikt (marketingmateriaal, november 2026)"
+    },
+    {
+      "artiest": "Oscar Smit",
+      "van": [
+        "€ 427.000,-"
+      ],
+      "naar": "€ 472.000,-",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "Groninger Studenten Cabaret Festival",
+      "van": [
+        "Finalistentour 40ste editie",
+        "Finalistentournee (40e editie)",
+        "Finalistentour - 40e editie"
+      ],
+      "naar": "Finalistentournee",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "Cameretten",
+      "van": [
+        "Finalistentour 60e editie"
+      ],
+      "naar": "Finalistentournee",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "Bert Visscher",
+      "van": [
+        "Bert Visscher, 65 Dat Zou Je Niet Zeggen"
+      ],
+      "naar": "65, dat zou je toch niet zeggen",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "Martijn Koning",
+      "van": [
+        "onder leiding van Martijn Koning"
+      ],
+      "naar": "Comedy Comedians",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "Jacques Vermeire",
+      "van": [
+        "(feat. Jacques Vermeire)",
+        "Jacques Vermeire",
+        "feat. Jacques Vermeire"
+      ],
+      "naar": "DDT houdt uitverkoop",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "Vrouwejaars 2026",
+      "van": [
+        "Vrouwejaars 2026",
+        "De blik op 2026 door de ogen van vrouwen!",
+        "De blik op het jaar 2026 door de ogen van vrouwen!",
+        "Katinka Polderman, Kiki Schippers e.v.a. | Theater Overdag",
+        "Yora Rienstra e.a",
+        "Yora Rienstra e.a."
+      ],
+      "naar": "",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "We zijn toch familie",
+      "van": [
+        "Musical Comedy met o.a. Paul de Leeuw en Annick Boer"
+      ],
+      "naar": "",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "Hanneke Drenth & Dianne Liesker",
+      "van": [
+        "Hanneke Drenth en Dianne Liesker",
+        "Hanneke Drenth & Dianne Liesker",
+        "reprise"
+      ],
+      "naar": "Tis hier geen hotel 3",
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "De Cabaret Club",
+      "van": [
+        "Veghel",
+        "Vier korte cabaretvoorstellingen",
+        "Vier mini cabaretvoorstellingen op één avond!"
+      ],
+      "naar": "",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "Alina Sharipova",
+      "van": [
+        "Alina Sharipova -"
+      ],
+      "naar": "",
+      "leeg": false,
+      "bron": "Controle op dubbele voorstellingen (november 2026): dezelfde avonden onder verschillende schrijfwijzen bij verschillende zalen"
+    },
+    {
+      "artiest": "Michael Van Peel",
+      "van": [
+        "Michael Van Peel",
+        "Michael van Peel",
+        "michael van peel"
+      ],
+      "naar": "Farce Majeure",
+      "leeg": false,
+      "bron": "Vlaamse zalen (november 2026): de zaal zette de titel op de plek van de artiest; de artiest staat in de titel"
+    },
+    {
+      "artiest": "Steven Goegebeur",
+      "van": [
+        "Steven Goegebeur",
+        "steven goegebeur"
+      ],
+      "naar": "Pechvogel",
+      "leeg": false,
+      "bron": "Vlaamse zalen (november 2026): de zaal zette de titel op de plek van de artiest; de artiest staat in de titel"
+    },
+    {
+      "artiest": "Thomas Smith",
+      "van": [
+        "Thomas Smith",
+        "thomas smith"
+      ],
+      "naar": "Angst te koop (weg wegens nieuwe hobby)",
+      "leeg": false,
+      "bron": "Vlaamse zalen (november 2026): de zaal zette de titel op de plek van de artiest; de artiest staat in de titel"
+    },
+    {
+      "artiest": "Roel Steeno",
+      "van": [
+        "Roel Steeno",
+        "roel steeno"
+      ],
+      "naar": "Lelijke rosse!",
+      "leeg": false,
+      "bron": "Vlaamse zalen (november 2026): de zaal zette de titel op de plek van de artiest; de artiest staat in de titel"
+    },
+    {
+      "artiest": "Jan Van Looveren",
+      "van": [
+        "Jan Van Looveren",
+        "Jan van Looveren",
+        "jan van looveren"
+      ],
+      "naar": "Vanwaar we komen",
+      "leeg": false,
+      "bron": "Vlaamse zalen (november 2026): de zaal zette de titel op de plek van de artiest; de artiest staat in de titel"
+    },
+    {
+      "artiest": "Géry La Boule",
+      "van": [
+        "Géry La Boule",
+        "géry la boule"
+      ],
+      "naar": "Ni zievere, speile",
+      "leeg": false,
+      "bron": "Vlaamse zalen (november 2026): de zaal zette de titel op de plek van de artiest; de artiest staat in de titel"
+    },
+    {
+      "artiest": "Dagmar Verfaillie",
+      "van": [
+        "Dagmar Verfaillie",
+        "dagmar verfaillie"
+      ],
+      "naar": "Moortelvet",
+      "leeg": false,
+      "bron": "Vlaamse zalen (november 2026): de zaal zette de titel op de plek van de artiest; de artiest staat in de titel"
+    },
+    {
+      "artiest": "Boris-Johannes",
+      "van": [
+        "Boris-Johannes"
+      ],
+      "naar": "Voor wat komen zal",
+      "leeg": false,
+      "bron": "Vlaamse zalen (november 2026): de zaal zette de titel op de plek van de artiest; de artiest staat in de titel"
+    },
+    {
+      "artiest": "Tim Hartog",
+      "van": [
+        "In principe - try-out",
+        "In principe (try-out)",
+        "In principe try-out"
+      ],
+      "naar": "In principe",
+      "leeg": false,
+      "bron": "https://splotsz.nl/evenement/dubbelcabaret/ (de voorstelling heet “In principe”; try-out is de fase, geen deel van de titel)"
+    },
+    {
+      "artiest": "De Interventie",
+      "van": [
+        "De Interventie",
+        "De Interventie show"
+      ],
+      "naar": "",
+      "bron": "https://splotsz.nl/evenement/de-interventie-show/ (De Interventie speelt geen voorstelling met een eigen titel; de groep is de voorstelling)"
+    },
+    {
+      "artiest": "Guido Spek",
+      "van": [
+        "Voor Spek En Bonen"
+      ],
+      "naar": "Voor Spek en Bonen",
+      "leeg": false,
+      "bron": "https://splotsz.nl/evenement/guido-spek/ (schrijfwijze van de titel)"
+    },
+    {
+      "artiest": "Eva Eikhout",
+      "van": [
+        "Eva Eikhout"
+      ],
+      "naar": "Het leven is kort, net als ik",
+      "bron": "https://evaeikhout.nl/ (theatertour: Het leven is kort, net als ik; Theater aan het Spui zet titel en artiest omgedraaid)"
+    },
+    {
+      "artiest": "Elfie Tromp",
+      "van": [
+        "Elfie Tromp doet cabaret",
+        "Aai Poesje, Aai Poesje"
+      ],
+      "naar": "Aai Poesje Aai Poesje",
+      "leeg": false,
+      "bron": "https://elfietromp.nl/speellijst/ (de voorstelling heet Aai Poesje Aai Poesje; Theater De Purmaryn zette titel en artiest omgedraaid)"
+    }
+  ],
+  "reprise": [
+    {
+      "artiest": "Daniël Arends",
+      "titel": "Had ik maar nooit zo aardig gedaan",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "Daniël Arends",
+      "titel": "High Class Bitch",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "David Linszen",
+      "titel": "Striptease Van De Dood",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "Lisa Ostermann",
+      "titel": "De Baas",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "Merijn Scholten",
+      "titel": "Lemming",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "Micha Wertheim",
+      "titel": "Micha Wertheim voor iedereen",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "Patrick Laureij",
+      "titel": "Kintsugi",
+      "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    }
+  ]
+}

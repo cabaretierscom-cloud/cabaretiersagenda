@@ -1,7 +1,7 @@
 {
   "bron": "hof88",
   "naam": "Hof88",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "hof88",
@@ -13,71 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "hof88",
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.hof88.nl/voorstellingen/de-eenzame-ziel-try-out-andre-manuel"
-    },
-    {
-      "theater": "hof88",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.hof88.nl/voorstellingen/revue-revanche-try-out-valentina-toth"
-    },
-    {
-      "theater": "hof88",
-      "artiesten": [
-        "Naomi Antonius"
-      ],
-      "titel": "Geen woorden voor - over de illusie van inclusie",
-      "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.hof88.nl/voorstellingen/geen-woorden-voor-over-de-illusie-van-inclusie-naomi-antonius"
-    },
-    {
-      "theater": "hof88",
-      "artiesten": [
-        "Berit Companjen"
-      ],
-      "titel": "Zei ik dat hardop?",
-      "genre": "cabaret",
-      "datum": "2026-11-17",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.hof88.nl/voorstellingen/zei-ik-dat-hardop-berit-compagnen"
-    },
-    {
-      "theater": "hof88",
-      "artiesten": [
-        "Peter Pannekoek"
-      ],
-      "titel": "Demonen",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.hof88.nl/voorstellingen/try-out-peter-pannekoek"
-    },
     {
       "theater": "hof88",
       "artiesten": [
@@ -224,6 +159,19 @@
     {
       "theater": "hof88",
       "artiesten": [
+        "Prentenboekjesfestival"
+      ],
+      "titel": "2+ en 4+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "09:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/2-en-4-prentenboekjesfestival"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
         "Ruud Smulders"
       ],
       "titel": "Rüdsichtslos",
@@ -285,6 +233,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.hof88.nl/voorstellingen/eigenlijk-viggo-waas-eddie-b-wahr-kees-van-der-vooren"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "De Gele Duikmachine"
+      ],
+      "titel": "The Beatles voor kinderen!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-24",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/the-beatles-voor-kinderen-de-gele-duikmachine"
     },
     {
       "theater": "hof88",
@@ -419,6 +380,19 @@
     {
       "theater": "hof88",
       "artiesten": [
+        "Klein Amsterdam producties"
+      ],
+      "titel": "De Ridder zonder billen - 3+",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/de-ridder-zonder-billen-3-klein-amsterdam-producties"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
         "Alex Ploeg"
       ],
       "titel": "Niks Persoonlijks",
@@ -480,6 +454,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.hof88.nl/voorstellingen/trekvogel-selma-visscher"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "De Dinozoekers"
+      ],
+      "titel": "Triceratops – 5 t/m 10 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/triceratops-5-t-m-10-jaar-de-dinozoekers"
     },
     {
       "theater": "hof88",
@@ -553,7 +540,7 @@
       ],
       "titel": "Iedereen komt aan de beurt",
       "genre": "cabaret",
-      "datum": "2026-12-05",
+      "datum": "2026-12-06",
       "tijd": "20:15",
       "status": "gepland",
       "soort": null,

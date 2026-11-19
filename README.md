@@ -30,6 +30,8 @@ Een solo-artiest kan `"geslacht": "man"` of `"geslacht": "vrouw"` hebben, altijd
 
 Op [www.cabaretiers.com/controle/](https://www.cabaretiers.com/controle/) zie je na elke nachtelijke run of alle bronnen gelukt zijn, wat er nieuw is (artiesten, zalen, voorstellingen) en welke zalen alleen uit speellijsten van artiesten komen. Bovenaan staan waarschuwingen als een bron mislukte, ineens veel minder opleverde, of als de nachtelijke run niet gedraaid heeft. De pagina staat niet in het menu en niet in zoekmachines.
 
+Op [www.cabaretiers.com/dashboard/](https://www.cabaretiers.com/dashboard/) staan de bezoekerscijfers uit Google Analytics van de afgelopen 28 dagen, en via het uitklapmenu per maand (vanaf november 2026): bezoeken en paginaweergaven per dag, het aantal klikken op Tickets-knoppen en de meest bekeken pagina's, theaters, artiesten en plaatsen. Ook deze pagina staat niet in het menu en niet in zoekmachines. De cijfers worden bij elke run opgehaald als het geheim `GA_SERVICE_ACCOUNT_B64` bij GitHub is ingesteld; ze komen niet in de repository, want die is openbaar.
+
 ## Zalen opschonen
 
 Zalen uit de speellijsten van artiesten koppelt het script zelf aan bekende theaters. Gaat dat mis, zet het dan recht in `data/zaal-aliassen.json`:

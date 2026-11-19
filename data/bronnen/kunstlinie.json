@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -42,6 +42,19 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "De musical zonder billen (4+)"
+      ],
+      "titel": "De musical zonder billen (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-09",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/de-musical-zonder-billen-4/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "Deng Boy"
       ],
       "titel": "Deng Boy",
@@ -68,19 +81,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Roué Verveer"
-      ],
-      "titel": "Roué Verveer",
-      "genre": "cabaret",
-      "datum": "2027-05-29",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Steven Brunswijk"
       ],
       "titel": "Steven Brunswijk",
@@ -94,15 +94,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Klaas van der Eerden"
+        "Roué Verveer"
       ],
-      "titel": "Klaas van der Eerden",
+      "titel": "Roué Verveer",
       "genre": "cabaret",
-      "datum": "2027-04-02",
-      "tijd": "20:15",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/klaas-van-der-eerden-2/"
+      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
     },
     {
       "theater": "kunstlinie",
@@ -120,6 +120,19 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Klaas van der Eerden",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/klaas-van-der-eerden-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "Jörgen Raymann"
       ],
       "titel": "Jörgen Raymann",
@@ -129,6 +142,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/jorgen-raymann/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Try-out: Wie is hier nou gek (10+)"
+      ],
+      "titel": "Try-out: Wie is hier nou gek (10+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/try-out-wie-is-hier-nou-gek-10/"
     },
     {
       "theater": "kunstlinie",
@@ -198,19 +224,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Bro’s"
-      ],
-      "titel": "Bro’s",
-      "genre": "cabaret",
-      "datum": "2026-12-19",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/bros/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Joep van Deudekom & Rob Urgert"
       ],
       "titel": "Joep van Deudekom & Rob Urgert",
@@ -224,15 +237,28 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Joanne Telesford"
+        "Bro’s"
       ],
-      "titel": "Joanne Telesford",
+      "titel": "Bro’s",
       "genre": "cabaret",
-      "datum": "2026-11-14",
+      "datum": "2026-12-19",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/joanne-telesford/"
+      "bron": "https://kunstlinie.nl/programma/bros/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "De Grote Almeerse Kerst Sing-A-Long"
+      ],
+      "titel": "De Grote Almeerse Kerst Sing-A-Long",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/de-grote-almeerse-kerst-sing-a-long/"
     },
     {
       "theater": "kunstlinie",
@@ -263,28 +289,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Blind Date"
+        "Yeti (4+)"
       ],
-      "titel": "Blind Date",
-      "genre": "cabaret",
-      "datum": "2027-01-29",
-      "tijd": "20:30",
+      "titel": "Yeti (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "15:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/blind-date-14/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Blind Date"
-      ],
-      "titel": "Blind Date",
-      "genre": "cabaret",
-      "datum": "2027-01-30",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/blind-date-17/"
+      "bron": "https://kunstlinie.nl/programma/yeti-4/"
     },
     {
       "theater": "kunstlinie",
@@ -298,6 +311,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/tim-kroezen/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Swan Lake (6-99 jaar)"
+      ],
+      "titel": "Swan Lake (6-99 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/swan-lake-6-99-jaar/"
     },
     {
       "theater": "kunstlinie",
@@ -334,7 +360,7 @@
       "genre": "cabaret",
       "datum": "2027-03-07",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/peter-heerschop/"
     },
@@ -380,6 +406,19 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "Pinokkio (7+)"
+      ],
+      "titel": "Pinokkio (7+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/pinokkio-7/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "Andries Tunru"
       ],
       "titel": "Andries Tunru",
@@ -399,7 +438,7 @@
       "genre": "cabaret",
       "datum": "2027-04-16",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/rundfunk-3/"
     },
@@ -432,19 +471,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Zaal X Uitgemolken"
-      ],
-      "titel": "Zaal X Uitgemolken",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "19:45",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/zaal-x-uitgemolken-3/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Merijn Scholten"
       ],
       "titel": "Merijn Scholten",
@@ -454,6 +480,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/merijn-scholten-3/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "De Koka Kola Rivier (9+)"
+      ],
+      "titel": "De Koka Kola Rivier (9+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/de-koka-kola-rivier-9/"
     },
     {
       "theater": "kunstlinie",
@@ -523,19 +562,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Guido Weijers"
-      ],
-      "titel": "Guido Weijers",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/guido-weijers-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Esther van der Voort"
       ],
       "titel": "Esther van der Voort",
@@ -562,19 +588,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Zaal X Uitgemolken"
-      ],
-      "titel": "Zaal X Uitgemolken",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "19:45",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/zaal-x-uitgemolken-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Ice"
       ],
       "titel": "Ice",
@@ -588,28 +601,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Henry van Loon"
+        "Missie Maan: Astronauten Gezocht! (8+)"
       ],
-      "titel": "Henry van Loon",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:15",
+      "titel": "Missie Maan: Astronauten Gezocht! (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-16",
+      "tijd": "19:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/henry-van-loon-3/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Swit Tori"
-      ],
-      "titel": "Swit Tori",
-      "genre": "stand-up",
-      "datum": "2026-11-08",
-      "tijd": "16:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/swit-tori/"
+      "bron": "https://kunstlinie.nl/programma/missie-maan-astronauten-gezocht-8/"
     },
     {
       "theater": "kunstlinie",
@@ -640,6 +640,19 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "Wildebras | Overleven In De Jungle (6+)"
+      ],
+      "titel": "Wildebras | Overleven In De Jungle (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-27",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/wildebras-overleven-in-de-jungle-8/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "Arie & Silvester"
       ],
       "titel": "Arie & Silvester",
@@ -653,28 +666,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Comedy Club Almere"
+        "Wijsneuzen (8+)"
       ],
-      "titel": "Comedy Club Almere",
-      "genre": "cabaret",
-      "datum": "2026-12-12",
-      "tijd": "20:30",
+      "titel": "Wijsneuzen (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-24",
+      "tijd": "15:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/comedy-club-almere-15/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Comedy Club Almere"
-      ],
-      "titel": "Comedy Club Almere",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/comedy-club-almere-14/"
+      "bron": "https://kunstlinie.nl/programma/wijsneuzen-8/"
     },
     {
       "theater": "kunstlinie",
@@ -705,15 +705,15 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "René van Meurs"
+        "Klein klein vogeltje (4+)"
       ],
-      "titel": "René van Meurs",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:15",
+      "titel": "Klein klein vogeltje (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "15:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://kunstlinie.nl/programma/rene-van-meurs-2/"
+      "bron": "https://kunstlinie.nl/programma/klein-klein-vogeltje-4/"
     },
     {
       "theater": "kunstlinie",
@@ -737,7 +737,7 @@
       "genre": "cabaret",
       "datum": "2028-01-07",
       "tijd": "20:30",
-      "status": "verplaatst",
+      "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/julika-marijn-2/"
     },
@@ -796,6 +796,19 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "Musical De Kleine Prins (8+)"
+      ],
+      "titel": "Musical De Kleine Prins (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-06",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/musical-de-kleine-prins-8/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "Piet van Eeghen"
       ],
       "titel": "Piet van Eeghen",
@@ -805,6 +818,188 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/piet-van-eeghen-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Blijf op de hoogte"
+      ],
+      "titel": "Blijf op de hoogte",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "19:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/skengbattles-x-6/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Comedy Club Almere"
+      ],
+      "titel": "Comedy Club Almere",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/comedy-club-almere-15/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "De Nog Grotere Slijmmusical (6+)"
+      ],
+      "titel": "De Nog Grotere Slijmmusical (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-30",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/de-nog-grotere-slijmmusical-6/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "De Proefkeuken en de WC van tijd (8+)"
+      ],
+      "titel": "De Proefkeuken en de WC van tijd (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/de-proefkeuken-en-de-wc-van-tijd-8/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Juf Braaksel – De Musical (6+)"
+      ],
+      "titel": "Juf Braaksel – De Musical (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-07",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/juf-braaksel-de-musical-6/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Samar en de bange koning (8+)"
+      ],
+      "titel": "Samar en de bange koning (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/samar-en-de-bange-koning-8/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Aai Poesje, Aai Poesje"
+      ],
+      "titel": "Aai Poesje, Aai Poesje",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/blind-date-14/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Zeg Maar Dag (4+)"
+      ],
+      "titel": "Zeg maar dag (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-30",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/blind-date-4-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Cabarestafette presenteert: NIEUW GELUID!"
+      ],
+      "titel": "Cabarestafette presenteert: NIEUW GELUID!",
+      "genre": "cabaret",
+      "datum": "2027-01-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/blind-date-17/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Theater Terra – Pippi en de Piraten (6+)"
+      ],
+      "titel": "Theater Terra – Pippi en de Piraten (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/blind-date-16/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Broko Kiek"
+      ],
+      "titel": "Broko Kiek",
+      "genre": "cabaret",
+      "datum": "2026-12-20",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/broko-kiek-5/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "BRRRothers (6+)"
+      ],
+      "titel": "BRRRothers (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/brrrothers-6/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "WEG ERMEE (5 t/m 12 jaar)"
+      ],
+      "titel": "WEG ERMEE (5 t/m 12 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-30",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/weg-ermee-5-t-m-12-jaar/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Anansi de Spin en de Gulzige Tijger (2+)"
+      ],
+      "titel": "Anansi de Spin en de Gulzige Tijger (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/anansi-de-spin-en-de-gulzige-tijger-2/"
     }
   ],
   "recensies": {
@@ -830,6 +1025,35 @@
         "medium": "NRC",
         "sterren": null,
         "citaat": "Een van Kroezens leuke talenten: snel hardop situaties overanalyseren. … blijkt een prima verteller, lekker beweeglijk en energiek en prettig intelligent."
+      }
+    ],
+    "https://kunstlinie.nl/programma/swan-lake-6-99-jaar/": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Deze Swan Lake is erg levendig. De kostuums zijn kleurrijk en feestelijk, de conventies van de klassieke ballettaal worden humoristisch ondermijnd en de bewegingen van de zwanen zijn intrigerend: eerder dierlijk grillig dan romantisch sierlijk."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Boksbewegingen en dierenmanieren: deze vrije versie van ‘Het Zwanenmeer’ zit vol vrolijke verrassingen."
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": null,
+        "citaat": "De nieuwe moderne versie van Swan Lake bij Introdans oogt jeugdig en fris."
+      }
+    ],
+    "https://kunstlinie.nl/programma/pinokkio-7/": [
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Met de familievoorstelling Reinaert de V. bewijst Holland Opera dat het bijna 800 jaar oude verhaal nog steeds actueel én grappig is"
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 4,
+        "citaat": "…een antropomorfische fabel over de kracht van samenwerken en diversiteit. Ook deze moderne, doorgecomponeerde operabewerking is aanstekelijk en toegankelijk"
       }
     ],
     "https://kunstlinie.nl/programma/andries-tunru/": [
@@ -907,38 +1131,21 @@
         "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut. In zijn cabaretdebuut ‘Striptease Van De Dood’ schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal. Doeltreffend toont hij dat de realiteit leuker fantaseren een verdedigingsmechanisme is met voor- én nadelen."
       }
     ],
-    "https://kunstlinie.nl/programma/henry-van-loon-3/": [
+    "https://kunstlinie.nl/programma/wijsneuzen-8/": [
       {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Als er één nu de aangewezen komiek is om honderden mensen tegelijk de slappe lach te bezorgen, dan is het Henry van Loon."
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Van Loon toont zich meester in het opdienen van zijn breed uitwaaierende fantasieën met uitgestreken gezicht en mild-ironische toon."
-      },
-      {
-        "medium": "Het Parool",
+        "medium": "Best Social Awards",
         "sterren": null,
-        "citaat": "Er lopen in Nederland nauwelijks getalenteerdere komieken rond dan Van Loon."
-      }
-    ],
-    "https://kunstlinie.nl/programma/rene-van-meurs-2/": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Noodzakelijk Kwaad’ barst van de absurde conflicten die steeds grappiger escaleren."
+        "citaat": "Met hun korte, krachtige en informatieve YouTube Shorts brengen ze je heel wat kennis bij."
       },
       {
-        "medium": "Dagblad van het Noorden",
-        "sterren": 4,
-        "citaat": "Sterk verhaal met een lawine aan grappen."
-      },
-      {
-        "medium": "Theaterkrant",
+        "medium": "Trouw",
         "sterren": null,
-        "citaat": "Briljante auto-psychologische thriller als cabaret"
+        "citaat": "Reuze vermakelijk en je steekt er nog wat van op ook."
+      },
+      {
+        "medium": "KRO NCRV",
+        "sterren": null,
+        "citaat": "Hun stijl van sketches, animaties en snelle montages sluit goed aan bij de doelgroep."
       }
     ],
     "https://kunstlinie.nl/programma/ruud-smulders-2/": [
@@ -1004,6 +1211,23 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Piet van Eeghen maakt van eenzaamheid en ongemak opnieuw een mooie voorstelling…even grappig als ontroerend…[over de liedjes:] Ambachtelijk gemaakt, mooi en geraffineerd van taal en van muziek."
+      }
+    ],
+    "https://kunstlinie.nl/programma/brrrothers-6/": [
+      {
+        "medium": "Joost Groenebuur, Dans Magazine",
+        "sterren": null,
+        "citaat": "Van begin tot het eind houden de brrrothers met mime, dans, kung fu, slapstick en heel veel humor de aandacht van de kinderen vast."
+      },
+      {
+        "medium": "Javier López Piñón, Theaterkrant",
+        "sterren": null,
+        "citaat": "De koppeling broederliefde aan broedertwist als metaforen voor maatschappelijke ontwikkelingen in deze bellicose tijden verleent een interessante ondertoon aan deze aanvankelijk amusante dans/mime-voorstelling."
+      },
+      {
+        "medium": "Kinderreporter Jolie, Kidsproof",
+        "sterren": null,
+        "citaat": "Ze poseerden de hele tijd alsof ze héél sterk waren in die pakken, dat vond ik echt grappig!"
       }
     ]
   }

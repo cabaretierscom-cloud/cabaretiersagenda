@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "zaantheater",
@@ -15,6 +15,17 @@
   "speeldata": [
     {
       "theater": "zaantheater",
+      "artiesten": [],
+      "titel": "Anansi de spin en de gulzige tijger (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/anansi-de-spin-en-de-gulzige-tijger-3/"
+    },
+    {
+      "theater": "zaantheater",
       "artiesten": [
         "Andries Tunru"
       ],
@@ -23,7 +34,7 @@
       "datum": "2027-06-17",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/andries-tunru/"
     },
     {
@@ -36,8 +47,21 @@
       "datum": "2026-12-19",
       "tijd": "20:30",
       "status": "uitverkocht",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ayoub-kharkhach/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Banger dan ik (7+)"
+      ],
+      "titel": "Schrik niet! Dit is een griezelig lieve voorstelling",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/banger-dan-ik-7/"
     },
     {
       "theater": "zaantheater",
@@ -49,7 +73,7 @@
       "datum": "2026-12-01",
       "tijd": "14:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/beth-flo/"
     },
     {
@@ -62,7 +86,7 @@
       "datum": "2027-02-17",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/blauwe-vinkjes/"
     },
     {
@@ -75,7 +99,7 @@
       "datum": "2027-02-06",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/bob-koomen/"
     },
     {
@@ -88,7 +112,7 @@
       "datum": "2026-11-28",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/boban-benjamin-braspenning/"
     },
     {
@@ -101,7 +125,7 @@
       "datum": "2027-03-25",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/daan-van-der-hoeven/"
     },
     {
@@ -114,8 +138,99 @@
       "datum": "2027-01-02",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/de-cabaret-club/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "De Gruffalo (3+)"
+      ],
+      "titel": "Meneer Monster",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-22",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/de-gruffalo-3/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "De Kleine Prins (8+)"
+      ],
+      "titel": "René van Kooten e.a.",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/de-kleine-prins-8/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "De Koka Kola Rivier (9+)"
+      ],
+      "titel": "De Toneelmakerij",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-02",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/de-koka-kola-rivier-9/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "De musical zonder billen (4+)"
+      ],
+      "titel": "Jaski & Groenteman",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/de-musical-zonder-billen-4/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "De nog grotere slijmmusical (6+)"
+      ],
+      "titel": "Groter, spectaculairder en met nog meer slijm!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-28",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/de-nog-grotere-slijmmusical-6/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "De Proefkeuken en de WC van tijd (8+)"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd, e.a.",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-05",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/de-proefkeuken-en-de-wc-van-tijd-8/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "De Tijdreiziger (6+)"
+      ],
+      "titel": "Nigel Otermans",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/de-tijdreiziger-6/"
     },
     {
       "theater": "zaantheater",
@@ -127,7 +242,7 @@
       "datum": "2027-06-18",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/deng-boy/"
     },
     {
@@ -140,7 +255,7 @@
       "datum": "2026-12-17",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/dolf-jansen/"
     },
     {
@@ -153,7 +268,7 @@
       "datum": "2027-05-28",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/eigenlijk/"
     },
     {
@@ -179,7 +294,7 @@
       "datum": "2027-01-13",
       "tijd": "20:00",
       "status": "uitverkocht",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/esther-van-der-voort/"
     },
     {
@@ -192,8 +307,47 @@
       "datum": "2027-06-10",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/fabian-franciscus/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Familiecarrousel (4+)"
+      ],
+      "titel": "Theater Sonnevanck",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-29",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/familiecarrousel-4/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Familiecarrousel (6+)"
+      ],
+      "titel": "Theater Sonnevanck",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-29",
+      "tijd": "14:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/familiecarrousel-6/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Familiecarrousel (8+)"
+      ],
+      "titel": "Theater Sonnevanck",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-29",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/familiecarrousel-8/"
     },
     {
       "theater": "zaantheater",
@@ -205,7 +359,7 @@
       "datum": "2027-04-08",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/freek-de-jonge/"
     },
     {
@@ -218,8 +372,34 @@
       "datum": "2027-03-05",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/glodi-lugungu/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Het huis dat stopte met staan (8+)"
+      ],
+      "titel": "Theatergroep De Horde",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-02",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/het-huis-dat-stopte-met-staan-8/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "6+ En nou gaan we even helemaal uit onze plaat (een topshow)"
+      ],
+      "titel": "Maas Theater en Dans",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/en-nou-gaan-we-even-helemaal-uit-onze-plaat-een-topshow/"
     },
     {
       "theater": "zaantheater",
@@ -244,21 +424,8 @@
       "datum": "2027-02-13",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jandino/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Janneke de Bijl"
-      ],
-      "titel": "Pluk eventueel de dag",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/janneke-de-bijl/"
     },
     {
       "theater": "zaantheater",
@@ -276,15 +443,15 @@
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Jeannine La Rose"
+        "JoepTube (8+)"
       ],
-      "titel": "Meer?!",
-      "genre": "cabaret",
-      "datum": "2027-04-29",
-      "tijd": "20:30",
+      "titel": "De zAAk A",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-25",
+      "tijd": "14:30",
       "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jeannine-la-rose/"
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/joeptube-8/"
     },
     {
       "theater": "zaantheater",
@@ -296,8 +463,47 @@
       "datum": "2027-02-03",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jorgen-raymann/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Juf Braaksel: De Musical (6+)"
+      ],
+      "titel": "Naar de populaire boeken van Carry Slee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-12",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/juf-braaksel-de-musical-6/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Juf Roos (2+)"
+      ],
+      "titel": "Gaat op vakantie",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-17",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/juf-roos-2/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Juf Roos (2+)"
+      ],
+      "titel": "Gaat op vakantie",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-17",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/juf-roos-2/"
     },
     {
       "theater": "zaantheater",
@@ -335,8 +541,21 @@
       "datum": "2026-11-27",
       "tijd": "20:00",
       "status": "uitverkocht",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Kikker is Kikker (3+)"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-24",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kikker-is-kikker-3/"
     },
     {
       "theater": "zaantheater",
@@ -348,7 +567,7 @@
       "datum": "2027-04-16",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kim-karssen/"
     },
     {
@@ -361,7 +580,7 @@
       "datum": "2027-05-08",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/klaas-van-der-eerden/"
     },
     {
@@ -374,21 +593,8 @@
       "datum": "2027-02-20",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/lebbis/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Lovella Telesford"
-      ],
-      "titel": "Wat een gezeik!",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/lovella-telesford/"
     },
     {
       "theater": "zaantheater",
@@ -400,7 +606,7 @@
       "datum": "2027-01-08",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/luuk-ransijn/"
     },
     {
@@ -413,21 +619,8 @@
       "datum": "2027-05-14",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/luuk-weggemans/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Marjolijn van Kooten"
-      ],
-      "titel": "Aan mij zal het niet liggen",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/marjolijn-van-kooten/"
     },
     {
       "theater": "zaantheater",
@@ -439,7 +632,7 @@
       "datum": "2027-05-19",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/martijn-koning/"
     },
     {
@@ -465,7 +658,7 @@
       "datum": "2027-03-05",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/micha-wertheim/"
     },
     {
@@ -478,7 +671,7 @@
       "datum": "2027-03-12",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/nabil/"
     },
     {
@@ -491,7 +684,7 @@
       "datum": "2026-11-25",
       "tijd": "20:00",
       "status": "uitverkocht",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/najib-amhali-roue-verveer/"
     },
     {
@@ -504,21 +697,95 @@
       "datum": "2027-02-17",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/nienke-plas/"
     },
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Patrick Laureij"
+        "Nijntje op de fiets (2+)"
       ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:00",
+      "titel": "Klein Amsterdam Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/nijntje-op-de-fiets-2/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Nijntje op de fiets (2+)"
+      ],
+      "titel": "Klein Amsterdam Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "11:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/nijntje-op-de-fiets-2/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "OM en OM en OM (1,5+)"
+      ],
+      "titel": "Het Laagland",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-22",
+      "tijd": "10:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/om-en-om-en-om-1-5/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "OM en OM en OM (1,5+)"
+      ],
+      "titel": "Het Laagland",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-22",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/om-en-om-en-om-1-5/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Op zoek naar bezoek (4+)"
+      ],
+      "titel": "Tg. Winterberg",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-24",
+      "tijd": "13:30",
       "status": "gepland",
       "soort": "reprise",
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/patrick-laureij/"
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/op-zoek-naar-bezoek-4/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [],
+      "titel": "Over een kleine mol die wil weten wie er op zijn kop gepoept heeft (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-22",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-2/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [],
+      "titel": "Over een kleine mol die wil weten wie er op zijn kop gepoept heeft (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-22",
+      "tijd": "16:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-2/"
     },
     {
       "theater": "zaantheater",
@@ -530,7 +797,7 @@
       "datum": "2026-11-27",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/paul-haenen/"
     },
     {
@@ -543,21 +810,47 @@
       "datum": "2027-04-03",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pieter-jouke/"
     },
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Plien & Bianca"
+        "Pim & Pom (2+)"
       ],
-      "titel": "Harrekidee!",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:00",
+      "titel": "Op naar pakjesavond",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "11:00",
       "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/plien-bianca/"
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pim-pom-2/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Pim & Pom (2+)"
+      ],
+      "titel": "Op naar pakjesavond",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pim-pom-2/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Pippi en de piraten (6+)"
+      ],
+      "titel": "Theater Terra",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pippi-en-de-piraten-6/"
     },
     {
       "theater": "zaantheater",
@@ -582,7 +875,7 @@
       "datum": "2027-05-01",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rayen-panday/"
     },
     {
@@ -595,7 +888,7 @@
       "datum": "2026-12-27",
       "tijd": "15:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rayen-panday-friends/"
     },
     {
@@ -608,7 +901,7 @@
       "datum": "2027-01-21",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/remko-vrijdag/"
     },
     {
@@ -634,7 +927,7 @@
       "datum": "2027-05-13",
       "tijd": "20:00",
       "status": "uitverkocht",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/richard-groenendijk/"
     },
     {
@@ -647,7 +940,7 @@
       "datum": "2027-01-09",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ricky-koole/"
     },
     {
@@ -660,21 +953,8 @@
       "datum": "2027-02-21",
       "tijd": "15:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ricky-risolles-3-niet-zo-indiscreet/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Ronald Goedemondt"
-      ],
-      "titel": "Mijn lieve achterdocht",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": "reprise",
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ronald-goedemondt/"
     },
     {
       "theater": "zaantheater",
@@ -686,7 +966,7 @@
       "datum": "2027-05-21",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/roue-verveer/"
     },
     {
@@ -712,8 +992,21 @@
       "datum": "2027-06-03",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rundfunk-wagyu/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Samar en de bange koning (8+)"
+      ],
+      "titel": "George Tobal Producties & De Krakeling",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/samar-en-de-bange-koning-8/"
     },
     {
       "theater": "zaantheater",
@@ -725,21 +1018,8 @@
       "datum": "2027-02-02",
       "tijd": "14:00",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/spruijt-opperman/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Thjum"
-      ],
-      "titel": "Hoe heeft het zover kunnen komen?",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/thjum/"
     },
     {
       "theater": "zaantheater",
@@ -751,21 +1031,34 @@
       "datum": "2026-12-04",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/tim-kroezen/"
     },
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Van der Laan & Woe"
+        "Veel te eng voor kleuters (6+)"
       ],
-      "titel": "Dinsdagmiddag",
-      "genre": "cabaret",
-      "datum": "2027-01-22",
-      "tijd": "20:00",
-      "status": "uitverkocht",
+      "titel": "Theater Artemis",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-11",
+      "tijd": "14:30",
+      "status": "gepland",
       "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/van-der-laan-woe/"
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/veel-te-eng-voor-kleuters-6/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Weg Ermee (5 t/m 12 jaar)"
+      ],
+      "titel": "Wirwar Producties",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-07",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/weg-ermee-5-t-m-12-jaar/"
     },
     {
       "theater": "zaantheater",
@@ -777,21 +1070,34 @@
       "datum": "2027-05-27",
       "tijd": "20:30",
       "status": "gepland",
-      "soort": "reprise",
+      "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/wina-ricardo/"
     },
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Stefan Pop"
+        "NTW: Meneer Monster"
       ],
-      "titel": "Genoeg over mij",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:00",
+      "titel": "De waanzinnige boomhut van 78 verdiepingen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "13:30",
       "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/stefan-pop/"
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ntw-meneer-monster/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "NTW: Meneer Monster"
+      ],
+      "titel": "De waanzinnige boomhut van 78 verdiepingen",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-31",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ntw-meneer-monster/"
     }
   ],
   "recensies": {
@@ -839,28 +1145,6 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Razend knap verpakt Boban een persoonlijk verhaal in fiscale adviezen."
-      }
-    ],
-    "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/janneke-de-bijl/": [
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "De voorstelling is tot de nok toe gevuld met mooie zinnen, goede verhalen en geestige intermezzo’s."
-      },
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Nu heeft ze de geperfectioneerde, krachtigste podiumversie van zichzelf in huis."
-      },
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Een stevig ritme […] goede punchlines en een duidelijke structuur."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Op de liedjes van Janneke de Bijl zou Hans Dorrestijn waarschijnlijk stikjaloers zijn."
       }
     ],
     "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/": [
@@ -916,18 +1200,6 @@
         "citaat": "Een indrukwekkend – inderdaad, ernstig – maar zeer geestig programma."
       }
     ],
-    "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/plien-bianca/": [
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Een verrassend en weldadig eind."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Hemels showbiz-decor."
-      }
-    ],
     "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rene-van-meurs/": [
       {
         "medium": "de Volkskrant",
@@ -955,18 +1227,6 @@
         "medium": "NRC",
         "sterren": null,
         "citaat": "Een van Kroezens leuke talenten: snel hardop situaties overanalyseren. … blijkt een prima verteller, lekker beweeglijk en energiek en prettig intelligent."
-      }
-    ],
-    "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/stefan-pop/": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Stefan Pop onderstreept het essentiële belang van comedy in onrustige tijden"
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Pop slaat indrukwekkend alarm over de dictatuur van online algoritmes"
       }
     ]
   }

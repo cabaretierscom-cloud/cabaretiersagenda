@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+<defs>
+<radialGradient id="k" cx="38%" cy="35%" r="75%"><stop offset="0" stop-color="#ff8f94"/><stop offset=".45" stop-color="#ea2d35"/><stop offset="1" stop-color="#a3111a"/></radialGradient>
+<linearGradient id="h" x1="0" x2="1"><stop offset="0" stop-color="#8a0b11"/><stop offset=".3" stop-color="#ff6066"/><stop offset=".5" stop-color="#e3262e"/><stop offset="1" stop-color="#6e080d"/></linearGradient>
+<linearGradient id="n" x1="0" x2="1"><stop offset="0" stop-color="#f2f4f6"/><stop offset=".5" stop-color="#b5bbc1"/><stop offset="1" stop-color="#5f666d"/></linearGradient>
+<filter id="b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.8"/></filter>
+</defs>
+<!-- schaduw op het papier, naar rechtsonder -->
+<path d="M20 47 L32 39" stroke="#000" stroke-opacity=".22" stroke-width="7" stroke-linecap="round" filter="url(#b)"/>
+<!-- de punaise: platte kop, smalle hals, brede voet; iets naar de kijker gekanteld -->
+<g transform="rotate(20 20 48)">
+  <!-- stukje naald -->
+  <path d="M19.2 38 L20.8 38 L20.2 48 L19.8 48 Z" fill="url(#n)"/>
+  <!-- brede voet: onderkant, flank en bovenvlak -->
+  <ellipse cx="20" cy="37" rx="9.5" ry="4.2" fill="#7d0a10"/>
+  <path d="M10.5 35.5 v1.5 a9.5 4.2 0 0 0 19 0 v-1.5 Z" fill="url(#h)"/>
+  <ellipse cx="20" cy="35.5" rx="9.5" ry="4.2" fill="url(#k)"/>
+  <!-- smalle hals -->
+  <path d="M17.2 35 L17.8 24 L22.2 24 L22.8 35 A2.8 1.2 0 0 1 17.2 35 Z" fill="url(#h)"/>
+  <!-- kop: korte cilinder met plat bovenvlak -->
+  <path d="M13.5 20.5 v4 a6.5 2.9 0 0 0 13 0 v-4 Z" fill="url(#h)"/>
+  <ellipse cx="20" cy="20.5" rx="6.5" ry="2.9" fill="url(#k)"/>
+  <ellipse cx="17.6" cy="19.8" rx="2.4" ry=".9" fill="#fff" opacity=".7"/>
+  <path d="M12.5 35 Q15 33 18.5 32.6" stroke="#fff" stroke-opacity=".5" stroke-width="1" fill="none"/>
+</g>
+</svg>

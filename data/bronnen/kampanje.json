@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -13,58 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-de-kampanje",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.kampanje.nl/voorstellingen/valentina-toth-try-out-rz9j"
-    },
-    {
-      "theater": "theater-de-kampanje",
-      "artiesten": [
-        "Rayen Panday"
-      ],
-      "titel": "Grip",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy"
-    },
-    {
-      "theater": "theater-de-kampanje",
-      "artiesten": [
-        "Marjolijn van Kooten"
-      ],
-      "titel": "Aan mij zal het niet liggen",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/marjolijn-van-kooten-zb8v"
-    },
-    {
-      "theater": "theater-de-kampanje",
-      "artiesten": [
-        "Dolf Jansen"
-      ],
-      "titel": "Schaamteloos - Oudejaars2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-11-14",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/dolf-jansen-yvf1"
-    },
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
@@ -87,9 +35,35 @@
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/de-broers-van-arkel-5skr"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Kado"
+      ],
+      "titel": "Theatershow",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-27",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/kado-rzm3"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Kado"
+      ],
+      "titel": "Theatershow",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-27",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/kado-rzm3"
     },
     {
       "theater": "theater-de-kampanje",
@@ -191,9 +165,22 @@
       "genre": "cabaret",
       "datum": "2026-12-18",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/wina-ricardo-1hdh"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Woezel & Pip"
+      ],
+      "titel": "Feest in de Tovertuin (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/woezel-pip-xcy3"
     },
     {
       "theater": "theater-de-kampanje",
@@ -207,6 +194,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/comedytunes-zbsm"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "De Nog Grotere Slijmmusical"
+      ],
+      "titel": "Een compleet nieuw verhaal, nieuwe liedjes en een nieuw avontuur (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-02",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/de-nog-grotere-slijmmusical-fjvc"
     },
     {
       "theater": "theater-de-kampanje",
@@ -245,7 +245,7 @@
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2"
+      "bron": "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-74q7"
     },
     {
       "theater": "theater-de-kampanje",
@@ -269,7 +269,7 @@
       "genre": "cabaret",
       "datum": "2027-01-21",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.kampanje.nl/voorstellingen/rene-van-meurs-reprise-h6c6"
     },
@@ -302,6 +302,19 @@
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
+        "Mus & kapitein Kwaadbaard"
+      ],
+      "titel": "Gebaseerd op het boek van Kevin Hassing (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-23",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/mus-kapitein-kwaadbaard-1hmf"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
         "Daan van der Hoeven"
       ],
       "titel": "Mensenmens",
@@ -315,15 +328,15 @@
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
-        "Nationaal Theaterweekend 2027"
+        "Jeroens Clan"
       ],
-      "titel": "Blind Date - Cabaret",
+      "titel": "met JUK",
       "genre": "cabaret",
       "datum": "2027-01-29",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/nationaal-theaterweekend-2027-614j"
+      "bron": "https://www.kampanje.nl/voorstellingen/jeroens-clan-614j"
     },
     {
       "theater": "theater-de-kampanje",
@@ -344,7 +357,7 @@
         "Lift"
       ],
       "titel": "Komedie met topactrices Jelka van Houten en Sanne Wallis de Vries",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-02-05",
       "tijd": "20:15",
       "status": "gepland",
@@ -363,6 +376,71 @@
       "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.kampanje.nl/voorstellingen/patrick-laureij-reprise-rzmr"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Aladdin De Musical"
+      ],
+      "titel": "Van Hoorne Studios (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/aladdin-de-musical-d7zy"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Aladdin De Musical"
+      ],
+      "titel": "Van Hoorne Studios (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-13",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/aladdin-de-musical-d7zy"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Anansi de Spin en de Gulzige Tijger (3+)"
+      ],
+      "titel": "onderdeel van het Peuterfestival",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "10:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/anansi-de-spin-en-de-gulzige-tijger-3-83dx"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "nijntje op de fiets (2+)"
+      ],
+      "titel": "onderdeel van het Peuterfestival",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "10:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/nijntje-op-de-fiets-2-5svq"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "nijntje op de fiets (2+)"
+      ],
+      "titel": "onderdeel van het Peuterfestival",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "11:45",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/nijntje-op-de-fiets-2-5svq"
     },
     {
       "theater": "theater-de-kampanje",
@@ -475,7 +553,7 @@
       "genre": "cabaret",
       "datum": "2027-03-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/david-van-rosmalen-d7ph"
     },
@@ -495,6 +573,19 @@
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
+        "De musical zonder billen (4+)"
+      ],
+      "titel": "Jaski & Groenteman (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/de-musical-zonder-billen-4-n2pn"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
         "Kees van Amstel"
       ],
       "titel": "Mogen we eerder weg?",
@@ -504,6 +595,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/kees-van-amstel-qy6g"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Juf Braaksel - De Musical"
+      ],
+      "titel": "Een swingend en spannend avontuur voor het hele gezin (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-27",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/juf-braaksel-de-musical-lmqp"
     },
     {
       "theater": "theater-de-kampanje",
@@ -586,6 +690,32 @@
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
+        "Maya show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/maya-show-1-9847"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Maya show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/maya-show-1-9847"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
         "Esther van der Voort"
       ],
       "titel": "Mama is Boos",
@@ -602,7 +732,7 @@
         "Huisgenoten"
       ],
       "titel": "De nieuwe romantische comedy",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-04-23",
       "tijd": "20:15",
       "status": "gepland",
@@ -631,7 +761,7 @@
       "genre": "cabaret",
       "datum": "2027-04-24",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/jandino-qyv8"
     },
@@ -660,6 +790,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/kim-schuddeboom-h685"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Nigel Otermans"
+      ],
+      "titel": "De Tijdreiziger (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-02",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/nigel-otermans-qyvj"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Math with Menno"
+      ],
+      "titel": "5 HAVO Wiskunde A - Menno Lagerwey",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-03",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/math-with-menno-xc4m"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
+        "Math with Menno"
+      ],
+      "titel": "6 VWO Wiskunde A - Menno Lagerwey",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-03",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/math-with-menno-spqs"
     },
     {
       "theater": "theater-de-kampanje",
@@ -729,6 +898,19 @@
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
+        "Het Kleurenmonster"
+      ],
+      "titel": "naar het prentenboek van Anna Llenas (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kampanje.nl/voorstellingen/het-kleurenmonster-qyby"
+    },
+    {
+      "theater": "theater-de-kampanje",
+      "artiesten": [
         "Jeannine la Rose"
       ],
       "titel": "Meer?!",
@@ -780,52 +962,6 @@
     }
   ],
   "recensies": {
-    "https://www.kampanje.nl/voorstellingen/valentina-toth-try-out-rz9j": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "Wildbloei’ is een unieke performance van het megatalent Valentina Tóth"
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Valentina Tóth heeft een perfect debuutprogramma afgeleverd, een frisse wind in kleinkunstland, een wervelwind."
-      },
-      {
-        "medium": "NRC",
-        "sterren": null,
-        "citaat": "Een overweldigend debuut van cabaretier Valentina Tóth over ‘de hysterische vrouw"
-      }
-    ],
-    "https://www.kampanje.nl/voorstellingen/rayen-panday-brgy": [
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Karma; negentig minuten ambachtelijke en vermakelijke comedy."
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Met oprechte emotie krijgt hij de zaal aan zijn voeten."
-      },
-      {
-        "medium": "Trouw",
-        "sterren": null,
-        "citaat": "Rayen Panday is misschien wel de vriendelijkste cabaretier van Nederland."
-      }
-    ],
-    "https://www.kampanje.nl/voorstellingen/marjolijn-van-kooten-zb8v": [
-      {
-        "medium": "I Love Theater",
-        "sterren": null,
-        "citaat": "Aan mij zal het niet liggen is geen luchtig avondje cabaret, maar een eerlijk en scherpzinnig inkijkje in het hoofd van iemand die de wereld nét iets intenser ervaart. Je lacht, je slikt, je denkt – en je bent dankbaar dat ze dit alles hardop durft te delen."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Wat is je meerwaarde in het leven en moet er op je grafsteen? Van Kooten heeft de antwoorden niet. Ze probeert te accepteren wie ze is, met al haar tekortkomingen, en heeft daar een mooie, eerlijke voorstelling over gemaakt."
-      }
-    ],
     "https://www.kampanje.nl/voorstellingen/kasper-van-der-laan-5szb": [
       {
         "medium": "de Volkskrant",
@@ -891,7 +1027,14 @@
         "citaat": "Het eind van zijn slim geconstrueerde voorstelling is een ontroerende uppercut en een wake-up call ineen."
       }
     ],
-    "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-98w2": [
+    "https://www.kampanje.nl/voorstellingen/ronald-snijders-5sv7": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "De geest van Snijders is als een vulkaan waar constant krankzinnigheid uit borrelt."
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/roel-jos-maalderink-74q7": [
       {
         "medium": "de Volkskrant",
         "sterren": 4,
@@ -1004,6 +1147,13 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "De onbetwiste winnaar van Cameretten."
+      }
+    ],
+    "https://www.kampanje.nl/voorstellingen/nigel-otermans-qyvj": [
+      {
+        "medium": "De Limburger",
+        "sterren": 5,
+        "citaat": "Nigel Otermans gaat als een wervelwind Hans Klok achterna. Ongelofelijk knap. Otermans en zijn assistenten halen het beste in elkaar naar boven. Het publiek klapt soms met open mond de handen stuk. Als je dit al op je 22ste als illusionist voor elkaar krijgt, dan is het een kwestie van tijd voor alle zalen vol zitten."
       }
     ],
     "https://www.kampanje.nl/voorstellingen/andries-tunru-stefan-hendrikx-rz5x": [

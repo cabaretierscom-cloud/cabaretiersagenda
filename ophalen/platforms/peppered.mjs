@@ -53,6 +53,7 @@ const zonderSoort = (t) => netteHoofdletters(t.replace(/\s*[-–—|(]\s*(try[ -
  * @param {boolean} [o.meerdereZalen]
  * @param {boolean} [o.titelEerst]  de kaart toont eerst de titel en dan de artiest (bijv. Bellevue)
  * @param {number} [o.maxPaginas] veiligheidsgrens voor het bladeren
+ * @param {boolean} [o.alleenGenres] genre alleen uit de genrelabels, niet uit titel of ondertitel
  * @param {RegExp} [o.voorvoegsel] reeksnaam voor de artiest die weg moet ("kweek: " bij De Lawei)
  */
 export function peppered(o) {
@@ -89,7 +90,8 @@ export function peppered(o) {
       const kandidaten = [...alle.values()]
         .filter((k) => !overslaan.some((n) => `${k.kop} ${k.ondertitel}`.toLowerCase().includes(n)))
         .map((k) => o.voorvoegsel ? { ...k, kop: k.kop.replace(o.voorvoegsel, ""), ondertitel: k.ondertitel.replace(o.voorvoegsel, "") } : k)
-        .map((k) => ({ ...k, genre: herkenGenre(k.genres, k.kop, k.ondertitel) }))
+        // o.alleenGenres: alleen de genrelabels van de site tellen, niet woorden in de titel (Kortrijk: "Cabaret Téhéran" is dans).
+        .map((k) => ({ ...k, genre: o.alleenGenres ? herkenGenre(k.genres) : herkenGenre(k.genres, k.kop, k.ondertitel) }))
         .filter((k) => k.genre);
       log(`${alle.size} voorstellingen in de agenda, ${kandidaten.length} cabaret/comedy`);
 

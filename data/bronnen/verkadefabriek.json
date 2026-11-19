@@ -1,7 +1,7 @@
 {
   "bron": "verkadefabriek",
   "naam": "Verkadefabriek",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "verkadefabriek-s-hertogenbosch",
@@ -68,19 +68,6 @@
     {
       "theater": "verkadefabriek-s-hertogenbosch",
       "artiesten": [
-        "Pepijn Schoneveld"
-      ],
-      "titel": "Welkom dat je luistert",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "reprise",
-      "bron": "https://www.verkadefabriek.nl/agenda/pepijn-schoneveld-welkom-dat-je-luistert-repris-161549"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
         "Club Haug"
       ],
       "titel": "The Stand-up Club",
@@ -120,104 +107,13 @@
     {
       "theater": "verkadefabriek-s-hertogenbosch",
       "artiesten": [
-        "Jeroens Clan"
-      ],
-      "titel": "Juk",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.verkadefabriek.nl/agenda/jeroens-clan-juk-reprise-162240"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.verkadefabriek.nl/agenda/valentina-toth-revue-revanche-try-out-162247"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
-        "Pieter Verelst"
-      ],
-      "titel": "Altijd aan",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.verkadefabriek.nl/agenda/pieter-verelst-altijd-aan-reprise-162249"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
-        "Luuk Ransijn"
-      ],
-      "titel": "Uitkijk",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.verkadefabriek.nl/agenda/luuk-ransijn-uitkijk-try-out-162250"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
-        "Wina Ricardo"
-      ],
-      "titel": "Wina’s Wereld",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.verkadefabriek.nl/agenda/wina-ricardo-try-out-162251"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
-        "Janneke de Bijl"
-      ],
-      "titel": "Pluk Eventueel de Dag",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.verkadefabriek.nl/agenda/janneke-de-bijl-pluk-eventueel-de-dag-reprise-162252"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
-        "Oscar Smit"
-      ],
-      "titel": "€472.000,-",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.verkadefabriek.nl/agenda/oscar-smit-472000-try-out-162253"
-    },
-    {
-      "theater": "verkadefabriek-s-hertogenbosch",
-      "artiesten": [
         "Vlamousse"
       ],
       "titel": "Het goede voorbeeld",
       "genre": "cabaret",
       "datum": "2026-12-02",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.verkadefabriek.nl/agenda/vlamousse-het-goede-voorbeeld-reprise-162254"
     },
@@ -256,7 +152,7 @@
       "genre": "cabaret",
       "datum": "2026-12-16",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/amsterdams-studenten-cabaret-festival-finalisten-162257"
     },
@@ -269,7 +165,7 @@
       "genre": "cabaret",
       "datum": "2026-12-18",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/vrouwejaars-2026-162258"
     },
@@ -308,7 +204,7 @@
       "genre": "cabaret",
       "datum": "2027-01-08",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.verkadefabriek.nl/agenda/david-linszen-striptease-van-de-dood-reprise-162261"
     },
@@ -607,7 +503,7 @@
       "genre": "cabaret",
       "datum": "2027-04-14",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.verkadefabriek.nl/agenda/david-van-rosmalen-als-ik-jou-was-reprise-162292"
     },
@@ -887,6 +783,188 @@
     {
       "theater": "verkadefabriek-s-hertogenbosch",
       "artiesten": [
+        "Studio Figur"
+      ],
+      "titel": "Kakek, Opa en ik (7+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-06",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/studio-figur-kakek-opa-en-ik-7-162874"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "De Horde"
+      ],
+      "titel": "Het huis dat stopte met staan (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/de-horde-het-huis-dat-stopte-met-staan-8-162875"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Als het Ware"
+      ],
+      "titel": "Het kado als het ware (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-10",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/als-het-ware-het-kado-als-het-ware-6-162876"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Bonte Hond"
+      ],
+      "titel": "Wie is Hier Nou Gek (10+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/bonte-hond-wie-is-hier-nou-gek-10-162878"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Theater Artemis en Theater Basel"
+      ],
+      "titel": "Veel te eng voor kleuters (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-13",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/theater-artemis-en-theater-basel-veel-te-eng-vo-162879"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Theater Artemis en Theater Basel"
+      ],
+      "titel": "Veel te eng voor kleuters (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-14",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/theater-artemis-en-theater-basel-veel-te-eng-vo-162879"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Dieheleding"
+      ],
+      "titel": "Prins Panter (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-29",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/dieheleding-prins-panter-8-162881"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "De Horde"
+      ],
+      "titel": "Tent (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://www.verkadefabriek.nl/agenda/de-horde-tent-6-reprise-162882"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Studio Vavoom/ Panama Pictures/ Verkadefabriek"
+      ],
+      "titel": "Lost&Found (4+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-18",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/studio-vavoom-panama-pictures-verkadefabriek-l-162883"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Maas Theater en Dans"
+      ],
+      "titel": "Pops of the top (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-06",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/maas-theater-en-dans-pops-of-the-top-3-do-6-162884"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Maas Theater en Dans"
+      ],
+      "titel": "Pops of the top (3+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-06",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/maas-theater-en-dans-pops-of-the-top-3-do-6-162884"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "De zAAk A"
+      ],
+      "titel": "JoepTube (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-09",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/de-zaak-a-joeptube-8-162886"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Garage TDI"
+      ],
+      "titel": "Van mij! (2,5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-30",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/garage-tdi-van-mij-25-162887"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
+        "Garage TDI"
+      ],
+      "titel": "Van mij! (2,5+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-30",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/garage-tdi-van-mij-25-162887"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [
         "Stefan Pop"
       ],
       "titel": "Genoeg over mij",
@@ -971,7 +1049,7 @@
       "genre": "cabaret",
       "datum": "2027-02-14",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.verkadefabriek.nl/agenda/remy-evers-graag-gedaan-try-out-162272"
     },
@@ -1000,6 +1078,204 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/cameretten-comedy-masterclass-166573"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-19",
+      "tijd": "16:40",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-20",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-20",
+      "tijd": "20:50",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-21",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-22",
+      "tijd": "11:40",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-22",
+      "tijd": "11:40",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-22",
+      "tijd": "19:40",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-23",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-23",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-24",
+      "tijd": "16:20",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-24",
+      "tijd": "16:20",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-25",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-25",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
+    },
+    {
+      "theater": "verkadefabriek-s-hertogenbosch",
+      "artiesten": [],
+      "titel": "Wild Horse Nine",
+      "genre": "komedie",
+      "datum": "2026-11-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/wild-horse-nine-167112"
     }
   ],
   "recensies": {}

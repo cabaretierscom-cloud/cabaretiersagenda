@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -15,273 +15,12 @@
   "speeldata": [
     {
       "theater": "theater-bellevue",
-      "artiesten": [
-        "Joosen en de Jager"
-      ],
-      "titel": "Niks aan het handje",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/niks-aan-het-handje-xqvn"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Janice Blok"
-      ],
-      "titel": "Had je kenne weten",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/had-je-kenne-weten-s47z"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Selma Visscher"
-      ],
-      "titel": "Trekvogel",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/trekvogel-1ltl"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Selma Visscher"
-      ],
-      "titel": "Trekvogel",
-      "genre": "cabaret",
-      "datum": "2026-11-01",
-      "tijd": "15:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/trekvogel-1ltl"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Elfie Tromp"
-      ],
-      "titel": "Aai Poesje Aai Poesje",
-      "genre": "cabaret",
-      "datum": "2026-11-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/aai-poesje-aai-poesje-n89s"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Elfie Tromp"
-      ],
-      "titel": "Aai Poesje Aai Poesje",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/aai-poesje-aai-poesje-n89s"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Elfie Tromp"
-      ],
-      "titel": "Aai Poesje Aai Poesje",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/aai-poesje-aai-poesje-n89s"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Hendrik Kegels & Thomas Claessens"
-      ],
-      "titel": "A Comedy of Errors",
-      "genre": "stand-up",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/a-comedy-of-errors-nsqy"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Femilicious",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/femilicious-q2fv"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Femilicious",
-      "genre": "cabaret",
-      "datum": "2027-02-13",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/femilicious-q2fv"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Femilicious",
-      "genre": "cabaret",
-      "datum": "2027-05-29",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/femilicious-q2fv"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Klaas van der Eerden"
-      ],
-      "titel": "Imperfect",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/imperfect-n89j"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Christian van Eijkelenburg"
-      ],
-      "titel": "Small Talk",
-      "genre": "cabaret",
-      "datum": "2026-11-10",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/small-talk-fs5l"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Christian van Eijkelenburg"
-      ],
-      "titel": "Small Talk",
-      "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/small-talk-fs5l"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Tweede Voorronde AKF",
-      "genre": "kleinkunst",
-      "datum": "2026-11-12",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/tweede-voorronde-akf-zxgn"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Tweede Voorronde AKF",
-      "genre": "kleinkunst",
-      "datum": "2026-11-13",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/tweede-voorronde-akf-zxgn"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Tweede Voorronde AKF",
-      "genre": "kleinkunst",
-      "datum": "2026-11-14",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/tweede-voorronde-akf-zxgn"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Thom Gerrits"
-      ],
-      "titel": "Alleen Vanavond",
-      "genre": "cabaret",
-      "datum": "2026-11-15",
-      "tijd": "15:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/alleen-vanavond-57dg"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Thom Gerrits"
-      ],
-      "titel": "Alleen Vanavond",
-      "genre": "cabaret",
-      "datum": "2026-11-22",
-      "tijd": "15:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/alleen-vanavond-57dg"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Luuk Weggemans"
-      ],
-      "titel": "Lach maar om mij",
-      "genre": "cabaret",
-      "datum": "2026-11-17",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/lach-maar-om-mij-q2n3"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Luuk Weggemans"
-      ],
-      "titel": "Lach maar om mij",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/lach-maar-om-mij-q2n3"
-    },
-    {
-      "theater": "theater-bellevue",
       "artiesten": [],
       "titel": "Bies",
       "genre": "cabaret",
       "datum": "2026-11-19",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
     },
@@ -373,9 +112,22 @@
       "genre": "cabaret",
       "datum": "2026-11-21",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/in-de-hemel-ken-ik-jullie-niet-lkjn"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [
+        "Thom Gerrits"
+      ],
+      "titel": "Alleen Vanavond",
+      "genre": "cabaret",
+      "datum": "2026-11-22",
+      "tijd": "15:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/alleen-vanavond-57dg"
     },
     {
       "theater": "theater-bellevue",
@@ -386,7 +138,7 @@
       "genre": "cabaret",
       "datum": "2026-11-25",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/houden-het-luchtig-q2nk"
     },
@@ -465,7 +217,7 @@
       "genre": "cabaret",
       "datum": "2026-11-27",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/hardleers-9rb3"
     },
@@ -478,7 +230,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/hardleers-9rb3"
     },
@@ -667,7 +419,7 @@
       "genre": "cabaret",
       "datum": "2026-12-19",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/eindspel-tjfq"
     },
@@ -804,6 +556,19 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [
+        "Nadine Froughi"
+      ],
+      "titel": "Daydreamer",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/daydreamer-1g25"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [
         "Fimme Bakker"
       ],
       "titel": "Zwaargewicht",
@@ -836,7 +601,7 @@
       "genre": "cabaret",
       "datum": "2027-01-17",
       "tijd": "15:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/lieve-marianne-s484"
     },
@@ -1096,6 +861,28 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/aan-mij-zal-het-niet-liggen-1lcx"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Femilicious",
+      "genre": "cabaret",
+      "datum": "2027-02-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/femilicious-q2fv"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Femilicious",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/femilicious-q2fv"
     },
     {
       "theater": "theater-bellevue",
@@ -1811,6 +1598,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/to-believe-in-magic-58ch"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [
+        "Farida Laan & Maaike Dirkje Hop"
+      ],
+      "titel": "HOPlaLAAN",
+      "genre": "cabaret",
+      "datum": "2027-06-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/hoplalaan-4bmz"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [
+        "Farida Laan & Maaike Dirkje Hop"
+      ],
+      "titel": "HOPlaLAAN",
+      "genre": "cabaret",
+      "datum": "2027-06-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/hoplalaan-4bmz"
     }
   ],
   "recensies": {

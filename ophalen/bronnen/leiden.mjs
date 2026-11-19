@@ -17,6 +17,8 @@ export default {
   theaters: [
     { id: "leidse-schouwburg", naam: "Leidse Schouwburg", plaats: "Leiden", land: "NL", soort: "theater", website: BASIS },
     { id: "stadsgehoorzaal-leiden", naam: "Stadsgehoorzaal Leiden", plaats: "Leiden", land: "NL", soort: "theater", website: BASIS },
+    // Café Caat in de Stadsgehoorzaal: comedyclub met eigen agenda (/cafe-caat/agenda/), sinds november 2026 een eigen zaal.
+    { id: "cafe-caat-leiden", naam: "Café Caat", plaats: "Leiden", land: "NL", soort: "comedyclub", website: `${BASIS}/cafe-caat/` },
   ],
 
   async ophalen({ log, vandaag }) {
@@ -28,8 +30,8 @@ export default {
       const url = veld(item, "url");
       if (!start || start[1] < vandaag || !url.startsWith(`${BASIS}/voorstelling/`)) continue;
       const locatie = veld(item, "location").toLowerCase();
-      // Alleen de twee eigen zalen; voorstellingen elders in Leiden (musea, hofjes) slaan we over.
-      const theater = locatie.startsWith("stadsgehoorzaal") ? "stadsgehoorzaal-leiden" : locatie.startsWith("leidse schouwburg") ? "leidse-schouwburg" : null;
+      // Alleen de eigen zalen (Café Caat apart); voorstellingen elders in Leiden (musea, hofjes) slaan we over.
+      const theater = /caat/.test(locatie) ? "cafe-caat-leiden" : locatie.startsWith("stadsgehoorzaal") ? "stadsgehoorzaal-leiden" : locatie.startsWith("leidse schouwburg") ? "leidse-schouwburg" : null;
       if (!theater) continue;
       if (!perPagina.has(url)) perPagina.set(url, []);
       perPagina.get(url).push({ theater, datum: start[1], tijd: start[2], kaart: veld(item, "status").toLowerCase() });
@@ -62,7 +64,8 @@ export default {
           theater: d.theater,
           artiesten: artiest ? [artiest] : [],
           titel,
-          genre: /oudejaars/i.test(titel) ? "oudejaarsconference" : genre,
+          // Café Caat is een comedyclub: wat de zaal cabaret of comedy noemt, is daar stand-up.
+          genre: /oudejaars/i.test(titel) ? "oudejaarsconference" : d.theater === "cafe-caat-leiden" && (genre === "cabaret" || genre === "comedy") ? "stand-up" : genre,
           datum: d.datum,
           tijd: d.tijd,
           status: /geannuleerd|afgelast/.test(d.kaart) ? "geannuleerd" : /uitverkocht|wachtlijst/.test(d.kaart) ? "uitverkocht" : "gepland",

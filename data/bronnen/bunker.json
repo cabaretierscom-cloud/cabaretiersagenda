@@ -2,7 +2,8 @@
   "bron": "bunker",
   "naam": "Agenda van Bunker Theaterzaken",
   "soort": "speellijst",
-  "opgehaald": "2026-10-29",
+  "leidend": true,
+  "opgehaald": "2026-11-19",
   "theaters": [],
   "speeldata": [
     {
@@ -732,7 +733,7 @@
         "zoeken": true,
         "naam": "Capitole",
         "plaats": "Gent",
-        "land": "BE",
+        "land": "NL",
         "website": null
       },
       "artiesten": [
@@ -751,7 +752,7 @@
         "zoeken": true,
         "naam": "Capitole",
         "plaats": "Gent",
-        "land": "BE",
+        "land": "NL",
         "website": null
       },
       "artiesten": [
@@ -1034,158 +1035,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Posthuis Theater",
-        "plaats": "Heerenveen",
-        "land": "NL",
-        "website": "https://www.posthuistheater.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.posthuistheater.nl/agenda/lisa-ostermann-7yrz"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater & Concert Orpheus",
-        "plaats": "Apeldoorn",
-        "land": "NL",
-        "website": "https://www.orpheus.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/lisa-ostermann-z61w"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Wilminktheater",
-        "plaats": "Enschede",
-        "land": "NL",
-        "website": "https://www.wilminktheater.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-11-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/de-baas-zx6j"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Komedie",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.dekleinekomedie.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Komedie",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.dekleinekomedie.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Komedie",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.dekleinekomedie.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Komedie",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.dekleinekomedie.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/lisa-ostermann-8gyl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater en Congrescentrum Hanzehof",
-        "plaats": "Zutphen",
-        "land": "NL",
-        "website": "https://hanzehof.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://hanzehof.nl/nl/voorstelling/lisa-ostermann/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Deventer Schouwburg",
         "plaats": "Deventer",
         "land": "NL",
@@ -1236,7 +1085,7 @@
       "genre": "cabaret",
       "datum": "2026-11-24",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.rijswijkseschouwburg.nl/voorstelling/lisa-ostermann-de-baas"
     },
@@ -1293,7 +1142,7 @@
       "genre": "cabaret",
       "datum": "2026-12-02",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.lawei.nl/agenda/lisa-ostermann-zzkh"
     },
@@ -1407,7 +1256,7 @@
       "genre": "cabaret",
       "datum": "2026-12-15",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterdebussel.nl/programma/lisa-ostermann-58r4"
     },
@@ -1673,7 +1522,7 @@
       "genre": "cabaret",
       "datum": "2027-02-10",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.diligentia-pepijn.nl/agenda/lisa-ostermann-yw2z"
     },
@@ -1768,7 +1617,7 @@
       "genre": "cabaret",
       "datum": "2027-02-19",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekom.nl/agenda/de-baas-92lf"
     },
@@ -1796,7 +1645,7 @@
         "zoeken": true,
         "naam": "Minardschouwburg",
         "plaats": "Gent",
-        "land": "BE",
+        "land": "NL",
         "website": null
       },
       "artiesten": [
@@ -1901,7 +1750,7 @@
       "genre": "cabaret",
       "datum": "2027-03-12",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://stadsschouwburghaarlem.nl/agenda/lisa-ostermann-de-baas-2027"
     },
@@ -1927,177 +1776,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Zaantheater",
-        "plaats": "Zaandam",
-        "land": "NL",
-        "website": "https://zaantheater.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/patrick-laureij/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater & Concert Orpheus",
-        "plaats": "Apeldoorn",
-        "land": "NL",
-        "website": "https://www.orpheus.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/patrick-laureij-f24n"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater & Concert Orpheus",
-        "plaats": "Apeldoorn",
-        "land": "NL",
-        "website": "https://www.orpheus.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/patrick-laureij-f24n"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Veste",
-        "plaats": "Delft",
-        "land": "NL",
-        "website": "https://www.theaterdeveste.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterdeveste.nl/programma/kintsugi-d2kg"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Veste",
-        "plaats": "Delft",
-        "land": "NL",
-        "website": "https://www.theaterdeveste.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterdeveste.nl/programma/kintsugi-d2kg"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Stadsschouwburg Nijmegen en Concertgebouw De Vereeniging",
-        "plaats": "Nijmegen",
-        "land": "NL",
-        "website": "https://www.stadsschouwburgendevereeniging.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/patrick-laureij-7p4w"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "AGORA",
-        "plaats": "Lelystad",
-        "land": "NL",
-        "website": "https://www.agora-lelystad.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.agora-lelystad.nl/agenda/patrick-laureij-8jmd"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Schouwburg Agnietenhof",
-        "plaats": "Tiel",
-        "land": "NL",
-        "website": "https://www.agnietenhof.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-17",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.agnietenhof.nl/agenda/patrick-laureij-tgkc"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater aan de Parade",
-        "plaats": "'s-Hertogenbosch",
-        "land": "NL",
-        "website": "https://www.theateraandeparade.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theateraandeparade.nl/nl/programma/patrick-laureij-kintsugi-reprise"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "De Kring Roosendaal",
         "plaats": "Roosendaal",
         "land": "NL",
@@ -2110,7 +1788,7 @@
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "19:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekringroosendaal.nl/agenda/kintsugi-bq82"
     },
@@ -2174,25 +1852,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Kennemer Theater",
-        "plaats": "Beverwijk",
-        "land": "NL",
-        "website": "https://www.kennemertheater.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.kennemertheater.nl/programma/patrick-laureij-5rbs"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Koninklijk Theater Carré",
         "plaats": "Amsterdam",
         "land": "NL",
@@ -2243,7 +1902,7 @@
       "genre": "cabaret",
       "datum": "2026-12-04",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://deventerschouwburg.nl/programma/patrick-laureij-kintsugi-reprise"
     },
@@ -2262,7 +1921,7 @@
       "genre": "cabaret",
       "datum": "2026-12-08",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://theaterdevest.nl/tickets/seizoen-26-27/patrick-laureij-kintsugi-reprise/?showId=4562899457-1765195226"
     },
@@ -2281,7 +1940,7 @@
       "genre": "cabaret",
       "datum": "2026-12-09",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://theaterdevest.nl/tickets/seizoen-26-27/patrick-laureij-kintsugi-reprise/?showId=4576590849-1765195301"
     },
@@ -2376,7 +2035,7 @@
       "genre": "cabaret",
       "datum": "2027-01-08",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/patrick-laureij-10349360/"
     },
@@ -2566,7 +2225,7 @@
       "genre": "cabaret",
       "datum": "2027-01-30",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.markantmaashorst.nl/nl/agenda/patrick-laureij-c2k6 "
     },
@@ -2820,6 +2479,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Kennemer Theater",
+        "plaats": "Beverwijk",
+        "land": "NL",
+        "website": "https://www.kennemertheater.nl"
+      },
+      "artiesten": [
+        "Patrick Laureij"
+      ],
+      "titel": "Kintsugi",
+      "genre": "cabaret",
+      "datum": "2027-03-14",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kennemertheater.nl/programma/patrick-laureij-5rbs"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "DE KOM",
         "plaats": "Nieuwegein",
         "land": "NL",
@@ -2892,196 +2570,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.ahoy.nl/agenda/show/patrick-laureij-kintsugi-2027"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Diligentia",
-        "plaats": "Den Haag",
-        "land": "NL",
-        "website": "https://www.diligentia-pepijn.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.diligentia-pepijn.nl/agenda/kasper-van-der-laan-zxzq"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Diligentia",
-        "plaats": "Den Haag",
-        "land": "NL",
-        "website": "https://www.diligentia-pepijn.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.diligentia-pepijn.nl/agenda/kasper-van-der-laan-zxzq"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Komedie",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.dekleinekomedie.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-03",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/kasper-van-der-laan-c27j"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Komedie",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.dekleinekomedie.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/kasper-van-der-laan-c27j"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Komedie",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.dekleinekomedie.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/kasper-van-der-laan-c27j"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Komedie",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.dekleinekomedie.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/kasper-van-der-laan-c27j"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Komedie",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.dekleinekomedie.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/kasper-van-der-laan-c27j"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Veste",
-        "plaats": "Delft",
-        "land": "NL",
-        "website": "https://www.theaterdeveste.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "première",
-      "bron": "https://www.theaterdeveste.nl/programma/ruim-bs4y"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Veste",
-        "plaats": "Delft",
-        "land": "NL",
-        "website": "https://www.theaterdeveste.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "première",
-      "bron": "https://www.theaterdeveste.nl/programma/ruim-bs4y"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Musis & Stadstheater",
-        "plaats": "Arnhem",
-        "land": "NL",
-        "website": "https://www.musisenstadstheater.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-17",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.musisenstadstheater.nl/nl/agenda/kasper-van-der-laan-nieuw-programma/10083"
     },
     {
       "theater": {
@@ -4331,6 +3819,44 @@
       ],
       "titel": "Ruim",
       "genre": "cabaret",
+      "datum": "2027-05-26",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/kasper-van-der-laan-ruim"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Koninklijk Theater Carré",
+        "plaats": "Amsterdam",
+        "land": "NL",
+        "website": "https://carre.nl"
+      },
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/kasper-van-der-laan-ruim"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Koninklijk Theater Carré",
+        "plaats": "Amsterdam",
+        "land": "NL",
+        "website": "https://carre.nl"
+      },
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
       "datum": "2027-05-28",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -4355,139 +3881,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://carre.nl/voorstelling/kasper-van-der-laan-ruim"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Schouwburg Middelburg",
-        "plaats": "Middelburg",
-        "land": "NL",
-        "website": "https://www.zeelandtheaters.nl"
-      },
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.zeelandtheaters.nl/programma/merijn-scholten-lemming/29-10-2026-20-00"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Spant!",
-        "plaats": "Bussum",
-        "land": "NL",
-        "website": "https://www.spant.org"
-      },
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.spant.org/voorstellingen/merijn-scholten"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Kerkrade",
-        "plaats": "Kerkrade",
-        "land": "NL",
-        "website": "https://www.plt.nl"
-      },
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.plt.nl/programma/merijn-scholten-lemming-reprise/12-11-2026-20-00"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Diligentia",
-        "plaats": "Den Haag",
-        "land": "NL",
-        "website": "https://www.diligentia-pepijn.nl"
-      },
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.diligentia-pepijn.nl/agenda/merijn-scholten-d1d6"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Diligentia",
-        "plaats": "Den Haag",
-        "land": "NL",
-        "website": "https://www.diligentia-pepijn.nl"
-      },
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.diligentia-pepijn.nl/agenda/merijn-scholten-d1d6"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Leidse Schouwburg",
-        "plaats": "Leiden",
-        "land": "NL",
-        "website": "https://leidseschouwburg-stadsgehoorzaal.nl"
-      },
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2026-11-17",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/merijn-scholten-lemming-reprise/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Leidse Schouwburg",
-        "plaats": "Leiden",
-        "land": "NL",
-        "website": "https://leidseschouwburg-stadsgehoorzaal.nl"
-      },
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/merijn-scholten-lemming-reprise/"
     },
     {
       "theater": {
@@ -4656,7 +4049,7 @@
       "genre": "cabaret",
       "datum": "2026-12-10",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/lemming-merijn-scholten"
     },
@@ -4846,7 +4239,7 @@
       "genre": "cabaret",
       "datum": "2027-04-08",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.coolkunstencultuur.nl/theater/agenda/seizoen-2026-2027/merijn-scholten/"
     },
@@ -4941,7 +4334,7 @@
       "genre": "cabaret",
       "datum": "2027-04-21",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/merijn-scholten/"
     },
@@ -5461,158 +4854,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Theater Walhalla",
-        "plaats": "Rotterdam",
-        "land": "NL",
-        "website": "https://www.theaterwalhalla.nl"
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/david-linszen-striptease-van-de-dood/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "HOFtheater",
-        "plaats": "Raalte",
-        "land": "NL",
-        "website": "https://www.hoftheater.nl"
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.hoftheater.nl/programma/striptease-van-de-dood-wie-kent-david-linszen-30-okt-2015"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Singer Laren",
-        "plaats": "Laren",
-        "land": "NL",
-        "website": "https://www.singerlaren.nl"
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.singerlaren.nl/nl/agenda/david-linszen-qrvg"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Goudse Schouwburg",
-        "plaats": "Gouda",
-        "land": "NL",
-        "website": "https://goudseschouwburg.nl"
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://goudseschouwburg.nl/agenda/david-linszen-striptease-van-de-dood-reprise-10025495/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kleine Willem",
-        "plaats": "Enschede",
-        "land": "NL",
-        "website": "https://www.wilminktheater.nl"
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/striptease-van-de-dood-fs2x"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Atlas Theater",
-        "plaats": "Emmen",
-        "land": "NL",
-        "website": "https://www.atlastheater.nl"
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.atlastheater.nl/voorstellingen/striptease-van-de-dood-david-linszen-13-nov/?_gl=1*1w2rdpw*_up*MQ..*_ga*NDE2MzU5NjU0LjE3Nzg3NDg0Mjg.*_ga_7CX3X0QRRC*czE3Nzg3NDg0MjckbzEkZzEkdDE3Nzg3NDg0NTQkajMzJGwwJGgw"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Schouwburg Odeon",
-        "plaats": "Zwolle",
-        "land": "NL",
-        "website": "https://www.zwolsetheaters.nl"
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/david-linszen"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Stadsschouwburg Utrecht",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://stadsschouwburg-utrecht.nl"
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-11-17",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/striptease-van-de-dood-david-linszen"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Cpunt",
         "plaats": "Hoofddorp",
         "land": "NL",
@@ -5727,6 +4968,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Stadstheater Zoetermeer",
+        "plaats": "Zoetermeer",
+        "land": "NL",
+        "website": "https://www.stadstheater.nl"
+      },
+      "artiesten": [
+        "David Linszen"
+      ],
+      "titel": "Striptease Van De Dood",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.stadstheater.nl"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "Stadsschouwburg Nijmegen en Concertgebouw De Vereeniging",
         "plaats": "Nijmegen",
         "land": "NL",
@@ -5796,7 +5056,7 @@
       "genre": "cabaret",
       "datum": "2026-12-12",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://denieuwekolk.nl/theater/agenda/david-linszen"
     },
@@ -5929,7 +5189,7 @@
       "genre": "cabaret",
       "datum": "2027-01-15",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.diligentia-pepijn.nl/agenda/david-linszen-7h1y"
     },
@@ -6620,139 +5880,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Poort",
-        "plaats": "Sneek",
-        "land": "NL",
-        "website": "https://ontdekpoort.nl"
-      },
-      "artiesten": [
-        "Micha Wertheim"
-      ],
-      "titel": "Micha Wertheim Voor Iedereen",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://ontdekpoort.nl/programma/2877/micha-wertheim/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Verkadefabriek",
-        "plaats": "'s-Hertogenbosch",
-        "land": "NL",
-        "website": "https://www.verkadefabriek.nl"
-      },
-      "artiesten": [
-        "Echt Gebeurd"
-      ],
-      "titel": "op Tour - Fiasco",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.verkadefabriek.nl/agenda/echt-gebeurd-162595"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Veste",
-        "plaats": "Delft",
-        "land": "NL",
-        "website": "https://www.theaterdeveste.nl"
-      },
-      "artiesten": [
-        "Micha Wertheim"
-      ],
-      "titel": "Micha Wertheim Voor Iedereen",
-      "genre": "cabaret",
-      "datum": "2026-11-02",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterdeveste.nl/programma/micha-wertheim-voor-iedereen-7w17"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Landing",
-        "plaats": "Amstelveen",
-        "land": "NL",
-        "website": "https://delanding.nl"
-      },
-      "artiesten": [
-        "Micha Wertheim"
-      ],
-      "titel": "Micha Wertheim Voor Iedereen",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://delanding.nl/agenda/seizoen-2026-2027/micha-wertheim/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Landing",
-        "plaats": "Amstelveen",
-        "land": "NL",
-        "website": "https://schouwburgamstelveen.nl"
-      },
-      "artiesten": [
-        "Micha Wertheim"
-      ],
-      "titel": "Micha Wertheim Voor Iedereen",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/micha-wertheim/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Arenberg",
-        "plaats": "Antwerpen",
-        "land": "BE",
-        "website": "https://www.arenberg.be"
-      },
-      "artiesten": [
-        "Micha Wertheim"
-      ],
-      "titel": "Micha Wertheim Voor Iedereen",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.arenberg.be/nl/programma/micha-wertheim/a0NP500000HRhP9MAL"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Comedytrain",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://www.comedytrain.nl"
-      },
-      "artiesten": [
-        "Echt Gebeurd"
-      ],
-      "titel": "De nacht",
-      "genre": "cabaret",
-      "datum": "2026-11-15",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "30CC Schouwburg",
         "plaats": "Leuven",
         "land": "BE",
@@ -6822,7 +5949,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },
@@ -6879,9 +6006,28 @@
       "genre": "cabaret",
       "datum": "2027-01-05",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://ecicultuurfabriek.nl/voorstelling/micha-wertheim/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Lievekamp",
+        "plaats": "Oss",
+        "land": "NL",
+        "website": "https://www.lievekamp.nl"
+      },
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim Voor Iedereen",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lievekamp.nl/programma/voor-iedereen-micha-wertheim-07-jan-20-15/"
     },
     {
       "theater": {
@@ -6898,7 +6044,7 @@
       "genre": "cabaret",
       "datum": "2027-01-12",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },
@@ -6917,7 +6063,7 @@
       "genre": "cabaret",
       "datum": "2027-01-13",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },
@@ -6936,7 +6082,7 @@
       "genre": "cabaret",
       "datum": "2027-01-14",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
     },
@@ -7097,7 +6243,7 @@
         "zoeken": true,
         "naam": "Compagnie Cecilia",
         "plaats": "Gent",
-        "land": "BE",
+        "land": "NL",
         "website": "https://compagnie-cecilia.be"
       },
       "artiesten": [
@@ -7202,7 +6348,7 @@
       "genre": "cabaret",
       "datum": "2027-02-11",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://theaterdevest.nl/tickets/seizoen-26-27/micha-wertheim-micha-wertheim-voor-iedereen-reprise/?showId=4551634433-1765195137"
     },
@@ -7418,6 +6564,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Koninklijk Theater Carré",
+        "plaats": "Amsterdam",
+        "land": "NL",
+        "website": "https://carre.nl"
+      },
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Micha Wertheim Voor Iedereen",
+      "genre": "cabaret",
+      "datum": "2027-03-14",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/micha-wertheim-voor-iedereen"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "Stadsschouwburg Groningen",
         "plaats": "Groningen",
         "land": "NL",
@@ -7509,63 +6674,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Podium Hoge Woerd",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://www.podiumhogewoerd.nl"
-      },
-      "artiesten": [
-        "Van Vleuten & Van Muiswinkel"
-      ],
-      "titel": "Alles Onder Controle",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.podiumhogewoerd.nl/agenda/alles-onder-controle?_gl=1*1rggi8t*_up*MQ..*_ga*NzQ2MTc1MTYwLjE3ODAzOTY3MzU.*_ga_B3M3XN28KT*czE3ODAzOTY3MzQkbzEkZzEkdDE3ODAzOTY3ODIkajEyJGwwJGgw*_ga_KZH45NDKSH*czE3ODAzOTY3MzQkbzEkZzEkdDE3ODAzOTY3ODIkajEyJGwwJGgw"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Mimik",
-        "plaats": "Deventer",
-        "land": "NL",
-        "website": "https://www.mimik.nl"
-      },
-      "artiesten": [
-        "Van Vleuten & Van Muiswinkel"
-      ],
-      "titel": "Alles Onder Controle",
-      "genre": "cabaret",
-      "datum": "2026-11-10",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.mimik.nl/agenda/van-vleuten-en-van-muiswinkel-10-11"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Mimik",
-        "plaats": "Deventer",
-        "land": "NL",
-        "website": "https://www.mimik.nl"
-      },
-      "artiesten": [
-        "Van Vleuten & Van Muiswinkel"
-      ],
-      "titel": "Alles Onder Controle",
-      "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.mimik.nl/agenda/van-vleuten-en-van-muiswinkel-11-11"
     },
     {
       "theater": {
@@ -7677,7 +6785,7 @@
       "genre": "cabaret",
       "datum": "2027-01-13",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.posthuistheater.nl/agenda/van-vleuten-van-muiswinkel-12c4"
     },
@@ -8668,158 +7776,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/van-vleuten-en-van-muiswinkel"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "City of Wesopa",
-        "plaats": "Weesp",
-        "land": "NL",
-        "website": "https://secure.ticketunie.com"
-      },
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://secure.ticketunie.com/Widgets/408/357/TicketShop/265185/?p=1&parentPage=https%3A%2F%2Fwesopa.nl%2Fprogramma%2F&s=textsearch:overprikkeld&theme=Wesopa&syncID=cdb4105b-7553-e0ec-c318-28811aecf96a&lang=nl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "BREStheater",
-        "plaats": "Brielle",
-        "land": "NL",
-        "website": "https://brestheater.nl"
-      },
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://brestheater.nl/voorstelling/martijnkoning/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater De Lieve Vrouw",
-        "plaats": "Amersfoort",
-        "land": "NL",
-        "website": "https://lievevrouw.nl"
-      },
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://lievevrouw.nl/agenda/overprikkeld-try-out"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "ECI Cultuurfabriek",
-        "plaats": "Roermond",
-        "land": "NL",
-        "website": "https://ecicultuurfabriek.nl"
-      },
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://ecicultuurfabriek.nl/voorstelling/martijn-koning/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Weijer",
-        "plaats": "Boxmeer",
-        "land": "NL",
-        "website": "https://www.deweijer.nl"
-      },
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.deweijer.nl/agenda/06-11-2026/martijn-koning-overprikkeld/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater ’t Mozaïek",
-        "plaats": "Wijchen",
-        "land": "NL",
-        "website": "https://www.mozaiekwijchen.nl"
-      },
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.mozaiekwijchen.nl/voorstelling-seizoen-2627-martijn-koning/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater De Omval",
-        "plaats": "Diemen",
-        "land": "NL",
-        "website": "https://www.theaterdeomval.nl"
-      },
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.theaterdeomval.nl/voorstellingen/overprikkeld-dtyy"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Dorpshuis Nigtevecht",
-        "plaats": "Nigtevecht",
-        "land": "NL",
-        "website": "https://cabaret-nigtevecht.nl"
-      },
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://cabaret-nigtevecht.nl/martijn-koning/"
     },
     {
       "theater": {
@@ -10299,7 +9255,7 @@
       "genre": "cabaret",
       "datum": "2027-03-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://theaterludens.nl/voorstellingen/sezgin-gulec-nw-programma-try-out/"
     },
@@ -10584,7 +9540,7 @@
       "genre": "cabaret",
       "datum": "2027-04-30",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.verkadefabriek.nl/agenda/sezgin-gulec-try-out-162297"
     },
@@ -10720,158 +9676,6 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.posttheater.nl/activiteit/11953/2027-05-21/sezgin-gulec"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater De Fransche School",
-        "plaats": "Culemborg",
-        "land": "NL",
-        "website": "https://secure.ticketunie.com"
-      },
-      "artiesten": [
-        "Lebbis"
-      ],
-      "titel": "Satan is moe",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://secure.ticketunie.com/Widgets/408/84/TicketShop/266970/?p=1&parentPage=https%3A%2F%2Fwww.theaterdefranscheschool.nl%2Fprogramma&s=textsearch:satan%20is%20moe&theme=Franscheschool&syncID=d872e1d5-36f8-ee88-9a58-726c8a4d483e&lang=nl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater De Luifel",
-        "plaats": "Heemstede",
-        "land": "NL",
-        "website": "https://podiaheemstede.nl"
-      },
-      "artiesten": [
-        "Lebbis"
-      ],
-      "titel": "Satan is moe",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://podiaheemstede.nl/programma/a1c0cda6-c79d-4a01-920f-ec1e8277a0da?highlight=lebbis"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "TivoliVredenburg",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://www.tivolivredenburg.nl"
-      },
-      "artiesten": [
-        "Lebbis"
-      ],
-      "titel": "Climate Comedy Night",
-      "genre": "cabaret",
-      "datum": "2026-11-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.TivoliVredenburg.nl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Weijer",
-        "plaats": "Boxmeer",
-        "land": "NL",
-        "website": "https://www.deweijer.nl"
-      },
-      "artiesten": [
-        "Lebbis"
-      ],
-      "titel": "Satan is moe",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.deweijer.nl/agenda/04-11-2026/lebbis-satan-is-moe/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Mimik",
-        "plaats": "Deventer",
-        "land": "NL",
-        "website": "https://www.mimik.nl"
-      },
-      "artiesten": [
-        "Lebbis"
-      ],
-      "titel": "Satan is moe",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.mimik.nl/agenda/lebbis-satan-is-moe"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Posttheater",
-        "plaats": "Arnhem",
-        "land": "NL",
-        "website": "https://www.posttheater.nl"
-      },
-      "artiesten": [
-        "Lebbis"
-      ],
-      "titel": "Satan is moe",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.posttheater.nl/activiteit/11858/2026-11-07/lebbis"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Beun",
-        "plaats": "Heiloo",
-        "land": "NL",
-        "website": "https://debeunheiloo.nl"
-      },
-      "artiesten": [
-        "Lebbis"
-      ],
-      "titel": "Satan is moe",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://debeunheiloo.nl/lebbis-satan-is-moe/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater aan de Slinger",
-        "plaats": "Houten",
-        "land": "NL",
-        "website": "https://www.aandeslinger.nl"
-      },
-      "artiesten": [
-        "Lebbis"
-      ],
-      "titel": "Satan is moe",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.aandeslinger.nl/programma/satan-is-moe"
     },
     {
       "theater": {
@@ -11021,7 +9825,7 @@
       "genre": "cabaret",
       "datum": "2026-12-11",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.schouwburghengelo.nl/satan-is-moe-lebbis/11-12-2026-20-00"
     },
@@ -11214,6 +10018,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/lebbis-2/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Beun",
+        "plaats": "Heiloo",
+        "land": "NL",
+        "website": "https://debeunheiloo.nl"
+      },
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://debeunheiloo.nl/lebbis-satan-is-moe-2/"
     },
     {
       "theater": {
@@ -12643,177 +11466,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "De Weijer",
-        "plaats": "Boxmeer",
-        "land": "NL",
-        "website": "https://www.deweijer.nl"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.deweijer.nl/agenda/29-10-2026/andre-manuel-de-eenzame-ziel/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater De Omval",
-        "plaats": "Diemen",
-        "land": "NL",
-        "website": "https://www.theaterdeomval.nl"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.theaterdeomval.nl/voorstellingen/de-eenzame-ziel-hkn6"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Calypso Theater",
-        "plaats": "Wijk bij Duurstede",
-        "land": "NL",
-        "website": "https://secure.ticketunie.com"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://secure.ticketunie.com/Widgets/408/420/TicketShop/277774/?p=1&parentPage=https%3A%2F%2Fwww.calypsotheater.nl%2Fpage%2F207&s=textsearch:manuel&theme=Calypso&syncID=ab366198-93ba-8040-950c-b1b508bc095f&lang=nl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Lindenberg Cultuurhuis",
-        "plaats": "Nijmegen",
-        "land": "NL",
-        "website": "https://www.delindenberg.com"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.delindenberg.com/agenda/andre-manuel-de-eenzame-ziel-try-out"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Het Postkantoor",
-        "plaats": "Bovenkarspel",
-        "land": "NL",
-        "website": "https://www.hetpostkantoor.info"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.hetpostkantoor.info/event/andre-manuel-de-eenzame-ziel/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Hof 88",
-        "plaats": "Almelo",
-        "land": "NL",
-        "website": "https://www.hof88.nl"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.hof88.nl/voorstellingen/de-eenzame-ziel-try-out-andre-manuel/07-11-2026-20-15"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "’t Verborgen Theater",
-        "plaats": "Boekelo",
-        "land": "NL",
-        "website": "https://www.verborgentheater.nl"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-11-10",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.verborgentheater.nl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Ludens",
-        "plaats": "Voorburg",
-        "land": "NL",
-        "website": "https://theaterludens.nl"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://theaterludens.nl/voorstellingen/andre-manuel-de-eenzame-ziel-try-out/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Heerenlogement",
-        "plaats": "Beusichem",
-        "land": "NL",
-        "website": "https://secure.ticketunie.com"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://secure.ticketunie.com/Widgets/408/237/TicketShop/269715/?parentPage=https%3A%2F%2Ftheaterheerenlogement.nl%2Fvoorstellingen%2F&theme=Heerenlogement&syncID=8b8bd394-3022-291a-4084-995dee76d390&lang=nl"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Kattendans",
         "plaats": "Bergeijk",
         "land": "NL",
@@ -12828,7 +11480,7 @@
       "tijd": "20:15",
       "status": "gepland",
       "soort": "try-out",
-      "bron": "https://kattendans.nl/voorstelling/lebbis/"
+      "bron": "https://kattendans.nl/voorstelling/andre-manuel/"
     },
     {
       "theater": {
@@ -13529,7 +12181,7 @@
       "genre": "cabaret",
       "datum": "2027-04-02",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.amphion.nl/theater/andre-manuel-de-eenzame-ziel/02-04-2027-20-30/"
     },
@@ -13627,44 +12279,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.diligentia-pepijn.nl/agenda/andre-manuel-cls2"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Richel",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://theaterderichel.nl"
-      },
-      "artiesten": [
-        "Kamagurka"
-      ],
-      "titel": "Op zekere dag",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterderichel.nl/evenementen/kamagurka-op-zekere-dag/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater PePijn",
-        "plaats": "Den Haag",
-        "land": "NL",
-        "website": "https://www.diligentia-pepijn.nl"
-      },
-      "artiesten": [
-        "Kamagurka"
-      ],
-      "titel": "Op zekere dag",
-      "genre": "cabaret",
-      "datum": "2026-11-08",
-      "tijd": "19:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.diligentia-pepijn.nl/agenda/kamagurka-fsfb"
     },
     {
       "theater": {
@@ -13871,7 +12485,7 @@
       "genre": "cabaret",
       "datum": "2027-02-10",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/op-zekere-dag-kamagurka"
     },
@@ -14083,82 +12697,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stichtingtheaterdeliefde.stager.co/shop/default/events/111619001"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Stadsschouwburg Nijmegen en Concertgebouw De Vereeniging",
-        "plaats": "Nijmegen",
-        "land": "NL",
-        "website": "https://www.stadsschouwburgendevereeniging.nl"
-      },
-      "artiesten": [
-        "Cabarestafette"
-      ],
-      "titel": "Cabarestafette",
-      "genre": "cabaret",
-      "datum": "2026-10-29",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.stadsschouwburgendevereeniging.nl/programma/cabarestafette-8wpg"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Stadsschouwburg Haarlem",
-        "plaats": "Haarlem",
-        "land": "NL",
-        "website": "https://stadsschouwburghaarlem.nl"
-      },
-      "artiesten": [
-        "Cabarestafette"
-      ],
-      "titel": "Cabarestafette",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://stadsschouwburghaarlem.nl/agenda/cabarestafette-2026"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater Kerkrade",
-        "plaats": "Kerkrade",
-        "land": "NL",
-        "website": "https://www.plt.nl"
-      },
-      "artiesten": [
-        "Cabarestafette"
-      ],
-      "titel": "Cabarestafette",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.plt.nl/programma/cabarestafette-cabarestafette-presenteert-nieuw-geluid/05-11-2026-20-00"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Posthuis Theater",
-        "plaats": "Heerenveen",
-        "land": "NL",
-        "website": "https://www.posthuistheater.nl"
-      },
-      "artiesten": [
-        "Cabarestafette"
-      ],
-      "titel": "Cabarestafette",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.posthuistheater.nl/agenda/cabarestafette-presenteert-nieuw-geluid-x5mc"
     },
     {
       "theater": {

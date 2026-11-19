@@ -52,6 +52,17 @@ function leesDatum(s, vandaag) {
     let datum = `${jaar}-${twee(maand)}-${twee(d)}`;
     // Zonder jaartal: ligt de datum meer dan een maand achter ons, dan is het volgend jaar.
     if (!j && (new Date(vandaag) - new Date(datum)) / 864e5 > 31) datum = `${jaar + 1}-${twee(maand)}-${twee(d)}`;
+    // Zonder jaartal maar met een weekdag ervoor ("do 24 sept"): het jaar waarin die weekdag klopt.
+    // Zo wordt een voorbije avond van dit seizoen niet per ongeluk volgend jaar.
+    const wd = !j && s.trim().slice(0, 2).toLowerCase();
+    const WD = ["zo", "ma", "di", "wo", "do", "vr", "za"];
+    if (wd && WD.includes(wd)) {
+      const klopt = (dt) => WD[new Date(`${dt}T12:00:00Z`).getUTCDay()] === wd;
+      if (!klopt(datum)) {
+        const ander = [jaar, jaar + 1, jaar - 1].map((x) => `${x}-${twee(maand)}-${twee(d)}`).find(klopt);
+        if (ander) datum = ander;
+      }
+    }
     return { datum, tijd: u ? `${twee(u)}:${mi}` : null };
   }
   return null;
@@ -138,6 +149,10 @@ const RUIS = [
   /^[\s()|•·,–—>»→*-]*$/,
   /^\(.*\)$/,
   /^[a-z0-9.-]+\.(nl|be|com)$/i,
+  // Een status met uitleg ("Geannuleerd om technische redenen"): de status is al uit de rij gehaald.
+  /^(geannuleerd|afgelast|gaat niet door|vervalt)\b/i,
+  // Een stukje HTML dat als tekst doorkomt (class="event …">), bijv. bij een '>' in een attribuut.
+  /^[a-z-]+=["']/i,
   /^€|^\d+([.,]\d+)?$/,
 ];
 // "Van Vleuten en Van Muiswinkel" is "Van Vleuten & Van Muiswinkel".
@@ -166,8 +181,8 @@ export function leesRij(rij, o = {}) {
       // Tijd tussen haakjes achter de zaal: "Schouwburg NTG (20u00)".
       const th = d.match(/\s*\((\d{1,2})[u:.](\d{2})\)\s*/i);
       if (th) { tijd ||= `${th[1].padStart(2, "0")}:${th[2]}`; d = d.replace(th[0], " "); }
-      d = d.replace(/\s*\((try[ -]?out|tryout|premi[eè]re|reprise|uitverkocht)\)\s*/gi, " ").replace(/\s*\*+\s*$|\s*⇒\s*$|^in\s+|\s*\($|^\)\s*|\s+[-–—]$/g, "").replace(/\s+/g, " ").trim();
-      const t = d.match(/^(?:aanvang\s*)?(\d{1,2})[:.](\d{2})\s*(uur)?$/i);
+      d = d.replace(/^[—–•·]\s*/, "").replace(/\s*\((try[ -]?out|tryout|premi[eè]re|reprise|uitverkocht)\)\s*/gi, " ").replace(/\s*\*+\s*$|\s*⇒\s*$|^in\s+|\s*\($|^\)\s*|\s+[-–—]$/g, "").replace(/\s+/g, " ").trim();
+      const t = d.match(/^(?:aanvang\s*)?(\d{1,2})[:.u](\d{2})\s*(uur)?$/i);
       if (t) { tijd ||= `${t[1].padStart(2, "0")}:${t[2]}`; continue; }
       const l = LAND(d);
       if (l) { land = l; d = d.replace(/\s*\((NL|BE?|België|Belgie)\)|🇧🇪|^B - /gi, "").trim(); if (/^(B|BE|NL|België|Nederland)?$/i.test(d)) continue; }
@@ -179,6 +194,6 @@ export function leesRij(rij, o = {}) {
   const reeks = o.vanAchter ? [...delen].reverse() : delen;
   (o.volgorde || ["plaats", "zaal"]).forEach((veld, i) => { if (veld !== "-" && reeks[i] && !velden[veld]) velden[veld] = reeks[i]; });
   // Staat de zaal op de plek van de plaats ("Comedy Club Haug" / "Rotterdam"), dan omdraaien.
-  if (velden.plaats && velden.zaal && ZAALWOORD.test(velden.plaats) && !ZAALWOORD.test(velden.zaal)) [velden.plaats, velden.zaal] = [velden.zaal, velden.plaats];
+  if (!o.vast && velden.plaats && velden.zaal && ZAALWOORD.test(velden.plaats) && !ZAALWOORD.test(velden.zaal)) [velden.plaats, velden.zaal] = [velden.zaal, velden.plaats];
   return { datum: rij.datum, tijd, ...velden, land, status, soort, link: rij.links.find((l) => /^https?:/.test(l)) || null, delen };
 }

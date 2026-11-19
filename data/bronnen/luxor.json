@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -43,7 +43,7 @@
       "genre": "cabaret",
       "datum": "2026-12-11",
       "tijd": "22:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jimmy-carr-46038/"
     },
@@ -433,7 +433,7 @@
       "genre": "cabaret",
       "datum": "2026-11-27",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/pieter-derks-57549/"
     },
@@ -449,45 +449,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/pieter-derks-57549/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Christel de Laat"
-      ],
-      "titel": "Kende da!?",
-      "genre": "cabaret",
-      "datum": "2026-11-11",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/christel-de-laat-56494/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Christel de Laat"
-      ],
-      "titel": "Kende da!?",
-      "genre": "cabaret",
-      "datum": "2026-11-12",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/christel-de-laat-56494/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Christel de Laat"
-      ],
-      "titel": "Kende da!?",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/christel-de-laat-56494/"
     },
     {
       "theater": "oude-luxor",
@@ -537,9 +498,35 @@
       "genre": "cabaret",
       "datum": "2027-01-15",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://luxortheater.nl/agenda/daan-van-der-hoeven-58104/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Titus en Fien"
+      ],
+      "titel": "Vooruit, nog één keertje dan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-03",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/titus-en-fien-48330/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Titus en Fien"
+      ],
+      "titel": "Vooruit, nog één keertje dan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-03",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/titus-en-fien-48330/"
     },
     {
       "theater": "oude-luxor",
@@ -550,7 +537,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-28",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/guido-weijers-51204/"
     },
@@ -563,7 +550,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-29",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/guido-weijers-51204/"
     },
@@ -576,7 +563,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-30",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/guido-weijers-51204/"
     },
@@ -592,6 +579,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/lebbis-56518/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Efteling vertelt…Baron 1898"
+      ],
+      "titel": "Een spannende musical voor de hele familie",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-29",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/efteling-vertelt-baron-1898-57456/"
     },
     {
       "theater": "oude-luxor",
@@ -810,7 +810,33 @@
       "genre": "cabaret",
       "datum": "2027-01-03",
       "tijd": "19:30",
-      "status": "uitverkocht",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is boos",
+      "genre": "cabaret",
+      "datum": "2027-09-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is boos",
+      "genre": "cabaret",
+      "datum": "2027-09-26",
+      "tijd": "20:00",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
     },
@@ -869,6 +895,32 @@
     {
       "theater": "nieuwe-luxor",
       "artiesten": [
+        "Juf Roos (2+)"
+      ],
+      "titel": "Gaat op vakantie",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/juf-roos-57529/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Juf Roos (2+)"
+      ],
+      "titel": "Gaat op vakantie",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-13",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/juf-roos-57529/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
         "Rob Scheepers"
       ],
       "titel": "Scheepers op z'n scherpst",
@@ -885,10 +937,10 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-01-20",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/the-sunshine-boys-56703/"
     },
@@ -898,10 +950,10 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-01-21",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/the-sunshine-boys-56703/"
     },
@@ -911,7 +963,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-01-22",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -924,7 +976,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-10",
       "tijd": "20:00",
       "status": "gepland",
@@ -937,7 +989,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-11",
       "tijd": "20:00",
       "status": "gepland",
@@ -950,7 +1002,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-12",
       "tijd": "20:00",
       "status": "gepland",
@@ -963,7 +1015,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-13",
       "tijd": "20:00",
       "status": "gepland",
@@ -976,7 +1028,7 @@
         "The Sunshine Boys"
       ],
       "titel": "Martin van Waardenberg en Bert Visscher",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-14",
       "tijd": "20:00",
       "status": "gepland",
@@ -995,6 +1047,58 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/freek-de-jonge-57836/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Ernst & Bobbie (3+)"
+      ],
+      "titel": "hebben geen idee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ernst-bobbie-57502/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Ernst & Bobbie (3+)"
+      ],
+      "titel": "hebben geen idee",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ernst-bobbie-57502/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "GRRR… ik ben een boze dino! (4+)"
+      ],
+      "titel": "Een muzikaal feest voor de allerkleinsten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-24",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ikbeneenbozedino-57511/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "GRRR… ik ben een boze dino! (4+)"
+      ],
+      "titel": "Een muzikaal feest voor de allerkleinsten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-24",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ikbeneenbozedino-57511/"
     },
     {
       "theater": "nieuwe-luxor",
@@ -1049,17 +1153,43 @@
       "bron": "https://luxortheater.nl/agenda/jay-francis-58919/"
     },
     {
-      "theater": "nieuwe-luxor",
+      "theater": "oude-luxor",
       "artiesten": [
-        "Ronald Goedemondt"
+        "Prentenboekjesfestival met De Gruffalo en Over een kleine mol…"
       ],
-      "titel": "Mijn lieve achterdocht",
-      "genre": "cabaret",
-      "datum": "2026-11-15",
-      "tijd": "20:00",
-      "status": "uitverkocht",
+      "titel": "Vanaf2 Festivals",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-16",
+      "tijd": "10:30",
+      "status": "gepland",
       "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
+      "bron": "https://luxortheater.nl/agenda/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-60120/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Prentenboekjesfestival met De Gruffalo en Over een kleine mol…"
+      ],
+      "titel": "Vanaf2 Festivals",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-16",
+      "tijd": "11:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-60120/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Prentenboekjesfestival met De Gruffalo en Over een kleine mol…"
+      ],
+      "titel": "Vanaf2 Festivals",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-16",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-60120/"
     },
     {
       "theater": "nieuwe-luxor",
@@ -1122,7 +1252,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-19",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/claudia-de-breij-56039/"
     },
@@ -1174,7 +1304,7 @@
       "genre": "cabaret",
       "datum": "2027-03-22",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/kasper-van-der-laan-56467/"
     },
@@ -1257,6 +1387,656 @@
       "bron": "https://luxortheater.nl/agenda/daniel-arends-55999/"
     },
     {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles onder controle",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/van-vleuten-en-van-muiswinkel-56727/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Van Vleuten en Van Muiswinkel"
+      ],
+      "titel": "Alles onder controle",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/van-vleuten-en-van-muiswinkel-56727/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-02-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/rundfunk-57436/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/rundfunk-57436/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Rundfunk"
+      ],
+      "titel": "Wagyu",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://luxortheater.nl/agenda/rundfunk-57436/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Space Academy"
+      ],
+      "titel": "Missie Maan (8+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-14",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/andre-kuipers-57525/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "Jubileumvoorstelling",
+      "genre": "cabaret",
+      "datum": "2027-05-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/jandino-58405/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Aladdin"
+      ],
+      "titel": "De Van Hoorne Sprookjesmusical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-02",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/aladdin-58808/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Best of Stand Up XL"
+      ],
+      "titel": "Club Haug x Luxor",
+      "genre": "cabaret",
+      "datum": "2027-10-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/best-of-stand-up-xl-60994/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Best of Stand Up XL"
+      ],
+      "titel": "Club Haug x Luxor",
+      "genre": "cabaret",
+      "datum": "2027-10-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/best-of-stand-up-xl-60994/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Ratatatata!"
+      ],
+      "titel": "Lachen, schieten, brullen",
+      "genre": "komedie",
+      "datum": "2027-03-31",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ratatatata-57490/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Ratatatata!"
+      ],
+      "titel": "Lachen, schieten, brullen",
+      "genre": "komedie",
+      "datum": "2027-04-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ratatatata-57490/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Ratatatata!"
+      ],
+      "titel": "Lachen, schieten, brullen",
+      "genre": "komedie",
+      "datum": "2027-04-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ratatatata-57490/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Ratatatata!"
+      ],
+      "titel": "Lachen, schieten, brullen",
+      "genre": "komedie",
+      "datum": "2027-04-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ratatatata-57490/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Chinese Stand-Up Comedy Show"
+      ],
+      "titel": "In collaboration with Gale Comedy",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/chinese-stand-up-comedy-show-54866/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Aries Spears"
+      ],
+      "titel": "Comedian, imitator en acteur ARIES SPEARS keert terug naar Nederland",
+      "genre": "cabaret",
+      "datum": "2027-05-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/aries-spears-61086/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Woezel & Pip (2+)"
+      ],
+      "titel": "Feest in de Tovertuin",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/woezel-pip-2-58156/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Comedytrain on Tour"
+      ],
+      "titel": "De plek waar de grootste comedians van Nederland begonnen",
+      "genre": "cabaret",
+      "datum": "2027-01-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/comedytrain-on-tour-61177/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Tolga Çevik"
+      ],
+      "titel": "Tolgshow",
+      "genre": "cabaret",
+      "datum": "2027-04-04",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/tolga-cevik-60961/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Plien & Bianca"
+      ],
+      "titel": "Harrekidee!",
+      "genre": "cabaret",
+      "datum": "2026-12-15",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://luxortheater.nl/agenda/plien-bianca-57558/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Plien & Bianca"
+      ],
+      "titel": "Harrekidee!",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": "reprise",
+      "bron": "https://luxortheater.nl/agenda/plien-bianca-57558/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Ruud Smulders"
+      ],
+      "titel": "Rüdsichtslos",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ruud-smulders-57791/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Mus & Kapitein Kwaadbaard (8+)"
+      ],
+      "titel": "Gebaseerd op het boek van Kevin Hassing",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/mus-kapitein-kwaadbaard-8-58025/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "LIFT"
+      ],
+      "titel": "Jelka van Houten en Sanne Wallis de Vries",
+      "genre": "komedie",
+      "datum": "2027-03-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/lift-56525/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Huisgenoten"
+      ],
+      "titel": "De nieuwe romantische comedy",
+      "genre": "komedie",
+      "datum": "2027-03-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/huisgenoten-58142/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "De Verleiders"
+      ],
+      "titel": "Zoek Dekking! – over pensioenen en verzekeringen",
+      "genre": "komedie",
+      "datum": "2027-03-31",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-verleiders-58032/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "De Grote Oudejaars Kwis 2026"
+      ],
+      "titel": "Met Joep van Deudekom en Rob Urgert",
+      "genre": "cabaret",
+      "datum": "2026-12-27",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-grote-oudejaars-kwis-2026-57720/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Micky Overman"
+      ],
+      "titel": "Don't Threaten Me With A Good Time",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/micky-overman-58137/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Andries Tunru en Stefan Hendrikx"
+      ],
+      "titel": "De nogal hyperbijzondere Oudejaars-improvisatie-extravaganza 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/andries-tunru-en-stefan-hendrikx-58129/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Juf Braaksel de musical (6+)"
+      ],
+      "titel": "Een swingend en spannend avontuur voor het hele gezin",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-04",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/juf-braaksel-de-musical-6-58805/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-10",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/k3-60594/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-10",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/k3-60594/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-10",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/k3-60594/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-11",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/k3-60594/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-11",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/k3-60594/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Yentl en de Boer"
+      ],
+      "titel": "Rekhalzen",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://luxortheater.nl/agenda/yentl-en-de-boer-48580/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-03-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/rayen-panday-57954/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Rayen Panday"
+      ],
+      "titel": "Grip",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/rayen-panday-57954/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Rayen Panday & Friends"
+      ],
+      "titel": "Wonderful Christmastime",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/rayen-panday-59668/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "De Kleine Prins (8+)"
+      ],
+      "titel": "Met René van Kooten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-23",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-kleine-prins-8-59433/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Valentina Tóth"
+      ],
+      "titel": "Revue Revanche",
+      "genre": "cabaret",
+      "datum": "2027-05-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/valentina-toth-57516/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "De Proefkeuken Theatershow (8+)"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd e.a.",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-proefkeuken-2-57719/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "De Proefkeuken Theatershow (8+)"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd e.a.",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-21",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-proefkeuken-2-57719/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "De Proefkeuken Theatershow (8+)"
+      ],
+      "titel": "Pieter Hulst, Willem Voogd e.a.",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-proefkeuken-2-57719/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "101 Dalmatiërs"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-25",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "101 Dalmatiërs"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "101 Dalmatiërs"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-27",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "101 Dalmatiërs"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-27",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "101 Dalmatiërs"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "12:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "101 Dalmatiërs"
+      ],
+      "titel": "De Musical",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
+    },
+    {
       "theater": "nieuwe-luxor",
       "artiesten": [
         "Jochem Myjer"
@@ -1337,197 +2117,54 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
-        "Van Vleuten en Van Muiswinkel"
+        "Merijn Scholten"
       ],
-      "titel": "Alles onder controle",
+      "titel": "Lemming",
       "genre": "cabaret",
-      "datum": "2027-03-12",
+      "datum": "2027-11-10",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/van-vleuten-en-van-muiswinkel-56727/"
+      "soort": "reprise",
+      "bron": "https://luxortheater.nl/agenda/merijn-scholten-61389/"
     },
     {
       "theater": "oude-luxor",
       "artiesten": [
-        "Van Vleuten en Van Muiswinkel"
+        "Merijn Scholten"
       ],
-      "titel": "Alles onder controle",
+      "titel": "Lemming",
       "genre": "cabaret",
-      "datum": "2027-03-13",
+      "datum": "2027-11-11",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/van-vleuten-en-van-muiswinkel-56727/"
+      "soort": "reprise",
+      "bron": "https://luxortheater.nl/agenda/merijn-scholten-61389/"
     },
     {
       "theater": "oude-luxor",
       "artiesten": [
-        "Rundfunk"
+        "Tis Hier Geen Hotel 3"
       ],
-      "titel": "Wagyu",
+      "titel": "Hanneke Drenth en Dianne Liesker",
       "genre": "cabaret",
-      "datum": "2027-02-17",
+      "datum": "2026-11-25",
       "tijd": "20:00",
       "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/rundfunk-57436/"
+      "soort": "reprise",
+      "bron": "https://luxortheater.nl/agenda/tis-hier-geen-hotel-3-58282/"
     },
     {
       "theater": "oude-luxor",
       "artiesten": [
-        "Rundfunk"
+        "Srefidensi Comedyshow 2026"
       ],
-      "titel": "Wagyu",
+      "titel": "(geannuleerd)",
       "genre": "cabaret",
-      "datum": "2027-02-18",
-      "tijd": "20:00",
-      "status": "gepland",
+      "datum": "2026-11-29",
+      "tijd": "14:30",
+      "status": "geannuleerd",
       "soort": null,
-      "bron": "https://luxortheater.nl/agenda/rundfunk-57436/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Rundfunk"
-      ],
-      "titel": "Wagyu",
-      "genre": "cabaret",
-      "datum": "2027-02-19",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "première",
-      "bron": "https://luxortheater.nl/agenda/rundfunk-57436/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Jandino"
-      ],
-      "titel": "Jubileumvoorstelling",
-      "genre": "cabaret",
-      "datum": "2027-05-20",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/jandino-58405/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Best of Stand Up XL"
-      ],
-      "titel": "Club Haug x Luxor",
-      "genre": "cabaret",
-      "datum": "2027-10-01",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/best-of-stand-up-xl-60994/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Best of Stand Up XL"
-      ],
-      "titel": "Club Haug x Luxor",
-      "genre": "cabaret",
-      "datum": "2027-10-02",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/best-of-stand-up-xl-60994/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Ratatatata!"
-      ],
-      "titel": "Lachen, schieten, brullen",
-      "genre": "theaterkomedie",
-      "datum": "2027-03-31",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ratatatata-57490/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Ratatatata!"
-      ],
-      "titel": "Lachen, schieten, brullen",
-      "genre": "theaterkomedie",
-      "datum": "2027-04-01",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ratatatata-57490/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Ratatatata!"
-      ],
-      "titel": "Lachen, schieten, brullen",
-      "genre": "theaterkomedie",
-      "datum": "2027-04-02",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ratatatata-57490/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Ratatatata!"
-      ],
-      "titel": "Lachen, schieten, brullen",
-      "genre": "theaterkomedie",
-      "datum": "2027-04-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ratatatata-57490/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Aries Spears"
-      ],
-      "titel": "Comedian, imitator en acteur ARIES SPEARS keert terug naar Nederland",
-      "genre": "cabaret",
-      "datum": "2027-05-24",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/aries-spears-61086/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Najib & Roué"
-      ],
-      "titel": "Alles is Comedy",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/najib-roue-56186/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Najib & Roué"
-      ],
-      "titel": "Alles is Comedy",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/najib-roue-56186/"
+      "bron": "https://luxortheater.nl/agenda/srefidensi-comedyshow-58404/"
     },
     {
       "theater": "oude-luxor",
@@ -1541,238 +2178,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/roel-c-verburg-61176/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Comedytrain on Tour"
-      ],
-      "titel": "De plek waar de grootste comedians van Nederland begonnen",
-      "genre": "cabaret",
-      "datum": "2027-01-26",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/comedytrain-on-tour-61177/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Tolga Çevik"
-      ],
-      "titel": "Tolgshow",
-      "genre": "cabaret",
-      "datum": "2027-04-04",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/tolga-cevik-60961/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Plien & Bianca"
-      ],
-      "titel": "Harrekidee!",
-      "genre": "cabaret",
-      "datum": "2026-12-15",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://luxortheater.nl/agenda/plien-bianca-57558/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Plien & Bianca"
-      ],
-      "titel": "Harrekidee!",
-      "genre": "cabaret",
-      "datum": "2026-12-16",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://luxortheater.nl/agenda/plien-bianca-57558/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Tis hier geen hotel 3"
-      ],
-      "titel": "Hanneke Drenth en Dianne Liesker",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://luxortheater.nl/agenda/tis-hier-geen-hotel-3-58282/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Ruud Smulders"
-      ],
-      "titel": "Rüdsichtslos",
-      "genre": "cabaret",
-      "datum": "2027-01-09",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ruud-smulders-57791/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "LIFT"
-      ],
-      "titel": "Jelka van Houten en Sanne Wallis de Vries",
-      "genre": "theaterkomedie",
-      "datum": "2027-03-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/lift-56525/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Huisgenoten"
-      ],
-      "titel": "De nieuwe romantische comedy",
-      "genre": "theaterkomedie",
-      "datum": "2027-03-20",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/huisgenoten-58142/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "De Verleiders"
-      ],
-      "titel": "Zoek Dekking! – over pensioenen en verzekeringen",
-      "genre": "theaterkomedie",
-      "datum": "2027-03-31",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/de-verleiders-58032/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "De Grote Oudejaars Kwis 2026"
-      ],
-      "titel": "Met Joep van Deudekom en Rob Urgert",
-      "genre": "cabaret",
-      "datum": "2026-12-27",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/de-grote-oudejaars-kwis-2026-57720/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Micky Overman"
-      ],
-      "titel": "Don't Threaten Me With A Good Time",
-      "genre": "cabaret",
-      "datum": "2027-03-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/micky-overman-58137/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Andries Tunru en Stefan Hendrikx"
-      ],
-      "titel": "De nogal hyperbijzondere Oudejaars-improvisatie-extravaganza 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-12-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/andries-tunru-en-stefan-hendrikx-58129/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Yentl en de Boer"
-      ],
-      "titel": "Rekhalzen",
-      "genre": "cabaret",
-      "datum": "2026-11-20",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://luxortheater.nl/agenda/yentl-en-de-boer-48580/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Rayen Panday"
-      ],
-      "titel": "Grip",
-      "genre": "cabaret",
-      "datum": "2027-03-18",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/rayen-panday-57954/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Rayen Panday"
-      ],
-      "titel": "Grip",
-      "genre": "cabaret",
-      "datum": "2027-03-19",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/rayen-panday-57954/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Rayen Panday & Friends"
-      ],
-      "titel": "Wonderful Christmastime",
-      "genre": "cabaret",
-      "datum": "2026-12-17",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/rayen-panday-59668/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2027-05-22",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/valentina-toth-57516/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [],
-      "titel": "Srefidensi Comedyshow 2026",
-      "genre": "cabaret",
-      "datum": "2026-11-29",
-      "tijd": "14:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/srefidensi-comedyshow-58404/"
     }
   ],
   "recensies": {}

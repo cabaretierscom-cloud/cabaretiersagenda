@@ -1,50 +1,66 @@
 {
-  "datum": "2026-10-29",
+  "datum": "2026-11-19",
   "totaal": {
-    "speeldata": 5996,
-    "komend": 5874,
-    "artiesten": 463,
-    "zalen": 579,
-    "plaatsen": 424,
-    "voorstellingen": 666
+    "speeldata": 9241,
+    "komend": 8153,
+    "artiesten": 965,
+    "zalen": 734,
+    "plaatsen": 508,
+    "voorstellingen": 1412
   },
   "bronnen": [
     {
+      "bron": "amai",
+      "naam": "Amai Comedy Club",
+      "opgehaald": "2026-11-19",
+      "speeldata": 16,
+      "vorige": 16,
+      "dubbel": 0
+    },
+    {
       "bron": "amphion",
       "naam": "Amphion",
-      "opgehaald": "2026-10-29",
-      "speeldata": 62,
-      "vorige": 62,
+      "opgehaald": "2026-11-19",
+      "speeldata": 68,
+      "vorige": 68,
       "dubbel": 0
     },
     {
       "bron": "amstelveen",
       "naam": "Schouwburg Amstelveen",
-      "opgehaald": "2026-10-29",
-      "speeldata": 36,
-      "vorige": 35,
+      "opgehaald": "2026-11-19",
+      "speeldata": 45,
+      "vorige": 45,
+      "dubbel": 0
+    },
+    {
+      "bron": "arenberg",
+      "naam": "Arenberg",
+      "opgehaald": "2026-11-19",
+      "speeldata": 42,
+      "vorige": 42,
       "dubbel": 0
     },
     {
       "bron": "beatvenues",
       "naam": "Stadsschouwburg Antwerpen en Capitole Gent",
-      "opgehaald": "2026-10-29",
-      "speeldata": 47,
-      "vorige": 47,
+      "opgehaald": "2026-11-19",
+      "speeldata": 52,
+      "vorige": 52,
       "dubbel": 0
     },
     {
       "bron": "bellevue",
       "naam": "Theater Bellevue",
-      "opgehaald": "2026-10-29",
-      "speeldata": 143,
-      "vorige": 143,
+      "opgehaald": "2026-11-19",
+      "speeldata": 128,
+      "vorige": 126,
       "dubbel": 0
     },
     {
       "bron": "carre",
       "naam": "Koninklijk Theater Carré",
-      "opgehaald": "2026-10-29",
+      "opgehaald": "2026-11-19",
       "speeldata": 56,
       "vorige": 56,
       "dubbel": 0
@@ -52,418 +68,654 @@
     {
       "bron": "castellum",
       "naam": "Castellum",
-      "opgehaald": "2026-10-29",
-      "speeldata": 50,
-      "vorige": 50,
+      "opgehaald": "2026-11-19",
+      "speeldata": 64,
+      "vorige": 64,
       "dubbel": 0
     },
     {
       "bron": "comedy-cafe",
       "naam": "Comedy Café Amsterdam",
-      "opgehaald": "2026-10-25",
-      "speeldata": 144,
-      "vorige": 144,
-      "dubbel": 0
-    },
-    {
-      "bron": "cpunt",
-      "naam": "Cpunt",
-      "opgehaald": "2026-10-29",
-      "speeldata": 103,
-      "vorige": 103,
-      "dubbel": 0
-    },
-    {
-      "bron": "cultura",
-      "naam": "Cultura Ede",
-      "opgehaald": "2026-10-29",
-      "speeldata": 23,
-      "vorige": 23,
-      "dubbel": 0
-    },
-    {
-      "bron": "de-veste",
-      "naam": "Theater De Veste",
-      "opgehaald": "2026-10-28",
-      "speeldata": 54,
-      "vorige": 54,
-      "dubbel": 0
-    },
-    {
-      "bron": "delamar",
-      "naam": "DeLaMar",
-      "opgehaald": "2026-10-29",
-      "speeldata": 48,
-      "vorige": 48,
-      "dubbel": 0
-    },
-    {
-      "bron": "gouda",
-      "naam": "Goudse Schouwburg",
-      "opgehaald": "2026-10-29",
-      "speeldata": 80,
-      "vorige": 80,
-      "dubbel": 0
-    },
-    {
-      "bron": "harmonie",
-      "naam": "De Harmonie",
-      "opgehaald": "2026-10-29",
-      "speeldata": 46,
-      "vorige": 46,
-      "dubbel": 0
-    },
-    {
-      "bron": "hengelo",
-      "naam": "Schouwburg Hengelo",
-      "opgehaald": "2026-10-29",
-      "speeldata": 41,
-      "vorige": 41,
-      "dubbel": 0
-    },
-    {
-      "bron": "hetpark",
-      "naam": "Schouwburg Het Park",
-      "opgehaald": "2026-10-29",
-      "speeldata": 60,
-      "vorige": 60,
-      "dubbel": 0
-    },
-    {
-      "bron": "hnt",
-      "naam": "Het Nationale Theater",
-      "opgehaald": "2026-10-29",
-      "speeldata": 1,
-      "vorige": 1,
-      "dubbel": 0
-    },
-    {
-      "bron": "hof88",
-      "naam": "Hof88",
-      "opgehaald": "2026-10-29",
-      "speeldata": 49,
-      "vorige": 49,
-      "dubbel": 0
-    },
-    {
-      "bron": "kampanje",
-      "naam": "Theater de Kampanje",
-      "opgehaald": "2026-10-29",
-      "speeldata": 59,
-      "vorige": 59,
-      "dubbel": 0
-    },
-    {
-      "bron": "kleine-komedie",
-      "naam": "De Kleine Komedie",
-      "opgehaald": "2026-10-29",
-      "speeldata": 161,
-      "vorige": 161,
-      "dubbel": 0
-    },
-    {
-      "bron": "kunstlinie",
-      "naam": "Kunstlinie",
-      "opgehaald": "2026-10-29",
-      "speeldata": 60,
-      "vorige": 60,
-      "dubbel": 0
-    },
-    {
-      "bron": "kunstmin",
-      "naam": "Kunstmin",
-      "opgehaald": "2026-10-29",
-      "speeldata": 51,
-      "vorige": 51,
-      "dubbel": 0
-    },
-    {
-      "bron": "lampegiet",
-      "naam": "Theater Lampegiet",
-      "opgehaald": "2026-10-29",
-      "speeldata": 32,
-      "vorige": 32,
-      "dubbel": 0
-    },
-    {
-      "bron": "lawei",
-      "naam": "Schouwburg De Lawei",
-      "opgehaald": "2026-10-29",
-      "speeldata": 56,
-      "vorige": 56,
-      "dubbel": 0
-    },
-    {
-      "bron": "leiden",
-      "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-      "opgehaald": "2026-10-29",
-      "speeldata": 84,
-      "vorige": 84,
-      "dubbel": 0
-    },
-    {
-      "bron": "luxor",
-      "naam": "Luxor Theater",
-      "opgehaald": "2026-10-29",
+      "opgehaald": "2026-11-08",
       "speeldata": 135,
       "vorige": 135,
       "dubbel": 0
     },
     {
-      "bron": "maaspoort",
-      "naam": "Maaspoort",
-      "opgehaald": "2026-10-29",
-      "speeldata": 39,
-      "vorige": 39,
+      "bron": "comedyhuis",
+      "naam": "Comedyhuis Utrecht",
+      "opgehaald": "2026-11-19",
+      "speeldata": 78,
+      "vorige": 78,
       "dubbel": 0
     },
     {
-      "bron": "musis",
-      "naam": "Musis & Stadstheater Arnhem",
-      "opgehaald": "2026-10-29",
-      "speeldata": 18,
-      "vorige": 18,
+      "bron": "comedytrain",
+      "naam": "Comedytrain",
+      "opgehaald": "2026-11-19",
+      "speeldata": 124,
+      "vorige": 124,
       "dubbel": 0
     },
     {
-      "bron": "nieuwe-kolk",
-      "naam": "De Nieuwe Kolk",
-      "opgehaald": "2026-10-29",
-      "speeldata": 56,
-      "vorige": 56,
+      "bron": "cpunt",
+      "naam": "Cpunt",
+      "opgehaald": "2026-11-19",
+      "speeldata": 149,
+      "vorige": 149,
       "dubbel": 0
     },
     {
-      "bron": "nijmegen",
-      "naam": "Stadsschouwburg & De Vereeniging Nijmegen",
-      "opgehaald": "2026-10-28",
-      "speeldata": 29,
-      "vorige": 29,
+      "bron": "cultura",
+      "naam": "Cultura Ede",
+      "opgehaald": "2026-11-19",
+      "speeldata": 35,
+      "vorige": 35,
       "dubbel": 0
     },
     {
-      "bron": "ogterop",
-      "naam": "Schouwburg Ogterop",
-      "opgehaald": "2026-10-29",
-      "speeldata": 9,
-      "vorige": 9,
+      "bron": "de-veste",
+      "naam": "Theater De Veste",
+      "opgehaald": "2026-11-17",
+      "speeldata": 26,
+      "vorige": 26,
       "dubbel": 0
     },
     {
-      "bron": "orpheus",
-      "naam": "Orpheus",
-      "opgehaald": "2026-10-29",
-      "speeldata": 68,
-      "vorige": 68,
+      "bron": "delamar",
+      "naam": "DeLaMar",
+      "opgehaald": "2026-11-19",
+      "speeldata": 91,
+      "vorige": 91,
       "dubbel": 0
     },
     {
-      "bron": "parade",
-      "naam": "Theater aan de Parade",
-      "opgehaald": "2026-10-29",
-      "speeldata": 34,
-      "vorige": 34,
-      "dubbel": 0
-    },
-    {
-      "bron": "parktheater",
-      "naam": "Parktheater Eindhoven",
-      "opgehaald": "2026-10-29",
-      "speeldata": 152,
-      "vorige": 152,
-      "dubbel": 0
-    },
-    {
-      "bron": "parkvilla",
-      "naam": "Parkvilla",
-      "opgehaald": "2026-10-29",
-      "speeldata": 6,
-      "vorige": 6,
-      "dubbel": 0
-    },
-    {
-      "bron": "plt",
-      "naam": "PLT (Parkstad Limburg Theaters)",
-      "opgehaald": "2026-10-29",
-      "speeldata": 131,
-      "vorige": 130,
-      "dubbel": 0
-    },
-    {
-      "bron": "purmaryn",
-      "naam": "Theater De Purmaryn",
-      "opgehaald": "2026-10-29",
-      "speeldata": 57,
-      "vorige": 55,
-      "dubbel": 0
-    },
-    {
-      "bron": "schakel",
-      "naam": "CC De Schakel",
-      "opgehaald": "2026-10-29",
-      "speeldata": 31,
-      "vorige": 31,
-      "dubbel": 0
-    },
-    {
-      "bron": "schie",
-      "naam": "Theater aan de Schie",
-      "opgehaald": "2026-10-29",
-      "speeldata": 45,
-      "vorige": 45,
-      "dubbel": 0
-    },
-    {
-      "bron": "speelhuis",
-      "naam": "Theater Het Speelhuis",
-      "opgehaald": "2026-10-29",
-      "speeldata": 29,
-      "vorige": 29,
-      "dubbel": 0
-    },
-    {
-      "bron": "spot-groningen",
-      "naam": "SPOT Groningen",
-      "opgehaald": "2026-10-29",
-      "speeldata": 89,
-      "vorige": 89,
-      "dubbel": 0
-    },
-    {
-      "bron": "stoep",
-      "naam": "Theater de Stoep",
-      "opgehaald": "2026-10-29",
-      "speeldata": 75,
-      "vorige": 75,
-      "dubbel": 0
-    },
-    {
-      "bron": "tilburg",
-      "naam": "Schouwburg & Concertzaal Tilburg",
-      "opgehaald": "2026-10-29",
-      "speeldata": 56,
-      "vorige": 56,
-      "dubbel": 0
-    },
-    {
-      "bron": "utrecht",
-      "naam": "Stadsschouwburg Utrecht",
-      "opgehaald": "2026-10-29",
-      "speeldata": 117,
-      "vorige": 117,
-      "dubbel": 0
-    },
-    {
-      "bron": "venray",
-      "naam": "Schouwburg Venray",
-      "opgehaald": "2026-10-29",
-      "speeldata": 31,
-      "vorige": 31,
-      "dubbel": 0
-    },
-    {
-      "bron": "verkadefabriek",
-      "naam": "Verkadefabriek",
-      "opgehaald": "2026-10-29",
-      "speeldata": 69,
-      "vorige": 69,
-      "dubbel": 0
-    },
-    {
-      "bron": "vlaardingen",
-      "naam": "Stadsgehoorzaal Vlaardingen",
-      "opgehaald": "2026-10-29",
-      "speeldata": 28,
-      "vorige": 28,
-      "dubbel": 0
-    },
-    {
-      "bron": "vrijthof",
-      "naam": "Theater aan het Vrijthof",
-      "opgehaald": "2026-10-29",
+      "bron": "despil",
+      "naam": "CC De Spil",
+      "opgehaald": "2026-11-19",
       "speeldata": 40,
       "vorige": 40,
       "dubbel": 0
     },
     {
-      "bron": "walhalla",
-      "naam": "Theater Walhalla",
-      "opgehaald": "2026-10-29",
-      "speeldata": 82,
-      "vorige": 82,
+      "bron": "desteiger",
+      "naam": "CC De Steiger",
+      "opgehaald": "2026-11-19",
+      "speeldata": 13,
+      "vorige": 13,
       "dubbel": 0
     },
     {
-      "bron": "wilminktheater",
-      "naam": "Wilminktheater en Muziekcentrum Enschede",
-      "opgehaald": "2026-10-28",
-      "speeldata": 84,
-      "vorige": 84,
+      "bron": "diest",
+      "naam": "CC Den Amer",
+      "opgehaald": "2026-11-19",
+      "speeldata": 14,
+      "vorige": 14,
       "dubbel": 0
     },
     {
-      "bron": "zaantheater",
-      "naam": "Zaantheater",
-      "opgehaald": "2026-10-29",
-      "speeldata": 60,
+      "bron": "emotia",
+      "naam": "Emotia",
+      "opgehaald": "2026-11-19",
+      "speeldata": 17,
+      "vorige": 17,
+      "dubbel": 0
+    },
+    {
+      "bron": "gildhof",
+      "naam": "CC Gildhof",
+      "opgehaald": "2026-11-19",
+      "speeldata": 14,
+      "vorige": 14,
+      "dubbel": 0
+    },
+    {
+      "bron": "gouda",
+      "naam": "Goudse Schouwburg",
+      "opgehaald": "2026-11-19",
+      "speeldata": 105,
+      "vorige": 104,
+      "dubbel": 0
+    },
+    {
+      "bron": "harmonie",
+      "naam": "De Harmonie",
+      "opgehaald": "2026-11-19",
+      "speeldata": 69,
+      "vorige": 69,
+      "dubbel": 0
+    },
+    {
+      "bron": "haug",
+      "naam": "Comedy Club Haug",
+      "opgehaald": "2026-11-19",
+      "speeldata": 121,
+      "vorige": 121,
+      "dubbel": 0
+    },
+    {
+      "bron": "hengelo",
+      "naam": "Schouwburg Hengelo",
+      "opgehaald": "2026-11-19",
+      "speeldata": 70,
+      "vorige": 70,
+      "dubbel": 0
+    },
+    {
+      "bron": "hetpark",
+      "naam": "Schouwburg Het Park",
+      "opgehaald": "2026-11-19",
+      "speeldata": 91,
+      "vorige": 91,
+      "dubbel": 0
+    },
+    {
+      "bron": "hnt",
+      "naam": "Het Nationale Theater",
+      "opgehaald": "2026-11-19",
+      "speeldata": 7,
+      "vorige": 5,
+      "dubbel": 0
+    },
+    {
+      "bron": "hof88",
+      "naam": "Hof88",
+      "opgehaald": "2026-11-19",
+      "speeldata": 48,
+      "vorige": 48,
+      "dubbel": 0
+    },
+    {
+      "bron": "kampanje",
+      "naam": "Theater de Kampanje",
+      "opgehaald": "2026-11-19",
+      "speeldata": 73,
+      "vorige": 73,
+      "dubbel": 0
+    },
+    {
+      "bron": "kleine-komedie",
+      "naam": "De Kleine Komedie",
+      "opgehaald": "2026-11-19",
+      "speeldata": 145,
+      "vorige": 145,
+      "dubbel": 0
+    },
+    {
+      "bron": "koksijde",
+      "naam": "CC Casino Koksijde",
+      "opgehaald": "2026-11-19",
+      "speeldata": 11,
+      "vorige": 11,
+      "dubbel": 0
+    },
+    {
+      "bron": "kortrijk",
+      "naam": "Schouwburg Kortrijk",
+      "opgehaald": "2026-11-19",
+      "speeldata": 58,
       "vorige": 58,
       "dubbel": 0
     },
     {
-      "bron": "zuidplein",
-      "naam": "Theater Zuidplein",
-      "opgehaald": "2026-10-28",
+      "bron": "kunstlinie",
+      "naam": "Kunstlinie",
+      "opgehaald": "2026-11-19",
+      "speeldata": 76,
+      "vorige": 76,
+      "dubbel": 0
+    },
+    {
+      "bron": "kunstmin",
+      "naam": "Kunstmin",
+      "opgehaald": "2026-11-19",
+      "speeldata": 77,
+      "vorige": 76,
+      "dubbel": 0
+    },
+    {
+      "bron": "lampegiet",
+      "naam": "Theater Lampegiet",
+      "opgehaald": "2026-11-19",
+      "speeldata": 46,
+      "vorige": 46,
+      "dubbel": 0
+    },
+    {
+      "bron": "lawei",
+      "naam": "Schouwburg De Lawei",
+      "opgehaald": "2026-11-10",
+      "speeldata": 79,
+      "vorige": 79,
+      "dubbel": 0
+    },
+    {
+      "bron": "leiden",
+      "naam": "Leidse Schouwburg en Stadsgehoorzaal",
+      "opgehaald": "2026-11-19",
+      "speeldata": 99,
+      "vorige": 99,
+      "dubbel": 0
+    },
+    {
+      "bron": "luxor",
+      "naam": "Luxor Theater",
+      "opgehaald": "2026-11-19",
+      "speeldata": 166,
+      "vorige": 164,
+      "dubbel": 0
+    },
+    {
+      "bron": "maaspoort",
+      "naam": "Maaspoort",
+      "opgehaald": "2026-11-19",
       "speeldata": 52,
       "vorige": 52,
       "dubbel": 0
     },
     {
+      "bron": "minard",
+      "naam": "Minardschouwburg",
+      "opgehaald": "2026-11-16",
+      "speeldata": 24,
+      "vorige": 24,
+      "dubbel": 0
+    },
+    {
+      "bron": "musis",
+      "naam": "Musis & Stadstheater Arnhem",
+      "opgehaald": "2026-11-19",
+      "speeldata": 15,
+      "vorige": 15,
+      "dubbel": 0
+    },
+    {
+      "bron": "nieuwe-kolk",
+      "naam": "De Nieuwe Kolk",
+      "opgehaald": "2026-11-19",
+      "speeldata": 69,
+      "vorige": 69,
+      "dubbel": 0
+    },
+    {
+      "bron": "nijmegen",
+      "naam": "Stadsschouwburg & De Vereeniging Nijmegen",
+      "opgehaald": "2026-11-19",
+      "speeldata": 48,
+      "vorige": 48,
+      "dubbel": 0
+    },
+    {
+      "bron": "ogterop",
+      "naam": "Schouwburg Ogterop",
+      "opgehaald": "2026-11-19",
+      "speeldata": 7,
+      "vorige": 7,
+      "dubbel": 0
+    },
+    {
+      "bron": "orpheus",
+      "naam": "Orpheus",
+      "opgehaald": "2026-11-17",
+      "speeldata": 24,
+      "vorige": 24,
+      "dubbel": 0
+    },
+    {
+      "bron": "parade",
+      "naam": "Theater aan de Parade",
+      "opgehaald": "2026-11-19",
+      "speeldata": 47,
+      "vorige": 47,
+      "dubbel": 0
+    },
+    {
+      "bron": "parktheater",
+      "naam": "Parktheater Eindhoven",
+      "opgehaald": "2026-11-19",
+      "speeldata": 225,
+      "vorige": 225,
+      "dubbel": 0
+    },
+    {
+      "bron": "parkvilla",
+      "naam": "Parkvilla",
+      "opgehaald": "2026-11-19",
+      "speeldata": 9,
+      "vorige": 9,
+      "dubbel": 0
+    },
+    {
+      "bron": "plt",
+      "naam": "PLT (Parkstad Limburg Theaters)",
+      "opgehaald": "2026-11-19",
+      "speeldata": 251,
+      "vorige": 251,
+      "dubbel": 0
+    },
+    {
+      "bron": "purmaryn",
+      "naam": "Theater De Purmaryn",
+      "opgehaald": "2026-11-19",
+      "speeldata": 48,
+      "vorige": 48,
+      "dubbel": 0
+    },
+    {
+      "bron": "schakel",
+      "naam": "CC De Schakel",
+      "opgehaald": "2026-11-19",
+      "speeldata": 49,
+      "vorige": 49,
+      "dubbel": 0
+    },
+    {
+      "bron": "schie",
+      "naam": "Theater aan de Schie",
+      "opgehaald": "2026-11-19",
+      "speeldata": 55,
+      "vorige": 55,
+      "dubbel": 0
+    },
+    {
+      "bron": "speelhuis",
+      "naam": "Theater Het Speelhuis",
+      "opgehaald": "2026-11-19",
+      "speeldata": 56,
+      "vorige": 56,
+      "dubbel": 0
+    },
+    {
+      "bron": "splotsz",
+      "naam": "SplotsZ",
+      "opgehaald": "2026-11-19",
+      "speeldata": 7,
+      "vorige": 7,
+      "dubbel": 0
+    },
+    {
+      "bron": "spot-groningen",
+      "naam": "SPOT Groningen",
+      "opgehaald": "2026-11-19",
+      "speeldata": 84,
+      "vorige": 84,
+      "dubbel": 0
+    },
+    {
+      "bron": "stoep",
+      "naam": "Theater de Stoep",
+      "opgehaald": "2026-11-19",
+      "speeldata": 68,
+      "vorige": 68,
+      "dubbel": 0
+    },
+    {
+      "bron": "tilburg",
+      "naam": "Schouwburg & Concertzaal Tilburg",
+      "opgehaald": "2026-11-19",
+      "speeldata": 76,
+      "vorige": 76,
+      "dubbel": 0
+    },
+    {
+      "bron": "utrecht",
+      "naam": "Stadsschouwburg Utrecht",
+      "opgehaald": "2026-11-19",
+      "speeldata": 106,
+      "vorige": 106,
+      "dubbel": 0
+    },
+    {
+      "bron": "venray",
+      "naam": "Schouwburg Venray",
+      "opgehaald": "2026-11-19",
+      "speeldata": 41,
+      "vorige": 41,
+      "dubbel": 0
+    },
+    {
+      "bron": "verkadefabriek",
+      "naam": "Verkadefabriek",
+      "opgehaald": "2026-11-19",
+      "speeldata": 96,
+      "vorige": 96,
+      "dubbel": 0
+    },
+    {
+      "bron": "vlaardingen",
+      "naam": "Stadsgehoorzaal Vlaardingen",
+      "opgehaald": "2026-11-19",
+      "speeldata": 50,
+      "vorige": 50,
+      "dubbel": 0
+    },
+    {
+      "bron": "vrijthof",
+      "naam": "Theater aan het Vrijthof",
+      "opgehaald": "2026-11-19",
+      "speeldata": 38,
+      "vorige": 38,
+      "dubbel": 0
+    },
+    {
+      "bron": "walhalla",
+      "naam": "Theater Walhalla",
+      "opgehaald": "2026-11-19",
+      "speeldata": 109,
+      "vorige": 109,
+      "dubbel": 0
+    },
+    {
+      "bron": "warande",
+      "naam": "De Warande",
+      "opgehaald": "2026-11-19",
+      "speeldata": 32,
+      "vorige": 32,
+      "dubbel": 0
+    },
+    {
+      "bron": "westrand",
+      "naam": "Westrand",
+      "opgehaald": "2026-11-19",
+      "speeldata": 48,
+      "vorige": 48,
+      "dubbel": 0
+    },
+    {
+      "bron": "wilminktheater",
+      "naam": "Wilminktheater en Muziekcentrum Enschede",
+      "opgehaald": "2026-11-19",
+      "speeldata": 115,
+      "vorige": 115,
+      "dubbel": 0
+    },
+    {
+      "bron": "zaantheater",
+      "naam": "Zaantheater",
+      "opgehaald": "2026-11-19",
+      "speeldata": 84,
+      "vorige": 86,
+      "dubbel": 0
+    },
+    {
+      "bron": "zoetegem",
+      "naam": "CC Zoetegem",
+      "opgehaald": "2026-11-19",
+      "speeldata": 22,
+      "vorige": 22,
+      "dubbel": 0
+    },
+    {
+      "bron": "zuidplein",
+      "naam": "Theater Zuidplein",
+      "opgehaald": "2026-11-19",
+      "speeldata": 99,
+      "vorige": 99,
+      "dubbel": 0
+    },
+    {
       "bron": "zwolle",
       "naam": "Zwolse Theaters",
-      "opgehaald": "2026-10-29",
-      "speeldata": 77,
-      "vorige": 77,
+      "opgehaald": "2026-11-19",
+      "speeldata": 70,
+      "vorige": 70,
       "dubbel": 0
     },
     {
       "bron": "5to9",
       "naam": "Agenda van 5to9",
-      "opgehaald": "2026-10-29",
-      "speeldata": 430,
-      "vorige": 429,
-      "dubbel": 53
+      "opgehaald": "2026-11-19",
+      "speeldata": 370,
+      "vorige": 369,
+      "dubbel": 71
+    },
+    {
+      "bron": "anuar",
+      "naam": "Speellijst van Anuar",
+      "opgehaald": "2026-11-19",
+      "speeldata": 21,
+      "vorige": 21,
+      "dubbel": 8
     },
     {
       "bron": "bunker",
       "naam": "Agenda van Bunker Theaterzaken",
-      "opgehaald": "2026-10-29",
-      "speeldata": 231,
-      "vorige": 231,
-      "dubbel": 535
+      "opgehaald": "2026-11-19",
+      "speeldata": 357,
+      "vorige": 357,
+      "dubbel": 332
+    },
+    {
+      "bron": "evaeikhout",
+      "naam": "Speellijst van Eva Eikhout",
+      "opgehaald": "2026-11-19",
+      "speeldata": 1,
+      "vorige": 1,
+      "dubbel": 1
+    },
+    {
+      "bron": "fris",
+      "naam": "Agenda van Theaterbureau Fr!S",
+      "opgehaald": "2026-11-19",
+      "speeldata": 109,
+      "vorige": 109,
+      "dubbel": 62
+    },
+    {
+      "bron": "kobra",
+      "naam": "Speellijsten van Kobra Theaterproducties (import)",
+      "opgehaald": "2026-11-01",
+      "speeldata": 223,
+      "vorige": 223,
+      "dubbel": 71
     },
     {
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
-      "opgehaald": "2026-10-29",
-      "speeldata": 1957,
-      "vorige": 1939,
-      "dubbel": 1029
+      "opgehaald": "2026-11-19",
+      "speeldata": 2425,
+      "vorige": 2424,
+      "dubbel": 1326
     }
   ],
   "nieuw": {
     "artiesten": [
       {
-        "id": "de-sitcomeback",
-        "naam": "DE SITCOMEBACK"
+        "id": "farida-laan-en-maaike-dirkje-hop",
+        "naam": "Farida Laan & Maaike Dirkje Hop"
+      },
+      {
+        "id": "jongerenraad-kunstmin",
+        "naam": "Jongerenraad Kunstmin"
+      },
+      {
+        "id": "sinterklaas-in-theater-aan-het-spui",
+        "naam": "Sinterklaas in Theater aan het Spui"
+      },
+      {
+        "id": "veldeke-theater",
+        "naam": "Veldeke Theater"
       }
     ],
-    "zalen": [],
+    "zalen": [
+      {
+        "id": "cafe-caat-leiden",
+        "naam": "Café Caat",
+        "plaats": "Leiden",
+        "land": "NL",
+        "website": "https://leidseschouwburg-stadsgehoorzaal.nl/cafe-caat/"
+      },
+      {
+        "id": "theater-het-klokhuis-antwerpen",
+        "naam": "Theater Het Klokhuis",
+        "plaats": "Antwerpen",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "comedy-club-haug-best-of-stand-up",
+        "naam": "Comedy Club Haug",
+        "plaats": "Best of Stand-Up",
+        "land": "NL",
+        "website": "https://comedyclubhaug.com"
+      },
+      {
+        "id": "de-cabaret-club-de-kring",
+        "naam": "De Cabaret Club",
+        "plaats": "De Kring",
+        "land": "NL",
+        "website": "https://www.dekringroosendaal.nl"
+      },
+      {
+        "id": "comedy-in-de-knop-t-rozenknopje",
+        "naam": "Comedy in de Knop",
+        "plaats": "t Rozenknopje",
+        "land": "NL",
+        "website": null
+      }
+    ],
     "voorstellingen": [
       {
-        "id": "de-sitcomeback-de-hoe",
-        "titel": "De hoe",
+        "id": "boom-chicago-s-comedy-explosion-2-cafe-caat-leiden",
+        "titel": "Boom Chicago's Comedy Explosion #2",
+        "artiesten": []
+      },
+      {
+        "id": "lachstof-5-cafe-caat-leiden",
+        "titel": "Lachstof #5",
+        "artiesten": []
+      },
+      {
+        "id": "the-stand-up-club-8-cafe-caat-leiden",
+        "titel": "The Stand-up Club #8",
+        "artiesten": []
+      },
+      {
+        "id": "farida-laan-en-maaike-dirkje-hop-hoplalaan",
+        "titel": "HOPlaLAAN",
         "artiesten": [
-          "de-sitcomeback"
+          "farida-laan-en-maaike-dirkje-hop"
+        ]
+      },
+      {
+        "id": "jongerenraad-kunstmin-stand-up-night",
+        "titel": "Stand-up Night",
+        "artiesten": [
+          "jongerenraad-kunstmin"
+        ]
+      },
+      {
+        "id": "sinterklaas-in-theater-aan-het-spui-het-nationale-theater",
+        "titel": "Het Nationale Theater",
+        "artiesten": [
+          "sinterklaas-in-theater-aan-het-spui"
+        ]
+      },
+      {
+        "id": "veldeke-theater-aajdjaorscabberet-eve-oonder-us",
+        "titel": "Aajdjaorscabberèt: Eve oonder us",
+        "artiesten": [
+          "veldeke-theater"
         ]
       }
     ]
@@ -514,6 +766,195 @@
       "zalen": 579,
       "plaatsen": 424,
       "voorstellingen": 666
+    },
+    {
+      "datum": "2026-10-30",
+      "speeldata": 6601,
+      "komend": 6433,
+      "artiesten": 507,
+      "zalen": 584,
+      "plaatsen": 424,
+      "voorstellingen": 799
+    },
+    {
+      "datum": "2026-10-31",
+      "speeldata": 6698,
+      "komend": 6477,
+      "artiesten": 508,
+      "zalen": 592,
+      "plaatsen": 431,
+      "voorstellingen": 801
+    },
+    {
+      "datum": "2026-11-01",
+      "speeldata": 7162,
+      "komend": 6890,
+      "artiesten": 516,
+      "zalen": 644,
+      "plaatsen": 462,
+      "voorstellingen": 810
+    },
+    {
+      "datum": "2026-11-02",
+      "speeldata": 7259,
+      "komend": 6971,
+      "artiesten": 516,
+      "zalen": 648,
+      "plaatsen": 465,
+      "voorstellingen": 810
+    },
+    {
+      "datum": "2026-11-03",
+      "speeldata": 7731,
+      "komend": 7435,
+      "artiesten": 521,
+      "zalen": 686,
+      "plaatsen": 485,
+      "voorstellingen": 818
+    },
+    {
+      "datum": "2026-11-04",
+      "speeldata": 7751,
+      "komend": 7438,
+      "artiesten": 524,
+      "zalen": 686,
+      "plaatsen": 485,
+      "voorstellingen": 832
+    },
+    {
+      "datum": "2026-11-05",
+      "speeldata": 7756,
+      "komend": 7399,
+      "artiesten": 525,
+      "zalen": 687,
+      "plaatsen": 485,
+      "voorstellingen": 832
+    },
+    {
+      "datum": "2026-11-06",
+      "speeldata": 7782,
+      "komend": 7357,
+      "artiesten": 524,
+      "zalen": 689,
+      "plaatsen": 485,
+      "voorstellingen": 820
+    },
+    {
+      "datum": "2026-11-07",
+      "speeldata": 7770,
+      "komend": 7267,
+      "artiesten": 523,
+      "zalen": 691,
+      "plaatsen": 486,
+      "voorstellingen": 819
+    },
+    {
+      "datum": "2026-11-08",
+      "speeldata": 8938,
+      "komend": 8362,
+      "artiesten": 848,
+      "zalen": 695,
+      "plaatsen": 486,
+      "voorstellingen": 1250
+    },
+    {
+      "datum": "2026-11-09",
+      "speeldata": 9208,
+      "komend": 8596,
+      "artiesten": 947,
+      "zalen": 697,
+      "plaatsen": 487,
+      "voorstellingen": 1396
+    },
+    {
+      "datum": "2026-11-10",
+      "speeldata": 9237,
+      "komend": 8614,
+      "artiesten": 951,
+      "zalen": 699,
+      "plaatsen": 488,
+      "voorstellingen": 1402
+    },
+    {
+      "datum": "2026-11-11",
+      "speeldata": 9239,
+      "komend": 8593,
+      "artiesten": 955,
+      "zalen": 702,
+      "plaatsen": 490,
+      "voorstellingen": 1407
+    },
+    {
+      "datum": "2026-11-12",
+      "speeldata": 9262,
+      "komend": 8574,
+      "artiesten": 957,
+      "zalen": 704,
+      "plaatsen": 491,
+      "voorstellingen": 1408
+    },
+    {
+      "datum": "2026-11-13",
+      "speeldata": 9272,
+      "komend": 8516,
+      "artiesten": 966,
+      "zalen": 705,
+      "plaatsen": 491,
+      "voorstellingen": 1421
+    },
+    {
+      "datum": "2026-11-14",
+      "speeldata": 9263,
+      "komend": 8412,
+      "artiesten": 967,
+      "zalen": 711,
+      "plaatsen": 494,
+      "voorstellingen": 1428
+    },
+    {
+      "datum": "2026-11-15",
+      "speeldata": 9297,
+      "komend": 8358,
+      "artiesten": 966,
+      "zalen": 713,
+      "plaatsen": 495,
+      "voorstellingen": 1425
+    },
+    {
+      "datum": "2026-11-16",
+      "speeldata": 9324,
+      "komend": 8326,
+      "artiesten": 967,
+      "zalen": 715,
+      "plaatsen": 496,
+      "voorstellingen": 1427
+    },
+    {
+      "datum": "2026-11-17",
+      "speeldata": 9087,
+      "komend": 8083,
+      "artiesten": 930,
+      "zalen": 728,
+      "plaatsen": 505,
+      "voorstellingen": 1351
+    },
+    {
+      "datum": "2026-11-18",
+      "speeldata": 9233,
+      "komend": 8200,
+      "artiesten": 961,
+      "zalen": 729,
+      "plaatsen": 505,
+      "voorstellingen": 1406
+    },
+    {
+      "datum": "2026-11-19",
+      "speeldata": 9241,
+      "komend": 8153,
+      "artiesten": 965,
+      "zalen": 734,
+      "plaatsen": 508,
+      "voorstellingen": 1412
     }
   ]
 }

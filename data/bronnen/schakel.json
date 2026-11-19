@@ -1,7 +1,7 @@
 {
   "bron": "schakel",
   "naam": "CC De Schakel",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "cc-de-schakel",
@@ -16,28 +16,41 @@
     {
       "theater": "cc-de-schakel",
       "artiesten": [
-        "Wannes Cappelle"
+        "Percossa (NL)"
       ],
-      "titel": "Verstaanbaar",
-      "genre": "cabaret",
-      "datum": "2026-11-17",
+      "titel": "Bommetje!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-20",
       "tijd": "20:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.ccdeschakel.be/voorstellingen/wannes-cappelle-jzlk"
+      "bron": "https://www.ccdeschakel.be/voorstellingen/percossa-nl-65mm"
     },
     {
       "theater": "cc-de-schakel",
       "artiesten": [
-        "Wannes Cappelle"
+        "Theatercompagnie De Kroon"
       ],
-      "titel": "Verstaanbaar",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:00",
+      "titel": "Paniek in de Pietenfabriek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "14:00",
       "status": "uitverkocht",
       "soort": null,
-      "bron": "https://www.ccdeschakel.be/voorstellingen/wannes-cappelle-jzlk"
+      "bron": "https://www.ccdeschakel.be/voorstellingen/theatercompagnie-de-kroon-mdw9"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Theatercompagnie De Kroon"
+      ],
+      "titel": "Paniek in de Pietenfabriek",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-21",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/theatercompagnie-de-kroon-mdw9"
     },
     {
       "theater": "cc-de-schakel",
@@ -45,7 +58,7 @@
         "Seppe Toremans"
       ],
       "titel": "Storemans",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-03",
       "tijd": "20:00",
       "status": "gepland",
@@ -58,7 +71,7 @@
         "Erhan Demirci"
       ],
       "titel": "Made in Cité",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-09",
       "tijd": "20:00",
       "status": "gepland",
@@ -71,7 +84,7 @@
         "Humo's Comedy Cup Finalistentour"
       ],
       "titel": "Bregje Iding, Jeroen Dyck, Peter Kluppels en MC Jarno Boone",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-19",
       "tijd": "20:00",
       "status": "gepland",
@@ -81,8 +94,54 @@
     {
       "theater": "cc-de-schakel",
       "artiesten": [],
+      "titel": "Dieren vieren kerst",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/dieren-vieren-kerst-m9dc"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Dolfje Weerwolfje",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/dolfje-weerwolfje-8llh"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Tegenwoordig heet iedereen sorry",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-23",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/tegenwoordig-heet-iedereen-sorry-jzhm"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Theater Terra"
+      ],
+      "titel": "Pippi en de Piraten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-15",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/theater-terra-jh84"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
       "titel": "Wouter Deprez & Tcha Limberger",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-01-26",
       "tijd": "20:00",
       "status": "gepland",
@@ -93,7 +152,7 @@
       "theater": "cc-de-schakel",
       "artiesten": [],
       "titel": "Wouter Deprez & Tcha Limberger",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-01-28",
       "tijd": "20:00",
       "status": "gepland",
@@ -104,7 +163,7 @@
       "theater": "cc-de-schakel",
       "artiesten": [],
       "titel": "Wouter Deprez & Tcha Limberger",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-01-29",
       "tijd": "20:00",
       "status": "geannuleerd",
@@ -130,7 +189,7 @@
         "Xander De Rycke"
       ],
       "titel": "Back to the Beginning",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-02-03",
       "tijd": "20:00",
       "status": "gepland",
@@ -143,7 +202,7 @@
         "Xander De Rycke"
       ],
       "titel": "Back to the Beginning",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-02-04",
       "tijd": "20:00",
       "status": "gepland",
@@ -156,7 +215,7 @@
         "Xander De Rycke"
       ],
       "titel": "Back to the Beginning",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-02-05",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -166,8 +225,41 @@
     {
       "theater": "cc-de-schakel",
       "artiesten": [],
+      "titel": "Dikkie Dik krijgt bezoek",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-10",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/dikkie-dik-krijgt-bezoek-m991"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Yugly",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-10",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/yugly-t88g"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
+      "titel": "Racing Johnny",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-10",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/racing-johnny-jzzx"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [],
       "titel": "Wat Als in Concert",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-02-11",
       "tijd": "20:00",
       "status": "gepland",
@@ -178,7 +270,7 @@
       "theater": "cc-de-schakel",
       "artiesten": [],
       "titel": "Wat Als in Concert",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-02-12",
       "tijd": "20:00",
       "status": "gepland",
@@ -191,7 +283,7 @@
         "Zoe Bizoe"
       ],
       "titel": "Cabaresque",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-02-19",
       "tijd": "20:00",
       "status": "gepland",
@@ -204,7 +296,7 @@
         "Gunter Lamoot"
       ],
       "titel": "Protpourri",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-02-20",
       "tijd": "20:00",
       "status": "gepland",
@@ -214,10 +306,75 @@
     {
       "theater": "cc-de-schakel",
       "artiesten": [
+        "Be Flat"
+      ],
+      "titel": "Living",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/be-flat-1sc9"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Be Flat"
+      ],
+      "titel": "Living",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/be-flat-1sc9"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Be Flat"
+      ],
+      "titel": "Living",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/be-flat-1sc9"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Frisse Oren"
+      ],
+      "titel": "Tuimelaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "09:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/frisse-oren-jh7z"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Frisse Oren"
+      ],
+      "titel": "Tuimelaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/frisse-oren-jh7z"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
         "Henk Rijckaert"
       ],
       "titel": "Belachelijk!",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-03-10",
       "tijd": "20:00",
       "status": "gepland",
@@ -230,7 +387,7 @@
         "William Boeva"
       ],
       "titel": "Drift",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-03-18",
       "tijd": "20:00",
       "status": "gepland",
@@ -240,10 +397,23 @@
     {
       "theater": "cc-de-schakel",
       "artiesten": [
+        "Laika"
+      ],
+      "titel": "De Laatste Boom",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-20",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/laika-yzsp"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
         "Jeroen Leenders"
       ],
       "titel": "Heiden",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-03-25",
       "tijd": "20:00",
       "status": "gepland",
@@ -256,7 +426,7 @@
         "Kamal Kharmach"
       ],
       "titel": "Homo Economicus",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-03-26",
       "tijd": "20:00",
       "status": "gepland",
@@ -269,7 +439,7 @@
         "Dries Heyneman"
       ],
       "titel": "Voor Normale Mensen",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-04-07",
       "tijd": "20:00",
       "status": "gepland",
@@ -282,7 +452,7 @@
         "Dries Heyneman"
       ],
       "titel": "Voor Normale Mensen",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-04-08",
       "tijd": "20:00",
       "status": "gepland",
@@ -295,7 +465,7 @@
         "Dries Heyneman"
       ],
       "titel": "Voor Normale Mensen",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-04-09",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -305,10 +475,36 @@
     {
       "theater": "cc-de-schakel",
       "artiesten": [
+        "de Roovers"
+      ],
+      "titel": "Wat alleen wij weten",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-16",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/de-roovers-7jch"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "BRONKS & Not Standing/Alexander Vantournhout"
+      ],
+      "titel": "Souvenirshop",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-04-17",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/bronks-not-standing-alexander-vantournhout-x9kt"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
         "Mohsin Abbas"
       ],
       "titel": "Moh?!",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-04-17",
       "tijd": "20:00",
       "status": "gepland",
@@ -321,7 +517,7 @@
         "Rosalie Custers"
       ],
       "titel": "Vaas",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-04-22",
       "tijd": "20:00",
       "status": "gepland",
@@ -334,7 +530,7 @@
         "Han Solo"
       ],
       "titel": "Psycho Solo: Lof der Zotheid",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-05-26",
       "tijd": "20:00",
       "status": "gepland",
@@ -347,7 +543,7 @@
         "Han Solo"
       ],
       "titel": "Psycho Solo: Lof der Zotheid",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-05-27",
       "tijd": "20:00",
       "status": "gepland",
@@ -360,7 +556,7 @@
         "Han Solo"
       ],
       "titel": "Psycho Solo: Lof der Zotheid",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-05-28",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -373,7 +569,7 @@
         "DDT houdt uitverkoop"
       ],
       "titel": "(feat. Jacques Vermeire)",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-06-04",
       "tijd": "20:15",
       "status": "gepland",
@@ -386,7 +582,7 @@
         "DDT houdt uitverkoop"
       ],
       "titel": "(feat. Jacques Vermeire)",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-06-05",
       "tijd": "15:00",
       "status": "gepland",
@@ -399,13 +595,47 @@
         "DDT houdt uitverkoop"
       ],
       "titel": "(feat. Jacques Vermeire)",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-06-05",
       "tijd": "20:15",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.ccdeschakel.be/voorstellingen/ddt-houdt-uitverkoop-ncn4"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Bronks & Bos+"
+      ],
+      "titel": "Bos",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/bronks-bos-dfxb"
+    },
+    {
+      "theater": "cc-de-schakel",
+      "artiesten": [
+        "Bronks & Bos+"
+      ],
+      "titel": "Bos",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeschakel.be/voorstellingen/bronks-bos-dfxb"
     }
   ],
-  "recensies": {}
+  "recensies": {
+    "https://www.ccdeschakel.be/voorstellingen/bronks-not-standing-alexander-vantournhout-x9kt": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "... lekker raar."
+      }
+    ]
+  }
 }

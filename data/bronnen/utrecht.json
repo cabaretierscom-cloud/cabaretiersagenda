@@ -1,7 +1,7 @@
 {
   "bron": "utrecht",
   "naam": "Stadsschouwburg Utrecht",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "stadsschouwburg-utrecht",
@@ -24,7 +24,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/gelukkig-heb-je-mij-nog-richard-groenendijk",
       "datum": "2027-02-24",
       "tijd": "20:00",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -198,136 +198,6 @@
     {
       "theater": "stadsschouwburg-utrecht",
       "artiesten": [
-        "Henry van Loon"
-      ],
-      "titel": "Keanu",
-      "genre": "cabaret",
-      "soort": "reprise",
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/keanu-henry-van-loon",
-      "datum": "2026-10-29",
-      "tijd": "20:00",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Henry van Loon"
-      ],
-      "titel": "Keanu",
-      "genre": "cabaret",
-      "soort": "reprise",
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/keanu-henry-van-loon",
-      "datum": "2026-10-30",
-      "tijd": "20:00",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Juliet"
-      ],
-      "titel": "Ik beloof je eeuwige twijfel",
-      "genre": "cabaret",
-      "soort": "reprise",
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/ik-beloof-je-eeuwige-twijfel-juliet",
-      "datum": "2026-10-30",
-      "tijd": "20:30",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Yentl en de Boer"
-      ],
-      "titel": "Rekhalzen",
-      "genre": "cabaret",
-      "soort": "reprise",
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Yentl en de Boer"
-      ],
-      "titel": "Rekhalzen",
-      "genre": "cabaret",
-      "soort": "reprise",
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Greg Shapiro"
-      ],
-      "titel": "KING ME - 250 Years of Donald Trump",
-      "genre": "cabaret",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/king-me-250-years-of-donald-trum-greg-shapiro",
-      "datum": "2026-11-06",
-      "tijd": "20:30",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "cabaret",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/bedankt-om-te-komen-jade-mintjens",
-      "datum": "2026-11-10",
-      "tijd": "20:30",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Sara Kroos"
-      ],
-      "titel": "Prikkelarme kermis",
-      "genre": "cabaret",
-      "soort": "reprise",
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/prikkelarme-kermis-sara-kroos",
-      "datum": "2026-11-12",
-      "tijd": "20:00",
-      "status": "gepland"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Vlamousse"
-      ],
-      "titel": "Het goede voorbeeld",
-      "genre": "cabaret",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-goede-voorbeeld-vlamousse",
-      "datum": "2026-11-14",
-      "tijd": "20:30",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "soort": "reprise",
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/striptease-van-de-dood-david-linszen",
-      "datum": "2026-11-17",
-      "tijd": "20:30",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
         "Ayoub"
       ],
       "titel": "En verbied vogels om te fluiten",
@@ -349,7 +219,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/aan-mij-zal-het-niet-liggen-marjolijn-van-kooten",
       "datum": "2026-11-25",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -362,7 +232,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/op-scherp-jasper-van-der-veen",
       "datum": "2026-12-01",
       "tijd": "20:30",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -380,12 +250,12 @@
     {
       "theater": "stadsschouwburg-utrecht",
       "artiesten": [
-        "Yora Rienstra, Vera Marijt e.a."
+        "Yora Rienstra e.a."
       ],
       "titel": "Vrouwejaars 2026",
       "genre": "cabaret",
       "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/vrouwejaars-2026-yora-rienstra-vera-marijt-ea",
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/vrouwejaars-2026-yora-rienstra-ea",
       "datum": "2026-12-07",
       "tijd": "20:00",
       "status": "gepland"
@@ -479,7 +349,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/finalistentournee-2026-cameretten",
       "datum": "2027-01-06",
       "tijd": "20:30",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -531,7 +401,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/dekpunt-jan-beuving",
       "datum": "2027-01-14",
       "tijd": "20:00",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -622,7 +492,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/altijd-aan-pieter-verelst",
       "datum": "2027-01-27",
       "tijd": "20:30",
-      "status": "uitverkocht"
+      "status": "gepland"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -700,7 +570,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/verbroedering-roel-en-jos-maalderink",
       "datum": "2027-02-13",
       "tijd": "20:00",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1212,12 +1082,12 @@
     {
       "theater": "stadsschouwburg-utrecht",
       "artiesten": [
-        "Berit Companjen en het Comedy Talent van het moment"
+        "Berit Companjen, Teun van den Elzen, Djoni de Vos en het Comedy Talent va"
       ],
       "titel": "Lachen met Volle Mond #2",
       "genre": "cabaret",
       "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lachen-met-volle-mond-2-berit-companjen-en-het-comedy-talent-van-het-momen",
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lachen-met-volle-mond-2-berit-companjen-teun-van-den-elzen-djoni-de-vos",
       "datum": "2026-11-23",
       "tijd": "19:00",
       "status": "gepland"
@@ -1225,12 +1095,12 @@
     {
       "theater": "stadsschouwburg-utrecht",
       "artiesten": [
-        "Berit Companjen en het Comedy Talent van het moment"
+        "Berit Companjen, Fimme Bakker, Bob Koomen e.a."
       ],
       "titel": "Lachen met Volle Mond #3",
       "genre": "cabaret",
       "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lachen-met-volle-mond-3-berit-companjen-en-het-comedy-talent-van-het-momen",
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lachen-met-volle-mond-3-berit-companjen-fimme-bakker-bob-koomen-ea",
       "datum": "2027-01-25",
       "tijd": "19:00",
       "status": "gepland"
@@ -1285,7 +1155,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-orde-van-de-dag-15-het-nut",
       "datum": "2026-12-14",
       "tijd": "20:30",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1362,19 +1232,6 @@
       "soort": null,
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-orde-van-de-dag-21-het-nut",
       "datum": "2027-06-21",
-      "tijd": "20:30",
-      "status": "gepland"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Het NUT"
-      ],
-      "titel": "De Orde van de Dag #14",
-      "genre": "cabaret",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-orde-van-de-dag-14-het-nut",
-      "datum": "2026-11-09",
       "tijd": "20:30",
       "status": "gepland"
     },
@@ -1472,19 +1329,6 @@
     {
       "theater": "stadsschouwburg-utrecht",
       "artiesten": [
-        "Aren Scholte, Lex van Wieren e.a"
-      ],
-      "titel": "Valt er nog wat te lachen?",
-      "genre": "cabaret",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/valt-er-nog-wat-te-lachen-aren-scholte-lex-van-wieren-ea",
-      "datum": "2026-10-31",
-      "tijd": "19:30",
-      "status": "gepland"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
         "Alex Ploeg, Pepijn Schoneveld en Christine de Boer"
       ],
       "titel": "De Hete Brij Live",
@@ -1493,7 +1337,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-hete-brij-live-alex-ploeg-pepijn-schoneveld-en-christine-de-boer",
       "datum": "2026-12-15",
       "tijd": "20:00",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1524,14 +1368,27 @@
     {
       "theater": "stadsschouwburg-utrecht",
       "artiesten": [
-        "Nederlands Studentenkampioenschap Improvisatie-comedy"
+        "Nabil"
       ],
-      "titel": "Finale 2026",
+      "titel": "Daar is hij weer",
       "genre": "cabaret",
       "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/finale-2026-nederlands-studentenkampioenschap-improvisatie-com",
-      "datum": "2026-11-15",
-      "tijd": "20:30",
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/daar-is-hij-weer-nabil",
+      "datum": "2027-01-29",
+      "tijd": "20:00",
+      "status": "gepland"
+    },
+    {
+      "theater": "stadsschouwburg-utrecht",
+      "artiesten": [
+        "Borrelnootjez"
+      ],
+      "titel": "Mze3ze3",
+      "genre": "cabaret",
+      "soort": null,
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/mze3ze3-borrelnootjez",
+      "datum": "2027-04-11",
+      "tijd": "20:00",
       "status": "gepland"
     }
   ],
@@ -1611,97 +1468,6 @@
         "sterren": 4,
         "citaat": "Wie wil er nou drie uur lang naar Zomergasten kijken? Een half uur Hokjesdenker verzadigt meer.",
         "over": "'We doen wat we kunnen'"
-      }
-    ],
-    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/keanu-henry-van-loon": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Henry van Loon jaagt in ‘Keanu’ iets herkenbaars uit het dagelijks leven in de richting van het absurde."
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Er lopen in Nederland nauwelijks getalenteerdere komieken rond dan Van Loon."
-      }
-    ],
-    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 5,
-        "citaat": "Hun mooiste, indrukwekkendste voorstelling tot dusver."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Een stroom van mooie, eigenzinnige liedjes met een volstrekt eigen karakter."
-      }
-    ],
-    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/king-me-250-years-of-donald-trum-greg-shapiro": [
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Een vlekkeloze imitator, buitengewoon grappig. Shapiro’s satire is scherp maar nooit beledigend, en daarmee des te overtuigender.",
-        "over": "Greg Shapiro"
-      },
-      {
-        "medium": "Theaterparadijs",
-        "sterren": null,
-        "citaat": "Vlijmscherpe humor met een persoonlijke touch.",
-        "over": "Greg Shapiro"
-      }
-    ],
-    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/bedankt-om-te-komen-jade-mintjens": [
-      {
-        "medium": "De Morgen",
-        "sterren": 4,
-        "citaat": "Originele verteller die niet bij de geijkte comedy-onderwerpen blijft hangen."
-      }
-    ],
-    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/prikkelarme-kermis-sara-kroos": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "In haar knap opgebouwde nieuwe cabaretvoorstelling laat Kroos zien hoe ze na vier jaar niet optreden wegens ziekte uit haar dal is gekropen. (…) Kroos laat je lachen én grijpt je naar de keel met haar kwetsbare verhaal. (…) De vele goede grappen en enkele sfeervolle liedjes zorgen voor heel erg mooi cabaret."
-      },
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Sara Kroos kan als geen ander licht maken wat zwaar is. (…) Kroos kan waargebeurde verhalen bijzonder geloofwaardig uitbouwen tot vrolijk absurde proporties. (…) Ze staat sterk, ontspannen, smakelijk te vertellen. Ook haar liedjes, de rustmomenten waar we even geen humoristische zijpaden inslaan, zijn optimistisch en dankbaar van toon."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Sara Kroos is terug op het cabaretpodium en beter dan ooit. (…) Ze trakteert ons op een avond vol goede grappen, mooie observaties, lichtheid en optimisme. (…) Sara Kroos is weer op de plek waar ze hoort en op haar best is: haar cabaretpodium."
-      }
-    ],
-    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-goede-voorbeeld-vlamousse": [
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Vlamousse trekt weer talloze onweerstaanbaar creatieve scènes en sketches uit de kast. (…) In ‘Het goede voorbeeld’ heeft het duo echt een fijne balans gevonden. Waar Van As ontroerend en ernstig kan zijn, of schunnig, luid en expressief is, trekt Van Bakel aandacht door juist zo min mogelijk te doen."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Raakt precies de juiste snaar."
-      }
-    ],
-    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/striptease-van-de-dood-david-linszen": [
-      {
-        "medium": "Trouw",
-        "sterren": 5,
-        "citaat": "Hoge verwachtingen, die hij met zijn show triomfantelijk inlost. (...) Indrukwekkend, hoe zelfverzekerd Linszen in zijn avondvullende debuut komisch absurdisme weet te koppelen aan zijn realiteit."
-      },
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Puntje-van-je-stoelcomedy met een zeldzame eigenheid: David Linszens debuut is echt heel goed. (…) Eens in de zoveel tijd meldt zich een comedytalent dat overrompelt met zeldzame eigenheid; het vermogen om als een eenzame gek met eenzamegekkengedachten de slappe lach in verdeelde golfjes door het publiek te laten rollen, en om 100 minuten lang nieuwsgierigheid te voeden naar het volgende fundamentele verzinsel."
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut. In zijn cabaretdebuut schiet de expressieve en onrustige David Linszen bijna koortsachtig van het ene naar het andere onherkenbare verhaal."
       }
     ],
     "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/en-verbied-vogels-om-te-fluiten-ayoub": [
@@ -1925,6 +1691,23 @@
         "medium": "Trouw",
         "sterren": 4,
         "citaat": "Een stevig ritme, goede punchlines en een duidelijke structuur."
+      }
+    ],
+    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/baby-reindeer-kobra-theaterproducties-thijs-van-de-meeberg": [
+      {
+        "medium": "De Telegraaf",
+        "sterren": 4,
+        "citaat": "Regisseur Hanneke Braam maakt de dreiging knap invoelbaar."
+      },
+      {
+        "medium": "Scènes",
+        "sterren": null,
+        "citaat": "Baby Reindeer is een fascinerend verhaal dat moeiteloos blijft boeien."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": 3,
+        "citaat": "Van de Meeberg weet je 80 minuten te onderhouden als aanstekelijke verteller."
       }
     ],
     "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/472000--oscar-smit": [

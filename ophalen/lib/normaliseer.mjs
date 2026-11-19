@@ -45,6 +45,10 @@ export function netteNaam(s) {
 // Herkent ons genre uit trefwoorden (genre-labels van de bron, titel, omschrijving).
 // Geeft null als het geen cabaret, comedy of komisch theater is.
 const REGELS = [
+  // Kinder- en familievoorstellingen (sinds november 2026): een label als "Jeugd", "Familie", "Kids",
+  // "Jeugd & familie", "Kindervoorstelling" of "Familietheater", of een leeftijd als label ("6+").
+  // "Familie" alleen als los label, niet als woord in een titel ("We zijn toch familie").
+  ["kindervoorstellingen", /(^|[|,&/]\s*)(jeugd|familie|kids|kinderen|kind|gezin|jong publiek)(\s*(?=[|,&/])|$)|\b(kinder|jeugd|familie|gezins)(voorstelling(en)?|theater|musical|show|programma|concert|opera|cabaret)\b|(^|\|\s*)([2-9]|1[0-2]) ?\+(\s*\||$)/],
   ["oudejaarsconference", /oudejaars|eindejaars/],
   ["open-mic", /open[ -]?mic/],
   ["improvisatie", /\bimpro(visatie|v)?\b/],
@@ -52,12 +56,16 @@ const REGELS = [
   // Het label "Cabaret/Kleinkunst" (o.a. De Kampanje) is cabaret.
   ["cabaret", /cabaret\s*[/&]\s*kleinkunst/],
   ["kleinkunst", /kleinkunst/],
-  // Toneel met humor ("Toneel | Komedie", "Toneel, humor") is theaterkomedie; gewoon toneel niet.
-  ["theaterkomedie", /toneel.*\b(humor|komedie|comedy|blijspel|klucht)|\b(humor|komedie|comedy|blijspel|klucht).*toneel/],
-  // "Cabaret & comedy" en "Cabaret & komedie" zijn cabaret; alleen "comedy" zonder cabaret is stand-up.
-  ["cabaret", /cabaret|humor/],
+  // Toneel met humor ("Toneel | Komedie", "Toneel, humor") is komedie; gewoon toneel niet.
+  ["komedie", /toneel.*\b(humor|komedie|comedy|blijspel|klucht)|\b(humor|komedie|comedy|blijspel|klucht).*toneel/],
+  // Een vaag label dat cabaret en comedy niet uit elkaar houdt ("Cabaret & comedy", "Humor") geeft
+  // "comedy": wel humor, maar geen keuze tussen cabaret en stand-up. Zo'n stem telt bij het genre van de
+  // voorstelling niet mee (samenvoegen.mjs, stap 2d); een nieuwe voorstelling wordt dan eerst cabaret.
+  ["comedy", /cabaret.*\b(comedy|humor)\b|\b(comedy|humor)\b.*cabaret|\bhumor\b/],
+  // "Cabaret & komedie" is cabaret; alleen "comedy" zonder cabaret is stand-up.
+  ["cabaret", /cabaret/],
   // Komedie, blijspel en klucht. "De Kleine Komedie" is een zaalnaam, geen genre.
-  ["theaterkomedie", /(?<!kleine )komedie|blijspel|klucht/],
+  ["komedie", /(?<!kleine )komedie|blijspel|klucht/],
   ["stand-up", /comedy/],
 ];
 export function herkenGenre(...teksten) {

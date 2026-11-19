@@ -1,7 +1,7 @@
 {
   "bron": "carre",
   "naam": "Koninklijk Theater Carré",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "carre",
@@ -19,7 +19,7 @@
         "Ashton Brothers"
       ],
       "titel": "Brothers",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-03-29",
       "tijd": "16:00",
       "status": "gepland",
@@ -107,6 +107,19 @@
     {
       "theater": "carre",
       "artiesten": [
+        "Foil Arms and Hog"
+      ],
+      "titel": "Smithereens",
+      "genre": "stand-up",
+      "datum": "2027-05-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/foil-arms-and-hog-smithereens"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
         "Daniël Arends"
       ],
       "titel": "Had ik maar nooit zo aardig gedaan",
@@ -155,58 +168,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://carre.nl/voorstelling/high-class-bitch"
-    },
-    {
-      "theater": "carre",
-      "artiesten": [
-        "Jochem Myjer"
-      ],
-      "titel": "Net Alsof",
-      "genre": "cabaret",
-      "datum": "2026-11-02",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
-    },
-    {
-      "theater": "carre",
-      "artiesten": [
-        "Jochem Myjer"
-      ],
-      "titel": "Net Alsof",
-      "genre": "cabaret",
-      "datum": "2026-11-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
-    },
-    {
-      "theater": "carre",
-      "artiesten": [
-        "Jochem Myjer"
-      ],
-      "titel": "Net Alsof",
-      "genre": "cabaret",
-      "datum": "2026-11-09",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
-    },
-    {
-      "theater": "carre",
-      "artiesten": [
-        "Jochem Myjer"
-      ],
-      "titel": "Net Alsof",
-      "genre": "cabaret",
-      "datum": "2026-11-10",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
     },
     {
       "theater": "carre",
@@ -233,6 +194,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://carre.nl/voorstelling/jochem-myjer-net-alsof"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/kasper-van-der-laan-ruim"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Kasper van der Laan"
+      ],
+      "titel": "Ruim",
+      "genre": "cabaret",
+      "datum": "2027-05-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/kasper-van-der-laan-ruim"
     },
     {
       "theater": "carre",
@@ -350,6 +337,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://carre.nl/voorstelling/merijn-scholten-lemming"
+    },
+    {
+      "theater": "carre",
+      "artiesten": [
+        "Micha Wertheim"
+      ],
+      "titel": "Voor Iedereen",
+      "genre": "cabaret",
+      "datum": "2027-03-14",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://carre.nl/voorstelling/micha-wertheim-voor-iedereen"
     },
     {
       "theater": "carre",

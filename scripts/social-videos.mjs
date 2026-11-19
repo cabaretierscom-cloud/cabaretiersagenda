@@ -26,7 +26,8 @@ const videos = createTemplates(db).socialVideos(5);
 const FPS = 30, INTRO = 1.2, PER = 3, SCHUIF = 0.8, SLOT = 2.6;
 
 const server = createServer((req, res) => {
-  const pad = req.url === "/" ? join(root, "ontwerp/social/video.html") : join(root, "public", decodeURIComponent(req.url));
+  const url = decodeURIComponent(req.url);
+  const pad = url === "/" ? join(root, "ontwerp/social/video.html") : url.startsWith("/social/") ? join(root, "ontwerp", url) : join(root, "public", url);
   try { res.end(readFileSync(pad)); } catch { res.statusCode = 404; res.end(); }
 }).listen(0);
 

@@ -19,13 +19,18 @@ export const GENRES = {
   cabaret: "Cabaret",
   "stand-up": "Stand-up",
   oudejaarsconference: "Oudejaarsconference",
-  theaterkomedie: "Theaterkomedie",
+  komedie: "Komedie",
   "open-mic": "Open mic",
   improvisatie: "Improvisatie",
   festival: "Festival",
   "muzikaal-cabaret": "Muzikaal cabaret",
   kleinkunst: "Kleinkunst",
+  kindervoorstellingen: "Kindervoorstellingen",
 };
+// Naam van het genre bij één voorstelling (labels in de agenda, knopjes op de voorstellingspagina),
+// als die anders is dan de genrenaam: "Kindervoorstelling" in plaats van "Kindervoorstellingen".
+export const GENRE_ENKELVOUD = { kindervoorstellingen: "Kindervoorstelling" };
+export const genreLabel = (g) => GENRE_ENKELVOUD[g] || GENRES[g];
 
 // Optioneel per artiest: solo ("persoon") of duo/groep ("groep"); zonder vorm raadt de site het aan de naam.
 export const VORMEN = ["persoon", "groep"];
@@ -62,6 +67,10 @@ export const KLEUREN = {
   lila: ["--riso-lilac", "#121212"],
 };
 
+// Sleutel van een voorstelling die een andere id of een kleine verschrijving overleeft: de artiesten en de titel
+// zonder leestekens. Voor data/eerst-gezien.json (wanneer een voorstelling voor het eerst in de agenda kwam).
+export const voorstellingSleutel = (v) => `${[...v.artiesten].sort().join("+")}|${String(v.titel || "").toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "")}`;
+
 const read = (dir, name) => JSON.parse(readFileSync(join(dir, name), "utf8"));
 
 export function loadData(dir, { today }) {
@@ -75,6 +84,10 @@ export function loadData(dir, { today }) {
   const uitgelicht = existsSync(join(dir, "uitgelicht.json")) ? read(dir, "uitgelicht.json") : [];
   // Promotiemateriaal dat een artiest of impresariaat ons heeft gegeven (foto, video's), met toestemming.
   const promo = existsSync(join(dir, "promo.json")) ? read(dir, "promo.json") : [];
+  // Nieuwsberichten van de redactie (/nieuws/), altijd met bron.
+  const nieuws = existsSync(join(dir, "nieuws.json")) ? read(dir, "nieuws.json") : [];
+  // Wanneer een voorstelling voor het eerst in de agenda kwam (bijgehouden door samenvoegen.mjs).
+  const eerstGezien = existsSync(join(dir, "eerst-gezien.json")) ? read(dir, "eerst-gezien.json") : { sinds: null, voorstellingen: {} };
 
   const errors = [];
   const byId = (list, kind) => {
@@ -120,7 +133,8 @@ export function loadData(dir, { today }) {
   for (const p of promo) {
     const waar = `promo ${p.artiest}`;
     if (!p.van || !p.toestemming) errors.push(`${waar}: van wie en welke toestemming zijn verplicht`);
-    if (p.foto && !(p.foto.bestand && p.foto.alt && p.foto.maker && p.foto.bron)) errors.push(`${waar}: foto zonder alt-tekst, maker of bron`);
+    // Promofoto: de fotograaf als die bekend is; zonder vermelding mag ook (dan staat er niets onder).
+    if (p.foto && !(p.foto.bestand && p.foto.alt && p.foto.bron)) errors.push(`${waar}: foto zonder alt-tekst of bron`);
     if (p.foto?.bestand && !existsSync(join(dir, "..", "public", p.foto.bestand))) errors.push(`${waar}: fotobestand ${p.foto.bestand} ontbreekt`);
     // focus: [x, y] van het gezicht als deel van breedte en hoogte (0 t/m 1), voor de uitsnede.
     if (p.foto?.focus != null && !(Array.isArray(p.foto.focus) && p.foto.focus.length === 2 && p.foto.focus.every((n) => typeof n === "number" && n >= 0 && n <= 1))) errors.push(`${waar}: focus moet [x, y] zijn met getallen van 0 t/m 1`);
@@ -152,20 +166,38 @@ export function loadData(dir, { today }) {
     if (a.land != null && !LANDEN[a.land]) errors.push(`artiest ${a.id}: onbekend land "${a.land}"`);
     if (!KLEUREN[a.kleur]) errors.push(`artiest ${a.id}: onbekende kleur "${a.kleur}"`);
     if (a.vorm != null && !VORMEN.includes(a.vorm)) errors.push(`artiest ${a.id}: onbekende vorm "${a.vorm}"`);
+    for (const g of a.ookIn || []) if (!A.has(g) || g === a.id) errors.push(`artiest ${a.id}: ookIn "${g}" is geen andere bekende artiest`);
     if (a.geslacht != null && !GESLACHTEN.includes(a.geslacht)) errors.push(`artiest ${a.id}: onbekend geslacht "${a.geslacht}"`);
     if (a.geslacht != null && !a.geslachtBron) errors.push(`artiest ${a.id}: geslacht zonder geslachtBron`);
+    // Een artiest zonder tournee met een eigen pagina: tekst met bronnen (bijv. Stefano Keizers, gestopt onder die naam).
+    if (a.nietOpTournee && !(a.nietOpTournee.alineas?.length && a.nietOpTournee.bronnen?.length)) errors.push(`artiest ${a.id}: nietOpTournee zonder alineas of bronnen`);
     // Een foto mag alleen met naamsvermelding, licentie en bron.
-    if (a.foto && typeof a.foto === "object" && !(a.foto.bestand && a.foto.alt && a.foto.maker && a.foto.licentie && a.foto.bron)) errors.push(`artiest ${a.id}: foto zonder alt-tekst, maker, licentie of bron`);
+    if (a.foto && typeof a.foto === "object" && !(a.foto.bestand && a.foto.alt && (a.foto.maker || a.foto.promo) && a.foto.licentie && a.foto.bron)) errors.push(`artiest ${a.id}: foto zonder alt-tekst, maker, licentie of bron`);
     if (a.foto?.bestand && !existsSync(join(dir, "..", "public", a.foto.bestand))) errors.push(`artiest ${a.id}: fotobestand ${a.foto.bestand} ontbreekt`);
   }
   for (const t of theaters) {
     if (!LANDEN[t.land]) errors.push(`theater ${t.id}: onbekend land "${t.land}"`);
+    if (t.kleur != null && !KLEUREN[t.kleur]) errors.push(`theater ${t.id}: onbekende kleur "${t.kleur}"`);
     if (!THEATERSOORTEN.includes(t.soort)) errors.push(`theater ${t.id}: onbekende soort "${t.soort}"`);
     if (t.foto && typeof t.foto === "object" && !(t.foto.bestand && t.foto.alt && t.foto.maker && t.foto.licentie && t.foto.bron)) errors.push(`theater ${t.id}: foto zonder alt-tekst, maker, licentie of bron`);
     if (t.foto?.bestand && !existsSync(join(dir, "..", "public", t.foto.bestand))) errors.push(`theater ${t.id}: fotobestand ${t.foto.bestand} ontbreekt`);
+    // Een vroegere naam (Comedytrain was Toomler): met uitleg en bron.
+    if (t.voorheen && !(t.voorheen.naam && t.voorheen.alineas?.length && /^https?:\/\//.test(t.voorheen.bron || ""))) errors.push(`theater ${t.id}: voorheen zonder naam, alineas of bron`);
+    if (t.oudeIds !== undefined && !(Array.isArray(t.oudeIds) && t.oudeIds.every((x) => typeof x === "string" && x !== t.id))) errors.push(`theater ${t.id}: oudeIds moet een lijst oude ids zijn`);
+  }
+  const N = byId(nieuws, "nieuws.json");
+  for (const n of nieuws) {
+    const waar = `nieuws ${n.id}`;
+    if (!/^\d{4}-\d\d-\d\d$/.test(n.datum || "")) errors.push(`${waar}: datum moet JJJJ-MM-DD zijn`);
+    if (!n.titel || !n.alineas?.length) errors.push(`${waar}: titel en alineas zijn verplicht`);
+    if (!n.bronnen?.length || n.bronnen.some((b) => !Array.isArray(b) || !b[0] || !/^https?:\/\//.test(b[1] || ""))) errors.push(`${waar}: elk bericht heeft bronnen als [naam, url]`);
+    if (n.artiest && !A.has(n.artiest)) errors.push(`${waar}: onbekende artiest "${n.artiest}"`);
+    if (n.theater && !T.has(n.theater)) errors.push(`${waar}: onbekend theater "${n.theater}"`);
   }
   for (const v of voorstellingen) {
     if (!GENRES[v.genre]) errors.push(`voorstelling ${v.id}: onbekend genre "${v.genre}"`);
+    // Extra genres naast het hoofdgenre (een cabaretvoorstelling die ook stand-up is).
+    if (v.ookGenres !== undefined && (!Array.isArray(v.ookGenres) || v.ookGenres.some((g) => !GENRES[g] || g === v.genre))) errors.push(`voorstelling ${v.id}: ookGenres moet een lijst bekende genres zijn, zonder het hoofdgenre`);
     if (!Array.isArray(v.artiesten)) errors.push(`voorstelling ${v.id}: artiesten moet een lijst zijn`);
     // Een clubavond of open mic zonder vaste artiest hoort bij één zaal.
     if (!v.artiesten?.length && !T.has(v.theater)) errors.push(`voorstelling ${v.id}: geen artiesten en geen geldig theater`);
@@ -212,7 +244,14 @@ export function loadData(dir, { today }) {
 
   return {
     artiesten: A, theaters: T, voorstellingen: V, upcoming, lastFetched, today,
-    gigsForArtist: (id) => upcoming.filter((g) => V.get(g.voorstelling).artiesten.includes(id)),
+    // Alle speeldata, ook voorbije (het archief), voor premières die net geweest zijn op /nieuws/.
+    gigs,
+    // Nieuwsberichten tot en met vandaag, nieuwste eerst.
+    nieuws: [...N.values()].filter((n) => n.datum <= today).sort((a, b) => b.datum.localeCompare(a.datum)),
+    eerstGezien,
+    // ookIn: de artiest speelt ook in een duo of groep (Roel Maalderink in Roel & Jos Maalderink); die avonden
+    // staan dan ook op zijn of haar eigen pagina.
+    gigsForArtist: (id) => { const ids = [id, ...(A.get(id)?.ookIn || [])]; return upcoming.filter((g) => V.get(g.voorstelling).artiesten.some((a) => ids.includes(a))); },
     gigsForTheater: (id) => upcoming.filter((g) => g.theater === id),
     festivals: F,
     // Alleen vermeldingen die vandaag lopen.

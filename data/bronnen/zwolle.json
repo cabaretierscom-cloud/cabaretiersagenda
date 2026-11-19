@@ -1,7 +1,7 @@
 {
   "bron": "zwolle",
   "naam": "Zwolse Theaters",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "theater-de-spiegel",
@@ -24,9 +24,9 @@
     {
       "theater": "theater-de-spiegel",
       "artiesten": [
-        "Jimmy Carr"
+        "Jimmy Carr: Laughs Funny"
       ],
-      "titel": "Laughs Funny",
+      "titel": "Hedon en Zwolse theaters presenteren:",
       "genre": "cabaret",
       "datum": "2026-12-05",
       "tijd": "19:00",
@@ -37,9 +37,9 @@
     {
       "theater": "theater-de-spiegel",
       "artiesten": [
-        "Jimmy Carr"
+        "Jimmy Carr: Laughs Funny"
       ],
-      "titel": "Laughs Funny",
+      "titel": "Hedon en Zwolse theaters presenteren:",
       "genre": "cabaret",
       "datum": "2026-12-05",
       "tijd": "21:30",
@@ -173,7 +173,7 @@
       "genre": "cabaret",
       "datum": "2026-12-02",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/roel-jos-maalderink"
     },
@@ -189,71 +189,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/jan-beuving"
-    },
-    {
-      "theater": "odeon-zwolle",
-      "artiesten": [
-        "60e editie Cameretten Festival"
-      ],
-      "titel": "De try-outs",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/cameretten"
-    },
-    {
-      "theater": "odeon-zwolle",
-      "artiesten": [
-        "60e editie Cameretten Festival"
-      ],
-      "titel": "De try-outs",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/cameretten"
-    },
-    {
-      "theater": "odeon-zwolle",
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Een Striptease Van De Dood | reprise",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/david-linszen"
-    },
-    {
-      "theater": "odeon-zwolle",
-      "artiesten": [
-        "Ricky Koole"
-      ],
-      "titel": "Rare Leeftijd | Theater Overdag",
-      "genre": "cabaret",
-      "datum": "2026-11-15",
-      "tijd": "14:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/ricky-koole"
-    },
-    {
-      "theater": "odeon-zwolle",
-      "artiesten": [
-        "Kiki Schippers"
-      ],
-      "titel": "Praktische bezwaren",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/kiki-schippers"
     },
     {
       "theater": "odeon-zwolle",
@@ -550,7 +485,7 @@
       "genre": "cabaret",
       "datum": "2027-03-09",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/thijs-kemperink"
     },
@@ -563,7 +498,7 @@
       "genre": "cabaret",
       "datum": "2027-03-12",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/patrick-nederkoorn"
     },
@@ -810,7 +745,7 @@
       "genre": "cabaret",
       "datum": "2027-05-28",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/yunas-aktas"
     },
@@ -934,19 +869,6 @@
     {
       "theater": "theater-de-spiegel",
       "artiesten": [
-        "Chris Verlaan"
-      ],
-      "titel": "Ach, er komen geen kindjes van",
-      "genre": "cabaret",
-      "datum": "2026-10-30",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/chris-verlaan-zzuit-in-sio"
-    },
-    {
-      "theater": "theater-de-spiegel",
-      "artiesten": [
         "Burger Koekoek"
       ],
       "titel": "Met een Vloek en een Zucht",
@@ -984,19 +906,6 @@
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/hokjesdenker"
     },
     {
-      "theater": "odeon-zwolle",
-      "artiesten": [
-        "Peter Pannekoek"
-      ],
-      "titel": "Demonen | try-out | Proefdraaien in de Paap",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/peter-pannekoek"
-    },
-    {
       "theater": "theater-de-spiegel",
       "artiesten": [
         "Timzingt"
@@ -1018,7 +927,7 @@
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/broeders-van-andere-moeders"
     }
@@ -1092,23 +1001,6 @@
         "medium": "Trouw",
         "sterren": null,
         "citaat": "vertrouwde mix van droge humor en maatschappijkritiek"
-      }
-    ],
-    "https://www.zwolsetheaters.nl/programma/2026-2027/david-linszen": [
-      {
-        "medium": "Trouw",
-        "sterren": 5,
-        "citaat": "Indrukwekkend, hoe zelfverzekerd Linszen in zijn avondvullende debuut komisch absurdisme weet te koppelen aan zijn realiteit"
-      },
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "David Linszens debuut is echt heel goed"
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "David Linszen verrast met absurd, komisch én aangrijpend cabaretdebuut"
       }
     ],
     "https://www.zwolsetheaters.nl/programma/2026-2027/vlamousse": [

@@ -1,7 +1,7 @@
 {
   "bron": "stoep",
   "naam": "Theater de Stoep",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "theater-de-stoep",
@@ -25,19 +25,6 @@
       "status": "gepland",
       "soort": "reprise",
       "bron": "https://theaterdestoep.nl/voorstelling/sara-kroos-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
-        "Meester Mark"
-      ],
-      "titel": "Later word ik 7",
-      "genre": "cabaret",
-      "datum": "2026-11-10",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterdestoep.nl/voorstelling/meester-mark-2627"
     },
     {
       "theater": "theater-de-stoep",
@@ -225,7 +212,7 @@
       "theater": "theater-de-stoep",
       "artiesten": [],
       "titel": "Ratatatata!",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-11",
       "tijd": "20:15",
       "status": "gepland",
@@ -236,7 +223,7 @@
       "theater": "theater-de-stoep",
       "artiesten": [],
       "titel": "Ratatatata!",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2027-05-12",
       "tijd": "20:15",
       "status": "gepland",
@@ -268,19 +255,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterdestoep.nl/voorstelling/de-broers-van-arkel-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
-        "Jan Beuving"
-      ],
-      "titel": "Dekpunt",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterdestoep.nl/voorstelling/jan-beuving-2627"
     },
     {
       "theater": "theater-de-stoep",
@@ -330,7 +304,7 @@
       "genre": "cabaret",
       "datum": "2027-01-13",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://theaterdestoep.nl/voorstelling/nabil-2627"
     },
@@ -402,19 +376,6 @@
     {
       "theater": "theater-de-stoep",
       "artiesten": [
-        "Raoul Heertje"
-      ],
-      "titel": "begrijpt steeds minder",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterdestoep.nl/voorstelling/raoul-heertje-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
         "Kim Schuddeboom"
       ],
       "titel": "Hardleers",
@@ -476,19 +437,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterdestoep.nl/voorstelling/valentina-toth-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
-        "Spruijt en Opperman"
-      ],
-      "titel": "Altijdloos",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterdestoep.nl/voorstelling/spruijt-en-opperman-2627"
     },
     {
       "theater": "theater-de-stoep",
@@ -687,7 +635,7 @@
         "Najib & Roué"
       ],
       "titel": "Alles is Comedy",
-      "genre": "theaterkomedie",
+      "genre": "komedie",
       "datum": "2026-12-02",
       "tijd": "20:15",
       "status": "gepland",
@@ -732,32 +680,6 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://theaterdestoep.nl/voorstelling/peter-pannekoek-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
-        "Groninger Studenten Cabaret Festival"
-      ],
-      "titel": "Finalistentour",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://theaterdestoep.nl/voorstelling/gscf-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
-        "Groninger Studenten Cabaret Festival"
-      ],
-      "titel": "Finalistentour",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://theaterdestoep.nl/voorstelling/gscf-2627"
     },
     {
       "theater": "theater-de-stoep",
@@ -849,19 +771,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterdestoep.nl/voorstelling/remko-vrijdag-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
-        "Guido Weijers"
-      ],
-      "titel": "De Oudejaarsconference 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-11-11",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterdestoep.nl/voorstelling/guido-weijers-2627"
     },
     {
       "theater": "theater-de-stoep",
@@ -1059,6 +968,30 @@
         "medium": "I Love Theater",
         "sterren": null,
         "citaat": "Mensenmens is een warme, grappige en eerlijke voorstelling waarin Daan van der Hoeven laat zien dat hij niet alleen een sterke stand-up comedian is, maar ook een sterke verteller."
+      }
+    ],
+    "https://theaterdestoep.nl/voorstelling/diederick-ensink-2627": [
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "...een fijne avond uit voor wie houdt van muziek, humor en een voorstelling die je soms ook even stil laat staan bij de wereld om je heen."
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": null,
+        "citaat": "Hij combineert muzikaal vakmanschap met humor, ontroering en een aanstekelijk enthousiasme. Het resultaat is een voorstelling die je niet alleen laat lachen, maar je ook raakt en nog lang bijblijft."
+      }
+    ],
+    "https://theaterdestoep.nl/voorstelling/pepijn-schoneveld-2627": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Pepijn Schoneveld lijkt in ‘Welkom dat je luistert’ zijn ideale stijl als cabaretier te hebben gevonden"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Door situaties beeldend of licht ironisch te beschrijven, maakt hij ze komisch, tragisch of allebei tegelijk.\" en \"Leren alleen te zijn dus, een lange weg waarover Schoneveld smakelijk weet te vertellen."
       }
     ]
   }

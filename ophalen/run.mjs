@@ -38,6 +38,7 @@ await Promise.all(files.map(async (f) => {
       bron: bron.id,
       naam: bron.naam,
       ...(bron.soort ? { soort: bron.soort } : {}),
+      ...(bron.leidend ? { leidend: true } : {}),
       opgehaald: vandaag,
       theaters: bron.theaters || [],
       speeldata: records,

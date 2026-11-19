@@ -1,7 +1,7 @@
 {
   "bron": "spot-groningen",
   "naam": "SPOT Groningen",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "de-oosterpoort",
@@ -53,71 +53,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "stadsschouwburg-groningen",
-      "artiesten": [
-        "Plien & Bianca"
-      ],
-      "titel": "Harrekidee!",
-      "genre": "cabaret",
-      "datum": "2026-11-02",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "reprise",
-      "bron": "https://www.spotgroningen.nl/programma/plien-bianca-8/"
-    },
-    {
-      "theater": "stadsschouwburg-groningen",
-      "artiesten": [
-        "Plien & Bianca"
-      ],
-      "titel": "Harrekidee!",
-      "genre": "cabaret",
-      "datum": "2026-11-03",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "reprise",
-      "bron": "https://www.spotgroningen.nl/programma/plien-bianca-9/"
-    },
-    {
-      "theater": "usva-groningen",
-      "artiesten": [
-        "Marie Koet"
-      ],
-      "titel": "Eindspel",
-      "genre": "stand-up",
-      "datum": "2026-11-04",
-      "tijd": "20:30",
-      "status": "geannuleerd",
-      "soort": "try-out",
-      "bron": "https://www.spotgroningen.nl/programma/marie-koet/"
-    },
-    {
-      "theater": "usva-groningen",
-      "artiesten": [
-        "Marie Koet"
-      ],
-      "titel": "Eindspel",
-      "genre": "stand-up",
-      "datum": "2026-11-05",
-      "tijd": "20:30",
-      "status": "geannuleerd",
-      "soort": "try-out",
-      "bron": "https://www.spotgroningen.nl/programma/marie-koet-2/"
-    },
-    {
-      "theater": "stadsschouwburg-groningen",
-      "artiesten": [
-        "Groninger Studenten Cabaret Festival"
-      ],
-      "titel": "Halve finale 40e GSCF",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.spotgroningen.nl/programma/groninger-studenten-cabaret-festival-22/"
-    },
     {
       "theater": "stadsschouwburg-groningen",
       "artiesten": [
@@ -192,7 +127,7 @@
       "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/claudia-de-breij-17/"
     },
@@ -231,7 +166,7 @@
       "genre": "cabaret",
       "datum": "2026-12-02",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.spotgroningen.nl/programma/luuk-weggemans/"
     },
@@ -270,7 +205,7 @@
       "genre": "kleinkunst",
       "datum": "2026-12-06",
       "tijd": "14:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/yentl-de-boer-3/"
     },
@@ -283,7 +218,7 @@
       "genre": "kleinkunst",
       "datum": "2026-12-06",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/yentl-de-boer-4/"
     },
@@ -394,9 +329,9 @@
     {
       "theater": "stadsschouwburg-groningen",
       "artiesten": [
-        "Yora Rienstra, Vera Marijt e.a."
+        "Vrouwejaars 2026"
       ],
-      "titel": "Vrouwejaars 2026",
+      "titel": "Met o.v.b. Yora Rienstra, Kim Schuddeboom en Marie Koet",
       "genre": "cabaret",
       "datum": "2026-12-29",
       "tijd": "20:15",
@@ -465,7 +400,7 @@
       "genre": "cabaret",
       "datum": "2027-01-27",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/david-van-rosmalen/"
     },

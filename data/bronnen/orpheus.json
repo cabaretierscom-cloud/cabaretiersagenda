@@ -1,7 +1,7 @@
 {
   "bron": "orpheus",
   "naam": "Orpheus",
-  "opgehaald": "2026-10-29",
+  "opgehaald": "2026-11-17",
   "theaters": [
     {
       "id": "orpheus",
@@ -16,127 +16,10 @@
     {
       "theater": "orpheus",
       "artiesten": [
-        "Pieter Derks"
-      ],
-      "titel": "Ja, leuk",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/pieter-derks-583c"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-10-31",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/lisa-ostermann-z61w"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-04",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/patrick-laureij-f24n"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-05",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/patrick-laureij-f24n"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Yentl en de Boer"
-      ],
-      "titel": "Rekhalzen",
-      "genre": "cabaret",
-      "datum": "2026-11-06",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/yentl-en-de-boer-1gxl"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Eran & Co"
-      ],
-      "titel": "AI & Ik",
-      "genre": "cabaret",
-      "datum": "2026-11-07",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/eran-co-hxcb"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Tafkal"
-      ],
-      "titel": "Serieus grappig",
-      "genre": "cabaret",
-      "datum": "2026-11-13",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/tafkal-1gz6"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Tafkal"
-      ],
-      "titel": "Serieus grappig",
-      "genre": "cabaret",
-      "datum": "2026-11-14",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/tafkal-1gz6"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Tafkal"
-      ],
-      "titel": "Serieus grappig",
-      "genre": "cabaret",
-      "datum": "2026-11-15",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/tafkal-1gz6"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
         "Silvesters Comedy Club"
       ],
       "titel": "Comedy Night in Orpheus!",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-11-17",
       "tijd": "20:30",
       "status": "gepland",
@@ -149,7 +32,7 @@
         "Silvesters Comedy Club"
       ],
       "titel": "Comedy Night in Orpheus!",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2026-12-15",
       "tijd": "20:30",
       "status": "gepland",
@@ -162,7 +45,7 @@
         "Silvesters Comedy Club"
       ],
       "titel": "Comedy Night in Orpheus!",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-01-19",
       "tijd": "20:30",
       "status": "gepland",
@@ -175,7 +58,7 @@
         "Silvesters Comedy Club"
       ],
       "titel": "Comedy Night in Orpheus!",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-02-16",
       "tijd": "20:30",
       "status": "gepland",
@@ -188,7 +71,7 @@
         "Silvesters Comedy Club"
       ],
       "titel": "Comedy Night in Orpheus!",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-03-16",
       "tijd": "20:30",
       "status": "gepland",
@@ -201,7 +84,7 @@
         "Silvesters Comedy Club"
       ],
       "titel": "Comedy Night in Orpheus!",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-05-18",
       "tijd": "20:30",
       "status": "gepland",
@@ -211,639 +94,15 @@
     {
       "theater": "orpheus",
       "artiesten": [
-        "Girls on Fire 3"
+        "Cadeautje!"
       ],
-      "titel": "De ultieme ladiesnight vol humor, herkenning en muziek!",
-      "genre": "cabaret",
-      "datum": "2026-11-20",
-      "tijd": "20:00",
+      "titel": "Peuterpret",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-18",
+      "tijd": "10:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/girls-on-fire-3-84d6"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Roel en Jos Maalderink"
-      ],
-      "titel": "Verbroedering",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/roel-en-jos-maalderink-mqyh"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2026-12-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/merijn-scholten-rhvr"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2026-12-04",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/merijn-scholten-rhvr"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Renske Kruitbosch"
-      ],
-      "titel": "Neem de tijd",
-      "genre": "cabaret",
-      "datum": "2026-12-04",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/renske-kruitbosch-1gxt"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Lebbis"
-      ],
-      "titel": "Satan is moe",
-      "genre": "cabaret",
-      "datum": "2026-12-09",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/lebbis-5835"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Tis Hier Geen Hotel 3"
-      ],
-      "titel": "Hanneke Drenth en Dianne Liesker",
-      "genre": "cabaret",
-      "datum": "2026-12-12",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/tis-hier-geen-hotel-3-rhng"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Dolf Jansen"
-      ],
-      "titel": "Schaamteloos - Oudejaars2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-12-15",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/dolf-jansen-z6rk"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Claudia de Breij"
-      ],
-      "titel": "Oudejaarsconference 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-12-16",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/claudia-de-breij-jwdf"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Claudia de Breij"
-      ],
-      "titel": "Oudejaarsconference 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-12-17",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/claudia-de-breij-jwdf"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "We zijn toch familie"
-      ],
-      "titel": "Musical Comedy met o.a. Paul de Leeuw en Annick Boer",
-      "genre": "cabaret",
-      "datum": "2026-12-17",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/we-zijn-toch-familie-xtj3"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "René van Meurs"
-      ],
-      "titel": "Noodzakelijk kwaad",
-      "genre": "cabaret",
-      "datum": "2027-01-08",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/rene-van-meurs-b1zh"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Rob Scheepers"
-      ],
-      "titel": "Scheepers op z'n scherpst",
-      "genre": "cabaret",
-      "datum": "2027-01-08",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/rob-scheepers-849b"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Oscar Smit"
-      ],
-      "titel": "€ 472.000,-",
-      "genre": "cabaret",
-      "datum": "2027-01-13",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/oscar-smit-7zdt"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Ronald Goedemondt"
-      ],
-      "titel": "Mijn lieve achterdocht",
-      "genre": "cabaret",
-      "datum": "2027-01-17",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/ronald-goedemondt-nsz9"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Ronald Goedemondt"
-      ],
-      "titel": "Mijn lieve achterdocht",
-      "genre": "cabaret",
-      "datum": "2027-03-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/ronald-goedemondt-nsz9"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Tineke Schouten"
-      ],
-      "titel": "Femme Vitaal",
-      "genre": "cabaret",
-      "datum": "2027-01-21",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/tineke-schouten-1g6c"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Janneke de Bijl"
-      ],
-      "titel": "Pluk eventueel de dag",
-      "genre": "cabaret",
-      "datum": "2027-01-22",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/janneke-de-bijl-58wf"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Freek de Jonge"
-      ],
-      "titel": "Wisten Wij Veel",
-      "genre": "cabaret",
-      "datum": "2027-01-29",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/freek-de-jonge-f2v1"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Gilian de Vries"
-      ],
-      "titel": "Wat wil ik",
-      "genre": "cabaret",
-      "datum": "2027-01-30",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/gilian-de-vries-z67v"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Andries Tunru"
-      ],
-      "titel": "Ravot",
-      "genre": "cabaret",
-      "datum": "2027-02-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/andries-tunru-lvcv"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Grof Geschud"
-      ],
-      "titel": "Vieren",
-      "genre": "cabaret",
-      "datum": "2027-02-04",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/grof-geschud-1gbh"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Esther van der Voort"
-      ],
-      "titel": "Mama is Boos",
-      "genre": "cabaret",
-      "datum": "2027-02-19",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/esther-van-der-voort-b14z"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Milène van der Smissen"
-      ],
-      "titel": "De Schnabbelkoningin",
-      "genre": "cabaret",
-      "datum": "2027-02-20",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/milene-van-der-smissen-mqg4"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Familie voor Beginners"
-      ],
-      "titel": "Mylou Frencken & gitarist",
-      "genre": "cabaret",
-      "datum": "2027-02-23",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/familie-voor-beginners-84qn"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Christel de Laat"
-      ],
-      "titel": "Kende da!?",
-      "genre": "cabaret",
-      "datum": "2027-02-23",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/christel-de-laat-6cy7"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Christel de Laat"
-      ],
-      "titel": "Kende da!?",
-      "genre": "cabaret",
-      "datum": "2027-02-24",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/christel-de-laat-6cy7"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Christel de Laat"
-      ],
-      "titel": "Kende da!?",
-      "genre": "cabaret",
-      "datum": "2027-02-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/christel-de-laat-6cy7"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Annick Boer"
-      ],
-      "titel": "Vol Erin",
-      "genre": "cabaret",
-      "datum": "2027-02-26",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/annick-boer-xthv"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Daan van der Hoeven"
-      ],
-      "titel": "Mensenmens",
-      "genre": "cabaret",
-      "datum": "2027-02-27",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/daan-van-der-hoeven-nsvq"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2027-03-03",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/andre-manuel-nsvc"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Van Vleuten en Van Muiswinkel"
-      ],
-      "titel": "Alles onder controle",
-      "genre": "cabaret",
-      "datum": "2027-03-06",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/van-vleuten-en-van-muiswinkel-rh9y"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Wina Ricardo"
-      ],
-      "titel": "Wina's Wereld",
-      "genre": "cabaret",
-      "datum": "2027-03-19",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/wina-ricardo-4bsq"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Jandino"
-      ],
-      "titel": "De grote jubileumshow - Jandino 20 jaar",
-      "genre": "cabaret",
-      "datum": "2027-03-20",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/jandino-f2m4"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Bettina Holwerda"
-      ],
-      "titel": "Laat Maar",
-      "genre": "cabaret",
-      "datum": "2027-03-20",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/bettina-holwerda-6c4y"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Luuk Ransijn"
-      ],
-      "titel": "Uitkijk",
-      "genre": "cabaret",
-      "datum": "2027-03-26",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/luuk-ransijn-84n9"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Richard Groenendijk"
-      ],
-      "titel": "Gelukkig heb je mij nog",
-      "genre": "cabaret",
-      "datum": "2027-04-02",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/richard-groenendijk-yk9t"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Rayen Panday"
-      ],
-      "titel": "Grip",
-      "genre": "cabaret",
-      "datum": "2027-04-16",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/rayen-panday-f2x7"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Nienke Plas"
-      ],
-      "titel": "Appeltje Eitje",
-      "genre": "cabaret",
-      "datum": "2027-04-23",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/nienke-plas-lvrx"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Marie Koet"
-      ],
-      "titel": "Eindspel",
-      "genre": "cabaret",
-      "datum": "2027-04-23",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/marie-koet-f23y"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "SCHATER Cabaretfestival"
-      ],
-      "titel": "SCHATER Cabaretfestival",
-      "genre": "cabaret",
-      "datum": "2027-04-24",
-      "tijd": "16:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/schater-cabaretfestival-58x1"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Céline Janssen"
-      ],
-      "titel": "Opera op Reis",
-      "genre": "cabaret",
-      "datum": "2027-05-01",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/celine-janssen-rhfh"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Ricky Risolles"
-      ],
-      "titel": "Niet zo Indiscreet…",
-      "genre": "cabaret",
-      "datum": "2027-05-08",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/ricky-risolles-z6jb"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Valentina Tóth"
-      ],
-      "titel": "Revue Revanche",
-      "genre": "cabaret",
-      "datum": "2027-05-12",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/valentina-toth-lv8b"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Patrick Nederkoorn"
-      ],
-      "titel": "Nieuw programma",
-      "genre": "cabaret",
-      "datum": "2027-05-15",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/patrick-nederkoorn-hx2q"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2027-05-18",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/kasper-van-der-laan-z6t3"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Arie en Silvester"
-      ],
-      "titel": "Breken de tent af",
-      "genre": "cabaret",
-      "datum": "2027-05-19",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/arie-en-silvester-6cwh"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "David van Rosmalen"
-      ],
-      "titel": "Als ik jou was",
-      "genre": "cabaret",
-      "datum": "2027-05-22",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/david-van-rosmalen-jwr2"
-    },
-    {
-      "theater": "orpheus",
-      "artiesten": [
-        "Selma Visscher"
-      ],
-      "titel": "Trekvogel",
-      "genre": "cabaret",
-      "datum": "2027-05-28",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.orpheus.nl/voorstellingen/selma-visscher-xtwd"
+      "bron": "https://www.orpheus.nl/voorstellingen/cadeautje-58mc"
     },
     {
       "theater": "orpheus",
@@ -851,7 +110,7 @@
         "Fabian Franciscus"
       ],
       "titel": "Is het leven al begonnen?",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-06-01",
       "tijd": "20:00",
       "status": "gepland",
@@ -864,7 +123,7 @@
         "Jay Francis"
       ],
       "titel": "Tunnelvisie",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-06-04",
       "tijd": "20:00",
       "status": "gepland",
@@ -877,7 +136,7 @@
         "Thijs Kemperink"
       ],
       "titel": "Tot het uiterste gedreven",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-06-11",
       "tijd": "20:00",
       "status": "gepland",
@@ -887,10 +146,75 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "Over een kleine mol die wil weten wie er op zijn kop gepoept heeft"
+      ],
+      "titel": "Onderdeel van het Prentenboekjesfestival",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-16",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-rhqz"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Over een kleine mol die wil weten wie er op zijn kop gepoept heeft"
+      ],
+      "titel": "Onderdeel van het Prentenboekjesfestival",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-16",
+      "tijd": "12:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/over-een-kleine-mol-die-wil-weten-wie-er-op-zijn-kop-gepoept-heeft-rhqz"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "De Gruffalo"
+      ],
+      "titel": "Onderdeel van het Prentenboekjesfestival",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-16",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/de-gruffalo-z6yd"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Titus & Fien De Revue"
+      ],
+      "titel": "Vooruit, nog één keertje dan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/titus-fien-de-revue-1g84"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "Titus & Fien De Revue"
+      ],
+      "titel": "Vooruit, nog één keertje dan",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-06-20",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/titus-fien-de-revue-1g84"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Rundfunk"
       ],
       "titel": "Wagyu",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-06-25",
       "tijd": "20:00",
       "status": "gepland",
@@ -900,10 +224,75 @@
     {
       "theater": "orpheus",
       "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-17",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/k3-4bh8"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-17",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/k3-4bh8"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-17",
+      "tijd": "16:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/k3-4bh8"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-18",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/k3-4bh8"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
+        "K3"
+      ],
+      "titel": "Superhelden",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-07-18",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/k3-4bh8"
+    },
+    {
+      "theater": "orpheus",
+      "artiesten": [
         "Tafkal"
       ],
       "titel": "Most Wanted",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-11-04",
       "tijd": "20:00",
       "status": "gepland",
@@ -916,7 +305,7 @@
         "Tafkal"
       ],
       "titel": "Most Wanted",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-11-05",
       "tijd": "20:00",
       "status": "gepland",
@@ -929,7 +318,7 @@
         "Tafkal"
       ],
       "titel": "Most Wanted",
-      "genre": "cabaret",
+      "genre": "comedy",
       "datum": "2027-11-06",
       "tijd": "20:00",
       "status": "gepland",
