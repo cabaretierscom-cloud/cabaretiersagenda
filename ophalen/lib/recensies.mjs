@@ -49,7 +49,7 @@ const CITAAT_TEKENS = /^[\s"'“”‘’„«»]+|[\s"'“”‘’„«»]+$/g
 
 // Benoemde tekens die decodeEntities() niet kent ("&ldquo;", "&oacute;").
 const TEKENS = { ldquo: "“", rdquo: "”", lsquo: "‘", rsquo: "’", bdquo: "„", hellip: "…", ndash: "–", mdash: "—", nbsp: " ",
-  eacute: "é", egrave: "è", euml: "ë", oacute: "ó", ouml: "ö", aacute: "á", agrave: "à", iuml: "ï", uuml: "ü", ccedil: "ç" };
+  eacute: "é", egrave: "è", euml: "ë", oacute: "ó", ouml: "ö", aacute: "á", agrave: "à", iuml: "ï", uuml: "ü", ccedil: "ç", minus: "−", plus: "+" };
 const tekst = (s) => decodeEntities(stripTags(s)).replace(/&([a-z]+);/gi, (m, n) => TEKENS[n.toLowerCase()] ?? m);
 
 // Ook gebruikt door samenvoegen.mjs, zodat eerder opgehaalde recensies dezelfde schoonmaak krijgen.
@@ -61,6 +61,8 @@ export function recensie(medium, citaat, sterren) {
   // Sterren achter het citaat ("… mindfuck.” ★★★★★") horen in het sterrenveld.
   const achter = c.match(/\s*(★{1,5})\s*$/);
   if (achter) { c = c.slice(0, achter.index); if (sterren == null || !Number(sterren)) sterren = achter[1].length; }
+  // De kop van een uitklapblok ("In de pers + −", Stadsgehoorzaal Vlaardingen) hoort niet bij het citaat.
+  c = c.replace(/^(?:in de pers|pers(?:reacties|stemmen)?|recensies?)\s*(?:[+−-]\s*)+/i, "");
   c = c.replace(/\s*[-–—]\s*$/, "").replace(CITAAT_TEKENS, "").trim();
   if (!m || m.length > 50 || /publiek|bezoeker|recensent$|jury/i.test(m)) return null;
   if (c.length < 15 || c.length > 600) return null;
