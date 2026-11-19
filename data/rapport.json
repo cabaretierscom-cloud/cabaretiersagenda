@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-19",
   "totaal": {
-    "speeldata": 9278,
-    "komend": 8190,
+    "speeldata": 9287,
+    "komend": 8199,
     "artiesten": 963,
     "zalen": 735,
     "plaatsen": 508,
-    "voorstellingen": 1405
+    "voorstellingen": 1404
   },
   "bronnen": [
     {
@@ -620,10 +620,10 @@
     {
       "bron": "kobra",
       "naam": "Speellijsten van Kobra Theaterproducties (import)",
-      "opgehaald": "2026-11-01",
-      "speeldata": 223,
-      "vorige": 223,
-      "dubbel": 71
+      "opgehaald": "2026-11-19",
+      "speeldata": 216,
+      "vorige": 207,
+      "dubbel": 74
     },
     {
       "bron": "speellijsten",
@@ -972,12 +972,12 @@
     },
     {
       "datum": "2026-11-19",
-      "speeldata": 9278,
-      "komend": 8190,
+      "speeldata": 9287,
+      "komend": 8199,
       "artiesten": 963,
       "zalen": 735,
       "plaatsen": 508,
-      "voorstellingen": 1405
+      "voorstellingen": 1404
     }
   ]
 }
