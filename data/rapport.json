@@ -1,12 +1,12 @@
 {
-  "datum": "2026-11-18",
+  "datum": "2026-11-19",
   "totaal": {
     "speeldata": 9233,
-    "komend": 8200,
+    "komend": 8145,
     "artiesten": 961,
-    "zalen": 729,
+    "zalen": 730,
     "plaatsen": 505,
-    "voorstellingen": 1406
+    "voorstellingen": 1408
   },
   "bronnen": [
     {
@@ -54,7 +54,7 @@
       "naam": "Theater Bellevue",
       "opgehaald": "2026-11-18",
       "speeldata": 127,
-      "vorige": 97,
+      "vorige": 127,
       "dubbel": 0
     },
     {
@@ -190,7 +190,7 @@
       "naam": "Comedy Club Haug",
       "opgehaald": "2026-11-18",
       "speeldata": 123,
-      "vorige": 101,
+      "vorige": 123,
       "dubbel": 0
     },
     {
@@ -206,7 +206,7 @@
       "naam": "Schouwburg Het Park",
       "opgehaald": "2026-11-18",
       "speeldata": 91,
-      "vorige": 90,
+      "vorige": 91,
       "dubbel": 0
     },
     {
@@ -230,7 +230,7 @@
       "naam": "Theater de Kampanje",
       "opgehaald": "2026-11-18",
       "speeldata": 73,
-      "vorige": 55,
+      "vorige": 73,
       "dubbel": 0
     },
     {
@@ -238,7 +238,7 @@
       "naam": "De Kleine Komedie",
       "opgehaald": "2026-11-18",
       "speeldata": 146,
-      "vorige": 108,
+      "vorige": 146,
       "dubbel": 0
     },
     {
@@ -292,9 +292,9 @@
     {
       "bron": "leiden",
       "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-      "opgehaald": "2026-11-18",
-      "speeldata": 100,
-      "vorige": 100,
+      "opgehaald": "2026-11-19",
+      "speeldata": 99,
+      "vorige": 99,
       "dubbel": 0
     },
     {
@@ -342,7 +342,7 @@
       "naam": "Stadsschouwburg & De Vereeniging Nijmegen",
       "opgehaald": "2026-11-18",
       "speeldata": 48,
-      "vorige": 28,
+      "vorige": 48,
       "dubbel": 0
     },
     {
@@ -374,7 +374,7 @@
       "naam": "Parktheater Eindhoven",
       "opgehaald": "2026-11-18",
       "speeldata": 226,
-      "vorige": 224,
+      "vorige": 226,
       "dubbel": 0
     },
     {
@@ -478,7 +478,7 @@
       "naam": "Verkadefabriek",
       "opgehaald": "2026-11-18",
       "speeldata": 99,
-      "vorige": 98,
+      "vorige": 99,
       "dubbel": 0
     },
     {
@@ -494,7 +494,7 @@
       "naam": "Theater aan het Vrijthof",
       "opgehaald": "2026-11-18",
       "speeldata": 39,
-      "vorige": 38,
+      "vorige": 39,
       "dubbel": 0
     },
     {
@@ -510,7 +510,7 @@
       "naam": "De Warande",
       "opgehaald": "2026-11-18",
       "speeldata": 32,
-      "vorige": 14,
+      "vorige": 32,
       "dubbel": 0
     },
     {
@@ -518,7 +518,7 @@
       "naam": "Westrand",
       "opgehaald": "2026-11-18",
       "speeldata": 48,
-      "vorige": 28,
+      "vorige": 48,
       "dubbel": 0
     },
     {
@@ -534,7 +534,7 @@
       "naam": "Zaantheater",
       "opgehaald": "2026-11-18",
       "speeldata": 86,
-      "vorige": 83,
+      "vorige": 86,
       "dubbel": 0
     },
     {
@@ -550,7 +550,7 @@
       "naam": "Theater Zuidplein",
       "opgehaald": "2026-11-18",
       "speeldata": 99,
-      "vorige": 75,
+      "vorige": 99,
       "dubbel": 0
     },
     {
@@ -566,7 +566,7 @@
       "naam": "Agenda van 5to9",
       "opgehaald": "2026-11-18",
       "speeldata": 371,
-      "vorige": 374,
+      "vorige": 371,
       "dubbel": 71
     },
     {
@@ -582,7 +582,7 @@
       "naam": "Agenda van Bunker Theaterzaken",
       "opgehaald": "2026-11-18",
       "speeldata": 359,
-      "vorige": 378,
+      "vorige": 359,
       "dubbel": 334
     },
     {
@@ -598,7 +598,7 @@
       "naam": "Agenda van Theaterbureau Fr!S",
       "opgehaald": "2026-11-18",
       "speeldata": 110,
-      "vorige": 112,
+      "vorige": 110,
       "dubbel": 63
     },
     {
@@ -606,7 +606,7 @@
       "naam": "Speellijsten van Kobra Theaterproducties (import)",
       "opgehaald": "2026-11-01",
       "speeldata": 223,
-      "vorige": 227,
+      "vorige": 223,
       "dubbel": 71
     },
     {
@@ -614,528 +614,36 @@
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-18",
       "speeldata": 2438,
-      "vorige": 2462,
+      "vorige": 2438,
       "dubbel": 1341
     }
   ],
   "nieuw": {
-    "artiesten": [
-      {
-        "id": "aluin",
-        "naam": "Aluin"
-      },
-      {
-        "id": "annie-m-g-schmidtprijs",
-        "naam": "Annie M.G. Schmidtprijs"
-      },
-      {
-        "id": "arno-huibers-en-paul-van-der-heijden",
-        "naam": "Arno Huibers & Paul van der Heijden"
-      },
-      {
-        "id": "broder",
-        "naam": "Broder"
-      },
-      {
-        "id": "cabaret-en-classics",
-        "naam": "Cabaret & Classics"
-      },
-      {
-        "id": "cezanne-tegelberg-en-company-duits-gesproken",
-        "naam": "Cézanne Tegelberg & Company - Duits gesproken"
-      },
-      {
-        "id": "cezanne-tegelberg-en-company-engels-gesproken",
-        "naam": "Cézanne Tegelberg & Company - Engels gesproken"
-      },
-      {
-        "id": "cezanne-tegelberg-en-company-turks-gesproken",
-        "naam": "Cézanne Tegelberg & Company - Turks gesproken"
-      },
-      {
-        "id": "daniel-yazbek",
-        "naam": "Daniel Yazbek"
-      },
-      {
-        "id": "de-kombak",
-        "naam": "De Kombak"
-      },
-      {
-        "id": "de-super-elfkins",
-        "naam": "De Super-Elfkins"
-      },
-      {
-        "id": "dear-t",
-        "naam": "Dear T."
-      },
-      {
-        "id": "fay-lovsky",
-        "naam": "Fay Lovsky"
-      },
-      {
-        "id": "gery-la-boule",
-        "naam": "Géry La Boule"
-      },
-      {
-        "id": "grace-mulvey",
-        "naam": "Grace Mulvey"
-      },
-      {
-        "id": "het-huis-dat-stopte-met-staan",
-        "naam": "Het huis dat stopte met staan"
-      },
-      {
-        "id": "hetpaleis-wolf-wolf",
-        "naam": "hetpaleis/WOLF WOLF"
-      },
-      {
-        "id": "joey-avery",
-        "naam": "Joey Avery"
-      },
-      {
-        "id": "karolien-verlinden-de-formatie-en-zonzo-compagnie",
-        "naam": "Karolien Verlinden/de Formatie & Zonzo Compagnie"
-      },
-      {
-        "id": "kunst-in-zicht",
-        "naam": "Kunst in Zicht"
-      },
-      {
-        "id": "laros-en-de-jong-beeldmakerij",
-        "naam": "Laros & de Jong beeldmakerij"
-      },
-      {
-        "id": "laus-steenbeke-ydwer-bosma",
-        "naam": "Laus Steenbeke/Ydwer Bosma"
-      },
-      {
-        "id": "leo-en-marius-blokhuis",
-        "naam": "Leo en Marius Blokhuis"
-      },
-      {
-        "id": "livia-jouan-cie-studio-t",
-        "naam": "Livia Jouan / Cie Studio T"
-      },
-      {
-        "id": "naomi-seine",
-        "naam": "Naomi Seine"
-      },
-      {
-        "id": "rene-oskam",
-        "naam": "René Oskam"
-      },
-      {
-        "id": "shaun-het-schaap-elke-dag-feest",
-        "naam": "Shaun het schaap: elke dag feest!"
-      },
-      {
-        "id": "studio-vavoom-panama-pictures-verkadefabriek",
-        "naam": "Studio Vavoom/ Panama Pictures/ Verkadefabriek"
-      },
-      {
-        "id": "terrible-tiran-8-108-geannuleerd",
-        "naam": "Terrible Tiran (8-108) GEANNULEERD"
-      },
-      {
-        "id": "theater-tieret-en-walrus",
-        "naam": "Theater Tieret & Walrus"
-      },
-      {
-        "id": "voice-events",
-        "naam": "Voice Events"
-      },
-      {
-        "id": "woest-10-110",
-        "naam": "Woest (10-110)"
-      }
-    ],
+    "artiesten": [],
     "zalen": [
       {
-        "id": "spanbroek-wadway",
-        "naam": "Spanbroek",
-        "plaats": "Wadway",
+        "id": "cafe-caat-leiden",
+        "naam": "Café Caat",
+        "plaats": "Leiden",
         "land": "NL",
-        "website": "https://theaterkerkwadway.nl"
+        "website": "https://leidseschouwburg-stadsgehoorzaal.nl/cafe-caat/"
       }
     ],
     "voorstellingen": [
       {
-        "id": "aluin-moeder-aarde",
-        "titel": "Moeder Aarde",
-        "artiesten": [
-          "aluin"
-        ]
-      },
-      {
-        "id": "amsterdams-kleinkunst-festival-halve-finale",
-        "titel": "Halve Finale",
-        "artiesten": [
-          "amsterdams-kleinkunst-festival"
-        ]
-      },
-      {
-        "id": "anansi-de-spin-en-de-gulzige-tijger-onderdeel-van-het-peuterfestival-theater-de-kampanje",
-        "titel": "Anansi de Spin en de Gulzige Tijger onderdeel van het Peuterfestival",
+        "id": "boom-chicago-s-comedy-explosion-2-cafe-caat-leiden",
+        "titel": "Boom Chicago's Comedy Explosion #2",
         "artiesten": []
       },
       {
-        "id": "annie-m-g-schmidtprijs-uitreiking",
-        "titel": "Uitreiking",
-        "artiesten": [
-          "annie-m-g-schmidtprijs"
-        ]
-      },
-      {
-        "id": "arno-huibers-en-paul-van-der-heijden-verliefd-op-truus",
-        "titel": "Verliefd op Truus",
-        "artiesten": [
-          "arno-huibers-en-paul-van-der-heijden"
-        ]
-      },
-      {
-        "id": "arno-huibers-tomaatje-op-je-neus",
-        "titel": "Tomaatje op je neus",
-        "artiesten": [
-          "arno-huibers"
-        ]
-      },
-      {
-        "id": "broder-niels",
-        "titel": "Niels",
-        "artiesten": [
-          "broder"
-        ]
-      },
-      {
-        "id": "cabaret-en-classics-roza-herwig-en-julius-backer",
-        "titel": "Roza Herwig & Julius Backer",
-        "artiesten": [
-          "cabaret-en-classics"
-        ]
-      },
-      {
-        "id": "cezanne-tegelberg-en-company-duits-gesproken-het-meisje-dat-de-wereld-schreef",
-        "titel": "Het meisje dat de wereld schreef",
-        "artiesten": [
-          "cezanne-tegelberg-en-company-duits-gesproken"
-        ]
-      },
-      {
-        "id": "cezanne-tegelberg-en-company-engels-gesproken-het-meisje-dat-de-wereld-schreef",
-        "titel": "Het meisje dat de wereld schreef",
-        "artiesten": [
-          "cezanne-tegelberg-en-company-engels-gesproken"
-        ]
-      },
-      {
-        "id": "cezanne-tegelberg-en-company-turks-gesproken-het-meisje-dat-de-wereld-schreef",
-        "titel": "Het meisje dat de wereld schreef",
-        "artiesten": [
-          "cezanne-tegelberg-en-company-turks-gesproken"
-        ]
-      },
-      {
-        "id": "comedy-club-2-met-kjen-descheemaecker",
-        "titel": "met Kjen Descheemaecker",
-        "artiesten": [
-          "comedy-club-2"
-        ]
-      },
-      {
-        "id": "daniel-yazbek-i-ll-call-you-back",
-        "titel": "I'll Call You Back",
-        "artiesten": [
-          "daniel-yazbek"
-        ]
-      },
-      {
-        "id": "de-cabaret-club-volgende",
-        "titel": "Volgende »",
-        "artiesten": [
-          "de-cabaret-club"
-        ]
-      },
-      {
-        "id": "de-kombak-manmanman",
-        "titel": "Manmanman",
-        "artiesten": [
-          "de-kombak"
-        ]
-      },
-      {
-        "id": "de-musical-zonder-billen-4-doldwaze-familiemusical-vol-humor-en-fantasie",
-        "titel": "Doldwaze familiemusical vol humor en fantasie",
-        "artiesten": [
-          "de-musical-zonder-billen-4"
-        ]
-      },
-      {
-        "id": "de-plaats-die-ik-inneem-de-warande-turnhout",
-        "titel": "De plaats die ik inneem",
+        "id": "lachstof-5-cafe-caat-leiden",
+        "titel": "Lachstof #5",
         "artiesten": []
       },
       {
-        "id": "de-super-elfkins-ute-von-munchow-pohl",
-        "titel": "Ute von Münchow-Pohl",
-        "artiesten": [
-          "de-super-elfkins"
-        ]
-      },
-      {
-        "id": "dear-t-ridder-robin",
-        "titel": "Ridder Robin",
-        "artiesten": [
-          "dear-t"
-        ]
-      },
-      {
-        "id": "familiedag-sint-westrand-dilbeek",
-        "titel": "FamilieDag SINT",
+        "id": "the-stand-up-club-8-cafe-caat-leiden",
+        "titel": "The Stand-up Club #8",
         "artiesten": []
-      },
-      {
-        "id": "fay-lovsky-hakken-in-het-zand",
-        "titel": "Hakken In Het Zand",
-        "artiesten": [
-          "fay-lovsky"
-        ]
-      },
-      {
-        "id": "gery-la-boule-ni-zievere-speile",
-        "titel": "Ni zievere, speile",
-        "artiesten": [
-          "gery-la-boule"
-        ]
-      },
-      {
-        "id": "goat-droom-groots-westrand-dilbeek",
-        "titel": "GOAT: Droom Groots",
-        "artiesten": []
-      },
-      {
-        "id": "grace-mulvey-grace-mulvey",
-        "titel": "Grace Mulvey",
-        "artiesten": [
-          "grace-mulvey"
-        ]
-      },
-      {
-        "id": "guido-spek-spek-en-span",
-        "titel": "Spek en Span",
-        "artiesten": [
-          "guido-spek"
-        ]
-      },
-      {
-        "id": "het-huis-dat-stopte-met-staan-het-verhaal-van-een-vlucht",
-        "titel": "Het verhaal van een vlucht",
-        "artiesten": [
-          "het-huis-dat-stopte-met-staan"
-        ]
-      },
-      {
-        "id": "hetpaleis-wolf-wolf-eindeloos-verhaal-10-110",
-        "titel": "Eindeloos Verhaal (10-110)",
-        "artiesten": [
-          "hetpaleis-wolf-wolf"
-        ]
-      },
-      {
-        "id": "jeroens-clan-jeroens-clan",
-        "titel": "Jeroens Clan",
-        "artiesten": [
-          "jeroens-clan"
-        ]
-      },
-      {
-        "id": "jeroens-clan-met-juk",
-        "titel": "met JUK",
-        "artiesten": [
-          "jeroens-clan"
-        ]
-      },
-      {
-        "id": "joey-avery-joey-avery",
-        "titel": "Joey Avery",
-        "artiesten": [
-          "joey-avery"
-        ]
-      },
-      {
-        "id": "karolien-verlinden-de-formatie-en-zonzo-compagnie-re-beat",
-        "titel": "Re:Beat",
-        "artiesten": [
-          "karolien-verlinden-de-formatie-en-zonzo-compagnie"
-        ]
-      },
-      {
-        "id": "klassiek-voor-kleintjes-kerstconcert-voor-baby-s",
-        "titel": "Kerstconcert voor baby's!",
-        "artiesten": [
-          "klassiek-voor-kleintjes"
-        ]
-      },
-      {
-        "id": "klassiek-voor-kleintjes-kerstconcert-voor-je-dreumes",
-        "titel": "Kerstconcert voor je dreumes!",
-        "artiesten": [
-          "klassiek-voor-kleintjes"
-        ]
-      },
-      {
-        "id": "klassiek-voor-kleintjes-kerstconcert-voor-je-peuter-of-kleuter",
-        "titel": "Kerstconcert voor je peuter of kleuter!",
-        "artiesten": [
-          "klassiek-voor-kleintjes"
-        ]
-      },
-      {
-        "id": "kunst-in-zicht-plantartica",
-        "titel": "Plantartica",
-        "artiesten": [
-          "kunst-in-zicht"
-        ]
-      },
-      {
-        "id": "laros-en-de-jong-beeldmakerij-mis-poes",
-        "titel": "Mis Poes",
-        "artiesten": [
-          "laros-en-de-jong-beeldmakerij"
-        ]
-      },
-      {
-        "id": "laus-steenbeke-ydwer-bosma-mist",
-        "titel": "Mist",
-        "artiesten": [
-          "laus-steenbeke-ydwer-bosma"
-        ]
-      },
-      {
-        "id": "leo-en-marius-blokhuis-father-en-son",
-        "titel": "Father & Son",
-        "artiesten": [
-          "leo-en-marius-blokhuis"
-        ]
-      },
-      {
-        "id": "livia-jouan-cie-studio-t-meneer-t-8-108",
-        "titel": "Meneer T (8-108)",
-        "artiesten": [
-          "livia-jouan-cie-studio-t"
-        ]
-      },
-      {
-        "id": "naomi-seine-maria",
-        "titel": "Maria",
-        "artiesten": [
-          "naomi-seine"
-        ]
-      },
-      {
-        "id": "nuff-said-de-warande-turnhout",
-        "titel": "'Nuff Said",
-        "artiesten": []
-      },
-      {
-        "id": "onias-landveld-papa-zonder-handleiding",
-        "titel": "Papa zonder handleiding",
-        "artiesten": [
-          "onias-landveld"
-        ]
-      },
-      {
-        "id": "pim-en-pom-op-naar-pakjesavond",
-        "titel": "Op naar pakjesavond",
-        "artiesten": [
-          "pim-en-pom"
-        ]
-      },
-      {
-        "id": "rene-oskam-carrousel",
-        "titel": "Carrousel",
-        "artiesten": [
-          "rene-oskam"
-        ]
-      },
-      {
-        "id": "shaun-het-schaap-elke-dag-feest-seamus-malone",
-        "titel": "Seamus Malone",
-        "artiesten": [
-          "shaun-het-schaap-elke-dag-feest"
-        ]
-      },
-      {
-        "id": "sprookjes-enzo-zee",
-        "titel": "Zee",
-        "artiesten": [
-          "sprookjes-enzo"
-        ]
-      },
-      {
-        "id": "stormopkomst-dagpas-de-warande-turnhout",
-        "titel": "Stormopkomst dagpas",
-        "artiesten": []
-      },
-      {
-        "id": "studio-vavoom-panama-pictures-verkadefabriek-lost-en-found",
-        "titel": "Lost&Found",
-        "artiesten": [
-          "studio-vavoom-panama-pictures-verkadefabriek"
-        ]
-      },
-      {
-        "id": "terrible-tiran-8-108-geannuleerd-frieda",
-        "titel": "Frieda",
-        "artiesten": [
-          "terrible-tiran-8-108-geannuleerd"
-        ]
-      },
-      {
-        "id": "theater-stof-de-wondertuin",
-        "titel": "De Wondertuin",
-        "artiesten": [
-          "theater-stof"
-        ]
-      },
-      {
-        "id": "theater-tieret-en-walrus-meneer-beer-de-terugkeer",
-        "titel": "Meneer Beer, De terugkeer",
-        "artiesten": [
-          "theater-tieret-en-walrus"
-        ]
-      },
-      {
-        "id": "voice-events-wij-zijn-cabo-kids",
-        "titel": "Wij zijn Cabo Kids",
-        "artiesten": [
-          "voice-events"
-        ]
-      },
-      {
-        "id": "wasda-westrand-dilbeek",
-        "titel": "Wasda",
-        "artiesten": []
-      },
-      {
-        "id": "wina-ricardo-nationaal-theaterweekend-2027",
-        "titel": "Nationaal Theaterweekend 2027",
-        "artiesten": [
-          "wina-ricardo"
-        ]
-      },
-      {
-        "id": "wina-ricardo-wina-ricardo",
-        "titel": "Wina Ricardo",
-        "artiesten": [
-          "wina-ricardo"
-        ]
-      },
-      {
-        "id": "woest-10-110-goele-denil",
-        "titel": "Goele Denil",
-        "artiesten": [
-          "woest-10-110"
-        ]
       }
     ]
   },
@@ -1365,6 +873,15 @@
       "zalen": 729,
       "plaatsen": 505,
       "voorstellingen": 1406
+    },
+    {
+      "datum": "2026-11-19",
+      "speeldata": 9233,
+      "komend": 8145,
+      "artiesten": 961,
+      "zalen": 730,
+      "plaatsen": 505,
+      "voorstellingen": 1408
     }
   ]
 }

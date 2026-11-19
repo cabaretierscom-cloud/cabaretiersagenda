@@ -1326,11 +1326,11 @@
     "genre": "kindervoorstellingen"
   },
   {
-    "id": "boom-chicago-s-comedy-explosion-2-stadsgehoorzaal-leiden",
+    "id": "boom-chicago-s-comedy-explosion-2-cafe-caat-leiden",
     "titel": "Boom Chicago's Comedy Explosion #2",
     "artiesten": [],
-    "genre": "cabaret",
-    "theater": "stadsgehoorzaal-leiden"
+    "genre": "stand-up",
+    "theater": "cafe-caat-leiden"
   },
   {
     "id": "boosh-bashasha-comedy-cafe-amsterdam",
@@ -5592,10 +5592,7 @@
     "artiesten": [
       "jeroen-leenders"
     ],
-    "genre": "cabaret",
-    "ookGenres": [
-      "stand-up"
-    ]
+    "genre": "stand-up"
   },
   {
     "id": "jeroen-leenders-experience-unieke-live-comedy-show",
@@ -6656,6 +6653,13 @@
     "artiesten": [],
     "genre": "kindervoorstellingen",
     "theater": "cc-zoetegem-zottegem"
+  },
+  {
+    "id": "lachstof-5-cafe-caat-leiden",
+    "titel": "Lachstof #5",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "cafe-caat-leiden"
   },
   {
     "id": "lachstof-5-stadsgehoorzaal-leiden",
@@ -10977,6 +10981,13 @@
       "the-laughing-lizard"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "the-stand-up-club-8-cafe-caat-leiden",
+    "titel": "The Stand-up Club #8",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "cafe-caat-leiden"
   },
   {
     "id": "the-stand-up-club-8-stadsgehoorzaal-leiden",

@@ -64,7 +64,8 @@ export default {
           theater: d.theater,
           artiesten: artiest ? [artiest] : [],
           titel,
-          genre: /oudejaars/i.test(titel) ? "oudejaarsconference" : genre,
+          // Café Caat is een comedyclub: wat de zaal cabaret of comedy noemt, is daar stand-up.
+          genre: /oudejaars/i.test(titel) ? "oudejaarsconference" : d.theater === "cafe-caat-leiden" && (genre === "cabaret" || genre === "comedy") ? "stand-up" : genre,
           datum: d.datum,
           tijd: d.tijd,
           status: /geannuleerd|afgelast/.test(d.kaart) ? "geannuleerd" : /uitverkocht|wachtlijst/.test(d.kaart) ? "uitverkocht" : "gepland",
