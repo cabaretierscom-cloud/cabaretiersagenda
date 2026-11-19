@@ -1,7 +1,7 @@
 {
   "bron": "gouda",
   "naam": "Goudse Schouwburg",
-  "opgehaald": "2026-11-18",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "goudse-schouwburg",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "goudse-schouwburg",
-      "artiesten": [
-        "Pieter Derks"
-      ],
-      "titel": "Ja, leuk",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://goudseschouwburg.nl/agenda/pieter-derks-ja-leuk-reprise-10025219/"
-    },
     {
       "theater": "goudse-schouwburg",
       "artiesten": [
@@ -153,6 +140,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/sjaak-bral-vaarwel-2026-10025261/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [
+        "Rayen Panday & friends"
+      ],
+      "titel": "Wonderful Christmastime",
+      "genre": "cabaret",
+      "datum": "2026-12-13",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/rayen-panday-friends-wonderful-christmastime-10043904/"
     },
     {
       "theater": "goudse-schouwburg",

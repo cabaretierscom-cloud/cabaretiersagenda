@@ -1,7 +1,7 @@
 {
   "bron": "speelhuis",
   "naam": "Theater Het Speelhuis",
-  "opgehaald": "2026-11-18",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "theater-het-speelhuis",
@@ -359,19 +359,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterspeelhuis.nl/programma/percossa-13246"
-    },
-    {
-      "theater": "theater-het-speelhuis",
-      "artiesten": [
-        "HNTjong"
-      ],
-      "titel": "Dag Poes (4+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-18",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterspeelhuis.nl/programma/dag-poes-4-13250"
     },
     {
       "theater": "theater-het-speelhuis",
@@ -751,18 +738,5 @@
       "bron": "https://theaterspeelhuis.nl/programma/poppentheater-13371"
     }
   ],
-  "recensies": {
-    "https://theaterspeelhuis.nl/programma/dag-poes-4-13250": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Poes is weg! Zonder iets te zeggen. Waar zou ‘ie zijn? Dag Poes is een muzikaal avontuur over kleine verdrietjes en grote avonturen. De voorstelling zit vol liedjes over ontmoeten en afscheid nemen. \"Een bijzonder lieflijk, prachtig vormgegeven en vooral ook grappig theateravontuur."
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Onder regie van Noël Fischer en met de aanstekelijke muziek van Jelle Hoekstra betreedt het publiek een sprookjesachtige wereld."
-      }
-    ]
-  }
+  "recensies": {}
 }

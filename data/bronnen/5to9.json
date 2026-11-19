@@ -2,47 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-11-18",
+  "opgehaald": "2026-11-19",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Vooruit",
-        "plaats": "Gent",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Gili"
-      ],
-      "titel": "Machtig!",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/gili/2026-11-18/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Ledeltheater",
-        "plaats": "Oostburg",
-        "land": "NL",
-        "website": "https://ledeltheater.nl"
-      },
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "stand-up",
-      "datum": "2026-11-18",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://ledeltheater.nl/events/jade-mintjens/"
-    },
     {
       "theater": "leietheater-deinze",
       "artiesten": [
@@ -1253,6 +1215,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.anzegem.be/vr-111226-bas-birker-twee-procent"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Het Klokhuis",
+        "plaats": "Antwerpen",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Gunter Lamoot"
+      ],
+      "titel": "Protpourri",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": null,
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://apps.ticketmatic.com/widgets/vlaams_fruit/addtickets?event=791622619238#!/addtickets"
     },
     {
       "theater": {
@@ -2976,7 +2957,7 @@
       "genre": "stand-up",
       "datum": "2027-01-29",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/jade-mintjens-bedankt-om-te-komen/"
     },
@@ -3223,7 +3204,7 @@
       "genre": "stand-up",
       "datum": "2027-02-04",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://denhaag.com/nl/agenda/jade-mintjens-bedankt-om-te-komen"
     },

@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-11-18",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -557,7 +557,7 @@
       "titel": "English Open Mic",
       "genre": "open-mic",
       "datum": "2026-12-02",
-      "tijd": "20:15",
+      "tijd": "20:30",
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/english-open-mic-111713341"
@@ -612,7 +612,7 @@
       "titel": "Open Mic",
       "genre": "open-mic",
       "datum": "2026-12-02",
-      "tijd": "20:00",
+      "tijd": "20:15",
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111713336"
@@ -735,17 +735,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-2100-111708899"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
-      "titel": "Open Mic",
-      "genre": "open-mic",
-      "datum": "2026-11-18",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111710964"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1426,20 +1415,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/tim-hartog-vincent-geers-111653514"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Tim Hartog",
-        "Berit Companjen"
-      ],
-      "titel": "Tim Hartog & Berit Companjen",
-      "genre": "stand-up",
-      "datum": "2026-11-18",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/tim-hartog-berit-companjen-111653513"
     },
     {
       "theater": "comedy-club-haug-rotterdam",

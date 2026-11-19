@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-18",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,17 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Open Mic Comedyhuis Regulars",
-      "genre": "open-mic",
-      "datum": "2026-11-18",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/open-mic-comedyhuis-regulars-18-november-2026/"
-    },
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
@@ -70,7 +59,7 @@
       "genre": "stand-up",
       "datum": "2026-11-20",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/vrijdagavondshow-20-november/"
     },
@@ -109,7 +98,7 @@
       "genre": "stand-up",
       "datum": "2026-11-21",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/zaterdagavondshow-21-november/"
     },

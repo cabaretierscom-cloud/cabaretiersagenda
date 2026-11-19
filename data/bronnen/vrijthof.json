@@ -1,7 +1,7 @@
 {
   "bron": "vrijthof",
   "naam": "Theater aan het Vrijthof",
-  "opgehaald": "2026-11-18",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "theater-aan-het-vrijthof",
@@ -21,6 +21,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000,-",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/472-000-oscar-smit"
+    },
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
@@ -115,19 +128,6 @@
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
-        "Oscar Smit"
-      ],
-      "titel": "€ 472.000,-",
-      "genre": "cabaret",
-      "datum": "2027-01-14",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/472-000-oscar-smit"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
         "Jandino"
       ],
       "titel": "De Grote Jubileumshow",
@@ -202,19 +202,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/daar-is-hij-weer-nabil"
-    },
-    {
-      "theater": "ainsi-maastricht",
-      "artiesten": [
-        "Hokjesdenker"
-      ],
-      "titel": "We zien het wel even",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/we-zien-het-wel-even-hokjesdenker"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -517,14 +504,16 @@
     },
     {
       "theater": "theater-aan-het-vrijthof",
-      "artiesten": [],
-      "titel": "- Knock Out Comedy Crew",
+      "artiesten": [
+        "Veldeke Theater"
+      ],
+      "titel": "Aajdjaorscabberèt: Eve oonder us",
       "genre": "cabaret",
-      "datum": "2027-04-06",
+      "datum": "2026-12-27",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/knock-out-comedy-crew"
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/aajdjaorscabberet-eve-oonder-us-veldeke-theater"
     }
   ],
   "recensies": {

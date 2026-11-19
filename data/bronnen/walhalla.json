@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-11-18",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -29,19 +29,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-walhalla",
-      "artiesten": [
-        "60ste Editie Cameretten Festival"
-      ],
-      "titel": "try-outs halve finalisten",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/60ste-editie-cameretten-festival-try-outs-halve-finalisten/"
-    },
     {
       "theater": "theater-walhalla",
       "artiesten": [
@@ -155,7 +142,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-22",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-15/"
     },
@@ -233,7 +220,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-29",
       "tijd": "11:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-4/"
     },
@@ -246,7 +233,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-29",
       "tijd": "13:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-5/"
     },
@@ -643,7 +630,7 @@
       "genre": "cabaret",
       "datum": "2027-02-11",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/groninger-studenten-cabaret-festival-finalistentour/"
     },
@@ -708,7 +695,7 @@
       "genre": "cabaret",
       "datum": "2027-02-18",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/gavin-reijnders-jazzebelle/"
     },
@@ -773,7 +760,7 @@
       "genre": "cabaret",
       "datum": "2027-02-24",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/viggo-waas-eddie-b-wahr-kees-van-der-vooren-eigenlijk-try-out/"
     },
@@ -786,7 +773,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-02-25",
       "tijd": "11:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/bon-dia-in-de-jungle-4-t-m-8-jaar-izaline-calister-thijs-borsten/"
     },
@@ -871,7 +858,7 @@
       "genre": "kleinkunst",
       "datum": "2027-03-04",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/cabaret-club-giggle-9/"
     },
@@ -949,7 +936,7 @@
       "genre": "cabaret",
       "datum": "2027-03-10",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/joosen-en-de-jager-niks-aan-het-handje/"
     },
@@ -1188,7 +1175,7 @@
       "genre": "cabaret",
       "datum": "2027-04-15",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/finalistentour-leids-cabaret-festival/"
     },
@@ -1201,7 +1188,7 @@
       "genre": "cabaret",
       "datum": "2027-04-15",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/bugra-gedik-gelukkig-geboren/"
     },
@@ -1279,7 +1266,7 @@
       "genre": "cabaret",
       "datum": "2027-04-22",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/fabian-franciscus-is-het-leven-al-begonnen/"
     },
@@ -1292,7 +1279,7 @@
       "genre": "cabaret",
       "datum": "2027-04-23",
       "tijd": "14:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/marja-van-katendrecht-heel-holland-hoopt-2/"
     },
@@ -1420,7 +1407,7 @@
       "genre": "cabaret",
       "datum": "2027-06-10",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/stefan-hendikx-in-perspectief/"
     },

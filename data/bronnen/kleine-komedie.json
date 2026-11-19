@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-11-18",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Henry van Loon"
-      ],
-      "titel": "Keanu",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/henry-van-loon-c28y"
-    },
     {
       "theater": "kleine-komedie",
       "artiesten": [
@@ -360,7 +347,7 @@
       "genre": "kleinkunst",
       "datum": "2026-12-15",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "première",
       "bron": "https://www.dekleinekomedie.nl/agenda/david-van-rosmalen-f71k"
     },
@@ -523,28 +510,28 @@
     {
       "theater": "kleine-komedie",
       "artiesten": [
-        "Comedy Comedians - seizoen 26-27"
+        "Comedy Comedians"
       ],
-      "titel": "onder leiding van Martijn Koning",
+      "titel": "Onder leiding van Martijn Koning en met Ellis Broeksteeg, Tobias Wenting, Toby Oldenborger, Hermes Ahmadi en Het Spook",
       "genre": "stand-up",
       "datum": "2026-12-24",
       "tijd": "20:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/comedy-comedians-seizoen-26-27-1jsf"
+      "bron": "https://www.dekleinekomedie.nl/agenda/comedy-comedians-1jsf"
     },
     {
       "theater": "kleine-komedie",
       "artiesten": [
-        "Comedy Comedians - seizoen 26-27"
+        "Comedy Comedians"
       ],
-      "titel": "onder leiding van Martijn Koning",
+      "titel": "Onder leiding van Martijn Koning en met Ellis Broeksteeg, Tobias Wenting, Toby Oldenborger, Hermes Ahmadi en Het Spook",
       "genre": "stand-up",
       "datum": "2027-06-21",
       "tijd": "20:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.dekleinekomedie.nl/agenda/comedy-comedians-seizoen-26-27-1jsf"
+      "bron": "https://www.dekleinekomedie.nl/agenda/comedy-comedians-1jsf"
     },
     {
       "theater": "kleine-komedie",
@@ -1877,7 +1864,7 @@
       "genre": "improvisatie",
       "datum": "2027-06-27",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/kor-hoebe-m5nr"
     },

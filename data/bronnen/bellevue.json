@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-11-18",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Luuk Weggemans"
-      ],
-      "titel": "Lach maar om mij",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/lach-maar-om-mij-q2n3"
-    },
     {
       "theater": "theater-bellevue",
       "artiesten": [],
@@ -151,7 +138,7 @@
       "genre": "cabaret",
       "datum": "2026-11-25",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/houden-het-luchtig-q2nk"
     },
@@ -419,7 +406,7 @@
       "genre": "cabaret",
       "datum": "2026-12-18",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/eindspel-tjfq"
     },
@@ -1611,6 +1598,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/to-believe-in-magic-58ch"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [
+        "Farida Laan & Maaike Dirkje Hop"
+      ],
+      "titel": "HOPlaLAAN",
+      "genre": "cabaret",
+      "datum": "2027-06-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/hoplalaan-4bmz"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [
+        "Farida Laan & Maaike Dirkje Hop"
+      ],
+      "titel": "HOPlaLAAN",
+      "genre": "cabaret",
+      "datum": "2027-06-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/hoplalaan-4bmz"
     }
   ],
   "recensies": {

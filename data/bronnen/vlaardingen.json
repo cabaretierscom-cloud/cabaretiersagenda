@@ -1,7 +1,7 @@
 {
   "bron": "vlaardingen",
   "naam": "Stadsgehoorzaal Vlaardingen",
-  "opgehaald": "2026-11-18",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "stadsgehoorzaal-vlaardingen",
@@ -55,19 +55,6 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Bro's"
-      ],
-      "titel": "Bromens",
-      "genre": "cabaret",
-      "datum": "2026-11-20",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/bros"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
         "Juliet"
       ],
       "titel": "Ik Beloof Je Eeuwige Twijfel",
@@ -107,45 +94,6 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Krulmuziek"
-      ],
-      "titel": "Babykerstconcert (0+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-19",
-      "tijd": "10:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/babykerstconcert"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Juf Braaksel - De Musical (6+)"
-      ],
-      "titel": "Een swingend en spannend avontuur voor het hele gezin",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-01-10",
-      "tijd": "14:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/juf-braaksel-de-musical"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "De Nog Grotere Slijmmusical 2 (6+)"
-      ],
-      "titel": "Slijm is terug! Groter, spectaculairder en met nog meer slijm!",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-29",
-      "tijd": "13:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/de-nog-grotere-slijmmusical"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
         "De Broers van Arkel"
       ],
       "titel": "Zeg maar u",
@@ -155,6 +103,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/de-broers-van-arkel"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Krulmuziek"
+      ],
+      "titel": "Babykerstconcert (0+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "10:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/babykerstconcert"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -181,6 +142,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/de-cabaret-club"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Bro's"
+      ],
+      "titel": "Bromens",
+      "genre": "cabaret",
+      "datum": "2026-11-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/bros"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -224,28 +198,28 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Maya Show (1+)"
+        "Ernst, Bobbie & de rest (3+)"
       ],
-      "titel": "Samen picknicken",
+      "titel": "Hebben geen idee",
       "genre": "kindervoorstellingen",
-      "datum": "2027-01-17",
-      "tijd": "13:30",
+      "datum": "2027-06-13",
+      "tijd": "14:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
+      "bron": "https://stadsgehoorzaal.nl/programma/ernst-bobbie-de-rest"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Maya Show (1+)"
+        "Ernst, Bobbie & de rest (3+)"
       ],
-      "titel": "Samen picknicken",
+      "titel": "Hebben geen idee",
       "genre": "kindervoorstellingen",
-      "datum": "2027-01-17",
+      "datum": "2027-06-13",
       "tijd": "16:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
+      "bron": "https://stadsgehoorzaal.nl/programma/ernst-bobbie-de-rest"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -328,6 +302,32 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
+        "Maya Show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Maya Show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
         "Krulmuziek"
       ],
       "titel": "Dreumeskerstconcert (1+)",
@@ -406,28 +406,15 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Ernst, Bobbie & de rest (3+)"
+        "Juf Braaksel - De Musical (6+)"
       ],
-      "titel": "Hebben geen idee",
+      "titel": "Een swingend en spannend avontuur voor het hele gezin",
       "genre": "kindervoorstellingen",
-      "datum": "2027-06-13",
+      "datum": "2027-01-10",
       "tijd": "14:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/ernst-bobbie-de-rest"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Ernst, Bobbie & de rest (3+)"
-      ],
-      "titel": "Hebben geen idee",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-06-13",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/ernst-bobbie-de-rest"
+      "bron": "https://stadsgehoorzaal.nl/programma/juf-braaksel-de-musical"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -497,28 +484,15 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "De KinderPraatPaal Praatshow (4+)"
+        "De Nog Grotere Slijmmusical 2 (6+)"
       ],
-      "titel": "Door Camie Bonger",
+      "titel": "Slijm is terug! Groter, spectaculairder en met nog meer slijm!",
       "genre": "kindervoorstellingen",
-      "datum": "2027-02-26",
-      "tijd": "13:00",
+      "datum": "2026-11-29",
+      "tijd": "13:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/de-kinderpraatpaal-praatshow-feb"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Wina Ricardo"
-      ],
-      "titel": "Wina's Wereld",
-      "genre": "cabaret",
-      "datum": "2027-05-13",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/wina-ricardo"
+      "bron": "https://stadsgehoorzaal.nl/programma/de-nog-grotere-slijmmusical"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -562,6 +536,19 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
+        "De KinderPraatPaal Praatshow (4+)"
+      ],
+      "titel": "Door Camie Bonger",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-26",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-kinderpraatpaal-praatshow-feb"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
         "Remko Vrijdag"
       ],
       "titel": "Marko Maandag",
@@ -571,6 +558,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/remko-vrijdag"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Wina Ricardo"
+      ],
+      "titel": "Wina's Wereld",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/wina-ricardo"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -666,13 +666,6 @@
     }
   ],
   "recensies": {
-    "https://stadsgehoorzaal.nl/programma/bros": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "In de pers + &minus; “Lekker abstract, absurd en brutaal."
-      }
-    ],
     "https://stadsgehoorzaal.nl/programma/jeroens-clan": [
       {
         "medium": "Theaterkrant",
@@ -693,6 +686,13 @@
         "medium": "NRC",
         "sterren": null,
         "citaat": "Het drietal valt op met scherpe en grappige dialogen."
+      }
+    ],
+    "https://stadsgehoorzaal.nl/programma/bros": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "In de pers + &minus; “Lekker abstract, absurd en brutaal."
       }
     ]
   }

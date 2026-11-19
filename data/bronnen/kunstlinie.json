@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-18",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -55,19 +55,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Cameretten"
-      ],
-      "titel": "Cameretten",
-      "genre": "cabaret",
-      "datum": "2027-05-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/cameretten/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Deng Boy"
       ],
       "titel": "Deng Boy",
@@ -77,6 +64,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/deng-boy-5/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Cameretten",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/cameretten/"
     },
     {
       "theater": "kunstlinie",
@@ -107,19 +107,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Klaas van der Eerden"
-      ],
-      "titel": "Klaas van der Eerden",
-      "genre": "cabaret",
-      "datum": "2027-04-02",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/klaas-van-der-eerden-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Team Ricky Risolles"
       ],
       "titel": "Team Ricky Risolles",
@@ -129,6 +116,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/team-ricky-risolles/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Klaas van der Eerden"
+      ],
+      "titel": "Klaas van der Eerden",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/klaas-van-der-eerden-2/"
     },
     {
       "theater": "kunstlinie",

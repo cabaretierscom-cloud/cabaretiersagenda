@@ -1,7 +1,7 @@
 {
   "bron": "kunstmin",
   "naam": "Kunstmin",
-  "opgehaald": "2026-11-18",
+  "opgehaald": "2026-11-19",
   "theaters": [
     {
       "id": "kunstmin",
@@ -458,19 +458,6 @@
     {
       "theater": "kunstmin",
       "artiesten": [
-        "Jan Beuving"
-      ],
-      "titel": "Dekpunt",
-      "genre": "cabaret",
-      "datum": "2027-02-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kunstmin.nl/voorstellingen/jan-beuving-dekpunt/"
-    },
-    {
-      "theater": "kunstmin",
-      "artiesten": [
         "Jandino"
       ],
       "titel": "DE GROTE JUBILEUMSHOW - Jandino 20 jaar",
@@ -480,6 +467,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/jandino-de-grote-jubileumshow-jandino-20-jaar/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Jan Beuving"
+      ],
+      "titel": "Dekpunt",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/jan-beuving-dekpunt/"
     },
     {
       "theater": "kunstmin",
@@ -588,6 +588,19 @@
     {
       "theater": "kunstmin",
       "artiesten": [
+        "Jongerenraad Kunstmin"
+      ],
+      "titel": "Stand-up Night",
+      "genre": "cabaret",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/rom-com-cafe/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
         "Lisa Ostermann"
       ],
       "titel": "De Baas",
@@ -649,19 +662,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/kasper-van-der-laan-ruim/"
-    },
-    {
-      "theater": "kunstmin",
-      "artiesten": [
-        "Café Komedie"
-      ],
-      "titel": "Stand-Up Night",
-      "genre": "cabaret",
-      "datum": "2026-11-18",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kunstmin.nl/voorstellingen/cafe-komedie-stand-up-club/"
     },
     {
       "theater": "kunstmin",
@@ -978,7 +978,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-28",
       "tijd": "13:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/fien-en-teun-het-geheim-van-sinterklaas-2/"
     },
