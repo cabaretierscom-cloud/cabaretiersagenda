@@ -136,8 +136,9 @@ function zoekTheaterZelf(t) {
   if (opNaam) return opNaam;
   // "Stadsschouwburg" en er is één schouwburg in die plaats.
   if (/schouwburg/i.test(t.naam)) { const sb = kandidaten.filter((x) => /schouwburg/i.test(x.naam)); if (sb.length === 1) return sb[0]; }
-  // "Schouwburg" of "Stadsschouwburg" zonder meer, en er is maar één zaal in die plaats.
-  if (!k.length && kandidaten.length === 1) return kandidaten[0];
+  // "Schouwburg" of "Stadsschouwburg" zonder meer, en er is maar één zaal in die plaats. Niet als die zaal geen
+  // schouwburg is: "Deventer Schouwburg" is niet Mimik, de enige zaal die we in Deventer kenden.
+  if (!k.length && kandidaten.length === 1 && !(/schouwburg/i.test(t.naam) && !/schouwburg/i.test(kandidaten[0].naam))) return kandidaten[0];
   let naam = t.naam.replace(/\s+/g, " ").trim();
   // "CC", "Stadsschouwburg" of "Cultuurhuis" zegt op de site weinig: dan de plaats erachter.
   if (!k.length && !slug(naam).includes(slug(plaats))) naam = `${naam.replace(/^(cc|gc)$/i, (x) => x.toUpperCase())} ${plaats}`;

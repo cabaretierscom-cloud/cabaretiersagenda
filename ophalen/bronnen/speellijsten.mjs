@@ -62,7 +62,7 @@ const ARTIESTEN = [
   { naam: "De Mugge van Brugge", url: "https://www.demuggevanbrugge.be/", volgorde: PZ, land: "BE", ruis: /^pre ?mi[eè]re$|^\d+u\b/i },
   { naam: "De Volksjury", url: "https://www.devolksjury.be/", volgorde: TPZ, land: "BE", splits: /\s*\(B\)\s*|\s+[-–—/|]\s+|,\s+/, ruis: /^read more|^sold out$|^laatste tickets$/i },
   { naam: "Die Verdammte Spielerei", url: "https://www.dieverdammtespielerei.be/agenda-and-tickets", volgorde: TPZ, land: "BE", scheiding: /\s*✦\s*/g, alleen: /Porselijm/ },
-  { naam: "Dolf Jansen", url: "https://dolfjansen.com/schaamteloos/", volgorde: ZP },
+  { naam: "Dolf Jansen", url: "https://dolfjansen.com/schaamteloos/", volgorde: ZP, titel: "Schaamteloos" },
   { naam: "Elfie Tromp", url: "https://elfietromp.nl/speellijst/", volgorde: ZPT },
   { naam: "Esther van der Voort", url: "https://esthervandervoort.com/", volgorde: ZP },
   { naam: "Fabian Franciscus", url: "https://www.fabianfranciscus.nl/", volgorde: TZP, ruis: /^(grote|kleine|middel)\s*zaal$/i },

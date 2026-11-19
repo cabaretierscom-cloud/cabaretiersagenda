@@ -3289,27 +3289,22 @@
   },
   {
     "id": "dolf-jansen-oudejaars-2026",
-    "titel": "Oudejaars 2026",
-    "artiesten": [
-      "dolf-jansen"
-    ],
-    "genre": "oudejaarsconference"
-  },
-  {
-    "id": "dolf-jansen-oudejaarsconference-2026",
-    "titel": "Oudejaarsconference 2026",
-    "artiesten": [
-      "dolf-jansen"
-    ],
-    "genre": "oudejaarsconference"
-  },
-  {
-    "id": "dolf-jansen-schaamteloos",
     "titel": "Schaamteloos",
     "artiesten": [
       "dolf-jansen"
     ],
-    "genre": "cabaret"
+    "genre": "oudejaarsconference",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Dolf Jansen geeft de zaal altijd het gevoel dat er iets unieks gebeurt",
+        "bron": "https://www.theaterdeveste.nl/programma/oudejaars-2026-schaamteloos-fhtv"
+      }
+    ],
+    "ookGenres": [
+      "cabaret"
+    ]
   },
   {
     "id": "dolfje-weerwolfje-cc-de-schakel",

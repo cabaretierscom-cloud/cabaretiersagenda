@@ -4,9 +4,9 @@
     "speeldata": 9278,
     "komend": 8190,
     "artiesten": 963,
-    "zalen": 734,
+    "zalen": 735,
     "plaatsen": 508,
-    "voorstellingen": 1407
+    "voorstellingen": 1405
   },
   "bronnen": [
     {
@@ -582,7 +582,7 @@
       "naam": "Bos Theaterproducties",
       "opgehaald": "2026-11-19",
       "speeldata": 13,
-      "vorige": 0,
+      "vorige": 13,
       "dubbel": 9
     },
     {
@@ -631,7 +631,7 @@
       "opgehaald": "2026-11-19",
       "speeldata": 2423,
       "vorige": 2423,
-      "dubbel": 1326
+      "dubbel": 1325
     }
   ],
   "nieuw": {
@@ -688,6 +688,13 @@
         "plaats": "t Rozenknopje",
         "land": "NL",
         "website": null
+      },
+      {
+        "id": "deventer-schouwburg",
+        "naam": "Deventer Schouwburg",
+        "plaats": "Deventer",
+        "land": "NL",
+        "website": "https://deventerschouwburg.nl"
       }
     ],
     "voorstellingen": [
@@ -968,9 +975,9 @@
       "speeldata": 9278,
       "komend": 8190,
       "artiesten": 963,
-      "zalen": 734,
+      "zalen": 735,
       "plaatsen": 508,
-      "voorstellingen": 1407
+      "voorstellingen": 1405
     }
   ]
 }
