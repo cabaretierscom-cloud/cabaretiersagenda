@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-20",
   "totaal": {
-    "speeldata": 9357,
-    "komend": 8195,
-    "artiesten": 959,
+    "speeldata": 9468,
+    "komend": 8306,
+    "artiesten": 961,
     "zalen": 741,
     "plaatsen": 510,
-    "voorstellingen": 1395
+    "voorstellingen": 1396
   },
   "bronnen": [
     {
@@ -570,6 +570,14 @@
       "dubbel": 71
     },
     {
+      "bron": "alhetblauw",
+      "naam": "Al het blauw van de hemel",
+      "opgehaald": "2026-11-20",
+      "speeldata": 111,
+      "vorige": 0,
+      "dubbel": 0
+    },
+    {
       "bron": "anuar",
       "naam": "Speellijst van Anuar",
       "opgehaald": "2026-11-20",
@@ -671,6 +679,14 @@
       {
         "id": "uit-het-donker",
         "naam": "Uit het donker"
+      },
+      {
+        "id": "buddy-vedder",
+        "naam": "Buddy Vedder"
+      },
+      {
+        "id": "shelley-bos",
+        "naam": "Shelley Bos"
       }
     ],
     "zalen": [
@@ -737,6 +753,14 @@
         "titel": "Anansi de spin viert feest! 3-7jr",
         "artiesten": [
           "prentenboekjesfestival"
+        ]
+      },
+      {
+        "id": "buddy-vedder-shelley-bos-al-het-blauw-van-de-hemel",
+        "titel": "Al het blauw van de hemel",
+        "artiesten": [
+          "buddy-vedder",
+          "shelley-bos"
         ]
       }
     ]
@@ -979,12 +1003,12 @@
     },
     {
       "datum": "2026-11-20",
-      "speeldata": 9357,
-      "komend": 8195,
-      "artiesten": 959,
+      "speeldata": 9468,
+      "komend": 8306,
+      "artiesten": 961,
       "zalen": 741,
       "plaatsen": 510,
-      "voorstellingen": 1395
+      "voorstellingen": 1396
     }
   ]
 }
