@@ -1,8 +1,8 @@
 {
   "datum": "2026-11-20",
   "totaal": {
-    "speeldata": 9313,
-    "komend": 8151,
+    "speeldata": 9354,
+    "komend": 8192,
     "artiesten": 959,
     "zalen": 741,
     "plaatsen": 510,
@@ -602,6 +602,14 @@
       "dubbel": 0
     },
     {
+      "bron": "friendlyfire",
+      "naam": "Friendly Fire",
+      "opgehaald": "2026-11-20",
+      "speeldata": 41,
+      "vorige": 0,
+      "dubbel": 1
+    },
+    {
       "bron": "fris",
       "naam": "Agenda van Theaterbureau Fr!S",
       "opgehaald": "2026-11-20",
@@ -963,8 +971,8 @@
     },
     {
       "datum": "2026-11-20",
-      "speeldata": 9313,
-      "komend": 8151,
+      "speeldata": 9354,
+      "komend": 8192,
       "artiesten": 959,
       "zalen": 741,
       "plaatsen": 510,
