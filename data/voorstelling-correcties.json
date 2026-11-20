@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Verbeteringen van impresariaten en artiesten. titels: avonden van deze artiest met een van deze titels (of zonder titel) krijgen de titel 'naar'. reprise: elke avond van deze voorstelling zonder soort is een reprise. Verwerkt in ophalen/samenvoegen.mjs. genres: deze voorstelling krijgt dit genre, wat de zalen ook zeggen (hun genre gaat naar ookGenres).",
+  "_uitleg": "Verbeteringen van impresariaten en artiesten. titels: avonden van deze artiest met een van deze titels (of zonder titel) krijgen de titel 'naar'. reprise: elke avond van deze voorstelling zonder soort is een reprise. Verwerkt in ophalen/samenvoegen.mjs. genres: deze voorstelling krijgt dit genre, wat de zalen ook zeggen (hun genre gaat naar ookGenres, of de ookGenres die erbij staan).",
   "titels": [
     {
       "artiest": "Cabarestafette",
@@ -319,6 +319,26 @@
       ],
       "naar": "Schaamteloos",
       "bron": "https://dolfjansen.com/schaamteloos/ (Oudejaars 2026: Schaamteloos; zalen noemen het Oudejaars 2026 of Oudejaarsconference 2026)"
+    },
+    {
+      "artiest": "Andries Tunru & Stefan Hendrikx",
+      "van": [
+        "Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere oudejaars-improvisatie-extravaganza",
+        "De nogal hyper-bijzondere Oudejaars-improvisatie-extravaganza",
+        "De nogal hyperbijzondere Oudejaarsimprovisatie-extravaganza 2026",
+        "De nogal hyperbijzondere oudejaars extravanganza",
+        "Oudejaars-extravaganza 2026",
+        "De nogal hyperbijzondere Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Amsterdamse Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Hengelose Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Groningse Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Spijkenissese Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Tilburgse Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Bossche Oudejaars-improvisatie-extravaganza 2026"
+      ],
+      "naar": "Oudejaars-extravaganza 2026",
+      "bron": "https://www.wijzijnbeperkthoudbaar.nl/ (speellijst: *Oudejaars-extravaganza 2026; de zalen zetten de plaatsnaam in de titel)"
     }
   ],
   "reprise": [
@@ -382,6 +402,16 @@
       "titel": "",
       "genre": "oudejaarsconference",
       "bron": "https://www.kobratheater.nl/vrouwejaars/ (een fris alternatief voor de traditionele oudejaarsconference) en eigenaar van Cabaretiers.com, november 2026"
+    },
+    {
+      "artiest": "Andries Tunru & Stefan Hendrikx",
+      "titel": "Oudejaars-extravaganza 2026",
+      "genre": "oudejaarsconference",
+      "ookGenres": [
+        "improvisatie",
+        "cabaret"
+      ],
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): oudejaars, improvisatie en cabaret"
     }
   ]
 }

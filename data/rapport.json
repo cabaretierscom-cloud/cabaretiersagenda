@@ -1,12 +1,12 @@
 {
-  "datum": "2026-11-19",
+  "datum": "2026-11-20",
   "totaal": {
     "speeldata": 9287,
-    "komend": 8199,
+    "komend": 8125,
     "artiesten": 963,
     "zalen": 735,
     "plaatsen": 508,
-    "voorstellingen": 1404
+    "voorstellingen": 1403
   },
   "bronnen": [
     {
@@ -622,7 +622,7 @@
       "naam": "Speellijsten van Kobra Theaterproducties (import)",
       "opgehaald": "2026-11-19",
       "speeldata": 216,
-      "vorige": 207,
+      "vorige": 216,
       "dubbel": 74
     },
     {
@@ -635,113 +635,9 @@
     }
   ],
   "nieuw": {
-    "artiesten": [
-      {
-        "id": "farida-laan-en-maaike-dirkje-hop",
-        "naam": "Farida Laan & Maaike Dirkje Hop"
-      },
-      {
-        "id": "jongerenraad-kunstmin",
-        "naam": "Jongerenraad Kunstmin"
-      },
-      {
-        "id": "sinterklaas-in-theater-aan-het-spui",
-        "naam": "Sinterklaas in Theater aan het Spui"
-      },
-      {
-        "id": "veldeke-theater",
-        "naam": "Veldeke Theater"
-      }
-    ],
-    "zalen": [
-      {
-        "id": "cafe-caat-leiden",
-        "naam": "Café Caat",
-        "plaats": "Leiden",
-        "land": "NL",
-        "website": "https://leidseschouwburg-stadsgehoorzaal.nl/cafe-caat/"
-      },
-      {
-        "id": "theater-het-klokhuis-antwerpen",
-        "naam": "Theater Het Klokhuis",
-        "plaats": "Antwerpen",
-        "land": "BE",
-        "website": null
-      },
-      {
-        "id": "comedy-club-haug-best-of-stand-up",
-        "naam": "Comedy Club Haug",
-        "plaats": "Best of Stand-Up",
-        "land": "NL",
-        "website": "https://comedyclubhaug.com"
-      },
-      {
-        "id": "de-cabaret-club-de-kring",
-        "naam": "De Cabaret Club",
-        "plaats": "De Kring",
-        "land": "NL",
-        "website": "https://www.dekringroosendaal.nl"
-      },
-      {
-        "id": "comedy-in-de-knop-t-rozenknopje",
-        "naam": "Comedy in de Knop",
-        "plaats": "t Rozenknopje",
-        "land": "NL",
-        "website": null
-      },
-      {
-        "id": "deventer-schouwburg",
-        "naam": "Deventer Schouwburg",
-        "plaats": "Deventer",
-        "land": "NL",
-        "website": "https://deventerschouwburg.nl"
-      }
-    ],
-    "voorstellingen": [
-      {
-        "id": "boom-chicago-s-comedy-explosion-2-cafe-caat-leiden",
-        "titel": "Boom Chicago's Comedy Explosion #2",
-        "artiesten": []
-      },
-      {
-        "id": "lachstof-5-cafe-caat-leiden",
-        "titel": "Lachstof #5",
-        "artiesten": []
-      },
-      {
-        "id": "the-stand-up-club-8-cafe-caat-leiden",
-        "titel": "The Stand-up Club #8",
-        "artiesten": []
-      },
-      {
-        "id": "farida-laan-en-maaike-dirkje-hop-hoplalaan",
-        "titel": "HOPlaLAAN",
-        "artiesten": [
-          "farida-laan-en-maaike-dirkje-hop"
-        ]
-      },
-      {
-        "id": "jongerenraad-kunstmin-stand-up-night",
-        "titel": "Stand-up Night",
-        "artiesten": [
-          "jongerenraad-kunstmin"
-        ]
-      },
-      {
-        "id": "sinterklaas-in-theater-aan-het-spui-het-nationale-theater",
-        "titel": "Het Nationale Theater",
-        "artiesten": [
-          "sinterklaas-in-theater-aan-het-spui"
-        ]
-      },
-      {
-        "id": "veldeke-theater-aajdjaorscabberet-eve-oonder-us",
-        "titel": "Aajdjaorscabberèt: Eve oonder us",
-        "artiesten": [
-          "veldeke-theater"
-        ]
-      }
-    ]
+    "artiesten": [],
+    "zalen": [],
+    "voorstellingen": []
   },
   "controleren": 0,
   "geschiedenis": [
@@ -978,6 +874,15 @@
       "zalen": 735,
       "plaatsen": 508,
       "voorstellingen": 1404
+    },
+    {
+      "datum": "2026-11-20",
+      "speeldata": 9287,
+      "komend": 8125,
+      "artiesten": 963,
+      "zalen": 735,
+      "plaatsen": 508,
+      "voorstellingen": 1403
     }
   ]
 }

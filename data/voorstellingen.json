@@ -523,19 +523,15 @@
   },
   {
     "id": "andries-tunru-en-stefan-hendrikx-de-nogal-hyperbijzondere-groningse-oudejaars-im",
-    "titel": "De nogal hyperbijzondere Oudejaars-improvisatie-extravaganza 2026",
+    "titel": "Oudejaars-extravaganza 2026",
     "artiesten": [
       "andries-tunru-en-stefan-hendrikx"
     ],
-    "genre": "oudejaarsconference"
-  },
-  {
-    "id": "andries-tunru-en-stefan-hendrikx-de-nogal-hyperbijzondere-oudejaars-extravanganz",
-    "titel": "De nogal hyperbijzondere oudejaars extravanganza",
-    "artiesten": [
-      "andries-tunru-en-stefan-hendrikx"
-    ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "cabaret",
+      "improvisatie"
+    ]
   },
   {
     "id": "andries-tunru-ravot",
@@ -10091,7 +10087,15 @@
     "artiesten": [
       "selma-visscher"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Selma durft heel klein te zijn op haar podium. Vooral in haar liedjes laat ze haar kwetsbare kantjes horen",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/selma-visscher/"
+      }
+    ]
   },
   {
     "id": "sem-konijn-populisme-de-musical",
