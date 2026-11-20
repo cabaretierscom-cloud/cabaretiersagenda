@@ -630,9 +630,12 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   }
   const weergaven = (v) => Math.max(0, ...v.artiesten.map((a) => weergavenArtiest.get(a) || 0));
 
-  function nuInTheater(artiest = () => true, voorstelling = () => true) {
+  // zonderTitel: ook voorstellingen zonder eigen pagina (de voorstelling staat zelf als artiest, zoals de Vrouwejaars),
+  // met de foto van de artiest en een link naar de artiestpagina.
+  function nuInTheater(artiest = () => true, voorstelling = () => true, { zonderTitel = false } = {}) {
     const gezien = new Set();
-    const lijst = [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id) && artiest(v.artiesten[0]) && voorstelling(v))
+    const fotoVan = (v) => v.foto || (zonderTitel && !voorstellingPad.has(v.id) && !v.titel ? A.get(v.artiesten[0])?.foto : null);
+    const lijst = [...V.values()].filter((v) => v.artiesten.length && fotoVan(v)?.bestand && (voorstellingPad.has(v.id) || zonderTitel) && artiest(v.artiesten[0]) && voorstelling(v))
       .map((v) => ({ v, list: up.filter((g) => g.voorstelling === v.id && g.status !== "geannuleerd") }))
       .filter(({ list }) => list.length)
       .sort((x, y) => weergaven(y.v) - weergaven(x.v) || y.list.length - x.list.length || x.list[0].datum.localeCompare(y.list[0].datum))
@@ -642,17 +645,18 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       .map(({ x: { v, list }, kleur }, i) => {
         const beste = [...(v.recensies || [])].filter((r) => r.sterren).sort((x, y) => y.sterren - x.sterren)[0];
         const aantal = plural(list.length, "speeldatum", "speeldata");
-        const titel = echteTitel(v.id) || v.titel;
-        return `<a class="poster poster-foto" href="${voorstellingPad.get(v.id)}" style="${ink(kleur)}">
-        <span class="visually-hidden">${esc(titel)} van ${esc(artistNames(v.id))}, ${aantal}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
+        const eigen = voorstellingPad.has(v.id), foto = fotoVan(v);
+        const titel = eigen ? echteTitel(v.id) || v.titel : artistNames(v.id);
+        return `<a class="poster poster-foto" href="${eigen ? voorstellingPad.get(v.id) : artiestPad(v.artiesten[0])}" style="${ink(kleur)}">
+        <span class="visually-hidden">${esc(titel)}${eigen ? ` van ${esc(artistNames(v.id))}` : ""}, ${aantal}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
         <span class="poster-beeld" aria-hidden="true">
-          <img src="${esc(v.foto.bestand)}" alt=""${uitsnede(v.foto, 1.2)} width="${v.foto.breedte || 800}" height="${v.foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
+          <img src="${esc(foto.bestand)}" alt=""${uitsnede(foto, 1.2)} width="${foto.breedte || 800}" height="${foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
           ${beste ? `<span class="poster-sterren onder">${"★".repeat(beste.sterren)}<small>${esc(beste.medium)}</small></span>` : ""}
         </span>
         <span class="poster-vlak" aria-hidden="true">
           <span class="poster-info">
           <strong class="ftitel${titleClass(titel)}">${afbreken(titel)}</strong>
-          <span class="fartiest">${esc(artistNames(v.id))}</span>
+          ${eigen ? `<span class="fartiest">${esc(artistNames(v.id))}</span>` : ""}
           <span class="tag">${aantal}</span>
           </span>
           <span class="poster-stub"></span>
@@ -919,7 +923,7 @@ ${netBinnenBlok({ link: false, klein: true })}
     const clubs = comedyclubs();
     // Oudejaarsconferences met een affiche, als eigen rij onder de cijfers (verzoek van de eigenaar, november 2026).
     // Verdwijnt vanzelf als er geen komende oudejaarsconferences met een foto meer zijn.
-    const oudejaars = GENRES.oudejaarsconference ? nuInTheater(() => true, (v) => genresVanV(v).includes("oudejaarsconference")) : "";
+    const oudejaars = GENRES.oudejaarsconference ? nuInTheater(() => true, (v) => genresVanV(v).includes("oudejaarsconference"), { zonderTitel: true }) : "";
     const body = `
 ${nu ? `<section class="wall" aria-labelledby="nu-title">
   <div class="wrap wall-head">
@@ -939,8 +943,8 @@ ${nu ? `<section class="wall" aria-labelledby="nu-title">
 ${oudejaars ? `
 <section class="wall" aria-labelledby="oudejaars-title">
   <div class="wrap wall-head">
-    <h2 id="oudejaars-title">Sluit het jaar goed af</h2>
-    <p><a href="${genrePad("oudejaarsconference")}" aria-label="Alle oudejaarsconferences">Bekijk alles</a></p>
+    <h2 id="oudejaars-title">Het jaar goed afsluiten</h2>
+    <p><a href="${genrePad("oudejaarsconference")}" aria-label="Alle oudejaarsconferences">Oudejaars</a></p>
   </div>
   ${strip("strip-oudejaars", "Oudejaarsconferences in het theater", oudejaars)}
 </section>` : ""}
