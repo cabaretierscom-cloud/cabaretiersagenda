@@ -4,7 +4,7 @@
     "speeldata": 9322,
     "komend": 8160,
     "artiesten": 963,
-    "zalen": 737,
+    "zalen": 738,
     "plaatsen": 510,
     "voorstellingen": 1401
   },
@@ -639,7 +639,7 @@
       "opgehaald": "2026-11-20",
       "speeldata": 2431,
       "vorige": 2431,
-      "dubbel": 1320
+      "dubbel": 1328
     }
   ],
   "nieuw": {
@@ -657,6 +657,13 @@
         "naam": "Comedytunes",
         "plaats": "t Beest",
         "land": "NL",
+        "website": null
+      },
+      {
+        "id": "kunstencampus-herentals",
+        "naam": "Kunstencampus",
+        "plaats": "Herentals",
+        "land": "BE",
         "website": null
       }
     ],
@@ -903,7 +910,7 @@
       "speeldata": 9322,
       "komend": 8160,
       "artiesten": 963,
-      "zalen": 737,
+      "zalen": 738,
       "plaatsen": 510,
       "voorstellingen": 1401
     }

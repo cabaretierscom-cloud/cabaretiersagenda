@@ -1021,6 +1021,14 @@
     "website": null
   },
   {
+    "id": "kunstencampus-herentals",
+    "naam": "Kunstencampus",
+    "plaats": "Herentals",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "de-markhallen-herk-de-stad",
     "naam": "De Markhallen",
     "plaats": "Herk-de-Stad",
@@ -1170,7 +1178,7 @@
     "plaats": "Kasterlee",
     "land": "BE",
     "soort": "theater",
-    "website": null
+    "website": "https://femmakasterlee.be"
   },
   {
     "id": "den-bussel-keerbergen",

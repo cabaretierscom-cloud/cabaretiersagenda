@@ -44,7 +44,7 @@ const ARTIESTEN = [
   { naam: "Alex Ploeg", url: "https://www.alexploeg.nl/", volgorde: PZT },
   { naam: "An Nelissen", url: "https://www.annelissen.com/", volgorde: TPZ, land: "BE" },
   { naam: "Andries Tunru", url: "https://www.andriestunru.nl/", volgorde: PZ },
-  { naam: "Annick Boer", url: "https://www.annickboer.nl/", volgorde: PZ },
+  { naam: "Annick Boer", url: "https://annickboer.nl/speellijst/", volgorde: PZ, titel: "Vol Erin!" },
   { naam: "Baas & Adriani", url: "https://www.baasenadriani.nl/", volgorde: ZP },
   { naam: "Berit Companjen", url: "https://beritcompanjen.nl/", volgorde: PZ },
   { naam: "Bert Gabriëls", url: "https://www.bertgabriels.be/", volgorde: ZP, land: "BE" },
