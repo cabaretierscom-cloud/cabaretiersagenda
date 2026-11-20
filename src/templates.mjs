@@ -917,6 +917,9 @@ ${netBinnenBlok({ link: false, klein: true })}
     const nu = nuInTheater();
     const zalen = theaterKaartjes();
     const clubs = comedyclubs();
+    // Oudejaarsconferences met een affiche, als eigen rij onder de cijfers (verzoek van de eigenaar, november 2026).
+    // Verdwijnt vanzelf als er geen komende oudejaarsconferences met een foto meer zijn.
+    const oudejaars = GENRES.oudejaarsconference ? nuInTheater(() => true, (v) => genresVanV(v).includes("oudejaarsconference")) : "";
     const body = `
 ${nu ? `<section class="wall" aria-labelledby="nu-title">
   <div class="wrap wall-head">
@@ -933,6 +936,14 @@ ${nu ? `<section class="wall" aria-labelledby="nu-title">
     <div><dt>theaters</dt><dd>${tellers.zalen}</dd></div>
   </dl>
 </section>
+${oudejaars ? `
+<section class="wall" aria-labelledby="oudejaars-title">
+  <div class="wrap wall-head">
+    <h2 id="oudejaars-title">Sluit het jaar goed af</h2>
+    <p><a href="${genrePad("oudejaarsconference")}" aria-label="Alle oudejaarsconferences">Bekijk alles</a></p>
+  </div>
+  ${strip("strip-oudejaars", "Oudejaarsconferences in het theater", oudejaars)}
+</section>` : ""}
 
 ${zalen ? `
 <section class="wall wall-zalen" aria-labelledby="zalen-title">
