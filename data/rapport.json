@@ -1,11 +1,11 @@
 {
   "datum": "2026-11-20",
   "totaal": {
-    "speeldata": 9287,
-    "komend": 8125,
+    "speeldata": 9318,
+    "komend": 8156,
     "artiesten": 963,
-    "zalen": 735,
-    "plaatsen": 508,
+    "zalen": 737,
+    "plaatsen": 510,
     "voorstellingen": 1403
   },
   "bronnen": [
@@ -628,15 +628,30 @@
     {
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
-      "opgehaald": "2026-11-19",
-      "speeldata": 2423,
-      "vorige": 2423,
-      "dubbel": 1325
+      "opgehaald": "2026-11-20",
+      "speeldata": 2431,
+      "vorige": 2432,
+      "dubbel": 1320
     }
   ],
   "nieuw": {
     "artiesten": [],
-    "zalen": [],
+    "zalen": [
+      {
+        "id": "theater-de-borgh-budel",
+        "naam": "Theater De Borgh",
+        "plaats": "Budel",
+        "land": "NL",
+        "website": "https://theaterdeborgh.nl"
+      },
+      {
+        "id": "comedytunes-t-beest",
+        "naam": "Comedytunes",
+        "plaats": "t Beest",
+        "land": "NL",
+        "website": null
+      }
+    ],
     "voorstellingen": []
   },
   "controleren": 0,
@@ -877,11 +892,11 @@
     },
     {
       "datum": "2026-11-20",
-      "speeldata": 9287,
-      "komend": 8125,
+      "speeldata": 9318,
+      "komend": 8156,
       "artiesten": 963,
-      "zalen": 735,
-      "plaatsen": 508,
+      "zalen": 737,
+      "plaatsen": 510,
       "voorstellingen": 1403
     }
   ]
