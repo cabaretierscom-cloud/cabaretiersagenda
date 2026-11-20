@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-20",
   "totaal": {
-    "speeldata": 9476,
-    "komend": 8314,
-    "artiesten": 961,
-    "zalen": 742,
+    "speeldata": 9522,
+    "komend": 8360,
+    "artiesten": 962,
+    "zalen": 745,
     "plaatsen": 510,
-    "voorstellingen": 1393
+    "voorstellingen": 1394
   },
   "bronnen": [
     {
@@ -662,7 +662,7 @@
       "naam": "Speellijst van Micky Overman",
       "opgehaald": "2026-11-20",
       "speeldata": 8,
-      "vorige": 0,
+      "vorige": 8,
       "dubbel": 7
     },
     {
@@ -672,6 +672,14 @@
       "speeldata": 2439,
       "vorige": 2439,
       "dubbel": 1321
+    },
+    {
+      "bron": "viarudolphi",
+      "naam": "Via Rudolphi Producties",
+      "opgehaald": "2026-11-20",
+      "speeldata": 46,
+      "vorige": 0,
+      "dubbel": 0
     }
   ],
   "nieuw": {
@@ -695,6 +703,10 @@
       {
         "id": "shelley-bos",
         "naam": "Shelley Bos"
+      },
+      {
+        "id": "nazanin-taheri",
+        "naam": "Nazanin Taheri"
       }
     ],
     "zalen": [
@@ -746,6 +758,27 @@
         "plaats": "Brussel",
         "land": "BE",
         "website": null
+      },
+      {
+        "id": "cc-amstel-amsterdam",
+        "naam": "CC Amstel",
+        "plaats": "Amsterdam",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "spot-groningen",
+        "naam": "SPOT",
+        "plaats": "Groningen",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "groene-engel-oss",
+        "naam": "Groene Engel",
+        "plaats": "Oss",
+        "land": "NL",
+        "website": null
       }
     ],
     "voorstellingen": [
@@ -776,6 +809,13 @@
         "artiesten": [
           "buddy-vedder",
           "shelley-bos"
+        ]
+      },
+      {
+        "id": "nazanin-taheri-de-surpriseshow",
+        "titel": "De Surpriseshow",
+        "artiesten": [
+          "nazanin-taheri"
         ]
       }
     ]
@@ -1018,12 +1058,12 @@
     },
     {
       "datum": "2026-11-20",
-      "speeldata": 9476,
-      "komend": 8314,
-      "artiesten": 961,
-      "zalen": 742,
+      "speeldata": 9522,
+      "komend": 8360,
+      "artiesten": 962,
+      "zalen": 745,
       "plaatsen": 510,
-      "voorstellingen": 1393
+      "voorstellingen": 1394
     }
   ]
 }

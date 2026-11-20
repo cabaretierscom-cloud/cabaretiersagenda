@@ -2805,6 +2805,14 @@
     }
   },
   {
+    "id": "cc-amstel-amsterdam",
+    "naam": "CC Amstel",
+    "plaats": "Amsterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://ccamstel.nl"
+  },
+  {
     "id": "comedy-cafe-amsterdam",
     "naam": "Comedy Café Amsterdam",
     "plaats": "Amsterdam",
@@ -4397,6 +4405,14 @@
     "website": null
   },
   {
+    "id": "spot-groningen",
+    "naam": "SPOT",
+    "plaats": "Groningen",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.spotgroningen.nl"
+  },
+  {
     "id": "stadsschouwburg-groningen",
     "naam": "Stadsschouwburg Groningen",
     "plaats": "Groningen",
@@ -5665,6 +5681,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.barontheater.nl"
+  },
+  {
+    "id": "groene-engel-oss",
+    "naam": "Groene Engel",
+    "plaats": "Oss",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.groene-engel.nl"
   },
   {
     "id": "theater-de-lievekamp-oss",
