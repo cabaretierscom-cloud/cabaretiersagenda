@@ -707,6 +707,15 @@ for (const c of correcties.genres || []) {
   }
 }
 
+// 2d-3. Elke oudejaarsconference is ook actueel cabaret (verzoek van de eigenaar, november 2026), ook in latere seizoenen.
+for (const v of voorstellingen) {
+  const genres = [v.genre, ...(v.ookGenres || [])];
+  if (genres.includes("oudejaarsconference") && !genres.includes("actueel")) {
+    v.ookGenres = [...(v.ookGenres || []), "actueel"].sort();
+    genreGewijzigd++;
+  }
+}
+
 // 2e. Tournees die in hun geheel een reprise zijn (voorstelling-correcties.json): elke avond zonder soort is een reprise.
 let reprises = 0;
 for (const c of correcties.reprise || []) {
