@@ -17,7 +17,7 @@ const MAANDEN = { januari: 1, februari: 2, maart: 3, april: 4, mei: 5, juni: 6, 
 const PRODUCTIES = {
   "baby-reindeer": { genre: "toneel", artiesten: ["Thijs van de Meeberg"], titel: "Baby Reindeer" },
   "lift": { genre: "komedie", artiesten: ["Jelka van Houten", "Sanne Wallis de Vries"], titel: "Lift" },
-  "louise-korthals-korthals-in-stukken-26-27": { genre: "cabaret", titel: "In stukken" },
+  "louise-korthals-korthals-in-stukken-26-27": { genre: "cabaret", titel: "Korthals in stukken" },
   "marjolijn-van-kooten-aan-mij-zal-het-niet-liggen": { genre: "cabaret" },
   "patrick-nederkoorn-nieuw-programma": { genre: "cabaret" },
   "pieter-verelst-altijd-aan-26-27": { genre: "stand-up" },
