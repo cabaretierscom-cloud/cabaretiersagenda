@@ -1,7 +1,7 @@
 {
   "bron": "hetpark",
   "naam": "Schouwburg Het Park",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "schouwburg-het-park",
@@ -21,19 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "schouwburg-het-park",
-      "artiesten": [
-        "Yentl en de Boer"
-      ],
-      "titel": "Rekhalzen",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": "reprise",
-      "bron": "https://hetpark.nl/agenda/yentl-en-de-boer-rekhalzen-reprise-10353113/"
-    },
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
@@ -591,6 +578,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/finalistentournee-cameretten-60-jaar-10354252/"
+    },
+    {
+      "theater": "schouwburg-het-park",
+      "artiesten": [],
+      "titel": "Buitenboord Comedy Café",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/buitenboord-comedy-cafe-10392068/"
     },
     {
       "theater": "schouwburg-het-park",

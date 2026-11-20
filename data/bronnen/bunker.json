@@ -3,7 +3,7 @@
   "naam": "Agenda van Bunker Theaterzaken",
   "soort": "speellijst",
   "leidend": true,
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [],
   "speeldata": [
     {
@@ -1031,25 +1031,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://stadsschouwburghaarlem.nl/agenda/daniel-arends-dubbelact-haarlem"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Deventer Schouwburg",
-        "plaats": "Deventer",
-        "land": "NL",
-        "website": "https://deventerschouwburg.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://deventerschouwburg.nl/programma/lisa-ostermann-de-baas"
     },
     {
       "theater": {
@@ -2570,25 +2551,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.ahoy.nl/agenda/show/patrick-laureij-kintsugi-2027"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater De Kampanje",
-        "plaats": "Den Helder",
-        "land": "NL",
-        "website": "https://www.kampanje.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/kasper-van-der-laan-5szb"
     },
     {
       "theater": {
@@ -4854,25 +4816,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Cpunt",
-        "plaats": "Hoofddorp",
-        "land": "NL",
-        "website": "https://www.cpunt.nl"
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.cpunt.nl/agenda/david-linszen"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Schouwburg Concertzaal Tilburg",
         "plaats": "Tilburg",
         "land": "NL",
@@ -5876,25 +5819,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/wim-helsen-zvks"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "30CC Schouwburg",
-        "plaats": "Leuven",
-        "land": "BE",
-        "website": "https://www.30cc.be"
-      },
-      "artiesten": [
-        "Micha Wertheim"
-      ],
-      "titel": "Micha Wertheim Voor Iedereen",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.30cc.be/nl/programma/item/voor-iedereen-2026-2027"
     },
     {
       "theater": {
@@ -7776,25 +7700,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/van-vleuten-en-van-muiswinkel"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater de Landing",
-        "plaats": "Amstelveen",
-        "land": "NL",
-        "website": "https://schouwburgamstelveen.nl"
-      },
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/martijn-koning/?date=19-11-2026&time=20%3A00"
     },
     {
       "theater": {
@@ -11466,25 +11371,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Kattendans",
-        "plaats": "Bergeijk",
-        "land": "NL",
-        "website": "https://kattendans.nl"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://kattendans.nl/voorstelling/andre-manuel/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Theater Idea",
         "plaats": "Soest",
         "land": "NL",
@@ -13134,6 +13020,23 @@
         "sterren": 5,
         "citaat": "Kasper van der Laan is een natuurtalent.",
         "over": "Kasper van der Laan"
+      }
+    ],
+    "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/lemming-merijn-scholten": [
+      {
+        "medium": "de Volkskrant",
+        "sterren": 5,
+        "citaat": "De virtuoze komiek Merijn Scholten speelt in Lemming op de toppen van zijn kunnen."
+      },
+      {
+        "medium": "NRC",
+        "sterren": 4,
+        "citaat": "Een flitsende voorstelling, vol leuk en expressief acteerwerk."
+      },
+      {
+        "medium": "Trouw",
+        "sterren": 4,
+        "citaat": "Cabaret met inhoud, dat scherp reflecteert op de wereld van nu, en weet daarbij steeds de juiste vorm te vinden; het woord, beeld of personage waarin veel besloten ligt."
       }
     ],
     "https://theaterdestoep.nl/voorstelling/merijn-scholten-2627": [

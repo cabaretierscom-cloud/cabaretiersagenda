@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -16,26 +16,13 @@
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/kasper-van-der-laan-5szb"
-    },
-    {
-      "theater": "theater-de-kampanje",
-      "artiesten": [
         "De Broers van Arkel"
       ],
       "titel": "Zeg maar u",
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "20:30",
-      "status": "geannuleerd",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/de-broers-van-arkel-5skr"
     },
@@ -269,7 +256,7 @@
       "genre": "cabaret",
       "datum": "2027-01-21",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "geannuleerd",
       "soort": "reprise",
       "bron": "https://www.kampanje.nl/voorstellingen/rene-van-meurs-reprise-h6c6"
     },
@@ -962,23 +949,6 @@
     }
   ],
   "recensies": {
-    "https://www.kampanje.nl/voorstellingen/kasper-van-der-laan-5szb": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "De troef van Kasper van der Laan is het samenvallen van zijn fysiek met zijn absurde vondsten"
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Na zijn briljante debuut is Kasper van der Laan onstuitbaar op weg een Hele Grote te worden."
-      },
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Eigenheid is sowieso Van der Laans grote troef"
-      }
-    ],
     "https://www.kampanje.nl/voorstellingen/de-broers-van-arkel-5skr": [
       {
         "medium": "de Volkskrant",

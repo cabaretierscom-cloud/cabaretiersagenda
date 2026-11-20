@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -13,83 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Bies",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Bies",
-      "genre": "cabaret",
-      "datum": "2026-12-17",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Bies",
-      "genre": "cabaret",
-      "datum": "2027-01-14",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Bies",
-      "genre": "cabaret",
-      "datum": "2027-02-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Bies",
-      "genre": "cabaret",
-      "datum": "2027-03-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Bies",
-      "genre": "cabaret",
-      "datum": "2027-04-08",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Bies",
-      "genre": "cabaret",
-      "datum": "2027-05-13",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
-    },
     {
       "theater": "theater-bellevue",
       "artiesten": [
@@ -399,6 +322,72 @@
     },
     {
       "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Bies",
+      "genre": "cabaret",
+      "datum": "2026-12-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Bies",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Bies",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Bies",
+      "genre": "cabaret",
+      "datum": "2027-03-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Bies",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Bies",
+      "genre": "cabaret",
+      "datum": "2027-05-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/bies-57bl"
+    },
+    {
+      "theater": "theater-bellevue",
       "artiesten": [
         "Marie Koet"
       ],
@@ -432,7 +421,7 @@
       "genre": "cabaret",
       "datum": "2026-12-20",
       "tijd": "15:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/een-komische-kerstrevue-cyqc"
     },

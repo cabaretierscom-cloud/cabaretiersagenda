@@ -2,63 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": "leietheater-deinze",
-      "artiesten": [
-        "Bregje Iding",
-        "Jeroen Dyck",
-        "Peter Kluppels",
-        "MC Jarno Boone"
-      ],
-      "titel": "Humo's Comedy Cup Finalistentour",
-      "genre": "stand-up",
-      "datum": "2026-11-19",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.leietheater.be/finalistentour-humos-comedy-cup-met-bregje-iding-jeroen-dyck-peter-kluppels"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Terraszaal De Biekorf",
-        "plaats": "Lebbeke",
-        "land": "BE",
-        "website": "https://www.ccdebiekorf.be"
-      },
-      "artiesten": [
-        "Gunter Lamoot"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-19",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.ccdebiekorf.be/try-out-gunter-lamoot"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "ECI Cultuurfabriek",
-        "plaats": "Roermond",
-        "land": "NL",
-        "website": "https://ecicultuurfabriek.nl"
-      },
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "stand-up",
-      "datum": "2026-11-19",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://ecicultuurfabriek.nl/voorstelling/jade-mintjens/"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -1561,6 +1507,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Radar AZ Delta",
+        "plaats": "Roeselare",
+        "land": "BE",
+        "website": "https://deltacomedy.be"
+      },
+      "artiesten": [
+        "Bert Gabriëls"
+      ],
+      "titel": "Stand-up",
+      "genre": "stand-up",
+      "datum": "2026-12-18",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://deltacomedy.be/tickets"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "Arjaan Theater",
         "plaats": "Geraardsbergen",
         "land": "BE",
@@ -1862,6 +1827,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Maurice",
+        "plaats": "Zwevegem",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Stand-up",
+      "genre": "stand-up",
+      "datum": "2027-01-07",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.facebook.com/photo/?fbid=122307743708196031&set=pb.61555880956122.-2207520000"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "MIMIK",
         "plaats": "Deventer",
         "land": "NL",
@@ -2124,6 +2108,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.tervesten.be/bas-birker-twee-procent"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Djingel Djangel",
+        "plaats": "Antwerpen",
+        "land": "BE",
+        "website": "https://www.lunatics.be"
+      },
+      "artiesten": [
+        "Seppe Toremans"
+      ],
+      "titel": "Stand-up",
+      "genre": "stand-up",
+      "datum": "2027-01-14",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lunatics.be/events/impro-stand-up-comedy-met-roel-steeno-1"
     },
     {
       "theater": {
@@ -3131,6 +3134,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburgkortrijk.be/programma/stabieler-q7g1"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Snuffel Hostel",
+        "plaats": "Brugge",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Stand-up",
+      "genre": "stand-up",
+      "datum": "2027-02-03",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.eventbrite.be/e/dries-heyneman-maarten-dhaene-snuffel-comedy-club-tickets-1994147899047?aff=oddtdtcreator"
     },
     {
       "theater": {
@@ -4328,25 +4350,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.zeepziederij.be/index.php/nl/voorstelling/stabieler"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Snuffel Hostel",
-        "plaats": "Brugge",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Dries Heyneman"
-      ],
-      "titel": "Voor normale mensen",
-      "genre": "stand-up",
-      "datum": "2027-03-03",
-      "tijd": null,
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.eventbrite.be/e/dries-heyneman-maarten-dhaene-snuffel-comedy-club-tickets-1994147899047?aff=oddtdtcreator"
     },
     {
       "theater": {

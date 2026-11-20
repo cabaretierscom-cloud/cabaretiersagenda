@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -13,6 +13,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Onur Gökçek"
+      ],
+      "titel": "Onur Gökçek",
+      "genre": "stand-up",
+      "datum": "2027-01-15",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/onur-gokcek-111721565"
+    },
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [
@@ -405,17 +418,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
-      "titel": "Rogier Bak, Diederik Zuurmond & Georges Degoumois",
-      "genre": "stand-up",
-      "datum": "2026-11-19",
-      "tijd": "19:45",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/rogier-bak-diederik-zuurmond-georges-degoumois-111716159"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
       "titel": "alsdatmaargoedgaat",
       "genre": "stand-up",
       "datum": "2027-01-17",
@@ -557,7 +559,7 @@
       "titel": "English Open Mic",
       "genre": "open-mic",
       "datum": "2026-12-02",
-      "tijd": "20:30",
+      "tijd": "20:15",
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/english-open-mic-111713341"
@@ -699,7 +701,7 @@
       "genre": "stand-up",
       "datum": "2026-11-21",
       "tijd": "21:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-2100-111708901"
     },
@@ -721,20 +723,9 @@
       "genre": "stand-up",
       "datum": "2026-11-20",
       "tijd": "21:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-2100-111708900"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
-      "titel": "Best of Stand-Up",
-      "genre": "stand-up",
-      "datum": "2026-11-19",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-2100-111708899"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -961,19 +952,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [
-        "Elouise Eftos"
-      ],
-      "titel": "Elouise Eftos",
-      "genre": "stand-up",
-      "datum": "2026-11-19",
-      "tijd": "21:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/elouise-eftos-111708359"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
         "Sam Eley"
       ],
       "titel": "Sam Eley",
@@ -1022,19 +1000,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/patrick-spicer-111693684"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Stefan Pop"
-      ],
-      "titel": "Stefan Pop",
-      "genre": "stand-up",
-      "datum": "2026-11-19",
-      "tijd": "18:45",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/stefan-pop-111703177"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1239,7 +1204,7 @@
       "genre": "stand-up",
       "datum": "2026-11-28",
       "tijd": "21:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701032"
     },
@@ -1444,13 +1409,6 @@
     }
   ],
   "recensies": {
-    "https://comedyclubhaug.com/shows/stefan-pop-111703177": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "★★★★☆ “Een fascinerende en opvallend persoonlijke invalshoek"
-      }
-    ],
     "https://comedyclubhaug.com/shows/roel-c-verburg-111695528": [
       {
         "medium": "Trouw",

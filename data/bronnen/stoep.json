@@ -1,7 +1,7 @@
 {
   "bron": "stoep",
   "naam": "Theater de Stoep",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "theater-de-stoep",
@@ -762,19 +762,6 @@
     {
       "theater": "theater-de-stoep",
       "artiesten": [
-        "Remko Vrijdag"
-      ],
-      "titel": "Marko Maandag",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterdestoep.nl/voorstelling/remko-vrijdag-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
         "Jay Francis"
       ],
       "titel": "Tunnelvisie",
@@ -937,6 +924,11 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "De artiest Snijders blijkt precies te weten wat hij doet (…) en levert een fijne, grappige, rijke, goed geconstrueerde voorstelling af."
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": null,
+        "citaat": "Een eigenzinnige stijl die garant staat voor een voorstelling van topniveau."
       }
     ],
     "https://theaterdestoep.nl/voorstelling/luuk-weggemans-2627": [

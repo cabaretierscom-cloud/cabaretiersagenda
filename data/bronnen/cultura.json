@@ -1,7 +1,7 @@
 {
   "bron": "cultura",
   "naam": "Cultura Ede",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "cultura-ede",
@@ -467,6 +467,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://cultura-ede.nl/agenda/kleine-ijsbeer-2-7-jaar-276880/"
+    },
+    {
+      "theater": "cultura-ede",
+      "artiesten": [
+        "Pettson en Findus"
+      ],
+      "titel": "Filmpje pakken en pannenkoek versieren!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-06",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://cultura-ede.nl/agenda/pettson-en-findus-278717/"
     }
   ],
   "recensies": {}

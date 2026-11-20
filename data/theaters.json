@@ -72,6 +72,14 @@
     "website": "https://www.arenberg.be"
   },
   {
+    "id": "djingel-djangel-antwerpen",
+    "naam": "Djingel Djangel",
+    "plaats": "Antwerpen",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.lunatics.be"
+  },
+  {
     "id": "fakkelteater-rode-zaal-antwerpen",
     "naam": "Fakkelteater (Rode Zaal)",
     "plaats": "Antwerpen",
@@ -1869,6 +1877,14 @@
     "website": "https://www.despil.be"
   },
   {
+    "id": "radar-az-delta-roeselare",
+    "naam": "Radar AZ Delta",
+    "plaats": "Roeselare",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://deltacomedy.be"
+  },
+  {
     "id": "taf-roeselare",
     "naam": "TAF",
     "plaats": "Roeselare",
@@ -2456,6 +2472,14 @@
     "id": "de-passant-zoutleeuw",
     "naam": "De Passant",
     "plaats": "Zoutleeuw",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "maurice-zwevegem",
+    "naam": "Maurice",
+    "plaats": "Zwevegem",
     "land": "BE",
     "soort": "theater",
     "website": null

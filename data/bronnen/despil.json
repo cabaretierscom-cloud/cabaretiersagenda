@@ -1,7 +1,7 @@
 {
   "bron": "despil",
   "naam": "CC De Spil",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "de-spil",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "de-spil",
-      "artiesten": [
-        "Farce Majeure"
-      ],
-      "titel": "Michael Van Peel",
-      "genre": "stand-up",
-      "datum": "2026-11-19",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.despil.be/agenda/farce-majeure-4m6k"
-    },
     {
       "theater": "de-spil",
       "artiesten": [],
@@ -406,7 +393,7 @@
       "genre": "stand-up",
       "datum": "2027-05-28",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.despil.be/agenda/bonte-avonden-7lz6"
     },
