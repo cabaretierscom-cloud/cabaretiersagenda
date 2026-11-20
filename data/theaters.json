@@ -2885,6 +2885,14 @@
     }
   },
   {
+    "id": "frascati-amsterdam",
+    "naam": "Frascati",
+    "plaats": "Amsterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.frascatitheater.nl"
+  },
+  {
     "id": "carre",
     "naam": "Koninklijk Theater Carré",
     "plaats": "Amsterdam",
@@ -3067,6 +3075,14 @@
       },
       "datum": "2011-03-13"
     }
+  },
+  {
+    "id": "huis-oostpool-arnhem",
+    "naam": "Huis Oostpool",
+    "plaats": "Arnhem",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.oostpool.nl"
   },
   {
     "id": "musis-arnhem",
@@ -4403,14 +4419,6 @@
     "land": "NL",
     "soort": "theater",
     "website": null
-  },
-  {
-    "id": "spot-groningen",
-    "naam": "SPOT",
-    "plaats": "Groningen",
-    "land": "NL",
-    "soort": "theater",
-    "website": "https://www.spotgroningen.nl"
   },
   {
     "id": "stadsschouwburg-groningen",
@@ -6453,6 +6461,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.schouwburgconcertzaaltilburg.nl"
+  },
+  {
+    "id": "de-nieuwe-vorst-tilburg",
+    "naam": "De Nieuwe Vorst",
+    "plaats": "Tilburg",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://denieuwevorst.nl"
   },
   {
     "id": "schouwburg-tilburg",

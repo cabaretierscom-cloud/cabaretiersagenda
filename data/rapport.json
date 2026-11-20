@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-20",
   "totaal": {
-    "speeldata": 9522,
-    "komend": 8360,
-    "artiesten": 962,
-    "zalen": 745,
+    "speeldata": 9565,
+    "komend": 8403,
+    "artiesten": 963,
+    "zalen": 747,
     "plaatsen": 510,
-    "voorstellingen": 1394
+    "voorstellingen": 1395
   },
   "bronnen": [
     {
@@ -666,6 +666,14 @@
       "dubbel": 7
     },
     {
+      "bron": "oostpool",
+      "naam": "Oostpool",
+      "opgehaald": "2026-11-20",
+      "speeldata": 43,
+      "vorige": 43,
+      "dubbel": 0
+    },
+    {
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-20",
@@ -678,7 +686,7 @@
       "naam": "Via Rudolphi Producties",
       "opgehaald": "2026-11-20",
       "speeldata": 46,
-      "vorige": 0,
+      "vorige": 46,
       "dubbel": 0
     }
   ],
@@ -707,6 +715,10 @@
       {
         "id": "nazanin-taheri",
         "naam": "Nazanin Taheri"
+      },
+      {
+        "id": "hulst-en-tarenskeen",
+        "naam": "Hulst & Tarenskeen"
       }
     ],
     "zalen": [
@@ -767,16 +779,30 @@
         "website": null
       },
       {
-        "id": "spot-groningen",
-        "naam": "SPOT",
-        "plaats": "Groningen",
+        "id": "groene-engel-oss",
+        "naam": "Groene Engel",
+        "plaats": "Oss",
         "land": "NL",
         "website": null
       },
       {
-        "id": "groene-engel-oss",
-        "naam": "Groene Engel",
-        "plaats": "Oss",
+        "id": "frascati-amsterdam",
+        "naam": "Frascati",
+        "plaats": "Amsterdam",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "huis-oostpool-arnhem",
+        "naam": "Huis Oostpool",
+        "plaats": "Arnhem",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "de-nieuwe-vorst-tilburg",
+        "naam": "De Nieuwe Vorst",
+        "plaats": "Tilburg",
         "land": "NL",
         "website": null
       }
@@ -816,6 +842,13 @@
         "titel": "De Surpriseshow",
         "artiesten": [
           "nazanin-taheri"
+        ]
+      },
+      {
+        "id": "hulst-en-tarenskeen-millennial-ii-browser-history-x",
+        "titel": "Millennial II Browser History X",
+        "artiesten": [
+          "hulst-en-tarenskeen"
         ]
       }
     ]
@@ -1058,12 +1091,12 @@
     },
     {
       "datum": "2026-11-20",
-      "speeldata": 9522,
-      "komend": 8360,
-      "artiesten": 962,
-      "zalen": 745,
+      "speeldata": 9565,
+      "komend": 8403,
+      "artiesten": 963,
+      "zalen": 747,
       "plaatsen": 510,
-      "voorstellingen": 1394
+      "voorstellingen": 1395
     }
   ]
 }
