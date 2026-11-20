@@ -274,6 +274,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .poster-zaal .poster-beeld img { object-position: 50% 50%; }
 .poster-zaal .where { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
 .wall-zalen { padding-top: 20px; }
+.wall.wall-oudejaars { padding-top: 40px; } /* ruimte onder het cijferblok, ook op de telefoon */
 /* Zit het gezicht bovenin, dan komen de sterren onderaan het beeld. */
 /* De recensiesterren staan altijd onder in de foto (ook als het gezicht laag staat), bij alle affiches gelijk. */
 .poster-sterren.onder { top: auto; bottom: 18px; }

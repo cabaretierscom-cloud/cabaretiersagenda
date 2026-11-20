@@ -941,7 +941,7 @@ ${nu ? `<section class="wall" aria-labelledby="nu-title">
   </dl>
 </section>
 ${oudejaars ? `
-<section class="wall" aria-labelledby="oudejaars-title">
+<section class="wall wall-oudejaars" aria-labelledby="oudejaars-title">
   <div class="wrap wall-head">
     <h2 id="oudejaars-title">Het jaar goed afsluiten</h2>
     <p><a href="${genrePad("oudejaarsconference")}" aria-label="Alle oudejaarsconferences">Oudejaars</a></p>
