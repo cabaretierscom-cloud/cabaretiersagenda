@@ -346,7 +346,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   const ORG_ID = URL("/#organisatie"), SITE_ID = URL("/#website");
   const EVENT_TYPE = {
     cabaret: "TheaterEvent", "muzikaal-cabaret": "TheaterEvent", kleinkunst: "TheaterEvent",
-    oudejaarsconference: "TheaterEvent", komedie: "TheaterEvent",
+    oudejaarsconference: "TheaterEvent", komedie: "TheaterEvent", toneel: "TheaterEvent",
     "stand-up": "ComedyEvent", "open-mic": "ComedyEvent", improvisatie: "ComedyEvent", festival: "Festival",
   };
   const ZAAL_TYPE = { theater: "PerformingArtsTheater", comedyclub: "ComedyClub", café: "BarOrPub" };
@@ -1508,7 +1508,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   const GENRE_TEKST = {
     cabaret: "cabaret", "stand-up": "stand-up comedy", oudejaarsconference: "oudejaarsconference",
     komedie: "komedie", "open-mic": "open mics", improvisatie: "improvisatietheater",
-    festival: "festivals", "muzikaal-cabaret": "muzikaal cabaret", kleinkunst: "kleinkunst", kindervoorstellingen: "kindervoorstelling",
+    festival: "festivals", "muzikaal-cabaret": "muzikaal cabaret", kleinkunst: "kleinkunst", kindervoorstellingen: "kindervoorstelling", toneel: "toneel",
   };
   // Theaterseizoen voor titels ("2026-2027"): vanaf augustus het nieuwe seizoen.
   const SEIZOEN = (() => { const [j, m] = db.today.split("-").map(Number); return m >= 8 ? `${j}-${j + 1}` : `${j - 1}-${j}`; })();
@@ -2153,7 +2153,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       uitleg: "Onder komedie vallen komedies, blijspellen en kluchten: toneel met humor, met een verhaal en een vaste rolverdeling. Gewoon toneel en musicals staan niet in deze agenda; voorstellingen waarin de humor de hoofdrol speelt wel.",
       vragen: [
         ["Wat is het verschil tussen een komedie, een blijspel en een klucht?", "Een komedie is toneel met humor; een blijspel is een luchtige komedie met een goede afloop; een klucht draait om verwikkelingen, misverstanden en slapstick."],
-        ["Staan musicals en toneel ook in de agenda?", "Nee, alleen voorstellingen waarin humor de hoofdrol speelt: cabaret, comedy en komisch theater."],
+        ["Staan musicals en toneel ook in de agenda?", "Musicals niet. Toneel alleen als het van cabaretiers of comedians is; dat staat onder <a href=\"/agenda/toneel/\">toneel</a>. Verder alleen voorstellingen waarin humor de hoofdrol speelt: cabaret, comedy en komisch theater."],
       ],
     },
     "open-mic": {
@@ -2178,6 +2178,16 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ["Voor welke leeftijd is een voorstelling geschikt?", "Theaters geven een leeftijd op, zoals 2+, 4+ of 8+. Dat is de jongste leeftijd waarvoor de voorstelling geschikt is. Klik bij een voorstelling op <em>Tickets</em> voor de leeftijd en de speelduur op de site van het theater."],
         ["Hoe lang duurt een kindervoorstelling?", "Voorstellingen voor peuters en kleuters duren vaak 30 tot 45 minuten, voor oudere kinderen ongeveer een uur. Familievoorstellingen en musicals duren langer, vaak met een pauze."],
         ["Wanneer zijn er de meeste kinder- en familievoorstellingen?", "Vooral in het weekend, op woensdagmiddag en in de schoolvakanties, zoals de herfstvakantie, de kerstvakantie en de voorjaarsvakantie. Veel voorstellingen beginnen 's middags."],
+      ],
+    },
+    // Sinds november 2026, op verzoek van de eigenaar.
+    toneel: {
+      kop: "Toneel", meervoud: "toneelvoorstellingen", wie: "spelers", kleur: "groen",
+      titel: `Toneel ${SEIZOEN}: toneelvoorstellingen van cabaretiers en comedians`,
+      uitleg: "Onder toneel staan voorstellingen met een verhaal en een rol, gespeeld door cabaretiers en comedians: geen avond vol grappen, maar een stuk. Komedies, blijspellen en kluchten staan onder komedie.",
+      vragen: [
+        ["Welk toneel staat in deze agenda?", "Toneelvoorstellingen van cabaretiers en comedians. Het overige toneel en musicals staan niet in de agenda; daarvoor kun je bij de theaters zelf kijken."],
+        ["Wat is het verschil tussen toneel en komedie?", "Een komedie draait om de humor. Toneel kan ook serieus zijn: een verhaal met een rol, waarin de grap niet altijd voorop staat."],
       ],
     },
     improvisatie: {

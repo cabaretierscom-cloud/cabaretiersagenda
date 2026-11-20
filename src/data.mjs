@@ -26,6 +26,8 @@ export const GENRES = {
   "muzikaal-cabaret": "Muzikaal cabaret",
   kleinkunst: "Kleinkunst",
   kindervoorstellingen: "Kindervoorstellingen",
+  // Sinds november 2026, op verzoek van de eigenaar: toneel van cabaretiers en comedians (Baby Reindeer).
+  toneel: "Toneel",
 };
 // Naam van het genre bij één voorstelling (labels in de agenda, knopjes op de voorstellingspagina),
 // als die anders is dan de genrenaam: "Kindervoorstelling" in plaats van "Kindervoorstellingen".
