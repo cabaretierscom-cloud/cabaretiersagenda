@@ -1,8 +1,8 @@
 {
   "datum": "2026-11-20",
   "totaal": {
-    "speeldata": 9318,
-    "komend": 8156,
+    "speeldata": 9322,
+    "komend": 8160,
     "artiesten": 963,
     "zalen": 737,
     "plaatsen": 510,
@@ -618,6 +618,14 @@
       "dubbel": 18
     },
     {
+      "bron": "jawad",
+      "naam": "Speellijst van Jawad Es Soufi",
+      "opgehaald": "2026-11-20",
+      "speeldata": 4,
+      "vorige": 4,
+      "dubbel": 10
+    },
+    {
       "bron": "kobra",
       "naam": "Speellijsten van Kobra Theaterproducties (import)",
       "opgehaald": "2026-11-19",
@@ -630,7 +638,7 @@
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-20",
       "speeldata": 2431,
-      "vorige": 2432,
+      "vorige": 2431,
       "dubbel": 1320
     }
   ],
@@ -892,8 +900,8 @@
     },
     {
       "datum": "2026-11-20",
-      "speeldata": 9318,
-      "komend": 8156,
+      "speeldata": 9322,
+      "komend": 8160,
       "artiesten": 963,
       "zalen": 737,
       "plaatsen": 510,
