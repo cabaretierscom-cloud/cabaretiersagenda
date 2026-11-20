@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-20",
   "totaal": {
-    "speeldata": 9468,
-    "komend": 8306,
+    "speeldata": 9476,
+    "komend": 8314,
     "artiesten": 961,
-    "zalen": 741,
+    "zalen": 742,
     "plaatsen": 510,
-    "voorstellingen": 1396
+    "voorstellingen": 1393
   },
   "bronnen": [
     {
@@ -574,7 +574,7 @@
       "naam": "Al het blauw van de hemel",
       "opgehaald": "2026-11-20",
       "speeldata": 111,
-      "vorige": 0,
+      "vorige": 111,
       "dubbel": 0
     },
     {
@@ -658,6 +658,14 @@
       "dubbel": 1
     },
     {
+      "bron": "mickyoverman",
+      "naam": "Speellijst van Micky Overman",
+      "opgehaald": "2026-11-20",
+      "speeldata": 8,
+      "vorige": 0,
+      "dubbel": 7
+    },
+    {
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-20",
@@ -729,6 +737,13 @@
         "id": "maurice-zwevegem",
         "naam": "Maurice",
         "plaats": "Zwevegem",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "espace-lumen-brussel",
+        "naam": "Espace Lumen",
+        "plaats": "Brussel",
         "land": "BE",
         "website": null
       }
@@ -1003,12 +1018,12 @@
     },
     {
       "datum": "2026-11-20",
-      "speeldata": 9468,
-      "komend": 8306,
+      "speeldata": 9476,
+      "komend": 8314,
       "artiesten": 961,
-      "zalen": 741,
+      "zalen": 742,
       "plaatsen": 510,
-      "voorstellingen": 1396
+      "voorstellingen": 1393
     }
   ]
 }
