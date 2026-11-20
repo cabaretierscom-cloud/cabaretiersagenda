@@ -1,8 +1,8 @@
 {
   "datum": "2026-11-20",
   "totaal": {
-    "speeldata": 9354,
-    "komend": 8192,
+    "speeldata": 9357,
+    "komend": 8195,
     "artiesten": 959,
     "zalen": 741,
     "plaatsen": 510,
@@ -606,7 +606,7 @@
       "naam": "Friendly Fire",
       "opgehaald": "2026-11-20",
       "speeldata": 41,
-      "vorige": 0,
+      "vorige": 41,
       "dubbel": 1
     },
     {
@@ -640,6 +640,14 @@
       "speeldata": 216,
       "vorige": 216,
       "dubbel": 74
+    },
+    {
+      "bron": "lisaloeb",
+      "naam": "Speellijst van Lisa Loeb",
+      "opgehaald": "2026-11-20",
+      "speeldata": 3,
+      "vorige": 0,
+      "dubbel": 1
     },
     {
       "bron": "speellijsten",
@@ -971,8 +979,8 @@
     },
     {
       "datum": "2026-11-20",
-      "speeldata": 9354,
-      "komend": 8192,
+      "speeldata": 9357,
+      "komend": 8195,
       "artiesten": 959,
       "zalen": 741,
       "plaatsen": 510,
