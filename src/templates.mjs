@@ -345,7 +345,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   const URL = (pad) => SITE.url + pad;
   const ORG_ID = URL("/#organisatie"), SITE_ID = URL("/#website");
   const EVENT_TYPE = {
-    cabaret: "TheaterEvent", "muzikaal-cabaret": "TheaterEvent", kleinkunst: "TheaterEvent",
+    cabaret: "TheaterEvent", muzikaal: "TheaterEvent", satire: "TheaterEvent", actueel: "TheaterEvent", kleinkunst: "TheaterEvent",
     oudejaarsconference: "TheaterEvent", komedie: "TheaterEvent", toneel: "TheaterEvent",
     "stand-up": "ComedyEvent", "open-mic": "ComedyEvent", improvisatie: "ComedyEvent", festival: "Festival",
   };
@@ -1508,7 +1508,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   const GENRE_TEKST = {
     cabaret: "cabaret", "stand-up": "stand-up comedy", oudejaarsconference: "oudejaarsconference",
     komedie: "komedie", "open-mic": "open mics", improvisatie: "improvisatietheater",
-    festival: "festivals", "muzikaal-cabaret": "muzikaal cabaret", kleinkunst: "kleinkunst", kindervoorstellingen: "kindervoorstelling", toneel: "toneel",
+    festival: "festivals", muzikaal: "muzikaal cabaret", satire: "satire", actueel: "actueel cabaret", kleinkunst: "kleinkunst", kindervoorstellingen: "kindervoorstelling", toneel: "toneel",
   };
   // Theaterseizoen voor titels ("2026-2027"): vanaf augustus het nieuwe seizoen.
   const SEIZOEN = (() => { const [j, m] = db.today.split("-").map(Number); return m >= 8 ? `${j}-${j + 1}` : `${j - 1}-${j}`; })();
@@ -2178,6 +2178,32 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ["Voor welke leeftijd is een voorstelling geschikt?", "Theaters geven een leeftijd op, zoals 2+, 4+ of 8+. Dat is de jongste leeftijd waarvoor de voorstelling geschikt is. Klik bij een voorstelling op <em>Tickets</em> voor de leeftijd en de speelduur op de site van het theater."],
         ["Hoe lang duurt een kindervoorstelling?", "Voorstellingen voor peuters en kleuters duren vaak 30 tot 45 minuten, voor oudere kinderen ongeveer een uur. Familievoorstellingen en musicals duren langer, vaak met een pauze."],
         ["Wanneer zijn er de meeste kinder- en familievoorstellingen?", "Vooral in het weekend, op woensdagmiddag en in de schoolvakanties, zoals de herfstvakantie, de kerstvakantie en de voorjaarsvakantie. Veel voorstellingen beginnen 's middags."],
+      ],
+    },
+    // Sinds november 2026, op verzoek van de eigenaar; met de hand toegekend, vaak als extra genre naast cabaret.
+    muzikaal: {
+      kop: "Muzikaal cabaret", meervoud: "muzikale voorstellingen", wie: "artiesten", kleur: "lila",
+      titel: `Muzikaal cabaret ${SEIZOEN}: voorstellingen met liedjes en muziek`,
+      uitleg: "Muzikaal cabaret is cabaret waarin liedjes en muziek een grote rol spelen: de artiest zingt, speelt piano of gitaar, of staat op het podium met een band. De grap zit net zo goed in de tekst van het lied als in de conference ertussen.",
+      vragen: [
+        ["Wat is muzikaal cabaret?", "Cabaret met veel liedjes en muziek, vaak met live begeleiding. De liedjes zijn grappig, ontroerend of allebei."],
+        ["Wat is het verschil met kleinkunst?", "Bij kleinkunst staat het lied centraal; bij muzikaal cabaret is de muziek een middel voor de grap en het verhaal. De grens is vaag: veel artiesten doen allebei."],
+      ],
+    },
+    satire: {
+      kop: "Satire", meervoud: "satirische voorstellingen", wie: "cabaretiers", kleur: "rood",
+      titel: `Satire ${SEIZOEN}: satirisch cabaret in het theater`,
+      uitleg: "Satire is cabaret dat de spot drijft met macht, politiek en maatschappij. Met overdrijving, ironie en scherpe grappen houdt de cabaretier een spiegel voor aan de zaal en aan wie de dienst uitmaakt.",
+      vragen: [
+        ["Wat is satire?", "Humor die de spot drijft met macht en misstanden, vaak door ze uit te vergroten. Satire wil niet alleen laten lachen, maar ook iets laten zien."],
+      ],
+    },
+    actueel: {
+      kop: "Actueel cabaret", meervoud: "actuele voorstellingen", wie: "cabaretiers", kleur: "blauw",
+      titel: `Actueel cabaret ${SEIZOEN}: cabaret over het nieuws`,
+      uitleg: "Actueel cabaret gaat over het nieuws van nu: politiek, wat er in de wereld gebeurt en waar Nederland en België over praten. Omdat het nieuws elke dag verandert, verandert de voorstelling vaak mee.",
+      vragen: [
+        ["Wat is actueel cabaret?", "Cabaret over het nieuws van dit moment. De oudejaarsconference is het bekendste voorbeeld, maar ook andere voorstellingen zijn actueel."],
       ],
     },
     // Sinds november 2026, op verzoek van de eigenaar.

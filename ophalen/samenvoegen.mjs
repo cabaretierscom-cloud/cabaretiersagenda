@@ -690,6 +690,12 @@ for (const v of voorstellingen) {
 for (const c of correcties.genres || []) {
   const aId = artiesten.find((a) => slug(a.naam) === slug(c.artiest))?.id;
   for (const v of voorstellingen.filter((x) => aId && x.artiesten.includes(aId) && zelfdeTitel(x.titel, c.titel))) {
+    // Zonder `genre` alleen extra genres erbij, het hoofdgenre blijft (bijv. satire naast cabaret).
+    if (!c.genre) {
+      const erbij = [...new Set([...(v.ookGenres || []), ...(c.ookGenres || [])])].filter((g) => g !== v.genre).sort();
+      if (JSON.stringify(erbij) !== JSON.stringify(v.ookGenres || [])) { v.ookGenres = erbij; genreGewijzigd++; }
+      continue;
+    }
     // Met `ookGenres` liggen ook de andere genres vast (Oudejaars-extravaganza: improvisatie en cabaret).
     const ook = new Set(c.ookGenres || [...(v.ookGenres || []), v.genre]);
     ook.delete(c.genre);

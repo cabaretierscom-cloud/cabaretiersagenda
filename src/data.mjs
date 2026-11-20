@@ -23,11 +23,14 @@ export const GENRES = {
   "open-mic": "Open mic",
   improvisatie: "Improvisatie",
   festival: "Festival",
-  "muzikaal-cabaret": "Muzikaal cabaret",
   kleinkunst: "Kleinkunst",
   kindervoorstellingen: "Kindervoorstellingen",
   // Sinds november 2026, op verzoek van de eigenaar: toneel van cabaretiers en comedians (Baby Reindeer).
   toneel: "Toneel",
+  // Sinds november 2026, op verzoek van de eigenaar; met de hand toegekend (`genres` in voorstelling-correcties.json).
+  muzikaal: "Muzikaal",
+  satire: "Satire",
+  actueel: "Actueel",
 };
 // Naam van het genre bij één voorstelling (labels in de agenda, knopjes op de voorstellingspagina),
 // als die anders is dan de genrenaam: "Kindervoorstelling" in plaats van "Kindervoorstellingen".

@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Verbeteringen van impresariaten en artiesten. titels: avonden van deze artiest met een van deze titels (of zonder titel) krijgen de titel 'naar'. reprise: elke avond van deze voorstelling zonder soort is een reprise. Verwerkt in ophalen/samenvoegen.mjs. genres: deze voorstelling krijgt dit genre, wat de zalen ook zeggen (hun genre gaat naar ookGenres, of de ookGenres die erbij staan).",
+  "_uitleg": "Verbeteringen van impresariaten en artiesten. titels: avonden van deze artiest met een van deze titels (of zonder titel) krijgen de titel 'naar'. reprise: elke avond van deze voorstelling zonder soort is een reprise. Verwerkt in ophalen/samenvoegen.mjs. genres: deze voorstelling krijgt dit genre, wat de zalen ook zeggen (hun genre gaat naar ookGenres, of de ookGenres die erbij staan); zonder genre komen alleen de ookGenres erbij en blijft het hoofdgenre (Muzikaal, Satire, Actueel).",
   "titels": [
     {
       "artiest": "Cabarestafette",
