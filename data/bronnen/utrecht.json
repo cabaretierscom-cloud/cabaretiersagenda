@@ -1,7 +1,7 @@
 {
   "bron": "utrecht",
   "naam": "Stadsschouwburg Utrecht",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "stadsschouwburg-utrecht",
@@ -194,19 +194,6 @@
       "datum": "2027-03-14",
       "tijd": "20:30",
       "status": "gepland"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Ayoub"
-      ],
-      "titel": "En verbied vogels om te fluiten",
-      "genre": "cabaret",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/en-verbied-vogels-om-te-fluiten-ayoub",
-      "datum": "2026-11-19",
-      "tijd": "20:30",
-      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1468,23 +1455,6 @@
         "sterren": 4,
         "citaat": "Wie wil er nou drie uur lang naar Zomergasten kijken? Een half uur Hokjesdenker verzadigt meer.",
         "over": "'We doen wat we kunnen'"
-      }
-    ],
-    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/en-verbied-vogels-om-te-fluiten-ayoub": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "Ayoub Kharkhach lost met zijn debuutvoorstelling de hoge verwachtingen volledig in."
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Een spannende performer die met niemand in het huidige cabaretveld te vergelijken is."
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Ayoub Kharkhach maakt indruk met een ontroerend en verbindend debuut."
       }
     ],
     "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/aan-mij-zal-het-niet-liggen-marjolijn-van-kooten": [

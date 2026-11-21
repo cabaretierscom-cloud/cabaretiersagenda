@@ -2,27 +2,9 @@
   "bron": "anuar",
   "naam": "Speellijst van Anuar",
   "soort": "speellijst",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Markant",
-        "plaats": "Uden",
-        "land": "NL"
-      },
-      "artiesten": [
-        "Anuar"
-      ],
-      "titel": "Ongeduldig Geduldig",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.markantmaashorst.nl/nl/agenda/anuar-tsxd"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -55,7 +37,7 @@
       "genre": "stand-up",
       "datum": "2026-11-25",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://secure.tix4all.nl/tickets-payment/anuar---staat-ie-aan-nl-5500/ticket"
     },

@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -446,7 +446,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/pieter-derks-57549/"
     },
@@ -810,7 +810,7 @@
       "genre": "cabaret",
       "datum": "2027-01-03",
       "tijd": "19:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
     },
@@ -1194,45 +1194,6 @@
     {
       "theater": "nieuwe-luxor",
       "artiesten": [
-        "Ronald Goedemondt"
-      ],
-      "titel": "Mijn lieve achterdocht",
-      "genre": "cabaret",
-      "datum": "2027-02-11",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Ronald Goedemondt"
-      ],
-      "titel": "Mijn lieve achterdocht",
-      "genre": "cabaret",
-      "datum": "2027-04-07",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Ronald Goedemondt"
-      ],
-      "titel": "Mijn lieve achterdocht",
-      "genre": "cabaret",
-      "datum": "2027-04-22",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
         "Claudia de Breij"
       ],
       "titel": "Oudejaarsconference 2026",
@@ -1569,19 +1530,6 @@
       "bron": "https://luxortheater.nl/agenda/ratatatata-57490/"
     },
     {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Chinese Stand-Up Comedy Show"
-      ],
-      "titel": "In collaboration with Gale Comedy",
-      "genre": "cabaret",
-      "datum": "2026-12-12",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/chinese-stand-up-comedy-show-54866/"
-    },
-    {
       "theater": "oude-luxor",
       "artiesten": [
         "Aries Spears"
@@ -1749,19 +1697,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/micky-overman-58137/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Andries Tunru en Stefan Hendrikx"
-      ],
-      "titel": "De nogal hyperbijzondere Oudejaars-improvisatie-extravaganza 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-12-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/andries-tunru-en-stefan-hendrikx-58129/"
     },
     {
       "theater": "oude-luxor",
@@ -2037,6 +1972,136 @@
       "bron": "https://luxortheater.nl/agenda/101-dalmatiers-56673/"
     },
     {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-11-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://luxortheater.nl/agenda/merijn-scholten-61389/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Merijn Scholten"
+      ],
+      "titel": "Lemming",
+      "genre": "cabaret",
+      "datum": "2027-11-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://luxortheater.nl/agenda/merijn-scholten-61389/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Tis Hier Geen Hotel 3"
+      ],
+      "titel": "Hanneke Drenth en Dianne Liesker",
+      "genre": "cabaret",
+      "datum": "2026-11-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://luxortheater.nl/agenda/tis-hier-geen-hotel-3-58282/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Srefidensi Comedyshow 2026"
+      ],
+      "titel": "(geannuleerd)",
+      "genre": "cabaret",
+      "datum": "2026-11-29",
+      "tijd": "14:30",
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/srefidensi-comedyshow-58404/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Roel C. Verburg"
+      ],
+      "titel": "Slechtste Liedjes van de Straat",
+      "genre": "cabaret",
+      "datum": "2027-07-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/roel-c-verburg-61176/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Andries Tunru en Stefan Hendrikx"
+      ],
+      "titel": "De nogal hyperbijzondere Oudejaars-improvisatie-extravaganza 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/andries-tunru-en-stefan-hendrikx-58129/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn lieve achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn lieve achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-04-07",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn lieve achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Chinese Stand-Up Comedy Show"
+      ],
+      "titel": "In collaboration with Gale Comedy",
+      "genre": "cabaret",
+      "datum": "2026-12-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/chinese-stand-up-comedy-show-54866/"
+    },
+    {
       "theater": "nieuwe-luxor",
       "artiesten": [
         "Jochem Myjer"
@@ -2113,71 +2178,6 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2027-11-10",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://luxortheater.nl/agenda/merijn-scholten-61389/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Merijn Scholten"
-      ],
-      "titel": "Lemming",
-      "genre": "cabaret",
-      "datum": "2027-11-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://luxortheater.nl/agenda/merijn-scholten-61389/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Tis Hier Geen Hotel 3"
-      ],
-      "titel": "Hanneke Drenth en Dianne Liesker",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://luxortheater.nl/agenda/tis-hier-geen-hotel-3-58282/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Srefidensi Comedyshow 2026"
-      ],
-      "titel": "(geannuleerd)",
-      "genre": "cabaret",
-      "datum": "2026-11-29",
-      "tijd": "14:30",
-      "status": "geannuleerd",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/srefidensi-comedyshow-58404/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Roel C. Verburg"
-      ],
-      "titel": "Slechtste Liedjes van de Straat",
-      "genre": "cabaret",
-      "datum": "2027-07-01",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/roel-c-verburg-61176/"
     }
   ],
   "recensies": {}

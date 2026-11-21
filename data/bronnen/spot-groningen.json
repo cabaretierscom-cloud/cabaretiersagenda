@@ -1,7 +1,7 @@
 {
   "bron": "spot-groningen",
   "naam": "SPOT Groningen",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "de-oosterpoort",
@@ -58,24 +58,11 @@
       "artiesten": [
         "Groninger Studenten Cabaret Festival"
       ],
-      "titel": "Halve finale 40e GSCF",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.spotgroningen.nl/programma/groninger-studenten-cabaret-festival-23/"
-    },
-    {
-      "theater": "stadsschouwburg-groningen",
-      "artiesten": [
-        "Groninger Studenten Cabaret Festival"
-      ],
       "titel": "Finale 40e GSCF",
       "genre": "cabaret",
       "datum": "2026-11-20",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/groninger-studenten-cabaret-festival-24/"
     },
@@ -127,7 +114,7 @@
       "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/claudia-de-breij-17/"
     },

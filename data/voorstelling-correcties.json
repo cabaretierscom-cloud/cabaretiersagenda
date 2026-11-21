@@ -1,5 +1,5 @@
 {
-  "_uitleg": "Verbeteringen van impresariaten en artiesten. titels: avonden van deze artiest met een van deze titels (of zonder titel) krijgen de titel 'naar'. reprise: elke avond van deze voorstelling zonder soort is een reprise. Verwerkt in ophalen/samenvoegen.mjs.",
+  "_uitleg": "Verbeteringen van impresariaten en artiesten. titels: avonden van deze artiest met een van deze titels (of zonder titel) krijgen de titel 'naar'. reprise: elke avond van deze voorstelling zonder soort is een reprise. Verwerkt in ophalen/samenvoegen.mjs. genres: deze voorstelling krijgt dit genre, wat de zalen ook zeggen (hun genre gaat naar ookGenres, of de ookGenres die erbij staan); zonder genre komen alleen de ookGenres erbij en blijft het hoofdgenre (Muzikaal, Satire, Actueel).",
   "titels": [
     {
       "artiest": "Cabarestafette",
@@ -121,7 +121,10 @@
         "De blik op het jaar 2026 door de ogen van vrouwen!",
         "Katinka Polderman, Kiki Schippers e.v.a. | Theater Overdag",
         "Yora Rienstra e.a",
-        "Yora Rienstra e.a."
+        "Yora Rienstra e.a.",
+        "Vrouwejaars",
+        "De Vrouwejaars 2026",
+        "Met o.v.b. Yora Rienstra, Kim Schuddeboom en Marie Koet"
       ],
       "naar": "",
       "leeg": false,
@@ -293,6 +296,82 @@
       "naar": "Aai Poesje Aai Poesje",
       "leeg": false,
       "bron": "https://elfietromp.nl/speellijst/ (de voorstelling heet Aai Poesje Aai Poesje; Theater De Purmaryn zette titel en artiest omgedraaid)"
+    },
+    {
+      "artiest": "Joep van Deudekom & Rob Urgert",
+      "van": [
+        "Met Joep van Deudekom en Rob Urgert",
+        "Rob Urgert & Joep van Deudekom",
+        "Joep van Deudekom & Rob Urgert",
+        "De Grote Oudejaarskwis 2026"
+      ],
+      "naar": "De Grote Oudejaars Kwis 2026",
+      "bron": "https://www.bostheaterproducties.nl/producties/de-grote-oudejaars-kwis-2026/ (zalen zetten de titel op de plek van de artiest of de namen als titel)"
+    },
+    {
+      "artiest": "Dolf Jansen",
+      "van": [
+        "Oudejaars 2026",
+        "Oudejaarsconference 2026",
+        "Schaamteloos - Oudejaars 2026",
+        "Oudejaars 2026: Schaamteloos",
+        "Schaamteloos"
+      ],
+      "naar": "Schaamteloos",
+      "bron": "https://dolfjansen.com/schaamteloos/ (Oudejaars 2026: Schaamteloos; zalen noemen het Oudejaars 2026 of Oudejaarsconference 2026)"
+    },
+    {
+      "artiest": "Andries Tunru & Stefan Hendrikx",
+      "van": [
+        "Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere oudejaars-improvisatie-extravaganza",
+        "De nogal hyper-bijzondere Oudejaars-improvisatie-extravaganza",
+        "De nogal hyperbijzondere Oudejaarsimprovisatie-extravaganza 2026",
+        "De nogal hyperbijzondere oudejaars extravanganza",
+        "Oudejaars-extravaganza 2026",
+        "De nogal hyperbijzondere Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Amsterdamse Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Hengelose Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Groningse Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Spijkenissese Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Tilburgse Oudejaars-improvisatie-extravaganza 2026",
+        "De nogal hyperbijzondere Bossche Oudejaars-improvisatie-extravaganza 2026"
+      ],
+      "naar": "Oudejaars-extravaganza 2026",
+      "bron": "https://www.wijzijnbeperkthoudbaar.nl/ (speellijst: *Oudejaars-extravaganza 2026; de zalen zetten de plaatsnaam in de titel)"
+    },
+    {
+      "artiest": "Rundfunk",
+      "van": [
+        "Rundfunk",
+        "Tom van Kalmthout & Yannick van de Velde",
+        "Rundfunk - Wagyu",
+        "Wagyu"
+      ],
+      "naar": "Wagyu",
+      "bron": "https://www.ntk.nl/voorstelling/rundfunk-wagyu (de tournee 2027 is Wagyu; Kunstlinie en Zaantheater noemen de groep of de spelers als titel)"
+    },
+    {
+      "artiest": "Micky Overman",
+      "van": [
+        "Micky Overman Tour 2027",
+        "Netherlands 2027",
+        "Theatertour",
+        "Micky Overman",
+        "Don't Threaten Me With A Good Time",
+        "Don’t Threaten Me With A Good Time"
+      ],
+      "naar": "Don't Threaten Me With A Good Time",
+      "bron": "https://www.mickyoverman.com/ (tournee 2027: Don't Threaten Me With A Good Time; zalen noemen het Theatertour, Tour 2027 of Netherlands 2027)"
+    },
+    {
+      "artiest": "Louise Korthals",
+      "van": [
+        "In stukken",
+        "Korthals in Stukken"
+      ],
+      "naar": "Korthals in stukken",
+      "bron": "https://www.louisekorthals.nl/#tickets (de voorstelling heet Korthals in stukken)"
     }
   ],
   "reprise": [
@@ -330,6 +409,116 @@
       "artiest": "Patrick Laureij",
       "titel": "Kintsugi",
       "bron": "Bunker Theaterzaken (mail Annet de Ruiter, november 2026)"
+    },
+    {
+      "artiest": "Karin Bloemen",
+      "titel": "Renaissance 2.0",
+      "bron": "https://labloemen.nl/renaissance-2-0-reprise/ (Renaissance 2.0 'Reprise')"
+    }
+  ],
+  "genres": [
+    {
+      "artiest": "Sjaak Bral",
+      "titel": "Vaarwel 2026",
+      "genre": "oudejaarsconference",
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): Vaarwel 2026 is een oudejaarsconference"
+    },
+    {
+      "artiest": "Joep van Deudekom & Rob Urgert",
+      "titel": "De Grote Oudejaars Kwis 2026",
+      "genre": "oudejaarsconference",
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): De Grote Oudejaars Kwis is een oudejaarsconference"
+    },
+    {
+      "artiest": "Dolf Jansen",
+      "titel": "Schaamteloos",
+      "genre": "oudejaarsconference",
+      "bron": "https://dolfjansen.com/schaamteloos/ (Oudejaars 2026) en eigenaar van Cabaretiers.com, november 2026"
+    },
+    {
+      "artiest": "Vrouwejaars 2026",
+      "titel": "",
+      "genre": "oudejaarsconference",
+      "bron": "https://www.kobratheater.nl/vrouwejaars/ (een fris alternatief voor de traditionele oudejaarsconference) en eigenaar van Cabaretiers.com, november 2026"
+    },
+    {
+      "artiest": "Andries Tunru & Stefan Hendrikx",
+      "titel": "Oudejaars-extravaganza 2026",
+      "genre": "oudejaarsconference",
+      "ookGenres": [
+        "improvisatie",
+        "cabaret"
+      ],
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): oudejaars, improvisatie en cabaret"
+    },
+    {
+      "artiest": "Thijs van de Meeberg",
+      "titel": "Baby Reindeer",
+      "genre": "toneel",
+      "ookGenres": [],
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): Baby Reindeer is toneel, zonder ander genre"
+    },
+    {
+      "artiest": "Nazanin Taheri",
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "ookGenres": [],
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): De Surpriseshow is toneel"
+    },
+    {
+      "artiest": "Hulst & Tarenskeen",
+      "titel": "Millennial II Browser History X",
+      "genre": "toneel",
+      "ookGenres": [],
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): Millennial II Browser History X is toneel"
+    },
+    {
+      "artiest": "Alex Agnew",
+      "titel": "Stand-Up set",
+      "genre": "stand-up",
+      "ookGenres": [],
+      "bron": "https://alexagnew.be/tour-data/ (Comedy: Stand-Up set)"
+    },
+    {
+      "artiest": "Bettina Holwerda",
+      "titel": "Laat Maar",
+      "genre": "muzikaal",
+      "ookGenres": [
+        "cabaret"
+      ],
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): Laat Maar is muzikaal (met live band, friendlyfire.nl)"
+    },
+    {
+      "artiest": "Flip Noorman",
+      "titel": "Bonobo",
+      "ookGenres": [
+        "muzikaal"
+      ],
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): Bonobo is ook muzikaal (theatraal concert, flipnoorman.nl)"
+    },
+    {
+      "artiest": "Louise Korthals",
+      "titel": "Korthals in stukken",
+      "ookGenres": [
+        "muzikaal"
+      ],
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): Korthals in stukken is cabaret en ook muzikaal"
+    },
+    {
+      "artiest": "Buddy Vedder",
+      "titel": "Al het blauw van de hemel",
+      "genre": "toneel",
+      "ookGenres": [
+        "muzikaal"
+      ],
+      "bron": "Eigenaar van Cabaretiers.com (november 2026): toneel en muzikaal"
+    },
+    {
+      "artiest": "Micky Overman",
+      "titel": "Don't Threaten Me With A Good Time",
+      "genre": "stand-up",
+      "ookGenres": [],
+      "bron": "https://www.mickyoverman.com/ (Engelstalige stand-up comedy, wereldtournee)"
     }
   ]
 }

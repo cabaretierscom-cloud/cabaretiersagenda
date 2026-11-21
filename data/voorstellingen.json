@@ -167,10 +167,7 @@
     "artiesten": [
       "alex-agnew"
     ],
-    "genre": "stand-up",
-    "ookGenres": [
-      "cabaret"
-    ]
+    "genre": "stand-up"
   },
   {
     "id": "alex-agnew-stand-up-set",
@@ -178,7 +175,7 @@
     "artiesten": [
       "alex-agnew"
     ],
-    "genre": "cabaret"
+    "genre": "stand-up"
   },
   {
     "id": "alex-ploeg-emilio-guzman-dubbel",
@@ -482,7 +479,10 @@
       "nathalie-baartman",
       "thijs-kemperink"
     ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel"
+    ]
   },
   {
     "id": "andrew-ryan-andrew-ryan",
@@ -523,19 +523,16 @@
   },
   {
     "id": "andries-tunru-en-stefan-hendrikx-de-nogal-hyperbijzondere-groningse-oudejaars-im",
-    "titel": "De nogal hyperbijzondere Oudejaars-improvisatie-extravaganza 2026",
+    "titel": "Oudejaars-extravaganza 2026",
     "artiesten": [
       "andries-tunru-en-stefan-hendrikx"
     ],
-    "genre": "oudejaarsconference"
-  },
-  {
-    "id": "andries-tunru-en-stefan-hendrikx-de-nogal-hyperbijzondere-oudejaars-extravanganz",
-    "titel": "De nogal hyperbijzondere oudejaars extravanganza",
-    "artiesten": [
-      "andries-tunru-en-stefan-hendrikx"
-    ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel",
+      "cabaret",
+      "improvisatie"
+    ]
   },
   {
     "id": "andries-tunru-ravot",
@@ -781,14 +778,6 @@
     "genre": "stand-up"
   },
   {
-    "id": "artemis-en-theater-basel-veel-te-eng-voor-kleuters",
-    "titel": "Veel te eng voor kleuters",
-    "artiesten": [
-      "artemis-en-theater-basel"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
     "id": "artur-chaparyan-comedy-cafe-amsterdam",
     "titel": "Artur Chaparyan",
     "artiesten": [],
@@ -828,8 +817,8 @@
       {
         "medium": "de Volkskrant",
         "sterren": 4,
-        "citaat": "Ayoub Kharkhach lost met zijn debuutvoorstelling de hoge verwachtingen volledig in.",
-        "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/en-verbied-vogels-om-te-fluiten-ayoub"
+        "citaat": "Cabaretier Ayoub Kharkhach lost met zijn debuutvoorstelling de hoge verwachtingen volledig in.",
+        "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/en-verbied-de-vogels-om-te-fluiten-ayoub"
       },
       {
         "medium": "Het Parool",
@@ -1075,7 +1064,10 @@
     "artiesten": [
       "bettina-holwerda"
     ],
-    "genre": "cabaret"
+    "genre": "muzikaal",
+    "ookGenres": [
+      "cabaret"
+    ]
   },
   {
     "id": "between-us-the-ruggeds-nl",
@@ -1361,7 +1353,10 @@
     "artiesten": [
       "boys-won-t-be-boys"
     ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel"
+    ]
   },
   {
     "id": "brad-upton-live-southend-comedy-club",
@@ -1399,7 +1394,7 @@
       {
         "medium": "de Volkskrant",
         "sterren": null,
-        "citaat": "In de pers + &minus; “Lekker abstract, absurd en brutaal.",
+        "citaat": "Lekker abstract, absurd en brutaal.",
         "bron": "https://stadsgehoorzaal.nl/programma/bros"
       }
     ]
@@ -1497,6 +1492,18 @@
     ]
   },
   {
+    "id": "buddy-vedder-shelley-bos-al-het-blauw-van-de-hemel",
+    "titel": "Al het blauw van de hemel",
+    "artiesten": [
+      "buddy-vedder",
+      "shelley-bos"
+    ],
+    "genre": "toneel",
+    "ookGenres": [
+      "muzikaal"
+    ]
+  },
+  {
     "id": "bugra-gedik-gelukkig-geboren",
     "titel": "Ğelukkig Ğeboren",
     "artiesten": [
@@ -1535,13 +1542,6 @@
       "burger-koekoek"
     ],
     "genre": "cabaret"
-  },
-  {
-    "id": "buurman-en-buurman-bouwen-een-feest-leidse-schouwburg",
-    "titel": "Buurman & Buurman bouwen een feest",
-    "artiesten": [],
-    "genre": "kindervoorstellingen",
-    "theater": "leidse-schouwburg"
   },
   {
     "id": "buurman-en-buurman-bouwen-een-feestje-castellum",
@@ -1846,7 +1846,10 @@
     "artiesten": [
       "claudia-de-breij"
     ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel"
+    ]
   },
   {
     "id": "club-haug-regulars-try-out-comedy-club-haug-rotterdam",
@@ -2014,7 +2017,10 @@
     "artiesten": [
       "comedy-festival-limburg"
     ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel"
+    ]
   },
   {
     "id": "comedy-marathon-2027-capitole-gent",
@@ -2512,14 +2518,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "de-cabaret-club-volgende",
-    "titel": "Volgende »",
-    "artiesten": [
-      "de-cabaret-club"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "de-cabaretclub-theater-het-speelhuis",
     "titel": "De Cabaretclub",
     "artiesten": [],
@@ -2629,22 +2627,6 @@
       "de-grote-haay"
     ],
     "genre": "kindervoorstellingen"
-  },
-  {
-    "id": "de-grote-oudejaars-kwis-2026-met-joep-van-deudekom-en-rob-urgert",
-    "titel": "Met Joep van Deudekom en Rob Urgert",
-    "artiesten": [
-      "de-grote-oudejaars-kwis-2026"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "de-grote-oudejaars-kwis-2026-rob-urgert-en-joep-van-deudekom",
-    "titel": "Rob Urgert & Joep van Deudekom",
-    "artiesten": [
-      "de-grote-oudejaars-kwis-2026"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "de-horde-het-huis-dat-stopte-met-staan",
@@ -2845,14 +2827,6 @@
     "titel": "Peuter Kleuter Pret",
     "artiesten": [
       "de-musical-zonder-billen-4"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
-    "id": "de-nationale-opera-opera-zuid-en-nederlandse-reisopera-atman",
-    "titel": "Atman!",
-    "artiesten": [
-      "de-nationale-opera-opera-zuid-en-nederlandse-reisopera"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -3196,14 +3170,6 @@
     "theater": "cc-de-schakel"
   },
   {
-    "id": "dikkie-dik-en-dirk-scheele-peuter-kleuter-pret",
-    "titel": "Peuter Kleuter Pret",
-    "artiesten": [
-      "dikkie-dik-en-dirk-scheele"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
     "id": "dikkie-dik-en-dirk-scheele-schouwburg-amstelveen",
     "titel": "Dikkie Dik & Dirk Scheele",
     "artiesten": [],
@@ -3313,27 +3279,23 @@
   },
   {
     "id": "dolf-jansen-oudejaars-2026",
-    "titel": "Oudejaars 2026",
-    "artiesten": [
-      "dolf-jansen"
-    ],
-    "genre": "oudejaarsconference"
-  },
-  {
-    "id": "dolf-jansen-oudejaarsconference-2026",
-    "titel": "Oudejaarsconference 2026",
-    "artiesten": [
-      "dolf-jansen"
-    ],
-    "genre": "oudejaarsconference"
-  },
-  {
-    "id": "dolf-jansen-schaamteloos",
     "titel": "Schaamteloos",
     "artiesten": [
       "dolf-jansen"
     ],
-    "genre": "cabaret"
+    "genre": "oudejaarsconference",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Dolf Jansen geeft de zaal altijd het gevoel dat er iets unieks gebeurt",
+        "bron": "https://www.theaterdeveste.nl/programma/oudejaars-2026-schaamteloos-fhtv"
+      }
+    ],
+    "ookGenres": [
+      "actueel",
+      "cabaret"
+    ]
   },
   {
     "id": "dolfje-weerwolfje-cc-de-schakel",
@@ -3858,14 +3820,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "evi-hanssen-bloedheet-en-tranen",
-    "titel": "Bloedheet & tranen",
-    "artiesten": [
-      "evi-hanssen"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "evita-stadsschouwburg-antwerpen",
     "titel": "Evita",
     "artiesten": [],
@@ -4065,7 +4019,10 @@
     "artiesten": [
       "flip-noorman"
     ],
-    "genre": "kleinkunst"
+    "genre": "kleinkunst",
+    "ookGenres": [
+      "muzikaal"
+    ]
   },
   {
     "id": "floortje-in-d-r-deretuin-goud-verteltheater",
@@ -4290,7 +4247,10 @@
     "artiesten": [
       "gerrie-smits"
     ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel"
+    ]
   },
   {
     "id": "gery-la-boule-ni-zievere-speile",
@@ -4544,7 +4504,10 @@
     "artiesten": [
       "guido-weijers"
     ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel"
+    ]
   },
   {
     "id": "guido-weijers-oudejaarsconference-xl",
@@ -4560,7 +4523,10 @@
     "artiesten": [
       "guido-weijers"
     ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel"
+    ]
   },
   {
     "id": "gunter-lamoot-protpourri",
@@ -5198,6 +5164,14 @@
     "theater": "theater-de-kampanje"
   },
   {
+    "id": "hulst-en-tarenskeen-millennial-ii-browser-history-x",
+    "titel": "Millennial II Browser History X",
+    "artiesten": [
+      "hulst-en-tarenskeen"
+    ],
+    "genre": "toneel"
+  },
+  {
     "id": "huub-cooijmans-de-betoverde-klas",
     "titel": "De betoverde klas",
     "artiesten": [
@@ -5732,7 +5706,11 @@
     "artiesten": [
       "joep-van-deudekom-en-rob-urgert"
     ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel",
+      "cabaret"
+    ]
   },
   {
     "id": "joep-van-deudekom-en-rob-urgert-de-verbinders",
@@ -5741,14 +5719,6 @@
       "joep-van-deudekom-en-rob-urgert"
     ],
     "genre": "stand-up"
-  },
-  {
-    "id": "joep-van-deudekom-en-rob-urgert-joep-van-deudekom-en-rob-urgert",
-    "titel": "Joep van Deudekom & Rob Urgert",
-    "artiesten": [
-      "joep-van-deudekom-en-rob-urgert"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "joep-vermolen-so-this-was-nice-nou-was-leuk",
@@ -5973,7 +5943,10 @@
     "artiesten": [
       "juliet"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "ookGenres": [
+      "kleinkunst"
+    ]
   },
   {
     "id": "julika-marijn-julika-marijn",
@@ -6244,7 +6217,10 @@
     "artiesten": [
       "kiki-schippers"
     ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel"
+    ]
   },
   {
     "id": "kiki-schippers-nieuw-programma",
@@ -7007,7 +6983,7 @@
   },
   {
     "id": "louise-korthals-in-stukken",
-    "titel": "In stukken",
+    "titel": "Korthals in stukken",
     "artiesten": [
       "louise-korthals"
     ],
@@ -7037,6 +7013,9 @@
         "citaat": "Hoge dosis energie, zelfspot, maatschappijkritische observaties en gevoel voor mooie cabaretliedjes.",
         "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/louise-korthals-korthals-in-stukken/"
       }
+    ],
+    "ookGenres": [
+      "muzikaal"
     ]
   },
   {
@@ -7203,14 +7182,6 @@
     "titel": "Pops of the Top",
     "artiesten": [
       "maas-theater-en-dans"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
-    "id": "maas-theater-en-dans-wunderbaum-en-nou-gaan-we-even-helemaal-uit-onze-plaat-een",
-    "titel": "EN NOU GAAN WE EVEN HELEMAAL UIT ONZE PLAAT (een topshow)",
-    "artiesten": [
-      "maas-theater-en-dans-wunderbaum"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -7776,34 +7747,7 @@
     "artiesten": [
       "micky-overman"
     ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "micky-overman-micky-overman-tour-2027",
-    "titel": "Micky Overman Tour 2027",
-    "artiesten": [
-      "micky-overman"
-    ],
-    "genre": "stand-up",
-    "ookGenres": [
-      "cabaret"
-    ]
-  },
-  {
-    "id": "micky-overman-netherlands-2027",
-    "titel": "Netherlands 2027",
-    "artiesten": [
-      "micky-overman"
-    ],
     "genre": "stand-up"
-  },
-  {
-    "id": "micky-overman-theatertour",
-    "titel": "Theatertour",
-    "artiesten": [
-      "micky-overman"
-    ],
-    "genre": "cabaret"
   },
   {
     "id": "mijnmijnmijn-coupedeboule-schouwburg-tilburg",
@@ -8164,6 +8108,14 @@
     "theater": "schouwburg-de-lawei"
   },
   {
+    "id": "nazanin-taheri-de-surpriseshow",
+    "titel": "De Surpriseshow",
+    "artiesten": [
+      "nazanin-taheri"
+    ],
+    "genre": "toneel"
+  },
+  {
     "id": "nederlands-studentenkampioenschap-improvisatie-comedy-finale-2026",
     "titel": "Finale 2026",
     "artiesten": [
@@ -8436,6 +8388,14 @@
       "onias-landveld"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "onur-gokcek-onur-gokcek",
+    "titel": "Onur Gökçek",
+    "artiesten": [
+      "onur-gokcek"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "op-naar-pakjesavond-wegens-succes-extra-voorstelling-bijgeboekt",
@@ -8820,6 +8780,14 @@
     "theater": "stadsschouwburg-nijmegen"
   },
   {
+    "id": "pettson-en-findus-filmpje-pakken-en-pannenkoek-versieren",
+    "titel": "Filmpje pakken en pannenkoek versieren!",
+    "artiesten": [
+      "pettson-en-findus"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "peuter-en-kleuterconcert-krulmuziek-neus",
     "titel": "Krulmuziek | NEUS!",
     "artiesten": [
@@ -9199,6 +9167,14 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "prentenboekjesfestival-anansi-de-spin-viert-feest-3-7jr",
+    "titel": "Anansi de spin viert feest! 3-7jr",
+    "artiesten": [
+      "prentenboekjesfestival"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "prentenboekjesfestival-de-gruffalo",
     "titel": "De Gruffalo",
     "artiesten": [
@@ -9550,14 +9526,6 @@
     "genre": "cabaret"
   },
   {
-    "id": "rob-urgert-en-joep-van-deudekom-de-grote-oudejaars-kwis-2026",
-    "titel": "De Grote Oudejaars Kwis 2026",
-    "artiesten": [
-      "rob-urgert-en-joep-van-deudekom"
-    ],
-    "genre": "oudejaarsconference"
-  },
-  {
     "id": "robert-derksen-op-zoek-naar-mij-de-kargadoor-utrecht",
     "titel": "Robert Derksen - Op Zoek Naar Mij",
     "artiesten": [],
@@ -9857,15 +9825,6 @@
     "genre": "stand-up"
   },
   {
-    "id": "roue-verveer-peter-van-ewijk-dubbelcabaret",
-    "titel": "Dubbelcabaret",
-    "artiesten": [
-      "roue-verveer",
-      "peter-van-ewijk"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "roue-verveer-vanzelfsprekend",
     "titel": "Vanzelfsprekend",
     "artiesten": [
@@ -9878,22 +9837,6 @@
   },
   {
     "id": "rundfunk-rundfunk",
-    "titel": "Rundfunk",
-    "artiesten": [
-      "rundfunk"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "rundfunk-tom-van-kalmthout-en-yannick-van-de-velde",
-    "titel": "Tom van Kalmthout & Yannick van de Velde",
-    "artiesten": [
-      "rundfunk"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "rundfunk-wagyu",
     "titel": "Wagyu",
     "artiesten": [
       "rundfunk"
@@ -10133,7 +10076,15 @@
     "artiesten": [
       "selma-visscher"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Selma durft heel klein te zijn op haar podium. Vooral in haar liedjes laat ze haar kwetsbare kantjes horen",
+        "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/selma-visscher/"
+      }
+    ]
   },
   {
     "id": "sem-konijn-populisme-de-musical",
@@ -10338,7 +10289,11 @@
     "artiesten": [
       "sjaak-bral"
     ],
-    "genre": "cabaret"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel",
+      "cabaret"
+    ]
   },
   {
     "id": "sjoerd-janssen-sjoerd-janssen",
@@ -11255,14 +11210,6 @@
     "genre": "kindervoorstellingen"
   },
   {
-    "id": "theater-terra-peuter-kleuter-pret-kikker-is-kikker",
-    "titel": "Kikker is Kikker",
-    "artiesten": [
-      "theater-terra-peuter-kleuter-pret"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
     "id": "theater-terra-pippi-en-de-piraten",
     "titel": "Pippi en de piraten",
     "artiesten": [
@@ -11414,10 +11361,7 @@
     "artiesten": [
       "thijs-van-de-meeberg"
     ],
-    "genre": "cabaret",
-    "ookGenres": [
-      "komedie"
-    ],
+    "genre": "toneel",
     "recensies": [
       {
         "medium": "De Telegraaf",
@@ -11583,14 +11527,6 @@
     "titel": "Femme Vitaal",
     "artiesten": [
       "tineke-schouten"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "tip-van-de-lindenberg-vieren",
-    "titel": "Vieren",
-    "artiesten": [
-      "tip-van-de-lindenberg"
     ],
     "genre": "cabaret"
   },
@@ -11789,9 +11725,10 @@
   {
     "id": "uit-het-donker-vii-de-warande-turnhout",
     "titel": "Uit het donker vii",
-    "artiesten": [],
-    "genre": "kindervoorstellingen",
-    "theater": "de-warande-turnhout"
+    "artiesten": [
+      "uit-het-donker"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "urbanus-non-stop",
@@ -11949,14 +11886,6 @@
     "theater": "theater-lampegiet"
   },
   {
-    "id": "veldeke-theater-aajdjaorscabberet-eve-oonder-us",
-    "titel": "Aajdjaorscabberèt: Eve oonder us",
-    "artiesten": [
-      "veldeke-theater"
-    ],
-    "genre": "cabaret"
-  },
-  {
     "id": "veldhuis-en-kemper-nieuw-programma",
     "titel": "Nieuw programma",
     "artiesten": [
@@ -12101,15 +12030,11 @@
     "artiesten": [
       "vrouwejaars-2026"
     ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "vrouwejaars-2026-met-o-v-b-yora-rienstra-kim-schuddeboom-en-marie-koet",
-    "titel": "Met o.v.b. Yora Rienstra, Kim Schuddeboom en Marie Koet",
-    "artiesten": [
-      "vrouwejaars-2026"
-    ],
-    "genre": "cabaret"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel",
+      "cabaret"
+    ]
   },
   {
     "id": "vuile-huichelaar-ik-zit-hier-heel-alleen-kerstfeest-te-vieren-2",
@@ -12292,7 +12217,10 @@
     "artiesten": [
       "wilko-terwijn"
     ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel"
+    ]
   },
   {
     "id": "william-boeva-drift",
@@ -12519,7 +12447,10 @@
     "artiesten": [
       "yannick-noben"
     ],
-    "genre": "oudejaarsconference"
+    "genre": "oudejaarsconference",
+    "ookGenres": [
+      "actueel"
+    ]
   },
   {
     "id": "yannick-noben-geef-acht-2",

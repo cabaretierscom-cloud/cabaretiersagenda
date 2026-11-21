@@ -98,13 +98,17 @@ function rijBlokken(html, vandaag, aantal) {
     if (n < aantal * 0.8 || n > aantal * 1.6) continue;
     const [tag, klasse] = k.split("|");
     const begin = klasse ? new RegExp(`<${tag}\\b[^>]*?\\bclass=["']${klasse.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}["'][^>]*>`, "gi") : new RegExp(`<${tag}[\\s>]`, "gi");
-    const delen = html.split(begin).slice(1);
+    // Bij een kale tag (<tr class="row-2 odd">) staat de rest van de openingstag nog vooraan: weg ermee.
+    const delen = html.split(begin).slice(1).map((d) => (klasse ? d : d.replace(/^[^<>]*>/, "")));
     if (!delen.length) continue;
     const lengte = delen.slice(0, -1).reduce((a, d) => a + d.length, 0) / Math.max(1, delen.length - 1) || 3000;
     const blokken = delen.map((d, i) => (i === delen.length - 1 ? d.slice(0, lengte * 1.5) : d));
     const goed = blokken.filter((b) => zoekDatums(tokens(b).filter((x) => x.t).map((x) => x.t), vandaag).length === 1).length;
-    // Bij gelijke stand het kleinste blok (de binnenste klasse).
-    if (!beste || goed > beste.goed || (goed === beste.goed && lengte < beste.lengte)) beste = { goed, blokken, lengte };
+    // Bij gelijke stand een hele rij (<tr>, <li>, <article>): anders kan een blok vanaf de tweede cel tot en met
+    // de datum van de volgende rij lopen (Annick Boer: elke zaal kreeg de datum van de rij eronder). Daarna het
+    // kleinste blok (de binnenste klasse).
+    const rij = ["tr", "li", "article"].includes(tag.toLowerCase()) ? 1 : 0;
+    if (!beste || goed > beste.goed || (goed === beste.goed && (rij > beste.rij || (rij === beste.rij && lengte < beste.lengte)))) beste = { goed, blokken, lengte, rij };
   }
   return beste && beste.goed >= aantal * 0.7 ? beste.blokken : null;
 }

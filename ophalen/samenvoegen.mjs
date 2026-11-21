@@ -136,8 +136,9 @@ function zoekTheaterZelf(t) {
   if (opNaam) return opNaam;
   // "Stadsschouwburg" en er is één schouwburg in die plaats.
   if (/schouwburg/i.test(t.naam)) { const sb = kandidaten.filter((x) => /schouwburg/i.test(x.naam)); if (sb.length === 1) return sb[0]; }
-  // "Schouwburg" of "Stadsschouwburg" zonder meer, en er is maar één zaal in die plaats.
-  if (!k.length && kandidaten.length === 1) return kandidaten[0];
+  // "Schouwburg" of "Stadsschouwburg" zonder meer, en er is maar één zaal in die plaats. Niet als die zaal geen
+  // schouwburg is: "Deventer Schouwburg" is niet Mimik, de enige zaal die we in Deventer kenden.
+  if (!k.length && kandidaten.length === 1 && !(/schouwburg/i.test(t.naam) && !/schouwburg/i.test(kandidaten[0].naam))) return kandidaten[0];
   let naam = t.naam.replace(/\s+/g, " ").trim();
   // "CC", "Stadsschouwburg" of "Cultuurhuis" zegt op de site weinig: dan de plaats erachter.
   if (!k.length && !slug(naam).includes(slug(plaats))) naam = `${naam.replace(/^(cc|gc)$/i, (x) => x.toUpperCase())} ${plaats}`;
@@ -241,7 +242,8 @@ function opgeschoondeArtiesten(namen) {
   const uit = [];
   for (const ruw of namen) {
     // "Kobra theaterproducties | Thijs van de Meeberg": de producent ervoor valt weg, de artiest blijft.
-    let n = netteNaam(String(ruw).trim().replace(/^[^|]*\b(theater)?producties?\s*\|\s*(?=\S)/i, ""))
+    // "TIP van de Lindenberg: Grof Geschud" (Stadsschouwburg Nijmegen): een reeks vooraan, de artiest erachter.
+    let n = netteNaam(String(ruw).trim().replace(/^[^|]*\b(theater)?producties?\s*\|\s*(?=\S)/i, "").replace(/^tip van de lindenberg\s*:\s*/i, ""))
       .replace(/\s*[(\[]\s*(reprise|try[ -]?out|premi[eè]re|derni[eè]re|herneming)\s*[)\]]\s*$/i, "")
       .replace(/\s*:\s+.*$|\s+[-–|]\s+.*$/, "")
       .replace(/,?\s+e\.?\s?a\.?$/i, "")
@@ -681,6 +683,38 @@ for (const v of voorstellingen) {
     if (ook.length) v.ookGenres = ook; else delete v.ookGenres;
   }
   if (!v.artiesten.length && !theaterOpId.has(v.theater)) v.theater = speeldata.find((s) => s.voorstelling === v.id)?.theater;
+}
+
+// 2d-2. Vaste genres (voorstelling-correcties.json, `genres`): een voorstelling die de zalen anders noemen dan
+// de artiest ("Vaarwel 2026" van Sjaak Bral is een oudejaarsconference, de zalen zeggen cabaret). Het genre van de
+// zalen blijft dan bij ookGenres.
+for (const c of correcties.genres || []) {
+  const aId = artiesten.find((a) => slug(a.naam) === slug(c.artiest))?.id;
+  for (const v of voorstellingen.filter((x) => aId && x.artiesten.includes(aId) && zelfdeTitel(x.titel, c.titel))) {
+    // Zonder `genre` alleen extra genres erbij, het hoofdgenre blijft (bijv. satire naast cabaret).
+    if (!c.genre) {
+      const erbij = [...new Set([...(v.ookGenres || []), ...(c.ookGenres || [])])].filter((g) => g !== v.genre).sort();
+      if (JSON.stringify(erbij) !== JSON.stringify(v.ookGenres || [])) { v.ookGenres = erbij; genreGewijzigd++; }
+      continue;
+    }
+    // Met `ookGenres` liggen ook de andere genres vast (Oudejaars-extravaganza: improvisatie en cabaret).
+    const ook = new Set(c.ookGenres || [...(v.ookGenres || []), v.genre]);
+    ook.delete(c.genre);
+    const nieuw = ook.size ? [...ook].sort() : undefined;
+    if (v.genre === c.genre && JSON.stringify(v.ookGenres) === JSON.stringify(nieuw)) continue;
+    v.genre = c.genre;
+    if (nieuw) v.ookGenres = nieuw; else delete v.ookGenres;
+    genreGewijzigd++;
+  }
+}
+
+// 2d-3. Elke oudejaarsconference is ook actueel cabaret (verzoek van de eigenaar, november 2026), ook in latere seizoenen.
+for (const v of voorstellingen) {
+  const genres = [v.genre, ...(v.ookGenres || [])];
+  if (genres.includes("oudejaarsconference") && !genres.includes("actueel")) {
+    v.ookGenres = [...(v.ookGenres || []), "actueel"].sort();
+    genreGewijzigd++;
+  }
 }
 
 // 2e. Tournees die in hun geheel een reprise zijn (voorstelling-correcties.json): elke avond zonder soort is een reprise.

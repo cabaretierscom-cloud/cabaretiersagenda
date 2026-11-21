@@ -1,0 +1,838 @@
+{
+  "bron": "viarudolphi",
+  "naam": "Via Rudolphi Producties",
+  "soort": "speellijst",
+  "opgehaald": "2026-11-20",
+  "theaters": [],
+  "speeldata": [
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC Amstel",
+        "plaats": "Amsterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://ccamstel.nl/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Het Nationale Theater",
+        "plaats": "Den Haag",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.hnt.nl/nl/voorstellingen/de-surpriseshow-jx77"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Het Nationale Theater",
+        "plaats": "Den Haag",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-09",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://www.hnt.nl/nl/voorstellingen/de-surpriseshow-jx77"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Het Klooster",
+        "plaats": "Woerden",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kloosterwoerden.nl/voorstelling/nazanin-taheri-breek-de-week/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Groene Engel",
+        "plaats": "Oss",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.groene-engel.nl/programma/de-surpriseshow-nazenin-taheri-en-george-tobal/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Podium Mozaiek",
+        "plaats": "Amsterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.podiummozaiek.nl/programma/details/tm-11913-afb1663a/de-surpriseshow"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Blauwe Kei",
+        "plaats": "Veghel",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.blauwekei.nl/agenda/de-surpriseshow-8zqf"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Orpheus",
+        "plaats": "Apeldoorn",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/de-surpriseshow-s357"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Zwolse Theaters",
+        "plaats": "Zwolle",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/de-surpriseshow"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Walhalla",
+        "plaats": "Rotterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-surpriseshow-nazanin-taheri-via-rudolphi-producties-tobal/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Poort",
+        "plaats": "Sneek",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-24",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://ontdekpoort.nl/programma/3059/nazanin-taheri/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Hanzehof",
+        "plaats": "Zutphen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hanzehof.nl/nl/voorstelling/de-surpriseshow/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Podium Hoge Woerd",
+        "plaats": "Utrecht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.podiumhogewoerd.nl/agenda/de-surpriseshow"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Isala Theater",
+        "plaats": "Capelle aan den IJssel",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.isalatheater.nl/agenda/tobal-de-surpriseshow-dtkk"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater City of Wesopa",
+        "plaats": "Weesp",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-01-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://wesopa.nl/city/agenda/?TwwAction=TicketShopActivityDetail&TwwActivityID=267424"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Chassé Theater",
+        "plaats": "Breda",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-02-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.chasse.nl/nl/programma/de-surpriseshow-l98w"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Lawei",
+        "plaats": "Drachten",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-02-03",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/storm-nazanin-taheri-1129"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Zaantheater",
+        "plaats": "Zaandam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/de-surpriseshow/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "DE KOM",
+        "plaats": "Nieuwegein",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-02-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekom.nl/agenda/de-surpriseshow-skm9"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schuur",
+        "plaats": "Haarlem",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schuur.nl/theater/surpriseshow"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Het Kruispunt",
+        "plaats": "Barendrecht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-02-13",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterhetkruispunt.nl/agenda/nazanin-taheri-ncv7"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsgehoorzaal Vlaardingen",
+        "plaats": "Vlaardingen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-02-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/de-surpriseshow"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Junushoff",
+        "plaats": "Wageningen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-02-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.junushoff.nl/programma/de-surpriseshow-qg2d"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsschouwburg de Harmonie",
+        "plaats": "Leeuwarden",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-02-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://harmonie.nl/agenda/de-surpriseshow/52985"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Musis & Stadstheater Arnhem",
+        "plaats": "Arnhem",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-02-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.musisenstadstheater.nl/nl/agenda/nazanin-taheri-de-surpriseshow/10059"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Kunstmin",
+        "plaats": "Dordrecht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-02-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/via-rudolphi-producties-tobal-nazanin-taheri-de-surpriseshow/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Toon Hermans Theater",
+        "plaats": "Sittard",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-02-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/de-surpriseshow/27-02-2027-20-30"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Verkadefabriek",
+        "plaats": "'s-Hertogenbosch",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.verkadefabriek.nl/agenda/nazanin-taherigeorge-tobal-producties-de-surpri-162375"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "LUX",
+        "plaats": "Nijmegen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lux-nijmegen.nl/programma/de-surpriseshow/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "LUX",
+        "plaats": "Nijmegen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-05",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lux-nijmegen.nl/programma/de-surpriseshow/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Mimik",
+        "plaats": "Deventer",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.mimik.nl/agenda/nazanin-taheri-george-tobal-producties"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "SPOT",
+        "plaats": "Groningen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-10",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/the-surpriseshow/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Bellevue",
+        "plaats": "Amsterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-12",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/de-surpriseshow-rhs1"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Bellevue",
+        "plaats": "Amsterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-13",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/de-surpriseshow-rhs1"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater aan het Vrijthof",
+        "plaats": "Maastricht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-16",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/toneel-theater/de-surpriseshow-nazanin-taheri"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Amstelveen",
+        "plaats": "Amstelveen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-17",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/de-surpriseshow/?date=17-03-2027&time=20:00"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Lieve Vrouw",
+        "plaats": "Amersfoort",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-18",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://lievevrouw.nl/agenda/de-surpriseshow?q-page=surpriseshow"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Vest",
+        "plaats": "Alkmaar",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdevest.nl/tickets/seizoen-26-27/via-rudolphi-producties-tobal-nazanin-taheri-de-surpriseshow/?showId=6246818305-1764856142"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Parktheater Eindhoven",
+        "plaats": "Eindhoven",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-20",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://pand-p.nl/event/de-surpriseshow/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Zuidplein",
+        "plaats": "Rotterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-24",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/de-surpriseshow-hkgs"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Dakota",
+        "plaats": "Den Haag",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-25",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdakota.nl/event/de-surprise-show/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Leidse Schouwburg-Stadsgehoorzaal",
+        "plaats": "Leiden",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-26",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/nazanin-taheri-de-supriseshow/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Purmaryn",
+        "plaats": "Purmerend",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-27",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/de-surpriseshow/?eventId=4214776065-1762455707"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Kleine Komedie",
+        "plaats": "Amsterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-03-31",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekleinekomedie.nl/agenda/nazanin-taheri-c22g"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsschouwburg Utrecht",
+        "plaats": "Utrecht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-04-01",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-surpriseshow-via-rudolphi-producties-tobal-nazanin-taheri?q-page=nazanin"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsschouwburg Utrecht",
+        "plaats": "Utrecht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Nazanin Taheri"
+      ],
+      "titel": "De Surpriseshow",
+      "genre": "toneel",
+      "datum": "2027-04-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-surpriseshow-via-rudolphi-producties-tobal-nazanin-taheri?q-page=nazanin"
+    }
+  ],
+  "recensies": {}
+}

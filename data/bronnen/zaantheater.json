@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "zaantheater",
@@ -293,7 +293,7 @@
       "genre": "cabaret",
       "datum": "2027-01-13",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/esther-van-der-voort/"
     },
@@ -443,6 +443,19 @@
     {
       "theater": "zaantheater",
       "artiesten": [
+        "Jeannine La Rose"
+      ],
+      "titel": "Meer?!",
+      "genre": "cabaret",
+      "datum": "2027-04-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/jeannine-la-rose/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
         "JoepTube (8+)"
       ],
       "titel": "De zAAk A",
@@ -527,7 +540,7 @@
       "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/"
     },
@@ -540,7 +553,7 @@
       "genre": "cabaret",
       "datum": "2026-11-27",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/"
     },
@@ -959,19 +972,6 @@
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Roué Verveer"
-      ],
-      "titel": "Vanzelfsprekend",
-      "genre": "cabaret",
-      "datum": "2027-05-21",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/roue-verveer/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
         "Rundfunk: Wagyu"
       ],
       "titel": "Tom van Kalmthout & Yannick van de Velde",
@@ -998,19 +998,6 @@
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Samar en de bange koning (8+)"
-      ],
-      "titel": "George Tobal Producties & De Krakeling",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/samar-en-de-bange-koning-8/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
         "Spruijt & Opperman"
       ],
       "titel": "Altijdloos",
@@ -1033,6 +1020,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/tim-kroezen/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Van der Laan & Woe"
+      ],
+      "titel": "Dinsdagmiddag",
+      "genre": "cabaret",
+      "datum": "2027-01-22",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/van-der-laan-woe/"
     },
     {
       "theater": "zaantheater",

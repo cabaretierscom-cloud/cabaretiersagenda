@@ -1,7 +1,7 @@
 {
   "bron": "hof88",
   "naam": "Hof88",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "hof88",
@@ -135,7 +135,7 @@
       "artiesten": [
         "Joost Spijkers"
       ],
-      "titel": "Ziel en Zalig",
+      "titel": "Ziel & zalig",
       "genre": "cabaret",
       "datum": "2027-01-10",
       "tijd": "20:15",
@@ -200,7 +200,7 @@
       "artiesten": [
         "Zij en Aron Elstak"
       ],
-      "titel": "Match!",
+      "titel": "Match",
       "genre": "cabaret",
       "datum": "2027-02-04",
       "tijd": "20:15",
@@ -263,14 +263,14 @@
     {
       "theater": "hof88",
       "artiesten": [
-        "Roué Verveer & Peter van Ewijk"
+        "Roué Verveer"
       ],
-      "titel": "Dubbelcabaret",
+      "titel": "Vanzelfsprekend",
       "genre": "cabaret",
       "datum": "2027-02-17",
       "tijd": "20:15",
       "status": "gepland",
-      "soort": null,
+      "soort": "try-out",
       "bron": "https://www.hof88.nl/voorstellingen/dubbelcabaret-roue-verveer-peter-van-ewijk"
     },
     {
@@ -289,6 +289,19 @@
     {
       "theater": "hof88",
       "artiesten": [
+        "Prentenboekjesfestival!"
+      ],
+      "titel": "Nijntje op de fiets 2-5 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/nijntje-op-de-fiets-2-5-jaar-prentenboekjesfestival"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
         "Twente Plat"
       ],
       "titel": "Lachen is gezond",
@@ -298,6 +311,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.hof88.nl/voorstellingen/lachen-is-gezond-twente-plat"
+    },
+    {
+      "theater": "hof88",
+      "artiesten": [
+        "Prentenboekjesfestival!"
+      ],
+      "titel": "Anansi de spin viert feest! 3-7jr",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "11:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hof88.nl/voorstellingen/anansi-de-spin-viert-feest-3-7jr-prentenboekjesfestival"
     },
     {
       "theater": "hof88",

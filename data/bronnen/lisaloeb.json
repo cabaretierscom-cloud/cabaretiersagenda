@@ -1,0 +1,82 @@
+{
+  "bron": "lisaloeb",
+  "naam": "Speellijst van Lisa Loeb",
+  "soort": "speellijst",
+  "opgehaald": "2026-11-20",
+  "theaters": [],
+  "speeldata": [
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "DeLaMar Theater",
+        "plaats": "Amsterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Lisa Loeb"
+      ],
+      "titel": "Fopfeminisme",
+      "genre": "cabaret",
+      "datum": "2027-01-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/lisa-loeb/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "DeLaMar Theater",
+        "plaats": "Amsterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Lisa Loeb"
+      ],
+      "titel": "Fopfeminisme",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/lisa-loeb/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Oude Luxor",
+        "plaats": "Rotterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Lisa Loeb"
+      ],
+      "titel": "Fopfeminisme",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/lisa-loeb-59864"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Leidse Schouwburg",
+        "plaats": "Leiden",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Lisa Loeb"
+      ],
+      "titel": "Fopfeminisme",
+      "genre": "cabaret",
+      "datum": "2027-03-08",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/lisa-loeb-fopfeminisme/"
+    }
+  ],
+  "recensies": {}
+}

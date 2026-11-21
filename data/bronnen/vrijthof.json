@@ -1,7 +1,7 @@
 {
   "bron": "vrijthof",
   "naam": "Theater aan het Vrijthof",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "theater-aan-het-vrijthof",
@@ -21,19 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Oscar Smit"
-      ],
-      "titel": "€ 472.000,-",
-      "genre": "cabaret",
-      "datum": "2027-01-14",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/472-000-oscar-smit"
-    },
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
@@ -124,6 +111,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/als-ik-jou-was-david-van-rosmalen"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000,-",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/472-000-oscar-smit"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -504,16 +504,14 @@
     },
     {
       "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Veldeke Theater"
-      ],
-      "titel": "Aajdjaorscabberèt: Eve oonder us",
+      "artiesten": [],
+      "titel": "- Knock Out Comedy Crew",
       "genre": "cabaret",
-      "datum": "2026-12-27",
+      "datum": "2027-04-06",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/aajdjaorscabberet-eve-oonder-us-veldeke-theater"
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/knock-out-comedy-crew"
     }
   ],
   "recensies": {

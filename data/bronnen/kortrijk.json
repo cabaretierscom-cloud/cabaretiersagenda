@@ -1,7 +1,7 @@
 {
   "bron": "kortrijk",
   "naam": "Schouwburg Kortrijk",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "schouwburg-kortrijk",
@@ -178,7 +178,7 @@
       "genre": "comedy",
       "datum": "2027-01-28",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburgkortrijk.be/nl/programma/lelijke-rosse-x573"
     },
@@ -385,6 +385,19 @@
       "titel": "De Relatiefluisteraar",
       "genre": "comedy",
       "datum": "2027-03-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/de-relatiefluisteraar-dqz4"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Arnout Van den Bossche"
+      ],
+      "titel": "De Relatiefluisteraar",
+      "genre": "comedy",
+      "datum": "2027-06-09",
       "tijd": "20:00",
       "status": "gepland",
       "soort": null,

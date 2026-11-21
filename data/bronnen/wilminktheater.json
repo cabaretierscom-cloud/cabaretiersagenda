@@ -1,7 +1,7 @@
 {
   "bron": "wilminktheater",
   "naam": "Wilminktheater en Muziekcentrum Enschede",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "wilminktheater",
@@ -21,26 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": {
-        "id": "de-kleine-willem-enschede",
-        "naam": "De Kleine Willem",
-        "plaats": "Enschede",
-        "land": "NL",
-        "soort": "theater",
-        "website": null
-      },
-      "artiesten": [
-        "Jeroens Clan"
-      ],
-      "titel": "Juk",
-      "genre": "cabaret",
-      "datum": "2026-11-19",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/juk-ywm5"
-    },
     {
       "theater": "wilminktheater",
       "artiesten": [
@@ -313,7 +293,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-27",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
     },
@@ -365,7 +345,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-29",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
     },
@@ -391,7 +371,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-30",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
     },

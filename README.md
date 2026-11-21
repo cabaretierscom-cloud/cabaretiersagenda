@@ -48,6 +48,8 @@ Een voorstelling kan `recensies` hebben: per krant of tijdschrift het `medium`, 
 
 Het ophaalscript zoekt ze vanzelf op elke voorstellingspagina die het bezoekt (`ophalen/lib/recensies.mjs`). Noemen theaters verschillende sterren voor dezelfde krant, dan wint wat de meeste theaterpagina's zeggen. Een citaat "over" een vorige voorstelling wordt overgeslagen. Klopt een recensie niet, haal hem dan weg uit `data/voorstellingen.json`. Komt hij bij het volgende ophalen terug, meld het dan, zodat de herkenner aangepast kan worden.
 
+Met de hand opgezochte recensies staan in `data/recensies.json`: per stuk `artiest` en `voorstelling` (naam en titel zoals op de site), `medium`, `sterren` (of `null`), `citaat` (letterlijk), `bron` (de pagina met de recensie) en `gecontroleerd` (datum). Heeft een voorstelling al een recensie van dezelfde krant, dan blijft die staan.
+
 ## Festivals
 
 Een festival heeft zelf geen speeldata. De site zoekt ze erbij: alle voorstellingen van de artiesten in `artiesten` (bijvoorbeeld de "artiest" Cameretten) en alle voorstellingen waarvan de titel een van de `titels` bevat. Elk festival krijgt een pagina op `/festivals/<id>/`. Een festival zonder aankomende speeldata staat onderaan het overzicht onder "Nog geen speeldata bekend".

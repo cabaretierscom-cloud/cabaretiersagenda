@@ -72,6 +72,14 @@
     "website": "https://www.arenberg.be"
   },
   {
+    "id": "djingel-djangel-antwerpen",
+    "naam": "Djingel Djangel",
+    "plaats": "Antwerpen",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://www.lunatics.be"
+  },
+  {
     "id": "fakkelteater-rode-zaal-antwerpen",
     "naam": "Fakkelteater (Rode Zaal)",
     "plaats": "Antwerpen",
@@ -182,6 +190,14 @@
     "land": "BE",
     "soort": "theater",
     "website": "https://herbergtmolenhuis.be"
+  },
+  {
+    "id": "gc-de-zinnen-anzegem",
+    "naam": "GC De Zinnen",
+    "plaats": "Anzegem",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
   },
   {
     "id": "theaterzaal-gemeentepunt-anzegem",
@@ -352,6 +368,14 @@
     "website": "https://dekroon.bocholt.be"
   },
   {
+    "id": "theater-vooruit-boechout",
+    "naam": "Theater Vooruit",
+    "plaats": "Boechout",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "gc-t-blikveld-bonheiden",
     "naam": "GC 't Blikveld",
     "plaats": "Bonheiden",
@@ -475,6 +499,14 @@
     "id": "stadsschouwburg-brugge",
     "naam": "Stadsschouwburg Brugge",
     "plaats": "Brugge",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "espace-lumen-brussel",
+    "naam": "Espace Lumen",
+    "plaats": "Brussel",
     "land": "BE",
     "soort": "theater",
     "website": null
@@ -688,6 +720,14 @@
     "website": "https://www.cultuurhuisherbakker.be"
   },
   {
+    "id": "ekerse-theaterzaal-ekeren",
+    "naam": "Ekerse Theaterzaal",
+    "plaats": "Ekeren",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "kasteel-hof-de-bist-ekeren",
     "naam": "Kasteel Hof De Bist",
     "plaats": "Ekeren",
@@ -715,14 +755,6 @@
     "id": "zaal-rex-essen",
     "naam": "Zaal Rex",
     "plaats": "Essen",
-    "land": "BE",
-    "soort": "theater",
-    "website": null
-  },
-  {
-    "id": "cc-evergem",
-    "naam": "CC Evergem",
-    "plaats": "Evergem",
     "land": "BE",
     "soort": "theater",
     "website": null
@@ -957,14 +989,6 @@
     "website": null
   },
   {
-    "id": "cc-hasselt",
-    "naam": "CC Hasselt",
-    "plaats": "Hasselt",
-    "land": "BE",
-    "soort": "theater",
-    "website": null
-  },
-  {
     "id": "cultuurcentrum-hasselt",
     "naam": "Cultuurcentrum Hasselt",
     "plaats": "Hasselt",
@@ -1015,6 +1039,14 @@
   {
     "id": "foxy-herentals",
     "naam": "Foxy Herentals",
+    "plaats": "Herentals",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "kunstencampus-herentals",
+    "naam": "Kunstencampus",
     "plaats": "Herentals",
     "land": "BE",
     "soort": "theater",
@@ -1170,7 +1202,7 @@
     "plaats": "Kasterlee",
     "land": "BE",
     "soort": "theater",
-    "website": null
+    "website": "https://femmakasterlee.be"
   },
   {
     "id": "den-bussel-keerbergen",
@@ -1861,6 +1893,14 @@
     "website": "https://www.despil.be"
   },
   {
+    "id": "radar-az-delta-roeselare",
+    "naam": "Radar AZ Delta",
+    "plaats": "Roeselare",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://deltacomedy.be"
+  },
+  {
     "id": "taf-roeselare",
     "naam": "TAF",
     "plaats": "Roeselare",
@@ -1963,6 +2003,14 @@
     "land": "BE",
     "soort": "theater",
     "website": "https://www.werf44.be"
+  },
+  {
+    "id": "cc-schoten",
+    "naam": "CC Schoten",
+    "plaats": "Schoten",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
   },
   {
     "id": "de-rostune-sijsele",
@@ -2453,6 +2501,14 @@
     "website": null
   },
   {
+    "id": "maurice-zwevegem",
+    "naam": "Maurice",
+    "plaats": "Zwevegem",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "theatercentrum-zwevegem",
     "naam": "Theatercentrum",
     "plaats": "Zwevegem",
@@ -2765,6 +2821,14 @@
     }
   },
   {
+    "id": "cc-amstel-amsterdam",
+    "naam": "CC Amstel",
+    "plaats": "Amsterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://ccamstel.nl"
+  },
+  {
     "id": "comedy-cafe-amsterdam",
     "naam": "Comedy Café Amsterdam",
     "plaats": "Amsterdam",
@@ -2835,6 +2899,14 @@
       },
       "datum": "2010-02-23"
     }
+  },
+  {
+    "id": "frascati-amsterdam",
+    "naam": "Frascati",
+    "plaats": "Amsterdam",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.frascatitheater.nl"
   },
   {
     "id": "carre",
@@ -3021,6 +3093,14 @@
     }
   },
   {
+    "id": "huis-oostpool-arnhem",
+    "naam": "Huis Oostpool",
+    "plaats": "Arnhem",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.oostpool.nl"
+  },
+  {
     "id": "musis-arnhem",
     "naam": "Musis Arnhem",
     "plaats": "Arnhem",
@@ -3136,6 +3216,14 @@
     "id": "special-event-ruud-smulders-26-27-bedrijf",
     "naam": "Special event Ruud Smulders (26/27)",
     "plaats": "Bedrijf",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "stichting-toestanden-op-podium-bemmel",
+    "naam": "Stichting Toestanden Op Podium",
+    "plaats": "Bemmel",
     "land": "NL",
     "soort": "theater",
     "website": null
@@ -3435,6 +3523,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://brestheater.nl"
+  },
+  {
+    "id": "theater-de-borgh-budel",
+    "naam": "Theater De Borgh",
+    "plaats": "Budel",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://theaterdeborgh.nl"
   },
   {
     "id": "cantinetheater-budel-dorplein",
@@ -3771,6 +3867,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.ccdeurne.nl"
+  },
+  {
+    "id": "deventer-schouwburg",
+    "naam": "Deventer Schouwburg",
+    "plaats": "Deventer",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://deventerschouwburg.nl"
   },
   {
     "id": "mimik-deventer",
@@ -5611,6 +5715,14 @@
     "website": "https://www.barontheater.nl"
   },
   {
+    "id": "groene-engel-oss",
+    "naam": "Groene Engel",
+    "plaats": "Oss",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.groene-engel.nl"
+  },
+  {
     "id": "theater-de-lievekamp-oss",
     "naam": "Theater De Lievekamp",
     "plaats": "Oss",
@@ -6295,6 +6407,14 @@
     "website": null
   },
   {
+    "id": "comedytunes-t-beest",
+    "naam": "Comedytunes",
+    "plaats": "t Beest",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "comedy-in-de-knop-t-rozenknopje",
     "naam": "Comedy in de Knop",
     "plaats": "t Rozenknopje",
@@ -6365,6 +6485,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.schouwburgconcertzaaltilburg.nl"
+  },
+  {
+    "id": "de-nieuwe-vorst-tilburg",
+    "naam": "De Nieuwe Vorst",
+    "plaats": "Tilburg",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://denieuwevorst.nl"
   },
   {
     "id": "schouwburg-tilburg",
@@ -6773,14 +6901,6 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.cultuurhuysdekroon.nl"
-  },
-  {
-    "id": "spanbroek-wadway",
-    "naam": "Spanbroek",
-    "plaats": "Wadway",
-    "land": "NL",
-    "soort": "theater",
-    "website": "https://theaterkerkwadway.nl"
   },
   {
     "id": "theaterkerk-wadway",

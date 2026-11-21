@@ -26,10 +26,12 @@ function weekdagKlopt(rij) {
 // Met jaarUitMaandkop: de rijen hebben alleen dag en maand ("05-11"); het jaar staat in de kop erboven
 // ("november 2026"). Zet dat jaar achter elke datum tot de volgende kop.
 const MAANDNAMEN = "januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december";
+// Ook rijen met "03 apr" (Bob Koomen): daar komt het jaar achter de maand ("03 apr 2026").
 function jaarErbij(html) {
   let jaar = null;
-  return html.replace(new RegExp(`(?:${MAANDNAMEN})(?:\\s|&nbsp;)+(20\\d\\d)|>(\\s*)(\\d{1,2})-(\\d{1,2})(\\s*)<`, "gi"), (m, j, voor, d, mnd, na) => {
+  return html.replace(new RegExp(`(?:${MAANDNAMEN})(?:\\s|&nbsp;)+(20\\d\\d)|>(\\s*)(\\d{1,2})-(\\d{1,2})(\\s*)<|>(\\s*)(\\d{1,2}\\s+(?:jan|feb|mrt|maa|apr|mei|jun|jul|aug|sep|sept|okt|nov|dec)\\.?)(\\s*)<`, "gi"), (m, j, voor, d, mnd, na, voor2, dagMaand, na2) => {
     if (j) { jaar = j; return m; }
+    if (dagMaand) return jaar ? `>${voor2}${dagMaand} ${jaar}${na2}<` : m;
     return jaar ? `>${voor}${d}-${mnd}-${jaar}${na}<` : m;
   });
 }
@@ -44,13 +46,13 @@ const ARTIESTEN = [
   { naam: "Alex Ploeg", url: "https://www.alexploeg.nl/", volgorde: PZT },
   { naam: "An Nelissen", url: "https://www.annelissen.com/", volgorde: TPZ, land: "BE" },
   { naam: "Andries Tunru", url: "https://www.andriestunru.nl/", volgorde: PZ },
-  { naam: "Annick Boer", url: "https://www.annickboer.nl/", volgorde: PZ },
+  { naam: "Annick Boer", url: "https://annickboer.nl/speellijst/", volgorde: PZ, titel: "Vol Erin!" },
   { naam: "Baas & Adriani", url: "https://www.baasenadriani.nl/", volgorde: ZP },
   { naam: "Berit Companjen", url: "https://beritcompanjen.nl/", volgorde: PZ },
   { naam: "Bert Gabriëls", url: "https://www.bertgabriels.be/", volgorde: ZP, land: "BE" },
   { naam: "Bert Visscher", url: "https://www.bertvisscher.nl/", volgorde: ZP, splits: /^Bert 65\s+|\s+[-–—/|]\s+|,\s+/, overslaan: /sunshine boys/i },
   { naam: "Blauwe Vinkjes", url: "https://blauwevinkjes.nl/agenda/", volgorde: PZ },
-  { naam: "Bob Koomen", url: "https://bobkoomen.nl/", volgorde: PZ },
+  { naam: "Bob Koomen", url: "https://bobkoomen.nl/", volgorde: PZ, titel: "Peer", jaarUitMaandkop: true },
   { naam: "Boban Braspenning", url: "https://www.bobanbraspenning.nl/", volgorde: PZ },
   { naam: "Christel de Laat", url: "https://www.christeldelaat.nl/speellijst/", volgorde: ZP },
   { naam: "Claudia de Breij", url: "https://www.claudiadebreij.nl/", volgorde: PZT },
@@ -62,7 +64,7 @@ const ARTIESTEN = [
   { naam: "De Mugge van Brugge", url: "https://www.demuggevanbrugge.be/", volgorde: PZ, land: "BE", ruis: /^pre ?mi[eè]re$|^\d+u\b/i },
   { naam: "De Volksjury", url: "https://www.devolksjury.be/", volgorde: TPZ, land: "BE", splits: /\s*\(B\)\s*|\s+[-–—/|]\s+|,\s+/, ruis: /^read more|^sold out$|^laatste tickets$/i },
   { naam: "Die Verdammte Spielerei", url: "https://www.dieverdammtespielerei.be/agenda-and-tickets", volgorde: TPZ, land: "BE", scheiding: /\s*✦\s*/g, alleen: /Porselijm/ },
-  { naam: "Dolf Jansen", url: "https://dolfjansen.com/schaamteloos/", volgorde: ZP },
+  { naam: "Dolf Jansen", url: "https://dolfjansen.com/schaamteloos/", volgorde: ZP, titel: "Schaamteloos" },
   { naam: "Elfie Tromp", url: "https://elfietromp.nl/speellijst/", volgorde: ZPT },
   { naam: "Esther van der Voort", url: "https://esthervandervoort.com/", volgorde: ZP },
   { naam: "Fabian Franciscus", url: "https://www.fabianfranciscus.nl/", volgorde: TZP, ruis: /^(grote|kleine|middel)\s*zaal$/i },
@@ -72,7 +74,10 @@ const ARTIESTEN = [
   { naam: "Gerrie Smits", url: "https://www.gerriesmits.nl/", volgorde: TZP, titel: "Oudejaarsconference 2026: Klem", weekdagControle: true, ruis: /^bekijk detail$/i },
   { naam: "Gewoon Aans", url: "https://gewoonaans.nl/speellijst/", volgorde: ZP, ruis: /^bestel kaarten$/i },
   { naam: "Glodi Lugungu", url: "https://www.glodilugungu.nl/", volgorde: PZ },
-  { naam: "Grof Geschud", url: "https://www.grofgeschud.nl/", volgorde: ZPT, land: "BE", titel: "Vieren" },
+  // labloemen.nl/renaissance-2-0-reprise/ toont de speellijst van Impact Entertainment (zelfde opmaak als Greg Shapiro).
+  { naam: "Karin Bloemen", url: "https://www.impactentertainment.nl/voorstelling/karin_bloemen_renaissance_2.0-2627/speellijst-iframe", volgorde: PZ, titel: "Renaissance 2.0", belgisch: /\bGeel\b|De Werft/, ruis: /data-sales|^\d{9,}$|kaarten reserveren|laatste kaarten!?|^uitverkocht!?$|^\d{3,4}-\d{3,}$/i },
+  { naam: "Greg Shapiro", url: "https://www.impactentertainment.nl/voorstelling/greg_shapiro_king_me-2627/speellijst-iframe", volgorde: PZ, titel: "King Me - 250 years of Donald Trump", ruis: /data-sales|^\d{9,}$|kaarten reserveren|^uitverkocht!?$|^\d{3,4}-\d{5,}$/i },
+  // Grof Geschud: eigen bron grofgeschud.mjs (de site toont maar tien avonden, de rest via "Toon meer").
   { naam: "Guido Spek", url: "https://www.guidospek.com/", volgorde: PZ, overslaan: /verplaats/i },
   { naam: "Guido Weijers", url: "https://www.guidoweijers.nl/speellijst", volgorde: PZT },
   { naam: "Hans Teeuwen", url: "https://www.hansteeuwen.nl/", volgorde: ZP, weekdagControle: true },
@@ -88,7 +93,7 @@ const ARTIESTEN = [
   { naam: "Jay Francis", url: "https://jayfrancis.nl/agenda", volgorde: PZT },
   { naam: "Jeroens Clan", url: "https://www.jeroensclan.com/", volgorde: PZ },
   { naam: "Johan Goossens", url: "https://www.johangoossens.nl/speellijst", volgorde: ZP },
-  { naam: "Johnny de Mol", url: "https://dgtheater.nl/voorstelling/johnny-de-mol", volgorde: PZ, titel: "Goed dat jij bestaat!", ruis: /data-sales|^\d{9,}$|kaarten reserveren|^\d{3,4}-\d{5,}$/i },
+  { naam: "Johnny de Mol", url: "https://dgtheater.nl/voorstelling/johnny-de-mol", volgorde: PZ, titel: "Goed dat jij bestaat!", ruis: /data-sales|^\d{9,}$|kaarten reserveren|^uitverkocht!?$|^\d{3,4}-\d{5,}$/i },
   { naam: "Joosen en de Jager", url: "https://www.joosenendejager.nl/speellijst", volgorde: PTZ },
   { naam: "Joost Spijkers", url: "https://www.joostspijkers.nl/", volgorde: ZP },
   { naam: "Jules Keeris", url: "https://www.juleskeeris.nl/speellijst.html", volgorde: PZ, titel: "Knegsel-Zuid", overslaan: /comedy|cabaret ?club|cabaretavond|cabaretcollege|line-up|\(mc\)/i, splits: /\s*\|\s*|\s+[-–—/]\s+|,\s+/, ruis: /^kaarten$|nieuw in verkoop/i },

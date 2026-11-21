@@ -1,7 +1,7 @@
 {
   "bron": "westrand",
   "naam": "Westrand",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-20",
   "theaters": [
     {
       "id": "westrand-dilbeek",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "westrand-dilbeek",
-      "artiesten": [
-        "Comedy Club #2"
-      ],
-      "titel": "met Raf Coppens en Nigel Williams",
-      "genre": "comedy",
-      "datum": "2026-11-19",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.westrand.be/programma/comedy-club-2-sw6f"
-    },
     {
       "theater": "westrand-dilbeek",
       "artiesten": [
@@ -401,7 +388,20 @@
       "tijd": "20:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.westrand.be/programma/non-stop-9svj"
+      "bron": "https://www.westrand.be/programma/urbanus-qlbg"
+    },
+    {
+      "theater": "westrand-dilbeek",
+      "artiesten": [
+        "Non-Stop"
+      ],
+      "titel": "Urbanus",
+      "genre": "comedy",
+      "datum": "2027-05-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.westrand.be/programma/urbanus-qlbg"
     },
     {
       "theater": "westrand-dilbeek",
@@ -506,19 +506,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.westrand.be/programma/nacht-8-108-fywf"
-    },
-    {
-      "theater": "westrand-dilbeek",
-      "artiesten": [
-        "Non-Stop"
-      ],
-      "titel": "Urbanus",
-      "genre": "comedy",
-      "datum": "2027-05-02",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.westrand.be/programma/urbanus-qlbg"
     },
     {
       "theater": "westrand-dilbeek",

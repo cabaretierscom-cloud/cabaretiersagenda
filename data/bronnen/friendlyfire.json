@@ -1,0 +1,766 @@
+{
+  "bron": "friendlyfire",
+  "naam": "Friendly Fire",
+  "soort": "speellijst",
+  "opgehaald": "2026-11-20",
+  "theaters": [],
+  "speeldata": [
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Lampegiet",
+        "plaats": "Veenendaal",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-01-07",
+      "tijd": null,
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.lampegiet.nl/agenda/bettina-holwerda-btc1"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Purmaryn",
+        "plaats": "Purmerend",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-01-08",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://depurmaryn.nl/agenda/seizoen-2026-2027/bettina-holwerda"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Singer Laren",
+        "plaats": "Laren",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-01-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.singerlaren.nl/nl/agenda/bettina-holwerda-c8xn"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Singer Laren",
+        "plaats": "Laren",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": null,
+      "status": "gepland",
+      "soort": "première",
+      "bron": "https://www.singerlaren.nl/nl/agenda/bettina-holwerda-c8xn"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Nobelaer",
+        "plaats": "Etten-Leur",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-01-16",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.denobelaer.nl/agenda/bettina-holwerda-13624"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Haventheater IJmuiden",
+        "plaats": "IJmuiden",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://haventheaterijmuiden.nl/programma/laat-maar"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Lievekamp",
+        "plaats": "Oss",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lievekamp.nl/programma/laat-maar-bettina-holwerda-23-jan-20-15"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Rijswijkse Schouwburg",
+        "plaats": "Rijswijk",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-01-27",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.rijswijkseschouwburg.nl/voorstelling/bettina-holwerda"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Cuijk",
+        "plaats": "Cuijk",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-01-28",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://schouwburgcuijk.nl/agenda/bettina-holwerda-tmqc"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Hanzehof",
+        "plaats": "Zutphen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-01-30",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hanzehof.nl/nl/voorstelling/bettina-holwerda"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Odeon",
+        "plaats": "Zwolle",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-01-31",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwolsetheaters.nl/programma/2026-2027/bettina-holwerda"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Stoep",
+        "plaats": "Spijkenisse",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-02-04",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterdestoep.nl/voorstelling/bettina-holwerda-2627"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg De Lawei",
+        "plaats": "Drachten",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-02-05",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.lawei.nl/agenda/bettina-holwerda-qqls"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schaffelaartheater",
+        "plaats": "Barneveld",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-02-06",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://schaffelaartheater.nl/agenda/bettina-holwerda/?eventId=12163"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsgehoorzaal Vlaardingen",
+        "plaats": "Vlaardingen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/bettina-holwerda"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Sneek / Poort",
+        "plaats": "Sneek",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://ontdekpoort.nl/programma/3089/bettina-holwerda"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Maagd",
+        "plaats": "Bergen op Zoom",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-02-18",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.demaagd.nl/agenda/bettina-holwerda-4xdv"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Cultuurhuis De Klinker",
+        "plaats": "Winschoten",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-02-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.indeklinker.nl/theater/bettina-holwerda-1ljk"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Isala Theater",
+        "plaats": "Capelle aan den IJssel",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-02-26",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.isalatheater.nl/agenda/bettina-holwerda-sh1z"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Maaspoort",
+        "plaats": "Venlo",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-02-27",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.maaspoort.nl/programma/theatertour-bettina-holwerda/27-02-2027-20-15"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater de Mythe",
+        "plaats": "Goes",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-03-03",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zeelandtheaters.nl/programma/bettina-holwerda-laat-maar/03-03-2027-20-00"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Leidse Schouwburg",
+        "plaats": "Leiden",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-03-04",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/bettina-holwerda-laat-maar"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Leest",
+        "plaats": "Waalwijk",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-03-06",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.deleest.nl/programma/bettina-holwerda-tyrr"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Kunstmin",
+        "plaats": "Dordrecht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-03-12",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/bettina-holwerda-laat-maar"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Agnietenhof",
+        "plaats": "Tiel",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-03-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.agnietenhof.nl/agenda/bettina-holwerda-9lj5"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadstheater",
+        "plaats": "Zoetermeer",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-03-17",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "http://www.stadstheater.nl/bettina-holwerda"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Kennemer Theater",
+        "plaats": "Beverwijk",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-03-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kennemertheater.nl/programma/bettina-holwerda-lwjf"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater Orpheus",
+        "plaats": "Apeldoorn",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-03-20",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.orpheus.nl/voorstellingen/bettina-holwerda-6c4y"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "DE KOM",
+        "plaats": "Nieuwegein",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-03-26",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekom.nl/agenda/laat-maar-thpz"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Amphion Theater",
+        "plaats": "Doetinchem",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-03-27",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amphion.nl/theater/bettina-holwerda-laat-maar"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Meenthe",
+        "plaats": "Steenwijk",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-04-01",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.demeenthe.nl/theater/voorstellingen/bettina-holwerda-laat-maar/01-04-2027-20-00"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg het Park",
+        "plaats": "Hoorn",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-04-02",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hetpark.nl/agenda/bettina-holwerda-10356152"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "DeLaMar Theater",
+        "plaats": "Amsterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-04-03",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/bettina-holwerda"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Markant Theater",
+        "plaats": "Uden",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-04-08",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.markantmaashorst.nl/nl/agenda/bettina-holwerda-dthh"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "AGORA",
+        "plaats": "Lelystad",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-04-09",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.agora-lelystad.nl/agenda/bettina-holwerda-q1wz"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater het Kruispunt",
+        "plaats": "Barendrecht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-04-10",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterhetkruispunt.nl/agenda/bettina-holwerda-ncm8"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Kring Roosendaal",
+        "plaats": "Roosendaal",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-04-12",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.dekringroosendaal.nl/agenda/laat-maar-xnsp"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Hengelo",
+        "plaats": "Hengelo",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburghengelo.nl/bettina-holwerda/15-04-2027-20-00"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Parktheater Eindhoven",
+        "plaats": "Eindhoven",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-04-16",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/laat-maar-9z8w"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater De Bussel",
+        "plaats": "Oosterhout",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-04-20",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterdebussel.nl/programma/bettina-holwerda-mqq1"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Theater aan de Parade",
+        "plaats": "'s-Hertogenbosch",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/bettina-holwerda-laat-maar"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Oude Luxor Theater",
+        "plaats": "Rotterdam",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Bettina Holwerda"
+      ],
+      "titel": "Laat Maar",
+      "genre": "cabaret",
+      "datum": "2027-04-23",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/bettina-holwerda-57523"
+    }
+  ],
+  "recensies": {}
+}
