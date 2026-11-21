@@ -832,13 +832,13 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     // Een promofoto (met toestemming) maakt er een fotobriefje van; de maker staat op de artiestpagina.
     // Een foto die niet bijgesneden mag worden (heel: true, zoals bij Buro Haug) niet op een briefje: dat snijdt altijd bij.
     const foto = a?.foto?.promo && !a.foto.heel && v.artiesten.length === 1 ? a.foto : null;
-    if (foto) klassen = "tape krul";
+    if (foto) klassen = "tape krul" + (titel ? " met-titel" : "");
     const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
     const voet = `<span class="voet"><span>${esc(metJaar(g.datum))}${g.tijd ? ` · ${g.tijd}` : ""}</span>${kopen ? `<span>Tickets ${ICON.extern}</span>` : `<span class="uit">${esc(STATUSSEN[g.status] || g.status)}</span>`}</span>`;
     const tekst = `${titel ? `<em>${esc(titel)}</em> in ` : "In "}${esc(t.naam)}${t.naam.includes(t.plaats) ? "" : `, ${esc(t.plaats)}`}`;
     const label = `<span class="wat">${esc(x.soort)}</span>`;
     const inhoud = foto
-      ? `<img src="${esc(foto.bestand)}" alt="" loading="lazy"${uitsnede(foto, 1.72)}${foto.maker ? ` title="Foto: ${esc(foto.maker)}"` : ""}><span class="tekst">${label}<b>${esc(artistNames(g.voorstelling))}</b>${voet}</span>`
+      ? `<img src="${esc(foto.bestand)}" alt="" loading="lazy"${uitsnede(foto, 1.72)}${foto.maker ? ` title="Foto: ${esc(foto.maker)}"` : ""}><span class="tekst">${label}<b>${esc(artistNames(g.voorstelling))}</b>${titel ? `<i class="titel">${esc(titel)}</i>` : ""}${voet}</span>`
       : `${label}<b>${esc(artistNames(g.voorstelling))}</b><p>${tekst}</p>${voet}`;
     return `<li><a class="pi ${klassen}${foto ? " foto" : ""} tickets" href="${esc(metUtm(g.bron))}" target="_blank" rel="noopener nofollow"${ticketData(g)} style="--c:${kleur};--r:${r}deg;${extra}"><span class="vlak" aria-hidden="true"></span>${inhoud}<span class="visually-hidden"> (${esc(x.soort)}: ${esc(artistNames(g.voorstelling))} op ${fmt.full(g.datum)} in ${esc(t.naam)}; externe website, opent in een nieuw tabblad)</span></a></li>`;
   }
