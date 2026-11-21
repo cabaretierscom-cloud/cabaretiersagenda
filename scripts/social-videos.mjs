@@ -1,6 +1,7 @@
 // Maakt staande video's (1080x1920, 30 beelden per seconde, zonder geluid) voor TikTok, YouTube Shorts en
 // Instagram Reels: de affiches van "Nu in het theater", per impresariaat, hooguit 5 per video. Ze komen
-// in ontwerp/social/<datum>/, met teksten.md (een bijschrift per video).
+// in ontwerp/social/<datum>/videos/, met teksten.md (per video een titel en beschrijving voor YouTube Shorts,
+// die ook als bijschrift voor TikTok en Instagram werkt). De carrousels in dezelfde datummap blijven staan.
 // Gebruik: node scripts/social-videos.mjs  (Playwright en ffmpeg moeten beschikbaar zijn)
 // BUILD_DATE=JJJJ-MM-DD kiest de dag, zoals bij de build. Muziek kies je zelf in de app.
 import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
@@ -14,7 +15,7 @@ import { WOORDMERK_SVG } from "../src/woordmerk.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const today = process.env.BUILD_DATE || new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Amsterdam" });
-const uit = join(root, "ontwerp/social", today);
+const uit = join(root, "ontwerp/social", today, "videos");
 // Playwright is CommonJS: via een pad (PLAYWRIGHT=/pad/naar/playwright/index.js) zit chromium onder default.
 const playwright = await import(process.env.PLAYWRIGHT || "playwright");
 const chromium = playwright.chromium || playwright.default.chromium;
@@ -38,7 +39,8 @@ const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 720, height: 1280 }, deviceScaleFactor: 1.5 });
 await page.goto(`http://localhost:${server.address().port}/`);
 
-const teksten = [`# Video's ${today}`, "", "Bijschriften om bij het plaatsen te gebruiken. Muziek kies je zelf in de app.", ""];
+const teksten = [`# Video's ${today}`, "",
+  "Per video een titel en beschrijving voor YouTube Shorts (de beschrijving werkt ook als bijschrift op TikTok en Instagram). Muziek kies je zelf in de app.", ""];
 const perBureau = {};
 for (const video of videos) {
   const nr = (perBureau[video.van] = (perBureau[video.van] || 0) + 1);
@@ -58,11 +60,16 @@ for (const video of videos) {
   ffmpeg.stdin.end();
   await klaar;
 
-  teksten.push(`## ${naam}`, "",
-    `Nu in het theater: ${video.affiches.map((a) => `${a.artiest} met ${a.titel}`).join(", ")}. Alle speeldata op cabaretiers.com.`, "");
+  // YouTube-titels zijn hooguit 100 tekens.
+  const namen = video.affiches.map((a) => a.artiest);
+  let titel = `Nu in het theater: ${namen.join(", ")}`;
+  if (titel.length > 90) titel = `Nu in het theater: ${namen.slice(0, 3).join(", ")} en meer`;
+  teksten.push(`## ${naam}`, "", `**Titel:** ${titel} #Shorts`, "",
+    `**Beschrijving:** Nu in het theater: ${video.affiches.map((a) => `${a.artiest} met ${a.titel}`).join(", ")}. Alle speeldata en kaarten op cabaretiers.com.`, "",
+    "#cabaret #comedy #theater #cabaretiers", "");
   console.log(`${naam}: ${video.affiches.length} affiches, ${duur.toFixed(1)} s`);
 }
 writeFileSync(join(uit, "teksten.md"), teksten.join("\n"));
 await browser.close();
 server.close();
-console.log(`${videos.length} video's in ontwerp/social/${today}/.`);
+console.log(`${videos.length} video's in ontwerp/social/${today}/videos/.`);
