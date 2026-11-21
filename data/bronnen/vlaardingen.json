@@ -1,7 +1,7 @@
 {
   "bron": "vlaardingen",
   "naam": "Stadsgehoorzaal Vlaardingen",
-  "opgehaald": "2026-11-20",
+  "opgehaald": "2026-11-21",
   "theaters": [
     {
       "id": "stadsgehoorzaal-vlaardingen",
@@ -94,15 +94,28 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Krulmuziek"
+        "Wonderland Collectief en Makiko Ito"
       ],
-      "titel": "Babykerstconcert (0+)",
+      "titel": "Umi (0+)",
       "genre": "kindervoorstellingen",
-      "datum": "2026-12-19",
-      "tijd": "10:15",
+      "datum": "2027-05-23",
+      "tijd": "10:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/babykerstconcert"
+      "bron": "https://stadsgehoorzaal.nl/programma/umi"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Wonderland Collectief en Makiko Ito"
+      ],
+      "titel": "Umi (0+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/umi"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -129,19 +142,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/de-cabaret-club"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Bro's"
-      ],
-      "titel": "Bromens",
-      "genre": "cabaret",
-      "datum": "2026-11-20",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/bros"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -185,6 +185,58 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
+        "Jandino"
+      ],
+      "titel": "De grote jubileumshow",
+      "genre": "cabaret",
+      "datum": "2026-12-03",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/jandino"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Krulmuziek"
+      ],
+      "titel": "Babykerstconcert (0+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "10:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/babykerstconcert"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Ricky Koole"
+      ],
+      "titel": "Rare leeftijd",
+      "genre": "cabaret",
+      "datum": "2027-01-23",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/ricky-koole"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Krulmuziek"
+      ],
+      "titel": "Peuter- en kleuterkerstconcert (2+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-19",
+      "tijd": "11:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/peuter-en-kleuterkerstconcert"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
         "Ernst, Bobbie & de rest (3+)"
       ],
       "titel": "Hebben geen idee",
@@ -211,71 +263,6 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Jandino"
-      ],
-      "titel": "De grote jubileumshow",
-      "genre": "cabaret",
-      "datum": "2026-12-03",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/jandino"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Ricky Koole"
-      ],
-      "titel": "Rare leeftijd",
-      "genre": "cabaret",
-      "datum": "2027-01-23",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/ricky-koole"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Wonderland Collectief en Makiko Ito"
-      ],
-      "titel": "Umi (0+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-05-23",
-      "tijd": "10:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/umi"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Wonderland Collectief en Makiko Ito"
-      ],
-      "titel": "Umi (0+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-05-23",
-      "tijd": "11:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/umi"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Krulmuziek"
-      ],
-      "titel": "Peuter- en kleuterkerstconcert (2+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-19",
-      "tijd": "11:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/peuter-en-kleuterkerstconcert"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
         "Valentina Tóth"
       ],
       "titel": "Revue Revanche",
@@ -285,32 +272,6 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://stadsgehoorzaal.nl/programma/valentina-toth"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Maya Show (1+)"
-      ],
-      "titel": "Samen picknicken",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-01-17",
-      "tijd": "13:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Maya Show (1+)"
-      ],
-      "titel": "Samen picknicken",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-01-17",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -376,6 +337,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/berit-companjen"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Maya Show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Maya Show (1+)"
+      ],
+      "titel": "Samen picknicken",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-17",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -673,13 +660,6 @@
         "medium": "NRC",
         "sterren": null,
         "citaat": "Het drietal valt op met scherpe en grappige dialogen."
-      }
-    ],
-    "https://stadsgehoorzaal.nl/programma/bros": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "Lekker abstract, absurd en brutaal."
       }
     ]
   }

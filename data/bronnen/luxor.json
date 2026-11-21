@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-20",
+  "opgehaald": "2026-11-21",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -446,7 +446,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/pieter-derks-57549/"
     },
@@ -1213,7 +1213,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-19",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/claudia-de-breij-56039/"
     },
@@ -1779,19 +1779,6 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
-        "Yentl en de Boer"
-      ],
-      "titel": "Rekhalzen",
-      "genre": "cabaret",
-      "datum": "2026-11-20",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://luxortheater.nl/agenda/yentl-en-de-boer-48580/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
         "Rayen Panday"
       ],
       "titel": "Grip",
@@ -2162,7 +2149,7 @@
       "genre": "cabaret",
       "datum": "2026-12-12",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
     },

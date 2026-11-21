@@ -2,66 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-11-20",
+  "opgehaald": "2026-11-21",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Cultuurhuis Herbakker",
-        "plaats": "Eeklo",
-        "land": "BE",
-        "website": "https://www.cultuurhuisherbakker.be"
-      },
-      "artiesten": [
-        "Steven Mahieu"
-      ],
-      "titel": "STABIELER",
-      "genre": "stand-up",
-      "datum": "2026-11-20",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.cultuurhuisherbakker.be/activiteiten/detail/6679/steven-mahieu-stabieler"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Jeugdhuis 't Schuur",
-        "plaats": "Breendonk",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Dries Heyneman"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-20",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://pcb.weticket.io/comedy"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "'t Heilaar",
-        "plaats": "Beerse",
-        "land": "BE",
-        "website": "https://www.beerse.be"
-      },
-      "artiesten": [
-        "Pieter Verelst"
-      ],
-      "titel": "Altijd Aan",
-      "genre": "cabaret",
-      "datum": "2026-11-20",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.beerse.be/activiteiten/detail/1450/pieter-verelst"
-    },
     {
       "theater": "de-ploter-ternat",
       "artiesten": [
@@ -6592,6 +6535,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.werf44.be/programma/pieter-verelst-altijd-aan"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Capitole",
+        "plaats": "Gent",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Steven Mahieu"
+      ],
+      "titel": "STABIELER",
+      "genre": "stand-up",
+      "datum": "2027-04-29",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedyshows.be/kalender/steven-mahieu/2027-04-29/"
     },
     {
       "theater": {

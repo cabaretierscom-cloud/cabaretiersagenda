@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-11-20",
+  "opgehaald": "2026-11-21",
   "theaters": [
     {
       "id": "zaantheater",
@@ -13,6 +13,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Aladdin de Musical (4+)"
+      ],
+      "titel": "Van Hoorne Studios",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-05-23",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/aladdin-de-musical-4/"
+    },
     {
       "theater": "zaantheater",
       "artiesten": [],
@@ -293,7 +306,7 @@
       "genre": "cabaret",
       "datum": "2027-01-13",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/esther-van-der-voort/"
     },
@@ -540,7 +553,7 @@
       "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/"
     },
@@ -972,6 +985,19 @@
     {
       "theater": "zaantheater",
       "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Vanzelfsprekend",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/roue-verveer/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
         "Rundfunk: Wagyu"
       ],
       "titel": "Tom van Kalmthout & Yannick van de Velde",
@@ -994,6 +1020,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/rundfunk-wagyu/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Samar en de bange koning (8+)"
+      ],
+      "titel": "George Tobal Producties & De Krakeling",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/samar-en-de-bange-koning-8/"
     },
     {
       "theater": "zaantheater",

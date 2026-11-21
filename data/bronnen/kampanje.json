@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-11-20",
+  "opgehaald": "2026-11-21",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-de-kampanje",
-      "artiesten": [
-        "De Broers van Arkel"
-      ],
-      "titel": "Zeg maar u",
-      "genre": "cabaret",
-      "datum": "2026-11-20",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/de-broers-van-arkel-5skr"
-    },
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
@@ -256,7 +243,7 @@
       "genre": "cabaret",
       "datum": "2027-01-21",
       "tijd": "20:15",
-      "status": "geannuleerd",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://www.kampanje.nl/voorstellingen/rene-van-meurs-reprise-h6c6"
     },
@@ -282,7 +269,7 @@
       "genre": "cabaret",
       "datum": "2027-01-22",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/ricky-koole-fjmz"
     },
@@ -949,18 +936,6 @@
     }
   ],
   "recensies": {
-    "https://www.kampanje.nl/voorstellingen/de-broers-van-arkel-5skr": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "Een goed ingespeeld komisch duo […] dat met hun toneelmatige, theatraal goed uitgedachte voorstelling kan rekenen op de hardste lachmomenten."
-      },
-      {
-        "medium": "NRC",
-        "sterren": null,
-        "citaat": "De leuk acterende broers laten zien dat de beste grappen vaak zitten in ogenschijnlijk kleine dingen."
-      }
-    ],
     "https://www.kampanje.nl/voorstellingen/hokjesdenker-jknt": [
       {
         "medium": "de Volkskrant",

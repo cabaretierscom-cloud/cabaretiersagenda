@@ -1,7 +1,7 @@
 {
   "bron": "beatvenues",
   "naam": "Stadsschouwburg Antwerpen en Capitole Gent",
-  "opgehaald": "2026-11-20",
+  "opgehaald": "2026-11-21",
   "theaters": [
     {
       "id": "stadsschouwburg-antwerpen",
@@ -244,6 +244,32 @@
     {
       "theater": "capitole-gent",
       "artiesten": [
+        "Steven Mahieu"
+      ],
+      "titel": "Stabieler",
+      "genre": "stand-up",
+      "datum": "2027-02-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/steven-mahieu-15201294"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Steven Mahieu"
+      ],
+      "titel": "Stabieler",
+      "genre": "stand-up",
+      "datum": "2027-04-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/steven-mahieu-15201294"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
         "Alex Agnew"
       ],
       "titel": "No more heroes",
@@ -331,19 +357,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.capitole-gent.be/evenement/yannick-noben-419d4c34"
-    },
-    {
-      "theater": "capitole-gent",
-      "artiesten": [
-        "Han Solo"
-      ],
-      "titel": "Psycho Solo: Lof der Zotheid",
-      "genre": "stand-up",
-      "datum": "2026-11-20",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.capitole-gent.be/evenement/han-solo-2d48971c"
     },
     {
       "theater": "capitole-gent",
@@ -520,19 +533,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.capitole-gent.be/evenement/wannes-cappelle-7b747ebc"
-    },
-    {
-      "theater": "capitole-gent",
-      "artiesten": [
-        "Steven Mahieu"
-      ],
-      "titel": "Stabieler",
-      "genre": "stand-up",
-      "datum": "2027-02-12",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.capitole-gent.be/evenement/steven-mahieu-15201294"
     },
     {
       "theater": "capitole-gent",

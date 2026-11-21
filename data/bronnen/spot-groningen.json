@@ -1,7 +1,7 @@
 {
   "bron": "spot-groningen",
   "naam": "SPOT Groningen",
-  "opgehaald": "2026-11-20",
+  "opgehaald": "2026-11-21",
   "theaters": [
     {
       "id": "de-oosterpoort",
@@ -56,26 +56,13 @@
     {
       "theater": "stadsschouwburg-groningen",
       "artiesten": [
-        "Groninger Studenten Cabaret Festival"
-      ],
-      "titel": "Finale 40e GSCF",
-      "genre": "cabaret",
-      "datum": "2026-11-20",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.spotgroningen.nl/programma/groninger-studenten-cabaret-festival-24/"
-    },
-    {
-      "theater": "stadsschouwburg-groningen",
-      "artiesten": [
         "Bert Visscher en het Noordpool Strijkkwartet"
       ],
       "titel": "Bert Visscher, 65 Dat Zou Je Niet Zeggen",
       "genre": "cabaret",
       "datum": "2026-11-22",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/bert-visscher-en-het-noordpool-strijkkwartet-2/"
     },

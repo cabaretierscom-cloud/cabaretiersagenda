@@ -167,7 +167,10 @@
     "artiesten": [
       "alex-agnew"
     ],
-    "genre": "stand-up"
+    "genre": "stand-up",
+    "ookGenres": [
+      "cabaret"
+    ]
   },
   {
     "id": "alex-agnew-stand-up-set",
@@ -776,6 +779,14 @@
       "arnout-van-den-bossche"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "artemis-en-theater-basel-veel-te-eng-voor-kleuters",
+    "titel": "Veel te eng voor kleuters",
+    "artiesten": [
+      "artemis-en-theater-basel"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "artur-chaparyan-comedy-cafe-amsterdam",
@@ -1542,6 +1553,13 @@
       "burger-koekoek"
     ],
     "genre": "cabaret"
+  },
+  {
+    "id": "buurman-en-buurman-bouwen-een-feest-leidse-schouwburg",
+    "titel": "Buurman & Buurman bouwen een feest",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "leidse-schouwburg"
   },
   {
     "id": "buurman-en-buurman-bouwen-een-feestje-castellum",
@@ -2831,6 +2849,14 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "de-nationale-opera-opera-zuid-en-nederlandse-reisopera-atman",
+    "titel": "Atman!",
+    "artiesten": [
+      "de-nationale-opera-opera-zuid-en-nederlandse-reisopera"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "de-nieuwe-lichting-met-mc-kasper-van-der-laan-comedytrain",
     "titel": "De Nieuwe Lichting met MC Kasper van der Laan",
     "artiesten": [],
@@ -3168,6 +3194,14 @@
     "artiesten": [],
     "genre": "kindervoorstellingen",
     "theater": "cc-de-schakel"
+  },
+  {
+    "id": "dikkie-dik-en-dirk-scheele-peuter-kleuter-pret",
+    "titel": "Peuter Kleuter Pret",
+    "artiesten": [
+      "dikkie-dik-en-dirk-scheele"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "dikkie-dik-en-dirk-scheele-schouwburg-amstelveen",
@@ -3816,6 +3850,14 @@
     "titel": "Familiegeheimen",
     "artiesten": [
       "evenhuis-reijnders-en-tatum-dagelet"
+    ],
+    "genre": "cabaret"
+  },
+  {
+    "id": "evi-hanssen-bloedheet-en-tranen",
+    "titel": "Bloedheet & tranen",
+    "artiesten": [
+      "evi-hanssen"
     ],
     "genre": "cabaret"
   },
@@ -5636,10 +5678,7 @@
     "artiesten": [
       "jim-de-groot-en-sebas-wolfensberger"
     ],
-    "genre": "cabaret",
-    "ookGenres": [
-      "kleinkunst"
-    ]
+    "genre": "cabaret"
   },
   {
     "id": "jimmy-carr-chambers-touring-presents",
@@ -7182,6 +7221,14 @@
     "titel": "Pops of the Top",
     "artiesten": [
       "maas-theater-en-dans"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "maas-theater-en-dans-wunderbaum-en-nou-gaan-we-even-helemaal-uit-onze-plaat-een",
+    "titel": "EN NOU GAAN WE EVEN HELEMAAL UIT ONZE PLAAT (een topshow)",
+    "artiesten": [
+      "maas-theater-en-dans-wunderbaum"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -10231,14 +10278,6 @@
     "genre": "kindervoorstellingen"
   },
   {
-    "id": "sinterklaas-in-theater-aan-het-spui-het-nationale-theater",
-    "titel": "Het Nationale Theater",
-    "artiesten": [
-      "sinterklaas-in-theater-aan-het-spui"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
     "id": "sinterklaas-in-walhalla-sint-salabim-kleine-walhalla",
     "titel": "Sinterklaas in Walhalla: Sint Salabim!",
     "artiesten": [],
@@ -10696,10 +10735,10 @@
     "genre": "kindervoorstellingen"
   },
   {
-    "id": "studio-100-samen-picknicken-maya-show",
+    "id": "studio-100-samen-picknicken-nederlandse-premiere-maya-show",
     "titel": "Maya Show",
     "artiesten": [
-      "studio-100-samen-picknicken"
+      "studio-100-samen-picknicken-nederlandse-premiere"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -11216,6 +11255,14 @@
     "titel": "Peter Pan – in het klein",
     "artiesten": [
       "theater-terra"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "theater-terra-peuter-kleuter-pret-kikker-is-kikker",
+    "titel": "Kikker is Kikker",
+    "artiesten": [
+      "theater-terra-peuter-kleuter-pret"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -12526,6 +12573,9 @@
         "citaat": "Een stroom van mooie, eigenzinnige liedjes met een volstrekt eigen karakter.",
         "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/rekhalzen-yentl-en-de-boer"
       }
+    ],
+    "ookGenres": [
+      "kleinkunst"
     ]
   },
   {

@@ -1,7 +1,7 @@
 {
   "bron": "walhalla",
   "naam": "Theater Walhalla",
-  "opgehaald": "2026-11-20",
+  "opgehaald": "2026-11-21",
   "theaters": [
     {
       "id": "theater-walhalla",
@@ -29,19 +29,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-walhalla",
-      "artiesten": [
-        "Peter Pannekoek"
-      ],
-      "titel": "Demonen",
-      "genre": "cabaret",
-      "datum": "2026-11-20",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.theaterwalhalla.nl/voorstelling/peter-pannekoek-demonen-try-out/"
-    },
     {
       "theater": "kleine-walhalla",
       "artiesten": [
@@ -129,7 +116,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-22",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-15/"
     },
@@ -246,7 +233,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-29",
       "tijd": "15:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sinterklaas-in-walhalla-sint-salabim-2-t-m-6-jaar-6/"
     },
@@ -590,7 +577,7 @@
       "titel": "Het Ministerie van Inwendige Zaken",
       "genre": "kindervoorstellingen",
       "datum": "2027-02-06",
-      "tijd": "19:30",
+      "tijd": "20:30",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/het-ministerie-van-inwendige-zaken/"
@@ -630,7 +617,7 @@
       "genre": "cabaret",
       "datum": "2027-02-11",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/janneke-de-bijl-pluk-eventueel-de-dag/"
     },
@@ -643,7 +630,7 @@
       "genre": "kleinkunst",
       "datum": "2027-02-12",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.theaterwalhalla.nl/voorstelling/sem-konijn-populisme-de-musical-try-out/"
     },
@@ -695,7 +682,7 @@
       "genre": "cabaret",
       "datum": "2027-02-18",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/ramon-chatrer-volk/"
     },
@@ -708,7 +695,7 @@
       "genre": "cabaret",
       "datum": "2027-02-19",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-gestampte-meisjes-strot/"
     },
@@ -737,6 +724,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/de-ridder-zonder-billen-3-t-m-8-jaar/"
+    },
+    {
+      "theater": "theater-walhalla",
+      "artiesten": [
+        "De Ridder Zonder Billen"
+      ],
+      "titel": "3 t/m 8 jaar",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-23",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterwalhalla.nl/voorstelling/de-ridder-zonder-billen-3-t-m-8-jaar-2/"
     },
     {
       "theater": "theater-walhalla",

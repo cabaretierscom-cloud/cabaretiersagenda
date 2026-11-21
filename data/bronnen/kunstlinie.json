@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-20",
+  "opgehaald": "2026-11-21",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -679,19 +679,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Comedy Club Almere"
-      ],
-      "titel": "Comedy Club Almere",
-      "genre": "cabaret",
-      "datum": "2027-01-09",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/comedy-club-almere-16/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Nabil"
       ],
       "titel": "Nabil",
@@ -1000,6 +987,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/anansi-de-spin-en-de-gulzige-tijger-2/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Comedy Club Almere"
+      ],
+      "titel": "Comedy Club Almere",
+      "genre": "cabaret",
+      "datum": "2027-01-09",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/comedy-club-almere-16/"
     }
   ],
   "recensies": {

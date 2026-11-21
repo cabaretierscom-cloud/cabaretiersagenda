@@ -1,7 +1,7 @@
 {
   "bron": "schakel",
   "naam": "CC De Schakel",
-  "opgehaald": "2026-11-20",
+  "opgehaald": "2026-11-21",
   "theaters": [
     {
       "id": "cc-de-schakel",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "cc-de-schakel",
-      "artiesten": [
-        "Percossa (NL)"
-      ],
-      "titel": "Bommetje!",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-20",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.ccdeschakel.be/voorstellingen/percossa-nl-65mm"
-    },
     {
       "theater": "cc-de-schakel",
       "artiesten": [
@@ -48,7 +35,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-21",
       "tijd": "16:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.ccdeschakel.be/voorstellingen/theatercompagnie-de-kroon-mdw9"
     },

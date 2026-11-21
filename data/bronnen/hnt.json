@@ -1,7 +1,7 @@
 {
   "bron": "hnt",
   "naam": "Het Nationale Theater",
-  "opgehaald": "2026-11-20",
+  "opgehaald": "2026-11-21",
   "theaters": [
     {
       "id": "koninklijke-schouwburg",
@@ -78,46 +78,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.hnt.nl/nl/voorstellingen/grande-finale-cameretten-tzfd"
-    },
-    {
-      "theater": {
-        "id": "theater-aan-het-spui-den-haag",
-        "naam": "Theater aan het Spui",
-        "plaats": "Den Haag",
-        "land": "NL",
-        "soort": "theater",
-        "website": null
-      },
-      "artiesten": [
-        "Sinterklaas in Theater aan het Spui"
-      ],
-      "titel": "Het Nationale Theater",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-02",
-      "tijd": "13:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.hnt.nl/nl/voorstellingen/sinterklaas-in-theater-aan-het-spui-smkx"
-    },
-    {
-      "theater": {
-        "id": "theater-aan-het-spui-den-haag",
-        "naam": "Theater aan het Spui",
-        "plaats": "Den Haag",
-        "land": "NL",
-        "soort": "theater",
-        "website": null
-      },
-      "artiesten": [
-        "Sinterklaas in Theater aan het Spui"
-      ],
-      "titel": "Het Nationale Theater",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-02",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.hnt.nl/nl/voorstellingen/sinterklaas-in-theater-aan-het-spui-smkx"
     }
   ],
   "recensies": {
