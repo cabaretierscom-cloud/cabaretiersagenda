@@ -34,14 +34,16 @@
   // Vrije ruimte per platform (CSS-pixels, 720x1280 = 1080x1920 gedeeld door 1,5). Alles wat gelezen moet worden
   // (kop, sterren, titel, quote, slot) blijft binnen het vak; de foto bovenin een affiche mag erbuiten.
   // - TikTok: tabbladen boven (130 px), knoppenrij rechts (140 px), naam en bijschrift onder (484 px), rand links 60 px.
-  // - Instagram Reels: Meta houdt 14% boven, 35% onder en 6% opzij vrij; het profielraster (3:4) valt daar ook binnen.
+  // - Instagram Reels: de richtlijn van Meta (14% boven, 35% onder) liet op een echte telefoon een groot leeg vlak onderin
+  //   (november 2026). Nu naar wat de app echt over het beeld legt: 150 px boven (Reels-balk), 140 px rechts
+  //   (knoppen, vanaf ongeveer 60% van de hoogte), 420 px onder (naam en bijschrift) en 60 px links.
   // - YouTube Shorts: YouTube geeft zelf geen pixelmaten; de gangbare marges zijn 120 px boven (zoeken, menu),
   //   192 px rechts (knoppenrij), 380 px onder (titel, kanaal, abonneren, voortgangsbalk) en 60 px links.
   //   Onderin is minder nodig dan bij Instagram, dus de affiche is hier het grootst.
   // vak: boven, rechts, onder, links; kop: bovenkant van de kop; y: bovenkant van de affiche; schaal: grootte van de affiche.
   const FORMATEN = {
     tiktok: { vak: [87, 93, 323, 40], kop: 96, h1: "3rem", y: 206, schaal: 1.375 },
-    instagram: { vak: [179, 43, 448, 43], kop: 182, h1: "2.3rem", y: 270, schaal: 1.04 },
+    instagram: { vak: [100, 93, 282, 40], kop: 108, h1: "3rem", y: 216, schaal: 1.45 },
     youtube: { vak: [80, 128, 253, 40], kop: 88, h1: "3rem", y: 188, schaal: 1.55 },
   };
   // Hoe ver de buren opzij staan, hoe ver ze naar achteren gaan en hoe schuin (bij schaal 1,45; kleiner mee).
