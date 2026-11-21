@@ -1,6 +1,6 @@
-# Video's 2026-11-21
+# YouTube Shorts: video's 2026-11-21
 
-Per video een titel en beschrijving voor YouTube Shorts (de beschrijving werkt ook als bijschrift op TikTok en Instagram). Muziek kies je zelf in de app.
+Per video een titel en beschrijving. Muziek kies je zelf bij het uploaden.
 
 ## 5to9-1.mp4
 

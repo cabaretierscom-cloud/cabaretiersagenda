@@ -3,7 +3,8 @@
 // per platform in ontwerp/social/<datum>/videos/<platform>/ (tiktok, instagram, youtube), elk met de vrije ruimte
 // van dat platform (zie video.html) en een teksten.md (YouTube: titel en beschrijving; TikTok en Instagram: bijschrift).
 // De carrousels in dezelfde datummap blijven staan.
-// Gebruik: node scripts/social-videos.mjs [tiktok,instagram,youtube]  (Playwright en ffmpeg moeten beschikbaar zijn)
+// Daarnaast "vol": het hele beeld, zonder vrije randen (alleen op verzoek).
+// Gebruik: node scripts/social-videos.mjs [tiktok,instagram,youtube,vol]  (Playwright en ffmpeg moeten beschikbaar zijn)
 // BUILD_DATE=JJJJ-MM-DD kiest de dag, zoals bij de build. Muziek kies je zelf in de app.
 import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -38,7 +39,7 @@ const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 720, height: 1280 }, deviceScaleFactor: 1.5 });
 await page.goto(`http://localhost:${server.address().port}/`);
 
-const PLATFORM = { tiktok: "TikTok", instagram: "Instagram Reels", youtube: "YouTube Shorts" };
+const PLATFORM = { tiktok: "TikTok", instagram: "Instagram Reels", youtube: "YouTube Shorts", vol: "Volledig beeld" };
 for (const formaat of FORMATEN) {
   const uit = join(root, "ontwerp/social", today, "videos", formaat);
   rmSync(uit, { recursive: true, force: true });
