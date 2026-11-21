@@ -89,6 +89,8 @@ export function loadData(dir, { today }) {
   const uitgelicht = existsSync(join(dir, "uitgelicht.json")) ? read(dir, "uitgelicht.json") : [];
   // Promotiemateriaal dat een artiest of impresariaat ons heeft gegeven (foto, video's), met toestemming.
   const promo = existsSync(join(dir, "promo.json")) ? read(dir, "promo.json") : [];
+  // Recensies die met de hand zijn opgezocht (citaat letterlijk uit de recensie, met bron), naast wat het ophalen vindt.
+  const losseRecensies = existsSync(join(dir, "recensies.json")) ? read(dir, "recensies.json") : [];
   // Nieuwsberichten van de redactie (/nieuws/), altijd met bron.
   const nieuws = existsSync(join(dir, "nieuws.json")) ? read(dir, "nieuws.json") : [];
   // Wanneer een voorstelling voor het eerst in de agenda kwam (bijgehouden door samenvoegen.mjs).
@@ -149,7 +151,7 @@ export function loadData(dir, { today }) {
     const a = artiesten.find((x) => x.naam === p.artiest);
     if (!a) continue;
     // promo: aangeleverd materiaal; de site toont de naam van maker en afzender, maar niet de downloadlink.
-    const foto = p.foto && { licentie: `met toestemming van ${p.van}`, ...p.foto, promo: true };
+    const foto = p.foto && { licentie: `met toestemming van ${p.van}`, ...p.foto, promo: true, van: p.van };
     if (foto && !promoFoto.has(a.id)) { a.foto = foto; promoFoto.add(a.id); }
     if (p.videos?.length) a.videos = p.videos;
     // Tekst en persquotes horen bij de voorstelling met die titel; staat die er (nog) niet, dan later.
@@ -165,6 +167,19 @@ export function loadData(dir, { today }) {
     const zelfde = (x, y) => gewoon(x.medium) === gewoon(y.medium) && overlap(x.citaat, y.citaat) > 0.6;
     const nieuw = (p.recensies || []).map((r) => ({ ...r, bron: p.bron || p.foto?.bron, via: p.van })).filter((r) => !(v.recensies || []).some((x) => zelfde(x, r)));
     if (nieuw.length) v.recensies = [...(v.recensies || []), ...nieuw];
+  }
+
+  // Losse recensies (data/recensies.json): per krant hooguit één bij een voorstelling; heeft die krant er al
+  // een (van een theater of uit promotiemateriaal), dan blijft die staan.
+  const gewoonR = (t) => String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/^de /, "").replace(/[^a-z0-9]+/g, " ").trim();
+  for (const r of losseRecensies) {
+    const waar = `recensie ${r.artiest} – ${r.voorstelling}`;
+    if (!r.artiest || !r.voorstelling || !r.medium || !r.citaat || !/^https:\/\//.test(r.bron || "")) errors.push(`${waar}: artiest, voorstelling, medium, citaat en bron (https) zijn verplicht`);
+    if (r.sterren != null && !(Number.isInteger(r.sterren) && r.sterren >= 1 && r.sterren <= 5)) errors.push(`${waar}: sterren moet 1 t/m 5 zijn, of null`);
+    const a = artiesten.find((x) => x.naam === r.artiest);
+    const v = a && voorstellingen.find((x) => x.artiesten?.includes(a.id) && (gewoonR(x.titel) === gewoonR(r.voorstelling) || x.titel.toLowerCase().startsWith(`${r.voorstelling.toLowerCase()} (`)));
+    if (!v || (v.recensies || []).some((x) => gewoonR(x.medium) === gewoonR(r.medium))) continue;
+    v.recensies = [...(v.recensies || []), { medium: r.medium, sterren: r.sterren ?? null, citaat: r.citaat, bron: r.bron }];
   }
 
   for (const a of artiesten) {

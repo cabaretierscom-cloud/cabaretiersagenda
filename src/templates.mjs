@@ -620,6 +620,86 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
 
   // "Nu in het theater": voorstellingen met een promobeeld (data/promo.json), meeste speeldata eerst,
   // hooguit één per artiest. Bovenin het beeld, daaronder het kleurvlak van de artiest.
+  const metPromobeeld = () => [...V.values()].filter((v) => v.foto && voorstellingPad.has(v.id))
+    .map((v) => ({ v, list: up.filter((g) => g.voorstelling === v.id && g.status !== "geannuleerd") }))
+    .filter(({ list }) => list.length)
+    .sort((x, y) => y.list.length - x.list.length || x.list[0].datum.localeCompare(y.list[0].datum));
+
+  // Video's voor sociale media (scripts/social-videos.mjs): alle voorstellingen met een promobeeld,
+  // per impresariaat (van in data/promo.json), in groepjes van hooguit perVideo affiches. De groepjes
+  // zijn even groot (12 wordt 4+4+4, niet 5+5+2). Dezelfde foto van dezelfde artiest (één show onder
+  // twee titels) komt er één keer in. Op de affiche staat ook een persquote, als die er is. Ook voor de
+  // carrouselposts (scripts/social-carrousels.mjs).
+  function socialVideos(perVideo = 5) {
+    const perBureau = new Map(), gezien = new Set();
+    for (const x of metPromobeeld()) {
+      const sleutel = `${x.v.artiesten[0]} ${x.v.foto.bestand}`;
+      if (gezien.has(sleutel)) continue;
+      gezien.add(sleutel);
+      const van = x.v.foto.van || "overig";
+      if (!perBureau.has(van)) perBureau.set(van, []);
+      perBureau.get(van).push(x);
+    }
+    // Losse artiesten die zelf materiaal stuurden (minder dan 3 affiches) en eigen beeld van Cabaretiers.com
+    // komen samen in "Overig", zodat er geen video of carrousel met één affiche ontstaat.
+    const overig = [];
+    for (const [van, lijst] of perBureau) {
+      if (lijst.length < 3 || /cabaretiers\.com/i.test(van)) { overig.push(...lijst); perBureau.delete(van); }
+    }
+    const groepen = [...perBureau].sort((a, b) => a[0].localeCompare(b[0], "nl"));
+    if (overig.length) groepen.push(["Overig", overig]);
+    const videos = [];
+    for (const [van, lijst] of groepen) {
+      const aantal = Math.ceil(lijst.length / perVideo);
+      for (let n = 0, i = 0; n < aantal; n++) {
+        const tot = Math.round(((n + 1) * lijst.length) / aantal);
+        const stuk = afwisselend(lijst.slice(i, tot), ({ v }) => A.get(v.artiesten[0]).kleur);
+        i = tot;
+        videos.push({
+          van,
+          affiches: stuk.map(({ x, kleur }) => ({
+            html: affiche(x, kleur, 0, { social: true }),
+            titel: echteTitel(x.v.id) || x.v.titel,
+            artiest: artistNames(x.v.id),
+            maker: x.v.foto.maker,
+          })),
+        });
+      }
+    }
+    return videos;
+  }
+
+  // Persquote voor op de affiche (alleen in de beelden voor sociale media): de meeste sterren eerst, dan de
+  // kortste; langer dan 220 tekens past niet.
+  const besteCitaat = (v) => [...(v.recensies || [])].filter((r) => r.citaat && r.citaat.length <= 220)
+    .sort((x, y) => (y.sterren || 0) - (x.sterren || 0) || x.citaat.length - y.citaat.length)[0];
+
+  // Eén affiche. In de beelden voor sociale media (`social`) staat het aantal speeldata er niet op, wel een
+  // persquote; die verandert niet zo snel als de agenda.
+  function affiche({ v, list }, kleur, i, { social = false, foto = v.foto } = {}) {
+    const beste = [...(v.recensies || [])].filter((r) => r.sterren).sort((x, y) => y.sterren - x.sterren)[0];
+    const quote = social && besteCitaat(v);
+    const aantal = plural(list.length, "speeldatum", "speeldata");
+    const eigen = voorstellingPad.has(v.id);
+    const titel = eigen ? echteTitel(v.id) || v.titel : artistNames(v.id);
+    return `<a class="poster poster-foto" href="${eigen ? voorstellingPad.get(v.id) : artiestPad(v.artiesten[0])}" style="${ink(kleur)}">
+    <span class="visually-hidden">${esc(titel)}${eigen ? ` van ${esc(artistNames(v.id))}` : ""}, ${aantal}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
+    <span class="poster-beeld" aria-hidden="true">
+      <img src="${esc(foto.bestand)}" alt=""${uitsnede(foto, 1.2)} width="${foto.breedte || 800}" height="${foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
+      ${beste ? `<span class="poster-sterren onder">${"★".repeat(beste.sterren)}<small>${esc(beste.medium)}</small></span>` : ""}
+    </span>
+    <span class="poster-vlak" aria-hidden="true">
+      <span class="poster-info">
+      <strong class="ftitel${titleClass(titel)}">${afbreken(titel)}</strong>
+      ${eigen ? `<span class="fartiest">${esc(artistNames(v.id))}</span>` : ""}${quote ? `
+      <span class="poster-citaat${quote.citaat.length > 130 ? " lang" : ""}">“${esc(quote.citaat)}”<small>${quote.sterren && quote !== beste ? `${"★".repeat(quote.sterren)} ` : ""}${esc(quote.medium)}</small></span>` : ""}
+      ${social ? "" : `<span class="tag">${aantal}</span>`}
+      </span>
+      <span class="poster-stub"></span>
+    </span>
+  </a>`;
+  }
+
   // Met `artiest` (id -> ja/nee) alleen voorstellingen van die artiesten (zoals de mannen of vrouwen).
   // Paginaweergaven per artiest in de laatste 28 dagen (artiestpagina en voorstellingspagina's samen, zoals
   // op /dashboard/). "Nu in het theater" zet de meest bekeken artiesten vooraan; elke build werkt dat bij.
@@ -642,27 +722,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       .filter(({ v }) => !gezien.has(v.artiesten[0]) && gezien.add(v.artiesten[0]))
       .slice(0, 20);
     return afwisselend(lijst, ({ v }) => A.get(v.artiesten[0]).kleur, { schuiven: false })
-      .map(({ x: { v, list }, kleur }, i) => {
-        const beste = [...(v.recensies || [])].filter((r) => r.sterren).sort((x, y) => y.sterren - x.sterren)[0];
-        const aantal = plural(list.length, "speeldatum", "speeldata");
-        const eigen = voorstellingPad.has(v.id), foto = fotoVan(v);
-        const titel = eigen ? echteTitel(v.id) || v.titel : artistNames(v.id);
-        return `<a class="poster poster-foto" href="${eigen ? voorstellingPad.get(v.id) : artiestPad(v.artiesten[0])}" style="${ink(kleur)}">
-        <span class="visually-hidden">${esc(titel)}${eigen ? ` van ${esc(artistNames(v.id))}` : ""}, ${aantal}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
-        <span class="poster-beeld" aria-hidden="true">
-          <img src="${esc(foto.bestand)}" alt=""${uitsnede(foto, 1.2)} width="${foto.breedte || 800}" height="${foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
-          ${beste ? `<span class="poster-sterren onder">${"★".repeat(beste.sterren)}<small>${esc(beste.medium)}</small></span>` : ""}
-        </span>
-        <span class="poster-vlak" aria-hidden="true">
-          <span class="poster-info">
-          <strong class="ftitel${titleClass(titel)}">${afbreken(titel)}</strong>
-          ${eigen ? `<span class="fartiest">${esc(artistNames(v.id))}</span>` : ""}
-          <span class="tag">${aantal}</span>
-          </span>
-          <span class="poster-stub"></span>
-        </span>
-      </a>`;
-      }).join("");
+      .map(({ x, kleur }, i) => affiche(x, kleur, i, { foto: fotoVan(x.v) })).join("");
   }
 
   // Theaters met een foto, meeste voorstellingen eerst, als kaartjes met de zaalfoto. De zalen hebben
@@ -2964,6 +3024,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   return {
     genrePad, controlePagina, dashboardPagina, dashboardPad, nieuwsPagina, nieuwsBericht, inDeBuurtPagina,
     home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, genrePagina, GENRE_PAGINAS, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
-    voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, plaatsPad, maandId, tryoutPagina, tryoutLijst, genrePlaatsPaginas, genrePlaatsPagina, genrePlaatsPad, voorstellingPaden: voorstellingPad,
+    voorstellingPagina, festivalIndex, festivalPagina, socialVideos, maanden, plaatsen, plaatsId, plaatsPad, maandId, tryoutPagina, tryoutLijst, genrePlaatsPaginas, genrePlaatsPagina, genrePlaatsPad, voorstellingPaden: voorstellingPad,
   };
 }
