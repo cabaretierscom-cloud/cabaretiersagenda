@@ -35,19 +35,21 @@
   // (kop, sterren, titel, quote, slot) blijft binnen het vak; de foto bovenin een affiche mag erbuiten.
   // - TikTok: tabbladen boven (130 px), knoppenrij rechts (140 px), naam en bijschrift onder (484 px), rand links 60 px.
   // - Instagram Reels: Meta houdt 14% boven, 35% onder en 6% opzij vrij; het profielraster (3:4) valt daar ook binnen.
-  // - YouTube Shorts: de eerdere gecombineerde indeling (vrij boven, rechts en onder).
+  // - YouTube Shorts: YouTube geeft zelf geen pixelmaten; de gangbare marges zijn 120 px boven (zoeken, menu),
+  //   192 px rechts (knoppenrij), 380 px onder (titel, kanaal, abonneren, voortgangsbalk) en 60 px links.
+  //   Onderin is minder nodig dan bij Instagram, dus de affiche is hier het grootst.
   // vak: boven, rechts, onder, links; kop: bovenkant van de kop; y: bovenkant van de affiche; schaal: grootte van de affiche.
   const FORMATEN = {
     tiktok: { vak: [87, 93, 323, 40], kop: 96, h1: "3rem", y: 206, schaal: 1.375 },
     instagram: { vak: [179, 43, 448, 43], kop: 182, h1: "2.3rem", y: 270, schaal: 1.04 },
-    youtube: { vak: [96, 90, 290, 40], kop: 96, h1: "3rem", y: 206, schaal: 1.45 },
+    youtube: { vak: [80, 128, 253, 40], kop: 88, h1: "3rem", y: 188, schaal: 1.55 },
   };
   // Hoe ver de buren opzij staan, hoe ver ze naar achteren gaan en hoe schuin (bij schaal 1,45; kleiner mee).
   const OPZIJ = 360, ACHTER = 420, DRAAI = 48;
   const $ = (s) => document.querySelector(s);
-  let affiches = [], F = FORMATEN.youtube;
+  let affiches = [], F = FORMATEN.tiktok;
 
-  window.vul = (video, merk, woord, formaat = "youtube") => {
+  window.vul = (video, merk, woord, formaat = "tiktok") => {
     F = FORMATEN[formaat];
     const [boven, rechts, onder, links] = F.vak;
     const midden = links + (720 - links - rechts) / 2;
