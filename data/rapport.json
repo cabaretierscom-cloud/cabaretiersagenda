@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-21",
   "totaal": {
-    "speeldata": 9656,
-    "komend": 8406,
-    "artiesten": 970,
-    "zalen": 749,
+    "speeldata": 9707,
+    "komend": 8457,
+    "artiesten": 971,
+    "zalen": 751,
     "plaatsen": 512,
-    "voorstellingen": 1401
+    "voorstellingen": 1402
   },
   "bronnen": [
     {
@@ -14,7 +14,7 @@
       "naam": "Amai Comedy Club",
       "opgehaald": "2026-11-21",
       "speeldata": 17,
-      "vorige": 16,
+      "vorige": 17,
       "dubbel": 0
     },
     {
@@ -46,7 +46,7 @@
       "naam": "Stadsschouwburg Antwerpen en Capitole Gent",
       "opgehaald": "2026-11-21",
       "speeldata": 52,
-      "vorige": 51,
+      "vorige": 52,
       "dubbel": 0
     },
     {
@@ -190,7 +190,7 @@
       "naam": "Comedy Club Haug",
       "opgehaald": "2026-11-21",
       "speeldata": 130,
-      "vorige": 113,
+      "vorige": 130,
       "dubbel": 0
     },
     {
@@ -214,7 +214,7 @@
       "naam": "Het Nationale Theater",
       "opgehaald": "2026-11-21",
       "speeldata": 4,
-      "vorige": 6,
+      "vorige": 4,
       "dubbel": 0
     },
     {
@@ -294,7 +294,7 @@
       "naam": "Leidse Schouwburg en Stadsgehoorzaal",
       "opgehaald": "2026-11-21",
       "speeldata": 99,
-      "vorige": 63,
+      "vorige": 99,
       "dubbel": 0
     },
     {
@@ -390,7 +390,7 @@
       "naam": "PLT (Parkstad Limburg Theaters)",
       "opgehaald": "2026-11-21",
       "speeldata": 246,
-      "vorige": 247,
+      "vorige": 246,
       "dubbel": 0
     },
     {
@@ -494,7 +494,7 @@
       "naam": "Theater aan het Vrijthof",
       "opgehaald": "2026-11-21",
       "speeldata": 37,
-      "vorige": 38,
+      "vorige": 37,
       "dubbel": 0
     },
     {
@@ -502,7 +502,7 @@
       "naam": "Theater Walhalla",
       "opgehaald": "2026-11-21",
       "speeldata": 108,
-      "vorige": 107,
+      "vorige": 108,
       "dubbel": 0
     },
     {
@@ -534,7 +534,7 @@
       "naam": "Zaantheater",
       "opgehaald": "2026-11-21",
       "speeldata": 87,
-      "vorige": 84,
+      "vorige": 87,
       "dubbel": 0
     },
     {
@@ -598,8 +598,16 @@
       "naam": "Agenda van Bunker Theaterzaken",
       "opgehaald": "2026-11-21",
       "speeldata": 349,
-      "vorige": 358,
+      "vorige": 349,
       "dubbel": 327
+    },
+    {
+      "bron": "circustreurdier",
+      "naam": "Circus Treurdier",
+      "opgehaald": "2026-11-21",
+      "speeldata": 51,
+      "vorige": 51,
+      "dubbel": 0
     },
     {
       "bron": "evaeikhout",
@@ -678,7 +686,7 @@
       "naam": "Speellijst van Micky Overman",
       "opgehaald": "2026-11-21",
       "speeldata": 7,
-      "vorige": 8,
+      "vorige": 7,
       "dubbel": 8
     },
     {
@@ -694,7 +702,7 @@
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-21",
       "speeldata": 2380,
-      "vorige": 2387,
+      "vorige": 2380,
       "dubbel": 1313
     },
     {
@@ -747,6 +755,10 @@
       {
         "id": "theater-terra-peuter-kleuter-pret",
         "naam": "Theater Terra | Peuter Kleuter Pret"
+      },
+      {
+        "id": "circus-treurdier",
+        "naam": "Circus Treurdier"
       }
     ],
     "zalen": [
@@ -782,6 +794,20 @@
         "id": "stichting-toestanden-op-podium-bemmel",
         "naam": "Stichting Toestanden Op Podium",
         "plaats": "Bemmel",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "corrosia-almere",
+        "naam": "Corrosia",
+        "plaats": "Almere",
+        "land": "NL",
+        "website": null
+      },
+      {
+        "id": "spot-groningen",
+        "naam": "SPOT",
+        "plaats": "Groningen",
         "land": "NL",
         "website": null
       }
@@ -848,6 +874,13 @@
         "titel": "Kikker is Kikker",
         "artiesten": [
           "theater-terra-peuter-kleuter-pret"
+        ]
+      },
+      {
+        "id": "circus-treurdier-die-bloemkool-een-moeilijke-musical",
+        "titel": "Die Bloemkool (een moeilijke musical)",
+        "artiesten": [
+          "circus-treurdier"
         ]
       }
     ]
@@ -1099,12 +1132,12 @@
     },
     {
       "datum": "2026-11-21",
-      "speeldata": 9656,
-      "komend": 8406,
-      "artiesten": 970,
-      "zalen": 749,
+      "speeldata": 9707,
+      "komend": 8457,
+      "artiesten": 971,
+      "zalen": 751,
       "plaatsen": 512,
-      "voorstellingen": 1401
+      "voorstellingen": 1402
     }
   ]
 }

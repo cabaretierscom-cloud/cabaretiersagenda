@@ -39,7 +39,8 @@ export default {
         const knop = tekst(cel("tickets"));
         const link = decodeEntities(cel("tickets").match(/href="([^"]+)"/)?.[1] || "");
         out.push({
-          theater: { zoeken: true, naam: zaal, plaats: PLAATSEN[plaats] || plaats, land: "NL" },
+          // "SPOT" in Groningen is bij De Surpriseshow de Machinefabriek (spotgroningen.nl, november 2026).
+          theater: { zoeken: true, naam: zaal === "SPOT" && plaats === "Groningen" ? "Machinefabriek" : zaal, plaats: PLAATSEN[plaats] || plaats, land: "NL" },
           artiesten: [p.artiest],
           titel: p.titel,
           genre: p.genre,
