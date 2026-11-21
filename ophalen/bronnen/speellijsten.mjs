@@ -26,10 +26,12 @@ function weekdagKlopt(rij) {
 // Met jaarUitMaandkop: de rijen hebben alleen dag en maand ("05-11"); het jaar staat in de kop erboven
 // ("november 2026"). Zet dat jaar achter elke datum tot de volgende kop.
 const MAANDNAMEN = "januari|februari|maart|april|mei|juni|juli|augustus|september|oktober|november|december";
+// Ook rijen met "03 apr" (Bob Koomen): daar komt het jaar achter de maand ("03 apr 2026").
 function jaarErbij(html) {
   let jaar = null;
-  return html.replace(new RegExp(`(?:${MAANDNAMEN})(?:\\s|&nbsp;)+(20\\d\\d)|>(\\s*)(\\d{1,2})-(\\d{1,2})(\\s*)<`, "gi"), (m, j, voor, d, mnd, na) => {
+  return html.replace(new RegExp(`(?:${MAANDNAMEN})(?:\\s|&nbsp;)+(20\\d\\d)|>(\\s*)(\\d{1,2})-(\\d{1,2})(\\s*)<|>(\\s*)(\\d{1,2}\\s+(?:jan|feb|mrt|maa|apr|mei|jun|jul|aug|sep|sept|okt|nov|dec)\\.?)(\\s*)<`, "gi"), (m, j, voor, d, mnd, na, voor2, dagMaand, na2) => {
     if (j) { jaar = j; return m; }
+    if (dagMaand) return jaar ? `>${voor2}${dagMaand} ${jaar}${na2}<` : m;
     return jaar ? `>${voor}${d}-${mnd}-${jaar}${na}<` : m;
   });
 }
@@ -50,7 +52,7 @@ const ARTIESTEN = [
   { naam: "Bert Gabriëls", url: "https://www.bertgabriels.be/", volgorde: ZP, land: "BE" },
   { naam: "Bert Visscher", url: "https://www.bertvisscher.nl/", volgorde: ZP, splits: /^Bert 65\s+|\s+[-–—/|]\s+|,\s+/, overslaan: /sunshine boys/i },
   { naam: "Blauwe Vinkjes", url: "https://blauwevinkjes.nl/agenda/", volgorde: PZ },
-  { naam: "Bob Koomen", url: "https://bobkoomen.nl/", volgorde: PZ },
+  { naam: "Bob Koomen", url: "https://bobkoomen.nl/", volgorde: PZ, titel: "Peer", jaarUitMaandkop: true },
   { naam: "Boban Braspenning", url: "https://www.bobanbraspenning.nl/", volgorde: PZ },
   { naam: "Christel de Laat", url: "https://www.christeldelaat.nl/speellijst/", volgorde: ZP },
   { naam: "Claudia de Breij", url: "https://www.claudiadebreij.nl/", volgorde: PZT },
