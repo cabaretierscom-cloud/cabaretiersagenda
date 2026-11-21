@@ -1,0 +1,110 @@
+{
+  "bron": "losse-paginas",
+  "naam": "Losse voorstellingspagina's",
+  "soort": "speellijst",
+  "opgehaald": "2026-11-21",
+  "theaters": [],
+  "speeldata": [
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsschouwburg Utrecht",
+        "plaats": "Utrecht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Stefan de Walle",
+        "Daniël Kolf",
+        "Donny Ronny"
+      ],
+      "titel": "Het uur van de waarheid",
+      "genre": "toneel",
+      "datum": "2027-04-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-uur-van-de-waarheid-senf-producties"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsschouwburg Utrecht",
+        "plaats": "Utrecht",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Stefan de Walle",
+        "Daniël Kolf",
+        "Donny Ronny"
+      ],
+      "titel": "Het uur van de waarheid",
+      "genre": "toneel",
+      "datum": "2027-04-10",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/het-uur-van-de-waarheid-senf-producties"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Tilburg",
+        "plaats": "Tilburg",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Stefan de Walle",
+        "Daniël Kolf",
+        "Donny Ronny"
+      ],
+      "titel": "Het uur van de waarheid",
+      "genre": "toneel",
+      "datum": "2027-04-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgconcertzaaltilburg.nl/agenda/het-uur-van-de-waarheid-stefan-de-walle-ea"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Stadsschouwburg Groningen",
+        "plaats": "Groningen",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Stefan de Walle",
+        "Daniël Kolf",
+        "Donny Ronny"
+      ],
+      "titel": "Het uur van de waarheid",
+      "genre": "toneel",
+      "datum": "2027-03-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.spotgroningen.nl/programma/stefan-de-walle-donny-ronny-etc/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg Lochem",
+        "plaats": "Lochem",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Stefan de Walle",
+        "Daniël Kolf",
+        "Donny Ronny"
+      ],
+      "titel": "Het uur van de waarheid",
+      "genre": "toneel",
+      "datum": "2027-02-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburglochem.nl/voorstelling/het-uur-van-de-waarheid/"
+    }
+  ],
+  "recensies": {}
+}

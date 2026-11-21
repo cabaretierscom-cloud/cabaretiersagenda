@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-21",
   "totaal": {
-    "speeldata": 9613,
-    "komend": 8363,
-    "artiesten": 962,
-    "zalen": 750,
+    "speeldata": 9618,
+    "komend": 8368,
+    "artiesten": 965,
+    "zalen": 749,
     "plaatsen": 512,
-    "voorstellingen": 1394
+    "voorstellingen": 1395
   },
   "bronnen": [
     {
@@ -666,6 +666,14 @@
       "dubbel": 1
     },
     {
+      "bron": "losse-paginas",
+      "naam": "Losse voorstellingspagina's",
+      "opgehaald": "2026-11-21",
+      "speeldata": 5,
+      "vorige": 5,
+      "dubbel": 0
+    },
+    {
       "bron": "mickyoverman",
       "naam": "Speellijst van Micky Overman",
       "opgehaald": "2026-11-20",
@@ -686,7 +694,7 @@
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-21",
       "speeldata": 2387,
-      "vorige": 2402,
+      "vorige": 2387,
       "dubbel": 1306
     },
     {
@@ -699,7 +707,20 @@
     }
   ],
   "nieuw": {
-    "artiesten": [],
+    "artiesten": [
+      {
+        "id": "daniel-kolf",
+        "naam": "Daniël Kolf"
+      },
+      {
+        "id": "donny-ronny",
+        "naam": "Donny Ronny"
+      },
+      {
+        "id": "stefan-de-walle",
+        "naam": "Stefan de Walle"
+      }
+    ],
     "zalen": [
       {
         "id": "gc-de-zinnen-anzegem",
@@ -737,7 +758,17 @@
         "website": null
       }
     ],
-    "voorstellingen": []
+    "voorstellingen": [
+      {
+        "id": "stefan-de-walle-daniel-kolf-donny-ronny-het-uur-van-de-waarheid",
+        "titel": "Het uur van de waarheid",
+        "artiesten": [
+          "stefan-de-walle",
+          "daniel-kolf",
+          "donny-ronny"
+        ]
+      }
+    ]
   },
   "controleren": 0,
   "geschiedenis": [
@@ -986,12 +1017,12 @@
     },
     {
       "datum": "2026-11-21",
-      "speeldata": 9613,
-      "komend": 8363,
-      "artiesten": 962,
-      "zalen": 750,
+      "speeldata": 9618,
+      "komend": 8368,
+      "artiesten": 965,
+      "zalen": 749,
       "plaatsen": 512,
-      "voorstellingen": 1394
+      "voorstellingen": 1395
     }
   ]
 }
