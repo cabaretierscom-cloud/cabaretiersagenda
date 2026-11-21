@@ -1,11 +1,11 @@
 {
   "datum": "2026-11-21",
   "totaal": {
-    "speeldata": 9707,
-    "komend": 8457,
+    "speeldata": 9753,
+    "komend": 8503,
     "artiesten": 971,
-    "zalen": 751,
-    "plaatsen": 512,
+    "zalen": 755,
+    "plaatsen": 516,
     "voorstellingen": 1402
   },
   "bronnen": [
@@ -706,6 +706,14 @@
       "dubbel": 1313
     },
     {
+      "bron": "stek",
+      "naam": "Buro Stek",
+      "opgehaald": "2026-11-21",
+      "speeldata": 46,
+      "vorige": 46,
+      "dubbel": 1
+    },
+    {
       "bron": "viarudolphi",
       "naam": "Via Rudolphi Producties",
       "opgehaald": "2026-11-21",
@@ -809,6 +817,34 @@
         "naam": "SPOT",
         "plaats": "Groningen",
         "land": "NL",
+        "website": null
+      },
+      {
+        "id": "oc-de-troubadour-bissegem",
+        "naam": "OC De Troubadour",
+        "plaats": "Bissegem",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "gc-hof-ten-hemelrijk-opwijk",
+        "naam": "GC Hof ten Hemelrijk",
+        "plaats": "Opwijk",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "oc-de-zonnebloem-veurne",
+        "naam": "OC De Zonnebloem",
+        "plaats": "Veurne",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "vrijetijdscentrum-brieleke-wommelgem",
+        "naam": "Vrijetijdscentrum Brieleke",
+        "plaats": "Wommelgem",
+        "land": "BE",
         "website": null
       }
     ],
@@ -1132,11 +1168,11 @@
     },
     {
       "datum": "2026-11-21",
-      "speeldata": 9707,
-      "komend": 8457,
+      "speeldata": 9753,
+      "komend": 8503,
       "artiesten": 971,
-      "zalen": 751,
-      "plaatsen": 512,
+      "zalen": 755,
+      "plaatsen": 516,
       "voorstellingen": 1402
     }
   ]
