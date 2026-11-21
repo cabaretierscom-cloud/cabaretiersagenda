@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- Beeld voor de video's van scripts/social-videos.mjs (720x1280 CSS-pixels, op 1,5x opgenomen: 1080x1920).
-     vul() zet de affiches erin, zet(t) tekent het beeld op tijdstip t (in seconden). -->
+     vul() zet de affiches erin en kiest de indeling per platform, zet(t) tekent het beeld op tijdstip t (in seconden). -->
 <html lang="nl" data-theme="light">
 <head>
 <meta charset="utf-8">
@@ -8,21 +8,15 @@
 <link rel="stylesheet" href="/social/affiche.css">
 <style>
   html, body { width: 720px; height: 1280px; }
-  /* Vrije ruimte voor de knoppen van TikTok en Instagram: boven (tabbladen), rechts (knoppenrij) en onder
-     (naam en bijschrift). Alles wat gelezen moet worden staat tussen y 96 en 990 en links van x 630;
-     het midden ligt daarom op x 335 in plaats van 360. */
-  .kop { position: absolute; left: 0; right: 50px; top: 96px; text-align: center; }
+  .kop { position: absolute; left: 0; text-align: center; }
   .kop .logo { display: inline-flex; align-items: center; gap: 10px; }
   .kop .logo svg:not(.woord) { width: 40px; height: 40px; display: block; }
   .kop .wordmark { font-size: 2rem; }
   .kop .wordmark .tld { font-size: 1.15rem; }
   .kop h1 { font-family: var(--font-display); font-weight: 900; text-transform: uppercase; font-size: 3rem; line-height: .9; letter-spacing: .005em; margin-top: 6px; }
   /* De affiches staan als een carrousel in de ruimte: de middelste vooraan, de buren gedraaid erachter. */
-  .rij { position: absolute; left: 0; right: 0; top: 206px; bottom: 0; perspective: 1500px; perspective-origin: 335px 40%; }
-  .rij .poster {
-    position: absolute; left: 335px; top: 0; margin-left: -150px; transform-origin: 50% 0; backface-visibility: hidden;
-  }
-  .slot { padding: 96px 90px 290px 40px; }
+  .rij { position: absolute; left: 0; right: 0; bottom: 0; perspective: 1500px; }
+  .rij .poster { position: absolute; top: 0; margin-left: -150px; transform-origin: 50% 0; backface-visibility: hidden; }
 </style>
 </head>
 <body>
@@ -37,16 +31,35 @@
     <p class="oproep">Alle speeldata op<br><span>cabaretiers.com</span></p>
   </div>
 <script>
-  // Hoe groot de middelste affiche is, hoe ver de buren opzij staan, hoe ver ze naar achteren gaan en hoe schuin.
-  const SCHAAL = 1.45, OPZIJ = 360, ACHTER = 420, DRAAI = 48;
+  // Vrije ruimte per platform (CSS-pixels, 720x1280 = 1080x1920 gedeeld door 1,5). Alles wat gelezen moet worden
+  // (kop, sterren, titel, quote, slot) blijft binnen het vak; de foto bovenin een affiche mag erbuiten.
+  // - TikTok: tabbladen boven (130 px), knoppenrij rechts (140 px), naam en bijschrift onder (484 px), rand links 60 px.
+  // - Instagram Reels: Meta houdt 14% boven, 35% onder en 6% opzij vrij; het profielraster (3:4) valt daar ook binnen.
+  // - YouTube Shorts: de eerdere gecombineerde indeling (vrij boven, rechts en onder).
+  // vak: boven, rechts, onder, links; kop: bovenkant van de kop; y: bovenkant van de affiche; schaal: grootte van de affiche.
+  const FORMATEN = {
+    tiktok: { vak: [87, 93, 323, 40], kop: 96, h1: "3rem", y: 206, schaal: 1.375 },
+    instagram: { vak: [179, 43, 448, 43], kop: 182, h1: "2.3rem", y: 270, schaal: 1.04 },
+    youtube: { vak: [96, 90, 290, 40], kop: 96, h1: "3rem", y: 206, schaal: 1.45 },
+  };
+  // Hoe ver de buren opzij staan, hoe ver ze naar achteren gaan en hoe schuin (bij schaal 1,45; kleiner mee).
+  const OPZIJ = 360, ACHTER = 420, DRAAI = 48;
   const $ = (s) => document.querySelector(s);
-  let affiches = [];
+  let affiches = [], F = FORMATEN.youtube;
 
-  window.vul = (video, merk, woord) => {
+  window.vul = (video, merk, woord, formaat = "youtube") => {
+    F = FORMATEN[formaat];
+    const [boven, rechts, onder, links] = F.vak;
+    const midden = links + (720 - links - rechts) / 2;
     document.querySelectorAll(".merk").forEach((el) => (el.innerHTML = merk));
     document.querySelectorAll(".woord").forEach((el) => (el.outerHTML = woord));
+    Object.assign($(".kop").style, { top: `${F.kop}px`, width: `${midden * 2}px` });
+    $(".kop h1").style.fontSize = F.h1;
+    Object.assign($(".rij").style, { top: `${F.y}px`, perspectiveOrigin: `${midden}px 40%` });
+    $(".slot").style.padding = `${boven}px ${rechts}px ${onder}px ${links}px`;
     $(".rij").innerHTML = video.affiches.map((a) => a.html).join("");
     affiches = [...document.querySelectorAll(".rij .poster")];
+    affiches.forEach((el) => (el.style.left = `${midden}px`));
   };
 
   const zacht = (x) => (x <= 0 ? 0 : x >= 1 ? 1 : x * x * (3 - 2 * x));
@@ -56,16 +69,16 @@
   // Plek in de rij op tijdstip t: 0 is het eerste kaartje vooraan, 1 het tweede, enzovoort.
   // De rij draait telkens in SCHUIF seconden door en blijft dan staan.
   window.zet = (t, { INTRO, PER, SCHUIF }) => {
-    const n = affiches.length;
+    const n = affiches.length, k = F.schaal / 1.45;
     let p;
     if (t < INTRO) p = -1.6 * (1 - veer(t / INTRO));
     else {
-      const k = Math.floor((t - INTRO) / PER), binnen = t - INTRO - k * PER;
-      p = Math.min(n, k + veer((binnen - (PER - SCHUIF)) / SCHUIF));
+      const stap = Math.floor((t - INTRO) / PER), binnen = t - INTRO - stap * PER;
+      p = Math.min(n, stap + veer((binnen - (PER - SCHUIF)) / SCHUIF));
     }
     affiches.forEach((el, i) => {
       const d = i - p, a = Math.min(1.6, Math.abs(d)), r = Math.max(-1, Math.min(1, d));
-      el.style.transform = `translateX(${d * OPZIJ}px) translateZ(${-a * ACHTER}px) rotateY(${-r * DRAAI}deg) scale(${SCHAAL})`;
+      el.style.transform = `translateX(${d * OPZIJ * k}px) translateZ(${-a * ACHTER * k}px) rotateY(${-r * DRAAI}deg) scale(${F.schaal})`;
       el.style.filter = `brightness(${1 - 0.5 * Math.min(1, a)})`;
       el.style.zIndex = String(10 - Math.round(Math.abs(d)));
       el.style.visibility = Math.abs(d) > 2.2 ? "hidden" : "visible";
