@@ -192,6 +192,14 @@
     "website": "https://herbergtmolenhuis.be"
   },
   {
+    "id": "gc-de-zinnen-anzegem",
+    "naam": "GC De Zinnen",
+    "plaats": "Anzegem",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "theaterzaal-gemeentepunt-anzegem",
     "naam": "Theaterzaal Gemeentepunt",
     "plaats": "Anzegem",
@@ -358,6 +366,14 @@
     "land": "BE",
     "soort": "theater",
     "website": "https://dekroon.bocholt.be"
+  },
+  {
+    "id": "theater-vooruit-boechout",
+    "naam": "Theater Vooruit",
+    "plaats": "Boechout",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
   },
   {
     "id": "gc-t-blikveld-bonheiden",
@@ -704,6 +720,14 @@
     "website": "https://www.cultuurhuisherbakker.be"
   },
   {
+    "id": "ekerse-theaterzaal-ekeren",
+    "naam": "Ekerse Theaterzaal",
+    "plaats": "Ekeren",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
     "id": "kasteel-hof-de-bist-ekeren",
     "naam": "Kasteel Hof De Bist",
     "plaats": "Ekeren",
@@ -731,14 +755,6 @@
     "id": "zaal-rex-essen",
     "naam": "Zaal Rex",
     "plaats": "Essen",
-    "land": "BE",
-    "soort": "theater",
-    "website": null
-  },
-  {
-    "id": "cc-evergem",
-    "naam": "CC Evergem",
-    "plaats": "Evergem",
     "land": "BE",
     "soort": "theater",
     "website": null
@@ -968,14 +984,6 @@
     "id": "trukendoos-harelbeke",
     "naam": "Trukendoos",
     "plaats": "Harelbeke",
-    "land": "BE",
-    "soort": "theater",
-    "website": null
-  },
-  {
-    "id": "cc-hasselt",
-    "naam": "CC Hasselt",
-    "plaats": "Hasselt",
     "land": "BE",
     "soort": "theater",
     "website": null
@@ -1995,6 +2003,14 @@
     "land": "BE",
     "soort": "theater",
     "website": "https://www.werf44.be"
+  },
+  {
+    "id": "cc-schoten",
+    "naam": "CC Schoten",
+    "plaats": "Schoten",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
   },
   {
     "id": "de-rostune-sijsele",
@@ -3200,6 +3216,14 @@
     "id": "special-event-ruud-smulders-26-27-bedrijf",
     "naam": "Special event Ruud Smulders (26/27)",
     "plaats": "Bedrijf",
+    "land": "NL",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "stichting-toestanden-op-podium-bemmel",
+    "naam": "Stichting Toestanden Op Podium",
+    "plaats": "Bemmel",
     "land": "NL",
     "soort": "theater",
     "website": null

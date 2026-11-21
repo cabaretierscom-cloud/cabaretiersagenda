@@ -1,12 +1,12 @@
 {
-  "datum": "2026-11-20",
+  "datum": "2026-11-21",
   "totaal": {
-    "speeldata": 9565,
-    "komend": 8403,
-    "artiesten": 963,
-    "zalen": 747,
-    "plaatsen": 510,
-    "voorstellingen": 1395
+    "speeldata": 9628,
+    "komend": 8378,
+    "artiesten": 962,
+    "zalen": 750,
+    "plaatsen": 512,
+    "voorstellingen": 1394
   },
   "bronnen": [
     {
@@ -626,6 +626,14 @@
       "dubbel": 61
     },
     {
+      "bron": "grofgeschud",
+      "naam": "Speellijst van Grof Geschud",
+      "opgehaald": "2026-11-21",
+      "speeldata": 71,
+      "vorige": 71,
+      "dubbel": 9
+    },
+    {
       "bron": "janbeuving",
       "naam": "Speellijst van Jan Beuving",
       "opgehaald": "2026-11-20",
@@ -677,9 +685,9 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-20",
-      "speeldata": 2439,
-      "vorige": 2439,
-      "dubbel": 1321
+      "speeldata": 2431,
+      "vorige": 2431,
+      "dubbel": 1329
     },
     {
       "bron": "viarudolphi",
@@ -691,167 +699,45 @@
     }
   ],
   "nieuw": {
-    "artiesten": [
-      {
-        "id": "onur-gokcek",
-        "naam": "Onur Gökçek"
-      },
-      {
-        "id": "pettson-en-findus",
-        "naam": "Pettson en Findus"
-      },
-      {
-        "id": "uit-het-donker",
-        "naam": "Uit het donker"
-      },
-      {
-        "id": "buddy-vedder",
-        "naam": "Buddy Vedder"
-      },
-      {
-        "id": "shelley-bos",
-        "naam": "Shelley Bos"
-      },
-      {
-        "id": "nazanin-taheri",
-        "naam": "Nazanin Taheri"
-      },
-      {
-        "id": "hulst-en-tarenskeen",
-        "naam": "Hulst & Tarenskeen"
-      }
-    ],
+    "artiesten": [],
     "zalen": [
       {
-        "id": "theater-de-borgh-budel",
-        "naam": "Theater De Borgh",
-        "plaats": "Budel",
-        "land": "NL",
-        "website": "https://theaterdeborgh.nl"
-      },
-      {
-        "id": "comedytunes-t-beest",
-        "naam": "Comedytunes",
-        "plaats": "t Beest",
-        "land": "NL",
-        "website": null
-      },
-      {
-        "id": "kunstencampus-herentals",
-        "naam": "Kunstencampus",
-        "plaats": "Herentals",
+        "id": "gc-de-zinnen-anzegem",
+        "naam": "GC De Zinnen",
+        "plaats": "Anzegem",
         "land": "BE",
         "website": null
       },
       {
-        "id": "djingel-djangel-antwerpen",
-        "naam": "Djingel Djangel",
-        "plaats": "Antwerpen",
-        "land": "BE",
-        "website": "https://www.lunatics.be"
-      },
-      {
-        "id": "radar-az-delta-roeselare",
-        "naam": "Radar AZ Delta",
-        "plaats": "Roeselare",
-        "land": "BE",
-        "website": "https://deltacomedy.be"
-      },
-      {
-        "id": "maurice-zwevegem",
-        "naam": "Maurice",
-        "plaats": "Zwevegem",
+        "id": "theater-vooruit-boechout",
+        "naam": "Theater Vooruit",
+        "plaats": "Boechout",
         "land": "BE",
         "website": null
       },
       {
-        "id": "espace-lumen-brussel",
-        "naam": "Espace Lumen",
-        "plaats": "Brussel",
+        "id": "ekerse-theaterzaal-ekeren",
+        "naam": "Ekerse Theaterzaal",
+        "plaats": "Ekeren",
         "land": "BE",
         "website": null
       },
       {
-        "id": "cc-amstel-amsterdam",
-        "naam": "CC Amstel",
-        "plaats": "Amsterdam",
-        "land": "NL",
+        "id": "cc-schoten",
+        "naam": "CC Schoten",
+        "plaats": "Schoten",
+        "land": "BE",
         "website": null
       },
       {
-        "id": "groene-engel-oss",
-        "naam": "Groene Engel",
-        "plaats": "Oss",
-        "land": "NL",
-        "website": null
-      },
-      {
-        "id": "frascati-amsterdam",
-        "naam": "Frascati",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": null
-      },
-      {
-        "id": "huis-oostpool-arnhem",
-        "naam": "Huis Oostpool",
-        "plaats": "Arnhem",
-        "land": "NL",
-        "website": null
-      },
-      {
-        "id": "de-nieuwe-vorst-tilburg",
-        "naam": "De Nieuwe Vorst",
-        "plaats": "Tilburg",
+        "id": "stichting-toestanden-op-podium-bemmel",
+        "naam": "Stichting Toestanden Op Podium",
+        "plaats": "Bemmel",
         "land": "NL",
         "website": null
       }
     ],
-    "voorstellingen": [
-      {
-        "id": "onur-gokcek-onur-gokcek",
-        "titel": "Onur Gökçek",
-        "artiesten": [
-          "onur-gokcek"
-        ]
-      },
-      {
-        "id": "pettson-en-findus-filmpje-pakken-en-pannenkoek-versieren",
-        "titel": "Filmpje pakken en pannenkoek versieren!",
-        "artiesten": [
-          "pettson-en-findus"
-        ]
-      },
-      {
-        "id": "prentenboekjesfestival-anansi-de-spin-viert-feest-3-7jr",
-        "titel": "Anansi de spin viert feest! 3-7jr",
-        "artiesten": [
-          "prentenboekjesfestival"
-        ]
-      },
-      {
-        "id": "buddy-vedder-shelley-bos-al-het-blauw-van-de-hemel",
-        "titel": "Al het blauw van de hemel",
-        "artiesten": [
-          "buddy-vedder",
-          "shelley-bos"
-        ]
-      },
-      {
-        "id": "nazanin-taheri-de-surpriseshow",
-        "titel": "De Surpriseshow",
-        "artiesten": [
-          "nazanin-taheri"
-        ]
-      },
-      {
-        "id": "hulst-en-tarenskeen-millennial-ii-browser-history-x",
-        "titel": "Millennial II Browser History X",
-        "artiesten": [
-          "hulst-en-tarenskeen"
-        ]
-      }
-    ]
+    "voorstellingen": []
   },
   "controleren": 0,
   "geschiedenis": [
@@ -1097,6 +983,15 @@
       "zalen": 747,
       "plaatsen": 510,
       "voorstellingen": 1395
+    },
+    {
+      "datum": "2026-11-21",
+      "speeldata": 9628,
+      "komend": 8378,
+      "artiesten": 962,
+      "zalen": 750,
+      "plaatsen": 512,
+      "voorstellingen": 1394
     }
   ]
 }

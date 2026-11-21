@@ -75,7 +75,7 @@ const ARTIESTEN = [
   // labloemen.nl/renaissance-2-0-reprise/ toont de speellijst van Impact Entertainment (zelfde opmaak als Greg Shapiro).
   { naam: "Karin Bloemen", url: "https://www.impactentertainment.nl/voorstelling/karin_bloemen_renaissance_2.0-2627/speellijst-iframe", volgorde: PZ, titel: "Renaissance 2.0", belgisch: /\bGeel\b|De Werft/, ruis: /data-sales|^\d{9,}$|kaarten reserveren|laatste kaarten!?|^uitverkocht!?$|^\d{3,4}-\d{3,}$/i },
   { naam: "Greg Shapiro", url: "https://www.impactentertainment.nl/voorstelling/greg_shapiro_king_me-2627/speellijst-iframe", volgorde: PZ, titel: "King Me - 250 years of Donald Trump", ruis: /data-sales|^\d{9,}$|kaarten reserveren|^uitverkocht!?$|^\d{3,4}-\d{5,}$/i },
-  { naam: "Grof Geschud", url: "https://www.grofgeschud.nl/", volgorde: ZPT, land: "BE", titel: "Vieren" },
+  // Grof Geschud: eigen bron grofgeschud.mjs (de site toont maar tien avonden, de rest via "Toon meer").
   { naam: "Guido Spek", url: "https://www.guidospek.com/", volgorde: PZ, overslaan: /verplaats/i },
   { naam: "Guido Weijers", url: "https://www.guidoweijers.nl/speellijst", volgorde: PZT },
   { naam: "Hans Teeuwen", url: "https://www.hansteeuwen.nl/", volgorde: ZP, weekdagControle: true },
