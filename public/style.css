@@ -1211,9 +1211,8 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .gig.zonder-artiest .show .titel { font-weight: 700; color: var(--ink); }
 /* Op een breder scherm de labels onder de titel (verzoek van de eigenaar, november 2026). */
 @media (min-width: 761px) { .gig .show .titel { flex-basis: 100%; } }
-.gig a.gig-beeld .gig-foto { transition: transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .2s; }
-@media (hover: hover) { .gig a.gig-beeld:hover .gig-foto { transform: translateY(-3px); box-shadow: 0 16px 22px -12px rgba(0,0,0,.6); } }
-@media (prefers-reduced-motion: reduce) { .gig a.gig-beeld .gig-foto { transition: none; } }
+/* Het affiche is een link: geen onderstreping van de beginletter en geen beweging bij de muis (verzoek van de eigenaar). */
+.gig a.gig-beeld, .gig a.gig-beeld:hover { text-decoration: none; }
 .gig .stempel.op-foto { display: none; position: absolute; left: 50%; bottom: 8px; translate: -50% 0; white-space: nowrap; font-size: .7rem; padding: 2px 3px 1px; letter-spacing: .03em; line-height: 1; background: var(--paper); }
 @media (min-width: 1200px) {
   .gig .side { display: grid; grid-template-columns: 8.4rem auto; align-items: center; justify-items: end; gap: 14px; }
