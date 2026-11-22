@@ -1165,3 +1165,9 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .keuze-afstand summary svg { flex: none; width: 18px; height: 18px; margin-left: -1px; }
 .field .keuze-afstand .keuze-lijst label { white-space: nowrap; }
 @media (max-width: 560px) { .filters .afstand-veld { flex-basis: 100%; } }
+
+/* VOORSTEL: afbeelding in de agendarij */
+.gig .main { align-items: center; gap: 14px; }
+.gig .gig-foto { width: 64px; height: 64px; flex: none; border-radius: 10px; object-fit: cover; box-shadow: 0 1px 0 rgba(0,0,0,.08), inset 0 0 0 1px rgba(0,0,0,.06); }
+.gig .gig-foto.leeg { display: grid; place-items: center; background: var(--bg); color: var(--fg); font: 900 1.9rem/1 var(--font-display); }
+@media (max-width: 720px) { .gig .gig-foto { width: 52px; height: 52px; border-radius: 8px; } .gig .gig-foto.leeg { font-size: 1.5rem; } }
