@@ -150,7 +150,9 @@ export function loadData(dir, { today }) {
     if (!a) continue;
     // promo: aangeleverd materiaal; de site toont de naam van maker en afzender, maar niet de downloadlink.
     const foto = p.foto && { licentie: `met toestemming van ${p.van}`, ...p.foto, promo: true };
-    if (foto && !promoFoto.has(a.id)) { a.foto = foto; promoFoto.add(a.id); }
+    // alleenVoorstelling: een promotiebeeld van de voorstellingspagina van een zaal (scripts/voorstellingsbeelden.mjs);
+    // dat wordt alleen de foto van de artiest als die nog geen foto heeft.
+    if (foto && !promoFoto.has(a.id) && !(p.alleenVoorstelling && a.foto)) { a.foto = foto; promoFoto.add(a.id); }
     if (p.videos?.length) a.videos = p.videos;
     // Tekst en persquotes horen bij de voorstelling met die titel; staat die er (nog) niet, dan later.
     const gewoon = (t) => String(t).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
