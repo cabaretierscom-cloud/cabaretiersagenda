@@ -49,7 +49,11 @@ const write = (path, html) => {
   mkdirSync(dirname(file), { recursive: true });
   writeFileSync(file, VOORBEELD ? relatief(fotosInPagina(html), path) : html);
   if (!path.endsWith(".html")) pages.push(path);
+  // Het hoofdbeeld van de pagina (og:image, niet het algemene deelbeeld) met alt-tekst voor de beeldensitemap.
+  const beeld = html.match(/<meta property="og:image" content="([^"]+)">/)?.[1];
+  if (beeld && !beeld.endsWith("/deelafbeelding.png")) beelden.set(path, beeld);
 };
+const beelden = new Map();
 
 write("/", t.home());
 write("/agenda/", t.agendaIndex());
@@ -114,8 +118,8 @@ if (VOORBEELD) {
   writeFileSync(css, readFileSync(css, "utf8").replace(/url\("\/fonts\//g, 'url("fonts/'));
 }
 writeFileSync(join(out, "sitemap.xml"),
-  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
-  pages.map((p) => `  <url><loc>${SITE.url}${p}</loc><lastmod>${today}</lastmod></url>`).join("\n") +
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n` +
+  pages.map((p) => `  <url><loc>${SITE.url}${p}</loc><lastmod>${today}</lastmod>${beelden.has(p) ? `<image:image><image:loc>${beelden.get(p)}</image:loc></image:image>` : ""}</url>`).join("\n") +
   `\n</urlset>\n`);
 // Doorverwijzingen (301) van de oude WordPress-adressen: /<naam>/ -> /artiesten/<naam>/ als die pagina
 // er is, anders naar de homepage (data/oude-adressen.json). Ook elke artiest met een pagina krijgt zo'n

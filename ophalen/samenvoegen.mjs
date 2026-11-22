@@ -417,7 +417,13 @@ for (const f of bronFiles) {
   }
   let dubbel = 0;
   let nieuw = 0, handmatigVervangen = 0;
-  for (const bronRecord of bestand.speeldata) {
+  for (const bronRecordRuw of bestand.speeldata) {
+    // Een status in de titel ("We zien het wel even - GEANNULEERD", "(geannuleerd)"): weg uit de titel, wel de status.
+    // Anders wordt het een losse voorstelling met "geannuleerd" in naam en adres (november 2026, Hokjesdenker).
+    const STATUS_IN_TITEL = /\s*(?:[(\[]\s*(?:geannuleerd|afgelast|gecanceld)\s*[)\]]|(?:^|\s+[-–|:]\s*)(?:geannuleerd|afgelast|gecanceld))\s*$/i;
+    const bronRecord = STATUS_IN_TITEL.test(bronRecordRuw.titel || "")
+      ? { ...bronRecordRuw, titel: bronRecordRuw.titel.replace(STATUS_IN_TITEL, "").trim(), status: "geannuleerd" }
+      : bronRecordRuw;
     // Vangnet voor alle bronnen: geen titels of namen in KAPITALEN, geen losse punt aan het eind.
     const r = {
       ...bronRecord,

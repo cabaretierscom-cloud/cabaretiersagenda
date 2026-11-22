@@ -676,7 +676,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
         return `<a class="poster poster-foto" href="${eigen ? voorstellingPad.get(v.id) : artiestPad(v.artiesten[0])}" style="${ink(kleur)}">
         <span class="visually-hidden">${esc(titel)}${eigen ? ` van ${esc(artistNames(v.id))}` : ""}, ${aantal}${beste ? `. ${esc(beste.medium)}: ${plural(beste.sterren, "ster", "sterren")}` : ""}</span>
         <span class="poster-beeld" aria-hidden="true">
-          <img src="${esc(foto.bestand)}" alt=""${uitsnede(foto, 1.2)} width="${foto.breedte || 800}" height="${foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
+          <img src="${esc(foto.bestand)}" alt="${esc(foto.alt || "")}"${uitsnede(foto, 1.2)} width="${foto.breedte || 800}" height="${foto.hoogte || 1000}" loading="${i < 4 ? "eager" : "lazy"}" decoding="async">
           ${beste ? `<span class="poster-sterren onder">${"★".repeat(beste.sterren)}<small>${esc(beste.medium)}</small></span>` : ""}
         </span>
         <span class="poster-vlak" aria-hidden="true">
@@ -710,7 +710,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       return `<a class="poster poster-foto poster-zaal" href="/theaters/${t.id}/" style="${ink(kleur)}">
         <span class="visually-hidden">${esc(t.naam)} in ${esc(t.plaats)}, ${aantal}, volgende: ${esc(wat)}</span>
         <span class="poster-beeld" aria-hidden="true"${t.foto.maker ? ` title="Foto: ${esc(t.foto.maker)}, ${esc(t.foto.licentie)}"` : ""}>
-          <img src="${esc(t.foto.bestand)}" alt="" width="${t.foto.breedte || 960}" height="${t.foto.hoogte || 720}" loading="lazy" decoding="async">
+          <img src="${esc(t.foto.bestand)}" alt="${esc(t.foto.alt)}" width="${t.foto.breedte || 960}" height="${t.foto.hoogte || 720}" loading="lazy" decoding="async">
         </span>
         <span class="poster-vlak" aria-hidden="true">
           <span class="poster-info">
@@ -1989,6 +1989,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       extra: [{
         "@type": "EventSeries", "@id": URL(voorstellingPad.get(vid) + "#voorstelling"), name: v.titel, url: URL(voorstellingPad.get(vid)),
         description: desc, performer: v.artiesten.map(artiestLd),
+        // De zalen van de reeks (de evenementen hieronder beschrijven ze volledig) en dat het in het theater is.
+        location: [...new Set(list.map((g) => g.theater))].slice(0, 50).map((id) => ({ "@id": zaalLd(id)["@id"] })),
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
         ...(v.foto || fotoArtiest(vid) ? { image: { "@id": fotoLd(v.foto ? v : fotoArtiest(vid))["@id"] } } : {}),
         startDate: isoWithOffset(list[0].datum, list[0].tijd), endDate: isoWithOffset(list.at(-1).datum, list.at(-1).tijd),
         subEvent: list.slice(0, 100).map((g) => ({ "@id": eventId(g) })),
@@ -2506,7 +2509,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         extra: [{
           "@type": "EventSeries", "@id": URL(pad + "#festival"), name: f.naam, url: URL(pad), description: desc,
           ...(f.website ? { sameAs: f.website } : {}),
-          location: { "@type": "City", name: f.plaats },
+          location: { "@type": "City", name: f.plaats }, eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
           ...(list.length ? { startDate: isoWithOffset(list[0].datum, list[0].tijd), endDate: isoWithOffset(list.at(-1).datum, list.at(-1).tijd), subEvent: list.slice(0, 100).map((g) => ({ "@id": eventId(g) })) } : {}),
         }, ...eventsLd(list)],
       } });

@@ -34,6 +34,8 @@ AddType application/manifest+json .webmanifest
   RewriteRule ^artiesten/louise-korthals/in-stukken(/.*)?$ https://www.cabaretiers.com/artiesten/louise-korthals/korthals-in-stukken/ [L,R=301]
   RewriteRule ^artiesten/rundfunk/(rundfunk|tom-van-kalmthout-en-yannick-van-de-velde)(/.*)?$ https://www.cabaretiers.com/artiesten/rundfunk/wagyu/ [L,R=301]
   RewriteRule ^artiesten/dolf-jansen/(oudejaars-2026|oudejaarsconference-2026)(/.*)?$ https://www.cabaretiers.com/artiesten/dolf-jansen/schaamteloos/ [L,R=301]
+  RewriteRule ^artiesten/hokjesdenker/we-zien-het-wel-even-geannuleerd(/.*)?$ https://www.cabaretiers.com/artiesten/hokjesdenker/we-zien-het-wel-even/ [L,R=301]
+  RewriteRule ^artiesten/srefidensi-comedyshow-2026/geannuleerd(/.*)?$ https://www.cabaretiers.com/artiesten/srefidensi-comedyshow-2026/ [L,R=301]
   RewriteRule ^artiesten/(rob-urgert-en-joep-van-deudekom|de-grote-oudejaars-kwis-2026)(/.*)?$ https://www.cabaretiers.com/artiesten/joep-van-deudekom-en-rob-urgert/de-grote-oudejaars-kwis-2026/ [L,R=301]
   # Kor Hoebe: de voorstelling heet Korrelatie, niet Korrelrelatie (november 2026).
   RewriteRule ^artiesten/kor-hoebe/korrelrelatie/?$ https://www.cabaretiers.com/artiesten/kor-hoebe/korrelatie/ [L,R=301]

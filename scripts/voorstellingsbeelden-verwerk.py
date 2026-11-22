@@ -35,13 +35,15 @@ for v in vondsten:
     im.thumbnail((800, 800))
     im.save(os.path.join(basis, "public", bestand.lstrip("/")), quality=80, optimize=True, progressive=True)
     zaal = urlparse(v["pagina"]).hostname.removeprefix("www.")
+    # Alt-tekst: titel en artiest, zonder dubbeling als de titel de naam van de artiest is.
+    alt = f"Promotiebeeld van {v['artiest']}" if v["titel"].strip().lower() == v["artiest"].strip().lower() else f"Promotiebeeld van {v['titel']} van {v['artiest']}"
     promo.append({
         "artiest": v["artiest"],
         "van": "Eigenaar van Cabaretiers.com",
         "toestemming": f"Algemene toestemming van de eigenaar (november 2026) om promotiebeelden van voorstellingen te gebruiken; dit beeld staat op de voorstellingspagina van {zaal}.",
         "bron": v["pagina"],
         "alleenVoorstelling": True,
-        "foto": {"bestand": bestand, "alt": f"Promotiebeeld van {v['titel']} van {v['artiest']}", "bron": v["pagina"], "breedte": im.size[0], "hoogte": im.size[1]},
+        "foto": {"bestand": bestand, "alt": alt, "bron": v["pagina"], "breedte": im.size[0], "hoogte": im.size[1]},
         "voorstelling": v["titel"],
     })
     nieuw += 1
