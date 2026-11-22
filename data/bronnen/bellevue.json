@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-11-21",
+  "opgehaald": "2026-11-22",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -16,26 +16,13 @@
     {
       "theater": "theater-bellevue",
       "artiesten": [
-        "Glodi Lugungu"
-      ],
-      "titel": "In de Hemel ken ik jullie niet",
-      "genre": "cabaret",
-      "datum": "2026-11-21",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/in-de-hemel-ken-ik-jullie-niet-lkjn"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
         "Thom Gerrits"
       ],
       "titel": "Alleen Vanavond",
       "genre": "cabaret",
       "datum": "2026-11-22",
       "tijd": "15:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/alleen-vanavond-57dg"
     },

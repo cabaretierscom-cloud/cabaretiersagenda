@@ -1,7 +1,7 @@
 {
   "bron": "parktheater",
   "naam": "Parktheater Eindhoven",
-  "opgehaald": "2026-11-19",
+  "opgehaald": "2026-11-22",
   "theaters": [
     {
       "id": "parktheater-eindhoven",
@@ -13,136 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Claudia de Breij"
-      ],
-      "titel": "Oudejaarsconference 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-11-19",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/oudejaarsconference-2026-j5l8"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Vlamousse"
-      ],
-      "titel": "Het goede voorbeeld",
-      "genre": "comedy",
-      "datum": "2026-11-20",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/het-goede-voorbeeld-tksq"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "The Laughing Lizard - 26/27"
-      ],
-      "titel": "Comedy Café",
-      "genre": "comedy",
-      "datum": "2026-11-20",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "The Laughing Lizard - 26/27"
-      ],
-      "titel": "Comedy Café",
-      "genre": "comedy",
-      "datum": "2026-12-16",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "The Laughing Lizard - 26/27"
-      ],
-      "titel": "Comedy Café",
-      "genre": "comedy",
-      "datum": "2027-01-15",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "The Laughing Lizard - 26/27"
-      ],
-      "titel": "Comedy Café",
-      "genre": "comedy",
-      "datum": "2027-02-19",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "The Laughing Lizard - 26/27"
-      ],
-      "titel": "Comedy Café",
-      "genre": "comedy",
-      "datum": "2027-03-19",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "The Laughing Lizard - 26/27"
-      ],
-      "titel": "Comedy Café",
-      "genre": "comedy",
-      "datum": "2027-04-23",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "The Laughing Lizard - 26/27"
-      ],
-      "titel": "Comedy Café",
-      "genre": "comedy",
-      "datum": "2027-05-28",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "The Laughing Lizard - 26/27"
-      ],
-      "titel": "Comedy Café",
-      "genre": "comedy",
-      "datum": "2027-06-18",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
-    },
     {
       "theater": "parktheater-eindhoven",
       "artiesten": [
@@ -178,7 +48,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-11-23",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/oudejaarsconference-2026-qpny"
     },
@@ -502,6 +372,97 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/khalid-alterch-rxw6"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "The Laughing Lizard - 26/27"
+      ],
+      "titel": "Comedy Café",
+      "genre": "comedy",
+      "datum": "2026-12-16",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "The Laughing Lizard - 26/27"
+      ],
+      "titel": "Comedy Café",
+      "genre": "comedy",
+      "datum": "2027-01-15",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "The Laughing Lizard - 26/27"
+      ],
+      "titel": "Comedy Café",
+      "genre": "comedy",
+      "datum": "2027-02-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "The Laughing Lizard - 26/27"
+      ],
+      "titel": "Comedy Café",
+      "genre": "comedy",
+      "datum": "2027-03-19",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "The Laughing Lizard - 26/27"
+      ],
+      "titel": "Comedy Café",
+      "genre": "comedy",
+      "datum": "2027-04-23",
+      "tijd": "20:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "The Laughing Lizard - 26/27"
+      ],
+      "titel": "Comedy Café",
+      "genre": "comedy",
+      "datum": "2027-05-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "The Laughing Lizard - 26/27"
+      ],
+      "titel": "Comedy Café",
+      "genre": "comedy",
+      "datum": "2027-06-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
     },
     {
       "theater": "parktheater-eindhoven",
@@ -2853,6 +2814,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/scheepers-op-z-n-scherpst-fpt7"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "comedy",
+      "datum": "2027-09-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/mama-is-boos-9zhd"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "comedy",
+      "datum": "2027-09-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/mama-is-boos-9zhd"
     },
     {
       "theater": "parktheater-eindhoven",

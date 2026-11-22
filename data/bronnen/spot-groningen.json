@@ -1,7 +1,7 @@
 {
   "bron": "spot-groningen",
   "naam": "SPOT Groningen",
-  "opgehaald": "2026-11-21",
+  "opgehaald": "2026-11-22",
   "theaters": [
     {
       "id": "de-oosterpoort",
@@ -140,7 +140,7 @@
       "genre": "cabaret",
       "datum": "2026-12-02",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.spotgroningen.nl/programma/luuk-weggemans/"
     },
@@ -179,7 +179,7 @@
       "genre": "kleinkunst",
       "datum": "2026-12-06",
       "tijd": "14:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/yentl-de-boer-3/"
     },
@@ -192,7 +192,7 @@
       "genre": "kleinkunst",
       "datum": "2026-12-06",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/yentl-de-boer-4/"
     },
@@ -361,7 +361,7 @@
       "genre": "cabaret",
       "datum": "2027-01-24",
       "tijd": "14:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/paulien-cornelisse-micha-wertheim-2/"
     },

@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-21",
+  "opgehaald": "2026-11-22",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -843,32 +843,6 @@
     {
       "theater": "oude-luxor",
       "artiesten": [
-        "Ricky Risolles"
-      ],
-      "titel": "Niet zo Indiscreet",
-      "genre": "cabaret",
-      "datum": "2026-11-21",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ricky-risolles-59430/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Ricky Risolles"
-      ],
-      "titel": "Niet zo Indiscreet",
-      "genre": "cabaret",
-      "datum": "2027-11-07",
-      "tijd": "14:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ricky-risolles-59430/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
         "Thomas van Luyn"
       ],
       "titel": "Super Normaal",
@@ -1603,7 +1577,7 @@
       "genre": "cabaret",
       "datum": "2026-12-16",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "reprise",
       "bron": "https://luxortheater.nl/agenda/plien-bianca-57558/"
     },
@@ -2039,45 +2013,6 @@
     {
       "theater": "nieuwe-luxor",
       "artiesten": [
-        "Ronald Goedemondt"
-      ],
-      "titel": "Mijn lieve achterdocht",
-      "genre": "cabaret",
-      "datum": "2027-02-11",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Ronald Goedemondt"
-      ],
-      "titel": "Mijn lieve achterdocht",
-      "genre": "cabaret",
-      "datum": "2027-04-07",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Ronald Goedemondt"
-      ],
-      "titel": "Mijn lieve achterdocht",
-      "genre": "cabaret",
-      "datum": "2027-04-22",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
         "Chinese Stand-Up Comedy Show"
       ],
       "titel": "In collaboration with Gale Comedy",
@@ -2149,7 +2084,7 @@
       "genre": "cabaret",
       "datum": "2026-12-12",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
     },
@@ -2165,6 +2100,84 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn lieve achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn lieve achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-04-07",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Ronald Goedemondt"
+      ],
+      "titel": "Mijn lieve achterdocht",
+      "genre": "cabaret",
+      "datum": "2027-04-22",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/ronald-goedemondt-57447/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "‘Afrika is geen land’"
+      ],
+      "titel": "Familie Editie: Kameroen met Ntjam Rosie",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-06",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/afrika-is-geen-land-61684/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Luke Kidgell"
+      ],
+      "titel": "Live in Europe",
+      "genre": "cabaret",
+      "datum": "2027-09-17",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/luke-kidgell-61713/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "Luke Kidgell"
+      ],
+      "titel": "Live in Europe",
+      "genre": "cabaret",
+      "datum": "2027-09-17",
+      "tijd": "21:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/luke-kidgell-61713/"
     }
   ],
   "recensies": {}

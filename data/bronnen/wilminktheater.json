@@ -1,7 +1,7 @@
 {
   "bron": "wilminktheater",
   "naam": "Wilminktheater en Muziekcentrum Enschede",
-  "opgehaald": "2026-11-20",
+  "opgehaald": "2026-11-22",
   "theaters": [
     {
       "id": "wilminktheater",
@@ -21,52 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "wilminktheater",
-      "artiesten": [
-        "Huub Stapel"
-      ],
-      "titel": "Mannen komen van Mars, Vrouwen van Venus",
-      "genre": "comedy",
-      "datum": "2026-11-20",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/mannen-komen-van-mars-vrouwen-van-venus-7hxf"
-    },
-    {
-      "theater": "wilminktheater",
-      "artiesten": [
-        "Huub Stapel"
-      ],
-      "titel": "Mannen komen van Mars, Vrouwen van Venus",
-      "genre": "comedy",
-      "datum": "2026-11-21",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/mannen-komen-van-mars-vrouwen-van-venus-7hxf"
-    },
-    {
-      "theater": {
-        "id": "de-kleine-willem-enschede",
-        "naam": "De Kleine Willem",
-        "plaats": "Enschede",
-        "land": "NL",
-        "soort": "theater",
-        "website": null
-      },
-      "artiesten": [
-        "Paul Haenen"
-      ],
-      "titel": "Margreet Dolman brengt Warmte en Dominee Gremdaat wijst de Weg",
-      "genre": "cabaret",
-      "datum": "2026-11-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.wilminktheater.nl/nl/agenda/margreet-dolman-brengt-warmte-en-dominee-gremdaat-wijst-de-weg-rgxs"
-    },
     {
       "theater": {
         "id": "de-kleine-willem-enschede",
@@ -293,7 +247,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-27",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
     },
@@ -319,7 +273,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-28",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
     },
@@ -371,7 +325,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-30",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.wilminktheater.nl/nl/agenda/twentse-eindejaarsconference-2026-tjjy"
     },

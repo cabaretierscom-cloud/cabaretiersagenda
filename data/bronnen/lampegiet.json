@@ -1,7 +1,7 @@
 {
   "bron": "lampegiet",
   "naam": "Theater Lampegiet",
-  "opgehaald": "2026-11-21",
+  "opgehaald": "2026-11-22",
   "theaters": [
     {
       "id": "theater-lampegiet",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-lampegiet",
-      "artiesten": [
-        "De Verleiders"
-      ],
-      "titel": "Zoek dekking!",
-      "genre": "cabaret",
-      "datum": "2026-11-21",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.lampegiet.nl/agenda/de-verleiders-f88m"
-    },
     {
       "theater": "theater-lampegiet",
       "artiesten": [
@@ -356,7 +343,7 @@
       "genre": "cabaret",
       "datum": "2027-03-03",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.lampegiet.nl/agenda/dokter-bart-1yg1"
     },

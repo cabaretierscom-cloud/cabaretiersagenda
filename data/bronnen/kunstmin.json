@@ -1,7 +1,7 @@
 {
   "bron": "kunstmin",
   "naam": "Kunstmin",
-  "opgehaald": "2026-11-21",
+  "opgehaald": "2026-11-22",
   "theaters": [
     {
       "id": "kunstmin",
@@ -94,19 +94,6 @@
     {
       "theater": "kunstmin",
       "artiesten": [
-        "Nienke Plas"
-      ],
-      "titel": "Appeltje Eitje",
-      "genre": "cabaret",
-      "datum": "2027-05-07",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kunstmin.nl/voorstellingen/nienke-plas-appeltje-eitje/"
-    },
-    {
-      "theater": "kunstmin",
-      "artiesten": [
         "Kim Schuddeboom"
       ],
       "titel": "Hardleers",
@@ -116,6 +103,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/kim-schuddeboom/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Nienke Plas"
+      ],
+      "titel": "Appeltje Eitje",
+      "genre": "cabaret",
+      "datum": "2027-05-07",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/nienke-plas-appeltje-eitje/"
     },
     {
       "theater": "kunstmin",
@@ -458,19 +458,6 @@
     {
       "theater": "kunstmin",
       "artiesten": [
-        "Jandino"
-      ],
-      "titel": "DE GROTE JUBILEUMSHOW - Jandino 20 jaar",
-      "genre": "cabaret",
-      "datum": "2027-02-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kunstmin.nl/voorstellingen/jandino-de-grote-jubileumshow-jandino-20-jaar/"
-    },
-    {
-      "theater": "kunstmin",
-      "artiesten": [
         "Jan Beuving"
       ],
       "titel": "Dekpunt",
@@ -480,6 +467,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/jan-beuving-dekpunt/"
+    },
+    {
+      "theater": "kunstmin",
+      "artiesten": [
+        "Jandino"
+      ],
+      "titel": "DE GROTE JUBILEUMSHOW - Jandino 20 jaar",
+      "genre": "cabaret",
+      "datum": "2027-02-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.kunstmin.nl/voorstellingen/jandino-de-grote-jubileumshow-jandino-20-jaar/"
     },
     {
       "theater": "kunstmin",
@@ -952,7 +952,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-28",
       "tijd": "13:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/fien-en-teun-het-geheim-van-sinterklaas-2/"
     },
@@ -968,19 +968,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.kunstmin.nl/voorstellingen/fien-en-teun-het-geheim-van-sinterklaas-2/"
-    },
-    {
-      "theater": "kunstmin",
-      "artiesten": [
-        "HNTjong"
-      ],
-      "titel": "Dag Poes (4+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-21",
-      "tijd": "15:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.kunstmin.nl/voorstellingen/hntjong-dag-poes-4/"
     }
   ],
   "recensies": {}

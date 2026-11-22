@@ -1,7 +1,7 @@
 {
   "bron": "parade",
   "naam": "Theater aan de Parade",
-  "opgehaald": "2026-11-21",
+  "opgehaald": "2026-11-22",
   "theaters": [
     {
       "id": "theater-aan-de-parade",
@@ -557,6 +557,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraandeparade.nl/nl/programma/papa-zonder-handleiding-xl-jorgen-rayman-emiel-van-der-logt-howard-komproe"
+    },
+    {
+      "theater": "theater-aan-de-parade",
+      "artiesten": [
+        "November Music: Mispoes (4+) - Holland Opera"
+      ],
+      "titel": "Voor de kids!",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-11-22",
+      "tijd": "13:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraandeparade.nl/nl/programma/november-music-mispoes-hollandopera"
     },
     {
       "theater": "theater-aan-de-parade",

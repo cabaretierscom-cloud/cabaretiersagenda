@@ -1,7 +1,7 @@
 {
   "bron": "zuidplein",
   "naam": "Theater Zuidplein",
-  "opgehaald": "2026-11-21",
+  "opgehaald": "2026-11-22",
   "theaters": [
     {
       "id": "theater-zuidplein",
@@ -20,63 +20,11 @@
       ],
       "titel": "EN NOU GAAN WE EVEN HELEMAAL UIT ONZE PLAAT (een topshow) (6+)",
       "genre": "kindervoorstellingen",
-      "datum": "2026-11-21",
-      "tijd": "14:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/en-nou-gaan-we-even-helemaal-uit-onze-plaat-een-topshow-6-m5p6"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Maas theater en dans | Acteursgroep Wunderbaum"
-      ],
-      "titel": "EN NOU GAAN WE EVEN HELEMAAL UIT ONZE PLAAT (een topshow) (6+)",
-      "genre": "kindervoorstellingen",
       "datum": "2026-11-22",
       "tijd": "14:00",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterzuidplein.nl/agenda/en-nou-gaan-we-even-helemaal-uit-onze-plaat-een-topshow-6-m5p6"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Kijk je Kop"
-      ],
-      "titel": "Kijk je Kop",
-      "genre": "comedy",
-      "datum": "2026-11-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/kijk-je-kop-1jqx"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "Kijk je Kop"
-      ],
-      "titel": "Kijk je Kop",
-      "genre": "comedy",
-      "datum": "2027-04-02",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/kijk-je-kop-1jqx"
-    },
-    {
-      "theater": "theater-zuidplein",
-      "artiesten": [
-        "voor iedereen van 18 jaar en jonger die van muziek en bas houdt."
-      ],
-      "titel": "BassFest Junior 2026",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "11:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterzuidplein.nl/agenda/bassfest-junior-2026-hvm4"
     },
     {
       "theater": "theater-zuidplein",
@@ -922,6 +870,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterzuidplein.nl/agenda/de-koka-kola-rivier-9-4mzy"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Kijk je Kop"
+      ],
+      "titel": "Kijk je Kop",
+      "genre": "comedy",
+      "datum": "2027-04-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/kijk-je-kop-1jqx"
     },
     {
       "theater": "theater-zuidplein",

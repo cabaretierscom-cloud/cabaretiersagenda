@@ -1,7 +1,7 @@
 {
   "bron": "amai",
   "naam": "Amai Comedy Club",
-  "opgehaald": "2026-11-21",
+  "opgehaald": "2026-11-22",
   "theaters": [
     {
       "id": "amai-comedy-club-gent",
@@ -13,28 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "amai-comedy-club-gent",
-      "artiesten": [],
-      "titel": "SOLD OUT- Noches del 3er mundo",
-      "genre": "stand-up",
-      "datum": "2026-11-21",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.amaicomedyclub.com/event-details/sold-out-noches-del-3er-mundo"
-    },
-    {
-      "theater": "amai-comedy-club-gent",
-      "artiesten": [],
-      "titel": "Rising Stars Ghent",
-      "genre": "open-mic",
-      "datum": "2026-11-21",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.amaicomedyclub.com/event-details/rising-stars-ghent-5"
-    },
     {
       "theater": "amai-comedy-club-gent",
       "artiesten": [],
@@ -115,17 +93,6 @@
     {
       "theater": "amai-comedy-club-gent",
       "artiesten": [],
-      "titel": "Toonmoment cabaretreeks",
-      "genre": "comedy",
-      "datum": "2026-12-08",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.amaicomedyclub.com/event-details/toonmoment-cabaretreeks-1"
-    },
-    {
-      "theater": "amai-comedy-club-gent",
-      "artiesten": [],
       "titel": "Showcase level 3",
       "genre": "improvisatie",
       "datum": "2026-12-09",
@@ -199,6 +166,39 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.amaicomedyclub.com/event-details/comedy-explosie-2026-12-17-20-30"
+    },
+    {
+      "theater": "amai-comedy-club-gent",
+      "artiesten": [],
+      "titel": "Amai Improcomedy Legends",
+      "genre": "improvisatie",
+      "datum": "2026-12-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amaicomedyclub.com/event-details/amai-improcomedy-legends-nl-16"
+    },
+    {
+      "theater": "amai-comedy-club-gent",
+      "artiesten": [],
+      "titel": "Shaz Memon + friends comedy shows",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amaicomedyclub.com/event-details/shaz-memon-friends-comedy-shows-eng-2026-12-19-20-00"
+    },
+    {
+      "theater": "amai-comedy-club-gent",
+      "artiesten": [],
+      "titel": "Warm-up show Arnout Van Den Bossche - de relatiefluisteraar",
+      "genre": "stand-up",
+      "datum": "2027-01-06",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.amaicomedyclub.com/event-details/warm-up-show-arnout-van-den-bossche-de-relatiefluisteraar"
     }
   ],
   "recensies": {}

@@ -102,6 +102,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "afrika-is-geen-land-familie-editie-kameroen-met-ntjam-rosie",
+    "titel": "Familie Editie: Kameroen met Ntjam Rosie",
+    "artiesten": [
+      "afrika-is-geen-land"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "ageeth-de-haan-en-wessel-coppes-falalalala-bij-de-kerstboom",
     "titel": "Falalalala (bij de kerstboom)",
     "artiesten": [
@@ -906,13 +914,6 @@
         "bron": "https://www.arenberg.be/nl/programma/bas-birker/a0NP500000MyIa9MAF"
       }
     ]
-  },
-  {
-    "id": "bassfest-junior-2026-theater-zuidplein",
-    "titel": "BassFest Junior 2026",
-    "artiesten": [],
-    "genre": "kindervoorstellingen",
-    "theater": "theater-zuidplein"
   },
   {
     "id": "be-flat-living",
@@ -3061,10 +3062,7 @@
     "artiesten": [
       "de-verleiders"
     ],
-    "genre": "komedie",
-    "ookGenres": [
-      "cabaret"
-    ]
+    "genre": "komedie"
   },
   {
     "id": "de-volksjury-de-millennium-case",
@@ -7086,6 +7084,14 @@
     "theater": "comedyhuis-utrecht"
   },
   {
+    "id": "luke-kidgell-live-in-europe",
+    "titel": "Live in Europe",
+    "artiesten": [
+      "luke-kidgell"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "luthers-bach-ensemble-familie-mattheus",
     "titel": "Familie Mattheus",
     "artiesten": [
@@ -7351,7 +7357,21 @@
     "artiesten": [
       "marja-van-katendrecht"
     ],
-    "genre": "cabaret"
+    "genre": "cabaret",
+    "recensies": [
+      {
+        "medium": "I Love Theater",
+        "sterren": null,
+        "citaat": "Ze weet precies hoe ze het publiek kan vermaken, maar weet je ook te raken met haar indringende verhalen. Ze weet je het ene moment te ontroeren en het volgende moment lig je krom van het lachen. Haar mimiek is echt van een ander niveau.",
+        "bron": "https://theaterdestoep.nl/voorstelling/marja-van-katendrecht-2627"
+      },
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Praatjes, daar is ze heel erg goed in. In Aan boord bij Marja trekt ze enkele toeschouwers het podium op om te laten zien hóe goed precies. Het is knap hoe Van Katendrecht een ernstige ondertoon vasthoudt over eenzaamheid en escapisme.",
+        "bron": "https://theaterdestoep.nl/voorstelling/marja-van-katendrecht-2627"
+      }
+    ]
   },
   {
     "id": "marja-van-katendrecht-marja-s-spetterende-bingoshow",
@@ -8368,6 +8388,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "november-music-mispoes-holland-opera-voor-de-kids",
+    "titel": "Voor de kids!",
+    "artiesten": [
+      "november-music-mispoes-holland-opera"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
     "id": "november-music-sound-explorers-modelo62-theater-aan-de-parade",
     "titel": "November Music: Sound Explorers - Modelo62",
     "artiesten": [],
@@ -9176,14 +9204,6 @@
   {
     "id": "poppentheater-benk-janssen",
     "titel": "Benk Janssen",
-    "artiesten": [
-      "poppentheater"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
-    "id": "poppentheater-frank-peters",
-    "titel": "Frank Peters",
     "artiesten": [
       "poppentheater"
     ],
@@ -10229,6 +10249,13 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "shaz-memon-friends-comedy-shows-amai-comedy-club-gent",
+    "titel": "Shaz Memon + friends comedy shows",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
+  },
+  {
     "id": "showcase-level-3-amai-comedy-club-gent",
     "titel": "Showcase level 3",
     "artiesten": [],
@@ -10616,9 +10643,6 @@
         "citaat": "Pop slaat indrukwekkend alarm over de dictatuur van online algoritmes",
         "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/stefan-pop/"
       }
-    ],
-    "ookGenres": [
-      "cabaret"
     ]
   },
   {
@@ -11696,13 +11720,6 @@
     "theater": "de-spil"
   },
   {
-    "id": "toonmoment-cabaretreeks-amai-comedy-club-gent",
-    "titel": "Toonmoment cabaretreeks",
-    "artiesten": [],
-    "genre": "cabaret",
-    "theater": "amai-comedy-club-gent"
-  },
-  {
     "id": "toonmoment-comedyschrijfreeks-amai-comedy-club-gent",
     "titel": "Toonmoment Comedyschrijfreeks",
     "artiesten": [],
@@ -11956,6 +11973,14 @@
     "theater": "theater-lampegiet"
   },
   {
+    "id": "veldeke-theater-aajdjaorscabberet-eve-oonder-us",
+    "titel": "Aajdjaorscabberèt: Eve oonder us",
+    "artiesten": [
+      "veldeke-theater"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "veldhuis-en-kemper-nieuw-programma",
     "titel": "Nieuw programma",
     "artiesten": [
@@ -12137,6 +12162,13 @@
       "wannes-cappelle"
     ],
     "genre": "stand-up"
+  },
+  {
+    "id": "warm-up-show-arnout-van-den-bossche-de-relatiefluisteraar-amai-comedy-club-gent",
+    "titel": "Warm-up show Arnout Van Den Bossche - de relatiefluisteraar",
+    "artiesten": [],
+    "genre": "stand-up",
+    "theater": "amai-comedy-club-gent"
   },
   {
     "id": "warre-verlinden-zeker-onzeker",

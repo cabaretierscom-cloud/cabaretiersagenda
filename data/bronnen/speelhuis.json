@@ -1,7 +1,7 @@
 {
   "bron": "speelhuis",
   "naam": "Theater Het Speelhuis",
-  "opgehaald": "2026-11-21",
+  "opgehaald": "2026-11-22",
   "theaters": [
     {
       "id": "theater-het-speelhuis",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-het-speelhuis",
-      "artiesten": [
-        "Jochen Otten"
-      ],
-      "titel": "De kwaadste niet",
-      "genre": "cabaret",
-      "datum": "2026-11-21",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterspeelhuis.nl/programma/jochen-otten-13146"
-    },
     {
       "theater": "theater-het-speelhuis",
       "artiesten": [
@@ -640,32 +627,6 @@
       ],
       "titel": "Peper & Noten",
       "genre": "kindervoorstellingen",
-      "datum": "2026-11-21",
-      "tijd": "13:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterspeelhuis.nl/programma/sinterklaastheater-4-13362"
-    },
-    {
-      "theater": "theater-het-speelhuis",
-      "artiesten": [
-        "Sinterklaastheater (4+)"
-      ],
-      "titel": "Peper & Noten",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-21",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterspeelhuis.nl/programma/sinterklaastheater-4-13363"
-    },
-    {
-      "theater": "theater-het-speelhuis",
-      "artiesten": [
-        "Sinterklaastheater (4+)"
-      ],
-      "titel": "Peper & Noten",
-      "genre": "kindervoorstellingen",
       "datum": "2026-11-28",
       "tijd": "13:30",
       "status": "gepland",
@@ -710,19 +671,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterspeelhuis.nl/programma/sinterklaastheater-4-13367"
-    },
-    {
-      "theater": "theater-het-speelhuis",
-      "artiesten": [
-        "Poppentheater"
-      ],
-      "titel": "Frank Peters",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "10:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterspeelhuis.nl/programma/poppentheater-13370"
     },
     {
       "theater": "theater-het-speelhuis",
