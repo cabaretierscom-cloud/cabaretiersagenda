@@ -1201,6 +1201,16 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
    van het fotootje, zoals een stempel op een affiche. Tickets en Meer info zijn even breed. */
 .gig .knoppen .btn.tickets { min-width: 8.6rem; justify-content: space-between; }
 .gig .gig-beeld { position: relative; flex: none; display: block; line-height: 0; }
+/* Rijen zonder beeld (artiest- en voorstellingspagina's): de smalle datumkolom van vroeger, de titel vet. */
+.gig.zonder-beeld { grid-template-columns: 84px minmax(0, 1fr) minmax(0, 15rem) auto; }
+.gig.zonder-beeld .date { grid-template-columns: 1fr; align-content: center; }
+.gig.zonder-beeld .date b, .gig.zonder-beeld .date small { grid-column: 1; grid-row: auto; align-self: auto; }
+.gig.zonder-beeld .date small { margin-top: 4px; max-width: none; white-space: nowrap; }
+.gig.zonder-beeld .side .status.stempel { display: inline-block; }
+@media (max-width: 760px) { .gig.zonder-beeld { grid-template-columns: 76px minmax(0, 1fr); } .gig.zonder-beeld .date { align-content: start; } }
+.gig.zonder-artiest .show .titel { font-weight: 700; color: var(--ink); }
+/* Op een breder scherm de labels onder de titel (verzoek van de eigenaar, november 2026). */
+@media (min-width: 761px) { .gig .show .titel { flex-basis: 100%; } }
 .gig a.gig-beeld .gig-foto { transition: transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .2s; }
 @media (hover: hover) { .gig a.gig-beeld:hover .gig-foto { transform: translateY(-3px); box-shadow: 0 16px 22px -12px rgba(0,0,0,.6); } }
 @media (prefers-reduced-motion: reduce) { .gig a.gig-beeld .gig-foto { transition: none; } }
