@@ -626,7 +626,6 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* Zaalfoto in de kop: liggend formaat, gebouwen staan meestal breed in beeld. */
 .theater-foto { margin: 0; width: clamp(240px, 34vw, 440px); }
 .theater-foto img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-poster); box-shadow: 0 18px 40px -20px rgba(0,0,0,.5); background: rgba(0,0,0,.1); }
-.theater-foto img.logo { object-fit: contain; background: #fff; padding: 6%; box-sizing: border-box; }
 .theater-foto figcaption { font-size: .75rem; margin-top: 8px; opacity: .85; line-height: 1.35; }
 .theater-foto figcaption a { color: inherit; }
 @media (max-width: 640px) {
@@ -1178,7 +1177,6 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   -webkit-mask-image: radial-gradient(circle at 80% 25%, #000 0, #000 25%, transparent 75%);
           mask-image: radial-gradient(circle at 80% 25%, #000 0, #000 25%, transparent 75%);
 }
-.gig .gig-foto.logo { object-fit: contain; background: #fff; padding: 4px; box-sizing: border-box; }
 @media (max-width: 720px) { .gig .gig-foto { width: 52px; height: 52px; border-radius: 8px; } .gig .gig-foto.leeg { font-size: 1.5rem; } }
 
 /* De stempel Uitverkocht maakt de rij niet hoger. Op een breed scherm in een vaste plek links van de
