@@ -330,6 +330,10 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return `<span class="gig-foto leeg" style="${ink(zaalKleur(t))}" aria-hidden="true">${esc(letter)}</span>`;
   }
 
+  // Het affiche in de agendarij is een link naar de voorstellingspagina (verzoek van de eigenaar, november 2026),
+  // zonder eigen pagina naar de artiest; met het beeld van de zaal (artiest- en voorstellingspagina's) naar de zaal.
+  // Dezelfde link staat al in de tekst ernaast, dus niet nog eens voor schermlezers en toetsenbord.
+  const beeldLink = (pad, binnen) => pad ? `<a class="gig-beeld" href="${esc(pad)}" tabindex="-1" aria-hidden="true">${binnen}</a>` : `<span class="gig-beeld">${binnen}</span>`;
   function gigRow(g, { showArtist = true, showVenue = true, verbergGenre = null, verbergSoort = null, beeldZaal = false } = {}) {
     const v = V.get(g.voorstelling), t = T.get(g.theater);
     const zoek = [v.titel, t.naam, t.plaats, ...v.artiesten.map((a) => A.get(a).naam)].join(" ").toLowerCase();
@@ -340,7 +344,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const titel = showArtist ? (v.artiesten.length && echteTitel(g.voorstelling) ? showLink(g.voorstelling, esc(echteTitel(g.voorstelling))) : "") : esc(v.titel);
     return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-land="${t.land}" data-plaats="${esc(t.plaats)}" data-genre="${genresVanV(v).join(" ")}" data-status="${g.status}" data-zoek="${esc(zoek)}" data-waar="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}"${inAgenda}>
       <div class="date"><b>${fmt.day(g.datum)}</b><small>${fmt.weekdayShort(g.datum)}${g.tijd ? " " + g.tijd : ""}</small>
-        <span class="gig-beeld">${beeldZaal ? zaalFoto(t) : gigFoto(g.voorstelling)}${g.status === "uitverkocht" ? '<span class="status sold stempel op-foto" aria-hidden="true">Uitverkocht</span>' : ""}</span></div>
+        ${beeldLink(beeldZaal ? `/theaters/${t.id}/` : voorstellingPad.get(g.voorstelling) || (v.artiesten.length ? artiestPad(v.artiesten[0]) : ""), `${beeldZaal ? zaalFoto(t) : gigFoto(g.voorstelling)}${g.status === "uitverkocht" ? '<span class="status sold stempel op-foto" aria-hidden="true">Uitverkocht</span>' : ""}`)}</div>
       <div class="main">
         <div class="main-text">
           ${showArtist ? `<span class="artist">${artistLinks(g.voorstelling)}</span>` : ""}

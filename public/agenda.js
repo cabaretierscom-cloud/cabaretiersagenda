@@ -333,6 +333,8 @@
     const d = (iso) => new Date(iso + "T12:00:00");
     // Het fotootje vooraan in de rij, zoals gigFoto() in src/templates.mjs: [bestand, object-position, maker] of een
     // beginletter in de kleur van de artiest (een oud bestand zonder foto: alleen het kleurvlak).
+    // Het affiche als link naar de voorstelling (of de artiest), zoals beeldLink() in src/templates.mjs.
+    const beeldLink = (pad, binnen) => pad ? `<a class="gig-beeld" href="${esc(pad)}" tabindex="-1" aria-hidden="true">${binnen}</a>` : `<span class="gig-beeld">${binnen}</span>`;
     const fotoVak = (f, kleur) => Array.isArray(f)
       ? `<img class="gig-foto" src="${esc(f[0])}" alt="" loading="lazy" decoding="async" width="64" height="64"${f[1] ? ` style="object-position:${esc(f[1])}"` : ""}${f[2] ? ` title="Foto: ${esc(f[2])}"` : ""}>`
       : `<span class="gig-foto leeg" style="${kleur}" aria-hidden="true">${esc(f || "")}</span>`;
@@ -361,7 +363,7 @@
       const meet = ` data-theater="${esc(znaam)}" data-plaats="${esc(plaats)}" data-artiest="${esc(namen)}" data-voorstelling="${esc(titel)}" data-genre="${esc(g.genre)}" data-speeldatum="${g.datum}"`;
       const ticket = `<a class="btn tickets${kopen ? "" : " ghost"}" href="${esc(g.bron)}" target="_blank" rel="noopener nofollow"${meet}><span class="ticket-tekst">${kopen ? "Tickets" : "Meer info"}</span><span class="ticket-strook">${data.iconen.extern}</span><span class="visually-hidden">: ${esc(namen || titel)} op ${fVol.format(d(g.datum))} in ${esc(znaam)} (externe website, opent in een nieuw tabblad)</span></a>`;
       return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-genre="${g.genres.join(" ")}" data-status="${g.status}"${inAgenda}>
-      <div class="date"><b>${d(g.datum).getDate()}</b><small>${fKort.format(d(g.datum)).replace(".", "")}${g.tijd ? " " + g.tijd : ""}</small><span class="gig-beeld">${fotoVak(foto, kleur)}${g.status === "uitverkocht" ? '<span class="status sold stempel op-foto" aria-hidden="true">Uitverkocht</span>' : ""}</span></div>
+      <div class="date"><b>${d(g.datum).getDate()}</b><small>${fKort.format(d(g.datum)).replace(".", "")}${g.tijd ? " " + g.tijd : ""}</small>${beeldLink(pad || (ais.length ? adres(data.a[ais[0]][0]) : ""), `${fotoVak(foto, kleur)}${g.status === "uitverkocht" ? '<span class="status sold stempel op-foto" aria-hidden="true">Uitverkocht</span>' : ""}`)}</div>
       <div class="main"><div class="main-text"><span class="artist">${artiesten}</span><span class="show">${titelHtml}${labels}</span></div></div>
       <div class="venue"><a href="/theaters/${zid}/">${data.iconen.pin || ""}<span class="visually-hidden">Theater: </span>${esc(znaam)}</a><span><a href="/theaters-in-${pid}/">${esc(plaats)}</a>, ${esc(land)}</span></div>
       <div class="side">${status}<div class="knoppen">${ticket}</div></div>

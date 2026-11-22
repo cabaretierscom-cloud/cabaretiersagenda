@@ -1201,6 +1201,9 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
    van het fotootje, zoals een stempel op een affiche. Tickets en Meer info zijn even breed. */
 .gig .knoppen .btn.tickets { min-width: 8.6rem; justify-content: space-between; }
 .gig .gig-beeld { position: relative; flex: none; display: block; line-height: 0; }
+.gig a.gig-beeld .gig-foto { transition: transform .2s cubic-bezier(.2,.8,.2,1), box-shadow .2s; }
+@media (hover: hover) { .gig a.gig-beeld:hover .gig-foto { transform: translateY(-3px); box-shadow: 0 16px 22px -12px rgba(0,0,0,.6); } }
+@media (prefers-reduced-motion: reduce) { .gig a.gig-beeld .gig-foto { transition: none; } }
 .gig .stempel.op-foto { display: none; position: absolute; left: 50%; bottom: 8px; translate: -50% 0; white-space: nowrap; font-size: .7rem; padding: 2px 3px 1px; letter-spacing: .03em; line-height: 1; background: var(--paper); }
 @media (min-width: 1200px) {
   .gig .side { display: grid; grid-template-columns: 8.4rem auto; align-items: center; justify-items: end; gap: 14px; }
