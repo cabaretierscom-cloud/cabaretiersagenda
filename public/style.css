@@ -1179,21 +1179,19 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 }
 @media (max-width: 720px) { .gig .gig-foto { width: 52px; height: 52px; border-radius: 8px; } .gig .gig-foto.leeg { font-size: 1.5rem; } }
 
-/* VOORSTEL: de stempel Uitverkocht maakt de rij niet hoger. Op een groot scherm los in de rechterbovenhoek
-   van de rij, boven de knoppen; op de telefoon op dezelfde regel als de knoppen. */
-.gig { position: relative; }
-@media (min-width: 761px) {
-  .gig .side .status.stempel { position: absolute; top: 6px; right: 2px; z-index: 1; }
-}
-@media (max-width: 760px) {
-  .gig .side { flex-wrap: nowrap; }
-  .gig .side .status.stempel { order: 2; font-size: .78rem; padding: 2px 6px 1px; letter-spacing: .04em; white-space: nowrap; }
-}
-/* De stempel op het fotootje (alleen op kleine telefoons zichtbaar, zie hierboven). */
+/* VOORSTEL: de stempel Uitverkocht maakt de rij niet hoger. Op een breed scherm in een vaste plek links van de
+   knoppen (in elke rij even breed, zodat de knoppen recht onder elkaar staan); smaller schuin over de onderkant
+   van het fotootje, zoals een stempel op een affiche. Tickets en Meer info zijn even breed. */
+.gig .knoppen .btn.tickets { min-width: 8.6rem; justify-content: space-between; }
 .gig .gig-beeld { position: relative; flex: none; display: block; line-height: 0; }
-.gig .stempel.op-foto { display: none; position: absolute; left: 50%; bottom: 2px; translate: -50% 0; white-space: nowrap; font-size: .58rem; padding: 2px 3px 1px; letter-spacing: .03em; line-height: 1; background: var(--paper); }
-@media (max-width: 400px) {
-  /* Kleine telefoons: de stempel schuin over de onderkant van het fotootje, zoals een stempel op een affiche. */
+.gig .stempel.op-foto { display: none; position: absolute; left: 50%; bottom: 3px; translate: -50% 0; white-space: nowrap; font-size: .62rem; padding: 2px 3px 1px; letter-spacing: .03em; line-height: 1; background: var(--paper); }
+@media (min-width: 1200px) {
+  .gig .side { display: grid; grid-template-columns: 8.4rem auto; align-items: center; justify-items: end; gap: 14px; }
+  .gig .side > .status { grid-column: 1; white-space: nowrap; }
+  .gig .side > .knoppen { grid-column: 2; }
+}
+@media (max-width: 1199px) {
   .gig .side .status.stempel { display: none; }
   .gig .stempel.op-foto { display: block; }
 }
+@media (max-width: 400px) { .gig .stempel.op-foto { font-size: .58rem; } }
