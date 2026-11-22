@@ -131,6 +131,9 @@ const ARTIESTEN = [
   { naam: "Piet van Eeghen", url: "https://www.pietvaneeghen.nl/", volgorde: PZ },
   { naam: "Plien en Bianca", url: "https://plienenbianca.nl/speellijsten/", volgorde: ZP },
   { naam: "Rachid Larouz", url: "https://www.rachidlarouz.nl/", volgorde: ZP },
+  // Eigenaar van Cabaretiers.com, november 2026. Per avond "DILIGENTIA Den Haag" in één regel (zaal in kapitalen, dan
+  // de plaats) en "Raoul Heertje begrijpt steeds minder (solo)"; line-ups in comedyclubs blijven weg.
+  { naam: "Raoul Heertje", url: "https://www.raoulheertje.nl/waar-dan/", volgorde: ZP, vast: true, titel: "Begrijpt steeds minder", alleen: /begrijpt steeds minder/i, splits: /(?<=\p{Lu}{2,}[’']?)\s+(?=\p{Lu}[\p{Ll}’'])/u },
   { naam: "Remy Evers", url: "https://www.remyevers.nl/speellijst-2/", volgorde: PZ },
   { naam: "René van Meurs", url: "https://www.renevanmeurs.nl/", volgorde: PZ, titel: "Noodzakelijk kwaad", jaarUitMaandkop: true },
   { naam: "Richard Groenendijk", url: "https://richardgroenendijk.nl/", volgorde: PZ },

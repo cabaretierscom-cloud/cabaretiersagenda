@@ -81,7 +81,7 @@ const PLAATS_ALIAS = {
   "den bosch": "'s-Hertogenbosch", "s-hertogenbosch": "'s-Hertogenbosch", "'s hertogenbosch": "'s-Hertogenbosch",
   "alphen ad rijn": "Alphen aan den Rijn", "alphen a/d rijn": "Alphen aan den Rijn", "alphen": "Alphen aan den Rijn",
   "capelle ad ijssel": "Capelle aan den IJssel", "capelle a/d ijssel": "Capelle aan den IJssel", "krimpen ad ijssel": "Krimpen aan den IJssel", "krimpen a/d ijssel": "Krimpen aan den IJssel", "spijkernisse": "Spijkenisse",
-  "the hague": "Den Haag", "s-gravenhage": "Den Haag", "'s-gravenhage": "Den Haag", "amersfoot": "Amersfoort",
+  "the hague": "Den Haag", "a'dam": "Amsterdam", "a’dam": "Amsterdam", "r'dam": "Rotterdam", "r’dam": "Rotterdam", "s-gravenhage": "Den Haag", "'s-gravenhage": "Den Haag", "amersfoot": "Amersfoort",
   "doetichem": "Doetinchem", "gorichem": "Gorinchem", "berkel en roderijs": "Berkel en Rodenrijs", "h-i-ambacht": "Hendrik-Ido-Ambacht",
   "capelle aan de ijssel": "Capelle aan den IJssel", "krimpen a/d ijssel": "Krimpen aan den IJssel", "laren nh": "Laren",
   "noordwijk aan zee": "Noordwijk", "hengelo (o)": "Hengelo", "hengelo (ov)": "Hengelo", "den hoorn texel": "Texel", "oost-knollendam": "Oostknollendam", "h. i. ambacht": "Hendrik-Ido-Ambacht", "s'-heerenberg": "'s-Heerenberg", "alphen nb": "Alphen (NB)",
