@@ -1232,4 +1232,5 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   .gig .side .status.stempel { display: none; }
   .gig .stempel.op-foto { display: block; }
 }
-@media (max-width: 400px) { .gig .stempel.op-foto { font-size: .64rem; } }
+/* Op de telefoon groter (verzoek van de eigenaar, november 2026): bijna de hele breedte van het affiche. */
+@media (max-width: 760px) { .gig .stempel.op-foto { font-size: .9rem; padding: 3px 5px 2px; bottom: 14px; letter-spacing: .02em; } }
