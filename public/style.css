@@ -480,7 +480,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
    zodat de focusrand van de link zelf heel blijft. "Meer info" (uitverkocht e.d.) is een grijs kaartje. */
 .btn.tickets {
   --kaart: var(--accent); --op-kaart: var(--on-accent);
-  position: relative; isolation: isolate; min-height: 44px; padding: 0 4px 0 18px; gap: 0;
+  position: relative; isolation: isolate; min-height: 44px; padding: 0 4px 0 14px; gap: 0;
   border-radius: 8px; background: none; box-shadow: none; color: var(--op-kaart);
   font-size: var(--step--1); white-space: nowrap; transition: transform .2s cubic-bezier(.2,.8,.2,1);
 }
@@ -490,7 +490,8 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
           mask: radial-gradient(circle 6px at 0 50%, #0000 98%, #000) left / 51% 100% no-repeat, radial-gradient(circle 6px at 100% 50%, #0000 98%, #000) right / 51% 100% no-repeat;
 }
 .btn.tickets.ghost { --kaart: var(--paper-2); --op-kaart: var(--ink); box-shadow: none; }
-.btn.tickets .ticket-tekst { padding-right: 12px; }
+/* De tekst in het midden tussen het begin van het kaartje en de scheurrand, ook als de knop breder is (agendarij). */
+.btn.tickets .ticket-tekst { flex: 1; text-align: center; padding-right: 14px; }
 .btn.tickets .ticket-strook {
   align-self: stretch; display: grid; place-items: center; padding: 0 12px 0 10px; margin-block: 7px;
   border-left: 2px dashed color-mix(in srgb, var(--op-kaart) 45%, transparent);
