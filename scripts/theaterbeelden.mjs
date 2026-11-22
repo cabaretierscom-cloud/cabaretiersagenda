@@ -18,7 +18,9 @@ mkdirSync(join(werkmap, "beelden"), { recursive: true });
 const theaters = JSON.parse(readFileSync(new URL("../data/theaters.json", import.meta.url), "utf8"));
 // Kaartverkoop en sociale media zijn geen site van de zaal.
 const GEEN_ZAALSITE = /ticketmatic|weeztix|eventbrite|ticketmaster|ntk\.nl|facebook|instagram|fareharbor|google\./i;
-const kandidaten = theaters.filter((t) => t.foto == null && t.website && !GEEN_ZAALSITE.test(t.website));
+// Sites waarvan de eigenaar eerst zelf om toestemming vraagt (november 2026).
+const GEEN_TOESTEMMING = /comedytrain\.nl/i;
+const kandidaten = theaters.filter((t) => t.foto == null && t.website && !GEEN_ZAALSITE.test(t.website) && !GEEN_TOESTEMMING.test(t.website));
 console.log(`${kandidaten.length} zalen zonder foto met een website`);
 
 function beeldVan(html, pagina) {

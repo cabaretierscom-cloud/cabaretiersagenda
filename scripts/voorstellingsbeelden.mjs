@@ -26,6 +26,8 @@ const alGedaan = new Set(promo.filter((p) => p.voorstelling && p.foto).map((p) =
 
 // Kaartverkoop en sites zonder voorstellingspagina: daar staat geen beeld van de voorstelling.
 const GEEN_PAGINA = /ticketmatic|weeztix|eventbrite|ticketmaster|ntk\.nl|mtticket|podiumnederland|fareharbor|tix\.|ticket/i;
+// Sites waarvan de eigenaar eerst zelf om toestemming vraagt (november 2026): daar geen beelden van halen.
+const GEEN_TOESTEMMING = /(^|\.)comedytrain\.nl$/i;
 const komend = new Map();
 for (const s of speeldata) if (s.datum >= vandaag) (komend.get(s.voorstelling) || komend.set(s.voorstelling, []).get(s.voorstelling)).push(s);
 
@@ -38,7 +40,7 @@ for (const v of voorstellingen) {
   // Pagina's met de titel of de artiest in het adres eerst; geen kale homepages of speellijstpagina's.
   const woorden = gewoon(`${v.titel} ${artiest}`).split(" ").filter((w) => w.length > 3);
   const paginas = [...new Set(gigs.map((g) => g.bron))].filter((u) => {
-    try { const x = new URL(u); return x.pathname.length > 1 && !GEEN_PAGINA.test(x.hostname) && !/speellijst|tickets?\/?$|agenda\/?$|tour/i.test(x.pathname); } catch { return false; }
+    try { const x = new URL(u); return x.pathname.length > 1 && !GEEN_PAGINA.test(x.hostname) && !GEEN_TOESTEMMING.test(x.hostname) && !/speellijst|tickets?\/?$|agenda\/?$|tour/i.test(x.pathname); } catch { return false; }
   }).map((u) => [u, woorden.filter((w) => gewoon(u).includes(w)).length]).filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1]).map(([u]) => u);
   if (paginas.length) kandidaten.push({ vid: v.id, artiest, titel: v.titel, paginas: paginas.slice(0, 2) });
 }
