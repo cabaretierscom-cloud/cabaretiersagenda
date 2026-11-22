@@ -311,7 +311,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   function gigFotoGegevens(vid) {
     const v = V.get(vid);
     const foto = v.foto || fotoArtiest(vid)?.foto;
-    if (foto && !foto.heel) return [foto.bestand, (uitsnede(foto, 1).match(/object-position:([^"]+)/) || [])[1] || "", foto.maker || ""];
+    if (foto && !foto.heel) return [foto.bestand, (uitsnede(foto, 0.8).match(/object-position:([^"]+)/) || [])[1] || "", foto.maker || ""];
     const naam = v.artiesten.length ? A.get(v.artiesten[0]).naam : v.titel;
     return naam.replace(/^(de|het|the)\s+/i, "").charAt(0).toUpperCase();
   }
