@@ -1169,5 +1169,12 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* VOORSTEL: afbeelding in de agendarij */
 .gig .main { align-items: center; gap: 14px; }
 .gig .gig-foto { width: 64px; height: 64px; flex: none; border-radius: 10px; object-fit: cover; box-shadow: 0 1px 0 rgba(0,0,0,.08), inset 0 0 0 1px rgba(0,0,0,.06); }
-.gig .gig-foto.leeg { display: grid; place-items: center; background: var(--bg); color: var(--fg); font: 900 1.9rem/1 var(--font-display); }
+.gig .gig-foto.leeg { position: relative; isolation: isolate; overflow: hidden; display: grid; place-items: center; background: var(--bg); color: var(--fg); font: 900 1.9rem/1 var(--font-display); }
+/* Bolletjesraster zoals op de affiches, in de tekstkleur van de artiest. */
+.gig .gig-foto.leeg::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; opacity: .3;
+  background-image: radial-gradient(currentColor 1.1px, transparent 1.6px); background-size: 6px 6px;
+  -webkit-mask-image: radial-gradient(circle at 80% 25%, #000 0, #000 25%, transparent 75%);
+          mask-image: radial-gradient(circle at 80% 25%, #000 0, #000 25%, transparent 75%);
+}
 @media (max-width: 720px) { .gig .gig-foto { width: 52px; height: 52px; border-radius: 8px; } .gig .gig-foto.leeg { font-size: 1.5rem; } }
