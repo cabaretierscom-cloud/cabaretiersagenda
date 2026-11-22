@@ -815,14 +815,14 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   }
 
   // Kleuren en varianten van de briefjes: nooit twee dezelfde kleuren naast elkaar.
-  const POSTIT_KLEUREN = ["var(--riso-yellow)", "var(--riso-pink)", "var(--riso-lime)", "var(--riso-aqua)", "#FFB067", "var(--riso-lilac)"];
+  const POSTIT_KLEUREN = ["var(--riso-yellow)", "var(--riso-pink)", "var(--riso-lime)", "var(--riso-aqua)", "var(--riso-lilac)"];
   const POSTIT_VARIANTEN = [
     ["pin vouw-rechtsonder", -1.6, ""], ["tape krul", 1.2, "--t:4deg"], ["strook", 1.8, ""], ["tape-hoek vouw-linksonder", -1, ""],
     ["tape-groen", 1.4, "--t:-5deg"], ["strook vouw-rechtsonder", -1.8, ""], ["pin vouw-linksboven", 1.6, "--pinx:70%"], ["tape krul", -1.2, "--t:-2deg"],
   ];
   function postit(x, i) {
     let [klassen, r, extra] = POSTIT_VARIANTEN[i % POSTIT_VARIANTEN.length];
-    const kleur = x.n ? "#8FE3C4" : POSTIT_KLEUREN[i % POSTIT_KLEUREN.length];
+    const kleur = x.n ? "var(--riso-orange)" : POSTIT_KLEUREN[i % POSTIT_KLEUREN.length];
     if (x.n) {
       return `<li><a class="pi bericht ${klassen}" href="${nieuwsPad(x.n)}" style="--c:${kleur};--r:${r}deg;${extra}"><span class="vlak" aria-hidden="true"></span><span class="wat">Nieuws</span><b>${esc(x.n.titel)}</b><span class="voet"><span>${esc(fmt.dayMonth(x.n.datum))}</span><span>Lees meer →</span></span></a></li>`;
     }
