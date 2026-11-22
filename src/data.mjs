@@ -186,7 +186,8 @@ export function loadData(dir, { today }) {
     if (!LANDEN[t.land]) errors.push(`theater ${t.id}: onbekend land "${t.land}"`);
     if (t.kleur != null && !KLEUREN[t.kleur]) errors.push(`theater ${t.id}: onbekende kleur "${t.kleur}"`);
     if (!THEATERSOORTEN.includes(t.soort)) errors.push(`theater ${t.id}: onbekende soort "${t.soort}"`);
-    if (t.foto && typeof t.foto === "object" && !(t.foto.bestand && t.foto.alt && t.foto.maker && t.foto.licentie && t.foto.bron)) errors.push(`theater ${t.id}: foto zonder alt-tekst, maker, licentie of bron`);
+    // Een Wikimedia-foto heeft maker en licentie; een beeld van de site van de zaal (`promo`) heeft afzender en toestemming.
+    if (t.foto && typeof t.foto === "object" && !(t.foto.bestand && t.foto.alt && t.foto.bron && (t.foto.promo ? t.foto.van && t.foto.toestemming : t.foto.maker && t.foto.licentie))) errors.push(`theater ${t.id}: foto zonder alt-tekst, bron, maker en licentie (of afzender en toestemming)`);
     if (t.foto?.bestand && !existsSync(join(dir, "..", "public", t.foto.bestand))) errors.push(`theater ${t.id}: fotobestand ${t.foto.bestand} ontbreekt`);
     // Een vroegere naam (Comedytrain was Toomler): met uitleg en bron.
     if (t.voorheen && !(t.voorheen.naam && t.voorheen.alineas?.length && /^https?:\/\//.test(t.voorheen.bron || ""))) errors.push(`theater ${t.id}: voorheen zonder naam, alineas of bron`);

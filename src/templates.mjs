@@ -324,7 +324,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // de eigenaar, november 2026). De Wikimedia-foto van de zaal (maker als tooltip, licentie op de theaterpagina),
   // anders een vlak in de kleur van de zaal met de beginletter van de naam, zonder woorden als Theater of CC.
   function zaalFoto(t) {
-    if (t.foto?.bestand) return `<img class="gig-foto" src="${esc(t.foto.bestand)}" alt="" loading="lazy" decoding="async" width="64" height="64"${t.foto.maker ? ` title="Foto: ${esc(t.foto.maker)}"` : ""}>`;
+    if (t.foto?.bestand) return `<img class="gig-foto${t.foto.logo ? " logo" : ""}" src="${esc(t.foto.bestand)}" alt="" loading="lazy" decoding="async" width="64" height="64"${t.foto.maker ? ` title="Foto: ${esc(t.foto.maker)}"` : ""}>`;
     const kern = t.naam.replace(/^((de|het|the|theater|theatre|schouwburg|stadsschouwburg|stadstheater|cc|gc|oc|cultuurcentrum|cultuurhuis|podium|zaal|comedy club|comedyclub)\s+)+/i, "") || t.naam;
     const letter = kern.match(/[\p{L}\p{N}]/u)?.[0]?.toUpperCase() || "?";
     return `<span class="gig-foto leeg" style="${ink(zaalKleur(t))}" aria-hidden="true">${esc(letter)}</span>`;
@@ -698,7 +698,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   const zaalKleur = (t) => t.kleur || zaalKleuren[createHash("sha1").update(t.id).digest()[0] % zaalKleuren.length];
   function theaterKaartjes() {
     const kleurVan = zaalKleur;
-    const lijst = [...T.values()].filter((t) => t.foto?.bestand)
+    const lijst = [...T.values()].filter((t) => t.foto?.bestand && !t.foto.logo)
       .map((t) => ({ t, list: db.gigsForTheater(t.id).filter((g) => g.status !== "geannuleerd") }))
       .filter(({ list }) => list.length)
       .sort((x, y) => y.list.length - x.list.length || x.t.naam.localeCompare(y.t.naam, "nl"))
@@ -709,7 +709,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       const aantal = plural(list.length, "voorstelling", "voorstellingen");
       return `<a class="poster poster-foto poster-zaal" href="/theaters/${t.id}/" style="${ink(kleur)}">
         <span class="visually-hidden">${esc(t.naam)} in ${esc(t.plaats)}, ${aantal}, volgende: ${esc(wat)}</span>
-        <span class="poster-beeld" aria-hidden="true" title="Foto: ${esc(t.foto.maker)}, ${esc(t.foto.licentie)}">
+        <span class="poster-beeld" aria-hidden="true"${t.foto.maker ? ` title="Foto: ${esc(t.foto.maker)}, ${esc(t.foto.licentie)}"` : ""}>
           <img src="${esc(t.foto.bestand)}" alt="" width="${t.foto.breedte || 960}" height="${t.foto.hoogte || 720}" loading="lazy" decoding="async">
         </span>
         <span class="poster-vlak" aria-hidden="true">
@@ -1850,7 +1850,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   // Rechtenvrije foto (Wikimedia Commons) met verplichte naamsvermelding en licentie; bij promomateriaal alleen de fotograaf.
   // heel: true (promo.json) toont de foto in zijn eigen verhouding, zonder uitsnede (voorwaarde van de afzender).
   const fotoHtml = (a, klasse = "artiest-foto") => `<figure class="${klasse}">
-          <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${a.foto.heel ? ' class="heel"' : klasse === "artiest-foto" ? uitsnede(a.foto, 4 / 5) : ""}${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
+          <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${a.foto.logo ? ' class="logo"' : a.foto.heel ? ' class="heel"' : klasse === "artiest-foto" ? uitsnede(a.foto, 4 / 5) : ""}${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
           ${a.foto.promo && !a.foto.maker ? "" : `<figcaption>Foto: ${a.foto.promo ? esc(a.foto.maker) : `<a href="${esc(a.foto.bron)}" rel="noopener">${esc(a.foto.maker)}</a>`}${a.foto.promo ? "" : a.foto.licentieUrl ? `, <a href="${esc(a.foto.licentieUrl)}" rel="noopener license">${esc(a.foto.licentie)}</a>` : `, ${esc(a.foto.licentie)}`}</figcaption>`}
         </figure>`;
 
