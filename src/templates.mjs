@@ -325,7 +325,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-land="${t.land}" data-plaats="${esc(t.plaats)}" data-genre="${genresVanV(v).join(" ")}" data-status="${g.status}" data-zoek="${esc(zoek)}" data-waar="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}"${inAgenda}>
       <div class="date"><b>${fmt.day(g.datum)}</b><small>${fmt.weekdayShort(g.datum)}${g.tijd ? " " + g.tijd : ""}</small></div>
       <div class="main">
-        ${gigFoto(g.voorstelling)}
+        <span class="gig-beeld">${gigFoto(g.voorstelling)}${g.status === "uitverkocht" ? '<span class="status sold stempel op-foto" aria-hidden="true">Uitverkocht</span>' : ""}</span>
         <div class="main-text">
           ${showArtist ? `<span class="artist">${artistLinks(g.voorstelling)}</span>` : ""}
           <span class="show">${titel ? `<span class="titel">${titel}</span>` : ""}${rijLabels(g, { verbergGenre, verbergSoort })}</span>
