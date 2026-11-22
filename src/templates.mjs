@@ -304,14 +304,21 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // Staat "oudejaars" of "eindejaars" al in de titel of naam, dan is het label Oudejaarsconference dubbel (ook in agenda.js).
   const OUDEJAARS_IN_NAAM = /oudejaars|eindejaars/i;
 
-  // VOORSTEL: een kleine afbeelding van de voorstelling (of anders de artiest) vooraan in de agendarij;
-  // zonder foto een vlakje in de kleur van de artiest met de beginletter.
-  function gigFoto(vid) {
+  // Een kleine afbeelding vooraan in de agendarij (verzoek van de eigenaar, november 2026): de foto van de voorstelling,
+  // anders die van de artiest, bijgesneden rond het gezicht; zonder foto een vlakje in de kleur van de artiest met de
+  // beginletter en het bolletjesraster van de affiches. gigFotoGegevens() levert ook de gegevens voor /agenda/alles.js:
+  // [bestand, object-position, maker] of de beginletter. agenda.js (fotoVak) maakt er dezelfde opmaak van.
+  function gigFotoGegevens(vid) {
     const v = V.get(vid);
     const foto = v.foto || fotoArtiest(vid)?.foto;
-    if (foto && !foto.heel) return `<img class="gig-foto" src="${esc(foto.bestand)}" alt="" loading="lazy" decoding="async" width="64" height="64"${uitsnede(foto, 1)}${foto.maker ? ` title="Foto: ${esc(foto.maker)}"` : ""}>`;
+    if (foto && !foto.heel) return [foto.bestand, (uitsnede(foto, 1).match(/object-position:([^"]+)/) || [])[1] || "", foto.maker || ""];
     const naam = v.artiesten.length ? A.get(v.artiesten[0]).naam : v.titel;
-    return `<span class="gig-foto leeg" style="${ink(leadInk(vid))}" aria-hidden="true">${esc(naam.replace(/^(de|het|the)\s+/i, "").charAt(0).toUpperCase())}</span>`;
+    return naam.replace(/^(de|het|the)\s+/i, "").charAt(0).toUpperCase();
+  }
+  function gigFoto(vid) {
+    const f = gigFotoGegevens(vid);
+    if (Array.isArray(f)) return `<img class="gig-foto" src="${esc(f[0])}" alt="" loading="lazy" decoding="async" width="64" height="64"${f[1] ? ` style="object-position:${f[1]}"` : ""}${f[2] ? ` title="Foto: ${esc(f[2])}"` : ""}>`;
+    return `<span class="gig-foto leeg" style="${ink(leadInk(vid))}" aria-hidden="true">${esc(f)}</span>`;
   }
 
   function gigRow(g, { showArtist = true, showVenue = true, verbergGenre = null, verbergSoort = null } = {}) {
@@ -1031,7 +1038,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       const vs = V.get(g.voorstelling), t = T.get(g.theater);
       const vn = nr(vi, v, g.voorstelling, () => [
         vs.artiesten.map((id) => nr(ai, a, id, () => [artiestPad(id), A.get(id).naam])),
-        vs.titel, echteTitel(g.voorstelling) || "", voorstellingPad.get(g.voorstelling) || "", vs.genre, ink(leadInk(g.voorstelling)), vs.ookGenres || [],
+        vs.titel, echteTitel(g.voorstelling) || "", voorstellingPad.get(g.voorstelling) || "", vs.genre, ink(leadInk(g.voorstelling)), vs.ookGenres || [], gigFotoGegevens(g.voorstelling),
       ]);
       // Met de coördinaten van de plaats (voor /in-de-buurt/), of leeg als die onbekend zijn.
       const zn = nr(zi, z, g.theater, () => [t.id, t.naam, t.plaats, plaatsId(t.plaats), LANDEN[t.land], ...(geoPlaats(t.plaats, t.land) || [])]);

@@ -1166,7 +1166,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .field .keuze-afstand .keuze-lijst label { white-space: nowrap; }
 @media (max-width: 560px) { .filters .afstand-veld { flex-basis: 100%; } }
 
-/* VOORSTEL: afbeelding in de agendarij */
+/* Fotootje (of lettervak) vooraan in de agendarij: gigFoto() in src/templates.mjs en fotoVak() in agenda.js. */
 .gig .main { align-items: center; gap: 14px; }
 .gig .gig-foto { width: 64px; height: 64px; flex: none; border-radius: 10px; object-fit: cover; box-shadow: 0 1px 0 rgba(0,0,0,.08), inset 0 0 0 1px rgba(0,0,0,.06); }
 .gig .gig-foto.leeg { position: relative; isolation: isolate; overflow: hidden; display: grid; place-items: center; background: var(--bg); color: var(--fg); font: 900 1.9rem/1 var(--font-display); }
@@ -1179,7 +1179,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 }
 @media (max-width: 720px) { .gig .gig-foto { width: 52px; height: 52px; border-radius: 8px; } .gig .gig-foto.leeg { font-size: 1.5rem; } }
 
-/* VOORSTEL: de stempel Uitverkocht maakt de rij niet hoger. Op een breed scherm in een vaste plek links van de
+/* De stempel Uitverkocht maakt de rij niet hoger. Op een breed scherm in een vaste plek links van de
    knoppen (in elke rij even breed, zodat de knoppen recht onder elkaar staan); smaller schuin over de onderkant
    van het fotootje, zoals een stempel op een affiche. Tickets en Meer info zijn even breed. */
 .gig .knoppen .btn.tickets { min-width: 8.6rem; justify-content: space-between; }

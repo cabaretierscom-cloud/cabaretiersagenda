@@ -331,8 +331,13 @@
     const nl = (o) => new Intl.DateTimeFormat("nl-NL", o);
     const fVol = nl({ day: "numeric", month: "long", year: "numeric" }), fKort = nl({ weekday: "short" });
     const d = (iso) => new Date(iso + "T12:00:00");
+    // Het fotootje vooraan in de rij, zoals gigFoto() in src/templates.mjs: [bestand, object-position, maker] of een
+    // beginletter in de kleur van de artiest (een oud bestand zonder foto: alleen het kleurvlak).
+    const fotoVak = (f, kleur) => Array.isArray(f)
+      ? `<img class="gig-foto" src="${esc(f[0])}" alt="" loading="lazy" decoding="async" width="64" height="64"${f[1] ? ` style="object-position:${esc(f[1])}"` : ""}${f[2] ? ` title="Foto: ${esc(f[2])}"` : ""}>`
+      : `<span class="gig-foto leeg" style="${kleur}" aria-hidden="true">${esc(f || "")}</span>`;
     return function rijVoor(data, g, vastGenre, vastSoort) {
-      const [ais, titel, echte, pad, , kleur] = g.v, [zid, znaam, plaats, pid, land] = g.z;
+      const [ais, titel, echte, pad, , kleur, , foto] = g.v, [zid, znaam, plaats, pid, land] = g.z;
       const namen = ais.map((i) => data.a[i][1]).join(" & ");
       // data.a[i][0] is het adres van de artiest (of het festival); een oud bestand heeft nog de id.
       const adres = (x) => (x.startsWith("/") ? x : `/artiesten/${x}/`);
@@ -357,7 +362,7 @@
       const ticket = `<a class="btn tickets${kopen ? "" : " ghost"}" href="${esc(g.bron)}" target="_blank" rel="noopener nofollow"${meet}><span class="ticket-tekst">${kopen ? "Tickets" : "Meer info"}</span><span class="ticket-strook">${data.iconen.extern}</span><span class="visually-hidden">: ${esc(namen || titel)} op ${fVol.format(d(g.datum))} in ${esc(znaam)} (externe website, opent in een nieuw tabblad)</span></a>`;
       return `<article class="gig${g.status === "geannuleerd" ? " cancelled" : ""}" data-datum="${g.datum}" data-genre="${g.genres.join(" ")}" data-status="${g.status}"${inAgenda}>
       <div class="date"><b>${d(g.datum).getDate()}</b><small>${fKort.format(d(g.datum)).replace(".", "")}${g.tijd ? " " + g.tijd : ""}</small></div>
-      <div class="main"><span class="swatch" style="${kleur};background:var(--bg)" aria-hidden="true"></span><div class="main-text"><span class="artist">${artiesten}</span><span class="show">${titelHtml}${labels}</span></div></div>
+      <div class="main"><span class="gig-beeld">${fotoVak(foto, kleur)}${g.status === "uitverkocht" ? '<span class="status sold stempel op-foto" aria-hidden="true">Uitverkocht</span>' : ""}</span><div class="main-text"><span class="artist">${artiesten}</span><span class="show">${titelHtml}${labels}</span></div></div>
       <div class="venue"><a href="/theaters/${zid}/">${data.iconen.pin || ""}<span class="visually-hidden">Theater: </span>${esc(znaam)}</a><span><a href="/theaters-in-${pid}/">${esc(plaats)}</a>, ${esc(land)}</span></div>
       <div class="side">${status}<div class="knoppen">${ticket}</div></div>
     </article>`;
