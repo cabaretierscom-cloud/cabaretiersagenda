@@ -822,7 +822,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   ];
   function postit(x, i) {
     let [klassen, r, extra] = POSTIT_VARIANTEN[i % POSTIT_VARIANTEN.length];
-    const kleur = x.n ? "#F3F3F6" : POSTIT_KLEUREN[i % POSTIT_KLEUREN.length];
+    const kleur = x.n ? "#8FE3C4" : POSTIT_KLEUREN[i % POSTIT_KLEUREN.length];
     if (x.n) {
       return `<li><a class="pi bericht ${klassen}" href="${nieuwsPad(x.n)}" style="--c:${kleur};--r:${r}deg;${extra}"><span class="vlak" aria-hidden="true"></span><span class="wat">Nieuws</span><b>${esc(x.n.titel)}</b><span class="voet"><span>${esc(fmt.dayMonth(x.n.datum))}</span><span>Lees meer →</span></span></a></li>`;
     }
