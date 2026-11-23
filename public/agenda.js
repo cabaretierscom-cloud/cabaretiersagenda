@@ -778,20 +778,23 @@
   });
 })();
 
-// Weergave licht, donker of automatisch (de instelling van het apparaat), onderaan elke pagina. De keuze blijft in de
-// browser staan (cabaretiers-weergave); een klein script in de <head> zet hem al voor het tekenen, zodat er niets flitst.
+// Schakelaar licht/donker onderaan elke pagina. Zonder eigen keuze volgt de site het apparaat; de schakelaar staat dan
+// zoals de site er nu uitziet. Een keuze blijft in de browser staan (cabaretiers-weergave); een klein script in de
+// <head> zet hem al voor het tekenen, zodat er niets flitst.
 (() => {
-  const groep = document.querySelector(".weergave");
-  if (!groep) return;
+  const knop = document.querySelector(".weergave");
+  if (!knop) return;
   const SLEUTEL = "cabaretiers-weergave";
-  const lees = () => { try { return localStorage.getItem(SLEUTEL) || "auto"; } catch { return "auto"; } };
-  const zet = (keuze) => {
-    if (keuze === "auto") delete document.documentElement.dataset.theme;
-    else document.documentElement.dataset.theme = keuze === "licht" ? "light" : "dark";
-    try { keuze === "auto" ? localStorage.removeItem(SLEUTEL) : localStorage.setItem(SLEUTEL, keuze); } catch { /* privévenster */ }
-    for (const k of groep.querySelectorAll("button")) k.setAttribute("aria-pressed", String(k.dataset.weergave === keuze));
-  };
-  groep.hidden = false;
-  zet(lees());
-  groep.addEventListener("click", (e) => { const k = e.target.closest("button[data-weergave]"); if (k) zet(k.dataset.weergave); });
+  const systeemDonker = matchMedia("(prefers-color-scheme: dark)");
+  const isDonker = () => { const t = document.documentElement.dataset.theme; return t ? t === "dark" : systeemDonker.matches; };
+  const toon = () => knop.setAttribute("aria-checked", String(isDonker()));
+  knop.hidden = false;
+  toon();
+  systeemDonker.addEventListener?.("change", toon);
+  knop.addEventListener("click", () => {
+    const donker = !isDonker();
+    document.documentElement.dataset.theme = donker ? "dark" : "light";
+    try { localStorage.setItem(SLEUTEL, donker ? "donker" : "licht"); } catch { /* privévenster */ }
+    toon();
+  });
 })();
