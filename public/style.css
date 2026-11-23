@@ -1186,10 +1186,21 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   .strip-wrap:has(> .strip :is(.artist-card, .poster-foto))::after { right: 0; }
   .strip-wrap:is(:hover, :focus-within)::before, .strip-wrap:is(:hover, :focus-within)::after { opacity: 0; }
   .strip-wrap .strip-nav { z-index: 4; }
-  /* In de gele kop van de homepage zijn de vlakken bovenin geel (zonder raster). */
-  .home-kop .strip-wrap:has(> .strip :is(.artist-card, .poster-foto))::before, .home-kop .strip-wrap:has(> .strip :is(.artist-card, .poster-foto))::after { background: linear-gradient(to bottom, var(--kop-geel) var(--kop-overlap), var(--paper) 0); }
+  /* In de gele kop van de homepage zou een afdekvlak het bolletjesraster onderbreken. Daar maakt een masker op de
+     rij de kaarten buiten de lijn doorzichtig, zodat de echte achtergrond doorloopt; met de muis erop vervaagt het. */
+  .home-kop .strip-wrap:has(> .strip :is(.artist-card, .poster-foto))::before,
+  .home-kop .strip-wrap:has(> .strip :is(.artist-card, .poster-foto))::after { display: none; }
+  .home-kop .strip-wrap:has(> .strip :is(.artist-card, .poster-foto)) > .strip {
+    --rand-zicht: 0; --rand-x: calc(var(--rand) - 2px);
+    -webkit-mask-image: linear-gradient(to right, rgb(0 0 0 / var(--rand-zicht)) var(--rand-x), #000 var(--rand-x), #000 calc(100% - var(--rand-x)), rgb(0 0 0 / var(--rand-zicht)) calc(100% - var(--rand-x)));
+            mask-image: linear-gradient(to right, rgb(0 0 0 / var(--rand-zicht)) var(--rand-x), #000 var(--rand-x), #000 calc(100% - var(--rand-x)), rgb(0 0 0 / var(--rand-zicht)) calc(100% - var(--rand-x)));
+    transition: --rand-zicht .3s ease;
+  }
+  .home-kop .strip-wrap:has(> .strip :is(.artist-card, .poster-foto)):is(:hover, :focus-within) > .strip { --rand-zicht: 1; }
 }
-@media (prefers-reduced-motion: reduce) { .strip-wrap::before, .strip-wrap::after { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .strip-wrap::before, .strip-wrap::after, .home-kop .strip { transition: none; } }
+/* Getal dat kan vervagen (masker van de affichewand in de gele kop). */
+@property --rand-zicht { syntax: "<number>"; inherits: true; initial-value: 0; }
 .site-footer .footer-paginas { margin-top: -8px; }
 
 /* Bij mij in de buurt (/in-de-buurt/ en de knop op de homepage). */
