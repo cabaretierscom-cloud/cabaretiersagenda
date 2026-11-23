@@ -11,7 +11,8 @@
 //   node scripts/ga.mjs google    [--dagen 28]   Google zoekresultaten (Search Console): vertoningen, klikken, positie per pagina
 //   node scripts/ga.mjs dashboard [--dagen 28]   alle rapporten (laatste 28 dagen en per maand, t/m gisteren) naar data/ga-dashboard.json voor /dashboard/
 //   node scripts/ga.mjs zoektermen [--dagen 28] [--pagina /pad/]  zoektermen in Google (Search Console API), met vertoningen,
-//                                                klikken, doorklikratio en positie; met --pagina alleen voor die pagina
+//                                                klikken, doorklikratio en positie; met --pagina alleen voor pagina's met dat
+//                                                pad erin, met --pagina /pad/ --exact precies die ene pagina
 //   ... --json                                   ruwe uitvoer als JSON
 // Voor zoektermen heeft het serviceaccount in Search Console de rol "Beperkt" en staat de Search Console API aan.
 // data/ga-dashboard.json staat in .gitignore: de repository is openbaar. GitHub Actions haalt het elke run
@@ -197,7 +198,10 @@ if (soort === "zoektermen") {
       method: "POST", headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
       body: JSON.stringify({
         startDate: dag(dagen + 2), endDate: dag(2), dimensions: ["query"], rowLimit: 500,
-        ...(pagina ? { dimensionFilterGroups: [{ filters: [{ dimension: "page", operator: "contains", expression: pagina }] }] } : {}),
+        // --pagina zoekt op "bevat" (/ is dus de hele site); --exact precies die pagina (voor de homepage: --pagina / --exact).
+        ...(pagina ? { dimensionFilterGroups: [{ filters: [args.includes("--exact")
+          ? { dimension: "page", operator: "equals", expression: new URL(pagina, SITE_GSC).href }
+          : { dimension: "page", operator: "contains", expression: pagina }] }] } : {}),
       }),
     }, "Search Console");
     if (alsJson) { console.log(JSON.stringify(j, null, 2)); process.exit(0); }
