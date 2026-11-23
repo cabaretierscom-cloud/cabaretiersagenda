@@ -200,7 +200,7 @@ export function createTemplates(db, { ga = null } = {}) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<script>try{var w=localStorage.getItem("cabaretiers-weergave");if(w==="licht"||w==="donker")document.documentElement.dataset.theme=w==="licht"?"light":"dark"}catch(e){}</script>
+<script>document.documentElement.classList.add("js");try{var w=localStorage.getItem("cabaretiers-weergave");if(w==="licht"||w==="donker")document.documentElement.dataset.theme=w==="licht"?"light":"dark"}catch(e){}</script>
 <title>${esc(fullTitle)}</title>
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${SITE.url}${path}">${noindex ? `
@@ -237,7 +237,8 @@ ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title
       <span class="brand-mark" aria-hidden="true">${LOGO_SVG}</span>
       <span class="logo-tekst"><span class="wordmark">${WOORDMERK_SVG}<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
     </a>
-    <nav class="nav" aria-label="Hoofdmenu">${nav}</nav>
+    <button type="button" class="menu-knop" aria-expanded="false" aria-controls="hoofdmenu"><span class="menu-icoon" aria-hidden="true"><span></span><span></span><span></span></span><span class="visually-hidden">Menu</span></button>
+    <nav class="nav" id="hoofdmenu" aria-label="Hoofdmenu">${nav}</nav>
   </div>
 </header>
 <main id="main">

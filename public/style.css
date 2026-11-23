@@ -167,11 +167,35 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .nav a { text-decoration: none; font-weight: 500; padding: 10px 12px; border-radius: 999px; white-space: nowrap; }
 .nav a:hover { background: var(--paper-2); }
 .nav a[aria-current="page"] { background: var(--ink); color: var(--paper); }
-/* Menu onder het logo zodra de zeven knoppen er niet meer naast passen. */
+/* Smaller dan 960px: een hamburgermenu rechts in de kop (verzoek van de eigenaar, november 2026); het menu klapt
+   onder de kop uit. Zonder JavaScript (geen class "js" op <html>) staat het menu als veegbalk onder het logo. */
+.menu-knop { display: none; }
 @media (max-width: 960px) {
   .site-header .wrap { flex-wrap: wrap; gap: 4px 16px; padding-block: 10px; }
   .nav { margin-left: -12px; width: calc(100% + 12px); overflow-x: auto; scrollbar-width: none; }
+  .js .site-header .wrap { flex-wrap: nowrap; position: relative; }
+  .js .menu-knop {
+    display: inline-flex; align-items: center; justify-content: center; margin-left: auto; width: 48px; height: 48px; padding: 0;
+    border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); color: var(--ink); cursor: pointer;
+  }
+  .js .menu-knop:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .menu-icoon { position: relative; width: 22px; height: 16px; }
+  .menu-icoon span { position: absolute; left: 0; width: 100%; height: 2.5px; border-radius: 2px; background: currentColor; transition: transform .2s ease, opacity .2s ease, top .2s ease; }
+  .menu-icoon span:nth-child(1) { top: 0; }
+  .menu-icoon span:nth-child(2) { top: 6.75px; }
+  .menu-icoon span:nth-child(3) { top: 13.5px; }
+  .menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(1) { top: 6.75px; transform: rotate(45deg); }
+  .menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(2) { opacity: 0; }
+  .menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(3) { top: 6.75px; transform: rotate(-45deg); }
+  .js .nav {
+    display: none; position: absolute; top: calc(100% + 10px); left: 0; right: 0; width: auto; margin: 0; overflow: visible;
+    flex-direction: column; gap: 2px; padding: 10px; border-radius: 16px; background: var(--paper);
+    border: 2px solid var(--ink); box-shadow: 0 18px 40px -16px rgba(18, 18, 18, .45);
+  }
+  .js .nav.open { display: flex; }
+  .js .nav a { padding: 13px 16px; border-radius: 10px; font-size: var(--step-1); }
 }
+@media (prefers-reduced-motion: reduce) { .menu-icoon span { transition: none; } }
 
 .btn {
   display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
