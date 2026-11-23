@@ -40,6 +40,8 @@ export const SITE = {
   ],
 };
 
+// Vergrootglas voor de zoekknop op de homepage.
+const ICON_ZOEK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>';
 const ICON = {
   pin: '<svg class="ic-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>',
   sold: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M6 18L18 6"/></svg>',
@@ -967,6 +969,15 @@ ${nu ? `<section class="wall" aria-labelledby="nu-title">
     <div><dt>artiesten</dt><dd>${tellers.artiesten}</dd></div>
     <div><dt>theaters</dt><dd>${tellers.zalen}</dd></div>
   </dl>
+</section>
+<section class="wrap home-zoek" aria-label="Zoek in de agenda">
+  <form class="home-zoek-form" action="/agenda/" method="get" role="search">
+    <label for="home-q">Zoek op artiest, voorstelling, plaats of theater</label>
+    <div class="home-zoek-rij">
+      <input id="home-q" name="q" type="search" autocomplete="off" placeholder="Lebbis, Utrecht of Carré" required>
+      <button type="submit" class="btn">${ICON_ZOEK}<span>Zoeken</span></button>
+    </div>
+  </form>
 </section>
 ${oudejaars ? `
 <section class="wall wall-oudejaars" aria-labelledby="oudejaars-title">
