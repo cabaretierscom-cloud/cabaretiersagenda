@@ -940,6 +940,14 @@
     "website": "https://levelscomedyclub.be"
   },
   {
+    "id": "theater-scala-gent",
+    "naam": "Theater Scala",
+    "plaats": "Gent",
+    "land": "BE",
+    "soort": "comedyclub",
+    "website": null
+  },
+  {
     "id": "viernulvier-gent",
     "naam": "VIERNULVIER",
     "plaats": "Gent",
@@ -1084,7 +1092,7 @@
   {
     "id": "cc-zwaneberg-heist-op-den-berg",
     "naam": "CC Zwaneberg",
-    "plaats": "Heist op den Berg",
+    "plaats": "Heist-op-den-Berg",
     "land": "BE",
     "soort": "theater",
     "website": "http://zwaneberg.be"
@@ -4517,14 +4525,6 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.eendracht-gemert.nl"
-  },
-  {
-    "id": "theater-scala-gent",
-    "naam": "Theater Scala",
-    "plaats": "gent",
-    "land": "NL",
-    "soort": "comedyclub",
-    "website": null
   },
   {
     "id": "minard-gent",

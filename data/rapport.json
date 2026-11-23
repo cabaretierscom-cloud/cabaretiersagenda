@@ -1,11 +1,11 @@
 {
-  "datum": "2026-11-22",
+  "datum": "2026-11-23",
   "totaal": {
     "speeldata": 9760,
-    "komend": 8420,
+    "komend": 8364,
     "artiesten": 975,
     "zalen": 755,
-    "plaatsen": 516,
+    "plaatsen": 514,
     "voorstellingen": 1405
   },
   "bronnen": [
@@ -723,72 +723,9 @@
     }
   ],
   "nieuw": {
-    "artiesten": [
-      {
-        "id": "afrika-is-geen-land",
-        "naam": "‘Afrika is geen land’"
-      },
-      {
-        "id": "luke-kidgell",
-        "naam": "Luke Kidgell"
-      },
-      {
-        "id": "november-music-mispoes-holland-opera",
-        "naam": "November Music: Mispoes - Holland Opera"
-      },
-      {
-        "id": "veldeke-theater",
-        "naam": "Veldeke Theater"
-      }
-    ],
+    "artiesten": [],
     "zalen": [],
-    "voorstellingen": [
-      {
-        "id": "afrika-is-geen-land-familie-editie-kameroen-met-ntjam-rosie",
-        "titel": "Familie Editie: Kameroen met Ntjam Rosie",
-        "artiesten": [
-          "afrika-is-geen-land"
-        ]
-      },
-      {
-        "id": "luke-kidgell-live-in-europe",
-        "titel": "Live in Europe",
-        "artiesten": [
-          "luke-kidgell"
-        ]
-      },
-      {
-        "id": "november-music-mispoes-holland-opera-voor-de-kids",
-        "titel": "Voor de kids!",
-        "artiesten": [
-          "november-music-mispoes-holland-opera"
-        ]
-      },
-      {
-        "id": "shaz-memon-friends-comedy-shows-amai-comedy-club-gent",
-        "titel": "Shaz Memon + friends comedy shows",
-        "artiesten": []
-      },
-      {
-        "id": "veldeke-theater-aajdjaorscabberet-eve-oonder-us",
-        "titel": "Aajdjaorscabberèt: Eve oonder us",
-        "artiesten": [
-          "veldeke-theater"
-        ]
-      },
-      {
-        "id": "warm-up-show-arnout-van-den-bossche-de-relatiefluisteraar-amai-comedy-club-gent",
-        "titel": "Warm-up show Arnout Van Den Bossche - de relatiefluisteraar",
-        "artiesten": []
-      },
-      {
-        "id": "srefidensi-comedyshow-2026",
-        "titel": "",
-        "artiesten": [
-          "srefidensi-comedyshow-2026"
-        ]
-      }
-    ]
+    "voorstellingen": []
   },
   "controleren": 0,
   "geschiedenis": [
@@ -1051,6 +988,15 @@
       "artiesten": 975,
       "zalen": 755,
       "plaatsen": 516,
+      "voorstellingen": 1405
+    },
+    {
+      "datum": "2026-11-23",
+      "speeldata": 9760,
+      "komend": 8364,
+      "artiesten": 975,
+      "zalen": 755,
+      "plaatsen": 514,
       "voorstellingen": 1405
     }
   ]

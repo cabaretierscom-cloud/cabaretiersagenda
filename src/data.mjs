@@ -182,6 +182,15 @@ export function loadData(dir, { today }) {
     if (a.foto && typeof a.foto === "object" && !(a.foto.bestand && a.foto.alt && (a.foto.maker || a.foto.promo) && a.foto.licentie && a.foto.bron)) errors.push(`artiest ${a.id}: foto zonder alt-tekst, maker, licentie of bron`);
     if (a.foto?.bestand && !existsSync(join(dir, "..", "public", a.foto.bestand))) errors.push(`artiest ${a.id}: fotobestand ${a.foto.bestand} ontbreekt`);
   }
+  // Twee schrijfwijzen van één plaats ("gent" en "Gent") krijgen hetzelfde webadres; dan overschrijft de ene
+  // plaatspagina de andere. Zet de plaats gelijk met "verbeteren" in data/zaal-aliassen.json.
+  const plaatsPerAdres = new Map();
+  for (const t of theaters) {
+    const adres = String(t.plaats).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    const eerder = plaatsPerAdres.get(adres);
+    if (eerder && eerder !== t.plaats) errors.push(`theater ${t.id}: plaats "${t.plaats}" heeft hetzelfde webadres als "${eerder}"; kies één schrijfwijze`);
+    else plaatsPerAdres.set(adres, t.plaats);
+  }
   for (const t of theaters) {
     if (!LANDEN[t.land]) errors.push(`theater ${t.id}: onbekend land "${t.land}"`);
     if (t.kleur != null && !KLEUREN[t.kleur]) errors.push(`theater ${t.id}: onbekende kleur "${t.kleur}"`);

@@ -48,7 +48,8 @@ const write = (path, html) => {
   const file = path.endsWith(".html") ? join(out, path) : join(out, path, "index.html");
   mkdirSync(dirname(file), { recursive: true });
   writeFileSync(file, VOORBEELD ? relatief(fotosInPagina(html), path) : html);
-  if (!path.endsWith(".html")) pages.push(path);
+  // Elke pagina één keer in de sitemap (een dubbel adres overschrijft een andere pagina; src/data.mjs bewaakt dat).
+  if (!path.endsWith(".html") && !pages.includes(path)) pages.push(path);
   // Het hoofdbeeld van de pagina (og:image, niet het algemene deelbeeld) met alt-tekst voor de beeldensitemap.
   const beeld = html.match(/<meta property="og:image" content="([^"]+)">/)?.[1];
   if (beeld && !beeld.endsWith("/deelafbeelding.png")) beelden.set(path, beeld);
