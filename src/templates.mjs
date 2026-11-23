@@ -483,7 +483,8 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
           ...(over ? { about: over } : {}),
           ...(hoofd ? { mainEntity: hoofd } : {}),
           ...(foto ? { primaryImageOfPage: { "@id": fotoLd(foto)["@id"] }, image: { "@id": fotoLd(foto)["@id"] } } : {}),
-          dateModified: db.lastFetched || db.today,
+          // build.mjs vult de datum van de laatste inhoudelijke wijziging van deze pagina in, dezelfde als in de sitemap.
+          dateModified: "__DATUM_GEWIJZIGD__",
         },
         ...(pad.length > 1 ? [{
           "@type": "BreadcrumbList", "@id": paginaUrl + "#kruimelpad",

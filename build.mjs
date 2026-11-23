@@ -2,6 +2,7 @@
 // Alleen speeldata vanaf vandaag komen op de site; oudere blijven in data/ als archief.
 import { mkdirSync, rmSync, writeFileSync, cpSync, readFileSync, existsSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
+import { createHash } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { loadData } from "./src/data.mjs";
 import { createTemplates, SITE, LOGO_SVG } from "./src/templates.mjs";
@@ -43,10 +44,33 @@ const t = createTemplates(db, { ga });
 rmSync(out, { recursive: true, force: true });
 cpSync(join(root, "public"), out, { recursive: true });
 
+// Datum van de laatste inhoudelijke wijziging per pagina (sitemap <lastmod> en dateModified in de JSON-LD), niet de
+// datum van de build: anders staat elke pagina elke nacht op "vandaag" en negeert Google het veld. Per pagina een
+// vingerafdruk van wat er inhoudelijk op staat (titel, description, <main> en de gestructureerde gegevens; niet de kop en
+// de voet, die op alle pagina's tegelijk veranderen). Verandert die, dan wordt de datum vandaag. data/pagina-datums.json
+// gaat 's nachts mee met de andere gegevens (bijwerken.yml), zodat de datums blijven staan. Zie CLAUDE.md.
+const DATUMS = join(root, "data", "pagina-datums.json");
+const vorigeDatums = existsSync(DATUMS) ? JSON.parse(readFileSync(DATUMS, "utf8")) : {};
+const nieuweDatums = {};
+const inhoud = (html) => [
+  html.match(/<title>[\s\S]*?<\/title>/)?.[0],
+  html.match(/<meta name="description"[^>]*>/)?.[0],
+  html.match(/<main[\s\S]*<\/main>/)?.[0],
+  ...html.matchAll(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g).map((m) => m[0]),
+].join("\n").replace(/([?&])v=[\w.-]+/g, "$1v=");
+const gewijzigd = (path, html) => {
+  const vingerafdruk = createHash("sha1").update(inhoud(html)).digest("base64url").slice(0, 16);
+  const vorig = vorigeDatums[path];
+  const datum = vorig && vorig[0] === vingerafdruk ? vorig[1] : today;
+  nieuweDatums[path] = [vingerafdruk, datum];
+  return datum;
+};
+
 const pages = [];
 const write = (path, html) => {
   const file = path.endsWith(".html") ? join(out, path) : join(out, path, "index.html");
   mkdirSync(dirname(file), { recursive: true });
+  html = html.replaceAll("__DATUM_GEWIJZIGD__", path.endsWith(".html") ? today : gewijzigd(path, html));
   writeFileSync(file, VOORBEELD ? relatief(fotosInPagina(html), path) : html);
   // Elke pagina één keer in de sitemap (een dubbel adres overschrijft een andere pagina; src/data.mjs bewaakt dat).
   if (!path.endsWith(".html") && !pages.includes(path)) pages.push(path);
@@ -120,7 +144,7 @@ if (VOORBEELD) {
 }
 writeFileSync(join(out, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n` +
-  pages.map((p) => `  <url><loc>${SITE.url}${p}</loc><lastmod>${today}</lastmod>${beelden.has(p) ? `<image:image><image:loc>${beelden.get(p)}</image:loc></image:image>` : ""}</url>`).join("\n") +
+  pages.map((p) => `  <url><loc>${SITE.url}${p}</loc><lastmod>${nieuweDatums[p]?.[1] || today}</lastmod>${beelden.has(p) ? `<image:image><image:loc>${beelden.get(p)}</image:loc></image:image>` : ""}</url>`).join("\n") +
   `\n</urlset>\n`);
 // Doorverwijzingen (301) van de oude WordPress-adressen: /<naam>/ -> /artiesten/<naam>/ als die pagina
 // er is, anders naar de homepage (data/oude-adressen.json). Ook elke artiest met een pagina krijgt zo'n
@@ -147,4 +171,6 @@ writeFileSync(join(out, "sitemap.xml"),
 }
 writeFileSync(join(out, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /controle/\nDisallow: /dashboard/\nSitemap: ${SITE.url}/sitemap.xml\n`);
 
+// Alleen pagina's die nu bestaan; met de voorbeeldversie (VOORBEELD=1) niets wegschrijven.
+if (!VOORBEELD) writeFileSync(DATUMS, JSON.stringify(Object.fromEntries(Object.entries(nieuweDatums).sort()), null, 0).replace(/\],"/g, '],\n"') + "\n");
 console.log(`Gebouwd op ${today}: ${pages.length} pagina's, ${db.upcoming.length} aankomende speeldata.`);
