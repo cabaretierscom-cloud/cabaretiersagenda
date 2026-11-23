@@ -1317,4 +1317,4 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .weergave:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; border-radius: 6px; }
 
 /* Smalle telefoons: de voorbeeldtekst in de zoekvelden past dan nog net. */
-@media (max-width: 374px) { .home-zoek input::placeholder, .field input[type=search]::placeholder { font-size: .8rem; } }
+@media (max-width: 374px) { .home-zoek input::placeholder, .field input[type=search]::placeholder { font-size: .8rem; } .home-zoek input { padding: 0 11px; } }

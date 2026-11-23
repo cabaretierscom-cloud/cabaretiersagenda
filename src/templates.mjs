@@ -948,10 +948,10 @@ ${netBinnenBlok({ link: false, klein: true })}
 
   // Zoekbalk naar /agenda/?q=… en snelkoppelingen met het aantal voorstellingen (een tegel zonder voorstellingen valt
   // weg): in het gele vlak op de homepage en, zonder geel, bovenaan /alle-cabaretiers/ (verzoek van de eigenaar, november 2026).
-  function zoekFormulier(id = "home-q") {
+  function zoekFormulier(id = "home-q", voorbeeld = "Jochem Myjer, Eindhoven of Carré") {
     return `<form class="home-zoek" action="/agenda/" method="get" role="search">
         <label for="${id}" class="visually-hidden">Zoek op artiest, voorstelling, plaats of theater</label>
-        <input id="${id}" name="q" type="search" autocomplete="off" placeholder="Jochem Myjer, Eindhoven of Carré" required>
+        <input id="${id}" name="q" type="search" autocomplete="off" placeholder="${esc(voorbeeld)}" required>
         <button type="submit" class="btn">${ICON_ZOEK}<span>Zoeken</span></button>
       </form>`;
   }
@@ -1530,7 +1530,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const kopTournee = soort === "alle" ? "Bekende cabaretiers op tournee" : `Bekende ${esc(P.wie)} op tournee`;
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">${esc(P.naam)}</h1><p>${intro}</p></div>
-      ${soort === "alle" ? `<div class="zoek-los">${zoekFormulier("cabaretiers-q")}${snelkoppelingen()}</div>` : ""}
+      <div class="zoek-los">${zoekFormulier("cabaretiers-q", soort === "vrouw" ? "Plien en Bianca, Eindhoven of Carré" : undefined)}${snelkoppelingen()}</div>
       ${soort === "alle" ? "" : `<p class="zie-ook">Bekijk ook de ${andere.join(", de ")} of <a href="/artiesten/">alle artiesten</a>.</p>`}
       ${affiches ? "" : `<h2 class="sub-head">${kopTournee}</h2>
       <div class="artists">${artiestKaarten(top)}</div>`}
