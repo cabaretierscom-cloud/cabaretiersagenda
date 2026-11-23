@@ -384,10 +384,12 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .filters .field { flex: 1 1 180px; }
 .filters .search { flex: 3 1 320px; }
 .filters .toggle-veld { flex: 0 0 auto; }
+/* Zoekvelden, keuzelijsten en vinkjes overal zoals de zoekbalk op de homepage: 50px hoog, dikke zwarte rand, hoek 12px;
+   tegels en knopjes met een dunne zwarte rand (verzoek van de eigenaar, november 2026). */
 /* "Uitverkocht verbergen": een vinkje in een vak van dezelfde hoogte als de keuzelijsten. */
 .toggle {
-  display: inline-flex; align-items: center; gap: 10px; min-height: 46px; padding: 0 16px; border-radius: 10px; cursor: pointer;
-  border: 1.5px solid var(--rule); background: var(--paper); color: var(--ink); font: 600 var(--step-0) var(--font-body); white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 16px; border-radius: 12px; cursor: pointer;
+  border: 2px solid var(--ink); background: var(--paper); color: var(--ink); font: 600 var(--step-0) var(--font-body); white-space: nowrap;
 }
 .field .toggle { color: var(--ink); font-size: var(--step-0); }
 .field .toggle input { flex: none; width: 20px; height: 20px; min-height: 0; margin: 0; padding: 0; border: 0; accent-color: var(--ink); }
@@ -396,8 +398,8 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .field { display: grid; gap: 6px; min-width: 0; }
 .field label, .field .label { font-size: var(--step--1); font-weight: 600; color: var(--ink-2); }
 .field input, .field select {
-  min-height: 46px; width: 100%; padding: 0 14px; border-radius: 10px;
-  border: 1.5px solid var(--rule); background: var(--paper); color: var(--ink);
+  min-height: 50px; width: 100%; padding: 0 14px; border-radius: 12px;
+  border: 2px solid var(--ink); background: var(--paper); color: var(--ink);
   font: 500 var(--step-0) var(--font-body);
 }
 /* Keuzelijsten met hetzelfde pijltje als het genrevak (.keuze summary::after): even groot, 16px van de rand. */
@@ -406,8 +408,8 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* Genrekeuze: een uitklapvak met vinkjes (meerdere genres tegelijk) en het aantal voorstellingen. */
 .keuze { position: relative; min-width: 220px; }
 .keuze summary {
-  list-style: none; display: flex; align-items: center; gap: 10px; min-height: 46px; padding: 0 40px 0 14px; border-radius: 10px; cursor: pointer;
-  border: 1.5px solid var(--rule); background: var(--paper); color: var(--ink); font: 500 var(--step-0) var(--font-body); position: relative;
+  list-style: none; display: flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 40px 0 14px; border-radius: 12px; cursor: pointer;
+  border: 2px solid var(--ink); background: var(--paper); color: var(--ink); font: 500 var(--step-0) var(--font-body); position: relative;
 }
 .keuze summary::-webkit-details-marker { display: none; }
 .keuze summary::after { content: ""; position: absolute; right: 16px; top: 50%; width: 8px; height: 8px; border: solid var(--ink); border-width: 0 2px 2px 0; transform: translateY(-70%) rotate(45deg); }
@@ -439,7 +441,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
 .chip {
   min-height: 46px; padding: 0 16px; border-radius: 999px; cursor: pointer;
-  border: 1.5px solid var(--rule); background: var(--paper); color: var(--ink);
+  border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink);
   font: 600 var(--step-0) var(--font-body);
 }
 .chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
@@ -721,10 +723,10 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .home-intro h1 em { font-style: normal; }
 .home-intro .intro { max-width: 52ch; margin: 12px 0 0; font-size: var(--step-1); line-height: 1.45; color: #121212; }
 .home-zoek { display: flex; gap: 10px; margin-top: 22px; }
-.home-zoek input { flex: 1; min-width: 0; min-height: 54px; padding: 0 18px; border-radius: 12px; border: 2px solid #121212; background: #fff; color: #121212; font: 500 var(--step-1) var(--font-body); }
+.home-zoek input { flex: 1; min-width: 0; min-height: 50px; padding: 0 18px; border-radius: 12px; border: 2px solid #121212; background: #fff; color: #121212; font: 500 var(--step-1) var(--font-body); }
 .home-zoek input::placeholder { color: #6b6b78; }
 .home-zoek input:focus-visible { outline: 3px solid #121212; outline-offset: 2px; }
-.home-zoek .btn { min-height: 54px; padding: 0 22px; gap: 8px; background: #121212; color: #fff; }
+.home-zoek .btn { min-height: 50px; padding: 0 22px; gap: 8px; background: #121212; color: #fff; }
 .home-zoek .btn svg { width: 20px; height: 20px; }
 .home-zoek .btn:focus-visible { outline: 3px solid #121212; outline-offset: 3px; }
 /* Cijfers achter de stippellijn van de affiches. */
@@ -760,7 +762,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .month-nav { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 20px; scrollbar-width: thin; }
 .month-nav a {
   flex: 0 0 auto; display: grid; justify-items: center; min-width: 64px; padding: 8px 10px; border-radius: 10px;
-  text-decoration: none; border: 1.5px solid var(--rule); line-height: 1.1;
+  text-decoration: none; border: 1.5px solid var(--ink); line-height: 1.1;
 }
 .month-nav a b { font-family: var(--font-display); font-weight: 800; font-size: 1.4rem; text-transform: lowercase; }
 .month-nav a span { font-size: var(--step--1); color: var(--ink-2); }
@@ -774,7 +776,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .city-chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .city-chips a {
   display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px;
-  border: 1.5px solid var(--rule); text-decoration: none; font-weight: 600;
+  border: 1.5px solid var(--ink); text-decoration: none; font-weight: 600;
 }
 .city-chips a:hover { border-color: var(--ink); }
 .city-chips span { color: var(--ink-2); font-weight: 500; font-variant-numeric: tabular-nums; }
@@ -932,7 +934,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* Maandpagina per week: weekkeuze bovenaan; agenda.js toont eerst één week (zie #gigs[data-ingeklapt]). */
 .week-nav { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin: 18px 0 0; padding-bottom: 2px; }
 .week-nav::-webkit-scrollbar { display: none; }
-.week-nav a { flex: 0 0 auto; display: grid; gap: 2px; padding: 8px 14px; border-radius: 12px; border: 1.5px solid var(--rule); text-decoration: none; color: var(--ink); font-size: var(--step--1); line-height: 1.2; }
+.week-nav a { flex: 0 0 auto; display: grid; gap: 2px; padding: 8px 14px; border-radius: 12px; border: 1.5px solid var(--ink); text-decoration: none; color: var(--ink); font-size: var(--step--1); line-height: 1.2; }
 .week-nav a b { font-weight: 700; white-space: nowrap; }
 .week-nav a span { color: var(--ink-2); }
 .week-nav a[aria-current="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
@@ -1211,7 +1213,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .buurt-kies { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 8px 0 14px; }
 .buurt-of { color: var(--ink-2); }
 .buurt-plaats { flex: 1 1 260px; max-width: 420px; }
-.buurt-plaats input { width: 100%; font: inherit; padding: 12px 14px; border: 1px solid var(--rule); border-radius: 10px; background: var(--paper); color: var(--ink); }
+.buurt-plaats input { width: 100%; font: inherit; min-height: 50px; padding: 0 14px; border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); color: var(--ink); }
 .buurt-opties { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin-bottom: 10px; }
 .buurt-straal { display: inline-flex; gap: 6px; }
 .buurt-straal button { font: 600 .9rem/1 var(--font-body); border: 2px solid var(--ink); border-radius: 999px; padding: 8px 14px; background: transparent; color: var(--ink); cursor: pointer; }

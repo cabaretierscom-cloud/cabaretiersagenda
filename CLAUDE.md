@@ -110,4 +110,6 @@ De kop van elke pagina blijft bij het scrollen bovenaan staan, als matglas (lich
 
 Affichewanden (`.strip` met `artist-card` of `poster-foto`, zoals op de homepage) lopen door tot de rand van het scherm; op desktop zijn de kaarten buiten de lijn van de inhoud verborgen tot je met de muis over de rij gaat (twee vlakken in de achtergrondkleur op `.strip-wrap`, verzoek van de eigenaar november 2026).
 
+Zoekvelden, keuzelijsten (genre, afstand, maand), het vinkje Uitverkocht verbergen en het plaatsveld op /in-de-buurt/ zien er overal uit als de zoekbalk op de homepage: 50 px hoog, een dikke zwarte rand (`var(--ink)`, in donker licht) en hoek 12 px; maand-, week- en plaatstegels en knopjes (`.month-nav`, `.week-nav`, `.city-chips`, `.chip`) hebben een dunne zwarte rand (verzoek van de eigenaar, november 2026).
+
 Affichestijl: kleurvlakken in risografie-inkten (tokens `--riso-*` in `public/style.css`), Big Shoulders Display voor koppen, Instrument Sans voor tekst. Kleur alleen in affiches, artiestkaarten en detailkoppen; de speellijst blijft zwart op wit. Elke artiest heeft een vaste `kleur` uit `KLEUREN` in `src/data.mjs`.
