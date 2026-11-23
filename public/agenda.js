@@ -777,3 +777,21 @@
     for (const r of rijen) r.hidden = !!k.dataset.soort && r.dataset.soort !== k.dataset.soort;
   });
 })();
+
+// Weergave licht, donker of automatisch (de instelling van het apparaat), onderaan elke pagina. De keuze blijft in de
+// browser staan (cabaretiers-weergave); een klein script in de <head> zet hem al voor het tekenen, zodat er niets flitst.
+(() => {
+  const groep = document.querySelector(".weergave");
+  if (!groep) return;
+  const SLEUTEL = "cabaretiers-weergave";
+  const lees = () => { try { return localStorage.getItem(SLEUTEL) || "auto"; } catch { return "auto"; } };
+  const zet = (keuze) => {
+    if (keuze === "auto") delete document.documentElement.dataset.theme;
+    else document.documentElement.dataset.theme = keuze === "licht" ? "light" : "dark";
+    try { keuze === "auto" ? localStorage.removeItem(SLEUTEL) : localStorage.setItem(SLEUTEL, keuze); } catch { /* privévenster */ }
+    for (const k of groep.querySelectorAll("button")) k.setAttribute("aria-pressed", String(k.dataset.weergave === keuze));
+  };
+  groep.hidden = false;
+  zet(lees());
+  groep.addEventListener("click", (e) => { const k = e.target.closest("button[data-weergave]"); if (k) zet(k.dataset.weergave); });
+})();

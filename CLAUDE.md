@@ -104,6 +104,8 @@ Cabaret- en comedyagenda voor Nederland en België. Statische site, gebouwd door
 
 Logo: zie `ontwerp/logo/README.md` (oranje beeldmerk, punt op de i, roze .com). Favicons (`favicon.ico`, `icon-192/512.png`, `logo.svg`) maakt `scripts/favicons.mjs` uit het beeldmerk; de links in de kop hebben `?v=2` (ophogen bij een nieuw icoon, zodat Google en browsers het opnieuw ophalen), plus `public/site.webmanifest`.
 
+Donkere modus: de site volgt de instelling van het apparaat (`prefers-color-scheme`), en onderaan elke pagina staat een keuze Automatisch / Licht / Donker (`.weergave` in de voet, script onderaan `public/agenda.js`, verzoek van de eigenaar november 2026). Die zet `data-theme` op `<html>` (de CSS kent `[data-theme="light"]` en `[data-theme="dark"]`) en bewaart de keuze in de browser (`cabaretiers-weergave`, uitgelegd op /privacy/); een klein script in de `<head>` zet hem vóór het tekenen, zodat er niets flitst. Zonder JavaScript is de keuze verborgen.
+
 De kop van elke pagina blijft bij het scrollen bovenaan staan, als matglas (licht doorschijnend en wazig, met een minimale schaduw eronder; `.site-header`, verzoek van de eigenaar november 2026).
 
 Affichewanden (`.strip` met `artist-card` of `poster-foto`, zoals op de homepage) lopen door tot de rand van het scherm; op desktop zijn de kaarten buiten de lijn van de inhoud verborgen tot je met de muis over de rij gaat (twee vlakken in de achtergrondkleur op `.strip-wrap`, verzoek van de eigenaar november 2026).

@@ -1234,3 +1234,13 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 }
 /* Op de telefoon groter (verzoek van de eigenaar, november 2026): bijna de hele breedte van het affiche. */
 @media (max-width: 760px) { .gig .stempel.op-foto { font-size: .9rem; padding: 3px 5px 2px; bottom: 14px; letter-spacing: .02em; } }
+
+/* Weergave (licht, donker, automatisch) in de voet: de voet is altijd donker. */
+.weergave { display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap; margin-top: 14px; padding: 4px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; }
+.weergave[hidden] { display: none; }
+.weergave-label { font-size: var(--step--1); padding: 0 8px 0 10px; opacity: .8; }
+.weergave button { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 14px; border: 0; border-radius: 999px; background: none; color: #fff; font: 600 var(--step--1)/1 var(--font-body); cursor: pointer; }
+.weergave button svg { width: 16px; height: 16px; }
+.weergave button:hover { background: rgba(255,255,255,.12); }
+.weergave button[aria-pressed="true"] { background: #fff; color: #121212; }
+.weergave button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }

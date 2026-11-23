@@ -177,6 +177,9 @@ export function createTemplates(db, { ga = null } = {}) {
     </div>`).join("")}</nav>`;
   };
 
+  // Knopjes voor de weergave onderaan elke pagina (licht, donker of de instelling van het apparaat; agenda.js).
+  const ICON_ZON = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+  const ICON_MAAN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>';
   function layout({ title, description = SITE.description, path, section, body, schema, noindex = false }) {
     const foto = schema?.foto?.foto;
     const nav = [
@@ -195,6 +198,7 @@ export function createTemplates(db, { ga = null } = {}) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>try{var w=localStorage.getItem("cabaretiers-weergave");if(w==="licht"||w==="donker")document.documentElement.dataset.theme=w==="licht"?"light":"dark"}catch(e){}</script>
 <title>${esc(fullTitle)}</title>
 <meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${SITE.url}${path}">${noindex ? `
@@ -248,6 +252,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     <div class="footer-contact">
     <p class="contact">Contact: <a href="mailto:${SITE.email}">${SITE.email}</a></p>
     <p class="contact footer-paginas"><a href="/over/">Over</a> · <a href="/privacy/">Privacy</a></p>
+    <div class="weergave" role="group" aria-label="Weergave" hidden><span class="weergave-label">Weergave</span><button type="button" data-weergave="auto" aria-pressed="true">Automatisch</button><button type="button" data-weergave="licht" aria-pressed="false">${ICON_ZON}Licht</button><button type="button" data-weergave="donker" aria-pressed="false">${ICON_MAAN}Donker</button></div>
     <ul class="social" aria-label="Volg ons">${SITE.social.map((s) => `<li><a href="${esc(s.url)}" rel="me noopener" target="_blank" aria-label="${esc(s.naam)} (opent in nieuw venster)" title="${esc(s.naam)}">${s.icoon}</a></li>`).join("")}</ul>
     </div>
   </div>
@@ -2677,7 +2682,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <p>Google bewaart de gegevens maximaal 14 maanden. Google kan gegevens verwerken in de Verenigde Staten, onder het EU-VS-gegevensprivacykader.</p>
         <p><button type="button" class="knop-secundair" data-cookies-wijzig hidden>Cookiekeuze wijzigen</button></p>
         <h2 id="opslag">Wat er in je browser blijft staan</h2>
-        <p>Je keuze in de cookiemelding bewaren we in je eigen browser (<code>cabaretiers-cookies</code>), zodat we het niet elke keer opnieuw vragen. Dat gaat niet naar ons of naar anderen.</p>
+        <p>Je keuze in de cookiemelding bewaren we in je eigen browser (<code>cabaretiers-cookies</code>), zodat we het niet elke keer opnieuw vragen, net als een keuze voor een lichte of donkere weergave onderaan elke pagina (<code>cabaretiers-weergave</code>). Dat gaat niet naar ons of naar anderen.</p>
         <h2 id="video">Video's</h2>
         <p>Gebruik je <a href="/in-de-buurt/">Bij mij in de buurt</a> en geef je toestemming voor je locatie, dan rekent je eigen browser de afstand tot de theaters uit. Je locatie gaat niet naar ons of naar anderen en wordt niet bewaard.</p>
         <p>Op sommige artiestpagina's staan video's van YouTube. Die laden pas als je erop klikt; dan maakt je browser verbinding met YouTube (in de privacyvriendelijke modus zonder cookies vooraf) en gelden de privacyregels van Google.</p>
