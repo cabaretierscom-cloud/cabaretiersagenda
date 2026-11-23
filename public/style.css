@@ -702,8 +702,16 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
    met kop, intro, zoekbalk (naar /agenda/?q=…), cijfers en snelkoppelingen. De affiches van "Nu in het theater"
    steken over de onderrand: het vlak loopt door tot --kop-overlap in de affichewand. Het vlak blijft geel in de
    donkere modus, dus alle kleuren hier staan vast. */
-.home-kop { --kop-geel: var(--riso-yellow); --kop-overlap: 96px; color: #121212;
-  background: radial-gradient(rgba(0,0,0,.12) 1.3px, transparent 1.7px) 0 0 / 9px 9px, var(--kop-geel); }
+.home-kop { --kop-geel: var(--riso-yellow); --kop-overlap: 96px; color: #121212; background: var(--kop-geel); position: relative; isolation: isolate; }
+/* Bolletjesraster zoals op de affiches: kleine, lichte punten die vanuit de hoek rechtsboven vervagen. */
+.home-kop::before { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: .2;
+  background-image: radial-gradient(#121212 1.2px, transparent 1.7px); background-size: 11px 11px;
+  -webkit-mask-image: radial-gradient(circle at 100% 0, #000 0, #000 15%, transparent 55%);
+          mask-image: radial-gradient(circle at 100% 0, #000 0, #000 15%, transparent 55%); }
+.home-kop > * { position: relative; z-index: 1; }
+@media (max-width: 600px) {
+  .home-kop::before { -webkit-mask-image: radial-gradient(circle at 100% 0, #000 0, transparent 45%); mask-image: radial-gradient(circle at 100% 0, #000 0, transparent 45%); }
+}
 .home-kop > .wall .strip-wrap { background: linear-gradient(to bottom, transparent var(--kop-overlap), var(--paper) 0); }
 .home-kop > .wall { padding-top: 20px; }
 .home-kop > .wall .wall-head :is(h2, p, a) { color: #121212; }
