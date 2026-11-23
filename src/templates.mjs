@@ -556,7 +556,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     <div class="field search">
       ${waar ? `<label for="f-q">Zoek op plaats of theater</label>
       <input id="f-q" name="q" type="search" autocomplete="off" data-veld="waar" placeholder="Bijvoorbeeld: ${esc(voorbeeldWaar(list))}">` : `<label for="f-q">Zoek op artiest, voorstelling, plaats of theater</label>
-      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Jochem Myjer, Eindhoven of Carré">`}
+      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="Jochem Myjer, Eindhoven of Carré">`}
     </div>
     ${maand && months.length > 1 ? `<div class="field">
       <label for="f-maand">Maand</label>

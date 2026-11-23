@@ -748,6 +748,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   .home-intro { padding-top: 28px; }
   .home-intro .intro { font-size: var(--step-0); }
   .home-zoek input { font-size: var(--step-0); padding: 0 14px; }
+  .home-zoek input::placeholder, .field input[type=search]::placeholder { font-size: .875rem; }
   .home-zoek .btn { padding: 0 16px; }
   .home-zoek .btn span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 }
@@ -1301,3 +1302,6 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .weergave .weergave-dag, .weergave[data-donker="true"] .weergave-nacht { display: none; }
 .weergave[data-donker="true"] .weergave-dag { display: inline-flex; }
 .weergave:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; border-radius: 6px; }
+
+/* Smalle telefoons: de voorbeeldtekst in de zoekvelden past dan nog net. */
+@media (max-width: 374px) { .home-zoek input::placeholder, .field input[type=search]::placeholder { font-size: .8rem; } }
