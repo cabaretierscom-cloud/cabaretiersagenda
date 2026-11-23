@@ -975,7 +975,11 @@ ${netBinnenBlok({ link: false, klein: true })}
     // Oudejaarsconferences met een affiche, als eigen rij onder de cijfers (verzoek van de eigenaar, november 2026).
     // Verdwijnt vanzelf als er geen komende oudejaarsconferences met een foto meer zijn.
     const oudejaars = GENRES.oudejaarsconference ? nuInTheater(() => true, (v) => genresVanV(v).includes("oudejaarsconference"), { zonderTitel: true }) : "";
+    // Elk bezoek een andere kleur voor het kopvlak, nooit twee keer achter elkaar dezelfde (verzoek van de eigenaar,
+    // november 2026). Het script staat vóór het vlak, zodat de kleur er meteen is; de vorige keuze staat in de browser.
+    const kopKleur = `<script>(function(){var r=document.documentElement,o=[];try{o=(localStorage.getItem("cabaretiers-kopkleur")||"").split(",")}catch(e){}function k(n,v){var x;do{x=Math.floor(Math.random()*n)}while(String(x)===v);return x}var d=k(4,o[0]),n=k(3,o[1]);r.dataset.kopDag=d;r.dataset.kopNacht=n;try{localStorage.setItem("cabaretiers-kopkleur",d+","+n)}catch(e){}})()</script>`;
     const body = `
+${kopKleur}
 <div class="home-kop">
 <section class="wrap home-intro" aria-labelledby="home-titel">
   <div class="home-intro-grid">
@@ -2715,7 +2719,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <p>Google bewaart de gegevens maximaal 14 maanden. Google kan gegevens verwerken in de Verenigde Staten, onder het EU-VS-gegevensprivacykader.</p>
         <p><button type="button" class="knop-secundair" data-cookies-wijzig hidden>Cookiekeuze wijzigen</button></p>
         <h2 id="opslag">Wat er in je browser blijft staan</h2>
-        <p>Je keuze in de cookiemelding bewaren we in je eigen browser (<code>cabaretiers-cookies</code>), zodat we het niet elke keer opnieuw vragen, net als je keuze voor een lichte of donkere weergave met de knop Nachtmodus/Dagmodus onderaan elke pagina (<code>cabaretiers-weergave</code>). Dat gaat niet naar ons of naar anderen.</p>
+        <p>Je keuze in de cookiemelding bewaren we in je eigen browser (<code>cabaretiers-cookies</code>), zodat we het niet elke keer opnieuw vragen, net als je keuze voor een lichte of donkere weergave met de knop Nachtmodus/Dagmodus onderaan elke pagina (<code>cabaretiers-weergave</code>) en de kleur van het vlak bovenaan de homepage bij je vorige bezoek (<code>cabaretiers-kopkleur</code>), zodat je de volgende keer een andere kleur ziet. Dat gaat niet naar ons of naar anderen.</p>
         <h2 id="video">Video's</h2>
         <p>Gebruik je <a href="/in-de-buurt/">Bij mij in de buurt</a> en geef je toestemming voor je locatie, dan rekent je eigen browser de afstand tot de theaters uit. Je locatie gaat niet naar ons of naar anderen en wordt niet bewaard.</p>
         <p>Op sommige artiestpagina's staan video's van YouTube. Die laden pas als je erop klikt; dan maakt je browser verbinding met YouTube (in de privacyvriendelijke modus zonder cookies vooraf) en gelden de privacyregels van Google.</p>

@@ -703,12 +703,13 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* ---------- Kerncijfers ---------- */
 /* Kop van de homepage (verzoek van de eigenaar, november 2026): een geel vlak met het bolletjesraster van de affiches,
    met kop, intro, zoekbalk (naar /agenda/?q=…), cijfers en snelkoppelingen. De affiches van "Nu in het theater"
-   steken over de onderrand: het vlak loopt door tot --kop-overlap in de affichewand. Het vlak blijft geel in de
-   donkere modus, dus alle kleuren hier staan vast. */
-.home-kop { --kop-geel: var(--riso-yellow); --kop-overlap: 96px; color: #121212; background: var(--kop-geel); position: relative; isolation: isolate; }
+   steken over de onderrand: het vlak loopt door tot --kop-overlap in de affichewand. Elk bezoek een andere kleur
+   (script in home(), data-kop-dag/-nacht op <html>): overdag geel, oranje, limoen of roze met zwarte inkt, in de
+   donkere modus paars, groen of blauw met witte inkt. De kleuren hier staan vast, los van de rest van de pagina. */
+.home-kop { --kop-geel: var(--kop-dag); --kop-inkt: #121212; --kop-overlap: 96px; color: var(--kop-inkt); background: var(--kop-geel); position: relative; isolation: isolate; }
 /* Bolletjesraster zoals op de affiches: kleine, lichte punten die vanuit de hoek rechtsboven vervagen. */
 .home-kop::before { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: .2;
-  background-image: radial-gradient(#121212 1.2px, transparent 1.7px); background-size: 11px 11px;
+  background-image: radial-gradient(var(--kop-inkt) 1.2px, transparent 1.7px); background-size: 11px 11px;
   -webkit-mask-image: radial-gradient(circle at 100% 0, #000 0, #000 15%, transparent 55%);
           mask-image: radial-gradient(circle at 100% 0, #000 0, #000 15%, transparent 55%); }
 .home-kop > * { position: relative; z-index: 1; }
@@ -717,21 +718,21 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 }
 .home-kop > .wall .strip-wrap { background: linear-gradient(to bottom, transparent var(--kop-overlap), var(--paper) 0); }
 .home-kop > .wall { padding-top: 20px; }
-.home-kop > .wall .wall-head :is(h2, p, a) { color: #121212; }
+.home-kop > .wall .wall-head :is(h2, p, a) { color: var(--kop-inkt); }
 .home-intro { padding-block: 44px 0; }
 .home-intro-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 48px; align-items: end; }
-.home-intro h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(2.1rem, 5.2vw, 3.9rem); line-height: .92; letter-spacing: -.015em; margin: 0; color: #121212; }
+.home-intro h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(2.1rem, 5.2vw, 3.9rem); line-height: .92; letter-spacing: -.015em; margin: 0; color: var(--kop-inkt); }
 .home-intro h1 em { font-style: normal; }
-.home-intro .intro { max-width: 52ch; margin: 12px 0 0; font-size: 1.125rem; line-height: 1.45; color: #121212; }
+.home-intro .intro { max-width: 52ch; margin: 12px 0 0; font-size: 1.125rem; line-height: 1.45; color: var(--kop-inkt); }
 .home-zoek { display: flex; gap: 10px; margin-top: 22px; }
-.home-zoek input { flex: 1; min-width: 0; min-height: 50px; padding: 0 18px; border-radius: 12px; border: 2px solid #121212; background: #fff; color: #121212; font: 500 var(--step-1) var(--font-body); }
+.home-zoek input { flex: 1; min-width: 0; min-height: 50px; padding: 0 18px; border-radius: 12px; border: 2px solid var(--kop-veldrand, #121212); background: #fff; color: #121212; font: 500 var(--step-1) var(--font-body); }
 .home-zoek input::placeholder { color: #6b6b78; }
-.home-zoek input:focus-visible { outline: 3px solid #121212; outline-offset: 2px; }
-.home-zoek .btn { min-height: 50px; padding: 0 22px; gap: 8px; background: #121212; color: #fff; }
+.home-zoek input:focus-visible { outline: 3px solid var(--kop-inkt, #121212); outline-offset: 2px; }
+.home-zoek .btn { min-height: 50px; padding: 0 22px; gap: 8px; background: var(--kop-knop, #121212); color: var(--kop-knoptekst, #fff); }
 .home-zoek .btn svg { width: 20px; height: 20px; }
-.home-zoek .btn:focus-visible { outline: 3px solid #121212; outline-offset: 3px; }
+.home-zoek .btn:focus-visible { outline: 3px solid var(--kop-inkt, #121212); outline-offset: 3px; }
 /* Cijfers achter de stippellijn van de affiches. */
-.home-cijfers { display: grid; margin: 0; padding-left: 28px; border-left: 3px dotted #121212; }
+.home-cijfers { display: grid; margin: 0; padding-left: 28px; border-left: 3px dotted var(--kop-inkt); }
 .home-cijfers > div { display: flex; flex-direction: column-reverse; padding: 6px 0; }
 .home-cijfers dd { margin: 0; font-family: var(--font-display); font-weight: 900; font-size: clamp(2rem, 4.6vw, 3.4rem); line-height: .9; font-variant-numeric: tabular-nums; }
 .home-cijfers dt { font-weight: 500; }
@@ -739,7 +740,20 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .home-snel.month-nav a { background: #fff; color: #121212; border-color: #121212; }
 .home-snel.month-nav a span { color: #4A4A57; }
 .home-snel.month-nav a:hover { border-color: #121212; box-shadow: inset 0 0 0 1px #121212; }
-.home-snel a:focus-visible { outline: 3px solid #121212; outline-offset: 2px; }
+.home-snel a:focus-visible { outline: 3px solid var(--kop-inkt, #121212); outline-offset: 2px; }
+/* Kleur van het kopvlak: zonder script geel (dag) en paars (nacht). */
+:root { --kop-dag: var(--riso-yellow); --kop-nacht: var(--riso-purple); }
+:root[data-kop-dag="1"] { --kop-dag: var(--riso-orange); }
+:root[data-kop-dag="2"] { --kop-dag: var(--riso-lime); }
+:root[data-kop-dag="3"] { --kop-dag: var(--riso-pink); }
+:root[data-kop-nacht="1"] { --kop-nacht: var(--riso-green); }
+:root[data-kop-nacht="2"] { --kop-nacht: var(--riso-blue); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .home-kop { --kop-geel: var(--kop-nacht); --kop-inkt: #fff; --kop-veldrand: #fff; --kop-knop: #fff; --kop-knoptekst: #121212; }
+  :root:not([data-theme="light"]) .home-kop::before { opacity: .16; }
+}
+:root[data-theme="dark"] .home-kop { --kop-geel: var(--kop-nacht); --kop-inkt: #fff; --kop-veldrand: #fff; --kop-knop: #fff; --kop-knoptekst: #121212; }
+:root[data-theme="dark"] .home-kop::before { opacity: .16; }
 /* Dezelfde zoekbalk en tegels zonder geel vlak (bovenaan /alle-cabaretiers/): kleuren van de pagina, ook in donker. */
 .zoek-los { margin-top: 20px; max-width: 760px; }
 .zoek-los .home-zoek { margin-top: 0; }
@@ -754,7 +768,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   /* Kleinere kop en intro alleen op desktop; telefoon en tablet houden de oude maat. */
   .home-intro h1 { font-size: clamp(2.4rem, 6vw, 4.6rem); }
   .home-intro .intro { font-size: var(--step-1); }
-  .home-cijfers { grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 10px 0 0; border-left: 0; border-top: 3px dotted #121212; }
+  .home-cijfers { grid-template-columns: repeat(3, minmax(0, 1fr)); padding: 10px 0 0; border-left: 0; border-top: 3px dotted var(--kop-inkt); }
   .home-cijfers > div { align-items: center; text-align: center; }
 }
 @media (max-width: 600px) {
