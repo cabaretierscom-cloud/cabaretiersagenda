@@ -710,7 +710,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .home-intro { padding-block: 44px 0; }
 .home-intro-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 48px; align-items: end; }
 .home-intro h1 { font-family: var(--font-display); font-weight: 900; font-size: clamp(2.4rem, 6vw, 4.6rem); line-height: .92; letter-spacing: -.015em; margin: 0; color: #121212; }
-.home-intro h1 em { font-style: normal; color: var(--riso-pink); }
+.home-intro h1 em { font-style: normal; }
 .home-intro .intro { max-width: 52ch; margin: 12px 0 0; font-size: var(--step-1); line-height: 1.45; color: #121212; }
 .home-zoek { display: flex; gap: 10px; margin-top: 22px; }
 .home-zoek input { flex: 1; min-width: 0; min-height: 54px; padding: 0 18px; border-radius: 12px; border: 2px solid #121212; background: #fff; color: #121212; font: 500 var(--step-1) var(--font-body); }
