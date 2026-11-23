@@ -556,7 +556,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     <div class="field search">
       ${waar ? `<label for="f-q">Zoek op plaats of theater</label>
       <input id="f-q" name="q" type="search" autocomplete="off" data-veld="waar" placeholder="Bijvoorbeeld: ${esc(voorbeeldWaar(list))}">` : `<label for="f-q">Zoek op artiest, voorstelling, plaats of theater</label>
-      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Lebbis, Utrecht of Carré">`}
+      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Jochem Myjer, Eindhoven of Carré">`}
     </div>
     ${maand && months.length > 1 ? `<div class="field">
       <label for="f-maand">Maand</label>
@@ -972,7 +972,7 @@ ${netBinnenBlok({ link: false, klein: true })}
       <p class="intro">De speellijsten van alle Nederlandse en Vlaamse cabaretiers en comedians, dagelijks bijgewerkt. Zoek je favoriete cabaretier, kijk wat er vanavond speelt of vind een voorstelling bij jou in de buurt.</p>
       <form class="home-zoek" action="/agenda/" method="get" role="search">
         <label for="home-q" class="visually-hidden">Zoek op artiest, voorstelling, plaats of theater</label>
-        <input id="home-q" name="q" type="search" autocomplete="off" placeholder="Lebbis, Utrecht of Carré" required>
+        <input id="home-q" name="q" type="search" autocomplete="off" placeholder="Jochem Myjer, Eindhoven of Carré" required>
         <button type="submit" class="btn">${ICON_ZOEK}<span>Zoeken</span></button>
       </form>
     </div>
