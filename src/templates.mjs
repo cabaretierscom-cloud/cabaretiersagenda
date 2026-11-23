@@ -946,14 +946,16 @@ ${netBinnenBlok({ link: false, klein: true })}
           ...(a ? { about: { "@type": "Person", name: a.naam, url: URL(artiestPad(a.id)) } } : t ? { about: { "@type": "Place", name: t.naam } } : {}) }] } });
   }
 
-  function home() {
-
-    const nu = nuInTheater();
-    const zalen = theaterKaartjes();
-    const clubs = comedyclubs();
-    // Oudejaarsconferences met een affiche, als eigen rij onder de cijfers (verzoek van de eigenaar, november 2026).
-    // Verdwijnt vanzelf als er geen komende oudejaarsconferences met een foto meer zijn.
-    // Snelkoppelingen onder de zoekbalk, met het aantal voorstellingen (een tegel zonder voorstellingen valt weg).
+  // Zoekbalk naar /agenda/?q=… en snelkoppelingen met het aantal voorstellingen (een tegel zonder voorstellingen valt
+  // weg): in het gele vlak op de homepage en, zonder geel, bovenaan /alle-cabaretiers/ (verzoek van de eigenaar, november 2026).
+  function zoekFormulier(id = "home-q") {
+    return `<form class="home-zoek" action="/agenda/" method="get" role="search">
+        <label for="${id}" class="visually-hidden">Zoek op artiest, voorstelling, plaats of theater</label>
+        <input id="${id}" name="q" type="search" autocomplete="off" placeholder="Jochem Myjer, Eindhoven of Carré" required>
+        <button type="submit" class="btn">${ICON_ZOEK}<span>Zoeken</span></button>
+      </form>`;
+  }
+  function snelkoppelingen() {
     const nOudejaars = up.filter((g) => heeftGenre(g, "oudejaarsconference")).length;
     const snel = [
       ["Vanavond", "/vanavond/", up.filter((g) => g.datum === vandaagDag).length],
@@ -962,6 +964,16 @@ ${netBinnenBlok({ link: false, klein: true })}
       ["Oudejaars", genrePad("oudejaarsconference"), GENRES.oudejaarsconference ? nOudejaars : 0],
     ].filter(([, , n]) => n).map(([t, u, n]) => [t, u, plural(n, "voorstelling", "voorstellingen")]);
     snel.push(["In de buurt", "/in-de-buurt/?locatie=1", "met je locatie"]);
+    return `<nav class="month-nav home-snel" aria-label="Snel naar">${snel.map(([t, u, n]) => `<a href="${u}"><b>${t}</b><span>${n}</span></a>`).join("")}</nav>`;
+  }
+
+  function home() {
+
+    const nu = nuInTheater();
+    const zalen = theaterKaartjes();
+    const clubs = comedyclubs();
+    // Oudejaarsconferences met een affiche, als eigen rij onder de cijfers (verzoek van de eigenaar, november 2026).
+    // Verdwijnt vanzelf als er geen komende oudejaarsconferences met een foto meer zijn.
     const oudejaars = GENRES.oudejaarsconference ? nuInTheater(() => true, (v) => genresVanV(v).includes("oudejaarsconference"), { zonderTitel: true }) : "";
     const body = `
 <div class="home-kop">
@@ -970,11 +982,7 @@ ${netBinnenBlok({ link: false, klein: true })}
     <div>
       <h1 id="home-titel">Alle cabaretiers bij elkaar, <em>dat is lachen</em></h1>
       <p class="intro">De speellijsten van alle Nederlandse en Vlaamse cabaretiers en comedians, dagelijks bijgewerkt. Zoek je favoriete cabaretier, kijk wat er vanavond speelt of vind een voorstelling bij jou in de buurt.</p>
-      <form class="home-zoek" action="/agenda/" method="get" role="search">
-        <label for="home-q" class="visually-hidden">Zoek op artiest, voorstelling, plaats of theater</label>
-        <input id="home-q" name="q" type="search" autocomplete="off" placeholder="Jochem Myjer, Eindhoven of Carré" required>
-        <button type="submit" class="btn">${ICON_ZOEK}<span>Zoeken</span></button>
-      </form>
+      ${zoekFormulier()}
     </div>
     <dl class="home-cijfers" aria-label="De agenda in cijfers">
       <div><dt>voorstellingen</dt><dd>${tellers.speeldata.toLocaleString("nl-NL")}</dd></div>
@@ -982,7 +990,7 @@ ${netBinnenBlok({ link: false, klein: true })}
       <div><dt>theaters</dt><dd>${tellers.zalen}</dd></div>
     </dl>
   </div>
-  <nav class="month-nav home-snel" aria-label="Snel naar">${snel.map(([t, u, n]) => `<a href="${u}"><b>${t}</b><span>${n}</span></a>`).join("")}</nav>
+  ${snelkoppelingen()}
 </section>
 ${nu ? `<section class="wall" aria-labelledby="nu-title">
   <div class="wrap wall-head">
@@ -1522,6 +1530,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const kopTournee = soort === "alle" ? "Bekende cabaretiers op tournee" : `Bekende ${esc(P.wie)} op tournee`;
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">${esc(P.naam)}</h1><p>${intro}</p></div>
+      ${soort === "alle" ? `<div class="zoek-los">${zoekFormulier("cabaretiers-q")}${snelkoppelingen()}</div>` : ""}
       ${soort === "alle" ? "" : `<p class="zie-ook">Bekijk ook de ${andere.join(", de ")} of <a href="/artiesten/">alle artiesten</a>.</p>`}
       ${affiches ? "" : `<h2 class="sub-head">${kopTournee}</h2>
       <div class="artists">${artiestKaarten(top)}</div>`}
