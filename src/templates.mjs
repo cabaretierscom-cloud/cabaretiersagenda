@@ -177,7 +177,7 @@ export function createTemplates(db, { ga = null } = {}) {
     </div>`).join("")}</nav>`;
   };
 
-  // Schakelaar licht/donker onderaan elke pagina (agenda.js).
+  // Knop Nachtmodus/Dagmodus onderaan elke pagina (agenda.js).
   const ICON_ZON = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
   const ICON_MAAN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>';
   function layout({ title, description = SITE.description, path, section, body, schema, noindex = false }) {
@@ -253,7 +253,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     <p class="contact">Contact: <a href="mailto:${SITE.email}">${SITE.email}</a></p>
     <p class="contact footer-paginas"><a href="/over/">Over</a> · <a href="/privacy/">Privacy</a></p>
     <ul class="social" aria-label="Volg ons">${SITE.social.map((s) => `<li><a href="${esc(s.url)}" rel="me noopener" target="_blank" aria-label="${esc(s.naam)} (opent in nieuw venster)" title="${esc(s.naam)}">${s.icoon}</a></li>`).join("")}</ul>
-    <button type="button" class="weergave" role="switch" aria-checked="false" aria-label="Donkere weergave" hidden><span class="weergave-icoon">${ICON_ZON}</span><span class="weergave-baan" aria-hidden="true"><span class="weergave-knop"></span></span><span class="weergave-icoon">${ICON_MAAN}</span></button>
+    <button type="button" class="weergave" hidden><span class="weergave-nacht">${ICON_MAAN}Nachtmodus</span><span class="weergave-dag">${ICON_ZON}Dagmodus</span></button>
     </div>
   </div>
 </footer>${noindex ? "" : `
@@ -2682,7 +2682,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <p>Google bewaart de gegevens maximaal 14 maanden. Google kan gegevens verwerken in de Verenigde Staten, onder het EU-VS-gegevensprivacykader.</p>
         <p><button type="button" class="knop-secundair" data-cookies-wijzig hidden>Cookiekeuze wijzigen</button></p>
         <h2 id="opslag">Wat er in je browser blijft staan</h2>
-        <p>Je keuze in de cookiemelding bewaren we in je eigen browser (<code>cabaretiers-cookies</code>), zodat we het niet elke keer opnieuw vragen, net als je keuze voor een lichte of donkere weergave met de schakelaar onderaan elke pagina (<code>cabaretiers-weergave</code>). Dat gaat niet naar ons of naar anderen.</p>
+        <p>Je keuze in de cookiemelding bewaren we in je eigen browser (<code>cabaretiers-cookies</code>), zodat we het niet elke keer opnieuw vragen, net als je keuze voor een lichte of donkere weergave met de knop Nachtmodus/Dagmodus onderaan elke pagina (<code>cabaretiers-weergave</code>). Dat gaat niet naar ons of naar anderen.</p>
         <h2 id="video">Video's</h2>
         <p>Gebruik je <a href="/in-de-buurt/">Bij mij in de buurt</a> en geef je toestemming voor je locatie, dan rekent je eigen browser de afstand tot de theaters uit. Je locatie gaat niet naar ons of naar anderen en wordt niet bewaard.</p>
         <p>Op sommige artiestpagina's staan video's van YouTube. Die laden pas als je erop klikt; dan maakt je browser verbinding met YouTube (in de privacyvriendelijke modus zonder cookies vooraf) en gelden de privacyregels van Google.</p>

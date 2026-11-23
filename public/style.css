@@ -1235,15 +1235,12 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* Op de telefoon groter (verzoek van de eigenaar, november 2026): bijna de hele breedte van het affiche. */
 @media (max-width: 760px) { .gig .stempel.op-foto { font-size: .9rem; padding: 3px 5px 2px; bottom: 14px; letter-spacing: .02em; } }
 
-/* Schakelaar licht/donker in de voet, onder de sociale media; de voet is altijd donker. */
-.weergave { display: inline-flex; align-items: center; gap: 8px; align-self: flex-start; padding: 6px 4px; border: 0; background: none; color: #fff; cursor: pointer; }
+/* Knop Nachtmodus/Dagmodus in de voet, onder de sociale media; toont de andere weergave dan de huidige. */
+.weergave { display: inline-flex; align-self: flex-start; padding: 8px 0; border: 0; background: none; color: #fff; font: 500 var(--step-0)/1 var(--font-body); cursor: pointer; }
 .weergave[hidden] { display: none; }
-.weergave-icoon { display: inline-flex; opacity: .55; transition: opacity .2s; }
-.weergave-icoon svg { width: 18px; height: 18px; }
-.weergave[aria-checked="false"] .weergave-icoon:first-child, .weergave[aria-checked="true"] .weergave-icoon:last-child { opacity: 1; }
-.weergave-baan { position: relative; width: 44px; height: 24px; border-radius: 999px; background: rgba(255,255,255,.25); transition: background .2s; }
-.weergave[aria-checked="true"] .weergave-baan { background: var(--riso-blue); }
-.weergave-knop { position: absolute; top: 3px; left: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; transition: transform .2s cubic-bezier(.2,.8,.2,1); }
-.weergave[aria-checked="true"] .weergave-knop { transform: translateX(20px); }
-.weergave:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 999px; }
-@media (prefers-reduced-motion: reduce) { .weergave-knop, .weergave-baan, .weergave-icoon { transition: none; } }
+.weergave > span { display: inline-flex; align-items: center; gap: 10px; }
+.weergave svg { width: 20px; height: 20px; }
+.weergave:hover > span { text-decoration: underline; text-underline-offset: 4px; }
+.weergave .weergave-dag, .weergave[data-donker="true"] .weergave-nacht { display: none; }
+.weergave[data-donker="true"] .weergave-dag { display: inline-flex; }
+.weergave:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; border-radius: 6px; }

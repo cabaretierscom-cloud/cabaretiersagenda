@@ -778,8 +778,8 @@
   });
 })();
 
-// Schakelaar licht/donker onderaan elke pagina. Zonder eigen keuze volgt de site het apparaat; de schakelaar staat dan
-// zoals de site er nu uitziet. Een keuze blijft in de browser staan (cabaretiers-weergave); een klein script in de
+// Knop Nachtmodus/Dagmodus onderaan elke pagina: toont de andere weergave dan de huidige. Zonder eigen keuze volgt de
+// site het apparaat. Een keuze blijft in de browser staan (cabaretiers-weergave); een klein script in de
 // <head> zet hem al voor het tekenen, zodat er niets flitst.
 (() => {
   const knop = document.querySelector(".weergave");
@@ -787,7 +787,7 @@
   const SLEUTEL = "cabaretiers-weergave";
   const systeemDonker = matchMedia("(prefers-color-scheme: dark)");
   const isDonker = () => { const t = document.documentElement.dataset.theme; return t ? t === "dark" : systeemDonker.matches; };
-  const toon = () => knop.setAttribute("aria-checked", String(isDonker()));
+  const toon = () => { knop.dataset.donker = String(isDonker()); };
   knop.hidden = false;
   toon();
   systeemDonker.addEventListener?.("change", toon);
