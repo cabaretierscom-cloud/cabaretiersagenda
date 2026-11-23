@@ -953,32 +953,45 @@ ${netBinnenBlok({ link: false, klein: true })}
     const clubs = comedyclubs();
     // Oudejaarsconferences met een affiche, als eigen rij onder de cijfers (verzoek van de eigenaar, november 2026).
     // Verdwijnt vanzelf als er geen komende oudejaarsconferences met een foto meer zijn.
+    // Snelkoppelingen onder de zoekbalk, met het aantal voorstellingen (een tegel zonder voorstellingen valt weg).
+    const nOudejaars = up.filter((g) => heeftGenre(g, "oudejaarsconference")).length;
+    const snel = [
+      ["Vanavond", "/vanavond/", up.filter((g) => g.datum === vandaagDag).length],
+      ["Dit weekend", "/dit-weekend/", weekendLijst(up).length],
+      ["Try-outs", "/agenda/try-outs/", tryoutLijst.length],
+      ["Oudejaars", genrePad("oudejaarsconference"), GENRES.oudejaarsconference ? nOudejaars : 0],
+    ].filter(([, , n]) => n).map(([t, u, n]) => [t, u, plural(n, "voorstelling", "voorstellingen")]);
+    snel.push(["In de buurt", "/in-de-buurt/?locatie=1", "met je locatie"]);
     const oudejaars = GENRES.oudejaarsconference ? nuInTheater(() => true, (v) => genresVanV(v).includes("oudejaarsconference"), { zonderTitel: true }) : "";
     const body = `
+<div class="home-kop">
+<section class="wrap home-intro" aria-labelledby="home-titel">
+  <div class="home-intro-grid">
+    <div>
+      <h1 id="home-titel">Alle cabaretiers bij elkaar, <em>dat is lachen</em></h1>
+      <p class="intro">De speellijsten van alle Nederlandse en Vlaamse cabaretiers en comedians, dagelijks bijgewerkt. Zoek je favoriete cabaretier, kijk wat er vanavond speelt of vind een voorstelling bij jou in de buurt.</p>
+      <form class="home-zoek" action="/agenda/" method="get" role="search">
+        <label for="home-q" class="visually-hidden">Zoek op artiest, voorstelling, plaats of theater</label>
+        <input id="home-q" name="q" type="search" autocomplete="off" placeholder="Lebbis, Utrecht of Carré" required>
+        <button type="submit" class="btn">${ICON_ZOEK}<span>Zoeken</span></button>
+      </form>
+    </div>
+    <dl class="home-cijfers" aria-label="De agenda in cijfers">
+      <div><dt>voorstellingen</dt><dd>${tellers.speeldata.toLocaleString("nl-NL")}</dd></div>
+      <div><dt>artiesten</dt><dd>${tellers.artiesten}</dd></div>
+      <div><dt>theaters</dt><dd>${tellers.zalen}</dd></div>
+    </dl>
+  </div>
+  <nav class="month-nav home-snel" aria-label="Snel naar">${snel.map(([t, u, n]) => `<a href="${u}"><b>${t}</b><span>${n}</span></a>`).join("")}</nav>
+</section>
 ${nu ? `<section class="wall" aria-labelledby="nu-title">
   <div class="wrap wall-head">
-    <h1 id="nu-title">Nu in het theater</h1>
+    <h2 id="nu-title">Nu in het theater</h2>
     <p><a href="/agenda/">De volledige agenda</a></p>
   </div>
   ${strip("strip-nu", "Voorstellingen die nu in het theater staan", nu)}
-</section>` : `<h1 class="visually-hidden">Cabaretiers.com, de theateragenda</h1>`}
-
-<section class="wrap stats" aria-label="De agenda in cijfers">
-  <dl>
-    <div><dt>voorstellingen</dt><dd>${tellers.speeldata.toLocaleString("nl-NL")}</dd></div>
-    <div><dt>artiesten</dt><dd>${tellers.artiesten}</dd></div>
-    <div><dt>theaters</dt><dd>${tellers.zalen}</dd></div>
-  </dl>
-</section>
-<section class="wrap home-zoek" aria-label="Zoek in de agenda">
-  <form class="home-zoek-form" action="/agenda/" method="get" role="search">
-    <label for="home-q">Zoek op artiest, voorstelling, plaats of theater</label>
-    <div class="home-zoek-rij">
-      <input id="home-q" name="q" type="search" autocomplete="off" placeholder="Lebbis, Utrecht of Carré" required>
-      <button type="submit" class="btn">${ICON_ZOEK}<span>Zoeken</span></button>
-    </div>
-  </form>
-</section>
+</section>` : ""}
+</div>
 ${oudejaars ? `
 <section class="wall wall-oudejaars" aria-labelledby="oudejaars-title">
   <div class="wrap wall-head">
