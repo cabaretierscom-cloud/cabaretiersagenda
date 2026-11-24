@@ -826,9 +826,22 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .home-kop { --kop-geel: var(--kop-nacht); --kop-inkt: #fff; --kop-veldrand: #fff; --kop-knop: #fff; --kop-knoptekst: #121212; }
   :root:not([data-theme="light"]) .home-kop::before { opacity: .16; }
+  /* Donker: zoekveld en tegels donker met witte rand, zoals elders in de donkere modus. */
+  :root:not([data-theme="light"]) .home-kop .home-zoek input { background: var(--paper); color: var(--ink); }
+  :root:not([data-theme="light"]) .home-kop .home-zoek input::placeholder { color: var(--ink-2); }
+  :root:not([data-theme="light"]) .home-kop .home-snel.month-nav a { background: var(--paper); color: var(--ink); border-color: #fff; }
+  :root:not([data-theme="light"]) .home-kop .home-snel.month-nav a span { color: var(--ink-2); }
+  :root:not([data-theme="light"]) .home-kop .home-snel.month-nav a:hover { border-color: #fff; box-shadow: inset 0 0 0 1px #fff; }
+  :root:not([data-theme="light"]) .home-kop .home-snel.month-nav a:focus-visible { outline-color: #fff; }
 }
 :root[data-theme="dark"] .home-kop { --kop-geel: var(--kop-nacht); --kop-inkt: #fff; --kop-veldrand: #fff; --kop-knop: #fff; --kop-knoptekst: #121212; }
 :root[data-theme="dark"] .home-kop::before { opacity: .16; }
+:root[data-theme="dark"] .home-kop .home-zoek input { background: var(--paper); color: var(--ink); }
+:root[data-theme="dark"] .home-kop .home-zoek input::placeholder { color: var(--ink-2); }
+:root[data-theme="dark"] .home-kop .home-snel.month-nav a { background: var(--paper); color: var(--ink); border-color: #fff; }
+:root[data-theme="dark"] .home-kop .home-snel.month-nav a span { color: var(--ink-2); }
+:root[data-theme="dark"] .home-kop .home-snel.month-nav a:hover { border-color: #fff; box-shadow: inset 0 0 0 1px #fff; }
+:root[data-theme="dark"] .home-kop .home-snel.month-nav a:focus-visible { outline-color: #fff; }
 /* Dezelfde zoekbalk en tegels zonder geel vlak (bovenaan /alle-cabaretiers/): kleuren van de pagina, ook in donker. */
 .zoek-los { margin-top: 20px; max-width: 760px; }
 .zoek-los .home-zoek { margin-top: 0; }
