@@ -799,12 +799,18 @@
   });
 })();
 
-// Hamburgermenu in de kop op smalle schermen: openen en sluiten met de knop, Escape, een klik buiten het menu of op
-// een link. Zonder JavaScript staat het menu als veegbalk onder het logo.
+// Hamburgermenu in de kop op smalle schermen: een paneel dat van rechts inschuift; sluiten met het kruisje, Escape,
+// een klik op de vervaagde pagina ernaast of op een link. Zonder JavaScript staat het menu als veegbalk onder het logo.
 (() => {
   const knop = document.querySelector(".menu-knop"), menu = document.getElementById("hoofdmenu");
   if (!knop || !menu) return;
-  const zet = (open) => { menu.classList.toggle("open", open); knop.setAttribute("aria-expanded", String(open)); };
+  const sluit = menu.querySelector(".menu-sluit");
+  const zet = (open) => {
+    menu.classList.toggle("open", open); knop.setAttribute("aria-expanded", String(open));
+    document.documentElement.classList.toggle("menu-open", open);
+    if (open) (menu.querySelector('[aria-current="page"]') || menu.querySelector("a"))?.focus({ preventScroll: true });
+  };
+  sluit?.addEventListener("click", () => { zet(false); knop.focus(); });
   knop.addEventListener("click", () => zet(!menu.classList.contains("open")));
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && menu.classList.contains("open")) { zet(false); knop.focus(); } });
   document.addEventListener("click", (e) => { if (menu.classList.contains("open") && !menu.contains(e.target) && !knop.contains(e.target)) zet(false); });

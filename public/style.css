@@ -169,7 +169,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .nav a[aria-current="page"] { background: var(--ink); color: var(--paper); }
 /* Smaller dan 960px: een hamburgermenu rechts in de kop (verzoek van de eigenaar, november 2026); het menu klapt
    onder de kop uit. Zonder JavaScript (geen class "js" op <html>) staat het menu als veegbalk onder het logo. */
-.menu-knop { display: none; }
+.menu-knop, .menu-sluit, .menu-achtergrond { display: none; }
 @media (max-width: 960px) {
   .site-header .wrap { flex-wrap: wrap; gap: 4px 16px; padding-block: 10px; }
   .nav { margin-left: -12px; width: calc(100% + 12px); overflow-x: auto; scrollbar-width: none; }
@@ -187,15 +187,29 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   .menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(1) { top: 6.75px; transform: rotate(45deg); }
   .menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(2) { opacity: 0; }
   .menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(3) { top: 6.75px; transform: rotate(-45deg); }
+  /* Uitklapmenu: komt van rechts in beeld, driekwart van de breedte; de rest van de pagina vervaagt
+     (verzoek van de eigenaar, november 2026). Het matglas van de kop gaat dan uit, anders blijft het menu
+     binnen de kop gevangen. */
   .js .nav {
-    display: none; position: absolute; top: calc(100% + 10px); left: 0; right: 0; width: auto; margin: 0; overflow: visible;
-    flex-direction: column; gap: 2px; padding: 10px; border-radius: 16px; background: var(--paper);
-    border: 2px solid var(--ink); box-shadow: 0 18px 40px -16px rgba(18, 18, 18, .45);
+    display: flex; position: fixed; top: 0; right: 0; bottom: 0; z-index: 31; width: 75vw; margin: 0; overflow-y: auto;
+    flex-direction: column; gap: 2px; padding: 16px 16px calc(24px + env(safe-area-inset-bottom)); background: var(--paper);
+    border-left: 2px solid var(--ink); box-shadow: -18px 0 40px -18px rgba(18, 18, 18, .5);
+    transform: translateX(100%); visibility: hidden; transition: transform .28s cubic-bezier(.2, .8, .2, 1), visibility 0s linear .28s;
   }
-  .js .nav.open { display: flex; }
+  .js .nav.open { transform: none; visibility: visible; transition: transform .28s cubic-bezier(.2, .8, .2, 1), visibility 0s; }
   .js .nav a { padding: 13px 16px; border-radius: 10px; font-size: var(--step-1); }
+  .js .menu-sluit {
+    align-self: flex-end; display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; margin-bottom: 8px;
+    border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); color: var(--ink); font: 400 2rem/1 var(--font-body); cursor: pointer;
+  }
+  .js .menu-sluit:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .js .menu-achtergrond { display: block; position: fixed; inset: 0; z-index: 30; background: rgba(18, 18, 18, .25); opacity: 0; visibility: hidden;
+    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: opacity .28s ease, visibility 0s linear .28s; }
+  .menu-open .menu-achtergrond { opacity: 1; visibility: visible; transition: opacity .28s ease, visibility 0s; }
+  .menu-open, .menu-open body { overflow: hidden; }
+  .menu-open .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; }
 }
-@media (prefers-reduced-motion: reduce) { .menu-icoon span { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .menu-icoon span, .js .nav, .menu-achtergrond { transition: none !important; } }
 
 .btn {
   display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
