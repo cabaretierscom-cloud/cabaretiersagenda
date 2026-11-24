@@ -814,6 +814,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .home-snel.month-nav a { background: #fff; color: #121212; border-color: #121212; }
 .home-snel.month-nav a span { color: #4A4A57; }
 .home-snel.month-nav a:hover { border-color: #121212; box-shadow: inset 0 0 0 1px #121212; }
+.home-snel.month-nav a:focus-visible { outline-color: #121212; }
 .home-snel a:focus-visible { outline: 3px solid var(--kop-inkt, #121212); outline-offset: 2px; }
 /* Kleur van het kopvlak: zonder script geel (dag) en paars (nacht). */
 :root { --kop-dag: var(--riso-yellow); --kop-nacht: var(--riso-purple); }
@@ -868,7 +869,9 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 }
 .month-nav a b { font-family: var(--font-display); font-weight: 800; font-size: 1.4rem; text-transform: lowercase; }
 .month-nav a span { font-size: var(--step--1); color: var(--ink-2); }
-.month-nav a:hover { border-color: var(--ink); }
+/* Met de muis erop een dikkere zwarte rand, zoals de tegels op de homepage (verzoek van de eigenaar, november 2026). */
+.month-nav a:hover, .week-nav a:hover, .city-chips a:hover, .chip:hover { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.month-nav a:focus-visible, .week-nav a:focus-visible, .city-chips a:focus-visible, .chip:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
 .month-nav a[aria-current="page"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .month-nav a[aria-current="page"] span { color: inherit; }
 /* Zelfde rij op /plaatsen/ en /theaters/, met namen in plaats van maanden. */
@@ -880,7 +883,6 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border-radius: 999px;
   border: 1.5px solid var(--ink); text-decoration: none; font-weight: 600;
 }
-.city-chips a:hover { border-color: var(--ink); }
 .city-chips span { color: var(--ink-2); font-weight: 500; font-variant-numeric: tabular-nums; }
 
 .sub-head { font-family: var(--font-display); font-weight: 800; font-size: var(--step-2); margin: 36px 0 16px; }
