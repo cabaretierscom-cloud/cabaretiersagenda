@@ -174,30 +174,33 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
    het logo) en op desktop het zoekveld ernaast. */
 .menu-knop, .zoek-knop, .menu-sluit, .menu-achtergrond { display: none; }
 .kop-zoek { position: relative; display: flex; flex: 1 1 260px; max-width: 460px; margin-left: auto; }
-.kop-zoek input { width: 100%; min-width: 0; height: 46px; padding: 0 46px 0 14px; border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); color: var(--ink); font: 500 var(--step-0) var(--font-body); }
+.kop-zoek input { width: 100%; min-width: 0; height: 40px; padding: 0 40px 0 14px; border: 2px solid var(--ink); border-radius: 10px; background: var(--paper); color: var(--ink); font: 500 var(--step-0) var(--font-body); }
 .kop-zoek input::placeholder { color: var(--ink-2); }
 .kop-zoek input:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
-.kop-zoek button { position: absolute; top: 5px; right: 5px; width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; padding: 0; border: 0; border-radius: 8px; background: var(--ink); color: var(--paper); cursor: pointer; }
-.kop-zoek button svg { width: 18px; height: 18px; }
+.kop-zoek button { position: absolute; top: 5px; right: 5px; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; padding: 0; border: 0; border-radius: 8px; background: var(--ink); color: var(--paper); cursor: pointer; }
+.kop-zoek button svg { width: 16px; height: 16px; }
 .kop-zoek button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .js .site-header .wrap { position: relative; }
 .js .menu-knop, .js .zoek-knop {
-  display: inline-flex; align-items: center; justify-content: center; flex: none; width: 48px; height: 48px; padding: 0;
-  border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); color: var(--ink); cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; flex: none; width: 40px; height: 40px; padding: 0;
+  border: 2px solid var(--ink); border-radius: 10px; background: var(--paper); color: var(--ink); cursor: pointer;
 }
+/* Even groot als het C-logo ernaast (40 px); het raakvlak blijft 48 px door de onzichtbare rand eromheen. */
+.js .menu-knop, .js .zoek-knop { position: relative; }
+.js .menu-knop::after, .js .zoek-knop::after { content: ""; position: absolute; inset: -4px; }
 .js .zoek-knop { display: none; }
-.js .zoek-knop svg { width: 22px; height: 22px; }
+.js .zoek-knop svg { width: 19px; height: 19px; }
 .js .menu-knop { margin-left: 4px; }
 .js .menu-knop:focus-visible, .js .zoek-knop:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .js .zoek-knop[aria-expanded="true"] { background: var(--ink); color: var(--paper); }
-.menu-icoon { position: relative; width: 22px; height: 16px; }
+.menu-icoon { position: relative; width: 19px; height: 14px; }
 .menu-icoon span { position: absolute; left: 0; width: 100%; height: 2.5px; border-radius: 2px; background: currentColor; transition: transform .2s ease, opacity .2s ease, top .2s ease; }
 .menu-icoon span:nth-child(1) { top: 0; }
-.menu-icoon span:nth-child(2) { top: 6.75px; }
-.menu-icoon span:nth-child(3) { top: 13.5px; }
-.menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(1) { top: 6.75px; transform: rotate(45deg); }
+.menu-icoon span:nth-child(2) { top: 5.75px; }
+.menu-icoon span:nth-child(3) { top: 11.5px; }
+.menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(1) { top: 5.75px; transform: rotate(45deg); }
 .menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(2) { opacity: 0; }
-.menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(3) { top: 6.75px; transform: rotate(-45deg); }
+.menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(3) { top: 5.75px; transform: rotate(-45deg); }
 /* Het matglas van de kop gaat uit als het menu open is, anders blijft het paneel binnen de kop gevangen. */
 /* Dicht staat het paneel uit (display: none), anders kan de pagina opzij schuiven; agenda.js zet eerst "zichtbaar"
    en daarna "open", zodat het inschuift. */
@@ -234,7 +237,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
   .zoek-open .kop-zoek { display: flex; position: absolute; top: 100%; left: 0; right: 0; max-width: none; margin: 0; padding: 10px 16px 14px;
     background: var(--paper); box-shadow: 0 10px 16px -12px rgba(18, 18, 18, .35); }
   .zoek-open .kop-zoek input { height: 50px; font-size: 1rem; }
-  .zoek-open .kop-zoek button { top: 17px; right: 23px; }
+  .zoek-open .kop-zoek button { top: 18px; right: 22px; width: 36px; height: 36px; }
   .zoek-open .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--paper); }
 }
 @media (prefers-reduced-motion: reduce) { .menu-icoon span, .js .nav, .menu-achtergrond { transition: none !important; } }
