@@ -167,47 +167,75 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .nav a { text-decoration: none; font-weight: 500; padding: 10px 12px; border-radius: 999px; white-space: nowrap; }
 .nav a:hover { background: var(--paper-2); }
 .nav a[aria-current="page"] { background: var(--ink); color: var(--paper); }
-/* Smaller dan 960px: een hamburgermenu rechts in de kop (verzoek van de eigenaar, november 2026); het menu klapt
-   onder de kop uit. Zonder JavaScript (geen class "js" op <html>) staat het menu als veegbalk onder het logo. */
-.menu-knop, .menu-sluit, .menu-achtergrond { display: none; }
+/* Kop: logo, zoekveld en een hamburgermenu (verzoek van de eigenaar, november 2026). Het menu is op elk scherm een
+   paneel dat van rechts inschuift (driekwart breed op de telefoon, hooguit 380 px), de rest van de pagina vervaagt.
+   Op de telefoon (tot 960 px) is het zoekveld een vergrootglasknop links van de hamburger; die klapt een zoekbalk
+   onder de kop uit. Zonder JavaScript (geen class "js" op <html>): het menu als links in de kop (smal: veegbalk onder
+   het logo) en op desktop het zoekveld ernaast. */
+.menu-knop, .zoek-knop, .menu-sluit, .menu-achtergrond { display: none; }
+.kop-zoek { position: relative; display: flex; flex: 1 1 260px; max-width: 460px; margin-left: auto; }
+.kop-zoek input { width: 100%; min-width: 0; height: 46px; padding: 0 46px 0 14px; border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); color: var(--ink); font: 500 var(--step-0) var(--font-body); }
+.kop-zoek input::placeholder { color: var(--ink-2); }
+.kop-zoek input:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
+.kop-zoek button { position: absolute; top: 5px; right: 5px; width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; padding: 0; border: 0; border-radius: 8px; background: var(--ink); color: var(--paper); cursor: pointer; }
+.kop-zoek button svg { width: 18px; height: 18px; }
+.kop-zoek button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.js .site-header .wrap { position: relative; }
+.js .menu-knop, .js .zoek-knop {
+  display: inline-flex; align-items: center; justify-content: center; flex: none; width: 48px; height: 48px; padding: 0;
+  border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); color: var(--ink); cursor: pointer;
+}
+.js .zoek-knop { display: none; }
+.js .zoek-knop svg { width: 22px; height: 22px; }
+.js .menu-knop { margin-left: 4px; }
+.js .menu-knop:focus-visible, .js .zoek-knop:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.js .zoek-knop[aria-expanded="true"] { background: var(--ink); color: var(--paper); }
+.menu-icoon { position: relative; width: 22px; height: 16px; }
+.menu-icoon span { position: absolute; left: 0; width: 100%; height: 2.5px; border-radius: 2px; background: currentColor; transition: transform .2s ease, opacity .2s ease, top .2s ease; }
+.menu-icoon span:nth-child(1) { top: 0; }
+.menu-icoon span:nth-child(2) { top: 6.75px; }
+.menu-icoon span:nth-child(3) { top: 13.5px; }
+.menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(1) { top: 6.75px; transform: rotate(45deg); }
+.menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(2) { opacity: 0; }
+.menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(3) { top: 6.75px; transform: rotate(-45deg); }
+/* Het matglas van de kop gaat uit als het menu open is, anders blijft het paneel binnen de kop gevangen. */
+/* Dicht staat het paneel uit (display: none), anders kan de pagina opzij schuiven; agenda.js zet eerst "zichtbaar"
+   en daarna "open", zodat het inschuift. */
+.js .nav {
+  display: none; position: fixed; top: 0; right: 0; bottom: 0; z-index: 31; width: min(75vw, 380px); margin: 0; overflow-y: auto;
+  flex-direction: column; gap: 2px; padding: 16px 16px calc(24px + env(safe-area-inset-bottom)); background: var(--paper);
+  border-left: 2px solid var(--ink); box-shadow: -18px 0 40px -18px rgba(18, 18, 18, .5);
+  transform: translateX(100%); visibility: hidden; transition: transform .28s cubic-bezier(.2, .8, .2, 1), visibility 0s linear .28s;
+}
+.js .nav.zichtbaar { display: flex; }
+.js .nav.open { transform: none; visibility: visible; transition: transform .28s cubic-bezier(.2, .8, .2, 1), visibility 0s; }
+.js .nav a { padding: 13px 16px; border-radius: 10px; font-size: var(--step-1); }
+.js .menu-sluit {
+  align-self: flex-end; display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; margin-bottom: 8px;
+  border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); color: var(--ink); font: 400 2rem/1 var(--font-body); cursor: pointer;
+}
+.js .menu-sluit:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.js .menu-achtergrond { display: block; position: fixed; inset: 0; z-index: 30; background: rgba(18, 18, 18, .25); opacity: 0; visibility: hidden;
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: opacity .28s ease, visibility 0s linear .28s; }
+.menu-open .menu-achtergrond { opacity: 1; visibility: visible; transition: opacity .28s ease, visibility 0s; }
+.menu-open, .menu-open body { overflow: hidden; }
+.menu-open .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; }
+@media (min-width: 961px) {
+  html:not(.js) .kop-zoek { flex-basis: 200px; max-width: 280px; }
+  html:not(.js) .nav { margin-left: 0; }
+}
 @media (max-width: 960px) {
   .site-header .wrap { flex-wrap: wrap; gap: 4px 16px; padding-block: 10px; }
   .nav { margin-left: -12px; width: calc(100% + 12px); overflow-x: auto; scrollbar-width: none; }
-  .js .site-header .wrap { flex-wrap: nowrap; position: relative; }
-  .js .menu-knop {
-    display: inline-flex; align-items: center; justify-content: center; margin-left: auto; width: 48px; height: 48px; padding: 0;
-    border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); color: var(--ink); cursor: pointer;
-  }
-  .js .menu-knop:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
-  .menu-icoon { position: relative; width: 22px; height: 16px; }
-  .menu-icoon span { position: absolute; left: 0; width: 100%; height: 2.5px; border-radius: 2px; background: currentColor; transition: transform .2s ease, opacity .2s ease, top .2s ease; }
-  .menu-icoon span:nth-child(1) { top: 0; }
-  .menu-icoon span:nth-child(2) { top: 6.75px; }
-  .menu-icoon span:nth-child(3) { top: 13.5px; }
-  .menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(1) { top: 6.75px; transform: rotate(45deg); }
-  .menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(2) { opacity: 0; }
-  .menu-knop[aria-expanded="true"] .menu-icoon span:nth-child(3) { top: 6.75px; transform: rotate(-45deg); }
-  /* Uitklapmenu: komt van rechts in beeld, driekwart van de breedte; de rest van de pagina vervaagt
-     (verzoek van de eigenaar, november 2026). Het matglas van de kop gaat dan uit, anders blijft het menu
-     binnen de kop gevangen. */
-  .js .nav {
-    display: flex; position: fixed; top: 0; right: 0; bottom: 0; z-index: 31; width: 75vw; margin: 0; overflow-y: auto;
-    flex-direction: column; gap: 2px; padding: 16px 16px calc(24px + env(safe-area-inset-bottom)); background: var(--paper);
-    border-left: 2px solid var(--ink); box-shadow: -18px 0 40px -18px rgba(18, 18, 18, .5);
-    transform: translateX(100%); visibility: hidden; transition: transform .28s cubic-bezier(.2, .8, .2, 1), visibility 0s linear .28s;
-  }
-  .js .nav.open { transform: none; visibility: visible; transition: transform .28s cubic-bezier(.2, .8, .2, 1), visibility 0s; }
-  .js .nav a { padding: 13px 16px; border-radius: 10px; font-size: var(--step-1); }
-  .js .menu-sluit {
-    align-self: flex-end; display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; margin-bottom: 8px;
-    border: 2px solid var(--ink); border-radius: 12px; background: var(--paper); color: var(--ink); font: 400 2rem/1 var(--font-body); cursor: pointer;
-  }
-  .js .menu-sluit:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
-  .js .menu-achtergrond { display: block; position: fixed; inset: 0; z-index: 30; background: rgba(18, 18, 18, .25); opacity: 0; visibility: hidden;
-    -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: opacity .28s ease, visibility 0s linear .28s; }
-  .menu-open .menu-achtergrond { opacity: 1; visibility: visible; transition: opacity .28s ease, visibility 0s; }
-  .menu-open, .menu-open body { overflow: hidden; }
-  .menu-open .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .kop-zoek { display: none; }
+  .js .site-header .wrap { flex-wrap: nowrap; gap: 8px; }
+  .js .zoek-knop { display: inline-flex; margin-left: auto; }
+  /* Zoekbalk onder de kop, open via het vergrootglas. */
+  .zoek-open .kop-zoek { display: flex; position: absolute; top: 100%; left: 0; right: 0; max-width: none; margin: 0; padding: 10px 16px 14px;
+    background: var(--paper); box-shadow: 0 10px 16px -12px rgba(18, 18, 18, .35); }
+  .zoek-open .kop-zoek input { height: 50px; font-size: 1rem; }
+  .zoek-open .kop-zoek button { top: 17px; right: 23px; }
+  .zoek-open .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--paper); }
 }
 @media (prefers-reduced-motion: reduce) { .menu-icoon span, .js .nav, .menu-achtergrond { transition: none !important; } }
 

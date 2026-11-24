@@ -237,6 +237,12 @@ ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title
       <span class="brand-mark" aria-hidden="true">${LOGO_SVG}</span>
       <span class="logo-tekst"><span class="wordmark">${WOORDMERK_SVG}<span class="tld">.com</span></span><span class="ondertitel">De theateragenda</span></span>
     </a>
+    <form class="kop-zoek" id="kop-zoek" action="/agenda/" method="get" role="search">
+      <label for="kop-q" class="visually-hidden">Zoek op artiest, voorstelling, plaats of theater</label>
+      <input id="kop-q" name="q" type="search" autocomplete="off" placeholder="Zoek artiest, plaats of theater" required>
+      <button type="submit" aria-label="Zoeken">${ICON_ZOEK}</button>
+    </form>
+    <button type="button" class="zoek-knop" aria-expanded="false" aria-controls="kop-zoek">${ICON_ZOEK}<span class="visually-hidden">Zoeken</span></button>
     <button type="button" class="menu-knop" aria-expanded="false" aria-controls="hoofdmenu"><span class="menu-icoon" aria-hidden="true"><span></span><span></span><span></span></span><span class="visually-hidden">Menu</span></button>
     <div class="menu-achtergrond" aria-hidden="true"></div>
     <nav class="nav" id="hoofdmenu" aria-label="Hoofdmenu"><button type="button" class="menu-sluit"><span aria-hidden="true">&times;</span><span class="visually-hidden">Menu sluiten</span></button>${nav}</nav>

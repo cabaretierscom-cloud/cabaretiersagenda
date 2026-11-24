@@ -799,14 +799,18 @@
   });
 })();
 
-// Hamburgermenu in de kop op smalle schermen: een paneel dat van rechts inschuift; sluiten met het kruisje, Escape,
+// Hamburgermenu in de kop (elk scherm): een paneel dat van rechts inschuift; sluiten met het kruisje, Escape,
 // een klik op de vervaagde pagina ernaast of op een link. Zonder JavaScript staat het menu als veegbalk onder het logo.
 (() => {
   const knop = document.querySelector(".menu-knop"), menu = document.getElementById("hoofdmenu");
   if (!knop || !menu) return;
   const sluit = menu.querySelector(".menu-sluit");
+  let dicht;
   const zet = (open) => {
-    menu.classList.toggle("open", open); knop.setAttribute("aria-expanded", String(open));
+    clearTimeout(dicht);
+    if (open) { menu.classList.add("zichtbaar"); void menu.offsetWidth; menu.classList.add("open"); }
+    else if (menu.classList.contains("open")) { menu.classList.remove("open"); dicht = setTimeout(() => menu.classList.remove("zichtbaar"), 300); }
+    knop.setAttribute("aria-expanded", String(open));
     document.documentElement.classList.toggle("menu-open", open);
     if (open) (menu.querySelector('[aria-current="page"]') || menu.querySelector("a"))?.focus({ preventScroll: true });
   };
@@ -815,5 +819,14 @@
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && menu.classList.contains("open")) { zet(false); knop.focus(); } });
   document.addEventListener("click", (e) => { if (menu.classList.contains("open") && !menu.contains(e.target) && !knop.contains(e.target)) zet(false); });
   menu.addEventListener("click", (e) => { if (e.target.closest("a")) zet(false); });
-  matchMedia("(min-width: 961px)").addEventListener?.("change", (m) => { if (m.matches) zet(false); });
+  // Telefoon: het vergrootglas klapt een zoekbalk onder de kop uit (en sluit het menu).
+  const zoekKnop = document.querySelector(".zoek-knop"), zoekVeld = document.getElementById("kop-q");
+  const zoek = (open) => {
+    document.documentElement.classList.toggle("zoek-open", open); zoekKnop?.setAttribute("aria-expanded", String(open));
+    if (open) { zet(false); zoekVeld?.focus(); }
+  };
+  zoekKnop?.addEventListener("click", () => zoek(!document.documentElement.classList.contains("zoek-open")));
+  knop.addEventListener("click", () => zoek(false), true);
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && document.documentElement.classList.contains("zoek-open")) { zoek(false); zoekKnop?.focus(); } });
+  matchMedia("(min-width: 961px)").addEventListener?.("change", (m) => { if (m.matches) zoek(false); });
 })();
