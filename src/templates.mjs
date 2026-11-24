@@ -193,7 +193,10 @@ export function createTemplates(db, { ga = null } = {}) {
       ["festivals", "/festivals/", "Festivals"],
       ["nieuws", "/nieuws/", "Nieuws"],
     ].map(([key, href, label]) =>
-      `<a href="${href}"${key === section ? ' aria-current="page"' : ""}>${label}</a>`).join("");
+      `<a href="${href}"${key === section ? ' aria-current="page"' : ""}>${label}</a>`).join("")
+      // Onderaan het uitklapmenu, apart van de rest (verzoek van de eigenaar, november 2026); zonder JavaScript
+      // staat het menu in de kop en is deze link verborgen (hij staat ook in de voet).
+      + `<a class="menu-over" href="/over/"${section === "over" ? ' aria-current="page"' : ""}>Over Cabaretiers.com</a>`;
     // Lange titels zonder " | Cabaretiers.com", zodat het belangrijke deel in Google zichtbaar blijft.
     const fullTitle = title ? (`${title} | ${SITE.name}`.length > 62 ? title : `${title} | ${SITE.name}`) : `${SITE.name} | Agenda voor cabaret, stand-up comedy en theater`;
     return `<!doctype html>
