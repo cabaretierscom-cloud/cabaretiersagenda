@@ -189,6 +189,7 @@ export function createTemplates(db, { ga = null } = {}) {
       ["artiesten", "/artiesten/", "Artiesten"],
       ["theaters", "/theaters/", "Theaters"],
       ["comedyclubs", "/comedy-clubs/", "Comedy Clubs"],
+      ["plaatsen", "/plaatsen/", "Plaatsen"],
       ["festivals", "/festivals/", "Festivals"],
       ["nieuws", "/nieuws/", "Nieuws"],
     ].map(([key, href, label]) =>
