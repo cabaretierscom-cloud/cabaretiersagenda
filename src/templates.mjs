@@ -1296,10 +1296,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const steden = p ? [] : telPer(list.filter((g) => !avond || g.datum === vandaagDag), (g) => T.get(g.theater).plaats).slice(0, 15).map(([q, n]) => `<a href="${plaatsPad(q)}">${esc(q)} (${n})</a>`);
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">${esc(hoofdletter(wanneer))}${esc(waar)}</h1><p>${esc(hoofdletter(periode))}${p ? "" : " in Nederland en België"}</p></div>
-      <p class="dag-intro">${avond
-        ? `Zin in een avond lachen? Hier staan alle cabaret- en comedyvoorstellingen van vandaag${waar}, met de tijd, de zaal en een link naar de kaartverkoop. Hieronder staat ook alvast morgen.`
-        : `Alle cabaret- en comedyvoorstellingen${waar} van vrijdag tot en met zondag, van theatercabaret tot stand-up in comedyclubs, met de tijd, de zaal en een link naar de kaartverkoop.`}
-        Kaarten koop je bij het theater; controleer daar ook of een voorstelling is uitverkocht.</p>
       <nav class="dag-nav" aria-label="Meer">${[andereLink, p ? `<a href="${plaatsPad(p)}">Alle voorstellingen in ${esc(p)}</a>` : `<a href="/agenda/">De hele agenda</a>`].filter(Boolean).join("")}</nav>
       ${p ? uitgelichtBlok("plaats", p) : uitgelichtBlok("agenda")}
       ${filters(list, { afstand: true })}
@@ -1307,6 +1303,12 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${leegBlok}
       <div class="empty" id="dag-leeg"${list.length ? " hidden" : ""}><p>${avond ? "Vanavond" : "Dit weekend"} staat er${waar} niets in de agenda. Bekijk <a href="${p ? plaatsPad(p) : "/agenda/"}">de eerstvolgende voorstellingen</a>.</p></div>
       ${steden.length ? `<h2 class="sub-head">${esc(hoofdletter(wanneer))} per plaats</h2><p class="city-chips">${steden.join("")}</p>` : ""}
+      <div class="seo-tekst prose">
+        <p>${avond
+        ? `Zin in een avond lachen? Hier staan alle cabaret- en comedyvoorstellingen van vandaag${waar}, met de tijd, de zaal en een link naar de kaartverkoop. Ook morgen staat er alvast bij.`
+        : `Alle cabaret- en comedyvoorstellingen${waar} van vrijdag tot en met zondag, van theatercabaret tot stand-up in comedyclubs, met de tijd, de zaal en een link naar de kaartverkoop.`}
+        Kaarten koop je bij het theater; controleer daar ook of een voorstelling is uitverkocht.</p>
+      </div>
     </section>`;
     const desc = kort(`${titel}: ${plural(nVandaag, "voorstelling", "voorstellingen")} op ${periode}${list.length ? `, met ${opsomming([...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].slice(0, 3).map((a) => A.get(a).naam))}` : ""}. Met tijden, zalen en tickets.`);
     const kruimels = p ? [["Plaatsen", "/plaatsen/"], [p, plaatsPad(p)], [hoofdletter(wanneer), dagPad(soort, p)]] : [[hoofdletter(wanneer), dagPad(soort)]];

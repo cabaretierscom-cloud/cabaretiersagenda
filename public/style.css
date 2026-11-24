@@ -1040,7 +1040,6 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 #gigs[data-ingeklapt] .week-groep.later { display: none; }
 .meer-weken { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 0; }
 .month-group h3 small { font-family: var(--font-body); font-weight: 500; font-size: 1rem; margin-left: 8px; }
-.dag-intro { max-width: 68ch; margin: 0 0 12px; }
 .dag-nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0 0 16px; font-weight: 600; }
 .dag-blok { margin: 8px 0 28px; }
 .dag-blok h2 { font-family: var(--font-display); font-weight: 800; font-size: var(--step-1); margin: 0 0 12px; }
