@@ -2835,7 +2835,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     // voorstelling" (plaats en zaal staan al vast) (verzoek van de eigenaar, november 2026).
     const feiten = [
       `<li><a href="${plaatsPad(t.plaats)}">${ICON.pin}${esc(t.plaats)}, ${LANDEN[t.land]}</a></li>`,
-      `<li class="vol">${list.length ? plural(list.length, "voorstelling", "voorstellingen") : "Geen voorstellingen gepland"}</li>`,
       t.website ? `<li><a href="${esc(metUtm(t.website))}" rel="noopener">Website${ICON.extern}<span class="visually-hidden"> van ${esc(t.naam)}</span></a></li>` : "",
     ].join("");
     const body = `<div class="detail-hero zaal-kop" style="${ink(zaalKleur(t))}">
@@ -2845,6 +2844,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <h1>${esc(t.naam)}</h1>
         ${t.voorheen ? `<p>Voorheen ${esc(t.voorheen.naam)}.</p>` : ""}
         <ul class="zaal-feiten">${feiten}</ul>
+        <p class="zaal-aantal">${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}` : "Op dit moment staan er geen voorstellingen gepland."}</p>
         </div>
         ${t.foto ? fotoHtml(t, "theater-foto") : ""}
       </div></div>
