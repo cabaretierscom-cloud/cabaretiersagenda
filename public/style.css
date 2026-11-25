@@ -1526,9 +1526,48 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* Kruimelpad in het gekleurde vlak (/in-de-buurt/), in de kleur van de inkt van het vlak. */
 .buurt-kop { padding-top: 6px; }
 .buurt-kop .kruimelpad ol { padding-block: 8px 10px; }
-.buurt-kop .kruimelpad :is(ol, li::before, a, [aria-current="page"]) { color: var(--kop-inkt); }
+.buurt-kop .kruimelpad :is(ol, a, [aria-current="page"]) { color: var(--kop-inkt); }
+.buurt-kop .kruimelpad li + li::before { color: var(--kop-inkt); opacity: .7; }
 .buurt-kop .kruimelpad a { opacity: .8; }
 .buurt-kop .kruimelpad a:hover { opacity: 1; color: var(--kop-inkt); }
 /* Mijn locatie en de afstandknop precies even hoog (44 px, ook op de telefoon; verzoek van de eigenaar, november 2026). */
 .buurt-kop .buurt-locatie, .buurt-kop .buurt-straal { box-sizing: border-box; height: 44px; min-height: 0; }
 .buurt-kop .buurt-straal button, .buurt-kop .buurt-straal .buurt-afstand-label { height: 100%; min-height: 0; }
+
+/* ---------- Theaterpagina: kop in de eigen kleur van de zaal ----------
+   Kruimelpad, naam, feiten (plaats, aantal, website) als knopjes en de foto in het vlak; onderaan de stippellijn.
+   Zoeken en filters staan eronder als ronde knopjes, zoals op /in-de-buurt/ (verzoek van de eigenaar, november 2026). */
+.zaal-kop::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; border-bottom: 3px dotted var(--fg); }
+.zaal-kop .kruimelpad ol { padding-block: 10px 0; }
+.zaal-kop .kruimelpad :is(ol, a, [aria-current="page"]) { color: var(--fg); }
+.zaal-kop .kruimelpad li + li::before { color: var(--fg); opacity: .7; }
+.zaal-kop .kruimelpad a { opacity: .8; }
+.zaal-kop .kruimelpad a:hover { opacity: 1; color: var(--fg); }
+.zaal-kop > .wrap { padding-block: 14px 34px; }
+.zaal-kop .hero-met-foto { align-items: center; }
+.zaal-kop h1 { text-transform: none; font-size: clamp(2.6rem, 7vw, 5rem); line-height: .9; margin-top: 4px; }
+.zaal-kop p { font-size: var(--step-0); margin-top: 10px; }
+.zaal-feiten { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; }
+.zaal-feiten li { display: inline-flex; }
+.zaal-feiten li > *, .zaal-feiten li.vol { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1.5px solid var(--fg); color: var(--fg); font-weight: 600; font-size: .95rem; text-decoration: none; white-space: nowrap; }
+.zaal-feiten li.vol { background: var(--fg); color: var(--bg); }
+.zaal-feiten svg { width: 16px; height: 16px; flex: none; }
+.zaal-feiten a:hover { box-shadow: inset 0 0 0 1px var(--fg); }
+.zaal-feiten a:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; }
+.zaal-kop .theater-foto { width: clamp(240px, 36vw, 480px); }
+.zaal-lijst { padding-top: 18px; }
+.zaal-lijst .filters { background: none; padding: 0; border-radius: 0; gap: 8px; align-items: center; }
+.zaal-lijst .filters :is(label[for="f-q"], label[for="f-maand"], .label) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.zaal-lijst .filters .field { flex: 0 0 auto; display: block; }
+.zaal-lijst .filters .search { flex: 1 1 320px; max-width: 560px; position: relative; }
+.zaal-lijst .filters .search input { padding-left: 48px; min-height: 52px; }
+.zaal-lijst .zoek-icoon { position: absolute; left: 16px; top: 50%; translate: 0 -50%; width: 20px; height: 20px; color: var(--ink); pointer-events: none; }
+.zaal-lijst .zoek-icoon svg { width: 100%; height: 100%; display: block; }
+.zaal-lijst .filters .keuze { min-width: 0; }
+.zaal-lijst .filters :is(.keuze summary, .toggle, select) { min-height: 42px; border-width: 1.5px; border-radius: 999px; padding: 0 38px 0 16px; font-weight: 600; gap: 8px; width: auto; }
+.zaal-lijst .filters .toggle-veld .toggle { padding: 0 16px 0 12px; width: auto; }
+.zaal-lijst .filters .toggle input { width: 18px; height: 18px; }
+.zaal-lijst .filters .keuze summary .keuze-n { padding: 1px 8px; font-size: .75rem; }
+.zaal-lijst .filters :is(.keuze summary, .toggle, select):hover { box-shadow: inset 0 0 0 1px var(--ink); }
+.zaal-lijst .filters .keuze-lijst { width: max-content; min-width: max(100%, 260px); max-width: calc(100vw - 32px); }
+@media (max-width: 560px) { .zaal-lijst .filters .search { flex-basis: 100%; max-width: none; } .zaal-lijst .filters .field:not(.search) { flex-basis: auto; } }

@@ -576,7 +576,7 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
       </details>
     </div>`;
   }
-  function filters(list, { maand = false, waar = false, genre = true, afstand = false, icoon = false } = {}) {
+  function filters(list, { maand = false, waar = false, genre = true, afstand = false, icoon = false, voorbeeld = "Jochem Myjer, Eindhoven of Carré" } = {}) {
     // Kindervoorstellingen (hoofdgenre) die standaard uit staan; 0 als de lijst alleen kindervoorstellingen heeft.
     const kinder = list.some((x) => !heeftGenre(x, "kindervoorstellingen")) ? list.filter((x) => V.get(x.voorstelling).genre === "kindervoorstellingen").length : 0;
     const months = [...new Set(list.map((g) => g.datum.slice(0, 7)))].sort();
@@ -586,7 +586,7 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
     <div class="field search">
       ${waar ? `<label for="f-q">Zoek op plaats of theater</label>
       <input id="f-q" name="q" type="search" autocomplete="off" data-veld="waar" placeholder="Bijvoorbeeld: ${esc(voorbeeldWaar(list))}">` : `<label for="f-q">Zoek op artiest, voorstelling, plaats of theater</label>
-      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="Jochem Myjer, Eindhoven of Carré">`}${icoon ? `<span class="zoek-icoon">${ICON_ZOEK}</span>` : ""}
+      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="${esc(voorbeeld)}">`}${icoon ? `<span class="zoek-icoon">${ICON_ZOEK}</span>` : ""}
     </div>
     ${maand && months.length > 1 ? `<div class="field">
       <label for="f-maand">Maand</label>
@@ -2830,15 +2830,26 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   function theaterPage(t) {
     const list = db.gigsForTheater(t.id);
-    const body = `<div class="detail-hero" style="${t.kleur ? ink(t.kleur) : "--bg:var(--riso-blue);--fg:#FFF"}"><div class="wrap${t.foto ? " hero-met-foto" : ""}">
+    // Kop in de eigen kleur van de zaal (dezelfde als het kaartje op de homepage, `zaalKleur`), met het kruimelpad,
+    // de naam, de feiten als knopjes en de foto; zoeken en filters onder de stippellijn, met "Zoek een artiest of
+    // voorstelling" (plaats en zaal staan al vast) (verzoek van de eigenaar, november 2026).
+    const feiten = [
+      `<li><a href="${plaatsPad(t.plaats)}">${ICON.pin}${esc(t.plaats)}, ${LANDEN[t.land]}</a></li>`,
+      `<li class="vol">${list.length ? plural(list.length, "voorstelling", "voorstellingen") : "Geen voorstellingen gepland"}</li>`,
+      t.website ? `<li><a href="${esc(metUtm(t.website))}" rel="noopener">Website${ICON.extern}<span class="visually-hidden"> van ${esc(t.naam)}</span></a></li>` : "",
+    ].join("");
+    const body = `<div class="detail-hero zaal-kop" style="${ink(zaalKleur(t))}">
+      <!--kruimelpad-->
+      <div class="wrap${t.foto ? " hero-met-foto" : ""}">
         <div>
         <h1>${esc(t.naam)}</h1>
-        <p>${t.voorheen ? `Voorheen ${esc(t.voorheen.naam)}. ` : ""}<a href="${plaatsPad(t.plaats)}">${esc(t.plaats)}</a>, ${LANDEN[t.land]}. ${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}.` : "Op dit moment staan er geen voorstellingen gepland."}${t.website ? ` <a href="${esc(metUtm(t.website))}" rel="noopener">Website van het theater</a>` : ""}</p>
+        ${t.voorheen ? `<p>Voorheen ${esc(t.voorheen.naam)}.</p>` : ""}
+        <ul class="zaal-feiten">${feiten}</ul>
         </div>
         ${t.foto ? fotoHtml(t, "theater-foto") : ""}
       </div></div>
-      <div class="wrap detail-body">
-        ${list.length > 12 ? filters(list, { maand: true }) : ""}
+      <div class="wrap detail-body zaal-lijst">
+        ${list.length > 12 ? filters(list, { maand: true, icoon: true, voorbeeld: "Zoek een artiest of voorstelling" }) : ""}
         <div id="gigs">${monthGroups(list, { showVenue: false })}</div>
         ${list.length > 12 ? leegBlok : ""}
         ${theaterTekst(t, list)}
@@ -2864,8 +2875,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <p><button type="button" class="knop-secundair" data-cookies-wijzig hidden>Cookiekeuze wijzigen</button></p>
         <h2 id="opslag">Wat er in je browser blijft staan</h2>
         <p>Je keuze in de cookiemelding bewaren we in je eigen browser (<code>cabaretiers-cookies</code>), zodat we het niet elke keer opnieuw vragen, net als je keuze voor een lichte of donkere weergave met de knop Nachtmodus/Dagmodus onderaan elke pagina (<code>cabaretiers-weergave</code>) en de kleur van het vlak bovenaan de homepage bij je vorige bezoek (<code>cabaretiers-kopkleur</code>), zodat je de volgende keer een andere kleur ziet. Dat gaat niet naar ons of naar anderen.</p>
-        <h2 id="video">Video's</h2>
+        <h2 id="locatie">Voorstellingen in de buurt</h2>
         <p>Gebruik je <a href="/in-de-buurt/">Voorstellingen in de buurt</a> en geef je toestemming voor je locatie, dan rekent je eigen browser de afstand tot de theaters uit. Je locatie gaat niet naar ons of naar anderen en wordt niet bewaard. Wel onthoudt je eigen browser de plaats of postcode en de afstand van je laatste zoekopdracht (<code>cabaretiers-buurt</code>), of dat je vanaf je locatie zocht, zodat je de volgende keer meteen de voorstellingen in de buurt ziet. Heb je je browser al eerder toestemming gegeven voor je locatie, dan zoekt de pagina meteen vanaf je locatie, zonder het opnieuw te vragen; die toestemming trek je in via de instellingen van je browser.</p>
+        <h2 id="video">Video's</h2>
         <p>Op sommige artiestpagina's staan video's van YouTube. Die laden pas als je erop klikt; dan maakt je browser verbinding met YouTube (in de privacyvriendelijke modus zonder cookies vooraf) en gelden de privacyregels van Google.</p>
         <h2 id="links">Links naar theaters en sociale media</h2>
         <p>Via <em>Tickets</em> ga je naar de site van het theater of de artiest, en via de iconen onderaan naar onze pagina's op Instagram, Facebook, YouTube en TikTok. Daar gelden hun eigen privacyregels. Aan de link naar het theater voegen we een label toe (<code>utm_source=cabaretiers.com</code>), zodat het theater in zijn eigen statistieken ziet dat je via Cabaretiers.com komt. Daarmee geven wij geen gegevens over jou door.</p>
