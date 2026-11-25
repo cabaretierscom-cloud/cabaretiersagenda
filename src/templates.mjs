@@ -985,6 +985,7 @@ ${netBinnenBlok({ link: false, klein: true })}
       ["In de buurt", "/in-de-buurt/?locatie=1", "met je locatie"],
       ["Oudejaars", genrePad("oudejaarsconference"), GENRES.oudejaarsconference ? nOudejaars : 0],
       ["Try-outs", "/agenda/try-outs/", tryoutLijst.length],
+      ["Premières", "/agenda/premieres/", premiereLijst.length],
     ].filter(([, , n]) => n).map(([t, u, n]) => [t, u, typeof n === "number" ? plural(n, "voorstelling", "voorstellingen") : n]);
     return `<nav class="month-nav home-snel" aria-label="Snel naar">${snel.map(([t, u, n]) => `<a href="${u}"><b>${t}</b><span>${n}</span></a>`).join("")}</nav>`;
   }
