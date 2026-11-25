@@ -1575,3 +1575,6 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
    schermlezers blijft hij bestaan (aria-live), alleen niet te zien. */
 .zaal-lijst .result-line { position: absolute; width: 1px; height: 1px; margin: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .zaal-lijst #gigs > .month-group:first-child h3 { padding-top: 34px; }
+/* Naamsvermelding van de zaalfoto onderaan de theaterpagina (alleen als de licentie erom vraagt). */
+.foto-credit { margin: 40px 0 0; font-size: .78rem; color: var(--ink-2); }
+.foto-credit a { color: inherit; }

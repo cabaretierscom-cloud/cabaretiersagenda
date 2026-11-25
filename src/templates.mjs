@@ -2828,6 +2828,18 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return layout({ title: "Theaters en zalen met cabaret en comedy", description: kort(`${plural(zalenMetData.length, "theater", "theaters")}, comedyclubs en podia in Nederland en België met cabaret en comedy op het programma, per plaats, met hun aankomende voorstellingen.`), path: "/theaters/", section: "theaters", body, schema: { type: "CollectionPage", kruimels: [["Theaters", "/theaters/"]], hoofd: lijstLd([...zalenMetData].sort((x, y) => x.naam.localeCompare(y.naam, "nl")).map((t) => [t.naam, `/theaters/${t.id}/`])), extra: [faqLd(overzicht.vragen, "/theaters/")] } });
   }
 
+  // Zaalfoto zonder bijschrift (verzoek van de eigenaar, november 2026). Vraagt de licentie om naamsvermelding (CC BY,
+  // CC BY-SA), dan staat die als kleine regel onderaan de pagina; publiek domein, CC0 en beelden van de zaal zelf
+  // (promo) hebben die niet nodig. De maker staat ook als tooltip op de foto.
+  const zaalFoto = (t) => `<figure class="theater-foto">
+          <img src="${esc(t.foto.bestand)}" alt="${esc(t.foto.alt)}"${t.foto.maker ? ` title="Foto: ${esc(t.foto.maker)}"` : ""}${t.foto.breedte ? ` width="${t.foto.breedte}" height="${t.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
+        </figure>`;
+  const zaalFotoCredit = (t) => {
+    const f = t.foto;
+    if (!f || f.promo || !f.maker || !/^CC BY/i.test(f.licentie || "")) return "";
+    return `<p class="foto-credit">Foto bovenaan: <a href="${esc(f.bron)}" rel="noopener">${esc(f.maker)}</a>, ${f.licentieUrl ? `<a href="${esc(f.licentieUrl)}" rel="noopener license">${esc(f.licentie)}</a>` : esc(f.licentie)}.</p>`;
+  };
+
   function theaterPage(t) {
     const list = db.gigsForTheater(t.id);
     // Kop in de eigen kleur van de zaal (dezelfde als het kaartje op de homepage, `zaalKleur`), met het kruimelpad,
@@ -2846,7 +2858,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <ul class="zaal-feiten">${feiten}</ul>
         <p class="zaal-aantal">${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}` : "Op dit moment staan er geen voorstellingen gepland."}</p>
         </div>
-        ${t.foto ? fotoHtml(t, "theater-foto") : ""}
+        ${t.foto ? zaalFoto(t) : ""}
       </div></div>
       <div class="wrap detail-body zaal-lijst">
         ${list.length > 12 ? filters(list, { maand: true, icoon: true, voorbeeld: "Zoek een artiest of voorstelling" }) : ""}
@@ -2854,6 +2866,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${list.length > 12 ? leegBlok : ""}
         ${theaterTekst(t, list)}
         ${list.length ? faqHtml(theaterVragen(t, list), `Veelgestelde vragen over ${t.naam}`) : ""}
+        ${zaalFotoCredit(t)}
       </div>`;
     const desc = list.length
       ? zinnen(`Wat speelt er in ${t.naam}${t.naam.includes(t.plaats) ? "" : ` in ${t.plaats}`}? ${plural(list.length, "voorstelling", "voorstellingen")} cabaret en comedy in seizoen ${SEIZOEN}.`, (() => { const n = [...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].slice(0, 3).map((x) => A.get(x).naam); return n.length ? `Met onder meer ${opsomming(n)}.` : ""; })(), "Met links naar de kaartverkoop.")
