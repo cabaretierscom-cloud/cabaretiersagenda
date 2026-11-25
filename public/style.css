@@ -1571,3 +1571,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .zaal-lijst .filters :is(.keuze summary, .toggle, select):hover { box-shadow: inset 0 0 0 1px var(--ink); }
 .zaal-lijst .filters .keuze-lijst { width: max-content; min-width: max(100%, 260px); max-width: calc(100vw - 32px); }
 @media (max-width: 560px) { .zaal-lijst .filters .search { flex-basis: 100%; max-width: none; } .zaal-lijst .filters .field:not(.search) { flex-basis: auto; } }
+/* Theaterpagina: geen zichtbare regel "50 van 147 voorstellingen" (verzoek van de eigenaar, november 2026); voor
+   schermlezers blijft hij bestaan (aria-live), alleen niet te zien. */
+.zaal-lijst .result-line { position: absolute; width: 1px; height: 1px; margin: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.zaal-lijst #gigs > .month-group:first-child h3 { padding-top: 34px; }
