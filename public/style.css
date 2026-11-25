@@ -1420,3 +1420,43 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 
 /* Smalle telefoons: de voorbeeldtekst in de zoekvelden past dan nog net. */
 @media (max-width: 374px) { .home-zoek input::placeholder, .field input[type=search]::placeholder { font-size: .8rem; } .home-zoek input { padding: 0 11px; } }
+
+/* ---------- /agenda/: kop in het gekleurde vlak van de homepage ----------
+   Zelfde kleur per bezoek en bolletjesraster (.home-kop), met de titel, de zoekbalk, de filters als knopjes en de
+   periodes erin; onderaan de stippellijn van de affiches, waarna de lijst begint (verzoek van de eigenaar, november 2026).
+   Velden en knopjes houden de kleuren van de pagina: overdag wit met zwarte rand, in donker donker met lichte rand. */
+.agenda-kop { z-index: 2; padding-block: 28px 30px; }
+.agenda-kop::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; border-bottom: 3px dotted var(--kop-inkt); }
+.agenda-kop .block-head { margin: 0; align-items: baseline; }
+.agenda-kop .block-head h1 { font-size: clamp(2.6rem, 7vw, 4.2rem); color: var(--kop-inkt); }
+.agenda-kop .block-head p { color: var(--kop-inkt); }
+.agenda-kop .filters { background: none; padding: 0; border-radius: 0; margin-top: 16px; gap: 8px; align-items: center; }
+.agenda-kop .filters :is(label[for="f-q"], .label, #f-km-label) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.agenda-kop .filters .field { flex: 0 0 auto; display: block; }
+.agenda-kop .filters .search { flex: 1 1 100%; position: relative; }
+.agenda-kop .filters .search input { padding-left: 48px; min-height: 52px; }
+.agenda-kop .zoek-icoon { position: absolute; left: 16px; top: 50%; translate: 0 -50%; width: 20px; height: 20px; color: var(--ink); pointer-events: none; }
+.agenda-kop .zoek-icoon svg { width: 100%; height: 100%; display: block; }
+.agenda-kop .filters .keuze { min-width: 0; }
+.agenda-kop .filters :is(.keuze summary, .toggle) { min-height: 42px; border-width: 1.5px; border-radius: 999px; padding: 0 38px 0 16px; font-weight: 600; gap: 8px; }
+.agenda-kop .filters .toggle { padding: 0 16px 0 12px; width: auto; }
+.agenda-kop .filters .toggle input { width: 18px; height: 18px; }
+.agenda-kop .filters .keuze summary .keuze-n { padding: 1px 8px; font-size: .75rem; }
+.agenda-kop .filters :is(.keuze summary, .toggle):hover { box-shadow: inset 0 0 0 1px var(--ink); }
+.agenda-kop .result-line { margin: 12px 0 0; color: var(--kop-inkt); font-weight: 500; }
+.agenda-kop .result-line:empty { display: none; }
+.periode { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.periode a { display: inline-flex; align-items: center; min-height: 40px; padding: 0 15px; border-radius: 999px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); font-weight: 600; text-decoration: none; white-space: nowrap; }
+.periode a:hover { box-shadow: inset 0 0 0 1px var(--ink); }
+.periode a[aria-current="page"] { background: var(--ink); color: var(--paper); }
+.periode a:focus-visible { outline: 3px solid var(--kop-inkt); outline-offset: 2px; }
+.agenda-lijst { padding-top: 8px; }
+.agenda-lijst > #gigs > .week-groep:first-child h3 { padding-top: 20px; }
+@media (max-width: 760px) {
+  .agenda-kop { padding-block: 20px 24px; }
+  /* Telefoon: de periodes in één rij om opzij te vegen, tot de rand van het scherm. */
+  .periode { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--gutter, 16px)); padding-inline: var(--gutter, 16px); }
+  .periode::-webkit-scrollbar { display: none; }
+}
+/* De keuzelijsten zijn hier smalle knopjes: het uitklapvak krijgt zijn eigen breedte. */
+.agenda-kop .filters .keuze-lijst { width: max-content; min-width: max(100%, 260px); max-width: calc(100vw - 32px); }

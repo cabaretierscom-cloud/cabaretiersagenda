@@ -558,7 +558,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // waar: alleen zoeken op plaats en zaal (artiestpagina: de artiest heb je dan al gevonden).
   // Zoeken en filteren boven een speellijst (public/agenda.js). Het zoekveld doorzoekt artiest,
   // voorstelling, zaal en plaats; op een artiestpagina alleen zaal en plaats (waar).
-  function filters(list, { maand = false, waar = false, genre = true, afstand = false } = {}) {
+  function filters(list, { maand = false, waar = false, genre = true, afstand = false, icoon = false } = {}) {
     // Kindervoorstellingen (hoofdgenre) die standaard uit staan; 0 als de lijst alleen kindervoorstellingen heeft.
     const kinder = list.some((x) => !heeftGenre(x, "kindervoorstellingen")) ? list.filter((x) => V.get(x.voorstelling).genre === "kindervoorstellingen").length : 0;
     const months = [...new Set(list.map((g) => g.datum.slice(0, 7)))].sort();
@@ -568,7 +568,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     <div class="field search">
       ${waar ? `<label for="f-q">Zoek op plaats of theater</label>
       <input id="f-q" name="q" type="search" autocomplete="off" data-veld="waar" placeholder="Bijvoorbeeld: ${esc(voorbeeldWaar(list))}">` : `<label for="f-q">Zoek op artiest, voorstelling, plaats of theater</label>
-      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="Jochem Myjer, Eindhoven of Carré">`}
+      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="Jochem Myjer, Eindhoven of Carré">`}${icoon ? `<span class="zoek-icoon">${ICON_ZOEK}</span>` : ""}
     </div>
     ${maand && months.length > 1 ? `<div class="field">
       <label for="f-maand">Maand</label>
@@ -631,6 +631,13 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // 2026: een maand ver vooruit met één of twee data oogt leeg). De pagina's zelf bestaan wel, ook via vorige/volgende.
   const MAAND_DREMPEL = 5;
   const balkMaanden = maanden.filter((m) => perMaand(m).length > MAAND_DREMPEL);
+  // Bovenaan /agenda/: de hele agenda, vanavond, dit weekend, try-outs en de maanden als één rij knopjes.
+  function periodeNav() {
+    const snel = [["Vanavond", "/vanavond/"], ["Dit weekend", "/dit-weekend/"], ...(tryoutLijst.length ? [["Try-outs", "/agenda/try-outs/"]] : [])];
+    const jaar = db.today.slice(0, 4);
+    return `<nav class="periode" aria-label="Periode"><a href="/agenda/" aria-current="page">Alles</a>${snel.map(([t, u]) => `<a href="${u}">${t}</a>`).join("")}${maanden.filter((m) => balkMaanden.includes(m)).map((m) =>
+      `<a href="/agenda/${maandId(m)}/">${kortMaand(m)}${m.slice(0, 4) === jaar ? "" : ` ’${m.slice(2, 4)}`}</a>`).join("")}</nav>`;
+  }
   function maandNav(huidig) {
     return `<nav class="month-nav" aria-label="Maanden">${maanden.filter((m) => balkMaanden.includes(m) || m === huidig).map((m) =>
       `<a href="/agenda/${maandId(m)}/"${m === huidig ? ' aria-current="page"' : ""}><b>${kortMaand(m)}</b><span>${m.slice(0, 4)}</span></a>`).join("")}</nav>`;
@@ -960,6 +967,9 @@ ${netBinnenBlok({ link: false, klein: true })}
 
   // Zoekbalk naar /agenda/?q=… en snelkoppelingen met het aantal voorstellingen (een tegel zonder voorstellingen valt
   // weg): in het gele vlak op de homepage en, zonder geel, bovenaan /alle-cabaretiers/ (verzoek van de eigenaar, november 2026).
+  // Elk bezoek een andere kleur voor het kopvlak (homepage en /agenda/), nooit twee keer achter elkaar dezelfde
+  // (verzoek van de eigenaar, november 2026). Het script staat vóór het vlak, zodat de kleur er meteen is.
+  const KOP_KLEUR = `<script>(function(){var r=document.documentElement,o=[];try{o=(localStorage.getItem("cabaretiers-kopkleur")||"").split(",")}catch(e){}function k(n,v){var x;do{x=Math.floor(Math.random()*n)}while(String(x)===v);return x}var d=k(4,o[0]),n=k(3,o[1]);r.dataset.kopDag=d;r.dataset.kopNacht=n;try{localStorage.setItem("cabaretiers-kopkleur",d+","+n)}catch(e){}})()</script>`;
   function zoekFormulier(id = "home-q", voorbeeld = "Jochem Myjer, Eindhoven of Carré") {
     return `<form class="home-zoek" action="/agenda/" method="get" role="search">
         <label for="${id}" class="visually-hidden">Zoek op artiest, voorstelling, plaats of theater</label>
@@ -989,7 +999,7 @@ ${netBinnenBlok({ link: false, klein: true })}
     const oudejaars = GENRES.oudejaarsconference ? nuInTheater(() => true, (v) => genresVanV(v).includes("oudejaarsconference"), { zonderTitel: true }) : "";
     // Elk bezoek een andere kleur voor het kopvlak, nooit twee keer achter elkaar dezelfde (verzoek van de eigenaar,
     // november 2026). Het script staat vóór het vlak, zodat de kleur er meteen is; de vorige keuze staat in de browser.
-    const kopKleur = `<script>(function(){var r=document.documentElement,o=[];try{o=(localStorage.getItem("cabaretiers-kopkleur")||"").split(",")}catch(e){}function k(n,v){var x;do{x=Math.floor(Math.random()*n)}while(String(x)===v);return x}var d=k(4,o[0]),n=k(3,o[1]);r.dataset.kopDag=d;r.dataset.kopNacht=n;try{localStorage.setItem("cabaretiers-kopkleur",d+","+n)}catch(e){}})()</script>`;
+    const kopKleur = KOP_KLEUR;
     const body = `
 ${kopKleur}
 <div class="home-kop">
@@ -1112,11 +1122,18 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     if ((new Date(tot) - new Date(db.today)) / 864e5 < 2) tot = new Date(new Date(tot + "T12:00:00Z").getTime() + 7 * 864e5).toISOString().slice(0, 10);
     const eerste = up.filter((g) => g.datum <= tot);
     const overzicht = agendaOverzicht();
-    const body = `<section class="block wrap" aria-labelledby="t">
+    // Kop in een gekleurd vlak zoals op de homepage (andere kleur per bezoek, bolletjesraster), met zoeken, filters
+    // en periodes erin; de stippellijn eronder gaat over in de lijst (verzoek van de eigenaar, november 2026).
+    const body = `${KOP_KLEUR}
+    <div class="home-kop agenda-kop">
+    <section class="wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Agenda</h1><p>${plural(tellers.speeldata, "voorstelling", "voorstellingen")} in ${plural(tellers.zalen, "zaal", "zalen")}</p></div>
-      ${maandNav(null)}
+      ${filters(up, { afstand: true, icoon: true })}
+      ${periodeNav()}
+    </section>
+    </div>
+    <section class="block wrap agenda-lijst">
       ${uitgelichtBlok("agenda")}
-      ${filters(up, { afstand: true })}
       <div id="gigs" data-alles="/agenda/alles.js?v=${allesVersie()}" data-tot="${tot}" data-totaal="${up.length}"><section class="month-group week-groep"><h3>${weekLabel(eerste[0]?.datum || db.today, tot)} <small>${plural(eerste.length, "voorstelling", "voorstellingen")}</small></h3>${eerste.map((g) => gigRow(g)).join("")}</section></div>
       ${leegBlok}
       <p class="meer-weken" id="laad-meer" hidden><button type="button" class="btn" id="laad-week">Toon alle volgende voorstellingen</button></p>
