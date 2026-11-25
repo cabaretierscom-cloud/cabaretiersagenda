@@ -988,7 +988,7 @@ ${netBinnenBlok({ link: false, klein: true })}
       ["Try-outs", "/agenda/try-outs/", tryoutLijst.length],
       ["Premières", "/agenda/premieres/", premiereLijst.length],
     ].filter(([, , n]) => n).map(([t, u, n]) => [t, u, typeof n === "number" ? plural(n, "voorstelling", "voorstellingen") : n]);
-    return `<nav class="month-nav home-snel" aria-label="Snel naar">${snel.map(([t, u, n]) => `<a href="${u}"><b>${t}</b><span>${n}</span></a>`).join("")}</nav>`;
+    return `<nav class="month-nav home-snel" aria-label="Snel naar">${snel.map(([t, u, n]) => `<a href="${u}"><b>${u.startsWith("/in-de-buurt/") ? ICON.pin : ""}${t}</b><span>${n}</span></a>`).join("")}</nav>`;
   }
 
   function home() {
