@@ -408,8 +408,10 @@
     const genreVakjes = [...buurt.querySelectorAll('#f-genre input[type="checkbox"]')];
     const gekozenGenres = () => genreVakjes.filter((v) => v.checked).map((v) => v.value);
     if (params.get("uitverkocht") === "1") uitverkocht.checked = true;
-    const AFSTANDEN = [10, 25, 50, 75];
-    let km = AFSTANDEN.includes(+params.get("km")) ? +params.get("km") : 25;
+    const AFSTANDEN = [10, 25, 50, 100];
+    // 75 km bestond even (november 2026); een oude link met km=75 opent op 100 km.
+    const kmUitAdres = +params.get("km") === 75 ? 100 : +params.get("km");
+    let km = AFSTANDEN.includes(kmUitAdres) ? kmUitAdres : 25;
     let punt = null, naam = "", adresWaarde = "", alternatief = null, data = null, lijst = [], getoond = 0;
     // Postcodes (vier cijfers, NL en BE, GeoNames) pas ophalen als iemand een postcode typt.
     let postcodes = null;
@@ -464,7 +466,7 @@
       const n = lijst.length;
       status.textContent = n
         ? `${n} ${n === 1 ? "voorstelling" : "voorstellingen"} binnen ${km} km van ${naam}.`
-        : `Geen voorstellingen binnen ${km} km van ${naam}.${km < 75 ? " Kies een grotere afstand." : ""}`;
+        : `Geen voorstellingen binnen ${km} km van ${naam}.${km < 100 ? " Kies een grotere afstand." : ""}`;
       // Een postcode van vier cijfers bestaat in Nederland én België: we nemen Nederland en bieden België aan.
       if (alternatief) {
         const b = document.createElement("button");

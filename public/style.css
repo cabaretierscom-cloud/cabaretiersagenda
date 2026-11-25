@@ -1484,7 +1484,11 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
    vanaf je locatie zoekt (verzoek van de eigenaar, november 2026). */
 .buurt-knoppen { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .buurt-knoppen[hidden] { display: none; }
-.buurt-kop .buurt-straal { display: flex; gap: 6px; }
+/* Afstand als één samengevoegde knop: "Afstand | 10 km | 25 km | 50 km | 100 km" (verzoek van de eigenaar, november
+   2026); op heel smalle schermen alleen de getallen met "(km)" bij het label. */
+.buurt-kop .buurt-straal { display: inline-flex; gap: 0; border: 1.5px solid var(--ink); border-radius: 999px; overflow: hidden; background: var(--paper); }
+.buurt-afstand-label { display: inline-flex; align-items: center; padding: 0 12px 0 16px; border-right: 1.5px solid var(--ink); color: var(--ink); font: 600 .95rem/1 var(--font-body); white-space: nowrap; }
+.buurt-afstand-label .km-label { display: none; margin-left: 4px; font-weight: 500; }
 .buurt-kop .buurt-locatie { display: inline-flex; align-items: center; gap: 7px; min-height: 42px; padding: 0 16px 0 13px; border: 1.5px solid var(--ink); border-radius: 999px; background: var(--paper); color: var(--ink); font: 600 .95rem/1 var(--font-body); cursor: pointer; }
 .buurt-kop .buurt-locatie svg { width: 18px; height: 18px; }
 .buurt-kop .buurt-locatie[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
@@ -1493,10 +1497,19 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .buurt-ander { border: 0; padding: 0; background: none; color: var(--ink); font: inherit; text-decoration: underline; cursor: pointer; }
 .buurt-veld[hidden], .buurt-js[hidden] { display: none; }
 .buurt-veld .buurt-plaats { display: block; max-width: none; }
-.buurt-kop .buurt-straal button { min-height: 42px; padding: 0 16px; border-width: 1.5px; background: var(--paper); color: var(--ink); font-size: .95rem; }
+.buurt-kop .buurt-straal button { min-height: 40px; padding: 0 13px; border: 0; border-radius: 0; background: var(--paper); color: var(--ink); font-size: .95rem; white-space: nowrap; }
+.buurt-kop .buurt-straal button + button { border-left: 1.5px solid var(--ink); }
 .buurt-kop .buurt-straal button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
-.buurt-kop .buurt-straal button:hover { box-shadow: inset 0 0 0 1px var(--ink); }
-.buurt-kop .buurt-straal button:focus-visible { outline: 3px solid var(--kop-inkt); outline-offset: 2px; }
+.buurt-kop .buurt-straal button:hover:not([aria-pressed="true"]) { background: var(--paper-2); }
+.buurt-kop .buurt-straal button:focus-visible { outline: 3px solid var(--ink); outline-offset: -4px; }
+@media (max-width: 480px) {
+  .buurt-afstand-label { padding: 0 10px 0 14px; font-size: .92rem; }
+  .buurt-kop .buurt-straal button { padding: 0 10px; font-size: .92rem; }
+}
+@media (max-width: 359px) {
+  .buurt-kop .buurt-straal .km { display: none; }
+  .buurt-afstand-label .km-label { display: inline; }
+}
 .buurt-lijst-blok { padding-top: 18px; }
 .buurt-filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 4px; }
 .buurt-filters .field { flex: 0 0 auto; display: block; }
