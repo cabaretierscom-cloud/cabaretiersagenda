@@ -244,6 +244,7 @@ ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title
     <form class="kop-zoek" id="kop-zoek" action="/agenda/" method="get" role="search">
       <label for="kop-q" class="visually-hidden">Zoek op artiest, voorstelling, plaats of theater</label>
       <input id="kop-q" name="q" type="search" autocomplete="off" placeholder="Zoek artiest, plaats of theater" required>
+      <a class="kop-locatie" href="/in-de-buurt/?locatie=1" title="Voorstellingen bij mij in de buurt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2.2" fill="currentColor"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/></svg><span class="visually-hidden">Gebruik mijn locatie</span></a>
       <button type="submit" aria-label="Zoeken">${ICON_ZOEK}</button>
     </form>
     <button type="button" class="zoek-knop" aria-expanded="false" aria-controls="kop-zoek">${ICON_ZOEK}<span class="visually-hidden">Zoeken</span></button>

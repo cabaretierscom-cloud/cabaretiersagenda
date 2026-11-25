@@ -180,6 +180,12 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .kop-zoek button { position: absolute; top: 5px; right: 5px; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; padding: 0; border: 0; border-radius: 8px; background: var(--ink); color: var(--paper); cursor: pointer; }
 .kop-zoek button svg { width: 16px; height: 16px; }
 .kop-zoek button:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+/* Locatieknop in de zoekbalk, links van de zoekknop: naar /in-de-buurt/ met je locatie (verzoek van de eigenaar, november 2026). */
+.kop-zoek input { padding-right: 74px; }
+.kop-locatie { position: absolute; top: 5px; right: 39px; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 8px; color: var(--ink); }
+.kop-locatie svg { width: 18px; height: 18px; }
+.kop-locatie:hover { background: var(--paper-2); }
+.kop-locatie:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
 .js .site-header .wrap { position: relative; }
 .js .menu-knop, .js .zoek-knop {
   display: inline-flex; align-items: center; justify-content: center; flex: none; width: 40px; height: 40px; padding: 0;
@@ -241,6 +247,9 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
     background: var(--paper); box-shadow: 0 10px 16px -12px rgba(18, 18, 18, .35); }
   .zoek-open .kop-zoek input { height: 50px; font-size: 1rem; }
   .zoek-open .kop-zoek button { top: 18px; right: 22px; width: 36px; height: 36px; }
+  .zoek-open .kop-zoek input { padding-right: 90px; }
+  .zoek-open .kop-locatie { top: 18px; right: 62px; width: 36px; height: 36px; }
+  .zoek-open .kop-locatie svg { width: 22px; height: 22px; }
   .zoek-open .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--paper); }
 }
 @media (prefers-reduced-motion: reduce) { .menu-icoon span, .js .nav, .menu-achtergrond { transition: none !important; } }
