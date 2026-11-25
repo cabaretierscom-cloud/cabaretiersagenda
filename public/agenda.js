@@ -449,6 +449,7 @@
       if (!punt) { bewaarAdres(); return; }
       zetKnoppen(); bewaarAdres();
       locKnop.setAttribute("aria-pressed", String(naam === "jouw locatie"));
+      try { localStorage.setItem("cabaretiers-buurt", JSON.stringify(naam === "jouw locatie" ? { soort: "locatie", km } : { soort: "plaats", plaats: adresWaarde || naam, km })); } catch (e) {}
       status.textContent = "Voorstellingen zoeken…";
       await haal();
       const kies = new Set(gekozenGenres());
@@ -518,8 +519,22 @@
     zetKnoppen();
     status.textContent = "Kies een plaats of gebruik je locatie.";
     // Vanaf de homepage (?locatie=1) meteen om de locatie vragen; met ?plaats= meteen vanaf die plaats zoeken.
+    // Anders (verzoek van de eigenaar, november 2026): heeft de browser al toestemming voor de locatie gegeven, dan
+    // meteen vanaf je locatie zoeken; of anders de plaats en afstand van je vorige zoekopdracht (alleen in je eigen
+    // browser bewaard, cabaretiers-buurt; je locatie zelf wordt nooit bewaard).
+    const vorige = (() => { try { return JSON.parse(localStorage.getItem("cabaretiers-buurt") || "null"); } catch (e) { return null; } })();
+    const toestemming = () => (navigator.permissions?.query ? navigator.permissions.query({ name: "geolocation" }).then((r) => r.state === "granted", () => false) : Promise.resolve(false));
     if (params.get("plaats")) kiesPlaats(params.get("plaats"));
     else if (params.get("locatie") === "1") { history.replaceState(null, "", location.pathname); vraagLocatie(); }
+    else {
+      if (!params.get("km") && AFSTANDEN.includes(vorige?.km)) { km = vorige.km; zetKnoppen(); }
+      toestemming().then((ja) => {
+        if (punt) return; // intussen zelf iets gekozen
+        if (ja && (!vorige || vorige.soort === "locatie")) vraagLocatie();
+        else if (vorige?.soort === "plaats" && vorige.plaats) kiesPlaats(vorige.plaats);
+        else if (ja) vraagLocatie();
+      });
+    }
   }
 
   // ---------- /agenda/: alle voorstellingen, eerst een week, dan de rest ----------
