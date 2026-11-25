@@ -395,13 +395,19 @@
   // (coördinaten in /agenda/alles.js) wordt hier uitgerekend; de locatie gaat nergens heen en wordt niet bewaard.
   const buurt = document.querySelector("[data-buurt]");
   if (buurt) {
-    buurt.hidden = false;
+    buurt.querySelectorAll(".buurt-js").forEach((e) => (e.hidden = false));
     const coords = JSON.parse(document.getElementById("buurt-coordinaten")?.textContent || "{}");
     const status = buurt.querySelector(".buurt-status"), lijstEl = buurt.querySelector(".buurt-lijst");
     const meer = buurt.querySelector(".laad-meer"), meerKnop = buurt.querySelector(".buurt-meer");
     const invoer = buurt.querySelector(".buurt-plaats input"), locKnop = buurt.querySelector(".buurt-locatie");
-    const uitverkocht = buurt.querySelector(".buurt-uitverkocht"), kinder = buurt.querySelector(".buurt-kinder");
+    const uitverkocht = buurt.querySelector(".buurt-uitverkocht");
     const params = new URLSearchParams(location.search);
+    // Genre zoals op /agenda/: zonder vinkjes alles behalve kindervoorstellingen; de aantallen tellen binnen de afstand.
+    const genre = genreKeuze(() => zoek());
+    if (genre) { genre.zet(leesGenres(params.get("genre"))); genre.aantal(genre.totaal); }
+    const genreVakjes = [...buurt.querySelectorAll('#f-genre input[type="checkbox"]')];
+    const gekozenGenres = () => genreVakjes.filter((v) => v.checked).map((v) => v.value);
+    if (params.get("uitverkocht") === "1") uitverkocht.checked = true;
     let km = [10, 25, 50].includes(+params.get("km")) ? +params.get("km") : 25;
     let punt = null, naam = "", data = null, lijst = [], getoond = 0;
     // Zit er een oude versie zonder coördinaten in de browser, dan het bestand opnieuw ophalen.
@@ -415,7 +421,9 @@
       const p = new URLSearchParams();
       if (naam && naam !== "jouw locatie") p.set("plaats", naam);
       if (km !== 25) p.set("km", km);
-      history.replaceState(null, "", p.toString() ? `?${p}` : location.pathname);
+      if (gekozenGenres().length) p.set("genre", gekozenGenres().join(","));
+      if (uitverkocht.checked) p.set("uitverkocht", "1");
+      history.replaceState(null, "", p.toString() ? `?${adres(p)}` : location.pathname);
     };
     const toonTot = (n) => {
       const doel = Math.min(n, lijst.length);
@@ -432,16 +440,21 @@
       if (rest > 0) meerKnop.textContent = `Toon meer voorstellingen (${Math.min(PORTIE, rest)} van ${rest})`;
     };
     async function zoek() {
-      if (!punt) return;
+      if (!punt) { bewaarAdres(); return; }
       zetKnoppen(); bewaarAdres();
       status.textContent = "Voorstellingen zoeken…";
       await haal();
-      lijst = data.rijen
+      const kies = new Set(gekozenGenres());
+      const inGenre = (g) => (kies.size ? g.genres.some((x) => kies.has(x)) : !genre || genre.standaard(g.genres));
+      const dichtbij = data.rijen
         .filter((g) => g.datum >= today && g.z.length > 6 && g.status !== "geannuleerd")
         .filter((g) => !uitverkocht.checked || g.status !== "uitverkocht")
-        .filter((g) => kinder.checked || g.genre !== "kindervoorstellingen")
         .map((g) => ({ g, km: afstand(punt, [g.z[5], g.z[6]]) }))
         .filter((x) => x.km <= km);
+      lijst = dichtbij.filter((x) => inGenre(x.g));
+      // Aantallen in het genrevak: per genre binnen deze afstand.
+      for (const v of genreVakjes) { const n = dichtbij.filter((x) => x.g.genres.includes(v.value)).length; const t = v.closest("label").querySelector(".keuze-n"); if (t) t.textContent = n.toLocaleString("nl-NL"); }
+      if (genre) genre.aantal(lijst.length);
       lijstEl.innerHTML = ""; getoond = 0;
       const n = lijst.length;
       status.textContent = n
@@ -467,9 +480,9 @@
     invoer.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); kiesPlaats(invoer.value); } });
     buurt.querySelector(".buurt-straal").addEventListener("click", (e) => { const b = e.target.closest("button[data-km]"); if (b) { km = +b.dataset.km; zetKnoppen(); zoek(); } });
     uitverkocht.addEventListener("change", zoek);
-    kinder.addEventListener("change", zoek);
     meerKnop.addEventListener("click", () => toonTot(getoond + PORTIE));
     zetKnoppen();
+    status.textContent = "Kies een plaats of gebruik je locatie.";
     // Vanaf de homepage (?locatie=1) meteen om de locatie vragen; met ?plaats= meteen vanaf die plaats zoeken.
     if (params.get("plaats")) kiesPlaats(params.get("plaats"));
     else if (params.get("locatie") === "1") { history.replaceState(null, "", location.pathname); vraagLocatie(); }

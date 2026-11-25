@@ -559,6 +559,22 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   // waar: alleen zoeken op plaats en zaal (artiestpagina: de artiest heb je dan al gevonden).
   // Zoeken en filteren boven een speellijst (public/agenda.js). Het zoekveld doorzoekt artiest,
   // voorstelling, zaal en plaats; op een artiestpagina alleen zaal en plaats (waar).
+  // Het genrevak (uitklapvak met vinkjes, #f-genre): in de filterbalk en op /in-de-buurt/.
+  function genreVeld(list) {
+    const kinder = list.some((x) => !heeftGenre(x, "kindervoorstellingen")) ? list.filter((x) => V.get(x.voorstelling).genre === "kindervoorstellingen").length : 0;
+    const genres = genresVan(list);
+    return `<div class="field">
+      <span class="label" id="f-genre-label">Genre</span>
+      <details class="keuze" id="f-genre" data-totaal="${list.length}" data-kinder="${kinder}">
+        <summary aria-describedby="f-genre-label"><span class="keuze-tekst">Alle genres</span><span class="keuze-n">${list.length.toLocaleString("nl-NL")}</span></summary>
+        <div class="keuze-lijst" role="group" aria-labelledby="f-genre-label">${genres.map((g) => [g, list.filter((x) => heeftGenre(x, g)).length]).sort((a, b) => (kinder && (a[0] === "kindervoorstellingen") - (b[0] === "kindervoorstellingen")) || b[1] - a[1] || a[0].localeCompare(b[0])).map(([g, n]) => {
+          // Kindervoorstellingen staan standaard uit (agenda.js): onderaan, apart, met "standaard uit" erbij.
+          const kind = kinder && g === "kindervoorstellingen";
+          return `<label${kind ? ' class="keuze-kind"' : ""}><input type="checkbox" name="genre" value="${g}" data-n="${n}"><span>${GENRES[g]}${kind ? '<small class="keuze-uit">Staat uit, vink aan om te tonen</small>' : ""}</span><span class="keuze-n">${n.toLocaleString("nl-NL")}</span></label>`;
+        }).join("")}</div>
+      </details>
+    </div>`;
+  }
   function filters(list, { maand = false, waar = false, genre = true, afstand = false, icoon = false } = {}) {
     // Kindervoorstellingen (hoofdgenre) die standaard uit staan; 0 als de lijst alleen kindervoorstellingen heeft.
     const kinder = list.some((x) => !heeftGenre(x, "kindervoorstellingen")) ? list.filter((x) => V.get(x.voorstelling).genre === "kindervoorstellingen").length : 0;
@@ -575,17 +591,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
       <label for="f-maand">Maand</label>
       <select id="f-maand" name="maand"><option value="">Alle maanden</option>${months.map((m) => `<option value="${m}">${maandNaam(m)}</option>`).join("")}</select>
     </div>` : ""}
-    ${genre && genres.length > 1 ? `<div class="field">
-      <span class="label" id="f-genre-label">Genre</span>
-      <details class="keuze" id="f-genre" data-totaal="${list.length}" data-kinder="${kinder}">
-        <summary aria-describedby="f-genre-label"><span class="keuze-tekst">Alle genres</span><span class="keuze-n">${list.length.toLocaleString("nl-NL")}</span></summary>
-        <div class="keuze-lijst" role="group" aria-labelledby="f-genre-label">${genres.map((g) => [g, list.filter((x) => heeftGenre(x, g)).length]).sort((a, b) => (kinder && (a[0] === "kindervoorstellingen") - (b[0] === "kindervoorstellingen")) || b[1] - a[1] || a[0].localeCompare(b[0])).map(([g, n]) => {
-          // Kindervoorstellingen staan standaard uit (agenda.js): onderaan, apart, met "standaard uit" erbij.
-          const kind = kinder && g === "kindervoorstellingen";
-          return `<label${kind ? ' class="keuze-kind"' : ""}><input type="checkbox" name="genre" value="${g}" data-n="${n}"><span>${GENRES[g]}${kind ? '<small class="keuze-uit">Staat uit, vink aan om te tonen</small>' : ""}</span><span class="keuze-n">${n.toLocaleString("nl-NL")}</span></label>`;
-        }).join("")}</div>
-      </details>
-    </div>` : ""}
+    ${genre && genres.length > 1 ? genreVeld(list) : ""}
     ${afstand ? `<div class="field afstand-veld">
       <label for="f-km">Afstand</label>
       <span class="afstand-kies">${ICON.pin}<select id="f-km" name="km" data-geo="/agenda/alles.js?v=${allesVersie()}"><option value="">Overal</option>${[10, 25, 50].map((km) => `<option value="${km}">Binnen ${km} km van mij</option>`).join("")}</select></span>
@@ -777,31 +783,34 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   function inDeBuurtPagina() {
     const plaatsLijst = [...new Map(up.map((g) => T.get(g.theater)).map((t) => [t.plaats, geoPlaats(t.plaats, t.land)])).entries()]
       .filter(([, c]) => c).sort((a, b) => a[0].localeCompare(b[0], "nl"));
-    const body = `<section class="block wrap" aria-labelledby="t">
-  <div class="block-head"><h1 id="t">Bij mij in de buurt</h1><p>Cabaret en comedy bij jou in de buurt: gebruik je locatie of kies een plaats.</p></div>
-  <div class="buurt" data-buurt data-alles="/agenda/alles.js?v=${allesVersie()}" hidden>
-    <div class="buurt-kies">
-      <button type="button" class="btn buurt-locatie">${ICON.pin}Gebruik mijn locatie</button>
-      <span class="buurt-of">of</span>
-      <label class="buurt-plaats"><span class="visually-hidden">Kies een plaats</span><input type="search" list="buurt-plaatsen" placeholder="Kies een plaats, bijvoorbeeld Utrecht" autocomplete="off"></label>
-      <datalist id="buurt-plaatsen">${plaatsLijst.map(([p]) => `<option value="${esc(p)}">`).join("")}</datalist>
-    </div>
-    <div class="buurt-opties">
-      <div class="buurt-straal" role="group" aria-label="Afstand">${[10, 25, 50].map((km) => `<button type="button" data-km="${km}" aria-pressed="${km === 25}">${km} km</button>`).join("")}</div>
-      <label class="check"><input type="checkbox" class="buurt-uitverkocht"> Uitverkocht verbergen</label>
-      <label class="check"><input type="checkbox" class="buurt-kinder"> Kindervoorstellingen tonen</label>
-    </div>
-    <p class="buurt-status" role="status" aria-live="polite"></p>
-    <div class="buurt-lijst"></div>
-    <div class="laad-meer" hidden><button type="button" class="btn ghost buurt-meer">Toon meer voorstellingen</button></div>
+    // Kop in het gekleurde vlak zoals /agenda/ (andere kleur per bezoek): alleen de plek (plaats of locatie) en de
+    // afstand; genre en uitverkocht staan onder de stippellijn boven de lijst (verzoek van de eigenaar, november 2026).
+    const body = `${KOP_KLEUR}
+<div class="buurt" data-buurt data-alles="/agenda/alles.js?v=${allesVersie()}">
+<div class="home-kop agenda-kop buurt-kop">
+<section class="wrap" aria-labelledby="t">
+  <div class="block-head"><h1 id="t">Bij mij in de buurt</h1><p>Cabaret en comedy bij jou in de buurt. Gebruik je locatie of kies een plaats.</p></div>
+  <div class="buurt-js buurt-veld" hidden>
+    ${ICON.pin}
+    <label class="buurt-plaats"><span class="visually-hidden">Kies een plaats</span><input type="search" list="buurt-plaatsen" placeholder="Plaats, bijvoorbeeld Utrecht" autocomplete="off"></label>
+    <button type="button" class="btn buurt-locatie">${ICON.pin}<span>Mijn locatie</span></button>
+    <datalist id="buurt-plaatsen">${plaatsLijst.map(([p]) => `<option value="${esc(p)}">`).join("")}</datalist>
   </div>
-  <noscript><p>Voor zoeken op afstand is JavaScript nodig. Kies hieronder een plaats.</p></noscript>
+  <div class="buurt-js buurt-straal" role="group" aria-label="Afstand" hidden>${[10, 25, 50].map((km) => `<button type="button" data-km="${km}" aria-pressed="${km === 25}">${km} km</button>`).join("")}</div>
+</section>
+</div>
+<section class="block wrap buurt-lijst-blok" aria-label="Voorstellingen in de buurt">
+  <div class="buurt-js buurt-filters" hidden>
+    ${genreVeld(up)}
+    <div class="field toggle-veld"><label class="toggle"><input type="checkbox" class="buurt-uitverkocht"> Uitverkocht verbergen</label></div>
+    <p class="buurt-status" role="status" aria-live="polite"></p>
+  </div>
+  <div class="buurt-lijst"></div>
+  <div class="laad-meer" hidden><button type="button" class="btn ghost buurt-meer">Toon meer voorstellingen</button></div>
+  <noscript><p>Voor zoeken op afstand is JavaScript nodig. Kies een plaats bij <a href="/plaatsen/">Plaatsen</a>.</p></noscript>
   <script type="application/json" id="buurt-coordinaten">${JSON.stringify(Object.fromEntries(plaatsLijst)).replace(/</g, "\\u003c")}</script>
 </section>
-<section class="block wrap kies-blok kleine-kop" aria-labelledby="plaatsen-titel">
-  <div class="wall-head"><h2 id="plaatsen-titel">Of kies een plaats</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
-  ${plaatsNav()}
-</section>
+</div>
 <section class="block wrap" aria-labelledby="buurt-uitleg">
   <div class="seo-tekst prose">
     <h2 id="buurt-uitleg">Hoe werkt zoeken in de buurt?</h2>

@@ -1471,3 +1471,39 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 }
 /* De keuzelijsten zijn hier smalle knopjes: het uitklapvak krijgt zijn eigen breedte. */
 .agenda-kop .filters .keuze-lijst { width: max-content; min-width: max(100%, 260px); max-width: calc(100vw - 32px); }
+
+/* ---------- /in-de-buurt/: kop in het gekleurde vlak zoals /agenda/ ----------
+   In het vlak alleen de plek: één veld voor de plaats met de knop "Mijn locatie" erin (zoals de zoekbalk in de kop)
+   en de afstand. Genre en uitverkocht staan onder de stippellijn, met het aantal ernaast (verzoek van de eigenaar,
+   november 2026). */
+.buurt-kop .block-head p { max-width: 46ch; }
+.buurt-veld { position: relative; margin-top: 18px; }
+.buurt-veld[hidden], .buurt-js[hidden] { display: none; }
+.buurt-veld .buurt-plaats { display: block; max-width: none; }
+.buurt-veld .buurt-plaats input { min-height: 54px; padding: 0 160px 0 46px; font: 500 var(--step-1) var(--font-body); }
+.buurt-veld > .ic-pin { position: absolute; left: 16px; top: 50%; translate: 0 -50%; z-index: 1; width: 20px; height: 20px; color: var(--ink); pointer-events: none; }
+.buurt-veld .buurt-locatie { position: absolute; right: 6px; top: 6px; height: 42px; min-height: 0; padding: 0 14px; border-radius: 9px; background: var(--ink); color: var(--paper); font-size: .95rem; }
+.buurt-veld .buurt-locatie:focus-visible { outline: 3px solid var(--kop-inkt); outline-offset: 3px; }
+.buurt-kop .buurt-straal { display: flex; gap: 6px; margin-top: 10px; }
+.buurt-kop .buurt-straal button { min-height: 42px; padding: 0 16px; border-width: 1.5px; background: var(--paper); color: var(--ink); font-size: .95rem; }
+.buurt-kop .buurt-straal button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.buurt-kop .buurt-straal button:hover { box-shadow: inset 0 0 0 1px var(--ink); }
+.buurt-kop .buurt-straal button:focus-visible { outline: 3px solid var(--kop-inkt); outline-offset: 2px; }
+.buurt-lijst-blok { padding-top: 18px; }
+.buurt-filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 4px; }
+.buurt-filters .field { flex: 0 0 auto; display: block; }
+.buurt-filters .label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.buurt-filters .keuze { min-width: 0; }
+.buurt-filters :is(.keuze summary, .toggle) { min-height: 42px; border-width: 1.5px; border-radius: 999px; padding: 0 38px 0 16px; font-weight: 600; gap: 8px; }
+.buurt-filters .toggle-veld .toggle { padding: 0 16px 0 12px; width: auto; }
+.buurt-filters .toggle input { width: 18px; height: 18px; }
+.buurt-filters .keuze summary .keuze-n { padding: 1px 8px; font-size: .75rem; }
+.buurt-filters :is(.keuze summary, .toggle):hover { box-shadow: inset 0 0 0 1px var(--ink); }
+.buurt-filters .keuze-lijst { width: max-content; min-width: max(100%, 260px); max-width: calc(100vw - 32px); }
+.buurt-filters .buurt-status { margin: 0 0 0 auto; min-height: 0; }
+@media (max-width: 560px) {
+  .buurt-veld .buurt-plaats input { padding-right: 62px; }
+  .buurt-veld .buurt-locatie span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .buurt-veld .buurt-locatie { width: 42px; padding: 0; justify-content: center; }
+}
+@media (max-width: 760px) { .buurt-filters .buurt-status { flex-basis: 100%; margin: 6px 0 0; } }
