@@ -982,10 +982,10 @@ ${netBinnenBlok({ link: false, klein: true })}
     const snel = [
       ["Vanavond", "/vanavond/", up.filter((g) => g.datum === vandaagDag).length],
       ["Dit weekend", "/dit-weekend/", weekendLijst(up).length],
-      ["Try-outs", "/agenda/try-outs/", tryoutLijst.length],
+      ["In de buurt", "/in-de-buurt/?locatie=1", "met je locatie"],
       ["Oudejaars", genrePad("oudejaarsconference"), GENRES.oudejaarsconference ? nOudejaars : 0],
-    ].filter(([, , n]) => n).map(([t, u, n]) => [t, u, plural(n, "voorstelling", "voorstellingen")]);
-    snel.push(["In de buurt", "/in-de-buurt/?locatie=1", "met je locatie"]);
+      ["Try-outs", "/agenda/try-outs/", tryoutLijst.length],
+    ].filter(([, , n]) => n).map(([t, u, n]) => [t, u, typeof n === "number" ? plural(n, "voorstelling", "voorstellingen") : n]);
     return `<nav class="month-nav home-snel" aria-label="Snel naar">${snel.map(([t, u, n]) => `<a href="${u}"><b>${t}</b><span>${n}</span></a>`).join("")}</nav>`;
   }
 
