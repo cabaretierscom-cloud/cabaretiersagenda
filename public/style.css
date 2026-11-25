@@ -1529,3 +1529,6 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .buurt-kop .kruimelpad :is(ol, li::before, a, [aria-current="page"]) { color: var(--kop-inkt); }
 .buurt-kop .kruimelpad a { opacity: .8; }
 .buurt-kop .kruimelpad a:hover { opacity: 1; color: var(--kop-inkt); }
+/* Mijn locatie en de afstandknop precies even hoog (44 px, ook op de telefoon; verzoek van de eigenaar, november 2026). */
+.buurt-kop .buurt-locatie, .buurt-kop .buurt-straal { box-sizing: border-box; height: 44px; min-height: 0; }
+.buurt-kop .buurt-straal button, .buurt-kop .buurt-straal .buurt-afstand-label { height: 100%; min-height: 0; }
