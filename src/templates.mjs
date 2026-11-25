@@ -781,6 +781,9 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
   // agenda.js vraagt (na een klik) de locatie van de browser, of je kiest een plaats; dan rekent het in de browser de
   // afstand uit tot de plaats van elke zaal (coördinaten in /agenda/alles.js) en toont de voorstellingen binnen de
   // gekozen straal, op datum. De locatie gaat nergens heen. Zonder JavaScript: de lijst met plaatsen.
+  // Afstanden op /in-de-buurt/ (75 km sinds november 2026, verzoek van de eigenaar) en de versie van het postcodebestand.
+  const BUURT_KM = [10, 25, 50, 75];
+  const POSTCODE_VERSIE = createHash("sha1").update(readFileSync(new globalThis.URL("../data/postcodes.json", import.meta.url))).digest("hex").slice(0, 10);
   // SEO-tekst en vragen onder /in-de-buurt/: theater, cabaret, comedy en kindervoorstellingen in de buurt, met de
   // cijfers uit de agenda (verzoek van de eigenaar, november 2026).
   function buurtSeo() {
@@ -798,7 +801,7 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
     const clubNaam = ({ t }) => `${theaterLink(t.id)}${t.naam.includes(t.plaats) ? "" : ` in ${esc(t.plaats)}`}`;
     const tekst = [];
     tekst.push(`<h2 id="buurt-uitleg">Theatervoorstellingen bij jou in de buurt</h2>
-    <p>Zin in een avondje theater, maar geen idee wat er in de buurt speelt? Op deze pagina zie je alle voorstellingen uit de agenda van Cabaretiers.com binnen 10, 25 of 50 kilometer van je locatie of van een plaats die je kiest, op datum en met de afstand erbij. De agenda telt nu ${up.length.toLocaleString("nl-NL")} voorstellingen in ${nZalen} zalen in ${steden.length} plaatsen in Nederland en België, van grote schouwburgen tot kleine theaters en comedyclubs.</p>
+    <p>Zin in een avondje theater, maar geen idee wat er in de buurt speelt? Op deze pagina zie je alle voorstellingen uit de agenda van Cabaretiers.com binnen 10, 25, 50 of 75 kilometer van je locatie of van een plaats die je kiest, op datum en met de afstand erbij. De agenda telt nu ${up.length.toLocaleString("nl-NL")} voorstellingen in ${nZalen} zalen in ${steden.length} plaatsen in Nederland en België, van grote schouwburgen tot kleine theaters en comedyclubs.</p>
     <p>Vandaag ${vanavond === 1 ? "staat er één voorstelling" : `staan er ${vanavond} voorstellingen`} in de agenda en dit weekend ${weekend}. Wil je alles van vanavond of dit weekend zien, waar dan ook? Kijk dan bij <a href="/vanavond/">vanavond</a> of <a href="/dit-weekend/">dit weekend</a>.</p>`);
     tekst.push(`<h2>Cabaret in de buurt</h2>
     <p>In de agenda staan ${cabaret.length.toLocaleString("nl-NL")} ${genreA("cabaret", "cabaretvoorstellingen")}. Kies bij <em>Alle genres</em> voor Cabaret, dan zie je alleen cabaretvoorstellingen in de buurt.${cabaretSteden.length ? ` De meeste cabaret staat in ${opsomming(cabaretSteden.slice(0, 5).map(cabaretLink))}.` : ""}${tryoutLijst.length ? ` Wil je een nieuw programma als eerste zien? Veel cabaretiers spelen eerst <a href="/agenda/try-outs/">try-outs</a>, vaak met goedkopere kaarten.` : ""}</p>`);
@@ -807,15 +810,15 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
     if (kind.length) tekst.push(`<h2>Kindervoorstellingen in de buurt</h2>
     <p>Ook ${genreA("kindervoorstellingen", "kinder- en familievoorstellingen")} staan in de agenda: ${kind.length.toLocaleString("nl-NL")} voorstellingen. Ze staan in de lijst standaard uit; vink bij <em>Alle genres</em> Kindervoorstellingen aan om ze in de buurt te zien.${kindSteden.length ? ` De meeste zijn in ${opsomming(kindSteden.slice(0, 4).map(kindLink))}.` : ""}</p>`);
     tekst.push(`<h2>Hoe werkt zoeken in de buurt?</h2>
-    <p>Klik op <em>Mijn locatie</em> en geef je browser toestemming. Je ziet dan alle voorstellingen binnen 10, 25 of 50 kilometer, op datum, met de afstand erbij. Je locatie blijft in je eigen browser: de afstand wordt op je eigen telefoon of computer uitgerekend en we slaan niets op.</p>
-    <p>Liever je locatie niet delen? Typ een plaats, dan rekenen we vanaf die plaats. De afstand is hemelsbreed, van plaats tot plaats. Alles van één plaats staat ook bij <a href="/plaatsen/">Plaatsen</a>; de meeste voorstellingen zijn in ${opsomming(steden.slice(0, 5).map(metAantal))}.</p>`);
+    <p>Klik op <em>Mijn locatie</em> en geef je browser toestemming. Je ziet dan alle voorstellingen binnen 10, 25, 50 of 75 kilometer, op datum, met de afstand erbij. Je locatie blijft in je eigen browser: de afstand wordt op je eigen telefoon of computer uitgerekend en we slaan niets op.</p>
+    <p>Liever je locatie niet delen? Typ een plaats of postcode (bijvoorbeeld 3511 of 3511 AB; een Belgische postcode als B-9000), dan rekenen we vanaf daar. De afstand is hemelsbreed. Postcodes en coördinaten komen van <a href="https://www.geonames.org/" rel="noopener">GeoNames</a> (CC BY 4.0). Alles van één plaats staat ook bij <a href="/plaatsen/">Plaatsen</a>; de meeste voorstellingen zijn in ${opsomming(steden.slice(0, 5).map(metAantal))}.</p>`);
     const vragen = [
-      ["Welke voorstellingen zijn er vanavond bij mij in de buurt?", `Klik bovenaan op <em>Mijn locatie</em> of typ je plaats: de lijst begint bij vandaag, dus de voorstellingen van vanavond staan bovenaan. Vandaag ${vanavond === 1 ? "staat er één voorstelling" : `staan er ${vanavond} voorstellingen`} in de hele agenda; alles van vanavond staat bij <a href="/vanavond/">vanavond</a>.`],
-      ["Hoe vind ik cabaret bij mij in de buurt?", `Kies je plaats of gebruik je locatie en zet bij <em>Alle genres</em> een vinkje bij Cabaret. Je ziet dan alle cabaretvoorstellingen binnen de gekozen afstand, met de afstand tot elke zaal erbij.${cabaretSteden.length ? ` Per plaats staat cabaret ook op een eigen pagina, zoals ${opsomming(cabaretSteden.slice(0, 3).map(([p]) => `<a href="${genrePlaatsPad("cabaret", p)}">cabaret in ${esc(p)}</a>`))}.` : ""}`],
+      ["Welke voorstellingen zijn er vanavond bij mij in de buurt?", `Klik bovenaan op <em>Mijn locatie</em> of typ je plaats of postcode: de lijst begint bij vandaag, dus de voorstellingen van vanavond staan bovenaan. Vandaag ${vanavond === 1 ? "staat er één voorstelling" : `staan er ${vanavond} voorstellingen`} in de hele agenda; alles van vanavond staat bij <a href="/vanavond/">vanavond</a>.`],
+      ["Hoe vind ik cabaret bij mij in de buurt?", `Typ je plaats of postcode, of gebruik je locatie, en zet bij <em>Alle genres</em> een vinkje bij Cabaret. Je ziet dan alle cabaretvoorstellingen binnen de gekozen afstand, met de afstand tot elke zaal erbij.${cabaretSteden.length ? ` Per plaats staat cabaret ook op een eigen pagina, zoals ${opsomming(cabaretSteden.slice(0, 3).map(([p]) => `<a href="${genrePlaatsPad("cabaret", p)}">cabaret in ${esc(p)}</a>`))}.` : ""}`],
     ];
     if (standup.length) vragen.push(["Waar is stand-up comedy bij mij in de buurt?", `Kies bij <em>Alle genres</em> voor Stand-up. Comedy speelt in theaters en in comedyclubs${clubs.length ? `, zoals ${opsomming(clubs.slice(0, 4).map(clubNaam))}; alle clubs staan bij <a href="/comedy-clubs/">Comedy Clubs</a>` : ""}.`]);
     if (kind.length) vragen.push(["Zijn er kindervoorstellingen bij mij in de buurt?", `Ja, de agenda telt ${kind.length.toLocaleString("nl-NL")} kinder- en familievoorstellingen. Ze staan standaard uit: vink bij <em>Alle genres</em> Kindervoorstellingen aan.`]);
-    vragen.push(["Wat betekent \"in de buurt\" hier?", "Binnen 10, 25 of 50 kilometer, dat kies je zelf. De afstand is hemelsbreed, gemeten van je locatie (of de plaats die je kiest) tot de plaats van het theater."]);
+    vragen.push(["Wat betekent \"in de buurt\" hier?", "Binnen 10, 25, 50 of 75 kilometer, dat kies je zelf. De afstand is hemelsbreed, gemeten van je locatie (of de plaats of postcode die je kiest) tot de plaats van het theater."]);
     vragen.push(["Wordt mijn locatie opgeslagen?", `Nee. Je browser vraagt eerst toestemming, en de afstand wordt op je eigen telefoon of computer uitgerekend. Je locatie gaat niet naar Cabaretiers.com en komt ook niet in het webadres. Meer daarover staat in de <a href="/privacy/">privacyverklaring</a>.`]);
     vragen.push(["Hoe koop ik kaarten?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van het theater, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
     return { vragen, html: `<section class="block wrap" aria-labelledby="buurt-uitleg">
@@ -833,18 +836,20 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
     // afstand; genre en uitverkocht staan onder de stippellijn boven de lijst (verzoek van de eigenaar, november 2026).
     const buurtTekst = buurtSeo();
     const body = `${KOP_KLEUR}
-<div class="buurt" data-buurt data-alles="/agenda/alles.js?v=${allesVersie()}">
+<div class="buurt" data-buurt data-alles="/agenda/alles.js?v=${allesVersie()}" data-postcodes="/in-de-buurt/postcodes.js?v=${POSTCODE_VERSIE}">
 <div class="home-kop agenda-kop buurt-kop">
 <!--kruimelpad-->
 <section class="wrap" aria-labelledby="t">
-  <div class="block-head"><h1 id="t">Voorstellingen in de buurt</h1><p>Cabaret, comedy en theater bij jou in de buurt. Gebruik je locatie of kies een plaats.</p></div>
+  <div class="block-head"><h1 id="t">Voorstellingen in de buurt</h1><p>Cabaret, comedy en theater bij jou in de buurt. Zoek op plaats of postcode, of gebruik je locatie.</p></div>
   <div class="buurt-js buurt-veld" hidden>
-    ${ICON.pin}
-    <label class="buurt-plaats"><span class="visually-hidden">Kies een plaats</span><input type="search" list="buurt-plaatsen" placeholder="Plaats, bijvoorbeeld Utrecht" autocomplete="off"></label>
-    <button type="button" class="btn buurt-locatie">${ICON.pin}<span>Mijn locatie</span></button>
+    ${ICON_ZOEK}
+    <label class="buurt-plaats"><span class="visually-hidden">Plaats of postcode</span><input type="search" list="buurt-plaatsen" placeholder="Plaats of postcode" autocomplete="off" enterkeyhint="search"></label>
     <datalist id="buurt-plaatsen">${plaatsLijst.map(([p]) => `<option value="${esc(p)}">`).join("")}</datalist>
   </div>
-  <div class="buurt-js buurt-straal" role="group" aria-label="Afstand" hidden>${[10, 25, 50].map((km) => `<button type="button" data-km="${km}" aria-pressed="${km === 25}">${km} km</button>`).join("")}</div>
+  <div class="buurt-js buurt-knoppen" hidden>
+    <button type="button" class="buurt-locatie" aria-pressed="false">${ICON.pin}Mijn locatie</button>
+    <div class="buurt-straal" role="group" aria-label="Afstand">${BUURT_KM.map((km) => `<button type="button" data-km="${km}" aria-pressed="${km === 25}">${km} km</button>`).join("")}</div>
+  </div>
 </section>
 </div>
 <section class="block wrap buurt-lijst-blok" aria-label="Voorstellingen in de buurt">
@@ -860,7 +865,7 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
 </section>
 </div>
 ${buurtTekst.html}`;
-    return layout({ title: "Voorstellingen in de buurt: cabaret, comedy en theater", description: zinnen("Welke voorstellingen zijn er bij jou in de buurt? Cabaret, stand-up comedy, theater en kindervoorstellingen binnen 10, 25 of 50 kilometer.", "Gebruik je locatie of kies een plaats."), path: "/in-de-buurt/", section: "plaatsen", body,
+    return layout({ title: "Voorstellingen in de buurt: cabaret, comedy en theater", description: zinnen("Welke voorstellingen zijn er bij jou in de buurt? Cabaret, stand-up comedy, theater en kindervoorstellingen binnen 10, 25, 50 of 75 kilometer.", "Zoek op plaats of postcode, of gebruik je locatie."), path: "/in-de-buurt/", section: "plaatsen", body,
       schema: { kruimels: [["Plaatsen", "/plaatsen/"], ["In de buurt", "/in-de-buurt/"]], extra: [faqLd(buurtTekst.vragen, "/in-de-buurt/")] } });
   }
 

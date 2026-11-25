@@ -84,6 +84,9 @@ write("/", t.home());
 write("/agenda/", t.agendaIndex());
 // .js in plaats van .json: de server verstuurt javascript ingepakt (brotli), JSON niet. De inhoud is JSON.
 writeFileSync(join(out, "agenda", "alles.js"), JSON.stringify(t.agendaData()));
+// Postcodes met coördinaten voor zoeken op postcode op /in-de-buurt/ (data/postcodes.json, GeoNames); ook als .js.
+mkdirSync(join(out, "in-de-buurt"), { recursive: true });
+writeFileSync(join(out, "in-de-buurt", "postcodes.js"), readFileSync(new URL("./data/postcodes.json", import.meta.url), "utf8"));
 write("/vanavond/", t.dagPagina("vanavond"));
 write("/dit-weekend/", t.dagPagina("dit-weekend"));
 for (const m of t.maanden) write(`/agenda/${t.maandId(m)}/`, t.agendaMaand(m));

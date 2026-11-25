@@ -408,8 +408,12 @@
     const genreVakjes = [...buurt.querySelectorAll('#f-genre input[type="checkbox"]')];
     const gekozenGenres = () => genreVakjes.filter((v) => v.checked).map((v) => v.value);
     if (params.get("uitverkocht") === "1") uitverkocht.checked = true;
-    let km = [10, 25, 50].includes(+params.get("km")) ? +params.get("km") : 25;
-    let punt = null, naam = "", data = null, lijst = [], getoond = 0;
+    const AFSTANDEN = [10, 25, 50, 75];
+    let km = AFSTANDEN.includes(+params.get("km")) ? +params.get("km") : 25;
+    let punt = null, naam = "", adresWaarde = "", alternatief = null, data = null, lijst = [], getoond = 0;
+    // Postcodes (vier cijfers, NL en BE, GeoNames) pas ophalen als iemand een postcode typt.
+    let postcodes = null;
+    const haalPostcodes = () => postcodes || (postcodes = fetch(buurt.dataset.postcodes).then((r) => r.json()));
     // Zit er een oude versie zonder coördinaten in de browser, dan het bestand opnieuw ophalen.
     const haal = () => data ? Promise.resolve(data) : fetch(buurt.dataset.alles).then((r) => r.json())
       .then((j) => (j.z.some((z) => z.length > 6) ? j : fetch(buurt.dataset.alles, { cache: "reload" }).then((r) => r.json())))
@@ -419,7 +423,7 @@
     const zetKnoppen = () => buurt.querySelectorAll(".buurt-straal button").forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.km === km)));
     const bewaarAdres = () => {
       const p = new URLSearchParams();
-      if (naam && naam !== "jouw locatie") p.set("plaats", naam);
+      if (naam && naam !== "jouw locatie") p.set("plaats", adresWaarde || naam);
       if (km !== 25) p.set("km", km);
       if (gekozenGenres().length) p.set("genre", gekozenGenres().join(","));
       if (uitverkocht.checked) p.set("uitverkocht", "1");
@@ -442,6 +446,7 @@
     async function zoek() {
       if (!punt) { bewaarAdres(); return; }
       zetKnoppen(); bewaarAdres();
+      locKnop.setAttribute("aria-pressed", String(naam === "jouw locatie"));
       status.textContent = "Voorstellingen zoeken…";
       await haal();
       const kies = new Set(gekozenGenres());
@@ -459,24 +464,51 @@
       const n = lijst.length;
       status.textContent = n
         ? `${n} ${n === 1 ? "voorstelling" : "voorstellingen"} binnen ${km} km van ${naam}.`
-        : `Geen voorstellingen binnen ${km} km van ${naam}.${km < 50 ? " Kies een grotere afstand." : ""}`;
+        : `Geen voorstellingen binnen ${km} km van ${naam}.${km < 75 ? " Kies een grotere afstand." : ""}`;
+      // Een postcode van vier cijfers bestaat in Nederland én België: we nemen Nederland en bieden België aan.
+      if (alternatief) {
+        const b = document.createElement("button");
+        b.type = "button"; b.className = "buurt-ander";
+        b.textContent = `Bedoel je ${alternatief[0]} ${alternatief[1]} in België?`;
+        b.addEventListener("click", () => kiesPlaats(`B-${alternatief[0]}`));
+        status.append(" ", b);
+      }
       toonTot(PORTIE);
     }
-    const kiesPlaats = (waarde) => {
+    let zoekNr = 0;
+    const kiesPlaats = async (waarde) => {
+      const nr = ++zoekNr;
+      // Postcode: "3511", "3511 AB", "3511AB Utrecht" (Nederland) of "B-9000", "B 9000" (België).
+      const pc = waarde.trim().match(/^(?:(b)\s*-?\s*)?(\d{4})(?:\s*([a-z]{2})(?![a-z]))?(?:\s+\D*)?$/i);
+      if (pc) {
+        status.textContent = "Postcode zoeken…";
+        const codes = await haalPostcodes().catch(() => null);
+        if (nr !== zoekNr) return; // intussen iets anders gekozen
+        const code = pc[2], nl = codes?.NL[code], be = codes?.BE[code];
+        const land = pc[1] ? "BE" : pc[3] ? "NL" : nl ? "NL" : "BE";
+        const treffer = land === "NL" ? nl : be;
+        if (!treffer) { status.textContent = `Postcode ${waarde.trim()} kennen we niet. Typ een plaats of een andere postcode.`; return; }
+        punt = [treffer[0], treffer[1]]; naam = `${code} ${treffer[2]}`;
+        adresWaarde = land === "BE" && nl ? `B-${code}` : code;
+        alternatief = land === "NL" && be && !pc[3] ? [code, be[2]] : null;
+        invoer.value = naam; zoek(); return;
+      }
+      adresWaarde = ""; alternatief = null;
       const sleutel = Object.keys(coords).find((p) => p.toLowerCase() === waarde.trim().toLowerCase());
-      if (!sleutel) { if (waarde.trim()) status.textContent = `"${waarde.trim()}" kennen we niet. Kies een plaats uit de lijst.`; return; }
+      if (!sleutel) { if (waarde.trim()) status.textContent = `"${waarde.trim()}" kennen we niet. Kies een plaats uit de lijst of typ een postcode.`; return; }
       punt = coords[sleutel]; naam = sleutel; invoer.value = sleutel; zoek();
     };
     const vraagLocatie = () => {
       if (!navigator.geolocation) { status.textContent = "Je browser kan je locatie niet delen. Kies een plaats."; return; }
       status.textContent = "Je locatie opvragen…";
       navigator.geolocation.getCurrentPosition(
-        (pos) => { punt = [pos.coords.latitude, pos.coords.longitude]; naam = "jouw locatie"; invoer.value = ""; zoek(); },
+        (pos) => { punt = [pos.coords.latitude, pos.coords.longitude]; naam = "jouw locatie"; adresWaarde = ""; alternatief = null; invoer.value = ""; zoek(); },
         () => { status.textContent = "Je locatie is niet gedeeld. Kies een plaats, dan zoeken we vanaf daar."; invoer.focus(); },
         { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
     };
     locKnop.addEventListener("click", vraagLocatie);
-    invoer.addEventListener("change", () => kiesPlaats(invoer.value));
+    // Geen nieuwe zoekopdracht als het veld nog toont wat we net kozen (een change bij het verlaten van het veld).
+    invoer.addEventListener("change", () => { if (invoer.value.trim() !== naam) kiesPlaats(invoer.value); });
     invoer.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); kiesPlaats(invoer.value); } });
     buurt.querySelector(".buurt-straal").addEventListener("click", (e) => { const b = e.target.closest("button[data-km]"); if (b) { km = +b.dataset.km; zetKnoppen(); zoek(); } });
     uitverkocht.addEventListener("change", zoek);

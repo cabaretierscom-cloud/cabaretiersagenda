@@ -1477,14 +1477,22 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
    en de afstand. Genre en uitverkocht staan onder de stippellijn, met het aantal ernaast (verzoek van de eigenaar,
    november 2026). */
 .buurt-kop .block-head p { max-width: 46ch; }
-.buurt-veld { position: relative; margin-top: 18px; }
+.buurt-veld { position: relative; margin-top: 18px; max-width: 560px; }
+.buurt-veld .buurt-plaats input { min-height: 54px; padding: 0 16px 0 48px; font: 500 var(--step-1) var(--font-body); }
+.buurt-veld > svg { position: absolute; left: 17px; top: 50%; translate: 0 -50%; z-index: 1; width: 20px; height: 20px; color: var(--ink); pointer-events: none; }
+/* Onder het veld: Mijn locatie (speldje) en de afstanden, alle als ronde knopjes; Mijn locatie is zwart zolang je
+   vanaf je locatie zoekt (verzoek van de eigenaar, november 2026). */
+.buurt-knoppen { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.buurt-knoppen[hidden] { display: none; }
+.buurt-kop .buurt-straal { display: flex; gap: 6px; }
+.buurt-kop .buurt-locatie { display: inline-flex; align-items: center; gap: 7px; min-height: 42px; padding: 0 16px 0 13px; border: 1.5px solid var(--ink); border-radius: 999px; background: var(--paper); color: var(--ink); font: 600 .95rem/1 var(--font-body); cursor: pointer; }
+.buurt-kop .buurt-locatie svg { width: 18px; height: 18px; }
+.buurt-kop .buurt-locatie[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.buurt-kop .buurt-locatie:hover { box-shadow: inset 0 0 0 1px var(--ink); }
+.buurt-kop .buurt-locatie:focus-visible { outline: 3px solid var(--kop-inkt); outline-offset: 2px; }
+.buurt-ander { border: 0; padding: 0; background: none; color: var(--ink); font: inherit; text-decoration: underline; cursor: pointer; }
 .buurt-veld[hidden], .buurt-js[hidden] { display: none; }
 .buurt-veld .buurt-plaats { display: block; max-width: none; }
-.buurt-veld .buurt-plaats input { min-height: 54px; padding: 0 160px 0 46px; font: 500 var(--step-1) var(--font-body); }
-.buurt-veld > .ic-pin { position: absolute; left: 16px; top: 50%; translate: 0 -50%; z-index: 1; width: 20px; height: 20px; color: var(--ink); pointer-events: none; }
-.buurt-veld .buurt-locatie { position: absolute; right: 6px; top: 6px; height: 42px; min-height: 0; padding: 0 14px; border-radius: 9px; background: var(--ink); color: var(--paper); font-size: .95rem; }
-.buurt-veld .buurt-locatie:focus-visible { outline: 3px solid var(--kop-inkt); outline-offset: 3px; }
-.buurt-kop .buurt-straal { display: flex; gap: 6px; margin-top: 10px; }
 .buurt-kop .buurt-straal button { min-height: 42px; padding: 0 16px; border-width: 1.5px; background: var(--paper); color: var(--ink); font-size: .95rem; }
 .buurt-kop .buurt-straal button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
 .buurt-kop .buurt-straal button:hover { box-shadow: inset 0 0 0 1px var(--ink); }
@@ -1501,11 +1509,6 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .buurt-filters :is(.keuze summary, .toggle):hover { box-shadow: inset 0 0 0 1px var(--ink); }
 .buurt-filters .keuze-lijst { width: max-content; min-width: max(100%, 260px); max-width: calc(100vw - 32px); }
 .buurt-filters .buurt-status { margin: 0 0 0 auto; min-height: 0; }
-@media (max-width: 560px) {
-  .buurt-veld .buurt-plaats input { padding-right: 62px; }
-  .buurt-veld .buurt-locatie span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-  .buurt-veld .buurt-locatie { width: 42px; padding: 0; justify-content: center; }
-}
 @media (max-width: 760px) { .buurt-filters .buurt-status { flex-basis: 100%; margin: 6px 0 0; } }
 /* Kruimelpad in het gekleurde vlak (/in-de-buurt/), in de kleur van de inkt van het vlak. */
 .buurt-kop { padding-top: 6px; }
