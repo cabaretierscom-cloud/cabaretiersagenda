@@ -1507,3 +1507,9 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   .buurt-veld .buurt-locatie { width: 42px; padding: 0; justify-content: center; }
 }
 @media (max-width: 760px) { .buurt-filters .buurt-status { flex-basis: 100%; margin: 6px 0 0; } }
+/* Kruimelpad in het gekleurde vlak (/in-de-buurt/), in de kleur van de inkt van het vlak. */
+.buurt-kop { padding-top: 6px; }
+.buurt-kop .kruimelpad ol { padding-block: 8px 10px; }
+.buurt-kop .kruimelpad :is(ol, li::before, a, [aria-current="page"]) { color: var(--kop-inkt); }
+.buurt-kop .kruimelpad a { opacity: .8; }
+.buurt-kop .kruimelpad a:hover { opacity: 1; color: var(--kop-inkt); }

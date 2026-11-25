@@ -254,7 +254,7 @@ ${schema ? `<script type="application/ld+json">${JSON.stringify(paginaLd({ title
   </div>
 </header>
 <main id="main">
-${kruimelpadHtml(schema?.kruimels)}${body}
+${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimelpadHtml(schema?.kruimels)) : kruimelpadHtml(schema?.kruimels) + body}
 </main>
 <footer class="site-footer">
   <div class="wrap footer-boven">${footerLinks()}</div>
@@ -473,6 +473,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
   });
 
   // Zichtbaar kruimelpad op dieper liggende pagina's (vanaf twee niveaus onder de voorpagina).
+  // Een pagina kan het op een eigen plek zetten met <!--kruimelpad--> in de body (in het gekleurde vlak van /in-de-buurt/).
   function kruimelpadHtml(kruimels = []) {
     if (kruimels.length < 2) return "";
     const pad = [["Home", "/"], ...kruimels];
@@ -788,6 +789,7 @@ ${kruimelpadHtml(schema?.kruimels)}${body}
     const body = `${KOP_KLEUR}
 <div class="buurt" data-buurt data-alles="/agenda/alles.js?v=${allesVersie()}">
 <div class="home-kop agenda-kop buurt-kop">
+<!--kruimelpad-->
 <section class="wrap" aria-labelledby="t">
   <div class="block-head"><h1 id="t">Bij mij in de buurt</h1><p>Cabaret en comedy bij jou in de buurt. Gebruik je locatie of kies een plaats.</p></div>
   <div class="buurt-js buurt-veld" hidden>
