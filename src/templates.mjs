@@ -1464,7 +1464,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       : `<span class="az-letter">${esc(a.naam.replace(/^[^\p{L}\p{N}]+/u, "").replace(/^(de|het|the)\s+/i, "").charAt(0).toUpperCase() || "#")}</span>`;
     return `<span class="az-foto${f?.bestand ? "" : " leeg"}" style="${ink(a.kleur)}" aria-hidden="true">${binnen}</span>`;
   };
-  function azLijst(items, { zoekLabel = "Zoek een artiest" } = {}) {
+  function azLijst(items, { zoekLabel = "Zoek een artiest", voorbeeld = "Bijvoorbeeld: Kroos" } = {}) {
     const opNaam = [...items].sort((x, y) => x.a.naam.localeCompare(y.a.naam, "nl", { sensitivity: "base" }));
     const letter = (n) => { const c = n.normalize("NFD")[0].toUpperCase(); return /[A-Z]/.test(c) ? c : "#"; };
     const groepen = new Map();
@@ -1480,7 +1480,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return `<div class="az-tools">
         <div class="field search">
           <label for="f-artiest">${esc(zoekLabel)}</label>
-          <input id="f-artiest" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Kroos">
+          <input id="f-artiest" type="search" autocomplete="off" placeholder="${esc(voorbeeld)}">
         </div>
         <div class="az-sorteer" role="group" aria-label="Sorteren" hidden><span>Sorteer</span><button type="button" data-sorteer="populair" aria-pressed="true">Meest bekeken</button><button type="button" data-sorteer="az" aria-pressed="false">A-Z</button></div>
         <nav class="letters" aria-label="Spring naar letter">${[...groepen.keys()].map((l) => `<a href="#letter-${l === "#" ? "0" : l}">${l}</a>`).join("")}</nav>
@@ -1504,8 +1504,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${strip("strip-nu", "Voorstellingen die nu op tournee zijn", nu)}
     </section>` : ""}
     <section class="block wrap az-blok" aria-labelledby="az-titel">
-      <h2 class="sub-head" id="az-titel">Van A tot Z</h2>
-      ${azLijst(echte)}
+      <h2 class="sub-head" id="az-titel">Alle artiesten</h2>
+      ${azLijst(echte, { voorbeeld: "Peter Pannekoek of Kim Schuddeboom" })}
       <p class="zie-ook">Bekijk ook: <a href="/alle-cabaretiers/">alle cabaretiers</a>, <a href="/alle-cabaretiers/vrouwen/">vrouwelijke cabaretiers</a> en <a href="/alle-cabaretiers/mannen/">mannelijke cabaretiers</a>.</p>
     </section>`;
     return layout({ title: "Artiesten op tournee: cabaret en comedy", description: kort(`${plural(echte.length, "artiest", "artiesten")} met aankomende voorstellingen in Nederland en België, van A tot Z: cabaretiers, comedians en groepen, met hun speeldata en kaarten.`), path: "/artiesten/", section: "artiesten", body, schema: { type: "CollectionPage", kruimels: [["Artiesten", "/artiesten/"]], hoofd: lijstLd([...echte].sort((x, y) => x.a.naam.localeCompare(y.a.naam, "nl")).map(({ a }) => [a.naam, `/artiesten/${a.id}/`])) } });
