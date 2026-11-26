@@ -1468,16 +1468,21 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       if (!groepen.has(l)) groepen.set(l, []);
       groepen.get(l).push(x);
     }
+    // Volgorde "meest bekeken" (standaard, verzoek van de eigenaar november 2026): paginaweergaven van de artiest in de
+    // laatste 28 dagen, dan het aantal speeldata; agenda.js zet de lijst in die volgorde. Zonder JavaScript A-Z.
+    const rang = new Map([...items].sort((x, y) => (weergavenArtiest.get(y.a.id) || 0) - (weergavenArtiest.get(x.a.id) || 0)
+      || y.list.length - x.list.length || x.a.naam.localeCompare(y.a.naam, "nl")).map((x, i) => [x.a.id, i]));
     return `<div class="az-tools">
         <div class="field search">
           <label for="f-artiest">${esc(zoekLabel)}</label>
           <input id="f-artiest" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Kroos">
         </div>
+        <div class="az-sorteer" role="group" aria-label="Sorteren" hidden><span>Sorteer</span><button type="button" data-sorteer="populair" aria-pressed="true">Meest bekeken</button><button type="button" data-sorteer="az" aria-pressed="false">A-Z</button></div>
         <nav class="letters" aria-label="Spring naar letter">${[...groepen.keys()].map((l) => `<a href="#letter-${l === "#" ? "0" : l}">${l}</a>`).join("")}</nav>
       </div>
       <div class="az" id="az">${[...groepen].map(([l, items]) => `<section class="az-group" id="letter-${l === "#" ? "0" : l}">
         <h3>${l}</h3>
-        <ul>${items.map(({ a, list }) => `<li data-naam="${esc(a.naam.toLowerCase())}"><a href="${artiestPad(a.id)}">${azFoto(a)}<span class="ac">${plural(list.length, "datum", "data")}</span><span class="an">${esc(a.naam)}</span><span class="ad">Vanaf ${fmt.dayMonth(list[0].datum)} in ${esc(T.get(list[0].theater).plaats)}</span></a></li>`).join("")}</ul>
+        <ul>${items.map(({ a, list }) => `<li data-naam="${esc(a.naam.toLowerCase())}" data-rang="${rang.get(a.id)}"><a href="${artiestPad(a.id)}">${azFoto(a)}<span class="ac">${plural(list.length, "datum", "data")}</span><span class="an">${esc(a.naam)}</span><span class="ad">Vanaf ${fmt.dayMonth(list[0].datum)} in ${esc(T.get(list[0].theater).plaats)}</span></a></li>`).join("")}</ul>
       </section>`).join("")}</div>
       <p class="empty" id="az-leeg" hidden>Geen artiest gevonden met deze naam.</p>`;
   }

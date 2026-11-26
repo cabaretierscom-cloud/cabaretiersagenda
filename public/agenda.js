@@ -85,6 +85,46 @@
       document.querySelectorAll(".az-group").forEach((g) => { g.hidden = !g.querySelector("li:not([hidden])"); });
       leeg.hidden = n > 0;
     });
+
+    // Sorteren: meest bekeken (standaard) of A-Z. Bij meest bekeken staan alle artiesten in één lijst in de volgorde
+    // van data-rang; bij A-Z gaan ze terug naar hun letter. De keuze staat in het adres (?sorteer=az).
+    const knoppen = document.querySelector(".az-sorteer");
+    const az = document.getElementById("az");
+    if (knoppen && az) {
+      const groepen = [...az.querySelectorAll(".az-group")];
+      const thuis = new Map(items.map((li) => [li, li.parentElement]));
+      const populair = document.createElement("section");
+      populair.className = "az-group az-populair";
+      populair.innerHTML = '<h3 class="visually-hidden">Meest bekeken</h3><ul></ul>';
+      az.prepend(populair);
+      const zet = (soort, bewaar) => {
+        const top = soort === "populair";
+        if (top) populair.querySelector("ul").append(...[...items].sort((x, y) => x.dataset.rang - y.dataset.rang));
+        else for (const li of items) thuis.get(li).append(li);
+        groepen.forEach((g) => { g.hidden = top || !g.querySelector("li:not([hidden])"); });
+        populair.hidden = !top || !populair.querySelector("li:not([hidden])");
+        az.classList.toggle("op-populair", top);
+        for (const k of knoppen.querySelectorAll("button")) k.setAttribute("aria-pressed", String(k.dataset.sorteer === soort));
+        if (bewaar) {
+          const u = new URL(location.href);
+          if (top) u.searchParams.delete("sorteer"); else u.searchParams.set("sorteer", "az");
+          history.replaceState(null, "", u);
+        }
+      };
+      knoppen.hidden = false;
+      knoppen.addEventListener("click", (e) => { const k = e.target.closest("button[data-sorteer]"); if (k) zet(k.dataset.sorteer, true); });
+      // Een letter kiezen schakelt naar A-Z, anders is er niets om naartoe te springen.
+      document.querySelectorAll(".letters a").forEach((a) => a.addEventListener("click", () => { if (az.classList.contains("op-populair")) zet("az", true); }));
+      const naarLetter = /^#letter-/.test(location.hash);
+      zet(new URLSearchParams(location.search).get("sorteer") === "az" || naarLetter ? "az" : "populair", false);
+      // Zoeken houdt rekening met de gekozen volgorde.
+      zoekArtiest.addEventListener("input", () => {
+        if (az.classList.contains("op-populair")) {
+          groepen.forEach((g) => { g.hidden = true; });
+          populair.hidden = !populair.querySelector("li:not([hidden])");
+        }
+      });
+    }
   }
 
   // ---------- Plaatsen en theaters: zoeken op plaats of zaal ----------

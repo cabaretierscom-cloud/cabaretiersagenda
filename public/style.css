@@ -919,7 +919,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* ---------- Artiesten van A tot Z ---------- */
 /* Een affichewand per letter (verzoek van de eigenaar, november 2026): staande foto in de kleur van de artiest,
    het aantal speeldata als knopje erop, de naam in de kopletter eronder. */
-.az-tools { display: grid; grid-template-columns: minmax(0, 26rem) minmax(0, 1fr); gap: 16px; align-items: center; margin-bottom: 12px; }
+.az-tools { display: grid; grid-template-columns: minmax(0, 26rem) auto; gap: 14px 16px; align-items: center; margin-bottom: 12px; }
 .az-tools label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .az-tools .search { position: relative; }
 .az-tools .search input { padding-left: 48px; }
@@ -928,7 +928,17 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E") center / contain no-repeat;
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E") center / contain no-repeat;
 }
-.letters { display: flex; flex-wrap: wrap; gap: 6px; }
+/* Sorteren (agenda.js; zonder JavaScript verborgen): één samengevoegde knop zoals de afstand op /in-de-buurt/. */
+.az-sorteer { display: inline-flex; align-items: stretch; justify-self: start; border: 1.5px solid var(--ink); border-radius: 999px; overflow: hidden; background: var(--paper); }
+.az-sorteer[hidden] { display: none; }
+.az-sorteer span { display: flex; align-items: center; padding: 0 14px; font-weight: 600; font-size: .95rem; }
+.az-sorteer button { min-height: 44px; padding: 0 16px; border: 0; border-left: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); font: 600 .95rem/1 var(--font-body); white-space: nowrap; cursor: pointer; }
+.az-sorteer button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.az-sorteer button:hover:not([aria-pressed="true"]) { background: var(--paper-2); }
+.az-sorteer button:focus-visible { outline: 3px solid var(--ink); outline-offset: -4px; }
+.letters { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; }
+/* Meest bekeken: één lijst zonder letterkop, met de stippellijn erboven. */
+.az-populair ul { padding-top: 18px; border-top: 3px dotted var(--ink); }
 .letters a {
   display: grid; place-items: center; width: 40px; height: 40px; border-radius: 999px; box-shadow: inset 0 0 0 1.5px var(--ink);
   font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; text-decoration: none; color: var(--ink);
