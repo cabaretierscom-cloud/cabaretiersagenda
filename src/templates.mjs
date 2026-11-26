@@ -1449,6 +1449,16 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   }
 
   // Zoekveld, letters en de lijst van A tot Z (public/agenda.js filtert op #f-artiest en #az).
+  // Een staand affiche per artiest in de lijst van A tot Z (verzoek van de eigenaar, november 2026): de foto van de
+  // artiestpagina, bijgesneden zoals de affiches in de agenda; zonder foto een vlak in de kleur van de artiest met de
+  // beginletter en het bolletjesraster.
+  const azFoto = (a) => {
+    const f = a.foto;
+    const binnen = f?.bestand
+      ? `<img src="${esc(f.bestand)}" alt=""${f.heel ? ` class="heel"` : uitsnede(f, 0.8)} loading="lazy" decoding="async" width="${f.breedte || 800}" height="${f.hoogte || 1000}">`
+      : `<span class="az-letter">${esc(a.naam.replace(/^[^\p{L}\p{N}]+/u, "").replace(/^(de|het|the)\s+/i, "").charAt(0).toUpperCase() || "#")}</span>`;
+    return `<span class="az-foto${f?.bestand ? "" : " leeg"}" style="${ink(a.kleur)}" aria-hidden="true">${binnen}</span>`;
+  };
   function azLijst(items, { zoekLabel = "Zoek een artiest" } = {}) {
     const opNaam = [...items].sort((x, y) => x.a.naam.localeCompare(y.a.naam, "nl", { sensitivity: "base" }));
     const letter = (n) => { const c = n.normalize("NFD")[0].toUpperCase(); return /[A-Z]/.test(c) ? c : "#"; };
@@ -1467,7 +1477,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </div>
       <div class="az" id="az">${[...groepen].map(([l, items]) => `<section class="az-group" id="letter-${l === "#" ? "0" : l}">
         <h3>${l}</h3>
-        <ul>${items.map(({ a, list }) => `<li data-naam="${esc(a.naam.toLowerCase())}"><a href="${artiestPad(a.id)}"><span class="swatch" style="${ink(a.kleur)};background:var(--bg)" aria-hidden="true"></span><span class="an">${esc(a.naam)}</span><span class="ad">vanaf ${fmt.dayMonth(list[0].datum)} in ${esc(T.get(list[0].theater).plaats)}</span><span class="ac">${plural(list.length, "datum", "data")}</span></a></li>`).join("")}</ul>
+        <ul>${items.map(({ a, list }) => `<li data-naam="${esc(a.naam.toLowerCase())}"><a href="${artiestPad(a.id)}">${azFoto(a)}<span class="ac">${plural(list.length, "datum", "data")}</span><span class="an">${esc(a.naam)}</span><span class="ad">Vanaf ${fmt.dayMonth(list[0].datum)} in ${esc(T.get(list[0].theater).plaats)}</span></a></li>`).join("")}</ul>
       </section>`).join("")}</div>
       <p class="empty" id="az-leeg" hidden>Geen artiest gevonden met deze naam.</p>`;
   }
