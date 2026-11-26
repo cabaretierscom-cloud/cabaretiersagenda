@@ -20,6 +20,8 @@ Elk item heeft een vaste `id` van kleine letters en streepjes, zoals `claudia-de
 
 Een artiest kan optioneel `"vorm": "groep"` of `"vorm": "persoon"` hebben. Dat bepaalt of zoekmachines de artiest als groep of als persoon zien. Zonder `vorm` raadt de site het aan de naam (bijvoorbeeld "&" of "en" betekent een duo).
 
+Een artiest met `"geenCabaretier": true` is eigenlijk een voorstelling, comedyavond of gezelschap (zoals "Testing" of "Vrouwejaars 2026") en staat niet op /alle-cabaretiers/; de artiestpagina blijft bestaan.
+
 Een solo-artiest kan `"geslacht": "man"` of `"geslacht": "vrouw"` hebben, altijd met `"geslachtBron"` (een link naar de bron). Dat bepaalt wie er op /alle-cabaretiers/mannen/ en /alle-cabaretiers/vrouwen/ staat. `npm run geslacht` zoekt het op in Wikidata voor artiesten met een Wikipedia-artikel over hun werk als cabaretier of comedian. Nooit raden op naam; vul het alleen met de hand in als er een bron voor is.
 
 ## Foto's van artiesten

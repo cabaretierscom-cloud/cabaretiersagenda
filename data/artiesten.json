@@ -9,13 +9,15 @@
     "id": "we-saw-that",
     "naam": "“We Saw That!”",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "geenCabaretier": true
   },
   {
     "id": "in-t-westvlams",
     "naam": "(in 't Westvlams)",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "geenCabaretier": true
   },
   {
     "id": "155-en-maas-theater-en-dans",
@@ -344,7 +346,8 @@
     "id": "annie-m-g-schmidtprijs",
     "naam": "Annie M.G. Schmidtprijs",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "geenCabaretier": true
   },
   {
     "id": "anouscha-fajdiga",
@@ -486,7 +489,8 @@
     "id": "avond-van-het-cabaret",
     "naam": "Avond van het Cabaret",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "geenCabaretier": true
   },
   {
     "id": "ayoub-kharkhach",
@@ -574,7 +578,8 @@
     "id": "berit-companjen-en-het-comedy-talent-van-het-moment",
     "naam": "Berit Companjen en het Comedy Talent van het moment",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "geenCabaretier": true
   },
   {
     "id": "berk-karan",
@@ -624,7 +629,8 @@
     "id": "best-of-stand-up-xl",
     "naam": "Best of Stand Up XL",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "geenCabaretier": true
   },
   {
     "id": "beth-en-flo",
@@ -704,7 +710,8 @@
     "id": "blijf-op-de-hoogte",
     "naam": "Blijf op de hoogte",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "geenCabaretier": true
   },
   {
     "id": "bob-koomen",
@@ -891,7 +898,8 @@
     "id": "cabaret-en-classics",
     "naam": "Cabaret & Classics",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "geenCabaretier": true
   },
   {
     "id": "cadeautje",
@@ -1147,19 +1155,22 @@
     "id": "comedyavond-met-marco-lopes-piet-als-mc",
     "naam": "Comedyavond met Marco Lopes (Piet) als MC",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "geenCabaretier": true
   },
   {
     "id": "comedytrain-on-tour",
     "naam": "Comedytrain on Tour",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "geenCabaretier": true
   },
   {
     "id": "comedytunes",
     "naam": "Comedytunes",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "geenCabaretier": true
   },
   {
     "id": "compagnie-barbarie-bronks-en-de-studio",
@@ -1285,7 +1296,8 @@
     "id": "dara-invites",
     "naam": "Dara Invites",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "geenCabaretier": true
   },
   {
     "id": "dave-felida",
@@ -1325,7 +1337,8 @@
     "id": "ddt-houdt-uitverkoop-feat-jacques-vermeire",
     "naam": "DDT houdt uitverkoop (feat. Jacques Vermeire)",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "geenCabaretier": true
   },
   {
     "id": "de-betoverde-klas",
@@ -1355,7 +1368,8 @@
     "id": "de-canadeise-meur",
     "naam": "De Canadeise meur",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "geenCabaretier": true
   },
   {
     "id": "de-dinoshow-a-vontura-silent-disco-theater",
@@ -1457,7 +1471,8 @@
     "id": "de-meiden-van-toen",
     "naam": "DE MEIDEN van toen",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "geenCabaretier": true
   },
   {
     "id": "de-meute",
@@ -1505,7 +1520,8 @@
     "id": "de-poes-van-usi-loes",
     "naam": "De poes van usi loes",
     "land": null,
-    "kleur": "limoen"
+    "kleur": "limoen",
+    "geenCabaretier": true
   },
   {
     "id": "de-proefkeuken-en-de-wc-van-tijd",
@@ -1523,7 +1539,8 @@
     "id": "de-sitcomeback",
     "naam": "DE SITCOMEBACK",
     "land": null,
-    "kleur": "limoen"
+    "kleur": "limoen",
+    "geenCabaretier": true
   },
   {
     "id": "de-spiegel",
@@ -1692,13 +1709,15 @@
     "id": "diva-s-in-de-kerststal",
     "naam": "Diva's in de Kerststal",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "geenCabaretier": true
   },
   {
     "id": "diva-s-op-stal",
     "naam": "Diva's op Stal",
     "land": null,
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "geenCabaretier": true
   },
   {
     "id": "diverse-comedians",
@@ -1810,7 +1829,8 @@
     "id": "drenthe-plat",
     "naam": "Drenthe Plat",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "geenCabaretier": true
   },
   {
     "id": "dreumesconcert-1-5-tot-2-5",
@@ -1862,7 +1882,8 @@
     "id": "echt-gebeurd",
     "naam": "Echt Gebeurd",
     "land": null,
-    "kleur": "limoen"
+    "kleur": "limoen",
+    "geenCabaretier": true
   },
   {
     "id": "ed-night",
@@ -1908,7 +1929,8 @@
     "id": "een-verrassende-gast-be",
     "naam": "een verrassende gast (BE)",
     "land": null,
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "geenCabaretier": true
   },
   {
     "id": "efteling",
@@ -2086,7 +2108,8 @@
     "id": "expat-cafe",
     "naam": "Expat Cafe",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "geenCabaretier": true
   },
   {
     "id": "fa-sol-la-ti-doos",
@@ -2330,7 +2353,8 @@
     "id": "gen-z",
     "naam": "Gen Z",
     "land": null,
-    "kleur": "limoen"
+    "kleur": "limoen",
+    "geenCabaretier": true
   },
   {
     "id": "george-tobal-producties",
@@ -2366,7 +2390,8 @@
     "id": "get-up-stand-up",
     "naam": "Get Up Stand Up",
     "land": null,
-    "kleur": "roze"
+    "kleur": "roze",
+    "geenCabaretier": true
   },
   {
     "id": "gewoon-aans",
@@ -2640,7 +2665,8 @@
     "id": "het-farcetheater",
     "naam": "Het Farcetheater",
     "land": null,
-    "kleur": "groen"
+    "kleur": "groen",
+    "geenCabaretier": true
   },
   {
     "id": "het-filiaal",
@@ -2760,7 +2786,8 @@
     "id": "het-zuidelijk-toneel",
     "naam": "Het Zuidelijk Toneel",
     "land": null,
-    "kleur": "roze"
+    "kleur": "roze",
+    "geenCabaretier": true
   },
   {
     "id": "hetpaleis",
@@ -2852,7 +2879,8 @@
     "id": "hokjesdenker",
     "naam": "Hokjesdenker",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "geenCabaretier": true
   },
   {
     "id": "holland-opera-new-european-ensemble-en-cat-smits-company",
@@ -2902,7 +2930,8 @@
     "id": "ice",
     "naam": "Ice",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "geenCabaretier": true
   },
   {
     "id": "ida-van-dril",
@@ -2922,7 +2951,8 @@
     "id": "in-eigen-nat",
     "naam": "In eigen nat",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "geenCabaretier": true
   },
   {
     "id": "introdans",
@@ -3336,7 +3366,8 @@
     "id": "jongerenraad-kunstmin",
     "naam": "Jongerenraad Kunstmin",
     "land": null,
-    "kleur": "groen"
+    "kleur": "groen",
+    "geenCabaretier": true
   },
   {
     "id": "joosen-en-de-jager",
@@ -3504,7 +3535,8 @@
     "id": "kabaresque-vii",
     "naam": "Kabaresque VII",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "geenCabaretier": true
   },
   {
     "id": "kadee-producties",
@@ -3554,7 +3586,8 @@
     "id": "kan-wim",
     "naam": "Kan Wim?",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "geenCabaretier": true
   },
   {
     "id": "karin-bloemen",
@@ -3694,7 +3727,8 @@
     "id": "kijk-je-kop-presents-roast-kingz",
     "naam": "Kijk Je Kop presents Roast KingZ",
     "land": null,
-    "kleur": "limoen"
+    "kleur": "limoen",
+    "geenCabaretier": true
   },
   {
     "id": "kiki-schippers",
@@ -3816,7 +3850,8 @@
     "id": "knock-out-comedy-crew",
     "naam": "Knock Out Comedy Crew",
     "land": null,
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "geenCabaretier": true
   },
   {
     "id": "knoei",
@@ -4055,7 +4090,8 @@
     "id": "loge10",
     "naam": "Loge10",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "geenCabaretier": true
   },
   {
     "id": "lonne-gosling",
@@ -4237,7 +4273,8 @@
     "id": "margreet-dolman-brengt-warmte-en-dominee-gremdaat-wijst-de-weg",
     "naam": "Margreet Dolman Brengt Warmte & Dominee Gremdaat Wijst De Weg",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "geenCabaretier": true
   },
   {
     "id": "margriet-van-der-linden",
@@ -4463,13 +4500,15 @@
     "id": "mc-jeffrey-spalburg-en-dj-phantom",
     "naam": "MC Jeffrey Spalburg & DJ Phantom",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "geenCabaretier": true
   },
   {
     "id": "medammecour-on-tour",
     "naam": "Medammecour on tour!",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "geenCabaretier": true
   },
   {
     "id": "mediadome",
@@ -4655,7 +4694,8 @@
     "id": "moortelvet-premiere",
     "naam": "Moortelvet (Première)",
     "land": null,
-    "kleur": "blauw"
+    "kleur": "blauw",
+    "geenCabaretier": true
   },
   {
     "id": "murphy",
@@ -4785,7 +4825,8 @@
     "id": "natalia-s",
     "naam": "Natalia's",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "geenCabaretier": true
   },
   {
     "id": "nathalie-baartman",
@@ -4852,7 +4893,8 @@
     "id": "neurodivergent-en-content",
     "naam": "Neurodivergent en content",
     "land": null,
-    "kleur": "limoen"
+    "kleur": "limoen",
+    "geenCabaretier": true
   },
   {
     "id": "neus",
@@ -4972,7 +5014,8 @@
     "id": "non-stop",
     "naam": "Non-Stop",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "geenCabaretier": true
   },
   {
     "id": "noord-nederlands-orkest",
@@ -4984,7 +5027,8 @@
     "id": "nour-hajjar-live-in-amsterdam",
     "naam": "Nour Hajjar live in Amsterdam",
     "land": null,
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "geenCabaretier": true
   },
   {
     "id": "november-music-mispoes-holland-opera",
@@ -5334,7 +5378,8 @@
     "id": "piet-en-matties-live",
     "naam": "Piet & Matties Live",
     "land": null,
-    "kleur": "limoen"
+    "kleur": "limoen",
+    "geenCabaretier": true
   },
   {
     "id": "piet-van-eeghen",
@@ -5564,7 +5609,8 @@
     "id": "rayen-en-friends",
     "naam": "Rayen & Friends",
     "land": null,
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "geenCabaretier": true
   },
   {
     "id": "rayen-panday",
@@ -5594,7 +5640,8 @@
     "id": "rayen-panday-en-friends",
     "naam": "Rayen Panday & Friends",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "geenCabaretier": true
   },
   {
     "id": "reece-kidd",
@@ -5831,7 +5878,8 @@
     "id": "rogier-bak-nl",
     "naam": "Rogier Bak (NL)",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "geenCabaretier": true
   },
   {
     "id": "rommel-mee",
@@ -5966,7 +6014,8 @@
     "id": "saman-amini-s-integratieplan-2",
     "naam": "Saman Amini's Integratieplan #2",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "geenCabaretier": true
   },
   {
     "id": "samar-en-de-bange-koning",
@@ -6324,7 +6373,8 @@
     "id": "srefidensi-comedyshow-2026",
     "naam": "Srefidensi Comedyshow 2026",
     "land": null,
-    "kleur": "groen"
+    "kleur": "groen",
+    "geenCabaretier": true
   },
   {
     "id": "stampvoeten-op-tafel",
@@ -6421,7 +6471,8 @@
     "id": "stel",
     "naam": "Stel",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "geenCabaretier": true
   },
   {
     "id": "stephen-bell",
@@ -6615,7 +6666,8 @@
     "id": "team-ricky-risolles",
     "naam": "Team Ricky Risolles",
     "land": null,
-    "kleur": "paars"
+    "kleur": "paars",
+    "geenCabaretier": true
   },
   {
     "id": "terrible-tiran-8-108-geannuleerd",
@@ -6633,7 +6685,8 @@
     "id": "testing",
     "naam": "Testing",
     "land": null,
-    "kleur": "lila"
+    "kleur": "lila",
+    "geenCabaretier": true
   },
   {
     "id": "teun-de-vries",
@@ -6803,7 +6856,8 @@
     "id": "theatertroep",
     "naam": "Theatertroep",
     "land": null,
-    "kleur": "roze"
+    "kleur": "roze",
+    "geenCabaretier": true
   },
   {
     "id": "theo-maassen",
@@ -7074,7 +7128,8 @@
     "id": "twente-plat",
     "naam": "Twente Plat",
     "land": null,
-    "kleur": "limoen"
+    "kleur": "limoen",
+    "geenCabaretier": true
   },
   {
     "id": "uit-het-donker",
@@ -7162,7 +7217,8 @@
     "id": "veldeke-theater",
     "naam": "Veldeke Theater",
     "land": null,
-    "kleur": "aqua"
+    "kleur": "aqua",
+    "geenCabaretier": true
   },
   {
     "id": "veldhuis-en-kemper",
@@ -7238,7 +7294,8 @@
     "id": "vrouwejaars-2026",
     "naam": "Vrouwejaars 2026",
     "land": null,
-    "kleur": "geel"
+    "kleur": "geel",
+    "geenCabaretier": true
   },
   {
     "id": "vuile-huichelaar",
@@ -7276,13 +7333,15 @@
     "id": "wat-ik-zeker-weet",
     "naam": "Wat Ik Zeker Weet",
     "land": null,
-    "kleur": "rood"
+    "kleur": "rood",
+    "geenCabaretier": true
   },
   {
     "id": "we-zijn-toch-familie",
     "naam": "We zijn toch familie",
     "land": null,
-    "kleur": "oranje"
+    "kleur": "oranje",
+    "geenCabaretier": true
   },
   {
     "id": "weg-ermee",

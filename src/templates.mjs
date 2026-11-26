@@ -1496,7 +1496,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   // Clubavonden, festivals, kwissen en reeksen zijn geen cabaretier.
   const GEEN_CABARETIER = /\b(festival|club|kwis|cabarestafette|agency|producties|stichting|comedians|finalisten|finalistentour|tournee|open mic|night|marathon|theaterweekend|bingo|lacht|show|revue|vibe)\b/i;
   // Wie alleen kindervoorstellingen speelt, is geen cabaretier: die staat niet op /alle-cabaretiers/.
-  const cabaretiers = artiestenMetData.filter(({ a, list }) => !GEEN_CABARETIER.test(a.naam) && list.some((g) => V.get(g.voorstelling).genre !== "kindervoorstellingen"));
+  // `geenCabaretier: true` in artiesten.json: een voorstelling, avond of gezelschap dat als artiest binnenkwam.
+  const cabaretiers = artiestenMetData.filter(({ a, list }) => !a.geenCabaretier && !GEEN_CABARETIER.test(a.naam) && list.some((g) => V.get(g.voorstelling).genre !== "kindervoorstellingen"));
   const kaal = (html) => html.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/\s+/g, " ").trim();
   const artiestLink = (a) => `<a href="${artiestPad(a.id)}">${esc(a.naam)}</a>`;
   const CABARETIER_PAGINAS = {
@@ -1616,12 +1617,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     // Affiches met promobeeld van deze cabaretiers, net als op de homepage; zijn die er niet, dan kaarten.
     const ids = new Set(items.map(({ a }) => a.id));
     const affiches = nuInTheater((id) => ids.has(id));
-    // Binnenkort te zien: van de drukst toerende cabaretiers de eerstvolgende voorstelling waarvoor nog
-    // kaarten zijn (anders de eerstvolgende), op datum. Eén per voorstelling, zodat duo's niet dubbel staan.
-    const gezien = new Set();
-    const eerstvolgend = opTournee.slice(0, 16).map(({ list }) => list.find((g) => !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status)) || list[0])
-      .filter((g) => g && !gezien.has(g.voorstelling) && gezien.add(g.voorstelling)).slice(0, 12)
-      .sort((x, y) => x.datum.localeCompare(y.datum) || (x.tijd || "").localeCompare(y.tijd || ""));
     const kopTournee = soort === "alle" ? "Bekende cabaretiers op tournee" : `Bekende ${esc(P.wie)} op tournee`;
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">${esc(P.naam)}</h1><p>${intro}</p></div>
@@ -1636,12 +1631,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </div>
       ${strip("strip-nu", kopTournee, affiches)}
     </section>` : ""}
-    <section class="block wrap binnenkort-blok" aria-labelledby="binnenkort-titel">
-      <h2 class="sub-head" id="binnenkort-titel">Binnenkort te zien</h2>
-      <p class="binnenkort-intro">De eerstvolgende voorstelling van de ${soort === "alle" ? "drukst toerende cabaretiers" : `drukst toerende ${esc(P.wie)}`}, met kaartjes bij het theater.</p>
-      ${monthGroups(eerstvolgend)}
-      <p class="meer-link"><a href="/agenda/">Alle voorstellingen in de agenda</a></p>
-    </section>
     <section class="block wrap az-blok" aria-labelledby="az-titel">
       <h2 class="sub-head" id="az-titel">${esc(P.naam)} van A tot Z</h2>
       ${azLijst(items, { zoekLabel: soort === "vrouw" ? "Zoek een cabaretière" : "Zoek een cabaretier" })}
