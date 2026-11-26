@@ -1989,8 +1989,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     if (!/^CC BY/i.test(f.licentie || "")) return "";
     return `<p class="foto-credit">Foto bovenaan: <a href="${esc(f.bron)}" rel="noopener">${esc(f.maker)}</a>, ${f.licentieUrl ? `<a href="${esc(f.licentieUrl)}" rel="noopener license">${esc(f.licentie)}</a>` : esc(f.licentie)}.</p>`;
   };
-  // Zonder foto: een vlak in de kleur met het bolletjesraster en de beginletter, zoals de affiches in de agenda.
-  const kopLeeg = (naam) => `<div class="artiest-foto kop-leeg" aria-hidden="true"><span>${esc((naam.replace(/^(de|het|the)\s+/i, "")[0] || "").toUpperCase())}</span></div>`;
 
   // Video's van YouTube (promotiemateriaal, data/promo.json). Zonder klik niets van YouTube:
   // agenda.js zet bij een klik de speler van youtube-nocookie.com neer; zonder JavaScript een gewone link.
@@ -2024,14 +2022,14 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const aantal = list.length ? `${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(cityCount, "plaats", "plaatsen")}` : a.nietOpTournee ? `Op dit moment staan er geen voorstellingen van ${esc(a.naam)} in de agenda.` : "Op dit moment staan er geen voorstellingen gepland.";
     const body = `<div class="detail-hero zaal-kop artiest-kop" style="${ink(a.kleur)}">
       <!--kruimelpad-->
-      <div class="wrap hero-met-foto">
+      <div class="wrap${a.foto ? " hero-met-foto" : ""}">
         <div class="hero-tekst">
           <h1>${esc(a.naam)}</h1>
           ${showIds.length ? `<ul class="zaal-feiten">${showIds.map((vid) => `<li>${voorstellingPad.has(vid) ? `<a href="${voorstellingPad.get(vid)}">“${esc(V.get(vid).titel)}”</a>` : `<span>“${esc(V.get(vid).titel)}”</span>`}</li>`).join("")}</ul>` : ""}
           <p class="zaal-aantal">${aantal}</p>
           ${extra ? `<p class="kop-extra">${extra}</p>` : ""}
         </div>
-        ${a.foto ? kopFoto(a) : kopLeeg(a.naam)}
+        ${a.foto ? kopFoto(a) : ""}
       </div></div>
       <div class="wrap detail-body zaal-lijst">
         ${list.length ? `<h2 class="sub-head speellijst-kop">Speellijst ${jaren}</h2>` : ""}
@@ -2120,14 +2118,14 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const beste = (v.recensies || []).find((r) => r.sterren);
     const body = `<div class="detail-hero zaal-kop artiest-kop" style="${ink(a.kleur)}">
       <!--kruimelpad-->
-      <div class="wrap hero-met-foto">
+      <div class="wrap${v.foto ? " hero-met-foto" : ""}">
         <div class="hero-tekst">
           <h1${Math.max(...v.titel.split(/\s+/).map((w) => w.length)) > 12 ? ' class="lang"' : ""}>${esc(v.titel)}</h1>
           <p class="kop-van">Voorstelling van ${artistLinks(vid)}</p>
           <ul class="zaal-feiten" aria-label="Genres">${genresVanV(v).map((g) => `<li>${GENRE_PAGINAS.includes(g) ? `<a href="${genrePad(g)}">${esc(genreLabel(g))}</a>` : `<span>${esc(genreLabel(g))}</span>`}</li>`).join("")}</ul>
           <p class="zaal-aantal">${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden, "plaats", "plaatsen")}</p>
         </div>
-        ${v.foto ? kopFoto(v) : kopLeeg(a.naam)}
+        ${v.foto ? kopFoto(v) : ""}
       </div></div>
       <div class="wrap detail-body zaal-lijst">
         ${promotekstHtml(v)}
