@@ -1557,7 +1557,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .zaal-kop .theater-foto { width: clamp(240px, 36vw, 480px); }
 .zaal-lijst { padding-top: 18px; }
 .zaal-lijst .filters { background: none; padding: 0; border-radius: 0; gap: 8px; align-items: center; }
-.zaal-lijst .filters :is(label[for="f-q"], label[for="f-maand"], .label) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.zaal-lijst .filters :is(label[for="f-q"], label[for="f-maand"], .label, #f-km-label, .afstand-veld > label) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .zaal-lijst .filters .field { flex: 0 0 auto; display: block; }
 .zaal-lijst .filters .search { flex: 1 1 320px; max-width: 560px; position: relative; }
 .zaal-lijst .filters .search input { padding-left: 48px; min-height: 52px; }
@@ -1578,3 +1578,18 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* Naamsvermelding van de zaalfoto onderaan de theaterpagina (alleen als de licentie erom vraagt). */
 .foto-credit { margin: 40px 0 0; font-size: .78rem; color: var(--ink-2); }
 .foto-credit a { color: inherit; }
+
+/* ---------- Artiest- en voorstellingspagina's: kop zoals de theaterpagina's ----------
+   (zaal-kop/zaal-lijst plus artiest-kop; verzoek van de eigenaar, november 2026) */
+.artiest-kop .hero-met-foto { align-items: center; }
+.artiest-kop h1.lang { font-size: clamp(2.2rem, 6vw, 4.2rem); }
+.artiest-kop .kop-van { margin: 8px 0 0; font-size: var(--step-1); }
+.artiest-kop .kop-van a, .artiest-kop .kop-extra a { color: inherit; }
+.artiest-kop .kop-extra { margin: 8px 0 0; font-size: var(--step-0); max-width: 52ch; }
+.kop-leeg { aspect-ratio: 4 / 5; border-radius: var(--radius-poster); display: grid; place-items: center; box-shadow: inset 0 0 0 2px var(--fg);
+  background-image: radial-gradient(var(--fg) 1.2px, transparent 1.7px); background-size: 11px 11px; }
+.kop-leeg span { font-family: var(--font-display); font-weight: 900; font-size: clamp(5rem, 11vw, 9rem); line-height: 1; color: var(--fg); padding: 0 .15em; background: var(--bg); }
+.artiest-kop .zaal-feiten li > span { font-style: normal; }
+.zaal-lijst > .speellijst-kop { margin-top: 10px; }
+.zaal-lijst > .speellijst-kop + .filters { margin-top: 12px; }
+@media (max-width: 640px) { .artiest-kop .kop-leeg { width: min(200px, 55%); } }

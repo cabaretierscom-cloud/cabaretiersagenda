@@ -576,7 +576,7 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
       </details>
     </div>`;
   }
-  function filters(list, { maand = false, waar = false, genre = true, afstand = false, icoon = false, voorbeeld = "Jochem Myjer, Eindhoven of Carré" } = {}) {
+  function filters(list, { maand = false, waar = false, genre = true, afstand = false, icoon = false, voorbeeld = null } = {}) {
     // Kindervoorstellingen (hoofdgenre) die standaard uit staan; 0 als de lijst alleen kindervoorstellingen heeft.
     const kinder = list.some((x) => !heeftGenre(x, "kindervoorstellingen")) ? list.filter((x) => V.get(x.voorstelling).genre === "kindervoorstellingen").length : 0;
     const months = [...new Set(list.map((g) => g.datum.slice(0, 7)))].sort();
@@ -585,8 +585,8 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
     return `<form class="filters" id="filters" role="search" aria-label="Voorstellingen filteren" hidden>
     <div class="field search">
       ${waar ? `<label for="f-q">Zoek op plaats of theater</label>
-      <input id="f-q" name="q" type="search" autocomplete="off" data-veld="waar" placeholder="Bijvoorbeeld: ${esc(voorbeeldWaar(list))}">` : `<label for="f-q">Zoek op artiest, voorstelling, plaats of theater</label>
-      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="${esc(voorbeeld)}">`}${icoon ? `<span class="zoek-icoon">${ICON_ZOEK}</span>` : ""}
+      <input id="f-q" name="q" type="search" autocomplete="off" data-veld="waar" placeholder="${esc(voorbeeld || `Bijvoorbeeld: ${voorbeeldWaar(list)}`)}">` : `<label for="f-q">Zoek op artiest, voorstelling, plaats of theater</label>
+      <input id="f-q" name="q" type="search" autocomplete="off" placeholder="${esc(voorbeeld || "Jochem Myjer, Eindhoven of Carré")}">`}${icoon ? `<span class="zoek-icoon">${ICON_ZOEK}</span>` : ""}
     </div>
     ${maand && months.length > 1 ? `<div class="field">
       <label for="f-maand">Maand</label>
@@ -1977,10 +1977,20 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   // Rechtenvrije foto (Wikimedia Commons) met verplichte naamsvermelding en licentie; bij promomateriaal alleen de fotograaf.
   // heel: true (promo.json) toont de foto in zijn eigen verhouding, zonder uitsnede (voorwaarde van de afzender).
-  const fotoHtml = (a, klasse = "artiest-foto") => `<figure class="${klasse}">
-          <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${a.foto.heel ? ' class="heel"' : klasse === "artiest-foto" ? uitsnede(a.foto, 4 / 5) : ""}${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
-          ${a.foto.promo && !a.foto.maker ? "" : `<figcaption>Foto: ${a.foto.promo ? esc(a.foto.maker) : `<a href="${esc(a.foto.bron)}" rel="noopener">${esc(a.foto.maker)}</a>`}${a.foto.promo ? "" : a.foto.licentieUrl ? `, <a href="${esc(a.foto.licentieUrl)}" rel="noopener license">${esc(a.foto.licentie)}</a>` : `, ${esc(a.foto.licentie)}`}</figcaption>`}
+  // Foto in de kop zonder bijschrift (artiest-, voorstellings- en theaterpagina's, verzoek van de eigenaar, november
+  // 2026); de maker staat als tooltip, en waar de licentie of afspraak om naamsvermelding vraagt onderaan (fotoCredit).
+  const kopFoto = (a, klasse = "artiest-foto") => `<figure class="${klasse}">
+          <img src="${esc(a.foto.bestand)}" alt="${esc(a.foto.alt)}"${a.foto.heel ? ' class="heel"' : klasse === "artiest-foto" ? uitsnede(a.foto, 4 / 5) : ""}${a.foto.maker ? ` title="Foto: ${esc(a.foto.maker)}"` : ""}${a.foto.breedte ? ` width="${a.foto.breedte}" height="${a.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
         </figure>`;
+  // Naamsvermelding onderaan: promofoto's met een bekende fotograaf, en Wikimedia-foto's met CC BY of CC BY-SA.
+  const fotoCredit = (f) => {
+    if (!f || !f.maker) return "";
+    if (f.promo) return `<p class="foto-credit">Foto bovenaan: ${esc(f.maker)}.</p>`;
+    if (!/^CC BY/i.test(f.licentie || "")) return "";
+    return `<p class="foto-credit">Foto bovenaan: <a href="${esc(f.bron)}" rel="noopener">${esc(f.maker)}</a>, ${f.licentieUrl ? `<a href="${esc(f.licentieUrl)}" rel="noopener license">${esc(f.licentie)}</a>` : esc(f.licentie)}.</p>`;
+  };
+  // Zonder foto: een vlak in de kleur met het bolletjesraster en de beginletter, zoals de affiches in de agenda.
+  const kopLeeg = (naam) => `<div class="artiest-foto kop-leeg" aria-hidden="true"><span>${esc((naam.replace(/^(de|het|the)\s+/i, "")[0] || "").toUpperCase())}</span></div>`;
 
   // Video's van YouTube (promotiemateriaal, data/promo.json). Zonder klik niets van YouTube:
   // agenda.js zet bij een klik de speler van youtube-nocookie.com neer; zonder JavaScript een gewone link.
@@ -2003,17 +2013,29 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const festival = [...F.values()].find((f) => (f.artiesten || []).includes(a.id));
     // "Speellijst 2026-2027": zo zoeken mensen ("theo maassen speellijst 2027", Search Console november 2026).
     const jaren = list.length ? [...new Set([list[0].datum.slice(0, 4), list.at(-1).datum.slice(0, 4)])].join("-") : "";
-    const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap${a.foto ? " hero-met-foto" : ""}">
+    // Kop zoals de theaterpagina's (verzoek van de eigenaar, november 2026): kruimelpad in het vlak, de naam, de
+    // voorstellingen als ronde knopjes, het aantal als tekst en de foto rechts (zonder foto de beginletter); zoeken en
+    // filters onder de stippellijn.
+    const extra = [
+      partners.length ? `Samen met ${opsomming(partners.map((p) => `<a href="${artiestPad(p)}">${esc(A.get(p).naam)}</a>`))}.` : "",
+      (a.ookIn || []).filter((x) => A.has(x)).length ? `Ook te zien als ${opsomming(a.ookIn.filter((x) => A.has(x)).map((x) => `<a href="${artiestPad(x)}">${esc(A.get(x).naam)}</a>`))}.` : "",
+      festival ? `Onderdeel van <a href="/festivals/${festival.id}/">${esc(festival.naam)}</a>.` : "",
+    ].filter(Boolean).join(" ");
+    const aantal = list.length ? `${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(cityCount, "plaats", "plaatsen")}` : a.nietOpTournee ? `Op dit moment staan er geen voorstellingen van ${esc(a.naam)} in de agenda.` : "Op dit moment staan er geen voorstellingen gepland.";
+    const body = `<div class="detail-hero zaal-kop artiest-kop" style="${ink(a.kleur)}">
+      <!--kruimelpad-->
+      <div class="wrap hero-met-foto">
         <div class="hero-tekst">
           <h1>${esc(a.naam)}</h1>
-          <p>${summary}${(a.ookIn || []).filter((x) => A.has(x)).length ? ` Ook te zien als ${opsomming(a.ookIn.filter((x) => A.has(x)).map((x) => `<a href="${artiestPad(x)}">${esc(A.get(x).naam)}</a>`))}.` : ""}${festival ? ` Onderdeel van <a href="/festivals/${festival.id}/">${esc(festival.naam)}</a>.` : ""}</p>
+          ${showIds.length ? `<ul class="zaal-feiten">${showIds.map((vid) => `<li>${voorstellingPad.has(vid) ? `<a href="${voorstellingPad.get(vid)}">“${esc(V.get(vid).titel)}”</a>` : `<span>“${esc(V.get(vid).titel)}”</span>`}</li>`).join("")}</ul>` : ""}
+          <p class="zaal-aantal">${aantal}</p>
+          ${extra ? `<p class="kop-extra">${extra}</p>` : ""}
         </div>
-        ${a.foto ? fotoHtml(a) : ""}
+        ${a.foto ? kopFoto(a) : kopLeeg(a.naam)}
       </div></div>
-      <div class="wrap detail-body">
+      <div class="wrap detail-body zaal-lijst">
         ${list.length ? `<h2 class="sub-head speellijst-kop">Speellijst ${jaren}</h2>` : ""}
-        ${showIds.length ? `<div class="shows-list">${showIds.map((vid) => voorstellingPad.has(vid) ? `<a class="pill" href="${voorstellingPad.get(vid)}">${esc(V.get(vid).titel)}</a>` : `<span class="pill">${esc(V.get(vid).titel)}</span>`).join("")}</div>` : ""}
-        ${list.length > 12 ? filters(list, { maand: true, waar: true, afstand: new Set(list.map((g) => T.get(g.theater).plaats)).size > 1 }) : ""}
+        ${list.length > 12 ? filters(list, { maand: true, waar: true, icoon: true, voorbeeld: "Zoek op plaats of theater", afstand: new Set(list.map((g) => T.get(g.theater).plaats)).size > 1 }) : ""}
         <div id="gigs">${monthGroups(list, { showArtist: false, geenBeeld: true })}</div>
         ${list.length > 12 ? leegBlok : ""}
         ${a.videos?.length ? videosHtml(a) : ""}
@@ -2024,6 +2046,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         </section>` : artiestTekst(a, list)}
         ${list.length ? faqHtml(artiestVragen(a, list), `Veelgestelde vragen over ${a.naam}`) : ""}
         ${a.geslacht && !isGroep(a) ? `<p class="zie-ook">Bekijk ook andere <a href="/alle-cabaretiers/${a.geslacht === "vrouw" ? "vrouwen" : "mannen"}/">${a.geslacht === "vrouw" ? "vrouwelijke" : "mannelijke"} cabaretiers</a> of <a href="/alle-cabaretiers/">alle cabaretiers</a>.</p>` : ""}
+        ${a.foto ? fotoCredit(a.foto) : ""}
       </div>`;
     const desc = list.length
       ? zinnen(`${a.naam} speellijst: ${plural(list.length, "voorstelling", "voorstellingen")}${titles.length === 1 ? ` van ${titles[0]}` : ""} in ${plural(cityCount, "plaats", "plaatsen")}.`, `Alle data ${jaren.replace("-", " en ")} en kaarten via het theater.`, "Bekijk de hele speellijst.")
@@ -2095,19 +2118,23 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const list = up.filter((g) => g.voorstelling === vid);
     const steden = new Set(list.map((g) => T.get(g.theater).plaats)).size;
     const beste = (v.recensies || []).find((r) => r.sterren);
-    const body = `<div class="detail-hero" style="${ink(a.kleur)}"><div class="wrap${v.foto ? " hero-met-foto" : ""}">
+    const body = `<div class="detail-hero zaal-kop artiest-kop" style="${ink(a.kleur)}">
+      <!--kruimelpad-->
+      <div class="wrap hero-met-foto">
         <div class="hero-tekst">
           <h1${Math.max(...v.titel.split(/\s+/).map((w) => w.length)) > 12 ? ' class="lang"' : ""}>${esc(v.titel)}</h1>
-          <p>Voorstelling van ${artistLinks(vid)}. ${plural(list.length, "speeldatum", "speeldata")} in ${plural(steden, "plaats", "plaatsen")}.</p>
-          <ul class="hero-genres" aria-label="Genres">${genresVanV(v).map((g) => `<li>${GENRE_PAGINAS.includes(g) ? `<a href="${genrePad(g)}">${esc(genreLabel(g))}</a>` : `<span>${esc(genreLabel(g))}</span>`}</li>`).join("")}</ul>
+          <p class="kop-van">Voorstelling van ${artistLinks(vid)}</p>
+          <ul class="zaal-feiten" aria-label="Genres">${genresVanV(v).map((g) => `<li>${GENRE_PAGINAS.includes(g) ? `<a href="${genrePad(g)}">${esc(genreLabel(g))}</a>` : `<span>${esc(genreLabel(g))}</span>`}</li>`).join("")}</ul>
+          <p class="zaal-aantal">${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden, "plaats", "plaatsen")}</p>
         </div>
-        ${v.foto ? fotoHtml(v) : ""}
+        ${v.foto ? kopFoto(v) : kopLeeg(a.naam)}
       </div></div>
-      <div class="wrap detail-body">
+      <div class="wrap detail-body zaal-lijst">
         ${promotekstHtml(v)}
         ${recensiesHtml(v, list)}
         <div id="gigs">${monthGroups(list, { showArtist: false, geenBeeld: true })}</div>
         ${voorstellingTekst(vid, list)}
+        ${v.foto ? fotoCredit(v.foto) : ""}
       </div>`;
     const desc = zinnen(`${v.titel} van ${artistNames(vid)}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden, "plaats", "plaatsen")}.`, beste ? `${beste.medium}: ${plural(beste.sterren, "ster", "sterren")}.` : "", "Bekijk de speellijst en koop kaarten via het theater.");
     return layout({ title: `${v.titel} van ${artistNames(vid)}: speellijst en kaarten`, description: desc, path: voorstellingPad.get(vid), section: "artiesten", body, schema: {
@@ -2828,17 +2855,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return layout({ title: "Theaters en zalen met cabaret en comedy", description: kort(`${plural(zalenMetData.length, "theater", "theaters")}, comedyclubs en podia in Nederland en België met cabaret en comedy op het programma, per plaats, met hun aankomende voorstellingen.`), path: "/theaters/", section: "theaters", body, schema: { type: "CollectionPage", kruimels: [["Theaters", "/theaters/"]], hoofd: lijstLd([...zalenMetData].sort((x, y) => x.naam.localeCompare(y.naam, "nl")).map((t) => [t.naam, `/theaters/${t.id}/`])), extra: [faqLd(overzicht.vragen, "/theaters/")] } });
   }
 
-  // Zaalfoto zonder bijschrift (verzoek van de eigenaar, november 2026). Vraagt de licentie om naamsvermelding (CC BY,
-  // CC BY-SA), dan staat die als kleine regel onderaan de pagina; publiek domein, CC0 en beelden van de zaal zelf
-  // (promo) hebben die niet nodig. De maker staat ook als tooltip op de foto.
-  const zaalFoto = (t) => `<figure class="theater-foto">
-          <img src="${esc(t.foto.bestand)}" alt="${esc(t.foto.alt)}"${t.foto.maker ? ` title="Foto: ${esc(t.foto.maker)}"` : ""}${t.foto.breedte ? ` width="${t.foto.breedte}" height="${t.foto.hoogte}"` : ""} loading="eager" decoding="async" fetchpriority="high">
-        </figure>`;
-  const zaalFotoCredit = (t) => {
-    const f = t.foto;
-    if (!f || f.promo || !f.maker || !/^CC BY/i.test(f.licentie || "")) return "";
-    return `<p class="foto-credit">Foto bovenaan: <a href="${esc(f.bron)}" rel="noopener">${esc(f.maker)}</a>, ${f.licentieUrl ? `<a href="${esc(f.licentieUrl)}" rel="noopener license">${esc(f.licentie)}</a>` : esc(f.licentie)}.</p>`;
-  };
 
   function theaterPage(t) {
     const list = db.gigsForTheater(t.id);
@@ -2858,7 +2874,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <ul class="zaal-feiten">${feiten}</ul>
         <p class="zaal-aantal">${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}` : "Op dit moment staan er geen voorstellingen gepland."}</p>
         </div>
-        ${t.foto ? zaalFoto(t) : ""}
+        ${t.foto ? kopFoto(t, "theater-foto") : ""}
       </div></div>
       <div class="wrap detail-body zaal-lijst">
         ${list.length > 12 ? filters(list, { maand: true, icoon: true, voorbeeld: "Zoek een artiest of voorstelling" }) : ""}
@@ -2866,7 +2882,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${list.length > 12 ? leegBlok : ""}
         ${theaterTekst(t, list)}
         ${list.length ? faqHtml(theaterVragen(t, list), `Veelgestelde vragen over ${t.naam}`) : ""}
-        ${zaalFotoCredit(t)}
+        ${t.foto ? fotoCredit(t.foto) : ""}
       </div>`;
     const desc = list.length
       ? zinnen(`Wat speelt er in ${t.naam}${t.naam.includes(t.plaats) ? "" : ` in ${t.plaats}`}? ${plural(list.length, "voorstelling", "voorstellingen")} cabaret en comedy in seizoen ${SEIZOEN}.`, (() => { const n = [...new Set(list.flatMap((g) => V.get(g.voorstelling).artiesten))].slice(0, 3).map((x) => A.get(x).naam); return n.length ? `Met onder meer ${opsomming(n)}.` : ""; })(), "Met links naar de kaartverkoop.")
