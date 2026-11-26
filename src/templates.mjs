@@ -689,12 +689,14 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
 
   // zonderTitel: ook voorstellingen zonder eigen pagina (de voorstelling staat zelf als artiest, zoals de Vrouwejaars),
   // met de foto van de artiest en een link naar de artiestpagina.
-  function nuInTheater(artiest = () => true, voorstelling = () => true, { zonderTitel = false } = {}) {
+  // Alleen voorstellingen met minstens NU_MINIMUM komende speeldata (verzoek van de eigenaar, november 2026).
+  const NU_MINIMUM = 5;
+  function nuInTheater(artiest = () => true, voorstelling = () => true, { zonderTitel = false, minimum = NU_MINIMUM } = {}) {
     const gezien = new Set();
     const fotoVan = (v) => v.foto || (zonderTitel && !voorstellingPad.has(v.id) && !v.titel ? A.get(v.artiesten[0])?.foto : null);
     const lijst = [...V.values()].filter((v) => v.artiesten.length && fotoVan(v)?.bestand && (voorstellingPad.has(v.id) || zonderTitel) && artiest(v.artiesten[0]) && voorstelling(v))
       .map((v) => ({ v, list: up.filter((g) => g.voorstelling === v.id && g.status !== "geannuleerd") }))
-      .filter(({ list }) => list.length)
+      .filter(({ list }) => list.length >= minimum)
       .sort((x, y) => weergaven(y.v) - weergaven(x.v) || y.list.length - x.list.length || x.list[0].datum.localeCompare(y.list[0].datum))
       .filter(({ v }) => !gezien.has(v.artiesten[0]) && gezien.add(v.artiesten[0]))
       .slice(0, 20);
