@@ -1110,16 +1110,6 @@ ${zalen ? `
   </div>
   ${strip("strip-zalen", "Theaters met de meeste voorstellingen", zalen)}
 </section>` : ""}
-<section class="block wrap kies-blok kleine-kop" aria-labelledby="maand-title">
-  <div class="wall-head"><h2 id="maand-title">Voorstellingen per maand</h2></div>
-  ${maandNav(null)}
-</section>
-
-<section class="block wrap kies-blok kleine-kop" aria-labelledby="plaats-title">
-  <div class="wall-head"><h2 id="plaats-title">Zoek in de buurt</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
-  ${plaatsNav({ buurt: true })}
-</section>
-${netBinnenBlok()}
 ${clubs.length ? `
 <section class="wall wall-zalen kleine-kop" aria-labelledby="clubs-title">
   <div class="wrap wall-head">
@@ -1136,6 +1126,16 @@ ${festivalsMetData.length ? `
   </div>
   ${strip("strip-festivals", "Cabaretfestivals, de eerstvolgende voorop", kaartenRij(festivalsMetData, ({ f }) => festivalKleur(f), festivalKaart))}
 </section>` : ""}
+${netBinnenBlok()}
+<section class="block wrap kies-blok kleine-kop" aria-labelledby="maand-title">
+  <div class="wall-head"><h2 id="maand-title">Voorstellingen per maand</h2></div>
+  ${maandNav(null)}
+</section>
+
+<section class="block wrap kies-blok kleine-kop" aria-labelledby="plaats-title">
+  <div class="wall-head"><h2 id="plaats-title">Zoek in de buurt</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
+  ${plaatsNav({ buurt: true })}
+</section>
 ${GENRE_PAGINAS.length ? `
 <section class="block wrap kies-blok kleine-kop" aria-labelledby="genres-title">
   <div class="wall-head"><h2 id="genres-title">Genres</h2></div>
