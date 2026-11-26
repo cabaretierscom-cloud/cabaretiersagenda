@@ -1474,7 +1474,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   function artistIndex() {
     const nu = nuInTheater();
-    const body = `<div class="wrap block-head kop-artiesten"><h1 id="t">Artiesten</h1><p>${tellers.artiesten} cabaretiers, comedians en gezelschappen met aankomende voorstellingen.</p></div>
+    // Alleen echte artiesten: een voorstelling, avond of reeks als artiest (`geenArtiest`) staat niet in de lijst.
+    const echte = artiestenMetData.filter(({ a }) => !a.geenArtiest);
+    const body = `<div class="wrap block-head kop-artiesten"><h1 id="t">Artiesten</h1><p>${echte.length} cabaretiers, comedians en gezelschappen met aankomende voorstellingen.</p></div>
     ${nu ? `<section class="wall wall-sub" aria-labelledby="nu-title">
       <div class="wrap wall-head">
         <h2 id="nu-title">Nu op tournee</h2>
@@ -1483,10 +1485,10 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     </section>` : ""}
     <section class="block wrap az-blok" aria-labelledby="az-titel">
       <h2 class="sub-head" id="az-titel">Van A tot Z</h2>
-      ${azLijst(artiestenMetData)}
+      ${azLijst(echte)}
       <p class="zie-ook">Bekijk ook: <a href="/alle-cabaretiers/">alle cabaretiers</a>, <a href="/alle-cabaretiers/vrouwen/">vrouwelijke cabaretiers</a> en <a href="/alle-cabaretiers/mannen/">mannelijke cabaretiers</a>.</p>
     </section>`;
-    return layout({ title: "Artiesten op tournee: cabaret en comedy", description: kort(`${plural(artiestenMetData.length, "artiest", "artiesten")} met aankomende voorstellingen in Nederland en België, van A tot Z: cabaretiers, comedians en groepen, met hun speeldata en kaarten.`), path: "/artiesten/", section: "artiesten", body, schema: { type: "CollectionPage", kruimels: [["Artiesten", "/artiesten/"]], hoofd: lijstLd([...artiestenMetData].sort((x, y) => x.a.naam.localeCompare(y.a.naam, "nl")).map(({ a }) => [a.naam, `/artiesten/${a.id}/`])) } });
+    return layout({ title: "Artiesten op tournee: cabaret en comedy", description: kort(`${plural(echte.length, "artiest", "artiesten")} met aankomende voorstellingen in Nederland en België, van A tot Z: cabaretiers, comedians en groepen, met hun speeldata en kaarten.`), path: "/artiesten/", section: "artiesten", body, schema: { type: "CollectionPage", kruimels: [["Artiesten", "/artiesten/"]], hoofd: lijstLd([...echte].sort((x, y) => x.a.naam.localeCompare(y.a.naam, "nl")).map(({ a }) => [a.naam, `/artiesten/${a.id}/`])) } });
   }
 
   // ---------- Tekst onder artiest- en theaterpagina's ----------
