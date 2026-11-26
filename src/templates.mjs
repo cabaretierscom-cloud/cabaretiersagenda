@@ -624,8 +624,10 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
 
   // Maandkeuze als rij knoppen; de huidige maand is gemarkeerd.
   // Zijwaartse rij met de plaatsen met de meeste voorstellingen (/plaatsen/ en de homepage).
-  function plaatsNav() {
-    return `<nav class="month-nav stad-nav" aria-label="Plaatsen met de meeste voorstellingen">${[...plaatsen].sort((x, y) => perPlaats(y).length - perPlaats(x).length || x.localeCompare(y, "nl")).slice(0, 15).map((p) =>
+  // Met `buurt` (homepage) begint de rij met de tegel "In de buurt" (speldje, met je locatie), zoals bij de snelkoppelingen;
+  // die vervangt de blauwe knop "Gebruik mijn locatie" (verzoek van de eigenaar, november 2026).
+  function plaatsNav({ buurt = false } = {}) {
+    return `<nav class="month-nav stad-nav" aria-label="Plaatsen met de meeste voorstellingen">${buurt ? `<a class="buurt-tegel" href="/in-de-buurt/?locatie=1"><b>${ICON.pin}In de buurt</b><span>met je locatie</span></a>` : ""}${[...plaatsen].sort((x, y) => perPlaats(y).length - perPlaats(x).length || x.localeCompare(y, "nl")).slice(0, 15).map((p) =>
       `<a href="${plaatsPad(p)}"><b>${esc(p)}</b><span>${plural(perPlaats(p).length, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>`;
   }
 
@@ -1114,8 +1116,7 @@ ${zalen ? `
 
 <section class="block wrap kies-blok kleine-kop" aria-labelledby="plaats-title">
   <div class="wall-head"><h2 id="plaats-title">Zoek in de buurt</h2><p><a href="/plaatsen/">Alle plaatsen</a></p></div>
-  ${plaatsNav()}
-  <p class="buurt-knop-rij"><a class="btn buurt-knop" href="/in-de-buurt/?locatie=1">${ICON.pin}Gebruik mijn locatie</a></p>
+  ${plaatsNav({ buurt: true })}
 </section>
 ${netBinnenBlok()}
 ${clubs.length ? `
