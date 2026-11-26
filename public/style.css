@@ -1545,7 +1545,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   .buurt-afstand-label { padding: 0 10px 0 14px; font-size: .92rem; }
   .buurt-kop .buurt-straal button { padding: 0 10px; font-size: .92rem; }
 }
-@media (max-width: 359px) {
+@media (max-width: 374px) {
   .buurt-kop .buurt-straal .km { display: none; }
   .buurt-afstand-label .km-label { display: inline; }
 }
@@ -1566,6 +1566,14 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .buurt-filters .keuze-lijst { width: max-content; min-width: max(100%, 260px); max-width: calc(100vw - 32px); }
 .buurt-filters .buurt-status { margin: 0 0 0 auto; min-height: 0; }
 @media (max-width: 760px) { .buurt-filters .buurt-status { flex-basis: 100%; margin: 6px 0 0; } }
+/* Op de telefoon Genre en Maand naast elkaar, elk de helft (verzoek van de eigenaar, november 2026); Uitverkocht verbergen eronder. */
+@media (max-width: 560px) {
+  .buurt-filters .field:is(:has(#f-genre), .maand-veld) { flex: 1 1 0; min-width: 0; }
+  .buurt-filters .field:has(#f-genre) .keuze, .buurt-filters .maand-veld select { width: 100%; }
+  .buurt-filters .keuze summary { padding-right: 30px; padding-left: 14px; gap: 6px; }
+  .buurt-filters .maand-veld select { padding: 0 30px 0 14px; text-overflow: ellipsis; }
+  .buurt-filters .toggle-veld { flex-basis: 100%; }
+}
 /* Kruimelpad in het gekleurde vlak (/in-de-buurt/), in de kleur van de inkt van het vlak. */
 .buurt-kop { padding-top: 6px; }
 .buurt-kop .kruimelpad ol { padding-block: 8px 10px; }
@@ -1633,3 +1641,5 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .artiest-kop .zaal-feiten li > span { font-style: normal; }
 .zaal-lijst > .speellijst-kop { margin-top: 10px; }
 .zaal-lijst > .speellijst-kop + .filters { margin-top: 12px; }
+/* Met de afstand erbij past de zaalnaam op een smal scherm niet naast het speldje: dan de naam eronder laten lopen. */
+.gig .venue a:has(.buurt-afstand) { flex-wrap: wrap; max-width: 100%; row-gap: 2px; }
