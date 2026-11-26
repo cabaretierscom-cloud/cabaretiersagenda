@@ -441,6 +441,7 @@
     const meer = buurt.querySelector(".laad-meer"), meerKnop = buurt.querySelector(".buurt-meer");
     const invoer = buurt.querySelector(".buurt-plaats input"), locKnop = buurt.querySelector(".buurt-locatie");
     const uitverkocht = buurt.querySelector(".buurt-uitverkocht");
+    const maandVeld = buurt.querySelector(".buurt-maand");
     const params = new URLSearchParams(location.search);
     // Genre zoals op /agenda/: zonder vinkjes alles behalve kindervoorstellingen; de aantallen tellen binnen de afstand.
     const genre = genreKeuze(() => zoek());
@@ -448,6 +449,9 @@
     const genreVakjes = [...buurt.querySelectorAll('#f-genre input[type="checkbox"]')];
     const gekozenGenres = () => genreVakjes.filter((v) => v.checked).map((v) => v.value);
     if (params.get("uitverkocht") === "1") uitverkocht.checked = true;
+    // Maand (verzoek van de eigenaar, november 2026): alleen voorstellingen in die maand, in het adres als ?maand=2026-12.
+    if (maandVeld && [...maandVeld.options].some((o) => o.value && o.value === params.get("maand"))) maandVeld.value = params.get("maand");
+    const maandNaamVan = () => (maandVeld?.value ? maandVeld.selectedOptions[0].textContent : "");
     const AFSTANDEN = [10, 25, 50, 100];
     // 75 km bestond even (november 2026); een oude link met km=75 opent op 100 km.
     const kmUitAdres = +params.get("km") === 75 ? 100 : +params.get("km");
@@ -468,6 +472,7 @@
       if (naam && naam !== "jouw locatie") p.set("plaats", adresWaarde || naam);
       if (km !== 25) p.set("km", km);
       if (gekozenGenres().length) p.set("genre", gekozenGenres().join(","));
+      if (maandVeld?.value) p.set("maand", maandVeld.value);
       if (uitverkocht.checked) p.set("uitverkocht", "1");
       history.replaceState(null, "", p.toString() ? `?${adres(p)}` : location.pathname);
     };
@@ -497,6 +502,7 @@
       const dichtbij = data.rijen
         .filter((g) => g.datum >= today && g.z.length > 6 && g.status !== "geannuleerd")
         .filter((g) => !uitverkocht.checked || g.status !== "uitverkocht")
+        .filter((g) => !maandVeld?.value || g.datum.startsWith(maandVeld.value))
         .map((g) => ({ g, km: afstand(punt, [g.z[5], g.z[6]]) }))
         .filter((x) => x.km <= km);
       lijst = dichtbij.filter((x) => inGenre(x.g));
@@ -506,8 +512,8 @@
       lijstEl.innerHTML = ""; getoond = 0;
       const n = lijst.length;
       status.textContent = n
-        ? `${n} ${n === 1 ? "voorstelling" : "voorstellingen"} binnen ${km} km van ${naam}.`
-        : `Geen voorstellingen binnen ${km} km van ${naam}.${km < 100 ? " Kies een grotere afstand." : ""}`;
+        ? `${n} ${n === 1 ? "voorstelling" : "voorstellingen"} binnen ${km} km van ${naam}${maandNaamVan() ? ` in ${maandNaamVan()}` : ""}.`
+        : `Geen voorstellingen binnen ${km} km van ${naam}${maandNaamVan() ? ` in ${maandNaamVan()}` : ""}.${maandNaamVan() ? " Kies een andere maand of een grotere afstand." : km < 100 ? " Kies een grotere afstand." : ""}`;
       // Een postcode van vier cijfers bestaat in Nederland én België: we nemen Nederland en bieden België aan.
       if (alternatief) {
         const b = document.createElement("button");
@@ -555,6 +561,7 @@
     invoer.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); kiesPlaats(invoer.value); } });
     buurt.querySelector(".buurt-straal").addEventListener("click", (e) => { const b = e.target.closest("button[data-km]"); if (b) { km = +b.dataset.km; zetKnoppen(); zoek(); } });
     uitverkocht.addEventListener("change", zoek);
+    maandVeld?.addEventListener("change", zoek);
     meerKnop.addEventListener("click", () => toonTot(getoond + PORTIE));
     zetKnoppen();
     status.textContent = "Kies een plaats of gebruik je locatie.";

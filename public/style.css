@@ -1559,6 +1559,10 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .buurt-filters .toggle input { width: 18px; height: 18px; }
 .buurt-filters .keuze summary .keuze-n { padding: 1px 8px; font-size: .75rem; }
 .buurt-filters :is(.keuze summary, .toggle):hover { box-shadow: inset 0 0 0 1px var(--ink); }
+/* Maand als rond knopje naast Genre (verzoek van de eigenaar, november 2026); het label alleen voor schermlezers. */
+.buurt-filters .maand-veld > label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.buurt-filters .maand-veld select { min-height: 42px; width: auto; border-width: 1.5px; border-radius: 999px; padding: 0 38px 0 16px; font-weight: 600; }
+.buurt-filters .maand-veld select:hover { box-shadow: inset 0 0 0 1px var(--ink); }
 .buurt-filters .keuze-lijst { width: max-content; min-width: max(100%, 260px); max-width: calc(100vw - 32px); }
 .buurt-filters .buurt-status { margin: 0 0 0 auto; min-height: 0; }
 @media (max-width: 760px) { .buurt-filters .buurt-status { flex-basis: 100%; margin: 6px 0 0; } }

@@ -857,6 +857,10 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
 <section class="block wrap buurt-lijst-blok" aria-label="Voorstellingen in de buurt">
   <div class="buurt-js buurt-filters" hidden>
     ${genreVeld(up)}
+    <div class="field maand-veld">
+      <label for="f-maand">Maand</label>
+      <select id="f-maand" class="buurt-maand"><option value="">Alle maanden</option>${[...new Set(up.map((g) => g.datum.slice(0, 7)))].sort().map((m) => `<option value="${m}">${maandNaam(m)}</option>`).join("")}</select>
+    </div>
     <div class="field toggle-veld"><label class="toggle"><input type="checkbox" class="buurt-uitverkocht"> Uitverkocht verbergen</label></div>
     <p class="buurt-status" role="status" aria-live="polite"></p>
   </div>
