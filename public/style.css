@@ -1394,7 +1394,8 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* Afstand als uitklapvak zoals Genre (agenda.js maakt het van het select): speldje vooraan, rondjes in de lijst. */
 .keuze-afstand { min-width: 0; }
 .keuze-afstand summary svg { flex: none; width: 18px; height: 18px; margin-left: -1px; }
-.field .keuze-afstand .keuze-lijst label { white-space: nowrap; }
+.field :is(.keuze-afstand, .keuze-maand) .keuze-lijst label { white-space: nowrap; }
+.keuze-maand { min-width: 0; }
 @media (max-width: 560px) { .filters .afstand-veld { flex-basis: 100%; } }
 
 /* Fotootje (of lettervak) vooraan in de agendarij: gigFoto() in src/templates.mjs en fotoVak() in agenda.js. */
@@ -1479,7 +1480,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .agenda-kop .block-head h1 { font-size: clamp(2.6rem, 7vw, 4.2rem); color: var(--kop-inkt); }
 .agenda-kop .block-head p { color: var(--kop-inkt); }
 .agenda-kop .filters { background: none; padding: 0; border-radius: 0; margin-top: 16px; gap: 8px; align-items: center; }
-.agenda-kop .filters :is(label[for="f-q"], .label, #f-km-label) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.agenda-kop .filters :is(label[for="f-q"], .label, #f-km-label, #f-maand-label) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .agenda-kop .filters .field { flex: 0 0 auto; display: block; }
 .agenda-kop .filters .search { flex: 1 1 100%; position: relative; }
 .agenda-kop .filters .search input { padding-left: 48px; min-height: 52px; }
@@ -1559,17 +1560,14 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .buurt-filters :is(.keuze summary, .toggle):hover { box-shadow: inset 0 0 0 1px var(--ink); }
 /* Maand als rond knopje naast Genre (verzoek van de eigenaar, november 2026); het label alleen voor schermlezers. */
 .buurt-filters .maand-veld > label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.buurt-filters .maand-veld select { min-height: 42px; width: auto; border-width: 1.5px; border-radius: 999px; padding: 0 38px 0 16px; font-weight: 600; }
-.buurt-filters .maand-veld select:hover { box-shadow: inset 0 0 0 1px var(--ink); }
 .buurt-filters .keuze-lijst { width: max-content; min-width: max(100%, 260px); max-width: calc(100vw - 32px); }
 .buurt-filters .buurt-status { margin: 0 0 0 auto; min-height: 0; }
 @media (max-width: 760px) { .buurt-filters .buurt-status { flex-basis: 100%; margin: 6px 0 0; } }
 /* Op de telefoon Genre en Maand naast elkaar, elk de helft (verzoek van de eigenaar, november 2026); Uitverkocht verbergen eronder. */
 @media (max-width: 560px) {
   .buurt-filters .field:is(:has(#f-genre), .maand-veld) { flex: 1 1 0; min-width: 0; }
-  .buurt-filters .field:has(#f-genre) .keuze, .buurt-filters .maand-veld select { width: 100%; }
+  .buurt-filters .field:has(#f-genre) .keuze, .buurt-filters .maand-veld .keuze { width: 100%; }
   .buurt-filters .keuze summary { padding-right: 30px; padding-left: 14px; gap: 6px; }
-  .buurt-filters .maand-veld select { padding: 0 30px 0 14px; text-overflow: ellipsis; }
   .buurt-filters .toggle-veld { flex-basis: 100%; }
 }
 /* Kruimelpad in het gekleurde vlak (/in-de-buurt/), in de kleur van de inkt van het vlak. */
@@ -1606,7 +1604,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .zaal-kop .theater-foto { width: clamp(240px, 36vw, 480px); }
 .zaal-lijst { padding-top: 18px; }
 .zaal-lijst .filters { background: none; padding: 0; border-radius: 0; gap: 8px; align-items: center; }
-.zaal-lijst .filters :is(label[for="f-q"], label[for="f-maand"], .label, #f-km-label, .afstand-veld > label) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.zaal-lijst .filters :is(label[for="f-q"], label[for="f-maand"], #f-maand-label, .label, #f-km-label, .afstand-veld > label) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .zaal-lijst .filters .field { flex: 0 0 auto; display: block; }
 .zaal-lijst .filters .search { flex: 1 1 320px; max-width: 560px; position: relative; }
 .zaal-lijst .filters .search input { padding-left: 48px; min-height: 52px; }
@@ -1641,3 +1639,6 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .zaal-lijst > .speellijst-kop + .filters { margin-top: 12px; }
 /* Met de afstand erbij past de zaalnaam op een smal scherm niet naast het speldje: dan de naam eronder laten lopen. */
 .gig .venue a:has(.buurt-afstand) { flex-wrap: wrap; max-width: 100%; row-gap: 2px; }
+/* Maand als uitklapvak (keuzeVanSelect() in agenda.js): veel maanden, dus de lijst scrolt. */
+.keuze-maand .keuze-lijst { max-height: min(60vh, 440px); overflow-y: auto; }
+@media (max-width: 560px) { .buurt-filters .keuze-maand .keuze-lijst { left: auto; right: 0; width: max-content; min-width: 100%; } }
