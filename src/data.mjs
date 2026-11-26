@@ -173,6 +173,7 @@ export function loadData(dir, { today }) {
     if (a.land != null && !LANDEN[a.land]) errors.push(`artiest ${a.id}: onbekend land "${a.land}"`);
     if (!KLEUREN[a.kleur]) errors.push(`artiest ${a.id}: onbekende kleur "${a.kleur}"`);
     if (a.vorm != null && !VORMEN.includes(a.vorm)) errors.push(`artiest ${a.id}: onbekende vorm "${a.vorm}"`);
+    if (a.geenArtiest != null && a.geenArtiest !== true) errors.push(`artiest ${a.id}: geenArtiest is alleen true`);
     for (const g of a.ookIn || []) if (!A.has(g) || g === a.id) errors.push(`artiest ${a.id}: ookIn "${g}" is geen andere bekende artiest`);
     if (a.geslacht != null && !GESLACHTEN.includes(a.geslacht)) errors.push(`artiest ${a.id}: onbekend geslacht "${a.geslacht}"`);
     if (a.geslacht != null && !a.geslachtBron) errors.push(`artiest ${a.id}: geslacht zonder geslachtBron`);
