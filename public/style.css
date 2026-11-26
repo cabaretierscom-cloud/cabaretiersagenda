@@ -937,7 +937,7 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .az-sorteer button:focus-visible { outline: 3px solid var(--ink); outline-offset: -4px; }
 .letters { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; }
 /* Meest bekeken: één lijst zonder letterkop, met de stippellijn erboven. */
-.az-populair ul { padding-top: 18px; border-top: 3px dotted var(--ink); }
+.az-group.az-populair ul { padding-top: 18px; border-top: 3px dotted var(--ink); }
 .letters a {
   display: grid; place-items: center; width: 40px; height: 40px; border-radius: 999px; box-shadow: inset 0 0 0 1.5px var(--ink);
   font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; text-decoration: none; color: var(--ink);
@@ -1642,3 +1642,19 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* Maand als uitklapvak (keuzeVanSelect() in agenda.js): veel maanden, dus de lijst scrolt. */
 .keuze-maand .keuze-lijst { max-height: min(60vh, 440px); overflow-y: auto; }
 @media (max-width: 560px) { .buurt-filters .keuze-maand .keuze-lijst { left: auto; right: 0; width: max-content; min-width: 100%; } }
+/* /theaters/ als affichewand (zalenAz() in src/templates.mjs): liggende foto's, zonder foto de naam groot in het kleurvlak. */
+.az-zalen .az-group ul { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.az-zalen .az-foto { aspect-ratio: 4 / 3; }
+.az-zalen .az-foto.leeg { display: flex; align-items: flex-end; padding: 14px; }
+.az-zalen .az-letter { font-size: 1.7rem; line-height: .95; text-transform: uppercase; overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .az-zalen .az-group ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .az-zalen .az-letter { font-size: 1.2rem; }
+  .az-zalen .az-foto.leeg { padding: 10px; }
+}
+@media (max-width: 560px) {
+  .az-sorteer span { display: none; }
+  .az-sorteer button:first-of-type { border-left: 0; }
+  .az-sorteer button { padding: 0 12px; font-size: .9rem; }
+}
+@media (max-width: 389px) { .az-sorteer button { padding: 0 9px; font-size: .85rem; } }

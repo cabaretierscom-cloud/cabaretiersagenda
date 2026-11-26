@@ -86,20 +86,25 @@
       leeg.hidden = n > 0;
     });
 
-    // Sorteren: meest bekeken (standaard) of A-Z. Bij meest bekeken staan alle artiesten in één lijst in de volgorde
-    // van data-rang; bij A-Z gaan ze terug naar hun letter. De keuze staat in het adres (?sorteer=az).
+    // Sorteren (/artiesten/, /alle-cabaretiers/, /theaters/): elke knop behalve A-Z zet alle items in één lijst in de
+    // volgorde van data-rang-<soort> (bijv. data-rang-populair, data-rang-voorstellingen); A-Z zet ze terug onder hun
+    // letter. De eerste knop is de standaard; een andere keuze staat in het adres (?sorteer=az).
     const knoppen = document.querySelector(".az-sorteer");
     const az = document.getElementById("az");
     if (knoppen && az) {
       const groepen = [...az.querySelectorAll(".az-group")];
       const thuis = new Map(items.map((li) => [li, li.parentElement]));
+      const soorten = [...knoppen.querySelectorAll("button[data-sorteer]")].map((k) => k.dataset.sorteer);
+      const standaard = soorten[0];
+      const sleutel = (soort) => "rang" + soort.replace(/(^|-)(\w)/g, (m, x, c) => c.toUpperCase());
       const populair = document.createElement("section");
       populair.className = "az-group az-populair";
-      populair.innerHTML = '<h3 class="visually-hidden">Meest bekeken</h3><ul></ul>';
+      populair.innerHTML = '<h3 class="visually-hidden">Gesorteerd</h3><ul></ul>';
       az.prepend(populair);
       const zet = (soort, bewaar) => {
-        const top = soort === "populair";
-        if (top) populair.querySelector("ul").append(...[...items].sort((x, y) => x.dataset.rang - y.dataset.rang));
+        if (!soorten.includes(soort)) soort = standaard;
+        const top = soort !== "az";
+        if (top) populair.querySelector("ul").append(...[...items].sort((x, y) => x.dataset[sleutel(soort)] - y.dataset[sleutel(soort)]));
         else for (const li of items) thuis.get(li).append(li);
         groepen.forEach((g) => { g.hidden = top || !g.querySelector("li:not([hidden])"); });
         populair.hidden = !top || !populair.querySelector("li:not([hidden])");
@@ -107,7 +112,7 @@
         for (const k of knoppen.querySelectorAll("button")) k.setAttribute("aria-pressed", String(k.dataset.sorteer === soort));
         if (bewaar) {
           const u = new URL(location.href);
-          if (top) u.searchParams.delete("sorteer"); else u.searchParams.set("sorteer", "az");
+          if (soort === standaard) u.searchParams.delete("sorteer"); else u.searchParams.set("sorteer", soort);
           history.replaceState(null, "", u);
         }
       };
@@ -116,7 +121,7 @@
       // Een letter kiezen schakelt naar A-Z, anders is er niets om naartoe te springen.
       document.querySelectorAll(".letters a").forEach((a) => a.addEventListener("click", () => { if (az.classList.contains("op-populair")) zet("az", true); }));
       const naarLetter = /^#letter-/.test(location.hash);
-      zet(new URLSearchParams(location.search).get("sorteer") === "az" || naarLetter ? "az" : "populair", false);
+      zet(naarLetter ? "az" : new URLSearchParams(location.search).get("sorteer") || standaard, false);
       // Zoeken houdt rekening met de gekozen volgorde.
       zoekArtiest.addEventListener("input", () => {
         if (az.classList.contains("op-populair")) {
@@ -149,7 +154,6 @@
     });
   };
   zoekInLijst("f-plaatsnaam", "plaatsenlijst", "plaatsen-leeg");
-  zoekInLijst("f-theater", "theaterlijst", "theaters-leeg");
 
   // ---------- Video's ----------
   // Pas bij een klik de YouTube-speler laden (youtube-nocookie.com); daarvoor gaat er niets naar YouTube.

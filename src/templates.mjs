@@ -1487,9 +1487,51 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </div>
       <div class="az" id="az">${[...groepen].map(([l, items]) => `<section class="az-group" id="letter-${l === "#" ? "0" : l}">
         <h3>${l}</h3>
-        <ul>${items.map(({ a, list }) => `<li data-naam="${esc(a.naam.toLowerCase())}" data-rang="${rang.get(a.id)}"><a href="${artiestPad(a.id)}">${azFoto(a)}<span class="ac">${plural(list.length, "datum", "data")}</span><span class="an">${esc(a.naam)}</span><span class="ad">Vanaf ${fmt.dayMonth(list[0].datum)} in ${esc(T.get(list[0].theater).plaats)}</span></a></li>`).join("")}</ul>
+        <ul>${items.map(({ a, list }) => `<li data-naam="${esc(a.naam.toLowerCase())}" data-rang-populair="${rang.get(a.id)}"><a href="${artiestPad(a.id)}">${azFoto(a)}<span class="ac">${plural(list.length, "datum", "data")}</span><span class="an">${esc(a.naam)}</span><span class="ad">Vanaf ${fmt.dayMonth(list[0].datum)} in ${esc(T.get(list[0].theater).plaats)}</span></a></li>`).join("")}</ul>
       </section>`).join("")}</div>
       <p class="empty" id="az-leeg" hidden>Geen artiest gevonden met deze naam.</p>`;
+  }
+
+  // /theaters/ als affichewand zoals /artiesten/ (verzoek van de eigenaar, november 2026, optie A): liggende foto van de
+  // zaal of een vlak in de kleur van de zaal met de naam, het aantal voorstellingen als knopje, naam en plaats eronder.
+  // Sorteren: meeste voorstellingen (standaard), meest bekeken (paginaweergaven van de theaterpagina in de laatste
+  // 28 dagen) of A-Z; zonder JavaScript A-Z per letter. agenda.js (zoeken, sorteren) werkt zoals bij de artiesten.
+  const weergavenTheater = new Map();
+  for (const r of ga?.perioden?.[0]?.theaters || []) {
+    const id = String(r.pagePath || "").split("/")[2];
+    if (id) weergavenTheater.set(id, (weergavenTheater.get(id) || 0) + (Number(r.screenPageViews) || 0));
+  }
+  function zalenAz(zalen) {
+    const items = zalen.map((t) => ({ t, n: db.gigsForTheater(t.id).length }));
+    const letter = (n) => { const c = n.normalize("NFD")[0].toUpperCase(); return /[A-Z]/.test(c) ? c : "#"; };
+    const groepen = new Map();
+    for (const x of [...items].sort((x, y) => x.t.naam.localeCompare(y.t.naam, "nl", { sensitivity: "base" }))) {
+      const l = letter(x.t.naam);
+      if (!groepen.has(l)) groepen.set(l, []);
+      groepen.get(l).push(x);
+    }
+    const rangVan = (vgl) => new Map([...items].sort((x, y) => vgl(x, y) || x.t.naam.localeCompare(y.t.naam, "nl")).map((x, i) => [x.t.id, i]));
+    const opAantal = rangVan((x, y) => y.n - x.n);
+    const opBekeken = rangVan((x, y) => (weergavenTheater.get(y.t.id) || 0) - (weergavenTheater.get(x.t.id) || 0) || y.n - x.n);
+    const foto = (t) => {
+      const f = t.foto?.bestand ? t.foto : null;
+      return `<span class="az-foto${f ? "" : " leeg"}" style="${ink(zaalKleur(t))}" aria-hidden="true">${f
+        ? `<img src="${esc(f.bestand)}" alt=""${uitsnede(f, 4 / 3)} loading="lazy" decoding="async" width="${f.breedte || 800}" height="${f.hoogte || 600}">`
+        : `<span class="az-letter">${esc(t.naam)}</span>`}</span>`;
+    };
+    return `<div class="az-tools">
+        <div class="field search">
+          <label for="f-artiest">Zoek een theater of plaats</label>
+          <input id="f-artiest" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Carré of Utrecht">
+        </div>
+        <div class="az-sorteer" role="group" aria-label="Sorteren" hidden><span>Sorteer</span><button type="button" data-sorteer="voorstellingen" aria-pressed="true">Meeste voorstellingen</button><button type="button" data-sorteer="populair" aria-pressed="false">Meest bekeken</button><button type="button" data-sorteer="az" aria-pressed="false">A-Z</button></div>
+        <nav class="letters" aria-label="Spring naar letter">${[...groepen.keys()].map((l) => `<a href="#letter-${l === "#" ? "0" : l}">${l}</a>`).join("")}</nav>
+      </div>
+      <div class="az az-zalen" id="az">${[...groepen].map(([l, lijst]) => `<section class="az-group" id="letter-${l === "#" ? "0" : l}">
+        <h3>${l}</h3>
+        <ul>${lijst.map(({ t, n }) => `<li data-naam="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}" data-rang-voorstellingen="${opAantal.get(t.id)}" data-rang-populair="${opBekeken.get(t.id)}"><a href="/theaters/${t.id}/">${foto(t)}<span class="ac">${plural(n, "voorstelling", "voorstellingen")}</span><span class="an">${esc(t.naam)}</span><span class="ad">${esc(t.plaats)}${t.soort !== "theater" ? ` · ${esc(t.soort)}` : ""}</span></a></li>`).join("")}</ul>
+      </section>`).join("")}</div>
+      <p class="empty" id="az-leeg" hidden>Geen theater of plaats gevonden met deze naam.</p>`;
   }
 
   function artistIndex() {
@@ -2836,26 +2878,14 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   function theaterIndex() {
     const overzicht = theatersOverzicht();
-    const kolommen = Object.keys(LANDEN).map((land) => {
-      const steden = [...new Set(zalenMetData.filter((t) => t.land === land).map((t) => t.plaats))].sort((a, b) => a.localeCompare(b, "nl"));
-      if (!steden.length) return "";
-      return `<div><h2>${LANDEN[land]}</h2>${steden.map((p) => `<div class="stad"><h3 class="city-head"><a href="${plaatsPad(p)}">${esc(p)}</a></h3><ul class="venue-list">${zalenMetData.filter((t) => t.plaats === p).sort((a, b) => a.naam.localeCompare(b.naam, "nl")).map((t) => {
-        const n = db.gigsForTheater(t.id).length;
-        return `<li data-zoek="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}"><a href="/theaters/${t.id}/"><span><span class="vn">${esc(t.naam)}</span>${t.soort !== "theater" ? `<span class="vc">${esc(t.soort)}</span>` : ""}</span><span class="vk">${plural(n, "voorstelling", "voorstellingen")}</span></a></li>`;
-      }).join("")}</ul></div>`).join("")}</div>`;
-    }).join("");
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Theaters</h1><p>${tellers.zalen} zalen, comedyclubs en podia met aankomende voorstellingen.</p></div>
       <nav class="month-nav stad-nav" aria-label="Theaters met de meeste voorstellingen">${BUURT_TEGEL}${zalenMetData.map((t) => [t, db.gigsForTheater(t.id).length]).sort((x, y) => y[1] - x[1] || x[0].naam.localeCompare(y[0].naam, "nl")).slice(0, 15).map(([t, n]) =>
         `<a href="/theaters/${t.id}/"><b>${esc(t.naam)}</b><span>${esc(t.plaats)} · ${plural(n, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>
-      <div class="az-tools">
-        <div class="field search">
-          <label for="f-theater">Zoek een theater of plaats</label>
-          <input id="f-theater" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Carré of Utrecht">
-        </div>
-      </div>
-      <div class="venues" id="theaterlijst">${kolommen}</div>
-      <p class="empty" id="theaters-leeg" hidden>Geen theater of plaats gevonden met deze naam.</p>
+      <section class="az-blok" aria-labelledby="az-titel">
+      <h2 class="sub-head" id="az-titel">Alle theaters</h2>
+      ${zalenAz(zalenMetData)}
+      </section>
       <section class="seo-tekst prose" aria-labelledby="over-titel">
         <h2 id="over-titel">Theaters met cabaret en comedy</h2>
         ${overzicht.tekst.join("\n        ")}
