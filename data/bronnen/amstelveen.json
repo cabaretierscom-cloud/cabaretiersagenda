@@ -1,7 +1,7 @@
 {
   "bron": "amstelveen",
   "naam": "Schouwburg Amstelveen",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "schouwburg-amstelveen",
@@ -48,7 +48,7 @@
       "genre": "cabaret",
       "datum": "2027-01-09",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/andries-tunru/"
     },
@@ -113,7 +113,7 @@
       "genre": "cabaret",
       "datum": "2027-04-15",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/david-van-rosmalen/"
     },
@@ -207,19 +207,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/glodi-lugungu/"
-    },
-    {
-      "theater": "schouwburg-amstelveen",
-      "artiesten": [
-        "Stichting Sinterklaas Avonturen"
-      ],
-      "titel": "Het Grote Sinterklaasfeest (3+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-25",
-      "tijd": "15:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/het-grote-sinterklaasfeest-3/"
     },
     {
       "theater": "schouwburg-amstelveen",
@@ -347,7 +334,7 @@
       "genre": "cabaret",
       "datum": "2027-04-08",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://schouwburgamstelveen.nl/nl/delanding/agenda/seizoen-2026-2027/martijn-koning/"
     },

@@ -1,7 +1,7 @@
 {
   "bron": "stoep",
   "naam": "Theater de Stoep",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "theater-de-stoep",
@@ -398,19 +398,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterdestoep.nl/voorstelling/martijn-koning-2627"
-    },
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
-        "Christian van Eijkelenburg"
-      ],
-      "titel": "Small Talk",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://theaterdestoep.nl/voorstelling/christian-van-eijkelenburg-2627"
     },
     {
       "theater": "theater-de-stoep",

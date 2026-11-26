@@ -1,7 +1,7 @@
 {
   "bron": "beatvenues",
   "naam": "Stadsschouwburg Antwerpen en Capitole Gent",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "stadsschouwburg-antwerpen",
@@ -24,19 +24,6 @@
     {
       "theater": "stadsschouwburg-antwerpen",
       "artiesten": [
-        "Erhan Demirci"
-      ],
-      "titel": "Made in cité",
-      "genre": "stand-up",
-      "datum": "2027-06-11",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/erhan-demirci-3770b860"
-    },
-    {
-      "theater": "stadsschouwburg-antwerpen",
-      "artiesten": [
         "Alex Agnew"
       ],
       "titel": "No more heroes",
@@ -46,6 +33,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/alex-agnew-14a92a88"
+    },
+    {
+      "theater": "stadsschouwburg-antwerpen",
+      "artiesten": [
+        "Erhan Demirci"
+      ],
+      "titel": "Made in cité",
+      "genre": "stand-up",
+      "datum": "2027-06-11",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.stadsschouwburg-antwerpen.be/evenement/erhan-demirci-3770b860"
     },
     {
       "theater": "stadsschouwburg-antwerpen",
@@ -244,32 +244,6 @@
     {
       "theater": "capitole-gent",
       "artiesten": [
-        "Steven Mahieu"
-      ],
-      "titel": "Stabieler",
-      "genre": "stand-up",
-      "datum": "2027-02-12",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.capitole-gent.be/evenement/steven-mahieu-15201294"
-    },
-    {
-      "theater": "capitole-gent",
-      "artiesten": [
-        "Steven Mahieu"
-      ],
-      "titel": "Stabieler",
-      "genre": "stand-up",
-      "datum": "2027-04-29",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.capitole-gent.be/evenement/steven-mahieu-15201294"
-    },
-    {
-      "theater": "capitole-gent",
-      "artiesten": [
         "Alex Agnew"
       ],
       "titel": "No more heroes",
@@ -296,15 +270,28 @@
     {
       "theater": "capitole-gent",
       "artiesten": [
-        "Arnout Van den Bossche"
+        "Steven Mahieu"
       ],
-      "titel": "Coach",
+      "titel": "Stabieler",
       "genre": "stand-up",
-      "datum": "2026-11-25",
+      "datum": "2027-02-12",
       "tijd": "20:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.capitole-gent.be/evenement/arnout-van-den-bossche-3bd17010"
+      "bron": "https://www.capitole-gent.be/evenement/steven-mahieu-15201294"
+    },
+    {
+      "theater": "capitole-gent",
+      "artiesten": [
+        "Steven Mahieu"
+      ],
+      "titel": "Stabieler",
+      "genre": "stand-up",
+      "datum": "2027-04-29",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.capitole-gent.be/evenement/steven-mahieu-15201294"
     },
     {
       "theater": "capitole-gent",

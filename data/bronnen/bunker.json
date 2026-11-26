@@ -3,7 +3,7 @@
   "naam": "Agenda van Bunker Theaterzaken",
   "soort": "speellijst",
   "leidend": true,
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [],
   "speeldata": [
     {
@@ -1035,44 +1035,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Rijswijkse Schouwburg",
-        "plaats": "Rijswijk",
-        "land": "NL",
-        "website": "https://www.rijswijkseschouwburg.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-11-24",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.rijswijkseschouwburg.nl/voorstelling/lisa-ostermann-de-baas"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Atlas Theater",
-        "plaats": "Emmen",
-        "land": "NL",
-        "website": "https://www.atlastheater.nl"
-      },
-      "artiesten": [
-        "Lisa Ostermann"
-      ],
-      "titel": "De Baas",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.atlastheater.nl/voorstellingen/de-baas-lisa-ostermann-25-nov/?_gl=1*skrt98*_up*MQ..*_ga*MjAwOTUwNzM2My4xNzc5MDkzOTg2*_ga_7CX3X0QRRC*czE3NzkwOTM5ODUkbzEkZzEkdDE3NzkwOTQwMTQkajMxJGwwJGgw"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Chassé Theater",
         "plaats": "Breda",
         "land": "NL",
@@ -1748,63 +1710,6 @@
       ],
       "titel": "Kintsugi",
       "genre": "cabaret",
-      "datum": "2026-11-23",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://carre.nl/voorstelling/patrick-laureij-kintsugi"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Goudse Schouwburg",
-        "plaats": "Gouda",
-        "land": "NL",
-        "website": "https://goudseschouwburg.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-24",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://goudseschouwburg.nl/agenda/patrick-laureij-kintsugi-reprise-10025496/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Goudse Schouwburg",
-        "plaats": "Gouda",
-        "land": "NL",
-        "website": "https://goudseschouwburg.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://goudseschouwburg.nl/agenda/patrick-laureij-kintsugi-reprise-10025497/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Koninklijk Theater Carré",
-        "plaats": "Amsterdam",
-        "land": "NL",
-        "website": "https://carre.nl"
-      },
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
       "datum": "2026-11-30",
       "tijd": "20:00",
       "status": "uitverkocht",
@@ -2054,7 +1959,7 @@
       "genre": "cabaret",
       "datum": "2027-01-15",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.hnt.nl/nl/voorstellingen/wat-gebroken-is-blijft-zichtbaar-en-dat-is-precies-de-bedoeling-tzf5"
     },
@@ -2513,25 +2418,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.ahoy.nl/agenda/show/patrick-laureij-kintsugi-2027"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater De Lievekamp",
-        "plaats": "Oss",
-        "land": "NL",
-        "website": "https://www.lievekamp.nl"
-      },
-      "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-24",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.lievekamp.nl/programma/ruim-kasper-van-der-laan-24-nov-20-15/"
     },
     {
       "theater": {
@@ -3441,7 +3327,7 @@
       "genre": "cabaret",
       "datum": "2027-04-12",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.schouwburghengelo.nl/kasper-van-der-laan-ruim/12-04-2027-20-00"
     },
@@ -4524,7 +4410,7 @@
       "genre": "cabaret",
       "datum": "2027-05-26",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/lemming-9zsk"
     },
@@ -4740,25 +4626,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Lochemse Schouwburg",
-        "plaats": "Lochem",
-        "land": "NL",
-        "website": "https://www.schouwburglochem.nl"
-      },
-      "artiesten": [
-        "David Linszen"
-      ],
-      "titel": "Striptease Van De Dood",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburglochem.nl/voorstelling/david-linszen/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Amphion Cultuurbedrijf",
         "plaats": "Doetinchem",
         "land": "NL",
@@ -4904,7 +4771,7 @@
       "genre": "cabaret",
       "datum": "2026-12-15",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://meervaart.nl/agenda/david-linszen"
     },
@@ -7600,25 +7467,6 @@
       ],
       "titel": "Overprikkeld",
       "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.posttheater.nl/activiteit/11866/2026-11-25/martijn-koning"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Posttheater",
-        "plaats": "Arnhem",
-        "land": "NL",
-        "website": "https://www.posttheater.nl"
-      },
-      "artiesten": [
-        "Martijn Koning"
-      ],
-      "titel": "Overprikkeld",
-      "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:30",
       "status": "uitverkocht",
@@ -9661,6 +9509,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "De Weijer",
+        "plaats": "Boxmeer",
+        "land": "NL",
+        "website": "https://www.deweijer.nl"
+      },
+      "artiesten": [
+        "Lebbis"
+      ],
+      "titel": "Satan is moe",
+      "genre": "cabaret",
+      "datum": "2027-01-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.deweijer.nl/agenda/20-01-2027/lebbis-satan-is-moe"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "Schouwburg Concertzaal Tilburg",
         "plaats": "Tilburg",
         "land": "NL",
@@ -9673,7 +9540,7 @@
       "genre": "cabaret",
       "datum": "2027-01-21",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/lebbis-satan-is-moe"
     },
@@ -11181,25 +11048,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Kennemer Theater",
-        "plaats": "Beverwijk",
-        "land": "NL",
-        "website": "https://www.kennemertheater.nl"
-      },
-      "artiesten": [
-        "André Manuel"
-      ],
-      "titel": "De Eenzame Ziel",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kennemertheater.nl/programma/andre-manuel-s4jw"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Theater Walhalla",
         "plaats": "Rotterdam",
         "land": "NL",
@@ -11212,7 +11060,7 @@
       "genre": "cabaret",
       "datum": "2026-11-26",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterwalhalla.nl/voorstelling/andre-manuel-de-eenzame-ziel-try-out/"
     },

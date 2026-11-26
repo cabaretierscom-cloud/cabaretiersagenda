@@ -2,139 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "'t Kapittel",
-        "plaats": "Wervik",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Gunter Lamoot"
-      ],
-      "titel": "Protpourri",
-      "genre": "stand-up",
-      "datum": "2026-11-23",
-      "tijd": null,
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://webshopwervik.recreatex.be/Tickets/Detail?id=D6CF063B-393E-F111-9597-DC371DFF5D9D"
-    },
-    {
-      "theater": "de-kimpel-bilzen-hoeselt",
-      "artiesten": [
-        "Bregje Iding",
-        "Jeroen Dyck",
-        "Peter Kluppels",
-        "MC Jarno Boone"
-      ],
-      "titel": "Humo's Comedy Cup Finalistentour",
-      "genre": "stand-up",
-      "datum": "2026-11-24",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.cultuurhuisbilzenhoeselt.be/activiteiten/humos-comedy-cup-finalistentour"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Living",
-        "plaats": "Heist-op-den-Berg",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Gunter Lamoot"
-      ],
-      "titel": "Protpourri",
-      "genre": "stand-up",
-      "datum": "2026-11-24",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://stamineedeliving.ticketsforme.be/ticketdetailnewv2.aspx?ID=3471"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Zeepziederij",
-        "plaats": "Bree",
-        "land": "BE",
-        "website": "https://www.zeepziederij.be"
-      },
-      "artiesten": [
-        "Bas Birker"
-      ],
-      "titel": "twee procent",
-      "genre": "stand-up",
-      "datum": "2026-11-25",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.zeepziederij.be/nl/voorstelling/twee-procent"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Ververie",
-        "plaats": "Kuurne",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Dries Heyneman"
-      ],
-      "titel": "Stand-up",
-      "genre": "stand-up",
-      "datum": "2026-11-25",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.facebook.com/deververie/posts/na-een-zotte-rommelmarkt-gisteren-waarbij-onze-excuses-voor-de-soms-lange-wachtt/1680905050707232/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Capitole",
-        "plaats": "Gent",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Arnout Van den Bossche"
-      ],
-      "titel": "Coach",
-      "genre": "stand-up",
-      "datum": "2026-11-25",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/arnout-van-den-bosche/2026-11-25/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "CC De Balluchon",
-        "plaats": "Koekelare",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Steven Mahieu"
-      ],
-      "titel": "STABIELER",
-      "genre": "stand-up",
-      "datum": "2026-11-25",
-      "tijd": null,
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/steven-mahieu/2026-11-25/"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -372,7 +242,7 @@
       "genre": "stand-up",
       "datum": "2026-12-02",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://shop.stamhoofd.be/comedy-night-hans-cools"
     },
@@ -1339,6 +1209,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Spiegeltent Miroir",
+        "plaats": "Edegem",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Gunter Lamoot"
+      ],
+      "titel": "Protpourri",
+      "genre": "stand-up",
+      "datum": "2026-12-17",
+      "tijd": null,
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://gunter-lamoot-miroir.eventsquare.store/nl/sbgvls8xshnr/gmijddhjbmyf"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "GC 't Heilaar",
         "plaats": "Beerse",
         "land": "BE",
@@ -1411,6 +1300,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://deltacomedy.be/tickets"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Koninklijke Drukkerij EM. de Jongzaal",
+        "plaats": "Breda",
+        "land": "NL",
+        "website": "https://www.chasse.nl"
+      },
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Klaar met het jaar",
+      "genre": "cabaret",
+      "datum": "2026-12-18",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.chasse.nl/programma/klaar-met-het-jaar-s63p"
     },
     {
       "theater": {
@@ -1488,6 +1396,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "De Promenade Beach",
+        "plaats": "Middelkerke",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Gunter Lamoot"
+      ],
+      "titel": "Protpourri",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.facebook.com/groups/215497358653000/posts/3556923214510381/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "De Leest",
         "plaats": "Izegem",
         "land": "BE",
@@ -1522,6 +1449,25 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/hans-cools/2026-12-22/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Studio",
+        "plaats": "Antwerpen",
+        "land": "BE",
+        "website": "https://destudio.com"
+      },
+      "artiesten": [
+        "Gili"
+      ],
+      "titel": "Machtig!",
+      "genre": "cabaret",
+      "datum": "2026-12-22",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://destudio.com/nl/project/ho-ho-hocus-pocus-1"
     },
     {
       "theater": {
@@ -1564,6 +1510,25 @@
     {
       "theater": {
         "zoeken": true,
+        "naam": "Koninklijke Drukkerij EM. de Jongzaal",
+        "plaats": "Breda",
+        "land": "NL",
+        "website": "https://www.chasse.nl"
+      },
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Klaar met het jaar",
+      "genre": "cabaret",
+      "datum": "2026-12-26",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.chasse.nl/programma/klaar-met-het-jaar-s63p"
+    },
+    {
+      "theater": {
+        "zoeken": true,
         "naam": "De Leest",
         "plaats": "Izegem",
         "land": "BE",
@@ -1579,6 +1544,44 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/steven-mahieu/2026-12-29/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Koninklijke Drukkerij EM. de Jongzaal",
+        "plaats": "Breda",
+        "land": "NL",
+        "website": "https://www.chasse.nl"
+      },
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Klaar met het jaar",
+      "genre": "cabaret",
+      "datum": "2026-12-29",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.chasse.nl/programma/klaar-met-het-jaar-s63p"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Koninklijke Drukkerij EM. de Jongzaal",
+        "plaats": "Breda",
+        "land": "NL",
+        "website": "https://www.chasse.nl"
+      },
+      "artiesten": [
+        "Pieter Verelst"
+      ],
+      "titel": "Klaar met het jaar",
+      "genre": "cabaret",
+      "datum": "2026-12-30",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.chasse.nl/programma/klaar-met-het-jaar-s63p"
     },
     {
       "theater": {
@@ -1842,7 +1845,7 @@
       "genre": "cabaret",
       "datum": "2027-01-08",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.curieus-wuustwezel.be/evenement/gili/"
     },
@@ -2469,7 +2472,7 @@
       "genre": "stand-up",
       "datum": "2027-01-22",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/hans-cools/2027-01-22/"
     },
@@ -3058,7 +3061,7 @@
       "genre": "stand-up",
       "datum": "2027-02-04",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/arnout-van-den-bosche/2027-02-04/"
     },
@@ -3229,7 +3232,7 @@
       "genre": "stand-up",
       "datum": "2027-02-06",
       "tijd": null,
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/arnout-van-den-bosche/2027-02-06/"
     },
@@ -3574,6 +3577,25 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/hans-cools/2027-02-13/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Den Belgiek",
+        "plaats": "Geraardsbergen",
+        "land": "BE",
+        "website": "https://denbelgiek.be"
+      },
+      "artiesten": [
+        "Bert Gabriëls"
+      ],
+      "titel": "Stand-up",
+      "genre": "stand-up",
+      "datum": "2027-02-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://denbelgiek.be/NL/shop/alles/ws-/products/comedy-night-met-bert-gabriels-en-robbert-verreth-13-februari-2027"
     },
     {
       "theater": {
@@ -6134,6 +6156,25 @@
       ],
       "titel": "Voor Normale Mensen",
       "genre": "stand-up",
+      "datum": "2027-04-20",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/voor-normale-mensen-5cpc"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg",
+        "plaats": "Kortrijk",
+        "land": "BE",
+        "website": "https://www.schouwburgkortrijk.be"
+      },
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Voor Normale Mensen",
+      "genre": "stand-up",
       "datum": "2027-04-21",
       "tijd": null,
       "status": "gepland",
@@ -6823,6 +6864,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/gunter-lamoot/2027-05-07/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Kursaal",
+        "plaats": "Oostende",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Arnout Van den Bossche"
+      ],
+      "titel": "De Relatiefluisteraar",
+      "genre": "stand-up",
+      "datum": "2027-05-07",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedyshows.be/kalender/arnout-van-den-bosche/2027-05-07/"
     },
     {
       "theater": {
@@ -7887,6 +7947,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/pieter-verelst/2027-06-09/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg",
+        "plaats": "Kortrijk",
+        "land": "BE",
+        "website": "https://www.schouwburgkortrijk.be"
+      },
+      "artiesten": [
+        "Arnout Van den Bossche"
+      ],
+      "titel": "De Relatiefluisteraar",
+      "genre": "stand-up",
+      "datum": "2027-06-09",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/de-relatiefluisteraar-dqz4"
     },
     {
       "theater": {

@@ -1,7 +1,7 @@
 {
   "bron": "arenberg",
   "naam": "Arenberg",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "arenberg",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "arenberg",
-      "artiesten": [
-        "Gover Meit"
-      ],
-      "titel": "Larie",
-      "genre": "stand-up",
-      "datum": "2026-11-25",
-      "tijd": "21:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.arenberg.be/nl/programma/gover-meit/a0NP500000JyIC1MAN"
-    },
     {
       "theater": "arenberg",
       "artiesten": [
@@ -222,6 +209,19 @@
     {
       "theater": "arenberg",
       "artiesten": [
+        "Jawad Es Soufi"
+      ],
+      "titel": "Tnawies",
+      "genre": "stand-up",
+      "datum": "2027-01-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/jawad-es-soufi/a0NP500000Z8msvMAB"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
         "Michael van Peel"
       ],
       "titel": "Farce majeure",
@@ -272,6 +272,134 @@
     {
       "theater": "arenberg",
       "artiesten": [
+        "5 To Watch"
+      ],
+      "titel": "Laurien Vereecken (BE), Raoel Fatehmahomed (NL), Jens Deferm (BE), Khadija Sabriye (NL) & Maarten D’Haene (BE) + MC Yannick Joos (BE)",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/5-to-watch/a0NP500000Yow0PMAR"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [],
+      "titel": "Sami Abu Wardeh Hates You (uk/pal)",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/sami-abu-wardeh-hates-you-uk-pal/a0NP500000YsFT8MAN"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Onliner Extravaganza"
+      ],
+      "titel": "Riza Tisserand (NL), Bart Slim (NL), Nina Wolda (NL) & Frank Schafer (NL) + MC Howard Komproe (NL) & drummer Cyril Directie (NL)",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/onliner-extravaganza/a0NP500000YsMETMA3"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Comedy in Stereo"
+      ],
+      "titel": "Katie Pritchards (UK) & Huge Davies (UK) + MC Habib Siam (CAN)",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/comedy-in-stereo/a0NP500000YsmgnMAB"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "John Glanc"
+      ],
+      "titel": "Collections (AUS) + MC Soe",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "20:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/john-glanc/a0NP500000Yp1xlMAB"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Two Of A Kind"
+      ],
+      "titel": "Habib Siam (CAN) & Sharifa Butterfly (UK) + MC Katie Pritchards (UK)",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "20:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/two-of-a-kind/a0NP500000YsKcTMAV"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "The Lunatics"
+      ],
+      "titel": "Impro Comedy Team + MC Yannick Joos (BE)",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "20:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/the-lunatics/a0NP500000YsjPeMAJ"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "To Be (funny) Or Not To Be (funny)"
+      ],
+      "titel": "Maud Vanhauwaert (BE) & Johan Petit (BE) + MC Kelia Kaniki Masengo (BE)",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "20:45",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/to-be-funny-or-not-to-be-funny/a0NP500000YsMpZMAV"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Comedy Gala"
+      ],
+      "titel": "Slim (UK) & Janine Harouni (US) + MC Sharifa Butterfly (UK)",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/comedy-gala/a0NP500000Yp2FVMAZ"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "De Comedy Habibi's"
+      ],
+      "titel": "Latif (BE) & Erhan Demirci (BE) + MC Soe Nsuki (BE)",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/de-comedy-habibi-s/a0NP500000YsLNFMA3"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
         "Bas Birker"
       ],
       "titel": "Twee Procent",
@@ -294,6 +422,110 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.arenberg.be/nl/programma/dena/a0NP500000TgWVpMAN"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Philippe Geubels"
+      ],
+      "titel": "Taboe proefopname: Ouders van kinderen met een beperking",
+      "genre": "stand-up",
+      "datum": "2027-03-01",
+      "tijd": "21:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/philippe-geubels/a0NP500000YvaxdMAB"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Philippe Geubels"
+      ],
+      "titel": "Taboe: Mensen die worstelen met een eetstoornis",
+      "genre": "stand-up",
+      "datum": "2027-03-03",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/philippe-geubels/a0NP500000Yvjo1MAB"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Philippe Geubels"
+      ],
+      "titel": "Taboe: Jongeren met kanker",
+      "genre": "stand-up",
+      "datum": "2027-03-03",
+      "tijd": "21:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/philippe-geubels/a0NP500000YvjsrMAB"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Philippe Geubels"
+      ],
+      "titel": "Taboe: Mensen die stotteren",
+      "genre": "stand-up",
+      "datum": "2027-03-05",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/philippe-geubels/a0NP500000YvjuTMAR"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Philippe Geubels"
+      ],
+      "titel": "Taboe: Hulpverleners met een posttraumatische stressstoornis",
+      "genre": "stand-up",
+      "datum": "2027-03-05",
+      "tijd": "21:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/philippe-geubels/a0NP500000Yvk5lMAB"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Philippe Geubels"
+      ],
+      "titel": "Taboe: Verkeersslachtoffers",
+      "genre": "stand-up",
+      "datum": "2027-03-07",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/philippe-geubels/a0NP500000Yvk7NMAR"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Philippe Geubels"
+      ],
+      "titel": "Taboe: Mensen met een postnatale depressie",
+      "genre": "stand-up",
+      "datum": "2027-03-07",
+      "tijd": "18:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/philippe-geubels/a0NP500000YvkCDMAZ"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Philippe Geubels"
+      ],
+      "titel": "Taboe: Ouders van kinderen met een beperking",
+      "genre": "stand-up",
+      "datum": "2027-03-07",
+      "tijd": "21:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/philippe-geubels/a0NP500000YvkDpMAJ"
     },
     {
       "theater": "arenberg",
@@ -575,6 +807,13 @@
         "medium": "Het Parool",
         "sterren": null,
         "citaat": "Je kunt hier echt mensen zien waarvan we nog veel gaan horen, zoals comedian Said El Hassnaoui"
+      }
+    ],
+    "https://www.arenberg.be/nl/programma/jawad-es-soufi/a0NP500000Z8msvMAB": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Ontwapenend, ongefilterd en onmogelijk te negeren"
       }
     ],
     "https://www.arenberg.be/nl/programma/michael-van-peel/a0NP500000FHpYgMAL": [

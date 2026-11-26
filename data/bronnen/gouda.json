@@ -1,7 +1,7 @@
 {
   "bron": "gouda",
   "naam": "Goudse Schouwburg",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "goudse-schouwburg",
@@ -13,45 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "goudse-schouwburg",
-      "artiesten": [
-        "Wildebras"
-      ],
-      "titel": "Overleven in de jungle",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "13:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://goudseschouwburg.nl/agenda/wildebras-overleven-in-de-jungle-10025622/"
-    },
-    {
-      "theater": "goudse-schouwburg",
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-24",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://goudseschouwburg.nl/agenda/patrick-laureij-kintsugi-reprise-10025496/"
-    },
-    {
-      "theater": "goudse-schouwburg",
-      "artiesten": [
-        "Patrick Laureij"
-      ],
-      "titel": "Kintsugi",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://goudseschouwburg.nl/agenda/patrick-laureij-kintsugi-reprise-10025497/"
-    },
     {
       "theater": "goudse-schouwburg",
       "artiesten": [
@@ -856,17 +817,6 @@
     },
     {
       "theater": "goudse-schouwburg",
-      "artiesten": [],
-      "titel": "Comedy Night in Cinema Gouda",
-      "genre": "cabaret",
-      "datum": "2027-04-15",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://goudseschouwburg.nl/agenda/comedy-night-in-cinema-gouda-7/"
-    },
-    {
-      "theater": "goudse-schouwburg",
       "artiesten": [
         "Zij & Aron Elstak"
       ],
@@ -877,6 +827,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/zij-aron-elstak-match-10025268/"
+    },
+    {
+      "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Night in Cinema Gouda",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-night-in-cinema-gouda-7/"
     },
     {
       "theater": "goudse-schouwburg",

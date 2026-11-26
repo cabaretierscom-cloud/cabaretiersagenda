@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,73 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kargadoor",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://www.kargadoor.nl"
-      },
-      "artiesten": [],
-      "titel": "Comedytalenten Vandestreek",
-      "genre": "stand-up",
-      "datum": "2026-11-22",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/comedytalenten-vandestreek-utrecht-22-november/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Kartoffel",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": null
-      },
-      "artiesten": [],
-      "titel": "International Comedy Showcase",
-      "genre": "stand-up",
-      "datum": "2026-11-22",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/international-comedy-showcase-22-november-2026/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Comedy Talent Award - Voorronde 10",
-      "genre": "stand-up",
-      "datum": "2026-11-23",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/comedy-talent-award-voorronde-23-november/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Freedom is no joke - try out",
-      "genre": "stand-up",
-      "datum": "2026-11-24",
-      "tijd": "19:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://comedyhuis.nl/shows/freedom-is-no-joke-try-out-show-24-november/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Open Mic Comedyhuis Regulars",
-      "genre": "open-mic",
-      "datum": "2026-11-25",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/open-mic-comedyhuis-regulars-25-november-2026/"
-    },
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [
@@ -948,6 +881,95 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/english-talent-pool-27-december-2026/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Oneliner Extravaganza, oudejaars editie: 2026 In Oneliners.",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-28",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/maandagavondshow-feestdageneditie-28-december-2026/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "De Jongejaars",
+      "genre": "stand-up",
+      "datum": "2026-12-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/de-jongejaars-29-december-2026/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "TivoliVredenburg",
+        "plaats": "Utrecht",
+        "land": "NL",
+        "website": "https://www.tivolivredenburg.nl"
+      },
+      "artiesten": [],
+      "titel": "Comedy Cloud",
+      "genre": "stand-up",
+      "datum": "2026-12-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/comedycloud-kerstspecial-30-december-2026/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Open Mic Comedyhuis Regulars",
+      "genre": "open-mic",
+      "datum": "2026-12-30",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/open-mic-comedyhuis-regulars-30-december-2026/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Zaterdagavondshow",
+      "genre": "stand-up",
+      "datum": "2027-01-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/comedyhuis-zaterdagavondshow-2-januari-2027/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Kargadoor",
+        "plaats": "Utrecht",
+        "land": "NL",
+        "website": "https://www.kargadoor.nl"
+      },
+      "artiesten": [],
+      "titel": "All English Comedy Night",
+      "genre": "stand-up",
+      "datum": "2027-01-02",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/all-english-comedy-night-utrecht-2-january-2027/"
+    },
+    {
+      "theater": "comedyhuis-utrecht",
+      "artiesten": [],
+      "titel": "Eindshow wintercourse",
+      "genre": "stand-up",
+      "datum": "2027-01-03",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyhuis.nl/shows/eindshow-wintercourse-3-januari-2027/"
     }
   ],
   "recensies": {}

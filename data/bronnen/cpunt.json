@@ -1,7 +1,7 @@
 {
   "bron": "cpunt",
   "naam": "Cpunt",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "cpunt",
@@ -1560,19 +1560,6 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "Knoei (3+)"
-      ],
-      "titel": "Eva Mesman",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "14:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.cpunt.nl/agenda/knoei-3"
-    },
-    {
-      "theater": "cpunt",
-      "artiesten": [
         "Pieter Hulst, Willem Voogd e.a"
       ],
       "titel": "De Proefkeuken en de WC van tijd (8+)",
@@ -2036,37 +2023,11 @@
     {
       "theater": "cpunt",
       "artiesten": [
-        "Kids Crea Café: Sinterklaas (4+)"
-      ],
-      "titel": "Maak je eigen unieke piet!",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-25",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.cpunt.nl/agenda/kids-crea-cafe-sinterklaas-4"
-    },
-    {
-      "theater": "cpunt",
-      "artiesten": [
         "Zet je schoentje in de bieb!"
       ],
       "titel": "Sinterklaas komt met cadeautjes",
       "genre": "kindervoorstellingen",
       "datum": "2026-12-01",
-      "tijd": "09:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.cpunt.nl/agenda/zet-je-schoentje-in-de-bieb"
-    },
-    {
-      "theater": "cpunt",
-      "artiesten": [
-        "Zet je schoentje in de bieb!"
-      ],
-      "titel": "Sinterklaas komt met cadeautjes",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-25",
       "tijd": "09:00",
       "status": "gepland",
       "soort": null,
@@ -2186,6 +2147,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.cpunt.nl/agenda/winterwonderfeest-doornroosje-in-de-bieb-4"
+    },
+    {
+      "theater": "cpunt",
+      "artiesten": [
+        "Schaft"
+      ],
+      "titel": "Serveersuggestie",
+      "genre": "cabaret",
+      "datum": "2027-05-14",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.cpunt.nl/agenda/schaft"
     }
   ],
   "recensies": {}

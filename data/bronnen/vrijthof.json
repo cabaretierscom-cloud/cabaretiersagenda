@@ -1,7 +1,7 @@
 {
   "bron": "vrijthof",
   "naam": "Theater aan het Vrijthof",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "theater-aan-het-vrijthof",
@@ -21,45 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Ricky Koole"
-      ],
-      "titel": "Rare Leeftijd",
-      "genre": "cabaret",
-      "datum": "2026-12-02",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/rare-leeftijd-ricky-koole"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Dolf Jansen"
-      ],
-      "titel": "Schaamteloos (Oudejaars 2026)",
-      "genre": "cabaret",
-      "datum": "2026-12-01",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/schaamteloos-oudejaars-2026-dolf-jansen"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "David van Rosmalen"
-      ],
-      "titel": "Als ik jou was",
-      "genre": "cabaret",
-      "datum": "2027-01-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/als-ik-jou-was-david-van-rosmalen"
-    },
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
@@ -89,15 +50,28 @@
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
-        "Arjan Kleton"
+        "Ricky Koole"
       ],
-      "titel": "Ongewenst",
+      "titel": "Rare Leeftijd",
       "genre": "cabaret",
-      "datum": "2027-05-28",
+      "datum": "2026-12-02",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/ongewenst-arjan-kleton"
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/rare-leeftijd-ricky-koole"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Dolf Jansen"
+      ],
+      "titel": "Schaamteloos (Oudejaars 2026)",
+      "genre": "cabaret",
+      "datum": "2026-12-01",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/schaamteloos-oudejaars-2026-dolf-jansen"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -115,6 +89,19 @@
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
+        "Arjan Kleton"
+      ],
+      "titel": "Ongewenst",
+      "genre": "cabaret",
+      "datum": "2027-05-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/ongewenst-arjan-kleton"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
         "Alex Agnew"
       ],
       "titel": "No More Heroes",
@@ -124,6 +111,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/no-more-heroes-alex-agnew"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/als-ik-jou-was-david-van-rosmalen"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -504,16 +504,14 @@
     },
     {
       "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Veldeke Theater"
-      ],
-      "titel": "Aajdjaorscabberèt: Eve oonder us",
+      "artiesten": [],
+      "titel": "- Knock Out Comedy Crew",
       "genre": "cabaret",
-      "datum": "2026-12-27",
+      "datum": "2027-04-06",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/aajdjaorscabberet-eve-oonder-us-veldeke-theater"
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/knock-out-comedy-crew"
     }
   ],
   "recensies": {

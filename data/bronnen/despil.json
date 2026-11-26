@@ -1,7 +1,7 @@
 {
   "bron": "despil",
   "naam": "CC De Spil",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "de-spil",
@@ -20,7 +20,7 @@
       "genre": "stand-up",
       "datum": "2026-11-26",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.despil.be/agenda/tony-knollt-in-concert-f7sr"
     },
@@ -101,6 +101,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.despil.be/agenda/in-de-kerstvakantie-7lmq"
+    },
+    {
+      "theater": "de-spil",
+      "artiesten": [
+        "Stuutjes en cinema"
+      ],
+      "titel": "Dieren vieren kerst",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-21",
+      "tijd": "10:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.despil.be/agenda/stuutjes-en-cinema-tspx"
     },
     {
       "theater": "de-spil",
@@ -419,7 +432,7 @@
       "genre": "stand-up",
       "datum": "2027-06-03",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.despil.be/agenda/babel-y3vn"
     },

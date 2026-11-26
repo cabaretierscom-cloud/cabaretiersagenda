@@ -1,7 +1,7 @@
 {
   "bron": "parkvilla",
   "naam": "Parkvilla",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "parkvilla",
@@ -129,6 +129,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://parkvilla.nl/theater/dikkie-dik-dirk-scheele-zing-spring-miauw-2-342"
+    },
+    {
+      "theater": "parkvilla",
+      "artiesten": [
+        "Park LAB"
+      ],
+      "titel": "try-out avond met Theatergroep Conplot en Mattino",
+      "genre": "cabaret",
+      "datum": "2027-02-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://parkvilla.nl/theater/park-lab-try-out-avond-met-theatergroep-conplot-en-mattino-734"
     }
   ],
   "recensies": {

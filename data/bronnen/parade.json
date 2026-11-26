@@ -1,7 +1,7 @@
 {
   "bron": "parade",
   "naam": "Theater aan de Parade",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "theater-aan-de-parade",
@@ -25,19 +25,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraandeparade.nl/nl/programma/myrte-siebinga-gelukkig-maar"
-    },
-    {
-      "theater": "theater-aan-de-parade",
-      "artiesten": [
-        "Guido Weijers"
-      ],
-      "titel": "De Oudejaarsconference 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-11-24",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraandeparade.nl/nl/programma/guido-weijers-de-oudejaarsconference-2026"
     },
     {
       "theater": "theater-aan-de-parade",
@@ -443,20 +430,6 @@
     {
       "theater": "theater-aan-de-parade",
       "artiesten": [
-        "Davey Geernaert",
-        "Floris Molenaar"
-      ],
-      "titel": "Happen & Lachen",
-      "genre": "cabaret",
-      "datum": "2026-11-24",
-      "tijd": "18:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraandeparade.nl/nl/programma/happen-lachen-122727"
-    },
-    {
-      "theater": "theater-aan-de-parade",
-      "artiesten": [
         "Ramon Chatrer",
         "Rosalie Custers"
       ],
@@ -557,45 +530,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraandeparade.nl/nl/programma/papa-zonder-handleiding-xl-jorgen-rayman-emiel-van-der-logt-howard-komproe"
-    },
-    {
-      "theater": "theater-aan-de-parade",
-      "artiesten": [
-        "November Music: Mispoes (4+) - Holland Opera"
-      ],
-      "titel": "Voor de kids!",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "13:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraandeparade.nl/nl/programma/november-music-mispoes-hollandopera"
-    },
-    {
-      "theater": "theater-aan-de-parade",
-      "artiesten": [
-        "November Music: Sound Explorers (6+) - Modelo62"
-      ],
-      "titel": "Voor de kids!",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "11:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraandeparade.nl/nl/programma/november-music-soundexplorers-modelo62"
-    },
-    {
-      "theater": "theater-aan-de-parade",
-      "artiesten": [
-        "November Music Kids"
-      ],
-      "titel": "Kom spelen, ontdekken en knutselen",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "10:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraandeparade.nl/nl/programma/november-music-kids"
     },
     {
       "theater": "theater-aan-de-parade",

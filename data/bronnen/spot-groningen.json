@@ -1,7 +1,7 @@
 {
   "bron": "spot-groningen",
   "naam": "SPOT Groningen",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "de-oosterpoort",
@@ -56,45 +56,6 @@
     {
       "theater": "stadsschouwburg-groningen",
       "artiesten": [
-        "Bert Visscher en het Noordpool Strijkkwartet"
-      ],
-      "titel": "Bert Visscher, 65 Dat Zou Je Niet Zeggen",
-      "genre": "cabaret",
-      "datum": "2026-11-22",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.spotgroningen.nl/programma/bert-visscher-en-het-noordpool-strijkkwartet-2/"
-    },
-    {
-      "theater": "stadsschouwburg-groningen",
-      "artiesten": [
-        "Claudia de Breij"
-      ],
-      "titel": "Oudejaarsconference 2026",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.spotgroningen.nl/programma/claudia-de-breij-16/"
-    },
-    {
-      "theater": "de-oosterpoort",
-      "artiesten": [
-        "Myrte Siebinga"
-      ],
-      "titel": "GELUKKIG MAAR",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:15",
-      "status": "geannuleerd",
-      "soort": null,
-      "bron": "https://www.spotgroningen.nl/programma/myrte-siebinga/"
-    },
-    {
-      "theater": "stadsschouwburg-groningen",
-      "artiesten": [
         "Claudia de Breij"
       ],
       "titel": "Oudejaarsconference 2026",
@@ -140,7 +101,7 @@
       "genre": "cabaret",
       "datum": "2026-12-02",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.spotgroningen.nl/programma/luuk-weggemans/"
     },
@@ -166,7 +127,7 @@
       "genre": "cabaret",
       "datum": "2026-12-03",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.spotgroningen.nl/programma/luuk-weggemans-2/"
     },
@@ -361,7 +322,7 @@
       "genre": "cabaret",
       "datum": "2027-01-24",
       "tijd": "14:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/paulien-cornelisse-micha-wertheim-2/"
     },
@@ -413,7 +374,7 @@
       "genre": "stand-up",
       "datum": "2027-02-02",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.spotgroningen.nl/programma/alex-ploeg-8/"
     },
@@ -439,7 +400,7 @@
       "genre": "stand-up",
       "datum": "2027-02-03",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.spotgroningen.nl/programma/alex-ploeg-9/"
     },
@@ -465,7 +426,7 @@
       "genre": "stand-up",
       "datum": "2027-02-04",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.spotgroningen.nl/programma/alex-ploeg-10/"
     },
@@ -556,7 +517,7 @@
       "genre": "stand-up",
       "datum": "2027-02-17",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.spotgroningen.nl/programma/teun-van-den-elzen-6/"
     },
@@ -569,7 +530,7 @@
       "genre": "stand-up",
       "datum": "2027-02-18",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.spotgroningen.nl/programma/teun-van-den-elzen-7/"
     },

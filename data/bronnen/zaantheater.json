@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "zaantheater",
@@ -306,7 +306,7 @@
       "genre": "cabaret",
       "datum": "2027-01-13",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/esther-van-der-voort/"
     },
@@ -703,19 +703,6 @@
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Najib Amhali & Roue Verveer"
-      ],
-      "titel": "Alles is comedy",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/najib-amhali-roue-verveer/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
         "Nienke Plas"
       ],
       "titel": "Appeltje eitje",
@@ -838,32 +825,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pieter-jouke/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Pim & Pom (2+)"
-      ],
-      "titel": "Op naar pakjesavond",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "11:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pim-pom-2/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
-        "Pim & Pom (2+)"
-      ],
-      "titel": "Op naar pakjesavond",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "13:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/pim-pom-2/"
     },
     {
       "theater": "zaantheater",
@@ -1024,19 +985,6 @@
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Samar en de bange koning (8+)"
-      ],
-      "titel": "George Tobal Producties & De Krakeling",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/samar-en-de-bange-koning-8/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
         "Spruijt & Opperman"
       ],
       "titel": "Altijdloos",
@@ -1137,6 +1085,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/ntw-meneer-monster/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-10-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/esther-van-der-voort-reprise/"
+    },
+    {
+      "theater": "zaantheater",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-10-21",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/esther-van-der-voort-reprise/"
     }
   ],
   "recensies": {

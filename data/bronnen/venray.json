@@ -1,7 +1,7 @@
 {
   "bron": "venray",
   "naam": "Schouwburg Venray",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "schouwburg-venray",
@@ -61,7 +61,7 @@
       "genre": "cabaret",
       "datum": "2026-12-02",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburgvenray.nl/programma/14693/roel-c-verburg"
     },
@@ -191,7 +191,7 @@
       "genre": "cabaret",
       "datum": "2027-03-03",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://www.schouwburgvenray.nl/programma/14653/remy-evers-try-out"
     },
@@ -519,6 +519,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburgvenray.nl/programma/14714/spruijt-en-opperman"
+    },
+    {
+      "theater": "schouwburg-venray",
+      "artiesten": [
+        "Kor Hoebe"
+      ],
+      "titel": "Korrelatie",
+      "genre": "cabaret",
+      "datum": "2027-10-06",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.schouwburgvenray.nl/programma/15211/kor-hoebe"
     },
     {
       "theater": "schouwburg-venray",

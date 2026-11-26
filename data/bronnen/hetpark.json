@@ -1,7 +1,7 @@
 {
   "bron": "hetpark",
   "naam": "Schouwburg Het Park",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "schouwburg-het-park",
@@ -21,43 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "schouwburg-het-park",
-      "artiesten": [
-        "De waanzinnige boomhut van 78 verdiepingen"
-      ],
-      "titel": "Meneer Monster (6+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "14:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://hetpark.nl/agenda/meneer-monster-6-10355767/"
-    },
-    {
-      "theater": "schouwburg-het-park",
-      "artiesten": [],
-      "titel": "Finalistentournee Amsterdams Kleinkunst Festival",
-      "genre": "cabaret",
-      "datum": "2026-11-24",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://hetpark.nl/agenda/finalistentournee-amsterdams-kleinkunst-festival-10352973/"
-    },
-    {
-      "theater": "schouwburg-het-park",
-      "artiesten": [
-        "Controle"
-      ],
-      "titel": "155/Maas (12+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-25",
-      "tijd": "19:30",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://hetpark.nl/agenda/controle-10352974/"
-    },
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
@@ -126,7 +89,7 @@
     {
       "theater": "schouwburg-het-park",
       "artiesten": [
-        "Rayen & Friends"
+        "Rayen Panday & Friends"
       ],
       "titel": "Wonderful Christmas time",
       "genre": "cabaret",
@@ -134,7 +97,7 @@
       "tijd": "20:15",
       "status": "gepland",
       "soort": null,
-      "bron": "https://hetpark.nl/agenda/rayen-friends-10355783/"
+      "bron": "https://hetpark.nl/agenda/rayen-panday-friends-10355783/"
     },
     {
       "theater": "schouwburg-het-park",
@@ -167,7 +130,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-12-13",
       "tijd": "09:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/klassiek-voor-kleintjes-dreumesconcert-15-10359372/"
     },
@@ -217,7 +180,7 @@
       "genre": "cabaret",
       "datum": "2026-12-18",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://hetpark.nl/agenda/richard-groenendijk-10348361/"
     },

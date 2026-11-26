@@ -1,7 +1,7 @@
 {
   "bron": "parktheater",
   "naam": "Parktheater Eindhoven",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "parktheater-eindhoven",
@@ -13,58 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "HNTjong"
-      ],
-      "titel": "Dag Poes",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/dag-poes-xybx"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Theater Terra"
-      ],
-      "titel": "Pippi en de Piraten",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/pippi-en-de-piraten-sdyj"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Guido Weijers"
-      ],
-      "titel": "Oudejaarsconference 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-11-23",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/oudejaarsconference-2026-qpny"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Comedy Vibe"
-      ],
-      "titel": "Srefidensi dey",
-      "genre": "comedy",
-      "datum": "2026-11-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/srefidensi-dey-n3tc"
-    },
     {
       "theater": "parktheater-eindhoven",
       "artiesten": [
@@ -113,7 +61,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2026-11-29",
       "tijd": "15:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/kakek-opa-ik-j53l"
     },
@@ -304,9 +252,9 @@
       "genre": "comedy",
       "datum": "2026-12-10",
       "tijd": "20:30",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.parktheater.nl/programma/eindspel-try-out-41x8"
+      "status": "geannuleerd",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/eindspel-41x8"
     },
     {
       "theater": "parktheater-eindhoven",
@@ -447,7 +395,7 @@
       "genre": "comedy",
       "datum": "2027-05-28",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/comedy-cafe-qwhm"
     },
@@ -1533,6 +1481,32 @@
     {
       "theater": "parktheater-eindhoven",
       "artiesten": [
+        "Dirk Scheele"
+      ],
+      "titel": "Dikkie Dik & Dirk Scheele: Zing, spring, miauw!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "11:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/dikkie-dik-dirk-scheele-zing-spring-miauw-bgcx"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
+        "Dirk Scheele"
+      ],
+      "titel": "Dikkie Dik & Dirk Scheele: Zing, spring, miauw!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-28",
+      "tijd": "14:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.parktheater.nl/programma/dikkie-dik-dirk-scheele-zing-spring-miauw-bgcx"
+    },
+    {
+      "theater": "parktheater-eindhoven",
+      "artiesten": [
         "Trend media"
       ],
       "titel": "Mees Kees de husselrace",
@@ -1568,19 +1542,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/klein-klein-vogeltje-zcv9"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Dirk Scheele"
-      ],
-      "titel": "Dikkie Dik & Dirk Scheele: Zing, spring, miauw!",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-02-28",
-      "tijd": "14:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/dikkie-dik-dirk-scheele-zing-spring-miauw-bgcx"
     },
     {
       "theater": "parktheater-eindhoven",

@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -42,6 +42,32 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
+        "Cameretten"
+      ],
+      "titel": "Cameretten",
+      "genre": "cabaret",
+      "datum": "2027-05-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/cameretten/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Roué Verveer"
+      ],
+      "titel": "Roué Verveer",
+      "genre": "cabaret",
+      "datum": "2027-05-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
         "De musical zonder billen (4+)"
       ],
       "titel": "De musical zonder billen (4+)",
@@ -68,19 +94,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Cameretten"
-      ],
-      "titel": "Cameretten",
-      "genre": "cabaret",
-      "datum": "2027-05-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/cameretten/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Steven Brunswijk"
       ],
       "titel": "Steven Brunswijk",
@@ -90,19 +103,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/steven-brunswijk-2/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Roué Verveer"
-      ],
-      "titel": "Roué Verveer",
-      "genre": "cabaret",
-      "datum": "2027-05-29",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/roue-verveer-4/"
     },
     {
       "theater": "kunstlinie",
@@ -237,19 +237,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "De Grote Almeerse Kerst Sing-A-Long"
-      ],
-      "titel": "De Grote Almeerse Kerst Sing-A-Long",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-13",
-      "tijd": "15:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/de-grote-almeerse-kerst-sing-a-long/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Bro’s"
       ],
       "titel": "Bro’s",
@@ -259,6 +246,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/bros/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "De Grote Almeerse Kerst Sing-A-Long"
+      ],
+      "titel": "De Grote Almeerse Kerst Sing-A-Long",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-13",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/de-grote-almeerse-kerst-sing-a-long/"
     },
     {
       "theater": "kunstlinie",
@@ -311,19 +311,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/tim-kroezen/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
-        "Swan Lake (6-99 jaar)"
-      ],
-      "titel": "Swan Lake (6-99 jaar)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-02-21",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/swan-lake-6-99-jaar/"
     },
     {
       "theater": "kunstlinie",
@@ -796,19 +783,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Blijf op de hoogte"
-      ],
-      "titel": "Blijf op de hoogte",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "19:30",
-      "status": "geannuleerd",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/skengbattles-x-6/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Comedy Club Almere"
       ],
       "titel": "Comedy Club Almere",
@@ -939,19 +913,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "BRRRothers (6+)"
-      ],
-      "titel": "BRRRothers (6+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-02-07",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/brrrothers-6/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "WEG ERMEE (5 t/m 12 jaar)"
       ],
       "titel": "WEG ERMEE (5 t/m 12 jaar)",
@@ -987,6 +948,32 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/comedy-club-almere-16/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Swan Lake (6-99 jaar)"
+      ],
+      "titel": "Swan Lake (6-99 jaar)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-21",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/swan-lake-6-99-jaar/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "BRRRothers (6+)"
+      ],
+      "titel": "BRRRothers (6+)",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-07",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/brrrothers-6/"
     }
   ],
   "recensies": {
@@ -1012,23 +999,6 @@
         "medium": "NRC",
         "sterren": null,
         "citaat": "Een van Kroezens leuke talenten: snel hardop situaties overanalyseren. … blijkt een prima verteller, lekker beweeglijk en energiek en prettig intelligent."
-      }
-    ],
-    "https://kunstlinie.nl/programma/swan-lake-6-99-jaar/": [
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Deze Swan Lake is erg levendig. De kostuums zijn kleurrijk en feestelijk, de conventies van de klassieke ballettaal worden humoristisch ondermijnd en de bewegingen van de zwanen zijn intrigerend: eerder dierlijk grillig dan romantisch sierlijk."
-      },
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "Boksbewegingen en dierenmanieren: deze vrije versie van ‘Het Zwanenmeer’ zit vol vrolijke verrassingen."
-      },
-      {
-        "medium": "Theaterparadijs",
-        "sterren": null,
-        "citaat": "De nieuwe moderne versie van Swan Lake bij Introdans oogt jeugdig en fris."
       }
     ],
     "https://kunstlinie.nl/programma/pinokkio-7/": [
@@ -1198,6 +1168,23 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Piet van Eeghen maakt van eenzaamheid en ongemak opnieuw een mooie voorstelling…even grappig als ontroerend…[over de liedjes:] Ambachtelijk gemaakt, mooi en geraffineerd van taal en van muziek."
+      }
+    ],
+    "https://kunstlinie.nl/programma/swan-lake-6-99-jaar/": [
+      {
+        "medium": "Theaterkrant",
+        "sterren": null,
+        "citaat": "Deze Swan Lake is erg levendig. De kostuums zijn kleurrijk en feestelijk, de conventies van de klassieke ballettaal worden humoristisch ondermijnd en de bewegingen van de zwanen zijn intrigerend: eerder dierlijk grillig dan romantisch sierlijk."
+      },
+      {
+        "medium": "de Volkskrant",
+        "sterren": null,
+        "citaat": "Boksbewegingen en dierenmanieren: deze vrije versie van ‘Het Zwanenmeer’ zit vol vrolijke verrassingen."
+      },
+      {
+        "medium": "Theaterparadijs",
+        "sterren": null,
+        "citaat": "De nieuwe moderne versie van Swan Lake bij Introdans oogt jeugdig en fris."
       }
     ],
     "https://kunstlinie.nl/programma/brrrothers-6/": [

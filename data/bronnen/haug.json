@@ -1,7 +1,7 @@
 {
   "bron": "haug",
   "naam": "Comedy Club Haug",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "comedy-club-haug-rotterdam",
@@ -13,6 +13,67 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "NYE Stand Up Show & PARTY!",
+      "genre": "stand-up",
+      "datum": "2026-12-31",
+      "tijd": "21:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/nye-stand-up-show-party-111719342"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "David Cross"
+      ],
+      "titel": "David Cross",
+      "genre": "stand-up",
+      "datum": "2027-03-20",
+      "tijd": "18:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/david-cross-111724692"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Olga Koch"
+      ],
+      "titel": "Olga Koch",
+      "genre": "stand-up",
+      "datum": "2027-03-12",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/olga-koch-111723700"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [
+        "Adi Parmar"
+      ],
+      "titel": "Adi Parmar",
+      "genre": "stand-up",
+      "datum": "2027-02-25",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/adi-parmar-111722575"
+    },
+    {
+      "theater": "comedy-club-haug-rotterdam",
+      "artiesten": [],
+      "titel": "Best of Stand-Up",
+      "genre": "stand-up",
+      "datum": "2026-12-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111724687"
+    },
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
@@ -462,19 +523,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [
-        "Adi Parmar"
-      ],
-      "titel": "Adi Parmar",
-      "genre": "stand-up",
-      "datum": "2027-02-25",
-      "tijd": "19:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/adi-parmar-111722575"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
         "Rogier Bak"
       ],
       "titel": "Rogier Bak",
@@ -484,17 +532,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/rogier-bak-111721871"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
-      "titel": "Open Mic",
-      "genre": "open-mic",
-      "datum": "2026-11-25",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/open-mic-111719714"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -792,20 +829,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/open-mic-2000-111713336"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [
-        "Vincent Geers",
-        "Victor Luis van Es"
-      ],
-      "titel": "Vincent Geers & Victor Luis van Es",
-      "genre": "stand-up",
-      "datum": "2026-11-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyclubhaug.com/shows/victor-luis-van-es-vincent-geers-extra-show-13-november"
     },
     {
       "theater": "comedy-club-haug-rotterdam",
@@ -1170,17 +1193,6 @@
     {
       "theater": "comedy-club-haug-rotterdam",
       "artiesten": [],
-      "titel": "Club Haug regulars try-out",
-      "genre": "stand-up",
-      "datum": "2026-11-23",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://comedyclubhaug.com/shows/club-haug-regulars-try-out-111703649"
-    },
-    {
-      "theater": "comedy-club-haug-rotterdam",
-      "artiesten": [],
       "titel": "Best of Queer",
       "genre": "stand-up",
       "datum": "2027-06-17",
@@ -1284,7 +1296,7 @@
       "genre": "stand-up",
       "datum": "2026-11-28",
       "tijd": "21:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/best-of-stand-up-111701032"
     },
@@ -1443,7 +1455,7 @@
       "genre": "stand-up",
       "datum": "2026-11-27",
       "tijd": "19:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://comedyclubhaug.com/shows/alina-sharipova-jorn-van-dam-111648328"
     },

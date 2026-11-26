@@ -2,27 +2,9 @@
   "bron": "bos",
   "naam": "Bos Theaterproducties",
   "soort": "speellijst",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater De Bussel",
-        "plaats": "Oosterhout",
-        "land": "NL"
-      },
-      "artiesten": [
-        "Joep van Deudekom & Rob Urgert"
-      ],
-      "titel": "De Grote Oudejaars Kwis 2026",
-      "genre": "oudejaarsconference",
-      "datum": "2026-11-25",
-      "tijd": "20:30",
-      "status": "uitverkocht",
-      "soort": "try-out",
-      "bron": "https://www.theaterdebussel.nl/programma/rob-urgert-joep-van-deudekom-cljy"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -112,6 +94,24 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.denobelaer.nl/agenda/de-grote-oudejaars-kwis-2026-13617"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Posttheater",
+        "plaats": "Arnhem",
+        "land": "NL"
+      },
+      "artiesten": [
+        "Joep van Deudekom & Rob Urgert"
+      ],
+      "titel": "De Grote Oudejaars Kwis 2026",
+      "genre": "oudejaarsconference",
+      "datum": "2026-12-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "http://www.posttheater.nl"
     },
     {
       "theater": {
@@ -253,7 +253,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-18",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterdeveste.nl/programma/de-grote-oudejaars-kwis-2026-13q7"
     },

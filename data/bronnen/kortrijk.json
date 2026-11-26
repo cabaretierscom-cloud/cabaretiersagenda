@@ -1,7 +1,7 @@
 {
   "bron": "kortrijk",
   "naam": "Schouwburg Kortrijk",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "schouwburg-kortrijk",
@@ -725,6 +725,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.schouwburgkortrijk.be/nl/programma/nuff-said-frzg"
+    },
+    {
+      "theater": "schouwburg-kortrijk",
+      "artiesten": [
+        "Dries Heyneman"
+      ],
+      "titel": "Voor Normale Mensen",
+      "genre": "comedy",
+      "datum": "2027-04-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.schouwburgkortrijk.be/nl/programma/voor-normale-mensen-5cpc"
     },
     {
       "theater": "schouwburg-kortrijk",

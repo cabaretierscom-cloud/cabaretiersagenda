@@ -1,7 +1,7 @@
 {
   "bron": "leiden",
   "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "leidse-schouwburg",
@@ -293,17 +293,6 @@
     },
     {
       "theater": "cafe-caat-leiden",
-      "artiesten": [],
-      "titel": "Lachstof #2",
-      "genre": "stand-up",
-      "datum": "2026-11-25",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-comedy-lachstof-2-2/"
-    },
-    {
-      "theater": "cafe-caat-leiden",
       "artiesten": [
         "Jeroen Leenders"
       ],
@@ -327,19 +316,6 @@
       "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/kasper-van-der-laan-ruim-try-out/"
-    },
-    {
-      "theater": "leidse-schouwburg",
-      "artiesten": [
-        "Boban Braspenning"
-      ],
-      "titel": "Bruto",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/boban-braspenning-bruto/"
     },
     {
       "theater": "leidse-schouwburg",
@@ -376,7 +352,7 @@
       "genre": "cabaret",
       "datum": "2027-02-10",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/rundfunk-wagyu-try-out/"
     },
@@ -392,19 +368,6 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/rundfunk-wagyu-try-out/"
-    },
-    {
-      "theater": "leidse-schouwburg",
-      "artiesten": [
-        "Theater Sonnevanck"
-      ],
-      "titel": "Supermens gezocht (6+)",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-22",
-      "tijd": "14:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/supermens-gezocht-6-theater-sonnevanck/"
     },
     {
       "theater": "leidse-schouwburg",
@@ -738,7 +701,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-01-23",
       "tijd": "16:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/dikkie-dik-dirk-scheele-2-peuter-kleuter-pret-2/"
     },
@@ -879,7 +842,7 @@
       "genre": "cabaret",
       "datum": "2027-04-02",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/merijn-scholten-lemming-reprise/"
     },
@@ -1330,18 +1293,6 @@
         "medium": "de Volkskrant",
         "sterren": null,
         "citaat": "Smulders heeft een vertelstijl waarin hij groot geacteerde comedy abrupt laat overgaan in verstilde, persoonlijke ontboezemingen"
-      }
-    ],
-    "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/supermens-gezocht-6-theater-sonnevanck/": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "Het stellen van grenzen in een wereld waarin iedereen met je aan de haal gaat en groepsdruk welig tiert"
-      },
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Helder jeugdtheater over ingewikkelde thema's als altruïsme en eigenbelang"
       }
     ],
     "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/wim-helsen-welkom-ongemak-reprise/": [

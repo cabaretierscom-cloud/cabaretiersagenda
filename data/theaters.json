@@ -75,6 +75,14 @@
     "foto": null
   },
   {
+    "id": "de-studio-antwerpen",
+    "naam": "De Studio",
+    "plaats": "Antwerpen",
+    "land": "BE",
+    "soort": "theater",
+    "website": "https://destudio.com"
+  },
+  {
     "id": "djingel-djangel-antwerpen",
     "naam": "Djingel Djangel",
     "plaats": "Antwerpen",
@@ -750,6 +758,14 @@
     "id": "oc-de-klakeye-dranouter",
     "naam": "OC De Klakeye",
     "plaats": "Dranouter",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
+  },
+  {
+    "id": "spiegeltent-miroir-edegem",
+    "naam": "Spiegeltent Miroir",
+    "plaats": "Edegem",
     "land": "BE",
     "soort": "theater",
     "website": null
@@ -1672,6 +1688,14 @@
     "soort": "theater",
     "website": "https://www.middelkerke.be",
     "foto": null
+  },
+  {
+    "id": "de-promenade-beach-middelkerke",
+    "naam": "De Promenade Beach",
+    "plaats": "Middelkerke",
+    "land": "BE",
+    "soort": "theater",
+    "website": null
   },
   {
     "id": "middelkerke-silt",
@@ -3490,6 +3514,14 @@
     "foto": null
   },
   {
+    "id": "multifesta-bergeijk",
+    "naam": "Multifesta",
+    "plaats": "Bergeijk",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://kattendans.nl"
+  },
+  {
     "id": "gebouw-t-bergen-op-zoom",
     "naam": "Gebouw T",
     "plaats": "Bergen op Zoom",
@@ -3741,6 +3773,14 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://de-avenue.nl"
+  },
+  {
+    "id": "koninklijke-drukkerij-em-de-jongzaal-breda",
+    "naam": "Koninklijke Drukkerij EM. de Jongzaal",
+    "plaats": "Breda",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://www.chasse.nl"
   },
   {
     "id": "theater-streams-breede-beek",

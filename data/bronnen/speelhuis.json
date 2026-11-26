@@ -1,7 +1,7 @@
 {
   "bron": "speelhuis",
   "naam": "Theater Het Speelhuis",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "theater-het-speelhuis",
@@ -454,19 +454,6 @@
     {
       "theater": "theater-het-speelhuis",
       "artiesten": [
-        "De Vrouwejaars"
-      ],
-      "titel": "De blik op 2026 door de ogen van vrouwen!",
-      "genre": "cabaret",
-      "datum": "2026-11-25",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://theaterspeelhuis.nl/programma/de-vrouwejaars-13282"
-    },
-    {
-      "theater": "theater-het-speelhuis",
-      "artiesten": [
         "Ronald Snijders"
       ],
       "titel": "Leven met humor",
@@ -684,6 +671,32 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://theaterspeelhuis.nl/programma/poppentheater-13371"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Houtje (3 t/m 7)"
+      ],
+      "titel": "Ministerie van Onverrichter Zake",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-01-03",
+      "tijd": "15:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://theaterspeelhuis.nl/programma/houtje-3-tm-7-13239"
+    },
+    {
+      "theater": "theater-het-speelhuis",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is boos",
+      "genre": "cabaret",
+      "datum": "2027-10-02",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": "reprise",
+      "bron": "https://theaterspeelhuis.nl/programma/esther-van-der-voort-13407"
     }
   ],
   "recensies": {}

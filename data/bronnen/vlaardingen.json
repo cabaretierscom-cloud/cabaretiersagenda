@@ -1,7 +1,7 @@
 {
   "bron": "vlaardingen",
   "naam": "Stadsgehoorzaal Vlaardingen",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "stadsgehoorzaal-vlaardingen",
@@ -42,6 +42,19 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
+        "Jeroens Clan"
+      ],
+      "titel": "Juk",
+      "genre": "cabaret",
+      "datum": "2026-11-27",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/jeroens-clan"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
         "Teun van den Elzen"
       ],
       "titel": "Ze moesten eens weten",
@@ -55,15 +68,16 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Jeroens Clan"
+        "Anouscha Fajdiga",
+        "Fiep Mulderije"
       ],
-      "titel": "Juk",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:15",
+      "titel": "Duoprogramma Podium Putman",
+      "genre": "kleinkunst",
+      "datum": "2027-06-06",
+      "tijd": "15:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/jeroens-clan"
+      "bron": "https://stadsgehoorzaal.nl/programma/duoprogramma-podium-putman-6-6-27"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -315,19 +329,6 @@
     {
       "theater": "stadsgehoorzaal-vlaardingen",
       "artiesten": [
-        "Berit Companjen"
-      ],
-      "titel": "Zei ik dat hardop?",
-      "genre": "cabaret",
-      "datum": "2027-05-08",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/berit-companjen"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
         "Maya Show (1+)"
       ],
       "titel": "Samen picknicken",
@@ -350,6 +351,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/maya-show"
+    },
+    {
+      "theater": "stadsgehoorzaal-vlaardingen",
+      "artiesten": [
+        "Berit Companjen"
+      ],
+      "titel": "Zei ik dat hardop?",
+      "genre": "cabaret",
+      "datum": "2027-05-08",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://stadsgehoorzaal.nl/programma/berit-companjen"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -610,20 +624,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/anne-bas"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Anouscha Fajdiga",
-        "Fiep Mulderije"
-      ],
-      "titel": "Duoprogramma Podium Putman",
-      "genre": "kleinkunst",
-      "datum": "2027-06-06",
-      "tijd": "15:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/duoprogramma-podium-putman-6-6-27"
     }
   ],
   "recensies": {

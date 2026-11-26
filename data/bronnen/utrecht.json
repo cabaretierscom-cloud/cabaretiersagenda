@@ -1,7 +1,7 @@
 {
   "bron": "utrecht",
   "naam": "Stadsschouwburg Utrecht",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-26",
   "theaters": [
     {
       "id": "stadsschouwburg-utrecht",
@@ -198,19 +198,6 @@
     {
       "theater": "stadsschouwburg-utrecht",
       "artiesten": [
-        "Marjolijn van Kooten"
-      ],
-      "titel": "Aan mij zal het niet liggen",
-      "genre": "cabaret",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/aan-mij-zal-het-niet-liggen-marjolijn-van-kooten",
-      "datum": "2026-11-25",
-      "tijd": "20:30",
-      "status": "uitverkocht"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
         "Jasper van der Veen"
       ],
       "titel": "Op Scherp",
@@ -323,7 +310,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/oudejaars-2026-dolf-jansen",
       "datum": "2026-12-31",
       "tijd": "14:00",
-      "status": "gepland"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -544,7 +531,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/dinsdagmiddag-van-der-laan-woe",
       "datum": "2027-02-12",
       "tijd": "20:00",
-      "status": "geannuleerd"
+      "status": "uitverkocht"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1069,19 +1056,6 @@
     {
       "theater": "stadsschouwburg-utrecht",
       "artiesten": [
-        "Berit Companjen, Teun van den Elzen, Djoni de Vos en het Comedy Talent va"
-      ],
-      "titel": "Lachen met Volle Mond #2",
-      "genre": "cabaret",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/lachen-met-volle-mond-2-berit-companjen-teun-van-den-elzen-djoni-de-vos",
-      "datum": "2026-11-23",
-      "tijd": "19:00",
-      "status": "gepland"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
         "Berit Companjen, Fimme Bakker, Bob Koomen e.a."
       ],
       "titel": "Lachen met Volle Mond #3",
@@ -1240,19 +1214,6 @@
       "artiesten": [
         "Flunknarf"
       ],
-      "titel": "Niet zomaar een Pubquiz #3",
-      "genre": "cabaret",
-      "soort": null,
-      "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/niet-zomaar-een-pubquiz-3-flunknarf",
-      "datum": "2026-11-22",
-      "tijd": "20:30",
-      "status": "gepland"
-    },
-    {
-      "theater": "stadsschouwburg-utrecht",
-      "artiesten": [
-        "Flunknarf"
-      ],
       "titel": "Niet zomaar een Pubquiz #4",
       "genre": "cabaret",
       "soort": null,
@@ -1350,7 +1311,7 @@
       "bron": "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/de-interventie-de-grote-zomerfin-emmy-krooshof-nick-van-keulen-en-erik-boddeus",
       "datum": "2027-07-10",
       "tijd": "20:30",
-      "status": "gepland"
+      "status": "geannuleerd"
     },
     {
       "theater": "stadsschouwburg-utrecht",
@@ -1455,18 +1416,6 @@
         "sterren": 4,
         "citaat": "Wie wil er nou drie uur lang naar Zomergasten kijken? Een half uur Hokjesdenker verzadigt meer.",
         "over": "'We doen wat we kunnen'"
-      }
-    ],
-    "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/aan-mij-zal-het-niet-liggen-marjolijn-van-kooten": [
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Een mooie, eerlijke voorstelling over leven met tekortkomingen. (…) Een lied, een opsomming van alle dingen die door haar handen gingen toen ze zijn huis moest opruimen, is een ontroerend hoogtepunt: ‘Dode dingen’ van Jos Brink in een nieuw jasje. Het lied heeft een prachtige tekst en is prachtig getoonzet, haar stem wordt ineens opgetild en voorzien van een sprankelende andere kleur."
-      },
-      {
-        "medium": "Dagblad van het Noorden",
-        "sterren": null,
-        "citaat": "Van Kooten etaleert geen glamour, evenmin pretenties. Ze verspreidt de kracht, de flair, de intonatie en de ambitie van een theaterpersoonlijkheid met doordacht relativeringsvermogen."
       }
     ],
     "https://stadsschouwburg-utrecht.nl/agenda/seizoen-2026-2027/op-scherp-jasper-van-der-veen": [
