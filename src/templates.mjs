@@ -626,8 +626,9 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
   // Zijwaartse rij met de plaatsen met de meeste voorstellingen (/plaatsen/ en de homepage).
   // Met `buurt` (homepage) begint de rij met de tegel "In de buurt" (speldje, met je locatie), zoals bij de snelkoppelingen;
   // die vervangt de blauwe knop "Gebruik mijn locatie" (verzoek van de eigenaar, november 2026).
+  const BUURT_TEGEL = `<a class="buurt-tegel" href="/in-de-buurt/?locatie=1"><b>${ICON.pin}In de buurt</b><span>met je locatie</span></a>`;
   function plaatsNav({ buurt = false } = {}) {
-    return `<nav class="month-nav stad-nav" aria-label="Plaatsen met de meeste voorstellingen">${buurt ? `<a class="buurt-tegel" href="/in-de-buurt/?locatie=1"><b>${ICON.pin}In de buurt</b><span>met je locatie</span></a>` : ""}${[...plaatsen].sort((x, y) => perPlaats(y).length - perPlaats(x).length || x.localeCompare(y, "nl")).slice(0, 15).map((p) =>
+    return `<nav class="month-nav stad-nav" aria-label="Plaatsen met de meeste voorstellingen">${buurt ? BUURT_TEGEL : ""}${[...plaatsen].sort((x, y) => perPlaats(y).length - perPlaats(x).length || x.localeCompare(y, "nl")).slice(0, 15).map((p) =>
       `<a href="${plaatsPad(p)}"><b>${esc(p)}</b><span>${plural(perPlaats(p).length, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>`;
   }
 
@@ -1292,8 +1293,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     }).join("");
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Plaatsen</h1><p>Waar is cabaret en comedy te zien?</p></div>
-      ${plaatsNav()}
-      <p class="buurt-knop-rij"><a class="btn buurt-knop" href="/in-de-buurt/?locatie=1">${ICON.pin}Gebruik mijn locatie</a></p>
+      ${plaatsNav({ buurt: true })}
       <div class="az-tools">
         <div class="field search">
           <label for="f-plaatsnaam">Zoek een plaats of zaal</label>
@@ -2846,9 +2846,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     }).join("");
     const body = `<section class="block wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Theaters</h1><p>${tellers.zalen} zalen, comedyclubs en podia met aankomende voorstellingen.</p></div>
-      <nav class="month-nav stad-nav" aria-label="Theaters met de meeste voorstellingen">${zalenMetData.map((t) => [t, db.gigsForTheater(t.id).length]).sort((x, y) => y[1] - x[1] || x[0].naam.localeCompare(y[0].naam, "nl")).slice(0, 15).map(([t, n]) =>
+      <nav class="month-nav stad-nav" aria-label="Theaters met de meeste voorstellingen">${BUURT_TEGEL}${zalenMetData.map((t) => [t, db.gigsForTheater(t.id).length]).sort((x, y) => y[1] - x[1] || x[0].naam.localeCompare(y[0].naam, "nl")).slice(0, 15).map(([t, n]) =>
         `<a href="/theaters/${t.id}/"><b>${esc(t.naam)}</b><span>${esc(t.plaats)} · ${plural(n, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>
-      <p class="buurt-knop-rij"><a class="btn buurt-knop" href="/in-de-buurt/?locatie=1">${ICON.pin}Gebruik mijn locatie</a></p>
       <div class="az-tools">
         <div class="field search">
           <label for="f-theater">Zoek een theater of plaats</label>

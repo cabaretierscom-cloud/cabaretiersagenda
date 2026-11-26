@@ -1371,9 +1371,8 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .site-footer .footer-paginas { margin-top: -8px; }
 
 /* Bij mij in de buurt (/in-de-buurt/ en de knop op de homepage). */
-.buurt-knop-rij { margin: 14px 0 22px; }
-.buurt-knop, .buurt-locatie { display: inline-flex; align-items: center; gap: 8px; }
-.buurt-knop svg, .buurt-locatie svg { width: 18px; height: 18px; }
+.buurt-locatie { display: inline-flex; align-items: center; gap: 8px; }
+.buurt-locatie svg { width: 18px; height: 18px; }
 .buurt[hidden] { display: none; }
 .buurt-kies { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 8px 0 14px; }
 .buurt-of { color: var(--ink-2); }
