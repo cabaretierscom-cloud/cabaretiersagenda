@@ -1741,3 +1741,10 @@ a:hover > .pk-stip, a:focus > .pk-stip { transform: scale(1.25); }
 .plaats-lijst .speellijst-kop { margin-top: 8px; }
 @media (max-width: 760px) { .plaats-kop-c { grid-template-columns: minmax(0, 1fr) 96px; gap: 16px; align-items: start; } }
 @media (max-width: 560px) { .plaats-knoppen { gap: 6px; } .plaats-knoppen a { min-height: 34px; padding: 0 11px; font-size: .84rem; gap: 5px; } .plaats-knoppen a svg { display: none; } }
+/* Op de telefoon staan de zalen op één rij om opzij te vegen, van rand tot rand (verzoek van de eigenaar, november 2026). */
+@media (max-width: 560px) {
+  .plaats-knoppen { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-left: -16px; margin-right: calc(-96px - 16px - 16px); padding: 2px 16px; scroll-padding-inline: 16px; }
+  .plaats-knoppen::-webkit-scrollbar { display: none; }
+  .plaats-knoppen li { flex: none; }
+  .plaats-knoppen a { white-space: nowrap; }
+}
