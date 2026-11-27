@@ -1486,23 +1486,66 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </section>`;
   }
 
-  function plaatsPagina(p) {
+  function plaatsPagina(p, variant = "a") {
     const list = perPlaats(p);
     const zalen = zalenMetData.filter((t) => t.plaats === p);
-    // Kop zoals op de homepage en /agenda/: grote zwarte letters op wit, geen kleurvlak.
-    const body = `<section class="block wrap kop-plaats" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">Theater in ${esc(p)}</h1><p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}</p></div>
-    </section>
-      <div class="wrap detail-body">
-        ${dagBlok(p, list)}
+    // VOORSTEL (november 2026): kop in het wisselende kleurvlak zoals /plaatsen/, /theaters/ en /artiesten/.
+    // a = "Deze week" steekt over de onderrand van het vlak (zoals Nu op tournee); b = de zalen als affichewand in het
+    // vlak, Deze week eronder; c = de zalen als ronde knopjes en een kaartje met de plaats in het vlak.
+    const perZaal = new Map(telPer(list, (g) => g.theater));
+    const zalenOp = [...zalen].sort((x, y) => (perZaal.get(y.id) || 0) - (perZaal.get(x.id) || 0));
+    const intro = `<div class="block-head"><h1 id="t">Theater in ${esc(p)}</h1><p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}</p></div>`;
+    const zaalFoto = (t) => {
+      const f = t.foto?.bestand ? t.foto : null;
+      return `<span class="az-foto${f ? "" : " leeg"}" style="${ink(zaalKleur(t))}" aria-hidden="true">${f
+        ? `<img src="${esc(f.bestand)}" alt=""${uitsnede(f, 4 / 3)} loading="lazy" decoding="async" width="${f.breedte || 800}" height="${f.hoogte || 600}">`
+        : `<span class="az-letter">${esc(t.naam)}</span>`}</span>`;
+    };
+    const zaalWand = `<div class="az az-zalen plaats-zalen"><section class="az-group"><ul>${zalenOp.map((t) => `<li><a href="/theaters/${t.id}/">${zaalFoto(t)}<span class="ac">${plural(perZaal.get(t.id) || 0, "voorstelling", "voorstellingen")}</span><span class="an">${esc(t.naam)}</span><span class="ad">${t.soort !== "theater" ? esc(t.soort) : esc(p)}</span></a></li>`).join("")}</ul></section></div>`;
+    const zaalKnoppen = `<ul class="zaal-feiten plaats-knoppen">${zalenOp.map((t) => `<li><a href="/theaters/${t.id}/">${ICON.pin}${esc(t.naam)} <span>${perZaal.get(t.id) || 0}</span></a></li>`).join("")}</ul>`;
+    let kaartje = "";
+    if (variant === "c") {
+      const WALLONIE = new Set(["Henegouwen", "Luik", "Luxemburg", "Namen", "Waals-Brabant"]);
+      const provs = PROVINCIES.filter((q) => !WALLONIE.has(q.naam));
+      const getallen = provs.flatMap((q) => [...q.d.matchAll(/(-?[\d.]+)[ ,](-?[\d.]+)/g)].map((m) => [+m[1], +m[2]]));
+      const rand = 12, vx = Math.min(...getallen.map((g) => g[0])) - rand, vy = Math.min(...getallen.map((g) => g[1])) - rand;
+      const vb = Math.max(...getallen.map((g) => g[0])) + rand - vx, vh = Math.max(...getallen.map((g) => g[1])) + rand - vy;
+      const xy = ([lat, lon]) => [(lon - KAART.lon0) * KAART.k * KAART.schaal, (KAART.lat1 - lat) * KAART.schaal];
+      const c = geoPlaats(p, landVanPlaats(p));
+      const [cx, cy] = c ? xy(c) : [null, null];
+      kaartje = `<div class="plaats-minikaart" aria-hidden="true"><svg viewBox="${vx.toFixed(0)} ${vy.toFixed(0)} ${vb.toFixed(0)} ${vh.toFixed(0)}">
+        <g class="pmk-land">${provs.map((q) => `<path d="${q.d}"/>`).join("")}${MEREN.map((m) => `<path class="pmk-meer" d="${m.d}"/>`).join("")}</g>
+        ${c ? `<circle class="pmk-ring" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="46"/><circle class="pmk-stip" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="20"/>` : ""}</svg></div>`;
+    }
+    const lijst = `<div class="wrap detail-body zaal-lijst plaats-lijst">
+        ${variant === "a" ? "" : dagBlok(p, list)}
         ${uitgelichtBlok("plaats", p)}
-        ${filters(list, { maand: true })}
+        <h2 class="sub-head speellijst-kop">Alle voorstellingen in ${esc(p)}</h2>
+        ${filters(list, { maand: true, icoon: true, voorbeeld: "Zoek een artiest, voorstelling of theater" })}
         <div id="gigs">${monthGroups(list)}</div>
         ${leegBlok}
         ${heeftGenrePlaats("cabaret", p) || heeftGenrePlaats("kindervoorstellingen", p) ? `<p class="meer-link">${[heeftGenrePlaats("cabaret", p) && `<a href="/agenda/cabaret/${plaatsId(p)}/">Alleen cabaret in ${esc(p)}</a>`, heeftGenrePlaats("kindervoorstellingen", p) && `<a href="/agenda/kindervoorstellingen/${plaatsId(p)}/">Kindervoorstellingen in ${esc(p)}</a>`].filter(Boolean).join(" · ")}</p>` : ""}
         ${plaatsTekst(p, list)}
         ${list.length ? faqHtml(plaatsVragen(p, list), `Veelgestelde vragen over theater in ${p}`) : ""}
       </div>`;
+    const deze = dagBlok(p, list);
+    const body = variant === "a" ? `${KOP_KLEUR}
+    <div class="home-kop agenda-kop zalen-kop plaats-kop plaats-kop-a">
+    <!--kruimelpad-->
+    <section class="wrap" aria-labelledby="t">${intro}${zaalKnoppen}</section>
+    ${deze ? `<div class="wrap plaats-deze">${deze}</div>` : ""}
+    </div>
+    ${lijst}` : variant === "b" ? `${KOP_KLEUR}
+    <div class="home-kop agenda-kop zalen-kop plaats-kop">
+    <!--kruimelpad-->
+    <section class="wrap" aria-labelledby="t">${intro}<h2 class="plaats-zalen-kop">De theaters</h2>${zaalWand}</section>
+    </div>
+    ${lijst}` : `${KOP_KLEUR}
+    <div class="home-kop agenda-kop zalen-kop plaats-kop">
+    <!--kruimelpad-->
+    <section class="wrap plaats-kop-c" aria-labelledby="t"><div>${intro}${zaalKnoppen}</div>${kaartje}</section>
+    </div>
+    ${lijst}`;
     const desc = kort(`Theater in ${p}: ${plural(list.length, "voorstelling", "voorstellingen")} in ${zalen.length === 1 ? zalen[0].naam : `${zalen.length} theaters, zoals ${telPer(list, (g) => g.theater).slice(0, 2).map(([id]) => T.get(id).naam).join(" en ")}`}. Cabaret, comedy, komisch theater en kindervoorstellingen.`);
     return layout({ title: `Theater in ${p}: agenda en voorstellingen`, description: desc, path: plaatsPad(p), section: "plaatsen", body, schema: { type: "CollectionPage", kruimels: [["Plaatsen", "/plaatsen/"], [p, plaatsPad(p)]], over: plaatsLd(p), extra: [...eventsLd(list), ...(list.length ? [faqLd(plaatsVragen(p, list), plaatsPad(p))] : [])] } });
   }

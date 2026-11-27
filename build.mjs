@@ -94,6 +94,7 @@ write("/plaatsen/", t.plaatsIndex());
 // Bij mij in de buurt: zoeken op afstand (locatie of plaats), in de browser.
 write("/in-de-buurt/", t.inDeBuurtPagina());
 for (const p of t.plaatsen) write(t.plaatsPad(p), t.plaatsPagina(p));
+for (const p of ["Utrecht", "Bergeijk"]) for (const v of ["b", "c"]) write(`/voorstel-${v}${t.plaatsPad(p)}`, t.plaatsPagina(p, v));
 write("/artiesten/", t.artistIndex());
 // SEO-pagina's over cabaretiers; niet in het menu, wel gelinkt vanuit artiesten, footer en artiestpagina's.
 write("/alle-cabaretiers/", t.cabaretiersPagina("alle"));
