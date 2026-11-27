@@ -91,6 +91,7 @@ write("/vanavond/", t.dagPagina("vanavond"));
 write("/dit-weekend/", t.dagPagina("dit-weekend"));
 for (const m of t.maanden) write(`/agenda/${t.maandId(m)}/`, t.agendaMaand(m));
 write("/plaatsen/", t.plaatsIndex());
+for (const v of ["b", "c"]) write(`/plaatsen-${v}/`, t.plaatsIndex(v));
 // Bij mij in de buurt: zoeken op afstand (locatie of plaats), in de browser.
 write("/in-de-buurt/", t.inDeBuurtPagina());
 for (const p of t.plaatsen) write(t.plaatsPad(p), t.plaatsPagina(p));
