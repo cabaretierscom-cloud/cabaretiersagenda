@@ -95,6 +95,7 @@ write("/plaatsen/", t.plaatsIndex());
 write("/in-de-buurt/", t.inDeBuurtPagina());
 for (const p of t.plaatsen) write(t.plaatsPad(p), t.plaatsPagina(p));
 write("/artiesten/", t.artistIndex());
+for (const v of ["b", "c"]) write(`/artiesten-${v}/`, t.artistIndex(v));
 // SEO-pagina's over cabaretiers; niet in het menu, wel gelinkt vanuit artiesten, footer en artiestpagina's.
 write("/alle-cabaretiers/", t.cabaretiersPagina("alle"));
 write("/alle-cabaretiers/vrouwen/", t.cabaretiersPagina("vrouw"));

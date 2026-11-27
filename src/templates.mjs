@@ -1542,21 +1542,41 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       <p class="empty" id="az-leeg" hidden>Geen theater of plaats gevonden met deze naam.</p>` };
   }
 
-  function artistIndex() {
+  function artistIndex(variant = "a") {
     const nu = nuInTheater();
     // Alleen echte artiesten: een voorstelling, avond of reeks als artiest (`geenArtiest`) staat niet in de lijst.
     const echte = artiestenMetData.filter(({ a }) => !a.geenArtiest);
-    const body = `<div class="wrap block-head kop-artiesten"><h1 id="t">Artiesten</h1><p>${echte.length} cabaretiers, comedians en gezelschappen met aankomende voorstellingen.</p></div>
-    ${nu ? `<section class="wall wall-sub" aria-labelledby="nu-title">
-      <div class="wrap wall-head">
-        <h2 id="nu-title">Nu op tournee</h2>
-      </div>
+    // VOORSTEL (november 2026): kop in het wisselende kleurvlak zoals /theaters/ en /agenda/.
+    // a = gereedschap in het vlak, dan Nu op tournee en de wand; b = de affiches steken over de onderrand van het vlak
+    // (zoals de homepage), gereedschap daaronder; c = geen rij Nu op tournee, de eerste twee van de wand groot.
+    const az = azLijst(echte, { voorbeeld: "Peter Pannekoek of Kim Schuddeboom" });
+    const knip = az.indexOf('<div class="az" id="az">');
+    const gereedschap = az.slice(0, knip), lijst = az.slice(knip);
+    const intro = `<div class="block-head"><h1 id="t">Artiesten</h1><p>${echte.length} cabaretiers, comedians en gezelschappen met aankomende voorstellingen in Nederland en België.</p></div>`;
+    const wand = (binnen) => nu ? `<section class="wall wall-sub" aria-labelledby="nu-title">
+      <div class="wrap wall-head"><h2 id="nu-title">Nu op tournee</h2></div>
       ${strip("strip-nu", "Voorstellingen die nu op tournee zijn", nu)}
-    </section>` : ""}
-    <section class="block wrap az-blok" aria-labelledby="az-titel">
+    </section>` : "";
+    const zieOok = `<p class="zie-ook">Bekijk ook: <a href="/alle-cabaretiers/">alle cabaretiers</a>, <a href="/alle-cabaretiers/vrouwen/">vrouwelijke cabaretiers</a> en <a href="/alle-cabaretiers/mannen/">mannelijke cabaretiers</a>.</p>`;
+    const body = variant === "b" ? `${KOP_KLEUR}
+    <div class="home-kop agenda-kop zalen-kop artiesten-kop kop-b">
+    <section class="wrap" aria-labelledby="t">${intro}</section>
+    ${wand()}
+    </div>
+    <section class="block wrap az-blok zalen-lijst artiesten-lijst" aria-labelledby="az-titel">
       <h2 class="sub-head" id="az-titel">Alle artiesten</h2>
-      ${azLijst(echte, { voorbeeld: "Peter Pannekoek of Kim Schuddeboom" })}
-      <p class="zie-ook">Bekijk ook: <a href="/alle-cabaretiers/">alle cabaretiers</a>, <a href="/alle-cabaretiers/vrouwen/">vrouwelijke cabaretiers</a> en <a href="/alle-cabaretiers/mannen/">mannelijke cabaretiers</a>.</p>
+      ${gereedschap}
+      ${lijst}
+      ${zieOok}
+    </section>` : `${KOP_KLEUR}
+    <div class="home-kop agenda-kop zalen-kop artiesten-kop">
+    <section class="wrap" aria-labelledby="t">${intro}${gereedschap}</section>
+    </div>
+    ${variant === "a" ? wand() : ""}
+    <section class="block wrap az-blok zalen-lijst artiesten-lijst${variant === "c" ? " artiesten-groot" : ""}" aria-label="Alle artiesten">
+      ${variant === "a" ? `<h2 class="sub-head">Alle artiesten</h2>` : ""}
+      ${lijst}
+      ${zieOok}
     </section>`;
     return layout({ title: "Artiesten op tournee: cabaret en comedy", description: kort(`${plural(echte.length, "artiest", "artiesten")} met aankomende voorstellingen in Nederland en België, van A tot Z: cabaretiers, comedians en groepen, met hun speeldata en kaarten.`), path: "/artiesten/", section: "artiesten", body, schema: { type: "CollectionPage", kruimels: [["Artiesten", "/artiesten/"]], hoofd: lijstLd([...echte].sort((x, y) => x.a.naam.localeCompare(y.a.naam, "nl")).map(({ a }) => [a.naam, `/artiesten/${a.id}/`])) } });
   }

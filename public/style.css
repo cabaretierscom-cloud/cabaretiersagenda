@@ -1680,3 +1680,17 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* Vanavond en Dit weekend: kop in het kleurvlak zoals /agenda/ (november 2026). */
 .dag-lijst { padding-top: 18px; }
 .agenda-kop.dag-kop .periode { margin-top: 16px; }
+/* VOORSTEL /artiesten/ */
+.artiesten-kop .block-head { margin-bottom: 0; }
+.kop-b { padding-bottom: 0; }
+.kop-b > .wall { padding-top: 26px; }
+.artiesten-lijst .az-tools { margin-top: 8px; }
+.artiesten-lijst > .sub-head { margin-top: 8px; }
+@media (min-width: 761px) {
+  .artiesten-groot .az-group.az-populair li:nth-child(-n+2) { grid-column: span 2; grid-row: span 2; }
+  .artiesten-groot .az-group.az-populair li:nth-child(-n+2) .an { font-size: 2.2rem; }
+}
+@media (max-width: 760px) {
+  .artiesten-groot .az-group.az-populair li:first-child { grid-column: 1 / -1; }
+  .artiesten-groot .az-group.az-populair li:first-child .an { font-size: 1.8rem; }
+}
