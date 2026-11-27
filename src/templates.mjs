@@ -1311,12 +1311,13 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       return `<div class="plaats-land" id="land-${land.toLowerCase()}"><h2>${LANDEN[land]} <small>${plural(hier.length, "plaats", "plaatsen")}</small></h2>${[...groepen].sort(([a], [b]) => a.localeCompare(b)).map(([l, xs]) => `<section class="stad plaats-letter"><h3>${l}</h3><ul>${xs.map((x) =>
         `<li data-zoek="${esc([x.p, ...x.zalen.map((t) => t.naam)].join(" ").toLowerCase())}"${x.n >= 50 ? ' class="groot"' : ""}><a href="${plaatsPad(x.p)}"><span class="pn">${esc(x.p)}</span><span class="pc">${x.n}</span></a></li>`).join("")}</ul></section>`).join("")}</div>`;
     }).join("");
-    const gereedschap = `<div class="az-tools">
+    // De zoekbalk staat boven de lijst van alle plaatsen, de knop In de buurt in het kleurvlak (verzoek van de eigenaar,
+    // november 2026).
+    const gereedschap = `<div class="az-tools plaats-zoek">
         <div class="field search">
           <label for="f-plaatsnaam">Zoek een plaats of zaal</label>
           <input id="f-plaatsnaam" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Leiden of Kattendans">
         </div>
-        <a class="zalen-buurt" href="/in-de-buurt/?locatie=1">${ICON.pin}In de buurt</a>
       </div>`;
     const grootste = [...items].sort((x, y) => y.n - x.n);
     let kaart = "";
@@ -1342,7 +1343,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <div class="pk-kaart"><svg viewBox="${viewBox}" role="img" aria-label="Kaart van Nederland en Vlaanderen met een stip per plaats">
           <g class="pk-provincies">${provs.map((q) => `<path class="pk-${q.land.toLowerCase()}" d="${q.d}"/>`).join("")}${MEREN.map((m) => `<path class="pk-meer" d="${m.d}"/>`).join("")}</g>
           <g>${stippen}</g><g class="pk-labels" aria-hidden="true">${labels.join("")}</g></svg></div>
-        <div class="pk-top"><h2 id="kaart-titel">Waar speelt het meest?</h2><p>Hoe groter de stip, hoe meer voorstellingen. Klik op een stip voor de plaats.</p>
+        <div class="pk-top"><h2 id="kaart-titel">Voorstellingen op de kaart</h2><p>Hoe groter de stip, hoe meer voorstellingen. Klik op een stip voor de plaats.</p>
           <ol>${grootste.slice(0, 12).map((x) => `<li><a href="${plaatsPad(x.p)}"><span class="pk-bol" style="${ink(plaatsKleur(x.p))}"></span>${esc(x.p)}</a><span>${x.n}</span></li>`).join("")}</ol></div>
       </section>`;
     }
@@ -1350,12 +1351,13 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     <div class="home-kop agenda-kop zalen-kop plaatsen-kop">
     <section class="wrap" aria-labelledby="t">
       <div class="block-head"><h1 id="t">Plaatsen</h1><p>Cabaret en comedy in ${items.length} plaatsen in Nederland en België. Kies je plaats en zie wat er bij jou in de buurt speelt.</p></div>
-      ${gereedschap}
+      <p class="plaats-buurt"><a class="zalen-buurt" href="/in-de-buurt/?locatie=1">${ICON.pin}In de buurt</a></p>
     </section>
     </div>
     ${kaart}
     <section class="block wrap plaatsen-blok" aria-label="Alle plaatsen">
       <h2 class="sub-head">Alle plaatsen</h2>
+      ${gereedschap}
       <div class="plaatsen-lijst" id="plaatsenlijst">${lijsten}</div>
       <p class="empty" id="plaatsen-leeg" hidden>Geen plaats of zaal gevonden met deze naam.</p>
     </section>`;

@@ -1748,3 +1748,6 @@ a:hover > .pk-stip, a:focus > .pk-stip { transform: scale(1.25); }
   .plaats-knoppen li { flex: none; }
   .plaats-knoppen a { white-space: nowrap; }
 }
+/* /plaatsen/: In de buurt in het kleurvlak, de zoekbalk boven Alle plaatsen (november 2026). */
+.plaats-buurt { margin: 16px 0 0; }
+.plaats-zoek { margin: 4px 0 18px; grid-template-columns: minmax(0, 32rem); }
