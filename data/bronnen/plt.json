@@ -1,7 +1,7 @@
 {
   "bron": "plt",
   "naam": "PLT (Parkstad Limburg Theaters)",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "theater-heerlen",
@@ -1292,6 +1292,17 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.plt.nl/programma/medammecour-on-tour-2027/25-01-2027-20-00"
+    },
+    {
+      "theater": "theater-heerlen",
+      "artiesten": [],
+      "titel": "Medammecour on tour!",
+      "genre": "cabaret",
+      "datum": "2027-01-24",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.plt.nl/programma/medammecour-on-tour-2027/24-01-2027-20-00"
     },
     {
       "theater": "theater-heerlen",
@@ -3152,9 +3163,9 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
-        "Achilles (10+) - Het NUT"
+        "Nederlands Theater Festival Heerlen"
       ],
-      "titel": "Nederlands Theater Festival Heerlen",
+      "titel": "Achilles (10+) - Het NUT",
       "genre": "kindervoorstellingen",
       "datum": "2027-01-23",
       "tijd": "16:00",
@@ -3165,9 +3176,9 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
-        "Achilles (10+) - Het NUT"
+        "Nederlands Theater Festival Heerlen"
       ],
-      "titel": "Nederlands Theater Festival Heerlen",
+      "titel": "Achilles (10+) - Het NUT",
       "genre": "kindervoorstellingen",
       "datum": "2027-01-23",
       "tijd": "19:00",
@@ -3178,9 +3189,9 @@
     {
       "theater": "theater-heerlen",
       "artiesten": [
-        "Saman Amini's Integratieplan #2: Alles is perspectief"
+        "Nederlands Theater Festival Heerlen"
       ],
-      "titel": "Nederlands Theater Festival Heerlen",
+      "titel": "Saman Amini's Integratieplan #2: Alles is perspectief",
       "genre": "cabaret",
       "datum": "2027-01-23",
       "tijd": "20:30",

@@ -1,7 +1,7 @@
 {
   "bron": "diest",
   "naam": "CC Den Amer",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "den-amer-diest",
@@ -90,6 +90,71 @@
       "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.ccdiest.be/nl/event/steven-goegebeur-3"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Sprookjes enzo"
+      ],
+      "titel": "Sssst!!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "14:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/sssst"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Sprookjes enzo"
+      ],
+      "titel": "Sssst!!",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-03-21",
+      "tijd": "16:30",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/sssst"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "cabaret",
+      "datum": "2027-03-24",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/kommil-foo-2"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Kommil Foo"
+      ],
+      "titel": "Babel",
+      "genre": "cabaret",
+      "datum": "2027-03-25",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/kommil-foo-2"
+    },
+    {
+      "theater": "den-amer-diest",
+      "artiesten": [
+        "Roosje Pertz"
+      ],
+      "titel": "Goedgezind & Flink",
+      "genre": "comedy",
+      "datum": "2027-04-22",
+      "tijd": "20:00",
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdiest.be/nl/event/roosje-pertz"
     },
     {
       "theater": "den-amer-diest",

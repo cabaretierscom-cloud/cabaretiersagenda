@@ -2,28 +2,9 @@
   "bron": "5to9",
   "naam": "Agenda van 5to9",
   "soort": "speellijst",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [],
   "speeldata": [
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Zuiderpershuis",
-        "plaats": "Antwerpen",
-        "land": "BE",
-        "website": null
-      },
-      "artiesten": [
-        "Bert Gabriëls"
-      ],
-      "titel": "Live vanuit de Wetstraat",
-      "genre": "stand-up",
-      "datum": "2026-11-26",
-      "tijd": null,
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedyshows.be/kalender/bert-gabriels/2026-11-26/"
-    },
     {
       "theater": {
         "zoeken": true,
@@ -6883,6 +6864,25 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedyshows.be/kalender/arnout-van-den-bosche/2027-05-07/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Zaal Apollonia",
+        "plaats": "Brakel",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Bert Gabriëls"
+      ],
+      "titel": "Stand-up",
+      "genre": "stand-up",
+      "datum": "2027-05-07",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://be.ticketgang.eu/orgFrameSaleNew.php?org=489535&event=185679#"
     },
     {
       "theater": {

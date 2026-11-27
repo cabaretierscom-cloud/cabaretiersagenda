@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -13,72 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Kiem",
-      "genre": "kleinkunst",
-      "datum": "2026-11-26",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Kiem",
-      "genre": "kleinkunst",
-      "datum": "2027-01-28",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Kiem",
-      "genre": "kleinkunst",
-      "datum": "2027-02-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Kiem",
-      "genre": "kleinkunst",
-      "datum": "2027-03-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Kiem",
-      "genre": "kleinkunst",
-      "datum": "2027-04-22",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [],
-      "titel": "Kiem",
-      "genre": "kleinkunst",
-      "datum": "2027-05-27",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
-    },
     {
       "theater": "theater-bellevue",
       "artiesten": [
@@ -205,7 +139,7 @@
       "genre": "cabaret",
       "datum": "2026-12-09",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/gelukkig-geboren-d16m"
     },
@@ -707,6 +641,61 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/best-of-4-fsng"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Kiem",
+      "genre": "kleinkunst",
+      "datum": "2027-01-28",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Kiem",
+      "genre": "kleinkunst",
+      "datum": "2027-02-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Kiem",
+      "genre": "kleinkunst",
+      "datum": "2027-03-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Kiem",
+      "genre": "kleinkunst",
+      "datum": "2027-04-22",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
+    },
+    {
+      "theater": "theater-bellevue",
+      "artiesten": [],
+      "titel": "Kiem",
+      "genre": "kleinkunst",
+      "datum": "2027-05-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterbellevue.nl/agenda/kiem-q25w"
     },
     {
       "theater": "theater-bellevue",

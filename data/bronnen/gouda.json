@@ -1,7 +1,7 @@
 {
   "bron": "gouda",
   "naam": "Goudse Schouwburg",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "goudse-schouwburg",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "goudse-schouwburg",
-      "artiesten": [
-        "Remko Vrijdag"
-      ],
-      "titel": "Marko Maandag",
-      "genre": "cabaret",
-      "datum": "2026-11-26",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://goudseschouwburg.nl/agenda/remko-vrijdag-marko-maandag-10025592/"
-    },
     {
       "theater": "goudse-schouwburg",
       "artiesten": [
@@ -817,6 +804,17 @@
     },
     {
       "theater": "goudse-schouwburg",
+      "artiesten": [],
+      "titel": "Comedy Night in Cinema Gouda",
+      "genre": "cabaret",
+      "datum": "2027-04-15",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://goudseschouwburg.nl/agenda/comedy-night-in-cinema-gouda-7/"
+    },
+    {
+      "theater": "goudse-schouwburg",
       "artiesten": [
         "Zij & Aron Elstak"
       ],
@@ -827,17 +825,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://goudseschouwburg.nl/agenda/zij-aron-elstak-match-10025268/"
-    },
-    {
-      "theater": "goudse-schouwburg",
-      "artiesten": [],
-      "titel": "Comedy Night in Cinema Gouda",
-      "genre": "cabaret",
-      "datum": "2027-04-15",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://goudseschouwburg.nl/agenda/comedy-night-in-cinema-gouda-7/"
     },
     {
       "theater": "goudse-schouwburg",

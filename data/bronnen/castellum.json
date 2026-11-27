@@ -1,7 +1,7 @@
 {
   "bron": "castellum",
   "naam": "Castellum",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "castellum",
@@ -90,19 +90,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://castellum.nl/theater/bazar-media-nog-grotere-slijmmusical"
-    },
-    {
-      "theater": "castellum",
-      "artiesten": [
-        "Johan Goossens"
-      ],
-      "titel": "Het Volle Leven",
-      "genre": "cabaret",
-      "datum": "2026-11-26",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://castellum.nl/theater/johan-goossens-het-volle-leven"
     },
     {
       "theater": "castellum",
@@ -799,13 +786,6 @@
         "medium": "Het Parool",
         "sterren": null,
         "citaat": "Verrukkelijk theatraal en bewegelijk - wat een geweldigekomiek."
-      }
-    ],
-    "https://castellum.nl/theater/johan-goossens-het-volle-leven": [
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "Goossens kijkt met een even ontroerende als grappige mildheid naar zijn eigen tekortkomingen."
       }
     ],
     "https://castellum.nl/theater/introdans-swan-lake": [

@@ -1,7 +1,7 @@
 {
   "bron": "zuidplein",
   "naam": "Theater Zuidplein",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "theater-zuidplein",
@@ -90,6 +90,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theaterzuidplein.nl/agenda/piet-en-zijn-matties-7lns"
+    },
+    {
+      "theater": "theater-zuidplein",
+      "artiesten": [
+        "Caribbean Day 2026 | Wintereditie"
+      ],
+      "titel": "Kids Corner & Market",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-06",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theaterzuidplein.nl/agenda/kids-corner-market-4xbk"
     },
     {
       "theater": "theater-zuidplein",
@@ -1164,7 +1177,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-05-23",
       "tijd": "14:00",
-      "status": "gepland",
+      "status": "geannuleerd",
       "soort": null,
       "bron": "https://www.theaterzuidplein.nl/agenda/mijn-plastic-zak-vol-dromen-8-5153"
     },

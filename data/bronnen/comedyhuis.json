@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,36 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [
-        "Jeroen Leenders"
-      ],
-      "titel": "Experience - Unieke Live Comedy Show",
-      "genre": "stand-up",
-      "datum": "2026-11-26",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/jeroen-leenders-experience-utrecht-26-november-2026/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "TivoliVredenburg",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://www.tivolivredenburg.nl"
-      },
-      "artiesten": [],
-      "titel": "Comedy Cloud",
-      "genre": "stand-up",
-      "datum": "2026-11-26",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/comedycloud-utrecht-26-november-2026/"
-    },
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
@@ -824,7 +794,7 @@
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
-      "titel": "Reguliere line-upshow – feestdagenprogrammering",
+      "titel": "Woensdagavondshow - feestdageneditie",
       "genre": "stand-up",
       "datum": "2026-12-23",
       "tijd": "20:30",

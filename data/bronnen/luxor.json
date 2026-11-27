@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -418,19 +418,6 @@
       ],
       "titel": "Ja, Leuk",
       "genre": "cabaret",
-      "datum": "2026-11-26",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/pieter-derks-57549/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Pieter Derks"
-      ],
-      "titel": "Ja, Leuk",
-      "genre": "cabaret",
       "datum": "2026-11-27",
       "tijd": "20:00",
       "status": "gepland",
@@ -446,7 +433,7 @@
       "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/pieter-derks-57549/"
     },
@@ -784,7 +771,7 @@
       "genre": "cabaret",
       "datum": "2027-01-02",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/esther-van-der-voort-57396/"
     },
@@ -1993,7 +1980,7 @@
       "genre": "cabaret",
       "datum": "2026-11-27",
       "tijd": "20:00",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
     },

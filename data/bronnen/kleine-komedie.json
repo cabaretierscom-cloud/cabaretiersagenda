@@ -1,7 +1,7 @@
 {
   "bron": "kleine-komedie",
   "naam": "De Kleine Komedie",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "kleine-komedie",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "kleine-komedie",
-      "artiesten": [
-        "Micha Wertheim"
-      ],
-      "titel": "Micha Wertheim voor iedereen",
-      "genre": "cabaret",
-      "datum": "2026-11-26",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://www.dekleinekomedie.nl/agenda/micha-wertheim-f7tn"
-    },
     {
       "theater": "kleine-komedie",
       "artiesten": [
@@ -1305,7 +1292,7 @@
       "genre": "kleinkunst",
       "datum": "2027-04-03",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.dekleinekomedie.nl/agenda/amsterdams-kleinkunst-festival-m551"
     },

@@ -1,7 +1,7 @@
 {
   "bron": "spot-groningen",
   "naam": "SPOT Groningen",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "de-oosterpoort",
@@ -53,19 +53,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "stadsschouwburg-groningen",
-      "artiesten": [
-        "Claudia de Breij"
-      ],
-      "titel": "Oudejaarsconference 2026",
-      "genre": "cabaret",
-      "datum": "2026-11-26",
-      "tijd": "20:15",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.spotgroningen.nl/programma/claudia-de-breij-17/"
-    },
     {
       "theater": "stadsschouwburg-groningen",
       "artiesten": [
@@ -244,7 +231,7 @@
       "genre": "cabaret",
       "datum": "2026-12-18",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.spotgroningen.nl/programma/guido-weijers-6/"
     },
@@ -888,7 +875,7 @@
     {
       "theater": "stadsschouwburg-groningen",
       "artiesten": [
-        "Klaas van Eerden"
+        "Klaas van der Eerden"
       ],
       "titel": "Imperfect",
       "genre": "cabaret",

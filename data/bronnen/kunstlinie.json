@@ -1,7 +1,7 @@
 {
   "bron": "kunstlinie",
   "naam": "Kunstlinie",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "kunstlinie",
@@ -848,19 +848,6 @@
     {
       "theater": "kunstlinie",
       "artiesten": [
-        "Aai Poesje, Aai Poesje"
-      ],
-      "titel": "Aai Poesje, Aai Poesje",
-      "genre": "cabaret",
-      "datum": "2027-01-29",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://kunstlinie.nl/programma/blind-date-14/"
-    },
-    {
-      "theater": "kunstlinie",
-      "artiesten": [
         "Zeg Maar Dag (4+)"
       ],
       "titel": "Zeg maar dag (4+)",
@@ -974,6 +961,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://kunstlinie.nl/programma/brrrothers-6/"
+    },
+    {
+      "theater": "kunstlinie",
+      "artiesten": [
+        "Aai Poesje, Aai Poesje"
+      ],
+      "titel": "Aai Poesje, Aai Poesje",
+      "genre": "cabaret",
+      "datum": "2027-01-29",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://kunstlinie.nl/programma/blind-date-14/"
     }
   ],
   "recensies": {

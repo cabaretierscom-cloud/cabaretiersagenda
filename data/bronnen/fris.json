@@ -2,7 +2,7 @@
   "bron": "fris",
   "naam": "Agenda van Theaterbureau Fr!S",
   "soort": "speellijst",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-27",
   "theaters": [],
   "speeldata": [
     {
@@ -533,7 +533,7 @@
       "genre": "oudejaarsconference",
       "datum": "2026-12-04",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.hetveurtheater.nl/voorstelling/kiki-schippers-2/"
     },
@@ -878,25 +878,6 @@
       "status": "gepland",
       "soort": "try-out",
       "bron": "https://podiumvlieland.nl/bezoek/nieuw-programma-try-out/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Kasteel van Rhoon",
-        "plaats": "Rhoon",
-        "land": "NL",
-        "website": "https://www.stichting-kasteelvanrhoon.nl"
-      },
-      "artiesten": [
-        "Pieter Jouke"
-      ],
-      "titel": "Uit Stilstand",
-      "genre": "cabaret",
-      "datum": "2026-11-26",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.stichting-kasteelvanrhoon.nl/agenda/programma/marie-koet"
     },
     {
       "theater": {
@@ -2364,25 +2345,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Schaffelaartheater",
-        "plaats": "Barneveld",
-        "land": "NL",
-        "website": "https://schaffelaartheater.nl"
-      },
-      "artiesten": [
-        "Andries Tunru & Stefan Hendrikx"
-      ],
-      "titel": "De nogal hyperbijzondere oudejaars-improvisatie-extravaganza",
-      "genre": "improvisatie",
-      "datum": "2026-11-26",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://schaffelaartheater.nl/agenda/beperkt-houdbaar/?eventId=12161"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "De Blauwe Kei",
         "plaats": "Veghel",
         "land": "NL",
@@ -2972,25 +2934,6 @@
     {
       "theater": {
         "zoeken": true,
-        "naam": "Pand P",
-        "plaats": "Eindhoven",
-        "land": "NL",
-        "website": "https://www.parktheater.nl"
-      },
-      "artiesten": [
-        "Amsterdams Studenten Cabaret Festival"
-      ],
-      "titel": "Finalistentournee",
-      "genre": "cabaret",
-      "datum": "2026-11-26",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/finalistentournee-2026-hqh5"
-    },
-    {
-      "theater": {
-        "zoeken": true,
         "naam": "Posttheater",
         "plaats": "Arnhem",
         "land": "NL",
@@ -3079,7 +3022,7 @@
       "genre": "cabaret",
       "datum": "2026-12-16",
       "tijd": "20:15",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.verkadefabriek.nl/agenda/amsterdams-studenten-cabaret-festival-finalisten-162257"
     },

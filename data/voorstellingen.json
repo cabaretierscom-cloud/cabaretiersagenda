@@ -1672,6 +1672,13 @@
     "genre": "cabaret"
   },
   {
+    "id": "caribbean-day-2026-wintereditie-theater-zuidplein",
+    "titel": "Caribbean Day 2026 | Wintereditie",
+    "artiesten": [],
+    "genre": "kindervoorstellingen",
+    "theater": "theater-zuidplein"
+  },
+  {
     "id": "carnival-of-life-canti-vaganti",
     "titel": "Canti Vaganti",
     "artiesten": [
@@ -3316,6 +3323,15 @@
     "titel": "Piv Huvluv",
     "artiesten": [
       "dj-loebas"
+    ],
+    "genre": "stand-up"
+  },
+  {
+    "id": "djoni-de-vos-kim-schuddeboom-dubbel",
+    "titel": "Dubbel",
+    "artiesten": [
+      "djoni-de-vos",
+      "kim-schuddeboom"
     ],
     "genre": "stand-up"
   },
@@ -7759,6 +7775,14 @@
     "genre": "stand-up"
   },
   {
+    "id": "medammecour-on-tour",
+    "titel": "",
+    "artiesten": [
+      "medammecour-on-tour"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "medammecour-on-tour-jubileumfeest-11-x-medammecour",
     "titel": "jubileumfeest: 11 X Medammecour",
     "artiesten": [
@@ -8337,6 +8361,14 @@
       "nederlands-theater-festival-heerlen"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "nederlands-theater-festival-heerlen-saman-amini-s-integratieplan-2-alles-is-pers",
+    "titel": "Saman Amini's Integratieplan #2: Alles is perspectief",
+    "artiesten": [
+      "nederlands-theater-festival-heerlen"
+    ],
+    "genre": "cabaret"
   },
   {
     "id": "nele-bauwens-en-de-zeven-schlagers",
@@ -9608,13 +9640,6 @@
     "genre": "stand-up"
   },
   {
-    "id": "reguliere-line-upshow-feestdagenprogrammering-comedyhuis-utrecht",
-    "titel": "Reguliere line-upshow – feestdagenprogrammering",
-    "artiesten": [],
-    "genre": "stand-up",
-    "theater": "comedyhuis-utrecht"
-  },
-  {
     "id": "remko-vrijdag-marko-maandag",
     "titel": "Marko Maandag",
     "artiesten": [
@@ -10048,6 +10073,14 @@
     "genre": "kindervoorstellingen"
   },
   {
+    "id": "roosje-pertz-goedgezind-en-flink",
+    "titel": "Goedgezind & Flink",
+    "artiesten": [
+      "roosje-pertz"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "rosa-doornenbal-to-believe-in-magic",
     "titel": "To Believe In Magic",
     "artiesten": [
@@ -10201,14 +10234,6 @@
   {
     "id": "saman-amini-s-integratieplan-2-black-sheep-can-fly",
     "titel": "Black Sheep Can Fly",
-    "artiesten": [
-      "saman-amini-s-integratieplan-2"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "saman-amini-s-integratieplan-2-nederlands-theater-festival-heerlen",
-    "titel": "Nederlands Theater Festival Heerlen",
     "artiesten": [
       "saman-amini-s-integratieplan-2"
     ],
@@ -10516,14 +10541,6 @@
     "genre": "kindervoorstellingen"
   },
   {
-    "id": "sinterklaas-in-theater-aan-het-spui-het-nationale-theater",
-    "titel": "Het Nationale Theater",
-    "artiesten": [
-      "sinterklaas-in-theater-aan-het-spui"
-    ],
-    "genre": "kindervoorstellingen"
-  },
-  {
     "id": "sinterklaas-in-walhalla-sint-salabim-kleine-walhalla",
     "titel": "Sinterklaas in Walhalla: Sint Salabim!",
     "artiesten": [],
@@ -10711,6 +10728,14 @@
     "artiesten": [],
     "genre": "stand-up",
     "theater": "comedytrain"
+  },
+  {
+    "id": "sprookjes-enzo-sssst",
+    "titel": "Sssst!!",
+    "artiesten": [
+      "sprookjes-enzo"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "sprookjes-enzo-wit",
@@ -12375,6 +12400,14 @@
       "wabi-sabi-theater-i-s-m-het-houten-huis-en-hiiit"
     ],
     "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "wankernomics-hard-stop",
+    "titel": "Hard Stop",
+    "artiesten": [
+      "wankernomics"
+    ],
+    "genre": "stand-up"
   },
   {
     "id": "wannes-cappelle-verstaanbaar",

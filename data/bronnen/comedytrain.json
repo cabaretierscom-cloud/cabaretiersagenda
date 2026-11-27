@@ -1,7 +1,7 @@
 {
   "bron": "comedytrain",
   "naam": "Comedytrain",
-  "opgehaald": "2026-11-22",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "comedytrain",
@@ -15,27 +15,28 @@
   "speeldata": [
     {
       "theater": "comedytrain",
-      "artiesten": [
-        "Ivo Graham"
-      ],
-      "titel": "Ivo Graham",
+      "artiesten": [],
+      "titel": "Spoor Bijster",
       "genre": "stand-up",
-      "datum": "2027-04-25",
-      "tijd": "20:00",
+      "datum": "2026-12-11",
+      "tijd": "21:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-presents-ivo-graham-2027-04-25/"
+      "bron": "https://www.comedytrain.nl/shows/spoor-bijster-2026-12-11/"
     },
     {
       "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "15:30 uur | Siegfried & Ralph (oftewel Howard Komproe & Murth Mossel)",
+      "artiesten": [
+        "Djoni de Vos",
+        "Kim Schuddeboom"
+      ],
+      "titel": "Dubbel",
       "genre": "stand-up",
-      "datum": "2027-02-07",
-      "tijd": "15:30",
+      "datum": "2027-01-14",
+      "tijd": "20:00",
       "status": "gepland",
       "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/1530-uur-siegfried-ralph-oftewel-howard-komproe-murth-mossel-2027-02-07/"
+      "bron": "https://www.comedytrain.nl/shows/dubbel-djoni-de-vos-kim-schuddeboom-2027-01-14/"
     },
     {
       "theater": "comedytrain",
@@ -47,6 +48,745 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/spoor-bijster-2027-01-16/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-02",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-02-3/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-15",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-15-3/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-29",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-29-3/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-22",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-22-3/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-30",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-30-3/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-09",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-09-3/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Open Podium",
+      "genre": "open-mic",
+      "datum": "2027-01-05",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-05/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-19",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-19-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2027-01-20",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2027-01-20/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-30",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-30-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-08",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-08-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-05",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-05-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-07",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-07/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-09",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-09-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-02",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-02-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up Matinee",
+      "genre": "stand-up",
+      "datum": "2027-01-31",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-31/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-02",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-02/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2027-01-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2027-01-06/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Open Podium",
+      "genre": "open-mic",
+      "datum": "2027-01-19",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-19/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-26",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-26-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up Matinee",
+      "genre": "stand-up",
+      "datum": "2027-01-24",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-24/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-16",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-16-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-12",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-12-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-06-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-05",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-05-3/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-11",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-11/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-26",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-26/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2026-12-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-02/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-22",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-22-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2026-12-16",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-16/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-15",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-15-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-08",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-08/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-13",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-13-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-25/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-06",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-06-3/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-12",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-12/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-20",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-20-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2027-01-13",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2027-01-13/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-21/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-19",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-19/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-08",
+      "tijd": "21:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-08-3/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-18/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-28/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-22",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-22/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-23",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-23-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-09",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-09/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2026-12-09",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-09/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-15",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-15/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-30",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-30/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-29",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-29-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-04",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-04-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up Matinee",
+      "genre": "stand-up",
+      "datum": "2027-01-03",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-03/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-20",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-20/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up Matinee",
+      "genre": "stand-up",
+      "datum": "2027-01-17",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-17/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-16",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-16/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Open Podium",
+      "genre": "open-mic",
+      "datum": "2027-01-26",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-26/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-29",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-29/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-23",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-23/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-14/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-27",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-27-2/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up Matinee",
+      "genre": "stand-up",
+      "datum": "2027-01-10",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-10/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-13",
+      "tijd": "22:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-13/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Line-up",
+      "genre": "stand-up",
+      "datum": "2027-02-27",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-27/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Comedytrain Try-Out",
+      "genre": "stand-up",
+      "datum": "2027-01-27",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": "try-out",
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2027-01-27/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Open Podium",
+      "genre": "open-mic",
+      "datum": "2027-01-12",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-12/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [],
+      "titel": "Siegfried & Ralph (oftewel Howard Komproe & Murth Mossel)",
+      "genre": "stand-up",
+      "datum": "2027-02-07",
+      "tijd": "15:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/siegfried-ralph-oftewel-howard-komproe-murth-mossel-2027-02-07/"
+    },
+    {
+      "theater": "comedytrain",
+      "artiesten": [
+        "Ivo Graham"
+      ],
+      "titel": "Ivo Graham",
+      "genre": "stand-up",
+      "datum": "2027-04-25",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedytrain.nl/shows/comedytrain-presents-ivo-graham-2027-04-25/"
     },
     {
       "theater": "comedytrain",
@@ -114,28 +854,6 @@
     {
       "theater": "comedytrain",
       "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2026-12-02",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-02/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2026-12-16",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-16/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
       "titel": "Comedytrain Line-up Matinee",
       "genre": "stand-up",
       "datum": "2026-12-06",
@@ -143,17 +861,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-12-06/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2026-12-09",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-12-09/"
     },
     {
       "theater": "comedytrain",
@@ -288,17 +995,6 @@
     {
       "theater": "comedytrain",
       "artiesten": [],
-      "titel": "Spoor Bijster",
-      "genre": "stand-up",
-      "datum": "2026-12-11",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/spoor-bijster-2026-12-11/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
       "titel": "Comedytrain Comedy op zolder",
       "genre": "stand-up",
       "datum": "2026-12-05",
@@ -306,19 +1002,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-comedy-op-zolder-2026-12-05-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [
-        "Stefan Pop"
-      ],
-      "titel": "Genoeg over mij",
-      "genre": "stand-up",
-      "datum": "2026-11-22",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/solo-show-stefan-pop-genoeg-over-mij-2026-11-22/"
     },
     {
       "theater": "comedytrain",
@@ -482,44 +1165,11 @@
       "artiesten": [],
       "titel": "Comedytrain Line-up",
       "genre": "stand-up",
-      "datum": "2027-01-15",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-15-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-08",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-08/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
       "datum": "2026-12-10",
       "tijd": "20:30",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-10/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-21/"
     },
     {
       "theater": "comedytrain",
@@ -548,176 +1198,11 @@
       "artiesten": [],
       "titel": "Comedytrain Line-up",
       "genre": "stand-up",
-      "datum": "2027-01-08",
-      "tijd": "21:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-08-3/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-28",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-28/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-22",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-22/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-23",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-23-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-09",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-09/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-15",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-15/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-30",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-30/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-29",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-29-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up Matinee",
-      "genre": "stand-up",
-      "datum": "2027-01-03",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-03/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
       "datum": "2026-12-04",
       "tijd": "19:00",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-04/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up Matinee",
-      "genre": "stand-up",
-      "datum": "2027-01-17",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-17/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-16",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-16/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-29",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-29/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-23",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-23/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-14",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-14/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up Matinee",
-      "genre": "stand-up",
-      "datum": "2027-01-10",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-10/"
     },
     {
       "theater": "comedytrain",
@@ -729,138 +1214,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-12-05/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Open Podium",
-      "genre": "open-mic",
-      "datum": "2027-01-05",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-05/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-08",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-08-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-07",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-07/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-09",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-09-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-02",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-02-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up Matinee",
-      "genre": "stand-up",
-      "datum": "2027-01-31",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-31/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-02",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-02/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up Matinee",
-      "genre": "stand-up",
-      "datum": "2027-01-24",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2027-01-24/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-16",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-16-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-22",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-22-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Open Podium",
-      "genre": "open-mic",
-      "datum": "2027-01-19",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-19/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Open Podium",
-      "genre": "open-mic",
-      "datum": "2027-01-26",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-26/"
     },
     {
       "theater": "comedytrain",
@@ -930,39 +1283,6 @@
     },
     {
       "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2026-11-26",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2026-11-26/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up Matinee",
-      "genre": "stand-up",
-      "datum": "2026-11-22",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-matinee-2026-11-22/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Open Podium",
-      "genre": "open-mic",
-      "datum": "2027-01-12",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/open-podium-2027-01-12/"
-    },
-    {
-      "theater": "comedytrain",
       "artiesten": [
         "Buğra Gedik",
         "Vincent Geers"
@@ -974,20 +1294,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/dubbel-bugra-gedik-vincent-geers-2026-11-28/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [
-        "Eric van Sauers",
-        "Sezgin Güleç"
-      ],
-      "titel": "Dubbel",
-      "genre": "stand-up",
-      "datum": "2026-11-22",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/dubbel-eric-van-sauers-sezgin-gulec-2026-11-22/"
     },
     {
       "theater": "comedytrain",
@@ -1025,312 +1331,7 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.comedytrain.nl/shows/open-podium-2026-12-03/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Open Podium",
-      "genre": "open-mic",
-      "datum": "2026-11-26",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/open-podium-2026-11-26/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2026-11-25",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2026-11-25/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-19",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-19-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-26",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-26-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-12",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-12-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-11",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-11/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-26",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-26/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-13",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-13-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-25",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-25/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-12",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-12/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-20",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-20-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-19",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-19/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-18",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-18/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-20",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-20/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-27",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-27-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-13",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-13/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-27",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-27/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-05",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-05-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-06",
-      "tijd": "22:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-06-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-05",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-05-3/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-06",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-06-3/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-02-04",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-02-04-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2027-01-20",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2027-01-20/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Line-up",
-      "genre": "stand-up",
-      "datum": "2027-01-30",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-line-up-2027-01-30-2/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2027-01-06",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2027-01-06/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2027-01-13",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2027-01-13/"
-    },
-    {
-      "theater": "comedytrain",
-      "artiesten": [],
-      "titel": "Comedytrain Try-Out",
-      "genre": "stand-up",
-      "datum": "2027-01-27",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": "try-out",
-      "bron": "https://www.comedytrain.nl/shows/comedytrain-try-out-2027-01-27/"
     }
   ],
-  "recensies": {
-    "https://www.comedytrain.nl/shows/solo-show-stefan-pop-genoeg-over-mij-2026-11-22/": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": null,
-        "citaat": "De show ‘Genoeg over mij’ van Stefan Pop onderstreept het essentiële belang van comedy in onrustige tijden."
-      }
-    ]
-  }
+  "recensies": {}
 }

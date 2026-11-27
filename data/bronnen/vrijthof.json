@@ -1,7 +1,7 @@
 {
   "bron": "vrijthof",
   "naam": "Theater aan het Vrijthof",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "theater-aan-het-vrijthof",
@@ -21,32 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Oscar Smit"
-      ],
-      "titel": "€ 472.000,-",
-      "genre": "cabaret",
-      "datum": "2027-01-14",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/472-000-oscar-smit"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "Guido Weijers"
-      ],
-      "titel": "Oudejaarsconference 2026",
-      "genre": "cabaret",
-      "datum": "2026-12-06",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/oudejaarsconference-2026-guido-weijers"
-    },
     {
       "theater": "theater-aan-het-vrijthof",
       "artiesten": [
@@ -72,6 +46,45 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/schaamteloos-oudejaars-2026-dolf-jansen"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "David van Rosmalen"
+      ],
+      "titel": "Als ik jou was",
+      "genre": "cabaret",
+      "datum": "2027-01-21",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/als-ik-jou-was-david-van-rosmalen"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Oscar Smit"
+      ],
+      "titel": "€ 472.000,-",
+      "genre": "cabaret",
+      "datum": "2027-01-14",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/472-000-oscar-smit"
+    },
+    {
+      "theater": "theater-aan-het-vrijthof",
+      "artiesten": [
+        "Guido Weijers"
+      ],
+      "titel": "Oudejaarsconference 2026",
+      "genre": "cabaret",
+      "datum": "2026-12-06",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/oudejaarsconference-2026-guido-weijers"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -111,19 +124,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/no-more-heroes-alex-agnew"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [
-        "David van Rosmalen"
-      ],
-      "titel": "Als ik jou was",
-      "genre": "cabaret",
-      "datum": "2027-01-21",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/als-ik-jou-was-david-van-rosmalen"
     },
     {
       "theater": "theater-aan-het-vrijthof",
@@ -501,17 +501,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/en-verbied-de-vogels-om-te-fluiten-ayoub"
-    },
-    {
-      "theater": "theater-aan-het-vrijthof",
-      "artiesten": [],
-      "titel": "- Knock Out Comedy Crew",
-      "genre": "cabaret",
-      "datum": "2027-04-06",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.theateraanhetvrijthof.nl/voorstellingen/cabaret/knock-out-comedy-crew"
     }
   ],
   "recensies": {

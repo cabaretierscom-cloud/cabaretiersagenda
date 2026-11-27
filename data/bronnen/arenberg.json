@@ -1,7 +1,7 @@
 {
   "bron": "arenberg",
   "naam": "Arenberg",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "arenberg",
@@ -20,24 +20,11 @@
       ],
       "titel": "Drift",
       "genre": "stand-up",
-      "datum": "2026-11-26",
+      "datum": "2026-11-27",
       "tijd": "20:15",
       "status": "gepland",
       "soort": null,
       "bron": "https://www.arenberg.be/nl/programma/william-boeva/a0NP500000Exa2dMAB"
-    },
-    {
-      "theater": "arenberg",
-      "artiesten": [
-        "De Willekeur"
-      ],
-      "titel": "Freestyle comedy",
-      "genre": "stand-up",
-      "datum": "2026-11-26",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.arenberg.be/nl/programma/de-willekeur/a0NP500000LYyX8MAL"
     },
     {
       "theater": "arenberg",
@@ -426,6 +413,19 @@
     {
       "theater": "arenberg",
       "artiesten": [
+        "De Willekeur"
+      ],
+      "titel": "Freestyle comedy",
+      "genre": "stand-up",
+      "datum": "2027-02-25",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/de-willekeur/a0NP500000LYyX8MAL"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
         "Philippe Geubels"
       ],
       "titel": "Taboe proefopname: Ouders van kinderen met een beperking",
@@ -730,6 +730,19 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://www.arenberg.be/nl/programma/senne-lokko-2/a0NP500000GTh6uMAD"
+    },
+    {
+      "theater": "arenberg",
+      "artiesten": [
+        "Wankernomics"
+      ],
+      "titel": "Hard Stop",
+      "genre": "stand-up",
+      "datum": "2027-09-22",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/wankernomics/a0NP500000YNj8vMAD"
     },
     {
       "theater": "arenberg",

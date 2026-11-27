@@ -1,7 +1,7 @@
 {
   "bron": "parktheater",
   "naam": "Parktheater Eindhoven",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "parktheater-eindhoven",
@@ -13,32 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Sara Kroos"
-      ],
-      "titel": "Prikkelarme Kermis",
-      "genre": "comedy",
-      "datum": "2026-11-26",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/prikkelarme-kermis-n3tr"
-    },
-    {
-      "theater": "parktheater-eindhoven",
-      "artiesten": [
-        "Amsterdams Studenten Cabaretfestival"
-      ],
-      "titel": "Finalistentournee 2026",
-      "genre": "comedy",
-      "datum": "2026-11-26",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.parktheater.nl/programma/finalistentournee-2026-hqh5"
-    },
     {
       "theater": "parktheater-eindhoven",
       "artiesten": [
@@ -2358,7 +2332,7 @@
       "genre": "comedy",
       "datum": "2027-05-07",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/slechtste-liedjes-van-de-straat-xy1t"
     },

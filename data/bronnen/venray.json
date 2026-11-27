@@ -1,7 +1,7 @@
 {
   "bron": "venray",
   "naam": "Schouwburg Venray",
-  "opgehaald": "2026-11-26",
+  "opgehaald": "2026-11-27",
   "theaters": [
     {
       "id": "schouwburg-venray",
@@ -13,45 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "schouwburg-venray",
-      "artiesten": [
-        "De Mega Sint Show 2026"
-      ],
-      "titel": "Met o.a. Party Piet Pablo, Love Piet en Sinterklaas",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-26",
-      "tijd": "14:45",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgvenray.nl/programma/14523/de-mega-sint-show-2026"
-    },
-    {
-      "theater": "schouwburg-venray",
-      "artiesten": [
-        "De Mega Sint Show 2026"
-      ],
-      "titel": "Met o.a. Party Piet Pablo, Love Piet en Sinterklaas",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-26",
-      "tijd": "17:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgvenray.nl/programma/14524/de-mega-sint-show-2026"
-    },
-    {
-      "theater": "schouwburg-venray",
-      "artiesten": [
-        "De Mega Sint Show 2026"
-      ],
-      "titel": "Met o.a. Party Piet Pablo, Love Piet en Sinterklaas",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-26",
-      "tijd": "19:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.schouwburgvenray.nl/programma/15096/de-mega-sint-show-2026"
-    },
     {
       "theater": "schouwburg-venray",
       "artiesten": [
@@ -530,7 +491,7 @@
       "datum": "2027-10-06",
       "tijd": "20:15",
       "status": "gepland",
-      "soort": "try-out",
+      "soort": null,
       "bron": "https://www.schouwburgvenray.nl/programma/15211/kor-hoebe"
     },
     {
