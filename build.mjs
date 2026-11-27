@@ -89,6 +89,7 @@ mkdirSync(join(out, "in-de-buurt"), { recursive: true });
 writeFileSync(join(out, "in-de-buurt", "postcodes.js"), readFileSync(new URL("./data/postcodes.json", import.meta.url), "utf8"));
 write("/vanavond/", t.dagPagina("vanavond"));
 write("/dit-weekend/", t.dagPagina("dit-weekend"));
+for (const v of ["b", "c"]) { write(`/vanavond-${v}/`, t.dagPagina("vanavond", null, v)); write(`/dit-weekend-${v}/`, t.dagPagina("dit-weekend", null, v)); }
 for (const m of t.maanden) write(`/agenda/${t.maandId(m)}/`, t.agendaMaand(m));
 write("/plaatsen/", t.plaatsIndex());
 // Bij mij in de buurt: zoeken op afstand (locatie of plaats), in de browser.

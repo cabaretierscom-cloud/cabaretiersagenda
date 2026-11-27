@@ -1677,3 +1677,11 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 @media (max-width: 760px) { .zalen-kop .az-tools { grid-template-columns: auto auto; } .zalen-kop .az-tools .search, .zalen-kop .letters { grid-column: 1 / -1; } }
 @media (max-width: 560px) { .zalen-kop .az-tools { grid-template-columns: 1fr; } .zalen-kop .az-tools > * { grid-column: 1; } }
 .zalen-lijst .az-group.az-populair { padding-top: 12px; }
+/* VOORSTEL vanavond/dit weekend */
+.dag-lijst { padding-top: 18px; }
+.agenda-kop.dag-kop .periode { margin-top: 16px; }
+.dag-kop + .wall { margin-top: 26px; }
+.tijd-blok { margin-top: 6px; }
+.tijd-kop { display: flex; align-items: baseline; gap: 10px; margin: 18px 0 2px; font-family: var(--font-display); font-weight: 900; font-size: 2rem; line-height: 1; }
+.tijd-kop small { font-family: var(--font-body); font-weight: 500; font-size: .85rem; color: var(--ink-2); }
+.tijd-blok:not(:has(.gig:not([hidden]))) { display: none; }
