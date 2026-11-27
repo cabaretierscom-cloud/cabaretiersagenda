@@ -3599,6 +3599,15 @@
     "kleur": "oranje"
   },
   {
+    "id": "julie-delrue",
+    "naam": "Julie Delrue",
+    "land": "BE",
+    "kleur": "roze",
+    "ookIn": [
+      "portie-gemengd"
+    ]
+  },
+  {
     "id": "juliet",
     "naam": "Juliet",
     "land": null,
@@ -6172,6 +6181,12 @@
     },
     "geslacht": "man",
     "geslachtBron": "https://www.wikidata.org/wiki/Q2437784"
+  },
+  {
+    "id": "roy-aernouts",
+    "naam": "Roy Aernouts",
+    "land": null,
+    "kleur": "lila"
   },
   {
     "id": "rundfunk",

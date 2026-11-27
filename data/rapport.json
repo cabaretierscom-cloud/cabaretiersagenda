@@ -1,12 +1,12 @@
 {
   "datum": "2026-11-27",
   "totaal": {
-    "speeldata": 9814,
-    "komend": 8253,
-    "artiesten": 998,
-    "zalen": 758,
-    "plaatsen": 513,
-    "voorstellingen": 1429
+    "speeldata": 9842,
+    "komend": 8281,
+    "artiesten": 1000,
+    "zalen": 765,
+    "plaatsen": 517,
+    "voorstellingen": 1430
   },
   "bronnen": [
     {
@@ -658,6 +658,14 @@
       "dubbel": 10
     },
     {
+      "bron": "jimmiedimmick",
+      "naam": "Speellijsten van Jimmie Dimmick (import)",
+      "opgehaald": "2026-11-27",
+      "speeldata": 28,
+      "vorige": 28,
+      "dubbel": 1
+    },
+    {
       "bron": "kobra",
       "naam": "Speellijsten van Kobra Theaterproducties (import)",
       "opgehaald": "2026-11-19",
@@ -731,6 +739,10 @@
       {
         "id": "wankernomics",
         "naam": "Wankernomics"
+      },
+      {
+        "id": "roy-aernouts",
+        "naam": "Roy Aernouts"
       }
     ],
     "zalen": [
@@ -738,6 +750,55 @@
         "id": "zaal-apollonia-brakel",
         "naam": "Zaal Apollonia",
         "plaats": "Brakel",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "feestzaal-olvi-boom",
+        "naam": "Feestzaal OLVI",
+        "plaats": "Boom",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-brugge",
+        "naam": "CC Brugge",
+        "plaats": "Brugge",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "gc-felix-sohie-hoeilaart",
+        "naam": "GC Felix Sohie",
+        "plaats": "Hoeilaart",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cc-nova-nazareth",
+        "naam": "CC Nova",
+        "plaats": "Nazareth",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "de-klisse-oostende",
+        "naam": "De Klisse",
+        "plaats": "Oostende",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "cultuurhuis-het-loo-tessenderlo",
+        "naam": "Cultuurhuis Het Loo",
+        "plaats": "Tessenderlo",
+        "land": "BE",
+        "website": null
+      },
+      {
+        "id": "oc-t-waaigat-zwijndrecht",
+        "naam": "OC 't Waaigat",
+        "plaats": "Zwijndrecht",
         "land": "BE",
         "website": null
       }
@@ -789,6 +850,13 @@
         "titel": "Hard Stop",
         "artiesten": [
           "wankernomics"
+        ]
+      },
+      {
+        "id": "roy-aernouts-zaalshow-1",
+        "titel": "Zaalshow 1",
+        "artiesten": [
+          "roy-aernouts"
         ]
       }
     ]
@@ -1076,12 +1144,12 @@
     },
     {
       "datum": "2026-11-27",
-      "speeldata": 9814,
-      "komend": 8253,
-      "artiesten": 998,
-      "zalen": 758,
-      "plaatsen": 513,
-      "voorstellingen": 1429
+      "speeldata": 9842,
+      "komend": 8281,
+      "artiesten": 1000,
+      "zalen": 765,
+      "plaatsen": 517,
+      "voorstellingen": 1430
     }
   ]
 }

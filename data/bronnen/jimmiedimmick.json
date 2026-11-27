@@ -1,0 +1,561 @@
+{
+  "bron": "jimmiedimmick",
+  "naam": "Speellijsten van Jimmie Dimmick (import)",
+  "soort": "speellijst",
+  "opgehaald": "2026-11-27",
+  "theaters": [],
+  "speeldata": [
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC Gildhof",
+        "plaats": "Tielt",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-11-27",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.gildhof.be/sketch-portie-gemengd"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Woeker",
+        "plaats": "Oudenaarde",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-11-28",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.oudenaarde.be/nl/de-woeker/aanbod/overzicht/portie-gemengd"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Cultuurhuis De Kimpel",
+        "plaats": "Bilzen",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-12-03",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.bilzenhoeselt.be/activiteiten/detail/3557/portie-gemengd-sketch"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "City",
+        "plaats": "Nieuwpoort",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-12-04",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.cultuurnieuwpoort.be/activiteit/sketch-scenes-uit-het-leven-van-een-moderne-mens"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Cultuurhuis De Herbakker",
+        "plaats": "Eeklo",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-12-05",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.cultuurhuisherbakker.be/activiteiten/detail/6707/portie-gemengd-sketch"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC De Brouckere",
+        "plaats": "Torhout",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-12-10",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccdebrouckere.be/sketch"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Velinx",
+        "plaats": "Tongeren",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-12-11",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.develinx.be/evenement/sketch"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC Palethe",
+        "plaats": "Pelt",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-12-12",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.palethe.be/portie-gemengd-sketch"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "OC 't Waaigat",
+        "plaats": "Zwijndrecht",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-12-16",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.tervesten.be/portie-gemengd-sketch"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "GC De Melkerij",
+        "plaats": "Zemst",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-12-17",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.zemst.be/activiteiten/detail/4101/sketch"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Cultuurhuis De Leest",
+        "plaats": "Izegem",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-12-18",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.deleest.be/deleest/nieuws/sketch"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Cultuurhuis Het Loo",
+        "plaats": "Tessenderlo",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2026-12-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.tessenderlo-ham.be/activiteiten/portie-gemengd-steven-beersmans-julie-delrue-liesa-naert-sketch"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "c o r s o",
+        "plaats": "Berchem",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-05-01",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.jimmiedimmick.be/portie-gemengd"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC De Borre",
+        "plaats": "Bierbeek",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-05-12",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.deborre.be/cultuur/sketch"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC Zwaneberg",
+        "plaats": "Heist-op-den-Berg",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-05-13",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.zwaneberg.be/nl/event/sketch"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC Nova",
+        "plaats": "Nazareth",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-05-15",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://popallure.be/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Capitole Gent",
+        "plaats": "Gent",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-05-20",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.comedyshows.be/kalender/portie-gemengd/2027-05-20/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "GC Spikkerelle",
+        "plaats": "Avelgem",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-05-21",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.uitinvlaanderen.be/agenda/e/portie-gemengd-sketch/98c75beb-75a8-4417-95d0-bdff2c9291ab"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC De Steiger",
+        "plaats": "Menen",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-05-22",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdesteiger.be/nl/event/portie-gemengd"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "GC Felix Sohie",
+        "plaats": "Hoeilaart",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-05-25",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://hoeilaart.be/activiteiten/sketch-portie-gemengd"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "GC De Zandloper",
+        "plaats": "Wemmel",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-05-27",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://tickets.dezandloper.be/nl/buyingflow/tickets/40787/76245/"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC De Adelberg",
+        "plaats": "Lommel",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-05-28",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeadelberg.be/programma/portie-gemengd-steven-beersmans-julie-delrue-liesa-naert-mbgm"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC De Plomblom",
+        "plaats": "Ninove",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-06-01",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.ccdeplomblom.org/voorstelling/1100/portie-gemengd"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Arenberg",
+        "plaats": "Antwerpen",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-06-03",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.arenberg.be/nl/programma/sketch/a0NP500000HnpXWMAZ"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "CC Brugge",
+        "plaats": "Brugge",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Portie Gemengd"
+      ],
+      "titel": "Sketch!",
+      "genre": "comedy",
+      "datum": "2027-06-04",
+      "tijd": null,
+      "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://www.ccbrugge.be/agenda/sketch-hvl7"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Kaleidoscoop",
+        "plaats": "Mortsel",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Roy Aernouts"
+      ],
+      "titel": "Zaalshow 1",
+      "genre": "stand-up",
+      "datum": "2026-12-04",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.jimmiedimmick.be/royaernouts"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "De Klisse",
+        "plaats": "Oostende",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Roy Aernouts"
+      ],
+      "titel": "Zaalshow 1",
+      "genre": "stand-up",
+      "datum": "2026-12-10",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://comedy-oostende.weticket.io/royaernouts"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Feestzaal OLVI",
+        "plaats": "Boom",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Roy Aernouts"
+      ],
+      "titel": "Zaalshow 1",
+      "genre": "stand-up",
+      "datum": "2026-12-11",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.jimmiedimmick.be/royaernouts"
+    },
+    {
+      "theater": {
+        "zoeken": true,
+        "naam": "Schouwburg De Kern",
+        "plaats": "Wilrijk",
+        "land": "BE",
+        "website": null
+      },
+      "artiesten": [
+        "Roy Aernouts"
+      ],
+      "titel": "Zaalshow 1",
+      "genre": "stand-up",
+      "datum": "2026-12-19",
+      "tijd": null,
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.jimmiedimmick.be/royaernouts"
+    }
+  ],
+  "recensies": {}
+}
