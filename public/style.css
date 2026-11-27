@@ -1686,3 +1686,39 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 .artiesten-kop > .wall { padding-top: 26px; }
 .artiesten-lijst .az-tools { margin-top: 8px; }
 .artiesten-lijst > .sub-head { margin-top: 8px; }
+/* /plaatsen/: kleurvlak, kaart van Nederland en Vlaanderen en een compacte lijst per land en letter (optie C, november 2026). */
+.plaatsen-kop .block-head { margin-bottom: 0; }
+.plaatsen-kop .az-tools { grid-template-columns: minmax(0, 32rem) auto auto; }
+.plaatsen-blok { padding-top: 22px; }
+.plaats-land + .plaats-land { margin-top: 40px; }
+.plaats-land > h2 { display: flex; align-items: baseline; gap: 12px; margin: 0 0 4px; padding-bottom: 6px; border-bottom: 3px dotted var(--ink); font-family: var(--font-display); font-weight: 900; font-size: 2.6rem; line-height: 1; }
+.plaats-land > h2 small { font-family: var(--font-body); font-weight: 500; font-size: .9rem; color: var(--ink-2); }
+.plaats-letter { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.plaats-letter h3 { margin: 0; font-family: var(--font-display); font-weight: 900; font-size: 1.9rem; line-height: 1; }
+.plaats-letter ul { list-style: none; margin: 0; padding: 0; columns: 4 11rem; column-gap: 28px; }
+.plaats-letter li { break-inside: avoid; }
+.plaats-letter li a { display: flex; justify-content: space-between; gap: 10px; padding: 4px 0; color: var(--ink); text-decoration: none; }
+.plaats-letter li a:hover .pn { text-decoration: underline; }
+.plaats-letter .pc { font-variant-numeric: tabular-nums; color: var(--ink-2); font-size: .85rem; }
+.plaats-letter li.groot .pn { font-weight: 700; }
+@media (max-width: 760px) { .plaatsen-kop .az-tools { grid-template-columns: auto auto; } .plaatsen-kop .az-tools .search { grid-column: 1 / -1; } .plaats-letter { grid-template-columns: 34px minmax(0, 1fr); } .plaats-letter ul { columns: 2; column-gap: 18px; } .plaats-land > h2 { font-size: 2rem; } }
+/* Kaart */
+.plaats-kaart { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 32px; align-items: start; padding-top: 32px; }
+.pk-kaart svg { display: block; width: 100%; height: auto; }
+.pk-provincies path { stroke: var(--paper); stroke-width: 2; stroke-linejoin: round; }
+.pk-provincies .pk-nl { fill: color-mix(in srgb, var(--ink) 9%, var(--paper)); }
+.pk-provincies .pk-be { fill: color-mix(in srgb, var(--ink) 15%, var(--paper)); }
+.pk-provincies .pk-meer { fill: var(--paper); }
+.pk-stip { fill: var(--bg); stroke: var(--ink); stroke-width: 1.5; cursor: pointer; transition: transform .15s; transform-box: fill-box; transform-origin: center; }
+a:hover > .pk-stip, a:focus > .pk-stip { transform: scale(1.25); }
+.pk-labels text { font: 700 26px/1 var(--font-body); fill: var(--ink); paint-order: stroke; stroke: var(--paper); stroke-width: 6px; stroke-linejoin: round; pointer-events: none; }
+.pk-top h2 { margin: 0 0 6px; font-family: var(--font-display); font-weight: 900; font-size: 2.2rem; line-height: 1; }
+.pk-top p { color: var(--ink-2); margin: 0 0 12px; }
+.pk-top ol { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+.pk-top li { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.pk-top li a { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 600; text-decoration: none; }
+.pk-top li a:hover { text-decoration: underline; }
+.pk-top li > span { font-variant-numeric: tabular-nums; color: var(--ink-2); font-size: .9rem; }
+.pk-bol { width: 14px; height: 14px; border-radius: 50%; background: var(--bg); box-shadow: 0 0 0 1.5px var(--ink); }
+@media (max-width: 860px) { .plaats-kaart { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .plaatsen-kop .az-tools { grid-template-columns: minmax(0, 1fr); justify-content: stretch; } .plaatsen-kop .zalen-buurt { justify-self: start; } }
