@@ -51,6 +51,11 @@ AddType application/manifest+json .webmanifest
   RewriteRule ^agenda/(cabaret|kindervoorstellingen)/([^/]+)/?$ https://www.cabaretiers.com/theaters-in-$2/ [L,R=301]
   # Vanavond/dit weekend per stad bestaat niet meer (dubbel met de plaatspagina): altijd naar de plaatspagina.
   RewriteRule ^theaters-in-([^/]+)/(vanavond|dit-weekend)/?$ https://www.cabaretiers.com/theaters-in-$1/ [L,R=301]
+  # Plaatsen die eigenlijk een zaal of programma waren (november 2026).
+  RewriteRule ^theaters-in-chasse/?$ https://www.cabaretiers.com/theaters-in-breda/ [L,R=301]
+  RewriteRule ^theaters-in-best-of-stand-up/?$ https://www.cabaretiers.com/theaters-in-rotterdam/ [L,R=301]
+  RewriteRule ^theaters-in-breede-beek/?$ https://www.cabaretiers.com/theaters-in-nijkerk/ [L,R=301]
+  RewriteRule ^theaters-in-alphen-aan-de-rijn/?$ https://www.cabaretiers.com/theaters-in-alphen-aan-den-rijn/ [L,R=301]
 </IfModule>
 
 # Lettertypes, afbeeldingen, CSS en JS mogen een tijd in de browser blijven;

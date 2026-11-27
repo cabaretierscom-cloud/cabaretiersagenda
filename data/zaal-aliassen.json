@@ -56,7 +56,10 @@
     "tr-schouwburg-rotterdam": "theater-rotterdam",
     "cc-evergem": "cultuurcentrum-evergem",
     "cc-hasselt": "cultuurcentrum-hasselt",
-    "plt-theater-kerkrade": "theater-kerkrade"
+    "plt-theater-kerkrade": "theater-kerkrade",
+    "breda-chasse": "chasse",
+    "comedy-club-haug-best-of-stand-up": "comedy-club-haug-rotterdam",
+    "parkvilla-alphen-aan-de-rijn": "parkvilla"
   },
   "verbeteren": {
     "de-pinte-polderbos": {
@@ -152,6 +155,11 @@
     },
     "cc-zwaneberg-heist-op-den-berg": {
       "plaats": "Heist-op-den-Berg"
+    },
+    "theater-streams-breede-beek": {
+      "naam": "Streams Breede Beek",
+      "plaats": "Nijkerk",
+      "website": "https://streamsbreedebeek.nl"
     }
   }
 }

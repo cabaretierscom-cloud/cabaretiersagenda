@@ -2896,14 +2896,6 @@
     "foto": null
   },
   {
-    "id": "parkvilla-alphen-aan-de-rijn",
-    "naam": "Parkvilla",
-    "plaats": "Alphen aan de Rijn",
-    "land": "NL",
-    "soort": "theater",
-    "website": null
-  },
-  {
     "id": "castellum",
     "naam": "Castellum",
     "plaats": "Alphen aan den Rijn",
@@ -2952,7 +2944,10 @@
         "taal": "nl"
       },
       "datum": null
-    }
+    },
+    "oudeIds": [
+      "parkvilla-alphen-aan-de-rijn"
+    ]
   },
   {
     "id": "de-lieve-vrouw-amersfoort",
@@ -3586,15 +3581,6 @@
     "website": "https://tejaterke.nl"
   },
   {
-    "id": "comedy-club-haug-best-of-stand-up",
-    "naam": "Comedy Club Haug",
-    "plaats": "Best of Stand-Up",
-    "land": "NL",
-    "soort": "comedyclub",
-    "website": "https://comedyclubhaug.com",
-    "foto": null
-  },
-  {
     "id": "theater-de-molen-beuningen",
     "naam": "Theater De Molen",
     "plaats": "Beuningen",
@@ -3772,7 +3758,10 @@
         "taal": "nl"
       },
       "datum": "2009-03-28"
-    }
+    },
+    "oudeIds": [
+      "breda-chasse"
+    ]
   },
   {
     "id": "de-avenue-breda",
@@ -3789,15 +3778,6 @@
     "land": "NL",
     "soort": "theater",
     "website": "https://www.chasse.nl"
-  },
-  {
-    "id": "theater-streams-breede-beek",
-    "naam": "Theater Streams",
-    "plaats": "Breede Beek",
-    "land": "NL",
-    "soort": "theater",
-    "website": "https://bestellen.streamsbreedebeek.nl",
-    "foto": null
   },
   {
     "id": "brestheater-brielle",
@@ -3880,14 +3860,6 @@
       "breedte": 562,
       "hoogte": 800
     }
-  },
-  {
-    "id": "breda-chasse",
-    "naam": "Breda",
-    "plaats": "Chassé",
-    "land": "NL",
-    "soort": "theater",
-    "website": "https://www.chasse.nl"
   },
   {
     "id": "theater-hofpoort-coevorden",
@@ -5892,6 +5864,15 @@
     "website": "https://cabaret-nigtevecht.nl"
   },
   {
+    "id": "theater-streams-breede-beek",
+    "naam": "Streams Breede Beek",
+    "plaats": "Nijkerk",
+    "land": "NL",
+    "soort": "theater",
+    "website": "https://streamsbreedebeek.nl",
+    "foto": null
+  },
+  {
     "id": "de-vereeniging",
     "naam": "Concertgebouw De Vereeniging",
     "plaats": "Nijmegen",
@@ -6486,7 +6467,10 @@
     "land": "NL",
     "soort": "comedyclub",
     "website": "https://comedyclubhaug.com",
-    "foto": null
+    "foto": null,
+    "oudeIds": [
+      "comedy-club-haug-best-of-stand-up"
+    ]
   },
   {
     "id": "cultuurpodium-in-de-lugt-rotterdam",
