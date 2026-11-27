@@ -1619,7 +1619,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const namen = (lijst, n) => opsomming(lijst.slice(0, n).map(({ a }) => artiestLink(a)));
 
     const intro = {
-      alle: `Op Cabaretiers.com vind je ${items.length} cabaretiers en comedians die de komende tijd in Nederland en België op het podium staan, samen goed voor ${plural(gigs.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}. Van grote namen in de schouwburg tot nieuw talent in een kleine zaal: per cabaretier zie je waar en wanneer je kunt gaan kijken.`,
+      alle: `Van de schouwburg tot de kleine zaal: ${items.length} cabaretiers en comedians in Nederland en België, samen goed voor ${plural(gigs.length, "voorstelling", "voorstellingen")}. Per artiest zie je waar en wanneer ze spelen.`,
       vrouw: `${items.length} vrouwelijke cabaretiers en comedians staan de komende tijd op het podium, samen goed voor ${plural(gigs.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}. Op zoek naar een vrouwelijke cabaretier, een cabaretière of een comedienne? Hieronder vind je ze allemaal, met hun speeldata in Nederland en België.`,
       man: `${items.length} mannelijke cabaretiers en comedians staan de komende tijd op het podium, samen goed voor ${plural(gigs.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}. Hieronder vind je ze allemaal, met hun speeldata in Nederland en België.`,
     }[soort];
