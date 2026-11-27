@@ -1519,19 +1519,20 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ? `<img src="${esc(f.bestand)}" alt=""${uitsnede(f, 4 / 3)} loading="lazy" decoding="async" width="${f.breedte || 800}" height="${f.hoogte || 600}">`
         : `<span class="az-letter">${esc(t.naam)}</span>`}</span>`;
     };
-    return `<div class="az-tools">
+    const gereedschap = `<div class="az-tools">
         <div class="field search">
           <label for="f-artiest">Zoek een theater of plaats</label>
           <input id="f-artiest" type="search" autocomplete="off" placeholder="Bijvoorbeeld: Carré of Utrecht">
         </div>
         <div class="az-sorteer" role="group" aria-label="Sorteren" hidden><span>Sorteer</span><button type="button" data-sorteer="voorstellingen" aria-pressed="true">Meeste voorstellingen</button><button type="button" data-sorteer="populair" aria-pressed="false">Meest bekeken</button><button type="button" data-sorteer="az" aria-pressed="false">A-Z</button></div>
+        <a class="zalen-buurt" href="/in-de-buurt/?locatie=1">${ICON.pin}In de buurt</a>
         <nav class="letters" aria-label="Spring naar letter">${[...groepen.keys()].map((l) => `<a href="#letter-${l === "#" ? "0" : l}">${l}</a>`).join("")}</nav>
-      </div>
-      <div class="az az-zalen" id="az">${[...groepen].map(([l, lijst]) => `<section class="az-group" id="letter-${l === "#" ? "0" : l}">
+      </div>`;
+    return { gereedschap, lijst: `<div class="az az-zalen" id="az">${[...groepen].map(([l, lijst]) => `<section class="az-group" id="letter-${l === "#" ? "0" : l}">
         <h3>${l}</h3>
         <ul>${lijst.map(({ t, n }) => `<li data-naam="${esc(`${t.naam} ${t.plaats}`.toLowerCase())}" data-rang-voorstellingen="${opAantal.get(t.id)}" data-rang-populair="${opBekeken.get(t.id)}"><a href="/theaters/${t.id}/">${foto(t)}<span class="ac">${plural(n, "voorstelling", "voorstellingen")}</span><span class="an">${esc(t.naam)}</span><span class="ad">${esc(t.plaats)}${t.soort !== "theater" ? ` · ${esc(t.soort)}` : ""}</span></a></li>`).join("")}</ul>
       </section>`).join("")}</div>
-      <p class="empty" id="az-leeg" hidden>Geen theater of plaats gevonden met deze naam.</p>`;
+      <p class="empty" id="az-leeg" hidden>Geen theater of plaats gevonden met deze naam.</p>` };
   }
 
   function artistIndex() {
@@ -2878,14 +2879,20 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
 
   function theaterIndex() {
     const overzicht = theatersOverzicht();
-    const body = `<section class="block wrap" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">Theaters</h1><p>${tellers.zalen} zalen, comedyclubs en podia met aankomende voorstellingen.</p></div>
-      <nav class="month-nav stad-nav" aria-label="Theaters met de meeste voorstellingen">${BUURT_TEGEL}${zalenMetData.map((t) => [t, db.gigsForTheater(t.id).length]).sort((x, y) => y[1] - x[1] || x[0].naam.localeCompare(y[0].naam, "nl")).slice(0, 15).map(([t, n]) =>
-        `<a href="/theaters/${t.id}/"><b>${esc(t.naam)}</b><span>${esc(t.plaats)} · ${plural(n, "voorstelling", "voorstellingen")}</span></a>`).join("")}</nav>
-      <section class="az-blok" aria-labelledby="az-titel">
-      <h2 class="sub-head" id="az-titel">Alle theaters</h2>
-      ${zalenAz(zalenMetData)}
-      </section>
+    // Kop in het gekleurde vlak zoals /agenda/ en /in-de-buurt/ (andere kleur per bezoek, bolletjesraster), met het
+    // kruimelpad, zoeken, sorteren en de letters erin; de stippellijn gaat over in de affichewand. Geen zijwaartse
+    // rij meer (verzoek van de eigenaar, november 2026).
+    const az = zalenAz(zalenMetData);
+    const body = `${KOP_KLEUR}
+    <div class="home-kop agenda-kop zalen-kop">
+    <!--kruimelpad-->
+    <section class="wrap" aria-labelledby="t">
+      <div class="block-head"><h1 id="t">Theaters</h1><p>${tellers.zalen} zalen, comedyclubs en podia met aankomende voorstellingen in Nederland en België.</p></div>
+      ${az.gereedschap}
+    </section>
+    </div>
+    <section class="block wrap az-blok zalen-lijst" aria-label="Alle theaters">
+      ${az.lijst}
       <section class="seo-tekst prose" aria-labelledby="over-titel">
         <h2 id="over-titel">Theaters met cabaret en comedy</h2>
         ${overzicht.tekst.join("\n        ")}

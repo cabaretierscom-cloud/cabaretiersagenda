@@ -1571,12 +1571,12 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   .buurt-filters .toggle-veld { flex-basis: 100%; }
 }
 /* Kruimelpad in het gekleurde vlak (/in-de-buurt/), in de kleur van de inkt van het vlak. */
-.buurt-kop { padding-top: 6px; }
-.buurt-kop .kruimelpad ol { padding-block: 8px 10px; }
-.buurt-kop .kruimelpad :is(ol, a, [aria-current="page"]) { color: var(--kop-inkt); }
-.buurt-kop .kruimelpad li + li::before { color: var(--kop-inkt); opacity: .7; }
-.buurt-kop .kruimelpad a { opacity: .8; }
-.buurt-kop .kruimelpad a:hover { opacity: 1; color: var(--kop-inkt); }
+.buurt-kop, .zalen-kop { padding-top: 6px; }
+:is(.buurt-kop, .zalen-kop) .kruimelpad ol { padding-block: 8px 10px; }
+:is(.buurt-kop, .zalen-kop) .kruimelpad :is(ol, a, [aria-current="page"]) { color: var(--kop-inkt); }
+:is(.buurt-kop, .zalen-kop) .kruimelpad li + li::before { color: var(--kop-inkt); opacity: .7; }
+:is(.buurt-kop, .zalen-kop) .kruimelpad a { opacity: .8; }
+:is(.buurt-kop, .zalen-kop) .kruimelpad a:hover { opacity: 1; color: var(--kop-inkt); }
 /* Mijn locatie en de afstandknop precies even hoog (44 px, ook op de telefoon; verzoek van de eigenaar, november 2026). */
 .buurt-kop .buurt-locatie, .buurt-kop .buurt-straal { box-sizing: border-box; height: 44px; min-height: 0; }
 .buurt-kop .buurt-straal button, .buurt-kop .buurt-straal .buurt-afstand-label { height: 100%; min-height: 0; }
@@ -1658,3 +1658,19 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   .az-sorteer button { padding: 0 12px; font-size: .9rem; }
 }
 @media (max-width: 389px) { .az-sorteer button { padding: 0 9px; font-size: .85rem; } }
+/* /theaters/: zoeken, sorteren, In de buurt en de letters in het gekleurde vlak (zoals /agenda/), daarna de affichewand. */
+.zalen-kop .az-tools { margin: 16px 0 0; grid-template-columns: minmax(0, 32rem) auto auto; justify-content: start; }
+.zalen-kop .az-tools .search input { min-height: 52px; }
+.zalen-kop .letters a { background: var(--paper); }
+.zalen-kop .letters a:hover { background: var(--ink); }
+.zalen-buurt {
+  display: inline-flex; align-items: center; gap: 7px; justify-self: start; min-height: 44px; padding: 0 16px; border-radius: 999px;
+  border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); font-weight: 600; font-size: .95rem; text-decoration: none; white-space: nowrap;
+}
+.zalen-buurt svg { width: 17px; height: 17px; }
+.zalen-buurt:hover { box-shadow: inset 0 0 0 1px var(--ink); }
+.zalen-lijst { padding-top: 6px; }
+.zalen-lijst .az-group.az-populair ul { border-top: 0; }
+@media (max-width: 760px) { .zalen-kop .az-tools { grid-template-columns: auto auto; } .zalen-kop .az-tools .search, .zalen-kop .letters { grid-column: 1 / -1; } }
+@media (max-width: 560px) { .zalen-kop .az-tools { grid-template-columns: 1fr; } .zalen-kop .az-tools > * { grid-column: 1; } }
+.zalen-lijst .az-group.az-populair { padding-top: 12px; }
