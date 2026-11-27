@@ -1571,7 +1571,10 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
   .buurt-filters .toggle-veld { flex-basis: 100%; }
 }
 /* Kruimelpad in het gekleurde vlak (/in-de-buurt/), in de kleur van de inkt van het vlak. */
-.buurt-kop, .zalen-kop { padding-top: 6px; }
+.buurt-kop { padding-top: 6px; }
+/* /theaters/ heeft geen kruimelpad in het vlak: de kop krijgt dezelfde ruimte bovenaan als /agenda/. */
+.agenda-kop.zalen-kop { padding-top: 34px; }
+@media (max-width: 760px) { .agenda-kop.zalen-kop { padding-top: 24px; } }
 :is(.buurt-kop, .zalen-kop) .kruimelpad ol { padding-block: 8px 10px; }
 :is(.buurt-kop, .zalen-kop) .kruimelpad :is(ol, a, [aria-current="page"]) { color: var(--kop-inkt); }
 :is(.buurt-kop, .zalen-kop) .kruimelpad li + li::before { color: var(--kop-inkt); opacity: .7; }
