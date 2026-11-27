@@ -1697,8 +1697,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       ${strip("strip-nu", kopTournee, affiches)}
     </section>` : ""}
     <section class="block wrap az-blok" aria-labelledby="az-titel">
-      <h2 class="sub-head" id="az-titel">${esc(P.naam)} van A tot Z</h2>
-      ${azLijst(items, { zoekLabel: soort === "vrouw" ? "Zoek een cabaretière" : "Zoek een cabaretier" })}
+      <h2 class="${soort === "alle" ? "visually-hidden" : "sub-head"}" id="az-titel">${esc(P.naam)} van A tot Z</h2>
+      ${azLijst(items, { zoekLabel: soort === "vrouw" ? "Zoek een cabaretière" : "Zoek een cabaretier", ...(soort === "alle" ? { voorbeeld: "Peter Pannekoek of Kim Schuddeboom" } : {}) })}
       <div class="seo-tekst prose">
         ${tekst.join("\n        ")}
       </div>
