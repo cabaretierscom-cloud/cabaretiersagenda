@@ -1375,15 +1375,22 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const periode = avond ? fmt.long(vandaagDag) : `${fmt.weekday(weekend.start)} ${fmt.dayMonth(weekend.start)}${weekend.eind !== weekend.start ? ` tot en met ${fmt.weekday(weekend.eind)} ${fmt.dayMonth(weekend.eind)}` : ""}`;
     const titel = `Cabaret en comedy ${wanneer}${waar}`;
     const nVandaag = avond ? list.filter((g) => g.datum === vandaagDag).length : list.length;
-    const ander = avond ? "dit-weekend" : "vanavond";
-    const andereLink = !p || stadPaginas.get(p).includes(ander) ? `<a href="${dagPad(ander, p)}">${ander === "vanavond" ? "Vanavond" : "Dit weekend"}${waar}</a>` : "";
     // Plaatsen met de meeste voorstellingen in deze periode, met een link naar hun plaatspagina.
     const steden = p ? [] : telPer(list.filter((g) => !avond || g.datum === vandaagDag), (g) => T.get(g.theater).plaats).slice(0, 15).map(([q, n]) => `<a href="${plaatsPad(q)}">${esc(q)} (${n})</a>`);
-    const body = `<section class="block wrap" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">${esc(hoofdletter(wanneer))}${esc(waar)}</h1><p>${esc(hoofdletter(periode))}${p ? "" : " in Nederland en België"}</p></div>
-      <nav class="dag-nav" aria-label="Meer">${[andereLink, p ? `<a href="${plaatsPad(p)}">Alle voorstellingen in ${esc(p)}</a>` : `<a href="/agenda/">De hele agenda</a>`].filter(Boolean).join("")}</nav>
+    // Kop in het wisselende kleurvlak zoals /agenda/ en /theaters/ (optie A, verzoek van de eigenaar november 2026):
+    // titel, datum en aantal, zoekbalk, filters als ronde knopjes en een rij periodes; daaronder de lijst per dag.
+    const huidig = dagPad(soort, p);
+    const periodes = [["Vanavond", "/vanavond/"], ["Dit weekend", "/dit-weekend/"], ...(tryoutLijst.length ? [["Try-outs", "/agenda/try-outs/"]] : []), ...(premiereLijst.length ? [["Premières", "/agenda/premieres/"]] : []), ["Hele agenda", "/agenda/"]];
+    const body = `${KOP_KLEUR}
+    <div class="home-kop agenda-kop dag-kop">
+    <section class="wrap" aria-labelledby="t">
+      <div class="block-head"><h1 id="t">${esc(hoofdletter(wanneer))}${esc(waar)}</h1><p>${esc(hoofdletter(periode))} · ${plural(nVandaag, "voorstelling", "voorstellingen")} ${esc(wanneer)}${p ? "" : " in Nederland en België"}</p></div>
+      ${filters(list, { afstand: true, icoon: true })}
+      <nav class="periode" aria-label="Periode">${periodes.map(([t, u]) => `<a href="${u}"${u === huidig ? ' aria-current="page"' : ""}>${t}</a>`).join("")}</nav>
+    </section>
+    </div>
+    <section class="block wrap dag-lijst" aria-label="Voorstellingen ${esc(wanneer)}">
       ${p ? uitgelichtBlok("plaats", p) : uitgelichtBlok("agenda")}
-      ${filters(list, { afstand: true })}
       <div id="gigs">${dagGroepen(list)}</div>
       ${leegBlok}
       <div class="empty" id="dag-leeg"${list.length ? " hidden" : ""}><p>${avond ? "Vanavond" : "Dit weekend"} staat er${waar} niets in de agenda. Bekijk <a href="${p ? plaatsPad(p) : "/agenda/"}">de eerstvolgende voorstellingen</a>.</p></div>
