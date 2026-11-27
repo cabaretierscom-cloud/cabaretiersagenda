@@ -1281,6 +1281,21 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     return layout({ title: `Cabaret en comedy in ${maandNaam(m)}`, description: zinnen(`Alle ${list.length} cabaret- en comedyvoorstellingen in ${maandNaam(m)} in Nederland en België, week voor week.`, maandNamen.length ? `Met onder meer ${opsomming(maandNamen)}.` : "", "Met tijden, zalen en kaarten."), path: `/agenda/${maandId(m)}/`, section: "agenda", body, schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], [maandNaam(m), `/agenda/${maandId(m)}/`]], extra: eventsLd(list) } });
   }
 
+  // Kaart van Nederland en Vlaanderen (met Brussel): de Waalse provincies vallen weg en de kaart is bijgesneden tot de
+  // rest. Gebruikt op /plaatsen/ en in de kop van de plaatspagina's.
+  let vlKaart = null;
+  function vlaanderenKaart() {
+    if (vlKaart) return vlKaart;
+    const WALLONIE = new Set(["Henegouwen", "Luik", "Luxemburg", "Namen", "Waals-Brabant"]);
+    const provs = PROVINCIES.filter((q) => !WALLONIE.has(q.naam));
+    const getallen = provs.flatMap((q) => [...q.d.matchAll(/(-?[\d.]+)[ ,](-?[\d.]+)/g)].map((m) => [+m[1], +m[2]]));
+    const rand = 12, vx = Math.min(...getallen.map((g) => g[0])) - rand, vy = Math.min(...getallen.map((g) => g[1])) - rand;
+    const vb = Math.max(...getallen.map((g) => g[0])) + rand - vx, vh = Math.max(...getallen.map((g) => g[1])) + rand - vy;
+    const xy = ([lat, lon]) => [(lon - KAART.lon0) * KAART.k * KAART.schaal, (KAART.lat1 - lat) * KAART.schaal];
+    const viewBox = `${vx.toFixed(0)} ${vy.toFixed(0)} ${vb.toFixed(0)} ${vh.toFixed(0)}`;
+    return (vlKaart = { provs, vx, vy, vb, vh, xy, viewBox });
+  }
+
   function plaatsIndex() {
     // Kop in het wisselende kleurvlak zoals /theaters/ en /artiesten/ (optie C, verzoek van de eigenaar november 2026),
     // een kaart van Nederland en Vlaanderen met een klikbare stip per plaats (groter = meer voorstellingen) en de
@@ -1306,13 +1321,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const grootste = [...items].sort((x, y) => y.n - x.n);
     let kaart = "";
     {
-      // Alleen Nederland en Vlaanderen (met Brussel): de Waalse provincies vallen weg, de kaart is bijgesneden tot de rest.
-      const WALLONIE = new Set(["Henegouwen", "Luik", "Luxemburg", "Namen", "Waals-Brabant"]);
-      const provs = PROVINCIES.filter((q) => !WALLONIE.has(q.naam));
-      const getallen = provs.flatMap((q) => [...q.d.matchAll(/(-?[\d.]+)[ ,](-?[\d.]+)/g)].map((m) => [+m[1], +m[2]]));
-      const rand = 12, vx = Math.min(...getallen.map((g) => g[0])) - rand, vy = Math.min(...getallen.map((g) => g[1])) - rand;
-      const vb = Math.max(...getallen.map((g) => g[0])) + rand - vx, vh = Math.max(...getallen.map((g) => g[1])) + rand - vy;
-      const xy = ([lat, lon]) => [(lon - KAART.lon0) * KAART.k * KAART.schaal, (KAART.lat1 - lat) * KAART.schaal];
+      const { provs, vx, vy, vb, vh, xy, viewBox } = vlaanderenKaart();
       const met = items.map((x) => ({ ...x, c: geoPlaats(x.p, x.land) })).filter((x) => x.c && xy(x.c)[1] <= vy + vh).sort((a, b) => b.n - a.n);
       const max = met[0]?.n || 1;
       const straal = (n) => Math.max(5, 40 * Math.sqrt(n / max));
@@ -1330,7 +1339,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         labels.push(`<text x="${(vak.kant === "start" ? vak.x0 + 2 : vak.x1 - 2).toFixed(1)}" y="${(cy + 10).toFixed(1)}" text-anchor="${vak.kant}">${esc(x.p)}</text>`);
       }
       kaart = `<section class="wrap plaats-kaart" aria-labelledby="kaart-titel">
-        <div class="pk-kaart"><svg viewBox="${vx.toFixed(0)} ${vy.toFixed(0)} ${vb.toFixed(0)} ${vh.toFixed(0)}" role="img" aria-label="Kaart van Nederland en Vlaanderen met een stip per plaats">
+        <div class="pk-kaart"><svg viewBox="${viewBox}" role="img" aria-label="Kaart van Nederland en Vlaanderen met een stip per plaats">
           <g class="pk-provincies">${provs.map((q) => `<path class="pk-${q.land.toLowerCase()}" d="${q.d}"/>`).join("")}${MEREN.map((m) => `<path class="pk-meer" d="${m.d}"/>`).join("")}</g>
           <g>${stippen}</g><g class="pk-labels" aria-hidden="true">${labels.join("")}</g></svg></div>
         <div class="pk-top"><h2 id="kaart-titel">Waar speelt het meest?</h2><p>Hoe groter de stip, hoe meer voorstellingen. Klik op een stip voor de plaats.</p>
@@ -1489,14 +1498,28 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   function plaatsPagina(p) {
     const list = perPlaats(p);
     const zalen = zalenMetData.filter((t) => t.plaats === p);
-    // Kop zoals op de homepage en /agenda/: grote zwarte letters op wit, geen kleurvlak.
-    const body = `<section class="block wrap kop-plaats" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">Theater in ${esc(p)}</h1><p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}</p></div>
-    </section>
-      <div class="wrap detail-body">
+    // Kop in het wisselende kleurvlak zoals /plaatsen/, /theaters/ en /artiesten/ (optie C, verzoek van de eigenaar
+    // november 2026): kruimelpad, titel en aantal, de zalen als ronde knopjes (meeste voorstellingen eerst) en rechts
+    // een kaartje van Nederland en Vlaanderen met de plaats. Daaronder Deze week en alle voorstellingen met filters.
+    const perZaal = new Map(telPer(list, (g) => g.theater));
+    const zalenOp = [...zalen].sort((x, y) => (perZaal.get(y.id) || 0) - (perZaal.get(x.id) || 0));
+    const zaalKnoppen = `<ul class="plaats-knoppen">${zalenOp.map((t) => `<li><a href="/theaters/${t.id}/">${ICON.pin}${esc(t.naam)} <span>${perZaal.get(t.id) || 0}</span></a></li>`).join("")}</ul>`;
+    const { provs, xy, viewBox } = vlaanderenKaart();
+    const c = geoPlaats(p, landVanPlaats(p));
+    const [cx, cy] = c ? xy(c) : [0, 0];
+    const kaartje = c ? `<div class="plaats-minikaart" aria-hidden="true"><svg viewBox="${viewBox}">
+        <g class="pmk-land">${provs.map((q) => `<path d="${q.d}"/>`).join("")}${MEREN.map((m) => `<path class="pmk-meer" d="${m.d}"/>`).join("")}</g>
+        <circle class="pmk-ring" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="46"/><circle class="pmk-stip" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="20"/></svg></div>` : "";
+    const body = `${KOP_KLEUR}
+    <div class="home-kop agenda-kop zalen-kop plaats-kop">
+    <!--kruimelpad-->
+    <section class="wrap plaats-kop-c" aria-labelledby="t"><div><div class="block-head"><h1 id="t">Theater in ${esc(p)}</h1><p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}</p></div>${zaalKnoppen}</div>${kaartje}</section>
+    </div>
+    <div class="wrap detail-body zaal-lijst plaats-lijst">
         ${dagBlok(p, list)}
         ${uitgelichtBlok("plaats", p)}
-        ${filters(list, { maand: true })}
+        <h2 class="sub-head speellijst-kop">Alle voorstellingen in ${esc(p)}</h2>
+        ${filters(list, { maand: true, icoon: true, voorbeeld: "Zoek een artiest, voorstelling of theater" })}
         <div id="gigs">${monthGroups(list)}</div>
         ${leegBlok}
         ${heeftGenrePlaats("cabaret", p) || heeftGenrePlaats("kindervoorstellingen", p) ? `<p class="meer-link">${[heeftGenrePlaats("cabaret", p) && `<a href="/agenda/cabaret/${plaatsId(p)}/">Alleen cabaret in ${esc(p)}</a>`, heeftGenrePlaats("kindervoorstellingen", p) && `<a href="/agenda/kindervoorstellingen/${plaatsId(p)}/">Kindervoorstellingen in ${esc(p)}</a>`].filter(Boolean).join(" · ")}</p>` : ""}

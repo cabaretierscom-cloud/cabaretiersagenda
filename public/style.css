@@ -1722,3 +1722,22 @@ a:hover > .pk-stip, a:focus > .pk-stip { transform: scale(1.25); }
 .pk-bol { width: 14px; height: 14px; border-radius: 50%; background: var(--bg); box-shadow: 0 0 0 1.5px var(--ink); }
 @media (max-width: 860px) { .plaats-kaart { grid-template-columns: 1fr; } }
 @media (max-width: 560px) { .plaatsen-kop .az-tools { grid-template-columns: minmax(0, 1fr); justify-content: stretch; } .plaatsen-kop .zalen-buurt { justify-self: start; } }
+/* Plaatspagina /theaters-in-<plaats>/: kleurvlak met de zalen als knopjes en een kaartje (optie C, november 2026). */
+.plaats-kop .block-head { margin-bottom: 0; }
+.plaats-kop :is(.kruimelpad ol, .kruimelpad a, .kruimelpad [aria-current="page"]) { color: var(--kop-inkt); }
+.plaats-kop .kruimelpad ol { padding-block: 8px 10px; }
+.plaats-knoppen { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 16px 0 0; padding: 0; }
+.plaats-knoppen a { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); font-weight: 600; font-size: .92rem; text-decoration: none; }
+.plaats-knoppen a svg { width: 15px; height: 15px; }
+.plaats-knoppen a span { font-size: .78rem; padding: 1px 7px; border-radius: 999px; background: var(--ink); color: var(--paper); }
+.plaats-knoppen a:hover { box-shadow: inset 0 0 0 1px var(--ink); }
+.plaats-kop-c { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 32px; align-items: center; }
+.plaats-minikaart svg { display: block; width: 100%; height: auto; }
+.pmk-land path { fill: color-mix(in srgb, var(--kop-inkt) 14%, transparent); stroke: none; }
+.pmk-land .pmk-meer { fill: var(--kop-geel); }
+.pmk-stip { fill: var(--kop-inkt); }
+.pmk-ring { fill: none; stroke: var(--kop-inkt); stroke-width: 6; }
+.plaats-lijst { padding-top: 26px; }
+.plaats-lijst .speellijst-kop { margin-top: 8px; }
+@media (max-width: 760px) { .plaats-kop-c { grid-template-columns: minmax(0, 1fr) 96px; gap: 16px; align-items: start; } }
+@media (max-width: 560px) { .plaats-knoppen { gap: 6px; } .plaats-knoppen a { min-height: 34px; padding: 0 11px; font-size: .84rem; gap: 5px; } .plaats-knoppen a svg { display: none; } }
