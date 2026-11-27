@@ -1546,14 +1546,18 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const nu = nuInTheater();
     // Alleen echte artiesten: een voorstelling, avond of reeks als artiest (`geenArtiest`) staat niet in de lijst.
     const echte = artiestenMetData.filter(({ a }) => !a.geenArtiest);
-    const body = `<div class="wrap block-head kop-artiesten"><h1 id="t">Artiesten</h1><p>${echte.length} cabaretiers, comedians en gezelschappen met aankomende voorstellingen.</p></div>
+    // Kop in het wisselende kleurvlak zoals /theaters/ en /agenda/ (optie B, verzoek van de eigenaar november 2026):
+    // titel en aantal, en de affiches van Nu op tournee steken over de onderrand, zoals op de homepage. Zoeken,
+    // sorteren en de letters staan daaronder, boven de affichewand.
+    const body = `${KOP_KLEUR}
+    <div class="home-kop agenda-kop zalen-kop artiesten-kop">
+    <section class="wrap" aria-labelledby="t"><div class="block-head"><h1 id="t">Artiesten</h1><p>${echte.length} cabaretiers, comedians en gezelschappen met aankomende voorstellingen in Nederland en België.</p></div></section>
     ${nu ? `<section class="wall wall-sub" aria-labelledby="nu-title">
-      <div class="wrap wall-head">
-        <h2 id="nu-title">Nu op tournee</h2>
-      </div>
+      <div class="wrap wall-head"><h2 id="nu-title">Nu op tournee</h2></div>
       ${strip("strip-nu", "Voorstellingen die nu op tournee zijn", nu)}
     </section>` : ""}
-    <section class="block wrap az-blok" aria-labelledby="az-titel">
+    </div>
+    <section class="block wrap az-blok zalen-lijst artiesten-lijst" aria-labelledby="az-titel">
       <h2 class="sub-head" id="az-titel">Alle artiesten</h2>
       ${azLijst(echte, { voorbeeld: "Peter Pannekoek of Kim Schuddeboom" })}
       <p class="zie-ook">Bekijk ook: <a href="/alle-cabaretiers/">alle cabaretiers</a>, <a href="/alle-cabaretiers/vrouwen/">vrouwelijke cabaretiers</a> en <a href="/alle-cabaretiers/mannen/">mannelijke cabaretiers</a>.</p>

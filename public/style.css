@@ -1680,3 +1680,9 @@ main > .block:first-child:has(+ .wall-sub) { padding-bottom: 0; }
 /* Vanavond en Dit weekend: kop in het kleurvlak zoals /agenda/ (november 2026). */
 .dag-lijst { padding-top: 18px; }
 .agenda-kop.dag-kop .periode { margin-top: 16px; }
+/* /artiesten/: kleurvlak met de affiches van Nu op tournee over de onderrand (optie B, november 2026). */
+.artiesten-kop { padding-bottom: 0; }
+.artiesten-kop .block-head { margin-bottom: 0; }
+.artiesten-kop > .wall { padding-top: 26px; }
+.artiesten-lijst .az-tools { margin-top: 8px; }
+.artiesten-lijst > .sub-head { margin-top: 8px; }
