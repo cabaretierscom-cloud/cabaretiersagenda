@@ -796,6 +796,11 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
   // foto staan op de theaterpagina (waar het kaartje naartoe linkt) en als tooltip op de foto.
   const zaalKleuren = Object.keys(KLEUREN).filter((k) => k !== "zwart");
   const zaalKleur = (t) => t.kleur || zaalKleuren[createHash("sha1").update(t.id).digest()[0] % zaalKleuren.length];
+  // Korte bio per zaal (data/theater-bios.json, gemaakt door scripts/theaterbios.mjs en theaterbios-verwerk.mjs): de eigen
+  // omschrijving van de zaal van haar homepage, in de kop van de theaterpagina (verzoek van de eigenaar, november 2026).
+  const THEATER_BIOS = (() => {
+    try { return JSON.parse(readFileSync(new globalThis.URL("../data/theater-bios.json", import.meta.url), "utf8")); } catch { return {}; }
+  })();
   // Vaste kleur per plaats (data/plaats-kleuren.json, gemaakt door scripts/plaats-kleuren.mjs): de kop van de plaatspagina
   // en de stip op de kaart van /plaatsen/. Een plaats die er (nog) niet in staat, krijgt een kleur uit haar naam.
   const PLAATS_KLEUREN = (() => {
@@ -3108,6 +3113,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${t.voorheen ? `<p>Voorheen ${esc(t.voorheen.naam)}.</p>` : ""}
         <ul class="zaal-feiten">${feiten}</ul>
         <p class="zaal-aantal">${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}` : "Op dit moment staan er geen voorstellingen gepland."}</p>
+        ${THEATER_BIOS[t.id] ? `<p class="zaal-bio">${esc(THEATER_BIOS[t.id].tekst)} <span class="zaal-bio-bron">(omschrijving van de <a href="${esc(metUtm(THEATER_BIOS[t.id].bron))}" rel="noopener">website van de zaal</a>)</span></p>` : ""}
         </div>
         ${t.foto ? kopFoto(t, "theater-foto") : ""}
       </div></div>
