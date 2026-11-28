@@ -76,6 +76,7 @@ async function adresUitOsm(z) {
   return { straat: `${g["addr:street"]} ${g["addr:housenumber"]}`, postcode: g["addr:postcode"] || "", plaats: g["addr:city"] || z.plaats, lat: el.lat ?? el.center?.lat, lon: el.lon ?? el.center?.lon, osm: `https://www.openstreetmap.org/${el.type}/${el.id}` };
 }
 
+function bewaar() { writeFileSync(bestand, JSON.stringify(Object.fromEntries(Object.entries(adressen).sort(([a], [b]) => a.localeCompare(b))), null, 2) + "\n"); }
 const pc = (x) => String(x || "").replace(/\s/g, "").toUpperCase().slice(0, 4);
 let klaar = 0, gevonden = 0, tegenstrijdig = 0;
 const rij = [...zalen];
@@ -90,8 +91,9 @@ await Promise.all(Array.from({ length: 8 }, async () => {
       adressen[z.id] = { straat: a.straat, postcode: a.postcode || osm?.postcode || "", plaats: a.plaats, bron: site ? new URL("/", z.website).href : osm.osm, ...(osm?.lat ? { lat: +osm.lat.toFixed(5), lon: +osm.lon.toFixed(5) } : {}), opgehaald: vandaag };
       gevonden++;
     }
-    if (++klaar % 50 === 0) console.log(`${klaar}/${zalen.length}, ${gevonden} adressen`);
+    // Tussendoor bewaren, zodat een onderbreking niet alles kost.
+    if (++klaar % 50 === 0) { console.log(`${klaar}/${zalen.length}, ${gevonden} adressen`); bewaar(); }
   }
 }));
-writeFileSync(bestand, JSON.stringify(Object.fromEntries(Object.entries(adressen).sort(([a], [b]) => a.localeCompare(b))), null, 2) + "\n");
+bewaar();
 console.log(`${gevonden} nieuwe adressen (${Object.keys(adressen).length} in totaal), ${tegenstrijdig} tegenstrijdig en weggelaten`);
