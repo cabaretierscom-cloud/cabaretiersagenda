@@ -1,4 +1,22 @@
 {
+  "acropolis-megen": {
+    "straat": "Broeder Everardusplein 1",
+    "postcode": "5366BE",
+    "plaats": "Megen",
+    "bron": "https://www.openstreetmap.org/node/2925353109",
+    "lat": 51.82285,
+    "lon": 5.56584,
+    "opgehaald": "2026-11-28"
+  },
+  "afas-theater-leusden": {
+    "straat": "Inspiratielaan 3",
+    "postcode": "3833AV",
+    "plaats": "Leusden",
+    "bron": "https://www.openstreetmap.org/node/8437477180",
+    "lat": 52.14193,
+    "lon": 5.42111,
+    "opgehaald": "2026-11-28"
+  },
   "agora-theater-lelystad": {
     "straat": "Agorabaan 12",
     "postcode": "8224 JS",
@@ -632,6 +650,15 @@
     "bron": "https://www.cpunt.nl/",
     "opgehaald": "2026-11-28"
   },
+  "cultura-ede": {
+    "straat": "Molenstraat 45",
+    "postcode": "6711AW",
+    "plaats": "Ede",
+    "bron": "https://www.openstreetmap.org/node/457345345",
+    "lat": 52.04656,
+    "lon": 5.66728,
+    "opgehaald": "2026-11-28"
+  },
   "cultura-en-zo-nootdorp": {
     "straat": "Dorpsstraat 7",
     "postcode": "2631 CR",
@@ -825,6 +852,15 @@
     "bron": "https://drom.nl/",
     "opgehaald": "2026-11-28"
   },
+  "de-eendracht-gemert": {
+    "straat": "St.-Annastraat 60",
+    "postcode": "5421KC",
+    "plaats": "Gemert",
+    "bron": "https://www.openstreetmap.org/node/3004890322",
+    "lat": 51.55781,
+    "lon": 5.69215,
+    "opgehaald": "2026-11-28"
+  },
   "de-gam-rumst": {
     "straat": "Koningin Astridplein 12",
     "postcode": "2840",
@@ -872,6 +908,15 @@
     "postcode": "3730",
     "plaats": "Bilzen-Hoeselt",
     "bron": "https://www.cultuurhuisbilzenhoeselt.be/",
+    "opgehaald": "2026-11-28"
+  },
+  "de-kleine-willem-enschede": {
+    "straat": "Langestraat 45",
+    "postcode": "7511HB",
+    "plaats": "Enschede",
+    "bron": "https://www.openstreetmap.org/node/4468023726",
+    "lat": 52.21971,
+    "lon": 6.89578,
     "opgehaald": "2026-11-28"
   },
   "de-kom-nieuwegein": {
@@ -962,6 +1007,24 @@
     "bron": "https://deogtent.nl/",
     "opgehaald": "2026-11-28"
   },
+  "de-oosterpoort": {
+    "straat": "Trompsingel 27",
+    "postcode": "9724DA",
+    "plaats": "Groningen",
+    "bron": "https://www.openstreetmap.org/node/2748526736",
+    "lat": 53.21424,
+    "lon": 6.57593,
+    "opgehaald": "2026-11-28"
+  },
+  "de-pas-heesch": {
+    "straat": "De Misse 4a",
+    "postcode": "5384BZ",
+    "plaats": "Heesch",
+    "bron": "https://www.openstreetmap.org/node/4192308217",
+    "lat": 51.73443,
+    "lon": 5.52813,
+    "opgehaald": "2026-11-28"
+  },
   "de-pinte-polderbos": {
     "straat": "39 Klein Nazareth",
     "postcode": "9840",
@@ -976,6 +1039,15 @@
     "bron": "https://www.ccdeploter.be/",
     "opgehaald": "2026-11-28"
   },
+  "de-pluk-geldermalsen": {
+    "straat": "Rijksstraatweg 64",
+    "postcode": "4191SG",
+    "plaats": "Geldermalsen",
+    "bron": "https://www.openstreetmap.org/node/4027257830",
+    "lat": 51.87326,
+    "lon": 5.28956,
+    "opgehaald": "2026-11-28"
+  },
   "de-poorterij-zaltbommel": {
     "straat": "Nieuwstraat 2",
     "postcode": "5301 EW",
@@ -988,6 +1060,15 @@
     "postcode": "1441 BR",
     "plaats": "Purmerend",
     "bron": "https://depurmaryn.nl/",
+    "opgehaald": "2026-11-28"
+  },
+  "de-reehorst-ede": {
+    "straat": "Bennekomseweg 24",
+    "postcode": "6717LM",
+    "plaats": "Ede",
+    "bron": "https://www.openstreetmap.org/node/2761924022",
+    "lat": 52.02402,
+    "lon": 5.67128,
     "opgehaald": "2026-11-28"
   },
   "de-reggehof-goor": {
@@ -1442,6 +1523,15 @@
     "postcode": "1483 BD",
     "plaats": "De Rijp",
     "bron": "https://degroenezwaan.nl/",
+    "opgehaald": "2026-11-28"
+  },
+  "haventheater-ijmuiden": {
+    "straat": "Dokweg 45",
+    "postcode": "1976CA",
+    "plaats": "IJmuiden",
+    "bron": "https://www.openstreetmap.org/node/2775823378",
+    "lat": 52.45388,
+    "lon": 4.59138,
     "opgehaald": "2026-11-28"
   },
   "herberg-t-molenhuis-vichte": {
@@ -2608,6 +2698,15 @@
     "bron": "https://demuze.nl/",
     "opgehaald": "2026-11-28"
   },
+  "theater-de-mythe-goes": {
+    "straat": "Bleekveld 1",
+    "postcode": "4461DD",
+    "plaats": "Goes",
+    "bron": "https://www.openstreetmap.org/node/2905812038",
+    "lat": 51.50429,
+    "lon": 3.88729,
+    "opgehaald": "2026-11-28"
+  },
   "theater-de-omval-diemen": {
     "straat": "Ouddiemerlaan 104",
     "postcode": "1111 HL",
@@ -2722,6 +2821,15 @@
     "bron": "https://hanzehof.nl/",
     "opgehaald": "2026-11-28"
   },
+  "theater-harderwijk": {
+    "straat": "Stationsplein 1",
+    "postcode": "3844KR",
+    "plaats": "Harderwijk",
+    "bron": "https://www.openstreetmap.org/node/2854696578",
+    "lat": 52.3378,
+    "lon": 5.62,
+    "opgehaald": "2026-11-28"
+  },
   "theater-heerlen": {
     "straat": "Burg. van Grunsvenplein 145",
     "postcode": "6411 AS Heerlen",
@@ -2815,6 +2923,15 @@
     "postcode": "6135 BW",
     "plaats": "Sittard",
     "bron": "https://www.pitboeltheater.nl/",
+    "opgehaald": "2026-11-28"
+  },
+  "theater-podium-heino": {
+    "straat": "Canadastraat 6",
+    "postcode": "8141AC",
+    "plaats": "Heino",
+    "bron": "https://www.openstreetmap.org/node/2502745938",
+    "lat": 52.43515,
+    "lon": 6.23365,
     "opgehaald": "2026-11-28"
   },
   "theater-rotterdam": {
