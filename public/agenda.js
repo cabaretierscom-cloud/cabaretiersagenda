@@ -949,3 +949,24 @@
   document.addEventListener("keydown", (e) => { if (e.key === "Escape" && document.documentElement.classList.contains("zoek-open")) { zoek(false); zoekKnop?.focus(); } });
   matchMedia("(min-width: 961px)").addEventListener?.("change", (m) => { if (m.matches) zoek(false); });
 })();
+
+// Uitklapvakken (genre, afstand, maand) blijven binnen het scherm: na het openen schuift de lijst zo ver naar links
+// als nodig, met 16 px marge aan beide kanten (verzoek van de eigenaar, november 2026: op de telefoon viel het
+// genrevak rechts buiten beeld). Werkt voor elk `details.keuze`, ook als de CSS de lijst links of rechts uitlijnt.
+(() => {
+  const M = 16;
+  const pas = (d) => {
+    const l = d.querySelector(":scope > .keuze-lijst");
+    if (!l) return;
+    l.style.left = l.style.right = "";
+    const vw = document.documentElement.clientWidth;
+    l.style.maxWidth = `${vw - 2 * M}px`;
+    const r = l.getBoundingClientRect();
+    let schuif = 0;
+    if (r.right > vw - M) schuif = vw - M - r.right;
+    if (r.left + schuif < M) schuif = M - r.left;
+    if (schuif) { l.style.right = "auto"; l.style.left = `${l.offsetLeft + schuif}px`; }
+  };
+  document.addEventListener("toggle", (e) => { if (e.target.matches?.("details.keuze") && e.target.open) pas(e.target); }, true);
+  addEventListener("resize", () => document.querySelectorAll("details.keuze[open]").forEach(pas));
+})();
