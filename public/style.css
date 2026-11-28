@@ -125,7 +125,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
    zodat de kop duidelijk los van de pagina staat. Zonder backdrop-filter blijft het een dichte kop. */
 @supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
   .site-header {
-    background: color-mix(in srgb, var(--paper) 93%, transparent);
+    background: color-mix(in srgb, var(--paper) 90%, transparent);
     -webkit-backdrop-filter: blur(16px) saturate(1.2); backdrop-filter: blur(16px) saturate(1.2);
     border-bottom-color: transparent; box-shadow: 0 1px 0 rgba(18, 18, 18, .08), 0 2px 6px -2px rgba(18, 18, 18, .12);
   }
@@ -232,6 +232,11 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .menu-open .menu-achtergrond { opacity: 1; visibility: visible; transition: opacity .28s ease, visibility 0s; }
 .menu-open, .menu-open body { overflow: hidden; }
 .menu-open .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; }
+/* Het uitklapmenu is ook matglas, net als de kop: 90% dekkend en wazig (verzoek van de eigenaar, november 2026). */
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .js .nav { background: color-mix(in srgb, var(--paper) 90%, transparent); -webkit-backdrop-filter: blur(16px) saturate(1.2); backdrop-filter: blur(16px) saturate(1.2); }
+  .js .menu-sluit { background: transparent; }
+}
 @media (min-width: 961px) {
   html:not(.js) .kop-zoek { flex-basis: 200px; max-width: 280px; }
   html:not(.js) .nav { margin-left: 0; }
