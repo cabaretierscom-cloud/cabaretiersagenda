@@ -1751,3 +1751,15 @@ a:hover > .pk-stip, a:focus > .pk-stip { transform: scale(1.25); }
 /* /plaatsen/: In de buurt in het kleurvlak, de zoekbalk boven Alle plaatsen (november 2026). */
 .plaats-buurt { margin: 16px 0 0; }
 .plaats-zoek { margin: 4px 0 18px; grid-template-columns: minmax(0, 32rem); }
+/* VOORSTEL genrepagina's */
+.genre-kop .block-head { margin-bottom: 0; }
+.genre-kop .filters { margin-top: 18px; }
+.genre-kop .periode { margin-top: 16px; }
+.genre-kop :is(.kruimelpad ol, .kruimelpad a, .kruimelpad [aria-current="page"]) { color: var(--kop-inkt); }
+.genre-kop .kruimelpad ol { padding-block: 8px 10px; }
+.genre-kop-b { padding-bottom: 0; }
+.genre-kop-b > .wall { padding-top: 26px; }
+.genre-kop-b::after { display: none; }
+.genre-uitleg { max-width: 60ch; margin: 10px 0 0; color: var(--kop-inkt); font-size: 1.05rem; line-height: 1.45; }
+.genre-top { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; }
+.genre-lijst { padding-top: 22px; }

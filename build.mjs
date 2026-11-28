@@ -109,6 +109,7 @@ write("/theaters/", t.theaterIndex());
 write("/comedy-clubs/", t.comedyclubsPagina());
 for (const th of db.theaters.values()) if (db.gigsForTheater(th.id).length) write(`/theaters/${th.id}/`, t.theaterPage(th));
 for (const g of t.GENRE_PAGINAS) write(t.genrePad(g), t.genrePagina(g));
+for (const g of ["cabaret", "toneel"]) for (const v of ["b", "c"]) write(`/voorstel-${v}${t.genrePad(g)}`, t.genrePagina(g, v));
 if (t.tryoutLijst.length) write("/agenda/try-outs/", t.tryoutPagina());
 if (t.premiereLijst.length) write("/agenda/premieres/", t.premierePagina());
 for (const [g, p] of t.genrePlaatsPaginas) write(t.genrePlaatsPad(g, p), t.genrePlaatsPagina(g, p));
