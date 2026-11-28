@@ -22,10 +22,12 @@ vondsten.forEach((v, i) => {
   if (afgekeurd.has(i)) return;
   let tekst = v.tekst.replace(/\[[a-z_]+\]/g, " ").replace(/\s+/g, " ").trim();
   // Hele zinnen; een afgekapt einde ("…", "...", geen punt) valt weg.
-  let zinnen = tekst.match(/[^.!?]+[.!?]+(?=\s|$)/g)?.map((z) => z.trim()) || [];
+  // Een zin eindigt op . ! of ? gevolgd door een hoofdletter (zodat "e.o." of "o.a." niet splitst).
+  let zinnen = tekst.split(/(?<=[.!?])\s+(?=[A-ZÀ-ÝÉ‘'"„“0-9])/).map((z) => z.trim()).filter((z) => /[.!?]$/.test(z));
   if (zinnen.length > 1) zinnen = zinnen.filter((z) => !OPROEP.test(z));
   zinnen = zinnen.filter((z) => !/\.\.\.$|…$/.test(z)).slice(0, 3);
   tekst = zinnen.join(" ");
+  tekst = tekst.charAt(0).toUpperCase() + tekst.slice(1);
   if (tekst.length < 40) return;
   bios[v.id] = { tekst, bron: v.pagina, opgehaald: vandaag };
   nieuw++;

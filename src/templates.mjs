@@ -3096,6 +3096,21 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   }
 
 
+  // Bio uit de eigen gegevens voor zalen zonder omschrijving op hun website (verzoek van de eigenaar, november 2026):
+  // soort zaal en plaats, de genres die het vaakst op het programma staan en een paar artiesten die er gaan spelen.
+  function eigenBio(t, list) {
+    const soort = t.soort === "comedyclub" ? "een comedyclub" : t.soort === "café" ? "een café met cabaret en comedy"
+      : t.soort === "cultuurcentrum" || /^(CC|GC|OC)\b|cultuurcentrum|gemeenschapscentrum/i.test(t.naam) ? "een cultuurcentrum"
+      : /schouwburg/i.test(t.naam) ? "een schouwburg" : /comedy/i.test(t.naam) ? "een comedypodium" : /theat|tejater|teather/i.test(t.naam) ? "een theater" : "een zaal";
+    const zinnen = [`${esc(t.naam)} is ${soort} in ${esc(t.plaats)}${t.land === "BE" ? ", België" : ""}.`];
+    const NAAM = { ...GENRE_TEKST, kindervoorstellingen: "kindervoorstellingen", "open-mic": "open mics" };
+    const genres = telPer(list.flatMap((g) => genresVanV(V.get(g.voorstelling))), (x) => x).filter(([x]) => NAAM[x]).slice(0, 3);
+    const tryouts = list.filter((g) => g.soort === "try-out").length;
+    if (genres.length) zinnen.push(`Op het programma staat vooral ${opsomming(genres.map(([x]) => esc(NAAM[x])))}${tryouts ? `, met ${plural(tryouts, "try-out", "try-outs")}` : ""}.`);
+    const artiesten = telPer(list.flatMap((g) => V.get(g.voorstelling).artiesten).filter((id) => !isFestival(id) && !A.get(id).geenArtiest && !GEEN_CABARETIER.test(A.get(id).naam)), (id) => id).slice(0, 3);
+    if (artiesten.length) zinnen.push(`De komende tijd ${artiesten.length === 1 && list.length === 1 ? "speelt" : "spelen"} er onder meer ${opsomming(artiesten.map(([id]) => esc(A.get(id).naam)))}.`);
+    return zinnen.join(" ");
+  }
   function theaterPage(t) {
     const list = db.gigsForTheater(t.id);
     // Kop in de eigen kleur van de zaal (dezelfde als het kaartje op de homepage, `zaalKleur`), met het kruimelpad,
@@ -3113,7 +3128,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${t.voorheen ? `<p>Voorheen ${esc(t.voorheen.naam)}.</p>` : ""}
         <ul class="zaal-feiten">${feiten}</ul>
         <p class="zaal-aantal">${list.length ? `${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")}` : "Op dit moment staan er geen voorstellingen gepland."}</p>
-        ${THEATER_BIOS[t.id] ? `<p class="zaal-bio">${esc(THEATER_BIOS[t.id].tekst)} <span class="zaal-bio-bron">(omschrijving van de <a href="${esc(metUtm(THEATER_BIOS[t.id].bron))}" rel="noopener">website van de zaal</a>)</span></p>` : ""}
+        ${THEATER_BIOS[t.id] ? `<p class="zaal-bio">${esc(THEATER_BIOS[t.id].tekst)} <span class="zaal-bio-bron">(omschrijving van de <a href="${esc(metUtm(THEATER_BIOS[t.id].bron))}" rel="noopener">website van de zaal</a>)</span></p>` : list.length ? `<p class="zaal-bio">${eigenBio(t, list)}</p>` : ""}
         </div>
         ${t.foto ? kopFoto(t, "theater-foto") : ""}
       </div></div>
