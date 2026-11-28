@@ -2747,7 +2747,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   const heeftGenrePlaats = (g, p) => GENRE_PAGINAS.includes(g) && genrePlaatsen(g).some(([x]) => x === p);
   const genrePlaatsPaginas = GENRE_PER_PLAATS.filter((g) => GENRE_PAGINAS.includes(g)).flatMap((g) => genrePlaatsen(g).map(([p]) => [g, p]));
 
-  function genrePlaatsPagina(g, p) {
+  function genrePlaatsPagina(g, p, variant = "a") {
     const info = GENRE_INFO[g], pad = genrePlaatsPad(g, p), naam = esc(p);
     const list = genreLijst(g).filter((x) => T.get(x.theater).plaats === p);
     const alles = perPlaats(p);
@@ -2781,15 +2781,30 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     }
     vragen.push(["Hoe koop ik kaarten?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van het theater, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
     const affiches = nuInTheater(() => true, (v) => genresVanV(v).includes(g) && list.some((x) => x.voorstelling === v.id));
-    const body = `<section class="block wrap kop-plaats" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">${esc(info.kop)} in ${naam}</h1><p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}</p></div>
-    </section>
-      ${affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
+    // VOORSTEL (november 2026): a = wisselend kleurvlak met de andere plaatsen voor dit genre en de affiches over de rand
+    // (zoals de genrepagina's); b = kleurvlak in de vaste kleur van de plaats met de zalen en het kaartje (zoals de
+    // plaatspagina's); c = vaste kleur van de plaats, de affiches over de rand en twee rijen: dit genre in andere
+    // plaatsen en ander aanbod in deze plaats.
+    const kopTekst = `<div class="block-head"><h1 id="t">${esc(info.kop)} in ${naam}</h1><p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}</p></div>`;
+    const plaatsRij = `<nav class="periode genre-rij" aria-label="${esc(info.kop)} in andere plaatsen"><a href="${pad}" aria-current="page">${naam}</a>${genrePlaatsen(g).filter(([x]) => x !== p).slice(0, 14).map(([x]) => `<a href="${genrePlaatsPad(g, x)}">${esc(x)}</a>`).join("")}</nav>`;
+    const zaalKnoppen = `<ul class="plaats-knoppen">${zalen.map(([id, n]) => `<li><a href="/theaters/${id}/">${ICON.pin}${esc(T.get(id).naam)} <span>${n}</span></a></li>`).join("")}</ul>`;
+    const ookHier = `<nav class="periode genre-rij" aria-label="Ook in ${naam}"><a href="${plaatsPad(p)}">Alles in ${naam}</a>${GENRE_PER_PLAATS.filter((x) => x !== g && heeftGenrePlaats(x, p)).map((x) => `<a href="${genrePlaatsPad(x, p)}">${esc(GENRE_INFO[x].kop)}</a>`).join("")}<a href="${genrePad(g)}">${esc(info.kop)} overal</a></nav>`;
+    const [kv, ki] = KLEUREN[plaatsKleur(p)];
+    const vast = `style="--kop-geel:var(${kv});--kop-inkt:${ki}"`;
+    let kaartje = "";
+    { const { provs, xy, viewBox } = vlaanderenKaart(); const c = geoPlaats(p, landVanPlaats(p));
+      if (c) { const [cx, cy] = xy(c); kaartje = `<div class="plaats-minikaart" aria-hidden="true"><svg viewBox="${viewBox}"><g class="pmk-land">${provs.map((q) => `<path d="${q.d}"/>`).join("")}${MEREN.map((m) => `<path class="pmk-meer" d="${m.d}"/>`).join("")}</g><circle class="pmk-ring" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="46"/><circle class="pmk-stip" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="20"/></svg></div>`; } }
+    const wand = affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
       <div class="wrap wall-head"><h2 id="nu-title">Nu in het theater</h2></div>
       ${strip("strip-nu", `${info.kop} in ${p}: nu in het theater`, affiches)}
-    </section>` : ""}
-      <div class="wrap detail-body">
-        ${list.length > 12 ? filters(list, { maand: true }) : ""}
+    </section>` : "";
+    const kop = variant === "a" ? `${KOP_KLEUR}<div class="home-kop agenda-kop genre-kop"><!--kruimelpad--><section class="wrap" aria-labelledby="t">${kopTekst}${plaatsRij}</section>${wand}</div>`
+      : variant === "b" ? `<div class="home-kop agenda-kop zalen-kop plaats-kop" ${vast}><!--kruimelpad--><section class="wrap plaats-kop-c" aria-labelledby="t"><div>${kopTekst}${zaalKnoppen}</div>${kaartje}</section></div>${wand}`
+      : `<div class="home-kop agenda-kop genre-kop" ${vast}><!--kruimelpad--><section class="wrap" aria-labelledby="t">${kopTekst}<p class="rij-label">${esc(info.kop)} in andere plaatsen</p>${plaatsRij}<p class="rij-label">Ook in ${naam}</p>${ookHier}</section>${wand}</div>`;
+    const body = `${kop}
+      <div class="wrap detail-body zaal-lijst genre-lijst">
+        <h2 class="sub-head">${list.length > 1 ? "Alle voorstellingen" : "De voorstelling"}</h2>
+        ${list.length > 12 ? filters(list, { maand: true, genre: false, icoon: true, voorbeeld: "Zoek een artiest, voorstelling of theater" }) : ""}
         <div id="gigs">${monthGroups(list, { verbergGenre: g })}</div>
         ${list.length > 12 ? leegBlok : ""}
         <section class="seo-tekst prose" aria-labelledby="over-titel">

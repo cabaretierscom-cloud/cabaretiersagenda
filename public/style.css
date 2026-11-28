@@ -1762,3 +1762,5 @@ a:hover > .pk-stip, a:focus > .pk-stip { transform: scale(1.25); }
 .genre-kop:not(:has(> .wall)) { padding-bottom: 30px; }
 .genre-kop:not(:has(> .wall))::after { display: block; }
 .genre-lijst { padding-top: 22px; }
+/* VOORSTEL genre per plaats */
+.rij-label { margin: 16px 0 -8px; font-size: .85rem; font-weight: 700; color: var(--kop-inkt); text-transform: uppercase; letter-spacing: .05em; }

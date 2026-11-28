@@ -112,6 +112,7 @@ for (const g of t.GENRE_PAGINAS) write(t.genrePad(g), t.genrePagina(g));
 if (t.tryoutLijst.length) write("/agenda/try-outs/", t.tryoutPagina());
 if (t.premiereLijst.length) write("/agenda/premieres/", t.premierePagina());
 for (const [g, p] of t.genrePlaatsPaginas) write(t.genrePlaatsPad(g, p), t.genrePlaatsPagina(g, p));
+for (const [g, p] of [["cabaret", "Utrecht"], ["kindervoorstellingen", "Amsterdam"]]) for (const v of ["b", "c"]) write(`/voorstel-${v}${t.genrePlaatsPad(g, p)}`, t.genrePlaatsPagina(g, p, v));
 write("/festivals/", t.festivalIndex());
 for (const f of db.festivals.values()) write(`/festivals/${f.id}/`, t.festivalPagina(f));
 // Nieuws: "Net binnen" (automatisch uit de agenda) en de tijdlijn, plus een pagina per bericht (data/nieuws.json).
