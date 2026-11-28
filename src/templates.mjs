@@ -431,7 +431,7 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
       "@type": ZAAL_TYPE[t.soort] || "EventVenue", "@id": URL(`/theaters/${id}/#zaal`), name: t.naam, url: URL(`/theaters/${id}/`),
       ...((eigenSite(t.website) || t.foto?.wikidata) ? { sameAs: [eigenSite(t.website), t.foto?.wikidata && `https://www.wikidata.org/wiki/${t.foto.wikidata}`].filter(Boolean) } : {}),
       ...(t.foto ? { image: URL(t.foto.bestand) } : {}),
-      address: { "@type": "PostalAddress", addressLocality: t.plaats, addressCountry: t.land },
+      address: { "@type": "PostalAddress", ...(adresVan(t) ? { streetAddress: adresVan(t).straat, ...(adresVan(t).postcode ? { postalCode: adresVan(t).postcode } : {}) } : {}), addressLocality: adresVan(t)?.plaats || t.plaats, addressCountry: t.land },
     };
   };
   const plaatsLd = (p) => ({ "@type": "City", name: p, containedInPlace: { "@type": "Country", name: LANDEN[landVanPlaats(p)] } });
@@ -796,6 +796,26 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
   // foto staan op de theaterpagina (waar het kaartje naartoe linkt) en als tooltip op de foto.
   const zaalKleuren = Object.keys(KLEUREN).filter((k) => k !== "zwart");
   const zaalKleur = (t) => t.kleur || zaalKleuren[createHash("sha1").update(t.id).digest()[0] % zaalKleuren.length];
+  // Adres per zaal (data/theater-adressen.json, gemaakt door scripts/theateradressen.mjs; verzoek van de eigenaar,
+  // november 2026): op de theaterpagina met een Google Maps-kaart en een knop Routebeschrijving, en in de JSON-LD.
+  // Een regel met "fout": true is nagelopen en afgekeurd. Schrijfwijze netjes: geen hoofdletters, huisnummer achteraan,
+  // de postcode zonder plaats en de plaats zoals op de site als het dezelfde is.
+  const ADRESSEN = (() => {
+    try { return JSON.parse(readFileSync(new globalThis.URL("../data/theater-adressen.json", import.meta.url), "utf8")); } catch { return {}; }
+  })();
+  const netjes = (x) => (x === x.toUpperCase() && /[A-Z]{3}/.test(x) ? x.toLowerCase().replace(/(^|[\s\-'’(])(\p{L})/gu, (m, a, b) => a + b.toUpperCase()) : x);
+  function adresVan(t) {
+    const a = ADRESSEN[t.id];
+    if (!a || a.fout || !a.straat || /postbus/i.test(a.straat)) return null;
+    let straat = netjes(a.straat.replace(/\s+0$/, "").trim());
+    const m = straat.match(/^(\d+[a-zA-Z]?)\s+(.+)$/);
+    if (m) straat = `${m[2]} ${m[1]}`;
+    const pc = t.land === "NL" ? (String(a.postcode).toUpperCase().match(/\d{4}\s?[A-Z]{2}/)?.[0] || "").replace(/^(\d{4})([A-Z]{2})$/, "$1 $2") : (String(a.postcode).match(/\d{4}/)?.[0] || "");
+    const kaalP = (x) => String(x).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z]/g, "");
+    let plaats = netjes(String(a.plaats || t.plaats).split(",")[0].trim());
+    if (!plaats || kaalP(plaats).includes(kaalP(t.plaats)) || kaalP(t.plaats).includes(kaalP(plaats))) plaats = t.plaats;
+    return { straat, postcode: pc, plaats, bron: a.bron };
+  }
   // Korte bio per zaal (data/theater-bios.json, gemaakt door scripts/theaterbios.mjs en theaterbios-verwerk.mjs): de eigen
   // omschrijving van de zaal van haar homepage, in de kop van de theaterpagina (verzoek van de eigenaar, november 2026).
   const THEATER_BIOS = (() => {
@@ -3111,6 +3131,21 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     if (artiesten.length) zinnen.push(`De komende tijd ${artiesten.length === 1 && list.length === 1 ? "speelt" : "spelen"} er onder meer ${opsomming(artiesten.map(([id]) => esc(A.get(id).naam)))}.`);
     return zinnen.join(" ");
   }
+  // Adres met Google Maps-kaart (meteen zichtbaar, verzoek van de eigenaar november 2026; uitgelegd op /privacy/) en
+  // de knop Routebeschrijving (gewone link naar Google Maps met de zaal als bestemming).
+  function adresBlok(t) {
+    const a = adresVan(t);
+    if (!a) return "";
+    const zoek = encodeURIComponent(`${t.naam}, ${a.straat}, ${a.postcode ? a.postcode + " " : ""}${a.plaats}, ${LANDEN[t.land]}`);
+    return `<section class="zaal-locatie" aria-labelledby="locatie-titel">
+          <iframe class="zaal-kaart" src="https://www.google.com/maps?q=${zoek}&amp;hl=nl&amp;z=15&amp;output=embed" title="Kaart van ${esc(t.naam)} in ${esc(a.plaats)}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <div class="zaal-adres">
+            <h2 id="locatie-titel">Locatie</h2>
+            <p>${esc(t.naam)}<br>${esc(a.straat)}<br>${a.postcode ? `${esc(a.postcode)} ` : ""}${esc(a.plaats)}${t.land === "BE" ? ", België" : ""}</p>
+            <a class="btn zaal-route" href="https://www.google.com/maps/dir/?api=1&amp;destination=${zoek}" target="_blank" rel="noopener">${ICON.pin}Routebeschrijving${ICON.extern}<span class="visually-hidden"> (Google Maps, opent in een nieuw tabblad)</span></a>
+          </div>
+        </section>`;
+  }
   function theaterPage(t) {
     const list = db.gigsForTheater(t.id);
     // Kop in de eigen kleur van de zaal (dezelfde als het kaartje op de homepage, `zaalKleur`), met het kruimelpad,
@@ -3133,6 +3168,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         ${t.foto ? kopFoto(t, "theater-foto") : ""}
       </div></div>
       <div class="wrap detail-body zaal-lijst">
+        ${adresBlok(t)}
         ${list.length > 12 ? filters(list, { maand: true, icoon: true, voorbeeld: "Zoek een artiest of voorstelling" }) : ""}
         <div id="gigs">${monthGroups(list, { showVenue: false })}</div>
         ${list.length > 12 ? leegBlok : ""}
@@ -3164,6 +3200,8 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
         <p>Gebruik je <a href="/in-de-buurt/">Voorstellingen in de buurt</a> en geef je toestemming voor je locatie, dan rekent je eigen browser de afstand tot de theaters uit. Je locatie gaat niet naar ons of naar anderen en wordt niet bewaard. Wel onthoudt je eigen browser de plaats of postcode en de afstand van je laatste zoekopdracht (<code>cabaretiers-buurt</code>), of dat je vanaf je locatie zocht, zodat je de volgende keer meteen de voorstellingen in de buurt ziet. Heb je je browser al eerder toestemming gegeven voor je locatie, dan zoekt de pagina meteen vanaf je locatie, zonder het opnieuw te vragen; die toestemming trek je in via de instellingen van je browser.</p>
         <h2 id="video">Video's</h2>
         <p>Op sommige artiestpagina's staan video's van YouTube. Die laden pas als je erop klikt; dan maakt je browser verbinding met YouTube (in de privacyvriendelijke modus zonder cookies vooraf) en gelden de privacyregels van Google.</p>
+        <h2 id="kaarten">Kaarten van Google Maps</h2>
+        <p>Op de pagina's van theaters staat een kaart van Google Maps met het adres van de zaal. Die kaart laadt meteen als je de pagina opent. Je browser maakt dan verbinding met Google, en Google kan daarbij gegevens verwerken, zoals je IP-adres, en cookies zetten of lezen, ook als je in de cookiemelding <em>Liever niet</em> kiest. Daarvoor gelden de <a href="https://policies.google.com/privacy?hl=nl" rel="noopener">privacyregels van Google</a>; Google kan gegevens verwerken in de Verenigde Staten, onder het EU-VS-gegevensprivacykader. Wij krijgen van Google geen gegevens over jou door die kaart. De knop <em>Routebeschrijving</em> opent Google Maps in een nieuw tabblad.</p>
         <h2 id="links">Links naar theaters en sociale media</h2>
         <p>Via <em>Tickets</em> ga je naar de site van het theater of de artiest, en via de iconen onderaan naar onze pagina's op Instagram, Facebook, YouTube en TikTok. Daar gelden hun eigen privacyregels. Aan de link naar het theater voegen we een label toe (<code>utm_source=cabaretiers.com</code>), zodat het theater in zijn eigen statistieken ziet dat je via Cabaretiers.com komt. Daarmee geven wij geen gegevens over jou door.</p>
         <h2 id="mail">Mail</h2>
@@ -3471,6 +3509,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   }
 
   return {
+    geoPlaats,
     genrePad, controlePagina, dashboardPagina, dashboardPad, nieuwsPagina, nieuwsBericht, inDeBuurtPagina,
     home, agendaIndex, agendaData, agendaMaand, dagPagina, stadPaginas, plaatsIndex, plaatsPagina, artistIndex, comedyclubsPagina, festivalVan, genrePagina, GENRE_PAGINAS, cabaretiersPagina, artistPage, theaterIndex, theaterPage, about, privacy, notFound,
     voorstellingPagina, festivalIndex, festivalPagina, maanden, plaatsen, plaatsId, plaatsPad, maandId, tryoutPagina, tryoutLijst, premierePagina, premiereLijst, genrePlaatsPaginas, genrePlaatsPagina, genrePlaatsPad, voorstellingPaden: voorstellingPad,
