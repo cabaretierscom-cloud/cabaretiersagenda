@@ -2587,7 +2587,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const MAX = 150, groot = list.length > MAX ? zoekbareLijst(list, { max: MAX, genre: g, metFilters: false }) : null;
     const eerste = groot ? groot.eerste : list;
     const filterHtml = groot ? filters(list, { genre: false, afstand: true, icoon: true }) : list.length > 12 ? filters(list, { maand: true, afstand: true, icoon: true }) : "";
-    const genreRij = `<nav class="periode genre-rij" aria-label="Genres">${GENRE_PAGINAS.map((x) => `<a href="${genrePad(x)}"${x === g ? ' aria-current="page"' : ""}>${esc(GENRE_INFO[x].kop.replace(/ \d{4}$/, ""))}</a>`).join("")}</nav>`;
+    // Korte namen in de rij (verzoek van de eigenaar, november 2026); het huidige genre staat vooraan, zodat je ziet waar je bent.
+    const KORT = { muzikaal: "Muzikaal", actueel: "Actueel", improvisatie: "Improvisatie" };
+    const genreRij = `<nav class="periode genre-rij" aria-label="Genres">${[g, ...GENRE_PAGINAS.filter((x) => x !== g)].map((x) => `<a href="${genrePad(x)}"${x === g ? ' aria-current="page"' : ""}>${esc(KORT[x] || GENRE_INFO[x].kop.replace(/ \d{4}$/, ""))}</a>`).join("")}</nav>`;
     const body = `${KOP_KLEUR}
     <div class="home-kop agenda-kop genre-kop">
     <!--kruimelpad-->
