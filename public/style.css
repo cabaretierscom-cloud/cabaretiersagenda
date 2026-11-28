@@ -1770,3 +1770,4 @@ a:hover > .pk-stip, a:focus > .pk-stip { transform: scale(1.25); }
 /* Genre per plaats: de zalen als knopjes in het kleurvlak (optie A, november 2026). */
 .genre-zalen { margin-top: 16px; }
 @media (max-width: 560px) { .plaats-knoppen.genre-zalen { margin-right: -16px; } }
+
