@@ -1573,7 +1573,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       </div>
       <div class="az" id="az">${[...groepen].map(([l, items]) => `<section class="az-group" id="letter-${l === "#" ? "0" : l}">
         <h3>${l}</h3>
-        <ul>${items.map(({ a, list }) => `<li data-naam="${esc(a.naam.toLowerCase())}" data-rang-populair="${rang.get(a.id)}"><a href="${artiestPad(a.id)}">${azFoto(a)}<span class="ac">${plural(list.length, "datum", "data")}</span><span class="an">${esc(a.naam)}</span><span class="ad">Vanaf ${fmt.dayMonth(list[0].datum)} in ${esc(T.get(list[0].theater).plaats)}</span></a></li>`).join("")}</ul>
+        <ul>${items.map(({ a, list }) => `<li data-naam="${esc(a.naam.toLowerCase())}" data-rang-populair="${rang.get(a.id)}"><a href="${artiestPad(a.id)}">${azFoto(a)}<span class="ac">${plural(list.length, "datum", "data")}</span><span class="an">${esc(a.naam)}</span><span class="ad">Volgende voorstelling ${fmt.dayMonth(list[0].datum)} in ${esc(T.get(list[0].theater).plaats)}</span></a></li>`).join("")}</ul>
       </section>`).join("")}</div>
       <p class="empty" id="az-leeg" hidden>Geen artiest gevonden met deze naam.</p>`;
   }
