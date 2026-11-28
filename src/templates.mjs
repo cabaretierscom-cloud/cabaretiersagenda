@@ -2781,15 +2781,23 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     }
     vragen.push(["Hoe koop ik kaarten?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van het theater, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
     const affiches = nuInTheater(() => true, (v) => genresVanV(v).includes(g) && list.some((x) => x.voorstelling === v.id));
-    const body = `<section class="block wrap kop-plaats" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">${esc(info.kop)} in ${naam}</h1><p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}</p></div>
-    </section>
-      ${affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
+    // Kop in het wisselende kleurvlak zoals de genrepagina's (optie A, verzoek van de eigenaar november 2026): kruimelpad,
+    // titel en aantal, de zalen met hun aantal voorstellingen van dit genre als ronde knopjes (meeste eerst; op de
+    // telefoon één rij om te vegen) en de affiches van Nu in het theater over de onderrand. Zoeken en filters (zonder
+    // genrefilter: het genre ligt vast) als ronde knopjes direct boven de lijst.
+    const zaalKnoppen = `<ul class="plaats-knoppen genre-zalen">${zalen.map(([id, n]) => `<li><a href="/theaters/${id}/">${ICON.pin}${esc(T.get(id).naam)} <span>${n}</span></a></li>`).join("")}</ul>`;
+    const body = `${KOP_KLEUR}
+    <div class="home-kop agenda-kop genre-kop">
+    <!--kruimelpad-->
+    <section class="wrap" aria-labelledby="t"><div class="block-head"><h1 id="t">${esc(info.kop)} in ${naam}</h1><p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}</p></div>${zaalKnoppen}</section>
+    ${affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
       <div class="wrap wall-head"><h2 id="nu-title">Nu in het theater</h2></div>
       ${strip("strip-nu", `${info.kop} in ${p}: nu in het theater`, affiches)}
     </section>` : ""}
-      <div class="wrap detail-body">
-        ${list.length > 12 ? filters(list, { maand: true }) : ""}
+    </div>
+      <div class="wrap detail-body zaal-lijst genre-lijst">
+        <h2 class="sub-head">${list.length > 1 ? "Alle voorstellingen" : "De voorstelling"}</h2>
+        ${list.length > 12 ? filters(list, { maand: true, genre: false, icoon: true, voorbeeld: "Zoek een artiest, voorstelling of theater" }) : ""}
         <div id="gigs">${monthGroups(list, { verbergGenre: g })}</div>
         ${list.length > 12 ? leegBlok : ""}
         <section class="seo-tekst prose" aria-labelledby="over-titel">
