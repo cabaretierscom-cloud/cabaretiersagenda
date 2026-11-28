@@ -607,11 +607,11 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
   // Lange lijst (genre, try-outs) met zoeken in álle voorstellingen, zoals /agenda/: de pagina toont de eerste
   // MAX (aangevuld tot het eind van die dag), agenda.js laadt de rest uit /agenda/alles.js en houdt zich aan
   // het vaste genre of de vaste soort (data-vast-genre, data-vast-soort).
-  function zoekbareLijst(list, { max = 150, genre = null, soort = null } = {}) {
+  function zoekbareLijst(list, { max = 150, genre = null, soort = null, metFilters = true } = {}) {
     const rijOpts = { verbergGenre: genre, verbergSoort: soort };
     const grens = list[Math.min(max, list.length) - 1].datum;
     const eerste = list.filter((g) => g.datum <= grens);
-    return { eerste, html: `${filters(list, { genre: !genre, afstand: true })}
+    return { eerste, html: `${metFilters ? filters(list, { genre: !genre, afstand: true }) : ""}
       <div id="gigs" data-alles="/agenda/alles.js?v=${allesVersie()}" data-tot="${grens}" data-totaal="${list.length}"${genre ? ` data-vast-genre="${genre}"` : ""}${soort ? ` data-vast-soort="${soort}"` : ""}>${monthGroups(eerste, rijOpts)}</div>
       ${leegBlok}
       <p class="meer-weken" id="laad-meer"><button type="button" class="btn" id="laad-week">Toon alle ${list.length.toLocaleString("nl-NL")} voorstellingen</button></p>` };
@@ -2581,20 +2581,27 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     vragen.push(["Hoe koop ik kaarten?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van het theater of de club, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
     // Affiches van voorstellingen in dit genre; de lijst toont de eerstvolgende avonden (alles staat in de agenda).
     const affiches = nuInTheater(() => true, (v) => genresVanV(v).includes(g));
-    const MAX = 150, groot = list.length > MAX ? zoekbareLijst(list, { max: MAX, genre: g }) : null;
+    // Kop in het wisselende kleurvlak (optie B, verzoek van de eigenaar november 2026): kruimelpad, titel en aantal en
+    // een rij met alle genres (het huidige zwart); de affiches van Nu in het theater steken over de onderrand, zoals op
+    // /artiesten/. Zoeken en filters staan als ronde knopjes direct boven de lijst.
+    const MAX = 150, groot = list.length > MAX ? zoekbareLijst(list, { max: MAX, genre: g, metFilters: false }) : null;
     const eerste = groot ? groot.eerste : list;
-    const body = `<section class="block wrap" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">${esc(info.kop)}</h1><p>${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}</p></div>
-      ${info.intro ? info.intro(list) : ""}
-    </section>
+    const filterHtml = groot ? filters(list, { genre: false, afstand: true, icoon: true }) : list.length > 12 ? filters(list, { maand: true, afstand: true, icoon: true }) : "";
+    const genreRij = `<nav class="periode genre-rij" aria-label="Genres">${GENRE_PAGINAS.map((x) => `<a href="${genrePad(x)}"${x === g ? ' aria-current="page"' : ""}>${esc(GENRE_INFO[x].kop.replace(/ \d{4}$/, ""))}</a>`).join("")}</nav>`;
+    const body = `${KOP_KLEUR}
+    <div class="home-kop agenda-kop genre-kop">
+    <!--kruimelpad-->
+    <section class="wrap" aria-labelledby="t"><div class="block-head"><h1 id="t">${esc(info.kop)}</h1><p>${plural(list.length, "voorstelling", "voorstellingen")} in ${plural(steden.length, "plaats", "plaatsen")}</p></div>${genreRij}</section>
     ${affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
       <div class="wrap wall-head"><h2 id="nu-title">Nu in het theater</h2></div>
       ${strip("strip-nu", `${info.kop}: nu in het theater`, affiches)}
     </section>` : ""}
-    <section class="block wrap az-blok" aria-labelledby="lijst-titel">
+    </div>
+    <section class="block wrap az-blok zaal-lijst genre-lijst" aria-labelledby="lijst-titel">
+      ${info.intro ? info.intro(list) : ""}
       <h2 class="sub-head" id="lijst-titel">${list.length > MAX ? "Eerstvolgende voorstellingen" : "Alle voorstellingen"}</h2>
-      ${groot ? groot.html : `${list.length > 12 ? filters(list, { maand: true, afstand: true }) : ""}
-      <div id="gigs">${monthGroups(list, { verbergGenre: g })}</div>
+      ${filterHtml}
+      ${groot ? groot.html : `<div id="gigs">${monthGroups(list, { verbergGenre: g })}</div>
       ${list.length > 12 ? leegBlok : ""}`}
       ${genrePlaatsen(g).length ? `<section class="genre-plaatsen" aria-labelledby="gp-titel">
         <h2 class="sub-head" id="gp-titel">${esc(info.kop)} per plaats</h2>
