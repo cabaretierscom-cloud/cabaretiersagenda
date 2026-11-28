@@ -111,6 +111,7 @@ for (const th of db.theaters.values()) if (db.gigsForTheater(th.id).length) writ
 for (const g of t.GENRE_PAGINAS) write(t.genrePad(g), t.genrePagina(g));
 if (t.tryoutLijst.length) write("/agenda/try-outs/", t.tryoutPagina());
 if (t.premiereLijst.length) write("/agenda/premieres/", t.premierePagina());
+for (const v of ["b", "c"]) { write(`/voorstel-${v}/agenda/try-outs/`, t.tryoutPagina(v)); write(`/voorstel-${v}/agenda/premieres/`, t.premierePagina(v)); }
 for (const [g, p] of t.genrePlaatsPaginas) write(t.genrePlaatsPad(g, p), t.genrePlaatsPagina(g, p));
 write("/festivals/", t.festivalIndex());
 for (const f of db.festivals.values()) write(`/festivals/${f.id}/`, t.festivalPagina(f));

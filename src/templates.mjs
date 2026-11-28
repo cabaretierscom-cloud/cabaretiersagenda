@@ -1484,7 +1484,14 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     // affichewand (strip) die opzij schuift; de actieve kaart komt naar voren (agenda.js, zoals de affiches).
     // Het hele kaartje is de link naar de kaartverkoop (class "tickets" en ticketData() voor de klikmeting).
     // Nooit twee kaartjes van dezelfde kleur naast elkaar: de volgorde (op datum) blijft, de kleur schuift.
-    const kaartjes = afwisselend(binnenkort, (g) => leadInk(g.voorstelling), { schuiven: false }).map(({ x: g, kleur }) => {
+    const kaartjes = datumKaartjes(binnenkort);
+    return `<section class="dag-blok" aria-labelledby="dag-blok-t">
+        <h2 id="dag-blok-t">Deze week in ${esc(p)}</h2>
+        ${strip("strip-dag", `Deze week in ${p}`, kaartjes).replace('class="strip"', 'class="strip dag-kaarten"')}
+      </section>`;
+  }
+  function datumKaartjes(binnenkort) {
+    return afwisselend(binnenkort, (g) => leadInk(g.voorstelling), { schuiven: false }).map(({ x: g, kleur }) => {
       const v = V.get(g.voorstelling);
       const kopen = !["uitverkocht", "geannuleerd", "verplaatst"].includes(g.status);
       const wie = artistNames(g.voorstelling) || v.titel;
@@ -1497,10 +1504,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
             <span class="visually-hidden">: ${esc(wie)} op ${esc(fmt.full(g.datum))} in ${esc(T.get(g.theater).naam)} (externe website, opent in een nieuw tabblad)</span>
           </a>`;
     }).join("");
-    return `<section class="dag-blok" aria-labelledby="dag-blok-t">
-        <h2 id="dag-blok-t">Deze week in ${esc(p)}</h2>
-        ${strip("strip-dag", `Deze week in ${p}`, kaartjes).replace('class="strip"', 'class="strip dag-kaarten"')}
-      </section>`;
   }
 
   function plaatsPagina(p) {
@@ -2631,10 +2634,30 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
       schema: { type: "CollectionPage", kruimels: [["Agenda", "/agenda/"], [info.kop, pad]], extra: [...eventsLd(eerste), faqLd(vragen, pad)] } });
   }
 
+
+  // VOORSTEL (november 2026): drie ontwerpen voor /agenda/try-outs/ en /agenda/premieres/.
+  // a = zoals Vanavond: kleurvlak met zoeken, filters en de rij periodes; de affiches eronder.
+  // b = zoals de genrepagina's: kleurvlak met titel en periodes, de affiches over de onderrand; zoeken en filters boven de lijst.
+  // c = vaste kleur per pagina met korte uitleg; de eerstvolgende avonden als kaartjes met datum over de onderrand.
+  function tpKop(variant, { pad, kop, sub, uitleg, list, affiches, wandTitel, kaartTitel, kleur, filterHtml }) {
+    const periodes = [["Vanavond", "/vanavond/"], ["Dit weekend", "/dit-weekend/"], ...(tryoutLijst.length ? [["Try-outs", "/agenda/try-outs/"]] : []), ...(premiereLijst.length ? [["Premières", "/agenda/premieres/"]] : []), ["Hele agenda", "/agenda/"]];
+    const rij = `<nav class="periode" aria-label="Periode">${periodes.map(([t, u]) => `<a href="${u}"${u === pad ? ' aria-current="page"' : ""}>${t}</a>`).join("")}</nav>`;
+    const kopTekst = `<div class="block-head"><h1 id="t">${esc(kop)}</h1><p>${sub}</p></div>`;
+    const wand = affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
+      <div class="wrap wall-head"><h2 id="nu-title">${esc(wandTitel)}</h2></div>
+      ${strip("strip-nu", wandTitel, affiches)}
+    </section>` : "";
+    if (variant === "a") return { kop: `${KOP_KLEUR}<div class="home-kop agenda-kop dag-kop"><!--kruimelpad--><section class="wrap" aria-labelledby="t">${kopTekst}${filterHtml}${rij}</section></div>${wand}`, lijstFilters: "" };
+    if (variant === "b") return { kop: `${KOP_KLEUR}<div class="home-kop agenda-kop genre-kop"><!--kruimelpad--><section class="wrap" aria-labelledby="t">${kopTekst}${rij}</section>${wand}</div>`, lijstFilters: filterHtml };
+    const [kv, ki] = KLEUREN[kleur];
+    const eerst = list.filter((g) => g.status !== "geannuleerd").slice(0, 12);
+    return { kop: `<div class="home-kop agenda-kop genre-kop tp-kop" style="--kop-geel:var(${kv});--kop-inkt:${ki}"><!--kruimelpad--><section class="wrap" aria-labelledby="t">${kopTekst}<p class="tp-uitleg">${uitleg}</p>${rij}</section>
+      <section class="wrap dag-blok tp-kaarten" aria-labelledby="tp-k"><h2 id="tp-k">${esc(kaartTitel)}</h2>${strip("strip-dag", kaartTitel, datumKaartjes(eerst)).replace('class="strip"', 'class="strip dag-kaarten"')}</section></div>${wand}`, lijstFilters: filterHtml };
+  }
   // ---------- Try-outs: /agenda/try-outs/ ----------
   // Alle try-outs (soort "try-out", niet geannuleerd); de lijst toont de eerstvolgende 150, de rest via /agenda/?soort=try-out.
   const tryoutLijst = up.filter((g) => g.soort === "try-out" && g.status !== "geannuleerd");
-  function tryoutPagina() {
+  function tryoutPagina(variant = "a") {
     const list = tryoutLijst, pad = "/agenda/try-outs/";
     const artiesten = telPer(list.flatMap((x) => V.get(x.voorstelling).artiesten).filter((id) => !isFestival(id) && !GEEN_CABARETIER.test(A.get(id).naam)), (id) => id);
     const steden = telPer(list, (x) => T.get(x.theater).plaats);
@@ -2664,18 +2687,16 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     if (premieres.length) vragen.push(["Wanneer is de première na de try-outs?", `Dat verschilt per voorstelling. Bijvoorbeeld: ${opsomming(premieres.slice(0, 3).map((g) => `${wat(g)} op ${fmt.full(g.datum)} in ${theaterLink(g.theater)}`))}.`]);
     vragen.push(["Hoe koop ik kaarten voor een try-out?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van het theater, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
     const affiches = nuInTheater(() => true, (v) => list.some((x) => x.voorstelling === v.id));
-    const MAX = 150, groot = list.length > MAX ? zoekbareLijst(list, { max: MAX, soort: "try-out" }) : null;
+    const MAX = 150, groot = list.length > MAX ? zoekbareLijst(list, { max: MAX, soort: "try-out", metFilters: false }) : null;
     const eerste = groot ? groot.eerste : list;
-    const body = `<section class="block wrap" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">Try-outs</h1><p>${plural(list.length, "try-out", "try-outs")} in ${plural(steden.length, "plaats", "plaatsen")}: nieuwe programma's vóór de première</p></div>
-    </section>
-    ${affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
-      <div class="wrap wall-head"><h2 id="nu-title">Nu in try-out</h2></div>
-      ${strip("strip-nu", "Try-outs: nu in het theater", affiches)}
-    </section>` : ""}
-    <section class="block wrap az-blok" aria-labelledby="lijst-titel">
+    const filterHtml = groot ? filters(list, { afstand: true, icoon: true }) : list.length > 12 ? filters(list, { maand: true, afstand: true, icoon: true }) : "";
+    const { kop, lijstFilters } = tpKop(variant, { pad, kop: "Try-outs", sub: `${plural(list.length, "try-out", "try-outs")} in ${plural(steden.length, "plaats", "plaatsen")}: nieuwe programma's vóór de première`,
+      uitleg: "Zie een nieuw programma als eerste, vaak voor minder geld: de artiest test nog wat werkt.", list, affiches, wandTitel: "Nu in try-out", kaartTitel: "Binnenkort in try-out", kleur: "limoen", filterHtml });
+    const body = `${kop}
+    <section class="block wrap az-blok zaal-lijst genre-lijst" aria-labelledby="lijst-titel">
       <h2 class="sub-head" id="lijst-titel">${list.length > MAX ? "Eerstvolgende try-outs" : "Alle try-outs"}</h2>
-      ${groot ? groot.html : `${list.length > 12 ? filters(list, { maand: true, afstand: true }) : ""}
+      ${lijstFilters}
+      ${groot ? groot.html : `
       <div id="gigs">${monthGroups(list, { verbergSoort: "try-out" })}</div>
       ${list.length > 12 ? leegBlok : ""}`}
       <section class="seo-tekst prose" aria-labelledby="over-titel">
@@ -2692,7 +2713,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   // ---------- Premières: /agenda/premieres/ ----------
   // Alle premières (soort "première", niet geannuleerd), opgezet zoals /agenda/try-outs/ (verzoek van de eigenaar, november 2026).
   const premiereLijst = up.filter((g) => g.soort === "première" && g.status !== "geannuleerd");
-  function premierePagina() {
+  function premierePagina(variant = "a") {
     const list = premiereLijst, pad = "/agenda/premieres/";
     const artiesten = telPer(list.flatMap((x) => V.get(x.voorstelling).artiesten).filter((id) => !isFestival(id) && !GEEN_CABARETIER.test(A.get(id).naam)), (id) => id);
     const steden = telPer(list, (x) => T.get(x.theater).plaats);
@@ -2721,16 +2742,13 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     vragen.push(["Wat is het verschil tussen een try-out en een première?", `Bij een try-out is het programma nog in ontwikkeling: de artiest test wat werkt en past de voorstelling daarna nog aan. De première is de eerste voorstelling van de vaste versie.${tryoutLijst.length ? ` In de agenda staan nu ook ${plural(tryoutLijst.length, "try-out", "try-outs")}, zie <a href="/agenda/try-outs/">try-outs</a>.` : ""}`]);
     vragen.push(["Hoe koop ik kaarten voor een première?", "Klik bij een voorstelling op <em>Tickets</em>: die knop opent de pagina van het theater, waar je kaarten kunt bestellen. Cabaretiers.com verkoopt zelf geen kaarten."]);
     const affiches = nuInTheater(() => true, (v) => voorstellingen.has(v.id));
-    const body = `<section class="block wrap" aria-labelledby="t">
-      <div class="block-head"><h1 id="t">Premières</h1><p>${plural(voorstellingen.size, "nieuw programma", "nieuwe programma's")} in première, op ${plural(list.length, "avond", "avonden")} in ${plural(steden.length, "plaats", "plaatsen")}</p></div>
-    </section>
-    ${affiches ? `<section class="wall wall-sub" aria-labelledby="nu-title">
-      <div class="wrap wall-head"><h2 id="nu-title">Binnenkort in première</h2></div>
-      ${strip("strip-nu", "Premières: binnenkort in het theater", affiches)}
-    </section>` : ""}
-    <section class="block wrap az-blok" aria-labelledby="lijst-titel">
+    const filterHtml = list.length > 12 ? filters(list, { maand: true, afstand: true, icoon: true }) : "";
+    const { kop, lijstFilters } = tpKop(variant, { pad, kop: "Premières", sub: `${plural(voorstellingen.size, "nieuw programma", "nieuwe programma's")} in première, op ${plural(list.length, "avond", "avonden")} in ${plural(steden.length, "plaats", "plaatsen")}`,
+      uitleg: "De eerste officiële avond van een nieuw programma: vanaf hier begint de tournee.", list, affiches, wandTitel: "Binnenkort in première", kaartTitel: "Eerstvolgende premières", kleur: "roze", filterHtml });
+    const body = `${kop}
+    <section class="block wrap az-blok zaal-lijst genre-lijst" aria-labelledby="lijst-titel">
       <h2 class="sub-head" id="lijst-titel">Alle premières</h2>
-      ${list.length > 12 ? filters(list, { maand: true, afstand: true }) : ""}
+      ${lijstFilters}
       <div id="gigs">${monthGroups(list, { verbergSoort: "première" })}</div>
       ${list.length > 12 ? leegBlok : ""}
       <section class="seo-tekst prose" aria-labelledby="over-titel">

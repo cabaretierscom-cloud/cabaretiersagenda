@@ -1770,3 +1770,8 @@ a:hover > .pk-stip, a:focus > .pk-stip { transform: scale(1.25); }
 /* Genre per plaats: de zalen als knopjes in het kleurvlak (optie A, november 2026). */
 .genre-zalen { margin-top: 16px; }
 @media (max-width: 560px) { .plaats-knoppen.genre-zalen { margin-right: -16px; } }
+
+/* VOORSTEL try-outs en premières, optie C: vaste kleur, korte uitleg en de eerstvolgende avonden als kaartjes. */
+.tp-kop .tp-uitleg { max-width: 60ch; margin: 10px 0 0; font-size: var(--step-0); color: var(--kop-inkt); }
+.tp-kop .tp-kaarten { margin: 22px 0 0; padding-bottom: 6px; }
+.tp-kop .tp-kaarten h2 { color: var(--kop-inkt); }
