@@ -732,6 +732,13 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
   // foto staan op de theaterpagina (waar het kaartje naartoe linkt) en als tooltip op de foto.
   const zaalKleuren = Object.keys(KLEUREN).filter((k) => k !== "zwart");
   const zaalKleur = (t) => t.kleur || zaalKleuren[createHash("sha1").update(t.id).digest()[0] % zaalKleuren.length];
+  // Vaste kleur per plaats (data/plaats-kleuren.json, gemaakt door scripts/plaats-kleuren.mjs): de kop van de plaatspagina
+  // en de stip op de kaart van /plaatsen/. Een plaats die er (nog) niet in staat, krijgt een kleur uit haar naam.
+  const PLAATS_KLEUREN = (() => {
+    try { return JSON.parse(readFileSync(new globalThis.URL("../data/plaats-kleuren.json", import.meta.url), "utf8")); } catch { return {}; }
+  })();
+  for (const [p, k] of Object.entries(PLAATS_KLEUREN)) if (!KLEUREN[k] || k === "zwart") throw new Error(`data/plaats-kleuren.json: onbekende kleur "${k}" bij ${p}`);
+  const plaatsKleur = (p) => PLAATS_KLEUREN[p] || zaalKleuren[createHash("sha1").update(p).digest()[0] % zaalKleuren.length];
   function theaterKaartjes() {
     const kleurVan = zaalKleur;
     const lijst = [...T.values()].filter((t) => t.foto?.bestand)
@@ -1301,7 +1308,6 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     // een kaart van Nederland en Vlaanderen met een klikbare stip per plaats (groter = meer voorstellingen) en de
     // top 12, daaronder een compacte lijst per land en letter (vet vanaf 50 voorstellingen).
     const items = plaatsen.map((p) => ({ p, land: landVanPlaats(p), n: perPlaats(p).length, zalen: zalenMetData.filter((t) => t.plaats === p) }));
-    const plaatsKleur = (p) => zaalKleuren[createHash("sha1").update(p).digest()[0] % zaalKleuren.length];
     const letter = (n) => { const c = n.replace(/^'s-/, "").normalize("NFD")[0].toUpperCase(); return /[A-Z]/.test(c) ? c : "#"; };
     const lijsten = Object.keys(LANDEN).map((land) => {
       const hier = items.filter((x) => x.land === land);
@@ -1500,7 +1506,7 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
   function plaatsPagina(p) {
     const list = perPlaats(p);
     const zalen = zalenMetData.filter((t) => t.plaats === p);
-    // Kop in het wisselende kleurvlak zoals /plaatsen/, /theaters/ en /artiesten/ (optie C, verzoek van de eigenaar
+    // Kop in het kleurvlak zoals /plaatsen/, /theaters/ en /artiesten/ (optie C, verzoek van de eigenaar
     // november 2026): kruimelpad, titel en aantal, de zalen als ronde knopjes (meeste voorstellingen eerst) en rechts
     // een kaartje van Nederland en Vlaanderen met de plaats. Daaronder Deze week en alle voorstellingen met filters.
     const perZaal = new Map(telPer(list, (g) => g.theater));
@@ -1512,8 +1518,9 @@ ${uitgelichtBlok("home") ? `<div class="wrap">${uitgelichtBlok("home")}</div>` :
     const kaartje = c ? `<div class="plaats-minikaart" aria-hidden="true"><svg viewBox="${viewBox}">
         <g class="pmk-land">${provs.map((q) => `<path d="${q.d}"/>`).join("")}${MEREN.map((m) => `<path class="pmk-meer" d="${m.d}"/>`).join("")}</g>
         <circle class="pmk-ring" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="46"/><circle class="pmk-stip" cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="20"/></svg></div>` : "";
-    const body = `${KOP_KLEUR}
-    <div class="home-kop agenda-kop zalen-kop plaats-kop">
+    // De kop in de vaste kleur van de plaats (plaatsKleur), dezelfde als de stip op de kaart van /plaatsen/.
+    const [kleurVar, kleurInkt] = KLEUREN[plaatsKleur(p)];
+    const body = `<div class="home-kop agenda-kop zalen-kop plaats-kop" style="--kop-geel:var(${kleurVar});--kop-inkt:${kleurInkt}">
     <!--kruimelpad-->
     <section class="wrap plaats-kop-c" aria-labelledby="t"><div><div class="block-head"><h1 id="t">Theater in ${esc(p)}</h1><p>${plural(list.length, "aankomende voorstelling", "aankomende voorstellingen")} in ${plural(zalen.length, "theater", "theaters")}</p></div>${zaalKnoppen}</div>${kaartje}</section>
     </div>
