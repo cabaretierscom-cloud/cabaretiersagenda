@@ -31,6 +31,15 @@
     "bron": "https://www.arenberg.be/",
     "opgehaald": "2026-11-28"
   },
+  "arjaan-theater-geraardsbergen": {
+    "straat": "Zonnebloemstraat 7",
+    "postcode": "",
+    "plaats": "Geraardsbergen",
+    "bron": "https://www.openstreetmap.org/way/901088418",
+    "lat": 50.7767,
+    "lon": 3.88645,
+    "opgehaald": "2026-11-28"
+  },
   "art-studio-rotterdam": {
     "straat": "Kolbleistraat 32",
     "postcode": "3192 BE",
@@ -102,6 +111,15 @@
     "bron": "https://ccgr.nl/",
     "opgehaald": "2026-11-28"
   },
+  "c-mine-genk": {
+    "straat": "C-Mine 1",
+    "postcode": "3600",
+    "plaats": "Genk",
+    "bron": "https://www.openstreetmap.org/relation/12209030",
+    "lat": 50.98195,
+    "lon": 5.49197,
+    "opgehaald": "2026-11-28"
+  },
   "cafe-caat-leiden": {
     "fout": true,
     "opmerking": "Adres van de website hoort bij een andere zaal of is een postbus (nagelopen november 2026); niet opnieuw ophalen."
@@ -134,6 +152,15 @@
     "bron": "https://www.cascade.nl/",
     "opgehaald": "2026-11-28"
   },
+  "casino-modern-waterschei": {
+    "straat": "André Dumontlaan 2",
+    "postcode": "3600",
+    "plaats": "Genk",
+    "bron": "https://www.openstreetmap.org/way/254079384",
+    "lat": 50.99762,
+    "lon": 5.52821,
+    "opgehaald": "2026-11-28"
+  },
   "castellum": {
     "straat": "Rijnplein 1-3",
     "postcode": "2405 DB",
@@ -141,11 +168,56 @@
     "bron": "https://castellum.nl/",
     "opgehaald": "2026-11-28"
   },
+  "cc-achterolmen-maaseik": {
+    "straat": "Van Eycklaan 72",
+    "postcode": "3680",
+    "plaats": "Maaseik",
+    "bron": "https://www.openstreetmap.org/way/183349483",
+    "lat": 51.10012,
+    "lon": 5.7886,
+    "opgehaald": "2026-11-28"
+  },
+  "cc-adelberg-lommel": {
+    "straat": "Adelbergpark 1,2-2A",
+    "postcode": "3920",
+    "plaats": "Lommel",
+    "bron": "https://www.openstreetmap.org/way/110237108",
+    "lat": 51.23203,
+    "lon": 5.30791,
+    "opgehaald": "2026-11-28"
+  },
+  "cc-binder-puurs": {
+    "straat": "Forum 9",
+    "postcode": "2870",
+    "plaats": "Puurs-Sint-Amands",
+    "bron": "https://www.openstreetmap.org/way/532595449",
+    "lat": 51.07525,
+    "lon": 4.27481,
+    "opgehaald": "2026-11-28"
+  },
+  "cc-binder-puurs-sint-amands": {
+    "straat": "Forum 9",
+    "postcode": "2870",
+    "plaats": "Puurs-Sint-Amands",
+    "bron": "https://www.openstreetmap.org/way/532595449",
+    "lat": 51.07525,
+    "lon": 4.27481,
+    "opgehaald": "2026-11-28"
+  },
   "cc-blankenberge": {
     "straat": "J.F. Kennedyplein 1",
     "postcode": "8370",
     "plaats": "Blankenberge",
     "bron": "https://www.blankenberge.be/",
+    "opgehaald": "2026-11-28"
+  },
+  "cc-de-balluchon-koekelare": {
+    "straat": "Moerestraat 19",
+    "postcode": "8680",
+    "plaats": "Koekelare",
+    "bron": "https://www.openstreetmap.org/way/436775880",
+    "lat": 51.09149,
+    "lon": 2.97864,
     "opgehaald": "2026-11-28"
   },
   "cc-de-bogaard-sint-truiden": {
@@ -169,11 +241,38 @@
     "bron": "https://www.sint-lievens-houtem.be/",
     "opgehaald": "2026-11-28"
   },
+  "cc-de-factorij-zaventem": {
+    "straat": "Willem Lambertstraat 10",
+    "postcode": "1930",
+    "plaats": "Zaventem",
+    "bron": "https://www.openstreetmap.org/way/48042974",
+    "lat": 50.8843,
+    "lon": 4.47,
+    "opgehaald": "2026-11-28"
+  },
+  "cc-de-mol-lier": {
+    "straat": "Aarschotsesteenweg 3",
+    "postcode": "2500",
+    "plaats": "Lier",
+    "bron": "https://www.openstreetmap.org/way/88790786",
+    "lat": 51.12515,
+    "lon": 4.57561,
+    "opgehaald": "2026-11-28"
+  },
   "cc-de-schakel": {
     "straat": "Schakelstraat 8",
     "postcode": "8790",
     "plaats": "Waregem",
     "bron": "https://www.ccdeschakel.be/",
+    "opgehaald": "2026-11-28"
+  },
+  "cc-de-steenoven-herzele": {
+    "straat": "Kerkkouter 40",
+    "postcode": "",
+    "plaats": "Herzele",
+    "bron": "https://www.openstreetmap.org/way/151403345",
+    "lat": 50.88578,
+    "lon": 3.88367,
     "opgehaald": "2026-11-28"
   },
   "cc-de-steiger-menen": {
@@ -188,6 +287,15 @@
     "postcode": "2830",
     "plaats": "Willebroek",
     "bron": "https://www.willebroek.be/",
+    "opgehaald": "2026-11-28"
+  },
+  "cc-de-velinx-tongeren": {
+    "straat": "Dijk 111",
+    "postcode": "3700",
+    "plaats": "Tongeren",
+    "bron": "https://www.openstreetmap.org/way/542054702",
+    "lat": 50.77556,
+    "lon": 5.46244,
     "opgehaald": "2026-11-28"
   },
   "cc-de-warandepoort-tervuren": {
@@ -209,6 +317,15 @@
     "postcode": "8750",
     "plaats": "Wingene",
     "bron": "https://www.wingene.be/",
+    "opgehaald": "2026-11-28"
+  },
+  "cc-de-woeker-oudenaarde": {
+    "straat": "Woeker 3",
+    "postcode": "",
+    "plaats": "Oudenaarde",
+    "bron": "https://www.openstreetmap.org/node/12099380104",
+    "lat": 50.84546,
+    "lon": 3.60704,
     "opgehaald": "2026-11-28"
   },
   "cc-den-blank-overijse": {
@@ -260,6 +377,15 @@
     "bron": "https://www.cchetspoor.be/",
     "opgehaald": "2026-11-28"
   },
+  "cc-jan-tervaert-hamme": {
+    "straat": "Kaaiplein 35",
+    "postcode": "",
+    "plaats": "Hamme",
+    "bron": "https://www.openstreetmap.org/way/531826967",
+    "lat": 51.10198,
+    "lon": 4.13532,
+    "opgehaald": "2026-11-28"
+  },
   "cc-kruispunt-diksmuide": {
     "straat": "Grote Markt 6",
     "postcode": "8600",
@@ -288,11 +414,38 @@
     "bron": "http://ccmaasmechelen.be/",
     "opgehaald": "2026-11-28"
   },
+  "cc-mortsel": {
+    "straat": "Drabstraat 172",
+    "postcode": "",
+    "plaats": "Mortsel",
+    "bron": "https://www.openstreetmap.org/node/7863965611",
+    "lat": 51.1749,
+    "lon": 4.46866,
+    "opgehaald": "2026-11-28"
+  },
   "cc-muze-heusden-zolder": {
     "straat": "Marktplein 3",
     "postcode": "3550",
     "plaats": "Heusden-Zolder",
     "bron": "https://www.muze.be/",
+    "opgehaald": "2026-11-28"
+  },
+  "cc-nova-nazareth": {
+    "straat": "Steenweg 92",
+    "postcode": "9810",
+    "plaats": "Eke",
+    "bron": "https://www.openstreetmap.org/way/556295354",
+    "lat": 50.95745,
+    "lon": 3.64152,
+    "opgehaald": "2026-11-28"
+  },
+  "cc-nova-nazareth-de-pinte": {
+    "straat": "Steenweg 92",
+    "postcode": "9810",
+    "plaats": "Eke",
+    "bron": "https://www.openstreetmap.org/way/556295354",
+    "lat": 50.95745,
+    "lon": 3.64152,
     "opgehaald": "2026-11-28"
   },
   "cc-palethe-pelt": {
@@ -344,6 +497,15 @@
     "bron": "https://www.cinemagouda.nl/",
     "opgehaald": "2026-11-28"
   },
+  "cinema-walburg-hamont-achel": {
+    "straat": "Kerkstraat 28",
+    "postcode": "3930",
+    "plaats": "Hamont-Achel",
+    "bron": "https://www.openstreetmap.org/node/11513565213",
+    "lat": 51.25178,
+    "lon": 5.54749,
+    "opgehaald": "2026-11-28"
+  },
   "city-nieuwpoort": {
     "fout": true,
     "opmerking": "Adres van de website hoort bij een andere zaal of is een postbus (nagelopen november 2026); niet opnieuw ophalen."
@@ -388,6 +550,15 @@
     "postcode": "1014 DB",
     "plaats": "Amsterdam",
     "bron": "https://www.comedytrain.nl/",
+    "opgehaald": "2026-11-28"
+  },
+  "concertgebouw-brugge": {
+    "straat": "'t Zand 34",
+    "postcode": "8000",
+    "plaats": "Brugge",
+    "bron": "https://www.openstreetmap.org/way/92039703",
+    "lat": 51.20386,
+    "lon": 3.2184,
     "opgehaald": "2026-11-28"
   },
   "concertzaal-tilburg": {
@@ -495,6 +666,15 @@
     "bron": "https://www.indeklinker.nl/",
     "opgehaald": "2026-11-28"
   },
+  "cultuurhuis-merelbeke": {
+    "straat": "Driekoningenplein 13;15",
+    "postcode": "",
+    "plaats": "Merelbeke",
+    "bron": "https://www.openstreetmap.org/way/1270589944",
+    "lat": 50.99316,
+    "lon": 3.74801,
+    "opgehaald": "2026-11-28"
+  },
   "cultuurhuis-merlebeke-melle": {
     "straat": "Driekoningenplein 15",
     "postcode": "9820",
@@ -556,6 +736,15 @@
     "postcode": "1271 VA",
     "plaats": "Huizen",
     "bron": "https://www.deboerderijhuizen.nl/",
+    "opgehaald": "2026-11-28"
+  },
+  "de-boesdaalhoeve-sint-genesius-rode": {
+    "straat": "Hoevestraat 67",
+    "postcode": "1640",
+    "plaats": "Sint-Genesius-Rode",
+    "bron": "https://www.openstreetmap.org/way/149158754",
+    "lat": 50.75396,
+    "lon": 4.35798,
     "opgehaald": "2026-11-28"
   },
   "de-branding-middelkerke": {
@@ -668,6 +857,15 @@
     "postcode": "1181 ZM",
     "plaats": "Amstelveen",
     "bron": "https://schouwburgamstelveen.nl/",
+    "opgehaald": "2026-11-28"
+  },
+  "de-leest-izegem": {
+    "straat": "Sint-Jorisstraat 62",
+    "postcode": "8870",
+    "plaats": "Izegem",
+    "bron": "https://www.openstreetmap.org/way/96861539",
+    "lat": 50.91273,
+    "lon": 3.20484,
     "opgehaald": "2026-11-28"
   },
   "de-lieve-vrouw-amersfoort": {
@@ -880,6 +1078,15 @@
     "bron": "https://denbelgiek.be/",
     "opgehaald": "2026-11-28"
   },
+  "den-hoogen-pad-maldegem": {
+    "straat": "Elisabethstraat 3",
+    "postcode": "9991",
+    "plaats": "Adegem",
+    "bron": "https://www.openstreetmap.org/way/165582624",
+    "lat": 51.20331,
+    "lon": 3.48307,
+    "opgehaald": "2026-11-28"
+  },
   "den-ichter-oudsbergen": {
     "straat": "Dorpsstraat 44",
     "postcode": "3670",
@@ -982,6 +1189,15 @@
     "bron": "https://www.fulcotheater.nl/",
     "opgehaald": "2026-11-28"
   },
+  "gc-de-bunder-moorslede": {
+    "straat": "Iepersestraat 52B",
+    "postcode": "8890",
+    "plaats": "Moorslede",
+    "bron": "https://www.openstreetmap.org/way/529363645",
+    "lat": 50.88836,
+    "lon": 3.05394,
+    "opgehaald": "2026-11-28"
+  },
   "gc-de-kluize-oosterzele": {
     "straat": "Sportstraat 3",
     "postcode": "9860",
@@ -1052,11 +1268,47 @@
     "bron": "https://www.dezandloper.be/",
     "opgehaald": "2026-11-28"
   },
+  "gc-den-egger-scherpenheuvel": {
+    "straat": "August Nihoulstraat 72,74",
+    "postcode": "3270",
+    "plaats": "Scherpenheuvel-Zichem",
+    "bron": "https://www.openstreetmap.org/way/138404951",
+    "lat": 50.97687,
+    "lon": 4.9764,
+    "opgehaald": "2026-11-28"
+  },
+  "gc-den-egger-scherpenheuvel-zichem": {
+    "straat": "August Nihoulstraat 72,74",
+    "postcode": "3270",
+    "plaats": "Scherpenheuvel-Zichem",
+    "bron": "https://www.openstreetmap.org/way/138404951",
+    "lat": 50.97687,
+    "lon": 4.9764,
+    "opgehaald": "2026-11-28"
+  },
+  "gc-felix-sohie-hoeilaart": {
+    "straat": "Gemeenteplein 39",
+    "postcode": "1560",
+    "plaats": "Hoeilaart",
+    "bron": "https://www.openstreetmap.org/way/278490799",
+    "lat": 50.76829,
+    "lon": 4.47392,
+    "opgehaald": "2026-11-28"
+  },
   "gc-gilwe-wervik": {
     "straat": "Sint-Maartensplein 16",
     "postcode": "8940",
     "plaats": "Wervik",
     "bron": "https://www.wervik.be/",
+    "opgehaald": "2026-11-28"
+  },
+  "gc-hof-ten-hemelrijk-opwijk": {
+    "straat": "Kloosterstraat 7",
+    "postcode": "1745",
+    "plaats": "Opwijk",
+    "bron": "https://www.openstreetmap.org/way/98723668",
+    "lat": 50.96758,
+    "lon": 4.18751,
     "opgehaald": "2026-11-28"
   },
   "gc-kadans-wuustwezel": {
@@ -1106,6 +1358,15 @@
     "postcode": "8970",
     "plaats": "Poperinge",
     "bron": "https://www.poperinge.be/",
+    "opgehaald": "2026-11-28"
+  },
+  "gildenzaal-nijlen": {
+    "straat": "Gemeentestraat 24",
+    "postcode": "",
+    "plaats": "Nijlen",
+    "bron": "https://www.openstreetmap.org/way/334521783",
+    "lat": 51.16164,
+    "lon": 4.67184,
     "opgehaald": "2026-11-28"
   },
   "go-leerdam": {
@@ -1262,6 +1523,15 @@
     "bron": "https://kaleidoscoop.be/",
     "opgehaald": "2026-11-28"
   },
+  "kasteel-hof-de-bist-ekeren": {
+    "straat": "Veltwijcklaan 252",
+    "postcode": "2180",
+    "plaats": "Ekeren",
+    "bron": "https://www.openstreetmap.org/way/358563108",
+    "lat": 51.2823,
+    "lon": 4.44123,
+    "opgehaald": "2026-11-28"
+  },
   "kattendans-bergeijk": {
     "straat": "Eerselsedijk 4",
     "postcode": "5571 CM",
@@ -1325,6 +1595,15 @@
     "bron": "https://www.kunstmin.nl/",
     "opgehaald": "2026-11-28"
   },
+  "kursaal": {
+    "straat": "Kursaal-Westhelling 12",
+    "postcode": "8400",
+    "plaats": "Oostende",
+    "bron": "https://www.openstreetmap.org/node/1597357628",
+    "lat": 51.23177,
+    "lon": 2.91206,
+    "opgehaald": "2026-11-28"
+  },
   "kvs-brussel": {
     "straat": "Arduinkaai 7",
     "postcode": "1000",
@@ -1376,6 +1655,15 @@
     "postcode": "2950",
     "plaats": "Kapellen",
     "bron": "https://www.cckapellen.be/",
+    "opgehaald": "2026-11-28"
+  },
+  "magdalenazaal-brugge": {
+    "straat": "Magdalenastraat 27",
+    "postcode": "8200",
+    "plaats": "Sint-Andries",
+    "bron": "https://www.openstreetmap.org/way/92033017",
+    "lat": 51.2013,
+    "lon": 3.20839,
     "opgehaald": "2026-11-28"
   },
   "mark-liebrecht-mortsel": {
@@ -1512,6 +1800,24 @@
     "bron": "https://www.tlevenlacht.be/",
     "opgehaald": "2026-11-28"
   },
+  "oc-de-schouw-lichtervelde": {
+    "straat": "Statiestraat 113",
+    "postcode": "8810",
+    "plaats": "Lichtervelde",
+    "bron": "https://www.openstreetmap.org/node/7463886397",
+    "lat": 51.02476,
+    "lon": 3.13524,
+    "opgehaald": "2026-11-28"
+  },
+  "oc-marke": {
+    "straat": "Hellestraat 5",
+    "postcode": "8510",
+    "plaats": "Kortrijk",
+    "bron": "https://www.openstreetmap.org/way/1109542011",
+    "lat": 50.80443,
+    "lon": 3.23971,
+    "opgehaald": "2026-11-28"
+  },
   "oc-merselborre-sint-pieters-leeuw": {
     "straat": "Pastorijstraat 21",
     "postcode": "1600",
@@ -1531,6 +1837,15 @@
     "postcode": "9840",
     "plaats": "De Pinte",
     "bron": "https://www.depinteleeft.be/",
+    "opgehaald": "2026-11-28"
+  },
+  "olt-rivierenhof-antwerpen": {
+    "straat": "Turnhoutsebaan 246",
+    "postcode": "2100",
+    "plaats": "Deurne",
+    "bron": "https://www.openstreetmap.org/way/506024240",
+    "lat": 51.2151,
+    "lon": 4.47073,
     "opgehaald": "2026-11-28"
   },
   "ons-mierloos-theater": {
@@ -1575,6 +1890,15 @@
   "pand-p-eindhoven": {
     "fout": true,
     "opmerking": "Adres van de website hoort bij een andere zaal of is een postbus (nagelopen november 2026); niet opnieuw ophalen."
+  },
+  "panishof-borgloon": {
+    "straat": "Bommershovenstraat 10A",
+    "postcode": "",
+    "plaats": "Borgloon",
+    "bron": "https://www.openstreetmap.org/way/267874889",
+    "lat": 50.78741,
+    "lon": 5.38786,
+    "opgehaald": "2026-11-28"
   },
   "pardoes-theater-hoogwoud": {
     "straat": "De Weijver 8a",
@@ -1900,6 +2224,15 @@
   "stadsschouwburg-antwerpen": {
     "fout": true,
     "opmerking": "Adres van de website hoort bij een andere zaal of is een postbus (nagelopen november 2026); niet opnieuw ophalen."
+  },
+  "stadsschouwburg-brugge": {
+    "straat": "Vlamingstraat 29",
+    "postcode": "",
+    "plaats": "Brugge",
+    "bron": "https://www.openstreetmap.org/way/93386780",
+    "lat": 51.21053,
+    "lon": 3.22363,
+    "opgehaald": "2026-11-28"
   },
   "stadsschouwburg-nijmegen": {
     "straat": "Keizer Karelplein 32h",
@@ -2383,6 +2716,15 @@
     "bron": "http://theaterrotterdam.nl/",
     "opgehaald": "2026-11-28"
   },
+  "theater-scala-gent": {
+    "straat": "Dendermondsesteenweg Dendermondsesteenweg 163;165",
+    "postcode": "",
+    "plaats": "Gent",
+    "bron": "https://www.openstreetmap.org/node/6613025599",
+    "lat": 51.0536,
+    "lon": 3.74433,
+    "opgehaald": "2026-11-28"
+  },
   "theater-sittard": {
     "straat": "Mgr. Claessensstraat 2",
     "postcode": "6131 AJ Sittard",
@@ -2531,6 +2873,15 @@
     "bron": "https://griffioen.vu.nl/",
     "opgehaald": "2026-11-28"
   },
+  "waregem-expo": {
+    "straat": "Zuiderlaan 26",
+    "postcode": "8790",
+    "plaats": "Waregem",
+    "bron": "https://www.openstreetmap.org/way/265591009",
+    "lat": 50.88094,
+    "lon": 3.42682,
+    "opgehaald": "2026-11-28"
+  },
   "werf-44-schilde": {
     "straat": "Schoolstraat 44",
     "postcode": "2970",
@@ -2575,6 +2926,15 @@
     "postcode": "7442 MA",
     "plaats": "Nijverdal",
     "bron": "https://www.zinin.com/",
+    "opgehaald": "2026-11-28"
+  },
+  "zuiderpershuis-antwerpen": {
+    "straat": "Waalsekaai 14",
+    "postcode": "",
+    "plaats": "Antwerpen",
+    "bron": "https://www.openstreetmap.org/way/191782199",
+    "lat": 51.21177,
+    "lon": 4.391,
     "opgehaald": "2026-11-28"
   }
 }

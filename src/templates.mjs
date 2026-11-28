@@ -807,7 +807,8 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
   function adresVan(t) {
     const a = ADRESSEN[t.id];
     if (!a || a.fout || !a.straat || /postbus/i.test(a.straat)) return null;
-    let straat = netjes(a.straat.replace(/\s+0$/, "").trim());
+    // OpenStreetMap geeft soms twee huisnummers ("72,74", "13;15") of de straatnaam dubbel: alleen het eerste nummer.
+    let straat = netjes(a.straat.replace(/\s+0$/, "").replace(/(\d+[a-zA-Z]?)[;,][\w\-,;]*$/, "$1").replace(/^(\S+) \1\b/, "$1").trim());
     const m = straat.match(/^(\d+[a-zA-Z]?)\s+(.+)$/);
     if (m) straat = `${m[2]} ${m[1]}`;
     const pc = t.land === "NL" ? (String(a.postcode).toUpperCase().match(/\d{4}\s?[A-Z]{2}/)?.[0] || "").replace(/^(\d{4})([A-Z]{2})$/, "$1 $2") : (String(a.postcode).match(/\d{4}/)?.[0] || "");
