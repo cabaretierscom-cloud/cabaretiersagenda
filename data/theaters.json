@@ -6523,10 +6523,20 @@
     "land": "NL",
     "soort": "comedyclub",
     "website": "https://comedyclubhaug.com",
-    "foto": null,
+    "foto": {
+      "bestand": "/fotos/theaters/comedy-club-haug-rotterdam.jpg",
+      "alt": "Comedy Club Haug in Rotterdam",
+      "promo": true,
+      "van": "Eigenaar van Cabaretiers.com",
+      "toestemming": "Door de eigenaar aangeleverd (november 2026) als foto van Comedy Club Haug.",
+      "bron": "https://comedyclubhaug.com/",
+      "breedte": 550,
+      "hoogte": 412
+    },
     "oudeIds": [
       "comedy-club-haug-best-of-stand-up"
-    ]
+    ],
+    "kleur": "paars"
   },
   {
     "id": "cultuurpodium-in-de-lugt-rotterdam",
