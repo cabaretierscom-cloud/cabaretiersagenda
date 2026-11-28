@@ -24,6 +24,24 @@
     "bron": "https://www.theaterhuisamalia.nl/",
     "opgehaald": "2026-11-28"
   },
+  "amare-den-haag": {
+    "straat": "Spuiplein 150",
+    "postcode": "2511 DG",
+    "plaats": "Den Haag",
+    "bron": "https://www.amare.nl/",
+    "lat": 52.07742,
+    "lon": 4.31837,
+    "opgehaald": "2026-11-28"
+  },
+  "amphion": {
+    "straat": "Hofstraat 159",
+    "postcode": "7001JD",
+    "plaats": "Doetinchem",
+    "bron": "https://www.openstreetmap.org/way/384963167",
+    "lat": 51.96874,
+    "lon": 6.28804,
+    "opgehaald": "2026-11-28"
+  },
   "arenberg": {
     "straat": "Arenbergstraat 28",
     "postcode": "2000",
@@ -184,6 +202,15 @@
     "bron": "https://www.openstreetmap.org/way/110237108",
     "lat": 51.23203,
     "lon": 5.30791,
+    "opgehaald": "2026-11-28"
+  },
+  "cc-amstel-amsterdam": {
+    "straat": "Cullinanplein 1",
+    "postcode": "1074JN",
+    "plaats": "Amsterdam",
+    "bron": "https://www.openstreetmap.org/node/8338713828",
+    "lat": 52.35335,
+    "lon": 4.90632,
     "opgehaald": "2026-11-28"
   },
   "cc-binder-puurs": {
@@ -488,6 +515,15 @@
     "postcode": "8620",
     "plaats": "Nieuwpoort",
     "bron": "https://www.cultuurnieuwpoort.be/",
+    "opgehaald": "2026-11-28"
+  },
+  "chasse": {
+    "straat": "Claudius Prinsenlaan 8",
+    "postcode": "4811DK",
+    "plaats": "Breda",
+    "bron": "https://www.openstreetmap.org/node/2731553158",
+    "lat": 51.58747,
+    "lon": 4.78218,
     "opgehaald": "2026-11-28"
   },
   "cinema-gouda": {
@@ -882,6 +918,15 @@
     "bron": "https://www.herk-de-stad.be/",
     "opgehaald": "2026-11-28"
   },
+  "de-meerpaal-dronten": {
+    "straat": "De Rede 80",
+    "postcode": "8251EX",
+    "plaats": "Dronten",
+    "bron": "https://www.openstreetmap.org/node/2941104810",
+    "lat": 52.52363,
+    "lon": 5.71976,
+    "opgehaald": "2026-11-28"
+  },
   "de-molenberg-delfzijl": {
     "straat": "Sikkel 3",
     "postcode": "9932 BD",
@@ -1092,6 +1137,15 @@
     "postcode": "3670",
     "plaats": "Oudsbergen",
     "bron": "https://www.oudsbergen.be/",
+    "opgehaald": "2026-11-28"
+  },
+  "deventer-schouwburg": {
+    "straat": "Leeuwenbrug 2",
+    "postcode": "7411TJ",
+    "plaats": "Deventer",
+    "bron": "https://www.openstreetmap.org/node/297985620",
+    "lat": 52.25565,
+    "lon": 6.16156,
     "opgehaald": "2026-11-28"
   },
   "diligentia-den-haag": {
@@ -1793,6 +1847,15 @@
     "bron": "https://www.alveringem.be/",
     "opgehaald": "2026-11-28"
   },
+  "oc-de-leege-platse-zonnebeke": {
+    "straat": "Geluwestraat 18",
+    "postcode": "8980",
+    "plaats": "Beselare",
+    "bron": "https://www.openstreetmap.org/node/4463113477",
+    "lat": 50.84676,
+    "lon": 3.02614,
+    "opgehaald": "2026-11-28"
+  },
   "oc-de-lier-lierde": {
     "straat": "Keistraat 16",
     "postcode": "9571",
@@ -2011,6 +2074,15 @@
     "postcode": "8331 GM",
     "plaats": "Steenwijk",
     "bron": "https://www.demeenthe.nl/",
+    "opgehaald": "2026-11-28"
+  },
+  "rietveld-theater-delft": {
+    "straat": "Rietveld 49",
+    "postcode": "2611LH",
+    "plaats": "Delft",
+    "bron": "https://www.openstreetmap.org/node/2599513176",
+    "lat": 52.01355,
+    "lon": 4.36072,
     "opgehaald": "2026-11-28"
   },
   "roxy-temse": {
@@ -2340,6 +2412,15 @@
     "bron": "https://www.terdilft.be/",
     "opgehaald": "2026-11-28"
   },
+  "theater-aan-de-parade": {
+    "straat": "Parade 23",
+    "postcode": "5211KL",
+    "plaats": "'s-Hertogenbosch",
+    "bron": "https://www.openstreetmap.org/node/4714931578",
+    "lat": 51.68693,
+    "lon": 5.30867,
+    "opgehaald": "2026-11-28"
+  },
   "theater-aan-de-schie": {
     "straat": "Stadserf 1",
     "postcode": "3112 DZ",
@@ -2425,6 +2506,15 @@
     "bron": "https://www.theaterdegarage.nl/",
     "opgehaald": "2026-11-28"
   },
+  "theater-de-kamers-amersfoort": {
+    "straat": "Wezeperberg 1",
+    "postcode": "3825DJ",
+    "plaats": "Amersfoort",
+    "bron": "https://www.openstreetmap.org/node/4070372799",
+    "lat": 52.19813,
+    "lon": 5.41673,
+    "opgehaald": "2026-11-28"
+  },
   "theater-de-kampanje": {
     "straat": "Willemsoord 63",
     "postcode": "1781 AS",
@@ -2458,6 +2548,15 @@
     "postcode": "5142 RA",
     "plaats": "Waalwijk",
     "bron": "https://www.deleest.nl/",
+    "opgehaald": "2026-11-28"
+  },
+  "theater-de-leeuw-arnhem": {
+    "straat": "Leeuwensteinplein 1",
+    "postcode": "6824DA",
+    "plaats": "Arnhem",
+    "bron": "https://www.openstreetmap.org/node/2719857282",
+    "lat": 51.98896,
+    "lon": 5.92761,
     "opgehaald": "2026-11-28"
   },
   "theater-de-liefde-haarlem": {
@@ -2521,6 +2620,15 @@
     "postcode": "6041 JA",
     "plaats": "Roermond",
     "bron": "https://www.theaterroermond.nl/",
+    "opgehaald": "2026-11-28"
+  },
+  "theater-de-richel-amsterdam": {
+    "straat": "Nieuwezijds Voorburgwal 282-H",
+    "postcode": "1012RT",
+    "plaats": "Amsterdam",
+    "bron": "https://www.openstreetmap.org/node/2722210891",
+    "lat": 52.37114,
+    "lon": 4.89009,
     "opgehaald": "2026-11-28"
   },
   "theater-de-ruchte-someren": {
