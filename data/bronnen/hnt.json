@@ -1,7 +1,7 @@
 {
   "bron": "hnt",
   "naam": "Het Nationale Theater",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "koninklijke-schouwburg",
@@ -12,6 +12,253 @@
       "website": "https://www.hnt.nl"
     }
   ],
-  "speeldata": [],
+  "speeldata": [
+    {
+      "theater": "koninklijke-schouwburg",
+      "artiesten": [
+        "Cameretten Festival"
+      ],
+      "titel": "Grande Finale Cameretten",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/grande-finale-cameretten-tzfd"
+    },
+    {
+      "theater": {
+        "id": "theater-aan-het-spui-den-haag",
+        "naam": "Theater aan het Spui",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Het leven is kort, net als ik!"
+      ],
+      "titel": "Eva Eikhout",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/eva-eikhout-j6p3"
+    },
+    {
+      "theater": {
+        "id": "theater-aan-het-spui-den-haag",
+        "naam": "Theater aan het Spui",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Het leven is kort, net als ik!"
+      ],
+      "titel": "Eva Eikhout",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/eva-eikhout-j6p3"
+    },
+    {
+      "theater": {
+        "id": "theater-aan-het-spui-den-haag",
+        "naam": "Theater aan het Spui",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Het leven is kort, net als ik!"
+      ],
+      "titel": "Eva Eikhout",
+      "genre": "cabaret",
+      "datum": "2026-11-28",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/eva-eikhout-j6p3"
+    },
+    {
+      "theater": {
+        "id": "theater-aan-het-spui-den-haag",
+        "naam": "Theater aan het Spui",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Sinterklaas in Theater aan het Spui"
+      ],
+      "titel": "Het Nationale Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-02",
+      "tijd": "13:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/sinterklaas-in-theater-aan-het-spui-smkx"
+    },
+    {
+      "theater": {
+        "id": "theater-aan-het-spui-den-haag",
+        "naam": "Theater aan het Spui",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Sinterklaas in Theater aan het Spui"
+      ],
+      "titel": "Het Nationale Theater",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-02",
+      "tijd": "16:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/sinterklaas-in-theater-aan-het-spui-smkx"
+    },
+    {
+      "theater": "koninklijke-schouwburg",
+      "artiesten": [
+        "Sara Kroos"
+      ],
+      "titel": "Prikkelarme kermis",
+      "genre": "cabaret",
+      "datum": "2026-12-02",
+      "tijd": "20:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/sara-kroos-jx88"
+    },
+    {
+      "theater": {
+        "id": "plt-den-haag",
+        "naam": "PLT",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Time Machine"
+      ],
+      "titel": "HNTjong & Theater Utrecht | regie Noël Fischer",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-01",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/time-machine-z5hb"
+    },
+    {
+      "theater": {
+        "id": "plt-den-haag",
+        "naam": "PLT",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Time Machine"
+      ],
+      "titel": "HNTjong & Theater Utrecht | regie Noël Fischer",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-02",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/time-machine-z5hb"
+    },
+    {
+      "theater": {
+        "id": "parktheater-eindhoven",
+        "naam": "Parktheater Eindhoven",
+        "plaats": "Eindhoven",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Time Machine"
+      ],
+      "titel": "HNTjong & Theater Utrecht | regie Noël Fischer",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-03",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/time-machine-z5hb"
+    },
+    {
+      "theater": {
+        "id": "parktheater-eindhoven",
+        "naam": "Parktheater Eindhoven",
+        "plaats": "Eindhoven",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Time Machine"
+      ],
+      "titel": "HNTjong & Theater Utrecht | regie Noël Fischer",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-04",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/time-machine-z5hb"
+    },
+    {
+      "theater": {
+        "id": "theater-aan-het-spui-den-haag",
+        "naam": "Theater aan het Spui",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Time Machine"
+      ],
+      "titel": "HNTjong & Theater Utrecht | regie Noël Fischer",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-11",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/time-machine-z5hb"
+    },
+    {
+      "theater": {
+        "id": "theater-aan-het-spui-den-haag",
+        "naam": "Theater aan het Spui",
+        "plaats": "Den Haag",
+        "land": "NL",
+        "soort": "theater",
+        "website": null
+      },
+      "artiesten": [
+        "Time Machine"
+      ],
+      "titel": "HNTjong & Theater Utrecht | regie Noël Fischer",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-12",
+      "tijd": "19:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://www.hnt.nl/nl/voorstellingen/time-machine-z5hb"
+    }
+  ],
   "recensies": {}
 }

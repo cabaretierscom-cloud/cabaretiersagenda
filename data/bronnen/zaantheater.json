@@ -1,7 +1,7 @@
 {
   "bron": "zaantheater",
   "naam": "Zaantheater",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "zaantheater",
@@ -547,19 +547,6 @@
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Kasper van der Laan"
-      ],
-      "titel": "Ruim",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
         "Kikker is Kikker (3+)"
       ],
       "titel": "Theater Terra",
@@ -985,19 +972,6 @@
     {
       "theater": "zaantheater",
       "artiesten": [
-        "Van der Laan & Woe"
-      ],
-      "titel": "Dinsdagmiddag",
-      "genre": "cabaret",
-      "datum": "2027-01-22",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/van-der-laan-woe/"
-    },
-    {
-      "theater": "zaantheater",
-      "artiesten": [
         "Veel te eng voor kleuters (6+)"
       ],
       "titel": "Theater Artemis",
@@ -1132,23 +1106,6 @@
         "medium": "Theaterkrant",
         "sterren": null,
         "citaat": "Razend knap verpakt Boban een persoonlijk verhaal in fiscale adviezen."
-      }
-    ],
-    "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/kasper-van-der-laan/": [
-      {
-        "medium": "de Volkskrant",
-        "sterren": 4,
-        "citaat": "De troef van Kasper van der Laan is het samenvallen van zijn fysiek met zijn absurde vondsten."
-      },
-      {
-        "medium": "NRC",
-        "sterren": 4,
-        "citaat": "Na zijn briljante debuut is Kasper van der Laan onstuitbaar op weg een Hele Grote te worden."
-      },
-      {
-        "medium": "Trouw",
-        "sterren": 4,
-        "citaat": "Eigenheid is sowieso Van der Laans grote troef."
       }
     ],
     "https://zaantheater.nl/nl/theater/agenda/seizoen-2026-2027/luuk-weggemans/": [

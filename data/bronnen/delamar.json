@@ -1,7 +1,7 @@
 {
   "bron": "delamar",
   "naam": "DeLaMar",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "delamar",
@@ -49,6 +49,58 @@
       "datum": "2027-02-25",
       "tijd": "20:30",
       "status": "uitverkocht",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/esther-van-der-voort/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-06-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/esther-van-der-voort/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-06-18",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/esther-van-der-voort/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-09-17",
+      "tijd": "20:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://delamar.nl/voorstellingen/esther-van-der-voort/"
+    },
+    {
+      "theater": "delamar",
+      "artiesten": [
+        "Esther van der Voort"
+      ],
+      "titel": "Mama is Boos",
+      "genre": "cabaret",
+      "datum": "2027-09-18",
+      "tijd": "20:30",
+      "status": "gepland",
       "soort": null,
       "bron": "https://delamar.nl/voorstellingen/esther-van-der-voort/"
     },

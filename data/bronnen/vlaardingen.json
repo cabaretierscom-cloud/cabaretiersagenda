@@ -1,7 +1,7 @@
 {
   "bron": "vlaardingen",
   "naam": "Stadsgehoorzaal Vlaardingen",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "stadsgehoorzaal-vlaardingen",
@@ -38,19 +38,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://stadsgehoorzaal.nl/programma/mees-kees"
-    },
-    {
-      "theater": "stadsgehoorzaal-vlaardingen",
-      "artiesten": [
-        "Jeroens Clan"
-      ],
-      "titel": "Juk",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://stadsgehoorzaal.nl/programma/jeroens-clan"
     },
     {
       "theater": "stadsgehoorzaal-vlaardingen",
@@ -626,28 +613,5 @@
       "bron": "https://stadsgehoorzaal.nl/programma/anne-bas"
     }
   ],
-  "recensies": {
-    "https://stadsgehoorzaal.nl/programma/jeroens-clan": [
-      {
-        "medium": "Theaterkrant",
-        "sterren": null,
-        "citaat": "De sleutel voor deze cabaretvorm is beslist niet dat het drietal grofgebekt is, zoals recensies keer op keer beweren, maar dat Tuns, Kroon en De Poorter op intelligente manier spelen met ironie."
-      },
-      {
-        "medium": "De Telegraaf",
-        "sterren": null,
-        "citaat": "Jeroens Clan mag een sensatie worden genoemd."
-      },
-      {
-        "medium": "Het Parool",
-        "sterren": null,
-        "citaat": "Keihard cabaret van drie kwetsbare mannen."
-      },
-      {
-        "medium": "NRC",
-        "sterren": null,
-        "citaat": "Het drietal valt op met scherpe en grappige dialogen."
-      }
-    ]
-  }
+  "recensies": {}
 }

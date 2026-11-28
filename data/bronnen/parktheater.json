@@ -1,7 +1,7 @@
 {
   "bron": "parktheater",
   "naam": "Parktheater Eindhoven",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "parktheater-eindhoven",
@@ -22,7 +22,7 @@
       "genre": "comedy",
       "datum": "2026-11-28",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": "try-out",
       "bron": "https://www.parktheater.nl/programma/lach-maar-om-mij-try-out-htv1"
     },
@@ -1344,7 +1344,7 @@
       "genre": "kindervoorstellingen",
       "datum": "2027-02-21",
       "tijd": "10:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.parktheater.nl/programma/neus-babyconcert-1mlm"
     },

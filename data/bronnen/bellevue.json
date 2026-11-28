@@ -1,7 +1,7 @@
 {
   "bron": "bellevue",
   "naam": "Theater Bellevue",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "theater-bellevue",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-bellevue",
-      "artiesten": [
-        "Kim Schuddeboom"
-      ],
-      "titel": "Hardleers",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:00",
-      "status": "uitverkocht",
-      "soort": null,
-      "bron": "https://www.theaterbellevue.nl/agenda/hardleers-9rb3"
-    },
     {
       "theater": "theater-bellevue",
       "artiesten": [
@@ -1248,7 +1235,7 @@
       "genre": "cabaret",
       "datum": "2027-04-16",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.theaterbellevue.nl/agenda/nieuw-programma-n8nj"
     },

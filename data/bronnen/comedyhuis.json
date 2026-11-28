@@ -1,7 +1,7 @@
 {
   "bron": "comedyhuis",
   "naam": "Comedyhuis Utrecht",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "comedyhuis-utrecht",
@@ -13,62 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Vroege vrijdagavondshow",
-      "genre": "stand-up",
-      "datum": "2026-11-27",
-      "tijd": "18:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/vroege-vrijdagavondshow-27-november-2026/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "Theater aan de Slinger",
-        "plaats": "Houten",
-        "land": "NL",
-        "website": null
-      },
-      "artiesten": [],
-      "titel": "Comedyshow Aan de Slinger",
-      "genre": "stand-up",
-      "datum": "2026-11-27",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/comedy-aan-de-slinger-27-november/"
-    },
-    {
-      "theater": {
-        "zoeken": true,
-        "naam": "De Kargadoor",
-        "plaats": "Utrecht",
-        "land": "NL",
-        "website": "https://www.kargadoor.nl"
-      },
-      "artiesten": [],
-      "titel": "All English Comedy Night",
-      "genre": "stand-up",
-      "datum": "2026-11-27",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/all-english-comedy-night-utrecht-27-november-2026/"
-    },
-    {
-      "theater": "comedyhuis-utrecht",
-      "artiesten": [],
-      "titel": "Vrijdagavondshow",
-      "genre": "stand-up",
-      "datum": "2026-11-27",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://comedyhuis.nl/shows/vrijdagavondshow-27-november/"
-    },
     {
       "theater": "comedyhuis-utrecht",
       "artiesten": [],
@@ -104,7 +48,7 @@
       "genre": "stand-up",
       "datum": "2026-11-28",
       "tijd": "20:30",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://comedyhuis.nl/shows/zaterdagavondshow-28-november/"
     },

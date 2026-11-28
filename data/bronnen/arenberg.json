@@ -1,7 +1,7 @@
 {
   "bron": "arenberg",
   "naam": "Arenberg",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "arenberg",
@@ -13,32 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "arenberg",
-      "artiesten": [
-        "William Boeva"
-      ],
-      "titel": "Drift",
-      "genre": "stand-up",
-      "datum": "2026-11-27",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.arenberg.be/nl/programma/william-boeva/a0NP500000Exa2dMAB"
-    },
-    {
-      "theater": "arenberg",
-      "artiesten": [
-        "Dara Invites: Wallah It’s Funny"
-      ],
-      "titel": "Produced by StandOut Comedy In collaboration with 14 Dahk (14 ضحك)",
-      "genre": "stand-up",
-      "datum": "2026-11-27",
-      "tijd": "20:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.arenberg.be/nl/programma/dara-invites-wallah-it-s-funny/a0NP500000W5yabMAB"
-    },
     {
       "theater": "arenberg",
       "artiesten": [
@@ -484,7 +458,7 @@
       "genre": "stand-up",
       "datum": "2027-03-05",
       "tijd": "21:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.arenberg.be/nl/programma/philippe-geubels/a0NP500000Yvk5lMAB"
     },

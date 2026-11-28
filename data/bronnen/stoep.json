@@ -1,7 +1,7 @@
 {
   "bron": "stoep",
   "naam": "Theater de Stoep",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "theater-de-stoep",
@@ -13,19 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-de-stoep",
-      "artiesten": [
-        "Sara Kroos"
-      ],
-      "titel": "Prikkelarme Kermis",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": "reprise",
-      "bron": "https://theaterdestoep.nl/voorstelling/sara-kroos-2627"
-    },
     {
       "theater": "theater-de-stoep",
       "artiesten": [

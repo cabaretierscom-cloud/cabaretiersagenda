@@ -1,7 +1,7 @@
 {
   "bron": "leiden",
   "naam": "Leidse Schouwburg en Stadsgehoorzaal",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "leidse-schouwburg",
@@ -29,6 +29,19 @@
     }
   ],
   "speeldata": [
+    {
+      "theater": "cafe-caat-leiden",
+      "artiesten": [
+        "Double Bill"
+      ],
+      "titel": "Glodi Lugungu en Raoul Heertje",
+      "genre": "stand-up",
+      "datum": "2027-01-20",
+      "tijd": "20:15",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/caat-comedy-double-bill-glodi-lugungu-en-raoul-heertje/"
+    },
     {
       "theater": "leidse-schouwburg",
       "artiesten": [
@@ -365,7 +378,7 @@
       "genre": "cabaret",
       "datum": "2027-02-11",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "try-out",
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/rundfunk-wagyu-try-out/"
     },
@@ -745,17 +758,6 @@
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/veel-te-eng-voor-kleuters-6-artemis-en-theater-basel/"
     },
     {
-      "theater": "stadsgehoorzaal-leiden",
-      "artiesten": [],
-      "titel": "Space Academy Live met André Kuipers",
-      "genre": "kindervoorstellingen",
-      "datum": "2027-02-13",
-      "tijd": "19:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/space-academy-live-met-andre-kuipers/"
-    },
-    {
       "theater": "leidse-schouwburg",
       "artiesten": [
         "Nabil"
@@ -1001,19 +1003,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/lebbis-satan-is-moe/"
-    },
-    {
-      "theater": "leidse-schouwburg",
-      "artiesten": [
-        "Bro's"
-      ],
-      "titel": "Bromens",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:15",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://leidseschouwburg-stadsgehoorzaal.nl/voorstelling/bros-bromens/"
     },
     {
       "theater": "leidse-schouwburg",

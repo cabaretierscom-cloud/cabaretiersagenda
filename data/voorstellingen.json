@@ -3441,6 +3441,14 @@
     "genre": "cabaret"
   },
   {
+    "id": "double-bill-glodi-lugungu-en-raoul-heertje",
+    "titel": "Glodi Lugungu en Raoul Heertje",
+    "artiesten": [
+      "double-bill"
+    ],
+    "genre": "stand-up"
+  },
+  {
     "id": "double-dutch-patron-stage",
     "titel": "Patron Stage",
     "artiesten": [
@@ -5262,6 +5270,14 @@
     "titel": "Banger dan ik",
     "artiesten": [
       "hntjong-dimphna-van-kempen"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "hntjong-en-theater-utrecht-regie-noel-fischer-time-machine",
+    "titel": "Time Machine",
+    "artiesten": [
+      "hntjong-en-theater-utrecht-regie-noel-fischer"
     ],
     "genre": "kindervoorstellingen"
   },
@@ -8640,24 +8656,24 @@
     ]
   },
   {
+    "id": "onias-landveld-jorgen-raymann-emiel-van-der-logt-howard-komproe-joshua-timisela",
+    "titel": "Papa Zonder Handleiding XL",
+    "artiesten": [
+      "onias-landveld",
+      "jorgen-raymann",
+      "emiel-van-der-logt",
+      "howard-komproe",
+      "joshua-timisela"
+    ],
+    "genre": "cabaret"
+  },
+  {
     "id": "onias-landveld-jorgen-raymann-howard-komproe-papa-zonder-handleiding-xl",
     "titel": "Papa zonder handleiding XL",
     "artiesten": [
       "onias-landveld",
       "jorgen-raymann",
       "howard-komproe"
-    ],
-    "genre": "cabaret"
-  },
-  {
-    "id": "onias-landveld-jorgen-raymann-steven-brunswijk-howard-komproe-joshua-timisela-pa",
-    "titel": "Papa Zonder Handleiding XL",
-    "artiesten": [
-      "onias-landveld",
-      "jorgen-raymann",
-      "steven-brunswijk",
-      "howard-komproe",
-      "joshua-timisela"
     ],
     "genre": "cabaret"
   },
@@ -8946,6 +8962,14 @@
         "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/paul-haenen-margreet-dolman-brengt-warmte"
       }
     ]
+  },
+  {
+    "id": "paw-patrol-heroes-unite",
+    "titel": "Heroes Unite",
+    "artiesten": [
+      "paw-patrol"
+    ],
+    "genre": "kindervoorstellingen"
   },
   {
     "id": "pepijn-schoneveld-welkom-dat-je-luistert",
@@ -10545,6 +10569,14 @@
     "titel": "Daar wordt aan de deur geklopt",
     "artiesten": [
       "sinterklaas-hoofdpiet-pelota-e-v-a"
+    ],
+    "genre": "kindervoorstellingen"
+  },
+  {
+    "id": "sinterklaas-in-theater-aan-het-spui-het-nationale-theater",
+    "titel": "Het Nationale Theater",
+    "artiesten": [
+      "sinterklaas-in-theater-aan-het-spui"
     ],
     "genre": "kindervoorstellingen"
   },

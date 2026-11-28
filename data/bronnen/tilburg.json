@@ -1,7 +1,7 @@
 {
   "bron": "tilburg",
   "naam": "Schouwburg & Concertzaal Tilburg",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "schouwburg-tilburg",
@@ -21,19 +21,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "schouwburg-tilburg",
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "comedy",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jade-mintjens-bedankt-om-te-komen",
-      "datum": "2026-11-27",
-      "tijd": "20:30",
-      "status": "uitverkocht"
-    },
     {
       "theater": "schouwburg-tilburg",
       "artiesten": [
@@ -943,19 +930,6 @@
       "datum": "2027-03-18",
       "tijd": "20:30",
       "status": "gepland"
-    },
-    {
-      "theater": "schouwburg-tilburg",
-      "artiesten": [
-        "Jade Mintjens"
-      ],
-      "titel": "Bedankt om te komen",
-      "genre": "comedy",
-      "soort": null,
-      "bron": "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jade-mintjens-bedankt-om-te-komen",
-      "datum": "2026-11-27",
-      "tijd": "20:30",
-      "status": "uitverkocht"
     },
     {
       "theater": "schouwburg-tilburg",
@@ -1869,13 +1843,6 @@
     }
   ],
   "recensies": {
-    "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/jade-mintjens-bedankt-om-te-komen": [
-      {
-        "medium": "De Morgen",
-        "sterren": 4,
-        "citaat": "Originele verteller die niet bij de geijkte comedy-onderwerpen blijft hangen."
-      }
-    ],
     "https://www.schouwburgconcertzaaltilburg.nl/nl/agenda/beuk-kim-van-zeben-rogier-in-t-hout": [
       {
         "medium": "Dagblad van het Noorden",

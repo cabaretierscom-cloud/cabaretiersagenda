@@ -1,7 +1,7 @@
 {
   "bron": "luxor",
   "naam": "Luxor Theater",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "nieuwe-luxor",
@@ -418,22 +418,9 @@
       ],
       "titel": "Ja, Leuk",
       "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/pieter-derks-57549/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "Pieter Derks"
-      ],
-      "titel": "Ja, Leuk",
-      "genre": "cabaret",
       "datum": "2026-11-28",
       "tijd": "20:00",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/pieter-derks-57549/"
     },
@@ -1777,45 +1764,6 @@
       "bron": "https://luxortheater.nl/agenda/valentina-toth-57516/"
     },
     {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "De Proefkeuken Theatershow (8+)"
-      ],
-      "titel": "En de WC van de tijd",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-20",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/de-proefkeuken-2-57719/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "De Proefkeuken Theatershow (8+)"
-      ],
-      "titel": "En de WC van de tijd",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-21",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/de-proefkeuken-2-57719/"
-    },
-    {
-      "theater": "oude-luxor",
-      "artiesten": [
-        "De Proefkeuken Theatershow (8+)"
-      ],
-      "titel": "En de WC van de tijd",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-12-22",
-      "tijd": "19:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/de-proefkeuken-2-57719/"
-    },
-    {
       "theater": "nieuwe-luxor",
       "artiesten": [
         "101 Dalmatiërs"
@@ -1970,19 +1918,6 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/chinese-stand-up-comedy-show-54866/"
-    },
-    {
-      "theater": "nieuwe-luxor",
-      "artiesten": [
-        "Jochem Myjer"
-      ],
-      "titel": "Net alsof",
-      "genre": "cabaret",
-      "datum": "2026-11-27",
-      "tijd": "20:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://luxortheater.nl/agenda/jochem-myjer-57969/"
     },
     {
       "theater": "nieuwe-luxor",
@@ -2152,6 +2087,110 @@
       "status": "gepland",
       "soort": null,
       "bron": "https://luxortheater.nl/agenda/de-kleine-prins-8-59433/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "De Proefkeuken Theatershow (8+)"
+      ],
+      "titel": "En de WC van de tijd",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-20",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-proefkeuken-2-57719/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "De Proefkeuken Theatershow (8+)"
+      ],
+      "titel": "En de WC van de tijd",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-21",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-proefkeuken-2-57719/"
+    },
+    {
+      "theater": "oude-luxor",
+      "artiesten": [
+        "De Proefkeuken Theatershow (8+)"
+      ],
+      "titel": "En de WC van de tijd",
+      "genre": "kindervoorstellingen",
+      "datum": "2026-12-22",
+      "tijd": "19:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/de-proefkeuken-2-57719/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Paw Patrol"
+      ],
+      "titel": "Heroes Unite",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-22",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/paw-patrol-61527/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Paw Patrol"
+      ],
+      "titel": "Heroes Unite",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-22",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/paw-patrol-61527/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Paw Patrol"
+      ],
+      "titel": "Heroes Unite",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-23",
+      "tijd": "10:30",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/paw-patrol-61527/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Paw Patrol"
+      ],
+      "titel": "Heroes Unite",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-23",
+      "tijd": "14:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/paw-patrol-61527/"
+    },
+    {
+      "theater": "nieuwe-luxor",
+      "artiesten": [
+        "Paw Patrol"
+      ],
+      "titel": "Heroes Unite",
+      "genre": "kindervoorstellingen",
+      "datum": "2027-02-23",
+      "tijd": "17:00",
+      "status": "gepland",
+      "soort": null,
+      "bron": "https://luxortheater.nl/agenda/paw-patrol-61527/"
     }
   ],
   "recensies": {}

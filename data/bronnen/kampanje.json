@@ -1,7 +1,7 @@
 {
   "bron": "kampanje",
   "naam": "Theater de Kampanje",
-  "opgehaald": "2026-11-27",
+  "opgehaald": "2026-11-28",
   "theaters": [
     {
       "id": "theater-de-kampanje",
@@ -13,32 +13,6 @@
     }
   ],
   "speeldata": [
-    {
-      "theater": "theater-de-kampanje",
-      "artiesten": [
-        "Kado"
-      ],
-      "titel": "Theatershow",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-27",
-      "tijd": "16:00",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/kado-rzm3"
-    },
-    {
-      "theater": "theater-de-kampanje",
-      "artiesten": [
-        "Kado"
-      ],
-      "titel": "Theatershow",
-      "genre": "kindervoorstellingen",
-      "datum": "2026-11-27",
-      "tijd": "18:30",
-      "status": "gepland",
-      "soort": null,
-      "bron": "https://www.kampanje.nl/voorstellingen/kado-rzm3"
-    },
     {
       "theater": "theater-de-kampanje",
       "artiesten": [
@@ -139,7 +113,7 @@
       "genre": "cabaret",
       "datum": "2026-12-18",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/wina-ricardo-1hdh"
     },
@@ -243,7 +217,7 @@
       "genre": "cabaret",
       "datum": "2027-01-21",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": "reprise",
       "bron": "https://www.kampanje.nl/voorstellingen/rene-van-meurs-reprise-h6c6"
     },
@@ -527,7 +501,7 @@
       "genre": "cabaret",
       "datum": "2027-03-13",
       "tijd": "20:30",
-      "status": "uitverkocht",
+      "status": "gepland",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/david-van-rosmalen-d7ph"
     },
@@ -735,7 +709,7 @@
       "genre": "cabaret",
       "datum": "2027-04-24",
       "tijd": "20:15",
-      "status": "gepland",
+      "status": "uitverkocht",
       "soort": null,
       "bron": "https://www.kampanje.nl/voorstellingen/jandino-qyv8"
     },
