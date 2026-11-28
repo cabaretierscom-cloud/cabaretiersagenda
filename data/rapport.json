@@ -1,11 +1,11 @@
 {
   "datum": "2026-11-28",
   "totaal": {
-    "speeldata": 9469,
-    "komend": 7823,
+    "speeldata": 9909,
+    "komend": 8263,
     "artiesten": 1005,
-    "zalen": 766,
-    "plaatsen": 517,
+    "zalen": 768,
+    "plaatsen": 518,
     "voorstellingen": 1434
   },
   "bronnen": [
@@ -126,7 +126,7 @@
       "naam": "DeLaMar",
       "opgehaald": "2026-11-28",
       "speeldata": 92,
-      "vorige": 88,
+      "vorige": 92,
       "dubbel": 0
     },
     {
@@ -214,7 +214,7 @@
       "naam": "Het Nationale Theater",
       "opgehaald": "2026-11-28",
       "speeldata": 11,
-      "vorige": 0,
+      "vorige": 11,
       "dubbel": 0
     },
     {
@@ -302,7 +302,7 @@
       "naam": "Luxor Theater",
       "opgehaald": "2026-11-28",
       "speeldata": 167,
-      "vorige": 162,
+      "vorige": 167,
       "dubbel": 0
     },
     {
@@ -534,7 +534,7 @@
       "naam": "Zaantheater",
       "opgehaald": "2026-11-28",
       "speeldata": 81,
-      "vorige": 82,
+      "vorige": 81,
       "dubbel": 0
     },
     {
@@ -614,7 +614,7 @@
       "naam": "Speellijst van Eva Eikhout",
       "opgehaald": "2026-11-28",
       "speeldata": 1,
-      "vorige": 2,
+      "vorige": 1,
       "dubbel": 1
     },
     {
@@ -709,9 +709,9 @@
       "bron": "speellijsten",
       "naam": "Speellijsten van artiesten",
       "opgehaald": "2026-11-28",
-      "speeldata": 1860,
-      "vorige": 2251,
-      "dubbel": 1080
+      "speeldata": 2300,
+      "vorige": 1860,
+      "dubbel": 1271
     },
     {
       "bron": "stek",
@@ -760,6 +760,20 @@
         "plaats": "Den Haag",
         "land": "NL",
         "website": null
+      },
+      {
+        "id": "spant-bussem",
+        "naam": "Spant",
+        "plaats": "Bussem",
+        "land": "NL",
+        "website": "https://www.spant.org"
+      },
+      {
+        "id": "winterpark-schijndel",
+        "naam": "Winterpark",
+        "plaats": "Schijndel",
+        "land": "NL",
+        "website": "https://winterparkschijndel.nl"
       }
     ],
     "voorstellingen": [
@@ -1096,11 +1110,11 @@
     },
     {
       "datum": "2026-11-28",
-      "speeldata": 9469,
-      "komend": 7823,
+      "speeldata": 9909,
+      "komend": 8263,
       "artiesten": 1005,
-      "zalen": 766,
-      "plaatsen": 517,
+      "zalen": 768,
+      "plaatsen": 518,
       "voorstellingen": 1434
     }
   ]

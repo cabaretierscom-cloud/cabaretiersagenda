@@ -234,6 +234,17 @@ export default {
         });
         n++;
       }
+      if (n === 0) {
+        // Geen enkele speeldatum terwijl er gisteren wel waren: meestal een lege of geblokkeerde pagina
+        // (28 november 2026 gaven twaalf sites op GitHub ineens 0). Dan de vorige speeldata bewaren, net
+        // als bij een site die niet bereikbaar is.
+        const oud = vorige.filter((r) => r.artiesten[0] === a.naam && r.datum >= vandaag && r.bron === a.url);
+        if (oud.length) {
+          out.push(...oud);
+          log(`${a.naam}: 0 speeldata gevonden, ${oud.length} vorige speeldata bewaard`);
+          return;
+        }
+      }
       log(`${a.naam}: ${n} speeldata`);
     };
     await Promise.all(Array.from({ length: 8 }, werker));
