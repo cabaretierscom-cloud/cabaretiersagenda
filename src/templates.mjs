@@ -183,6 +183,7 @@ export function createTemplates(db, { ga = null } = {}) {
   const ICON_ZON = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
   const ICON_MAAN = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>';
   function layout({ title, description = SITE.description, path, section, body, schema, noindex = false }) {
+    if (!noindex) body = interneLinks(body, path);
     const foto = schema?.foto?.foto;
     const nav = [
       ["agenda", "/agenda/", "Agenda"],
@@ -536,6 +537,69 @@ ${body.includes("<!--kruimelpad-->") ? body.replace("<!--kruimelpad-->", kruimel
     .sort((x, y) => x.list[0].datum.localeCompare(y.list[0].datum));
   const festivalKleur = (f) => A.get((f.artiesten || [])[0])?.kleur || "geel";
   const zalenMetData = [...T.values()].filter((t) => db.gigsForTheater(t.id).length);
+  // Interne links in de SEO-teksten en vragen (verzoek van de eigenaar, november 2026): de eerste keer dat een
+  // onderwerp (try-outs, premières, comedyclubs, een genre, vanavond, in de buurt …), een zaal, een artiest of
+  // "in <plaats>" in een alinea van .seo-tekst of .faq staat en nog niet gelinkt is, wordt het een link naar die pagina.
+  // Elk doel één keer per pagina, nooit naar de pagina zelf, alleen in <p> (niet in koppen of vragen).
+  let linkDoelen;
+  const reEsc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  function maakLinkDoelen() {
+    const onderwerpen = [
+      [/\bstand-up ?comedy\b/i, genrePad("stand-up")], [/\boudejaarsconferences?\b(?! \d{4})/i, genrePad("oudejaarsconference")],
+      [/\bkindervoorstellingen\b/i, genrePad("kindervoorstellingen")], [/\bimprovisatietheater\b/i, genrePad("improvisatie")],
+      [/\bmuzikaal cabaret\b/i, genrePad("muzikaal")], [/\bkleinkunst\b/i, genrePad("kleinkunst")], [/\bopen mics?\b/i, genrePad("open-mic")],
+      [/\btry-outs?\b/i, "/agenda/try-outs/"], [/\bpremières?\b/i, "/agenda/premieres/"],
+      [/\bcomedyclubs?\b/i, "/comedy-clubs/"], [/\bcabaretfestivals?\b/i, "/festivals/"],
+      [/\b(?:bij jou |bij mij |)in de buurt\b/i, "/in-de-buurt/"], [/\bvanavond\b/i, "/vanavond/"], [/\bdit weekend\b/i, "/dit-weekend/"],
+      [/\balle cabaretiers\b/i, "/alle-cabaretiers/"], [/\bcabaretiers\b(?!\.com)/i, "/alle-cabaretiers/"],
+      [/\bcabaret\b(?!-)/i, genrePad("cabaret")], [/\bkomedie\b/i, genrePad("komedie")], [/\btoneel\b/i, genrePad("toneel")], [/\bsatire\b/i, genrePad("satire")], [/\bagenda\b/i, "/agenda/"],
+    ].filter(([, u]) => u !== "/agenda/try-outs/" || tryoutLijst.length).filter(([, u]) => u !== "/agenda/premieres/" || premiereLijst.length)
+      .filter(([, u]) => !u.startsWith("/agenda/") || u.split("/").length < 4 || ["try-outs", "premieres"].includes(u.split("/")[2]) || GENRE_PAGINAS.some((g) => genrePad(g) === u));
+    // Namen van zalen en artiesten (alleen eenduidige, niet te korte namen), langste eerst.
+    const namen = new Map(), dubbel = new Set();
+    const zet = (n, u) => { if (n.length < 6 || /^(theater|schouwburg|stadsschouwburg|cultuurcentrum|de schouwburg|comedy club)$/i.test(n)) return; if (namen.has(n) && namen.get(n) !== u) dubbel.add(n); else namen.set(n, u); };
+    for (const t of zalenMetData) zet(t.naam, `/theaters/${t.id}/`);
+    for (const { a } of artiestenMetData) if (!a.geenArtiest && !GEEN_CABARETIER.test(a.naam) && /\p{Lu}/u.test(a.naam[0])) zet(a.naam, artiestPad(a.id));
+    for (const n of dubbel) namen.delete(n);
+    const lijst = [...namen.keys()].sort((x, y) => y.length - x.length);
+    const plaatsLijst = plaatsen.filter((p) => p.length > 2).sort((x, y) => y.length - x.length);
+    return { onderwerpen, namen, naamRe: new RegExp(`(?<![\\p{L}\\d])(${lijst.map(reEsc).join("|")})(?![\\p{L}\\d])`, "gu"),
+      plaatsRe: new RegExp(`(?<=\\b(?:in|uit) )(${plaatsLijst.map(reEsc).join("|")})(?![\\p{L}\\d])`, "gu") };
+  }
+  function interneLinks(body, pad) {
+    if (!/class="(?:seo-tekst|faq)/.test(body)) return body;
+    linkDoelen ??= maakLinkDoelen();
+    const { onderwerpen, namen, naamRe, plaatsRe } = linkDoelen;
+    const blokRe = /<(section|div) class="(?:seo-tekst|faq)[^"]*"[\s\S]*?<\/\1>/g;
+    // Al gelinkt in de teksten, of de pagina zelf: niet nog eens.
+    const gehad = new Set([pad, ...[...body.matchAll(blokRe)].flatMap((m) => [...m[0].matchAll(/href="([^"#?]+)/g)].map((h) => h[1]))]);
+    let nieuw = 0;
+    const link = (tekst, u) => { if (gehad.has(u) || nieuw >= 20) return null; gehad.add(u); nieuw++; return `<a href="${u}">${tekst}</a>`; };
+    const inTekst = (tekst) => {
+      // Eerst namen en plaatsen (specifieker), dan onderwerpen; telkens alleen in stukken die nog geen link zijn.
+      const stukken = [tekst];
+      const vervang = (re, doel) => {
+        for (let i = 0; i < stukken.length; i++) {
+          if (stukken[i].startsWith("<a ")) continue;
+          re.lastIndex = 0;
+          let m;
+          while ((m = re.exec(stukken[i]))) {
+            const html = link(m[0], doel(m[0]));
+            if (!html) { if (!re.global) break; continue; }
+            stukken.splice(i, 1, stukken[i].slice(0, m.index), html, stukken[i].slice(m.index + m[0].length));
+            i++;
+            break;
+          }
+        }
+      };
+      vervang(naamRe, (n) => namen.get(n));
+      vervang(plaatsRe, (p) => plaatsPad(p));
+      for (const [re, u] of onderwerpen) vervang(re, () => u);
+      return stukken.join("");
+    };
+    return body.replace(blokRe, (blok) => blok.replace(/<p\b[^>]*>[\s\S]*?<\/p>/g, (alinea) =>
+      alinea.split(/(<a\b[\s\S]*?<\/a>|<[^>]+>)/).map((x) => (x.startsWith("<") ? x : inTekst(x))).join("")));
+  }
   const tellers = {
     speeldata: up.length,
     artiesten: artiestenMetData.length,
