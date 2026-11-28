@@ -57,7 +57,9 @@ function adresUitSite(html, z) {
 }
 
 // 2. OpenStreetMap (Overpass)
-stelPauzeIn("overpass-api.de", 1500);
+// Een andere Overpass-server (spiegel van de OSM-wiki) kan met OVERPASS=https://…/api/interpreter.
+const OVERPASS = process.env.OVERPASS || "https://overpass-api.de/api/interpreter";
+stelPauzeIn(new URL(OVERPASS).host, 1500);
 const MET_OSM = !process.argv.includes("--zonder-osm");
 async function adresUitOsm(z) {
   if (!MET_OSM) return null;
@@ -67,7 +69,7 @@ async function adresUitOsm(z) {
   const namen = [...new Set([z.naam, z.naam.replace(new RegExp(`\\s*${z.plaats}$`, "i"), ""), z.naam.replace(/^(theater|schouwburg|cultuurcentrum|cc|gc)\s+/i, "")])].filter((n) => n.length >= 4);
   const re = namen.map((n) => n.replace(/[.*+?^${}()|[\]\\"]/g, "\\$&")).join("|");
   const q = `[out:json][timeout:25];nwr(around:6000,${lat},${lon})["name"~"^(${re})$",i]["addr:street"];out tags center 5;`;
-  const json = JSON.parse(await getText(`https://overpass-api.de/api/interpreter?data=${encodeURIComponent(q)}`, { headers: { "user-agent": USER_AGENT } }));
+  const json = JSON.parse(await getText(`${OVERPASS}?data=${encodeURIComponent(q)}`, { headers: { "user-agent": USER_AGENT } }));
   const el = json.elements?.find((e) => e.tags["addr:housenumber"]);
   if (!el) return null;
   const g = el.tags;
